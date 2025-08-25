@@ -1,0 +1,47 @@
+{
+  "summary": {
+    "buildDuration": "27ms",
+    "totalFiles": 98,
+    "totalSize": "3.9 MB",
+    "booksWithContent": "8/66",
+    "totalChapters": 157,
+    "errors": 0,
+    "warnings": 0
+  },
+  "breakdown": {
+    "files": {
+      "total": 98,
+      "html": 78,
+      "css": 2,
+      "js": 6,
+      "json": 3,
+      "other": 9
+    },
+    "sizes": {
+      "html": "3.7 MB",
+      "css": "16.8 KB",
+      "js": "83.1 KB",
+      "json": "46.4 KB",
+      "other": "23.2 KB",
+      "total": "3.9 MB"
+    }
+  },
+  "content": {
+    "books": {
+      "total": 66,
+      "withSummaries": 8,
+      "withVideos": 66,
+      "totalChapters": 157
+    }
+  },
+  "issues": {
+    "errors": [],
+    "warnings": []
+  },
+  "metadata": {
+    "buildStart": "2025-08-25T14:30:33.136Z",
+    "buildEnd": "2025-08-25T14:30:33.163Z",
+    "buildDuration": 27,
+    "timestamp": "2025-08-25T14:30:33.163Z"
+  }
+}

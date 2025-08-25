@@ -17,9 +17,18 @@ npm run dev
 
 # Build static site for production
 npm run build
+
+# Build with performance analysis and logging
+npm run build:analyze
+
+# Build for production with full logging
+npm run build:production
+
+# Analyze existing build without rebuilding
+npm run logs:analyze
 ```
 
-The dev server runs Eleventy with `--serve` flag, providing live reload during development. Built files are output to `_site/` directory.
+The dev server runs Eleventy with `--serve` flag, providing live reload during development. Built files are output to `_site/` directory. Build analysis generates detailed performance logs in `build-logs/` directory.
 
 ## Architecture
 
@@ -69,6 +78,40 @@ When adding new features or content:
 - Follow the existing Nunjucks templating patterns for consistency
 - The site uses slug-based URLs generated from book/category names
 
+## Observability & Logging
+
+The site includes comprehensive logging and telemetry capabilities:
+
+### Client-Side Logging
+- **Logger** (`/assets/logger.js`): Multi-level logging system with session tracking, performance monitoring, and error handling
+- **Telemetry** (`/assets/telemetry.js`): OpenTelemetry-compliant observability with custom metrics and tracing
+- **Debug Dashboard**: Press `Ctrl+Shift+D` in debug mode to access real-time logging dashboard
+
+### Build-Time Logging  
+- **Build Logger** (`build-logger.js`): Analyzes build performance, file sizes, and content statistics
+- **Log Storage**: Build logs saved to `build-logs/` with detailed JSON reports
+- **Metrics**: Tracks file counts, sizes, build duration, and content completeness
+
+### Debug Mode
+Enable debug features by:
+- Adding `?debug=true` to any URL
+- Setting `localStorage.bibleExplorerDebug = 'true'`
+- Running on localhost (automatically enabled)
+
+Debug mode provides:
+- Enhanced console logging
+- Real-time telemetry dashboard
+- Performance metrics
+- Error tracking and reporting
+- Session analytics
+
+### Key Metrics Tracked
+- **Search Performance**: Query time, result counts, relevance scoring
+- **Video Interactions**: Load events, user engagement with Bible Project videos
+- **Navigation Patterns**: Page transitions, search result clicks, category browsing
+- **Performance**: Page load times, resource loading, memory usage
+- **Errors**: JavaScript errors, failed operations, user-facing issues
+
 ## Deployment
 
-Optimized for Cloudflare Pages with build command `npm run build` and output directory `_site`. No server-side dependencies required - purely static generation.
+Optimized for Cloudflare Pages with build command `npm run build` and output directory `_site`. Use `npm run build:production` for production builds with full logging and performance analysis. No server-side dependencies required - purely static generation.

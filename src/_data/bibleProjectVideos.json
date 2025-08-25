@@ -1,0 +1,452 @@
+{
+  "genesis": {
+    "title": "Genesis Overview",
+    "parts": [
+      {
+        "chapters": "1-11",
+        "title": "Genesis 1-11",
+        "youtubeId": "GQI72THyO5I",
+        "description": "The story of beginnings: creation, fall, flood, and Babel"
+      },
+      {
+        "chapters": "12-50", 
+        "title": "Genesis 12-50",
+        "youtubeId": "F4isSyennFo",
+        "description": "God's covenant with Abraham and the patriarchs"
+      }
+    ]
+  },
+  "exodus": {
+    "title": "Exodus Overview",
+    "parts": [
+      {
+        "chapters": "1-18",
+        "title": "Exodus 1-18",
+        "youtubeId": "jH_aojNJM3E",
+        "description": "Liberation from Egypt and journey to Sinai"
+      },
+      {
+        "chapters": "19-40",
+        "title": "Exodus 19-40",
+        "youtubeId": "oNpTha80yyE", 
+        "description": "The covenant at Sinai and the tabernacle"
+      }
+    ]
+  },
+  "leviticus": {
+    "title": "Leviticus Overview",
+    "youtubeId": "IJ-FekWUZzE",
+    "description": "Holiness and how to live in God's presence"
+  },
+  "numbers": {
+    "title": "Numbers Overview", 
+    "youtubeId": "tp5MIrMZFqo",
+    "description": "Israel's 40 years of wilderness wandering"
+  },
+  "deuteronomy": {
+    "title": "Deuteronomy Overview",
+    "youtubeId": "q5QEH9bH8AU",
+    "description": "Moses' final speeches before entering the Promised Land"
+  },
+  "joshua": {
+    "title": "Joshua Overview",
+    "youtubeId": "JqOqJlFF_eU",
+    "description": "The conquest and settlement of the Promised Land"
+  },
+  "judges": {
+    "title": "Judges Overview",
+    "youtubeId": "kOYy8iCfIJ4",
+    "description": "The cycle of sin, oppression, and deliverance"
+  },
+  "ruth": {
+    "title": "Ruth Overview",
+    "youtubeId": "0h1eoBeR4Jk",
+    "description": "A story of loyalty, redemption, and God's providence"
+  },
+  "1-samuel": {
+    "title": "1 Samuel Overview",
+    "youtubeId": "QJOju5Dw0V0",
+    "description": "From judges to kings: Samuel, Saul, and David"
+  },
+  "2-samuel": {
+    "title": "2 Samuel Overview", 
+    "youtubeId": "YvoWDXNDJgs",
+    "description": "King David's reign, victories, and failures"
+  },
+  "1-kings": {
+    "title": "1 & 2 Kings Overview",
+    "youtubeId": "bVFW3wbi9pk",
+    "description": "The divided kingdom and the decline into exile"
+  },
+  "2-kings": {
+    "title": "1 & 2 Kings Overview",
+    "youtubeId": "bVFW3wbi9pk",
+    "description": "The divided kingdom and the decline into exile"
+  },
+  "1-chronicles": {
+    "title": "1 & 2 Chronicles Overview",
+    "youtubeId": "HR7xaHv3Ias",
+    "description": "A retelling of Israel's history focused on hope and restoration"
+  },
+  "2-chronicles": {
+    "title": "1 & 2 Chronicles Overview", 
+    "youtubeId": "HR7xaHv3Ias",
+    "description": "A retelling of Israel's history focused on hope and restoration"
+  },
+  "ezra": {
+    "title": "Ezra-Nehemiah Overview",
+    "youtubeId": "MkETkRv9tG8",
+    "description": "The return from exile and rebuilding of Jerusalem"
+  },
+  "nehemiah": {
+    "title": "Ezra-Nehemiah Overview",
+    "youtubeId": "MkETkRv9tG8", 
+    "description": "The return from exile and rebuilding of Jerusalem"
+  },
+  "esther": {
+    "title": "Esther Overview",
+    "youtubeId": "JydNSlufRIs",
+    "description": "God's hidden providence in the Persian Empire"
+  },
+  "job": {
+    "title": "Job Overview",
+    "youtubeId": "xQwnH8th_fs",
+    "description": "The problem of suffering and trusting God"
+  },
+  "psalms": {
+    "title": "Psalms Overview",
+    "youtubeId": "j9phNEaPrv8",
+    "description": "Songs of praise, lament, and worship"
+  },
+  "proverbs": {
+    "title": "Proverbs Overview",
+    "youtubeId": "AzmYV8GNAIM",
+    "description": "Wisdom for living in God's world"
+  },
+  "ecclesiastes": {
+    "title": "Ecclesiastes Overview",
+    "youtubeId": "VeUiuSK81-0",
+    "description": "The vanity of life without God"
+  },
+  "song-of-songs": {
+    "title": "Song of Songs Overview",
+    "youtubeId": "wJclzpY6JdE",
+    "description": "A celebration of love and intimacy"
+  },
+  "isaiah": {
+    "title": "Isaiah Overview",
+    "parts": [
+      {
+        "chapters": "1-39",
+        "title": "Isaiah 1-39",
+        "youtubeId": "d0A6Uchb1F8",
+        "description": "Judgment and the promise of the Messiah"
+      },
+      {
+        "chapters": "40-66",
+        "title": "Isaiah 40-66", 
+        "youtubeId": "_TzdEPuqgQg",
+        "description": "Comfort and restoration for God's people"
+      }
+    ]
+  },
+  "jeremiah": {
+    "title": "Jeremiah Overview",
+    "youtubeId": "RSK36cHbrk0",
+    "description": "The weeping prophet and the new covenant"
+  },
+  "lamentations": {
+    "title": "Lamentations Overview",
+    "youtubeId": "p8GDFPdaQZQ",
+    "description": "Mourning over Jerusalem's destruction"
+  },
+  "ezekiel": {
+    "title": "Ezekiel Overview",
+    "parts": [
+      {
+        "chapters": "1-33",
+        "title": "Ezekiel 1-33",
+        "youtubeId": "R-CIPu1nko8",
+        "description": "Visions of God's glory and judgment"
+      },
+      {
+        "chapters": "34-48",
+        "title": "Ezekiel 34-48",
+        "youtubeId": "SDeCWW_kvhU",
+        "description": "Restoration and the new temple"
+      }
+    ]
+  },
+  "daniel": {
+    "title": "Daniel Overview",
+    "youtubeId": "9cSC9uobtPM",
+    "description": "Faithfulness in exile and visions of God's kingdom"
+  },
+  "hosea": {
+    "title": "Hosea Overview",
+    "youtubeId": "kE6SZ1ogOVU",
+    "description": "God's unfailing love for unfaithful Israel"
+  },
+  "joel": {
+    "title": "Joel Overview",
+    "youtubeId": "VayeP1KSNrM",
+    "description": "The Day of the Lord and outpouring of the Spirit"
+  },
+  "amos": {
+    "title": "Amos Overview",
+    "youtubeId": "2Qt2p3RUjag",
+    "description": "Justice and righteousness from the God of Israel"
+  },
+  "obadiah": {
+    "title": "Obadiah Overview",
+    "youtubeId": "OmCcs6b-E5w",
+    "description": "Judgment on Edom and restoration of Israel"
+  },
+  "jonah": {
+    "title": "Jonah Overview",
+    "youtubeId": "dLIabZc0O4c",
+    "description": "God's mercy extends to all nations"
+  },
+  "micah": {
+    "title": "Micah Overview",
+    "youtubeId": "26z_KhwNdD8",
+    "description": "Justice, mercy, and walking humbly with God"
+  },
+  "nahum": {
+    "title": "Nahum Overview",
+    "youtubeId": "Y7rJlWAUQq4",
+    "description": "God's judgment on Assyria"
+  },
+  "habakkuk": {
+    "title": "Habakkuk Overview",
+    "youtubeId": "OPdg1_3_BJ0",
+    "description": "Wrestling with God about justice and faith"
+  },
+  "zephaniah": {
+    "title": "Zephaniah Overview",
+    "youtubeId": "oFZknKPNvz8",
+    "description": "The Day of the Lord and restoration"
+  },
+  "haggai": {
+    "title": "Haggai Overview",
+    "youtubeId": "juPvv_xcX-U",
+    "description": "Rebuilding the temple after exile"
+  },
+  "zechariah": {
+    "title": "Zechariah Overview",
+    "youtubeId": "6kh6bTx1O8w",
+    "description": "Visions of restoration and the coming Messiah"
+  },
+  "malachi": {
+    "title": "Malachi Overview",
+    "youtubeId": "HPGShWZ4Nsk",
+    "description": "The final Old Testament prophet"
+  },
+  "matthew": {
+    "title": "Matthew Overview",
+    "parts": [
+      {
+        "chapters": "1-13",
+        "title": "Matthew 1-13",
+        "youtubeId": "3Dv4-n6OYGI",
+        "description": "The King and His Kingdom"
+      },
+      {
+        "chapters": "14-28",
+        "title": "Matthew 14-28",
+        "youtubeId": "GGCF3OPWN14",
+        "description": "The King's sacrifice and victory"
+      }
+    ]
+  },
+  "mark": {
+    "title": "Mark Overview",
+    "youtubeId": "HGHqu9-DtXk",
+    "description": "Jesus as the suffering servant Messiah"
+  },
+  "luke": {
+    "title": "Luke Overview",
+    "parts": [
+      {
+        "chapters": "1-9",
+        "title": "Luke 1-9",
+        "youtubeId": "26z_KhwNdD8",
+        "description": "Jesus brings good news to the poor"
+      },
+      {
+        "chapters": "10-24",
+        "title": "Luke 10-24",
+        "youtubeId": "26z_KhwNdD8",
+        "description": "The journey to Jerusalem and resurrection"
+      }
+    ]
+  },
+  "john": {
+    "title": "John Overview",
+    "parts": [
+      {
+        "chapters": "1-12",
+        "title": "John 1-12",
+        "youtubeId": "G-2e9mMf7E8",
+        "description": "Jesus as the Word made flesh"
+      },
+      {
+        "chapters": "13-21",
+        "title": "John 13-21",
+        "youtubeId": "RUfGkEjuphE",
+        "description": "The hour of glory and resurrection"
+      }
+    ]
+  },
+  "acts": {
+    "title": "Acts Overview",
+    "parts": [
+      {
+        "chapters": "1-12",
+        "title": "Acts 1-12",
+        "youtubeId": "CGbNw855ksw",
+        "description": "The Spirit empowers the early church"
+      },
+      {
+        "chapters": "13-28",
+        "title": "Acts 13-28",
+        "youtubeId": "Z-17KxpjL0Q",
+        "description": "Paul's missionary journeys"
+      }
+    ]
+  },
+  "romans": {
+    "title": "Romans Overview",
+    "parts": [
+      {
+        "chapters": "1-4",
+        "title": "Romans 1-4",
+        "youtubeId": "ej_6dVdJSIZ",
+        "description": "Justification by faith alone"
+      },
+      {
+        "chapters": "5-16",
+        "title": "Romans 5-16",
+        "youtubeId": "0SVTl4Xa5fY",
+        "description": "Life in the Spirit and practical righteousness"
+      }
+    ]
+  },
+  "1-corinthians": {
+    "title": "1 Corinthians Overview",
+    "youtubeId": "yiHf8klCCc4",
+    "description": "Unity and purity in the church"
+  },
+  "2-corinthians": {
+    "title": "2 Corinthians Overview",
+    "youtubeId": "3lfPK2vfC54",
+    "description": "Weakness and strength in ministry"
+  },
+  "galatians": {
+    "title": "Galatians Overview",
+    "youtubeId": "vmx4UjRFp0M",
+    "description": "Freedom from the law through Christ"
+  },
+  "ephesians": {
+    "title": "Ephesians Overview",
+    "youtubeId": "Y71r-T98E2Q",
+    "description": "Unity in Christ across ethnic boundaries"
+  },
+  "philippians": {
+    "title": "Philippians Overview",
+    "youtubeId": "oE9qqW1-BkU",
+    "description": "Joy and partnership in the gospel"
+  },
+  "colossians": {
+    "title": "Colossians Overview",
+    "youtubeId": "pXTXlDxQsvc",
+    "description": "The supremacy of Christ over all things"
+  },
+  "1-thessalonians": {
+    "title": "1 Thessalonians Overview",
+    "youtubeId": "qBVJC8P8GSA",
+    "description": "Living in hope of Christ's return"
+  },
+  "2-thessalonians": {
+    "title": "2 Thessalonians Overview",
+    "youtubeId": "Y4HDbTnCs94",
+    "description": "Perseverance while waiting for Christ"
+  },
+  "1-timothy": {
+    "title": "1 Timothy Overview",
+    "youtubeId": "7RoqnGcEjcs",
+    "description": "Instructions for church leadership"
+  },
+  "2-timothy": {
+    "title": "2 Timothy Overview",
+    "youtubeId": "2b2yqaKbwbY",
+    "description": "Paul's final charge to Timothy"
+  },
+  "titus": {
+    "title": "Titus Overview",
+    "youtubeId": "DjdXNTj2C3g",
+    "description": "Good works as evidence of salvation"
+  },
+  "philemon": {
+    "title": "Philemon Overview",
+    "youtubeId": "Vdv4m4KHgOE",
+    "description": "Reconciliation through Christ"
+  },
+  "hebrews": {
+    "title": "Hebrews Overview",
+    "youtubeId": "1fNWTZZwgbs",
+    "description": "Jesus as the superior high priest"
+  },
+  "james": {
+    "title": "James Overview",
+    "youtubeId": "qn-hLHWwRYY",
+    "description": "Faith that works"
+  },
+  "1-peter": {
+    "title": "1 Peter Overview",
+    "youtubeId": "WhP7AuCJck4",
+    "description": "Hope and endurance in suffering"
+  },
+  "2-peter": {
+    "title": "2 Peter Overview",
+    "youtubeId": "wWLv_ITyKYc",
+    "description": "Growing in knowledge and godliness"
+  },
+  "1-john": {
+    "title": "1 John Overview",
+    "youtubeId": "6OUG0_Ub78M",
+    "description": "Love and assurance in Christ"
+  },
+  "2-john": {
+    "title": "2 & 3 John Overview",
+    "youtubeId": "R-CIPu1nko8",
+    "description": "Truth and love in the church"
+  },
+  "3-john": {
+    "title": "2 & 3 John Overview",
+    "youtubeId": "R-CIPu1nko8",
+    "description": "Truth and love in the church"
+  },
+  "jude": {
+    "title": "Jude Overview",
+    "youtubeId": "6UoCgREDjGg",
+    "description": "Contending for the faith"
+  },
+  "revelation": {
+    "title": "Revelation Overview",
+    "parts": [
+      {
+        "chapters": "1-11",
+        "title": "Revelation 1-11",
+        "youtubeId": "5nvVVcYD-0w",
+        "description": "The revelation of Jesus Christ"
+      },
+      {
+        "chapters": "12-22",
+        "title": "Revelation 12-22",
+        "youtubeId": "QpnIrbq2bKo", 
+        "description": "The new heaven and new earth"
+      }
+    ]
+  }
+}

@@ -5,7 +5,12 @@
       "Bash(cat:*)",
       "Bash(sed:*)",
       "Bash(grep:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "WebFetch(domain:bibleproject.com)",
+      "Bash(npm run dev:*)",
+      "WebFetch(domain:www.youtube.com)",
+      "Bash(timeout 10 npm run dev)",
+      "WebSearch"
     ],
     "deny": [],
     "ask": []

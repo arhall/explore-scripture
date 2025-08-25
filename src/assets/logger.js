@@ -1,0 +1,350 @@
+/**
+ * Bible Explorer Logging System
+ * Comprehensive logging utility for debugging, analytics, and monitoring
+ */
+
+class BibleExplorerLogger {
+  constructor() {
+    this.logLevel = this.getLogLevel();
+    this.sessionId = this.generateSessionId();
+    this.startTime = performance.now();
+    this.logs = [];
+    this.maxStoredLogs = 1000;
+    
+    // Log levels
+    this.levels = {
+      ERROR: 0,
+      WARN: 1,
+      INFO: 2,
+      DEBUG: 3,
+      TRACE: 4
+    };
+
+    // Initialize logging
+    this.info('Logger initialized', {
+      sessionId: this.sessionId,
+      userAgent: navigator.userAgent,
+      timestamp: new Date().toISOString(),
+      url: window.location.href
+    });
+
+    // Set up error handling
+    this.setupGlobalErrorHandling();
+    
+    // Set up performance monitoring
+    this.setupPerformanceMonitoring();
+  }
+
+  getLogLevel() {
+    // Check for debug mode in localStorage or URL params
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('debug') === 'true' || localStorage.getItem('bibleExplorerDebug') === 'true') {
+      return this.levels.DEBUG;
+    }
+    return window.location.hostname === 'localhost' ? this.levels.DEBUG : this.levels.INFO;
+  }
+
+  generateSessionId() {
+    return 'session_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+  }
+
+  setupGlobalErrorHandling() {
+    window.addEventListener('error', (event) => {
+      this.error('Global error caught', {
+        message: event.message,
+        filename: event.filename,
+        lineno: event.lineno,
+        colno: event.colno,
+        error: event.error?.stack
+      });
+    });
+
+    window.addEventListener('unhandledrejection', (event) => {
+      this.error('Unhandled promise rejection', {
+        reason: event.reason,
+        promise: event.promise
+      });
+    });
+  }
+
+  setupPerformanceMonitoring() {
+    // Log page load performance
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const perfData = performance.getEntriesByType('navigation')[0];
+        this.info('Page load performance', {
+          domContentLoaded: perfData.domContentLoadedEventEnd - perfData.domContentLoadedEventStart,
+          loadComplete: perfData.loadEventEnd - perfData.loadEventStart,
+          totalPageLoad: perfData.loadEventEnd - perfData.fetchStart,
+          dnsLookup: perfData.domainLookupEnd - perfData.domainLookupStart,
+          serverResponse: perfData.responseEnd - perfData.requestStart
+        });
+      }, 100);
+    });
+
+    // Monitor long tasks
+    if ('PerformanceObserver' in window) {
+      try {
+        const observer = new PerformanceObserver((list) => {
+          list.getEntries().forEach((entry) => {
+            if (entry.duration > 50) { // Tasks longer than 50ms
+              this.warn('Long task detected', {
+                name: entry.name,
+                duration: entry.duration,
+                startTime: entry.startTime
+              });
+            }
+          });
+        });
+        observer.observe({ entryTypes: ['longtask'] });
+      } catch (e) {
+        this.debug('Long task monitoring not supported');
+      }
+    }
+  }
+
+  log(level, message, data = {}, category = 'general') {
+    if (level > this.logLevel) return;
+
+    const timestamp = new Date().toISOString();
+    const sessionTime = performance.now() - this.startTime;
+    
+    const logEntry = {
+      timestamp,
+      sessionTime: Math.round(sessionTime),
+      sessionId: this.sessionId,
+      level: Object.keys(this.levels)[level],
+      category,
+      message,
+      data: this.sanitizeData(data),
+      url: window.location.href,
+      userAgent: navigator.userAgent.substring(0, 100) // Truncate for storage
+    };
+
+    // Store in memory (limited)
+    this.logs.push(logEntry);
+    if (this.logs.length > this.maxStoredLogs) {
+      this.logs.shift();
+    }
+
+    // Console output with styling
+    this.outputToConsole(logEntry);
+
+    // Store in localStorage for debugging
+    this.storeLog(logEntry);
+
+    // Send to external service if configured
+    this.sendToExternal(logEntry);
+
+    return logEntry;
+  }
+
+  sanitizeData(data) {
+    // Remove sensitive information and circular references
+    try {
+      const sanitized = JSON.parse(JSON.stringify(data, (key, value) => {
+        if (typeof value === 'function') return '[Function]';
+        if (value instanceof Error) return value.toString();
+        if (key.toLowerCase().includes('password') || 
+            key.toLowerCase().includes('token') ||
+            key.toLowerCase().includes('secret')) {
+          return '[REDACTED]';
+        }
+        return value;
+      }));
+      return sanitized;
+    } catch (e) {
+      return { error: 'Failed to serialize data', original: String(data) };
+    }
+  }
+
+  outputToConsole(logEntry) {
+    const styles = {
+      ERROR: 'color: #ff4444; font-weight: bold;',
+      WARN: 'color: #ffaa00; font-weight: bold;',
+      INFO: 'color: #0088cc;',
+      DEBUG: 'color: #888888;',
+      TRACE: 'color: #666666; font-style: italic;'
+    };
+
+    const style = styles[logEntry.level] || '';
+    const prefix = `[${logEntry.timestamp}] [${logEntry.category.toUpperCase()}] [${logEntry.level}]`;
+    
+    console.log(`%c${prefix} ${logEntry.message}`, style, logEntry.data);
+  }
+
+  storeLog(logEntry) {
+    try {
+      const stored = JSON.parse(localStorage.getItem('bibleExplorerLogs') || '[]');
+      stored.push(logEntry);
+      
+      // Keep only last 100 logs in localStorage
+      if (stored.length > 100) {
+        stored.splice(0, stored.length - 100);
+      }
+      
+      localStorage.setItem('bibleExplorerLogs', JSON.stringify(stored));
+    } catch (e) {
+      // Storage might be full, ignore silently
+    }
+  }
+
+  sendToExternal(logEntry) {
+    // Placeholder for external logging service integration
+    // You could integrate with services like LogRocket, Sentry, etc.
+    if (window.bibleExplorerConfig?.externalLogging) {
+      // Implementation would depend on chosen service
+    }
+  }
+
+  // Logging methods
+  error(message, data, category = 'error') {
+    return this.log(this.levels.ERROR, message, data, category);
+  }
+
+  warn(message, data, category = 'warning') {
+    return this.log(this.levels.WARN, message, data, category);
+  }
+
+  info(message, data, category = 'info') {
+    return this.log(this.levels.INFO, message, data, category);
+  }
+
+  debug(message, data, category = 'debug') {
+    return this.log(this.levels.DEBUG, message, data, category);
+  }
+
+  trace(message, data, category = 'trace') {
+    return this.log(this.levels.TRACE, message, data, category);
+  }
+
+  // Specialized logging methods
+  userAction(action, data = {}) {
+    return this.info(`User action: ${action}`, data, 'user-action');
+  }
+
+  performance(operation, duration, data = {}) {
+    const level = duration > 1000 ? this.levels.WARN : this.levels.INFO;
+    return this.log(level, `Performance: ${operation}`, { 
+      duration: Math.round(duration), 
+      ...data 
+    }, 'performance');
+  }
+
+  search(query, results, duration) {
+    return this.info('Search performed', {
+      query: query.substring(0, 100), // Limit query length
+      resultCount: results.length,
+      duration: Math.round(duration),
+      hasResults: results.length > 0
+    }, 'search');
+  }
+
+  navigation(from, to, method = 'unknown') {
+    return this.info('Navigation', {
+      from: from.substring(0, 200),
+      to: to.substring(0, 200),
+      method
+    }, 'navigation');
+  }
+
+  videoInteraction(action, videoId, bookSlug, data = {}) {
+    return this.info(`Video ${action}`, {
+      videoId,
+      bookSlug,
+      ...data
+    }, 'video');
+  }
+
+  // Utility methods
+  startTimer(name) {
+    const timer = {
+      name,
+      startTime: performance.now(),
+      end: () => {
+        const duration = performance.now() - timer.startTime;
+        this.performance(name, duration);
+        return duration;
+      }
+    };
+    this.trace(`Timer started: ${name}`);
+    return timer;
+  }
+
+  getLogs(category = null, level = null) {
+    let filtered = this.logs;
+    
+    if (category) {
+      filtered = filtered.filter(log => log.category === category);
+    }
+    
+    if (level !== null) {
+      filtered = filtered.filter(log => this.levels[log.level] <= level);
+    }
+    
+    return filtered;
+  }
+
+  exportLogs() {
+    const logs = {
+      sessionId: this.sessionId,
+      exportTime: new Date().toISOString(),
+      userAgent: navigator.userAgent,
+      url: window.location.href,
+      logs: this.logs
+    };
+    
+    const blob = new Blob([JSON.stringify(logs, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `bible-explorer-logs-${this.sessionId}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    
+    this.info('Logs exported', { logCount: this.logs.length });
+  }
+
+  clearLogs() {
+    const count = this.logs.length;
+    this.logs = [];
+    localStorage.removeItem('bibleExplorerLogs');
+    this.info('Logs cleared', { clearedCount: count });
+  }
+
+  getSessionSummary() {
+    const summary = {
+      sessionId: this.sessionId,
+      sessionDuration: Math.round(performance.now() - this.startTime),
+      totalLogs: this.logs.length,
+      logsByLevel: {},
+      logsByCategory: {},
+      errors: this.logs.filter(log => log.level === 'ERROR').length,
+      warnings: this.logs.filter(log => log.level === 'WARN').length
+    };
+
+    // Count by level
+    this.logs.forEach(log => {
+      summary.logsByLevel[log.level] = (summary.logsByLevel[log.level] || 0) + 1;
+      summary.logsByCategory[log.category] = (summary.logsByCategory[log.category] || 0) + 1;
+    });
+
+    return summary;
+  }
+}
+
+// Create global logger instance
+window.logger = new BibleExplorerLogger();
+
+// Add convenience methods to window for easy access
+window.logUserAction = (action, data) => window.logger.userAction(action, data);
+window.logSearch = (query, results, duration) => window.logger.search(query, results, duration);
+window.logNavigation = (from, to, method) => window.logger.navigation(from, to, method);
+window.logVideo = (action, videoId, bookSlug, data) => window.logger.videoInteraction(action, videoId, bookSlug, data);
+
+// Export for use in modules
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = BibleExplorerLogger;
+}

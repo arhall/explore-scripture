@@ -5,26 +5,160 @@ layout: base.njk
   <h1>{{ book.name }}</h1>
   <span class="badge">{{ book.testament }}</span>
 </div>
+
 <p class="meta">
   <strong>Section:</strong> {{ book.category }} &nbsp; • &nbsp;
   <strong>Trad. Author:</strong> {{ book.author }} &nbsp; • &nbsp;
   <strong>Original Language:</strong> {{ book.language }}
 </p>
 
+{% set videoData = bibleProjectVideos[book.slug] %}
+{% if videoData %}
+  <div class="video-section">
+    <h3>Bible Project Overview</h3>
+    {% if videoData.parts %}
+      {% for part in videoData.parts %}
+        <div style="margin-bottom: 1.5rem;">
+          <h4>{{ part.title }}</h4>
+          <p class="video-title">{{ part.description }}</p>
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/{{ part.youtubeId }}" 
+                    title="{{ part.title }}" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p class="video-title">{{ videoData.description }}</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/{{ videoData.youtubeId }}" 
+                title="{{ videoData.title }}" 
+                allowfullscreen>
+        </iframe>
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
+
 {% if book.chapterSummaries and (book.chapterSummaries | length) > 0 %}
   <h2>Chapter Summaries</h2>
   <table class="table">
     <thead>
-      <tr><th>Chapter</th><th>Summary</th></tr>
+      <tr><th>Chapter</th><th>Summary</th><th>Commentary</th></tr>
     </thead>
     <tbody>
       {% for ch, sum in book.chapterSummaries | dictsort %}
-        <tr><td>{{ ch }}</td><td>{{ sum | safe }}</td></tr>
+        <tr>
+          <td>{{ ch }}</td>
+          <td>{{ sum | safe }}</td>
+          <td>
+            <a href="https://enduringword.com/bible-commentary/{{ book.name | lower }}-{{ ch }}/" 
+               target="_blank" 
+               class="commentary-link"
+               rel="noopener">
+              Enduring Word
+            </a>
+          </td>
+        </tr>
       {% endfor %}
     </tbody>
   </table>
 {% else %}
-  <p class="meta">Summaries coming soon.</p>
+  <div class="chapter-summary">
+    <h3>Chapter Summaries Coming Soon</h3>
+    <p class="meta">We're working on detailed chapter-by-chapter summaries for {{ book.name }}. Check back soon!</p>
+    
+    {% if videoData %}
+      <p class="meta">In the meantime, watch the Bible Project overview above for a great introduction to this book.</p>
+    {% endif %}
+  </div>
 {% endif %}
 
-<p class="meta"><a href="/categories/{{ book.category | slug }}/">← Back to {{ book.category }}</a></p>
+<p class="back-link">
+  <a href="/categories/{{ book.category | slug }}/" onclick="handleNavigation('category-back', '{{ book.category }}')">← Back to {{ book.category }}</a>
+</p>
+
+<script>
+  // Video interaction tracking
+  document.addEventListener('DOMContentLoaded', function() {
+    const bookSlug = '{{ book.slug }}';
+    const bookName = '{{ book.name }}';
+    const testament = '{{ book.testament }}';
+    
+    // Track video loads
+    const videoIframes = document.querySelectorAll('.video-container iframe');
+    videoIframes.forEach((iframe, index) => {
+      const videoTitle = iframe.title || 'Bible Project Video';
+      const videoId = iframe.src.match(/embed\/([^?]+)/)?.[1] || 'unknown';
+      
+      // Track video load
+      iframe.addEventListener('load', function() {
+        if (window.logger) {
+          window.logger.videoInteraction('load', videoId, bookSlug, {
+            title: videoTitle,
+            index: index
+          });
+        }
+        if (window.telemetry) {
+          window.telemetry.recordVideoInteraction('load', videoId, bookSlug, {
+            title: videoTitle,
+            testament: testament,
+            index: index
+          });
+        }
+      });
+    });
+    
+    // Track commentary link clicks
+    const commentaryLinks = document.querySelectorAll('.commentary-link');
+    commentaryLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        const chapter = this.href.match(/-(\d+)\//)?.[1] || 'unknown';
+        
+        if (window.logger) {
+          window.logger.userAction('commentary-click', {
+            book: bookName,
+            chapter: chapter,
+            url: this.href
+          });
+        }
+        
+        if (window.telemetry) {
+          window.telemetry.recordNavigation('commentary-click', this.href, {
+            book: bookSlug,
+            chapter: chapter,
+            testament: testament
+          });
+        }
+      });
+    });
+    
+    // Track page view for this book
+    if (window.telemetry) {
+      window.telemetry.recordPageView(window.location.pathname, bookName, {
+        book: bookSlug,
+        testament: testament,
+        category: '{{ book.category }}'
+      });
+    }
+  });
+  
+  // Handle navigation clicks
+  function handleNavigation(type, category) {
+    if (window.logger) {
+      window.logger.userAction('navigation-click', { 
+        type: type, 
+        category: category,
+        from: '{{ book.name }}'
+      });
+    }
+    
+    if (window.telemetry) {
+      window.telemetry.recordNavigation(type, window.location.href, { 
+        category: category,
+        book: '{{ book.slug }}'
+      });
+    }
+  }
+</script>

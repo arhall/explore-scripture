@@ -5,16 +5,48 @@ layout: base.njk
   <h1>{{ category.name }}</h1>
   <span class="badge">{{ category.testament }}</span>
 </div>
-<p class="meta">{{ category.description }}</p>
 
+<div class="chapter-summary">
+  <p class="summary-text">{{ category.description }}</p>
+  
+  {% if category.themes %}
+  <div class="meta">
+    <strong>Key Themes:</strong> 
+    {% for theme in category.themes %}
+      <span class="badge" style="margin: 0.2rem;">{{ theme }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+  
+  {% if category.keyFigures %}
+  <div class="meta">
+    <strong>Key Figures:</strong> {{ category.keyFigures | join(", ") }}
+  </div>
+  {% endif %}
+  
+  {% if category.timeSpan %}
+  <div class="meta">
+    <strong>Time Period:</strong> {{ category.timeSpan }} &nbsp;•&nbsp; 
+    <strong>Books:</strong> {{ category.bookCount }}
+  </div>
+  {% endif %}
+</div>
+
+<h2>Books in {{ category.name }}</h2>
 <div class="grid">
 {% for b in books %}
   <a class="card" href="/books/{{ b.slug }}/">
     <h3>{{ b.name }}</h3>
-    <p>{{ b.author }} • {{ b.language }}</p>
+    <p><strong>Author:</strong> {{ b.author }}</p>
+    <p><strong>Language:</strong> {{ b.language }}</p>
+    {% if b.chapterSummaries and (b.chapterSummaries | length) > 0 %}
+      <p style="font-size: 0.85rem; color: var(--muted);">{{ b.chapterSummaries | length }} chapters with summaries</p>
+    {% endif %}
     <span class="badge">{{ b.testament }}</span>
   </a>
 {% endfor %}
 </div>
 
-<p class="meta"><a href="/categories/">← Back to Sections</a></p>
+<p class="back-link">
+  <a href="/categories/">← Back to Sections</a>
+</p>

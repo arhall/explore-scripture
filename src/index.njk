@@ -6,26 +6,47 @@ description: Chapter-by-chapter summaries, organized by sections and books.
 
 <div class="header">
   <h1>Bible Explorer</h1>
-  <p class="meta">Browse by section or jump right into a book.</p>
+  <p class="meta">Explore the Bible with chapter-by-chapter summaries, Bible Project videos, and commentary links.</p>
 </div>
 
-<h2>Sections</h2>
+<div class="chapter-summary">
+  <h3>Features</h3>
+  <ul style="color: var(--text); line-height: 1.8;">
+    <li><strong>Detailed Chapter Summaries:</strong> Concise, in-depth summaries for every chapter</li>
+    <li><strong>Bible Project Videos:</strong> Embedded overview videos for each book</li>
+    <li><strong>Commentary Links:</strong> Direct access to Enduring Word commentary</li>
+    <li><strong>Mobile-Friendly:</strong> Optimized for reading on any device</li>
+    <li><strong>Organized Structure:</strong> Browse by biblical categories and themes</li>
+  </ul>
+</div>
+
+<h2>Biblical Sections</h2>
 <div class="grid">
   {% for sec in categories %}
     <a class="card" href="/categories/{{ sec.slug }}/">
       <h3>{{ sec.name }}</h3>
       <p>{{ sec.description }}</p>
-      <span class="badge">{{ sec.testament }}</span>
+      <div style="margin-top: 0.8rem;">
+        {% if sec.bookCount %}
+          <span class="badge" style="background: rgba(106, 169, 255, 0.1); color: var(--accent);">{{ sec.bookCount }} books</span>
+        {% endif %}
+        <span class="badge">{{ sec.testament }}</span>
+      </div>
     </a>
   {% endfor %}
 </div>
 
-<h2 style="margin-top:1.5rem;">All Books</h2>
+<h2 style="margin-top:2rem;">All Books ({{ books | length }})</h2>
 <div class="grid">
   {% for b in books %}
     <a class="card" href="/books/{{ b.slug }}/">
       <h3>{{ b.name }}</h3>
-      <p>{{ b.author }} • {{ b.category }}</p>
+      <p><strong>{{ b.author }}</strong> • {{ b.category }}</p>
+      {% if b.chapterSummaries and (b.chapterSummaries | length) > 0 %}
+        <p style="font-size: 0.85rem; color: var(--accent); margin-top: 0.5rem;">
+          ✓ {{ b.chapterSummaries | length }} chapters with summaries
+        </p>
+      {% endif %}
       <span class="badge">{{ b.testament }}</span>
     </a>
   {% endfor %}

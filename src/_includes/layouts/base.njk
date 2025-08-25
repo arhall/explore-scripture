@@ -7,6 +7,16 @@
   <title>{{ title or 'Bible Explorer' }}</title>
   <link rel="stylesheet" href="/styles.css">
   <meta name="description" content="{{ description or 'Chapter-by-chapter Bible summaries with categories and metadata.' }}">
+  <!-- OpenTelemetry Web SDK -->
+  <script src="https://unpkg.com/@opentelemetry/api@1.7.0/build/esm/index.js" type="module"></script>
+  <script src="https://unpkg.com/@opentelemetry/sdk-web@1.19.0/build/esm/index.js" type="module"></script>
+  <script src="https://unpkg.com/@opentelemetry/auto-instrumentations-web@0.35.0/build/esm/index.js" type="module"></script>
+  <!-- Logging System -->
+  <script src="/assets/logger.js"></script>
+  <!-- Telemetry System -->
+  <script src="/assets/telemetry.js" type="module"></script>
+  <!-- Debug Dashboard -->
+  <script src="/assets/debug-dashboard.js"></script>
 </head>
 <body>
   <div class="container">
@@ -14,10 +24,385 @@
       <a class="brand" href="/">Bible Explorer</a>
       <a href="/categories/" class="{% if page.url == '/categories/' %}active{% endif %}">Sections</a>
     </nav>
+    
+    <div class="search-container">
+      <div class="search-box">
+        <div class="search-icon">🔍</div>
+        <input type="text" class="search-input" placeholder="Search books, chapters, or summaries..." id="searchInput">
+        <div class="search-results" id="searchResults"></div>
+      </div>
+    </div>
+    
     {{ content | safe }}
+    
     <footer class="footer">
       Built with <a href="https://www.11ty.dev/">Eleventy</a> • 2024
     </footer>
   </div>
+
+  <script>
+    // Search functionality
+    let searchData = [];
+    let searchTimeout;
+
+    // Initialize search data
+    async function initializeSearch() {
+      try {
+        const books = {{ books | dump | safe }};
+        const categories = {{ categories | dump | safe }};
+        
+        if (!books || !Array.isArray(books)) {
+          throw new Error('Books data is invalid or missing');
+        }
+        
+        if (!categories || !Array.isArray(categories)) {
+          throw new Error('Categories data is invalid or missing');
+        }
+        
+        // Process books and chapters into searchable items
+        books.forEach((book, index) => {
+          try {
+            if (!book.name || !book.slug) {
+              throw new Error(`Book at index ${index} missing required fields`);
+            }
+            
+            // Add book itself
+            searchData.push({
+              type: 'book',
+              title: book.name,
+              subtitle: `${book.author || 'Unknown'} • ${book.category || 'Unknown'}`,
+              content: `${book.name} ${book.author || ''} ${book.category || ''}`,
+              url: `/books/${book.slug}/`
+            });
+
+            // Add chapters with summaries
+            if (book.chapterSummaries && typeof book.chapterSummaries === 'object') {
+              Object.entries(book.chapterSummaries).forEach(([chapter, summary]) => {
+                if (summary && typeof summary === 'string') {
+                  searchData.push({
+                    type: 'chapter',
+                    title: `${book.name} ${chapter}`,
+                    subtitle: summary.substring(0, 100) + '...',
+                    content: `${book.name} chapter ${chapter} ${summary}`,
+                    url: `/books/${book.slug}/#chapter-${chapter}`
+                  });
+                }
+              });
+            }
+          } catch (bookError) {
+            if (window.logger) {
+              window.logger.error('Error processing book for search', { 
+                book: book.name || 'unknown', 
+                error: bookError.message 
+              });
+            }
+          }
+        });
+
+        // Add categories
+        categories.forEach((category, index) => {
+          try {
+            if (!category.name || !category.slug) {
+              throw new Error(`Category at index ${index} missing required fields`);
+            }
+            
+            searchData.push({
+              type: 'category',
+              title: category.name,
+              subtitle: category.description || '',
+              content: `${category.name} ${category.description || ''} ${category.themes ? category.themes.join(' ') : ''}`,
+              url: `/categories/${category.slug}/`
+            });
+          } catch (categoryError) {
+            if (window.logger) {
+              window.logger.error('Error processing category for search', { 
+                category: category.name || 'unknown', 
+                error: categoryError.message 
+              });
+            }
+          }
+        });
+        
+        if (window.logger) {
+          window.logger.info('Search initialization completed', {
+            totalItems: searchData.length,
+            books: books.length,
+            categories: categories.length
+          });
+        }
+        
+      } catch (error) {
+        const errorMessage = 'Search initialization failed: ' + error.message;
+        console.error(errorMessage, error);
+        
+        // Log the error
+        if (window.logger) {
+          window.logger.error(errorMessage, { 
+            error: error.message,
+            stack: error.stack,
+            component: 'search-init'
+          });
+        }
+        
+        if (window.telemetry) {
+          window.telemetry.recordError(error, { component: 'search-initialization' });
+        }
+        
+        // Fallback: show error message to user
+        const searchContainer = document.querySelector('.search-container');
+        if (searchContainer) {
+          const errorDiv = document.createElement('div');
+          errorDiv.style.cssText = 'background: #ff4444; color: white; padding: 0.5rem; border-radius: 4px; margin-bottom: 1rem; text-align: center;';
+          errorDiv.textContent = 'Search functionality temporarily unavailable';
+          searchContainer.appendChild(errorDiv);
+        }
+      }
+    }
+
+    // Search function
+    function performSearch(query) {
+      if (!query || query.length < 2) return [];
+      
+      try {
+        const startTime = performance.now();
+        const lowercaseQuery = query.toLowerCase();
+        
+        if (!searchData || !Array.isArray(searchData)) {
+          throw new Error('Search data not properly initialized');
+        }
+        
+        const results = searchData
+          .map(item => {
+            try {
+              const score = calculateRelevance(item, lowercaseQuery);
+              return { ...item, score };
+            } catch (itemError) {
+              if (window.logger) {
+                window.logger.warn('Error calculating relevance for search item', { 
+                  item: item.title || 'unknown', 
+                  error: itemError.message 
+                });
+              }
+              return { ...item, score: 0 };
+            }
+          })
+          .filter(item => item.score > 0)
+          .sort((a, b) => b.score - a.score)
+          .slice(0, 10);
+        
+        const duration = performance.now() - startTime;
+        
+        // Log search with both logger and telemetry
+        if (window.logger) {
+          window.logger.search(query, results, duration);
+        }
+        if (window.telemetry) {
+          window.telemetry.recordSearch(query, results.length, duration);
+        }
+        
+        return results;
+        
+      } catch (error) {
+        const errorMessage = 'Search operation failed: ' + error.message;
+        console.error(errorMessage, error);
+        
+        // Log the error
+        if (window.logger) {
+          window.logger.error(errorMessage, { 
+            query: query.substring(0, 50),
+            error: error.message,
+            component: 'search-perform'
+          });
+        }
+        
+        if (window.telemetry) {
+          window.telemetry.recordError(error, { 
+            component: 'search-operation',
+            query_length: query.length 
+          });
+        }
+        
+        // Return empty results on error
+        return [];
+      }
+    }
+
+    // Calculate relevance score
+    function calculateRelevance(item, query) {
+      const content = item.content.toLowerCase();
+      const title = item.title.toLowerCase();
+      
+      let score = 0;
+      
+      // Exact title match gets highest score
+      if (title.includes(query)) {
+        score += 100;
+      }
+      
+      // Content match gets medium score
+      if (content.includes(query)) {
+        score += 50;
+      }
+      
+      // Word boundary matches get bonus
+      const words = query.split(' ');
+      words.forEach(word => {
+        if (word.length > 2) {
+          const regex = new RegExp('\\b' + word, 'i');
+          if (regex.test(title)) score += 30;
+          if (regex.test(content)) score += 15;
+        }
+      });
+      
+      return score;
+    }
+
+    // Highlight search terms
+    function highlightText(text, query) {
+      if (!query) return text;
+      const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+      return text.replace(regex, '<span class="search-highlight">$1</span>');
+    }
+
+    // Display search results
+    function displayResults(results, query) {
+      const resultsContainer = document.getElementById('searchResults');
+      
+      if (results.length === 0) {
+        resultsContainer.innerHTML = '<div class="search-result-item">No results found</div>';
+      } else {
+        resultsContainer.innerHTML = results.map(result => `
+          <div class="search-result-item" onclick="handleSearchResultClick('${result.url}', '${result.type}', '${result.title.replace(/'/g, "\\'")}')">
+            <div class="search-result-title">${highlightText(result.title, query)}</div>
+            <div class="search-result-snippet">${highlightText(result.subtitle, query)}</div>
+          </div>
+        `).join('');
+      }
+      
+      resultsContainer.style.display = results.length > 0 || query.length > 1 ? 'block' : 'none';
+    }
+
+    // Handle search result clicks
+    function handleSearchResultClick(url, type, title) {
+      try {
+        if (!url || typeof url !== 'string') {
+          throw new Error('Invalid URL provided for navigation');
+        }
+        
+        const searchInput = document.getElementById('searchInput');
+        const searchQuery = searchInput ? searchInput.value : 'unknown';
+        
+        // Log user action
+        if (window.logger) {
+          window.logger.userAction('search-result-click', { 
+            url, 
+            type, 
+            title,
+            searchQuery 
+          });
+        }
+        
+        // Record navigation
+        if (window.telemetry) {
+          window.telemetry.recordNavigation('search-click', url, { 
+            result_type: type,
+            result_title: title 
+          });
+        }
+        
+        // Navigate to the page
+        window.location.href = url;
+        
+      } catch (error) {
+        const errorMessage = 'Navigation failed: ' + error.message;
+        console.error(errorMessage, error);
+        
+        // Log the error
+        if (window.logger) {
+          window.logger.error(errorMessage, { 
+            url,
+            type,
+            title,
+            error: error.message,
+            component: 'search-navigation'
+          });
+        }
+        
+        if (window.telemetry) {
+          window.telemetry.recordError(error, { 
+            component: 'search-result-click',
+            url: url 
+          });
+        }
+        
+        // Show user-friendly error
+        alert('Sorry, there was an error navigating to that page. Please try again.');
+      }
+    }
+
+    // Search input handler
+    document.addEventListener('DOMContentLoaded', function() {
+      initializeSearch();
+      
+      const searchInput = document.getElementById('searchInput');
+      const searchResults = document.getElementById('searchResults');
+      
+      searchInput.addEventListener('input', function() {
+        const query = this.value.trim();
+        
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+          const results = performSearch(query);
+          displayResults(results, query);
+        }, 300);
+      });
+      
+      // Hide results when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!e.target.closest('.search-box')) {
+          searchResults.style.display = 'none';
+        }
+      });
+      
+      // Show results when focusing search input
+      searchInput.addEventListener('focus', function() {
+        if (this.value.trim()) {
+          const results = performSearch(this.value.trim());
+          displayResults(results, this.value.trim());
+        }
+      });
+      
+      // Keyboard navigation
+      searchInput.addEventListener('keydown', function(e) {
+        const items = searchResults.querySelectorAll('.search-result-item');
+        const selected = searchResults.querySelector('.search-result-item.selected');
+        
+        if (e.key === 'ArrowDown') {
+          e.preventDefault();
+          if (selected) {
+            selected.classList.remove('selected');
+            const next = selected.nextElementSibling || items[0];
+            next.classList.add('selected');
+          } else if (items.length > 0) {
+            items[0].classList.add('selected');
+          }
+        } else if (e.key === 'ArrowUp') {
+          e.preventDefault();
+          if (selected) {
+            selected.classList.remove('selected');
+            const prev = selected.previousElementSibling || items[items.length - 1];
+            prev.classList.add('selected');
+          } else if (items.length > 0) {
+            items[items.length - 1].classList.add('selected');
+          }
+        } else if (e.key === 'Enter') {
+          e.preventDefault();
+          if (selected) {
+            selected.click();
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>

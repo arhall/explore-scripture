@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "build:analyze": "eleventy && node build-logger.js",
+    "build:production": "eleventy && node build-logger.js",
+    "logs:analyze": "node build-logger.js"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0"
