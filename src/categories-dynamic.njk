@@ -6,4 +6,3 @@ pagination:
 permalink: "/categories/{{ category.slug }}/index.html"
 layout: category.njk
 ---
-{% set books = books | selectattr("category", "equalto", category.name) %}

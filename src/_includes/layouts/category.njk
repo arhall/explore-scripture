@@ -34,7 +34,8 @@ layout: base.njk
 
 <h2>Books in {{ category.name }}</h2>
 <div class="grid">
-{% for b in books %}
+{% set categoryBooks = books | selectattr("category", "equalto", category.name) | list %}
+{% for b in categoryBooks %}
   <a class="card" href="/books/{{ b.slug }}/">
     <h3>{{ b.name }}</h3>
     <p><strong>Author:</strong> {{ b.author }}</p>

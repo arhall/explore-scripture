@@ -581,7 +581,25 @@
       "7": "Don't judge others harshly; ask God persistently; the narrow gate leads to life; false prophets bear bad fruit.",
       "8": "Jesus demonstrates His authority by healing leprosy, paralysis, fever, and storms; the cost of discipleship is high.",
       "9": "Jesus heals a paralytic, calls Matthew, raises the dead, heals bleeding and blindness; workers are few but harvest is plentiful.",
-      "10": "Jesus commissions the twelve apostles to preach to Israel; persecution will come, but God will vindicate the faithful."
+      "10": "Jesus commissions the twelve apostles to preach to Israel; persecution will come, but God will vindicate the faithful.",
+      "11": "John the Baptist questions Jesus from prison; Jesus pronounces woes on unrepentant cities but invites the weary to find rest in His gentle yoke.",
+      "12": "Pharisees attack Jesus for Sabbath healing and grain-picking; they accuse Him of casting out demons by Beelzebul, but Jesus warns against blasphemy of the Spirit.",
+      "13": "Jesus teaches kingdom parables: sower, weeds, mustard seed, hidden treasure, pearl, and net; only some understand these mysteries of heaven.",
+      "14": "Herod beheads John the Baptist; Jesus feeds 5,000 with five loaves and two fish, then walks on water, calming the disciples' fears.",
+      "15": "Jesus confronts Pharisees about their traditions that nullify God's commands; He heals the Canaanite woman's daughter and feeds 4,000 in the wilderness.",
+      "16": "Pharisees seek a sign but receive only Jonah's; Peter confesses Jesus as the Messiah, receives keys to the kingdom, but rebukes Jesus' death prediction.",
+      "17": "Jesus is transfigured before Peter, James, and John; Moses and Elijah appear; Jesus heals an epileptic boy and teaches about faith and His coming death.",
+      "18": "Jesus teaches about greatness through childlike humility, church discipline for sin, and unlimited forgiveness illustrated by the unforgiving servant parable.",
+      "19": "Jesus teaches about divorce, blesses children, and encounters the rich young ruler who cannot abandon his wealth for eternal life and perfect discipleship.",
+      "20": "The parable of vineyard workers reveals God's gracious generosity; Jesus predicts His death a third time and teaches that greatness comes through servant leadership.",
+      "21": "Jesus enters Jerusalem triumphantly, cleanses the temple of money-changers, curses the fruitless fig tree, and faces challenges to His divine authority.",
+      "22": "Jesus tells the wedding feast parable, answers questions about taxes to Caesar, resurrection with seven brothers, and identifies love as the greatest commandment.",
+      "23": "Jesus pronounces seven woes against the scribes and Pharisees for their hypocrisy, calling them whitewashed tombs, and laments over Jerusalem's rejection.",
+      "24": "Jesus predicts the temple's destruction and describes signs of His second coming, urging watchfulness since no one knows the day or hour.",
+      "25": "Three parables about readiness: ten virgins, talents, and sheep and goats; Jesus separates the righteous from the wicked in final judgment.",
+      "26": "Jesus is anointed at Bethany, celebrates the Last Supper establishing the New Covenant, agonizes in Gethsemane, and is betrayed by Judas and arrested.",
+      "27": "Judas hangs himself; Jesus faces trials before Pilate and is crucified between two thieves, dying as darkness covers the land and the temple veil tears.",
+      "28": "Women discover the empty tomb; an angel announces Jesus' resurrection; Jesus appears to His disciples and gives the Great Commission to make disciples of all nations."
     }
   },
   {
@@ -728,7 +746,15 @@
       "5": "Justified believers have peace with God; Adam brought sin and death, but Christ brings grace and life to all.",
       "6": "Believers died to sin in baptism and live new lives; sin no longer masters us; we're slaves to righteousness.",
       "7": "The law reveals sin but cannot save; Paul struggles with his sinful nature; only Christ delivers from condemnation.",
-      "8": "No condemnation for those in Christ; the Spirit gives life; all creation awaits redemption; nothing separates us from God's love."
+      "8": "No condemnation for those in Christ; the Spirit gives life; all creation awaits redemption; nothing separates us from God's love.",
+      "9": "God's sovereign election is evident in Israel's history; not all descendants of Abraham are true Israel; God has mercy on whom He chooses.",
+      "10": "Israel's zeal without knowledge led to rejection of Christ; salvation is available to all who call on the Lord, both Jew and Gentile.",
+      "11": "Israel's hardening is partial and temporary; Gentiles are grafted into the olive tree while natural branches await restoration through God's faithfulness.",
+      "12": "Present your bodies as living sacrifices; be transformed by renewing your mind; use spiritual gifts to serve the body of Christ in love.",
+      "13": "Submit to governing authorities as God's servants; love fulfills the law; live as children of light awaiting Christ's return.",
+      "14": "Don't judge weaker brothers over disputable matters; live by faith and seek what builds up others rather than personal liberty.",
+      "15": "Strong believers should bear the weaknesses of others; Christ unites Jews and Gentiles; Paul shares his ministry plans and requests prayer.",
+      "16": "Personal greetings to faithful servants; beware of divisive false teachers; the mystery of the gospel is now revealed to all nations."
     }
   },
   {
@@ -882,7 +908,21 @@
     "category": "General Epistles",
     "author": "Unknown (trad. Paul)",
     "language": "Greek",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "God has spoken through His Son, who is superior to angels as the heir of all things, the radiance of God's glory, and the exact representation of His nature.",
+      "2": "Christ became human to suffer death for everyone, being made like His brothers to become a merciful and faithful high priest who can help those who are tempted.",
+      "3": "Jesus is superior to Moses as the builder is greater than the house; believers must hold fast to their confidence and not harden their hearts as Israel did in the wilderness.",
+      "4": "A Sabbath rest remains for God's people; the Word of God is living and active, and Jesus our great high priest enables us to approach the throne of grace with confidence.",
+      "5": "Christ learned obedience through suffering and became the source of eternal salvation for all who obey Him, appointed as high priest according to the order of Melchizedek.",
+      "6": "Mature believers must move beyond elementary teachings; though apostasy brings severe consequences, God's faithful promises and oath provide hope as an anchor for the soul.",
+      "7": "Melchizedek's eternal priesthood prefigures Christ's superior priesthood, which replaces the Levitical system and guarantees a better covenant through His permanent intercession.",
+      "8": "Christ serves as high priest of a better covenant with better promises, making the first covenant obsolete as God writes His law on believers' hearts and minds.",
+      "9": "Christ entered the heavenly sanctuary with His own blood, obtaining eternal redemption through His once-for-all sacrifice that cleanses the conscience from dead works to serve the living God.",
+      "10": "Christ's single offering has perfected forever those who are being sanctified; believers must draw near with confidence, hold fast their confession, and encourage one another as the Day approaches.",
+      "11": "Faith is the assurance of things hoped for and conviction of things not seen, demonstrated by heroes from Abel to Moses who gained approval through faith despite not receiving the promises.",
+      "12": "Believers must run with endurance the race set before them, fixing their eyes on Jesus who endured the cross; God's discipline proves His love and produces righteous character in His children.",
+      "13": "Practical instructions for Christian living include hospitality, marriage purity, contentment, obedience to leaders, and offering continual sacrifice of praise through Jesus, our unchanging Lord."
+    }
   },
   {
     "name": "James",
@@ -966,6 +1006,29 @@
     "category": "Apocalypse",
     "author": "John",
     "language": "Greek",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "John receives a vision of the glorified Christ walking among seven golden lampstands, His appearance radiating divine majesty and authority as the Living One who holds the keys of death and Hades.",
+      "2": "Christ addresses four of the seven churches—Ephesus, Smyrna, Pergamum, and Thyatira—with specific commendations, rebukes, and promises for those who overcome and remain faithful.",
+      "3": "Christ completes His messages to the seven churches—Sardis, Philadelphia, and Laodicea—calling them to repentance, faithfulness, and spiritual fervor while promising eternal rewards to overcomers.",
+      "4": "John is taken up to heaven and sees God's throne surrounded by twenty-four elders and four living creatures who continually worship the Holy One who created all things for His pleasure.",
+      "5": "A sealed scroll appears in God's right hand, and only the Lamb who was slain is worthy to open it, receiving worship from all creation as the One who redeemed people from every tribe and nation.",
+      "6": "The Lamb opens the first six seals, unleashing conquest, war, famine, death, martyrs crying for justice, and cosmic upheaval as God's judgment begins upon the earth.",
+      "7": "Before the seventh seal, 144,000 servants of God are sealed from the twelve tribes of Israel, and John sees a great multitude from every nation worshiping before the throne having come out of great tribulation.",
+      "8": "The seventh seal brings silence in heaven, then seven angels with trumpets begin God's judgments on earth through hail, fire, a burning mountain, a fallen star, and darkness covering a third of creation.",
+      "9": "The fifth and sixth trumpets release demonic locusts from the abyss to torment unrepentant humanity, followed by a massive army of 200 million horsemen killing a third of mankind, yet people still refuse to repent.",
+      "10": "A mighty angel holding a little scroll declares that in the days of the seventh trumpet, God's mystery will be completed, and John is commanded to eat the scroll which is sweet in his mouth but bitter in his stomach.",
+      "11": "John measures the temple while two witnesses prophesy for 1,260 days with great power until they are killed and resurrected; the seventh trumpet sounds, announcing Christ's eternal kingdom and God's wrath.",
+      "12": "A woman clothed with the sun gives birth to a male child who will rule the nations, while a great red dragon seeks to devour the child; war breaks out in heaven, and Satan is cast down to earth with great fury.",
+      "13": "Two beasts emerge—one from the sea with authority over all nations, and one from the earth performing signs to deceive people into worshiping the first beast and receiving its mark, 666.",
+      "14": "The Lamb stands with 144,000 on Mount Zion singing a new song; three angels proclaim the eternal gospel, announce Babylon's fall, and warn against receiving the beast's mark before the harvest of the earth.",
+      "15": "Seven angels prepare to pour out the seven last plagues containing God's completed wrath, while those who conquered the beast sing the song of Moses and the Lamb beside a sea of glass mixed with fire.",
+      "16": "The seven bowls of God's wrath are poured out, bringing painful sores, death in the seas and rivers, scorching heat, darkness on the beast's kingdom, and the great earthquake at Armageddon.",
+      "17": "John sees the judgment of the great prostitute Babylon who sits on many waters, drunk with the blood of saints, riding a scarlet beast with seven heads representing kings and kingdoms.",
+      "18": "Babylon the great falls suddenly and completely, bringing mourning to kings, merchants, and sailors who profited from her luxury, while heaven rejoices over God's righteous judgment of her corruption.",
+      "19": "Heaven celebrates with hallelujah choruses for God's judgment and the marriage supper of the Lamb; Christ returns as King of Kings and Lord of Lords to defeat the beast and false prophet at Armageddon.",
+      "20": "Satan is bound for 1,000 years while martyrs reign with Christ; after his release and final rebellion, Satan is cast into the lake of fire, and all the dead face the great white throne judgment.",
+      "21": "God creates new heavens and a new earth with the New Jerusalem descending as a bride; He dwells with His people, wiping away all tears, pain, and death in the eternal city of perfect glory.",
+      "22": "The angel shows John the river of life and tree of life in the New Jerusalem; Jesus declares His soon coming and invites all who thirst to take the water of life freely as the Spirit and bride say 'Come.'"
+    }
   }
 ]

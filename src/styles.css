@@ -139,18 +139,25 @@ a:hover { text-decoration: underline; }
 }
 
 .commentary-link {
-  background: var(--card);
-  border: 1px solid var(--border);
-  padding: 0.6rem 1rem;
-  border-radius: 8px;
-  color: var(--link);
-  font-size: 0.9rem;
-  transition: background 0.2s ease;
+  background: rgba(106, 169, 255, 0.1);
+  border: 1px solid rgba(106, 169, 255, 0.3);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  color: #4a90e2;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .commentary-link:hover {
-  background: rgba(255,255,255,0.05);
+  background: rgba(106, 169, 255, 0.2);
+  border-color: rgba(106, 169, 255, 0.5);
+  transform: translateY(-1px);
   text-decoration: none;
+  color: #2875d7;
 }
 
 .table { 
@@ -706,9 +713,21 @@ a:hover { text-decoration: underline; }
     gap: 0.5rem;
   }
   
+  .commentary-link {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.8rem;
+    text-align: center;
+    min-width: auto;
+  }
+  
   .table th, .table td {
     padding: 0.8rem 0.6rem;
     font-size: 0.9rem;
+  }
+  
+  .table td:last-child {
+    text-align: center;
+    padding: 0.8rem 0.4rem;
   }
   
   .video-section {
