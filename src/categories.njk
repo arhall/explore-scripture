@@ -1,0 +1,18 @@
+---
+layout: base.njk
+title: Sections
+permalink: "/categories/index.html"
+---
+<div class="header">
+  <h1>Sections</h1>
+  <p class="meta">Canonical groupings of the books.</p>
+</div>
+<div class="grid">
+  {% for sec in categories %}
+    <a class="card" href="/categories/{{ sec.slug }}/">
+      <h3>{{ sec.name }}</h3>
+      <p>{{ sec.description }}</p>
+      <span class="badge">{{ sec.testament }}</span>
+    </a>
+  {% endfor %}
+</div>

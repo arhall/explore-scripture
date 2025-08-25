@@ -1,0 +1,20 @@
+---
+layout: base.njk
+---
+<div class="header">
+  <h1>{{ category.name }}</h1>
+  <span class="badge">{{ category.testament }}</span>
+</div>
+<p class="meta">{{ category.description }}</p>
+
+<div class="grid">
+{% for b in books %}
+  <a class="card" href="/books/{{ b.slug }}/">
+    <h3>{{ b.name }}</h3>
+    <p>{{ b.author }} • {{ b.language }}</p>
+    <span class="badge">{{ b.testament }}</span>
+  </a>
+{% endfor %}
+</div>
+
+<p class="meta"><a href="/categories/">← Back to Sections</a></p>

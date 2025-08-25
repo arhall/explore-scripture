@@ -1,0 +1,30 @@
+---
+layout: base.njk
+---
+<div class="header">
+  <h1>{{ book.name }}</h1>
+  <span class="badge">{{ book.testament }}</span>
+</div>
+<p class="meta">
+  <strong>Section:</strong> {{ book.category }} &nbsp; • &nbsp;
+  <strong>Trad. Author:</strong> {{ book.author }} &nbsp; • &nbsp;
+  <strong>Original Language:</strong> {{ book.language }}
+</p>
+
+{% if book.chapterSummaries and (book.chapterSummaries | length) > 0 %}
+  <h2>Chapter Summaries</h2>
+  <table class="table">
+    <thead>
+      <tr><th>Chapter</th><th>Summary</th></tr>
+    </thead>
+    <tbody>
+      {% for ch, sum in book.chapterSummaries | dictsort %}
+        <tr><td>{{ ch }}</td><td>{{ sum | safe }}</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% else %}
+  <p class="meta">Summaries coming soon.</p>
+{% endif %}
+
+<p class="meta"><a href="/categories/{{ book.category | slug }}/">← Back to {{ book.category }}</a></p>

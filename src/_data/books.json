@@ -1,0 +1,607 @@
+[
+  {
+    "name": "Genesis",
+    "slug": "genesis",
+    "testament": "Old Testament",
+    "category": "Law (Torah)",
+    "author": "Moses",
+    "language": "Hebrew",
+    "chapterSummaries": {
+      "1": "Creation in six days; God speaks the cosmos into existence; humanity made in God's image.",
+      "2": "Zoom in on Eden: the garden, the mandate, and the creation of woman; Sabbath rest.",
+      "3": "The fall: temptation, sin, curses, and the first promise of redemption (protoevangelium)."
+    }
+  },
+  {
+    "name": "Exodus",
+    "slug": "exodus",
+    "testament": "Old Testament",
+    "category": "Law (Torah)",
+    "author": "Moses",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Leviticus",
+    "slug": "leviticus",
+    "testament": "Old Testament",
+    "category": "Law (Torah)",
+    "author": "Moses",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Numbers",
+    "slug": "numbers",
+    "testament": "Old Testament",
+    "category": "Law (Torah)",
+    "author": "Moses",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Deuteronomy",
+    "slug": "deuteronomy",
+    "testament": "Old Testament",
+    "category": "Law (Torah)",
+    "author": "Moses",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Joshua",
+    "slug": "joshua",
+    "testament": "Old Testament",
+    "category": "History",
+    "author": "Joshua",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Judges",
+    "slug": "judges",
+    "testament": "Old Testament",
+    "category": "History",
+    "author": "Samuel (trad.)",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Ruth",
+    "slug": "ruth",
+    "testament": "Old Testament",
+    "category": "History",
+    "author": "Samuel (trad.)",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "1 Samuel",
+    "slug": "1-samuel",
+    "testament": "Old Testament",
+    "category": "History",
+    "author": "Samuel, Gad, Nathan (trad.)",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "2 Samuel",
+    "slug": "2-samuel",
+    "testament": "Old Testament",
+    "category": "History",
+    "author": "Gad, Nathan (trad.)",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "1 Kings",
+    "slug": "1-kings",
+    "testament": "Old Testament",
+    "category": "History",
+    "author": "Jeremiah (trad.)",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "2 Kings",
+    "slug": "2-kings",
+    "testament": "Old Testament",
+    "category": "History",
+    "author": "Jeremiah (trad.)",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "1 Chronicles",
+    "slug": "1-chronicles",
+    "testament": "Old Testament",
+    "category": "History",
+    "author": "Ezra (trad.)",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "2 Chronicles",
+    "slug": "2-chronicles",
+    "testament": "Old Testament",
+    "category": "History",
+    "author": "Ezra (trad.)",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Ezra",
+    "slug": "ezra",
+    "testament": "Old Testament",
+    "category": "History",
+    "author": "Ezra",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Nehemiah",
+    "slug": "nehemiah",
+    "testament": "Old Testament",
+    "category": "History",
+    "author": "Nehemiah (trad.)",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Esther",
+    "slug": "esther",
+    "testament": "Old Testament",
+    "category": "History",
+    "author": "Unknown (trad. Mordecai)",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Job",
+    "slug": "job",
+    "testament": "Old Testament",
+    "category": "Poetry & Writings",
+    "author": "Unknown",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Psalms",
+    "slug": "psalms",
+    "testament": "Old Testament",
+    "category": "Poetry & Writings",
+    "author": "David & others",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Proverbs",
+    "slug": "proverbs",
+    "testament": "Old Testament",
+    "category": "Poetry & Writings",
+    "author": "Solomon & others",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Ecclesiastes",
+    "slug": "ecclesiastes",
+    "testament": "Old Testament",
+    "category": "Poetry & Writings",
+    "author": "Solomon (trad.)",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Song of Songs",
+    "slug": "song-of-songs",
+    "testament": "Old Testament",
+    "category": "Poetry & Writings",
+    "author": "Solomon (trad.)",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Isaiah",
+    "slug": "isaiah",
+    "testament": "Old Testament",
+    "category": "Major Prophets",
+    "author": "Isaiah",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Jeremiah",
+    "slug": "jeremiah",
+    "testament": "Old Testament",
+    "category": "Major Prophets",
+    "author": "Jeremiah",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Lamentations",
+    "slug": "lamentations",
+    "testament": "Old Testament",
+    "category": "Major Prophets",
+    "author": "Jeremiah (trad.)",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Ezekiel",
+    "slug": "ezekiel",
+    "testament": "Old Testament",
+    "category": "Major Prophets",
+    "author": "Ezekiel",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Daniel",
+    "slug": "daniel",
+    "testament": "Old Testament",
+    "category": "Major Prophets",
+    "author": "Daniel (Aramaic portions)",
+    "language": "Hebrew/Aramaic",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Hosea",
+    "slug": "hosea",
+    "testament": "Old Testament",
+    "category": "Minor Prophets",
+    "author": "Hosea",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Joel",
+    "slug": "joel",
+    "testament": "Old Testament",
+    "category": "Minor Prophets",
+    "author": "Joel",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Amos",
+    "slug": "amos",
+    "testament": "Old Testament",
+    "category": "Minor Prophets",
+    "author": "Amos",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Obadiah",
+    "slug": "obadiah",
+    "testament": "Old Testament",
+    "category": "Minor Prophets",
+    "author": "Obadiah",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Jonah",
+    "slug": "jonah",
+    "testament": "Old Testament",
+    "category": "Minor Prophets",
+    "author": "Jonah",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Micah",
+    "slug": "micah",
+    "testament": "Old Testament",
+    "category": "Minor Prophets",
+    "author": "Micah",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Nahum",
+    "slug": "nahum",
+    "testament": "Old Testament",
+    "category": "Minor Prophets",
+    "author": "Nahum",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Habakkuk",
+    "slug": "habakkuk",
+    "testament": "Old Testament",
+    "category": "Minor Prophets",
+    "author": "Habakkuk",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Zephaniah",
+    "slug": "zephaniah",
+    "testament": "Old Testament",
+    "category": "Minor Prophets",
+    "author": "Zephaniah",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Haggai",
+    "slug": "haggai",
+    "testament": "Old Testament",
+    "category": "Minor Prophets",
+    "author": "Haggai",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Zechariah",
+    "slug": "zechariah",
+    "testament": "Old Testament",
+    "category": "Minor Prophets",
+    "author": "Zechariah",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Malachi",
+    "slug": "malachi",
+    "testament": "Old Testament",
+    "category": "Minor Prophets",
+    "author": "Malachi",
+    "language": "Hebrew",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Matthew",
+    "slug": "matthew",
+    "testament": "New Testament",
+    "category": "Gospels",
+    "author": "Matthew",
+    "language": "Greek",
+    "chapterSummaries": {
+      "1": "Genealogy linking Jesus to David and Abraham; virgin birth narrative.",
+      "2": "Magi visit; Herod's plot; flight to Egypt; return to Nazareth.",
+      "3": "John the Baptist prepares the way; Jesus' baptism and the Father's affirmation."
+    }
+  },
+  {
+    "name": "Mark",
+    "slug": "mark",
+    "testament": "New Testament",
+    "category": "Gospels",
+    "author": "Mark",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Luke",
+    "slug": "luke",
+    "testament": "New Testament",
+    "category": "Gospels",
+    "author": "Luke",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "John",
+    "slug": "john",
+    "testament": "New Testament",
+    "category": "Gospels",
+    "author": "John",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Acts",
+    "slug": "acts",
+    "testament": "New Testament",
+    "category": "Acts",
+    "author": "Luke",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Romans",
+    "slug": "romans",
+    "testament": "New Testament",
+    "category": "Pauline Epistles",
+    "author": "Paul",
+    "language": "Greek",
+    "chapterSummaries": {
+      "1": "Gospel as God's power; universal sinfulness; wrath revealed against unrighteousness.",
+      "2": "Impartial judgment; both Jew and Gentile accountable; outward vs. inward circumcision."
+    }
+  },
+  {
+    "name": "1 Corinthians",
+    "slug": "1-corinthians",
+    "testament": "New Testament",
+    "category": "Pauline Epistles",
+    "author": "Paul",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "2 Corinthians",
+    "slug": "2-corinthians",
+    "testament": "New Testament",
+    "category": "Pauline Epistles",
+    "author": "Paul",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Galatians",
+    "slug": "galatians",
+    "testament": "New Testament",
+    "category": "Pauline Epistles",
+    "author": "Paul",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Ephesians",
+    "slug": "ephesians",
+    "testament": "New Testament",
+    "category": "Pauline Epistles",
+    "author": "Paul",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Philippians",
+    "slug": "philippians",
+    "testament": "New Testament",
+    "category": "Pauline Epistles",
+    "author": "Paul",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Colossians",
+    "slug": "colossians",
+    "testament": "New Testament",
+    "category": "Pauline Epistles",
+    "author": "Paul",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "1 Thessalonians",
+    "slug": "1-thessalonians",
+    "testament": "New Testament",
+    "category": "Pauline Epistles",
+    "author": "Paul",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "2 Thessalonians",
+    "slug": "2-thessalonians",
+    "testament": "New Testament",
+    "category": "Pauline Epistles",
+    "author": "Paul",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "1 Timothy",
+    "slug": "1-timothy",
+    "testament": "New Testament",
+    "category": "Pauline Epistles",
+    "author": "Paul",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "2 Timothy",
+    "slug": "2-timothy",
+    "testament": "New Testament",
+    "category": "Pauline Epistles",
+    "author": "Paul",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Titus",
+    "slug": "titus",
+    "testament": "New Testament",
+    "category": "Pauline Epistles",
+    "author": "Paul",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Philemon",
+    "slug": "philemon",
+    "testament": "New Testament",
+    "category": "Pauline Epistles",
+    "author": "Paul",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Hebrews",
+    "slug": "hebrews",
+    "testament": "New Testament",
+    "category": "General Epistles",
+    "author": "Unknown (trad. Paul)",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "James",
+    "slug": "james",
+    "testament": "New Testament",
+    "category": "General Epistles",
+    "author": "James",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "1 Peter",
+    "slug": "1-peter",
+    "testament": "New Testament",
+    "category": "General Epistles",
+    "author": "Peter",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "2 Peter",
+    "slug": "2-peter",
+    "testament": "New Testament",
+    "category": "General Epistles",
+    "author": "Peter",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "1 John",
+    "slug": "1-john",
+    "testament": "New Testament",
+    "category": "General Epistles",
+    "author": "John",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "2 John",
+    "slug": "2-john",
+    "testament": "New Testament",
+    "category": "General Epistles",
+    "author": "John",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "3 John",
+    "slug": "3-john",
+    "testament": "New Testament",
+    "category": "General Epistles",
+    "author": "John",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Jude",
+    "slug": "jude",
+    "testament": "New Testament",
+    "category": "General Epistles",
+    "author": "Jude",
+    "language": "Greek",
+    "chapterSummaries": {}
+  },
+  {
+    "name": "Revelation",
+    "slug": "revelation",
+    "testament": "New Testament",
+    "category": "Apocalypse",
+    "author": "John",
+    "language": "Greek",
+    "chapterSummaries": {}
+  }
+]

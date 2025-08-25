@@ -1,0 +1,32 @@
+---
+layout: base.njk
+title: Bible Explorer
+description: Chapter-by-chapter summaries, organized by sections and books.
+---
+
+<div class="header">
+  <h1>Bible Explorer</h1>
+  <p class="meta">Browse by section or jump right into a book.</p>
+</div>
+
+<h2>Sections</h2>
+<div class="grid">
+  {% for sec in categories %}
+    <a class="card" href="/categories/{{ sec.slug }}/">
+      <h3>{{ sec.name }}</h3>
+      <p>{{ sec.description }}</p>
+      <span class="badge">{{ sec.testament }}</span>
+    </a>
+  {% endfor %}
+</div>
+
+<h2 style="margin-top:1.5rem;">All Books</h2>
+<div class="grid">
+  {% for b in books %}
+    <a class="card" href="/books/{{ b.slug }}/">
+      <h3>{{ b.name }}</h3>
+      <p>{{ b.author }} • {{ b.category }}</p>
+      <span class="badge">{{ b.testament }}</span>
+    </a>
+  {% endfor %}
+</div>

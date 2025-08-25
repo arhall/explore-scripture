@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Law (Torah)",
+    "slug": "law-torah",
+    "testament": "Old Testament",
+    "description": "Genesis through Deuteronomy: creation, covenant, and the formation of Israel."
+  },
+  {
+    "name": "History",
+    "slug": "history",
+    "testament": "Old Testament",
+    "description": "Joshua through Esther: conquest, kingdom, exile, and return."
+  },
+  {
+    "name": "Poetry & Writings",
+    "slug": "poetry-writings",
+    "testament": "Old Testament",
+    "description": "Job through Song of Songs: wisdom, worship, and reflections."
+  },
+  {
+    "name": "Major Prophets",
+    "slug": "major-prophets",
+    "testament": "Old Testament",
+    "description": "Isaiah through Daniel: large prophetic works addressing judgment and hope."
+  },
+  {
+    "name": "Minor Prophets",
+    "slug": "minor-prophets",
+    "testament": "Old Testament",
+    "description": "Hosea through Malachi: shorter prophetic books with powerful messages."
+  },
+  {
+    "name": "Gospels",
+    "slug": "gospels",
+    "testament": "New Testament",
+    "description": "Matthew, Mark, Luke, John: the life, death, and resurrection of Jesus."
+  },
+  {
+    "name": "Acts",
+    "slug": "acts",
+    "testament": "New Testament",
+    "description": "The birth and expansion of the early Church."
+  },
+  {
+    "name": "Pauline Epistles",
+    "slug": "pauline-epistles",
+    "testament": "New Testament",
+    "description": "Letters attributed to Paul addressing doctrine and church life."
+  },
+  {
+    "name": "General Epistles",
+    "slug": "general-epistles",
+    "testament": "New Testament",
+    "description": "Letters by other apostles and leaders to the wider church."
+  },
+  {
+    "name": "Apocalypse",
+    "slug": "apocalypse",
+    "testament": "New Testament",
+    "description": "Revelation: apocalyptic prophecy and ultimate hope."
+  }
+]
