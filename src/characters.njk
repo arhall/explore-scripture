@@ -1,0 +1,47 @@
+---
+layout: base.njk
+title: Biblical Characters
+description: Explore biblical characters and discover where they appear throughout Scripture.
+pagination:
+  data: characters
+  size: 1
+  alias: character
+permalink: "/characters/{{ character.slug }}/"
+---
+
+<div class="character-header">
+  <h1>{{ character.name }}</h1>
+  <div class="character-stats">
+    <div class="stat">
+      <div class="stat-number">{{ character.totalAppearances }}</div>
+      <div class="stat-label">{% if character.totalAppearances == 1 %}Appearance{% else %}Appearances{% endif %}</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">{{ character.totalBooks }}</div>
+      <div class="stat-label">{% if character.totalBooks == 1 %}Book{% else %}Books{% endif %}</div>
+    </div>
+  </div>
+</div>
+
+<div class="character-content">
+  <div class="appearances-section">
+    <h2>Scripture Appearances</h2>
+    <div class="appearances-list">
+      {% for appearance in character.appearances %}
+        <a href="/books/{{ appearance.bookSlug }}/#chapter-{{ appearance.chapter }}" class="appearance-link">
+          <div class="appearance-book">{{ appearance.book }}</div>
+          <div class="appearance-chapter">Chapter {{ appearance.chapter }}</div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="books-summary">
+    <h3>Books Mentioned In</h3>
+    <div class="book-tags">
+      {% for book in character.books %}
+        <span class="book-tag">{{ book }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</div>

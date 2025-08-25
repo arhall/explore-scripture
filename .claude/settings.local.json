@@ -10,7 +10,9 @@
       "Bash(npm run dev:*)",
       "WebFetch(domain:www.youtube.com)",
       "Bash(timeout 10 npm run dev)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(npm run serve:*)",
+      "Bash(npm run:*)"
     ],
     "deny": [],
     "ask": []

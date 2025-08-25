@@ -1,0 +1,35 @@
+---
+layout: base.njk
+title: Biblical Characters
+description: Explore biblical characters and discover where they appear throughout Scripture.
+permalink: "/characters/"
+---
+
+<div class="header">
+  <h1>Biblical Characters</h1>
+  <p class="meta">{{ characters | length }} characters from across the Bible</p>
+</div>
+
+<div class="search-notice">
+  <p>💡 You can also search for characters using the search box above</p>
+</div>
+
+<div class="characters-grid">
+  {% for character in characters %}
+    <a href="/characters/{{ character.slug }}/" class="character-card">
+      <div class="character-name">{{ character.name }}</div>
+      <div class="character-stats">
+        <span class="appearance-count">{{ character.totalAppearances }} {% if character.totalAppearances == 1 %}appearance{% else %}appearances{% endif %}</span>
+        <span class="book-count">{{ character.totalBooks }} {% if character.totalBooks == 1 %}book{% else %}books{% endif %}</span>
+      </div>
+      <div class="character-books">
+        {% for book in character.books | slice(0, 3) %}
+          <span class="book-preview">{{ book }}</span>
+        {% endfor %}
+        {% if character.books | length > 3 %}
+          <span class="book-more">+{{ character.books | length - 3 }} more</span>
+        {% endif %}
+      </div>
+    </a>
+  {% endfor %}
+</div>

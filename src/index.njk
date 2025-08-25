@@ -1,53 +1,116 @@
 ---
 layout: base.njk
 title: Bible Explorer
-description: Chapter-by-chapter summaries, organized by sections and books.
+description: Chapter-by-chapter Bible summaries, videos, and commentary for every book of Scripture.
 ---
 
-<div class="header">
-  <h1>Bible Explorer</h1>
-  <p class="meta">Explore the Bible with chapter-by-chapter summaries, Bible Project videos, and commentary links.</p>
-</div>
-
-<div class="chapter-summary">
-  <h3>Features</h3>
-  <ul style="color: var(--text); line-height: 1.8;">
-    <li><strong>Detailed Chapter Summaries:</strong> Concise, in-depth summaries for every chapter</li>
-    <li><strong>Bible Project Videos:</strong> Embedded overview videos for each book</li>
-    <li><strong>Commentary Links:</strong> Direct access to Enduring Word commentary</li>
-    <li><strong>Mobile-Friendly:</strong> Optimized for reading on any device</li>
-    <li><strong>Organized Structure:</strong> Browse by biblical categories and themes</li>
-  </ul>
-</div>
-
-<h2>Biblical Sections</h2>
-<div class="grid">
-  {% for sec in categories %}
-    <a class="card" href="/categories/{{ sec.slug }}/">
-      <h3>{{ sec.name }}</h3>
-      <p>{{ sec.description }}</p>
-      <div style="margin-top: 0.8rem;">
-        {% if sec.bookCount %}
-          <span class="badge" style="background: rgba(106, 169, 255, 0.1); color: var(--accent);">{{ sec.bookCount }} books</span>
-        {% endif %}
-        <span class="badge">{{ sec.testament }}</span>
+<div class="hero-section">
+  <div class="hero-content">
+    <h1>Bible Explorer</h1>
+    <p class="hero-description">Discover the unified story of Scripture through chapter summaries, Bible Project videos, and expert commentary.</p>
+    
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-number">66</div>
+        <div class="stat-label">Books</div>
       </div>
-    </a>
-  {% endfor %}
+      <div class="stat">
+        <div class="stat-number">1,189</div>
+        <div class="stat-label">Chapters</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">{{ books | selectattr("chapterSummaries") | list | length }}</div>
+        <div class="stat-label">With Summaries</div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<h2 style="margin-top:2rem;">All Books ({{ books | length }})</h2>
-<div class="grid">
-  {% for b in books %}
-    <a class="card" href="/books/{{ b.slug }}/">
-      <h3>{{ b.name }}</h3>
-      <p><strong>{{ b.author }}</strong> • {{ b.category }}</p>
-      {% if b.chapterSummaries and (b.chapterSummaries | length) > 0 %}
-        <p style="font-size: 0.85rem; color: var(--accent); margin-top: 0.5rem;">
-          ✓ {{ b.chapterSummaries | length }} chapters with summaries
-        </p>
-      {% endif %}
-      <span class="badge">{{ b.testament }}</span>
-    </a>
-  {% endfor %}
+<div class="features-grid">
+  <div class="feature-card">
+    <div class="feature-icon">📚</div>
+    <h3>Chapter Summaries</h3>
+    <p>Concise, theologically accurate summaries for every chapter</p>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon">🎥</div>
+    <h3>Bible Project Videos</h3>
+    <p>Animated overviews explaining each book's themes and structure</p>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon">💬</div>
+    <h3>Expert Commentary</h3>
+    <p>Direct links to trusted biblical commentaries and resources</p>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon">🔍</div>
+    <h3>Smart Search</h3>
+    <p>Find books, chapters, and topics instantly with our search</p>
+  </div>
 </div>
+
+<section class="testament-section">
+  <h2>Old Testament</h2>
+  <p class="section-intro">God's covenant with Israel and the promise of redemption</p>
+  
+  {% for category in categories %}
+    {% if category.testament == "Old Testament" %}
+      {% set categoryBooks = books | selectattr("category", "equalto", category.name) | list %}
+      <div class="category-group">
+        <div class="category-header">
+          <h3>
+            <a href="/categories/{{ category.slug }}/">{{ category.name }}</a>
+            <span class="book-count">{{ categoryBooks | length }} books</span>
+          </h3>
+          <p class="category-description">{{ category.description }}</p>
+        </div>
+        
+        <div class="category-books">
+          {% for book in categoryBooks %}
+            <a href="/books/{{ book.slug }}/" class="book-card">
+              <div class="book-title">{{ book.name }}</div>
+              {% if book.chapterSummaries and (book.chapterSummaries | length) > 0 %}
+                <div class="book-progress">{{ book.chapterSummaries | length }} chapters</div>
+              {% else %}
+                <div class="book-progress pending">Coming soon</div>
+              {% endif %}
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</section>
+
+<section class="testament-section">
+  <h2>New Testament</h2>
+  <p class="section-intro">The life of Christ and the birth of the Church</p>
+  
+  {% for category in categories %}
+    {% if category.testament == "New Testament" %}
+      {% set categoryBooks = books | selectattr("category", "equalto", category.name) | list %}
+      <div class="category-group">
+        <div class="category-header">
+          <h3>
+            <a href="/categories/{{ category.slug }}/">{{ category.name }}</a>
+            <span class="book-count">{{ categoryBooks | length }} books</span>
+          </h3>
+          <p class="category-description">{{ category.description }}</p>
+        </div>
+        
+        <div class="category-books">
+          {% for book in categoryBooks %}
+            <a href="/books/{{ book.slug }}/" class="book-card">
+              <div class="book-title">{{ book.name }}</div>
+              {% if book.chapterSummaries and (book.chapterSummaries | length) > 0 %}
+                <div class="book-progress">{{ book.chapterSummaries | length }} chapters</div>
+              {% else %}
+                <div class="book-progress pending">Coming soon</div>
+              {% endif %}
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</section>

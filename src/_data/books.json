@@ -773,7 +773,14 @@
     "category": "Pauline Epistles",
     "author": "Paul",
     "language": "Greek",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Paul defends his apostolic authority as divinely appointed, not from men, and expresses amazement that the Galatians are turning to a different gospel. He declares that anyone preaching a gospel contrary to what he preached should be accursed.",
+      "2": "Paul recounts his confrontation with Peter over eating with Gentiles and his defense of the gospel before the Jerusalem apostles. He establishes that justification comes through faith in Christ, not by works of the law, declaring 'I have been crucified with Christ.'",
+      "3": "Paul argues that the Galatians received the Spirit by faith, not law-keeping, and that Abraham was justified by faith before the law existed. The law served as a guardian until Christ came, and now all who believe are sons of God regardless of ethnicity or status.",
+      "4": "Paul explains that believers were once enslaved but now are adopted as sons and heirs through Christ. He appeals personally to the Galatians and uses the allegory of Sarah and Hagar to contrast freedom in Christ with bondage under law.",
+      "5": "Paul commands the Galatians to stand firm in their freedom and not submit again to slavery under the law. He contrasts the works of the flesh with the fruit of the Spirit, emphasizing that those led by the Spirit are not under law.",
+      "6": "Paul instructs believers to restore fallen brothers gently, bear one another's burdens, and not grow weary in doing good. He concludes by emphasizing that what matters is not circumcision but being a new creation in Christ."
+    }
   },
   {
     "name": "Ephesians",
@@ -782,7 +789,14 @@
     "category": "Pauline Epistles",
     "author": "Paul",
     "language": "Greek",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Paul praises God for every spiritual blessing in Christ, including election, adoption, redemption, and the inheritance believers have in Christ. He prays that the Ephesians would have wisdom to understand their calling and Christ's power that raised Him from the dead.",
+      "2": "Paul describes how believers were dead in sins but made alive together with Christ by grace through faith, not works. Jews and Gentiles are now united as one body in Christ, with access to the Father through the Spirit.",
+      "3": "Paul reveals the mystery that Gentiles are fellow heirs and members of the body of Christ through the gospel. He prays that Christ would dwell in their hearts and that they would know the love of Christ that surpasses knowledge.",
+      "4": "Paul urges believers to walk worthy of their calling, maintaining unity in the Spirit while recognizing diverse gifts given to build up the body. He contrasts the old self with the new self, emphasizing truthfulness, controlled anger, honest work, and edifying speech.",
+      "5": "Paul calls believers to imitate God as beloved children, walking in love and light rather than darkness. He addresses marriage relationships as reflecting Christ and the church, with mutual submission, husbands loving sacrificially, and wives respecting their husbands.",
+      "6": "Paul instructs children to obey parents, fathers not to provoke children, and slaves/masters to serve faithfully as unto the Lord. He concludes with the call to put on God's armor for spiritual warfare against spiritual forces of evil."
+    }
   },
   {
     "name": "Philippians",
@@ -791,7 +805,12 @@
     "category": "Pauline Epistles",
     "author": "Paul",
     "language": "Greek",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Paul expresses confidence that God will complete the good work begun in the Philippians and shares his joy despite imprisonment. He explains that his circumstances have advanced the gospel and declares his desire to depart and be with Christ, though remaining would benefit them.",
+      "2": "Paul urges the Philippians to have the same mind as Christ, who humbled Himself to death on a cross and was therefore exalted by God. He commends Timothy and Epaphroditus as examples of selfless service and announces their coming visits.",
+      "3": "Paul warns against Judaizers and declares his own impressive credentials as worthless compared to knowing Christ. He describes pressing on toward the goal of the upward call, forgetting what lies behind, and warns against enemies of the cross who focus on earthly things.",
+      "4": "Paul urges two women to agree in the Lord, calls for rejoicing always and making requests known to God with thanksgiving. He teaches contentment in all circumstances through Christ's strength and thanks the Philippians for their partnership in supporting his ministry."
+    }
   },
   {
     "name": "Colossians",
@@ -872,7 +891,13 @@
     "category": "General Epistles",
     "author": "James",
     "language": "Greek",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "James addresses trials as opportunities for joy and perseverance, leading to maturity, and emphasizes asking God for wisdom in faith without doubting. He contrasts the rich and poor, warns against being deceived about good gifts from God, and calls for being doers of the word, not just hearers.",
+      "2": "James condemns showing partiality to the rich while dishonoring the poor and argues that faith without works is dead. He uses Abraham's willingness to sacrifice Isaac and Rahab's assistance to the spies as examples of faith demonstrated through actions.",
+      "3": "James warns that not many should become teachers due to greater judgment and focuses on controlling the tongue, which though small, can cause great damage like a fire. He contrasts earthly wisdom (bitter jealousy and selfish ambition) with heavenly wisdom (pure, peaceable, gentle, reasonable).",
+      "4": "James addresses conflicts arising from pleasures and desires, calling believers to submit to God and resist the devil. He warns against speaking against one another, boasting about tomorrow's plans without acknowledging God's will, and condemning the rich who withhold wages from laborers.",
+      "5": "James begins by condemning rich oppressors and calling them to weep over coming judgment for hoarding wealth and oppressing workers. He then encourages believers to be patient in suffering until the Lord's coming, avoid swearing oaths, pray for the sick with faith, and restore wandering brothers from error."
+    }
   },
   {
     "name": "1 Peter",
@@ -881,7 +906,13 @@
     "category": "General Epistles",
     "author": "Peter",
     "language": "Greek",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Peter blesses God for the living hope believers have through Christ's resurrection and an imperishable inheritance, encouraging joy despite present trials that test faith. He calls believers to be holy as God is holy and to love one another fervently from the heart, having been born again through God's word.",
+      "2": "Peter describes believers as living stones being built into a spiritual house and a chosen people, called out of darkness into light. He instructs believers to abstain from fleshly lusts as aliens and strangers, submitting to human authorities and serving as free people who honor God.",
+      "3": "Peter addresses wives to win unbelieving husbands through godly conduct and husbands to honor their wives as fellow heirs of grace. He calls all believers to unity, love, humility, and blessing others rather than returning evil for evil, prepared to give a defense for their hope with gentleness.",
+      "4": "Peter encourages believers to arm themselves with Christ's mindset of suffering for righteousness rather than living for human lusts. He emphasizes using spiritual gifts to serve one another, rejoicing in sharing Christ's sufferings, and entrusting their souls to the faithful Creator while doing good.",
+      "5": "Peter exhorts elders to shepherd God's flock willingly and by example, not for gain, while younger believers should submit and all should be clothed with humility. He encourages casting anxiety on God, being sober and watchful against the devil, and standing firm in faith despite suffering."
+    }
   },
   {
     "name": "2 Peter",

@@ -23,6 +23,8 @@
     <nav class="nav">
       <a class="brand" href="/">Bible Explorer</a>
       <a href="/categories/" class="{% if page.url == '/categories/' %}active{% endif %}">Sections</a>
+      <a href="/characters/" class="{% if page.url.startsWith('/characters/') %}active{% endif %}">Characters</a>
+      <a href="/links/" class="{% if page.url == '/links/' %}active{% endif %}">Links</a>
     </nav>
     
     <div class="search-container">
@@ -50,6 +52,7 @@
       try {
         const books = {{ books | dump | safe }};
         const categories = {{ categories | dump | safe }};
+        const characters = {{ characters | dump | safe }};
         
         if (!books || !Array.isArray(books)) {
           throw new Error('Books data is invalid or missing');
@@ -57,6 +60,10 @@
         
         if (!categories || !Array.isArray(categories)) {
           throw new Error('Categories data is invalid or missing');
+        }
+        
+        if (!characters || !Array.isArray(characters)) {
+          throw new Error('Characters data is invalid or missing');
         }
         
         // Process books and chapters into searchable items
@@ -122,12 +129,37 @@
             }
           }
         });
+
+        // Add characters
+        characters.forEach((character, index) => {
+          try {
+            if (!character.name || !character.slug) {
+              throw new Error(`Character at index ${index} missing required fields`);
+            }
+            
+            searchData.push({
+              type: 'character',
+              title: character.name,
+              subtitle: `${character.totalAppearances} appearances in ${character.totalBooks} books`,
+              content: `${character.name} ${character.books ? character.books.join(' ') : ''}`,
+              url: `/characters/${character.slug}/`
+            });
+          } catch (characterError) {
+            if (window.logger) {
+              window.logger.error('Error processing character for search', { 
+                character: character.name || 'unknown', 
+                error: characterError.message 
+              });
+            }
+          }
+        });
         
         if (window.logger) {
           window.logger.info('Search initialization completed', {
             totalItems: searchData.length,
             books: books.length,
-            categories: categories.length
+            categories: categories.length,
+            characters: characters.length
           });
         }
         
