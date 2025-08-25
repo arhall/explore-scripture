@@ -238,7 +238,29 @@
     "category": "History",
     "author": "Samuel (trad.)",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "After Joshua’s death, Israel continues to fight remaining Canaanites. Judah leads, aided by Simeon. Some tribes fail to fully drive out inhabitants.",
+      "2": "An angel rebukes Israel for disobedience. After Joshua’s generation dies, Israel falls into idolatry. God raises judges to deliver them, but the cycle of sin continues.",
+      "3": "God leaves nations to test Israel. Othniel delivers them from Cushan-Rishathaim. Ehud kills Eglon of Moab, bringing peace. Shamgar strikes down 600 Philistines.",
+      "4": "Deborah, a prophetess, leads Israel with Barak. God grants victory over Sisera’s army; Jael kills Sisera by driving a tent peg through his head.",
+      "5": "The song of Deborah and Barak celebrates God’s victory over Canaan and Jael’s courage. The land has peace for 40 years.",
+      "6": "Israel oppressed by Midian. God calls Gideon, who doubts and asks for signs. Gideon destroys Baal’s altar and gathers an army.",
+      "7": "God reduces Gideon’s army to 300 to show His power. With trumpets, jars, and torches, they rout Midian’s vast army.",
+      "8": "Gideon pursues and defeats Midian’s kings. Israel asks him to rule, but he refuses. He makes an ephod that becomes a snare to Israel.",
+      "9": "Abimelek, Gideon’s son, seizes power by killing his brothers. His rule brings strife; he dies after a woman drops a millstone on his head.",
+      "10": "Tola and Jair judge Israel. Later, Israel turns to idols, and God delivers them to Ammon. They cry for mercy, and He relents.",
+      "11": "Jephthah, an outcast, is chosen to fight Ammon. He vows to sacrifice whatever first comes from his house. Victory comes, but his daughter is tragically offered.",
+      "12": "Ephraim quarrels with Jephthah; thousands die. Jephthah judges six years. Ibzan, Elon, and Abdon serve as judges afterward.",
+      "13": "Israel again sins. An angel tells Manoah’s wife she’ll bear Samson, set apart as a Nazirite from birth.",
+      "14": "Samson desires a Philistine wife. He kills a lion and later finds honey in its carcass. He poses a riddle at his wedding feast.",
+      "15": "Samson burns Philistine fields with foxes, kills many with a donkey’s jawbone after betrayal, and judges Israel for 20 years.",
+      "16": "Samson loves Delilah, who betrays him. His hair is cut, he’s captured and blinded. He dies pulling down a Philistine temple, killing many.",
+      "17": "Micah makes idols and hires a Levite as his priest, revealing Israel’s religious corruption.",
+      "18": "The tribe of Dan steals Micah’s idols and priest, conquers Laish, and sets up idolatry.",
+      "19": "A Levite’s concubine is abused and killed in Gibeah. He dismembers her body to summon Israel against such evil.",
+      "20": "Israel unites against Benjamin for the atrocity in Gibeah. After heavy losses, Israel defeats Benjamin with God’s help.",
+      "21": "Israel grieves Benjamin’s near destruction. Wives are found for the survivors through unconventional means. The book ends: “Everyone did what was right in his own eyes.”"
+}
   },
   {
     "name": "Ruth",
@@ -247,7 +269,13 @@
     "category": "History",
     "author": "Samuel (trad.)",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Naomi’s family moves to Moab due to famine. Her husband and sons die, leaving Naomi and her daughters-in-law. Ruth clings to Naomi, pledging loyalty to her and to God. They return to Bethlehem at harvest time.",
+      "2": "Ruth gleans in the fields of Boaz, a relative of Naomi. Boaz shows kindness and protection, providing food and favor. Naomi recognizes God’s providence and Boaz as a potential redeemer.",
+      "3": "Naomi instructs Ruth to approach Boaz at the threshing floor. Ruth requests his protection as kinsman-redeemer. Boaz blesses her, promises to act, but mentions a nearer relative has first right.",
+      "4": "Boaz redeems Ruth by negotiating with the nearer kinsman at the city gate. He marries Ruth, and they bear Obed, grandfather of King David. The story highlights God’s providence and Ruth’s place in the messianic line."
+}
+
   },
   {
     "name": "1 Samuel",
@@ -256,7 +284,39 @@
     "category": "History",
     "author": "Samuel, Gad, Nathan (trad.)",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Hannah, barren and mocked, prays for a son and vows to dedicate him to the Lord. God grants Samuel, whom she presents to serve at Shiloh.",
+      "2": "Hannah prays a song of praise. Eli’s sons, Hophni and Phinehas, are corrupt. A man of God foretells judgment on Eli’s household.",
+      "3": "God calls young Samuel at night. Eli instructs him to answer. Samuel hears God’s word of judgment on Eli’s house and becomes recognized as a prophet.",
+      "4": "Israel is defeated by the Philistines. The ark of God is captured. Eli’s sons die in battle, and Eli falls dead upon hearing the news.",
+      "5": "The ark in Philistine territory brings plagues and humiliation to their god Dagon. The Philistines suffer tumors and panic.",
+      "6": "The Philistines return the ark with guilt offerings. The people of Beth Shemesh rejoice but some die for irreverence toward the ark.",
+      "7": "Samuel calls Israel to repent. At Mizpah, God thunders against the Philistines, granting victory. Samuel judges Israel faithfully.",
+      "8": "Israel demands a king. Samuel warns of the burdens a king will impose, but the people insist. God grants their request.",
+      "9": "Saul, searching for lost donkeys, meets Samuel. God reveals Saul as His choice for king. Samuel anoints Saul privately.",
+      "10": "Samuel presents Saul to Israel. God’s Spirit comes upon Saul. Some accept him, others despise him.",
+      "11": "Saul rallies Israel to defeat the Ammonites threatening Jabesh-gilead. The people affirm Saul as king with rejoicing.",
+      "12": "Samuel gives a farewell speech, recounting God’s faithfulness. He warns Israel to obey God under their king, and prays as thunder confirms his words.",
+      "13": "Saul leads Israel against the Philistines but disobeys by offering sacrifice himself. Samuel rebukes him and foretells loss of his dynasty.",
+      "14": "Jonathan attacks a Philistine outpost, sparking victory. Saul makes a rash oath restricting food, causing trouble for Israel.",
+      "15": "Saul spares King Agag and the best animals against God’s command. Samuel rebukes him: “To obey is better than sacrifice.” God rejects Saul as king.",
+      "16": "God sends Samuel to Bethlehem to anoint David, son of Jesse. The Spirit comes on David. An evil spirit torments Saul; David plays the harp to soothe him.",
+      "17": "David defeats Goliath with a sling and stone, declaring God’s power. Israel routs the Philistines. David becomes a hero.",
+      "18": "David befriends Jonathan. Saul grows jealous of David’s success and plots against him. David prospers despite Saul’s hostility.",
+      "19": "Saul orders David killed, but Jonathan intercedes. Saul again tries to kill David, who flees. God’s Spirit restrains Saul’s men and Saul himself.",
+      "20": "Jonathan tests Saul’s intentions at a feast. Realizing Saul wants David dead, Jonathan warns David. The two make a covenant of friendship.",
+      "21": "David flees to Nob, receives holy bread and Goliath’s sword. He escapes to Gath, feigns madness before King Achish.",
+      "22": "Saul kills the priests of Nob for aiding David, except Abiathar who escapes. David gathers outcasts to himself as followers.",
+      "23": "David rescues Keilah from the Philistines but flees from Saul’s pursuit. Jonathan encourages him. Saul nearly captures David but withdraws to fight Philistines.",
+      "24": "David spares Saul in a cave, refusing to kill God’s anointed. He shows Saul the evidence, and Saul weeps, acknowledging David’s righteousness.",
+      "25": "David seeks provisions from Nabal, who insults him. Abigail intercedes wisely, preventing bloodshed. God strikes Nabal dead; David marries Abigail.",
+      "26": "David again spares Saul, taking his spear and water jug. He rebukes Saul, who admits his sin. David remains steadfast in not harming the king.",
+      "27": "David flees to Philistine territory, living under King Achish in Ziklag. He raids enemies while deceiving Achish.",
+      "28": "Saul, desperate before battle, consults the medium of Endor. Samuel’s spirit appears, foretelling Saul’s defeat and death.",
+      "29": "Philistine leaders distrust David and send him away from their army. He returns to Ziklag.",
+      "30": "Amalekites raid Ziklag, capturing families. David strengthens himself in God, pursues, and rescues all. Spoils are shared equally among his men.",
+      "31": "Israel is defeated at Mount Gilboa. Saul’s sons, including Jonathan, are killed. Saul falls on his sword. The Philistines desecrate their bodies, but men of Jabesh-gilead recover them."
+    }
   },
   {
     "name": "2 Samuel",
@@ -265,7 +325,32 @@
     "category": "History",
     "author": "Gad, Nathan (trad.)",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "A man reports Saul’s death to David, claiming to have killed him. David mourns Saul and Jonathan with a lament over their bravery and love.",
+      "2": "David is anointed king over Judah. Saul’s son Ish-bosheth becomes king over Israel. Abner and Joab’s men clash; Asahel is killed by Abner.",
+      "3": "Abner defects to David after a quarrel with Ish-bosheth. Joab treacherously kills Abner in revenge. David laments Abner’s death.",
+      "4": "Ish-bosheth is assassinated by two men, who bring his head to David. David executes them for murder and honors Ish-bosheth.",
+      "5": "David is anointed king over all Israel. He captures Jerusalem and makes it his capital. God grants victory over the Philistines.",
+      "6": "David brings the ark to Jerusalem. Uzzah dies for touching it. Later, with proper reverence, David dances before the ark. Michal despises him.",
+      "7": "God makes a covenant with David, promising an eternal dynasty. David responds with a prayer of humble gratitude.",
+      "8": "David defeats surrounding nations and reigns with justice. He dedicates captured treasures to the Lord and establishes officials.",
+      "9": "David shows kindness to Mephibosheth, Jonathan’s crippled son, granting him Saul’s land and a permanent place at his table.",
+      "10": "The Ammonites hire Aramean allies against Israel. David’s army, led by Joab, defeats them. The Arameans withdraw support for Ammon.",
+      "11": "David commits adultery with Bathsheba and arranges Uriah’s death. Bathsheba becomes David’s wife, but God is displeased.",
+      "12": "Nathan confronts David with a parable. David repents, but God announces consequences. Their first child dies; Solomon is later born.",
+      "13": "Amnon rapes his sister Tamar. Absalom, Tamar’s brother, kills Amnon in revenge and flees into exile.",
+      "14": "Joab arranges for Absalom’s return to Jerusalem. David allows him back but does not see him for two years.",
+      "15": "Absalom wins the people’s favor and declares himself king at Hebron. David flees Jerusalem with his followers.",
+      "16": "Ziba deceives David about Mephibosheth. Shimei curses David. Absalom enters Jerusalem and, on Ahithophel’s advice, sleeps with David’s concubines.",
+      "17": "Ahithophel advises immediate pursuit, but Hushai counsels delay, saving David. Ahithophel, seeing his advice rejected, commits suicide.",
+      "18": "David’s army defeats Absalom’s forces. Absalom is caught in a tree and killed by Joab. David mourns deeply for his son.",
+      "19": "David returns to Jerusalem amid disputes. He shows mercy to Shimei and Mephibosheth, honors Barzillai, and faces division between Judah and Israel.",
+      "20": "Sheba leads a revolt against David. Joab kills Amasa and besieges Abel Beth Maacah. A wise woman negotiates Sheba’s execution, ending the revolt.",
+      "21": "Famine comes due to Saul’s past sin against the Gibeonites. Seven of Saul’s descendants are executed. David’s warriors defeat Philistine giants.",
+      "22": "David sings a psalm of praise for God’s deliverance and faithfulness throughout his reign.",
+      "23": "David’s last words exalt God’s covenant. The mighty men’s exploits are recounted, honoring their loyalty and bravery.",
+      "24": "David orders a census, bringing guilt on Israel. God offers three judgments; David chooses plague. David builds an altar on Araunah’s threshing floor, where the plague stops."
+    }
   },
   {
     "name": "1 Kings",
@@ -274,7 +359,30 @@
     "category": "History",
     "author": "Jeremiah (trad.)",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "David is old and frail. Adonijah exalts himself as king, but Nathan and Bathsheba secure Solomon’s coronation by David’s command.",
+      "2": "David gives Solomon final instructions to be faithful and deal with adversaries. Solomon establishes his reign by executing Adonijah, Joab, and Shimei, and affirming loyal allies.",
+      "3": "Solomon asks God for wisdom in a dream at Gibeon. God grants him wisdom and wealth. Solomon demonstrates discernment by judging between two women over a baby.",
+      "4": "Solomon’s officials and governors are listed. Israel prospers under his reign, and Solomon’s wisdom becomes renowned throughout the world.",
+      "5": "Solomon makes a treaty with Hiram of Tyre to supply cedar and laborers for building the temple. Preparations for construction begin.",
+      "6": "Solomon builds the temple with precise detail, completing it in seven years. God promises His presence if Israel obeys His commands.",
+      "7": "Solomon builds his palace and the Hall of Justice. Huram crafts bronze furnishings for the temple, including pillars, basins, and utensils.",
+      "8": "The ark is brought into the temple. God’s glory fills the house. Solomon prays a dedicatory prayer, asking God to hear prayers directed toward this temple.",
+      "9": "God reaffirms His covenant with Solomon. Solomon’s building projects expand, including cities and trade. Hiram receives towns from Solomon.",
+      "10": "The Queen of Sheba visits Solomon, marvels at his wisdom, and praises God. Solomon’s wealth and splendor surpass all kings.",
+      "11": "Solomon’s many foreign wives turn his heart to idolatry. God raises adversaries, including Jeroboam. God announces the kingdom will be torn from Solomon’s son.",
+      "12": "Rehoboam becomes king. He rejects wise counsel and increases burdens, causing ten tribes to rebel and follow Jeroboam. Jeroboam establishes idolatrous worship in Bethel and Dan.",
+      "13": "A man of God prophesies against Jeroboam’s altar. Jeroboam’s hand shrivels but is restored. The prophet disobeys God’s command and is killed by a lion.",
+      "14": "Jeroboam’s son becomes sick. A prophet foretells judgment on Jeroboam’s house. Judah also turns to idolatry under Rehoboam. Rehoboam faces Egyptian invasion.",
+      "15": "Abijam and Asa reign over Judah. Asa does what is right, removing idols, but does not eliminate high places. Nadab and Baasha reign in Israel; Baasha destroys Jeroboam’s house.",
+      "16": "Baasha’s dynasty is condemned. Elah, Zimri, Omri, and Ahab follow as kings of Israel. Ahab marries Jezebel and promotes Baal worship, provoking God’s anger.",
+      "17": "Elijah announces drought in Israel. God provides for him by ravens and a widow. Elijah raises the widow’s son from the dead, showing God’s power.",
+      "18": "Elijah confronts Ahab and challenges Baal’s prophets on Mount Carmel. God answers Elijah with fire, proving He is God. The drought ends with Elijah’s prayer.",
+      "19": "Elijah flees Jezebel in fear. God reveals Himself in a gentle whisper at Mount Horeb. Elijah is reassured and called to anoint successors, including Elisha.",
+      "20": "Ahab defeats Ben-hadad of Aram with God’s help, but spares him against God’s command. A prophet condemns Ahab for letting him go.",
+      "21": "Ahab covets Naboth’s vineyard. Jezebel arranges Naboth’s death. Elijah confronts Ahab, pronouncing doom on his house. Ahab humbles himself, delaying judgment.",
+      "22": "Micaiah prophesies Ahab’s death despite pressure to agree with false prophets. Ahab disguises himself in battle but is killed. Jehoshaphat reigns in Judah; Ahaziah in Israel."
+    }
   },
   {
     "name": "2 Kings",
@@ -283,7 +391,33 @@
     "category": "History",
     "author": "Jeremiah (trad.)",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "King Ahaziah seeks Baal-zebub’s counsel after an injury. Elijah confronts messengers, calls down fire on captains, and foretells Ahaziah’s death.",
+      "2": "Elijah is taken up to heaven in a whirlwind. Elisha inherits his mantle, parts the Jordan, and performs miracles, including healing water and cursing mocking youths.",
+      "3": "Jehoram of Israel, Jehoshaphat, and Edom ally against Moab. Elisha prophesies victory; God miraculously provides water and defeats Moab.",
+      "4": "Elisha performs miracles: multiplying oil for a widow, raising a Shunammite’s son, purifying poisoned stew, and feeding a hundred men with limited bread.",
+      "5": "Naaman, a Syrian commander, is healed of leprosy after washing in the Jordan. Gehazi, Elisha’s servant, lies for profit and is struck with leprosy.",
+      "6": "Elisha makes an iron axe head float. He reveals Aramean ambushes. God blinds the enemy army. During siege, famine grips Samaria.",
+      "7": "Elisha prophesies relief from famine. Four lepers discover the Arameans have fled. Samaria plunders the abandoned camp, fulfilling prophecy.",
+      "8": "Elisha foretells seven years of famine and Hazael’s rise in Syria. Jehoram and Ahaziah reign in Judah, walking in wickedness like Ahab’s house.",
+      "9": "Elisha’s prophet anoints Jehu king. Jehu kills Joram, Ahaziah, Jezebel, and Ahab’s household, fulfilling prophecy.",
+      "10": "Jehu massacres Ahab’s seventy sons and destroys Baal worship in Israel, but does not turn from Jeroboam’s sins. God promises his dynasty four generations.",
+      "11": "Athaliah seizes power in Judah but is overthrown by Jehoiada the priest, who crowns Joash as king. Athaliah is executed, and covenant worship is restored.",
+      "12": "Joash repairs the temple but later compromises. He pays tribute to Hazael of Syria. His officials assassinate him, and Amaziah reigns.",
+      "13": "Jehoahaz and Jehoash reign in Israel. They sin but occasionally seek God’s help. Elisha dies, leaving a legacy of miracles, including a resurrection.",
+      "14": "Amaziah reigns in Judah, defeating Edom but losing to Israel. Jeroboam II reigns in Israel, expanding territory. Both walk in sin.",
+      "15": "Multiple kings reign in Israel—Zechariah, Shallum, Menahem, Pekahiah, Pekah—marked by instability and assassination. In Judah, Azariah (Uzziah) prospers but is struck with leprosy.",
+      "16": "Ahaz reigns in Judah, practicing idolatry and appealing to Assyria for help against Syria and Israel. He alters temple worship to please Assyria.",
+      "17": "Hoshea, last king of Israel, rebels against Assyria. Samaria falls, and Israel is exiled. The cause: persistent idolatry and disobedience to God’s covenant.",
+      "18": "Hezekiah reigns in Judah, reforms worship, and trusts God. Assyria invades; Rabshakeh mocks God. Hezekiah resists and seeks God’s help.",
+      "19": "Hezekiah prays. Isaiah prophesies Assyria’s fall. That night, God’s angel strikes down 185,000 Assyrians. Sennacherib retreats and is killed by his sons.",
+      "20": "Hezekiah falls ill but prays; God heals him, adding 15 years. The shadow on the sundial moves backward as a sign. Hezekiah shows envoys his treasures, prompting Isaiah’s warning of future Babylonian exile.",
+      "21": "Manasseh reigns wickedly, filling Jerusalem with idolatry and bloodshed. Amon reigns briefly and is assassinated.",
+      "22": "Josiah reigns and repairs the temple. The Book of the Law is found. Huldah the prophetess foretells judgment but promises Josiah mercy in his lifetime.",
+      "23": "Josiah renews the covenant, destroys idols, and restores proper worship. Despite reforms, God decrees judgment. Josiah dies in battle at Megiddo.",
+      "24": "Nebuchadnezzar of Babylon besieges Judah. Jehoiachin is taken captive, and Zedekiah becomes king. Babylon dominates Judah.",
+      "25": "Jerusalem falls. The temple, palace, and city walls are destroyed. Many are exiled to Babylon. Gedaliah governs the remnant but is assassinated. Jehoiachin is later released from prison in Babylon."
+    }
   },
   {
     "name": "1 Chronicles",
@@ -292,7 +426,37 @@
     "category": "History",
     "author": "Ezra (trad.)",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Genealogies from Adam through the patriarchs, tracing humanity’s beginnings and Israel’s ancestry.",
+      "2": "Genealogies of Judah’s descendants, including Hezron’s line leading to David.",
+      "3": "David’s descendants are listed, including Solomon and the kings of Judah down to the exile.",
+      "4": "Genealogies of Judah’s and Simeon’s descendants, including Jabez’s prayer to God for blessing.",
+      "5": "Genealogies of Reuben, Gad, and half of Manasseh, noting their wars and exile for unfaithfulness.",
+      "6": "Genealogies of Levi’s descendants, including priests, musicians, and Levitical towns.",
+      "7": "Genealogies of Issachar, Benjamin, Naphtali, Manasseh, Ephraim, and Asher.",
+      "8": "Genealogies of Benjamin’s descendants, highlighting Saul’s family.",
+      "9": "Genealogies of returned exiles and Levitical gatekeepers. Saul’s genealogy repeated.",
+      "10": "The death of Saul and his sons at Mount Gilboa; Saul’s unfaithfulness causes his downfall.",
+      "11": "David is anointed king. He captures Jerusalem, makes it his capital, and honors his mighty men.",
+      "12": "Warriors from many tribes join David, strengthening his kingdom.",
+      "13": "David attempts to bring the ark to Jerusalem; Uzzah dies for touching it irreverently.",
+      "14": "David defeats the Philistines with God’s help, affirming God’s presence with him.",
+      "15": "David organizes the Levites and brings the ark to Jerusalem with rejoicing.",
+      "16": "David places the ark in a tent, appoints Levites for worship, and offers a psalm of thanks.",
+      "17": "God promises David an eternal dynasty through the prophet Nathan. David responds with humility.",
+      "18": "David defeats surrounding nations, establishing dominion and dedicating treasures to God.",
+      "19": "David defeats the Ammonites and Arameans after their insult to his messengers.",
+      "20": "David’s army defeats the Ammonites and Philistine giants. Rabbah is captured.",
+      "21": "David’s census brings God’s wrath. A plague is stopped when David builds an altar on Araunah’s threshing floor.",
+      "22": "David prepares materials and workers for the temple, instructing Solomon to build it.",
+      "23": "David organizes the Levites by divisions for temple service.",
+      "24": "David organizes the priests into 24 divisions for orderly temple worship.",
+      "25": "David organizes musicians under Asaph, Heman, and Jeduthun for temple worship.",
+      "26": "David organizes gatekeepers, treasurers, and other temple officials.",
+      "27": "David organizes Israel’s military, tribal leaders, officials, and royal administrators.",
+      "28": "David publicly charges Solomon to build the temple, giving him plans and encouraging him to trust God.",
+      "29": "David leads Israel in generous offerings for the temple. He prays a prayer of praise. Solomon is made king, and David dies after a long reign."
+    }
   },
   {
     "name": "2 Chronicles",
@@ -301,7 +465,44 @@
     "category": "History",
     "author": "Ezra (trad.)",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Solomon begins his reign, offers sacrifices at Gibeon, and asks God for wisdom. God grants him wisdom, wealth, and honor.",
+      "2": "Solomon prepares to build the temple, securing materials and skilled workers from King Hiram of Tyre.",
+      "3": "Solomon begins construction of the temple in Jerusalem, with detailed descriptions of its dimensions and decorations.",
+      "4": "Temple furnishings are crafted: bronze altar, sea, lampstands, tables, courts, and vessels for worship.",
+      "5": "The ark is brought into the temple. The glory of the Lord fills the house so the priests cannot stand to minister.",
+      "6": "Solomon prays a dedication prayer, asking God to hear from heaven and forgive His people when they repent.",
+      "7": "Fire comes down from heaven to consume the sacrifices. God appears to Solomon, promising blessing for obedience and exile for disobedience.",
+      "8": "Solomon’s accomplishments: fortified cities, conscripted labor, temple service, and trade with Hiram.",
+      "9": "The Queen of Sheba visits Solomon, marvels at his wisdom and wealth. Solomon’s greatness surpasses all kings. He dies after reigning 40 years.",
+      "10": "Rehoboam becomes king. He rejects wise counsel, increases burdens, and Israel’s ten tribes rebel, making Jeroboam king.",
+      "11": "Rehoboam fortifies Judah, is faithful at first, and priests and Levites migrate from Israel to Judah.",
+      "12": "Rehoboam forsakes God, and Shishak of Egypt invades. Rehoboam humbles himself, and God spares total destruction.",
+      "13": "Abijah reigns in Judah, defeats Jeroboam in battle by trusting God.",
+      "14": "Asa reigns, removes idols, and experiences peace. God grants victory over a vast Cushite army.",
+      "15": "Prophet Azariah encourages Asa to remain faithful. Asa reforms Judah, removes idols, and renews the covenant.",
+      "16": "Asa relies on Aram instead of God against Israel. Hanani rebukes him; Asa imprisons him and later dies of disease.",
+      "17": "Jehoshaphat reigns faithfully, strengthens Judah, and sends officials to teach God’s law throughout the land.",
+      "18": "Jehoshaphat allies with Ahab. Micaiah prophesies Ahab’s death in battle. Ahab disguises himself but is killed.",
+      "19": "Jehoshaphat appoints judges and exhorts them to judge faithfully, fearing God above all.",
+      "20": "Jehoshaphat faces Moab and Ammon. He seeks God in prayer, and God miraculously defeats the enemies through confusion. Judah praises God.",
+      "21": "Jehoram reigns wickedly in Judah, kills his brothers, and follows Ahab’s ways. He dies painfully, unloved.",
+      "22": "Ahaziah reigns briefly and wickedly. Athaliah seizes power and kills the royal family, except Joash who is hidden.",
+      "23": "Jehoiada the priest crowns Joash king. Athaliah is executed, and covenant worship is restored.",
+      "24": "Joash repairs the temple under Jehoiada’s guidance, but after Jehoiada’s death he turns to idolatry and kills Jehoiada’s son. Joash is assassinated.",
+      "25": "Amaziah reigns, initially following God but later worships Edomite idols. He is defeated by Israel and assassinated.",
+      "26": "Uzziah reigns successfully and builds Judah’s strength. Pride leads him to usurp priestly duties; God strikes him with leprosy.",
+      "27": "Jotham reigns faithfully, strengthens Judah, and builds cities. He prospers because he walks uprightly.",
+      "28": "Ahaz reigns wickedly, practices idolatry, and sacrifices children. Judah suffers defeats, but prophets urge compassion on captives.",
+      "29": "Hezekiah reigns faithfully, purifies the temple, restores worship, and leads Judah in covenant renewal.",
+      "30": "Hezekiah invites all Israel and Judah to celebrate Passover in Jerusalem. Many respond, and the feast brings great joy.",
+      "31": "Hezekiah organizes priests, Levites, and tithes. Worship is restored and Judah prospers.",
+      "32": "Sennacherib of Assyria invades. Hezekiah prays, and God delivers Judah by striking down the Assyrians. Hezekiah later falls into pride but humbles himself.",
+      "33": "Manasseh reigns wickedly, filling Jerusalem with idolatry. Later he repents in captivity, returns, and reforms. Amon reigns briefly and wickedly.",
+      "34": "Josiah reigns faithfully, purges idolatry, and repairs the temple. The Book of the Law is found, leading to covenant renewal.",
+      "35": "Josiah leads a great Passover celebration. Later, he dies in battle against Pharaoh Neco at Megiddo.",
+      "36": "Judah’s last kings reign wickedly. Jerusalem is conquered by Babylon, the temple destroyed, and the people exiled. The book ends with Cyrus of Persia allowing Jews to return and rebuild."
+    }
   },
   {
     "name": "Ezra",
@@ -310,7 +511,18 @@
     "category": "History",
     "author": "Ezra",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Cyrus of Persia issues a decree allowing Jews to return to Jerusalem and rebuild the temple. Sacred vessels taken by Nebuchadnezzar are returned.",
+      "2": "A list of exiles returning from Babylon is recorded, detailing families, priests, Levites, singers, and servants. The total is about 50,000.",
+      "3": "The altar is rebuilt, sacrifices resume, and the Feast of Tabernacles is celebrated. The temple foundation is laid, with great rejoicing and weeping.",
+      "4": "Enemies of Judah oppose the rebuilding, writing accusations to Persian kings. Work on the temple halts for many years due to opposition.",
+      "5": "Prophets Haggai and Zechariah encourage the rebuilding. Tattenai, governor of Trans-Euphrates, questions the work and reports to Darius.",
+      "6": "Darius confirms Cyrus’ decree. The temple is completed and dedicated with joy. Passover is celebrated by all who returned.",
+      "7": "Ezra, a skilled scribe, receives royal authority from Artaxerxes to teach and enforce God’s law. He leads a new group of exiles to Jerusalem.",
+      "8": "Ezra lists those returning with him. He proclaims a fast for safe travel. God protects them, and temple treasures are delivered safely.",
+      "9": "Ezra learns of intermarriage with pagan nations. He prays in deep grief, confessing Israel’s sin and acknowledging God’s mercy.",
+      "10": "The people confess their sin and agree to separate from foreign wives. A list of those guilty of intermarriage is recorded."
+    }
   },
   {
     "name": "Nehemiah",
@@ -319,7 +531,21 @@
     "category": "History",
     "author": "Nehemiah (trad.)",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Nehemiah, cupbearer to the Persian king, hears of Jerusalem’s broken walls. He weeps, fasts, and prays for God’s mercy and favor.",
+      "2": "Nehemiah receives Artaxerxes’ permission to rebuild Jerusalem’s walls. He inspects the ruins secretly and rallies the people to begin the work.",
+      "3": "Families and groups rebuild sections of the wall, each contributing to the restoration effort with unity and diligence.",
+      "4": "Opposition from enemies brings ridicule and threats. Nehemiah arms the workers, urging them to trust God and remain vigilant.",
+      "5": "Nehemiah addresses internal injustice, rebuking nobles for exploiting the poor. He sets an example by serving without demanding governor’s privileges.",
+      "6": "Enemies plot to distract and intimidate Nehemiah. He refuses their traps. The wall is completed in 52 days, and enemies lose confidence.",
+      "7": "Nehemiah appoints leaders and records the genealogy of the first returnees under Zerubbabel to repopulate Jerusalem.",
+      "8": "Ezra reads the Law publicly. The people weep, but Nehemiah and Ezra encourage them to rejoice. The Feast of Tabernacles is celebrated with joy.",
+      "9": "The people confess sins and recount God’s faithfulness through history, renewing their covenant to obey His law.",
+      "10": "Leaders and people make a written covenant, pledging to keep God’s commands, honor the Sabbath, and support the temple with tithes and offerings.",
+      "11": "Leaders settle in Jerusalem, and others are chosen by lot to live there. Genealogies of priests, Levites, and gatekeepers are recorded.",
+      "12": "Priests and Levites are listed. The wall’s dedication is celebrated with great rejoicing, music, and sacrifices. Worship is organized.",
+      "13": "Nehemiah returns to find corruption: foreign influence, neglect of temple duties, Sabbath-breaking, and intermarriage. He rebukes and reforms the people, restoring covenant faithfulness."
+    }
   },
   {
     "name": "Esther",
@@ -328,7 +554,18 @@
     "category": "History",
     "author": "Unknown (trad. Mordecai)",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "King Xerxes holds a lavish feast. Queen Vashti refuses his command to appear, so she is deposed to set an example for all women.",
+      "2": "Esther, a Jewish orphan raised by Mordecai, is chosen as queen. Mordecai uncovers a plot against the king and reports it.",
+      "3": "Haman rises to power and demands honor, but Mordecai refuses to bow. Enraged, Haman plots to destroy all Jews and casts lots (Purim) to set the date.",
+      "4": "Mordecai urges Esther to plead with the king. Esther agrees, saying, “If I perish, I perish,” and prepares to approach the king uninvited.",
+      "5": "Esther approaches the king, who receives her favorably. She invites the king and Haman to a banquet, arousing Haman’s pride and fury toward Mordecai.",
+      "6": "The king, unable to sleep, reads records and learns of Mordecai’s past loyalty. Haman, intending to seek Mordecai’s death, is ordered to honor him publicly instead.",
+      "7": "At Esther’s banquet, she exposes Haman’s plot against her people. The king orders Haman to be hanged on the gallows he had prepared for Mordecai.",
+      "8": "The king grants Esther and Mordecai authority to write a decree allowing Jews to defend themselves. Mordecai is honored, and the Jews rejoice.",
+      "9": "The Jews defeat their enemies on the appointed day. Purim is established as an annual feast to celebrate their deliverance.",
+      "10": "Mordecai is exalted to second in command under the king, bringing prosperity and peace to the Jews."
+    }
   },
   {
     "name": "Job",
@@ -337,7 +574,50 @@
     "category": "Poetry & Writings",
     "author": "Unknown",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Job, a righteous man, is blessed with wealth and family. Satan challenges his integrity. God permits Satan to test him. Job loses possessions and children but remains faithful.",
+      "2": "Satan is allowed to afflict Job with painful sores. Job’s wife urges him to curse God, but he refuses. Three friends—Eliphaz, Bildad, and Zophar—come to comfort him.",
+      "3": "Job laments his birth, wishing he had never lived, and pours out his anguish.",
+      "4": "Eliphaz speaks, suggesting Job’s suffering is due to hidden sin and urging him to seek God for restoration.",
+      "5": "Eliphaz continues, emphasizing that God disciplines but also heals those who repent.",
+      "6": "Job responds, expressing the weight of his suffering and disappointment with his friends’ lack of compassion.",
+      "7": "Job laments life’s brevity and misery, questioning why God seems to target him.",
+      "8": "Bildad argues that Job’s children may have sinned, and that Job should repent for God to restore him.",
+      "9": "Job acknowledges God’s power and sovereignty but despairs of contending with Him, longing for a mediator.",
+      "10": "Job pleads with God to explain his suffering and laments being born only to suffer.",
+      "11": "Zophar accuses Job of great guilt and urges him to repent, promising restoration if he does.",
+      "12": "Job responds by affirming his knowledge of God’s wisdom and power, countering his friends’ simplistic views.",
+      "13": "Job declares his desire to argue his case before God and accuses his friends of speaking falsely for God.",
+      "14": "Job reflects on human frailty, death, and his longing for renewal beyond the grave.",
+      "15": "Eliphaz insists Job’s words show guilt, describing the fate of the wicked as hopeless.",
+      "16": "Job laments his friends’ cruelty, describing himself as crushed by God, yet he hopes for a heavenly witness.",
+      "17": "Job despairs of life, feeling mocked and abandoned, and longs for the grave as relief.",
+      "18": "Bildad describes the terrifying fate of the wicked, implying Job fits this pattern.",
+      "19": "Job laments abandonment by friends and family but declares faith: “I know my Redeemer lives.”",
+      "20": "Zophar argues that the wicked prosper briefly but quickly face judgment and destruction.",
+      "21": "Job observes that many wicked live long, prosperous lives, contradicting his friends’ claims.",
+      "22": "Eliphaz accuses Job of oppression and great sin, urging him to repent for restoration.",
+      "23": "Job longs to present his case before God, confident he would be vindicated, though he cannot find Him.",
+      "24": "Job observes injustice in the world, with the wicked oppressing the poor, seemingly unpunished.",
+      "25": "Bildad emphasizes human unworthiness before God’s greatness and holiness.",
+      "26": "Job marvels at God’s power in creation, describing His control over the heavens and seas.",
+      "27": "Job maintains his integrity, insisting he will not deny his righteousness, though describing the fate of the wicked.",
+      "28": "A poem on wisdom: true wisdom is hidden from man and found only in the fear of the Lord.",
+      "29": "Job recalls his past honor, prosperity, and respect, when God’s blessing was evident in his life.",
+      "30": "Job laments his present humiliation and suffering, contrasting it with his former honor.",
+      "31": "Job makes his final defense, declaring his innocence and integrity in moral, social, and spiritual matters.",
+      "32": "Elihu, a younger man, speaks after the friends fall silent, angry at both Job and the friends’ failure.",
+      "33": "Elihu argues that God speaks through suffering to correct and save people from pride and destruction.",
+      "34": "Elihu defends God’s justice, insisting He cannot do wrong, and challenges Job’s claims of innocence.",
+      "35": "Elihu argues that human sin or righteousness does not affect God’s nature but affects other people.",
+      "36": "Elihu insists God uses suffering to teach and discipline, calling Job to humble submission.",
+      "37": "Elihu describes God’s greatness in creation and His control over storms, preparing for God’s appearance.",
+      "38": "God speaks from the whirlwind, questioning Job about creation to reveal His wisdom and Job’s limitations.",
+      "39": "God continues, describing animals and nature to highlight His power and wisdom beyond human control.",
+      "40": "God challenges Job again. Job humbles himself. God describes the behemoth as an example of His mighty creation.",
+      "41": "God describes Leviathan’s power, emphasizing human inability and His own unmatched strength.",
+      "42": "Job repents in humility. God rebukes Job’s friends for misrepresenting Him. Job intercedes for them, and God restores Job’s fortunes, blessing him greatly."
+    }
   },
   {
     "name": "Psalms",
@@ -347,41 +627,156 @@
     "author": "David & others",
     "language": "Hebrew",
     "chapterSummaries": {
-      "1": "Blessed is the one who delights in God's law and meditates on it day and night; the righteous prosper.",
-      "2": "The nations rage against God's Anointed, but God laughs; His Son will rule with an iron rod.",
-      "3": "David trusts God's protection against many enemies; the Lord is his shield and glory.",
-      "4": "Evening prayer for God's favor; He gives peace and security to those who trust Him.",
-      "8": "God's majesty in creation; humans crowned with glory and honor to rule over His works.",
-      "16": "David finds refuge in God; the path of life leads to joy and eternal pleasures.",
-      "19": "Creation declares God's glory; His law is perfect, converting the soul and making wise.",
-      "22": "Messianic psalm of suffering and triumph; 'My God, why have you forsaken me?' ends in praise.",
-      "23": "The Lord is my shepherd; He leads, restores, protects, and prepares a feast for His own.",
-      "24": "Who may ascend God's holy hill? The clean-handed and pure-hearted; the King of Glory enters.",
-      "25": "David seeks God's guidance and forgiveness; God teaches the humble His ways and covenant love.",
-      "27": "The Lord is light and salvation; David desires to dwell in God's house and seek His face.",
-      "32": "Blessed are those whose sins are forgiven; confession brings joy and God's guidance.",
-      "37": "Don't fret over evildoers; trust God, do good, and inherit the land; the meek will prosper.",
-      "40": "God lifts David from the pit; sacrifice and offering aren't desired, but obedience to God's will.",
-      "42": "As the deer pants for water, so David's soul thirsts for God in his exile and depression.",
-      "46": "God is our refuge and strength; He makes wars cease and will be exalted among the nations.",
-      "51": "David's confession after adultery with Bathsheba; create in me a clean heart, O God.",
-      "62": "David waits silently for God alone; He is rock, salvation, and fortress; trust Him always.",
-      "63": "David thirsts for God in the wilderness; his soul clings to God who upholds him.",
-      "73": "Asaph struggles with prosperity of the wicked until he enters God's sanctuary and sees their end.",
-      "84": "How lovely is God's dwelling place; blessed are those who dwell in His house and trust Him.",
-      "90": "Moses reflects on human frailty and God's eternity; teach us to number our days wisely.",
-      "91": "He who dwells in God's secret place abides under His shadow; angels guard His beloved.",
-      "100": "Joyful call to worship; serve the Lord with gladness; enter His gates with thanksgiving and praise.",
-      "103": "Bless the Lord, my soul; He forgives, heals, redeems, and shows steadfast love and compassion.",
-      "110": "Messianic psalm: 'The Lord said to my Lord, sit at My right hand until I make Your enemies footstool.'",
-      "118": "Give thanks to the Lord for His steadfast love; the stone the builders rejected becomes cornerstone.",
-      "119": "Longest psalm celebrating God's word; blessed are those who walk in His law and keep His testimonies.",
-      "121": "I lift my eyes to the hills; my help comes from the Lord who made heaven and earth.",
-      "126": "When the Lord restored Zion's fortunes, we were like those who dream; tears of sowing, joy of harvest.",
-      "130": "Out of the depths I cry to God; if He marked iniquity, who could stand? With Him is forgiveness.",
-      "139": "God knows David completely; fearfully and wonderfully made; His thoughts are precious and vast.",
-      "145": "David's praise of God's greatness, grace, and goodness; every generation will declare His mighty acts.",
-      "150": "Final psalm: Praise God with all instruments and voices; let everything that breathes praise the Lord!"
+      "1": "Anonymous (wisdom psalm). Theme: contrast of righteous and wicked. The blessed one delights in God’s law and prospers, while the wicked perish.",
+      "2": "Davidic (royal/messianic psalm). Theme: God’s anointed King. Nations rebel, but God establishes His King; refuge in Him brings blessing.",
+      "3": "Davidic (when fleeing Absalom). Theme: trust amid danger. Surrounded by enemies, David cries to God and rests in His sustaining protection.",
+      "4": "Davidic. Theme: evening prayer of trust. David calls on God for deliverance, exhorts trust, and finds peace in God alone.",
+      "5": "Davidic. Theme: morning prayer for guidance. David contrasts the wicked and the righteous, asking God to lead him in His way.",
+      "6": "Davidic (penitential psalm). Theme: cry for mercy. David pleads for healing and deliverance, trusting God will hear and save.",
+      "7": "Davidic (concerning Cush the Benjamite). Theme: appeal for justice. David calls on God as righteous judge against false accusations.",
+      "8": "Davidic (hymn). Theme: God’s majesty and human dignity. Creation reveals God’s glory, and humanity is crowned with honor under Him.",
+      "9": "Davidic. Theme: thanksgiving for God’s justice. David praises God for judging nations and delivering the oppressed.",
+      "10": "Anonymous (lament). Theme: God’s justice for the oppressed. The psalmist laments the arrogance of the wicked and calls on God to act.",
+      "11": "Davidic. Theme: confidence in God’s justice. Though foundations crumble, the Lord is righteous and tests both wicked and just.",
+      "12": "Davidic. Theme: God’s faithful word. Surrounded by lies and deceit, David trusts the pure and flawless word of the Lord.",
+      "13": "Davidic. Theme: prayer in despair. Feeling abandoned, David cries out, but ends with renewed trust in God’s steadfast love.",
+      "14": "Davidic. Theme: human corruption. The fool denies God, all are corrupt, but God is with the righteous generation.",
+      "15": "Davidic. Theme: who may dwell with God. A description of the righteous life: blamelessness, truthfulness, and integrity.",
+      "16": "Davidic (Miktam). Theme: God as refuge. David delights in God’s presence, confident in His eternal security and hope.",
+      "17": "Davidic (prayer). Theme: plea for vindication. David calls on God to examine his heart and protect him from violent enemies.",
+      "18": "Davidic (royal thanksgiving). Theme: God’s deliverance. David praises God for rescuing him from enemies, exalting His power and faithfulness.",
+      "19": "Davidic. Theme: God’s revelation. The heavens declare God’s glory, and His law is perfect, reviving the soul.",
+      "20": "Davidic (royal psalm). Theme: prayer for victory. The people pray for the king’s success, trusting God over human power.",
+      "21": "Davidic (royal psalm). Theme: thanksgiving for victory. David rejoices in God’s strength and salvation; the king’s enemies will be destroyed.",
+      "22": "Davidic (lament/messianic). Theme: suffering and deliverance. David cries of forsakenness, yet trusts God; prophecy fulfilled in Christ’s crucifixion.",
+      "23": "Davidic (shepherd psalm). Theme: God as shepherd. The Lord provides, guides, protects, and restores, giving eternal security.",
+      "24": "Davidic. Theme: the King of glory. God owns the earth; only the pure may ascend His hill. The King of glory enters triumphantly.",
+      "25": "Davidic (acrostic prayer). Theme: trust and guidance. David pleads for forgiveness, guidance, and deliverance from enemies.",
+      "26": "Davidic. Theme: integrity before God. David appeals for vindication, walking blamelessly and loving God’s house.",
+      "27": "Davidic. Theme: trust in God’s presence. The Lord is my light and salvation; David longs to dwell in God’s house and seeks His help.",
+      "28": "Davidic. Theme: prayer for deliverance. David pleads not to be dragged with the wicked; he praises God for hearing his cry.",
+      "29": "Davidic (hymn). Theme: the voice of the Lord. God’s voice thunders over creation; He reigns as King, giving peace to His people.",
+      "30": "Davidic (song for temple dedication). Theme: thanksgiving for deliverance. Mourning turns to dancing as God rescues from death.",
+      "31": "Davidic. Theme: refuge in God. In distress, David entrusts his spirit to God, praising His steadfast love.",
+      "32": "Davidic (penitential psalm). Theme: blessing of forgiveness. Confession brings relief; God forgives and surrounds with steadfast love.",
+      "33": "Anonymous (hymn). Theme: praise of God’s sovereignty. God’s word is upright, His plans stand forever, and He cares for His people.",
+      "34": "Davidic (when feigning madness before Abimelek). Theme: God delivers the righteous. David calls to taste and see God’s goodness.",
+      "35": "Davidic. Theme: plea for vindication. David asks God to contend with those who attack him, rejoicing when the Lord rescues.",
+      "36": "Davidic. Theme: contrast of wickedness and God’s love. The wicked plot evil, but God’s steadfast love reaches the heavens.",
+      "37": "Davidic (wisdom psalm). Theme: trust vs. fretting. The wicked wither, but the righteous inherit the land and know God’s peace.",
+      "38": "Davidic (penitential psalm). Theme: cry under discipline. David confesses sin, laments suffering, and seeks God’s salvation.",
+      "39": "Davidic. Theme: life’s brevity. David reflects on human frailty, pleading for deliverance and hope in God.",
+      "40": "Davidic. Theme: thanksgiving and petition. David praises God’s past deliverance, declares His works, and prays for present help.",
+      "41": "Davidic. Theme: blessed are those who consider the poor. David prays for healing, laments betrayal by a close friend, and affirms God’s sustaining presence.",
+      "42": "Sons of Korah (lament). Theme: longing for God. As a deer pants for water, so the psalmist thirsts for God amid despair and exile.",
+      "43": "Anonymous (linked to Psalm 42, likely Korahite). Theme: prayer for vindication. The psalmist pleads for God’s light and truth to lead him back to His altar.",
+      "44": "Sons of Korah (communal lament). Theme: appeal for God’s help. Despite faithfulness, Israel suffers defeat and pleads for deliverance.",
+      "45": "Sons of Korah (royal/wedding psalm). Theme: the king’s majesty and the bride’s beauty, foreshadowing Christ the Bridegroom.",
+      "46": "Sons of Korah. Theme: God our refuge. Though nations rage and the earth shakes, God is present and exalted among the nations.",
+      "47": "Sons of Korah. Theme: God the King of all nations. A call to clap and shout in triumph, for God reigns over the earth.",
+      "48": "Sons of Korah (hymn). Theme: Zion, the city of God. God’s greatness and protection are celebrated in His holy city.",
+      "49": "Sons of Korah (wisdom psalm). Theme: the futility of wealth. Rich and poor alike face death, but God redeems the faithful.",
+      "50": "Asaph. Theme: true worship. God summons the earth, condemning empty ritual and demanding obedience and thanksgiving.",
+      "51": "Davidic (after sin with Bathsheba). Theme: repentance. David confesses sin, asks for a clean heart, and pleads for renewed joy in God’s salvation.",
+      "52": "Davidic (when Doeg betrayed him). Theme: God’s judgment on the deceitful. The wicked trust in riches, but the righteous trust in God’s steadfast love.",
+      "53": "Davidic. Theme: human corruption. The fool denies God; all are corrupt, but God saves His people.",
+      "54": "Davidic (when Ziphites betrayed him). Theme: prayer for deliverance. David trusts God to repay his enemies and uphold him.",
+      "55": "Davidic. Theme: betrayal’s pain. David laments treachery by a close companion but casts his burden on the Lord.",
+      "56": "Davidic (when seized by Philistines in Gath). Theme: trust amid fear. When afraid, David trusts God, who delivers him from death.",
+      "57": "Davidic (when fleeing Saul in a cave). Theme: refuge in God. Amid danger, David sings praise for God’s steadfast love and faithfulness.",
+      "58": "Davidic. Theme: condemnation of unjust rulers. The wicked are likened to venomous snakes, but the righteous rejoice at God’s judgment.",
+      "59": "Davidic (when Saul sent men to watch his house). Theme: deliverance from enemies. David prays for protection and praises God as fortress.",
+      "60": "Davidic (after battle with Aram and Edom). Theme: national lament and hope. Israel cries for restoration, but God promises victory.",
+      "61": "Davidic. Theme: prayer for refuge. From the ends of the earth David cries to God, asking to be led to the rock higher than himself and to dwell in God’s presence forever.",
+      "62": "Davidic. Theme: trust in God alone. Salvation, honor, and refuge are found in God, not in wealth or human strength.",
+      "63": "Davidic (when in the wilderness of Judah). Theme: longing for God’s presence. David thirsts for God, praising Him even in dry and weary places.",
+      "64": "Davidic. Theme: deliverance from secret plots. David laments the schemes of the wicked, but God will strike them down.",
+      "65": "Davidic (song of praise). Theme: God’s abundant provision. The psalm celebrates God’s forgiveness, power over creation, and blessing of the earth.",
+      "66": "Anonymous (hymn). Theme: praise for God’s mighty deeds. The psalmist recalls God’s works in Israel’s history and personal deliverance.",
+      "67": "Anonymous (song). Theme: God’s blessing for the nations. A prayer that God’s face shine on His people so all nations may know His salvation.",
+      "68": "Davidic. Theme: God as victorious warrior. God scatters His enemies, cares for the fatherless, and dwells in Zion amid triumph.",
+      "69": "Davidic (lament/messianic). Theme: suffering servant. David cries out in deep distress, foreshadowing Christ’s passion.",
+      "70": "Davidic. Theme: urgent plea for help. A short psalm asking God to deliver quickly from adversaries.",
+      "71": "Anonymous (likely elderly psalmist). Theme: lifelong trust. From youth to old age, the psalmist declares God’s faithfulness and seeks continued deliverance.",
+      "72": "Solomonic (or for Solomon). Theme: the ideal king. A prayer for righteous rule, justice for the poor, and worldwide dominion; foreshadows Christ.",
+      "73": "Asaph (wisdom psalm). Theme: struggle with the prosperity of the wicked. The psalmist finds resolution in God’s presence and eternal justice.",
+      "74": "Asaph. Theme: lament over destruction. The psalmist cries to God after the sanctuary is defiled, pleading for deliverance from enemies.",
+      "75": "Asaph. Theme: God the righteous judge. The psalm declares that exaltation comes from God, who will bring down the wicked.",
+      "76": "Asaph. Theme: God’s awe-inspiring power. God is praised for His victory over enemies, instilling fear among the nations.",
+      "77": "Asaph. Theme: remembering God’s deeds. In trouble, the psalmist recalls God’s wonders, especially the exodus, as grounds for hope.",
+      "78": "Asaph (historical psalm). Theme: Israel’s repeated rebellion. The psalm recounts God’s faithfulness and Israel’s failures, urging future generations to trust Him.",
+      "79": "Asaph (communal lament). Theme: plea after destruction. The psalmist cries out as Jerusalem lies in ruins, asking God for mercy and justice.",
+      "80": "Asaph. Theme: prayer for restoration. God is addressed as the Shepherd of Israel, asked to shine His face and save His people.",
+      "81": "Asaph. Theme: call to covenant faithfulness. God recalls His deliverance of Israel, urges obedience, and laments their stubbornness.",
+      "82": "Asaph. Theme: God the supreme Judge. God rebukes unjust earthly rulers, declaring His authority over all nations.",
+      "83": "Asaph. Theme: prayer against hostile nations. The psalmist pleads with God to defeat conspiring enemies and show His supremacy.",
+      "84": "Sons of Korah. Theme: longing for God’s dwelling. Blessed are those who live in God’s house and find strength in His presence.",
+      "85": "Sons of Korah. Theme: plea for restoration. The psalm recalls past deliverance, prays for revival, and trusts in God’s steadfast love.",
+      "86": "Davidic. Theme: prayer for mercy and help. David cries out for God’s grace and affirms His greatness among the nations.",
+      "87": "Sons of Korah. Theme: Zion, the city of God. Nations are counted as born in Zion, showing God’s universal plan of redemption.",
+      "88": "Sons of Korah (Heman the Ezrahite). Theme: darkest lament. The psalmist cries out from deep suffering, feeling abandoned by God.",
+      "89": "Ethan the Ezrahite. Theme: God’s covenant with David. The psalm praises God’s faithfulness but laments apparent rejection of the king.",
+      "90": "Moses. Theme: God’s eternity and human frailty. Life is short under God’s wrath, so the psalmist asks God to teach us to number our days.",
+      "91": "Anonymous. Theme: God our refuge. Those who dwell in His shelter are protected; He delivers from fear, plague, and danger.",
+      "92": "Anonymous (Sabbath psalm). Theme: praise for God’s works. The righteous flourish like palm trees while the wicked perish.",
+      "93": "Anonymous. Theme: God reigns in majesty. The Lord is enthroned, mightier than the seas, and His decrees stand firm.",
+      "94": "Anonymous. Theme: plea for justice. The psalmist asks God to punish the arrogant and affirms His discipline brings blessing.",
+      "95": "Anonymous. Theme: call to worship and obedience. God is the great King; Israel is warned not to harden their hearts like in the wilderness.",
+      "96": "Anonymous. Theme: God’s reign proclaimed to the nations. A new song celebrates His glory and coming judgment with equity.",
+      "97": "Anonymous. Theme: the Lord reigns. Fire and lightning reveal His glory, idols are shamed, and the righteous rejoice in Him.",
+      "98": "Anonymous. Theme: joy in God’s salvation. Sing to the Lord for His marvelous deeds; He will judge the world with righteousness.",
+      "99": "Anonymous. Theme: the holy King. God reigns over nations in justice, exalted in Zion, worthy of worship.",
+      "100": "Anonymous (thanksgiving psalm). Theme: call to joyful worship. All lands are summoned to serve the Lord with gladness, for His steadfast love endures forever.",
+      "101": "Davidic. Theme: commitment to integrity. David vows to live blamelessly, reject wickedness, and rule justly in his house.",
+      "102": "Anonymous (penitential/lament). Theme: prayer of the afflicted. The psalmist laments personal and national suffering, yet affirms God’s eternal reign and future restoration of Zion.",
+      "103": "Davidic. Theme: praise for God’s mercy. Bless the Lord, who forgives, heals, redeems, and shows steadfast love from everlasting to everlasting.",
+      "104": "Anonymous (hymn). Theme: God the Creator and Sustainer. The psalm celebrates God’s majesty, creation’s order, and His providential care for all creatures.",
+      "105": "Anonymous (historical psalm). Theme: God’s covenant faithfulness. Recounts God’s deeds from Abraham through the exodus and settlement in Canaan.",
+      "106": "Anonymous. Theme: Israel’s unfaithfulness. The psalm confesses sins throughout Israel’s history, yet affirms God’s steadfast love and plea for deliverance.",
+      "107": "Anonymous. Theme: thanksgiving for deliverance. God rescues people from distress—wanderers, prisoners, the sick, and sailors—showing His steadfast love.",
+      "108": "Davidic (combination of Psalms 57 & 60). Theme: confidence in victory. David praises God and calls for His help over nations.",
+      "109": "Davidic (lament). Theme: plea against false accusers. David calls for judgment on his enemies but ends affirming God as his deliverer.",
+      "110": "Davidic (royal/messianic psalm). Theme: the Lord’s anointed king and priest. The Messiah reigns at God’s right hand as priest forever.",
+      "111": "Anonymous. Theme: praise for God’s works. His deeds are majestic, His covenant remembered, and His precepts trustworthy.",
+      "112": "Anonymous (wisdom psalm). Theme: blessings of the righteous. Those who fear the Lord are steadfast, generous, and remembered forever.",
+      "113": "Anonymous (Hallel psalm). Theme: praise to the exalted Lord. God raises the poor and needy, showing His greatness.",
+      "114": "Anonymous (Hallel psalm). Theme: God’s power at the exodus. The sea fled and mountains trembled at His presence.",
+      "115": "Anonymous (Hallel psalm). Theme: God vs. idols. Unlike powerless idols, the Lord blesses those who trust Him.",
+      "116": "Anonymous (Hallel psalm). Theme: thanksgiving for deliverance. The psalmist loves the Lord who heard his cry and vows to call on Him forever.",
+      "117": "Anonymous (shortest psalm). Theme: universal praise. All nations are called to glorify God for His steadfast love.",
+      "118": "Anonymous (Hallel psalm). Theme: thanksgiving for God’s salvation. The rejected stone becomes the cornerstone; His love endures forever.",
+      "119": "Anonymous (acrostic psalm). Theme: delight in God’s law. The longest psalm exalts God’s word as life-giving, guiding, and sustaining.",
+      "120": "Anonymous (Song of Ascents). Theme: prayer for deliverance. The psalmist, living among deceitful people, calls on the Lord for peace.",
+      "121": "Anonymous (Song of Ascents). Theme: God our keeper. The psalmist lifts eyes to the hills, affirming help comes from the Lord, who guards His people day and night.",
+      "122": "Davidic (Song of Ascents). Theme: joy in Jerusalem. The psalmist rejoices in going to God’s house and prays for the peace of Jerusalem.",
+      "123": "Anonymous (Song of Ascents). Theme: plea for mercy. The psalmist looks to God’s hand like a servant to a master, asking for mercy amid scorn.",
+      "124": "Davidic (Song of Ascents). Theme: God our deliverer. If the Lord had not been on Israel’s side, enemies would have swallowed them alive.",
+      "125": "Anonymous (Song of Ascents). Theme: security in God. Those who trust the Lord are like Mount Zion, unshakable and enduring forever.",
+      "126": "Anonymous (Song of Ascents). Theme: restoration joy. The psalm recalls God’s past restoration and prays for renewed blessing, with weeping turning into joy.",
+      "127": "Solomonic (Song of Ascents). Theme: God builds and sustains. Labor, security, and family prosper only by God’s blessing.",
+      "128": "Anonymous (Song of Ascents). Theme: blessings of fearing God. Those who walk in His ways enjoy fruitful family life and peace in Israel.",
+      "129": "Anonymous (Song of Ascents). Theme: perseverance amid affliction. Though afflicted from youth, Israel affirms the Lord’s justice against oppressors.",
+      "130": "Anonymous (Song of Ascents). Theme: hope in forgiveness. From the depths, the psalmist cries for mercy, waiting on God’s steadfast love and redemption.",
+      "131": "Davidic (Song of Ascents). Theme: humility and trust. David quiets his soul like a weaned child, resting in the Lord.",
+      "132": "Anonymous (Song of Ascents). Theme: God’s covenant with David. The psalm recalls David’s devotion and affirms God’s promise to dwell in Zion.",
+      "133": "Davidic (Song of Ascents). Theme: blessing of unity. Brothers dwelling in unity is like precious oil and the dew of Hermon.",
+      "134": "Anonymous (Song of Ascents). Theme: call to bless the Lord. Servants of the Lord in His house are exhorted to lift hands in praise.",
+      "135": "Anonymous (hymn). Theme: praise for God’s mighty acts. Unlike idols, God does whatever He pleases and vindicates His people.",
+      "136": "Anonymous (liturgical psalm). Theme: God’s steadfast love endures forever. Recounts creation, exodus, conquest, and ongoing providence with refrain.",
+      "137": "Anonymous (exilic lament). Theme: grief in Babylon. Exiles weep by the rivers, remembering Zion, and call for justice on their captors.",
+      "138": "Davidic. Theme: thanksgiving for God’s steadfast love. David praises God’s faithfulness and prays for continued care.",
+      "139": "Davidic. Theme: God’s intimate knowledge. God knows all thoughts and deeds, is present everywhere, and formed us in the womb.",
+      "140": "Davidic. Theme: prayer for deliverance from the violent. David asks God to protect him from evildoers and affirms His justice for the needy.",
+      "141": "Davidic. Theme: prayer for purity and protection. David asks God to guard his words and heart, and to keep him safe from the wicked.",
+      "142": "Davidic (when in the cave). Theme: cry from isolation. David pours out his complaint, acknowledging God as his only refuge.",
+      "143": "Davidic (penitential psalm). Theme: prayer for mercy and guidance. David confesses human unrighteousness and seeks God’s deliverance and leading.",
+      "144": "Davidic. Theme: God who gives victory. David praises God as his rock, prays for deliverance, and asks blessing on the nation.",
+      "145": "Davidic (acrostic hymn). Theme: praise of God’s greatness. The psalmist exalts God’s majesty, goodness, and everlasting kingdom.",
+      "146": "Anonymous (Hallel psalm). Theme: trust in God, not princes. God cares for the oppressed, blind, and stranger; He reigns forever.",
+      "147": "Anonymous (Hallel psalm). Theme: praise for God’s care. God heals the brokenhearted, governs creation, and blesses Jerusalem.",
+      "148": "Anonymous (Hallel psalm). Theme: all creation praises God. Heaven, earth, animals, and people are summoned to worship the Lord.",
+      "149": "Anonymous (Hallel psalm). Theme: call to joyful praise. God’s people rejoice in Him and triumph over enemies with His justice.",
+      "150": "Anonymous (final Hallel psalm). Theme: universal praise. In a climactic call, everything that has breath is exhorted to praise the Lord with instruments and song."
     }
   },
   {
@@ -391,7 +786,39 @@
     "category": "Poetry & Writings",
     "author": "Solomon & others",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Proverbs begins with a call to wisdom, warning against enticement of sinners and urging fear of the Lord as the foundation of knowledge.",
+      "2": "Wisdom protects from evil, delivering from wicked men and adulterous women, and grants understanding of righteousness and justice.",
+      "3": "Trust in the Lord with all your heart. Wisdom brings blessing, healing, and favor. Discipline and generosity are encouraged.",
+      "4": "A father instructs his son to pursue wisdom diligently, avoiding the path of the wicked and walking in righteousness.",
+      "5": "Warnings against adultery: the seductress leads to destruction. Faithfulness in marriage is commended.",
+      "6": "Warnings against laziness, dishonesty, and sowing discord. Adultery is again condemned as self-destructive.",
+      "7": "A vivid warning against the adulteress, showing how she entices and destroys the foolish young man.",
+      "8": "Wisdom personified calls out, declaring her role in creation and her blessings for those who seek her.",
+      "9": "Wisdom and folly are personified as hostesses inviting guests. Choosing wisdom leads to life; folly leads to death.",
+      "10": "Proverbs of Solomon begin, contrasting the righteous and the wicked in speech, work, and destiny.",
+      "11": "Righteousness brings life and stability, while wickedness leads to downfall. Generosity is rewarded.",
+      "12": "The righteous are established, diligent, and truthful; the wicked face trouble and ruin.",
+      "13": "Wise living brings blessing; laziness, folly, and poor speech lead to ruin.",
+      "14": "The wise build up, but the foolish tear down. Righteousness exalts a nation; sin is a reproach.",
+      "15": "Gentle words turn away wrath. God sees all. Righteousness and humility bring blessing.",
+      "16": "Commit your works to the Lord. God directs human steps. Pride leads to downfall; humility to honor.",
+      "17": "Better peace with little than strife with plenty. The Lord tests hearts. Friends love; fools bring grief.",
+      "18": "Words bring life or death. A fool loves quarrels. A brother offended is hard to win back.",
+      "19": "Wealth attracts many friends. Discipline children. Fear of the Lord leads to life.",
+      "20": "Honesty is valued. Wine leads to mockery. The Lord directs steps. A faithful person is rare.",
+      "21": "God weighs hearts. Sacrifice is meaningless without obedience. Righteousness brings life.",
+      "22": "A good name is better than riches. Train up a child in the way he should go. Warnings against debt and injustice.",
+      "23": "Warnings against gluttony, drunkenness, and envy. Parents are urged to discipline children in wisdom.",
+      "24": "Do not envy evildoers. Wisdom builds houses. The righteous may fall but rise again. Prepare for battle with counsel.",
+      "25": "Proverbs of Solomon copied by Hezekiah’s men. Wise speech, patience, and self-control are praised.",
+      "26": "Fools despise wisdom. Laziness and gossip cause ruin. Hypocrisy and deceit are condemned.",
+      "27": "Do not boast about tomorrow. Iron sharpens iron. Faithful friends are a blessing.",
+      "28": "The wicked flee though none pursue. Greed and injustice bring ruin. Trust in the Lord brings prosperity.",
+      "29": "A stiff-necked people are destroyed. Discipline brings wisdom. Righteousness exalts a nation.",
+      "30": "Sayings of Agur: reflections on human limits, creation’s wonders, and warnings against arrogance.",
+      "31": "Sayings of King Lemuel: warnings against lust and drunkenness. The virtuous woman is praised for her wisdom, diligence, and fear of the Lord."
+    }
   },
   {
     "name": "Ecclesiastes",
@@ -400,7 +827,20 @@
     "category": "Poetry & Writings",
     "author": "Solomon (trad.)",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "The Teacher reflects on life’s futility: all is vanity. Generations come and go, and nothing is truly new under the sun.",
+      "2": "The Teacher pursues pleasure, projects, wealth, and wisdom, yet finds them meaningless. Both wise and foolish share the same fate of death.",
+      "3": "There is a time for everything under heaven. God has made everything beautiful in its time. Humans cannot fathom His work from beginning to end.",
+      "4": "The Teacher laments oppression, envy, and toil. Companionship is better than isolation, for two are stronger than one.",
+      "5": "Caution is urged in approaching God. Wealth and possessions cannot satisfy, but fearing God and enjoying His gifts brings meaning.",
+      "6": "Riches without the ability to enjoy them are meaningless. Human desires are endless, and the future is uncertain.",
+      "7": "Wisdom is valuable, though limited. The Teacher reflects on human wickedness and the importance of fearing God.",
+      "8": "Obedience to kings is urged, but ultimate sovereignty belongs to God. Humans cannot fully understand His ways.",
+      "9": "Death comes to all. The Teacher urges enjoying life’s simple pleasures as God’s gift, for wisdom and effort alone cannot control outcomes.",
+      "10": "Wisdom protects, but folly brings danger. Leaders and workers are exhorted to act wisely and avoid foolishness.",
+      "11": "Take risks and be generous, for the future is uncertain. Youth should rejoice but remember God will judge all deeds.",
+      "12": "Remember your Creator in youth, before old age and death come. The conclusion: fear God and keep His commandments, for this is the whole duty of man."
+    }
   },
   {
     "name": "Song of Songs",
@@ -409,7 +849,16 @@
     "category": "Poetry & Writings",
     "author": "Solomon (trad.)",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "The bride expresses her love and desire for her beloved. She delights in his affection, and he praises her beauty.",
+      "2": "The bride and groom delight in each other. The bride longs for her beloved’s presence. Love is described as delightful and life-giving.",
+      "3": "The bride searches for her beloved at night and finds him. A royal wedding procession is described with splendor.",
+      "4": "The groom praises the bride’s beauty in detail. Their love is celebrated as a garden of delight.",
+      "5": "The bride dreams of her beloved, but he withdraws when she hesitates. She searches for him, suffering mistreatment, and describes his excellence.",
+      "6": "The bride praises her beloved. The groom describes her beauty and uniqueness, exalting her above others.",
+      "7": "The groom praises the bride’s physical beauty with imagery of grace and fruitfulness. Their mutual desire and intimacy are expressed.",
+      "8": "The bride desires public acknowledgment of their love. Love is celebrated as strong and unyielding. The poem concludes with longing and union."
+    }
   },
   {
     "name": "Isaiah",
@@ -494,7 +943,60 @@
     "category": "Major Prophets",
     "author": "Jeremiah",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "God calls Jeremiah as a prophet, assuring him of His presence and giving him authority over nations to uproot and to plant.",
+      "2": "God accuses Israel of forsaking Him, the fountain of living waters, for worthless idols. Their unfaithfulness is exposed.",
+      "3": "God likens Israel’s idolatry to adultery. Yet He calls them to return, promising restoration if they repent.",
+      "4": "Jeremiah warns of coming judgment through invasion. Disaster from the north is imminent due to Israel’s sins.",
+      "5": "God condemns widespread corruption. Both poor and rich reject Him. Prophets and priests deceive the people.",
+      "6": "Jerusalem’s destruction is announced. Despite warnings, the people refuse correction. Their sacrifices are worthless to God.",
+      "7": "Jeremiah delivers the temple sermon, warning that rituals cannot replace obedience. Shiloh’s fate warns Jerusalem.",
+      "8": "The people persist in lies and refuse to repent. Jeremiah grieves over their incurable wound.",
+      "9": "Jeremiah laments deceit and idolatry. God warns that trusting in wisdom, might, or riches is worthless—boasting must be in knowing Him.",
+      "10": "Idols are worthless compared to the living God. Judgment is certain, and Jeremiah prays for correction.",
+      "11": "God recalls the covenant with Israel. Conspiracy against Jeremiah arises; God promises judgment on the people.",
+      "12": "Jeremiah questions why the wicked prosper. God challenges him to endure greater trials and foretells judgment on nations.",
+      "13": "A ruined linen belt symbolizes Judah’s pride. Drunkenness and captivity are foretold. The people are urged to repent.",
+      "14": "A drought devastates the land. False prophets deceive, but Jeremiah intercedes. God declares judgment unavoidable.",
+      "15": "God tells Jeremiah not to pray for the people. Jeremiah laments his calling, but God reassures him of His presence.",
+      "16": "Jeremiah is commanded not to marry, symbolizing coming judgment. Future restoration is promised when God gathers His people.",
+      "17": "Trust in man leads to curse; trust in God leads to blessing. The heart is deceitful. Jeremiah prays for deliverance.",
+      "18": "The potter’s house illustrates God’s sovereignty. Judah resists His shaping and plots against Jeremiah.",
+      "19": "Jeremiah breaks a clay jar at Topheth, symbolizing Jerusalem’s coming destruction.",
+      "20": "Jeremiah is beaten and mocked by Pashhur. He laments his suffering yet reaffirms God’s word burning within him.",
+      "21": "God tells King Zedekiah that Jerusalem will fall to Babylon. Only surrender ensures life.",
+      "22": "Jeremiah warns Judah’s kings to do justice or face ruin. Jehoiakim and Coniah are condemned.",
+      "23": "False prophets are condemned. God promises a righteous Branch from David’s line who will reign as king.",
+      "24": "Two baskets of figs symbolize exiles: good figs represent those in exile who will be restored; bad figs represent those who remain and will perish.",
+      "25": "Judah’s seventy years of exile are foretold. Nations will also drink God’s cup of wrath.",
+      "26": "Jeremiah’s temple sermon leads to threats of death, but some defend him, recalling past prophets.",
+      "27": "Jeremiah wears a yoke, urging submission to Babylon. False prophets contradict him.",
+      "28": "Hananiah falsely prophesies peace and breaks Jeremiah’s yoke. Jeremiah declares Babylon’s yoke will be iron. Hananiah dies as foretold.",
+      "29": "Jeremiah’s letter to exiles urges them to seek peace in Babylon and trust God’s promise of future restoration.",
+      "30": "God promises restoration and a new covenant. Israel’s captivity will end, and David’s line will reign.",
+      "31": "The new covenant is promised: God’s law written on hearts, forgiveness of sins, and restoration of Israel.",
+      "32": "Jeremiah buys a field while imprisoned, symbolizing future hope and restoration despite Jerusalem’s siege.",
+      "33": "God reaffirms His covenant with David and Levi. Future restoration and prosperity are promised.",
+      "34": "Judah breaks its covenant to free slaves. God announces destruction because of their unfaithfulness.",
+      "35": "The Rechabites’ faithfulness contrasts with Judah’s disobedience. God promises blessing to them.",
+      "36": "Jeremiah dictates God’s words to Baruch. King Jehoiakim burns the scroll. Jeremiah dictates another scroll with added words.",
+      "37": "Jeremiah warns Zedekiah of Babylon’s victory. He is arrested and imprisoned on false charges.",
+      "38": "Jeremiah is thrown into a cistern but rescued by Ebed-Melek. He tells Zedekiah to surrender or face destruction.",
+      "39": "Jerusalem falls to Babylon. Zedekiah is captured. Jeremiah is spared and released by the Babylonians.",
+      "40": "Gedaliah is appointed governor. He urges peace, but Ishmael plots against him.",
+      "41": "Ishmael assassinates Gedaliah and slaughters many, then is pursued and defeated by Johanan.",
+      "42": "Survivors ask Jeremiah for guidance but disobey God’s word, choosing to flee to Egypt.",
+      "43": "The people forcibly take Jeremiah to Egypt. He prophesies Babylon’s conquest of Egypt.",
+      "44": "Jeremiah condemns the Jews in Egypt for idolatry. They refuse to listen, sealing their judgment.",
+      "45": "A word to Baruch: though judgment is coming, God promises to preserve his life.",
+      "46": "Prophecies against Egypt: God will punish Egypt, but later restore it.",
+      "47": "Prophecy against the Philistines: they will be devastated by Babylon.",
+      "48": "Prophecy against Moab: its pride will bring destruction, though restoration is promised in the future.",
+      "49": "Prophecies against Ammon, Edom, Damascus, Kedar, Hazor, and Elam: they will be judged but some restored.",
+      "50": "Prophecy against Babylon: it will fall as God redeems Israel.",
+      "51": "God’s judgment on Babylon is confirmed. Babylon will sink, never to rise again.",
+      "52": "Jerusalem falls as in 2 Kings. The temple is destroyed, and the people exiled. Jehoiachin is later released in Babylon."
+    }
   },
   {
     "name": "Lamentations",
@@ -503,7 +1005,13 @@
     "category": "Major Prophets",
     "author": "Jeremiah (trad.)",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Jerusalem, once full of people, sits desolate. She weeps bitterly over her destruction, confessing her sins as the cause of her suffering.",
+      "2": "God’s anger has brought ruin to Zion. The temple and city are destroyed. The people mourn as children and priests perish.",
+      "3": "Jeremiah laments deep personal suffering but finds hope in God’s steadfast love and mercies, which are new every morning.",
+      "4": "The horrors of Jerusalem’s siege are described: famine, cruelty, and the downfall of princes. God’s wrath has been poured out fully.",
+      "5": "A communal prayer pleads for God’s mercy and restoration. The people confess their suffering and call on God not to forget them."
+    }
   },
   {
     "name": "Ezekiel",
@@ -512,7 +1020,56 @@
     "category": "Major Prophets",
     "author": "Ezekiel",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Ezekiel sees a vision of God’s glory: four living creatures and wheels within wheels, radiant with God’s presence.",
+      "2": "God commissions Ezekiel as a prophet to a rebellious Israel, calling him to speak His words whether they listen or not.",
+      "3": "Ezekiel eats the scroll, symbolizing God’s message within him. He is appointed as a watchman responsible to warn Israel.",
+      "4": "Ezekiel enacts a siege against Jerusalem with symbolic actions, lying on his sides and eating rationed food.",
+      "5": "Ezekiel cuts his hair to symbolize Jerusalem’s fate: some burned, some struck, some scattered, all under God’s judgment.",
+      "6": "Prophecy against Israel’s mountains: idolatrous high places will be destroyed, but a remnant will survive.",
+      "7": "The end has come for Israel. Disaster, doom, and God’s wrath will fall because of their sins.",
+      "8": "Ezekiel sees visions of abominations in the temple: idolatry and corruption provoking God’s judgment.",
+      "9": "God commands angels to mark the faithful, while others are struck down in judgment. God’s glory begins departing.",
+      "10": "Ezekiel sees God’s glory departing the temple, with cherubim and wheels full of fire.",
+      "11": "Leaders are condemned for wickedness. God promises judgment, but also future restoration and a new heart for His people.",
+      "12": "Ezekiel enacts exile by packing belongings. God announces that exile and judgment are certain and near.",
+      "13": "False prophets and prophetesses are condemned for lying visions and false security.",
+      "14": "Idolatrous elders are rebuked. Even Noah, Daniel, and Job could only save themselves by righteousness.",
+      "15": "Jerusalem is compared to a useless vine, destined only for fire.",
+      "16": "Jerusalem is portrayed as an unfaithful wife who prostituted herself with idols. Yet God promises eventual restoration.",
+      "17": "A parable of two eagles and a vine symbolizes Judah’s alliances. God promises to plant a righteous Branch.",
+      "18": "Each person is responsible for their own sin. The righteous live; the wicked die. God desires repentance, not death.",
+      "19": "A lament for Israel’s princes, portrayed as young lions and a withered vine.",
+      "20": "God recounts Israel’s rebellion from Egypt onward. Yet He promises to restore them for His name’s sake.",
+      "21": "God’s sword of judgment is unsheathed against Jerusalem and Ammon.",
+      "22": "Jerusalem is condemned for bloodshed, idolatry, and corruption. Leaders, priests, and prophets are all corrupt.",
+      "23": "The allegory of two sisters, Oholah and Oholibah, represents Israel and Judah’s unfaithfulness with foreign nations.",
+      "24": "The siege of Jerusalem begins. Ezekiel uses a boiling pot as a sign. His wife dies, and he cannot mourn, symbolizing the people’s shock.",
+      "25": "Judgment is proclaimed on Ammon, Moab, Edom, and Philistia for their hostility toward Israel.",
+      "26": "Prophecy against Tyre: it will be destroyed by many nations and become bare rock.",
+      "27": "A lament over Tyre’s wealth and trade, now destined for ruin.",
+      "28": "Judgment against the pride of Tyre’s ruler. A prophecy of lamentation against Sidon. God promises restoration for Israel.",
+      "29": "Judgment against Egypt: it will be desolate for forty years, then restored but never great again.",
+      "30": "The day of the Lord against Egypt and her allies: devastation and ruin are decreed.",
+      "31": "Assyria is likened to a great cedar, felled because of pride. Egypt will share its fate.",
+      "32": "A lament for Pharaoh, likening him to a fallen monster. Egypt will descend to the grave with other nations.",
+      "33": "Ezekiel is appointed a watchman again. Each person is accountable. News arrives that Jerusalem has fallen.",
+      "34": "God condemns Israel’s shepherds (leaders). He promises to shepherd His people Himself and to raise up a Davidic shepherd.",
+      "35": "Judgment against Mount Seir (Edom) for perpetual hostility toward Israel.",
+      "36": "God promises restoration for Israel’s land and people. He will give them a new heart and spirit.",
+      "37": "The valley of dry bones symbolizes Israel’s restoration. Two sticks become one, symbolizing a reunited nation under David’s king.",
+      "38": "Prophecy against Gog of Magog: a future invasion of Israel will be destroyed by God’s power.",
+      "39": "Gog’s armies are defeated and buried. God’s glory is revealed among the nations.",
+      "40": "Ezekiel sees a vision of a new temple, with detailed measurements and descriptions.",
+      "41": "The temple’s interior is described in detail, with decorations and measurements.",
+      "42": "Chambers for priests are described, emphasizing holiness and separation.",
+      "43": "God’s glory returns to the temple. Instructions for the altar and sacrifices are given.",
+      "44": "Regulations for the temple: the prince and priests have specific roles. The Levites are warned for past unfaithfulness.",
+      "45": "Land is divided: a portion for the Lord, priests, Levites, and the prince. Regulations for offerings are given.",
+      "46": "The prince has specific worship responsibilities. Regulations for offerings and temple use are given.",
+      "47": "Ezekiel sees water flowing from the temple, bringing life to the land. Land boundaries are described.",
+      "48": "The land is divided among the tribes. The city and temple are described. The city is named: “The Lord is There.”"
+    }
   },
   {
     "name": "Daniel",
@@ -521,7 +1078,20 @@
     "category": "Major Prophets",
     "author": "Daniel (Aramaic portions)",
     "language": "Hebrew/Aramaic",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Daniel and his friends are taken to Babylon. They refuse the king’s food, choosing vegetables and water. God blesses them with wisdom and health.",
+      "2": "Nebuchadnezzar dreams of a great statue. Daniel interprets it as successive kingdoms, ending with God’s eternal kingdom. The king honors Daniel.",
+      "3": "Shadrach, Meshach, and Abednego refuse to worship the golden image. They are thrown into a fiery furnace but delivered unharmed by God.",
+      "4": "Nebuchadnezzar dreams of a great tree cut down. Daniel interprets it as the king’s humbling. Nebuchadnezzar becomes insane, then restored, praising God.",
+      "5": "Belshazzar’s feast desecrates sacred vessels. A hand writes on the wall: “MENE, MENE, TEKEL, PARSIN.” Daniel interprets. That night Babylon falls.",
+      "6": "Daniel prays despite a decree against it. He is thrown into the lions’ den but God delivers him. Darius honors Daniel’s God.",
+      "7": "Daniel dreams of four beasts representing kingdoms. The Ancient of Days judges, and the Son of Man receives an everlasting kingdom.",
+      "8": "Daniel sees a vision of a ram and a goat, symbolizing Medo-Persia and Greece. The little horn arises, foreshadowing oppression.",
+      "9": "Daniel prays a confession for Israel. Gabriel reveals the prophecy of seventy weeks, pointing to the Messiah and future desolation.",
+      "10": "Daniel has a vision of a glorious man. He is strengthened to hear prophecies of great conflict to come.",
+      "11": "A detailed prophecy of conflicts between kings of the North and South unfolds, leading to a contemptible ruler and great persecution.",
+      "12": "The end times are described: Michael will arise, resurrection will occur, and the righteous will shine. Daniel is told to seal the words until the end."
+    }
   },
   {
     "name": "Hosea",
@@ -530,7 +1100,22 @@
     "category": "Minor Prophets",
     "author": "Hosea",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "God commands Hosea to marry Gomer, symbolizing Israel’s unfaithfulness. Their children’s names signify judgment: Jezreel, Lo-Ruhamah, and Lo-Ammi.",
+      "2": "God describes Israel as an unfaithful wife. Yet He promises to allure her back, betrothing her forever in righteousness and love.",
+      "3": "Hosea redeems Gomer, showing God’s love for Israel despite their unfaithfulness. Israel will be restored after a period without king or sacrifice.",
+      "4": "God brings charges against Israel: no faithfulness, love, or knowledge of Him. Priests and people alike are corrupt.",
+      "5": "Israel and Judah are condemned for unfaithfulness. God withdraws, waiting for their repentance.",
+      "6": "Israel offers shallow repentance. God desires steadfast love, not sacrifice. Their loyalty fades quickly.",
+      "7": "Israel is compared to a hot oven of sin, filled with intrigue and alliances with foreign nations instead of God.",
+      "8": "Israel has sown the wind and will reap the whirlwind. Idols and foreign alliances will bring destruction.",
+      "9": "Israel’s joy turns to mourning. Exile is coming as punishment for their idolatry and wickedness.",
+      "10": "Israel is a spreading vine but uses prosperity for idolatry. Judgment will come; they will be exiled and their king removed.",
+      "11": "God recalls His love in calling Israel out of Egypt. Though they turn away, His compassion prevails, promising restoration.",
+      "12": "Israel is deceitful like Jacob. God reminds them of His faithfulness, urging them to return in love and justice.",
+      "13": "Israel’s idolatry brings death and destruction. God declares judgment but also promises ultimate redemption from death.",
+      "14": "A call to repentance: Israel is urged to return to God. He promises healing, love, and flourishing for the repentant."
+    }
   },
   {
     "name": "Joel",
@@ -539,7 +1124,11 @@
     "category": "Minor Prophets",
     "author": "Joel",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "A devastating locust plague strikes the land. Joel calls the people, priests, and elders to lament and fast before the Lord.",
+      "2": "A greater day of the Lord is described, with invading armies like locusts. Yet God calls His people to return with repentance, promising restoration and the outpouring of His Spirit.",
+      "3": "God gathers the nations for judgment in the Valley of Jehoshaphat. He defends His people, promises blessing for Zion, and declares that the Lord dwells in Jerusalem."
+    }
   },
   {
     "name": "Amos",
@@ -548,7 +1137,17 @@
     "category": "Minor Prophets",
     "author": "Amos",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Amos proclaims God’s judgment on surrounding nations—Damascus, Gaza, Tyre, Edom, Ammon—for cruelty and violence.",
+      "2": "Judgment is declared on Moab, Judah, and Israel. Israel is condemned for injustice, oppression, and idolatry.",
+      "3": "God declares judgment on Israel because they alone were chosen and yet rebelled. Calamity comes by His hand.",
+      "4": "Israel is warned for oppressing the poor and practicing false worship. God sent calamities, yet they did not return to Him.",
+      "5": "A lament for Israel: seek the Lord and live. God hates empty rituals but desires justice to roll like waters and righteousness like a stream.",
+      "6": "Woe to the complacent in Zion. Israel’s pride will lead to destruction and exile.",
+      "7": "Amos sees visions of judgment: locusts, fire, and a plumb line. Amaziah the priest opposes him, but Amos stands firm.",
+      "8": "A vision of a basket of ripe fruit symbolizes Israel’s end. Injustice and greed bring God’s wrath; a famine of hearing God’s word is foretold.",
+      "9": "God’s judgment is inescapable, yet He promises restoration: Israel will be replanted and never again uprooted."
+    }
   },
   {
     "name": "Obadiah",
@@ -557,7 +1156,9 @@
     "category": "Minor Prophets",
     "author": "Obadiah",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Obadiah prophesies judgment against Edom for pride and violence against Israel. The day of the Lord is near: nations will be judged, but deliverance and holiness will come to Zion."
+    }
   },
   {
     "name": "Jonah",
@@ -566,7 +1167,12 @@
     "category": "Minor Prophets",
     "author": "Jonah",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "God calls Jonah to preach against Nineveh. Jonah flees by ship, but God sends a storm. Jonah is thrown overboard and swallowed by a great fish.",
+      "2": "From the fish’s belly, Jonah prays a prayer of repentance and thanksgiving. God commands the fish to vomit him onto dry land.",
+      "3": "Jonah preaches in Nineveh. The people, from king to commoner, repent in sackcloth and fasting. God relents from destroying the city.",
+      "4": "Jonah becomes angry at God’s mercy. God teaches him through a plant that His compassion extends to all people."
+    }
   },
   {
     "name": "Micah",
@@ -575,7 +1181,15 @@
     "category": "Minor Prophets",
     "author": "Micah",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Micah proclaims God’s judgment on Samaria and Jerusalem for idolatry and sin. Their cities will face ruin.",
+      "2": "Woe to those who oppress and seize land. False prophets promise ease, but judgment is coming. Yet God promises to gather a remnant.",
+      "3": "Leaders and prophets are condemned for injustice and corruption. Zion will be plowed like a field because of their sins.",
+      "4": "In the last days, nations will stream to the mountain of the Lord. God will bring peace, and the exiles will be restored.",
+      "5": "A ruler will come from Bethlehem to shepherd God’s people in strength. Israel will triumph over enemies through God’s deliverance.",
+      "6": "God brings a case against His people, asking what He has done wrong. True worship is to act justly, love mercy, and walk humbly with God.",
+      "7": "Micah laments corruption but hopes in God’s salvation. God will forgive and restore His people, showing steadfast love."
+    }
   },
   {
     "name": "Nahum",
@@ -584,7 +1198,11 @@
     "category": "Minor Prophets",
     "author": "Nahum",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "The Lord is a jealous and avenging God, slow to anger but mighty in power. He promises judgment on Nineveh but refuge for those who trust Him.",
+      "2": "The fall of Nineveh is vividly described: the attackers advance, defenses collapse, and the city is plundered.",
+      "3": "Woe to Nineveh, the city of blood. Her cruelty and idolatry bring shame and destruction. None will mourn her fall."
+    }
   },
   {
     "name": "Habakkuk",
@@ -593,7 +1211,11 @@
     "category": "Minor Prophets",
     "author": "Habakkuk",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Habakkuk questions why God allows injustice. God responds that He is raising up the Babylonians to bring judgment.",
+      "2": "Habakkuk waits for God’s answer. God declares woe to the proud and unjust but promises the righteous will live by faith.",
+      "3": "Habakkuk prays, recalling God’s mighty deeds. Though facing hardship, he rejoices in the Lord as his strength and salvation."
+    }
   },
   {
     "name": "Zephaniah",
@@ -602,7 +1224,11 @@
     "category": "Minor Prophets",
     "author": "Zephaniah",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Zephaniah announces the coming day of the Lord: judgment on Judah for idolatry and complacency. The whole earth will be consumed.",
+      "2": "A call to seek the Lord before His anger falls. Judgment is pronounced on surrounding nations—Philistia, Moab, Ammon, Cush, and Assyria.",
+      "3": "Jerusalem is condemned for rebellion and corruption, but God promises to purify the nations. A humble remnant will rejoice as God restores His people."
+    }
   },
   {
     "name": "Haggai",
@@ -611,7 +1237,10 @@
     "category": "Minor Prophets",
     "author": "Haggai",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Through Haggai, God rebukes the people for neglecting the temple while focusing on their own houses. The leaders and people obey and begin rebuilding.",
+      "2": "God encourages the builders, promising His glory will fill the temple. He assures blessing for obedience and foretells Zerubbabel’s significance in His plan."
+    }
   },
   {
     "name": "Zechariah",
@@ -620,7 +1249,22 @@
     "category": "Minor Prophets",
     "author": "Zechariah",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Zechariah calls the people to return to the Lord. He sees visions of horsemen patrolling the earth and God’s promise to restore Jerusalem.",
+      "2": "A vision of a man measuring Jerusalem: God will be its protection and glory. Exiles are urged to return, for God will dwell among His people.",
+      "3": "Joshua the high priest stands accused but is cleansed and clothed in righteousness. God promises His servant, the Branch.",
+      "4": "Zechariah sees a golden lampstand and two olive trees, symbolizing God’s Spirit empowering Zerubbabel to rebuild the temple.",
+      "5": "A flying scroll symbolizes judgment on thieves and liars. A woman in a basket represents wickedness being carried away.",
+      "6": "Four chariots symbolize God’s judgment on the nations. Joshua the high priest is crowned, pointing to the coming Branch who will rule and build God’s temple.",
+      "7": "God rebukes empty fasting. True worship is justice, mercy, and compassion.",
+      "8": "God promises to bless Jerusalem with peace, prosperity, and truth. Many nations will come to seek the Lord.",
+      "9": "Judgment is proclaimed on Israel’s enemies. A humble king, riding on a donkey, is promised to bring peace to the nations.",
+      "10": "God promises to strengthen and restore His people, gathering them from exile and blessing them abundantly.",
+      "11": "Zechariah acts as a shepherd, symbolizing Israel’s rejection of God’s true shepherd. Thirty pieces of silver foreshadow betrayal of the Messiah.",
+      "12": "God promises to defend Jerusalem. He will pour out a spirit of grace and supplication, and the people will mourn for the one they pierced.",
+      "13": "A fountain is opened to cleanse from sin. Idols and false prophets are removed. The Shepherd is struck, and the sheep are scattered.",
+      "14": "The day of the Lord: nations gather against Jerusalem, but the Lord comes to reign as King over all the earth. Jerusalem will be secure, and all nations will worship the Lord."
+    }
   },
   {
     "name": "Malachi",
@@ -629,7 +1273,12 @@
     "category": "Minor Prophets",
     "author": "Malachi",
     "language": "Hebrew",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "God declares His love for Israel but rebukes the priests for offering defiled sacrifices. His name will be great among the nations.",
+      "2": "The priests are warned for corrupt teaching. God condemns unfaithfulness in marriage and calls for covenant faithfulness.",
+      "3": "God promises to send His messenger before the Lord’s coming. He calls Israel to return to Him and rebukes them for withholding tithes. A distinction is made between the righteous and the wicked.",
+      "4": "The day of the Lord is coming, burning like fire for the wicked but bringing healing for the righteous. Elijah will come before the great and dreadful day of the Lord."
+    }
   },
   {
     "name": "Matthew",
@@ -857,7 +1506,21 @@
     "category": "Pauline Epistles",
     "author": "Paul",
     "language": "Greek",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Paul greets the church, praising God as the Father of compassion. He explains his suffering and God’s comfort, affirming his sincerity.",
+      "2": "Paul urges forgiveness for the repentant offender. He explains his ministry and rejoices in the fragrance of Christ through believers.",
+      "3": "Paul contrasts the old covenant of law with the new covenant of the Spirit, which brings righteousness and lasting glory.",
+      "4": "Paul describes the gospel treasure in jars of clay, showing God’s power. Suffering produces perseverance as believers fix their eyes on the unseen.",
+      "5": "Believers long for heavenly dwelling. Through Christ, God reconciles the world to Himself. Paul calls Christians ambassadors of reconciliation.",
+      "6": "Paul urges the Corinthians not to receive God’s grace in vain. He defends his ministry and calls for holiness and separation from idolatry.",
+      "7": "Paul rejoices in the Corinthians’ repentance after his previous letter, expressing his deep comfort and joy.",
+      "8": "Paul encourages generosity, citing the Macedonians’ example and Christ’s self-giving. He commends Titus and other messengers.",
+      "9": "Paul stresses cheerful giving, assuring God’s abundant provision for generous givers.",
+      "10": "Paul defends his apostolic authority, emphasizing spiritual weapons and boasting only in the Lord.",
+      "11": "Paul contrasts himself with false apostles, recounting his sufferings and sacrifices for the gospel.",
+      "12": "Paul describes his vision of heaven and his thorn in the flesh, which keeps him humble. God’s grace is sufficient.",
+      "13": "Paul exhorts self-examination, warns of discipline if needed, and closes with blessings of grace, love, and fellowship."
+    }
   },
   {
     "name": "Galatians",
@@ -912,7 +1575,12 @@
     "category": "Pauline Epistles",
     "author": "Paul",
     "language": "Greek",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Paul thanks God for the Colossians’ faith and prays for them. He exalts Christ as the image of God and head of the church, reconciling all through His blood.",
+      "2": "Paul warns against false teachings, urging them to remain rooted in Christ, not in human tradition or legalism.",
+      "3": "Paul calls for setting minds on things above. Believers are to put off the old self and put on love, peace, and gratitude. Instructions are given for households.",
+      "4": "Paul exhorts prayer, wise conduct, and greetings from his companions. Final encouragement is given to Archippus to fulfill his ministry."
+    }
   },
   {
     "name": "1 Thessalonians",
@@ -921,7 +1589,13 @@
     "category": "Pauline Epistles",
     "author": "Paul",
     "language": "Greek",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Paul thanks God for the Thessalonians’ faith, love, and hope, which became an example throughout the region.",
+      "2": "Paul recalls his ministry among them, likening himself to a parent. He rejoices in their faith despite persecution.",
+      "3": "Paul sends Timothy to strengthen them. Timothy’s report of their steadfastness brings Paul comfort and joy.",
+      "4": "Paul urges holiness, love, and diligence. He comforts them with teaching about Christ’s return and the resurrection.",
+      "5": "Paul reminds them the day of the Lord will come unexpectedly. He exhorts watchfulness, encouragement, and prayer."
+    }
   },
   {
     "name": "2 Thessalonians",
@@ -930,7 +1604,11 @@
     "category": "Pauline Epistles",
     "author": "Paul",
     "language": "Greek",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Paul encourages believers facing persecution, assuring them of God’s justice and Christ’s return in glory.",
+      "2": "Paul explains that the day of the Lord has not come yet. The man of lawlessness must first be revealed. Believers are urged to stand firm.",
+      "3": "Paul exhorts prayer, warns against idleness, and commands discipline for those who disobey. He blesses them with peace."
+    }
   },
   {
     "name": "1 Timothy",
@@ -939,7 +1617,14 @@
     "category": "Pauline Epistles",
     "author": "Paul",
     "language": "Greek",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Paul charges Timothy to oppose false teachers and uphold the gospel. He shares his own testimony of grace.",
+      "2": "Paul instructs prayer for all people, including rulers. Guidelines for men and women in worship are given.",
+      "3": "Qualifications for overseers and deacons are outlined. Paul describes the church as the pillar of truth.",
+      "4": "Paul warns against false asceticism. He encourages Timothy to set an example in speech, conduct, love, faith, and purity.",
+      "5": "Paul gives instructions on caring for widows, honoring elders, and correcting sin in the community.",
+      "6": "Paul warns against greed and false teaching. He exhorts Timothy to pursue righteousness and guard the faith."
+    }
   },
   {
     "name": "2 Timothy",
@@ -948,7 +1633,12 @@
     "category": "Pauline Epistles",
     "author": "Paul",
     "language": "Greek",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Paul encourages Timothy to be bold, remembering his sincere faith. He is not to be ashamed of the gospel or Paul’s chains.",
+      "2": "Timothy is exhorted to be strong in grace, like a soldier, athlete, and farmer. Paul stresses faithful teaching and endurance.",
+      "3": "Paul warns of godlessness in the last days. Scripture is declared God-breathed and sufficient for teaching and equipping.",
+      "4": "Paul charges Timothy to preach the word faithfully. Paul reflects on his impending death, declaring he has fought the good fight."
+    }
   },
   {
     "name": "Titus",
@@ -957,7 +1647,11 @@
     "category": "Pauline Epistles",
     "author": "Paul",
     "language": "Greek",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Paul instructs Titus to appoint qualified elders and to oppose false teachers who disrupt households.",
+      "2": "Paul urges teaching sound doctrine: older and younger men and women are to live godly lives, showing the grace of God.",
+      "3": "Paul reminds believers to submit to authorities, be devoted to good works, and avoid foolish controversies. He closes with final greetings."
+    }
   },
   {
     "name": "Philemon",
@@ -966,7 +1660,9 @@
     "category": "Pauline Epistles",
     "author": "Paul",
     "language": "Greek",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Paul appeals to Philemon to forgive and receive back Onesimus, his runaway slave, now a brother in Christ. Paul offers to repay any debt."
+    }
   },
   {
     "name": "Hebrews",
@@ -1028,7 +1724,11 @@
     "category": "General Epistles",
     "author": "Peter",
     "language": "Greek",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Peter urges growth in faith, virtue, and knowledge. He reminds them of eyewitness testimony of Christ’s glory and the surety of Scripture.",
+      "2": "False teachers are condemned for greed and immorality. Peter recalls examples of judgment: fallen angels, the flood, and Sodom.",
+      "3": "Scoffers doubt Christ’s return, but Peter assures God’s timing is patient. The day of the Lord will come, bringing new heavens and a new earth."
+    }
   },
   {
     "name": "1 John",
@@ -1037,7 +1737,13 @@
     "category": "General Epistles",
     "author": "John",
     "language": "Greek",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "John proclaims the Word of life. Believers must walk in the light, confessing sins, for forgiveness through Christ.",
+      "2": "Jesus is our advocate and atoning sacrifice. Believers must obey God’s commands and love one another. Antichrists deny Christ.",
+      "3": "We are children of God and must live righteously. Love is shown in action, not words alone.",
+      "4": "Test the spirits; true confession is that Jesus came in the flesh. God is love, and we must love one another.",
+      "5": "Faith in Christ overcomes the world. The Spirit, water, and blood testify. Believers have eternal life and confidence in prayer."
+    }
   },
   {
     "name": "2 John",
@@ -1046,7 +1752,9 @@
     "category": "General Epistles",
     "author": "John",
     "language": "Greek",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "John urges believers to walk in truth and love. He warns against deceivers who deny Christ and instructs not to welcome them."
+    }
   },
   {
     "name": "3 John",
@@ -1055,7 +1763,9 @@
     "category": "General Epistles",
     "author": "John",
     "language": "Greek",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "John commends Gaius for hospitality and walking in the truth. He rebukes Diotrephes for arrogance and praises Demetrius for faithfulness."
+    }
   },
   {
     "name": "Jude",
@@ -1064,7 +1774,9 @@
     "category": "General Epistles",
     "author": "Jude",
     "language": "Greek",
-    "chapterSummaries": {}
+    "chapterSummaries": {
+      "1": "Jude urges believers to contend for the faith against ungodly infiltrators. He recalls past judgments and warns of false teachers. He closes with a doxology to God who keeps believers safe."
+    }
   },
   {
     "name": "Revelation",
