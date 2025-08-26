@@ -5,19 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <title>{% if title %}{{ title }} - Bible Explorer{% else %}{{ renderData.title or metadata.title }}{% endif %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   {% if description %}<meta name="description" content="{{ description }}">{% endif %}
 </head>
 <body>
   <div class="container">
     <nav class="nav">
-      <a class="brand" href="/">Bible Explorer</a>
-      <a href="/categories/" class="{% if page.url == '/categories/' or page.url.startsWith('/categories/') %}active{% endif %}">Sections</a>
-      <a href="/characters/" class="{% if page.url.startsWith('/characters/') %}active{% endif %}">Characters</a>
-      <a href="/links/" class="{% if page.url == '/links/' %}active{% endif %}">Links</a>
+      <a class="nav-brand" href="/">Bible Explorer</a>
+      <div class="nav-links">
+        <a href="/categories/" class="nav-link {% if page.url == '/categories/' or page.url.startsWith('/categories/') %}active{% endif %}">Sections</a>
+        <a href="/characters/" class="nav-link {% if page.url.startsWith('/characters/') %}active{% endif %}">Characters</a>
+        <a href="/links/" class="nav-link {% if page.url == '/links/' %}active{% endif %}">Links</a>
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
     </nav>
     
     {{ content | safe }}
   </div>
+  
+  <script>
+    // Theme toggle functionality
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      
+      // Update theme toggle icon
+      const themeIcon = document.querySelector('.theme-icon');
+      if (themeIcon) {
+        themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+      }
+    }
+
+    // Initialize theme on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+      
+      document.documentElement.setAttribute('data-theme', initialTheme);
+      
+      // Update theme toggle icon
+      const themeIcon = document.querySelector('.theme-icon');
+      if (themeIcon) {
+        themeIcon.textContent = initialTheme === 'dark' ? '☀️' : '🌙';
+      }
+    });
+  </script>
 </body>
 </html>
