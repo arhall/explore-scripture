@@ -21,7 +21,9 @@
       "Bash(npm test:*)",
       "Bash(chmod:*)",
       "Bash(docker:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(python3:*)",
+      "Bash(node:*)"
     ],
     "deny": [],
     "ask": []

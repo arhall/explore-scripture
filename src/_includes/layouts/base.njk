@@ -74,12 +74,21 @@
             }
             
             // Add book itself
+            let bookSubtitle = `📖 Book by ${book.author || 'Unknown'} • ${book.category || 'Unknown'}`;
+            
+            // Special handling for single-chapter books that might be confused with characters
+            const singleChapterBooks = ['Obadiah', 'Philemon', 'Jude', '2 John', '3 John'];
+            if (singleChapterBooks.includes(book.name)) {
+              bookSubtitle = `📖 Single-chapter book by ${book.author || 'Unknown'} • ${book.category || 'Unknown'}`;
+            }
+            
             searchData.push({
               type: 'book',
               title: book.name,
-              subtitle: `${book.author || 'Unknown'} • ${book.category || 'Unknown'}`,
+              subtitle: bookSubtitle,
               content: `${book.name} ${book.author || ''} ${book.category || ''}`,
-              url: `/books/${book.slug}/`
+              url: `/books/${book.slug}/`,
+              typeLabel: 'Book'
             });
 
             // Add chapters with summaries
@@ -89,9 +98,10 @@
                   searchData.push({
                     type: 'chapter',
                     title: `${book.name} ${chapter}`,
-                    subtitle: summary.substring(0, 100) + '...',
+                    subtitle: `📄 ${summary.substring(0, 80)}...`,
                     content: `${book.name} chapter ${chapter} ${summary}`,
-                    url: `/books/${book.slug}/#chapter-${chapter}`
+                    url: `/books/${book.slug}/#chapter-${chapter}`,
+                    typeLabel: 'Chapter'
                   });
                 }
               });
@@ -116,9 +126,10 @@
             searchData.push({
               type: 'category',
               title: category.name,
-              subtitle: category.description || '',
+              subtitle: `🏷️ ${category.description || 'Biblical section'}`,
               content: `${category.name} ${category.description || ''} ${category.themes ? category.themes.join(' ') : ''}`,
-              url: `/categories/${category.slug}/`
+              url: `/categories/${category.slug}/`,
+              typeLabel: 'Section'
             });
           } catch (categoryError) {
             if (window.logger) {
@@ -140,9 +151,10 @@
             searchData.push({
               type: 'character',
               title: character.name,
-              subtitle: `${character.totalAppearances} appearances in ${character.totalBooks} books`,
+              subtitle: `👤 ${character.totalAppearances} appearances in ${character.totalBooks} books`,
               content: `${character.name} ${character.books ? character.books.join(' ') : ''}`,
-              url: `/characters/${character.slug}/`
+              url: `/characters/${character.slug}/`,
+              typeLabel: 'Character'
             });
           } catch (characterError) {
             if (window.logger) {
@@ -219,7 +231,14 @@
             }
           })
           .filter(item => item.score > 0)
-          .sort((a, b) => b.score - a.score)
+          .sort((a, b) => {
+            // First sort by score
+            if (b.score !== a.score) return b.score - a.score;
+            
+            // Then prioritize: books > characters > chapters > categories
+            const typeOrder = { book: 1, character: 2, chapter: 3, category: 4 };
+            return (typeOrder[a.type] || 5) - (typeOrder[b.type] || 5);
+          })
           .slice(0, 10);
         
         const duration = performance.now() - startTime;
@@ -266,7 +285,20 @@
       
       let score = 0;
       
-      // Exact title match gets highest score
+      // Perfect title match gets highest score
+      if (title === query) {
+        score += 200;
+        // Boost books and characters for exact matches
+        if (item.type === 'book') score += 50;
+        if (item.type === 'character') score += 40;
+      }
+      
+      // Title starts with query
+      if (title.startsWith(query)) {
+        score += 150;
+      }
+      
+      // Title contains query
       if (title.includes(query)) {
         score += 100;
       }
@@ -285,6 +317,10 @@
           if (regex.test(content)) score += 15;
         }
       });
+      
+      // Type-based bonuses for better user experience
+      if (item.type === 'book') score += 10;  // Slightly prioritize books
+      if (item.type === 'character') score += 5;  // Then characters
       
       return score;
     }
@@ -305,7 +341,10 @@
       } else {
         resultsContainer.innerHTML = results.map(result => `
           <div class="search-result-item" onclick="handleSearchResultClick('${result.url}', '${result.type}', '${result.title.replace(/'/g, "\\'")}')">
-            <div class="search-result-title">${highlightText(result.title, query)}</div>
+            <div class="search-result-header">
+              <div class="search-result-title">${highlightText(result.title, query)}</div>
+              <div class="search-result-type">${result.typeLabel || result.type}</div>
+            </div>
             <div class="search-result-snippet">${highlightText(result.subtitle, query)}</div>
           </div>
         `).join('');
@@ -340,6 +379,22 @@
             result_type: type,
             result_title: title 
           });
+        }
+        
+        // Clear search results
+        const searchResults = document.getElementById('searchResults');
+        if (searchResults) {
+          searchResults.style.display = 'none';
+        }
+        
+        // For character results, add extra context
+        if (type === 'character') {
+          // Add slight delay to allow navigation start, then clear search
+          setTimeout(() => {
+            if (searchInput) {
+              searchInput.blur();
+            }
+          }, 100);
         }
         
         // Navigate to the page
