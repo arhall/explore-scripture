@@ -48,12 +48,12 @@ layout: base.njk
       <tr><th>Chapter</th><th>Summary</th><th>Commentary</th></tr>
     </thead>
     <tbody>
-      {% for ch, sum in book.chapterSummaries | dictsort %}
+      {% for ch, sum in book.chapterSummaries | chapterSort %}
         <tr>
           <td>{{ ch }}</td>
           <td>{{ sum | safe }}</td>
           <td>
-            <a href="https://enduringword.com/bible-commentary/{{ book.name | lower }}-{{ ch }}/" 
+            <a href="{{ book.name | commentaryUrl(ch) }}" 
                target="_blank" 
                class="commentary-link"
                rel="noopener">

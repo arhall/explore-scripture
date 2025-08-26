@@ -16,7 +16,12 @@
       "Read(//Users/andreenhall/repo/bible-static-site/src/_data/**)",
       "Bash(npm install:*)",
       "Bash(time npm run build)",
-      "Bash(time npm run build:production)"
+      "Bash(time npm run build:production)",
+      "Bash(npm test)",
+      "Bash(npm test:*)",
+      "Bash(chmod:*)",
+      "Bash(docker:*)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []

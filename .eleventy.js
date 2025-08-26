@@ -42,6 +42,26 @@ module.exports = function(eleventyConfig) {
     return result;
   });
 
+  // Sort chapters numerically instead of alphabetically
+  eleventyConfig.addFilter("chapterSort", function(chapterObj) {
+    if (!chapterObj) return [];
+    
+    return Object.entries(chapterObj).sort((a, b) => {
+      const numA = parseInt(a[0], 10);
+      const numB = parseInt(b[0], 10);
+      return numA - numB;
+    });
+  });
+
+  // Get proper commentary URL for different books
+  eleventyConfig.addFilter("commentaryUrl", function(bookName, chapter) {
+    const cleanBookName = bookName.toLowerCase()
+      .replace(/\s+/g, '-') // Replace spaces with hyphens
+      .replace(/psalms$/, 'psalm'); // Special case: Psalms -> Psalm
+    
+    return `https://enduringword.com/bible-commentary/${cleanBookName}-${chapter}/`;
+  });
+
   // Transform HTML output for production
   if (process.env.NODE_ENV === 'production') {
     const htmlnano = require('htmlnano');

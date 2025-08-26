@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-08-26T03:42:56.175Z",
+  "nodeVersion": "v24.6.0",
+  "platform": "darwin",
+  "results": {
+    "build": {
+      "average": 1391.7459163333333,
+      "min": 1340.682291,
+      "max": 1418.481125,
+      "iterations": 3
+    },
+    "incrementalBuild": {
+      "average": 1485.9922832,
+      "iterations": 5
+    },
+    "sizeMetrics": {
+      "totalSize": 52430991,
+      "fileCount": 326,
+      "dirCount": 323,
+      "avgFileSize": 160831.26073619633
+    },
+    "fileTypes": {
+      "html": 321,
+      "js": 3,
+      "svg": 1,
+      "css": 1
+    },
+    "characterProcessing": {
+      "time": 18.72325,
+      "count": 1214,
+      "rate": 64839.17054998464
+    },
+    "booksProcessing": {
+      "time": 3.28125,
+      "bookCount": 66,
+      "chapterCount": 1150,
+      "summaryCount": 1150
+    }
+  }
+}

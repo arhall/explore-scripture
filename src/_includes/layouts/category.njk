@@ -34,8 +34,8 @@ layout: base.njk
 
 <h2>Books in {{ category.name }}</h2>
 <div class="grid">
-{% set categoryBooks = books | selectattr("category", "equalto", category.name) | list %}
-{% for b in categoryBooks %}
+{% for b in books %}
+  {% if b.category == category.name %}
   <a class="card" href="/books/{{ b.slug }}/">
     <h3>{{ b.name }}</h3>
     <p><strong>Author:</strong> {{ b.author }}</p>
@@ -45,6 +45,7 @@ layout: base.njk
     {% endif %}
     <span class="badge">{{ b.testament }}</span>
   </a>
+  {% endif %}
 {% endfor %}
 </div>
 
