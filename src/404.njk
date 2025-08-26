@@ -7,22 +7,109 @@ permalink: /404.html
 
 <div class="error-page">
   <div class="error-content">
-    <h1>📖 Page Not Found</h1>
+    <div class="error-icon">📖</div>
+    <h1>Page Not Found</h1>
     <p class="error-message">The page you're looking for doesn't exist or may have been moved.</p>
     
+    <div class="error-actions">
+      <button class="error-action-btn primary" onclick="focusSearch()">
+        🔍 Try Searching
+      </button>
+      <a href="/" class="error-action-btn secondary">
+        🏠 Go Home
+      </a>
+    </div>
+    
     <div class="error-suggestions">
-      <h3>What you can do:</h3>
-      <ul>
-        <li>🔍 Use the <strong>search box above</strong> to find what you're looking for</li>
-        <li>📚 Browse all <a href="/categories/">biblical sections</a></li>
-        <li>👤 Explore <a href="/characters/">biblical characters</a></li>
-        <li>🏠 Return to the <a href="/">homepage</a></li>
-      </ul>
+      <h3>Popular Destinations</h3>
+      <div class="suggestions-grid">
+        <a href="/categories/" class="suggestion-card">
+          <div class="suggestion-icon">📚</div>
+          <div class="suggestion-text">
+            <strong>Biblical Sections</strong>
+            <span>Browse by category</span>
+          </div>
+        </a>
+        <a href="/characters/" class="suggestion-card">
+          <div class="suggestion-icon">👤</div>
+          <div class="suggestion-text">
+            <strong>Characters</strong>
+            <span>Explore biblical figures</span>
+          </div>
+        </a>
+        <a href="/gospel-thread/" class="suggestion-card">
+          <div class="suggestion-icon">🧵</div>
+          <div class="suggestion-text">
+            <strong>Gospel Thread</strong>
+            <span>Christ through Scripture</span>
+          </div>
+        </a>
+        <a href="/links/" class="suggestion-card">
+          <div class="suggestion-icon">🔗</div>
+          <div class="suggestion-text">
+            <strong>Helpful Links</strong>
+            <span>External resources</span>
+          </div>
+        </a>
+      </div>
     </div>
     
     <div class="search-help">
-      <p><strong>💡 Search Tips:</strong></p>
-      <p>Try searching for books (like "Genesis"), characters (like "Moses"), or topics you're interested in. Our search will show you whether it's a book, character, chapter, or section.</p>
+      <h4>💡 Search Tips</h4>
+      <div class="search-examples">
+        <button class="search-example" onclick="searchExample('Genesis')">Genesis</button>
+        <button class="search-example" onclick="searchExample('Moses')">Moses</button>
+        <button class="search-example" onclick="searchExample('Gospels')">Gospels</button>
+        <button class="search-example" onclick="searchExample('Psalms')">Psalms</button>
+      </div>
+      <p>Try searching for books, characters, or topics. Our search will help identify the type of content you're looking for.</p>
+    </div>
+    
+    <div class="error-report">
+      <details>
+        <summary>Report this issue</summary>
+        <div class="error-details">
+          <p><strong>URL:</strong> <code id="currentUrl"></code></p>
+          <p><strong>Referrer:</strong> <code id="referrer"></code></p>
+          <p>If you believe this page should exist, please <a href="https://github.com/anthropics/claude-code/issues" target="_blank" rel="noopener">report it as an issue</a>.</p>
+        </div>
+      </details>
     </div>
   </div>
 </div>
+
+<script>
+  // Focus search functionality
+  function focusSearch() {
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+      searchInput.focus();
+      searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+  
+  // Search examples
+  function searchExample(query) {
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+      searchInput.value = query;
+      searchInput.focus();
+      searchInput.dispatchEvent(new Event('input'));
+      searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+  
+  // Fill error details
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('currentUrl').textContent = window.location.href;
+    document.getElementById('referrer').textContent = document.referrer || 'Direct navigation';
+    
+    // Track 404 page view
+    if (window.telemetry) {
+      window.telemetry.recordPageView('/404', '404 Error', {
+        requestedUrl: window.location.pathname,
+        referrer: document.referrer
+      });
+    }
+  });
+</script>

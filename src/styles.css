@@ -121,6 +121,104 @@ body {
   min-height: 100vh;
 }
 
+/* Breadcrumb Navigation */
+.breadcrumb-nav {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.breadcrumb-link {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.breadcrumb-link:hover {
+  background: var(--accent-light);
+  color: var(--accent-dark);
+}
+
+.breadcrumb-current {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--text);
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+}
+
+.breadcrumb-icon {
+  font-size: 0.875rem;
+}
+
+.breadcrumb-separator {
+  color: var(--muted);
+  margin: 0 0.25rem;
+  font-weight: 300;
+}
+
+/* Responsive breadcrumbs */
+@media (max-width: 768px) {
+  .breadcrumb-nav {
+    padding: 0.375rem 0;
+  }
+  
+  .breadcrumb-list {
+    padding: 0 1rem;
+  }
+  
+  .breadcrumb-item {
+    font-size: 0.8125rem;
+  }
+  
+  .breadcrumb-link,
+  .breadcrumb-current {
+    padding: 0.1875rem 0.375rem;
+  }
+}
+
+/* Hide breadcrumb text on very small screens, keep icons */
+@media (max-width: 480px) {
+  .breadcrumb-link span:not(.breadcrumb-icon),
+  .breadcrumb-current span:not(.breadcrumb-icon) {
+    display: none;
+  }
+  
+  .breadcrumb-icon {
+    font-size: 1rem;
+  }
+  
+  .breadcrumb-separator {
+    margin: 0 0.125rem;
+  }
+}
+
 a { 
   color: var(--link); 
   text-decoration: none; 
@@ -406,12 +504,80 @@ a:hover {
   transition: background 0.2s ease;
 }
 .table td:first-child {
-  width: 90px;
+  width: 140px;
   font-weight: 700;
   color: var(--accent);
   font-size: 1.1rem;
   text-align: center;
   background: rgba(106, 169, 255, 0.08);
+}
+
+/* Chapter Navigation */
+.chapter-navigation-info {
+  background: var(--accent-light);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.chapter-navigation-info p {
+  margin: 0;
+  color: var(--text);
+}
+
+.chapter-number {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.chapter-nav-buttons {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.chapter-nav-btn {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.chapter-nav-btn:hover {
+  background: var(--accent-light);
+  color: var(--accent-dark);
+  border-color: var(--accent);
+}
+
+.chapter-nav-btn.prev {
+  background: var(--bg-tertiary);
+}
+
+.chapter-nav-btn.next {
+  background: var(--bg-tertiary);
+}
+
+.chapter-highlight {
+  background: var(--accent-light) !important;
+  transition: background-color 0.3s ease;
+}
+
+.chapter-highlight td {
+  animation: highlight-pulse 2s ease-out;
+}
+
+@keyframes highlight-pulse {
+  0% { background: var(--accent-light); }
+  50% { background: var(--accent); }
+  100% { background: var(--accent-light); }
 }
 .table td:nth-child(2) {
   line-height: 1.6;
@@ -519,6 +685,29 @@ a:hover {
   font-weight: 400;
 }
 
+.search-shortcut-hint {
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  pointer-events: none;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+  font-family: ui-monospace, 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  z-index: 10;
+}
+
+.search-input:focus ~ .search-shortcut-hint,
+.search-input:not(:placeholder-shown) ~ .search-shortcut-hint {
+  opacity: 0;
+}
+
 .search-icon {
   position: absolute;
   left: 1.2rem;
@@ -612,10 +801,72 @@ a:hover {
   border: 1px solid rgba(106, 169, 255, 0.3);
 }
 
+/* Gospel theme search result styling */
+.search-result-item[data-type="gospel-theme"] .search-result-type {
+  background: var(--success-light);
+  color: var(--success);
+  border-color: var(--success);
+}
+
+.search-result-item[data-type="gospel-theme"]::before {
+  background: var(--gradient-tertiary);
+}
+
 .search-result-snippet {
   font-size: 0.85rem;
   color: var(--muted);
   line-height: 1.4;
+}
+
+/* Search loading states */
+.search-box.searching .search-icon {
+  animation: search-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes search-pulse {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+.search-loading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  border-radius: 18px;
+}
+
+.search-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.no-results {
+  text-align: center;
+  padding: 2rem 1.5rem !important;
+  color: var(--text-secondary);
+}
+
+.no-results-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.5;
+}
+
+.search-suggestion {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
 }
 
 .search-highlight {
@@ -623,6 +874,213 @@ a:hover {
   color: var(--text);
   padding: 0.1rem 0.2rem;
   border-radius: 3px;
+}
+
+/* Enhanced 404 Page */
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 2rem 0;
+}
+
+.error-content {
+  text-align: center;
+  max-width: 600px;
+  padding: 2rem;
+}
+
+.error-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.error-content h1 {
+  font-size: 2.5rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.error-message {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.error-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.error-action-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  font-size: 1rem;
+}
+
+.error-action-btn.primary {
+  background: var(--accent);
+  color: white;
+}
+
+.error-action-btn.primary:hover {
+  background: var(--accent-dark);
+  transform: translateY(-1px);
+}
+
+.error-action-btn.secondary {
+  background: var(--bg-tertiary);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.error-action-btn.secondary:hover {
+  background: var(--accent-light);
+  border-color: var(--accent);
+  color: var(--accent-dark);
+}
+
+.error-suggestions {
+  margin-bottom: 3rem;
+}
+
+.error-suggestions h3 {
+  color: var(--text);
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.suggestions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.suggestion-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.suggestion-card:hover {
+  background: var(--accent-light);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.suggestion-icon {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.suggestion-text {
+  text-align: left;
+}
+
+.suggestion-text strong {
+  display: block;
+  color: var(--text);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.suggestion-text span {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.search-help {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.search-help h4 {
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.search-examples {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.search-example {
+  background: var(--accent-light);
+  color: var(--accent-dark);
+  border: 1px solid var(--accent);
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.search-example:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.error-report {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.error-report details {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.error-report summary {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.error-details {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.error-details code {
+  background: var(--bg);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: var(--text);
+  word-break: break-all;
 }
 
 .footer { 
@@ -1068,6 +1526,151 @@ a:hover {
   margin: 0 auto;
 }
 
+/* Gospel Insight Section for Character Pages */
+.gospel-insight-section {
+  margin-bottom: 3rem;
+}
+
+.gospel-insight-section h2 {
+  color: var(--accent);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gospel-insight-card {
+  background: linear-gradient(135deg, var(--card) 0%, var(--bg-tertiary) 100%);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.gospel-insight-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-primary);
+}
+
+.insight-main h3 {
+  color: var(--accent-dark);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.gospel-connection {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: var(--accent-light);
+  border-radius: 12px;
+  border-left: 4px solid var(--accent);
+}
+
+.christ-connection,
+.key-insights,
+.supporting-verses,
+.theological-significance {
+  margin-bottom: 1.5rem;
+}
+
+.christ-connection h4,
+.key-insights h4,
+.supporting-verses h4,
+.theological-significance h4 {
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.christ-connection h4::before {
+  content: '✝️';
+  font-size: 1rem;
+}
+
+.key-insights h4::before {
+  content: '💡';
+  font-size: 1rem;
+}
+
+.supporting-verses h4::before {
+  content: '📖';
+  font-size: 1rem;
+}
+
+.theological-significance h4::before {
+  content: '⭐';
+  font-size: 1rem;
+}
+
+.christ-connection p,
+.theological-significance p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.key-insights ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.key-insights li {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.key-insights li::before {
+  content: '→';
+  color: var(--accent);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.verse-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.verse-tag {
+  background: var(--success-light);
+  color: var(--success);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+
+[data-theme="dark"] .verse-tag {
+  background: var(--success-light);
+  color: var(--success);
+  border-color: var(--success);
+}
+
 .appearances-section h2 {
   color: #2c3e50;
   margin: 2rem 0 1rem 0;
@@ -1402,6 +2005,417 @@ a:hover {
   .character-card:hover {
     transform: none;
   }
+}
+
+/* Gospel Thread Styling */
+.gospel-thread-header {
+  text-align: center;
+  padding: 2rem 0 3rem 0;
+  background: linear-gradient(135deg, var(--accent-light) 0%, var(--bg) 100%);
+  border-radius: 24px;
+  margin-bottom: 3rem;
+}
+
+.gospel-thread-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: var(--gradient-primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gospel-verse {
+  max-width: 600px;
+  margin: 2rem auto 0;
+  padding: 1.5rem;
+  background: var(--card);
+  border-radius: 16px;
+  border-left: 4px solid var(--accent);
+}
+
+.gospel-verse blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.gospel-verse cite {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.section-description {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gospel-themes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.gospel-theme-card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.gospel-theme-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: var(--gradient-primary);
+  opacity: 0.8;
+}
+
+.gospel-theme-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px var(--shadow-lg);
+  border-color: var(--accent);
+}
+
+.gospel-theme-card h3 {
+  color: var(--accent);
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.theme-description {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.theme-connection {
+  background: var(--bg-secondary);
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.theme-connection strong {
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.key-verses h4 {
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.key-verses ul {
+  list-style: none;
+  padding: 0;
+}
+
+.key-verses li {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  padding: 0.25rem 0;
+  border-left: 2px solid var(--accent-light);
+  padding-left: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Timeline Styling */
+.revelation-timeline {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.revelation-timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--gradient-primary);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 60px;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 11px;
+  top: 8px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--bg);
+  box-shadow: 0 0 0 3px var(--accent-light);
+}
+
+.timeline-content {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  box-shadow: 0 4px 15px var(--shadow);
+  border-color: var(--accent);
+}
+
+.timeline-content h3 {
+  color: var(--text);
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.timeline-books {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-book {
+  background: var(--accent-light);
+  color: var(--accent);
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.revelation-text {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.gospel-advancement {
+  background: var(--success-light);
+  padding: 1rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--success);
+}
+
+.gospel-advancement strong {
+  color: var(--success);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Types and Shadows */
+.types-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.christ-type-card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.christ-type-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--shadow);
+  border-color: var(--accent);
+}
+
+.type-header {
+  margin-bottom: 1rem;
+}
+
+.book-reference {
+  background: var(--accent);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.type-header h4 {
+  color: var(--text);
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+
+.type-description {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.type-fulfillment {
+  background: var(--bg-secondary);
+  padding: 1rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--accent);
+}
+
+.type-fulfillment strong {
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Gospel Books Grid */
+.gospel-books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.gospel-book-card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.gospel-book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px var(--shadow-lg);
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+.book-header h3 {
+  color: var(--text);
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.book-themes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.theme-tag {
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.theme-creation { background: var(--success-light); color: var(--success); }
+.theme-fall { background: var(--warning-light); color: var(--warning); }
+.theme-promise { background: var(--accent-light); color: var(--accent); }
+.theme-sacrifice { background: #fef2f2; color: #dc2626; }
+.theme-kingship { background: #f3e8ff; color: #7c3aed; }
+.theme-newcovenant { background: #ecfdf5; color: #059669; }
+
+.book-connections {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.book-connections p {
+  margin-bottom: 0.5rem;
+}
+
+/* Gospel Call Section */
+.gospel-call-section {
+  background: linear-gradient(135deg, var(--accent-light) 0%, var(--bg) 100%);
+  border-radius: 24px;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.gospel-call-content h2 {
+  color: var(--accent);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.gospel-summary {
+  font-size: 1.2rem;
+  color: var(--text);
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gospel-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.gospel-point {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+}
+
+.gospel-point h4 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.gospel-point p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.gospel-invitation {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+}
+
+.gospel-invitation h3 {
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.gospel-prayer {
+  text-align: center;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin-top: 1rem;
 }
 
 /* Legacy mobile styles */

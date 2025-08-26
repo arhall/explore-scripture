@@ -26,6 +26,51 @@ eleventyComputed:
 </div>
 
 <div class="character-content">
+  {% set gospelInsight = characterGospelInsights[character.slug] %}
+  {% if gospelInsight %}
+  <div class="gospel-insight-section">
+    <h2>🧵 Gospel Connection</h2>
+    <div class="gospel-insight-card">
+      <div class="insight-main">
+        <h3>{{ gospelInsight.type | replace("-", " ") | title }}</h3>
+        <p class="gospel-connection">{{ gospelInsight.gospelConnection }}</p>
+        
+        <div class="christ-connection">
+          <h4>How {{ character.name }} Points to Christ</h4>
+          <p>{{ gospelInsight.christConnection }}</p>
+        </div>
+        
+        {% if gospelInsight.keyInsights %}
+        <div class="key-insights">
+          <h4>Key Gospel Insights</h4>
+          <ul>
+            {% for insight in gospelInsight.keyInsights %}
+            <li>{{ insight }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+        
+        {% if gospelInsight.verses %}
+        <div class="supporting-verses">
+          <h4>Supporting Scripture</h4>
+          <div class="verse-tags">
+            {% for verse in gospelInsight.verses %}
+            <span class="verse-tag">{{ verse }}</span>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+        
+        <div class="theological-significance">
+          <h4>Theological Significance</h4>
+          <p>{{ gospelInsight.significance }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
   <div class="appearances-section">
     <h2>Scripture Appearances</h2>
     <div class="appearances-list">

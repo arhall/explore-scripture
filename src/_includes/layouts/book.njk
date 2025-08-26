@@ -43,14 +43,33 @@ layout: base.njk
 
 {% if book.chapterSummaries and (book.chapterSummaries | length) > 0 %}
   <h2>Chapter Summaries</h2>
+  <div class="chapter-navigation-info">
+    <p>💡 <strong>Tip:</strong> Click on any chapter number to jump to it, or use the navigation buttons to move between chapters</p>
+  </div>
   <table class="table">
     <thead>
       <tr><th>Chapter</th><th>Summary</th><th>Commentary</th></tr>
     </thead>
     <tbody>
       {% for ch, sum in book.chapterSummaries | chapterSort %}
-        <tr>
-          <td>{{ ch }}</td>
+        <tr id="chapter-{{ ch }}">
+          <td>
+            <span class="chapter-number">{{ ch }}</span>
+            <div class="chapter-nav-buttons">
+              {% set prevChapter = (ch | int) - 1 %}
+              {% set nextChapter = (ch | int) + 1 %}
+              {% if prevChapter > 0 and book.chapterSummaries[prevChapter] %}
+                <button class="chapter-nav-btn prev" onclick="scrollToChapter({{ prevChapter }})" title="Previous Chapter">
+                  ← {{ prevChapter }}
+                </button>
+              {% endif %}
+              {% if book.chapterSummaries[nextChapter] %}
+                <button class="chapter-nav-btn next" onclick="scrollToChapter({{ nextChapter }})" title="Next Chapter">
+                  {{ nextChapter }} →
+                </button>
+              {% endif %}
+            </div>
+          </td>
           <td>{{ sum | safe }}</td>
           <td>
             <a href="{{ book.name | commentaryUrl(ch) }}" 
@@ -80,6 +99,82 @@ layout: base.njk
 </p>
 
 <script>
+  // Chapter navigation functionality
+  function scrollToChapter(chapterNumber) {
+    const element = document.getElementById('chapter-' + chapterNumber);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'center' 
+      });
+      
+      // Add highlight animation
+      element.classList.add('chapter-highlight');
+      setTimeout(() => {
+        element.classList.remove('chapter-highlight');
+      }, 2000);
+      
+      // Track navigation
+      if (window.telemetry) {
+        window.telemetry.recordNavigation('chapter-nav', window.location.href, {
+          book: '{{ book.slug }}',
+          fromChapter: 'current',
+          toChapter: chapterNumber
+        });
+      }
+    }
+  }
+  
+  // Keyboard navigation for chapters
+  document.addEventListener('keydown', function(e) {
+    // Only if not typing in an input
+    if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
+      return;
+    }
+    
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+      // Find current visible chapter and go to previous
+      const chapters = document.querySelectorAll('[id^="chapter-"]');
+      let currentChapter = null;
+      
+      chapters.forEach(chapter => {
+        const rect = chapter.getBoundingClientRect();
+        if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
+          currentChapter = chapter;
+        }
+      });
+      
+      if (currentChapter) {
+        const chapterNum = parseInt(currentChapter.id.split('-')[1]);
+        const prevBtn = currentChapter.querySelector('.chapter-nav-btn.prev');
+        if (prevBtn) {
+          scrollToChapter(chapterNum - 1);
+        }
+      }
+      e.preventDefault();
+    } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+      // Find current visible chapter and go to next
+      const chapters = document.querySelectorAll('[id^="chapter-"]');
+      let currentChapter = null;
+      
+      chapters.forEach(chapter => {
+        const rect = chapter.getBoundingClientRect();
+        if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
+          currentChapter = chapter;
+        }
+      });
+      
+      if (currentChapter) {
+        const chapterNum = parseInt(currentChapter.id.split('-')[1]);
+        const nextBtn = currentChapter.querySelector('.chapter-nav-btn.next');
+        if (nextBtn) {
+          scrollToChapter(chapterNum + 1);
+        }
+      }
+      e.preventDefault();
+    }
+  });
+
   // Video interaction tracking
   document.addEventListener('DOMContentLoaded', function() {
     const bookSlug = '{{ book.slug }}';

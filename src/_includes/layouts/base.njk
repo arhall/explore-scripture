@@ -28,6 +28,7 @@
       <div class="nav-links">
         <a href="/categories/" class="nav-link {% if page.url == '/categories/' %}active{% endif %}">Sections</a>
         <a href="/characters/" class="nav-link {% if page.url.startsWith('/characters/') %}active{% endif %}">Characters</a>
+        <a href="/gospel-thread/" class="nav-link {% if page.url == '/gospel-thread/' %}active{% endif %}">Gospel Thread</a>
         <a href="/links/" class="nav-link {% if page.url == '/links/' %}active{% endif %}">Links</a>
         <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
           <span class="theme-icon">🌙</span>
@@ -39,9 +40,12 @@
       <div class="search-box">
         <div class="search-icon">🔍</div>
         <input type="text" class="search-input" placeholder="Search books, chapters, or summaries..." id="searchInput">
+        <div class="search-shortcut-hint" id="searchShortcut">⌘K</div>
         <div class="search-results" id="searchResults"></div>
       </div>
     </div>
+    
+    {% include "components/breadcrumb.njk" %}
     
     {{ content | safe }}
     
@@ -61,6 +65,7 @@
         const books = {{ books | dump | safe }};
         const categories = {{ categories | dump | safe }};
         const characters = {{ characters | dump | safe }};
+        const gospelThreads = {{ gospelThreads | dump | safe }};
         
         if (!books || !Array.isArray(books)) {
           throw new Error('Books data is invalid or missing');
@@ -173,6 +178,20 @@
             }
           }
         });
+
+        // Add Gospel Thread themes
+        if (gospelThreads && gospelThreads.coreThemes) {
+          Object.entries(gospelThreads.coreThemes).forEach(([themeId, theme]) => {
+            searchData.push({
+              type: 'gospel-theme',
+              title: theme.name,
+              subtitle: `🧵 ${theme.description}`,
+              content: `${theme.name} ${theme.description} ${theme.gospelConnection} gospel christ jesus salvation`,
+              url: `/gospel-thread/#theme-${themeId}`,
+              typeLabel: 'Gospel Theme'
+            });
+          });
+        }
         
         if (window.logger) {
           window.logger.info('Search initialization completed', {
@@ -340,15 +359,50 @@
       return text.replace(regex, '<span class="search-highlight">$1</span>');
     }
 
+    // Show loading state
+    function showLoadingState() {
+      const resultsContainer = document.getElementById('searchResults');
+      const searchInput = document.getElementById('searchInput');
+      
+      // Add loading class to search box
+      const searchBox = searchInput.closest('.search-box');
+      searchBox.classList.add('searching');
+      
+      // Show loading spinner
+      resultsContainer.innerHTML = `
+        <div class="search-loading">
+          <div class="search-spinner"></div>
+          <span>Searching...</span>
+        </div>
+      `;
+      resultsContainer.style.display = 'block';
+    }
+    
+    // Hide loading state
+    function hideLoadingState() {
+      const searchInput = document.getElementById('searchInput');
+      const searchBox = searchInput.closest('.search-box');
+      searchBox.classList.remove('searching');
+    }
+
     // Display search results
     function displayResults(results, query) {
       const resultsContainer = document.getElementById('searchResults');
       
+      // Hide loading state
+      hideLoadingState();
+      
       if (results.length === 0) {
-        resultsContainer.innerHTML = '<div class="search-result-item">No results found</div>';
+        resultsContainer.innerHTML = `
+          <div class="search-result-item no-results">
+            <div class="no-results-icon">🔍</div>
+            <div>No results found for "${query}"</div>
+            <div class="search-suggestion">Try searching for book names, characters, or topics</div>
+          </div>
+        `;
       } else {
         resultsContainer.innerHTML = results.map(result => `
-          <div class="search-result-item" onclick="handleSearchResultClick('${result.url}', '${result.type}', '${result.title.replace(/'/g, "\\'")}')">
+          <div class="search-result-item" data-type="${result.type}" onclick="handleSearchResultClick('${result.url}', '${result.type}', '${result.title.replace(/'/g, "\\'")}')">
             <div class="search-result-header">
               <div class="search-result-title">${highlightText(result.title, query)}</div>
               <div class="search-result-type">${result.typeLabel || result.type}</div>
@@ -439,6 +493,11 @@
     document.addEventListener('DOMContentLoaded', function() {
       initializeSearch();
       
+      // Update keyboard shortcut hint based on platform
+      const shortcutHint = document.getElementById('searchShortcut');
+      const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+      shortcutHint.textContent = isMac ? '⌘K' : 'Ctrl+K';
+      
       const searchInput = document.getElementById('searchInput');
       const searchResults = document.getElementById('searchResults');
       
@@ -446,10 +505,27 @@
         const query = this.value.trim();
         
         clearTimeout(searchTimeout);
-        searchTimeout = setTimeout(() => {
-          const results = performSearch(query);
-          displayResults(results, query);
-        }, 300);
+        
+        if (query.length > 1) {
+          // Show loading state immediately for longer queries
+          showLoadingState();
+          
+          searchTimeout = setTimeout(() => {
+            const results = performSearch(query);
+            displayResults(results, query);
+          }, 300);
+        } else if (query.length === 0) {
+          // Hide results if query is empty
+          const searchResults = document.getElementById('searchResults');
+          searchResults.style.display = 'none';
+          hideLoadingState();
+        } else {
+          // For single character, just set a shorter timeout
+          searchTimeout = setTimeout(() => {
+            const results = performSearch(query);
+            displayResults(results, query);
+          }, 150);
+        }
       });
       
       // Hide results when clicking outside
@@ -467,7 +543,37 @@
         }
       });
       
-      // Keyboard navigation
+      // Global keyboard shortcuts
+      document.addEventListener('keydown', function(e) {
+        // Cmd/Ctrl + K to focus search
+        if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+          e.preventDefault();
+          searchInput.focus();
+          searchInput.select();
+          
+          // Track shortcut usage
+          if (window.telemetry) {
+            window.telemetry.recordUserAction('keyboard-shortcut', 'search-focus', {
+              shortcut: (e.metaKey ? 'Cmd' : 'Ctrl') + '+K'
+            });
+          }
+        }
+        
+        // / to focus search (like GitHub)
+        if (e.key === '/' && !e.target.closest('input, textarea, [contenteditable]')) {
+          e.preventDefault();
+          searchInput.focus();
+          
+          // Track shortcut usage
+          if (window.telemetry) {
+            window.telemetry.recordUserAction('keyboard-shortcut', 'search-focus', {
+              shortcut: '/'
+            });
+          }
+        }
+      });
+      
+      // Keyboard navigation within search results
       searchInput.addEventListener('keydown', function(e) {
         const items = searchResults.querySelectorAll('.search-result-item');
         const selected = searchResults.querySelector('.search-result-item.selected');
@@ -495,6 +601,10 @@
           if (selected) {
             selected.click();
           }
+        } else if (e.key === 'Escape') {
+          searchResults.style.display = 'none';
+          hideLoadingState();
+          this.blur();
         }
       });
     });
