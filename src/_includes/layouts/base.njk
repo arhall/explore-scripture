@@ -305,6 +305,44 @@
       }
     }
 
+    // Generate autocomplete suggestions
+    function generateAutocomplete(query) {
+      if (!query || query.length < 1) return [];
+      
+      const suggestions = [];
+      const queryLower = query.toLowerCase();
+      
+      // Extract common search patterns and suggest completions
+      const commonTerms = {
+        books: ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy', 'Joshua', 'Judges', 'Ruth', 'Samuel', 'Kings', 'Chronicles', 'Ezra', 'Nehemiah', 'Esther', 'Job', 'Psalms', 'Proverbs', 'Ecclesiastes', 'Isaiah', 'Jeremiah', 'Ezekiel', 'Daniel', 'Matthew', 'Mark', 'Luke', 'John', 'Acts', 'Romans', 'Corinthians', 'Galatians', 'Ephesians', 'Philippians', 'Colossians', 'Thessalonians', 'Timothy', 'Titus', 'Philemon', 'Hebrews', 'James', 'Peter', 'Revelation'],
+        characters: ['Abraham', 'Moses', 'David', 'Solomon', 'Jesus', 'Paul', 'Peter', 'John', 'Mary', 'Joseph', 'Daniel', 'Noah', 'Isaac', 'Jacob', 'Joshua', 'Samuel', 'Elijah', 'Elisha', 'Isaiah', 'Jeremiah', 'Ezekiel'],
+        topics: ['salvation', 'faith', 'love', 'grace', 'mercy', 'kingdom', 'covenant', 'prophecy', 'redemption', 'forgiveness', 'resurrection', 'cross', 'temple', 'sacrifice'],
+        categories: ['Law', 'History', 'Poetry', 'Prophets', 'Gospels', 'Letters', 'Revelation']
+      };
+      
+      // Find matching suggestions
+      Object.entries(commonTerms).forEach(([category, terms]) => {
+        terms.forEach(term => {
+          if (term.toLowerCase().startsWith(queryLower) && term.toLowerCase() !== queryLower) {
+            suggestions.push({
+              type: 'suggestion',
+              query: term,
+              category: category,
+              icon: category === 'books' ? '📖' : category === 'characters' ? '👤' : category === 'topics' ? '💡' : '📚'
+            });
+          }
+        });
+      });
+      
+      // Limit to 5 suggestions, prioritize books and characters
+      return suggestions
+        .sort((a, b) => {
+          const order = { books: 1, characters: 2, topics: 3, categories: 4 };
+          return order[a.category] - order[b.category];
+        })
+        .slice(0, 5);
+    }
+
     // Calculate relevance score
     function calculateRelevance(item, query) {
       const content = item.content.toLowerCase();
@@ -385,23 +423,18 @@
       searchBox.classList.remove('searching');
     }
 
-    // Display search results
+    // Display search results with autocomplete
     function displayResults(results, query) {
       const resultsContainer = document.getElementById('searchResults');
       
       // Hide loading state
       hideLoadingState();
       
-      if (results.length === 0) {
-        resultsContainer.innerHTML = `
-          <div class="search-result-item no-results">
-            <div class="no-results-icon">🔍</div>
-            <div>No results found for "${query}"</div>
-            <div class="search-suggestion">Try searching for book names, characters, or topics</div>
-          </div>
-        `;
-      } else {
-        resultsContainer.innerHTML = results.map(result => `
+      let html = '';
+      
+      // Show search results first
+      if (results.length > 0) {
+        html += results.map(result => `
           <div class="search-result-item" data-type="${result.type}" onclick="handleSearchResultClick('${result.url}', '${result.type}', '${result.title.replace(/'/g, "\\'")}')">
             <div class="search-result-header">
               <div class="search-result-title">${highlightText(result.title, query)}</div>
@@ -412,7 +445,56 @@
         `).join('');
       }
       
-      resultsContainer.style.display = results.length > 0 || query.length > 1 ? 'block' : 'none';
+      // Add autocomplete suggestions if query is short or results are few
+      const suggestions = generateAutocomplete(query);
+      if (suggestions.length > 0 && (results.length < 3 || query.length < 3)) {
+        if (results.length > 0) {
+          html += '<div class="search-separator">Suggestions</div>';
+        }
+        
+        html += suggestions.map(suggestion => `
+          <div class="search-suggestion-item" onclick="selectSuggestion('${suggestion.query}')">
+            <div class="suggestion-icon">${suggestion.icon}</div>
+            <div class="suggestion-text">
+              <span class="suggestion-query">${highlightText(suggestion.query, query)}</span>
+              <span class="suggestion-category">${suggestion.category}</span>
+            </div>
+          </div>
+        `).join('');
+      }
+      
+      // Show no results message if nothing found
+      if (results.length === 0 && suggestions.length === 0) {
+        html = `
+          <div class="search-result-item no-results">
+            <div class="no-results-icon">🔍</div>
+            <div>No results found for "${query}"</div>
+            <div class="search-suggestion">Try searching for book names, characters, or topics</div>
+          </div>
+        `;
+      }
+      
+      resultsContainer.innerHTML = html;
+      resultsContainer.style.display = html ? 'block' : 'none';
+    }
+    
+    // Handle suggestion selection
+    function selectSuggestion(query) {
+      const searchInput = document.getElementById('searchInput');
+      searchInput.value = query;
+      searchInput.focus();
+      
+      // Trigger search
+      const results = performSearch(query);
+      displayResults(results, query);
+      
+      // Track suggestion usage
+      if (window.telemetry) {
+        window.telemetry.recordUserAction('search-suggestion-select', query, {
+          original_query: searchInput.value,
+          suggested_query: query
+        });
+      }
     }
 
     // Handle search result clicks
@@ -506,25 +588,25 @@
         
         clearTimeout(searchTimeout);
         
-        if (query.length > 1) {
+        if (query.length === 0) {
+          // Hide results if query is empty
+          const searchResults = document.getElementById('searchResults');
+          searchResults.style.display = 'none';
+          hideLoadingState();
+        } else if (query.length === 1) {
+          // Show immediate autocomplete suggestions for single character
+          const suggestions = generateAutocomplete(query);
+          if (suggestions.length > 0) {
+            displayResults([], query);
+          }
+        } else if (query.length >= 2) {
           // Show loading state immediately for longer queries
           showLoadingState();
           
           searchTimeout = setTimeout(() => {
             const results = performSearch(query);
             displayResults(results, query);
-          }, 300);
-        } else if (query.length === 0) {
-          // Hide results if query is empty
-          const searchResults = document.getElementById('searchResults');
-          searchResults.style.display = 'none';
-          hideLoadingState();
-        } else {
-          // For single character, just set a shorter timeout
-          searchTimeout = setTimeout(() => {
-            const results = performSearch(query);
-            displayResults(results, query);
-          }, 150);
+          }, query.length === 2 ? 200 : 300);
         }
       });
       
@@ -573,10 +655,10 @@
         }
       });
       
-      // Keyboard navigation within search results
+      // Keyboard navigation within search results and suggestions
       searchInput.addEventListener('keydown', function(e) {
-        const items = searchResults.querySelectorAll('.search-result-item');
-        const selected = searchResults.querySelector('.search-result-item.selected');
+        const items = searchResults.querySelectorAll('.search-result-item, .search-suggestion-item');
+        const selected = searchResults.querySelector('.search-result-item.selected, .search-suggestion-item.selected');
         
         if (e.key === 'ArrowDown') {
           e.preventDefault();
@@ -605,6 +687,17 @@
           searchResults.style.display = 'none';
           hideLoadingState();
           this.blur();
+        } else if (e.key === 'Tab' && selected && selected.classList.contains('search-suggestion-item')) {
+          e.preventDefault();
+          // Auto-complete with Tab on suggestion
+          const suggestionQuery = selected.querySelector('.suggestion-query').textContent;
+          this.value = suggestionQuery;
+          searchResults.style.display = 'none';
+          
+          // Track tab completion
+          if (window.telemetry) {
+            window.telemetry.recordUserAction('search-tab-complete', suggestionQuery);
+          }
         }
       });
     });
