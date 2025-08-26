@@ -42,3 +42,16 @@ logs
 # Temporary files
 .tmp/
 .temp/
+
+# Build logs and analysis
+build-logs/
+*.log
+coverage/
+
+# Compressed files
+*.gz
+*.bz2
+*.zip
+
+# Eleventy cache
+.eleventy.cache/

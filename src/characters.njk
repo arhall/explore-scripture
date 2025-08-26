@@ -1,12 +1,14 @@
 ---
-layout: base.njk
-title: Biblical Characters
-description: Explore biblical characters and discover where they appear throughout Scripture.
+layout: character.njk
+title: "{{ character.name }}"
+description: "Discover where {{ character.name }} appears throughout Scripture."
 pagination:
-  data: characters
+  data: charactersForPages
   size: 1
   alias: character
 permalink: "/characters/{{ character.slug }}/"
+eleventyComputed:
+  title: "{{ character.name }} - Biblical Character"
 ---
 
 <div class="character-header">

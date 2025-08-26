@@ -3,13 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "eleventy --serve",
+    "dev": "eleventy --serve --watch",
     "build": "eleventy",
-    "build:analyze": "eleventy && node build-logger.js",
-    "build:production": "eleventy && node build-logger.js",
-    "logs:analyze": "node build-logger.js"
+    "build:production": "NODE_ENV=production eleventy && npm run optimize",
+    "build:analyze": "eleventy && node scripts/build-logger.js",
+    "optimize": "npm run optimize:css && npm run optimize:html",
+    "optimize:css": "postcss src/styles.css --use cssnano --output _site/styles.css",
+    "optimize:html": "node scripts/compress-html.js",
+    "clean": "rm -rf _site",
+    "logs:analyze": "node scripts/build-logger.js"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-bundle": "^3.0.7",
+    "cssnano": "^7.1.1",
+    "html-minifier-terser": "^7.2.0",
+    "htmlnano": "^2.1.2",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "terser": "^5.43.1"
   }
 }

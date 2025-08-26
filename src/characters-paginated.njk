@@ -1,0 +1,93 @@
+---
+pagination:
+  data: characters
+  size: 100
+  alias: characterPage
+layout: base.njk
+permalink: "/characters/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% else %}{% endif %}"
+---
+
+<div class="header">
+  <h1>Biblical Characters</h1>
+  <p class="meta">{{ characters | length }} characters from across the Bible</p>
+</div>
+
+<div class="search-notice">
+  <p>💡 You can also search for characters using the search box above</p>
+</div>
+
+{% if pagination.pageNumber === 0 %}
+<div class="top-characters">
+  <h2>Most Frequently Mentioned</h2>
+  <div class="characters-grid">
+    {% for character in characters | limit(20) %}
+      <a href="/characters/{{ character.slug }}/" class="character-card featured">
+        <div class="character-name">{{ character.name }}</div>
+        <div class="character-stats">
+          <span class="appearance-count">{{ character.totalAppearances }} appearances</span>
+          <span class="book-count">{{ character.totalBooks }} books</span>
+        </div>
+        <div class="character-books">
+          {% for book in character.books | slice(0, 3) %}
+            <span class="book-preview">{{ book }}</span>
+          {% endfor %}
+          {% if character.books | length > 3 %}
+            <span class="book-more">+{{ character.books | length - 3 }} more</span>
+          {% endif %}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+  <h2>All Characters</h2>
+</div>
+{% endif %}
+
+<div class="characters-grid">
+  {% for character in characterPage %}
+    <a href="/characters/{{ character.slug }}/" class="character-card">
+      <div class="character-name">{{ character.name }}</div>
+      <div class="character-stats">
+        <span class="appearance-count">{{ character.totalAppearances }} {% if character.totalAppearances == 1 %}appearance{% else %}appearances{% endif %}</span>
+        <span class="book-count">{{ character.totalBooks }} {% if character.totalBooks == 1 %}book{% else %}books{% endif %}</span>
+      </div>
+      <div class="character-books">
+        {% for book in character.books | slice(0, 3) %}
+          <span class="book-preview">{{ book }}</span>
+        {% endfor %}
+        {% if character.books | length > 3 %}
+          <span class="book-more">+{{ character.books | length - 3 }} more</span>
+        {% endif %}
+      </div>
+    </a>
+  {% endfor %}
+</div>
+
+<!-- Pagination Navigation -->
+{% if pagination.totalPages > 1 %}
+<nav class="pagination" aria-label="Character pages">
+  <div class="pagination-info">
+    Page {{ pagination.pageNumber + 1 }} of {{ pagination.totalPages }} 
+    (showing characters {{ pagination.pageNumber * 100 + 1 }}-{{ (pagination.pageNumber + 1) * 100 | min(characters | length) }})
+  </div>
+  
+  <div class="pagination-links">
+    {% if pagination.href.previous %}
+      <a href="{{ pagination.href.previous }}" class="pagination-prev">← Previous</a>
+    {% endif %}
+    
+    {% for pageNum in range(0, pagination.totalPages) %}
+      {% if pageNum == pagination.pageNumber %}
+        <span class="pagination-current">{{ pageNum + 1 }}</span>
+      {% elif pageNum < 3 or pageNum > pagination.totalPages - 4 or (pageNum >= pagination.pageNumber - 2 and pageNum <= pagination.pageNumber + 2) %}
+        <a href="{% if pageNum == 0 %}/characters/{% else %}/characters/page-{{ pageNum + 1 }}/{% endif %}" class="pagination-link">{{ pageNum + 1 }}</a>
+      {% elif pageNum == 3 or pageNum == pagination.totalPages - 4 %}
+        <span class="pagination-ellipsis">…</span>
+      {% endif %}
+    {% endfor %}
+    
+    {% if pagination.href.next %}
+      <a href="{{ pagination.href.next }}" class="pagination-next">Next →</a>
+    {% endif %}
+  </div>
+</nav>
+{% endif %}
