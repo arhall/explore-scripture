@@ -1,0 +1,253 @@
+---
+layout: base-minimal.njk
+title: You're Offline - Bible Explorer
+description: You're currently offline. Some features may be limited.
+permalink: /offline/
+eleventyExcludeFromCollections: true
+---
+
+<div class="offline-page">
+  <div class="offline-content">
+    <div class="offline-icon">📖</div>
+    <h1>You're Offline</h1>
+    <p class="offline-message">
+      Don't worry! You can still access previously visited pages and bookmarked content.
+    </p>
+    
+    <div class="offline-features">
+      <h3>Available Offline:</h3>
+      <ul>
+        <li>📚 Recently viewed books and chapters</li>
+        <li>⭐ Your bookmarked pages</li>
+        <li>🔍 Search through cached content</li>
+        <li>🕒 Your browsing history</li>
+      </ul>
+    </div>
+    
+    <div class="offline-actions">
+      <button class="btn-primary" onclick="tryReconnect()">Try to Reconnect</button>
+      <a href="/" class="btn-secondary">Go to Homepage</a>
+      <button class="btn-secondary" onclick="showCachedContent()">View Cached Pages</button>
+    </div>
+    
+    <div class="cached-content-list" id="cachedContentList" style="display: none;">
+      <h3>Cached Content:</h3>
+      <div id="cachedPages">Loading...</div>
+    </div>
+    
+    <div class="connection-status" id="connectionStatus">
+      <div class="status-indicator offline" id="statusIndicator">●</div>
+      <span id="statusText">Offline</span>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Check online status
+  function updateConnectionStatus() {
+    const statusIndicator = document.getElementById('statusIndicator');
+    const statusText = document.getElementById('statusText');
+    
+    if (navigator.onLine) {
+      statusIndicator.className = 'status-indicator online';
+      statusText.textContent = 'Back Online!';
+      
+      // Show reconnect message
+      setTimeout(() => {
+        showReconnectMessage();
+      }, 1000);
+    } else {
+      statusIndicator.className = 'status-indicator offline';
+      statusText.textContent = 'Offline';
+    }
+  }
+  
+  function showReconnectMessage() {
+    const reconnectDiv = document.createElement('div');
+    reconnectDiv.className = 'reconnect-message';
+    reconnectDiv.innerHTML = `
+      <div class="reconnect-content">
+        <h3>🎉 You're back online!</h3>
+        <p>You can now access all features and fresh content.</p>
+        <button onclick="window.location.reload()" class="btn-primary">Refresh Page</button>
+        <button onclick="this.parentElement.parentElement.remove()" class="btn-secondary">Continue</button>
+      </div>
+    `;
+    document.body.appendChild(reconnectDiv);
+  }
+  
+  function tryReconnect() {
+    const btn = event.target;
+    btn.textContent = 'Checking...';
+    btn.disabled = true;
+    
+    // Simple connectivity test
+    fetch('/favicon.ico', { 
+      method: 'HEAD',
+      cache: 'no-cache'
+    })
+    .then(() => {
+      btn.textContent = '✓ Connected!';
+      btn.className = 'btn-success';
+      setTimeout(() => {
+        window.location.href = '/';
+      }, 1000);
+    })
+    .catch(() => {
+      btn.textContent = 'Still Offline';
+      btn.className = 'btn-warning';
+      setTimeout(() => {
+        btn.textContent = 'Try to Reconnect';
+        btn.className = 'btn-primary';
+        btn.disabled = false;
+      }, 2000);
+    });
+  }
+  
+  function showCachedContent() {
+    const cachedList = document.getElementById('cachedContentList');
+    const cachedPages = document.getElementById('cachedPages');
+    
+    if (cachedList.style.display === 'none') {
+      cachedList.style.display = 'block';
+      
+      // Get cached content from service worker
+      if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+        const messageChannel = new MessageChannel();
+        messageChannel.port1.onmessage = function(event) {
+          const { data } = event.data;
+          displayCachedPages(data.cachedUrls);
+        };
+        
+        navigator.serviceWorker.controller.postMessage({
+          type: 'GET_CACHE_STATUS'
+        }, [messageChannel.port2]);
+      } else {
+        // Fallback: show recent items and bookmarks from localStorage
+        displayLocalStorageContent();
+      }
+    } else {
+      cachedList.style.display = 'none';
+    }
+  }
+  
+  function displayCachedPages(urls) {
+    const cachedPages = document.getElementById('cachedPages');
+    
+    if (!urls || urls.length === 0) {
+      cachedPages.innerHTML = '<p>No cached pages found.</p>';
+      return;
+    }
+    
+    // Filter and format URLs
+    const pageUrls = urls
+      .filter(url => !url.includes('.css') && !url.includes('.js') && !url.includes('.svg'))
+      .slice(0, 20); // Limit to 20 items
+    
+    const html = pageUrls.map(url => {
+      const pathname = new URL(url).pathname;
+      const title = getPageTitle(pathname);
+      return `
+        <a href="${pathname}" class="cached-page-link">
+          <div class="cached-page-icon">${getPageIcon(pathname)}</div>
+          <div class="cached-page-title">${title}</div>
+          <div class="cached-page-url">${pathname}</div>
+        </a>
+      `;
+    }).join('');
+    
+    cachedPages.innerHTML = html || '<p>No cached pages found.</p>';
+  }
+  
+  function displayLocalStorageContent() {
+    const cachedPages = document.getElementById('cachedPages');
+    let content = [];
+    
+    // Get recent items
+    try {
+      const recent = JSON.parse(localStorage.getItem('recentItems') || '[]');
+      content = content.concat(recent.slice(0, 10));
+    } catch (e) {}
+    
+    // Get bookmarks
+    try {
+      const bookmarks = JSON.parse(localStorage.getItem('bookmarkedItems') || '[]');
+      content = content.concat(bookmarks.slice(0, 10));
+    } catch (e) {}
+    
+    if (content.length === 0) {
+      cachedPages.innerHTML = '<p>No cached content available. Visit some pages while online to access them offline.</p>';
+      return;
+    }
+    
+    // Remove duplicates
+    const uniqueContent = content.filter((item, index, self) => 
+      index === self.findIndex(i => i.url === item.url)
+    );
+    
+    const html = uniqueContent.map(item => `
+      <a href="${item.url}" class="cached-page-link">
+        <div class="cached-page-icon">${getPageIcon(item.url)}</div>
+        <div class="cached-page-title">${item.title}</div>
+        <div class="cached-page-type">${item.type}</div>
+      </a>
+    `).join('');
+    
+    cachedPages.innerHTML = html;
+  }
+  
+  function getPageTitle(pathname) {
+    if (pathname === '/') return 'Home';
+    if (pathname.startsWith('/books/')) return 'Book: ' + pathname.split('/')[2].replace(/-/g, ' ');
+    if (pathname.startsWith('/characters/')) return 'Character: ' + pathname.split('/')[2].replace(/-/g, ' ');
+    if (pathname.startsWith('/categories/')) return 'Category: ' + pathname.split('/')[2].replace(/-/g, ' ');
+    if (pathname === '/gospel-thread/') return 'Gospel Thread';
+    if (pathname === '/links/') return 'Links';
+    return pathname;
+  }
+  
+  function getPageIcon(pathname) {
+    if (pathname === '/') return '🏠';
+    if (pathname.startsWith('/books/')) return '📖';
+    if (pathname.startsWith('/characters/')) return '👤';
+    if (pathname.startsWith('/categories/')) return '📚';
+    if (pathname === '/gospel-thread/') return '🧵';
+    if (pathname === '/links/') return '🔗';
+    return '📄';
+  }
+  
+  // Listen for online/offline events
+  window.addEventListener('online', updateConnectionStatus);
+  window.addEventListener('offline', updateConnectionStatus);
+  
+  // Listen for service worker messages
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.addEventListener('message', event => {
+      if (event.data.type === 'BACK_ONLINE') {
+        updateConnectionStatus();
+      }
+    });
+  }
+  
+  // Initialize
+  document.addEventListener('DOMContentLoaded', function() {
+    updateConnectionStatus();
+    
+    // Auto-check connection every 30 seconds
+    setInterval(() => {
+      if (!navigator.onLine) {
+        // Try a connectivity check
+        fetch('/favicon.ico', { 
+          method: 'HEAD', 
+          cache: 'no-cache',
+          timeout: 5000
+        }).then(() => {
+          // We're actually online
+          updateConnectionStatus();
+        }).catch(() => {
+          // Still offline
+        });
+      }
+    }, 30000);
+  });
+</script>

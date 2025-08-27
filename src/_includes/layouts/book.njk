@@ -2,8 +2,14 @@
 layout: base.njk
 ---
 <div class="header">
-  <h1>{{ book.name }}</h1>
-  <span class="badge">{{ book.testament }}</span>
+  <div class="header-content">
+    <h1>{{ book.name }}</h1>
+    <span class="badge">{{ book.testament }}</span>
+  </div>
+  <button class="bookmark-btn" onclick="handleBookmarkClick()" title="Add bookmark">
+    <span class="bookmark-icon">☆</span>
+    <span class="bookmark-text">Bookmark</span>
+  </button>
 </div>
 
 <p class="meta">
@@ -42,9 +48,33 @@ layout: base.njk
 {% endif %}
 
 {% if book.chapterSummaries and (book.chapterSummaries | length) > 0 %}
+  {% set chapterCount = (book.chapterSummaries | length) %}
+  
+  {% if chapterCount >= 15 %}
+    <div class="table-of-contents">
+      <h3>Table of Contents</h3>
+      <div class="toc-toggle">
+        <button class="toc-toggle-btn" onclick="toggleTOC()" aria-label="Toggle table of contents">
+          <span class="toc-icon">📚</span> 
+          <span class="toc-text">Show all {{ chapterCount }} chapters</span>
+        </button>
+      </div>
+      <div class="toc-content" id="tocContent">
+        <div class="toc-grid">
+          {% for ch, sum in book.chapterSummaries | chapterSort %}
+            <a href="#chapter-{{ ch }}" class="toc-item" onclick="scrollToChapter({{ ch }}); closeTOC();" title="{{ sum | truncate(100) | striptags }}">
+              <span class="toc-chapter-num">{{ ch }}</span>
+              <span class="toc-chapter-preview">{{ sum | truncate(40) | striptags }}</span>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
   <h2>Chapter Summaries</h2>
   <div class="chapter-navigation-info">
-    <p>💡 <strong>Tip:</strong> Click on any chapter number to jump to it, or use the navigation buttons to move between chapters</p>
+    <p>💡 <strong>Tip:</strong> Click on any chapter number to jump to it, or use the navigation buttons to move between chapters{% if chapterCount >= 15 %} • Use the table of contents above for quick navigation{% endif %}</p>
   </div>
   <table class="table">
     <thead>
@@ -70,7 +100,10 @@ layout: base.njk
               {% endif %}
             </div>
           </td>
-          <td>{{ sum | safe }}</td>
+          <td>
+            <div class="chapter-summary-text">{{ sum | safe }}</div>
+            <div class="chapter-cross-references" id="crossRefs-{{ ch }}"></div>
+          </td>
           <td>
             <a href="{{ book.name | commentaryUrl(ch) }}" 
                target="_blank" 
@@ -99,6 +132,38 @@ layout: base.njk
 </p>
 
 <script>
+  // Table of contents functionality
+  function toggleTOC() {
+    const tocContent = document.getElementById('tocContent');
+    const tocText = document.querySelector('.toc-text');
+    const tocIcon = document.querySelector('.toc-icon');
+    const isVisible = tocContent.style.display === 'block';
+    
+    tocContent.style.display = isVisible ? 'none' : 'block';
+    tocText.textContent = isVisible ? 'Show all {{ (book.chapterSummaries | length) }} chapters' : 'Hide table of contents';
+    tocIcon.textContent = isVisible ? '📚' : '📖';
+    
+    // Track TOC usage
+    if (window.telemetry) {
+      window.telemetry.recordUserAction('toc-toggle', isVisible ? 'close' : 'open', {
+        book: '{{ book.slug }}',
+        chapterCount: {{ (book.chapterSummaries | length) }}
+      });
+    }
+  }
+  
+  function closeTOC() {
+    const tocContent = document.getElementById('tocContent');
+    const tocText = document.querySelector('.toc-text');
+    const tocIcon = document.querySelector('.toc-icon');
+    
+    if (tocContent.style.display === 'block') {
+      tocContent.style.display = 'none';
+      tocText.textContent = 'Show all {{ (book.chapterSummaries | length) }} chapters';
+      tocIcon.textContent = '📚';
+    }
+  }
+
   // Chapter navigation functionality
   function scrollToChapter(chapterNumber) {
     const element = document.getElementById('chapter-' + chapterNumber);
@@ -175,11 +240,166 @@ layout: base.njk
     }
   });
 
+  // Bookmark functionality for this book
+  function handleBookmarkClick() {
+    const pageData = {
+      url: window.location.pathname,
+      type: 'book',
+      title: '{{ book.name }}',
+      category: '{{ book.category }}',
+      testament: '{{ book.testament }}'
+    };
+    
+    const isBookmarked = toggleBookmark(pageData);
+    
+    // Show quick feedback
+    const bookmarkBtn = document.querySelector('.bookmark-btn');
+    if (bookmarkBtn) {
+      bookmarkBtn.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        bookmarkBtn.style.transform = 'scale(1)';
+      }, 150);
+    }
+  }
+
+  // Initialize cross-references for all chapters in this book
+  function initializeChapterCrossReferences() {
+    if (typeof getCrossReferencesForChapter === 'undefined') return;
+    
+    const bookSlug = '{{ book.slug }}';
+    const chapterRows = document.querySelectorAll('[id^="chapter-"]');
+    
+    chapterRows.forEach(row => {
+      const chapterNum = row.id.split('-')[1];
+      const crossRefsContainer = document.getElementById(`crossRefs-${chapterNum}`);
+      const summaryText = row.querySelector('.chapter-summary-text');
+      
+      if (crossRefsContainer && summaryText) {
+        // Process summary text for automatic cross-references
+        if (typeof processTextForCrossReferences === 'function') {
+          const originalText = summaryText.innerHTML;
+          const processedText = processTextForCrossReferences(originalText, bookSlug, chapterNum);
+          summaryText.innerHTML = processedText;
+        }
+        
+        // Get and display cross-references for this chapter
+        const crossRefs = getCrossReferencesForChapter(bookSlug, chapterNum);
+        if (crossRefs && crossRefs.length > 0) {
+          displayCrossReferences(crossRefsContainer, crossRefs);
+        }
+        
+        // Add thematic reference indicators
+        addThemeReferenceTooltips(summaryText);
+      }
+    });
+  }
+
+  function addThemeReferenceTooltips(container) {
+    const themeElements = container.querySelectorAll('.theme-reference');
+    themeElements.forEach(element => {
+      const theme = element.getAttribute('data-theme');
+      element.addEventListener('click', function(e) {
+        e.preventDefault();
+        showThematicReferences(theme, element);
+      });
+      
+      element.style.cursor = 'pointer';
+      element.style.textDecoration = 'underline';
+      element.style.textDecorationStyle = 'dotted';
+      element.style.color = 'var(--accent)';
+    });
+  }
+
+  function showThematicReferences(theme, triggerElement) {
+    if (typeof getThematicReferences === 'undefined') return;
+    
+    const themeRefs = getThematicReferences(theme);
+    if (themeRefs.length === 0) return;
+    
+    // Create and show popup with thematic references
+    const popup = document.createElement('div');
+    popup.className = 'theme-references-popup';
+    popup.innerHTML = `
+      <div class="theme-popup-header">
+        <h4>🔗 ${theme.charAt(0).toUpperCase() + theme.slice(1)} Theme</h4>
+        <button class="close-popup" onclick="this.parentElement.parentElement.remove()">✕</button>
+      </div>
+      <div class="theme-references-list">
+        ${themeRefs.slice(0, 8).map(ref => `
+          <a href="${ref.url}" class="theme-reference-item">
+            <div class="theme-ref-book">${ref.book.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())} ${ref.chapter}${ref.verse ? ':' + ref.verse : ''}</div>
+            <div class="theme-ref-text">${ref.text}</div>
+          </a>
+        `).join('')}
+      </div>
+    `;
+    
+    // Position popup near trigger element
+    document.body.appendChild(popup);
+    const rect = triggerElement.getBoundingClientRect();
+    popup.style.position = 'absolute';
+    popup.style.top = (rect.bottom + window.scrollY + 10) + 'px';
+    popup.style.left = Math.min(rect.left + window.scrollX, window.innerWidth - 320) + 'px';
+    popup.style.zIndex = '1000';
+    
+    // Auto-remove after delay or on click outside
+    setTimeout(() => {
+      if (popup.parentElement) popup.remove();
+    }, 10000);
+    
+    document.addEventListener('click', function(e) {
+      if (!popup.contains(e.target) && e.target !== triggerElement) {
+        popup.remove();
+      }
+    }, { once: true });
+    
+    // Track theme exploration
+    if (window.telemetry) {
+      window.telemetry.recordUserAction('theme-explore', theme, {
+        book: '{{ book.slug }}',
+        referencesShown: themeRefs.length
+      });
+    }
+  }
+
+  function toggleMoreReferences() {
+    const showMoreBtn = event.target;
+    const crossRefsList = showMoreBtn.previousElementSibling;
+    const hiddenRefs = crossRefsList.querySelectorAll('.cross-reference-item[style*="display: none"]');
+    
+    if (hiddenRefs.length > 0) {
+      hiddenRefs.forEach(ref => ref.style.display = 'block');
+      showMoreBtn.textContent = 'Show less';
+    } else {
+      const allRefs = crossRefsList.querySelectorAll('.cross-reference-item');
+      for (let i = 6; i < allRefs.length; i++) {
+        allRefs[i].style.display = 'none';
+      }
+      showMoreBtn.textContent = `Show ${allRefs.length - 6} more`;
+    }
+  }
+
   // Video interaction tracking
   document.addEventListener('DOMContentLoaded', function() {
     const bookSlug = '{{ book.slug }}';
     const bookName = '{{ book.name }}';
     const testament = '{{ book.testament }}';
+    
+    // Add this page to recent items
+    const pageData = {
+      url: window.location.pathname,
+      type: 'book',
+      title: bookName,
+      category: '{{ book.category }}',
+      testament: testament
+    };
+    addToRecentItems(pageData);
+    
+    // Update bookmark button state
+    updateBookmarkButton(isBookmarked(window.location.pathname));
+    
+    // Initialize cross-references for all chapters
+    initializeChapterCrossReferences();
     
     // Track video loads
     const videoIframes = document.querySelectorAll('.video-container iframe');
