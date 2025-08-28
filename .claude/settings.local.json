@@ -30,7 +30,9 @@
       "Bash(open http://localhost:8082/test-chapter-reader.html)",
       "WebFetch(domain:www.biblegateway.com)",
       "WebFetch(domain:iterm2colorschemes.com)",
-      "Read(/Users/andreenhall/repo/bible-static-site/src/**)"
+      "Read(/Users/andreenhall/repo/bible-static-site/src/**)",
+      "Bash(open http://localhost:8080/books/genesis/)",
+      "Bash(lsof:*)"
     ],
     "deny": [],
     "ask": []

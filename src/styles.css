@@ -5248,3 +5248,199 @@ h3 {
   color: var(--bg) !important;
   border-color: var(--accent) !important;
 }
+
+/* Chapter Reader Embedded View Button */
+.embedded-view-button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 12px;
+}
+
+.embedded-view-button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.embedded-view-button:active {
+  transform: translateY(0);
+}
+
+.embedded-view-button.loading {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.embedded-view-button.loading::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-left: 4px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Chapter Reader Loading State */
+.chapter-reader-content.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  opacity: 0.6;
+}
+
+.chapter-reader-content.loading::before {
+  content: 'Loading embedded chapter...';
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+/* BibleGateway Links Styling */
+.biblegateway-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.biblegateway-link:hover {
+  background: var(--accent-alpha-10);
+  text-decoration: none;
+}
+
+/* High contrast adjustments for new elements */
+.high-contrast .embedded-view-button {
+  background: var(--accent) !important;
+  color: var(--bg) !important;
+  border: 2px solid var(--accent) !important;
+}
+
+.high-contrast .embedded-view-button:hover {
+  background: var(--bg) !important;
+  color: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+
+.high-contrast .biblegateway-link {
+  color: var(--link) !important;
+  text-decoration: underline !important;
+}
+
+/* Commentary Actions Layout */
+.commentary-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.read-chapter-btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.read-chapter-btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.read-chapter-btn:active {
+  transform: translateY(0);
+}
+
+.commentary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.commentary-link:hover {
+  background: var(--accent-alpha-10);
+  color: var(--accent);
+  border-color: var(--accent-alpha-20);
+  text-decoration: none;
+}
+
+/* Mobile responsiveness for commentary actions */
+@media (max-width: 768px) {
+  .commentary-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .read-chapter-btn,
+  .commentary-link {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* High contrast adjustments for new elements */
+.high-contrast .read-chapter-btn {
+  background: var(--accent) !important;
+  color: var(--bg) !important;
+  border: 2px solid var(--accent) !important;
+}
+
+.high-contrast .read-chapter-btn:hover {
+  background: var(--bg) !important;
+  color: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+
+.high-contrast .commentary-link {
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+  background: var(--bg-secondary) !important;
+}
+
+.high-contrast .commentary-link:hover {
+  color: var(--accent) !important;
+  border-color: var(--accent) !important;
+  background: var(--bg) !important;
+}
+}

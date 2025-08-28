@@ -105,12 +105,19 @@ layout: base.njk
             <div class="chapter-cross-references" id="crossRefs-{{ ch }}"></div>
           </td>
           <td>
-            <a href="{{ book.name | commentaryUrl(ch) }}" 
-               target="_blank" 
-               class="commentary-link"
-               rel="noopener">
-              Enduring Word
-            </a>
+            <div class="commentary-actions">
+              <button class="read-chapter-btn" 
+                      onclick="openChapterReader('{{ book.name }} {{ ch }}', '{{ book.name }}', {{ ch }})"
+                      title="Read chapter with BibleGateway">
+                ▦ Read Chapter
+              </button>
+              <a href="{{ book.name | commentaryUrl(ch) }}" 
+                 target="_blank" 
+                 class="commentary-link"
+                 rel="noopener">
+                ◈ Commentary
+              </a>
+            </div>
           </td>
         </tr>
       {% endfor %}

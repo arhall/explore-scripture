@@ -1009,7 +1009,7 @@ class ChapterReader {
         <div class="chapter-reader-iframe-fallback">
           <p>If the Bible content doesn't load above, you can:</p>
           <a href="${url}" target="_blank" class="chapter-reader-external-link">
-            📖 Open ${chapterInfo.reference} on BibleGateway
+            ▦ Open ${chapterInfo.reference} on BibleGateway
           </a>
         </div>
       </div>
@@ -1034,10 +1034,13 @@ class ChapterReader {
           </div>
           <div class="chapter-reader-external-links">
             <a href="${bibleGatewayUrl}" target="_blank" class="biblegateway-link">
-              🔗 View on BibleGateway
+              ⧉ View on BibleGateway
             </a>
             <button class="cross-references-btn" onclick="window.chapterReaderInstance.showCrossReferences('${chapterInfo.reference}')">
-              📚 Cross References
+              ◈ Cross References
+            </button>
+            <button class="iframe-view-btn" onclick="window.chapterReaderInstance.switchToIframeView('${chapterInfo.reference}', '${chapterInfo.book}', ${chapterInfo.chapter})">
+              ▦ Embedded View
             </button>
           </div>
         </div>
@@ -1065,6 +1068,35 @@ class ChapterReader {
     });
   }
 
+
+  switchToIframeView(reference, book, chapter) {
+    // Switch the current modal content to iframe view
+    if (!this.currentModal) return;
+    
+    const contentDiv = this.currentModal.querySelector('.chapter-reader-content');
+    if (!contentDiv) return;
+    
+    const chapterInfo = { reference, book, chapter };
+    
+    // Show loading state
+    contentDiv.innerHTML = `
+      <div class="chapter-reader-loading">
+        <div class="loading-spinner"></div>
+        <p>Loading embedded view...</p>
+      </div>
+    `;
+    
+    // Add a small delay to show loading state, then load iframe
+    setTimeout(() => {
+      contentDiv.innerHTML = this.renderBibleGatewayIframe(chapterInfo);
+    }, 300);
+    
+    // Update modal header to indicate iframe view
+    const headerDiv = this.currentModal.querySelector('.chapter-reader-header h2');
+    if (headerDiv) {
+      headerDiv.textContent = `${reference} - Embedded View`;
+    }
+  }
 
   showCrossReferences(reference) {
     // Open BibleGateway in a new tab for cross-references

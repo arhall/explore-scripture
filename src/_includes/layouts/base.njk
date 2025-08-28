@@ -27,8 +27,10 @@
   <script src="/assets/debug-dashboard.js"></script>
   <!-- Scripture Widget -->
   <script src="/assets/scripture-widget.js"></script>
-  <!-- Chapter Reader -->
+  {% if layout == "book.njk" %}
+  <!-- Chapter Reader (loaded only on book pages) -->
   <script src="/assets/chapter-reader.js"></script>
+  {% endif %}
   <!-- Theme Manager -->
   <script src="/assets/theme-manager.js"></script>
 </head>
