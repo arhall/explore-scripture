@@ -1,10 +1,13 @@
 ---
 pagination:
-  data: characters
+  data: characters.characters
   size: 100
   alias: characterPage
 layout: base.njk
 permalink: "/characters/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% else %}{% endif %}"
+eleventyComputed:
+  allCharacters: "{{ characters.characters }}"
+  metadata: "{{ characters.metadata }}"
 ---
 
 <div class="characters-hero">
@@ -12,11 +15,11 @@ permalink: "/characters/{% if pagination.pageNumber > 0 %}page-{{ pagination.pag
     <span class="characters-badge-text">Complete Character Database</span>
   </div>
   <h1 class="characters-title">Biblical Characters</h1>
-  <p class="characters-description">Explore the lives and stories of {{ characters | length }} individuals who shaped the narrative of Scripture</p>
+  <p class="characters-description">Explore the lives and stories of {{ allCharacters | length }} individuals who shaped the narrative of Scripture</p>
   
   <div class="characters-stats">
     <div class="characters-stat">
-      <div class="stat-number">{{ characters | length }}</div>
+      <div class="stat-number">{{ allCharacters | length }}</div>
       <div class="stat-label">Characters</div>
       <div class="stat-sublabel">Documented</div>
     </div>
@@ -27,10 +30,44 @@ permalink: "/characters/{% if pagination.pageNumber > 0 %}page-{{ pagination.pag
     </div>
   </div>
   
-  <div class="search-enhancement">
-    <div class="search-tip">
-      <div class="search-tip-icon">⌕</div>
-      <p>Use the search above to quickly find any character by name or book reference</p>
+  <div class="character-search-section">
+    <div class="search-controls">
+      <div class="search-input-group">
+        <input type="text" id="character-search" placeholder="Search characters by name, book, or role..." class="search-input">
+        <button type="button" id="clear-filters" class="clear-button">Clear</button>
+      </div>
+      
+      <div class="search-filters">
+        <div class="filter-group">
+          <label for="testament-filter">Testament:</label>
+          <select id="testament-filter" class="filter-select">
+            <option value="all">All</option>
+            <option value="old">Old Testament</option>
+            <option value="new">New Testament</option>
+            <option value="both">Both Testaments</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="significance-filter">Significance:</label>
+          <select id="significance-filter" class="filter-select">
+            <option value="all">All</option>
+            <option value="major">Major</option>
+            <option value="prominent">Prominent</option>
+            <option value="notable">Notable</option>
+            <option value="minor">Minor</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="appearances-filter">Min Appearances: <span id="appearances-value">0</span></label>
+          <input type="range" id="appearances-filter" min="0" max="100" value="0" class="filter-slider">
+        </div>
+      </div>
+    </div>
+    
+    <div class="search-results-info">
+      <span id="results-count">{{ allCharacters | length }} characters available</span>
     </div>
   </div>
 </div>
@@ -46,7 +83,7 @@ permalink: "/characters/{% if pagination.pageNumber > 0 %}page-{{ pagination.pag
   </div>
   
   <div class="featured-characters-grid">
-    {% for character in characters | limit(12) %}
+    {% for character in allCharacters | limit(12) %}
       <a href="/characters/{{ character.slug }}/" class="character-card featured">
         <div class="character-badge">
           <span class="rank-indicator">{{ loop.index }}</span>
@@ -85,6 +122,9 @@ permalink: "/characters/{% if pagination.pageNumber > 0 %}page-{{ pagination.pag
   </div>
 </section>
 {% endif %}
+
+<!-- Search Results Container (initially hidden) -->
+<div id="search-results" class="characters-listing" style="display: none;"></div>
 
 <div class="characters-listing">
   {% for character in characterPage %}
@@ -135,7 +175,7 @@ permalink: "/characters/{% if pagination.pageNumber > 0 %}page-{{ pagination.pag
 <nav class="pagination" aria-label="Character pages">
   <div class="pagination-info">
     Page {{ pagination.pageNumber + 1 }} of {{ pagination.totalPages }} 
-    (showing characters {{ pagination.pageNumber * 100 + 1 }}-{{ (pagination.pageNumber + 1) * 100 | min(characters | length) }})
+    (showing characters {{ pagination.pageNumber * 100 + 1 }}-{{ (pagination.pageNumber + 1) * 100 | min(allCharacters | length) }})
   </div>
   
   <div class="pagination-links">
@@ -159,3 +199,14 @@ permalink: "/characters/{% if pagination.pageNumber > 0 %}page-{{ pagination.pag
   </div>
 </nav>
 {% endif %}
+
+<!-- Add character data for search -->
+<script>
+  window.charactersData = {
+    characters: {{ allCharacters | dump | safe }},
+    metadata: {{ metadata | dump | safe }}
+  };
+</script>
+
+<!-- Load search functionality -->
+<script src="/assets/character-search.js"></script>

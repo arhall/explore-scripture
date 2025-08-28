@@ -3,7 +3,7 @@ layout: character.njk
 title: "{{ character.name }}"
 description: "Discover where {{ character.name }} appears throughout Scripture."
 pagination:
-  data: characters
+  data: charactersForPages
   size: 1
   alias: character
 permalink: "/characters/{{ character.slug }}/"
@@ -13,6 +13,10 @@ eleventyComputed:
 
 <div class="character-header">
   <h1>{{ character.name }}</h1>
+  {% if character.characterType %}
+    <p class="character-type">{{ character.characterType }}</p>
+  {% endif %}
+  
   <div class="character-stats">
     <div class="stat">
       <div class="stat-number">{{ character.totalAppearances }}</div>
@@ -22,10 +26,149 @@ eleventyComputed:
       <div class="stat-number">{{ character.totalBooks }}</div>
       <div class="stat-label">{% if character.totalBooks == 1 %}Book{% else %}Books{% endif %}</div>
     </div>
+    {% if character.testament %}
+    <div class="stat">
+      <div class="stat-number">{{ character.testament }}</div>
+      <div class="stat-label">Testament</div>
+    </div>
+    {% endif %}
+    {% if character.significance %}
+    <div class="stat">
+      <div class="stat-number">{{ character.significance | title }}</div>
+      <div class="stat-label">Significance</div>
+    </div>
+    {% endif %}
   </div>
+
+  {% if character.thematicRole %}
+  <div class="thematic-role">
+    <h3>Character Focus</h3>
+    <p><em>"{{ character.thematicRole }}"</em></p>
+  </div>
+  {% endif %}
 </div>
 
 <div class="character-content">
+  {% if character.hasDetailedProfile or character.basicProfile %}
+  <div class="character-profile">
+    <h2>Character Portrait</h2>
+    {% if character.hasDetailedProfile %}
+    <div class="profile-note">
+      <em>"The sacred record, like a faithful mirror has no flattery in its portrait."</em>
+    </div>
+    {% endif %}
+
+    <div class="profile-grid">
+      {% if character.basicProfile %}
+      <section class="character-overview">
+        <h3>Biblical Overview</h3>
+        {% if character.basicProfile.role %}
+          <p><strong>Role:</strong> {{ character.basicProfile.role }}</p>
+        {% endif %}
+        {% if character.basicProfile.description %}
+          <p>{{ character.basicProfile.description }}</p>
+        {% endif %}
+        {% if character.basicProfile.biblicalSignificance %}
+          <p><strong>Significance:</strong> {{ character.basicProfile.biblicalSignificance }}</p>
+        {% endif %}
+        {% if character.basicProfile.contextualInsights %}
+          <div class="contextual-insights">
+            <strong>Biblical Context:</strong>
+            <ul>
+              {% for insight in character.basicProfile.contextualInsights %}
+                <li>{{ insight }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+      </section>
+      {% endif %}
+      {% if character.elementsOfPower %}
+      <section class="character-strengths">
+        <h3>Elements of Power and Success</h3>
+        <ul>
+          {% for element in character.elementsOfPower %}
+            <li>{{ element }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+      {% if character.weaknessesAndFailures %}
+      <section class="character-weaknesses">
+        <h3>Weaknesses and Failures</h3>
+        <ul>
+          {% for weakness in character.weaknessesAndFailures %}
+            <li>{{ weakness }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+      {% if character.victoriesOverDifficulties %}
+      <section class="character-victories">
+        <h3>Victories Over Difficulties</h3>
+        <ul>
+          {% for victory in character.victoriesOverDifficulties %}
+            <li>{{ victory }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+      {% if character.privilegesAbused %}
+      <section class="character-privileges">
+        <h3>Privileges Abused or Opportunities Neglected</h3>
+        <ul>
+          {% for privilege in character.privilegesAbused %}
+            <li>{{ privilege }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+      {% if character.relationshipToGod %}
+      <section class="character-relationship">
+        <h3>Relationship to God</h3>
+        <p>{{ character.relationshipToGod }}</p>
+      </section>
+      {% endif %}
+
+      {% if character.modernApplication %}
+      <section class="character-application">
+        <h3>Modern Application</h3>
+        <p>{{ character.modernApplication }}</p>
+      </section>
+      {% endif %}
+
+      {% if character.keyVerses %}
+      <section class="character-verses">
+        <h3>Key Verses</h3>
+        <div class="verse-tags">
+          {% for verse in character.keyVerses %}
+            <span class="verse-tag">{{ verse }}</span>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
+      {% if character.lifeEvents %}
+      <section class="character-life">
+        <h3>Life Details</h3>
+        {% if character.lifeEvents.birth %}
+          <p><strong>Birth:</strong> {{ character.lifeEvents.birth }}</p>
+        {% endif %}
+        {% if character.lifeEvents.death %}
+          <p><strong>Death:</strong> {{ character.lifeEvents.death }}</p>
+        {% endif %}
+        {% if character.lifeEvents.keyMoment %}
+          <p><strong>Key Moment:</strong> {{ character.lifeEvents.keyMoment }}</p>
+        {% endif %}
+      </section>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
   {% set gospelInsight = characterGospelInsights[character.slug] %}
   {% if gospelInsight %}
   <div class="gospel-insight-section">

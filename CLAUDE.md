@@ -38,9 +38,14 @@ The dev server runs Eleventy with `--serve` flag, providing live reload during d
 
 ### Template System (Nunjucks)
 - **Base Layout** (`src/_includes/layouts/base.njk`): Common HTML structure with navigation and footer
-- **Book Layout** (`src/_includes/layouts/book.njk`): Individual book pages with metadata display and chapter summary tables
+- **Book Layout** (`src/_includes/layouts/book.njk`): Individual book pages with metadata display, chapter summary tables, and "Read Chapter" buttons
 - **Category Layout** (`src/_includes/layouts/category.njk`): Lists books within each category
 - **Dynamic Page Generation**: Uses Eleventy pagination to generate individual pages for each book via `src/books.njk`
+
+### Interactive Features
+- **Chapter Reader** (`src/assets/chapter-reader.js`): Modal-based chapter reading with embedded BibleGateway iframes
+- **Scripture Widget** (`src/assets/scripture-widget.js`): Hover/tap Scripture references with verse previews
+- **Theme Manager** (`src/assets/theme-manager.js`): 24 professional color themes with dark mode support
 
 ### URL Structure
 - Home: `/` (lists categories and books)

@@ -25,8 +25,10 @@ module.exports = function(eleventyConfig) {
     return (str || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "");
   });
 
-  eleventyConfig.addFilter("limit", function(arr, limit) {
-    return arr.slice(0, limit);
+  eleventyConfig.addFilter("limit", function(data, limit) {
+    // Handle both old array format and new object format
+    const arr = Array.isArray(data) ? data : (data.characters || data);
+    return Array.isArray(arr) ? arr.slice(0, limit) : [];
   });
 
   eleventyConfig.addFilter("min", function(a, b) {

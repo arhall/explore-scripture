@@ -32,7 +32,13 @@
       "WebFetch(domain:iterm2colorschemes.com)",
       "Read(/Users/andreenhall/repo/bible-static-site/src/**)",
       "Bash(open http://localhost:8080/books/genesis/)",
-      "Bash(lsof:*)"
+      "Bash(lsof:*)",
+      "Bash(open http://localhost:8083/)",
+      "WebFetch(domain:127.0.0.1)",
+      "Bash(open http://localhost:8083/characters/)",
+      "Bash(open /Users/andrewhall/repo/bible-static-site/test-search.html)",
+      "Bash(open http://localhost:8083/books/genesis/)",
+      "Bash(open http://localhost:8083/categories/law/)"
     ],
     "deny": [],
     "ask": []

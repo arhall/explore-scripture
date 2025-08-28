@@ -42,6 +42,17 @@ logs
 # Temporary files
 .tmp/
 .temp/
+tmp/
+
+# Python virtual environment and cache
+test-env/
+debug-env/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
 
 # Build logs and analysis
 build-logs/

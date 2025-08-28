@@ -16,7 +16,7 @@ Bible Explorer - A static site built with Eleventy (11ty) that provides chapter-
 4. **CI/CD Pipeline**: GitHub Actions workflow for automated testing
 5. **Documentation**: Created technical, product, and content suggestion frameworks
 6. **Scripture Widget System**: Implemented embedded Bible verse display with hover/tap functionality
-7. **Chapter Reader Modal**: Added full chapter reading experience with translation selector
+7. **Chapter Reader Modal**: Simplified chapter reading with embedded BibleGateway iframe
 8. **Bible Study Enhancement**: Integrated both systems for comprehensive study experience
 
 ## Technical Architecture
@@ -59,7 +59,7 @@ Bible Explorer - A static site built with Eleventy (11ty) that provides chapter-
 - Character and book pages
 - Responsive design
 - **Scripture Widget System**: Hover/tap Bible verse display with configurable translations
-- **Chapter Reader Modal**: Full chapter text in closable overlay with translation selector
+- **Chapter Reader Modal**: Embedded BibleGateway iframe in responsive modal with external link access
 - **Bible Study Integration**: Seamless combination of verse lookup and chapter reading
 
 ✅ **Recently Fixed:**

@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+_site/
+
+# Logs
+build-logs/
+
+# Temporary files
+tmp/
+
+# Environment files
+test-env/
+debug-env/
+
+# Package files
+package-lock.json
+
+# Generated files
+benchmark-results.json
+
+# TypeScript syntax files
+src/assets/debug-dashboard.js

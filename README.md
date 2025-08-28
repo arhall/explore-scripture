@@ -46,7 +46,25 @@ npm run build
 - Each book has a `chapterSummaries` object with chapter numbers as keys.
 - Fill in or edit summaries as you go. You can start with the provided samples (Genesis 1–3, Matthew 1–3, Romans 1–2).
 
-Tip: If you’d like markdown-rich summaries, you can put markdown in the summary strings—they’ll render nicely.
+Tip: If you'd like markdown-rich summaries, you can put markdown in the summary strings—they'll render nicely.
+
+---
+
+## Interactive Features
+
+The site includes several interactive features for enhanced Bible study:
+
+### Chapter Reader
+- **Purpose**: Modal-based full chapter reading with BibleGateway integration
+- **Usage**: Click "Read Chapter" buttons on book pages
+- **Documentation**: See [docs/CHAPTER_READER_GUIDE.md](docs/CHAPTER_READER_GUIDE.md)
+- **Features**: Embedded iframes, responsive design, external link access
+
+### Scripture Widget
+- **Purpose**: Hover/tap Scripture references for quick verse lookup
+- **Usage**: Automatic enhancement of `data-scripture` attributes
+- **Documentation**: See [docs/SCRIPTURE_WIDGET_GUIDE.md](docs/SCRIPTURE_WIDGET_GUIDE.md)  
+- **Features**: Multiple translations, mobile-friendly, theme integration
 
 ---
 

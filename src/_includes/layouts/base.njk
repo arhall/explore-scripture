@@ -167,7 +167,7 @@
         <div class="search-results" id="searchResults"></div>
       </div>
       
-      <div class="search-filters" id="searchFilters">
+      <div class="search-filters" id="searchFilters" style="display: none;">
         <div class="search-filters-header">
           <h4>Refine Search</h4>
           <button class="search-filters-clear" onclick="clearAllFilters()">Clear All</button>
@@ -283,22 +283,29 @@
     // Initialize search data
     async function initializeSearch() {
       try {
-        const books = {{ books | dump | safe }};
-        const categories = {{ categories | dump | safe }};
-        const characters = {{ characters | dump | safe }};
-        const gospelThreads = {{ gospelThreads | dump | safe }};
-        const crossReferences = {{ crossReferences | dump | safe }};
+        const books = {% if books %}{{ books | dump | safe }}{% else %}[]{% endif %};
+        const categories = {% if categories %}{{ categories | dump | safe }}{% else %}[]{% endif %};
+        const characters = {% if characters %}{{ characters | dump | safe }}{% else %}[]{% endif %};
+        const gospelThreads = {% if gospelThreads %}{{ gospelThreads | dump | safe }}{% else %}{}{% endif %};
+        const crossReferences = {% if crossReferences %}{{ crossReferences | dump | safe }}{% else %}{}{% endif %};
         
-        if (!books || !Array.isArray(books)) {
+        // Only show error if we're on a page that should have data
+        const shouldHaveData = window.location.pathname.includes('/books/') || 
+                              window.location.pathname.includes('/characters/') || 
+                              window.location.pathname.includes('/categories/');
+        
+        if (shouldHaveData && (!books || !Array.isArray(books) || books.length === 0)) {
           throw new Error('Books data is invalid or missing');
         }
         
-        if (!categories || !Array.isArray(categories)) {
-          throw new Error('Categories data is invalid or missing');
-        }
-        
-        if (!characters || !Array.isArray(characters)) {
-          throw new Error('Characters data is invalid or missing');
+        // Continue with empty arrays if no data available (like on homepage)
+        if (!Array.isArray(books) || books.length === 0) {
+          if (window.logger) {
+            window.logger.info('No books data available for search - likely on homepage or non-content page');
+          }
+          // Initialize empty search data but don't throw error
+          searchData = [];
+          return;
         }
         
         // Process books and chapters into searchable items
@@ -356,7 +363,8 @@
         });
 
         // Add categories
-        categories.forEach((category, index) => {
+        if (Array.isArray(categories)) {
+          categories.forEach((category, index) => {
           try {
             if (!category.name || !category.slug) {
               throw new Error(`Category at index ${index} missing required fields`);
@@ -379,9 +387,11 @@
             }
           }
         });
+        }
 
         // Add characters
-        characters.forEach((character, index) => {
+        if (Array.isArray(characters)) {
+          characters.forEach((character, index) => {
           try {
             if (!character.name || !character.slug) {
               throw new Error(`Character at index ${index} missing required fields`);
@@ -404,6 +414,7 @@
             }
           }
         });
+        }
 
         // Add Gospel Thread themes
         if (gospelThreads && gospelThreads.coreThemes) {
@@ -1288,13 +1299,82 @@
       const toggleButton = document.getElementById('searchFiltersToggle');
       const isVisible = filtersPanel.style.display === 'block';
       
-      filtersPanel.style.display = isVisible ? 'none' : 'block';
+      if (isVisible) {
+        filtersPanel.style.opacity = '0';
+        filtersPanel.style.transform = 'translateY(-10px)';
+        setTimeout(() => {
+          filtersPanel.style.display = 'none';
+        }, 300);
+      } else {
+        filtersPanel.style.display = 'block';
+        filtersPanel.style.opacity = '0';
+        filtersPanel.style.transform = 'translateY(-10px)';
+        setTimeout(() => {
+          filtersPanel.style.opacity = '1';
+          filtersPanel.style.transform = 'translateY(0)';
+        }, 10);
+      }
+      
       toggleButton.classList.toggle('active', !isVisible);
       
       // Track filter panel usage
       if (window.telemetry) {
         window.telemetry.recordUserAction('search-filters-toggle', !isVisible ? 'open' : 'close');
       }
+    }
+    
+    // Show search filters dynamically
+    function showSearchFilters() {
+      const filtersPanel = document.getElementById('searchFilters');
+      const toggleButton = document.getElementById('searchFiltersToggle');
+      
+      if (filtersPanel && filtersPanel.style.display === 'none') {
+        filtersPanel.style.display = 'block';
+        filtersPanel.style.opacity = '0';
+        filtersPanel.style.transform = 'translateY(-10px)';
+        
+        setTimeout(() => {
+          filtersPanel.style.opacity = '1';
+          filtersPanel.style.transform = 'translateY(0)';
+        }, 10);
+        
+        toggleButton.classList.add('active');
+      }
+    }
+    
+    // Hide search filters dynamically
+    function hideSearchFilters() {
+      const filtersPanel = document.getElementById('searchFilters');
+      const toggleButton = document.getElementById('searchFiltersToggle');
+      const searchInput = document.getElementById('searchInput');
+      
+      // Don't hide if user is actively searching or filters are applied
+      if (searchInput && searchInput.value.trim().length > 0) return;
+      if (hasActiveGlobalFilters()) return;
+      
+      // Don't hide if user is hovering over filters
+      if (filtersPanel && filtersPanel.hasAttribute('data-hovering')) return;
+      
+      setTimeout(() => {
+        if (document.activeElement !== searchInput && !filtersPanel.contains(document.activeElement) && !filtersPanel.hasAttribute('data-hovering')) {
+          filtersPanel.style.opacity = '0';
+          filtersPanel.style.transform = 'translateY(-10px)';
+          
+          setTimeout(() => {
+            if (filtersPanel.style.opacity === '0') {
+              filtersPanel.style.display = 'none';
+              toggleButton.classList.remove('active');
+            }
+          }, 300);
+        }
+      }, 150);
+    }
+    
+    // Check if any global filters are active
+    function hasActiveGlobalFilters() {
+      const checkboxes = document.querySelectorAll('#searchFilters input[type="checkbox"]:checked');
+      const allCheckboxes = document.querySelectorAll('#searchFilters input[type="checkbox"]');
+      return checkboxes.length < allCheckboxes.length;
     }
 
     // Clear all filters
@@ -1505,8 +1585,7 @@
         if (!e.target.closest('.search-filters') && !e.target.closest('.search-filters-toggle')) {
           const filtersPanel = document.getElementById('searchFilters');
           if (filtersPanel && filtersPanel.style.display === 'block') {
-            filtersPanel.style.display = 'none';
-            document.getElementById('searchFiltersToggle').classList.remove('active');
+            hideSearchFilters();
           }
         }
       });
@@ -1521,11 +1600,56 @@
           // Show search history when focusing empty search
           displayResults([], '');
         }
+        
+        // Show filters on focus
+        showSearchFilters();
+      });
+      
+      // Hide filters when blurring search input
+      searchInput.addEventListener('blur', function() {
+        hideSearchFilters();
+      });
+      
+      // Add hover protection to search filters
+      const globalFiltersPanel = document.getElementById('searchFilters');
+      if (globalFiltersPanel) {
+        globalFiltersPanel.addEventListener('mouseenter', function() {
+          this.setAttribute('data-hovering', 'true');
+        });
+        
+        globalFiltersPanel.addEventListener('mouseleave', function() {
+          this.removeAttribute('data-hovering');
+          hideSearchFilters();
+        });
+        
+        // Show filters when user starts typing
+        searchInput.addEventListener('input', function() {
+          if (this.value.trim().length > 0) {
+            showSearchFilters();
+          }
+        });
+      }
+      
+      // Initialize checked classes for browsers without :has() support
+      document.querySelectorAll('#searchFilters input[type="checkbox"]').forEach(checkbox => {
+        const label = checkbox.closest('.filter-checkbox');
+        if (label && checkbox.checked) {
+          label.classList.add('checked');
+        }
       });
       
       // Add filter change listeners
       document.querySelectorAll('#searchFilters input[type="checkbox"]').forEach(checkbox => {
         checkbox.addEventListener('change', function() {
+          // Add checked class for browsers without :has() support
+          const label = this.closest('.filter-checkbox');
+          if (label) {
+            if (this.checked) {
+              label.classList.add('checked');
+            } else {
+              label.classList.remove('checked');
+            }
+          }
           // Update filter toggle button to show active state
           const toggleButton = document.getElementById('searchFiltersToggle');
           const allCheckboxes = document.querySelectorAll('#searchFilters input[type="checkbox"]');
