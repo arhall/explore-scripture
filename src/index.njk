@@ -6,52 +6,83 @@ description: Chapter-by-chapter Bible summaries, videos, and commentary for ever
 
 <div class="hero-section">
   <div class="hero-content">
-    <h1>Bible Explorer</h1>
-    <p class="hero-description">Discover the unified story of Scripture through chapter summaries, Bible Project videos, and expert commentary.</p>
+    <div class="hero-badge">
+      <span class="hero-badge-text">Complete Bible Study Platform</span>
+    </div>
+    <h1 class="hero-title">
+      Explore Scripture with 
+      <span class="hero-highlight">Purpose & Clarity</span>
+    </h1>
+    <p class="hero-description">From Genesis to Revelation—discover the unified story of redemption through expert commentary, chapter summaries, and visual overviews designed for modern Bible study.</p>
+    
+    <div class="hero-actions">
+      <a href="/categories/" class="hero-cta primary">Start Exploring</a>
+      <button onclick="focusSearch()" class="hero-cta secondary">Search Scripture</button>
+    </div>
     
     <div class="hero-stats">
       <div class="stat">
         <div class="stat-number">66</div>
-        <div class="stat-label">Books</div>
+        <div class="stat-label">Biblical Books</div>
+        <div class="stat-sublabel">Complete Coverage</div>
       </div>
       <div class="stat">
         <div class="stat-number">1,189</div>
         <div class="stat-label">Chapters</div>
+        <div class="stat-sublabel">Fully Indexed</div>
       </div>
-      <div class="stat">
-        <div class="stat-number">{{ books | selectattr("chapterSummaries") | list | length }}</div>
-        <div class="stat-label">With Summaries</div>
-      </div>
+    </div>
+  </div>
+  
+  <div class="hero-visual">
+    <div class="hero-books">
+      <div class="hero-book testament-old">Old Testament</div>
+      <div class="hero-book testament-new">New Testament</div>
+    </div>
+    <div class="hero-connector"></div>
+  </div>
+</div>
+
+<div class="features-section">
+  <div class="features-header">
+    <h2>Everything You Need for Deep Bible Study</h2>
+    <p>Comprehensive tools designed to help you understand Scripture's message</p>
+  </div>
+  
+  <div class="features-grid">
+    <div class="feature-card highlighted">
+      <div class="feature-icon">▦</div>
+      <h3>Expert Summaries</h3>
+      <p>Theologically sound chapter summaries that capture the essence of each passage</p>
+      <div class="feature-stats">Ready for study</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">▶</div>
+      <h3>Visual Learning</h3>
+      <p>Bible Project animated videos that make complex themes accessible</p>
+      <div class="feature-stats">Watch & learn</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">◗</div>
+      <h3>Trusted Resources</h3>
+      <p>Direct access to respected commentaries and biblical scholarship</p>
+      <div class="feature-stats">Deep study</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">⌕</div>
+      <h3>Intelligent Search</h3>
+      <p>Find exactly what you're looking for across books, themes, and characters</p>
+      <div class="feature-stats">Instant results</div>
     </div>
   </div>
 </div>
 
-<div class="features-grid">
-  <div class="feature-card">
-    <div class="feature-icon">📚</div>
-    <h3>Chapter Summaries</h3>
-    <p>Concise, theologically accurate summaries for every chapter</p>
+<section class="testament-section old-testament">
+  <div class="testament-header">
+    <div class="testament-badge">39 Books</div>
+    <h2>Old Testament</h2>
+    <p class="section-intro">The foundation of faith—God's covenant with Israel and the promise of redemption</p>
   </div>
-  <div class="feature-card">
-    <div class="feature-icon">🎥</div>
-    <h3>Bible Project Videos</h3>
-    <p>Animated overviews explaining each book's themes and structure</p>
-  </div>
-  <div class="feature-card">
-    <div class="feature-icon">💬</div>
-    <h3>Expert Commentary</h3>
-    <p>Direct links to trusted biblical commentaries and resources</p>
-  </div>
-  <div class="feature-card">
-    <div class="feature-icon">🔍</div>
-    <h3>Smart Search</h3>
-    <p>Find books, chapters, and topics instantly with our search</p>
-  </div>
-</div>
-
-<section class="testament-section">
-  <h2>Old Testament</h2>
-  <p class="section-intro">God's covenant with Israel and the promise of redemption</p>
   
   {% for category in categories %}
     {% if category.testament == "Old Testament" %}
@@ -83,9 +114,12 @@ description: Chapter-by-chapter Bible summaries, videos, and commentary for ever
   {% endfor %}
 </section>
 
-<section class="testament-section">
-  <h2>New Testament</h2>
-  <p class="section-intro">The life of Christ and the birth of the Church</p>
+<section class="testament-section new-testament">
+  <div class="testament-header">
+    <div class="testament-badge">27 Books</div>
+    <h2>New Testament</h2>
+    <p class="section-intro">The fulfillment of promise—the life of Christ and the birth of the Church</p>
+  </div>
   
   {% for category in categories %}
     {% if category.testament == "New Testament" %}
@@ -116,3 +150,19 @@ description: Chapter-by-chapter Bible summaries, videos, and commentary for ever
     {% endif %}
   {% endfor %}
 </section>
+
+<script>
+  // Hero search functionality
+  function focusSearch() {
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+      searchInput.focus();
+      searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      
+      // Track hero CTA usage
+      if (window.telemetry) {
+        window.telemetry.recordUserAction('hero-search-cta');
+      }
+    }
+  }
+</script>

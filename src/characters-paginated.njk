@@ -7,56 +7,124 @@ layout: base.njk
 permalink: "/characters/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% else %}{% endif %}"
 ---
 
-<div class="header">
-  <h1>Biblical Characters</h1>
-  <p class="meta">{{ characters | length }} characters from across the Bible</p>
-</div>
-
-<div class="search-notice">
-  <p>💡 You can also search for characters using the search box above</p>
+<div class="characters-hero">
+  <div class="characters-badge">
+    <span class="characters-badge-text">Complete Character Database</span>
+  </div>
+  <h1 class="characters-title">Biblical Characters</h1>
+  <p class="characters-description">Explore the lives and stories of {{ characters | length }} individuals who shaped the narrative of Scripture</p>
+  
+  <div class="characters-stats">
+    <div class="characters-stat">
+      <div class="stat-number">{{ characters | length }}</div>
+      <div class="stat-label">Characters</div>
+      <div class="stat-sublabel">Documented</div>
+    </div>
+    <div class="characters-stat">
+      <div class="stat-number">66</div>
+      <div class="stat-label">Books</div>
+      <div class="stat-sublabel">Represented</div>
+    </div>
+  </div>
+  
+  <div class="search-enhancement">
+    <div class="search-tip">
+      <div class="search-tip-icon">⌕</div>
+      <p>Use the search above to quickly find any character by name or book reference</p>
+    </div>
+  </div>
 </div>
 
 {% if pagination.pageNumber === 0 %}
-<div class="top-characters">
-  <h2>Most Frequently Mentioned</h2>
-  <div class="characters-grid">
-    {% for character in characters | limit(20) %}
+<section class="featured-characters-section">
+  <div class="section-header">
+    <div class="section-badge">
+      <span class="section-badge-text">Most Referenced</span>
+    </div>
+    <h2>Most Frequently Mentioned</h2>
+    <p class="section-description">The central figures who appear most often throughout Scripture</p>
+  </div>
+  
+  <div class="featured-characters-grid">
+    {% for character in characters | limit(12) %}
       <a href="/characters/{{ character.slug }}/" class="character-card featured">
-        <div class="character-name">{{ character.name }}</div>
-        <div class="character-stats">
-          <span class="appearance-count">{{ character.totalAppearances }} appearances</span>
-          <span class="book-count">{{ character.totalBooks }} books</span>
+        <div class="character-badge">
+          <span class="rank-indicator">{{ loop.index }}</span>
         </div>
-        <div class="character-books">
-          {% for book in character.books | slice(0, 3) %}
-            <span class="book-preview">{{ book }}</span>
+        <div class="character-main">
+          <h3 class="character-name">{{ character.name }}</h3>
+          <div class="character-stats">
+            <div class="stat-item">
+              <span class="stat-number">{{ character.totalAppearances }}</span>
+              <span class="stat-label">appearances</span>
+            </div>
+            <div class="stat-divider">•</div>
+            <div class="stat-item">
+              <span class="stat-number">{{ character.totalBooks }}</span>
+              <span class="stat-label">books</span>
+            </div>
+          </div>
+        </div>
+        <div class="character-preview">
+          {% for book in character.books | slice(0, 2) %}
+            <span class="book-tag">{{ book }}</span>
           {% endfor %}
-          {% if character.books | length > 3 %}
-            <span class="book-more">+{{ character.books | length - 3 }} more</span>
+          {% if character.books | length > 2 %}
+            <span class="book-more">+{{ character.books | length - 2 }}</span>
           {% endif %}
         </div>
       </a>
     {% endfor %}
   </div>
-  <h2>All Characters</h2>
-</div>
+</section>
+
+<section class="all-characters-section">
+  <div class="section-header">
+    <h2>All Characters</h2>
+    <p class="section-description">Complete alphabetical listing of biblical figures</p>
+  </div>
+</section>
 {% endif %}
 
-<div class="characters-grid">
+<div class="characters-listing">
   {% for character in characterPage %}
-    <a href="/characters/{{ character.slug }}/" class="character-card">
-      <div class="character-name">{{ character.name }}</div>
-      <div class="character-stats">
-        <span class="appearance-count">{{ character.totalAppearances }} {% if character.totalAppearances == 1 %}appearance{% else %}appearances{% endif %}</span>
-        <span class="book-count">{{ character.totalBooks }} {% if character.totalBooks == 1 %}book{% else %}books{% endif %}</span>
+    <a href="/characters/{{ character.slug }}/" class="character-card standard">
+      <div class="character-header">
+        <h3 class="character-name">{{ character.name }}</h3>
+        <div class="character-significance">
+          {% if character.totalAppearances >= 100 %}
+            <span class="significance-badge major">Major Figure</span>
+          {% elif character.totalAppearances >= 20 %}
+            <span class="significance-badge notable">Notable</span>
+          {% elif character.totalAppearances >= 5 %}
+            <span class="significance-badge regular">Regular</span>
+          {% else %}
+            <span class="significance-badge minor">Minor</span>
+          {% endif %}
+        </div>
       </div>
+      
+      <div class="character-metrics">
+        <div class="metric">
+          <span class="metric-number">{{ character.totalAppearances }}</span>
+          <span class="metric-label">{% if character.totalAppearances == 1 %}appearance{% else %}appearances{% endif %}</span>
+        </div>
+        <div class="metric-separator">•</div>
+        <div class="metric">
+          <span class="metric-number">{{ character.totalBooks }}</span>
+          <span class="metric-label">{% if character.totalBooks == 1 %}book{% else %}books{% endif %}</span>
+        </div>
+      </div>
+      
       <div class="character-books">
-        {% for book in character.books | slice(0, 3) %}
-          <span class="book-preview">{{ book }}</span>
-        {% endfor %}
-        {% if character.books | length > 3 %}
-          <span class="book-more">+{{ character.books | length - 3 }} more</span>
-        {% endif %}
+        <div class="books-preview">
+          {% for book in character.books | slice(0, 3) %}
+            <span class="book-chip">{{ book }}</span>
+          {% endfor %}
+          {% if character.books | length > 3 %}
+            <span class="books-overflow">+{{ character.books | length - 3 }} more</span>
+          {% endif %}
+        </div>
       </div>
     </a>
   {% endfor %}

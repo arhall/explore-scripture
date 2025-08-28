@@ -4,6 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Bible Explorer">
   <title>{{ title or 'Bible Explorer' }}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +25,12 @@
   <script src="/assets/telemetry.js" type="module"></script>
   <!-- Debug Dashboard -->
   <script src="/assets/debug-dashboard.js"></script>
+  <!-- Scripture Widget -->
+  <script src="/assets/scripture-widget.js"></script>
+  <!-- Chapter Reader -->
+  <script src="/assets/chapter-reader.js"></script>
+  <!-- Theme Manager -->
+  <script src="/assets/theme-manager.js"></script>
 </head>
 <body>
   <div class="container">
@@ -30,17 +41,14 @@
         <a href="/characters/" class="nav-link {% if page.url.startsWith('/characters/') %}active{% endif %}">Characters</a>
         <a href="/gospel-thread/" class="nav-link {% if page.url == '/gospel-thread/' %}active{% endif %}">Gospel Thread</a>
         <a href="/links/" class="nav-link {% if page.url == '/links/' %}active{% endif %}">Links</a>
-        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-          <span class="theme-icon">🌙</span>
-        </button>
         <button class="font-size-toggle" onclick="toggleFontSizeControls()" aria-label="Toggle font size controls">
           <span class="font-size-icon">Aa</span>
         </button>
         <button class="high-contrast-toggle" onclick="toggleHighContrast()" aria-label="Toggle high contrast mode">
-          <span class="high-contrast-icon">🔳</span>
+          <span class="high-contrast-icon">◻</span>
         </button>
         <button class="recents-bookmarks-toggle" onclick="toggleRecentsBookmarks()" aria-label="Toggle recent items and bookmarks">
-          <span class="recents-icon">📚</span>
+          <span class="recents-icon">★</span>
         </button>
       </div>
     </nav>
@@ -49,16 +57,16 @@
       <div class="recents-bookmarks-content">
         <div class="recents-bookmarks-header">
           <h3>Quick Access</h3>
-          <button class="close-panel-btn" onclick="toggleRecentsBookmarks()">✕</button>
+          <button class="close-panel-btn" onclick="toggleRecentsBookmarks()">×</button>
         </div>
         
         <div class="recents-bookmarks-tabs">
           <button class="tab-btn active" onclick="switchTab('bookmarks')" id="bookmarksTab">
-            <span class="tab-icon">⭐</span>
+            <span class="tab-icon">★</span>
             Bookmarks (<span id="bookmarksCount">0</span>)
           </button>
           <button class="tab-btn" onclick="switchTab('recent')" id="recentTab">
-            <span class="tab-icon">🕒</span>
+            <span class="tab-icon">↻</span>
             Recent (<span id="recentCount">0</span>)
           </button>
         </div>
@@ -69,7 +77,7 @@
           </div>
           <div class="items-list" id="bookmarksList">
             <div class="empty-state">
-              <div class="empty-icon">⭐</div>
+              <div class="empty-icon">★</div>
               <p>No bookmarks yet</p>
               <small>Bookmark pages to access them quickly later</small>
             </div>
@@ -82,7 +90,7 @@
           </div>
           <div class="items-list" id="recentsList">
             <div class="empty-state">
-              <div class="empty-icon">🕒</div>
+              <div class="empty-icon">↻</div>
               <p>No recent items</p>
               <small>Pages you visit will appear here</small>
             </div>
@@ -95,7 +103,7 @@
       <div class="font-size-content">
         <div class="font-size-header">
           <h3>Text Size</h3>
-          <button class="close-font-panel" onclick="toggleFontSizeControls()">✕</button>
+          <button class="close-font-panel" onclick="toggleFontSizeControls()">×</button>
         </div>
         
         <div class="font-size-controls">
@@ -148,11 +156,11 @@
     
     <div class="search-container">
       <div class="search-box">
-        <div class="search-icon">🔍</div>
+        <div class="search-icon">⌕</div>
         <input type="text" class="search-input" placeholder="Search books, chapters, or summaries..." id="searchInput">
         <div class="search-shortcut-hint" id="searchShortcut">⌘K</div>
         <button class="search-filters-toggle" id="searchFiltersToggle" onclick="toggleSearchFilters()" aria-label="Toggle search filters">
-          <span class="filter-icon">⚙️</span>
+          <span class="filter-icon">⚙</span>
         </button>
         <div class="search-results" id="searchResults"></div>
       </div>
@@ -168,22 +176,22 @@
           <div class="filter-options">
             <label class="filter-checkbox">
               <input type="checkbox" name="contentType" value="book" checked>
-              <span class="checkmark">📖</span>
+              <span class="checkmark">▦</span>
               Books
             </label>
             <label class="filter-checkbox">
               <input type="checkbox" name="contentType" value="character" checked>
-              <span class="checkmark">👤</span>
+              <span class="checkmark">◯</span>
               Characters
             </label>
             <label class="filter-checkbox">
               <input type="checkbox" name="contentType" value="chapter" checked>
-              <span class="checkmark">📄</span>
+              <span class="checkmark">□</span>
               Chapters
             </label>
             <label class="filter-checkbox">
               <input type="checkbox" name="contentType" value="gospel-theme" checked>
-              <span class="checkmark">🧵</span>
+              <span class="checkmark">∿</span>
               Gospel Themes
             </label>
           </div>
@@ -194,12 +202,12 @@
           <div class="filter-options">
             <label class="filter-checkbox">
               <input type="checkbox" name="testament" value="Old Testament" checked>
-              <span class="checkmark">📜</span>
+              <span class="checkmark">◉</span>
               Old Testament
             </label>
             <label class="filter-checkbox">
               <input type="checkbox" name="testament" value="New Testament" checked>
-              <span class="checkmark">✝️</span>
+              <span class="checkmark">†</span>
               New Testament
             </label>
           </div>
@@ -210,42 +218,42 @@
           <div class="filter-options">
             <label class="filter-checkbox">
               <input type="checkbox" name="category" value="Law" checked>
-              <span class="checkmark">⚖️</span>
+              <span class="checkmark">⚖</span>
               Law
             </label>
             <label class="filter-checkbox">
               <input type="checkbox" name="category" value="History" checked>
-              <span class="checkmark">🏛️</span>
+              <span class="checkmark">◐</span>
               History
             </label>
             <label class="filter-checkbox">
               <input type="checkbox" name="category" value="Poetry" checked>
-              <span class="checkmark">🎵</span>
+              <span class="checkmark">♪</span>
               Poetry
             </label>
             <label class="filter-checkbox">
               <input type="checkbox" name="category" value="Major Prophets" checked>
-              <span class="checkmark">📯</span>
+              <span class="checkmark">▲</span>
               Major Prophets
             </label>
             <label class="filter-checkbox">
               <input type="checkbox" name="category" value="Minor Prophets" checked>
-              <span class="checkmark">🔔</span>
+              <span class="checkmark">△</span>
               Minor Prophets
             </label>
             <label class="filter-checkbox">
               <input type="checkbox" name="category" value="Gospels" checked>
-              <span class="checkmark">✨</span>
+              <span class="checkmark">✦</span>
               Gospels
             </label>
             <label class="filter-checkbox">
               <input type="checkbox" name="category" value="Acts and Letters" checked>
-              <span class="checkmark">✉️</span>
+              <span class="checkmark">▣</span>
               Acts & Letters
             </label>
             <label class="filter-checkbox">
               <input type="checkbox" name="category" value="Revelation" checked>
-              <span class="checkmark">🌟</span>
+              <span class="checkmark">★</span>
               Revelation
             </label>
           </div>
@@ -299,12 +307,12 @@
             }
             
             // Add book itself
-            let bookSubtitle = `📖 Book by ${book.author || 'Unknown'} • ${book.category || 'Unknown'}`;
+            let bookSubtitle = `Book by ${book.author || 'Unknown'} • ${book.category || 'Unknown'}`;
             
             // Special handling for single-chapter books that might be confused with characters
             const singleChapterBooks = ['Obadiah', 'Philemon', 'Jude', '2 John', '3 John'];
             if (singleChapterBooks.includes(book.name)) {
-              bookSubtitle = `📖 Single-chapter book by ${book.author || 'Unknown'} • ${book.category || 'Unknown'}`;
+              bookSubtitle = `Single-chapter book by ${book.author || 'Unknown'} • ${book.category || 'Unknown'}`;
             }
             
             searchData.push({
@@ -325,7 +333,7 @@
                   searchData.push({
                     type: 'chapter',
                     title: `${book.name} ${chapter}`,
-                    subtitle: `📄 ${summary.substring(0, 80)}...`,
+                    subtitle: `${summary.substring(0, 80)}...`,
                     content: `${book.name} chapter ${chapter} ${summary}`,
                     url: `/books/${book.slug}/#chapter-${chapter}`,
                     typeLabel: 'Chapter',
@@ -355,7 +363,7 @@
             searchData.push({
               type: 'category',
               title: category.name,
-              subtitle: `🏷️ ${category.description || 'Biblical section'}`,
+              subtitle: `${category.description || 'Biblical section'}`,
               content: `${category.name} ${category.description || ''} ${category.themes ? category.themes.join(' ') : ''}`,
               url: `/categories/${category.slug}/`,
               typeLabel: 'Section'
@@ -380,7 +388,7 @@
             searchData.push({
               type: 'character',
               title: character.name,
-              subtitle: `👤 ${character.totalAppearances} appearances in ${character.totalBooks} books`,
+              subtitle: `${character.totalAppearances} appearances in ${character.totalBooks} books`,
               content: `${character.name} ${character.books ? character.books.join(' ') : ''}`,
               url: `/characters/${character.slug}/`,
               typeLabel: 'Character'
@@ -401,7 +409,7 @@
             searchData.push({
               type: 'gospel-theme',
               title: theme.name,
-              subtitle: `🧵 ${theme.description}`,
+              subtitle: `${theme.description}`,
               content: `${theme.name} ${theme.description} ${theme.gospelConnection} gospel christ jesus salvation`,
               url: `/gospel-thread/#theme-${themeId}`,
               typeLabel: 'Gospel Theme'
@@ -596,7 +604,7 @@
           timestamp: item.timestamp,
           resultType: item.resultType,
           resultTitle: item.resultTitle,
-          icon: '🕒'
+          icon: '↻'
         }));
     }
 
@@ -709,7 +717,7 @@
         const text = bookmarkBtn.querySelector('.bookmark-text');
         
         if (isBookmarked) {
-          icon.textContent = '⭐';
+          icon.textContent = '★';
           text.textContent = 'Bookmarked';
           bookmarkBtn.classList.add('bookmarked');
           bookmarkBtn.title = 'Remove bookmark';
@@ -772,6 +780,14 @@
       }
     }
 
+    // Close recents panel with click away
+    function closeRecentsBookmarksPanel() {
+      const panel = document.getElementById('recentsBookmarksPanel');
+      if (panel && panel.classList.contains('visible')) {
+        panel.classList.remove('visible');
+      }
+    }
+
     function switchTab(tabName) {
       const tabs = document.querySelectorAll('.tab-btn');
       const contents = document.querySelectorAll('.tab-content');
@@ -798,7 +814,7 @@
       if (bookmarkedItems.length === 0) {
         bookmarksList.innerHTML = `
           <div class="empty-state">
-            <div class="empty-icon">⭐</div>
+            <div class="empty-icon">★</div>
             <p>No bookmarks yet</p>
             <small>Bookmark pages to access them quickly later</small>
           </div>
@@ -814,7 +830,7 @@
               </div>
             </a>
             <button class="remove-item-btn" onclick="toggleBookmark({url: '${item.url}', type: '${item.type}', title: '${item.title.replace(/'/g, "\\'")}'})" title="Remove bookmark">
-              ✕
+              ×
             </button>
           </div>
         `).join('');
@@ -825,7 +841,7 @@
       if (recentItems.length === 0) {
         recentsList.innerHTML = `
           <div class="empty-state">
-            <div class="empty-icon">🕒</div>
+            <div class="empty-icon">↻</div>
             <p>No recent items</p>
             <small>Pages you visit will appear here</small>
           </div>
@@ -841,7 +857,7 @@
               </div>
             </a>
             <button class="bookmark-quick-btn" onclick="toggleBookmark({url: '${item.url}', type: '${item.type}', title: '${item.title.replace(/'/g, "\\'")}'})" title="${isBookmarked(item.url) ? 'Remove bookmark' : 'Add bookmark'}">
-              ${isBookmarked(item.url) ? '⭐' : '☆'}
+              ${isBookmarked(item.url) ? '★' : '☆'}
             </button>
           </div>
         `).join('');
@@ -850,12 +866,12 @@
 
     function getItemIcon(type) {
       const icons = {
-        book: '📖',
-        character: '👤',
-        category: '📚',
-        chapter: '📄',
-        'gospel-theme': '🧵',
-        default: '📄'
+        book: '▦',
+        character: '◯',
+        category: '◐',
+        chapter: '□',
+        'gospel-theme': '∿',
+        default: '□'
       };
       return icons[type] || icons.default;
     }
@@ -1021,7 +1037,7 @@
       
       const crossRefHtml = `
         <div class="cross-references-section">
-          <h4>📖 Related Passages</h4>
+          <h4>Related Passages</h4>
           <div class="cross-references-list">
             ${references.slice(0, 6).map(ref => `
               <a href="${ref.url}" class="cross-reference-item" title="${ref.text}">
@@ -1061,7 +1077,7 @@
               type: 'suggestion',
               query: term,
               category: category,
-              icon: category === 'books' ? '📖' : category === 'characters' ? '👤' : category === 'topics' ? '💡' : '📚'
+              icon: category === 'books' ? '▦' : category === 'characters' ? '◯' : category === 'topics' ? '◊' : '◐'
             });
           }
         });
@@ -1168,7 +1184,7 @@
       // Show search history when query is empty or very short
       const history = getSearchHistory(query);
       if ((!query || query.length < 2) && history.length > 0) {
-        html += '<div class="search-separator">Recent Searches <button class="clear-history-btn" onclick="clearSearchHistory()" title="Clear search history">✕</button></div>';
+        html += '<div class="search-separator">Recent Searches <button class="clear-history-btn" onclick="clearSearchHistory()" title="Clear search history">×</button></div>';
         html += history.map(item => {
           const timeAgo = getTimeAgo(item.timestamp);
           const resultInfo = item.resultTitle ? ` → ${item.resultTitle}` : '';
@@ -1220,7 +1236,7 @@
       if (query && results.length === 0 && suggestions.length === 0 && history.length === 0) {
         html = `
           <div class="search-result-item no-results">
-            <div class="no-results-icon">🔍</div>
+            <div class="no-results-icon">⌕</div>
             <div>No results found for "${query}"</div>
             <div class="search-suggestion">Try searching for book names, characters, or topics</div>
           </div>
@@ -1470,6 +1486,28 @@
           searchResults.style.display = 'none';
         }
       });
+
+      // Global click-away handling for side panels
+      document.addEventListener('click', function(e) {
+        // Close recents/bookmarks panel if clicking outside
+        if (!e.target.closest('.recents-bookmarks-panel') && !e.target.closest('.recents-bookmarks-toggle')) {
+          closeRecentsBookmarksPanel();
+        }
+        
+        // Close font size panel if clicking outside
+        if (!e.target.closest('.font-size-panel') && !e.target.closest('.font-size-toggle')) {
+          closeFontSizePanel();
+        }
+        
+        // Close search filters if clicking outside
+        if (!e.target.closest('.search-filters') && !e.target.closest('.search-filters-toggle')) {
+          const filtersPanel = document.getElementById('searchFilters');
+          if (filtersPanel && filtersPanel.style.display === 'block') {
+            filtersPanel.style.display = 'none';
+            document.getElementById('searchFiltersToggle').classList.remove('active');
+          }
+        }
+      });
       
       // Show results when focusing search input
       searchInput.addEventListener('focus', function() {
@@ -1600,7 +1638,7 @@
       // Update theme toggle icon
       const themeIcon = document.querySelector('.theme-icon');
       if (themeIcon) {
-        themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        themeIcon.textContent = newTheme === 'dark' ? '☀' : '☽';
       }
       
       // Log theme change
@@ -1620,7 +1658,7 @@
       // Update theme toggle icon
       const themeIcon = document.querySelector('.theme-icon');
       if (themeIcon) {
-        themeIcon.textContent = initialTheme === 'dark' ? '☀️' : '🌙';
+        themeIcon.textContent = initialTheme === 'dark' ? '☀' : '☽';
       }
       
       // Register service worker for offline functionality
@@ -1677,6 +1715,14 @@
       // Track font panel usage
       if (window.telemetry) {
         window.telemetry.recordUserAction('font-controls-toggle', isVisible ? 'close' : 'open');
+      }
+    }
+
+    // Close font panel with click away
+    function closeFontSizePanel() {
+      const panel = document.getElementById('fontSizePanel');
+      if (panel && panel.classList.contains('visible')) {
+        panel.classList.remove('visible');
       }
     }
 
@@ -1858,7 +1904,7 @@
       // Update icon
       const contrastIcon = document.querySelector('.high-contrast-icon');
       if (contrastIcon) {
-        contrastIcon.textContent = newState ? '🔲' : '🔳';
+        contrastIcon.textContent = newState ? '■' : '◻';
       }
       
       // Save to localStorage
@@ -1963,7 +2009,7 @@
       updateNotification.className = 'update-notification';
       updateNotification.innerHTML = `
         <div class="update-content">
-          <div class="update-icon">🔄</div>
+          <div class="update-icon">↻</div>
           <div class="update-text">
             <strong>Update Available</strong>
             <p>A new version of Bible Explorer is ready!</p>
@@ -1994,7 +2040,7 @@
       onlineIndicator.className = 'online-indicator';
       onlineIndicator.innerHTML = `
         <div class="online-content">
-          <div class="online-icon">🟢</div>
+          <div class="online-icon">●</div>
           <span>Back online!</span>
         </div>
       `;

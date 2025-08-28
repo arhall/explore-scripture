@@ -10,6 +10,8 @@ const ESSENTIAL_RESOURCES = [
   '/assets/logger.js',
   '/assets/telemetry.js',
   '/assets/debug-dashboard.js',
+  '/assets/scripture-widget.js',
+  '/assets/chapter-reader.js',
   '/categories/',
   '/characters/',
   '/gospel-thread/',
@@ -72,9 +74,45 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // Skip API calls and external resources
-  if (event.request.url.includes('api/') || 
-      event.request.url.includes('youtube.com') || 
+  // Handle Bible API requests specially
+  if (event.request.url.includes('bible-api.com') || 
+      event.request.url.includes('scripture.api.bible')) {
+    event.respondWith(
+      caches.match(event.request)
+        .then(cachedResponse => {
+          if (cachedResponse) {
+            return cachedResponse;
+          }
+          
+          return fetch(event.request)
+            .then(response => {
+              if (response.status === 200) {
+                const responseClone = response.clone();
+                caches.open(CACHE_NAME).then(cache => {
+                  cache.put(event.request, responseClone);
+                  console.log('[SW] Cached Bible API response:', event.request.url);
+                });
+              }
+              return response;
+            })
+            .catch(() => {
+              // Return offline Bible verse response
+              return new Response(JSON.stringify({
+                text: 'Verse text unavailable offline. Please connect to the internet to load new verses.',
+                reference: 'Offline',
+                translation_name: 'System'
+              }), {
+                status: 503,
+                headers: { 'Content-Type': 'application/json' }
+              });
+            });
+        })
+    );
+    return;
+  }
+
+  // Skip other external resources
+  if (event.request.url.includes('youtube.com') || 
       event.request.url.includes('fonts.googleapis.com') ||
       event.request.url.includes('unpkg.com')) {
     return;

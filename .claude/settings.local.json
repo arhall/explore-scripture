@@ -23,7 +23,14 @@
       "Bash(docker:*)",
       "Bash(curl:*)",
       "Bash(python3:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(source:*)",
+      "WebFetch(domain:api.esv.org)",
+      "WebFetch(domain:localhost)",
+      "Bash(open http://localhost:8082/test-chapter-reader.html)",
+      "WebFetch(domain:www.biblegateway.com)",
+      "WebFetch(domain:iterm2colorschemes.com)",
+      "Read(/Users/andreenhall/repo/bible-static-site/src/**)"
     ],
     "deny": [],
     "ask": []

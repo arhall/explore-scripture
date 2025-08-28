@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Chapter Reader</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <h1>Chapter Reader Test</h1>
+    
+    <div class="test-section">
+        <h2>📖 Test Popular Chapters</h2>
+        <p>Click buttons to test different chapters with professional themes and ESV text:</p>
+        <div style="margin: 10px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;">
+            <button onclick="ChapterReader.openChapter('Genesis', 1)">Genesis 1</button>
+            <button onclick="ChapterReader.openChapter('Genesis', 7)">Genesis 7</button>
+            <button onclick="ChapterReader.openChapter('Genesis', 22)">Genesis 22</button>
+            <button onclick="ChapterReader.openChapter('Psalm', 23)">Psalm 23</button>
+            <button onclick="ChapterReader.openChapter('Isaiah', 53)">Isaiah 53</button>
+            <button onclick="ChapterReader.openChapter('Matthew', 5)">Matthew 5</button>
+            <button onclick="ChapterReader.openChapter('John', 3)">John 3</button>
+            <button onclick="ChapterReader.openChapter('Romans', 8)">Romans 8</button>
+        </div>
+        <p style="margin-top: 10px;"><strong>✨ New Features:</strong> Global themes, ESV priority, BibleGateway integration</p>
+    </div>
+    
+    <div class="test-section">
+        <h2>🎨 Professional Global Themes</h2>
+        <p>✅ <strong>Site-wide Theme System:</strong> Consistent theming across all pages</p>
+        <p>✅ <strong>Fast ESV Content:</strong> Prioritized ESV text with BibleGateway fallback</p>
+        <p>✅ <strong>Cross References:</strong> Direct BibleGateway integration for study tools</p>
+        <p>✅ <strong>Multiple Translations:</strong> ESV (recommended), NIV, NLT, NKJV, NASB</p>
+        
+        <h3>Theme Categories:</h3>
+        <ul style="line-height: 1.6;">
+            <li><strong>Light Themes:</strong> Light, Warm, Nature, Ocean</li>
+            <li><strong>Dark Themes:</strong> Slate, Charcoal, Midnight, Purple</li>
+        </ul>
+        <p><strong>🎨 Theme Switcher:</strong> Look for the floating theme button in the top-right corner!</p>
+    </div>
+    
+    <div class="test-section">
+        <h2>Direct BibleGateway Link</h2>
+        <p>For comparison, here's the direct link to Genesis 7 ESV:</p>
+        <a href="https://www.biblegateway.com/passage/?search=Genesis%207&version=ESV" target="_blank">Genesis 7 on BibleGateway</a>
+    </div>
+
+    <script src="/assets/chapter-reader.js"></script>
+</body>
+</html>

@@ -55,7 +55,7 @@ layout: base.njk
       <h3>Table of Contents</h3>
       <div class="toc-toggle">
         <button class="toc-toggle-btn" onclick="toggleTOC()" aria-label="Toggle table of contents">
-          <span class="toc-icon">📚</span> 
+          <span class="toc-icon">▦</span> 
           <span class="toc-text">Show all {{ chapterCount }} chapters</span>
         </button>
       </div>
@@ -74,7 +74,7 @@ layout: base.njk
 
   <h2>Chapter Summaries</h2>
   <div class="chapter-navigation-info">
-    <p>💡 <strong>Tip:</strong> Click on any chapter number to jump to it, or use the navigation buttons to move between chapters{% if chapterCount >= 15 %} • Use the table of contents above for quick navigation{% endif %}</p>
+    <p><strong>Tip:</strong> Click on any chapter number to jump to it, or use the navigation buttons to move between chapters{% if chapterCount >= 15 %} • Use the table of contents above for quick navigation{% endif %}</p>
   </div>
   <table class="table">
     <thead>
@@ -141,7 +141,7 @@ layout: base.njk
     
     tocContent.style.display = isVisible ? 'none' : 'block';
     tocText.textContent = isVisible ? 'Show all {{ (book.chapterSummaries | length) }} chapters' : 'Hide table of contents';
-    tocIcon.textContent = isVisible ? '📚' : '📖';
+    tocIcon.textContent = isVisible ? '▦' : '□';
     
     // Track TOC usage
     if (window.telemetry) {
@@ -160,7 +160,7 @@ layout: base.njk
     if (tocContent.style.display === 'block') {
       tocContent.style.display = 'none';
       tocText.textContent = 'Show all {{ (book.chapterSummaries | length) }} chapters';
-      tocIcon.textContent = '📚';
+      tocIcon.textContent = '▦';
     }
   }
 
@@ -321,8 +321,8 @@ layout: base.njk
     popup.className = 'theme-references-popup';
     popup.innerHTML = `
       <div class="theme-popup-header">
-        <h4>🔗 ${theme.charAt(0).toUpperCase() + theme.slice(1)} Theme</h4>
-        <button class="close-popup" onclick="this.parentElement.parentElement.remove()">✕</button>
+        <h4>${theme.charAt(0).toUpperCase() + theme.slice(1)} Theme</h4>
+        <button class="close-popup" onclick="this.parentElement.parentElement.remove()">×</button>
       </div>
       <div class="theme-references-list">
         ${themeRefs.slice(0, 8).map(ref => `
