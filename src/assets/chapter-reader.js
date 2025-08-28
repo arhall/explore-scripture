@@ -467,6 +467,107 @@ class ChapterReader {
       .enduring-word-icon {
         font-size: 1rem;
       }
+
+      /* Iframe Styles */
+      .chapter-reader-iframe-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+
+      .chapter-reader-iframe {
+        width: 100%;
+        height: 600px;
+        min-height: 400px;
+        border: none;
+        border-radius: 8px;
+        background: var(--bg-secondary, #f8fafc);
+        flex: 1;
+      }
+
+      .chapter-reader-iframe-fallback {
+        margin-top: 1rem;
+        padding: 1rem;
+        text-align: center;
+        background: var(--bg-secondary, #f8fafc);
+        border-radius: 8px;
+        border: 1px solid var(--border, #e5e7eb);
+      }
+
+      .chapter-reader-iframe-fallback p {
+        margin: 0 0 0.75rem 0;
+        color: var(--text-secondary, #6b7280);
+        font-size: 0.875rem;
+      }
+
+      .chapter-reader-external-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--accent, #2563eb);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        background: var(--accent-alpha-10, rgba(37, 99, 235, 0.1));
+        border: 1px solid var(--accent-alpha-20, rgba(37, 99, 235, 0.2));
+        transition: all 0.2s ease;
+      }
+
+      .chapter-reader-external-link:hover {
+        background: var(--accent-alpha-20, rgba(37, 99, 235, 0.2));
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+        text-decoration: none;
+      }
+
+      /* Mobile Iframe Adjustments */
+      @media (max-width: 768px) {
+        .chapter-reader-iframe {
+          height: 500px;
+          min-height: 350px;
+        }
+        
+        .chapter-reader-modal {
+          height: 90vh;
+        }
+        
+        .chapter-reader-content {
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          min-height: 0;
+        }
+      }
+
+      /* Very small screens */
+      @media (max-width: 480px) {
+        .chapter-reader-iframe {
+          height: 400px;
+          min-height: 300px;
+        }
+        
+        .chapter-reader-modal {
+          height: 95vh;
+          width: 98vw;
+        }
+      }
+
+      /* Large desktop screens */
+      @media (min-width: 1200px) {
+        .chapter-reader-iframe {
+          height: 700px;
+          min-height: 500px;
+        }
+        
+        .chapter-reader-modal {
+          width: 80vw;
+          max-width: 1000px;
+        }
+      }
     `;
     document.head.appendChild(styles);
   }
@@ -622,8 +723,6 @@ class ChapterReader {
       modal.classList.add('visible');
     }, 50);
 
-    // Load chapter content
-    await this.loadChapterContent(modal, chapterInfo);
 
     // Track analytics
     if (window.telemetry) {
@@ -635,25 +734,21 @@ class ChapterReader {
     const overlay = document.createElement('div');
     overlay.className = 'chapter-reader-overlay';
     
+    const bibleGatewayUrl = this.getBibleGatewayUrl(chapterInfo);
+    
     overlay.innerHTML = `
       <div class="chapter-reader-modal">
         <div class="chapter-reader-header">
           <h2 class="chapter-reader-title">${chapterInfo.reference}</h2>
           <div class="chapter-reader-controls">
-            <select class="chapter-reader-translation-select">
-              ${Object.entries(this.translations)
-                .map(([key, trans]) => 
-                  `<option value="${key}" ${key === this.currentTranslation ? 'selected' : ''}>${trans.name}</option>`
-                ).join('')}
-            </select>
+            <a href="${bibleGatewayUrl}" target="_blank" class="chapter-reader-external-link" title="Open in new tab">
+              ⧉ Open in New Tab
+            </a>
             <button class="chapter-reader-close" aria-label="Close chapter reader">&times;</button>
           </div>
         </div>
         <div class="chapter-reader-content">
-          <div class="chapter-reader-loading">
-            <div class="chapter-reader-spinner"></div>
-            <span>Loading ${chapterInfo.reference}...</span>
-          </div>
+          ${this.renderBibleGatewayIframe(chapterInfo)}
         </div>
       </div>
     `;
@@ -661,14 +756,6 @@ class ChapterReader {
     // Event listeners
     const closeBtn = overlay.querySelector('.chapter-reader-close');
     closeBtn.addEventListener('click', () => this.closeChapterReader());
-
-    const translationSelect = overlay.querySelector('.chapter-reader-translation-select');
-    translationSelect.addEventListener('change', (e) => {
-      this.currentTranslation = e.target.value;
-      localStorage.setItem('preferred-chapter-translation', this.currentTranslation);
-      this.loadChapterContent(overlay, chapterInfo);
-    });
-
 
     // Close on overlay click
     overlay.addEventListener('click', (e) => {
@@ -881,7 +968,7 @@ class ChapterReader {
       'Genesis 3': {
         reference: 'Genesis 3',
         verses: [
-          { number: 1, text: 'Now the serpent was more cunning than any beast of the field which the LORD God had made. And he said to the woman, "Has God indeed said, 'You shall not eat of every tree of the garden'?"' },
+          { number: 1, text: 'Now the serpent was more cunning than any beast of the field which the LORD God had made. And he said to the woman, "Has God indeed said, \'You shall not eat of every tree of the garden\'?"' },
           { number: 6, text: 'So when the woman saw that the tree was good for food, that it was pleasant to the eyes, and a tree desirable to make one wise, she took of its fruit and ate. She also gave to her husband with her, and he ate.' },
           { number: 15, text: 'And I will put enmity between you and the woman, and between your seed and her Seed; He shall bruise your head, and you shall bruise His heel."' }
         ],
