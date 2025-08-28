@@ -1125,5 +1125,23 @@ document.addEventListener('DOMContentLoaded', () => {
   window.chapterReaderInstance = new ChapterReader();
 });
 
+// Global function for use in onclick handlers
+function openChapterReader(reference, book, chapter) {
+  if (!window.chapterReaderInstance) {
+    window.chapterReaderInstance = new ChapterReader();
+  }
+  
+  const chapterInfo = {
+    book: book,
+    chapter: chapter,
+    reference: reference
+  };
+  
+  window.chapterReaderInstance.openChapterReader(chapterInfo);
+}
+
+// Make it available globally
+window.openChapterReader = openChapterReader;
+
 // Export for manual use
 window.ChapterReader = ChapterReader;
