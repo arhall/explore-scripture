@@ -142,6 +142,252 @@ module.exports = function() {
       modernApplication: "God's grace transforms our greatest weaknesses into strengths"
     },
 
+    // ADDITIONAL BIBLICAL FIGURES - Inspired by StudyandObey.com character studies
+    "Samuel": {
+      name: "Samuel",
+      testament: "Old",
+      category: "Prophet/Judge",
+      thematicRole: "For those called to spiritual leadership and discernment",
+      elementsOfPower: [
+        "Direct communication with God from childhood",
+        "Spiritual discernment in leadership",
+        "Faithful service despite personal disappointment",
+        "Courage to speak truth to power"
+      ],
+      weaknessesAndFailures: [
+        "Disappointment with Israel's demand for a king",
+        "Difficulty releasing control to new leadership",
+        "Family struggles (corrupt sons)",
+        "Initial resistance to God's choice of David"
+      ],
+      victoriesOverDifficulties: [
+        "Responded to God's call as a child",
+        "Led Israel's transition from judges to monarchy",
+        "Anointed both Saul and David as kings",
+        "Maintained integrity throughout life"
+      ],
+      relationshipToGod: "Called from childhood, faithful prophet and intercessor",
+      keyVerses: ["1 Samuel 3:10", "1 Samuel 7:12", "1 Samuel 15:22"],
+      lifeEvents: {
+        birth: "Born to Hannah after prayer for a child",
+        death: "Mourned by all Israel",
+        keyMoment: "God's first call in the temple (1 Samuel 3)"
+      },
+      characterType: "Faithful transition leader",
+      modernApplication: "God calls us to faithful service even in times of change",
+      studySource: "Based on character study principles from StudyandObey.com"
+    },
+
+    "Lot": {
+      name: "Lot",
+      testament: "Old", 
+      category: "Relative of Abraham",
+      thematicRole: "Warning for those who compromise with worldly values",
+      elementsOfPower: [
+        "Blessed through association with Abraham",
+        "Showed hospitality to angels",
+        "Was rescued by God's mercy",
+        "Called righteous despite his failures"
+      ],
+      weaknessesAndFailures: [
+        "Chose the best land for selfish reasons",
+        "Gradually moved closer to Sodom",
+        "Compromised moral standards in Sodom",
+        "Offered daughters to protect guests"
+      ],
+      victoriesOverDifficulties: [
+        "Was rescued from Sodom's destruction", 
+        "Maintained some moral sense in corrupt environment",
+        "Recognized divine messengers",
+        "Escaped God's judgment through mercy"
+      ],
+      relationshipToGod: "Righteous but compromised believer",
+      keyVerses: ["Genesis 19:16", "2 Peter 2:7-8", "Genesis 13:10-11"],
+      lifeEvents: {
+        birth: "Nephew of Abraham",
+        death: "In a cave with his daughters",
+        keyMoment: "Choosing the Jordan plain (Genesis 13)"
+      },
+      characterType: "Compromised believer",
+      modernApplication: "Gradual compromise leads to spiritual disaster",
+      studySource: "Based on character study principles from StudyandObey.com"
+    },
+
+    "Sarah": {
+      name: "Sarah",
+      testament: "Old",
+      category: "Matriarch", 
+      thematicRole: "For those learning to trust God's timing",
+      elementsOfPower: [
+        "Faith in God's impossible promise",
+        "Beauty and dignity throughout life",
+        "Protective of God's covenant line",
+        "Model of submission and respect"
+      ],
+      weaknessesAndFailures: [
+        "Laughter at God's promise of a child",
+        "Jealousy and harsh treatment of Hagar",
+        "Trying to help God fulfill His promise",
+        "Fear leading to deception about marriage"
+      ],
+      victoriesOverDifficulties: [
+        "Conceived Isaac at age 90",
+        "Trusted Abraham in difficult situations", 
+        "Maintained faith through decades of waiting",
+        "Protected the covenant promise"
+      ],
+      relationshipToGod: "Partner in the covenant promise, mother of nations",
+      keyVerses: ["Genesis 18:14", "Romans 4:19", "Hebrews 11:11", "1 Peter 3:6"],
+      lifeEvents: {
+        birth: "Born in Ur, traveled to Canaan",
+        death: "Age 127, first burial in Promised Land",
+        keyMoment: "Birth of Isaac (Genesis 21)"
+      },
+      characterType: "Patient believer",
+      modernApplication: "God's timing is perfect even when it seems impossible",
+      studySource: "Based on character study principles from StudyandObey.com"
+    },
+
+    "Isaac": {
+      name: "Isaac",
+      testament: "Old",
+      category: "Patriarch",
+      thematicRole: "For those who are bridges between generations",
+      elementsOfPower: [
+        "Peaceful nature and conflict avoidance",
+        "Faithfulness to God's covenant",
+        "Prosperity through God's blessing",
+        "Submission to his father's leadership"
+      ],
+      weaknessesAndFailures: [
+        "Passive personality in family conflicts",
+        "Deception about Rebekah being his sister",
+        "Favoritism toward Esau",
+        "Spiritual blindness regarding God's choice"
+      ],
+      victoriesOverDifficulties: [
+        "Submitted to sacrifice on Mount Moriah",
+        "Trusted God during famine",
+        "Made peace with hostile neighbors",
+        "Blessed his sons according to God's will"
+      ],
+      relationshipToGod: "Covenant heir, child of promise",
+      keyVerses: ["Genesis 22:2", "Genesis 26:24", "Galatians 4:28"],
+      lifeEvents: {
+        birth: "Miracle child to 100-year-old Abraham",
+        death: "Age 180, blessed his sons",
+        keyMoment: "Near sacrifice by Abraham (Genesis 22)"
+      },
+      characterType: "Peaceful mediator",
+      modernApplication: "God uses quiet faithfulness as much as bold action",
+      studySource: "Based on character study principles from StudyandObey.com"
+    },
+
+    "Jacob": {
+      name: "Jacob",
+      testament: "Old",
+      category: "Patriarch",
+      thematicRole: "For those who struggle with God and are transformed",
+      elementsOfPower: [
+        "Tenacity in pursuing God's blessing",
+        "Strategic thinking and planning",
+        "Deep love for his family",
+        "Eventual spiritual maturity"
+      ],
+      weaknessesAndFailures: [
+        "Deception of his father Isaac",
+        "Exploitation of Esau's desperation", 
+        "Favoritism among his children",
+        "Fear and anxiety in crises"
+      ],
+      victoriesOverDifficulties: [
+        "Wrestling with God and receiving new name",
+        "Reconciliation with his brother Esau",
+        "Prosperity despite Laban's deception",
+        "Blessed all twelve sons prophetically"
+      ],
+      relationshipToGod: "Wrestled with God and prevailed, father of the twelve tribes",
+      keyVerses: ["Genesis 32:28", "Genesis 28:15", "Hebrews 11:21"],
+      lifeEvents: {
+        birth: "Twin to Esau, younger son",
+        death: "Age 147 in Egypt",
+        keyMoment: "Wrestling with God at Peniel (Genesis 32)"
+      },
+      characterType: "Transformed wrestler",
+      modernApplication: "God transforms our character through divine encounters",
+      studySource: "Based on character study principles from StudyandObey.com"
+    },
+
+    "Joseph": {
+      name: "Joseph",
+      testament: "Old",
+      category: "Patriarch/Leader", 
+      thematicRole: "For those who suffer injustice but trust God's sovereignty",
+      elementsOfPower: [
+        "Integrity in the face of temptation",
+        "Administrative and leadership gifts",
+        "Ability to interpret dreams and see God's plan",
+        "Forgiveness toward those who wronged him"
+      ],
+      weaknessesAndFailures: [
+        "Youthful pride and tactless sharing of dreams",
+        "Possible favoritism from his father",
+        "Brief moments of despair in prison",
+        "Testing his brothers harshly"
+      ],
+      victoriesOverDifficulties: [
+        "Remained faithful during slavery",
+        "Resisted Potiphar's wife's advances",
+        "Maintained hope during imprisonment",
+        "Saved Egypt and his family from famine"
+      ],
+      relationshipToGod: "Trusted God's sovereignty through all circumstances",
+      keyVerses: ["Genesis 50:20", "Genesis 39:9", "Psalm 105:17-22"],
+      lifeEvents: {
+        birth: "Beloved son of Jacob and Rachel",
+        death: "Age 110 in Egypt",
+        keyMoment: "Revelation to his brothers (Genesis 45)"
+      },
+      characterType: "Sovereign servant",
+      modernApplication: "God works all things together for good for those who love Him",
+      studySource: "Based on character study principles from StudyandObey.com"
+    },
+
+    "Ruth": {
+      name: "Ruth",
+      testament: "Old",
+      category: "Foreign Convert",
+      thematicRole: "For those who show loyalty and find redemption",
+      elementsOfPower: [
+        "Extraordinary loyalty and devotion",
+        "Willingness to embrace the true God", 
+        "Humble and hardworking character",
+        "Trust in God's provision"
+      ],
+      weaknessesAndFailures: [
+        "Limited resources as a widow",
+        "Foreign background in a xenophobic culture",
+        "Vulnerable position as a single woman",
+        "Risk in approaching Boaz"
+      ],
+      victoriesOverDifficulties: [
+        "Chose God and Israel over her homeland",
+        "Provided for Naomi through gleaning",
+        "Found favor with Boaz",
+        "Became ancestor of David and Christ"
+      ],
+      relationshipToGod: "Faithful convert who found grace and redemption",
+      keyVerses: ["Ruth 1:16", "Ruth 2:12", "Matthew 1:5"],
+      lifeEvents: {
+        birth: "Moabite woman",
+        death: "Unknown, but lived to see great-grandchildren",
+        keyMoment: "Declaration of loyalty to Naomi (Ruth 1)"
+      },
+      characterType: "Loyal redeemed",
+      modernApplication: "God rewards faithfulness and includes outsiders in His plan",
+      studySource: "Based on character study principles from StudyandObey.com"
+    },
+
     "Paul": {
       name: "Paul (Saul)",
       testament: "New",
@@ -309,6 +555,146 @@ module.exports = function() {
       },
       characterType: "Uncompromising saint",
       modernApplication: "Faithfulness to God brings His protection and blessing"
+    },
+
+    "Ezra": {
+      name: "Ezra",
+      testament: "Old",
+      category: "Priest/Scribe/Reformer",
+      thematicRole: "For those who lead spiritual renewal through God's Word",
+      elementsOfPower: [
+        "Deep knowledge of Scripture",
+        "Commitment to teaching and applying God's law",
+        "Leadership in spiritual reformation",
+        "Courage to confront sin"
+      ],
+      weaknessesAndFailures: [
+        "Possibly overly harsh in family matters",
+        "Cultural rigidity at times",
+        "Dependence on royal patronage",
+        "Limited understanding of grace"
+      ],
+      victoriesOverDifficulties: [
+        "Led return from Babylonian exile",
+        "Restored proper worship in Jerusalem",
+        "Reformed mixed marriages issue",
+        "Established Scripture reading tradition"
+      ],
+      relationshipToGod: "Devoted student and teacher of God's Word",
+      keyVerses: ["Ezra 7:10", "Ezra 7:6", "Nehemiah 8:1-8"],
+      lifeEvents: {
+        birth: "Babylon, during exile",
+        death: "Unknown, but lived to see temple restoration",
+        keyMoment: "Reading the Law to the people (Nehemiah 8)"
+      },
+      characterType: "Scripture-centered reformer",
+      modernApplication: "God uses those devoted to His Word to lead spiritual renewal",
+      studySource: "Based on character study principles from StudyandObey.com"
+    },
+
+    "Nehemiah": {
+      name: "Nehemiah", 
+      testament: "Old",
+      category: "Governor/Reformer",
+      thematicRole: "For those who build and restore what has been broken",
+      elementsOfPower: [
+        "Administrative and organizational skills",
+        "Dependence on prayer in all situations",
+        "Courage to face opposition",
+        "Commitment to completing God's work"
+      ],
+      weaknessesAndFailures: [
+        "Occasional harshness with opponents",
+        "Cultural exclusivism",
+        "Pride in his accomplishments",
+        "Impatience with slow progress"
+      ],
+      victoriesOverDifficulties: [
+        "Rebuilt Jerusalem's walls in 52 days",
+        "Overcame external and internal opposition",
+        "Implemented economic and social reforms",
+        "Established security for the returned exiles"
+      ],
+      relationshipToGod: "Prayerful leader who sought God's guidance constantly",
+      keyVerses: ["Nehemiah 1:4", "Nehemiah 6:3", "Nehemiah 4:9"],
+      lifeEvents: {
+        birth: "Born in exile, served in Persian court",
+        death: "Returned to Persia, later came back to Jerusalem",
+        keyMoment: "Hearing about Jerusalem's broken walls (Nehemiah 1)"
+      },
+      characterType: "Prayerful builder",
+      modernApplication: "God accomplishes great things through those who combine prayer with action",
+      studySource: "Based on character study principles from StudyandObey.com"
+    },
+
+    "Daniel": {
+      name: "Daniel",
+      testament: "Old",
+      category: "Prophet/Government Official",
+      thematicRole: "For those who maintain faith in hostile environments",
+      elementsOfPower: [
+        "Unwavering commitment to God's law",
+        "Supernatural gift of dream interpretation",
+        "Integrity in government service",
+        "Prophetic insight into future events"
+      ],
+      weaknessesAndFailures: [
+        "Possible pride in his own righteousness",
+        "Limited recorded failures or struggles",
+        "Cultural adaptation while maintaining faith",
+        "Grief over his people's continued rebellion"
+      ],
+      victoriesOverDifficulties: [
+        "Maintained Jewish dietary laws in Babylon",
+        "Survived the lion's den",
+        "Served faithfully under multiple kings",
+        "Received and recorded prophetic visions"
+      ],
+      relationshipToGod: "Greatly beloved, faithful prophet in exile",
+      keyVerses: ["Daniel 1:8", "Daniel 6:10", "Daniel 9:23"],
+      lifeEvents: {
+        birth: "Jerusalem nobility, taken to Babylon as youth",
+        death: "Old age in Babylon",
+        keyMoment: "Refusing the king's food (Daniel 1)"
+      },
+      characterType: "Faithful exile",
+      modernApplication: "Maintaining faithfulness to God in ungodly environments is possible and powerful",
+      studySource: "Based on character study principles from StudyandObey.com"
+    },
+
+    "Elijah": {
+      name: "Elijah",
+      testament: "Old",
+      category: "Prophet",
+      thematicRole: "For those who stand alone against corruption and compromise",
+      elementsOfPower: [
+        "Miraculous power over nature",
+        "Courage to confront wicked rulers",
+        "Direct communion with God",
+        "Zeal for God's honor and law"
+      ],
+      weaknessesAndFailures: [
+        "Despair and discouragement after victories",
+        "Feeling alone in his calling",
+        "Harsh judgment on those who opposed God",
+        "Fear of Jezebel's threats"
+      ],
+      victoriesOverDifficulties: [
+        "Confronted 450 prophets of Baal on Mount Carmel",
+        "Raised the widow's son from the dead",
+        "Survived the drought he predicted",
+        "Taken up to heaven without dying"
+      ],
+      relationshipToGod: "Fiery prophet, precursor to John the Baptist",
+      keyVerses: ["1 Kings 18:21", "1 Kings 19:12", "Malachi 4:5"],
+      lifeEvents: {
+        birth: "Tishbe in Gilead",
+        death: "Taken up in a whirlwind",
+        keyMoment: "Mount Carmel contest (1 Kings 18)"
+      },
+      characterType: "Fiery reformer",
+      modernApplication: "God provides strength for those who stand courageously for truth",
+      studySource: "Based on character study principles from StudyandObey.com"
     },
 
     // Add character categories for organization

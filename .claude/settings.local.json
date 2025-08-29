@@ -38,7 +38,9 @@
       "Bash(open http://localhost:8083/characters/)",
       "Bash(open /Users/andrewhall/repo/bible-static-site/test-search.html)",
       "Bash(open http://localhost:8083/books/genesis/)",
-      "Bash(open http://localhost:8083/categories/law/)"
+      "Bash(open http://localhost:8083/categories/law/)",
+      "WebFetch(domain:studyandobey.com)",
+      "Bash(open http://localhost:8083/characters/samuel/)"
     ],
     "deny": [],
     "ask": []
