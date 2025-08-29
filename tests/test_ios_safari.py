@@ -14,7 +14,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.touch_actions import TouchActions
+# TouchActions is deprecated in Selenium 4.x, using ActionChains instead
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from appium import webdriver as appium_webdriver
 from appium.options.ios import XCUITestOptions
@@ -453,8 +453,9 @@ class TestIOSSpecific:
         # Test touch events on interactive elements
         buttons = driver.find_elements(By.TAG_NAME, "button")
         if buttons:
-            touch_actions = TouchActions(driver)
-            touch_actions.tap(buttons[0]).perform()
+            # Use ActionChains for touch simulation instead of deprecated TouchActions
+            touch_actions = ActionChains(driver)
+            touch_actions.click(buttons[0]).perform()
             time.sleep(1)
             # Should not cause any errors
         

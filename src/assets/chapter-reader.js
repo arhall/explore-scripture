@@ -1640,10 +1640,24 @@ class ChapterReader {
   }
 }
 
-// Initialize when DOM is ready
-document.addEventListener('DOMContentLoaded', () => {
-  window.chapterReaderInstance = new ChapterReader();
-});
+// Initialize when DOM is ready OR immediately if DOM is already ready
+function initializeChapterReader() {
+  if (!window.chapterReaderInstance) {
+    window.chapterReaderInstance = new ChapterReader();
+    console.log('[ChapterReader] Initialized and chapter buttons added');
+  }
+}
+
+// Check if DOM is already ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initializeChapterReader);
+} else {
+  // DOM is already ready, initialize immediately
+  initializeChapterReader();
+}
+
+// Also listen for custom events from module loader
+document.addEventListener('chapterReaderLoaded', initializeChapterReader);
 
 // Global function for use in onclick handlers
 function openChapterReader(reference, book, chapter) {

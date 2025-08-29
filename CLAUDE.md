@@ -41,7 +41,8 @@ The dev server runs Eleventy with `--serve` flag, providing live reload during d
 - **`src/_data/charactersByBook/`**: Character appearance data organized by individual biblical books
 
 ### Template System (Nunjucks)
-- **Base Layout** (`src/_includes/layouts/base-minimal.njk`): Clean HTML structure with navigation, theme toggle, and modern styling
+- **Base Layout** (`src/_includes/layouts/base-minimal.njk`): Clean HTML structure with navigation, theme toggle, PWA support, and dark mode default
+- **Full Base Layout** (`src/_includes/layouts/base.njk`): Enhanced layout with YouTube video support and CSP headers
 - **Book Layout** (`src/_includes/layouts/book.njk`): Individual book pages with metadata display, chapter summary tables, and integrated chapter reader
 - **Character Layout** (`src/_includes/layouts/character.njk`): Professional character study pages with gospel connections
 - **Category Layout** (`src/_includes/layouts/category.njk`): Lists books within each category
@@ -57,9 +58,13 @@ The dev server runs Eleventy with `--serve` flag, providing live reload during d
   - Mobile-optimized with maximized viewport space
   - Single button per chapter (no duplicates)
   - Smart duplicate detection and clean UI
+  - Fixed initialization for dynamic module loading
 - **Scripture Widget** (`src/assets/scripture-widget.js`): Hover/tap Scripture references with verse previews
 - **Character Search** (`src/assets/character-search.js`): Fast client-side character search with filtering
-- **Theme Manager** (`src/assets/theme-manager.js`): 24 professional color themes with automatic dark mode detection
+- **Search Engine** (`src/assets/search-engine.js`): Advanced search with fuzzy matching, n-gram indexing, and relevance scoring
+- **Theme Manager** (`src/assets/theme-manager.js`): 24 professional color themes with dark mode as default
+- **Module Loader** (`src/assets/module-loader.js`): Dynamic JavaScript module loading with lazy loading for performance
+- **PWA Support**: Service worker, offline caching, install prompts, and update notifications
 
 ### URL Structure
 - Home: `/` (lists categories and books)
@@ -81,8 +86,9 @@ The dev server runs Eleventy with `--serve` flag, providing live reload during d
 - **Responsive Grid**: CSS Grid and Flexbox for optimal layouts across devices  
 - **Character Pages**: Card-based design with clean typography and optimal information architecture
 - **Mobile-First**: Responsive design prioritizing mobile Bible study experience
-- **Theme System**: Comprehensive theming with 24 color options and automatic dark mode
+- **Theme System**: Comprehensive theming with 24 color options and dark mode as default
 - **Accessibility**: ARIA labels, keyboard navigation, focus states, and semantic HTML
+- **Progressive Web App**: Offline caching, install prompts, and native app-like experience
 
 ## File Organization
 
@@ -105,7 +111,10 @@ src/
 │   ├── chapter-reader.js   # Chapter reading modal with translations
 │   ├── character-search.js # Client-side character search
 │   ├── scripture-widget.js # Scripture reference tooltips
-│   └── theme-manager.js    # 24-theme system with dark mode
+│   ├── theme-manager.js    # 24-theme system with dark mode
+│   ├── search-engine.js    # Advanced fuzzy search with n-gram indexing
+│   ├── module-loader.js    # Dynamic module loading with lazy loading
+│   └── logger.js           # Comprehensive logging and telemetry
 ├── *.njk                   # Page templates and generators
 │   ├── books.njk          # Generates 66 book pages
 │   ├── characters.njk     # Generates 229 character pages

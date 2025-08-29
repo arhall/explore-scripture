@@ -95,27 +95,33 @@ docs/IOS_TESTING_GUIDE.md   # Complete iOS testing setup guide
 
 #### Validated Functionality
 ✅ **Page Rendering**: All page types (home, books, characters, categories), navigation, content sections  
-✅ **Interactive Features**: 24-theme system, chapter reader modal, character search, translation switching  
+✅ **Interactive Features**: 24-theme system with dark mode default, chapter reader modal, character search, translation switching  
 ✅ **Character Studies**: Professional layouts, gospel connections, appearance tracking, mobile responsiveness
 ✅ **Bible Reading**: Chapter reader with 7 translations (ESV, NIV, NLT, NKJV, NASB, AMPC, WEB), mobile optimization
 ✅ **Responsive Design**: Mobile-first approach, optimized viewports, clean button hierarchy  
 ✅ **Accessibility**: ARIA labels, keyboard navigation, semantic HTML, theme compatibility  
-✅ **Performance**: Fast static generation (300+ pages), optimized assets, minimal JavaScript footprint
+✅ **Performance**: Fast static generation (300+ pages), optimized assets, lazy loading with module loader
 ✅ **Modern UX**: Clean professional design, proper spacing, no excessive decorations  
 ✅ **iOS Safari Compatibility**: Native iOS Safari testing with touch events and viewport behavior
-✅ **Mobile-First Design**: Full-screen modals, view toggles, 44px touch targets, responsive breakpoints  
+✅ **Mobile-First Design**: Full-screen modals, view toggles, 44px touch targets, responsive breakpoints
+✅ **Progressive Web App**: Service worker, offline caching, install prompts, update notifications
+✅ **Regression Testing**: YouTube video support, chapter reader functionality, theme toggle restoration
+✅ **Advanced Search**: Fuzzy matching with n-gram indexing, relevance scoring, and synonym support  
 
 #### Build Quality Gates
 - Homepage must load within 10 seconds with proper navigation
 - All page types (books, characters, categories) must render correctly
-- Character reader modal must function with live translation switching
+- Character reader modal must function with live translation switching and dynamic loading
 - Character search must filter results without page refresh  
 - No duplicate "Read Chapter" buttons per chapter
 - Mobile design must maximize viewport space (hidden external links on mobile)
 - 229 character pages must generate with professional layouts
 - No critical JavaScript errors (excludes optional modules)
-- Theme system must support all 24 themes with proper contrast
+- Theme system must support all 24 themes with dark mode as default
 - AMPC and other Bible translation links must work correctly
+- YouTube Bible Project videos must load without CSP blocking
+- Service worker must register successfully for PWA functionality
+- Dynamic module loading must work without breaking existing features
 
 ### 🏗️ CI/CD Integration
 

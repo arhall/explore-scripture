@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Security Headers -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://www.biblegateway.com https://api.esv.org; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.esv.org https://bible-api.com https://www.biblegateway.com; frame-src 'self' https://www.biblegateway.com; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://www.biblegateway.com https://api.esv.org https://www.youtube.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: https://i.ytimg.com https://yt3.ggpht.com; connect-src 'self' https://api.esv.org https://bible-api.com https://www.biblegateway.com https://www.youtube.com; frame-src 'self' https://www.biblegateway.com https://www.youtube.com https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
   <meta http-equiv="X-XSS-Protection" content="1; mode=block">
@@ -24,27 +24,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <meta name="description" content="{{ description or 'Chapter-by-chapter Bible summaries with categories and metadata.' }}">
-  <!-- Security Configuration (loaded first) -->
-  <script src="/assets/security-config.js"></script>
+  <!-- Performance Optimizers (loaded first) -->
+  <script src="/assets/css-optimizer.js" async></script>
+  <script src="/assets/image-optimizer.js" async></script>
   
-  <!-- OpenTelemetry Web SDK -->
-  <script src="https://unpkg.com/@opentelemetry/api@1.7.0/build/esm/index.js" type="module"></script>
-  <script src="https://unpkg.com/@opentelemetry/sdk-web@1.19.0/build/esm/index.js" type="module"></script>
-  <script src="https://unpkg.com/@opentelemetry/auto-instrumentations-web@0.35.0/build/esm/index.js" type="module"></script>
-  <!-- Logging System -->
-  <script src="/assets/logger.js"></script>
-  <!-- Telemetry System -->
-  <script src="/assets/telemetry.js" type="module"></script>
-  <!-- Debug Dashboard -->
-  <script src="/assets/debug-dashboard.js"></script>
-  <!-- Scripture Widget -->
-  <script src="/assets/scripture-widget.js"></script>
-  {% if layout == "book.njk" %}
-  <!-- Chapter Reader (loaded only on book pages) -->
-  <script src="/assets/chapter-reader.js"></script>
-  {% endif %}
-  <!-- Theme Manager -->
-  <script src="/assets/theme-manager.js"></script>
+  <!-- Module Loader (handles all other JS loading) -->
+  <script src="/assets/module-loader.js"></script>
+  
+  <!-- OpenTelemetry Web SDK (loaded lazily via module loader) -->
+  <link rel="preload" href="https://unpkg.com/@opentelemetry/api@1.7.0/build/esm/index.js" as="script" crossorigin>
+  <link rel="preload" href="https://unpkg.com/@opentelemetry/sdk-web@1.19.0/build/esm/index.js" as="script" crossorigin>
+  <link rel="preload" href="https://unpkg.com/@opentelemetry/auto-instrumentations-web@0.35.0/build/esm/index.js" as="script" crossorigin>
 </head>
 <body>
   <div class="container">
@@ -55,6 +45,9 @@
         <a href="/characters/" class="nav-link {% if page.url.startsWith('/characters/') %}active{% endif %}">Characters</a>
         <a href="/gospel-thread/" class="nav-link {% if page.url == '/gospel-thread/' %}active{% endif %}">Gospel Thread</a>
         <a href="/links/" class="nav-link {% if page.url == '/links/' %}active{% endif %}">Links</a>
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
         <button class="font-size-toggle" onclick="toggleFontSizeControls()" aria-label="Toggle font size controls">
           <span class="font-size-icon">Aa</span>
         </button>
@@ -1788,8 +1781,8 @@
     // Initialize theme on page load
     document.addEventListener('DOMContentLoaded', function() {
       const savedTheme = localStorage.getItem('theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+      // Default to dark mode (changed from light mode default)
+      const initialTheme = savedTheme || 'dark';
       
       document.documentElement.setAttribute('data-theme', initialTheme);
       

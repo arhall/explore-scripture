@@ -40,7 +40,19 @@
       "Bash(open http://localhost:8083/books/genesis/)",
       "Bash(open http://localhost:8083/categories/law/)",
       "WebFetch(domain:studyandobey.com)",
-      "Bash(open http://localhost:8083/characters/samuel/)"
+      "Bash(open http://localhost:8083/characters/samuel/)",
+      "Bash(open http://localhost:8084/books/genesis/)",
+      "Bash(open http://localhost:8085/)",
+      "Bash(open http://localhost:8085/books/genesis/)",
+      "Bash(python -m pytest tests/test_regression_fixes.py::TestRegressionFixes::test_theme_toggle_functionality -v -s)",
+      "Bash(pip3 install:*)",
+      "Bash(open http://localhost:8086/books/genesis/)",
+      "Bash(open http://localhost:8086/test-regression-fixes.html)",
+      "Bash(./run_regression_tests.sh:*)",
+      "Bash(open http://localhost:8087/books/genesis/)",
+      "Bash(open http://localhost:8087/test-chapter-reader.html)",
+      "Bash(python -m pytest tests/ -v --tb=short)",
+      "Bash(python -m pytest tests/test_bible_explorer.py -v --tb=short)"
     ],
     "deny": [],
     "ask": []
