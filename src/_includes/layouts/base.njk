@@ -161,113 +161,6 @@
       </div>
     </div>
     
-    <div class="search-container">
-      <div class="search-box">
-        <div class="search-icon">⌕</div>
-        <input type="text" class="search-input" placeholder="Search books, chapters, or summaries..." id="searchInput">
-        <div class="search-shortcut-hint" id="searchShortcut">⌘K</div>
-        <button class="search-filters-toggle" id="searchFiltersToggle" onclick="toggleSearchFilters()" aria-label="Toggle search filters">
-          <span class="filter-icon">⚙</span>
-        </button>
-        <div class="search-results" id="searchResults"></div>
-      </div>
-      
-      <div class="search-filters" id="searchFilters" style="display: none;">
-        <div class="search-filters-header">
-          <h4>Refine Search</h4>
-          <button class="search-filters-clear" onclick="clearAllFilters()">Clear All</button>
-        </div>
-        
-        <div class="filter-group">
-          <label class="filter-label">Content Type</label>
-          <div class="filter-options">
-            <label class="filter-checkbox">
-              <input type="checkbox" name="contentType" value="book" checked>
-              <span class="checkmark">▦</span>
-              Books
-            </label>
-            <label class="filter-checkbox">
-              <input type="checkbox" name="contentType" value="character" checked>
-              <span class="checkmark">◯</span>
-              Characters
-            </label>
-            <label class="filter-checkbox">
-              <input type="checkbox" name="contentType" value="chapter" checked>
-              <span class="checkmark">□</span>
-              Chapters
-            </label>
-            <label class="filter-checkbox">
-              <input type="checkbox" name="contentType" value="gospel-theme" checked>
-              <span class="checkmark">∿</span>
-              Gospel Themes
-            </label>
-          </div>
-        </div>
-        
-        <div class="filter-group">
-          <label class="filter-label">Testament</label>
-          <div class="filter-options">
-            <label class="filter-checkbox">
-              <input type="checkbox" name="testament" value="Old Testament" checked>
-              <span class="checkmark">◉</span>
-              Old Testament
-            </label>
-            <label class="filter-checkbox">
-              <input type="checkbox" name="testament" value="New Testament" checked>
-              <span class="checkmark">†</span>
-              New Testament
-            </label>
-          </div>
-        </div>
-        
-        <div class="filter-group">
-          <label class="filter-label">Category</label>
-          <div class="filter-options">
-            <label class="filter-checkbox">
-              <input type="checkbox" name="category" value="Law" checked>
-              <span class="checkmark">⚖</span>
-              Law
-            </label>
-            <label class="filter-checkbox">
-              <input type="checkbox" name="category" value="History" checked>
-              <span class="checkmark">◐</span>
-              History
-            </label>
-            <label class="filter-checkbox">
-              <input type="checkbox" name="category" value="Poetry" checked>
-              <span class="checkmark">♪</span>
-              Poetry
-            </label>
-            <label class="filter-checkbox">
-              <input type="checkbox" name="category" value="Major Prophets" checked>
-              <span class="checkmark">▲</span>
-              Major Prophets
-            </label>
-            <label class="filter-checkbox">
-              <input type="checkbox" name="category" value="Minor Prophets" checked>
-              <span class="checkmark">△</span>
-              Minor Prophets
-            </label>
-            <label class="filter-checkbox">
-              <input type="checkbox" name="category" value="Gospels" checked>
-              <span class="checkmark">✦</span>
-              Gospels
-            </label>
-            <label class="filter-checkbox">
-              <input type="checkbox" name="category" value="Acts and Letters" checked>
-              <span class="checkmark">▣</span>
-              Acts & Letters
-            </label>
-            <label class="filter-checkbox">
-              <input type="checkbox" name="category" value="Revelation" checked>
-              <span class="checkmark">★</span>
-              Revelation
-            </label>
-          </div>
-        </div>
-      </div>
-    </div>
-    
     {% include "components/breadcrumb.njk" %}
     
     {{ content | safe }}
@@ -278,395 +171,44 @@
   </div>
 
   <script>
-    // Search functionality
-    let searchData = [];
-    let searchTimeout;
-    let searchHistory = [];
+    // Essential functionality only (no search)
+    
+    // Recent items and bookmarks functionality
     let recentItems = [];
     let bookmarkedItems = [];
 
-    // Initialize search data
-    async function initializeSearch() {
+    // Initialize data from localStorage
+    function initializeData() {
       try {
-        const books = {% if books %}{{ books | dump | safe }}{% else %}[]{% endif %};
-        const categories = {% if categories %}{{ categories | dump | safe }}{% else %}[]{% endif %};
-        const characters = {% if characters %}{{ characters | dump | safe }}{% else %}[]{% endif %};
-        const gospelThreads = {% if gospelThreads %}{{ gospelThreads | dump | safe }}{% else %}{}{% endif %};
-        const crossReferences = {% if crossReferences %}{{ crossReferences | dump | safe }}{% else %}{}{% endif %};
-        
-        // Only show error if we're on a page that should have data
-        const shouldHaveData = window.location.pathname.includes('/books/') || 
-                              window.location.pathname.includes('/characters/') || 
-                              window.location.pathname.includes('/categories/');
-        
-        if (shouldHaveData && (!books || !Array.isArray(books) || books.length === 0)) {
-          throw new Error('Books data is invalid or missing');
+        const savedRecent = localStorage.getItem('recentItems');
+        if (savedRecent) {
+          recentItems = JSON.parse(savedRecent).slice(0, 10);
         }
         
-        // Continue with empty arrays if no data available (like on homepage)
-        if (!Array.isArray(books) || books.length === 0) {
-          if (window.logger) {
-            window.logger.info('No books data available for search - likely on homepage or non-content page');
-          }
-          // Initialize empty search data but don't throw error
-          searchData = [];
-          return;
+        const savedBookmarks = localStorage.getItem('bookmarkedItems');
+        if (savedBookmarks) {
+          bookmarkedItems = JSON.parse(savedBookmarks);
         }
-        
-        // Process books and chapters into searchable items
-        books.forEach((book, index) => {
-          try {
-            if (!book.name || !book.slug) {
-              throw new Error(`Book at index ${index} missing required fields`);
-            }
-            
-            // Add book itself
-            let bookSubtitle = `Book by ${book.author || 'Unknown'} • ${book.category || 'Unknown'}`;
-            
-            // Special handling for single-chapter books that might be confused with characters
-            const singleChapterBooks = ['Obadiah', 'Philemon', 'Jude', '2 John', '3 John'];
-            if (singleChapterBooks.includes(book.name)) {
-              bookSubtitle = `Single-chapter book by ${book.author || 'Unknown'} • ${book.category || 'Unknown'}`;
-            }
-            
-            searchData.push({
-              type: 'book',
-              title: book.name,
-              subtitle: bookSubtitle,
-              content: `${book.name} ${book.author || ''} ${book.category || ''} ${book.testament || ''}`,
-              url: `/books/${book.slug}/`,
-              typeLabel: 'Book',
-              testament: book.testament,
-              category: book.category
-            });
-
-            // Add chapters with summaries
-            if (book.chapterSummaries && typeof book.chapterSummaries === 'object') {
-              Object.entries(book.chapterSummaries).forEach(([chapter, summary]) => {
-                if (summary && typeof summary === 'string') {
-                  searchData.push({
-                    type: 'chapter',
-                    title: `${book.name} ${chapter}`,
-                    subtitle: `${summary.substring(0, 80)}...`,
-                    content: `${book.name} chapter ${chapter} ${summary}`,
-                    url: `/books/${book.slug}/#chapter-${chapter}`,
-                    typeLabel: 'Chapter',
-                    testament: book.testament,
-                    category: book.category
-                  });
-                }
-              });
-            }
-          } catch (bookError) {
-            if (window.logger) {
-              window.logger.error('Error processing book for search', { 
-                book: book.name || 'unknown', 
-                error: bookError.message 
-              });
-            }
-          }
-        });
-
-        // Add categories
-        if (Array.isArray(categories)) {
-          categories.forEach((category, index) => {
-          try {
-            if (!category.name || !category.slug) {
-              throw new Error(`Category at index ${index} missing required fields`);
-            }
-            
-            searchData.push({
-              type: 'category',
-              title: category.name,
-              subtitle: `${category.description || 'Biblical section'}`,
-              content: `${category.name} ${category.description || ''} ${category.themes ? category.themes.join(' ') : ''}`,
-              url: `/categories/${category.slug}/`,
-              typeLabel: 'Section'
-            });
-          } catch (categoryError) {
-            if (window.logger) {
-              window.logger.error('Error processing category for search', { 
-                category: category.name || 'unknown', 
-                error: categoryError.message 
-              });
-            }
-          }
-        });
-        }
-
-        // Add characters
-        if (Array.isArray(characters)) {
-          characters.forEach((character, index) => {
-          try {
-            if (!character.name || !character.slug) {
-              throw new Error(`Character at index ${index} missing required fields`);
-            }
-            
-            searchData.push({
-              type: 'character',
-              title: character.name,
-              subtitle: `${character.totalAppearances} appearances in ${character.totalBooks} books`,
-              content: `${character.name} ${character.books ? character.books.join(' ') : ''}`,
-              url: `/characters/${character.slug}/`,
-              typeLabel: 'Character'
-            });
-          } catch (characterError) {
-            if (window.logger) {
-              window.logger.error('Error processing character for search', { 
-                character: character.name || 'unknown', 
-                error: characterError.message 
-              });
-            }
-          }
-        });
-        }
-
-        // Add Gospel Thread themes
-        if (gospelThreads && gospelThreads.coreThemes) {
-          Object.entries(gospelThreads.coreThemes).forEach(([themeId, theme]) => {
-            searchData.push({
-              type: 'gospel-theme',
-              title: theme.name,
-              subtitle: `${theme.description}`,
-              content: `${theme.name} ${theme.description} ${theme.gospelConnection} gospel christ jesus salvation`,
-              url: `/gospel-thread/#theme-${themeId}`,
-              typeLabel: 'Gospel Theme'
-            });
-          });
-        }
-        
-        // Load search history from localStorage
-        try {
-          const savedHistory = localStorage.getItem('searchHistory');
-          if (savedHistory) {
-            searchHistory = JSON.parse(savedHistory).slice(0, 10); // Keep only last 10 searches
-          }
-        } catch (error) {
-          console.warn('Failed to load search history:', error);
-          searchHistory = [];
-        }
-        
-        // Load recent items and bookmarks
-        try {
-          const savedRecent = localStorage.getItem('recentItems');
-          if (savedRecent) {
-            recentItems = JSON.parse(savedRecent).slice(0, 20); // Keep last 20 recent items
-          }
-        } catch (error) {
-          console.warn('Failed to load recent items:', error);
-          recentItems = [];
-        }
-        
-        try {
-          const savedBookmarks = localStorage.getItem('bookmarkedItems');
-          if (savedBookmarks) {
-            bookmarkedItems = JSON.parse(savedBookmarks);
-          }
-        } catch (error) {
-          console.warn('Failed to load bookmarks:', error);
-          bookmarkedItems = [];
-        }
-        
-        if (window.logger) {
-          window.logger.info('Search initialization completed', {
-            totalItems: searchData.length,
-            books: books.length,
-            categories: categories.length,
-            characters: characters.length,
-            historyItems: searchHistory.length
-          });
-        }
-        
       } catch (error) {
-        const errorMessage = 'Search initialization failed: ' + error.message;
-        console.error(errorMessage, error);
-        
-        // Log the error
-        if (window.logger) {
-          window.logger.error(errorMessage, { 
-            error: error.message,
-            stack: error.stack,
-            component: 'search-init'
-          });
-        }
-        
-        if (window.telemetry) {
-          window.telemetry.recordError(error, { component: 'search-initialization' });
-        }
-        
-        // Fallback: show error message to user
-        const searchContainer = document.querySelector('.search-container');
-        if (searchContainer) {
-          const errorDiv = document.createElement('div');
-          errorDiv.style.cssText = 'background: #ff4444; color: white; padding: 0.5rem; border-radius: 4px; margin-bottom: 1rem; text-align: center;';
-          errorDiv.textContent = 'Search functionality temporarily unavailable';
-          searchContainer.appendChild(errorDiv);
-        }
+        console.warn('Failed to load saved data:', error);
+        recentItems = [];
+        bookmarkedItems = [];
       }
+      
+      updateUI();
     }
-
-    // Search function
-    function performSearch(query) {
-      if (!query || query.length < 2) return [];
+    
+    function addToRecentItems(pageData) {
+      if (!pageData || !pageData.title) return;
       
-      try {
-        const startTime = performance.now();
-        const lowercaseQuery = query.toLowerCase();
-        
-        if (!searchData || !Array.isArray(searchData)) {
-          throw new Error('Search data not properly initialized');
-        }
-        
-        const results = searchData
-          .map(item => {
-            try {
-              const score = calculateRelevance(item, lowercaseQuery);
-              return { ...item, score };
-            } catch (itemError) {
-              if (window.logger) {
-                window.logger.warn('Error calculating relevance for search item', { 
-                  item: item.title || 'unknown', 
-                  error: itemError.message 
-                });
-              }
-              return { ...item, score: 0 };
-            }
-          })
-          .filter(item => item.score > 0)
-          .sort((a, b) => {
-            // First sort by score
-            if (b.score !== a.score) return b.score - a.score;
-            
-            // Then prioritize: books > characters > chapters > categories
-            const typeOrder = { book: 1, character: 2, chapter: 3, category: 4 };
-            return (typeOrder[a.type] || 5) - (typeOrder[b.type] || 5);
-          })
-          .slice(0, 10);
-        
-        const duration = performance.now() - startTime;
-        
-        // Log search with both logger and telemetry
-        if (window.logger) {
-          window.logger.search(query, results, duration);
-        }
-        if (window.telemetry) {
-          window.telemetry.recordSearch(query, results.length, duration);
-        }
-        
-        return results;
-        
-      } catch (error) {
-        const errorMessage = 'Search operation failed: ' + error.message;
-        console.error(errorMessage, error);
-        
-        // Log the error
-        if (window.logger) {
-          window.logger.error(errorMessage, { 
-            query: query.substring(0, 50),
-            error: error.message,
-            component: 'search-perform'
-          });
-        }
-        
-        if (window.telemetry) {
-          window.telemetry.recordError(error, { 
-            component: 'search-operation',
-            query_length: query.length 
-          });
-        }
-        
-        // Return empty results on error
-        return [];
-      }
-    }
-
-    // Add search query to history
-    function addToSearchHistory(query, result) {
-      if (!query || query.length < 2) return;
-      
-      const historyItem = {
-        query: query,
-        timestamp: Date.now(),
-        resultType: result ? result.type : null,
-        resultTitle: result ? result.title : null
-      };
-      
-      // Remove existing entry for this query
-      searchHistory = searchHistory.filter(item => item.query.toLowerCase() !== query.toLowerCase());
+      // Remove if already exists
+      recentItems = recentItems.filter(item => item.url !== pageData.url);
       
       // Add to beginning
-      searchHistory.unshift(historyItem);
+      recentItems.unshift(pageData);
       
-      // Keep only last 10 items
-      searchHistory = searchHistory.slice(0, 10);
-      
-      // Save to localStorage
-      try {
-        localStorage.setItem('searchHistory', JSON.stringify(searchHistory));
-      } catch (error) {
-        console.warn('Failed to save search history:', error);
-      }
-    }
-
-    // Get search history for display
-    function getSearchHistory(currentQuery = '') {
-      if (!searchHistory || searchHistory.length === 0) return [];
-      
-      // Filter out current query and show relevant history
-      return searchHistory
-        .filter(item => item.query.toLowerCase() !== currentQuery.toLowerCase())
-        .slice(0, 5)
-        .map(item => ({
-          type: 'history',
-          query: item.query,
-          timestamp: item.timestamp,
-          resultType: item.resultType,
-          resultTitle: item.resultTitle,
-          icon: '↻'
-        }));
-    }
-
-    // Clear search history
-    function clearSearchHistory() {
-      searchHistory = [];
-      try {
-        localStorage.removeItem('searchHistory');
-      } catch (error) {
-        console.warn('Failed to clear search history:', error);
-      }
-      
-      // Track history clear
-      if (window.telemetry) {
-        window.telemetry.recordUserAction('search-history-clear');
-      }
-    }
-
-    // Recent items management
-    function addToRecentItems(pageData) {
-      if (!pageData || !pageData.url) return;
-      
-      const recentItem = {
-        ...pageData,
-        timestamp: Date.now(),
-        visitCount: 1
-      };
-      
-      // Check if item already exists
-      const existingIndex = recentItems.findIndex(item => item.url === pageData.url);
-      if (existingIndex !== -1) {
-        // Update existing item
-        recentItems[existingIndex] = {
-          ...recentItems[existingIndex],
-          timestamp: Date.now(),
-          visitCount: (recentItems[existingIndex].visitCount || 1) + 1
-        };
-      } else {
-        // Add new item to beginning
-        recentItems.unshift(recentItem);
-      }
-      
-      // Keep only last 20 items
-      recentItems = recentItems.slice(0, 20);
+      // Keep only last 10
+      recentItems = recentItems.slice(0, 10);
       
       // Save to localStorage
       try {
@@ -674,46 +216,19 @@
       } catch (error) {
         console.warn('Failed to save recent items:', error);
       }
+      
+      updateUI();
     }
 
-    // Bookmark management
     function toggleBookmark(pageData) {
-      if (!pageData || !pageData.url) return false;
+      if (!pageData || !pageData.title) return;
       
-      const existingIndex = bookmarkedItems.findIndex(item => item.url === pageData.url);
+      const isBookmarked = bookmarkedItems.some(item => item.url === pageData.url);
       
-      if (existingIndex !== -1) {
-        // Remove bookmark
-        bookmarkedItems.splice(existingIndex, 1);
-        
-        // Track unbookmark
-        if (window.telemetry) {
-          window.telemetry.recordUserAction('bookmark-remove', pageData.url, {
-            type: pageData.type,
-            title: pageData.title
-          });
-        }
-        
-        updateBookmarkButton(false);
-        return false;
+      if (isBookmarked) {
+        bookmarkedItems = bookmarkedItems.filter(item => item.url !== pageData.url);
       } else {
-        // Add bookmark
-        const bookmarkItem = {
-          ...pageData,
-          bookmarkedAt: Date.now()
-        };
-        bookmarkedItems.unshift(bookmarkItem);
-        
-        // Track bookmark
-        if (window.telemetry) {
-          window.telemetry.recordUserAction('bookmark-add', pageData.url, {
-            type: pageData.type,
-            title: pageData.title
-          });
-        }
-        
-        updateBookmarkButton(true);
-        return true;
+        bookmarkedItems.push(pageData);
       }
       
       // Save to localStorage
@@ -722,30 +237,74 @@
       } catch (error) {
         console.warn('Failed to save bookmarks:', error);
       }
+      
+      updateUI();
+      return !isBookmarked;
     }
 
-    function isBookmarked(url) {
-      return bookmarkedItems.some(item => item.url === url);
+    function updateUI() {
+      // Update counts
+      document.getElementById('recentCount').textContent = recentItems.length;
+      document.getElementById('bookmarksCount').textContent = bookmarkedItems.length;
+      
+      // Update lists
+      updateRecentsList();
+      updateBookmarksList();
     }
 
-    function updateBookmarkButton(isBookmarked) {
-      const bookmarkBtn = document.querySelector('.bookmark-btn');
-      if (bookmarkBtn) {
-        const icon = bookmarkBtn.querySelector('.bookmark-icon');
-        const text = bookmarkBtn.querySelector('.bookmark-text');
-        
-        if (isBookmarked) {
-          icon.textContent = '★';
-          text.textContent = 'Bookmarked';
-          bookmarkBtn.classList.add('bookmarked');
-          bookmarkBtn.title = 'Remove bookmark';
-        } else {
-          icon.textContent = '☆';
-          text.textContent = 'Bookmark';
-          bookmarkBtn.classList.remove('bookmarked');
-          bookmarkBtn.title = 'Add bookmark';
-        }
+    function updateRecentsList() {
+      const container = document.getElementById('recentsList');
+      if (recentItems.length === 0) {
+        container.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-icon">↻</div>
+            <p>No recent items</p>
+            <small>Pages you visit will appear here</small>
+          </div>
+        `;
+      } else {
+        container.innerHTML = recentItems.map(item => `
+          <div class="quick-access-item">
+            <a href="${item.url}" class="item-link">
+              <span class="item-title">${item.title}</span>
+              <span class="item-subtitle">${item.subtitle || ''}</span>
+            </a>
+          </div>
+        `).join('');
       }
+    }
+
+    function updateBookmarksList() {
+      const container = document.getElementById('bookmarksList');
+      if (bookmarkedItems.length === 0) {
+        container.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-icon">★</div>
+            <p>No bookmarks yet</p>
+            <small>Bookmark pages to access them quickly later</small>
+          </div>
+        `;
+      } else {
+        container.innerHTML = bookmarkedItems.map(item => `
+          <div class="quick-access-item">
+            <a href="${item.url}" class="item-link">
+              <span class="item-title">${item.title}</span>
+              <span class="item-subtitle">${item.subtitle || ''}</span>
+            </a>
+            <button class="remove-bookmark" onclick="removeBookmark('${item.url}')" aria-label="Remove bookmark">×</button>
+          </div>
+        `).join('');
+      }
+    }
+
+    function removeBookmark(url) {
+      bookmarkedItems = bookmarkedItems.filter(item => item.url !== url);
+      try {
+        localStorage.setItem('bookmarkedItems', JSON.stringify(bookmarkedItems));
+      } catch (error) {
+        console.warn('Failed to save bookmarks:', error);
+      }
+      updateUI();
     }
 
     function clearAllRecentItems() {
@@ -755,11 +314,7 @@
       } catch (error) {
         console.warn('Failed to clear recent items:', error);
       }
-      
-      // Track clear recent
-      if (window.telemetry) {
-        window.telemetry.recordUserAction('recent-clear');
-      }
+      updateUI();
     }
 
     function clearAllBookmarks() {
@@ -769,41 +324,12 @@
       } catch (error) {
         console.warn('Failed to clear bookmarks:', error);
       }
-      
-      updateBookmarkButton(false);
-      
-      // Track clear bookmarks
-      if (window.telemetry) {
-        window.telemetry.recordUserAction('bookmarks-clear');
-      }
-      
-      updateRecentsBookmarksDisplay();
+      updateUI();
     }
 
-    // Recents/Bookmarks panel management
     function toggleRecentsBookmarks() {
       const panel = document.getElementById('recentsBookmarksPanel');
-      const isVisible = panel.classList.contains('visible');
-      
-      if (isVisible) {
-        panel.classList.remove('visible');
-      } else {
-        panel.classList.add('visible');
-        updateRecentsBookmarksDisplay();
-      }
-      
-      // Track panel usage
-      if (window.telemetry) {
-        window.telemetry.recordUserAction('recents-bookmarks-toggle', isVisible ? 'close' : 'open');
-      }
-    }
-
-    // Close recents panel with click away
-    function closeRecentsBookmarksPanel() {
-      const panel = document.getElementById('recentsBookmarksPanel');
-      if (panel && panel.classList.contains('visible')) {
-        panel.classList.remove('visible');
-      }
+      panel.classList.toggle('active');
     }
 
     function switchTab(tabName) {
@@ -815,1438 +341,188 @@
       
       document.getElementById(tabName + 'Tab').classList.add('active');
       document.getElementById(tabName + 'Content').classList.add('active');
-      
-      // Track tab switch
-      if (window.telemetry) {
-        window.telemetry.recordUserAction('recents-bookmarks-tab-switch', tabName);
-      }
     }
 
-    function updateRecentsBookmarksDisplay() {
-      // Update counts
-      document.getElementById('bookmarksCount').textContent = bookmarkedItems.length;
-      document.getElementById('recentCount').textContent = recentItems.length;
-      
-      // Update bookmarks list
-      const bookmarksList = document.getElementById('bookmarksList');
-      if (bookmarkedItems.length === 0) {
-        bookmarksList.innerHTML = `
-          <div class="empty-state">
-            <div class="empty-icon">★</div>
-            <p>No bookmarks yet</p>
-            <small>Bookmark pages to access them quickly later</small>
-          </div>
-        `;
-      } else {
-        bookmarksList.innerHTML = bookmarkedItems.map(item => `
-          <div class="quick-access-item">
-            <a href="${item.url}" class="item-link" onclick="navigateFromQuickAccess('${item.url}', '${item.type}', '${item.title}')">
-              <div class="item-icon">${getItemIcon(item.type)}</div>
-              <div class="item-content">
-                <div class="item-title">${item.title}</div>
-                <div class="item-meta">${item.type} • ${getTimeAgo(item.bookmarkedAt)}</div>
-              </div>
-            </a>
-            <button class="remove-item-btn" onclick="toggleBookmark({url: '${item.url}', type: '${item.type}', title: '${item.title.replace(/'/g, "\\'")}'})" title="Remove bookmark">
-              ×
-            </button>
-          </div>
-        `).join('');
-      }
-      
-      // Update recent list
-      const recentsList = document.getElementById('recentsList');
-      if (recentItems.length === 0) {
-        recentsList.innerHTML = `
-          <div class="empty-state">
-            <div class="empty-icon">↻</div>
-            <p>No recent items</p>
-            <small>Pages you visit will appear here</small>
-          </div>
-        `;
-      } else {
-        recentsList.innerHTML = recentItems.map(item => `
-          <div class="quick-access-item">
-            <a href="${item.url}" class="item-link" onclick="navigateFromQuickAccess('${item.url}', '${item.type}', '${item.title}')">
-              <div class="item-icon">${getItemIcon(item.type)}</div>
-              <div class="item-content">
-                <div class="item-title">${item.title}</div>
-                <div class="item-meta">${item.type}${item.visitCount > 1 ? ' • ' + item.visitCount + ' visits' : ''} • ${getTimeAgo(item.timestamp)}</div>
-              </div>
-            </a>
-            <button class="bookmark-quick-btn" onclick="toggleBookmark({url: '${item.url}', type: '${item.type}', title: '${item.title.replace(/'/g, "\\'")}'})" title="${isBookmarked(item.url) ? 'Remove bookmark' : 'Add bookmark'}">
-              ${isBookmarked(item.url) ? '★' : '☆'}
-            </button>
-          </div>
-        `).join('');
-      }
-    }
-
-    function getItemIcon(type) {
-      const icons = {
-        book: '▦',
-        character: '◯',
-        category: '◐',
-        chapter: '□',
-        'gospel-theme': '∿',
-        default: '□'
-      };
-      return icons[type] || icons.default;
-    }
-
-    function navigateFromQuickAccess(url, type, title) {
-      // Track navigation from quick access
-      if (window.telemetry) {
-        window.telemetry.recordNavigation('quick-access-click', url, {
-          type: type,
-          title: title
-        });
-      }
-      
-      // Close panel
-      toggleRecentsBookmarks();
-    }
-
-    function clearAllRecentItems() {
-      recentItems = [];
-      try {
-        localStorage.removeItem('recentItems');
-      } catch (error) {
-        console.warn('Failed to clear recent items:', error);
-      }
-      
-      updateRecentsBookmarksDisplay();
-      
-      // Track clear recent
-      if (window.telemetry) {
-        window.telemetry.recordUserAction('recent-clear');
-      }
-    }
-
-    function clearAllBookmarks() {
-      bookmarkedItems = [];
-      try {
-        localStorage.removeItem('bookmarkedItems');
-      } catch (error) {
-        console.warn('Failed to clear bookmarks:', error);
-      }
-      
-      updateBookmarkButton(false);
-      updateRecentsBookmarksDisplay();
-      
-      // Track clear bookmarks
-      if (window.telemetry) {
-        window.telemetry.recordUserAction('bookmarks-clear');
-      }
-    }
-
-    // Cross-reference system
-    function processTextForCrossReferences(text, currentBook, currentChapter) {
-      if (!crossReferences || !text) return text;
-      
-      let processedText = text;
-      
-      // Pattern to match biblical references like "Genesis 1:1", "Romans 8:28", "1 Corinthians 13"
-      const referencePattern = /\b(\d?\s?\w+)\s+(\d+)(?::(\d+(?:-\d+)?))?\b/g;
-      
-      processedText = processedText.replace(referencePattern, (match, bookName, chapter, verse) => {
-        const cleanBookName = bookName.toLowerCase().replace(/\s+/g, '-');
-        const bookSlug = getBookSlugFromName(cleanBookName);
-        
-        if (bookSlug && bookSlug !== currentBook) {
-          const linkUrl = `/books/${bookSlug}/#chapter-${chapter}`;
-          const linkText = verse ? `${bookName} ${chapter}:${verse}` : `${bookName} ${chapter}`;
-          return `<a href="${linkUrl}" class="cross-reference-link" title="Read ${linkText}">${match}</a>`;
-        }
-        
-        return match;
-      });
-      
-      // Add thematic cross-references
-      const themes = ['covenant', 'messiah', 'salvation', 'resurrection', 'faith', 'grace'];
-      themes.forEach(theme => {
-        const themePattern = new RegExp(`\\b${theme}\\b`, 'gi');
-        if (themePattern.test(text) && crossReferences.thematicReferences[theme]) {
-          // Add subtle indicator for thematic connections
-          processedText = processedText.replace(themePattern, (match) => {
-            return `<span class="theme-reference" data-theme="${theme}" title="Related passages about ${theme}">${match}</span>`;
-          });
-        }
-      });
-      
-      return processedText;
-    }
-
-    function getBookSlugFromName(bookName) {
-      const bookMappings = {
-        'genesis': 'genesis',
-        'exodus': 'exodus',
-        'leviticus': 'leviticus',
-        'numbers': 'numbers',
-        'deuteronomy': 'deuteronomy',
-        'joshua': 'joshua',
-        'judges': 'judges',
-        'ruth': 'ruth',
-        '1-samuel': '1-samuel',
-        '2-samuel': '2-samuel',
-        '1-kings': '1-kings',
-        '2-kings': '2-kings',
-        'psalms': 'psalms',
-        'proverbs': 'proverbs',
-        'ecclesiastes': 'ecclesiastes',
-        'isaiah': 'isaiah',
-        'jeremiah': 'jeremiah',
-        'ezekiel': 'ezekiel',
-        'daniel': 'daniel',
-        'matthew': 'matthew',
-        'mark': 'mark',
-        'luke': 'luke',
-        'john': 'john',
-        'acts': 'acts',
-        'romans': 'romans',
-        '1-corinthians': '1-corinthians',
-        '2-corinthians': '2-corinthians',
-        'galatians': 'galatians',
-        'ephesians': 'ephesians',
-        'philippians': 'philippians',
-        'colossians': 'colossians',
-        '1-thessalonians': '1-thessalonians',
-        '2-thessalonians': '2-thessalonians',
-        'hebrews': 'hebrews',
-        'james': 'james',
-        '1-peter': '1-peter',
-        '2-peter': '2-peter',
-        '1-john': '1-john',
-        'revelation': 'revelation'
-      };
-      
-      return bookMappings[bookName.toLowerCase().replace(/\s+/g, '-')];
-    }
-
-    function getCrossReferencesForChapter(bookSlug, chapter) {
-      if (!crossReferences) return [];
-      
-      const chapterKey = `${bookSlug}-${chapter}`;
-      const chapterRefs = crossReferences.chapterReferences[chapterKey] || [];
-      
-      // Also get book-level references
-      const bookRefs = crossReferences.bookReferences[bookSlug]?.references || [];
-      
-      // Combine and format
-      return [...chapterRefs, ...bookRefs].map(ref => ({
-        ...ref,
-        url: `/books/${ref.book}/#chapter-${ref.chapter}`
-      }));
-    }
-
-    function getThematicReferences(theme) {
-      if (!crossReferences || !crossReferences.thematicReferences[theme]) return [];
-      
-      return crossReferences.thematicReferences[theme].map(ref => ({
-        ...ref,
-        url: ref.verse 
-          ? `/books/${ref.book}/#chapter-${ref.chapter}` 
-          : `/books/${ref.book}/#chapter-${ref.chapter}`
-      }));
-    }
-
-    function displayCrossReferences(container, references) {
-      if (!references || references.length === 0) return;
-      
-      const crossRefHtml = `
-        <div class="cross-references-section">
-          <h4>Related Passages</h4>
-          <div class="cross-references-list">
-            ${references.slice(0, 6).map(ref => `
-              <a href="${ref.url}" class="cross-reference-item" title="${ref.text}">
-                <div class="cross-ref-book">${ref.book.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())} ${ref.chapter}${ref.verse ? ':' + ref.verse : ''}</div>
-                <div class="cross-ref-connection">${ref.connection}</div>
-                <div class="cross-ref-text">${ref.text}</div>
-              </a>
-            `).join('')}
-          </div>
-          ${references.length > 6 ? `<button class="show-more-refs" onclick="toggleMoreReferences()">Show ${references.length - 6} more</button>` : ''}
-        </div>
-      `;
-      
-      container.innerHTML += crossRefHtml;
-    }
-
-    // Generate autocomplete suggestions
-    function generateAutocomplete(query) {
-      if (!query || query.length < 1) return [];
-      
-      const suggestions = [];
-      const queryLower = query.toLowerCase();
-      
-      // Extract common search patterns and suggest completions
-      const commonTerms = {
-        books: ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy', 'Joshua', 'Judges', 'Ruth', 'Samuel', 'Kings', 'Chronicles', 'Ezra', 'Nehemiah', 'Esther', 'Job', 'Psalms', 'Proverbs', 'Ecclesiastes', 'Isaiah', 'Jeremiah', 'Ezekiel', 'Daniel', 'Matthew', 'Mark', 'Luke', 'John', 'Acts', 'Romans', 'Corinthians', 'Galatians', 'Ephesians', 'Philippians', 'Colossians', 'Thessalonians', 'Timothy', 'Titus', 'Philemon', 'Hebrews', 'James', 'Peter', 'Revelation'],
-        characters: ['Abraham', 'Moses', 'David', 'Solomon', 'Jesus', 'Paul', 'Peter', 'John', 'Mary', 'Joseph', 'Daniel', 'Noah', 'Isaac', 'Jacob', 'Joshua', 'Samuel', 'Elijah', 'Elisha', 'Isaiah', 'Jeremiah', 'Ezekiel'],
-        topics: ['salvation', 'faith', 'love', 'grace', 'mercy', 'kingdom', 'covenant', 'prophecy', 'redemption', 'forgiveness', 'resurrection', 'cross', 'temple', 'sacrifice'],
-        categories: ['Law', 'History', 'Poetry', 'Prophets', 'Gospels', 'Letters', 'Revelation']
-      };
-      
-      // Find matching suggestions
-      Object.entries(commonTerms).forEach(([category, terms]) => {
-        terms.forEach(term => {
-          if (term.toLowerCase().startsWith(queryLower) && term.toLowerCase() !== queryLower) {
-            suggestions.push({
-              type: 'suggestion',
-              query: term,
-              category: category,
-              icon: category === 'books' ? '▦' : category === 'characters' ? '◯' : category === 'topics' ? '◊' : '◐'
-            });
-          }
-        });
-      });
-      
-      // Limit to 5 suggestions, prioritize books and characters
-      return suggestions
-        .sort((a, b) => {
-          const order = { books: 1, characters: 2, topics: 3, categories: 4 };
-          return order[a.category] - order[b.category];
-        })
-        .slice(0, 5);
-    }
-
-    // Calculate relevance score
-    function calculateRelevance(item, query) {
-      const content = item.content.toLowerCase();
-      const title = item.title.toLowerCase();
-      
-      let score = 0;
-      
-      // Perfect title match gets highest score
-      if (title === query) {
-        score += 200;
-        // Boost books and characters for exact matches
-        if (item.type === 'book') score += 50;
-        if (item.type === 'character') score += 40;
-      }
-      
-      // Title starts with query
-      if (title.startsWith(query)) {
-        score += 150;
-      }
-      
-      // Title contains query
-      if (title.includes(query)) {
-        score += 100;
-      }
-      
-      // Content match gets medium score
-      if (content.includes(query)) {
-        score += 50;
-      }
-      
-      // Word boundary matches get bonus
-      const words = query.split(' ');
-      words.forEach(word => {
-        if (word.length > 2) {
-          const regex = new RegExp('\\b' + word, 'i');
-          if (regex.test(title)) score += 30;
-          if (regex.test(content)) score += 15;
-        }
-      });
-      
-      // Type-based bonuses for better user experience
-      if (item.type === 'book') score += 10;  // Slightly prioritize books
-      if (item.type === 'character') score += 5;  // Then characters
-      
-      return score;
-    }
-
-    // Highlight search terms
-    function highlightText(text, query) {
-      if (!query) return text;
-      const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
-      return text.replace(regex, '<span class="search-highlight">$1</span>');
-    }
-
-    // Show loading state
-    function showLoadingState() {
-      const resultsContainer = document.getElementById('searchResults');
-      const searchInput = document.getElementById('searchInput');
-      
-      // Add loading class to search box
-      const searchBox = searchInput.closest('.search-box');
-      searchBox.classList.add('searching');
-      
-      // Show loading spinner
-      resultsContainer.innerHTML = `
-        <div class="search-loading">
-          <div class="search-spinner"></div>
-          <span>Searching...</span>
-        </div>
-      `;
-      resultsContainer.style.display = 'block';
-    }
-    
-    // Hide loading state
-    function hideLoadingState() {
-      const searchInput = document.getElementById('searchInput');
-      const searchBox = searchInput.closest('.search-box');
-      searchBox.classList.remove('searching');
-    }
-
-    // Display search results with autocomplete and history
-    function displayResults(results, query) {
-      const resultsContainer = document.getElementById('searchResults');
-      
-      // Hide loading state
-      hideLoadingState();
-      
-      let html = '';
-      
-      // Show search history when query is empty or very short
-      const history = getSearchHistory(query);
-      if ((!query || query.length < 2) && history.length > 0) {
-        html += '<div class="search-separator">Recent Searches <button class="clear-history-btn" onclick="clearSearchHistory()" title="Clear search history">×</button></div>';
-        html += history.map(item => {
-          const timeAgo = getTimeAgo(item.timestamp);
-          const resultInfo = item.resultTitle ? ` → ${item.resultTitle}` : '';
-          return `
-            <div class="search-suggestion-item search-history-item" onclick="selectSuggestion('${item.query}')">
-              <div class="suggestion-icon">${item.icon}</div>
-              <div class="suggestion-text">
-                <span class="suggestion-query">${item.query}</span>
-                <span class="suggestion-category">${timeAgo}${resultInfo}</span>
-              </div>
-            </div>
-          `;
-        }).join('');
-      }
-      
-      // Show search results
-      if (results.length > 0) {
-        if (html) html += '<div class="search-separator">Results</div>';
-        html += results.map(result => `
-          <div class="search-result-item" data-type="${result.type}" onclick="handleSearchResultClick('${result.url}', '${result.type}', '${result.title.replace(/'/g, "\\'")}')">
-            <div class="search-result-header">
-              <div class="search-result-title">${highlightText(result.title, query)}</div>
-              <div class="search-result-type">${result.typeLabel || result.type}</div>
-            </div>
-            <div class="search-result-snippet">${highlightText(result.subtitle, query)}</div>
-          </div>
-        `).join('');
-      }
-      
-      // Add autocomplete suggestions if query is present and results are few
-      const suggestions = generateAutocomplete(query);
-      if (query && suggestions.length > 0 && (results.length < 3 || query.length < 3)) {
-        if (results.length > 0 || html) {
-          html += '<div class="search-separator">Suggestions</div>';
-        }
-        
-        html += suggestions.map(suggestion => `
-          <div class="search-suggestion-item" onclick="selectSuggestion('${suggestion.query}')">
-            <div class="suggestion-icon">${suggestion.icon}</div>
-            <div class="suggestion-text">
-              <span class="suggestion-query">${highlightText(suggestion.query, query)}</span>
-              <span class="suggestion-category">${suggestion.category}</span>
-            </div>
-          </div>
-        `).join('');
-      }
-      
-      // Show no results message if nothing found and query is present
-      if (query && results.length === 0 && suggestions.length === 0 && history.length === 0) {
-        html = `
-          <div class="search-result-item no-results">
-            <div class="no-results-icon">⌕</div>
-            <div>No results found for "${query}"</div>
-            <div class="search-suggestion">Try searching for book names, characters, or topics</div>
-          </div>
-        `;
-      }
-      
-      resultsContainer.innerHTML = html;
-      resultsContainer.style.display = html ? 'block' : 'none';
-    }
-
-    // Helper function to format time ago
-    function getTimeAgo(timestamp) {
-      const now = Date.now();
-      const diff = now - timestamp;
-      const minutes = Math.floor(diff / 60000);
-      const hours = Math.floor(diff / 3600000);
-      const days = Math.floor(diff / 86400000);
-      
-      if (days > 0) return `${days}d ago`;
-      if (hours > 0) return `${hours}h ago`;
-      if (minutes > 0) return `${minutes}m ago`;
-      return 'just now';
-    }
-    
-    // Handle suggestion selection
-    function selectSuggestion(query) {
-      const searchInput = document.getElementById('searchInput');
-      searchInput.value = query;
-      searchInput.focus();
-      
-      // Trigger search with filters
-      const results = performSearchWithFilters(query);
-      displayResults(results, query);
-      
-      // Track suggestion usage
-      if (window.telemetry) {
-        window.telemetry.recordUserAction('search-suggestion-select', query, {
-          original_query: searchInput.value,
-          suggested_query: query
-        });
-      }
-    }
-
-    // Toggle search filters
-    function toggleSearchFilters() {
-      const filtersPanel = document.getElementById('searchFilters');
-      const toggleButton = document.getElementById('searchFiltersToggle');
-      const isVisible = filtersPanel.style.display === 'block';
-      
-      if (isVisible) {
-        filtersPanel.style.opacity = '0';
-        filtersPanel.style.transform = 'translateY(-10px)';
-        setTimeout(() => {
-          filtersPanel.style.display = 'none';
-        }, 300);
-      } else {
-        filtersPanel.style.display = 'block';
-        filtersPanel.style.opacity = '0';
-        filtersPanel.style.transform = 'translateY(-10px)';
-        setTimeout(() => {
-          filtersPanel.style.opacity = '1';
-          filtersPanel.style.transform = 'translateY(0)';
-        }, 10);
-      }
-      
-      toggleButton.classList.toggle('active', !isVisible);
-      
-      // Track filter panel usage
-      if (window.telemetry) {
-        window.telemetry.recordUserAction('search-filters-toggle', !isVisible ? 'open' : 'close');
-      }
-    }
-    
-    // Show search filters dynamically
-    function showSearchFilters() {
-      const filtersPanel = document.getElementById('searchFilters');
-      const toggleButton = document.getElementById('searchFiltersToggle');
-      
-      if (filtersPanel && filtersPanel.style.display === 'none') {
-        filtersPanel.style.display = 'block';
-        filtersPanel.style.opacity = '0';
-        filtersPanel.style.transform = 'translateY(-10px)';
-        
-        setTimeout(() => {
-          filtersPanel.style.opacity = '1';
-          filtersPanel.style.transform = 'translateY(0)';
-        }, 10);
-        
-        toggleButton.classList.add('active');
-      }
-    }
-    
-    // Hide search filters dynamically
-    function hideSearchFilters() {
-      const filtersPanel = document.getElementById('searchFilters');
-      const toggleButton = document.getElementById('searchFiltersToggle');
-      const searchInput = document.getElementById('searchInput');
-      
-      // Don't hide if user is actively searching or filters are applied
-      if (searchInput && searchInput.value.trim().length > 0) return;
-      if (hasActiveGlobalFilters()) return;
-      
-      // Don't hide if user is hovering over filters
-      if (filtersPanel && filtersPanel.hasAttribute('data-hovering')) return;
-      
-      setTimeout(() => {
-        if (document.activeElement !== searchInput && !filtersPanel.contains(document.activeElement) && !filtersPanel.hasAttribute('data-hovering')) {
-          filtersPanel.style.opacity = '0';
-          filtersPanel.style.transform = 'translateY(-10px)';
-          
-          setTimeout(() => {
-            if (filtersPanel.style.opacity === '0') {
-              filtersPanel.style.display = 'none';
-              toggleButton.classList.remove('active');
-            }
-          }, 300);
-        }
-      }, 150);
-    }
-    
-    // Check if any global filters are active
-    function hasActiveGlobalFilters() {
-      const checkboxes = document.querySelectorAll('#searchFilters input[type="checkbox"]:checked');
-      const allCheckboxes = document.querySelectorAll('#searchFilters input[type="checkbox"]');
-      return checkboxes.length < allCheckboxes.length;
-    }
-
-    // Clear all filters
-    function clearAllFilters() {
-      const checkboxes = document.querySelectorAll('#searchFilters input[type="checkbox"]');
-      checkboxes.forEach(checkbox => {
-        checkbox.checked = true; // Reset to show all
-      });
-      
-      // Trigger search refresh if there's a query
-      const searchInput = document.getElementById('searchInput');
-      if (searchInput.value.trim()) {
-        const results = performSearchWithFilters(searchInput.value.trim());
-        displayResults(results, searchInput.value.trim());
-      }
-      
-      // Track filter clear
-      if (window.telemetry) {
-        window.telemetry.recordUserAction('search-filters-clear');
-      }
-    }
-
-    // Get active filters
-    function getActiveFilters() {
-      const filters = {
-        contentType: [],
-        testament: [],
-        category: []
-      };
-      
-      document.querySelectorAll('#searchFilters input[type="checkbox"]:checked').forEach(checkbox => {
-        const filterType = checkbox.name;
-        const filterValue = checkbox.value;
-        if (filters[filterType]) {
-          filters[filterType].push(filterValue);
-        }
-      });
-      
-      return filters;
-    }
-
-    // Perform search with filters applied
-    function performSearchWithFilters(query) {
-      if (!query || query.length < 1) return [];
-      
-      const filters = getActiveFilters();
-      const baseResults = performSearch(query);
-      
-      // Apply filters
-      return baseResults.filter(item => {
-        // Content type filter
-        if (filters.contentType.length > 0 && !filters.contentType.includes(item.type)) {
-          return false;
-        }
-        
-        // Testament filter (for books and characters)
-        if (filters.testament.length > 0 && item.testament && !filters.testament.includes(item.testament)) {
-          return false;
-        }
-        
-        // Category filter (for books)
-        if (filters.category.length > 0 && item.category && !filters.category.includes(item.category)) {
-          return false;
-        }
-        
-        return true;
-      });
-    }
-
-    // Handle search result clicks
-    function handleSearchResultClick(url, type, title) {
-      try {
-        if (!url || typeof url !== 'string') {
-          throw new Error('Invalid URL provided for navigation');
-        }
-        
-        const searchInput = document.getElementById('searchInput');
-        const searchQuery = searchInput ? searchInput.value : 'unknown';
-        
-        // Add to search history
-        if (searchQuery && searchQuery !== 'unknown') {
-          addToSearchHistory(searchQuery, { type, title });
-        }
-        
-        // Log user action
-        if (window.logger) {
-          window.logger.userAction('search-result-click', { 
-            url, 
-            type, 
-            title,
-            searchQuery 
-          });
-        }
-        
-        // Record navigation
-        if (window.telemetry) {
-          window.telemetry.recordNavigation('search-click', url, { 
-            result_type: type,
-            result_title: title 
-          });
-        }
-        
-        // Clear search results
-        const searchResults = document.getElementById('searchResults');
-        if (searchResults) {
-          searchResults.style.display = 'none';
-        }
-        
-        // For character results, add extra context
-        if (type === 'character') {
-          // Add slight delay to allow navigation start, then clear search
-          setTimeout(() => {
-            if (searchInput) {
-              searchInput.blur();
-            }
-          }, 100);
-        }
-        
-        // Navigate to the page
-        window.location.href = url;
-        
-      } catch (error) {
-        const errorMessage = 'Navigation failed: ' + error.message;
-        console.error(errorMessage, error);
-        
-        // Log the error
-        if (window.logger) {
-          window.logger.error(errorMessage, { 
-            url,
-            type,
-            title,
-            error: error.message,
-            component: 'search-navigation'
-          });
-        }
-        
-        if (window.telemetry) {
-          window.telemetry.recordError(error, { 
-            component: 'search-result-click',
-            url: url 
-          });
-        }
-        
-        // Show user-friendly error
-        alert('Sorry, there was an error navigating to that page. Please try again.');
-      }
-    }
-
-    // Search system state
-    let searchModulesReady = false;
-    let searchDataReady = false;
-    let searchInput, searchResults;
-
-    // Search input handler
-    document.addEventListener('DOMContentLoaded', function() {
-      // Cache DOM elements
-      searchInput = document.getElementById('searchInput');
-      searchResults = document.getElementById('searchResults');
-      
-      // Update keyboard shortcut hint based on platform
-      const shortcutHint = document.getElementById('searchShortcut');
-      const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
-      shortcutHint.textContent = isMac ? '⌘K' : 'Ctrl+K';
-
-      // Initialize search data
-      initializeSearchData();
-      
-      // Set up search input state management
-      setupSearchInputHandlers();
-    });
-
-    // Listen for search modules being loaded
-    document.addEventListener('searchModulesLoaded', function() {
-      searchModulesReady = true;
-      console.log('[Search] Search modules loaded successfully');
-      enableSearchIfReady();
-    });
-
-    // Handle search modules loading failure
-    document.addEventListener('searchModulesLoadFailed', function(event) {
-      console.error('[Search] Search modules failed to load:', event.detail);
-      showSearchError('Search modules failed to load');
-    });
-
-    // Fallback timeout in case modules never load
-    setTimeout(function() {
-      if (!searchModulesReady) {
-        console.warn('[Search] Search modules timeout - enabling basic search');
-        searchModulesReady = true; // Enable basic functionality
-        enableSearchIfReady();
-      }
-    }, 5000); // 5 second timeout
-
-    async function initializeSearchData() {
-      try {
-        await initializeSearch();
-        searchDataReady = true;
-        console.log('[Search] Search data initialized');
-        enableSearchIfReady();
-      } catch (error) {
-        console.error('[Search] Failed to initialize search data:', error);
-        showSearchError('Search data failed to load');
-      }
-    }
-
-    function enableSearchIfReady() {
-      if (searchModulesReady && searchDataReady && searchInput) {
-        searchInput.disabled = false;
-        searchInput.placeholder = 'Search books, chapters, or summaries...';
-        console.log('[Search] Search functionality enabled');
-      }
-    }
-
-    function showSearchError(message) {
-      if (searchInput) {
-        searchInput.placeholder = 'Search temporarily unavailable';
-        searchInput.disabled = true;
-        console.warn('[Search] ' + message);
-      }
-    }
-
-    function setupSearchInputHandlers() {
-      if (!searchInput || !searchResults) return;
-      
-      // Initially disable search until modules load
-      searchInput.disabled = true;
-      searchInput.placeholder = 'Loading search...';
-      
-      searchInput.addEventListener('input', function() {
-        // Guard clause: only process search if modules and data are ready
-        if (!searchModulesReady || !searchDataReady || this.disabled) {
-          console.log('[Search] Search not ready yet, ignoring input');
-          return;
-        }
-
-        const query = this.value.trim();
-        
-        clearTimeout(searchTimeout);
-        
-        try {
-          if (query.length === 0) {
-            // Hide results if query is empty
-            searchResults.style.display = 'none';
-            if (typeof hideLoadingState === 'function') hideLoadingState();
-          } else if (query.length === 1) {
-            // Show immediate autocomplete suggestions for single character
-            if (typeof generateAutocomplete === 'function') {
-              const suggestions = generateAutocomplete(query);
-              if (suggestions.length > 0 && typeof displayResults === 'function') {
-                displayResults([], query);
-              }
-            }
-          } else if (query.length >= 2) {
-            // Show loading state immediately for longer queries
-            if (typeof showLoadingState === 'function') showLoadingState();
-          
-            searchTimeout = setTimeout(() => {
-              try {
-                if (typeof performSearchWithFilters === 'function' && typeof displayResults === 'function') {
-                  const results = performSearchWithFilters(query);
-                  displayResults(results, query);
-                } else {
-                  console.warn('[Search] Search functions not available');
-                  showSearchError('Search functions not loaded');
-                }
-              } catch (searchError) {
-                console.error('[Search] Error performing search:', searchError);
-                showSearchError('Search error occurred');
-              }
-            }, 200);
-          }
-        } catch (error) {
-          console.error('[Search] Error in search input handler:', error);
-          showSearchError('Search input error');
-        }
-      });
-    } // End of setupSearchInputHandlers function
-      
-      // Hide results when clicking outside
-      document.addEventListener('click', function(e) {
-        if (!e.target.closest('.search-box')) {
-          searchResults.style.display = 'none';
-        }
-      });
-
-      // Global click-away handling for side panels
-      document.addEventListener('click', function(e) {
-        // Close recents/bookmarks panel if clicking outside
-        if (!e.target.closest('.recents-bookmarks-panel') && !e.target.closest('.recents-bookmarks-toggle')) {
-          closeRecentsBookmarksPanel();
-        }
-        
-        // Close font size panel if clicking outside
-        if (!e.target.closest('.font-size-panel') && !e.target.closest('.font-size-toggle')) {
-          closeFontSizePanel();
-        }
-        
-        // Close search filters if clicking outside
-        if (!e.target.closest('.search-filters') && !e.target.closest('.search-filters-toggle')) {
-          const filtersPanel = document.getElementById('searchFilters');
-          if (filtersPanel && filtersPanel.style.display === 'block') {
-            hideSearchFilters();
-          }
-        }
-      });
-      
-      // Show results when focusing search input
-      searchInput.addEventListener('focus', function() {
-        const query = this.value.trim();
-        if (query) {
-          const results = performSearchWithFilters(query);
-          displayResults(results, query);
-        } else {
-          // Show search history when focusing empty search
-          displayResults([], '');
-        }
-        
-        // Show filters on focus
-        showSearchFilters();
-      });
-      
-      // Hide filters when blurring search input
-      searchInput.addEventListener('blur', function() {
-        hideSearchFilters();
-      });
-      
-      // Add hover protection to search filters
-      const globalFiltersPanel = document.getElementById('searchFilters');
-      if (globalFiltersPanel) {
-        globalFiltersPanel.addEventListener('mouseenter', function() {
-          this.setAttribute('data-hovering', 'true');
-        });
-        
-        globalFiltersPanel.addEventListener('mouseleave', function() {
-          this.removeAttribute('data-hovering');
-          hideSearchFilters();
-        });
-        
-        // Show filters when user starts typing
-        searchInput.addEventListener('input', function() {
-          if (this.value.trim().length > 0) {
-            showSearchFilters();
-          }
-        });
-      }
-      
-      // Initialize checked classes for browsers without :has() support
-      document.querySelectorAll('#searchFilters input[type="checkbox"]').forEach(checkbox => {
-        const label = checkbox.closest('.filter-checkbox');
-        if (label && checkbox.checked) {
-          label.classList.add('checked');
-        }
-      });
-      
-      // Add filter change listeners
-      document.querySelectorAll('#searchFilters input[type="checkbox"]').forEach(checkbox => {
-        checkbox.addEventListener('change', function() {
-          // Add checked class for browsers without :has() support
-          const label = this.closest('.filter-checkbox');
-          if (label) {
-            if (this.checked) {
-              label.classList.add('checked');
-            } else {
-              label.classList.remove('checked');
-            }
-          }
-          // Update filter toggle button to show active state
-          const toggleButton = document.getElementById('searchFiltersToggle');
-          const allCheckboxes = document.querySelectorAll('#searchFilters input[type="checkbox"]');
-          const checkedCheckboxes = document.querySelectorAll('#searchFilters input[type="checkbox"]:checked');
-          const hasFiltersApplied = checkedCheckboxes.length < allCheckboxes.length;
-          
-          toggleButton.classList.toggle('has-filters', hasFiltersApplied);
-          
-          // Re-run search if there's a query
-          const searchInput = document.getElementById('searchInput');
-          if (searchInput.value.trim()) {
-            const results = performSearchWithFilters(searchInput.value.trim());
-            displayResults(results, searchInput.value.trim());
-          }
-          
-          // Track filter usage
-          if (window.telemetry) {
-            window.telemetry.recordUserAction('search-filter-change', this.name, {
-              value: this.value,
-              checked: this.checked
-            });
-          }
-        });
-      });
-      
-      // Global keyboard shortcuts
-      document.addEventListener('keydown', function(e) {
-        // Cmd/Ctrl + K to focus search
-        if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
-          e.preventDefault();
-          searchInput.focus();
-          searchInput.select();
-          
-          // Track shortcut usage
-          if (window.telemetry) {
-            window.telemetry.recordUserAction('keyboard-shortcut', 'search-focus', {
-              shortcut: (e.metaKey ? 'Cmd' : 'Ctrl') + '+K'
-            });
-          }
-        }
-        
-        // / to focus search (like GitHub)
-        if (e.key === '/' && !e.target.closest('input, textarea, [contenteditable]')) {
-          e.preventDefault();
-          searchInput.focus();
-          
-          // Track shortcut usage
-          if (window.telemetry) {
-            window.telemetry.recordUserAction('keyboard-shortcut', 'search-focus', {
-              shortcut: '/'
-            });
-          }
-        }
-      });
-      
-      // Keyboard navigation within search results and suggestions
-      searchInput.addEventListener('keydown', function(e) {
-        const items = searchResults.querySelectorAll('.search-result-item, .search-suggestion-item');
-        const selected = searchResults.querySelector('.search-result-item.selected, .search-suggestion-item.selected');
-        
-        if (e.key === 'ArrowDown') {
-          e.preventDefault();
-          if (selected) {
-            selected.classList.remove('selected');
-            const next = selected.nextElementSibling || items[0];
-            next.classList.add('selected');
-          } else if (items.length > 0) {
-            items[0].classList.add('selected');
-          }
-        } else if (e.key === 'ArrowUp') {
-          e.preventDefault();
-          if (selected) {
-            selected.classList.remove('selected');
-            const prev = selected.previousElementSibling || items[items.length - 1];
-            prev.classList.add('selected');
-          } else if (items.length > 0) {
-            items[items.length - 1].classList.add('selected');
-          }
-        } else if (e.key === 'Enter') {
-          e.preventDefault();
-          if (selected) {
-            selected.click();
-          }
-        } else if (e.key === 'Escape') {
-          searchResults.style.display = 'none';
-          hideLoadingState();
-          this.blur();
-        } else if (e.key === 'Tab' && selected && selected.classList.contains('search-suggestion-item')) {
-          e.preventDefault();
-          // Auto-complete with Tab on suggestion
-          const suggestionQuery = selected.querySelector('.suggestion-query').textContent;
-          this.value = suggestionQuery;
-          searchResults.style.display = 'none';
-          
-          // Track tab completion
-          if (window.telemetry) {
-            window.telemetry.recordUserAction('search-tab-complete', suggestionQuery);
-          }
-        }
-      });
-    });
-
-    // Theme toggle functionality
-    function toggleTheme() {
-      const html = document.documentElement;
-      const currentTheme = html.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      
-      html.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-      
-      // Update theme toggle icon
-      const themeIcon = document.querySelector('.theme-icon');
-      if (themeIcon) {
-        themeIcon.textContent = newTheme === 'dark' ? '☀' : '☽';
-      }
-      
-      // Log theme change
-      if (window.logger) {
-        window.logger.userAction('theme-toggle', { theme: newTheme });
-      }
-    }
-
-    // Initialize theme on page load
-    document.addEventListener('DOMContentLoaded', function() {
-      const savedTheme = localStorage.getItem('theme');
-      // Default to dark mode (changed from light mode default)
-      const initialTheme = savedTheme || 'dark';
-      
-      document.documentElement.setAttribute('data-theme', initialTheme);
-      
-      // Update theme toggle icon
-      const themeIcon = document.querySelector('.theme-icon');
-      if (themeIcon) {
-        themeIcon.textContent = initialTheme === 'dark' ? '☀' : '☽';
-      }
-      
-      // Register service worker for offline functionality
-      registerServiceWorker();
-      
-      // Initialize font size settings
-      initializeFontSettings();
-      
-      // Initialize high contrast settings
-      initializeHighContrastSettings();
-    });
-
-    // Font size management
-    function initializeFontSettings() {
-      try {
-        const savedFontSize = localStorage.getItem('fontSize') || 'medium';
-        const savedCustomSize = localStorage.getItem('customFontSize') || '100';
-        const savedDyslexiaFont = localStorage.getItem('dyslexiaFont') === 'true';
-        const savedLineHeight = localStorage.getItem('increaseLineHeight') === 'true';
-        
-        // Apply saved settings
-        if (savedFontSize === 'custom') {
-          setCustomFontSize(savedCustomSize);
-          document.getElementById('fontSizeSlider').value = savedCustomSize;
-        } else {
-          setFontSize(savedFontSize);
-        }
-        
-        if (savedDyslexiaFont) {
-          document.getElementById('dyslexiaFont').checked = true;
-          toggleDyslexiaFont(true);
-        }
-        
-        if (savedLineHeight) {
-          document.getElementById('increaseLineHeight').checked = true;
-          toggleLineHeight(true);
-        }
-        
-      } catch (error) {
-        console.warn('Failed to load font settings:', error);
-      }
-    }
-
+    // Font size controls
     function toggleFontSizeControls() {
       const panel = document.getElementById('fontSizePanel');
-      const isVisible = panel.classList.contains('visible');
-      
-      if (isVisible) {
-        panel.classList.remove('visible');
-      } else {
-        panel.classList.add('visible');
-      }
-      
-      // Track font panel usage
-      if (window.telemetry) {
-        window.telemetry.recordUserAction('font-controls-toggle', isVisible ? 'close' : 'open');
-      }
-    }
-
-    // Close font panel with click away
-    function closeFontSizePanel() {
-      const panel = document.getElementById('fontSizePanel');
-      if (panel && panel.classList.contains('visible')) {
-        panel.classList.remove('visible');
-      }
+      panel.classList.toggle('visible');
     }
 
     function setFontSize(size) {
-      const root = document.documentElement;
+      const sizes = {
+        'small': '90%',
+        'medium': '100%',
+        'large': '110%',
+        'extra-large': '120%'
+      };
       
-      // Remove custom size class
-      root.classList.remove('font-size-custom');
-      
-      // Remove all font size classes
-      root.classList.remove('font-size-small', 'font-size-medium', 'font-size-large', 'font-size-extra-large');
-      
-      // Add the selected size class
-      root.classList.add(`font-size-${size}`);
+      document.documentElement.style.fontSize = sizes[size];
       
       // Update active button
-      document.querySelectorAll('.font-preset-btn').forEach(btn => btn.classList.remove('active'));
-      document.querySelector(`[data-size="${size}"]`).classList.add('active');
+      document.querySelectorAll('.font-preset-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.size === size);
+      });
       
-      // Reset slider if not using custom
-      if (size !== 'custom') {
-        document.getElementById('fontSizeSlider').value = 100;
-        document.getElementById('sliderValue').textContent = '100%';
-      }
+      // Update slider
+      const slider = document.getElementById('fontSizeSlider');
+      const value = parseInt(sizes[size]);
+      slider.value = value;
+      document.getElementById('sliderValue').textContent = sizes[size];
       
-      // Save to localStorage
+      // Save preference
       try {
         localStorage.setItem('fontSize', size);
-        if (size !== 'custom') {
-          localStorage.removeItem('customFontSize');
-        }
       } catch (error) {
-        console.warn('Failed to save font size:', error);
-      }
-      
-      // Track font size change
-      if (window.telemetry) {
-        window.telemetry.recordUserAction('font-size-change', size);
+        console.warn('Failed to save font size preference:', error);
       }
     }
 
     function setCustomFontSize(value) {
-      const root = document.documentElement;
-      const percentage = parseInt(value);
+      const percentage = value + '%';
+      document.documentElement.style.fontSize = percentage;
+      document.getElementById('sliderValue').textContent = percentage;
       
-      // Remove preset classes and add custom
-      root.classList.remove('font-size-small', 'font-size-medium', 'font-size-large', 'font-size-extra-large');
-      root.classList.add('font-size-custom');
+      // Update preset buttons
+      document.querySelectorAll('.font-preset-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
       
-      // Set custom font size
-      root.style.setProperty('--custom-font-scale', percentage / 100);
-      
-      // Update slider display
-      document.getElementById('sliderValue').textContent = `${percentage}%`;
-      
-      // Update active button (remove preset selection)
-      document.querySelectorAll('.font-preset-btn').forEach(btn => btn.classList.remove('active'));
-      
-      // Save to localStorage
+      // Save preference
       try {
-        localStorage.setItem('fontSize', 'custom');
         localStorage.setItem('customFontSize', value);
       } catch (error) {
         console.warn('Failed to save custom font size:', error);
       }
-      
-      // Track custom font size
-      if (window.telemetry) {
-        window.telemetry.recordUserAction('font-size-custom', percentage);
-      }
     }
 
     function toggleDyslexiaFont(enabled) {
-      const root = document.documentElement;
-      
-      if (enabled) {
-        root.classList.add('dyslexia-font');
-      } else {
-        root.classList.remove('dyslexia-font');
-      }
-      
-      // Save to localStorage
+      document.documentElement.classList.toggle('dyslexia-font', enabled);
       try {
-        localStorage.setItem('dyslexiaFont', enabled.toString());
+        localStorage.setItem('dyslexiaFont', enabled);
       } catch (error) {
-        console.warn('Failed to save dyslexia font setting:', error);
-      }
-      
-      // Track dyslexia font toggle
-      if (window.telemetry) {
-        window.telemetry.recordUserAction('dyslexia-font-toggle', enabled);
+        console.warn('Failed to save dyslexia font preference:', error);
       }
     }
 
     function toggleLineHeight(enabled) {
-      const root = document.documentElement;
-      
-      if (enabled) {
-        root.classList.add('increased-line-height');
-      } else {
-        root.classList.remove('increased-line-height');
-      }
-      
-      // Save to localStorage
+      document.documentElement.classList.toggle('increased-line-height', enabled);
       try {
-        localStorage.setItem('increaseLineHeight', enabled.toString());
+        localStorage.setItem('increasedLineHeight', enabled);
       } catch (error) {
-        console.warn('Failed to save line height setting:', error);
-      }
-      
-      // Track line height toggle
-      if (window.telemetry) {
-        window.telemetry.recordUserAction('line-height-toggle', enabled);
+        console.warn('Failed to save line height preference:', error);
       }
     }
 
     function resetFontSettings() {
-      // Reset to defaults
-      setFontSize('medium');
+      document.documentElement.style.fontSize = '';
+      document.documentElement.classList.remove('dyslexia-font', 'increased-line-height');
+      
+      // Reset UI
+      document.querySelector('.font-preset-btn[data-size="medium"]').classList.add('active');
+      document.getElementById('fontSizeSlider').value = 100;
+      document.getElementById('sliderValue').textContent = '100%';
       document.getElementById('dyslexiaFont').checked = false;
       document.getElementById('increaseLineHeight').checked = false;
-      toggleDyslexiaFont(false);
-      toggleLineHeight(false);
       
       // Clear localStorage
       try {
         localStorage.removeItem('fontSize');
         localStorage.removeItem('customFontSize');
         localStorage.removeItem('dyslexiaFont');
-        localStorage.removeItem('increaseLineHeight');
+        localStorage.removeItem('increasedLineHeight');
       } catch (error) {
-        console.warn('Failed to clear font settings:', error);
-      }
-      
-      // Show feedback
-      const resetBtn = event.target;
-      const originalText = resetBtn.textContent;
-      resetBtn.textContent = '✓ Reset';
-      resetBtn.style.background = 'var(--success)';
-      resetBtn.style.color = 'white';
-      
-      setTimeout(() => {
-        resetBtn.textContent = originalText;
-        resetBtn.style.background = '';
-        resetBtn.style.color = '';
-      }, 1500);
-      
-      // Track reset
-      if (window.telemetry) {
-        window.telemetry.recordUserAction('font-settings-reset');
+        console.warn('Failed to clear font preferences:', error);
       }
     }
 
-    // High contrast mode management
-    function initializeHighContrastSettings() {
-      try {
-        const savedHighContrast = localStorage.getItem('highContrastMode') === 'true';
-        
-        if (savedHighContrast) {
-          toggleHighContrast(true, false); // true for enabled, false to not save again
-        }
-        
-      } catch (error) {
-        console.warn('Failed to load high contrast settings:', error);
+    // Theme functionality (handled by theme-manager.js)
+    function toggleTheme() {
+      // This will be handled by the theme manager module when it loads
+      if (window.themeManager && window.themeManager.toggleTheme) {
+        window.themeManager.toggleTheme();
       }
     }
 
-    function toggleHighContrast(forceState = null, shouldSave = true) {
-      const root = document.documentElement;
-      const currentlyEnabled = root.classList.contains('high-contrast');
-      const newState = forceState !== null ? forceState : !currentlyEnabled;
-      
-      if (newState) {
-        root.classList.add('high-contrast');
-      } else {
-        root.classList.remove('high-contrast');
-      }
-      
-      // Update icon
-      const contrastIcon = document.querySelector('.high-contrast-icon');
-      if (contrastIcon) {
-        contrastIcon.textContent = newState ? '■' : '◻';
-      }
-      
-      // Save to localStorage
-      if (shouldSave) {
-        try {
-          localStorage.setItem('highContrastMode', newState.toString());
-        } catch (error) {
-          console.warn('Failed to save high contrast setting:', error);
-        }
-      }
-      
-      // Track high contrast toggle
-      if (window.telemetry && shouldSave) {
-        window.telemetry.recordUserAction('high-contrast-toggle', newState);
-      }
-      
-      // Show brief feedback
-      if (shouldSave) {
-        showAccessibilityFeedback(newState ? 'High contrast enabled' : 'High contrast disabled');
+    function toggleHighContrast() {
+      // This will be handled by the theme manager module when it loads
+      if (window.themeManager && window.themeManager.toggleHighContrast) {
+        window.themeManager.toggleHighContrast();
       }
     }
 
-    function showAccessibilityFeedback(message) {
-      // Create and show temporary feedback message
-      const feedback = document.createElement('div');
-      feedback.className = 'accessibility-feedback';
-      feedback.textContent = message;
-      feedback.style.cssText = `
-        position: fixed;
-        top: 80px;
-        right: 20px;
-        background: var(--accent);
-        color: white;
-        padding: 12px 20px;
-        border-radius: 8px;
-        font-weight: 500;
-        z-index: 10000;
-        animation: slideInRight 0.3s ease-out;
-        box-shadow: 0 4px 12px var(--shadow-lg);
-      `;
+    // Initialize when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      initializeData();
       
-      document.body.appendChild(feedback);
+      // Auto-add current page to recent items
+      const currentPageData = {
+        title: document.title.replace(' | Bible Explorer', '').replace('Bible Explorer', 'Home'),
+        subtitle: document.querySelector('meta[name="description"]')?.getAttribute('content')?.substring(0, 80) + '...' || '',
+        url: window.location.pathname,
+        timestamp: Date.now()
+      };
       
-      // Auto-remove after 2 seconds
-      setTimeout(() => {
-        feedback.style.animation = 'slideOutRight 0.3s ease-in forwards';
-        setTimeout(() => feedback.remove(), 300);
-      }, 2000);
-    }
+      // Don't add if it's just the site title
+      if (currentPageData.title && currentPageData.title !== 'Bible Explorer') {
+        setTimeout(() => addToRecentItems(currentPageData), 1000);
+      }
+    });
 
-    // Service Worker registration
-    async function registerServiceWorker() {
-      if ('serviceWorker' in navigator) {
-        try {
-          const registration = await navigator.serviceWorker.register('/sw.js');
-          console.log('SW registered successfully:', registration.scope);
-          
-          // Handle service worker updates
-          registration.addEventListener('updatefound', () => {
-            const newWorker = registration.installing;
-            newWorker.addEventListener('statechange', () => {
-              if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                showUpdateAvailable(newWorker);
-              }
+    // Service worker registration and PWA functionality
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => {
+            registration.addEventListener('updatefound', () => {
+              showUpdateNotification();
             });
+          })
+          .catch(error => {
+            console.warn('SW registration failed:', error);
           });
-          
-          // Listen for messages from service worker
-          navigator.serviceWorker.addEventListener('message', event => {
-            handleServiceWorkerMessage(event.data);
-          });
-          
-          // Auto-cache bookmarked pages
-          window.addEventListener('bookmark-added', event => {
-            if (navigator.serviceWorker.controller) {
-              navigator.serviceWorker.controller.postMessage({
-                type: 'CACHE_BOOK',
-                data: { url: event.detail.url }
-              });
-            }
-          });
-          
-        } catch (error) {
-          console.warn('SW registration failed:', error);
-        }
-      }
-    }
-
-    function handleServiceWorkerMessage(message) {
-      const { type, data } = message;
+      });
       
-      switch (type) {
-        case 'BACK_ONLINE':
-          showOnlineStatus();
-          break;
-      }
+      // Listen for updates
+      navigator.serviceWorker.addEventListener('message', event => {
+        if (event.data && event.data.type === 'UPDATE_AVAILABLE') {
+          showUpdateNotification();
+        }
+      });
     }
 
-    function showUpdateAvailable(newWorker) {
-      // Show update notification
-      const updateNotification = document.createElement('div');
+    let updateNotification = null;
+
+    function showUpdateNotification() {
+      if (updateNotification) return;
+      
+      updateNotification = document.createElement('div');
       updateNotification.className = 'update-notification';
       updateNotification.innerHTML = `
         <div class="update-content">
-          <div class="update-icon">↻</div>
+          <span class="update-icon">↻</span>
           <div class="update-text">
-            <strong>Update Available</strong>
-            <p>A new version of Bible Explorer is ready!</p>
+            <div class="update-title">Update Available</div>
+            <div class="update-subtitle">A new version is ready</div>
           </div>
-          <div class="update-actions">
-            <button onclick="updateServiceWorker()" class="btn-primary">Update</button>
-            <button onclick="this.parentElement.parentElement.parentElement.remove()" class="btn-secondary">Later</button>
-          </div>
+          <button class="update-btn" onclick="updateServiceWorker()">Update</button>
+          <button class="update-dismiss" onclick="dismissUpdateNotification()">✕</button>
         </div>
       `;
       
       document.body.appendChild(updateNotification);
       
-      // Store reference to new worker
-      window.newServiceWorker = newWorker;
+      // Auto-remove after 10 seconds
+      setTimeout(() => {
+        dismissUpdateNotification();
+      }, 10000);
+    }
+
+    function dismissUpdateNotification() {
+      if (updateNotification) {
+        updateNotification.remove();
+        updateNotification = null;
+      }
     }
 
     function updateServiceWorker() {
@@ -2256,8 +532,10 @@
       }
     }
 
+    // Online/offline status
+    window.addEventListener('online', showOnlineStatus);
+    
     function showOnlineStatus() {
-      // Show brief online indicator
       const onlineIndicator = document.createElement('div');
       onlineIndicator.className = 'online-indicator';
       onlineIndicator.innerHTML = `
@@ -2269,7 +547,6 @@
       
       document.body.appendChild(onlineIndicator);
       
-      // Auto-remove after 3 seconds
       setTimeout(() => {
         onlineIndicator.remove();
       }, 3000);

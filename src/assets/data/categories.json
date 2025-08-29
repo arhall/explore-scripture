@@ -1,0 +1,310 @@
+[
+  {
+    "name": "Law (Torah)",
+    "slug": "law-torah",
+    "testament": "Old Testament",
+    "description": "Genesis through Deuteronomy: creation, covenant, and the formation of Israel.",
+    "themes": [
+      "Creation",
+      "Covenant",
+      "Law",
+      "Worship",
+      "Promise"
+    ],
+    "keyFigures": [
+      "Adam",
+      "Noah",
+      "Abraham",
+      "Isaac",
+      "Jacob",
+      "Moses"
+    ],
+    "bookCount": 5,
+    "timeSpan": "Creation to 1400 BC",
+    "books": [
+      "Genesis",
+      "Exodus",
+      "Leviticus",
+      "Numbers",
+      "Deuteronomy"
+    ],
+    "url": "/categories/law-torah/"
+  },
+  {
+    "name": "History",
+    "slug": "history",
+    "testament": "Old Testament",
+    "description": "Joshua through Esther: conquest, kingdom, exile, and return.",
+    "themes": [
+      "Conquest",
+      "Kingdom",
+      "Exile",
+      "Return",
+      "Faithfulness"
+    ],
+    "keyFigures": [
+      "Joshua",
+      "David",
+      "Solomon",
+      "Ezra",
+      "Nehemiah"
+    ],
+    "bookCount": 12,
+    "timeSpan": "1400-400 BC",
+    "books": [
+      "Joshua",
+      "Judges",
+      "Ruth",
+      "1 Samuel",
+      "2 Samuel",
+      "1 Kings",
+      "2 Kings",
+      "1 Chronicles",
+      "2 Chronicles",
+      "Ezra",
+      "Nehemiah",
+      "Esther"
+    ],
+    "url": "/categories/history/"
+  },
+  {
+    "name": "Poetry & Writings",
+    "slug": "poetry-writings",
+    "testament": "Old Testament",
+    "description": "Job through Song of Songs: wisdom, worship, and reflections.",
+    "themes": [
+      "Wisdom",
+      "Worship",
+      "Suffering",
+      "Love",
+      "Meaning"
+    ],
+    "keyFigures": [
+      "Job",
+      "David",
+      "Solomon"
+    ],
+    "bookCount": 5,
+    "timeSpan": "Various periods",
+    "books": [
+      "Job",
+      "Psalms",
+      "Proverbs",
+      "Ecclesiastes",
+      "Song of Songs"
+    ],
+    "url": "/categories/poetry-writings/"
+  },
+  {
+    "name": "Major Prophets",
+    "slug": "major-prophets",
+    "testament": "Old Testament",
+    "description": "Isaiah through Daniel: large prophetic works addressing judgment and hope.",
+    "themes": [
+      "Judgment",
+      "Hope",
+      "Messiah",
+      "Restoration",
+      "Sovereignty"
+    ],
+    "keyFigures": [
+      "Isaiah",
+      "Jeremiah",
+      "Ezekiel",
+      "Daniel"
+    ],
+    "bookCount": 5,
+    "timeSpan": "740-530 BC",
+    "books": [
+      "Isaiah",
+      "Jeremiah",
+      "Lamentations",
+      "Ezekiel",
+      "Daniel"
+    ],
+    "url": "/categories/major-prophets/"
+  },
+  {
+    "name": "Minor Prophets",
+    "slug": "minor-prophets",
+    "testament": "Old Testament",
+    "description": "Hosea through Malachi: shorter prophetic books with powerful messages.",
+    "themes": [
+      "Justice",
+      "Mercy",
+      "Repentance",
+      "Day of the Lord"
+    ],
+    "keyFigures": [
+      "Hosea",
+      "Joel",
+      "Amos",
+      "Jonah",
+      "Micah"
+    ],
+    "bookCount": 12,
+    "timeSpan": "760-400 BC",
+    "books": [
+      "Hosea",
+      "Joel",
+      "Amos",
+      "Obadiah",
+      "Jonah",
+      "Micah",
+      "Nahum",
+      "Habakkuk",
+      "Zephaniah",
+      "Haggai",
+      "Zechariah",
+      "Malachi"
+    ],
+    "url": "/categories/minor-prophets/"
+  },
+  {
+    "name": "Gospels",
+    "slug": "gospels",
+    "testament": "New Testament",
+    "description": "Matthew, Mark, Luke, John: the life, death, and resurrection of Jesus.",
+    "themes": [
+      "Kingdom",
+      "Salvation",
+      "Grace",
+      "Love",
+      "Truth"
+    ],
+    "keyFigures": [
+      "Jesus",
+      "John the Baptist",
+      "Peter",
+      "Mary",
+      "Martha"
+    ],
+    "bookCount": 4,
+    "timeSpan": "4 BC - 30 AD",
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John"
+    ],
+    "url": "/categories/gospels/"
+  },
+  {
+    "name": "Acts",
+    "slug": "acts",
+    "testament": "New Testament",
+    "description": "The birth and expansion of the early Church.",
+    "themes": [
+      "Holy Spirit",
+      "Mission",
+      "Church Growth",
+      "Persecution"
+    ],
+    "keyFigures": [
+      "Peter",
+      "Paul",
+      "Stephen",
+      "Philip",
+      "Barnabas"
+    ],
+    "bookCount": 1,
+    "timeSpan": "30-62 AD",
+    "books": [
+      "Acts"
+    ],
+    "url": "/categories/acts/"
+  },
+  {
+    "name": "Pauline Epistles",
+    "slug": "pauline-epistles",
+    "testament": "New Testament",
+    "description": "Letters attributed to Paul addressing doctrine and church life.",
+    "themes": [
+      "Justification",
+      "Sanctification",
+      "Unity",
+      "Leadership",
+      "Faith"
+    ],
+    "keyFigures": [
+      "Paul",
+      "Timothy",
+      "Titus",
+      "Philemon"
+    ],
+    "bookCount": 13,
+    "timeSpan": "48-67 AD",
+    "books": [
+      "Romans",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Galatians",
+      "Ephesians",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon"
+    ],
+    "url": "/categories/pauline-epistles/"
+  },
+  {
+    "name": "General Epistles",
+    "slug": "general-epistles",
+    "testament": "New Testament",
+    "description": "Letters by other apostles and leaders to the wider church.",
+    "themes": [
+      "Perseverance",
+      "Love",
+      "Truth",
+      "Hope",
+      "Maturity"
+    ],
+    "keyFigures": [
+      "Peter",
+      "John",
+      "James",
+      "Jude"
+    ],
+    "bookCount": 8,
+    "timeSpan": "45-90 AD",
+    "books": [
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John",
+      "2 John",
+      "3 John",
+      "Jude"
+    ],
+    "url": "/categories/general-epistles/"
+  },
+  {
+    "name": "Apocalypse",
+    "slug": "apocalypse",
+    "testament": "New Testament",
+    "description": "Revelation: apocalyptic prophecy and ultimate hope.",
+    "themes": [
+      "Victory",
+      "Judgment",
+      "New Creation",
+      "Worship",
+      "Hope"
+    ],
+    "keyFigures": [
+      "John",
+      "Jesus",
+      "The Lamb"
+    ],
+    "bookCount": 1,
+    "timeSpan": "95 AD",
+    "books": [
+      "Revelation"
+    ],
+    "url": "/categories/apocalypse/"
+  }
+]

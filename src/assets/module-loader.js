@@ -12,7 +12,9 @@ class ModuleLoader {
       core: [
         '/assets/logger.js',
         '/assets/security-config.js',
-        '/assets/theme-manager.js'
+        '/assets/theme-manager.js',
+        '/assets/search-engine.js',
+        '/assets/search-interface.js'
       ],
       
       // Page-specific modules
@@ -20,11 +22,11 @@ class ModuleLoader {
       'chapter-reader': '/assets/chapter-reader.js',
       'commentary-reader': '/assets/commentary-reader.js',
       'scripture-widget': '/assets/scripture-widget.js',
+      'search-engine': '/assets/search-engine.js',
+      'search-interface': '/assets/search-interface.js',
       'theme-manager': '/assets/theme-manager.js',
       'telemetry': '/assets/telemetry.js',
-      'debug-dashboard': '/assets/debug-dashboard.js',
-      'search-engine': '/assets/search-engine.js',
-      'unified-search': '/assets/unified-search.js'
+      'debug-dashboard': '/assets/debug-dashboard.js'
     };
     
     this.init();
@@ -192,29 +194,7 @@ class ModuleLoader {
   loadPageSpecificModules() {
     const pathname = window.location.pathname;
     
-    // Load search engine immediately for homepage and main pages
-    const isHighTrafficPage = pathname === '/' || 
-                             pathname.startsWith('/books') || 
-                             pathname.startsWith('/characters') || 
-                             pathname.startsWith('/categories');
-    
-    const searchDelay = isHighTrafficPage ? 50 : 100;
-    
-    // Load search engine and unified search on all pages with higher priority
-    setTimeout(() => {
-      console.log('[ModuleLoader] Loading search modules...');
-      this.loadModule('search-engine').then(() => {
-        return this.loadModule('unified-search');
-      }).then(() => {
-        // Notify that search modules are ready
-        console.log('[ModuleLoader] Search modules loaded successfully');
-        document.dispatchEvent(new CustomEvent('searchModulesLoaded'));
-      }).catch(error => {
-        console.error('[ModuleLoader] Failed to load search modules:', error);
-        // Still dispatch event so search doesn't wait forever
-        document.dispatchEvent(new CustomEvent('searchModulesLoadFailed', { detail: error }));
-      });
-    }, searchDelay);
+    // No search modules to load
     
     // Book pages - load chapter reader and commentary reader immediately
     if (pathname.startsWith('/books/')) {

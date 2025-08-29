@@ -56,7 +56,17 @@
       "WebFetch(domain:biblehub.com)",
       "WebFetch(domain:www.blueletterbible.org)",
       "Bash(open http://localhost:8083/books/1-john/)",
-      "Bash(open http://localhost:8083/books/song-of-songs/)"
+      "Bash(open http://localhost:8083/books/song-of-songs/)",
+      "Bash(python -m pytest tests/test_commentary_system.py -v --tb=short)",
+      "Bash(pip install:*)",
+      "Bash(python -m pytest tests/test_commentary_system.py::TestCommentarySystem::test_commentary_buttons_exist -v --tb=short)",
+      "Bash(python -m pytest tests/test_commentary_system.py::TestCommentarySystem::test_commentary_modal_opens -v --tb=short)",
+      "Bash(open http://localhost:8080)",
+      "Bash(open http://localhost:8080/test-search.html)",
+      "Bash(open http://localhost:8080/)",
+      "Bash(open http://localhost:8080/categories/)",
+      "Bash(open http://localhost:8080/test-luke-search.html)",
+      "Bash(open http://localhost:8080/books/luke/)"
     ],
     "deny": [],
     "ask": []

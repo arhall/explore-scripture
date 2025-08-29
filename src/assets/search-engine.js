@@ -1,6 +1,7 @@
 /**
  * Advanced Search Engine for Bible Explorer
- * Features: Fuzzy matching, ranking, multi-field search, typo tolerance
+ * Provides unified search across books, chapters, characters, and categories
+ * Features: Fuzzy matching, autocomplete, performance optimization
  */
 
 class SearchEngine {
@@ -8,11 +9,22 @@ class SearchEngine {
     this.indices = new Map();
     this.searchHistory = [];
     this.suggestionCache = new Map();
+    this.initialized = false;
+    this.searchData = null;
+    
+    // Performance optimizations
+    this.debounceTimer = null;
+    this.lastQuery = '';
+    this.maxResults = 50;
+    
+    // Search configuration
     this.stopWords = new Set(['the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'is', 'are', 'was', 'were', 'be', 'been', 'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could', 'should']);
+    
+    // Biblical synonyms for enhanced search
     this.synonyms = new Map([
-      ['god', ['lord', 'yahweh', 'jehovah', 'almighty']],
-      ['jesus', ['christ', 'messiah', 'savior', 'lord']],
-      ['bible', ['scripture', 'word', 'holy book']],
+      ['god', ['lord', 'yahweh', 'jehovah', 'almighty', 'creator']],
+      ['jesus', ['christ', 'messiah', 'savior', 'lord', 'lamb']],
+      ['bible', ['scripture', 'word', 'holy book', 'testament']],
       ['prophet', ['seer', 'messenger']],
       ['king', ['ruler', 'monarch']],
       ['priest', ['minister', 'clergyman']],
@@ -32,541 +44,410 @@ class SearchEngine {
       ['salvation', ['redemption', 'deliverance', 'rescue']]
     ]);
   }
-  
-  // Initialize search indices for different content types
-  async initializeIndices(data) {
-    console.log('[SearchEngine] Initializing search indices...');
+
+  // Initialize search engine with all content
+  async initialize() {
+    if (this.initialized) return;
     
-    // Create indices for different content types
-    if (data.books) {
-      this.createIndex('books', data.books, {
-        searchFields: ['name', 'testament', 'category', 'author', 'description', 'keyThemes'],
-        titleField: 'name',
-        urlPattern: '/books/{slug}/',
-        type: 'book'
-      });
-    }
-    
-    if (data.characters) {
-      this.createIndex('characters', data.characters, {
-        searchFields: ['name', 'description', 'significance', 'keyVerses', 'modernApplications'],
-        titleField: 'name',
-        urlPattern: '/characters/{slug}/',
-        type: 'character'
-      });
-    }
-    
-    if (data.chapters) {
-      this.createIndex('chapters', data.chapters, {
-        searchFields: ['summary', 'keyEvents', 'themes'],
-        titleField: 'title',
-        urlPattern: '/books/{book}/chapter-{chapter}/',
-        type: 'chapter'
-      });
-    }
-    
-    console.log('[SearchEngine] Indices initialized:', Array.from(this.indices.keys()));
-  }
-  
-  createIndex(name, data, config) {
-    const index = {
-      data: data,
-      config: config,
-      searchableText: [],
-      ngrams: new Map(),
-      wordIndex: new Map()
-    };
-    
-    // Build searchable text and indices
-    data.forEach((item, itemIndex) => {
-      const searchText = this.extractSearchableText(item, config.searchFields);
-      index.searchableText.push(searchText);
+    try {
+      console.log('[SearchEngine] Initializing...');
       
-      // Build n-gram index for fuzzy matching
-      this.buildNGrams(searchText, itemIndex, index.ngrams);
+      // Load all search data
+      await this.loadSearchData();
       
-      // Build word index for exact matching
-      this.buildWordIndex(searchText, itemIndex, index.wordIndex);
-    });
-    
-    this.indices.set(name, index);
-  }
-  
-  extractSearchableText(item, fields) {
-    let text = '';
-    
-    fields.forEach(field => {
-      const value = this.getNestedValue(item, field);
-      if (value) {
-        if (Array.isArray(value)) {
-          text += ' ' + value.join(' ');
-        } else {
-          text += ' ' + String(value);
-        }
-      }
-    });
-    
-    return this.normalizeText(text);
-  }
-  
-  getNestedValue(obj, path) {
-    return path.split('.').reduce((current, key) => current?.[key], obj);
-  }
-  
-  normalizeText(text) {
-    return text.toLowerCase()
-      .replace(/[^\w\s]/g, ' ')
-      .replace(/\s+/g, ' ')
-      .trim();
-  }
-  
-  buildNGrams(text, itemIndex, ngramMap, n = 3) {
-    const words = text.split(' ');
-    
-    words.forEach(word => {
-      if (word.length >= n && !this.stopWords.has(word)) {
-        for (let i = 0; i <= word.length - n; i++) {
-          const ngram = word.substring(i, i + n);
-          if (!ngramMap.has(ngram)) {
-            ngramMap.set(ngram, []);
-          }
-          ngramMap.get(ngram).push(itemIndex);
-        }
-      }
-    });
-  }
-  
-  buildWordIndex(text, itemIndex, wordIndex) {
-    const words = text.split(' ').filter(word => !this.stopWords.has(word));
-    
-    words.forEach(word => {
-      if (!wordIndex.has(word)) {
-        wordIndex.set(word, []);
-      }
-      wordIndex.get(word).push(itemIndex);
-    });
-  }
-  
-  // Main search function
-  search(query, options = {}) {
-    const startTime = performance.now();
-    
-    if (!query || query.length < 2) {
-      return { results: [], suggestions: [], stats: { totalTime: 0, totalResults: 0 } };
+      // Build search indices
+      this.buildIndices();
+      
+      this.initialized = true;
+      console.log('[SearchEngine] Initialization complete');
+      
+      // Dispatch initialization event
+      window.dispatchEvent(new CustomEvent('searchEngineReady'));
+      
+    } catch (error) {
+      console.error('[SearchEngine] Initialization failed:', error);
+      throw error;
     }
-    
-    const normalizedQuery = this.normalizeText(query);
-    const queryWords = normalizedQuery.split(' ').filter(word => word.length > 0);
-    
-    let allResults = [];
-    
-    // Search across all indices
-    this.indices.forEach((index, indexName) => {
-      const indexResults = this.searchIndex(index, queryWords, options);
-      allResults.push(...indexResults.map(result => ({
-        ...result,
-        sourceIndex: indexName,
-        type: index.config.type
-      })));
-    });
-    
-    // Sort by relevance score
-    allResults.sort((a, b) => b.score - a.score);
-    
-    // Apply pagination
-    const limit = options.limit || 50;
-    const offset = options.offset || 0;
-    const paginatedResults = allResults.slice(offset, offset + limit);
-    
-    // Generate suggestions
-    const suggestions = this.generateSuggestions(query, allResults);
-    
-    const endTime = performance.now();
-    const stats = {
-      totalTime: endTime - startTime,
-      totalResults: allResults.length,
-      query: query,
-      normalizedQuery: normalizedQuery
-    };
-    
-    // Save to search history
-    this.addToSearchHistory(query, allResults.length);
-    
-    console.log(`[SearchEngine] Search completed in ${stats.totalTime.toFixed(2)}ms, ${stats.totalResults} results found`);
-    
-    return {
-      results: paginatedResults,
-      suggestions: suggestions,
-      stats: stats
-    };
   }
-  
-  searchIndex(index, queryWords, options) {
-    const results = [];
-    const exactMatches = new Set();
-    const fuzzyMatches = new Map();
+
+  // Load all search data from the site
+  async loadSearchData() {
+    try {
+      const promises = [];
+      
+      // Load books data
+      promises.push(this.fetchJSON('/assets/data/books.json').catch(() => null));
+      
+      // Load characters data
+      promises.push(this.fetchJSON('/assets/data/characters.json').catch(() => null));
+      
+      // Load categories data
+      promises.push(this.fetchJSON('/assets/data/categories.json').catch(() => null));
+      
+      const [booksData, charactersData, categoriesData] = await Promise.all(promises);
+      
+      this.searchData = {
+        books: booksData || [],
+        characters: charactersData || [],
+        categories: categoriesData || []
+      };
+      
+    } catch (error) {
+      console.error('[SearchEngine] Failed to load search data:', error);
+      // Initialize with empty data if loading fails
+      this.searchData = { books: [], characters: [], categories: [] };
+    }
+  }
+
+  // Helper to fetch JSON with error handling
+  async fetchJSON(url) {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch ${url}: ${response.statusText}`);
+    }
+    return response.json();
+  }
+
+  // Build search indices for all content types
+  buildIndices() {
+    console.log('[SearchEngine] Building search indices...');
     
-    // 1. Exact word matching (highest priority)
-    queryWords.forEach(word => {
-      const expanded = this.expandWithSynonyms(word);
-      expanded.forEach(expandedWord => {
-        if (index.wordIndex.has(expandedWord)) {
-          index.wordIndex.get(expandedWord).forEach(itemIndex => {
-            exactMatches.add(itemIndex);
+    // Build books index
+    this.buildBooksIndex();
+    
+    // Build characters index  
+    this.buildCharactersIndex();
+    
+    // Build categories index
+    this.buildCategoriesIndex();
+    
+    console.log('[SearchEngine] Indices built successfully');
+  }
+
+  // Build index for books and their chapters
+  buildBooksIndex() {
+    const books = this.searchData.books;
+    const bookItems = [];
+    
+    books.forEach(book => {
+      // Add book itself
+      bookItems.push({
+        id: `book-${book.slug}`,
+        type: 'book',
+        title: book.name,
+        subtitle: `${book.testament} • ${book.category}`,
+        description: `${book.author ? `Written by ${book.author}. ` : ''}${book.chapterSummaries ? Object.keys(book.chapterSummaries).length : 0} chapters.`,
+        url: `/books/${book.slug}/`,
+        searchText: this.buildSearchText([
+          book.name,
+          book.testament,
+          book.category,
+          book.author,
+          book.language
+        ]),
+        relevanceBoost: 2.0, // Books get higher relevance
+        testament: book.testament,
+        category: book.category
+      });
+      
+      // Add individual chapters
+      if (book.chapterSummaries) {
+        Object.entries(book.chapterSummaries).forEach(([chapterNum, summary]) => {
+          bookItems.push({
+            id: `chapter-${book.slug}-${chapterNum}`,
+            type: 'chapter',
+            title: `${book.name} ${chapterNum}`,
+            subtitle: 'Chapter',
+            description: this.truncateText(summary, 150),
+            url: `/books/${book.slug}/#chapter-${chapterNum}`,
+            searchText: this.buildSearchText([
+              book.name,
+              `chapter ${chapterNum}`,
+              summary
+            ]),
+            relevanceBoost: 1.0,
+            bookName: book.name,
+            chapterNumber: parseInt(chapterNum)
           });
-        }
-      });
-    });
-    
-    // 2. Fuzzy matching using n-grams
-    queryWords.forEach(word => {
-      if (word.length >= 3) {
-        const fuzzyResults = this.fuzzySearch(word, index.ngrams);
-        fuzzyResults.forEach(([itemIndex, similarity]) => {
-          if (!exactMatches.has(itemIndex)) {
-            if (!fuzzyMatches.has(itemIndex)) {
-              fuzzyMatches.set(itemIndex, []);
-            }
-            fuzzyMatches.get(itemIndex).push(similarity);
-          }
         });
       }
     });
     
-    // Process exact matches
-    exactMatches.forEach(itemIndex => {
-      const item = index.data[itemIndex];
-      const score = this.calculateScore(item, queryWords, index, 'exact');
-      results.push({
-        item: item,
-        score: score,
-        matchType: 'exact',
-        title: item[index.config.titleField] || 'Untitled',
-        url: this.generateUrl(item, index.config.urlPattern),
-        snippet: this.generateSnippet(index.searchableText[itemIndex], queryWords)
+    this.indices.set('books', bookItems);
+    console.log(`[SearchEngine] Books index: ${bookItems.length} items`);
+  }
+
+  // Build index for characters
+  buildCharactersIndex() {
+    const characters = this.searchData.characters;
+    const characterItems = [];
+    
+    characters.forEach(character => {
+      characterItems.push({
+        id: `character-${character.slug}`,
+        type: 'character',
+        title: character.name,
+        subtitle: 'Biblical Character',
+        description: character.description || `A biblical character mentioned in ${character.appearances ? character.appearances.length : 'multiple'} books.`,
+        url: `/characters/${character.slug}/`,
+        searchText: this.buildSearchText([
+          character.name,
+          character.description,
+          character.testament,
+          character.category,
+          ...(character.keyWords || []),
+          ...(character.appearances || [])
+        ]),
+        relevanceBoost: 1.5,
+        testament: character.testament,
+        category: character.category
       });
     });
     
-    // Process fuzzy matches
-    fuzzyMatches.forEach((similarities, itemIndex) => {
-      const item = index.data[itemIndex];
-      const avgSimilarity = similarities.reduce((sum, sim) => sum + sim, 0) / similarities.length;
-      const score = this.calculateScore(item, queryWords, index, 'fuzzy', avgSimilarity);
-      results.push({
-        item: item,
-        score: score,
-        matchType: 'fuzzy',
-        similarity: avgSimilarity,
-        title: item[index.config.titleField] || 'Untitled',
-        url: this.generateUrl(item, index.config.urlPattern),
-        snippet: this.generateSnippet(index.searchableText[itemIndex], queryWords)
+    this.indices.set('characters', characterItems);
+    console.log(`[SearchEngine] Characters index: ${characterItems.length} items`);
+  }
+
+  // Build index for categories
+  buildCategoriesIndex() {
+    const categories = this.searchData.categories;
+    const categoryItems = [];
+    
+    categories.forEach(category => {
+      categoryItems.push({
+        id: `category-${category.slug}`,
+        type: 'category',
+        title: category.name,
+        subtitle: `${category.testament} • ${category.bookCount || 0} books`,
+        description: category.description,
+        url: `/categories/${category.slug}/`,
+        searchText: this.buildSearchText([
+          category.name,
+          category.description,
+          category.testament,
+          ...(category.themes || []),
+          ...(category.keyFigures || [])
+        ]),
+        relevanceBoost: 1.2,
+        testament: category.testament
       });
+    });
+    
+    this.indices.set('categories', categoryItems);
+    console.log(`[SearchEngine] Categories index: ${categoryItems.length} items`);
+  }
+
+  // Build searchable text from multiple fields
+  buildSearchText(fields) {
+    return fields
+      .filter(field => field && typeof field === 'string')
+      .join(' ')
+      .toLowerCase()
+      .trim();
+  }
+
+  // Truncate text with ellipsis
+  truncateText(text, maxLength) {
+    if (!text || text.length <= maxLength) return text || '';
+    return text.substring(0, maxLength).trim() + '...';
+  }
+
+  // Main search function
+  search(query, options = {}) {
+    if (!this.initialized) {
+      console.warn('[SearchEngine] Not initialized, returning empty results');
+      return [];
+    }
+    
+    if (!query || query.trim().length < 1) {
+      return [];
+    }
+    
+    const normalizedQuery = this.normalizeQuery(query);
+    const maxResults = options.maxResults || this.maxResults;
+    
+    // Check cache first
+    const cacheKey = `${normalizedQuery}-${maxResults}`;
+    if (this.suggestionCache.has(cacheKey)) {
+      return this.suggestionCache.get(cacheKey);
+    }
+    
+    let allResults = [];
+    
+    // Search all indices
+    for (const [indexName, items] of this.indices) {
+      const indexResults = this.searchIndex(items, normalizedQuery, options);
+      allResults = allResults.concat(indexResults);
+    }
+    
+    // Sort by relevance and limit results
+    allResults.sort((a, b) => b.score - a.score);
+    const limitedResults = allResults.slice(0, maxResults);
+    
+    // Cache results
+    this.suggestionCache.set(cacheKey, limitedResults);
+    
+    // Clean cache if it gets too large
+    if (this.suggestionCache.size > 1000) {
+      const oldestKeys = Array.from(this.suggestionCache.keys()).slice(0, 500);
+      oldestKeys.forEach(key => this.suggestionCache.delete(key));
+    }
+    
+    return limitedResults;
+  }
+
+  // Search within a specific index
+  searchIndex(items, query, options = {}) {
+    const results = [];
+    const queryTokens = this.tokenize(query);
+    
+    items.forEach(item => {
+      const score = this.calculateRelevanceScore(item, queryTokens, query);
+      
+      if (score > 0) {
+        results.push({
+          ...item,
+          score: score * (item.relevanceBoost || 1.0)
+        });
+      }
     });
     
     return results;
   }
-  
-  expandWithSynonyms(word) {
-    const expanded = [word];
-    if (this.synonyms.has(word)) {
-      expanded.push(...this.synonyms.get(word));
-    }
-    
-    // Also check if word is a synonym of something else
-    this.synonyms.forEach((synonyms, key) => {
-      if (synonyms.includes(word)) {
-        expanded.push(key);
-        expanded.push(...synonyms);
-      }
-    });
-    
-    return [...new Set(expanded)];
-  }
-  
-  fuzzySearch(query, ngramIndex, threshold = 0.3) {
-    const queryNgrams = new Set();
-    for (let i = 0; i <= query.length - 3; i++) {
-      queryNgrams.add(query.substring(i, i + 3));
-    }
-    
-    const candidates = new Map();
-    
-    // Find candidates using n-grams
-    queryNgrams.forEach(ngram => {
-      if (ngramIndex.has(ngram)) {
-        ngramIndex.get(ngram).forEach(itemIndex => {
-          candidates.set(itemIndex, (candidates.get(itemIndex) || 0) + 1);
-        });
-      }
-    });
-    
-    // Calculate Jaccard similarity and filter by threshold
-    const results = [];
-    candidates.forEach((commonNgrams, itemIndex) => {
-      const similarity = commonNgrams / (queryNgrams.size + commonNgrams - commonNgrams);
-      if (similarity >= threshold) {
-        results.push([itemIndex, similarity]);
-      }
-    });
-    
-    return results.sort((a, b) => b[1] - a[1]);
-  }
-  
-  calculateScore(item, queryWords, index, matchType, similarity = 1.0) {
+
+  // Calculate relevance score for an item
+  calculateRelevanceScore(item, queryTokens, originalQuery) {
     let score = 0;
+    const searchText = item.searchText.toLowerCase();
+    const title = item.title.toLowerCase();
     
-    // Base score by match type
-    switch (matchType) {
-      case 'exact':
-        score = 100;
-        break;
-      case 'fuzzy':
-        score = 60 * similarity;
-        break;
-      default:
-        score = 30;
+    // Exact title match gets highest score
+    if (title === originalQuery.toLowerCase()) {
+      score += 100;
     }
     
-    // Boost for title matches
-    const title = (item[index.config.titleField] || '').toLowerCase();
-    const titleMatches = queryWords.filter(word => title.includes(word)).length;
-    score += titleMatches * 20;
-    
-    // Boost for complete phrase matches
-    const searchText = index.searchableText[index.data.indexOf(item)];
-    const originalQuery = queryWords.join(' ');
-    if (searchText.includes(originalQuery)) {
+    // Title starts with query
+    if (title.startsWith(originalQuery.toLowerCase())) {
       score += 50;
     }
     
-    // Boost based on content length (shorter, more focused content ranks higher)
-    const contentLength = searchText.length;
-    if (contentLength < 200) score += 10;
-    else if (contentLength < 500) score += 5;
-    
-    // Boost for popular items (if available)
-    if (item.popularity) {
-      score += Math.min(item.popularity * 0.1, 10);
+    // Title contains query
+    if (title.includes(originalQuery.toLowerCase())) {
+      score += 25;
     }
     
-    return Math.round(score);
-  }
-  
-  generateUrl(item, urlPattern) {
-    let url = urlPattern;
-    Object.keys(item).forEach(key => {
-      url = url.replace(`{${key}}`, encodeURIComponent(item[key] || ''));
-    });
-    return url;
-  }
-  
-  generateSnippet(text, queryWords, maxLength = 200) {
-    const lowerText = text.toLowerCase();
-    const queryPositions = [];
-    
-    // Find positions of query words
-    queryWords.forEach(word => {
-      let pos = lowerText.indexOf(word.toLowerCase());
-      while (pos !== -1) {
-        queryPositions.push({ pos, length: word.length, word });
-        pos = lowerText.indexOf(word.toLowerCase(), pos + 1);
+    // Token-based scoring
+    queryTokens.forEach(token => {
+      if (title.includes(token)) {
+        score += 10;
       }
-    });
-    
-    if (queryPositions.length === 0) {
-      return text.substring(0, maxLength) + (text.length > maxLength ? '...' : '');
-    }
-    
-    // Sort by position
-    queryPositions.sort((a, b) => a.pos - b.pos);
-    
-    // Find the best snippet window
-    const firstMatch = queryPositions[0];
-    const snippetStart = Math.max(0, firstMatch.pos - 50);
-    const snippetEnd = Math.min(text.length, snippetStart + maxLength);
-    
-    let snippet = text.substring(snippetStart, snippetEnd);
-    
-    // Add ellipsis if needed
-    if (snippetStart > 0) snippet = '...' + snippet;
-    if (snippetEnd < text.length) snippet = snippet + '...';
-    
-    // Highlight query terms
-    queryWords.forEach(word => {
-      const regex = new RegExp(`(${this.escapeRegex(word)})`, 'gi');
-      snippet = snippet.replace(regex, '<mark>$1</mark>');
-    });
-    
-    return snippet;
-  }
-  
-  escapeRegex(string) {
-    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  }
-  
-  generateSuggestions(query, results) {
-    if (this.suggestionCache.has(query)) {
-      return this.suggestionCache.get(query);
-    }
-    
-    const suggestions = [];
-    
-    // Typo corrections using Levenshtein distance
-    if (results.length < 3) {
-      const corrections = this.suggestTypoCorrections(query);
-      suggestions.push(...corrections.map(correction => ({
-        type: 'correction',
-        text: correction,
-        reason: 'Did you mean'
-      })));
-    }
-    
-    // Related searches from popular terms
-    const relatedTerms = this.findRelatedTerms(query);
-    suggestions.push(...relatedTerms.map(term => ({
-      type: 'related',
-      text: term,
-      reason: 'Related'
-    })));
-    
-    // Autocomplete suggestions
-    const autocomplete = this.generateAutocompleteSuggestions(query);
-    suggestions.push(...autocomplete.map(suggestion => ({
-      type: 'autocomplete',
-      text: suggestion,
-      reason: 'Complete'
-    })));
-    
-    const uniqueSuggestions = suggestions
-      .filter((suggestion, index, self) => 
-        index === self.findIndex(s => s.text === suggestion.text)
-      )
-      .slice(0, 5);
-    
-    this.suggestionCache.set(query, uniqueSuggestions);
-    return uniqueSuggestions;
-  }
-  
-  suggestTypoCorrections(query, maxDistance = 2) {
-    const corrections = [];
-    const queryWords = query.toLowerCase().split(' ');
-    
-    this.indices.forEach(index => {
-      index.wordIndex.forEach((positions, word) => {
-        queryWords.forEach(queryWord => {
-          const distance = this.levenshteinDistance(queryWord, word);
-          if (distance > 0 && distance <= maxDistance && word.length > 3) {
-            corrections.push(query.replace(queryWord, word));
-          }
-        });
+      if (searchText.includes(token)) {
+        score += 5;
+      }
+      
+      // Fuzzy matching
+      if (this.fuzzyMatch(token, title)) {
+        score += 3;
+      }
+      if (this.fuzzyMatch(token, searchText)) {
+        score += 1;
+      }
+      
+      // Synonym matching
+      const synonyms = this.synonyms.get(token) || [];
+      synonyms.forEach(synonym => {
+        if (searchText.includes(synonym)) {
+          score += 2;
+        }
       });
     });
     
-    return [...new Set(corrections)].slice(0, 3);
+    return score;
   }
-  
+
+  // Normalize search query
+  normalizeQuery(query) {
+    return query.toLowerCase().trim().replace(/\s+/g, ' ');
+  }
+
+  // Tokenize query into searchable terms
+  tokenize(text) {
+    return text
+      .toLowerCase()
+      .replace(/[^\w\s]/g, ' ')
+      .split(/\s+/)
+      .filter(token => token.length > 1 && !this.stopWords.has(token));
+  }
+
+  // Simple fuzzy matching
+  fuzzyMatch(pattern, text, maxDistance = 2) {
+    return this.levenshteinDistance(pattern, text) <= maxDistance;
+  }
+
+  // Calculate Levenshtein distance
   levenshteinDistance(str1, str2) {
-    const matrix = [];
+    const matrix = Array(str2.length + 1).fill(null).map(() => Array(str1.length + 1).fill(null));
     
-    for (let i = 0; i <= str2.length; i++) {
-      matrix[i] = [i];
+    for (let i = 0; i <= str1.length; i++) {
+      matrix[0][i] = i;
     }
     
-    for (let j = 0; j <= str1.length; j++) {
-      matrix[0][j] = j;
+    for (let j = 0; j <= str2.length; j++) {
+      matrix[j][0] = j;
     }
     
-    for (let i = 1; i <= str2.length; i++) {
-      for (let j = 1; j <= str1.length; j++) {
-        if (str2.charAt(i - 1) === str1.charAt(j - 1)) {
-          matrix[i][j] = matrix[i - 1][j - 1];
-        } else {
-          matrix[i][j] = Math.min(
-            matrix[i - 1][j - 1] + 1,
-            matrix[i][j - 1] + 1,
-            matrix[i - 1][j] + 1
-          );
-        }
+    for (let j = 1; j <= str2.length; j++) {
+      for (let i = 1; i <= str1.length; i++) {
+        const cost = str1[i - 1] === str2[j - 1] ? 0 : 1;
+        matrix[j][i] = Math.min(
+          matrix[j][i - 1] + 1,
+          matrix[j - 1][i] + 1,
+          matrix[j - 1][i - 1] + cost
+        );
       }
     }
     
     return matrix[str2.length][str1.length];
   }
-  
-  findRelatedTerms(query) {
-    const queryWords = query.toLowerCase().split(' ');
-    const related = [];
-    
-    // Check synonyms
-    queryWords.forEach(word => {
-      if (this.synonyms.has(word)) {
-        related.push(...this.synonyms.get(word));
-      }
-    });
-    
-    // Add common biblical terms that might be related
-    const biblicalTerms = ['faith', 'prayer', 'worship', 'covenant', 'scripture', 'prophecy', 'miracle', 'salvation', 'redemption', 'grace'];
-    const randomTerms = biblicalTerms.sort(() => 0.5 - Math.random()).slice(0, 2);
-    related.push(...randomTerms);
-    
-    return [...new Set(related)].slice(0, 3);
-  }
-  
-  generateAutocompleteSuggestions(query) {
-    const suggestions = [];
-    const queryLower = query.toLowerCase();
-    
-    // Find terms that start with the query
-    this.indices.forEach(index => {
-      index.wordIndex.forEach((positions, word) => {
-        if (word.startsWith(queryLower) && word !== queryLower && word.length > queryLower.length) {
-          suggestions.push(word);
-        }
-      });
-    });
-    
-    // Sort by length (shorter suggestions first) and frequency
-    return [...new Set(suggestions)]
-      .sort((a, b) => a.length - b.length)
-      .slice(0, 5);
-  }
-  
-  addToSearchHistory(query, resultCount) {
-    const historyEntry = {
-      query,
-      resultCount,
-      timestamp: Date.now()
-    };
-    
-    this.searchHistory.unshift(historyEntry);
-    
-    // Keep only last 100 searches
-    if (this.searchHistory.length > 100) {
-      this.searchHistory = this.searchHistory.slice(0, 100);
+
+  // Get autocomplete suggestions
+  getAutocompleteSuggestions(query, maxSuggestions = 8) {
+    if (!query || query.length < 1) {
+      return [];
     }
     
-    // Save to localStorage
-    try {
-      localStorage.setItem('bibleExplorerSearchHistory', JSON.stringify(this.searchHistory));
-    } catch (e) {
-      console.warn('Could not save search history to localStorage');
-    }
+    const results = this.search(query, { maxResults: maxSuggestions });
+    return results.map(result => ({
+      text: result.title,
+      subtitle: result.subtitle,
+      type: result.type,
+      url: result.url
+    }));
   }
-  
-  getSearchHistory() {
-    return this.searchHistory.slice(0, 10); // Return last 10 searches
-  }
-  
-  getStats() {
-    return {
-      indices: Array.from(this.indices.keys()),
-      totalItems: Array.from(this.indices.values()).reduce((sum, index) => sum + index.data.length, 0),
-      searchHistory: this.searchHistory.length,
-      cacheSize: this.suggestionCache.size
-    };
+
+  // Debounced search for real-time suggestions
+  debouncedSearch(query, callback, delay = 150) {
+    clearTimeout(this.debounceTimer);
+    this.debounceTimer = setTimeout(() => {
+      const results = this.getAutocompleteSuggestions(query);
+      callback(results);
+    }, delay);
   }
 }
 
-// Export for use in other modules
-window.SearchEngine = SearchEngine;
-console.log('[SearchEngine] Advanced search engine loaded with fuzzy matching and ranking');
+// Global search engine instance
+window.searchEngine = new SearchEngine();
+
+// Initialize when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    window.searchEngine.initialize().catch(console.error);
+  });
+} else {
+  window.searchEngine.initialize().catch(console.error);
+}
+
+// Export for module systems
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = SearchEngine;
+}

@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "eleventy --serve --watch",
-    "build": "eleventy",
-    "build:production": "NODE_ENV=production eleventy && npm run optimize",
+    "build": "node generate-search-data.js && eleventy",
+    "build:production": "node generate-search-data.js && NODE_ENV=production eleventy && npm run optimize",
     "build:analyze": "eleventy && node scripts/build-logger.js",
     "optimize": "npm run optimize:css && npm run optimize:html",
     "optimize:css": "postcss src/styles.css --use cssnano --output _site/styles.css",
