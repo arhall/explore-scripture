@@ -10,7 +10,9 @@ class ChapterReader {
       'niv': { name: 'New International Version', api: 'niv' },
       'nlt': { name: 'New Living Translation', api: 'nlt' },
       'nkjv': { name: 'New King James Version', api: 'nkjv' },
-      'nasb': { name: 'New American Standard Bible', api: 'nasb' }
+      'nasb': { name: 'New American Standard Bible', api: 'nasb' },
+      'ampc': { name: 'Amplified Bible, Classic Edition', api: 'ampc' },
+      'web': { name: 'World English Bible', api: 'web' }
     };
     
     // API Keys - in production, these should come from environment variables or config
@@ -154,10 +156,19 @@ class ChapterReader {
         background: var(--bg-secondary, #f9fafb);
         border: 1px solid var(--border, #e5e7eb);
         border-radius: 6px;
-        padding: 0.5rem;
+        padding: 0.5rem 0.75rem;
         font-size: 0.875rem;
+        font-weight: 500;
         color: var(--text, #111827);
         cursor: pointer;
+        min-width: 200px;
+        margin-right: 1rem;
+      }
+      
+      .chapter-reader-translation-select:focus {
+        outline: 2px solid var(--accent, #3b82f6);
+        outline-offset: 1px;
+        border-color: var(--accent, #3b82f6);
       }
 
       .chapter-reader-close {
@@ -524,6 +535,24 @@ class ChapterReader {
         text-decoration: none;
       }
 
+      /* Mobile optimizations */
+      @media (max-width: 768px) {
+        .chapter-reader-external-link {
+          display: none !important;
+        }
+        
+        .chapter-reader-controls {
+          justify-content: space-between;
+        }
+        
+        .chapter-reader-translation-select {
+          margin-right: 0.5rem;
+          min-width: 160px;
+          flex: 1;
+          max-width: 200px;
+        }
+      }
+
       /* Mobile Iframe Adjustments */
       @media (max-width: 768px) {
         .chapter-reader-iframe {
@@ -575,13 +604,26 @@ class ChapterReader {
   initializeChapterButtons() {
     // Find all Enduring Word commentary links and add chapter reader buttons
     const commentaryLinks = document.querySelectorAll('a[href*="enduringword.com"]');
+    const processedChapters = new Set();
     
     commentaryLinks.forEach(link => {
       const url = link.href;
       const chapterInfo = this.extractChapterInfo(url);
       
       if (chapterInfo) {
-        this.addChapterReaderButton(link, chapterInfo);
+        const chapterKey = `${chapterInfo.book}-${chapterInfo.chapter}`;
+        
+        // Only add button if we haven't processed this chapter yet
+        if (!processedChapters.has(chapterKey)) {
+          this.addChapterReaderButton(link, chapterInfo);
+          processedChapters.add(chapterKey);
+        } else {
+          // If this is a duplicate, just style it as commentary link
+          link.className = 'enduring-word-link';
+          link.innerHTML = `
+            <span>Commentary</span>
+          `;
+        }
       }
     });
   }
@@ -684,7 +726,6 @@ class ChapterReader {
     // Update commentary link styling
     commentaryLink.className = 'enduring-word-link';
     commentaryLink.innerHTML = `
-      <span class="enduring-word-icon">📖</span>
       <span>Commentary</span>
     `;
     
@@ -692,7 +733,6 @@ class ChapterReader {
     const readerButton = document.createElement('button');
     readerButton.className = 'chapter-reader-button';
     readerButton.innerHTML = `
-      <span class="chapter-reader-icon">📜</span>
       <span>Read Chapter</span>
     `;
     
@@ -703,8 +743,9 @@ class ChapterReader {
     
     // Insert wrapper before commentary link, then move links into wrapper
     commentaryLink.parentNode.insertBefore(wrapper, commentaryLink);
-    wrapper.appendChild(commentaryLink);
+    // Put Read Chapter button first, then Commentary link
     wrapper.appendChild(readerButton);
+    wrapper.appendChild(commentaryLink);
   }
 
   async openChapterReader(chapterInfo) {
@@ -741,6 +782,11 @@ class ChapterReader {
         <div class="chapter-reader-header">
           <h2 class="chapter-reader-title">${chapterInfo.reference}</h2>
           <div class="chapter-reader-controls">
+            <select class="chapter-reader-translation-select" aria-label="Select Bible translation">
+              ${Object.entries(this.translations).map(([key, trans]) => 
+                `<option value="${key}" ${key === this.currentTranslation ? 'selected' : ''}>${trans.name}</option>`
+              ).join('')}
+            </select>
             <a href="${bibleGatewayUrl}" target="_blank" class="chapter-reader-external-link" title="Open in new tab">
               ⧉ Open in New Tab
             </a>
@@ -757,6 +803,17 @@ class ChapterReader {
     const closeBtn = overlay.querySelector('.chapter-reader-close');
     closeBtn.addEventListener('click', () => this.closeChapterReader());
 
+    // Translation selector change
+    const translationSelect = overlay.querySelector('.chapter-reader-translation-select');
+    translationSelect.addEventListener('change', (e) => {
+      this.currentTranslation = e.target.value;
+      localStorage.setItem('preferred-chapter-translation', this.currentTranslation);
+      localStorage.setItem('preferred-translation', this.currentTranslation);
+      
+      // Update the iframe and external link
+      this.updateChapterContent(overlay, chapterInfo);
+    });
+
     // Close on overlay click
     overlay.addEventListener('click', (e) => {
       if (e.target === overlay) {
@@ -765,6 +822,16 @@ class ChapterReader {
     });
 
     return overlay;
+  }
+
+  updateChapterContent(overlay, chapterInfo) {
+    // Update the iframe with new translation
+    const contentDiv = overlay.querySelector('.chapter-reader-content');
+    contentDiv.innerHTML = this.renderBibleGatewayIframe(chapterInfo);
+    
+    // Update the external link with new translation
+    const externalLink = overlay.querySelector('.chapter-reader-external-link');
+    externalLink.href = this.getBibleGatewayUrl(chapterInfo);
   }
 
   closeChapterReader() {
@@ -1071,7 +1138,8 @@ class ChapterReader {
       'nlt': 'NLT',
       'nkjv': 'NKJV',
       'nasb': 'NASB',
-      'web': 'WEB'
+      'web': 'WEB',
+      'ampc': 'AMPC'
     };
     
     const version = translationMap[this.currentTranslation] || 'ESV';
@@ -1187,7 +1255,17 @@ class ChapterReader {
 
   showCrossReferences(reference) {
     // Open BibleGateway in a new tab for cross-references
-    const url = `https://www.biblegateway.com/passage/?search=${encodeURIComponent(reference)}&version=ESV`;
+    const translationMap = {
+      'esv': 'ESV',
+      'niv': 'NIV', 
+      'nlt': 'NLT',
+      'nkjv': 'NKJV',
+      'nasb': 'NASB',
+      'web': 'WEB',
+      'ampc': 'AMPC'
+    };
+    const version = translationMap[this.currentTranslation] || 'ESV';
+    const url = `https://www.biblegateway.com/passage/?search=${encodeURIComponent(reference)}&version=${version}`;
     window.open(url, '_blank');
   }
 
