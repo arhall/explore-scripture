@@ -930,6 +930,33 @@ class CommentaryReader {
     return reverseMap[bookName] || bookName.toLowerCase().replace(/\s+/g, '-');
   }
 
+  // Get source-specific book name with special cases
+  getSourceSpecificBookName(bookName, source) {
+    // Handle Song of Songs special cases
+    if (bookName === 'Song of Songs') {
+      switch (source) {
+        case 'enduring-word':
+        case 'barnes-notes':
+        case 'calvin':
+        case 'homiletic':
+        case 'biblical-illustrator':
+          return 'song-of-solomon';
+        case 'jfb':
+        case 'scofield':
+        case 'pulpit':
+          return 'songs';
+        case 'matthew-henry':
+        case 'john-gill':
+          return 'song-of-songs';
+        default:
+          return 'song-of-songs';
+      }
+    }
+    
+    // For all other books, use the standard formatting
+    return this.getBookNameForSource(bookName, source);
+  }
+
   addCommentaryReaderButton(existingCommentaryLink, chapterInfo) {
     // Create both Read Chapter and Read Commentary buttons
     const wrapper = document.createElement('div');
@@ -1065,7 +1092,7 @@ class CommentaryReader {
     const book = chapterInfo.book;
     const chapter = chapterInfo.chapter;
     const baseUrl = this.commentaries[source].baseUrl;
-    const bookName = this.getBookNameForSource(book, source);
+    const bookName = this.getSourceSpecificBookName(book, source);
     
     // Build URL based on commentary source format
     switch (source) {
@@ -1087,11 +1114,12 @@ class CommentaryReader {
       case 'calvin':
       case 'homiletic':
       case 'biblical-illustrator':
-        return `${baseUrl}/${bookName}-${chapter}.html`;
+        // StudyLight format: /eng/bnb/genesis.html (no chapter in URL)
+        return `${baseUrl}/${bookName}.html`;
         
       default:
         // Fallback to enduring word format
-        return `${this.commentaries['enduring-word'].baseUrl}/${this.getBookNameForSource(book, 'enduring-word')}-${chapter}`;
+        return `${this.commentaries['enduring-word'].baseUrl}/${this.getSourceSpecificBookName(book, 'enduring-word')}-${chapter}`;
     }
   }
 
@@ -1099,7 +1127,7 @@ class CommentaryReader {
   getBookNameForSource(bookName, source) {
     switch (source) {
       case 'enduring-word':
-        // Enduring Word uses hyphenated format: genesis-1, 1-john-1
+        // Enduring Word uses hyphenated format: genesis, 1-john
         return this.slugifyBook(bookName);
         
       case 'matthew-henry':
@@ -1110,19 +1138,102 @@ class CommentaryReader {
       case 'jfb':
       case 'scofield': 
       case 'pulpit':
-        // BibleHub uses lowercase with no spaces: genesis, 1john
-        return bookName.toLowerCase().replace(/\s+/g, '');
+        // BibleHub uses underscores for numbered books: genesis, 1_samuel, 1_chronicles
+        return this.getBibleHubBookName(bookName);
         
       case 'barnes-notes':
       case 'calvin':
       case 'homiletic':
       case 'biblical-illustrator':
-        // StudyLight uses hyphenated format: genesis, 1-john
+        // StudyLight uses hyphenated format: genesis, 1-samuel
         return this.slugifyBook(bookName);
         
       default:
         return this.slugifyBook(bookName);
     }
+  }
+
+  // BibleHub specific book name formatting (uses underscores for numbered books)
+  getBibleHubBookName(bookName) {
+    const bibleHubMap = {
+      'Genesis': 'genesis',
+      'Exodus': 'exodus',
+      'Leviticus': 'leviticus',
+      'Numbers': 'numbers',
+      'Deuteronomy': 'deuteronomy',
+      'Joshua': 'joshua',
+      'Judges': 'judges',
+      'Ruth': 'ruth',
+      '1 Samuel': '1_samuel',
+      '2 Samuel': '2_samuel',
+      '1 Kings': '1_kings',
+      '2 Kings': '2_kings',
+      '1 Chronicles': '1_chronicles',
+      '2 Chronicles': '2_chronicles',
+      'Ezra': 'ezra',
+      'Nehemiah': 'nehemiah',
+      'Esther': 'esther',
+      'Job': 'job',
+      'Psalms': 'psalms',
+      'Proverbs': 'proverbs',
+      'Ecclesiastes': 'ecclesiastes',
+      'Song of Songs': 'songs',
+      'Isaiah': 'isaiah',
+      'Jeremiah': 'jeremiah',
+      'Lamentations': 'lamentations',
+      'Ezekiel': 'ezekiel',
+      'Daniel': 'daniel',
+      'Hosea': 'hosea',
+      'Joel': 'joel',
+      'Amos': 'amos',
+      'Obadiah': 'obadiah',
+      'Jonah': 'jonah',
+      'Micah': 'micah',
+      'Nahum': 'nahum',
+      'Habakkuk': 'habakkuk',
+      'Zephaniah': 'zephaniah',
+      'Haggai': 'haggai',
+      'Zechariah': 'zechariah',
+      'Malachi': 'malachi',
+      'Matthew': 'matthew',
+      'Mark': 'mark',
+      'Luke': 'luke',
+      'John': 'john',
+      'Acts': 'acts',
+      'Romans': 'romans',
+      '1 Corinthians': '1_corinthians',
+      '2 Corinthians': '2_corinthians',
+      'Galatians': 'galatians',
+      'Ephesians': 'ephesians',
+      'Philippians': 'philippians',
+      'Colossians': 'colossians',
+      '1 Thessalonians': '1_thessalonians',
+      '2 Thessalonians': '2_thessalonians',
+      '1 Timothy': '1_timothy',
+      '2 Timothy': '2_timothy',
+      'Titus': 'titus',
+      'Philemon': 'philemon',
+      'Hebrews': 'hebrews',
+      'James': 'james',
+      '1 Peter': '1_peter',
+      '2 Peter': '2_peter',
+      '1 John': '1_john',
+      '2 John': '2_john',
+      '3 John': '3_john',
+      'Jude': 'jude',
+      'Revelation': 'revelation'
+    };
+    
+    return bibleHubMap[bookName] || bookName.toLowerCase().replace(/\s+/g, '_');
+  }
+
+  // BibleGateway specific book name formatting
+  getBibleGatewayBookName(bookName) {
+    const bibleGatewayMap = {
+      'Song of Songs': 'Song of Solomon'
+    };
+    
+    return bibleGatewayMap[bookName] || bookName;
   }
 
   renderCommentaryIframe(chapterInfo) {

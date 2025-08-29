@@ -1345,7 +1345,10 @@ class ChapterReader {
     };
     
     const version = translationMap[this.currentTranslation] || 'ESV';
-    const bookChapter = `${chapterInfo.book} ${chapterInfo.chapter}`;
+    
+    // Handle BibleGateway specific book name mappings
+    const bibleGatewayBookName = this.getBibleGatewayBookName(chapterInfo.book);
+    const bookChapter = `${bibleGatewayBookName} ${chapterInfo.chapter}`;
     
     // Detect mobile and add interface parameters for better mobile experience
     const isMobile = window.innerWidth <= 768;
@@ -1357,6 +1360,15 @@ class ChapterReader {
     }
     
     return baseUrl;
+  }
+
+  // BibleGateway specific book name formatting
+  getBibleGatewayBookName(bookName) {
+    const bibleGatewayMap = {
+      'Song of Songs': 'Song of Solomon'
+    };
+    
+    return bibleGatewayMap[bookName] || bookName;
   }
 
   renderBibleGatewayIframe(chapterInfo) {
