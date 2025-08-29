@@ -71,19 +71,7 @@ class CommentaryReader {
       }
     };
 
-    // URL patterns for different commentary sources
-    this.urlPatterns = {
-      'enduring-word': (book, chapter) => `${this.commentaries['enduring-word'].baseUrl}/${this.slugifyBook(book)}-${chapter}`,
-      'matthew-henry': (book, chapter) => `${this.commentaries['matthew-henry'].baseUrl}/${this.slugifyBook(book)}/${chapter}.html`,
-      'jfb': (book, chapter) => `${this.commentaries['jfb'].baseUrl}/${this.slugifyBook(book)}/${chapter}.htm`,
-      'scofield': (book, chapter) => `${this.commentaries['scofield'].baseUrl}/${this.slugifyBook(book)}/${chapter}.htm`,
-      'pulpit': (book, chapter) => `${this.commentaries['pulpit'].baseUrl}/${this.slugifyBook(book)}/${chapter}.htm`,
-      'john-gill': (book, chapter) => `${this.commentaries['john-gill'].baseUrl}/${this.slugifyBook(book)}-${chapter}/`,
-      'barnes-notes': (book, chapter) => `${this.commentaries['barnes-notes'].baseUrl}/${this.slugifyBook(book)}-${chapter}.html`,
-      'calvin': (book, chapter) => `${this.commentaries['calvin'].baseUrl}/${this.slugifyBook(book)}-${chapter}.html`,
-      'homiletic': (book, chapter) => `${this.commentaries['homiletic'].baseUrl}/${this.slugifyBook(book)}-${chapter}.html`,
-      'biblical-illustrator': (book, chapter) => `${this.commentaries['biblical-illustrator'].baseUrl}/${this.slugifyBook(book)}-${chapter}.html`
-    };
+    // URL patterns will be defined in a method to access 'this' properly
 
     this.currentCommentary = localStorage.getItem('preferred-commentary') || 'enduring-word';
     this.currentModal = null;
@@ -1073,13 +1061,68 @@ class CommentaryReader {
   }
 
   getCommentaryUrl(chapterInfo) {
-    const urlPattern = this.urlPatterns[this.currentCommentary];
-    if (!urlPattern) {
-      console.warn(`No URL pattern found for commentary: ${this.currentCommentary}`);
-      return this.urlPatterns['enduring-word'](chapterInfo.book, chapterInfo.chapter);
-    }
+    const source = this.currentCommentary;
+    const book = chapterInfo.book;
+    const chapter = chapterInfo.chapter;
+    const baseUrl = this.commentaries[source].baseUrl;
+    const bookName = this.getBookNameForSource(book, source);
     
-    return urlPattern(chapterInfo.book, chapterInfo.chapter);
+    // Build URL based on commentary source format
+    switch (source) {
+      case 'enduring-word':
+        return `${baseUrl}/${bookName}-${chapter}`;
+        
+      case 'matthew-henry':
+        return `${baseUrl}/${bookName}/${chapter}.html`;
+        
+      case 'jfb':
+      case 'scofield':
+      case 'pulpit':
+        return `${baseUrl}/${bookName}/${chapter}.htm`;
+        
+      case 'john-gill':
+        return `${baseUrl}/${bookName}-${chapter}/`;
+        
+      case 'barnes-notes':
+      case 'calvin':
+      case 'homiletic':
+      case 'biblical-illustrator':
+        return `${baseUrl}/${bookName}-${chapter}.html`;
+        
+      default:
+        // Fallback to enduring word format
+        return `${this.commentaries['enduring-word'].baseUrl}/${this.getBookNameForSource(book, 'enduring-word')}-${chapter}`;
+    }
+  }
+
+  // Get book name formatted for specific commentary sources
+  getBookNameForSource(bookName, source) {
+    switch (source) {
+      case 'enduring-word':
+        // Enduring Word uses hyphenated format: genesis-1, 1-john-1
+        return this.slugifyBook(bookName);
+        
+      case 'matthew-henry':
+      case 'john-gill':
+        // BibleStudyTools uses hyphenated format: genesis, 1-corinthians
+        return this.slugifyBook(bookName);
+        
+      case 'jfb':
+      case 'scofield': 
+      case 'pulpit':
+        // BibleHub uses lowercase with no spaces: genesis, 1john
+        return bookName.toLowerCase().replace(/\s+/g, '');
+        
+      case 'barnes-notes':
+      case 'calvin':
+      case 'homiletic':
+      case 'biblical-illustrator':
+        // StudyLight uses hyphenated format: genesis, 1-john
+        return this.slugifyBook(bookName);
+        
+      default:
+        return this.slugifyBook(bookName);
+    }
   }
 
   renderCommentaryIframe(chapterInfo) {

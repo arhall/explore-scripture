@@ -54,7 +54,8 @@
       "Bash(python -m pytest tests/ -v --tb=short)",
       "Bash(python -m pytest tests/test_bible_explorer.py -v --tb=short)",
       "WebFetch(domain:biblehub.com)",
-      "WebFetch(domain:www.blueletterbible.org)"
+      "WebFetch(domain:www.blueletterbible.org)",
+      "Bash(open http://localhost:8083/books/1-john/)"
     ],
     "deny": [],
     "ask": []
