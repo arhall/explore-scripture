@@ -45,7 +45,37 @@ class BibleExplorerLogger {
   }
 
   generateSessionId() {
+    // Security: Generate cryptographically secure session ID
+    if (window.crypto && window.crypto.getRandomValues) {
+      const array = new Uint8Array(16);
+      window.crypto.getRandomValues(array);
+      return 'session_' + Date.now() + '_' + Array.from(array, byte => byte.toString(16).padStart(2, '0')).join('');
+    }
+    // Fallback for older browsers
     return 'session_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+  }
+
+  // Security: Sanitize log data to prevent injection attacks
+  sanitizeLogData(data) {
+    if (typeof data === 'string') {
+      // Remove potential script tags and dangerous characters
+      return data.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '[SCRIPT_REMOVED]')
+                 .replace(/javascript:/gi, '[JS_REMOVED]:')
+                 .replace(/on\w+\s*=/gi, '[EVENT_REMOVED]=')
+                 .substring(0, 1000); // Limit string length
+    }
+    
+    if (typeof data === 'object' && data !== null) {
+      const sanitized = {};
+      for (const [key, value] of Object.entries(data)) {
+        // Sanitize key names
+        const cleanKey = key.replace(/[<>"/]/g, '').substring(0, 100);
+        sanitized[cleanKey] = this.sanitizeLogData(value);
+      }
+      return sanitized;
+    }
+    
+    return data;
   }
 
   setupGlobalErrorHandling() {

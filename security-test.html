@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Explorer Security Test</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+            background: #f5f5f5; 
+        }
+        .test-section { 
+            background: white; 
+            padding: 20px; 
+            margin: 20px 0; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+        }
+        .result { 
+            padding: 10px; 
+            margin: 10px 0; 
+            border-radius: 4px; 
+        }
+        .pass { 
+            background: #d4edda; 
+            border: 1px solid #c3e6cb; 
+            color: #155724; 
+        }
+        .fail { 
+            background: #f8d7da; 
+            border: 1px solid #f5c6cb; 
+            color: #721c24; 
+        }
+        .warn { 
+            background: #fff3cd; 
+            border: 1px solid #ffeaa7; 
+            color: #856404; 
+        }
+        button { 
+            padding: 10px 20px; 
+            margin: 5px; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            background: #007bff; 
+            color: white; 
+        }
+        button:hover { 
+            background: #0056b3; 
+        }
+    </style>
+</head>
+<body>
+    <h1>🔒 Bible Explorer Security Validation</h1>
+    <p>This page tests the security measures implemented in the Bible Explorer application.</p>
+
+    <div class="test-section">
+        <h2>Content Security Policy Test</h2>
+        <button onclick="testCSP()">Test CSP Headers</button>
+        <div id="csp-results"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Input Sanitization Test</h2>
+        <button onclick="testInputSanitization()">Test Input Security</button>
+        <div id="sanitization-results"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>XSS Prevention Test</h2>
+        <button onclick="testXSSPrevention()">Test XSS Protection</button>
+        <div id="xss-results"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Rate Limiting Test</h2>
+        <button onclick="testRateLimiting()">Test Rate Limits</button>
+        <div id="rate-limiting-results"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Privacy Controls Test</h2>
+        <button onclick="testPrivacyControls()">Test Privacy Settings</button>
+        <div id="privacy-results"></div>
+    </div>
+
+    <script>
+        function addResult(containerId, message, type = 'pass') {
+            const container = document.getElementById(containerId);
+            const result = document.createElement('div');
+            result.className = `result ${type}`;
+            result.textContent = message;
+            container.appendChild(result);
+        }
+
+        function testCSP() {
+            const container = document.getElementById('csp-results');
+            container.innerHTML = '';
+
+            // Check for CSP meta tag
+            const cspMeta = document.querySelector('meta[http-equiv="Content-Security-Policy"]');
+            if (cspMeta) {
+                addResult('csp-results', '✓ CSP meta tag found', 'pass');
+                addResult('csp-results', `CSP Policy: ${cspMeta.content.substring(0, 100)}...`, 'pass');
+            } else {
+                addResult('csp-results', '✗ CSP meta tag not found', 'fail');
+            }
+
+            // Test if inline scripts are blocked (should be allowed due to 'unsafe-inline')
+            try {
+                eval('console.log("CSP eval test")');
+                addResult('csp-results', '⚠ eval() allowed (expected with unsafe-eval)', 'warn');
+            } catch (e) {
+                addResult('csp-results', '✓ eval() blocked by CSP', 'pass');
+            }
+        }
+
+        function testInputSanitization() {
+            const container = document.getElementById('sanitization-results');
+            container.innerHTML = '';
+
+            // Test if security config is available
+            if (window.securityConfig) {
+                addResult('sanitization-results', '✓ Security configuration loaded', 'pass');
+
+                // Test HTML escaping
+                const testHtml = '<script>alert("xss")</script>';
+                const escaped = window.securityConfig.escapeHtml(testHtml);
+                if (escaped.includes('&lt;script&gt;')) {
+                    addResult('sanitization-results', '✓ HTML escaping working', 'pass');
+                } else {
+                    addResult('sanitization-results', '✗ HTML escaping failed', 'fail');
+                }
+
+                // Test input validation
+                const validRef = window.securityConfig.validateInput('Genesis 1:1', 'bibleReference');
+                if (validRef) {
+                    addResult('sanitization-results', '✓ Bible reference validation working', 'pass');
+                } else {
+                    addResult('sanitization-results', '✗ Bible reference validation failed', 'fail');
+                }
+
+                // Test malicious input blocking
+                const maliciousInput = 'javascript:alert("xss")';
+                const sanitized = window.securityConfig.sanitizeInput(maliciousInput);
+                if (sanitized === '[BLOCKED_CONTENT]') {
+                    addResult('sanitization-results', '✓ Malicious input blocked', 'pass');
+                } else {
+                    addResult('sanitization-results', '✗ Malicious input not properly blocked', 'fail');
+                }
+
+            } else {
+                addResult('sanitization-results', '✗ Security configuration not found', 'fail');
+            }
+        }
+
+        function testXSSPrevention() {
+            const container = document.getElementById('xss-results');
+            container.innerHTML = '';
+
+            // Create a test div
+            const testDiv = document.createElement('div');
+            document.body.appendChild(testDiv);
+
+            // Test safe DOM creation (should not execute script)
+            const safeContent = '&lt;script&gt;alert("xss")&lt;/script&gt;';
+            testDiv.textContent = safeContent; // Safe method
+
+            if (testDiv.innerHTML.includes('&lt;script&gt;')) {
+                addResult('xss-results', '✓ Safe DOM manipulation working', 'pass');
+            } else {
+                addResult('xss-results', '⚠ DOM content handling needs review', 'warn');
+            }
+
+            // Test URL validation
+            if (window.securityConfig) {
+                const validUrl = window.securityConfig.validateUrl('https://api.esv.org/v3/passage/');
+                const invalidUrl = window.securityConfig.validateUrl('javascript:alert("xss")');
+                
+                if (validUrl && !invalidUrl) {
+                    addResult('xss-results', '✓ URL validation working', 'pass');
+                } else {
+                    addResult('xss-results', '✗ URL validation failed', 'fail');
+                }
+            }
+
+            // Cleanup
+            document.body.removeChild(testDiv);
+        }
+
+        function testRateLimiting() {
+            const container = document.getElementById('rate-limiting-results');
+            container.innerHTML = '';
+
+            if (window.securityConfig) {
+                let passedRequests = 0;
+                let blockedRequests = 0;
+
+                // Test rate limiting with rapid requests
+                for (let i = 0; i < 15; i++) {
+                    if (window.securityConfig.checkRateLimit('api', 'test-user')) {
+                        passedRequests++;
+                    } else {
+                        blockedRequests++;
+                    }
+                }
+
+                if (blockedRequests > 0) {
+                    addResult('rate-limiting-results', `✓ Rate limiting active: ${passedRequests} passed, ${blockedRequests} blocked`, 'pass');
+                } else {
+                    addResult('rate-limiting-results', `⚠ All ${passedRequests} requests passed - check rate limit config`, 'warn');
+                }
+            } else {
+                addResult('rate-limiting-results', '✗ Security configuration not available for testing', 'fail');
+            }
+        }
+
+        function testPrivacyControls() {
+            const container = document.getElementById('privacy-results');
+            container.innerHTML = '';
+
+            // Test Do Not Track detection
+            const dntStatus = navigator.doNotTrack;
+            if (dntStatus) {
+                addResult('privacy-results', `✓ Do Not Track header detected: ${dntStatus}`, 'pass');
+            } else {
+                addResult('privacy-results', 'ℹ No Do Not Track header set', 'warn');
+            }
+
+            // Test telemetry opt-out
+            if (window.telemetry) {
+                const isDisabled = window.telemetry.disabled;
+                if (isDisabled) {
+                    addResult('privacy-results', '✓ Telemetry disabled (respecting privacy)', 'pass');
+                } else {
+                    addResult('privacy-results', 'ℹ Telemetry enabled (normal operation)', 'warn');
+                }
+
+                // Test telemetry data sanitization
+                if (window.telemetry.sanitizeSearchQuery) {
+                    const testQuery = 'password: secret123';
+                    const sanitized = window.telemetry.sanitizeSearchQuery(testQuery);
+                    if (sanitized.includes('[FILTERED]')) {
+                        addResult('privacy-results', '✓ Telemetry data sanitization working', 'pass');
+                    } else {
+                        addResult('privacy-results', '⚠ Telemetry sanitization may need review', 'warn');
+                    }
+                }
+            } else {
+                addResult('privacy-results', 'ℹ Telemetry system not loaded', 'warn');
+            }
+
+            // Test localStorage opt-out setting
+            const optOutStatus = localStorage.getItem('bibleExplorerTelemetryOptOut');
+            if (optOutStatus === 'true') {
+                addResult('privacy-results', '✓ User has opted out of telemetry', 'pass');
+            } else {
+                addResult('privacy-results', 'ℹ User has not opted out of telemetry', 'warn');
+            }
+        }
+
+        // Auto-run all tests after page loads
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                // Load security config first
+                const script = document.createElement('script');
+                script.src = '/assets/security-config.js';
+                script.onload = () => {
+                    // Load telemetry config
+                    const telemetryScript = document.createElement('script');
+                    telemetryScript.src = '/assets/telemetry.js';
+                    telemetryScript.onload = () => {
+                        console.log('Security test environment ready');
+                    };
+                    document.head.appendChild(telemetryScript);
+                };
+                document.head.appendChild(script);
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

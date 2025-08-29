@@ -311,54 +311,151 @@ class CharacterSearch {
            this.currentFilters.minAppearances > 0;
   }
 
+  // Security: HTML sanitization utility
+  escapeHtml(unsafe) {
+    return unsafe
+         .replace(/&/g, "&amp;")
+         .replace(/</g, "&lt;")
+         .replace(/>/g, "&gt;")
+         .replace(/"/g, "&quot;")
+         .replace(/'/g, "&#039;");
+  }
+
+  // Security: Validate and sanitize character data
+  sanitizeCharacter(char) {
+    return {
+      name: this.escapeHtml(char.name || ''),
+      slug: this.escapeHtml(char.slug || ''),
+      significance: this.escapeHtml(char.significance || ''),
+      totalAppearances: parseInt(char.totalAppearances) || 1,
+      totalBooks: parseInt(char.totalBooks) || 0,
+      books: Array.isArray(char.books) ? char.books.map(book => this.escapeHtml(book)) : []
+    };
+  }
+
   renderResults() {
     const resultsContainer = document.getElementById('search-results');
     if (!resultsContainer) return;
 
     if (this.filteredCharacters.length === 0) {
-      resultsContainer.innerHTML = `
-        <div class="no-results">
-          <div class="no-results-icon">🔍</div>
-          <h3>No characters found</h3>
-          <p>Try adjusting your search criteria or filters.</p>
-        </div>
-      `;
+      // Use safe DOM manipulation instead of innerHTML
+      resultsContainer.innerHTML = '';
+      
+      const noResults = document.createElement('div');
+      noResults.className = 'no-results';
+      
+      const icon = document.createElement('div');
+      icon.className = 'no-results-icon';
+      icon.textContent = '🔍';
+      
+      const title = document.createElement('h3');
+      title.textContent = 'No characters found';
+      
+      const description = document.createElement('p');
+      description.textContent = 'Try adjusting your search criteria or filters.';
+      
+      noResults.appendChild(icon);
+      noResults.appendChild(title);
+      noResults.appendChild(description);
+      resultsContainer.appendChild(noResults);
       return;
     }
 
-    const resultsHTML = this.filteredCharacters.map(char => `
-      <a href="/characters/${char.slug}/" class="character-card search-result">
-        <div class="character-header">
-          <h3 class="character-name">${char.name}</h3>
-          ${char.significance ? `<span class="significance-badge ${char.significance}">${this.formatSignificance(char.significance)}</span>` : ''}
-        </div>
-        
-        <div class="character-metrics">
-          <div class="metric">
-            <span class="metric-number">${char.totalAppearances || 1}</span>
-            <span class="metric-label">${(char.totalAppearances || 1) === 1 ? 'appearance' : 'appearances'}</span>
-          </div>
-          ${char.totalBooks ? `
-            <div class="metric-separator">•</div>
-            <div class="metric">
-              <span class="metric-number">${char.totalBooks}</span>
-              <span class="metric-label">${char.totalBooks === 1 ? 'book' : 'books'}</span>
-            </div>
-          ` : ''}
-        </div>
-        
-        ${char.books ? `
-          <div class="character-books">
-            <div class="books-preview">
-              ${char.books.slice(0, 3).map(book => `<span class="book-chip">${book}</span>`).join('')}
-              ${char.books.length > 3 ? `<span class="books-overflow">+${char.books.length - 3} more</span>` : ''}
-            </div>
-          </div>
-        ` : ''}
-      </a>
-    `).join('');
+    // Clear container safely
+    resultsContainer.innerHTML = '';
 
-    resultsContainer.innerHTML = resultsHTML;
+    // Build results using secure DOM creation
+    this.filteredCharacters.forEach(char => {
+      const sanitized = this.sanitizeCharacter(char);
+      
+      const cardLink = document.createElement('a');
+      cardLink.href = `/characters/${sanitized.slug}/`;
+      cardLink.className = 'character-card search-result';
+      
+      const header = document.createElement('div');
+      header.className = 'character-header';
+      
+      const name = document.createElement('h3');
+      name.className = 'character-name';
+      name.textContent = sanitized.name;
+      header.appendChild(name);
+      
+      if (sanitized.significance) {
+        const badge = document.createElement('span');
+        badge.className = `significance-badge ${sanitized.significance}`;
+        badge.textContent = this.formatSignificance(sanitized.significance);
+        header.appendChild(badge);
+      }
+      
+      const metrics = document.createElement('div');
+      metrics.className = 'character-metrics';
+      
+      const appearanceMetric = document.createElement('div');
+      appearanceMetric.className = 'metric';
+      
+      const appearanceNumber = document.createElement('span');
+      appearanceNumber.className = 'metric-number';
+      appearanceNumber.textContent = sanitized.totalAppearances;
+      
+      const appearanceLabel = document.createElement('span');
+      appearanceLabel.className = 'metric-label';
+      appearanceLabel.textContent = sanitized.totalAppearances === 1 ? 'appearance' : 'appearances';
+      
+      appearanceMetric.appendChild(appearanceNumber);
+      appearanceMetric.appendChild(appearanceLabel);
+      metrics.appendChild(appearanceMetric);
+      
+      if (sanitized.totalBooks > 0) {
+        const separator = document.createElement('div');
+        separator.className = 'metric-separator';
+        separator.textContent = '•';
+        metrics.appendChild(separator);
+        
+        const bookMetric = document.createElement('div');
+        bookMetric.className = 'metric';
+        
+        const bookNumber = document.createElement('span');
+        bookNumber.className = 'metric-number';
+        bookNumber.textContent = sanitized.totalBooks;
+        
+        const bookLabel = document.createElement('span');
+        bookLabel.className = 'metric-label';
+        bookLabel.textContent = sanitized.totalBooks === 1 ? 'book' : 'books';
+        
+        bookMetric.appendChild(bookNumber);
+        bookMetric.appendChild(bookLabel);
+        metrics.appendChild(bookMetric);
+      }
+      
+      if (sanitized.books && sanitized.books.length > 0) {
+        const booksDiv = document.createElement('div');
+        booksDiv.className = 'character-books';
+        
+        const preview = document.createElement('div');
+        preview.className = 'books-preview';
+        
+        sanitized.books.slice(0, 3).forEach(book => {
+          const chip = document.createElement('span');
+          chip.className = 'book-chip';
+          chip.textContent = book;
+          preview.appendChild(chip);
+        });
+        
+        if (sanitized.books.length > 3) {
+          const overflow = document.createElement('span');
+          overflow.className = 'books-overflow';
+          overflow.textContent = `+${sanitized.books.length - 3} more`;
+          preview.appendChild(overflow);
+        }
+        
+        booksDiv.appendChild(preview);
+        cardLink.appendChild(booksDiv);
+      }
+      
+      cardLink.appendChild(header);
+      cardLink.appendChild(metrics);
+      resultsContainer.appendChild(cardLink);
+    });
   }
 
   formatSignificance(significance) {

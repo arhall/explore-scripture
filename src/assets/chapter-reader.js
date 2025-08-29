@@ -999,47 +999,166 @@ class ChapterReader {
     return this.getFallbackChapter(reference);
   }
 
+  // Security: Rate limiting for API calls
+  rateLimiter = {
+    requests: new Map(),
+    maxRequests: 10,
+    timeWindow: 60000, // 1 minute
+    
+    checkRate(source) {
+      const now = Date.now();
+      const sourceRequests = this.requests.get(source) || [];
+      
+      // Remove old requests outside time window
+      const validRequests = sourceRequests.filter(time => now - time < this.timeWindow);
+      
+      if (validRequests.length >= this.maxRequests) {
+        return false; // Rate limit exceeded
+      }
+      
+      validRequests.push(now);
+      this.requests.set(source, validRequests);
+      return true;
+    }
+  };
+
+  // Security: Validate and sanitize API parameters
+  sanitizeApiParams(reference, translation) {
+    // Whitelist allowed characters for biblical references
+    const cleanReference = reference.replace(/[^a-zA-Z0-9\s:-]/g, '');
+    const cleanTranslation = translation.replace(/[^a-zA-Z]/g, '').toLowerCase();
+    
+    // Validate reference format
+    if (!/^[a-zA-Z0-9\s]+\s*\d+(\s*:\s*\d+(-\d+)?)?$/.test(cleanReference)) {
+      throw new Error('Invalid reference format');
+    }
+    
+    // Validate translation code
+    if (!['esv', 'niv', 'nlt', 'nkjv', 'nasb', 'ampc', 'web'].includes(cleanTranslation)) {
+      throw new Error('Invalid translation code');
+    }
+    
+    return { cleanReference, cleanTranslation };
+  }
+
   async fetchFromSource(source, reference, translation) {
-    if (source.name === 'esv-api' && translation === 'esv') {
-      // ESV API format: https://api.esv.org/v3/passage/text/?q=john+3
-      const formattedRef = reference.replace(/\s+/g, '+').toLowerCase();
+    // Security: Input validation
+    let cleanReference, cleanTranslation;
+    try {
+      ({ cleanReference, cleanTranslation } = this.sanitizeApiParams(reference, translation));
+    } catch (error) {
+      console.error('Invalid API parameters:', error);
+      return null;
+    }
+
+    // Security: Rate limiting
+    if (!this.rateLimiter.checkRate(source.name)) {
+      console.warn(`Rate limit exceeded for ${source.name}`);
+      return null;
+    }
+
+    if (source.name === 'esv-api' && cleanTranslation === 'esv') {
+      // ESV API format with sanitized parameters
+      const formattedRef = encodeURIComponent(cleanReference.replace(/\s+/g, '+').toLowerCase());
       
       try {
+        // Security: Timeout and signal for fetch
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
+        
         const response = await fetch(`${source.endpoint}?q=${formattedRef}&include-verse-numbers=true&include-headings=false&include-footnotes=false`, {
           headers: {
-            'Authorization': `Token ${this.apiKeys.esv}`
-          }
+            'Authorization': `Token ${this.apiKeys.esv}`,
+            'User-Agent': 'BibleExplorer/1.0'
+          },
+          signal: controller.signal,
+          cache: 'default',
+          mode: 'cors'
         });
+        
+        clearTimeout(timeoutId);
         
         if (!response.ok) {
           if (response.status === 401) {
             console.warn('ESV API requires valid authentication. Skipping to next source.');
-            return null; // Skip to next source instead of throwing
+            return null;
+          }
+          if (response.status === 429) {
+            console.warn('ESV API rate limit exceeded');
+            return null;
           }
           throw new Error(`ESV API request failed: ${response.status}`);
         }
         
-        const data = await response.json();
-        return source.format(data, reference);
-      } catch (error) {
-        console.warn('ESV API failed:', error.message);
-        return null; // Let it try the next source
-      }
-    } else if (source.name === 'bible-api') {
-      // Bible API format: https://bible-api.com/john+3
-      const formattedRef = reference.replace(/\s+/g, '+').toLowerCase();
-      
-      try {
-        const response = await fetch(`${source.endpoint}${formattedRef}`);
-        
-        if (!response.ok) {
-          throw new Error(`Bible API request failed: ${response.status}`);
+        // Security: Validate response content type
+        const contentType = response.headers.get('content-type');
+        if (!contentType || !contentType.includes('application/json')) {
+          throw new Error('Invalid response content type');
         }
         
         const data = await response.json();
+        
+        // Security: Basic response validation
+        if (typeof data !== 'object' || !data.passages) {
+          throw new Error('Invalid API response structure');
+        }
+        
+        return source.format(data, cleanReference);
+      } catch (error) {
+        if (error.name === 'AbortError') {
+          console.warn('ESV API request timed out');
+        } else {
+          console.warn('ESV API failed:', error.message);
+        }
+        return null;
+      }
+    } else if (source.name === 'bible-api') {
+      // Bible API format with sanitized parameters
+      const formattedRef = encodeURIComponent(cleanReference.replace(/\s+/g, '+').toLowerCase());
+      
+      try {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 8000); // 8 second timeout
+        
+        const response = await fetch(`${source.endpoint}${formattedRef}`, {
+          headers: {
+            'User-Agent': 'BibleExplorer/1.0'
+          },
+          signal: controller.signal,
+          cache: 'default',
+          mode: 'cors'
+        });
+        
+        clearTimeout(timeoutId);
+        
+        if (!response.ok) {
+          if (response.status === 429) {
+            console.warn('Bible API rate limit exceeded');
+            return null;
+          }
+          throw new Error(`Bible API request failed: ${response.status}`);
+        }
+        
+        // Security: Validate response content type
+        const contentType = response.headers.get('content-type');
+        if (!contentType || !contentType.includes('application/json')) {
+          throw new Error('Invalid response content type');
+        }
+        
+        const data = await response.json();
+        
+        // Security: Basic response validation
+        if (typeof data !== 'object' || !data.verses) {
+          throw new Error('Invalid API response structure');
+        }
+        
         return source.format(data);
       } catch (error) {
-        console.warn('Bible API failed:', error.message);
+        if (error.name === 'AbortError') {
+          console.warn('Bible API request timed out');
+        } else {
+          console.warn('Bible API failed:', error.message);
+        }
         return null;
       }
     }
@@ -1404,38 +1523,104 @@ class ChapterReader {
     }
   }
 
+  // Security: HTML sanitization for chapter content
+  escapeHtml(unsafe) {
+    if (typeof unsafe !== 'string') return '';
+    return unsafe
+         .replace(/&/g, "&amp;")
+         .replace(/</g, "&lt;")
+         .replace(/>/g, "&gt;")
+         .replace(/"/g, "&quot;")
+         .replace(/'/g, "&#039;");
+  }
+
+  // Security: Sanitize chapter data
+  sanitizeChapterData(data) {
+    if (!data || typeof data !== 'object') return null;
+    
+    return {
+      reference: this.escapeHtml(data.reference || ''),
+      translation: this.escapeHtml(data.translation || ''),
+      verses: Array.isArray(data.verses) ? data.verses.map(verse => ({
+        number: parseInt(verse.number) || 0,
+        text: this.escapeHtml(verse.text || '')
+      })) : []
+    };
+  }
+
   async loadApiContentForMobile(container, chapterInfo) {
     try {
-      const cacheKey = `${chapterInfo.reference}-${this.currentTranslation}`;
+      // Validate chapter info
+      if (!chapterInfo || !chapterInfo.reference) {
+        throw new Error('Invalid chapter information');
+      }
+
+      const cacheKey = `${this.escapeHtml(chapterInfo.reference)}-${this.currentTranslation}`;
       let chapterData = this.cache.get(cacheKey);
 
       if (!chapterData) {
         chapterData = await this.fetchChapter(chapterInfo.reference, this.currentTranslation);
-        this.cache.set(cacheKey, chapterData);
+        // Sanitize before caching
+        chapterData = this.sanitizeChapterData(chapterData);
+        if (chapterData) {
+          this.cache.set(cacheKey, chapterData);
+        }
       }
 
-      const versesHtml = chapterData.verses.map(verse => `
-        <div class="chapter-reader-verse">
-          <span class="chapter-verse-number">${verse.number}</span>
-          <span class="chapter-verse-text">${verse.text}</span>
-        </div>
-      `).join('');
+      if (!chapterData || !chapterData.verses) {
+        throw new Error('No chapter data available');
+      }
 
-      container.innerHTML = `
-        <div class="chapter-reader-verses" style="flex: 1; overflow-y: auto;">
-          <div style="margin-bottom: 1rem;">
-            <span class="translation-badge">${chapterData.translation}</span>
-          </div>
-          ${versesHtml}
-        </div>
-      `;
+      // Clear container safely
+      container.innerHTML = '';
+
+      // Build content using secure DOM creation
+      const versesContainer = document.createElement('div');
+      versesContainer.className = 'chapter-reader-verses';
+      versesContainer.style.cssText = 'flex: 1; overflow-y: auto;';
+
+      // Add translation badge
+      const badgeContainer = document.createElement('div');
+      badgeContainer.style.cssText = 'margin-bottom: 1rem;';
+      
+      const badge = document.createElement('span');
+      badge.className = 'translation-badge';
+      badge.textContent = chapterData.translation;
+      badgeContainer.appendChild(badge);
+      versesContainer.appendChild(badgeContainer);
+
+      // Add verses safely
+      chapterData.verses.forEach(verse => {
+        const verseDiv = document.createElement('div');
+        verseDiv.className = 'chapter-reader-verse';
+
+        const verseNumber = document.createElement('span');
+        verseNumber.className = 'chapter-verse-number';
+        verseNumber.textContent = verse.number;
+
+        const verseText = document.createElement('span');
+        verseText.className = 'chapter-verse-text';
+        verseText.textContent = verse.text;
+
+        verseDiv.appendChild(verseNumber);
+        verseDiv.appendChild(verseText);
+        versesContainer.appendChild(verseDiv);
+      });
+
+      container.appendChild(versesContainer);
+
     } catch (error) {
       console.error('Error loading API content:', error);
-      container.innerHTML = `
-        <div style="text-align: center; padding: 2rem; color: var(--text-secondary, #6b7280);">
-          <p>Unable to load text view. Please try the BibleGateway view or external link.</p>
-        </div>
-      `;
+      
+      // Safe error display
+      container.innerHTML = '';
+      const errorDiv = document.createElement('div');
+      errorDiv.style.cssText = 'text-align: center; padding: 2rem; color: var(--text-secondary, #6b7280);';
+      
+      const errorText = document.createElement('p');
+      errorText.textContent = 'Unable to load text view. Please try the BibleGateway view or external link.';
+      errorDiv.appendChild(errorText);
+      container.appendChild(errorDiv);
     }
   }
 

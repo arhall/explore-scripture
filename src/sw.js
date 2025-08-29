@@ -1,6 +1,28 @@
-// Service Worker for Bible Explorer - Provides offline functionality
-const CACHE_NAME = 'bible-explorer-v1';
+// Bible Explorer Service Worker - Enhanced Security & Offline Functionality
+const CACHE_NAME = 'bible-explorer-v1.0.0-secure';
 const OFFLINE_URL = '/offline/';
+
+// Security configuration
+const SECURITY_HEADERS = {
+  'X-Content-Type-Options': 'nosniff',
+  'X-Frame-Options': 'SAMEORIGIN',
+  'X-XSS-Protection': '1; mode=block',
+  'Referrer-Policy': 'strict-origin-when-cross-origin',
+  'Permissions-Policy': 'geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()'
+};
+
+// Allowed domains for external requests
+const ALLOWED_DOMAINS = [
+  'www.biblegateway.com',
+  'api.esv.org',
+  'bible-api.com',
+  'fonts.googleapis.com',
+  'fonts.gstatic.com',
+  'unpkg.com'
+];
+
+// Rate limiting storage
+const rateLimits = new Map();
 
 // Essential resources to cache for offline functionality
 const ESSENTIAL_RESOURCES = [
@@ -62,15 +84,89 @@ self.addEventListener('activate', event => {
   );
 });
 
-// Fetch event - serve cached content when offline
+// Security: Check if URL is allowed
+function isUrlAllowed(url) {
+  try {
+    const parsedUrl = new URL(url);
+    
+    // Allow same-origin requests
+    if (parsedUrl.origin === self.location.origin) {
+      return true;
+    }
+    
+    // Check against allowed domains
+    return ALLOWED_DOMAINS.some(domain => 
+      parsedUrl.hostname === domain || parsedUrl.hostname.endsWith('.' + domain)
+    );
+  } catch (e) {
+    return false;
+  }
+}
+
+// Security: Rate limiting for requests
+function checkRateLimit(clientId, maxRequests = 60, timeWindow = 60000) {
+  const now = Date.now();
+  const clientRequests = rateLimits.get(clientId) || [];
+  
+  // Remove old requests outside time window
+  const validRequests = clientRequests.filter(time => now - time < timeWindow);
+  
+  if (validRequests.length >= maxRequests) {
+    return false; // Rate limit exceeded
+  }
+  
+  validRequests.push(now);
+  rateLimits.set(clientId, validRequests);
+  return true;
+}
+
+// Security: Add security headers to response
+function addSecurityHeaders(response) {
+  const newHeaders = new Headers(response.headers);
+  
+  Object.entries(SECURITY_HEADERS).forEach(([header, value]) => {
+    newHeaders.set(header, value);
+  });
+  
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers: newHeaders
+  });
+}
+
+// Fetch event - secure and serve cached content when offline
 self.addEventListener('fetch', event => {
-  // Skip non-GET requests
-  if (event.request.method !== 'GET') {
+  const { request } = event;
+  const url = request.url;
+  
+  // Security: Only handle safe methods
+  if (!['GET', 'POST'].includes(request.method)) {
     return;
   }
-
-  // Skip external requests
-  if (!event.request.url.startsWith(self.location.origin)) {
+  
+  // Security: Check if URL is allowed
+  if (!isUrlAllowed(url)) {
+    console.warn('[SW Security] Blocked unauthorized request to:', url);
+    event.respondWith(
+      new Response('Unauthorized request blocked', { 
+        status: 403,
+        headers: SECURITY_HEADERS
+      })
+    );
+    return;
+  }
+  
+  // Security: Rate limiting check
+  const clientId = event.clientId || 'unknown';
+  if (!checkRateLimit(clientId)) {
+    console.warn('[SW Security] Rate limit exceeded for client:', clientId);
+    event.respondWith(
+      new Response('Rate limit exceeded', { 
+        status: 429,
+        headers: SECURITY_HEADERS
+      })
+    );
     return;
   }
 

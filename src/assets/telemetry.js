@@ -126,6 +126,15 @@ class BibleExplorerTelemetry {
   }
 
   generateInstanceId() {
+    // Security: Generate cryptographically secure instance ID
+    if (window.crypto && window.crypto.getRandomValues) {
+      const array = new Uint8Array(16);
+      window.crypto.getRandomValues(array);
+      return 'instance_' + Date.now() + '_' + Array.from(array, byte => 
+        byte.toString(16).padStart(2, '0')
+      ).join('');
+    }
+    // Fallback for older browsers
     return 'instance_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
   }
 
@@ -188,6 +197,23 @@ class BibleExplorerTelemetry {
     
     // Trace search operations
     this.traceSearchOperations();
+    
+    // Set up privacy-respecting data collection
+    this.setupPrivacyControls();
+  }
+
+  setupPrivacyControls() {
+    // Check for Do Not Track header
+    this.respectsDoNotTrack = navigator.doNotTrack === '1' || 
+                              navigator.doNotTrack === 'yes' || 
+                              navigator.msDoNotTrack === '1';
+    
+    // Allow users to opt-out of telemetry
+    if (localStorage.getItem('bibleExplorerTelemetryOptOut') === 'true' || 
+        this.respectsDoNotTrack) {
+      console.log('Telemetry disabled by user preference');
+      this.disabled = true;
+    }
   }
 
   tracePageLoad() {
@@ -247,11 +273,14 @@ class BibleExplorerTelemetry {
 
   // Public methods for application to use
   recordPageView(path, title, attributes = {}) {
+    // Security: Respect privacy preferences
+    if (this.disabled) return;
+    
     const span = this.tracer.startSpan('page.view', {
       attributes: {
         'page.path': path,
         'page.title': title,
-        ...attributes
+        ...this.sanitizeAttributes(attributes)
       }
     });
     
@@ -264,13 +293,19 @@ class BibleExplorerTelemetry {
   }
 
   recordSearch(query, resultCount, duration, attributes = {}) {
+    // Security: Respect privacy preferences
+    if (this.disabled) return;
+    
+    // Security: Sanitize and limit search query for privacy
+    const sanitizedQuery = this.sanitizeSearchQuery(query);
+    
     const span = this.tracer.startSpan('search.query', {
       attributes: {
-        'search.query': query.substring(0, 100), // Limit for privacy
+        'search.query': sanitizedQuery,
         'search.result_count': resultCount,
         'search.duration_ms': duration,
         'search.has_results': resultCount > 0,
-        ...attributes
+        ...this.sanitizeAttributes(attributes)
       }
     });
 
@@ -286,13 +321,45 @@ class BibleExplorerTelemetry {
     span.end();
   }
 
+  sanitizeSearchQuery(query) {
+    if (typeof query !== 'string') return '[INVALID_QUERY]';
+    
+    // Remove potential sensitive information and limit length
+    return query.replace(/[<>\"/\\]/g, '')
+                .replace(/\b(password|token|key|secret|auth)\b/gi, '[FILTERED]')
+                .substring(0, 50); // Shorter limit for telemetry
+  }
+
+  sanitizeAttributes(attributes) {
+    if (!attributes || typeof attributes !== 'object') return {};
+    
+    const sanitized = {};
+    for (const [key, value] of Object.entries(attributes)) {
+      // Skip sensitive keys
+      if (/password|token|key|secret|auth|cookie|session/i.test(key)) {
+        continue;
+      }
+      
+      // Sanitize string values
+      if (typeof value === 'string') {
+        sanitized[key] = value.substring(0, 100);
+      } else if (typeof value === 'number' || typeof value === 'boolean') {
+        sanitized[key] = value;
+      }
+    }
+    return sanitized;
+  }
+
   recordVideoInteraction(action, videoId, bookSlug, attributes = {}) {
+    // Security: Respect privacy preferences
+    if (this.disabled) return;
+    
     const span = this.tracer.startSpan('video.interaction', {
       attributes: {
         'video.action': action,
         'video.id': videoId,
         'book.slug': bookSlug,
-        ...attributes
+        ...this.sanitizeAttributes(attributes)
       }
     });
 
@@ -305,12 +372,15 @@ class BibleExplorerTelemetry {
   }
 
   recordNavigation(method, url, attributes = {}) {
+    // Security: Respect privacy preferences
+    if (this.disabled) return;
+    
     const span = this.tracer.startSpan('navigation', {
       attributes: {
         'navigation.method': method,
         'navigation.url': url,
         'navigation.from': document.referrer,
-        ...attributes
+        ...this.sanitizeAttributes(attributes)
       }
     });
 
@@ -323,13 +393,16 @@ class BibleExplorerTelemetry {
   }
 
   recordError(error, context = {}) {
+    // Security: Always record errors for security monitoring, but sanitize data
+    
+    const sanitizedContext = this.sanitizeAttributes(context);
     const span = this.tracer.startSpan('error.occurrence', {
       attributes: {
         'error.type': error.name || 'unknown',
-        'error.message': error.message || 'unknown',
-        'error.stack': error.stack || '',
-        'error.context': JSON.stringify(context),
-        ...context
+        'error.message': (error.message || 'unknown').substring(0, 200),
+        'error.stack': (error.stack || '').substring(0, 500),
+        'error.context': JSON.stringify(sanitizedContext),
+        ...sanitizedContext
       }
     });
 
@@ -345,6 +418,9 @@ class BibleExplorerTelemetry {
   }
 
   recordUserSession(duration) {
+    // Security: Respect privacy preferences
+    if (this.disabled) return;
+    
     this.sessionDurationHistogram.record(duration, {
       'session.type': duration > 300000 ? 'long' : 'short' // 5 minutes threshold
     });

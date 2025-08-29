@@ -42,6 +42,18 @@ npm run test:selenium
 npm run test:setup
 ```
 
+#### iOS Safari Testing
+```bash
+# Run iOS Safari tests (macOS only)
+./run_ios_tests.sh
+
+# Or use npm scripts
+npm run test:safari      # Safari desktop simulation
+npm run test:mobile      # Mobile responsive tests  
+npm run test:ios         # iOS simulator tests
+npm run test:ios-all     # All iOS Safari tests
+```
+
 #### Manual Test Execution
 ```bash
 # Activate environment
@@ -58,20 +70,25 @@ python -m pytest tests/ --html=report.html  # Generate HTML report
 #### Files Structure
 ```
 tests/
-├── test_bible_explorer.py    # Main test suite
+├── test_bible_explorer.py    # Main test suite (Chrome)
+├── test_ios_safari.py        # iOS Safari test suite
 ├── conftest.py              # Pytest configuration and fixtures
 ├── requirements.txt         # Python dependencies
 └── __init__.py             # Python package marker
 
-pytest.ini                  # Pytest configuration
-run_tests.sh                # Shell script for easy execution
+pytest.ini                  # Pytest configuration with iOS markers
+run_tests.sh                # Main test execution script
+run_ios_tests.sh            # iOS Safari test execution script  
 .github/workflows/test.yml  # CI/CD pipeline
+docs/IOS_TESTING_GUIDE.md   # Complete iOS testing setup guide
 ```
 
 #### Dependencies
-- **Selenium**: Browser automation and testing
+- **Selenium**: Browser automation and testing (Chrome & Safari)
+- **Appium**: iOS mobile automation testing
 - **Pytest**: Test framework with HTML reporting
-- **Chrome/Chromium**: Headless browser for testing
+- **Chrome/Chromium**: Desktop browser for testing
+- **Safari**: macOS/iOS browser testing
 - **Python 3.9+**: Runtime environment
 
 ### 🎯 Test Coverage
@@ -85,6 +102,8 @@ run_tests.sh                # Shell script for easy execution
 ✅ **Accessibility**: ARIA labels, keyboard navigation, semantic HTML, theme compatibility  
 ✅ **Performance**: Fast static generation (300+ pages), optimized assets, minimal JavaScript footprint
 ✅ **Modern UX**: Clean professional design, proper spacing, no excessive decorations  
+✅ **iOS Safari Compatibility**: Native iOS Safari testing with touch events and viewport behavior
+✅ **Mobile-First Design**: Full-screen modals, view toggles, 44px touch targets, responsive breakpoints  
 
 #### Build Quality Gates
 - Homepage must load within 10 seconds with proper navigation

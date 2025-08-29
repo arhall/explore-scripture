@@ -20,11 +20,30 @@ source test-env/bin/activate
 echo "📥 Installing test dependencies..."
 pip install -r tests/requirements.txt > /dev/null 2>&1
 
-# Check if Chrome is available
-echo "🌐 Checking Chrome availability..."
-if ! command -v google-chrome &> /dev/null && ! command -v chrome &> /dev/null; then
-    echo "❌ Chrome not found. Please install Chrome or Chromium for testing."
+# Check browser availability
+echo "🌐 Checking browser availability..."
+CHROME_AVAILABLE=false
+SAFARI_AVAILABLE=false
+
+if command -v google-chrome &> /dev/null || command -v chrome &> /dev/null; then
+    CHROME_AVAILABLE=true
+fi
+
+if command -v safaridriver &> /dev/null && [[ "$OSTYPE" == "darwin"* ]]; then
+    SAFARI_AVAILABLE=true
+fi
+
+if [ "$CHROME_AVAILABLE" = false ] && [ "$SAFARI_AVAILABLE" = false ]; then
+    echo "❌ No supported browsers found. Please install Chrome or enable Safari WebDriver."
     exit 1
+fi
+
+echo "✅ Available browsers:"
+if [ "$CHROME_AVAILABLE" = true ]; then
+    echo "   - Chrome (Chromium)"
+fi
+if [ "$SAFARI_AVAILABLE" = true ]; then
+    echo "   - Safari (macOS)"
 fi
 
 # Start tests
