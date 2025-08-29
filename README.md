@@ -1,11 +1,13 @@
-# Bible Static Site (Eleventy) — Cloudflare Pages Ready
+# Bible Explorer — Interactive Study Site
 
-A statically generated site with:
-- A home page listing **sections/categories** (Law, History, Poetry/Writings, Major Prophets, Minor Prophets, Gospels, Acts, Pauline Epistles, General Epistles, Apocalypse).
-- Individual **book pages** (all 66) with metadata (testament, category, traditional author, original language) and **chapter-by-chapter summary placeholders**.
-- **Category pages** that list the books in that section.
+A comprehensive Bible study platform featuring:
+- **66 Biblical books** organized by categories (Law, History, Poetry, Prophets, Gospels, Epistles, Apocalypse)
+- **229 Biblical characters** with detailed study profiles and gospel connections
+- **Interactive chapter reader** with live translation switching (ESV, NIV, NLT, NKJV, NASB, AMPC, WEB)
+- **Professional UX design** optimized for desktop and mobile study
+- **Modern theme system** with 24 color themes and dark mode support
 
-Built with **Eleventy (11ty)** for a super simple static build, ideal for **Cloudflare Pages**.
+Built with **Eleventy (11ty)** for fast, static generation and deployed on **Cloudflare Pages**.
 
 ---
 
@@ -50,26 +52,64 @@ Tip: If you'd like markdown-rich summaries, you can put markdown in the summary 
 
 ---
 
-## Interactive Features
+## Key Features
 
-The site includes several interactive features for enhanced Bible study:
+### 📖 Chapter Reader
+- **Interactive Reading**: Modal-based full chapter experience with BibleGateway integration
+- **Live Translation Switching**: Change Bible versions instantly without page refresh
+- **7 Translations**: ESV, NIV, NLT, NKJV, NASB, AMPC, WEB support with proper URL generation
+- **Mobile Optimized**: Maximized viewport space with responsive controls
+- **Clean Interface**: Single "Read Chapter" button per chapter, no duplicate UI elements
 
-### Chapter Reader
-- **Purpose**: Modal-based full chapter reading with BibleGateway integration
-- **Usage**: Click "Read Chapter" buttons on book pages
-- **Documentation**: See [docs/CHAPTER_READER_GUIDE.md](docs/CHAPTER_READER_GUIDE.md)
-- **Features**: Embedded iframes, responsive design, external link access
+### 👥 Character Studies  
+- **229 Biblical Characters**: Comprehensive profiles with detailed analysis
+- **Professional Layout**: Clean, card-based design optimized for readability
+- **Gospel Connections**: How each character points to Christ with theological insights
+- **Responsive Design**: Mobile-friendly with proper spacing and typography
+- **Study Resources**: Integration with StudyandObey.com character studies
 
-### Scripture Widget
-- **Purpose**: Hover/tap Scripture references for quick verse lookup
-- **Usage**: Automatic enhancement of `data-scripture` attributes
-- **Documentation**: See [docs/SCRIPTURE_WIDGET_GUIDE.md](docs/SCRIPTURE_WIDGET_GUIDE.md)  
-- **Features**: Multiple translations, mobile-friendly, theme integration
+### 🎨 Modern UX Design
+- **Professional Styling**: Clean, minimal interface without excessive decorations
+- **24 Theme System**: Complete color theme support with automatic dark mode
+- **Mobile First**: Responsive design optimized for all device sizes
+- **Fast Performance**: Static generation with optimized loading times
+- **Accessibility**: Proper ARIA labels, keyboard navigation, and focus states
+
+### 📜 Scripture Widget
+- **Quick References**: Hover/tap Scripture references for instant verse lookup
+- **Multi-Translation**: Supports all available Bible versions
+- **Smart Integration**: Automatic enhancement of scripture references
+- **Theme Compatible**: Matches site theme and color scheme
 
 ---
 
-## Notes
+## Technical Details
 
-- This starter includes **all 66 books** with metadata and empty chapter summaries (except a few example chapters).
-- Categories and descriptions live in `src/_data/categories.json`.
-- Styling is intentionally minimal (`src/styles.css`) so you can adapt easily.
+### Architecture
+- **Static Generation**: Built with Eleventy (11ty) for fast, SEO-friendly pages
+- **Data-Driven**: All content managed through JSON data files for easy maintenance
+- **Component-Based**: Modular JavaScript components for interactive features
+- **CSS Custom Properties**: Modern CSS with full theme system integration
+- **Responsive Images**: Optimized assets with proper loading strategies
+
+### Performance
+- **Build Analysis**: Comprehensive logging system with performance metrics
+- **Optimized Bundle**: Minimal JavaScript footprint with lazy loading
+- **CDN Ready**: Designed for Cloudflare Pages with edge optimization
+- **Fast Builds**: Efficient generation of 300+ pages in under 3 seconds
+
+### Content Management
+- **66 Biblical Books**: Complete metadata with chapter-by-chapter summaries
+- **229 Character Profiles**: Detailed study content with gospel connections  
+- **10 Categories**: Organized scripture sections (Law, Prophets, Gospels, etc.)
+- **Commentary Integration**: Direct links to Enduring Word commentary
+- **Translation Support**: Multiple Bible versions with proper API integration
+
+---
+
+## Documentation
+
+- **[Chapter Reader Guide](docs/CHAPTER_READER_GUIDE.md)**: Complete chapter reader documentation
+- **[Scripture Widget Guide](docs/SCRIPTURE_WIDGET_GUIDE.md)**: Scripture reference system
+- **[Developer Guide](docs/DEVELOPER_GUIDE.md)**: Technical implementation details
+- **[Performance Guide](docs/PERFORMANCE.md)**: Optimization and build analysis

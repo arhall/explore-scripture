@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a static Bible study site built with Eleventy (11ty) that generates pages for all 66 biblical books organized by categories (Law, History, Poetry & Writings, Major Prophets, Minor Prophets, Gospels, Acts, Pauline Epistles, General Epistles, Apocalypse). The site is designed for deployment on Cloudflare Pages.
+Bible Explorer is a comprehensive static Bible study platform built with Eleventy (11ty). It features 66 biblical books, 229 character studies, interactive chapter reading with live translation switching, and a modern UX design optimized for both desktop and mobile study experiences. The site generates 300+ pages and is optimized for Cloudflare Pages deployment.
 
 ## Development Commands
 
@@ -35,53 +35,106 @@ The dev server runs Eleventy with `--serve` flag, providing live reload during d
 ### Data-Driven Structure
 - **`src/_data/books.json`**: Contains all 66 biblical books with metadata (testament, category, author, language) and `chapterSummaries` object for chapter-by-chapter content
 - **`src/_data/categories.json`**: Defines the 10 biblical categories with descriptions and testament associations
+- **`src/_data/characters.js`**: All 229 biblical characters with basic metadata and appearance tracking
+- **`src/_data/charactersForPages.js`**: Character data formatted for individual page generation
+- **`src/_data/characterProfiles.js`**: Detailed character study profiles with gospel connections
+- **`src/_data/charactersByBook/`**: Character appearance data organized by individual biblical books
 
 ### Template System (Nunjucks)
-- **Base Layout** (`src/_includes/layouts/base.njk`): Common HTML structure with navigation and footer
-- **Book Layout** (`src/_includes/layouts/book.njk`): Individual book pages with metadata display, chapter summary tables, and "Read Chapter" buttons
+- **Base Layout** (`src/_includes/layouts/base-minimal.njk`): Clean HTML structure with navigation, theme toggle, and modern styling
+- **Book Layout** (`src/_includes/layouts/book.njk`): Individual book pages with metadata display, chapter summary tables, and integrated chapter reader
+- **Character Layout** (`src/_includes/layouts/character.njk`): Professional character study pages with gospel connections
 - **Category Layout** (`src/_includes/layouts/category.njk`): Lists books within each category
-- **Dynamic Page Generation**: Uses Eleventy pagination to generate individual pages for each book via `src/books.njk`
+- **Dynamic Page Generation**: 
+  - Books: `src/books.njk` generates 66 individual book pages
+  - Characters: `src/characters.njk` generates 229 character study pages with pagination
+  - Categories: `src/categories.njk` generates category overview pages
 
 ### Interactive Features
-- **Chapter Reader** (`src/assets/chapter-reader.js`): Modal-based chapter reading with embedded BibleGateway iframes
+- **Chapter Reader** (`src/assets/chapter-reader.js`): 
+  - Modal-based chapter reading with BibleGateway integration
+  - Live translation switching (ESV, NIV, NLT, NKJV, NASB, AMPC, WEB)
+  - Mobile-optimized with maximized viewport space
+  - Single button per chapter (no duplicates)
+  - Smart duplicate detection and clean UI
 - **Scripture Widget** (`src/assets/scripture-widget.js`): Hover/tap Scripture references with verse previews
-- **Theme Manager** (`src/assets/theme-manager.js`): 24 professional color themes with dark mode support
+- **Character Search** (`src/assets/character-search.js`): Fast client-side character search with filtering
+- **Theme Manager** (`src/assets/theme-manager.js`): 24 professional color themes with automatic dark mode detection
 
 ### URL Structure
 - Home: `/` (lists categories and books)
 - Categories: `/categories/` (category overview) and `/categories/{slug}/` (individual category pages)
 - Books: `/books/{slug}/` (individual book pages with chapter summaries)
+- Characters: `/characters/` (character listing) and `/characters/{slug}/` (individual character study pages)
+- Gospel Thread: `/gospel-thread/` (thematic connections throughout scripture)
+- Links: `/links/` (external resources and references)
 
 ### Content Management
-- Chapter summaries are stored as key-value pairs in each book's `chapterSummaries` object (chapter number as key, summary text as value)
-- Markdown can be used within summary strings for rich formatting
-- Some books have example summaries (Genesis 1-3, Matthew 1-3, Romans 1-2), others have empty `chapterSummaries: {}` objects
+- **Books**: Chapter summaries stored as key-value pairs in `chapterSummaries` objects (chapter number as key, summary text as value)
+- **Characters**: Detailed profiles in `characterProfiles.js` with study materials, gospel connections, and modern applications
+- **Character Appearances**: Tracked per book with chapter-level precision for navigation
+- **Gospel Connections**: Thematic data showing how characters point to Christ with theological insights
+- **Markdown Support**: Rich formatting available in summary strings and character profiles
 
-### Styling
-- Minimal CSS approach with intentionally basic styling in `src/styles.css`
-- Uses CSS Grid for card layouts and simple table styling for chapter summaries
-- Responsive design with mobile-friendly navigation
+### Modern UX Design
+- **Professional Styling**: Clean, minimal CSS with CSS custom properties for theming
+- **Responsive Grid**: CSS Grid and Flexbox for optimal layouts across devices  
+- **Character Pages**: Card-based design with clean typography and optimal information architecture
+- **Mobile-First**: Responsive design prioritizing mobile Bible study experience
+- **Theme System**: Comprehensive theming with 24 color options and automatic dark mode
+- **Accessibility**: ARIA labels, keyboard navigation, focus states, and semantic HTML
 
 ## File Organization
 
 ```
 src/
-├── _data/           # JSON data files for books and categories
-├── _includes/       # Layouts and reusable templates
-│   └── layouts/     # Nunjucks layout files
-├── assets/          # Static assets (favicon, etc.)
-├── *.njk           # Page templates and dynamic page generators
-└── styles.css      # Site-wide styling
+├── _data/                    # Data files for content generation
+│   ├── books.json           # All 66 biblical books with metadata
+│   ├── categories.json      # 10 biblical categories with descriptions
+│   ├── characters.js        # 229 character basic data
+│   ├── charactersForPages.js # Character data for page generation
+│   ├── characterProfiles.js  # Detailed character studies
+│   └── charactersByBook/    # Character appearances by book
+├── _includes/               # Layouts and reusable templates
+│   └── layouts/            # Nunjucks layout files
+│       ├── base-minimal.njk # Clean base with theme system
+│       ├── book.njk        # Individual book pages
+│       ├── character.njk   # Character study template
+│       └── category.njk    # Category listing pages
+├── assets/                 # Interactive components and static assets
+│   ├── chapter-reader.js   # Chapter reading modal with translations
+│   ├── character-search.js # Client-side character search
+│   ├── scripture-widget.js # Scripture reference tooltips
+│   └── theme-manager.js    # 24-theme system with dark mode
+├── *.njk                   # Page templates and generators
+│   ├── books.njk          # Generates 66 book pages
+│   ├── characters.njk     # Generates 229 character pages
+│   ├── characters-paginated.njk # Character listing with pagination
+│   └── categories.njk     # Category overview pages
+└── styles.css             # Modern CSS with custom properties
 ```
 
 ## Key Development Patterns
 
-When adding new features or content:
-- All book metadata lives in `src/_data/books.json` - modify this to add chapter summaries or update book information
-- Category definitions are in `src/_data/categories.json` - changes here affect navigation and groupings
-- Use Eleventy's pagination feature for generating multiple pages from data arrays
-- Follow the existing Nunjucks templating patterns for consistency
-- The site uses slug-based URLs generated from book/category names
+### Content Updates
+- **Books**: Modify `src/_data/books.json` to add chapter summaries or update book metadata
+- **Characters**: Add profiles to `src/_data/characterProfiles.js` and basic data to `src/_data/characters.js`
+- **Categories**: Update `src/_data/categories.json` for navigation and grouping changes
+- **Character Appearances**: Add to relevant `src/_data/charactersByBook/*.json` files
+
+### Code Patterns
+- **Page Generation**: Use Eleventy pagination for generating multiple pages from data arrays
+- **Templating**: Follow existing Nunjucks patterns with proper data binding and error handling
+- **Styling**: Use CSS custom properties for theming, maintain mobile-first responsive design
+- **JavaScript**: Component-based architecture with clean separation of concerns
+- **URLs**: Slug-based URLs generated from book/category/character names for SEO
+
+### UX Considerations
+- **Mobile-First**: Always test responsive design on mobile devices first
+- **Accessibility**: Include ARIA labels, keyboard navigation, and semantic markup
+- **Performance**: Minimize JavaScript footprint, optimize for fast static generation
+- **Theming**: Support both light and dark modes with proper contrast ratios
+- **Professional Design**: Clean, minimal styling without excessive decorations or animations
 
 ## Observability & Logging
 

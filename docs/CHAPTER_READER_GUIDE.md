@@ -1,24 +1,26 @@
 # Chapter Reader Implementation Guide
 
 ## Overview
-The Chapter Reader provides a seamless reading experience by displaying full Bible chapters in a modal overlay using embedded BibleGateway iframes. This allows users to read complete chapters without leaving the site, while maintaining optimal performance.
+The Chapter Reader provides an advanced Bible reading experience with modal-based chapter display, live translation switching, and mobile optimization. It integrates seamlessly with BibleGateway for 7 different Bible translations without requiring page refreshes.
 
 ## Features
 
 ### ✅ Core Functionality
-- **Embedded BibleGateway**: Full chapter content via responsive iframes
-- **Modal Interface**: Clean, distraction-free reading environment
-- **External Link Access**: "Open in New Tab" button for full BibleGateway experience
-- **Responsive Design**: Optimized sizing for desktop, tablet, and mobile
-- **Performance Optimized**: Only loads on book pages, no impact on main site
-- **Keyboard Support**: ESC key closes modal, click overlay to close
+- **Live Translation Switching**: Change Bible versions instantly (ESV, NIV, NLT, NKJV, NASB, AMPC, WEB)
+- **Embedded BibleGateway**: Full chapter content via responsive iframes with proper URL generation
+- **Modal Interface**: Clean, professional reading environment with modern UX design
+- **Mobile Optimization**: Maximized viewport space by hiding external links on mobile devices
+- **Single Button Interface**: No duplicate "Read Chapter" buttons per chapter
+- **Smart Duplicate Detection**: Prevents multiple buttons from appearing for the same chapter
+- **Performance Optimized**: Minimal JavaScript footprint with component-based architecture
 
 ### 🎨 Visual Design
-- **Clean Interface**: Minimal header with chapter reference and controls
-- **Responsive Iframe**: Automatically adjusts height based on screen size
-- **Theme Integration**: Matches site's existing color scheme and theming
-- **Professional Styling**: Modern buttons with hover effects and transitions
-- **Accessibility**: Proper ARIA labels and keyboard navigation
+- **Translation Selector**: Dropdown in modal header for instant version switching
+- **Clean Interface**: Professional header with chapter reference and responsive controls
+- **Mobile-First Design**: External links hidden on mobile for maximum reading space
+- **Theme Integration**: Full compatibility with 24-theme system and dark mode
+- **Professional Styling**: Clean buttons without emojis, proper focus states
+- **Accessibility**: ARIA labels, keyboard navigation (ESC to close), semantic markup
 
 ## Implementation
 

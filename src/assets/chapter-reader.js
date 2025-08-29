@@ -553,15 +553,72 @@ class ChapterReader {
         }
       }
 
+      /* Mobile View Toggle Styles */
+      .mobile-view-toggle {
+        display: flex;
+        background: var(--bg-secondary, #f9fafb);
+        border-radius: 8px;
+        padding: 2px;
+        margin-bottom: 0.75rem;
+      }
+
+      .toggle-btn {
+        flex: 1;
+        background: transparent;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--text-secondary, #6b7280);
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .toggle-btn.active {
+        background: var(--accent, #2563eb);
+        color: white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .toggle-btn:hover:not(.active) {
+        background: var(--bg-tertiary, #ffffff);
+        color: var(--text, #111827);
+      }
+
+      .iframe-view-container,
+      .api-view-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .loading-api-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        color: var(--text-secondary, #6b7280);
+        font-size: 0.875rem;
+      }
+
       /* Mobile Iframe Adjustments */
       @media (max-width: 768px) {
         .chapter-reader-iframe {
-          height: 500px;
-          min-height: 350px;
+          height: 70vh;
+          min-height: 400px;
         }
         
         .chapter-reader-modal {
-          height: 90vh;
+          height: 95vh;
+          width: 100vw;
+          border-radius: 0;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          max-height: 100vh;
         }
         
         .chapter-reader-content {
@@ -569,19 +626,34 @@ class ChapterReader {
           flex-direction: column;
           flex: 1;
           min-height: 0;
+          padding: 1rem;
+        }
+        
+        .chapter-reader-iframe-container {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+        
+        /* Hide fallback on mobile to save space */
+        .chapter-reader-iframe-fallback {
+          display: none;
         }
       }
 
       /* Very small screens */
       @media (max-width: 480px) {
         .chapter-reader-iframe {
-          height: 400px;
-          min-height: 300px;
+          height: 75vh;
+          min-height: 450px;
         }
         
-        .chapter-reader-modal {
-          height: 95vh;
-          width: 98vw;
+        .chapter-reader-header {
+          padding: 0.75rem 1rem;
+        }
+        
+        .chapter-reader-content {
+          padding: 0.5rem;
         }
       }
 
@@ -813,6 +885,17 @@ class ChapterReader {
       // Update the iframe and external link
       this.updateChapterContent(overlay, chapterInfo);
     });
+
+    // Mobile view toggle functionality
+    const toggleBtns = overlay.querySelectorAll('.toggle-btn');
+    if (toggleBtns.length > 0) {
+      toggleBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const view = e.target.dataset.view;
+          this.switchMobileView(overlay, view, chapterInfo);
+        });
+      });
+    }
 
     // Close on overlay click
     overlay.addEventListener('click', (e) => {
@@ -1145,24 +1228,50 @@ class ChapterReader {
     const version = translationMap[this.currentTranslation] || 'ESV';
     const bookChapter = `${chapterInfo.book} ${chapterInfo.chapter}`;
     
-    return `https://www.biblegateway.com/passage/?search=${encodeURIComponent(bookChapter)}&version=${version}`;
+    // Detect mobile and add interface parameters for better mobile experience
+    const isMobile = window.innerWidth <= 768;
+    const baseUrl = `https://www.biblegateway.com/passage/?search=${encodeURIComponent(bookChapter)}&version=${version}`;
+    
+    if (isMobile) {
+      // Add mobile-optimized parameters
+      return `${baseUrl}&interface=mobile`;
+    }
+    
+    return baseUrl;
   }
 
   renderBibleGatewayIframe(chapterInfo) {
     const url = this.getBibleGatewayUrl(chapterInfo);
+    const isMobile = window.innerWidth <= 768;
+    
+    // On mobile, add a toggle to switch between iframe and API content
+    const mobileToggle = isMobile ? `
+      <div class="mobile-view-toggle" style="margin-bottom: 0.5rem;">
+        <button class="toggle-btn active" data-view="iframe">BibleGateway</button>
+        <button class="toggle-btn" data-view="api">Text View</button>
+      </div>
+    ` : '';
     
     return `
       <div class="chapter-reader-iframe-container">
-        <iframe 
-          src="${url}" 
-          class="chapter-reader-iframe"
-          title="${chapterInfo.reference} - ${this.translations[this.currentTranslation].name}"
-          loading="lazy"
-          sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        ${mobileToggle}
+        <div class="iframe-view-container">
+          <iframe 
+            src="${url}" 
+            class="chapter-reader-iframe"
+            title="${chapterInfo.reference} - ${this.translations[this.currentTranslation].name}"
+            loading="lazy"
+            sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div class="api-view-container" style="display: none;">
+          <div class="loading-api-content">
+            <p>Loading text view...</p>
+          </div>
+        </div>
         <div class="chapter-reader-iframe-fallback">
-          <p>If the Bible content doesn't load above, you can:</p>
+          <p>Having trouble? Try:</p>
           <a href="${url}" target="_blank" class="chapter-reader-external-link">
             ▦ Open ${chapterInfo.reference} on BibleGateway
           </a>
@@ -1267,6 +1376,67 @@ class ChapterReader {
     const version = translationMap[this.currentTranslation] || 'ESV';
     const url = `https://www.biblegateway.com/passage/?search=${encodeURIComponent(reference)}&version=${version}`;
     window.open(url, '_blank');
+  }
+
+  switchMobileView(overlay, view, chapterInfo) {
+    const toggleBtns = overlay.querySelectorAll('.toggle-btn');
+    const iframeContainer = overlay.querySelector('.iframe-view-container');
+    const apiContainer = overlay.querySelector('.api-view-container');
+    
+    // Update toggle buttons
+    toggleBtns.forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.view === view);
+    });
+    
+    if (view === 'iframe') {
+      // Show iframe view
+      iframeContainer.style.display = 'flex';
+      apiContainer.style.display = 'none';
+    } else if (view === 'api') {
+      // Show API text view
+      iframeContainer.style.display = 'none';
+      apiContainer.style.display = 'flex';
+      
+      // Load API content if not already loaded
+      if (apiContainer.querySelector('.loading-api-content')) {
+        this.loadApiContentForMobile(apiContainer, chapterInfo);
+      }
+    }
+  }
+
+  async loadApiContentForMobile(container, chapterInfo) {
+    try {
+      const cacheKey = `${chapterInfo.reference}-${this.currentTranslation}`;
+      let chapterData = this.cache.get(cacheKey);
+
+      if (!chapterData) {
+        chapterData = await this.fetchChapter(chapterInfo.reference, this.currentTranslation);
+        this.cache.set(cacheKey, chapterData);
+      }
+
+      const versesHtml = chapterData.verses.map(verse => `
+        <div class="chapter-reader-verse">
+          <span class="chapter-verse-number">${verse.number}</span>
+          <span class="chapter-verse-text">${verse.text}</span>
+        </div>
+      `).join('');
+
+      container.innerHTML = `
+        <div class="chapter-reader-verses" style="flex: 1; overflow-y: auto;">
+          <div style="margin-bottom: 1rem;">
+            <span class="translation-badge">${chapterData.translation}</span>
+          </div>
+          ${versesHtml}
+        </div>
+      `;
+    } catch (error) {
+      console.error('Error loading API content:', error);
+      container.innerHTML = `
+        <div style="text-align: center; padding: 2rem; color: var(--text-secondary, #6b7280);">
+          <p>Unable to load text view. Please try the BibleGateway view or external link.</p>
+        </div>
+      `;
+    }
   }
 
   // Public API for manual usage

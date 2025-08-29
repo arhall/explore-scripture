@@ -1,23 +1,25 @@
-# Current Context - Bible Static Site
+# Current Context - Bible Explorer
 
 ## Project Overview
-Bible Explorer - A static site built with Eleventy (11ty) that provides chapter-by-chapter Bible summaries, character information, and cross-references.
+Bible Explorer — Interactive Study Site - A comprehensive Bible study platform built with Eleventy (11ty) featuring 66 biblical books, 229 character studies, interactive chapter reader with live translation switching, and professional UX design optimized for desktop and mobile study.
 
-## Current State (Post-Testing Infrastructure Setup)
-- **Build Status**: Fully functional, no build errors
-- **Dev Server**: Running on `http://localhost:8080` 
-- **Testing**: Comprehensive Selenium test suite implemented and passing
-- **CI/CD**: GitHub Actions workflow configured for automated testing
+## Current State (Modern Bible Study Platform)
+- **Build Status**: Fully functional, optimized for performance (300+ pages in <3 seconds)
+- **Dev Server**: Running on `http://localhost:8080` with live reload
+- **Character Studies**: 229 biblical characters with detailed profiles and gospel connections
+- **Chapter Reader**: Live translation switching (ESV, NIV, NLT, NKJV, NASB, AMPC, WEB)
+- **Professional UX**: Clean, mobile-first design with 24-theme system
+- **Testing**: Comprehensive Selenium test suite with build quality gates
 
-## Recent Changes Applied
-1. **Reverted Repository**: Back to commit 4e567b9 for clean state
-2. **Build Configuration**: Fixed .eleventy.js passthrough configuration
-3. **Testing Infrastructure**: Added comprehensive Selenium test suite with 13+ tests
-4. **CI/CD Pipeline**: GitHub Actions workflow for automated testing
-5. **Documentation**: Created technical, product, and content suggestion frameworks
-6. **Scripture Widget System**: Implemented embedded Bible verse display with hover/tap functionality
-7. **Chapter Reader Modal**: Simplified chapter reading with embedded BibleGateway iframe
-8. **Bible Study Enhancement**: Integrated both systems for comprehensive study experience
+## Major Features Implemented
+1. **Character Study System**: 229 character pages with professional layouts, gospel connections, and biblical analysis
+2. **Interactive Chapter Reader**: Modal-based reading with BibleGateway integration and translation switching
+3. **Mobile Optimization**: Maximized viewport space, hidden external links on mobile, responsive design
+4. **Theme System**: 24 professional color themes with automatic dark mode detection
+5. **Client-Side Search**: Real-time character search with filtering (no page refresh)
+6. **Scripture Widget**: Hover/tap Bible verse display with multi-translation support
+7. **Clean Button Hierarchy**: Removed duplicate buttons, professional styling without emojis
+8. **AMPC Support**: Fixed BibleGateway links for Amplified Bible Classic edition
 
 ## Technical Architecture
 - **Static Site Generator**: Eleventy (11ty) v3.1.2
@@ -31,36 +33,46 @@ Bible Explorer - A static site built with Eleventy (11ty) that provides chapter-
 /Users/andrewhall/repo/bible-static-site/
 ├── .eleventy.js (build configuration)
 ├── src/
-│   ├── _includes/
-│   │   ├── layouts/base.njk (main layout with widget integration)
-│   │   └── macros/scripture.njk (Scripture reference macros)
+│   ├── _data/
+│   │   ├── books.json (66 books with chapter summaries)
+│   │   ├── characters.js (229 character database)
+│   │   ├── charactersForPages.js (character page generation)
+│   │   ├── characterProfiles.js (detailed character profiles)
+│   │   └── charactersByBook/ (character data organized by book)
+│   ├── _includes/layouts/
+│   │   ├── base.njk (main layout with theme system)
+│   │   ├── book.njk (book pages with chapter summaries)
+│   │   ├── category.njk (category pages with book listings)
+│   │   └── character.njk (character study pages)
 │   ├── assets/
-│   │   ├── scripture-widget.js (embedded verse display system)
-│   │   └── chapter-reader.js (full chapter modal system)
+│   │   ├── chapter-reader.js (chapter reader with translation switching)
+│   │   ├── character-search.js (client-side character search)
+│   │   ├── scripture-widget.js (embedded verse display)
+│   │   ├── theme-manager.js (24-theme system)
+│   │   ├── logger.js (comprehensive logging)
+│   │   └── telemetry.js (performance monitoring)
 │   ├── examples/
-│   │   ├── genesis-1-enhanced.njk (Scripture widget demo)
-│   │   └── john-3-complete.njk (complete integration demo)
-│   ├── styles.css (main stylesheet)
-│   ├── _data/ (JSON data files)
-│   └── index.njk (homepage)
-├── tests/test_scripture_widget.py (widget functionality tests)
-├── SCRIPTURE_WIDGET_GUIDE.md (implementation documentation)
-└── _site/ (build output)
+│   │   └── john-3-complete.njk (complete study example)
+│   ├── characters.njk (character overview page)
+│   ├── characters-paginated.njk (paginated character listing)
+│   └── styles.css (main stylesheet with theme support)
+├── tests/test_bible_explorer.py (comprehensive Selenium test suite)
+├── docs/ (comprehensive documentation)
+└── _site/ (build output - 300+ pages)
 ```
 
 ## Current Functionality Status
-✅ **Working:**
-- Homepage rendering and content visibility
-- Navigation menu and links
-- Theme toggle (light/dark)
-- Font size controls
-- High contrast mode
-- Search functionality
-- Character and book pages
-- Responsive design
-- **Scripture Widget System**: Hover/tap Bible verse display with configurable translations
-- **Chapter Reader Modal**: Embedded BibleGateway iframe in responsive modal with external link access
-- **Bible Study Integration**: Seamless combination of verse lookup and chapter reading
+✅ **Core Features:**
+- **66 Biblical Books**: Complete metadata with chapter-by-chapter summaries organized by 10 categories
+- **229 Character Studies**: Detailed profiles with gospel connections, appearance tracking, and biblical analysis
+- **Interactive Chapter Reader**: Live translation switching (ESV, NIV, NLT, NKJV, NASB, AMPC, WEB) without page refresh
+- **Client-Side Character Search**: Real-time filtering and search results with no server requests
+- **Professional UX Design**: Clean, mobile-first interface optimized for Bible study
+- **24-Theme System**: Complete color theme support with automatic dark mode detection
+- **Scripture Widget System**: Hover/tap Bible verse display with multi-translation support
+- **Mobile Optimization**: Maximized viewport space, responsive controls, touch-friendly interface
+- **Performance Optimized**: Static generation of 300+ pages in under 3 seconds
+- **Accessibility Features**: ARIA labels, keyboard navigation, semantic HTML, screen reader support
 
 ✅ **Recently Fixed:**
 - Build configuration cleaned up (removed missing file references)

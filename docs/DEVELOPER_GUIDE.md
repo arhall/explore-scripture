@@ -8,39 +8,47 @@ bible-static-site/
 │   ├── CHAPTER_READER_GUIDE.md   # Chapter reader implementation
 │   ├── SCRIPTURE_WIDGET_GUIDE.md # Scripture widget implementation  
 │   ├── TEST_SUITE_DOCUMENTATION.md # Testing documentation
-│   ├── DOCKER.md                 # Docker setup guide
+│   ├── DEVELOPER_GUIDE.md        # This developer guide
 │   ├── PERFORMANCE.md            # Performance optimization guide
-│   └── suggestions/              # Feature suggestions
+│   └── README.md                 # Documentation overview
 ├── src/                          # Source code
 │   ├── _data/                    # Eleventy data files
-│   │   ├── books.json           # Book metadata and summaries
-│   │   ├── categories.js        # Book categories configuration
-│   │   ├── characters.js        # Character database
-│   │   └── charactersByBook/    # Character data per book
+│   │   ├── books.json           # Book metadata and summaries (66 books)
+│   │   ├── categories.js        # Book categories configuration (10 categories)
+│   │   ├── characters.js        # Character database (229 characters)
+│   │   ├── charactersForPages.js # Character data for page generation
+│   │   ├── characterProfiles.js # Detailed character profiles
+│   │   └── charactersByBook/    # Character data organized by book
 │   ├── _includes/               # Templates and layouts
 │   │   ├── layouts/            # Nunjucks layouts
+│   │   │   ├── base.njk       # Base layout with navigation and theme system
+│   │   │   ├── book.njk       # Book pages with chapter summaries
+│   │   │   ├── category.njk   # Category pages with book listings
+│   │   │   └── character.njk  # Character study pages
 │   │   ├── components/         # Reusable components
-│   │   └── macros/            # Template macros
+│   │   └── macros/            # Template macros (scripture, themes, gospel connections)
 │   ├── assets/                 # JavaScript and static assets
-│   │   ├── chapter-reader.js   # Chapter reading functionality
+│   │   ├── chapter-reader.js   # Chapter reading with live translation switching
 │   │   ├── scripture-widget.js # Scripture hover/tap functionality
-│   │   ├── theme-manager.js    # Theme switching system
+│   │   ├── theme-manager.js    # 24-theme system with dark mode
+│   │   ├── character-search.js # Client-side character search
 │   │   ├── logger.js          # Logging and analytics
 │   │   ├── telemetry.js       # OpenTelemetry integration
-│   │   └── debug-dashboard.js  # Debug dashboard (TypeScript)
-│   ├── examples/               # Example pages for testing
-│   └── *.njk                  # Page templates
+│   │   └── debug-dashboard.js  # Debug dashboard
+│   ├── examples/               # Example pages for testing features
+│   ├── characters.njk          # Character overview page
+│   ├── characters-paginated.njk # Paginated character listing
+│   └── *.njk                  # Other page templates
 ├── tests/                       # Test suite
-│   ├── *.test.js              # JavaScript tests
-│   ├── *.test.py              # Python Selenium tests
-│   └── conftest.py            # Pytest configuration
+│   ├── test_bible_explorer.py # Main Selenium test suite
+│   ├── conftest.py            # Pytest configuration
+│   └── requirements.txt       # Python dependencies
 ├── scripts/                     # Build and utility scripts
 │   ├── build-logger.js        # Build performance analysis
 │   ├── compress-html.js       # HTML minification
 │   └── performance-report.js  # Performance reporting
 ├── build-logs/                 # Build analysis logs
-├── tmp/                        # Temporary/debug files
-└── tools/                      # Additional development tools
+└── run_tests.sh               # Test execution script
 ```
 
 ## Development Workflow
@@ -125,10 +133,10 @@ npm run build:analyze
 ## Key Technologies
 
 ### Core Stack
-- **Eleventy (11ty)**: Static site generator
-- **Nunjucks**: Template engine
-- **Vanilla JavaScript**: No frameworks, modern ES6+
-- **CSS Custom Properties**: For theming and responsive design
+- **Eleventy (11ty)**: Static site generator for 300+ pages
+- **Nunjucks**: Template engine with macros and data-driven content
+- **Vanilla JavaScript**: Modern ES6+ with component-based architecture
+- **CSS Custom Properties**: 24-theme system with automatic dark mode detection
 
 ### Development Tools
 - **ESLint**: JavaScript linting
@@ -153,7 +161,8 @@ npm run build:analyze
 
 ### JavaScript Loading
 - Scripts conditionally loaded based on page type
-- Chapter Reader only loads on book pages
+- Chapter Reader only loads on book pages (live translation switching)
+- Character Search loads on character pages (client-side filtering)
 - Lazy loading for non-critical features
 - Service Worker for caching
 
