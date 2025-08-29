@@ -52,7 +52,9 @@
       "Bash(open http://localhost:8087/books/genesis/)",
       "Bash(open http://localhost:8087/test-chapter-reader.html)",
       "Bash(python -m pytest tests/ -v --tb=short)",
-      "Bash(python -m pytest tests/test_bible_explorer.py -v --tb=short)"
+      "Bash(python -m pytest tests/test_bible_explorer.py -v --tb=short)",
+      "WebFetch(domain:biblehub.com)",
+      "WebFetch(domain:www.blueletterbible.org)"
     ],
     "deny": [],
     "ask": []

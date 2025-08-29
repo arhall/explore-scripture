@@ -18,6 +18,7 @@ class ModuleLoader {
       // Page-specific modules
       'character-search': '/assets/character-search.js',
       'chapter-reader': '/assets/chapter-reader.js',
+      'commentary-reader': '/assets/commentary-reader.js',
       'scripture-widget': '/assets/scripture-widget.js',
       'theme-manager': '/assets/theme-manager.js',
       'telemetry': '/assets/telemetry.js',
@@ -80,6 +81,10 @@ class ModuleLoader {
         if (url.includes('chapter-reader')) {
           // Dispatch event so chapter-reader can initialize
           document.dispatchEvent(new CustomEvent('chapterReaderLoaded'));
+        }
+        if (url.includes('commentary-reader')) {
+          // Dispatch event so commentary-reader can initialize
+          document.dispatchEvent(new CustomEvent('commentaryReaderLoaded'));
         }
         if (url.includes('theme-manager')) {
           document.dispatchEvent(new CustomEvent('themeManagerLoaded'));
@@ -194,10 +199,11 @@ class ModuleLoader {
       });
     }, 1000);
     
-    // Book pages - load chapter reader immediately
+    // Book pages - load chapter reader and commentary reader immediately
     if (pathname.startsWith('/books/')) {
-      console.log('[ModuleLoader] Loading chapter reader for book page');
+      console.log('[ModuleLoader] Loading chapter reader and commentary reader for book page');
       this.loadModule('chapter-reader');
+      this.loadModule('commentary-reader');
     }
     
     // Character pages - might need character search
@@ -239,6 +245,7 @@ class ModuleLoader {
   preloadForNavigation(nextPath) {
     if (nextPath.startsWith('/books/')) {
       this.loadModule('chapter-reader');
+      this.loadModule('commentary-reader');
     } else if (nextPath.startsWith('/characters/') && (nextPath === '/characters/' || nextPath.includes('/page/'))) {
       this.loadModule('character-search');
     }
