@@ -746,24 +746,117 @@ class CommentaryReader {
   }
 
   initializeCommentaryButtons() {
-    // Find all existing Enduring Word commentary links and add commentary reader buttons
-    const commentaryLinks = document.querySelectorAll('a[href*="enduringword.com"]');
+    // Find all commentary links in the book page and add our button system
+    const commentaryLinks = document.querySelectorAll('.commentary-link');
     const processedChapters = new Set();
     
-    commentaryLinks.forEach(link => {
-      const url = link.href;
-      const chapterInfo = this.extractChapterInfo(url);
+    // If no commentary-link elements found, try fallback selectors
+    if (commentaryLinks.length === 0) {
+      // Try to find any existing commentary links as fallback
+      const fallbackLinks = document.querySelectorAll('a[href*="enduringword.com"], a[href*="commentary"]');
+      fallbackLinks.forEach(link => this.processCommentaryLink(link, processedChapters));
+    } else {
+      // Process the commentary-link elements
+      commentaryLinks.forEach(link => this.processCommentaryLink(link, processedChapters));
+    }
+  }
+
+  processCommentaryLink(link, processedChapters) {
+    const chapterInfo = this.extractChapterInfoFromContext(link);
+    
+    if (chapterInfo) {
+      const chapterKey = `${chapterInfo.book}-${chapterInfo.chapter}`;
       
-      if (chapterInfo) {
-        const chapterKey = `${chapterInfo.book}-${chapterInfo.chapter}`;
-        
-        // Only add button if we haven't processed this chapter yet
-        if (!processedChapters.has(chapterKey)) {
-          this.addCommentaryReaderButton(link, chapterInfo);
-          processedChapters.add(chapterKey);
+      // Only add button if we haven't processed this chapter yet
+      if (!processedChapters.has(chapterKey)) {
+        this.addCommentaryReaderButton(link, chapterInfo);
+        processedChapters.add(chapterKey);
+      }
+    }
+  }
+
+  extractChapterInfoFromContext(link) {
+    // Method 1: Try to extract from Enduring Word URL if available
+    if (link.href && link.href.includes('enduringword.com')) {
+      const urlInfo = this.extractChapterInfo(link.href);
+      if (urlInfo) return urlInfo;
+    }
+    
+    // Method 2: Extract from DOM context - look for chapter number in the row
+    const tableRow = link.closest('tr');
+    if (tableRow) {
+      // Look for chapter number button in the same row
+      const chapterButton = tableRow.querySelector('.chapter-number, [class*="chapter"]');
+      if (chapterButton) {
+        const chapterText = chapterButton.textContent.trim();
+        const chapterMatch = chapterText.match(/\d+/);
+        if (chapterMatch) {
+          const chapterNum = parseInt(chapterMatch[0], 10);
+          const bookName = this.getBookNameFromPage();
+          if (bookName && chapterNum) {
+            return {
+              book: bookName,
+              chapter: chapterNum,
+              reference: `${bookName} ${chapterNum}`
+            };
+          }
         }
       }
-    });
+    }
+    
+    // Method 3: Try to extract chapter from nearby elements
+    const parentCell = link.closest('td');
+    if (parentCell) {
+      const row = parentCell.parentElement;
+      const firstCell = row?.querySelector('td:first-child');
+      if (firstCell) {
+        const chapterMatch = firstCell.textContent.match(/\d+/);
+        if (chapterMatch) {
+          const chapterNum = parseInt(chapterMatch[0], 10);
+          const bookName = this.getBookNameFromPage();
+          if (bookName && chapterNum) {
+            return {
+              book: bookName,
+              chapter: chapterNum,
+              reference: `${bookName} ${chapterNum}`
+            };
+          }
+        }
+      }
+    }
+    
+    return null;
+  }
+
+  getBookNameFromPage() {
+    // Primary method: extract from URL path (most reliable)
+    const pathMatch = window.location.pathname.match(/\/books\/([^\/]+)/);
+    if (pathMatch) {
+      const slug = pathMatch[1];
+      return this.convertSlugToBookName(slug);
+    }
+    
+    // Fallback: extract from page title (format: "Book Name | Bible Explorer")
+    const pageTitle = document.title;
+    const titleMatch = pageTitle.match(/^([^|]+)/);
+    if (titleMatch) {
+      const titlePart = titleMatch[1].trim();
+      // Make sure it's not just "Bible Explorer" or other site text
+      if (titlePart !== 'Bible Explorer' && !titlePart.includes('Bible Explorer')) {
+        return titlePart;
+      }
+    }
+    
+    // Last resort: try to find book name in page heading
+    const mainHeading = document.querySelector('h1, .book-title, [class*="title"]');
+    if (mainHeading) {
+      const headingText = mainHeading.textContent.trim();
+      if (headingText && !headingText.includes('Bible Explorer')) {
+        return headingText;
+      }
+    }
+    
+    return null;
   }
 
   extractChapterInfo(url) {
