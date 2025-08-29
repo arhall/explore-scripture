@@ -1528,44 +1528,135 @@
       }
     }
 
+    // Search system state
+    let searchModulesReady = false;
+    let searchDataReady = false;
+    let searchInput, searchResults;
+
     // Search input handler
     document.addEventListener('DOMContentLoaded', function() {
-      initializeSearch();
+      // Cache DOM elements
+      searchInput = document.getElementById('searchInput');
+      searchResults = document.getElementById('searchResults');
       
       // Update keyboard shortcut hint based on platform
       const shortcutHint = document.getElementById('searchShortcut');
       const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
       shortcutHint.textContent = isMac ? '⌘K' : 'Ctrl+K';
+
+      // Initialize search data
+      initializeSearchData();
       
-      const searchInput = document.getElementById('searchInput');
-      const searchResults = document.getElementById('searchResults');
+      // Set up search input state management
+      setupSearchInputHandlers();
+    });
+
+    // Listen for search modules being loaded
+    document.addEventListener('searchModulesLoaded', function() {
+      searchModulesReady = true;
+      console.log('[Search] Search modules loaded successfully');
+      enableSearchIfReady();
+    });
+
+    // Handle search modules loading failure
+    document.addEventListener('searchModulesLoadFailed', function(event) {
+      console.error('[Search] Search modules failed to load:', event.detail);
+      showSearchError('Search modules failed to load');
+    });
+
+    // Fallback timeout in case modules never load
+    setTimeout(function() {
+      if (!searchModulesReady) {
+        console.warn('[Search] Search modules timeout - enabling basic search');
+        searchModulesReady = true; // Enable basic functionality
+        enableSearchIfReady();
+      }
+    }, 5000); // 5 second timeout
+
+    async function initializeSearchData() {
+      try {
+        await initializeSearch();
+        searchDataReady = true;
+        console.log('[Search] Search data initialized');
+        enableSearchIfReady();
+      } catch (error) {
+        console.error('[Search] Failed to initialize search data:', error);
+        showSearchError('Search data failed to load');
+      }
+    }
+
+    function enableSearchIfReady() {
+      if (searchModulesReady && searchDataReady && searchInput) {
+        searchInput.disabled = false;
+        searchInput.placeholder = 'Search books, chapters, or summaries...';
+        console.log('[Search] Search functionality enabled');
+      }
+    }
+
+    function showSearchError(message) {
+      if (searchInput) {
+        searchInput.placeholder = 'Search temporarily unavailable';
+        searchInput.disabled = true;
+        console.warn('[Search] ' + message);
+      }
+    }
+
+    function setupSearchInputHandlers() {
+      if (!searchInput || !searchResults) return;
+      
+      // Initially disable search until modules load
+      searchInput.disabled = true;
+      searchInput.placeholder = 'Loading search...';
       
       searchInput.addEventListener('input', function() {
+        // Guard clause: only process search if modules and data are ready
+        if (!searchModulesReady || !searchDataReady || this.disabled) {
+          console.log('[Search] Search not ready yet, ignoring input');
+          return;
+        }
+
         const query = this.value.trim();
         
         clearTimeout(searchTimeout);
         
-        if (query.length === 0) {
-          // Hide results if query is empty
-          const searchResults = document.getElementById('searchResults');
-          searchResults.style.display = 'none';
-          hideLoadingState();
-        } else if (query.length === 1) {
-          // Show immediate autocomplete suggestions for single character
-          const suggestions = generateAutocomplete(query);
-          if (suggestions.length > 0) {
-            displayResults([], query);
-          }
-        } else if (query.length >= 2) {
-          // Show loading state immediately for longer queries
-          showLoadingState();
+        try {
+          if (query.length === 0) {
+            // Hide results if query is empty
+            searchResults.style.display = 'none';
+            if (typeof hideLoadingState === 'function') hideLoadingState();
+          } else if (query.length === 1) {
+            // Show immediate autocomplete suggestions for single character
+            if (typeof generateAutocomplete === 'function') {
+              const suggestions = generateAutocomplete(query);
+              if (suggestions.length > 0 && typeof displayResults === 'function') {
+                displayResults([], query);
+              }
+            }
+          } else if (query.length >= 2) {
+            // Show loading state immediately for longer queries
+            if (typeof showLoadingState === 'function') showLoadingState();
           
-          searchTimeout = setTimeout(() => {
-            const results = performSearchWithFilters(query);
-            displayResults(results, query);
-          }, query.length === 2 ? 200 : 300);
+            searchTimeout = setTimeout(() => {
+              try {
+                if (typeof performSearchWithFilters === 'function' && typeof displayResults === 'function') {
+                  const results = performSearchWithFilters(query);
+                  displayResults(results, query);
+                } else {
+                  console.warn('[Search] Search functions not available');
+                  showSearchError('Search functions not loaded');
+                }
+              } catch (searchError) {
+                console.error('[Search] Error performing search:', searchError);
+                showSearchError('Search error occurred');
+              }
+            }, 200);
+          }
+        } catch (error) {
+          console.error('[Search] Error in search input handler:', error);
+          showSearchError('Search input error');
         }
       });
+    } // End of setupSearchInputHandlers function
       
       // Hide results when clicking outside
       document.addEventListener('click', function(e) {

@@ -1193,6 +1193,10 @@ class CommentaryReader {
         return `${baseUrl}/${bookName}-${chapter}`;
         
       case 'matthew-henry':
+        // Matthew Henry has special format for Song of Songs
+        if (book === 'Song of Songs') {
+          return `${baseUrl}/song-of-solomon/song-of-solomon-${chapter}.html`;
+        }
         return `${baseUrl}/${bookName}/${chapter}.html`;
         
       case 'jfb':

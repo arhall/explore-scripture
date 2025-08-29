@@ -192,12 +192,29 @@ class ModuleLoader {
   loadPageSpecificModules() {
     const pathname = window.location.pathname;
     
-    // Load search engine and unified search on all pages (but with lower priority)
+    // Load search engine immediately for homepage and main pages
+    const isHighTrafficPage = pathname === '/' || 
+                             pathname.startsWith('/books') || 
+                             pathname.startsWith('/characters') || 
+                             pathname.startsWith('/categories');
+    
+    const searchDelay = isHighTrafficPage ? 50 : 100;
+    
+    // Load search engine and unified search on all pages with higher priority
     setTimeout(() => {
+      console.log('[ModuleLoader] Loading search modules...');
       this.loadModule('search-engine').then(() => {
-        this.loadModule('unified-search');
+        return this.loadModule('unified-search');
+      }).then(() => {
+        // Notify that search modules are ready
+        console.log('[ModuleLoader] Search modules loaded successfully');
+        document.dispatchEvent(new CustomEvent('searchModulesLoaded'));
+      }).catch(error => {
+        console.error('[ModuleLoader] Failed to load search modules:', error);
+        // Still dispatch event so search doesn't wait forever
+        document.dispatchEvent(new CustomEvent('searchModulesLoadFailed', { detail: error }));
       });
-    }, 1000);
+    }, searchDelay);
     
     // Book pages - load chapter reader and commentary reader immediately
     if (pathname.startsWith('/books/')) {
