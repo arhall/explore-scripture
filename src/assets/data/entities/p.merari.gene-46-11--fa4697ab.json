@@ -1,0 +1,26 @@
+{
+  "name": "Merari",
+  "type": "person",
+  "references": [
+    "Genesis 46:11",
+    "Exodus 6:16,19"
+  ],
+  "blurb": "Son of Levi; founder of Levitical Merarites.",
+  "category": "genealogy",
+  "cross_references": [
+    "Numbers 3:17",
+    "Numbers 3:17,33–37"
+  ],
+  "id": "p.merari.gene-46-11--fa4697ab",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      46
+    ],
+    "Exodus": [
+      6
+    ]
+  }
+}

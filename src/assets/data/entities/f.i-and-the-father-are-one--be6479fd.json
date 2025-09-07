@@ -1,0 +1,23 @@
+{
+  "name": "I and the Father are one",
+  "type": "figure",
+  "category": "claim",
+  "references": [
+    "John 10:30"
+  ],
+  "aka": [],
+  "id": "f.i-and-the-father-are-one--be6479fd",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      10
+    ]
+  }
+}

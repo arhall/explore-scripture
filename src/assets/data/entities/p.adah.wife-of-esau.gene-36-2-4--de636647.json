@@ -1,0 +1,20 @@
+{
+  "name": "Adah (wife of Esau)",
+  "type": "person",
+  "references": [
+    "Genesis 36:2–4"
+  ],
+  "blurb": "Daughter of Elon the Hittite; mother of Eliphaz. Represents Esau’s integration with Hittite clans.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.adah.wife-of-esau.gene-36-2-4--de636647",
+  "canonical_id": "p.adah.gene-4-19-22--fc9e0f7f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "book": "Genesis",
+  "chapter": 6,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "p.noah.gene-5-32--6b1a74fb",
+      "name": "Noah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 5
+    }
+  ]
+}

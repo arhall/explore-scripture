@@ -1,0 +1,35 @@
+{
+  "book": "Judges",
+  "chapter": 1,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "p.caleb-son-of-jephunneh--2d6c16cf",
+      "name": "Caleb son of Jephunneh",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 4
+    },
+    {
+      "id": "p.achsah-daughter-of-caleb--b8ac6927",
+      "name": "Achsah daughter of Caleb",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2
+    },
+    {
+      "id": "p.othniel-son-of-kenaz--4ffdb645",
+      "name": "Othniel son of Kenaz",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2
+    },
+    {
+      "id": "g.tribe-of-judah.in-conquest-prologue--a012a44e",
+      "name": "Tribe of Judah (in conquest prologue)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Peter’s mother-in-law",
+  "type": "person",
+  "category": "healed",
+  "references": [
+    "Matt 8:14–15",
+    "Mark 1:29–31"
+  ],
+  "blurb": "Healing leads immediately to service—restored to vocation.",
+  "aka": [],
+  "id": "p.peter-s-mother-in-law--dc99a53f",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Mark",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      8
+    ],
+    "Mark": [
+      1
+    ]
+  }
+}

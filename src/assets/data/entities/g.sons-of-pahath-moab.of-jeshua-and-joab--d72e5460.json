@@ -1,0 +1,20 @@
+{
+  "name": "Sons of Pahath-Moab (of Jeshua and Joab)",
+  "type": "group",
+  "references": [
+    "Ezra 2:6"
+  ],
+  "blurb": "Enumerated among the first returnees under Zerubbabel; their counted men totaled 2812. Family identity stabilizes land claims and synagogue-era communities; numbers witness to costly obedience.",
+  "category": "record",
+  "count": 2812,
+  "count_note": "Count per Ezra 2:6",
+  "id": "g.sons-of-pahath-moab.of-jeshua-and-joab--d72e5460",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      2
+    ]
+  }
+}

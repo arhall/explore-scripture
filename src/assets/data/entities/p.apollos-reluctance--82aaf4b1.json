@@ -1,0 +1,21 @@
+{
+  "name": "Apollos’ reluctance",
+  "type": "person",
+  "category": "teacher",
+  "references": [
+    "1 Cor 16:12"
+  ],
+  "aka": [],
+  "id": "p.apollos-reluctance--82aaf4b1",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "1 Corinthians": [
+      16
+    ]
+  }
+}

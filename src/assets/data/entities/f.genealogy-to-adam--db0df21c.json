@@ -1,0 +1,24 @@
+{
+  "name": "Genealogy to Adam",
+  "type": "figure",
+  "aka": [],
+  "category": "genealogy",
+  "references": [
+    "Luke 3:23–38"
+  ],
+  "blurb": "Luke traces Jesus’ lineage to Adam, underscoring universal scope.",
+  "id": "f.genealogy-to-adam--db0df21c",
+  "source_book": "Luke",
+  "source_books": [
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Luke": [
+      3
+    ]
+  }
+}

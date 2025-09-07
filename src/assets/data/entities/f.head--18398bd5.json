@@ -1,0 +1,23 @@
+{
+  "name": "Head",
+  "type": "figure",
+  "category": "christology",
+  "references": [
+    "Col 1:18",
+    "Col 2:19"
+  ],
+  "aka": [],
+  "id": "f.head--18398bd5",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      1,
+      2
+    ]
+  }
+}

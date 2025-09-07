@@ -1,0 +1,77 @@
+{
+  "book": "Haggai",
+  "chapter": 1,
+  "entity_count": 31,
+  "entities": [
+    {
+      "id": "g.jerusalem--3453dc1c",
+      "name": "Jerusalem",
+      "type": "group",
+      "role": "city-people",
+      "refs_count": 4
+    },
+    {
+      "id": "p.haggai--2c135658",
+      "name": "Haggai",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 5
+    },
+    {
+      "id": "p.joshua-jeshua-son-of-jehozadak--692382b1",
+      "name": "Joshua (Jeshua) son of Jehozadak",
+      "type": "person",
+      "role": "high-priest",
+      "refs_count": 3
+    },
+    {
+      "id": "p.darius-i-persian-king--face83b7",
+      "name": "Darius I (Persian king)",
+      "type": "person",
+      "role": "monarch",
+      "refs_count": 5
+    },
+    {
+      "id": "p.elders-heads-of-fathers-houses--97dd92f8",
+      "name": "Elders/Heads of fathers’ houses",
+      "type": "person",
+      "role": "community-leadership",
+      "refs_count": 2
+    },
+    {
+      "id": "p.remnant-of-the-people--16e642e4",
+      "name": "Remnant of the people",
+      "type": "person",
+      "role": "returned-community",
+      "refs_count": 1
+    },
+    {
+      "id": "p.scribes-recorders--1980dd30",
+      "name": "Scribes/Recorders",
+      "type": "person",
+      "role": "administration",
+      "refs_count": 3
+    },
+    {
+      "id": "g.householders-with-paneled-houses--11aa1a43",
+      "name": "Householders with paneled houses",
+      "type": "group",
+      "role": "ethical-collective",
+      "refs_count": 1
+    },
+    {
+      "id": "g.workforce-with-stirred-spirit--1af5c8b0",
+      "name": "Workforce with stirred spirit",
+      "type": "group",
+      "role": "labor-force",
+      "refs_count": 1
+    },
+    {
+      "id": "g.heavens--14559d2e",
+      "name": "Heavens",
+      "type": "group",
+      "role": "cosmic-domain",
+      "refs_count": 1
+    }
+  ]
+}

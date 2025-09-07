@@ -1,0 +1,77 @@
+{
+  "book": "Philippians",
+  "chapter": 3,
+  "entity_count": 22,
+  "entities": [
+    {
+      "id": "f.credentials-of-israel--b3fc7e1a",
+      "name": "Credentials: Of Israel",
+      "type": "figure",
+      "role": "credential",
+      "refs_count": 1
+    },
+    {
+      "id": "f.righteousness-from-god-by-faith--37dfaac2",
+      "name": "Righteousness from God by faith",
+      "type": "figure",
+      "role": "justification",
+      "refs_count": 1
+    },
+    {
+      "id": "f.rejoice-in-the-lord--03ac3a93",
+      "name": "Rejoice in the Lord",
+      "type": "figure",
+      "role": "joy",
+      "refs_count": 1
+    },
+    {
+      "id": "g.beware-the-dogs-beware-the-mutilation--ea18f52e",
+      "name": "Beware the dogs; beware the mutilation",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1
+    },
+    {
+      "id": "f.imitate-me--7c3402a2",
+      "name": "Imitate me",
+      "type": "figure",
+      "role": "example",
+      "refs_count": 1
+    },
+    {
+      "id": "f.attain-to-the-resurrection--f1e1ffef",
+      "name": "Attain to the resurrection",
+      "type": "figure",
+      "role": "hope",
+      "refs_count": 1
+    },
+    {
+      "id": "f.fellowship-of-his-sufferings--bb0dd9d9",
+      "name": "Fellowship of his sufferings",
+      "type": "figure",
+      "role": "discipleship",
+      "refs_count": 1
+    },
+    {
+      "id": "g.enemies-of-the-cross-god-is-belly--6447803c",
+      "name": "Enemies of the cross; god is belly",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1
+    },
+    {
+      "id": "f.transform-the-body-of-humiliation--cae8b2af",
+      "name": "Transform the body of humiliation",
+      "type": "figure",
+      "role": "eschatology",
+      "refs_count": 1
+    },
+    {
+      "id": "f.credentials-circumcised-the-eighth-day--3af261c1",
+      "name": "Credentials: Circumcised The Eighth Day",
+      "type": "figure",
+      "role": "credential",
+      "refs_count": 1
+    }
+  ]
+}

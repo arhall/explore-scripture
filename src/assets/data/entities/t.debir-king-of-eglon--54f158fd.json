@@ -1,0 +1,18 @@
+{
+  "name": "Debir king of Eglon",
+  "type": "title",
+  "references": [
+    "Joshua 10:3"
+  ],
+  "blurb": "Coalition king defeated; not to be confused with the city Debir later captured.",
+  "category": "narrative",
+  "id": "t.debir-king-of-eglon--54f158fd",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joshua": [
+      10
+    ]
+  }
+}

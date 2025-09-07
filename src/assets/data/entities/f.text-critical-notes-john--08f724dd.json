@@ -1,0 +1,28 @@
+{
+  "name": "Text-critical notes (John)",
+  "type": "figure",
+  "category": "textual-notes",
+  "references": [
+    "John 5:4",
+    "John 7:53–8:11",
+    "John 21"
+  ],
+  "note": "5:4 interpolation; pericope adulterae; epilogue note.",
+  "aka": [],
+  "id": "f.text-critical-notes-john--08f724dd",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      5,
+      7,
+      21
+    ]
+  }
+}

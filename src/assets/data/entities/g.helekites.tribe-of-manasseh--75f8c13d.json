@@ -1,0 +1,18 @@
+{
+  "name": "Helekites (tribe of Manasseh)",
+  "type": "group",
+  "references": [
+    "Numbers 26"
+  ],
+  "blurb": "Clan of Manasseh counted in the second census.",
+  "category": "genealogy",
+  "id": "g.helekites.tribe-of-manasseh--75f8c13d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      26
+    ]
+  }
+}

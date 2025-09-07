@@ -1,0 +1,28 @@
+{
+  "name": "Household baptisms (index)",
+  "type": "figure",
+  "category": "index",
+  "references": [
+    "Acts 10:48",
+    "Acts 16:15",
+    "Acts 16:33",
+    "Acts 18:8"
+  ],
+  "aka": [],
+  "id": "f.household-baptisms-index--d19bd712",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      10,
+      16,
+      18
+    ]
+  }
+}

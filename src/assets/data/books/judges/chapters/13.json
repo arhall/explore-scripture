@@ -1,0 +1,42 @@
+{
+  "book": "Judges",
+  "chapter": 13,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "p.manoah.samsons-father--9154cacf",
+      "name": "Manoah (Samson’s father)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.samsons-mother.unnamed--37d69740",
+      "name": "Samson’s mother (unnamed)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "f.angel-of-the-lord.zorah--60438e53",
+      "name": "Angel of the LORD (Zorah)",
+      "type": "figure",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.samson--343c8a4f",
+      "name": "Samson",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2
+    },
+    {
+      "id": "g.philistines.lords-of-the-philistines--1007e8c9",
+      "name": "Philistines (lords of the Philistines)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

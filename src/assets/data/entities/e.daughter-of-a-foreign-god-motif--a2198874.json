@@ -1,0 +1,18 @@
+{
+  "id": "e.daughter-of-a-foreign-god-motif--a2198874",
+  "name": "Daughter of a foreign god (motif)",
+  "type": "entity",
+  "references": [
+    "Mal 2:11"
+  ],
+  "category": "syncretism",
+  "blurb": "Marriage that compromises covenant fidelity and communal holiness.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      2
+    ]
+  }
+}

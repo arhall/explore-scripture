@@ -1,0 +1,21 @@
+{
+  "name": "You, Lord, laid the foundation of the earth…",
+  "type": "figure",
+  "category": "ot-catena",
+  "references": [
+    "Heb 1:5-14"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Ps 102:25-27",
+      "type": "quote"
+    }
+  ],
+  "aka": [],
+  "id": "f.you-lord-laid-the-foundation-of-the-earth--ef536caf",
+  "book_references": {
+    "Hebrews": [
+      1
+    ]
+  }
+}

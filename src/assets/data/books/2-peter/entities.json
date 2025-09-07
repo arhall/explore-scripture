@@ -1,0 +1,1137 @@
+{
+  "book": "2 Peter",
+  "slug": "2-peter",
+  "entity_count": 121,
+  "key_figures": [
+    {
+      "id": "p.noah.gene-5-32--6b1a74fb",
+      "name": "Noah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.lot.gene-11-27-12-4-5--edc742c8",
+      "name": "Lot",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.balaam-son-of-beor--4e674f7d",
+      "name": "Balaam son of Beor",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.simon-peter-cephas--d58cce37",
+      "name": "Simon Peter (Cephas)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.our-beloved-brother-paul-also-wrote--8ccf6973",
+      "name": "our beloved brother Paul also wrote",
+      "type": "person",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.balaam-son-of-beor-loved-gain-for-wrongdoing--90f1c788",
+      "name": "Balaam son of Beor loved gain for wrongdoing",
+      "type": "person",
+      "role": "opponent-figure",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.eyes-full-of-adultery--b159fd17",
+      "name": "eyes full of adultery",
+      "type": "group",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.entice-with-sensual-passions-those-barely-escaping--01ed26ef",
+      "name": "entice with sensual passions those barely escaping",
+      "type": "group",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.many-follow-their-sensuality--e9f568ad",
+      "name": "many follow their sensuality",
+      "type": "group",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.false-teachers--78ca172c",
+      "name": "false teachers",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.hearts-trained-in-greed--bd353f15",
+      "name": "hearts trained in greed",
+      "type": "group",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.accursed-children--dae87a72",
+      "name": "accursed children",
+      "type": "group",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.scoffers-will-come-following-their-own-desires--746215c7",
+      "name": "scoffers will come following their own desires",
+      "type": "group",
+      "role": "opponent",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.bold-and-willful--b399c4f2",
+      "name": "bold and willful",
+      "type": "group",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.promise-them-freedom--52af527f",
+      "name": "promise them freedom",
+      "type": "group",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 3,
+      "score": 5
+    },
+    {
+      "id": "f.false-teacher-vice-index--5e27e673",
+      "name": "False-teacher vice index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 3,
+      "score": 5
+    },
+    {
+      "id": "f.virtue-chain-index--297a4580",
+      "name": "Virtue chain index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 3,
+      "score": 5
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "p.noah.gene-5-32--6b1a74fb",
+      "name": "Noah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.lot.gene-11-27-12-4-5--edc742c8",
+      "name": "Lot",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.balaam-son-of-beor--4e674f7d",
+      "name": "Balaam son of Beor",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.simon-peter-cephas--d58cce37",
+      "name": "Simon Peter (Cephas)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.our-beloved-brother-paul-also-wrote--8ccf6973",
+      "name": "our beloved brother Paul also wrote",
+      "type": "person",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.balaam-son-of-beor-loved-gain-for-wrongdoing--90f1c788",
+      "name": "Balaam son of Beor loved gain for wrongdoing",
+      "type": "person",
+      "role": "opponent-figure",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.eyes-full-of-adultery--b159fd17",
+      "name": "eyes full of adultery",
+      "type": "group",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.entice-with-sensual-passions-those-barely-escaping--01ed26ef",
+      "name": "entice with sensual passions those barely escaping",
+      "type": "group",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.many-follow-their-sensuality--e9f568ad",
+      "name": "many follow their sensuality",
+      "type": "group",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.false-teachers--78ca172c",
+      "name": "false teachers",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.hearts-trained-in-greed--bd353f15",
+      "name": "hearts trained in greed",
+      "type": "group",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.accursed-children--dae87a72",
+      "name": "accursed children",
+      "type": "group",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.scoffers-will-come-following-their-own-desires--746215c7",
+      "name": "scoffers will come following their own desires",
+      "type": "group",
+      "role": "opponent",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.bold-and-willful--b399c4f2",
+      "name": "bold and willful",
+      "type": "group",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.promise-them-freedom--52af527f",
+      "name": "promise them freedom",
+      "type": "group",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 3,
+      "score": 5
+    },
+    {
+      "id": "f.false-teacher-vice-index--5e27e673",
+      "name": "False-teacher vice index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 3,
+      "score": 5
+    },
+    {
+      "id": "f.virtue-chain-index--297a4580",
+      "name": "Virtue chain index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 3,
+      "score": 5
+    },
+    {
+      "id": "f.parallels-with-jude-index--2e8e9962",
+      "name": "Parallels with Jude index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 3,
+      "score": 5
+    },
+    {
+      "id": "f.day-of-the-lord-imagery-index--03a876b5",
+      "name": "Day-of-the-Lord imagery index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 3,
+      "score": 5
+    },
+    {
+      "id": "t.majestic-glory--f9b238ca",
+      "name": "Majestic Glory",
+      "type": "title",
+      "role": "theophany",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.prophetic-word-more-fully-confirmed--d404fa32",
+      "name": "prophetic word more fully confirmed",
+      "type": "title",
+      "role": "scripture",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "f.be-diligent-to-be-found-without-spot-or-blemish-and-at-peace--643e9dc5",
+      "name": "be diligent to be found without spot or blemish and at peace",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.angels-greater-in-might-do-not-bring-reviling-judgment--dd01ed47",
+      "name": "angels greater in might do not bring reviling judgment",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.day-of-the-lord-like-a-thief--aa284dde",
+      "name": "Day of the Lord like a thief",
+      "type": "figure",
+      "role": "parousia",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-1-1-simeon-simon-variant--3ce07b97",
+      "name": "Textual note: 1:1 Simeon/Simon variant",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.remember-predictions-of-the-holy-prophets--409e1fcf",
+      "name": "remember predictions of the holy prophets",
+      "type": "figure",
+      "role": "tradition",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.indulge-in-the-lust-of-defiling-passion--b5e7da5e",
+      "name": "indulge in the lust of defiling passion",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.the-lord-is-patient-not-wishing-any-to-perish--93281429",
+      "name": "the Lord is patient not wishing any to perish",
+      "type": "figure",
+      "role": "parousia",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.precious-and-very-great-promises--9fe8847a",
+      "name": "precious and very great promises",
+      "type": "figure",
+      "role": "promise",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.no-prophecy-of-scripture-comes-from-someone-s-own-interpretation--0cbbe3cd",
+      "name": "no prophecy of Scripture comes from someone’s own interpretation",
+      "type": "figure",
+      "role": "scripture",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.count-the-patience-as-salvation--e522fb36",
+      "name": "count the patience as salvation",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.earth-formed-out-of-water-and-through-water--85ff65a2",
+      "name": "earth formed out of water and through water",
+      "type": "figure",
+      "role": "opponent",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.virtue-knowledge--aa527238",
+      "name": "Virtue: knowledge",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.blaspheme-the-glorious-ones--badd66e9",
+      "name": "blaspheme the glorious ones",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.earth-and-works-found-exposed--c169d785",
+      "name": "earth and works found/exposed",
+      "type": "figure",
+      "role": "parousia",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.uttering-loud-boasts-of-folly--97308a15",
+      "name": "uttering loud boasts of folly",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.forsaking-the-right-way--b66cb59b",
+      "name": "forsaking the right way",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.god-did-not-spare-angels-who-sinned--8d5b84f0",
+      "name": "God did not spare angels who sinned",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.like-precious-faith--cee7a57a",
+      "name": "like-precious faith",
+      "type": "figure",
+      "role": "salvation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.what-sort-of-people-ought-you-to-be-in-lives-of-holiness-and-godliness--fc1599e8",
+      "name": "what sort of people ought you to be in lives of holiness and godliness",
+      "type": "figure",
+      "role": "parousia",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.do-not-overlook-this-one-fact--55fe9927",
+      "name": "do not overlook this one fact",
+      "type": "figure",
+      "role": "parousia",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.in-greed-exploit-with-fabricated-stories--1181f1e6",
+      "name": "in greed exploit with fabricated stories",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.lot-greatly-distressed--15123cce",
+      "name": "Lot greatly distressed",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.blots-and-blemishes--70e797ca",
+      "name": "blots and blemishes",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.secretly-bring-in-destructive-heresies--bad41035",
+      "name": "secretly bring in destructive heresies",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.denying-the-master-who-bought-them--2d36be3b",
+      "name": "denying the Master who bought them",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.until-the-day-dawns-and-morning-star-rises-in-your-hearts--68a7ac14",
+      "name": "until the day dawns and morning star rises in your hearts",
+      "type": "figure",
+      "role": "reminder",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.virtue-brotherly-affection-philadelphia--cd23acff",
+      "name": "Virtue: brotherly affection (philadelphia)",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.do-not-lose-your-stability--11a9ef3e",
+      "name": "do not lose your stability",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sodom-and-gomorrah-reduced-to-ashes--2e194941",
+      "name": "Sodom and Gomorrah reduced to ashes",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.heavens-pass-away-with-a-roar--f8f8ec96",
+      "name": "heavens pass away with a roar",
+      "type": "figure",
+      "role": "parousia",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.grow-in-the-grace-and-knowledge-of-our-lord-and-savior-jesus-christ--1f8cde16",
+      "name": "grow in the grace and knowledge of our Lord and Savior Jesus Christ",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.commandment-of-the-lord-and-savior-through-your-apostles--0556fec6",
+      "name": "commandment of the Lord and Savior through your apostles",
+      "type": "figure",
+      "role": "tradition",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.virtue-virtue-arete--646b4311",
+      "name": "Virtue: virtue (arete)",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.last-state-worse-than-the-first--ae8bc6cc",
+      "name": "last state worse than the first",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.like-irrational-animals--51c4c959",
+      "name": "like irrational animals",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.insatiable-for-sin--afe98aa0",
+      "name": "insatiable for sin",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.washed-sow-returns-to-wallow--cb7d6833",
+      "name": "washed sow returns to wallow",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.divine-power-grants-all-things--417017b0",
+      "name": "divine power grants all things",
+      "type": "figure",
+      "role": "gift",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.remind-you-always-though-you-know-these-things--b4872181",
+      "name": "remind you always though you know these things",
+      "type": "figure",
+      "role": "reminder",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-3-10-will-be-found-exposed-variant--f52974bc",
+      "name": "Textual note: 3:10 ‘will be found/exposed’ variant",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.escape-corruption-due-to-desire--0f7fd0df",
+      "name": "escape corruption due to desire",
+      "type": "figure",
+      "role": "sanctification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.escaped-the-defilements-through-knowledge-but-entangled-again--04242408",
+      "name": "escaped the defilements through knowledge but entangled again",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.virtue-steadfastness-hypomone--ca5b7bf2",
+      "name": "Virtue: steadfastness (hypomone)",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.after-my-departure-you-may-recall-these-things--c26ee1a9",
+      "name": "after my departure you may recall these things",
+      "type": "figure",
+      "role": "reminder",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.lamp-shining-in-a-dark-place--18b26d96",
+      "name": "lamp shining in a dark place",
+      "type": "figure",
+      "role": "reminder",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.virtue-love-agape--226604f6",
+      "name": "Virtue: love (agape)",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.be-all-the-more-diligent--03a21c5a",
+      "name": "be all the more diligent",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.slaves-of-whatever-overcomes-them--4872b5f6",
+      "name": "slaves of whatever overcomes them",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.feasting-with-you--84e02693",
+      "name": "feasting with you",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.soon-i-must-put-off-my-tent--2951f585",
+      "name": "soon I must put off my tent",
+      "type": "figure",
+      "role": "reminder",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.noah-herald-of-righteousness--ae491336",
+      "name": "Noah, herald of righteousness",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.ignorant-and-unstable-twist-the-scriptures-to-their-destruction--d39765ce",
+      "name": "ignorant and unstable twist the Scriptures to their destruction",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.transfiguration-on-the-holy-mountain--cbb92b1c",
+      "name": "Transfiguration on the holy mountain",
+      "type": "figure",
+      "role": "reminder",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.the-lord-knows-how-to-rescue-the-godly--c9a8d1fe",
+      "name": "the Lord knows how to rescue the godly",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.heavens-existed-long-ago-by-the-word-of-god--06ba7b8e",
+      "name": "heavens existed long ago by the word of God",
+      "type": "figure",
+      "role": "eschatology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.we-were-eyewitnesses-of-his-majesty--935e0336",
+      "name": "we were eyewitnesses of his majesty",
+      "type": "figure",
+      "role": "reminder",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.world-deluged-with-water-and-perished--eaab6d30",
+      "name": "world deluged with water and perished",
+      "type": "figure",
+      "role": "opponent",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.virtue-self-control-enkrateia--b2aff45d",
+      "name": "Virtue: self-control (enkrateia)",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.you-will-never-fall--ba3e130f",
+      "name": "you will never fall",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.make-calling-and-election-sure--dd975e2f",
+      "name": "make calling and election sure",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.partakers-of-the-divine-nature--f5a18025",
+      "name": "partakers of the divine nature",
+      "type": "figure",
+      "role": "participation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.they-keep-you-from-being-ineffective-or-unfruitful--4aa8bf13",
+      "name": "they keep you from being ineffective or unfruitful",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.they-deliberately-overlook--2d89e723",
+      "name": "they deliberately overlook",
+      "type": "figure",
+      "role": "opponent",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.some-things-in-them-hard-to-understand--84bf2c33",
+      "name": "some things in them hard to understand",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.dog-returns-to-its-vomit--bf556050",
+      "name": "dog returns to its vomit",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.men-carried-by-the-holy-spirit--45bf53dd",
+      "name": "men carried by the Holy Spirit",
+      "type": "figure",
+      "role": "scripture",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.virtue-godliness-eusebeia--f964bea3",
+      "name": "Virtue: godliness (eusebeia)",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.virtue-faith--1cd93295",
+      "name": "Virtue: faith",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.richly-provided-entrance-into-the-eternal-kingdom--0a6751bc",
+      "name": "richly provided entrance into the eternal kingdom",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.grace-and-knowledge-be-multiplied--2db3ecb1",
+      "name": "grace and knowledge be multiplied",
+      "type": "figure",
+      "role": "blessing",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.because-of-which-the-heavens-will-be-set-on-fire-and-dissolved--53192fe1",
+      "name": "because of which the heavens will be set on fire and dissolved",
+      "type": "figure",
+      "role": "parousia",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.heavenly-bodies-melt-as-they-burn--ad0801d0",
+      "name": "heavenly bodies melt as they burn",
+      "type": "figure",
+      "role": "parousia",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.if-these-qualities-are-yours-and-increasing--843c4e07",
+      "name": "if these qualities are yours and increasing",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.this-is-my-beloved-son--5d6aeb6a",
+      "name": "This is my beloved Son",
+      "type": "figure",
+      "role": "reminder",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.who-lacks-these-qualities-is-blind-and-short-sighted--7e0ab2ab",
+      "name": "who lacks these qualities is blind and short-sighted",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.the-lord-is-not-slow-as-some-count-slowness--012927ab",
+      "name": "the Lord is not slow as some count slowness",
+      "type": "figure",
+      "role": "parousia",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.stir-you-up-by-way-of-reminder--94c0f98d",
+      "name": "stir you up by way of reminder",
+      "type": "figure",
+      "role": "reminder",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.voice-borne-from-the-majestic-glory--29cbc2c8",
+      "name": "voice borne from the Majestic Glory",
+      "type": "figure",
+      "role": "reminder",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.according-to-promise-we-are-waiting-for-new-heavens-and-a-new-earth-where-righteousness-dwells--473cd364",
+      "name": "according to promise we are waiting for new heavens and a new earth where righteousness dwells",
+      "type": "figure",
+      "role": "parousia",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.donkey-speaking-with-human-voice-restrained-the-prophet-s-madness--ca195c70",
+      "name": "donkey speaking with human voice restrained the prophet’s madness",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.by-the-same-word-the-heavens-and-earth-stored-up-for-fire--cb185e4b",
+      "name": "by the same word the heavens and earth stored up for fire",
+      "type": "figure",
+      "role": "eschatology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.their-condemnation-is-not-idle--c1c704a0",
+      "name": "their condemnation is not idle",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.revel-in-their-deceptions--adf3b26b",
+      "name": "revel in their deceptions",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.heavenly-bodies-burned-up-and-dissolved--487b6389",
+      "name": "heavenly bodies burned up and dissolved",
+      "type": "figure",
+      "role": "parousia",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.one-day-as-a-thousand-years--ab0f7840",
+      "name": "one day as a thousand years",
+      "type": "figure",
+      "role": "parousia",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.waiting-for-and-hastening-the-coming-of-the-day-of-god--354dc9dd",
+      "name": "waiting for and hastening the coming of the day of God",
+      "type": "figure",
+      "role": "parousia",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.they-say-where-is-the-promise-of-his-coming--53262a3c",
+      "name": "they say Where is the promise of his coming",
+      "type": "figure",
+      "role": "eschatology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.way-of-truth-blasphemed--8786fb73",
+      "name": "way of truth blasphemed",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.and-to-keep-the-unrighteous-for-judgment--ee9aa343",
+      "name": "and to keep the unrighteous for judgment",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.despise-authority--f131ee95",
+      "name": "despise authority",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.having-forgotten-the-cleansing-from-former-sins--61487fce",
+      "name": "having forgotten the cleansing from former sins",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.take-care-not-to-be-carried-away-by-the-error-of-lawless-people--1400a1b3",
+      "name": "take care not to be carried away by the error of lawless people",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.holy-mountain--3d4ce1c7",
+      "name": "Holy Mountain",
+      "type": "entity",
+      "role": "sacred-geo",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.tartarus-motif--6b9d1340",
+      "name": "Tartarus motif",
+      "type": "entity",
+      "role": "image",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.waterless-springs--65802b30",
+      "name": "waterless springs",
+      "type": "entity",
+      "role": "image",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.gloom-of-darkness-reserved--076bb818",
+      "name": "gloom of darkness reserved",
+      "type": "entity",
+      "role": "image",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.mists-driven-by-storm--cfc31a7f",
+      "name": "mists driven by storm",
+      "type": "entity",
+      "role": "image",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

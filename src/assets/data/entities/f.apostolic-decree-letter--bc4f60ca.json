@@ -1,0 +1,24 @@
+{
+  "name": "Apostolic decree (letter)",
+  "type": "figure",
+  "category": "letter",
+  "references": [
+    "Acts 15:23–29"
+  ],
+  "blurb": "Four prohibitions: idol food, blood, things strangled, sexual immorality.",
+  "aka": [],
+  "id": "f.apostolic-decree-letter--bc4f60ca",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      15
+    ]
+  }
+}

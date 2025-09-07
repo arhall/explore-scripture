@@ -1,0 +1,21 @@
+{
+  "name": "Doxology: abundantly beyond all",
+  "type": "figure",
+  "category": "doxology",
+  "references": [
+    "Eph 3:20–21"
+  ],
+  "aka": [],
+  "id": "f.doxology-abundantly-beyond-all--09d4bd66",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      3
+    ]
+  }
+}

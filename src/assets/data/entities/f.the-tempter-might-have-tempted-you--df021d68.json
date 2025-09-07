@@ -1,0 +1,19 @@
+{
+  "name": "The Tempter might have tempted you",
+  "type": "figure",
+  "category": "adversary",
+  "references": [
+    "1 Thess 3:5"
+  ],
+  "aka": [
+    "the devil",
+    "Satan",
+    "the Tempter"
+  ],
+  "id": "f.the-tempter-might-have-tempted-you--df021d68",
+  "book_references": {
+    "1 Thessalonians": [
+      3
+    ]
+  }
+}

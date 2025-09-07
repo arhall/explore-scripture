@@ -1,0 +1,18 @@
+{
+  "id": "e.idol--30f13668",
+  "name": "Idol",
+  "type": "entity",
+  "references": [
+    "Hab 2:18-19"
+  ],
+  "category": "cult-object",
+  "blurb": "Crafted god incapable of speech; indicts human attempts to control the divine.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      2
+    ]
+  }
+}

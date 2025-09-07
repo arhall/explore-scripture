@@ -1,0 +1,77 @@
+{
+  "book": "Hebrews",
+  "chapter": 2,
+  "entity_count": 21,
+  "entities": [
+    {
+      "id": "g.angels--b473a1d0",
+      "name": "Angels",
+      "type": "group",
+      "role": "heavenly-host",
+      "refs_count": 5
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "f.subjecting-the-world-to-come--cc405c4e",
+      "name": "subjecting the world to come",
+      "type": "figure",
+      "role": "eschatology",
+      "refs_count": 1
+    },
+    {
+      "id": "f.gifts-of-the-holy-spirit--22a24f8d",
+      "name": "gifts of the Holy Spirit",
+      "type": "figure",
+      "role": "charisms",
+      "refs_count": 1
+    },
+    {
+      "id": "g.those-who-neglect-so-great-a-salvation--9ec0c6a6",
+      "name": "those who neglect so great a salvation",
+      "type": "group",
+      "role": "warning",
+      "refs_count": 1
+    },
+    {
+      "id": "f.destroy-the-devil--70044d72",
+      "name": "destroy the devil",
+      "type": "figure",
+      "role": "victory",
+      "refs_count": 1
+    },
+    {
+      "id": "f.psalm-8-exposition--e8f87b3c",
+      "name": "Psalm 8 exposition",
+      "type": "figure",
+      "role": "exegesis",
+      "refs_count": 1
+    },
+    {
+      "id": "t.pioneer-author-archegos-of-salvation--363a6ec4",
+      "name": "Pioneer/Author (archegos) of salvation",
+      "type": "title",
+      "role": "soteriology",
+      "refs_count": 1
+    },
+    {
+      "id": "f.deliver-from-fear-of-death--aceac654",
+      "name": "deliver from fear of death",
+      "type": "figure",
+      "role": "liberation",
+      "refs_count": 1
+    }
+  ]
+}

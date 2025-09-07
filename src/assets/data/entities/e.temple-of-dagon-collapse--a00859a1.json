@@ -1,0 +1,18 @@
+{
+  "name": "Temple of Dagon collapse",
+  "type": "entity",
+  "references": [
+    "Judges 16:23–31"
+  ],
+  "blurb": "Final act where a blinded Samson brings down the house—YHWH vindicates His name over Dagon in paradoxical victory.",
+  "category": "sign",
+  "id": "e.temple-of-dagon-collapse--a00859a1",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      16
+    ]
+  }
+}

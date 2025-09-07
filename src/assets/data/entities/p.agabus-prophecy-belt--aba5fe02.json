@@ -1,0 +1,23 @@
+{
+  "name": "Agabus prophecy (belt)",
+  "type": "person",
+  "category": "prophet",
+  "references": [
+    "Acts 21:10–11"
+  ],
+  "aka": [],
+  "id": "p.agabus-prophecy-belt--aba5fe02",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      21
+    ]
+  }
+}

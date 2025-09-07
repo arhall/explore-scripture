@@ -1,0 +1,18 @@
+{
+  "name": "Eliashib’s chamber for Tobiah (expelled)",
+  "type": "entity",
+  "references": [
+    "Nehemiah 13:4–9"
+  ],
+  "blurb": "Compromise in the temple; Nehemiah clears out Tobiah’s goods—holy space reclaimed.",
+  "category": "ethics",
+  "id": "e.eliashibs-chamber-for-tobiah.expelled--91ea1166",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      13
+    ]
+  }
+}

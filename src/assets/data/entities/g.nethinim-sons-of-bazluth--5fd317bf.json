@@ -1,0 +1,19 @@
+{
+  "name": "Nethinim: sons of Bazluth",
+  "type": "group",
+  "references": [
+    "Ezra 2:43–54"
+  ],
+  "blurb": "Temple servants assigned to Levites (traditionally linked to Gibeonites). Individual family totals not listed in Ezra; included in the combined 392 with Solomon’s servants.",
+  "category": "worship",
+  "count_note": "Included within combined total of 392 at Ezra 2:58",
+  "id": "g.nethinim-sons-of-bazluth--5fd317bf",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      2
+    ]
+  }
+}

@@ -1,0 +1,734 @@
+{
+  "book": "Nahum",
+  "coverage": "Nahum delivers a concentrated taunt-and-woe oracle announcing YHWH’s judgment on Nineveh/Assyria as a divine warrior who storms, floods, and burns the predatory empire. The book contrasts Jonah’s reprieve with final ruin, frames justice as comfort for Judah/Zion, and deploys dense metaphor (lions, harlot, locusts) within a liturgical theophany and possible acrostic hymn (1:2–8). Historically situated around the fall of Nineveh (612 BCE) with Babylonian and Median forces, the book functions canonically as a paradigm of God’s retributive justice and refuge for the oppressed, echoed in later apocalyptic idioms.",
+  "generated_at": "2025-09-03T14:00:00Z",
+  "version": "v1.0-nahum-all-expanded",
+  "id_scheme": "Cross-book stable by (type+primary-slug) + deterministic hash; alias reuse for shared entities.",
+  "sections": [
+    { "section": "People & Offices", "entries": ["Nahum of Elkosh", "Assyrian kings (lion line)", "Babylonian commanders", "Median commanders", "Judah’s leaders", "Nineveh’s courtiers", "Prophetic heralds"] },
+    { "section": "Groups & Nations", "entries": ["Assyria", "Nineveh", "Judah", "Israel", "Nations", "Babylonians", "Medes", "Merchants of Nineveh", "Soldiers/Guards of Nineveh", "Refugees/Survivors"] },
+    { "section": "Divine", "entries": ["YHWH (the LORD)"] },
+    { "section": "Figures (Personifications & Literary)", "entries": ["Daughter Nineveh", "Daughter Zion", "The Harlot City", "The Lion’s Den", "The Breaker (divine warrior idiom)", "Flood/Overflowing torrent", "Fire/Consuming flame", "Earthquake/Whirlwind/Storm", "Locust/Grasshopper swarm", "Taunt Song", "Woe Oracle", "Acrostic Hymn (Nah 1)"] },
+    { "section": "Entities (Places, Objects, Motifs, Rituals)", "entries": ["Nineveh’s walls", "Nineveh’s gates", "River gates", "Temple(s) of Assyria", "Idols of Nineveh", "Chariots like torches", "Siege ramps", "Plunder/Treasure", "Bloodshed", "Shame/Exposure motif", "Hooks and yokes", "Refuge/Stronghold", "Good news to Zion", "Festivals & vows (Judah)", "Yoke broken", "Scatterer at the gates", "Watchmen/Heralds", "Fortress/Stronghold images", "Desertion/Panic", "Sleep of the shepherds"] }
+  ],
+  "entries_count": 68,
+  "entries": [
+    {
+      "id": "p.nahum-of-elkosh--3b18a2d1",
+      "name": "Nahum of Elkosh",
+      "type": "person",
+      "references": ["Nah 1:1"],
+      "category": "prophet",
+      "aka": ["Nahum"],
+      "relations": { "hometown": "Elkosh (debated location)" },
+      "cross_references": ["Jonah 1–4 (contrast mercy/judgment)", "2 Kgs 19; Isa 36–37 (Assyria crisis background)"],
+      "place": "Elkosh (uncertain; proposals include Judah or Galilee)",
+      "blurb": "The eponymous prophet whose oracle concentrates on Nineveh’s downfall. His name (“comfort”) frames judgment as consolation for Judah. Literary voice alternates between hymn (1:2–8), divine decree, and taunt/woe over tyrannical Assyria."
+    },
+    {
+      "id": "d.yhwh-the-lord--2a9e6cb4",
+      "name": "YHWH (the LORD)",
+      "type": "divine",
+      "references": ["Nah 1:2–8; 1:12–15; 2:2; 3:5"],
+      "category": "divine-warrior",
+      "aka": ["the LORD"],
+      "cross_references": ["Exod 34:6–7", "Ps 18; 29", "Isa 10; 37", "Hab 3", "Rev 18–19"],
+      "blurb": "Covenant LORD revealed as avenger and refuge: slow to anger yet great in power. Appears in theophanic storm/flood, opposing Assyria’s pride while sheltering those who take refuge in him."
+    },
+    {
+      "id": "g.assyria--8b7f1c10",
+      "name": "Assyria",
+      "type": "group",
+      "references": ["Nah 2:11–13; 3:1–7, 18–19"],
+      "category": "nation",
+      "aka": [],
+      "cross_references": ["2 Kgs 17–19", "Isa 10; 36–37", "Mic 5:5–6"],
+      "place": "Northern Mesopotamia (capital: Nineveh)",
+      "blurb": "Imperial power depicted as predatory lions and a harlot city. Once an instrument of judgment, it becomes the judged, emblematic of tyrants brought low by divine justice."
+    },
+    {
+      "id": "e.nineveh--f4b91a37",
+      "name": "Nineveh",
+      "type": "entity",
+      "references": ["Nah 1:1; 2:8–10; 3:1–19"],
+      "category": "city",
+      "aka": [],
+      "place": "Capital of Assyria on the Tigris",
+      "cross_references": ["Jonah 1–4", "Gen 10:11–12"],
+      "blurb": "Focus of Nahum’s oracle. Once repentant in Jonah, now portrayed as blood-soaked, deceitful, and doomed. Its walls, gates, idols, and treasures are plundered; shame replaces glory."
+    },
+    {
+      "id": "g.judah--1f7d2a4c",
+      "name": "Judah",
+      "type": "group",
+      "references": ["Nah 1:12–15"],
+      "category": "people-of-god",
+      "aka": [],
+      "cross_references": ["Ps 46", "Isa 40–55"],
+      "place": "Southern Kingdom centered on Jerusalem/Zion",
+      "blurb": "Recipient of good news: festivals and vows restored; Assyria’s yoke broken. Nahum frames judgment on Nineveh as pastoral comfort for Judah."
+    },
+    {
+      "id": "g.israel--a6f0ce51",
+      "name": "Israel",
+      "type": "group",
+      "references": ["Nah 2:2"],
+      "category": "people-of-god",
+      "aka": [],
+      "cross_references": ["2 Kgs 17", "Jer 31"],
+      "place": "Covenant people (northern tribes, broader identity)",
+      "blurb": "Mentioned in restoration language (2:2). The oracle resonates beyond Judah to the wider covenant identity."
+    },
+    {
+      "id": "g.nations--0f6f9c22",
+      "name": "Nations",
+      "type": "group",
+      "references": ["Nah 3:19"],
+      "category": "audience",
+      "aka": ["Peoples"],
+      "blurb": "International witnesses who clap at Nineveh’s fall. The scope underscores public, exemplary justice."
+    },
+    {
+      "id": "g.babylonians--b4c39f0e",
+      "name": "Babylonians",
+      "type": "group",
+      "references": [],
+      "category": "nation",
+      "aka": ["Chaldeans"],
+      "cross_references": ["Jer 50–51", "2 Kgs 24–25", "Hab 1–2"],
+      "blurb": "Historical agent in Nineveh’s fall (612 BCE) alongside the Medes. Not named in Nahum but essential context for the oracle’s fulfillment."
+    },
+    {
+      "id": "g.medes--6a72b3c8",
+      "name": "Medes",
+      "type": "group",
+      "references": [],
+      "category": "nation",
+      "aka": [],
+      "cross_references": ["Isa 13:17", "Jer 51:11, 28"],
+      "blurb": "Allied with Babylon in the historical destruction of Nineveh; part of the geopolitical backdrop of Nahum’s prophecy."
+    },
+    {
+      "id": "e.zion--4bd3e8e2",
+      "name": "Zion",
+      "type": "entity",
+      "references": ["Nah 1:15"],
+      "category": "holy-mount",
+      "aka": [],
+      "place": "Jerusalem’s sacred hill",
+      "cross_references": ["Ps 48; 87", "Isa 2; 52:7"],
+      "blurb": "Site of the ‘good news’ announcement: festivals resumed, vows kept, feet of the herald on the mountains."
+    },
+    {
+      "id": "e.jerusalem--d3a5bc90",
+      "name": "Jerusalem",
+      "type": "entity",
+      "references": ["Nah 1:15 (implication via Zion)"],
+      "category": "city",
+      "aka": [],
+      "place": "Capital of Judah",
+      "cross_references": ["Mic 4–5", "Isa 52:7"],
+      "blurb": "The communal center of worship restored as Assyria’s threat is removed."
+    },
+    {
+      "id": "f.daughter-nineveh--7b2cae91",
+      "name": "Daughter Nineveh",
+      "type": "figure",
+      "references": ["Nah 3:5–7"],
+      "category": "personified-city",
+      "aka": ["Nineveh personified"],
+      "blurb": "Nineveh depicted as a woman exposed and shamed—an image of judgment fitting her predatory seductions and violence."
+    },
+    {
+      "id": "f.daughter-zion--f1f0c6a3",
+      "name": "Daughter Zion",
+      "type": "figure",
+      "references": ["Nah 1:15"],
+      "category": "personified-city",
+      "aka": ["Zion personified"],
+      "blurb": "The rejoicing community hearing ‘good news’ of liberation when Assyria’s yoke is broken."
+    },
+    {
+      "id": "f.the-harlot-city--c8d2f6a9",
+      "name": "The Harlot City",
+      "type": "figure",
+      "references": ["Nah 3:4–7"],
+      "category": "personification",
+      "aka": ["Prostitute Nineveh"],
+      "cross_references": ["Isa 23; 47", "Rev 17–18"],
+      "blurb": "Nineveh as a seductive yet violent courtesan whose sorceries and betrayals are exposed."
+    },
+    {
+      "id": "f.the-lions-den--e5a1b3d2",
+      "name": "The Lion’s Den",
+      "type": "figure",
+      "references": ["Nah 2:11–13"],
+      "category": "predator-imagery",
+      "aka": ["Assyrian lion imagery"],
+      "blurb": "Assyrian kings and elites likened to lions who preyed on nations; their den is burned and emptied by divine decree."
+    },
+    {
+      "id": "f.locust-swarm--9b7e2c11",
+      "name": "Locust/Grasshopper Swarm",
+      "type": "figure",
+      "references": ["Nah 3:15–17"],
+      "category": "army-imagery",
+      "aka": ["Locusts", "Grasshoppers"],
+      "cross_references": ["Joel 1–2"],
+      "blurb": "Nineveh’s merchants and soldiers multiply like locusts yet flee when the sun rises; their strength proves transient."
+    },
+    {
+      "id": "f.flood-overflowing-torrent--a1c0e4b3",
+      "name": "Flood/Overflowing torrent",
+      "type": "figure",
+      "references": ["Nah 1:8; 2:6"],
+      "category": "theophany",
+      "aka": ["Torrent", "Overflowing flood"],
+      "blurb": "A weapon of YHWH’s judgment; river gates open, undermining Nineveh’s defenses. Evokes exodus and creation-chaos motifs."
+    },
+    {
+      "id": "f.fire-consuming-flame--4e2a7f95",
+      "name": "Fire/Consuming flame",
+      "type": "figure",
+      "references": ["Nah 2:13; 3:13, 15"],
+      "category": "theophany",
+      "aka": ["Flame"],
+      "blurb": "Burns the lion’s lair and devours defenses; paired with sword imagery for total desolation."
+    },
+    {
+      "id": "f.earthquake-whirlwind-storm--d0b1f7c4",
+      "name": "Earthquake/Whirlwind/Storm",
+      "type": "figure",
+      "references": ["Nah 1:3–6"],
+      "category": "theophany",
+      "aka": ["Storm", "Whirlwind", "Quake"],
+      "blurb": "Creation convulses at YHWH’s approach; mountains quake, rocks shatter—cosmic-scale sovereignty over history."
+    },
+    {
+      "id": "t.taunt-song--6f0d9a3b",
+      "name": "Taunt Song",
+      "type": "title",
+      "references": ["Nah 2:11–13; 3:8–19"],
+      "category": "literary-form",
+      "aka": ["Mocking dirge"],
+      "cross_references": ["Isa 14"],
+      "blurb": "Mocking lament over a toppled tyrant, reversing imperial boasts into shame. Central to Nahum’s rhetoric."
+    },
+    {
+      "id": "t.woe-oracle--e7a0d4f2",
+      "name": "Woe Oracle",
+      "type": "title",
+      "references": ["Nah 3:1"],
+      "category": "literary-form",
+      "aka": ["Hoy oracle"],
+      "blurb": "Prophetic ‘woe’ formula indicting Nineveh’s bloodguilt, lies, and plunder."
+    },
+    {
+      "id": "t.acrostic-hymn--b6e3c5a0",
+      "name": "Acrostic Hymn (Nahum 1)",
+      "type": "title",
+      "references": ["Nah 1:2–8"],
+      "category": "poetic-structure",
+      "aka": ["Alphabetic hymn (partial)"],
+      "blurb": "Scholars detect alphabetic sequencing in 1:2–8, a hymn extolling God’s justice and refuge; establishes the theological key for the book."
+    },
+    {
+      "id": "e.ninevehs-walls--c1a6e0b4",
+      "name": "Nineveh’s walls",
+      "type": "entity",
+      "references": ["Nah 3:8, 12–13"],
+      "category": "fortification",
+      "aka": [],
+      "blurb": "Monumental defenses imagined as ripe figs; they collapse when shaken, signaling the end of Assyrian security."
+    },
+    {
+      "id": "e.ninevehs-gates--5a3bd1e7",
+      "name": "Nineveh’s gates",
+      "type": "entity",
+      "references": ["Nah 2:6; 3:13"],
+      "category": "fortification",
+      "aka": [],
+      "blurb": "‘River gates’ open; the city’s entry points fail, exposing it to invasion and flood."
+    },
+    {
+      "id": "e.river-gates--a7c9e2d0",
+      "name": "River gates",
+      "type": "entity",
+      "references": ["Nah 2:6"],
+      "category": "hydraulic-defense",
+      "aka": [],
+      "blurb": "Engineering tied to the Khosr/Tigris; when breached, they become conduits of judgment rather than protection."
+    },
+    {
+      "id": "e.chariots-like-torches--93f5a6c1",
+      "name": "Chariots like torches",
+      "type": "entity",
+      "references": ["Nah 2:3–4"],
+      "category": "military",
+      "aka": ["Flashing chariots"],
+      "blurb": "Vivid battle scene: chariots flashing, racing through streets; either Assyrian defenders or attackers—either way, chaos and doom."
+    },
+    {
+      "id": "e.siege-ramps--e9a1c4b7",
+      "name": "Siege ramps",
+      "type": "entity",
+      "references": ["Nah 2:5"],
+      "category": "military",
+      "aka": ["Mantelets, battering works"],
+      "blurb": "Assault infrastructure signals relentless pressure against Nineveh’s walls."
+    },
+    {
+      "id": "e.idols-of-nineveh--7e0f1a9b",
+      "name": "Idols of Nineveh",
+      "type": "entity",
+      "references": ["Nah 1:14"],
+      "category": "cultic",
+      "aka": ["Images", "Graven idols"],
+      "blurb": "YHWH decrees their desecration—religious collapse accompanies political ruin."
+    },
+    {
+      "id": "e.temples-of-assyria--2c9b4e01",
+      "name": "Temple(s) of Assyria",
+      "type": "entity",
+      "references": ["Nah 1:14"],
+      "category": "cultic",
+      "aka": [],
+      "blurb": "Cult centers implicated in imperial violence; their names are cut off."
+    },
+    {
+      "id": "e.plunder-and-treasure--f0a4b3c2",
+      "name": "Plunder/Treasure",
+      "type": "entity",
+      "references": ["Nah 2:9–10"],
+      "category": "economic",
+      "aka": ["Spoil", "Silver and gold"],
+      "blurb": "The wealth amassed by predation becomes prey for invaders; heart-melting despair replaces luxury."
+    },
+    {
+      "id": "e.bloodshed--14b7a0e6",
+      "name": "Bloodshed",
+      "type": "entity",
+      "references": ["Nah 3:1"],
+      "category": "indictment",
+      "aka": ["City of blood"],
+      "blurb": "Core charge: Nineveh is built on violence; prophetic justice targets structural bloodguilt."
+    },
+    {
+      "id": "e.shame-exposure--ad9c1e40",
+      "name": "Shame/Exposure motif",
+      "type": "entity",
+      "references": ["Nah 3:5–7"],
+      "category": "judgment-imagery",
+      "aka": ["Exposure", "Filth-casting"],
+      "blurb": "Honor-shame reversal: the tyrant is publicly humiliated; no healer, no comforter remains."
+    },
+    {
+      "id": "e.hooks-and-yokes--b3e6f51a",
+      "name": "Hooks and yokes",
+      "type": "entity",
+      "references": ["Nah 1:13; 3:10"],
+      "category": "oppression-tools",
+      "aka": ["Nose-rings", "Yokes"],
+      "blurb": "Symbols of deportation and bondage; Judah’s yoke is shattered while enemies are led away with hooks."
+    },
+    {
+      "id": "e.refuge-stronghold--8e1d0a6c",
+      "name": "Refuge/Stronghold",
+      "type": "entity",
+      "references": ["Nah 1:7"],
+      "category": "theology",
+      "aka": ["Stronghold in the day of trouble"],
+      "blurb": "Counterpoint to wrath: those who take refuge in YHWH find protection amid upheaval."
+    },
+    {
+      "id": "e.good-news-to-zion--0e9f6a4d",
+      "name": "Good news to Zion",
+      "type": "entity",
+      "references": ["Nah 1:15"],
+      "category": "gospel-motif",
+      "aka": ["Herald’s feet on the mountains"],
+      "cross_references": ["Isa 52:7", "Rom 10:15"],
+      "blurb": "Liberation proclamation: imperial threat removed, worship restored—an archetype for later ‘gospel’ language."
+    },
+    {
+      "id": "e.festivals-and-vows--6b3c1f8e",
+      "name": "Festivals & vows (Judah)",
+      "type": "entity",
+      "references": ["Nah 1:15"],
+      "category": "ritual",
+      "aka": [],
+      "blurb": "Cultic life resumes under divine protection; liturgical stability expresses social healing."
+    },
+    {
+      "id": "e.yoke-broken--a0d7e5c9",
+      "name": "Yoke broken",
+      "type": "entity",
+      "references": ["Nah 1:13"],
+      "category": "deliverance",
+      "aka": ["Bonds torn apart"],
+      "blurb": "Emancipation image: the instruments of oppression are destroyed by divine action."
+    },
+    {
+      "id": "f.the-breaker--4b6e2d19",
+      "name": "The Breaker",
+      "type": "figure",
+      "references": ["Nah 1:13 (motif-level; cf. Mic 2:13)"],
+      "category": "deliverer-imagery",
+      "aka": ["Divine breaker"],
+      "cross_references": ["Mic 2:13"],
+      "blurb": "Title-like image for the one who bursts bonds and opens the way; in Nahum the function is carried by YHWH’s warrior theophany."
+    },
+    {
+      "id": "e.scatterer-at-the-gates--f7c3b0a2",
+      "name": "Scatterer at the gates",
+      "type": "entity",
+      "references": ["Nah 2:1"],
+      "category": "invader",
+      "aka": ["Shatterer"],
+      "blurb": "Personified invader whom YHWH uses to bring Nineveh low; calls Judah to keep feasts while enemies are scattered."
+    },
+    {
+      "id": "e.watchmen-heralds--1d3f6c0a",
+      "name": "Watchmen/Heralds",
+      "type": "entity",
+      "references": ["Nah 2:1; 1:15"],
+      "category": "civic-religious",
+      "aka": ["Messengers"],
+      "blurb": "Figures who announce and guard—vehicles of ‘good news’ and signals of impending judgment."
+    },
+    {
+      "id": "e.fortress-stronghold-images--2f6a0e9b",
+      "name": "Fortress/Stronghold images",
+      "type": "entity",
+      "references": ["Nah 2:1; 3:12–13"],
+      "category": "metaphor",
+      "aka": [],
+      "blurb": "The city’s strength proves illusory; fig-trees whose fruit falls when shaken."
+    },
+    {
+      "id": "e.desertion-and-panic--7c0a9e2b",
+      "name": "Desertion/Panic",
+      "type": "entity",
+      "references": ["Nah 2:8; 3:17"],
+      "category": "battle-psychology",
+      "aka": ["Flight", "Scattering"],
+      "blurb": "Nineveh’s people flee; officials sleep; mercenaries vanish—symbolic of hollow power."
+    },
+    {
+      "id": "e.sleep-of-the-shepherds--8d2b5e1c",
+      "name": "Sleep of the shepherds",
+      "type": "entity",
+      "references": ["Nah 3:18"],
+      "category": "leadership-collapse",
+      "aka": ["Slumbering nobles"],
+      "blurb": "The ruling class lies inert when vigilance is required; the flock is scattered on the mountains."
+    },
+    {
+      "id": "p.assyrian-kings-lion-line--3e9a1c0d",
+      "name": "Assyrian kings (lion line)",
+      "type": "person",
+      "references": ["Nah 2:11–13 (imagery)"],
+      "category": "royalty",
+      "aka": ["Lion kings of Assyria"],
+      "cross_references": ["2 Kgs 18–19; Isa 36–37 (Sennacherib)", "Historical: Ashurbanipal"],
+      "blurb": "Royal house caricatured as lions who devoured prey for their cubs; their den is torched by YHWH."
+    },
+    {
+      "id": "p.babylonian-commanders--c0e7a1b3",
+      "name": "Babylonian commanders",
+      "type": "person",
+      "references": [],
+      "category": "military",
+      "aka": ["Chaldean generals"],
+      "blurb": "Historical actors in Nineveh’s siege; evocative background to the ‘scatterer’ and ‘flood’ motifs."
+    },
+    {
+      "id": "p.median-commanders--9c1e0a6f",
+      "name": "Median commanders",
+      "type": "person",
+      "references": [],
+      "category": "military",
+      "aka": ["Median generals"],
+      "blurb": "Allied leadership with Babylon; their presence explains the relentless pressure on Nineveh’s walls."
+    },
+    {
+      "id": "g.merchants-of-nineveh--a6e7c1d2",
+      "name": "Merchants of Nineveh",
+      "type": "group",
+      "references": ["Nah 3:16"],
+      "category": "economic-class",
+      "aka": [],
+      "blurb": "Once numerous as stars, they vanish like locusts when judgment heat rises—profit proves ephemeral."
+    },
+    {
+      "id": "g.soldiers-and-guards-of-nineveh--e1b7c3a9",
+      "name": "Soldiers/Guards of Nineveh",
+      "type": "group",
+      "references": ["Nah 2:3–5; 3:17"],
+      "category": "military",
+      "aka": ["Warriors", "Officers"],
+      "blurb": "Crimson shields and flashing chariots project menace, yet they reel and stumble; finally they melt away."
+    },
+    {
+      "id": "g.refugees-and-survivors--5e1a9c0b",
+      "name": "Refugees/Survivors",
+      "type": "group",
+      "references": ["Nah 2:8"],
+      "category": "civilians",
+      "aka": [],
+      "blurb": "The city’s populace flees like a pool draining; human cost surfaces behind imperial spectacle."
+    },
+    {
+      "id": "e.sword--3b7a1e0f",
+      "name": "Sword",
+      "type": "entity",
+      "references": ["Nah 3:15"],
+      "category": "weapon",
+      "aka": [],
+      "blurb": "Paired with fire against locust-like hosts; emblem of inexorable judgment."
+    },
+    {
+      "id": "e.shields-crimson--b1c9e3f0",
+      "name": "Shields (crimson)",
+      "type": "entity",
+      "references": ["Nah 2:3"],
+      "category": "military",
+      "aka": [],
+      "blurb": "Visual marker of battle-readiness that ultimately fails to save the city."
+    },
+    {
+      "id": "e.charioteers--7e9c1a0d",
+      "name": "Charioteers",
+      "type": "entity",
+      "references": ["Nah 2:4"],
+      "category": "military",
+      "aka": ["Drivers"],
+      "blurb": "Agents of urban chaos; speed and shine become omens of collapse rather than security."
+    },
+    {
+      "id": "e.siege-towers--ac1e7b05",
+      "name": "Siege towers",
+      "type": "entity",
+      "references": ["Nah 2:5 (implied)"],
+      "category": "military",
+      "aka": ["Mantelets"],
+      "blurb": "Protective structures for assault forces; their approach signals Nineveh’s end."
+    },
+    {
+      "id": "e.palace--f1e0ac79",
+      "name": "Palace",
+      "type": "entity",
+      "references": ["Nah 2:6"],
+      "category": "royal",
+      "aka": ["Hekhal"],
+      "blurb": "When river gates open, the palace totters—palatial glory cannot withstand divine flood."
+    },
+    {
+      "id": "e.treasury--0a7c1e9b",
+      "name": "Treasury",
+      "type": "entity",
+      "references": ["Nah 2:9–10"],
+      "category": "economic",
+      "aka": [],
+      "blurb": "Storehouses of silver and gold—emptied; hearts melt, knees tremble."
+    },
+    {
+      "id": "e.nobles-and-courtiers--b7e1a0c9",
+      "name": "Nobles/Courtiers",
+      "type": "entity",
+      "references": ["Nah 2:5; 3:18"],
+      "category": "royal-court",
+      "aka": ["Officers", "Shepherds (metaphor)"],
+      "blurb": "Elites scramble and then sleep; the collapse is administrative as well as military."
+    },
+    {
+      "id": "e.sorceries--c0a7e1d3",
+      "name": "Sorceries",
+      "type": "entity",
+      "references": ["Nah 3:4"],
+      "category": "occult-practice",
+      "aka": ["Enchantments"],
+      "blurb": "Nineveh’s manipulative arts—political/spiritual seduction—draw divine exposure and contempt."
+    },
+    {
+      "id": "e.chains-bonds--e7c1a0b5",
+      "name": "Chains/Bonds",
+      "type": "entity",
+      "references": ["Nah 1:13"],
+      "category": "oppression",
+      "aka": ["Fetters"],
+      "blurb": "Concrete tokens of subjugation; divine action shatters them for Judah."
+    },
+    {
+      "id": "e.exile-deportation--5c1e0a7b",
+      "name": "Exile/Deportation",
+      "type": "entity",
+      "references": ["Nah 3:10"],
+      "category": "imperial-policy",
+      "aka": [],
+      "blurb": "Nineveh’s tool becomes its fate; the city’s inhabitants are carried off, infants dashed—grim mirror justice."
+    },
+    {
+      "id": "e.gates-of-the-rivers--9f0a1c7e",
+      "name": "Gates of the rivers",
+      "type": "entity",
+      "references": ["Nah 2:6"],
+      "category": "hydraulic",
+      "aka": [],
+      "blurb": "Poetic doublet for ‘river gates’; emphasizes watery breach as decisive moment."
+    },
+    {
+      "id": "e.overthrow-complete--d1c7a0e5",
+      "name": "Overthrow (complete)",
+      "type": "entity",
+      "references": ["Nah 1:9; 1:14; 3:19"],
+      "category": "verdict",
+      "aka": ["End of name", "No healing"],
+      "blurb": "Decreed finality: no second repentance arc; Nineveh’s wound is incurable."
+    },
+    {
+      "id": "e.refuge-rhetoric--a3e0d1b8",
+      "name": "Refuge rhetoric",
+      "type": "entity",
+      "references": ["Nah 1:7"],
+      "category": "pastoral-theology",
+      "aka": [],
+      "blurb": "Pastoral center of the book: wrath and refuge together narrate God’s character and care."
+    },
+    {
+      "id": "e.vanity-of-power--c7b1a0e3",
+      "name": "Vanity of power",
+      "type": "entity",
+      "references": ["Nah 2:11–13; 3:15–17"],
+      "category": "wisdom-theme",
+      "aka": ["Hollow might"],
+      "blurb": "A wisdom-like verdict on empire: predation seems secure until divine judgment exposes fragility."
+    },
+    {
+      "id": "e.public-laughter--f0b3a1c6",
+      "name": "Public laughter",
+      "type": "entity",
+      "references": ["Nah 3:19"],
+      "category": "shame-culture",
+      "aka": ["Clapping hands"],
+      "blurb": "Communal mockery marks tyrant’s end; the nations applaud the justice they longed for."
+    },
+    {
+      "id": "e.woe-lament-structure--b0e1a7c4",
+      "name": "Woe-lament structure",
+      "type": "entity",
+      "references": ["Nah 3:1–7"],
+      "category": "form-criticism",
+      "aka": [],
+      "blurb": "Combines indictment, exposure, and pronouncement of doom—shaping how the oracle is performed/heard."
+    },
+    {
+      "id": "e.herald-on-the-mountains--a9e1c0b4",
+      "name": "Herald on the mountains",
+      "type": "entity",
+      "references": ["Nah 1:15"],
+      "category": "gospel-image",
+      "aka": [],
+      "blurb": "Iconic image of beautiful feet bringing peace; later reused in New Testament proclamation."
+    },
+    {
+      "id": "e.assyrian-captives--71e0c9b3",
+      "name": "Assyrian captives",
+      "type": "entity",
+      "references": ["Nah 3:10"],
+      "category": "reversal",
+      "aka": [],
+      "blurb": "As Nineveh once deported others, so it becomes the captive—lex talionis of history under God."
+    },
+    {
+      "id": "e.ravening-lions--c4e0a1b7",
+      "name": "Ravening lions",
+      "type": "entity",
+      "references": ["Nah 2:11–13"],
+      "category": "predator-imagery",
+      "aka": ["Young lions", "Lionesses"],
+      "blurb": "Extended pride-of-lions metaphor for Assyrian elites whose den is consumed."
+    },
+    {
+      "id": "e.fig-trees-ripe--e1a0b7c9",
+      "name": "Fig trees—ripe fruit",
+      "type": "entity",
+      "references": ["Nah 3:12"],
+      "category": "simile",
+      "aka": [],
+      "blurb": "Nineveh’s strongholds fall like ripe figs—ease of collapse belies prior boasting."
+    },
+    {
+      "id": "e.water-pool-draining--a1e0c7b9",
+      "name": "Water-pool (draining)",
+      "type": "entity",
+      "references": ["Nah 2:8"],
+      "category": "simile",
+      "aka": [],
+      "blurb": "Population and resolve ebb away; the city cannot be rallied despite commands to ‘stand!’"
+    },
+    {
+      "id": "e.innumerable-killed--0b7e1ac3",
+      "name": "Innumerable killed",
+      "type": "entity",
+      "references": ["Nah 3:3"],
+      "category": "battle-aftermath",
+      "aka": ["Heaps of corpses"],
+      "blurb": "Graphic aftermath underscores moral horror of Nineveh’s career and fall."
+    },
+    {
+      "id": "e.harlot-sorceries--b9e1c0a7",
+      "name": "Harlot’s sorceries",
+      "type": "entity",
+      "references": ["Nah 3:4"],
+      "category": "vice",
+      "aka": [],
+      "blurb": "Political seduction and coercion under religious veneer; draws judgment for ensnaring nations."
+    },
+    {
+      "id": "e.pharaoh-no-amon-parallel--c1b7e0a5",
+      "name": "No-Amon (Thebes) parallel",
+      "type": "entity",
+      "references": ["Nah 3:8–10"],
+      "category": "historical-analogy",
+      "aka": ["Thebes"],
+      "blurb": "If Thebes, fortified by the Nile, fell, how much more Nineveh—scriptural reasoning by precedent."
+    },
+    {
+      "id": "e.pride-and-boast--e0a1b7c2",
+      "name": "Pride/Boast",
+      "type": "entity",
+      "references": ["Nah 2:13; 3:8"],
+      "category": "sin-motif",
+      "aka": [],
+      "blurb": "Assyria’s hubris meets the divine ‘Behold, I am against you’—the covenant lawsuit climax."
+    },
+    {
+      "id": "e.behold-i-am-against-you--a7b0c1e9",
+      "name": "“Behold, I am against you”",
+      "type": "entity",
+      "references": ["Nah 2:13; 3:5"],
+      "category": "divine-decree",
+      "aka": [],
+      "blurb": "YHWH’s adversative oracle formula; guarantees defeat irrespective of military calculus."
+    },
+    {
+      "id": "e.end-of-name--b1e0a7c4",
+      "name": "End of name",
+      "type": "entity",
+      "references": ["Nah 1:14"],
+      "category": "erasure",
+      "aka": ["Name cut off"],
+      "blurb": "Memory, dynasty, and cultic prestige erased—total de-legitimization of Assyria’s legacy."
+    },
+    {
+      "id": "e.no-healer--c0b1a7e3",
+      "name": "No healer",
+      "type": "entity",
+      "references": ["Nah 3:19"],
+      "category": "medical-metaphor",
+      "aka": ["Incurable wound"],
+      "blurb": "The malady is terminal; no remedy remains—judgment’s finality stressed."
+    }
+  ]
+}

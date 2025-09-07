@@ -1,0 +1,24 @@
+{
+  "name": "The Seven (index)",
+  "type": "group",
+  "category": "deacons",
+  "references": [
+    "Acts 6:1–6"
+  ],
+  "blurb": "Stephen, Philip, Prochorus, Nicanor, Timon, Parmenas, Nicholas (a proselyte of Antioch).",
+  "aka": [],
+  "id": "g.the-seven-index--afcc152c",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      6
+    ]
+  }
+}

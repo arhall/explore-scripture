@@ -1,0 +1,20 @@
+{
+  "id": "e.faith-as-resilience--ff0aa2c7",
+  "name": "Faith as resilience",
+  "type": "entity",
+  "references": [
+    "Hab 2:4",
+    "Hab 3:16-19"
+  ],
+  "category": "spirituality",
+  "blurb": "Habakkuk’s model: waiting, trembling, trusting—faithfulness over the long delay.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      2,
+      3
+    ]
+  }
+}

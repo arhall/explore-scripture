@@ -1,0 +1,19 @@
+{
+  "name": "Binnui son of Henadad (another section)",
+  "type": "person",
+  "references": [
+    "Nehemiah 3:24"
+  ],
+  "blurb": "Multi-section leadership—capacity grows with trust.",
+  "category": "narrative",
+  "id": "p.binnui-son-of-henadad.another-section--989be63e",
+  "canonical_id": "p.binnui-son-of-henadad.other-half-of-keilah--413c82b6",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      3
+    ]
+  }
+}

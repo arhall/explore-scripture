@@ -1,0 +1,21 @@
+{
+  "name": "Everyone who calls on the name of YHWH shall be saved",
+  "type": "entity",
+  "references": [
+    "Joel 2:32"
+  ],
+  "blurb": "Open invitation anchored in Zion; later echoed in apostolic preaching.",
+  "category": "salvation",
+  "cross_references": [
+    "Romans 10:13; Acts 2:21"
+  ],
+  "id": "e.everyone-who-calls-on-the-name-of-yhwh-shall-be-saved--a8d8b845",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      2
+    ]
+  }
+}

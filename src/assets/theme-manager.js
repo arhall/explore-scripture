@@ -445,13 +445,31 @@ class ThemeManager {
       }
     };
     
-    this.currentTheme = localStorage.getItem('site-theme') || 'light';
+    this.currentTheme = localStorage.getItem('site-theme') || 'slate';
     this.init();
   }
 
   init() {
     this.applyTheme(this.currentTheme);
+    this.restoreHighContrast();
     this.createThemeSwitcher();
+  }
+  
+  restoreHighContrast() {
+    try {
+      const highContrast = localStorage.getItem('highContrast') === 'true';
+      if (highContrast) {
+        document.documentElement.classList.add('high-contrast');
+        
+        // Update button if it exists
+        const contrastBtn = document.querySelector('.high-contrast-toggle .high-contrast-icon');
+        if (contrastBtn) {
+          contrastBtn.textContent = '◼';
+        }
+      }
+    } catch (error) {
+      console.warn('Failed to restore high contrast preference:', error);
+    }
   }
 
   applyTheme(themeKey) {
@@ -459,13 +477,29 @@ class ThemeManager {
     if (!theme) return;
 
     const root = document.documentElement;
+    
+    // Apply theme colors with additional CSS variables
     Object.entries(theme.colors).forEach(([property, value]) => {
       root.style.setProperty(property, value);
     });
     
+    // Add alpha variants for the theme
+    const accentColor = theme.colors['--accent'];
+    if (accentColor) {
+      root.style.setProperty('--accent-alpha-3', this.hexToRgba(accentColor, 0.03));
+      root.style.setProperty('--accent-alpha-5', this.hexToRgba(accentColor, 0.05));
+      root.style.setProperty('--accent-alpha-10', this.hexToRgba(accentColor, 0.1));
+      root.style.setProperty('--accent-alpha-20', this.hexToRgba(accentColor, 0.2));
+      root.style.setProperty('--accent-alpha-25', this.hexToRgba(accentColor, 0.25));
+      root.style.setProperty('--accent-alpha-30', this.hexToRgba(accentColor, 0.3));
+    }
+    
     // Update body class for theme-specific styling
     document.body.className = document.body.className.replace(/theme-\w+/g, '');
     document.body.classList.add(`theme-${themeKey}`);
+    
+    // Set data attribute for theme-specific CSS
+    root.setAttribute('data-theme', themeKey);
     
     this.currentTheme = themeKey;
     localStorage.setItem('site-theme', themeKey);
@@ -475,8 +509,49 @@ class ThemeManager {
       detail: { theme: themeKey, colors: theme.colors } 
     }));
   }
+  
+  hexToRgba(hex, alpha) {
+    const r = parseInt(hex.slice(1, 3), 16);
+    const g = parseInt(hex.slice(3, 5), 16);
+    const b = parseInt(hex.slice(5, 7), 16);
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+  }
 
   createThemeSwitcher() {
+    // Check if we have a navigation theme button
+    const navButton = document.querySelector('.theme-toggle-nav');
+    
+    if (navButton) {
+      // Use navigation integration
+      this.createNavigationDropdown();
+    } else {
+      // Fallback to floating button
+      this.createFloatingButton();
+    }
+    
+    // Add CSS if not already present
+    this.addStyles();
+  }
+  
+  createNavigationDropdown() {
+    // Remove existing dropdown
+    const existing = document.getElementById('theme-nav-dropdown');
+    if (existing) existing.remove();
+
+    // Create dropdown element
+    const dropdown = document.createElement('div');
+    dropdown.id = 'theme-nav-dropdown';
+    dropdown.className = 'theme-nav-dropdown';
+    dropdown.innerHTML = this.generateDropdownContent();
+    
+    // Position relative to navigation
+    document.body.appendChild(dropdown);
+    
+    // Setup event listeners for navigation integration
+    this.setupNavigationListeners(dropdown);
+  }
+  
+  createFloatingButton() {
     // Remove existing switcher
     const existing = document.getElementById('theme-switcher');
     if (existing) existing.remove();
@@ -501,9 +576,6 @@ class ThemeManager {
     
     // Add event listeners
     this.setupEventListeners(switcher, button, dropdown);
-    
-    // Add CSS if not already present
-    this.addStyles();
   }
 
   generateDropdownContent() {
@@ -567,6 +639,44 @@ class ThemeManager {
       e.stopPropagation();
     });
   }
+  
+  setupNavigationListeners(dropdown) {
+    // Theme selection
+    dropdown.addEventListener('click', (e) => {
+      if (e.target.classList.contains('theme-option') || e.target.closest('.theme-option')) {
+        const themeButton = e.target.closest('.theme-option');
+        const themeKey = themeButton.dataset.theme;
+        
+        // Update active state
+        dropdown.querySelectorAll('.theme-option').forEach(opt => opt.classList.remove('active'));
+        themeButton.classList.add('active');
+        
+        // Apply theme
+        this.applyTheme(themeKey);
+        dropdown.classList.remove('open');
+      }
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!dropdown.contains(e.target) && !e.target.closest('.theme-toggle-nav')) {
+        dropdown.classList.remove('open');
+      }
+    });
+
+    // Prevent dropdown from closing when clicking inside
+    dropdown.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+  }
+  
+  // Toggle dropdown method for navigation button
+  toggleDropdown() {
+    const dropdown = document.getElementById('theme-nav-dropdown') || document.querySelector('.theme-switcher-dropdown');
+    if (dropdown) {
+      dropdown.classList.toggle('open');
+    }
+  }
 
   addStyles() {
     if (document.getElementById('theme-switcher-styles')) return;
@@ -574,6 +684,53 @@ class ThemeManager {
     const styles = document.createElement('style');
     styles.id = 'theme-switcher-styles';
     styles.textContent = `
+      /* Navigation Theme Button Styling */
+      .theme-toggle-nav {
+        background: none;
+        border: none;
+        color: var(--text-secondary);
+        cursor: pointer;
+        padding: 0.5rem;
+        margin: 0;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+      }
+      
+      .theme-toggle-nav:hover {
+        background: var(--bg-secondary);
+        color: var(--text);
+      }
+      
+      /* Navigation Theme Dropdown */
+      .theme-nav-dropdown {
+        position: fixed;
+        top: 60px;
+        right: 20px;
+        min-width: 280px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-8px);
+        transition: all 0.2s ease;
+        max-height: 400px;
+        overflow-y: auto;
+        z-index: 9999;
+      }
+
+      .theme-nav-dropdown.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      /* Floating Theme Switcher (Fallback) */
       .theme-switcher {
         position: fixed;
         top: 20px;
@@ -717,6 +874,29 @@ class ThemeManager {
     document.head.appendChild(styles);
   }
 
+  // High contrast functionality
+  toggleHighContrast() {
+    const isHighContrast = document.documentElement.classList.contains('high-contrast');
+    document.documentElement.classList.toggle('high-contrast', !isHighContrast);
+    
+    try {
+      localStorage.setItem('highContrast', !isHighContrast);
+    } catch (error) {
+      console.warn('Failed to save high contrast preference:', error);
+    }
+    
+    // Update high contrast button if it exists
+    const contrastBtn = document.querySelector('.high-contrast-toggle .high-contrast-icon');
+    if (contrastBtn) {
+      contrastBtn.textContent = !isHighContrast ? '◼' : '◻';
+    }
+    
+    // Dispatch event
+    window.dispatchEvent(new CustomEvent('highContrastToggled', { 
+      detail: { enabled: !isHighContrast } 
+    }));
+  }
+
   // Public API
   getThemes() {
     return this.themes;
@@ -731,10 +911,29 @@ class ThemeManager {
   }
 }
 
-// Initialize theme manager when DOM is ready
-document.addEventListener('DOMContentLoaded', () => {
+// Initialize theme manager immediately for faster loading
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initializeThemeManager);
+} else {
+  initializeThemeManager();
+}
+
+function initializeThemeManager() {
   window.themeManager = new ThemeManager();
-});
+  
+  // Ensure global functions are available
+  window.toggleHighContrast = () => {
+    if (window.themeManager) {
+      window.themeManager.toggleHighContrast();
+    }
+  };
+  
+  window.toggleThemeDropdown = () => {
+    if (window.themeManager) {
+      window.themeManager.toggleDropdown();
+    }
+  };
+}
 
 // Export for manual use
 window.ThemeManager = ThemeManager;

@@ -1,0 +1,18 @@
+{
+  "name": "Seven eunuchs who served Ahasuerus",
+  "type": "group",
+  "references": [
+    "Esther 1:10–12"
+  ],
+  "blurb": "Mehuman, Biztha, Harbona, Bigtha, Abagtha, Zethar, Carcas—palace functionaries whose actions carry royal whims to the queen’s quarters.",
+  "category": "record",
+  "id": "g.seven-eunuchs-who-served-ahasuerus--eeadea1d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      1
+    ]
+  }
+}

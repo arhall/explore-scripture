@@ -1,0 +1,14 @@
+{
+  "book": "Job",
+  "chapter": 17,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "e.eliphazs-second-bildads-second-zophars-second--07d81b46",
+      "name": "Eliphaz’s second; Bildad’s second; Zophar’s second",
+      "type": "entity",
+      "role": "wisdom",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "book": "Leviticus",
+  "chapter": 19,
+  "entity_count": 9,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "g.people-of-israel--fa06221e",
+      "name": "People of Israel",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.foreigners-sojourners.gerim--ed359621",
+      "name": "Foreigners / Sojourners (Gerim)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.mediums-and-necromancers--5a821d4f",
+      "name": "Mediums and necromancers",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.holiness-code.love-of-neighbor--493bb89b",
+      "name": "Holiness code (love of neighbor)",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1
+    },
+    {
+      "id": "e.gleanings-for-the-poor-and-the-foreigner--3e15df07",
+      "name": "Gleanings for the poor and the foreigner",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1
+    },
+    {
+      "id": "e.honest-weights-and-measures--53cb0258",
+      "name": "Honest weights and measures",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1
+    },
+    {
+      "id": "e.revering-parents-and-sabbaths--1aacf019",
+      "name": "Revering parents and Sabbaths",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1
+    },
+    {
+      "id": "e.love-your-neighbor-as-yourself--6ccb2bed",
+      "name": "Love your neighbor as yourself",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1
+    }
+  ]
+}

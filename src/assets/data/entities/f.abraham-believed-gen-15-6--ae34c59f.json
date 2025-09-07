@@ -1,0 +1,34 @@
+{
+  "name": "Abraham believed (Gen 15:6)",
+  "type": "figure",
+  "category": "Abraham",
+  "references": [
+    "Rom 4:1–5",
+    "Rom 4:9–12"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Gen 15:6",
+      "type": "quotation"
+    }
+  ],
+  "greek_terms": [
+    {
+      "term": "λογίζομαι",
+      "gloss": "reckon/credit"
+    }
+  ],
+  "aka": [],
+  "id": "f.abraham-believed-gen-15-6--ae34c59f",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      4
+    ]
+  }
+}

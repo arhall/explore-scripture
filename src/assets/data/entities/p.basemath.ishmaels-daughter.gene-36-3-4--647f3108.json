@@ -1,0 +1,21 @@
+{
+  "name": "Basemath (Ishmael’s daughter)",
+  "type": "person",
+  "references": [
+    "Genesis 36:3–4"
+  ],
+  "blurb": "Sister of Nebaioth; mother of Reuel. Links Edom with Ishmaelite lines.",
+  "category": "genealogy",
+  "cross_references": [
+    "Genesis 25:13"
+  ],
+  "id": "p.basemath.ishmaels-daughter.gene-36-3-4--647f3108",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

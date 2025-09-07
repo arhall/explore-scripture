@@ -1,0 +1,22 @@
+{
+  "name": "Allegory of two sisters: Oholah & Oholibah",
+  "type": "entity",
+  "references": [
+    "Ezekiel 23"
+  ],
+  "blurb": "Samaria and Jerusalem personified as promiscuous sisters; shocking satire of political idolatry.",
+  "aka": [
+    "Oholah (Samaria)",
+    "Oholibah (Jerusalem)"
+  ],
+  "category": "allegory",
+  "id": "e.allegory-of-two-sisters-oholah-oholibah.samaria--c09d3d1e",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      23
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "book": "Colossians",
+  "chapter": 1,
+  "entity_count": 38,
+  "entities": [
+    {
+      "id": "e.colossae--4c307fad",
+      "name": "Colossae",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 2
+    },
+    {
+      "id": "f.all-things-created-dominions--6795b489",
+      "name": "All things created: Dominions",
+      "type": "figure",
+      "role": "creation-categories",
+      "refs_count": 1
+    },
+    {
+      "id": "p.learned-from-epaphras--bbe3e907",
+      "name": "Learned from Epaphras",
+      "type": "person",
+      "role": "founder/intercessor",
+      "refs_count": 1
+    },
+    {
+      "id": "f.head-of-the-body-the-church--4c4877f4",
+      "name": "Head of the body, the church",
+      "type": "figure",
+      "role": "headship",
+      "refs_count": 1
+    },
+    {
+      "id": "f.image-of-the-invisible-god-eikon--a6c1ef9b",
+      "name": "Image of the invisible God (eikon)",
+      "type": "figure",
+      "role": "christology",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.reconcile-all-things-through-the-cross--874880b4",
+      "name": "Reconcile all things through the cross",
+      "type": "figure",
+      "role": "reconciliation",
+      "refs_count": 1
+    },
+    {
+      "id": "f.thanksgiving-for-faith-love-hope--cea51998",
+      "name": "Thanksgiving for faith, love, hope",
+      "type": "figure",
+      "role": "thanksgiving",
+      "refs_count": 1
+    },
+    {
+      "id": "p.epaphras--9d5c0168",
+      "name": "Epaphras",
+      "type": "person",
+      "role": "founder/intercessor",
+      "refs_count": 3
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 24
+    }
+  ]
+}

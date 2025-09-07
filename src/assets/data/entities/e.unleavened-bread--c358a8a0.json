@@ -1,0 +1,22 @@
+{
+  "name": "Unleavened bread (Matzah)",
+  "type": "entity",
+  "references": [
+    "Exodus 12:15–20"
+  ],
+  "blurb": "Haste and purity—remove old leaven.",
+  "category": "ritual",
+  "cross_references": [
+    "1 Corinthians 5:7–8",
+    "Luke 22:15"
+  ],
+  "id": "e.unleavened-bread--c358a8a0",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      12
+    ]
+  }
+}

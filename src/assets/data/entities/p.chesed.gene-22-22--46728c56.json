@@ -1,0 +1,26 @@
+{
+  "name": "Chesed",
+  "type": "person",
+  "references": [
+    "Genesis 22:22"
+  ],
+  "blurb": "Son of Nahor by Milcah.",
+  "relations": {
+    "parents": [
+      "Nahor (brother of Abram)",
+      "Milcah"
+    ],
+    "children": null
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.chesed.gene-22-22--46728c56",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      22
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Chaldean raiding bands",
+  "type": "group",
+  "references": [
+    "Job 1:17"
+  ],
+  "blurb": "Northern/mesopotamian raiders in three companies who carry off camels—international reach of Job’s testing.",
+  "category": "narrative",
+  "id": "g.chaldean-raiding-bands--f972a58f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Job": [
+      1
+    ]
+  }
+}

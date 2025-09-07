@@ -1,0 +1,18 @@
+{
+  "name": "Turning justice to wormwood",
+  "type": "entity",
+  "references": [
+    "Amos 5:7"
+  ],
+  "blurb": "Sweet law made bitter; righteousness cast to the ground.",
+  "category": "judgment",
+  "id": "e.turning-justice-to-wormwood--3a098cc1",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Amos": [
+      5
+    ]
+  }
+}

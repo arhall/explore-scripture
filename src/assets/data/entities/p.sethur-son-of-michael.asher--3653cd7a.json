@@ -1,0 +1,18 @@
+{
+  "name": "Sethur son of Michael (Asher)",
+  "type": "person",
+  "references": [
+    "Numbers 13:13"
+  ],
+  "blurb": "Spy for Asher.",
+  "category": "narrative",
+  "id": "p.sethur-son-of-michael.asher--3653cd7a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      13
+    ]
+  }
+}

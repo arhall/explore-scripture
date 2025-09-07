@@ -1,0 +1,18 @@
+{
+  "id": "e.holy-pots-and-bowls--809f28a2",
+  "name": "Holy pots and bowls",
+  "type": "entity",
+  "references": [
+    "Zech 14:21"
+  ],
+  "category": "sanctified-vessels",
+  "blurb": "Common cookware elevated to temple-grade holiness.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      14
+    ]
+  }
+}

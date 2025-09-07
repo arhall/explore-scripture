@@ -1,0 +1,26 @@
+{
+  "name": "Othniel son of Kenaz",
+  "type": "person",
+  "references": [
+    "Joshua 15:17",
+    "Judges 1:13; 3:9–11"
+  ],
+  "blurb": "Caleb’s kinsman who captures Kiriath-sepher; a prototype deliverer who will later judge Israel.",
+  "category": "narrative",
+  "cross_references": [
+    "Judges 3:9–11",
+    "Joshua 15:17"
+  ],
+  "id": "p.othniel-son-of-kenaz--4ffdb645",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joshua": [
+      15
+    ],
+    "Judges": [
+      1
+    ]
+  }
+}

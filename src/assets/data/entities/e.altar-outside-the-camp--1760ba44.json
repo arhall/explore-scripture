@@ -1,0 +1,17 @@
+{
+  "name": "altar (outside the camp)",
+  "type": "entity",
+  "category": "cultic",
+  "references": [
+    "Heb 13:10-13"
+  ],
+  "aka": [
+    "outside the camp altar"
+  ],
+  "id": "e.altar-outside-the-camp--1760ba44",
+  "book_references": {
+    "Hebrews": [
+      13
+    ]
+  }
+}

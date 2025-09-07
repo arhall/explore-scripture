@@ -1,0 +1,29 @@
+{
+  "name": "Glory / Hour theme",
+  "type": "figure",
+  "category": "theme",
+  "references": [
+    "John 2:4",
+    "John 7:30",
+    "John 12:23",
+    "John 17:1"
+  ],
+  "aka": [],
+  "id": "f.glory-hour-theme--33359202",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      2,
+      7,
+      12,
+      17
+    ]
+  }
+}

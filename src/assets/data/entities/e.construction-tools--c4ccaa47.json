@@ -1,0 +1,12 @@
+{
+  "id": "e.construction-tools--c4ccaa47",
+  "name": "Construction tools",
+  "type": "entity",
+  "references": [],
+  "category": "material-culture",
+  "blurb": "Implied implements (hammers, chisels, plumb lines) for rebuilding the house.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

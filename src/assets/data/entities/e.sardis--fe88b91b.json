@@ -1,0 +1,17 @@
+{
+  "name": "Sardis",
+  "type": "entity",
+  "category": "city",
+  "references": [
+    "Rev 2–3 (Sardis)"
+  ],
+  "aka": [],
+  "id": "e.sardis--fe88b91b",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {}
+}

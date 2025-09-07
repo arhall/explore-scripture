@@ -1,0 +1,21 @@
+{
+  "name": "The grace of the Lord Jesus Christ",
+  "type": "figure",
+  "category": "benediction",
+  "references": [
+    "Phil 4:23"
+  ],
+  "aka": [],
+  "id": "f.the-grace-of-the-lord-jesus-christ--583d4e14",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Philippians": [
+      4
+    ]
+  }
+}

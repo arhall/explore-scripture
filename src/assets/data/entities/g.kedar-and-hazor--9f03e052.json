@@ -1,0 +1,18 @@
+{
+  "name": "Kedar and Hazor",
+  "type": "group",
+  "references": [
+    "Jeremiah 49:28–33"
+  ],
+  "blurb": "Desert tribes struck by Nebuchadnezzar—tents, flocks, and curtains plundered.",
+  "category": "nation",
+  "id": "g.kedar-and-hazor--9f03e052",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      49
+    ]
+  }
+}

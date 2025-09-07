@@ -1,0 +1,1153 @@
+{
+  "book": "Luke",
+  "slug": "luke",
+  "entity_count": 123,
+  "key_figures": [
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 4,
+      "score": 19
+    },
+    {
+      "id": "p.jesus-of-nazareth--c4738d73",
+      "name": "Jesus of Nazareth",
+      "type": "person",
+      "role": "messiah",
+      "refs_count": 2,
+      "score": 17
+    },
+    {
+      "id": "p.herod-antipas--65f7f448",
+      "name": "Herod Antipas",
+      "type": "person",
+      "role": "tetrarch",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.mary-mother-of-jesus--acfa811a",
+      "name": "Mary (mother of Jesus)",
+      "type": "person",
+      "role": "family",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.pontius-pilate--d8964343",
+      "name": "Pontius Pilate",
+      "type": "person",
+      "role": "prefect",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.woman-with-hemorrhage--f9567ef4",
+      "name": "Woman with hemorrhage",
+      "type": "person",
+      "role": "healed",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.joseph-husband-of-mary--1e97fe8c",
+      "name": "Joseph (husband of Mary)",
+      "type": "person",
+      "role": "family",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.woman-bent-over-sabbath-healing--bb4cfb04",
+      "name": "Woman bent over (Sabbath healing)",
+      "type": "person",
+      "role": "healed",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.blind-man-at-jericho--1d39fed9",
+      "name": "Blind man at Jericho",
+      "type": "person",
+      "role": "healed",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.tiberius-caesar--4898ec6c",
+      "name": "Tiberius Caesar",
+      "type": "person",
+      "role": "emperor",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.rich-young-ruler--396254e1",
+      "name": "Rich young ruler",
+      "type": "person",
+      "role": "seeker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.quirinius--dfd032eb",
+      "name": "Quirinius",
+      "type": "person",
+      "role": "governor",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.gerasene-demoniac-legion--affc02e8",
+      "name": "Gerasene demoniac (Legion)",
+      "type": "person",
+      "role": "delivered",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.widow-of-nain--e9b7a4e9",
+      "name": "Widow of Nain",
+      "type": "person",
+      "role": "raised",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jairus-s-daughter--fb0e7bff",
+      "name": "Jairus’s daughter",
+      "type": "person",
+      "role": "raised",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.centurion-of-capernaum--64ec12c2",
+      "name": "Centurion of Capernaum",
+      "type": "person",
+      "role": "gentile",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.lysanias--5d99a077",
+      "name": "Lysanias",
+      "type": "person",
+      "role": "tetrarch",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.anna--117d489e",
+      "name": "Anna",
+      "type": "person",
+      "role": "prophetess",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.elizabeth--60a3b651",
+      "name": "Elizabeth",
+      "type": "person",
+      "role": "matriarch",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.zechariah--3b1fa613",
+      "name": "Zechariah",
+      "type": "person",
+      "role": "priest",
+      "refs_count": 1,
+      "score": 11
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 4,
+      "score": 19
+    },
+    {
+      "id": "p.jesus-of-nazareth--c4738d73",
+      "name": "Jesus of Nazareth",
+      "type": "person",
+      "role": "messiah",
+      "refs_count": 2,
+      "score": 17
+    },
+    {
+      "id": "p.herod-antipas--65f7f448",
+      "name": "Herod Antipas",
+      "type": "person",
+      "role": "tetrarch",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.mary-mother-of-jesus--acfa811a",
+      "name": "Mary (mother of Jesus)",
+      "type": "person",
+      "role": "family",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.pontius-pilate--d8964343",
+      "name": "Pontius Pilate",
+      "type": "person",
+      "role": "prefect",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.woman-with-hemorrhage--f9567ef4",
+      "name": "Woman with hemorrhage",
+      "type": "person",
+      "role": "healed",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.joseph-husband-of-mary--1e97fe8c",
+      "name": "Joseph (husband of Mary)",
+      "type": "person",
+      "role": "family",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.woman-bent-over-sabbath-healing--bb4cfb04",
+      "name": "Woman bent over (Sabbath healing)",
+      "type": "person",
+      "role": "healed",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.blind-man-at-jericho--1d39fed9",
+      "name": "Blind man at Jericho",
+      "type": "person",
+      "role": "healed",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.tiberius-caesar--4898ec6c",
+      "name": "Tiberius Caesar",
+      "type": "person",
+      "role": "emperor",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.rich-young-ruler--396254e1",
+      "name": "Rich young ruler",
+      "type": "person",
+      "role": "seeker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.quirinius--dfd032eb",
+      "name": "Quirinius",
+      "type": "person",
+      "role": "governor",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.gerasene-demoniac-legion--affc02e8",
+      "name": "Gerasene demoniac (Legion)",
+      "type": "person",
+      "role": "delivered",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.widow-of-nain--e9b7a4e9",
+      "name": "Widow of Nain",
+      "type": "person",
+      "role": "raised",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jairus-s-daughter--fb0e7bff",
+      "name": "Jairus’s daughter",
+      "type": "person",
+      "role": "raised",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.centurion-of-capernaum--64ec12c2",
+      "name": "Centurion of Capernaum",
+      "type": "person",
+      "role": "gentile",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.lysanias--5d99a077",
+      "name": "Lysanias",
+      "type": "person",
+      "role": "tetrarch",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.anna--117d489e",
+      "name": "Anna",
+      "type": "person",
+      "role": "prophetess",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.elizabeth--60a3b651",
+      "name": "Elizabeth",
+      "type": "person",
+      "role": "matriarch",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.zechariah--3b1fa613",
+      "name": "Zechariah",
+      "type": "person",
+      "role": "priest",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.matthew-levi--e46c1088",
+      "name": "Matthew (Levi)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.zacchaeus--44b0f476",
+      "name": "Zacchaeus",
+      "type": "person",
+      "role": "conversion",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.philip-the-tetrarch--b616e8bd",
+      "name": "Philip the tetrarch",
+      "type": "person",
+      "role": "tetrarch",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.caesar-augustus--486d094a",
+      "name": "Caesar Augustus",
+      "type": "person",
+      "role": "emperor",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.penitent-thief-today-in-paradise--7684f990",
+      "name": "Penitent thief (Today in Paradise)",
+      "type": "person",
+      "role": "witness",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.theophilus--ebf69d0e",
+      "name": "Theophilus",
+      "type": "person",
+      "role": "patron",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.john-the-baptist--509f9f1e",
+      "name": "John the Baptist",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.man-with-dropsy-sabbath-healing--f43cee44",
+      "name": "Man with dropsy (Sabbath healing)",
+      "type": "person",
+      "role": "healed",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.judas-iscariot--530c61f0",
+      "name": "Judas Iscariot",
+      "type": "person",
+      "role": "betrayer",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.joseph-of-arimathea--e7ff4ac4",
+      "name": "Joseph of Arimathea",
+      "type": "person",
+      "role": "disciple",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "f.prayer-in-luke--69a57343",
+      "name": "Prayer in Luke",
+      "type": "figure",
+      "role": "theme",
+      "refs_count": 5,
+      "score": 7
+    },
+    {
+      "id": "g.ten-lepers-samaritan-thankful--4f677df1",
+      "name": "Ten Lepers (Samaritan thankful)",
+      "type": "group",
+      "role": "healed",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.twelve-apostles-group--95bd1d99",
+      "name": "Twelve Apostles (group)",
+      "type": "group",
+      "role": "apostolic-college",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.daughters-of-jerusalem--03aa07ff",
+      "name": "Daughters of Jerusalem",
+      "type": "group",
+      "role": "addressed",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.seventy-two-mission--48d96e41",
+      "name": "Seventy-two (mission)",
+      "type": "group",
+      "role": "mission",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.women-at-the-tomb-luke--0d0b30fd",
+      "name": "Women at the tomb (Luke)",
+      "type": "group",
+      "role": "witness",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.shepherds-of-bethlehem--eb1a7ece",
+      "name": "Shepherds of Bethlehem",
+      "type": "group",
+      "role": "witness",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "f.table-fellowship-in-luke--65956cca",
+      "name": "Table fellowship in Luke",
+      "type": "figure",
+      "role": "theme",
+      "refs_count": 5,
+      "score": 7
+    },
+    {
+      "id": "g.women-who-supported-jesus--38cf2c91",
+      "name": "Women who supported Jesus",
+      "type": "group",
+      "role": "patrons",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "t.kingdom-of-god--e6ae8d7f",
+      "name": "Kingdom of God",
+      "type": "title",
+      "role": "kingdom",
+      "refs_count": 3,
+      "score": 6
+    },
+    {
+      "id": "f.passion-predictions-luke--212653fa",
+      "name": "Passion predictions (Luke)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 2,
+      "score": 4
+    },
+    {
+      "id": "f.measure-you-use--d0e7460f",
+      "name": "Measure you use",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 2,
+      "score": 4
+    },
+    {
+      "id": "e.nazareth--4e4195a3",
+      "name": "Nazareth",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 3,
+      "score": 4
+    },
+    {
+      "id": "t.promise-of-the-father--07abc0ce",
+      "name": "Promise of the Father",
+      "type": "title",
+      "role": "promise",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "e.samaria--fcae1760",
+      "name": "Samaria",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "f.passover-last-supper--5a53a2a0",
+      "name": "Passover/Last Supper",
+      "type": "figure",
+      "role": "meal",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sabbath-grain-plucking-controversy--ebabd72d",
+      "name": "Sabbath grain-plucking controversy",
+      "type": "figure",
+      "role": "controversy",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.genealogy-to-adam--db0df21c",
+      "name": "Genealogy to Adam",
+      "type": "figure",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.samaritan-village-rejection--7d2d120b",
+      "name": "Samaritan village rejection",
+      "type": "figure",
+      "role": "episode",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.great-banquet-luke--2be2ac65",
+      "name": "Great Banquet (Luke)",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.watchful-servants--ad1a2928",
+      "name": "Watchful Servants",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.foxes-have-holes--35082803",
+      "name": "Foxes have holes",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.parable-of-the-sower--ce425480",
+      "name": "Parable of the Sower",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.benedictus--132e0042",
+      "name": "Benedictus",
+      "type": "figure",
+      "role": "canticle",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.lost-coin--55663339",
+      "name": "Lost Coin",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.set-his-face-to-jerusalem--abb68c23",
+      "name": "Set his face to Jerusalem",
+      "type": "figure",
+      "role": "travel-turn",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.question-on-the-resurrection-sadducees--f1f845f1",
+      "name": "Question on the resurrection (Sadducees)",
+      "type": "figure",
+      "role": "controversy",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.rich-man-and-lazarus--613a26d7",
+      "name": "Rich Man and Lazarus",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.nazareth-synagogue-isaiah-61--317af53e",
+      "name": "Nazareth synagogue (Isaiah 61)",
+      "type": "figure",
+      "role": "programmatic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.boy-jesus-in-the-temple--45b1b76a",
+      "name": "Boy Jesus in the Temple",
+      "type": "figure",
+      "role": "episode",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.teach-us-to-pray--452017f4",
+      "name": "Teach us to pray",
+      "type": "figure",
+      "role": "request",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.widow-s-offering--5316ff07",
+      "name": "Widow’s offering",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.sea-of-galilee--fbfbf0a2",
+      "name": "Sea of Galilee",
+      "type": "entity",
+      "role": "body-of-water",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "f.jesus-before-herod-antipas--67d77133",
+      "name": "Jesus before Herod Antipas",
+      "type": "figure",
+      "role": "trial",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.temptation-in-the-wilderness--f38865ae",
+      "name": "Temptation in the wilderness",
+      "type": "figure",
+      "role": "testing",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.lord-s-prayer--6e02280f",
+      "name": "Lord’s Prayer",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.friend-at-midnight--123d4bef",
+      "name": "Friend at Midnight",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.persistent-widow-unjust-judge--abe97bb7",
+      "name": "Persistent Widow (Unjust Judge)",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.parable-of-the-two-debtors--36d3d503",
+      "name": "Parable of the Two Debtors",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.lowest-seat-at-the-banquet--d5c4b0a3",
+      "name": "Lowest seat at the banquet",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.transfiguration--7155a70f",
+      "name": "Transfiguration",
+      "type": "figure",
+      "role": "theophany",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.good-samaritan--98978846",
+      "name": "Good Samaritan",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.narrow-gate--244baf7c",
+      "name": "Narrow Gate",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.ascension-at-bethany--704dd928",
+      "name": "Ascension at Bethany",
+      "type": "figure",
+      "role": "ascension",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.pharisee-and-tax-collector--dc1d75a1",
+      "name": "Pharisee and Tax Collector",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.storm-on-the-sea--6db339db",
+      "name": "Storm on the sea",
+      "type": "figure",
+      "role": "miracle",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.magnificat--6d228acc",
+      "name": "Magnificat",
+      "type": "figure",
+      "role": "canticle",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.render-to-caesar--08c1758d",
+      "name": "Render to Caesar",
+      "type": "figure",
+      "role": "controversy",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.woe-to-chorazin-and-bethsaida--b3046621",
+      "name": "Woe to Chorazin and Bethsaida",
+      "type": "figure",
+      "role": "woe",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.lost-sheep--e6d97332",
+      "name": "Lost Sheep",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.shrewd-manager--6b9bdf22",
+      "name": "Shrewd Manager",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.do-not-be-anxious-ravens--f838fa77",
+      "name": "Do not be anxious (ravens)",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.capernaum--e8a7c06b",
+      "name": "Capernaum",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "f.cleansing-of-the-temple--34c6b1cf",
+      "name": "Cleansing of the Temple",
+      "type": "figure",
+      "role": "prophetic-action",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.lamp-under-a-basket--b588be47",
+      "name": "Lamp under a basket",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.cost-of-discipleship--c05b688a",
+      "name": "Cost of discipleship",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.pilate-and-herod-become-friends--bd4dc94e",
+      "name": "Pilate and Herod become friends",
+      "type": "figure",
+      "role": "detail",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.let-the-little-children-come--5a2d47a0",
+      "name": "Let the little children come",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.gabriel--f90d99b1",
+      "name": "Gabriel",
+      "type": "figure",
+      "role": "angel",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.woes-against-the-pharisees-luke--55964309",
+      "name": "Woes against the Pharisees (Luke)",
+      "type": "figure",
+      "role": "woes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.jericho--d03f1831",
+      "name": "Jericho",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "f.salt-that-loses-its-taste--89a85f7f",
+      "name": "Salt that loses its taste",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.wilderness-desert--5581794f",
+      "name": "Wilderness/Desert",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "f.prodigal-son--e16f114b",
+      "name": "Prodigal Son",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.gloria-in-excelsis--8a6e852c",
+      "name": "Gloria in excelsis",
+      "type": "figure",
+      "role": "canticle",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.triumphal-entry--5fe5dc82",
+      "name": "Triumphal Entry",
+      "type": "figure",
+      "role": "event",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.appearance-to-disciples-jerusalem--ab23bb4c",
+      "name": "Appearance to disciples (Jerusalem)",
+      "type": "figure",
+      "role": "appearance",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.ten-minas-pounds--75142d1b",
+      "name": "Ten Minas (Pounds)",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.miraculous-catch-of-fish--092ac8f8",
+      "name": "Miraculous catch of fish",
+      "type": "figure",
+      "role": "call",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.weeping-over-jerusalem--c14e4831",
+      "name": "Weeping over Jerusalem",
+      "type": "figure",
+      "role": "lament",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.feeding-of-the-five-thousand--a8af349b",
+      "name": "Feeding of the five thousand",
+      "type": "figure",
+      "role": "miracle",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.repent-or-perish-siloam--534cf515",
+      "name": "Repent or perish (Siloam)",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.kingdom-within-among-you--af2bf31b",
+      "name": "Kingdom within/among you",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.presentation-in-the-temple--078defa0",
+      "name": "Presentation in the Temple",
+      "type": "figure",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.ear-of-malchus-healed--36c1af96",
+      "name": "Ear of Malchus healed",
+      "type": "figure",
+      "role": "miracle",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.rich-fool--eb92d497",
+      "name": "Rich Fool",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sign-of-jonah--8229d552",
+      "name": "Sign of Jonah",
+      "type": "figure",
+      "role": "controversy",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.withered-hand-on-the-sabbath--03369814",
+      "name": "Withered hand on the Sabbath",
+      "type": "figure",
+      "role": "controversy",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sinful-woman-s-anointing--30546a8a",
+      "name": "Sinful woman’s anointing",
+      "type": "figure",
+      "role": "episode",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.ask-seek-knock--3eb42dc1",
+      "name": "Ask, Seek, Knock",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.beatitudes-luke-and-woes--550cbe00",
+      "name": "Beatitudes (Luke) and Woes",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.nunc-dimittis--595782dc",
+      "name": "Nunc Dimittis",
+      "type": "figure",
+      "role": "canticle",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.into-your-hands-i-commit-my-spirit--2e9df41d",
+      "name": "Into your hands I commit my spirit",
+      "type": "figure",
+      "role": "saying",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.emmaus-road-cleopas--e59c2de5",
+      "name": "Emmaus Road (Cleopas)",
+      "type": "figure",
+      "role": "appearance",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.mary-and-martha--cdbfc5ea",
+      "name": "Mary and Martha",
+      "type": "figure",
+      "role": "episode",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.bethlehem--5e03c285",
+      "name": "Bethlehem",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.gethsemane--8c33c993",
+      "name": "Gethsemane",
+      "type": "entity",
+      "role": "garden",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.olivet-discourse-luke--59003eec",
+      "name": "Olivet Discourse (Luke)",
+      "type": "entity",
+      "role": "discourse",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.gadara--1b9df755",
+      "name": "Gadara",
+      "type": "entity",
+      "role": "region",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.jordan--4586837c",
+      "name": "Jordan",
+      "type": "entity",
+      "role": "river",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.bethany--4df7e1bd",
+      "name": "Bethany",
+      "type": "entity",
+      "role": "village",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.capernaum-woe--f39f87aa",
+      "name": "Capernaum (woe)",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.sermon-on-the-plain--73291657",
+      "name": "Sermon on the Plain",
+      "type": "entity",
+      "role": "discourse",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

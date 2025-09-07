@@ -1,0 +1,35 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 8,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "f.knowledge-puffs-up-love-builds-up--9ffe8338",
+      "name": "Knowledge puffs up, love builds up",
+      "type": "figure",
+      "role": "love-knowledge",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.weak-conscience-and-stumbling--514a9823",
+      "name": "Weak conscience and stumbling",
+      "type": "figure",
+      "role": "conscience",
+      "refs_count": 1
+    },
+    {
+      "id": "f.eating-in-an-idol-s-temple--b4aae1f3",
+      "name": "Eating in an idol’s temple",
+      "type": "figure",
+      "role": "idolatry",
+      "refs_count": 1
+    }
+  ]
+}

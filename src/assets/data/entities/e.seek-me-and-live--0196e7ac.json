@@ -1,0 +1,18 @@
+{
+  "name": "Seek me and live",
+  "type": "entity",
+  "references": [
+    "Amos 5:4–6"
+  ],
+  "blurb": "Pilgrimage will not save; seeking YHWH’s face reorients life toward justice.",
+  "category": "call",
+  "id": "e.seek-me-and-live--0196e7ac",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Amos": [
+      5
+    ]
+  }
+}

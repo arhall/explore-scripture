@@ -1,0 +1,35 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 3,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "t.og-king-of-bashan--349ffe75",
+      "name": "Og king of Bashan",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 2
+    },
+    {
+      "id": "g.people-of-israel--ecedc898",
+      "name": "People of Israel (second generation)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.pisgah-mount-nebo.moses-view--aa804301",
+      "name": "Pisgah / Mount Nebo (Moses’ view)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    }
+  ]
+}

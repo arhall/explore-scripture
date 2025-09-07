@@ -1,0 +1,21 @@
+{
+  "book": "Jeremiah",
+  "chapter": 43,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "g.remnant-in-egypt--9f961639",
+      "name": "Remnant in Egypt",
+      "type": "group",
+      "role": "remnant",
+      "refs_count": 1
+    },
+    {
+      "id": "e.tahpanhes-in-egypt.daphnae--ca8a65c0",
+      "name": "Tahpanhes (Daphnae) in Egypt",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    }
+  ]
+}

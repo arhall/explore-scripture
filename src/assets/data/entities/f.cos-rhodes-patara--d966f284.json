@@ -1,0 +1,23 @@
+{
+  "name": "Cos, Rhodes, Patara",
+  "type": "figure",
+  "category": "journey",
+  "references": [
+    "Acts 21:1"
+  ],
+  "aka": [],
+  "id": "f.cos-rhodes-patara--d966f284",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      21
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Sealed scroll and illiteracy motif",
+  "type": "entity",
+  "references": [
+    "Isaiah 29:11–12"
+  ],
+  "blurb": "Revelation unopened by both learned and unlearned—pride and apathy blind a people to the Word.",
+  "category": "motif",
+  "id": "e.sealed-scroll-and-illiteracy-motif--388e59d9",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Isaiah": [
+      29
+    ]
+  }
+}

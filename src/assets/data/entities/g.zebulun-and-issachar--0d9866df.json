@@ -1,0 +1,18 @@
+{
+  "name": "Zebulun and Issachar (tribes; Blessing of Moses)",
+  "type": "group",
+  "references": [
+    "Deuteronomy 33:18–19"
+  ],
+  "blurb": "Commerce and learning under divine favor; worship linked to work.",
+  "category": "poetry",
+  "id": "g.zebulun-and-issachar--0d9866df",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Deuteronomy": [
+      33
+    ]
+  }
+}

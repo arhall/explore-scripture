@@ -1,0 +1,18 @@
+{
+  "name": "Three further cities of refuge if land expands",
+  "type": "entity",
+  "references": [
+    "Deuteronomy 19:8–10"
+  ],
+  "blurb": "Mercy scales with blessing—justice infrastructure grows with territory.",
+  "category": "ethics",
+  "id": "e.three-further-cities-of-refuge-if-land-expands--5706eca8",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Deuteronomy": [
+      19
+    ]
+  }
+}

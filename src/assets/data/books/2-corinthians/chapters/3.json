@@ -1,0 +1,49 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 3,
+  "entity_count": 6,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.letters-of-recommendation-you-are-our-letter--623063d1",
+      "name": "Letters of recommendation? You are our letter",
+      "type": "figure",
+      "role": "commendation",
+      "refs_count": 1
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "f.moses-veil-and-surpassing-glory--3d0df88b",
+      "name": "Moses’ veil and surpassing glory",
+      "type": "figure",
+      "role": "glory",
+      "refs_count": 1
+    },
+    {
+      "id": "f.new-covenant-of-the-spirit--081c504a",
+      "name": "New covenant of the Spirit",
+      "type": "figure",
+      "role": "new-covenant",
+      "refs_count": 1
+    },
+    {
+      "id": "f.integrity-notes-composite-letter--69411f19",
+      "name": "Integrity notes (composite-letter)",
+      "type": "figure",
+      "role": "integrity-notes",
+      "refs_count": 1
+    }
+  ]
+}

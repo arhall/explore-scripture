@@ -1,0 +1,35 @@
+{
+  "book": "Romans",
+  "chapter": 14,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "t.kingdom-of-god--e6ae8d7f",
+      "name": "Kingdom of God",
+      "type": "title",
+      "role": "kingdom",
+      "refs_count": 16
+    },
+    {
+      "id": "f.welcome-the-weak-food--d63a4d22",
+      "name": "Welcome the weak (food)",
+      "type": "figure",
+      "role": "community",
+      "refs_count": 1
+    },
+    {
+      "id": "f.do-not-stumble-days-food-faith--8c7ad667",
+      "name": "Do not stumble (days, food, faith)",
+      "type": "figure",
+      "role": "community",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-flow-index--23eef6cd",
+      "name": "Argument flow (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 8
+    }
+  ]
+}

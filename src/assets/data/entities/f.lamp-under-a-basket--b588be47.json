@@ -1,0 +1,32 @@
+{
+  "name": "Lamp under a basket",
+  "type": "figure",
+  "category": "parable",
+  "references": [
+    "Mark 4:21–25",
+    "Luke 8:16–18"
+  ],
+  "aka": [],
+  "id": "f.lamp-under-a-basket--b588be47",
+  "source_book": "Mark",
+  "source_books": [
+    "Mark",
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "synoptic_parallels": [
+    "Mark 4:21–25",
+    "Matt 5:15"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Mark": [
+      4
+    ],
+    "Luke": [
+      8
+    ]
+  }
+}

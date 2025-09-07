@@ -1,0 +1,18 @@
+{
+  "name": "Gedaliah son of Ahikam (governor)",
+  "type": "person",
+  "references": [
+    "Jeremiah 39:14; 40–41"
+  ],
+  "blurb": "Appointed by Babylon over the remnant at Mizpah; advocates submission for survival. Assassinated by Ishmael, precipitating flight to Egypt.",
+  "category": "governor",
+  "id": "p.gedaliah-son-of-ahikam.governor--4bdc837f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      39
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "e.harlot-sorceries--b9e1c0a7",
+  "name": "Harlot’s sorceries",
+  "type": "entity",
+  "references": [
+    "Nah 3:4"
+  ],
+  "category": "vice",
+  "aka": [],
+  "blurb": "Political seduction and coercion under religious veneer; draws judgment for ensnaring nations.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      3
+    ]
+  }
+}

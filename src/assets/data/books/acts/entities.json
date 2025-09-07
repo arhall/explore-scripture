@@ -1,0 +1,2065 @@
+{
+  "book": "Acts",
+  "slug": "acts",
+  "entity_count": 237,
+  "key_figures": [
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 18,
+      "score": 28
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 2,
+      "score": 17
+    },
+    {
+      "id": "p.simon-peter-cephas--d58cce37",
+      "name": "Simon Peter (Cephas)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 7,
+      "score": 17
+    },
+    {
+      "id": "p.jesus-of-nazareth--c4738d73",
+      "name": "Jesus of Nazareth",
+      "type": "person",
+      "role": "messiah",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.barnabas--d4ced718",
+      "name": "Barnabas",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 6,
+      "score": 16
+    },
+    {
+      "id": "p.timothy--227fb1d9",
+      "name": "Timothy",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 5,
+      "score": 15
+    },
+    {
+      "id": "p.silas-silvanus--3ff90d56",
+      "name": "Silas (Silvanus)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 4,
+      "score": 14
+    },
+    {
+      "id": "p.john-mark--ac3d50bf",
+      "name": "John Mark",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 3,
+      "score": 13
+    },
+    {
+      "id": "f.journeys-index--f80d022a",
+      "name": "Journeys (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 11,
+      "score": 13
+    },
+    {
+      "id": "p.philip-the-evangelist--3ab8205e",
+      "name": "Philip the Evangelist",
+      "type": "person",
+      "role": "evangelist",
+      "refs_count": 3,
+      "score": 13
+    },
+    {
+      "id": "p.james-the-lord-s-brother--02bc9aea",
+      "name": "James (the Lord’s brother)",
+      "type": "person",
+      "role": "church-leader",
+      "refs_count": 3,
+      "score": 13
+    },
+    {
+      "id": "p.aristarchus-of-thessalonica--82aa43a2",
+      "name": "Aristarchus of Thessalonica",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 3,
+      "score": 13
+    },
+    {
+      "id": "p.simon-the-tanner-joppa--fac69373",
+      "name": "Simon the Tanner (Joppa)",
+      "type": "person",
+      "role": "host",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "f.speeches-in-acts-index--79e8df4b",
+      "name": "Speeches in Acts (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 10,
+      "score": 12
+    },
+    {
+      "id": "p.trophimus--db8ead68",
+      "name": "Trophimus",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.aristarchus--e00edfe2",
+      "name": "Aristarchus",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.herod-agrippa-ii--87b35225",
+      "name": "Herod Agrippa II",
+      "type": "person",
+      "role": "king",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.parmenas--bbca7ca8",
+      "name": "Parmenas",
+      "type": "person",
+      "role": "the-seven",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.mnason-of-cyprus-hosting--4c760c35",
+      "name": "Mnason of Cyprus (hosting)",
+      "type": "person",
+      "role": "host",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.bernice--2a8c3baa",
+      "name": "Bernice",
+      "type": "person",
+      "role": "royalty",
+      "refs_count": 1,
+      "score": 11
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 18,
+      "score": 28
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 2,
+      "score": 17
+    },
+    {
+      "id": "p.simon-peter-cephas--d58cce37",
+      "name": "Simon Peter (Cephas)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 7,
+      "score": 17
+    },
+    {
+      "id": "p.jesus-of-nazareth--c4738d73",
+      "name": "Jesus of Nazareth",
+      "type": "person",
+      "role": "messiah",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.barnabas--d4ced718",
+      "name": "Barnabas",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 6,
+      "score": 16
+    },
+    {
+      "id": "p.timothy--227fb1d9",
+      "name": "Timothy",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 5,
+      "score": 15
+    },
+    {
+      "id": "p.silas-silvanus--3ff90d56",
+      "name": "Silas (Silvanus)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 4,
+      "score": 14
+    },
+    {
+      "id": "p.john-mark--ac3d50bf",
+      "name": "John Mark",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 3,
+      "score": 13
+    },
+    {
+      "id": "f.journeys-index--f80d022a",
+      "name": "Journeys (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 11,
+      "score": 13
+    },
+    {
+      "id": "p.philip-the-evangelist--3ab8205e",
+      "name": "Philip the Evangelist",
+      "type": "person",
+      "role": "evangelist",
+      "refs_count": 3,
+      "score": 13
+    },
+    {
+      "id": "p.james-the-lord-s-brother--02bc9aea",
+      "name": "James (the Lord’s brother)",
+      "type": "person",
+      "role": "church-leader",
+      "refs_count": 3,
+      "score": 13
+    },
+    {
+      "id": "p.aristarchus-of-thessalonica--82aa43a2",
+      "name": "Aristarchus of Thessalonica",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 3,
+      "score": 13
+    },
+    {
+      "id": "p.simon-the-tanner-joppa--fac69373",
+      "name": "Simon the Tanner (Joppa)",
+      "type": "person",
+      "role": "host",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "f.speeches-in-acts-index--79e8df4b",
+      "name": "Speeches in Acts (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 10,
+      "score": 12
+    },
+    {
+      "id": "p.trophimus--db8ead68",
+      "name": "Trophimus",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.aristarchus--e00edfe2",
+      "name": "Aristarchus",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.herod-agrippa-ii--87b35225",
+      "name": "Herod Agrippa II",
+      "type": "person",
+      "role": "king",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.parmenas--bbca7ca8",
+      "name": "Parmenas",
+      "type": "person",
+      "role": "the-seven",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.mnason-of-cyprus-hosting--4c760c35",
+      "name": "Mnason of Cyprus (hosting)",
+      "type": "person",
+      "role": "host",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.bernice--2a8c3baa",
+      "name": "Bernice",
+      "type": "person",
+      "role": "royalty",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.tertullus-accuser--e0f78327",
+      "name": "Tertullus (accuser)",
+      "type": "person",
+      "role": "accuser",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.alexander-riot--1d2b2fce",
+      "name": "Alexander (riot)",
+      "type": "person",
+      "role": "spokesman",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.julius-the-centurion--ccb50fe9",
+      "name": "Julius the centurion",
+      "type": "person",
+      "role": "centurion",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.agabus-prophecy-belt--aba5fe02",
+      "name": "Agabus prophecy (belt)",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.manaen-brought-up-with-herod--9c7e497b",
+      "name": "Manaen (brought up with Herod)",
+      "type": "person",
+      "role": "prophet-teacher",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.timon--83c0e1fa",
+      "name": "Timon",
+      "type": "person",
+      "role": "the-seven",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.drusilla-context-note--9160c167",
+      "name": "Drusilla (context note)",
+      "type": "person",
+      "role": "context",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.gaius-macedonia--0856e5a6",
+      "name": "Gaius (Macedonia)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.titius-justus-next-door--f6908372",
+      "name": "Titius Justus (next door)",
+      "type": "person",
+      "role": "host",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.gallio-proconsul--fd5d1a55",
+      "name": "Gallio (proconsul)",
+      "type": "person",
+      "role": "official",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.gaius-derbe--ef0cedaf",
+      "name": "Gaius (Derbe)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.erastus--f42e12b9",
+      "name": "Erastus",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.ethiopian-eunuch-gaza-road--536d0bac",
+      "name": "Ethiopian eunuch (Gaza road)",
+      "type": "person",
+      "role": "convert",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.apollos-of-alexandria--cebf63b6",
+      "name": "Apollos of Alexandria",
+      "type": "person",
+      "role": "teacher",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.james-son-of-zebedee-executed--c7240682",
+      "name": "James son of Zebedee executed",
+      "type": "person",
+      "role": "martyr",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.philippian-jailer-unnamed--9aafafe1",
+      "name": "Philippian jailer (unnamed)",
+      "type": "person",
+      "role": "convert",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.nicanor--0cc392f7",
+      "name": "Nicanor",
+      "type": "person",
+      "role": "the-seven",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.simeon-called-niger--6fc82a6c",
+      "name": "Simeon called Niger",
+      "type": "person",
+      "role": "prophet-teacher",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.tychicus--24c2a0b4",
+      "name": "Tychicus",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.herod-agrippa-i-persecutes--3b34c79d",
+      "name": "Herod Agrippa I persecutes",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.nicholas-proselyte-of-antioch--bd95b883",
+      "name": "Nicholas (proselyte of Antioch)",
+      "type": "person",
+      "role": "the-seven",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.aeneas-at-lydda--56153658",
+      "name": "Aeneas at Lydda",
+      "type": "person",
+      "role": "healed",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.elymas-bar-jesus--4af214fb",
+      "name": "Elymas (Bar-Jesus)",
+      "type": "person",
+      "role": "magician",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.ananias-of-damascus--ca398cfd",
+      "name": "Ananias of Damascus",
+      "type": "person",
+      "role": "disciple",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.crispus-believes--85f95c25",
+      "name": "Crispus believes",
+      "type": "person",
+      "role": "convert",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.prochorus--49c939a9",
+      "name": "Prochorus",
+      "type": "person",
+      "role": "the-seven",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.demetrius-the-silversmith--f6e360e2",
+      "name": "Demetrius the silversmith",
+      "type": "person",
+      "role": "opponent",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.claudius-lysias--06caac32",
+      "name": "Claudius Lysias",
+      "type": "person",
+      "role": "tribune",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.caiaphas--0abef2e3",
+      "name": "Caiaphas",
+      "type": "person",
+      "role": "high-priest",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.sergius-paulus--8b81bef4",
+      "name": "Sergius Paulus",
+      "type": "person",
+      "role": "proconsul",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.agabus-predicts-famine--a7726508",
+      "name": "Agabus predicts famine",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.publius-chief-man--d860f2db",
+      "name": "Publius (chief man)",
+      "type": "person",
+      "role": "official",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.secundus-thessalonica--f5aa189e",
+      "name": "Secundus (Thessalonica)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.sosthenes-beaten--0683fab0",
+      "name": "Sosthenes beaten",
+      "type": "person",
+      "role": "incident",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.julius--1a5a2e0f",
+      "name": "Julius",
+      "type": "person",
+      "role": "centurion",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.aquila--742a292f",
+      "name": "Aquila",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.sopater-berea--471138d7",
+      "name": "Sopater (Berea)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.theophilus--ebf69d0e",
+      "name": "Theophilus",
+      "type": "person",
+      "role": "patron",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.priscilla-prisca--75f0d9d8",
+      "name": "Priscilla (Prisca)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.philippian-jailer-converted--0ae62a9b",
+      "name": "Philippian jailer converted",
+      "type": "person",
+      "role": "convert",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.annas--57d3e02d",
+      "name": "Annas",
+      "type": "person",
+      "role": "high-priest",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.tabitha-dorcas-raised--7aaf591e",
+      "name": "Tabitha (Dorcas) raised",
+      "type": "person",
+      "role": "raised",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.lucius-of-cyrene--f0c123e3",
+      "name": "Lucius of Cyrene",
+      "type": "person",
+      "role": "prophet-teacher",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.cornelius-of-caesarea--dfc3f842",
+      "name": "Cornelius of Caesarea",
+      "type": "person",
+      "role": "convert",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.simon-magus--ebcf22c3",
+      "name": "Simon Magus",
+      "type": "person",
+      "role": "opponent",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.alexander-sanhedrin--e6b3aef2",
+      "name": "Alexander (Sanhedrin)",
+      "type": "person",
+      "role": "elite",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jason-and-the-brethren--994d7955",
+      "name": "Jason and the brethren",
+      "type": "person",
+      "role": "host",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.lydia-of-thyatira--8d5551e7",
+      "name": "Lydia of Thyatira",
+      "type": "person",
+      "role": "convert",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.apollos--8fad6255",
+      "name": "Apollos",
+      "type": "person",
+      "role": "teacher",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.demetrius-riot-spokesman--733c4c71",
+      "name": "Demetrius (riot spokesman)",
+      "type": "person",
+      "role": "opponent",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.secundus-of-thessalonica--40e1ddd5",
+      "name": "Secundus of Thessalonica",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jason-of-thessalonica--00c2fcce",
+      "name": "Jason of Thessalonica",
+      "type": "person",
+      "role": "host",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.god-fearers-theosebeis--8ba75b09",
+      "name": "God-fearers (theosebeis)",
+      "type": "group",
+      "role": "gentile-associates",
+      "refs_count": 3,
+      "score": 9
+    },
+    {
+      "id": "g.jerusalem-elders-leadership--5760355b",
+      "name": "Jerusalem elders (leadership)",
+      "type": "group",
+      "role": "leadership",
+      "refs_count": 2,
+      "score": 8
+    },
+    {
+      "id": "g.stoic-and-epicurean-philosophers--63c5bef2",
+      "name": "Stoic and Epicurean philosophers",
+      "type": "group",
+      "role": "philosophers",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.seven-sons-of-sceva--30f858a2",
+      "name": "Seven sons of Sceva",
+      "type": "group",
+      "role": "incident",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.dionysius-the-areopagite-and-damaris--5001b9be",
+      "name": "Dionysius the Areopagite and Damaris",
+      "type": "group",
+      "role": "converts",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.four-daughters-who-prophesied--169f3377",
+      "name": "Four daughters who prophesied",
+      "type": "group",
+      "role": "prophets",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.synagogue-of-the-freedmen--511706f7",
+      "name": "Synagogue of the Freedmen",
+      "type": "group",
+      "role": "synagogue",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.judas-barsabbas-and-silas-sent--562426ae",
+      "name": "Judas Barsabbas and Silas sent",
+      "type": "group",
+      "role": "delegation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.disciples-of-john-ephesus--35bc402f",
+      "name": "Disciples of John (Ephesus)",
+      "type": "group",
+      "role": "disciples",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.men-of-cyprus-and-cyrene-founders--4979b646",
+      "name": "Men of Cyprus and Cyrene (founders)",
+      "type": "group",
+      "role": "mission",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.ananias-and-sapphira--7e4efba5",
+      "name": "Ananias and Sapphira",
+      "type": "group",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.the-seven-index--afcc152c",
+      "name": "The Seven (index)",
+      "type": "group",
+      "role": "deacons",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.aquila-and-priscilla-prisca--629f4ab6",
+      "name": "Aquila and Priscilla (Prisca)",
+      "type": "group",
+      "role": "coworkers",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.prophets-and-teachers-at-antioch--3a9a5e9a",
+      "name": "Prophets and teachers at Antioch",
+      "type": "group",
+      "role": "leadership",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.jealous-jews-of-thessalonica--3af4d113",
+      "name": "Jealous Jews of Thessalonica",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.beroeans--b9d4a461",
+      "name": "Beroeans",
+      "type": "group",
+      "role": "community",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.city-authorities-politarchs-of-thessalonica--7dc804ad",
+      "name": "City authorities (politarchs) of Thessalonica",
+      "type": "group",
+      "role": "civic-authorities",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.devout-greeks-god-fearers-of-thessalonica--ccc691ea",
+      "name": "Devout Greeks (God-fearers) of Thessalonica",
+      "type": "group",
+      "role": "converts",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.leading-women-of-thessalonica--599ee4fe",
+      "name": "Leading women of Thessalonica",
+      "type": "group",
+      "role": "women-leaders",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "f.we-sections-index--66327ede",
+      "name": "We-sections (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 4,
+      "score": 6
+    },
+    {
+      "id": "t.kingdom-of-god--e6ae8d7f",
+      "name": "Kingdom of God",
+      "type": "title",
+      "role": "kingdom",
+      "refs_count": 2,
+      "score": 5
+    },
+    {
+      "id": "e.antioch-syria--329754ba",
+      "name": "Antioch (Syria)",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 4,
+      "score": 5
+    },
+    {
+      "id": "f.aramaic-and-hebrew-names-in-acts--8976acce",
+      "name": "Aramaic and Hebrew names in Acts",
+      "type": "figure",
+      "role": "language",
+      "refs_count": 3,
+      "score": 5
+    },
+    {
+      "id": "f.household-baptisms-index--d19bd712",
+      "name": "Household baptisms (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 3,
+      "score": 5
+    },
+    {
+      "id": "f.community-of-goods--e6eb817c",
+      "name": "Community of goods",
+      "type": "figure",
+      "role": "community",
+      "refs_count": 2,
+      "score": 4
+    },
+    {
+      "id": "f.breaking-of-bread-practice--2e261312",
+      "name": "Breaking of bread (practice)",
+      "type": "figure",
+      "role": "community",
+      "refs_count": 2,
+      "score": 4
+    },
+    {
+      "id": "t.strategoi-magistrates--76207114",
+      "name": "Strategoi (magistrates)",
+      "type": "title",
+      "role": "civic-title",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.politarchs-thessalonica--6d688d9b",
+      "name": "Politarchs (Thessalonica)",
+      "type": "title",
+      "role": "civic-title",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.asiarchs-friends-of-paul--1976e272",
+      "name": "Asiarchs (friends of Paul)",
+      "type": "title",
+      "role": "civic-title",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "f.roman-citizenship-theme--1bdab8fa",
+      "name": "Roman citizenship (theme)",
+      "type": "figure",
+      "role": "theme",
+      "refs_count": 2,
+      "score": 4
+    },
+    {
+      "id": "f.synagogue-first-then-gentiles-pattern--a3f3741f",
+      "name": "Synagogue first, then Gentiles (pattern)",
+      "type": "figure",
+      "role": "pattern",
+      "refs_count": 2,
+      "score": 4
+    },
+    {
+      "id": "f.days-of-unleavened-bread-festival--1e53529c",
+      "name": "Days of Unleavened Bread (festival)",
+      "type": "figure",
+      "role": "festival",
+      "refs_count": 2,
+      "score": 4
+    },
+    {
+      "id": "e.antioch-pisidia--3e6e29fd",
+      "name": "Antioch (Pisidia)",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "f.complaint-of-hellenists--e4ddca05",
+      "name": "Complaint of Hellenists",
+      "type": "figure",
+      "role": "dispute",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.before-felix--28a6072c",
+      "name": "Before Felix",
+      "type": "figure",
+      "role": "trial",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.iconium-mission--42a058fd",
+      "name": "Iconium mission",
+      "type": "figure",
+      "role": "mission",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-acts-8-37--f87bb2f5",
+      "name": "Textual note: Acts 8:37",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.rented-house-in-rome-two-years--402f79a2",
+      "name": "Rented house in Rome (two years)",
+      "type": "figure",
+      "role": "residence",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sanhedrin-hearing-peter-john--10ca5f2c",
+      "name": "Sanhedrin hearing (Peter & John)",
+      "type": "figure",
+      "role": "trial",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.claudius-lysias-letter--60416920",
+      "name": "Claudius Lysias (letter)",
+      "type": "figure",
+      "role": "letter",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.berea-mission--0246d0c3",
+      "name": "Berea mission",
+      "type": "figure",
+      "role": "mission",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.peter-s-vision-of-clean-unclean--15768e46",
+      "name": "Peter’s vision of clean/unclean",
+      "type": "figure",
+      "role": "vision",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.door-of-faith-opened-to-gentiles--87d20fa9",
+      "name": "Door of faith opened to Gentiles",
+      "type": "figure",
+      "role": "report",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.alexandrian-ship-with-twin-gods--49f229ab",
+      "name": "Alexandrian ship with Twin Gods",
+      "type": "figure",
+      "role": "ship",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.edict-of-claudius-expulsion--01f535dc",
+      "name": "Edict of Claudius (expulsion)",
+      "type": "figure",
+      "role": "imperial-edict",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-acts-24-6b-8a--ff4c3424",
+      "name": "Textual note: Acts 24:6b–8a",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.beautiful-gate-healing--8ce982e1",
+      "name": "Beautiful Gate healing",
+      "type": "figure",
+      "role": "miracle",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.delivery-of-the-decree--666ab0e0",
+      "name": "Delivery of the decree",
+      "type": "figure",
+      "role": "delivery",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.apostolic-signs-and-wonders--bd37146b",
+      "name": "Apostolic signs and wonders",
+      "type": "figure",
+      "role": "miracles-index",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.achaia-province--53c44611",
+      "name": "Achaia (province)",
+      "type": "entity",
+      "role": "province",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "f.decrees-of-caesar-charge--cd0fc8b7",
+      "name": "Decrees of Caesar (charge)",
+      "type": "figure",
+      "role": "legal",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.macedonia-province--6bbaf226",
+      "name": "Macedonia (province)",
+      "type": "entity",
+      "role": "province",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "f.shipwreck-at-malta-melite--d4279076",
+      "name": "Shipwreck at Malta (Melite)",
+      "type": "figure",
+      "role": "shipwreck",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.peter-s-pentecost-speech--c172f32f",
+      "name": "Peter’s Pentecost speech",
+      "type": "figure",
+      "role": "speech",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sharp-disagreement-barnabas-with-john-mark-paul-with-silas--37790cbd",
+      "name": "Sharp disagreement: Barnabas with John Mark; Paul with Silas",
+      "type": "figure",
+      "role": "split",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.derbe-and-return-strengthening--bf2f7056",
+      "name": "Derbe and return strengthening",
+      "type": "figure",
+      "role": "mission",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.altar-to-an-unknown-god--ba76c380",
+      "name": "Altar to an unknown god",
+      "type": "figure",
+      "role": "object",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.stephen-s-speech--29ec991d",
+      "name": "Stephen’s speech",
+      "type": "figure",
+      "role": "speech",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.transfer-to-caesarea--54c3bb16",
+      "name": "Transfer to Caesarea",
+      "type": "figure",
+      "role": "transfer",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.pentecost-nations-list--266a088c",
+      "name": "Pentecost nations list",
+      "type": "figure",
+      "role": "list",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.antioch-syria-church-founded--638ef5af",
+      "name": "Antioch (Syria): church founded",
+      "type": "figure",
+      "role": "church",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.caesarea-philip-four-daughters--aa14a258",
+      "name": "Caesarea (Philip & four daughters)",
+      "type": "figure",
+      "role": "host",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.lystra-healing-crippled-man--1e91a7c5",
+      "name": "Lystra healing (crippled man)",
+      "type": "figure",
+      "role": "miracle",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.holy-spirit-falls-on-gentiles--087f8dd3",
+      "name": "Holy Spirit falls on Gentiles",
+      "type": "figure",
+      "role": "Pentecost-Gentile",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.we-section-acts-20-5-15--9bf864b8",
+      "name": "We-section (Acts 20:5–15)",
+      "type": "figure",
+      "role": "we-section",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.peter-s-testimony-gentile-inclusion--5048c1a4",
+      "name": "Peter’s testimony (Gentile inclusion)",
+      "type": "figure",
+      "role": "speech",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.herod-agrippa-i-struck-down--36c089e2",
+      "name": "Herod Agrippa I struck down",
+      "type": "figure",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.cos-rhodes-patara--d966f284",
+      "name": "Cos, Rhodes, Patara",
+      "type": "figure",
+      "role": "journey",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.solomon-s-portico--25981ded",
+      "name": "Solomon’s Portico",
+      "type": "entity",
+      "role": "site",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "f.we-section-acts-27-1-28-16--85fa0003",
+      "name": "We-section (Acts 27:1–28:16)",
+      "type": "figure",
+      "role": "we-section",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-acts-15-34--f4588dc1",
+      "name": "Textual note: Acts 15:34",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.asia-province--55dbcf0b",
+      "name": "Asia (province)",
+      "type": "entity",
+      "role": "province",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "f.saul-s-conversion-acts-9--604b096f",
+      "name": "Saul’s conversion (Acts 9)",
+      "type": "figure",
+      "role": "conversion",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.appeal-to-caesar-provocatio--10893973",
+      "name": "Appeal to Caesar (provocatio)",
+      "type": "figure",
+      "role": "legal",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.troas-eutychus-raised--e5aa24ee",
+      "name": "Troas (Eutychus raised)",
+      "type": "figure",
+      "role": "miracle",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.extraordinary-miracles-handkerchiefs-aprons--0ee8c238",
+      "name": "Extraordinary miracles (handkerchiefs, aprons)",
+      "type": "figure",
+      "role": "miracle",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-acts-9-5b-6--c4e3b437",
+      "name": "Textual note: Acts 9:5b–6",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.healings-on-malta--6dc8bf42",
+      "name": "Healings on Malta",
+      "type": "figure",
+      "role": "miracle",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.garments-laid-at-saul--730670da",
+      "name": "Garments laid at Saul",
+      "type": "figure",
+      "role": "detail",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.rumor-of-nazirite-vow-temple--8e4aa1e0",
+      "name": "Rumor of Nazirite vow (Temple)",
+      "type": "figure",
+      "role": "controversy",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.scroll-burning-magic-arts--95ab5bde",
+      "name": "Scroll burning (magic arts)",
+      "type": "figure",
+      "role": "repentance",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.growth-summary-6-7--d6bc7527",
+      "name": "Growth summary (6:7)",
+      "type": "figure",
+      "role": "summary",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.matthias-chosen--54cdce73",
+      "name": "Matthias chosen",
+      "type": "figure",
+      "role": "selection",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.pisidian-antioch-synagogue-speech--216e99b6",
+      "name": "Pisidian Antioch synagogue speech",
+      "type": "figure",
+      "role": "speech",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.christians-named-antioch--30a47fa3",
+      "name": "Christians named (Antioch)",
+      "type": "figure",
+      "role": "name",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.acts-1-8-program--e7511bbc",
+      "name": "Acts 1:8 program",
+      "type": "figure",
+      "role": "program",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.soundings-and-anchors--fdbd9db2",
+      "name": "Soundings and anchors",
+      "type": "figure",
+      "role": "seamanship",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.growth-summary-16-5--18df9b3f",
+      "name": "Growth summary (16:5)",
+      "type": "figure",
+      "role": "summary",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.paul-s-defense-acts-26--57ab0b09",
+      "name": "Paul’s defense (Acts 26)",
+      "type": "figure",
+      "role": "speech",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.peter-s-jailbreak-rhoda--4f7f0476",
+      "name": "Peter’s jailbreak (Rhoda)",
+      "type": "figure",
+      "role": "deliverance",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.growth-summary-19-20--a1e923a2",
+      "name": "Growth summary (19:20)",
+      "type": "figure",
+      "role": "summary",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.ascension--3187c1b6",
+      "name": "Ascension",
+      "type": "figure",
+      "role": "event",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.unknown-god-altar--1d241dd3",
+      "name": "Unknown God (altar)",
+      "type": "figure",
+      "role": "cultural",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.before-agrippa-ii-and-bernice--dbb4a83b",
+      "name": "Before Agrippa II and Bernice",
+      "type": "figure",
+      "role": "hearing",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.cyrene--5f8a2d3a",
+      "name": "Cyrene",
+      "type": "entity",
+      "role": "region",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "f.growth-summary-12-24--ea42ed3a",
+      "name": "Growth summary (12:24)",
+      "type": "figure",
+      "role": "summary",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.arrival-in-jerusalem--34e1ded9",
+      "name": "Arrival in Jerusalem",
+      "type": "figure",
+      "role": "arrival",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.escape-from-damascus-basket--06a9f18b",
+      "name": "Escape from Damascus (basket)",
+      "type": "figure",
+      "role": "escape",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.slave-girl-exorcism--99979a62",
+      "name": "Slave-girl exorcism",
+      "type": "figure",
+      "role": "exorcism",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.euraquilo-northeaster--1e1cc3b6",
+      "name": "Euraquilo (northeaster)",
+      "type": "figure",
+      "role": "storm",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-acts-28-29--3bc2b4c1",
+      "name": "Textual note: Acts 28:29",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.cyprus-mission-salamis-to-paphos--a6ce3811",
+      "name": "Cyprus mission (Salamis to Paphos)",
+      "type": "figure",
+      "role": "journey",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.zeus-and-hermes-misunderstanding--fb3c0ee6",
+      "name": "Zeus and Hermes misunderstanding",
+      "type": "figure",
+      "role": "confusion",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.nautical-terms-in-acts-27--e9403626",
+      "name": "Nautical terms in Acts 27",
+      "type": "figure",
+      "role": "nautical",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.macedonian-vision--edb5c6df",
+      "name": "Macedonian vision",
+      "type": "figure",
+      "role": "vision",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.citizenship-avoids-scourging--208818ab",
+      "name": "Citizenship avoids scourging",
+      "type": "figure",
+      "role": "legal",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.before-festus--69b04cba",
+      "name": "Before Festus",
+      "type": "figure",
+      "role": "trial",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.appeal-to-caesar-theme--056e2d74",
+      "name": "Appeal to Caesar (theme)",
+      "type": "figure",
+      "role": "theme",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.temple-riot-and-arrest--b1378571",
+      "name": "Temple riot and arrest",
+      "type": "figure",
+      "role": "arrest",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.assassination-plot-of-forty--3daa9ff3",
+      "name": "Assassination plot of forty",
+      "type": "figure",
+      "role": "plot",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.corinth-mission--7572fe3c",
+      "name": "Corinth mission",
+      "type": "figure",
+      "role": "mission",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.artemis-of-the-ephesians-riot--ae50e00b",
+      "name": "Artemis of the Ephesians riot",
+      "type": "figure",
+      "role": "riot",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.the-fast-day-of-atonement--77a029ba",
+      "name": "The Fast (Day of Atonement)",
+      "type": "figure",
+      "role": "festival",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.apostolic-decree-letter--bc4f60ca",
+      "name": "Apostolic decree (letter)",
+      "type": "figure",
+      "role": "letter",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.growth-summary-9-31--32bc151a",
+      "name": "Growth summary (9:31)",
+      "type": "figure",
+      "role": "summary",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.viper-bite-no-harm--a23e732e",
+      "name": "Viper bite (no harm)",
+      "type": "figure",
+      "role": "sign",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.james-s-judgment-amos-9-lxx--484c6f94",
+      "name": "James’s judgment (Amos 9 LXX)",
+      "type": "figure",
+      "role": "speech",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.beaten-without-trial-roman-citizens--09a81843",
+      "name": "Beaten without trial (Roman citizens)",
+      "type": "figure",
+      "role": "legal",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.peter-s-defense-in-jerusalem--95c2db7d",
+      "name": "Peter’s defense in Jerusalem",
+      "type": "figure",
+      "role": "defense",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.stephen-s-martyrdom--71cd0ff9",
+      "name": "Stephen’s martyrdom",
+      "type": "figure",
+      "role": "martyrdom",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sanhedrin-division-pharisees-sadducees--945ec3d5",
+      "name": "Sanhedrin division (Pharisees/Sadducees)",
+      "type": "figure",
+      "role": "trial",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.pentecost--6a4cc5c0",
+      "name": "Pentecost",
+      "type": "figure",
+      "role": "festival",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.circumcision-debate--ad89b472",
+      "name": "Circumcision debate",
+      "type": "figure",
+      "role": "controversy",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.greek-poets-cited--d3093594",
+      "name": "Greek poets cited",
+      "type": "figure",
+      "role": "citation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.philip-in-samaria--17481805",
+      "name": "Philip in Samaria",
+      "type": "figure",
+      "role": "mission",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.elders-appointed-in-every-church--279d2ba7",
+      "name": "Elders appointed in every church",
+      "type": "figure",
+      "role": "leadership",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.prayer-and-fasting-mission-sending--f38c861b",
+      "name": "Prayer and fasting (mission sending)",
+      "type": "figure",
+      "role": "piety",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.proclaiming-unhindered-28-31--985ce284",
+      "name": "Proclaiming unhindered (28:31)",
+      "type": "figure",
+      "role": "summary",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.thessalonica-mission--e4cda6d0",
+      "name": "Thessalonica mission",
+      "type": "figure",
+      "role": "mission",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.spirit-forbids-bithynia-and-asia--a268405c",
+      "name": "Spirit forbids Bithynia and Asia",
+      "type": "figure",
+      "role": "guidance",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.gamaliel-s-counsel--a7950526",
+      "name": "Gamaliel’s counsel",
+      "type": "figure",
+      "role": "advice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.stoning-at-lystra--38c8d988",
+      "name": "Stoning at Lystra",
+      "type": "figure",
+      "role": "persecution",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.turn-to-the-gentiles-acts-13-46--1ad99427",
+      "name": "Turn to the Gentiles (Acts 13:46)",
+      "type": "figure",
+      "role": "turning-point",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.miletus-farewell-speech--53df8b61",
+      "name": "Miletus farewell speech",
+      "type": "figure",
+      "role": "speech",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.we-section-acts-16-10-17--dae21ef9",
+      "name": "We-section (Acts 16:10–17)",
+      "type": "figure",
+      "role": "we-section",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.growth-summary-2-47--df7cfc39",
+      "name": "Growth summary (2:47)",
+      "type": "figure",
+      "role": "summary",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.reception-james-cites-amos-at-jerusalem-council--837b0658",
+      "name": "Reception: James cites Amos at Jerusalem Council",
+      "type": "entity",
+      "role": "reception",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.bithynia-province--d00bbb46",
+      "name": "Bithynia (province)",
+      "type": "entity",
+      "role": "province",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.appian-way-three-taverns--f3f2d4c4",
+      "name": "Appian Way (Three Taverns)",
+      "type": "entity",
+      "role": "road",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.ship-of-adramyttium--7d72bac4",
+      "name": "Ship of Adramyttium",
+      "type": "entity",
+      "role": "ship",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.myra-ship-of-alexandria--ba32176f",
+      "name": "Myra (ship of Alexandria)",
+      "type": "entity",
+      "role": "port",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.rhegium--a7c22f11",
+      "name": "Rhegium",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.rome-house-arrest--20f62a82",
+      "name": "Rome (house arrest)",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.the-fair-havens-crete--4fbf6bfc",
+      "name": "The Fair Havens (Crete)",
+      "type": "entity",
+      "role": "harbor",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.place-of-prayer-by-the-river--e38b2094",
+      "name": "Place of prayer by the river",
+      "type": "entity",
+      "role": "site",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.appius-forum--c481a22f",
+      "name": "Appius Forum",
+      "type": "entity",
+      "role": "waypoint",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.athens-areopagus--d1071eb0",
+      "name": "Athens (Areopagus)",
+      "type": "entity",
+      "role": "venue",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.hall-of-tyrannus-venue--d5ac84b2",
+      "name": "Hall of Tyrannus (venue)",
+      "type": "entity",
+      "role": "venue",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.tyre-seven-days--a1fe5531",
+      "name": "Tyre (seven days)",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.perga-in-pamphylia--971d6d49",
+      "name": "Perga in Pamphylia",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.cenchreae-vow--b350d3fa",
+      "name": "Cenchreae (vow)",
+      "type": "entity",
+      "role": "port",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.puteoli--7ac61ce8",
+      "name": "Puteoli",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.akeldama-field-of-blood--21b35dd4",
+      "name": "Akeldama (Field of Blood)",
+      "type": "entity",
+      "role": "site",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.temple-of-artemis-ephesus--045825e8",
+      "name": "Temple of Artemis (Ephesus)",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.lycaonia-region--83496326",
+      "name": "Lycaonia (region)",
+      "type": "entity",
+      "role": "region",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.syracuse--9a03d2c8",
+      "name": "Syracuse",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.philippi-roman-colony--d84b1c6d",
+      "name": "Philippi (Roman colony)",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.areopagus--fe84e0cc",
+      "name": "Areopagus",
+      "type": "entity",
+      "role": "venue",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.ephesus-theater--3a6c38e2",
+      "name": "Ephesus theater",
+      "type": "entity",
+      "role": "venue",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.ptolemais--d2dd70a0",
+      "name": "Ptolemais",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.upper-room-prayer--18e2396e",
+      "name": "Upper Room (prayer)",
+      "type": "entity",
+      "role": "site",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.hall-of-tyrannus--da27c686",
+      "name": "Hall of Tyrannus",
+      "type": "entity",
+      "role": "venue",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.berea--5a503afd",
+      "name": "Berea",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.thessalonica--3d3218b0",
+      "name": "Thessalonica",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.synagogue-of-the-jews-thessalonica--aeea4a9f",
+      "name": "Synagogue of the Jews (Thessalonica)",
+      "type": "entity",
+      "role": "synagogue",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Jairus’s daughter",
+  "type": "person",
+  "category": "raised",
+  "references": [
+    "Mark 5:21–24",
+    "Mark 5:35–43",
+    "Luke 8:40–42",
+    "Luke 8:49–56"
+  ],
+  "aka": [],
+  "id": "p.jairus-s-daughter--fb0e7bff",
+  "source_book": "Mark",
+  "source_books": [
+    "Mark",
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "synoptic_parallels": [
+    "Mark 5:21–43",
+    "Matt 9:18–26"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Mark": [
+      5
+    ],
+    "Luke": [
+      8
+    ]
+  }
+}

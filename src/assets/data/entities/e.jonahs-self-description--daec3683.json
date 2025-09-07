@@ -1,0 +1,18 @@
+{
+  "name": "Jonah’s self‑description",
+  "type": "entity",
+  "references": [
+    "Jonah 1:9"
+  ],
+  "blurb": "‘Hebrew; I fear YHWH, Maker of sea and dry land’—orthodox confession without obedient praxis.",
+  "category": "confession",
+  "id": "e.jonahs-self-description--daec3683",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jonah": [
+      1
+    ]
+  }
+}

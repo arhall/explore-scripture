@@ -1,0 +1,18 @@
+{
+  "name": "Hephzibah and Beulah (new names)",
+  "type": "entity",
+  "references": [
+    "Isaiah 62:4"
+  ],
+  "blurb": "Forsaken becomes My‑Delight‑Is‑In‑Her; Desolate becomes Married—marital joy as civic restoration.",
+  "category": "restoration",
+  "id": "e.hephzibah-and-beulah.new-names--f3b2ff61",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Isaiah": [
+      62
+    ]
+  }
+}

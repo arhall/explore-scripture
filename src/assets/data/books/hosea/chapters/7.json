@@ -1,0 +1,35 @@
+{
+  "book": "Hosea",
+  "chapter": 7,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "g.egypt--ab1ad00f",
+      "name": "Egypt",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 6
+    },
+    {
+      "id": "g.princes-of-israel--221e3291",
+      "name": "Princes of Israel",
+      "type": "group",
+      "role": "royalty",
+      "refs_count": 1
+    },
+    {
+      "id": "e.oven-imagery--a475b890",
+      "name": "Oven imagery",
+      "type": "entity",
+      "role": "image",
+      "refs_count": 1
+    },
+    {
+      "id": "e.treacherous-bow--07164718",
+      "name": "Treacherous bow",
+      "type": "entity",
+      "role": "image",
+      "refs_count": 1
+    }
+  ]
+}

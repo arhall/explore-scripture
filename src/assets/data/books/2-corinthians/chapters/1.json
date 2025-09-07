@@ -1,0 +1,77 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 1,
+  "entity_count": 10,
+  "entities": [
+    {
+      "id": "e.jerusalem--d3a5bc90",
+      "name": "Jerusalem",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 7
+    },
+    {
+      "id": "e.achaia--ba67eea7",
+      "name": "Achaia",
+      "type": "entity",
+      "role": "province",
+      "refs_count": 3
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.promises-are-yes-in-christ-seal-and-arrab-n--0b3b431a",
+      "name": "Promises are Yes in Christ; seal and arrabōn",
+      "type": "figure",
+      "role": "assurance",
+      "refs_count": 1
+    },
+    {
+      "id": "e.corinth--56a50221",
+      "name": "Corinth",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 4
+    },
+    {
+      "id": "e.ephesus--a81cfcdf",
+      "name": "Ephesus",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 5
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "f.affliction-in-asia-despaired-of-life--7b7ffeed",
+      "name": "Affliction in Asia (despaired of life)",
+      "type": "figure",
+      "role": "affliction",
+      "refs_count": 1
+    },
+    {
+      "id": "f.cascade-of-comfort--12977110",
+      "name": "Cascade of comfort (παράκλησις)",
+      "type": "figure",
+      "role": "comfort",
+      "refs_count": 1
+    },
+    {
+      "id": "f.integrity-notes-composite-letter--69411f19",
+      "name": "Integrity notes (composite-letter)",
+      "type": "figure",
+      "role": "integrity-notes",
+      "refs_count": 1
+    }
+  ]
+}

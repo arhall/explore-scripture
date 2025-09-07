@@ -1,0 +1,27 @@
+{
+  "name": "Elam",
+  "type": "person",
+  "references": [
+    "Genesis 10:22–24"
+  ],
+  "blurb": "Son of Shem; ancestor of peoples to Israel’s east and north.",
+  "relations": {
+    "parents": [
+      "Shem"
+    ],
+    "children": null
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "Isaiah 11:11"
+  ],
+  "id": "p.elam.gene-10-22-24--749135b4",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

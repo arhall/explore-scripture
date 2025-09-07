@@ -1,0 +1,21 @@
+{
+  "name": "Living One",
+  "type": "title",
+  "category": "christ-title",
+  "references": [
+    "Rev 1"
+  ],
+  "aka": [],
+  "id": "t.living-one--37d4b283",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Revelation": [
+      1
+    ]
+  }
+}

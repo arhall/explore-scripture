@@ -1,0 +1,63 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 7,
+  "entity_count": 8,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.make-room-in-your-hearts-7-2-4--0ee748ea",
+      "name": "Make room in your hearts (7:2–4)",
+      "type": "figure",
+      "role": "appeal",
+      "refs_count": 1
+    },
+    {
+      "id": "f.outcomes-of-godly-grief--dafe83cc",
+      "name": "Outcomes of godly grief",
+      "type": "figure",
+      "role": "fruit",
+      "refs_count": 1
+    },
+    {
+      "id": "f.joy-and-confidence--45496f17",
+      "name": "Joy and confidence",
+      "type": "figure",
+      "role": "joy",
+      "refs_count": 1
+    },
+    {
+      "id": "f.comforted-by-titus--4ce6944d",
+      "name": "Comforted by Titus",
+      "type": "figure",
+      "role": "comfort",
+      "refs_count": 1
+    },
+    {
+      "id": "f.godly-grief-vs-worldly-grief--ca3cec03",
+      "name": "Godly grief vs worldly grief",
+      "type": "figure",
+      "role": "grief",
+      "refs_count": 1
+    },
+    {
+      "id": "e.macedonia--58a26877",
+      "name": "Macedonia",
+      "type": "entity",
+      "role": "province",
+      "refs_count": 5
+    },
+    {
+      "id": "f.integrity-notes-composite-letter--69411f19",
+      "name": "Integrity notes (composite-letter)",
+      "type": "figure",
+      "role": "integrity-notes",
+      "refs_count": 1
+    }
+  ]
+}

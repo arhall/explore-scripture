@@ -1,0 +1,18 @@
+{
+  "name": "Threshing floors full; vats overflow",
+  "type": "entity",
+  "references": [
+    "Joel 2:24"
+  ],
+  "blurb": "Abundance images replace famine—signs of covenant renewal.",
+  "category": "restoration",
+  "id": "e.threshing-floors-full-vats-overflow--aa005df0",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      2
+    ]
+  }
+}

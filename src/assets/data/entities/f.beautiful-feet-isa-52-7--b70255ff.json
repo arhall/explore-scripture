@@ -1,0 +1,27 @@
+{
+  "name": "Beautiful feet (Isa 52:7)",
+  "type": "figure",
+  "category": "mission",
+  "references": [
+    "Rom 10:15"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Isa 52:7",
+      "type": "quotation"
+    }
+  ],
+  "aka": [],
+  "id": "f.beautiful-feet-isa-52-7--b70255ff",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      10
+    ]
+  }
+}

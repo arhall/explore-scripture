@@ -1,0 +1,18 @@
+{
+  "name": "Wall completed in 52 days",
+  "type": "entity",
+  "references": [
+    "Nehemiah 6:15–16"
+  ],
+  "blurb": "Fast finish shocks foes—credit given to God’s help; speed born from unity.",
+  "category": "record",
+  "id": "e.wall-completed-in-52-days--5876ef0b",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      6
+    ]
+  }
+}

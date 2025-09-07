@@ -1,0 +1,23 @@
+{
+  "name": "Elders appointed in every church",
+  "type": "figure",
+  "category": "leadership",
+  "references": [
+    "Acts 14:23"
+  ],
+  "aka": [],
+  "id": "f.elders-appointed-in-every-church--279d2ba7",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      14
+    ]
+  }
+}

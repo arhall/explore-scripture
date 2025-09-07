@@ -1,0 +1,23 @@
+{
+  "name": "Troas (Eutychus raised)",
+  "type": "figure",
+  "category": "miracle",
+  "references": [
+    "Acts 20:7–12"
+  ],
+  "aka": [],
+  "id": "f.troas-eutychus-raised--e5aa24ee",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      20
+    ]
+  }
+}

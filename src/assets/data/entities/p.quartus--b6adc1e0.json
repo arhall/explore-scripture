@@ -1,0 +1,21 @@
+{
+  "name": "Quartus",
+  "type": "person",
+  "category": "believer",
+  "references": [
+    "Rom 16:23"
+  ],
+  "aka": [],
+  "id": "p.quartus--b6adc1e0",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      16
+    ]
+  }
+}

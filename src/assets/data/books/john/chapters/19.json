@@ -1,0 +1,70 @@
+{
+  "book": "John",
+  "chapter": 19,
+  "entity_count": 9,
+  "entities": [
+    {
+      "id": "e.praetorium--370a8ad2",
+      "name": "Praetorium",
+      "type": "entity",
+      "role": "site",
+      "refs_count": 2
+    },
+    {
+      "id": "f.it-is-finished--e500c57b",
+      "name": "It is finished (τετέλεσται)",
+      "type": "figure",
+      "role": "saying",
+      "refs_count": 1
+    },
+    {
+      "id": "e.golgotha-place-of-a-skull--06eb880e",
+      "name": "Golgotha (Place of a Skull)",
+      "type": "entity",
+      "role": "site",
+      "refs_count": 1
+    },
+    {
+      "id": "f.water-and-blood-from-his-side--bd571b11",
+      "name": "Water and blood from his side",
+      "type": "figure",
+      "role": "sign",
+      "refs_count": 1
+    },
+    {
+      "id": "e.gabbatha-lithostrotos--1a113ba3",
+      "name": "Gabbatha (Lithostrotos)",
+      "type": "entity",
+      "role": "site",
+      "refs_count": 1
+    },
+    {
+      "id": "p.nicodemus--6ff832aa",
+      "name": "Nicodemus",
+      "type": "person",
+      "role": "interlocutor",
+      "refs_count": 3
+    },
+    {
+      "id": "f.behold-your-king--0546dc14",
+      "name": "Behold your king",
+      "type": "figure",
+      "role": "presentation",
+      "refs_count": 1
+    },
+    {
+      "id": "g.joseph-of-arimathea-and-nicodemus-burial--b3032448",
+      "name": "Joseph of Arimathea and Nicodemus (burial)",
+      "type": "group",
+      "role": "burial",
+      "refs_count": 1
+    },
+    {
+      "id": "f.title-on-the-cross-heb-lat-gr--a9609fa5",
+      "name": "Title on the cross (Heb/Lat/Gr)",
+      "type": "figure",
+      "role": "inscription",
+      "refs_count": 1
+    }
+  ]
+}

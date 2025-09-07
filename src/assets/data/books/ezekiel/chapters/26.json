@@ -1,0 +1,28 @@
+{
+  "book": "Ezekiel",
+  "chapter": 26,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "g.tyre.phoenicia--26eb5064",
+      "name": "Tyre (Phoenicia)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 2
+    },
+    {
+      "id": "p.nebuchadnezzar-ii-of-babylon.my-servant--a1611638",
+      "name": "Nebuchadnezzar II of Babylon (‘my servant’)",
+      "type": "person",
+      "role": "emperor",
+      "refs_count": 2
+    },
+    {
+      "id": "e.eleventh-year-first-month--740fea0b",
+      "name": "Eleventh year, first month (fall of Tyre)",
+      "type": "entity",
+      "role": "chronology",
+      "refs_count": 1
+    }
+  ]
+}

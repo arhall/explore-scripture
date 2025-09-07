@@ -1,0 +1,29 @@
+{
+  "name": "Paralytic lowered",
+  "type": "person",
+  "category": "forgiven",
+  "references": [
+    "Matt 9:1–8",
+    "Mark 2:1–12"
+  ],
+  "blurb": "Authority to forgive on earth verified by healing—Son of Man identity unveiled.",
+  "aka": [],
+  "id": "p.paralytic-lowered--16be799f",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Mark",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      9
+    ],
+    "Mark": [
+      2
+    ]
+  }
+}

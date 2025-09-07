@@ -1,0 +1,18 @@
+{
+  "name": "Plague of twenty-four thousand",
+  "type": "entity",
+  "references": [
+    "Numbers 25:9"
+  ],
+  "blurb": "Judgment halted by priestly zeal—holiness protects life.",
+  "category": "narrative",
+  "id": "e.plague-of-twenty-four-thousand--41713904",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      25
+    ]
+  }
+}

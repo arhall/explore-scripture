@@ -1,0 +1,56 @@
+{
+  "book": "1 Thessalonians",
+  "chapter": 3,
+  "entity_count": 7,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "p.timothy--227fb1d9",
+      "name": "Timothy",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 12
+    },
+    {
+      "id": "f.may-he-establish-your-hearts-blameless--ed9ff988",
+      "name": "May he establish your hearts blameless",
+      "type": "figure",
+      "role": "prayer",
+      "refs_count": 1
+    },
+    {
+      "id": "f.timothy-s-good-news-of-your-faith-and-love--8362ced7",
+      "name": "Timothy’s good news of your faith and love",
+      "type": "figure",
+      "role": "report",
+      "refs_count": 1
+    },
+    {
+      "id": "f.now-we-live-if-you-stand-fast--bfed599d",
+      "name": "Now we live, if you stand fast",
+      "type": "figure",
+      "role": "encouragement",
+      "refs_count": 1
+    },
+    {
+      "id": "f.the-tempter-might-have-tempted-you--df021d68",
+      "name": "The Tempter might have tempted you",
+      "type": "figure",
+      "role": "adversary",
+      "refs_count": 1
+    },
+    {
+      "id": "f.we-sent-timothy-to-strengthen-and-encourage--10f54e47",
+      "name": "We sent Timothy to strengthen and encourage",
+      "type": "figure",
+      "role": "mission",
+      "refs_count": 1
+    }
+  ]
+}

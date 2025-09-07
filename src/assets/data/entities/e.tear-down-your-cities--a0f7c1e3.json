@@ -1,0 +1,18 @@
+{
+  "id": "e.tear-down-your-cities--a0f7c1e3",
+  "name": "Tear down your cities",
+  "type": "entity",
+  "references": [
+    "Micah 5:10–15"
+  ],
+  "category": "purge-note",
+  "blurb": "Urban pride humbled; security decoupled from walls.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      5
+    ]
+  }
+}

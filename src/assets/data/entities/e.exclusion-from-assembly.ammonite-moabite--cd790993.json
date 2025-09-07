@@ -1,0 +1,18 @@
+{
+  "name": "Exclusion from assembly (Ammonite/Moabite)",
+  "type": "entity",
+  "references": [
+    "Nehemiah 13:1–3"
+  ],
+  "blurb": "Cites the law (Deut 23); separation aimed at idolatry, not ethnicity—purity for mission.",
+  "category": "theology",
+  "id": "e.exclusion-from-assembly.ammonite-moabite--cd790993",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      13
+    ]
+  }
+}

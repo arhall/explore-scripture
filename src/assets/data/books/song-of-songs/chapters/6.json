@@ -1,0 +1,14 @@
+{
+  "book": "Song of Songs",
+  "chapter": 6,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "e.turn-turn-o-shulammite--b5be4cd7",
+      "name": "‘Turn, turn, O Shulammite’",
+      "type": "entity",
+      "role": "poetry",
+      "refs_count": 1
+    }
+  ]
+}

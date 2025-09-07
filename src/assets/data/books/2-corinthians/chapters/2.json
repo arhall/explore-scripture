@@ -1,0 +1,70 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 2,
+  "entity_count": 9,
+  "entities": [
+    {
+      "id": "f.triumph-procession-and-aroma-of-christ--37f37fee",
+      "name": "Triumph procession and aroma of Christ",
+      "type": "figure",
+      "role": "triumph",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.restless-in-troas-searching-for-titus--5adb9120",
+      "name": "Restless in Troas; searching for Titus",
+      "type": "figure",
+      "role": "travel",
+      "refs_count": 1
+    },
+    {
+      "id": "f.painful-visit-integrity-note--a73c68b7",
+      "name": "Painful visit (integrity note)",
+      "type": "figure",
+      "role": "integrity-notes",
+      "refs_count": 1
+    },
+    {
+      "id": "f.tearful-letter-integrity-note--f548ebb7",
+      "name": "Tearful letter (integrity note)",
+      "type": "figure",
+      "role": "integrity-notes",
+      "refs_count": 1
+    },
+    {
+      "id": "f.textual-note-2-cor-2-10-in-the-person-of-christ--f082b3ef",
+      "name": "Textual note: 2 Cor 2:10 'in the person of Christ'",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1
+    },
+    {
+      "id": "f.forgive-the-offender-not-outwitted-by-satan--7dfbee44",
+      "name": "Forgive the offender; not outwitted by Satan",
+      "type": "figure",
+      "role": "forgiveness",
+      "refs_count": 1
+    },
+    {
+      "id": "e.troas--42f4953e",
+      "name": "Troas",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 2
+    },
+    {
+      "id": "f.integrity-notes-composite-letter--69411f19",
+      "name": "Integrity notes (composite-letter)",
+      "type": "figure",
+      "role": "integrity-notes",
+      "refs_count": 1
+    }
+  ]
+}

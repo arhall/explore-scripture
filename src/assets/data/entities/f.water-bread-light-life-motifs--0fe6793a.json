@@ -1,0 +1,33 @@
+{
+  "name": "Water / Bread / Light / Life motifs",
+  "type": "figure",
+  "category": "theme",
+  "references": [
+    "John 3–4",
+    "John 6",
+    "John 7–9",
+    "John 10–11"
+  ],
+  "aka": [],
+  "id": "f.water-bread-light-life-motifs--0fe6793a",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  }
+}

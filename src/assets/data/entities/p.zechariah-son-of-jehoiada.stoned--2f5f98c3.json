@@ -1,0 +1,18 @@
+{
+  "name": "Zechariah son of Jehoiada (stoned)",
+  "type": "person",
+  "references": [
+    "2 Chronicles 24:20–22"
+  ],
+  "blurb": "Prophetic martyr whose blood becomes a witness—Jesus will later reference this outrage.",
+  "category": "prophetic",
+  "id": "p.zechariah-son-of-jehoiada.stoned--2f5f98c3",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "2 Chronicles": [
+      24
+    ]
+  }
+}

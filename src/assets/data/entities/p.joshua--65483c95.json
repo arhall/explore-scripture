@@ -1,0 +1,24 @@
+{
+  "name": "Joshua",
+  "type": "person",
+  "references": [
+    "Joshua 1:1–9; 3–5; 23–24"
+  ],
+  "blurb": "Moses’ successor becomes a covenant general whose leadership is saturated in Scripture: meditate, obey, act. Joshua embodies the transition from promise to possession—leading Israel through Jordan on dry ground, renewing circumcision at Gilgal, and keeping Passover in the land. His courage is not bravado but trust anchored in God’s presence.",
+  "category": "narrative",
+  "cross_references": [
+    "Numbers 27:18–23",
+    "Deuteronomy 31:7–8",
+    "Joshua 1:8"
+  ],
+  "id": "p.joshua--65483c95",
+  "canonical_id": "p.joshua.hoshea--558e7dbd",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joshua": [
+      1
+    ]
+  }
+}

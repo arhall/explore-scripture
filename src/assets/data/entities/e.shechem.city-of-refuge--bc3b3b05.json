@@ -1,0 +1,18 @@
+{
+  "name": "Shechem (city of refuge)",
+  "type": "entity",
+  "references": [
+    "Joshua 20:7; 24:1"
+  ],
+  "blurb": "Refuge city and covenant venue—Abrahamic memory meets Joshua’s renewal.",
+  "category": "place",
+  "id": "e.shechem.city-of-refuge--bc3b3b05",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joshua": [
+      20
+    ]
+  }
+}

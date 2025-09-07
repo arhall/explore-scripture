@@ -1,0 +1,23 @@
+{
+  "id": "g.gaza--43b60de5",
+  "name": "Gaza",
+  "type": "group",
+  "references": [
+    "Zeph 2:4",
+    "Zech 9:5"
+  ],
+  "category": "city",
+  "blurb": "Philistine city facing abandonment in the Day.",
+  "canonical_id": "g.gaza.philistia--2489b4b8",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zephaniah": [
+      2
+    ],
+    "Zechariah": [
+      9
+    ]
+  }
+}

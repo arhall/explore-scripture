@@ -1,0 +1,70 @@
+{
+  "book": "Ezekiel",
+  "chapter": 8,
+  "entity_count": 9,
+  "entities": [
+    {
+      "id": "g.elders-of-israel-in-exile.inquirers--9103aa87",
+      "name": "Elders of Israel in exile (inquirers)",
+      "type": "group",
+      "role": "elders",
+      "refs_count": 1
+    },
+    {
+      "id": "g.women-weeping-for-tammuz--4224e705",
+      "name": "Women weeping for Tammuz",
+      "type": "group",
+      "role": "idolatry",
+      "refs_count": 1
+    },
+    {
+      "id": "g.seventy-elders-with-censers--113a58f7",
+      "name": "Seventy elders with censers",
+      "type": "group",
+      "role": "idolatry",
+      "refs_count": 1
+    },
+    {
+      "id": "g.twenty-five-men-worshiping-the-sun--ee8ecea2",
+      "name": "Twenty‑five men worshiping the sun",
+      "type": "group",
+      "role": "idolatry",
+      "refs_count": 1
+    },
+    {
+      "id": "e.abominations-at-the-temple.four-scenes--ac3e335b",
+      "name": "Abominations at the temple (four scenes)",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1
+    },
+    {
+      "id": "e.vision-transports.in-the-visions-of-god--53f280ac",
+      "name": "Vision transports (‘in the visions of God’)",
+      "type": "entity",
+      "role": "literary",
+      "refs_count": 1
+    },
+    {
+      "id": "e.north-gate-of-the-altar--498c2bbf",
+      "name": "North gate of the altar",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    },
+    {
+      "id": "e.inner-court-of-the-lords-house--b0c13e3c",
+      "name": "Inner court of the LORD’s house",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    },
+    {
+      "id": "e.fourth-year-of-exile--b51affb9",
+      "name": "Fourth year of exile (vision prep?)",
+      "type": "entity",
+      "role": "chronology",
+      "refs_count": 1
+    }
+  ]
+}

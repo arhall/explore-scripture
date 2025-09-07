@@ -1,0 +1,1061 @@
+{
+  "book": "Isaiah",
+  "coverage": "Granular Isaiah 1–66: prophet and household, disciples and sign-acts; Judean kings and officials (Eliakim, Shebna, Joah), Assyrian envoys; expanded nations (Elam, Media, Arabia, Dumah, Tarshish, Seba/Sheba); Zion personifications (Ariel, Valley of Vision, Watchmen); expanded divine/messianic figures (Servant—collective and individual, Spirit, Redeemer, Arm of the LORD); polemics (idols/craftsman parody, Bel/Nebo); Scripture/liturgical entities (Book of the LORD, sealed scroll, new song); highway motif, covenant renaming (Hephzibah/Beulah), cup of wrath; apocalyptic complex (24–27) with banquet, death swallowed, resurrection, Leviathan; historical crises (Syro‑Ephraimite, Assyrian siege, Hezekiah’s sign and envoys); Comfort–New Exodus (40–55), house of prayer for all peoples (56), Zion’s light (60–62), and new creation (65–66).",
+  "generated_at": "2025-09-02T03:15:53.473830",
+  "version": "v2.0-isaiah-all-expanded",
+  "id_scheme": "Cross-book stable by (type+primary-slug) with alias support; deterministic for new entries; reuses YHWH/Zion/Leviathan/Hezekiah/Solomon where present.",
+  "sections": [
+    {
+      "section": "Overview & Frame",
+      "entries": [
+        "Isaiah son of Amoz",
+        "The LORD (YHWH), the Holy One of Israel",
+        "Historical frame: Uzziah, Jotham, Ahaz, Hezekiah"
+      ]
+    },
+    {
+      "section": "Isaiah’s Family, Disciples, and Signs",
+      "entries": [
+        "Prophetess (Isaiah’s wife)",
+        "Shear‑jashub (‘A remnant shall return’)",
+        "Maher‑shalal‑hash‑baz (‘Swift spoil, speedy prey’)",
+        "Bind up the testimony; seal the teaching among my disciples",
+        "Isaiah’s naked sign‑act"
+      ]
+    },
+    {
+      "section": "Judean Kings, Court Officials, and Leadership Critique",
+      "entries": [
+        "Uzziah (Azariah) king of Judah",
+        "Jotham king of Judah",
+        "Ahaz king of Judah",
+        "Hezekiah king of Judah",
+        "Eliakim son of Hilkiah",
+        "Shebna the steward/scribe",
+        "Joah son of Asaph (recorder)",
+        "Blind watchmen, mute dogs (failed shepherds)",
+        "Eunuchs who keep my Sabbaths"
+      ]
+    },
+    {
+      "section": "Foreign Rulers, Envoys, and Imperial Machinery",
+      "entries": [
+        "Tiglath‑Pileser III (Pul) of Assyria",
+        "Shalmaneser V of Assyria",
+        "Sargon II of Assyria",
+        "Sennacherib of Assyria",
+        "Tartan and Rabsaris (Assyrian envoys)",
+        "Rabshakeh (field commander)",
+        "Merodach‑Baladan of Babylon",
+        "Cyrus the Great of Persia"
+      ]
+    },
+    {
+      "section": "Nations & Oracles Expanded",
+      "entries": [
+        "Assyria",
+        "Babylon",
+        "Elam and Media",
+        "Philistia",
+        "Moab",
+        "Damascus (Aram)",
+        "Ephraim/Israel (Northern Kingdom)",
+        "Egypt",
+        "Cush (Ethiopia)",
+        "Tyre (Phoenicia)",
+        "Edom (Bozrah)",
+        "Arabia (Kedar, Tema)",
+        "Dumah (Edom oracle)",
+        "Coastlands / Isles",
+        "Ships of Tarshish",
+        "Seba and Sheba"
+      ]
+    },
+    {
+      "section": "Zion & City Personifications",
+      "entries": [
+        "Zion / Daughter of Zion",
+        "Ariel (Jerusalem, ‘altar hearth’)",
+        "Valley of Vision (Jerusalem under critique)",
+        "Daughter Babylon",
+        "City of Chaos (tohu)",
+        "Watchmen on your walls, O Jerusalem"
+      ]
+    },
+    {
+      "section": "Heavenly, Messianic, Servant, and Pneumatological Figures",
+      "entries": [
+        "Seraphim",
+        "Immanuel (‘God with us’)",
+        "Royal Child: Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace",
+        "Branch / Shoot from the stump of Jesse",
+        "Servant of the LORD — Israel (collective)",
+        "Servant of the LORD — Suffering and Vindicated (individual)",
+        "The Arm of the LORD",
+        "Spirit of the LORD / Holy Spirit",
+        "Redeemer / Kinsman for Zion",
+        "Leviathan (twisting serpent)"
+      ]
+    },
+    {
+      "section": "Polemics, Scripture, Worship, and Covenant Signs",
+      "entries": [
+        "Idols and the craftsman parody",
+        "Bel and Nebo (Babylonian gods)",
+        "The Book of the LORD (seek and read)",
+        "Sealed scroll and illiteracy motif",
+        "Highway motif (Way of Holiness / New Exodus)",
+        "New song and barren woman’s song",
+        "Cup of wrath removed and given",
+        "Hephzibah and Beulah (new names)",
+        "Stone of stumbling and tested cornerstone",
+        "Swords into plowshares (Zion’s instruction)"
+      ]
+    },
+    {
+      "section": "Apocalypse, Resurrection, and New Creation",
+      "entries": [
+        "Isaiah’s Little Apocalypse",
+        "Banquet on the mountain",
+        "Death swallowed up; tears wiped away",
+        "Your dead shall live; my dead body shall arise",
+        "Judgment of Edom (Bozrah) and the Winepress",
+        "Desert blossoms like the crocus",
+        "Final gathering and universal worship"
+      ]
+    },
+    {
+      "section": "Historical Crises & Narrative Program",
+      "entries": [
+        "Call & commission of Isaiah",
+        "Syro‑Ephraimite crisis & waters of Shiloah",
+        "Woes and the Vineyard Song",
+        "Additional ‘woes’ against scoffers and alliance‑makers",
+        "Assyrian invasion & overnight deliverance",
+        "Hezekiah’s sickness, sign of the shadow, and Babylonian envoys",
+        "Comfort–New Exodus program",
+        "Everlasting covenant & Davidic mercies",
+        "House of prayer for all peoples (eunuchs & foreigners)",
+        "Zion’s light and nations’ pilgrimage",
+        "New heavens and new earth"
+      ]
+    }
+  ],
+  "entries_count": 85,
+  "entries": [
+    {
+      "name": "Isaiah son of Amoz",
+      "type": "person",
+      "references": [
+        "Isaiah 1:1; 2:1; 6; 7:3; 20:2–3; 37–39"
+      ],
+      "blurb": "Jerusalem court prophet spanning the reigns of Uzziah, Jotham, Ahaz, and Hezekiah. His ministry unites holy vision (ch. 6) with political counsel (7–8; 36–39) and eschatological comfort (40–66). Later tradition remembers his martyrdom (sawn in two; cf. Heb 11:37).",
+      "relations": {
+        "father": "Amoz",
+        "location": "Jerusalem"
+      },
+      "category": "prophet",
+      "cross_references": [
+        "Hebrews 11:37"
+      ],
+      "id": "p.isaiah-son-of-amoz--c7e8486a"
+    },
+    {
+      "name": "The LORD (YHWH), the Holy One of Israel",
+      "type": "divine",
+      "references": [
+        "Isaiah 1–66; esp. 1:4; 5:16; 6:3; 41:14; 43:3; 55:5"
+      ],
+      "blurb": "Isaiah’s keynote divine title—God’s moral majesty set within covenant love. Holiness is not aloofness but purifying fidelity that judges and restores.",
+      "aka": [
+        "Holy One of Israel"
+      ],
+      "category": "theology",
+      "id": "d.the-lord-the-holy-one-of-israel.yhwh--53d03337"
+    },
+    {
+      "name": "Historical frame: Uzziah, Jotham, Ahaz, Hezekiah",
+      "type": "entity",
+      "references": [
+        "Isaiah 1:1"
+      ],
+      "blurb": "Late 8th–early 7th century BCE: Assyria ascendant, Syro‑Ephraimite war, Sennacherib’s invasion, and the Babylonian horizon.",
+      "category": "history",
+      "id": "e.historical-frame-uzziah-jotham-ahaz-hezekiah--cea0e9d5"
+    },
+    {
+      "name": "Prophetess (Isaiah’s wife)",
+      "type": "person",
+      "references": [
+        "Isaiah 8:3"
+      ],
+      "blurb": "Shares Isaiah’s vocation in a sign‑act pregnancy; the household itself becomes prophetic theater.",
+      "category": "family",
+      "id": "p.prophetess.isaiahs-wife--c2825865"
+    },
+    {
+      "name": "Shear‑jashub (‘A remnant shall return’)",
+      "type": "person",
+      "references": [
+        "Isaiah 7:3"
+      ],
+      "blurb": "Accompanies Isaiah to meet Ahaz; his name pledges judgment‑through‑survival and anticipates post‑exilic hope.",
+      "category": "sign-child",
+      "id": "p.shear-jashub.a-remnant-shall-return--cc83fd77"
+    },
+    {
+      "name": "Maher‑shalal‑hash‑baz (‘Swift spoil, speedy prey’)",
+      "type": "person",
+      "references": [
+        "Isaiah 8:1–4"
+      ],
+      "blurb": "Child’s name warns Damascus and Samaria—history can turn on a word; plunder is imminent.",
+      "category": "sign-child",
+      "id": "p.maher-shalal-hash-baz.swift-spoil-speedy-prey--545f299a"
+    },
+    {
+      "name": "Bind up the testimony; seal the teaching among my disciples",
+      "type": "group",
+      "references": [
+        "Isaiah 8:16–18"
+      ],
+      "blurb": "Isaiah gathers a circle of learners; his children are ‘signs and portents’—a prophetic community shaped by Scripture.",
+      "category": "discipleship",
+      "id": "g.bind-up-the-testimony-seal-the-teaching-among-my-disciples--1b3f5b6c"
+    },
+    {
+      "name": "Isaiah’s naked sign‑act",
+      "type": "entity",
+      "references": [
+        "Isaiah 20:1–6"
+      ],
+      "blurb": "Three‑year enacted parable warning against trust in Egypt/Cush—political alliances undress a nation.",
+      "category": "sign",
+      "count": 3,
+      "count_note": "Years of sign‑act",
+      "id": "e.isaiahs-naked-sign-act--743cd527"
+    },
+    {
+      "name": "Uzziah (Azariah) king of Judah",
+      "type": "person",
+      "references": [
+        "Isaiah 1:1; 6:1"
+      ],
+      "blurb": "Prosperity and pride culminate in a leprous end (cf. 2 Chr 26). In the year of his death, Isaiah saw the Lord—earthly thrones fade before the heavenly.",
+      "relations": {
+        "kingdom": "Judah"
+      },
+      "category": "king",
+      "cross_references": [
+        "2 Chronicles 26"
+      ],
+      "id": "p.uzziah-king-of-judah.azariah--03b7fdf2"
+    },
+    {
+      "name": "Jotham king of Judah",
+      "type": "person",
+      "references": [
+        "Isaiah 1:1; 7:1"
+      ],
+      "blurb": "Steady yet overshadowed; his reign bridges stability to the crisis under Ahaz.",
+      "relations": {
+        "kingdom": "Judah"
+      },
+      "category": "king",
+      "id": "p.jotham-king-of-judah--22629070"
+    },
+    {
+      "name": "Ahaz king of Judah",
+      "type": "person",
+      "references": [
+        "Isaiah 7:1–25; 8"
+      ],
+      "blurb": "Refuses the sign, courts Assyria, and installs syncretism—fear without faith corrodes public life.",
+      "relations": {
+        "kingdom": "Judah"
+      },
+      "category": "king",
+      "id": "p.ahaz-king-of-judah--189a5877"
+    },
+    {
+      "name": "Hezekiah king of Judah",
+      "type": "person",
+      "references": [
+        "Isaiah 36–39; 38:1–6"
+      ],
+      "blurb": "Trusts God under siege; prays and receives deliverance. Yet his post‑healing pride with Babylonian envoys forecasts exile. Fifteen years added to his life.",
+      "relations": {
+        "kingdom": "Judah"
+      },
+      "category": "king",
+      "count": 15,
+      "count_note": "Years added (38:5)",
+      "id": "p.hezekiah-king-of-judah--d57b4838"
+    },
+    {
+      "name": "Eliakim son of Hilkiah",
+      "type": "person",
+      "references": [
+        "Isaiah 22:20–25; 36:3,22; 37:2"
+      ],
+      "blurb": "Given ‘the key of the house of David’—a peg fastened in a sure place; replaces the proud steward Shebna.",
+      "relations": {
+        "office": "over the household"
+      },
+      "category": "official",
+      "id": "p.eliakim-son-of-hilkiah--86222786"
+    },
+    {
+      "name": "Shebna the steward/scribe",
+      "type": "person",
+      "references": [
+        "Isaiah 22:15–19; 36:3,22"
+      ],
+      "blurb": "Self‑promoting official demoted by oracle; warns leaders against vanity amid crisis.",
+      "relations": {
+        "office": "steward/scribe"
+      },
+      "category": "official",
+      "id": "p.shebna-the-steward-scribe--0229c782"
+    },
+    {
+      "name": "Joah son of Asaph (recorder)",
+      "type": "person",
+      "references": [
+        "Isaiah 36:3,22"
+      ],
+      "blurb": "Court recorder in the Hezekian delegation to the wall; a witness to Rabshakeh’s propaganda.",
+      "category": "official",
+      "id": "p.joah-son-of-asaph.recorder--837c88fc"
+    },
+    {
+      "name": "Blind watchmen, mute dogs (failed shepherds)",
+      "type": "group",
+      "references": [
+        "Isaiah 56:10–12"
+      ],
+      "blurb": "Leaders addicted to gain and sleep—satire exposes spiritual negligence that imperils the flock.",
+      "category": "critique",
+      "id": "g.blind-watchmen-mute-dogs.failed-shepherds--74428a74"
+    },
+    {
+      "name": "Eunuchs who keep my Sabbaths",
+      "type": "group",
+      "references": [
+        "Isaiah 56:3–5"
+      ],
+      "blurb": "From exclusion to memorial and a name better than sons and daughters—holiness makes hospitality.",
+      "category": "inclusion",
+      "id": "g.eunuchs-who-keep-my-sabbaths--0b991aba"
+    },
+    {
+      "name": "Tiglath‑Pileser III (Pul) of Assyria",
+      "type": "person",
+      "references": [
+        "Isaiah 7–8 (background); 2 Kings 15–16"
+      ],
+      "blurb": "Expansionist monarch who reshaped the Levant; Judah’s temptation to trust him becomes a theological failure.",
+      "relations": {
+        "empire": "Assyria"
+      },
+      "category": "emperor",
+      "id": "p.tiglath-pileser-iii-of-assyria.pul--d6627d94"
+    },
+    {
+      "name": "Shalmaneser V of Assyria",
+      "type": "person",
+      "references": [
+        "Isaiah 20 (background); 2 Kings 17"
+      ],
+      "blurb": "Begins the siege of Samaria—history’s gears grind toward exile.",
+      "relations": {
+        "empire": "Assyria"
+      },
+      "category": "emperor",
+      "id": "p.shalmaneser-v-of-assyria--dbdb526a"
+    },
+    {
+      "name": "Sargon II of Assyria",
+      "type": "person",
+      "references": [
+        "Isaiah 20:1"
+      ],
+      "blurb": "Takes Ashdod; Isaiah’s sign dramatizes Egypt/Cush’s futility.",
+      "relations": {
+        "empire": "Assyria"
+      },
+      "category": "emperor",
+      "id": "p.sargon-ii-of-assyria--8676b5f2"
+    },
+    {
+      "name": "Sennacherib of Assyria",
+      "type": "person",
+      "references": [
+        "Isaiah 36–37"
+      ],
+      "blurb": "Boasts against the God of Israel; his army is struck in a night—empire meets the Angel of the LORD.",
+      "relations": {
+        "empire": "Assyria"
+      },
+      "category": "emperor",
+      "id": "p.sennacherib-of-assyria--9abe44ca"
+    },
+    {
+      "name": "Tartan and Rabsaris (Assyrian envoys)",
+      "type": "group",
+      "references": [
+        "Isaiah 36:2 (parallels in Kings)"
+      ],
+      "blurb": "Military and palace officials accompanying Rabshakeh—Assyria’s intimidation is bureaucratic as well as brutal.",
+      "category": "officials",
+      "id": "g.tartan-and-rabsaris.assyrian-envoys--18ee3a28"
+    },
+    {
+      "name": "Rabshakeh (field commander)",
+      "type": "person",
+      "references": [
+        "Isaiah 36"
+      ],
+      "blurb": "Master of psychological ops—targets language, identity, and faith; Isaiah reframes his speech as blasphemy to be answered by prayer.",
+      "category": "official",
+      "id": "p.rabshakeh.field-commander--d99d9803"
+    },
+    {
+      "name": "Merodach‑Baladan of Babylon",
+      "type": "person",
+      "references": [
+        "Isaiah 39:1"
+      ],
+      "blurb": "Envoys court Hezekiah after his recovery; flattery sets a trap—Isaiah prophesies future Babylonian exile.",
+      "relations": {
+        "kingdom": "Babylon"
+      },
+      "category": "king",
+      "id": "p.merodach-baladan-of-babylon--78b7a9b8"
+    },
+    {
+      "name": "Cyrus the Great of Persia",
+      "type": "person",
+      "references": [
+        "Isaiah 44:28; 45:1–7,13"
+      ],
+      "blurb": "Named as YHWH’s ‘shepherd’ and ‘anointed’ to release exiles and rebuild—monotheism meets realpolitik in a stunning providence.",
+      "relations": {
+        "kingdom": "Persia"
+      },
+      "category": "king",
+      "id": "p.cyrus-the-great-of-persia--e5f9ed4c"
+    },
+    {
+      "name": "Assyria",
+      "type": "group",
+      "references": [
+        "Isaiah 7–10; 20; 36–37"
+      ],
+      "blurb": "Rod of God’s anger yet judged for arrogance; yoke shattered on Zion’s hill.",
+      "category": "nation",
+      "id": "g.assyria--0b88cead"
+    },
+    {
+      "name": "Babylon",
+      "type": "group",
+      "references": [
+        "Isaiah 13–14; 39; 43:14; 47"
+      ],
+      "blurb": "Prideful archetype destined for downfall; stage of exile and theater of new exodus.",
+      "category": "nation",
+      "id": "g.babylon--bb4be558"
+    },
+    {
+      "name": "Elam and Media",
+      "type": "group",
+      "references": [
+        "Isaiah 13:17; 21:2"
+      ],
+      "blurb": "Instruments raised against Babylon—empires are tools in a sovereign hand.",
+      "category": "nations",
+      "id": "g.elam-and-media--fe0219be"
+    },
+    {
+      "name": "Philistia",
+      "type": "group",
+      "references": [
+        "Isaiah 14:28–32"
+      ],
+      "blurb": "Admonished not to gloat—serpent imagery escalates judgment metaphors.",
+      "category": "nation",
+      "id": "g.philistia--5497e6d6"
+    },
+    {
+      "name": "Moab",
+      "type": "group",
+      "references": [
+        "Isaiah 15–16"
+      ],
+      "blurb": "Lament over Moab with a messianic refuge in David’s tent—steadfast love enthrones justice.",
+      "category": "nation",
+      "id": "g.moab--0526e590"
+    },
+    {
+      "name": "Damascus (Aram)",
+      "type": "group",
+      "references": [
+        "Isaiah 7; 17"
+      ],
+      "blurb": "Falls with Ephraim; fading splendor catechizes dependence on God.",
+      "category": "nation",
+      "id": "g.damascus.aram--38c72bb6"
+    },
+    {
+      "name": "Ephraim/Israel (Northern Kingdom)",
+      "type": "group",
+      "references": [
+        "Isaiah 7; 9:8–21; 28"
+      ],
+      "blurb": "Northern partner in the crisis; oracles of judgment tempered by remnant hope.",
+      "category": "nation",
+      "id": "g.ephraim-israel.northern-kingdom--63842eae"
+    },
+    {
+      "name": "Egypt",
+      "type": "group",
+      "references": [
+        "Isaiah 19; 20; 30–31"
+      ],
+      "blurb": "From false refuge to future worshiper—altar in Egypt and highway with Assyria prophesy reconciliation.",
+      "category": "nation",
+      "id": "g.egypt--ab1ad00f"
+    },
+    {
+      "name": "Cush (Ethiopia)",
+      "type": "group",
+      "references": [
+        "Isaiah 18; 20"
+      ],
+      "blurb": "Envoys on the Nile; sign‑act exposes geopolitical vanity.",
+      "category": "nation",
+      "id": "g.cush.ethiopia--aa484fef"
+    },
+    {
+      "name": "Tyre (Phoenicia)",
+      "type": "group",
+      "references": [
+        "Isaiah 23"
+      ],
+      "blurb": "Merchant queen humbled; wealth will later ‘belong to the LORD’ for holy service.",
+      "category": "nation",
+      "id": "g.tyre.phoenicia--26eb5064"
+    },
+    {
+      "name": "Edom (Bozrah)",
+      "type": "group",
+      "references": [
+        "Isaiah 34; 63:1–6"
+      ],
+      "blurb": "Stage for judgment visions; a winepress image depicts the day of vengeance.",
+      "category": "nation",
+      "id": "g.edom.bozrah--286918d3"
+    },
+    {
+      "name": "Arabia (Kedar, Tema)",
+      "type": "group",
+      "references": [
+        "Isaiah 21:13–17; 42:11"
+      ],
+      "blurb": "Desert tribes in both doom and doxology—judgment and praise ring through the tents.",
+      "category": "nation",
+      "id": "g.arabia.kedar-tema--1bbc65f6"
+    },
+    {
+      "name": "Dumah (Edom oracle)",
+      "type": "entity",
+      "references": [
+        "Isaiah 21:11–12"
+      ],
+      "blurb": "Watchman’s riddle from Seir—morning comes, and also night; hope and warning entwined.",
+      "category": "oracle",
+      "id": "e.dumah.edom-oracle--094cce1e"
+    },
+    {
+      "name": "Coastlands / Isles",
+      "type": "group",
+      "references": [
+        "Isaiah 41:1; 42:4,10; 49:1"
+      ],
+      "blurb": "Distant peoples summoned to court and song; horizon of mission widens beyond Israel.",
+      "category": "peoples",
+      "id": "g.coastlands-isles--17ece02d"
+    },
+    {
+      "name": "Ships of Tarshish",
+      "type": "entity",
+      "references": [
+        "Isaiah 2:16; 23:1,14; 60:9"
+      ],
+      "blurb": "Symbol of global trade and human pride; later they ferry sons and wealth to Zion’s light.",
+      "category": "symbol",
+      "id": "e.ships-of-tarshish--9268cdea"
+    },
+    {
+      "name": "Seba and Sheba",
+      "type": "group",
+      "references": [
+        "Isaiah 43:3; 60:6"
+      ],
+      "blurb": "Nations and riches reoriented to Zion; ransom language and pilgrimage converge in worship.",
+      "category": "peoples",
+      "id": "g.seba-and-sheba--3935b8d7"
+    },
+    {
+      "name": "Zion / Daughter of Zion",
+      "type": "entity",
+      "references": [
+        "Isaiah 1–2; 4; 12; 33; 40; 52; 60–62; 66"
+      ],
+      "blurb": "City as bride and mother—purged, renamed, and radiant; from judgment to jubilee, Zion becomes a house of prayer for all peoples.",
+      "aka": [
+        "Daughter of Zion"
+      ],
+      "category": "city",
+      "id": "e.zion-daughter-of-zion--8cdd3ba6"
+    },
+    {
+      "name": "Ariel (Jerusalem, ‘altar hearth’)",
+      "type": "entity",
+      "references": [
+        "Isaiah 29:1–8"
+      ],
+      "blurb": "Siege‑stricken Jerusalem called ‘Ariel’—altar imagery frames both judgment and deliverance.",
+      "category": "city",
+      "id": "e.ariel.jerusalem-altar-hearth--bc6b74bd"
+    },
+    {
+      "name": "Valley of Vision (Jerusalem under critique)",
+      "type": "entity",
+      "references": [
+        "Isaiah 22:1–14"
+      ],
+      "blurb": "City parties amid peril; leaders secure waterworks but neglect the Maker—fatal pragmatism.",
+      "category": "city",
+      "id": "e.valley-of-vision.jerusalem-under-critique--11f1c53a"
+    },
+    {
+      "name": "Daughter Babylon",
+      "type": "entity",
+      "references": [
+        "Isaiah 47"
+      ],
+      "blurb": "Pampered ruler dethroned; exposure of occult pride—humiliation invites repentance yet receives justice.",
+      "category": "city",
+      "id": "e.daughter-babylon--702ecaa6"
+    },
+    {
+      "name": "City of Chaos (tohu)",
+      "type": "entity",
+      "references": [
+        "Isaiah 24:10"
+      ],
+      "blurb": "Uncreation imagery—sin disintegrates civic order into formlessness; only God’s kingdom endures.",
+      "category": "apocalypse",
+      "id": "e.city-of-chaos.tohu--12570fee"
+    },
+    {
+      "name": "Watchmen on your walls, O Jerusalem",
+      "type": "group",
+      "references": [
+        "Isaiah 62:6; 52:8"
+      ],
+      "blurb": "Intercessory sentinels who will not keep silent until Zion is established—a liturgy of persistence.",
+      "category": "ministry",
+      "id": "g.watchmen-on-your-walls-o-jerusalem--325be0b0"
+    },
+    {
+      "name": "Seraphim",
+      "type": "group",
+      "references": [
+        "Isaiah 6:2–7"
+      ],
+      "blurb": "Fiery throne‑room beings; a coal touches Isaiah’s lips—guilt removed, sin atoned.",
+      "category": "heavenly",
+      "id": "g.seraphim--b26df96f"
+    },
+    {
+      "name": "Immanuel (‘God with us’)",
+      "type": "figure",
+      "references": [
+        "Isaiah 7:14; 8:8,10"
+      ],
+      "blurb": "Sign to the house of David that God is with His people amid siege; later echoed at the incarnation without erasing the 8th‑century horizon.",
+      "category": "sign",
+      "id": "f.immanuel.god-with-us--eb10ce1b"
+    },
+    {
+      "name": "Royal Child: Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace",
+      "type": "figure",
+      "references": [
+        "Isaiah 9:1–7"
+      ],
+      "blurb": "Ever‑expanding government in justice and righteousness from David’s throne—messianic hope surpassing any immediate heir.",
+      "category": "messianic",
+      "id": "f.royal-child-wonderful-counselor-mighty-god-everlasting-father-prince-of-peace--5192f332"
+    },
+    {
+      "name": "Branch / Shoot from the stump of Jesse",
+      "type": "figure",
+      "references": [
+        "Isaiah 11:1–10"
+      ],
+      "blurb": "Spirit‑anointed ruler judges with righteousness; knowledge of the LORD fills the earth—creation reconciled.",
+      "aka": [
+        "Branch",
+        "Root of Jesse"
+      ],
+      "category": "messianic",
+      "id": "f.branch-shoot-from-the-stump-of-jesse--fcedfba5"
+    },
+    {
+      "name": "Servant of the LORD — Israel (collective)",
+      "type": "figure",
+      "references": [
+        "Isaiah 41–49"
+      ],
+      "blurb": "Blind yet chosen; called to be a light to the nations—Israel’s vocation named before its healing.",
+      "category": "servant",
+      "id": "f.servant-of-the-lord-israel.collective--bbe4e224"
+    },
+    {
+      "name": "Servant of the LORD — Suffering and Vindicated (individual)",
+      "type": "figure",
+      "references": [
+        "Isaiah 42:1–9; 49:1–6; 50:4–11; 52:13–53:12"
+      ],
+      "blurb": "Gentle justice, worldwide mission, obedient suffering, bearing iniquities, and exaltation—the hinge of Isaiah’s gospel.",
+      "category": "servant",
+      "count": 4,
+      "count_note": "Four Servant Songs",
+      "id": "f.servant-of-the-lord-suffering-and-vindicated.individual--c53f7bfd"
+    },
+    {
+      "name": "The Arm of the LORD",
+      "type": "figure",
+      "references": [
+        "Isaiah 51:9; 52:10; 53:1"
+      ],
+      "blurb": "Metonym for God’s saving power—new exodus strength laid bare to the nations.",
+      "category": "theophany",
+      "id": "f.the-arm-of-the-lord--95ac4f7b"
+    },
+    {
+      "name": "Spirit of the LORD / Holy Spirit",
+      "type": "entity",
+      "references": [
+        "Isaiah 11:2; 32:15; 42:1; 44:3; 59:21; 61:1; 63:10–14"
+      ],
+      "blurb": "Creative outpouring, anointing for justice, covenantal indwelling, and grieving presence; pneumatology braided through Isaiah’s hope.",
+      "category": "theology",
+      "id": "e.spirit-of-the-lord-holy-spirit--b36a77db"
+    },
+    {
+      "name": "Redeemer / Kinsman for Zion",
+      "type": "figure",
+      "references": [
+        "Isaiah 41:14; 43:14; 44:6,24; 47:4; 59:20"
+      ],
+      "blurb": "Go’el language recasts exodus grace for exile—God Himself comes as Zion’s kinsman‑redeemer.",
+      "category": "covenant",
+      "id": "f.redeemer-kinsman-for-zion--ec6d06c0"
+    },
+    {
+      "name": "Leviathan (twisting serpent)",
+      "type": "entity",
+      "references": [
+        "Isaiah 27:1"
+      ],
+      "blurb": "Chaos‑dragon pierced by YHWH—cosmic victory frames the vineyard’s restoration.",
+      "category": "cosmic",
+      "id": "e.leviathan--380c58dd"
+    },
+    {
+      "name": "Idols and the craftsman parody",
+      "type": "entity",
+      "references": [
+        "Isaiah 40:18–20; 41:6–7; 44:9–20; 46:1–7"
+      ],
+      "blurb": "Trial speeches mock the maker who warms himself with half the wood and worships the rest—monotheistic satire exposes the folly of carved gods.",
+      "category": "polemic",
+      "id": "e.idols-and-the-craftsman-parody--a447cb13"
+    },
+    {
+      "name": "Bel and Nebo (Babylonian gods)",
+      "type": "entity",
+      "references": [
+        "Isaiah 46:1–2"
+      ],
+      "blurb": "Idols stoop and bow; they cannot save but must be carried—contrast with the God who carries His people.",
+      "category": "idol",
+      "id": "e.bel-and-nebo.babylonian-gods--3679b594"
+    },
+    {
+      "name": "The Book of the LORD (seek and read)",
+      "type": "entity",
+      "references": [
+        "Isaiah 34:16"
+      ],
+      "blurb": "Prophetic writings as covenant court record—what is written will not fail.",
+      "category": "scripture",
+      "id": "e.the-book-of-the-lord.seek-and-read--4c572f9a"
+    },
+    {
+      "name": "Sealed scroll and illiteracy motif",
+      "type": "entity",
+      "references": [
+        "Isaiah 29:11–12"
+      ],
+      "blurb": "Revelation unopened by both learned and unlearned—pride and apathy blind a people to the Word.",
+      "category": "motif",
+      "id": "e.sealed-scroll-and-illiteracy-motif--388e59d9"
+    },
+    {
+      "name": "Highway motif (Way of Holiness / New Exodus)",
+      "type": "entity",
+      "references": [
+        "Isaiah 11:16; 19:23; 35:8; 40:3; 62:10"
+      ],
+      "blurb": "A prepared road for the redeemed—wilderness becomes thoroughfare; nations join the pilgrimage.",
+      "category": "motif",
+      "id": "e.highway-motif.way-of-holiness-new-exodus--479428e2"
+    },
+    {
+      "name": "New song and barren woman’s song",
+      "type": "entity",
+      "references": [
+        "Isaiah 42:10; 54:1"
+      ],
+      "blurb": "Creation and nations are summoned to fresh praise; the barren sings—grace outruns former desolation.",
+      "category": "worship",
+      "id": "e.new-song-and-barren-womans-song--0631c2bc"
+    },
+    {
+      "name": "Cup of wrath removed and given",
+      "type": "entity",
+      "references": [
+        "Isaiah 51:17,22; 63:6"
+      ],
+      "blurb": "Jerusalem drinks the cup of staggering; God takes it from her hand and gives it to oppressors—justice meets mercy.",
+      "category": "theology",
+      "id": "e.cup-of-wrath-removed-and-given--a7adc2ee"
+    },
+    {
+      "name": "Hephzibah and Beulah (new names)",
+      "type": "entity",
+      "references": [
+        "Isaiah 62:4"
+      ],
+      "blurb": "Forsaken becomes My‑Delight‑Is‑In‑Her; Desolate becomes Married—marital joy as civic restoration.",
+      "category": "restoration",
+      "id": "e.hephzibah-and-beulah.new-names--f3b2ff61"
+    },
+    {
+      "name": "Stone of stumbling and tested cornerstone",
+      "type": "entity",
+      "references": [
+        "Isaiah 8:14–15; 28:16"
+      ],
+      "blurb": "God Himself a sanctuary and a snare; yet He lays in Zion a sure foundation—faith vs. presumption.",
+      "category": "theology",
+      "id": "e.stone-of-stumbling-and-tested-cornerstone--1783c652"
+    },
+    {
+      "name": "Swords into plowshares (Zion’s instruction)",
+      "type": "entity",
+      "references": [
+        "Isaiah 2:2–4"
+      ],
+      "blurb": "Nations stream to Torah; war‑craft becomes agriculture—shalom is taught, not stumbled into.",
+      "category": "ethics",
+      "id": "e.swords-into-plowshares.zions-instruction--03251c07"
+    },
+    {
+      "name": "Isaiah’s Little Apocalypse",
+      "type": "entity",
+      "references": [
+        "Isaiah 24–27"
+      ],
+      "blurb": "Cosmic judgment and song: city of chaos falls; a banquet on the mountain; death swallowed; resurrection sung; Leviathan slain.",
+      "category": "apocalypse",
+      "id": "e.isaiahs-little-apocalypse--31c95a3d"
+    },
+    {
+      "name": "Banquet on the mountain",
+      "type": "entity",
+      "references": [
+        "Isaiah 25:6–9"
+      ],
+      "blurb": "A feast of rich food and well‑aged wine; God wipes tears and removes reproach—joy becomes public policy of the kingdom.",
+      "category": "hope",
+      "id": "e.banquet-on-the-mountain--c8ef3ea5"
+    },
+    {
+      "name": "Death swallowed up; tears wiped away",
+      "type": "entity",
+      "references": [
+        "Isaiah 25:7–8"
+      ],
+      "blurb": "From shroud to celebration—resurrection hope breaks into prophetic poetry.",
+      "category": "hope",
+      "id": "e.death-swallowed-up-tears-wiped-away--98fd22ce"
+    },
+    {
+      "name": "Your dead shall live; my dead body shall arise",
+      "type": "entity",
+      "references": [
+        "Isaiah 26:19"
+      ],
+      "blurb": "A rare Old Testament overture to bodily resurrection; dew of light falls on the land of shades.",
+      "category": "resurrection",
+      "id": "e.your-dead-shall-live-my-dead-body-shall-arise--1ffe2166"
+    },
+    {
+      "name": "Judgment of Edom (Bozrah) and the Winepress",
+      "type": "entity",
+      "references": [
+        "Isaiah 34; 63:1–6"
+      ],
+      "blurb": "Garments spattered from treading the winepress alone—imagery of the day of vengeance and year of redemption.",
+      "category": "judgment",
+      "id": "e.judgment-of-edom-and-the-winepress.bozrah--af43de63"
+    },
+    {
+      "name": "Desert blossoms like the crocus",
+      "type": "entity",
+      "references": [
+        "Isaiah 35:1–10"
+      ],
+      "blurb": "Hands strengthened, knees firm; blind see, deaf hear—creation healed and pilgrims sing on the Way of Holiness.",
+      "category": "restoration",
+      "id": "e.desert-blossoms-like-the-crocus--3966a2f7"
+    },
+    {
+      "name": "Final gathering and universal worship",
+      "type": "entity",
+      "references": [
+        "Isaiah 66:18–24"
+      ],
+      "blurb": "All nations and tongues come to see the glory; from new moon to new moon, all flesh worships before the LORD.",
+      "category": "eschatology",
+      "id": "e.final-gathering-and-universal-worship--3e659b4a"
+    },
+    {
+      "name": "Call & commission of Isaiah",
+      "type": "entity",
+      "references": [
+        "Isaiah 6:1–13"
+      ],
+      "blurb": "Trisagion vision; coal‑cleansed lips; a hardening ministry until holy seed remains—judgment that preserves a stump.",
+      "category": "call",
+      "id": "e.call-commission-of-isaiah--a4f0c431"
+    },
+    {
+      "name": "Syro‑Ephraimite crisis & waters of Shiloah",
+      "type": "entity",
+      "references": [
+        "Isaiah 7–8"
+      ],
+      "blurb": "Ahaz refuses trust; Immanuel sign given; gentle waters rejected bring Assyria’s flood.",
+      "category": "history",
+      "id": "e.syro-ephraimite-crisis-waters-of-shiloah--588f305a"
+    },
+    {
+      "name": "Woes and the Vineyard Song",
+      "type": "entity",
+      "references": [
+        "Isaiah 5:1–30"
+      ],
+      "blurb": "Beloved’s vineyard yields wild grapes; six woes expose greed, drunkenness, injustice, and cynicism.",
+      "category": "ethics",
+      "count": 6,
+      "count_note": "Six woes in Isaiah 5",
+      "id": "e.woes-and-the-vineyard-song--e1d2ef28"
+    },
+    {
+      "name": "Additional ‘woes’ against scoffers and alliance‑makers",
+      "type": "entity",
+      "references": [
+        "Isaiah 10:1; 28–33"
+      ],
+      "blurb": "Unjust decrees, covenant with death, reliance on Egypt—prophetic ‘woe’ sharpens conscience.",
+      "category": "ethics",
+      "id": "e.additional-woes-against-scoffers-and-alliance-makers--20793192"
+    },
+    {
+      "name": "Assyrian invasion & overnight deliverance",
+      "type": "entity",
+      "references": [
+        "Isaiah 36–37"
+      ],
+      "blurb": "Rabshakeh’s propaganda collapses before prayer; the angel strikes the camp—trust outlasts terror.",
+      "category": "deliverance",
+      "id": "e.assyrian-invasion-overnight-deliverance--97795f35"
+    },
+    {
+      "name": "Hezekiah’s sickness, sign of the shadow, and Babylonian envoys",
+      "type": "entity",
+      "references": [
+        "Isaiah 38–39"
+      ],
+      "blurb": "The shadow retreats ten steps; boastful display invites future loss—healing must be stewarded with humility.",
+      "category": "warning",
+      "id": "e.hezekiahs-sickness-sign-of-the-shadow-and-babylonian-envoys--fc0959de"
+    },
+    {
+      "name": "Comfort–New Exodus program",
+      "type": "entity",
+      "references": [
+        "Isaiah 40–55"
+      ],
+      "blurb": "Voice in the wilderness; shepherding God; trial of idols; Servant’s mission and passion; Zion’s restoration—return from exile as gospel template.",
+      "category": "gospel",
+      "id": "e.comfort-new-exodus-program--5bc24efa"
+    },
+    {
+      "name": "Everlasting covenant & Davidic mercies",
+      "type": "entity",
+      "references": [
+        "Isaiah 55:1–5; 61:8"
+      ],
+      "blurb": "Free invitation to the thirsty; covenant fidelity to David extended to nations—mission by mercy, not merit.",
+      "category": "covenant",
+      "id": "e.everlasting-covenant-davidic-mercies--340ea6ef"
+    },
+    {
+      "name": "House of prayer for all peoples (eunuchs & foreigners)",
+      "type": "entity",
+      "references": [
+        "Isaiah 56:3–8"
+      ],
+      "blurb": "Holiness without hostility; Sabbath‑keeping becomes solidarity across boundaries.",
+      "category": "inclusion",
+      "id": "e.house-of-prayer-for-all-peoples.eunuchs-foreigners--26f306ab"
+    },
+    {
+      "name": "Zion’s light and nations’ pilgrimage",
+      "type": "entity",
+      "references": [
+        "Isaiah 60–62"
+      ],
+      "blurb": "Arise, shine—glory draws kings; gates open continually; new names (Hephzibah/Beulah) celebrate marital reconciliation.",
+      "category": "restoration",
+      "id": "e.zions-light-and-nations-pilgrimage--df508c73"
+    },
+    {
+      "name": "New heavens and new earth",
+      "type": "entity",
+      "references": [
+        "Isaiah 65–66"
+      ],
+      "blurb": "Long life, peaceable creation, and universal worship—final vision crowns the book.",
+      "category": "eschatology",
+      "id": "e.new-heavens-and-new-earth--a1b590aa"
+    }
+  ]
+}

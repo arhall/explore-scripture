@@ -1,0 +1,26 @@
+{
+  "name": "Sermon on the Mount",
+  "type": "entity",
+  "category": "discourse",
+  "references": [
+    "Matt 5–7"
+  ],
+  "blurb": "Programmatic kingdom charter: beatitudes, deepened Torah, piety in secret, and resilient trust.",
+  "aka": [],
+  "id": "e.sermon-on-the-mount--5d776cb7",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      5,
+      6,
+      7
+    ]
+  }
+}

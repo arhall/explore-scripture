@@ -1,0 +1,22 @@
+{
+  "name": "Ahaz king of Judah",
+  "type": "person",
+  "references": [
+    "2 Chronicles 28",
+    "Isaiah 7:1–25; 8"
+  ],
+  "blurb": "Closes temple doors, makes altars in every corner; sacrifices sons—political expedience weds idolatry.",
+  "category": "narrative",
+  "id": "p.ahaz-king-of-judah--189a5877",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "2 Chronicles": [
+      28
+    ],
+    "Isaiah": [
+      7
+    ]
+  }
+}

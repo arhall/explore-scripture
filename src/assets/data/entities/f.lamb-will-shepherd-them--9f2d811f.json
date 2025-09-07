@@ -1,0 +1,21 @@
+{
+  "name": "Lamb will shepherd them",
+  "type": "figure",
+  "category": "pastoral",
+  "references": [
+    "Rev 7:17"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Ps 23; Isa 49:10",
+      "type": "echo"
+    }
+  ],
+  "aka": [],
+  "id": "f.lamb-will-shepherd-them--9f2d811f",
+  "book_references": {
+    "Revelation": [
+      7
+    ]
+  }
+}

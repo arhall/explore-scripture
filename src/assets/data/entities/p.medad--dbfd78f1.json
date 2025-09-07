@@ -1,0 +1,18 @@
+{
+  "name": "Medad",
+  "type": "person",
+  "references": [
+    "Numbers 11:26–29"
+  ],
+  "blurb": "Prophesies in the camp; Moses welcomes broader gifting.",
+  "category": "narrative",
+  "id": "p.medad--dbfd78f1",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      11
+    ]
+  }
+}

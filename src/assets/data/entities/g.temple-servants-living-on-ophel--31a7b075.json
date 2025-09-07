@@ -1,0 +1,18 @@
+{
+  "name": "Temple servants living on Ophel",
+  "type": "group",
+  "references": [
+    "Nehemiah 3:26"
+  ],
+  "blurb": "Nethinim on the slope—proximity to service becomes proximity to security.",
+  "category": "narrative",
+  "id": "g.temple-servants-living-on-ophel--31a7b075",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      3
+    ]
+  }
+}

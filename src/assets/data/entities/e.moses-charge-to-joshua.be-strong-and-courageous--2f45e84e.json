@@ -1,0 +1,18 @@
+{
+  "name": "Moses’ charge to Joshua (be strong and courageous)",
+  "type": "entity",
+  "references": [
+    "Deuteronomy 31:7–8,23"
+  ],
+  "blurb": "Succession framed in the LORD’s abiding presence—courage rooted in promise.",
+  "category": "narrative",
+  "id": "e.moses-charge-to-joshua.be-strong-and-courageous--2f45e84e",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Deuteronomy": [
+      31
+    ]
+  }
+}

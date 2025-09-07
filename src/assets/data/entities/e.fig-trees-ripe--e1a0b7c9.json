@@ -1,0 +1,19 @@
+{
+  "id": "e.fig-trees-ripe--e1a0b7c9",
+  "name": "Fig trees—ripe fruit",
+  "type": "entity",
+  "references": [
+    "Nah 3:12"
+  ],
+  "category": "simile",
+  "aka": [],
+  "blurb": "Nineveh’s strongholds fall like ripe figs—ease of collapse belies prior boasting.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      3
+    ]
+  }
+}

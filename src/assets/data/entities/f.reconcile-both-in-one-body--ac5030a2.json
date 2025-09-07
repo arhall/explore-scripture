@@ -1,0 +1,21 @@
+{
+  "name": "Reconcile both in one body",
+  "type": "figure",
+  "category": "reconciliation",
+  "references": [
+    "Eph 2:16"
+  ],
+  "aka": [],
+  "id": "f.reconcile-both-in-one-body--ac5030a2",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      2
+    ]
+  }
+}

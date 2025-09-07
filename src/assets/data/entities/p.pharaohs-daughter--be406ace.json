@@ -1,0 +1,21 @@
+{
+  "name": "Pharaoh’s daughter",
+  "type": "person",
+  "references": [
+    "Exodus 2:5–10"
+  ],
+  "blurb": "Compassionate royal who draws Moses from the Nile and adopts him—God’s providence within Egypt’s palace.",
+  "category": "narrative",
+  "cross_references": [
+    "Acts 7:21"
+  ],
+  "id": "p.pharaohs-daughter--be406ace",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      2
+    ]
+  }
+}

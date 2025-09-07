@@ -1,0 +1,23 @@
+{
+  "name": "twenty-four elders",
+  "type": "group",
+  "category": "heavenly",
+  "references": [
+    "Rev 4–5",
+    "Rev 4:4"
+  ],
+  "aka": [],
+  "id": "g.twenty-four-elders--6b637ff3",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Revelation": [
+      4,
+      5
+    ]
+  }
+}

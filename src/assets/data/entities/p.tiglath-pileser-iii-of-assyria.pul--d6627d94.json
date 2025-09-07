@@ -1,0 +1,17 @@
+{
+  "name": "Tiglath‑Pileser III (Pul) of Assyria",
+  "type": "person",
+  "references": [
+    "Isaiah 7–8 (background); 2 Kings 15–16"
+  ],
+  "blurb": "Expansionist monarch who reshaped the Levant; Judah’s temptation to trust him becomes a theological failure.",
+  "relations": {
+    "empire": "Assyria"
+  },
+  "category": "emperor",
+  "id": "p.tiglath-pileser-iii-of-assyria.pul--d6627d94",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

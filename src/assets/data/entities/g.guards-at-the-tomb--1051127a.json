@@ -1,0 +1,26 @@
+{
+  "name": "Guards at the tomb",
+  "type": "group",
+  "category": "military",
+  "references": [
+    "Matt 27:62–66",
+    "Matt 28:11–15"
+  ],
+  "blurb": "Ensure sealed tomb, later bribed to circulate a counter-narrative—ironic witness to the resurrection.",
+  "aka": [],
+  "id": "g.guards-at-the-tomb--1051127a",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      27,
+      28
+    ]
+  }
+}

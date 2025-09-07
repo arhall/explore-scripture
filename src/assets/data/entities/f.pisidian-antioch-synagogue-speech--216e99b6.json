@@ -1,0 +1,37 @@
+{
+  "name": "Pisidian Antioch synagogue speech",
+  "type": "figure",
+  "category": "speech",
+  "references": [
+    "Acts 13:16–41"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Ps 2:7",
+      "type": "quotation"
+    },
+    {
+      "src": "Isa 55:3",
+      "type": "quotation"
+    },
+    {
+      "src": "Ps 16:10",
+      "type": "quotation"
+    }
+  ],
+  "aka": [],
+  "id": "f.pisidian-antioch-synagogue-speech--216e99b6",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      13
+    ]
+  }
+}

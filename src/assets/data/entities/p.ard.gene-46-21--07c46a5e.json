@@ -1,0 +1,19 @@
+{
+  "name": "Ard",
+  "type": "person",
+  "references": [
+    "Genesis 46:21"
+  ],
+  "blurb": "Son of Benjamin listed in the migration list.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.ard.gene-46-21--07c46a5e",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      46
+    ]
+  }
+}

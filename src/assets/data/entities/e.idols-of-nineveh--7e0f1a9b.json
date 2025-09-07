@@ -1,0 +1,22 @@
+{
+  "id": "e.idols-of-nineveh--7e0f1a9b",
+  "name": "Idols of Nineveh",
+  "type": "entity",
+  "references": [
+    "Nah 1:14"
+  ],
+  "category": "cultic",
+  "aka": [
+    "Images",
+    "Graven idols"
+  ],
+  "blurb": "YHWH decrees their desecration—religious collapse accompanies political ruin.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      1
+    ]
+  }
+}

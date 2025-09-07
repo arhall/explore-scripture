@@ -1,0 +1,22 @@
+{
+  "name": "Epaenetus",
+  "type": "person",
+  "category": "believer",
+  "references": [
+    "Rom 16:5"
+  ],
+  "note": "Firstfruits for Christ in Asia/Achaia (textual tradition varies).",
+  "aka": [],
+  "id": "p.epaenetus--c134dc56",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      16
+    ]
+  }
+}

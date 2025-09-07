@@ -1,0 +1,18 @@
+{
+  "id": "f.fast-of-the-fourth-month--d0bb1f61",
+  "name": "Fast of the fourth month",
+  "type": "figure",
+  "references": [
+    "Zech 8:19"
+  ],
+  "category": "fast-day",
+  "blurb": "One of the exile fasts destined to become a feast of joy and gladness.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      8
+    ]
+  }
+}

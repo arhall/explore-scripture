@@ -1,0 +1,22 @@
+{
+  "name": "Household of Aristobulus",
+  "type": "group",
+  "category": "household",
+  "references": [
+    "Rom 16:10"
+  ],
+  "house_church": true,
+  "aka": [],
+  "id": "g.household-of-aristobulus--99d24e93",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      16
+    ]
+  }
+}

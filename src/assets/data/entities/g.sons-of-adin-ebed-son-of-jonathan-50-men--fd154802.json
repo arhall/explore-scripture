@@ -1,0 +1,20 @@
+{
+  "name": "Sons of Adin: Ebed son of Jonathan, 50 men",
+  "type": "group",
+  "references": [
+    "Ezra 8:6"
+  ],
+  "blurb": "Heads of families in Ezra’s later return; numbers reflect adult males mustered for the journey and covenant renewal.",
+  "category": "record",
+  "count": 50,
+  "count_note": "Count per Ezra 8:6",
+  "id": "g.sons-of-adin-ebed-son-of-jonathan-50-men--fd154802",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      8
+    ]
+  }
+}

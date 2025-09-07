@@ -1,0 +1,33 @@
+{
+  "name": "Joseph (husband of Mary)",
+  "type": "person",
+  "category": "family",
+  "references": [
+    "Matt 1:18–25",
+    "Matt 2:13–23",
+    "Luke 2:4–5",
+    "Luke 2:16",
+    "Luke 2:48"
+  ],
+  "blurb": "Righteous son of David; receives dreams, names the child Jesus, and safeguards the promise by obedient relocations.",
+  "aka": [],
+  "id": "p.joseph-husband-of-mary--1e97fe8c",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      1,
+      2
+    ],
+    "Luke": [
+      2
+    ]
+  }
+}

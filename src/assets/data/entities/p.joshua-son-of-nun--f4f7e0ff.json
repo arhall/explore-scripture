@@ -1,0 +1,22 @@
+{
+  "name": "Joshua son of Nun",
+  "type": "person",
+  "references": [
+    "Deuteronomy 1:38; 3:28; 31:7–8,14,23; 34:9"
+  ],
+  "blurb": "Publicly commissioned in Moses’ sight, Joshua receives courage-commands and Spirit-endowment. In Deuteronomy he is a transitional figure: the servant who will turn sermons into steps of conquest.",
+  "category": "narrative",
+  "cross_references": [
+    "Numbers 27:18–23",
+    "Joshua 1:1–9"
+  ],
+  "id": "p.joshua-son-of-nun--f4f7e0ff",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Deuteronomy": [
+      1
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Ammon (Jeremiah)",
+  "type": "group",
+  "references": [
+    "Jeremiah 49:1–6",
+    "Ezekiel 25:1–7"
+  ],
+  "blurb": "Questions over Milcom’s inheritance; promise of restoration after judgment.",
+  "category": "nation",
+  "id": "g.ammon.jeremiah--e3cb1d55",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      49
+    ],
+    "Ezekiel": [
+      25
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Barak",
+  "type": "person",
+  "category": "faith-example",
+  "references": [
+    "Heb 11:32"
+  ],
+  "aka": [],
+  "id": "p.barak--8d829a73",
+  "book_references": {
+    "Hebrews": [
+      11
+    ]
+  }
+}

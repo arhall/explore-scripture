@@ -1,0 +1,21 @@
+{
+  "name": "river of the water of life",
+  "type": "entity",
+  "category": "river",
+  "references": [
+    "Rev 22:1"
+  ],
+  "aka": [],
+  "id": "e.river-of-the-water-of-life--2719fb95",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Revelation": [
+      22
+    ]
+  }
+}

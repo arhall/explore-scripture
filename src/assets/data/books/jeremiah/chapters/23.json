@@ -1,0 +1,28 @@
+{
+  "book": "Jeremiah",
+  "chapter": 23,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "g.shepherds-of-israel.leaders--15a7dce7",
+      "name": "Shepherds of Israel (leaders)",
+      "type": "group",
+      "role": "leadership",
+      "refs_count": 2
+    },
+    {
+      "id": "f.branch-of-david-the-lord-is-our-righteousness--5f60821d",
+      "name": "Branch of David / ‘The LORD is our righteousness’",
+      "type": "figure",
+      "role": "messianic",
+      "refs_count": 1
+    },
+    {
+      "id": "e.gathering-of-the-remnant-good-shepherds--ced3ea44",
+      "name": "Gathering of the remnant / Good shepherds",
+      "type": "entity",
+      "role": "restoration",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "e.gath-tell-it-not--1bd7f46a",
+  "name": "Gath (‘Tell it not’)",
+  "type": "entity",
+  "references": [
+    "Micah 1:10"
+  ],
+  "category": "city",
+  "blurb": "Echoes David’s lament; news management fails to hide judgment’s shame.",
+  "canonical_id": "e.gath--b4ce5362",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      1
+    ]
+  }
+}

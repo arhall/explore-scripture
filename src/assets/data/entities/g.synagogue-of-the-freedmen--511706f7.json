@@ -1,0 +1,24 @@
+{
+  "name": "Synagogue of the Freedmen",
+  "type": "group",
+  "category": "synagogue",
+  "references": [
+    "Acts 6:9"
+  ],
+  "blurb": "Cyrenians, Alexandrians, and those from Cilicia and Asia dispute with Stephen.",
+  "aka": [],
+  "id": "g.synagogue-of-the-freedmen--511706f7",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      6
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Take up the armor to stand",
+  "type": "figure",
+  "category": "armor",
+  "references": [
+    "Eph 6:13"
+  ],
+  "aka": [],
+  "id": "f.take-up-the-armor-to-stand--8bdf3d6a",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      6
+    ]
+  }
+}

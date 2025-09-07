@@ -1,0 +1,20 @@
+{
+  "name": "Oholibamah (daughter of Anah)",
+  "type": "person",
+  "references": [
+    "Genesis 36:25"
+  ],
+  "blurb": "Daughter of Anah; listed within Horite genealogies (distinguished from Esau’s wife with same name).",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.oholibamah.daughter-of-anah.gene-36-25--701ebc96",
+  "canonical_id": "p.oholibamah.wife-of-esau.gene-36-2-5-14--f93d25e0",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

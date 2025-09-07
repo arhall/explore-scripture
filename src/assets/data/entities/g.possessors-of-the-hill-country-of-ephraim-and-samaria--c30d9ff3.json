@@ -1,0 +1,18 @@
+{
+  "name": "Possessors of the hill country of Ephraim and Samaria",
+  "type": "group",
+  "references": [
+    "Obadiah 1:19"
+  ],
+  "blurb": "Northern heartlands re‑incorporated—diaspora wounds healed.",
+  "category": "settlers",
+  "id": "g.possessors-of-the-hill-country-of-ephraim-and-samaria--c30d9ff3",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Obadiah": [
+      1
+    ]
+  }
+}

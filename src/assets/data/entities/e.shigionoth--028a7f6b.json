@@ -1,0 +1,18 @@
+{
+  "id": "e.shigionoth--028a7f6b",
+  "name": "Shigionoth",
+  "type": "entity",
+  "references": [
+    "Hab 3:1"
+  ],
+  "category": "musical-form",
+  "blurb": "Rare term marking a passionate, possibly irregular rhythmic prayer-song.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      3
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Erastus",
+  "type": "person",
+  "category": "coworker",
+  "references": [
+    "Acts 19:22",
+    "Rom 16:23",
+    "2 Tim 4:9-22"
+  ],
+  "aka": [],
+  "id": "p.erastus--f42e12b9",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      19
+    ],
+    "Romans": [
+      16
+    ],
+    "2 Timothy": [
+      4
+    ]
+  }
+}

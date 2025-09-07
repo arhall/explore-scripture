@@ -1,0 +1,18 @@
+{
+  "id": "f.messenger-of-the-covenant-theophany-focus--38e12713",
+  "name": "Messenger of the covenant (theophany focus)",
+  "type": "figure",
+  "references": [
+    "Mal 3:1"
+  ],
+  "category": "ambiguous-figure",
+  "blurb": "Temple-focused arrival tied to refining priests and purifying worship.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      3
+    ]
+  }
+}

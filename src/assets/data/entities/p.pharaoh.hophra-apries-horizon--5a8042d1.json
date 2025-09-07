@@ -1,0 +1,24 @@
+{
+  "name": "Pharaoh (Hophra/Apries horizon)",
+  "type": "person",
+  "references": [
+    "Ezekiel 29–32"
+  ],
+  "blurb": "Self‑exalting ruler pictured as a Nile monster; his arm is broken, his pride felled—Egypt’s mythic power is leashed.",
+  "relations": {
+    "kingdom": "Egypt"
+  },
+  "category": "pharaoh",
+  "id": "p.pharaoh.hophra-apries-horizon--5a8042d1",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      29,
+      30,
+      31,
+      32
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Bela son of Beor",
+  "type": "title",
+  "references": [
+    "Genesis 36:31–32"
+  ],
+  "blurb": "King in Edom from Dinhabah. Edom’s kingship structure foreshadows later national polities.",
+  "category": "genealogy",
+  "cross_references": [
+    "1 Chronicles 1:43–50"
+  ],
+  "id": "t.bela-son-of-beor.gene-36-31-32--b0f74e21",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

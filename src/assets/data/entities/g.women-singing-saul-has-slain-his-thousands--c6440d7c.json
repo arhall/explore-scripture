@@ -1,0 +1,18 @@
+{
+  "name": "Women singing, ‘Saul has slain his thousands…’",
+  "type": "group",
+  "references": [
+    "1 Samuel 18:7"
+  ],
+  "blurb": "Public praise that triggers royal jealousy—vox populi tests a king’s heart.",
+  "category": "narrative",
+  "id": "g.women-singing-saul-has-slain-his-thousands--c6440d7c",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      18
+    ]
+  }
+}

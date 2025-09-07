@@ -1,0 +1,18 @@
+{
+  "id": "f.blood-of-the-covenant-frees-prisoners--309de615",
+  "name": "Blood of the covenant frees prisoners",
+  "type": "figure",
+  "references": [
+    "Zech 9:11"
+  ],
+  "category": "exodus-motif",
+  "blurb": "Pit prisoners released by covenant blood; new exodus imagery.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      9
+    ]
+  }
+}

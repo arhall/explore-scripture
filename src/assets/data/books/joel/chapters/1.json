@@ -1,0 +1,77 @@
+{
+  "book": "Joel",
+  "chapter": 1,
+  "entity_count": 22,
+  "entities": [
+    {
+      "id": "p.superscription-joel-son-of-pethuel--2f4bc59f",
+      "name": "Superscription: Joel son of Pethuel",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1
+    },
+    {
+      "id": "g.elders.gray-beards--4a9e0334",
+      "name": "Elders (gray‑beards)",
+      "type": "group",
+      "role": "leaders",
+      "refs_count": 1
+    },
+    {
+      "id": "g.priests-ministers-of-yhwh--ccdef719",
+      "name": "Priests, ministers of YHWH",
+      "type": "group",
+      "role": "priesthood",
+      "refs_count": 1
+    },
+    {
+      "id": "g.people-consecrated-assembly.qahal--4179e2d3",
+      "name": "People: consecrated assembly (qahal)",
+      "type": "group",
+      "role": "assembly",
+      "refs_count": 1
+    },
+    {
+      "id": "g.farmers-vinedressers--40082a30",
+      "name": "Farmers & vinedressers",
+      "type": "group",
+      "role": "workforce",
+      "refs_count": 1
+    },
+    {
+      "id": "g.drunkards-drinkers-of-wine--6e33e8c5",
+      "name": "Drunkards & drinkers of wine",
+      "type": "group",
+      "role": "social",
+      "refs_count": 1
+    },
+    {
+      "id": "e.fast-consecrate-a-fast-call-a-sacred-assembly--bf6ac14a",
+      "name": "Fast: consecrate a fast, call a sacred assembly",
+      "type": "entity",
+      "role": "practice",
+      "refs_count": 1
+    },
+    {
+      "id": "e.sackcloth.priests-people--9336c5d4",
+      "name": "Sackcloth (priests & people)",
+      "type": "entity",
+      "role": "practice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.gnawing-locust.gazam--17a99b3c",
+      "name": "Gnawing locust (gazam)",
+      "type": "figure",
+      "role": "plague",
+      "refs_count": 1
+    },
+    {
+      "id": "f.swarming-locust.arbeh--2e513d9f",
+      "name": "Swarming locust (arbeh)",
+      "type": "figure",
+      "role": "plague",
+      "refs_count": 1
+    }
+  ]
+}

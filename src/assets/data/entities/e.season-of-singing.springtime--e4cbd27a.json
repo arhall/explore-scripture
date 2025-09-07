@@ -1,0 +1,18 @@
+{
+  "name": "Season of singing (springtime)",
+  "type": "entity",
+  "references": [
+    "Song 2:10–13"
+  ],
+  "blurb": "Winter past, flowers appear, voice of the turtledove—creation’s renewal mirrors awakened love.",
+  "category": "season",
+  "id": "e.season-of-singing.springtime--e4cbd27a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Song of Songs": [
+      2
+    ]
+  }
+}

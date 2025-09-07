@@ -1,0 +1,19 @@
+{
+  "name": "Hur",
+  "type": "person",
+  "references": [
+    "Exodus 17:10–12; 24:14"
+  ],
+  "blurb": "Leader who, with Aaron, upholds Moses’ hands during battle—embodying shared leadership and interdependence.",
+  "category": "narrative",
+  "cross_references": [],
+  "id": "p.hur--21797ccd",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      17
+    ]
+  }
+}

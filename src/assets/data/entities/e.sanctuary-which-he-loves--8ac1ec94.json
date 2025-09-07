@@ -1,0 +1,18 @@
+{
+  "id": "e.sanctuary-which-he-loves--8ac1ec94",
+  "name": "Sanctuary (which he loves)",
+  "type": "entity",
+  "references": [
+    "Mal 2:11"
+  ],
+  "category": "holy-space",
+  "blurb": "Beloved sphere profaned by unfaithful unions.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      2
+    ]
+  }
+}

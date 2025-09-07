@@ -1,0 +1,28 @@
+{
+  "book": "Amos",
+  "chapter": 8,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "g.merchants-with-false-balances--20b3068f",
+      "name": "Merchants with false balances",
+      "type": "group",
+      "role": "commerce",
+      "refs_count": 1
+    },
+    {
+      "id": "e.vision-basket-of-summer-fruit--5cdda23c",
+      "name": "Vision: Basket of summer fruit",
+      "type": "entity",
+      "role": "vision",
+      "refs_count": 1
+    },
+    {
+      "id": "e.famine-of-hearing-the-words-of-the-lord--1bd6aa33",
+      "name": "Famine of hearing the words of the LORD",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1
+    }
+  ]
+}

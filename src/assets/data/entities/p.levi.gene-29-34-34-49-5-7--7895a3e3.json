@@ -1,0 +1,32 @@
+{
+  "name": "Levi",
+  "type": "person",
+  "references": [
+    "Genesis 29:34; 34; 49:5–7"
+  ],
+  "blurb": "Shares in the Shechem violence; later his descendants are set apart for priestly service.",
+  "relations": {
+    "parents": [
+      "Jacob (Israel)",
+      "Leah"
+    ],
+    "children": [
+      "Gershon",
+      "Kohath",
+      "Merari"
+    ]
+  },
+  "category": "narrative",
+  "cross_references": [
+    "Deuteronomy 33:8–10"
+  ],
+  "id": "p.levi.gene-29-34-34-49-5-7--7895a3e3",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      29
+    ]
+  }
+}

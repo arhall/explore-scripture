@@ -1,0 +1,25 @@
+{
+  "name": "Bartimaeus",
+  "type": "person",
+  "category": "healed",
+  "references": [
+    "Mark 10:46–52"
+  ],
+  "unique_to": "Mark",
+  "blurb": "Named blind man who regains sight and follows Jesus on the way—model disciple responding to mercy.",
+  "aka": [],
+  "id": "p.bartimaeus--ff93946b",
+  "source_book": "Mark",
+  "source_books": [
+    "Mark",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Mark": [
+      10
+    ]
+  }
+}

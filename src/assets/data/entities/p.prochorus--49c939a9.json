@@ -1,0 +1,23 @@
+{
+  "name": "Prochorus",
+  "type": "person",
+  "category": "the-seven",
+  "references": [
+    "Acts 6:5"
+  ],
+  "aka": [],
+  "id": "p.prochorus--49c939a9",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      6
+    ]
+  }
+}

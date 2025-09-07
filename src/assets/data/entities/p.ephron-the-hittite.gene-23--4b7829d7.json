@@ -1,0 +1,19 @@
+{
+  "name": "Ephron the Hittite",
+  "type": "person",
+  "references": [
+    "Genesis 23"
+  ],
+  "blurb": "Negotiates with Abraham for the field and cave of Machpelah, making Abraham a legal landholder in Canaan.",
+  "category": "narrative",
+  "cross_references": [],
+  "id": "p.ephron-the-hittite.gene-23--4b7829d7",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      23
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Bithynia",
+  "type": "entity",
+  "category": "province",
+  "references": [
+    "1 Pet 1:1"
+  ],
+  "aka": [],
+  "id": "e.bithynia--547211ac",
+  "book_references": {
+    "1 Peter": [
+      1
+    ]
+  }
+}

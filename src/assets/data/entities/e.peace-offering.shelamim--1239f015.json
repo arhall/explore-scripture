@@ -1,0 +1,17 @@
+{
+  "name": "Peace Offering (Shelamim)",
+  "type": "entity",
+  "references": [
+    "Leviticus 3; 7:11–36"
+  ],
+  "blurb": "Shared meal of fellowship—thanksgiving, vow, or freewill. Celebrates communion with God and neighbor at the table of peace.",
+  "category": "ritual",
+  "cross_references": [
+    "Deuteronomy 27:7"
+  ],
+  "id": "e.peace-offering.shelamim--1239f015",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

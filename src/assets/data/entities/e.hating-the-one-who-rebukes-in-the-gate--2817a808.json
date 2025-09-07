@@ -1,0 +1,18 @@
+{
+  "name": "Hating the one who rebukes in the gate",
+  "type": "entity",
+  "references": [
+    "Amos 5:10"
+  ],
+  "blurb": "Anti‑prophetic animus; truth‑tellers become enemy number one.",
+  "category": "opposition",
+  "id": "e.hating-the-one-who-rebukes-in-the-gate--2817a808",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Amos": [
+      5
+    ]
+  }
+}

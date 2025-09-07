@@ -1,0 +1,98 @@
+{
+  "name": "Jesus of Nazareth",
+  "type": "person",
+  "category": "messiah",
+  "aka": [
+    "Jesus",
+    "Christ",
+    "Messiah",
+    "Jesus Christ"
+  ],
+  "references": [
+    "Matt 1:1–17",
+    "Matt 1:18–25",
+    "Matt 3:13–17",
+    "Matt 4:1–11",
+    "passim",
+    "Mark 1:1",
+    "Mark 1:14–15",
+    "Luke 1:31–33",
+    "Luke 4:16–30",
+    "John 1:14",
+    "Acts 1:1–3",
+    "2 Cor passim",
+    "Gal passim",
+    "1 Cor passim",
+    "Phil passim",
+    "Eph passim",
+    "Rom 1:3–4",
+    "Rom passim",
+    "Col passim",
+    "Rev passim",
+    "1 Thess passim",
+    "2 Thess passim",
+    "1 Tim passim",
+    "2 Tim passim",
+    "Titus passim",
+    "Philem passim",
+    "Heb passim",
+    "Jas 1:1",
+    "Jas 2:1",
+    "1 Pet passim",
+    "2 Pet passim",
+    "1 John passim",
+    "2 John passim",
+    "3 John passim",
+    "Jude 1, 17, 21"
+  ],
+  "cross_references": [
+    "Isa 7:14",
+    "Mic 5:2",
+    "Hos 11:1",
+    "Ps 110:1",
+    "Dan 7:13–14",
+    "Ps 2",
+    "Isa 40:3"
+  ],
+  "blurb": "Davidic and Abrahamic heir, true Israel in one person. Matthew stresses fulfillment: virgin conception (Isa 7:14), Bethlehem birth (Mic 5:2), exodus recapitulation (Hos 11:1), temptation victory, authoritative Torah fulfillment (5:17–20), suffering servant and risen Lord.",
+  "id": "p.jesus-of-nazareth--c4738d73",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Mark",
+    "Luke",
+    "John",
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      1,
+      3,
+      4
+    ],
+    "Mark": [
+      1
+    ],
+    "Luke": [
+      1,
+      4
+    ],
+    "John": [
+      1
+    ],
+    "Acts": [
+      1
+    ],
+    "Romans": [
+      1
+    ],
+    "James": [
+      1,
+      2
+    ]
+  }
+}

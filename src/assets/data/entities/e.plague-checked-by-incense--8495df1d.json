@@ -1,0 +1,18 @@
+{
+  "name": "Plague checked by incense",
+  "type": "entity",
+  "references": [
+    "Numbers 16:41–50"
+  ],
+  "blurb": "Aaron runs with censer between the living and the dead—priestly intercession saves.",
+  "category": "narrative",
+  "id": "e.plague-checked-by-incense--8495df1d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      16
+    ]
+  }
+}

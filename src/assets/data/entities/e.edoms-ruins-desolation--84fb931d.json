@@ -1,0 +1,18 @@
+{
+  "id": "e.edoms-ruins-desolation--84fb931d",
+  "name": "Edom’s ruins/desolation",
+  "type": "entity",
+  "references": [
+    "Mal 1:3-4"
+  ],
+  "category": "judgment-landscape",
+  "blurb": "A desolate wasteland despite rebuilding attempts—marker of divine opposition.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      1
+    ]
+  }
+}

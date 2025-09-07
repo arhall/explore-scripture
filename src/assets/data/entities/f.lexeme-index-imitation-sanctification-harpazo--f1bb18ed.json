@@ -1,0 +1,25 @@
+{
+  "name": "Lexeme index (imitation, sanctification, harpazo)",
+  "type": "figure",
+  "category": "lexeme-index",
+  "references": [
+    "1 Thess passim"
+  ],
+  "greek_terms": [
+    {
+      "term": "μίμησις",
+      "gloss": "imitation"
+    },
+    {
+      "term": "ἁγιασμός",
+      "gloss": "sanctification"
+    },
+    {
+      "term": "ἁρπάζω",
+      "gloss": "to catch up"
+    }
+  ],
+  "aka": [],
+  "id": "f.lexeme-index-imitation-sanctification-harpazo--f1bb18ed",
+  "book_references": {}
+}

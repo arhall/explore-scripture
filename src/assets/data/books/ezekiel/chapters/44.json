@@ -1,0 +1,35 @@
+{
+  "book": "Ezekiel",
+  "chapter": 44,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "g.levites-who-went-astray--591ecb49",
+      "name": "Levites who went astray",
+      "type": "group",
+      "role": "priesthood",
+      "refs_count": 1
+    },
+    {
+      "id": "e.east-gate-shut-for-the-prince--8a448a83",
+      "name": "East gate shut for the Prince",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1
+    },
+    {
+      "id": "e.zadokite-priests-clothing-duties-holiness--105cac09",
+      "name": "Zadokite priests: clothing, duties, holiness",
+      "type": "entity",
+      "role": "priesthood",
+      "refs_count": 1
+    },
+    {
+      "id": "e.levites-demotion-and-service--9060d126",
+      "name": "Levites’ demotion and service",
+      "type": "entity",
+      "role": "priesthood",
+      "refs_count": 1
+    }
+  ]
+}

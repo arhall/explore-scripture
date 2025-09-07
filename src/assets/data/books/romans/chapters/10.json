@@ -1,0 +1,56 @@
+{
+  "book": "Romans",
+  "chapter": 10,
+  "entity_count": 7,
+  "entities": [
+    {
+      "id": "f.beautiful-feet-isa-52-7--b70255ff",
+      "name": "Beautiful feet (Isa 52:7)",
+      "type": "figure",
+      "role": "mission",
+      "refs_count": 1
+    },
+    {
+      "id": "f.everyone-who-calls-joel-2-32--f5a4c3f1",
+      "name": "Everyone who calls (Joel 2:32)",
+      "type": "figure",
+      "role": "salvation",
+      "refs_count": 1
+    },
+    {
+      "id": "f.near-word-deut-30-12-14--042a734d",
+      "name": "Near word (Deut 30:12–14)",
+      "type": "figure",
+      "role": "word",
+      "refs_count": 1
+    },
+    {
+      "id": "f.zeal-without-knowledge--aee96666",
+      "name": "Zeal without knowledge",
+      "type": "figure",
+      "role": "zeal",
+      "refs_count": 1
+    },
+    {
+      "id": "f.ot-in-romans-9-11-index--50459e26",
+      "name": "OT in Romans 9–11 (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.obedience-and-disobedience-catena--9fd1e36f",
+      "name": "Obedience and disobedience catena",
+      "type": "figure",
+      "role": "catena",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-flow-index--23eef6cd",
+      "name": "Argument flow (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 8
+    }
+  ]
+}

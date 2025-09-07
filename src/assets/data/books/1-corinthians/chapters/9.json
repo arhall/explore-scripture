@@ -1,0 +1,35 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 9,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "f.paul-s-rights-and-self-restraint--ef591853",
+      "name": "Paul’s rights and self-restraint",
+      "type": "figure",
+      "role": "rights",
+      "refs_count": 1
+    },
+    {
+      "id": "f.run-to-win-athletics-metaphors--6fc076a6",
+      "name": "Run to win (athletics metaphors)",
+      "type": "figure",
+      "role": "athletics",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.to-the-jew-to-those-without-law--d428b202",
+      "name": "To the Jew, to those without law",
+      "type": "figure",
+      "role": "mission-method",
+      "refs_count": 1
+    }
+  ]
+}

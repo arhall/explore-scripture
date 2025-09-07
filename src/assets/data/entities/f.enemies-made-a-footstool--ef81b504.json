@@ -1,0 +1,21 @@
+{
+  "name": "enemies made a footstool",
+  "type": "figure",
+  "category": "psalm110",
+  "references": [
+    "Heb 10:13"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Ps 110:1",
+      "type": "allusion"
+    }
+  ],
+  "aka": [],
+  "id": "f.enemies-made-a-footstool--ef81b504",
+  "book_references": {
+    "Hebrews": [
+      10
+    ]
+  }
+}

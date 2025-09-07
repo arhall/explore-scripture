@@ -1,0 +1,680 @@
+[
+  {
+    "id": "d.god.yhwh.gene-1-3--215c6dbf",
+    "name": "God (YHWH)",
+    "type": "divine",
+    "url": "/entities/d.god.yhwh.gene-1-3--215c6dbf/",
+    "blurb": "God—the covenant name often rendered YHWH—is the Creator and Lord of history. Genesis portrays God as personal (speaking, blessing, judging), sovereign over chaos, and faithful to His promises. He for",
+    "searchText": "god (yhwh) divine narrative god—the covenant name often rendered yhwh—is the creator and lord of history. genesis portrays god as personal (speaking, blessing, judging), sovereign over chaos, and faithful to his promises. he forms humanity in his image (gen 1:26–27), enters into relationship with them, and, after the fall, pursues them with mercy. jewish tradition emphasizes god’s covenantal chesed (steadfast love) and justice; christian theology sees in genesis the roots of redemption that culminate in christ. from eden to babel, god’s actions frame the story: creation, judgment (flood, dispersion), and gracious election. d.god-yhwh--34eab3d9",
+    "references": 22,
+    "books": [
+      "Genesis"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.noah.gene-5-32--6b1a74fb",
+    "name": "Noah",
+    "type": "person",
+    "url": "/entities/p.noah.gene-5-32--6b1a74fb/",
+    "blurb": "Noah ‘walked with God’ in a corrupt generation. Obedient to God’s word, he builds the ark and becomes the instrument of preservation through the Flood. Afterward, God covenants never again to destroy ",
+    "searchText": "noah person narrative noah ‘walked with god’ in a corrupt generation. obedient to god’s word, he builds the ark and becomes the instrument of preservation through the flood. afterward, god covenants never again to destroy the earth with water, giving the rainbow as a sign. jewish tradition debates whether noah’s righteousness was relative or absolute; christian readers see in him a type of christ—obedient, saving his household. p.noah.daughter-of-zelophehad--9d853482",
+    "references": 5,
+    "books": [
+      "Genesis",
+      "Numbers",
+      "Hebrews",
+      "1 Peter",
+      "2 Peter"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.cain.gene-4--931e91cf",
+    "name": "Cain",
+    "type": "person",
+    "url": "/entities/p.cain.gene-4--931e91cf/",
+    "blurb": "Firstborn of Adam and Eve, Cain embodies sin’s spread beyond Eden. Jealous of Abel, he murders his brother despite God’s warning to master sin. Banished yet marked, he fathers a city and a culture—mus",
+    "searchText": "cain person narrative firstborn of adam and eve, cain embodies sin’s spread beyond eden. jealous of abel, he murders his brother despite god’s warning to master sin. banished yet marked, he fathers a city and a culture—music, metallurgy, livestock—showing creativity estranged from god. ",
+    "references": 3,
+    "books": [
+      "Genesis",
+      "1 John",
+      "Jude"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.isaac.gene-17-25--66e8d49e",
+    "name": "Isaac",
+    "type": "person",
+    "url": "/entities/p.isaac.gene-17-25--66e8d49e/",
+    "blurb": "The son of promise, Isaac embodies God’s fidelity to His word. Spared on Moriah (Gen 22), he receives Abraham’s covenant and becomes father to Esau and Jacob. Isaac’s narrative is quieter yet pivotal,",
+    "searchText": "isaac person narrative the son of promise, isaac embodies god’s fidelity to his word. spared on moriah (gen 22), he receives abraham’s covenant and becomes father to esau and jacob. isaac’s narrative is quieter yet pivotal, showing god’s promise advancing through ordinary life and tested faith. p.isaac--3af10add p.isaac.gene-26--da8ff3bc",
+    "references": 3,
+    "books": [
+      "Genesis",
+      "Hebrews",
+      "Galatians"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.magicians-of-egypt.gene-41-8--39266da6",
+    "name": "Magicians of Egypt",
+    "type": "group",
+    "url": "/entities/g.magicians-of-egypt.gene-41-8--39266da6/",
+    "blurb": "Royal sages unable to interpret Pharaoh’s dreams; their inability spotlights Joseph’s God-given insight.",
+    "searchText": "magicians of egypt group narrative royal sages unable to interpret pharaoh’s dreams; their inability spotlights joseph’s god-given insight. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.abel.gene-4--fea33a69",
+    "name": "Abel",
+    "type": "person",
+    "url": "/entities/p.abel.gene-4--fea33a69/",
+    "blurb": "Abel offers the firstborn of his flock and is regarded by God. Murdered by Cain, he becomes Scripture’s first martyr. His blood cries for justice, while Christ’s blood speaks a better word of mercy.",
+    "searchText": "abel person narrative abel offers the firstborn of his flock and is regarded by god. murdered by cain, he becomes scripture’s first martyr. his blood cries for justice, while christ’s blood speaks a better word of mercy. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Hebrews"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.adam.gene-2-5--6921e439",
+    "name": "Adam",
+    "type": "person",
+    "url": "/entities/p.adam.gene-2-5--6921e439/",
+    "blurb": "Adam, formed from dust and enlivened by God’s breath, embodies humanity’s vocation: to image God, cultivate creation, and live by God’s word (Gen 2:7–17). His failure in Eden fractures fellowship with",
+    "searchText": "adam person narrative adam, formed from dust and enlivened by god’s breath, embodies humanity’s vocation: to image god, cultivate creation, and live by god’s word (gen 2:7–17). his failure in eden fractures fellowship with god and distorts human relationships. jewish tradition remembers adam as both glorious and tragic; christian theology contrasts adam with christ—the ‘last adam’ who obeys where adam failed. adam’s story explains the human condition and sets the pattern for exile and the hope of return. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "1 Timothy"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.carmi.gene-46-9--726703f6",
+    "name": "Carmi",
+    "type": "person",
+    "url": "/entities/p.carmi.gene-46-9--726703f6/",
+    "blurb": "Son of Reuben listed among those who went to Egypt.",
+    "searchText": "carmi person genealogy son of reuben listed among those who went to egypt. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.eve.gene-2-5--7c858d94",
+    "name": "Eve",
+    "type": "person",
+    "url": "/entities/p.eve.gene-2-5--7c858d94/",
+    "blurb": "Eve, ‘mother of all living’ (Gen 3:20), is created as Adam’s counterpart and partner in the divine mission. Deceived by the serpent, she eats and gives to Adam; yet she becomes the bearer of the promi",
+    "searchText": "eve person narrative eve, ‘mother of all living’ (gen 3:20), is created as adam’s counterpart and partner in the divine mission. deceived by the serpent, she eats and gives to adam; yet she becomes the bearer of the promise that her seed will crush evil (gen 3:15). jewish midrash explores her complexity; christian tradition pairs eve with mary as a reversal motif: where eve believed the serpent, mary believed god. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "1 Timothy"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.gershon.gene-46-11--db453443",
+    "name": "Gershon",
+    "type": "person",
+    "url": "/entities/p.gershon.gene-46-11--db453443/",
+    "blurb": "Son of Levi; later a Levitical clan progenitor.",
+    "searchText": "gershon person genealogy son of levi; later a levitical clan progenitor. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.hezron.gene-46-9-46-12--0d33b793",
+    "name": "Hezron",
+    "type": "person",
+    "url": "/entities/p.hezron.gene-46-9-46-12--0d33b793/",
+    "blurb": "Descendant in the lines of Reuben and Perez; ancestor-name later in Davidic genealogy.",
+    "searchText": "hezron person genealogy descendant in the lines of reuben and perez; ancestor-name later in davidic genealogy. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.jachin.gene-46-10--4e6517d3",
+    "name": "Jachin",
+    "type": "person",
+    "url": "/entities/p.jachin.gene-46-10--4e6517d3/",
+    "blurb": "Son of Simeon listed among those who went to Egypt.",
+    "searchText": "jachin person genealogy son of simeon listed among those who went to egypt. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.jamin.gene-46-10--5972d38d",
+    "name": "Jamin",
+    "type": "person",
+    "url": "/entities/p.jamin.gene-46-10--5972d38d/",
+    "blurb": "Son of Simeon listed among those who went to Egypt.",
+    "searchText": "jamin person genealogy son of simeon listed among those who went to egypt. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.jemuel.nemuel.gene-46-10--4ea06837",
+    "name": "Jemuel (Nemuel)",
+    "type": "person",
+    "url": "/entities/p.jemuel.nemuel.gene-46-10--4ea06837/",
+    "blurb": "Son of Simeon listed among those who went to Egypt; name variant appears in later lists.",
+    "searchText": "jemuel (nemuel) person genealogy son of simeon listed among those who went to egypt; name variant appears in later lists. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.joseph.gene-30-24--e665eb01",
+    "name": "Joseph",
+    "type": "person",
+    "url": "/entities/p.joseph.gene-30-24--e665eb01/",
+    "blurb": "Beloved son whose later story dominates Gen 37–50; in 26–36 he is born and becomes a source of family tension.",
+    "searchText": "joseph person narrative beloved son whose later story dominates gen 37–50; in 26–36 he is born and becomes a source of family tension. p.joseph.gene-37-50--3399451e",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Hebrews"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.kohath.gene-46-11--13ddd86a",
+    "name": "Kohath",
+    "type": "person",
+    "url": "/entities/p.kohath.gene-46-11--13ddd86a/",
+    "blurb": "Son of Levi; ancestor of Moses and Aaron’s line.",
+    "searchText": "kohath person genealogy son of levi; ancestor of moses and aaron’s line. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.korah.son-of-esau.gene-36-5-14-18--9ad77197",
+    "name": "Korah (son of Esau)",
+    "type": "person",
+    "url": "/entities/p.korah.son-of-esau.gene-36-5-14-18--9ad77197/",
+    "blurb": "Son of Esau by Oholibamah; later a clan chief (not to be confused with the Korah of Numbers 16).",
+    "searchText": "korah (son of esau) person genealogy son of esau by oholibamah; later a clan chief (not to be confused with the korah of numbers 16). p.korah-son-of-izhar--908ea275",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.lot.gene-11-27-12-4-5--edc742c8",
+    "name": "Lot",
+    "type": "person",
+    "url": "/entities/p.lot.gene-11-27-12-4-5--edc742c8/",
+    "blurb": "Nephew of Abram introduced in Terah’s family list; his story unfolds in Genesis 13–19.",
+    "searchText": "lot person genealogy nephew of abram introduced in terah’s family list; his story unfolds in genesis 13–19. p.lot.gene-12-19--59f18e60",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "2 Peter"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.merari.gene-46-11--fa4697ab",
+    "name": "Merari",
+    "type": "person",
+    "url": "/entities/p.merari.gene-46-11--fa4697ab/",
+    "blurb": "Son of Levi; founder of Levitical Merarites.",
+    "searchText": "merari person genealogy son of levi; founder of levitical merarites. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.milcah.gene-11-29--2c32743e",
+    "name": "Milcah",
+    "type": "person",
+    "url": "/entities/p.milcah.gene-11-29--2c32743e/",
+    "blurb": "Daughter of Haran; later wife of Nahor (Abram’s brother), anchoring the family line that will lead to Rebekah.",
+    "searchText": "milcah person genealogy daughter of haran; later wife of nahor (abram’s brother), anchoring the family line that will lead to rebekah. p.milcah.daughter-of-zelophehad--7a2f02db",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Numbers"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.ohad.gene-46-10--41fdc520",
+    "name": "Ohad",
+    "type": "person",
+    "url": "/entities/p.ohad.gene-46-10--41fdc520/",
+    "blurb": "Son of Simeon listed among those who went to Egypt.",
+    "searchText": "ohad person genealogy son of simeon listed among those who went to egypt. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.pallu.gene-46-9--0bb1b5b2",
+    "name": "Pallu",
+    "type": "person",
+    "url": "/entities/p.pallu.gene-46-9--0bb1b5b2/",
+    "blurb": "Son of Reuben listed among those who went to Egypt.",
+    "searchText": "pallu person genealogy son of reuben listed among those who went to egypt. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.shaul.son-of-a-canaanite-woman.gene-46-10--f81f8022",
+    "name": "Shaul (son of a Canaanite woman)",
+    "type": "person",
+    "url": "/entities/p.shaul.son-of-a-canaanite-woman.gene-46-10--f81f8022/",
+    "blurb": "Son of Simeon with a noted maternal descriptor.",
+    "searchText": "shaul (son of a canaanite woman) person genealogy son of simeon with a noted maternal descriptor. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.zohar.zerah.gene-46-10--097fbd18",
+    "name": "Zohar (Zerah)",
+    "type": "person",
+    "url": "/entities/p.zohar.zerah.gene-46-10--097fbd18/",
+    "blurb": "Son of Simeon listed among those who went to Egypt; variant ‘Zerah’ occurs elsewhere.",
+    "searchText": "zohar (zerah) person genealogy son of simeon listed among those who went to egypt; variant ‘zerah’ occurs elsewhere. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "g.amorites.gene-10-15-18--5648c816",
+    "name": "Amorites",
+    "type": "group",
+    "url": "/entities/g.amorites.gene-10-15-18--5648c816/",
+    "blurb": "Descendant of Canaan; associated with peoples inhabiting the land later promised to Israel.",
+    "searchText": "amorites group genealogy descendant of canaan; associated with peoples inhabiting the land later promised to israel. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "g.arkites.gene-10-15-18--598d37eb",
+    "name": "Arkites",
+    "type": "group",
+    "url": "/entities/g.arkites.gene-10-15-18--598d37eb/",
+    "blurb": "Descendant of Canaan; associated with peoples inhabiting the land later promised to Israel.",
+    "searchText": "arkites group genealogy descendant of canaan; associated with peoples inhabiting the land later promised to israel. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "g.arvadites.gene-10-15-18--7914db53",
+    "name": "Arvadites",
+    "type": "group",
+    "url": "/entities/g.arvadites.gene-10-15-18--7914db53/",
+    "blurb": "Descendant of Canaan; associated with peoples inhabiting the land later promised to Israel.",
+    "searchText": "arvadites group genealogy descendant of canaan; associated with peoples inhabiting the land later promised to israel. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "g.builders-of-babel.gene-11-1-9--1deb7c1f",
+    "name": "Builders of Babel",
+    "type": "group",
+    "url": "/entities/g.builders-of-babel.gene-11-1-9--1deb7c1f/",
+    "blurb": "A unified people who seek a great name and security against dispersion by building a city and a tower. God confuses their language, scattering them. Jewish tradition reads Babel as prideful centraliza",
+    "searchText": "builders of babel group narrative a unified people who seek a great name and security against dispersion by building a city and a tower. god confuses their language, scattering them. jewish tradition reads babel as prideful centralization; christians often see a contrast with pentecost. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.cherubim.gene-3-24--583c9558",
+    "name": "Cherubim",
+    "type": "group",
+    "url": "/entities/g.cherubim.gene-3-24--583c9558/",
+    "blurb": "Heavenly guardians stationed at Eden’s eastern gate with a flaming sword. They mark that re-entry to God’s presence is barred except by His provision, foreshadowing later tabernacle/temple symbolism.",
+    "searchText": "cherubim group narrative heavenly guardians stationed at eden’s eastern gate with a flaming sword. they mark that re-entry to god’s presence is barred except by his provision, foreshadowing later tabernacle/temple symbolism. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.girgashites.gene-10-15-18--57cd4ec6",
+    "name": "Girgashites",
+    "type": "group",
+    "url": "/entities/g.girgashites.gene-10-15-18--57cd4ec6/",
+    "blurb": "Descendant of Canaan; associated with peoples inhabiting the land later promised to Israel.",
+    "searchText": "girgashites group genealogy descendant of canaan; associated with peoples inhabiting the land later promised to israel. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "g.gomorrahites.gene-19--19231b91",
+    "name": "Gomorrahites",
+    "type": "group",
+    "url": "/entities/g.gomorrahites.gene-19--19231b91/",
+    "blurb": "Collective inhabitants of Gomorrah, paired with Sodom in judgment narratives throughout Scripture.",
+    "searchText": "gomorrahites group narrative collective inhabitants of gomorrah, paired with sodom in judgment narratives throughout scripture. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.hamathites.gene-10-15-18--5da26bd4",
+    "name": "Hamathites",
+    "type": "group",
+    "url": "/entities/g.hamathites.gene-10-15-18--5da26bd4/",
+    "blurb": "Descendant of Canaan; associated with peoples inhabiting the land later promised to Israel.",
+    "searchText": "hamathites group genealogy descendant of canaan; associated with peoples inhabiting the land later promised to israel. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "g.hivites.gene-10-15-18--7c42df1e",
+    "name": "Hivites",
+    "type": "group",
+    "url": "/entities/g.hivites.gene-10-15-18--7c42df1e/",
+    "blurb": "Descendant of Canaan; associated with peoples inhabiting the land later promised to Israel.",
+    "searchText": "hivites group genealogy descendant of canaan; associated with peoples inhabiting the land later promised to israel. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "g.ishmaelite-midianite-traders.gene-37-25-36--9a397ea7",
+    "name": "Ishmaelite/Midianite traders",
+    "type": "group",
+    "url": "/entities/g.ishmaelite-midianite-traders.gene-37-25-36--9a397ea7/",
+    "blurb": "Caravan merchants who carry Joseph to Egypt; agents of painful providence.",
+    "searchText": "ishmaelite/midianite traders group narrative caravan merchants who carry joseph to egypt; agents of painful providence. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.jebusites.gene-10-15-18--deb0d394",
+    "name": "Jebusites",
+    "type": "group",
+    "url": "/entities/g.jebusites.gene-10-15-18--deb0d394/",
+    "blurb": "Descendant of Canaan; associated with peoples inhabiting the land later promised to Israel.",
+    "searchText": "jebusites group genealogy descendant of canaan; associated with peoples inhabiting the land later promised to israel. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "g.lots-daughters.gene-19-30-38--d88bb205",
+    "name": "Lot’s daughters",
+    "type": "group",
+    "url": "/entities/g.lots-daughters.gene-19-30-38--d88bb205/",
+    "blurb": "Their desperate scheme secures offspring—Moab and Ben-ammi—founders of neighboring peoples, reminding readers that God can bring future hope from broken circumstances.",
+    "searchText": "lot’s daughters group narrative their desperate scheme secures offspring—moab and ben-ammi—founders of neighboring peoples, reminding readers that god can bring future hope from broken circumstances. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.men-of-egypt.gene-43-47--7166a39d",
+    "name": "Men of Egypt",
+    "type": "group",
+    "url": "/entities/g.men-of-egypt.gene-43-47--7166a39d/",
+    "blurb": "Collective populace impacted by the famine and by Joseph’s policies—juxtaposing survival with the costs of royal economy.",
+    "searchText": "men of egypt group narrative collective populace impacted by the famine and by joseph’s policies—juxtaposing survival with the costs of royal economy. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.men-of-shechem.gene-34--969a7ee3",
+    "name": "Men of Shechem",
+    "type": "group",
+    "url": "/entities/g.men-of-shechem.gene-34--969a7ee3/",
+    "blurb": "City collective entangled in deceit, circumcision, and slaughter—an anatomy of communal folly and rage.",
+    "searchText": "men of shechem group narrative city collective entangled in deceit, circumcision, and slaughter—an anatomy of communal folly and rage. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.men-of-sodom.gene-19--c0d9e83e",
+    "name": "Men of Sodom",
+    "type": "group",
+    "url": "/entities/g.men-of-sodom.gene-19--c0d9e83e/",
+    "blurb": "Embodiment of communal injustice and violent inhospitality. Their judgment stands as a canonical warning; Abraham’s intercession shows divine justice tempered by mercy.",
+    "searchText": "men of sodom group narrative embodiment of communal injustice and violent inhospitality. their judgment stands as a canonical warning; abraham’s intercession shows divine justice tempered by mercy. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.shepherds-of-goshen.gene-46-47--e9aea74a",
+    "name": "Shepherds of Goshen",
+    "type": "group",
+    "url": "/entities/g.shepherds-of-goshen.gene-46-47--e9aea74a/",
+    "blurb": "Jacob’s family identified occupationally; Egyptians consider shepherding detestable—creating space in Goshen for Israel’s distinct identity.",
+    "searchText": "shepherds of goshen group narrative jacob’s family identified occupationally; egyptians consider shepherding detestable—creating space in goshen for israel’s distinct identity. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.sinites.gene-10-15-18--f2cb0528",
+    "name": "Sinites",
+    "type": "group",
+    "url": "/entities/g.sinites.gene-10-15-18--f2cb0528/",
+    "blurb": "Descendant of Canaan; associated with peoples inhabiting the land later promised to Israel.",
+    "searchText": "sinites group genealogy descendant of canaan; associated with peoples inhabiting the land later promised to israel. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "g.sodomites.gene-13-13-19--b3052cfd",
+    "name": "Sodomites",
+    "type": "group",
+    "url": "/entities/g.sodomites.gene-13-13-19--b3052cfd/",
+    "blurb": "Collective inhabitants of Sodom. Their portrayal becomes a scriptural shorthand for societal corruption and divine judgment.",
+    "searchText": "sodomites group narrative collective inhabitants of sodom. their portrayal becomes a scriptural shorthand for societal corruption and divine judgment. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.sons-of-heth.hittites.gene-23--d2411804",
+    "name": "Sons of Heth (Hittites)",
+    "type": "group",
+    "url": "/entities/g.sons-of-heth.hittites.gene-23--d2411804/",
+    "blurb": "Local Hittite clan among whom Abraham purchases the cave of Machpelah for Sarah’s burial—a down payment of the promised land.",
+    "searchText": "sons of heth (hittites) group narrative local hittite clan among whom abraham purchases the cave of machpelah for sarah’s burial—a down payment of the promised land. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.the-three-visitors.angels-at-mamre.gene-18--056ae72b",
+    "name": "The three visitors (angels at Mamre)",
+    "type": "group",
+    "url": "/entities/g.the-three-visitors.angels-at-mamre.gene-18--056ae72b/",
+    "blurb": "Three visitors announce Isaac’s birth and disclose Sodom’s impending judgment. The scene showcases Abraham’s hospitality and God’s intimate knowledge of justice.",
+    "searchText": "the three visitors (angels at mamre) group narrative three visitors announce isaac’s birth and disclose sodom’s impending judgment. the scene showcases abraham’s hospitality and god’s intimate knowledge of justice. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.zemarites.gene-10-15-18--ba5f5c20",
+    "name": "Zemarites",
+    "type": "group",
+    "url": "/entities/g.zemarites.gene-10-15-18--ba5f5c20/",
+    "blurb": "Descendant of Canaan; associated with peoples inhabiting the land later promised to Israel.",
+    "searchText": "zemarites group genealogy descendant of canaan; associated with peoples inhabiting the land later promised to israel. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.abida.gene-25-3-4--6d07dea2",
+    "name": "Abida",
+    "type": "person",
+    "url": "/entities/p.abida.gene-25-3-4--6d07dea2/",
+    "blurb": "Descendant of Midian; branch of Abraham’s Keturah-line.",
+    "searchText": "abida person genealogy descendant of midian; branch of abraham’s keturah-line. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.abimael.gene-10-26-29--a15d1b83",
+    "name": "Abimael",
+    "type": "person",
+    "url": "/entities/p.abimael.gene-10-26-29--a15d1b83/",
+    "blurb": "Son of Joktan; associated with Arabian regions and trade.",
+    "searchText": "abimael person genealogy son of joktan; associated with arabian regions and trade. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.abrahams-chief-servant.genesis-24.gene-24--879e00cf",
+    "name": "Abraham’s chief servant (Genesis 24)",
+    "type": "person",
+    "url": "/entities/p.abrahams-chief-servant.genesis-24.gene-24--879e00cf/",
+    "blurb": "Unnamed chief servant (often associated with Eliezer) tasked with finding a wife for Isaac; models prayerful dependence and providential guidance.",
+    "searchText": "abraham’s chief servant (genesis 24) person narrative unnamed chief servant (often associated with eliezer) tasked with finding a wife for isaac; models prayerful dependence and providential guidance. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.abram.abraham.gene-11-26-32--47d46ad9",
+    "name": "Abram (Abraham)",
+    "type": "person",
+    "url": "/entities/p.abram.abraham.gene-11-26-32--47d46ad9/",
+    "blurb": "Introduced as son of Terah alongside Nahor and Haran. His full narrative begins in Genesis 12.",
+    "searchText": "abram (abraham) person genealogy introduced as son of terah alongside nahor and haran. his full narrative begins in genesis 12. p.abram.abraham.gene-12-25--f1081cc7",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.adah.gene-4-19-22--fc9e0f7f",
+    "name": "Adah",
+    "type": "person",
+    "url": "/entities/p.adah.gene-4-19-22--fc9e0f7f/",
+    "blurb": "Wife of Lamech; mother of Jabal and Jubal. Her line is linked with pastoralism and music.",
+    "searchText": "adah person genealogy wife of lamech; mother of jabal and jubal. her line is linked with pastoralism and music. ",
+    "references": 1,
+    "books": [
+      "Genesis"
+    ],
+    "category": "genealogy"
+  }
+]

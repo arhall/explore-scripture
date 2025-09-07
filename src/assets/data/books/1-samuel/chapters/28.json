@@ -1,0 +1,28 @@
+{
+  "book": "1 Samuel",
+  "chapter": 28,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "t.achish-king-of-gath--cb61d592",
+      "name": "Achish king of Gath",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.medium-of-endor--4dc27b3c",
+      "name": "Medium of Endor",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "f.apparition-of-samuel--f892a3f9",
+      "name": "Apparition of Samuel",
+      "type": "figure",
+      "role": "theophany",
+      "refs_count": 1
+    }
+  ]
+}

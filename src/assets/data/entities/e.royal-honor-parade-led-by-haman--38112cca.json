@@ -1,0 +1,18 @@
+{
+  "name": "Royal honor parade led by Haman",
+  "type": "entity",
+  "references": [
+    "Esther 6:4–11"
+  ],
+  "blurb": "The proud carry the humble through the streets—reversal at full volume.",
+  "category": "narrative",
+  "id": "e.royal-honor-parade-led-by-haman--38112cca",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      6
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "e.bashan-oaks--9f05cc2b",
+  "name": "Bashan oaks",
+  "type": "entity",
+  "references": [
+    "Zech 11:2"
+  ],
+  "category": "arboreal-symbol",
+  "blurb": "Strength imagery turned to mourning under judgment.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      11
+    ]
+  }
+}

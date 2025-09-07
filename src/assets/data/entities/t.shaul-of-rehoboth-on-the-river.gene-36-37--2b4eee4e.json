@@ -1,0 +1,21 @@
+{
+  "name": "Shaul of Rehoboth on the River",
+  "type": "title",
+  "references": [
+    "Genesis 36:37"
+  ],
+  "blurb": "Linked to Rehoboth by the river (likely Euphrates). Edom’s kingship structure foreshadows later national polities.",
+  "category": "genealogy",
+  "cross_references": [
+    "1 Chronicles 1:43–50"
+  ],
+  "id": "t.shaul-of-rehoboth-on-the-river.gene-36-37--2b4eee4e",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

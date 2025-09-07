@@ -1,0 +1,18 @@
+{
+  "id": "f.strike-the-shepherd--b57c4ee2",
+  "name": "Strike the shepherd",
+  "type": "figure",
+  "references": [
+    "Zech 13:7"
+  ],
+  "category": "scattering-motif",
+  "blurb": "Sword against the shepherd; flock scattered—later cited in the Gospels.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      13
+    ]
+  }
+}

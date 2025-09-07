@@ -1,0 +1,18 @@
+{
+  "name": "Commissioning of Joshua",
+  "type": "entity",
+  "references": [
+    "Numbers 27:18–23"
+  ],
+  "blurb": "Moses lays hands on Joshua before Eleazar—succession by Spirit and counsel.",
+  "category": "narrative",
+  "id": "e.commissioning-of-joshua--a82ea40f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      27
+    ]
+  }
+}

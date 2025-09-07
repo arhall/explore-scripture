@@ -1,0 +1,21 @@
+{
+  "name": "Prince of Tyre",
+  "type": "person",
+  "references": [
+    "Ezekiel 28:1–10"
+  ],
+  "blurb": "Human ruler deified by commerce and wisdom; reminded he is but a man before the God he mimics.",
+  "relations": {
+    "city": "Tyre"
+  },
+  "category": "prince",
+  "id": "p.prince-of-tyre--e919d820",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      28
+    ]
+  }
+}

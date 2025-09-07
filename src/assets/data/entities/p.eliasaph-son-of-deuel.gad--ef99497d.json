@@ -1,0 +1,18 @@
+{
+  "name": "Eliasaph son of Deuel (Gad)",
+  "type": "person",
+  "references": [
+    "Numbers 1:14; 2:14; 7:42"
+  ],
+  "blurb": "Leader of Gad; also called Reuel in some traditions.",
+  "category": "genealogy",
+  "id": "p.eliasaph-son-of-deuel.gad--ef99497d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      1
+    ]
+  }
+}

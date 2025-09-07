@@ -1,0 +1,17 @@
+{
+  "name": "Shalmaneser V of Assyria",
+  "type": "person",
+  "references": [
+    "Isaiah 20 (background); 2 Kings 17"
+  ],
+  "blurb": "Begins the siege of Samaria—history’s gears grind toward exile.",
+  "relations": {
+    "empire": "Assyria"
+  },
+  "category": "emperor",
+  "id": "p.shalmaneser-v-of-assyria--dbdb526a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

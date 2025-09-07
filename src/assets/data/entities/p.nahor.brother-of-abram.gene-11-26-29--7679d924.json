@@ -1,0 +1,27 @@
+{
+  "name": "Nahor (brother of Abram)",
+  "type": "person",
+  "references": [
+    "Genesis 11:26–29"
+  ],
+  "blurb": "Brother of Abram; later linked to Milcah and to the Nahorite clan in Mesopotamia.",
+  "relations": {
+    "parents": [
+      "Terah"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "Genesis 22:20–24"
+  ],
+  "id": "p.nahor.brother-of-abram.gene-11-26-29--7679d924",
+  "canonical_id": "p.nahor.son-of-serug.gene-11-24-25--fc737356",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      11
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "f.second-complaint--03948ac5",
+  "name": "Second complaint",
+  "type": "figure",
+  "references": [
+    "Hab 1:12-2:1"
+  ],
+  "category": "literary-unit",
+  "blurb": "How can the Holy One look at treachery? The prophet stations himself to watch for an answer.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      1
+    ]
+  }
+}

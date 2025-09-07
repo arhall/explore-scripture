@@ -1,0 +1,21 @@
+{
+  "name": "Kinsman-redeemer (Go’el)",
+  "type": "entity",
+  "references": [
+    "Leviticus 25:25–55"
+  ],
+  "blurb": "Relative who restores land/freedom—family justice in God’s economy.",
+  "category": "ritual",
+  "cross_references": [
+    "Ruth 4:1–10"
+  ],
+  "id": "e.kinsman-redeemer.goel--5096cf8d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Leviticus": [
+      25
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "book": "Exodus",
+  "chapter": 18,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "p.aaron--cc77e332",
+      "name": "Aaron",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 6
+    },
+    {
+      "id": "p.jethro.reuel--3e8098d5",
+      "name": "Jethro (Reuel)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2
+    },
+    {
+      "id": "p.eliezer--10cb3d9b",
+      "name": "Eliezer",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1
+    },
+    {
+      "id": "g.chiefs-of-thousands-hundreds-fifties-tens--8361dcf1",
+      "name": "Chiefs of thousands/hundreds/fifties/tens",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

@@ -3,26 +3,40 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+.npm
+.pnp.*
+.yarn/
 
-# Build output
+# Build outputs
 _site/
 dist/
+build/
+build-logs/
+tmp/
+_tmp/
+.temp/
 
-# Environment variables
-.env
+# Environment and configuration
+.env*
+!.env.example
 .env.local
+.env.production
 .env.development.local
 .env.test.local
 .env.production.local
 
-# IDE/Editor files
+# IDEs and editors
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
+.project
+.classpath
+.settings/
 
-# OS generated files
+# Operating system files
 .DS_Store
 .DS_Store?
 ._*
@@ -30,21 +44,15 @@ dist/
 .Trashes
 ehthumbs.db
 Thumbs.db
+Desktop.ini
 
-# Logs
-logs
-*.log
-
-# Cache directories
-.cache/
-.parcel-cache/
-
-# Temporary files
-.tmp/
-.temp/
-tmp/
-
-# Python virtual environment and cache
+# Testing and coverage
+coverage/
+.nyc_output/
+*.lcov
+.pytest_cache/
+htmlcov/
+.tox/
 test-env/
 debug-env/
 venv/
@@ -52,12 +60,22 @@ env/
 __pycache__/
 *.py[cod]
 *$py.class
-.pytest_cache/
+.coverage
+.coverage.*
+test-results/
+test-reports/
 
-# Build logs and analysis
-build-logs/
+# Cache and temporary files
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.node_repl_history
 *.log
-coverage/
+*.pid
+*.seed
+*.pid.lock
+logs/
 
 # Compressed files
 *.gz
@@ -66,3 +84,29 @@ coverage/
 
 # Eleventy cache
 .eleventy.cache/
+
+# Large data files (moved to data/source-datasets/)
+# Allow specific JSON files but ignore large datasets in root
+Bible_*.json
+*_entities*.json
+!package*.json
+!manifest.json
+!tsconfig*.json
+!jest.config.json
+!.stylelintrc.json
+!src/**/*.json
+
+# Generated documentation
+docs/api/
+
+# Docker
+docker-compose.override.yml
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Project-specific temp directories
+data/temp/
+data/cache/

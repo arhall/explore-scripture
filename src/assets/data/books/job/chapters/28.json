@@ -1,0 +1,14 @@
+{
+  "book": "Job",
+  "chapter": 28,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "e.wisdom-hymn.where-can-wisdom-be-found--606ea35d",
+      "name": "Wisdom hymn (‘Where can wisdom be found?’)",
+      "type": "entity",
+      "role": "wisdom",
+      "refs_count": 1
+    }
+  ]
+}

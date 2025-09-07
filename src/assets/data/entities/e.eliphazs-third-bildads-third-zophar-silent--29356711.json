@@ -1,0 +1,23 @@
+{
+  "name": "Eliphaz’s third; Bildad’s third; Zophar silent",
+  "type": "entity",
+  "references": [
+    "Job 22–27"
+  ],
+  "blurb": "Argument thins; pious clichés cannot carry the freight of the ash heap.",
+  "category": "wisdom",
+  "id": "e.eliphazs-third-bildads-third-zophar-silent--29356711",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Job": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ]
+  }
+}

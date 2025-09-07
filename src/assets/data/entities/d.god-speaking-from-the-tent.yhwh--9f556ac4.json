@@ -1,0 +1,22 @@
+{
+  "name": "God (YHWH) speaking from the Tent",
+  "type": "divine",
+  "references": [
+    "Leviticus 1:1; 9:23–24"
+  ],
+  "blurb": "Leviticus opens with the LORD calling to Moses from the tent of meeting, signaling nearness with order. God’s speech structures worship, ethics, and community—holiness flowing from His character.",
+  "category": "narrative",
+  "cross_references": [
+    "Exodus 40:34–38",
+    "Hebrews 12:28–29"
+  ],
+  "id": "d.god-speaking-from-the-tent.yhwh--9f556ac4",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Leviticus": [
+      1
+    ]
+  }
+}

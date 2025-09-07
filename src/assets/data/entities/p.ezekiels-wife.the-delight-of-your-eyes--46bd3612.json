@@ -1,0 +1,21 @@
+{
+  "name": "Ezekiel’s wife (‘the delight of your eyes’)",
+  "type": "person",
+  "references": [
+    "Ezekiel 24:15–27"
+  ],
+  "blurb": "Her sudden death becomes a sign: as the temple—the people’s delight—is taken away, mourning is muted; grief turns theological.",
+  "relations": {
+    "husband": "Ezekiel"
+  },
+  "category": "family",
+  "id": "p.ezekiels-wife.the-delight-of-your-eyes--46bd3612",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      24
+    ]
+  }
+}

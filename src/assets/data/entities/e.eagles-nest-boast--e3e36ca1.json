@@ -1,0 +1,18 @@
+{
+  "name": "Eagle’s nest boast",
+  "type": "entity",
+  "references": [
+    "Obadiah 1:4"
+  ],
+  "blurb": "Even if you set your nest among the stars, from there I will bring you down—anti‑Babel warning recast for Edom.",
+  "category": "image",
+  "id": "e.eagles-nest-boast--e3e36ca1",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Obadiah": [
+      1
+    ]
+  }
+}

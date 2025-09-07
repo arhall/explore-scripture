@@ -1,0 +1,28 @@
+{
+  "book": "Ezekiel",
+  "chapter": 12,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "p.zedekiah.prince-in-jerusalem--e701970b",
+      "name": "Zedekiah (‘prince in Jerusalem’)",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1
+    },
+    {
+      "id": "e.packing-baggage-for-exile--554922f8",
+      "name": "Packing baggage for exile",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1
+    },
+    {
+      "id": "e.proverb-the-days-are-prolonged-refuted--8fd76bde",
+      "name": "Proverb: ‘The days are prolonged’ refuted",
+      "type": "entity",
+      "role": "prophecy",
+      "refs_count": 1
+    }
+  ]
+}

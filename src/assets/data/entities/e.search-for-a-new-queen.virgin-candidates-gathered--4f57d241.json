@@ -1,0 +1,18 @@
+{
+  "name": "Search for a new queen (virgin candidates gathered)",
+  "type": "entity",
+  "references": [
+    "Esther 2:1–4"
+  ],
+  "blurb": "The machinery of empire recruits women into the harem—beauty as state resource.",
+  "category": "record",
+  "id": "e.search-for-a-new-queen.virgin-candidates-gathered--4f57d241",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      2
+    ]
+  }
+}

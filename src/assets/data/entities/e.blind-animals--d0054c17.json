@@ -1,0 +1,18 @@
+{
+  "id": "e.blind-animals--d0054c17",
+  "name": "Blind animals",
+  "type": "entity",
+  "references": [
+    "Mal 1:8"
+  ],
+  "category": "blemish",
+  "blurb": "Unacceptable sacrifices that dishonor the Great King.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      1
+    ]
+  }
+}

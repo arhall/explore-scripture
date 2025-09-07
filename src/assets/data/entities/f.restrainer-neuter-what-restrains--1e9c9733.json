@@ -1,0 +1,20 @@
+{
+  "name": "Restrainer (neuter: what restrains)",
+  "type": "figure",
+  "category": "restrainer",
+  "references": [
+    "2 Thess 2:6"
+  ],
+  "relations": {
+    "paired_with": "Restrainer (masculine: he who restrains)"
+  },
+  "aka": [
+    "Restrainer (what)"
+  ],
+  "id": "f.restrainer-neuter-what-restrains--1e9c9733",
+  "book_references": {
+    "2 Thessalonians": [
+      2
+    ]
+  }
+}

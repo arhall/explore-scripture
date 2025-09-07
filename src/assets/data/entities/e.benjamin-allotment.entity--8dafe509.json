@@ -1,0 +1,18 @@
+{
+  "name": "Benjamin allotment (entity)",
+  "type": "entity",
+  "references": [
+    "Joshua 18:11–28"
+  ],
+  "blurb": "Territory between Judah and Ephraim including Jerusalem’s vicinity and Jericho.",
+  "category": "allotment",
+  "id": "e.benjamin-allotment.entity--8dafe509",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joshua": [
+      18
+    ]
+  }
+}

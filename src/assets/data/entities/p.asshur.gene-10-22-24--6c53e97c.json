@@ -1,0 +1,28 @@
+{
+  "name": "Asshur",
+  "type": "person",
+  "references": [
+    "Genesis 10:22–24"
+  ],
+  "blurb": "Son of Shem; ancestor of peoples to Israel’s east and north.",
+  "relations": {
+    "parents": [
+      "Shem"
+    ],
+    "children": null
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "2 Kings 17",
+    "Nahum 1"
+  ],
+  "id": "p.asshur.gene-10-22-24--6c53e97c",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

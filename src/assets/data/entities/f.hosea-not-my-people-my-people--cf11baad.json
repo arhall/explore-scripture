@@ -1,0 +1,27 @@
+{
+  "name": "Hosea: not my people → my people",
+  "type": "figure",
+  "category": "inclusion",
+  "references": [
+    "Rom 9:25–26"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Hos 2:23; 1:10",
+      "type": "quotation"
+    }
+  ],
+  "aka": [],
+  "id": "f.hosea-not-my-people-my-people--cf11baad",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      9
+    ]
+  }
+}

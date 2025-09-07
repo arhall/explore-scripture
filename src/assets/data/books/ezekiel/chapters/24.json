@@ -1,0 +1,35 @@
+{
+  "book": "Ezekiel",
+  "chapter": 24,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "p.ezekiels-wife.the-delight-of-your-eyes--46bd3612",
+      "name": "Ezekiel’s wife (‘the delight of your eyes’)",
+      "type": "person",
+      "role": "family",
+      "refs_count": 1
+    },
+    {
+      "id": "e.cooking-pot-rusty-cauldron--2f3ee29a",
+      "name": "Cooking pot / rusty cauldron",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1
+    },
+    {
+      "id": "e.prophets-wife-taken-no-mourning--bfedd544",
+      "name": "Prophet’s wife taken; no mourning",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1
+    },
+    {
+      "id": "e.rusty-cauldron-song--2fb1f190",
+      "name": "Rusty cauldron song",
+      "type": "entity",
+      "role": "lament",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Blood of the covenant",
+  "type": "entity",
+  "references": [
+    "Exodus 24:8"
+  ],
+  "blurb": "Altar and people sprinkled—communion sealed.",
+  "category": "ritual",
+  "cross_references": [
+    "Hebrews 9:18–22"
+  ],
+  "id": "e.blood-of-the-covenant--2497d1f0",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      24
+    ]
+  }
+}

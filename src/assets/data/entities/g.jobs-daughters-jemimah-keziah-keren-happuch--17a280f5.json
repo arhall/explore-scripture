@@ -1,0 +1,20 @@
+{
+  "name": "Job’s daughters: Jemimah, Keziah, Keren-happuch",
+  "type": "group",
+  "references": [
+    "Job 42:13–15"
+  ],
+  "blurb": "Named for beauty and blessing—inheritance granted with their brothers, subverting norms; Keren-happuch (‘horn of eye-shadow’) hints at adornment and dignity.",
+  "category": "narrative",
+  "count": 3,
+  "count_note": "Three daughters named individually",
+  "id": "g.jobs-daughters-jemimah-keziah-keren-happuch--17a280f5",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Job": [
+      42
+    ]
+  }
+}

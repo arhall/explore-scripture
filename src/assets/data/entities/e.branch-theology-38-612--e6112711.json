@@ -1,0 +1,20 @@
+{
+  "id": "e.branch-theology-38-612--e6112711",
+  "name": "Branch theology (3:8; 6:12)",
+  "type": "entity",
+  "references": [
+    "Zech 3:8",
+    "Zech 6:12"
+  ],
+  "category": "messianic-theology",
+  "blurb": "Priestly-royal figure who builds the temple and bears majesty; typology blossoms in later reception.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      3,
+      6
+    ]
+  }
+}

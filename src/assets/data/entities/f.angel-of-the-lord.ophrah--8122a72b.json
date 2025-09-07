@@ -1,0 +1,19 @@
+{
+  "name": "Angel of the LORD (Ophrah)",
+  "type": "figure",
+  "references": [
+    "Judges 6:11–24"
+  ],
+  "blurb": "Appears under the terebinth, receives offering, and commissions Gideon—holy presence turns a fearful farmer into a deliverer.",
+  "category": "narrative",
+  "id": "f.angel-of-the-lord.ophrah--8122a72b",
+  "canonical_id": "f.angel-of-the-lord.gene-16-22--790d3b7c",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      6
+    ]
+  }
+}

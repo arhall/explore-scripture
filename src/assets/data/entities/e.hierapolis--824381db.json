@@ -1,0 +1,21 @@
+{
+  "name": "Hierapolis",
+  "type": "entity",
+  "category": "city",
+  "references": [
+    "Col 4:13"
+  ],
+  "aka": [],
+  "id": "e.hierapolis--824381db",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      4
+    ]
+  }
+}

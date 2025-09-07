@@ -1,0 +1,18 @@
+{
+  "name": "Pagiel son of Ocran (Asher)",
+  "type": "person",
+  "references": [
+    "Numbers 1:13; 2:27; 7:72"
+  ],
+  "blurb": "Leader of Asher; brings his tribe’s gifts day eleven.",
+  "category": "genealogy",
+  "id": "p.pagiel-son-of-ocran.asher--e064ad9f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      1
+    ]
+  }
+}

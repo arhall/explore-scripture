@@ -1,0 +1,18 @@
+{
+  "name": "Hamulites (tribe of Judah)",
+  "type": "group",
+  "references": [
+    "Numbers 26"
+  ],
+  "blurb": "Clan of Judah counted in the second census.",
+  "category": "genealogy",
+  "id": "g.hamulites.tribe-of-judah--4114c60c",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      26
+    ]
+  }
+}

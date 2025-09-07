@@ -1,0 +1,15 @@
+{
+  "name": "husbands",
+  "type": "group",
+  "category": "household",
+  "references": [
+    "1 Pet 3:7"
+  ],
+  "aka": [],
+  "id": "g.husbands--200d6643",
+  "book_references": {
+    "1 Peter": [
+      3
+    ]
+  }
+}

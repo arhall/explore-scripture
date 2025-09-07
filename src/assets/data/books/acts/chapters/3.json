@@ -1,0 +1,35 @@
+{
+  "book": "Acts",
+  "chapter": 3,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "f.beautiful-gate-healing--8ce982e1",
+      "name": "Beautiful Gate healing",
+      "type": "figure",
+      "role": "miracle",
+      "refs_count": 1
+    },
+    {
+      "id": "f.speeches-in-acts-index--79e8df4b",
+      "name": "Speeches in Acts (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 10
+    },
+    {
+      "id": "e.solomon-s-portico--25981ded",
+      "name": "Solomon’s Portico",
+      "type": "entity",
+      "role": "site",
+      "refs_count": 2
+    },
+    {
+      "id": "p.simon-peter-cephas--d58cce37",
+      "name": "Simon Peter (Cephas)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 15
+    }
+  ]
+}

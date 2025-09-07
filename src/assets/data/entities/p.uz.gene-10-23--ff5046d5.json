@@ -1,0 +1,30 @@
+{
+  "name": "Uz",
+  "type": "person",
+  "references": [
+    "Genesis 10:23"
+  ],
+  "blurb": "Descendant of Aram; part of Shem’s branch.",
+  "relations": {
+    "parents": [
+      "Aram"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "Job 1:1"
+  ],
+  "id": "p.uz.gene-10-23--ff5046d5",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "p.uz.gene-22-21--92640e38",
+    "p.uz.gene-36-28--7ec2a3e8"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

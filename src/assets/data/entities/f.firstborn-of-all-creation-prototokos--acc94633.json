@@ -1,0 +1,27 @@
+{
+  "name": "Firstborn of all creation (prototokos)",
+  "type": "figure",
+  "category": "christology",
+  "references": [
+    "Col 1:15"
+  ],
+  "greek_terms": [
+    {
+      "term": "πρωτότοκος",
+      "gloss": "firstborn"
+    }
+  ],
+  "aka": [],
+  "id": "f.firstborn-of-all-creation-prototokos--acc94633",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      1
+    ]
+  }
+}

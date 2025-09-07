@@ -1,0 +1,20 @@
+{
+  "name": "Priests: sons of Pashhur",
+  "type": "group",
+  "references": [
+    "Ezra 2:38"
+  ],
+  "blurb": "Priestly division restored in the early return. Their 1247 members signal continuity of altar and sacrifice—legitimacy of worship tied to genealogical fidelity.",
+  "category": "worship",
+  "count": 1247,
+  "count_note": "Count per Ezra 2:38",
+  "id": "g.priests-sons-of-pashhur--8b94df8c",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      2
+    ]
+  }
+}

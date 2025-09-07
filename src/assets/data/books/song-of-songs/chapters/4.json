@@ -1,0 +1,28 @@
+{
+  "book": "Song of Songs",
+  "chapter": 4,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "e.garden-locked-a-spring-sealed--9ce0206a",
+      "name": "Garden locked, a spring sealed",
+      "type": "entity",
+      "role": "motif",
+      "refs_count": 1
+    },
+    {
+      "id": "e.body-metaphors-of-beauty--c50f470e",
+      "name": "Body metaphors of beauty",
+      "type": "entity",
+      "role": "imagery",
+      "refs_count": 1
+    },
+    {
+      "id": "e.architecture-towers.heshbon-damascus--c5006cf5",
+      "name": "Architecture & towers (Heshbon, Damascus)",
+      "type": "entity",
+      "role": "imagery",
+      "refs_count": 1
+    }
+  ]
+}

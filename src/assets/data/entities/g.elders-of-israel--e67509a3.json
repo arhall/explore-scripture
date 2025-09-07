@@ -1,0 +1,19 @@
+{
+  "name": "Elders of Israel",
+  "type": "group",
+  "references": [
+    "Exodus 3:16; 12:21"
+  ],
+  "blurb": "Representative leaders who receive Moses’ message and lead the people in Passover obedience.",
+  "category": "narrative",
+  "cross_references": [],
+  "id": "g.elders-of-israel--e67509a3",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      3
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "e.foundation-stone--8140a192",
+  "name": "Foundation stone",
+  "type": "entity",
+  "references": [
+    "Hag 2:18"
+  ],
+  "category": "construction",
+  "blurb": "Laid as the hinge of blessing; tangible sign of work resumed.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      2
+    ]
+  }
+}

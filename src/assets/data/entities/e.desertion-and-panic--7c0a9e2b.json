@@ -1,0 +1,22 @@
+{
+  "id": "e.desertion-and-panic--7c0a9e2b",
+  "name": "Desertion/Panic",
+  "type": "entity",
+  "references": [
+    "Nah 2:8; 3:17"
+  ],
+  "category": "battle-psychology",
+  "aka": [
+    "Flight",
+    "Scattering"
+  ],
+  "blurb": "Nineveh’s people flee; officials sleep; mercenaries vanish—symbolic of hollow power.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      2
+    ]
+  }
+}

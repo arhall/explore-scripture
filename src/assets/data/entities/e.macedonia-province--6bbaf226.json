@@ -1,0 +1,37 @@
+{
+  "name": "Macedonia (province)",
+  "type": "entity",
+  "category": "province",
+  "references": [
+    "Acts 16:9–10",
+    "Acts 19:21",
+    "Phil 4:15"
+  ],
+  "aka": [
+    "Macedonia"
+  ],
+  "id": "e.macedonia-province--6bbaf226",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "canonicalized_from": [
+    "e.macedonia-province--c2082639"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "cross_references": [
+    "Acts 16–17"
+  ],
+  "book_references": {
+    "Acts": [
+      16,
+      19
+    ],
+    "Philippians": [
+      4
+    ]
+  }
+}

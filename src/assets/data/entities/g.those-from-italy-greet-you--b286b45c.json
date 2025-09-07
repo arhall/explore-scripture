@@ -1,0 +1,15 @@
+{
+  "name": "those from Italy greet you",
+  "type": "group",
+  "category": "greeting",
+  "references": [
+    "Heb 13:24"
+  ],
+  "aka": [],
+  "id": "g.those-from-italy-greet-you--b286b45c",
+  "book_references": {
+    "Hebrews": [
+      13
+    ]
+  }
+}

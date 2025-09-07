@@ -1,0 +1,18 @@
+{
+  "name": "Banquet 7: post-deliverance joy",
+  "type": "entity",
+  "references": [
+    "Esther 8:17"
+  ],
+  "blurb": "Feast mirrors relief—celebration validates deliverance.",
+  "category": "festival",
+  "id": "e.banquet-7-post-deliverance-joy--ad676d0a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      8
+    ]
+  }
+}

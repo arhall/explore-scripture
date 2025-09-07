@@ -1,0 +1,15 @@
+{
+  "name": "elect sister",
+  "type": "person",
+  "category": "greetings",
+  "references": [
+    "2 John 13"
+  ],
+  "aka": [],
+  "id": "p.elect-sister--38ffe512",
+  "book_references": {
+    "2 John": [
+      13
+    ]
+  }
+}

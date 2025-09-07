@@ -1,0 +1,14 @@
+{
+  "book": "Hosea",
+  "chapter": 13,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "e.lion-leopard-bear--240c8a5f",
+      "name": "Lion, leopard, bear",
+      "type": "entity",
+      "role": "image",
+      "refs_count": 1
+    }
+  ]
+}

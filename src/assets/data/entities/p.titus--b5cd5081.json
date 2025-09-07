@@ -1,0 +1,29 @@
+{
+  "name": "Titus",
+  "type": "person",
+  "category": "coworker",
+  "references": [
+    "Gal 2:1,3",
+    "2 Tim 4:9-22",
+    "Titus 1:4"
+  ],
+  "aka": [],
+  "id": "p.titus--b5cd5081",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Galatians": [
+      2
+    ],
+    "2 Timothy": [
+      4
+    ],
+    "Titus": [
+      1
+    ]
+  }
+}

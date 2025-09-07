@@ -1,0 +1,18 @@
+{
+  "name": "Twelve memorial stones at Gilgal",
+  "type": "entity",
+  "references": [
+    "Joshua 4:1–9,20–24"
+  ],
+  "blurb": "Catechetical monument so children will ask ‘What do these stones mean?’—memory architecture to transmit faith across generations.",
+  "category": "ritual",
+  "id": "e.twelve-memorial-stones-at-gilgal--b05a86eb",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joshua": [
+      4
+    ]
+  }
+}

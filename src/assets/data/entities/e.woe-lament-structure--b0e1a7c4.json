@@ -1,0 +1,19 @@
+{
+  "id": "e.woe-lament-structure--b0e1a7c4",
+  "name": "Woe-lament structure",
+  "type": "entity",
+  "references": [
+    "Nah 3:1–7"
+  ],
+  "category": "form-criticism",
+  "aka": [],
+  "blurb": "Combines indictment, exposure, and pronouncement of doom—shaping how the oracle is performed/heard.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      3
+    ]
+  }
+}

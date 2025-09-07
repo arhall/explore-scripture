@@ -1,0 +1,21 @@
+{
+  "name": "Jason of Thessalonica",
+  "type": "person",
+  "category": "host",
+  "references": [
+    "Acts 17:5-9"
+  ],
+  "house_church": true,
+  "cross_references": [
+    "Rom 16:21"
+  ],
+  "aka": [
+    "Jason"
+  ],
+  "id": "p.jason-of-thessalonica--00c2fcce",
+  "book_references": {
+    "Acts": [
+      17
+    ]
+  }
+}

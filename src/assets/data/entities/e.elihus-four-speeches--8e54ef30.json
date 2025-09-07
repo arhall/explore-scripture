@@ -1,0 +1,18 @@
+{
+  "name": "Elihu’s four speeches",
+  "type": "entity",
+  "references": [
+    "Job 32:6–37:24"
+  ],
+  "blurb": "1) Human limitation and inspiration; 2) God’s justice beyond our sight; 3) Warning against rebellious talk; 4) Storm theophany prelude—‘God is clothed with awesome majesty.’",
+  "category": "wisdom",
+  "id": "e.elihus-four-speeches--8e54ef30",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Job": [
+      32
+    ]
+  }
+}

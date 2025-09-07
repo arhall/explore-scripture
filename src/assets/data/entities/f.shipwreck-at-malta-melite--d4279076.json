@@ -1,0 +1,23 @@
+{
+  "name": "Shipwreck at Malta (Melite)",
+  "type": "figure",
+  "category": "shipwreck",
+  "references": [
+    "Acts 27:39–44"
+  ],
+  "aka": [],
+  "id": "f.shipwreck-at-malta-melite--d4279076",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      27
+    ]
+  }
+}

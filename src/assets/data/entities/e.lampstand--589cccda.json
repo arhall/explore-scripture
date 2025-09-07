@@ -1,0 +1,23 @@
+{
+  "id": "e.lampstand--589cccda",
+  "name": "Lampstand",
+  "type": "entity",
+  "references": [
+    "Zech 4:2",
+    "Heb 9:1-5"
+  ],
+  "category": "temple-furnishing",
+  "blurb": "Seven-branched light fed by oil; symbolizes Spirit-sustained witness.",
+  "canonical_id": "e.lampstand--d7d8259b",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      4
+    ],
+    "Hebrews": [
+      9
+    ]
+  }
+}

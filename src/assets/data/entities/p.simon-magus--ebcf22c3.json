@@ -1,0 +1,23 @@
+{
+  "name": "Simon Magus",
+  "type": "person",
+  "category": "opponent",
+  "references": [
+    "Acts 8:9–24"
+  ],
+  "aka": [],
+  "id": "p.simon-magus--ebcf22c3",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      8
+    ]
+  }
+}

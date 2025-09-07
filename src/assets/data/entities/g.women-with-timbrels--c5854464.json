@@ -1,0 +1,19 @@
+{
+  "name": "Women with timbrels",
+  "type": "group",
+  "references": [
+    "Exodus 15:20–21"
+  ],
+  "blurb": "The women of Israel who, led by Miriam, answer Moses’ song with praise—worship as public theology.",
+  "category": "narrative",
+  "cross_references": [],
+  "id": "g.women-with-timbrels--c5854464",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      15
+    ]
+  }
+}

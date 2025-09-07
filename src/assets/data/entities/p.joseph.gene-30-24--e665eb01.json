@@ -1,0 +1,38 @@
+{
+  "name": "Joseph",
+  "type": "person",
+  "references": [
+    "Genesis 30:24",
+    "Heb 11:22"
+  ],
+  "blurb": "Beloved son whose later story dominates Gen 37–50; in 26–36 he is born and becomes a source of family tension.",
+  "relations": {
+    "parents": [
+      "Jacob (Israel)",
+      "Rachel"
+    ],
+    "children": [
+      "Manasseh",
+      "Ephraim"
+    ]
+  },
+  "category": "narrative",
+  "cross_references": [
+    "Genesis 37–50"
+  ],
+  "id": "p.joseph.gene-30-24--e665eb01",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "p.joseph.gene-37-50--3399451e"
+  ],
+  "book_references": {
+    "Genesis": [
+      30
+    ],
+    "Hebrews": [
+      11
+    ]
+  }
+}

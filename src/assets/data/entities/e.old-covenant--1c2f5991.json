@@ -1,0 +1,15 @@
+{
+  "name": "old covenant",
+  "type": "entity",
+  "category": "covenant",
+  "references": [
+    "Heb 8:9,13"
+  ],
+  "aka": [],
+  "id": "e.old-covenant--1c2f5991",
+  "book_references": {
+    "Hebrews": [
+      8
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Swords into plowshares (Zion’s instruction)",
+  "type": "entity",
+  "references": [
+    "Isaiah 2:2–4"
+  ],
+  "blurb": "Nations stream to Torah; war‑craft becomes agriculture—shalom is taught, not stumbled into.",
+  "category": "ethics",
+  "id": "e.swords-into-plowshares.zions-instruction--03251c07",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Isaiah": [
+      2
+    ]
+  }
+}

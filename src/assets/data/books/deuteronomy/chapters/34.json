@@ -1,0 +1,28 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 34,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "g.people-of-israel--ecedc898",
+      "name": "People of Israel (second generation)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.israel-weeps-for-moses-thirty-days--45561b49",
+      "name": "Israel weeps for Moses thirty days",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

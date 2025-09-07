@@ -1,0 +1,18 @@
+{
+  "name": "Parable of the eagles and the vine",
+  "type": "entity",
+  "references": [
+    "Ezekiel 17:1–21"
+  ],
+  "blurb": "Babylon and Egypt as great eagles; Judah’s treachery is horticultural folly—rooted politics gone wrong.",
+  "category": "allegory",
+  "id": "e.parable-of-the-eagles-and-the-vine--a3f95fa5",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      17
+    ]
+  }
+}

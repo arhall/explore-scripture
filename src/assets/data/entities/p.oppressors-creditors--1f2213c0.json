@@ -1,0 +1,18 @@
+{
+  "id": "p.oppressors-creditors--1f2213c0",
+  "name": "Oppressors/Creditors",
+  "type": "person",
+  "references": [
+    "Hab 2:6-8"
+  ],
+  "category": "economic-agents",
+  "blurb": "Predators who exact usury and plunder. Their gain becomes their downfall as the nations they exploited rise to taunt them.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      2
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "e.walk-humbly-with-your-god--1c9f7302",
+  "name": "Walk humbly with your God",
+  "type": "entity",
+  "references": [
+    "Micah 6:8"
+  ],
+  "category": "ethic",
+  "blurb": "Posture of dependence and teachability under divine rule.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      6
+    ]
+  }
+}

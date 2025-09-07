@@ -1,0 +1,42 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 10,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "f.boasting-within-bounds--becef33b",
+      "name": "Boasting within bounds",
+      "type": "figure",
+      "role": "boasting",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.weapons-not-of-the-flesh--754f1e05",
+      "name": "Weapons not of the flesh",
+      "type": "figure",
+      "role": "spiritual-warfare",
+      "refs_count": 1
+    },
+    {
+      "id": "f.weighty-letters-weak-presence--bb43ed7c",
+      "name": "Weighty letters, weak presence",
+      "type": "figure",
+      "role": "perception",
+      "refs_count": 1
+    },
+    {
+      "id": "f.integrity-notes-composite-letter--69411f19",
+      "name": "Integrity notes (composite-letter)",
+      "type": "figure",
+      "role": "integrity-notes",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Textual note: Col 1:28 triple pan",
+  "type": "figure",
+  "category": "textual-notes",
+  "references": [
+    "Col 1:28"
+  ],
+  "note": "Emphasis with πᾶν/πάντα repeated (‘everyone’).",
+  "aka": [],
+  "id": "f.textual-note-col-1-28-triple-pan--39099c54",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      1
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Edom (desolate wilderness)",
+  "type": "group",
+  "references": [
+    "Joel 3:19",
+    "Amos 1:11–12",
+    "Obadiah 1:1,8–10"
+  ],
+  "blurb": "Kinsfolk-turned-enemy condemned for bloodguilt.",
+  "category": "nation",
+  "id": "g.edom.desolate-wilderness--6976d032",
+  "canonical_id": "g.edom.bozrah--286918d3",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      3
+    ],
+    "Amos": [
+      1
+    ],
+    "Obadiah": [
+      1
+    ]
+  }
+}

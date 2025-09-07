@@ -1,0 +1,42 @@
+{
+  "book": "Romans",
+  "chapter": 13,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "f.debt-of-love-fulfills-the-law--6e380726",
+      "name": "Debt of love fulfills the law",
+      "type": "figure",
+      "role": "love-law",
+      "refs_count": 1
+    },
+    {
+      "id": "f.put-on-the-lord-jesus-christ--259c21aa",
+      "name": "Put on the Lord Jesus Christ",
+      "type": "figure",
+      "role": "vigilance",
+      "refs_count": 1
+    },
+    {
+      "id": "f.submission-to-authorities--41e3ad8d",
+      "name": "Submission to authorities",
+      "type": "figure",
+      "role": "civic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.virtue-vice-lists-index--5cc409b3",
+      "name": "Virtue/Vice lists (index)",
+      "type": "figure",
+      "role": "virtue-vice-index",
+      "refs_count": 6
+    },
+    {
+      "id": "f.argument-flow-index--23eef6cd",
+      "name": "Argument flow (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 8
+    }
+  ]
+}

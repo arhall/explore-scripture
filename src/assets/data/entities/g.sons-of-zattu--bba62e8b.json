@@ -1,0 +1,20 @@
+{
+  "name": "Sons of Zattu",
+  "type": "group",
+  "references": [
+    "Ezra 2:8"
+  ],
+  "blurb": "Enumerated among the first returnees under Zerubbabel; their counted men totaled 945. Family identity stabilizes land claims and synagogue-era communities; numbers witness to costly obedience.",
+  "category": "record",
+  "count": 945,
+  "count_note": "Count per Ezra 2:8",
+  "id": "g.sons-of-zattu--bba62e8b",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      2
+    ]
+  }
+}

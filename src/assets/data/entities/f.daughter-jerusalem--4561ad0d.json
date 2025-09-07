@@ -1,0 +1,18 @@
+{
+  "id": "f.daughter-jerusalem--4561ad0d",
+  "name": "Daughter Jerusalem",
+  "type": "figure",
+  "references": [
+    "Zeph 3:14"
+  ],
+  "category": "personified-city",
+  "blurb": "Parallel personification emphasizing communal joy.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zephaniah": [
+      3
+    ]
+  }
+}

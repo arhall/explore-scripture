@@ -1,0 +1,77 @@
+{
+  "book": "1 John",
+  "chapter": 4,
+  "entity_count": 14,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.we-love-because-he-first-loved-us--0505ed22",
+      "name": "we love because he first loved us",
+      "type": "figure",
+      "role": "love",
+      "refs_count": 1
+    },
+    {
+      "id": "f.spirit-of-antichrist--98b4e9df",
+      "name": "spirit of antichrist",
+      "type": "figure",
+      "role": "discernment",
+      "refs_count": 1
+    },
+    {
+      "id": "f.do-not-believe-every-spirit-but-test-the-spirits--c9dfae52",
+      "name": "do not believe every spirit but test the spirits",
+      "type": "figure",
+      "role": "discernment",
+      "refs_count": 1
+    },
+    {
+      "id": "f.he-who-loves-god-must-love-his-brother-also--e9ce8999",
+      "name": "he who loves God must love his brother also",
+      "type": "figure",
+      "role": "love",
+      "refs_count": 1
+    },
+    {
+      "id": "f.love-commandment-index--20fe17e2",
+      "name": "Love/commandment index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.god-s-love-manifested-in-sending-his-son--b08e5444",
+      "name": "God’s love manifested in sending his Son",
+      "type": "figure",
+      "role": "love",
+      "refs_count": 1
+    },
+    {
+      "id": "f.perfect-love-casts-out-fear--9fccf777",
+      "name": "perfect love casts out fear",
+      "type": "figure",
+      "role": "love",
+      "refs_count": 1
+    },
+    {
+      "id": "f.every-spirit-that-confesses-jesus-christ-come-in-the-flesh-is-from-god--b4bf9e20",
+      "name": "every spirit that confesses Jesus Christ come in the flesh is from God",
+      "type": "figure",
+      "role": "discernment",
+      "refs_count": 1
+    },
+    {
+      "id": "f.god-is-love--57e991fc",
+      "name": "God is love",
+      "type": "figure",
+      "role": "love",
+      "refs_count": 1
+    }
+  ]
+}

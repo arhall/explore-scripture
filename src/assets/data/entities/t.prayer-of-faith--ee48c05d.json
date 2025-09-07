@@ -1,0 +1,15 @@
+{
+  "name": "prayer of faith",
+  "type": "title",
+  "category": "promise",
+  "references": [
+    "Jas 5:15"
+  ],
+  "aka": [],
+  "id": "t.prayer-of-faith--ee48c05d",
+  "book_references": {
+    "James": [
+      5
+    ]
+  }
+}

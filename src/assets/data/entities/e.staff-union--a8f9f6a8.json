@@ -1,0 +1,18 @@
+{
+  "id": "e.staff-union--a8f9f6a8",
+  "name": "Staff Union",
+  "type": "entity",
+  "references": [
+    "Zech 11:14"
+  ],
+  "category": "shepherd-implement",
+  "blurb": "Instrument representing national unity.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      11
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Epaphras",
+  "type": "person",
+  "category": "founder/intercessor",
+  "references": [
+    "Col 1:7–8",
+    "Col 4:12–13",
+    "Philem 23"
+  ],
+  "note": "Likely evangelized Colossae/Laodicea/Hierapolis; wrestles in prayer.",
+  "aka": [],
+  "id": "p.epaphras--9d5c0168",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      1,
+      4
+    ],
+    "Philemon": [
+      23
+    ]
+  }
+}

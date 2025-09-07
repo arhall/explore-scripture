@@ -1,0 +1,21 @@
+{
+  "name": "He committed no sin",
+  "type": "figure",
+  "category": "catena",
+  "references": [
+    "1 Pet 2:22"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Isa 53:9",
+      "type": "quote"
+    }
+  ],
+  "aka": [],
+  "id": "f.he-committed-no-sin--fd98f6cf",
+  "book_references": {
+    "1 Peter": [
+      2
+    ]
+  }
+}

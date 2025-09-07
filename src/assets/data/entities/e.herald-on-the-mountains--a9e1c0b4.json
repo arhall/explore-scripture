@@ -1,0 +1,19 @@
+{
+  "id": "e.herald-on-the-mountains--a9e1c0b4",
+  "name": "Herald on the mountains",
+  "type": "entity",
+  "references": [
+    "Nah 1:15"
+  ],
+  "category": "gospel-image",
+  "aka": [],
+  "blurb": "Iconic image of beautiful feet bringing peace; later reused in New Testament proclamation.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      1
+    ]
+  }
+}

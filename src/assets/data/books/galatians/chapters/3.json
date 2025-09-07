@@ -1,0 +1,77 @@
+{
+  "book": "Galatians",
+  "chapter": 3,
+  "entity_count": 18,
+  "entities": [
+    {
+      "id": "f.prosopography-index--a2064234",
+      "name": "Prosopography (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.promise-to-abraham-vs-law-priority--9656df8e",
+      "name": "Promise to Abraham vs law (priority)",
+      "type": "figure",
+      "role": "covenant",
+      "refs_count": 1
+    },
+    {
+      "id": "f.seed-singular-debate--e484182c",
+      "name": "Seed (singular) debate",
+      "type": "figure",
+      "role": "exegesis",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.abraham-believed-god-gen-15-6--dd639f32",
+      "name": "Abraham believed God (Gen 15:6)",
+      "type": "figure",
+      "role": "Abraham",
+      "refs_count": 1
+    },
+    {
+      "id": "f.baptized-into-christ-clothed-with-christ--06b8c70b",
+      "name": "Baptized into Christ; clothed with Christ",
+      "type": "figure",
+      "role": "baptism",
+      "refs_count": 1
+    },
+    {
+      "id": "f.gospel-preached-beforehand-to-abraham-gen-12-3--3199f4de",
+      "name": "Gospel preached beforehand to Abraham (Gen 12:3)",
+      "type": "figure",
+      "role": "promise",
+      "refs_count": 1
+    },
+    {
+      "id": "f.paidagogos-to-christ-guardian-tutor--2373a0eb",
+      "name": "Paidagogos to Christ (guardian/tutor)",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1
+    },
+    {
+      "id": "f.sons-of-abraham-by-faith-gentiles-blessed--8ad461e7",
+      "name": "Sons of Abraham by faith (Gentiles blessed)",
+      "type": "figure",
+      "role": "inclusion",
+      "refs_count": 1
+    },
+    {
+      "id": "f.textual-note-gal-3-1-verb-nuance--75551cef",
+      "name": "Textual note: Gal 3:1 verb nuance",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1
+    }
+  ]
+}

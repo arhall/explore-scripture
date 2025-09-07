@@ -1,0 +1,18 @@
+{
+  "id": "e.build-zion-with-blood--1e8739c4",
+  "name": "Build Zion with blood",
+  "type": "entity",
+  "references": [
+    "Micah 3:10"
+  ],
+  "category": "corruption",
+  "blurb": "Urban splendor erected on violence; architecture as indictment.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      3
+    ]
+  }
+}

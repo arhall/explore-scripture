@@ -1,0 +1,18 @@
+{
+  "name": "Mount Esau",
+  "type": "entity",
+  "references": [
+    "Obadiah 1:21"
+  ],
+  "blurb": "Stage of judgment for the deliverers; last bastion of Edomite pride.",
+  "category": "landform",
+  "id": "e.mount-esau.seir--e7caf109",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Obadiah": [
+      1
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Solomon’s dedication prayer",
+  "type": "entity",
+  "references": [
+    "2 Chronicles 6"
+  ],
+  "blurb": "Intercession for sinner and stranger alike; the Name and the temple as a house of prayer for returning hearts.",
+  "category": "poetry",
+  "id": "e.solomons-dedication-prayer--eac28c3d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "2 Chronicles": [
+      6
+    ]
+  }
+}

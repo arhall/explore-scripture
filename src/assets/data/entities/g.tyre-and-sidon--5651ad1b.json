@@ -1,0 +1,18 @@
+{
+  "name": "Tyre and Sidon",
+  "type": "group",
+  "references": [
+    "Joel 3:4–6"
+  ],
+  "blurb": "Phoenician traders indicted for plunder and slave-trading of Judeans.",
+  "category": "nation",
+  "id": "g.tyre-and-sidon--5651ad1b",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      3
+    ]
+  }
+}

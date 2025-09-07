@@ -1,0 +1,26 @@
+{
+  "name": "Mehujael",
+  "type": "person",
+  "references": [
+    "Genesis 4:18"
+  ],
+  "blurb": "Descendant of Cain; his name continues the line that culminates in Lamech.",
+  "relations": {
+    "parents": [
+      "Irad"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "1 Chronicles 1"
+  ],
+  "id": "p.mehujael.gene-4-18--279d64f0",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      4
+    ]
+  }
+}

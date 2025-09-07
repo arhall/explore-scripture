@@ -1,0 +1,23 @@
+{
+  "name": "Caesarea Philippi",
+  "type": "entity",
+  "category": "city",
+  "references": [
+    "Mark 8:27"
+  ],
+  "aka": [],
+  "id": "e.caesarea-philippi--c7490660",
+  "source_book": "Mark",
+  "source_books": [
+    "Mark",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Mark": [
+      8
+    ]
+  }
+}

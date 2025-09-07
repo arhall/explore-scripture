@@ -1,0 +1,14 @@
+{
+  "name": "Intertexts: Amos, Isaiah, Obadiah",
+  "type": "entity",
+  "references": [
+    "Joel (passim)"
+  ],
+  "blurb": "Joel echoes and is echoed—Day of YHWH, Zion refuge, and Edom/Egypt judgments cycle through the Twelve.",
+  "category": "intertext",
+  "id": "e.intertexts-amos-isaiah-obadiah--a282fd9a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

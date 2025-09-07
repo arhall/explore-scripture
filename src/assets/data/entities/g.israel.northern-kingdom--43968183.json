@@ -1,0 +1,23 @@
+{
+  "name": "Israel (Northern Kingdom)",
+  "type": "group",
+  "references": [
+    "Hosea",
+    "Amos 2:6–16"
+  ],
+  "blurb": "Primary audience, depicted as wife and son.",
+  "category": "kingdom",
+  "id": "g.israel.northern-kingdom--43968183",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "g.israel--79cf1096",
+    "g.israel--a6f0ce51"
+  ],
+  "book_references": {
+    "Amos": [
+      2
+    ]
+  }
+}

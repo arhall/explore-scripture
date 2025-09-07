@@ -1,0 +1,25 @@
+{
+  "id": "e.zechariah-1–8-coordination--93e40792",
+  "name": "Zechariah 1–8 coordination",
+  "type": "entity",
+  "references": [
+    "Zech 1–8"
+  ],
+  "category": "prophetic-link",
+  "blurb": "Parallel prophetic window with shared leaders, temple vision, and eschatological encouragement.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}

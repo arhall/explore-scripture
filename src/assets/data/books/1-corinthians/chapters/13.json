@@ -1,0 +1,49 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 13,
+  "entity_count": 6,
+  "entities": [
+    {
+      "id": "f.love-vs-gifts-permanence--79992e29",
+      "name": "Love vs gifts: permanence",
+      "type": "figure",
+      "role": "love",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.love-what-it-is-not--8427fdf0",
+      "name": "Love: what it is not",
+      "type": "figure",
+      "role": "love",
+      "refs_count": 1
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "f.love-what-it-is--845c7a34",
+      "name": "Love: what it is",
+      "type": "figure",
+      "role": "love",
+      "refs_count": 1
+    },
+    {
+      "id": "f.virtue-vice-lists-index--5cc409b3",
+      "name": "Virtue/Vice lists (index)",
+      "type": "figure",
+      "role": "virtue-vice-index",
+      "refs_count": 6
+    }
+  ]
+}

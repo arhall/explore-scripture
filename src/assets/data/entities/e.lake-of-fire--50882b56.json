@@ -1,0 +1,21 @@
+{
+  "name": "Lake of fire",
+  "type": "entity",
+  "category": "judgment-lake",
+  "references": [
+    "Rev 19:20; 20:10; 21:8"
+  ],
+  "aka": [],
+  "id": "e.lake-of-fire--50882b56",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Revelation": [
+      19
+    ]
+  }
+}

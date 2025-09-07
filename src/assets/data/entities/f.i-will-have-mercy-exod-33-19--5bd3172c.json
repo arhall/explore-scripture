@@ -1,0 +1,27 @@
+{
+  "name": "I will have mercy (Exod 33:19)",
+  "type": "figure",
+  "category": "mercy",
+  "references": [
+    "Rom 9:14–18"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Exod 33:19",
+      "type": "quotation"
+    }
+  ],
+  "aka": [],
+  "id": "f.i-will-have-mercy-exod-33-19--5bd3172c",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      9
+    ]
+  }
+}

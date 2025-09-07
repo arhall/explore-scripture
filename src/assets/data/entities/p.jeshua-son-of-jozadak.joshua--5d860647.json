@@ -1,0 +1,27 @@
+{
+  "name": "Jeshua (Joshua) son of Jozadak",
+  "type": "person",
+  "references": [
+    "Ezra 2:2; 3:2,8; 5:2; 10:18"
+  ],
+  "blurb": "High-priestly leader who partners with Zerubbabel; his cleansing and recommissioning are dramatized in Zechariah 3.",
+  "aka": [
+    "Joshua"
+  ],
+  "relations": {
+    "father": "Jozadak"
+  },
+  "category": "worship",
+  "cross_references": [
+    "Zechariah 3"
+  ],
+  "id": "p.jeshua-son-of-jozadak.joshua--5d860647",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      2
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "book": "Galatians",
+  "chapter": 5,
+  "entity_count": 40,
+  "entities": [
+    {
+      "id": "f.prosopography-index--a2064234",
+      "name": "Prosopography (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.circumcision-avails-nothing-faith-working-through-love--694e3db5",
+      "name": "Circumcision avails nothing; faith working through love",
+      "type": "figure",
+      "role": "principle",
+      "refs_count": 1
+    },
+    {
+      "id": "f.fruit-of-the-spirit-self-control--19ac3ab3",
+      "name": "Fruit of the Spirit: Self-Control",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1
+    },
+    {
+      "id": "f.work-of-the-flesh-envy--e0264272",
+      "name": "Work of the flesh: Envy",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.work-of-the-flesh-drunkenness--9ce80ea6",
+      "name": "Work of the flesh: Drunkenness",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.work-of-the-flesh-divisions--b79c12b9",
+      "name": "Work of the flesh: Divisions",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.work-of-the-flesh-jealousy--55b1369c",
+      "name": "Work of the flesh: Jealousy",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.fruit-of-the-spirit-love--eeae71c7",
+      "name": "Fruit of the Spirit: Love",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.desires-of-the-flesh-vs-spirit--e0a34ed9",
+      "name": "Desires of the flesh vs Spirit",
+      "type": "figure",
+      "role": "contrast",
+      "refs_count": 1
+    }
+  ]
+}

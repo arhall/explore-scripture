@@ -1,0 +1,35 @@
+{
+  "book": "Romans",
+  "chapter": 2,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "f.diatribe-interlocutor-o-man--c9836b2b",
+      "name": "Diatribe interlocutor (‘O man’)",
+      "type": "figure",
+      "role": "rhetoric",
+      "refs_count": 1
+    },
+    {
+      "id": "f.diatribe-features-index--609405d3",
+      "name": "Diatribe features (index)",
+      "type": "figure",
+      "role": "rhetoric-index",
+      "refs_count": 3
+    },
+    {
+      "id": "f.law-written-on-the-heart-conscience--e17e504e",
+      "name": "Law written on the heart; conscience",
+      "type": "figure",
+      "role": "law-conscience",
+      "refs_count": 1
+    },
+    {
+      "id": "f.true-jew-inwardly-circumcision-of-heart--142547b6",
+      "name": "True Jew inwardly; circumcision of heart",
+      "type": "figure",
+      "role": "identity",
+      "refs_count": 1
+    }
+  ]
+}

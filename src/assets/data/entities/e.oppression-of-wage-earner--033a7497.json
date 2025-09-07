@@ -1,0 +1,18 @@
+{
+  "id": "e.oppression-of-wage-earner--033a7497",
+  "name": "Oppression of wage earner",
+  "type": "entity",
+  "references": [
+    "Mal 3:5"
+  ],
+  "category": "economic-vice",
+  "blurb": "Withholding or exploiting laborers—central justice infraction.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      3
+    ]
+  }
+}

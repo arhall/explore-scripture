@@ -1,0 +1,21 @@
+{
+  "name": "Put away (vice list)",
+  "type": "figure",
+  "category": "vice-list",
+  "references": [
+    "Col 3:8–9"
+  ],
+  "aka": [],
+  "id": "f.put-away-vice-list--f4d1a8cd",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      3
+    ]
+  }
+}

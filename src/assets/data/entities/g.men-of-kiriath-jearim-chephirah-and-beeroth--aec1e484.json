@@ -1,0 +1,20 @@
+{
+  "name": "Men of Kiriath-jearim, Chephirah, and Beeroth",
+  "type": "group",
+  "references": [
+    "Ezra 2:25"
+  ],
+  "blurb": "Enumerated among the first returnees under Zerubbabel; their counted men totaled 743. Family identity stabilizes land claims and synagogue-era communities; numbers witness to costly obedience.",
+  "category": "record",
+  "count": 743,
+  "count_note": "Count per Ezra 2:25",
+  "id": "g.men-of-kiriath-jearim-chephirah-and-beeroth--aec1e484",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      2
+    ]
+  }
+}

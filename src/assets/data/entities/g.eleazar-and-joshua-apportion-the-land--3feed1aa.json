@@ -1,0 +1,18 @@
+{
+  "name": "Eleazar and Joshua apportion the land",
+  "type": "group",
+  "references": [
+    "Numbers 34:17"
+  ],
+  "blurb": "Priest and successor co-lead territorial allotment.",
+  "category": "narrative",
+  "id": "g.eleazar-and-joshua-apportion-the-land--3feed1aa",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      34
+    ]
+  }
+}

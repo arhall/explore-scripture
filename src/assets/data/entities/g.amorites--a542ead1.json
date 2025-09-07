@@ -1,0 +1,19 @@
+{
+  "name": "Amorites (as a people)",
+  "type": "group",
+  "references": [
+    "Deuteronomy 1:44; 3:2"
+  ],
+  "blurb": "Regional power emblematic of Canaanite resistance—used pedagogically to teach reliance on God.",
+  "category": "narrative",
+  "id": "g.amorites--a542ead1",
+  "canonical_id": "g.amorites.gene-10-15-18--5648c816",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Deuteronomy": [
+      1
+    ]
+  }
+}

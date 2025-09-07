@@ -1,0 +1,20 @@
+{
+  "name": "Hezekiah king of Judah",
+  "type": "person",
+  "references": [
+    "Isaiah 36–39; 38:1–6"
+  ],
+  "blurb": "Trusts God under siege; prays and receives deliverance. Yet his post‑healing pride with Babylonian envoys forecasts exile. Fifteen years added to his life.",
+  "relations": {
+    "kingdom": "Judah"
+  },
+  "category": "king",
+  "count": 15,
+  "count_note": "Years added (38:5)",
+  "id": "p.hezekiah-king-of-judah--d57b4838",
+  "canonical_id": "p.hezekiah-king-of-judah.chronicles-focus--66ee8fd1",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

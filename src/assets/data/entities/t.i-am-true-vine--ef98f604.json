@@ -1,0 +1,31 @@
+{
+  "name": "I AM: True Vine",
+  "type": "title",
+  "category": "i-am",
+  "references": [
+    "John 15:1–8",
+    "John 15:1",
+    "John 15:5"
+  ],
+  "greek_terms": [
+    {
+      "term": "μένω",
+      "gloss": "abide/remain"
+    }
+  ],
+  "aka": [],
+  "id": "t.i-am-true-vine--ef98f604",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      15
+    ]
+  }
+}

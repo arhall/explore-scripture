@@ -1,0 +1,23 @@
+{
+  "name": "throne",
+  "type": "entity",
+  "category": "heavenly",
+  "references": [
+    "Rev 4–5",
+    "Rev 4:2"
+  ],
+  "aka": [],
+  "id": "e.throne--bb671643",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Revelation": [
+      4,
+      5
+    ]
+  }
+}

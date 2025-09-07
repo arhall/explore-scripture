@@ -1,0 +1,18 @@
+{
+  "name": "Do not add or take away from the word",
+  "type": "entity",
+  "references": [
+    "Deuteronomy 4:2; 12:32"
+  ],
+  "blurb": "Revelation is sufficient and authoritative; hedge against syncretism and legalism alike.",
+  "category": "ethics",
+  "id": "e.do-not-add-or-take-away-from-the-word--0ad7e2a4",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Deuteronomy": [
+      4
+    ]
+  }
+}

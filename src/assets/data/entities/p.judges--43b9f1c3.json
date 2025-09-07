@@ -1,0 +1,18 @@
+{
+  "id": "p.judges--43b9f1c3",
+  "name": "Judges",
+  "type": "person",
+  "references": [
+    "Zeph 3:3"
+  ],
+  "category": "judicial",
+  "blurb": "Predatory officials—wolves at evening who leave nothing for the morning.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zephaniah": [
+      3
+    ]
+  }
+}

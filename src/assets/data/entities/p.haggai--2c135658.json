@@ -1,0 +1,23 @@
+{
+  "id": "p.haggai--2c135658",
+  "name": "Haggai",
+  "type": "person",
+  "references": [
+    "Hag 1:1",
+    "Hag 1:3",
+    "Hag 2:1",
+    "Hag 2:10",
+    "Hag 2:20"
+  ],
+  "category": "prophet",
+  "blurb": "Post-exilic prophet whose oracles in 520 BCE catalyze the Temple rebuild through rebuke, encouragement, legal clarification, and royal promise.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      1,
+      2
+    ]
+  }
+}

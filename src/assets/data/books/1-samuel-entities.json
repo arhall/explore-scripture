@@ -1,0 +1,654 @@
+[
+  {
+    "id": "g.amalekites--a3e94369",
+    "name": "Amalekites",
+    "type": "group",
+    "url": "/entities/g.amalekites--a3e94369/",
+    "blurb": "Nomadic attackers who ambush Israel; God declares war against Amalek from generation to generation.",
+    "searchText": "amalekites group narrative nomadic attackers who ambush israel; god declares war against amalek from generation to generation. ",
+    "references": 2,
+    "books": [
+      "Exodus",
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.elkanah--96e47f98",
+    "name": "Elkanah",
+    "type": "person",
+    "url": "/entities/p.elkanah--96e47f98/",
+    "blurb": "Son of Korah; Korahite line (distinct from later Samuel’s father).",
+    "searchText": "elkanah person genealogy son of korah; korahite line (distinct from later samuel’s father). ",
+    "references": 2,
+    "books": [
+      "Exodus",
+      "1 Samuel"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "g.amalekites.ziklag-raid-and-defeat--7aa634d3",
+    "name": "Amalekites (Ziklag raid and defeat)",
+    "type": "group",
+    "url": "/entities/g.amalekites.ziklag-raid-and-defeat--7aa634d3/",
+    "blurb": "Pillage Ziklag; pursuit recovers all—new statute shares spoils with those who stay by the baggage.",
+    "searchText": "amalekites (ziklag raid and defeat) group narrative pillage ziklag; pursuit recovers all—new statute shares spoils with those who stay by the baggage. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.band-of-prophets.gibeah-ramah--528c5c22",
+    "name": "Band of prophets (Gibeah/Ramah)",
+    "type": "group",
+    "url": "/entities/g.band-of-prophets.gibeah-ramah--528c5c22/",
+    "blurb": "Ecstatic guilds that mark the Spirit’s intrusive power—even Saul prophesies, twice.",
+    "searchText": "band of prophets (gibeah/ramah) group narrative ecstatic guilds that mark the spirit’s intrusive power—even saul prophesies, twice. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.beth-shan-display-jabesh-gilead-retrieves-bodies--e0c04b0d",
+    "name": "Beth-shan display; Jabesh-gilead retrieves bodies",
+    "type": "group",
+    "url": "/entities/g.beth-shan-display-jabesh-gilead-retrieves-bodies--e0c04b0d/",
+    "blurb": "Honor in humiliation—those once saved repay loyalty.",
+    "searchText": "beth-shan display; jabesh-gilead retrieves bodies group narrative honor in humiliation—those once saved repay loyalty. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.beth-shemesh-men-struck--a9ccd005",
+    "name": "Beth-shemesh men struck",
+    "type": "group",
+    "url": "/entities/g.beth-shemesh-men-struck--a9ccd005/",
+    "blurb": "Irreverent curiosity before holiness brings death—joy must be yoked to fear of the LORD.",
+    "searchText": "beth-shemesh men struck group narrative irreverent curiosity before holiness brings death—joy must be yoked to fear of the lord. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.cave-of-adullam-band--66df920c",
+    "name": "Cave of Adullam band",
+    "type": "group",
+    "url": "/entities/g.cave-of-adullam-band--66df920c/",
+    "blurb": "Debtors and distressed become a kingdom core—discipleship of the discontented.",
+    "searchText": "cave of adullam band group narrative debtors and distressed become a kingdom core—discipleship of the discontented. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.israels-elders-demand-a-king-like-the-nations--4f43fa64",
+    "name": "Israel’s elders demand a king like the nations",
+    "type": "group",
+    "url": "/entities/g.israels-elders-demand-a-king-like-the-nations--4f43fa64/",
+    "blurb": "Centralization craved at the cost of covenant trust; Samuel warns of royal ‘take’—sons, daughters, fields, flocks.",
+    "searchText": "israel’s elders demand a king like the nations group narrative centralization craved at the cost of covenant trust; samuel warns of royal ‘take’—sons, daughters, fields, flocks. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.joel-and-abijah.samuels-sons--391be1e7",
+    "name": "Joel and Abijah (Samuel’s sons)",
+    "type": "group",
+    "url": "/entities/g.joel-and-abijah.samuels-sons--391be1e7/",
+    "blurb": "Judges who take bribes—familial drift catalyzes regime change.",
+    "searchText": "joel and abijah (samuel’s sons) group narrative judges who take bribes—familial drift catalyzes regime change. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.philistine-commanders.lords--23e354c6",
+    "name": "Philistine commanders (lords)",
+    "type": "group",
+    "url": "/entities/g.philistine-commanders.lords--23e354c6/",
+    "blurb": "Send David home from Aphek—enemy suspicion becomes divine protection.",
+    "searchText": "philistine commanders (lords) group narrative send david home from aphek—enemy suspicion becomes divine protection. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.women-singing-saul-has-slain-his-thousands--c6440d7c",
+    "name": "Women singing, ‘Saul has slain his thousands…’",
+    "type": "group",
+    "url": "/entities/g.women-singing-saul-has-slain-his-thousands--c6440d7c/",
+    "blurb": "Public praise that triggers royal jealousy—vox populi tests a king’s heart.",
+    "searchText": "women singing, ‘saul has slain his thousands…’ group narrative public praise that triggers royal jealousy—vox populi tests a king’s heart. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.ziphites--583a7e4b",
+    "name": "Ziphites",
+    "type": "group",
+    "url": "/entities/g.ziphites--583a7e4b/",
+    "blurb": "Local informants twice hunting David—small-town politics in sacred history.",
+    "searchText": "ziphites group narrative local informants twice hunting david—small-town politics in sacred history. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.abiathar-son-of-ahimelech--2f247c9a",
+    "name": "Abiathar son of Ahimelech",
+    "type": "person",
+    "url": "/entities/p.abiathar-son-of-ahimelech--2f247c9a/",
+    "blurb": "Escapes with the ephod and aligns with David—priestly legitimacy shelters the future king.",
+    "searchText": "abiathar son of ahimelech person narrative escapes with the ephod and aligns with david—priestly legitimacy shelters the future king. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.abigail--5b7a820c",
+    "name": "Abigail",
+    "type": "person",
+    "url": "/entities/p.abigail--5b7a820c/",
+    "blurb": "Wise intercessor who averts vengeance and becomes David’s wife—prudence crowned with providence.",
+    "searchText": "abigail person narrative wise intercessor who averts vengeance and becomes david’s wife—prudence crowned with providence. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.abinadab.brother-of-david--30544cde",
+    "name": "Abinadab (brother of David)",
+    "type": "person",
+    "url": "/entities/p.abinadab.brother-of-david--30544cde/",
+    "blurb": "Second brother passed over—humbling of natural strength.",
+    "searchText": "abinadab (brother of david) person narrative second brother passed over—humbling of natural strength. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.abishai-son-of-zeruiah--9bbc2bce",
+    "name": "Abishai son of Zeruiah",
+    "type": "person",
+    "url": "/entities/p.abishai-son-of-zeruiah--9bbc2bce/",
+    "blurb": "Zealous lieutenant restrained by David—reverence shapes rules of engagement.",
+    "searchText": "abishai son of zeruiah person narrative zealous lieutenant restrained by david—reverence shapes rules of engagement. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.abner-son-of-ner--cfd72a69",
+    "name": "Abner son of Ner",
+    "type": "person",
+    "url": "/entities/p.abner-son-of-ner--cfd72a69/",
+    "blurb": "Saul’s general—capable but entangled in dynastic decline; will later pivot in the civil war.",
+    "searchText": "abner son of ner person narrative saul’s general—capable but entangled in dynastic decline; will later pivot in the civil war. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.ahijah-son-of-ahitub.priest-with-ephod--c55db1f3",
+    "name": "Ahijah son of Ahitub (priest with ephod)",
+    "type": "person",
+    "url": "/entities/p.ahijah-son-of-ahitub.priest-with-ephod--c55db1f3/",
+    "blurb": "Priest who bears the ephod during Jonathan’s exploit—descendant of Eli; signals priestly complexity in Saul’s day.",
+    "searchText": "ahijah son of ahitub (priest with ephod) person narrative priest who bears the ephod during jonathan’s exploit—descendant of eli; signals priestly complexity in saul’s day. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.ahimelech-the-priest.of-nob--6251ad9e",
+    "name": "Ahimelech the priest (of Nob)",
+    "type": "person",
+    "url": "/entities/p.ahimelech-the-priest.of-nob--6251ad9e/",
+    "blurb": "Gives holy bread and Goliath’s sword to David; later slain by Doeg—innocence crushed under tyranny.",
+    "searchText": "ahimelech the priest (of nob) person narrative gives holy bread and goliath’s sword to david; later slain by doeg—innocence crushed under tyranny. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.ahitub.father-of-ahimelech--5e805736",
+    "name": "Ahitub (father of Ahimelech)",
+    "type": "person",
+    "url": "/entities/p.ahitub.father-of-ahimelech--5e805736/",
+    "blurb": "Priestly ancestor within Eli’s line—family tree framing the tragedy at Nob.",
+    "searchText": "ahitub (father of ahimelech) person narrative priestly ancestor within eli’s line—family tree framing the tragedy at nob. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.doeg-the-edomite--1487d86a",
+    "name": "Doeg the Edomite",
+    "type": "person",
+    "url": "/entities/p.doeg-the-edomite--1487d86a/",
+    "blurb": "Chief herdsman who betrays and butchers priests—outsider violence serving royal paranoia.",
+    "searchText": "doeg the edomite person narrative chief herdsman who betrays and butchers priests—outsider violence serving royal paranoia. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.egyptian-servant.guide-to-amalek--4e750e42",
+    "name": "Egyptian servant (guide to Amalek)",
+    "type": "person",
+    "url": "/entities/p.egyptian-servant.guide-to-amalek--4e750e42/",
+    "blurb": "Left for dead by his master; cared for by David and becomes providential guide—mercy opens intelligence.",
+    "searchText": "egyptian servant (guide to amalek) person narrative left for dead by his master; cared for by david and becomes providential guide—mercy opens intelligence. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.eli-the-priest--a0684a21",
+    "name": "Eli the priest",
+    "type": "person",
+    "url": "/entities/p.eli-the-priest--a0684a21/",
+    "blurb": "A complex leader: pastoral toward Hannah, passive toward corrupt sons. His fall warns that tenderness without discipline fails God’s house.",
+    "searchText": "eli the priest person narrative a complex leader: pastoral toward hannah, passive toward corrupt sons. his fall warns that tenderness without discipline fails god’s house. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.eliab--d294be6a",
+    "name": "Eliab",
+    "type": "person",
+    "url": "/entities/p.eliab--d294be6a/",
+    "blurb": "Tall eldest brother who misreads David’s heart—appearance does not equal calling.",
+    "searchText": "eliab person narrative tall eldest brother who misreads david’s heart—appearance does not equal calling. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.gad-the-prophet--4067c469",
+    "name": "Gad the prophet",
+    "type": "person",
+    "url": "/entities/p.gad-the-prophet--4067c469/",
+    "blurb": "Advises David—word guides flight more than impulse.",
+    "searchText": "gad the prophet person narrative advises david—word guides flight more than impulse. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.hannah--06cd303e",
+    "name": "Hannah",
+    "type": "person",
+    "url": "/entities/p.hannah--06cd303e/",
+    "blurb": "From bitter tears to theology in song. Her vow yields Samuel; her Magnificat-like hymn celebrates God’s reversals—thrones topple, the lowly raised.",
+    "searchText": "hannah person narrative from bitter tears to theology in song. her vow yields samuel; her magnificat-like hymn celebrates god’s reversals—thrones topple, the lowly raised. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.hophni--4dad775a",
+    "name": "Hophni",
+    "type": "person",
+    "url": "/entities/p.hophni--4dad775a/",
+    "blurb": "Son of Eli who abuses sacrifice and intimacy at the tent; dies when the ark is captured—judgment on priestly presumption.",
+    "searchText": "hophni person narrative son of eli who abuses sacrifice and intimacy at the tent; dies when the ark is captured—judgment on priestly presumption. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.ichabod--c8bbb38e",
+    "name": "Ichabod",
+    "type": "person",
+    "url": "/entities/p.ichabod--c8bbb38e/",
+    "blurb": "‘No glory’—a child’s name memorializing covenant catastrophe when the ark is taken.",
+    "searchText": "ichabod person narrative ‘no glory’—a child’s name memorializing covenant catastrophe when the ark is taken. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.jesse-of-bethlehem--4e819e4b",
+    "name": "Jesse of Bethlehem",
+    "type": "person",
+    "url": "/entities/p.jesse-of-bethlehem--4e819e4b/",
+    "blurb": "Patriarch of Davidic line; overlooked son chosen—God sees the heart.",
+    "searchText": "jesse of bethlehem person narrative patriarch of davidic line; overlooked son chosen—god sees the heart. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.jonathans-armor-bearer--122473e9",
+    "name": "Jonathan’s armor-bearer",
+    "type": "person",
+    "url": "/entities/p.jonathans-armor-bearer--122473e9/",
+    "blurb": "‘I am with you heart and soul’—anonymous courage that multiplies faith.",
+    "searchText": "jonathan’s armor-bearer person narrative ‘i am with you heart and soul’—anonymous courage that multiplies faith. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.kish.sauls-father--ac6b8f3f",
+    "name": "Kish (Saul’s father)",
+    "type": "person",
+    "url": "/entities/p.kish.sauls-father--ac6b8f3f/",
+    "blurb": "Benjaminite of standing whose lost donkeys become providential breadcrumbs to kingship.",
+    "searchText": "kish (saul’s father) person narrative benjaminite of standing whose lost donkeys become providential breadcrumbs to kingship. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.man-of-god-to-eli--197c56ef",
+    "name": "Man of God to Eli",
+    "type": "person",
+    "url": "/entities/p.man-of-god-to-eli--197c56ef/",
+    "blurb": "Delivers the divine verdict on Eli’s line and promises a faithful priest to come—prophetic audit of leadership.",
+    "searchText": "man of god to eli person narrative delivers the divine verdict on eli’s line and promises a faithful priest to come—prophetic audit of leadership. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.medium-of-endor--4dc27b3c",
+    "name": "Medium of Endor",
+    "type": "person",
+    "url": "/entities/p.medium-of-endor--4dc27b3c/",
+    "blurb": "King who banned necromancy now seeks it—desperation before doom.",
+    "searchText": "medium of endor person narrative king who banned necromancy now seeks it—desperation before doom. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.merab--e143733e",
+    "name": "Merab",
+    "type": "person",
+    "url": "/entities/p.merab--e143733e/",
+    "blurb": "Saul’s elder daughter promised then given to Adriel—politics of marriage.",
+    "searchText": "merab person narrative saul’s elder daughter promised then given to adriel—politics of marriage. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.michal--d9aef63d",
+    "name": "Michal",
+    "type": "person",
+    "url": "/entities/p.michal--d9aef63d/",
+    "blurb": "Saul’s daughter who loves David; aids his escape with a **teraphim** ruse—loyalty at personal risk.",
+    "searchText": "michal person narrative saul’s daughter who loves david; aids his escape with a **teraphim** ruse—loyalty at personal risk. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.nabal--a1cee741",
+    "name": "Nabal",
+    "type": "person",
+    "url": "/entities/p.nabal--a1cee741/",
+    "blurb": "‘Fool’ whose ingratitude nearly spills blood—his sudden death warns the prosperous.",
+    "searchText": "nabal person narrative ‘fool’ whose ingratitude nearly spills blood—his sudden death warns the prosperous. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.peninnah--e28c14c0",
+    "name": "Peninnah",
+    "type": "person",
+    "url": "/entities/p.peninnah--e28c14c0/",
+    "blurb": "Provokes Hannah and becomes a foil; the narrative channels her taunts into deeper prayer and merciful outcome.",
+    "searchText": "peninnah person narrative provokes hannah and becomes a foil; the narrative channels her taunts into deeper prayer and merciful outcome. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.phinehas-wife--dfa52350",
+    "name": "Phinehas’ wife",
+    "type": "person",
+    "url": "/entities/p.phinehas-wife--dfa52350/",
+    "blurb": "Dies in childbirth after naming **Ichabod**—a mother’s theology etched in a name.",
+    "searchText": "phinehas’ wife person narrative dies in childbirth after naming **ichabod**—a mother’s theology etched in a name. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.phinehas.son-of-eli--486ef571",
+    "name": "Phinehas (son of Eli)",
+    "type": "person",
+    "url": "/entities/p.phinehas.son-of-eli--486ef571/",
+    "blurb": "Co-conspirator in profaning the priesthood; his wife bears Ichabod at the report ‘the glory has departed.’",
+    "searchText": "phinehas (son of eli) person narrative co-conspirator in profaning the priesthood; his wife bears ichabod at the report ‘the glory has departed.’ ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.shammah.brother-of-david--896cebd1",
+    "name": "Shammah (brother of David)",
+    "type": "person",
+    "url": "/entities/p.shammah.brother-of-david--896cebd1/",
+    "blurb": "Third brother; presence highlights God’s counterintuitive choice.",
+    "searchText": "shammah (brother of david) person narrative third brother; presence highlights god’s counterintuitive choice. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "t.achish-king-of-gath--cb61d592",
+    "name": "Achish king of Gath",
+    "type": "title",
+    "url": "/entities/t.achish-king-of-gath--cb61d592/",
+    "blurb": "Philistine ruler who shelters David yet distrusts him at the front—God’s providence keeps David from civil bloodshed.",
+    "searchText": "achish king of gath title narrative philistine ruler who shelters david yet distrusts him at the front—god’s providence keeps david from civil bloodshed. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "t.agag-king-of-amalek--c0b07eb0",
+    "name": "Agag king of Amalek",
+    "type": "title",
+    "url": "/entities/t.agag-king-of-amalek--c0b07eb0/",
+    "blurb": "Executed by Samuel—prophetic act underlining the seriousness of incomplete obedience.",
+    "searchText": "agag king of amalek title narrative executed by samuel—prophetic act underlining the seriousness of incomplete obedience. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "t.goliath-of-gath--82a92c7c",
+    "name": "Goliath of Gath",
+    "type": "title",
+    "url": "/entities/t.goliath-of-gath--82a92c7c/",
+    "blurb": "Giant with bronze bravado toppled by covenant faith—battle is the LORD’s.",
+    "searchText": "goliath of gath title narrative giant with bronze bravado toppled by covenant faith—battle is the lord’s. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "t.nahash-the-ammonite--5a9ba778",
+    "name": "Nahash the Ammonite",
+    "type": "title",
+    "url": "/entities/t.nahash-the-ammonite--5a9ba778/",
+    "blurb": "Siege of Jabesh-gilead with eye-gouging terms; Saul’s Spirit-stirred rescue unites the tribes.",
+    "searchText": "nahash the ammonite title narrative siege of jabesh-gilead with eye-gouging terms; saul’s spirit-stirred rescue unites the tribes. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "e.anointing-with-oil-and-signs.flask--e326a4ae",
+    "name": "Anointing with oil (flask) and signs",
+    "type": "entity",
+    "url": "/entities/e.anointing-with-oil-and-signs.flask--e326a4ae/",
+    "blurb": "Tokens (donkeys found, bread, prophets) confirm calling; Spirit rush marks office—yet obedience must keep it.",
+    "searchText": "anointing with oil (flask) and signs entity ritual tokens (donkeys found, bread, prophets) confirm calling; spirit rush marks office—yet obedience must keep it. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.ark-of-the-covenant.captured-and-returned--0c8b6ef5",
+    "name": "Ark of the Covenant (captured and returned)",
+    "type": "entity",
+    "url": "/entities/e.ark-of-the-covenant.captured-and-returned--0c8b6ef5/",
+    "blurb": "Not a talisman but the footstool of the King. God humiliates Dagon and plagues Philistine cities, then returns the ark via guilt offerings.",
+    "searchText": "ark of the covenant (captured and returned) entity ritual not a talisman but the footstool of the king. god humiliates dagon and plagues philistine cities, then returns the ark via guilt offerings. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.ashdod--d2c1cfe0",
+    "name": "Ashdod",
+    "type": "entity",
+    "url": "/entities/e.ashdod--d2c1cfe0/",
+    "blurb": "City where Dagon falls before the ark—holy rivalry ends with broken idol parts.",
+    "searchText": "ashdod entity place city where dagon falls before the ark—holy rivalry ends with broken idol parts. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "place"
+  },
+  {
+    "id": "e.ekron--c14a05a7",
+    "name": "Ekron",
+    "type": "entity",
+    "url": "/entities/e.ekron--c14a05a7/",
+    "blurb": "Philistine city that panics as the ark arrives—deathly dread hastens its return to Israel.",
+    "searchText": "ekron entity place philistine city that panics as the ark arrives—deathly dread hastens its return to israel. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "place"
+  },
+  {
+    "id": "e.en-gedi-robe-cutting-mercy--3f9dcb7a",
+    "name": "En-gedi; robe-cutting mercy",
+    "type": "entity",
+    "url": "/entities/e.en-gedi-robe-cutting-mercy--3f9dcb7a/",
+    "blurb": "David spares the LORD’s anointed—conscience trumps expedience.",
+    "searchText": "en-gedi; robe-cutting mercy entity place david spares the lord’s anointed—conscience trumps expedience. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "place"
+  },
+  {
+    "id": "e.five-smooth-stones-and-sling--ff660f46",
+    "name": "Five smooth stones and sling",
+    "type": "entity",
+    "url": "/entities/e.five-smooth-stones-and-sling--ff660f46/",
+    "blurb": "Ordinary means in faithful hands.",
+    "searchText": "five smooth stones and sling entity sign ordinary means in faithful hands. ",
+    "references": 1,
+    "books": [
+      "1 Samuel"
+    ],
+    "category": "sign"
+  }
+]

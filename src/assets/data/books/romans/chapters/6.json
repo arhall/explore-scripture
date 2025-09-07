@@ -1,0 +1,28 @@
+{
+  "book": "Romans",
+  "chapter": 6,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "f.baptismal-union-with-christ--0190225f",
+      "name": "Baptismal union with Christ",
+      "type": "figure",
+      "role": "baptism",
+      "refs_count": 1
+    },
+    {
+      "id": "f.slaves-of-righteousness--64ab0fb3",
+      "name": "Slaves of righteousness",
+      "type": "figure",
+      "role": "sanctification",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-flow-index--23eef6cd",
+      "name": "Argument flow (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 8
+    }
+  ]
+}

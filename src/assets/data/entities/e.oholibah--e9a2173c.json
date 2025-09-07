@@ -1,0 +1,18 @@
+{
+  "name": "Oholibah (Jerusalem)",
+  "type": "entity",
+  "references": [
+    "Ezekiel 23:11–35"
+  ],
+  "blurb": "Younger sister symbolizing Jerusalem; exceeded Samaria in whoredoms with Babylon and Egypt.",
+  "category": "allegory",
+  "id": "e.oholibah--e9a2173c",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      23
+    ]
+  }
+}

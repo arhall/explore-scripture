@@ -1,0 +1,18 @@
+{
+  "name": "Lo-Ammi",
+  "type": "figure",
+  "references": [
+    "Hosea 1:9"
+  ],
+  "blurb": "'Not My People' — sign of covenant rupture.",
+  "category": "sign-name",
+  "id": "f.lo-ammi--48ab7f65",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Hosea": [
+      1
+    ]
+  }
+}

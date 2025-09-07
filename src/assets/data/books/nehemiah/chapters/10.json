@@ -1,0 +1,14 @@
+{
+  "book": "Nehemiah",
+  "chapter": 10,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "e.covenant-oath-and-sealed-document.leaders-levites-priests--aa12b50b",
+      "name": "Covenant oath and sealed document (leaders, Levites, priests)",
+      "type": "entity",
+      "role": "covenant",
+      "refs_count": 1
+    }
+  ]
+}

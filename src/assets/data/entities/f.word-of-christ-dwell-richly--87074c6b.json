@@ -1,0 +1,21 @@
+{
+  "name": "Word of Christ dwell richly",
+  "type": "figure",
+  "category": "word",
+  "references": [
+    "Col 3:16"
+  ],
+  "aka": [],
+  "id": "f.word-of-christ-dwell-richly--87074c6b",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      3
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Reap what you sow (measure returned)",
+  "type": "entity",
+  "references": [
+    "Obadiah 1:15"
+  ],
+  "blurb": "Moral boomerang—actions return enlarged; just recompense governs nations.",
+  "category": "theology",
+  "id": "e.reap-what-you-sow.measure-returned--8663e1f5",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Obadiah": [
+      1
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "book": "Philippians",
+  "chapter": 1,
+  "entity_count": 22,
+  "entities": [
+    {
+      "id": "f.love-abounding-in-knowledge-and-discernment--8105a28e",
+      "name": "Love abounding in knowledge and discernment",
+      "type": "figure",
+      "role": "prayer",
+      "refs_count": 1
+    },
+    {
+      "id": "f.day-of-christ--51813e18",
+      "name": "Day of Christ",
+      "type": "figure",
+      "role": "eschatology",
+      "refs_count": 2
+    },
+    {
+      "id": "g.rival-preachers-envy-strife--85c5ede0",
+      "name": "Rival preachers (envy/strife)",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1
+    },
+    {
+      "id": "f.he-who-began-a-good-work--124a0b14",
+      "name": "He who began a good work",
+      "type": "figure",
+      "role": "assurance",
+      "refs_count": 1
+    },
+    {
+      "id": "f.striving-side-by-side--00c32404",
+      "name": "Striving side by side",
+      "type": "figure",
+      "role": "unity",
+      "refs_count": 1
+    },
+    {
+      "id": "f.approve-what-is-excellent--1098f932",
+      "name": "Approve what is excellent",
+      "type": "figure",
+      "role": "discernment",
+      "refs_count": 1
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 24
+    },
+    {
+      "id": "g.imperial-guard-praetorium--bfbcae93",
+      "name": "Imperial guard (praetorium)",
+      "type": "group",
+      "role": "imperial",
+      "refs_count": 1
+    },
+    {
+      "id": "g.deacons--a2471f07",
+      "name": "deacons",
+      "type": "group",
+      "role": "office",
+      "refs_count": 2
+    },
+    {
+      "id": "g.overseers-bishops--72c3f6fb",
+      "name": "overseers (bishops)",
+      "type": "group",
+      "role": "office",
+      "refs_count": 2
+    }
+  ]
+}

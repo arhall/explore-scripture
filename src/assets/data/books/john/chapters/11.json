@@ -1,0 +1,70 @@
+{
+  "book": "John",
+  "chapter": 11,
+  "entity_count": 9,
+  "entities": [
+    {
+      "id": "f.book-of-signs-index--9c42a3ac",
+      "name": "Book of Signs (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 7
+    },
+    {
+      "id": "f.festivals-in-john--4f63512e",
+      "name": "Festivals in John",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 6
+    },
+    {
+      "id": "f.raising-of-lazarus--7a8ed055",
+      "name": "Raising of Lazarus",
+      "type": "figure",
+      "role": "sign",
+      "refs_count": 1
+    },
+    {
+      "id": "p.mary-of-bethany--7c3349d2",
+      "name": "Mary of Bethany",
+      "type": "person",
+      "role": "disciple",
+      "refs_count": 2
+    },
+    {
+      "id": "e.ephraim-near-the-wilderness--c873408a",
+      "name": "Ephraim near the wilderness",
+      "type": "entity",
+      "role": "town",
+      "refs_count": 1
+    },
+    {
+      "id": "f.water-bread-light-life-motifs--0fe6793a",
+      "name": "Water / Bread / Light / Life motifs",
+      "type": "figure",
+      "role": "theme",
+      "refs_count": 4
+    },
+    {
+      "id": "p.martha-of-bethany--ab33d3a4",
+      "name": "Martha of Bethany",
+      "type": "person",
+      "role": "disciple",
+      "refs_count": 1
+    },
+    {
+      "id": "p.lazarus-of-bethany--12689b81",
+      "name": "Lazarus of Bethany",
+      "type": "person",
+      "role": "disciple",
+      "refs_count": 1
+    },
+    {
+      "id": "t.i-am-resurrection-life--6e4fe2cd",
+      "name": "I AM: Resurrection & Life",
+      "type": "title",
+      "role": "i-am",
+      "refs_count": 1
+    }
+  ]
+}

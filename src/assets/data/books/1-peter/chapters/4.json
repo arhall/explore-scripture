@@ -1,0 +1,77 @@
+{
+  "book": "1 Peter",
+  "chapter": 4,
+  "entity_count": 20,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.do-not-be-surprised-at-the-fiery-trial--8d95cc1b",
+      "name": "do not be surprised at the fiery trial",
+      "type": "figure",
+      "role": "suffering",
+      "refs_count": 1
+    },
+    {
+      "id": "f.drinking-parties--a73da1d7",
+      "name": "drinking parties",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.whoever-has-suffered-in-the-flesh-has-ceased-from-sin--fc4b2af8",
+      "name": "whoever has suffered in the flesh has ceased from sin",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.orgies--f4013807",
+      "name": "orgies",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.entrust-your-souls-to-a-faithful-creator--93eefdce",
+      "name": "entrust your souls to a faithful Creator",
+      "type": "figure",
+      "role": "suffering",
+      "refs_count": 1
+    },
+    {
+      "id": "f.sensuality--7c360435",
+      "name": "sensuality",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.whoever-speaks-as-oracles-of-god--217a2068",
+      "name": "whoever speaks as oracles of God",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1
+    },
+    {
+      "id": "f.drunkenness--02b1278a",
+      "name": "drunkenness",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.whoever-serves-by-the-strength-god-supplies--c43e95e2",
+      "name": "whoever serves by the strength God supplies",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1
+    }
+  ]
+}

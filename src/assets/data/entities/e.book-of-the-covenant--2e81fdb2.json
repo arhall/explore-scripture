@@ -1,0 +1,21 @@
+{
+  "name": "Book of the Covenant",
+  "type": "entity",
+  "references": [
+    "Exodus 24:7"
+  ],
+  "blurb": "Text read; obedience pledged.",
+  "category": "ritual",
+  "cross_references": [
+    "Hebrews 9:18–22"
+  ],
+  "id": "e.book-of-the-covenant--2e81fdb2",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      24
+    ]
+  }
+}

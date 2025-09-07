@@ -1,0 +1,29 @@
+{
+  "name": "Reu",
+  "type": "person",
+  "references": [
+    "Genesis 11:20–21"
+  ],
+  "blurb": "Patriarch in Shem’s line.",
+  "relations": {
+    "parents": [
+      "Peleg"
+    ],
+    "children": [
+      "Serug"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "1 Chronicles 1"
+  ],
+  "id": "p.reu.gene-11-20-21--1cad5712",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      11
+    ]
+  }
+}

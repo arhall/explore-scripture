@@ -1,0 +1,21 @@
+{
+  "book": "Jeremiah",
+  "chapter": 36,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "g.court-princes-of-judah--231f3f94",
+      "name": "Court princes of Judah",
+      "type": "group",
+      "role": "court",
+      "refs_count": 1
+    },
+    {
+      "id": "e.scroll-burned-and-rewritten--25f09fb4",
+      "name": "Scroll burned and rewritten",
+      "type": "entity",
+      "role": "scripture",
+      "refs_count": 1
+    }
+  ]
+}

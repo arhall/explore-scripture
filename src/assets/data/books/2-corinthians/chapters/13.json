@@ -1,0 +1,42 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 13,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "f.textual-note-2-cor-13-14-wording--07200f53",
+      "name": "Textual note: 2 Cor 13:14 wording",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.trinitarian-blessing-2-cor-13-14--13f80a43",
+      "name": "Trinitarian blessing (2 Cor 13:14)",
+      "type": "figure",
+      "role": "benediction",
+      "refs_count": 1
+    },
+    {
+      "id": "f.examine-yourselves--2bcee3bd",
+      "name": "Examine yourselves",
+      "type": "figure",
+      "role": "testing",
+      "refs_count": 1
+    },
+    {
+      "id": "f.integrity-notes-composite-letter--69411f19",
+      "name": "Integrity notes (composite-letter)",
+      "type": "figure",
+      "role": "integrity-notes",
+      "refs_count": 1
+    }
+  ]
+}

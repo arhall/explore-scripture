@@ -1,0 +1,35 @@
+{
+  "book": "Judges",
+  "chapter": 14,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "p.samson--343c8a4f",
+      "name": "Samson",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2
+    },
+    {
+      "id": "g.philistines.lords-of-the-philistines--1007e8c9",
+      "name": "Philistines (lords of the Philistines)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.timnite-woman.samsons-first-wife--21cb1040",
+      "name": "Timnite woman (Samson’s first wife)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.thirty-companions-at-timnah--2866e225",
+      "name": "Thirty companions at Timnah",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

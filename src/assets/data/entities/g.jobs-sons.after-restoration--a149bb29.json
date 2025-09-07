@@ -1,0 +1,20 @@
+{
+  "name": "Job’s sons (after restoration)",
+  "type": "group",
+  "references": [
+    "Job 42:13"
+  ],
+  "blurb": "Seven sons—number of completeness resumes; the text preserves daughters’ names as a theological signal.",
+  "category": "record",
+  "count": 7,
+  "count_note": "Seven sons after restoration",
+  "id": "g.jobs-sons.after-restoration--a149bb29",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Job": [
+      42
+    ]
+  }
+}

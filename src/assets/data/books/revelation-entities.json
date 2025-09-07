@@ -1,0 +1,658 @@
+[
+  {
+    "id": "t.son-of-man--06ba03e2",
+    "name": "Son of Man",
+    "type": "title",
+    "url": "/entities/t.son-of-man--06ba03e2/",
+    "blurb": "Danielic human—heavenly authority and suffering path converge in Jesus.",
+    "searchText": "son of man title christological-title danielic human—heavenly authority and suffering path converge in jesus. ",
+    "references": 7,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Revelation"
+    ],
+    "category": "christological-title"
+  },
+  {
+    "id": "e.zion--4bd3e8e2",
+    "name": "Zion",
+    "type": "entity",
+    "url": "/entities/e.zion--4bd3e8e2/",
+    "blurb": "Site of the ‘good news’ announcement: festivals resumed, vows kept, feet of the herald on the mountains.",
+    "searchText": "zion entity holy-mount site of the ‘good news’ announcement: festivals resumed, vows kept, feet of the herald on the mountains. e.zion--d7771d29 e.zion--ea3cecef",
+    "references": 3,
+    "books": [
+      "Nahum",
+      "1 Peter",
+      "Revelation"
+    ],
+    "category": "holy-mount"
+  },
+  {
+    "id": "g.four-living-creatures--808a85cf",
+    "name": "four living creatures",
+    "type": "group",
+    "url": "/entities/g.four-living-creatures--808a85cf/",
+    "blurb": "",
+    "searchText": "four living creatures group heavenly  ",
+    "references": 2,
+    "books": [
+      "Revelation"
+    ],
+    "category": "heavenly"
+  },
+  {
+    "id": "g.twenty-four-elders--6b637ff3",
+    "name": "twenty-four elders",
+    "type": "group",
+    "url": "/entities/g.twenty-four-elders--6b637ff3/",
+    "blurb": "",
+    "searchText": "twenty-four elders group heavenly  ",
+    "references": 2,
+    "books": [
+      "Revelation"
+    ],
+    "category": "heavenly"
+  },
+  {
+    "id": "p.dragon-satan--4898b1bc",
+    "name": "dragon (Satan)",
+    "type": "person",
+    "url": "/entities/p.dragon-satan--4898b1bc/",
+    "blurb": "",
+    "searchText": "dragon (satan) person adversary  ",
+    "references": 2,
+    "books": [
+      "Revelation"
+    ],
+    "category": "adversary"
+  },
+  {
+    "id": "e.babylon--9d648bf6",
+    "name": "Babylon",
+    "type": "entity",
+    "url": "/entities/e.babylon--9d648bf6/",
+    "blurb": "",
+    "searchText": "babylon entity city  ",
+    "references": 2,
+    "books": [
+      "1 Peter",
+      "Revelation"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "e.scroll-sealed-with-seven-seals--b4c717c9",
+    "name": "scroll sealed with seven seals",
+    "type": "entity",
+    "url": "/entities/e.scroll-sealed-with-seven-seals--b4c717c9/",
+    "blurb": "",
+    "searchText": "scroll sealed with seven seals entity heavenly  ",
+    "references": 2,
+    "books": [
+      "Revelation"
+    ],
+    "category": "heavenly"
+  },
+  {
+    "id": "e.sea-of-glass--bfd4f92a",
+    "name": "sea of glass",
+    "type": "entity",
+    "url": "/entities/e.sea-of-glass--bfd4f92a/",
+    "blurb": "",
+    "searchText": "sea of glass entity heavenly  ",
+    "references": 2,
+    "books": [
+      "Revelation"
+    ],
+    "category": "heavenly"
+  },
+  {
+    "id": "e.seven-spirits-of-god--92b1e027",
+    "name": "seven spirits of God",
+    "type": "entity",
+    "url": "/entities/e.seven-spirits-of-god--92b1e027/",
+    "blurb": "",
+    "searchText": "seven spirits of god entity heavenly  ",
+    "references": 2,
+    "books": [
+      "Revelation"
+    ],
+    "category": "heavenly"
+  },
+  {
+    "id": "e.throne--bb671643",
+    "name": "throne",
+    "type": "entity",
+    "url": "/entities/e.throne--bb671643/",
+    "blurb": "",
+    "searchText": "throne entity heavenly  ",
+    "references": 2,
+    "books": [
+      "Revelation"
+    ],
+    "category": "heavenly"
+  },
+  {
+    "id": "f.babylon-the-great-the-prostitute--8e0d98d3",
+    "name": "Babylon the Great (the prostitute)",
+    "type": "figure",
+    "url": "/entities/f.babylon-the-great-the-prostitute--8e0d98d3/",
+    "blurb": "",
+    "searchText": "babylon the great (the prostitute) figure city-symbol  ",
+    "references": 2,
+    "books": [
+      "Revelation"
+    ],
+    "category": "city-symbol"
+  },
+  {
+    "id": "f.beast-from-the-earth-false-prophet--895cc6a3",
+    "name": "beast from the earth (false prophet)",
+    "type": "figure",
+    "url": "/entities/f.beast-from-the-earth-false-prophet--895cc6a3/",
+    "blurb": "",
+    "searchText": "beast from the earth (false prophet) figure opponent  ",
+    "references": 2,
+    "books": [
+      "Revelation"
+    ],
+    "category": "opponent"
+  },
+  {
+    "id": "f.beast-from-the-sea-seven-heads-ten-horns--fc8809f6",
+    "name": "beast from the Sea (seven heads ten horns)",
+    "type": "figure",
+    "url": "/entities/f.beast-from-the-sea-seven-heads-ten-horns--fc8809f6/",
+    "blurb": "",
+    "searchText": "beast from the sea (seven heads ten horns) figure opponent  ",
+    "references": 2,
+    "books": [
+      "Revelation"
+    ],
+    "category": "opponent"
+  },
+  {
+    "id": "f.crown-of-life--52890c5b",
+    "name": "crown of life",
+    "type": "figure",
+    "url": "/entities/f.crown-of-life--52890c5b/",
+    "blurb": "",
+    "searchText": "crown of life figure reward  ",
+    "references": 2,
+    "books": [
+      "James",
+      "Revelation"
+    ],
+    "category": "reward"
+  },
+  {
+    "id": "g.144-000--775ccae6",
+    "name": "144,000",
+    "type": "group",
+    "url": "/entities/g.144-000--775ccae6/",
+    "blurb": "",
+    "searchText": "144,000 group servants  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "servants"
+  },
+  {
+    "id": "g.four-angels-at-the-four-corners-of-the-earth--48deb634",
+    "name": "four angels at the four corners of the earth",
+    "type": "group",
+    "url": "/entities/g.four-angels-at-the-four-corners-of-the-earth--48deb634/",
+    "blurb": "",
+    "searchText": "four angels at the four corners of the earth group angelic  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "angelic"
+  },
+  {
+    "id": "g.four-angels-bound-at-the-euphrates--7c121bc0",
+    "name": "four angels bound at the Euphrates",
+    "type": "group",
+    "url": "/entities/g.four-angels-bound-at-the-euphrates--7c121bc0/",
+    "blurb": "",
+    "searchText": "four angels bound at the euphrates group angelic  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "angelic"
+  },
+  {
+    "id": "g.gog-and-magog--cdef9570",
+    "name": "Gog and Magog",
+    "type": "group",
+    "url": "/entities/g.gog-and-magog--cdef9570/",
+    "blurb": "",
+    "searchText": "gog and magog group opponents  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "opponents"
+  },
+  {
+    "id": "g.great-multitude-from-every-nation--2774bbbc",
+    "name": "great multitude from every nation",
+    "type": "group",
+    "url": "/entities/g.great-multitude-from-every-nation--2774bbbc/",
+    "blurb": "",
+    "searchText": "great multitude from every nation group redeemed  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "redeemed"
+  },
+  {
+    "id": "g.kings-and-earth-dwellers-hide-in-caves--68c0c718",
+    "name": "kings and earth-dwellers hide in caves",
+    "type": "group",
+    "url": "/entities/g.kings-and-earth-dwellers-hide-in-caves--68c0c718/",
+    "blurb": "",
+    "searchText": "kings and earth-dwellers hide in caves group opponents  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "opponents"
+  },
+  {
+    "id": "g.kings-and-merchants-and-shipmasters-lament--111cd854",
+    "name": "kings and merchants and shipmasters lament",
+    "type": "group",
+    "url": "/entities/g.kings-and-merchants-and-shipmasters-lament--111cd854/",
+    "blurb": "",
+    "searchText": "kings and merchants and shipmasters lament group mourners  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "mourners"
+  },
+  {
+    "id": "g.michael-and-his-angels--a0d7eb46",
+    "name": "Michael and his angels",
+    "type": "group",
+    "url": "/entities/g.michael-and-his-angels--a0d7eb46/",
+    "blurb": "",
+    "searchText": "michael and his angels group angelic  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "angelic"
+  },
+  {
+    "id": "g.seven-angels-with-seven-bowls--5a57be42",
+    "name": "seven angels with seven bowls",
+    "type": "group",
+    "url": "/entities/g.seven-angels-with-seven-bowls--5a57be42/",
+    "blurb": "",
+    "searchText": "seven angels with seven bowls group angelic  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "angelic"
+  },
+  {
+    "id": "g.seven-angels-with-seven-trumpets--4e672178",
+    "name": "seven angels with seven trumpets",
+    "type": "group",
+    "url": "/entities/g.seven-angels-with-seven-trumpets--4e672178/",
+    "blurb": "",
+    "searchText": "seven angels with seven trumpets group angelic  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "angelic"
+  },
+  {
+    "id": "g.souls-under-the-altar--8c6705da",
+    "name": "souls under the altar",
+    "type": "group",
+    "url": "/entities/g.souls-under-the-altar--8c6705da/",
+    "blurb": "",
+    "searchText": "souls under the altar group martyrs  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "martyrs"
+  },
+  {
+    "id": "g.the-rest-of-her-offspring--d01b46e0",
+    "name": "the rest of her offspring",
+    "type": "group",
+    "url": "/entities/g.the-rest-of-her-offspring--d01b46e0/",
+    "blurb": "",
+    "searchText": "the rest of her offspring group saints  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "saints"
+  },
+  {
+    "id": "g.those-who-conquered-the-beast-by-the-sea-of-glass--bc534208",
+    "name": "those who conquered the beast by the sea of glass",
+    "type": "group",
+    "url": "/entities/g.those-who-conquered-the-beast-by-the-sea-of-glass--bc534208/",
+    "blurb": "",
+    "searchText": "those who conquered the beast by the sea of glass group overcomers  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "overcomers"
+  },
+  {
+    "id": "g.those-who-had-not-worshiped-the-beast-or-its-image-and-had-not-received-the-mark--f6791613",
+    "name": "those who had not worshiped the beast or its image and had not received the mark",
+    "type": "group",
+    "url": "/entities/g.those-who-had-not-worshiped-the-beast-or-its-image-and-had-not-received-the-mark--f6791613/",
+    "blurb": "",
+    "searchText": "those who had not worshiped the beast or its image and had not received the mark group faithful  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "faithful"
+  },
+  {
+    "id": "g.three-angels-messages--697cc9f0",
+    "name": "three angels’ messages",
+    "type": "group",
+    "url": "/entities/g.three-angels-messages--697cc9f0/",
+    "blurb": "",
+    "searchText": "three angels’ messages group angelic-announcement  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "angelic-announcement"
+  },
+  {
+    "id": "g.three-frog-like-unclean-spirits--9be7dcc1",
+    "name": "three frog-like unclean spirits",
+    "type": "group",
+    "url": "/entities/g.three-frog-like-unclean-spirits--9be7dcc1/",
+    "blurb": "",
+    "searchText": "three frog-like unclean spirits group demonic  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "demonic"
+  },
+  {
+    "id": "g.thrones-and-those-beheaded-for-jesus--533679f9",
+    "name": "thrones and those beheaded for Jesus",
+    "type": "group",
+    "url": "/entities/g.thrones-and-those-beheaded-for-jesus--533679f9/",
+    "blurb": "",
+    "searchText": "thrones and those beheaded for jesus group martyrs  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "martyrs"
+  },
+  {
+    "id": "g.two-hundred-million-cavalry--277cbf8a",
+    "name": "two hundred million cavalry",
+    "type": "group",
+    "url": "/entities/g.two-hundred-million-cavalry--277cbf8a/",
+    "blurb": "",
+    "searchText": "two hundred million cavalry group host  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "host"
+  },
+  {
+    "id": "g.two-witnesses--0bc541e4",
+    "name": "two witnesses",
+    "type": "group",
+    "url": "/entities/g.two-witnesses--0bc541e4/",
+    "blurb": "",
+    "searchText": "two witnesses group prophetic  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "prophetic"
+  },
+  {
+    "id": "p.abaddon-apollyon--598a54b2",
+    "name": "Abaddon (Apollyon)",
+    "type": "person",
+    "url": "/entities/p.abaddon-apollyon--598a54b2/",
+    "blurb": "",
+    "searchText": "abaddon (apollyon) person angelic-king  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "angelic-king"
+  },
+  {
+    "id": "p.angel-of-the-waters--96fa1fba",
+    "name": "angel of the waters",
+    "type": "person",
+    "url": "/entities/p.angel-of-the-waters--96fa1fba/",
+    "blurb": "",
+    "searchText": "angel of the waters person angelic  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "angelic"
+  },
+  {
+    "id": "p.angel-standing-in-the-sun--55f3553b",
+    "name": "angel standing in the sun",
+    "type": "person",
+    "url": "/entities/p.angel-standing-in-the-sun--55f3553b/",
+    "blurb": "",
+    "searchText": "angel standing in the sun person angelic  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "angelic"
+  },
+  {
+    "id": "p.angel-with-golden-censer--1c755110",
+    "name": "angel with golden censer",
+    "type": "person",
+    "url": "/entities/p.angel-with-golden-censer--1c755110/",
+    "blurb": "",
+    "searchText": "angel with golden censer person angelic  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "angelic"
+  },
+  {
+    "id": "p.angel-with-key-to-the-abyss-and-a-great-chain--f897306e",
+    "name": "angel with key to the Abyss and a great chain",
+    "type": "person",
+    "url": "/entities/p.angel-with-key-to-the-abyss-and-a-great-chain--f897306e/",
+    "blurb": "",
+    "searchText": "angel with key to the abyss and a great chain person angelic  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "angelic"
+  },
+  {
+    "id": "p.another-angel-came-out-from-the-altar-who-has-authority-over-the-fire--2f8f6440",
+    "name": "another angel came out from the altar, who has authority over the fire",
+    "type": "person",
+    "url": "/entities/p.another-angel-came-out-from-the-altar-who-has-authority-over-the-fire--2f8f6440/",
+    "blurb": "",
+    "searchText": "another angel came out from the altar, who has authority over the fire person angelic  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "angelic"
+  },
+  {
+    "id": "p.another-angel-came-out-of-the-temple-calling-with-a-loud-voice-to-him-who-sat-on-the-cloud--ca233d82",
+    "name": "another angel came out of the temple, calling with a loud voice to him who sat on the cloud",
+    "type": "person",
+    "url": "/entities/p.another-angel-came-out-of-the-temple-calling-with-a-loud-voice-to-him-who-sat-on-the-cloud--ca233d82/",
+    "blurb": "",
+    "searchText": "another angel came out of the temple, calling with a loud voice to him who sat on the cloud person angelic  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "angelic"
+  },
+  {
+    "id": "p.another-angel-came-out-of-the-temple-in-heaven-he-too-had-a-sharp-sickle--e58f004d",
+    "name": "another angel came out of the temple in heaven, he too had a sharp sickle",
+    "type": "person",
+    "url": "/entities/p.another-angel-came-out-of-the-temple-in-heaven-he-too-had-a-sharp-sickle--e58f004d/",
+    "blurb": "",
+    "searchText": "another angel came out of the temple in heaven, he too had a sharp sickle person angelic  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "angelic"
+  },
+  {
+    "id": "p.another-mighty-angel-who-illumined-the-earth--3ae0a3cd",
+    "name": "another mighty angel who illumined the earth",
+    "type": "person",
+    "url": "/entities/p.another-mighty-angel-who-illumined-the-earth--3ae0a3cd/",
+    "blurb": "",
+    "searchText": "another mighty angel who illumined the earth person angelic  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "angelic"
+  },
+  {
+    "id": "p.antipas--2c1a09c3",
+    "name": "Antipas",
+    "type": "person",
+    "url": "/entities/p.antipas--2c1a09c3/",
+    "blurb": "",
+    "searchText": "antipas person martyr  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "martyr"
+  },
+  {
+    "id": "p.john-of-patmos--90440c7b",
+    "name": "John of Patmos",
+    "type": "person",
+    "url": "/entities/p.john-of-patmos--90440c7b/",
+    "blurb": "",
+    "searchText": "john of patmos person seer  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "seer"
+  },
+  {
+    "id": "p.mighty-angel-with-little-scroll--0bee7c79",
+    "name": "mighty angel with little scroll",
+    "type": "person",
+    "url": "/entities/p.mighty-angel-with-little-scroll--0bee7c79/",
+    "blurb": "",
+    "searchText": "mighty angel with little scroll person angelic  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "angelic"
+  },
+  {
+    "id": "p.strong-angel-proclaiming-who-is-worthy-to-open-the-scroll--32d28370",
+    "name": "strong angel proclaiming Who is worthy to open the scroll",
+    "type": "person",
+    "url": "/entities/p.strong-angel-proclaiming-who-is-worthy-to-open-the-scroll--32d28370/",
+    "blurb": "",
+    "searchText": "strong angel proclaiming who is worthy to open the scroll person angelic  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "angelic"
+  },
+  {
+    "id": "t.alpha-and-omega--b5776bb5",
+    "name": "Alpha and Omega",
+    "type": "title",
+    "url": "/entities/t.alpha-and-omega--b5776bb5/",
+    "blurb": "",
+    "searchText": "alpha and omega title christ-title  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "christ-title"
+  },
+  {
+    "id": "t.faithful-and-true--7899c7c2",
+    "name": "Faithful and True",
+    "type": "title",
+    "url": "/entities/t.faithful-and-true--7899c7c2/",
+    "blurb": "",
+    "searchText": "faithful and true title christ-title  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "christ-title"
+  },
+  {
+    "id": "t.first-and-last--ff6c1a95",
+    "name": "First and Last",
+    "type": "title",
+    "url": "/entities/t.first-and-last--ff6c1a95/",
+    "blurb": "",
+    "searchText": "first and last title christ-title  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "christ-title"
+  },
+  {
+    "id": "t.key-of-david--40c014e3",
+    "name": "Key of David",
+    "type": "title",
+    "url": "/entities/t.key-of-david--40c014e3/",
+    "blurb": "",
+    "searchText": "key of david title authority  ",
+    "references": 1,
+    "books": [
+      "Revelation"
+    ],
+    "category": "authority"
+  }
+]

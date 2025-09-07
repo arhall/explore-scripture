@@ -1,0 +1,26 @@
+{
+  "name": "Nimrod",
+  "type": "person",
+  "references": [
+    "Genesis 10:7–12"
+  ],
+  "blurb": "Mighty hunter and early kingdom builder; associated with Babel and cities in Shinar, Assyria.",
+  "relations": {
+    "parents": [
+      "Cush"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "Micah 5:6"
+  ],
+  "id": "p.nimrod.gene-10-7-12--9892ee80",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

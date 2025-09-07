@@ -1,0 +1,18 @@
+{
+  "name": "day laborers (harvesters)",
+  "type": "group",
+  "category": "workers",
+  "references": [
+    "Jas 5:4"
+  ],
+  "aka": [
+    "laborers",
+    "harvesters"
+  ],
+  "id": "g.day-laborers-harvesters--010afe1a",
+  "book_references": {
+    "James": [
+      5
+    ]
+  }
+}

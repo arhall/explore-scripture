@@ -1,0 +1,25 @@
+{
+  "name": "Samaritan village rejection",
+  "type": "figure",
+  "category": "episode",
+  "references": [
+    "Luke 9:52–56"
+  ],
+  "unique_to": "Luke",
+  "blurb": "James and John want fire from heaven; Jesus rebukes—mercy over vengeance.",
+  "aka": [],
+  "id": "f.samaritan-village-rejection--7d2d120b",
+  "source_book": "Luke",
+  "source_books": [
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Luke": [
+      9
+    ]
+  }
+}

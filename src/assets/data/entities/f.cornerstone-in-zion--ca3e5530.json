@@ -1,0 +1,23 @@
+{
+  "name": "cornerstone in Zion",
+  "type": "figure",
+  "category": "stone",
+  "references": [
+    "1 Pet 2:6"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Isa 28:16; Ps 118:22",
+      "type": "quote"
+    }
+  ],
+  "aka": [
+    "cornerstone"
+  ],
+  "id": "f.cornerstone-in-zion--ca3e5530",
+  "book_references": {
+    "1 Peter": [
+      2
+    ]
+  }
+}

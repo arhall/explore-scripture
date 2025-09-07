@@ -1,0 +1,18 @@
+{
+  "id": "e.destroy-your-chariots--1a0f7c39",
+  "name": "Destroy your chariots",
+  "type": "entity",
+  "references": [
+    "Micah 5:10–15"
+  ],
+  "category": "purge-note",
+  "blurb": "Offensive hardware removed to unlearn war.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      5
+    ]
+  }
+}

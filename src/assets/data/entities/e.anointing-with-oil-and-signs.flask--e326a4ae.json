@@ -1,0 +1,18 @@
+{
+  "name": "Anointing with oil (flask) and signs",
+  "type": "entity",
+  "references": [
+    "1 Samuel 10:1–13"
+  ],
+  "blurb": "Tokens (donkeys found, bread, prophets) confirm calling; Spirit rush marks office—yet obedience must keep it.",
+  "category": "ritual",
+  "id": "e.anointing-with-oil-and-signs.flask--e326a4ae",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      10
+    ]
+  }
+}

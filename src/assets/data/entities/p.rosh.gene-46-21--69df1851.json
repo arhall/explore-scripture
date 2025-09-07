@@ -1,0 +1,19 @@
+{
+  "name": "Rosh",
+  "type": "person",
+  "references": [
+    "Genesis 46:21"
+  ],
+  "blurb": "Son of Benjamin listed in the migration list.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.rosh.gene-46-21--69df1851",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      46
+    ]
+  }
+}

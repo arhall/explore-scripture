@@ -1,0 +1,1233 @@
+{
+  "book": "Galatians",
+  "slug": "galatians",
+  "entity_count": 133,
+  "key_figures": [
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 3,
+      "score": 18
+    },
+    {
+      "id": "p.hagar.gene-16-21--1d27bdc5",
+      "name": "Hagar",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.ishmael.gene-16-17-21-25-12-18--dcd41d5d",
+      "name": "Ishmael",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.isaac.gene-17-25--66e8d49e",
+      "name": "Isaac",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.simon-peter-cephas--d58cce37",
+      "name": "Simon Peter (Cephas)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.james-the-lord-s-brother--02bc9aea",
+      "name": "James (the Lord’s brother)",
+      "type": "person",
+      "role": "church-leader",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.even-barnabas-led-astray--0b17b517",
+      "name": "Even Barnabas led astray",
+      "type": "person",
+      "role": "conflict",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.sarah--424e36f5",
+      "name": "Sarah",
+      "type": "person",
+      "role": "allegory",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.john-son-of-zebedee--b337fe0e",
+      "name": "John son of Zebedee",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.titus--b5cd5081",
+      "name": "Titus",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.barnabas--d4ced718",
+      "name": "Barnabas",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.abraham--197f2a67",
+      "name": "Abraham",
+      "type": "person",
+      "role": "patriarch",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.agitators--074ad61a",
+      "name": "Agitators",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 3,
+      "score": 9
+    },
+    {
+      "id": "f.prosopography-index--a2064234",
+      "name": "Prosopography (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 6,
+      "score": 8
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 6,
+      "score": 8
+    },
+    {
+      "id": "g.false-brothers-slipped-in--6442b191",
+      "name": "False brothers slipped in",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.circumcision-party--bf245fcf",
+      "name": "Circumcision party",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.false-brothers--270e461b",
+      "name": "False brothers",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.right-hand-of-fellowship-pillars--018f5431",
+      "name": "Right hand of fellowship (Pillars)",
+      "type": "group",
+      "role": "agreement",
+      "refs_count": 1,
+      "score": 7
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 3,
+      "score": 18
+    },
+    {
+      "id": "p.hagar.gene-16-21--1d27bdc5",
+      "name": "Hagar",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.ishmael.gene-16-17-21-25-12-18--dcd41d5d",
+      "name": "Ishmael",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.isaac.gene-17-25--66e8d49e",
+      "name": "Isaac",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.simon-peter-cephas--d58cce37",
+      "name": "Simon Peter (Cephas)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.james-the-lord-s-brother--02bc9aea",
+      "name": "James (the Lord’s brother)",
+      "type": "person",
+      "role": "church-leader",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.even-barnabas-led-astray--0b17b517",
+      "name": "Even Barnabas led astray",
+      "type": "person",
+      "role": "conflict",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.sarah--424e36f5",
+      "name": "Sarah",
+      "type": "person",
+      "role": "allegory",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.john-son-of-zebedee--b337fe0e",
+      "name": "John son of Zebedee",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.titus--b5cd5081",
+      "name": "Titus",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.barnabas--d4ced718",
+      "name": "Barnabas",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.abraham--197f2a67",
+      "name": "Abraham",
+      "type": "person",
+      "role": "patriarch",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.agitators--074ad61a",
+      "name": "Agitators",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 3,
+      "score": 9
+    },
+    {
+      "id": "f.prosopography-index--a2064234",
+      "name": "Prosopography (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 6,
+      "score": 8
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 6,
+      "score": 8
+    },
+    {
+      "id": "g.false-brothers-slipped-in--6442b191",
+      "name": "False brothers slipped in",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.circumcision-party--bf245fcf",
+      "name": "Circumcision party",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.false-brothers--270e461b",
+      "name": "False brothers",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.right-hand-of-fellowship-pillars--018f5431",
+      "name": "Right hand of fellowship (Pillars)",
+      "type": "group",
+      "role": "agreement",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.pillars-james-cephas-john--737f6166",
+      "name": "Pillars (James, Cephas, John)",
+      "type": "group",
+      "role": "leaders",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "e.jerusalem--d3a5bc90",
+      "name": "Jerusalem",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "f.unknown-by-face-in-judea-they-glorified-god--b95df6fe",
+      "name": "Unknown by face in Judea; they glorified God",
+      "type": "figure",
+      "role": "report",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.heir-no-longer-under-guardian--f8d9a872",
+      "name": "Heir no longer under guardian",
+      "type": "figure",
+      "role": "status",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.isaiah-54-1-citation--882b7ede",
+      "name": "Isaiah 54:1 citation",
+      "type": "figure",
+      "role": "ot-quote",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-israel-of-god-in-6-16--cbb9828b",
+      "name": "Textual note: Israel of God in 6:16",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.titus-not-compelled-to-be-circumcised--77c93366",
+      "name": "Titus not compelled to be circumcised",
+      "type": "figure",
+      "role": "test-case",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.not-justified-by-works-of-the-law--f13b505f",
+      "name": "Not justified by works of the law",
+      "type": "figure",
+      "role": "justification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.new-creation-kain-ktisis--1e4fb1a2",
+      "name": "New creation (kainē ktisis)",
+      "type": "figure",
+      "role": "new-creation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.each-will-bear-his-own-load--f3362b3a",
+      "name": "Each will bear his own load",
+      "type": "figure",
+      "role": "responsibility",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.circumcision-avails-nothing-faith-working-through-love--694e3db5",
+      "name": "Circumcision avails nothing; faith working through love",
+      "type": "figure",
+      "role": "principle",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.see-with-what-large-letters--aa5d1dd2",
+      "name": "See with what large letters",
+      "type": "figure",
+      "role": "epistolary",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.arabia-and-damascus-after-three-years--57503823",
+      "name": "Arabia and Damascus (after three years)",
+      "type": "figure",
+      "role": "chronology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.promise-to-abraham-vs-law-priority--9656df8e",
+      "name": "Promise to Abraham vs law (priority)",
+      "type": "figure",
+      "role": "covenant",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.mount-sinai-in-arabia-hagar--8c8490bc",
+      "name": "Mount Sinai in Arabia (Hagar)",
+      "type": "figure",
+      "role": "allegory",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.fruit-of-the-spirit-self-control--19ac3ab3",
+      "name": "Fruit of the Spirit: Self-Control",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.hagar-and-sarah-allegory-introduced--80f7c4ce",
+      "name": "Hagar and Sarah allegory introduced",
+      "type": "figure",
+      "role": "allegory",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.work-of-the-flesh-envy--e0264272",
+      "name": "Work of the flesh: Envy",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.present-jerusalem-in-slavery--8ba2ca83",
+      "name": "Present Jerusalem in slavery",
+      "type": "figure",
+      "role": "allegory",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.work-of-the-flesh-drunkenness--9ce80ea6",
+      "name": "Work of the flesh: Drunkenness",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.seed-singular-debate--e484182c",
+      "name": "Seed (singular) debate",
+      "type": "figure",
+      "role": "exegesis",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.zealous-courtship-by-agitators--b948e338",
+      "name": "Zealous courtship by agitators",
+      "type": "figure",
+      "role": "zeal",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.work-of-the-flesh-divisions--b79c12b9",
+      "name": "Work of the flesh: Divisions",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.work-of-the-flesh-jealousy--55b1369c",
+      "name": "Work of the flesh: Jealousy",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.fruit-of-the-spirit-love--eeae71c7",
+      "name": "Fruit of the Spirit: Love",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.deliverance-from-the-present-evil-age--bcb4daa1",
+      "name": "Deliverance from the present evil age",
+      "type": "figure",
+      "role": "apocalyptic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-gal-2-20-reading--5172cf16",
+      "name": "Textual note: Gal 2:20 reading",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.the-israel-of-god-reading-note--a2b08fa8",
+      "name": "The Israel of God (reading note)",
+      "type": "figure",
+      "role": "interpretive-note",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.faith-faithfulness-of-christ-pistis-christou-debate--430d0f34",
+      "name": "Faith/faithfulness of Christ (pistis Christou) debate",
+      "type": "figure",
+      "role": "debate",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.persecution-of-the-promised-child--17e9d260",
+      "name": "Persecution of the promised child",
+      "type": "figure",
+      "role": "conflict",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.not-walking-straight-with-the-gospel-orthopodeo--828dbe1d",
+      "name": "Not walking straight with the gospel (orthopodeo)",
+      "type": "figure",
+      "role": "rhetoric",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.desires-of-the-flesh-vs-spirit--e0a34ed9",
+      "name": "Desires of the flesh vs Spirit",
+      "type": "figure",
+      "role": "contrast",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.have-i-become-your-enemy--5ab9a0b8",
+      "name": "Have I become your enemy?",
+      "type": "figure",
+      "role": "rhetoric",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.walk-by-the-spirit--09272356",
+      "name": "Walk by the Spirit",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.fruit-of-the-spirit-patience--1d601390",
+      "name": "Fruit of the Spirit: Patience",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.fifteen-days-with-cephas-saw-james--f5d3ad45",
+      "name": "Fifteen days with Cephas; saw James",
+      "type": "figure",
+      "role": "chronology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.arabia--2f413cf0",
+      "name": "Arabia",
+      "type": "entity",
+      "role": "region",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "f.advancement-in-judaism-and-zeal--1ed87c5f",
+      "name": "Advancement in Judaism and zeal",
+      "type": "figure",
+      "role": "autobiography",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.fruit-of-the-spirit-goodness--a97c09be",
+      "name": "Fruit of the Spirit: Goodness",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sowing-and-reaping--c97e2032",
+      "name": "Sowing and reaping",
+      "type": "figure",
+      "role": "principle",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.do-not-nullify-the-grace-of-god--9a148f5d",
+      "name": "Do not nullify the grace of God",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.work-of-the-flesh-enmity--51c1d2a2",
+      "name": "Work of the flesh: Enmity",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.work-of-the-flesh-sensuality--1cd8538f",
+      "name": "Work of the flesh: Sensuality",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.grace-and-peace-formula--16322c51",
+      "name": "Grace and peace formula",
+      "type": "figure",
+      "role": "epistolary",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.work-of-the-flesh-orgies--3b7771a6",
+      "name": "Work of the flesh: Orgies",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.work-of-the-flesh-dissensions--8b592eaa",
+      "name": "Work of the flesh: Dissensions",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.those-who-desire-a-good-showing-in-the-flesh--7c0e2cec",
+      "name": "Those who desire a good showing in the flesh",
+      "type": "figure",
+      "role": "motive",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-gal-6-15-focus--a3d6496d",
+      "name": "Textual note: Gal 6:15 focus",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.fruit-of-the-spirit-gentleness--cd6a01b4",
+      "name": "Fruit of the Spirit: Gentleness",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.bite-and-devour-one-another--40469885",
+      "name": "Bite and devour one another",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.stoicheia-elemental-forces--d8933eed",
+      "name": "Stoicheia: elemental forces",
+      "type": "figure",
+      "role": "elements",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.abraham-believed-god-gen-15-6--dd639f32",
+      "name": "Abraham believed God (Gen 15:6)",
+      "type": "figure",
+      "role": "Abraham",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-gal-2-5-short-long--0ae678a0",
+      "name": "Textual note: Gal 2:5 short/long",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.boast-only-in-the-cross--aac5fb08",
+      "name": "Boast only in the cross",
+      "type": "figure",
+      "role": "boast",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.seeking-to-please-god-not-people--c1de2231",
+      "name": "Seeking to please God, not people",
+      "type": "figure",
+      "role": "motive",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.do-good-to-the-household-of-faith--cba40d80",
+      "name": "Do good to the household of faith",
+      "type": "figure",
+      "role": "community",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.baptized-into-christ-clothed-with-christ--06b8c70b",
+      "name": "Baptized into Christ; clothed with Christ",
+      "type": "figure",
+      "role": "baptism",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.gospel-preached-beforehand-to-abraham-gen-12-3--3199f4de",
+      "name": "Gospel preached beforehand to Abraham (Gen 12:3)",
+      "type": "figure",
+      "role": "promise",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.apostleship-not-from-men--ef77a0bf",
+      "name": "Apostleship not from men",
+      "type": "figure",
+      "role": "authority",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.paidagogos-to-christ-guardian-tutor--2373a0eb",
+      "name": "Paidagogos to Christ (guardian/tutor)",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.antioch-incident-cephas-withdrew--2aa820fc",
+      "name": "Antioch incident: Cephas withdrew",
+      "type": "figure",
+      "role": "conflict",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sons-of-abraham-by-faith-gentiles-blessed--8ad461e7",
+      "name": "Sons of Abraham by faith (Gentiles blessed)",
+      "type": "figure",
+      "role": "inclusion",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.restore-the-fallen-gently--907adfaa",
+      "name": "Restore the fallen gently",
+      "type": "figure",
+      "role": "pastoral",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.work-of-the-flesh-strife--e549fbf8",
+      "name": "Work of the flesh: Strife",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.for-freedom-christ-has-set-us-free--aa9e2233",
+      "name": "For freedom Christ has set us free",
+      "type": "figure",
+      "role": "freedom",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-gal-3-1-verb-nuance--75551cef",
+      "name": "Textual note: Gal 3:1 verb nuance",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.work-of-the-flesh-idolatry--22302fb2",
+      "name": "Work of the flesh: Idolatry",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.work-of-the-flesh-sexual-immorality--3f10a723",
+      "name": "Work of the flesh: Sexual Immorality",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.do-not-submit-again-to-a-yoke-of-slavery--0cc44555",
+      "name": "Do not submit again to a yoke of slavery",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.peace-and-mercy-on-all-who-follow-this-rule--44331b3d",
+      "name": "Peace and mercy on all who follow this rule",
+      "type": "figure",
+      "role": "benediction",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.fruit-of-the-spirit-joy--20e9380a",
+      "name": "Fruit of the Spirit: Joy",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.fruit-of-the-spirit-kindness--530b21f5",
+      "name": "Fruit of the Spirit: Kindness",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.anathema-on-contrary-gospels--03e998e7",
+      "name": "Anathema on contrary gospels",
+      "type": "figure",
+      "role": "curse",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.another-gospel-not-another--06bdebcc",
+      "name": "Another gospel (not another)",
+      "type": "figure",
+      "role": "deviation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.through-the-law-i-died-to-the-law--d3d50c25",
+      "name": "Through the law I died to the law",
+      "type": "figure",
+      "role": "paradox",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.bear-one-another-s-burdens--31e0fcbf",
+      "name": "Bear one another’s burdens",
+      "type": "figure",
+      "role": "pastoral",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.gospel-through-revelation-of-jesus-christ--bfac83e6",
+      "name": "Gospel through revelation of Jesus Christ",
+      "type": "figure",
+      "role": "revelation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.children-of-promise-like-isaac--cf3dc331",
+      "name": "Children of promise like Isaac",
+      "type": "figure",
+      "role": "promise",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.adoption-and-abba-father--e43423f5",
+      "name": "Adoption and Abba, Father",
+      "type": "figure",
+      "role": "adoption",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.a-little-leaven-leavens-the-whole-lump--2c621407",
+      "name": "A little leaven leavens the whole lump",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.remember-the-poor-jerusalem-agreement--b3e0c27e",
+      "name": "Remember the poor (Jerusalem agreement)",
+      "type": "figure",
+      "role": "collection",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.physical-ailment-reception-angel-of-god--7a25a21d",
+      "name": "Physical ailment reception (angel of God)",
+      "type": "figure",
+      "role": "reception",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.public-portrayal-of-christ-crucified--9ea92480",
+      "name": "Public portrayal of Christ crucified",
+      "type": "figure",
+      "role": "proclamation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.cursed-is-everyone-who-does-not-abide-deut-27-26--e4d2968b",
+      "name": "Cursed is everyone who does not abide (Deut 27:26)",
+      "type": "figure",
+      "role": "curse",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.who-hindered-you-from-obeying-the-truth--e221ef2e",
+      "name": "Who hindered you from obeying the truth?",
+      "type": "figure",
+      "role": "challenge",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.work-of-the-flesh-impurity--168ac38d",
+      "name": "Work of the flesh: Impurity",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.work-of-the-flesh-rivalries--d0846a31",
+      "name": "Work of the flesh: Rivalries",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.become-as-i-am-you-did-me-no-wrong--2fa0d877",
+      "name": "Become as I am; you did me no wrong",
+      "type": "figure",
+      "role": "appeal",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.work-of-the-flesh-fits-of-anger--1e6d1769",
+      "name": "Work of the flesh: Fits Of Anger",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.observing-days-months-seasons-years--d50ca8e9",
+      "name": "Observing days, months, seasons, years",
+      "type": "figure",
+      "role": "calendar",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.marks-stigmata-of-jesus--c5834b1a",
+      "name": "Marks (stigmata) of Jesus",
+      "type": "figure",
+      "role": "marks",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.no-jew-greek-slave-free-male-female--cfe4b46d",
+      "name": "No Jew/Greek, slave/free, male/female",
+      "type": "figure",
+      "role": "unity",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.work-of-the-flesh-sorcery--a343a415",
+      "name": "Work of the flesh: Sorcery",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.received-the-spirit-by-hearing-with-faith--8e3114af",
+      "name": "Received the Spirit by hearing with faith?",
+      "type": "figure",
+      "role": "contrast",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.jerusalem-above-is-free--14a2631f",
+      "name": "Jerusalem above is free",
+      "type": "figure",
+      "role": "allegory",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.fourteen-years-later-to-jerusalem-with-barnabas-and-titus--51656124",
+      "name": "Fourteen years later to Jerusalem with Barnabas and Titus",
+      "type": "figure",
+      "role": "chronology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.cast-out-the-slave-woman--48f12e6e",
+      "name": "Cast out the slave woman",
+      "type": "figure",
+      "role": "command",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.keep-in-step-with-the-spirit-stoicheo--3d1b617b",
+      "name": "Keep in step with the Spirit (stoicheo)",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.crucified-with-christ-christ-lives-in-me--73578feb",
+      "name": "Crucified with Christ; Christ lives in me",
+      "type": "figure",
+      "role": "union",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.christ-became-a-curse-tree-deut-21-23--3eab8c3e",
+      "name": "Christ became a curse—tree (Deut 21:23)",
+      "type": "figure",
+      "role": "atonement",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-gal-4-25-punctuation--39e438ee",
+      "name": "Textual note: Gal 4:25 punctuation",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.mediator-and-angels-language--4c71eead",
+      "name": "Mediator and angels language",
+      "type": "figure",
+      "role": "mediation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.fruit-of-the-spirit-peace--abd993c4",
+      "name": "Fruit of the Spirit: Peace",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.fruit-of-the-spirit-list--1be3a0f0",
+      "name": "Fruit of the Spirit (list)",
+      "type": "figure",
+      "role": "virtue-list",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.works-of-the-flesh-list--af7cdfea",
+      "name": "Works of the flesh (list)",
+      "type": "figure",
+      "role": "vice-list",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.fruit-of-the-spirit-faithfulness--34e4f105",
+      "name": "Fruit of the Spirit: Faithfulness",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.if-i-still-preach-circumcision--9f291784",
+      "name": "If I still preach circumcision...",
+      "type": "figure",
+      "role": "controversy",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.syria-and-cilicia--7450edf3",
+      "name": "Syria and Cilicia",
+      "type": "entity",
+      "role": "region",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.antioch-syria--329754ba",
+      "name": "Antioch (Syria)",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.jerusalem-above--bd9f8f42",
+      "name": "Jerusalem above",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.mount-sinai--206c3bd1",
+      "name": "Mount Sinai",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.jerusalem-present--9cee6ab5",
+      "name": "Jerusalem (present)",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.damascus--d97e6261",
+      "name": "Damascus",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Acts 1:8 program",
+  "type": "figure",
+  "category": "program",
+  "references": [
+    "Acts 1:8"
+  ],
+  "blurb": "Geographical outline: Jerusalem → Judea/Samaria → ends of the earth.",
+  "aka": [],
+  "id": "f.acts-1-8-program--e7511bbc",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      1
+    ]
+  }
+}

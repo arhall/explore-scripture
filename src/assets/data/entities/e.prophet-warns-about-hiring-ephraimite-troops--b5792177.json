@@ -1,0 +1,18 @@
+{
+  "name": "Prophet warns about hiring Ephraimite troops",
+  "type": "entity",
+  "references": [
+    "2 Chronicles 25:7–10"
+  ],
+  "blurb": "Holiness trumps manpower; obedience saves both money and lives.",
+  "category": "prophetic",
+  "id": "e.prophet-warns-about-hiring-ephraimite-troops--b5792177",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "2 Chronicles": [
+      25
+    ]
+  }
+}

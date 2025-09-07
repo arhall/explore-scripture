@@ -1,0 +1,27 @@
+{
+  "name": "Dedan",
+  "type": "person",
+  "references": [
+    "Genesis 25:3–4"
+  ],
+  "blurb": "Descendant of Jokshan; branch of Abraham’s Keturah-line.",
+  "relations": {
+    "parents": [
+      "Jokshan"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "Jeremiah 25:23",
+    "Ezekiel 27:20"
+  ],
+  "id": "p.dedan.gene-25-3-4--24af1b4a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      25
+    ]
+  }
+}

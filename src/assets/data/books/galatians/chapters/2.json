@@ -1,0 +1,77 @@
+{
+  "book": "Galatians",
+  "chapter": 2,
+  "entity_count": 27,
+  "entities": [
+    {
+      "id": "e.jerusalem--d3a5bc90",
+      "name": "Jerusalem",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 7
+    },
+    {
+      "id": "f.prosopography-index--a2064234",
+      "name": "Prosopography (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.titus-not-compelled-to-be-circumcised--77c93366",
+      "name": "Titus not compelled to be circumcised",
+      "type": "figure",
+      "role": "test-case",
+      "refs_count": 1
+    },
+    {
+      "id": "g.false-brothers-slipped-in--6442b191",
+      "name": "False brothers slipped in",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1
+    },
+    {
+      "id": "f.not-justified-by-works-of-the-law--f13b505f",
+      "name": "Not justified by works of the law",
+      "type": "figure",
+      "role": "justification",
+      "refs_count": 1
+    },
+    {
+      "id": "p.even-barnabas-led-astray--0b17b517",
+      "name": "Even Barnabas led astray",
+      "type": "person",
+      "role": "conflict",
+      "refs_count": 1
+    },
+    {
+      "id": "e.antioch-syria--329754ba",
+      "name": "Antioch (Syria)",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 5
+    },
+    {
+      "id": "f.textual-note-gal-2-20-reading--5172cf16",
+      "name": "Textual note: Gal 2:20 reading",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1
+    },
+    {
+      "id": "g.circumcision-party--bf245fcf",
+      "name": "Circumcision party",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 2
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    }
+  ]
+}

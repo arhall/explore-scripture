@@ -1,0 +1,21 @@
+{
+  "name": "Red Heifer purification (Parah Adumah)",
+  "type": "entity",
+  "references": [
+    "Numbers 19"
+  ],
+  "blurb": "Ashes mixed with water cleanse impurity from death—symbol of cleansing beyond reach.",
+  "category": "ritual",
+  "cross_references": [
+    "Hebrews 9:13–14"
+  ],
+  "id": "e.red-heifer-purification.parah-adumah--53f9d5da",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      19
+    ]
+  }
+}

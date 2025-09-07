@@ -1,0 +1,15 @@
+{
+  "name": "city to come",
+  "type": "entity",
+  "category": "eschatology",
+  "references": [
+    "Heb 13:14"
+  ],
+  "aka": [],
+  "id": "e.city-to-come--8dfff870",
+  "book_references": {
+    "Hebrews": [
+      13
+    ]
+  }
+}

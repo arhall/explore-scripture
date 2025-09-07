@@ -1,0 +1,77 @@
+{
+  "book": "Revelation",
+  "chapter": 4,
+  "entity_count": 17,
+  "entities": [
+    {
+      "id": "e.sea-of-glass--bfd4f92a",
+      "name": "sea of glass",
+      "type": "entity",
+      "role": "heavenly",
+      "refs_count": 2
+    },
+    {
+      "id": "e.seven-spirits-of-god--92b1e027",
+      "name": "seven spirits of God",
+      "type": "entity",
+      "role": "heavenly",
+      "refs_count": 2
+    },
+    {
+      "id": "e.throne--bb671643",
+      "name": "throne",
+      "type": "entity",
+      "role": "heavenly",
+      "refs_count": 2
+    },
+    {
+      "id": "g.twenty-four-elders--6b637ff3",
+      "name": "twenty-four elders",
+      "type": "group",
+      "role": "heavenly",
+      "refs_count": 2
+    },
+    {
+      "id": "e.scroll-sealed-with-seven-seals--b4c717c9",
+      "name": "scroll sealed with seven seals",
+      "type": "entity",
+      "role": "heavenly",
+      "refs_count": 2
+    },
+    {
+      "id": "g.four-living-creatures--808a85cf",
+      "name": "four living creatures",
+      "type": "group",
+      "role": "heavenly",
+      "refs_count": 2
+    },
+    {
+      "id": "f.rainbow-around-the-throne--18555ca2",
+      "name": "rainbow around the throne",
+      "type": "figure",
+      "role": "vision-token",
+      "refs_count": 1
+    },
+    {
+      "id": "f.heptad-index--733a558f",
+      "name": "Heptad index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.numeric-symbolism-index--20cda2ea",
+      "name": "Numeric symbolism index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.worthy-are-you-our-lord-and-god-to-receive-glory-and-honor-and-power--2143a56b",
+      "name": "Worthy are you, our Lord and God, to receive glory and honor and power",
+      "type": "figure",
+      "role": "hymn",
+      "refs_count": 1
+    }
+  ]
+}

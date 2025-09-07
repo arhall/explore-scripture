@@ -1,0 +1,24 @@
+{
+  "name": "YHWH (the LORD)",
+  "type": "divine",
+  "references": [
+    "Jonah 1–4"
+  ],
+  "blurb": "Divine protagonist who appoints wind, storm, fish, plant, worm, and wind; relents from disaster and catechizes the prophet in compassion.",
+  "id": "d.yhwh--376a912b",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "d.yhwh-the-lord--2a9e6cb4",
+    "d.yhwh-the-lord--68545cab"
+  ],
+  "book_references": {
+    "Jonah": [
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+}

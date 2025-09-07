@@ -1,0 +1,18 @@
+{
+  "id": "e.fig-tree--9d45ae32",
+  "name": "Fig tree",
+  "type": "entity",
+  "references": [
+    "Hab 3:17"
+  ],
+  "category": "agrarian",
+  "blurb": "Staple of prosperity; its failure dramatizes total economic collapse.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      3
+    ]
+  }
+}

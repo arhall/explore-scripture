@@ -1,0 +1,42 @@
+{
+  "book": "Mark",
+  "chapter": 13,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "g.chief-priests--dbda0b67",
+      "name": "Chief Priests",
+      "type": "group",
+      "role": "leadership",
+      "refs_count": 2
+    },
+    {
+      "id": "f.stay-awake-watchfulness--dc2886e4",
+      "name": "Stay awake (watchfulness)",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "e.little-apocalypse-olivet-discourse--7995cc93",
+      "name": "Little Apocalypse (Olivet Discourse)",
+      "type": "entity",
+      "role": "discourse",
+      "refs_count": 1
+    },
+    {
+      "id": "f.fig-tree-lesson-watchfulness--42e121f0",
+      "name": "Fig tree lesson (watchfulness)",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1
+    }
+  ]
+}

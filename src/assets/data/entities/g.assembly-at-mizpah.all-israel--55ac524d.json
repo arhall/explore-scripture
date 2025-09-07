@@ -1,0 +1,18 @@
+{
+  "name": "Assembly at Mizpah (all Israel)",
+  "type": "group",
+  "references": [
+    "Judges 20:1–11"
+  ],
+  "blurb": "National council that demands justice; rash vows and near-genocide reveal zeal without wisdom.",
+  "category": "narrative",
+  "id": "g.assembly-at-mizpah.all-israel--55ac524d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      20
+    ]
+  }
+}

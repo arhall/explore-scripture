@@ -1,0 +1,19 @@
+{
+  "name": "Chedorlaomer king of Elam",
+  "type": "title",
+  "references": [
+    "Genesis 14"
+  ],
+  "blurb": "Chedorlaomer king of Elam participates in the Genesis 14 coalition war. The episode frames Abraham as rescuer, not aggressor, and sets up his encounter with Melchizedek.",
+  "category": "narrative",
+  "cross_references": [],
+  "id": "t.chedorlaomer-king-of-elam.gene-14--5e151529",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      14
+    ]
+  }
+}

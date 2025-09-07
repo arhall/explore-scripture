@@ -1,0 +1,21 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 6,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "p.solomon.chronicles-focus--6c5c003a",
+      "name": "Solomon (Chronicles focus)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.solomons-dedication-prayer--eac28c3d",
+      "name": "Solomon’s dedication prayer",
+      "type": "entity",
+      "role": "poetry",
+      "refs_count": 1
+    }
+  ]
+}

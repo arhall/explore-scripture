@@ -1,0 +1,28 @@
+{
+  "book": "Jeremiah",
+  "chapter": 39,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "p.gedaliah-son-of-ahikam.governor--4bdc837f",
+      "name": "Gedaliah son of Ahikam (governor)",
+      "type": "person",
+      "role": "governor",
+      "refs_count": 1
+    },
+    {
+      "id": "p.nebuzaradan.captain-of-the-guard--2229c5be",
+      "name": "Nebuzaradan (captain of the guard)",
+      "type": "person",
+      "role": "official",
+      "refs_count": 1
+    },
+    {
+      "id": "g.babylonian-princes-at-jerusalems-fall--f6840711",
+      "name": "Babylonian princes at Jerusalem’s fall",
+      "type": "group",
+      "role": "officials",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Sons of Azgad: Johanan son of Hakkatan, 110 men",
+  "type": "group",
+  "references": [
+    "Ezra 8:12"
+  ],
+  "blurb": "Heads of families in Ezra’s later return; numbers reflect adult males mustered for the journey and covenant renewal.",
+  "category": "record",
+  "count": 110,
+  "count_note": "Count per Ezra 8:12",
+  "id": "g.sons-of-azgad-johanan-son-of-hakkatan-110-men--b924124d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      8
+    ]
+  }
+}

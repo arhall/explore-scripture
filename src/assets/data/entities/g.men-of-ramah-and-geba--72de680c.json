@@ -1,0 +1,20 @@
+{
+  "name": "Men of Ramah and Geba",
+  "type": "group",
+  "references": [
+    "Ezra 2:26"
+  ],
+  "blurb": "Enumerated among the first returnees under Zerubbabel; their counted men totaled 621. Family identity stabilizes land claims and synagogue-era communities; numbers witness to costly obedience.",
+  "category": "record",
+  "count": 621,
+  "count_note": "Count per Ezra 2:26",
+  "id": "g.men-of-ramah-and-geba--72de680c",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      2
+    ]
+  }
+}

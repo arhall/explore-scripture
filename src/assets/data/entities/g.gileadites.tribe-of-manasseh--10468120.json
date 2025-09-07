@@ -1,0 +1,18 @@
+{
+  "name": "Gileadites (tribe of Manasseh)",
+  "type": "group",
+  "references": [
+    "Numbers 26"
+  ],
+  "blurb": "Clan of Manasseh counted in the second census.",
+  "category": "genealogy",
+  "id": "g.gileadites.tribe-of-manasseh--10468120",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      26
+    ]
+  }
+}

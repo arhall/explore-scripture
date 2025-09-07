@@ -1,0 +1,18 @@
+{
+  "name": "Joah son of Asaph (recorder)",
+  "type": "person",
+  "references": [
+    "Isaiah 36:3,22"
+  ],
+  "blurb": "Court recorder in the Hezekian delegation to the wall; a witness to Rabshakeh’s propaganda.",
+  "category": "official",
+  "id": "p.joah-son-of-asaph.recorder--837c88fc",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Isaiah": [
+      36
+    ]
+  }
+}

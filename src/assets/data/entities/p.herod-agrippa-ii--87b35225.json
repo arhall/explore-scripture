@@ -1,0 +1,25 @@
+{
+  "name": "Herod Agrippa II",
+  "type": "person",
+  "category": "king",
+  "references": [
+    "Acts 25:13",
+    "Acts 26:27–32"
+  ],
+  "aka": [],
+  "id": "p.herod-agrippa-ii--87b35225",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      25,
+      26
+    ]
+  }
+}

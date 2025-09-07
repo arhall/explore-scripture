@@ -1,0 +1,18 @@
+{
+  "id": "e.stubble--0d9bfb67",
+  "name": "Stubble",
+  "type": "entity",
+  "references": [
+    "Mal 4:1"
+  ],
+  "category": "judgment-image",
+  "blurb": "Dry, flammable residue signifying the fate of the arrogant.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      4
+    ]
+  }
+}

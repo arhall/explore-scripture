@@ -1,0 +1,18 @@
+{
+  "name": "Abidan son of Gideoni (Benjamin)",
+  "type": "person",
+  "references": [
+    "Numbers 1:11; 2:22; 7:60"
+  ],
+  "blurb": "Leader of Benjamin; under the west standard.",
+  "category": "genealogy",
+  "id": "p.abidan-son-of-gideoni.benjamin--066f5489",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      1
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Bread of the Presence",
+  "type": "entity",
+  "references": [
+    "Leviticus 24:5–9",
+    "Heb 9:1-5"
+  ],
+  "blurb": "Twelve loaves set weekly before God—covenant table fellowship; priests eat the holy bread.",
+  "category": "ritual",
+  "cross_references": [
+    "Exodus 25–30"
+  ],
+  "id": "e.bread-of-the-presence--74efe08b",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Leviticus": [
+      24
+    ],
+    "Hebrews": [
+      9
+    ]
+  }
+}

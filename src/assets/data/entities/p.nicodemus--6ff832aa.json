@@ -1,0 +1,38 @@
+{
+  "name": "Nicodemus",
+  "type": "person",
+  "category": "interlocutor",
+  "references": [
+    "John 3:1–21",
+    "John 7:50–52",
+    "John 19:39"
+  ],
+  "greek_terms": [
+    {
+      "term": "ἄνωθεν",
+      "gloss": "from above/again"
+    },
+    {
+      "term": "γεννηθῇ ἄνωθεν",
+      "gloss": "be born from above"
+    }
+  ],
+  "blurb": "Ruler who comes by night; later defends procedure and aids in burial.",
+  "aka": [],
+  "id": "p.nicodemus--6ff832aa",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      3,
+      7,
+      19
+    ]
+  }
+}

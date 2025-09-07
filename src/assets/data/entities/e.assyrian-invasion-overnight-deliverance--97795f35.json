@@ -1,0 +1,19 @@
+{
+  "name": "Assyrian invasion & overnight deliverance",
+  "type": "entity",
+  "references": [
+    "Isaiah 36–37"
+  ],
+  "blurb": "Rabshakeh’s propaganda collapses before prayer; the angel strikes the camp—trust outlasts terror.",
+  "category": "deliverance",
+  "id": "e.assyrian-invasion-overnight-deliverance--97795f35",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Isaiah": [
+      36,
+      37
+    ]
+  }
+}

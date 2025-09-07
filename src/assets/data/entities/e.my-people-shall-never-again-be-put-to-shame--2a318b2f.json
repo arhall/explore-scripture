@@ -1,0 +1,18 @@
+{
+  "name": "My people shall never again be put to shame",
+  "type": "entity",
+  "references": [
+    "Joel 2:26–27"
+  ],
+  "blurb": "Reputation repaired; knowledge of God relocates identity.",
+  "category": "restoration",
+  "id": "e.my-people-shall-never-again-be-put-to-shame--2a318b2f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      2
+    ]
+  }
+}

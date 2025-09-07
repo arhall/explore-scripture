@@ -1,0 +1,18 @@
+{
+  "name": "Sisera (commander of Jabin)",
+  "type": "title",
+  "references": [
+    "Judges 4:2–3,13–22"
+  ],
+  "blurb": "Chariot commander whose iron advantage is neutralized by divine storm; his downfall critiques militarized oppression.",
+  "category": "narrative",
+  "id": "t.sisera.commander-of-jabin--dd8bef53",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      4
+    ]
+  }
+}

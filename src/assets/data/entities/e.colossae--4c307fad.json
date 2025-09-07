@@ -1,0 +1,25 @@
+{
+  "name": "Colossae",
+  "type": "entity",
+  "category": "city",
+  "references": [
+    "Col 1:2",
+    "Col 1:7"
+  ],
+  "aka": [],
+  "id": "e.colossae--4c307fad",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "cross_references": [
+    "Philem address context"
+  ],
+  "book_references": {
+    "Colossians": [
+      1
+    ]
+  }
+}

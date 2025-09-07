@@ -1,0 +1,30 @@
+{
+  "name": "Arphaxad",
+  "type": "person",
+  "references": [
+    "Genesis 10:22–24"
+  ],
+  "blurb": "Son of Shem; ancestor of Eber through Shelah.",
+  "relations": {
+    "parents": [
+      "Shem"
+    ],
+    "children": [
+      "Shelah"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.arphaxad.gene-10-22-24--75626577",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "p.arphaxad.gene-11-12-13--80d0b1b9"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

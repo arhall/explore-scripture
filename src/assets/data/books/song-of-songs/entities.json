@@ -1,0 +1,393 @@
+{
+  "book": "Song of Songs",
+  "slug": "song-of-songs",
+  "entity_count": 28,
+  "key_figures": [
+    {
+      "id": "p.the-beloved.shulammite-woman--13ff7712",
+      "name": "The Beloved (Shulammite woman)",
+      "type": "person",
+      "role": "character",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.the-lover-bridegroom.male--1b5f1d5d",
+      "name": "The Lover / Bridegroom",
+      "type": "person",
+      "role": "character",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.solomon.son-of-david--c76a3c48",
+      "name": "Solomon (son of David)",
+      "type": "person",
+      "role": "royal",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "e.song-of-songs.which-is-solomons--7814b94f",
+      "name": "Song of Songs (which is Solomon’s)",
+      "type": "entity",
+      "role": "editorial",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.daughters-of-jerusalem.chorus--e88ed0a7",
+      "name": "Daughters of Jerusalem (chorus)",
+      "type": "group",
+      "role": "chorus",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.brothers-of-the-beloved--f8c3c9dc",
+      "name": "Brothers of the Beloved",
+      "type": "group",
+      "role": "family",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.watchmen-of-the-city--83561a20",
+      "name": "Watchmen of the city",
+      "type": "group",
+      "role": "civic",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.companions-friends-of-the-bridegroom--3fddac10",
+      "name": "Companions/friends of the bridegroom",
+      "type": "group",
+      "role": "chorus",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.animals-of-desire-and-danger--44a833ad",
+      "name": "Animals of desire and danger",
+      "type": "group",
+      "role": "imagery",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.fragrance-oils-spices--cd384092",
+      "name": "Fragrance, oils, spices",
+      "type": "group",
+      "role": "imagery",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.place-names-landscapes.en-gedi-sharon-tirzah-jerusalem-lebanon-hermon-amana-senir--134e9b1d",
+      "name": "Place-names & landscapes (En-gedi, Sharon, Tirzah, Jerusalem, Lebanon, Hermon, Amana, Senir)",
+      "type": "group",
+      "role": "place",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "e.mothers-house-maternal-figures--011e9b3e",
+      "name": "Mother’s house & maternal figures",
+      "type": "entity",
+      "role": "family",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.garden-locked-a-spring-sealed--9ce0206a",
+      "name": "Garden locked, a spring sealed",
+      "type": "entity",
+      "role": "motif",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.vineyard-imagery.own-vineyard-vs-solomons--175cdbf9",
+      "name": "Vineyard imagery (own vineyard vs Solomon’s)",
+      "type": "entity",
+      "role": "motif",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.body-metaphors-of-beauty--c50f470e",
+      "name": "Body metaphors of beauty",
+      "type": "entity",
+      "role": "imagery",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.season-of-singing.springtime--e4cbd27a",
+      "name": "Season of singing (springtime)",
+      "type": "entity",
+      "role": "season",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.architecture-towers.heshbon-damascus--c5006cf5",
+      "name": "Architecture & towers (Heshbon, Damascus)",
+      "type": "entity",
+      "role": "imagery",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.city-by-night.search-scenes--d2b371d1",
+      "name": "City by night (search scenes)",
+      "type": "entity",
+      "role": "motif",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.wedding-day-palanquin--f9135e58",
+      "name": "Wedding day & palanquin",
+      "type": "entity",
+      "role": "wedding",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.covenantal-love-strong-as-death--78b0a609",
+      "name": "Covenantal love: strong as death",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "p.the-beloved.shulammite-woman--13ff7712",
+      "name": "The Beloved (Shulammite woman)",
+      "type": "person",
+      "role": "character",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.the-lover-bridegroom.male--1b5f1d5d",
+      "name": "The Lover / Bridegroom",
+      "type": "person",
+      "role": "character",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.solomon.son-of-david--c76a3c48",
+      "name": "Solomon (son of David)",
+      "type": "person",
+      "role": "royal",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "e.song-of-songs.which-is-solomons--7814b94f",
+      "name": "Song of Songs (which is Solomon’s)",
+      "type": "entity",
+      "role": "editorial",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.daughters-of-jerusalem.chorus--e88ed0a7",
+      "name": "Daughters of Jerusalem (chorus)",
+      "type": "group",
+      "role": "chorus",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.brothers-of-the-beloved--f8c3c9dc",
+      "name": "Brothers of the Beloved",
+      "type": "group",
+      "role": "family",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.watchmen-of-the-city--83561a20",
+      "name": "Watchmen of the city",
+      "type": "group",
+      "role": "civic",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.companions-friends-of-the-bridegroom--3fddac10",
+      "name": "Companions/friends of the bridegroom",
+      "type": "group",
+      "role": "chorus",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.animals-of-desire-and-danger--44a833ad",
+      "name": "Animals of desire and danger",
+      "type": "group",
+      "role": "imagery",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.fragrance-oils-spices--cd384092",
+      "name": "Fragrance, oils, spices",
+      "type": "group",
+      "role": "imagery",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.place-names-landscapes.en-gedi-sharon-tirzah-jerusalem-lebanon-hermon-amana-senir--134e9b1d",
+      "name": "Place-names & landscapes (En-gedi, Sharon, Tirzah, Jerusalem, Lebanon, Hermon, Amana, Senir)",
+      "type": "group",
+      "role": "place",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "e.mothers-house-maternal-figures--011e9b3e",
+      "name": "Mother’s house & maternal figures",
+      "type": "entity",
+      "role": "family",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.garden-locked-a-spring-sealed--9ce0206a",
+      "name": "Garden locked, a spring sealed",
+      "type": "entity",
+      "role": "motif",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.vineyard-imagery.own-vineyard-vs-solomons--175cdbf9",
+      "name": "Vineyard imagery (own vineyard vs Solomon’s)",
+      "type": "entity",
+      "role": "motif",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.body-metaphors-of-beauty--c50f470e",
+      "name": "Body metaphors of beauty",
+      "type": "entity",
+      "role": "imagery",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.season-of-singing.springtime--e4cbd27a",
+      "name": "Season of singing (springtime)",
+      "type": "entity",
+      "role": "season",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.architecture-towers.heshbon-damascus--c5006cf5",
+      "name": "Architecture & towers (Heshbon, Damascus)",
+      "type": "entity",
+      "role": "imagery",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.city-by-night.search-scenes--d2b371d1",
+      "name": "City by night (search scenes)",
+      "type": "entity",
+      "role": "motif",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.wedding-day-palanquin--f9135e58",
+      "name": "Wedding day & palanquin",
+      "type": "entity",
+      "role": "wedding",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.covenantal-love-strong-as-death--78b0a609",
+      "name": "Covenantal love: strong as death",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.mutuality-and-consent--4bf2b29f",
+      "name": "Mutuality and consent",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.do-not-awaken-love-until-it-pleases.refrain--80a274e4",
+      "name": "Do not awaken love until it pleases (refrain)",
+      "type": "entity",
+      "role": "wisdom",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.canonical-typological-horizons--0dd4dfd2",
+      "name": "Canonical/typological horizons",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.your-love-is-better-than-wine--0dac6ce6",
+      "name": "‘Your love is better than wine’",
+      "type": "entity",
+      "role": "poetry",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.catch-for-us-the-foxes--3357e992",
+      "name": "‘Catch for us the foxes’",
+      "type": "entity",
+      "role": "wisdom",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.my-beloved-is-mine-and-i-am-his--7fa577b8",
+      "name": "‘My beloved is mine, and I am his’",
+      "type": "entity",
+      "role": "covenant",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.who-is-this-coming-up-from-the-wilderness--6c074f3b",
+      "name": "‘Who is this coming up from the wilderness’",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.turn-turn-o-shulammite--b5be4cd7",
+      "name": "‘Turn, turn, O Shulammite’",
+      "type": "entity",
+      "role": "poetry",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

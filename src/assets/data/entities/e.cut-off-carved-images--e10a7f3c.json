@@ -1,0 +1,18 @@
+{
+  "id": "e.cut-off-carved-images--e10a7f3c",
+  "name": "Cut off carved images",
+  "type": "entity",
+  "references": [
+    "Micah 5:10–15"
+  ],
+  "category": "purge-note",
+  "blurb": "Tangible idols removed—art re-purposed to truth.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      5
+    ]
+  }
+}

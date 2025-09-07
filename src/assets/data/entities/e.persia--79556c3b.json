@@ -1,0 +1,18 @@
+{
+  "name": "Persia (Parsu)",
+  "type": "entity",
+  "references": [
+    "Ezekiel 27:10; 38:5"
+  ],
+  "blurb": "Persians appear both as Tyrian mercenaries and Gog’s allies.",
+  "category": "nation",
+  "id": "e.persia--79556c3b",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      27
+    ]
+  }
+}

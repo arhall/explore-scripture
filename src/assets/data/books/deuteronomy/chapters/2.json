@@ -1,0 +1,28 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 2,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "t.sihon-king-of-the-amorites--5e6315d3",
+      "name": "Sihon king of the Amorites",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 2
+    },
+    {
+      "id": "g.people-of-israel--ecedc898",
+      "name": "People of Israel (second generation)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

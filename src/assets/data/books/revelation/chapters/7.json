@@ -1,0 +1,77 @@
+{
+  "book": "Revelation",
+  "chapter": 7,
+  "entity_count": 16,
+  "entities": [
+    {
+      "id": "g.144-000--775ccae6",
+      "name": "144,000",
+      "type": "group",
+      "role": "servants",
+      "refs_count": 1
+    },
+    {
+      "id": "f.heptad-index--733a558f",
+      "name": "Heptad index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "g.four-angels-at-the-four-corners-of-the-earth--48deb634",
+      "name": "four angels at the four corners of the earth",
+      "type": "group",
+      "role": "angelic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.numeric-symbolism-index--20cda2ea",
+      "name": "Numeric symbolism index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.amen-blessing-and-glory-and-wisdom-and-thanksgiving-and-honor-and-power-and-might-be-to-our-god-forever-and-ever-amen--b5ba09f3",
+      "name": "Amen! Blessing and glory and wisdom and thanksgiving and honor and power and might be to our God forever and ever! Amen.",
+      "type": "figure",
+      "role": "hymn",
+      "refs_count": 1
+    },
+    {
+      "id": "f.city-contrast-index-babylon-vs-new-jerusalem--b56140e1",
+      "name": "City contrast index (Babylon vs New Jerusalem)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.sealing-of-144-000--2c277204",
+      "name": "sealing of 144,000",
+      "type": "figure",
+      "role": "seal",
+      "refs_count": 1
+    },
+    {
+      "id": "f.seal-of-the-living-god-on-their-foreheads--5c234a43",
+      "name": "seal of the living God on their foreheads",
+      "type": "figure",
+      "role": "seal",
+      "refs_count": 1
+    },
+    {
+      "id": "g.great-multitude-from-every-nation--2774bbbc",
+      "name": "great multitude from every nation",
+      "type": "group",
+      "role": "redeemed",
+      "refs_count": 1
+    },
+    {
+      "id": "f.angel-index--12fa89a0",
+      "name": "Angel index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    }
+  ]
+}

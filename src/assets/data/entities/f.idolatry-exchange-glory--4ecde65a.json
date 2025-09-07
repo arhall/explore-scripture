@@ -1,0 +1,27 @@
+{
+  "name": "Idolatry exchange (glory)",
+  "type": "figure",
+  "category": "idolatry",
+  "references": [
+    "Rom 1:23"
+  ],
+  "greek_terms": [
+    {
+      "term": "ἤλλαξαν/μετήλλαξαν",
+      "gloss": "exchanged"
+    }
+  ],
+  "aka": [],
+  "id": "f.idolatry-exchange-glory--4ecde65a",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      1
+    ]
+  }
+}

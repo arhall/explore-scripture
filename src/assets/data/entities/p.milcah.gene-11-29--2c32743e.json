@@ -1,0 +1,33 @@
+{
+  "name": "Milcah",
+  "type": "person",
+  "references": [
+    "Genesis 11:29",
+    "Numbers 27:1; 36:11"
+  ],
+  "blurb": "Daughter of Haran; later wife of Nahor (Abram’s brother), anchoring the family line that will lead to Rebekah.",
+  "relations": {
+    "parents": [
+      "Haran"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "Genesis 22:20–23"
+  ],
+  "id": "p.milcah.gene-11-29--2c32743e",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "p.milcah.daughter-of-zelophehad--7a2f02db"
+  ],
+  "book_references": {
+    "Genesis": [
+      11
+    ],
+    "Numbers": [
+      27
+    ]
+  }
+}

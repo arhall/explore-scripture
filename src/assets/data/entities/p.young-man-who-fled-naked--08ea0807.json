@@ -1,0 +1,24 @@
+{
+  "name": "Young man who fled naked",
+  "type": "person",
+  "category": "disciple-tradition",
+  "references": [
+    "Mark 14:51–52"
+  ],
+  "unique_to": "Mark",
+  "aka": [],
+  "id": "p.young-man-who-fled-naked--08ea0807",
+  "source_book": "Mark",
+  "source_books": [
+    "Mark",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Mark": [
+      14
+    ]
+  }
+}

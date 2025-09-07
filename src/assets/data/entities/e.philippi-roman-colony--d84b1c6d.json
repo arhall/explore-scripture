@@ -1,0 +1,33 @@
+{
+  "name": "Philippi (Roman colony)",
+  "type": "entity",
+  "category": "city",
+  "references": [
+    "Acts 16:12"
+  ],
+  "note": "Colonia status; Latin magistrate titles.",
+  "aka": [
+    "Colonia Iulia Augusta Philippensis",
+    "Philippi"
+  ],
+  "id": "e.philippi-roman-colony--d84b1c6d",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "canonicalized_from": [
+    "e.philippi-roman-colony--79ba7793"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "cross_references": [
+    "Phil 1:27"
+  ],
+  "book_references": {
+    "Acts": [
+      16
+    ]
+  }
+}

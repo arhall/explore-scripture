@@ -1,0 +1,18 @@
+{
+  "name": "‘Turn, turn, O Shulammite’",
+  "type": "entity",
+  "references": [
+    "Song 6:13"
+  ],
+  "blurb": "Public gaze on private beauty—dance imagery raises questions of objectification vs celebration; the text leans toward covenant festivity guarded by consent.",
+  "category": "poetry",
+  "id": "e.turn-turn-o-shulammite--b5be4cd7",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Song of Songs": [
+      6
+    ]
+  }
+}

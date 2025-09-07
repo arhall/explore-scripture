@@ -1,0 +1,28 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 3,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "p.solomon.chronicles-focus--6c5c003a",
+      "name": "Solomon (Chronicles focus)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.temple-of-the-lord.house-for-the-name--3d1bbb8a",
+      "name": "Temple of the LORD (house for the Name)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    },
+    {
+      "id": "e.jachin-and-boaz.pillars--b81bb13c",
+      "name": "Jachin and Boaz (pillars)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    }
+  ]
+}

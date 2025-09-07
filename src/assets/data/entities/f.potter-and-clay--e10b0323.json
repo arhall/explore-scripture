@@ -1,0 +1,27 @@
+{
+  "name": "Potter and clay",
+  "type": "figure",
+  "category": "metaphor",
+  "references": [
+    "Rom 9:20–23"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Isa 29:16; Jer 18:6",
+      "type": "allusion"
+    }
+  ],
+  "aka": [],
+  "id": "f.potter-and-clay--e10b0323",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      9
+    ]
+  }
+}

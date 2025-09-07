@@ -1,0 +1,18 @@
+{
+  "name": "Carcas",
+  "type": "person",
+  "references": [
+    "Esther 1:10"
+  ],
+  "blurb": "One of seven eunuchs serving the king during the opening banquet.",
+  "category": "record",
+  "id": "p.carcas--d5569051",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      1
+    ]
+  }
+}

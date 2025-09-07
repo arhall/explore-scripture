@@ -1,0 +1,21 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 25,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "p.amaziah-king-of-judah--35828ba5",
+      "name": "Amaziah king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.prophet-warns-about-hiring-ephraimite-troops--b5792177",
+      "name": "Prophet warns about hiring Ephraimite troops",
+      "type": "entity",
+      "role": "prophetic",
+      "refs_count": 1
+    }
+  ]
+}

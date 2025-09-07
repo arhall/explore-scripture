@@ -1,0 +1,28 @@
+{
+  "name": "Witnesses in John",
+  "type": "figure",
+  "category": "theme",
+  "references": [
+    "John 1:7–8",
+    "John 5:31–39",
+    "John 15:26–27"
+  ],
+  "blurb": "Baptist, works, Scripture, Father, Spirit, and disciples all testify to the Son.",
+  "aka": [],
+  "id": "f.witnesses-in-john--89d2e356",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      1,
+      5,
+      15
+    ]
+  }
+}

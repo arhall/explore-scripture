@@ -1,0 +1,19 @@
+{
+  "name": "Chief Zerah",
+  "type": "title",
+  "references": [
+    "Genesis 36:15–19"
+  ],
+  "blurb": "Edomite clan chief descended from Esau; indicates organized tribal structure prior to Israel’s monarchy.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "t.chief-zerah.gene-36-15-19--80a6b2c6",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

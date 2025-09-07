@@ -1,0 +1,39 @@
+{
+  "name": "Simeon",
+  "type": "person",
+  "references": [
+    "Genesis 29:33; 34; 42:24"
+  ],
+  "blurb": "Instrument of the Shechem retaliation; later detained in Egypt as part of repentance’s test.",
+  "relations": {
+    "parents": [
+      "Jacob (Israel)",
+      "Leah"
+    ],
+    "children": [
+      "Jemuel (Nemuel)",
+      "Jamin",
+      "Ohad",
+      "Jachin",
+      "Zohar (Zerah)",
+      "Shaul (son of a Canaanite woman)"
+    ]
+  },
+  "category": "narrative",
+  "cross_references": [
+    "Genesis 49:5–7"
+  ],
+  "id": "p.simeon.gene-29-33-34-42-24--57ab6c5d",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "p.simeon--25cad96a",
+    "p.simeon.gene-42-24-49-5-7--6b79a16c"
+  ],
+  "book_references": {
+    "Genesis": [
+      29
+    ]
+  }
+}

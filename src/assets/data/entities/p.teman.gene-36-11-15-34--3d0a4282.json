@@ -1,0 +1,22 @@
+{
+  "name": "Teman",
+  "type": "person",
+  "references": [
+    "Genesis 36:11,15,34"
+  ],
+  "blurb": "Son of Eliphaz; eponym of Temanites; famed for wisdom in later texts.",
+  "category": "genealogy",
+  "cross_references": [
+    "Jeremiah 49:7",
+    "Job 2:11"
+  ],
+  "id": "p.teman.gene-36-11-15-34--3d0a4282",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

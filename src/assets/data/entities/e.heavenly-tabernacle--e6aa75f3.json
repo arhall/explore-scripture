@@ -1,0 +1,15 @@
+{
+  "name": "heavenly tabernacle",
+  "type": "entity",
+  "category": "sanctuary",
+  "references": [
+    "Heb 8:1-5"
+  ],
+  "aka": [],
+  "id": "e.heavenly-tabernacle--e6aa75f3",
+  "book_references": {
+    "Hebrews": [
+      8
+    ]
+  }
+}

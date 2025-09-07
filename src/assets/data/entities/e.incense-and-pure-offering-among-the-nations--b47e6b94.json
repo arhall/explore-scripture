@@ -1,0 +1,18 @@
+{
+  "id": "e.incense-and-pure-offering-among-the-nations--b47e6b94",
+  "name": "Incense and pure offering among the nations",
+  "type": "entity",
+  "references": [
+    "Mal 1:11"
+  ],
+  "category": "universal-worship",
+  "blurb": "Universal reverence motif with diverse interpretations (prayer, spiritual sacrifices, eschatological worship).",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      1
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Eliphaz’s second; Bildad’s second; Zophar’s second",
+  "type": "entity",
+  "references": [
+    "Job 15–21"
+  ],
+  "blurb": "Friends double down on retribution; Job observes the prosperity of the wicked and the pain of the innocent.",
+  "category": "wisdom",
+  "id": "e.eliphazs-second-bildads-second-zophars-second--07d81b46",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Job": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ]
+  }
+}

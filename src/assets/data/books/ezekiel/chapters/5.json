@@ -1,0 +1,14 @@
+{
+  "book": "Ezekiel",
+  "chapter": 5,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "e.shaving-hair-and-dividing-thirds--a9e11d50",
+      "name": "Shaving hair and dividing thirds",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1
+    }
+  ]
+}

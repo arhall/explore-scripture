@@ -1,0 +1,28 @@
+{
+  "book": "Exodus",
+  "chapter": 4,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "p.aaron--cc77e332",
+      "name": "Aaron",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 6
+    },
+    {
+      "id": "f.staff-of-moses--71832e74",
+      "name": "Staff of Moses",
+      "type": "figure",
+      "role": "sign",
+      "refs_count": 1
+    }
+  ]
+}

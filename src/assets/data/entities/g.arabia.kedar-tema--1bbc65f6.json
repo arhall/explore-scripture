@@ -1,0 +1,18 @@
+{
+  "name": "Arabia (Kedar, Tema)",
+  "type": "group",
+  "references": [
+    "Isaiah 21:13–17; 42:11"
+  ],
+  "blurb": "Desert tribes in both doom and doxology—judgment and praise ring through the tents.",
+  "category": "nation",
+  "id": "g.arabia.kedar-tema--1bbc65f6",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Isaiah": [
+      21
+    ]
+  }
+}

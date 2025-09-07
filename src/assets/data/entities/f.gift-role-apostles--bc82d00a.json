@@ -1,0 +1,21 @@
+{
+  "name": "Gift role: apostles",
+  "type": "figure",
+  "category": "gift-role",
+  "references": [
+    "Eph 4:11"
+  ],
+  "aka": [],
+  "id": "f.gift-role-apostles--bc82d00a",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      4
+    ]
+  }
+}

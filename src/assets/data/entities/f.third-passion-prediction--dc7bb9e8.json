@@ -1,0 +1,23 @@
+{
+  "name": "Third passion prediction",
+  "type": "figure",
+  "category": "passion-forecast",
+  "references": [
+    "Mark 10:33–34"
+  ],
+  "aka": [],
+  "id": "f.third-passion-prediction--dc7bb9e8",
+  "source_book": "Mark",
+  "source_books": [
+    "Mark",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Mark": [
+      10
+    ]
+  }
+}

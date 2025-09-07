@@ -1,0 +1,77 @@
+{
+  "book": "Galatians",
+  "chapter": 1,
+  "entity_count": 21,
+  "entities": [
+    {
+      "id": "e.jerusalem--d3a5bc90",
+      "name": "Jerusalem",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 7
+    },
+    {
+      "id": "f.unknown-by-face-in-judea-they-glorified-god--b95df6fe",
+      "name": "Unknown by face in Judea; they glorified God",
+      "type": "figure",
+      "role": "report",
+      "refs_count": 1
+    },
+    {
+      "id": "f.prosopography-index--a2064234",
+      "name": "Prosopography (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "e.syria-and-cilicia--7450edf3",
+      "name": "Syria and Cilicia",
+      "type": "entity",
+      "role": "region",
+      "refs_count": 1
+    },
+    {
+      "id": "f.arabia-and-damascus-after-three-years--57503823",
+      "name": "Arabia and Damascus (after three years)",
+      "type": "figure",
+      "role": "chronology",
+      "refs_count": 1
+    },
+    {
+      "id": "f.deliverance-from-the-present-evil-age--bcb4daa1",
+      "name": "Deliverance from the present evil age",
+      "type": "figure",
+      "role": "apocalyptic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.fifteen-days-with-cephas-saw-james--f5d3ad45",
+      "name": "Fifteen days with Cephas; saw James",
+      "type": "figure",
+      "role": "chronology",
+      "refs_count": 1
+    },
+    {
+      "id": "e.arabia--2f413cf0",
+      "name": "Arabia",
+      "type": "entity",
+      "role": "region",
+      "refs_count": 2
+    },
+    {
+      "id": "f.advancement-in-judaism-and-zeal--1ed87c5f",
+      "name": "Advancement in Judaism and zeal",
+      "type": "figure",
+      "role": "autobiography",
+      "refs_count": 1
+    }
+  ]
+}

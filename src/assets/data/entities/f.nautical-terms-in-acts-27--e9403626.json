@@ -1,0 +1,24 @@
+{
+  "name": "Nautical terms in Acts 27",
+  "type": "figure",
+  "category": "nautical",
+  "references": [
+    "Acts 27"
+  ],
+  "blurb": "Soundings, undergirding the ship, anchors, foresail, sandbanks of Syrtis—technical seamanship vocabulary.",
+  "aka": [],
+  "id": "f.nautical-terms-in-acts-27--e9403626",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      27
+    ]
+  }
+}

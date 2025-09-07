@@ -1,0 +1,21 @@
+{
+  "name": "Gospel bears fruit and grows",
+  "type": "figure",
+  "category": "mission",
+  "references": [
+    "Col 1:6"
+  ],
+  "aka": [],
+  "id": "f.gospel-bears-fruit-and-grows--74b252ad",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      1
+    ]
+  }
+}

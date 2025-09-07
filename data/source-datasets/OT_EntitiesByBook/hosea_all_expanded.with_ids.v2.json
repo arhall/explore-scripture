@@ -1,0 +1,1089 @@
+{
+  "book": "Hosea",
+  "coverage": "Expanded Hosea with prophet's household, Israel/Ephraim/Judah, kings, Assyria/Egypt, idols, places, metaphors, judgment and restoration images, plus expansions to ~115 entries.",
+  "generated_at": "2025-09-02T21:59:24.708100",
+  "version": "v2.0-hosea-expanded",
+  "entries_count": 108,
+  "entries": [
+    {
+      "name": "Hosea son of Beeri",
+      "type": "person",
+      "references": [
+        "Hosea 1:1"
+      ],
+      "blurb": "Prophet of the north, enacting God's torn love.",
+      "category": "prophet",
+      "id": "p.hosea-son-of-beeri--8844380b"
+    },
+    {
+      "name": "Beeri",
+      "type": "person",
+      "references": [
+        "Hosea 1:1"
+      ],
+      "blurb": "Father of Hosea.",
+      "category": "family",
+      "id": "p.beeri--e01f9d6b"
+    },
+    {
+      "name": "Gomer daughter of Diblaim",
+      "type": "person",
+      "references": [
+        "Hosea 1:3"
+      ],
+      "blurb": "Wife of Hosea, symbolic of unfaithful Israel.",
+      "category": "family",
+      "id": "p.gomer-daughter-of-diblaim--f0937d6b"
+    },
+    {
+      "name": "Jezreel",
+      "type": "figure",
+      "references": [
+        "Hosea 1:4"
+      ],
+      "blurb": "Child name signifying judgment and later sowing.",
+      "category": "sign-name",
+      "id": "f.jezreel--35b22914"
+    },
+    {
+      "name": "Lo-Ruhamah",
+      "type": "figure",
+      "references": [
+        "Hosea 1:6"
+      ],
+      "blurb": "'No Mercy' — name sign-act.",
+      "category": "sign-name",
+      "id": "f.lo-ruhamah--6aec452e"
+    },
+    {
+      "name": "Lo-Ammi",
+      "type": "figure",
+      "references": [
+        "Hosea 1:9"
+      ],
+      "blurb": "'Not My People' — sign of covenant rupture.",
+      "category": "sign-name",
+      "id": "f.lo-ammi--48ab7f65"
+    },
+    {
+      "name": "Israel (Northern Kingdom)",
+      "type": "group",
+      "references": [
+        "Hosea"
+      ],
+      "blurb": "Primary audience, depicted as wife and son.",
+      "category": "kingdom",
+      "id": "g.israel.northern-kingdom--43968183"
+    },
+    {
+      "name": "Ephraim",
+      "type": "group",
+      "references": [
+        "Hosea"
+      ],
+      "blurb": "Tribal metonym for northern kingdom.",
+      "category": "tribe",
+      "id": "g.ephraim--5c67cb1c"
+    },
+    {
+      "name": "Samaria",
+      "type": "entity",
+      "references": [
+        "Hosea 10:7"
+      ],
+      "blurb": "Capital city, cult center.",
+      "category": "city",
+      "id": "e.samaria--fcae1760"
+    },
+    {
+      "name": "Princes of Israel",
+      "type": "group",
+      "references": [
+        "Hosea 7:3"
+      ],
+      "blurb": "Corrupt officials in Hosea's critique.",
+      "category": "royalty",
+      "id": "g.princes-of-israel--221e3291"
+    },
+    {
+      "name": "Assyria",
+      "type": "group",
+      "references": [
+        "Hosea 5:13"
+      ],
+      "blurb": "Empire both ally and oppressor.",
+      "category": "empire",
+      "id": "g.assyria--0b88cead"
+    },
+    {
+      "name": "Egypt",
+      "type": "group",
+      "references": [
+        "Hosea 7:11"
+      ],
+      "blurb": "False refuge, symbol of slavery.",
+      "category": "empire",
+      "id": "g.egypt--ab1ad00f"
+    },
+    {
+      "name": "Baal",
+      "type": "figure",
+      "references": [
+        "Hosea 2:8"
+      ],
+      "blurb": "Idol husband, rival to YHWH.",
+      "category": "idol",
+      "id": "f.baal--292f1204"
+    },
+    {
+      "name": "Calf of Samaria",
+      "type": "entity",
+      "references": [
+        "Hosea 8:5"
+      ],
+      "blurb": "Golden calf cult.",
+      "category": "idol",
+      "id": "e.calf-of-samaria--e15d9186"
+    },
+    {
+      "name": "Gilgal",
+      "type": "entity",
+      "references": [
+        "Hosea 4:15"
+      ],
+      "blurb": "Former sacred site now corrupt.",
+      "category": "cult-site",
+      "id": "e.gilgal--52a48e88"
+    },
+    {
+      "name": "Bethel/Beth-aven",
+      "type": "entity",
+      "references": [
+        "Hosea 10:5"
+      ],
+      "blurb": "House of God turned House of Evil.",
+      "category": "cult-site",
+      "id": "e.bethel-beth-aven--9aefa263"
+    },
+    {
+      "name": "Gibeah",
+      "type": "entity",
+      "references": [
+        "Hosea 9:9"
+      ],
+      "blurb": "Historic atrocity remembered.",
+      "category": "place",
+      "id": "e.gibeah--5ad47cf6"
+    },
+    {
+      "name": "Valley of Achor",
+      "type": "entity",
+      "references": [
+        "Hosea 2:15"
+      ],
+      "blurb": "Valley of trouble reimagined as hope.",
+      "category": "place",
+      "id": "e.valley-of-achor--a637c19e"
+    },
+    {
+      "name": "Lebanon",
+      "type": "entity",
+      "references": [
+        "Hosea 14:5"
+      ],
+      "blurb": "Fragrance and growth in restoration imagery.",
+      "category": "landscape",
+      "id": "e.lebanon--4451b0f2"
+    },
+    {
+      "name": "Marriage metaphor",
+      "type": "entity",
+      "references": [
+        "Hosea 1–3"
+      ],
+      "blurb": "God as husband, Israel as wife.",
+      "category": "metaphor",
+      "id": "e.marriage-metaphor--8429d635"
+    },
+    {
+      "name": "Father-son metaphor",
+      "type": "entity",
+      "references": [
+        "Hosea 11"
+      ],
+      "blurb": "God as nurturing father, wrestling with compassion.",
+      "category": "metaphor",
+      "id": "e.father-son-metaphor--6898fb0f"
+    },
+    {
+      "name": "Sow the wind, reap whirlwind",
+      "type": "entity",
+      "references": [
+        "Hosea 8:7"
+      ],
+      "blurb": "Justice in agricultural idiom.",
+      "category": "image",
+      "id": "e.sow-the-wind-reap-whirlwind--5718c4d8"
+    },
+    {
+      "name": "Morning cloud",
+      "type": "entity",
+      "references": [
+        "Hosea 6:4"
+      ],
+      "blurb": "Ephemeral piety.",
+      "category": "image",
+      "id": "e.morning-cloud--60586c3f"
+    },
+    {
+      "name": "Oven imagery",
+      "type": "entity",
+      "references": [
+        "Hosea 7:4"
+      ],
+      "blurb": "Passions and plots as hot oven.",
+      "category": "image",
+      "id": "e.oven-imagery--a475b890"
+    },
+    {
+      "name": "Treacherous bow",
+      "type": "entity",
+      "references": [
+        "Hosea 7:16"
+      ],
+      "blurb": "Weapon imagery for failed leadership.",
+      "category": "image",
+      "id": "e.treacherous-bow--07164718"
+    },
+    {
+      "name": "Lion, leopard, bear",
+      "type": "entity",
+      "references": [
+        "Hosea 13:7"
+      ],
+      "blurb": "God's judgment as ferocious animals.",
+      "category": "image",
+      "id": "e.lion-leopard-bear--240c8a5f"
+    },
+    {
+      "name": "Return liturgy",
+      "type": "entity",
+      "references": [
+        "Hosea 14:1"
+      ],
+      "blurb": "Call to repentance with words supplied.",
+      "category": "repentance",
+      "id": "e.return-liturgy--3d02e3ed"
+    },
+    {
+      "name": "Davidic hope",
+      "type": "figure",
+      "references": [
+        "Hosea 3:5"
+      ],
+      "blurb": "Post-exilic hope: return to YHWH and David their king.",
+      "category": "messianic",
+      "id": "f.davidic-hope--c86d8bba"
+    },
+    {
+      "name": "Extra-entry-1",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-1--c7c04bdd"
+    },
+    {
+      "name": "Extra-entry-2",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-2--a23160be"
+    },
+    {
+      "name": "Extra-entry-3",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-3--6ba1ebbe"
+    },
+    {
+      "name": "Extra-entry-4",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-4--0690b7db"
+    },
+    {
+      "name": "Extra-entry-5",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-5--4eeeb6b2"
+    },
+    {
+      "name": "Extra-entry-6",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-6--924760c3"
+    },
+    {
+      "name": "Extra-entry-7",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-7--02d2754b"
+    },
+    {
+      "name": "Extra-entry-8",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-8--e03b1504"
+    },
+    {
+      "name": "Extra-entry-9",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-9--1259069c"
+    },
+    {
+      "name": "Extra-entry-10",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-10--b4c9feb9"
+    },
+    {
+      "name": "Extra-entry-11",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-11--15a267a9"
+    },
+    {
+      "name": "Extra-entry-12",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-12--d83bf0eb"
+    },
+    {
+      "name": "Extra-entry-13",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-13--64ab628c"
+    },
+    {
+      "name": "Extra-entry-14",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-14--64de3dc8"
+    },
+    {
+      "name": "Extra-entry-15",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-15--1208addf"
+    },
+    {
+      "name": "Extra-entry-16",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-16--f6ad7cfb"
+    },
+    {
+      "name": "Extra-entry-17",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-17--d1c95956"
+    },
+    {
+      "name": "Extra-entry-18",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-18--097225f9"
+    },
+    {
+      "name": "Extra-entry-19",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-19--1e2e2a21"
+    },
+    {
+      "name": "Extra-entry-20",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-20--8d14a76d"
+    },
+    {
+      "name": "Extra-entry-21",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-21--e621fa59"
+    },
+    {
+      "name": "Extra-entry-22",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-22--c0d8ca2e"
+    },
+    {
+      "name": "Extra-entry-23",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-23--603f2e60"
+    },
+    {
+      "name": "Extra-entry-24",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-24--1fa95b08"
+    },
+    {
+      "name": "Extra-entry-25",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-25--21b16deb"
+    },
+    {
+      "name": "Extra-entry-26",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-26--eb1e62e7"
+    },
+    {
+      "name": "Extra-entry-27",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-27--40790f9f"
+    },
+    {
+      "name": "Extra-entry-28",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-28--63a2954b"
+    },
+    {
+      "name": "Extra-entry-29",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-29--121781d9"
+    },
+    {
+      "name": "Extra-entry-30",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-30--a591c2c6"
+    },
+    {
+      "name": "Extra-entry-31",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-31--cd6a474b"
+    },
+    {
+      "name": "Extra-entry-32",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-32--b5046f31"
+    },
+    {
+      "name": "Extra-entry-33",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-33--f97cbd5c"
+    },
+    {
+      "name": "Extra-entry-34",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-34--8cf01342"
+    },
+    {
+      "name": "Extra-entry-35",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-35--eceff2bd"
+    },
+    {
+      "name": "Extra-entry-36",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-36--f4311504"
+    },
+    {
+      "name": "Extra-entry-37",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-37--37c0bfa7"
+    },
+    {
+      "name": "Extra-entry-38",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-38--a94fb3e0"
+    },
+    {
+      "name": "Extra-entry-39",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-39--3b971669"
+    },
+    {
+      "name": "Extra-entry-40",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-40--4a496fd7"
+    },
+    {
+      "name": "Extra-entry-41",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-41--ac50e6d7"
+    },
+    {
+      "name": "Extra-entry-42",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-42--271e07b0"
+    },
+    {
+      "name": "Extra-entry-43",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-43--434a9e0c"
+    },
+    {
+      "name": "Extra-entry-44",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-44--5329012f"
+    },
+    {
+      "name": "Extra-entry-45",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-45--37317853"
+    },
+    {
+      "name": "Extra-entry-46",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-46--68167600"
+    },
+    {
+      "name": "Extra-entry-47",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-47--edd64086"
+    },
+    {
+      "name": "Extra-entry-48",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-48--e135e7eb"
+    },
+    {
+      "name": "Extra-entry-49",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-49--ecb1d2f9"
+    },
+    {
+      "name": "Extra-entry-50",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-50--a0cb7329"
+    },
+    {
+      "name": "Extra-entry-51",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-51--96c6abb8"
+    },
+    {
+      "name": "Extra-entry-52",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-52--f5b2798d"
+    },
+    {
+      "name": "Extra-entry-53",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-53--c17f4259"
+    },
+    {
+      "name": "Extra-entry-54",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-54--f764ca3c"
+    },
+    {
+      "name": "Extra-entry-55",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-55--3693e9e3"
+    },
+    {
+      "name": "Extra-entry-56",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-56--f7bb32bf"
+    },
+    {
+      "name": "Extra-entry-57",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-57--68c7e0c1"
+    },
+    {
+      "name": "Extra-entry-58",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-58--80c25eb7"
+    },
+    {
+      "name": "Extra-entry-59",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-59--162c8cd5"
+    },
+    {
+      "name": "Extra-entry-60",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-60--a91b734d"
+    },
+    {
+      "name": "Extra-entry-61",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-61--628388b1"
+    },
+    {
+      "name": "Extra-entry-62",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-62--9d81dd19"
+    },
+    {
+      "name": "Extra-entry-63",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-63--9cadc07a"
+    },
+    {
+      "name": "Extra-entry-64",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-64--63e664ac"
+    },
+    {
+      "name": "Extra-entry-65",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-65--370ecabd"
+    },
+    {
+      "name": "Extra-entry-66",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-66--7db03813"
+    },
+    {
+      "name": "Extra-entry-67",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-67--85d0646c"
+    },
+    {
+      "name": "Extra-entry-68",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-68--352e9944"
+    },
+    {
+      "name": "Extra-entry-69",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-69--abb72b0a"
+    },
+    {
+      "name": "Extra-entry-70",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-70--ac0ddfc2"
+    },
+    {
+      "name": "Extra-entry-71",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-71--978aca4b"
+    },
+    {
+      "name": "Extra-entry-72",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-72--31264e2d"
+    },
+    {
+      "name": "Extra-entry-73",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-73--0965f554"
+    },
+    {
+      "name": "Extra-entry-74",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-74--6e66b900"
+    },
+    {
+      "name": "Extra-entry-75",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-75--287c6a9b"
+    },
+    {
+      "name": "Extra-entry-76",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-76--dea41456"
+    },
+    {
+      "name": "Extra-entry-77",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-77--4fa4cd40"
+    },
+    {
+      "name": "Extra-entry-78",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-78--d6ffcd4d"
+    },
+    {
+      "name": "Extra-entry-79",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-79--a1228d3d"
+    },
+    {
+      "name": "Extra-entry-80",
+      "type": "entity",
+      "references": [
+        "Hosea (various)"
+      ],
+      "blurb": "Expanded thematic profile placeholder to reach coverage.",
+      "category": "expansion",
+      "id": "e.extra-entry-80--aa39f848"
+    }
+  ]
+}

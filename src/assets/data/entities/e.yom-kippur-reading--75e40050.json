@@ -1,0 +1,14 @@
+{
+  "name": "Yom Kippur reading (Jewish)",
+  "type": "entity",
+  "references": [
+    "Yom Kippur liturgy"
+  ],
+  "blurb": "Jonah read annually to summon repentance (teshuvah) and highlight God’s reluctance to punish.",
+  "category": "reception",
+  "id": "e.yom-kippur-reading--75e40050",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

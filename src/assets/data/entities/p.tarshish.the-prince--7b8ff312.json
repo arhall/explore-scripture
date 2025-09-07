@@ -1,0 +1,19 @@
+{
+  "name": "Tarshish (the prince)",
+  "type": "person",
+  "references": [
+    "Esther 1:14"
+  ],
+  "blurb": "Counselor-prince; not the region—advises on court crisis turned policy.",
+  "category": "record",
+  "id": "p.tarshish.the-prince--7b8ff312",
+  "canonical_id": "p.tarshish.gene-10-3-4--a7a9a084",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      1
+    ]
+  }
+}

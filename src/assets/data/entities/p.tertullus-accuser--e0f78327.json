@@ -1,0 +1,23 @@
+{
+  "name": "Tertullus (accuser)",
+  "type": "person",
+  "category": "accuser",
+  "references": [
+    "Acts 24:1–9"
+  ],
+  "aka": [],
+  "id": "p.tertullus-accuser--e0f78327",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      24
+    ]
+  }
+}

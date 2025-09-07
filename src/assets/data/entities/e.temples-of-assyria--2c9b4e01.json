@@ -1,0 +1,19 @@
+{
+  "id": "e.temples-of-assyria--2c9b4e01",
+  "name": "Temple(s) of Assyria",
+  "type": "entity",
+  "references": [
+    "Nah 1:14"
+  ],
+  "category": "cultic",
+  "aka": [],
+  "blurb": "Cult centers implicated in imperial violence; their names are cut off.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      1
+    ]
+  }
+}

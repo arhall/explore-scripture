@@ -1,0 +1,17 @@
+{
+  "name": "Pergamum",
+  "type": "entity",
+  "category": "city",
+  "references": [
+    "Rev 2–3 (Pergamum)"
+  ],
+  "aka": [],
+  "id": "e.pergamum--f7f3137b",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {}
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Casting of Pur (lots)",
+  "type": "entity",
+  "references": [
+    "Esther 3:7"
+  ],
+  "blurb": "Randomness subordinated to providence—lots fall, but purposes stand; the date is set for the twelfth month, Adar.",
+  "category": "record",
+  "id": "e.casting-of-pur.lots--a6354ec2",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      3
+    ]
+  }
+}

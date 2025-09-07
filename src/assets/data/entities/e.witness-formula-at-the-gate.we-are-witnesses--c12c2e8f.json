@@ -1,0 +1,18 @@
+{
+  "name": "Witness formula at the gate (‘We are witnesses’)",
+  "type": "entity",
+  "references": [
+    "Ruth 4:9–11"
+  ],
+  "blurb": "Legal chorus that seals redemption and marriage; public memory guards private vows.",
+  "category": "ritual",
+  "id": "e.witness-formula-at-the-gate.we-are-witnesses--c12c2e8f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ruth": [
+      4
+    ]
+  }
+}

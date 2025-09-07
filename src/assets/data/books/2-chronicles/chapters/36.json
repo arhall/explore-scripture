@@ -1,0 +1,35 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 36,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "e.jehoahaz-jehoiakim-jehoiachin-zedekiah.last-kings--be494bee",
+      "name": "Jehoahaz, Jehoiakim, Jehoiachin, Zedekiah (last kings)",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1
+    },
+    {
+      "id": "t.nebuchadnezzar-king-of-babylon.chronicles--c58cf74a",
+      "name": "Nebuchadnezzar king of Babylon (Chronicles)",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.sabbath-rests-for-the-land.seventy-years--84967480",
+      "name": "Sabbath rests for the land (seventy years)",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1
+    },
+    {
+      "id": "t.cyrus-king-of-persia.edict--6a515e45",
+      "name": "Cyrus king of Persia (edict)",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 2
+    }
+  ]
+}

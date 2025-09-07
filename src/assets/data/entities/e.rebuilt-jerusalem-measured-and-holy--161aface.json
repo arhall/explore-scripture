@@ -1,0 +1,18 @@
+{
+  "name": "Rebuilt Jerusalem, measured and holy",
+  "type": "entity",
+  "references": [
+    "Jeremiah 31:38–40"
+  ],
+  "blurb": "Surveyed from the Tower of Hananel to the Corner Gate; the valley of dead bodies becomes sacred to the LORD—cartography of hope.",
+  "category": "restoration",
+  "id": "e.rebuilt-jerusalem-measured-and-holy--161aface",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      31
+    ]
+  }
+}

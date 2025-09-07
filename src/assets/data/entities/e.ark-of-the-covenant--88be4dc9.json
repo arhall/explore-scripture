@@ -1,0 +1,25 @@
+{
+  "name": "Ark of the Covenant",
+  "type": "entity",
+  "references": [
+    "Exodus 25:10–22",
+    "Heb 9:1-5"
+  ],
+  "blurb": "Footstool of the King—revelation and atonement.",
+  "category": "tabernacle",
+  "cross_references": [
+    "Hebrews 9:1–5"
+  ],
+  "id": "e.ark-of-the-covenant--88be4dc9",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      25
+    ],
+    "Hebrews": [
+      9
+    ]
+  }
+}

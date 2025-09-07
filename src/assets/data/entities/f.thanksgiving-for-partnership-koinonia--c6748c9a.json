@@ -1,0 +1,27 @@
+{
+  "name": "Thanksgiving for partnership (koinonia)",
+  "type": "figure",
+  "category": "partnership",
+  "references": [
+    "Phil 1:3–5"
+  ],
+  "greek_terms": [
+    {
+      "term": "κοινωνία",
+      "gloss": "partnership/fellowship"
+    }
+  ],
+  "aka": [],
+  "id": "f.thanksgiving-for-partnership-koinonia--c6748c9a",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Philippians": [
+      1
+    ]
+  }
+}

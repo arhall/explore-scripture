@@ -1,0 +1,23 @@
+{
+  "name": "Elihu son of Barakel the Buzite, of the family of Ram",
+  "type": "person",
+  "references": [
+    "Job 32–37"
+  ],
+  "blurb": "Young, angry, and nuanced—he rebukes both Job and the friends; emphasizes pedagogic suffering and God’s transcendence communicated through creation, dreams, and pain.",
+  "category": "wisdom",
+  "id": "p.elihu-son-of-barakel-the-buzite-of-the-family-of-ram--bb49309f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Job": [
+      32,
+      33,
+      34,
+      35,
+      36,
+      37
+    ]
+  }
+}

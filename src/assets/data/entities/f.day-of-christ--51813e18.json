@@ -1,0 +1,23 @@
+{
+  "name": "Day of Christ",
+  "type": "figure",
+  "category": "eschatology",
+  "references": [
+    "Phil 1:6,10",
+    "Phil 2:16"
+  ],
+  "aka": [],
+  "id": "f.day-of-christ--51813e18",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Philippians": [
+      1,
+      2
+    ]
+  }
+}

@@ -1,0 +1,661 @@
+[
+  {
+    "id": "p.caleb-son-of-jephunneh--2d6c16cf",
+    "name": "Caleb son of Jephunneh",
+    "type": "person",
+    "url": "/entities/p.caleb-son-of-jephunneh--2d6c16cf/",
+    "blurb": "Spy from Judah who wholly follows the LORD; later receives Hebron as inheritance.",
+    "searchText": "caleb son of jephunneh person narrative spy from judah who wholly follows the lord; later receives hebron as inheritance. ",
+    "references": 4,
+    "books": [
+      "Deuteronomy",
+      "Joshua",
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.phinehas--accbe6db",
+    "name": "Phinehas",
+    "type": "person",
+    "url": "/entities/p.phinehas--accbe6db/",
+    "blurb": "Son of Eleazar; later zealous for covenant fidelity.",
+    "searchText": "phinehas person genealogy son of eleazar; later zealous for covenant fidelity. ",
+    "references": 4,
+    "books": [
+      "Exodus",
+      "Leviticus",
+      "Joshua"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.achsah-daughter-of-caleb--b8ac6927",
+    "name": "Achsah daughter of Caleb",
+    "type": "person",
+    "url": "/entities/p.achsah-daughter-of-caleb--b8ac6927/",
+    "blurb": "Newly married to Othniel, she boldly requests springs to accompany Negev land—wisdom that pairs inheritance with sustainability.",
+    "searchText": "achsah daughter of caleb person narrative newly married to othniel, she boldly requests springs to accompany negev land—wisdom that pairs inheritance with sustainability. ",
+    "references": 2,
+    "books": [
+      "Joshua",
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.hoglah--0f5d4902",
+    "name": "Hoglah",
+    "type": "person",
+    "url": "/entities/p.hoglah--0f5d4902/",
+    "blurb": "One of Zelophehad’s daughters who secures a place for women in property law.",
+    "searchText": "hoglah person narrative one of zelophehad’s daughters who secures a place for women in property law. ",
+    "references": 2,
+    "books": [
+      "Numbers",
+      "Joshua"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.mahlah.daughter-of-zelophehad--55fe9045",
+    "name": "Mahlah (daughter of Zelophehad)",
+    "type": "person",
+    "url": "/entities/p.mahlah.daughter-of-zelophehad--55fe9045/",
+    "blurb": "One of five courageous sisters who request inheritance.",
+    "searchText": "mahlah (daughter of zelophehad) person narrative one of five courageous sisters who request inheritance. ",
+    "references": 2,
+    "books": [
+      "Numbers",
+      "Joshua"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.othniel-son-of-kenaz--4ffdb645",
+    "name": "Othniel son of Kenaz",
+    "type": "person",
+    "url": "/entities/p.othniel-son-of-kenaz--4ffdb645/",
+    "blurb": "Caleb’s kinsman who captures Kiriath-sepher; a prototype deliverer who will later judge Israel.",
+    "searchText": "othniel son of kenaz person narrative caleb’s kinsman who captures kiriath-sepher; a prototype deliverer who will later judge israel. ",
+    "references": 2,
+    "books": [
+      "Joshua",
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.tirzah.daughter-of-zelophehad--7eadf134",
+    "name": "Tirzah (daughter of Zelophehad)",
+    "type": "person",
+    "url": "/entities/p.tirzah.daughter-of-zelophehad--7eadf134/",
+    "blurb": "Youngest named sister; later a city bears this name.",
+    "searchText": "tirzah (daughter of zelophehad) person narrative youngest named sister; later a city bears this name. ",
+    "references": 2,
+    "books": [
+      "Numbers",
+      "Joshua"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.heads-of-fathers-houses.leaders--f3801db8",
+    "name": "Heads of fathers’ houses (leaders)",
+    "type": "group",
+    "url": "/entities/g.heads-of-fathers-houses.leaders--f3801db8/",
+    "blurb": "Representative elders who adjudicate inter-tribal tensions under Torah.",
+    "searchText": "heads of fathers’ houses (leaders) group narrative representative elders who adjudicate inter-tribal tensions under torah. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.joseph-tribes-request-more-land--f2f1fccd",
+    "name": "Joseph tribes request more land",
+    "type": "group",
+    "url": "/entities/g.joseph-tribes-request-more-land--f2f1fccd/",
+    "blurb": "Ephraim and Manasseh press for greater space; Joshua redirects them toward diligent clearing—faith works through effort.",
+    "searchText": "joseph tribes request more land group narrative ephraim and manasseh press for greater space; joshua redirects them toward diligent clearing—faith works through effort. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.makkedah-libnah-lachish-eglon-hebron-debir.southern-captures--03da8d0d",
+    "name": "Makkedah, Libnah, Lachish, Eglon, Hebron, Debir (southern captures)",
+    "type": "group",
+    "url": "/entities/g.makkedah-libnah-lachish-eglon-hebron-debir.southern-captures--03da8d0d/",
+    "blurb": "A rapid cascade of victories—each city ‘struck with the edge of the sword’ under herem, establishing southern foothold.",
+    "searchText": "makkedah, libnah, lachish, eglon, hebron, debir (southern captures) group narrative a rapid cascade of victories—each city ‘struck with the edge of the sword’ under herem, establishing southern foothold. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.reuben-gad-and-half-manasseh.transjordan-inheritance--c585d7ae",
+    "name": "Reuben, Gad, and half-Manasseh (Transjordan inheritance)",
+    "type": "group",
+    "url": "/entities/g.reuben-gad-and-half-manasseh.transjordan-inheritance--c585d7ae/",
+    "blurb": "Formalizes east-Jordan inheritances previously granted—pastoral economies balanced with covenant unity.",
+    "searchText": "reuben, gad, and half-manasseh (transjordan inheritance) group narrative formalizes east-jordan inheritances previously granted—pastoral economies balanced with covenant unity. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.the-seven-remaining-tribes-allotted-by-survey--bffbec8b",
+    "name": "The seven remaining tribes allotted by survey",
+    "type": "group",
+    "url": "/entities/g.the-seven-remaining-tribes-allotted-by-survey--bffbec8b/",
+    "blurb": "Joshua commissions a written description of the land; administrative wisdom serves promise-keeping.",
+    "searchText": "the seven remaining tribes allotted by survey group record joshua commissions a written description of the land; administrative wisdom serves promise-keeping. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "record"
+  },
+  {
+    "id": "g.two-unnamed-spies--85a9369f",
+    "name": "Two unnamed spies",
+    "type": "group",
+    "url": "/entities/g.two-unnamed-spies--85a9369f/",
+    "blurb": "Scouts who move with prudence and faith, bringing back a report that stirs confident action rather than fear—an intentional contrast to Numbers 13.",
+    "searchText": "two unnamed spies group narrative scouts who move with prudence and faith, bringing back a report that stirs confident action rather than fear—an intentional contrast to numbers 13. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.achan-son-of-carmi.achar--c148b71b",
+    "name": "Achan (Achar) son of Carmi",
+    "type": "person",
+    "url": "/entities/p.achan-son-of-carmi.achar--c148b71b/",
+    "blurb": "His hidden theft of devoted things brings communal defeat at Ai. Joshua’s inquiry exposes sin, and judgment restores Israel’s standing. Achan dramatizes how private idolatry imperils a public mission.",
+    "searchText": "achan (achar) son of carmi person narrative his hidden theft of devoted things brings communal defeat at ai. joshua’s inquiry exposes sin, and judgment restores israel’s standing. achan dramatizes how private idolatry imperils a public mission. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.joshua--65483c95",
+    "name": "Joshua",
+    "type": "person",
+    "url": "/entities/p.joshua--65483c95/",
+    "blurb": "Moses’ successor becomes a covenant general whose leadership is saturated in Scripture: meditate, obey, act. Joshua embodies the transition from promise to possession—leading Israel through Jordan on ",
+    "searchText": "joshua person narrative moses’ successor becomes a covenant general whose leadership is saturated in scripture: meditate, obey, act. joshua embodies the transition from promise to possession—leading israel through jordan on dry ground, renewing circumcision at gilgal, and keeping passover in the land. his courage is not bravado but trust anchored in god’s presence. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "t.adoni-zedek-king-of-jerusalem--a0bb4341",
+    "name": "Adoni-Zedek king of Jerusalem",
+    "type": "title",
+    "url": "/entities/t.adoni-zedek-king-of-jerusalem--a0bb4341/",
+    "blurb": "Leads a five-king coalition against Gibeon and is defeated; executed at Makkedah. His name (‘my lord is righteousness’) is ironically subverted by his actions.",
+    "searchText": "adoni-zedek king of jerusalem title narrative leads a five-king coalition against gibeon and is defeated; executed at makkedah. his name (‘my lord is righteousness’) is ironically subverted by his actions. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "t.debir-king-of-eglon--54f158fd",
+    "name": "Debir king of Eglon",
+    "type": "title",
+    "url": "/entities/t.debir-king-of-eglon--54f158fd/",
+    "blurb": "Coalition king defeated; not to be confused with the city Debir later captured.",
+    "searchText": "debir king of eglon title narrative coalition king defeated; not to be confused with the city debir later captured. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "t.hoham-king-of-hebron--06fbd855",
+    "name": "Hoham king of Hebron",
+    "type": "title",
+    "url": "/entities/t.hoham-king-of-hebron--06fbd855/",
+    "blurb": "One of the five Amorite kings defeated in the southern campaign.",
+    "searchText": "hoham king of hebron title narrative one of the five amorite kings defeated in the southern campaign. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "t.jabin-king-of-hazor--801fbd73",
+    "name": "Jabin king of Hazor",
+    "type": "title",
+    "url": "/entities/t.jabin-king-of-hazor--801fbd73/",
+    "blurb": "Northern coalition leader; Hazor—‘head of all those kingdoms’—is burned. Horses hamstrung, chariots burned: Israel resists adopting imperial war-tech.",
+    "searchText": "jabin king of hazor title narrative northern coalition leader; hazor—‘head of all those kingdoms’—is burned. horses hamstrung, chariots burned: israel resists adopting imperial war-tech. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "t.japhia-king-of-lachish--082ca4a9",
+    "name": "Japhia king of Lachish",
+    "type": "title",
+    "url": "/entities/t.japhia-king-of-lachish--082ca4a9/",
+    "blurb": "Coalition king defeated; Lachish becomes a strategic conquest site.",
+    "searchText": "japhia king of lachish title narrative coalition king defeated; lachish becomes a strategic conquest site. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "t.piram-king-of-jarmuth--c695932a",
+    "name": "Piram king of Jarmuth",
+    "type": "title",
+    "url": "/entities/t.piram-king-of-jarmuth--c695932a/",
+    "blurb": "Coalition king defeated; his city later allotted to Judah.",
+    "searchText": "piram king of jarmuth title narrative coalition king defeated; his city later allotted to judah. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "e.ai.city--580f3aea",
+    "name": "Ai (city)",
+    "type": "entity",
+    "url": "/entities/e.ai.city--580f3aea/",
+    "blurb": "Initial defeat due to sin, then victory by stratagem; altar and Torah-reading follow, binding victory to obedience.",
+    "searchText": "ai (city) entity place initial defeat due to sin, then victory by stratagem; altar and torah-reading follow, binding victory to obedience. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "place"
+  },
+  {
+    "id": "e.altar-on-mount-ebal-and-covenant-reading--50d9bffe",
+    "name": "Altar on Mount Ebal and covenant reading",
+    "type": "entity",
+    "url": "/entities/e.altar-on-mount-ebal-and-covenant-reading--50d9bffe/",
+    "blurb": "Joshua writes the law on stones and reads blessings and curses before all Israel—victory rooted in renewed submission to Torah.",
+    "searchText": "altar on mount ebal and covenant reading entity ritual joshua writes the law on stones and reads blessings and curses before all israel—victory rooted in renewed submission to torah. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.asher-allotment.entity--766958f9",
+    "name": "Asher allotment (entity)",
+    "type": "entity",
+    "url": "/entities/e.asher-allotment.entity--766958f9/",
+    "blurb": "Coastal north with oil-rich imagery later echoed in blessings.",
+    "searchText": "asher allotment (entity) entity allotment coastal north with oil-rich imagery later echoed in blessings. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "allotment"
+  },
+  {
+    "id": "e.benjamin-allotment.entity--8dafe509",
+    "name": "Benjamin allotment (entity)",
+    "type": "entity",
+    "url": "/entities/e.benjamin-allotment.entity--8dafe509/",
+    "blurb": "Territory between Judah and Ephraim including Jerusalem’s vicinity and Jericho.",
+    "searchText": "benjamin allotment (entity) entity allotment territory between judah and ephraim including jerusalem’s vicinity and jericho. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "allotment"
+  },
+  {
+    "id": "e.bezer.city-of-refuge--b6b3afcc",
+    "name": "Bezer (city of refuge)",
+    "type": "entity",
+    "url": "/entities/e.bezer.city-of-refuge--b6b3afcc/",
+    "blurb": "East-Jordan refuge city for Reuben; previously named in Deuteronomy.",
+    "searchText": "bezer (city of refuge) entity place east-jordan refuge city for reuben; previously named in deuteronomy. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "place"
+  },
+  {
+    "id": "e.bones-of-joseph-buried-at-shechem--0b942c70",
+    "name": "Bones of Joseph buried at Shechem",
+    "type": "entity",
+    "url": "/entities/e.bones-of-joseph-buried-at-shechem--0b942c70/",
+    "blurb": "Centuries-old promise kept—exodus faith completes its arc as Joseph’s remains rest in the inheritance of his sons.",
+    "searchText": "bones of joseph buried at shechem entity narrative centuries-old promise kept—exodus faith completes its arc as joseph’s remains rest in the inheritance of his sons. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "e.circumcision-at-gilgal.second-time--ba828a6c",
+    "name": "Circumcision at Gilgal (second time)",
+    "type": "entity",
+    "url": "/entities/e.circumcision-at-gilgal.second-time--ba828a6c/",
+    "blurb": "Renewal of covenant identity for the new generation; the ‘reproach of Egypt’ rolled away as Israel readies for holy war.",
+    "searchText": "circumcision at gilgal (second time) entity ritual renewal of covenant identity for the new generation; the ‘reproach of egypt’ rolled away as israel readies for holy war. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.cities-of-refuge-designated--25c67794",
+    "name": "Cities of refuge designated",
+    "type": "entity",
+    "url": "/entities/e.cities-of-refuge-designated--25c67794/",
+    "blurb": "Six-city asylum network: **Kedesh (Naphtali), Shechem (Ephraim), Hebron (Judah), Bezer (Reuben), Ramoth in Gilead (Gad), Golan (Manasseh)**—justice protected by process until the high priest’s death.",
+    "searchText": "cities of refuge designated entity ethics six-city asylum network: **kedesh (naphtali), shechem (ephraim), hebron (judah), bezer (reuben), ramoth in gilead (gad), golan (manasseh)**—justice protected by process until the high priest’s death. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.covenant-renewal-at-shechem-and-the-great-stone-witness--3f899b05",
+    "name": "Covenant renewal at Shechem and the great stone witness",
+    "type": "entity",
+    "url": "/entities/e.covenant-renewal-at-shechem-and-the-great-stone-witness--3f899b05/",
+    "blurb": "Joshua rehearses salvation history, the people pledge fidelity, and a **stone under the oak** memorializes the vow—worship binds memory to place.",
+    "searchText": "covenant renewal at shechem and the great stone witness entity ritual joshua rehearses salvation history, the people pledge fidelity, and a **stone under the oak** memorializes the vow—worship binds memory to place. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.crossing-of-the-jordan.waters-halted-at-adam--ce0ada47",
+    "name": "Crossing of the Jordan (waters halted at Adam)",
+    "type": "entity",
+    "url": "/entities/e.crossing-of-the-jordan.waters-halted-at-adam--ce0ada47/",
+    "blurb": "Miracle of entry that mirrors the Red Sea: the ark leads, the waters heap up at Adam, and the people pass on dry ground—a rite of passage from wilderness to inheritance.",
+    "searchText": "crossing of the jordan (waters halted at adam) entity sign miracle of entry that mirrors the red sea: the ark leads, the waters heap up at adam, and the people pass on dry ground—a rite of passage from wilderness to inheritance. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "sign"
+  },
+  {
+    "id": "e.dan-allotment.entity--645e2fc2",
+    "name": "Dan allotment (entity)",
+    "type": "entity",
+    "url": "/entities/e.dan-allotment.entity--645e2fc2/",
+    "blurb": "Initial territory later proven too small—foreshadows migration north in Judges 18.",
+    "searchText": "dan allotment (entity) entity allotment initial territory later proven too small—foreshadows migration north in judges 18. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "allotment"
+  },
+  {
+    "id": "e.death-of-eleazar-son-of-aaron--8b5f91a1",
+    "name": "Death of Eleazar son of Aaron",
+    "type": "entity",
+    "url": "/entities/e.death-of-eleazar-son-of-aaron--8b5f91a1/",
+    "blurb": "Priestly transition marked by burial in a town of Phinehas—symbol of distributed holiness in the land.",
+    "searchText": "death of eleazar son of aaron entity narrative priestly transition marked by burial in a town of phinehas—symbol of distributed holiness in the land. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "e.death-of-joshua.age-110--52107512",
+    "name": "Death of Joshua (age 110)",
+    "type": "entity",
+    "url": "/entities/e.death-of-joshua.age-110--52107512/",
+    "blurb": "The servant of the LORD completes his course; Israel serves the LORD all his days and the elders after him—legacy linked to leadership fidelity.",
+    "searchText": "death of joshua (age 110) entity narrative the servant of the lord completes his course; israel serves the lord all his days and the elders after him—legacy linked to leadership fidelity. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "e.ephraim-allotment.entity--18a8fd9c",
+    "name": "Ephraim allotment (entity)",
+    "type": "entity",
+    "url": "/entities/e.ephraim-allotment.entity--18a8fd9c/",
+    "blurb": "Central hill-country share; includes Shechem region—the future covenant hub.",
+    "searchText": "ephraim allotment (entity) entity allotment central hill-country share; includes shechem region—the future covenant hub. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "allotment"
+  },
+  {
+    "id": "e.golan-in-bashan.city-of-refuge--bd68182c",
+    "name": "Golan in Bashan (city of refuge)",
+    "type": "entity",
+    "url": "/entities/e.golan-in-bashan.city-of-refuge--bd68182c/",
+    "blurb": "Northern Transjordan refuge city in Manasseh.",
+    "searchText": "golan in bashan (city of refuge) entity place northern transjordan refuge city in manasseh. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "place"
+  },
+  {
+    "id": "e.hazor.city--1d0d46e2",
+    "name": "Hazor (city)",
+    "type": "entity",
+    "url": "/entities/e.hazor.city--1d0d46e2/",
+    "blurb": "Preeminent Canaanite center razed—symbolic dethroning of regional idolatry.",
+    "searchText": "hazor (city) entity place preeminent canaanite center razed—symbolic dethroning of regional idolatry. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "place"
+  },
+  {
+    "id": "e.hebron.city-of-refuge--f769bb31",
+    "name": "Hebron (city of refuge)",
+    "type": "entity",
+    "url": "/entities/e.hebron.city-of-refuge--f769bb31/",
+    "blurb": "Refuge city in Judah—also Caleb’s inheritance and Levitical city.",
+    "searchText": "hebron (city of refuge) entity place refuge city in judah—also caleb’s inheritance and levitical city. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "place"
+  },
+  {
+    "id": "e.issachar-allotment.entity--9d252735",
+    "name": "Issachar allotment (entity)",
+    "type": "entity",
+    "url": "/entities/e.issachar-allotment.entity--9d252735/",
+    "blurb": "Fertile Jezreel plain towns and valleys.",
+    "searchText": "issachar allotment (entity) entity allotment fertile jezreel plain towns and valleys. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "allotment"
+  },
+  {
+    "id": "e.jericho.city--d8b856fd",
+    "name": "Jericho (city)",
+    "type": "entity",
+    "url": "/entities/e.jericho.city--d8b856fd/",
+    "blurb": "Firstfruits of conquest devoted to destruction (herem); walls fall by obedient procession—worship as warfare.",
+    "searchText": "jericho (city) entity place firstfruits of conquest devoted to destruction (herem); walls fall by obedient procession—worship as warfare. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "place"
+  },
+  {
+    "id": "e.joshuas-farewell-exhortations--e8e14e2e",
+    "name": "Joshua’s farewell exhortations",
+    "type": "entity",
+    "url": "/entities/e.joshuas-farewell-exhortations--e8e14e2e/",
+    "blurb": "Calls Israel to cling to the LORD, avoid intermarriage with remaining nations, and to love the LORD—holy perseverance is the strategy for settled life.",
+    "searchText": "joshua’s farewell exhortations entity ethics calls israel to cling to the lord, avoid intermarriage with remaining nations, and to love the lord—holy perseverance is the strategy for settled life. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.kedesh-in-galilee.city-of-refuge--527f90ad",
+    "name": "Kedesh in Galilee (city of refuge)",
+    "type": "entity",
+    "url": "/entities/e.kedesh-in-galilee.city-of-refuge--527f90ad/",
+    "blurb": "Northern refuge city serving Naphtali region.",
+    "searchText": "kedesh in galilee (city of refuge) entity place northern refuge city serving naphtali region. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "place"
+  },
+  {
+    "id": "e.levitical-cities-assigned.48-total--4be5d0fb",
+    "name": "Levitical cities assigned (48 total)",
+    "type": "entity",
+    "url": "/entities/e.levitical-cities-assigned.48-total--4be5d0fb/",
+    "blurb": "Distribution to **Kohathites, Gershonites, and Merarites** across the tribes—priestly presence planted in the whole land.",
+    "searchText": "levitical cities assigned (48 total) entity ritual distribution to **kohathites, gershonites, and merarites** across the tribes—priestly presence planted in the whole land. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.list-of-thirty-one-kings-defeated-west-of-the-jordan--4cdc72fa",
+    "name": "List of thirty-one kings defeated west of the Jordan",
+    "type": "entity",
+    "url": "/entities/e.list-of-thirty-one-kings-defeated-west-of-the-jordan--4cdc72fa/",
+    "blurb": "Roll-call of conquest that memorializes God’s faithfulness and Israel’s obedience; a litany of grace in toponyms.",
+    "searchText": "list of thirty-one kings defeated west of the jordan entity record roll-call of conquest that memorializes god’s faithfulness and israel’s obedience; a litany of grace in toponyms. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "record"
+  },
+  {
+    "id": "e.manasseh-allotment.west--c9585f4a",
+    "name": "Manasseh allotment (west) (entity)",
+    "type": "entity",
+    "url": "/entities/e.manasseh-allotment.west--c9585f4a/",
+    "blurb": "Complex borders and shared zones with Ephraim; Zelophehad’s daughters secure their inheritance, advancing just practice.",
+    "searchText": "manasseh allotment (west) (entity) entity allotment complex borders and shared zones with ephraim; zelophehad’s daughters secure their inheritance, advancing just practice. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "allotment"
+  },
+  {
+    "id": "e.naphtali-allotment.entity--76e60018",
+    "name": "Naphtali allotment (entity)",
+    "type": "entity",
+    "url": "/entities/e.naphtali-allotment.entity--76e60018/",
+    "blurb": "Upper Galilee with Kedesh (also a refuge city).",
+    "searchText": "naphtali allotment (entity) entity allotment upper galilee with kedesh (also a refuge city). ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "allotment"
+  },
+  {
+    "id": "e.passover-kept-at-gilgal--24aeeeec",
+    "name": "Passover kept at Gilgal",
+    "type": "entity",
+    "url": "/entities/e.passover-kept-at-gilgal--24aeeeec/",
+    "blurb": "First Passover in the land; manna ceases as the people eat the produce of Canaan—grace yields to ordinary provision under promise.",
+    "searchText": "passover kept at gilgal entity ritual first passover in the land; manna ceases as the people eat the produce of canaan—grace yields to ordinary provision under promise. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.ramoth-in-gilead.city-of-refuge--f6805f75",
+    "name": "Ramoth in Gilead (city of refuge)",
+    "type": "entity",
+    "url": "/entities/e.ramoth-in-gilead.city-of-refuge--f6805f75/",
+    "blurb": "Gad’s refuge city in Gilead; strategic in later monarchic history.",
+    "searchText": "ramoth in gilead (city of refuge) entity place gad’s refuge city in gilead; strategic in later monarchic history. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "place"
+  },
+  {
+    "id": "e.shechem.city-of-refuge--bc3b3b05",
+    "name": "Shechem (city of refuge)",
+    "type": "entity",
+    "url": "/entities/e.shechem.city-of-refuge--bc3b3b05/",
+    "blurb": "Refuge city and covenant venue—Abrahamic memory meets Joshua’s renewal.",
+    "searchText": "shechem (city of refuge) entity place refuge city and covenant venue—abrahamic memory meets joshua’s renewal. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "place"
+  },
+  {
+    "id": "e.simeon-allotment.within-judah--5d97932e",
+    "name": "Simeon allotment (within Judah) (entity)",
+    "type": "entity",
+    "url": "/entities/e.simeon-allotment.within-judah--5d97932e/",
+    "blurb": "Integrated towns within Judah—reflects Judah’s large inheritance and kinship support.",
+    "searchText": "simeon allotment (within judah) (entity) entity allotment integrated towns within judah—reflects judah’s large inheritance and kinship support. ",
+    "references": 1,
+    "books": [
+      "Joshua"
+    ],
+    "category": "allotment"
+  }
+]

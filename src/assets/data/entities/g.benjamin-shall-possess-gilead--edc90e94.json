@@ -1,0 +1,18 @@
+{
+  "name": "Benjamin shall possess Gilead",
+  "type": "group",
+  "references": [
+    "Obadiah 1:19"
+  ],
+  "blurb": "Eastern territories assigned to Benjamin—a symbolic stitching of the land across the Jordan.",
+  "category": "settlers",
+  "id": "g.benjamin-shall-possess-gilead--edc90e94",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Obadiah": [
+      1
+    ]
+  }
+}

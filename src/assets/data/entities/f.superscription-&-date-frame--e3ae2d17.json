@@ -1,0 +1,22 @@
+{
+  "id": "f.superscription-&-date-frame--e3ae2d17",
+  "name": "Superscription & date frame",
+  "type": "figure",
+  "references": [
+    "Hag 1:1",
+    "Hag 2:1",
+    "Hag 2:10",
+    "Hag 2:20"
+  ],
+  "category": "book-frame",
+  "blurb": "Four time-stamped oracles in Darius’s second year (520 BCE) providing a precise historical scaffold.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      1,
+      2
+    ]
+  }
+}

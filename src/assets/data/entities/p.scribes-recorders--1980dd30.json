@@ -1,0 +1,24 @@
+{
+  "id": "p.scribes-recorders--1980dd30",
+  "name": "Scribes/Recorders",
+  "type": "person",
+  "references": [
+    "Hag 1:1",
+    "Hag 2:1",
+    "Mal 3:16"
+  ],
+  "category": "administration",
+  "blurb": "Officials responsible for dating/oracle documentation; ensure durable memory of commands and promises.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      1,
+      2
+    ],
+    "Malachi": [
+      3
+    ]
+  }
+}

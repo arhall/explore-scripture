@@ -1,0 +1,35 @@
+{
+  "book": "Numbers",
+  "chapter": 14,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "p.aaron--cc77e332",
+      "name": "Aaron",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 6
+    },
+    {
+      "id": "g.ten-fearful-spies--d1152615",
+      "name": "Ten fearful spies",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.weeping-assembly-at-kadesh--748aa849",
+      "name": "Weeping assembly at Kadesh",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

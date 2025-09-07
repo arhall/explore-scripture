@@ -1,0 +1,41 @@
+{
+  "name": "Egypt",
+  "type": "group",
+  "references": [
+    "Isaiah 19; 20; 30–31",
+    "Jeremiah 46",
+    "Ezekiel 29–32",
+    "Hosea 7:11",
+    "Joel 3:19",
+    "Amos 2:10; 3:1; 9:7"
+  ],
+  "blurb": "From false refuge to future worshiper—altar in Egypt and highway with Assyria prophesy reconciliation.",
+  "category": "nation",
+  "id": "g.egypt--ab1ad00f",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "g.egypt--cd780238"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      46
+    ],
+    "Ezekiel": [
+      29,
+      30,
+      31,
+      32
+    ],
+    "Hosea": [
+      7
+    ],
+    "Joel": [
+      3
+    ],
+    "Amos": [
+      2
+    ]
+  }
+}

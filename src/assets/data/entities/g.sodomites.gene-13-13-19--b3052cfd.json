@@ -1,0 +1,21 @@
+{
+  "name": "Sodomites",
+  "type": "group",
+  "references": [
+    "Genesis 13:13; 19"
+  ],
+  "blurb": "Collective inhabitants of Sodom. Their portrayal becomes a scriptural shorthand for societal corruption and divine judgment.",
+  "category": "narrative",
+  "cross_references": [
+    "Isaiah 1:9–10"
+  ],
+  "id": "g.sodomites.gene-13-13-19--b3052cfd",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      13
+    ]
+  }
+}

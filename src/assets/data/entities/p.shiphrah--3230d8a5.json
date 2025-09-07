@@ -1,0 +1,21 @@
+{
+  "name": "Shiphrah",
+  "type": "person",
+  "references": [
+    "Exodus 1:15–21"
+  ],
+  "blurb": "Hebrew midwife who fears God and refuses Pharaoh’s command to kill male infants—an example of civil courage and holy disobedience.",
+  "category": "narrative",
+  "cross_references": [
+    "Acts 5:29"
+  ],
+  "id": "p.shiphrah--3230d8a5",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      1
+    ]
+  }
+}

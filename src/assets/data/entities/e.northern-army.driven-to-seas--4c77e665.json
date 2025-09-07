@@ -1,0 +1,19 @@
+{
+  "name": "Northern army (driven to seas)",
+  "type": "entity",
+  "references": [
+    "Joel 2:20"
+  ],
+  "blurb": "Whether locusts or foreign troops, the threat from the north is expelled—stench left as sign of victory.",
+  "category": "war",
+  "note": "Interpretations differ on whether this denotes insects or invaders.",
+  "id": "e.northern-army.driven-to-seas--4c77e665",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      2
+    ]
+  }
+}

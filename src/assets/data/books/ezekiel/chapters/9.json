@@ -1,0 +1,28 @@
+{
+  "book": "Ezekiel",
+  "chapter": 9,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "f.the-sighing-man.marked-remnant--4ce3e28a",
+      "name": "The sighing man (marked remnant)",
+      "type": "figure",
+      "role": "remnant",
+      "refs_count": 1
+    },
+    {
+      "id": "f.man-clothed-in-linen-with-writing-kit--28fb178f",
+      "name": "Man clothed in linen with writing kit",
+      "type": "figure",
+      "role": "angelic",
+      "refs_count": 1
+    },
+    {
+      "id": "e.executioners-and-the-man-in-linen--bb6062a8",
+      "name": "Executioners and the man in linen",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1
+    }
+  ]
+}

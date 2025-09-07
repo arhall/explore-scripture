@@ -1,0 +1,23 @@
+{
+  "name": "Lazarus of Bethany",
+  "type": "person",
+  "category": "disciple",
+  "references": [
+    "John 11:1–44"
+  ],
+  "aka": [],
+  "id": "p.lazarus-of-bethany--12689b81",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      11
+    ]
+  }
+}

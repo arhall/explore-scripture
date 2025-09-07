@@ -1,0 +1,35 @@
+{
+  "book": "Exodus",
+  "chapter": 11,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "p.aaron--cc77e332",
+      "name": "Aaron",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 6
+    },
+    {
+      "id": "g.firstborn-of-egypt--b0156eb2",
+      "name": "Firstborn of Egypt",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.plague-death-of-firstborn--a3b8d276",
+      "name": "Plague: Death of firstborn",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1
+    }
+  ]
+}

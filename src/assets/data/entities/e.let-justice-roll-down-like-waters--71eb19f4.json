@@ -1,0 +1,18 @@
+{
+  "name": "Let justice roll down like waters",
+  "type": "entity",
+  "references": [
+    "Amos 5:24"
+  ],
+  "blurb": "Iconic line calling for structural righteousness, not liturgical noise.",
+  "category": "ethic",
+  "id": "e.let-justice-roll-down-like-waters--71eb19f4",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Amos": [
+      5
+    ]
+  }
+}

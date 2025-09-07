@@ -1,0 +1,14 @@
+{
+  "name": "‘They shall know that I am the LORD’ refrain",
+  "type": "entity",
+  "references": [
+    "Ezekiel (passim)"
+  ],
+  "blurb": "Recognition formula punctuates judgments and restorations; theology aims at doxology in history.",
+  "category": "refrain",
+  "id": "e.they-shall-know-that-i-am-the-lord-refrain--38067a2b",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

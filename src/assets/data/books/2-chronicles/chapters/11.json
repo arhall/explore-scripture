@@ -1,0 +1,35 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 11,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "p.rehoboam--2cfd43e1",
+      "name": "Rehoboam",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.jeroboam-son-of-nebat.north--99d720bc",
+      "name": "Jeroboam son of Nebat (north)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.shemaiah-the-man-of-god.no-civil-war--71dcc873",
+      "name": "Shemaiah the man of God (no civil war)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.levites-and-faithful-migrate-to-judah--e11c4b86",
+      "name": "Levites and faithful migrate to Judah",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1
+    }
+  ]
+}

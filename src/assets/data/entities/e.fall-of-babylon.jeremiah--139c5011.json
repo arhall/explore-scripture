@@ -1,0 +1,19 @@
+{
+  "name": "Fall of Babylon (Jeremiah)",
+  "type": "entity",
+  "references": [
+    "Jeremiah 50–51"
+  ],
+  "blurb": "Comprehensive takedown of the proud empire—idols exposed, captives recalled; scroll sunk in Euphrates seals the word.",
+  "category": "judgment",
+  "id": "e.fall-of-babylon.jeremiah--139c5011",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      50,
+      51
+    ]
+  }
+}

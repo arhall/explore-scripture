@@ -1,0 +1,18 @@
+{
+  "name": "Sons of Hassenaah (Fish Gate)",
+  "type": "group",
+  "references": [
+    "Nehemiah 3:3"
+  ],
+  "blurb": "Gate specialists set beams/doors/bolts/bars—craft meets calling.",
+  "category": "narrative",
+  "id": "g.sons-of-hassenaah.fish-gate--dbba4203",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      3
+    ]
+  }
+}

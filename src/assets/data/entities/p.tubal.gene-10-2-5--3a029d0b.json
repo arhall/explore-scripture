@@ -1,0 +1,27 @@
+{
+  "name": "Tubal",
+  "type": "person",
+  "references": [
+    "Genesis 10:2–5"
+  ],
+  "blurb": "Son of Japheth; named in the Table of Nations, situating Israel among the peoples.",
+  "relations": {
+    "parents": [
+      "Japheth"
+    ],
+    "children": null
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "Ezekiel 38–39"
+  ],
+  "id": "p.tubal.gene-10-2-5--3a029d0b",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

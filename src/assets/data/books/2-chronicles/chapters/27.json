@@ -1,0 +1,14 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 27,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "p.jotham-king-of-judah--22629070",
+      "name": "Jotham king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2
+    }
+  ]
+}

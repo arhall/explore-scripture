@@ -1,0 +1,725 @@
+[
+  {
+    "id": "d.holy-spirit--ad652b9c",
+    "name": "Holy Spirit",
+    "type": "divine",
+    "url": "/entities/d.holy-spirit--ad652b9c/",
+    "blurb": "Divine agent of conception, anointing, speech, and mission—integral to the triadic baptismal name.",
+    "searchText": "holy spirit divine theology divine agent of conception, anointing, speech, and mission—integral to the triadic baptismal name. ",
+    "references": 53,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "2 Corinthians",
+      "Galatians",
+      "1 Corinthians",
+      "Philippians",
+      "Ephesians",
+      "Romans",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "f.argument-map-index--c44b9b3a",
+    "name": "Argument map (index)",
+    "type": "figure",
+    "url": "/entities/f.argument-map-index--c44b9b3a/",
+    "blurb": "",
+    "searchText": "argument map (index) figure index  ",
+    "references": 17,
+    "books": [
+      "2 Corinthians",
+      "Galatians",
+      "1 Corinthians",
+      "Ephesians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John"
+    ],
+    "category": "index"
+  },
+  {
+    "id": "p.timothy--227fb1d9",
+    "name": "Timothy",
+    "type": "person",
+    "url": "/entities/p.timothy--227fb1d9/",
+    "blurb": "",
+    "searchText": "timothy person coworker  ",
+    "references": 12,
+    "books": [
+      "Acts",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Philemon",
+      "Hebrews"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "p.moses--2c0fba85",
+    "name": "Moses",
+    "type": "person",
+    "url": "/entities/p.moses--2c0fba85/",
+    "blurb": "Rescued from the Nile by Pharaoh’s daughter, raised in the court, then exiled to Midian after defending a Hebrew. At the burning bush he meets the God of the fathers; reluctant yet called, he confront",
+    "searchText": "moses person narrative rescued from the nile by pharaoh’s daughter, raised in the court, then exiled to midian after defending a hebrew. at the burning bush he meets the god of the fathers; reluctant yet called, he confronts pharaoh with signs and speeches, leads through the plagues, and brings israel to the sea. moses’ story in these chapters showcases divine compassion, judgment, and the birth of a nation. ",
+    "references": 11,
+    "books": [
+      "Exodus",
+      "Leviticus",
+      "Numbers",
+      "Deuteronomy",
+      "Matthew",
+      "Mark",
+      "Hebrews"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.prophets--c6dcaed9",
+    "name": "prophets",
+    "type": "group",
+    "url": "/entities/g.prophets--c6dcaed9/",
+    "blurb": "",
+    "searchText": "prophets group office  ",
+    "references": 6,
+    "books": [
+      "Ephesians",
+      "Hebrews",
+      "James"
+    ],
+    "category": "office"
+  },
+  {
+    "id": "p.aaron--cc77e332",
+    "name": "Aaron",
+    "type": "person",
+    "url": "/entities/p.aaron--cc77e332/",
+    "blurb": "Moses’ brother and spokesman, later high priest. Performs signs before Pharaoh, stretches the staff over Egypt and the sea, and leads in worship.",
+    "searchText": "aaron person narrative moses’ brother and spokesman, later high priest. performs signs before pharaoh, stretches the staff over egypt and the sea, and leads in worship. ",
+    "references": 6,
+    "books": [
+      "Exodus",
+      "Numbers",
+      "Hebrews"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.abraham--197f2a67",
+    "name": "Abraham",
+    "type": "person",
+    "url": "/entities/p.abraham--197f2a67/",
+    "blurb": "",
+    "searchText": "abraham person patriarch  ",
+    "references": 6,
+    "books": [
+      "Galatians",
+      "Hebrews",
+      "James",
+      "1 Peter"
+    ],
+    "category": "patriarch"
+  },
+  {
+    "id": "g.angels--b473a1d0",
+    "name": "Angels",
+    "type": "group",
+    "url": "/entities/g.angels--b473a1d0/",
+    "blurb": "Ministering beings who serve, separate, and announce—agents of divine governance and revelation.",
+    "searchText": "angels group heavenly-host ministering beings who serve, separate, and announce—agents of divine governance and revelation. ",
+    "references": 5,
+    "books": [
+      "Matthew",
+      "Hebrews"
+    ],
+    "category": "heavenly-host"
+  },
+  {
+    "id": "p.noah.gene-5-32--6b1a74fb",
+    "name": "Noah",
+    "type": "person",
+    "url": "/entities/p.noah.gene-5-32--6b1a74fb/",
+    "blurb": "Noah ‘walked with God’ in a corrupt generation. Obedient to God’s word, he builds the ark and becomes the instrument of preservation through the Flood. Afterward, God covenants never again to destroy ",
+    "searchText": "noah person narrative noah ‘walked with god’ in a corrupt generation. obedient to god’s word, he builds the ark and becomes the instrument of preservation through the flood. afterward, god covenants never again to destroy the earth with water, giving the rainbow as a sign. jewish tradition debates whether noah’s righteousness was relative or absolute; christian readers see in him a type of christ—obedient, saving his household. p.noah.daughter-of-zelophehad--9d853482",
+    "references": 5,
+    "books": [
+      "Genesis",
+      "Numbers",
+      "Hebrews",
+      "1 Peter",
+      "2 Peter"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.isaac.gene-17-25--66e8d49e",
+    "name": "Isaac",
+    "type": "person",
+    "url": "/entities/p.isaac.gene-17-25--66e8d49e/",
+    "blurb": "The son of promise, Isaac embodies God’s fidelity to His word. Spared on Moriah (Gen 22), he receives Abraham’s covenant and becomes father to Esau and Jacob. Isaac’s narrative is quieter yet pivotal,",
+    "searchText": "isaac person narrative the son of promise, isaac embodies god’s fidelity to his word. spared on moriah (gen 22), he receives abraham’s covenant and becomes father to esau and jacob. isaac’s narrative is quieter yet pivotal, showing god’s promise advancing through ordinary life and tested faith. p.isaac--3af10add p.isaac.gene-26--da8ff3bc",
+    "references": 3,
+    "books": [
+      "Genesis",
+      "Hebrews",
+      "Galatians"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.sarah--424e36f5",
+    "name": "Sarah",
+    "type": "person",
+    "url": "/entities/p.sarah--424e36f5/",
+    "blurb": "",
+    "searchText": "sarah person allegory  ",
+    "references": 3,
+    "books": [
+      "Galatians",
+      "Hebrews",
+      "1 Peter"
+    ],
+    "category": "allegory"
+  },
+  {
+    "id": "p.abel.gene-4--fea33a69",
+    "name": "Abel",
+    "type": "person",
+    "url": "/entities/p.abel.gene-4--fea33a69/",
+    "blurb": "Abel offers the firstborn of his flock and is regarded by God. Murdered by Cain, he becomes Scripture’s first martyr. His blood cries for justice, while Christ’s blood speaks a better word of mercy.",
+    "searchText": "abel person narrative abel offers the firstborn of his flock and is regarded by god. murdered by cain, he becomes scripture’s first martyr. his blood cries for justice, while christ’s blood speaks a better word of mercy. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Hebrews"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.david--951bc327",
+    "name": "David",
+    "type": "person",
+    "url": "/entities/p.david--951bc327/",
+    "blurb": "Anointed in obscurity, musician and warrior. His God-centered courage fells Goliath; his restraint toward Saul models kingship under God.",
+    "searchText": "david person narrative anointed in obscurity, musician and warrior. his god-centered courage fells goliath; his restraint toward saul models kingship under god. ",
+    "references": 2,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.enoch--50efb186",
+    "name": "Enoch",
+    "type": "person",
+    "url": "/entities/p.enoch--50efb186/",
+    "blurb": "",
+    "searchText": "enoch person faith-example  ",
+    "references": 2,
+    "books": [
+      "Hebrews",
+      "Jude"
+    ],
+    "category": "faith-example"
+  },
+  {
+    "id": "p.joseph.gene-30-24--e665eb01",
+    "name": "Joseph",
+    "type": "person",
+    "url": "/entities/p.joseph.gene-30-24--e665eb01/",
+    "blurb": "Beloved son whose later story dominates Gen 37–50; in 26–36 he is born and becomes a source of family tension.",
+    "searchText": "joseph person narrative beloved son whose later story dominates gen 37–50; in 26–36 he is born and becomes a source of family tension. p.joseph.gene-37-50--3399451e",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Hebrews"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.rahab--16b66d34",
+    "name": "Rahab",
+    "type": "person",
+    "url": "/entities/p.rahab--16b66d34/",
+    "blurb": "",
+    "searchText": "rahab person faith-example  ",
+    "references": 2,
+    "books": [
+      "Hebrews",
+      "James"
+    ],
+    "category": "faith-example"
+  },
+  {
+    "id": "p.samson--343c8a4f",
+    "name": "Samson",
+    "type": "person",
+    "url": "/entities/p.samson--343c8a4f/",
+    "blurb": "Nazarite from the womb whose strength exposes Philistine pretensions. He is a bundle of contradictions—set apart yet impulsive, mighty yet morally fragile. In death he brings the house down on Dagon’s",
+    "searchText": "samson person narrative nazarite from the womb whose strength exposes philistine pretensions. he is a bundle of contradictions—set apart yet impulsive, mighty yet morally fragile. in death he brings the house down on dagon’s worshipers, a final act of faith that shines through the wreckage. ",
+    "references": 2,
+    "books": [
+      "Judges",
+      "Hebrews"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.samuel--9a974328",
+    "name": "Samuel",
+    "type": "person",
+    "url": "/entities/p.samuel--9a974328/",
+    "blurb": "Miracle child turned reformer-prophet. He hears God, gathers Israel to repentance, anoints kings, and insists that obedience outranks sacrifice.",
+    "searchText": "samuel person narrative miracle child turned reformer-prophet. he hears god, gathers israel to repentance, anoints kings, and insists that obedience outranks sacrifice. ",
+    "references": 2,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "e.altar-of-incense--8fedaed4",
+    "name": "Altar of incense",
+    "type": "entity",
+    "url": "/entities/e.altar-of-incense--8fedaed4/",
+    "blurb": "Sweet smoke of prayer.",
+    "searchText": "altar of incense entity tabernacle sweet smoke of prayer. ",
+    "references": 2,
+    "books": [
+      "Exodus",
+      "Hebrews"
+    ],
+    "category": "tabernacle"
+  },
+  {
+    "id": "e.ark-of-the-covenant--88be4dc9",
+    "name": "Ark of the Covenant",
+    "type": "entity",
+    "url": "/entities/e.ark-of-the-covenant--88be4dc9/",
+    "blurb": "Footstool of the King—revelation and atonement.",
+    "searchText": "ark of the covenant entity tabernacle footstool of the king—revelation and atonement. ",
+    "references": 2,
+    "books": [
+      "Exodus",
+      "Hebrews"
+    ],
+    "category": "tabernacle"
+  },
+  {
+    "id": "e.bread-of-the-presence--74efe08b",
+    "name": "Bread of the Presence",
+    "type": "entity",
+    "url": "/entities/e.bread-of-the-presence--74efe08b/",
+    "blurb": "Twelve loaves set weekly before God—covenant table fellowship; priests eat the holy bread.",
+    "searchText": "bread of the presence entity ritual twelve loaves set weekly before god—covenant table fellowship; priests eat the holy bread. ",
+    "references": 2,
+    "books": [
+      "Leviticus",
+      "Hebrews"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.lampstand--589cccda",
+    "name": "Lampstand",
+    "type": "entity",
+    "url": "/entities/e.lampstand--589cccda/",
+    "blurb": "Seven-branched light fed by oil; symbolizes Spirit-sustained witness.",
+    "searchText": "lampstand entity temple-furnishing seven-branched light fed by oil; symbolizes spirit-sustained witness. ",
+    "references": 2,
+    "books": [
+      "Zechariah",
+      "Hebrews"
+    ],
+    "category": "temple-furnishing"
+  },
+  {
+    "id": "d.god-the-judge-of-all--3be44a40",
+    "name": "God the judge of all",
+    "type": "divine",
+    "url": "/entities/d.god-the-judge-of-all--3be44a40/",
+    "blurb": "",
+    "searchText": "god the judge of all divine judgment  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "judgment"
+  },
+  {
+    "id": "g.abraham-s-offspring--f86d43bf",
+    "name": "Abraham’s offspring",
+    "type": "group",
+    "url": "/entities/g.abraham-s-offspring--f86d43bf/",
+    "blurb": "",
+    "searchText": "abraham’s offspring group descendants  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "descendants"
+  },
+  {
+    "id": "g.accepted-the-plundering-of-your-property--66d26680",
+    "name": "accepted the plundering of your property",
+    "type": "group",
+    "url": "/entities/g.accepted-the-plundering-of-your-property--66d26680/",
+    "blurb": "",
+    "searchText": "accepted the plundering of your property group suffering  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "suffering"
+  },
+  {
+    "id": "g.assembly-of-the-firstborn--434894d3",
+    "name": "assembly of the firstborn",
+    "type": "group",
+    "url": "/entities/g.assembly-of-the-firstborn--434894d3/",
+    "blurb": "",
+    "searchText": "assembly of the firstborn group church  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "church"
+  },
+  {
+    "id": "g.dull-of-hearing--d7b005d1",
+    "name": "dull of hearing",
+    "type": "group",
+    "url": "/entities/g.dull-of-hearing--d7b005d1/",
+    "blurb": "",
+    "searchText": "dull of hearing group warning  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "warning"
+  },
+  {
+    "id": "g.great-cloud-of-witnesses--4535e7f7",
+    "name": "great cloud of witnesses",
+    "type": "group",
+    "url": "/entities/g.great-cloud-of-witnesses--4535e7f7/",
+    "blurb": "",
+    "searchText": "great cloud of witnesses group motivation  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "motivation"
+  },
+  {
+    "id": "g.imitate-leaders-who-spoke-the-word--9c3f2f5e",
+    "name": "imitate leaders who spoke the word",
+    "type": "group",
+    "url": "/entities/g.imitate-leaders-who-spoke-the-word--9c3f2f5e/",
+    "blurb": "",
+    "searchText": "imitate leaders who spoke the word group leadership  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "leadership"
+  },
+  {
+    "id": "g.infants-milk--5b4d3bb4",
+    "name": "infants (milk)",
+    "type": "group",
+    "url": "/entities/g.infants-milk--5b4d3bb4/",
+    "blurb": "",
+    "searchText": "infants (milk) group immaturity  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "immaturity"
+  },
+  {
+    "id": "g.innumerable-angels--3f62393d",
+    "name": "innumerable angels",
+    "type": "group",
+    "url": "/entities/g.innumerable-angels--3f62393d/",
+    "blurb": "",
+    "searchText": "innumerable angels group heavenly-host  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "heavenly-host"
+  },
+  {
+    "id": "g.jericho-s-fall--57b442ef",
+    "name": "Jericho’s fall",
+    "type": "group",
+    "url": "/entities/g.jericho-s-fall--57b442ef/",
+    "blurb": "",
+    "searchText": "jericho’s fall group faith-example  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "faith-example"
+  },
+  {
+    "id": "g.mature-solid-food--1c82c6ec",
+    "name": "mature (solid food)",
+    "type": "group",
+    "url": "/entities/g.mature-solid-food--1c82c6ec/",
+    "blurb": "",
+    "searchText": "mature (solid food) group maturity  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "maturity"
+  },
+  {
+    "id": "g.ministering-spirits--1d614cea",
+    "name": "ministering spirits",
+    "type": "group",
+    "url": "/entities/g.ministering-spirits--1d614cea/",
+    "blurb": "",
+    "searchText": "ministering spirits group heavenly-host  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "heavenly-host"
+  },
+  {
+    "id": "g.mocking-flogging-chains-imprisonment--65172473",
+    "name": "mocking flogging chains imprisonment",
+    "type": "group",
+    "url": "/entities/g.mocking-flogging-chains-imprisonment--65172473/",
+    "blurb": "",
+    "searchText": "mocking flogging chains imprisonment group persecution  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "persecution"
+  },
+  {
+    "id": "g.moses-parents--dd9f7b2f",
+    "name": "Moses’ parents",
+    "type": "group",
+    "url": "/entities/g.moses-parents--dd9f7b2f/",
+    "blurb": "",
+    "searchText": "moses’ parents group faith-example  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "faith-example"
+  },
+  {
+    "id": "g.obey-your-leaders-they-watch-over-your-souls--5c6f3f4c",
+    "name": "obey your leaders they watch over your souls",
+    "type": "group",
+    "url": "/entities/g.obey-your-leaders-they-watch-over-your-souls--5c6f3f4c/",
+    "blurb": "",
+    "searchText": "obey your leaders they watch over your souls group leadership  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "leadership"
+  },
+  {
+    "id": "g.others-tortured-refusing-release--94582557",
+    "name": "others tortured refusing release",
+    "type": "group",
+    "url": "/entities/g.others-tortured-refusing-release--94582557/",
+    "blurb": "",
+    "searchText": "others tortured refusing release group martyrdom  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "martyrdom"
+  },
+  {
+    "id": "g.people-at-the-red-sea--e0203ac1",
+    "name": "people at the Red Sea",
+    "type": "group",
+    "url": "/entities/g.people-at-the-red-sea--e0203ac1/",
+    "blurb": "",
+    "searchText": "people at the red sea group faith-example  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "faith-example"
+  },
+  {
+    "id": "g.priests-levitical--356817bc",
+    "name": "priests (Levitical)",
+    "type": "group",
+    "url": "/entities/g.priests-levitical--356817bc/",
+    "blurb": "",
+    "searchText": "priests (levitical) group priesthood  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "priesthood"
+  },
+  {
+    "id": "g.spirits-of-the-righteous-made-perfect--b3e263d8",
+    "name": "spirits of the righteous made perfect",
+    "type": "group",
+    "url": "/entities/g.spirits-of-the-righteous-made-perfect--b3e263d8/",
+    "blurb": "",
+    "searchText": "spirits of the righteous made perfect group eschatology  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "eschatology"
+  },
+  {
+    "id": "g.stoned-sawn-in-two-killed-with-the-sword--fa32ac3a",
+    "name": "stoned sawn in two killed with the sword",
+    "type": "group",
+    "url": "/entities/g.stoned-sawn-in-two-killed-with-the-sword--fa32ac3a/",
+    "blurb": "",
+    "searchText": "stoned sawn in two killed with the sword group persecution  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "persecution"
+  },
+  {
+    "id": "g.strangers-and-exiles--1a09c8d9",
+    "name": "strangers and exiles",
+    "type": "group",
+    "url": "/entities/g.strangers-and-exiles--1a09c8d9/",
+    "blurb": "",
+    "searchText": "strangers and exiles group identity  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "identity"
+  },
+  {
+    "id": "g.those-from-italy-greet-you--b286b45c",
+    "name": "those from Italy greet you",
+    "type": "group",
+    "url": "/entities/g.those-from-italy-greet-you--b286b45c/",
+    "blurb": "",
+    "searchText": "those from italy greet you group greeting  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "greeting"
+  },
+  {
+    "id": "g.those-who-drift--7ec22664",
+    "name": "those who drift",
+    "type": "group",
+    "url": "/entities/g.those-who-drift--7ec22664/",
+    "blurb": "",
+    "searchText": "those who drift group warning  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "warning"
+  },
+  {
+    "id": "g.those-who-had-compassion-on-prisoners--8546cac5",
+    "name": "those who had compassion on prisoners",
+    "type": "group",
+    "url": "/entities/g.those-who-had-compassion-on-prisoners--8546cac5/",
+    "blurb": "",
+    "searchText": "those who had compassion on prisoners group solidarity  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "solidarity"
+  },
+  {
+    "id": "g.those-who-neglect-so-great-a-salvation--9ec0c6a6",
+    "name": "those who neglect so great a salvation",
+    "type": "group",
+    "url": "/entities/g.those-who-neglect-so-great-a-salvation--9ec0c6a6/",
+    "blurb": "",
+    "searchText": "those who neglect so great a salvation group warning  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "warning"
+  },
+  {
+    "id": "g.wanderers-in-deserts-and-mountains--81e5b8e2",
+    "name": "wanderers in deserts and mountains",
+    "type": "group",
+    "url": "/entities/g.wanderers-in-deserts-and-mountains--81e5b8e2/",
+    "blurb": "",
+    "searchText": "wanderers in deserts and mountains group persecution  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "persecution"
+  },
+  {
+    "id": "g.we-are-not-of-those-who-shrink-back--2162bc66",
+    "name": "we are not of those who shrink back",
+    "type": "group",
+    "url": "/entities/g.we-are-not-of-those-who-shrink-back--2162bc66/",
+    "blurb": "",
+    "searchText": "we are not of those who shrink back group perseverance  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "perseverance"
+  },
+  {
+    "id": "g.wilderness-generation--dd929cd6",
+    "name": "Wilderness generation",
+    "type": "group",
+    "url": "/entities/g.wilderness-generation--dd929cd6/",
+    "blurb": "",
+    "searchText": "wilderness generation group example-negative  ",
+    "references": 1,
+    "books": [
+      "Hebrews"
+    ],
+    "category": "example-negative"
+  }
+]

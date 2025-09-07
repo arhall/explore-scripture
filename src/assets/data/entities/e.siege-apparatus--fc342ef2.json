@@ -1,0 +1,18 @@
+{
+  "id": "e.siege-apparatus--fc342ef2",
+  "name": "Siege apparatus",
+  "type": "entity",
+  "references": [
+    "Hab 1:10"
+  ],
+  "category": "military",
+  "blurb": "Nations mocked by the Chaldeans’ siege craft; fortresses fall like sand heaps.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      1
+    ]
+  }
+}

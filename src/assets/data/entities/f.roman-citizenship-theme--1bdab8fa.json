@@ -1,0 +1,25 @@
+{
+  "name": "Roman citizenship (theme)",
+  "type": "figure",
+  "category": "theme",
+  "references": [
+    "Acts 16:37–39",
+    "Acts 22:25–29"
+  ],
+  "aka": [],
+  "id": "f.roman-citizenship-theme--1bdab8fa",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      16,
+      22
+    ]
+  }
+}

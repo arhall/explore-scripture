@@ -1,0 +1,27 @@
+{
+  "name": "Every knee bow; every tongue confess (Isa 45:23)",
+  "type": "figure",
+  "category": "ot-echo",
+  "references": [
+    "Phil 2:10–11"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Isa 45:23",
+      "type": "quotation"
+    }
+  ],
+  "aka": [],
+  "id": "f.every-knee-bow-every-tongue-confess-isa-45-23--cf07e528",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Philippians": [
+      2
+    ]
+  }
+}

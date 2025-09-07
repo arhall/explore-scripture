@@ -1,0 +1,19 @@
+{
+  "name": "Enoch",
+  "type": "person",
+  "category": "faith-example",
+  "references": [
+    "Heb 11:5",
+    "Jude 14"
+  ],
+  "aka": [],
+  "id": "p.enoch--50efb186",
+  "book_references": {
+    "Hebrews": [
+      11
+    ],
+    "Jude": [
+      14
+    ]
+  }
+}

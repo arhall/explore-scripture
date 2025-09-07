@@ -1,0 +1,21 @@
+{
+  "name": "Feast of Trumpets (Yom Teruah)",
+  "type": "entity",
+  "references": [
+    "Leviticus 23:23–25"
+  ],
+  "blurb": "Rest with trumpet blasts—summons to sabbath joy and reflection.",
+  "category": "ritual",
+  "cross_references": [
+    "Numbers 28–29"
+  ],
+  "id": "e.feast-of-trumpets.yom-teruah--c7eaec8a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Leviticus": [
+      23
+    ]
+  }
+}

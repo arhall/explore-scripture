@@ -1,0 +1,21 @@
+{
+  "name": "Stachys",
+  "type": "person",
+  "category": "beloved",
+  "references": [
+    "Rom 16:9"
+  ],
+  "aka": [],
+  "id": "p.stachys--6254cafa",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      16
+    ]
+  }
+}

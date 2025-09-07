@@ -1,0 +1,18 @@
+{
+  "name": "Editorial refrain: ‘No king in Israel…’",
+  "type": "entity",
+  "references": [
+    "Judges 17:6; 18:1; 19:1; 21:25"
+  ],
+  "blurb": "Literary signal that frames the anarchy of the era and hints at need for righteous kingship.",
+  "category": "summary",
+  "id": "e.editorial-refrain-no-king-in-israel--79444244",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      17
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Spain",
+  "type": "entity",
+  "category": "region",
+  "references": [
+    "Rom 15:24,28"
+  ],
+  "aka": [],
+  "id": "e.spain--2bc0dfb4",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      15
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Keilah (rescued then potential betrayal)",
+  "type": "entity",
+  "references": [
+    "1 Samuel 23:1–13"
+  ],
+  "blurb": "Saved by David but ready to surrender him—prayerful prudence redirects the fugitive.",
+  "category": "place",
+  "id": "e.keilah.rescued-then-potential-betrayal--bffd052d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      23
+    ]
+  }
+}

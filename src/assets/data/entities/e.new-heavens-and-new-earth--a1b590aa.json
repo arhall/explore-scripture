@@ -1,0 +1,19 @@
+{
+  "name": "New heavens and new earth",
+  "type": "entity",
+  "references": [
+    "Isaiah 65–66"
+  ],
+  "blurb": "Long life, peaceable creation, and universal worship—final vision crowns the book.",
+  "category": "eschatology",
+  "id": "e.new-heavens-and-new-earth--a1b590aa",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Isaiah": [
+      65,
+      66
+    ]
+  }
+}

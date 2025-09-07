@@ -1,0 +1,25 @@
+{
+  "name": "dragon (Satan)",
+  "type": "person",
+  "category": "adversary",
+  "references": [
+    "Rev 12",
+    "Rev 12:3-17"
+  ],
+  "aka": [
+    "the devil",
+    "the ancient serpent"
+  ],
+  "id": "p.dragon-satan--4898b1bc",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Revelation": [
+      12
+    ]
+  }
+}

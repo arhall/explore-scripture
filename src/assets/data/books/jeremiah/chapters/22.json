@@ -1,0 +1,28 @@
+{
+  "book": "Jeremiah",
+  "chapter": 22,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "p.jehoahaz-king-of-judah.shallum--a694c895",
+      "name": "Jehoahaz (Shallum) king of Judah",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1
+    },
+    {
+      "id": "p.jehoiakim-king-of-judah.eliakim--cc2faeb8",
+      "name": "Jehoiakim (Eliakim) king of Judah",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1
+    },
+    {
+      "id": "p.jehoiachin-king-of-judah.coniah-jeconiah--3357f140",
+      "name": "Jehoiachin (Coniah/Jeconiah) king of Judah",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Tel‑Abib (Tel‑aviv) by the Chebar",
+  "type": "entity",
+  "references": [
+    "Ezekiel 3:15"
+  ],
+  "blurb": "Settlement where Ezekiel sits overwhelmed seven days; pastoral incubation before speech.",
+  "category": "place",
+  "id": "e.tel-abib-by-the-chebar.tel-aviv--8a12eae3",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      3
+    ]
+  }
+}

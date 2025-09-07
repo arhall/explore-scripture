@@ -1,0 +1,15 @@
+{
+  "name": "spiritual house",
+  "type": "entity",
+  "category": "ecclesiology",
+  "references": [
+    "1 Pet 2:5"
+  ],
+  "aka": [],
+  "id": "e.spiritual-house--54c341a0",
+  "book_references": {
+    "1 Peter": [
+      2
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "f.superscription--0ed1f723",
+  "name": "Superscription",
+  "type": "figure",
+  "references": [
+    "Zeph 1:1",
+    "Mal 1:1"
+  ],
+  "category": "book-frame",
+  "blurb": "Names the prophet, genealogy, and Josian context—signals authority and possible royal descent.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zephaniah": [
+      1
+    ],
+    "Malachi": [
+      1
+    ]
+  }
+}

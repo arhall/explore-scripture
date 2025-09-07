@@ -1,0 +1,14 @@
+{
+  "name": "angel standing in the sun",
+  "type": "person",
+  "category": "angelic",
+  "references": [
+    "Rev 19:17"
+  ],
+  "id": "p.angel-standing-in-the-sun--55f3553b",
+  "book_references": {
+    "Revelation": [
+      19
+    ]
+  }
+}

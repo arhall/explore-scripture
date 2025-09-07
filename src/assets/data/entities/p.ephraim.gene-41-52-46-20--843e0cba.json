@@ -1,0 +1,22 @@
+{
+  "name": "Ephraim",
+  "type": "person",
+  "references": [
+    "Genesis 41:52; 46:20"
+  ],
+  "blurb": "Younger son of Joseph who receives the greater blessing and lends his name to the northern kingdom.",
+  "category": "genealogy",
+  "cross_references": [
+    "Genesis 48:14–20",
+    "Isaiah 7:2"
+  ],
+  "id": "p.ephraim.gene-41-52-46-20--843e0cba",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      41
+    ]
+  }
+}

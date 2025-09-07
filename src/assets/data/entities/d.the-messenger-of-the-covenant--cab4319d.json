@@ -1,0 +1,19 @@
+{
+  "id": "d.the-messenger-of-the-covenant--cab4319d",
+  "name": "The messenger of the covenant",
+  "type": "divine",
+  "references": [
+    "Mal 3:1"
+  ],
+  "category": "theophany-title",
+  "note": "Interpretations vary: angelic, theophanic, or messianic; treated here as divine title with figure cross-link.",
+  "blurb": "The Lord whom you seek comes suddenly to his temple to purify and judge.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      3
+    ]
+  }
+}

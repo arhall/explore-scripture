@@ -1,0 +1,934 @@
+{
+  "book": "Micah",
+  "coverage": "Full Micah: prophet & superscription; courtroom theophany; capitals and Shephelah puns; corrupt rulers, priests, and prophets; social theft and victims; remnant; messianic shepherd-king from Bethlehem, Breaker, Zion peace vision; exile to Babylon and rescue; enemies (Assyria, nations); historical allusions (Exodus leaders, Balak/Balaam, Omri/Ahab); ethics of 6:8, forgiveness and covenant doxology; rhetorical structure; purge program; reception history.",
+  "generated_at": "2025-09-02T18:55:19.314742",
+  "version": "v1.0-micah-all-expanded",
+  "id_scheme": "Cross-book stable by (type+primary-slug) with deterministic hash; alias reuse for shared entities.",
+  "sections": [
+    {
+      "section": "Superscription & Prophet",
+      "entries": [
+        "Micah of Moresheth",
+        "Moresheth-Gath (hometown)",
+        "Jotham of Judah",
+        "Ahaz of Judah",
+        "Hezekiah of Judah",
+        "Assyrian era backdrop",
+        "Contemporaries: Isaiah, Hosea, Amos"
+      ]
+    },
+    {
+      "section": "Divine Courtroom & Theophany",
+      "entries": [
+        "YHWH the Witness-Judge",
+        "Hear, you peoples—all of you",
+        "Mountains and hills as witnesses",
+        "Covenant lawsuit (rîb)",
+        "The LORD from his holy temple",
+        "The LORD comes down, treads high places",
+        "Mountains melt, valleys split"
+      ]
+    },
+    {
+      "section": "Cities & Capitals Under Judgment",
+      "entries": [
+        "Samaria (ruin)",
+        "Jerusalem/Zion (corrupt foundations)",
+        "Gath (‘Tell it not’)"
+      ]
+    },
+    {
+      "section": "Philistine & Shephelah Town Wordplays",
+      "entries": [
+        "Beth-le-aphrah (House of Dust)",
+        "Shaphir (Beautiful)",
+        "Zaanan (Going Out)",
+        "Beth-ezel (House of Support)",
+        "Maroth (Bitterness)",
+        "Lachish",
+        "Moresheth-gath (Dowry-town)",
+        "Achzib (Deception)",
+        "Mareshah (Conqueror)",
+        "Adullam"
+      ]
+    }
+  ],
+  "entries_count": 108,
+  "entries": [
+    {
+      "id": "p.micah-of-moresheth--4e9f3b2a",
+      "name": "Micah of Moresheth",
+      "type": "person",
+      "references": ["Micah 1:1"],
+      "category": "prophet",
+      "relations": {"hometown": "Moresheth-Gath"},
+      "blurb": "Rural prophet from Moresheth-Gath, speaking bluntly against urban corruption in Samaria and Jerusalem."
+    },
+    {
+      "id": "e.moresheth-gath-hometown--7b2fa14c",
+      "name": "Moresheth-Gath (hometown)",
+      "type": "entity",
+      "references": ["Micah 1:14"],
+      "category": "place",
+      "blurb": "Shephelah town in Judah’s southwest; Micah’s rural roots ground his agrarian ethical vision."
+    },
+    {
+      "id": "p.jotham-of-judah--0d9cfa12",
+      "name": "Jotham of Judah",
+      "type": "person",
+      "references": ["Micah 1:1"],
+      "category": "king",
+      "blurb": "First of the kings in Micah’s superscription; period of relative stability before Ahaz."
+    },
+    {
+      "id": "p.ahaz-of-judah--73ce91b0",
+      "name": "Ahaz of Judah",
+      "type": "person",
+      "references": ["Micah 1:1"],
+      "category": "king",
+      "blurb": "Crisis reign marked by Syro-Ephraimite war and Assyrian entanglements; religious compromise proliferates."
+    },
+    {
+      "id": "p.hezekiah-of-judah--6b2d11f9",
+      "name": "Hezekiah of Judah",
+      "type": "person",
+      "references": ["Micah 1:1"],
+      "category": "king",
+      "blurb": "Reformer king during Assyrian pressure; Micah’s critique shapes later repentance (cf. Jer 26:18)."
+    },
+    {
+      "id": "e.assyrian-era-backdrop--c2d45f3e",
+      "name": "Assyrian era backdrop",
+      "type": "entity",
+      "references": ["Micah (overall)"],
+      "category": "chronology",
+      "blurb": "Late 8th century BCE context—imperial tribute, siege warfare, deportations looming over both kingdoms."
+    },
+    {
+      "id": "g.contemporaries-isaiah-hosea-amos--d19c7a62",
+      "name": "Contemporaries: Isaiah, Hosea, Amos",
+      "type": "group",
+      "references": ["Micah 1:1 (historical)"],
+      "category": "intertext",
+      "blurb": "Micah overlaps with other 8th-century prophets; themes echo and spar with Isaiah 2, Hos 4, Am 5."
+    },
+    {
+      "id": "d.yhwh-the-witness-judge--a329f8d0",
+      "name": "YHWH the Witness-Judge",
+      "type": "divine",
+      "references": ["Micah 1:2", "Micah 6:1–2"],
+      "category": "courtroom",
+      "blurb": "God summons creation to hear the covenant case; plaintiff and judge in one."
+    }
+    {
+      "id": "e.hear-you-peoples-all-of-you--0de239fc",
+      "name": "Hear, you peoples—all of you",
+      "type": "entity",
+      "references": ["Micah 1:2"],
+      "category": "summons",
+      "blurb": "Universal summons; the case against Israel educates the nations."
+    },
+    {
+      "id": "e.mountains-and-hills-as-witnesses--ec12b7aa",
+      "name": "Mountains and hills as witnesses",
+      "type": "entity",
+      "references": ["Micah 6:1–2"],
+      "category": "witnesses",
+      "blurb": "Ancient, enduring witnesses called to testify to Yahweh’s righteous dealings."
+    },
+    {
+      "id": "e.covenant-lawsuit-rib--e89fb61a",
+      "name": "Covenant lawsuit (rîb)",
+      "type": "entity",
+      "references": ["Micah 6:1–8"],
+      "category": "genre",
+      "blurb": "Legal genre frames charges and ethical requirements; justice is covenantal, not merely civic."
+    },
+    {
+      "id": "e.the-lord-from-his-holy-temple--9c5f7f32",
+      "name": "The LORD from his holy temple",
+      "type": "entity",
+      "references": ["Micah 1:2"],
+      "category": "theophany",
+      "blurb": "Judgment emanates from sacred center; holiness does not shield Zion from scrutiny."
+    },
+    {
+      "id": "e.the-lord-comes-down-treads-high-places--b7a8f15e",
+      "name": "The LORD comes down, treads high places",
+      "type": "entity",
+      "references": ["Micah 1:3"],
+      "category": "theophany",
+      "blurb": "Divine warrior imagery: mountains melt like wax before the presence of the LORD."
+    },
+    {
+      "id": "e.mountains-melt-valleys-split--da1934f1",
+      "name": "Mountains melt, valleys split",
+      "type": "entity",
+      "references": ["Micah 1:4"],
+      "category": "portent",
+      "blurb": "Cosmic upheaval as moral earthquake—creation convulses at covenant breach."
+    },
+    {
+      "id": "e.samaria-ruin--c82f43e0",
+      "name": "Samaria (ruin)",
+      "type": "entity",
+      "references": ["Micah 1:6–7"],
+      "category": "city",
+      "blurb": "Northern capital to be made a heap in the field; idolatrous wealth smashed and burned."
+    },
+    {
+      "id": "e.jerusalem-zion-corrupt-foundations--f1a9827c",
+      "name": "Jerusalem/Zion (corrupt foundations)",
+      "type": "entity",
+      "references": ["Micah 3:9–12"],
+      "category": "city",
+      "blurb": "Heads judge for a bribe, priests teach for pay, prophets divine for money—Zion built with blood faces plowing."
+    },
+    {
+      "id": "e.gath-tell-it-not--1bd7f46a",
+      "name": "Gath (‘Tell it not’)",
+      "type": "entity",
+      "references": ["Micah 1:10"],
+      "category": "city",
+      "blurb": "Echoes David’s lament; news management fails to hide judgment’s shame."
+    },
+    {
+      "id": "e.beth-le-aphrah-house-of-dust--d903cf21",
+      "name": "Beth-le-aphrah (House of Dust)",
+      "type": "entity",
+      "references": ["Micah 1:10"],
+      "category": "city-wordplay",
+      "blurb": "Call to roll in the dust—name becomes enacted lament; Judah’s grief goes to ground."
+    },
+    {
+      "id": "e.shaphir-beautiful--c83bf112",
+      "name": "Shaphir (Beautiful)",
+      "type": "entity",
+      "references": ["Micah 1:11"],
+      "category": "city-wordplay",
+      "blurb": "The ‘beautiful’ town goes out naked and ashamed; wordplay exposes reversed fortunes."
+    },
+    {
+      "id": "e.zaanan-going-out--9bf16c7e",
+      "name": "Zaanan (Going Out)",
+      "type": "entity",
+      "references": ["Micah 1:11"],
+      "category": "city-wordplay",
+      "blurb": "‘Going-out’ town cannot go out; siege seals the streets—freedom frozen."
+    },
+    {
+      "id": "e.beth-ezel-house-of-support--acf3b812",
+      "name": "Beth-ezel (House of Support)",
+      "type": "entity",
+      "references": ["Micah 1:11"],
+      "category": "city-wordplay",
+      "blurb": "Neighbor’s support withdrawn; the house of ‘support’ offers none in crisis."
+    },
+    {
+      "id": "e.maroth-bitterness--f7bcd32a",
+      "name": "Maroth (Bitterness)",
+      "type": "entity",
+      "references": ["Micah 1:12"],
+      "category": "city-wordplay",
+      "blurb": "Waits anxiously for good, but disaster comes from the LORD—bitter providence."
+    },
+    {
+      "id": "e.lachish--ae4391d0",
+      "name": "Lachish",
+      "type": "entity",
+      "references": ["Micah 1:13"],
+      "category": "city-wordplay",
+      "blurb": "War-horse city—first to import northern idolatry into Judah; a relay station of sin."
+    },
+    {
+      "id": "e.moresheth-gath-dowry-town--cf71fbd3",
+      "name": "Moresheth-gath (Dowry-town)",
+      "type": "entity",
+      "references": ["Micah 1:14"],
+      "category": "city-wordplay",
+      "blurb": "‘Dowry’ pun: parting gift to heirs—Micah’s home area is handed over."
+    },
+    {
+      "id": "e.achzib-deception--d28b173a",
+      "name": "Achzib (Deception)",
+      "type": "entity",
+      "references": ["Micah 1:14"],
+      "category": "city-wordplay",
+      "blurb": "‘Deceptive brook’—promises water but dries up; kings of Israel find it a lie."
+    },
+    {
+      "id": "e.mareshah-conqueror--a72d4cfe",
+      "name": "Mareshah (Conqueror)",
+      "type": "entity",
+      "references": ["Micah 1:15"],
+      "category": "city-wordplay",
+      "blurb": "A ‘conqueror’ will indeed come to the ‘Conqueror-town’—poetic justice."
+    },
+    {
+      "id": "e.adullam--eb613f40",
+      "name": "Adullam",
+      "type": "entity",
+      "references": ["Micah 1:15–16"],
+      "category": "city-wordplay",
+      "blurb": "Refuge of David now becomes repository of Judah’s glory—exile imagery revived."
+    }
+    ,
+    {
+      "id": "g.heads-of-jacob-rulers-of-israel--f3c91a7e",
+      "name": "Heads of Jacob / rulers of Israel",
+      "type": "group",
+      "references": ["Micah 3:1–3"],
+      "category": "leaders",
+      "blurb": "Cannibal rulers who flay and boil the people—grotesque metaphor for predatory governance."
+    },
+    {
+      "id": "g.judges-who-sell-justice--a0f2b7c9",
+      "name": "Judges who sell justice",
+      "type": "group",
+      "references": ["Micah 3:11"],
+      "category": "corruption",
+      "blurb": "Verdicts priced; courts become marketplaces—law as luxury good."
+    },
+    {
+      "id": "g.priests-who-teach-for-a-price--2cf84c31",
+      "name": "Priests who teach for a price",
+      "type": "group",
+      "references": ["Micah 3:11"],
+      "category": "corruption",
+      "blurb": "Instruction monetized; sacred vocation becomes side-hustle."
+    },
+    {
+      "id": "g.prophets-who-cry-peace-when-fed--c1a97230",
+      "name": "Prophets who cry ‘Peace’ when fed",
+      "type": "group",
+      "references": ["Micah 3:5"],
+      "category": "false-prophets",
+      "blurb": "Stomachs steer sermons; oracles become meal tickets."
+    },
+    {
+      "id": "e.night-and-darkness-for-seers--c4a6b230",
+      "name": "Night and darkness for seers",
+      "type": "entity",
+      "references": ["Micah 3:6–7"],
+      "category": "judgment",
+      "blurb": "Revelation withdrawn from hireling prophets; shame covers their faces."
+    },
+    {
+      "id": "e.build-zion-with-blood--1e8739c4",
+      "name": "Build Zion with blood",
+      "type": "entity",
+      "references": ["Micah 3:10"],
+      "category": "corruption",
+      "blurb": "Urban splendor erected on violence; architecture as indictment."
+    },
+    {
+      "id": "e.is-not-the-lord-among-us-presumption--ab7f129c",
+      "name": "‘Is not the LORD among us?’ presumption",
+      "type": "entity",
+      "references": ["Micah 3:11"],
+      "category": "presumption",
+      "blurb": "Slogan of invulnerability—misreads covenant presence as talisman."
+    },
+    {
+      "id": "p.micah-filled-with-power-justice-might--9f1c3b67",
+      "name": "Micah filled with power, justice, might",
+      "type": "person",
+      "references": ["Micah 3:8"],
+      "category": "prophet",
+      "blurb": "True prophet stands in the Spirit to name sin without price tag."
+    },
+
+    {
+      "id": "g.devisers-of-iniquity-at-mornings-light--e013f9ac",
+      "name": "Devisers of iniquity at morning’s light",
+      "type": "group",
+      "references": ["Micah 2:1"],
+      "category": "oppressors",
+      "blurb": "Insomnia of greed—plotting on pillows, practicing at sunrise."
+    },
+    {
+      "id": "e.seizing-fields-and-houses--48f9a2b0",
+      "name": "Seizing fields and houses",
+      "type": "entity",
+      "references": ["Micah 2:2"],
+      "category": "injustice",
+      "blurb": "Land-grabs undo Jubilee economics—inheritance stolen by pen and power."
+    },
+    {
+      "id": "g.evicting-women-from-pleasant-houses--bf92a614",
+      "name": "Evicting women from pleasant houses",
+      "type": "group",
+      "references": ["Micah 2:9"],
+      "category": "victims",
+      "blurb": "Mothers displaced; domestic security shattered by elites."
+    },
+    {
+      "id": "g.children-stripped-of-glory-forever--bcf1370a",
+      "name": "Children stripped of glory forever",
+      "type": "group",
+      "references": ["Micah 2:9"],
+      "category": "victims",
+      "blurb": "Intergenerational theft—future clipped by present greed."
+    },
+    {
+      "id": "e.no-one-to-cast-the-measuring-line-by-lot--31c8a2fd",
+      "name": "No one to cast the measuring line by lot",
+      "type": "entity",
+      "references": ["Micah 2:5"],
+      "category": "legal",
+      "blurb": "Assembly rights revoked; dispossessed silenced in land allocation."
+    },
+    {
+      "id": "e.do-not-preach-they-preach--d8a3c0f1",
+      "name": "‘Do not preach!’ they preach",
+      "type": "entity",
+      "references": ["Micah 2:6"],
+      "category": "opposition",
+      "blurb": "Censorship of truth; prophetic gag order from comfortable pews."
+    },
+    {
+      "id": "g.merchants-with-false-scales-and-weights--7f2ed501",
+      "name": "Merchants with false scales and weights",
+      "type": "group",
+      "references": ["Micah 6:10–11"],
+      "category": "commerce",
+      "blurb": "Economic fraud sacralized—bags of deceit, stones that cheat."
+    },
+    {
+      "id": "g.violence-in-the-houses-of-the-rich--e1b4a3d2",
+      "name": "Violence in the houses of the rich",
+      "type": "group",
+      "references": ["Micah 6:12"],
+      "category": "corruption",
+      "blurb": "Palatial neighborhoods built on blood and lies."
+    },
+    {
+      "id": "e.no-cluster-to-eat-first-ripe-fig-desired--f07c29be",
+      "name": "No cluster to eat—first-ripe fig desired",
+      "type": "entity",
+      "references": ["Micah 7:1"],
+      "category": "lament",
+      "blurb": "Prophet’s harvest lament; righteous vanish like summer fruit."
+    },
+    {
+      "id": "e.the-best-of-them-is-like-a-brier--99c703e5",
+      "name": "The best of them is like a brier",
+      "type": "entity",
+      "references": ["Micah 7:4"],
+      "category": "metaphor",
+      "blurb": "Elite likened to thorns—approach means snag and wound."
+    },
+    {
+      "id": "e.trust-not-in-neighbor-guard-your-lips--1d2b9e70",
+      "name": "Trust not in neighbor; guard your lips",
+      "type": "entity",
+      "references": ["Micah 7:5–6"],
+      "category": "decay",
+      "blurb": "Social fabric frays so far that households divide; intimacy becomes risk."
+    },
+    {
+      "id": "g.faithful-remnant-gathered-healed--a7f43d10",
+      "name": "Faithful remnant (gathered, healed)",
+      "type": "group",
+      "references": ["Micah 2:12–13", "Micah 4:6–7", "Micah 5:7–8", "Micah 7:18–20"],
+      "category": "remnant",
+      "blurb": "God assembles the lame and banished; remnant becomes both dew of blessing and lion of judgment."
+    },
+
+    {
+      "id": "f.the-breaker-goes-up-before-them--0f6132d4",
+      "name": "The Breaker goes up before them",
+      "type": "figure",
+      "references": ["Micah 2:13"],
+      "category": "messianic",
+      "blurb": "Shepherd-king who opens the gate; people follow; the LORD at their head."
+    },
+    {
+      "id": "e.bethlehem-ephrathah-small-yet-ruler-emerges--a1730d2b",
+      "name": "Bethlehem Ephrathah—small yet ruler emerges",
+      "type": "entity",
+      "references": ["Micah 5:2"],
+      "category": "messianic",
+      "blurb": "From the least comes the greatest; origins ‘from of old’ signal Davidic hope renewed."
+    },
+    {
+      "id": "f.he-shall-stand-and-shepherd--c95b1704",
+      "name": "He shall stand and shepherd in LORD’s strength",
+      "type": "figure",
+      "references": ["Micah 5:4"],
+      "category": "messianic",
+      "blurb": "Stability and security flow from messianic shepherding; greatness to the ends of the earth."
+    },
+    {
+      "id": "f.he-shall-be-our-peace--b1a64d2c",
+      "name": "He shall be our peace",
+      "type": "figure",
+      "references": ["Micah 5:5"],
+      "category": "messianic",
+      "blurb": "Messianic identity equated with shalom—personified peace."
+    },
+    {
+      "id": "g.seven-shepherds-and-eight-leaders--f7e10c9a",
+      "name": "Seven shepherds and eight leaders",
+      "type": "group",
+      "references": ["Micah 5:5"],
+      "category": "leaders",
+      "blurb": "Enigmatic fullness of leadership raised against Assyria—symbolic abundance of protection."
+    },
+    {
+      "id": "e.they-shepherd-assyria-with-the-sword--aa2f601e",
+      "name": "They shepherd Assyria with the sword",
+      "type": "entity",
+      "references": ["Micah 5:6"],
+      "category": "warfare",
+      "blurb": "Aggressive defense imagery; enemies’ strongholds subdued."
+    },
+    {
+      "id": "e.remnant-like-dew-among-nations--8a1c0f55",
+      "name": "Remnant like dew among nations",
+      "type": "entity",
+      "references": ["Micah 5:7"],
+      "category": "remnant",
+      "blurb": "Gentle, heaven-sent refreshment—mission without dependence."
+    },
+    {
+      "id": "e.remnant-like-a-lion-among-flocks--e7b2a134",
+      "name": "Remnant like a lion among flocks",
+      "type": "entity",
+      "references": ["Micah 5:8–9"],
+      "category": "remnant",
+      "blurb": "Strength and inevitability—none can deliver from their hand."
+    },
+    {
+      "id": "g.many-nations-come-to-zion--c0f6a213",
+      "name": "Many nations come to Zion",
+      "type": "group",
+      "references": ["Micah 4:1–2"],
+      "category": "nations",
+      "blurb": "International pilgrimage for Torah instruction—mission by attraction."
+    },
+    {
+      "id": "e.law-torah-goes-forth-from-zion--baf021c8",
+      "name": "Law/Torah goes forth from Zion",
+      "type": "entity",
+      "references": ["Micah 4:2"],
+      "category": "torah",
+      "blurb": "Word from Jerusalem re-orders the world’s ethics."
+    },
+    {
+      "id": "e.swords-into-plowshares--c49b8d31",
+      "name": "Swords into plowshares",
+      "type": "entity",
+      "references": ["Micah 4:3"],
+      "category": "peace-vision",
+      "blurb": "Disarmament by discipleship; warfare replaced by agrarian labor."
+    },
+    {
+      "id": "e.each-under-vine-and-fig-tree--e20a7b15",
+      "name": "Each under vine and fig tree",
+      "type": "entity",
+      "references": ["Micah 4:4"],
+      "category": "peace-vision",
+      "blurb": "Security without militarism; sabbath economy embodied."
+    },
+    {
+      "id": "e.we-will-walk-in-the-name-of-the-lord--a7f3e2c1",
+      "name": "We will walk in the name of the LORD",
+      "type": "entity",
+      "references": ["Micah 4:5"],
+      "category": "identity",
+      "blurb": "Covenant distinctiveness affirmed amidst pluralism."
+    },
+    {
+      "id": "g.gathering-the-lame-and-the-banished--74e1bd3a",
+      "name": "Gathering the lame and the banished",
+      "type": "group",
+      "references": ["Micah 4:6–7"],
+      "category": "remnant",
+      "blurb": "God’s preferential option for the broken—kingdom composed of healed exiles."
+    },
+    {
+      "id": "e.tower-of-the-flock-migdal-eder--1f8d3e6c",
+      "name": "Tower of the flock (Migdal-eder)",
+      "type": "entity",
+      "references": ["Micah 4:8"],
+      "category": "symbol",
+      "blurb": "Watchtower image; first dominion restored to daughter Zion—pastoral royalty."
+    },
+    {
+      "id": "f.daughter-zion-in-labor--b0a6c9f2",
+      "name": "Daughter Zion in labor",
+      "type": "figure",
+      "references": ["Micah 4:9–10"],
+      "category": "personification",
+      "blurb": "Birth pangs before deliverance: exile to Babylon precedes rescue."
+    },
+    {
+      "id": "e.exile-to-babylon-there-you-shall-be-rescued--d8b120c9",
+      "name": "Exile to Babylon; there you shall be rescued",
+      "type": "entity",
+      "references": ["Micah 4:10"],
+      "category": "exile-hope",
+      "blurb": "Specific exile-rescue horizon—judgment braided with hope."
+    },
+    {
+      "id": "e.arise-and-thresh-daughter-zion--8d1f37b0",
+      "name": "Arise and thresh, daughter Zion",
+      "type": "entity",
+      "references": ["Micah 4:13"],
+      "category": "warfare",
+      "blurb": "Horns of iron, hoofs of bronze—sanctified strength to devote spoil to the LORD."
+    },
+
+    {
+      "id": "g.assyria-invader--4e70c8d1",
+      "name": "Assyria (invader)",
+      "type": "group",
+      "references": ["Micah 5:5–6"],
+      "category": "nation",
+      "blurb": "Primary geopolitical threat in Micah’s horizon; foil for messianic peace."
+    },
+    {
+      "id": "g.egypt-and-assyria-restored-pathways--aa9f3d04",
+      "name": "Egypt & Assyria restored pathways",
+      "type": "group",
+      "references": ["Micah 7:12"],
+      "category": "nations",
+      "blurb": "Future highway imagery—diaspora gathered from rival powers."
+    },
+    {
+      "id": "e.babylon-named-exile--0f7c1b62",
+      "name": "Babylon (named exile)",
+      "type": "entity",
+      "references": ["Micah 4:10"],
+      "category": "city",
+      "blurb": "City of captivity and stage of promised rescue—intermediate chastening in salvation history."
+    },
+    {
+      "id": "g.nations-who-gloat-over-zion--c7a0e3d5",
+      "name": "Nations who gloat over Zion",
+      "type": "group",
+      "references": ["Micah 4:11", "Micah 7:10", "Micah 7:16–17"],
+      "category": "nations",
+      "blurb": "Coalition of mockers to be shamed; they will lick dust like serpents and fear the LORD."
+    },
+
+    {
+      "id": "g.moses-aaron-miriam-exodus-leaders--9f0e3ab1",
+      "name": "Moses, Aaron, Miriam (Exodus leaders)",
+      "type": "group",
+      "references": ["Micah 6:4"],
+      "category": "exodus",
+      "blurb": "Exodus credentials ground the lawsuit—past grace magnifies present guilt."
+    },
+    {
+      "id": "g.balak-and-balaam--a7d309e1",
+      "name": "Balak and Balaam",
+      "type": "group",
+      "references": ["Micah 6:5"],
+      "category": "allusion",
+      "blurb": "Narrative of attempted cursing turned to blessing; remember to know the LORD’s righteous acts."
+    },
+    {
+      "id": "e.from-shittim-to-gilgal--8c2f1a76",
+      "name": "From Shittim to Gilgal",
+      "type": "entity",
+      "references": ["Micah 6:5"],
+      "category": "geography",
+      "blurb": "Journey markers from wilderness to promised land—memory lane as moral argument."
+    },
+    {
+      "id": "g.statutes-of-omri-works-of-ahab--c1e8d70a",
+      "name": "Statutes of Omri and works of the house of Ahab",
+      "type": "group",
+      "references": ["Micah 6:16"],
+      "category": "royal-precedent",
+      "blurb": "Northern dynasty paradigms of apostasy imported into Judah; policy becomes idolatry."
+    },
+
+    {
+      "id": "e.with-what-shall-i-come-before-the-lord--7a9f0ed3",
+      "name": "With what shall I come before the LORD?",
+      "type": "entity",
+      "references": ["Micah 6:6–7"],
+      "category": "worship",
+      "blurb": "Escalating sacrifices—calves, thousands of rams, rivers of oil, firstborn—exposed as missing the point."
+    },
+    {
+      "id": "e.do-justice--c01a7e93",
+      "name": "Do justice",
+      "type": "entity",
+      "references": ["Micah 6:8"],
+      "category": "ethic",
+      "blurb": "Public right-ordering—courts, contracts, care for vulnerable—central to covenant fidelity."
+    },
+    {
+      "id": "e.love-hesed-covenant-loyalty--e9710a64",
+      "name": "Love hesed (covenant loyalty)",
+      "type": "entity",
+      "references": ["Micah 6:8"],
+      "category": "ethic",
+      "blurb": "Steadfast love as social glue; mercy beyond reciprocity."
+    },
+    {
+      "id": "e.walk-humbly-with-your-god--1c9f7302",
+      "name": "Walk humbly with your God",
+      "type": "entity",
+      "references": ["Micah 6:8"],
+      "category": "ethic",
+      "blurb": "Posture of dependence and teachability under divine rule."
+    },
+    {
+      "id": "e.who-is-a-god-like-you--b3f108a0",
+      "name": "Who is a God like you? (Mi-kah-yah)",
+      "type": "entity",
+      "references": ["Micah 7:18"],
+      "category": "doxology",
+      "blurb": "Prophet’s name becomes doxology—God delights in hesed and pardons iniquity."
+    },
+    {
+      "id": "e.he-will-tread-our-iniquities-underfoot--ac078f53",
+      "name": "He will tread our iniquities underfoot",
+      "type": "entity",
+      "references": ["Micah 7:19"],
+      "category": "forgiveness",
+      "blurb": "Sin personified and crushed—violence redirected toward evil itself."
+    },
+    {
+      "id": "e.cast-all-our-sins-into-the-depths-of-the-sea--3f1a7b26",
+      "name": "Cast all our sins into the depths of the sea",
+      "type": "entity",
+      "references": ["Micah 7:19"],
+      "category": "forgiveness",
+      "blurb": "Exodus-colored image of irreversible pardon—no dredging allowed."
+    },
+    {
+      "id": "e.light-in-darkness-bear-indignation--607b1fe2",
+      "name": "Light in darkness—bear indignation, He will plead my cause",
+      "type": "entity",
+      "references": ["Micah 7:8–9"],
+      "category": "hope",
+      "blurb": "Penitential hope: divine advocacy follows discipline; dawn after night."
+    },
+    {
+      "id": "e.faithfulness-to-jacob-steadfast-love-to-abraham--7ec10a4d",
+      "name": "Faithfulness to Jacob, steadfast love to Abraham",
+      "type": "entity",
+      "references": ["Micah 7:20"],
+      "category": "covenant",
+      "blurb": "Covenant continuity—promises to patriarchs underwrite restoration."
+    },
+    {
+      "id": "e.god-as-shepherd-of-his-people--b10f3ae9",
+      "name": "God as shepherd of his people",
+      "type": "entity",
+      "references": ["Micah 7:14"],
+      "category": "shepherd",
+      "blurb": "Pastoral petition for Bashan and Gilead pastures as in days of old."
+    },
+
+    {
+      "id": "e.dishonest-scales-and-deceitful-weights--c78a1f0b",
+      "name": "Dishonest scales and deceitful weights",
+      "type": "entity",
+      "references": ["Micah 6:10–11"],
+      "category": "economy",
+      "blurb": "Marketplace sins that corrode trust—God weighs the weights."
+    },
+    {
+      "id": "e.house-of-the-wicked-storehouses-of-violence--a41b09ce",
+      "name": "House of the wicked—storehouses of violence",
+      "type": "entity",
+      "references": ["Micah 6:12"],
+      "category": "economy",
+      "blurb": "Supply chains of harm; luxury stocked by oppression."
+    },
+    {
+      "id": "e.cannibal-metaphor-for-rulers--f907a23b",
+      "name": "Cannibal metaphor for rulers",
+      "type": "entity",
+      "references": ["Micah 3:2–3"],
+      "category": "rhetoric",
+      "blurb": "Grotesque image to shock moral senses—people treated as meat."
+    },
+    {
+      "id": "e.vineyard-and-gleaning-imagery--a90b1e7c",
+      "name": "Vineyard and gleaning imagery",
+      "type": "entity",
+      "references": ["Micah 7:1"],
+      "category": "agrarian",
+      "blurb": "No grapes, no figs—harvest failures mirror moral famine."
+    },
+    {
+      "id": "e.vine-and-fig-tree-peace-ideal--4e1a93fd",
+      "name": "Vine & fig tree peace ideal",
+      "type": "entity",
+      "references": ["Micah 4:4"],
+      "category": "agrarian",
+      "blurb": "Domestic abundance and safety—shalom pictured as simple plenty."
+    },
+
+    {
+      "id": "e.micahs-lament-wail-like-jackals--7b0c1fa2",
+      "name": "Micah’s lament—wail like jackals, mourn like ostriches",
+      "type": "entity",
+      "references": ["Micah 1:8"],
+      "category": "lament",
+      "blurb": "Prophet embodies grief; soundscape of judgment."
+    },
+    {
+      "id": "e.woe-oracles--9c0e3ab1",
+      "name": "Woe oracles",
+      "type": "entity",
+      "references": ["Micah 2:1", "Micah 7:1"],
+      "category": "woe",
+      "blurb": "Alas-cries announcing doom upon predation and fruitlessness."
+    },
+    {
+      "id": "e.judgment-hope-alternation-macro-structure--e1a7c0b3",
+      "name": "Judgment–hope alternation (macro-structure)",
+      "type": "entity",
+      "references": ["Micah (overall)"],
+      "category": "structure",
+      "blurb": "Text pulses between threat and promise; pedagogy by oscillation."
+    },
+    {
+      "id": "e.parallel-with-isaiah-2-zion-vision--b7f109a3",
+      "name": "Parallel with Isaiah 2 (Zion vision)",
+      "type": "entity",
+      "references": ["Micah 4:1–3 // Isaiah 2:2–4"],
+      "category": "intertext",
+      "blurb": "Shared oracle of nations streaming; independent witnesses to a common hope."
+    },
+    {
+      "id": "e.therefore-zion-shall-be-plowed-as-a-field--a1e907c3",
+      "name": "Therefore Zion shall be plowed as a field",
+      "type": "entity",
+      "references": ["Micah 3:12"],
+      "category": "rhetoric",
+      "blurb": "Shock verdict; later cited in Jeremiah as precedent for repentance."
+    },
+    {
+      "id": "e.triadic-hear-oracles--cbe7019a",
+      "name": "Triadic ‘Hear’ oracles",
+      "type": "entity",
+      "references": ["Micah 1:2", "Micah 3:1", "Micah 6:1"],
+      "category": "structure",
+      "blurb": "Summons structure organizes the book’s flow from summons to sentence to solution."
+    },
+
+    {
+      "id": "e.cut-off-your-horses--f9a01e3b",
+      "name": "Cut off your horses",
+      "type": "entity",
+      "references": ["Micah 5:10–15"],
+      "category": "purge-note",
+      "blurb": "Military mobility dismantled—trust relocated to God."
+    },
+    {
+      "id": "e.destroy-your-chariots--1a0f7c39",
+      "name": "Destroy your chariots",
+      "type": "entity",
+      "references": ["Micah 5:10–15"],
+      "category": "purge-note",
+      "blurb": "Offensive hardware removed to unlearn war."
+    },
+    {
+      "id": "e.tear-down-your-cities--a0f7c1e3",
+      "name": "Tear down your cities",
+      "type": "entity",
+      "references": ["Micah 5:10–15"],
+      "category": "purge-note",
+      "blurb": "Urban pride humbled; security decoupled from walls."
+    },
+    {
+      "id": "e.throw-down-all-your-strongholds--e70a1c9b",
+      "name": "Throw down all your strongholds",
+      "type": "entity",
+      "references": ["Micah 5:10–15"],
+      "category": "purge-note",
+      "blurb": "Fortifications defanged—no more false refuge."
+    },
+    {
+      "id": "e.cut-off-sorceries--c09a7e13",
+      "name": "Cut off sorceries",
+      "type": "entity",
+      "references": ["Micah 5:10–15"],
+      "category": "purge-note",
+      "blurb": "Manipulative spirituality ended; no spellcraft in Zion."
+    },
+    {
+      "id": "e.no-more-soothsayers--b7e01a9c",
+      "name": "No more soothsayers",
+      "type": "entity",
+      "references": ["Micah 5:10–15"],
+      "category": "purge-note",
+      "blurb": "Fortune-telling silenced; word of the LORD suffices."
+    },
+    {
+      "id": "e.cut-off-carved-images--e10a7f3c",
+      "name": "Cut off carved images",
+      "type": "entity",
+      "references": ["Micah 5:10–15"],
+      "category": "purge-note",
+      "blurb": "Tangible idols removed—art re-purposed to truth."
+    },
+    {
+      "id": "e.cut-down-your-pillars--90e1a7cb",
+      "name": "Cut down your pillars",
+      "type": "entity",
+      "references": ["Micah 5:10–15"],
+      "category": "purge-note",
+      "blurb": "Cultic steles toppled—memory of false gods erased."
+    },
+    {
+      "id": "e.uproot-your-asherah-poles--0a91f7ce",
+      "name": "Uproot your Asherah poles",
+      "type": "entity",
+      "references": ["Micah 5:10–15"],
+      "category": "purge-note",
+      "blurb": "Fertility cult ended at the root; sexuality re-covenanted."
+    },
+    {
+      "id": "e.destroy-your-cities-violence-hubs--a71e0c9f",
+      "name": "Destroy your cities (violence hubs)",
+      "type": "entity",
+      "references": ["Micah 5:10–15"],
+      "category": "purge-note",
+      "blurb": "Repeating emphasis: God prunes instruments of oppression."
+    },
+    {
+      "id": "e.execute-vengeance-on-nations--e7c109af",
+      "name": "Execute vengeance on nations that did not obey",
+      "type": "entity",
+      "references": ["Micah 5:10–15"],
+      "category": "purge-note",
+      "blurb": "Universal moral court—God’s zeal completes the purge."
+    },
+
+    {
+      "id": "e.jeremiah-cites-micah-3-12--f1a0c7b9",
+      "name": "Jeremiah cites Micah (3:12)",
+      "type": "entity",
+      "references": ["Jeremiah 26:18"],
+      "category": "reception",
+      "blurb": "Hezekiah’s generation heeded Micah’s threat—text as precedent for national repentance."
+    },
+    {
+      "id": "e.bethlehem-prophecy-in-the-gospels--a1f0c79b",
+      "name": "Bethlehem prophecy in the Gospels",
+      "type": "entity",
+      "references": ["Matthew 2:6"],
+      "category": "reception",
+      "blurb": "Evangelists read Micah 5:2 as pointing to Jesus’ birth at Bethlehem."
+    },
+    {
+      "id": "e.micah-6-8-in-jewish-and-christian-ethics--c0f1a97e",
+      "name": "Micah 6:8 in Jewish and Christian ethics",
+      "type": "entity",
+      "references": ["Micah 6:8 (reception)"],
+      "category": "reception",
+      "blurb": "Frequently summarized as Torah in miniature; staple of prophetic ethics across traditions."
+    }
+  ]
+}

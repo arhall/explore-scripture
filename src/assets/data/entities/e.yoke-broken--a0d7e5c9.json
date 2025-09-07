@@ -1,0 +1,21 @@
+{
+  "id": "e.yoke-broken--a0d7e5c9",
+  "name": "Yoke broken",
+  "type": "entity",
+  "references": [
+    "Nah 1:13"
+  ],
+  "category": "deliverance",
+  "aka": [
+    "Bonds torn apart"
+  ],
+  "blurb": "Emancipation image: the instruments of oppression are destroyed by divine action.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      1
+    ]
+  }
+}

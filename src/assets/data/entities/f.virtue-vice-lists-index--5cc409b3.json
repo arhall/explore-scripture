@@ -1,0 +1,33 @@
+{
+  "name": "Virtue/Vice lists (index)",
+  "type": "figure",
+  "category": "virtue-vice-index",
+  "references": [
+    "1 Cor 5:10–11",
+    "1 Cor 6:9–10",
+    "1 Cor 13:4–7",
+    "Rom 1:29–31",
+    "Rom 12:9–21",
+    "Rom 13:12–14"
+  ],
+  "aka": [],
+  "id": "f.virtue-vice-lists-index--5cc409b3",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "1 Corinthians": [
+      5,
+      6,
+      13
+    ],
+    "Romans": [
+      1,
+      12,
+      13
+    ]
+  }
+}

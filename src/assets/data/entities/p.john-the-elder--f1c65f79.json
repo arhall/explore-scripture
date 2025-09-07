@@ -1,0 +1,25 @@
+{
+  "name": "John the Elder",
+  "type": "person",
+  "category": "author",
+  "references": [
+    "1 John 1:1-4",
+    "2 John 1",
+    "3 John 1"
+  ],
+  "aka": [
+    "the elder"
+  ],
+  "id": "p.john-the-elder--f1c65f79",
+  "book_references": {
+    "1 John": [
+      1
+    ],
+    "2 John": [
+      1
+    ],
+    "3 John": [
+      1
+    ]
+  }
+}

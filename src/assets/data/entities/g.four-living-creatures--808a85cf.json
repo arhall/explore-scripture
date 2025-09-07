@@ -1,0 +1,23 @@
+{
+  "name": "four living creatures",
+  "type": "group",
+  "category": "heavenly",
+  "references": [
+    "Rev 4–5",
+    "Rev 4:6-8"
+  ],
+  "aka": [],
+  "id": "g.four-living-creatures--808a85cf",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Revelation": [
+      4,
+      5
+    ]
+  }
+}

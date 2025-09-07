@@ -1,0 +1,21 @@
+{
+  "book": "Matthew",
+  "chapter": 24,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "g.chief-priests--dbda0b67",
+      "name": "Chief Priests",
+      "type": "group",
+      "role": "leadership",
+      "refs_count": 2
+    },
+    {
+      "id": "e.olivet-discourse--eefbb50b",
+      "name": "Olivet Discourse",
+      "type": "entity",
+      "role": "discourse",
+      "refs_count": 1
+    }
+  ]
+}

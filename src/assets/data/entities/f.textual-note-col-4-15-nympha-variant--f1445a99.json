@@ -1,0 +1,22 @@
+{
+  "name": "Textual note: Col 4:15 Nympha variant",
+  "type": "figure",
+  "category": "textual-notes",
+  "references": [
+    "Col 4:15"
+  ],
+  "note": "Name and pronoun vary (Nympha/Nymphas; her/his).",
+  "aka": [],
+  "id": "f.textual-note-col-4-15-nympha-variant--f1445a99",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      4
+    ]
+  }
+}

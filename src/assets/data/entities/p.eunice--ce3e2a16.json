@@ -1,0 +1,15 @@
+{
+  "name": "Eunice",
+  "type": "person",
+  "category": "family",
+  "references": [
+    "2 Tim 1:5"
+  ],
+  "aka": [],
+  "id": "p.eunice--ce3e2a16",
+  "book_references": {
+    "2 Timothy": [
+      1
+    ]
+  }
+}

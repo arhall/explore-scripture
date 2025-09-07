@@ -1,0 +1,35 @@
+{
+  "book": "Leviticus",
+  "chapter": 15,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "g.people-of-israel--fa06221e",
+      "name": "People of Israel",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.bodily-discharges.male--7a8fb8bc",
+      "name": "Bodily discharges (male)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    },
+    {
+      "id": "e.bodily-discharges.female--b1988d14",
+      "name": "Bodily discharges (female)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    }
+  ]
+}

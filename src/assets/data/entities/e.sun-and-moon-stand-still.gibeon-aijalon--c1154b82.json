@@ -1,0 +1,18 @@
+{
+  "name": "Sun and moon stand still (Gibeon/Aijalon)",
+  "type": "entity",
+  "references": [
+    "Joshua 10:12–14"
+  ],
+  "blurb": "Unique sign where day lengthens at Joshua’s word—poetic-prophetic warfare framed as the LORD fighting for Israel; massive hailstones accompany victory.",
+  "category": "sign",
+  "id": "e.sun-and-moon-stand-still.gibeon-aijalon--c1154b82",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joshua": [
+      10
+    ]
+  }
+}

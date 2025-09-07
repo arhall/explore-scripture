@@ -1,0 +1,77 @@
+{
+  "book": "Philippians",
+  "chapter": 2,
+  "entity_count": 25,
+  "entities": [
+    {
+      "id": "f.day-of-christ--51813e18",
+      "name": "Day of Christ",
+      "type": "figure",
+      "role": "eschatology",
+      "refs_count": 2
+    },
+    {
+      "id": "f.highly-exalted-the-name-above-every-name--358b6348",
+      "name": "Highly exalted; the Name above every name",
+      "type": "figure",
+      "role": "exaltation",
+      "refs_count": 1
+    },
+    {
+      "id": "f.honor-such-men--e0e88cd5",
+      "name": "Honor such men",
+      "type": "figure",
+      "role": "commendation",
+      "refs_count": 1
+    },
+    {
+      "id": "f.do-all-things-without-grumbling--82bae0cf",
+      "name": "Do all things without grumbling",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.harpagmos-thing-to-be-exploited-or-grasped--3399754d",
+      "name": "Harpagmos—thing to be exploited or grasped",
+      "type": "figure",
+      "role": "lexeme",
+      "refs_count": 1
+    },
+    {
+      "id": "f.every-knee-bow-every-tongue-confess-isa-45-23--cf07e528",
+      "name": "Every knee bow; every tongue confess (Isa 45:23)",
+      "type": "figure",
+      "role": "ot-echo",
+      "refs_count": 1
+    },
+    {
+      "id": "f.rejoice-with-me--39f93bb1",
+      "name": "Rejoice with me",
+      "type": "figure",
+      "role": "joy",
+      "refs_count": 1
+    },
+    {
+      "id": "f.risked-his-life-for-the-work-of-christ--901cf805",
+      "name": "Risked his life for the work of Christ",
+      "type": "figure",
+      "role": "sacrifice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.i-hope-to-send-timothy--51c90978",
+      "name": "I hope to send Timothy",
+      "type": "figure",
+      "role": "plans",
+      "refs_count": 1
+    },
+    {
+      "id": "f.humbled-to-death-even-cross--90a74398",
+      "name": "Humbled to death, even cross",
+      "type": "figure",
+      "role": "humility",
+      "refs_count": 1
+    }
+  ]
+}

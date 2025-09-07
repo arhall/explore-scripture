@@ -1,0 +1,77 @@
+{
+  "book": "Acts",
+  "chapter": 1,
+  "entity_count": 10,
+  "entities": [
+    {
+      "id": "t.kingdom-of-god--e6ae8d7f",
+      "name": "Kingdom of God",
+      "type": "title",
+      "role": "kingdom",
+      "refs_count": 16
+    },
+    {
+      "id": "f.aramaic-and-hebrew-names-in-acts--8976acce",
+      "name": "Aramaic and Hebrew names in Acts",
+      "type": "figure",
+      "role": "language",
+      "refs_count": 3
+    },
+    {
+      "id": "p.jesus-of-nazareth--c4738d73",
+      "name": "Jesus of Nazareth",
+      "type": "person",
+      "role": "messiah",
+      "refs_count": 35
+    },
+    {
+      "id": "f.matthias-chosen--54cdce73",
+      "name": "Matthias chosen",
+      "type": "figure",
+      "role": "selection",
+      "refs_count": 1
+    },
+    {
+      "id": "f.acts-1-8-program--e7511bbc",
+      "name": "Acts 1:8 program",
+      "type": "figure",
+      "role": "program",
+      "refs_count": 1
+    },
+    {
+      "id": "f.ascension--3187c1b6",
+      "name": "Ascension",
+      "type": "figure",
+      "role": "event",
+      "refs_count": 1
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "e.akeldama-field-of-blood--21b35dd4",
+      "name": "Akeldama (Field of Blood)",
+      "type": "entity",
+      "role": "site",
+      "refs_count": 1
+    },
+    {
+      "id": "p.theophilus--ebf69d0e",
+      "name": "Theophilus",
+      "type": "person",
+      "role": "patron",
+      "refs_count": 2
+    },
+    {
+      "id": "e.upper-room-prayer--18e2396e",
+      "name": "Upper Room (prayer)",
+      "type": "entity",
+      "role": "site",
+      "refs_count": 1
+    }
+  ]
+}

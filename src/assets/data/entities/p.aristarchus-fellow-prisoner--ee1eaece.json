@@ -1,0 +1,31 @@
+{
+  "name": "Aristarchus (fellow prisoner)",
+  "type": "person",
+  "category": "coworker",
+  "references": [
+    "Col 4:10"
+  ],
+  "relations": {
+    "status": "fellow prisoner"
+  },
+  "cross_references": [
+    "Acts 19:29",
+    "Acts 20:4",
+    "Acts 27:2"
+  ],
+  "aka": [
+    "Aristarchus of Thessalonica"
+  ],
+  "id": "p.aristarchus-fellow-prisoner--ee1eaece",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      4
+    ]
+  }
+}

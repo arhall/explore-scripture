@@ -1,0 +1,21 @@
+{
+  "name": "Ephod (high priest)",
+  "type": "entity",
+  "references": [
+    "Exodus 28:6–14"
+  ],
+  "blurb": "Onyx stones bear Israel’s names.",
+  "category": "priesthood",
+  "cross_references": [
+    "Leviticus 8"
+  ],
+  "id": "e.ephod--37a108f4",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      28
+    ]
+  }
+}

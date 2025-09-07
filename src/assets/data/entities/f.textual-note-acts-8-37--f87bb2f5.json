@@ -1,0 +1,24 @@
+{
+  "name": "Textual note: Acts 8:37",
+  "type": "figure",
+  "category": "textual-notes",
+  "references": [
+    "Acts 8:37"
+  ],
+  "note": "Later addition of the eunuch’s confession in some manuscripts.",
+  "aka": [],
+  "id": "f.textual-note-acts-8-37--f87bb2f5",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      8
+    ]
+  }
+}

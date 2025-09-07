@@ -1,0 +1,77 @@
+{
+  "book": "Exodus",
+  "chapter": 6,
+  "entity_count": 39,
+  "entities": [
+    {
+      "id": "p.korah.son-of-esau.gene-36-5-14-18--9ad77197",
+      "name": "Korah (son of Esau)",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 2
+    },
+    {
+      "id": "p.pallu.gene-46-9--0bb1b5b2",
+      "name": "Pallu",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 2
+    },
+    {
+      "id": "p.hezron.gene-46-9-46-12--0d33b793",
+      "name": "Hezron",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 2
+    },
+    {
+      "id": "p.carmi.gene-46-9--726703f6",
+      "name": "Carmi",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 2
+    },
+    {
+      "id": "p.jemuel.nemuel.gene-46-10--4ea06837",
+      "name": "Jemuel (Nemuel)",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 2
+    },
+    {
+      "id": "p.jamin.gene-46-10--5972d38d",
+      "name": "Jamin",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 2
+    },
+    {
+      "id": "p.ohad.gene-46-10--41fdc520",
+      "name": "Ohad",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 2
+    },
+    {
+      "id": "p.jachin.gene-46-10--4e6517d3",
+      "name": "Jachin",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 2
+    },
+    {
+      "id": "p.zohar.zerah.gene-46-10--097fbd18",
+      "name": "Zohar (Zerah)",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 2
+    },
+    {
+      "id": "p.shaul.son-of-a-canaanite-woman.gene-46-10--f81f8022",
+      "name": "Shaul (son of a Canaanite woman)",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 2
+    }
+  ]
+}

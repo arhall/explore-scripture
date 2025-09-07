@@ -1,0 +1,19 @@
+{
+  "name": "Libni",
+  "type": "person",
+  "references": [
+    "Exodus 6:17"
+  ],
+  "blurb": "Son of Gershon; head of a Gershonite clan.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.libni--86702c48",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      6
+    ]
+  }
+}

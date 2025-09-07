@@ -1,0 +1,18 @@
+{
+  "name": "Two unnamed spies",
+  "type": "group",
+  "references": [
+    "Joshua 2"
+  ],
+  "blurb": "Scouts who move with prudence and faith, bringing back a report that stirs confident action rather than fear—an intentional contrast to Numbers 13.",
+  "category": "narrative",
+  "id": "g.two-unnamed-spies--85a9369f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joshua": [
+      2
+    ]
+  }
+}

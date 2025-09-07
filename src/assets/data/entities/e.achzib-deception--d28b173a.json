@@ -1,0 +1,18 @@
+{
+  "id": "e.achzib-deception--d28b173a",
+  "name": "Achzib (Deception)",
+  "type": "entity",
+  "references": [
+    "Micah 1:14"
+  ],
+  "category": "city-wordplay",
+  "blurb": "‘Deceptive brook’—promises water but dries up; kings of Israel find it a lie.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      1
+    ]
+  }
+}

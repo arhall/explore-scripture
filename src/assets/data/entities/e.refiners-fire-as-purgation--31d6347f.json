@@ -1,0 +1,18 @@
+{
+  "id": "e.refiners-fire-as-purgation--31d6347f",
+  "name": "Refiner’s fire as purgation",
+  "type": "entity",
+  "references": [
+    "Mal 3:2-3"
+  ],
+  "category": "theology",
+  "blurb": "Judgment serves purification toward acceptable worship.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      3
+    ]
+  }
+}

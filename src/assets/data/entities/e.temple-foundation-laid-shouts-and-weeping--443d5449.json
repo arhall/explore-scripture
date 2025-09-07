@@ -1,0 +1,18 @@
+{
+  "name": "Temple foundation laid; shouts and weeping",
+  "type": "entity",
+  "references": [
+    "Ezra 3:7–13"
+  ],
+  "blurb": "Young shout for joy; elders weep remembering Solomon’s glory—restoration holds both memory and hope.",
+  "category": "worship",
+  "id": "e.temple-foundation-laid-shouts-and-weeping--443d5449",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      3
+    ]
+  }
+}

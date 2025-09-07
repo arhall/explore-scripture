@@ -1,0 +1,22 @@
+{
+  "name": "Textual note: 1 Cor 6:20 expansion",
+  "type": "figure",
+  "category": "textual-notes",
+  "references": [
+    "1 Cor 6:20"
+  ],
+  "note": "TR adds ‘and in your spirit, which are God’s’.",
+  "aka": [],
+  "id": "f.textual-note-1-cor-6-20-expansion--b28febb1",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "1 Corinthians": [
+      6
+    ]
+  }
+}

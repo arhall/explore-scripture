@@ -1,0 +1,21 @@
+{
+  "name": "The Name YHWH / ‘I AM’",
+  "type": "divine",
+  "references": [
+    "Exodus 3:14–15"
+  ],
+  "blurb": "Divine self-revelation anchoring Israel’s faith: God is the living, self-existent One who remembers His covenant and comes down to save.",
+  "category": "narrative",
+  "cross_references": [
+    "John 8:58"
+  ],
+  "id": "d.the-name-yhwh-i-am--052df719",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      3
+    ]
+  }
+}

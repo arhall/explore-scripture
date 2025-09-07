@@ -1,0 +1,18 @@
+{
+  "name": "Shallum son of Hallohesh (ruler of half-district) and his daughters",
+  "type": "group",
+  "references": [
+    "Nehemiah 3:12"
+  ],
+  "blurb": "Intergenerational and gender-inclusive participation—daughters named as builders.",
+  "category": "narrative",
+  "id": "g.shallum-son-of-hallohesh-and-his-daughters.ruler-of-half-district--493b238b",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      3
+    ]
+  }
+}

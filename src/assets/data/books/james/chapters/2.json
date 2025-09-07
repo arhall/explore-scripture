@@ -1,0 +1,77 @@
+{
+  "book": "James",
+  "chapter": 2,
+  "entity_count": 21,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "p.jesus-of-nazareth--c4738d73",
+      "name": "Jesus of Nazareth",
+      "type": "person",
+      "role": "messiah",
+      "refs_count": 35
+    },
+    {
+      "id": "p.abraham--197f2a67",
+      "name": "Abraham",
+      "type": "person",
+      "role": "patriarch",
+      "refs_count": 6
+    },
+    {
+      "id": "f.judgment-is-without-mercy-to-one-who-has-shown-no-mercy--cd451b78",
+      "name": "judgment is without mercy to one who has shown no mercy",
+      "type": "figure",
+      "role": "judgment",
+      "refs_count": 1
+    },
+    {
+      "id": "f.abraham-offered-isaac-on-the-altar--f74e2cd5",
+      "name": "Abraham offered Isaac on the altar",
+      "type": "figure",
+      "role": "obedience",
+      "refs_count": 1
+    },
+    {
+      "id": "p.rahab--16b66d34",
+      "name": "Rahab",
+      "type": "person",
+      "role": "faith-example",
+      "refs_count": 2
+    },
+    {
+      "id": "g.demons-believe-and-shudder--c52620b6",
+      "name": "demons believe and shudder",
+      "type": "group",
+      "role": "belief-without-obedience",
+      "refs_count": 1
+    },
+    {
+      "id": "f.faith-without-works-is-dead--daddb2cf",
+      "name": "faith without works is dead",
+      "type": "figure",
+      "role": "thesis",
+      "refs_count": 1
+    },
+    {
+      "id": "e.synagogue-assembly--3b7a375a",
+      "name": "synagogue (assembly)",
+      "type": "entity",
+      "role": "assembly",
+      "refs_count": 1
+    },
+    {
+      "id": "f.has-not-god-chosen-the-poor--23c4fb09",
+      "name": "Has not God chosen the poor",
+      "type": "figure",
+      "role": "election",
+      "refs_count": 1
+    }
+  ]
+}

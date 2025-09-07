@@ -1,0 +1,18 @@
+{
+  "name": "Eliashib the high priest and his fellow priests (Sheep Gate)",
+  "type": "group",
+  "references": [
+    "Nehemiah 3:1"
+  ],
+  "blurb": "Priestly leadership sanctifies the work from the north—worship frames construction.",
+  "category": "narrative",
+  "id": "g.eliashib-the-high-priest-and-his-fellow-priests.sheep-gate--cb80e373",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      3
+    ]
+  }
+}

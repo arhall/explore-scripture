@@ -1,0 +1,15 @@
+{
+  "name": "Philemon",
+  "type": "person",
+  "category": "recipient",
+  "references": [
+    "Philem 1"
+  ],
+  "aka": [],
+  "id": "p.philemon--59310849",
+  "book_references": {
+    "Philemon": [
+      1
+    ]
+  }
+}

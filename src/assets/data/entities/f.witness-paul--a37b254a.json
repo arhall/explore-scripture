@@ -1,0 +1,21 @@
+{
+  "name": "Witness: Paul",
+  "type": "figure",
+  "category": "witness",
+  "references": [
+    "1 Cor 15:5–8"
+  ],
+  "aka": [],
+  "id": "f.witness-paul--a37b254a",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "1 Corinthians": [
+      15
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Shaphat son of Hori (Simeon)",
+  "type": "person",
+  "references": [
+    "Numbers 13:5"
+  ],
+  "blurb": "Spy for Simeon.",
+  "category": "narrative",
+  "id": "p.shaphat-son-of-hori.simeon--adfd7120",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      13
+    ]
+  }
+}

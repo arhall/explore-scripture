@@ -1,0 +1,15 @@
+{
+  "name": "Job",
+  "type": "person",
+  "category": "exemplar",
+  "references": [
+    "Jas 5:11"
+  ],
+  "aka": [],
+  "id": "p.job--877e2717",
+  "book_references": {
+    "James": [
+      5
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Outer court chambers",
+  "type": "entity",
+  "references": [
+    "Ezekiel 40:17–19"
+  ],
+  "blurb": "Thirty chambers for the people—access structured by holiness zones.",
+  "category": "temple",
+  "id": "e.outer-court-chambers--75b6da4d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      40
+    ]
+  }
+}

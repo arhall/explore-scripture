@@ -1,0 +1,28 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 9,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "g.people-of-israel--ecedc898",
+      "name": "People of Israel (second generation)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.golden-calf-recalled--7d990247",
+      "name": "Golden calf recalled",
+      "type": "entity",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

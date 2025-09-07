@@ -1,0 +1,22 @@
+{
+  "id": "e.overthrow-complete--d1c7a0e5",
+  "name": "Overthrow (complete)",
+  "type": "entity",
+  "references": [
+    "Nah 1:9; 1:14; 3:19"
+  ],
+  "category": "verdict",
+  "aka": [
+    "End of name",
+    "No healing"
+  ],
+  "blurb": "Decreed finality: no second repentance arc; Nineveh’s wound is incurable.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      1
+    ]
+  }
+}

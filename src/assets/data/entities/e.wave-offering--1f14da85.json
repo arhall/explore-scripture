@@ -1,0 +1,21 @@
+{
+  "name": "Wave offering",
+  "type": "entity",
+  "references": [
+    "Leviticus 7:30; 23:10–20"
+  ],
+  "blurb": "A priestly motion before the LORD—symbol of presentation and acceptance.",
+  "category": "ritual",
+  "cross_references": [
+    "Numbers 15:1–10"
+  ],
+  "id": "e.wave-offering--1f14da85",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Leviticus": [
+      7
+    ]
+  }
+}

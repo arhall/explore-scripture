@@ -1,0 +1,49 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 4,
+  "entity_count": 6,
+  "entities": [
+    {
+      "id": "t.kingdom-of-god--e6ae8d7f",
+      "name": "Kingdom of God",
+      "type": "title",
+      "role": "kingdom",
+      "refs_count": 16
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.irony-catalogue-4-8-13--a8bf4741",
+      "name": "Irony catalogue (4:8–13)",
+      "type": "figure",
+      "role": "irony",
+      "refs_count": 1
+    },
+    {
+      "id": "f.stewards-of-the-mysteries--6b43fd03",
+      "name": "Stewards of the mysteries",
+      "type": "figure",
+      "role": "stewardship",
+      "refs_count": 1
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "f.do-not-go-beyond-what-is-written--65d9e94a",
+      "name": "Do not go beyond what is written",
+      "type": "figure",
+      "role": "rule",
+      "refs_count": 1
+    }
+  ]
+}

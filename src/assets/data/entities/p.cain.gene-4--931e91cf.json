@@ -1,0 +1,36 @@
+{
+  "name": "Cain",
+  "type": "person",
+  "references": [
+    "Genesis 4",
+    "1 John 3:12",
+    "Jude 11"
+  ],
+  "blurb": "Firstborn of Adam and Eve, Cain embodies sin’s spread beyond Eden. Jealous of Abel, he murders his brother despite God’s warning to master sin. Banished yet marked, he fathers a city and a culture—music, metallurgy, livestock—showing creativity estranged from God.",
+  "relations": {
+    "parents": [
+      "Adam",
+      "Eve"
+    ]
+  },
+  "category": "narrative",
+  "cross_references": [
+    "1 John 3:12",
+    "Jude 11"
+  ],
+  "id": "p.cain.gene-4--931e91cf",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      4
+    ],
+    "1 John": [
+      3
+    ],
+    "Jude": [
+      11
+    ]
+  }
+}

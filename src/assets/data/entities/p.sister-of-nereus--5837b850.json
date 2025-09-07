@@ -1,0 +1,21 @@
+{
+  "name": "Sister of Nereus",
+  "type": "person",
+  "category": "believer",
+  "references": [
+    "Rom 16:15"
+  ],
+  "aka": [],
+  "id": "p.sister-of-nereus--5837b850",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      16
+    ]
+  }
+}

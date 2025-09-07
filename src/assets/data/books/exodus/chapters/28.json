@@ -1,0 +1,56 @@
+{
+  "book": "Exodus",
+  "chapter": 28,
+  "entity_count": 7,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "p.aaron--cc77e332",
+      "name": "Aaron",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 6
+    },
+    {
+      "id": "e.ephod--37a108f4",
+      "name": "Ephod (high priest)",
+      "type": "entity",
+      "role": "priesthood",
+      "refs_count": 1
+    },
+    {
+      "id": "e.breastpiece-of-judgment--6e61c365",
+      "name": "Breastpiece of judgment",
+      "type": "entity",
+      "role": "priesthood",
+      "refs_count": 1
+    },
+    {
+      "id": "e.robe-of-the-ephod--24f429ae",
+      "name": "Robe of the ephod",
+      "type": "entity",
+      "role": "priesthood",
+      "refs_count": 1
+    },
+    {
+      "id": "e.turban-and-holy-crown--3af8bf8a",
+      "name": "Turban and holy crown (engraved ‘Holy to the LORD’)",
+      "type": "entity",
+      "role": "priesthood",
+      "refs_count": 1
+    },
+    {
+      "id": "e.linen-tunics-sashes-caps--4d728898",
+      "name": "Linen tunics, sashes, caps",
+      "type": "entity",
+      "role": "priesthood",
+      "refs_count": 1
+    }
+  ]
+}

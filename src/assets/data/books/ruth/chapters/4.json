@@ -1,0 +1,28 @@
+{
+  "book": "Ruth",
+  "chapter": 4,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "e.witness-formula-at-the-gate.we-are-witnesses--c12c2e8f",
+      "name": "Witness formula at the gate (‘We are witnesses’)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    },
+    {
+      "id": "e.house-of-perez.blessing--175cdd29",
+      "name": "House of Perez (blessing)",
+      "type": "entity",
+      "role": "poetry",
+      "refs_count": 1
+    },
+    {
+      "id": "g.women-neighbors-name-obed--0fea7877",
+      "name": "Women neighbors name Obed",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "e.babylon-named-exile--0f7c1b62",
+  "name": "Babylon (named exile)",
+  "type": "entity",
+  "references": [
+    "Micah 4:10"
+  ],
+  "category": "city",
+  "blurb": "City of captivity and stage of promised rescue—intermediate chastening in salvation history.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      4
+    ]
+  }
+}

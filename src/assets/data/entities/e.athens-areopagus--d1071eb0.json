@@ -1,0 +1,29 @@
+{
+  "name": "Athens (Areopagus)",
+  "type": "entity",
+  "category": "venue",
+  "references": [
+    "Acts 17:19,22,33"
+  ],
+  "aka": [],
+  "id": "e.athens-areopagus--d1071eb0",
+  "greek_terms": [
+    {
+      "term": "Ἄρειος Πάγος",
+      "gloss": "Areopagus (Ares’ hill)"
+    }
+  ],
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      17
+    ]
+  }
+}

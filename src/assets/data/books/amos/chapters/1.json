@@ -1,0 +1,77 @@
+{
+  "book": "Amos",
+  "chapter": 1,
+  "entity_count": 10,
+  "entities": [
+    {
+      "id": "g.damascus.aram--38c72bb6",
+      "name": "Damascus (Aram)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 3
+    },
+    {
+      "id": "g.edom.desolate-wilderness--6976d032",
+      "name": "Edom (desolate wilderness)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 3
+    },
+    {
+      "id": "p.amos-of-tekoa--c656eb34",
+      "name": "Amos of Tekoa",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1
+    },
+    {
+      "id": "e.tekoa--7dcc9cae",
+      "name": "Tekoa (Judah)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    },
+    {
+      "id": "e.earthquake-marker.two-years-before--d9f36dfe",
+      "name": "Earthquake marker (two years before)",
+      "type": "entity",
+      "role": "chronology",
+      "refs_count": 1
+    },
+    {
+      "id": "p.uzziah-of-judah--aec578f4",
+      "name": "Uzziah of Judah",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1
+    },
+    {
+      "id": "p.jeroboam-ii-of-israel--837d7e53",
+      "name": "Jeroboam II of Israel",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1
+    },
+    {
+      "id": "g.gaza.philistia--2489b4b8",
+      "name": "Gaza (Philistia)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1
+    },
+    {
+      "id": "g.ammon--2e86c4cb",
+      "name": "Ammon",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1
+    },
+    {
+      "id": "e.formula-for-three-transgressions-even-for-four--7f35c3c8",
+      "name": "Formula: For three transgressions, even for four",
+      "type": "entity",
+      "role": "literary",
+      "refs_count": 1
+    }
+  ]
+}

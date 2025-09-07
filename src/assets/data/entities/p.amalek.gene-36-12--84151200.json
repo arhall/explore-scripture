@@ -1,0 +1,22 @@
+{
+  "name": "Amalek",
+  "type": "person",
+  "references": [
+    "Genesis 36:12"
+  ],
+  "blurb": "Son of Eliphaz by Timna; ancestor of the Amalekites, Israel’s archetypal foe in the wilderness and beyond.",
+  "category": "genealogy",
+  "cross_references": [
+    "Exodus 17",
+    "1 Samuel 15"
+  ],
+  "id": "p.amalek.gene-36-12--84151200",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

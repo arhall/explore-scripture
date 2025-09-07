@@ -1,0 +1,33 @@
+{
+  "name": "Corinth",
+  "type": "entity",
+  "category": "city",
+  "references": [
+    "2 Cor 1:1",
+    "1 Cor 1:2",
+    "Rom 16:23",
+    "2 Tim 4:10,13,20,22"
+  ],
+  "aka": [],
+  "id": "e.corinth--56a50221",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "2 Corinthians": [
+      1
+    ],
+    "1 Corinthians": [
+      1
+    ],
+    "Romans": [
+      16
+    ],
+    "2 Timothy": [
+      4
+    ]
+  }
+}

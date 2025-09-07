@@ -1,0 +1,25 @@
+{
+  "name": "Lexeme index (parousia, paradosis, katechon)",
+  "type": "figure",
+  "category": "lexeme-index",
+  "references": [
+    "2 Thess passim"
+  ],
+  "greek_terms": [
+    {
+      "term": "παρουσία",
+      "gloss": "coming"
+    },
+    {
+      "term": "παράδοσις",
+      "gloss": "tradition"
+    },
+    {
+      "term": "κατέχων/τὸ κατέχον",
+      "gloss": "restrainer"
+    }
+  ],
+  "aka": [],
+  "id": "f.lexeme-index-parousia-paradosis-katechon--a89a9072",
+  "book_references": {}
+}

@@ -1,0 +1,77 @@
+{
+  "book": "Acts",
+  "chapter": 15,
+  "entity_count": 17,
+  "entities": [
+    {
+      "id": "e.reception-james-cites-amos-at-jerusalem-council--837b0658",
+      "name": "Reception: James cites Amos at Jerusalem Council",
+      "type": "entity",
+      "role": "reception",
+      "refs_count": 1
+    },
+    {
+      "id": "p.silas-silvanus--3ff90d56",
+      "name": "Silas (Silvanus)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 4
+    },
+    {
+      "id": "p.john-mark--ac3d50bf",
+      "name": "John Mark",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 3
+    },
+    {
+      "id": "e.antioch-syria--329754ba",
+      "name": "Antioch (Syria)",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 5
+    },
+    {
+      "id": "f.delivery-of-the-decree--666ab0e0",
+      "name": "Delivery of the decree",
+      "type": "figure",
+      "role": "delivery",
+      "refs_count": 1
+    },
+    {
+      "id": "f.sharp-disagreement-barnabas-with-john-mark-paul-with-silas--37790cbd",
+      "name": "Sharp disagreement: Barnabas with John Mark; Paul with Silas",
+      "type": "figure",
+      "role": "split",
+      "refs_count": 1
+    },
+    {
+      "id": "f.peter-s-testimony-gentile-inclusion--5048c1a4",
+      "name": "Peter’s testimony (Gentile inclusion)",
+      "type": "figure",
+      "role": "speech",
+      "refs_count": 1
+    },
+    {
+      "id": "f.journeys-index--f80d022a",
+      "name": "Journeys (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 2
+    },
+    {
+      "id": "f.textual-note-acts-15-34--f4588dc1",
+      "name": "Textual note: Acts 15:34",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 24
+    }
+  ]
+}

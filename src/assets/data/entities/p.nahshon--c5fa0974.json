@@ -1,0 +1,22 @@
+{
+  "name": "Nahshon",
+  "type": "person",
+  "references": [
+    "Exodus 6:23"
+  ],
+  "blurb": "Brother-in-law of Aaron (Judah’s leader).",
+  "category": "genealogy",
+  "cross_references": [
+    "Numbers 1:7",
+    "Matthew 1:4"
+  ],
+  "id": "p.nahshon--c5fa0974",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      6
+    ]
+  }
+}

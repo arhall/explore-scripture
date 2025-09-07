@@ -1,0 +1,19 @@
+{
+  "name": "Community witnesses (execution)",
+  "type": "group",
+  "references": [
+    "Leviticus 24:14"
+  ],
+  "blurb": "Those who heard the blasphemy lay hands and cast the first stones—underscoring communal accountability in capital cases.",
+  "category": "narrative",
+  "cross_references": [],
+  "id": "g.community-witnesses.execution--c061beef",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Leviticus": [
+      24
+    ]
+  }
+}

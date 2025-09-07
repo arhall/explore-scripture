@@ -1,0 +1,36 @@
+{
+  "name": "Mary (mother of Jesus)",
+  "type": "person",
+  "category": "family",
+  "references": [
+    "Matt 1:18–25",
+    "Matt 2:11",
+    "Matt 13:55",
+    "Luke 1:26–38",
+    "Luke 2:19",
+    "Luke 2:51"
+  ],
+  "blurb": "Virgin mother who embodies Israel’s humble receptivity; Matthew foregrounds her role in Davidic legitimacy and fulfillment.",
+  "aka": [],
+  "id": "p.mary-mother-of-jesus--acfa811a",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      1,
+      2,
+      13
+    ],
+    "Luke": [
+      1,
+      2
+    ]
+  }
+}

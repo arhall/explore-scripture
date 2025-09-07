@@ -1,0 +1,18 @@
+{
+  "name": "Esther’s resolve: ‘If I perish, I perish’",
+  "type": "entity",
+  "references": [
+    "Esther 4:15–17"
+  ],
+  "blurb": "Communal fast girds courageous intercession—self-offering on behalf of her people.",
+  "category": "spirituality",
+  "id": "e.esthers-resolve-if-i-perish-i-perish--06c987b3",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      4
+    ]
+  }
+}

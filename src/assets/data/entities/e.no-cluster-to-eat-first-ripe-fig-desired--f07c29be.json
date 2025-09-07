@@ -1,0 +1,18 @@
+{
+  "id": "e.no-cluster-to-eat-first-ripe-fig-desired--f07c29be",
+  "name": "No cluster to eat—first-ripe fig desired",
+  "type": "entity",
+  "references": [
+    "Micah 7:1"
+  ],
+  "category": "lament",
+  "blurb": "Prophet’s harvest lament; righteous vanish like summer fruit.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      7
+    ]
+  }
+}

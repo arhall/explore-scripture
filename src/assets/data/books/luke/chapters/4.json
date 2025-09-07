@@ -1,0 +1,63 @@
+{
+  "book": "Luke",
+  "chapter": 4,
+  "entity_count": 8,
+  "entities": [
+    {
+      "id": "t.kingdom-of-god--e6ae8d7f",
+      "name": "Kingdom of God",
+      "type": "title",
+      "role": "kingdom",
+      "refs_count": 16
+    },
+    {
+      "id": "f.nazareth-synagogue-isaiah-61--317af53e",
+      "name": "Nazareth synagogue (Isaiah 61)",
+      "type": "figure",
+      "role": "programmatic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.temptation-in-the-wilderness--f38865ae",
+      "name": "Temptation in the wilderness",
+      "type": "figure",
+      "role": "testing",
+      "refs_count": 1
+    },
+    {
+      "id": "p.jesus-of-nazareth--c4738d73",
+      "name": "Jesus of Nazareth",
+      "type": "person",
+      "role": "messiah",
+      "refs_count": 35
+    },
+    {
+      "id": "e.capernaum--e8a7c06b",
+      "name": "Capernaum",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 10
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "e.wilderness-desert--5581794f",
+      "name": "Wilderness/Desert",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 5
+    },
+    {
+      "id": "e.nazareth--4e4195a3",
+      "name": "Nazareth",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 5
+    }
+  ]
+}

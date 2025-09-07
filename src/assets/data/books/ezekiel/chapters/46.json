@@ -1,0 +1,28 @@
+{
+  "book": "Ezekiel",
+  "chapter": 46,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "g.princes-of-the-land.allotments--0aa125e1",
+      "name": "Princes of the land (allotments)",
+      "type": "group",
+      "role": "leadership",
+      "refs_count": 1
+    },
+    {
+      "id": "e.boiling-places-and-kitchens--44d0d6d6",
+      "name": "Boiling places and kitchens",
+      "type": "entity",
+      "role": "cult",
+      "refs_count": 1
+    },
+    {
+      "id": "e.priests-kitchens--71ec80e9",
+      "name": "Priests’ kitchens",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1
+    }
+  ]
+}

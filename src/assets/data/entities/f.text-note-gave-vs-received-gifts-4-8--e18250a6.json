@@ -1,0 +1,22 @@
+{
+  "name": "Text-note: gave vs received gifts (4:8)",
+  "type": "figure",
+  "category": "textual-notes",
+  "references": [
+    "Eph 4:8"
+  ],
+  "note": "Paul’s rendering ‘he gave gifts’ contrasts with LXX ‘you received gifts.’",
+  "aka": [],
+  "id": "f.text-note-gave-vs-received-gifts-4-8--e18250a6",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      4
+    ]
+  }
+}

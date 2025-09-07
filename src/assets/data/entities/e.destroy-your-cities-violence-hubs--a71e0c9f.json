@@ -1,0 +1,18 @@
+{
+  "id": "e.destroy-your-cities-violence-hubs--a71e0c9f",
+  "name": "Destroy your cities (violence hubs)",
+  "type": "entity",
+  "references": [
+    "Micah 5:10–15"
+  ],
+  "category": "purge-note",
+  "blurb": "Repeating emphasis: God prunes instruments of oppression.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      5
+    ]
+  }
+}

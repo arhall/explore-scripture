@@ -1,0 +1,14 @@
+{
+  "book": "Judges",
+  "chapter": 11,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "p.jephthahs-daughter--5bdce2b5",
+      "name": "Jephthah’s daughter",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

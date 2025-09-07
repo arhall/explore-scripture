@@ -1,0 +1,19 @@
+{
+  "id": "e.pride-and-boast--e0a1b7c2",
+  "name": "Pride/Boast",
+  "type": "entity",
+  "references": [
+    "Nah 2:13; 3:8"
+  ],
+  "category": "sin-motif",
+  "aka": [],
+  "blurb": "Assyria’s hubris meets the divine ‘Behold, I am against you’—the covenant lawsuit climax.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      2
+    ]
+  }
+}

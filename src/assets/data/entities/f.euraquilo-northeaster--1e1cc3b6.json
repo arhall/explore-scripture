@@ -1,0 +1,23 @@
+{
+  "name": "Euraquilo (northeaster)",
+  "type": "figure",
+  "category": "storm",
+  "references": [
+    "Acts 27:14"
+  ],
+  "aka": [],
+  "id": "f.euraquilo-northeaster--1e1cc3b6",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      27
+    ]
+  }
+}

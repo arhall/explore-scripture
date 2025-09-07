@@ -1,0 +1,21 @@
+{
+  "name": "Fortunatus and Achaicus",
+  "type": "group",
+  "category": "delegates",
+  "references": [
+    "1 Cor 16:17"
+  ],
+  "aka": [],
+  "id": "g.fortunatus-and-achaicus--ac843559",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "1 Corinthians": [
+      16
+    ]
+  }
+}

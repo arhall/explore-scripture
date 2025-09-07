@@ -1,0 +1,27 @@
+{
+  "name": "Gospel preached beforehand to Abraham (Gen 12:3)",
+  "type": "figure",
+  "category": "promise",
+  "references": [
+    "Gal 3:8"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Gen 12:3",
+      "type": "quotation"
+    }
+  ],
+  "aka": [],
+  "id": "f.gospel-preached-beforehand-to-abraham-gen-12-3--3199f4de",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Galatians": [
+      3
+    ]
+  }
+}

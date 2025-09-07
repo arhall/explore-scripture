@@ -1,0 +1,18 @@
+{
+  "name": "The kingdom shall be the LORD’s",
+  "type": "entity",
+  "references": [
+    "Obadiah 1:21"
+  ],
+  "blurb": "Climactic claim: sovereignty belongs to YHWH; political theology consummated.",
+  "category": "kingdom",
+  "id": "e.the-kingdom-shall-be-the-lords--0c4e3e15",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Obadiah": [
+      1
+    ]
+  }
+}

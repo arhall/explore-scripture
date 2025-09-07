@@ -1,0 +1,723 @@
+[
+  {
+    "id": "d.holy-spirit--ad652b9c",
+    "name": "Holy Spirit",
+    "type": "divine",
+    "url": "/entities/d.holy-spirit--ad652b9c/",
+    "blurb": "Divine agent of conception, anointing, speech, and mission—integral to the triadic baptismal name.",
+    "searchText": "holy spirit divine theology divine agent of conception, anointing, speech, and mission—integral to the triadic baptismal name. ",
+    "references": 53,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "2 Corinthians",
+      "Galatians",
+      "1 Corinthians",
+      "Philippians",
+      "Ephesians",
+      "Romans",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "p.paul-saul--d4c08ff1",
+    "name": "Paul (Saul)",
+    "type": "person",
+    "url": "/entities/p.paul-saul--d4c08ff1/",
+    "blurb": "",
+    "searchText": "paul (saul) person apostle  ",
+    "references": 24,
+    "books": [
+      "Acts",
+      "Galatians",
+      "Philippians",
+      "Ephesians",
+      "Romans",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "2 Peter"
+    ],
+    "category": "apostle"
+  },
+  {
+    "id": "f.argument-map-index--c44b9b3a",
+    "name": "Argument map (index)",
+    "type": "figure",
+    "url": "/entities/f.argument-map-index--c44b9b3a/",
+    "blurb": "",
+    "searchText": "argument map (index) figure index  ",
+    "references": 17,
+    "books": [
+      "2 Corinthians",
+      "Galatians",
+      "1 Corinthians",
+      "Ephesians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John"
+    ],
+    "category": "index"
+  },
+  {
+    "id": "p.timothy--227fb1d9",
+    "name": "Timothy",
+    "type": "person",
+    "url": "/entities/p.timothy--227fb1d9/",
+    "blurb": "",
+    "searchText": "timothy person coworker  ",
+    "references": 12,
+    "books": [
+      "Acts",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Philemon",
+      "Hebrews"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "g.principalities-and-powers--b39e0c0f",
+    "name": "principalities and powers",
+    "type": "group",
+    "url": "/entities/g.principalities-and-powers--b39e0c0f/",
+    "blurb": "",
+    "searchText": "principalities and powers group cosmic  ",
+    "references": 5,
+    "books": [
+      "Ephesians",
+      "Colossians"
+    ],
+    "category": "cosmic"
+  },
+  {
+    "id": "p.tychicus--24c2a0b4",
+    "name": "Tychicus",
+    "type": "person",
+    "url": "/entities/p.tychicus--24c2a0b4/",
+    "blurb": "",
+    "searchText": "tychicus person coworker  ",
+    "references": 5,
+    "books": [
+      "Acts",
+      "Ephesians",
+      "Colossians",
+      "2 Timothy",
+      "Titus"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "f.body-of-christ--f750d90a",
+    "name": "Body of Christ",
+    "type": "figure",
+    "url": "/entities/f.body-of-christ--f750d90a/",
+    "blurb": "",
+    "searchText": "body of christ figure ecclesiology  ",
+    "references": 5,
+    "books": [
+      "Ephesians",
+      "Colossians"
+    ],
+    "category": "ecclesiology"
+  },
+  {
+    "id": "p.mark-john-mark-cousin-of-barnabas--091a32fe",
+    "name": "Mark (John Mark) (cousin of Barnabas)",
+    "type": "person",
+    "url": "/entities/p.mark-john-mark-cousin-of-barnabas--091a32fe/",
+    "blurb": "",
+    "searchText": "mark (john mark) (cousin of barnabas) person coworker  ",
+    "references": 4,
+    "books": [
+      "Colossians",
+      "2 Timothy",
+      "Philemon",
+      "1 Peter"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "p.demas--a8b9f62c",
+    "name": "Demas",
+    "type": "person",
+    "url": "/entities/p.demas--a8b9f62c/",
+    "blurb": "",
+    "searchText": "demas person coworker  ",
+    "references": 3,
+    "books": [
+      "Colossians",
+      "2 Timothy",
+      "Philemon"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "p.epaphras--9d5c0168",
+    "name": "Epaphras",
+    "type": "person",
+    "url": "/entities/p.epaphras--9d5c0168/",
+    "blurb": "",
+    "searchText": "epaphras person founder/intercessor  ",
+    "references": 3,
+    "books": [
+      "Colossians",
+      "Philemon"
+    ],
+    "category": "founder/intercessor"
+  },
+  {
+    "id": "p.luke-the-beloved-physician--05b89346",
+    "name": "Luke (the beloved physician)",
+    "type": "person",
+    "url": "/entities/p.luke-the-beloved-physician--05b89346/",
+    "blurb": "",
+    "searchText": "luke (the beloved physician) person coworker  ",
+    "references": 3,
+    "books": [
+      "Colossians",
+      "2 Timothy",
+      "Philemon"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "e.laodicea--d85d7679",
+    "name": "Laodicea",
+    "type": "entity",
+    "url": "/entities/e.laodicea--d85d7679/",
+    "blurb": "",
+    "searchText": "laodicea entity city  ",
+    "references": 3,
+    "books": [
+      "Colossians"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "p.archippus--4f541ba4",
+    "name": "Archippus",
+    "type": "person",
+    "url": "/entities/p.archippus--4f541ba4/",
+    "blurb": "",
+    "searchText": "archippus person minister  ",
+    "references": 2,
+    "books": [
+      "Colossians",
+      "Philemon"
+    ],
+    "category": "minister"
+  },
+  {
+    "id": "p.onesimus--e821d191",
+    "name": "Onesimus",
+    "type": "person",
+    "url": "/entities/p.onesimus--e821d191/",
+    "blurb": "",
+    "searchText": "onesimus person letter-carrier  ",
+    "references": 2,
+    "books": [
+      "Colossians"
+    ],
+    "category": "letter-carrier"
+  },
+  {
+    "id": "e.colossae--4c307fad",
+    "name": "Colossae",
+    "type": "entity",
+    "url": "/entities/e.colossae--4c307fad/",
+    "blurb": "",
+    "searchText": "colossae entity city  ",
+    "references": 2,
+    "books": [
+      "Colossians"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "f.fullness-pleroma--31077356",
+    "name": "Fullness (Pleroma)",
+    "type": "figure",
+    "url": "/entities/f.fullness-pleroma--31077356/",
+    "blurb": "",
+    "searchText": "fullness (pleroma) figure christology  ",
+    "references": 2,
+    "books": [
+      "Colossians"
+    ],
+    "category": "christology"
+  },
+  {
+    "id": "f.head--18398bd5",
+    "name": "Head",
+    "type": "figure",
+    "url": "/entities/f.head--18398bd5/",
+    "blurb": "",
+    "searchText": "head figure christology  ",
+    "references": 2,
+    "books": [
+      "Colossians"
+    ],
+    "category": "christology"
+  },
+  {
+    "id": "f.psalms-hymns-spiritual-songs--62d8db47",
+    "name": "Psalms, hymns, spiritual songs",
+    "type": "figure",
+    "url": "/entities/f.psalms-hymns-spiritual-songs--62d8db47/",
+    "blurb": "",
+    "searchText": "psalms, hymns, spiritual songs figure worship  ",
+    "references": 2,
+    "books": [
+      "Ephesians",
+      "Colossians"
+    ],
+    "category": "worship"
+  },
+  {
+    "id": "f.slaves-obey-with-sincerity--918b0ff0",
+    "name": "Slaves obey with sincerity",
+    "type": "figure",
+    "url": "/entities/f.slaves-obey-with-sincerity--918b0ff0/",
+    "blurb": "",
+    "searchText": "slaves obey with sincerity figure household-code  ",
+    "references": 2,
+    "books": [
+      "Ephesians",
+      "Colossians"
+    ],
+    "category": "household-code"
+  },
+  {
+    "id": "g.church-in-laodicea--2f49e41c",
+    "name": "Church in Laodicea",
+    "type": "group",
+    "url": "/entities/g.church-in-laodicea--2f49e41c/",
+    "blurb": "",
+    "searchText": "church in laodicea group house-church  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "house-church"
+  },
+  {
+    "id": "g.church-in-nympha-s-house--0df60373",
+    "name": "Church in Nympha’s house",
+    "type": "group",
+    "url": "/entities/g.church-in-nympha-s-house--0df60373/",
+    "blurb": "",
+    "searchText": "church in nympha’s house group house-church  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "house-church"
+  },
+  {
+    "id": "g.luke-the-beloved-physician-demas--04deff63",
+    "name": "Luke the beloved physician; Demas",
+    "type": "group",
+    "url": "/entities/g.luke-the-beloved-physician-demas--04deff63/",
+    "blurb": "",
+    "searchText": "luke the beloved physician; demas group coworkers  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "coworkers"
+  },
+  {
+    "id": "g.nympha-and-the-church-in-her-house--84e64151",
+    "name": "Nympha and the church in her house",
+    "type": "group",
+    "url": "/entities/g.nympha-and-the-church-in-her-house--84e64151/",
+    "blurb": "",
+    "searchText": "nympha and the church in her house group house-church  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "house-church"
+  },
+  {
+    "id": "g.these-of-the-circumcision-group--48517c7a",
+    "name": "These of the circumcision group",
+    "type": "group",
+    "url": "/entities/g.these-of-the-circumcision-group--48517c7a/",
+    "blurb": "",
+    "searchText": "these of the circumcision group group affiliation  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "affiliation"
+  },
+  {
+    "id": "p.aristarchus-fellow-prisoner--ee1eaece",
+    "name": "Aristarchus (fellow prisoner)",
+    "type": "person",
+    "url": "/entities/p.aristarchus-fellow-prisoner--ee1eaece/",
+    "blurb": "",
+    "searchText": "aristarchus (fellow prisoner) person coworker  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "p.aristarchus-greets-you-fellow-prisoner--9072f1de",
+    "name": "Aristarchus greets you (fellow prisoner)",
+    "type": "person",
+    "url": "/entities/p.aristarchus-greets-you-fellow-prisoner--9072f1de/",
+    "blurb": "",
+    "searchText": "aristarchus greets you (fellow prisoner) person coworker  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "p.epaphras-always-wrestling-in-prayer--6404e509",
+    "name": "Epaphras: always wrestling in prayer",
+    "type": "person",
+    "url": "/entities/p.epaphras-always-wrestling-in-prayer--6404e509/",
+    "blurb": "",
+    "searchText": "epaphras: always wrestling in prayer person intercessor  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "intercessor"
+  },
+  {
+    "id": "p.jesus-justus--b7d62fea",
+    "name": "Jesus (Justus)",
+    "type": "person",
+    "url": "/entities/p.jesus-justus--b7d62fea/",
+    "blurb": "",
+    "searchText": "jesus (justus) person coworker  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "p.jesus-justus-greets-you--975d6486",
+    "name": "Jesus (Justus) greets you",
+    "type": "person",
+    "url": "/entities/p.jesus-justus-greets-you--975d6486/",
+    "blurb": "",
+    "searchText": "jesus (justus) greets you person coworker  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "p.learned-from-epaphras--bbe3e907",
+    "name": "Learned from Epaphras",
+    "type": "person",
+    "url": "/entities/p.learned-from-epaphras--bbe3e907/",
+    "blurb": "",
+    "searchText": "learned from epaphras person founder/intercessor  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "founder/intercessor"
+  },
+  {
+    "id": "p.mark-cousin-of-barnabas-with-instructions--50d93a8a",
+    "name": "Mark (cousin of Barnabas) with instructions",
+    "type": "person",
+    "url": "/entities/p.mark-cousin-of-barnabas-with-instructions--50d93a8a/",
+    "blurb": "",
+    "searchText": "mark (cousin of barnabas) with instructions person coworker  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "p.nympha-nymphas--f720d889",
+    "name": "Nympha (Nymphas)",
+    "type": "person",
+    "url": "/entities/p.nympha-nymphas--f720d889/",
+    "blurb": "",
+    "searchText": "nympha (nymphas) person host  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "host"
+  },
+  {
+    "id": "p.onesimus-faithful-and-beloved-brother--90875315",
+    "name": "Onesimus: faithful and beloved brother",
+    "type": "person",
+    "url": "/entities/p.onesimus-faithful-and-beloved-brother--90875315/",
+    "blurb": "",
+    "searchText": "onesimus: faithful and beloved brother person letter-carrier  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "letter-carrier"
+  },
+  {
+    "id": "p.say-to-archippus-fulfill-your-ministry--8a1717ae",
+    "name": "Say to Archippus: fulfill your ministry",
+    "type": "person",
+    "url": "/entities/p.say-to-archippus-fulfill-your-ministry--8a1717ae/",
+    "blurb": "",
+    "searchText": "say to archippus: fulfill your ministry person charge  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "charge"
+  },
+  {
+    "id": "p.tychicus-beloved-brother-and-faithful-minister--28cc2672",
+    "name": "Tychicus: beloved brother and faithful minister",
+    "type": "person",
+    "url": "/entities/p.tychicus-beloved-brother-and-faithful-minister--28cc2672/",
+    "blurb": "",
+    "searchText": "tychicus: beloved brother and faithful minister person letter-carrier  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "letter-carrier"
+  },
+  {
+    "id": "e.hierapolis--824381db",
+    "name": "Hierapolis",
+    "type": "entity",
+    "url": "/entities/e.hierapolis--824381db/",
+    "blurb": "",
+    "searchText": "hierapolis entity city  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "f.all-fullness-pleroma-dwells--c96e4d80",
+    "name": "All fullness (pleroma) dwells",
+    "type": "figure",
+    "url": "/entities/f.all-fullness-pleroma-dwells--c96e4d80/",
+    "blurb": "",
+    "searchText": "all fullness (pleroma) dwells figure pleroma  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "pleroma"
+  },
+  {
+    "id": "f.all-riches-of-assurance-and-knowledge--f86eecad",
+    "name": "All riches of assurance and knowledge",
+    "type": "figure",
+    "url": "/entities/f.all-riches-of-assurance-and-knowledge--f86eecad/",
+    "blurb": "",
+    "searchText": "all riches of assurance and knowledge figure assurance  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "assurance"
+  },
+  {
+    "id": "f.all-things-created-authorities--1ad3b53b",
+    "name": "All things created: Authorities",
+    "type": "figure",
+    "url": "/entities/f.all-things-created-authorities--1ad3b53b/",
+    "blurb": "",
+    "searchText": "all things created: authorities figure creation-categories  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "creation-categories"
+  },
+  {
+    "id": "f.all-things-created-dominions--6795b489",
+    "name": "All things created: Dominions",
+    "type": "figure",
+    "url": "/entities/f.all-things-created-dominions--6795b489/",
+    "blurb": "",
+    "searchText": "all things created: dominions figure creation-categories  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "creation-categories"
+  },
+  {
+    "id": "f.all-things-created-rulers--15603aec",
+    "name": "All things created: Rulers",
+    "type": "figure",
+    "url": "/entities/f.all-things-created-rulers--15603aec/",
+    "blurb": "",
+    "searchText": "all things created: rulers figure creation-categories  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "creation-categories"
+  },
+  {
+    "id": "f.all-things-created-thrones--9c1907bc",
+    "name": "All things created: Thrones",
+    "type": "figure",
+    "url": "/entities/f.all-things-created-thrones--9c1907bc/",
+    "blurb": "",
+    "searchText": "all things created: thrones figure creation-categories  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "creation-categories"
+  },
+  {
+    "id": "f.baptism-buried-and-raised-with-him--35042f3b",
+    "name": "Baptism: buried and raised with him",
+    "type": "figure",
+    "url": "/entities/f.baptism-buried-and-raised-with-him--35042f3b/",
+    "blurb": "",
+    "searchText": "baptism: buried and raised with him figure initiation  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "initiation"
+  },
+  {
+    "id": "f.beginning-firstborn-from-the-dead--17b47f7f",
+    "name": "Beginning, firstborn from the dead",
+    "type": "figure",
+    "url": "/entities/f.beginning-firstborn-from-the-dead--17b47f7f/",
+    "blurb": "",
+    "searchText": "beginning, firstborn from the dead figure resurrection  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "resurrection"
+  },
+  {
+    "id": "f.beware-philosophy-and-empty-deceit--b6bcab10",
+    "name": "Beware philosophy and empty deceit",
+    "type": "figure",
+    "url": "/entities/f.beware-philosophy-and-empty-deceit--b6bcab10/",
+    "blurb": "",
+    "searchText": "beware philosophy and empty deceit figure warning  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "warning"
+  },
+  {
+    "id": "f.children-obey--5c1609cb",
+    "name": "Children obey",
+    "type": "figure",
+    "url": "/entities/f.children-obey--5c1609cb/",
+    "blurb": "",
+    "searchText": "children obey figure household-code  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "household-code"
+  },
+  {
+    "id": "f.christ-hymn-structure-index--fc38939b",
+    "name": "Christ hymn structure (index)",
+    "type": "figure",
+    "url": "/entities/f.christ-hymn-structure-index--fc38939b/",
+    "blurb": "",
+    "searchText": "christ hymn structure (index) figure index  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "index"
+  },
+  {
+    "id": "f.circumcision-of-christ--76270914",
+    "name": "Circumcision of Christ",
+    "type": "figure",
+    "url": "/entities/f.circumcision-of-christ--76270914/",
+    "blurb": "",
+    "searchText": "circumcision of christ figure soteriology  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "soteriology"
+  },
+  {
+    "id": "f.continue-steadfast-and-not-shifting--e08c9c94",
+    "name": "Continue steadfast and not shifting",
+    "type": "figure",
+    "url": "/entities/f.continue-steadfast-and-not-shifting--e08c9c94/",
+    "blurb": "",
+    "searchText": "continue steadfast and not shifting figure perseverance  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "perseverance"
+  },
+  {
+    "id": "f.continue-steadfastly-in-prayer--74790f65",
+    "name": "Continue steadfastly in prayer",
+    "type": "figure",
+    "url": "/entities/f.continue-steadfastly-in-prayer--74790f65/",
+    "blurb": "",
+    "searchText": "continue steadfastly in prayer figure prayer  ",
+    "references": 1,
+    "books": [
+      "Colossians"
+    ],
+    "category": "prayer"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "name": "Sons of Harim",
+  "type": "group",
+  "references": [
+    "Ezra 2:32"
+  ],
+  "blurb": "Enumerated among the first returnees under Zerubbabel; their counted men totaled 320. Family identity stabilizes land claims and synagogue-era communities; numbers witness to costly obedience.",
+  "category": "record",
+  "count": 320,
+  "count_note": "Count per Ezra 2:32",
+  "id": "g.sons-of-harim--70a5b186",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      2
+    ]
+  }
+}

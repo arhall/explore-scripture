@@ -1,0 +1,21 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 5,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "g.people-of-israel--ecedc898",
+      "name": "People of Israel (second generation)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

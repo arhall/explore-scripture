@@ -1,0 +1,18 @@
+{
+  "name": "Mountain goats, deer, wild donkey, wild ox, ostrich",
+  "type": "entity",
+  "references": [
+    "Job 39:1–18"
+  ],
+  "blurb": "Untamable creatures witness to God’s delight in freedom and surprise—wisdom refuses reductionism.",
+  "category": "theology",
+  "id": "e.mountain-goats-deer-wild-donkey-wild-ox-ostrich--9027f066",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Job": [
+      39
+    ]
+  }
+}

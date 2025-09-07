@@ -1,0 +1,21 @@
+{
+  "name": "Reuel (son of Esau)",
+  "type": "person",
+  "references": [
+    "Genesis 36:4,13"
+  ],
+  "blurb": "Son of Esau by Basemath; father of Nahath, Zerah, Shammah, Mizzah.",
+  "category": "genealogy",
+  "cross_references": [
+    "1 Chronicles 1:35–36"
+  ],
+  "id": "p.reuel.son-of-esau.gene-36-4-13--8bf69f64",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

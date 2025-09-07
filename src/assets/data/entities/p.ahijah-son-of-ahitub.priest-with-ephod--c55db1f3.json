@@ -1,0 +1,22 @@
+{
+  "name": "Ahijah son of Ahitub (priest with ephod)",
+  "type": "person",
+  "references": [
+    "1 Samuel 14:3,18–19"
+  ],
+  "blurb": "Priest who bears the ephod during Jonathan’s exploit—descendant of Eli; signals priestly complexity in Saul’s day.",
+  "relations": {
+    "brother": "Ahimelech",
+    "line": "Eli’s house"
+  },
+  "category": "narrative",
+  "id": "p.ahijah-son-of-ahitub.priest-with-ephod--c55db1f3",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      14
+    ]
+  }
+}

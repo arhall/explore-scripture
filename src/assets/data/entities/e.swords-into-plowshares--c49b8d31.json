@@ -1,0 +1,19 @@
+{
+  "id": "e.swords-into-plowshares--c49b8d31",
+  "name": "Swords into plowshares",
+  "type": "entity",
+  "references": [
+    "Micah 4:3"
+  ],
+  "category": "peace-vision",
+  "blurb": "Disarmament by discipleship; warfare replaced by agrarian labor.",
+  "canonical_id": "e.swords-into-plowshares.zions-instruction--03251c07",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      4
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Before Felix",
+  "type": "figure",
+  "category": "trial",
+  "references": [
+    "Acts 24:1–27"
+  ],
+  "aka": [],
+  "id": "f.before-felix--28a6072c",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      24
+    ]
+  }
+}

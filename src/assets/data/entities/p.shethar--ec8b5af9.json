@@ -1,0 +1,18 @@
+{
+  "name": "Shethar",
+  "type": "person",
+  "references": [
+    "Esther 1:14"
+  ],
+  "blurb": "Prince among the seven—participant in the Vashti decree.",
+  "category": "record",
+  "id": "p.shethar--ec8b5af9",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      1
+    ]
+  }
+}

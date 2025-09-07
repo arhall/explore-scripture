@@ -1,0 +1,21 @@
+{
+  "name": "Nations called by my name",
+  "type": "group",
+  "references": [
+    "Amos 9:12"
+  ],
+  "blurb": "Gentile inclusion as covenant expansion—mission hinted in restoration.",
+  "category": "mission",
+  "cross_references": [
+    "Acts 15:17"
+  ],
+  "id": "g.nations-called-by-my-name--043ba148",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Amos": [
+      9
+    ]
+  }
+}

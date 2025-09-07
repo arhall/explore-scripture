@@ -1,0 +1,29 @@
+{
+  "name": "Mustard Seed",
+  "type": "figure",
+  "category": "parable",
+  "references": [
+    "Matt 13:31–32",
+    "Mark 4:30–32"
+  ],
+  "blurb": "Kingdom growth from insignificance to sheltering scope.",
+  "aka": [],
+  "id": "f.mustard-seed--65a3eb91",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Mark",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      13
+    ],
+    "Mark": [
+      4
+    ]
+  }
+}

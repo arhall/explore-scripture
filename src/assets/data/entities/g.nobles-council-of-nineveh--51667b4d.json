@@ -1,0 +1,18 @@
+{
+  "name": "Nobles/council of Nineveh",
+  "type": "group",
+  "references": [
+    "Jonah 3:7"
+  ],
+  "blurb": "Elite partner with king to enact repentance law; top‑down endorsement of bottom‑up movement.",
+  "category": "council",
+  "id": "g.nobles-council-of-nineveh--51667b4d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jonah": [
+      3
+    ]
+  }
+}

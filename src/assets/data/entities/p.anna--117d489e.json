@@ -1,0 +1,23 @@
+{
+  "name": "Anna",
+  "type": "person",
+  "aka": [],
+  "category": "prophetess",
+  "references": [
+    "Luke 2:36–38"
+  ],
+  "id": "p.anna--117d489e",
+  "source_book": "Luke",
+  "source_books": [
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Luke": [
+      2
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "book": "Nehemiah",
+  "chapter": 5,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "e.internal-injustice-nobles-exacting-interest--dd9df3f5",
+      "name": "Internal injustice: nobles exacting interest",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1
+    },
+    {
+      "id": "e.nehemiahs-governor-ethics.table-stipend-refusal--7683ee0f",
+      "name": "Nehemiah’s governor ethics (table, stipend refusal)",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1
+    }
+  ]
+}

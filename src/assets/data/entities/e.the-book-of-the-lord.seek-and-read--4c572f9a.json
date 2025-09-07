@@ -1,0 +1,18 @@
+{
+  "name": "The Book of the LORD (seek and read)",
+  "type": "entity",
+  "references": [
+    "Isaiah 34:16"
+  ],
+  "blurb": "Prophetic writings as covenant court record—what is written will not fail.",
+  "category": "scripture",
+  "id": "e.the-book-of-the-lord.seek-and-read--4c572f9a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Isaiah": [
+      34
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "book": "Leviticus",
+  "chapter": 23,
+  "entity_count": 10,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "g.people-of-israel--fa06221e",
+      "name": "People of Israel",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.sabbaths-and-appointed-feasts--cf65521f",
+      "name": "Sabbaths and appointed feasts",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    },
+    {
+      "id": "e.passover.pesach--e77f0d4d",
+      "name": "Passover (Pesach)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    },
+    {
+      "id": "e.feast-of-unleavened-bread--197a3bac",
+      "name": "Feast of Unleavened Bread",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    },
+    {
+      "id": "e.firstfruits.reishit-katzir--59eff5cf",
+      "name": "Firstfruits (Reishit Katzir)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    },
+    {
+      "id": "e.feast-of-weeks.shavuot--51d774bb",
+      "name": "Feast of Weeks (Shavuot)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    },
+    {
+      "id": "e.feast-of-trumpets.yom-teruah--c7eaec8a",
+      "name": "Feast of Trumpets (Yom Teruah)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    },
+    {
+      "id": "e.feast-of-booths.sukkot--eb768823",
+      "name": "Feast of Booths (Sukkot)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    },
+    {
+      "id": "e.drink-offering.libation--fa001918",
+      "name": "Drink offering (libation)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    }
+  ]
+}

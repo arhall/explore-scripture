@@ -1,0 +1,28 @@
+{
+  "name": "Exorcisms in Mark (index)",
+  "type": "figure",
+  "category": "index",
+  "references": [
+    "Mark 1:21–28",
+    "Mark 5:1–20",
+    "Mark 9:14–29"
+  ],
+  "blurb": "Index of major exorcisms highlighting authority and faith dynamics.",
+  "aka": [],
+  "id": "f.exorcisms-in-mark-index--57803780",
+  "source_book": "Mark",
+  "source_books": [
+    "Mark",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Mark": [
+      1,
+      5,
+      9
+    ]
+  }
+}

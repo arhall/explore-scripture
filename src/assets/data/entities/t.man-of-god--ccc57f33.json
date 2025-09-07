@@ -1,0 +1,15 @@
+{
+  "name": "man of God",
+  "type": "title",
+  "category": "address",
+  "references": [
+    "1 Tim 6:11"
+  ],
+  "aka": [],
+  "id": "t.man-of-god--ccc57f33",
+  "book_references": {
+    "1 Timothy": [
+      6
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Timothy’s visit",
+  "type": "person",
+  "category": "coworker",
+  "references": [
+    "1 Cor 16:10–11"
+  ],
+  "aka": [],
+  "id": "p.timothy-s-visit--5b0fdcad",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "1 Corinthians": [
+      16
+    ]
+  }
+}

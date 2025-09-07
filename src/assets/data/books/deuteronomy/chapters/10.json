@@ -1,0 +1,56 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 10,
+  "entity_count": 7,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "p.aaron--520c434c",
+      "name": "Aaron (recalled)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.eleazar-the-priest--e22b314d",
+      "name": "Eleazar the priest",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.people-of-israel--ecedc898",
+      "name": "People of Israel (second generation)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.levites-levitical-priests--4a4d13f1",
+      "name": "Levites / Levitical priests",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.sojourners-orphans-and-widows--83563f86",
+      "name": "Sojourners, orphans, and widows",
+      "type": "group",
+      "role": "ethics",
+      "refs_count": 1
+    },
+    {
+      "id": "e.ark-and-tablets-restored--a743c4cf",
+      "name": "Ark and tablets restored",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    }
+  ]
+}

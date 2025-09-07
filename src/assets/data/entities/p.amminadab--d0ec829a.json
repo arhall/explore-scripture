@@ -1,0 +1,21 @@
+{
+  "name": "Amminadab",
+  "type": "person",
+  "references": [
+    "Exodus 6:23"
+  ],
+  "blurb": "Father of Elisheba; Judahite ancestor.",
+  "category": "genealogy",
+  "cross_references": [
+    "Ruth 4:19–20"
+  ],
+  "id": "p.amminadab--d0ec829a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      6
+    ]
+  }
+}

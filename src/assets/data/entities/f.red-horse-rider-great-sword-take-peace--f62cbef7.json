@@ -1,0 +1,21 @@
+{
+  "name": "red horse rider (great sword, take peace)",
+  "type": "figure",
+  "category": "judgment",
+  "references": [
+    "Rev 6:3-4"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Zech 1:8-11; 6:1-8",
+      "type": "echo"
+    }
+  ],
+  "aka": [],
+  "id": "f.red-horse-rider-great-sword-take-peace--f62cbef7",
+  "book_references": {
+    "Revelation": [
+      6
+    ]
+  }
+}

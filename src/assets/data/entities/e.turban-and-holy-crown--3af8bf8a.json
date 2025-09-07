@@ -1,0 +1,21 @@
+{
+  "name": "Turban and holy crown (engraved ‘Holy to the LORD’)",
+  "type": "entity",
+  "references": [
+    "Exodus 28:36–38"
+  ],
+  "blurb": "Guilt borne before the LORD.",
+  "category": "priesthood",
+  "cross_references": [
+    "Leviticus 8"
+  ],
+  "id": "e.turban-and-holy-crown--3af8bf8a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      28
+    ]
+  }
+}

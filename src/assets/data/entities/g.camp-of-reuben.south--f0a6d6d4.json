@@ -1,0 +1,18 @@
+{
+  "name": "Camp of Reuben (south)",
+  "type": "group",
+  "references": [
+    "Numbers 2:10–16"
+  ],
+  "blurb": "Southward standard led by Reuben with Simeon and Gad.",
+  "category": "narrative",
+  "id": "g.camp-of-reuben.south--f0a6d6d4",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      2
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Asia (province)",
+  "type": "entity",
+  "category": "province",
+  "references": [
+    "Acts 19:10",
+    "Acts 20:16"
+  ],
+  "aka": [],
+  "id": "e.asia-province--55dbcf0b",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      19,
+      20
+    ]
+  }
+}

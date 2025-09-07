@@ -1,0 +1,22 @@
+{
+  "name": "Gleanings for the poor and the foreigner",
+  "type": "entity",
+  "references": [
+    "Leviticus 19:9–10"
+  ],
+  "blurb": "Edges and fallen grapes left—economy of mercy woven into harvest.",
+  "category": "ethics",
+  "cross_references": [
+    "Matthew 22:39",
+    "Romans 13:9"
+  ],
+  "id": "e.gleanings-for-the-poor-and-the-foreigner--3e15df07",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Leviticus": [
+      19
+    ]
+  }
+}

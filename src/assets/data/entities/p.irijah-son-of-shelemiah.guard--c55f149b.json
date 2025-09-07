@@ -1,0 +1,18 @@
+{
+  "name": "Irijah son of Shelemiah (guard)",
+  "type": "person",
+  "references": [
+    "Jeremiah 37:13–14"
+  ],
+  "blurb": "Accuses Jeremiah of desertion; embodies suspicion and breakdown of trust in a collapsing city.",
+  "category": "guard",
+  "id": "p.irijah-son-of-shelemiah.guard--c55f149b",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      37
+    ]
+  }
+}

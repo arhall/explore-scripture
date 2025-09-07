@@ -1,0 +1,22 @@
+{
+  "name": "Textual note: 6:24 ‘with incorruptibility’",
+  "type": "figure",
+  "category": "textual-notes",
+  "references": [
+    "Eph 6:24"
+  ],
+  "note": "Scope of ἐν ἀφθαρσίᾳ (modifies love vs grace) is debated; variant presence/placement.",
+  "aka": [],
+  "id": "f.textual-note-6-24-with-incorruptibility--9d5c7dc6",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      6
+    ]
+  }
+}

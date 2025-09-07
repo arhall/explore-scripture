@@ -1,0 +1,28 @@
+{
+  "book": "Ezekiel",
+  "chapter": 23,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "e.allegory-of-two-sisters-oholah-oholibah.samaria--c09d3d1e",
+      "name": "Allegory of two sisters: Oholah & Oholibah",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1
+    },
+    {
+      "id": "e.oholah--0e5e5928",
+      "name": "Oholah (Samaria)",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1
+    },
+    {
+      "id": "e.oholibah--e9a2173c",
+      "name": "Oholibah (Jerusalem)",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1
+    }
+  ]
+}

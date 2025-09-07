@@ -1,0 +1,18 @@
+{
+  "name": "The altar ‘Witness’ by the Jordan",
+  "type": "entity",
+  "references": [
+    "Joshua 22:10–34"
+  ],
+  "blurb": "Built by Reuben, Gad, and half-Manasseh as a testimony—not a rival shrine. Diplomatic crisis resolved through priestly inquiry (Phinehas).",
+  "category": "ritual",
+  "id": "e.the-altar-witness-by-the-jordan--e0ff55a7",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joshua": [
+      22
+    ]
+  }
+}

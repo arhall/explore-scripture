@@ -1,0 +1,712 @@
+[
+  {
+    "id": "d.holy-spirit--ad652b9c",
+    "name": "Holy Spirit",
+    "type": "divine",
+    "url": "/entities/d.holy-spirit--ad652b9c/",
+    "blurb": "Divine agent of conception, anointing, speech, and mission—integral to the triadic baptismal name.",
+    "searchText": "holy spirit divine theology divine agent of conception, anointing, speech, and mission—integral to the triadic baptismal name. ",
+    "references": 53,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "2 Corinthians",
+      "Galatians",
+      "1 Corinthians",
+      "Philippians",
+      "Ephesians",
+      "Romans",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "f.argument-map-index--c44b9b3a",
+    "name": "Argument map (index)",
+    "type": "figure",
+    "url": "/entities/f.argument-map-index--c44b9b3a/",
+    "blurb": "",
+    "searchText": "argument map (index) figure index  ",
+    "references": 17,
+    "books": [
+      "2 Corinthians",
+      "Galatians",
+      "1 Corinthians",
+      "Ephesians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John"
+    ],
+    "category": "index"
+  },
+  {
+    "id": "t.kingdom-of-god--e6ae8d7f",
+    "name": "Kingdom of God",
+    "type": "title",
+    "url": "/entities/t.kingdom-of-god--e6ae8d7f/",
+    "blurb": "God’s dynamic reign now and to come; in Matthew the phrase often appears as ‘Kingdom of Heaven’—the canonical label here is ‘Kingdom of God’ with ‘Kingdom of Heaven’ as aka.",
+    "searchText": "kingdom of god title kingdom god’s dynamic reign now and to come; in matthew the phrase often appears as ‘kingdom of heaven’—the canonical label here is ‘kingdom of god’ with ‘kingdom of heaven’ as aka. ",
+    "references": 16,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "Acts",
+      "1 Corinthians",
+      "Romans"
+    ],
+    "category": "kingdom"
+  },
+  {
+    "id": "e.temple--1d486079",
+    "name": "Temple",
+    "type": "entity",
+    "url": "/entities/e.temple--1d486079/",
+    "blurb": "Locus of divine kingship and human silence; judgment discourse ends in doxological hush.",
+    "searchText": "temple entity cultic locus of divine kingship and human silence; judgment discourse ends in doxological hush. e.temple--91a269ed",
+    "references": 8,
+    "books": [
+      "Habakkuk",
+      "Zephaniah",
+      "Zechariah",
+      "Malachi",
+      "1 Corinthians"
+    ],
+    "category": "cultic"
+  },
+  {
+    "id": "e.jerusalem--d3a5bc90",
+    "name": "Jerusalem",
+    "type": "entity",
+    "url": "/entities/e.jerusalem--d3a5bc90/",
+    "blurb": "The communal center of worship restored as Assyria’s threat is removed.",
+    "searchText": "jerusalem entity city the communal center of worship restored as assyria’s threat is removed. e.jerusalem--23c888bc e.jerusalem--6c42150d",
+    "references": 7,
+    "books": [
+      "Nahum",
+      "Galatians",
+      "2 Corinthians",
+      "1 Corinthians",
+      "Romans"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "f.virtue-vice-lists-index--5cc409b3",
+    "name": "Virtue/Vice lists (index)",
+    "type": "figure",
+    "url": "/entities/f.virtue-vice-lists-index--5cc409b3/",
+    "blurb": "",
+    "searchText": "virtue/vice lists (index) figure virtue-vice-index  ",
+    "references": 6,
+    "books": [
+      "1 Corinthians",
+      "Romans"
+    ],
+    "category": "virtue-vice-index"
+  },
+  {
+    "id": "e.ephesus--a81cfcdf",
+    "name": "Ephesus",
+    "type": "entity",
+    "url": "/entities/e.ephesus--a81cfcdf/",
+    "blurb": "",
+    "searchText": "ephesus entity city  ",
+    "references": 5,
+    "books": [
+      "2 Corinthians",
+      "1 Corinthians",
+      "Ephesians",
+      "1 Timothy"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "e.macedonia--58a26877",
+    "name": "Macedonia",
+    "type": "entity",
+    "url": "/entities/e.macedonia--58a26877/",
+    "blurb": "",
+    "searchText": "macedonia entity province  ",
+    "references": 5,
+    "books": [
+      "2 Corinthians",
+      "1 Corinthians",
+      "1 Thessalonians",
+      "1 Timothy"
+    ],
+    "category": "province"
+  },
+  {
+    "id": "e.corinth--56a50221",
+    "name": "Corinth",
+    "type": "entity",
+    "url": "/entities/e.corinth--56a50221/",
+    "blurb": "",
+    "searchText": "corinth entity city  ",
+    "references": 4,
+    "books": [
+      "2 Corinthians",
+      "1 Corinthians",
+      "Romans",
+      "2 Timothy"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "e.achaia--ba67eea7",
+    "name": "Achaia",
+    "type": "entity",
+    "url": "/entities/e.achaia--ba67eea7/",
+    "blurb": "",
+    "searchText": "achaia entity province  ",
+    "references": 3,
+    "books": [
+      "2 Corinthians",
+      "1 Corinthians",
+      "1 Thessalonians"
+    ],
+    "category": "province"
+  },
+  {
+    "id": "p.gaius-host--8d1c0b0d",
+    "name": "Gaius (host)",
+    "type": "person",
+    "url": "/entities/p.gaius-host--8d1c0b0d/",
+    "blurb": "",
+    "searchText": "gaius (host) person host  ",
+    "references": 2,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "host"
+  },
+  {
+    "id": "e.cenchreae--10d2a1aa",
+    "name": "Cenchreae",
+    "type": "entity",
+    "url": "/entities/e.cenchreae--10d2a1aa/",
+    "blurb": "",
+    "searchText": "cenchreae entity port-city  ",
+    "references": 2,
+    "books": [
+      "1 Corinthians",
+      "Romans"
+    ],
+    "category": "port-city"
+  },
+  {
+    "id": "f.gift-administrations--8f0ffba8",
+    "name": "Gift: Administrations",
+    "type": "figure",
+    "url": "/entities/f.gift-administrations--8f0ffba8/",
+    "blurb": "",
+    "searchText": "gift: administrations figure gift  ",
+    "references": 2,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "gift"
+  },
+  {
+    "id": "f.gift-apostles--8c1769b8",
+    "name": "Gift: Apostles",
+    "type": "figure",
+    "url": "/entities/f.gift-apostles--8c1769b8/",
+    "blurb": "",
+    "searchText": "gift: apostles figure gift  ",
+    "references": 2,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "gift"
+  },
+  {
+    "id": "f.gift-discernment-of-spirits--4d13e2e8",
+    "name": "Gift: Discernment Of Spirits",
+    "type": "figure",
+    "url": "/entities/f.gift-discernment-of-spirits--4d13e2e8/",
+    "blurb": "",
+    "searchText": "gift: discernment of spirits figure gift  ",
+    "references": 2,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "gift"
+  },
+  {
+    "id": "f.gift-faith--b41174a0",
+    "name": "Gift: Faith",
+    "type": "figure",
+    "url": "/entities/f.gift-faith--b41174a0/",
+    "blurb": "",
+    "searchText": "gift: faith figure gift  ",
+    "references": 2,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "gift"
+  },
+  {
+    "id": "f.gift-healings--f5f853ad",
+    "name": "Gift: Healings",
+    "type": "figure",
+    "url": "/entities/f.gift-healings--f5f853ad/",
+    "blurb": "",
+    "searchText": "gift: healings figure gift  ",
+    "references": 2,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "gift"
+  },
+  {
+    "id": "f.gift-helps--7df4c5d5",
+    "name": "Gift: Helps",
+    "type": "figure",
+    "url": "/entities/f.gift-helps--7df4c5d5/",
+    "blurb": "",
+    "searchText": "gift: helps figure gift  ",
+    "references": 2,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "gift"
+  },
+  {
+    "id": "f.gift-interpretation-of-tongues--1a575f67",
+    "name": "Gift: Interpretation Of Tongues",
+    "type": "figure",
+    "url": "/entities/f.gift-interpretation-of-tongues--1a575f67/",
+    "blurb": "",
+    "searchText": "gift: interpretation of tongues figure gift  ",
+    "references": 2,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "gift"
+  },
+  {
+    "id": "f.gift-knowledge--166547cc",
+    "name": "Gift: Knowledge",
+    "type": "figure",
+    "url": "/entities/f.gift-knowledge--166547cc/",
+    "blurb": "",
+    "searchText": "gift: knowledge figure gift  ",
+    "references": 2,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "gift"
+  },
+  {
+    "id": "f.gift-miracles--28f07ec3",
+    "name": "Gift: Miracles",
+    "type": "figure",
+    "url": "/entities/f.gift-miracles--28f07ec3/",
+    "blurb": "",
+    "searchText": "gift: miracles figure gift  ",
+    "references": 2,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "gift"
+  },
+  {
+    "id": "f.gift-prophets--17c8825f",
+    "name": "Gift: Prophets",
+    "type": "figure",
+    "url": "/entities/f.gift-prophets--17c8825f/",
+    "blurb": "",
+    "searchText": "gift: prophets figure gift  ",
+    "references": 2,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "gift"
+  },
+  {
+    "id": "f.gift-teachers--2a115c18",
+    "name": "Gift: Teachers",
+    "type": "figure",
+    "url": "/entities/f.gift-teachers--2a115c18/",
+    "blurb": "",
+    "searchText": "gift: teachers figure gift  ",
+    "references": 2,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "gift"
+  },
+  {
+    "id": "f.gift-tongues--14ab707d",
+    "name": "Gift: Tongues",
+    "type": "figure",
+    "url": "/entities/f.gift-tongues--14ab707d/",
+    "blurb": "",
+    "searchText": "gift: tongues figure gift  ",
+    "references": 2,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "gift"
+  },
+  {
+    "id": "f.gift-wisdom--bd755ccd",
+    "name": "Gift: Wisdom",
+    "type": "figure",
+    "url": "/entities/f.gift-wisdom--bd755ccd/",
+    "blurb": "",
+    "searchText": "gift: wisdom figure gift  ",
+    "references": 2,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "gift"
+  },
+  {
+    "id": "g.aquila-and-priscilla-house-church--4ac277ec",
+    "name": "Aquila and Priscilla (house-church)",
+    "type": "group",
+    "url": "/entities/g.aquila-and-priscilla-house-church--4ac277ec/",
+    "blurb": "",
+    "searchText": "aquila and priscilla (house-church) group house-church  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "house-church"
+  },
+  {
+    "id": "g.chloe-s-people-report--9e25283b",
+    "name": "Chloe’s people (report)",
+    "type": "group",
+    "url": "/entities/g.chloe-s-people-report--9e25283b/",
+    "blurb": "",
+    "searchText": "chloe’s people (report) group reporters  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "reporters"
+  },
+  {
+    "id": "g.fortunatus-and-achaicus--ac843559",
+    "name": "Fortunatus and Achaicus",
+    "type": "group",
+    "url": "/entities/g.fortunatus-and-achaicus--ac843559/",
+    "blurb": "",
+    "searchText": "fortunatus and achaicus group delegates  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "delegates"
+  },
+  {
+    "id": "g.household-of-stephanas-firstfruits--ed90ba33",
+    "name": "Household of Stephanas (firstfruits)",
+    "type": "group",
+    "url": "/entities/g.household-of-stephanas-firstfruits--ed90ba33/",
+    "blurb": "",
+    "searchText": "household of stephanas (firstfruits) group household  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "household"
+  },
+  {
+    "id": "p.apollos-reluctance--82aaf4b1",
+    "name": "Apollos’ reluctance",
+    "type": "person",
+    "url": "/entities/p.apollos-reluctance--82aaf4b1/",
+    "blurb": "",
+    "searchText": "apollos’ reluctance person teacher  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "teacher"
+  },
+  {
+    "id": "p.sosthenes-co-sender--34452041",
+    "name": "Sosthenes (co-sender)",
+    "type": "person",
+    "url": "/entities/p.sosthenes-co-sender--34452041/",
+    "blurb": "",
+    "searchText": "sosthenes (co-sender) person coworker  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "p.timothy-s-visit--5b0fdcad",
+    "name": "Timothy’s visit",
+    "type": "person",
+    "url": "/entities/p.timothy-s-visit--5b0fdcad/",
+    "blurb": "",
+    "searchText": "timothy’s visit person coworker  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "f.adam-and-last-adam--91955d90",
+    "name": "Adam and last Adam",
+    "type": "figure",
+    "url": "/entities/f.adam-and-last-adam--91955d90/",
+    "blurb": "",
+    "searchText": "adam and last adam figure typology  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "typology"
+  },
+  {
+    "id": "f.all-things-lawful-not-enslaved--cddfcbc6",
+    "name": "All things lawful, not enslaved",
+    "type": "figure",
+    "url": "/entities/f.all-things-lawful-not-enslaved--cddfcbc6/",
+    "blurb": "",
+    "searchText": "all things lawful, not enslaved figure ethic  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "ethic"
+  },
+  {
+    "id": "f.baptism-for-the-dead--423bcf82",
+    "name": "Baptism for the dead",
+    "type": "figure",
+    "url": "/entities/f.baptism-for-the-dead--423bcf82/",
+    "blurb": "",
+    "searchText": "baptism for the dead figure difficult-text  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "difficult-text"
+  },
+  {
+    "id": "f.baptized-into-one-body--c9af1f2a",
+    "name": "Baptized into one body",
+    "type": "figure",
+    "url": "/entities/f.baptized-into-one-body--c9af1f2a/",
+    "blurb": "",
+    "searchText": "baptized into one body figure baptism  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "baptism"
+  },
+  {
+    "id": "f.behold-a-mystery-changed--a5e22df7",
+    "name": "Behold, a mystery: changed",
+    "type": "figure",
+    "url": "/entities/f.behold-a-mystery-changed--a5e22df7/",
+    "blurb": "",
+    "searchText": "behold, a mystery: changed figure transformation  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "transformation"
+  },
+  {
+    "id": "f.calling-not-many-wise--10988ec1",
+    "name": "Calling: not many wise",
+    "type": "figure",
+    "url": "/entities/f.calling-not-many-wise--10988ec1/",
+    "blurb": "",
+    "searchText": "calling: not many wise figure calling  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "calling"
+  },
+  {
+    "id": "f.collection-mechanics-weekly-set-aside--cf70ac84",
+    "name": "Collection mechanics (weekly set-aside)",
+    "type": "figure",
+    "url": "/entities/f.collection-mechanics-weekly-set-aside--cf70ac84/",
+    "blurb": "",
+    "searchText": "collection mechanics (weekly set-aside) figure collection  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "collection"
+  },
+  {
+    "id": "f.discern-the-body--4dced988",
+    "name": "Discern the body",
+    "type": "figure",
+    "url": "/entities/f.discern-the-body--4dced988/",
+    "blurb": "",
+    "searchText": "discern the body figure examination  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "examination"
+  },
+  {
+    "id": "f.do-not-go-beyond-what-is-written--65d9e94a",
+    "name": "Do not go beyond what is written",
+    "type": "figure",
+    "url": "/entities/f.do-not-go-beyond-what-is-written--65d9e94a/",
+    "blurb": "",
+    "searchText": "do not go beyond what is written figure rule  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "rule"
+  },
+  {
+    "id": "f.eating-in-an-idol-s-temple--b4aae1f3",
+    "name": "Eating in an idol’s temple",
+    "type": "figure",
+    "url": "/entities/f.eating-in-an-idol-s-temple--b4aae1f3/",
+    "blurb": "",
+    "searchText": "eating in an idol’s temple figure idolatry  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "idolatry"
+  },
+  {
+    "id": "f.firstfruits-of-those-asleep--c1d5648d",
+    "name": "Firstfruits of those asleep",
+    "type": "figure",
+    "url": "/entities/f.firstfruits-of-those-asleep--c1d5648d/",
+    "blurb": "",
+    "searchText": "firstfruits of those asleep figure firstfruits  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "firstfruits"
+  },
+  {
+    "id": "f.flee-idolatry--4c5abd5f",
+    "name": "Flee idolatry",
+    "type": "figure",
+    "url": "/entities/f.flee-idolatry--4c5abd5f/",
+    "blurb": "",
+    "searchText": "flee idolatry figure idolatry  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "idolatry"
+  },
+  {
+    "id": "f.flee-sexual-immorality-porneia--07add2db",
+    "name": "Flee sexual immorality (porneia)",
+    "type": "figure",
+    "url": "/entities/f.flee-sexual-immorality-porneia--07add2db/",
+    "blurb": "",
+    "searchText": "flee sexual immorality (porneia) figure ethic  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "ethic"
+  },
+  {
+    "id": "f.head-coverings-and-headship--33be41d5",
+    "name": "Head coverings and headship (κεφαλή)",
+    "type": "figure",
+    "url": "/entities/f.head-coverings-and-headship--33be41d5/",
+    "blurb": "",
+    "searchText": "head coverings and headship (κεφαλή) figure worship-order  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "worship-order"
+  },
+  {
+    "id": "f.i-planted-apollos-watered--f36026d7",
+    "name": "I planted, Apollos watered",
+    "type": "figure",
+    "url": "/entities/f.i-planted-apollos-watered--f36026d7/",
+    "blurb": "",
+    "searchText": "i planted, apollos watered figure teamwork  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "teamwork"
+  },
+  {
+    "id": "f.if-no-resurrection-then--61ba85ba",
+    "name": "If no resurrection then...",
+    "type": "figure",
+    "url": "/entities/f.if-no-resurrection-then--61ba85ba/",
+    "blurb": "",
+    "searchText": "if no resurrection then... figure logic  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "logic"
+  },
+  {
+    "id": "f.imitate-me-as-i-imitate-christ--84e7551b",
+    "name": "Imitate me as I imitate Christ",
+    "type": "figure",
+    "url": "/entities/f.imitate-me-as-i-imitate-christ--84e7551b/",
+    "blurb": "",
+    "searchText": "imitate me as i imitate christ figure example  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "example"
+  },
+  {
+    "id": "f.incest-case-and-discipline--7a329f1d",
+    "name": "Incest case and discipline",
+    "type": "figure",
+    "url": "/entities/f.incest-case-and-discipline--7a329f1d/",
+    "blurb": "",
+    "searchText": "incest case and discipline figure discipline  ",
+    "references": 1,
+    "books": [
+      "1 Corinthians"
+    ],
+    "category": "discipline"
+  }
+]

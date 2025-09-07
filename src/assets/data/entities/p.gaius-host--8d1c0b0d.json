@@ -1,0 +1,23 @@
+{
+  "name": "Gaius (host)",
+  "type": "person",
+  "category": "host",
+  "references": [
+    "1 Cor 1:14",
+    "1 Cor 16:23"
+  ],
+  "aka": [],
+  "id": "p.gaius-host--8d1c0b0d",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "1 Corinthians": [
+      1,
+      16
+    ]
+  }
+}

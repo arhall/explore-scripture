@@ -1,0 +1,26 @@
+{
+  "name": "Absolute I AM (ἐγώ εἰμι) statements",
+  "type": "figure",
+  "category": "index",
+  "references": [
+    "John 8:24",
+    "John 8:58",
+    "John 18:5–6"
+  ],
+  "aka": [],
+  "id": "f.absolute-i-am-statements--0ddb03fa",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      8,
+      18
+    ]
+  }
+}

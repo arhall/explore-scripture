@@ -1,0 +1,77 @@
+{
+  "book": "1 Timothy",
+  "chapter": 3,
+  "entity_count": 42,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "g.deacons--a2471f07",
+      "name": "deacons",
+      "type": "group",
+      "role": "office",
+      "refs_count": 2
+    },
+    {
+      "id": "g.overseers-bishops--72c3f6fb",
+      "name": "overseers (bishops)",
+      "type": "group",
+      "role": "office",
+      "refs_count": 2
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "f.deacon-not-greedy-for-dishonest-gain--4515957c",
+      "name": "Deacon: not greedy for dishonest gain",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1
+    },
+    {
+      "id": "t.mystery-of-godliness--ad8d9a64",
+      "name": "Mystery of godliness",
+      "type": "title",
+      "role": "hymn",
+      "refs_count": 1
+    },
+    {
+      "id": "f.overseer-children-submissive--6fc38442",
+      "name": "Overseer: children submissive",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1
+    },
+    {
+      "id": "f.hymn-vindicated-by-the-spirit--6c0a4527",
+      "name": "Hymn: Vindicated by the Spirit",
+      "type": "figure",
+      "role": "hymn-line",
+      "refs_count": 1
+    },
+    {
+      "id": "f.overseer-not-a-recent-convert--e28f3883",
+      "name": "Overseer: not a recent convert",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1
+    },
+    {
+      "id": "g.deaconesses-women-3-11--b3648381",
+      "name": "deaconesses/women (3:11)",
+      "type": "group",
+      "role": "office",
+      "refs_count": 1
+    }
+  ]
+}

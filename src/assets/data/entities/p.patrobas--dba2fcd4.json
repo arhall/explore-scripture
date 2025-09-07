@@ -1,0 +1,21 @@
+{
+  "name": "Patrobas",
+  "type": "person",
+  "category": "believer",
+  "references": [
+    "Rom 16:14"
+  ],
+  "aka": [],
+  "id": "p.patrobas--dba2fcd4",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      16
+    ]
+  }
+}

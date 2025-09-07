@@ -1,0 +1,18 @@
+{
+  "name": "Mount Carmel",
+  "type": "entity",
+  "references": [
+    "Amos 9:3"
+  ],
+  "blurb": "No hiding place: even Carmel’s caves cannot conceal from divine pursuit.",
+  "category": "mount",
+  "id": "e.mount-carmel--c55d162a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Amos": [
+      9
+    ]
+  }
+}

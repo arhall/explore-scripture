@@ -1,0 +1,27 @@
+{
+  "name": "Near word (Deut 30:12–14)",
+  "type": "figure",
+  "category": "word",
+  "references": [
+    "Rom 10:6–8"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Deut 30:12–14",
+      "type": "quotation"
+    }
+  ],
+  "aka": [],
+  "id": "f.near-word-deut-30-12-14--042a734d",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      10
+    ]
+  }
+}

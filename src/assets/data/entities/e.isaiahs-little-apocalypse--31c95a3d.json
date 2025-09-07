@@ -1,0 +1,21 @@
+{
+  "name": "Isaiah’s Little Apocalypse",
+  "type": "entity",
+  "references": [
+    "Isaiah 24–27"
+  ],
+  "blurb": "Cosmic judgment and song: city of chaos falls; a banquet on the mountain; death swallowed; resurrection sung; Leviathan slain.",
+  "category": "apocalypse",
+  "id": "e.isaiahs-little-apocalypse--31c95a3d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Isaiah": [
+      24,
+      25,
+      26,
+      27
+    ]
+  }
+}

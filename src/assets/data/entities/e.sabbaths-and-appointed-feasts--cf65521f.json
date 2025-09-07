@@ -1,0 +1,21 @@
+{
+  "name": "Sabbaths and appointed feasts",
+  "type": "entity",
+  "references": [
+    "Leviticus 23"
+  ],
+  "blurb": "Sacred calendar structuring Israel’s time around redemption and dependence—weekly rest and yearly convocations.",
+  "category": "ritual",
+  "cross_references": [
+    "Colossians 2:16–17"
+  ],
+  "id": "e.sabbaths-and-appointed-feasts--cf65521f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Leviticus": [
+      23
+    ]
+  }
+}

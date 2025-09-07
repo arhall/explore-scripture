@@ -1,0 +1,18 @@
+{
+  "name": "Freewill offerings for the house",
+  "type": "entity",
+  "references": [
+    "Ezra 2:68–69"
+  ],
+  "blurb": "Fund for the work: about 61,000 gold darics, 5,000 minas of silver, 100 priestly garments—devotion made tangible.",
+  "category": "worship",
+  "id": "e.freewill-offerings-for-the-house--ce0a4569",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      2
+    ]
+  }
+}

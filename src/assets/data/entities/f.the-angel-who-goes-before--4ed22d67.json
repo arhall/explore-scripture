@@ -1,0 +1,21 @@
+{
+  "name": "The Angel who goes before",
+  "type": "figure",
+  "references": [
+    "Exodus 23:20–23; 32:34"
+  ],
+  "blurb": "Divine messenger bearing God’s Name who will guard the people—mysterious figure of presence and judgment.",
+  "category": "narrative",
+  "cross_references": [
+    "Isaiah 63:9"
+  ],
+  "id": "f.the-angel-who-goes-before--4ed22d67",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      23
+    ]
+  }
+}

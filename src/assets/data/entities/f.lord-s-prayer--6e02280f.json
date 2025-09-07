@@ -1,0 +1,26 @@
+{
+  "name": "Lord’s Prayer",
+  "type": "figure",
+  "aka": [],
+  "category": "teaching",
+  "references": [
+    "Luke 11:2–4"
+  ],
+  "synoptic_parallels": [
+    "Matt 6:9–13"
+  ],
+  "id": "f.lord-s-prayer--6e02280f",
+  "source_book": "Luke",
+  "source_books": [
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Luke": [
+      11
+    ]
+  }
+}

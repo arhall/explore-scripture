@@ -1,0 +1,77 @@
+{
+  "book": "1 Thessalonians",
+  "chapter": 4,
+  "entity_count": 20,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "g.brotherly-love-taught-by-god--376c5a1c",
+      "name": "Brotherly love taught by God",
+      "type": "group",
+      "role": "virtue",
+      "refs_count": 1
+    },
+    {
+      "id": "g.work-with-your-hands--ee5cfc26",
+      "name": "Work with your hands",
+      "type": "group",
+      "role": "work-ethic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.harpazo-caught-up--9066c212",
+      "name": "Harpazo (caught up)",
+      "type": "figure",
+      "role": "parousia",
+      "refs_count": 1
+    },
+    {
+      "id": "f.we-will-always-be-with-the-lord--3d426dad",
+      "name": "We will always be with the Lord",
+      "type": "figure",
+      "role": "consolation",
+      "refs_count": 1
+    },
+    {
+      "id": "f.the-lord-himself-will-descend--d71a123e",
+      "name": "The Lord himself will descend",
+      "type": "figure",
+      "role": "parousia",
+      "refs_count": 1
+    },
+    {
+      "id": "f.possess-your-own-vessel-in-holiness--418578a7",
+      "name": "Possess your own vessel in holiness",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.abstain-from-sexual-immorality--5c727fe2",
+      "name": "Abstain from sexual immorality",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1
+    },
+    {
+      "id": "g.aspire-to-quietness--ea137dda",
+      "name": "Aspire to quietness",
+      "type": "group",
+      "role": "work-ethic",
+      "refs_count": 1
+    }
+  ]
+}

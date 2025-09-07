@@ -1,0 +1,18 @@
+{
+  "name": "Return to me with all your heart",
+  "type": "entity",
+  "references": [
+    "Joel 2:12–13"
+  ],
+  "blurb": "Tear hearts, not garments—appeal to God’s name as gracious and compassionate.",
+  "category": "repentance",
+  "id": "e.return-to-me-with-all-your-heart--60af3e06",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      2
+    ]
+  }
+}

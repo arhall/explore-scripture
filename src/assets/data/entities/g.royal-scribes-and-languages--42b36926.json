@@ -1,0 +1,18 @@
+{
+  "name": "Royal scribes and languages",
+  "type": "group",
+  "references": [
+    "Esther 3:12; 8:9"
+  ],
+  "blurb": "Edicts written to each province in its script and to each people in its language—divine care contextualizes truth.",
+  "category": "record",
+  "id": "g.royal-scribes-and-languages--42b36926",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      3
+    ]
+  }
+}

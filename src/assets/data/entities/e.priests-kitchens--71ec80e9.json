@@ -1,0 +1,18 @@
+{
+  "name": "Priests’ kitchens",
+  "type": "entity",
+  "references": [
+    "Ezekiel 46:19-24"
+  ],
+  "blurb": "Chambers in corners for boiling sacrifices, guarding holy/profane boundary.",
+  "category": "temple",
+  "id": "e.priests-kitchens--71ec80e9",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      46
+    ]
+  }
+}

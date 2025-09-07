@@ -1,0 +1,27 @@
+{
+  "name": "Stumbling stone (conflation)",
+  "type": "figure",
+  "category": "stone",
+  "references": [
+    "Rom 9:33"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Isa 8:14; 28:16",
+      "type": "conflation"
+    }
+  ],
+  "aka": [],
+  "id": "f.stumbling-stone-conflation--d15e51da",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      9
+    ]
+  }
+}

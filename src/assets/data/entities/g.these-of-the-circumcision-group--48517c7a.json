@@ -1,0 +1,21 @@
+{
+  "name": "These of the circumcision group",
+  "type": "group",
+  "category": "affiliation",
+  "references": [
+    "Col 4:11"
+  ],
+  "aka": [],
+  "id": "g.these-of-the-circumcision-group--48517c7a",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      4
+    ]
+  }
+}

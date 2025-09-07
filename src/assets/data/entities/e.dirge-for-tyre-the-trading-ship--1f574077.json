@@ -1,0 +1,18 @@
+{
+  "name": "Dirge for Tyre, the trading ship",
+  "type": "entity",
+  "references": [
+    "Ezekiel 27"
+  ],
+  "blurb": "Every mast and sail named; when the ship sinks, the world’s markets wail—commerce can be an idol with a funeral.",
+  "category": "lament",
+  "id": "e.dirge-for-tyre-the-trading-ship--1f574077",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      27
+    ]
+  }
+}

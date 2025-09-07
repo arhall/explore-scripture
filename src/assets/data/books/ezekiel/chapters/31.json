@@ -1,0 +1,28 @@
+{
+  "book": "Ezekiel",
+  "chapter": 31,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "g.egypt--ab1ad00f",
+      "name": "Egypt",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 6
+    },
+    {
+      "id": "p.pharaoh.hophra-apries-horizon--5a8042d1",
+      "name": "Pharaoh (Hophra/Apries horizon)",
+      "type": "person",
+      "role": "pharaoh",
+      "refs_count": 1
+    },
+    {
+      "id": "g.assyria-as-a-towering-cedar--ddf88a81",
+      "name": "Assyria as a towering cedar",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1
+    }
+  ]
+}

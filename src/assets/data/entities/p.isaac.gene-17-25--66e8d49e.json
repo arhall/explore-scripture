@@ -1,0 +1,52 @@
+{
+  "name": "Isaac",
+  "type": "person",
+  "references": [
+    "Genesis 17–25",
+    "Heb 11:20",
+    "Gal 4:28"
+  ],
+  "blurb": "The son of promise, Isaac embodies God’s fidelity to His word. Spared on Moriah (Gen 22), he receives Abraham’s covenant and becomes father to Esau and Jacob. Isaac’s narrative is quieter yet pivotal, showing God’s promise advancing through ordinary life and tested faith.",
+  "relations": {
+    "parents": [
+      "Abram (Abraham)",
+      "Sarai (Sarah)"
+    ],
+    "spouse_of": [
+      "Rebekah"
+    ]
+  },
+  "category": "narrative",
+  "cross_references": [
+    "Genesis 26",
+    "Romans 9:7",
+    "Hebrews 11:17–20"
+  ],
+  "id": "p.isaac.gene-17-25--66e8d49e",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "p.isaac--3af10add",
+    "p.isaac.gene-26--da8ff3bc"
+  ],
+  "book_references": {
+    "Genesis": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "Hebrews": [
+      11
+    ],
+    "Galatians": [
+      4
+    ]
+  }
+}

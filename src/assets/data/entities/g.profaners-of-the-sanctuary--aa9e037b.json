@@ -1,0 +1,18 @@
+{
+  "id": "g.profaners-of-the-sanctuary--aa9e037b",
+  "name": "Profaners of the sanctuary",
+  "type": "group",
+  "references": [
+    "Mal 2:11"
+  ],
+  "category": "offenders",
+  "blurb": "Violators who marry the daughter of a foreign god, desecrating the beloved sanctuary.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      2
+    ]
+  }
+}

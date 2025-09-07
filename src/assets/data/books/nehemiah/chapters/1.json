@@ -1,0 +1,14 @@
+{
+  "book": "Nehemiah",
+  "chapter": 1,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "p.hanani.brother-messenger--ccc057c1",
+      "name": "Hanani (brother/messenger)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

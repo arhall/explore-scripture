@@ -1,0 +1,21 @@
+{
+  "name": "Cornerstone",
+  "type": "figure",
+  "category": "christology",
+  "references": [
+    "Eph 2:20"
+  ],
+  "aka": [],
+  "id": "f.cornerstone--ad987ae5",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      2
+    ]
+  }
+}

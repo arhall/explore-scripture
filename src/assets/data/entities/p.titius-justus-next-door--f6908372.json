@@ -1,0 +1,23 @@
+{
+  "name": "Titius Justus (next door)",
+  "type": "person",
+  "category": "host",
+  "references": [
+    "Acts 18:7"
+  ],
+  "aka": [],
+  "id": "p.titius-justus-next-door--f6908372",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      18
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Table fellowship in Luke",
+  "type": "figure",
+  "category": "theme",
+  "references": [
+    "Luke 5:29–32",
+    "Luke 7:36–50",
+    "Luke 14:1–24",
+    "Luke 19:1–10",
+    "Luke 24:30"
+  ],
+  "blurb": "Meals as settings of teaching, repentance, inclusion, and recognition.",
+  "aka": [],
+  "id": "f.table-fellowship-in-luke--65956cca",
+  "source_book": "Luke",
+  "source_books": [
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Luke": [
+      5,
+      7,
+      14,
+      19,
+      24
+    ]
+  }
+}

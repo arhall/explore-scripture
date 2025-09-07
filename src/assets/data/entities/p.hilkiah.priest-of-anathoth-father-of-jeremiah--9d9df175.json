@@ -1,0 +1,22 @@
+{
+  "name": "Hilkiah (priest of Anathoth, father of Jeremiah)",
+  "type": "person",
+  "references": [
+    "Jeremiah 1:1"
+  ],
+  "blurb": "Priestly lineage roots Jeremiah’s message in covenant law; not to be confused with Hilkiah the high priest of Josiah’s reform.",
+  "relations": {
+    "son": "Jeremiah",
+    "location": "Anathoth"
+  },
+  "category": "priest",
+  "id": "p.hilkiah.priest-of-anathoth-father-of-jeremiah--9d9df175",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      1
+    ]
+  }
+}

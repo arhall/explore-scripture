@@ -1,0 +1,18 @@
+{
+  "name": "Hobab son of Reuel (the Midianite)",
+  "type": "person",
+  "references": [
+    "Numbers 10:29–32"
+  ],
+  "blurb": "Wilderness guide invited to share Israel’s good; a model of missional hospitality.",
+  "category": "narrative",
+  "id": "p.hobab-son-of-reuel.the-midianite--940d7aea",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      10
+    ]
+  }
+}

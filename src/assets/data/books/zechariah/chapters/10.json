@@ -1,0 +1,49 @@
+{
+  "book": "Zechariah",
+  "chapter": 10,
+  "entity_count": 6,
+  "entities": [
+    {
+      "id": "f.ask-for-rain-early-late--cf89380c",
+      "name": "Ask for rain (early/late)",
+      "type": "figure",
+      "role": "blessing",
+      "refs_count": 1
+    },
+    {
+      "id": "f.idols-and-diviners-condemned--2ee6ac5c",
+      "name": "Idols and diviners condemned",
+      "type": "figure",
+      "role": "polemic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.cornerstone-peg-bow-of-judah--eb1aee21",
+      "name": "Cornerstone/Peg/Bow of Judah",
+      "type": "figure",
+      "role": "leadership-symbols",
+      "refs_count": 1
+    },
+    {
+      "id": "e.cornerstone--6acf07e7",
+      "name": "Cornerstone",
+      "type": "entity",
+      "role": "architectural-symbol",
+      "refs_count": 1
+    },
+    {
+      "id": "e.tent-peg--60da1fd7",
+      "name": "Tent peg",
+      "type": "entity",
+      "role": "security-symbol",
+      "refs_count": 1
+    },
+    {
+      "id": "e.battle-bow--48556293",
+      "name": "Battle bow",
+      "type": "entity",
+      "role": "war-symbol",
+      "refs_count": 1
+    }
+  ]
+}

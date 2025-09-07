@@ -1,0 +1,19 @@
+{
+  "name": "Puvah",
+  "type": "person",
+  "references": [
+    "Genesis 46:13"
+  ],
+  "blurb": "Son of Issachar listed among those who went to Egypt.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.puvah.gene-46-13--1aa0b6c9",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      46
+    ]
+  }
+}

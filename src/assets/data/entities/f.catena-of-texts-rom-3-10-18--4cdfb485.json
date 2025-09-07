@@ -1,0 +1,28 @@
+{
+  "name": "Catena of texts (Rom 3:10–18)",
+  "type": "figure",
+  "category": "catena",
+  "references": [
+    "Rom 3:10–18"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Ps 14/53; Ps 5:9; Ps 140:3; Ps 10:7; Isa 59:7–8; Ps 36:1",
+      "type": "catena"
+    }
+  ],
+  "blurb": "String of OT citations to establish universal sinfulness.",
+  "aka": [],
+  "id": "f.catena-of-texts-rom-3-10-18--4cdfb485",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      3
+    ]
+  }
+}

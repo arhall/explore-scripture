@@ -1,0 +1,19 @@
+{
+  "name": "Chief Jetheth",
+  "type": "title",
+  "references": [
+    "Genesis 36:40–43"
+  ],
+  "blurb": "Territorial chief of Edom listed by dwelling places; maps the political geography of Seir.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "t.chief-jetheth.gene-36-40-43--067d4d78",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

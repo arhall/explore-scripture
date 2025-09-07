@@ -1,0 +1,18 @@
+{
+  "id": "e.greater-glory-of-this-house--ef2da18f",
+  "name": "Greater glory of this house",
+  "type": "entity",
+  "references": [
+    "Hag 2:9"
+  ],
+  "category": "temple-theology",
+  "blurb": "Promise that presence and peace confer a surpassing glory on the second house.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      2
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Life in the Spirit vs the flesh",
+  "type": "figure",
+  "category": "Spirit-life",
+  "references": [
+    "Rom 8:5–13"
+  ],
+  "greek_terms": [
+    {
+      "term": "σάρξ",
+      "gloss": "flesh"
+    },
+    {
+      "term": "πνεῦμα",
+      "gloss": "Spirit"
+    }
+  ],
+  "aka": [],
+  "id": "f.life-in-the-spirit-vs-the-flesh--e6a0e503",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      8
+    ]
+  }
+}

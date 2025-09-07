@@ -1,0 +1,18 @@
+{
+  "id": "e.mountains-of-bronze--fb0c1863",
+  "name": "Mountains of bronze",
+  "type": "entity",
+  "references": [
+    "Zech 6:1"
+  ],
+  "category": "cosmic-architecture",
+  "blurb": "Portal for chariots, evoking stability and grandeur.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      6
+    ]
+  }
+}

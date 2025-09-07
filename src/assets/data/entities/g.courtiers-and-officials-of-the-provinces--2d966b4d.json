@@ -1,0 +1,18 @@
+{
+  "name": "Courtiers and officials of the provinces",
+  "type": "group",
+  "references": [
+    "Esther 1:3; 3:12; 8:9"
+  ],
+  "blurb": "Satraps, governors, and princes disseminate decrees in every script—bureaucracy as a conduit of providence.",
+  "category": "record",
+  "id": "g.courtiers-and-officials-of-the-provinces--2d966b4d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      1
+    ]
+  }
+}

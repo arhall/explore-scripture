@@ -1,0 +1,21 @@
+{
+  "name": "Julia",
+  "type": "person",
+  "category": "believer",
+  "references": [
+    "Rom 16:15"
+  ],
+  "aka": [],
+  "id": "p.julia--8516c524",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      16
+    ]
+  }
+}

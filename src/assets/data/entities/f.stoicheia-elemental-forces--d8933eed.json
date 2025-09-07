@@ -1,0 +1,30 @@
+{
+  "name": "Stoicheia: elemental forces",
+  "type": "figure",
+  "category": "elements",
+  "references": [
+    "Gal 4:3,9"
+  ],
+  "greek_terms": [
+    {
+      "term": "στοιχεῖα",
+      "gloss": "elemental principles/spirits"
+    }
+  ],
+  "aka": [],
+  "id": "f.stoicheia-elemental-forces--d8933eed",
+  "canonicalized_from": [
+    "f.stoicheia-elemental-forces--586d5322"
+  ],
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Galatians": [
+      4
+    ]
+  }
+}

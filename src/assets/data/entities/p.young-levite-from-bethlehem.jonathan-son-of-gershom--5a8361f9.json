@@ -1,0 +1,21 @@
+{
+  "name": "Young Levite from Bethlehem (Jonathan son of Gershom?)",
+  "type": "person",
+  "references": [
+    "Judges 17:7–13; 18:30"
+  ],
+  "blurb": "A wandering priest-for-hire who becomes tribal chaplain to Dan. Textual tradition links him to Gershom, son of Moses/Manasseh—warning about legacy drift.",
+  "category": "narrative",
+  "cross_references": [
+    "Exodus 2:22"
+  ],
+  "id": "p.young-levite-from-bethlehem.jonathan-son-of-gershom--5a8361f9",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      17
+    ]
+  }
+}

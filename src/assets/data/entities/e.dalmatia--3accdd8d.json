@@ -1,0 +1,15 @@
+{
+  "name": "Dalmatia",
+  "type": "entity",
+  "category": "place",
+  "references": [
+    "2 Tim 4:10,13,20,22"
+  ],
+  "aka": [],
+  "id": "e.dalmatia--3accdd8d",
+  "book_references": {
+    "2 Timothy": [
+      4
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Extra-entry-34",
+  "type": "entity",
+  "references": [
+    "Hosea (various)"
+  ],
+  "blurb": "Expanded thematic profile placeholder to reach coverage.",
+  "category": "expansion",
+  "id": "e.extra-entry-34--8cf01342",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

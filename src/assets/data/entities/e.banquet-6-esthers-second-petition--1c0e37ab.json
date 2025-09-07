@@ -1,0 +1,18 @@
+{
+  "name": "Banquet 6: Esther’s second petition",
+  "type": "entity",
+  "references": [
+    "Esther 7:1–6"
+  ],
+  "blurb": "Accusation in the open—evil named at table.",
+  "category": "festival",
+  "id": "e.banquet-6-esthers-second-petition--1c0e37ab",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      7
+    ]
+  }
+}

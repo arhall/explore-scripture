@@ -1,0 +1,1622 @@
+{
+  "book": "Zechariah",
+  "coverage": "Zechariah spans dated night visions (chs. 1–8) and later apocalyptic oracles (chs. 9–14): temple restoration, Spirit-empowered leadership, angelic mediation, messianic Branch, shepherd parables, pierced-one mourning, living waters, and universal kingship. The corpus models people, groups, figures, and entities with intertexts and reception across Jewish and Christian traditions.",
+  "generated_at": "2025-09-03T15:25:33Z",
+  "version": "v1.0-zechariah-all-expanded",
+  "id_scheme": "Cross-book stable by (type+primary-slug) + deterministic hash; alias reuse for shared entities.",
+  "sections": [
+    {
+      "section": "People & Offices",
+      "entries": [
+        "Zechariah son of Berechiah son of Iddo",
+        "Darius I (Persian king)",
+        "Joshua son of Jehozadak (high priest)",
+        "Zerubbabel son of Shealtiel (governor)",
+        "Angel of the LORD",
+        "Interpreting Angel",
+        "Satan/Accuser",
+        "Good Shepherd",
+        "Foolish Shepherd",
+        "Worthless Shepherd",
+        "House of David",
+        "House of Levi/Shimei",
+        "False prophets"
+      ]
+    },
+    {
+      "section": "Groups & Nations",
+      "entries": [
+        "Judah",
+        "Israel",
+        "Remnant",
+        "Nations",
+        "North Country (Babylon)",
+        "Philistia",
+        "Ashkelon",
+        "Gaza",
+        "Ekron",
+        "Ashdod",
+        "Tyre",
+        "Sidon",
+        "Greece (Javan)",
+        "Egypt",
+        "Assyria",
+        "Enemies gathered against Jerusalem",
+        "All nations keeping Feast of Booths"
+      ]
+    },
+    {
+      "section": "Divine",
+      "entries": [
+        "YHWH (the LORD)",
+        "Spirit of the LORD",
+        "King over all the earth"
+      ]
+    },
+    {
+      "section": "Figures (Personifications & Literary)",
+      "entries": [
+        "Call to return",
+        "Horsemen among the myrtles",
+        "Oracle of prosperity for Zion",
+        "Four horns & four craftsmen",
+        "Man with measuring line",
+        "God’s zeal for Zion",
+        "Joshua accused & cleansed",
+        "Filthy garments removed",
+        "Clean turban placed",
+        "Stone with seven eyes",
+        "Golden lampstand & two olive trees",
+        "Two anointed ones",
+        "Flying scroll (curse)",
+        "Woman in the ephah (Wickedness)",
+        "Four chariots from between mountains",
+        "Zerubbabel and the plumb line",
+        "Not by might but by Spirit",
+        "Men of sign with Joshua",
+        "Crowning of Joshua (memorial in temple)",
+        "Branch (messianic)",
+        "Delegation from Bethel asks about fasting",
+        "Fast of the fourth month",
+        "Fast of the fifth month",
+        "Fast of the seventh month",
+        "Fast of the tenth month",
+        "Fasts turned to feasts",
+        "Love truth and peace",
+        "Ten men grasp the robe of a Jew",
+        "Blood of the covenant frees prisoners",
+        "Ask for rain (early/late)",
+        "Idols and diviners condemned",
+        "Judah as bow, Ephraim as arrow",
+        "King on a donkey",
+        "Cornerstone/Peg/Bow of Judah",
+        "Two staves: Favor & Union",
+        "Breaking the staff Favor",
+        "Breaking the staff Union",
+        "Thirty pieces of silver (potter/treasury)",
+        "Pierced one",
+        "Cleansing fountain opened",
+        "Wounds in the house of friends",
+        "False prophets ashamed",
+        "Idolatry cut off from the land",
+        "Strike the shepherd",
+        "Living waters from Jerusalem",
+        "Day of the LORD (final siege)",
+        "Mount of Olives split",
+        "Jerusalem raised and secure",
+        "Plague on nations (flesh/eyes/tongue)",
+        "Feast of Booths for all nations",
+        "Bells of horses: Holy to the LORD",
+        "Every pot holy to the LORD"
+      ]
+    },
+    {
+      "section": "Entities (Places, Objects, Motifs, Rituals)",
+      "entries": [
+        "Temple",
+        "Altar",
+        "Holy Mountain",
+        "Jerusalem",
+        "Zion",
+        "Measuring line",
+        "Plumb line",
+        "Lampstand",
+        "Olive trees",
+        "Olive oil",
+        "Stone with seven eyes (stone)",
+        "Colored horses",
+        "Ephah basket",
+        "Wickedness (sealed with lead)",
+        "Mountains of bronze",
+        "Silver & gold crown(s)",
+        "Treasury/Temple memorial",
+        "Fast days set",
+        "Feasts of joy",
+        "Donkey colt",
+        "Cornerstone",
+        "Tent peg",
+        "Battle bow",
+        "Staff Favor",
+        "Staff Union",
+        "Thirty pieces of silver",
+        "Fountain for cleansing",
+        "Sword",
+        "Mount of Olives",
+        "Living waters",
+        "Plague imagery",
+        "Feast of Booths (Sukkot)",
+        "Bells inscribed Holy to the LORD",
+        "Holy pots and bowls",
+        "Lebanon cedars",
+        "Bashan oaks",
+        "Jordan thickets",
+        "Shepherded flock doomed to slaughter"
+      ]
+    },
+    {
+      "section": "Theology & Reception",
+      "entries": [
+        "YHWH remembers (prophet’s name meaning)",
+        "Priestly lineage of Zechariah (Iddo family)",
+        "Alongside Haggai (Ezra 5–6 link)",
+        "Angelology: interpreting angel & Angel of the LORD",
+        "Satan/Accuser bounded by YHWH",
+        "Branch theology (3:8; 6:12)",
+        "Spirit empowerment over might (4:6)",
+        "Temple completion as eschatological sign",
+        "Fasting to feasting (8:19)",
+        "Shepherd motif cluster (John 10; Matt 26:31)",
+        "Pierced one in NT reception (John 19:37; Rev 1:7)",
+        "Thirty pieces in NT reception (Matt 27:9–10)",
+        "Living waters in NT & patristic baptism",
+        "Universal kingship (14:9) and Christ the King",
+        "Holy pots/horses bells: total sanctification",
+        "Qumran/Second Temple apocalyptic reception",
+        "Jewish liturgy: Zech 14 & Sukkot"
+      ]
+    }
+  ],
+  "entries_count": 140,
+  "entries": [
+    {
+      "id": "p.zechariah-son-of-berechiah-son-of-iddo--89dc4f79",
+      "name": "Zechariah son of Berechiah son of Iddo",
+      "type": "person",
+      "references": [
+        "Zech 1:1",
+        "Zech 1:7"
+      ],
+      "category": "prophet",
+      "relations": {
+        "father": "Berechiah",
+        "grandfather": "Iddo",
+        "lineage": "priestly"
+      },
+      "blurb": "Prophet-priest of the early Persian period; name means ‘YHWH remembers,’ signaling covenant memory and restoration."
+    },
+    {
+      "id": "p.darius-i-persian-king--face83b7",
+      "name": "Darius I (Persian king)",
+      "type": "person",
+      "references": [
+        "Zech 1:1",
+        "Zech 7:1"
+      ],
+      "category": "monarch",
+      "blurb": "Regnal framework (520–518 BCE) for night visions and fasting oracles."
+    },
+    {
+      "id": "p.joshua-son-of-jehozadak-high-priest--b8cc0776",
+      "name": "Joshua son of Jehozadak (high priest)",
+      "type": "person",
+      "references": [
+        "Zech 3:1-10",
+        "Zech 6:11"
+      ],
+      "category": "high-priest",
+      "blurb": "High priest purified and re-clothed; later crowned as a memorial, foreshadowing priestly-messianic unity."
+    },
+    {
+      "id": "p.zerubbabel-son-of-shealtiel-governor--5a2d83dc",
+      "name": "Zerubbabel son of Shealtiel (governor)",
+      "type": "person",
+      "references": [
+        "Zech 4:6-10"
+      ],
+      "category": "governor",
+      "blurb": "Davidic governor; mountain leveled before him; plumb line in hand as the capstone is set—not by might but by the Spirit."
+    },
+    {
+      "id": "p.angel-of-the-lord--8c3f222e",
+      "name": "Angel of the LORD",
+      "type": "person",
+      "references": [
+        "Zech 1:11-13",
+        "Zech 3:1-7"
+      ],
+      "category": "angelic-figure",
+      "blurb": "Mediating presence who intercedes for Jerusalem and rebukes the Accuser; identity debated in tradition."
+    },
+    {
+      "id": "p.interpreting-angel--fb299015",
+      "name": "Interpreting Angel",
+      "type": "person",
+      "references": [
+        "Zech 1:9",
+        "Zech 4:1"
+      ],
+      "category": "angelic-guide",
+      "blurb": "Guide who explains symbols, linking visions to temple restoration and future hope."
+    },
+    {
+      "id": "p.satan-accuser--32c46abe",
+      "name": "Satan/Accuser",
+      "type": "person",
+      "references": [
+        "Zech 3:1-2"
+      ],
+      "category": "adversary",
+      "blurb": "Accuses Joshua until rebuked by the LORD; his limits underscore divine election."
+    },
+    {
+      "id": "p.good-shepherd--e3110bc0",
+      "name": "Good Shepherd",
+      "type": "person",
+      "references": [
+        "Zech 11:4-14"
+      ],
+      "category": "shepherd-figure",
+      "blurb": "Symbolic leader tending a flock doomed to slaughter, wielding the staves Favor and Union."
+    },
+    {
+      "id": "p.foolish-shepherd--96a6a839",
+      "name": "Foolish Shepherd",
+      "type": "person",
+      "references": [
+        "Zech 11:15-17"
+      ],
+      "category": "shepherd-figure",
+      "blurb": "Satirical antitype who neglects the flock; a warning against predatory leadership."
+    },
+    {
+      "id": "p.worthless-shepherd--5258a7d6",
+      "name": "Worthless Shepherd",
+      "type": "person",
+      "references": [
+        "Zech 11:17"
+      ],
+      "category": "shepherd-figure",
+      "blurb": "Idol shepherd whose arm and eye are struck; epitomizes failed rule."
+    },
+    {
+      "id": "p.house-of-david--16a78e85",
+      "name": "House of David",
+      "type": "person",
+      "references": [
+        "Zech 12:7-10"
+      ],
+      "category": "royal-house",
+      "blurb": "Lineage receiving outpoured spirit of grace and supplication; central in mourning and restoration."
+    },
+    {
+      "id": "p.house-of-levi-shimei--625a323a",
+      "name": "House of Levi/Shimei",
+      "type": "person",
+      "references": [
+        "Zech 12:13"
+      ],
+      "category": "priestly-house",
+      "blurb": "Priestly families named in the great mourning; signals comprehensive repentance."
+    },
+    {
+      "id": "p.false-prophets--3b08b934",
+      "name": "False prophets",
+      "type": "person",
+      "references": [
+        "Zech 13:2-6"
+      ],
+      "category": "religious-impostors",
+      "blurb": "Shamed in the renewed community; wounds ‘in the house of friends’ expose false claims."
+    },
+    {
+      "id": "g.judah--a34b84cd",
+      "name": "Judah",
+      "type": "group",
+      "references": [
+        "Zech 2:12",
+        "Zech 12:7"
+      ],
+      "category": "people-of-god",
+      "blurb": "Covenant community restored and defended; Judah becomes God’s inheritance."
+    },
+    {
+      "id": "g.israel--79cf1096",
+      "name": "Israel",
+      "type": "group",
+      "references": [],
+      "category": "people-of-god",
+      "blurb": "Broader covenant identity gathered into post-exilic hope."
+    },
+    {
+      "id": "g.remnant--e6a8b099",
+      "name": "Remnant",
+      "type": "group",
+      "references": [
+        "Zech 8:6-12"
+      ],
+      "category": "community",
+      "blurb": "Returned and purified people whose hands are strengthened for the work."
+    },
+    {
+      "id": "g.nations--ae173a5a",
+      "name": "Nations",
+      "type": "group",
+      "references": [
+        "Zech 2:11",
+        "Zech 14:16"
+      ],
+      "category": "international",
+      "blurb": "From hostile besiegers to pilgrims keeping Sukkot; many join themselves to the LORD."
+    },
+    {
+      "id": "g.north-country-babylon--d2ee718a",
+      "name": "North Country (Babylon)",
+      "type": "group",
+      "references": [
+        "Zech 2:6-7"
+      ],
+      "category": "diaspora",
+      "blurb": "Place of exile; people called to flee and return to Zion."
+    },
+    {
+      "id": "g.philistia--5b1520b6",
+      "name": "Philistia",
+      "type": "group",
+      "references": [
+        "Zech 9:5-7"
+      ],
+      "category": "nation",
+      "blurb": "Judgment on coastal cities with promises of remnant inclusion."
+    },
+    {
+      "id": "g.ashkelon--990622d6",
+      "name": "Ashkelon",
+      "type": "group",
+      "references": [
+        "Zech 9:5"
+      ],
+      "category": "city",
+      "blurb": "Philistine city that shall see and fear."
+    },
+    {
+      "id": "g.gaza--43b60de5",
+      "name": "Gaza",
+      "type": "group",
+      "references": [
+        "Zech 9:5"
+      ],
+      "category": "city",
+      "blurb": "Shall writhe in anguish under judgment."
+    },
+    {
+      "id": "g.ekron--a4cdc849",
+      "name": "Ekron",
+      "type": "group",
+      "references": [
+        "Zech 9:5"
+      ],
+      "category": "city",
+      "blurb": "Her expectation shall be confounded."
+    },
+    {
+      "id": "g.ashdod--cc408eea",
+      "name": "Ashdod",
+      "type": "group",
+      "references": [
+        "Zech 9:6"
+      ],
+      "category": "city",
+      "blurb": "A mixed people will dwell there; pride cut off."
+    },
+    {
+      "id": "g.tyre--97f4ed86",
+      "name": "Tyre",
+      "type": "group",
+      "references": [
+        "Zech 9:2-4"
+      ],
+      "category": "city-state",
+      "blurb": "Wisdom and wealth judged; power consumed by fire."
+    },
+    {
+      "id": "g.sidon--7ed15dfd",
+      "name": "Sidon",
+      "type": "group",
+      "references": [
+        "Zech 9:2"
+      ],
+      "category": "city-state",
+      "blurb": "Partner to Tyre’s pride; under divine scrutiny."
+    },
+    {
+      "id": "g.greece-javan--17f09e3c",
+      "name": "Greece (Javan)",
+      "type": "group",
+      "references": [
+        "Zech 9:13"
+      ],
+      "category": "people",
+      "blurb": "Foil in Judah’s eschatological warfare imagery."
+    },
+    {
+      "id": "g.egypt--cd780238",
+      "name": "Egypt",
+      "type": "group",
+      "references": [
+        "Zech 14:18-19"
+      ],
+      "category": "nation",
+      "blurb": "Subject to plague if refusing Sukkot pilgrimage."
+    },
+    {
+      "id": "g.assyria--32bf2014",
+      "name": "Assyria",
+      "type": "group",
+      "references": [
+        "Zech 10:10-11"
+      ],
+      "category": "nation",
+      "blurb": "Exile lands named in return promises."
+    },
+    {
+      "id": "g.enemies-gathered-against-jerusalem--5315d0b9",
+      "name": "Enemies gathered against Jerusalem",
+      "type": "group",
+      "references": [
+        "Zech 12:2-9",
+        "Zech 14:1-3"
+      ],
+      "category": "hostile-coalition",
+      "blurb": "Siege coalition ultimately shattered by divine intervention."
+    },
+    {
+      "id": "g.all-nations-keeping-feast-of-booths--37513b55",
+      "name": "All nations keeping Feast of Booths",
+      "type": "group",
+      "references": [
+        "Zech 14:16"
+      ],
+      "category": "pilgrim-nations",
+      "blurb": "Global worshipers who annually ascend to celebrate Sukkot in Jerusalem."
+    },
+    {
+      "id": "d.yhwh-the-lord--68545cab",
+      "name": "YHWH (the LORD)",
+      "type": "divine",
+      "references": [
+        "Zech 1:3",
+        "Zech 2:5",
+        "Zech 14:9"
+      ],
+      "category": "divine-king",
+      "aka": [
+        "the LORD"
+      ],
+      "blurb": "Indwelling fire-wall for Jerusalem, rebuker of the Accuser, and ultimate King over all the earth."
+    },
+    {
+      "id": "d.spirit-of-the-lord--428b0e29",
+      "name": "Spirit of the LORD",
+      "type": "divine",
+      "references": [
+        "Zech 4:6"
+      ],
+      "category": "divine-agency",
+      "blurb": "Empowers temple completion; the decisive force over human might."
+    },
+    {
+      "id": "d.king-over-all-the-earth--5432144d",
+      "name": "King over all the earth",
+      "type": "divine",
+      "references": [
+        "Zech 14:9"
+      ],
+      "category": "eschatological-title",
+      "blurb": "Climax of Zechariah’s vision: universal acknowledgment of the LORD’s kingship."
+    },
+    {
+      "id": "f.call-to-return--6ffc01e5",
+      "name": "Call to return",
+      "type": "figure",
+      "references": [
+        "Zech 1:1-6"
+      ],
+      "category": "exhortation",
+      "blurb": "Initial summons to repent and avoid the fate of the ancestors; sets the tone for the visions."
+    },
+    {
+      "id": "f.horsemen-among-the-myrtles--d064bc7e",
+      "name": "Horsemen among the myrtles",
+      "type": "figure",
+      "references": [
+        "Zech 1:7-17"
+      ],
+      "category": "vision",
+      "blurb": "Scouts report earth’s quiet; the Angel intercedes for Jerusalem."
+    },
+    {
+      "id": "f.oracle-of-prosperity-for-zion--79fcceaf",
+      "name": "Oracle of prosperity for Zion",
+      "type": "figure",
+      "references": [
+        "Zech 1:16-17"
+      ],
+      "category": "promise",
+      "blurb": "Return to Jerusalem with measuring line; cities overflow with prosperity."
+    },
+    {
+      "id": "f.four-horns-&-four-craftsmen--6e75a55c",
+      "name": "Four horns & four craftsmen",
+      "type": "figure",
+      "references": [
+        "Zech 1:18-21"
+      ],
+      "category": "vision",
+      "blurb": "Horns that scattered Judah are cast down by divinely raised smiths."
+    },
+    {
+      "id": "f.man-with-measuring-line--b44d386e",
+      "name": "Man with measuring line",
+      "type": "figure",
+      "references": [
+        "Zech 2:1-13"
+      ],
+      "category": "vision",
+      "blurb": "Jerusalem measured without walls—divine fire-wall and glory within."
+    },
+    {
+      "id": "f.gods-zeal-for-zion--da2f16e8",
+      "name": "God’s zeal for Zion",
+      "type": "figure",
+      "references": [
+        "Zech 1:14"
+      ],
+      "category": "interlude",
+      "blurb": "Declaration of jealous love and wrath against the at-ease nations."
+    },
+    {
+      "id": "f.joshua-accused-&-cleansed--8111862e",
+      "name": "Joshua accused & cleansed",
+      "type": "figure",
+      "references": [
+        "Zech 3:1-10"
+      ],
+      "category": "vision",
+      "blurb": "High priest defended and purified; guilt removed in a single day."
+    },
+    {
+      "id": "f.filthy-garments-removed--ca13983e",
+      "name": "Filthy garments removed",
+      "type": "figure",
+      "references": [
+        "Zech 3:3-4"
+      ],
+      "category": "purification",
+      "blurb": "Symbolic removal of iniquity; transition to priestly fitness."
+    },
+    {
+      "id": "f.clean-turban-placed--635f3491",
+      "name": "Clean turban placed",
+      "type": "figure",
+      "references": [
+        "Zech 3:5"
+      ],
+      "category": "investiture",
+      "blurb": "Installation act signifying restored priesthood."
+    },
+    {
+      "id": "f.stone-with-seven-eyes--fc6ef91e",
+      "name": "Stone with seven eyes",
+      "type": "figure",
+      "references": [
+        "Zech 3:9"
+      ],
+      "category": "symbol",
+      "blurb": "Engraved stone under divine gaze; pledge of land-wide cleansing."
+    },
+    {
+      "id": "f.golden-lampstand-&-two-olive-trees--92dc3088",
+      "name": "Golden lampstand & two olive trees",
+      "type": "figure",
+      "references": [
+        "Zech 4:1-14"
+      ],
+      "category": "vision",
+      "blurb": "Temple light supplied by Spirit; governance and priesthood as olive-fed lamp."
+    },
+    {
+      "id": "f.two-anointed-ones--bc7ada10",
+      "name": "Two anointed ones",
+      "type": "figure",
+      "references": [
+        "Zech 4:14"
+      ],
+      "category": "interpreted-figure",
+      "blurb": "Sons of oil standing by the Lord of all the earth—commonly linked to Zerubbabel and Joshua."
+    },
+    {
+      "id": "f.flying-scroll-curse--08f48bbe",
+      "name": "Flying scroll (curse)",
+      "type": "figure",
+      "references": [
+        "Zech 5:1-4"
+      ],
+      "category": "vision",
+      "blurb": "Curse against thieves and perjurers; sin expelled from the community."
+    },
+    {
+      "id": "f.woman-in-the-ephah-wickedness--77aea334",
+      "name": "Woman in the ephah (Wickedness)",
+      "type": "figure",
+      "references": [
+        "Zech 5:5-11"
+      ],
+      "category": "vision",
+      "blurb": "Personified Wickedness sealed and transported to Shinar."
+    },
+    {
+      "id": "f.four-chariots-from-between-mountains--bc0acc44",
+      "name": "Four chariots from between mountains",
+      "type": "figure",
+      "references": [
+        "Zech 6:1-8"
+      ],
+      "category": "vision",
+      "blurb": "World-ranging patrols that quiet the Spirit in the north country."
+    },
+    {
+      "id": "f.zerubbabel-and-the-plumb-line--e246d065",
+      "name": "Zerubbabel and the plumb line",
+      "type": "figure",
+      "references": [
+        "Zech 4:10"
+      ],
+      "category": "leadership",
+      "blurb": "Day of small things vindicated as capstone is set by Spirit-empowered hands."
+    },
+    {
+      "id": "f.not-by-might-but-by-spirit--20f43856",
+      "name": "Not by might but by Spirit",
+      "type": "figure",
+      "references": [
+        "Zech 4:6-7"
+      ],
+      "category": "theological-motif",
+      "blurb": "Mountain becomes a plain; grace over the capstone."
+    },
+    {
+      "id": "f.men-of-sign-with-joshua--68c6a2af",
+      "name": "Men of sign with Joshua",
+      "type": "figure",
+      "references": [
+        "Zech 3:8"
+      ],
+      "category": "typology",
+      "blurb": "Priestly entourage prefigures messianic Branch realities."
+    },
+    {
+      "id": "f.crowning-of-joshua-memorial-in-temple--7dcb0834",
+      "name": "Crowning of Joshua (memorial in temple)",
+      "type": "figure",
+      "references": [
+        "Zech 6:9-15"
+      ],
+      "category": "ritual-symbol",
+      "blurb": "Silver and gold formed into a crown; set in the temple as a memorial of distant contributors and messianic hope."
+    },
+    {
+      "id": "f.branch-messianic--88faed97",
+      "name": "Branch (messianic)",
+      "type": "figure",
+      "references": [
+        "Zech 3:8",
+        "Zech 6:12"
+      ],
+      "category": "messianic",
+      "blurb": "Shoots forth to build the temple; priestly and royal expectations converge."
+    },
+    {
+      "id": "f.delegation-from-bethel-asks-about-fasting--33a00ca6",
+      "name": "Delegation from Bethel asks about fasting",
+      "type": "figure",
+      "references": [
+        "Zech 7:2-3"
+      ],
+      "category": "narrative",
+      "blurb": "Query sparks prophetic critique of performative fasting and call to justice."
+    },
+    {
+      "id": "f.fast-of-the-fourth-month--d0bb1f61",
+      "name": "Fast of the fourth month",
+      "type": "figure",
+      "references": [
+        "Zech 8:19"
+      ],
+      "category": "fast-day",
+      "blurb": "One of the exile fasts destined to become a feast of joy and gladness."
+    },
+    {
+      "id": "f.fast-of-the-fifth-month--2e692cfd",
+      "name": "Fast of the fifth month",
+      "type": "figure",
+      "references": [
+        "Zech 8:19"
+      ],
+      "category": "fast-day",
+      "blurb": "Mourns temple destruction; transformed in restoration vision."
+    },
+    {
+      "id": "f.fast-of-the-seventh-month--5069a33a",
+      "name": "Fast of the seventh month",
+      "type": "figure",
+      "references": [
+        "Zech 8:19"
+      ],
+      "category": "fast-day",
+      "blurb": "Commemorates Gedaliah’s assassination; turned to celebration."
+    },
+    {
+      "id": "f.fast-of-the-tenth-month--dcc9003d",
+      "name": "Fast of the tenth month",
+      "type": "figure",
+      "references": [
+        "Zech 8:19"
+      ],
+      "category": "fast-day",
+      "blurb": "Marks siege onset; future feast under peace and truth."
+    },
+    {
+      "id": "f.fasts-turned-to-feasts--607bdbd8",
+      "name": "Fasts turned to feasts",
+      "type": "figure",
+      "references": [
+        "Zech 8:19"
+      ],
+      "category": "reversal",
+      "blurb": "Ethic of love for truth and peace undergirds the transformation."
+    },
+    {
+      "id": "f.love-truth-and-peace--a3547425",
+      "name": "Love truth and peace",
+      "type": "figure",
+      "references": [
+        "Zech 8:19"
+      ],
+      "category": "ethical-motif",
+      "blurb": "Core exhortation replacing empty ritual with covenant justice."
+    },
+    {
+      "id": "f.ten-men-grasp-the-robe-of-a-jew--d3703335",
+      "name": "Ten men grasp the robe of a Jew",
+      "type": "figure",
+      "references": [
+        "Zech 8:23"
+      ],
+      "category": "inclusion",
+      "blurb": "Icon of nations seeking God with Israel—‘God is with you.’"
+    },
+    {
+      "id": "f.blood-of-the-covenant-frees-prisoners--309de615",
+      "name": "Blood of the covenant frees prisoners",
+      "type": "figure",
+      "references": [
+        "Zech 9:11"
+      ],
+      "category": "exodus-motif",
+      "blurb": "Pit prisoners released by covenant blood; new exodus imagery."
+    },
+    {
+      "id": "f.ask-for-rain-early-late--cf89380c",
+      "name": "Ask for rain (early/late)",
+      "type": "figure",
+      "references": [
+        "Zech 10:1"
+      ],
+      "category": "blessing",
+      "blurb": "Seasonal provision from the LORD counters divination reliance."
+    },
+    {
+      "id": "f.idols-and-diviners-condemned--2ee6ac5c",
+      "name": "Idols and diviners condemned",
+      "type": "figure",
+      "references": [
+        "Zech 10:2"
+      ],
+      "category": "polemic",
+      "blurb": "False guidance produces wandering; the LORD visits his flock."
+    },
+    {
+      "id": "f.judah-as-bow-ephraim-as-arrow--60e55112",
+      "name": "Judah as bow, Ephraim as arrow",
+      "type": "figure",
+      "references": [
+        "Zech 9:13"
+      ],
+      "category": "war-imagery",
+      "blurb": "Unified northern-southern strength under divine warrior motif."
+    },
+    {
+      "id": "f.king-on-a-donkey--84d4425c",
+      "name": "King on a donkey",
+      "type": "figure",
+      "references": [
+        "Zech 9:9-10"
+      ],
+      "category": "royal-entry",
+      "blurb": "Humble king establishes worldwide peace; NT echoes in the triumphal entry."
+    },
+    {
+      "id": "f.cornerstone-peg-bow-of-judah--eb1aee21",
+      "name": "Cornerstone/Peg/Bow of Judah",
+      "type": "figure",
+      "references": [
+        "Zech 10:4"
+      ],
+      "category": "leadership-symbols",
+      "blurb": "Images of stability, security, and military strength arising from Judah."
+    },
+    {
+      "id": "f.two-staves-favor-&-union--d63d3379",
+      "name": "Two staves: Favor & Union",
+      "type": "figure",
+      "references": [
+        "Zech 11:7"
+      ],
+      "category": "shepherd-symbols",
+      "blurb": "Implements of covenant grace and national unity in shepherd parable."
+    },
+    {
+      "id": "f.breaking-the-staff-favor--cd6a164c",
+      "name": "Breaking the staff Favor",
+      "type": "figure",
+      "references": [
+        "Zech 11:10"
+      ],
+      "category": "covenant-rupture",
+      "blurb": "Symbolic annulling of covenant with the peoples."
+    },
+    {
+      "id": "f.breaking-the-staff-union--792a7303",
+      "name": "Breaking the staff Union",
+      "type": "figure",
+      "references": [
+        "Zech 11:14"
+      ],
+      "category": "national-rupture",
+      "blurb": "Symbolic sundering between Judah and Israel."
+    },
+    {
+      "id": "f.thirty-pieces-of-silver-potter-treasury--d2b26a8f",
+      "name": "Thirty pieces of silver (potter/treasury)",
+      "type": "figure",
+      "references": [
+        "Zech 11:12-13"
+      ],
+      "category": "price-symbolism",
+      "note": "Textual traditions vary (potter vs. treasury). NT reception applies to Judas’ payment.",
+      "blurb": "Despised wage thrown into the house of the LORD for the potter/treasury."
+    },
+    {
+      "id": "f.pierced-one--fe2c78a4",
+      "name": "Pierced one",
+      "type": "figure",
+      "references": [
+        "Zech 12:10"
+      ],
+      "category": "mourning-figure",
+      "blurb": "Spirit of grace leads to national mourning over the one they pierced; NT and apocalyptic echoes."
+    },
+    {
+      "id": "f.cleansing-fountain-opened--4e748386",
+      "name": "Cleansing fountain opened",
+      "type": "figure",
+      "references": [
+        "Zech 13:1"
+      ],
+      "category": "purification",
+      "blurb": "Ever-flowing source for sin and impurity; sacramental overtones in later reception."
+    },
+    {
+      "id": "f.wounds-in-the-house-of-friends--c1d2aa63",
+      "name": "Wounds in the house of friends",
+      "type": "figure",
+      "references": [
+        "Zech 13:6"
+      ],
+      "category": "exposure",
+      "blurb": "Ambiguous wounds unmask false prophecy and misdirected loyalties."
+    },
+    {
+      "id": "f.false-prophets-ashamed--2045b893",
+      "name": "False prophets ashamed",
+      "type": "figure",
+      "references": [
+        "Zech 13:3-4"
+      ],
+      "category": "purge",
+      "blurb": "Parents enforce truth; hairy mantle abandoned as disguises fall."
+    },
+    {
+      "id": "f.idolatry-cut-off-from-the-land--28e36cb2",
+      "name": "Idolatry cut off from the land",
+      "type": "figure",
+      "references": [
+        "Zech 13:2"
+      ],
+      "category": "purification",
+      "blurb": "Names of idols removed; unclean spirit banished."
+    },
+    {
+      "id": "f.strike-the-shepherd--b57c4ee2",
+      "name": "Strike the shepherd",
+      "type": "figure",
+      "references": [
+        "Zech 13:7"
+      ],
+      "category": "scattering-motif",
+      "blurb": "Sword against the shepherd; flock scattered—later cited in the Gospels."
+    },
+    {
+      "id": "f.living-waters-from-jerusalem--3b3aba60",
+      "name": "Living waters from Jerusalem",
+      "type": "figure",
+      "references": [
+        "Zech 14:8"
+      ],
+      "category": "river-of-life",
+      "blurb": "Perennial streams to east and west; life sourced from the holy city."
+    },
+    {
+      "id": "f.day-of-the-lord-final-siege--7d58d79f",
+      "name": "Day of the LORD (final siege)",
+      "type": "figure",
+      "references": [
+        "Zech 14:1-3"
+      ],
+      "category": "eschaton",
+      "blurb": "A day when nations gather, the city is taken, and the LORD fights."
+    },
+    {
+      "id": "f.mount-of-olives-split--49b88b44",
+      "name": "Mount of Olives split",
+      "type": "figure",
+      "references": [
+        "Zech 14:4-5"
+      ],
+      "category": "cosmic-event",
+      "blurb": "Earth-shattering escape route; the LORD arrives with holy ones."
+    },
+    {
+      "id": "f.jerusalem-raised-and-secure--b9eae557",
+      "name": "Jerusalem raised and secure",
+      "type": "figure",
+      "references": [
+        "Zech 14:10-11"
+      ],
+      "category": "restoration",
+      "blurb": "Topography reshaped; the city inhabited in safety."
+    },
+    {
+      "id": "f.plague-on-nations-flesh-eyes-tongue--84567167",
+      "name": "Plague on nations (flesh/eyes/tongue)",
+      "type": "figure",
+      "references": [
+        "Zech 14:12-15"
+      ],
+      "category": "judgment",
+      "blurb": "Unique wasting plague strikes besieging nations and their beasts."
+    },
+    {
+      "id": "f.feast-of-booths-for-all-nations--e1c67b02",
+      "name": "Feast of Booths for all nations",
+      "type": "figure",
+      "references": [
+        "Zech 14:16-19"
+      ],
+      "category": "universal-worship",
+      "blurb": "Annual Sukkot pilgrimage mandated; drought for noncompliance."
+    },
+    {
+      "id": "f.bells-of-horses-holy-to-the-lord--56ad49e9",
+      "name": "Bells of horses: Holy to the LORD",
+      "type": "figure",
+      "references": [
+        "Zech 14:20"
+      ],
+      "category": "sanctification",
+      "blurb": "Everyday implements bear priestly inscription—expanded holiness."
+    },
+    {
+      "id": "f.every-pot-holy-to-the-lord--dc9dc0b2",
+      "name": "Every pot holy to the LORD",
+      "type": "figure",
+      "references": [
+        "Zech 14:21"
+      ],
+      "category": "sanctification",
+      "blurb": "Common cookware equals temple bowls; total consecration envisioned."
+    },
+    {
+      "id": "e.temple--1d486079",
+      "name": "Temple",
+      "type": "entity",
+      "references": [
+        "Zech 4:9",
+        "Zech 6:12-15"
+      ],
+      "category": "cultic",
+      "blurb": "Axis of restoration in visions and messianic building promises."
+    },
+    {
+      "id": "e.altar--0b0acf47",
+      "name": "Altar",
+      "type": "entity",
+      "references": [],
+      "category": "cultic",
+      "blurb": "Implied sacrificial locus within restored worship."
+    },
+    {
+      "id": "e.holy-mountain--3d4ce1c7",
+      "name": "Holy Mountain",
+      "type": "entity",
+      "references": [
+        "Zech 8:3"
+      ],
+      "category": "sacred-geo",
+      "blurb": "Zion renamed City of Truth; mountain of the LORD of hosts."
+    },
+    {
+      "id": "e.jerusalem--23c888bc",
+      "name": "Jerusalem",
+      "type": "entity",
+      "references": [
+        "Zech 1:14-17",
+        "Zech 14:8-11"
+      ],
+      "category": "city",
+      "blurb": "From unwalled community under divine fire-wall to eschatological center of life."
+    },
+    {
+      "id": "e.zion--d7771d29",
+      "name": "Zion",
+      "type": "entity",
+      "references": [
+        "Zech 1:14",
+        "Zech 8:3"
+      ],
+      "category": "theological-city",
+      "blurb": "Object of divine zeal; home of truth and peace."
+    },
+    {
+      "id": "e.measuring-line--fe24d52e",
+      "name": "Measuring line",
+      "type": "entity",
+      "references": [
+        "Zech 2:1-2"
+      ],
+      "category": "construction-motif",
+      "blurb": "Instrument of planning signaling expansion and divine protection."
+    },
+    {
+      "id": "e.plumb-line--20b4379c",
+      "name": "Plumb line",
+      "type": "entity",
+      "references": [
+        "Zech 4:10"
+      ],
+      "category": "construction-motif",
+      "blurb": "Precision tool in Zerubbabel’s hand—capstone grace."
+    },
+    {
+      "id": "e.lampstand--589cccda",
+      "name": "Lampstand",
+      "type": "entity",
+      "references": [
+        "Zech 4:2"
+      ],
+      "category": "temple-furnishing",
+      "blurb": "Seven-branched light fed by oil; symbolizes Spirit-sustained witness."
+    },
+    {
+      "id": "e.olive-trees--c9501aec",
+      "name": "Olive trees",
+      "type": "entity",
+      "references": [
+        "Zech 4:3"
+      ],
+      "category": "vision-symbol",
+      "blurb": "Twin sources supplying oil to the lampstand; linked to anointed leaders."
+    },
+    {
+      "id": "e.olive-oil--e2ca6c1e",
+      "name": "Olive oil",
+      "type": "entity",
+      "references": [
+        "Zech 4:12"
+      ],
+      "category": "symbolic-resource",
+      "blurb": "Flow of Spirit-mediated supply for the lampstand."
+    },
+    {
+      "id": "e.stone-with-seven-eyes-stone--45c3044c",
+      "name": "Stone with seven eyes (stone)",
+      "type": "entity",
+      "references": [
+        "Zech 3:9"
+      ],
+      "category": "foundation-stone",
+      "blurb": "Observed and engraved stone in priestly vision; token of swift cleansing."
+    },
+    {
+      "id": "e.colored-horses--38c585da",
+      "name": "Colored horses",
+      "type": "entity",
+      "references": [
+        "Zech 1:8",
+        "Zech 6:2-3"
+      ],
+      "category": "vision-creatures",
+      "blurb": "Red, sorrel, white—later chariot teams patrolling the earth."
+    },
+    {
+      "id": "e.ephah-basket--bc716da8",
+      "name": "Ephah basket",
+      "type": "entity",
+      "references": [
+        "Zech 5:6"
+      ],
+      "category": "commerce-motif",
+      "blurb": "Measuring container bearing Wickedness away to Shinar."
+    },
+    {
+      "id": "e.wickedness-sealed-with-lead--ae6795fa",
+      "name": "Wickedness (sealed with lead)",
+      "type": "entity",
+      "references": [
+        "Zech 5:7-8"
+      ],
+      "category": "personified-evil",
+      "blurb": "Contained by a lead cover; removed from the land."
+    },
+    {
+      "id": "e.mountains-of-bronze--fb0c1863",
+      "name": "Mountains of bronze",
+      "type": "entity",
+      "references": [
+        "Zech 6:1"
+      ],
+      "category": "cosmic-architecture",
+      "blurb": "Portal for chariots, evoking stability and grandeur."
+    },
+    {
+      "id": "e.silver-&-gold-crowns--845cfe79",
+      "name": "Silver & gold crown(s)",
+      "type": "entity",
+      "references": [
+        "Zech 6:11"
+      ],
+      "category": "ritual-object",
+      "blurb": "Crafted from diaspora gifts; associated with Joshua and temple memorial."
+    },
+    {
+      "id": "e.treasury-temple-memorial--c6956674",
+      "name": "Treasury/Temple memorial",
+      "type": "entity",
+      "references": [
+        "Zech 6:14"
+      ],
+      "category": "cultic-record",
+      "blurb": "Placement of crown(s) as a lasting reminder in the house of the LORD."
+    },
+    {
+      "id": "e.fast-days-set--a55c3b66",
+      "name": "Fast days set",
+      "type": "entity",
+      "references": [
+        "Zech 8:19"
+      ],
+      "category": "calendar",
+      "blurb": "Fourth, fifth, seventh, tenth months marked for mourning in exile."
+    },
+    {
+      "id": "e.feasts-of-joy--d9bc0151",
+      "name": "Feasts of joy",
+      "type": "entity",
+      "references": [
+        "Zech 8:19"
+      ],
+      "category": "calendar",
+      "blurb": "Transformed observances characterized by joy and gladness."
+    },
+    {
+      "id": "e.donkey-colt--46ad3123",
+      "name": "Donkey colt",
+      "type": "entity",
+      "references": [
+        "Zech 9:9"
+      ],
+      "category": "royal-mount",
+      "blurb": "Beast of humble entry for Zion’s king."
+    },
+    {
+      "id": "e.cornerstone--6acf07e7",
+      "name": "Cornerstone",
+      "type": "entity",
+      "references": [
+        "Zech 10:4"
+      ],
+      "category": "architectural-symbol",
+      "blurb": "Foundation of communal stability re-emerging from Judah."
+    },
+    {
+      "id": "e.tent-peg--60da1fd7",
+      "name": "Tent peg",
+      "type": "entity",
+      "references": [
+        "Zech 10:4"
+      ],
+      "category": "security-symbol",
+      "blurb": "Image of fixedness and reliability in leadership."
+    },
+    {
+      "id": "e.battle-bow--48556293",
+      "name": "Battle bow",
+      "type": "entity",
+      "references": [
+        "Zech 10:4"
+      ],
+      "category": "war-symbol",
+      "blurb": "Military capacity under divine leadership."
+    },
+    {
+      "id": "e.staff-favor--cbf57834",
+      "name": "Staff Favor",
+      "type": "entity",
+      "references": [
+        "Zech 11:10"
+      ],
+      "category": "shepherd-implement",
+      "blurb": "Instrument representing covenant grace."
+    },
+    {
+      "id": "e.staff-union--a8f9f6a8",
+      "name": "Staff Union",
+      "type": "entity",
+      "references": [
+        "Zech 11:14"
+      ],
+      "category": "shepherd-implement",
+      "blurb": "Instrument representing national unity."
+    },
+    {
+      "id": "e.thirty-pieces-of-silver--8d419ad0",
+      "name": "Thirty pieces of silver",
+      "type": "entity",
+      "references": [
+        "Zech 11:12-13"
+      ],
+      "category": "valuation",
+      "blurb": "Contemptuous wage thrown into the house of the LORD."
+    },
+    {
+      "id": "e.fountain-for-cleansing--beb98571",
+      "name": "Fountain for cleansing",
+      "type": "entity",
+      "references": [
+        "Zech 13:1"
+      ],
+      "category": "purification",
+      "blurb": "Perennial resource cleansing sin and impurity for the house of David and inhabitants of Jerusalem."
+    },
+    {
+      "id": "e.sword--cec57e7b",
+      "name": "Sword",
+      "type": "entity",
+      "references": [
+        "Zech 13:7"
+      ],
+      "category": "judgment-instrument",
+      "blurb": "Weapon raised against the shepherd—divine decree in the parable."
+    },
+    {
+      "id": "e.mount-of-olives--778f648e",
+      "name": "Mount of Olives",
+      "type": "entity",
+      "references": [
+        "Zech 14:4"
+      ],
+      "category": "geography",
+      "blurb": "Eastern ridge split in the eschatological quake."
+    },
+    {
+      "id": "e.living-waters--ae569c48",
+      "name": "Living waters",
+      "type": "entity",
+      "references": [
+        "Zech 14:8"
+      ],
+      "category": "river",
+      "blurb": "Streams flow summer and winter; life proceeds from the city."
+    },
+    {
+      "id": "e.plague-imagery--7a943fcf",
+      "name": "Plague imagery",
+      "type": "entity",
+      "references": [
+        "Zech 14:12-15"
+      ],
+      "category": "judgment",
+      "blurb": "Graphic wasting of besiegers; extends to animals and plunderers."
+    },
+    {
+      "id": "e.feast-of-booths-sukkot--16dace51",
+      "name": "Feast of Booths (Sukkot)",
+      "type": "entity",
+      "references": [
+        "Zech 14:16-19"
+      ],
+      "category": "pilgrimage",
+      "blurb": "Feast universalized; attendance marks allegiance to the King."
+    },
+    {
+      "id": "e.bells-inscribed-holy-to-the-lord--9d19fac5",
+      "name": "Bells inscribed Holy to the LORD",
+      "type": "entity",
+      "references": [
+        "Zech 14:20"
+      ],
+      "category": "sanctification",
+      "blurb": "Inscription formerly on priestly plate now adorns mundane gear."
+    },
+    {
+      "id": "e.holy-pots-and-bowls--809f28a2",
+      "name": "Holy pots and bowls",
+      "type": "entity",
+      "references": [
+        "Zech 14:21"
+      ],
+      "category": "sanctified-vessels",
+      "blurb": "Common cookware elevated to temple-grade holiness."
+    },
+    {
+      "id": "e.lebanon-cedars--99f998ac",
+      "name": "Lebanon cedars",
+      "type": "entity",
+      "references": [
+        "Zech 11:1-2"
+      ],
+      "category": "arboreal-symbol",
+      "blurb": "Majestic trees felled in lament over leadership collapse."
+    },
+    {
+      "id": "e.bashan-oaks--9f05cc2b",
+      "name": "Bashan oaks",
+      "type": "entity",
+      "references": [
+        "Zech 11:2"
+      ],
+      "category": "arboreal-symbol",
+      "blurb": "Strength imagery turned to mourning under judgment."
+    },
+    {
+      "id": "e.jordan-thickets--c71dae00",
+      "name": "Jordan thickets",
+      "type": "entity",
+      "references": [
+        "Zech 11:3"
+      ],
+      "category": "habitat",
+      "blurb": "Lion’s haunt echoes; shepherds wail as glory is ruined."
+    },
+    {
+      "id": "e.shepherded-flock-doomed-to-slaughter--9dcdcf42",
+      "name": "Shepherded flock doomed to slaughter",
+      "type": "entity",
+      "references": [
+        "Zech 11:4",
+        "Zech 11:7"
+      ],
+      "category": "parabolic-community",
+      "blurb": "People under corrupt leadership, subject of shepherd parable and covenant acts."
+    },
+    {
+      "id": "e.yhwh-remembers-prophets-name-meaning--3f73cae6",
+      "name": "YHWH remembers (prophet’s name meaning)",
+      "type": "entity",
+      "references": [
+        "Zech 1:1"
+      ],
+      "category": "onomastics",
+      "blurb": "Name functions as theological thesis: divine remembrance drives restoration."
+    },
+    {
+      "id": "e.priestly-lineage-of-zechariah-iddo-family--311bc34f",
+      "name": "Priestly lineage of Zechariah (Iddo family)",
+      "type": "entity",
+      "references": [
+        "Neh 12:4",
+        "Neh 12:16"
+      ],
+      "category": "genealogy",
+      "blurb": "Priestly roots frame temple-centric visions and concerns."
+    },
+    {
+      "id": "e.alongside-haggai-ezra-5–6-link--26757389",
+      "name": "Alongside Haggai (Ezra 5–6 link)",
+      "type": "entity",
+      "references": [
+        "Ezra 5:1-2",
+        "Ezra 6:14"
+      ],
+      "category": "historical-link",
+      "blurb": "Prophetic tandem credited with advancing temple completion under Persian decrees."
+    },
+    {
+      "id": "e.angelology-interpreting-angel-&-angel-of-the-lord--49e35388",
+      "name": "Angelology: interpreting angel & Angel of the LORD",
+      "type": "entity",
+      "references": [
+        "Zech 1–6"
+      ],
+      "category": "theology",
+      "blurb": "Mediatorial and intercessory roles structure the visionary experience."
+    },
+    {
+      "id": "e.satan-accuser-bounded-by-yhwh--a745174c",
+      "name": "Satan/Accuser bounded by YHWH",
+      "type": "entity",
+      "references": [
+        "Zech 3:2"
+      ],
+      "category": "theodicy",
+      "blurb": "Divine rebuke limits accusation; election and cleansing prevail."
+    },
+    {
+      "id": "e.branch-theology-38-612--e6112711",
+      "name": "Branch theology (3:8; 6:12)",
+      "type": "entity",
+      "references": [
+        "Zech 3:8",
+        "Zech 6:12"
+      ],
+      "category": "messianic-theology",
+      "blurb": "Priestly-royal figure who builds the temple and bears majesty; typology blossoms in later reception."
+    },
+    {
+      "id": "e.spirit-empowerment-over-might-46--f41ffb82",
+      "name": "Spirit empowerment over might (4:6)",
+      "type": "entity",
+      "references": [
+        "Zech 4:6"
+      ],
+      "category": "pneumatology",
+      "blurb": "Central axiom for post-exilic work and later Christian spirituality."
+    },
+    {
+      "id": "e.temple-completion-as-eschatological-sign--85ff637e",
+      "name": "Temple completion as eschatological sign",
+      "type": "entity",
+      "references": [
+        "Zech 4:9",
+        "Zech 6:15"
+      ],
+      "category": "eschatology",
+      "blurb": "Building project recast as down payment on future glory and universal worship."
+    },
+    {
+      "id": "e.fasting-to-feasting-819--e1aeee93",
+      "name": "Fasting to feasting (8:19)",
+      "type": "entity",
+      "references": [
+        "Zech 8:19"
+      ],
+      "category": "liturgical-theology",
+      "blurb": "Ritual mourning transfigured by ethical renewal and communal joy."
+    },
+    {
+      "id": "e.shepherd-motif-cluster-john-10-matt-2631--d919d097",
+      "name": "Shepherd motif cluster (John 10; Matt 26:31)",
+      "type": "entity",
+      "references": [
+        "Zech 11",
+        "Zech 13:7"
+      ],
+      "category": "typology",
+      "cross_references": [
+        "John 10",
+        "Matt 26:31",
+        "Mark 14:27"
+      ],
+      "blurb": "From parabolic shepherds to stricken shepherd, the motif funnels into NT Christology."
+    },
+    {
+      "id": "e.pierced-one-in-nt-reception-john-1937-rev-17--2e330fba",
+      "name": "Pierced one in NT reception (John 19:37; Rev 1:7)",
+      "type": "entity",
+      "references": [
+        "Zech 12:10"
+      ],
+      "category": "reception-christian",
+      "cross_references": [
+        "John 19:37",
+        "Rev 1:7"
+      ],
+      "blurb": "Mourning over the pierced becomes a lens for the passion and parousia."
+    },
+    {
+      "id": "e.thirty-pieces-in-nt-reception-matt-279–10--f78a1e4b",
+      "name": "Thirty pieces in NT reception (Matt 27:9–10)",
+      "type": "entity",
+      "references": [
+        "Zech 11:12-13"
+      ],
+      "category": "reception-christian",
+      "cross_references": [
+        "Matt 27:9-10"
+      ],
+      "blurb": "Evangelists weave Zechariah’s pricing and temple-potter imagery into Judas traditions."
+    },
+    {
+      "id": "e.living-waters-in-nt-&-patristic-baptism--a9fbca4e",
+      "name": "Living waters in NT & patristic baptism",
+      "type": "entity",
+      "references": [
+        "Zech 14:8"
+      ],
+      "category": "reception",
+      "cross_references": [
+        "John 7:38",
+        "Rev 22:1"
+      ],
+      "blurb": "Streams from Jerusalem inform baptismal and eschatological imagery."
+    },
+    {
+      "id": "e.universal-kingship-149-and-christ-the-king--0474be63",
+      "name": "Universal kingship (14:9) and Christ the King",
+      "type": "entity",
+      "references": [
+        "Zech 14:9"
+      ],
+      "category": "reception-liturgical",
+      "blurb": "Liturgical appropriation of divine kingship consummation."
+    },
+    {
+      "id": "e.holy-pots-horses-bells-total-sanctification--94c950ea",
+      "name": "Holy pots/horses bells: total sanctification",
+      "type": "entity",
+      "references": [
+        "Zech 14:20-21"
+      ],
+      "category": "ethics-of-holiness",
+      "blurb": "Abolishes sacred/secular split; the ordinary bears holiness."
+    },
+    {
+      "id": "e.qumran-second-temple-apocalyptic-reception--f2c4606b",
+      "name": "Qumran/Second Temple apocalyptic reception",
+      "type": "entity",
+      "references": [],
+      "category": "reception-jewish",
+      "blurb": "Zechariah’s visions and Branch figure echo in sectarian and apocalyptic literature."
+    },
+    {
+      "id": "e.jewish-liturgy-zech-14-&-sukkot--da005a24",
+      "name": "Jewish liturgy: Zech 14 & Sukkot",
+      "type": "entity",
+      "references": [
+        "Zech 14:16-19"
+      ],
+      "category": "reception-jewish",
+      "blurb": "Readings on Sukkot highlight universal pilgrimage and kingship themes."
+    }
+  ]
+}

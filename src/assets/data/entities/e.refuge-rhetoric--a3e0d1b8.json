@@ -1,0 +1,19 @@
+{
+  "id": "e.refuge-rhetoric--a3e0d1b8",
+  "name": "Refuge rhetoric",
+  "type": "entity",
+  "references": [
+    "Nah 1:7"
+  ],
+  "category": "pastoral-theology",
+  "aka": [],
+  "blurb": "Pastoral center of the book: wrath and refuge together narrate God’s character and care.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      1
+    ]
+  }
+}

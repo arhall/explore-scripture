@@ -1,0 +1,35 @@
+{
+  "book": "Exodus",
+  "chapter": 3,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "f.angel-of-the-lord.gene-16-22--790d3b7c",
+      "name": "Angel of the LORD",
+      "type": "figure",
+      "role": "narrative",
+      "refs_count": 3
+    },
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "d.the-name-yhwh-i-am--052df719",
+      "name": "The Name YHWH / ‘I AM’",
+      "type": "divine",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.elders-of-israel--e67509a3",
+      "name": "Elders of Israel",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

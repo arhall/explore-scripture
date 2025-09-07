@@ -1,0 +1,18 @@
+{
+  "name": "Allegory of the unfaithful bride (Jerusalem)",
+  "type": "entity",
+  "references": [
+    "Ezekiel 16"
+  ],
+  "blurb": "From abandoned infant to adorned queen to adulterous city—grace abused becomes a courtroom drama.",
+  "category": "allegory",
+  "id": "e.allegory-of-the-unfaithful-bride.jerusalem--2429bfef",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      16
+    ]
+  }
+}

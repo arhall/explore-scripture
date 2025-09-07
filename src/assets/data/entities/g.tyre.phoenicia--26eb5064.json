@@ -1,0 +1,27 @@
+{
+  "name": "Tyre (Phoenicia)",
+  "type": "group",
+  "references": [
+    "Isaiah 23",
+    "Ezekiel 26–28"
+  ],
+  "blurb": "Merchant queen humbled; wealth will later ‘belong to the LORD’ for holy service.",
+  "category": "nation",
+  "id": "g.tyre.phoenicia--26eb5064",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "g.tyre--b1105484"
+  ],
+  "book_references": {
+    "Isaiah": [
+      23
+    ],
+    "Ezekiel": [
+      26,
+      27,
+      28
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "e.nobles-and-courtiers--b7e1a0c9",
+  "name": "Nobles/Courtiers",
+  "type": "entity",
+  "references": [
+    "Nah 2:5; 3:18"
+  ],
+  "category": "royal-court",
+  "aka": [
+    "Officers",
+    "Shepherds (metaphor)"
+  ],
+  "blurb": "Elites scramble and then sleep; the collapse is administrative as well as military.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      2
+    ]
+  }
+}

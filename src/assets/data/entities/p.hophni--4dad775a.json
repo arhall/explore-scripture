@@ -1,0 +1,22 @@
+{
+  "name": "Hophni",
+  "type": "person",
+  "references": [
+    "1 Samuel 2:12–36; 4:4–11"
+  ],
+  "blurb": "Son of Eli who abuses sacrifice and intimacy at the tent; dies when the ark is captured—judgment on priestly presumption.",
+  "relations": {
+    "father": "Eli",
+    "brother": "Phinehas"
+  },
+  "category": "narrative",
+  "id": "p.hophni--4dad775a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      2
+    ]
+  }
+}

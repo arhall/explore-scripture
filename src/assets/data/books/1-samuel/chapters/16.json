@@ -1,0 +1,49 @@
+{
+  "book": "1 Samuel",
+  "chapter": 16,
+  "entity_count": 6,
+  "entities": [
+    {
+      "id": "p.jesse-of-bethlehem--4e819e4b",
+      "name": "Jesse of Bethlehem",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.samuels-horn-of-oil.davids-anointing--1a6a66d8",
+      "name": "Samuel’s horn of oil (David’s anointing)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    },
+    {
+      "id": "f.evil-spirit-from-the-lord.torment-on-saul--dd794551",
+      "name": "Evil spirit from the LORD (torment on Saul)",
+      "type": "figure",
+      "role": "theology",
+      "refs_count": 1
+    },
+    {
+      "id": "p.eliab--d294be6a",
+      "name": "Eliab",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.abinadab.brother-of-david--30544cde",
+      "name": "Abinadab (brother of David)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.shammah.brother-of-david--896cebd1",
+      "name": "Shammah (brother of David)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

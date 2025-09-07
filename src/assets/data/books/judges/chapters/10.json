@@ -1,0 +1,28 @@
+{
+  "book": "Judges",
+  "chapter": 10,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "p.tola-son-of-puah--4fadb7b0",
+      "name": "Tola son of Puah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.jair-the-gileadite--ab3dde03",
+      "name": "Jair the Gileadite",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.ammonites.oppressors-in-jephthahs-day--ace32566",
+      "name": "Ammonites (oppressors in Jephthah’s day)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

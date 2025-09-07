@@ -1,0 +1,35 @@
+{
+  "book": "Ezekiel",
+  "chapter": 30,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "g.egypt--ab1ad00f",
+      "name": "Egypt",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 6
+    },
+    {
+      "id": "p.pharaoh.hophra-apries-horizon--5a8042d1",
+      "name": "Pharaoh (Hophra/Apries horizon)",
+      "type": "person",
+      "role": "pharaoh",
+      "refs_count": 1
+    },
+    {
+      "id": "p.prince-of-egypt--98a51f14",
+      "name": "Prince of Egypt",
+      "type": "person",
+      "role": "prince",
+      "refs_count": 1
+    },
+    {
+      "id": "e.eleventh-year-seventh-month--2c2a19a1",
+      "name": "Eleventh year, seventh month (oracle vs Egypt)",
+      "type": "entity",
+      "role": "chronology",
+      "refs_count": 1
+    }
+  ]
+}

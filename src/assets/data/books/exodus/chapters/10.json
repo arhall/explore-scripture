@@ -1,0 +1,35 @@
+{
+  "book": "Exodus",
+  "chapter": 10,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "p.aaron--cc77e332",
+      "name": "Aaron",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 6
+    },
+    {
+      "id": "e.plague-locusts--9e810734",
+      "name": "Plague: Locusts",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1
+    },
+    {
+      "id": "e.plague-darkness--38484a9a",
+      "name": "Plague: Darkness",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1
+    }
+  ]
+}

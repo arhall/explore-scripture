@@ -1,0 +1,19 @@
+{
+  "name": "Eshcol",
+  "type": "person",
+  "references": [
+    "Genesis 14:13,24"
+  ],
+  "blurb": "Ally of Abraham named with Mamre and Aner; likely a clan leader in the Hebron area.",
+  "category": "narrative",
+  "cross_references": [],
+  "id": "p.eshcol.gene-14-13-24--160beacf",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      14
+    ]
+  }
+}

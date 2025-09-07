@@ -1,0 +1,24 @@
+{
+  "name": "Hul",
+  "type": "person",
+  "references": [
+    "Genesis 10:23"
+  ],
+  "blurb": "Descendant of Aram; part of Shem’s branch.",
+  "relations": {
+    "parents": [
+      "Aram"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.hul.gene-10-23--65c9c2de",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

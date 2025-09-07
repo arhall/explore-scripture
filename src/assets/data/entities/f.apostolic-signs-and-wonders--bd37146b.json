@@ -1,0 +1,23 @@
+{
+  "name": "Apostolic signs and wonders",
+  "type": "figure",
+  "category": "miracles-index",
+  "references": [
+    "Acts 5:12–16"
+  ],
+  "aka": [],
+  "id": "f.apostolic-signs-and-wonders--bd37146b",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      5
+    ]
+  }
+}

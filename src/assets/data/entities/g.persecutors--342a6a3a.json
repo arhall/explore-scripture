@@ -1,0 +1,15 @@
+{
+  "name": "Persecutors",
+  "type": "group",
+  "category": "opponents",
+  "references": [
+    "1 Thess 2:15"
+  ],
+  "aka": [],
+  "id": "g.persecutors--342a6a3a",
+  "book_references": {
+    "1 Thessalonians": [
+      2
+    ]
+  }
+}

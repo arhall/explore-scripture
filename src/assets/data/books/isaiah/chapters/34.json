@@ -1,0 +1,14 @@
+{
+  "book": "Isaiah",
+  "chapter": 34,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "e.the-book-of-the-lord.seek-and-read--4c572f9a",
+      "name": "The Book of the LORD (seek and read)",
+      "type": "entity",
+      "role": "scripture",
+      "refs_count": 1
+    }
+  ]
+}

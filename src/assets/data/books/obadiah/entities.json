@@ -1,0 +1,625 @@
+{
+  "book": "Obadiah",
+  "slug": "obadiah",
+  "entity_count": 57,
+  "key_figures": [
+    {
+      "id": "p.obadiah.prophet--4ac0ef81",
+      "name": "Obadiah (prophet)",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.ephraim--5c67cb1c",
+      "name": "Ephraim",
+      "type": "group",
+      "role": "tribe",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.edom.desolate-wilderness--6976d032",
+      "name": "Edom (desolate wilderness)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.confederates-allies-who-deceive-edom--96ea923a",
+      "name": "Confederates/allies who deceive Edom",
+      "type": "group",
+      "role": "allies",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.those-at-peace-with-you-trusted-friends--09fe6b97",
+      "name": "Those at peace with you / trusted friends",
+      "type": "group",
+      "role": "allies",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.wise-men-of-teman--54df4679",
+      "name": "Wise men of Teman (to be cut off)",
+      "type": "group",
+      "role": "wisdom",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.mighty-men-of-teman--f316d722",
+      "name": "Mighty men of Teman (dismayed)",
+      "type": "group",
+      "role": "military",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.house-of-jacob--22e00a66",
+      "name": "House of Jacob",
+      "type": "group",
+      "role": "israel",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.house-of-joseph--e0642c59",
+      "name": "House of Joseph (northern tribes)",
+      "type": "group",
+      "role": "israel",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.all-nations-under-judgment--7eab34d0",
+      "name": "All nations under judgment",
+      "type": "group",
+      "role": "nations",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.possessors-from-the-negev.mountain-of-esau--ee567444",
+      "name": "Possessors from the Negev (mountain of Esau)",
+      "type": "group",
+      "role": "settlers",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.possessors-of-the-shephelah.philistines--c4eb0d37",
+      "name": "Possessors of the Shephelah (Philistines)",
+      "type": "group",
+      "role": "settlers",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.possessors-of-the-hill-country-of-ephraim-and-samaria--c30d9ff3",
+      "name": "Possessors of the hill country of Ephraim and Samaria",
+      "type": "group",
+      "role": "settlers",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.benjamin-shall-possess-gilead--edc90e94",
+      "name": "Benjamin shall possess Gilead",
+      "type": "group",
+      "role": "settlers",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.exiles-of-israel--19ca7f24",
+      "name": "Exiles of Israel (Canaan to Zarephath)",
+      "type": "group",
+      "role": "diaspora",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.exiles-of-jerusalem-in-sepharad--03e1d6f9",
+      "name": "Exiles of Jerusalem in Sepharad",
+      "type": "group",
+      "role": "diaspora",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.deliverers-ascend-mount-zion.saviors--c86ef078",
+      "name": "Deliverers (saviors) ascend Mount Zion",
+      "type": "group",
+      "role": "leaders",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.benjamin--cc9e4fff",
+      "name": "Benjamin",
+      "type": "group",
+      "role": "tribe",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "f.esau.ancestor-typological--fb371e01",
+      "name": "Esau (ancestor, typological)",
+      "type": "figure",
+      "role": "ancestor",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.jacob-your-brother.kinship-ethic--ac60127d",
+      "name": "Jacob/your brother (kinship ethic)",
+      "type": "figure",
+      "role": "kinship",
+      "refs_count": 1,
+      "score": 3
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "p.obadiah.prophet--4ac0ef81",
+      "name": "Obadiah (prophet)",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.ephraim--5c67cb1c",
+      "name": "Ephraim",
+      "type": "group",
+      "role": "tribe",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.edom.desolate-wilderness--6976d032",
+      "name": "Edom (desolate wilderness)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.confederates-allies-who-deceive-edom--96ea923a",
+      "name": "Confederates/allies who deceive Edom",
+      "type": "group",
+      "role": "allies",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.those-at-peace-with-you-trusted-friends--09fe6b97",
+      "name": "Those at peace with you / trusted friends",
+      "type": "group",
+      "role": "allies",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.wise-men-of-teman--54df4679",
+      "name": "Wise men of Teman (to be cut off)",
+      "type": "group",
+      "role": "wisdom",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.mighty-men-of-teman--f316d722",
+      "name": "Mighty men of Teman (dismayed)",
+      "type": "group",
+      "role": "military",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.house-of-jacob--22e00a66",
+      "name": "House of Jacob",
+      "type": "group",
+      "role": "israel",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.house-of-joseph--e0642c59",
+      "name": "House of Joseph (northern tribes)",
+      "type": "group",
+      "role": "israel",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.all-nations-under-judgment--7eab34d0",
+      "name": "All nations under judgment",
+      "type": "group",
+      "role": "nations",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.possessors-from-the-negev.mountain-of-esau--ee567444",
+      "name": "Possessors from the Negev (mountain of Esau)",
+      "type": "group",
+      "role": "settlers",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.possessors-of-the-shephelah.philistines--c4eb0d37",
+      "name": "Possessors of the Shephelah (Philistines)",
+      "type": "group",
+      "role": "settlers",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.possessors-of-the-hill-country-of-ephraim-and-samaria--c30d9ff3",
+      "name": "Possessors of the hill country of Ephraim and Samaria",
+      "type": "group",
+      "role": "settlers",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.benjamin-shall-possess-gilead--edc90e94",
+      "name": "Benjamin shall possess Gilead",
+      "type": "group",
+      "role": "settlers",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.exiles-of-israel--19ca7f24",
+      "name": "Exiles of Israel (Canaan to Zarephath)",
+      "type": "group",
+      "role": "diaspora",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.exiles-of-jerusalem-in-sepharad--03e1d6f9",
+      "name": "Exiles of Jerusalem in Sepharad",
+      "type": "group",
+      "role": "diaspora",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.deliverers-ascend-mount-zion.saviors--c86ef078",
+      "name": "Deliverers (saviors) ascend Mount Zion",
+      "type": "group",
+      "role": "leaders",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.benjamin--cc9e4fff",
+      "name": "Benjamin",
+      "type": "group",
+      "role": "tribe",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "f.esau.ancestor-typological--fb371e01",
+      "name": "Esau (ancestor, typological)",
+      "type": "figure",
+      "role": "ancestor",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.jacob-your-brother.kinship-ethic--ac60127d",
+      "name": "Jacob/your brother (kinship ethic)",
+      "type": "figure",
+      "role": "kinship",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.samaria--fcae1760",
+      "name": "Samaria",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.mount-zion.in-tension-with-samaria--f68f4d61",
+      "name": "Mount Zion (in tension with Samaria)",
+      "type": "entity",
+      "role": "mount",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.vision-frame-the-vision-of-obadiah--76692f96",
+      "name": "Vision frame: ‘The vision of Obadiah’",
+      "type": "entity",
+      "role": "literary",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.heavenly-report-and-messenger-to-the-nations--1cbb3b02",
+      "name": "Heavenly report and messenger to the nations",
+      "type": "entity",
+      "role": "council",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.mount-esau-seir.high-places--5e0df6fa",
+      "name": "Mount Esau / Seir (high places)",
+      "type": "entity",
+      "role": "landform",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.pride-deceives-you.rock-dwellers--024f4785",
+      "name": "Pride deceives you (rock‑dwellers)",
+      "type": "entity",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.eagles-nest-boast--e3e36ca1",
+      "name": "Eagle’s nest boast",
+      "type": "entity",
+      "role": "image",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.do-not-gloat-over-your-brothers-day--70bd46b1",
+      "name": "Do not gloat over your brother’s day",
+      "type": "entity",
+      "role": "charge",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.do-not-rejoice-over-judahs-people-in-the-day-of-their-ruin--049d1991",
+      "name": "Do not rejoice over Judah’s people in the day of their ruin",
+      "type": "entity",
+      "role": "charge",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.do-not-boast-in-the-day-of-distress--3bd4cfe1",
+      "name": "Do not boast in the day of distress",
+      "type": "entity",
+      "role": "charge",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.do-not-enter-the-gate-of-my-people--ee619499",
+      "name": "Do not enter the gate of my people",
+      "type": "entity",
+      "role": "charge",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.do-not-look-with-glee-on-his-misfortune--2121edd8",
+      "name": "Do not look with glee on his misfortune",
+      "type": "entity",
+      "role": "charge",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.do-not-loot-his-wealth-in-the-day-of-calamity--be5a11ff",
+      "name": "Do not loot his wealth in the day of calamity",
+      "type": "entity",
+      "role": "charge",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.do-not-stand-at-the-crossroads-to-cut-off-fugitives--c503d189",
+      "name": "Do not stand at the crossroads to cut off fugitives",
+      "type": "entity",
+      "role": "charge",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.do-not-hand-over-survivors--2ed1f254",
+      "name": "Do not hand over survivors",
+      "type": "entity",
+      "role": "charge",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.jerusalem-zion.refuge-and-holiness--ea0bf562",
+      "name": "Jerusalem/Zion (refuge and holiness)",
+      "type": "entity",
+      "role": "zion",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.as-you-have-done-it-shall-be-done-to-you--fc438ca8",
+      "name": "As you have done, it shall be done to you",
+      "type": "entity",
+      "role": "justice",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.drinking-the-cup-on-the-holy-mountain--bde80f3c",
+      "name": "Drinking the cup on the holy mountain",
+      "type": "entity",
+      "role": "cup",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.they-shall-be-as-though-they-had-not-been--3f33ffa7",
+      "name": "They shall be as though they had not been",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.deliverance-on-mount-zion--6b769f38",
+      "name": "Deliverance on Mount Zion",
+      "type": "entity",
+      "role": "restoration",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.house-of-jacob-shall-possess-their-possessions--a4887668",
+      "name": "House of Jacob shall possess their possessions",
+      "type": "entity",
+      "role": "inheritance",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.house-of-jacob-a-fire-house-of-joseph-a-flame--4fcb6cbc",
+      "name": "House of Jacob a fire; House of Joseph a flame",
+      "type": "entity",
+      "role": "image",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.house-of-esau-stubble--4bd18e3a",
+      "name": "House of Esau stubble",
+      "type": "entity",
+      "role": "image",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.the-kingdom-shall-be-the-lords--0c4e3e15",
+      "name": "The kingdom shall be the LORD’s",
+      "type": "entity",
+      "role": "kingdom",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.teman--79c3ccc6",
+      "name": "Teman",
+      "type": "entity",
+      "role": "district",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.seir--e718f73b",
+      "name": "Seir",
+      "type": "entity",
+      "role": "landform",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.negev--2c02de1c",
+      "name": "Negev (South)",
+      "type": "entity",
+      "role": "region",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.shephelah--edb03a36",
+      "name": "Shephelah (foothills)",
+      "type": "entity",
+      "role": "region",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.gilead--bdd26618",
+      "name": "Gilead",
+      "type": "entity",
+      "role": "region",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.zarephath--51406a0a",
+      "name": "Zarephath",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.sepharad--d5813001",
+      "name": "Sepharad",
+      "type": "entity",
+      "role": "diaspora",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.mount-esau.seir--e7caf109",
+      "name": "Mount Esau",
+      "type": "entity",
+      "role": "landform",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.pride-before-the-fall.theology-of-humility--ad1b36b3",
+      "name": "Pride before the fall (theology of humility)",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.kinship-ethics.brotherhood-obligation--06120607",
+      "name": "Kinship ethics (brotherhood obligation)",
+      "type": "entity",
+      "role": "ethic",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.holiness-territory.holy-hill-holy-people--c3a375c8",
+      "name": "Holiness & territory (holy hill, holy people)",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.reap-what-you-sow.measure-returned--8663e1f5",
+      "name": "Reap what you sow (measure returned)",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.no-survivor-for-esau.oracle-hyperbole--81884ede",
+      "name": "No survivor for Esau (oracle hyperbole)",
+      "type": "entity",
+      "role": "rhetoric",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

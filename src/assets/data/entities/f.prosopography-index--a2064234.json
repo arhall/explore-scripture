@@ -1,0 +1,26 @@
+{
+  "name": "Prosopography (index)",
+  "type": "figure",
+  "category": "index",
+  "references": [
+    "Gal 1–6"
+  ],
+  "aka": [],
+  "id": "f.prosopography-index--a2064234",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Galatians": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "book": "Matthew",
+  "chapter": 2,
+  "entity_count": 10,
+  "entities": [
+    {
+      "id": "e.bethlehem-prophecy-in-the-gospels--a1f0c79b",
+      "name": "Bethlehem prophecy in the Gospels",
+      "type": "entity",
+      "role": "reception",
+      "refs_count": 1
+    },
+    {
+      "id": "p.joseph-husband-of-mary--1e97fe8c",
+      "name": "Joseph (husband of Mary)",
+      "type": "person",
+      "role": "family",
+      "refs_count": 5
+    },
+    {
+      "id": "e.bethlehem--5e03c285",
+      "name": "Bethlehem",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 3
+    },
+    {
+      "id": "p.herod-archelaus--c3b8f871",
+      "name": "Herod Archelaus",
+      "type": "person",
+      "role": "ruler",
+      "refs_count": 1
+    },
+    {
+      "id": "p.herod-the-great--89dd3337",
+      "name": "Herod the Great",
+      "type": "person",
+      "role": "ruler",
+      "refs_count": 1
+    },
+    {
+      "id": "f.rachel-s-weeping-ramah--3c64cf5d",
+      "name": "Rachel’s weeping (Ramah)",
+      "type": "figure",
+      "role": "intertext",
+      "refs_count": 1
+    },
+    {
+      "id": "e.egypt--b2268b8d",
+      "name": "Egypt",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 2
+    },
+    {
+      "id": "p.mary-mother-of-jesus--acfa811a",
+      "name": "Mary (mother of Jesus)",
+      "type": "person",
+      "role": "family",
+      "refs_count": 6
+    },
+    {
+      "id": "g.magi-wise-men--3f99fd1f",
+      "name": "Magi (wise men)",
+      "type": "group",
+      "role": "pilgrims",
+      "refs_count": 1
+    },
+    {
+      "id": "e.nazareth--4e4195a3",
+      "name": "Nazareth",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 5
+    }
+  ]
+}

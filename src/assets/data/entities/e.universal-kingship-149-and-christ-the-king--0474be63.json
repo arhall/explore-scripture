@@ -1,0 +1,18 @@
+{
+  "id": "e.universal-kingship-149-and-christ-the-king--0474be63",
+  "name": "Universal kingship (14:9) and Christ the King",
+  "type": "entity",
+  "references": [
+    "Zech 14:9"
+  ],
+  "category": "reception-liturgical",
+  "blurb": "Liturgical appropriation of divine kingship consummation.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      14
+    ]
+  }
+}

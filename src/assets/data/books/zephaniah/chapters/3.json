@@ -1,0 +1,77 @@
+{
+  "book": "Zephaniah",
+  "chapter": 3,
+  "entity_count": 31,
+  "entities": [
+    {
+      "id": "p.judges--43b9f1c3",
+      "name": "Judges",
+      "type": "person",
+      "role": "judicial",
+      "refs_count": 1
+    },
+    {
+      "id": "p.prophets-jerusalem--f9927e09",
+      "name": "Prophets (Jerusalem)",
+      "type": "person",
+      "role": "religious-leaders",
+      "refs_count": 1
+    },
+    {
+      "id": "g.jerusalem--3453dc1c",
+      "name": "Jerusalem",
+      "type": "group",
+      "role": "city-people",
+      "refs_count": 4
+    },
+    {
+      "id": "g.remnant-humble-and-lowly--6cf43d00",
+      "name": "Remnant (humble and lowly)",
+      "type": "group",
+      "role": "remnant",
+      "refs_count": 1
+    },
+    {
+      "id": "g.proud-arrogant--13e8b88d",
+      "name": "Proud/Arrogant",
+      "type": "group",
+      "role": "ethical-collective",
+      "refs_count": 1
+    },
+    {
+      "id": "g.humble-meek--30c1f2d1",
+      "name": "Humble/Meek",
+      "type": "group",
+      "role": "ethical-collective",
+      "refs_count": 2
+    },
+    {
+      "id": "g.peoples-with-purified-lips--12bb2a3e",
+      "name": "Peoples with purified lips",
+      "type": "group",
+      "role": "worshiping-community",
+      "refs_count": 1
+    },
+    {
+      "id": "d.king-of-israel-the-lord-in-your-midst--b2eb94d9",
+      "name": "King of Israel, the LORD in your midst",
+      "type": "divine",
+      "role": "royal-theophany",
+      "refs_count": 1
+    },
+    {
+      "id": "f.jerusalems-woe-indictment--9ff5b50a",
+      "name": "Jerusalem’s woe/indictment",
+      "type": "figure",
+      "role": "woe",
+      "refs_count": 1
+    },
+    {
+      "id": "f.day-of-the-lord--1380fa46",
+      "name": "Day of the LORD",
+      "type": "figure",
+      "role": "central-theme",
+      "refs_count": 4
+    }
+  ]
+}

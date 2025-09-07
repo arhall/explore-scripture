@@ -1,0 +1,1169 @@
+{
+  "book": "1 Peter",
+  "slug": "1-peter",
+  "entity_count": 125,
+  "key_figures": [
+    {
+      "id": "p.noah.gene-5-32--6b1a74fb",
+      "name": "Noah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.mark-john-mark-cousin-of-barnabas--091a32fe",
+      "name": "Mark (John Mark) (cousin of Barnabas)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.sarah--424e36f5",
+      "name": "Sarah",
+      "type": "person",
+      "role": "allegory",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.simon-peter-cephas--d58cce37",
+      "name": "Simon Peter (Cephas)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.abraham--197f2a67",
+      "name": "Abraham",
+      "type": "person",
+      "role": "patriarch",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.emperor--80a2f06c",
+      "name": "emperor",
+      "type": "person",
+      "role": "magistrate",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 5,
+      "score": 7
+    },
+    {
+      "id": "g.eight-persons--7126fd49",
+      "name": "eight persons",
+      "type": "group",
+      "role": "ark-crew",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.she-who-is-in-babylon--b319850e",
+      "name": "she who is in Babylon",
+      "type": "group",
+      "role": "church",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.elect-exiles--25950da6",
+      "name": "elect exiles",
+      "type": "group",
+      "role": "addressees",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.gentiles-who-slander--46a62acd",
+      "name": "Gentiles who slander",
+      "type": "group",
+      "role": "outsiders",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.angels-long-to-look--c894fbba",
+      "name": "angels long to look",
+      "type": "group",
+      "role": "angels",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.governors--8f211ec7",
+      "name": "governors",
+      "type": "group",
+      "role": "magistrate",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.younger-be-subject-to-elders--84ce5957",
+      "name": "younger be subject to elders",
+      "type": "group",
+      "role": "younger",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.chosen-race--fe700366",
+      "name": "chosen race",
+      "type": "group",
+      "role": "identity",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.husbands--200d6643",
+      "name": "husbands",
+      "type": "group",
+      "role": "household",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.spirits-in-prison--4ca51062",
+      "name": "spirits in prison",
+      "type": "group",
+      "role": "enigmatic",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.prophets-searched-and-inquired-carefully--65b53913",
+      "name": "prophets searched and inquired carefully",
+      "type": "group",
+      "role": "prophets",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.household-slaves-oiketai--5f27732b",
+      "name": "household slaves (oiketai)",
+      "type": "group",
+      "role": "household",
+      "refs_count": 1,
+      "score": 7
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "p.noah.gene-5-32--6b1a74fb",
+      "name": "Noah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.mark-john-mark-cousin-of-barnabas--091a32fe",
+      "name": "Mark (John Mark) (cousin of Barnabas)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.sarah--424e36f5",
+      "name": "Sarah",
+      "type": "person",
+      "role": "allegory",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.simon-peter-cephas--d58cce37",
+      "name": "Simon Peter (Cephas)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.abraham--197f2a67",
+      "name": "Abraham",
+      "type": "person",
+      "role": "patriarch",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.emperor--80a2f06c",
+      "name": "emperor",
+      "type": "person",
+      "role": "magistrate",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 5,
+      "score": 7
+    },
+    {
+      "id": "g.eight-persons--7126fd49",
+      "name": "eight persons",
+      "type": "group",
+      "role": "ark-crew",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.she-who-is-in-babylon--b319850e",
+      "name": "she who is in Babylon",
+      "type": "group",
+      "role": "church",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.elect-exiles--25950da6",
+      "name": "elect exiles",
+      "type": "group",
+      "role": "addressees",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.gentiles-who-slander--46a62acd",
+      "name": "Gentiles who slander",
+      "type": "group",
+      "role": "outsiders",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.angels-long-to-look--c894fbba",
+      "name": "angels long to look",
+      "type": "group",
+      "role": "angels",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.governors--8f211ec7",
+      "name": "governors",
+      "type": "group",
+      "role": "magistrate",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.younger-be-subject-to-elders--84ce5957",
+      "name": "younger be subject to elders",
+      "type": "group",
+      "role": "younger",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.chosen-race--fe700366",
+      "name": "chosen race",
+      "type": "group",
+      "role": "identity",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.husbands--200d6643",
+      "name": "husbands",
+      "type": "group",
+      "role": "household",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.spirits-in-prison--4ca51062",
+      "name": "spirits in prison",
+      "type": "group",
+      "role": "enigmatic",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.prophets-searched-and-inquired-carefully--65b53913",
+      "name": "prophets searched and inquired carefully",
+      "type": "group",
+      "role": "prophets",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.household-slaves-oiketai--5f27732b",
+      "name": "household slaves (oiketai)",
+      "type": "group",
+      "role": "household",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.holy-nation--6388add9",
+      "name": "holy nation",
+      "type": "group",
+      "role": "identity",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.once-not-a-people-now-god-s-people--76425b1d",
+      "name": "once not a people now God’s people",
+      "type": "group",
+      "role": "identity",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.wives--491ee82a",
+      "name": "wives",
+      "type": "group",
+      "role": "household",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.people-for-his-own-possession--ea17eb18",
+      "name": "people for his own possession",
+      "type": "group",
+      "role": "covenant-people",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.living-stones--d1527fcd",
+      "name": "living stones",
+      "type": "group",
+      "role": "ecclesiology",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.unjust-masters--5cb95566",
+      "name": "unjust masters",
+      "type": "group",
+      "role": "household",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.holy-priesthood--c62cacb6",
+      "name": "holy priesthood",
+      "type": "group",
+      "role": "ecclesiology",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "t.defense-apologia--adb51396",
+      "name": "Defense (apologia)",
+      "type": "title",
+      "role": "apologetics",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.chief-shepherd--43f256b8",
+      "name": "Chief Shepherd",
+      "type": "title",
+      "role": "christology",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.living-stone-christ--13eef54c",
+      "name": "Living Stone (Christ)",
+      "type": "title",
+      "role": "christology",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.shepherd-and-overseer-episkopos-of-your-souls--4f8f3467",
+      "name": "Shepherd and Overseer (episkopos) of your souls",
+      "type": "title",
+      "role": "pastoral",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "f.your-adversary-the-devil-like-a-roaring-lion--cf1bd33f",
+      "name": "your adversary the devil like a roaring lion",
+      "type": "figure",
+      "role": "adversary",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.resist-firm-in-your-faith--4d0c7aaa",
+      "name": "resist firm in your faith",
+      "type": "figure",
+      "role": "resistance",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.straying-sheep-returned--ed351daf",
+      "name": "straying sheep returned",
+      "type": "figure",
+      "role": "restoration",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.honor-the-emperor--76acc580",
+      "name": "honor the emperor",
+      "type": "figure",
+      "role": "civic-ethic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.imperishable-beauty-of-a-gentle-and-quiet-spirit--6bee7062",
+      "name": "imperishable beauty of a gentle and quiet spirit",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.cast-your-anxieties-on-him--2c6b5a7c",
+      "name": "cast your anxieties on him",
+      "type": "figure",
+      "role": "trust",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.do-not-be-surprised-at-the-fiery-trial--8d95cc1b",
+      "name": "do not be surprised at the fiery trial",
+      "type": "figure",
+      "role": "suffering",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.drinking-parties--a73da1d7",
+      "name": "drinking parties",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.tasting-that-the-lord-is-good--90811ba0",
+      "name": "tasting that the Lord is good",
+      "type": "figure",
+      "role": "psalm-echo",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.joy-inexpressible-and-filled-with-glory--da257039",
+      "name": "joy inexpressible and filled with glory",
+      "type": "figure",
+      "role": "joy",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.bless-do-not-repay-evil--83d8b4db",
+      "name": "bless do not repay evil",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.good-conscience--cb1adf1d",
+      "name": "good conscience",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.crown-of-glory--0d05729a",
+      "name": "crown of glory",
+      "type": "figure",
+      "role": "reward",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.newborn-milk--1ef5f57c",
+      "name": "newborn milk",
+      "type": "figure",
+      "role": "formation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.honor-everyone--d7f03027",
+      "name": "honor everyone",
+      "type": "figure",
+      "role": "civic-ethic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.love-the-brotherhood--27db036c",
+      "name": "love the brotherhood",
+      "type": "figure",
+      "role": "civic-ethic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-3-19-spirits-in-prison--d16dd315",
+      "name": "Textual note: 3:19 spirits in prison",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.no-deceit-found-in-his-mouth--e2e1bd91",
+      "name": "no deceit found in his mouth",
+      "type": "figure",
+      "role": "catena",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.whoever-has-suffered-in-the-flesh-has-ceased-from-sin--fc4b2af8",
+      "name": "whoever has suffered in the flesh has ceased from sin",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.orgies--f4013807",
+      "name": "orgies",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.entrust-your-souls-to-a-faithful-creator--93eefdce",
+      "name": "entrust your souls to a faithful Creator",
+      "type": "figure",
+      "role": "suffering",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.brotherly-love--dfc461ed",
+      "name": "brotherly love",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.in-sanctification-of-the-spirit--9fcca44b",
+      "name": "in sanctification of the Spirit",
+      "type": "figure",
+      "role": "sanctification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sensuality--7c360435",
+      "name": "sensuality",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.god-will-restore-you--dca3f929",
+      "name": "God will restore you",
+      "type": "figure",
+      "role": "promise",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.by-his-wounds-you-were-healed--5cdb683f",
+      "name": "by his wounds you were healed",
+      "type": "figure",
+      "role": "atonement",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sanctify-christ-as-lord-be-ready-to-make-a-defense--219f0c8a",
+      "name": "sanctify Christ as Lord; be ready to make a defense",
+      "type": "figure",
+      "role": "apologetics",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.cornerstone-in-zion--ca3e5530",
+      "name": "cornerstone in Zion",
+      "type": "figure",
+      "role": "stone",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.tender-heart--854ea571",
+      "name": "tender heart",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sarah-obeyed-abraham--58dcce84",
+      "name": "Sarah obeyed Abraham",
+      "type": "figure",
+      "role": "example",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.whoever-speaks-as-oracles-of-god--217a2068",
+      "name": "whoever speaks as oracles of God",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.prayers-not-hindered--f7d3c5a6",
+      "name": "prayers not hindered",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.drunkenness--02b1278a",
+      "name": "drunkenness",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.for-sprinkling-of-jesus-christ--12ddf7bd",
+      "name": "for sprinkling of Jesus Christ",
+      "type": "figure",
+      "role": "covenant",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.appeal-of-a-good-conscience--678bd0e3",
+      "name": "appeal of a good conscience",
+      "type": "figure",
+      "role": "sacrament",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.royal-priesthood--924d2089",
+      "name": "royal priesthood",
+      "type": "figure",
+      "role": "identity",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.peace-to-all-of-you-who-are-in-christ--0871c615",
+      "name": "Peace to all of you who are in Christ",
+      "type": "figure",
+      "role": "benediction",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.whoever-serves-by-the-strength-god-supplies--c43e95e2",
+      "name": "whoever serves by the strength God supplies",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.when-reviled-he-did-not-revile--277bbfdc",
+      "name": "when reviled he did not revile",
+      "type": "figure",
+      "role": "example",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sympathy--f5809427",
+      "name": "sympathy",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.redeemed-with-precious-blood-like-a-lamb--e23c6c50",
+      "name": "redeemed with precious blood like a lamb",
+      "type": "figure",
+      "role": "passover",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.the-end-of-all-things-is-at-hand--fd8c1731",
+      "name": "the end of all things is at hand",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.undefiled-inheritance--5f286512",
+      "name": "undefiled inheritance",
+      "type": "figure",
+      "role": "inheritance",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.imperishable-inheritance--baf134d6",
+      "name": "imperishable inheritance",
+      "type": "figure",
+      "role": "inheritance",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.stumbling-stone--da3f11f1",
+      "name": "stumbling stone",
+      "type": "figure",
+      "role": "stone",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.abstain-from-passions-that-wage-war--6f71686b",
+      "name": "abstain from passions that wage war",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.god-will-confirm-you--74237669",
+      "name": "God will confirm you",
+      "type": "figure",
+      "role": "promise",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.insulted-for-the-name-of-christ--be94827c",
+      "name": "insulted for the name of Christ",
+      "type": "figure",
+      "role": "suffering",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.whoever-desires-life-ps-34--9b91152c",
+      "name": "whoever desires life (Ps 34)",
+      "type": "figure",
+      "role": "psalm-echo",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.lawless-idolatry--b0dbf12b",
+      "name": "lawless idolatry",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.fear-god--f8ca1143",
+      "name": "fear God",
+      "type": "figure",
+      "role": "civic-ethic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.shepherd-the-flock-of-god--c98f3020",
+      "name": "shepherd the flock of God",
+      "type": "figure",
+      "role": "pastoral",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.show-hospitality-without-grumbling--64e3531b",
+      "name": "show hospitality without grumbling",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.greet-one-another-with-a-kiss-of-love--80616240",
+      "name": "greet one another with a kiss of love",
+      "type": "figure",
+      "role": "greeting",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.as-each-has-received-a-gift-serve-one-another--c1a6bce4",
+      "name": "as each has received a gift serve one another",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.passions--16d838e0",
+      "name": "passions",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.clothe-yourselves-with-humility--122169eb",
+      "name": "clothe yourselves with humility",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.god-will-establish-you--cdf4a20f",
+      "name": "God will establish you",
+      "type": "figure",
+      "role": "promise",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.not-domineering-but-examples--f9389d99",
+      "name": "not domineering but examples",
+      "type": "figure",
+      "role": "pastoral",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.unity-of-mind--394b00ca",
+      "name": "unity of mind",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.love-one-another-earnestly--1af2dbf2",
+      "name": "love one another earnestly",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.made-alive-in-the-spirit--621f1361",
+      "name": "made alive in the Spirit",
+      "type": "figure",
+      "role": "vindication",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.he-committed-no-sin--fd98f6cf",
+      "name": "He committed no sin",
+      "type": "figure",
+      "role": "catena",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.born-again-to-a-living-hope--b31d025b",
+      "name": "born again to a living hope",
+      "type": "figure",
+      "role": "regeneration",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.household-code-index--e5452295",
+      "name": "Household code index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.note-5-13-babylon-as-rome-no-alias--b59ca2ad",
+      "name": "Note: 5:13 ‘Babylon’ as Rome (no alias)",
+      "type": "figure",
+      "role": "note",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.suffer-as-a-christian--45f4e229",
+      "name": "suffer as a Christian",
+      "type": "figure",
+      "role": "suffering",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.gird-up-the-loins-of-your-mind--54442d26",
+      "name": "gird up the loins of your mind",
+      "type": "figure",
+      "role": "readiness",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.suffer-for-doing-good--39d53409",
+      "name": "suffer for doing good",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.offering-spiritual-sacrifices--95e760a1",
+      "name": "offering spiritual sacrifices",
+      "type": "figure",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.ot-stone-mercy-echoes-index--2602d6e0",
+      "name": "OT stone/mercy echoes index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.received-mercy--78585674",
+      "name": "received mercy",
+      "type": "figure",
+      "role": "identity",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.be-self-controlled-and-sober-minded-for-prayers--7202f840",
+      "name": "be self-controlled and sober-minded for prayers",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-4-6-gospel-to-the-dead--6969b971",
+      "name": "Textual note: 4:6 gospel to the dead",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.conduct-anastrophe--fb2896be",
+      "name": "conduct (anastrophe)",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.unfading-inheritance--cb11366b",
+      "name": "unfading inheritance",
+      "type": "figure",
+      "role": "inheritance",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.god-will-strengthen-you--b84583e9",
+      "name": "God will strengthen you",
+      "type": "figure",
+      "role": "promise",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.above-all-keep-loving-earnestly--f7632daa",
+      "name": "above all keep loving earnestly",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.be-holy-for-i-am-holy--17c58da7",
+      "name": "be holy for I am holy",
+      "type": "figure",
+      "role": "holiness",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.according-to-the-foreknowledge-of-god-the-father--0c6f3227",
+      "name": "according to the foreknowledge of God the Father",
+      "type": "figure",
+      "role": "election",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.humble-mind--c81613f5",
+      "name": "humble mind",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.tested-faith-more-precious-than-gold--7285b238",
+      "name": "tested faith more precious than gold",
+      "type": "figure",
+      "role": "trial",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.christ-suffered-once-for-sins--4cdc5b40",
+      "name": "Christ suffered once for sins",
+      "type": "figure",
+      "role": "atonement",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.heirs-together-of-the-grace-of-life--c653e6eb",
+      "name": "heirs together of the grace of life",
+      "type": "figure",
+      "role": "coheirs",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.be-sober-minded-be-watchful--e8fc3214",
+      "name": "be sober-minded be watchful",
+      "type": "figure",
+      "role": "alertness",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.zion--4bd3e8e2",
+      "name": "Zion",
+      "type": "entity",
+      "role": "holy-mount",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.asia--f9f8eca9",
+      "name": "Asia",
+      "type": "entity",
+      "role": "province",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.pontus--e1ba858d",
+      "name": "Pontus",
+      "type": "entity",
+      "role": "province",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.spiritual-house--54c341a0",
+      "name": "spiritual house",
+      "type": "entity",
+      "role": "ecclesiology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.cappadocia--74c7c97a",
+      "name": "Cappadocia",
+      "type": "entity",
+      "role": "province",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.babylon--9d648bf6",
+      "name": "Babylon",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.galatia--ce819cb0",
+      "name": "Galatia",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.baptism-antitype--fcfb1736",
+      "name": "baptism (antitype)",
+      "type": "entity",
+      "role": "sacrament",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.bithynia--547211ac",
+      "name": "Bithynia",
+      "type": "entity",
+      "role": "province",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

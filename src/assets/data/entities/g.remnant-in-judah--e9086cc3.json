@@ -1,0 +1,19 @@
+{
+  "name": "Remnant in Judah",
+  "type": "group",
+  "references": [
+    "Jeremiah 40–41"
+  ],
+  "blurb": "Those left in the land after deportations; fragile governance under Gedaliah collapses into fear and flight.",
+  "category": "remnant",
+  "id": "g.remnant-in-judah--e9086cc3",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      40,
+      41
+    ]
+  }
+}

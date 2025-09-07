@@ -1,0 +1,17 @@
+{
+  "name": "Beroeans",
+  "type": "group",
+  "category": "community",
+  "references": [
+    "Acts 17:11-12"
+  ],
+  "aka": [
+    "Bereans"
+  ],
+  "id": "g.beroeans--b9d4a461",
+  "book_references": {
+    "Acts": [
+      17
+    ]
+  }
+}

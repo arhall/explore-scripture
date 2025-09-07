@@ -1,0 +1,77 @@
+{
+  "book": "Galatians",
+  "chapter": 4,
+  "entity_count": 28,
+  "entities": [
+    {
+      "id": "p.hagar.gene-16-21--1d27bdc5",
+      "name": "Hagar",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2
+    },
+    {
+      "id": "p.ishmael.gene-16-17-21-25-12-18--dcd41d5d",
+      "name": "Ishmael",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2
+    },
+    {
+      "id": "p.isaac.gene-17-25--66e8d49e",
+      "name": "Isaac",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 3
+    },
+    {
+      "id": "f.heir-no-longer-under-guardian--f8d9a872",
+      "name": "Heir no longer under guardian",
+      "type": "figure",
+      "role": "status",
+      "refs_count": 1
+    },
+    {
+      "id": "f.isaiah-54-1-citation--882b7ede",
+      "name": "Isaiah 54:1 citation",
+      "type": "figure",
+      "role": "ot-quote",
+      "refs_count": 1
+    },
+    {
+      "id": "f.prosopography-index--a2064234",
+      "name": "Prosopography (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.mount-sinai-in-arabia-hagar--8c8490bc",
+      "name": "Mount Sinai in Arabia (Hagar)",
+      "type": "figure",
+      "role": "allegory",
+      "refs_count": 1
+    },
+    {
+      "id": "f.hagar-and-sarah-allegory-introduced--80f7c4ce",
+      "name": "Hagar and Sarah allegory introduced",
+      "type": "figure",
+      "role": "allegory",
+      "refs_count": 1
+    },
+    {
+      "id": "f.present-jerusalem-in-slavery--8ba2ca83",
+      "name": "Present Jerusalem in slavery",
+      "type": "figure",
+      "role": "allegory",
+      "refs_count": 1
+    },
+    {
+      "id": "f.zealous-courtship-by-agitators--b948e338",
+      "name": "Zealous courtship by agitators",
+      "type": "figure",
+      "role": "zeal",
+      "refs_count": 1
+    }
+  ]
+}

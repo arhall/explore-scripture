@@ -1,0 +1,23 @@
+{
+  "name": "Myra (ship of Alexandria)",
+  "type": "entity",
+  "category": "port",
+  "references": [
+    "Acts 27:5–6"
+  ],
+  "aka": [],
+  "id": "e.myra-ship-of-alexandria--ba32176f",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      27
+    ]
+  }
+}

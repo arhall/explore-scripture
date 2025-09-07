@@ -1,0 +1,22 @@
+{
+  "name": "Ammon",
+  "type": "group",
+  "references": [
+    "Amos 1:13–15"
+  ],
+  "blurb": "Ripped open pregnant women to enlarge borders; Milcom goes into exile.",
+  "category": "nation",
+  "id": "g.ammon--2e86c4cb",
+  "canonical_id": "g.ammon.jeremiah--e3cb1d55",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "g.ammon--885931a0"
+  ],
+  "book_references": {
+    "Amos": [
+      1
+    ]
+  }
+}

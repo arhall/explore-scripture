@@ -1,0 +1,18 @@
+{
+  "id": "e.segullah-treasured-possession-theology--e98d9fdf",
+  "name": "Segullah (treasured possession) theology",
+  "type": "entity",
+  "references": [
+    "Mal 3:17"
+  ],
+  "category": "identity-theology",
+  "blurb": "Echo of Sinai covenant identity shaping communal assurance.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      3
+    ]
+  }
+}

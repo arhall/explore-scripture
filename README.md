@@ -1,115 +1,318 @@
 # Bible Explorer — Interactive Study Site
 
-A comprehensive Bible study platform featuring:
-- **66 Biblical books** organized by categories (Law, History, Poetry, Prophets, Gospels, Epistles, Apocalypse)
-- **229 Biblical characters** with detailed study profiles and gospel connections
-- **Interactive chapter reader** with live translation switching (ESV, NIV, NLT, NKJV, NASB, AMPC, WEB)
-- **Professional UX design** optimized for desktop and mobile study
-- **Modern theme system** with 24 color themes and dark mode support
+[![Built with Eleventy](https://img.shields.io/badge/Built%20with-Eleventy-000000.svg)](https://11ty.dev/)
+[![Deployed on Cloudflare Pages](https://img.shields.io/badge/Deployed%20on-Cloudflare%20Pages-F38020.svg)](https://pages.cloudflare.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Built with **Eleventy (11ty)** for fast, static generation and deployed on **Cloudflare Pages**.
+A comprehensive Bible study platform featuring **5,500+ biblical entities**, interactive chapter reading, and modern UX design optimized for desktop and mobile study.
 
----
+## ✨ Key Features
 
-## Local Development
+- **📚 66 Biblical Books** organized by categories (Law, History, Poetry, Prophets, Gospels, Epistles, Apocalypse)
+- **👥 5,500+ Biblical Entities** including people, places, concepts with detailed study content
+- **📖 Interactive Chapter Reader** with live translation switching (ESV, NIV, NLT, NKJV, NASB, AMPC, WEB)
+- **💬 Commentary System** with 11 high-quality sources including Matthew Henry, JFB, and more
+- **🔍 Advanced Search** with fuzzy matching, biblical synonyms, and unified entity search
+- **🎨 24 Theme System** with automatic dark mode and accessibility features
+- **📱 PWA Support** with offline caching and native app-like experience
+- **⚡ High Performance** - 4,000+ pages generated in ~11 seconds
+
+Built with **Eleventy (11ty)** for fast, static generation and optimized for **Cloudflare Pages** deployment.
+
+## 🚀 Quick Start
 
 ```bash
-# 1) Install deps
+# Clone and install
+git clone <your-repo-url>
+cd bible-static-site
 npm install
 
-# 2) Run dev server
+# Start development server
 npm run dev
-# or build without serving
+# Server runs at http://localhost:8080
+
+# Build for production
 npm run build
 ```
 
-- Input: `src/`
-- Output: `_site/`
+**Directory Structure:**
+- **Input**: `src/` (templates, data, assets)
+- **Output**: `_site/` (generated static site)
+- **Data**: `data/source-datasets/` (large entity datasets)
+- **Scripts**: `scripts/` (build and utility scripts)
+- **Tests**: `tests/` (Selenium and Jest test suites)
 
----
+## 📋 Development Commands
 
-## Deploy to Cloudflare Pages
+### Core Development
+```bash
+# Development server with live reload
+npm run dev
+npm run dev:debug        # With debug logging
+npm run dev:port         # Custom port (3000)
 
-1. Push this repo to GitHub or GitLab.
-2. In **Cloudflare Dashboard → Pages → Create a project → Connect to Git**.
-3. Select your repo and use these settings:
-   - **Framework preset**: *Eleventy*
-   - **Build command**: `npm run build`
+# Building
+npm run build            # Standard build
+npm run build:production # Production build with optimization
+npm run build:analyze    # Build with performance analysis
+npm run build:fast       # Skip entity processing
+```
+
+### Entity Management
+```bash
+npm run entities:process  # Process entity data
+npm run entities:extract  # Extract book entities
+npm run entities:validate # Validate entity schema
+npm run entities:test     # Test key figures loading
+```
+
+### Testing & Quality
+```bash
+npm run test             # Run all tests
+npm run test:selenium    # Selenium web tests
+npm run test:entities    # Entity system tests
+npm run test:setup       # Setup test environment
+
+npm run lint             # Run all linting
+npm run lint:fix         # Fix linting issues
+npm run format           # Format code with Prettier
+```
+
+### Optimization & Analysis
+```bash
+npm run optimize         # Optimize CSS and HTML
+npm run performance:report # Generate performance report
+npm run logs:analyze     # Analyze build logs
+```
+
+## 🏗️ Project Structure
+
+```
+src/
+├── _data/                    # Data files for content generation
+│   ├── books.json           # 66 biblical books with metadata
+│   ├── categories.js        # 10 biblical categories
+│   └── entityIds.js         # Entity ID mappings
+├── _includes/               # Layouts and templates
+│   ├── layouts/            # Nunjucks layout files
+│   ├── components/         # Reusable components
+│   └── macros/             # Template macros
+├── assets/                 # Interactive components
+│   ├── data/              # Generated client-side data
+│   │   ├── entities/      # Individual entity files
+│   │   └── books/         # Book-specific entity data
+│   ├── chapter-reader.js   # Chapter reading modal
+│   ├── commentary-reader.js # Commentary system
+│   ├── search-engine.js    # Advanced search system
+│   └── theme-manager.js    # Theme system
+├── entities.njk            # Entity page generator
+├── books.njk              # Book page generator
+└── styles.css             # Main stylesheet
+
+data/source-datasets/       # Large entity datasets
+├── Bible_combined_all_expanded.with_ids.v2.json
+├── Bible_id_redirect_map.v2.json
+scripts/                    # Build and utility scripts
+tests/                      # Test suites (Selenium, Jest)
+```
+
+## 🎯 Entity System
+
+The heart of Bible Explorer is its comprehensive entity system with **5,500+ biblical entities**:
+
+### Entity Types
+- **👥 People**: Biblical characters with detailed profiles
+- **📍 Places**: Geographical locations and their significance
+- **💭 Concepts**: Theological concepts and themes
+- **🏛️ Objects**: Significant items and artifacts
+- **📅 Events**: Major biblical events and their context
+
+### Entity Features
+- **Unique URLs**: Each entity has a stable `/entities/{id}` URL
+- **Cross-References**: Entities link to related people, places, and concepts
+- **Search Integration**: All entities searchable through unified search system
+- **Book Context**: Entities show their appearances across biblical books
+- **Redirect System**: Canonical ID mapping prevents broken links
+
+### Data Processing
+```bash
+# Process entity data from source datasets
+npm run entities:process
+
+# Extract entities for specific books
+npm run entities:extract
+
+# Validate entity schema and structure
+npm run entities:validate
+```
+
+## 📖 Chapter & Commentary System
+
+### Interactive Chapter Reader
+- **Modal Interface**: Full-screen chapter reading experience
+- **7 Translations**: ESV, NIV, NLT, NKJV, NASB, AMPC, WEB
+- **Live Switching**: Change translations without page reload
+- **Mobile Optimized**: Touch-friendly controls and responsive design
+- **BibleGateway Integration**: Reliable verse fetching with fallbacks
+
+### Commentary System
+- **11 Commentary Sources**: Matthew Henry, JFB, Scofield, John Gill, and more
+- **Source-Specific URLs**: Custom formatting for each commentary provider
+- **Iframe Support**: 6 sources with embedded viewing, 4 with direct access
+- **Book Name Mapping**: Handles edge cases (Song of Songs, numbered books)
+- **Professional Fallback**: Clean UI for sources requiring external access
+
+## 🔍 Search System
+
+### Advanced Search Features
+- **Unified Search**: Books, chapters, entities, and categories in one interface
+- **Fuzzy Matching**: Find content even with typos or partial matches
+- **Biblical Synonyms**: Understands biblical language and concepts
+- **N-gram Indexing**: Fast, intelligent relevance scoring
+- **Autocomplete**: Smart suggestions as you type
+- **Performance Optimized**: Debounced queries with caching
+
+### Search Data Generation
+```bash
+# Generate search indices
+npm run search:generate
+
+# Files generated:
+# - src/assets/data/search-data.json (unified search)
+# - src/assets/data/entities-search.json (entity search)
+```
+
+## 🎨 Theme & Accessibility
+
+### Theme System
+- **24 Color Themes**: Professional color palettes for every preference
+- **Dark Mode Default**: Optimized for comfortable Bible study
+- **Automatic Detection**: Respects user's system preferences
+- **CSS Variables**: Modern theming with full browser support
+- **Cross-Component**: Consistent theming across all interactive elements
+
+### Accessibility Features
+- **ARIA Labels**: Proper screen reader support throughout
+- **Keyboard Navigation**: Full keyboard accessibility for all features
+- **Focus Management**: Clear focus indicators and logical tab order
+- **Semantic HTML**: Proper heading hierarchy and landmark regions
+- **Color Contrast**: All themes meet WCAG contrast requirements
+- **Font Controls**: User-adjustable font sizes and readability options
+
+## ⚡ Performance & Optimization
+
+### Build Performance
+- **Fast Generation**: 4,000+ pages in ~11 seconds
+- **Incremental Builds**: Only regenerate changed content during development
+- **Asset Optimization**: CSS minification, image optimization
+- **Bundle Analysis**: Detailed build reports in `build-logs/`
+
+### Runtime Performance
+- **Static First**: Minimal JavaScript for core functionality
+- **Lazy Loading**: Components load on demand
+- **Service Worker**: Offline support and caching
+- **Critical CSS**: Above-the-fold styles inlined
+- **Resource Hints**: Preload and prefetch for faster navigation
+
+## 🧪 Testing
+
+### Test Coverage
+- **Selenium Tests**: End-to-end browser testing with Python
+- **Jest Tests**: Unit tests for JavaScript components
+- **Performance Tests**: Lighthouse audits and build analysis
+- **Entity Tests**: Data validation and integrity checks
+
+### Running Tests
+```bash
+# Setup test environment (first time only)
+npm run test:setup
+
+# Run all tests
+npm run test
+
+# Specific test suites
+npm run test:selenium    # Web browser tests
+npm run test:entities    # Entity system tests
+npm run test:smoke       # Quick smoke tests
+npm run test:mobile      # Mobile-specific tests
+```
+
+### Test Categories
+- **Core Functionality**: Search, navigation, content rendering
+- **Interactive Features**: Chapter reader, commentary system, theme toggle
+- **Accessibility**: Screen reader support, keyboard navigation
+- **Mobile Support**: Touch interactions, responsive layouts
+- **Performance**: Load times, bundle sizes, Lighthouse scores
+
+## 🚀 Deployment
+
+### Cloudflare Pages Setup
+1. **Connect Repository**: Link your Git repository to Cloudflare Pages
+2. **Build Configuration**:
+   - **Framework**: Eleventy
+   - **Build command**: `npm run build:production`
    - **Output directory**: `_site`
-4. Click **Save and Deploy**.
-5. You’ll get a URL like `https://your-project.pages.dev`.
-6. (Optional) **Custom domain** → Pages → *Your Project* → **Custom domains** → add your domain.
+   - **Node version**: 18 or higher
+3. **Environment Variables**: None required for basic deployment
+4. **Custom Domain**: Optional - configure in Cloudflare Pages dashboard
+
+### Build Optimization for Production
+```bash
+# Full production build with optimization
+npm run build:production
+
+# Includes:
+# - Entity processing
+# - Search data generation
+# - HTML/CSS minification
+# - Performance analysis
+# - Asset optimization
+```
+
+## 🤝 Contributing
+
+### Development Setup
+1. **Fork and Clone**: Fork the repository and clone locally
+2. **Install Dependencies**: `npm install`
+3. **Setup Tests**: `npm run test:setup`
+4. **Start Development**: `npm run dev`
+
+### Code Standards
+- **ESLint**: JavaScript code quality (`npm run lint:js`)
+- **Stylelint**: CSS standards (`npm run lint:css`)
+- **Prettier**: Code formatting (`npm run format`)
+- **Pre-commit**: Validation runs automatically (`npm run precommit`)
+
+### Content Editing
+- **Books**: Edit `src/_data/books.json` for book metadata and chapter summaries
+- **Entities**: Entity data managed through `scripts/entity-processor.js`
+- **Themes**: Add themes in `src/assets/theme-manager.js`
+- **Search**: Search data auto-generated from content changes
+
+### Pull Request Process
+1. **Create Branch**: Feature branches from `main`
+2. **Run Tests**: Ensure all tests pass (`npm run test`)
+3. **Check Quality**: Run linting and formatting (`npm run lint:fix`)
+4. **Build Test**: Verify production build works (`npm run build:production`)
+5. **Submit PR**: Clear description of changes and testing performed
+
+## 📚 Documentation
+
+### Available Guides
+- **[CLAUDE.md](CLAUDE.md)**: AI assistant instructions and project context
+- **[Current Context](docs/archive/CURRENT_CONTEXT.md)**: Project status and recent changes
+- **[Characters and Entities](CharactersAndEntities.md)**: Entity system implementation details
+
+### Technical Documentation
+- **Architecture**: See `CLAUDE.md` for detailed technical architecture
+- **API Integration**: Chapter reader and commentary system documentation
+- **Performance**: Build optimization and caching strategies
+- **Entity System**: Data processing and search integration
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
-## Editing Content
-
-- All books are defined in `src/_data/books.json`.
-- Each book has a `chapterSummaries` object with chapter numbers as keys.
-- Fill in or edit summaries as you go. You can start with the provided samples (Genesis 1–3, Matthew 1–3, Romans 1–2).
-
-Tip: If you'd like markdown-rich summaries, you can put markdown in the summary strings—they'll render nicely.
-
----
-
-## Key Features
-
-### 📖 Chapter Reader
-- **Interactive Reading**: Modal-based full chapter experience with BibleGateway integration
-- **Live Translation Switching**: Change Bible versions instantly without page refresh
-- **7 Translations**: ESV, NIV, NLT, NKJV, NASB, AMPC, WEB support with proper URL generation
-- **Mobile Optimized**: Maximized viewport space with responsive controls
-- **Clean Interface**: Single "Read Chapter" button per chapter, no duplicate UI elements
-
-### 👥 Character Studies  
-- **229 Biblical Characters**: Comprehensive profiles with detailed analysis
-- **Professional Layout**: Clean, card-based design optimized for readability
-- **Gospel Connections**: How each character points to Christ with theological insights
-- **Responsive Design**: Mobile-friendly with proper spacing and typography
-- **Study Resources**: Integration with StudyandObey.com character studies
-
-### 🎨 Modern UX Design
-- **Professional Styling**: Clean, minimal interface without excessive decorations
-- **24 Theme System**: Complete color theme support with automatic dark mode
-- **Mobile First**: Responsive design optimized for all device sizes
-- **Fast Performance**: Static generation with optimized loading times
-- **Accessibility**: Proper ARIA labels, keyboard navigation, and focus states
-
-### 📜 Scripture Widget
-- **Quick References**: Hover/tap Scripture references for instant verse lookup
-- **Multi-Translation**: Supports all available Bible versions
-- **Smart Integration**: Automatic enhancement of scripture references
-- **Theme Compatible**: Matches site theme and color scheme
-
----
-
-## Technical Details
-
-### Architecture
-- **Static Generation**: Built with Eleventy (11ty) for fast, SEO-friendly pages
-- **Data-Driven**: All content managed through JSON data files for easy maintenance
-- **Component-Based**: Modular JavaScript components for interactive features
-- **CSS Custom Properties**: Modern CSS with full theme system integration
-- **Responsive Images**: Optimized assets with proper loading strategies
-
-### Performance
-- **Build Analysis**: Comprehensive logging system with performance metrics
-- **Optimized Bundle**: Minimal JavaScript footprint with lazy loading
-- **CDN Ready**: Designed for Cloudflare Pages with edge optimization
-- **Fast Builds**: Efficient generation of 300+ pages in under 3 seconds
-
-### Content Management
-- **66 Biblical Books**: Complete metadata with chapter-by-chapter summaries
-- **229 Character Profiles**: Detailed study content with gospel connections  
-- **10 Categories**: Organized scripture sections (Law, Prophets, Gospels, etc.)
-- **Commentary Integration**: Direct links to Enduring Word commentary
-- **Translation Support**: Multiple Bible versions with proper API integration
-
----
-
-## Documentation
-
-- **[Chapter Reader Guide](docs/CHAPTER_READER_GUIDE.md)**: Complete chapter reader documentation
-- **[Scripture Widget Guide](docs/SCRIPTURE_WIDGET_GUIDE.md)**: Scripture reference system
-- **[Developer Guide](docs/DEVELOPER_GUIDE.md)**: Technical implementation details
-- **[Performance Guide](docs/PERFORMANCE.md)**: Optimization and build analysis
+**Bible Explorer** - Making Scripture study accessible, interactive, and engaging for modern Bible students.

@@ -1,0 +1,22 @@
+{
+  "name": "Tirzah (daughter of Zelophehad)",
+  "type": "person",
+  "references": [
+    "Numbers 27:1; 36:11",
+    "Joshua 17:3–6"
+  ],
+  "blurb": "Youngest named sister; later a city bears this name.",
+  "category": "narrative",
+  "id": "p.tirzah.daughter-of-zelophehad--7eadf134",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      27
+    ],
+    "Joshua": [
+      17
+    ]
+  }
+}

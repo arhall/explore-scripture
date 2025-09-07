@@ -1,0 +1,18 @@
+{
+  "name": "Banquet 8: Provincial Purim (14 Adar)",
+  "type": "entity",
+  "references": [
+    "Esther 9:17"
+  ],
+  "blurb": "Remembrance codified in countryside rhythm.",
+  "category": "festival",
+  "id": "e.banquet-8-provincial-purim.14-adar--8ec297e5",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      9
+    ]
+  }
+}

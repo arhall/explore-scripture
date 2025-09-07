@@ -1,0 +1,18 @@
+{
+  "name": "Camp of Ephraim (west)",
+  "type": "group",
+  "references": [
+    "Numbers 2:18–24"
+  ],
+  "blurb": "Westward standard led by Ephraim with Manasseh and Benjamin.",
+  "category": "narrative",
+  "id": "g.camp-of-ephraim.west--d8dfb65a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      2
+    ]
+  }
+}

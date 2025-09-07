@@ -1,0 +1,49 @@
+{
+  "book": "1 Samuel",
+  "chapter": 2,
+  "entity_count": 6,
+  "entities": [
+    {
+      "id": "p.hannah--06cd303e",
+      "name": "Hannah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.hannahs-song--9015d92a",
+      "name": "Hannah’s song",
+      "type": "entity",
+      "role": "poetry",
+      "refs_count": 1
+    },
+    {
+      "id": "p.eli-the-priest--a0684a21",
+      "name": "Eli the priest",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.hophni--4dad775a",
+      "name": "Hophni",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.phinehas.son-of-eli--486ef571",
+      "name": "Phinehas (son of Eli)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.man-of-god-to-eli--197c56ef",
+      "name": "Man of God to Eli",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

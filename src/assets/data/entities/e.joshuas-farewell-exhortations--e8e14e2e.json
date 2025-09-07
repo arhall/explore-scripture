@@ -1,0 +1,18 @@
+{
+  "name": "Joshua’s farewell exhortations",
+  "type": "entity",
+  "references": [
+    "Joshua 23"
+  ],
+  "blurb": "Calls Israel to cling to the LORD, avoid intermarriage with remaining nations, and to love the LORD—holy perseverance is the strategy for settled life.",
+  "category": "ethics",
+  "id": "e.joshuas-farewell-exhortations--e8e14e2e",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joshua": [
+      23
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Daughter of Herodias (Salome)",
+  "type": "person",
+  "category": "royal",
+  "references": [
+    "Matt 14:6–11",
+    "Mark 6:22–28"
+  ],
+  "blurb": "Dance and demand catalyze unjust execution.",
+  "aka": [],
+  "id": "p.daughter-of-herodias-salome--c136908c",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Mark",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      14
+    ],
+    "Mark": [
+      6
+    ]
+  }
+}

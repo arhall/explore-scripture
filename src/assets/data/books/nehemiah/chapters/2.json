@@ -1,0 +1,56 @@
+{
+  "book": "Nehemiah",
+  "chapter": 2,
+  "entity_count": 7,
+  "entities": [
+    {
+      "id": "t.artaxerxes-i-king-of-persia.commission--4b52ff5e",
+      "name": "Artaxerxes I king of Persia (commission)",
+      "type": "title",
+      "role": "record",
+      "refs_count": 1
+    },
+    {
+      "id": "e.nehemiahs-midnight-inspection--eb4ab836",
+      "name": "Nehemiah’s midnight inspection",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1
+    },
+    {
+      "id": "e.community-rally-let-us-rise-up-and-build--ee65dc1b",
+      "name": "Community rally: ‘Let us rise up and build’",
+      "type": "entity",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.opposition-named-early-sanballat-tobiah-geshem--6be29c67",
+      "name": "Opposition named early: Sanballat, Tobiah, Geshem",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.sanballat-the-horonite--a9c9d5b6",
+      "name": "Sanballat the Horonite",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.tobiah-the-ammonite--e1dae020",
+      "name": "Tobiah the Ammonite",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.geshem-the-arab.gashmu--c0b503ed",
+      "name": "Geshem (Gashmu) the Arab",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

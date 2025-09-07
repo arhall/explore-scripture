@@ -1,0 +1,25 @@
+{
+  "name": "Shaul (son of a Canaanite woman)",
+  "type": "person",
+  "references": [
+    "Genesis 46:10",
+    "Exodus 6:15"
+  ],
+  "blurb": "Son of Simeon with a noted maternal descriptor.",
+  "category": "genealogy",
+  "cross_references": [
+    "Genesis 46:10"
+  ],
+  "id": "p.shaul.son-of-a-canaanite-woman.gene-46-10--f81f8022",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      46
+    ],
+    "Exodus": [
+      6
+    ]
+  }
+}

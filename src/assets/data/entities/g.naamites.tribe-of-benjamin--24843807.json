@@ -1,0 +1,18 @@
+{
+  "name": "Naamites (tribe of Benjamin)",
+  "type": "group",
+  "references": [
+    "Numbers 26"
+  ],
+  "blurb": "Clan of Benjamin counted in the second census.",
+  "category": "genealogy",
+  "id": "g.naamites.tribe-of-benjamin--24843807",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      26
+    ]
+  }
+}

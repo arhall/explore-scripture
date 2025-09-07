@@ -1,0 +1,21 @@
+{
+  "name": "Book of Consolation (Jeremiah 30–33)",
+  "type": "entity",
+  "references": [
+    "Jeremiah 30–33"
+  ],
+  "blurb": "A cluster of salvation oracles: new covenant, restored Zion, Branch of David, and joyful city—judgment serves joy.",
+  "category": "gospel",
+  "id": "e.book-of-consolation.jeremiah-30-33--f322b9f0",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      30,
+      31,
+      32,
+      33
+    ]
+  }
+}

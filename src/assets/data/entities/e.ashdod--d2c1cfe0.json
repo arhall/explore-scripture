@@ -1,0 +1,18 @@
+{
+  "name": "Ashdod",
+  "type": "entity",
+  "references": [
+    "1 Samuel 5:1–7"
+  ],
+  "blurb": "City where Dagon falls before the ark—holy rivalry ends with broken idol parts.",
+  "category": "place",
+  "id": "e.ashdod--d2c1cfe0",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      5
+    ]
+  }
+}

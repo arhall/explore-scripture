@@ -1,0 +1,27 @@
+{
+  "name": "Sign of Jonah",
+  "type": "figure",
+  "category": "controversy",
+  "references": [
+    "Luke 11:29–32"
+  ],
+  "synoptic_parallels": [
+    "Matt 12:38–42",
+    "Matt 16:4"
+  ],
+  "aka": [],
+  "id": "f.sign-of-jonah--8229d552",
+  "source_book": "Luke",
+  "source_books": [
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Luke": [
+      11
+    ]
+  }
+}

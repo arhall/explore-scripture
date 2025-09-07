@@ -1,0 +1,17 @@
+{
+  "name": "Alexander the coppersmith",
+  "type": "person",
+  "category": "network",
+  "references": [
+    "2 Tim 4:9-22"
+  ],
+  "aka": [
+    "Alexander"
+  ],
+  "id": "p.alexander-the-coppersmith--8889e958",
+  "book_references": {
+    "2 Timothy": [
+      4
+    ]
+  }
+}

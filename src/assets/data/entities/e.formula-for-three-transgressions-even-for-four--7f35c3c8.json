@@ -1,0 +1,19 @@
+{
+  "name": "Formula: For three transgressions, even for four",
+  "type": "entity",
+  "references": [
+    "Amos 1–2"
+  ],
+  "blurb": "Numerical proverb pattern escalates guilt and attention—rhetoric that hooks the audience before turning inward.",
+  "category": "literary",
+  "id": "e.formula-for-three-transgressions-even-for-four--7f35c3c8",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Amos": [
+      1,
+      2
+    ]
+  }
+}

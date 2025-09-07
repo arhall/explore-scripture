@@ -1,0 +1,20 @@
+{
+  "name": "Traditions (written)",
+  "type": "figure",
+  "category": "tradition",
+  "references": [
+    "2 Thess 2:15"
+  ],
+  "relations": {
+    "paired_with": "Traditions (oral)"
+  },
+  "aka": [
+    "paradosis (written)"
+  ],
+  "id": "f.traditions-written--2121de9a",
+  "book_references": {
+    "2 Thessalonians": [
+      2
+    ]
+  }
+}

@@ -1,0 +1,625 @@
+{
+  "book": "Joshua",
+  "slug": "joshua",
+  "entity_count": 57,
+  "key_figures": [
+    {
+      "id": "p.joshua--65483c95",
+      "name": "Joshua",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.phinehas--accbe6db",
+      "name": "Phinehas",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.caleb-son-of-jephunneh--2d6c16cf",
+      "name": "Caleb son of Jephunneh",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.mahlah.daughter-of-zelophehad--55fe9045",
+      "name": "Mahlah (daughter of Zelophehad)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.hoglah--0f5d4902",
+      "name": "Hoglah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.tirzah.daughter-of-zelophehad--7eadf134",
+      "name": "Tirzah (daughter of Zelophehad)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.achan-son-of-carmi.achar--c148b71b",
+      "name": "Achan (Achar) son of Carmi",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.achsah-daughter-of-caleb--b8ac6927",
+      "name": "Achsah daughter of Caleb",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.othniel-son-of-kenaz--4ffdb645",
+      "name": "Othniel son of Kenaz",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "f.commander-of-the-lords-army.man-with-drawn-sword--cc4ebdc0",
+      "name": "Commander of the LORD’s army (man with drawn sword)",
+      "type": "figure",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 8
+    },
+    {
+      "id": "g.two-unnamed-spies--85a9369f",
+      "name": "Two unnamed spies",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.makkedah-libnah-lachish-eglon-hebron-debir.southern-captures--03da8d0d",
+      "name": "Makkedah, Libnah, Lachish, Eglon, Hebron, Debir (southern captures)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.reuben-gad-and-half-manasseh.transjordan-inheritance--c585d7ae",
+      "name": "Reuben, Gad, and half-Manasseh (Transjordan inheritance)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.joseph-tribes-request-more-land--f2f1fccd",
+      "name": "Joseph tribes request more land",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.the-seven-remaining-tribes-allotted-by-survey--bffbec8b",
+      "name": "The seven remaining tribes allotted by survey",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.heads-of-fathers-houses.leaders--f3801db8",
+      "name": "Heads of fathers’ houses (leaders)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "t.adoni-zedek-king-of-jerusalem--a0bb4341",
+      "name": "Adoni-Zedek king of Jerusalem",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.hoham-king-of-hebron--06fbd855",
+      "name": "Hoham king of Hebron",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.piram-king-of-jarmuth--c695932a",
+      "name": "Piram king of Jarmuth",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.japhia-king-of-lachish--082ca4a9",
+      "name": "Japhia king of Lachish",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 4
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "p.joshua--65483c95",
+      "name": "Joshua",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.phinehas--accbe6db",
+      "name": "Phinehas",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.caleb-son-of-jephunneh--2d6c16cf",
+      "name": "Caleb son of Jephunneh",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.mahlah.daughter-of-zelophehad--55fe9045",
+      "name": "Mahlah (daughter of Zelophehad)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.hoglah--0f5d4902",
+      "name": "Hoglah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.tirzah.daughter-of-zelophehad--7eadf134",
+      "name": "Tirzah (daughter of Zelophehad)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.achan-son-of-carmi.achar--c148b71b",
+      "name": "Achan (Achar) son of Carmi",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.achsah-daughter-of-caleb--b8ac6927",
+      "name": "Achsah daughter of Caleb",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.othniel-son-of-kenaz--4ffdb645",
+      "name": "Othniel son of Kenaz",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "f.commander-of-the-lords-army.man-with-drawn-sword--cc4ebdc0",
+      "name": "Commander of the LORD’s army (man with drawn sword)",
+      "type": "figure",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 8
+    },
+    {
+      "id": "g.two-unnamed-spies--85a9369f",
+      "name": "Two unnamed spies",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.makkedah-libnah-lachish-eglon-hebron-debir.southern-captures--03da8d0d",
+      "name": "Makkedah, Libnah, Lachish, Eglon, Hebron, Debir (southern captures)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.reuben-gad-and-half-manasseh.transjordan-inheritance--c585d7ae",
+      "name": "Reuben, Gad, and half-Manasseh (Transjordan inheritance)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.joseph-tribes-request-more-land--f2f1fccd",
+      "name": "Joseph tribes request more land",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.the-seven-remaining-tribes-allotted-by-survey--bffbec8b",
+      "name": "The seven remaining tribes allotted by survey",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.heads-of-fathers-houses.leaders--f3801db8",
+      "name": "Heads of fathers’ houses (leaders)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "t.adoni-zedek-king-of-jerusalem--a0bb4341",
+      "name": "Adoni-Zedek king of Jerusalem",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.hoham-king-of-hebron--06fbd855",
+      "name": "Hoham king of Hebron",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.piram-king-of-jarmuth--c695932a",
+      "name": "Piram king of Jarmuth",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.japhia-king-of-lachish--082ca4a9",
+      "name": "Japhia king of Lachish",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.debir-king-of-eglon--54f158fd",
+      "name": "Debir king of Eglon",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.jabin-king-of-hazor--801fbd73",
+      "name": "Jabin king of Hazor",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "e.ai.city--580f3aea",
+      "name": "Ai (city)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "e.crossing-of-the-jordan.waters-halted-at-adam--ce0ada47",
+      "name": "Crossing of the Jordan (waters halted at Adam)",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.twelve-memorial-stones-at-gilgal--b05a86eb",
+      "name": "Twelve memorial stones at Gilgal",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.circumcision-at-gilgal.second-time--ba828a6c",
+      "name": "Circumcision at Gilgal (second time)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.passover-kept-at-gilgal--24aeeeec",
+      "name": "Passover kept at Gilgal",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.jericho.city--d8b856fd",
+      "name": "Jericho (city)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.altar-on-mount-ebal-and-covenant-reading--50d9bffe",
+      "name": "Altar on Mount Ebal and covenant reading",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.sun-and-moon-stand-still.gibeon-aijalon--c1154b82",
+      "name": "Sun and moon stand still (Gibeon/Aijalon)",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.hazor.city--1d0d46e2",
+      "name": "Hazor (city)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.list-of-thirty-one-kings-defeated-west-of-the-jordan--4cdc72fa",
+      "name": "List of thirty-one kings defeated west of the Jordan",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.tribe-of-judah-allotment.entity--1c46fabf",
+      "name": "Tribe of Judah allotment (entity)",
+      "type": "entity",
+      "role": "allotment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.ephraim-allotment.entity--18a8fd9c",
+      "name": "Ephraim allotment (entity)",
+      "type": "entity",
+      "role": "allotment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.manasseh-allotment.west--c9585f4a",
+      "name": "Manasseh allotment (west) (entity)",
+      "type": "entity",
+      "role": "allotment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.tabernacle-set-up-at-shiloh--3870a4bb",
+      "name": "Tabernacle set up at Shiloh",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.benjamin-allotment.entity--8dafe509",
+      "name": "Benjamin allotment (entity)",
+      "type": "entity",
+      "role": "allotment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.simeon-allotment.within-judah--5d97932e",
+      "name": "Simeon allotment (within Judah) (entity)",
+      "type": "entity",
+      "role": "allotment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.zebulun-allotment.entity--0d740261",
+      "name": "Zebulun allotment (entity)",
+      "type": "entity",
+      "role": "allotment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.issachar-allotment.entity--9d252735",
+      "name": "Issachar allotment (entity)",
+      "type": "entity",
+      "role": "allotment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.asher-allotment.entity--766958f9",
+      "name": "Asher allotment (entity)",
+      "type": "entity",
+      "role": "allotment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.naphtali-allotment.entity--76e60018",
+      "name": "Naphtali allotment (entity)",
+      "type": "entity",
+      "role": "allotment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.dan-allotment.entity--645e2fc2",
+      "name": "Dan allotment (entity)",
+      "type": "entity",
+      "role": "allotment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.cities-of-refuge-designated--25c67794",
+      "name": "Cities of refuge designated",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.kedesh-in-galilee.city-of-refuge--527f90ad",
+      "name": "Kedesh in Galilee (city of refuge)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.shechem.city-of-refuge--bc3b3b05",
+      "name": "Shechem (city of refuge)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.hebron.city-of-refuge--f769bb31",
+      "name": "Hebron (city of refuge)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.bezer.city-of-refuge--b6b3afcc",
+      "name": "Bezer (city of refuge)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.ramoth-in-gilead.city-of-refuge--f6805f75",
+      "name": "Ramoth in Gilead (city of refuge)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.golan-in-bashan.city-of-refuge--bd68182c",
+      "name": "Golan in Bashan (city of refuge)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.levitical-cities-assigned.48-total--4be5d0fb",
+      "name": "Levitical cities assigned (48 total)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.the-altar-witness-by-the-jordan--e0ff55a7",
+      "name": "The altar ‘Witness’ by the Jordan",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.joshuas-farewell-exhortations--e8e14e2e",
+      "name": "Joshua’s farewell exhortations",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.covenant-renewal-at-shechem-and-the-great-stone-witness--3f899b05",
+      "name": "Covenant renewal at Shechem and the great stone witness",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.bones-of-joseph-buried-at-shechem--0b942c70",
+      "name": "Bones of Joseph buried at Shechem",
+      "type": "entity",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.death-of-joshua.age-110--52107512",
+      "name": "Death of Joshua (age 110)",
+      "type": "entity",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.death-of-eleazar-son-of-aaron--8b5f91a1",
+      "name": "Death of Eleazar son of Aaron",
+      "type": "entity",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

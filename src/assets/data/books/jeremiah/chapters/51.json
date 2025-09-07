@@ -1,0 +1,28 @@
+{
+  "book": "Jeremiah",
+  "chapter": 51,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "g.babylon--bb4be558",
+      "name": "Babylon",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 2
+    },
+    {
+      "id": "p.seraiah-son-of-neriah.quartermaster-official--d273d488",
+      "name": "Seraiah son of Neriah (quartermaster/official)",
+      "type": "person",
+      "role": "official",
+      "refs_count": 1
+    },
+    {
+      "id": "e.fall-of-babylon.jeremiah--139c5011",
+      "name": "Fall of Babylon (Jeremiah)",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1
+    }
+  ]
+}

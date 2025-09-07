@@ -1,0 +1,18 @@
+{
+  "name": "Gog of the land of Magog",
+  "type": "person",
+  "references": [
+    "Ezekiel 38:1–3"
+  ],
+  "blurb": "Archetypal invader from the far north; a cipher for final hostility gathered against God’s people.",
+  "category": "apocalypse",
+  "id": "p.gog-of-the-land-of-magog--4f1eb8e2",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      38
+    ]
+  }
+}

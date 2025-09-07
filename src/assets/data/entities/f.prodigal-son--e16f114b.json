@@ -1,0 +1,24 @@
+{
+  "name": "Prodigal Son",
+  "type": "figure",
+  "aka": [],
+  "category": "parable",
+  "references": [
+    "Luke 15:11–32"
+  ],
+  "unique_to": "Luke",
+  "id": "f.prodigal-son--e16f114b",
+  "source_book": "Luke",
+  "source_books": [
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Luke": [
+      15
+    ]
+  }
+}

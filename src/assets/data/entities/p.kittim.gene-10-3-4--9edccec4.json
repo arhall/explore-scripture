@@ -1,0 +1,26 @@
+{
+  "name": "Kittim",
+  "type": "person",
+  "references": [
+    "Genesis 10:3–4"
+  ],
+  "blurb": "Descendant of Javan; part of the Japhethite branch associated with maritime and northern peoples.",
+  "relations": {
+    "parents": [
+      "Javan"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "Daniel 11:30"
+  ],
+  "id": "p.kittim.gene-10-3-4--9edccec4",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

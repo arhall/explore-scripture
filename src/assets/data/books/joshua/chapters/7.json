@@ -1,0 +1,21 @@
+{
+  "book": "Joshua",
+  "chapter": 7,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "p.achan-son-of-carmi.achar--c148b71b",
+      "name": "Achan (Achar) son of Carmi",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.ai.city--580f3aea",
+      "name": "Ai (city)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    }
+  ]
+}

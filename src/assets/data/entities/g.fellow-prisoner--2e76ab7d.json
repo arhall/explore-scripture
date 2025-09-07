@@ -1,0 +1,15 @@
+{
+  "name": "fellow prisoner",
+  "type": "group",
+  "category": "status",
+  "references": [
+    "Philem 23"
+  ],
+  "aka": [],
+  "id": "g.fellow-prisoner--2e76ab7d",
+  "book_references": {
+    "Philemon": [
+      23
+    ]
+  }
+}

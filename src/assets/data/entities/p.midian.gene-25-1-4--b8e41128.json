@@ -1,0 +1,34 @@
+{
+  "name": "Midian",
+  "type": "person",
+  "references": [
+    "Genesis 25:1–4"
+  ],
+  "blurb": "Son of Keturah and Abraham; associated with peoples to Israel’s southeast and east.",
+  "relations": {
+    "parents": [
+      "Abram (Abraham)",
+      "Keturah"
+    ],
+    "children": [
+      "Ephah",
+      "Epher",
+      "Hanoch",
+      "Abida",
+      "Eldaah"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "1 Chronicles 1:32–33"
+  ],
+  "id": "p.midian.gene-25-1-4--b8e41128",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      25
+    ]
+  }
+}

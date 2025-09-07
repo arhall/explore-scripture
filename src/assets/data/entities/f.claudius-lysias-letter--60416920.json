@@ -1,0 +1,23 @@
+{
+  "name": "Claudius Lysias (letter)",
+  "type": "figure",
+  "category": "letter",
+  "references": [
+    "Acts 23:26–30"
+  ],
+  "aka": [],
+  "id": "f.claudius-lysias-letter--60416920",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      23
+    ]
+  }
+}

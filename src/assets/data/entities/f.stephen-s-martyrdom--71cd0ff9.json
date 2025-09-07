@@ -1,0 +1,23 @@
+{
+  "name": "Stephen’s martyrdom",
+  "type": "figure",
+  "category": "martyrdom",
+  "references": [
+    "Acts 7:54–60"
+  ],
+  "aka": [],
+  "id": "f.stephen-s-martyrdom--71cd0ff9",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      7
+    ]
+  }
+}

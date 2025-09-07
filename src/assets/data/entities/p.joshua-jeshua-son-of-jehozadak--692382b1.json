@@ -1,0 +1,21 @@
+{
+  "id": "p.joshua-jeshua-son-of-jehozadak--692382b1",
+  "name": "Joshua (Jeshua) son of Jehozadak",
+  "type": "person",
+  "references": [
+    "Hag 1:1",
+    "Hag 1:14",
+    "Hag 2:2"
+  ],
+  "category": "high-priest",
+  "blurb": "High priest partnering with Zerubbabel. Central to ritual purity and the legitimation of the rebuilt Temple.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      1,
+      2
+    ]
+  }
+}

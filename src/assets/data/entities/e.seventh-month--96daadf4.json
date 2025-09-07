@@ -1,0 +1,18 @@
+{
+  "id": "e.seventh-month--96daadf4",
+  "name": "Seventh month",
+  "type": "entity",
+  "references": [
+    "Hag 2:1"
+  ],
+  "category": "calendar",
+  "blurb": "Timestamp of Oracle #2; encouragement during Sukkot season context.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      2
+    ]
+  }
+}

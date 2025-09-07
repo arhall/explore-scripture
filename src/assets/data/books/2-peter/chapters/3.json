@@ -1,0 +1,77 @@
+{
+  "book": "2 Peter",
+  "chapter": 3,
+  "entity_count": 37,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 24
+    },
+    {
+      "id": "f.be-diligent-to-be-found-without-spot-or-blemish-and-at-peace--643e9dc5",
+      "name": "be diligent to be found without spot or blemish and at peace",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1
+    },
+    {
+      "id": "p.our-beloved-brother-paul-also-wrote--8ccf6973",
+      "name": "our beloved brother Paul also wrote",
+      "type": "person",
+      "role": "exhortation",
+      "refs_count": 1
+    },
+    {
+      "id": "f.false-teacher-vice-index--5e27e673",
+      "name": "False-teacher vice index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.day-of-the-lord-like-a-thief--aa284dde",
+      "name": "Day of the Lord like a thief",
+      "type": "figure",
+      "role": "parousia",
+      "refs_count": 1
+    },
+    {
+      "id": "f.remember-predictions-of-the-holy-prophets--409e1fcf",
+      "name": "remember predictions of the holy prophets",
+      "type": "figure",
+      "role": "tradition",
+      "refs_count": 1
+    },
+    {
+      "id": "f.the-lord-is-patient-not-wishing-any-to-perish--93281429",
+      "name": "the Lord is patient not wishing any to perish",
+      "type": "figure",
+      "role": "parousia",
+      "refs_count": 1
+    },
+    {
+      "id": "f.count-the-patience-as-salvation--e522fb36",
+      "name": "count the patience as salvation",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1
+    },
+    {
+      "id": "f.earth-formed-out-of-water-and-through-water--85ff65a2",
+      "name": "earth formed out of water and through water",
+      "type": "figure",
+      "role": "opponent",
+      "refs_count": 1
+    }
+  ]
+}

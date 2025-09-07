@@ -1,0 +1,20 @@
+{
+  "name": "Restrainer (masculine: he who restrains)",
+  "type": "figure",
+  "category": "restrainer",
+  "references": [
+    "2 Thess 2:7"
+  ],
+  "relations": {
+    "paired_with": "Restrainer (neuter: what restrains)"
+  },
+  "aka": [
+    "Restrainer (who)"
+  ],
+  "id": "f.restrainer-masculine-he-who-restrains--ceb85965",
+  "book_references": {
+    "2 Thessalonians": [
+      2
+    ]
+  }
+}

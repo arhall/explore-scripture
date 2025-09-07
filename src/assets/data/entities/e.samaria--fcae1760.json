@@ -1,0 +1,36 @@
+{
+  "name": "Samaria",
+  "type": "entity",
+  "references": [
+    "Hosea 10:7",
+    "Amos 3:9; 6:1",
+    "Obadiah 1:19",
+    "Luke 9:52–56",
+    "Luke 17:11"
+  ],
+  "blurb": "Capital city, cult center.",
+  "category": "city",
+  "id": "e.samaria--fcae1760",
+  "source_testaments": [
+    "OT"
+  ],
+  "source_books": [
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "book_references": {
+    "Hosea": [
+      10
+    ],
+    "Amos": [
+      3
+    ],
+    "Obadiah": [
+      1
+    ],
+    "Luke": [
+      9,
+      17
+    ]
+  }
+}

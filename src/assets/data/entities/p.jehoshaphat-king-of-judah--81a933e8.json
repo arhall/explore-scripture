@@ -1,0 +1,21 @@
+{
+  "name": "Jehoshaphat king of Judah",
+  "type": "person",
+  "references": [
+    "2 Chronicles 17–20"
+  ],
+  "blurb": "Models teaching leadership: sends Levites with the book, reforms justice, but entangles with Ahab; learns to seek the LORD in crisis worship.",
+  "category": "narrative",
+  "id": "p.jehoshaphat-king-of-judah--81a933e8",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "2 Chronicles": [
+      17,
+      18,
+      19,
+      20
+    ]
+  }
+}

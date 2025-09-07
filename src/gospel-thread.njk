@@ -19,18 +19,36 @@ permalink: /gospel-thread/
     </blockquote>
     <cite>— Luke 24:27</cite>
   </div>
+  
+  <!-- Section Navigation -->
+  <div class="gospel-navigation">
+    <h3>Navigate to Section:</h3>
+    <div class="section-links">
+      <a href="#core-themes" class="section-link">Core Themes</a>
+      <a href="#progressive-revelation" class="section-link">Progressive Revelation</a>
+      <a href="#types-shadows" class="section-link">Types & Shadows</a>
+      <a href="#gospel-books" class="section-link">Gospel by Book</a>
+      <a href="#gospel-heart" class="section-link">Heart of the Gospel</a>
+    </div>
+  </div>
 </div>
 
-<div class="gospel-themes-section">
-  <h2>Core Gospel Themes</h2>
+<div class="gospel-themes-section" id="core-themes">
+  <div class="section-header-with-anchor">
+    <h2>Core Gospel Themes</h2>
+    <a href="#core-themes" class="anchor-link" aria-label="Link to Core Gospel Themes">#</a>
+  </div>
   <p class="section-description">
     Six foundational themes that weave through Scripture, all finding their fulfillment in Jesus Christ.
   </p>
   
   <div class="gospel-themes-grid">
     {% for themeId, theme in gospelThreads.coreThemes %}
-      <div class="gospel-theme-card" data-theme="{{ themeId }}">
-        <h3>{{ theme.name }}</h3>
+      <div class="gospel-theme-card" data-theme="{{ themeId }}" id="theme-{{ themeId }}">
+        <div class="theme-header">
+          <h3>{{ theme.name }}</h3>
+          <a href="#theme-{{ themeId }}" class="theme-anchor-link" aria-label="Link to {{ theme.name }}">#</a>
+        </div>
         <p class="theme-description">{{ theme.description }}</p>
         <div class="theme-connection">
           <strong>Gospel Connection:</strong>
@@ -49,8 +67,11 @@ permalink: /gospel-thread/
   </div>
 </div>
 
-<div class="progressive-revelation-section">
-  <h2>Progressive Revelation</h2>
+<div class="progressive-revelation-section" id="progressive-revelation">
+  <div class="section-header-with-anchor">
+    <h2>Progressive Revelation</h2>
+    <a href="#progressive-revelation" class="anchor-link" aria-label="Link to Progressive Revelation">#</a>
+  </div>
   <p class="section-description">
     See how God gradually revealed His plan of salvation throughout biblical history, 
     with each period building toward the ultimate revelation in Jesus Christ.
@@ -58,10 +79,14 @@ permalink: /gospel-thread/
   
   <div class="revelation-timeline">
     {% for period in gospelThreads.progressiveRevelation %}
-      <div class="timeline-item">
+      {% set periodSlug = period.period | lower | replace(" ", "-") | replace(".", "") %}
+      <div class="timeline-item" id="period-{{ periodSlug }}">
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <h3>{{ period.period }}</h3>
+          <div class="timeline-header">
+            <h3>{{ period.period }}</h3>
+            <a href="#period-{{ periodSlug }}" class="timeline-anchor-link" aria-label="Link to {{ period.period }}">#</a>
+          </div>
           <div class="timeline-books">
             {% for book in period.books %}
               <span class="timeline-book">{{ book }}</span>
@@ -78,8 +103,11 @@ permalink: /gospel-thread/
   </div>
 </div>
 
-<div class="christ-types-section">
-  <h2>Types and Shadows of Christ</h2>
+<div class="christ-types-section" id="types-shadows">
+  <div class="section-header-with-anchor">
+    <h2>Types and Shadows of Christ</h2>
+    <a href="#types-shadows" class="anchor-link" aria-label="Link to Types and Shadows of Christ">#</a>
+  </div>
   <p class="section-description">
     Throughout the Old Testament, God provided pictures and patterns that find their 
     perfect fulfillment in Jesus Christ.
@@ -106,8 +134,11 @@ permalink: /gospel-thread/
   </div>
 </div>
 
-<div class="gospel-books-section">
-  <h2>Gospel Connections by Book</h2>
+<div class="gospel-books-section" id="gospel-books">
+  <div class="section-header-with-anchor">
+    <h2>Gospel Connections by Book</h2>
+    <a href="#gospel-books" class="anchor-link" aria-label="Link to Gospel Connections by Book">#</a>
+  </div>
   <p class="section-description">
     Explore how each book of the Bible contributes to the grand narrative of redemption.
   </p>
@@ -136,9 +167,12 @@ permalink: /gospel-thread/
   </div>
 </div>
 
-<div class="gospel-call-section">
+<div class="gospel-call-section" id="gospel-heart">
   <div class="gospel-call-content">
-    <h2>The Heart of the Gospel</h2>
+    <div class="section-header-with-anchor">
+      <h2>The Heart of the Gospel</h2>
+      <a href="#gospel-heart" class="anchor-link" aria-label="Link to Heart of the Gospel">#</a>
+    </div>
     <p class="gospel-summary">
       All of Scripture points to this central truth: <strong>God so loved the world that He gave His 
       only Son, that whoever believes in Him should not perish but have eternal life</strong> (John 3:16).

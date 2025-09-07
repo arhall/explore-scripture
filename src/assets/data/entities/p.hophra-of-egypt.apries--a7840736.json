@@ -1,0 +1,21 @@
+{
+  "name": "Hophra (Apries) of Egypt",
+  "type": "person",
+  "references": [
+    "Jeremiah 44:30"
+  ],
+  "blurb": "Pharaoh named in Jeremiah’s Egypt oracles; his fall is prophesied as a sign to exiles in Egypt.",
+  "relations": {
+    "kingdom": "Egypt"
+  },
+  "category": "pharaoh",
+  "id": "p.hophra-of-egypt.apries--a7840736",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      44
+    ]
+  }
+}

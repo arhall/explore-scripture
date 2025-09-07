@@ -1,0 +1,18 @@
+{
+  "name": "Just weights, ephah, and shekel",
+  "type": "entity",
+  "references": [
+    "Ezekiel 45:9–12"
+  ],
+  "blurb": "Holiness entails economic honesty; corrupted scales profane the land.",
+  "category": "ethics",
+  "id": "e.just-weights-ephah-and-shekel--2908736a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      45
+    ]
+  }
+}

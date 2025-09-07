@@ -1,0 +1,19 @@
+{
+  "id": "e.table-of-the-lord--f7c9c982",
+  "name": "Table of the LORD",
+  "type": "entity",
+  "references": [
+    "Mal 1:7",
+    "Mal 1:12"
+  ],
+  "category": "cultic",
+  "blurb": "Metonym for altar service; called ‘contemptible’ by corrupt priests.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      1
+    ]
+  }
+}

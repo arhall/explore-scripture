@@ -1,0 +1,42 @@
+{
+  "book": "Jeremiah",
+  "chapter": 49,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "g.damascus.aram--38c72bb6",
+      "name": "Damascus (Aram)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 3
+    },
+    {
+      "id": "g.edom.bozrah--286918d3",
+      "name": "Edom (Bozrah)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 3
+    },
+    {
+      "id": "g.ammon.jeremiah--e3cb1d55",
+      "name": "Ammon (Jeremiah)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 2
+    },
+    {
+      "id": "g.kedar-and-hazor--9f03e052",
+      "name": "Kedar and Hazor",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1
+    },
+    {
+      "id": "g.elam.jeremiah--ef1ff6f5",
+      "name": "Elam (Jeremiah)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1
+    }
+  ]
+}

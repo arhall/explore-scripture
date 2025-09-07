@@ -1,0 +1,27 @@
+{
+  "name": "Mahalalel",
+  "type": "person",
+  "references": [
+    "Genesis 5:12–17"
+  ],
+  "blurb": "Ancestor in Seth’s line.",
+  "relations": {
+    "parents": [
+      "Kenan (Cainan)"
+    ],
+    "children": [
+      "Jared"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.mahalalel.gene-5-12-17--29fd3ab6",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      5
+    ]
+  }
+}

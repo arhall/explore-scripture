@@ -1,0 +1,19 @@
+{
+  "name": "Sons of Phinehas: Gershom",
+  "type": "group",
+  "references": [
+    "Ezra 8:2"
+  ],
+  "blurb": "Heads of families in Ezra’s later return; numbers reflect adult males mustered for the journey and covenant renewal.",
+  "category": "record",
+  "count_note": "Count per Ezra 8:2",
+  "id": "g.sons-of-phinehas-gershom--147e0c2b",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      8
+    ]
+  }
+}

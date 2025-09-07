@@ -1,0 +1,18 @@
+{
+  "id": "e.speechless-stone--fe2f3d9a",
+  "name": "Speechless stone",
+  "type": "entity",
+  "references": [
+    "Hab 2:19"
+  ],
+  "category": "cult-object",
+  "blurb": "Stone that cannot teach versus the speaking God; satire of idolatry.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      2
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Banquet 9: Susa Purim (15 Adar)",
+  "type": "entity",
+  "references": [
+    "Esther 9:18"
+  ],
+  "blurb": "Capital’s calendar offset underscores situational wisdom.",
+  "category": "festival",
+  "id": "e.banquet-9-susa-purim.15-adar--74406b1e",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      9
+    ]
+  }
+}

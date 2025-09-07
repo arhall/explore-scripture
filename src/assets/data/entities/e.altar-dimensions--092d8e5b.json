@@ -1,0 +1,18 @@
+{
+  "name": "Altar dimensions",
+  "type": "entity",
+  "references": [
+    "Ezekiel 43:13–17"
+  ],
+  "blurb": "Precise measurements declare order and permanence of worship.",
+  "category": "temple",
+  "id": "e.altar-dimensions--092d8e5b",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      43
+    ]
+  }
+}

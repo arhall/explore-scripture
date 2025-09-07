@@ -1,0 +1,18 @@
+{
+  "id": "e.cut-down-your-pillars--90e1a7cb",
+  "name": "Cut down your pillars",
+  "type": "entity",
+  "references": [
+    "Micah 5:10–15"
+  ],
+  "category": "purge-note",
+  "blurb": "Cultic steles toppled—memory of false gods erased.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      5
+    ]
+  }
+}

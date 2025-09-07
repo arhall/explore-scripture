@@ -1,0 +1,21 @@
+{
+  "name": "New Jerusalem",
+  "type": "entity",
+  "category": "city",
+  "references": [
+    "Rev 21:2"
+  ],
+  "aka": [],
+  "id": "e.new-jerusalem--ba05759f",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Revelation": [
+      21
+    ]
+  }
+}

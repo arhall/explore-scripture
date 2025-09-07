@@ -1,0 +1,18 @@
+{
+  "name": "Valley of Jehoshaphat (YHWH judges)",
+  "type": "entity",
+  "references": [
+    "Joel 3:2,12"
+  ],
+  "blurb": "Courtroom-battlefield where God gathers nations to answer for crimes against Judah.",
+  "category": "judgment",
+  "id": "e.valley-of-jehoshaphat.yhwh-judges--11a45537",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      3
+    ]
+  }
+}

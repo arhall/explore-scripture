@@ -1,0 +1,21 @@
+{
+  "name": "Levites who rallied to Moses",
+  "type": "group",
+  "references": [
+    "Exodus 32:26–29"
+  ],
+  "blurb": "Tribe that stands for the LORD amid idolatry; their consecration is costly and becomes vocation.",
+  "category": "narrative",
+  "cross_references": [
+    "Deuteronomy 33:8–11"
+  ],
+  "id": "g.levites-who-rallied-to-moses--42c6d1cf",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      32
+    ]
+  }
+}

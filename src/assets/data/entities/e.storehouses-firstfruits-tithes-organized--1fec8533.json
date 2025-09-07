@@ -1,0 +1,18 @@
+{
+  "name": "Storehouses, firstfruits, tithes organized",
+  "type": "entity",
+  "references": [
+    "Nehemiah 12:44–47"
+  ],
+  "blurb": "Sustainable worship economy—accountability for singers, gatekeepers, and Levites.",
+  "category": "ethics",
+  "id": "e.storehouses-firstfruits-tithes-organized--1fec8533",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      12
+    ]
+  }
+}

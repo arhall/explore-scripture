@@ -1,0 +1,32 @@
+{
+  "name": "Centurion of Capernaum",
+  "type": "person",
+  "category": "gentile",
+  "references": [
+    "Matt 8:5–13",
+    "Luke 7:1–10"
+  ],
+  "blurb": "Gentile exemplar of faith—recognizes authority at a word; anticipates inclusion of nations.",
+  "aka": [],
+  "id": "p.centurion-of-capernaum--64ec12c2",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "synoptic_parallels": [
+    "Matt 8:5–13"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      8
+    ],
+    "Luke": [
+      7
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Banquet 5: Esther’s first petition",
+  "type": "entity",
+  "references": [
+    "Esther 5:4–5"
+  ],
+  "blurb": "Calculated delay; hospitality as strategy.",
+  "category": "festival",
+  "id": "e.banquet-5-esthers-first-petition--7d8138d9",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      5
+    ]
+  }
+}

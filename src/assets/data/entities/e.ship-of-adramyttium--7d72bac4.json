@@ -1,0 +1,23 @@
+{
+  "name": "Ship of Adramyttium",
+  "type": "entity",
+  "category": "ship",
+  "references": [
+    "Acts 27:2"
+  ],
+  "aka": [],
+  "id": "e.ship-of-adramyttium--7d72bac4",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      27
+    ]
+  }
+}

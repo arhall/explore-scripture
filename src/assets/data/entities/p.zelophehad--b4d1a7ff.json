@@ -1,0 +1,18 @@
+{
+  "name": "Zelophehad",
+  "type": "person",
+  "references": [
+    "Numbers 26:33; 27:1"
+  ],
+  "blurb": "Manassehite who died without sons; his case reshapes inheritance law.",
+  "category": "genealogy",
+  "id": "p.zelophehad--b4d1a7ff",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      26
+    ]
+  }
+}

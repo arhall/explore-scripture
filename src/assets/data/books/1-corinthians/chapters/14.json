@@ -1,0 +1,70 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 14,
+  "entity_count": 9,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.outsider-conviction-falls-on-face--7e4b70ec",
+      "name": "Outsider conviction (falls on face)",
+      "type": "figure",
+      "role": "evangelism",
+      "refs_count": 1
+    },
+    {
+      "id": "f.textual-note-1-cor-14-34-35-relocation--1ff5f9b7",
+      "name": "Textual note: 1 Cor 14:34–35 relocation",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "f.two-or-three-rule-tongues-prophecy--1cbfbf61",
+      "name": "Two or three rule (tongues/prophecy)",
+      "type": "figure",
+      "role": "order",
+      "refs_count": 1
+    },
+    {
+      "id": "f.prophecy-builds-up-tongues-sign--d9926f12",
+      "name": "Prophecy builds up; tongues sign",
+      "type": "figure",
+      "role": "charisms",
+      "refs_count": 1
+    },
+    {
+      "id": "f.weighing-prophecy--dd2d73db",
+      "name": "Weighing prophecy",
+      "type": "figure",
+      "role": "discernment",
+      "refs_count": 1
+    },
+    {
+      "id": "f.pursue-love-and-spirituals--93536c7f",
+      "name": "Pursue love and spirituals",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1
+    },
+    {
+      "id": "f.peace-not-confusion--99a93664",
+      "name": "Peace, not confusion",
+      "type": "figure",
+      "role": "order",
+      "refs_count": 1
+    }
+  ]
+}

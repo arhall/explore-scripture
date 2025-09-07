@@ -1,0 +1,25 @@
+{
+  "name": "Sihon king of the Amorites",
+  "type": "title",
+  "references": [
+    "Numbers 21:21–31",
+    "Deuteronomy 2:24–37; 3:6"
+  ],
+  "blurb": "Refuses passage; defeated; Israel possesses his land.",
+  "category": "narrative",
+  "id": "t.sihon-king-of-the-amorites--5e6315d3",
+  "source_testaments": [
+    "OT"
+  ],
+  "cross_references": [
+    "Numbers 21:21–31"
+  ],
+  "book_references": {
+    "Numbers": [
+      21
+    ],
+    "Deuteronomy": [
+      2
+    ]
+  }
+}

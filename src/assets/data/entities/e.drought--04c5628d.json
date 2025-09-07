@@ -1,0 +1,18 @@
+{
+  "id": "e.drought--04c5628d",
+  "name": "Drought",
+  "type": "entity",
+  "references": [
+    "Hag 1:11"
+  ],
+  "category": "climate",
+  "blurb": "Summoned against land, grain, wine, oil, men, cattle, and labor.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      1
+    ]
+  }
+}

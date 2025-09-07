@@ -1,0 +1,31 @@
+{
+  "name": "Sadducees",
+  "type": "group",
+  "category": "sect",
+  "references": [
+    "Matt 22:23–33",
+    "Matt 16:1–12",
+    "Mark 12:18–27"
+  ],
+  "blurb": "Priestly aristocracy denying resurrection; out-argued on Torah’s living God.",
+  "aka": [],
+  "id": "g.sadducees--d70bb352",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Mark",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      16,
+      22
+    ],
+    "Mark": [
+      12
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "e.marriage-covenant-ethics--d561f9f1",
+  "name": "Marriage covenant ethics",
+  "type": "entity",
+  "references": [
+    "Mal 2:14-16"
+  ],
+  "category": "ethics",
+  "blurb": "Faithfulness and nonviolence as covenant essentials within the home.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      2
+    ]
+  }
+}

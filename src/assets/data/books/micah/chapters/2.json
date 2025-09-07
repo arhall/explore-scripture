@@ -1,0 +1,63 @@
+{
+  "book": "Micah",
+  "chapter": 2,
+  "entity_count": 8,
+  "entities": [
+    {
+      "id": "g.devisers-of-iniquity-at-mornings-light--e013f9ac",
+      "name": "Devisers of iniquity at morning’s light",
+      "type": "group",
+      "role": "oppressors",
+      "refs_count": 1
+    },
+    {
+      "id": "e.seizing-fields-and-houses--48f9a2b0",
+      "name": "Seizing fields and houses",
+      "type": "entity",
+      "role": "injustice",
+      "refs_count": 1
+    },
+    {
+      "id": "g.evicting-women-from-pleasant-houses--bf92a614",
+      "name": "Evicting women from pleasant houses",
+      "type": "group",
+      "role": "victims",
+      "refs_count": 1
+    },
+    {
+      "id": "g.children-stripped-of-glory-forever--bcf1370a",
+      "name": "Children stripped of glory forever",
+      "type": "group",
+      "role": "victims",
+      "refs_count": 1
+    },
+    {
+      "id": "e.no-one-to-cast-the-measuring-line-by-lot--31c8a2fd",
+      "name": "No one to cast the measuring line by lot",
+      "type": "entity",
+      "role": "legal",
+      "refs_count": 1
+    },
+    {
+      "id": "e.do-not-preach-they-preach--d8a3c0f1",
+      "name": "‘Do not preach!’ they preach",
+      "type": "entity",
+      "role": "opposition",
+      "refs_count": 1
+    },
+    {
+      "id": "g.faithful-remnant-gathered-healed--a7f43d10",
+      "name": "Faithful remnant (gathered, healed)",
+      "type": "group",
+      "role": "remnant",
+      "refs_count": 4
+    },
+    {
+      "id": "f.the-breaker-goes-up-before-them--0f6132d4",
+      "name": "The Breaker goes up before them",
+      "type": "figure",
+      "role": "messianic",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "book": "Romans",
+  "chapter": 1,
+  "entity_count": 16,
+  "entities": [
+    {
+      "id": "f.davidic-son-son-declared-in-power--644db1af",
+      "name": "Davidic Son / Son declared in power",
+      "type": "figure",
+      "role": "christology",
+      "refs_count": 1
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 24
+    },
+    {
+      "id": "f.habakkuk-2-4-quotation--03bb1491",
+      "name": "Habakkuk 2:4 quotation",
+      "type": "figure",
+      "role": "ot-quote",
+      "refs_count": 1
+    },
+    {
+      "id": "p.jesus-of-nazareth--c4738d73",
+      "name": "Jesus of Nazareth",
+      "type": "person",
+      "role": "messiah",
+      "refs_count": 35
+    },
+    {
+      "id": "f.idolatry-exchange-glory--4ecde65a",
+      "name": "Idolatry exchange (glory)",
+      "type": "figure",
+      "role": "idolatry",
+      "refs_count": 1
+    },
+    {
+      "id": "f.idolatry-exchange-truth--fac003f3",
+      "name": "Idolatry exchange (truth)",
+      "type": "figure",
+      "role": "idolatry",
+      "refs_count": 1
+    },
+    {
+      "id": "f.idolatry-exchange-relations--4b3c8f81",
+      "name": "Idolatry exchange (relations)",
+      "type": "figure",
+      "role": "idolatry",
+      "refs_count": 1
+    },
+    {
+      "id": "t.power-of-the-gospel--9c3bf86d",
+      "name": "Power of the gospel",
+      "type": "title",
+      "role": "thesis",
+      "refs_count": 1
+    },
+    {
+      "id": "f.virtue-vice-lists-index--5cc409b3",
+      "name": "Virtue/Vice lists (index)",
+      "type": "figure",
+      "role": "virtue-vice-index",
+      "refs_count": 6
+    },
+    {
+      "id": "t.righteousness-of-god--5897ae3f",
+      "name": "Righteousness of God",
+      "type": "title",
+      "role": "thesis",
+      "refs_count": 2
+    }
+  ]
+}

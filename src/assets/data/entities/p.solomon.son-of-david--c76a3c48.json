@@ -1,0 +1,26 @@
+{
+  "name": "Solomon (son of David)",
+  "type": "person",
+  "references": [
+    "Song 1:1; 3:7,9,11; 8:11–12"
+  ],
+  "blurb": "Royal figure anchoring the Song’s frame—owner of vineyards, bearer of the wedding crown, patron of wisdom and song (1 Kgs 4:32). He can be read as the bridegroom or as symbolic foil whose grandeur is relativized by the couple’s mutual love.",
+  "relations": {
+    "father": "David",
+    "tribe": "Judah"
+  },
+  "category": "royal",
+  "cross_references": [
+    "1 Kings 3–4"
+  ],
+  "id": "p.solomon.son-of-david--c76a3c48",
+  "canonical_id": "p.solomon.chronicles-focus--6c5c003a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Song of Songs": [
+      1
+    ]
+  }
+}

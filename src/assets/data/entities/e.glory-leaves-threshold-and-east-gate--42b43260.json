@@ -1,0 +1,18 @@
+{
+  "name": "Glory leaves threshold and east gate",
+  "type": "entity",
+  "references": [
+    "Ezekiel 10:4,18–19"
+  ],
+  "blurb": "Vacating the holy house step by step—the slow grief of divine departure.",
+  "category": "theophany",
+  "id": "e.glory-leaves-threshold-and-east-gate--42b43260",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      10
+    ]
+  }
+}

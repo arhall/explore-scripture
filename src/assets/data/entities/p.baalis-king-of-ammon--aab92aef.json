@@ -1,0 +1,21 @@
+{
+  "name": "Baalis king of Ammon",
+  "type": "person",
+  "references": [
+    "Jeremiah 40:14"
+  ],
+  "blurb": "Foreign instigator who commissions Ishmael to assassinate Gedaliah—regional politics entangle the remnant.",
+  "relations": {
+    "kingdom": "Ammon"
+  },
+  "category": "king",
+  "id": "p.baalis-king-of-ammon--aab92aef",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      40
+    ]
+  }
+}

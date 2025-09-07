@@ -1,0 +1,49 @@
+{
+  "book": "Esther",
+  "chapter": 3,
+  "entity_count": 6,
+  "entities": [
+    {
+      "id": "p.haman-the-agagite--4a4fb6d0",
+      "name": "Haman the Agagite",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.royal-command-to-bow-to-haman--fe8ae2df",
+      "name": "Royal command to bow to Haman",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1
+    },
+    {
+      "id": "e.casting-of-pur.lots--a6354ec2",
+      "name": "Casting of Pur (lots)",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1
+    },
+    {
+      "id": "e.first-decree-annihilation-of-the-jews--8566857e",
+      "name": "First decree: annihilation of the Jews",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1
+    },
+    {
+      "id": "g.royal-scribes-and-languages--42b36926",
+      "name": "Royal scribes and languages",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1
+    },
+    {
+      "id": "g.the-jews-in-susa--76e66aac",
+      "name": "The Jews in Susa",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

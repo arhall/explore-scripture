@@ -1,0 +1,21 @@
+{
+  "name": "Covenant curses",
+  "type": "entity",
+  "references": [
+    "Leviticus 26:14–39"
+  ],
+  "blurb": "Escalating discipline toward exile—aimed at repentance and eventual remembrance.",
+  "category": "ritual",
+  "cross_references": [
+    "Deuteronomy 14:22–29"
+  ],
+  "id": "e.covenant-curses--e659b336",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Leviticus": [
+      26
+    ]
+  }
+}

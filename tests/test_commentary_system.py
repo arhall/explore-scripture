@@ -180,7 +180,7 @@ class TestCommentarySystem:
         source_select = modal.find_element(By.CLASS_NAME, "commentary-reader-source-select")
         
         # Get all available options
-        from selenium.webchrome_driver.support.ui import Select
+        from selenium.webdriver.support.ui import Select
         select = Select(source_select)
         options = [option.get_attribute('value') for option in select.options]
         
@@ -213,7 +213,7 @@ class TestCommentarySystem:
         )
         
         source_select = modal.find_element(By.CLASS_NAME, "commentary-reader-source-select")
-        from selenium.webchrome_driver.support.ui import Select
+        from selenium.webdriver.support.ui import Select
         select = Select(source_select)
         
         # Test iframe-compatible source (Enduring Word)
@@ -290,7 +290,7 @@ class TestCommentarySystem:
             
             # Test different commentary sources for this book
             source_select = modal.find_element(By.CLASS_NAME, "commentary-reader-source-select")
-            from selenium.webchrome_driver.support.ui import Select
+            from selenium.webdriver.support.ui import Select
             select = Select(source_select)
             
             for option in select.options[:3]:  # Test first 3 sources
@@ -322,7 +322,7 @@ class TestCommentarySystem:
         assert modal.is_displayed(), "Modal not visible after opening"
         
         # Press ESC key
-        from selenium.webchrome_driver.common.keys import Keys
+        from selenium.webdriver.common.keys import Keys
         chrome_driver.find_element(By.TAG_NAME, 'body').send_keys(Keys.ESCAPE)
         
         # Modal should be hidden

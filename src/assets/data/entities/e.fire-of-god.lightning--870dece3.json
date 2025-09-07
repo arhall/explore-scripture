@@ -1,0 +1,18 @@
+{
+  "name": "Fire of God (lightning)",
+  "type": "entity",
+  "references": [
+    "Job 1:16"
+  ],
+  "blurb": "Heaven-sent calamity that consumes sheep and servants—mystery of secondary causes under divine leash.",
+  "category": "theology",
+  "id": "e.fire-of-god.lightning--870dece3",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Job": [
+      1
+    ]
+  }
+}

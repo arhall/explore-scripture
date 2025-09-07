@@ -1,0 +1,18 @@
+{
+  "name": "Topheth / Valley of Hinnom (Gehenna)",
+  "type": "entity",
+  "references": [
+    "Jeremiah 7:31–32; 19:2–6"
+  ],
+  "blurb": "Site of child sacrifice and prophetic shattering of the flask; later Jewish imagination associates it with eschatological judgment.",
+  "category": "place",
+  "id": "e.topheth-valley-of-hinnom.gehenna--36e269e1",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      7
+    ]
+  }
+}

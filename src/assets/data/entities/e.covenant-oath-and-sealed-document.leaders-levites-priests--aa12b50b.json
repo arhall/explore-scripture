@@ -1,0 +1,18 @@
+{
+  "name": "Covenant oath and sealed document (leaders, Levites, priests)",
+  "type": "entity",
+  "references": [
+    "Nehemiah 10:1–39"
+  ],
+  "blurb": "Nehemiah the governor heads the signers, followed by priestly heads, Levites, and chiefs—community promises on marriage, Sabbath, debt release, temple support.",
+  "category": "covenant",
+  "id": "e.covenant-oath-and-sealed-document.leaders-levites-priests--aa12b50b",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      10
+    ]
+  }
+}

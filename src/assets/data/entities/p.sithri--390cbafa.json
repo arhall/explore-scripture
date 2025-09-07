@@ -1,0 +1,19 @@
+{
+  "name": "Sithri",
+  "type": "person",
+  "references": [
+    "Exodus 6:22"
+  ],
+  "blurb": "Son of Uzziel.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.sithri--390cbafa",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      6
+    ]
+  }
+}

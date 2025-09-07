@@ -1,0 +1,14 @@
+{
+  "book": "Esther",
+  "chapter": 10,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "p.mordecai-the-jew-second-to-king-ahasuerus--a15e006b",
+      "name": "Mordecai the Jew, second to King Ahasuerus",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

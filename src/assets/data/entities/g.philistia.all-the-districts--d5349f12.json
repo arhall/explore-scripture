@@ -1,0 +1,19 @@
+{
+  "name": "Philistia (all the districts)",
+  "type": "group",
+  "references": [
+    "Joel 3:4–6"
+  ],
+  "blurb": "Coastal enemies complicit in trafficking captives for profit.",
+  "category": "nation",
+  "id": "g.philistia.all-the-districts--d5349f12",
+  "canonical_id": "g.philistia--5497e6d6",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      3
+    ]
+  }
+}

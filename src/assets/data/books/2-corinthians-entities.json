@@ -1,0 +1,702 @@
+[
+  {
+    "id": "d.holy-spirit--ad652b9c",
+    "name": "Holy Spirit",
+    "type": "divine",
+    "url": "/entities/d.holy-spirit--ad652b9c/",
+    "blurb": "Divine agent of conception, anointing, speech, and mission—integral to the triadic baptismal name.",
+    "searchText": "holy spirit divine theology divine agent of conception, anointing, speech, and mission—integral to the triadic baptismal name. ",
+    "references": 53,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "2 Corinthians",
+      "Galatians",
+      "1 Corinthians",
+      "Philippians",
+      "Ephesians",
+      "Romans",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "f.argument-map-index--c44b9b3a",
+    "name": "Argument map (index)",
+    "type": "figure",
+    "url": "/entities/f.argument-map-index--c44b9b3a/",
+    "blurb": "",
+    "searchText": "argument map (index) figure index  ",
+    "references": 17,
+    "books": [
+      "2 Corinthians",
+      "Galatians",
+      "1 Corinthians",
+      "Ephesians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John"
+    ],
+    "category": "index"
+  },
+  {
+    "id": "e.jerusalem--d3a5bc90",
+    "name": "Jerusalem",
+    "type": "entity",
+    "url": "/entities/e.jerusalem--d3a5bc90/",
+    "blurb": "The communal center of worship restored as Assyria’s threat is removed.",
+    "searchText": "jerusalem entity city the communal center of worship restored as assyria’s threat is removed. e.jerusalem--23c888bc e.jerusalem--6c42150d",
+    "references": 7,
+    "books": [
+      "Nahum",
+      "Galatians",
+      "2 Corinthians",
+      "1 Corinthians",
+      "Romans"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "e.ephesus--a81cfcdf",
+    "name": "Ephesus",
+    "type": "entity",
+    "url": "/entities/e.ephesus--a81cfcdf/",
+    "blurb": "",
+    "searchText": "ephesus entity city  ",
+    "references": 5,
+    "books": [
+      "2 Corinthians",
+      "1 Corinthians",
+      "Ephesians",
+      "1 Timothy"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "e.macedonia--58a26877",
+    "name": "Macedonia",
+    "type": "entity",
+    "url": "/entities/e.macedonia--58a26877/",
+    "blurb": "",
+    "searchText": "macedonia entity province  ",
+    "references": 5,
+    "books": [
+      "2 Corinthians",
+      "1 Corinthians",
+      "1 Thessalonians",
+      "1 Timothy"
+    ],
+    "category": "province"
+  },
+  {
+    "id": "e.corinth--56a50221",
+    "name": "Corinth",
+    "type": "entity",
+    "url": "/entities/e.corinth--56a50221/",
+    "blurb": "",
+    "searchText": "corinth entity city  ",
+    "references": 4,
+    "books": [
+      "2 Corinthians",
+      "1 Corinthians",
+      "Romans",
+      "2 Timothy"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "e.achaia--ba67eea7",
+    "name": "Achaia",
+    "type": "entity",
+    "url": "/entities/e.achaia--ba67eea7/",
+    "blurb": "",
+    "searchText": "achaia entity province  ",
+    "references": 3,
+    "books": [
+      "2 Corinthians",
+      "1 Corinthians",
+      "1 Thessalonians"
+    ],
+    "category": "province"
+  },
+  {
+    "id": "g.super-apostles-group--fe8ba51c",
+    "name": "Super-apostles (group)",
+    "type": "group",
+    "url": "/entities/g.super-apostles-group--fe8ba51c/",
+    "blurb": "",
+    "searchText": "super-apostles (group) group opponents  ",
+    "references": 2,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "opponents"
+  },
+  {
+    "id": "e.troas--42f4953e",
+    "name": "Troas",
+    "type": "entity",
+    "url": "/entities/e.troas--42f4953e/",
+    "blurb": "",
+    "searchText": "troas entity city  ",
+    "references": 2,
+    "books": [
+      "2 Corinthians",
+      "2 Timothy"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "g.titus-and-the-brothers-delegation--b671157b",
+    "name": "Titus and the brothers (delegation)",
+    "type": "group",
+    "url": "/entities/g.titus-and-the-brothers-delegation--b671157b/",
+    "blurb": "",
+    "searchText": "titus and the brothers (delegation) group delegation  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "delegation"
+  },
+  {
+    "id": "f.affliction-in-asia-despaired-of-life--7b7ffeed",
+    "name": "Affliction in Asia (despaired of life)",
+    "type": "figure",
+    "url": "/entities/f.affliction-in-asia-despaired-of-life--7b7ffeed/",
+    "blurb": "",
+    "searchText": "affliction in asia (despaired of life) figure affliction  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "affliction"
+  },
+  {
+    "id": "f.boasting-within-bounds--becef33b",
+    "name": "Boasting within bounds",
+    "type": "figure",
+    "url": "/entities/f.boasting-within-bounds--becef33b/",
+    "blurb": "",
+    "searchText": "boasting within bounds figure boasting  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "boasting"
+  },
+  {
+    "id": "f.cascade-of-comfort--12977110",
+    "name": "Cascade of comfort (παράκλησις)",
+    "type": "figure",
+    "url": "/entities/f.cascade-of-comfort--12977110/",
+    "blurb": "",
+    "searchText": "cascade of comfort (παράκλησις) figure comfort  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "comfort"
+  },
+  {
+    "id": "f.christ-s-poverty-for-your-riches--1f301ab1",
+    "name": "Christ’s poverty for your riches",
+    "type": "figure",
+    "url": "/entities/f.christ-s-poverty-for-your-riches--1f301ab1/",
+    "blurb": "",
+    "searchText": "christ’s poverty for your riches figure christology  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "christology"
+  },
+  {
+    "id": "f.comforted-by-titus--4ce6944d",
+    "name": "Comforted by Titus",
+    "type": "figure",
+    "url": "/entities/f.comforted-by-titus--4ce6944d/",
+    "blurb": "",
+    "searchText": "comforted by titus figure comfort  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "comfort"
+  },
+  {
+    "id": "f.complete-what-you-began--fe9bbffc",
+    "name": "Complete what you began",
+    "type": "figure",
+    "url": "/entities/f.complete-what-you-began--fe9bbffc/",
+    "blurb": "",
+    "searchText": "complete what you began figure exhortation  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "exhortation"
+  },
+  {
+    "id": "f.damascus-basket-escape--be07fa1e",
+    "name": "Damascus basket escape",
+    "type": "figure",
+    "url": "/entities/f.damascus-basket-escape--be07fa1e/",
+    "blurb": "",
+    "searchText": "damascus basket escape figure escape  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "escape"
+  },
+  {
+    "id": "f.earthly-tent-vs-building-from-god--885d05c3",
+    "name": "Earthly tent vs building from God",
+    "type": "figure",
+    "url": "/entities/f.earthly-tent-vs-building-from-god--885d05c3/",
+    "blurb": "",
+    "searchText": "earthly tent vs building from god figure resurrection-hope  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "resurrection-hope"
+  },
+  {
+    "id": "f.equality-principle-ex-16-echo--702305b9",
+    "name": "Equality principle (Ex 16 echo)",
+    "type": "figure",
+    "url": "/entities/f.equality-principle-ex-16-echo--702305b9/",
+    "blurb": "",
+    "searchText": "equality principle (ex 16 echo) figure equality  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "equality"
+  },
+  {
+    "id": "f.examine-yourselves--2bcee3bd",
+    "name": "Examine yourselves",
+    "type": "figure",
+    "url": "/entities/f.examine-yourselves--2bcee3bd/",
+    "blurb": "",
+    "searchText": "examine yourselves figure testing  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "testing"
+  },
+  {
+    "id": "f.fool-s-speech--34d4b923",
+    "name": "Fool’s speech",
+    "type": "figure",
+    "url": "/entities/f.fool-s-speech--34d4b923/",
+    "blurb": "",
+    "searchText": "fool’s speech figure rhetoric  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "rhetoric"
+  },
+  {
+    "id": "f.forgive-the-offender-not-outwitted-by-satan--7dfbee44",
+    "name": "Forgive the offender; not outwitted by Satan",
+    "type": "figure",
+    "url": "/entities/f.forgive-the-offender-not-outwitted-by-satan--7dfbee44/",
+    "blurb": "",
+    "searchText": "forgive the offender; not outwitted by satan figure forgiveness  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "forgiveness"
+  },
+  {
+    "id": "f.godly-grief-vs-worldly-grief--ca3cec03",
+    "name": "Godly grief vs worldly grief",
+    "type": "figure",
+    "url": "/entities/f.godly-grief-vs-worldly-grief--ca3cec03/",
+    "blurb": "",
+    "searchText": "godly grief vs worldly grief figure grief  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "grief"
+  },
+  {
+    "id": "f.grace-of-the-macedonians--2de495df",
+    "name": "Grace of the Macedonians",
+    "type": "figure",
+    "url": "/entities/f.grace-of-the-macedonians--2de495df/",
+    "blurb": "",
+    "searchText": "grace of the macedonians figure example  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "example"
+  },
+  {
+    "id": "f.hardship-catalogue-6-4-10--c1bb9526",
+    "name": "Hardship catalogue (6:4–10)",
+    "type": "figure",
+    "url": "/entities/f.hardship-catalogue-6-4-10--c1bb9526/",
+    "blurb": "",
+    "searchText": "hardship catalogue (6:4–10) figure catalogue  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "catalogue"
+  },
+  {
+    "id": "f.integrity-notes-composite-letter--69411f19",
+    "name": "Integrity notes (composite-letter)",
+    "type": "figure",
+    "url": "/entities/f.integrity-notes-composite-letter--69411f19/",
+    "blurb": "",
+    "searchText": "integrity notes (composite-letter) figure integrity-notes  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "integrity-notes"
+  },
+  {
+    "id": "f.joy-and-confidence--45496f17",
+    "name": "Joy and confidence",
+    "type": "figure",
+    "url": "/entities/f.joy-and-confidence--45496f17/",
+    "blurb": "",
+    "searchText": "joy and confidence figure joy  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "joy"
+  },
+  {
+    "id": "f.letters-of-recommendation-you-are-our-letter--623063d1",
+    "name": "Letters of recommendation? You are our letter",
+    "type": "figure",
+    "url": "/entities/f.letters-of-recommendation-you-are-our-letter--623063d1/",
+    "blurb": "",
+    "searchText": "letters of recommendation? you are our letter figure commendation  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "commendation"
+  },
+  {
+    "id": "f.made-sin-for-us-2-cor-5-21--726c425f",
+    "name": "Made sin for us (2 Cor 5:21)",
+    "type": "figure",
+    "url": "/entities/f.made-sin-for-us-2-cor-5-21--726c425f/",
+    "blurb": "",
+    "searchText": "made sin for us (2 cor 5:21) figure atonement  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "atonement"
+  },
+  {
+    "id": "f.make-room-in-your-hearts-7-2-4--0ee748ea",
+    "name": "Make room in your hearts (7:2–4)",
+    "type": "figure",
+    "url": "/entities/f.make-room-in-your-hearts-7-2-4--0ee748ea/",
+    "blurb": "",
+    "searchText": "make room in your hearts (7:2–4) figure appeal  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "appeal"
+  },
+  {
+    "id": "f.ministry-of-reconciliation-ambassadors--fca353a8",
+    "name": "Ministry of reconciliation (ambassadors)",
+    "type": "figure",
+    "url": "/entities/f.ministry-of-reconciliation-ambassadors--fca353a8/",
+    "blurb": "",
+    "searchText": "ministry of reconciliation (ambassadors) figure reconciliation  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "reconciliation"
+  },
+  {
+    "id": "f.moses-veil-and-surpassing-glory--3d0df88b",
+    "name": "Moses’ veil and surpassing glory",
+    "type": "figure",
+    "url": "/entities/f.moses-veil-and-surpassing-glory--3d0df88b/",
+    "blurb": "",
+    "searchText": "moses’ veil and surpassing glory figure glory  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "glory"
+  },
+  {
+    "id": "f.new-covenant-of-the-spirit--081c504a",
+    "name": "New covenant of the Spirit",
+    "type": "figure",
+    "url": "/entities/f.new-covenant-of-the-spirit--081c504a/",
+    "blurb": "",
+    "searchText": "new covenant of the spirit figure new-covenant  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "new-covenant"
+  },
+  {
+    "id": "f.not-a-burden-rhetoric--ec52eb20",
+    "name": "Not a burden rhetoric",
+    "type": "figure",
+    "url": "/entities/f.not-a-burden-rhetoric--ec52eb20/",
+    "blurb": "",
+    "searchText": "not a burden rhetoric figure ethos  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "ethos"
+  },
+  {
+    "id": "f.now-is-the-day-of-salvation-isa-49-8--556681ef",
+    "name": "Now is the day of salvation (Isa 49:8)",
+    "type": "figure",
+    "url": "/entities/f.now-is-the-day-of-salvation-isa-49-8--556681ef/",
+    "blurb": "",
+    "searchText": "now is the day of salvation (isa 49:8) figure appeal  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "appeal"
+  },
+  {
+    "id": "f.open-hearts-make-room--60d7cdd3",
+    "name": "Open hearts; make room",
+    "type": "figure",
+    "url": "/entities/f.open-hearts-make-room--60d7cdd3/",
+    "blurb": "",
+    "searchText": "open hearts; make room figure appeal  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "appeal"
+  },
+  {
+    "id": "f.outcomes-of-godly-grief--dafe83cc",
+    "name": "Outcomes of godly grief",
+    "type": "figure",
+    "url": "/entities/f.outcomes-of-godly-grief--dafe83cc/",
+    "blurb": "",
+    "searchText": "outcomes of godly grief figure fruit  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "fruit"
+  },
+  {
+    "id": "f.outer-wasting-inner-renewing-eternal-weight--6ad1b382",
+    "name": "Outer wasting; inner renewing; eternal weight",
+    "type": "figure",
+    "url": "/entities/f.outer-wasting-inner-renewing-eternal-weight--6ad1b382/",
+    "blurb": "",
+    "searchText": "outer wasting; inner renewing; eternal weight figure hope  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "hope"
+  },
+  {
+    "id": "f.painful-visit-integrity-note--a73c68b7",
+    "name": "Painful visit (integrity note)",
+    "type": "figure",
+    "url": "/entities/f.painful-visit-integrity-note--a73c68b7/",
+    "blurb": "",
+    "searchText": "painful visit (integrity note) figure integrity-notes  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "integrity-notes"
+  },
+  {
+    "id": "f.peril-a-night-and-a-day-adrift--b4978dbd",
+    "name": "Peril: a night and a day adrift",
+    "type": "figure",
+    "url": "/entities/f.peril-a-night-and-a-day-adrift--b4978dbd/",
+    "blurb": "",
+    "searchText": "peril: a night and a day adrift figure peril  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "peril"
+  },
+  {
+    "id": "f.peril-cold-and-exposure--ac2da7b4",
+    "name": "Peril: cold and exposure",
+    "type": "figure",
+    "url": "/entities/f.peril-cold-and-exposure--ac2da7b4/",
+    "blurb": "",
+    "searchText": "peril: cold and exposure figure peril  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "peril"
+  },
+  {
+    "id": "f.peril-countless-beatings--12b29e1c",
+    "name": "Peril: countless beatings",
+    "type": "figure",
+    "url": "/entities/f.peril-countless-beatings--12b29e1c/",
+    "blurb": "",
+    "searchText": "peril: countless beatings figure peril  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "peril"
+  },
+  {
+    "id": "f.peril-daily-anxiety-for-all-the-churches--77e53f42",
+    "name": "Peril: daily anxiety for all the churches",
+    "type": "figure",
+    "url": "/entities/f.peril-daily-anxiety-for-all-the-churches--77e53f42/",
+    "blurb": "",
+    "searchText": "peril: daily anxiety for all the churches figure peril  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "peril"
+  },
+  {
+    "id": "f.peril-danger-at-sea--3897b549",
+    "name": "Peril: danger at sea",
+    "type": "figure",
+    "url": "/entities/f.peril-danger-at-sea--3897b549/",
+    "blurb": "",
+    "searchText": "peril: danger at sea figure peril  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "peril"
+  },
+  {
+    "id": "f.peril-danger-from-false-brothers--90d409c1",
+    "name": "Peril: danger from false brothers",
+    "type": "figure",
+    "url": "/entities/f.peril-danger-from-false-brothers--90d409c1/",
+    "blurb": "",
+    "searchText": "peril: danger from false brothers figure peril  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "peril"
+  },
+  {
+    "id": "f.peril-danger-from-gentiles--aafe31f6",
+    "name": "Peril: danger from Gentiles",
+    "type": "figure",
+    "url": "/entities/f.peril-danger-from-gentiles--aafe31f6/",
+    "blurb": "",
+    "searchText": "peril: danger from gentiles figure peril  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "peril"
+  },
+  {
+    "id": "f.peril-danger-from-my-own-people--89822439",
+    "name": "Peril: danger from my own people",
+    "type": "figure",
+    "url": "/entities/f.peril-danger-from-my-own-people--89822439/",
+    "blurb": "",
+    "searchText": "peril: danger from my own people figure peril  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "peril"
+  },
+  {
+    "id": "f.peril-danger-from-rivers--dc2eeb01",
+    "name": "Peril: danger from rivers",
+    "type": "figure",
+    "url": "/entities/f.peril-danger-from-rivers--dc2eeb01/",
+    "blurb": "",
+    "searchText": "peril: danger from rivers figure peril  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "peril"
+  },
+  {
+    "id": "f.peril-danger-from-robbers--6b0b3180",
+    "name": "Peril: danger from robbers",
+    "type": "figure",
+    "url": "/entities/f.peril-danger-from-robbers--6b0b3180/",
+    "blurb": "",
+    "searchText": "peril: danger from robbers figure peril  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "peril"
+  },
+  {
+    "id": "f.peril-danger-in-the-city--80201ada",
+    "name": "Peril: danger in the city",
+    "type": "figure",
+    "url": "/entities/f.peril-danger-in-the-city--80201ada/",
+    "blurb": "",
+    "searchText": "peril: danger in the city figure peril  ",
+    "references": 1,
+    "books": [
+      "2 Corinthians"
+    ],
+    "category": "peril"
+  }
+]

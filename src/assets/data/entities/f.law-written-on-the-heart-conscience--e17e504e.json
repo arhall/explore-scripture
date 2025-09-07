@@ -1,0 +1,27 @@
+{
+  "name": "Law written on the heart; conscience",
+  "type": "figure",
+  "category": "law-conscience",
+  "references": [
+    "Rom 2:14–16"
+  ],
+  "greek_terms": [
+    {
+      "term": "συνείδησις",
+      "gloss": "conscience"
+    }
+  ],
+  "aka": [],
+  "id": "f.law-written-on-the-heart-conscience--e17e504e",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      2
+    ]
+  }
+}

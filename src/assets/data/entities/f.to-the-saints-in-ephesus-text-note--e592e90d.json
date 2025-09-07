@@ -1,0 +1,22 @@
+{
+  "name": "To the saints in Ephesus (text-note)",
+  "type": "figure",
+  "category": "textual-notes",
+  "references": [
+    "Eph 1:1"
+  ],
+  "note": "‘In Ephesus’ (ἐν Ἐφέσῳ) omitted in early witnesses; suggests a circular letter.",
+  "aka": [],
+  "id": "f.to-the-saints-in-ephesus-text-note--e592e90d",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      1
+    ]
+  }
+}

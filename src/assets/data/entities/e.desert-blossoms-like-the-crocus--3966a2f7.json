@@ -1,0 +1,18 @@
+{
+  "name": "Desert blossoms like the crocus",
+  "type": "entity",
+  "references": [
+    "Isaiah 35:1–10"
+  ],
+  "blurb": "Hands strengthened, knees firm; blind see, deaf hear—creation healed and pilgrims sing on the Way of Holiness.",
+  "category": "restoration",
+  "id": "e.desert-blossoms-like-the-crocus--3966a2f7",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Isaiah": [
+      35
+    ]
+  }
+}

@@ -1,0 +1,1273 @@
+{
+  "book": "James",
+  "slug": "james",
+  "entity_count": 138,
+  "key_figures": [
+    {
+      "id": "p.jesus-of-nazareth--c4738d73",
+      "name": "Jesus of Nazareth",
+      "type": "person",
+      "role": "messiah",
+      "refs_count": 2,
+      "score": 17
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.elijah--86b7f065",
+      "name": "Elijah",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.james-the-lord-s-brother--02bc9aea",
+      "name": "James (the Lord’s brother)",
+      "type": "person",
+      "role": "church-leader",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.abraham--197f2a67",
+      "name": "Abraham",
+      "type": "person",
+      "role": "patriarch",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.rahab--16b66d34",
+      "name": "Rahab",
+      "type": "person",
+      "role": "faith-example",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.job--877e2717",
+      "name": "Job",
+      "type": "person",
+      "role": "exemplar",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 5,
+      "score": 7
+    },
+    {
+      "id": "g.prophets--c6dcaed9",
+      "name": "prophets",
+      "type": "group",
+      "role": "office",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.teachers-many--f37ce98c",
+      "name": "teachers (many)",
+      "type": "group",
+      "role": "leadership",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.bitter-jealousy-and-selfish-ambition--b7c5da55",
+      "name": "bitter jealousy and selfish ambition",
+      "type": "group",
+      "role": "vices",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.double-minded-dipsychos--b8d9edb2",
+      "name": "double-minded (dipsychos)",
+      "type": "group",
+      "role": "instability",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.demons-believe-and-shudder--c52620b6",
+      "name": "demons believe and shudder",
+      "type": "group",
+      "role": "belief-without-obedience",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.twelve-tribes-in-the-dispersion--3b4b208e",
+      "name": "Twelve Tribes in the Dispersion",
+      "type": "group",
+      "role": "addressees",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.orphans-and-widows--fc413942",
+      "name": "orphans and widows",
+      "type": "group",
+      "role": "care",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.judges-with-evil-thoughts--4fd15b25",
+      "name": "judges with evil thoughts",
+      "type": "group",
+      "role": "bias",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.adulterous-people--fb47c174",
+      "name": "adulterous people",
+      "type": "group",
+      "role": "covenant-infidelity",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.rich-oppressors--5ea9ed9e",
+      "name": "rich oppressors",
+      "type": "group",
+      "role": "oppressors",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.doers-of-the-word-not-hearers-only--2288b300",
+      "name": "doers of the word not hearers only",
+      "type": "group",
+      "role": "obedience",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.day-laborers-harvesters--010afe1a",
+      "name": "day laborers (harvesters)",
+      "type": "group",
+      "role": "workers",
+      "refs_count": 1,
+      "score": 7
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "p.jesus-of-nazareth--c4738d73",
+      "name": "Jesus of Nazareth",
+      "type": "person",
+      "role": "messiah",
+      "refs_count": 2,
+      "score": 17
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.elijah--86b7f065",
+      "name": "Elijah",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.james-the-lord-s-brother--02bc9aea",
+      "name": "James (the Lord’s brother)",
+      "type": "person",
+      "role": "church-leader",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.abraham--197f2a67",
+      "name": "Abraham",
+      "type": "person",
+      "role": "patriarch",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.rahab--16b66d34",
+      "name": "Rahab",
+      "type": "person",
+      "role": "faith-example",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.job--877e2717",
+      "name": "Job",
+      "type": "person",
+      "role": "exemplar",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 5,
+      "score": 7
+    },
+    {
+      "id": "g.prophets--c6dcaed9",
+      "name": "prophets",
+      "type": "group",
+      "role": "office",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.teachers-many--f37ce98c",
+      "name": "teachers (many)",
+      "type": "group",
+      "role": "leadership",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.bitter-jealousy-and-selfish-ambition--b7c5da55",
+      "name": "bitter jealousy and selfish ambition",
+      "type": "group",
+      "role": "vices",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.double-minded-dipsychos--b8d9edb2",
+      "name": "double-minded (dipsychos)",
+      "type": "group",
+      "role": "instability",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.demons-believe-and-shudder--c52620b6",
+      "name": "demons believe and shudder",
+      "type": "group",
+      "role": "belief-without-obedience",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.twelve-tribes-in-the-dispersion--3b4b208e",
+      "name": "Twelve Tribes in the Dispersion",
+      "type": "group",
+      "role": "addressees",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.orphans-and-widows--fc413942",
+      "name": "orphans and widows",
+      "type": "group",
+      "role": "care",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.judges-with-evil-thoughts--4fd15b25",
+      "name": "judges with evil thoughts",
+      "type": "group",
+      "role": "bias",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.adulterous-people--fb47c174",
+      "name": "adulterous people",
+      "type": "group",
+      "role": "covenant-infidelity",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.rich-oppressors--5ea9ed9e",
+      "name": "rich oppressors",
+      "type": "group",
+      "role": "oppressors",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.doers-of-the-word-not-hearers-only--2288b300",
+      "name": "doers of the word not hearers only",
+      "type": "group",
+      "role": "obedience",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.day-laborers-harvesters--010afe1a",
+      "name": "day laborers (harvesters)",
+      "type": "group",
+      "role": "workers",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.wanderer-from-the-truth--41a2f59e",
+      "name": "wanderer from the truth",
+      "type": "group",
+      "role": "wayward",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.elders-presbyters--92e988af",
+      "name": "elders (presbyters)",
+      "type": "group",
+      "role": "office",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.poor-man-in-shabby-clothing--34dd9d26",
+      "name": "poor man in shabby clothing",
+      "type": "group",
+      "role": "poor-figure",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.man-with-gold-ring-fine-clothing--308b7a78",
+      "name": "man with gold ring fine clothing",
+      "type": "group",
+      "role": "rich-figure",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.righteous-person--38de99b6",
+      "name": "righteous person",
+      "type": "group",
+      "role": "exemplar",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "t.prayer-of-faith--ee48c05d",
+      "name": "prayer of faith",
+      "type": "title",
+      "role": "promise",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.confess-your-sins-to-one-another--eb699980",
+      "name": "confess your sins to one another",
+      "type": "title",
+      "role": "practice",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.wisdom-from-above--09f15af6",
+      "name": "wisdom from above",
+      "type": "title",
+      "role": "wisdom",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.lord-of-hosts-sabaoth-has-heard--3bd1a7f2",
+      "name": "Lord of Hosts (Sabaoth) has heard",
+      "type": "title",
+      "role": "divine-judge",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.law-of-liberty--023c3781",
+      "name": "law of liberty",
+      "type": "title",
+      "role": "torah",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.coming-of-the-lord--75f40bd0",
+      "name": "coming of the Lord",
+      "type": "title",
+      "role": "eschatology",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.father-of-lights--7bd20d8b",
+      "name": "Father of lights",
+      "type": "title",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.friendship-with-the-world--eaf67429",
+      "name": "friendship with the world",
+      "type": "title",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.royal-law-love-your-neighbor--af501d6b",
+      "name": "royal law (love your neighbor)",
+      "type": "title",
+      "role": "law",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "f.humble-yourselves-and-he-will-exalt-you--ae04edf3",
+      "name": "humble yourselves and he will exalt you",
+      "type": "figure",
+      "role": "promise",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.judgment-is-without-mercy-to-one-who-has-shown-no-mercy--cd451b78",
+      "name": "judgment is without mercy to one who has shown no mercy",
+      "type": "figure",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.then-he-prayed-again-and-heaven-gave-rain--8cb319c8",
+      "name": "then he prayed again and heaven gave rain",
+      "type": "figure",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.bits-in-horses-mouths--f413f9a2",
+      "name": "bits in horses’ mouths",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.religion-that-is-pure-and-undefiled--8441d693",
+      "name": "religion that is pure and undefiled",
+      "type": "figure",
+      "role": "piety",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.your-life-is-a-vapor--fa22adb9",
+      "name": "your life is a vapor",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.purpose-of-the-lord-compassion-and-mercy--750545dd",
+      "name": "purpose of the Lord compassion and mercy",
+      "type": "figure",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.fattened-your-hearts-in-a-day-of-slaughter--33c3341a",
+      "name": "fattened your hearts in a day of slaughter",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.resist-the-devil-and-he-will-flee--b30ffa56",
+      "name": "resist the devil and he will flee",
+      "type": "figure",
+      "role": "spiritual-warfare",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.god-cannot-be-tempted-by-evil--4dea46e1",
+      "name": "God cannot be tempted by evil",
+      "type": "figure",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.do-not-swear-oaths--683140be",
+      "name": "do not swear oaths",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.abraham-offered-isaac-on-the-altar--f74e2cd5",
+      "name": "Abraham offered Isaac on the altar",
+      "type": "figure",
+      "role": "obedience",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.put-away-filthiness-and-rampant-wickedness--1eb95389",
+      "name": "put away filthiness and rampant wickedness",
+      "type": "figure",
+      "role": "purity",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.do-not-grumble-against-one-another--9eddde23",
+      "name": "do not grumble against one another",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.we-all-stumble-in-many-ways--6f864eec",
+      "name": "we all stumble in many ways",
+      "type": "figure",
+      "role": "humility",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.fig-tree-cannot-bear-olives--acaf9f54",
+      "name": "fig tree cannot bear olives",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.you-covet-and-cannot-obtain-so-you-fight-and-quarrel--42ed4029",
+      "name": "you covet and cannot obtain so you fight and quarrel",
+      "type": "figure",
+      "role": "conflict",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.desire-conceives-gives-birth-to-sin--f33b5e7c",
+      "name": "desire conceives gives birth to sin",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.ask-wrongly-to-spend-on-passions--cbf7e506",
+      "name": "ask wrongly to spend on passions",
+      "type": "figure",
+      "role": "prayer",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.testing-of-your-faith-produces-steadfastness-hypomone--510e0f39",
+      "name": "testing of your faith produces steadfastness (hypomone)",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.miseries-are-coming-upon-you--a58218b9",
+      "name": "miseries are coming upon you",
+      "type": "figure",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.boasting-in-arrogance-is-evil--9c7ea33d",
+      "name": "boasting in arrogance is evil",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.spring-cannot-pour-both-fresh-and-salt-water--7da1b767",
+      "name": "spring cannot pour both fresh and salt water",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.gentle--ed70bb55",
+      "name": "gentle",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.god-opposes-the-proud-gives-grace-to-the-humble--339ec1d1",
+      "name": "God opposes the proud gives grace to the humble",
+      "type": "figure",
+      "role": "principle",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.born-by-the-word-of-truth-firstfruits-of-his-creatures--ebe6d783",
+      "name": "born by the word of truth—firstfruits of his creatures",
+      "type": "figure",
+      "role": "new-birth",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.submit-to-god--bca555eb",
+      "name": "submit to God",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.if-he-has-committed-sins-he-will-be-forgiven--5d56d777",
+      "name": "if he has committed sins he will be forgiven",
+      "type": "figure",
+      "role": "forgiveness",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.no-human-being-can-tame-the-tongue--276a5cec",
+      "name": "no human being can tame the tongue",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.early-and-late-rains--8e532f51",
+      "name": "early and late rains",
+      "type": "figure",
+      "role": "agricultural",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.each-is-tempted-by-his-own-desire--bc5e75de",
+      "name": "each is tempted by his own desire",
+      "type": "figure",
+      "role": "anthropology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.with-it-we-bless-and-curse--20825771",
+      "name": "with it we bless and curse",
+      "type": "figure",
+      "role": "inconsistency",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.faith-without-works-is-dead--daddb2cf",
+      "name": "faith without works is dead",
+      "type": "figure",
+      "role": "thesis",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.be-patient-until-the-coming-of-the-lord--7f5b492d",
+      "name": "be patient until the coming of the Lord",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.count-it-all-joy-in-trials-peirasmos--1a96ccdf",
+      "name": "count it all joy in trials (peirasmos)",
+      "type": "figure",
+      "role": "trial",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.mirror-analogy--8509adef",
+      "name": "mirror analogy",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.quick-to-hear-slow-to-speak-slow-to-anger--5a3be383",
+      "name": "quick to hear slow to speak slow to anger",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.cleanse-hands-purify-hearts-you-double-minded--5d5c8c1f",
+      "name": "cleanse hands purify hearts you double-minded",
+      "type": "figure",
+      "role": "repentance",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.has-not-god-chosen-the-poor--23c4fb09",
+      "name": "Has not God chosen the poor",
+      "type": "figure",
+      "role": "election",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.grapevine-cannot-produce-figs--9928a41d",
+      "name": "grapevine cannot produce figs",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.establish-your-hearts--15c94238",
+      "name": "establish your hearts",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.the-prayer-of-a-righteous-person-has-great-power--f550e2c9",
+      "name": "the prayer of a righteous person has great power",
+      "type": "figure",
+      "role": "promise",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.you-do-not-know-what-tomorrow-brings--b92995b6",
+      "name": "you do not know what tomorrow brings",
+      "type": "figure",
+      "role": "limitation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.he-prayed-that-it-might-not-rain-and-it-did-not-rain--2c0bd053",
+      "name": "he prayed that it might not rain and it did not rain",
+      "type": "figure",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.is-anyone-cheerful-let-him-sing-praise--3fd58926",
+      "name": "is anyone cheerful let him sing praise",
+      "type": "figure",
+      "role": "practice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.rich-in-humiliation--028f8e43",
+      "name": "rich in humiliation",
+      "type": "figure",
+      "role": "reversal",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.let-steadfastness-have-its-full-effect-teleios--73ab9097",
+      "name": "let steadfastness have its full effect (teleios)",
+      "type": "figure",
+      "role": "maturity",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-2-18-punctuation-diatribe--8d7a08fe",
+      "name": "Textual note: 2:18 punctuation/diatribe",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.crown-of-life--52890c5b",
+      "name": "crown of life",
+      "type": "figure",
+      "role": "reward",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.who-is-wise-and-understanding--52babfae",
+      "name": "who is wise and understanding",
+      "type": "figure",
+      "role": "challenge",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.ask-god-for-wisdom--c3e82d5e",
+      "name": "ask God for wisdom",
+      "type": "figure",
+      "role": "prayer",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.draw-near-to-god--70de8489",
+      "name": "draw near to God",
+      "type": "figure",
+      "role": "approach",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.lived-on-the-earth-in-luxury-and-self-indulgence--438d4688",
+      "name": "lived on the earth in luxury and self-indulgence",
+      "type": "figure",
+      "role": "luxury",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.echo-5-12-vs-matt-5-33-37-23-16-22--10f22360",
+      "name": "Echo: 5:12 vs Matt 5:33–37; 23:16–22",
+      "type": "figure",
+      "role": "intertext",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.rudder-of-a-ship--535fc2b8",
+      "name": "rudder of a ship",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.steadfastness-of-job--4a216392",
+      "name": "steadfastness of Job",
+      "type": "figure",
+      "role": "patience",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.full-of-mercy-and-good-fruits--31b7bed8",
+      "name": "full of mercy and good fruits",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.flower-of-grass-withers--c8120790",
+      "name": "flower of grass withers",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.every-good-and-perfect-gift-is-from-above--938ad6f6",
+      "name": "every good and perfect gift is from above",
+      "type": "figure",
+      "role": "providence",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.is-anyone-suffering-let-him-pray--6622cc5d",
+      "name": "is anyone suffering let him pray",
+      "type": "figure",
+      "role": "practice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.if-the-lord-wills--80fe395c",
+      "name": "if the Lord wills",
+      "type": "figure",
+      "role": "piety",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.condemned-and-murdered-the-righteous-person-he-does-not-resist-you--f9e10fc2",
+      "name": "condemned and murdered the righteous person; he does not resist you",
+      "type": "figure",
+      "role": "injustice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.one-lawgiver-and-judge--c11208a9",
+      "name": "one lawgiver and judge",
+      "type": "figure",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.anger-of-man-does-not-produce-god-s-righteousness--8d32b172",
+      "name": "anger of man does not produce God’s righteousness",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.mercy-triumphs-over-judgment--deda726a",
+      "name": "mercy triumphs over judgment",
+      "type": "figure",
+      "role": "mercy",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.implanted-word--d0c764f5",
+      "name": "implanted word",
+      "type": "figure",
+      "role": "scripture",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.do-not-speak-evil-against-one-another--b27588ae",
+      "name": "do not speak evil against one another",
+      "type": "figure",
+      "role": "speech-ethic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.whoever-knows-the-good-and-fails-to-do-it-sin--901bb0ac",
+      "name": "whoever knows the good and fails to do it—sin",
+      "type": "figure",
+      "role": "omission",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.show-me-your-faith-apart-from-works--f52193bd",
+      "name": "show me your faith apart from works",
+      "type": "figure",
+      "role": "challenge",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sincere--f8b84e41",
+      "name": "sincere",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.disorder-and-every-vile-practice--15203931",
+      "name": "disorder and every vile practice",
+      "type": "figure",
+      "role": "result",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.save-his-soul-from-death-and-cover-a-multitude-of-sins--5dff3508",
+      "name": "save his soul from death and cover a multitude of sins",
+      "type": "figure",
+      "role": "salvation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-4-5-jealous-yearning-crux--f18cadf9",
+      "name": "Textual note: 4:5 jealous yearning crux",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.lowly-brother-boast-in-exaltation--7aee38b8",
+      "name": "lowly brother boast in exaltation",
+      "type": "figure",
+      "role": "reversal",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.be-wretched-mourn-weep--3d1610ba",
+      "name": "be wretched mourn weep",
+      "type": "figure",
+      "role": "repentance",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.you-desire-and-do-not-have-so-you-murder--f4f5237f",
+      "name": "you desire and do not have so you murder",
+      "type": "figure",
+      "role": "hyperbole",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.you-do-not-have-because-you-do-not-ask--70843234",
+      "name": "you do not have because you do not ask",
+      "type": "figure",
+      "role": "prayer",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.tongue-is-a-fire--24a7e325",
+      "name": "tongue is a fire",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.peaceable--bb799dca",
+      "name": "peaceable",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.impartial--60083ceb",
+      "name": "impartial",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.body-apart-from-spirit-is-dead--28229e5d",
+      "name": "body apart from spirit is dead",
+      "type": "figure",
+      "role": "analogy",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.bring-him-back--e1e3b560",
+      "name": "bring him back",
+      "type": "figure",
+      "role": "restoration",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.harvest-of-righteousness-sown-in-peace--9977dc0d",
+      "name": "harvest of righteousness sown in peace",
+      "type": "figure",
+      "role": "result",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.meekness-of-wisdom--7bb50753",
+      "name": "meekness of wisdom",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.garments-are-moth-eaten--32af555e",
+      "name": "garments are moth-eaten",
+      "type": "figure",
+      "role": "decay",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.weep-and-howl-you-rich--548e4bbd",
+      "name": "weep and howl you rich",
+      "type": "figure",
+      "role": "woe",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.anoint-with-oil-in-the-name-of-the-lord--1ac3ed62",
+      "name": "anoint with oil in the name of the Lord",
+      "type": "figure",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.stumble-at-one-point-guilty-of-all--118d585c",
+      "name": "stumble at one point guilty of all",
+      "type": "figure",
+      "role": "law",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.today-or-tomorrow-we-will-go-to-such-and-such-a-town--7b107b1d",
+      "name": "today or tomorrow we will go to such and such a town",
+      "type": "figure",
+      "role": "planning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.gold-and-silver-have-corroded--58910386",
+      "name": "gold and silver have corroded",
+      "type": "figure",
+      "role": "decay",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.farmer-waits-for-precious-fruit--6c800ea8",
+      "name": "farmer waits for precious fruit",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.the-lord-will-raise-him-up--97a0d259",
+      "name": "the Lord will raise him up",
+      "type": "figure",
+      "role": "promise",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.rahab-received-the-messengers--d42dc11e",
+      "name": "Rahab received the messengers",
+      "type": "figure",
+      "role": "hospitality",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.let-your-yes-be-yes-and-your-no-be-no--026133a9",
+      "name": "let your yes be yes and your no be no",
+      "type": "figure",
+      "role": "speech-ethic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.wages-kept-back-by-fraud-cry-out--a619b764",
+      "name": "wages kept back by fraud cry out",
+      "type": "figure",
+      "role": "injustice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.open-to-reason--0327b5e1",
+      "name": "open to reason",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.he-yearns-jealously-textual-crux--47e0b578",
+      "name": "He yearns jealously (textual crux)",
+      "type": "figure",
+      "role": "textual-crux",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.justified-by-works-james-s-usage--c65c3084",
+      "name": "justified by works (James’s usage)",
+      "type": "figure",
+      "role": "justification-usage",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.keep-unstained-from-the-world--6d4c6716",
+      "name": "keep unstained from the world",
+      "type": "figure",
+      "role": "holiness",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.passions-at-war-within-you--2705bde0",
+      "name": "passions at war within you",
+      "type": "figure",
+      "role": "anthropology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.doubting-like-a-wave-of-the-sea--1da97b0f",
+      "name": "doubting like a wave of the sea",
+      "type": "figure",
+      "role": "doubt",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.pure--b5bb3051",
+      "name": "pure",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.set-on-fire-by-gehenna--bfb290bc",
+      "name": "set on fire by Gehenna",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.synagogue-assembly--3b7a375a",
+      "name": "synagogue (assembly)",
+      "type": "entity",
+      "role": "assembly",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

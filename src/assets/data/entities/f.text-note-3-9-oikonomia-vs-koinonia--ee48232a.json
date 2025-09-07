@@ -1,0 +1,22 @@
+{
+  "name": "Text-note: 3:9 oikonomia vs koinonia",
+  "type": "figure",
+  "category": "textual-notes",
+  "references": [
+    "Eph 3:9"
+  ],
+  "note": "Reading oscillates between οἰκονομία (stewardship) and κοινωνία (fellowship).",
+  "aka": [],
+  "id": "f.text-note-3-9-oikonomia-vs-koinonia--ee48232a",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      3
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "book": "Leviticus",
+  "chapter": 5,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "g.people-of-israel--fa06221e",
+      "name": "People of Israel",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.sin-offering.chatat--807c7def",
+      "name": "Sin Offering (Chatat)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    },
+    {
+      "id": "e.guilt-offering.asham--cc37508a",
+      "name": "Guilt Offering (Asham)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    },
+    {
+      "id": "e.holy-things-of-the-lord--e40b2232",
+      "name": "Holy things of the LORD",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    }
+  ]
+}

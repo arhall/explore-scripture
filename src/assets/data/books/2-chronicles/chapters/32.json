@@ -1,0 +1,42 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 32,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "p.hezekiah-king-of-judah.chronicles-focus--66ee8fd1",
+      "name": "Hezekiah king of Judah (Chronicles focus)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "t.sennacherib-king-of-assyria-rabshakehs-taunts--6d6cf22a",
+      "name": "Sennacherib king of Assyria; Rabshakeh’s taunts",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.hezekiah-and-isaiah-pray-angel-strikes-the-camp--b4ddabff",
+      "name": "Hezekiah and Isaiah pray; angel strikes the camp",
+      "type": "entity",
+      "role": "theophany",
+      "refs_count": 1
+    },
+    {
+      "id": "e.hezekiahs-illness-pride-and-humility--d85ca974",
+      "name": "Hezekiah’s illness, pride, and humility",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1
+    },
+    {
+      "id": "e.hezekiahs-waterworks.siloam-tunnel--0e06be50",
+      "name": "Hezekiah’s waterworks (Siloam tunnel)",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1
+    }
+  ]
+}

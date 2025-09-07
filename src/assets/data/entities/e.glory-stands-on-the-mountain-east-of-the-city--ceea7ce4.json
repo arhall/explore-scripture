@@ -1,0 +1,18 @@
+{
+  "name": "Glory stands on the mountain east of the city",
+  "type": "entity",
+  "references": [
+    "Ezekiel 11:22–25"
+  ],
+  "blurb": "Presence pauses eastward as if waiting for repentance—mercy lingers even in judgment.",
+  "category": "theophany",
+  "id": "e.glory-stands-on-the-mountain-east-of-the-city--ceea7ce4",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      11
+    ]
+  }
+}

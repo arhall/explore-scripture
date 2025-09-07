@@ -1,0 +1,19 @@
+{
+  "name": "Ezer",
+  "type": "person",
+  "references": [
+    "Genesis 36:21,30"
+  ],
+  "blurb": "Horite chief, son of Seir; ancestor of Bilhan, Zaavan, Akan.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.ezer.gene-36-21-30--b3227947",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

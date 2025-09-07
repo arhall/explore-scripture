@@ -1,0 +1,18 @@
+{
+  "name": "YHWH relents… then will not relent",
+  "type": "entity",
+  "references": [
+    "Amos 7:3,6; 8:2"
+  ],
+  "blurb": "Pedagogy of patience gives way to decisive judgment when hardness persists.",
+  "category": "theology",
+  "id": "e.yhwh-relents-then-will-not-relent--caeb78e5",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Amos": [
+      7
+    ]
+  }
+}

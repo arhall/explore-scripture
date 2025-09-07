@@ -1,0 +1,23 @@
+{
+  "name": "Parmenas",
+  "type": "person",
+  "category": "the-seven",
+  "references": [
+    "Acts 6:5"
+  ],
+  "aka": [],
+  "id": "p.parmenas--bbca7ca8",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      6
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "e.patristic-&-reformation-reception--432c4352",
+  "name": "Patristic & Reformation reception",
+  "type": "entity",
+  "references": [],
+  "category": "reception-christian",
+  "blurb": "From Augustine to Luther, Habakkuk anchors discourse on faith, grace, and divine righteousness.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

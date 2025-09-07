@@ -1,0 +1,34 @@
+{
+  "name": "Cush",
+  "type": "person",
+  "references": [
+    "Genesis 10:6–20"
+  ],
+  "blurb": "Son of Ham; ancestor of significant Near Eastern peoples.",
+  "relations": {
+    "parents": [
+      "Ham"
+    ],
+    "children": [
+      "Seba",
+      "Havilah (Cushite)",
+      "Sabtah",
+      "Raamah",
+      "Sabteca",
+      "Nimrod"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "1 Chronicles 1"
+  ],
+  "id": "p.cush.gene-10-6-20--63e1a967",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

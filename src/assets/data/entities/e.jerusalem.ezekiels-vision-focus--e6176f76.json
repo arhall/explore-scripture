@@ -1,0 +1,14 @@
+{
+  "name": "Jerusalem (Ezekiel’s vision focus)",
+  "type": "entity",
+  "references": [
+    "Ezekiel 4–5; 8–11; 24"
+  ],
+  "blurb": "City under siege, defiled, and deserted by glory—yet target of future cleansing and re‑inhabitation.",
+  "category": "city",
+  "id": "e.jerusalem.ezekiels-vision-focus--e6176f76",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

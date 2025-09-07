@@ -1,0 +1,77 @@
+{
+  "book": "Revelation",
+  "chapter": 11,
+  "entity_count": 25,
+  "entities": [
+    {
+      "id": "e.temple-in-heaven-opened-ark-of-the-covenant-heaven-seen--af76568a",
+      "name": "temple in heaven opened; ark of the covenant (heaven) seen",
+      "type": "entity",
+      "role": "heavenly",
+      "refs_count": 1
+    },
+    {
+      "id": "f.the-two-witnesses-will-prophesy-for-1-260-days--fe2733f0",
+      "name": "the two witnesses will prophesy for 1,260 days",
+      "type": "figure",
+      "role": "duration",
+      "refs_count": 1
+    },
+    {
+      "id": "f.resurrection-and-ascension-of-the-witnesses--fdb4c91f",
+      "name": "resurrection and ascension of the witnesses",
+      "type": "figure",
+      "role": "vindication",
+      "refs_count": 1
+    },
+    {
+      "id": "f.they-strike-the-earth-with-every-plague-as-often-as-they-desire--9a66eccc",
+      "name": "they strike the earth with every plague as often as they desire",
+      "type": "figure",
+      "role": "witness-power",
+      "refs_count": 1
+    },
+    {
+      "id": "f.heptad-index--733a558f",
+      "name": "Heptad index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.they-shut-the-sky-so-that-no-rain-falls--fc90ff5b",
+      "name": "they shut the sky so that no rain falls",
+      "type": "figure",
+      "role": "witness-power",
+      "refs_count": 1
+    },
+    {
+      "id": "f.fire-comes-from-their-mouth-and-consumes-foes--39005ee7",
+      "name": "fire comes from their mouth and consumes foes",
+      "type": "figure",
+      "role": "witness-power",
+      "refs_count": 1
+    },
+    {
+      "id": "f.numeric-symbolism-index--20cda2ea",
+      "name": "Numeric symbolism index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "g.two-witnesses--0bc541e4",
+      "name": "two witnesses",
+      "type": "group",
+      "role": "prophetic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.lightnings-voices-thunders-earthquake-hail--f32bf811",
+      "name": "lightnings, voices, thunders, earthquake, hail",
+      "type": "figure",
+      "role": "theophany",
+      "refs_count": 1
+    }
+  ]
+}

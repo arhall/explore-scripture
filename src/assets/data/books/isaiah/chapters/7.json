@@ -1,0 +1,35 @@
+{
+  "book": "Isaiah",
+  "chapter": 7,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "p.ahaz-king-of-judah--189a5877",
+      "name": "Ahaz king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2
+    },
+    {
+      "id": "p.shear-jashub.a-remnant-shall-return--cc83fd77",
+      "name": "Shear‑jashub (‘A remnant shall return’)",
+      "type": "person",
+      "role": "sign-child",
+      "refs_count": 1
+    },
+    {
+      "id": "f.immanuel.god-with-us--eb10ce1b",
+      "name": "Immanuel (‘God with us’)",
+      "type": "figure",
+      "role": "sign",
+      "refs_count": 1
+    },
+    {
+      "id": "e.syro-ephraimite-crisis-waters-of-shiloah--588f305a",
+      "name": "Syro‑Ephraimite crisis & waters of Shiloah",
+      "type": "entity",
+      "role": "history",
+      "refs_count": 1
+    }
+  ]
+}

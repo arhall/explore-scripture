@@ -1,0 +1,18 @@
+{
+  "name": "Mother’s house & maternal figures",
+  "type": "entity",
+  "references": [
+    "Song 3:4; 8:2,5"
+  ],
+  "blurb": "Site of nurture and intimacy; the beloved longs to bring him to her mother’s house—love is embedded in family memory and blessing.",
+  "category": "family",
+  "id": "e.mothers-house-maternal-figures--011e9b3e",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Song of Songs": [
+      3
+    ]
+  }
+}

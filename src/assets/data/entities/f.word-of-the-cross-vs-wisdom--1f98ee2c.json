@@ -1,0 +1,33 @@
+{
+  "name": "Word of the cross vs wisdom",
+  "type": "figure",
+  "category": "paradox",
+  "references": [
+    "1 Cor 1:18–25"
+  ],
+  "greek_terms": [
+    {
+      "term": "μωρία/σοφία",
+      "gloss": "folly/wisdom"
+    }
+  ],
+  "ot_quotes": [
+    {
+      "src": "Isa 29:14; Job 5:13; Jer 9:23–24",
+      "type": "catena"
+    }
+  ],
+  "aka": [],
+  "id": "f.word-of-the-cross-vs-wisdom--1f98ee2c",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "1 Corinthians": [
+      1
+    ]
+  }
+}

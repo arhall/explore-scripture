@@ -1,0 +1,20 @@
+{
+  "id": "e.selah--ae23b118",
+  "name": "Selah",
+  "type": "entity",
+  "references": [
+    "Hab 3:3",
+    "Hab 3:9",
+    "Hab 3:13"
+  ],
+  "category": "musical-marker",
+  "blurb": "Liturgical pause or interlude; signals meditation or musical lift.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      3
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Molech (Moloch)",
+  "type": "figure",
+  "references": [
+    "Leviticus 18:21; 20:2–5"
+  ],
+  "blurb": "Idolatrous figure associated with child sacrifice. Leviticus prohibits giving offspring to Molech, tying idolatry to injustice and land defilement.",
+  "category": "narrative",
+  "cross_references": [
+    "2 Kings 23:10",
+    "Jeremiah 32:35",
+    "Acts 7:43"
+  ],
+  "id": "f.molech.moloch--8ac107cc",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Leviticus": [
+      18
+    ]
+  }
+}

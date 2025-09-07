@@ -1,0 +1,20 @@
+{
+  "id": "e.colored-horses--38c585da",
+  "name": "Colored horses",
+  "type": "entity",
+  "references": [
+    "Zech 1:8",
+    "Zech 6:2-3"
+  ],
+  "category": "vision-creatures",
+  "blurb": "Red, sorrel, white—later chariot teams patrolling the earth.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      1,
+      6
+    ]
+  }
+}

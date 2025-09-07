@@ -1,0 +1,49 @@
+{
+  "book": "John",
+  "chapter": 15,
+  "entity_count": 6,
+  "entities": [
+    {
+      "id": "f.witnesses-in-john--89d2e356",
+      "name": "Witnesses in John",
+      "type": "figure",
+      "role": "theme",
+      "refs_count": 3
+    },
+    {
+      "id": "f.paraclete-sayings-index--af55cb78",
+      "name": "Paraclete sayings (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 3
+    },
+    {
+      "id": "t.i-am-true-vine--ef98f604",
+      "name": "I AM: True Vine",
+      "type": "title",
+      "role": "i-am",
+      "refs_count": 3
+    },
+    {
+      "id": "f.abiding-theme--05e8eef9",
+      "name": "Abiding (μένω) theme",
+      "type": "figure",
+      "role": "theme",
+      "refs_count": 1
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "e.paraclete-discourse-ii--f66246c0",
+      "name": "Paraclete discourse II",
+      "type": "entity",
+      "role": "discourse",
+      "refs_count": 1
+    }
+  ]
+}

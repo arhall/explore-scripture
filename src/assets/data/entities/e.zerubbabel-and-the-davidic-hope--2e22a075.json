@@ -1,0 +1,18 @@
+{
+  "id": "e.zerubbabel-and-the-davidic-hope--2e22a075",
+  "name": "Zerubbabel and the Davidic hope",
+  "type": "entity",
+  "references": [
+    "Hag 2:23"
+  ],
+  "category": "messianic-horizon",
+  "blurb": "Signet promise sustains expectation of Davidic restoration without immediate enthronement.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      2
+    ]
+  }
+}

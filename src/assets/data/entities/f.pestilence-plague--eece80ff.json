@@ -1,0 +1,18 @@
+{
+  "id": "f.pestilence-plague--eece80ff",
+  "name": "Pestilence/Plague",
+  "type": "figure",
+  "references": [
+    "Hab 3:5"
+  ],
+  "category": "theophany-attendant",
+  "blurb": "Before him goes pestilence; plague follows—agents of judgment at his command.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      3
+    ]
+  }
+}

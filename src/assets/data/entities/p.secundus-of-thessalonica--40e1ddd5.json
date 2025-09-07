@@ -1,0 +1,17 @@
+{
+  "name": "Secundus of Thessalonica",
+  "type": "person",
+  "category": "coworker",
+  "references": [
+    "Acts 20:4"
+  ],
+  "aka": [
+    "Secundus"
+  ],
+  "id": "p.secundus-of-thessalonica--40e1ddd5",
+  "book_references": {
+    "Acts": [
+      20
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Zepho",
+  "type": "person",
+  "references": [
+    "Genesis 36:11,15"
+  ],
+  "blurb": "Son of Eliphaz; later a clan chief in Edom.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.zepho.gene-36-11-15--65d599e4",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

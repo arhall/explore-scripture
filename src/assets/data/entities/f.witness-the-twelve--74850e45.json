@@ -1,0 +1,21 @@
+{
+  "name": "Witness: The Twelve",
+  "type": "figure",
+  "category": "witness",
+  "references": [
+    "1 Cor 15:5–8"
+  ],
+  "aka": [],
+  "id": "f.witness-the-twelve--74850e45",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "1 Corinthians": [
+      15
+    ]
+  }
+}

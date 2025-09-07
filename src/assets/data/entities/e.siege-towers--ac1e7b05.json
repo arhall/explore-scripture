@@ -1,0 +1,21 @@
+{
+  "id": "e.siege-towers--ac1e7b05",
+  "name": "Siege towers",
+  "type": "entity",
+  "references": [
+    "Nah 2:5 (implied)"
+  ],
+  "category": "military",
+  "aka": [
+    "Mantelets"
+  ],
+  "blurb": "Protective structures for assault forces; their approach signals Nineveh’s end.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      2
+    ]
+  }
+}

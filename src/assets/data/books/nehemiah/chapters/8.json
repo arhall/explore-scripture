@@ -1,0 +1,28 @@
+{
+  "book": "Nehemiah",
+  "chapter": 8,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "e.ezra-reads-the-law-at-the-water-gate--c39059e8",
+      "name": "Ezra reads the Law at the Water Gate",
+      "type": "entity",
+      "role": "worship",
+      "refs_count": 1
+    },
+    {
+      "id": "g.names-of-levites-who-instruct.jeshua-bani-sherebiah-jamin-akkub-shabbethai-hodiah-maaseiah-kelita-azariah-jozabad-hanan-pelaiah--41a86d83",
+      "name": "Names of Levites who instruct (Jeshua, Bani, Sherebiah, Jamin, Akkub, Shabbethai, Hodiah, Maaseiah, Kelita, Azariah, Jozabad, Hanan, Pelaiah)",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1
+    },
+    {
+      "id": "e.feast-of-booths-restored-since-the-days-of-joshua--915587af",
+      "name": "Feast of Booths restored ‘since the days of Joshua’",
+      "type": "entity",
+      "role": "festival",
+      "refs_count": 1
+    }
+  ]
+}

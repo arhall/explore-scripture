@@ -1,0 +1,21 @@
+{
+  "id": "e.god-singing-over-his-people--933be0c6",
+  "name": "God singing over his people",
+  "type": "entity",
+  "references": [
+    "Zeph 3:17"
+  ],
+  "category": "theology",
+  "cross_references": [
+    "Isa 62:5"
+  ],
+  "blurb": "Unique biblical image shaping mystical and pastoral traditions.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zephaniah": [
+      3
+    ]
+  }
+}

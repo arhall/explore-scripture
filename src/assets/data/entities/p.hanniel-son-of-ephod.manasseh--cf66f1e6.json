@@ -1,0 +1,18 @@
+{
+  "name": "Hanniel son of Ephod (Manasseh)",
+  "type": "person",
+  "references": [
+    "Numbers 34:23"
+  ],
+  "blurb": "Leader appointed to assist in apportioning Canaan by tribe.",
+  "category": "narrative",
+  "id": "p.hanniel-son-of-ephod.manasseh--cf66f1e6",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      34
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Sickle and winepress of wrath",
+  "type": "entity",
+  "references": [
+    "Joel 3:13"
+  ],
+  "blurb": "Harvest metaphors for judgment ripeness—grapes of wrath trodden.",
+  "category": "judgment",
+  "id": "e.sickle-and-winepress-of-wrath--a450c6ae",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      3
+    ]
+  }
+}

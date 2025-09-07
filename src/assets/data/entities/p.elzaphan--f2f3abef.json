@@ -1,0 +1,21 @@
+{
+  "name": "Elzaphan",
+  "type": "person",
+  "references": [
+    "Exodus 6:22"
+  ],
+  "blurb": "Son of Uzziel; later clan leader.",
+  "category": "genealogy",
+  "cross_references": [
+    "Numbers 3:30"
+  ],
+  "id": "p.elzaphan--f2f3abef",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      6
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Leviticus",
+  "chapter": 24,
+  "entity_count": 7,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "g.people-of-israel--fa06221e",
+      "name": "People of Israel",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.shelomith-daughter-of-dibri-of-the-tribe-of-dan--22637e2c",
+      "name": "Shelomith daughter of Dibri, of the tribe of Dan",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.the-blasphemer.half-israelite-half-egyptian--58e0a9f0",
+      "name": "The blasphemer (half-Israelite, half-Egyptian)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.community-witnesses.execution--c061beef",
+      "name": "Community witnesses (execution)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.bread-of-the-presence--74efe08b",
+      "name": "Bread of the Presence",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 2
+    },
+    {
+      "id": "e.lamp-perpetual-light--d54fbf3c",
+      "name": "Lamp / perpetual light",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    }
+  ]
+}

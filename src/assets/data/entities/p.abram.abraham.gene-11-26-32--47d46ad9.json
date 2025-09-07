@@ -1,0 +1,37 @@
+{
+  "name": "Abram (Abraham)",
+  "type": "person",
+  "references": [
+    "Genesis 11:26–32"
+  ],
+  "blurb": "Introduced as son of Terah alongside Nahor and Haran. His full narrative begins in Genesis 12.",
+  "aka": [
+    "Abraham"
+  ],
+  "relations": {
+    "parents": [
+      "Terah"
+    ],
+    "siblings": [
+      "Nahor (brother of Abram)",
+      "Haran"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "Genesis 12:1–3",
+    "Romans 4"
+  ],
+  "id": "p.abram.abraham.gene-11-26-32--47d46ad9",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "p.abram.abraham.gene-12-25--f1081cc7"
+  ],
+  "book_references": {
+    "Genesis": [
+      11
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 16,
+  "entity_count": 15,
+  "entities": [
+    {
+      "id": "e.jerusalem--d3a5bc90",
+      "name": "Jerusalem",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 7
+    },
+    {
+      "id": "e.achaia--ba67eea7",
+      "name": "Achaia",
+      "type": "entity",
+      "role": "province",
+      "refs_count": 3
+    },
+    {
+      "id": "g.household-of-stephanas-firstfruits--ed90ba33",
+      "name": "Household of Stephanas (firstfruits)",
+      "type": "group",
+      "role": "household",
+      "refs_count": 1
+    },
+    {
+      "id": "p.apollos-reluctance--82aaf4b1",
+      "name": "Apollos’ reluctance",
+      "type": "person",
+      "role": "teacher",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "g.fortunatus-and-achaicus--ac843559",
+      "name": "Fortunatus and Achaicus",
+      "type": "group",
+      "role": "delegates",
+      "refs_count": 1
+    },
+    {
+      "id": "f.textual-note-1-cor-16-22-maranatha-segmentation--3268e710",
+      "name": "Textual note: 1 Cor 16:22 Maranatha segmentation",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1
+    },
+    {
+      "id": "e.ephesus--a81cfcdf",
+      "name": "Ephesus",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 5
+    },
+    {
+      "id": "f.travel-plans-and-wide-door-ephesus--0ec9a9c9",
+      "name": "Travel plans and wide door (Ephesus)",
+      "type": "figure",
+      "role": "travel",
+      "refs_count": 1
+    },
+    {
+      "id": "p.timothy-s-visit--5b0fdcad",
+      "name": "Timothy’s visit",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1
+    }
+  ]
+}

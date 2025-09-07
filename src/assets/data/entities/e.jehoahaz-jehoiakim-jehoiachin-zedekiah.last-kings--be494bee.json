@@ -1,0 +1,18 @@
+{
+  "name": "Jehoahaz, Jehoiakim, Jehoiachin, Zedekiah (last kings)",
+  "type": "entity",
+  "references": [
+    "2 Chronicles 36:1–14"
+  ],
+  "blurb": "Rapid decline under foreign pressures and domestic unfaithfulness—prophets mocked, mercy exhausted.",
+  "category": "record",
+  "id": "e.jehoahaz-jehoiakim-jehoiachin-zedekiah.last-kings--be494bee",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "2 Chronicles": [
+      36
+    ]
+  }
+}

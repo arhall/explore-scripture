@@ -1,0 +1,23 @@
+{
+  "name": "Men of Cyprus and Cyrene (founders)",
+  "type": "group",
+  "category": "mission",
+  "references": [
+    "Acts 11:20"
+  ],
+  "aka": [],
+  "id": "g.men-of-cyprus-and-cyrene-founders--4979b646",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      11
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "f.second-answer--81b98bb6",
+  "name": "Second answer",
+  "type": "figure",
+  "references": [
+    "Hab 2:2-20"
+  ],
+  "category": "literary-unit",
+  "blurb": "Write the vision; it will not delay. The righteous live by faith; five woes pronounce doom on imperial vices; creation must be silent before the LORD in his holy temple.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      2
+    ]
+  }
+}

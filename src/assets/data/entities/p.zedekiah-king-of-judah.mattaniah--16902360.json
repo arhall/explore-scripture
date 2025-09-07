@@ -1,0 +1,17 @@
+{
+  "name": "Zedekiah (Mattaniah) king of Judah",
+  "type": "person",
+  "references": [
+    "Jeremiah 21; 24; 27–29; 32; 34; 37–39"
+  ],
+  "blurb": "Vacillates between fear and inquiry; repeatedly consults Jeremiah but refuses obedience—tragic figure presiding over the fall.",
+  "relations": {
+    "kingdom": "Judah"
+  },
+  "category": "king",
+  "id": "p.zedekiah-king-of-judah.mattaniah--16902360",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

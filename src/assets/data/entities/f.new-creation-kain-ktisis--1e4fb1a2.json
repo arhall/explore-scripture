@@ -1,0 +1,27 @@
+{
+  "name": "New creation (kainē ktisis)",
+  "type": "figure",
+  "category": "new-creation",
+  "references": [
+    "Gal 6:15"
+  ],
+  "greek_terms": [
+    {
+      "term": "καινὴ κτίσις",
+      "gloss": "new creation"
+    }
+  ],
+  "aka": [],
+  "id": "f.new-creation-kain-ktisis--1e4fb1a2",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Galatians": [
+      6
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "t.acrostic-hymn--b6e3c5a0",
+  "name": "Acrostic Hymn (Nahum 1)",
+  "type": "title",
+  "references": [
+    "Nah 1:2–8"
+  ],
+  "category": "poetic-structure",
+  "aka": [
+    "Alphabetic hymn (partial)"
+  ],
+  "blurb": "Scholars detect alphabetic sequencing in 1:2–8, a hymn extolling God’s justice and refuge; establishes the theological key for the book.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      1
+    ]
+  }
+}

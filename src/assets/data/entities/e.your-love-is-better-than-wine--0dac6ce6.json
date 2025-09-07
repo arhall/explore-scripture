@@ -1,0 +1,18 @@
+{
+  "name": "‘Your love is better than wine’",
+  "type": "entity",
+  "references": [
+    "Song 1:2–4"
+  ],
+  "blurb": "Opening prayer of desire—love surpasses luxury; the king brings her into his chambers, yet agency remains with the woman’s voice.",
+  "category": "poetry",
+  "id": "e.your-love-is-better-than-wine--0dac6ce6",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Song of Songs": [
+      1
+    ]
+  }
+}

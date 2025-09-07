@@ -1,0 +1,26 @@
+{
+  "name": "Festival, new moon, Sabbath (calendar triad)",
+  "type": "figure",
+  "category": "calendar",
+  "references": [
+    "Col 2:16"
+  ],
+  "festival": [
+    "festival",
+    "new moon",
+    "Sabbath"
+  ],
+  "aka": [],
+  "id": "f.festival-new-moon-sabbath-calendar-triad--b4ff7313",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      2
+    ]
+  }
+}

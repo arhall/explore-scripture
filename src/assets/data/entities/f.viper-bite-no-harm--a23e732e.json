@@ -1,0 +1,23 @@
+{
+  "name": "Viper bite (no harm)",
+  "type": "figure",
+  "category": "sign",
+  "references": [
+    "Acts 28:3–6"
+  ],
+  "aka": [],
+  "id": "f.viper-bite-no-harm--a23e732e",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      28
+    ]
+  }
+}

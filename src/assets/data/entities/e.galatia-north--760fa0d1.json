@@ -1,0 +1,18 @@
+{
+  "name": "Galatia (North)",
+  "type": "entity",
+  "category": "region",
+  "references": [
+    "Gal recipients"
+  ],
+  "note": "North Galatia hypothesis: ethnic Galatian territory; debated.",
+  "aka": [],
+  "id": "e.galatia-north--760fa0d1",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {}
+}

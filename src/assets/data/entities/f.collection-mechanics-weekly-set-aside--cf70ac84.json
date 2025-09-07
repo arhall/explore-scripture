@@ -1,0 +1,22 @@
+{
+  "name": "Collection mechanics (weekly set-aside)",
+  "type": "figure",
+  "category": "collection",
+  "references": [
+    "1 Cor 16:1–4"
+  ],
+  "collection_context": true,
+  "aka": [],
+  "id": "f.collection-mechanics-weekly-set-aside--cf70ac84",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "1 Corinthians": [
+      16
+    ]
+  }
+}

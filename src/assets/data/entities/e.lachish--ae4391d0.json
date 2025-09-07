@@ -1,0 +1,18 @@
+{
+  "id": "e.lachish--ae4391d0",
+  "name": "Lachish",
+  "type": "entity",
+  "references": [
+    "Micah 1:13"
+  ],
+  "category": "city-wordplay",
+  "blurb": "War-horse city—first to import northern idolatry into Judah; a relay station of sin.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      1
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "mighty angel with little scroll",
+  "type": "person",
+  "category": "angelic",
+  "references": [
+    "Rev 10:1-7"
+  ],
+  "aka": [],
+  "id": "p.mighty-angel-with-little-scroll--0bee7c79",
+  "book_references": {
+    "Revelation": [
+      10
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "e.holiness-&-defilement-transfer-logic--932d3695",
+  "name": "Holiness & defilement transfer logic",
+  "type": "entity",
+  "references": [
+    "Hag 2:11-14"
+  ],
+  "category": "ritual-theology",
+  "blurb": "Hermeneutic key: impurity spreads; holiness requires consecration and obedience.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      2
+    ]
+  }
+}

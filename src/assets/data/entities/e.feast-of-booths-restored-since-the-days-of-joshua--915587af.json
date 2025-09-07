@@ -1,0 +1,18 @@
+{
+  "name": "Feast of Booths restored ‘since the days of Joshua’",
+  "type": "entity",
+  "references": [
+    "Nehemiah 8:13–18"
+  ],
+  "blurb": "Renewed obedience leads to unusual gladness—scripture-guided celebration reforms culture.",
+  "category": "festival",
+  "id": "e.feast-of-booths-restored-since-the-days-of-joshua--915587af",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      8
+    ]
+  }
+}

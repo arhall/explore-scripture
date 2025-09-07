@@ -1,0 +1,28 @@
+{
+  "name": "Asenath",
+  "type": "person",
+  "references": [
+    "Genesis 41:45; 46:20"
+  ],
+  "blurb": "Joseph’s Egyptian wife who bears Manasseh and Ephraim—signal of Israel’s fruitfulness in a foreign land.",
+  "relations": {
+    "parents": [
+      "Potiphera priest of On"
+    ],
+    "children": [
+      "Manasseh",
+      "Ephraim"
+    ]
+  },
+  "category": "narrative",
+  "cross_references": [],
+  "id": "p.asenath.gene-41-45-46-20--1b107f0d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      41
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Hezekiah king of Judah (Chronicles focus)",
+  "type": "person",
+  "references": [
+    "2 Chronicles 29–32"
+  ],
+  "blurb": "Reopens the temple, mobilizes Levites, celebrates a great Passover; prays against Assyria and lives to see deliverance—faith ordered to worship.",
+  "category": "narrative",
+  "id": "p.hezekiah-king-of-judah.chronicles-focus--66ee8fd1",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "2 Chronicles": [
+      29,
+      30,
+      31,
+      32
+    ]
+  }
+}

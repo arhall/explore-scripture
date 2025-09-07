@@ -1,0 +1,24 @@
+{
+  "name": "Ethiopian eunuch (Gaza road)",
+  "type": "person",
+  "category": "convert",
+  "references": [
+    "Acts 8:26–39"
+  ],
+  "blurb": "Treasurer of Candace; baptized after Isaiah 53 exposition.",
+  "aka": [],
+  "id": "p.ethiopian-eunuch-gaza-road--536d0bac",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      8
+    ]
+  }
+}

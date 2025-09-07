@@ -1,0 +1,12 @@
+{
+  "id": "e.liturgical-use--2bb41b2b",
+  "name": "Liturgical use",
+  "type": "entity",
+  "references": [],
+  "category": "reception-liturgical",
+  "blurb": "Christian lectionaries deploy Hab 2:4 and Hab 3 in Advent/Theophany themes; Jewish readings emphasize waiting and divine justice.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

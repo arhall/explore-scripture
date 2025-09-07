@@ -1,0 +1,20 @@
+{
+  "name": "Men of Anathoth",
+  "type": "group",
+  "references": [
+    "Ezra 2:23"
+  ],
+  "blurb": "Enumerated among the first returnees under Zerubbabel; their counted men totaled 128. Family identity stabilizes land claims and synagogue-era communities; numbers witness to costly obedience.",
+  "category": "record",
+  "count": 128,
+  "count_note": "Count per Ezra 2:23",
+  "id": "g.men-of-anathoth--c7e293fc",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      2
+    ]
+  }
+}

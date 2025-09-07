@@ -1,0 +1,18 @@
+{
+  "id": "e.silver-&-gold-cannot-deliver--d95b9b68",
+  "name": "Silver & gold (cannot deliver)",
+  "type": "entity",
+  "references": [
+    "Zeph 1:18"
+  ],
+  "category": "economic",
+  "blurb": "Wealth is powerless to avert the Day’s wrath.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zephaniah": [
+      1
+    ]
+  }
+}

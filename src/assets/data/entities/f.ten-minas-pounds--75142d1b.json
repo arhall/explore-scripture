@@ -1,0 +1,25 @@
+{
+  "name": "Ten Minas (Pounds)",
+  "type": "figure",
+  "category": "parable",
+  "references": [
+    "Luke 19:11–27"
+  ],
+  "unique_to": "Luke",
+  "blurb": "Parallel in theme to Matthew’s Talents; emphasizes accountability during the king’s absence.",
+  "aka": [],
+  "id": "f.ten-minas-pounds--75142d1b",
+  "source_book": "Luke",
+  "source_books": [
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Luke": [
+      19
+    ]
+  }
+}

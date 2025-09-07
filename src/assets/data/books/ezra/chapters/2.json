@@ -1,0 +1,77 @@
+{
+  "book": "Ezra",
+  "chapter": 2,
+  "entity_count": 95,
+  "entities": [
+    {
+      "id": "p.zerubbabel-son-of-shealtiel--966cfda8",
+      "name": "Zerubbabel son of Shealtiel",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.jeshua-son-of-jozadak.joshua--5d860647",
+      "name": "Jeshua (Joshua) son of Jozadak",
+      "type": "person",
+      "role": "worship",
+      "refs_count": 1
+    },
+    {
+      "id": "g.named-leaders-accompanying-zerubbabel.ezra-2-2--6f73874d",
+      "name": "Named leaders accompanying Zerubbabel (Ezra 2:2)",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1
+    },
+    {
+      "id": "g.sons-of-parosh--753cb456",
+      "name": "Sons of Parosh",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1
+    },
+    {
+      "id": "g.sons-of-shephatiah--1d54e1d1",
+      "name": "Sons of Shephatiah",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1
+    },
+    {
+      "id": "g.sons-of-arah--08309426",
+      "name": "Sons of Arah",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1
+    },
+    {
+      "id": "g.sons-of-pahath-moab.of-jeshua-and-joab--d72e5460",
+      "name": "Sons of Pahath-Moab (of Jeshua and Joab)",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1
+    },
+    {
+      "id": "g.sons-of-elam--61042361",
+      "name": "Sons of Elam",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1
+    },
+    {
+      "id": "g.sons-of-zattu--bba62e8b",
+      "name": "Sons of Zattu",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1
+    },
+    {
+      "id": "g.sons-of-zaccai--bf4192da",
+      "name": "Sons of Zaccai",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1
+    }
+  ]
+}

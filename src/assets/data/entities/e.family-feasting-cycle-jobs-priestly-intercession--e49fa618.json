@@ -1,0 +1,18 @@
+{
+  "name": "Family feasting cycle & Job’s priestly intercession",
+  "type": "entity",
+  "references": [
+    "Job 1:4–5"
+  ],
+  "blurb": "Sons host rotating banquets; Job rises early to offer burnt offerings ‘perhaps my children have sinned’—intercession anchors festivity.",
+  "category": "worship",
+  "id": "e.family-feasting-cycle-jobs-priestly-intercession--e49fa618",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Job": [
+      1
+    ]
+  }
+}

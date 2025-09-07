@@ -1,0 +1,18 @@
+{
+  "id": "e.sacrifice-banquet-of-the-lord--0262555e",
+  "name": "Sacrifice/banquet of the LORD",
+  "type": "entity",
+  "references": [
+    "Zeph 1:7-8"
+  ],
+  "category": "judgment-feast",
+  "blurb": "Irony: the LORD prepares a sacrificial feast where the guests are those judged.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zephaniah": [
+      1
+    ]
+  }
+}

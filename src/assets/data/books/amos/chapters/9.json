@@ -1,0 +1,63 @@
+{
+  "book": "Amos",
+  "chapter": 9,
+  "entity_count": 8,
+  "entities": [
+    {
+      "id": "e.mount-carmel--c55d162a",
+      "name": "Mount Carmel",
+      "type": "entity",
+      "role": "mount",
+      "refs_count": 1
+    },
+    {
+      "id": "g.philistia-aram.migration-sovereignty--39a4caf3",
+      "name": "Philistia & Aram (migration sovereignty)",
+      "type": "group",
+      "role": "sovereignty",
+      "refs_count": 1
+    },
+    {
+      "id": "e.vision-yhwh-beside-the-altar--e502bc1a",
+      "name": "Vision: YHWH beside the altar",
+      "type": "entity",
+      "role": "vision",
+      "refs_count": 1
+    },
+    {
+      "id": "e.hymn-the-lord-of-hosts-who-builds-his-chambers--5fdf2632",
+      "name": "Hymn: The LORD of hosts… who builds his chambers",
+      "type": "entity",
+      "role": "hymn",
+      "refs_count": 1
+    },
+    {
+      "id": "f.booth-of-david-restored--49a1d18e",
+      "name": "Booth of David restored",
+      "type": "figure",
+      "role": "restoration",
+      "refs_count": 1
+    },
+    {
+      "id": "g.nations-called-by-my-name--043ba148",
+      "name": "Nations called by my name",
+      "type": "group",
+      "role": "mission",
+      "refs_count": 1
+    },
+    {
+      "id": "e.plowman-overtakes-reaper-mountains-drip-wine--49fa99c3",
+      "name": "Plowman overtakes reaper; mountains drip wine",
+      "type": "entity",
+      "role": "new-creation",
+      "refs_count": 1
+    },
+    {
+      "id": "e.replanted-in-their-land-never-again-uprooted--ad03c651",
+      "name": "Replanted in their land, never again uprooted",
+      "type": "entity",
+      "role": "promise",
+      "refs_count": 1
+    }
+  ]
+}

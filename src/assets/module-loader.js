@@ -18,7 +18,6 @@ class ModuleLoader {
       ],
       
       // Page-specific modules
-      'character-search': '/assets/character-search.js',
       'chapter-reader': '/assets/chapter-reader.js',
       'commentary-reader': '/assets/commentary-reader.js',
       'scripture-widget': '/assets/scripture-widget.js',
@@ -26,7 +25,8 @@ class ModuleLoader {
       'search-interface': '/assets/search-interface.js',
       'theme-manager': '/assets/theme-manager.js',
       'telemetry': '/assets/telemetry.js',
-      'debug-dashboard': '/assets/debug-dashboard.js'
+      'debug-dashboard': '/assets/debug-dashboard.js',
+      'gospel-thread': '/assets/gospel-thread.js'
     };
     
     this.init();
@@ -126,10 +126,6 @@ class ModuleLoader {
             this.loadModule('chapter-reader');
           }
           
-          // Load Character Search when search elements are visible
-          if (target.querySelector('#characterSearch') && !this.loadedModules.has(this.moduleConfig['character-search'])) {
-            this.loadModule('character-search');
-          }
         }
       });
     }, {
@@ -194,8 +190,6 @@ class ModuleLoader {
   loadPageSpecificModules() {
     const pathname = window.location.pathname;
     
-    // No search modules to load
-    
     // Book pages - load chapter reader and commentary reader immediately
     if (pathname.startsWith('/books/')) {
       console.log('[ModuleLoader] Loading chapter reader and commentary reader for book page');
@@ -203,12 +197,10 @@ class ModuleLoader {
       this.loadModule('commentary-reader');
     }
     
-    // Character pages - might need character search
-    if (pathname.startsWith('/characters/')) {
-      // Load character search on character listing pages
-      if (pathname === '/characters/' || pathname.includes('characters/page/')) {
-        this.loadModule('character-search');
-      }
+    // Gospel thread page - load navigation and deep linking
+    if (pathname === '/gospel-thread/') {
+      console.log('[ModuleLoader] Loading gospel thread navigation for gospel thread page');
+      this.loadModule('gospel-thread');
     }
     
     // Theme manager is now loaded as core module, so no need to load again
@@ -243,8 +235,6 @@ class ModuleLoader {
     if (nextPath.startsWith('/books/')) {
       this.loadModule('chapter-reader');
       this.loadModule('commentary-reader');
-    } else if (nextPath.startsWith('/characters/') && (nextPath === '/characters/' || nextPath.includes('/page/'))) {
-      this.loadModule('character-search');
     }
   }
   

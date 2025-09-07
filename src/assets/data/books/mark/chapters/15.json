@@ -1,0 +1,77 @@
+{
+  "book": "Mark",
+  "chapter": 15,
+  "entity_count": 10,
+  "entities": [
+    {
+      "id": "p.barabbas--60bde694",
+      "name": "Barabbas",
+      "type": "person",
+      "role": "passion",
+      "refs_count": 1
+    },
+    {
+      "id": "f.tearing-of-the-temple-veil--9217386d",
+      "name": "Tearing of the Temple veil",
+      "type": "figure",
+      "role": "sign",
+      "refs_count": 1
+    },
+    {
+      "id": "g.chief-priests--dbda0b67",
+      "name": "Chief Priests",
+      "type": "group",
+      "role": "leadership",
+      "refs_count": 2
+    },
+    {
+      "id": "e.golgotha--dcf7176b",
+      "name": "Golgotha",
+      "type": "entity",
+      "role": "place-of-execution",
+      "refs_count": 2
+    },
+    {
+      "id": "p.simon-of-cyrene--60e8beaa",
+      "name": "Simon of Cyrene",
+      "type": "person",
+      "role": "passion",
+      "refs_count": 1
+    },
+    {
+      "id": "p.roman-centurion-at-the-cross--9e7e4bcd",
+      "name": "Roman centurion at the cross",
+      "type": "person",
+      "role": "gentile-witness",
+      "refs_count": 2
+    },
+    {
+      "id": "t.son-of-god--960b6889",
+      "name": "Son of God",
+      "type": "title",
+      "role": "christological-title",
+      "refs_count": 5
+    },
+    {
+      "id": "p.pontius-pilate--d8964343",
+      "name": "Pontius Pilate",
+      "type": "person",
+      "role": "prefect",
+      "refs_count": 5
+    },
+    {
+      "id": "f.eloi-eloi-lema-sabachthani--75fbf456",
+      "name": "Eloi, Eloi, lema sabachthani",
+      "type": "figure",
+      "role": "saying",
+      "refs_count": 1
+    },
+    {
+      "id": "p.joseph-of-arimathea--e7ff4ac4",
+      "name": "Joseph of Arimathea",
+      "type": "person",
+      "role": "disciple",
+      "refs_count": 3
+    }
+  ]
+}

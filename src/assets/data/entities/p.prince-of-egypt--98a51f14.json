@@ -1,0 +1,21 @@
+{
+  "name": "Prince of Egypt",
+  "type": "person",
+  "references": [
+    "Ezekiel 30:13–19"
+  ],
+  "blurb": "Target of judgment oracles; cities crumble and idols cease—political power is theological.",
+  "relations": {
+    "kingdom": "Egypt"
+  },
+  "category": "prince",
+  "id": "p.prince-of-egypt--98a51f14",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      30
+    ]
+  }
+}

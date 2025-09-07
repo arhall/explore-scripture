@@ -1,0 +1,14 @@
+{
+  "book": "Joshua",
+  "chapter": 1,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "p.joshua--65483c95",
+      "name": "Joshua",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

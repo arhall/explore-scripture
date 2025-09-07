@@ -1,0 +1,28 @@
+{
+  "name": "Nadab",
+  "type": "person",
+  "references": [
+    "Exodus 24:1,9; 28:1",
+    "Exodus 6:23; 24:1,9; 28:1",
+    "Leviticus 10:1–2"
+  ],
+  "blurb": "Eldest son of Aaron who ascends partway up Sinai; later dies for unauthorized fire—holiness is not casual.",
+  "category": "narrative",
+  "cross_references": [
+    "Leviticus 10:1–2",
+    "Numbers 3:4"
+  ],
+  "id": "p.nadab--51b037c1",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      6,
+      24
+    ],
+    "Leviticus": [
+      10
+    ]
+  }
+}

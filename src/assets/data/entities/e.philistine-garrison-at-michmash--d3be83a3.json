@@ -1,0 +1,19 @@
+{
+  "name": "Philistine garrison at Michmash",
+  "type": "entity",
+  "references": [
+    "1 Samuel 13–14"
+  ],
+  "blurb": "Strategic outpost overturned by trust-driven initiative.",
+  "category": "place",
+  "id": "e.philistine-garrison-at-michmash--d3be83a3",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      13,
+      14
+    ]
+  }
+}

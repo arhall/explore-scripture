@@ -1,0 +1,35 @@
+{
+  "book": "Leviticus",
+  "chapter": 9,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "f.glory-of-the-lord--eadf4e36",
+      "name": "Glory of the LORD",
+      "type": "figure",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.people-of-israel--fa06221e",
+      "name": "People of Israel",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.ordination-offering-ram-of-ordination--b0452675",
+      "name": "Ordination Offering / Ram of Ordination",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    }
+  ]
+}

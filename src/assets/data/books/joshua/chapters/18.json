@@ -1,0 +1,28 @@
+{
+  "book": "Joshua",
+  "chapter": 18,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "e.tabernacle-set-up-at-shiloh--3870a4bb",
+      "name": "Tabernacle set up at Shiloh",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    },
+    {
+      "id": "g.the-seven-remaining-tribes-allotted-by-survey--bffbec8b",
+      "name": "The seven remaining tribes allotted by survey",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1
+    },
+    {
+      "id": "e.benjamin-allotment.entity--8dafe509",
+      "name": "Benjamin allotment (entity)",
+      "type": "entity",
+      "role": "allotment",
+      "refs_count": 1
+    }
+  ]
+}

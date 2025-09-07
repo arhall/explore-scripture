@@ -1,0 +1,30 @@
+{
+  "name": "Aram",
+  "type": "person",
+  "references": [
+    "Genesis 10:22–24"
+  ],
+  "blurb": "Son of Shem; ancestor of Arameans.",
+  "relations": {
+    "parents": [
+      "Shem"
+    ],
+    "children": [
+      "Uz",
+      "Hul",
+      "Gether",
+      "Mash"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.aram.gene-10-22-24--000c2f57",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

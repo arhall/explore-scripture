@@ -1,0 +1,42 @@
+{
+  "book": "Amos",
+  "chapter": 3,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "e.samaria--fcae1760",
+      "name": "Samaria",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 5
+    },
+    {
+      "id": "e.bethel--e80af22f",
+      "name": "Bethel (royal sanctuary)",
+      "type": "entity",
+      "role": "cult-site",
+      "refs_count": 1
+    },
+    {
+      "id": "e.you-only-have-i-known.election-accountability--04d2db0e",
+      "name": "You only have I known (election & accountability)",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1
+    },
+    {
+      "id": "e.does-a-lion-roar.rhetorical-chain--84daa72b",
+      "name": "Does a lion roar…? (rhetorical chain)",
+      "type": "entity",
+      "role": "rhetoric",
+      "refs_count": 1
+    },
+    {
+      "id": "e.ivory-houses-winter-summer-homes--60947238",
+      "name": "Ivory houses & winter/summer homes",
+      "type": "entity",
+      "role": "luxury",
+      "refs_count": 1
+    }
+  ]
+}

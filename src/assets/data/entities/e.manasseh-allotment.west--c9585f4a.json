@@ -1,0 +1,18 @@
+{
+  "name": "Manasseh allotment (west) (entity)",
+  "type": "entity",
+  "references": [
+    "Joshua 17"
+  ],
+  "blurb": "Complex borders and shared zones with Ephraim; Zelophehad’s daughters secure their inheritance, advancing just practice.",
+  "category": "allotment",
+  "id": "e.manasseh-allotment.west--c9585f4a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joshua": [
+      17
+    ]
+  }
+}

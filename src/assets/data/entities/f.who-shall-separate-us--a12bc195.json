@@ -1,0 +1,27 @@
+{
+  "name": "Who shall separate us?",
+  "type": "figure",
+  "category": "assurance",
+  "references": [
+    "Rom 8:31–39"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Ps 44:22",
+      "type": "quotation"
+    }
+  ],
+  "aka": [],
+  "id": "f.who-shall-separate-us--a12bc195",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      8
+    ]
+  }
+}

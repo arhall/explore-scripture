@@ -1,0 +1,18 @@
+{
+  "id": "e.fast-days-set--a55c3b66",
+  "name": "Fast days set",
+  "type": "entity",
+  "references": [
+    "Zech 8:19"
+  ],
+  "category": "calendar",
+  "blurb": "Fourth, fifth, seventh, tenth months marked for mourning in exile.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      8
+    ]
+  }
+}

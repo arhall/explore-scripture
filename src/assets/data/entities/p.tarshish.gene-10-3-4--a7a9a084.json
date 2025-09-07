@@ -1,0 +1,27 @@
+{
+  "name": "Tarshish",
+  "type": "person",
+  "references": [
+    "Genesis 10:3–4"
+  ],
+  "blurb": "Descendant of Javan; part of the Japhethite branch associated with maritime and northern peoples.",
+  "relations": {
+    "parents": [
+      "Javan"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "1 Kings 10:22",
+    "Jonah 1:3"
+  ],
+  "id": "p.tarshish.gene-10-3-4--a7a9a084",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

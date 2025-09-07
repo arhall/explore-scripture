@@ -1,0 +1,27 @@
+{
+  "name": "Workmanship (poiema) created for good works",
+  "type": "figure",
+  "category": "purpose",
+  "references": [
+    "Eph 2:10"
+  ],
+  "greek_terms": [
+    {
+      "term": "ποίημα",
+      "gloss": "workmanship/handiwork"
+    }
+  ],
+  "aka": [],
+  "id": "f.workmanship-poiema-created-for-good-works--acf3c504",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      2
+    ]
+  }
+}

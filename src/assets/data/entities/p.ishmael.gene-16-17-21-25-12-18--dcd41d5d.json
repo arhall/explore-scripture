@@ -1,0 +1,33 @@
+{
+  "name": "Ishmael",
+  "type": "person",
+  "references": [
+    "Genesis 16; 17; 21; 25:12–18",
+    "Gal 4:22,29"
+  ],
+  "blurb": "Abraham’s son by Hagar, named because God ‘heard’ Hagar’s affliction. God promises to make him a great nation; he fathers twelve princes. Though not the covenant heir, Ishmael is not outside God’s providential care.",
+  "relations": {
+    "parents": [
+      "Abram (Abraham)",
+      "Sarai (Sarah)",
+      "Hagar"
+    ]
+  },
+  "category": "narrative",
+  "cross_references": [
+    "Genesis 17:20",
+    "Genesis 25:12–18"
+  ],
+  "id": "p.ishmael.gene-16-17-21-25-12-18--dcd41d5d",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "p.ishmael--dc59e15e"
+  ],
+  "book_references": {
+    "Galatians": [
+      4
+    ]
+  }
+}

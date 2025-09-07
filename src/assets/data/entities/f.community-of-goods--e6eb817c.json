@@ -1,0 +1,25 @@
+{
+  "name": "Community of goods",
+  "type": "figure",
+  "category": "community",
+  "references": [
+    "Acts 2:42–47",
+    "Acts 4:32–37"
+  ],
+  "aka": [],
+  "id": "f.community-of-goods--e6eb817c",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      2,
+      4
+    ]
+  }
+}

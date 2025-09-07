@@ -1,0 +1,21 @@
+{
+  "id": "e.bloodshed--14b7a0e6",
+  "name": "Bloodshed",
+  "type": "entity",
+  "references": [
+    "Nah 3:1"
+  ],
+  "category": "indictment",
+  "aka": [
+    "City of blood"
+  ],
+  "blurb": "Core charge: Nineveh is built on violence; prophetic justice targets structural bloodguilt.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      3
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Peril: many a sleepless night",
+  "type": "figure",
+  "category": "peril",
+  "references": [
+    "2 Cor 11:23–29"
+  ],
+  "aka": [],
+  "id": "f.peril-many-a-sleepless-night--741a7ec5",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "2 Corinthians": [
+      11
+    ]
+  }
+}

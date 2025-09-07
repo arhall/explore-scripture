@@ -1,0 +1,14 @@
+{
+  "book": "Isaiah",
+  "chapter": 61,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "e.zions-light-and-nations-pilgrimage--df508c73",
+      "name": "Zion’s light and nations’ pilgrimage",
+      "type": "entity",
+      "role": "restoration",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Equality principle (Ex 16 echo)",
+  "type": "figure",
+  "category": "equality",
+  "references": [
+    "2 Cor 8:13–15"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Exod 16:18",
+      "type": "allusion"
+    }
+  ],
+  "collection_context": true,
+  "aka": [],
+  "id": "f.equality-principle-ex-16-echo--702305b9",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "2 Corinthians": [
+      8
+    ]
+  }
+}

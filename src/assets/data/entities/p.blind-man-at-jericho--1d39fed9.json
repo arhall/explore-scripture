@@ -1,0 +1,27 @@
+{
+  "name": "Blind man at Jericho",
+  "type": "person",
+  "category": "healed",
+  "references": [
+    "Luke 18:35–43"
+  ],
+  "synoptic_parallels": [
+    "Matt 20:29–34",
+    "Mark 10:46–52"
+  ],
+  "aka": [],
+  "id": "p.blind-man-at-jericho--1d39fed9",
+  "source_book": "Luke",
+  "source_books": [
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Luke": [
+      18
+    ]
+  }
+}

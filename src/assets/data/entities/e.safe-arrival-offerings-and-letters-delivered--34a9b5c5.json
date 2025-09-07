@@ -1,0 +1,18 @@
+{
+  "name": "Safe arrival; offerings and letters delivered",
+  "type": "entity",
+  "references": [
+    "Ezra 8:31–36"
+  ],
+  "blurb": "Journey credited to God’s hand; temple service resumes; imperial orders communicated to satraps.",
+  "category": "narrative",
+  "id": "e.safe-arrival-offerings-and-letters-delivered--34a9b5c5",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      8
+    ]
+  }
+}

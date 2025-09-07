@@ -1,0 +1,18 @@
+{
+  "name": "Pastures consumed by fire",
+  "type": "entity",
+  "references": [
+    "Joel 1:19–20"
+  ],
+  "blurb": "Heat and drought turn fields into tinder—judgment through weather and flame.",
+  "category": "creation",
+  "id": "e.pastures-consumed-by-fire--a564ccda",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      1
+    ]
+  }
+}

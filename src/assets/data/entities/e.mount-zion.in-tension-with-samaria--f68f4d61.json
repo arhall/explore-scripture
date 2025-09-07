@@ -1,0 +1,22 @@
+{
+  "name": "Mount Zion (in tension with Samaria)",
+  "type": "entity",
+  "references": [
+    "Amos 6:1",
+    "Obadiah 1:17,21"
+  ],
+  "blurb": "Security in Zion is also rebuked—religious privilege cannot shield injustice.",
+  "category": "mount",
+  "id": "e.mount-zion.in-tension-with-samaria--f68f4d61",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Amos": [
+      6
+    ],
+    "Obadiah": [
+      1
+    ]
+  }
+}

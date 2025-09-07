@@ -1,0 +1,18 @@
+{
+  "name": "Mount Esau / Seir (high places)",
+  "type": "entity",
+  "references": [
+    "Obadiah 1:9,19,21"
+  ],
+  "blurb": "Edom’s mountainous stronghold—geography misread as invincibility; God will bring down the proud.",
+  "category": "landform",
+  "id": "e.mount-esau-seir.high-places--5e0df6fa",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Obadiah": [
+      1
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "book": "Ezekiel",
+  "chapter": 40,
+  "entity_count": 10,
+  "entities": [
+    {
+      "id": "f.man-with-a-measuring-reed-and-line--ef5197c3",
+      "name": "Man with a measuring reed and line",
+      "type": "figure",
+      "role": "angelic",
+      "refs_count": 1
+    },
+    {
+      "id": "e.chambers-for-singers-and-priests--2125c159",
+      "name": "Chambers for singers and priests",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1
+    },
+    {
+      "id": "e.twenty-fifth-year-beginning-of-temple-vision--1f0254bd",
+      "name": "Twenty‑fifth year, beginning of temple vision",
+      "type": "entity",
+      "role": "chronology",
+      "refs_count": 1
+    },
+    {
+      "id": "e.outer-court-chambers--75b6da4d",
+      "name": "Outer court chambers",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1
+    },
+    {
+      "id": "e.inner-court-chambers--7d3ed7dc",
+      "name": "Inner court chambers",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1
+    },
+    {
+      "id": "e.north-gate-of-outer-court--fa5c1b01",
+      "name": "North gate of outer court",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1
+    },
+    {
+      "id": "e.south-gate-of-outer-court--b7df16f5",
+      "name": "South gate of outer court",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1
+    },
+    {
+      "id": "e.east-gate-of-inner-court--83ef0956",
+      "name": "East gate of inner court",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1
+    },
+    {
+      "id": "e.north-gate-of-inner-court--10119c2c",
+      "name": "North gate of inner court",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1
+    },
+    {
+      "id": "e.tables-for-offerings--3fbf6a49",
+      "name": "Tables for offerings",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1
+    }
+  ]
+}

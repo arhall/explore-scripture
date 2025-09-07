@@ -1,0 +1,77 @@
+{
+  "book": "Revelation",
+  "chapter": 16,
+  "entity_count": 22,
+  "entities": [
+    {
+      "id": "g.three-frog-like-unclean-spirits--9be7dcc1",
+      "name": "three frog-like unclean spirits",
+      "type": "group",
+      "role": "demonic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.heptad-index--733a558f",
+      "name": "Heptad index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.numeric-symbolism-index--20cda2ea",
+      "name": "Numeric symbolism index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.behold-i-am-coming-like-a-thief-blessed-is-the-one-who-stays-awake-and-keeps-his-garments--8a38e568",
+      "name": "Behold, I am coming like a thief. Blessed is the one who stays awake and keeps his garments",
+      "type": "figure",
+      "role": "beatitude",
+      "refs_count": 1
+    },
+    {
+      "id": "f.bowl-3-rivers-and-springs-become-blood-angel-of-the-waters--f0a18549",
+      "name": "Bowl 3: rivers and springs become blood; angel of the waters",
+      "type": "figure",
+      "role": "judgment",
+      "refs_count": 1
+    },
+    {
+      "id": "f.lightnings-voices-thunders-great-earthquake-huge-hailstones--dc13dad5",
+      "name": "lightnings, voices, thunders, great earthquake, huge hailstones",
+      "type": "figure",
+      "role": "theophany",
+      "refs_count": 1
+    },
+    {
+      "id": "e.armageddon-har-megiddo--18e682b3",
+      "name": "Armageddon (Har-Megiddo)",
+      "type": "entity",
+      "role": "battle-site",
+      "refs_count": 1
+    },
+    {
+      "id": "p.angel-of-the-waters--96fa1fba",
+      "name": "angel of the waters",
+      "type": "person",
+      "role": "angelic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.bowl-7-it-is-done-greatest-quake-hundred-pound-hail--d36712e1",
+      "name": "Bowl 7: It is done! greatest quake; hundred-pound hail",
+      "type": "figure",
+      "role": "judgment",
+      "refs_count": 1
+    },
+    {
+      "id": "f.city-contrast-index-babylon-vs-new-jerusalem--b56140e1",
+      "name": "City contrast index (Babylon vs New Jerusalem)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    }
+  ]
+}

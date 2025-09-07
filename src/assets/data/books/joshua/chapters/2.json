@@ -1,0 +1,14 @@
+{
+  "book": "Joshua",
+  "chapter": 2,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "g.two-unnamed-spies--85a9369f",
+      "name": "Two unnamed spies",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

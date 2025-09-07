@@ -1,0 +1,18 @@
+{
+  "id": "e.offerings--5c831b1f",
+  "name": "Offerings",
+  "type": "entity",
+  "references": [
+    "Mal 3:8"
+  ],
+  "category": "economics",
+  "blurb": "Accompany tithes; their neglect constitutes robbery against God.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      3
+    ]
+  }
+}

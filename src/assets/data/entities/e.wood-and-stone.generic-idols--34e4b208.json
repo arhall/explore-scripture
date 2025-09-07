@@ -1,0 +1,18 @@
+{
+  "name": "Wood and stone (generic idols)",
+  "type": "entity",
+  "references": [
+    "Jeremiah 2:27–28; 3:9"
+  ],
+  "blurb": "You say to a tree, ‘You are my father’—satire of dependency on what cannot save.",
+  "category": "idol",
+  "id": "e.wood-and-stone.generic-idols--34e4b208",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      2
+    ]
+  }
+}

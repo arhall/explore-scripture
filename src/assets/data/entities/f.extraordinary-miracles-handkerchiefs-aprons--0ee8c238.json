@@ -1,0 +1,23 @@
+{
+  "name": "Extraordinary miracles (handkerchiefs, aprons)",
+  "type": "figure",
+  "category": "miracle",
+  "references": [
+    "Acts 19:11–12"
+  ],
+  "aka": [],
+  "id": "f.extraordinary-miracles-handkerchiefs-aprons--0ee8c238",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      19
+    ]
+  }
+}

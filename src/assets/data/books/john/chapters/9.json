@@ -1,0 +1,49 @@
+{
+  "book": "John",
+  "chapter": 9,
+  "entity_count": 6,
+  "entities": [
+    {
+      "id": "f.book-of-signs-index--9c42a3ac",
+      "name": "Book of Signs (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 7
+    },
+    {
+      "id": "t.i-am-light-of-the-world--bf6dc86a",
+      "name": "I AM: Light of the World",
+      "type": "title",
+      "role": "i-am",
+      "refs_count": 2
+    },
+    {
+      "id": "e.siloam-pool-sent--82306d18",
+      "name": "Siloam Pool (Sent)",
+      "type": "entity",
+      "role": "site",
+      "refs_count": 1
+    },
+    {
+      "id": "f.replacement-fulfillment-in-john--9da18d3a",
+      "name": "Replacement & fulfillment in John",
+      "type": "figure",
+      "role": "theme",
+      "refs_count": 4
+    },
+    {
+      "id": "f.water-bread-light-life-motifs--0fe6793a",
+      "name": "Water / Bread / Light / Life motifs",
+      "type": "figure",
+      "role": "theme",
+      "refs_count": 4
+    },
+    {
+      "id": "p.man-born-blind--9e94765d",
+      "name": "Man born blind",
+      "type": "person",
+      "role": "healed",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "book": "Luke",
+  "chapter": 24,
+  "entity_count": 8,
+  "entities": [
+    {
+      "id": "f.ascension-at-bethany--704dd928",
+      "name": "Ascension at Bethany",
+      "type": "figure",
+      "role": "ascension",
+      "refs_count": 1
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "g.women-at-the-tomb-luke--0d0b30fd",
+      "name": "Women at the tomb (Luke)",
+      "type": "group",
+      "role": "witness",
+      "refs_count": 1
+    },
+    {
+      "id": "f.appearance-to-disciples-jerusalem--ab23bb4c",
+      "name": "Appearance to disciples (Jerusalem)",
+      "type": "figure",
+      "role": "appearance",
+      "refs_count": 1
+    },
+    {
+      "id": "e.bethany--4df7e1bd",
+      "name": "Bethany",
+      "type": "entity",
+      "role": "village",
+      "refs_count": 3
+    },
+    {
+      "id": "f.table-fellowship-in-luke--65956cca",
+      "name": "Table fellowship in Luke",
+      "type": "figure",
+      "role": "theme",
+      "refs_count": 5
+    },
+    {
+      "id": "t.promise-of-the-father--07abc0ce",
+      "name": "Promise of the Father",
+      "type": "title",
+      "role": "promise",
+      "refs_count": 1
+    },
+    {
+      "id": "f.emmaus-road-cleopas--e59c2de5",
+      "name": "Emmaus Road (Cleopas)",
+      "type": "figure",
+      "role": "appearance",
+      "refs_count": 1
+    }
+  ]
+}

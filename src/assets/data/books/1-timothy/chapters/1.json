@@ -1,0 +1,77 @@
+{
+  "book": "1 Timothy",
+  "chapter": 1,
+  "entity_count": 23,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 24
+    },
+    {
+      "id": "e.ephesus--a81cfcdf",
+      "name": "Ephesus",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 5
+    },
+    {
+      "id": "p.timothy--227fb1d9",
+      "name": "Timothy",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 12
+    },
+    {
+      "id": "e.macedonia--58a26877",
+      "name": "Macedonia",
+      "type": "entity",
+      "role": "province",
+      "refs_count": 5
+    },
+    {
+      "id": "f.myths-and-endless-genealogies--0b7e24fd",
+      "name": "myths and endless genealogies",
+      "type": "figure",
+      "role": "controversy",
+      "refs_count": 1
+    },
+    {
+      "id": "p.alexander--4dd84a32",
+      "name": "Alexander",
+      "type": "person",
+      "role": "opponent",
+      "refs_count": 1
+    },
+    {
+      "id": "f.faith-and-a-good-conscience--a84a1c3d",
+      "name": "faith and a good conscience",
+      "type": "figure",
+      "role": "virtue-pair",
+      "refs_count": 1
+    },
+    {
+      "id": "f.lawful-use-of-the-law--34feacc1",
+      "name": "lawful use of the Law",
+      "type": "figure",
+      "role": "law",
+      "refs_count": 1
+    },
+    {
+      "id": "f.stewardship-from-god-by-faith--49b7f6d8",
+      "name": "stewardship from God by faith",
+      "type": "figure",
+      "role": "goal",
+      "refs_count": 1
+    }
+  ]
+}

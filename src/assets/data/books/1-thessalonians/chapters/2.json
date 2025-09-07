@@ -1,0 +1,77 @@
+{
+  "book": "1 Thessalonians",
+  "chapter": 2,
+  "entity_count": 19,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.our-coming-not-in-vain--be75095c",
+      "name": "Our coming not in vain",
+      "type": "figure",
+      "role": "apologia",
+      "refs_count": 1
+    },
+    {
+      "id": "f.boldness-in-our-god-amid-conflict--2c29f793",
+      "name": "Boldness in our God amid conflict",
+      "type": "figure",
+      "role": "courage",
+      "refs_count": 1
+    },
+    {
+      "id": "g.word-at-work-in-believers--3e3a87ef",
+      "name": "Word at work in believers",
+      "type": "group",
+      "role": "response",
+      "refs_count": 1
+    },
+    {
+      "id": "f.satan--bf0233a4",
+      "name": "Satan",
+      "type": "figure",
+      "role": "adversary",
+      "refs_count": 1
+    },
+    {
+      "id": "f.not-from-error-or-impurity-or-deceit--6fdc2155",
+      "name": "Not from error or impurity or deceit",
+      "type": "figure",
+      "role": "negation",
+      "refs_count": 1
+    },
+    {
+      "id": "f.labor-night-and-day--92bb0558",
+      "name": "Labor night and day",
+      "type": "figure",
+      "role": "example",
+      "refs_count": 1
+    },
+    {
+      "id": "g.persecutors--342a6a3a",
+      "name": "Persecutors",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1
+    },
+    {
+      "id": "f.wrath-has-come-upon-them-at-last-aspect-note--1045c802",
+      "name": "Wrath has come upon them at last (aspect note)",
+      "type": "figure",
+      "role": "judgment",
+      "refs_count": 1
+    },
+    {
+      "id": "f.torn-away-in-person-not-in-heart--d72bd32b",
+      "name": "Torn away in person, not in heart",
+      "type": "figure",
+      "role": "separation",
+      "refs_count": 1
+    }
+  ]
+}

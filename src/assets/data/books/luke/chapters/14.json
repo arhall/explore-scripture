@@ -1,0 +1,49 @@
+{
+  "book": "Luke",
+  "chapter": 14,
+  "entity_count": 6,
+  "entities": [
+    {
+      "id": "f.great-banquet-luke--2be2ac65",
+      "name": "Great Banquet (Luke)",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1
+    },
+    {
+      "id": "f.lowest-seat-at-the-banquet--d5c4b0a3",
+      "name": "Lowest seat at the banquet",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1
+    },
+    {
+      "id": "f.cost-of-discipleship--c05b688a",
+      "name": "Cost of discipleship",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1
+    },
+    {
+      "id": "f.salt-that-loses-its-taste--89a85f7f",
+      "name": "Salt that loses its taste",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1
+    },
+    {
+      "id": "p.man-with-dropsy-sabbath-healing--f43cee44",
+      "name": "Man with dropsy (Sabbath healing)",
+      "type": "person",
+      "role": "healed",
+      "refs_count": 1
+    },
+    {
+      "id": "f.table-fellowship-in-luke--65956cca",
+      "name": "Table fellowship in Luke",
+      "type": "figure",
+      "role": "theme",
+      "refs_count": 5
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Onam",
+  "type": "person",
+  "references": [
+    "Genesis 36:23"
+  ],
+  "blurb": "Son of Shobal; Horite descendant.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.onam.gene-36-23--18fa2794",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

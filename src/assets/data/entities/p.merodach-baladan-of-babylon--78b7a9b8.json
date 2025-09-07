@@ -1,0 +1,21 @@
+{
+  "name": "Merodach‑Baladan of Babylon",
+  "type": "person",
+  "references": [
+    "Isaiah 39:1"
+  ],
+  "blurb": "Envoys court Hezekiah after his recovery; flattery sets a trap—Isaiah prophesies future Babylonian exile.",
+  "relations": {
+    "kingdom": "Babylon"
+  },
+  "category": "king",
+  "id": "p.merodach-baladan-of-babylon--78b7a9b8",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Isaiah": [
+      39
+    ]
+  }
+}

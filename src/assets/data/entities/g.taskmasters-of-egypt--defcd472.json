@@ -1,0 +1,19 @@
+{
+  "name": "Taskmasters of Egypt",
+  "type": "group",
+  "references": [
+    "Exodus 1:11; 5:6–14"
+  ],
+  "blurb": "Oppressive overseers who intensify Israel’s toil—exposing the cruelty of empire set against God’s purposes.",
+  "category": "narrative",
+  "cross_references": [],
+  "id": "g.taskmasters-of-egypt--defcd472",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      1
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Sons of Korah (survivors)",
+  "type": "group",
+  "references": [
+    "Numbers 26:11"
+  ],
+  "blurb": "Line not wiped out; later contribute to temple psalms.",
+  "category": "genealogy",
+  "cross_references": [
+    "Psalms 42–49 (titles)"
+  ],
+  "id": "g.sons-of-korah.survivors--8d241330",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      26
+    ]
+  }
+}

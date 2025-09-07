@@ -1,0 +1,24 @@
+{
+  "name": "Rented house in Rome (two years)",
+  "type": "figure",
+  "category": "residence",
+  "references": [
+    "Acts 28:30"
+  ],
+  "blurb": "Paul welcomes all who come to him for two years.",
+  "aka": [],
+  "id": "f.rented-house-in-rome-two-years--402f79a2",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      28
+    ]
+  }
+}

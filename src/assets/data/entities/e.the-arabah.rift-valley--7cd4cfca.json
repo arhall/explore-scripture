@@ -1,0 +1,18 @@
+{
+  "name": "The Arabah (rift valley)",
+  "type": "entity",
+  "references": [
+    "Amos 6:12"
+  ],
+  "blurb": "Rhetorical terrain for impossibilities—horses running on rocks? plowing the sea?",
+  "category": "region",
+  "id": "e.the-arabah.rift-valley--7cd4cfca",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Amos": [
+      6
+    ]
+  }
+}

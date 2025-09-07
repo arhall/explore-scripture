@@ -1,0 +1,18 @@
+{
+  "name": "Gad the prophet",
+  "type": "person",
+  "references": [
+    "1 Samuel 22:5"
+  ],
+  "blurb": "Advises David—word guides flight more than impulse.",
+  "category": "narrative",
+  "id": "p.gad-the-prophet--4067c469",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      22
+    ]
+  }
+}

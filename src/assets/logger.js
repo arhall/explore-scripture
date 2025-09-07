@@ -5,13 +5,7 @@
 
 class BibleExplorerLogger {
   constructor() {
-    this.logLevel = this.getLogLevel();
-    this.sessionId = this.generateSessionId();
-    this.startTime = performance.now();
-    this.logs = [];
-    this.maxStoredLogs = 1000;
-    
-    // Log levels
+    // Log levels (must be defined first)
     this.levels = {
       ERROR: 0,
       WARN: 1,
@@ -19,6 +13,12 @@ class BibleExplorerLogger {
       DEBUG: 3,
       TRACE: 4
     };
+    
+    this.logLevel = this.getLogLevel();
+    this.sessionId = this.generateSessionId();
+    this.startTime = performance.now();
+    this.logs = [];
+    this.maxStoredLogs = 1000;
 
     // Initialize logging
     this.info('Logger initialized', {

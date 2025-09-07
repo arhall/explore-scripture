@@ -1,0 +1,18 @@
+{
+  "name": "Like horses… like chariots",
+  "type": "entity",
+  "references": [
+    "Joel 2:4–5"
+  ],
+  "blurb": "Sound and speed metaphors heighten dread; natural disaster reads like invasion.",
+  "category": "image",
+  "id": "e.like-horses-like-chariots--a6371d31",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      2
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "sharp two-edged sword (from his mouth)",
+  "type": "entity",
+  "category": "vision-token",
+  "references": [
+    "Rev 1:16"
+  ],
+  "aka": [],
+  "id": "e.sharp-two-edged-sword-from-his-mouth--4ab461bb",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Revelation": [
+      1
+    ]
+  }
+}

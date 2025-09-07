@@ -1,0 +1,21 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 29,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "p.hezekiah-king-of-judah.chronicles-focus--66ee8fd1",
+      "name": "Hezekiah king of Judah (Chronicles focus)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.doors-opened-levites-consecrate-song-resumes--e270fa87",
+      "name": "Doors opened; Levites consecrate; song resumes",
+      "type": "entity",
+      "role": "worship",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Sanctify war: ‘Beat your plowshares into swords’",
+  "type": "entity",
+  "references": [
+    "Joel 3:9–10"
+  ],
+  "blurb": "Ironic reversal of Isaiah 2/Micah 4—God summons nations to their own undoing.",
+  "category": "war",
+  "id": "e.sanctify-war-beat-your-plowshares-into-swords--b1dc2307",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      3
+    ]
+  }
+}

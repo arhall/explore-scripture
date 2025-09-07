@@ -1,0 +1,18 @@
+{
+  "name": "Rhetorical refrain: ‘set your face toward…’",
+  "type": "entity",
+  "references": [
+    "Ezekiel 20:46; 21:2; 25:2"
+  ],
+  "blurb": "Command formula that turns the prophet like a compass—speech as directional warfare.",
+  "category": "literary",
+  "id": "e.rhetorical-refrain-set-your-face-toward--ad6c2690",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      20
+    ]
+  }
+}

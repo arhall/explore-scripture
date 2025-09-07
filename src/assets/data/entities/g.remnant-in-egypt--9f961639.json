@@ -1,0 +1,20 @@
+{
+  "name": "Remnant in Egypt",
+  "type": "group",
+  "references": [
+    "Jeremiah 42–44"
+  ],
+  "blurb": "Against prophetic counsel, the remnant drags Jeremiah to Egypt and persists in idolatry—exile does not guarantee repentance.",
+  "category": "remnant",
+  "id": "g.remnant-in-egypt--9f961639",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      42,
+      43,
+      44
+    ]
+  }
+}

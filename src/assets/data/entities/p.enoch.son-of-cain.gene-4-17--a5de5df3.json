@@ -1,0 +1,26 @@
+{
+  "name": "Enoch (son of Cain)",
+  "type": "person",
+  "references": [
+    "Genesis 4:17"
+  ],
+  "blurb": "Son of Cain for whom Cain builds a city, marking the rise of urban life in a fallen world.",
+  "relations": {
+    "parents": [
+      "Cain"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "1 Chronicles 1"
+  ],
+  "id": "p.enoch.son-of-cain.gene-4-17--a5de5df3",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      4
+    ]
+  }
+}

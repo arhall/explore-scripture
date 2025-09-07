@@ -1,0 +1,18 @@
+{
+  "id": "e.province-of-yehud--d6396712",
+  "name": "Province of Yehud",
+  "type": "entity",
+  "references": [
+    "Hag 1:1"
+  ],
+  "category": "administrative",
+  "blurb": "Persian province in which Judah/Jerusalem function post-exile.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      1
+    ]
+  }
+}

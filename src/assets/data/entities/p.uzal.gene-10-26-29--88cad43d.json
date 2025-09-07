@@ -1,0 +1,24 @@
+{
+  "name": "Uzal",
+  "type": "person",
+  "references": [
+    "Genesis 10:26–29"
+  ],
+  "blurb": "Son of Joktan; associated with Arabian regions and trade.",
+  "relations": {
+    "parents": [
+      "Joktan"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.uzal.gene-10-26-29--88cad43d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

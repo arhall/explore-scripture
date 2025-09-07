@@ -1,0 +1,38 @@
+{
+  "name": "Judah",
+  "type": "person",
+  "references": [
+    "Genesis 29:35; 38; 44; 49:8–12"
+  ],
+  "blurb": "From compromise to courage: fails Tamar yet offers himself for Benjamin. Royal promise rests on his line.",
+  "relations": {
+    "parents": [
+      "Jacob (Israel)",
+      "Leah"
+    ],
+    "children": [
+      "Er",
+      "Onan",
+      "Shelah",
+      "Perez",
+      "Zerah"
+    ]
+  },
+  "category": "narrative",
+  "cross_references": [
+    "Ruth 4:18–22",
+    "Matthew 1:2–3"
+  ],
+  "id": "p.judah.gene-29-35-38-44-49-8-12--3cd2cb35",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "p.judah.gene-37-46-49-8-12--195d7204"
+  ],
+  "book_references": {
+    "Genesis": [
+      29
+    ]
+  }
+}

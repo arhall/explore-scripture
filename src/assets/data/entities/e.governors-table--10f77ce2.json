@@ -1,0 +1,18 @@
+{
+  "id": "e.governors-table--10f77ce2",
+  "name": "Governor’s table",
+  "type": "entity",
+  "references": [
+    "Mal 1:8"
+  ],
+  "category": "political-symbol",
+  "blurb": "Rhetorical benchmark for acceptable gifts—if not fit for the governor, not fit for God.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      1
+    ]
+  }
+}

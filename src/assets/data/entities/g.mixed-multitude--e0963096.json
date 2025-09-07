@@ -1,0 +1,21 @@
+{
+  "name": "Mixed multitude",
+  "type": "group",
+  "references": [
+    "Exodus 12:38"
+  ],
+  "blurb": "Non-Israelites who join the Exodus, hinting at Israel’s mission to bless the nations and foreshadowing Gentile inclusion.",
+  "category": "narrative",
+  "cross_references": [
+    "Numbers 11:4"
+  ],
+  "id": "g.mixed-multitude--e0963096",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      12
+    ]
+  }
+}

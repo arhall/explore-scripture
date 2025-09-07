@@ -1,0 +1,34 @@
+{
+  "name": "Triumphal Entry (John)",
+  "type": "figure",
+  "category": "event",
+  "references": [
+    "John 12:12–19"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Zech 9:9",
+      "type": "echo"
+    },
+    {
+      "src": "Ps 118:26",
+      "type": "quotation"
+    }
+  ],
+  "aka": [],
+  "id": "f.triumphal-entry-john--b4be5255",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      12
+    ]
+  }
+}

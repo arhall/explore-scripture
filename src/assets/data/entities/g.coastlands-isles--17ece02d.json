@@ -1,0 +1,18 @@
+{
+  "name": "Coastlands / Isles",
+  "type": "group",
+  "references": [
+    "Isaiah 41:1; 42:4,10; 49:1"
+  ],
+  "blurb": "Distant peoples summoned to court and song; horizon of mission widens beyond Israel.",
+  "category": "peoples",
+  "id": "g.coastlands-isles--17ece02d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Isaiah": [
+      41
+    ]
+  }
+}

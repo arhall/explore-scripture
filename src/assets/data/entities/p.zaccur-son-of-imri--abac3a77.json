@@ -1,0 +1,18 @@
+{
+  "name": "Zaccur son of Imri",
+  "type": "person",
+  "references": [
+    "Nehemiah 3:2"
+  ],
+  "blurb": "Named householder standing in the gap—personal responsibility inscribed in stone.",
+  "category": "narrative",
+  "id": "p.zaccur-son-of-imri--abac3a77",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      3
+    ]
+  }
+}

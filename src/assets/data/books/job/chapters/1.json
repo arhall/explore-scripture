@@ -1,0 +1,77 @@
+{
+  "book": "Job",
+  "chapter": 1,
+  "entity_count": 10,
+  "entities": [
+    {
+      "id": "f.the-satan.the-accuser--c1b3251f",
+      "name": "The Satan (the Accuser)",
+      "type": "figure",
+      "role": "theology",
+      "refs_count": 1
+    },
+    {
+      "id": "g.sons-of-god.heavenly-council--5b46f7b6",
+      "name": "Sons of God (heavenly council)",
+      "type": "group",
+      "role": "theology",
+      "refs_count": 1
+    },
+    {
+      "id": "e.land-of-uz--fb62932a",
+      "name": "Land of Uz",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    },
+    {
+      "id": "e.jobs-household-inventory.initial-prosperity--7b007ca3",
+      "name": "Job’s household inventory (initial prosperity)",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1
+    },
+    {
+      "id": "e.family-feasting-cycle-jobs-priestly-intercession--e49fa618",
+      "name": "Family feasting cycle & Job’s priestly intercession",
+      "type": "entity",
+      "role": "worship",
+      "refs_count": 1
+    },
+    {
+      "id": "g.sabean-raiders--10a86d1d",
+      "name": "Sabean raiders",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.fire-of-god.lightning--870dece3",
+      "name": "Fire of God (lightning)",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1
+    },
+    {
+      "id": "g.chaldean-raiding-bands--f972a58f",
+      "name": "Chaldean raiding bands",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.great-wind-from-the-wilderness--643d6ac3",
+      "name": "Great wind from the wilderness",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1
+    },
+    {
+      "id": "e.jobs-worship-in-loss.yhwh-gave--883078e4",
+      "name": "Job’s worship in loss (‘YHWH gave…’)",
+      "type": "entity",
+      "role": "spirituality",
+      "refs_count": 1
+    }
+  ]
+}

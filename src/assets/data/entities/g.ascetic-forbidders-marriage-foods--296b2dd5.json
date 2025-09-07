@@ -1,0 +1,17 @@
+{
+  "name": "ascetic forbidders (marriage/foods)",
+  "type": "group",
+  "category": "opponents",
+  "references": [
+    "1 Tim 4:3"
+  ],
+  "aka": [
+    "ascetics"
+  ],
+  "id": "g.ascetic-forbidders-marriage-foods--296b2dd5",
+  "book_references": {
+    "1 Timothy": [
+      4
+    ]
+  }
+}

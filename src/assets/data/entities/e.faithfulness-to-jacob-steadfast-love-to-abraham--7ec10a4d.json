@@ -1,0 +1,18 @@
+{
+  "id": "e.faithfulness-to-jacob-steadfast-love-to-abraham--7ec10a4d",
+  "name": "Faithfulness to Jacob, steadfast love to Abraham",
+  "type": "entity",
+  "references": [
+    "Micah 7:20"
+  ],
+  "category": "covenant",
+  "blurb": "Covenant continuity—promises to patriarchs underwrite restoration.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      7
+    ]
+  }
+}

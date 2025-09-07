@@ -1,0 +1,25 @@
+{
+  "name": "Place/time anchor (likely Corinth)",
+  "type": "figure",
+  "category": "letters-context",
+  "references": [
+    "Rom 16:1; Rom 16:23"
+  ],
+  "cross_references": [
+    "Acts 20:2–3"
+  ],
+  "note": "Likely composed in Corinth; supported by mentions of Gaius and Erastus.",
+  "aka": [],
+  "id": "f.place-time-anchor-likely-corinth--160bbbf8",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      16
+    ]
+  }
+}

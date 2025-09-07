@@ -1,0 +1,18 @@
+{
+  "name": "Palal son of Uzai",
+  "type": "person",
+  "references": [
+    "Nehemiah 3:25"
+  ],
+  "blurb": "Repairs by the Angle and tower of the upper house—complex junctions require care.",
+  "category": "narrative",
+  "id": "p.palal-son-of-uzai--c7060dc8",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      3
+    ]
+  }
+}

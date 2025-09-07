@@ -1,0 +1,27 @@
+{
+  "name": "John the Baptist (witness)",
+  "type": "person",
+  "category": "witness",
+  "references": [
+    "John 1:6–8",
+    "John 1:19–34",
+    "John 3:22–36"
+  ],
+  "blurb": "Forerunner who testifies to the Light, identifies the Lamb, and rejoices as friend of the bridegroom.",
+  "aka": [],
+  "id": "p.john-the-baptist-witness--86b3f44b",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      1,
+      3
+    ]
+  }
+}

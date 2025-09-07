@@ -1,0 +1,21 @@
+{
+  "name": "Word of God",
+  "type": "title",
+  "category": "christ-title",
+  "references": [
+    "Rev 19:11-16"
+  ],
+  "aka": [],
+  "id": "t.word-of-god--1c6f6083",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Revelation": [
+      19
+    ]
+  }
+}

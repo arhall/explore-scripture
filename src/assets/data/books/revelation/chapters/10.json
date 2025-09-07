@@ -1,0 +1,77 @@
+{
+  "book": "Revelation",
+  "chapter": 10,
+  "entity_count": 13,
+  "entities": [
+    {
+      "id": "p.mighty-angel-with-little-scroll--0bee7c79",
+      "name": "mighty angel with little scroll",
+      "type": "person",
+      "role": "angelic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.heptad-index--733a558f",
+      "name": "Heptad index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.numeric-symbolism-index--20cda2ea",
+      "name": "Numeric symbolism index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.no-more-delay--f0bed267",
+      "name": "no more delay",
+      "type": "figure",
+      "role": "announcement",
+      "refs_count": 1
+    },
+    {
+      "id": "f.city-contrast-index-babylon-vs-new-jerusalem--b56140e1",
+      "name": "City contrast index (Babylon vs New Jerusalem)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.angel-index--12fa89a0",
+      "name": "Angel index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.ot-echo-index--3c58655d",
+      "name": "OT echo index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.seven-thunders-uttered-their-voices-but-sealed--11e174b5",
+      "name": "seven thunders uttered their voices but sealed",
+      "type": "figure",
+      "role": "sealed-revelation",
+      "refs_count": 1
+    },
+    {
+      "id": "f.the-mystery-of-god-would-be-fulfilled--a54ddcde",
+      "name": "the mystery of God would be fulfilled",
+      "type": "figure",
+      "role": "announcement",
+      "refs_count": 1
+    },
+    {
+      "id": "f.song-hymn-index--72db27fa",
+      "name": "Song/hymn index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    }
+  ]
+}

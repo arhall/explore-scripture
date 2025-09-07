@@ -1,0 +1,1017 @@
+{
+  "book": "Malachi",
+  "slug": "malachi",
+  "entity_count": 106,
+  "key_figures": [
+    {
+      "id": "d.the-messenger-of-the-covenant--cab4319d",
+      "name": "The messenger of the covenant",
+      "type": "divine",
+      "role": "theophany-title",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.priests--17ce1c8d",
+      "name": "Priests",
+      "type": "person",
+      "role": "cultic-staff",
+      "refs_count": 3,
+      "score": 13
+    },
+    {
+      "id": "p.scribes-recorders--1980dd30",
+      "name": "Scribes/Recorders",
+      "type": "person",
+      "role": "administration",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.malachi--da5b8f35",
+      "name": "Malachi",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.governor-persian-administration--f5d06843",
+      "name": "Governor (Persian administration)",
+      "type": "person",
+      "role": "monarchic-official",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.levites--8c194d1e",
+      "name": "Levites",
+      "type": "person",
+      "role": "tribal-priesthood",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.men-of-judah--0e0057eb",
+      "name": "Men of Judah",
+      "type": "person",
+      "role": "laity",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.those-who-fear-the-lord--b90180a8",
+      "name": "Those who fear the LORD",
+      "type": "person",
+      "role": "pious-group",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.elijah--86b7f065",
+      "name": "Elijah",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.messenger-of-the-covenant-figure-link--82b7bc42",
+      "name": "Messenger of the covenant (figure-link)",
+      "type": "person",
+      "role": "ambiguous-figure",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.arrogant-&-evildoers--7acb38fc",
+      "name": "Arrogant & evildoers",
+      "type": "group",
+      "role": "ethical-collective",
+      "refs_count": 2,
+      "score": 8
+    },
+    {
+      "id": "g.remnant--e6a8b099",
+      "name": "Remnant",
+      "type": "group",
+      "role": "community",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.profaners-of-the-sanctuary--aa9e037b",
+      "name": "Profaners of the sanctuary",
+      "type": "group",
+      "role": "offenders",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.robbers-of-god--63076f95",
+      "name": "Robbers of God",
+      "type": "group",
+      "role": "offenders",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.blessed-by-the-nations--56fa21f8",
+      "name": "Blessed by the nations",
+      "type": "group",
+      "role": "witness-result",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "f.disputation-formula-you-say…-but-i-say…--1d2ac905",
+      "name": "Disputation formula: You say… But I say…",
+      "type": "figure",
+      "role": "literary-form",
+      "refs_count": 3,
+      "score": 5
+    },
+    {
+      "id": "f.name-title-debate-malachi-my-messenger--fcfd29d6",
+      "name": "Name/title debate: Malachi (“my messenger”)",
+      "type": "figure",
+      "role": "onomastics",
+      "refs_count": 2,
+      "score": 4
+    },
+    {
+      "id": "f.superscription--0ed1f723",
+      "name": "Superscription",
+      "type": "figure",
+      "role": "book-frame",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.altar--0b0acf47",
+      "name": "Altar",
+      "type": "entity",
+      "role": "cultic",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "f.i-have-loved-you---how-have-you-loved-us?--13facf67",
+      "name": "I have loved you / How have you loved us?",
+      "type": "figure",
+      "role": "disputation",
+      "refs_count": 1,
+      "score": 3
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "d.the-messenger-of-the-covenant--cab4319d",
+      "name": "The messenger of the covenant",
+      "type": "divine",
+      "role": "theophany-title",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.priests--17ce1c8d",
+      "name": "Priests",
+      "type": "person",
+      "role": "cultic-staff",
+      "refs_count": 3,
+      "score": 13
+    },
+    {
+      "id": "p.scribes-recorders--1980dd30",
+      "name": "Scribes/Recorders",
+      "type": "person",
+      "role": "administration",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.malachi--da5b8f35",
+      "name": "Malachi",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.governor-persian-administration--f5d06843",
+      "name": "Governor (Persian administration)",
+      "type": "person",
+      "role": "monarchic-official",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.levites--8c194d1e",
+      "name": "Levites",
+      "type": "person",
+      "role": "tribal-priesthood",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.men-of-judah--0e0057eb",
+      "name": "Men of Judah",
+      "type": "person",
+      "role": "laity",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.those-who-fear-the-lord--b90180a8",
+      "name": "Those who fear the LORD",
+      "type": "person",
+      "role": "pious-group",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.elijah--86b7f065",
+      "name": "Elijah",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.messenger-of-the-covenant-figure-link--82b7bc42",
+      "name": "Messenger of the covenant (figure-link)",
+      "type": "person",
+      "role": "ambiguous-figure",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.arrogant-&-evildoers--7acb38fc",
+      "name": "Arrogant & evildoers",
+      "type": "group",
+      "role": "ethical-collective",
+      "refs_count": 2,
+      "score": 8
+    },
+    {
+      "id": "g.remnant--e6a8b099",
+      "name": "Remnant",
+      "type": "group",
+      "role": "community",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.profaners-of-the-sanctuary--aa9e037b",
+      "name": "Profaners of the sanctuary",
+      "type": "group",
+      "role": "offenders",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.robbers-of-god--63076f95",
+      "name": "Robbers of God",
+      "type": "group",
+      "role": "offenders",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.blessed-by-the-nations--56fa21f8",
+      "name": "Blessed by the nations",
+      "type": "group",
+      "role": "witness-result",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "f.disputation-formula-you-say…-but-i-say…--1d2ac905",
+      "name": "Disputation formula: You say… But I say…",
+      "type": "figure",
+      "role": "literary-form",
+      "refs_count": 3,
+      "score": 5
+    },
+    {
+      "id": "f.name-title-debate-malachi-my-messenger--fcfd29d6",
+      "name": "Name/title debate: Malachi (“my messenger”)",
+      "type": "figure",
+      "role": "onomastics",
+      "refs_count": 2,
+      "score": 4
+    },
+    {
+      "id": "f.superscription--0ed1f723",
+      "name": "Superscription",
+      "type": "figure",
+      "role": "book-frame",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.altar--0b0acf47",
+      "name": "Altar",
+      "type": "entity",
+      "role": "cultic",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "f.i-have-loved-you---how-have-you-loved-us?--13facf67",
+      "name": "I have loved you / How have you loved us?",
+      "type": "figure",
+      "role": "disputation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.jacob–esau-election--64cb52b3",
+      "name": "Jacob–Esau election",
+      "type": "figure",
+      "role": "election",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.edom-territory-of-wickedness--5a044e8b",
+      "name": "Edom: territory of wickedness",
+      "type": "figure",
+      "role": "taunt",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.edoms-rebuilding-thwarted--95cce11a",
+      "name": "Edom’s rebuilding thwarted",
+      "type": "figure",
+      "role": "reversal",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.great-king-among-the-nations--fd410052",
+      "name": "Great King among the nations",
+      "type": "figure",
+      "role": "universal-sovereignty",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.polluted-offerings---contemptible-altar--0ed02059",
+      "name": "Polluted offerings / Contemptible altar",
+      "type": "figure",
+      "role": "cult-critique",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.covenant-with-levi-ideal--bef441a3",
+      "name": "Covenant with Levi (ideal)",
+      "type": "figure",
+      "role": "priestly-ideal",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.corrupt-priestly-instruction--faeb1186",
+      "name": "Corrupt priestly instruction",
+      "type": "figure",
+      "role": "failure",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.priestly-lips-knowledge-should-preserve-torah--aaa5e60a",
+      "name": "Priestly lips/knowledge should preserve Torah",
+      "type": "figure",
+      "role": "catechesis",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.faithless-judah-daughter-of-a-foreign-god--29005c1c",
+      "name": "Faithless Judah: daughter of a foreign god",
+      "type": "figure",
+      "role": "syncretism",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.faithless-judah-divorce-&-violence--f6b20d2f",
+      "name": "Faithless Judah: divorce & violence",
+      "type": "figure",
+      "role": "family-ethics",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.profaning-the-sanctuary-which-he-loves--924a296b",
+      "name": "Profaning the sanctuary which he loves",
+      "type": "figure",
+      "role": "sanctuary",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.wearied-the-lord-with-words---where-is-justice?--61891ea7",
+      "name": "Wearied the LORD with words / Where is justice?",
+      "type": "figure",
+      "role": "theodicy",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.behold-i-send-my-messenger--d4ecad38",
+      "name": "Behold, I send my messenger",
+      "type": "figure",
+      "role": "forerunner",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sudden-coming-to-his-temple--acc4a26c",
+      "name": "Sudden coming to his temple",
+      "type": "figure",
+      "role": "theophany",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.messenger-of-the-covenant-theophany-focus--38e12713",
+      "name": "Messenger of the covenant (theophany focus)",
+      "type": "figure",
+      "role": "ambiguous-figure",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.who-can-endure-the-day-of-his-coming?--be4383c3",
+      "name": "Who can endure the day of his coming?",
+      "type": "figure",
+      "role": "rhetorical",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.refiners-fire--18b0d2fd",
+      "name": "Refiner’s fire",
+      "type": "figure",
+      "role": "purification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.launderers-soap--8263000e",
+      "name": "Launderer’s soap",
+      "type": "figure",
+      "role": "purification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.offerings-in-righteousness--d8b7ee6f",
+      "name": "Offerings in righteousness",
+      "type": "figure",
+      "role": "cult-restoration",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.court-list-of-indictments-35--71d256b0",
+      "name": "Court list of indictments (3:5)",
+      "type": "figure",
+      "role": "lawsuit",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.return-to-me-and-i-will-return-to-you--e08b22b2",
+      "name": "Return to me and I will return to you",
+      "type": "figure",
+      "role": "call-to-renewal",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.how-have-we-robbed-god?-tithes-&-offerings--58fe5085",
+      "name": "How have we robbed God? Tithes & offerings",
+      "type": "figure",
+      "role": "disputation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.storehouse-test--c912cf17",
+      "name": "Storehouse test",
+      "type": "figure",
+      "role": "obedience-test",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.windows-of-heaven-opened--f590d0a5",
+      "name": "Windows of heaven opened",
+      "type": "figure",
+      "role": "blessing",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.devourer-rebuked--4e5946dc",
+      "name": "Devourer rebuked",
+      "type": "figure",
+      "role": "protection",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.all-nations-will-call-you-blessed--b68429da",
+      "name": "All nations will call you blessed",
+      "type": "figure",
+      "role": "witness",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.land-of-delight--59c81720",
+      "name": "Land of delight",
+      "type": "figure",
+      "role": "land-theology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.hard-words-against-god---prosper-of-arrogant--1faa3996",
+      "name": "Hard words against God / Prosper of arrogant",
+      "type": "figure",
+      "role": "theodicy",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.book-of-remembrance-written--03d0dc93",
+      "name": "Book of Remembrance written",
+      "type": "figure",
+      "role": "heavenly-record",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.my-treasured-possession-segullah--8492b793",
+      "name": "My treasured possession (segullah)",
+      "type": "figure",
+      "role": "identity",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.distinction-between-righteous-and-wicked--4d3edc6a",
+      "name": "Distinction between righteous and wicked",
+      "type": "figure",
+      "role": "wisdom-motif",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.day-of-the-lord-oven-burning-like-a-furnace--49cdd84e",
+      "name": "Day of the LORD: oven burning like a furnace",
+      "type": "figure",
+      "role": "day-of-the-lord",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.neither-root-nor-branch-left--ca14c586",
+      "name": "Neither root nor branch left",
+      "type": "figure",
+      "role": "annihilation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sun-of-righteousness-with-healing-in-its-wings--4398c4d0",
+      "name": "Sun of righteousness with healing in its wings",
+      "type": "figure",
+      "role": "salvation-image",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.going-out-leaping-like-calves--b6f095bd",
+      "name": "Going out leaping like calves",
+      "type": "figure",
+      "role": "joy-figure",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.tread-down-the-wicked---ashes-under-your-feet--41fbd567",
+      "name": "Tread down the wicked / Ashes under your feet",
+      "type": "figure",
+      "role": "reversal",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.remember-the-torah-of-moses--c4410305",
+      "name": "Remember the Torah of Moses",
+      "type": "figure",
+      "role": "canonical-pivot",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.mount-horeb-sinai-recall--4dfe0741",
+      "name": "Mount Horeb/Sinai recall",
+      "type": "figure",
+      "role": "theophany-memory",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.behold-i-send-elijah--5a83cc47",
+      "name": "Behold, I send Elijah",
+      "type": "figure",
+      "role": "forerunner",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.hearts-of-fathers-to-children-&-children-to-fathers--b9015cc4",
+      "name": "Hearts of fathers to children & children to fathers",
+      "type": "figure",
+      "role": "reconciliation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.theodicy-and-divine-patience--2ab1e050",
+      "name": "Theodicy and divine patience",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "e.temple--1d486079",
+      "name": "Temple",
+      "type": "entity",
+      "role": "cultic",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.table-of-the-lord--f7c9c982",
+      "name": "Table of the LORD",
+      "type": "entity",
+      "role": "cultic",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.blind-animals--d0054c17",
+      "name": "Blind animals",
+      "type": "entity",
+      "role": "blemish",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.lame-animals--373a255e",
+      "name": "Lame animals",
+      "type": "entity",
+      "role": "blemish",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.sick-animals--d6cbdfc0",
+      "name": "Sick animals",
+      "type": "entity",
+      "role": "blemish",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.tear-covered-altar--79b12ad3",
+      "name": "Tear-covered altar",
+      "type": "entity",
+      "role": "lament",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.covenant-with-levi-entity--907a0226",
+      "name": "Covenant with Levi (entity)",
+      "type": "entity",
+      "role": "covenant",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.priestly-lips-knowledge-ideal-syllabus--f4cf666c",
+      "name": "Priestly lips/knowledge (ideal syllabus)",
+      "type": "entity",
+      "role": "catechesis",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.sanctuary-which-he-loves--8ac1ec94",
+      "name": "Sanctuary (which he loves)",
+      "type": "entity",
+      "role": "holy-space",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.daughter-of-a-foreign-god-motif--a2198874",
+      "name": "Daughter of a foreign god (motif)",
+      "type": "entity",
+      "role": "syncretism",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.divorce-certificate--4d57ee9d",
+      "name": "Divorce certificate",
+      "type": "entity",
+      "role": "legal",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.violence-covers-ones-garment--88fc96a1",
+      "name": "Violence covers one’s garment",
+      "type": "entity",
+      "role": "violence-metaphor",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.storehouse--e2d26181",
+      "name": "Storehouse",
+      "type": "entity",
+      "role": "infrastructure",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.tithes--cc2a3137",
+      "name": "Tithes",
+      "type": "entity",
+      "role": "economics",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.offerings--5c831b1f",
+      "name": "Offerings",
+      "type": "entity",
+      "role": "economics",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.windows-of-heaven--a406effe",
+      "name": "Windows of heaven",
+      "type": "entity",
+      "role": "blessing-image",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.devourer--3413b031",
+      "name": "Devourer",
+      "type": "entity",
+      "role": "judgment-agent",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.book-of-remembrance--3858f25b",
+      "name": "Book of Remembrance",
+      "type": "entity",
+      "role": "heavenly-record",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.treasured-possession-segullah--2eedea3b",
+      "name": "Treasured possession (segullah)",
+      "type": "entity",
+      "role": "identity",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.oven-furnace--dffa0dc4",
+      "name": "Oven/Furnace",
+      "type": "entity",
+      "role": "judgment-image",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.stubble--0d9bfb67",
+      "name": "Stubble",
+      "type": "entity",
+      "role": "judgment-image",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.ashes--bde761ad",
+      "name": "Ashes",
+      "type": "entity",
+      "role": "judgment-result",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.sun-of-righteousness--000aeb3d",
+      "name": "Sun of righteousness",
+      "type": "entity",
+      "role": "salvation-symbol",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.wings-healing--d7913167",
+      "name": "Wings (healing)",
+      "type": "entity",
+      "role": "salvation-symbol",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.land-of-delight--3e7dde46",
+      "name": "Land of delight",
+      "type": "entity",
+      "role": "land-ideal",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.governors-table--10f77ce2",
+      "name": "Governor’s table",
+      "type": "entity",
+      "role": "political-symbol",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.incense-and-pure-offering-among-the-nations--b47e6b94",
+      "name": "Incense and pure offering among the nations",
+      "type": "entity",
+      "role": "universal-worship",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.edoms-ruins-desolation--84fb931d",
+      "name": "Edom’s ruins/desolation",
+      "type": "entity",
+      "role": "judgment-landscape",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.justice-triad-orphan-widow-sojourner--a555d0d3",
+      "name": "Justice triad: orphan, widow, sojourner",
+      "type": "entity",
+      "role": "social-justice",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.perjury--95cdfe24",
+      "name": "Perjury",
+      "type": "entity",
+      "role": "legal-vice",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.sorcery--1ed64562",
+      "name": "Sorcery",
+      "type": "entity",
+      "role": "religious-vice",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.adultery--c6566507",
+      "name": "Adultery",
+      "type": "entity",
+      "role": "moral-vice",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.oppression-of-wage-earner--033a7497",
+      "name": "Oppression of wage earner",
+      "type": "entity",
+      "role": "economic-vice",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.election-love-jacob–esau--b2afbf7c",
+      "name": "Election love (Jacob–Esau)",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.priestly-vocation-&-catechesis--a32d07be",
+      "name": "Priestly vocation & catechesis",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.sanctuary-holiness-vs-profanation--78e1f4b0",
+      "name": "Sanctuary holiness vs. profanation",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.marriage-covenant-ethics--d561f9f1",
+      "name": "Marriage covenant ethics",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.tithes-&-covenant-economics--00d1cb50",
+      "name": "Tithes & covenant economics",
+      "type": "entity",
+      "role": "economics-theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.refiners-fire-as-purgation--31d6347f",
+      "name": "Refiner’s fire as purgation",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.day-of-the-lord-in-malachi--dfb1ce82",
+      "name": "Day of the LORD in Malachi",
+      "type": "entity",
+      "role": "eschatology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.universal-worship-incense-pure-offering-111-interpretations--8c2758c2",
+      "name": "Universal worship: incense/pure offering (1:11) interpretations",
+      "type": "entity",
+      "role": "reception",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.book-of-remembrance-&-heavenly-books--49d40c7e",
+      "name": "Book of Remembrance & heavenly books",
+      "type": "entity",
+      "role": "reception",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.segullah-treasured-possession-theology--e98d9fdf",
+      "name": "Segullah (treasured possession) theology",
+      "type": "entity",
+      "role": "identity-theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.elijah-typology-and-john-the-baptist--14a1a424",
+      "name": "Elijah typology and John the Baptist",
+      "type": "entity",
+      "role": "reception-christian",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.malachi-as-prophetic-seam-to-the-gospels--eed1ada0",
+      "name": "Malachi as prophetic seam to the Gospels",
+      "type": "entity",
+      "role": "canonical-theology",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

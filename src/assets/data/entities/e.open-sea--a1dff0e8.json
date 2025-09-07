@@ -1,0 +1,19 @@
+{
+  "name": "Open sea",
+  "type": "entity",
+  "references": [
+    "Jonah 1–2"
+  ],
+  "blurb": "Stage for storm, confession, and divine rescue; chaos becomes catechist.",
+  "category": "cosmic",
+  "id": "e.open-sea--a1dff0e8",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jonah": [
+      1,
+      2
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Benjamin",
+  "type": "group",
+  "references": [
+    "Obadiah 1:19"
+  ],
+  "blurb": "Southern tribe bordering Jerusalem; receives Gilead in the oracle’s map.",
+  "category": "tribe",
+  "id": "g.benjamin--cc9e4fff",
+  "canonical_id": "g.benjamin--57fce3bd",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Obadiah": [
+      1
+    ]
+  }
+}

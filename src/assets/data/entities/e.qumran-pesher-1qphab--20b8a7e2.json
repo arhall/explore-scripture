@@ -1,0 +1,12 @@
+{
+  "id": "e.qumran-pesher-1qphab--20b8a7e2",
+  "name": "Qumran Pesher (1QpHab)",
+  "type": "entity",
+  "references": [],
+  "category": "reception-jewish",
+  "blurb": "Sectarian commentary interpreting Habakkuk apocalyptically; validates the book’s enduring relevance amid oppression.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

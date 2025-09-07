@@ -1,0 +1,18 @@
+{
+  "name": "Horse Gate",
+  "type": "entity",
+  "references": [
+    "Nehemiah 3:28"
+  ],
+  "blurb": "Strategic entry/exit of Jerusalem; physical security and symbolic holiness meet at the gates.",
+  "category": "place",
+  "id": "e.horse-gate--77cf3582",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      3
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Plague: Livestock disease",
+  "type": "entity",
+  "references": [
+    "Exodus 9:1–7"
+  ],
+  "blurb": "Economy collapses under judgment.",
+  "category": "judgment",
+  "cross_references": [
+    "Psalm 78:43–51",
+    "Psalm 105:27–36",
+    "Revelation 16"
+  ],
+  "id": "e.plague-livestock-disease--76626deb",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      9
+    ]
+  }
+}

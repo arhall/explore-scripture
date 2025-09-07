@@ -1,0 +1,21 @@
+{
+  "name": "One body",
+  "type": "figure",
+  "category": "one",
+  "references": [
+    "Eph 4:4"
+  ],
+  "aka": [],
+  "id": "f.one-body--8c1cca0b",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      4
+    ]
+  }
+}

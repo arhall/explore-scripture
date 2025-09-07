@@ -1,0 +1,18 @@
+{
+  "name": "Ziphites",
+  "type": "group",
+  "references": [
+    "1 Samuel 23:19–24; 26:1"
+  ],
+  "blurb": "Local informants twice hunting David—small-town politics in sacred history.",
+  "category": "narrative",
+  "id": "g.ziphites--583a7e4b",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      23
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 20,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "p.jehoshaphat-king-of-judah--81a933e8",
+      "name": "Jehoshaphat king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.moab-ammon-meunites-coalition-choir-led-victory--fbe98507",
+      "name": "Moab–Ammon–Meunites coalition; choir-led victory",
+      "type": "entity",
+      "role": "theophany",
+      "refs_count": 1
+    },
+    {
+      "id": "e.ships-to-tarshish-broken.ahaziah-of-israel--4ff62e93",
+      "name": "Ships to Tarshish broken (Ahaziah of Israel)",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1
+    }
+  ]
+}

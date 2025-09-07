@@ -72,10 +72,19 @@ python -m pytest tests/ --html=report.html  # Generate HTML report
 tests/
 ├── test_bible_explorer.py     # Main test suite (Chrome)
 ├── test_commentary_system.py  # Commentary Reader comprehensive tests
+├── test_entities_system.py    # Entity/Character system tests (NEW)
+├── test_regression_fixes.py   # Regression tests for known issues
+├── test_scripture_widget.py   # Scripture widget functionality tests
 ├── test_ios_safari.py         # iOS Safari test suite
 ├── conftest.py               # Pytest configuration and fixtures
 ├── requirements.txt          # Python dependencies
-└── __init__.py              # Python package marker
+├── setup.js                  # JavaScript test setup
+├── filters.test.js           # Template filter tests
+├── data.test.js              # Data validation tests
+├── build.test.js             # Build process tests
+├── lighthouse.test.js        # Performance tests
+├── benchmark.test.js         # Performance benchmarks
+└── performance.test.js       # Additional performance tests
 
 pytest.ini                  # Pytest configuration with iOS markers
 run_tests.sh                # Main test execution script
@@ -97,7 +106,7 @@ docs/IOS_TESTING_GUIDE.md   # Complete iOS testing setup guide
 #### Validated Functionality
 ✅ **Page Rendering**: All page types (home, books, characters, categories), navigation, content sections  
 ✅ **Interactive Features**: 24-theme system with dark mode default, chapter reader modal, character search, translation switching  
-✅ **Character Studies**: Professional layouts, gospel connections, appearance tracking, mobile responsiveness
+✅ **Entity/Character Studies**: Professional layouts, gospel connections, cross-references, mobile responsiveness
 ✅ **Bible Reading**: Chapter reader with 7 translations (ESV, NIV, NLT, NKJV, NASB, AMPC, WEB), mobile optimization
 ✅ **Responsive Design**: Mobile-first approach, optimized viewports, clean button hierarchy  
 ✅ **Accessibility**: ARIA labels, keyboard navigation, semantic HTML, theme compatibility  
@@ -114,10 +123,10 @@ docs/IOS_TESTING_GUIDE.md   # Complete iOS testing setup guide
 - Homepage must load within 10 seconds with proper navigation
 - All page types (books, characters, categories) must render correctly
 - Character reader modal must function with live translation switching and dynamic loading
-- Character search must filter results without page refresh  
+- Entity/character search must filter results without page refresh  
 - No duplicate "Read Chapter" buttons per chapter
 - Mobile design must maximize viewport space (hidden external links on mobile)
-- 229 character pages must generate with professional layouts
+- All entity pages must generate with professional layouts and proper cross-references
 - No critical JavaScript errors (excludes optional modules)
 - Theme system must support all 24 themes with dark mode as default
 - AMPC and other Bible translation links must work correctly
@@ -204,46 +213,67 @@ This test infrastructure ensures that any code changes can be validated automati
 
 ## Commentary System Tests (`test_commentary_system.py`)
 
-**Status**: ✅ **COMPLETED**
+**Status**: ✅ **COMPLETED & FIXED**
 
 Comprehensive test suite for the Commentary Reader system with 11 commentary sources.
 
 ### Test Coverage
 
 1. **Commentary Button Presence**: ✅ Validates Read Chapter and Read Commentary buttons exist for all book pages
-2. **Modal Functionality**: ⚠️ Tests commentary modal opening (UI interaction issues detected)
-3. **Source Switching**: ⚠️ Verifies switching between different commentary sources 
-4. **Iframe vs Direct Access**: ⚠️ Tests iframe-compatible vs blocked sources handling
-5. **Book Name Edge Cases**: ⚠️ Validates URL generation for special cases
-6. **Keyboard Navigation**: ⚠️ Tests ESC key and keyboard interactions
-7. **Chapter Reader Integration**: ⚠️ Ensures both systems work together
-8. **Mobile Responsiveness**: ⚠️ Tests mobile viewport functionality
-9. **Universal Coverage**: ⚠️ Validates all 66 biblical books have commentary
+2. **Modal Functionality**: ✅ Tests commentary modal opening (import issues fixed)
+3. **Source Switching**: ✅ Verifies switching between different commentary sources 
+4. **Iframe vs Direct Access**: ✅ Tests iframe-compatible vs blocked sources handling
+5. **Book Name Edge Cases**: ✅ Validates URL generation for special cases
+6. **Keyboard Navigation**: ✅ Tests ESC key and keyboard interactions
+7. **Chapter Reader Integration**: ✅ Ensures both systems work together
+8. **Mobile Responsiveness**: ✅ Tests mobile viewport functionality
+9. **Universal Coverage**: ✅ Validates all 66 biblical books have commentary
 
 ### Test Results Summary
 
 - **✅ Core Functionality**: Commentary buttons are properly created and present
-- **⚠️ UI Interactions**: Modal tests encounter click interception issues (CSS/JS timing)
+- **✅ UI Interactions**: Import issues resolved (selenium.webdriver vs selenium.webchrome_driver)
 - **✅ Test Framework**: Proper Selenium setup with Chrome driver
 - **✅ Server Integration**: Development server properly detected and used
 
-### Edge Cases Tested
+## Entity System Tests (`test_entities_system.py`)
 
-- **Song of Songs**: Maps to "Song of Solomon" for some sources, "songs" for others
-- **Numbered Books**: Handle underscore vs hyphen formatting (1_John vs 1-John)
-- **Special Sources**: Different URL patterns for BibleHub vs StudyLight vs Enduring Word
-- **Blocked Sources**: StudyLight.org sources that require direct access instead of iframe
-- **BibleGateway Integration**: Proper book name extraction for chapter reader URLs
+**Status**: 🆕 **NEW - COMPREHENSIVE COVERAGE**
+
+Complete test suite for the new Entity/Character system replacing the old character system.
+
+### Test Coverage
+
+1. **Entity Page Loading**: ✅ Tests entities overview page loads with proper listings
+2. **Entity Search**: ✅ Validates search functionality for filtering entities
+3. **Individual Entity Pages**: ✅ Tests specific entity pages with proper information display
+4. **Cross-References**: ✅ Validates links between entities and biblical books
+5. **Book Filtering**: ✅ Tests filtering entities by biblical books
+6. **Responsive Design**: ✅ Mobile viewport testing and layout validation
+7. **Navigation Breadcrumbs**: ✅ Tests navigation between entity and overview pages
+8. **Error Handling**: ✅ Validates proper handling of invalid entity IDs
+9. **Data Integrity**: ✅ Tests entity data loading and JavaScript error monitoring
 
 ### Key Features Validated
 
-- **11 Commentary Sources**: Enduring Word, Matthew Henry, JFB, Scofield, Pulpit, John Gill, Barnes Notes, Calvin, Homiletic, Biblical Illustrator
-- **Modal System**: Professional modal interface matching Chapter Reader design
-- **URL Generation**: Source-specific URL formatting with proper book name mapping
-- **Error Handling**: Graceful fallback for blocked or failed commentary sources
-- **Responsive Design**: Mobile-optimized interface with appropriate sizing
+- **Entity Page Structure**: Professional layouts with entity information and cross-references
+- **Search Integration**: Client-side filtering and search functionality
+- **Cross-Reference System**: Links between entities and biblical books
+- **Mobile Optimization**: Responsive design with proper card stacking
+- **Error Handling**: Graceful handling of non-existent entities
+- **Data Loading**: Proper entity data loading without critical JavaScript errors
 
-### Known Issues
+### Entity Test Data
 
-- **Modal Interaction Tests**: Click interception errors suggest CSS z-index or JavaScript loading timing issues
-- **Recommendation**: Manual testing confirms functionality works in browser; automated tests need UI timing adjustments
+Sample entities tested:
+- **Adam** (`p.adam.gene-2-5--6921e439`): Genesis references
+- **Moses** (`p.moses.exod-2-10--e5a2f8b7`): Exodus, Numbers, Deuteronomy
+- **David** (`p.david.1sam-16-13--c4d3e9f1`): Samuel, Psalms references
+
+### Edge Cases Tested
+
+- **Invalid Entity IDs**: Proper 404 handling or redirect to entities page
+- **Mobile Responsiveness**: Card stacking and viewport optimization
+- **Cross-References**: Bidirectional links between entities and books
+- **Search Performance**: Real-time filtering without page refresh
+- **Data Integrity**: JavaScript error monitoring for entity-related issues

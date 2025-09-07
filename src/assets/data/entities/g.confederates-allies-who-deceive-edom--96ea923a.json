@@ -1,0 +1,18 @@
+{
+  "name": "Confederates/allies who deceive Edom",
+  "type": "group",
+  "references": [
+    "Obadiah 1:7"
+  ],
+  "blurb": "Those who ate your bread set a trap—diplomacy boomerangs; realpolitik cannot save against divine justice.",
+  "category": "allies",
+  "id": "g.confederates-allies-who-deceive-edom--96ea923a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Obadiah": [
+      1
+    ]
+  }
+}

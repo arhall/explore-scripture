@@ -1,0 +1,21 @@
+{
+  "id": "e.pharaoh-no-amon-parallel--c1b7e0a5",
+  "name": "No-Amon (Thebes) parallel",
+  "type": "entity",
+  "references": [
+    "Nah 3:8–10"
+  ],
+  "category": "historical-analogy",
+  "aka": [
+    "Thebes"
+  ],
+  "blurb": "If Thebes, fortified by the Nile, fell, how much more Nineveh—scriptural reasoning by precedent.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      3
+    ]
+  }
+}

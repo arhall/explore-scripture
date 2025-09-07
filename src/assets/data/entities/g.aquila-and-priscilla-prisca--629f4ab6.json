@@ -1,0 +1,23 @@
+{
+  "name": "Aquila and Priscilla (Prisca)",
+  "type": "group",
+  "category": "coworkers",
+  "references": [
+    "Acts 18:2–3,18–19"
+  ],
+  "aka": [],
+  "id": "g.aquila-and-priscilla-prisca--629f4ab6",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      18
+    ]
+  }
+}

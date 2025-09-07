@@ -1,0 +1,62 @@
+{
+  "name": "Jacob (Israel)",
+  "type": "person",
+  "references": [
+    "Genesis 27–35"
+  ],
+  "blurb": "Jacob strives—from womb to wedding tent to wilderness. He deceives and is deceived; flees and returns; meets God at Bethel and wrestles at Peniel. Renamed ‘Israel,’ he limps into maturity, learning that blessing is received, not seized. Jewish tradition highlights Jacob’s perseverance; Christian reflection sees transformation through divine encounter.",
+  "aka": [
+    "Israel"
+  ],
+  "relations": {
+    "parents": [
+      "Isaac",
+      "Rebekah"
+    ],
+    "spouses": [
+      "Leah",
+      "Rachel"
+    ],
+    "children": [
+      "Reuben",
+      "Simeon",
+      "Levi",
+      "Judah",
+      "Dan",
+      "Naphtali",
+      "Gad",
+      "Asher",
+      "Issachar",
+      "Zebulun",
+      "Dinah",
+      "Joseph",
+      "Benjamin"
+    ]
+  },
+  "category": "narrative",
+  "cross_references": [
+    "Genesis 28:10–22",
+    "Genesis 32:22–32",
+    "Hosea 12:3–5"
+  ],
+  "id": "p.jacob.israel.gene-27-35--04ac362b",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "p.jacob.israel.gene-37-50--883abce4"
+  ],
+  "book_references": {
+    "Genesis": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ]
+  }
+}

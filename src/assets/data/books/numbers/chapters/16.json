@@ -1,0 +1,63 @@
+{
+  "book": "Numbers",
+  "chapter": 16,
+  "entity_count": 8,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "p.aaron--cc77e332",
+      "name": "Aaron",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 6
+    },
+    {
+      "id": "p.dathan--9b6b18fb",
+      "name": "Dathan",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.abiram--9ad30889",
+      "name": "Abiram",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.on-son-of-peleth--c54a4618",
+      "name": "On son of Peleth",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.two-hundred-fifty-chiefs-with-censers--142af26a",
+      "name": "Two hundred fifty chiefs with censers",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.altar-covering-from-bronze-censers--98019a6f",
+      "name": "Altar covering from bronze censers",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    },
+    {
+      "id": "e.plague-checked-by-incense--8495df1d",
+      "name": "Plague checked by incense",
+      "type": "entity",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

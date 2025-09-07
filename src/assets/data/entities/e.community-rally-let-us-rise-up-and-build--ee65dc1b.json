@@ -1,0 +1,18 @@
+{
+  "name": "Community rally: ‘Let us rise up and build’",
+  "type": "entity",
+  "references": [
+    "Nehemiah 2:17–20"
+  ],
+  "blurb": "Public courage counters scorn; appeal shifts from shame to shared calling.",
+  "category": "narrative",
+  "id": "e.community-rally-let-us-rise-up-and-build--ee65dc1b",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      2
+    ]
+  }
+}

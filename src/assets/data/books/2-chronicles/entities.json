@@ -1,0 +1,681 @@
+{
+  "book": "2 Chronicles",
+  "slug": "2-chronicles",
+  "entity_count": 64,
+  "key_figures": [
+    {
+      "id": "p.solomon.chronicles-focus--6c5c003a",
+      "name": "Solomon (Chronicles focus)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 9,
+      "score": 19
+    },
+    {
+      "id": "p.jeroboam-son-of-nebat.north--99d720bc",
+      "name": "Jeroboam son of Nebat (north)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 4,
+      "score": 14
+    },
+    {
+      "id": "p.jehoshaphat-king-of-judah--81a933e8",
+      "name": "Jehoshaphat king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 4,
+      "score": 14
+    },
+    {
+      "id": "p.hezekiah-king-of-judah.chronicles-focus--66ee8fd1",
+      "name": "Hezekiah king of Judah (Chronicles focus)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 4,
+      "score": 14
+    },
+    {
+      "id": "p.rehoboam--2cfd43e1",
+      "name": "Rehoboam",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 3,
+      "score": 13
+    },
+    {
+      "id": "p.asa-king-of-judah.reformer--7d99bb37",
+      "name": "Asa king of Judah (reformer)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 3,
+      "score": 13
+    },
+    {
+      "id": "p.josiah-king-of-judah.reformer--a10d5584",
+      "name": "Josiah king of Judah (reformer)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.huram-abi-the-bronze-worker.hiram--f48d711b",
+      "name": "Huram-abi (Hiram) the bronze worker",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.queen-of-sheba.chronicles-retelling--bbf1b557",
+      "name": "Queen of Sheba (Chronicles retelling)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.shemaiah-the-man-of-god.no-civil-war--71dcc873",
+      "name": "Shemaiah the man of God (no civil war)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.abijah-king-of-judah.abijam--715d135f",
+      "name": "Abijah (Abijam) king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.azariah-son-of-oded.prophetic-encouragement--99d16d08",
+      "name": "Azariah son of Oded (prophetic encouragement)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.hanani-the-seer-rebukes-asa--a785b9f8",
+      "name": "Hanani the seer rebukes Asa",
+      "type": "person",
+      "role": "prophetic",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jehoram-king-of-judah--8b7bac57",
+      "name": "Jehoram king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.ahaziah-king-of-judah--75c57859",
+      "name": "Ahaziah king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jehoiada-the-priest.covenant-coup--2484abd9",
+      "name": "Jehoiada the priest (covenant & coup)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.joash-repairs-the-temple-then-declines.jehoash--02c9df6a",
+      "name": "Joash (Jehoash) repairs the temple, then declines",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.zechariah-son-of-jehoiada.stoned--2f5f98c3",
+      "name": "Zechariah son of Jehoiada (stoned)",
+      "type": "person",
+      "role": "prophetic",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.amaziah-king-of-judah--35828ba5",
+      "name": "Amaziah king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.uzziah-king-of-judah.azariah--c9bd6c4e",
+      "name": "Uzziah (Azariah) king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "p.solomon.chronicles-focus--6c5c003a",
+      "name": "Solomon (Chronicles focus)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 9,
+      "score": 19
+    },
+    {
+      "id": "p.jeroboam-son-of-nebat.north--99d720bc",
+      "name": "Jeroboam son of Nebat (north)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 4,
+      "score": 14
+    },
+    {
+      "id": "p.jehoshaphat-king-of-judah--81a933e8",
+      "name": "Jehoshaphat king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 4,
+      "score": 14
+    },
+    {
+      "id": "p.hezekiah-king-of-judah.chronicles-focus--66ee8fd1",
+      "name": "Hezekiah king of Judah (Chronicles focus)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 4,
+      "score": 14
+    },
+    {
+      "id": "p.rehoboam--2cfd43e1",
+      "name": "Rehoboam",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 3,
+      "score": 13
+    },
+    {
+      "id": "p.asa-king-of-judah.reformer--7d99bb37",
+      "name": "Asa king of Judah (reformer)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 3,
+      "score": 13
+    },
+    {
+      "id": "p.josiah-king-of-judah.reformer--a10d5584",
+      "name": "Josiah king of Judah (reformer)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.huram-abi-the-bronze-worker.hiram--f48d711b",
+      "name": "Huram-abi (Hiram) the bronze worker",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.queen-of-sheba.chronicles-retelling--bbf1b557",
+      "name": "Queen of Sheba (Chronicles retelling)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.shemaiah-the-man-of-god.no-civil-war--71dcc873",
+      "name": "Shemaiah the man of God (no civil war)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.abijah-king-of-judah.abijam--715d135f",
+      "name": "Abijah (Abijam) king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.azariah-son-of-oded.prophetic-encouragement--99d16d08",
+      "name": "Azariah son of Oded (prophetic encouragement)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.hanani-the-seer-rebukes-asa--a785b9f8",
+      "name": "Hanani the seer rebukes Asa",
+      "type": "person",
+      "role": "prophetic",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jehoram-king-of-judah--8b7bac57",
+      "name": "Jehoram king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.ahaziah-king-of-judah--75c57859",
+      "name": "Ahaziah king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jehoiada-the-priest.covenant-coup--2484abd9",
+      "name": "Jehoiada the priest (covenant & coup)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.joash-repairs-the-temple-then-declines.jehoash--02c9df6a",
+      "name": "Joash (Jehoash) repairs the temple, then declines",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.zechariah-son-of-jehoiada.stoned--2f5f98c3",
+      "name": "Zechariah son of Jehoiada (stoned)",
+      "type": "person",
+      "role": "prophetic",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.amaziah-king-of-judah--35828ba5",
+      "name": "Amaziah king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.uzziah-king-of-judah.azariah--c9bd6c4e",
+      "name": "Uzziah (Azariah) king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jotham-king-of-judah--22629070",
+      "name": "Jotham king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.ahaz-king-of-judah--189a5877",
+      "name": "Ahaz king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.manasseh-king-of-judah.sin-and-repentance--b84b8da3",
+      "name": "Manasseh king of Judah (sin and repentance)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.amon-king-of-judah--55170b36",
+      "name": "Amon king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.levites-and-faithful-migrate-to-judah--e11c4b86",
+      "name": "Levites and faithful migrate to Judah",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.levite-teaching-mission-with-the-book-of-the-law--ec276f5c",
+      "name": "Levite teaching mission with the Book of the Law",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.philistines-arabs-raid-royal-sons-captured--40d35368",
+      "name": "Philistines & Arabs raid; royal sons captured",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.azariah-the-chief-priest-and-80-priests-oppose-uzziah--94f89e70",
+      "name": "Azariah the chief priest and 80 priests oppose Uzziah",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "t.hiram-king-of-tyre.huram--9a49b256",
+      "name": "Hiram (Huram) king of Tyre",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.shishak-king-of-egypt-invades-gold-to-bronze--b9eab934",
+      "name": "Shishak king of Egypt invades; gold to bronze",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.zerah-the-cushite--f5faa9eb",
+      "name": "Zerah the Cushite",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.sennacherib-king-of-assyria-rabshakehs-taunts--6d6cf22a",
+      "name": "Sennacherib king of Assyria; Rabshakeh’s taunts",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.pharaoh-neco-slays-josiah-at-megiddo--375c77e6",
+      "name": "Pharaoh Neco slays Josiah at Megiddo",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.nebuchadnezzar-king-of-babylon.chronicles--c58cf74a",
+      "name": "Nebuchadnezzar king of Babylon (Chronicles)",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.cyrus-king-of-persia.edict--6a515e45",
+      "name": "Cyrus king of Persia (edict)",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "e.temple-of-the-lord.house-for-the-name--3d1bbb8a",
+      "name": "Temple of the LORD (house for the Name)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "e.gibeon-vision.ask-for-wisdom--6028b9c3",
+      "name": "Gibeon vision (ask for wisdom)",
+      "type": "entity",
+      "role": "theophany",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.jachin-and-boaz.pillars--b81bb13c",
+      "name": "Jachin and Boaz (pillars)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.bronze-sea-ten-lavers-lampstands-tables--1f5c7ba4",
+      "name": "Bronze Sea, ten lavers, lampstands, tables",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.ark-brought-in-priests-singers-and-cymbals--6abd0639",
+      "name": "Ark brought in; priests, singers, and cymbals",
+      "type": "entity",
+      "role": "theophany",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.solomons-dedication-prayer--eac28c3d",
+      "name": "Solomon’s dedication prayer",
+      "type": "entity",
+      "role": "poetry",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.fire-from-heaven-and-glory-fill-the-temple--3e5093eb",
+      "name": "Fire from heaven and glory fill the temple",
+      "type": "entity",
+      "role": "theophany",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.if-my-people.night-appearance-and-promise--ade69388",
+      "name": "If my people… (night appearance and promise)",
+      "type": "entity",
+      "role": "theophany",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.ophir-gold-horses-and-chariots-from-egypt--368c8f57",
+      "name": "Ophir gold, horses and chariots from Egypt",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.great-renewal-covenant-even-queen-mother-removed--7195fc30",
+      "name": "Great renewal covenant; even queen mother removed",
+      "type": "entity",
+      "role": "covenant",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.alliance-with-ahab-micaiahs-lone-voice--be8117f5",
+      "name": "Alliance with Ahab; Micaiah’s lone voice",
+      "type": "entity",
+      "role": "prophetic",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.judicial-and-priestly-reforms.amariah-zebadiah--3e348e25",
+      "name": "Judicial and priestly reforms (Amariah, Zebadiah)",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.moab-ammon-meunites-coalition-choir-led-victory--fbe98507",
+      "name": "Moab–Ammon–Meunites coalition; choir-led victory",
+      "type": "entity",
+      "role": "theophany",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.ships-to-tarshish-broken.ahaziah-of-israel--4ff62e93",
+      "name": "Ships to Tarshish broken (Ahaziah of Israel)",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.edom-and-libnah-revolt--6e0d9fbb",
+      "name": "Edom and Libnah revolt",
+      "type": "entity",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.athaliah-usurps-royal-seed-hidden--38904916",
+      "name": "Athaliah usurps; royal seed hidden",
+      "type": "entity",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.mattan-priest-of-baal-slain-altars-torn-down--1e8c8d98",
+      "name": "Mattan priest of Baal slain; altars torn down",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.prophet-warns-about-hiring-ephraimite-troops--b5792177",
+      "name": "Prophet warns about hiring Ephraimite troops",
+      "type": "entity",
+      "role": "prophetic",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.syro-ephraimite-crisis-and-captive-compassion--0498b2e8",
+      "name": "Syro-Ephraimite crisis and captive compassion",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.doors-opened-levites-consecrate-song-resumes--e270fa87",
+      "name": "Doors opened; Levites consecrate; song resumes",
+      "type": "entity",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.passover-invitation-to-north-laughter-and-repentance--48cb07d0",
+      "name": "Passover invitation to north; laughter and repentance",
+      "type": "entity",
+      "role": "festival",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.removal-of-high-places-smashing-idolatry--669e17f7",
+      "name": "Removal of high places; smashing idolatry",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.hezekiah-and-isaiah-pray-angel-strikes-the-camp--b4ddabff",
+      "name": "Hezekiah and Isaiah pray; angel strikes the camp",
+      "type": "entity",
+      "role": "theophany",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.hezekiahs-illness-pride-and-humility--d85ca974",
+      "name": "Hezekiah’s illness, pride, and humility",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.hezekiahs-waterworks.siloam-tunnel--0e06be50",
+      "name": "Hezekiah’s waterworks (Siloam tunnel)",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.hilkiah-finds-the-book-shaphan-reads-huldah-speaks--6593a5bb",
+      "name": "Hilkiah finds the Book; Shaphan reads; Huldah speaks",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.covenant-renewal-great-passover--1c9abc0c",
+      "name": "Covenant renewal & great Passover",
+      "type": "entity",
+      "role": "festival",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.jehoahaz-jehoiakim-jehoiachin-zedekiah.last-kings--be494bee",
+      "name": "Jehoahaz, Jehoiakim, Jehoiachin, Zedekiah (last kings)",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.sabbath-rests-for-the-land.seventy-years--84967480",
+      "name": "Sabbath rests for the land (seventy years)",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

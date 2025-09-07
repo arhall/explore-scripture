@@ -1,0 +1,26 @@
+{
+  "name": "Eliab",
+  "type": "person",
+  "references": [
+    "1 Samuel 16:6–7; 17:28"
+  ],
+  "blurb": "Tall eldest brother who misreads David’s heart—appearance does not equal calling.",
+  "relations": {
+    "father": "Jesse",
+    "brothers": [
+      "Abinadab",
+      "Shammah",
+      "David"
+    ]
+  },
+  "category": "narrative",
+  "id": "p.eliab--d294be6a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      16
+    ]
+  }
+}

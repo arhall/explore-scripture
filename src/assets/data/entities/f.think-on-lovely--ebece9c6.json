@@ -1,0 +1,21 @@
+{
+  "name": "Think on: Lovely",
+  "type": "figure",
+  "category": "virtue",
+  "references": [
+    "Phil 4:8"
+  ],
+  "aka": [],
+  "id": "f.think-on-lovely--ebece9c6",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Philippians": [
+      4
+    ]
+  }
+}

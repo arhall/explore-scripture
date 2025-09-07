@@ -1,0 +1,968 @@
+{
+  "book": "Jonah",
+  "coverage": "Full, expanded Jonah: prophet (Amittai; Jeroboam II backdrop); divine/cosmic agents; ship scene (captain, sailors, lots, confession); descent & prayer (Sheol, bars, roots, weeds, temple, vow); Nineveh’s repentance (king, nobles, decree, animals, turning from violence); Jonah’s anger & dialogue (booth, plant joy, anger, rhetorical question, 120k, animals); geography; theology; structures; intertexts & reception; historical frame; fine-grain motifs.",
+  "generated_at": "2025-09-02T22:35:50.799135",
+  "version": "v1.0-jonah-all-expanded",
+  "id_scheme": "Cross-book stable by (type+primary-slug) + deterministic hash; reuses prior IDs when names/types match.",
+  "sections": [
+    {
+      "section": "Superscription & Prophet",
+      "entries": [
+        "Jonah son of Amittai",
+        "Amittai",
+        "Jeroboam II (backdrop)"
+      ]
+    },
+    {
+      "section": "Divine & Cosmic Agents",
+      "entries": [
+        "YHWH (the LORD)",
+        "Great wind",
+        "Great storm on the sea",
+        "Great fish",
+        "Plant (qîqāyōn)",
+        "Worm",
+        "Scorching east wind",
+        "Sea"
+      ]
+    },
+    {
+      "section": "The Ship Scene",
+      "entries": [
+        "The ship (personified)",
+        "Captain of the ship",
+        "Sailors/crew",
+        "Each cried to his own god",
+        "Casting lots",
+        "Hurling cargo into the sea",
+        "Jonah asleep in the hold",
+        "Jonah’s self‑description",
+        "Sailors fear, sacrifice, and vows"
+      ]
+    },
+    {
+      "section": "Jonah’s Descent & Prayer",
+      "entries": [
+        "Sheol (realm of the dead)",
+        "Bars of the earth closing forever",
+        "Roots of the mountains",
+        "Deep, waves, breakers, flood",
+        "Weeds wrapped around head",
+        "Temple as prayer locus",
+        "Thanksgiving vow",
+        "Those who cling to worthless idols"
+      ]
+    },
+    {
+      "section": "Nineveh’s Repentance",
+      "entries": [
+        "Nineveh, great city",
+        "A day’s journey proclamation",
+        "People of Nineveh",
+        "From greatest to least",
+        "King of Nineveh",
+        "Nobles/council of Nineveh",
+        "Animals of Nineveh",
+        "Proclamation/decree of repentance",
+        "Turning from violence (ḥāmās)",
+        "God relents of disaster"
+      ]
+    },
+    {
+      "section": "Jonah’s Anger & Divine Dialogue",
+      "entries": [
+        "Jonah’s prayer of anger",
+        "Jonah’s booth (shelter)",
+        "Jonah’s joy over the plant",
+        "Anger at the plant’s death",
+        "God’s rhetorical question",
+        "120,000 who do not know right from left",
+        "Animals included in compassion"
+      ]
+    },
+    {
+      "section": "Geography & Locations",
+      "entries": [
+        "Joppa (port)",
+        "Tarshish (westward horizon)",
+        "Nineveh (Assyria)",
+        "Open sea"
+      ]
+    },
+    {
+      "section": "Theological & Literary Motifs",
+      "entries": [
+        "Flight from presence of YHWH",
+        "YHWH appoints creation",
+        "Universal repentance (sailors + Nineveh)",
+        "Divine relenting",
+        "Prophet’s nationalism vs. God’s compassion",
+        "Mercy to animals",
+        "Irony & satire"
+      ]
+    },
+    {
+      "section": "Structural & Literary Features",
+      "entries": [
+        "‘Great’ motif (gādôl)",
+        "‘Arise, go’ repetition",
+        "Descent motif",
+        "Chiastic parallels",
+        "Ending with a question"
+      ]
+    },
+    {
+      "section": "Intertexts & Reception",
+      "entries": [
+        "Exodus 34:6 echoed",
+        "Psalm echoes in Jonah’s prayer",
+        "Sign of Jonah (NT reception)",
+        "Yom Kippur reading (Jewish)",
+        "Islamic tradition: Yunus",
+        "Early Christian art (catacombs)"
+      ]
+    },
+    {
+      "section": "Historical & Cultural Frame",
+      "entries": [
+        "Assyria as empire",
+        "Prophetic contrast: Amos & Nahum",
+        "Polytheistic pantheons at sea",
+        "Lots as divination"
+      ]
+    },
+    {
+      "section": "Fine-Grain Motifs & Mini-Entries",
+      "entries": [
+        "Hurl motif (God, sailors)",
+        "Fear progression (afraid → exceedingly afraid → fear YHWH greatly)",
+        "Sacrifice and vows of sailors",
+        "Vomiting of Jonah by the fish",
+        "Five-word sermon",
+        "Sackcloth for humans and animals",
+        "Ashes as throne",
+        "Who knows? God may turn and relent",
+        "Exceedingly angry (Jonah)",
+        "Pity (ḥûs) wordplay"
+      ]
+    }
+  ],
+  "entries_count": 81,
+  "entries": [
+    {
+      "name": "Jonah son of Amittai",
+      "type": "person",
+      "references": [
+        "Jonah 1:1; 2 Kings 14:25"
+      ],
+      "blurb": "Prophet whose earlier ministry supported Jeroboam II’s expansion (2 Kgs 14:25). In this book he becomes an ironic anti‑prophet, fleeing God’s mercy mission to Nineveh.",
+      "relations": {
+        "father": "Amittai"
+      },
+      "category": "prophet",
+      "id": "p.jonah-son-of-amittai--edb9547f"
+    },
+    {
+      "name": "Amittai",
+      "type": "person",
+      "references": [
+        "Jonah 1:1"
+      ],
+      "blurb": "Jonah’s father; name means ‘truth/faithfulness.’ Roots Jonah’s identity in Israel’s story.",
+      "category": "genealogy",
+      "id": "p.amittai--1087c07f"
+    },
+    {
+      "name": "Jeroboam II (backdrop)",
+      "type": "person",
+      "references": [
+        "2 Kings 14:25"
+      ],
+      "blurb": "Israelite king in whose reign Jonah earlier prophesied. Prosperity without justice frames Jonah’s later resistance to mercy for enemies.",
+      "category": "king",
+      "id": "p.jeroboam-ii.in-the-bethel-dispute--fc8cf226"
+    },
+    {
+      "name": "YHWH (the LORD)",
+      "type": "divine",
+      "references": [
+        "Jonah 1–4"
+      ],
+      "blurb": "Divine protagonist who appoints wind, storm, fish, plant, worm, and wind; relents from disaster and catechizes the prophet in compassion.",
+      "id": "d.yhwh--376a912b"
+    },
+    {
+      "name": "Great wind",
+      "type": "entity",
+      "references": [
+        "Jonah 1:4"
+      ],
+      "blurb": "Commissioned to hurl a storm at the sea—creation obeys.",
+      "category": "cosmic",
+      "id": "e.great-wind--dbec0a8a"
+    },
+    {
+      "name": "Great storm on the sea",
+      "type": "entity",
+      "references": [
+        "Jonah 1:4"
+      ],
+      "blurb": "Chaos harnessed by God to reroute the runaway prophet.",
+      "category": "cosmic",
+      "id": "e.great-storm-on-the-sea--53aa3149"
+    },
+    {
+      "name": "Great fish",
+      "type": "entity",
+      "references": [
+        "Jonah 1:17; 2:10"
+      ],
+      "blurb": "Womb/tomb where Jonah is kept three days; crucible for the psalm of thanksgiving.",
+      "category": "cosmic",
+      "cross_references": [
+        "Matt 12:39–41"
+      ],
+      "id": "e.great-fish--be1efdcf"
+    },
+    {
+      "name": "Plant (qîqāyōn)",
+      "type": "entity",
+      "references": [
+        "Jonah 4:6"
+      ],
+      "blurb": "Gifted shade that delights Jonah before God removes it to expose his skewed compassions.",
+      "category": "object-lesson",
+      "id": "e.plant--10a19f21"
+    },
+    {
+      "name": "Worm",
+      "type": "entity",
+      "references": [
+        "Jonah 4:7"
+      ],
+      "blurb": "Small agent with big assignment—undoes Jonah’s comfort to provoke reflection.",
+      "category": "object-lesson",
+      "id": "e.worm--7999f34e"
+    },
+    {
+      "name": "Scorching east wind",
+      "type": "entity",
+      "references": [
+        "Jonah 4:8"
+      ],
+      "blurb": "With the sun, intensifies Jonah’s discomfort—embodied pedagogy.",
+      "category": "cosmic",
+      "id": "e.scorching-east-wind--e7fc1ba4"
+    },
+    {
+      "name": "Sea",
+      "type": "entity",
+      "references": [
+        "Jonah 1–2"
+      ],
+      "blurb": "Symbol of chaos that yet serves salvation: it threatens, then yields Jonah at God’s word.",
+      "category": "cosmic",
+      "id": "e.sea--29984f47"
+    },
+    {
+      "name": "The ship (personified)",
+      "type": "entity",
+      "references": [
+        "Jonah 1:4"
+      ],
+      "blurb": "‘The ship thought to break’—the vessel becomes a character sharing the crew’s peril.",
+      "category": "ship",
+      "id": "e.the-ship--4e315803"
+    },
+    {
+      "name": "Captain of the ship",
+      "type": "person",
+      "references": [
+        "Jonah 1:6"
+      ],
+      "blurb": "Importunes Jonah to call on his god; pagan captain models urgency the prophet lacks.",
+      "category": "sailor",
+      "id": "p.captain-of-the-ship--1af5fc2b"
+    },
+    {
+      "name": "Sailors/crew",
+      "type": "group",
+      "references": [
+        "Jonah 1:5–16"
+      ],
+      "blurb": "Polytheists who ultimately fear YHWH, sacrifice, and make vows—Gentile piety contrasts Jonah’s stubbornness.",
+      "category": "gentiles",
+      "id": "g.sailors-crew--ea2d32e2"
+    },
+    {
+      "name": "Each cried to his own god",
+      "type": "group",
+      "references": [
+        "Jonah 1:5"
+      ],
+      "blurb": "Religious pluralism at sea—until the true Maker of sea and land is confessed.",
+      "category": "religion",
+      "id": "g.each-cried-to-his-own-god--98321a57"
+    },
+    {
+      "name": "Casting lots",
+      "type": "entity",
+      "references": [
+        "Jonah 1:7"
+      ],
+      "blurb": "Ancient discernment rite; lot falls on Jonah, displaying sovereignty over chance.",
+      "category": "practice",
+      "id": "e.casting-lots--43063a78"
+    },
+    {
+      "name": "Hurling cargo into the sea",
+      "type": "entity",
+      "references": [
+        "Jonah 1:5"
+      ],
+      "blurb": "Economic self‑loss to preserve life; sailors’ prudence anticipates their eventual sacrifice to the LORD.",
+      "category": "action",
+      "id": "e.hurling-cargo-into-the-sea--7c053b2e"
+    },
+    {
+      "name": "Jonah asleep in the hold",
+      "type": "entity",
+      "references": [
+        "Jonah 1:5"
+      ],
+      "blurb": "Prophet’s torpor mirrors spiritual avoidance; contrasted with sailors’ wakeful prayer.",
+      "category": "motif",
+      "id": "e.jonah-asleep-in-the-hold--9f41b4c7"
+    },
+    {
+      "name": "Jonah’s self‑description",
+      "type": "entity",
+      "references": [
+        "Jonah 1:9"
+      ],
+      "blurb": "‘Hebrew; I fear YHWH, Maker of sea and dry land’—orthodox confession without obedient praxis.",
+      "category": "confession",
+      "id": "e.jonahs-self-description--daec3683"
+    },
+    {
+      "name": "Sailors fear, sacrifice, and vows",
+      "type": "entity",
+      "references": [
+        "Jonah 1:16"
+      ],
+      "blurb": "Post‑calm worship: Gentile conversion scene prefigures Nineveh’s repentance.",
+      "category": "worship",
+      "id": "e.sailors-fear-sacrifice-and-vows--6b42350d"
+    },
+    {
+      "name": "Sheol (realm of the dead)",
+      "type": "entity",
+      "references": [
+        "Jonah 2:2"
+      ],
+      "blurb": "Jonah cries from Sheol—poetic death—and is heard; grace reaches below rock bottom.",
+      "category": "afterlife",
+      "id": "e.sheol--d965b5d7"
+    },
+    {
+      "name": "Bars of the earth closing forever",
+      "type": "entity",
+      "references": [
+        "Jonah 2:6"
+      ],
+      "blurb": "Imprisonment image: gates of death closed; God breaks them open.",
+      "category": "imagery",
+      "id": "e.bars-of-the-earth-closing-forever--cbd56d1c"
+    },
+    {
+      "name": "Roots of the mountains",
+      "type": "entity",
+      "references": [
+        "Jonah 2:6"
+      ],
+      "blurb": "Mythic geography—Jonah sinks to earth’s foundations before being lifted.",
+      "category": "imagery",
+      "id": "e.roots-of-the-mountains--94d1fd81"
+    },
+    {
+      "name": "Deep, waves, breakers, flood",
+      "type": "entity",
+      "references": [
+        "Jonah 2:3–5"
+      ],
+      "blurb": "Chaos waters as agents of judgment; yet they obey God’s summons to deliver.",
+      "category": "chaos",
+      "id": "e.deep-waves-breakers-flood--63138ba6"
+    },
+    {
+      "name": "Weeds wrapped around head",
+      "type": "entity",
+      "references": [
+        "Jonah 2:5"
+      ],
+      "blurb": "Seaweed like a burial shroud; emblem of entanglement in death.",
+      "category": "imagery",
+      "id": "e.weeds-wrapped-around-head--733cf783"
+    },
+    {
+      "name": "Temple as prayer locus",
+      "type": "entity",
+      "references": [
+        "Jonah 2:4,7"
+      ],
+      "blurb": "Orientation toward God’s holy temple anchors hope in exile from land and life.",
+      "category": "worship",
+      "id": "e.temple-as-prayer-locus--be781d6d"
+    },
+    {
+      "name": "Thanksgiving vow",
+      "type": "entity",
+      "references": [
+        "Jonah 2:9"
+      ],
+      "blurb": "Vowed sacrifice and praise: ‘Salvation belongs to the LORD’—the psalm’s thesis.",
+      "category": "worship",
+      "id": "e.thanksgiving-vow--de221ce0"
+    },
+    {
+      "name": "Those who cling to worthless idols",
+      "type": "group",
+      "references": [
+        "Jonah 2:8"
+      ],
+      "blurb": "Polemic against idolatry in a Gentile setting—ironically, Gentiles in story repent while Jonah resists.",
+      "category": "contrast",
+      "id": "g.those-who-cling-to-worthless-idols--e9afd3fa"
+    },
+    {
+      "name": "Nineveh, great city",
+      "type": "entity",
+      "references": [
+        "Jonah 3:2–3"
+      ],
+      "blurb": "Assyria’s capital described as ‘exceedingly great’—its size underscores the scale of God’s mercy.",
+      "category": "city",
+      "id": "e.nineveh-great-city--7e8b88bc"
+    },
+    {
+      "name": "A day’s journey proclamation",
+      "type": "entity",
+      "references": [
+        "Jonah 3:4"
+      ],
+      "blurb": "Jonah’s minimal sermon—five Hebrew words—yet explosive effect: Nineveh believes God.",
+      "category": "preaching",
+      "id": "e.a-days-journey-proclamation--aa8709f7"
+    },
+    {
+      "name": "People of Nineveh",
+      "type": "group",
+      "references": [
+        "Jonah 3:5"
+      ],
+      "blurb": "From greatest to least, they fast and don sackcloth—mass repentance unparalleled in the Twelve.",
+      "category": "gentiles",
+      "id": "g.people-of-nineveh--47751c47"
+    },
+    {
+      "name": "From greatest to least",
+      "type": "entity",
+      "references": [
+        "Jonah 3:5"
+      ],
+      "blurb": "Social totality formula highlighting comprehensive response.",
+      "category": "literary",
+      "id": "e.from-greatest-to-least--cc041909"
+    },
+    {
+      "name": "King of Nineveh",
+      "type": "person",
+      "references": [
+        "Jonah 3:6"
+      ],
+      "blurb": "Performs royal humility: rises, removes robe, covers in sackcloth, sits in ashes.",
+      "category": "king",
+      "id": "p.king-of-nineveh--0d11d8e9"
+    },
+    {
+      "name": "Nobles/council of Nineveh",
+      "type": "group",
+      "references": [
+        "Jonah 3:7"
+      ],
+      "blurb": "Elite partner with king to enact repentance law; top‑down endorsement of bottom‑up movement.",
+      "category": "council",
+      "id": "g.nobles-council-of-nineveh--51667b4d"
+    },
+    {
+      "name": "Animals of Nineveh",
+      "type": "group",
+      "references": [
+        "Jonah 3:7–8"
+      ],
+      "blurb": "Beasts share fast and sackcloth—comic yet profound sign that creation joins repentance.",
+      "category": "animals",
+      "id": "g.animals-of-nineveh--2a9b3bd4"
+    },
+    {
+      "name": "Proclamation/decree of repentance",
+      "type": "entity",
+      "references": [
+        "Jonah 3:7–9"
+      ],
+      "blurb": "Legal text commanding abstinence, prayer, and turning from violence; hopes God may relent.",
+      "category": "law",
+      "id": "e.proclamation-decree-of-repentance--c0e7a3fd"
+    },
+    {
+      "name": "Turning from violence (ḥāmās)",
+      "type": "entity",
+      "references": [
+        "Jonah 3:8"
+      ],
+      "blurb": "Ethical dimension of repentance: not only ritual fasting but social reform.",
+      "category": "ethic",
+      "id": "e.turning-from-violence.m-s--6993f9ab"
+    },
+    {
+      "name": "God relents of disaster",
+      "type": "entity",
+      "references": [
+        "Jonah 3:10"
+      ],
+      "blurb": "Divine freedom to forgive upon genuine turning—conditional prophecy at work.",
+      "category": "theology",
+      "id": "e.god-relents-of-disaster--cf76124c"
+    },
+    {
+      "name": "Jonah’s prayer of anger",
+      "type": "entity",
+      "references": [
+        "Jonah 4:2"
+      ],
+      "blurb": "Cites Exod 34:6’s mercy creed as grievance—Jonah resents grace to enemies.",
+      "category": "prayer",
+      "id": "e.jonahs-prayer-of-anger--c5301671"
+    },
+    {
+      "name": "Jonah’s booth (shelter)",
+      "type": "entity",
+      "references": [
+        "Jonah 4:5"
+      ],
+      "blurb": "Prophet builds a booth outside the city, hoping for fire from heaven—anti‑festival posture.",
+      "category": "shelter",
+      "id": "e.jonahs-booth--9a7d2ba6"
+    },
+    {
+      "name": "Jonah’s joy over the plant",
+      "type": "entity",
+      "references": [
+        "Jonah 4:6"
+      ],
+      "blurb": "First recorded joy—rooted in shade, not salvation—reveals malformed loves.",
+      "category": "emotion",
+      "id": "e.jonahs-joy-over-the-plant--26018a58"
+    },
+    {
+      "name": "Anger at the plant’s death",
+      "type": "entity",
+      "references": [
+        "Jonah 4:7–9"
+      ],
+      "blurb": "Misdirected pity: Jonah pities the plant but not people; God exposes the dissonance.",
+      "category": "emotion",
+      "id": "e.anger-at-the-plants-death--d2714d52"
+    },
+    {
+      "name": "God’s rhetorical question",
+      "type": "entity",
+      "references": [
+        "Jonah 4:10–11"
+      ],
+      "blurb": "Climactic appeal to divine pity for 120,000 morally ignorant persons and many animals.",
+      "category": "dialogue",
+      "id": "e.gods-rhetorical-question--d1ff66ed"
+    },
+    {
+      "name": "120,000 who do not know right from left",
+      "type": "group",
+      "references": [
+        "Jonah 4:11"
+      ],
+      "blurb": "Possibly children or morally untaught populace; they anchor the case for mercy.",
+      "category": "people",
+      "id": "g.120-000-who-do-not-know-right-from-left--daddfe19"
+    },
+    {
+      "name": "Animals included in compassion",
+      "type": "group",
+      "references": [
+        "Jonah 4:11"
+      ],
+      "blurb": "Divine pity explicitly extends to livestock—creation theology meets mission.",
+      "category": "animals",
+      "id": "g.animals-included-in-compassion--90c32d7e"
+    },
+    {
+      "name": "Joppa (port)",
+      "type": "entity",
+      "references": [
+        "Jonah 1:3"
+      ],
+      "blurb": "Where Jonah embarks to flee; geography of disobedience.",
+      "category": "city",
+      "id": "e.joppa--f6d139f9"
+    },
+    {
+      "name": "Tarshish (westward horizon)",
+      "type": "entity",
+      "references": [
+        "Jonah 1:3"
+      ],
+      "blurb": "Mythic far west (Spain/Sardinia/Carthage proposals)—symbol for evasion of mission.",
+      "category": "region",
+      "id": "e.tarshish--6804a5d3"
+    },
+    {
+      "name": "Nineveh (Assyria)",
+      "type": "entity",
+      "references": [
+        "Jonah 1:2; 3:3"
+      ],
+      "blurb": "Imperial capital infamous for cruelty; becomes site of exemplary repentance.",
+      "category": "city",
+      "id": "e.nineveh--7eef5d03"
+    },
+    {
+      "name": "Open sea",
+      "type": "entity",
+      "references": [
+        "Jonah 1–2"
+      ],
+      "blurb": "Stage for storm, confession, and divine rescue; chaos becomes catechist.",
+      "category": "cosmic",
+      "id": "e.open-sea--a1dff0e8"
+    },
+    {
+      "name": "Flight from presence of YHWH",
+      "type": "entity",
+      "references": [
+        "Jonah 1:3"
+      ],
+      "blurb": "Jonah’s theology of escape collapses before God’s omnipresence.",
+      "category": "theology",
+      "id": "e.flight-from-presence-of-yhwh--f6706324"
+    },
+    {
+      "name": "YHWH appoints creation",
+      "type": "entity",
+      "references": [
+        "Jonah 1:17; 4:6–8"
+      ],
+      "blurb": "Fish, plant, worm, wind—creatures become teachers under divine command.",
+      "category": "theology",
+      "id": "e.yhwh-appoints-creation--b112bde2"
+    },
+    {
+      "name": "Universal repentance (sailors + Nineveh)",
+      "type": "entity",
+      "references": [
+        "Jonah 1:14–16; 3:5–10"
+      ],
+      "blurb": "Gentiles respond faster and fuller than the prophet; mission reframed as God’s pursuit of the nations.",
+      "category": "theme",
+      "id": "e.universal-repentance--2b24a3cf"
+    },
+    {
+      "name": "Divine relenting",
+      "type": "entity",
+      "references": [
+        "Jonah 3:10"
+      ],
+      "blurb": "God’s freedom to forgive when violence ceases; prophecy as invitation not fatalism.",
+      "category": "theology",
+      "id": "e.divine-relenting--9b87f650"
+    },
+    {
+      "name": "Prophet’s nationalism vs. God’s compassion",
+      "type": "entity",
+      "references": [
+        "Jonah 4:2"
+      ],
+      "blurb": "Book exposes parochial piety; God’s pity outstrips human tribalism.",
+      "category": "theme",
+      "id": "e.prophets-nationalism-vs-gods-compassion--a77f3ff2"
+    },
+    {
+      "name": "Mercy to animals",
+      "type": "entity",
+      "references": [
+        "Jonah 4:11"
+      ],
+      "blurb": "Final line broadens the circle of care to creatures—Edenic aftertaste.",
+      "category": "theology",
+      "id": "e.mercy-to-animals--3af3bd9e"
+    },
+    {
+      "name": "Irony & satire",
+      "type": "entity",
+      "references": [
+        "Jonah (overall)"
+      ],
+      "blurb": "Genre tools sharpen the question: will God’s people share God’s heart?",
+      "category": "literary",
+      "id": "e.irony-satire--3dca7e34"
+    },
+    {
+      "name": "‘Great’ motif (gādôl)",
+      "type": "entity",
+      "references": [
+        "Jonah 1–4"
+      ],
+      "blurb": "Refrain of greatness—storm, fish, city, anger—accentuates scale and irony.",
+      "category": "motif",
+      "id": "e.great-motif--c5952a46"
+    },
+    {
+      "name": "‘Arise, go’ repetition",
+      "type": "entity",
+      "references": [
+        "Jonah 1:2; 3:2"
+      ],
+      "blurb": "God recommissions Jonah verbatim—mission persists after failure.",
+      "category": "motif",
+      "id": "e.arise-go-repetition--5ca6aa84"
+    },
+    {
+      "name": "Descent motif",
+      "type": "entity",
+      "references": [
+        "Jonah 1:3–5; 2:6"
+      ],
+      "blurb": "Down to Joppa, into ship, down into hold, into sea, into fish—spiritual gravity diagram.",
+      "category": "motif",
+      "id": "e.descent-motif--df8a226d"
+    },
+    {
+      "name": "Chiastic parallels",
+      "type": "entity",
+      "references": [
+        "Jonah (overall)"
+      ],
+      "blurb": "Ch.1 sailors ↔ Ch.3 Ninevites; Ch.2 thanks ↔ Ch.4 anger; mercy frames the plot.",
+      "category": "structure",
+      "id": "e.chiastic-parallels--61a3af3e"
+    },
+    {
+      "name": "Ending with a question",
+      "type": "entity",
+      "references": [
+        "Jonah 4:11"
+      ],
+      "blurb": "Pedagogical closure invites readers to answer with their lives.",
+      "category": "literary",
+      "id": "e.ending-with-a-question--4d3d3bb2"
+    },
+    {
+      "name": "Exodus 34:6 echoed",
+      "type": "entity",
+      "references": [
+        "Jonah 4:2"
+      ],
+      "blurb": "Jonah quotes the mercy creed (‘gracious and merciful, slow to anger, abounding in steadfast love’) to protest God’s character—satire with theology.",
+      "category": "intertext",
+      "id": "e.exodus-34-6-echoed--e170f119"
+    },
+    {
+      "name": "Psalm echoes in Jonah’s prayer",
+      "type": "entity",
+      "references": [
+        "Jonah 2"
+      ],
+      "blurb": "Lines resonate with Psalms 3, 18, 30, 42, 69, 118, 120—Jonah prays Israel’s songbook from the deep.",
+      "category": "intertext",
+      "id": "e.psalm-echoes-in-jonahs-prayer--21059bbb"
+    },
+    {
+      "name": "Sign of Jonah (NT reception)",
+      "type": "entity",
+      "references": [
+        "Matt 12:39–41; Luke 11:29–32"
+      ],
+      "blurb": "Jesus uses Jonah’s three days as type of his death/resurrection; Nineveh’s repentance condemns an unrepentant generation.",
+      "category": "reception",
+      "id": "e:sign-of-jonah.nt-reception--f6a1fea6"
+    },
+    {
+      "name": "Yom Kippur reading (Jewish)",
+      "type": "entity",
+      "references": [
+        "Yom Kippur liturgy"
+      ],
+      "blurb": "Jonah read annually to summon repentance (teshuvah) and highlight God’s reluctance to punish.",
+      "category": "reception",
+      "id": "e.yom-kippur-reading--75e40050"
+    },
+    {
+      "name": "Islamic tradition: Yunus",
+      "type": "entity",
+      "references": [
+        "Qur’an 10:98; 37:139–148; 68:48–50"
+      ],
+      "blurb": "Parallel narrative of Yunus reinforces divine deliverance through repentance.",
+      "category": "reception",
+      "id": "e.islamic-tradition-yunus--e318f3c9"
+    },
+    {
+      "name": "Early Christian art (catacombs)",
+      "type": "entity",
+      "references": [
+        "Early church art"
+      ],
+      "blurb": "Jonah vomited from fish becomes a resurrection icon—baptismal and funerary symbol.",
+      "category": "reception",
+      "id": "e.early-christian-art--f0d888e7"
+    },
+    {
+      "name": "Assyria as empire",
+      "type": "group",
+      "references": [
+        "Background"
+      ],
+      "blurb": "Known for brutal warfare and mass deportations; Nineveh’s repentance therefore shocks and instructs Israel.",
+      "category": "empire",
+      "id": "g.assyria-as-empire--bfa08ba1"
+    },
+    {
+      "name": "Prophetic contrast: Amos & Nahum",
+      "type": "entity",
+      "references": [
+        "Inter-prophetic"
+      ],
+      "blurb": "Amos condemns injustice; Nahum later announces Nineveh’s fall—Jonah sits ironically between, spotlighting mercy.",
+      "category": "intertext",
+      "id": "e.prophetic-contrast-amos-nahum--fe00112a"
+    },
+    {
+      "name": "Polytheistic pantheons at sea",
+      "type": "group",
+      "references": [
+        "Jonah 1:5"
+      ],
+      "blurb": "‘Each cried to his god’ reflects Mediterranean religious plurality before YHWH is confessed as Maker.",
+      "category": "religion",
+      "id": "g.polytheistic-pantheons-at-sea--c5079b37"
+    },
+    {
+      "name": "Lots as divination",
+      "type": "entity",
+      "references": [
+        "Jonah 1:7"
+      ],
+      "blurb": "Practice appears elsewhere (Lev 16; Prov 16:33; Acts 1:26); Jonah shows providence guiding the lot.",
+      "category": "practice",
+      "id": "e.lots-as-divination--87bf2b56"
+    },
+    {
+      "name": "Hurl motif (God, sailors)",
+      "type": "entity",
+      "references": [
+        "Jonah 1:4,5,12,15"
+      ],
+      "blurb": "‘Hurl’ repeats: God hurls wind; sailors hurl cargo and Jonah—verbal choreography of surrender and control.",
+      "category": "motif",
+      "id": "e.hurl-motif.god-sailors--dbaa5062"
+    },
+    {
+      "name": "Fear progression (afraid → exceedingly afraid → fear YHWH greatly)",
+      "type": "entity",
+      "references": [
+        "Jonah 1:10,16"
+      ],
+      "blurb": "Narrative scales fear into worship; terror matures into reverence.",
+      "category": "motif",
+      "id": "e.fear-progression.afraid-exceedingly-afraid-fear-yhwh-greatly--2b2e933f"
+    },
+    {
+      "name": "Sacrifice and vows of sailors",
+      "type": "entity",
+      "references": [
+        "Jonah 1:16"
+      ],
+      "blurb": "Response pattern of conversion—ritual confirms new allegiance.",
+      "category": "worship",
+      "id": "e.sacrifice-and-vows-of-sailors--a117fa5a"
+    },
+    {
+      "name": "Vomiting of Jonah by the fish",
+      "type": "entity",
+      "references": [
+        "Jonah 2:10"
+      ],
+      "blurb": "Comic exodus onto dry land—creation becomes midwife to mission.",
+      "category": "action",
+      "id": "e.vomiting-of-jonah-by-the-fish--dbb020df"
+    },
+    {
+      "name": "Five-word sermon",
+      "type": "entity",
+      "references": [
+        "Jonah 3:4"
+      ],
+      "blurb": "Minimal proclamation maximizes divine effectiveness—Word outruns the messenger.",
+      "category": "preaching",
+      "id": "e.five-word-sermon--94272b71"
+    },
+    {
+      "name": "Sackcloth for humans and animals",
+      "type": "entity",
+      "references": [
+        "Jonah 3:5–8"
+      ],
+      "blurb": "Total abstinence and attire ritualize grief—repentance becomes public pedagogy.",
+      "category": "ritual",
+      "id": "e.sackcloth-for-humans-and-animals--a448a9fa"
+    },
+    {
+      "name": "Ashes as throne",
+      "type": "entity",
+      "references": [
+        "Jonah 3:6"
+      ],
+      "blurb": "King descending to ashes inverts royal symbolism—humility enthroned.",
+      "category": "symbol",
+      "id": "e.ashes-as-throne--3e4148c8"
+    },
+    {
+      "name": "Who knows? God may turn and relent",
+      "type": "entity",
+      "references": [
+        "Jonah 3:9"
+      ],
+      "blurb": "Hopeful humility replaces presumption—repentance without guarantees.",
+      "category": "prayer",
+      "id": "e.who-knows-god-may-turn-and-relent--f52289cb"
+    },
+    {
+      "name": "Exceedingly angry (Jonah)",
+      "type": "entity",
+      "references": [
+        "Jonah 4:1"
+      ],
+      "blurb": "Superlative anger frames the final lesson—prophet’s emotions under examination.",
+      "category": "emotion",
+      "id": "e.exceedingly-angry.jonah--a612f0ed"
+    },
+    {
+      "name": "Pity (ḥûs) wordplay",
+      "type": "entity",
+      "references": [
+        "Jonah 4:10–11"
+      ],
+      "blurb": "God’s ‘pity’ contrasts Jonah’s—lexical hinge of the book’s ethic.",
+      "category": "wordplay",
+      "id": "e.pity-wordplay.s--cdeffe2b"
+    }
+  ]
+}

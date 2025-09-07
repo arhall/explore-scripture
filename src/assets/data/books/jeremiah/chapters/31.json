@@ -1,0 +1,42 @@
+{
+  "book": "Jeremiah",
+  "chapter": 31,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "e.new-covenant.law-on-the-heart--33a29855",
+      "name": "New Covenant (law on the heart)",
+      "type": "entity",
+      "role": "covenant",
+      "refs_count": 1
+    },
+    {
+      "id": "e.rachel-weeping-for-her-children--8ae8039a",
+      "name": "Rachel weeping for her children",
+      "type": "entity",
+      "role": "lament",
+      "refs_count": 1
+    },
+    {
+      "id": "e.book-of-consolation.jeremiah-30-33--f322b9f0",
+      "name": "Book of Consolation (Jeremiah 30–33)",
+      "type": "entity",
+      "role": "gospel",
+      "refs_count": 1
+    },
+    {
+      "id": "e.rebuilt-jerusalem-measured-and-holy--161aface",
+      "name": "Rebuilt Jerusalem, measured and holy",
+      "type": "entity",
+      "role": "restoration",
+      "refs_count": 1
+    },
+    {
+      "id": "e.ramah.rachels-weeping--04fdc072",
+      "name": "Ramah (Rachel’s weeping)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Pudens",
+  "type": "person",
+  "category": "network",
+  "references": [
+    "2 Tim 4:9-22"
+  ],
+  "aka": [],
+  "id": "p.pudens--068d6574",
+  "book_references": {
+    "2 Timothy": [
+      4
+    ]
+  }
+}

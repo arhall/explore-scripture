@@ -1,0 +1,25 @@
+{
+  "name": "deacons",
+  "type": "group",
+  "category": "office",
+  "references": [
+    "Phil 1:1",
+    "1 Tim 3:8"
+  ],
+  "aka": [],
+  "id": "g.deacons--a2471f07",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Philippians": [
+      1
+    ],
+    "1 Timothy": [
+      3
+    ]
+  }
+}

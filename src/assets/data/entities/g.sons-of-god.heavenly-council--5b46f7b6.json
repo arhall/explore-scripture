@@ -1,0 +1,18 @@
+{
+  "name": "Sons of God (heavenly council)",
+  "type": "group",
+  "references": [
+    "Job 1:6; 2:1; 38:7"
+  ],
+  "blurb": "Heavenly court where angelic beings present themselves; creation and governance are pictured as council work under YHWH’s sovereignty.",
+  "category": "theology",
+  "id": "g.sons-of-god.heavenly-council--5b46f7b6",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Job": [
+      1
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 31,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "g.people-of-israel--ecedc898",
+      "name": "People of Israel (second generation)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.moses-charge-to-joshua.be-strong-and-courageous--2f45e84e",
+      "name": "Moses’ charge to Joshua (be strong and courageous)",
+      "type": "entity",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

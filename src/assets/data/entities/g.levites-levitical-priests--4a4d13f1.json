@@ -1,0 +1,18 @@
+{
+  "name": "Levites / Levitical priests",
+  "type": "group",
+  "references": [
+    "Deuteronomy 10:8–9; 18:1–8"
+  ],
+  "blurb": "Priestly tribe without land inheritance; teachers, blessers, and guardians of worship. Their dependence on tithes models trust in the LORD.",
+  "category": "narrative",
+  "id": "g.levites-levitical-priests--4a4d13f1",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Deuteronomy": [
+      10
+    ]
+  }
+}

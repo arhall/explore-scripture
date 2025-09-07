@@ -1,0 +1,22 @@
+{
+  "name": "Consecration of the firstborn",
+  "type": "entity",
+  "references": [
+    "Exodus 13:1–16"
+  ],
+  "blurb": "Families live by redemption’s memory.",
+  "category": "ritual",
+  "cross_references": [
+    "1 Corinthians 5:7–8",
+    "Luke 22:15"
+  ],
+  "id": "e.consecration-of-the-firstborn--45c46547",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      13
+    ]
+  }
+}

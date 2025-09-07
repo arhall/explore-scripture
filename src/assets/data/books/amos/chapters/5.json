@@ -1,0 +1,77 @@
+{
+  "book": "Amos",
+  "chapter": 5,
+  "entity_count": 16,
+  "entities": [
+    {
+      "id": "g.judges-at-the-gate--b6c5ac48",
+      "name": "Judges at the gate (corrupted)",
+      "type": "group",
+      "role": "civic",
+      "refs_count": 1
+    },
+    {
+      "id": "g.oppressed-needy-at-the-gate--abc86a63",
+      "name": "Oppressed needy at the gate",
+      "type": "group",
+      "role": "victims",
+      "refs_count": 1
+    },
+    {
+      "id": "e.beersheba--07231947",
+      "name": "Beersheba (southern shrine)",
+      "type": "entity",
+      "role": "cult-site",
+      "refs_count": 1
+    },
+    {
+      "id": "e.seek-me-and-live--0196e7ac",
+      "name": "Seek me and live",
+      "type": "entity",
+      "role": "call",
+      "refs_count": 1
+    },
+    {
+      "id": "e.day-of-yhwh-is-darkness-not-light--d0a2aadd",
+      "name": "Day of YHWH is darkness, not light",
+      "type": "entity",
+      "role": "day-of-yhwh",
+      "refs_count": 1
+    },
+    {
+      "id": "e.hymn-maker-of-pleiades-and-orion--862c557d",
+      "name": "Hymn: Maker of Pleiades and Orion",
+      "type": "entity",
+      "role": "hymn",
+      "refs_count": 1
+    },
+    {
+      "id": "e.let-justice-roll-down-like-waters--71eb19f4",
+      "name": "Let justice roll down like waters",
+      "type": "entity",
+      "role": "ethic",
+      "refs_count": 1
+    },
+    {
+      "id": "e.dirge-over-israel.qinah--6712b68a",
+      "name": "Dirge over Israel (qinah)",
+      "type": "entity",
+      "role": "lament",
+      "refs_count": 1
+    },
+    {
+      "id": "e.woe-oracles--0640182a",
+      "name": "Woe oracles",
+      "type": "entity",
+      "role": "woe",
+      "refs_count": 1
+    },
+    {
+      "id": "e.turning-justice-to-wormwood--3a098cc1",
+      "name": "Turning justice to wormwood",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1
+    }
+  ]
+}

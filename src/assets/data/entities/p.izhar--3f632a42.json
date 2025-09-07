@@ -1,0 +1,19 @@
+{
+  "name": "Izhar",
+  "type": "person",
+  "references": [
+    "Exodus 6:18,21"
+  ],
+  "blurb": "Son of Kohath; father of Korah, Nepheg, Zichri.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.izhar--3f632a42",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      6
+    ]
+  }
+}

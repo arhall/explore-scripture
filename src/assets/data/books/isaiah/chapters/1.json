@@ -1,0 +1,28 @@
+{
+  "book": "Isaiah",
+  "chapter": 1,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "p.jotham-king-of-judah--22629070",
+      "name": "Jotham king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2
+    },
+    {
+      "id": "p.isaiah-son-of-amoz--c7e8486a",
+      "name": "Isaiah son of Amoz",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1
+    },
+    {
+      "id": "e.historical-frame-uzziah-jotham-ahaz-hezekiah--cea0e9d5",
+      "name": "Historical frame: Uzziah, Jotham, Ahaz, Hezekiah",
+      "type": "entity",
+      "role": "history",
+      "refs_count": 1
+    }
+  ]
+}

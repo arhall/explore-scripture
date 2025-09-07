@@ -1,0 +1,18 @@
+{
+  "name": "Huphamites (tribe of Benjamin)",
+  "type": "group",
+  "references": [
+    "Numbers 26"
+  ],
+  "blurb": "Clan of Benjamin counted in the second census.",
+  "category": "genealogy",
+  "id": "g.huphamites.tribe-of-benjamin--15d15a29",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      26
+    ]
+  }
+}

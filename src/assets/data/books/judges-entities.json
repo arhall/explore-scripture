@@ -1,0 +1,657 @@
+[
+  {
+    "id": "p.caleb-son-of-jephunneh--2d6c16cf",
+    "name": "Caleb son of Jephunneh",
+    "type": "person",
+    "url": "/entities/p.caleb-son-of-jephunneh--2d6c16cf/",
+    "blurb": "Spy from Judah who wholly follows the LORD; later receives Hebron as inheritance.",
+    "searchText": "caleb son of jephunneh person narrative spy from judah who wholly follows the lord; later receives hebron as inheritance. ",
+    "references": 4,
+    "books": [
+      "Deuteronomy",
+      "Joshua",
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.achsah-daughter-of-caleb--b8ac6927",
+    "name": "Achsah daughter of Caleb",
+    "type": "person",
+    "url": "/entities/p.achsah-daughter-of-caleb--b8ac6927/",
+    "blurb": "Newly married to Othniel, she boldly requests springs to accompany Negev land—wisdom that pairs inheritance with sustainability.",
+    "searchText": "achsah daughter of caleb person narrative newly married to othniel, she boldly requests springs to accompany negev land—wisdom that pairs inheritance with sustainability. ",
+    "references": 2,
+    "books": [
+      "Joshua",
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.othniel-son-of-kenaz--4ffdb645",
+    "name": "Othniel son of Kenaz",
+    "type": "person",
+    "url": "/entities/p.othniel-son-of-kenaz--4ffdb645/",
+    "blurb": "Caleb’s kinsman who captures Kiriath-sepher; a prototype deliverer who will later judge Israel.",
+    "searchText": "othniel son of kenaz person narrative caleb’s kinsman who captures kiriath-sepher; a prototype deliverer who will later judge israel. ",
+    "references": 2,
+    "books": [
+      "Joshua",
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.samson--343c8a4f",
+    "name": "Samson",
+    "type": "person",
+    "url": "/entities/p.samson--343c8a4f/",
+    "blurb": "Nazarite from the womb whose strength exposes Philistine pretensions. He is a bundle of contradictions—set apart yet impulsive, mighty yet morally fragile. In death he brings the house down on Dagon’s",
+    "searchText": "samson person narrative nazarite from the womb whose strength exposes philistine pretensions. he is a bundle of contradictions—set apart yet impulsive, mighty yet morally fragile. in death he brings the house down on dagon’s worshipers, a final act of faith that shines through the wreckage. ",
+    "references": 2,
+    "books": [
+      "Judges",
+      "Hebrews"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.ammonites.oppressors-in-jephthahs-day--ace32566",
+    "name": "Ammonites (oppressors in Jephthah’s day)",
+    "type": "group",
+    "url": "/entities/g.ammonites.oppressors-in-jephthahs-day--ace32566/",
+    "blurb": "Press Israel in Transjordan; their dispute over land triggers Jephthah’s historical-theological brief.",
+    "searchText": "ammonites (oppressors in jephthah’s day) group narrative press israel in transjordan; their dispute over land triggers jephthah’s historical-theological brief. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.assembly-at-mizpah.all-israel--55ac524d",
+    "name": "Assembly at Mizpah (all Israel)",
+    "type": "group",
+    "url": "/entities/g.assembly-at-mizpah.all-israel--55ac524d/",
+    "blurb": "National council that demands justice; rash vows and near-genocide reveal zeal without wisdom.",
+    "searchText": "assembly at mizpah (all israel) group narrative national council that demands justice; rash vows and near-genocide reveal zeal without wisdom. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.benjaminites-in-civil-war.tribe--e09b2a3f",
+    "name": "Benjaminites (tribe) in civil war",
+    "type": "group",
+    "url": "/entities/g.benjaminites-in-civil-war.tribe--e09b2a3f/",
+    "blurb": "Almost extinguished; their rescue through problematic measures shows the cost of communal folly.",
+    "searchText": "benjaminites (tribe) in civil war group narrative almost extinguished; their rescue through problematic measures shows the cost of communal folly. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.danites.migration-to-laish--ac65daa3",
+    "name": "Danites (migration to Laish)",
+    "type": "group",
+    "url": "/entities/g.danites.migration-to-laish--ac65daa3/",
+    "blurb": "Seeking territory, Dan steals Micah’s cult and captures Laish—founding a shrine that will later scandalize Israel.",
+    "searchText": "danites (migration to laish) group narrative seeking territory, dan steals micah’s cult and captures laish—founding a shrine that will later scandalize israel. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.daughters-of-shiloh.dance--877d2ae4",
+    "name": "Daughters of Shiloh (dance)",
+    "type": "group",
+    "url": "/entities/g.daughters-of-shiloh.dance--877d2ae4/",
+    "blurb": "Used to provide wives for Benjamin—narrative irony indicts Israel’s ethics while salvaging a tribe.",
+    "searchText": "daughters of shiloh (dance) group narrative used to provide wives for benjamin—narrative irony indicts israel’s ethics while salvaging a tribe. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.gideons-300-with-trumpets-and-jars--397f20c3",
+    "name": "Gideon’s 300 with trumpets and jars",
+    "type": "group",
+    "url": "/entities/g.gideons-300-with-trumpets-and-jars--397f20c3/",
+    "blurb": "Paradox of strength in weakness: jars smashed, torches revealed, trumpets blast—YHWH throws Midian into panic.",
+    "searchText": "gideon’s 300 with trumpets and jars group sign paradox of strength in weakness: jars smashed, torches revealed, trumpets blast—yhwh throws midian into panic. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "sign"
+  },
+  {
+    "id": "g.levite-and-his-concubine--caf85554",
+    "name": "Levite and his concubine",
+    "type": "group",
+    "url": "/entities/g.levite-and-his-concubine--caf85554/",
+    "blurb": "A dark narrative of betrayal, abuse, and dismemberment—shock literature meant to expose covenant death-spiral.",
+    "searchText": "levite and his concubine group narrative a dark narrative of betrayal, abuse, and dismemberment—shock literature meant to expose covenant death-spiral. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.men-of-ephraim.shibboleth-scene--a82b0ea6",
+    "name": "Men of Ephraim (Shibboleth scene)",
+    "type": "group",
+    "url": "/entities/g.men-of-ephraim.shibboleth-scene--a82b0ea6/",
+    "blurb": "Regional pride ignites civil conflict; ‘shibboleth’ becomes a linguistic test with deadly stakes.",
+    "searchText": "men of ephraim (shibboleth scene) group narrative regional pride ignites civil conflict; ‘shibboleth’ becomes a linguistic test with deadly stakes. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.men-of-gibeah.benjaminites--9935795e",
+    "name": "Men of Gibeah (Benjaminites)",
+    "type": "group",
+    "url": "/entities/g.men-of-gibeah.benjaminites--9935795e/",
+    "blurb": "Embodiment of societal collapse—violence that summons national judgment.",
+    "searchText": "men of gibeah (benjaminites) group narrative embodiment of societal collapse—violence that summons national judgment. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.men-of-succoth-and-penuel--e75feccf",
+    "name": "Men of Succoth and Penuel",
+    "type": "group",
+    "url": "/entities/g.men-of-succoth-and-penuel--e75feccf/",
+    "blurb": "Refuse support to the weary—leaders disciplined; communal cowardice harms national mission.",
+    "searchText": "men of succoth and penuel group narrative refuse support to the weary—leaders disciplined; communal cowardice harms national mission. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.philistines.lords-of-the-philistines--1007e8c9",
+    "name": "Philistines (lords of the Philistines)",
+    "type": "group",
+    "url": "/entities/g.philistines.lords-of-the-philistines--1007e8c9/",
+    "blurb": "Sea Peoples power bloc; their five lords coordinate pressure on Israel throughout Samson’s life.",
+    "searchText": "philistines (lords of the philistines) group narrative sea peoples power bloc; their five lords coordinate pressure on israel throughout samson’s life. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.shechemites-and-the-tower-of-shechem--27fd91d0",
+    "name": "Shechemites and the tower of Shechem",
+    "type": "group",
+    "url": "/entities/g.shechemites-and-the-tower-of-shechem--27fd91d0/",
+    "blurb": "Covenant city compromised by Baal-berith; fire at the tower becomes the judgment they plotted for others.",
+    "searchText": "shechemites and the tower of shechem group narrative covenant city compromised by baal-berith; fire at the tower becomes the judgment they plotted for others. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.thirty-companions-at-timnah--2866e225",
+    "name": "Thirty companions at Timnah",
+    "type": "group",
+    "url": "/entities/g.thirty-companions-at-timnah--2866e225/",
+    "blurb": "Wedding party who press the riddle; Samson’s response escalates conflict.",
+    "searchText": "thirty companions at timnah group narrative wedding party who press the riddle; samson’s response escalates conflict. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.tribe-of-judah.in-conquest-prologue--a012a44e",
+    "name": "Tribe of Judah (in conquest prologue)",
+    "type": "group",
+    "url": "/entities/g.tribe-of-judah.in-conquest-prologue--a012a44e/",
+    "blurb": "Judah leads with Simeon’s help—early success that foreshadows the tribe’s later royal role.",
+    "searchText": "tribe of judah (in conquest prologue) group narrative judah leads with simeon’s help—early success that foreshadows the tribe’s later royal role. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.zebah-and-zalmunna.midianite-kings--bc5a91cf",
+    "name": "Zebah and Zalmunna (Midianite kings)",
+    "type": "group",
+    "url": "/entities/g.zebah-and-zalmunna.midianite-kings--bc5a91cf/",
+    "blurb": "Captured kings whom Gideon executes; justice intersects with personal memory of slain brothers.",
+    "searchText": "zebah and zalmunna (midianite kings) group narrative captured kings whom gideon executes; justice intersects with personal memory of slain brothers. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.abdon-son-of-hillel-the-pirathonite--85b56cc8",
+    "name": "Abdon son of Hillel the Pirathonite",
+    "type": "person",
+    "url": "/entities/p.abdon-son-of-hillel-the-pirathonite--85b56cc8/",
+    "blurb": "Forty sons and thirty grandsons riding on seventy donkeys—status symbols of order and prosperity.",
+    "searchText": "abdon son of hillel the pirathonite person narrative forty sons and thirty grandsons riding on seventy donkeys—status symbols of order and prosperity. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.abimelech-son-of-jerubbaal.gideon--55116883",
+    "name": "Abimelech son of Jerubbaal (Gideon)",
+    "type": "person",
+    "url": "/entities/p.abimelech-son-of-jerubbaal.gideon--55116883/",
+    "blurb": "Usurper who slaughters brothers, is crowned at Shechem, and dies by a woman’s millstone—anti-judge parable of power without calling.",
+    "searchText": "abimelech son of jerubbaal (gideon) person narrative usurper who slaughters brothers, is crowned at shechem, and dies by a woman’s millstone—anti-judge parable of power without calling. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.barak-son-of-abinoam--2f6034af",
+    "name": "Barak son of Abinoam",
+    "type": "person",
+    "url": "/entities/p.barak-son-of-abinoam--2f6034af/",
+    "blurb": "Commander who learns to fight under prophetic word; his honor is shared with Jael—victory is the LORD’s gift, not human machismo.",
+    "searchText": "barak son of abinoam person narrative commander who learns to fight under prophetic word; his honor is shared with jael—victory is the lord’s gift, not human machismo. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.deborah.prophetess-wife-of-lappidoth--b8523bee",
+    "name": "Deborah (prophetess, wife of Lappidoth)",
+    "type": "person",
+    "url": "/entities/p.deborah.prophetess-wife-of-lappidoth--b8523bee/",
+    "blurb": "Prophet-judge who leads from a palm-tree court; summons Barak; sings victory. Her leadership is maternal (‘a mother in Israel’), marrying wisdom, courage, and worship. Judges 5, a theologically rich p",
+    "searchText": "deborah (prophetess, wife of lappidoth) person narrative prophet-judge who leads from a palm-tree court; summons barak; sings victory. her leadership is maternal (‘a mother in israel’), marrying wisdom, courage, and worship. judges 5, a theologically rich poem, frames battle as god’s storm theophany. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.delilah--490ef8ae",
+    "name": "Delilah",
+    "type": "person",
+    "url": "/entities/p.delilah--490ef8ae/",
+    "blurb": "Temptation personified—her persistence unravels Samson’s secret. The price of betrayal reveals Philistine priorities.",
+    "searchText": "delilah person narrative temptation personified—her persistence unravels samson’s secret. the price of betrayal reveals philistine priorities. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.ehud-son-of-gera.left-handed--1b93e02d",
+    "name": "Ehud son of Gera (left-handed)",
+    "type": "person",
+    "url": "/entities/p.ehud-son-of-gera.left-handed--1b93e02d/",
+    "blurb": "Benjaminite whose ambidexterity subverts expectations; his daring assassination of Eglon catalyzes liberation and national confidence.",
+    "searchText": "ehud son of gera (left-handed) person narrative benjaminite whose ambidexterity subverts expectations; his daring assassination of eglon catalyzes liberation and national confidence. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.elon-the-zebulunite--a0c52fb6",
+    "name": "Elon the Zebulunite",
+    "type": "person",
+    "url": "/entities/p.elon-the-zebulunite--a0c52fb6/",
+    "blurb": "Ten years of quiet rule from Zebulun—stability as a gift easily overlooked.",
+    "searchText": "elon the zebulunite person narrative ten years of quiet rule from zebulun—stability as a gift easily overlooked. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.gideon-son-of-joash.jerubbaal--da4e2791",
+    "name": "Gideon (Jerubbaal) son of Joash",
+    "type": "person",
+    "url": "/entities/p.gideon-son-of-joash.jerubbaal--da4e2791/",
+    "blurb": "Threshing in fear becomes leading in faith. God pares his army to 300 so victory can only be credited to grace. Gideon tears down Baal’s altar, tests with fleece in weakness, and later stumbles by mak",
+    "searchText": "gideon (jerubbaal) son of joash person narrative threshing in fear becomes leading in faith. god pares his army to 300 so victory can only be credited to grace. gideon tears down baal’s altar, tests with fleece in weakness, and later stumbles by making an ephod—illustrating the mixed legacy of imperfect saviors. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.ibzan-of-bethlehem--9438b40c",
+    "name": "Ibzan of Bethlehem",
+    "type": "person",
+    "url": "/entities/p.ibzan-of-bethlehem--9438b40c/",
+    "blurb": "Thirty sons and thirty daughters married widely—diplomatic household weaving unity across clans.",
+    "searchText": "ibzan of bethlehem person narrative thirty sons and thirty daughters married widely—diplomatic household weaving unity across clans. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.jael-wife-of-heber-the-kenite--fa780b17",
+    "name": "Jael wife of Heber the Kenite",
+    "type": "person",
+    "url": "/entities/p.jael-wife-of-heber-the-kenite--fa780b17/",
+    "blurb": "Kills Sisera with a tent peg—household skill becomes battlefield tool. Praised as ‘most blessed among women’ within the song’s holy-war frame.",
+    "searchText": "jael wife of heber the kenite person narrative kills sisera with a tent peg—household skill becomes battlefield tool. praised as ‘most blessed among women’ within the song’s holy-war frame. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.jair-the-gileadite--ab3dde03",
+    "name": "Jair the Gileadite",
+    "type": "person",
+    "url": "/entities/p.jair-the-gileadite--ab3dde03/",
+    "blurb": "Leads 22 years; his thirty sons with thirty towns (‘Havvoth-jair’) portray order and reach in Transjordan.",
+    "searchText": "jair the gileadite person narrative leads 22 years; his thirty sons with thirty towns (‘havvoth-jair’) portray order and reach in transjordan. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.jephthahs-daughter--5bdce2b5",
+    "name": "Jephthah’s daughter",
+    "type": "person",
+    "url": "/entities/p.jephthahs-daughter--5bdce2b5/",
+    "blurb": "Unnamed but unforgettable—her obedience and lament stand as a tragic counterpoint to Israel’s forgetfulness of Torah nuance.",
+    "searchText": "jephthah’s daughter person narrative unnamed but unforgettable—her obedience and lament stand as a tragic counterpoint to israel’s forgetfulness of torah nuance. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.jotham-son-of-jerubbaal--dbd6b1ee",
+    "name": "Jotham son of Jerubbaal",
+    "type": "person",
+    "url": "/entities/p.jotham-son-of-jerubbaal--dbd6b1ee/",
+    "blurb": "Survivor who speaks a fable from Mount Gerizim—thornbush kingship indicts Abimelech and the Shechemites.",
+    "searchText": "jotham son of jerubbaal person narrative survivor who speaks a fable from mount gerizim—thornbush kingship indicts abimelech and the shechemites. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.manoah.samsons-father--9154cacf",
+    "name": "Manoah (Samson’s father)",
+    "type": "person",
+    "url": "/entities/p.manoah.samsons-father--9154cacf/",
+    "blurb": "A Danite who learns reverent listening as the Angel of the LORD announces a Nazarite deliverer. His hospitality meets holy fire.",
+    "searchText": "manoah (samson’s father) person narrative a danite who learns reverent listening as the angel of the lord announces a nazarite deliverer. his hospitality meets holy fire. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.micah-of-the-hill-country-of-ephraim--21d6b727",
+    "name": "Micah of the hill country of Ephraim",
+    "type": "person",
+    "url": "/entities/p.micah-of-the-hill-country-of-ephraim--21d6b727/",
+    "blurb": "Creates a private shrine with a graven image and hires a Levite—syncretism wrapped in piety; a microcosm of ‘right in his own eyes.’",
+    "searchText": "micah of the hill country of ephraim person narrative creates a private shrine with a graven image and hires a levite—syncretism wrapped in piety; a microcosm of ‘right in his own eyes.’ ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.old-man-of-gibeah.host--1556c8eb",
+    "name": "Old man of Gibeah (host)",
+    "type": "person",
+    "url": "/entities/p.old-man-of-gibeah.host--1556c8eb/",
+    "blurb": "Offers flawed hospitality in a corrupt city—Sodom echo in Benjamin’s territory.",
+    "searchText": "old man of gibeah (host) person narrative offers flawed hospitality in a corrupt city—sodom echo in benjamin’s territory. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.phinehas-son-of-eleazar--aa8259fe",
+    "name": "Phinehas son of Eleazar",
+    "type": "person",
+    "url": "/entities/p.phinehas-son-of-eleazar--aa8259fe/",
+    "blurb": "Priest who inquires before the ark at Bethel—continuity with wilderness holiness during civil strife.",
+    "searchText": "phinehas son of eleazar person narrative priest who inquires before the ark at bethel—continuity with wilderness holiness during civil strife. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.samsons-mother.unnamed--37d69740",
+    "name": "Samson’s mother (unnamed)",
+    "type": "person",
+    "url": "/entities/p.samsons-mother.unnamed--37d69740/",
+    "blurb": "Receives the promise first; her obedience to Nazarite constraints during pregnancy models consecration before birth.",
+    "searchText": "samson’s mother (unnamed) person narrative receives the promise first; her obedience to nazarite constraints during pregnancy models consecration before birth. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.shamgar-son-of-anath--562ea1ed",
+    "name": "Shamgar son of Anath",
+    "type": "person",
+    "url": "/entities/p.shamgar-son-of-anath--562ea1ed/",
+    "blurb": "Minor judge who strikes down six hundred Philistines with an oxgoad—farm tool becomes instrument of deliverance.",
+    "searchText": "shamgar son of anath person narrative minor judge who strikes down six hundred philistines with an oxgoad—farm tool becomes instrument of deliverance. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.timnite-woman.samsons-first-wife--21cb1040",
+    "name": "Timnite woman (Samson’s first wife)",
+    "type": "person",
+    "url": "/entities/p.timnite-woman.samsons-first-wife--21cb1040/",
+    "blurb": "Marriage across enemy lines becomes a riddle and a rupture—personal folly intersects with divine strategy.",
+    "searchText": "timnite woman (samson’s first wife) person narrative marriage across enemy lines becomes a riddle and a rupture—personal folly intersects with divine strategy. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.tola-son-of-puah--4fadb7b0",
+    "name": "Tola son of Puah",
+    "type": "person",
+    "url": "/entities/p.tola-son-of-puah--4fadb7b0/",
+    "blurb": "From Issachar; stabilizes Israel after Abimelech—quiet judgeship reminds us that faithfulness isn’t always flashy.",
+    "searchText": "tola son of puah person narrative from issachar; stabilizes israel after abimelech—quiet judgeship reminds us that faithfulness isn’t always flashy. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.woman-of-thebez-with-millstone--8da97358",
+    "name": "Woman of Thebez with millstone",
+    "type": "person",
+    "url": "/entities/p.woman-of-thebez-with-millstone--8da97358/",
+    "blurb": "Anonymous heroine whose quick-witted strike ends Abimelech’s reign of terror—humbling the proud.",
+    "searchText": "woman of thebez with millstone person narrative anonymous heroine whose quick-witted strike ends abimelech’s reign of terror—humbling the proud. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.young-levite-from-bethlehem.jonathan-son-of-gershom--5a8361f9",
+    "name": "Young Levite from Bethlehem (Jonathan son of Gershom?)",
+    "type": "person",
+    "url": "/entities/p.young-levite-from-bethlehem.jonathan-son-of-gershom--5a8361f9/",
+    "blurb": "A wandering priest-for-hire who becomes tribal chaplain to Dan. Textual tradition links him to Gershom, son of Moses/Manasseh—warning about legacy drift.",
+    "searchText": "young levite from bethlehem (jonathan son of gershom?) person narrative a wandering priest-for-hire who becomes tribal chaplain to dan. textual tradition links him to gershom, son of moses/manasseh—warning about legacy drift. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "t.cushan-rishathaim-king-of-aram-naharaim--0b43cee6",
+    "name": "Cushan-rishathaim king of Aram-naharaim",
+    "type": "title",
+    "url": "/entities/t.cushan-rishathaim-king-of-aram-naharaim--0b43cee6/",
+    "blurb": "Foreign oppressor whose defeat by Othniel inaugurates the judge pattern of Spirit-led deliverance.",
+    "searchText": "cushan-rishathaim king of aram-naharaim title narrative foreign oppressor whose defeat by othniel inaugurates the judge pattern of spirit-led deliverance. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "t.eglon-king-of-moab--6149e33e",
+    "name": "Eglon king of Moab",
+    "type": "title",
+    "url": "/entities/t.eglon-king-of-moab--6149e33e/",
+    "blurb": "Corpulent tyrant ruling from Jericho with Ammon and Amalek—his fall dramatizes reversal through unlikely means.",
+    "searchText": "eglon king of moab title narrative corpulent tyrant ruling from jericho with ammon and amalek—his fall dramatizes reversal through unlikely means. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "t.jabin-king-of-canaan.hazor--0dae58db",
+    "name": "Jabin king of Canaan (Hazor)",
+    "type": "title",
+    "url": "/entities/t.jabin-king-of-canaan.hazor--0dae58db/",
+    "blurb": "Canaanite overlord subdued under Deborah’s leadership—a northern echo of Joshua’s earlier victory over Hazor.",
+    "searchText": "jabin king of canaan (hazor) title narrative canaanite overlord subdued under deborah’s leadership—a northern echo of joshua’s earlier victory over hazor. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "t.sisera.commander-of-jabin--dd8bef53",
+    "name": "Sisera (commander of Jabin)",
+    "type": "title",
+    "url": "/entities/t.sisera.commander-of-jabin--dd8bef53/",
+    "blurb": "Chariot commander whose iron advantage is neutralized by divine storm; his downfall critiques militarized oppression.",
+    "searchText": "sisera (commander of jabin) title narrative chariot commander whose iron advantage is neutralized by divine storm; his downfall critiques militarized oppression. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "e.editorial-refrain-no-king-in-israel--79444244",
+    "name": "Editorial refrain: ‘No king in Israel…’",
+    "type": "entity",
+    "url": "/entities/e.editorial-refrain-no-king-in-israel--79444244/",
+    "blurb": "Literary signal that frames the anarchy of the era and hints at need for righteous kingship.",
+    "searchText": "editorial refrain: ‘no king in israel…’ entity summary literary signal that frames the anarchy of the era and hints at need for righteous kingship. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "summary"
+  },
+  {
+    "id": "e.ephod-made-by-gideon--bddbb47d",
+    "name": "Ephod made by Gideon",
+    "type": "entity",
+    "url": "/entities/e.ephod-made-by-gideon--bddbb47d/",
+    "blurb": "A well-meant memorial turned snare; good things can become idols when detached from obedience.",
+    "searchText": "ephod made by gideon entity ritual a well-meant memorial turned snare; good things can become idols when detached from obedience. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.foxes-with-firebrands--9725b82d",
+    "name": "Foxes with firebrands",
+    "type": "entity",
+    "url": "/entities/e.foxes-with-firebrands--9725b82d/",
+    "blurb": "Agricultural sabotage turns fields into torches—judgment by ironic means.",
+    "searchText": "foxes with firebrands entity sign agricultural sabotage turns fields into torches—judgment by ironic means. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "sign"
+  },
+  {
+    "id": "e.gate-of-gaza-carried-to-a-hill--7cfbbb8f",
+    "name": "Gate of Gaza carried to a hill",
+    "type": "entity",
+    "url": "/entities/e.gate-of-gaza-carried-to-a-hill--7cfbbb8f/",
+    "blurb": "Public humiliation of a Philistine stronghold—symbolic relocation of enemy security.",
+    "searchText": "gate of gaza carried to a hill entity sign public humiliation of a philistine stronghold—symbolic relocation of enemy security. ",
+    "references": 1,
+    "books": [
+      "Judges"
+    ],
+    "category": "sign"
+  }
+]

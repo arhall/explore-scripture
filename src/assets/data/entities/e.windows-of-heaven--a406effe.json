@@ -1,0 +1,18 @@
+{
+  "id": "e.windows-of-heaven--a406effe",
+  "name": "Windows of heaven",
+  "type": "entity",
+  "references": [
+    "Mal 3:10"
+  ],
+  "category": "blessing-image",
+  "blurb": "Heavenly sluices pouring down abundance on obedience.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      3
+    ]
+  }
+}

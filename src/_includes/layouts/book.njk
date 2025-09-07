@@ -47,6 +47,41 @@ layout: base.njk
   </div>
 {% endif %}
 
+<div class="key-figures-section" id="keyFiguresSection">
+  <div class="section-header">
+    <h3>Key Figures</h3>
+    <div class="section-controls">
+      <button class="view-all-btn" onclick="viewAllEntities('{{ book.slug }}')" title="View all characters and entities for this book">
+        View All →
+      </button>
+    </div>
+  </div>
+  <div class="key-figures-loading" id="keyFiguresLoading">
+    <div class="loading-spinner"></div>
+    <span>Loading key figures...</span>
+  </div>
+  <div class="key-figures-content" id="keyFiguresContent" style="display: none;">
+    <div class="key-figures-grid" id="keyFiguresGrid">
+      <!-- Figures will be loaded here -->
+    </div>
+    <div class="key-figures-actions">
+      <button class="load-more-btn" id="loadMoreFigures" onclick="loadMoreFigures()" style="display: none;">
+        Load More Figures
+      </button>
+    </div>
+  </div>
+  <div class="key-figures-error" id="keyFiguresError" style="display: none;">
+    <p>Unable to load key figures. <a href="#" onclick="retryLoadFigures()">Try again</a></p>
+  </div>
+  <div class="key-figures-empty" id="keyFiguresEmpty" style="display: none;">
+    <div class="empty-state">
+      <span class="empty-icon">📚</span>
+      <h4>No Key Figures Available</h4>
+      <p>This book focuses on themes, teachings, or poetry rather than specific named characters. The timeless truths and wisdom it contains are just as valuable for study and reflection.</p>
+    </div>
+  </div>
+</div>
+
 {% if book.chapterSummaries and (book.chapterSummaries | length) > 0 %}
   {% set chapterCount = (book.chapterSummaries | length) %}
   
@@ -381,6 +416,221 @@ layout: base.njk
     }
   }
 
+  // Key Figures functionality
+  let currentFiguresData = null;
+  let currentDisplayedFigures = 0;
+  const figuresPerPage = 6;
+
+  async function loadKeyFigures() {
+    const bookSlug = '{{ book.slug }}';
+    const bookName = '{{ book.name }}';
+    const loadingEl = document.getElementById('keyFiguresLoading');
+    const contentEl = document.getElementById('keyFiguresContent');
+    const errorEl = document.getElementById('keyFiguresError');
+    const emptyEl = document.getElementById('keyFiguresEmpty');
+    
+    try {
+      loadingEl.style.display = 'flex';
+      contentEl.style.display = 'none';
+      errorEl.style.display = 'none';
+      emptyEl.style.display = 'none';
+      
+      // Load entities specific to this book from per-book entity file
+      const bookEntitiesUrl = `/assets/data/books/${bookSlug}-entities.json`;
+      const response = await fetch(bookEntitiesUrl);
+      
+      let keyFigures = [];
+      let bookEntities = [];
+      
+      if (response.ok) {
+        bookEntities = await response.json();
+        // Take top 20 entities (already sorted by reference count)
+        keyFigures = bookEntities.slice(0, 20)
+          .map(entity => ({
+            id: entity.id,
+            name: entity.name,
+            type: entity.type || 'figure',
+            refs_count: entity.references || 0,
+            role: entity.type || 'Biblical figure'
+          }));
+      } else {
+        // No entities file for this book - this is normal for some books
+        console.log(`[KeyFigures] No entities file found for ${bookName} - this is normal for some books`);
+        keyFigures = [];
+        bookEntities = [];
+      }
+      
+      currentFiguresData = {
+        book: bookName,
+        slug: bookSlug,
+        key_figures: keyFigures,
+        all_entities: bookEntities
+      };
+      
+      displayKeyFigures();
+      
+    } catch (error) {
+      console.error('Error loading key figures:', error);
+      loadingEl.style.display = 'none';
+      errorEl.style.display = 'block';
+      
+      if (window.logger) {
+        window.logger.error('key-figures-load-error', error.message, {
+          book: bookSlug,
+          url: '/assets/data/entities-search.json'
+        });
+      }
+    }
+  }
+
+  function displayKeyFigures() {
+    const loadingEl = document.getElementById('keyFiguresLoading');
+    const contentEl = document.getElementById('keyFiguresContent');
+    const emptyEl = document.getElementById('keyFiguresEmpty');
+    const gridEl = document.getElementById('keyFiguresGrid');
+    const loadMoreBtn = document.getElementById('loadMoreFigures');
+    
+    loadingEl.style.display = 'none';
+    
+    // Handle missing or empty data
+    if (!currentFiguresData || !currentFiguresData.key_figures || currentFiguresData.key_figures.length === 0) {
+      contentEl.style.display = 'none';
+      emptyEl.style.display = 'block';
+      return;
+    }
+    
+    // Show content for books with entities
+    emptyEl.style.display = 'none';
+    contentEl.style.display = 'block';
+    
+    // Show initial batch of figures
+    const initialFigures = currentFiguresData.key_figures.slice(0, figuresPerPage);
+    currentDisplayedFigures = initialFigures.length;
+    
+    gridEl.innerHTML = initialFigures.map(figure => createFigureCard(figure)).join('');
+    
+    // Show load more button if there are more figures
+    if (currentFiguresData.key_figures.length > figuresPerPage) {
+      loadMoreBtn.style.display = 'block';
+      loadMoreBtn.textContent = `Load ${Math.min(figuresPerPage, currentFiguresData.key_figures.length - currentDisplayedFigures)} More`;
+    }
+    
+    // Track figures display
+    if (window.telemetry) {
+      window.telemetry.recordUserAction('key-figures-loaded', '{{ book.slug }}', {
+        totalFigures: currentFiguresData.key_figures.length,
+        displayedFigures: currentDisplayedFigures
+      });
+    }
+  }
+
+  function createFigureCard(figure) {
+    const typeIcons = {
+      'person': '👤',
+      'divine': '✨',
+      'place': '📍',
+      'title': '👑',
+      'figure': '🔷',
+      'event': '⚡',
+      'group': '👥'
+    };
+    
+    const typeIcon = typeIcons[figure.type] || '📖';
+    const entityUrl = `/entities/${figure.id}`;
+    const bookFilterUrl = `${entityUrl}?book={{ book.slug }}`;
+    
+    return `
+      <div class="key-figure-card" data-entity-id="${figure.id}" data-type="${figure.type}">
+        <div class="figure-header">
+          <span class="figure-icon">${typeIcon}</span>
+          <span class="figure-type">${figure.type}</span>
+        </div>
+        <div class="figure-name">
+          <a href="${entityUrl}" class="entity-link" onclick="trackEntityClick('${figure.id}', '${figure.name}', 'main')">
+            ${figure.name}
+          </a>
+        </div>
+        <div class="figure-stats">
+          <span class="ref-count">${figure.refs_count} reference${figure.refs_count !== 1 ? 's' : ''}</span>
+          <span class="figure-role">${figure.role}</span>
+        </div>
+        <div class="figure-actions">
+          <a href="${bookFilterUrl}" class="book-refs-link" onclick="trackEntityClick('${figure.id}', '${figure.name}', 'book-filter')" title="View references in {{ book.name }}">
+            View in {{ book.name }}
+          </a>
+        </div>
+      </div>
+    `;
+  }
+
+  function loadMoreFigures() {
+    if (!currentFiguresData || !currentFiguresData.key_figures) return;
+    
+    const gridEl = document.getElementById('keyFiguresGrid');
+    const loadMoreBtn = document.getElementById('loadMoreFigures');
+    
+    const nextBatch = currentFiguresData.key_figures.slice(
+      currentDisplayedFigures, 
+      currentDisplayedFigures + figuresPerPage
+    );
+    
+    gridEl.innerHTML += nextBatch.map(figure => createFigureCard(figure)).join('');
+    currentDisplayedFigures += nextBatch.length;
+    
+    // Update or hide load more button
+    if (currentDisplayedFigures >= currentFiguresData.key_figures.length) {
+      loadMoreBtn.style.display = 'none';
+    } else {
+      const remaining = currentFiguresData.key_figures.length - currentDisplayedFigures;
+      loadMoreBtn.textContent = `Load ${Math.min(figuresPerPage, remaining)} More`;
+    }
+    
+    // Track load more action
+    if (window.telemetry) {
+      window.telemetry.recordUserAction('key-figures-load-more', '{{ book.slug }}', {
+        totalDisplayed: currentDisplayedFigures,
+        totalAvailable: currentFiguresData.key_figures.length
+      });
+    }
+  }
+
+  function viewAllEntities(bookSlug) {
+    const entityUrl = `/entities?book=${bookSlug}`;
+    
+    if (window.telemetry) {
+      window.telemetry.recordNavigation('view-all-entities', entityUrl, {
+        book: bookSlug,
+        fromPage: 'book'
+      });
+    }
+    
+    window.location.href = entityUrl;
+  }
+
+  function retryLoadFigures() {
+    loadKeyFigures();
+  }
+
+  function trackEntityClick(entityId, entityName, clickType) {
+    if (window.telemetry) {
+      window.telemetry.recordUserAction('entity-click', entityId, {
+        entityName: entityName,
+        clickType: clickType,
+        fromBook: '{{ book.slug }}',
+        fromPage: 'book'
+      });
+    }
+    
+    if (window.logger) {
+      window.logger.userAction('entity-navigation', {
+        entityId: entityId,
+        entityName: entityName,
+        clickType: clickType,
+        book: '{{ book.slug }}'
+      });
+    }
+  }
+
   // Video interaction tracking
   document.addEventListener('DOMContentLoaded', function() {
     const bookSlug = '{{ book.slug }}';
@@ -402,6 +652,9 @@ layout: base.njk
     
     // Initialize cross-references for all chapters
     initializeChapterCrossReferences();
+    
+    // Load key figures for this book
+    loadKeyFigures();
     
     // Track video loads
     const videoIframes = document.querySelectorAll('.video-container iframe');

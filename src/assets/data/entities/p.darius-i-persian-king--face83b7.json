@@ -1,0 +1,27 @@
+{
+  "id": "p.darius-i-persian-king--face83b7",
+  "name": "Darius I (Persian king)",
+  "type": "person",
+  "references": [
+    "Hag 1:1",
+    "Hag 2:10",
+    "Hag 2:20",
+    "Zech 1:1",
+    "Zech 7:1"
+  ],
+  "category": "monarch",
+  "blurb": "Persian ruler whose regnal year dates Haggai’s messages. His administration frames Yehud’s provincial realities.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      1,
+      2
+    ],
+    "Zechariah": [
+      1,
+      7
+    ]
+  }
+}

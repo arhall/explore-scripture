@@ -1,0 +1,18 @@
+{
+  "name": "Mount Horeb (Sinai) in review",
+  "type": "entity",
+  "references": [
+    "Deuteronomy 1:6–8; 4:10–15"
+  ],
+  "blurb": "Covenant setting recalled—fire, voice, and no image; pedagogy of hearing over seeing.",
+  "category": "place",
+  "id": "e.mount-horeb-in-review.sinai--722ad164",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Deuteronomy": [
+      1
+    ]
+  }
+}

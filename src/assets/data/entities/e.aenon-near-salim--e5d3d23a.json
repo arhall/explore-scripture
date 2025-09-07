@@ -1,0 +1,23 @@
+{
+  "name": "Aenon near Salim",
+  "type": "entity",
+  "category": "region",
+  "references": [
+    "John 3:23"
+  ],
+  "aka": [],
+  "id": "e.aenon-near-salim--e5d3d23a",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      3
+    ]
+  }
+}

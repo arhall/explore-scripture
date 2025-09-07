@@ -1,0 +1,24 @@
+{
+  "name": "Father in heaven (address)",
+  "type": "title",
+  "category": "prayer",
+  "references": [
+    "Matt 6:9"
+  ],
+  "blurb": "Liturgical address that centers divine holiness, kingdom, provision, forgiveness, and deliverance.",
+  "aka": [],
+  "id": "t.father-in-heaven-address--d9822bcb",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      6
+    ]
+  }
+}

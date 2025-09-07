@@ -1,0 +1,21 @@
+{
+  "name": "Prohibition of blood consumption",
+  "type": "entity",
+  "references": [
+    "Leviticus 17:10–14"
+  ],
+  "blurb": "Life is in the blood; reserved for atonement—eating blood is forbidden.",
+  "category": "ritual",
+  "cross_references": [
+    "Acts 15:20"
+  ],
+  "id": "e.prohibition-of-blood-consumption--74021739",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Leviticus": [
+      17
+    ]
+  }
+}

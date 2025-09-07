@@ -1,0 +1,29 @@
+{
+  "name": "Paraclete discourse I",
+  "type": "entity",
+  "category": "discourse",
+  "references": [
+    "John 14:15–31"
+  ],
+  "greek_terms": [
+    {
+      "term": "παράκλητος",
+      "gloss": "advocate/helper"
+    }
+  ],
+  "aka": [],
+  "id": "e.paraclete-discourse-i--ea98f38b",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      14
+    ]
+  }
+}

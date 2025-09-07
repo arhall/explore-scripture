@@ -1,0 +1,18 @@
+{
+  "name": "Sabean raiders",
+  "type": "group",
+  "references": [
+    "Job 1:15"
+  ],
+  "blurb": "Southern marauders who seize oxen and donkeys and kill servants—first human blow in Job’s cascade of loss.",
+  "category": "narrative",
+  "id": "g.sabean-raiders--10a86d1d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Job": [
+      1
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Seir the Horite",
+  "type": "person",
+  "references": [
+    "Genesis 36:20"
+  ],
+  "blurb": "Ancestral figure of the Horites in the land of Seir—Edom’s earlier inhabitants.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.seir-the-horite.gene-36-20--f8b84d82",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

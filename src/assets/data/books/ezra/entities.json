@@ -1,0 +1,1265 @@
+{
+  "book": "Ezra",
+  "slug": "ezra",
+  "entity_count": 137,
+  "key_figures": [
+    {
+      "id": "p.sheshbazzar.prince-governor-of-judah--3f0bcadc",
+      "name": "Sheshbazzar (prince/governor of Judah)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.zerubbabel-son-of-shealtiel--966cfda8",
+      "name": "Zerubbabel son of Shealtiel",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jeshua-son-of-jozadak.joshua--5d860647",
+      "name": "Jeshua (Joshua) son of Jozadak",
+      "type": "person",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.ezra-son-of-seraiah.scribe-priest--2e3121de",
+      "name": "Ezra son of Seraiah (scribe-priest)",
+      "type": "person",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.shecaniah-son-of-jehiel.proposal--274f98a5",
+      "name": "Shecaniah son of Jehiel (proposal)",
+      "type": "person",
+      "role": "ethics",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.elders-heads-of-fathers-houses--97dd92f8",
+      "name": "Elders/Heads of fathers’ houses",
+      "type": "person",
+      "role": "community-leadership",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "e.temple-vessels-returned.inventory--c0510833",
+      "name": "Temple vessels returned (inventory)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.named-leaders-accompanying-zerubbabel.ezra-2-2--6f73874d",
+      "name": "Named leaders accompanying Zerubbabel (Ezra 2:2)",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-parosh--753cb456",
+      "name": "Sons of Parosh",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-shephatiah--1d54e1d1",
+      "name": "Sons of Shephatiah",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-arah--08309426",
+      "name": "Sons of Arah",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-pahath-moab.of-jeshua-and-joab--d72e5460",
+      "name": "Sons of Pahath-Moab (of Jeshua and Joab)",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-elam--61042361",
+      "name": "Sons of Elam",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-zattu--bba62e8b",
+      "name": "Sons of Zattu",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-zaccai--bf4192da",
+      "name": "Sons of Zaccai",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-bani--588555e6",
+      "name": "Sons of Bani",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-bebai--d7e22d5d",
+      "name": "Sons of Bebai",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-azgad--298ccfc9",
+      "name": "Sons of Azgad",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-adonikam--c41e4a5d",
+      "name": "Sons of Adonikam",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-bigvai--b0e67726",
+      "name": "Sons of Bigvai",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "p.sheshbazzar.prince-governor-of-judah--3f0bcadc",
+      "name": "Sheshbazzar (prince/governor of Judah)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.zerubbabel-son-of-shealtiel--966cfda8",
+      "name": "Zerubbabel son of Shealtiel",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jeshua-son-of-jozadak.joshua--5d860647",
+      "name": "Jeshua (Joshua) son of Jozadak",
+      "type": "person",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.ezra-son-of-seraiah.scribe-priest--2e3121de",
+      "name": "Ezra son of Seraiah (scribe-priest)",
+      "type": "person",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.shecaniah-son-of-jehiel.proposal--274f98a5",
+      "name": "Shecaniah son of Jehiel (proposal)",
+      "type": "person",
+      "role": "ethics",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.elders-heads-of-fathers-houses--97dd92f8",
+      "name": "Elders/Heads of fathers’ houses",
+      "type": "person",
+      "role": "community-leadership",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "e.temple-vessels-returned.inventory--c0510833",
+      "name": "Temple vessels returned (inventory)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.named-leaders-accompanying-zerubbabel.ezra-2-2--6f73874d",
+      "name": "Named leaders accompanying Zerubbabel (Ezra 2:2)",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-parosh--753cb456",
+      "name": "Sons of Parosh",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-shephatiah--1d54e1d1",
+      "name": "Sons of Shephatiah",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-arah--08309426",
+      "name": "Sons of Arah",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-pahath-moab.of-jeshua-and-joab--d72e5460",
+      "name": "Sons of Pahath-Moab (of Jeshua and Joab)",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-elam--61042361",
+      "name": "Sons of Elam",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-zattu--bba62e8b",
+      "name": "Sons of Zattu",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-zaccai--bf4192da",
+      "name": "Sons of Zaccai",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-bani--588555e6",
+      "name": "Sons of Bani",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-bebai--d7e22d5d",
+      "name": "Sons of Bebai",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-azgad--298ccfc9",
+      "name": "Sons of Azgad",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-adonikam--c41e4a5d",
+      "name": "Sons of Adonikam",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-bigvai--b0e67726",
+      "name": "Sons of Bigvai",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-adin--96af0eb5",
+      "name": "Sons of Adin",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-ater.of-hezekiah--2e95825d",
+      "name": "Sons of Ater (of Hezekiah)",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-bezai--b3bb1c61",
+      "name": "Sons of Bezai",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-jorah--dd841ddd",
+      "name": "Sons of Jorah",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-hashum--14a01b46",
+      "name": "Sons of Hashum",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-gibbar--1c17a308",
+      "name": "Sons of Gibbar",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.men-of-bethlehem--92e106db",
+      "name": "Men of Bethlehem",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.men-of-netophah--c01bd28a",
+      "name": "Men of Netophah",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.men-of-anathoth--c7e293fc",
+      "name": "Men of Anathoth",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.men-of-beth-azmaveth.azmaveth--6f1f542e",
+      "name": "Men of Beth-azmaveth (Azmaveth)",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.men-of-kiriath-jearim-chephirah-and-beeroth--aec1e484",
+      "name": "Men of Kiriath-jearim, Chephirah, and Beeroth",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.men-of-ramah-and-geba--72de680c",
+      "name": "Men of Ramah and Geba",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.men-of-michmas--b72d7b7e",
+      "name": "Men of Michmas",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.men-of-bethel-and-ai--571a03c1",
+      "name": "Men of Bethel and Ai",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-nebo--44149070",
+      "name": "Sons of Nebo",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-magbish--28260302",
+      "name": "Sons of Magbish",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-the-other-elam--ea20db01",
+      "name": "Sons of the other Elam",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-harim--70a5b186",
+      "name": "Sons of Harim",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-lod-hadid-and-ono--eab4c04d",
+      "name": "Sons of Lod, Hadid, and Ono",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-jericho--8944d5da",
+      "name": "Sons of Jericho",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-senaah--57af67f4",
+      "name": "Sons of Senaah",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.priests-sons-of-jedaiah.house-of-jeshua--742a57d5",
+      "name": "Priests: sons of Jedaiah (house of Jeshua)",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.priests-sons-of-immer--16d97567",
+      "name": "Priests: sons of Immer",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.priests-sons-of-pashhur--8b94df8c",
+      "name": "Priests: sons of Pashhur",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.priests-sons-of-harim--e022f97c",
+      "name": "Priests: sons of Harim",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.levites-sons-of-jeshua-and-kadmiel.of-hodaviah--f77d5619",
+      "name": "Levites: sons of Jeshua and Kadmiel (of Hodaviah)",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.singers-sons-of-asaph--c59b85cf",
+      "name": "Singers: sons of Asaph",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.gatekeepers-sons-of-shallum-ater-talmon-akkub-hatita-shobai--b051eee0",
+      "name": "Gatekeepers: sons of Shallum, Ater, Talmon, Akkub, Hatita, Shobai",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-ziha--aeaa33d0",
+      "name": "Nethinim: sons of Ziha",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-hasupha--cb11f852",
+      "name": "Nethinim: sons of Hasupha",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-tabbaoth--c102ae2b",
+      "name": "Nethinim: sons of Tabbaoth",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-keros--d57f90e3",
+      "name": "Nethinim: sons of Keros",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-siaha--f79d448a",
+      "name": "Nethinim: sons of Siaha",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-padon--56faf284",
+      "name": "Nethinim: sons of Padon",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-lebanah--aea63925",
+      "name": "Nethinim: sons of Lebanah",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-hagabah--6628c0fc",
+      "name": "Nethinim: sons of Hagabah",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-akkub--7e14af58",
+      "name": "Nethinim: sons of Akkub",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-hagab--e07ee8c5",
+      "name": "Nethinim: sons of Hagab",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-shamlai--8c3b9c46",
+      "name": "Nethinim: sons of Shamlai",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-hanan--c1f28b9c",
+      "name": "Nethinim: sons of Hanan",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-giddel--bf448e05",
+      "name": "Nethinim: sons of Giddel",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-gahar--1ab243d6",
+      "name": "Nethinim: sons of Gahar",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-reaiah--f02eb40d",
+      "name": "Nethinim: sons of Reaiah",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-rezin--b1c04a74",
+      "name": "Nethinim: sons of Rezin",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-nekoda--bb6ea774",
+      "name": "Nethinim: sons of Nekoda",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-gazzam--dd9a6c9f",
+      "name": "Nethinim: sons of Gazzam",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-uzza--dbc22524",
+      "name": "Nethinim: sons of Uzza",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-paseah--34cc7573",
+      "name": "Nethinim: sons of Paseah",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-besai--d1a89c12",
+      "name": "Nethinim: sons of Besai",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-asnah--af4bcb4e",
+      "name": "Nethinim: sons of Asnah",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-meunim--bce0d6f9",
+      "name": "Nethinim: sons of Meunim",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-nephusim--8e6a3b8b",
+      "name": "Nethinim: sons of Nephusim",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-bakbuk--81e23428",
+      "name": "Nethinim: sons of Bakbuk",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-hakupha--9d7c8702",
+      "name": "Nethinim: sons of Hakupha",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-harhur--dbbfb377",
+      "name": "Nethinim: sons of Harhur",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-bazluth--5fd317bf",
+      "name": "Nethinim: sons of Bazluth",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-mehida--36636535",
+      "name": "Nethinim: sons of Mehida",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-harsha--e4b16d83",
+      "name": "Nethinim: sons of Harsha",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-barkos--64d883f8",
+      "name": "Nethinim: sons of Barkos",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-sisera--9f468547",
+      "name": "Nethinim: sons of Sisera",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-temah--22cdaca7",
+      "name": "Nethinim: sons of Temah",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-neziah--c9550993",
+      "name": "Nethinim: sons of Neziah",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nethinim-sons-of-hatipha--557bd6e4",
+      "name": "Nethinim: sons of Hatipha",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-solomons-servants-sotai--691de9a3",
+      "name": "Sons of Solomon’s servants: Sotai",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-solomons-servants-sophereth--37d88951",
+      "name": "Sons of Solomon’s servants: Sophereth",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-solomons-servants-peruda--0c7f6419",
+      "name": "Sons of Solomon’s servants: Peruda",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-solomons-servants-jaalah--d52ce40e",
+      "name": "Sons of Solomon’s servants: Jaalah",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-solomons-servants-darkon--14480bf8",
+      "name": "Sons of Solomon’s servants: Darkon",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-solomons-servants-giddel--83ab557c",
+      "name": "Sons of Solomon’s servants: Giddel",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-solomons-servants-shephatiah--75b5b9cd",
+      "name": "Sons of Solomon’s servants: Shephatiah",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-solomons-servants-hattil--c06f23e3",
+      "name": "Sons of Solomon’s servants: Hattil",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-solomons-servants-pochereth-hazzebaim--583fd061",
+      "name": "Sons of Solomon’s servants: Pochereth-hazzebaim",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-solomons-servants-ami--d2fc8e36",
+      "name": "Sons of Solomon’s servants: Ami",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.temple-servants-sons-of-solomons-servants.nethinim--8013ffc3",
+      "name": "Temple servants (Nethinim) + sons of Solomon’s servants (combined)",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.those-unable-to-prove-israelite-ancestry.delaiah-tobiah-nekoda--9b84a073",
+      "name": "Those unable to prove Israelite ancestry (Delaiah, Tobiah, Nekoda)",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.disqualified-priestly-families.hobaiah-hakkoz-barzillai--eedf7c65",
+      "name": "Disqualified priestly families (Hobaiah, Hakkoz, Barzillai)",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.servants-and-singers.male-female--78205bb7",
+      "name": "Servants and singers (male & female)",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.adversaries-of-judah-offer-help-and-then-oppose--47f88875",
+      "name": "Adversaries of Judah offer ‘help’ and then oppose",
+      "type": "group",
+      "role": "ethics",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.rehum-the-commander-and-shimshai-the-scribe.letter--609e4b77",
+      "name": "Rehum the commander and Shimshai the scribe (letter)",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.prophets-haggai-and-zechariah-stir-the-work--f18bb26e",
+      "name": "Prophets Haggai and Zechariah stir the work",
+      "type": "group",
+      "role": "prophetic",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.tattenai-and-shethar-bozenai-inquiry--9b9f19f6",
+      "name": "Tattenai and Shethar-bozenai inquiry",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.levi-search-at-ahava-sherebiah-hashabiah-and-company--9605fa23",
+      "name": "Levi search at Ahava; Sherebiah, Hashabiah, and company",
+      "type": "group",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-phinehas-gershom--147e0c2b",
+      "name": "Sons of Phinehas: Gershom",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-ithamar-daniel--bf0fdb71",
+      "name": "Sons of Ithamar: Daniel",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-david-hattush--9e5114ba",
+      "name": "Sons of David: Hattush",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-shecaniah-of-the-sons-of-parosh-zechariah-150-men--d57eb582",
+      "name": "Sons of Shecaniah: of the sons of Parosh—Zechariah, 150 men",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-pahath-moab-eliehoenai-son-of-zerahiah-200-men--12cc976f",
+      "name": "Sons of Pahath-Moab: Eliehoenai son of Zerahiah, 200 men",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-zattu-shecaniah-son-of-jahaziel-300-men--98b6f536",
+      "name": "Sons of Zattu: Shecaniah son of Jahaziel, 300 men",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-adin-ebed-son-of-jonathan-50-men--fd154802",
+      "name": "Sons of Adin: Ebed son of Jonathan, 50 men",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-elam-jeshaiah-son-of-athaliah-70-men--f9f45ccc",
+      "name": "Sons of Elam: Jeshaiah son of Athaliah, 70 men",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-shephatiah-zebadiah-son-of-michael-80-men--824ad697",
+      "name": "Sons of Shephatiah: Zebadiah son of Michael, 80 men",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-joab-obadiah-son-of-jehiel-218-men--342c2510",
+      "name": "Sons of Joab: Obadiah son of Jehiel, 218 men",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-bani-shelomith-son-of-josiphiah-160-men--935e97cf",
+      "name": "Sons of Bani: Shelomith son of Josiphiah, 160 men",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-bebai-zechariah-son-of-bebai-28-men--f0a39e02",
+      "name": "Sons of Bebai: Zechariah son of Bebai, 28 men",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-azgad-johanan-son-of-hakkatan-110-men--b924124d",
+      "name": "Sons of Azgad: Johanan son of Hakkatan, 110 men",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-adonikam-the-last-60-men.eliphelet-jeuel-shemaiah--d64f92ca",
+      "name": "Sons of Adonikam: the last (Eliphelet, Jeuel, Shemaiah), 60 men",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sons-of-bigvai-uthai-and-zaccur-70-men--5e514221",
+      "name": "Sons of Bigvai: Uthai and Zaccur, 70 men",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.list-of-priests-levites-israel-committing-the-offense--9400efdc",
+      "name": "List of priests/Levites/Israel committing the offense",
+      "type": "group",
+      "role": "ethics",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "t.cyrus-king-of-persia.edict--6a515e45",
+      "name": "Cyrus king of Persia (edict)",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.darius-decree-found-and-enforced-project-funded--746420dc",
+      "name": "Darius’ decree found and enforced; project funded",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.artaxerxes-king-of-persia.decree-to-ezra--e466cc72",
+      "name": "Artaxerxes king of Persia (decree to Ezra)",
+      "type": "title",
+      "role": "record",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "e.ezra-5–6-coordination--a473265c",
+      "name": "Ezra 5–6 coordination",
+      "type": "entity",
+      "role": "historical-link",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "e.alongside-haggai-ezra-5–6-link--26757389",
+      "name": "Alongside Haggai (Ezra 5–6 link)",
+      "type": "entity",
+      "role": "historical-link",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "e.neighbors-support.silver-gold-goods-livestock-freewill-offerings--69f6e603",
+      "name": "Neighbors’ support (silver, gold, goods, livestock, freewill offerings)",
+      "type": "entity",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.total-congregation.men--f03ed64d",
+      "name": "Total congregation (men)",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.animals-for-transport--7bfa2ed1",
+      "name": "Animals for transport",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.freewill-offerings-for-the-house--ce0a4569",
+      "name": "Freewill offerings for the house",
+      "type": "entity",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.altar-rebuilt-feast-of-booths-observed--fcc5f173",
+      "name": "Altar rebuilt; Feast of Booths observed",
+      "type": "entity",
+      "role": "festival",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.temple-foundation-laid-shouts-and-weeping--443d5449",
+      "name": "Temple foundation laid; shouts and weeping",
+      "type": "entity",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.temple-completed-and-dedicated-passover-kept--a0e888f9",
+      "name": "Temple completed and dedicated; Passover kept",
+      "type": "entity",
+      "role": "festival",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.fast-at-the-ahava-canal--1dfa37c3",
+      "name": "Fast at the Ahava canal",
+      "type": "entity",
+      "role": "spirituality",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.weighing-and-guarding-the-sacred-vessels--6f30e50c",
+      "name": "Weighing and guarding the sacred vessels",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.safe-arrival-offerings-and-letters-delivered--34a9b5c5",
+      "name": "Safe arrival; offerings and letters delivered",
+      "type": "entity",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.report-of-intermarriages-by-leaders--3fdb1978",
+      "name": "Report of intermarriages by leaders",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.ezras-posture-torn-garments-hair-pulled-prayer--9080a691",
+      "name": "Ezra’s posture: torn garments, hair pulled, prayer",
+      "type": "entity",
+      "role": "spirituality",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.assembly-in-rain-proclamation-and-investigation--56966631",
+      "name": "Assembly in rain; proclamation and investigation",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.altar--0b0acf47",
+      "name": "Altar",
+      "type": "entity",
+      "role": "cultic",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

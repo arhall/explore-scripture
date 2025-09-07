@@ -1,0 +1,18 @@
+{
+  "id": "e.work-of-your-hands--f43338e2",
+  "name": "Work of your hands",
+  "type": "entity",
+  "references": [
+    "Hag 2:14"
+  ],
+  "category": "labor",
+  "blurb": "Comprehensive scope of defilement prior to repentance; later blessed.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      2
+    ]
+  }
+}

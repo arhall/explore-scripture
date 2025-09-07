@@ -1,0 +1,19 @@
+{
+  "name": "Abdon son of Hillel the Pirathonite",
+  "type": "person",
+  "references": [
+    "Judges 12:13–15"
+  ],
+  "blurb": "Forty sons and thirty grandsons riding on seventy donkeys—status symbols of order and prosperity.",
+  "category": "narrative",
+  "tribe": "Ephraim",
+  "id": "p.abdon-son-of-hillel-the-pirathonite--85b56cc8",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      12
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Highway motif (Way of Holiness / New Exodus)",
+  "type": "entity",
+  "references": [
+    "Isaiah 11:16; 19:23; 35:8; 40:3; 62:10"
+  ],
+  "blurb": "A prepared road for the redeemed—wilderness becomes thoroughfare; nations join the pilgrimage.",
+  "category": "motif",
+  "id": "e.highway-motif.way-of-holiness-new-exodus--479428e2",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Isaiah": [
+      11
+    ]
+  }
+}

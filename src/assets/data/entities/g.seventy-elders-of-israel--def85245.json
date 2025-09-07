@@ -1,0 +1,21 @@
+{
+  "name": "Seventy elders of Israel",
+  "type": "group",
+  "references": [
+    "Exodus 24:9–11; 24:1"
+  ],
+  "blurb": "Leaders who see God’s glory atop Sinai and eat and drink—an astonishing moment of mediated nearness.",
+  "category": "narrative",
+  "cross_references": [
+    "Numbers 11:16–25"
+  ],
+  "id": "g.seventy-elders-of-israel--def85245",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      24
+    ]
+  }
+}

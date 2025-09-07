@@ -1,0 +1,18 @@
+{
+  "name": "YHWH roars from Zion",
+  "type": "entity",
+  "references": [
+    "Joel 3:16"
+  ],
+  "blurb": "The Divine Lion’s voice steadies Jerusalem and shakes the nations.",
+  "category": "theophany",
+  "id": "e.yhwh-roars-from-zion--80c8b302",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      3
+    ]
+  }
+}

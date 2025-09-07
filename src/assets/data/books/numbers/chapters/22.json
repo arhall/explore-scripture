@@ -1,0 +1,35 @@
+{
+  "book": "Numbers",
+  "chapter": 22,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "f.angel-of-the-lord.gene-16-22--790d3b7c",
+      "name": "Angel of the LORD",
+      "type": "figure",
+      "role": "narrative",
+      "refs_count": 3
+    },
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "t.balak-son-of-zippor-king-of-moab--e2da2567",
+      "name": "Balak son of Zippor, king of Moab",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "f.balaams-donkey--0681af49",
+      "name": "Balaam’s donkey",
+      "type": "figure",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

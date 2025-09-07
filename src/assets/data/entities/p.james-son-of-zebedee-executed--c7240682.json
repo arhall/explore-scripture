@@ -1,0 +1,23 @@
+{
+  "name": "James son of Zebedee executed",
+  "type": "person",
+  "category": "martyr",
+  "references": [
+    "Acts 12:2"
+  ],
+  "aka": [],
+  "id": "p.james-son-of-zebedee-executed--c7240682",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      12
+    ]
+  }
+}

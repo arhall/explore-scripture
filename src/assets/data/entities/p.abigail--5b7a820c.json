@@ -1,0 +1,22 @@
+{
+  "name": "Abigail",
+  "type": "person",
+  "references": [
+    "1 Samuel 25"
+  ],
+  "blurb": "Wise intercessor who averts vengeance and becomes David’s wife—prudence crowned with providence.",
+  "relations": {
+    "first_husband": "Nabal",
+    "husband": "David"
+  },
+  "category": "narrative",
+  "id": "p.abigail--5b7a820c",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      25
+    ]
+  }
+}

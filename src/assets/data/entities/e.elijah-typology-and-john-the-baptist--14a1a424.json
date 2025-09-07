@@ -1,0 +1,26 @@
+{
+  "id": "e.elijah-typology-and-john-the-baptist--14a1a424",
+  "name": "Elijah typology and John the Baptist",
+  "type": "entity",
+  "references": [
+    "Mal 4:5-6"
+  ],
+  "category": "reception-christian",
+  "cross_references": [
+    "Matt 11:10",
+    "Mark 1:2",
+    "Luke 7:27",
+    "Matt 17:10-13",
+    "Luke 1:17",
+    "Rev 11"
+  ],
+  "blurb": "Forerunner motif flowing into NT identification and apocalyptic witness patterns.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      4
+    ]
+  }
+}

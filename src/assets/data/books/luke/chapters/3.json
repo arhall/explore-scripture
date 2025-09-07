@@ -1,0 +1,77 @@
+{
+  "book": "Luke",
+  "chapter": 3,
+  "entity_count": 11,
+  "entities": [
+    {
+      "id": "f.genealogy-to-adam--db0df21c",
+      "name": "Genealogy to Adam",
+      "type": "figure",
+      "role": "genealogy",
+      "refs_count": 1
+    },
+    {
+      "id": "f.prayer-in-luke--69a57343",
+      "name": "Prayer in Luke",
+      "type": "figure",
+      "role": "theme",
+      "refs_count": 5
+    },
+    {
+      "id": "p.tiberius-caesar--4898ec6c",
+      "name": "Tiberius Caesar",
+      "type": "person",
+      "role": "emperor",
+      "refs_count": 1
+    },
+    {
+      "id": "p.lysanias--5d99a077",
+      "name": "Lysanias",
+      "type": "person",
+      "role": "tetrarch",
+      "refs_count": 1
+    },
+    {
+      "id": "p.herod-antipas--65f7f448",
+      "name": "Herod Antipas",
+      "type": "person",
+      "role": "tetrarch",
+      "refs_count": 5
+    },
+    {
+      "id": "p.pontius-pilate--d8964343",
+      "name": "Pontius Pilate",
+      "type": "person",
+      "role": "prefect",
+      "refs_count": 5
+    },
+    {
+      "id": "p.philip-the-tetrarch--b616e8bd",
+      "name": "Philip the tetrarch",
+      "type": "person",
+      "role": "tetrarch",
+      "refs_count": 1
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "e.jordan--4586837c",
+      "name": "Jordan",
+      "type": "entity",
+      "role": "river",
+      "refs_count": 4
+    },
+    {
+      "id": "e.wilderness-desert--5581794f",
+      "name": "Wilderness/Desert",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 5
+    }
+  ]
+}

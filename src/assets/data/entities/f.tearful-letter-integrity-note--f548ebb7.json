@@ -1,0 +1,22 @@
+{
+  "name": "Tearful letter (integrity note)",
+  "type": "figure",
+  "category": "integrity-notes",
+  "references": [
+    "2 Cor 2:4"
+  ],
+  "note": "A severe letter written with many tears; debated in composite-letter hypotheses.",
+  "aka": [],
+  "id": "f.tearful-letter-integrity-note--f548ebb7",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "2 Corinthians": [
+      2
+    ]
+  }
+}

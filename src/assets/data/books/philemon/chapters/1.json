@@ -1,0 +1,28 @@
+{
+  "book": "Philemon",
+  "chapter": 1,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 24
+    },
+    {
+      "id": "p.timothy--227fb1d9",
+      "name": "Timothy",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 12
+    },
+    {
+      "id": "p.philemon--59310849",
+      "name": "Philemon",
+      "type": "person",
+      "role": "recipient",
+      "refs_count": 1
+    }
+  ]
+}

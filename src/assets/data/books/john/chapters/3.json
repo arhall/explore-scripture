@@ -1,0 +1,42 @@
+{
+  "book": "John",
+  "chapter": 3,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "p.john-the-baptist-witness--86b3f44b",
+      "name": "John the Baptist (witness)",
+      "type": "person",
+      "role": "witness",
+      "refs_count": 3
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "p.nicodemus--6ff832aa",
+      "name": "Nicodemus",
+      "type": "person",
+      "role": "interlocutor",
+      "refs_count": 3
+    },
+    {
+      "id": "f.water-bread-light-life-motifs--0fe6793a",
+      "name": "Water / Bread / Light / Life motifs",
+      "type": "figure",
+      "role": "theme",
+      "refs_count": 4
+    },
+    {
+      "id": "e.aenon-near-salim--e5d3d23a",
+      "name": "Aenon near Salim",
+      "type": "entity",
+      "role": "region",
+      "refs_count": 1
+    }
+  ]
+}

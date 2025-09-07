@@ -1,0 +1,19 @@
+{
+  "name": "Aner",
+  "type": "person",
+  "references": [
+    "Genesis 14:13,24"
+  ],
+  "blurb": "Ally of Abraham named with Mamre and Eshcol; participates in the rescue of Lot.",
+  "category": "narrative",
+  "cross_references": [],
+  "id": "p.aner.gene-14-13-24--53a46f9a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      14
+    ]
+  }
+}

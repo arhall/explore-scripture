@@ -1,0 +1,29 @@
+{
+  "name": "Gaius",
+  "type": "person",
+  "category": "host",
+  "references": [
+    "Rom 16:23",
+    "3 John 1"
+  ],
+  "cross_references": [
+    "Acts 20:4",
+    "1 Cor 1:14"
+  ],
+  "aka": [],
+  "id": "p.gaius--60f39d00",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      16
+    ],
+    "3 John": [
+      1
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "cherubim of glory",
+  "type": "entity",
+  "category": "cultic",
+  "references": [
+    "Heb 9:1-5"
+  ],
+  "aka": [],
+  "id": "e.cherubim-of-glory--a248bab8",
+  "book_references": {
+    "Hebrews": [
+      9
+    ]
+  }
+}

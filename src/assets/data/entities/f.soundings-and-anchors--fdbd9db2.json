@@ -1,0 +1,23 @@
+{
+  "name": "Soundings and anchors",
+  "type": "figure",
+  "category": "seamanship",
+  "references": [
+    "Acts 27:28–29"
+  ],
+  "aka": [],
+  "id": "f.soundings-and-anchors--fdbd9db2",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      27
+    ]
+  }
+}

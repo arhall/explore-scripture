@@ -1,0 +1,34 @@
+{
+  "name": "Phoebe",
+  "type": "person",
+  "category": "coworker",
+  "references": [
+    "Rom 16:1–2"
+  ],
+  "relations": {
+    "church": "Cenchreae"
+  },
+  "greek_terms": [
+    {
+      "term": "διάκονος",
+      "gloss": "deacon/minister"
+    },
+    {
+      "term": "προστάτις",
+      "gloss": "patron"
+    }
+  ],
+  "aka": [],
+  "id": "p.phoebe--becf7925",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      16
+    ]
+  }
+}

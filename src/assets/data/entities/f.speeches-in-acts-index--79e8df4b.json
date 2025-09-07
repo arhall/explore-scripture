@@ -1,0 +1,41 @@
+{
+  "name": "Speeches in Acts (index)",
+  "type": "figure",
+  "category": "index",
+  "references": [
+    "Acts 2",
+    "Acts 3",
+    "Acts 7",
+    "Acts 10",
+    "Acts 13",
+    "Acts 17",
+    "Acts 20",
+    "Acts 22",
+    "Acts 24",
+    "Acts 26"
+  ],
+  "aka": [],
+  "id": "f.speeches-in-acts-index--79e8df4b",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      2,
+      3,
+      7,
+      10,
+      13,
+      17,
+      20,
+      22,
+      24,
+      26
+    ]
+  }
+}

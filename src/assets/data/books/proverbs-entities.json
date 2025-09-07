@@ -1,0 +1,613 @@
+[
+  {
+    "id": "p.job-of-uz--10ab66c9",
+    "name": "Job of Uz",
+    "type": "person",
+    "url": "/entities/p.job-of-uz--10ab66c9/",
+    "blurb": "Blameless and upright, Job fears God and turns from evil. His piety is domestic (regular intercession for his children) and public (justice at the gate). His agony tests whether righteousness can stand without reward.",
+    "searchText": "job of uz person narrative blameless and upright, job fears god and turns from evil. his piety is domestic (regular intercession for his children) and public (justice at the gate). his agony tests whether righteousness can stand without reward. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "d.the-lord.yhwh--9df0e557",
+    "name": "The LORD (YHWH)",
+    "type": "divine",
+    "url": "/entities/d.the-lord.yhwh--9df0e557/",
+    "blurb": "Covenant God who permits testing yet sets boundaries; finally answers Job from the whirlwind, giving vision rather than a syllogism—wisdom as trust in the Maker’s governance.",
+    "searchText": "the lord (yhwh) divine theology covenant god who permits testing yet sets boundaries; finally answers job from the whirlwind, giving vision rather than a syllogism—wisdom as trust in the maker’s governance. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "f.the-satan.the-accuser--c1b3251f",
+    "name": "The Satan (the Accuser)",
+    "type": "figure",
+    "url": "/entities/f.the-satan.the-accuser--c1b3251f/",
+    "blurb": "Court adversary who questions the integrity of piety apart from prosperity—his reach is real but leashed (‘only…’).",
+    "searchText": "the satan (the accuser) figure theology court adversary who questions the integrity of piety apart from prosperity—his reach is real but leashed (‘only…’). ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "g.sons-of-god.heavenly-council--5b46f7b6",
+    "name": "Sons of God (heavenly council)",
+    "type": "group",
+    "url": "/entities/g.sons-of-god.heavenly-council--5b46f7b6/",
+    "blurb": "Heavenly court where angelic beings present themselves; creation and governance are pictured as council work under YHWH’s sovereignty.",
+    "searchText": "sons of god (heavenly council) group theology heavenly court where angelic beings present themselves; creation and governance are pictured as council work under yhwh’s sovereignty. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "e.land-of-uz--fb62932a",
+    "name": "Land of Uz",
+    "type": "entity",
+    "url": "/entities/e.land-of-uz--fb62932a/",
+    "blurb": "Liminal territory likely east/southeast of Israel (cf. Edom/Aram traditions); wisdom rises from the margins.",
+    "searchText": "land of uz entity place liminal territory likely east/southeast of israel (cf. edom/aram traditions); wisdom rises from the margins. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "place"
+  },
+  {
+    "id": "e.jobs-household-inventory.initial-prosperity--7b007ca3",
+    "name": "Job’s household inventory (initial prosperity)",
+    "type": "entity",
+    "url": "/entities/e.jobs-household-inventory.initial-prosperity--7b007ca3/",
+    "blurb": "Seven sons, three daughters; 7,000 sheep, 3,000 camels, 500 yoke of oxen, 500 female donkeys, and very many servants—greatest of the people of the east.",
+    "searchText": "job’s household inventory (initial prosperity) entity record seven sons, three daughters; 7,000 sheep, 3,000 camels, 500 yoke of oxen, 500 female donkeys, and very many servants—greatest of the people of the east. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "record"
+  },
+  {
+    "id": "e.family-feasting-cycle-jobs-priestly-intercession--e49fa618",
+    "name": "Family feasting cycle & Job’s priestly intercession",
+    "type": "entity",
+    "url": "/entities/e.family-feasting-cycle-jobs-priestly-intercession--e49fa618/",
+    "blurb": "Sons host rotating banquets; Job rises early to offer burnt offerings ‘perhaps my children have sinned’—intercession anchors festivity.",
+    "searchText": "family feasting cycle & job’s priestly intercession entity worship sons host rotating banquets; job rises early to offer burnt offerings ‘perhaps my children have sinned’—intercession anchors festivity. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "worship"
+  },
+  {
+    "id": "g.sabean-raiders--10a86d1d",
+    "name": "Sabean raiders",
+    "type": "group",
+    "url": "/entities/g.sabean-raiders--10a86d1d/",
+    "blurb": "Southern marauders who seize oxen and donkeys and kill servants—first human blow in Job’s cascade of loss.",
+    "searchText": "sabean raiders group narrative southern marauders who seize oxen and donkeys and kill servants—first human blow in job’s cascade of loss. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "e.fire-of-god.lightning--870dece3",
+    "name": "Fire of God (lightning)",
+    "type": "entity",
+    "url": "/entities/e.fire-of-god.lightning--870dece3/",
+    "blurb": "Heaven-sent calamity that consumes sheep and servants—mystery of secondary causes under divine leash.",
+    "searchText": "fire of god (lightning) entity theology heaven-sent calamity that consumes sheep and servants—mystery of secondary causes under divine leash. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "g.chaldean-raiding-bands--f972a58f",
+    "name": "Chaldean raiding bands",
+    "type": "group",
+    "url": "/entities/g.chaldean-raiding-bands--f972a58f/",
+    "blurb": "Northern/mesopotamian raiders in three companies who carry off camels—international reach of Job’s testing.",
+    "searchText": "chaldean raiding bands group narrative northern/mesopotamian raiders in three companies who carry off camels—international reach of job’s testing. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "e.great-wind-from-the-wilderness--643d6ac3",
+    "name": "Great wind from the wilderness",
+    "type": "entity",
+    "url": "/entities/e.great-wind-from-the-wilderness--643d6ac3/",
+    "blurb": "Windstorm collapses the eldest brother’s house, killing all ten children—creation’s wildness not absent from God’s world.",
+    "searchText": "great wind from the wilderness entity theology windstorm collapses the eldest brother’s house, killing all ten children—creation’s wildness not absent from god’s world. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "e.jobs-worship-in-loss.yhwh-gave--883078e4",
+    "name": "Job’s worship in loss (‘YHWH gave…’)",
+    "type": "entity",
+    "url": "/entities/e.jobs-worship-in-loss.yhwh-gave--883078e4/",
+    "blurb": "Tear, shave, fall, worship—doxology through dust. Confession: ‘Blessed be the Name of YHWH.’ No charge of wrong.",
+    "searchText": "job’s worship in loss (‘yhwh gave…’) entity spirituality tear, shave, fall, worship—doxology through dust. confession: ‘blessed be the name of yhwh.’ no charge of wrong. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "spirituality"
+  },
+  {
+    "id": "e.skin-for-skin-and-the-boils--bfb5d274",
+    "name": "‘Skin for skin’ and the boils",
+    "type": "entity",
+    "url": "/entities/e.skin-for-skin-and-the-boils--bfb5d274/",
+    "blurb": "The Accuser claims self-preservation rules the heart; loathsome sores strike Job from foot to crown. He sits among ashes scraping with a potsherd.",
+    "searchText": "‘skin for skin’ and the boils entity narrative the accuser claims self-preservation rules the heart; loathsome sores strike job from foot to crown. he sits among ashes scraping with a potsherd. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.jobs-wife--3a299a5e",
+    "name": "Job’s wife",
+    "type": "person",
+    "url": "/entities/p.jobs-wife--3a299a5e/",
+    "blurb": "Suffering partner who voices a terrible counsel—‘curse God and die’—thereby foregrounding Job’s persevering fear of God.",
+    "searchText": "job’s wife person narrative suffering partner who voices a terrible counsel—‘curse god and die’—thereby foregrounding job’s persevering fear of god. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.eliphaz-the-temanite--2ba81d1d",
+    "name": "Eliphaz the Temanite",
+    "type": "person",
+    "url": "/entities/p.eliphaz-the-temanite--2ba81d1d/",
+    "blurb": "Edomite sage; emphasizes retributive order and mystical insight (‘a word stealthily came to me’). His wisdom is often true but misapplied—he weaponizes proverbs against a sufferer.",
+    "searchText": "eliphaz the temanite person wisdom edomite sage; emphasizes retributive order and mystical insight (‘a word stealthily came to me’). his wisdom is often true but misapplied—he weaponizes proverbs against a sufferer. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "wisdom"
+  },
+  {
+    "id": "p.bildad-the-shuhite--2f451710",
+    "name": "Bildad the Shuhite",
+    "type": "person",
+    "url": "/entities/p.bildad-the-shuhite--2f451710/",
+    "blurb": "Traditionalist who leans on ancestral sayings; elevates divine justice but shrinks God’s compassion. His final speech is extremely brief—argument exhausted before truth.",
+    "searchText": "bildad the shuhite person wisdom traditionalist who leans on ancestral sayings; elevates divine justice but shrinks god’s compassion. his final speech is extremely brief—argument exhausted before truth. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "wisdom"
+  },
+  {
+    "id": "p.zophar-the-naamathite--5d7e3529",
+    "name": "Zophar the Naamathite",
+    "type": "person",
+    "url": "/entities/p.zophar-the-naamathite--5d7e3529/",
+    "blurb": "Moral absolutist; impatient with nuance; insists Job’s guilt is less punished than deserved. Zeal without knowledge.",
+    "searchText": "zophar the naamathite person wisdom moral absolutist; impatient with nuance; insists job’s guilt is less punished than deserved. zeal without knowledge. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "wisdom"
+  },
+  {
+    "id": "e.seven-days-and-nights-of-silent-sitting--4f5263d0",
+    "name": "Seven days and nights of silent sitting",
+    "type": "entity",
+    "url": "/entities/e.seven-days-and-nights-of-silent-sitting--4f5263d0/",
+    "blurb": "True beginning of comfort—presence without words; the best counsel they will give is before they speak.",
+    "searchText": "seven days and nights of silent sitting entity spirituality true beginning of comfort—presence without words; the best counsel they will give is before they speak. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "spirituality"
+  },
+  {
+    "id": "e.jobs-curse-of-his-day--89cc2582",
+    "name": "Job’s curse of his day",
+    "type": "entity",
+    "url": "/entities/e.jobs-curse-of-his-day--89cc2582/",
+    "blurb": "Lament erupts not against God’s existence but against his own birthday—biblical permission to bring unvarnished pain to God.",
+    "searchText": "job’s curse of his day entity spirituality lament erupts not against god’s existence but against his own birthday—biblical permission to bring unvarnished pain to god. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "spirituality"
+  },
+  {
+    "id": "e.job-longs-for-an-umpire-mediator--23052589",
+    "name": "Job longs for an umpire/mediator",
+    "type": "entity",
+    "url": "/entities/e.job-longs-for-an-umpire-mediator--23052589/",
+    "blurb": "Cries for a daysman to lay a hand on both God and man—seed of the mediator hope that later theology will harvest.",
+    "searchText": "job longs for an umpire/mediator entity theology cries for a daysman to lay a hand on both god and man—seed of the mediator hope that later theology will harvest. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "e.my-witness-is-in-heaven--3c6b8772",
+    "name": "‘My witness is in heaven’",
+    "type": "entity",
+    "url": "/entities/e.my-witness-is-in-heaven--3c6b8772/",
+    "blurb": "From the ash heap Job imagines an advocate—heaven holds a testimony for the wronged.",
+    "searchText": "‘my witness is in heaven’ entity theology from the ash heap job imagines an advocate—heaven holds a testimony for the wronged. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "e.i-know-that-my-redeemer-lives--567a58f5",
+    "name": "‘I know that my Redeemer lives’",
+    "type": "entity",
+    "url": "/entities/e.i-know-that-my-redeemer-lives--567a58f5/",
+    "blurb": "Go’el language (kinsman-redeemer) migrates from land/family law to eschatological hope—vision beyond the skin and the grave.",
+    "searchText": "‘i know that my redeemer lives’ entity theology go’el language (kinsman-redeemer) migrates from land/family law to eschatological hope—vision beyond the skin and the grave. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "e.wisdom-hymn.where-can-wisdom-be-found--606ea35d",
+    "name": "Wisdom hymn (‘Where can wisdom be found?’)",
+    "type": "entity",
+    "url": "/entities/e.wisdom-hymn.where-can-wisdom-be-found--606ea35d/",
+    "blurb": "Mining imagery contrasts human ingenuity with wisdom’s hiddenness; ‘the fear of the LORD—that is wisdom.’",
+    "searchText": "wisdom hymn (‘where can wisdom be found?’) entity wisdom mining imagery contrasts human ingenuity with wisdom’s hiddenness; ‘the fear of the lord—that is wisdom.’ ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "wisdom"
+  },
+  {
+    "id": "e.jobs-oath-of-clearance.integrity-code--86fdf723",
+    "name": "Job’s oath of clearance (integrity code)",
+    "type": "entity",
+    "url": "/entities/e.jobs-oath-of-clearance.integrity-code--86fdf723/",
+    "blurb": "A counter-liturgy of righteousness: covenant with eyes, justice to servants, care for poor, refusal of greed and idolatry—an ethic God later vindicates.",
+    "searchText": "job’s oath of clearance (integrity code) entity ethics a counter-liturgy of righteousness: covenant with eyes, justice to servants, care for poor, refusal of greed and idolatry—an ethic god later vindicates. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.eliphazs-first-speech-jobs-reply--7476540c",
+    "name": "Eliphaz’s first speech & Job’s reply",
+    "type": "entity",
+    "url": "/entities/e.eliphazs-first-speech-jobs-reply--7476540c/",
+    "blurb": "Eliphaz argues suffering reveals secret sin; Job counters with honesty about despair and the asymmetry between man and God.",
+    "searchText": "eliphaz’s first speech & job’s reply entity wisdom eliphaz argues suffering reveals secret sin; job counters with honesty about despair and the asymmetry between man and god. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "wisdom"
+  },
+  {
+    "id": "e.bildads-first-speech-jobs-reply--e30366e6",
+    "name": "Bildad’s first speech & Job’s reply",
+    "type": "entity",
+    "url": "/entities/e.bildads-first-speech-jobs-reply--e30366e6/",
+    "blurb": "Bildad trusts the sayings of fathers; Job longs for a mediator and protests God’s overwhelming might.",
+    "searchText": "bildad’s first speech & job’s reply entity wisdom bildad trusts the sayings of fathers; job longs for a mediator and protests god’s overwhelming might. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "wisdom"
+  },
+  {
+    "id": "e.zophars-first-speech-jobs-reply--9d0e8017",
+    "name": "Zophar’s first speech & Job’s reply",
+    "type": "entity",
+    "url": "/entities/e.zophars-first-speech-jobs-reply--9d0e8017/",
+    "blurb": "Zophar presumes hidden guilt; Job insists on speaking to the Almighty even at risk to himself.",
+    "searchText": "zophar’s first speech & job’s reply entity wisdom zophar presumes hidden guilt; job insists on speaking to the almighty even at risk to himself. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "wisdom"
+  },
+  {
+    "id": "e.eliphazs-second-bildads-second-zophars-second--07d81b46",
+    "name": "Eliphaz’s second; Bildad’s second; Zophar’s second",
+    "type": "entity",
+    "url": "/entities/e.eliphazs-second-bildads-second-zophars-second--07d81b46/",
+    "blurb": "Friends double down on retribution; Job observes the prosperity of the wicked and the pain of the innocent.",
+    "searchText": "eliphaz’s second; bildad’s second; zophar’s second entity wisdom friends double down on retribution; job observes the prosperity of the wicked and the pain of the innocent. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "wisdom"
+  },
+  {
+    "id": "e.eliphazs-third-bildads-third-zophar-silent--29356711",
+    "name": "Eliphaz’s third; Bildad’s third; Zophar silent",
+    "type": "entity",
+    "url": "/entities/e.eliphazs-third-bildads-third-zophar-silent--29356711/",
+    "blurb": "Argument thins; pious clichés cannot carry the freight of the ash heap.",
+    "searchText": "eliphaz’s third; bildad’s third; zophar silent entity wisdom argument thins; pious clichés cannot carry the freight of the ash heap. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "wisdom"
+  },
+  {
+    "id": "p.elihu-son-of-barakel-the-buzite-of-the-family-of-ram--bb49309f",
+    "name": "Elihu son of Barakel the Buzite, of the family of Ram",
+    "type": "person",
+    "url": "/entities/p.elihu-son-of-barakel-the-buzite-of-the-family-of-ram--bb49309f/",
+    "blurb": "Young, angry, and nuanced—he rebukes both Job and the friends; emphasizes pedagogic suffering and God’s transcendence communicated through creation, dreams, and pain.",
+    "searchText": "elihu son of barakel the buzite, of the family of ram person wisdom young, angry, and nuanced—he rebukes both job and the friends; emphasizes pedagogic suffering and god’s transcendence communicated through creation, dreams, and pain. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "wisdom"
+  },
+  {
+    "id": "e.elihus-four-speeches--8e54ef30",
+    "name": "Elihu’s four speeches",
+    "type": "entity",
+    "url": "/entities/e.elihus-four-speeches--8e54ef30/",
+    "blurb": "1) Human limitation and inspiration; 2) God’s justice beyond our sight; 3) Warning against rebellious talk; 4) Storm theophany prelude—‘God is clothed with awesome majesty.’",
+    "searchText": "elihu’s four speeches entity wisdom 1) human limitation and inspiration; 2) god’s justice beyond our sight; 3) warning against rebellious talk; 4) storm theophany prelude—‘god is clothed with awesome majesty.’ ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "wisdom"
+  },
+  {
+    "id": "e.whirlwind-theophany--2f87395e",
+    "name": "Whirlwind theophany",
+    "type": "entity",
+    "url": "/entities/e.whirlwind-theophany--2f87395e/",
+    "blurb": "God answers not with a syllogism but with a storm—questioning that heals vision; awe becomes epistemology.",
+    "searchText": "whirlwind theophany entity theophany god answers not with a syllogism but with a storm—questioning that heals vision; awe becomes epistemology. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "theophany"
+  },
+  {
+    "id": "e.cosmic-tour-sea-dawn-storehouses-of-snow-and-hail--6b61a402",
+    "name": "Cosmic tour: sea, dawn, storehouses of snow and hail",
+    "type": "entity",
+    "url": "/entities/e.cosmic-tour-sea-dawn-storehouses-of-snow-and-hail--6b61a402/",
+    "blurb": "Creation as ordered wildness—boundaries for sea and seasons; meteorology as catechesis.",
+    "searchText": "cosmic tour: sea, dawn, storehouses of snow and hail entity theology creation as ordered wildness—boundaries for sea and seasons; meteorology as catechesis. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "e.constellations.pleiades-orion-mazzaroth-bear--1ce5265f",
+    "name": "Constellations (Pleiades, Orion, Mazzaroth, Bear)",
+    "type": "entity",
+    "url": "/entities/e.constellations.pleiades-orion-mazzaroth-bear--1ce5265f/",
+    "blurb": "Stars under leash—astral glory serves the Lord of hosts.",
+    "searchText": "constellations (pleiades, orion, mazzaroth, bear) entity theology stars under leash—astral glory serves the lord of hosts. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "e.mountain-goats-deer-wild-donkey-wild-ox-ostrich--9027f066",
+    "name": "Mountain goats, deer, wild donkey, wild ox, ostrich",
+    "type": "entity",
+    "url": "/entities/e.mountain-goats-deer-wild-donkey-wild-ox-ostrich--9027f066/",
+    "blurb": "Untamable creatures witness to God’s delight in freedom and surprise—wisdom refuses reductionism.",
+    "searchText": "mountain goats, deer, wild donkey, wild ox, ostrich entity theology untamable creatures witness to god’s delight in freedom and surprise—wisdom refuses reductionism. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "e.war-horse-hawk-eagle--94744d4c",
+    "name": "War horse, hawk, eagle",
+    "type": "entity",
+    "url": "/entities/e.war-horse-hawk-eagle--94744d4c/",
+    "blurb": "Power and predation exist under providence—God’s world is not domesticated by our comfort.",
+    "searchText": "war horse, hawk, eagle entity theology power and predation exist under providence—god’s world is not domesticated by our comfort. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "e.behemoth--3be3453c",
+    "name": "Behemoth",
+    "type": "entity",
+    "url": "/entities/e.behemoth--3be3453c/",
+    "blurb": "Primal strength that only its Maker can approach—symbol of creaturely might; debated identity (hippo? mythic beast?).",
+    "searchText": "behemoth entity theology primal strength that only its maker can approach—symbol of creaturely might; debated identity (hippo? mythic beast?). ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "e.leviathan--380c58dd",
+    "name": "Leviathan",
+    "type": "entity",
+    "url": "/entities/e.leviathan--380c58dd/",
+    "blurb": "Sea-dragon of terrifying ferocity—no human can leash him; God alone plays with Leviathan. Evil’s chaos is not ultimate.",
+    "searchText": "leviathan entity theology sea-dragon of terrifying ferocity—no human can leash him; god alone plays with leviathan. evil’s chaos is not ultimate. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "e.job-humbled-hand-on-mouth--c2fe53fe",
+    "name": "Job humbled: hand on mouth",
+    "type": "entity",
+    "url": "/entities/e.job-humbled-hand-on-mouth--c2fe53fe/",
+    "blurb": "Silence as wisdom’s gateway—repentance without self-hatred, awe without annihilation.",
+    "searchText": "job humbled: hand on mouth entity spirituality silence as wisdom’s gateway—repentance without self-hatred, awe without annihilation. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "spirituality"
+  },
+  {
+    "id": "e.jobs-final-confession.i-had-heard-now-my-eye-sees--f38c4b41",
+    "name": "Job’s final confession (‘I had heard… now my eye sees’)",
+    "type": "entity",
+    "url": "/entities/e.jobs-final-confession.i-had-heard-now-my-eye-sees--f38c4b41/",
+    "blurb": "Knowledge becomes encounter—dust and ashes name finitude embraced before glory.",
+    "searchText": "job’s final confession (‘i had heard… now my eye sees’) entity spirituality knowledge becomes encounter—dust and ashes name finitude embraced before glory. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "spirituality"
+  },
+  {
+    "id": "e.yhwhs-verdict-on-the-friends--41d3b10c",
+    "name": "YHWH’s verdict on the friends",
+    "type": "entity",
+    "url": "/entities/e.yhwhs-verdict-on-the-friends--41d3b10c/",
+    "blurb": "God rebukes Eliphaz and his companions: ‘you have not spoken of me what is right, as my servant Job has.’ Orthodoxy without empathy misrepresents God.",
+    "searchText": "yhwh’s verdict on the friends entity theology god rebukes eliphaz and his companions: ‘you have not spoken of me what is right, as my servant job has.’ orthodoxy without empathy misrepresents god. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "e.atoning-sacrifices-offered-via-jobs-priesthood--f2b2d352",
+    "name": "Atoning sacrifices offered via Job’s priesthood",
+    "type": "entity",
+    "url": "/entities/e.atoning-sacrifices-offered-via-jobs-priesthood--f2b2d352/",
+    "blurb": "Friends bring bulls and rams; Job prays for them—intercession restores community.",
+    "searchText": "atoning sacrifices offered via job’s priesthood entity worship friends bring bulls and rams; job prays for them—intercession restores community. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "worship"
+  },
+  {
+    "id": "e.restoration-double-portion.livestock--fb520fb2",
+    "name": "Restoration double portion (livestock)",
+    "type": "entity",
+    "url": "/entities/e.restoration-double-portion.livestock--fb520fb2/",
+    "blurb": "Sheep 14,000; camels 6,000; oxen 1,000 yoke; female donkeys 1,000—God’s generosity answers loss yet does not erase grief.",
+    "searchText": "restoration double portion (livestock) entity record sheep 14,000; camels 6,000; oxen 1,000 yoke; female donkeys 1,000—god’s generosity answers loss yet does not erase grief. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "record"
+  },
+  {
+    "id": "g.jobs-daughters-jemimah-keziah-keren-happuch--17a280f5",
+    "name": "Job’s daughters: Jemimah, Keziah, Keren-happuch",
+    "type": "group",
+    "url": "/entities/g.jobs-daughters-jemimah-keziah-keren-happuch--17a280f5/",
+    "blurb": "Named for beauty and blessing—inheritance granted with their brothers, subverting norms; Keren-happuch (‘horn of eye-shadow’) hints at adornment and dignity.",
+    "searchText": "job’s daughters: jemimah, keziah, keren-happuch group narrative named for beauty and blessing—inheritance granted with their brothers, subverting norms; keren-happuch (‘horn of eye-shadow’) hints at adornment and dignity. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.jobs-sons.after-restoration--a149bb29",
+    "name": "Job’s sons (after restoration)",
+    "type": "group",
+    "url": "/entities/g.jobs-sons.after-restoration--a149bb29/",
+    "blurb": "Seven sons—number of completeness resumes; the text preserves daughters’ names as a theological signal.",
+    "searchText": "job’s sons (after restoration) group record seven sons—number of completeness resumes; the text preserves daughters’ names as a theological signal. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "record"
+  },
+  {
+    "id": "g.relatives-and-acquaintances-who-had-known-him-before--ea8eea6b",
+    "name": "Relatives and acquaintances who had known him before",
+    "type": "group",
+    "url": "/entities/g.relatives-and-acquaintances-who-had-known-him-before--ea8eea6b/",
+    "blurb": "They eat with him, comfort him, and each gives a piece of silver and a ring of gold—community repairs the social fabric of suffering.",
+    "searchText": "relatives and acquaintances who had known him before group narrative they eat with him, comfort him, and each gives a piece of silver and a ring of gold—community repairs the social fabric of suffering. ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "e.jobs-lifespan-and-legacy--a53b701b",
+    "name": "Job’s lifespan and legacy",
+    "type": "entity",
+    "url": "/entities/e.jobs-lifespan-and-legacy--a53b701b/",
+    "blurb": "Lives 140 more years; sees four generations—longevity as a sign of peace, not payment. He dies ‘old and full of days.’",
+    "searchText": "job’s lifespan and legacy entity record lives 140 more years; sees four generations—longevity as a sign of peace, not payment. he dies ‘old and full of days.’ ",
+    "references": 1,
+    "books": [
+      "Proverbs"
+    ],
+    "category": "record"
+  }
+]

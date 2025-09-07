@@ -1,0 +1,22 @@
+{
+  "name": "Chief Kenaz",
+  "type": "title",
+  "references": [
+    "Genesis 36:15–19"
+  ],
+  "blurb": "Edomite clan chief descended from Esau; indicates organized tribal structure prior to Israel’s monarchy.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "t.chief-kenaz.gene-36-15-19--d3c89f58",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "t.chief-kenaz.gene-36-40-43--3ece5fe3"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

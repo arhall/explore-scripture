@@ -1,0 +1,26 @@
+{
+  "name": "Heth",
+  "type": "person",
+  "references": [
+    "Genesis 10:15–18"
+  ],
+  "blurb": "Descendant of Canaan; associated with peoples inhabiting the land later promised to Israel.",
+  "relations": {
+    "parents": [
+      "Canaan"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "Deuteronomy 7:1"
+  ],
+  "id": "p.heth.gene-10-15-18--836f2dbb",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Priscilla (Prisca)",
+  "type": "person",
+  "category": "coworker",
+  "references": [
+    "Acts 18:2,18,26",
+    "Rom 16:3–5"
+  ],
+  "aka": [
+    "Prisca"
+  ],
+  "id": "p.priscilla-prisca--75f0d9d8",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      18
+    ],
+    "Romans": [
+      16
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Zadokite priests: clothing, duties, holiness",
+  "type": "entity",
+  "references": [
+    "Ezekiel 44:15–31"
+  ],
+  "blurb": "Instructions on garments, hair, marriages, teaching, and judgment—holiness woven into everyday service.",
+  "category": "priesthood",
+  "id": "e.zadokite-priests-clothing-duties-holiness--105cac09",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      44
+    ]
+  }
+}

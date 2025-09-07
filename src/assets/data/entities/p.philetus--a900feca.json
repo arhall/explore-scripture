@@ -1,0 +1,15 @@
+{
+  "name": "Philetus",
+  "type": "person",
+  "category": "opponent",
+  "references": [
+    "2 Tim 2:17"
+  ],
+  "aka": [],
+  "id": "p.philetus--a900feca",
+  "book_references": {
+    "2 Timothy": [
+      2
+    ]
+  }
+}

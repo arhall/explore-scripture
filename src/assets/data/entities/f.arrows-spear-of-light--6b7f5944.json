@@ -1,0 +1,19 @@
+{
+  "id": "f.arrows-spear-of-light--6b7f5944",
+  "name": "Arrows/Spear of light",
+  "type": "figure",
+  "references": [
+    "Hab 3:9",
+    "Hab 3:11"
+  ],
+  "category": "theophany-weapon",
+  "blurb": "Your bow is bared; arrows flash like lightning; spears glitter as celestial bodies halt.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      3
+    ]
+  }
+}

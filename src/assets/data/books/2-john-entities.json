@@ -1,0 +1,82 @@
+[
+  {
+    "id": "p.john-the-elder--f1c65f79",
+    "name": "John the Elder",
+    "type": "person",
+    "url": "/entities/p.john-the-elder--f1c65f79/",
+    "blurb": "",
+    "searchText": "john the elder person author  ",
+    "references": 3,
+    "books": [
+      "1 John",
+      "2 John",
+      "3 John"
+    ],
+    "category": "author"
+  },
+  {
+    "id": "g.her-children--b1a064da",
+    "name": "her children",
+    "type": "group",
+    "url": "/entities/g.her-children--b1a064da/",
+    "blurb": "",
+    "searchText": "her children group community  ",
+    "references": 1,
+    "books": [
+      "2 John"
+    ],
+    "category": "community"
+  },
+  {
+    "id": "p.elect-lady--fd09eebd",
+    "name": "elect lady",
+    "type": "person",
+    "url": "/entities/p.elect-lady--fd09eebd/",
+    "blurb": "",
+    "searchText": "elect lady person addressee  ",
+    "references": 1,
+    "books": [
+      "2 John"
+    ],
+    "category": "addressee"
+  },
+  {
+    "id": "p.elect-sister--38ffe512",
+    "name": "elect sister",
+    "type": "person",
+    "url": "/entities/p.elect-sister--38ffe512/",
+    "blurb": "",
+    "searchText": "elect sister person greetings  ",
+    "references": 1,
+    "books": [
+      "2 John"
+    ],
+    "category": "greetings"
+  },
+  {
+    "id": "f.textual-note-present-participle-coming-in-the-flesh--9d8c4db5",
+    "name": "Textual note: present participle ‘coming in the flesh’",
+    "type": "figure",
+    "url": "/entities/f.textual-note-present-participle-coming-in-the-flesh--9d8c4db5/",
+    "blurb": "",
+    "searchText": "textual note: present participle ‘coming in the flesh’ figure textual-notes  ",
+    "references": 1,
+    "books": [
+      "2 John"
+    ],
+    "category": "textual-notes"
+  },
+  {
+    "id": "f.truth-commandment-love-index--a2c67771",
+    "name": "Truth/Commandment/Love index",
+    "type": "figure",
+    "url": "/entities/f.truth-commandment-love-index--a2c67771/",
+    "blurb": "",
+    "searchText": "truth/commandment/love index figure index  ",
+    "references": 1,
+    "books": [
+      "2 John"
+    ],
+    "category": "index"
+  }
+]

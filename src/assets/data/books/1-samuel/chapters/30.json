@@ -1,0 +1,21 @@
+{
+  "book": "1 Samuel",
+  "chapter": 30,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "g.amalekites.ziklag-raid-and-defeat--7aa634d3",
+      "name": "Amalekites (Ziklag raid and defeat)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.egyptian-servant.guide-to-amalek--4e750e42",
+      "name": "Egyptian servant (guide to Amalek)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

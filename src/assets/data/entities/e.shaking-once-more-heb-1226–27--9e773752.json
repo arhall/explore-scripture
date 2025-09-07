@@ -1,0 +1,21 @@
+{
+  "id": "e.shaking-once-more-heb-1226–27--9e773752",
+  "name": "Shaking once more (Heb 12:26–27)",
+  "type": "entity",
+  "references": [
+    "Hag 2:6-7"
+  ],
+  "category": "reception-christian",
+  "cross_references": [
+    "Heb 12:26-27"
+  ],
+  "blurb": "New Testament reads Haggai’s shaking as eschatological removal of the shakable to reveal the unshakable kingdom.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      2
+    ]
+  }
+}

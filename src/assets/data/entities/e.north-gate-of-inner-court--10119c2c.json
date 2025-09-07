@@ -1,0 +1,18 @@
+{
+  "name": "North gate of inner court",
+  "type": "entity",
+  "references": [
+    "Ezekiel 40:35-37"
+  ],
+  "blurb": "Parallel design, regulating priestly approach.",
+  "category": "temple",
+  "id": "e.north-gate-of-inner-court--10119c2c",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      40
+    ]
+  }
+}

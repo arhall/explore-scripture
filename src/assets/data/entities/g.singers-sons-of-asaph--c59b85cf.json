@@ -1,0 +1,20 @@
+{
+  "name": "Singers: sons of Asaph",
+  "type": "group",
+  "references": [
+    "Ezra 2:41"
+  ],
+  "blurb": "Singers restored as part of the temple ecosystem. Counted 128; their presence frames the rebuilt altar and later dedication with ordered praise.",
+  "category": "worship",
+  "count": 128,
+  "count_note": "Count per Ezra 2:41",
+  "id": "g.singers-sons-of-asaph--c59b85cf",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      2
+    ]
+  }
+}

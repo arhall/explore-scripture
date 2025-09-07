@@ -1,0 +1,26 @@
+{
+  "name": "Ophir",
+  "type": "person",
+  "references": [
+    "Genesis 10:26–29"
+  ],
+  "blurb": "Son of Joktan; associated with Arabian regions and trade.",
+  "relations": {
+    "parents": [
+      "Joktan"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "1 Kings 9:28"
+  ],
+  "id": "p.ophir.gene-10-26-29--d1448d17",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

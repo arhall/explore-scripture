@@ -1,0 +1,23 @@
+{
+  "name": "Appian Way (Three Taverns)",
+  "type": "entity",
+  "category": "road",
+  "references": [
+    "Acts 28:15"
+  ],
+  "aka": [],
+  "id": "e.appian-way-three-taverns--f3f2d4c4",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      28
+    ]
+  }
+}

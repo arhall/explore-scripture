@@ -1,0 +1,19 @@
+{
+  "id": "p.zerubbabel-son-of-shealtiel-governor--5a2d83dc",
+  "name": "Zerubbabel son of Shealtiel (governor)",
+  "type": "person",
+  "references": [
+    "Zech 4:6-10"
+  ],
+  "category": "governor",
+  "blurb": "Davidic governor; mountain leveled before him; plumb line in hand as the capstone is set—not by might but by the Spirit.",
+  "canonical_id": "p.zerubbabel-son-of-shealtiel--966cfda8",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      4
+    ]
+  }
+}

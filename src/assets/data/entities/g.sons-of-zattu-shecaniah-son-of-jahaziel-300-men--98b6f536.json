@@ -1,0 +1,20 @@
+{
+  "name": "Sons of Zattu: Shecaniah son of Jahaziel, 300 men",
+  "type": "group",
+  "references": [
+    "Ezra 8:5"
+  ],
+  "blurb": "Heads of families in Ezra’s later return; numbers reflect adult males mustered for the journey and covenant renewal.",
+  "category": "record",
+  "count": 300,
+  "count_note": "Count per Ezra 8:5",
+  "id": "g.sons-of-zattu-shecaniah-son-of-jahaziel-300-men--98b6f536",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      8
+    ]
+  }
+}

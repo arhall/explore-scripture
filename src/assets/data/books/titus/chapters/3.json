@@ -1,0 +1,77 @@
+{
+  "book": "Titus",
+  "chapter": 3,
+  "entity_count": 32,
+  "entities": [
+    {
+      "id": "p.tychicus--24c2a0b4",
+      "name": "Tychicus",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 5
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "p.apollos--8fad6255",
+      "name": "Apollos",
+      "type": "person",
+      "role": "teacher",
+      "refs_count": 2
+    },
+    {
+      "id": "g.rulers-and-authorities--10bcd696",
+      "name": "rulers and authorities",
+      "type": "group",
+      "role": "civic",
+      "refs_count": 1
+    },
+    {
+      "id": "g.our-people--4851e990",
+      "name": "our people",
+      "type": "group",
+      "role": "community",
+      "refs_count": 1
+    },
+    {
+      "id": "f.have-nothing-more-to-do-with-him--9a073e95",
+      "name": "have nothing more to do with him",
+      "type": "figure",
+      "role": "discipline",
+      "refs_count": 1
+    },
+    {
+      "id": "g.divisive-person-hairetikos--5053ee11",
+      "name": "divisive person (hairetikos)",
+      "type": "group",
+      "role": "discipline",
+      "refs_count": 1
+    },
+    {
+      "id": "f.show-courtesy-to-all--0e15a046",
+      "name": "show courtesy to all",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1
+    },
+    {
+      "id": "f.renewal-of-the-holy-spirit--22ede3cb",
+      "name": "renewal of the Holy Spirit",
+      "type": "figure",
+      "role": "soteriology",
+      "refs_count": 1
+    },
+    {
+      "id": "p.artemas--55581b77",
+      "name": "Artemas",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1
+    }
+  ]
+}

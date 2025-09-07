@@ -1,0 +1,27 @@
+{
+  "name": "Jared",
+  "type": "person",
+  "references": [
+    "Genesis 5:15–20"
+  ],
+  "blurb": "Ancestor in Seth’s line.",
+  "relations": {
+    "parents": [
+      "Mahalalel"
+    ],
+    "children": [
+      "Enoch (walked with God)"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.jared.gene-5-15-20--a619b9a7",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      5
+    ]
+  }
+}

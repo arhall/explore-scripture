@@ -1,0 +1,29 @@
+{
+  "name": "Herodias",
+  "type": "person",
+  "category": "royal",
+  "references": [
+    "Matt 14:3–11",
+    "Mark 6:17–28"
+  ],
+  "blurb": "Ambition and resentment converge in John’s martyrdom.",
+  "aka": [],
+  "id": "p.herodias--9fdf64ba",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Mark",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      14
+    ],
+    "Mark": [
+      6
+    ]
+  }
+}

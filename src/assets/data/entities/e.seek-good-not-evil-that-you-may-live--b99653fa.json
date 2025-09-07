@@ -1,0 +1,18 @@
+{
+  "name": "Seek good, not evil, that you may live",
+  "type": "entity",
+  "references": [
+    "Amos 5:14–15"
+  ],
+  "blurb": "Moral reorientation paired with civic reform: establish justice in the gate; maybe God will be gracious.",
+  "category": "call",
+  "id": "e.seek-good-not-evil-that-you-may-live--b99653fa",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Amos": [
+      5
+    ]
+  }
+}

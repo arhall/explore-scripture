@@ -1,0 +1,19 @@
+{
+  "name": "Hamul",
+  "type": "person",
+  "references": [
+    "Genesis 46:12"
+  ],
+  "blurb": "Son of Perez; part of Judah’s tally migrating to Egypt.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.hamul.gene-46-12--b40977a8",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      46
+    ]
+  }
+}

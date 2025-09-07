@@ -1,0 +1,27 @@
+{
+  "id": "p.habakkuk--d7d46a7f",
+  "name": "Habakkuk",
+  "type": "person",
+  "references": [
+    "Hab 1:1",
+    "Hab 3:1"
+  ],
+  "category": "prophet",
+  "relations": {
+    "possible_role": "Temple-linked prophet/musician (3:1, 3:19 hints)"
+  },
+  "cross_references": [
+    "2 Chr 29 (temple music context, analogical)",
+    "Ps superscriptions (musical notations)"
+  ],
+  "blurb": "Prophet whose name likely means “embrace” or “wrestle,” mirroring his dialog with God over justice. Habakkuk functions as a temple-prophet/poet, voicing complaint, waiting at the watchpost, and concluding with a psalm that models trust.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      1,
+      3
+    ]
+  }
+}

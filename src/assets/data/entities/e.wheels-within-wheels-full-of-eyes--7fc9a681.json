@@ -1,0 +1,18 @@
+{
+  "name": "Wheels within wheels, full of eyes",
+  "type": "entity",
+  "references": [
+    "Ezekiel 1:15–21; 10:9–13"
+  ],
+  "blurb": "Omnidirectional movement and perception—vision of providence that sees and acts everywhere.",
+  "category": "heavenly",
+  "id": "e.wheels-within-wheels-full-of-eyes--7fc9a681",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      1
+    ]
+  }
+}

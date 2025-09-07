@@ -1,0 +1,20 @@
+{
+  "name": "Sons of Nebo",
+  "type": "group",
+  "references": [
+    "Ezra 2:29"
+  ],
+  "blurb": "Enumerated among the first returnees under Zerubbabel; their counted men totaled 52. Family identity stabilizes land claims and synagogue-era communities; numbers witness to costly obedience.",
+  "category": "record",
+  "count": 52,
+  "count_note": "Count per Ezra 2:29",
+  "id": "g.sons-of-nebo--44149070",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      2
+    ]
+  }
+}

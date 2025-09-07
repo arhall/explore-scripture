@@ -1,0 +1,25 @@
+{
+  "id": "p.elijah--86b7f065",
+  "name": "Elijah",
+  "type": "person",
+  "references": [
+    "Mal 4:5-6",
+    "Jas 5:17-18"
+  ],
+  "category": "prophet",
+  "blurb": "Promised precursor who turns hearts, prefiguring renewal and reconciliation.",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "p.elijah--e44c0270"
+  ],
+  "book_references": {
+    "Malachi": [
+      4
+    ],
+    "James": [
+      5
+    ]
+  }
+}

@@ -1,0 +1,717 @@
+[
+  {
+    "id": "d.holy-spirit--ad652b9c",
+    "name": "Holy Spirit",
+    "type": "divine",
+    "url": "/entities/d.holy-spirit--ad652b9c/",
+    "blurb": "Divine agent of conception, anointing, speech, and mission—integral to the triadic baptismal name.",
+    "searchText": "holy spirit divine theology divine agent of conception, anointing, speech, and mission—integral to the triadic baptismal name. ",
+    "references": 53,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "2 Corinthians",
+      "Galatians",
+      "1 Corinthians",
+      "Philippians",
+      "Ephesians",
+      "Romans",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "p.paul-saul--d4c08ff1",
+    "name": "Paul (Saul)",
+    "type": "person",
+    "url": "/entities/p.paul-saul--d4c08ff1/",
+    "blurb": "",
+    "searchText": "paul (saul) person apostle  ",
+    "references": 24,
+    "books": [
+      "Acts",
+      "Galatians",
+      "Philippians",
+      "Ephesians",
+      "Romans",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "2 Peter"
+    ],
+    "category": "apostle"
+  },
+  {
+    "id": "f.argument-map-index--c44b9b3a",
+    "name": "Argument map (index)",
+    "type": "figure",
+    "url": "/entities/f.argument-map-index--c44b9b3a/",
+    "blurb": "",
+    "searchText": "argument map (index) figure index  ",
+    "references": 17,
+    "books": [
+      "2 Corinthians",
+      "Galatians",
+      "1 Corinthians",
+      "Ephesians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John"
+    ],
+    "category": "index"
+  },
+  {
+    "id": "p.timothy--227fb1d9",
+    "name": "Timothy",
+    "type": "person",
+    "url": "/entities/p.timothy--227fb1d9/",
+    "blurb": "",
+    "searchText": "timothy person coworker  ",
+    "references": 12,
+    "books": [
+      "Acts",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Philemon",
+      "Hebrews"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "e.macedonia--58a26877",
+    "name": "Macedonia",
+    "type": "entity",
+    "url": "/entities/e.macedonia--58a26877/",
+    "blurb": "",
+    "searchText": "macedonia entity province  ",
+    "references": 5,
+    "books": [
+      "2 Corinthians",
+      "1 Corinthians",
+      "1 Thessalonians",
+      "1 Timothy"
+    ],
+    "category": "province"
+  },
+  {
+    "id": "p.silas-silvanus--3ff90d56",
+    "name": "Silas (Silvanus)",
+    "type": "person",
+    "url": "/entities/p.silas-silvanus--3ff90d56/",
+    "blurb": "",
+    "searchText": "silas (silvanus) person coworker  ",
+    "references": 4,
+    "books": [
+      "Acts",
+      "1 Thessalonians",
+      "2 Thessalonians"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "f.day-of-the-lord--1380fa46",
+    "name": "Day of the LORD",
+    "type": "figure",
+    "url": "/entities/f.day-of-the-lord--1380fa46/",
+    "blurb": "Near and comprehensive judgment that purifies a people for universal worship.",
+    "searchText": "day of the lord figure central-theme near and comprehensive judgment that purifies a people for universal worship. ",
+    "references": 4,
+    "books": [
+      "Zephaniah",
+      "1 Thessalonians"
+    ],
+    "category": "central-theme"
+  },
+  {
+    "id": "g.church-of-the-thessalonians--e62e69ff",
+    "name": "Church of the Thessalonians",
+    "type": "group",
+    "url": "/entities/g.church-of-the-thessalonians--e62e69ff/",
+    "blurb": "",
+    "searchText": "church of the thessalonians group assembly  ",
+    "references": 3,
+    "books": [
+      "1 Thessalonians",
+      "2 Thessalonians"
+    ],
+    "category": "assembly"
+  },
+  {
+    "id": "e.achaia--ba67eea7",
+    "name": "Achaia",
+    "type": "entity",
+    "url": "/entities/e.achaia--ba67eea7/",
+    "blurb": "",
+    "searchText": "achaia entity province  ",
+    "references": 3,
+    "books": [
+      "2 Corinthians",
+      "1 Corinthians",
+      "1 Thessalonians"
+    ],
+    "category": "province"
+  },
+  {
+    "id": "g.idle-disorderly-ataktos--ca4ba91d",
+    "name": "Idle/Disorderly (ataktos)",
+    "type": "group",
+    "url": "/entities/g.idle-disorderly-ataktos--ca4ba91d/",
+    "blurb": "",
+    "searchText": "idle/disorderly (ataktos) group work-ethic  ",
+    "references": 2,
+    "books": [
+      "1 Thessalonians",
+      "2 Thessalonians"
+    ],
+    "category": "work-ethic"
+  },
+  {
+    "id": "f.rejoice-always--8fd4f7a4",
+    "name": "Rejoice always",
+    "type": "figure",
+    "url": "/entities/f.rejoice-always--8fd4f7a4/",
+    "blurb": "",
+    "searchText": "rejoice always figure joy  ",
+    "references": 2,
+    "books": [
+      "Philippians",
+      "1 Thessalonians"
+    ],
+    "category": "joy"
+  },
+  {
+    "id": "g.aspire-to-quietness--ea137dda",
+    "name": "Aspire to quietness",
+    "type": "group",
+    "url": "/entities/g.aspire-to-quietness--ea137dda/",
+    "blurb": "",
+    "searchText": "aspire to quietness group work-ethic  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "work-ethic"
+  },
+  {
+    "id": "g.brotherly-love-taught-by-god--376c5a1c",
+    "name": "Brotherly love taught by God",
+    "type": "group",
+    "url": "/entities/g.brotherly-love-taught-by-god--376c5a1c/",
+    "blurb": "",
+    "searchText": "brotherly love taught by god group virtue  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "virtue"
+  },
+  {
+    "id": "g.churches-of-god-in-judea--b193ae97",
+    "name": "Churches of God in Judea",
+    "type": "group",
+    "url": "/entities/g.churches-of-god-in-judea--b193ae97/",
+    "blurb": "",
+    "searchText": "churches of god in judea group church-network  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "church-network"
+  },
+  {
+    "id": "g.discerners-of-prophecy-in-thessalonica--f7bc4540",
+    "name": "Discerners of prophecy in Thessalonica",
+    "type": "group",
+    "url": "/entities/g.discerners-of-prophecy-in-thessalonica--f7bc4540/",
+    "blurb": "",
+    "searchText": "discerners of prophecy in thessalonica group charism  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "charism"
+  },
+  {
+    "id": "g.do-not-despise-prophecies--ccacc01d",
+    "name": "Do not despise prophecies",
+    "type": "group",
+    "url": "/entities/g.do-not-despise-prophecies--ccacc01d/",
+    "blurb": "",
+    "searchText": "do not despise prophecies group charism  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "charism"
+  },
+  {
+    "id": "g.fainthearted--777f6c8d",
+    "name": "Fainthearted",
+    "type": "group",
+    "url": "/entities/g.fainthearted--777f6c8d/",
+    "blurb": "",
+    "searchText": "fainthearted group pastoral  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "pastoral"
+  },
+  {
+    "id": "g.imitators-of-us-and-of-the-lord--3da0f450",
+    "name": "Imitators of us and of the Lord",
+    "type": "group",
+    "url": "/entities/g.imitators-of-us-and-of-the-lord--3da0f450/",
+    "blurb": "",
+    "searchText": "imitators of us and of the lord group discipleship  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "discipleship"
+  },
+  {
+    "id": "g.local-leaders-in-thessalonica--48c6f0dc",
+    "name": "Local leaders in Thessalonica",
+    "type": "group",
+    "url": "/entities/g.local-leaders-in-thessalonica--48c6f0dc/",
+    "blurb": "",
+    "searchText": "local leaders in thessalonica group local-leadership  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "local-leadership"
+  },
+  {
+    "id": "g.mind-your-own-affairs--8a5b77ff",
+    "name": "Mind your own affairs",
+    "type": "group",
+    "url": "/entities/g.mind-your-own-affairs--8a5b77ff/",
+    "blurb": "",
+    "searchText": "mind your own affairs group work-ethic  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "work-ethic"
+  },
+  {
+    "id": "g.model-to-macedonia-and-achaia--0ba1e409",
+    "name": "Model to Macedonia and Achaia",
+    "type": "group",
+    "url": "/entities/g.model-to-macedonia-and-achaia--0ba1e409/",
+    "blurb": "",
+    "searchText": "model to macedonia and achaia group example  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "example"
+  },
+  {
+    "id": "g.persecutors--342a6a3a",
+    "name": "Persecutors",
+    "type": "group",
+    "url": "/entities/g.persecutors--342a6a3a/",
+    "blurb": "",
+    "searchText": "persecutors group opponents  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "opponents"
+  },
+  {
+    "id": "g.sons-of-light-day--a7236299",
+    "name": "Sons of light/day",
+    "type": "group",
+    "url": "/entities/g.sons-of-light-day--a7236299/",
+    "blurb": "",
+    "searchText": "sons of light/day group identity  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "identity"
+  },
+  {
+    "id": "g.the-dead-in-christ--829370f9",
+    "name": "The dead in Christ",
+    "type": "group",
+    "url": "/entities/g.the-dead-in-christ--829370f9/",
+    "blurb": "",
+    "searchText": "the dead in christ group cohort  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "cohort"
+  },
+  {
+    "id": "g.weak-the-weak--e8800060",
+    "name": "Weak (the weak)",
+    "type": "group",
+    "url": "/entities/g.weak-the-weak--e8800060/",
+    "blurb": "",
+    "searchText": "weak (the weak) group pastoral  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "pastoral"
+  },
+  {
+    "id": "g.word-at-work-in-believers--3e3a87ef",
+    "name": "Word at work in believers",
+    "type": "group",
+    "url": "/entities/g.word-at-work-in-believers--3e3a87ef/",
+    "blurb": "",
+    "searchText": "word at work in believers group response  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "response"
+  },
+  {
+    "id": "g.work-with-your-hands--ee5cfc26",
+    "name": "Work with your hands",
+    "type": "group",
+    "url": "/entities/g.work-with-your-hands--ee5cfc26/",
+    "blurb": "",
+    "searchText": "work with your hands group work-ethic  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "work-ethic"
+  },
+  {
+    "id": "f.abstain-from-every-form-of-evil--2f24ab3b",
+    "name": "Abstain from every form of evil",
+    "type": "figure",
+    "url": "/entities/f.abstain-from-every-form-of-evil--2f24ab3b/",
+    "blurb": "",
+    "searchText": "abstain from every form of evil figure virtue  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "virtue"
+  },
+  {
+    "id": "f.abstain-from-sexual-immorality--5c727fe2",
+    "name": "Abstain from sexual immorality",
+    "type": "figure",
+    "url": "/entities/f.abstain-from-sexual-immorality--5c727fe2/",
+    "blurb": "",
+    "searchText": "abstain from sexual immorality figure ethic  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "ethic"
+  },
+  {
+    "id": "f.approved-by-god-entrusted-with-the-gospel--b95bdd52",
+    "name": "Approved by God, entrusted with the gospel",
+    "type": "figure",
+    "url": "/entities/f.approved-by-god-entrusted-with-the-gospel--b95bdd52/",
+    "blurb": "",
+    "searchText": "approved by god, entrusted with the gospel figure commission  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "commission"
+  },
+  {
+    "id": "f.archangel--76741b71",
+    "name": "Archangel",
+    "type": "figure",
+    "url": "/entities/f.archangel--76741b71/",
+    "blurb": "",
+    "searchText": "archangel figure angelic  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "angelic"
+  },
+  {
+    "id": "f.await-his-son-from-heaven--5eb95afb",
+    "name": "Await his Son from heaven",
+    "type": "figure",
+    "url": "/entities/f.await-his-son-from-heaven--5eb95afb/",
+    "blurb": "",
+    "searchText": "await his son from heaven figure hope  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "hope"
+  },
+  {
+    "id": "f.be-at-peace-among-yourselves--ef5b5bb0",
+    "name": "Be at peace among yourselves",
+    "type": "figure",
+    "url": "/entities/f.be-at-peace-among-yourselves--ef5b5bb0/",
+    "blurb": "",
+    "searchText": "be at peace among yourselves figure peace  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "peace"
+  },
+  {
+    "id": "f.be-patient-with-all--07c300fd",
+    "name": "Be patient with all",
+    "type": "figure",
+    "url": "/entities/f.be-patient-with-all--07c300fd/",
+    "blurb": "",
+    "searchText": "be patient with all figure virtue  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "virtue"
+  },
+  {
+    "id": "f.be-sober-breastplate-and-helmet--793344e6",
+    "name": "Be sober; breastplate and helmet",
+    "type": "figure",
+    "url": "/entities/f.be-sober-breastplate-and-helmet--793344e6/",
+    "blurb": "",
+    "searchText": "be sober; breastplate and helmet figure virtue-armament  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "virtue-armament"
+  },
+  {
+    "id": "f.boldness-in-our-god-amid-conflict--2c29f793",
+    "name": "Boldness in our God amid conflict",
+    "type": "figure",
+    "url": "/entities/f.boldness-in-our-god-amid-conflict--2c29f793/",
+    "blurb": "",
+    "searchText": "boldness in our god amid conflict figure courage  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "courage"
+  },
+  {
+    "id": "f.chosen-by-god-election--7d53685f",
+    "name": "Chosen by God (election)",
+    "type": "figure",
+    "url": "/entities/f.chosen-by-god-election--7d53685f/",
+    "blurb": "",
+    "searchText": "chosen by god (election) figure election  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "election"
+  },
+  {
+    "id": "f.destined-for-salvation-not-wrath--4860b0ec",
+    "name": "Destined for salvation not wrath",
+    "type": "figure",
+    "url": "/entities/f.destined-for-salvation-not-wrath--4860b0ec/",
+    "blurb": "",
+    "searchText": "destined for salvation not wrath figure assurance  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "assurance"
+  },
+  {
+    "id": "f.do-not-quench-the-spirit--5077af16",
+    "name": "Do not quench the Spirit",
+    "type": "figure",
+    "url": "/entities/f.do-not-quench-the-spirit--5077af16/",
+    "blurb": "",
+    "searchText": "do not quench the spirit figure charism  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "charism"
+  },
+  {
+    "id": "f.esteem-them-very-highly-in-love--fbbaeb97",
+    "name": "Esteem them very highly in love",
+    "type": "figure",
+    "url": "/entities/f.esteem-them-very-highly-in-love--fbbaeb97/",
+    "blurb": "",
+    "searchText": "esteem them very highly in love figure leadership  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "leadership"
+  },
+  {
+    "id": "f.faithful-is-he-who-calls-you--9fdb0547",
+    "name": "Faithful is he who calls you",
+    "type": "figure",
+    "url": "/entities/f.faithful-is-he-who-calls-you--9fdb0547/",
+    "blurb": "",
+    "searchText": "faithful is he who calls you figure assurance  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "assurance"
+  },
+  {
+    "id": "f.fatherly-exhortation--18a4fc2a",
+    "name": "Fatherly exhortation",
+    "type": "figure",
+    "url": "/entities/f.fatherly-exhortation--18a4fc2a/",
+    "blurb": "",
+    "searchText": "fatherly exhortation figure metaphor  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "metaphor"
+  },
+  {
+    "id": "f.give-thanks-in-everything--3143813d",
+    "name": "Give thanks in everything",
+    "type": "figure",
+    "url": "/entities/f.give-thanks-in-everything--3143813d/",
+    "blurb": "",
+    "searchText": "give thanks in everything figure virtue  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "virtue"
+  },
+  {
+    "id": "f.god-calls-us-in-holiness-rejects-not-man-but-god--0df5a32f",
+    "name": "God calls us in holiness; rejects not man but God",
+    "type": "figure",
+    "url": "/entities/f.god-calls-us-in-holiness-rejects-not-man-but-god--0df5a32f/",
+    "blurb": "",
+    "searchText": "god calls us in holiness; rejects not man but god figure warning  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "warning"
+  },
+  {
+    "id": "f.god-will-bring-with-jesus--b8b3319b",
+    "name": "God will bring with Jesus",
+    "type": "figure",
+    "url": "/entities/f.god-will-bring-with-jesus--b8b3319b/",
+    "blurb": "",
+    "searchText": "god will bring with jesus figure hope  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "hope"
+  },
+  {
+    "id": "f.harpazo-caught-up--9066c212",
+    "name": "Harpazo (caught up)",
+    "type": "figure",
+    "url": "/entities/f.harpazo-caught-up--9066c212/",
+    "blurb": "",
+    "searchText": "harpazo (caught up) figure parousia  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "parousia"
+  },
+  {
+    "id": "f.holy-kiss--35c3f5a7",
+    "name": "Holy kiss",
+    "type": "figure",
+    "url": "/entities/f.holy-kiss--35c3f5a7/",
+    "blurb": "",
+    "searchText": "holy kiss figure practice  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "practice"
+  },
+  {
+    "id": "f.idols--760d04c9",
+    "name": "Idols",
+    "type": "figure",
+    "url": "/entities/f.idols--760d04c9/",
+    "blurb": "",
+    "searchText": "idols figure idolatry  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "idolatry"
+  },
+  {
+    "id": "f.jesus-who-delivers-from-the-wrath-to-come--8cba46e7",
+    "name": "Jesus who delivers from the wrath to come",
+    "type": "figure",
+    "url": "/entities/f.jesus-who-delivers-from-the-wrath-to-come--8cba46e7/",
+    "blurb": "",
+    "searchText": "jesus who delivers from the wrath to come figure deliverance  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "deliverance"
+  },
+  {
+    "id": "f.labor-night-and-day--92bb0558",
+    "name": "Labor night and day",
+    "type": "figure",
+    "url": "/entities/f.labor-night-and-day--92bb0558/",
+    "blurb": "",
+    "searchText": "labor night and day figure example  ",
+    "references": 1,
+    "books": [
+      "1 Thessalonians"
+    ],
+    "category": "example"
+  }
+]

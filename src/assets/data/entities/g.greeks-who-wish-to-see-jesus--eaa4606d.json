@@ -1,0 +1,23 @@
+{
+  "name": "Greeks who wish to see Jesus",
+  "type": "group",
+  "category": "seekers",
+  "references": [
+    "John 12:20–26"
+  ],
+  "aka": [],
+  "id": "g.greeks-who-wish-to-see-jesus--eaa4606d",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      12
+    ]
+  }
+}

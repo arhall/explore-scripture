@@ -1,0 +1,377 @@
+{
+  "book": "Hosea",
+  "slug": "hosea",
+  "entity_count": 26,
+  "key_figures": [
+    {
+      "id": "p.hosea-son-of-beeri--8844380b",
+      "name": "Hosea son of Beeri",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.beeri--e01f9d6b",
+      "name": "Beeri",
+      "type": "person",
+      "role": "family",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.gomer-daughter-of-diblaim--f0937d6b",
+      "name": "Gomer daughter of Diblaim",
+      "type": "person",
+      "role": "family",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.assyria--0b88cead",
+      "name": "Assyria",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.egypt--ab1ad00f",
+      "name": "Egypt",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.princes-of-israel--221e3291",
+      "name": "Princes of Israel",
+      "type": "group",
+      "role": "royalty",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "e.marriage-metaphor--8429d635",
+      "name": "Marriage metaphor",
+      "type": "entity",
+      "role": "metaphor",
+      "refs_count": 3,
+      "score": 4
+    },
+    {
+      "id": "f.jezreel--35b22914",
+      "name": "Jezreel",
+      "type": "figure",
+      "role": "sign-name",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.lo-ruhamah--6aec452e",
+      "name": "Lo-Ruhamah",
+      "type": "figure",
+      "role": "sign-name",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.lo-ammi--48ab7f65",
+      "name": "Lo-Ammi",
+      "type": "figure",
+      "role": "sign-name",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.baal--292f1204",
+      "name": "Baal",
+      "type": "figure",
+      "role": "idol",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.davidic-hope--c86d8bba",
+      "name": "Davidic hope",
+      "type": "figure",
+      "role": "messianic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.samaria--fcae1760",
+      "name": "Samaria",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.calf-of-samaria--e15d9186",
+      "name": "Calf of Samaria",
+      "type": "entity",
+      "role": "idol",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.gilgal--52a48e88",
+      "name": "Gilgal",
+      "type": "entity",
+      "role": "cult-site",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.bethel-beth-aven--9aefa263",
+      "name": "Bethel/Beth-aven",
+      "type": "entity",
+      "role": "cult-site",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.gibeah--5ad47cf6",
+      "name": "Gibeah",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.valley-of-achor--a637c19e",
+      "name": "Valley of Achor",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.lebanon--4451b0f2",
+      "name": "Lebanon",
+      "type": "entity",
+      "role": "landscape",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.father-son-metaphor--6898fb0f",
+      "name": "Father-son metaphor",
+      "type": "entity",
+      "role": "metaphor",
+      "refs_count": 1,
+      "score": 2
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "p.hosea-son-of-beeri--8844380b",
+      "name": "Hosea son of Beeri",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.beeri--e01f9d6b",
+      "name": "Beeri",
+      "type": "person",
+      "role": "family",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.gomer-daughter-of-diblaim--f0937d6b",
+      "name": "Gomer daughter of Diblaim",
+      "type": "person",
+      "role": "family",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.assyria--0b88cead",
+      "name": "Assyria",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.egypt--ab1ad00f",
+      "name": "Egypt",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.princes-of-israel--221e3291",
+      "name": "Princes of Israel",
+      "type": "group",
+      "role": "royalty",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "e.marriage-metaphor--8429d635",
+      "name": "Marriage metaphor",
+      "type": "entity",
+      "role": "metaphor",
+      "refs_count": 3,
+      "score": 4
+    },
+    {
+      "id": "f.jezreel--35b22914",
+      "name": "Jezreel",
+      "type": "figure",
+      "role": "sign-name",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.lo-ruhamah--6aec452e",
+      "name": "Lo-Ruhamah",
+      "type": "figure",
+      "role": "sign-name",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.lo-ammi--48ab7f65",
+      "name": "Lo-Ammi",
+      "type": "figure",
+      "role": "sign-name",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.baal--292f1204",
+      "name": "Baal",
+      "type": "figure",
+      "role": "idol",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.davidic-hope--c86d8bba",
+      "name": "Davidic hope",
+      "type": "figure",
+      "role": "messianic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.samaria--fcae1760",
+      "name": "Samaria",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.calf-of-samaria--e15d9186",
+      "name": "Calf of Samaria",
+      "type": "entity",
+      "role": "idol",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.gilgal--52a48e88",
+      "name": "Gilgal",
+      "type": "entity",
+      "role": "cult-site",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.bethel-beth-aven--9aefa263",
+      "name": "Bethel/Beth-aven",
+      "type": "entity",
+      "role": "cult-site",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.gibeah--5ad47cf6",
+      "name": "Gibeah",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.valley-of-achor--a637c19e",
+      "name": "Valley of Achor",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.lebanon--4451b0f2",
+      "name": "Lebanon",
+      "type": "entity",
+      "role": "landscape",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.father-son-metaphor--6898fb0f",
+      "name": "Father-son metaphor",
+      "type": "entity",
+      "role": "metaphor",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.sow-the-wind-reap-whirlwind--5718c4d8",
+      "name": "Sow the wind, reap whirlwind",
+      "type": "entity",
+      "role": "image",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.morning-cloud--60586c3f",
+      "name": "Morning cloud",
+      "type": "entity",
+      "role": "image",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.oven-imagery--a475b890",
+      "name": "Oven imagery",
+      "type": "entity",
+      "role": "image",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.treacherous-bow--07164718",
+      "name": "Treacherous bow",
+      "type": "entity",
+      "role": "image",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.lion-leopard-bear--240c8a5f",
+      "name": "Lion, leopard, bear",
+      "type": "entity",
+      "role": "image",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.return-liturgy--3d02e3ed",
+      "name": "Return liturgy",
+      "type": "entity",
+      "role": "repentance",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

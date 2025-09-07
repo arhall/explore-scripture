@@ -1,0 +1,21 @@
+{
+  "name": "Say to Archippus: fulfill your ministry",
+  "type": "person",
+  "category": "charge",
+  "references": [
+    "Col 4:17"
+  ],
+  "aka": [],
+  "id": "p.say-to-archippus-fulfill-your-ministry--8a1717ae",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      4
+    ]
+  }
+}

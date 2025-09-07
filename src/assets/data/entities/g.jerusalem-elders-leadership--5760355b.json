@@ -1,0 +1,25 @@
+{
+  "name": "Jerusalem elders (leadership)",
+  "type": "group",
+  "category": "leadership",
+  "references": [
+    "Acts 15:6",
+    "Acts 21:18"
+  ],
+  "aka": [],
+  "id": "g.jerusalem-elders-leadership--5760355b",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      15,
+      21
+    ]
+  }
+}

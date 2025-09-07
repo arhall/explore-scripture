@@ -1,0 +1,19 @@
+{
+  "name": "Dishon",
+  "type": "person",
+  "references": [
+    "Genesis 36:21,30"
+  ],
+  "blurb": "Horite chief, son of Seir; ancestor of Hemdan, Eshban, Ithran, Cheran.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.dishon.gene-36-21-30--f3393a9f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

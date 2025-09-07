@@ -1,0 +1,18 @@
+{
+  "name": "Zadok son of Baana",
+  "type": "person",
+  "references": [
+    "Nehemiah 3:4"
+  ],
+  "blurb": "Individual contributor—faithfulness in a few cubits matters.",
+  "category": "narrative",
+  "id": "p.zadok-son-of-baana--9c0988b0",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      3
+    ]
+  }
+}

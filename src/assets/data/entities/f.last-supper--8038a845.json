@@ -1,0 +1,23 @@
+{
+  "name": "Last Supper",
+  "type": "figure",
+  "category": "meal",
+  "references": [
+    "Mark 14:12–26"
+  ],
+  "aka": [],
+  "id": "f.last-supper--8038a845",
+  "source_book": "Mark",
+  "source_books": [
+    "Mark",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Mark": [
+      14
+    ]
+  }
+}

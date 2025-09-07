@@ -1,0 +1,15 @@
+{
+  "name": "Gideon",
+  "type": "person",
+  "category": "faith-example",
+  "references": [
+    "Heb 11:32"
+  ],
+  "aka": [],
+  "id": "p.gideon--29c940b6",
+  "book_references": {
+    "Hebrews": [
+      11
+    ]
+  }
+}

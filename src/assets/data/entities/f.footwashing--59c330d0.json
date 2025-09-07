@@ -1,0 +1,24 @@
+{
+  "name": "Footwashing",
+  "type": "figure",
+  "category": "enacted-parable",
+  "references": [
+    "John 13:1–17"
+  ],
+  "blurb": "Model of humble love and cleansing for the community.",
+  "aka": [],
+  "id": "f.footwashing--59c330d0",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      13
+    ]
+  }
+}

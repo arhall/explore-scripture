@@ -1,0 +1,22 @@
+{
+  "name": "Revering parents and Sabbaths",
+  "type": "entity",
+  "references": [
+    "Leviticus 19:3"
+  ],
+  "blurb": "Household piety pairs with sacred time—holiness starts at home.",
+  "category": "ethics",
+  "cross_references": [
+    "Matthew 22:39",
+    "Romans 13:9"
+  ],
+  "id": "e.revering-parents-and-sabbaths--1aacf019",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Leviticus": [
+      19
+    ]
+  }
+}

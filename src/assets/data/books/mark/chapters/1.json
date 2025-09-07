@@ -1,0 +1,77 @@
+{
+  "book": "Mark",
+  "chapter": 1,
+  "entity_count": 20,
+  "entities": [
+    {
+      "id": "t.kingdom-of-god--e6ae8d7f",
+      "name": "Kingdom of God",
+      "type": "title",
+      "role": "kingdom",
+      "refs_count": 16
+    },
+    {
+      "id": "f.unclean-spirit-in-synagogue--4e28abac",
+      "name": "Unclean spirit in synagogue",
+      "type": "figure",
+      "role": "exorcism",
+      "refs_count": 1
+    },
+    {
+      "id": "f.messianic-secret--1a166c9e",
+      "name": "Messianic Secret",
+      "type": "figure",
+      "role": "motif",
+      "refs_count": 3
+    },
+    {
+      "id": "e.galilee--b36c23b8",
+      "name": "Galilee",
+      "type": "entity",
+      "role": "region",
+      "refs_count": 5
+    },
+    {
+      "id": "p.peter-s-mother-in-law--dc99a53f",
+      "name": "Peter’s mother-in-law",
+      "type": "person",
+      "role": "healed",
+      "refs_count": 2
+    },
+    {
+      "id": "e.sea-of-galilee--fbfbf0a2",
+      "name": "Sea of Galilee",
+      "type": "entity",
+      "role": "body-of-water",
+      "refs_count": 10
+    },
+    {
+      "id": "f.exorcisms-in-mark-index--57803780",
+      "name": "Exorcisms in Mark (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 3
+    },
+    {
+      "id": "p.john-son-of-zebedee--b337fe0e",
+      "name": "John son of Zebedee",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 6
+    },
+    {
+      "id": "p.andrew--95723853",
+      "name": "Andrew",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 3
+    },
+    {
+      "id": "t.son-of-god--960b6889",
+      "name": "Son of God",
+      "type": "title",
+      "role": "christological-title",
+      "refs_count": 5
+    }
+  ]
+}

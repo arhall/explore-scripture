@@ -1,0 +1,23 @@
+{
+  "name": "Sychar (Jacob’s Well)",
+  "type": "entity",
+  "category": "town",
+  "references": [
+    "John 4:5–6"
+  ],
+  "aka": [],
+  "id": "e.sychar-jacob-s-well--35e2f2bf",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      4
+    ]
+  }
+}

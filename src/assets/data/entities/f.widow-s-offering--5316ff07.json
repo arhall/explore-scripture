@@ -1,0 +1,31 @@
+{
+  "name": "Widow’s offering",
+  "type": "figure",
+  "category": "teaching",
+  "references": [
+    "Mark 12:41–44",
+    "Luke 21:1–4"
+  ],
+  "aka": [],
+  "id": "f.widow-s-offering--5316ff07",
+  "source_book": "Mark",
+  "source_books": [
+    "Mark",
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "synoptic_parallels": [
+    "Mark 12:41–44"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Mark": [
+      12
+    ],
+    "Luke": [
+      21
+    ]
+  }
+}

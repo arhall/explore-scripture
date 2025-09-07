@@ -1,0 +1,14 @@
+{
+  "book": "1 Samuel",
+  "chapter": 13,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "e.philistine-garrison-at-michmash--d3be83a3",
+      "name": "Philistine garrison at Michmash",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    }
+  ]
+}

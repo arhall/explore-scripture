@@ -1,0 +1,22 @@
+{
+  "name": "Mother of Rufus",
+  "type": "person",
+  "category": "mother",
+  "references": [
+    "Rom 16:13"
+  ],
+  "note": "Also a mother to Paul.",
+  "aka": [],
+  "id": "p.mother-of-rufus--cf8ccee1",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      16
+    ]
+  }
+}

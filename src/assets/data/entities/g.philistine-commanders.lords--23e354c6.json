@@ -1,0 +1,18 @@
+{
+  "name": "Philistine commanders (lords)",
+  "type": "group",
+  "references": [
+    "1 Samuel 29"
+  ],
+  "blurb": "Send David home from Aphek—enemy suspicion becomes divine protection.",
+  "category": "narrative",
+  "id": "g.philistine-commanders.lords--23e354c6",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      29
+    ]
+  }
+}

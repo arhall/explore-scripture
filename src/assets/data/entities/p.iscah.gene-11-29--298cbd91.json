@@ -1,0 +1,24 @@
+{
+  "name": "Iscah",
+  "type": "person",
+  "references": [
+    "Genesis 11:29"
+  ],
+  "blurb": "Daughter of Haran named alongside Milcah; remembered within the Terahite family tree.",
+  "relations": {
+    "parents": [
+      "Haran"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.iscah.gene-11-29--298cbd91",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      11
+    ]
+  }
+}

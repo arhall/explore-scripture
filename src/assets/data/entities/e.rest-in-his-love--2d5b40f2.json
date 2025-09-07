@@ -1,0 +1,18 @@
+{
+  "id": "e.rest-in-his-love--2d5b40f2",
+  "name": "Rest in his love",
+  "type": "entity",
+  "references": [
+    "Zeph 3:17"
+  ],
+  "category": "pastoral-theology",
+  "blurb": "God quiets you with his love—healing of fear and shame.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zephaniah": [
+      3
+    ]
+  }
+}

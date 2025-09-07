@@ -1,0 +1,77 @@
+{
+  "book": "1 Peter",
+  "chapter": 3,
+  "entity_count": 27,
+  "entities": [
+    {
+      "id": "p.noah.gene-5-32--6b1a74fb",
+      "name": "Noah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 5
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "p.sarah--424e36f5",
+      "name": "Sarah",
+      "type": "person",
+      "role": "allegory",
+      "refs_count": 3
+    },
+    {
+      "id": "p.abraham--197f2a67",
+      "name": "Abraham",
+      "type": "person",
+      "role": "patriarch",
+      "refs_count": 6
+    },
+    {
+      "id": "f.imperishable-beauty-of-a-gentle-and-quiet-spirit--6bee7062",
+      "name": "imperishable beauty of a gentle and quiet spirit",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1
+    },
+    {
+      "id": "g.eight-persons--7126fd49",
+      "name": "eight persons",
+      "type": "group",
+      "role": "ark-crew",
+      "refs_count": 1
+    },
+    {
+      "id": "t.defense-apologia--adb51396",
+      "name": "Defense (apologia)",
+      "type": "title",
+      "role": "apologetics",
+      "refs_count": 1
+    },
+    {
+      "id": "f.bless-do-not-repay-evil--83d8b4db",
+      "name": "bless do not repay evil",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1
+    },
+    {
+      "id": "f.good-conscience--cb1adf1d",
+      "name": "good conscience",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.textual-note-3-19-spirits-in-prison--d16dd315",
+      "name": "Textual note: 3:19 spirits in prison",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1
+    }
+  ]
+}

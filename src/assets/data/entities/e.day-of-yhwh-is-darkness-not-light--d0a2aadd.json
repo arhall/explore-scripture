@@ -1,0 +1,18 @@
+{
+  "name": "Day of YHWH is darkness, not light",
+  "type": "entity",
+  "references": [
+    "Amos 5:18–20"
+  ],
+  "blurb": "Religious triumphalism shattered—the Day exposes and reverses false hopes.",
+  "category": "day-of-yhwh",
+  "id": "e.day-of-yhwh-is-darkness-not-light--d0a2aadd",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Amos": [
+      5
+    ]
+  }
+}

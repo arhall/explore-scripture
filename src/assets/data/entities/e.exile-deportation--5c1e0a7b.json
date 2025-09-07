@@ -1,0 +1,19 @@
+{
+  "id": "e.exile-deportation--5c1e0a7b",
+  "name": "Exile/Deportation",
+  "type": "entity",
+  "references": [
+    "Nah 3:10"
+  ],
+  "category": "imperial-policy",
+  "aka": [],
+  "blurb": "Nineveh’s tool becomes its fate; the city’s inhabitants are carried off, infants dashed—grim mirror justice.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      3
+    ]
+  }
+}

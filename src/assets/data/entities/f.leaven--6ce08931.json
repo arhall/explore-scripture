@@ -1,0 +1,24 @@
+{
+  "name": "Leaven",
+  "type": "figure",
+  "category": "parable",
+  "references": [
+    "Matt 13:33"
+  ],
+  "blurb": "Hidden permeation—quiet but total transformation.",
+  "aka": [],
+  "id": "f.leaven--6ce08931",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      13
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "I AM: Light of the World",
+  "type": "title",
+  "category": "i-am",
+  "references": [
+    "John 8:12",
+    "John 9:5"
+  ],
+  "greek_terms": [
+    {
+      "term": "ἐγώ εἰμι",
+      "gloss": "I am"
+    }
+  ],
+  "aka": [],
+  "id": "t.i-am-light-of-the-world--bf6dc86a",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      8,
+      9
+    ]
+  }
+}

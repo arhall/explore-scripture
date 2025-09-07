@@ -1,0 +1,18 @@
+{
+  "name": "Hegai (custodian of the women)",
+  "type": "person",
+  "references": [
+    "Esther 2:3,8,15"
+  ],
+  "blurb": "Eunuch who oversees Esther’s preparations; favors her with counsel and cosmetics—quiet providence in ordinary help.",
+  "category": "narrative",
+  "id": "p.hegai.custodian-of-the-women--d19615b3",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      2
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "g.balak-and-balaam--a7d309e1",
+  "name": "Balak and Balaam",
+  "type": "group",
+  "references": [
+    "Micah 6:5"
+  ],
+  "category": "allusion",
+  "blurb": "Narrative of attempted cursing turned to blessing; remember to know the LORD’s righteous acts.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      6
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Temple servants (Nethinim) + sons of Solomon’s servants (combined)",
+  "type": "group",
+  "references": [
+    "Ezra 2:43–58"
+  ],
+  "blurb": "All temple-servant families (Nethinim) together with the sons of Solomon’s servants numbered 392. Their humble service made public worship sustainable.",
+  "category": "worship",
+  "count": 392,
+  "count_note": "Combined total per Ezra 2:58",
+  "id": "g.temple-servants-sons-of-solomons-servants.nethinim--8013ffc3",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      2
+    ]
+  }
+}

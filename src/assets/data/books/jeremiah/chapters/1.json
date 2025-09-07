@@ -1,0 +1,56 @@
+{
+  "book": "Jeremiah",
+  "chapter": 1,
+  "entity_count": 7,
+  "entities": [
+    {
+      "id": "p.jeremiah-son-of-hilkiah--c7ca71f1",
+      "name": "Jeremiah son of Hilkiah",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1
+    },
+    {
+      "id": "p.hilkiah.priest-of-anathoth-father-of-jeremiah--9d9df175",
+      "name": "Hilkiah (priest of Anathoth, father of Jeremiah)",
+      "type": "person",
+      "role": "priest",
+      "refs_count": 1
+    },
+    {
+      "id": "p.josiah-king-of-judah--fb8f42a7",
+      "name": "Josiah king of Judah",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1
+    },
+    {
+      "id": "e.almond-tree-branch-vision--f0cb6a1a",
+      "name": "Almond tree branch vision",
+      "type": "entity",
+      "role": "call",
+      "refs_count": 1
+    },
+    {
+      "id": "e.boiling-pot-from-the-north--70519d3a",
+      "name": "Boiling pot from the north",
+      "type": "entity",
+      "role": "call",
+      "refs_count": 1
+    },
+    {
+      "id": "f.jeremiah-as-iron-pillar-and-bronze-wall--b4457e33",
+      "name": "Jeremiah as iron pillar and bronze wall",
+      "type": "figure",
+      "role": "prophet",
+      "refs_count": 1
+    },
+    {
+      "id": "e.anathoth.priestly-town--efab0470",
+      "name": "Anathoth (priestly town)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    }
+  ]
+}

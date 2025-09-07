@@ -1,0 +1,21 @@
+{
+  "name": "Alvan (Alian)",
+  "type": "person",
+  "references": [
+    "Genesis 36:23"
+  ],
+  "blurb": "Son of Shobal; Horite descendant with variant spellings in parallel lists.",
+  "category": "genealogy",
+  "cross_references": [
+    "1 Chronicles 1:40"
+  ],
+  "id": "p.alvan.alian.gene-36-23--78a3be3e",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

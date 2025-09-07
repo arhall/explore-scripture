@@ -1,0 +1,48 @@
+{
+  "name": "Triumphal Entry",
+  "type": "figure",
+  "category": "event",
+  "references": [
+    "Matt 21:1–11",
+    "Mark 11:1–11",
+    "Luke 19:28–40"
+  ],
+  "blurb": "Zechariah 9:9 enacted—humble king acclaimed by pilgrim crowds.",
+  "aka": [],
+  "id": "f.triumphal-entry--5fe5dc82",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Mark",
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Zech 9:9",
+      "type": "formula-quotation"
+    },
+    {
+      "src": "Zech 9:9",
+      "type": "echo"
+    },
+    {
+      "src": "Ps 118:26",
+      "type": "quotation"
+    }
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      21
+    ],
+    "Mark": [
+      11
+    ],
+    "Luke": [
+      19
+    ]
+  }
+}

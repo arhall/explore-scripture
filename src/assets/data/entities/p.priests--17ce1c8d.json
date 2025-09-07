@@ -1,0 +1,30 @@
+{
+  "id": "p.priests--17ce1c8d",
+  "name": "Priests",
+  "type": "person",
+  "references": [
+    "Zeph 1:4",
+    "Hag 2:11-13",
+    "Mal 1:6-14",
+    "Mal 2:1-9",
+    "Mal 3:3-4"
+  ],
+  "category": "cultic-staff",
+  "blurb": "Priestly establishment implicated in syncretism and compromise.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zephaniah": [
+      1
+    ],
+    "Haggai": [
+      2
+    ],
+    "Malachi": [
+      1,
+      2,
+      3
+    ]
+  }
+}

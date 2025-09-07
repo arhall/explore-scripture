@@ -1,0 +1,18 @@
+{
+  "name": "Vineyard imagery (own vineyard vs Solomon’s)",
+  "type": "entity",
+  "references": [
+    "Song 1:6; 2:15; 8:11–12"
+  ],
+  "blurb": "Her ‘own vineyard’ (self/body/agency) contrasts with Solomon’s commercial vineyard with keepers—love resists commodification while inviting mutual enjoyment.",
+  "category": "motif",
+  "id": "e.vineyard-imagery.own-vineyard-vs-solomons--175cdbf9",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Song of Songs": [
+      1
+    ]
+  }
+}

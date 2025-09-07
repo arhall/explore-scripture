@@ -1,0 +1,18 @@
+{
+  "name": "Inner court chambers",
+  "type": "entity",
+  "references": [
+    "Ezekiel 40:44–46"
+  ],
+  "blurb": "Priestly chambers with song and sacrifice—Zadokite access codified.",
+  "category": "temple",
+  "id": "e.inner-court-chambers--7d3ed7dc",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      40
+    ]
+  }
+}

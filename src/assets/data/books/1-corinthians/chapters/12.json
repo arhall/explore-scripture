@@ -1,0 +1,77 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 12,
+  "entity_count": 18,
+  "entities": [
+    {
+      "id": "f.gift-prophets--17c8825f",
+      "name": "Gift: Prophets",
+      "type": "figure",
+      "role": "gift",
+      "refs_count": 2
+    },
+    {
+      "id": "f.one-body-many-members--eb1ae1e3",
+      "name": "One body, many members",
+      "type": "figure",
+      "role": "body-metaphor",
+      "refs_count": 1
+    },
+    {
+      "id": "f.gift-miracles--28f07ec3",
+      "name": "Gift: Miracles",
+      "type": "figure",
+      "role": "gift",
+      "refs_count": 2
+    },
+    {
+      "id": "f.gift-healings--f5f853ad",
+      "name": "Gift: Healings",
+      "type": "figure",
+      "role": "gift",
+      "refs_count": 2
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.members-honored-weaker-esteemed--3c48800e",
+      "name": "Members honored, weaker esteemed",
+      "type": "figure",
+      "role": "honor",
+      "refs_count": 1
+    },
+    {
+      "id": "f.gift-apostles--8c1769b8",
+      "name": "Gift: Apostles",
+      "type": "figure",
+      "role": "gift",
+      "refs_count": 2
+    },
+    {
+      "id": "f.gift-teachers--2a115c18",
+      "name": "Gift: Teachers",
+      "type": "figure",
+      "role": "gift",
+      "refs_count": 2
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "f.gift-wisdom--bd755ccd",
+      "name": "Gift: Wisdom",
+      "type": "figure",
+      "role": "gift",
+      "refs_count": 2
+    }
+  ]
+}

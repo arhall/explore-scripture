@@ -1,0 +1,18 @@
+{
+  "name": "Water jars and table fellowship in the field",
+  "type": "entity",
+  "references": [
+    "Ruth 2:9,14"
+  ],
+  "blurb": "Boaz extends workplace hospitality—dignity for the foreigner expressed in concrete, ordinary mercies.",
+  "category": "ethics",
+  "id": "e.water-jars-and-table-fellowship-in-the-field--2dd946cb",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ruth": [
+      2
+    ]
+  }
+}

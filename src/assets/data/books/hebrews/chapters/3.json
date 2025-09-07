@@ -1,0 +1,77 @@
+{
+  "book": "Hebrews",
+  "chapter": 3,
+  "entity_count": 12,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "f.today-semeron--9a3441fd",
+      "name": "Today (semeron)",
+      "type": "figure",
+      "role": "urgency",
+      "refs_count": 1
+    },
+    {
+      "id": "t.great-high-priest--14501b6f",
+      "name": "Great High Priest",
+      "type": "title",
+      "role": "priesthood",
+      "refs_count": 1
+    },
+    {
+      "id": "f.we-are-his-house-if-we-hold-fast--39213d3c",
+      "name": "we are his house if we hold fast",
+      "type": "figure",
+      "role": "perseverance",
+      "refs_count": 1
+    },
+    {
+      "id": "f.ot-quotations-allusions-index--e4c0f47d",
+      "name": "OT quotations/allusions index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "t.apostle-of-our-confession--a22d5649",
+      "name": "Apostle (of our confession)",
+      "type": "title",
+      "role": "office",
+      "refs_count": 1
+    },
+    {
+      "id": "g.wilderness-generation--dd929cd6",
+      "name": "Wilderness generation",
+      "type": "group",
+      "role": "example-negative",
+      "refs_count": 1
+    },
+    {
+      "id": "f.deceitfulness-of-sin--9b0660c4",
+      "name": "deceitfulness of sin",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1
+    }
+  ]
+}

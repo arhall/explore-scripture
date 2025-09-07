@@ -1,0 +1,24 @@
+{
+  "id": "f.divine-theophany--ad1d1c3b",
+  "name": "Divine Theophany",
+  "type": "figure",
+  "references": [
+    "Hab 3:3-15"
+  ],
+  "category": "theophany",
+  "cross_references": [
+    "Deut 33:2",
+    "Judg 5",
+    "Ps 18",
+    "Ps 68"
+  ],
+  "blurb": "Processional appearance from Teman/Paran; cosmic upheaval attends the Warrior who goes forth for salvation of his anointed.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      3
+    ]
+  }
+}

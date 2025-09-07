@@ -1,0 +1,29 @@
+{
+  "name": "When I am lifted up…",
+  "type": "figure",
+  "category": "saying",
+  "references": [
+    "John 12:32–34"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Num 21:9",
+      "type": "typology"
+    }
+  ],
+  "aka": [],
+  "id": "f.when-i-am-lifted-up--ee95d1eb",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      12
+    ]
+  }
+}

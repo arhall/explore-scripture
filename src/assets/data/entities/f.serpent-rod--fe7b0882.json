@@ -1,0 +1,21 @@
+{
+  "name": "Serpent-rod (sign)",
+  "type": "figure",
+  "references": [
+    "Exodus 7:9–12"
+  ],
+  "blurb": "Swallows magicians’ rods.",
+  "category": "sign",
+  "cross_references": [
+    "Hebrews 11:28"
+  ],
+  "id": "f.serpent-rod--fe7b0882",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      7
+    ]
+  }
+}

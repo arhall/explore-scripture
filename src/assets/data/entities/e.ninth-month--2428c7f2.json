@@ -1,0 +1,19 @@
+{
+  "id": "e.ninth-month--2428c7f2",
+  "name": "Ninth month",
+  "type": "entity",
+  "references": [
+    "Hag 2:10",
+    "Hag 2:20"
+  ],
+  "category": "calendar",
+  "blurb": "Timestamp for Oracles #3–#4; hinge for ‘from this day’ blessing.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      2
+    ]
+  }
+}

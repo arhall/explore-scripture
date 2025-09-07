@@ -1,0 +1,17 @@
+{
+  "name": "Nehemiah son of Hacaliah (cupbearer → governor)",
+  "type": "person",
+  "references": [
+    "Nehemiah 1–2; 5:14; 12:26; 13:6"
+  ],
+  "blurb": "Memoir writer whose vocation blends prayer, planning, and political acuity. He leverages proximity to power for covenant repair and refuses personal enrichment.",
+  "relations": {
+    "brother": "Hanani"
+  },
+  "category": "narrative",
+  "id": "p.nehemiah-son-of-hacaliah.cupbearer-governor--1dce6797",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

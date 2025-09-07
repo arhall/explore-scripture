@@ -1,0 +1,21 @@
+{
+  "name": "Lamp / perpetual light",
+  "type": "entity",
+  "references": [
+    "Leviticus 24:1–4"
+  ],
+  "blurb": "Olive oil keeps the lamp burning—unceasing witness to God’s presence.",
+  "category": "ritual",
+  "cross_references": [
+    "Exodus 25–30"
+  ],
+  "id": "e.lamp-perpetual-light--d54fbf3c",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Leviticus": [
+      24
+    ]
+  }
+}

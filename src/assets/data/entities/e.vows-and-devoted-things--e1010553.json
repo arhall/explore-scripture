@@ -1,0 +1,21 @@
+{
+  "name": "Vows and devoted things",
+  "type": "entity",
+  "references": [
+    "Leviticus 27"
+  ],
+  "blurb": "Valuations and redemptions that safeguard integrity in promises to God—piety tethered to practicality.",
+  "category": "ritual",
+  "cross_references": [
+    "Ecclesiastes 5:4–5"
+  ],
+  "id": "e.vows-and-devoted-things--e1010553",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Leviticus": [
+      27
+    ]
+  }
+}

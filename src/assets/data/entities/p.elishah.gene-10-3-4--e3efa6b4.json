@@ -1,0 +1,24 @@
+{
+  "name": "Elishah",
+  "type": "person",
+  "references": [
+    "Genesis 10:3–4"
+  ],
+  "blurb": "Descendant of Javan; part of the Japhethite branch associated with maritime and northern peoples.",
+  "relations": {
+    "parents": [
+      "Javan"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.elishah.gene-10-3-4--e3efa6b4",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

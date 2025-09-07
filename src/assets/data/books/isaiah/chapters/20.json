@@ -1,0 +1,21 @@
+{
+  "book": "Isaiah",
+  "chapter": 20,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "e.isaiahs-naked-sign-act--743cd527",
+      "name": "Isaiah’s naked sign‑act",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1
+    },
+    {
+      "id": "p.sargon-ii-of-assyria--8676b5f2",
+      "name": "Sargon II of Assyria",
+      "type": "person",
+      "role": "emperor",
+      "refs_count": 1
+    }
+  ]
+}

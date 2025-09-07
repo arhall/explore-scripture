@@ -1,0 +1,22 @@
+{
+  "name": "Aquila and Priscilla (house-church)",
+  "type": "group",
+  "category": "house-church",
+  "references": [
+    "1 Cor 16:19"
+  ],
+  "house_church": true,
+  "aka": [],
+  "id": "g.aquila-and-priscilla-house-church--4ac277ec",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "1 Corinthians": [
+      16
+    ]
+  }
+}

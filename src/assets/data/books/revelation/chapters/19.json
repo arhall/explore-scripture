@@ -1,0 +1,77 @@
+{
+  "book": "Revelation",
+  "chapter": 19,
+  "entity_count": 21,
+  "entities": [
+    {
+      "id": "t.faithful-and-true--7899c7c2",
+      "name": "Faithful and True",
+      "type": "title",
+      "role": "christ-title",
+      "refs_count": 1
+    },
+    {
+      "id": "e.lake-of-fire--50882b56",
+      "name": "Lake of fire",
+      "type": "entity",
+      "role": "judgment-lake",
+      "refs_count": 1
+    },
+    {
+      "id": "t.king-of-kings-and-lord-of-lords--08c60e86",
+      "name": "King of kings and Lord of lords",
+      "type": "title",
+      "role": "christ-title",
+      "refs_count": 1
+    },
+    {
+      "id": "f.rider-on-the-white-horse--faf3f780",
+      "name": "Rider on the white horse",
+      "type": "figure",
+      "role": "christophany",
+      "refs_count": 1
+    },
+    {
+      "id": "t.word-of-god--1c6f6083",
+      "name": "Word of God",
+      "type": "title",
+      "role": "christ-title",
+      "refs_count": 1
+    },
+    {
+      "id": "f.heptad-index--733a558f",
+      "name": "Heptad index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.numeric-symbolism-index--20cda2ea",
+      "name": "Numeric symbolism index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.praise-our-god-all-you-his-servants-you-who-fear-him-small-and-great--e51b31bc",
+      "name": "Praise our God, all you his servants, you who fear him, small and great",
+      "type": "figure",
+      "role": "hymn",
+      "refs_count": 1
+    },
+    {
+      "id": "f.beast-and-false-prophet-captured-thrown-alive-into-the-lake-of-fire--19e89684",
+      "name": "beast and false prophet captured; thrown alive into the Lake of fire",
+      "type": "figure",
+      "role": "judgment",
+      "refs_count": 1
+    },
+    {
+      "id": "f.city-contrast-index-babylon-vs-new-jerusalem--b56140e1",
+      "name": "City contrast index (Babylon vs New Jerusalem)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    }
+  ]
+}

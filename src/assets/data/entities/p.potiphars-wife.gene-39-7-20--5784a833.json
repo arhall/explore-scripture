@@ -1,0 +1,19 @@
+{
+  "name": "Potiphar’s wife",
+  "type": "person",
+  "references": [
+    "Genesis 39:7–20"
+  ],
+  "blurb": "Unnamed noblewoman whose attempted seduction and false accusation propel Joseph’s descent before his rise.",
+  "category": "narrative",
+  "cross_references": [],
+  "id": "p.potiphars-wife.gene-39-7-20--5784a833",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      39
+    ]
+  }
+}

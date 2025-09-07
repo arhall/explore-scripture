@@ -1,0 +1,28 @@
+{
+  "name": "Abihu",
+  "type": "person",
+  "references": [
+    "Exodus 24:1,9; 28:1",
+    "Exodus 6:23; 24:1,9; 28:1",
+    "Leviticus 10:1–2"
+  ],
+  "blurb": "Son of Aaron who participates in the covenant meal; later judged for strange fire.",
+  "category": "narrative",
+  "cross_references": [
+    "Leviticus 10:1–2",
+    "Numbers 3:4"
+  ],
+  "id": "p.abihu--fcf5dac6",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      6,
+      24
+    ],
+    "Leviticus": [
+      10
+    ]
+  }
+}

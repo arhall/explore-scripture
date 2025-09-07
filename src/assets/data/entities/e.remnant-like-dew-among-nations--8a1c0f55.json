@@ -1,0 +1,18 @@
+{
+  "id": "e.remnant-like-dew-among-nations--8a1c0f55",
+  "name": "Remnant like dew among nations",
+  "type": "entity",
+  "references": [
+    "Micah 5:7"
+  ],
+  "category": "remnant",
+  "blurb": "Gentle, heaven-sent refreshment—mission without dependence.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      5
+    ]
+  }
+}

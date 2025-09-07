@@ -1,0 +1,77 @@
+{
+  "book": "Hebrews",
+  "chapter": 7,
+  "entity_count": 11,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.abraham-tithes-to-melchizedek--5ab197aa",
+      "name": "Abraham tithes to Melchizedek",
+      "type": "figure",
+      "role": "priority",
+      "refs_count": 1
+    },
+    {
+      "id": "f.king-of-righteousness-peace--7e3d681e",
+      "name": "king of righteousness & peace",
+      "type": "figure",
+      "role": "etymology",
+      "refs_count": 1
+    },
+    {
+      "id": "f.once-for-all-vs-daily-priests--8f8e5eb3",
+      "name": "once for all vs daily priests",
+      "type": "figure",
+      "role": "contrast",
+      "refs_count": 1
+    },
+    {
+      "id": "t.guarantor-of-a-better-covenant--3831a138",
+      "name": "Guarantor of a better covenant",
+      "type": "title",
+      "role": "covenant",
+      "refs_count": 1
+    },
+    {
+      "id": "e.order-of-melchizedek--50183d2d",
+      "name": "order of Melchizedek",
+      "type": "entity",
+      "role": "order",
+      "refs_count": 1
+    },
+    {
+      "id": "f.ot-quotations-allusions-index--e4c0f47d",
+      "name": "OT quotations/allusions index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.priesthood-change-implies-law-change--b4e13cd3",
+      "name": "priesthood change implies law change",
+      "type": "figure",
+      "role": "legal-logic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.indestructible-life--b2c6ed2e",
+      "name": "indestructible life",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1
+    },
+    {
+      "id": "f.levi-in-abraham--9d8981ca",
+      "name": "Levi in Abraham",
+      "type": "figure",
+      "role": "solidarity",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Jeroboam II (in the Bethel dispute)",
+  "type": "person",
+  "references": [
+    "Amos 7:10–13",
+    "2 Kings 14:25"
+  ],
+  "blurb": "Named by Amaziah in the accusation; the ‘house of Jeroboam’ faces the plumb line.",
+  "category": "king",
+  "id": "p.jeroboam-ii.in-the-bethel-dispute--fc8cf226",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Amos": [
+      7
+    ],
+    "2 Kings": [
+      14
+    ]
+  }
+}

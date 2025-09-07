@@ -1,0 +1,21 @@
+{
+  "name": "Sosthenes (co-sender)",
+  "type": "person",
+  "category": "coworker",
+  "references": [
+    "1 Cor 1:1"
+  ],
+  "aka": [],
+  "id": "p.sosthenes-co-sender--34452041",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "1 Corinthians": [
+      1
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "book": "Jeremiah",
+  "chapter": 11,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "g.priests-and-men-of-anathoth--77cbe271",
+      "name": "Priests and men of Anathoth",
+      "type": "group",
+      "role": "hometown",
+      "refs_count": 1
+    },
+    {
+      "id": "e.confession-i-plotted-against-yet-trusted--ec6a896c",
+      "name": "Confession I: Plotted against, yet trusted",
+      "type": "entity",
+      "role": "lament",
+      "refs_count": 1
+    }
+  ]
+}

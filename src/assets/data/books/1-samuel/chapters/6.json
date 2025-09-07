@@ -1,0 +1,28 @@
+{
+  "book": "1 Samuel",
+  "chapter": 6,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "e.ark-of-the-covenant.captured-and-returned--0c8b6ef5",
+      "name": "Ark of the Covenant (captured and returned)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    },
+    {
+      "id": "e.golden-tumors-and-mice.guilt-offerings--73892b3d",
+      "name": "Golden tumors and mice (guilt offerings)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    },
+    {
+      "id": "g.beth-shemesh-men-struck--a9ccd005",
+      "name": "Beth-shemesh men struck",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Confession V: You deceived me, O LORD",
+  "type": "entity",
+  "references": [
+    "Jeremiah 20:7–18"
+  ],
+  "blurb": "The fiercest lament swings from compulsion to curse of birth; yet a fire in his bones will not let him keep silent.",
+  "category": "lament",
+  "id": "e.confession-v-you-deceived-me-o-lord--84603d3b",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      20
+    ]
+  }
+}

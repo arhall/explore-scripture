@@ -1,0 +1,23 @@
+{
+  "name": "Gentiles (the uncircumcision)",
+  "type": "group",
+  "category": "people",
+  "references": [
+    "Eph 2:11–15"
+  ],
+  "aka": [
+    "the uncircumcision"
+  ],
+  "id": "g.gentiles-the-uncircumcision--b84df77e",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      2
+    ]
+  }
+}

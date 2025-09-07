@@ -1,0 +1,27 @@
+{
+  "name": "Fig tree lesson (watchfulness)",
+  "type": "figure",
+  "category": "teaching",
+  "references": [
+    "Mark 13:28–31"
+  ],
+  "synoptic_parallels": [
+    "Matt 24:32–35",
+    "Luke 21:29–33"
+  ],
+  "aka": [],
+  "id": "f.fig-tree-lesson-watchfulness--42e121f0",
+  "source_book": "Mark",
+  "source_books": [
+    "Mark",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Mark": [
+      13
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Fullness (Pleroma)",
+  "type": "figure",
+  "category": "christology",
+  "references": [
+    "Col 1:19",
+    "Col 2:9"
+  ],
+  "aka": [],
+  "id": "f.fullness-pleroma--31077356",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      1,
+      2
+    ]
+  }
+}

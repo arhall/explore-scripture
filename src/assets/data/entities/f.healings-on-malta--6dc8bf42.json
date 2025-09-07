@@ -1,0 +1,23 @@
+{
+  "name": "Healings on Malta",
+  "type": "figure",
+  "category": "miracle",
+  "references": [
+    "Acts 28:8–9"
+  ],
+  "aka": [],
+  "id": "f.healings-on-malta--6dc8bf42",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      28
+    ]
+  }
+}

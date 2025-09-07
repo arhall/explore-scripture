@@ -1,0 +1,21 @@
+{
+  "name": "Put away: Lying",
+  "type": "figure",
+  "category": "vice",
+  "references": [
+    "Col 3:8"
+  ],
+  "aka": [],
+  "id": "f.put-away-lying--7ca9c453",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      3
+    ]
+  }
+}

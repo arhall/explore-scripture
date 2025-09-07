@@ -1,0 +1,14 @@
+{
+  "book": "Isaiah",
+  "chapter": 53,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "e.comfort-new-exodus-program--5bc24efa",
+      "name": "Comfort–New Exodus program",
+      "type": "entity",
+      "role": "gospel",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "e.foundation-built-on-blood--b90ae941",
+  "name": "Foundation built on blood",
+  "type": "entity",
+  "references": [
+    "Hab 2:12"
+  ],
+  "category": "urban-sin",
+  "blurb": "City-making through oppression; destined for fire.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      2
+    ]
+  }
+}

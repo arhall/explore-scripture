@@ -1,0 +1,18 @@
+{
+  "id": "g.priestly-cohort--e618612a",
+  "name": "Priestly cohort",
+  "type": "group",
+  "references": [
+    "Hag 2:11-14"
+  ],
+  "category": "cultic-group",
+  "blurb": "Priests tasked with halakhic discernment; their answers structure the defilement diagnosis.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      2
+    ]
+  }
+}

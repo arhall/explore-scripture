@@ -1,0 +1,18 @@
+{
+  "name": "Banquet on the mountain",
+  "type": "entity",
+  "references": [
+    "Isaiah 25:6–9"
+  ],
+  "blurb": "A feast of rich food and well‑aged wine; God wipes tears and removes reproach—joy becomes public policy of the kingdom.",
+  "category": "hope",
+  "id": "e.banquet-on-the-mountain--c8ef3ea5",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Isaiah": [
+      25
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Census of the first return (book of genealogy found)",
+  "type": "entity",
+  "references": [
+    "Nehemiah 7:5–73"
+  ],
+  "blurb": "Nehemiah reproduces the earlier register (cf. Ezra 2) with minor numerical variations. For each family/group, this project reuses the **same IDs** created in Ezra to maintain cross-book integrity.",
+  "category": "record",
+  "cross_references": [
+    "Ezra 2"
+  ],
+  "id": "e.census-of-the-first-return.book-of-genealogy-found--453dfbbe",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      7
+    ]
+  }
+}

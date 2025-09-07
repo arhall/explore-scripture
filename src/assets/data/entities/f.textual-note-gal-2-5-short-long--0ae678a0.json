@@ -1,0 +1,22 @@
+{
+  "name": "Textual note: Gal 2:5 short/long",
+  "type": "figure",
+  "category": "textual-notes",
+  "references": [
+    "Gal 2:5"
+  ],
+  "note": "Phrase ‘even for an hour’ present in later witnesses; omitted in earliest.",
+  "aka": [],
+  "id": "f.textual-note-gal-2-5-short-long--0ae678a0",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Galatians": [
+      2
+    ]
+  }
+}

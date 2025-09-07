@@ -1,0 +1,18 @@
+{
+  "id": "e.love-hesed-covenant-loyalty--e9710a64",
+  "name": "Love hesed (covenant loyalty)",
+  "type": "entity",
+  "references": [
+    "Micah 6:8"
+  ],
+  "category": "ethic",
+  "blurb": "Steadfast love as social glue; mercy beyond reciprocity.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      6
+    ]
+  }
+}

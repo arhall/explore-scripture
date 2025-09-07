@@ -1,0 +1,19 @@
+{
+  "id": "e.priestly-lineage-of-zechariah-iddo-family--311bc34f",
+  "name": "Priestly lineage of Zechariah (Iddo family)",
+  "type": "entity",
+  "references": [
+    "Neh 12:4",
+    "Neh 12:16"
+  ],
+  "category": "genealogy",
+  "blurb": "Priestly roots frame temple-centric visions and concerns.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      12
+    ]
+  }
+}

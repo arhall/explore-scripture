@@ -1,0 +1,18 @@
+{
+  "name": "Day of YHWH (near and great)",
+  "type": "entity",
+  "references": [
+    "Joel 1:15; 2:1,11,31; 3:14"
+  ],
+  "blurb": "Event and horizon: a crisis that unmasks idols and crowns God’s kingship over all nations.",
+  "category": "day-of-yhwh",
+  "id": "e.day-of-yhwh.near-and-great--78ca5d45",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      1
+    ]
+  }
+}

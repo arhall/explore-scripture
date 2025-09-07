@@ -1,0 +1,70 @@
+{
+  "book": "1 Timothy",
+  "chapter": 4,
+  "entity_count": 9,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "f.practice-these-things-immerse-in-them--296049b6",
+      "name": "practice these things; immerse in them",
+      "type": "figure",
+      "role": "discipline",
+      "refs_count": 1
+    },
+    {
+      "id": "g.ascetic-forbidders-marriage-foods--296b2dd5",
+      "name": "ascetic forbidders (marriage/foods)",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1
+    },
+    {
+      "id": "f.do-not-neglect-the-gift--e41b57e4",
+      "name": "do not neglect the gift",
+      "type": "figure",
+      "role": "charism",
+      "refs_count": 1
+    },
+    {
+      "id": "f.deceitful-spirits-and-teachings-of-demons--ec78ba2b",
+      "name": "deceitful spirits and teachings of demons",
+      "type": "figure",
+      "role": "opponents",
+      "refs_count": 1
+    },
+    {
+      "id": "e.devote-yourself-to-the-public-reading-exhortation-teaching--2196828a",
+      "name": "devote yourself to the public reading, exhortation, teaching",
+      "type": "practice",
+      "role": "ministry",
+      "refs_count": 1
+    },
+    {
+      "id": "f.set-the-believers-an-example--1d5efc9c",
+      "name": "set the believers an example",
+      "type": "figure",
+      "role": "leadership",
+      "refs_count": 1
+    },
+    {
+      "id": "f.everything-created-by-god-is-good--d4518aa3",
+      "name": "everything created by God is good",
+      "type": "figure",
+      "role": "creation",
+      "refs_count": 1
+    }
+  ]
+}

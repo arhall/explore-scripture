@@ -1,0 +1,77 @@
+{
+  "book": "Ephesians",
+  "chapter": 1,
+  "entity_count": 28,
+  "entities": [
+    {
+      "id": "f.textual-note-1-1-in-ephesus--897c9f4e",
+      "name": "Textual note: 1:1 ‘in Ephesus’",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1
+    },
+    {
+      "id": "f.forgiveness-of-trespasses--061bbc30",
+      "name": "Forgiveness of trespasses",
+      "type": "figure",
+      "role": "forgiveness",
+      "refs_count": 1
+    },
+    {
+      "id": "f.election-in-christ--02187a6b",
+      "name": "Election in Christ",
+      "type": "figure",
+      "role": "election",
+      "refs_count": 1
+    },
+    {
+      "id": "f.exaltation-above-every-rule-and-authority--02911d90",
+      "name": "Exaltation above every rule and authority",
+      "type": "figure",
+      "role": "exaltation",
+      "refs_count": 1
+    },
+    {
+      "id": "f.riches-of-grace-lavished--4b8d7133",
+      "name": "Riches of grace lavished",
+      "type": "figure",
+      "role": "grace",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.eyes-of-your-heart-enlightened--4df408e6",
+      "name": "Eyes of your heart enlightened",
+      "type": "figure",
+      "role": "illumination",
+      "refs_count": 1
+    },
+    {
+      "id": "g.saints--a0084a21",
+      "name": "saints",
+      "type": "group",
+      "role": "addressees",
+      "refs_count": 1
+    },
+    {
+      "id": "f.prayer-for-wisdom-and-revelation--a4db7dd2",
+      "name": "Prayer for wisdom and revelation",
+      "type": "figure",
+      "role": "prayer",
+      "refs_count": 1
+    },
+    {
+      "id": "f.head-over-all-to-the-church--67dd9a2b",
+      "name": "Head over all to the church",
+      "type": "figure",
+      "role": "headship",
+      "refs_count": 1
+    }
+  ]
+}

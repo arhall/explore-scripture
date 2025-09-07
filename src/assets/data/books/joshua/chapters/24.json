@@ -1,0 +1,35 @@
+{
+  "book": "Joshua",
+  "chapter": 24,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "e.covenant-renewal-at-shechem-and-the-great-stone-witness--3f899b05",
+      "name": "Covenant renewal at Shechem and the great stone witness",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    },
+    {
+      "id": "e.bones-of-joseph-buried-at-shechem--0b942c70",
+      "name": "Bones of Joseph buried at Shechem",
+      "type": "entity",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.death-of-joshua.age-110--52107512",
+      "name": "Death of Joshua (age 110)",
+      "type": "entity",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.death-of-eleazar-son-of-aaron--8b5f91a1",
+      "name": "Death of Eleazar son of Aaron",
+      "type": "entity",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

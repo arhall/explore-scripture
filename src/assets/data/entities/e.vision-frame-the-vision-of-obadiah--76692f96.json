@@ -1,0 +1,18 @@
+{
+  "name": "Vision frame: ‘The vision of Obadiah’",
+  "type": "entity",
+  "references": [
+    "Obadiah 1:1"
+  ],
+  "blurb": "Prophetic genre marker; the word comes as sight—insight into the moral architecture of history.",
+  "category": "literary",
+  "id": "e.vision-frame-the-vision-of-obadiah--76692f96",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Obadiah": [
+      1
+    ]
+  }
+}

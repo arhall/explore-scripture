@@ -1,0 +1,19 @@
+{
+  "name": "Nepheg",
+  "type": "person",
+  "references": [
+    "Exodus 6:21"
+  ],
+  "blurb": "Son of Izhar.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.nepheg--f6424ac9",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      6
+    ]
+  }
+}

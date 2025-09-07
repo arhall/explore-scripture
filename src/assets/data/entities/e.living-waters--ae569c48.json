@@ -1,0 +1,18 @@
+{
+  "id": "e.living-waters--ae569c48",
+  "name": "Living waters",
+  "type": "entity",
+  "references": [
+    "Zech 14:8"
+  ],
+  "category": "river",
+  "blurb": "Streams flow summer and winter; life proceeds from the city.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      14
+    ]
+  }
+}

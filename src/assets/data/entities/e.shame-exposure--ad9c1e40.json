@@ -1,0 +1,22 @@
+{
+  "id": "e.shame-exposure--ad9c1e40",
+  "name": "Shame/Exposure motif",
+  "type": "entity",
+  "references": [
+    "Nah 3:5–7"
+  ],
+  "category": "judgment-imagery",
+  "aka": [
+    "Exposure",
+    "Filth-casting"
+  ],
+  "blurb": "Honor-shame reversal: the tyrant is publicly humiliated; no healer, no comforter remains.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      3
+    ]
+  }
+}

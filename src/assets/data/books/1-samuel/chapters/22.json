@@ -1,0 +1,49 @@
+{
+  "book": "1 Samuel",
+  "chapter": 22,
+  "entity_count": 6,
+  "entities": [
+    {
+      "id": "p.ahimelech-the-priest.of-nob--6251ad9e",
+      "name": "Ahimelech the priest (of Nob)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.ahitub.father-of-ahimelech--5e805736",
+      "name": "Ahitub (father of Ahimelech)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.doeg-the-edomite--1487d86a",
+      "name": "Doeg the Edomite",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.abiathar-son-of-ahimelech--2f247c9a",
+      "name": "Abiathar son of Ahimelech",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.gad-the-prophet--4067c469",
+      "name": "Gad the prophet",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.cave-of-adullam-band--66df920c",
+      "name": "Cave of Adullam band",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

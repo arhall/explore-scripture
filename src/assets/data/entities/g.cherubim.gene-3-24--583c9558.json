@@ -1,0 +1,23 @@
+{
+  "name": "Cherubim",
+  "type": "group",
+  "references": [
+    "Genesis 3:24"
+  ],
+  "blurb": "Heavenly guardians stationed at Eden’s eastern gate with a flaming sword. They mark that re-entry to God’s presence is barred except by His provision, foreshadowing later tabernacle/temple symbolism.",
+  "category": "narrative",
+  "cross_references": [
+    "Exodus 25:18–22",
+    "1 Kings 6:23–28",
+    "Ezekiel 10"
+  ],
+  "id": "g.cherubim.gene-3-24--583c9558",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      3
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Sword sharpened and polished",
+  "type": "entity",
+  "references": [
+    "Ezekiel 21:9–17"
+  ],
+  "blurb": "A flashing sword dances in prophetic hands—judgment is imminent and indiscriminate among the wicked.",
+  "category": "sign",
+  "id": "e.sword-sharpened-and-polished--bb98f183",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      21
+    ]
+  }
+}

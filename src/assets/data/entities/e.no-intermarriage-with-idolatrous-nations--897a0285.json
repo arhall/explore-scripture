@@ -1,0 +1,18 @@
+{
+  "name": "No intermarriage with idolatrous nations",
+  "type": "entity",
+  "references": [
+    "Deuteronomy 7:3–4"
+  ],
+  "blurb": "Marriage binds worship—guard the heart of the household from apostasy.",
+  "category": "ethics",
+  "id": "e.no-intermarriage-with-idolatrous-nations--897a0285",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Deuteronomy": [
+      7
+    ]
+  }
+}

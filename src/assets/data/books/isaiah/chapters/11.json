@@ -1,0 +1,28 @@
+{
+  "book": "Isaiah",
+  "chapter": 11,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "f.branch-shoot-from-the-stump-of-jesse--fcedfba5",
+      "name": "Branch / Shoot from the stump of Jesse",
+      "type": "figure",
+      "role": "messianic",
+      "refs_count": 1
+    },
+    {
+      "id": "e.spirit-of-the-lord-holy-spirit--b36a77db",
+      "name": "Spirit of the LORD / Holy Spirit",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1
+    },
+    {
+      "id": "e.highway-motif.way-of-holiness-new-exodus--479428e2",
+      "name": "Highway motif (Way of Holiness / New Exodus)",
+      "type": "entity",
+      "role": "motif",
+      "refs_count": 1
+    }
+  ]
+}

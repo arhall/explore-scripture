@@ -1,0 +1,28 @@
+{
+  "book": "Luke",
+  "chapter": 13,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "p.woman-bent-over-sabbath-healing--bb4cfb04",
+      "name": "Woman bent over (Sabbath healing)",
+      "type": "person",
+      "role": "healed",
+      "refs_count": 1
+    },
+    {
+      "id": "f.narrow-gate--244baf7c",
+      "name": "Narrow Gate",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1
+    },
+    {
+      "id": "f.repent-or-perish-siloam--534cf515",
+      "name": "Repent or perish (Siloam)",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "g.prophets-who-cry-peace-when-fed--c1a97230",
+  "name": "Prophets who cry ‘Peace’ when fed",
+  "type": "group",
+  "references": [
+    "Micah 3:5"
+  ],
+  "category": "false-prophets",
+  "blurb": "Stomachs steer sermons; oracles become meal tickets.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      3
+    ]
+  }
+}

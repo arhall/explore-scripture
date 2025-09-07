@@ -1,0 +1,18 @@
+{
+  "id": "e.covenant-with-levi-entity--907a0226",
+  "name": "Covenant with Levi (entity)",
+  "type": "entity",
+  "references": [
+    "Mal 2:4-5"
+  ],
+  "category": "covenant",
+  "blurb": "Formal bond characterized by life, peace, fear, and truthful instruction.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      2
+    ]
+  }
+}

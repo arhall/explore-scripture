@@ -1,0 +1,22 @@
+{
+  "name": "Titus and the brothers (delegation)",
+  "type": "group",
+  "category": "delegation",
+  "references": [
+    "2 Cor 8:16–24"
+  ],
+  "collection_context": true,
+  "aka": [],
+  "id": "g.titus-and-the-brothers-delegation--b671157b",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "2 Corinthians": [
+      8
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "e.assyrian-captives--71e0c9b3",
+  "name": "Assyrian captives",
+  "type": "entity",
+  "references": [
+    "Nah 3:10"
+  ],
+  "category": "reversal",
+  "aka": [],
+  "blurb": "As Nineveh once deported others, so it becomes the captive—lex talionis of history under God.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      3
+    ]
+  }
+}

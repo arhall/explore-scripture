@@ -1,0 +1,23 @@
+{
+  "name": "Escape from Damascus (basket)",
+  "type": "figure",
+  "category": "escape",
+  "references": [
+    "Acts 9:23–25"
+  ],
+  "aka": [],
+  "id": "f.escape-from-damascus-basket--06a9f18b",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      9
+    ]
+  }
+}

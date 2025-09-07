@@ -1,0 +1,19 @@
+{
+  "name": "Mishael",
+  "type": "person",
+  "references": [
+    "Exodus 6:22"
+  ],
+  "blurb": "Son of Uzziel.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.mishael--91a4fb48",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      6
+    ]
+  }
+}

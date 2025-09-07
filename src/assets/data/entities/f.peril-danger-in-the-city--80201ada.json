@@ -1,0 +1,21 @@
+{
+  "name": "Peril: danger in the city",
+  "type": "figure",
+  "category": "peril",
+  "references": [
+    "2 Cor 11:23–29"
+  ],
+  "aka": [],
+  "id": "f.peril-danger-in-the-city--80201ada",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "2 Corinthians": [
+      11
+    ]
+  }
+}

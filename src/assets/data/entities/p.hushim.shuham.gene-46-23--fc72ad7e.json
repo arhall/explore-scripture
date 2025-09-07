@@ -1,0 +1,19 @@
+{
+  "name": "Hushim (Shuham)",
+  "type": "person",
+  "references": [
+    "Genesis 46:23"
+  ],
+  "blurb": "Listed among the descendants who went down to Egypt with Jacob.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.hushim.shuham.gene-46-23--fc72ad7e",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      46
+    ]
+  }
+}

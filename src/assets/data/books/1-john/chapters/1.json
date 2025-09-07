@@ -1,0 +1,77 @@
+{
+  "book": "1 John",
+  "chapter": 1,
+  "entity_count": 16,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.confess-our-sins-he-is-faithful-and-just-to-forgive--6a6a9e07",
+      "name": "confess our sins he is faithful and just to forgive",
+      "type": "figure",
+      "role": "theology",
+      "refs_count": 1
+    },
+    {
+      "id": "f.if-we-say-we-have-no-sin-we-deceive-ourselves--f9490328",
+      "name": "if we say we have no sin we deceive ourselves",
+      "type": "figure",
+      "role": "theology",
+      "refs_count": 1
+    },
+    {
+      "id": "f.walk-in-the-light--895f571b",
+      "name": "walk in the light",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.if-we-say-we-have-fellowship-while-walking-in-darkness-we-lie--99edeb9f",
+      "name": "if we say we have fellowship while walking in darkness we lie",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.fellowship-with-the-father-and-his-son--c30bda0e",
+      "name": "fellowship with the Father and his Son",
+      "type": "figure",
+      "role": "prologue",
+      "refs_count": 1
+    },
+    {
+      "id": "f.god-is-light-and-in-him-is-no-darkness--651b56db",
+      "name": "God is light and in him is no darkness",
+      "type": "figure",
+      "role": "theology",
+      "refs_count": 1
+    },
+    {
+      "id": "f.propitiation-hilasmos-for-our-sins--1a9194ca",
+      "name": "propitiation (hilasmos) for our sins",
+      "type": "figure",
+      "role": "soteriology",
+      "refs_count": 1
+    },
+    {
+      "id": "f.that-which-we-have-heard--bfdcc464",
+      "name": "that which we have heard",
+      "type": "figure",
+      "role": "prologue",
+      "refs_count": 1
+    },
+    {
+      "id": "p.john-the-elder--f1c65f79",
+      "name": "John the Elder",
+      "type": "person",
+      "role": "author",
+      "refs_count": 3
+    }
+  ]
+}

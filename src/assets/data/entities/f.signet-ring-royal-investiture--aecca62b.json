@@ -1,0 +1,18 @@
+{
+  "id": "f.signet-ring-royal-investiture--aecca62b",
+  "name": "Signet ring (royal investiture)",
+  "type": "figure",
+  "references": [
+    "Hag 2:23"
+  ],
+  "category": "symbol",
+  "blurb": "Seal of royal authority; in Haggai, a pledge to the Davidic line embodied in Zerubbabel.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      2
+    ]
+  }
+}

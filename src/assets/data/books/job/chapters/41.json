@@ -1,0 +1,14 @@
+{
+  "book": "Job",
+  "chapter": 41,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "e.leviathan--380c58dd",
+      "name": "Leviathan",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 2
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Jericho (city)",
+  "type": "entity",
+  "references": [
+    "Joshua 6"
+  ],
+  "blurb": "Firstfruits of conquest devoted to destruction (herem); walls fall by obedient procession—worship as warfare.",
+  "category": "place",
+  "id": "e.jericho.city--d8b856fd",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joshua": [
+      6
+    ]
+  }
+}

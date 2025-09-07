@@ -1,0 +1,19 @@
+{
+  "name": "Gera",
+  "type": "person",
+  "references": [
+    "Genesis 46:21"
+  ],
+  "blurb": "Son of Benjamin listed in the migration list.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.gera.gene-46-21--81ce8df7",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      46
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "book": "Amos",
+  "chapter": 4,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "e.gilgal--52a48e88",
+      "name": "Gilgal",
+      "type": "entity",
+      "role": "cult-site",
+      "refs_count": 2
+    },
+    {
+      "id": "g.cows-of-bashan--90d9ff4c",
+      "name": "Cows of Bashan (wealthy women)",
+      "type": "group",
+      "role": "elite",
+      "refs_count": 1
+    },
+    {
+      "id": "e.hymn-he-who-forms-the-mountains--747c9d51",
+      "name": "Hymn: He who forms the mountains…",
+      "type": "entity",
+      "role": "hymn",
+      "refs_count": 1
+    },
+    {
+      "id": "e.irony-sarcasm-go-to-bethel-and-sin--e7b5b574",
+      "name": "Irony & sarcasm: ‘Go to Bethel and sin’",
+      "type": "entity",
+      "role": "rhetoric",
+      "refs_count": 1
+    }
+  ]
+}

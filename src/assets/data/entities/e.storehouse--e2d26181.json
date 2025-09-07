@@ -1,0 +1,18 @@
+{
+  "id": "e.storehouse--e2d26181",
+  "name": "Storehouse",
+  "type": "entity",
+  "references": [
+    "Mal 3:10"
+  ],
+  "category": "infrastructure",
+  "blurb": "Temple depot for tithes provisioning priests and the poor.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      3
+    ]
+  }
+}

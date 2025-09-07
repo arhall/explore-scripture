@@ -1,0 +1,22 @@
+{
+  "id": "g.ashdod--cc408eea",
+  "name": "Ashdod",
+  "type": "group",
+  "references": [
+    "Zeph 2:4",
+    "Zech 9:6"
+  ],
+  "category": "city",
+  "blurb": "Philistine city struck at noon—symbol of suddenness.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zephaniah": [
+      2
+    ],
+    "Zechariah": [
+      9
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Islamic tradition: Yunus",
+  "type": "entity",
+  "references": [
+    "Qur’an 10:98; 37:139–148; 68:48–50"
+  ],
+  "blurb": "Parallel narrative of Yunus reinforces divine deliverance through repentance.",
+  "category": "reception",
+  "id": "e.islamic-tradition-yunus--e318f3c9",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

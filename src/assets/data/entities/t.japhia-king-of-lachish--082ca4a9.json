@@ -1,0 +1,18 @@
+{
+  "name": "Japhia king of Lachish",
+  "type": "title",
+  "references": [
+    "Joshua 10:3"
+  ],
+  "blurb": "Coalition king defeated; Lachish becomes a strategic conquest site.",
+  "category": "narrative",
+  "id": "t.japhia-king-of-lachish--082ca4a9",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joshua": [
+      10
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Husbands love",
+  "type": "figure",
+  "category": "household-code",
+  "references": [
+    "Col 3:19"
+  ],
+  "aka": [],
+  "id": "f.husbands-love--f8137996",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      3
+    ]
+  }
+}

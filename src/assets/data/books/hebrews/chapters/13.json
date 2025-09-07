@@ -1,0 +1,77 @@
+{
+  "book": "Hebrews",
+  "chapter": 13,
+  "entity_count": 17,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "p.timothy--227fb1d9",
+      "name": "Timothy",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 12
+    },
+    {
+      "id": "f.do-not-be-led-away-by-strange-teachings-about-foods--9c008585",
+      "name": "do not be led away by strange teachings about foods",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1
+    },
+    {
+      "id": "f.hospitality-to-strangers--27fbdcfd",
+      "name": "hospitality to strangers",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.bearing-his-reproach--2816efae",
+      "name": "bearing his reproach",
+      "type": "figure",
+      "role": "discipleship",
+      "refs_count": 1
+    },
+    {
+      "id": "f.keep-free-from-love-of-money--c828b7be",
+      "name": "keep free from love of money",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.marriage-held-in-honor--bb6c7dbf",
+      "name": "marriage held in honor",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.outside-the-camp--ab60309e",
+      "name": "outside the camp",
+      "type": "figure",
+      "role": "reproach",
+      "refs_count": 1
+    },
+    {
+      "id": "g.imitate-leaders-who-spoke-the-word--9c3f2f5e",
+      "name": "imitate leaders who spoke the word",
+      "type": "group",
+      "role": "leadership",
+      "refs_count": 1
+    },
+    {
+      "id": "e.city-to-come--8dfff870",
+      "name": "city to come",
+      "type": "entity",
+      "role": "eschatology",
+      "refs_count": 1
+    }
+  ]
+}

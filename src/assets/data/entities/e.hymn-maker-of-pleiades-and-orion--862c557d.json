@@ -1,0 +1,18 @@
+{
+  "name": "Hymn: Maker of Pleiades and Orion",
+  "type": "entity",
+  "references": [
+    "Amos 5:8–9"
+  ],
+  "blurb": "Doctrinal spine for ethics: the Creator who turns dawn to darkness charges the mighty.",
+  "category": "hymn",
+  "id": "e.hymn-maker-of-pleiades-and-orion--862c557d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Amos": [
+      5
+    ]
+  }
+}

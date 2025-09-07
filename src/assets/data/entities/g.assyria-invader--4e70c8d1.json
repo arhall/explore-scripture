@@ -1,0 +1,19 @@
+{
+  "id": "g.assyria-invader--4e70c8d1",
+  "name": "Assyria (invader)",
+  "type": "group",
+  "references": [
+    "Micah 5:5–6"
+  ],
+  "category": "nation",
+  "blurb": "Primary geopolitical threat in Micah’s horizon; foil for messianic peace.",
+  "canonical_id": "g.assyria--0b88cead",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      5
+    ]
+  }
+}

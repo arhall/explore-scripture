@@ -1,0 +1,15 @@
+{
+  "name": "Onesiphorus",
+  "type": "person",
+  "category": "patron",
+  "references": [
+    "2 Tim 1:16-18"
+  ],
+  "aka": [],
+  "id": "p.onesiphorus--10cdd616",
+  "book_references": {
+    "2 Timothy": [
+      1
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "book": "Job",
+  "chapter": 2,
+  "entity_count": 6,
+  "entities": [
+    {
+      "id": "e.skin-for-skin-and-the-boils--bfb5d274",
+      "name": "‘Skin for skin’ and the boils",
+      "type": "entity",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.jobs-wife--3a299a5e",
+      "name": "Job’s wife",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.eliphaz-the-temanite--2ba81d1d",
+      "name": "Eliphaz the Temanite",
+      "type": "person",
+      "role": "wisdom",
+      "refs_count": 1
+    },
+    {
+      "id": "p.bildad-the-shuhite--2f451710",
+      "name": "Bildad the Shuhite",
+      "type": "person",
+      "role": "wisdom",
+      "refs_count": 1
+    },
+    {
+      "id": "p.zophar-the-naamathite--5d7e3529",
+      "name": "Zophar the Naamathite",
+      "type": "person",
+      "role": "wisdom",
+      "refs_count": 1
+    },
+    {
+      "id": "e.seven-days-and-nights-of-silent-sitting--4f5263d0",
+      "name": "Seven days and nights of silent sitting",
+      "type": "entity",
+      "role": "spirituality",
+      "refs_count": 1
+    }
+  ]
+}

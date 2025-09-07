@@ -1,0 +1,31 @@
+{
+  "name": "I AM: Good Shepherd",
+  "type": "title",
+  "category": "i-am",
+  "references": [
+    "John 10:11–18",
+    "John 10:11",
+    "John 10:14"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Ezek 34",
+      "type": "allusion"
+    }
+  ],
+  "aka": [],
+  "id": "t.i-am-good-shepherd--e701b0e3",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      10
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Geshem (Gashmu) the Arab",
+  "type": "person",
+  "references": [
+    "Nehemiah 2:19; 6:6"
+  ],
+  "blurb": "Trade coalition leader who joins the smear campaign—economics weaponized against reform.",
+  "aka": [
+    "Gashmu"
+  ],
+  "category": "narrative",
+  "id": "p.geshem-the-arab.gashmu--c0b503ed",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      2
+    ]
+  }
+}

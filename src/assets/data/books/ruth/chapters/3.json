@@ -1,0 +1,21 @@
+{
+  "book": "Ruth",
+  "chapter": 3,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "e.spread-your-garment-over-your-servant.wing--88509d29",
+      "name": "Spread your garment (wing) over your servant",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1
+    },
+    {
+      "id": "e.do-not-go-empty-to-your-mother-in-law--663c8777",
+      "name": "Do not go empty to your mother-in-law",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Defiled rations baked over dung",
+  "type": "entity",
+  "references": [
+    "Ezekiel 4:9–17"
+  ],
+  "blurb": "Scarcity and uncleanness of exile previewed; concession to cow dung signals mitigated mercy.",
+  "category": "sign",
+  "id": "e.defiled-rations-baked-over-dung--ee55d8e3",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      4
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Household of Stephanas (firstfruits)",
+  "type": "group",
+  "category": "household",
+  "references": [
+    "1 Cor 16:15–16"
+  ],
+  "house_church": true,
+  "aka": [],
+  "id": "g.household-of-stephanas-firstfruits--ed90ba33",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "1 Corinthians": [
+      16
+    ]
+  }
+}

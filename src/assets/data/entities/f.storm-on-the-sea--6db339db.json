@@ -1,0 +1,38 @@
+{
+  "name": "Storm on the sea",
+  "type": "figure",
+  "category": "miracle",
+  "references": [
+    "Matt 8:23–27",
+    "Mark 4:35–41",
+    "Luke 8:22–25"
+  ],
+  "blurb": "Cosmic authority: creation obeys its Lord; disciples asked to trust.",
+  "aka": [],
+  "id": "f.storm-on-the-sea--6db339db",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Mark",
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "synoptic_parallels": [
+    "Matt 8:23–27",
+    "Mark 4:35–41"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      8
+    ],
+    "Mark": [
+      4
+    ],
+    "Luke": [
+      8
+    ]
+  }
+}

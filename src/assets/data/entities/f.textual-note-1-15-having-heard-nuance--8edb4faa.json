@@ -1,0 +1,22 @@
+{
+  "name": "Textual note: 1:15 ‘having heard’ nuance",
+  "type": "figure",
+  "category": "textual-notes",
+  "references": [
+    "Eph 1:15"
+  ],
+  "note": "‘Having heard of your faith’ may suggest distance; debated implications for authorship/audience.",
+  "aka": [],
+  "id": "f.textual-note-1-15-having-heard-nuance--8edb4faa",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      1
+    ]
+  }
+}

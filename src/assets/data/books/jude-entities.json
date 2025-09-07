@@ -1,0 +1,215 @@
+[
+  {
+    "id": "p.balaam-son-of-beor--4e674f7d",
+    "name": "Balaam son of Beor",
+    "type": "person",
+    "url": "/entities/p.balaam-son-of-beor--4e674f7d/",
+    "blurb": "Diviner who speaks true oracles under constraint yet later counsels seduction—tragic ambiguity.",
+    "searchText": "balaam son of beor person narrative diviner who speaks true oracles under constraint yet later counsels seduction—tragic ambiguity. ",
+    "references": 4,
+    "books": [
+      "Deuteronomy",
+      "2 Peter",
+      "Jude"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.cain.gene-4--931e91cf",
+    "name": "Cain",
+    "type": "person",
+    "url": "/entities/p.cain.gene-4--931e91cf/",
+    "blurb": "Firstborn of Adam and Eve, Cain embodies sin’s spread beyond Eden. Jealous of Abel, he murders his brother despite God’s warning to master sin. Banished yet marked, he fathers a city and a culture—mus",
+    "searchText": "cain person narrative firstborn of adam and eve, cain embodies sin’s spread beyond eden. jealous of abel, he murders his brother despite god’s warning to master sin. banished yet marked, he fathers a city and a culture—music, metallurgy, livestock—showing creativity estranged from god. ",
+    "references": 3,
+    "books": [
+      "Genesis",
+      "1 John",
+      "Jude"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.enoch--50efb186",
+    "name": "Enoch",
+    "type": "person",
+    "url": "/entities/p.enoch--50efb186/",
+    "blurb": "",
+    "searchText": "enoch person faith-example  ",
+    "references": 2,
+    "books": [
+      "Hebrews",
+      "Jude"
+    ],
+    "category": "faith-example"
+  },
+  {
+    "id": "g.angels-who-did-not-keep-their-domain--08dd1f1c",
+    "name": "angels who did not keep their domain",
+    "type": "group",
+    "url": "/entities/g.angels-who-did-not-keep-their-domain--08dd1f1c/",
+    "blurb": "",
+    "searchText": "angels who did not keep their domain group angelic  ",
+    "references": 1,
+    "books": [
+      "Jude"
+    ],
+    "category": "angelic"
+  },
+  {
+    "id": "p.jude-brother-of-james--20c47f73",
+    "name": "Jude (brother of James)",
+    "type": "person",
+    "url": "/entities/p.jude-brother-of-james--20c47f73/",
+    "blurb": "",
+    "searchText": "jude (brother of james) person author  ",
+    "references": 1,
+    "books": [
+      "Jude"
+    ],
+    "category": "author"
+  },
+  {
+    "id": "p.korah--fd66fdd7",
+    "name": "Korah",
+    "type": "person",
+    "url": "/entities/p.korah--fd66fdd7/",
+    "blurb": "",
+    "searchText": "korah person negative-example  ",
+    "references": 1,
+    "books": [
+      "Jude"
+    ],
+    "category": "negative-example"
+  },
+  {
+    "id": "p.michael-the-archangel--94e31e76",
+    "name": "Michael the archangel",
+    "type": "person",
+    "url": "/entities/p.michael-the-archangel--94e31e76/",
+    "blurb": "",
+    "searchText": "michael the archangel person angelic  ",
+    "references": 1,
+    "books": [
+      "Jude"
+    ],
+    "category": "angelic"
+  },
+  {
+    "id": "e.gomorrah--655b0a7b",
+    "name": "Gomorrah",
+    "type": "entity",
+    "url": "/entities/e.gomorrah--655b0a7b/",
+    "blurb": "",
+    "searchText": "gomorrah entity city  ",
+    "references": 1,
+    "books": [
+      "Jude"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "e.love-feasts--9cdb66df",
+    "name": "love feasts",
+    "type": "entity",
+    "url": "/entities/e.love-feasts--9cdb66df/",
+    "blurb": "",
+    "searchText": "love feasts entity assembly  ",
+    "references": 1,
+    "books": [
+      "Jude"
+    ],
+    "category": "assembly"
+  },
+  {
+    "id": "e.sodom--4295139b",
+    "name": "Sodom",
+    "type": "entity",
+    "url": "/entities/e.sodom--4295139b/",
+    "blurb": "",
+    "searchText": "sodom entity city  ",
+    "references": 1,
+    "books": [
+      "Jude"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "f.abandoned-themselves-for-the-sake-of-gain-to-balaam-s-error--421d0a51",
+    "name": "abandoned themselves for the sake of gain to Balaam’s error",
+    "type": "figure",
+    "url": "/entities/f.abandoned-themselves-for-the-sake-of-gain-to-balaam-s-error--421d0a51/",
+    "blurb": "",
+    "searchText": "abandoned themselves for the sake of gain to balaam’s error figure warning  ",
+    "references": 1,
+    "books": [
+      "Jude"
+    ],
+    "category": "warning"
+  },
+  {
+    "id": "f.assumption-of-moses-dispute--4986ed8c",
+    "name": "Assumption of Moses dispute",
+    "type": "figure",
+    "url": "/entities/f.assumption-of-moses-dispute--4986ed8c/",
+    "blurb": "",
+    "searchText": "assumption of moses dispute figure tradition  ",
+    "references": 1,
+    "books": [
+      "Jude"
+    ],
+    "category": "tradition"
+  },
+  {
+    "id": "f.perished-in-korah-s-rebellion--a1ada3d0",
+    "name": "perished in Korah’s rebellion",
+    "type": "figure",
+    "url": "/entities/f.perished-in-korah-s-rebellion--a1ada3d0/",
+    "blurb": "",
+    "searchText": "perished in korah’s rebellion figure warning  ",
+    "references": 1,
+    "books": [
+      "Jude"
+    ],
+    "category": "warning"
+  },
+  {
+    "id": "f.textual-note-v-5-jesus-who-saved-a-people--32736de9",
+    "name": "Textual note: v.5 ‘Jesus’ who saved a people",
+    "type": "figure",
+    "url": "/entities/f.textual-note-v-5-jesus-who-saved-a-people--32736de9/",
+    "blurb": "",
+    "searchText": "textual note: v.5 ‘jesus’ who saved a people figure textual-notes  ",
+    "references": 1,
+    "books": [
+      "Jude"
+    ],
+    "category": "textual-notes"
+  },
+  {
+    "id": "f.they-walked-in-the-way-of-cain--bcddec8b",
+    "name": "they walked in the way of Cain",
+    "type": "figure",
+    "url": "/entities/f.they-walked-in-the-way-of-cain--bcddec8b/",
+    "blurb": "",
+    "searchText": "they walked in the way of cain figure warning  ",
+    "references": 1,
+    "books": [
+      "Jude"
+    ],
+    "category": "warning"
+  },
+  {
+    "id": "f.woe-to-them--458cf759",
+    "name": "woe to them",
+    "type": "figure",
+    "url": "/entities/f.woe-to-them--458cf759/",
+    "blurb": "",
+    "searchText": "woe to them figure warning  ",
+    "references": 1,
+    "books": [
+      "Jude"
+    ],
+    "category": "warning"
+  }
+]

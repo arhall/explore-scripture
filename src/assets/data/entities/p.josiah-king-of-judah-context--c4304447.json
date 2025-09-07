@@ -1,0 +1,24 @@
+{
+  "id": "p.josiah-king-of-judah-context--c4304447",
+  "name": "Josiah king of Judah (context)",
+  "type": "person",
+  "references": [
+    "Zeph 1:1",
+    "2 Kgs 22–23"
+  ],
+  "category": "king",
+  "blurb": "Reform-era monarch providing historical frame. Zephaniah’s indictments may precede or accompany Josiah’s centralizing reforms.",
+  "canonical_id": "p.josiah-king-of-judah.reformer--a10d5584",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zephaniah": [
+      1
+    ],
+    "2 Kings": [
+      22,
+      23
+    ]
+  }
+}

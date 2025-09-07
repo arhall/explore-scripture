@@ -1,0 +1,18 @@
+{
+  "name": "Micah of the hill country of Ephraim",
+  "type": "person",
+  "references": [
+    "Judges 17"
+  ],
+  "blurb": "Creates a private shrine with a graven image and hires a Levite—syncretism wrapped in piety; a microcosm of ‘right in his own eyes.’",
+  "category": "narrative",
+  "id": "p.micah-of-the-hill-country-of-ephraim--21d6b727",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      17
+    ]
+  }
+}

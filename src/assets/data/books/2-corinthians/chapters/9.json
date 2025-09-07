@@ -1,0 +1,42 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 9,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "e.jerusalem--d3a5bc90",
+      "name": "Jerusalem",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 7
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.thanksgiving-through-your-service--8b74008f",
+      "name": "Thanksgiving through your service",
+      "type": "figure",
+      "role": "thanksgiving",
+      "refs_count": 1
+    },
+    {
+      "id": "f.sowing-and-reaping-cheerful-giver--490bd3c5",
+      "name": "Sowing and reaping; cheerful giver",
+      "type": "figure",
+      "role": "promise",
+      "refs_count": 1
+    },
+    {
+      "id": "f.integrity-notes-composite-letter--69411f19",
+      "name": "Integrity notes (composite-letter)",
+      "type": "figure",
+      "role": "integrity-notes",
+      "refs_count": 1
+    }
+  ]
+}

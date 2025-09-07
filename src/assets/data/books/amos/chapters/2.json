@@ -1,0 +1,77 @@
+{
+  "book": "Amos",
+  "chapter": 2,
+  "entity_count": 13,
+  "entities": [
+    {
+      "id": "g.moab--0526e590",
+      "name": "Moab",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 4
+    },
+    {
+      "id": "g.egypt--ab1ad00f",
+      "name": "Egypt",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 6
+    },
+    {
+      "id": "g.israel.northern-kingdom--43968183",
+      "name": "Israel (Northern Kingdom)",
+      "type": "group",
+      "role": "kingdom",
+      "refs_count": 2
+    },
+    {
+      "id": "g.judah--ecd455d1",
+      "name": "Judah",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1
+    },
+    {
+      "id": "g.nazirites-given-wine--c9e9ee9d",
+      "name": "Nazirites given wine",
+      "type": "group",
+      "role": "vow",
+      "refs_count": 1
+    },
+    {
+      "id": "g.prophets-silenced--5d53100d",
+      "name": "Prophets silenced (‘Do not prophesy!’)",
+      "type": "group",
+      "role": "opposition",
+      "refs_count": 1
+    },
+    {
+      "id": "g.righteous-sold-for-silver-and-sandals--c533c737",
+      "name": "Righteous sold for silver and sandals",
+      "type": "group",
+      "role": "victims",
+      "refs_count": 1
+    },
+    {
+      "id": "e.swearing-lying-murder-stealing-adultery.ten-commandment-breach--5e0a0722",
+      "name": "Swearing, lying, murder, stealing, adultery (ten‑commandment breach)",
+      "type": "entity",
+      "role": "ethic",
+      "refs_count": 1
+    },
+    {
+      "id": "e.panting-after-the-dust-on-the-head-of-the-poor--1fd49b36",
+      "name": "Panting after the dust on the head of the poor",
+      "type": "entity",
+      "role": "abuse",
+      "refs_count": 1
+    },
+    {
+      "id": "e.father-and-son-go-in-to-the-same-girl--20f107b8",
+      "name": "Father and son go in to the same girl",
+      "type": "entity",
+      "role": "abuse",
+      "refs_count": 1
+    }
+  ]
+}

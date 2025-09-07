@@ -1,0 +1,14 @@
+{
+  "book": "1 Samuel",
+  "chapter": 9,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "p.kish.sauls-father--ac6b8f3f",
+      "name": "Kish (Saul’s father)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

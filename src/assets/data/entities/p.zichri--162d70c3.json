@@ -1,0 +1,19 @@
+{
+  "name": "Zichri",
+  "type": "person",
+  "references": [
+    "Exodus 6:21"
+  ],
+  "blurb": "Son of Izhar.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.zichri--162d70c3",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      6
+    ]
+  }
+}

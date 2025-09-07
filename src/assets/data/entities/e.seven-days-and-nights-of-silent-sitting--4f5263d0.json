@@ -1,0 +1,20 @@
+{
+  "name": "Seven days and nights of silent sitting",
+  "type": "entity",
+  "references": [
+    "Job 2:13"
+  ],
+  "blurb": "True beginning of comfort—presence without words; the best counsel they will give is before they speak.",
+  "category": "spirituality",
+  "count": 7,
+  "count_note": "Days of silence",
+  "id": "e.seven-days-and-nights-of-silent-sitting--4f5263d0",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Job": [
+      2
+    ]
+  }
+}

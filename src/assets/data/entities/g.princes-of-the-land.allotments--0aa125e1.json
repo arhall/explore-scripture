@@ -1,0 +1,19 @@
+{
+  "name": "Princes of the land (allotments)",
+  "type": "group",
+  "references": [
+    "Ezekiel 45–46"
+  ],
+  "blurb": "A prince bounded by just weights and land rights—royal power tamed by holiness and equity.",
+  "category": "leadership",
+  "id": "g.princes-of-the-land.allotments--0aa125e1",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      45,
+      46
+    ]
+  }
+}

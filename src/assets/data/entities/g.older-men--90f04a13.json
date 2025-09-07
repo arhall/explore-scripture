@@ -1,0 +1,19 @@
+{
+  "name": "older men",
+  "type": "group",
+  "category": "cohort",
+  "references": [
+    "1 Tim 5:1",
+    "Titus 2:2-10"
+  ],
+  "aka": [],
+  "id": "g.older-men--90f04a13",
+  "book_references": {
+    "1 Timothy": [
+      5
+    ],
+    "Titus": [
+      2
+    ]
+  }
+}

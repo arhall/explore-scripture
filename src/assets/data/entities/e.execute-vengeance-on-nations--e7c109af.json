@@ -1,0 +1,18 @@
+{
+  "id": "e.execute-vengeance-on-nations--e7c109af",
+  "name": "Execute vengeance on nations that did not obey",
+  "type": "entity",
+  "references": [
+    "Micah 5:10–15"
+  ],
+  "category": "purge-note",
+  "blurb": "Universal moral court—God’s zeal completes the purge.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      5
+    ]
+  }
+}

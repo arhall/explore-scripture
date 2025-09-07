@@ -1,0 +1,23 @@
+{
+  "name": "Nicholas (proselyte of Antioch)",
+  "type": "person",
+  "category": "the-seven",
+  "references": [
+    "Acts 6:5"
+  ],
+  "aka": [],
+  "id": "p.nicholas-proselyte-of-antioch--bd95b883",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      6
+    ]
+  }
+}

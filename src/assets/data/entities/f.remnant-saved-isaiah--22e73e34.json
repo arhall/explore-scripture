@@ -1,0 +1,27 @@
+{
+  "name": "Remnant saved (Isaiah)",
+  "type": "figure",
+  "category": "remnant",
+  "references": [
+    "Rom 9:27–29"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Isa 10:22–23; 1:9",
+      "type": "quotation"
+    }
+  ],
+  "aka": [],
+  "id": "f.remnant-saved-isaiah--22e73e34",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      9
+    ]
+  }
+}

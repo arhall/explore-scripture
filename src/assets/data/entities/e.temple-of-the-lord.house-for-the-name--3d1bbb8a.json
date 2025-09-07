@@ -1,0 +1,19 @@
+{
+  "name": "Temple of the LORD (house for the Name)",
+  "type": "entity",
+  "references": [
+    "2 Chronicles 3–4"
+  ],
+  "blurb": "Dimensions, cherubim, palm trees, pomegranates—Edenic artistry scaled to national worship; theology in architecture.",
+  "category": "place",
+  "id": "e.temple-of-the-lord.house-for-the-name--3d1bbb8a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "2 Chronicles": [
+      3,
+      4
+    ]
+  }
+}

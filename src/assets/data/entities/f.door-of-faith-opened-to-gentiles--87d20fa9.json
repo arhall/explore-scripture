@@ -1,0 +1,23 @@
+{
+  "name": "Door of faith opened to Gentiles",
+  "type": "figure",
+  "category": "report",
+  "references": [
+    "Acts 14:27"
+  ],
+  "aka": [],
+  "id": "f.door-of-faith-opened-to-gentiles--87d20fa9",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      14
+    ]
+  }
+}

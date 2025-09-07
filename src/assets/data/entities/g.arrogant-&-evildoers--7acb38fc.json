@@ -1,0 +1,20 @@
+{
+  "id": "g.arrogant-&-evildoers--7acb38fc",
+  "name": "Arrogant & evildoers",
+  "type": "group",
+  "references": [
+    "Mal 3:15",
+    "Mal 4:1"
+  ],
+  "category": "ethical-collective",
+  "blurb": "Seemingly prosperous yet destined for stubble in the coming Day.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      3,
+      4
+    ]
+  }
+}

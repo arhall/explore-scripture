@@ -1,0 +1,21 @@
+{
+  "name": "Bronze laver (basin)",
+  "type": "entity",
+  "references": [
+    "Exodus 30:17–21; 38:8"
+  ],
+  "blurb": "Washings for priests; women served at its making.",
+  "category": "tabernacle",
+  "cross_references": [
+    "Hebrews 9:1–5"
+  ],
+  "id": "e.bronze-laver--ead7ef38",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      30
+    ]
+  }
+}

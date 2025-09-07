@@ -1,0 +1,19 @@
+{
+  "id": "e.tithes--cc2a3137",
+  "name": "Tithes",
+  "type": "entity",
+  "references": [
+    "Mal 3:8-10"
+  ],
+  "category": "economics",
+  "blurb": "Covenant contributions withheld by the people—central test case of fidelity.",
+  "canonical_id": "e.tithes.holy-to-the-lord--46d75a5f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      3
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Hallelujah chorus",
+  "type": "figure",
+  "category": "hymn",
+  "references": [
+    "Rev 19:1-6"
+  ],
+  "aka": [],
+  "id": "f.hallelujah-chorus--0f6339fe",
+  "book_references": {
+    "Revelation": [
+      19
+    ]
+  }
+}

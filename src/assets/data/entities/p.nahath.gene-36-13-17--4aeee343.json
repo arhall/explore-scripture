@@ -1,0 +1,19 @@
+{
+  "name": "Nahath",
+  "type": "person",
+  "references": [
+    "Genesis 36:13,17"
+  ],
+  "blurb": "Son of Reuel; later an Edomite clan chief.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.nahath.gene-36-13-17--4aeee343",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

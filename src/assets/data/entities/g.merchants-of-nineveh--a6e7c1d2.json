@@ -1,0 +1,19 @@
+{
+  "id": "g.merchants-of-nineveh--a6e7c1d2",
+  "name": "Merchants of Nineveh",
+  "type": "group",
+  "references": [
+    "Nah 3:16"
+  ],
+  "category": "economic-class",
+  "aka": [],
+  "blurb": "Once numerous as stars, they vanish like locusts when judgment heat rises—profit proves ephemeral.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      3
+    ]
+  }
+}

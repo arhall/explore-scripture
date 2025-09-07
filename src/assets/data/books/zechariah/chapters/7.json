@@ -1,0 +1,28 @@
+{
+  "book": "Zechariah",
+  "chapter": 7,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "p.darius-i-persian-king--face83b7",
+      "name": "Darius I (Persian king)",
+      "type": "person",
+      "role": "monarch",
+      "refs_count": 5
+    },
+    {
+      "id": "e.zechariah-1–8-coordination--93e40792",
+      "name": "Zechariah 1–8 coordination",
+      "type": "entity",
+      "role": "prophetic-link",
+      "refs_count": 1
+    },
+    {
+      "id": "f.delegation-from-bethel-asks-about-fasting--33a00ca6",
+      "name": "Delegation from Bethel asks about fasting",
+      "type": "figure",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

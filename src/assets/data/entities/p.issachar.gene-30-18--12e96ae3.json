@@ -1,0 +1,33 @@
+{
+  "name": "Issachar",
+  "type": "person",
+  "references": [
+    "Genesis 30:18"
+  ],
+  "blurb": "Son of Leah; associated later with wisdom in times and seasons.",
+  "relations": {
+    "parents": [
+      "Jacob (Israel)",
+      "Leah"
+    ],
+    "children": [
+      "Tola",
+      "Puvah",
+      "Iob (Jashub)",
+      "Shimron"
+    ]
+  },
+  "category": "narrative",
+  "cross_references": [
+    "1 Chronicles 12:32"
+  ],
+  "id": "p.issachar.gene-30-18--12e96ae3",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      30
+    ]
+  }
+}

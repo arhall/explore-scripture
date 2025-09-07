@@ -1,0 +1,18 @@
+{
+  "name": "Eleventh year, seventh month (oracle vs Egypt)",
+  "type": "entity",
+  "references": [
+    "Ezekiel 30:20"
+  ],
+  "blurb": "Chronological anchors stitch theology into history.",
+  "category": "chronology",
+  "id": "e.eleventh-year-seventh-month--2c2a19a1",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      30
+    ]
+  }
+}

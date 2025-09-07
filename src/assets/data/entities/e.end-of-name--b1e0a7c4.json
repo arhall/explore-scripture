@@ -1,0 +1,21 @@
+{
+  "id": "e.end-of-name--b1e0a7c4",
+  "name": "End of name",
+  "type": "entity",
+  "references": [
+    "Nah 1:14"
+  ],
+  "category": "erasure",
+  "aka": [
+    "Name cut off"
+  ],
+  "blurb": "Memory, dynasty, and cultic prestige erased—total de-legitimization of Assyria’s legacy.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      1
+    ]
+  }
+}

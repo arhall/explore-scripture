@@ -1,0 +1,77 @@
+{
+  "book": "Revelation",
+  "chapter": 13,
+  "entity_count": 20,
+  "entities": [
+    {
+      "id": "f.number-of-the-beast-666--0d8fcc07",
+      "name": "number of the beast: 666",
+      "type": "figure",
+      "role": "numeric",
+      "refs_count": 1
+    },
+    {
+      "id": "f.beast-from-the-earth-false-prophet--895cc6a3",
+      "name": "beast from the earth (false prophet)",
+      "type": "figure",
+      "role": "opponent",
+      "refs_count": 2
+    },
+    {
+      "id": "f.beast-from-the-sea-seven-heads-ten-horns--fc8809f6",
+      "name": "beast from the Sea (seven heads ten horns)",
+      "type": "figure",
+      "role": "opponent",
+      "refs_count": 2
+    },
+    {
+      "id": "f.mark-of-the-beast-charagma--7424ca6d",
+      "name": "mark of the beast (charagma)",
+      "type": "figure",
+      "role": "economic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.the-whole-earth-marveled-and-followed-the-beast--93c0f170",
+      "name": "the whole earth marveled and followed the beast",
+      "type": "figure",
+      "role": "allegiance",
+      "refs_count": 1
+    },
+    {
+      "id": "f.heptad-index--733a558f",
+      "name": "Heptad index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.numeric-symbolism-index--20cda2ea",
+      "name": "Numeric symbolism index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.who-is-like-the-beast-and-who-can-fight-against-it--03078052",
+      "name": "Who is like the beast, and who can fight against it?",
+      "type": "figure",
+      "role": "taunt",
+      "refs_count": 1
+    },
+    {
+      "id": "f.here-is-wisdom--45571715",
+      "name": "Here is wisdom",
+      "type": "figure",
+      "role": "wisdom-signal",
+      "refs_count": 1
+    },
+    {
+      "id": "f.authority-over-every-tribe-and-people-and-language-and-nation--cd12c140",
+      "name": "authority over every tribe and people and language and nation",
+      "type": "figure",
+      "role": "authority",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Shamgar son of Anath",
+  "type": "person",
+  "references": [
+    "Judges 3:31"
+  ],
+  "blurb": "Minor judge who strikes down six hundred Philistines with an oxgoad—farm tool becomes instrument of deliverance.",
+  "category": "narrative",
+  "id": "p.shamgar-son-of-anath--562ea1ed",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      3
+    ]
+  }
+}

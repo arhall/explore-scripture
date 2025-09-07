@@ -1,0 +1,19 @@
+{
+  "name": "Jalam",
+  "type": "person",
+  "references": [
+    "Genesis 36:5,14–18"
+  ],
+  "blurb": "Son of Esau by Oholibamah; later a clan chief in Edom.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.jalam.gene-36-5-14-18--206f6853",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

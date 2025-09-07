@@ -1,0 +1,702 @@
+[
+  {
+    "id": "d.holy-spirit--ad652b9c",
+    "name": "Holy Spirit",
+    "type": "divine",
+    "url": "/entities/d.holy-spirit--ad652b9c/",
+    "blurb": "Divine agent of conception, anointing, speech, and mission—integral to the triadic baptismal name.",
+    "searchText": "holy spirit divine theology divine agent of conception, anointing, speech, and mission—integral to the triadic baptismal name. ",
+    "references": 53,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "2 Corinthians",
+      "Galatians",
+      "1 Corinthians",
+      "Philippians",
+      "Ephesians",
+      "Romans",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "p.paul-saul--d4c08ff1",
+    "name": "Paul (Saul)",
+    "type": "person",
+    "url": "/entities/p.paul-saul--d4c08ff1/",
+    "blurb": "",
+    "searchText": "paul (saul) person apostle  ",
+    "references": 24,
+    "books": [
+      "Acts",
+      "Galatians",
+      "Philippians",
+      "Ephesians",
+      "Romans",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "2 Peter"
+    ],
+    "category": "apostle"
+  },
+  {
+    "id": "p.tychicus--24c2a0b4",
+    "name": "Tychicus",
+    "type": "person",
+    "url": "/entities/p.tychicus--24c2a0b4/",
+    "blurb": "",
+    "searchText": "tychicus person coworker  ",
+    "references": 5,
+    "books": [
+      "Acts",
+      "Ephesians",
+      "Colossians",
+      "2 Timothy",
+      "Titus"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "g.elders-presbyters--92e988af",
+    "name": "elders (presbyters)",
+    "type": "group",
+    "url": "/entities/g.elders-presbyters--92e988af/",
+    "blurb": "",
+    "searchText": "elders (presbyters) group office  g.elders-presbyters--55daaee3",
+    "references": 3,
+    "books": [
+      "1 Timothy",
+      "Titus",
+      "James"
+    ],
+    "category": "office"
+  },
+  {
+    "id": "p.titus--b5cd5081",
+    "name": "Titus",
+    "type": "person",
+    "url": "/entities/p.titus--b5cd5081/",
+    "blurb": "",
+    "searchText": "titus person coworker  ",
+    "references": 3,
+    "books": [
+      "Galatians",
+      "2 Timothy",
+      "Titus"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "t.trustworthy-saying--37efe0bd",
+    "name": "trustworthy saying",
+    "type": "title",
+    "url": "/entities/t.trustworthy-saying--37efe0bd/",
+    "blurb": "",
+    "searchText": "trustworthy saying title formula  ",
+    "references": 3,
+    "books": [
+      "1 Timothy",
+      "2 Timothy",
+      "Titus"
+    ],
+    "category": "formula"
+  },
+  {
+    "id": "g.circumcision-party--bf245fcf",
+    "name": "Circumcision party",
+    "type": "group",
+    "url": "/entities/g.circumcision-party--bf245fcf/",
+    "blurb": "",
+    "searchText": "circumcision party group opponents  ",
+    "references": 2,
+    "books": [
+      "Galatians",
+      "Titus"
+    ],
+    "category": "opponents"
+  },
+  {
+    "id": "g.older-men--90f04a13",
+    "name": "older men",
+    "type": "group",
+    "url": "/entities/g.older-men--90f04a13/",
+    "blurb": "",
+    "searchText": "older men group cohort  ",
+    "references": 2,
+    "books": [
+      "1 Timothy",
+      "Titus"
+    ],
+    "category": "cohort"
+  },
+  {
+    "id": "g.older-women--334ddcf4",
+    "name": "older women",
+    "type": "group",
+    "url": "/entities/g.older-women--334ddcf4/",
+    "blurb": "",
+    "searchText": "older women group cohort  ",
+    "references": 2,
+    "books": [
+      "1 Timothy",
+      "Titus"
+    ],
+    "category": "cohort"
+  },
+  {
+    "id": "g.people-for-his-own-possession--ea17eb18",
+    "name": "people for his own possession",
+    "type": "group",
+    "url": "/entities/g.people-for-his-own-possession--ea17eb18/",
+    "blurb": "",
+    "searchText": "people for his own possession group covenant-people  ",
+    "references": 2,
+    "books": [
+      "Titus",
+      "1 Peter"
+    ],
+    "category": "covenant-people"
+  },
+  {
+    "id": "g.slaves--81740c63",
+    "name": "slaves",
+    "type": "group",
+    "url": "/entities/g.slaves--81740c63/",
+    "blurb": "",
+    "searchText": "slaves group social  ",
+    "references": 2,
+    "books": [
+      "1 Timothy",
+      "Titus"
+    ],
+    "category": "social"
+  },
+  {
+    "id": "g.younger-men--1519bc4c",
+    "name": "younger men",
+    "type": "group",
+    "url": "/entities/g.younger-men--1519bc4c/",
+    "blurb": "",
+    "searchText": "younger men group cohort  ",
+    "references": 2,
+    "books": [
+      "1 Timothy",
+      "Titus"
+    ],
+    "category": "cohort"
+  },
+  {
+    "id": "p.apollos--8fad6255",
+    "name": "Apollos",
+    "type": "person",
+    "url": "/entities/p.apollos--8fad6255/",
+    "blurb": "",
+    "searchText": "apollos person teacher  ",
+    "references": 2,
+    "books": [
+      "Acts",
+      "Titus"
+    ],
+    "category": "teacher"
+  },
+  {
+    "id": "g.cretans--661fb121",
+    "name": "Cretans",
+    "type": "group",
+    "url": "/entities/g.cretans--661fb121/",
+    "blurb": "",
+    "searchText": "cretans group people  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "people"
+  },
+  {
+    "id": "g.divisive-person-hairetikos--5053ee11",
+    "name": "divisive person (hairetikos)",
+    "type": "group",
+    "url": "/entities/g.divisive-person-hairetikos--5053ee11/",
+    "blurb": "",
+    "searchText": "divisive person (hairetikos) group discipline  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "discipline"
+  },
+  {
+    "id": "g.insubordinate-empty-talkers-and-deceivers--0df0e47f",
+    "name": "insubordinate empty talkers and deceivers",
+    "type": "group",
+    "url": "/entities/g.insubordinate-empty-talkers-and-deceivers--0df0e47f/",
+    "blurb": "",
+    "searchText": "insubordinate empty talkers and deceivers group opponents  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "opponents"
+  },
+  {
+    "id": "g.our-people--4851e990",
+    "name": "our people",
+    "type": "group",
+    "url": "/entities/g.our-people--4851e990/",
+    "blurb": "",
+    "searchText": "our people group community  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "community"
+  },
+  {
+    "id": "g.overseer-episkopos--c5586589",
+    "name": "overseer (episkopos)",
+    "type": "group",
+    "url": "/entities/g.overseer-episkopos--c5586589/",
+    "blurb": "",
+    "searchText": "overseer (episkopos) group office  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "office"
+  },
+  {
+    "id": "g.rulers-and-authorities--10bcd696",
+    "name": "rulers and authorities",
+    "type": "group",
+    "url": "/entities/g.rulers-and-authorities--10bcd696/",
+    "blurb": "",
+    "searchText": "rulers and authorities group civic  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "civic"
+  },
+  {
+    "id": "g.young-women--0f8c9fca",
+    "name": "young women",
+    "type": "group",
+    "url": "/entities/g.young-women--0f8c9fca/",
+    "blurb": "",
+    "searchText": "young women group cohort  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "cohort"
+  },
+  {
+    "id": "g.zealous-for-good-works--cdfede3e",
+    "name": "zealous for good works",
+    "type": "group",
+    "url": "/entities/g.zealous-for-good-works--cdfede3e/",
+    "blurb": "",
+    "searchText": "zealous for good works group ethos  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "ethos"
+  },
+  {
+    "id": "p.artemas--55581b77",
+    "name": "Artemas",
+    "type": "person",
+    "url": "/entities/p.artemas--55581b77/",
+    "blurb": "",
+    "searchText": "artemas person coworker  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "p.zenas-the-lawyer--ad6cc315",
+    "name": "Zenas the lawyer",
+    "type": "person",
+    "url": "/entities/p.zenas-the-lawyer--ad6cc315/",
+    "blurb": "",
+    "searchText": "zenas the lawyer person lawyer  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "lawyer"
+  },
+  {
+    "id": "t.our-great-god-and-savior-jesus-christ--05cb6500",
+    "name": "our great God and Savior Jesus Christ",
+    "type": "title",
+    "url": "/entities/t.our-great-god-and-savior-jesus-christ--05cb6500/",
+    "blurb": "",
+    "searchText": "our great god and savior jesus christ title christology  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "christology"
+  },
+  {
+    "id": "e.crete--72bf0d07",
+    "name": "Crete",
+    "type": "entity",
+    "url": "/entities/e.crete--72bf0d07/",
+    "blurb": "",
+    "searchText": "crete entity island  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "island"
+  },
+  {
+    "id": "e.nicopolis--31ab7844",
+    "name": "Nicopolis",
+    "type": "entity",
+    "url": "/entities/e.nicopolis--31ab7844/",
+    "blurb": "",
+    "searchText": "nicopolis entity city  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "f.appearing-of-the-glory--c8166071",
+    "name": "appearing of the glory",
+    "type": "figure",
+    "url": "/entities/f.appearing-of-the-glory--c8166071/",
+    "blurb": "",
+    "searchText": "appearing of the glory figure epiphany  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "epiphany"
+  },
+  {
+    "id": "f.at-the-proper-time-manifested-his-word--3b4a4753",
+    "name": "at the proper time manifested his word",
+    "type": "figure",
+    "url": "/entities/f.at-the-proper-time-manifested-his-word--3b4a4753/",
+    "blurb": "",
+    "searchText": "at the proper time manifested his word figure revelation  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "revelation"
+  },
+  {
+    "id": "f.avoid-foolish-controversies-genealogies-dissensions-quarrels-about-the-law--c48a7451",
+    "name": "avoid foolish controversies genealogies dissensions quarrels about the law",
+    "type": "figure",
+    "url": "/entities/f.avoid-foolish-controversies-genealogies-dissensions-quarrels-about-the-law--c48a7451/",
+    "blurb": "",
+    "searchText": "avoid foolish controversies genealogies dissensions quarrels about the law figure avoidances  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "avoidances"
+  },
+  {
+    "id": "f.avoid-quarreling--29da18e7",
+    "name": "avoid quarreling",
+    "type": "figure",
+    "url": "/entities/f.avoid-quarreling--29da18e7/",
+    "blurb": "",
+    "searchText": "avoid quarreling figure ethic  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "ethic"
+  },
+  {
+    "id": "f.be-gentle--8116df7d",
+    "name": "be gentle",
+    "type": "figure",
+    "url": "/entities/f.be-gentle--8116df7d/",
+    "blurb": "",
+    "searchText": "be gentle figure virtue  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "virtue"
+  },
+  {
+    "id": "f.blessed-hope--2efa32c5",
+    "name": "blessed hope",
+    "type": "figure",
+    "url": "/entities/f.blessed-hope--2efa32c5/",
+    "blurb": "",
+    "searchText": "blessed hope figure eschatology  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "eschatology"
+  },
+  {
+    "id": "f.cretan-prophet-epimenides-testimony--6818d43a",
+    "name": "Cretan prophet (Epimenides) testimony",
+    "type": "figure",
+    "url": "/entities/f.cretan-prophet-epimenides-testimony--6818d43a/",
+    "blurb": "",
+    "searchText": "cretan prophet (epimenides) testimony figure citation  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "citation"
+  },
+  {
+    "id": "f.decided-to-spend-winter-there--b55db3d9",
+    "name": "decided to spend winter there",
+    "type": "figure",
+    "url": "/entities/f.decided-to-spend-winter-there--b55db3d9/",
+    "blurb": "",
+    "searchText": "decided to spend winter there figure travel-plan  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "travel-plan"
+  },
+  {
+    "id": "f.declare-these-things-with-all-authority--aae174b8",
+    "name": "declare these things with all authority",
+    "type": "figure",
+    "url": "/entities/f.declare-these-things-with-all-authority--aae174b8/",
+    "blurb": "",
+    "searchText": "declare these things with all authority figure authority  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "authority"
+  },
+  {
+    "id": "f.devote-to-good-works--ef6929fe",
+    "name": "devote to good works",
+    "type": "figure",
+    "url": "/entities/f.devote-to-good-works--ef6929fe/",
+    "blurb": "",
+    "searchText": "devote to good works figure exhortation  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "exhortation"
+  },
+  {
+    "id": "f.elder-able-to-exhort-in-sound-doctrine--eca4c0f9",
+    "name": "Elder: able to exhort in sound doctrine",
+    "type": "figure",
+    "url": "/entities/f.elder-able-to-exhort-in-sound-doctrine--eca4c0f9/",
+    "blurb": "",
+    "searchText": "elder: able to exhort in sound doctrine figure qualification  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "qualification"
+  },
+  {
+    "id": "f.elder-disciplined--73b75a5d",
+    "name": "Elder: disciplined",
+    "type": "figure",
+    "url": "/entities/f.elder-disciplined--73b75a5d/",
+    "blurb": "",
+    "searchText": "elder: disciplined figure qualification  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "qualification"
+  },
+  {
+    "id": "f.elder-hold-firm-to-the-trustworthy-word--33ecf1fc",
+    "name": "Elder: hold firm to the trustworthy word",
+    "type": "figure",
+    "url": "/entities/f.elder-hold-firm-to-the-trustworthy-word--33ecf1fc/",
+    "blurb": "",
+    "searchText": "elder: hold firm to the trustworthy word figure qualification  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "qualification"
+  },
+  {
+    "id": "f.elder-holy--404d6c1a",
+    "name": "Elder: holy",
+    "type": "figure",
+    "url": "/entities/f.elder-holy--404d6c1a/",
+    "blurb": "",
+    "searchText": "elder: holy figure qualification  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "qualification"
+  },
+  {
+    "id": "f.elder-hospitable--e2ba2fcf",
+    "name": "Elder: hospitable",
+    "type": "figure",
+    "url": "/entities/f.elder-hospitable--e2ba2fcf/",
+    "blurb": "",
+    "searchText": "elder: hospitable figure qualification  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "qualification"
+  },
+  {
+    "id": "f.elder-lover-of-good--95b9f30d",
+    "name": "Elder: lover of good",
+    "type": "figure",
+    "url": "/entities/f.elder-lover-of-good--95b9f30d/",
+    "blurb": "",
+    "searchText": "elder: lover of good figure qualification  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "qualification"
+  },
+  {
+    "id": "f.elder-not-a-drunkard--57640ef8",
+    "name": "Elder: not a drunkard",
+    "type": "figure",
+    "url": "/entities/f.elder-not-a-drunkard--57640ef8/",
+    "blurb": "",
+    "searchText": "elder: not a drunkard figure qualification  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "qualification"
+  },
+  {
+    "id": "f.elder-not-arrogant--33f9fa7b",
+    "name": "Elder: not arrogant",
+    "type": "figure",
+    "url": "/entities/f.elder-not-arrogant--33f9fa7b/",
+    "blurb": "",
+    "searchText": "elder: not arrogant figure qualification  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "qualification"
+  },
+  {
+    "id": "f.elder-not-greedy-for-gain--441355cf",
+    "name": "Elder: not greedy for gain",
+    "type": "figure",
+    "url": "/entities/f.elder-not-greedy-for-gain--441355cf/",
+    "blurb": "",
+    "searchText": "elder: not greedy for gain figure qualification  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "qualification"
+  },
+  {
+    "id": "f.elder-not-quick-tempered--0ab5519a",
+    "name": "Elder: not quick-tempered",
+    "type": "figure",
+    "url": "/entities/f.elder-not-quick-tempered--0ab5519a/",
+    "blurb": "",
+    "searchText": "elder: not quick-tempered figure qualification  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "qualification"
+  },
+  {
+    "id": "f.elder-not-violent--d28f7be8",
+    "name": "Elder: not violent",
+    "type": "figure",
+    "url": "/entities/f.elder-not-violent--d28f7be8/",
+    "blurb": "",
+    "searchText": "elder: not violent figure qualification  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "qualification"
+  },
+  {
+    "id": "f.elder-rebuke-those-who-contradict--851a6aad",
+    "name": "Elder: rebuke those who contradict",
+    "type": "figure",
+    "url": "/entities/f.elder-rebuke-those-who-contradict--851a6aad/",
+    "blurb": "",
+    "searchText": "elder: rebuke those who contradict figure qualification  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "qualification"
+  },
+  {
+    "id": "f.elder-self-controlled--218b088b",
+    "name": "Elder: self-controlled",
+    "type": "figure",
+    "url": "/entities/f.elder-self-controlled--218b088b/",
+    "blurb": "",
+    "searchText": "elder: self-controlled figure qualification  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "qualification"
+  },
+  {
+    "id": "f.elder-upright--06458930",
+    "name": "Elder: upright",
+    "type": "figure",
+    "url": "/entities/f.elder-upright--06458930/",
+    "blurb": "",
+    "searchText": "elder: upright figure qualification  ",
+    "references": 1,
+    "books": [
+      "Titus"
+    ],
+    "category": "qualification"
+  }
+]

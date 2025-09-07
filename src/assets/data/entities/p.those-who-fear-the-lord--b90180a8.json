@@ -1,0 +1,18 @@
+{
+  "id": "p.those-who-fear-the-lord--b90180a8",
+  "name": "Those who fear the LORD",
+  "type": "person",
+  "references": [
+    "Mal 3:16-18"
+  ],
+  "category": "pious-group",
+  "blurb": "Community that speaks together; marked for remembrance and treasured possession.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      3
+    ]
+  }
+}

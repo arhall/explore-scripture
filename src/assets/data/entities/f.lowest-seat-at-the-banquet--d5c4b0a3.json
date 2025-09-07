@@ -1,0 +1,24 @@
+{
+  "name": "Lowest seat at the banquet",
+  "type": "figure",
+  "category": "teaching",
+  "references": [
+    "Luke 14:7–11"
+  ],
+  "unique_to": "Luke",
+  "aka": [],
+  "id": "f.lowest-seat-at-the-banquet--d5c4b0a3",
+  "source_book": "Luke",
+  "source_books": [
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Luke": [
+      14
+    ]
+  }
+}

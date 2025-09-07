@@ -1,0 +1,22 @@
+{
+  "id": "e.sword--3b7a1e0f",
+  "name": "Sword",
+  "type": "entity",
+  "references": [
+    "Nah 3:15"
+  ],
+  "category": "weapon",
+  "aka": [],
+  "blurb": "Paired with fire against locust-like hosts; emblem of inexorable judgment.",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "e.sword--cec57e7b"
+  ],
+  "book_references": {
+    "Nahum": [
+      3
+    ]
+  }
+}

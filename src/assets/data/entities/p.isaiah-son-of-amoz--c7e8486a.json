@@ -1,0 +1,25 @@
+{
+  "name": "Isaiah son of Amoz",
+  "type": "person",
+  "references": [
+    "Isaiah 1:1; 2:1; 6; 7:3; 20:2–3; 37–39"
+  ],
+  "blurb": "Jerusalem court prophet spanning the reigns of Uzziah, Jotham, Ahaz, and Hezekiah. His ministry unites holy vision (ch. 6) with political counsel (7–8; 36–39) and eschatological comfort (40–66). Later tradition remembers his martyrdom (sawn in two; cf. Heb 11:37).",
+  "relations": {
+    "father": "Amoz",
+    "location": "Jerusalem"
+  },
+  "category": "prophet",
+  "cross_references": [
+    "Hebrews 11:37"
+  ],
+  "id": "p.isaiah-son-of-amoz--c7e8486a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Isaiah": [
+      1
+    ]
+  }
+}

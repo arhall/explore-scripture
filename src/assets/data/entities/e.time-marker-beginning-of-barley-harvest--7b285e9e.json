@@ -1,0 +1,18 @@
+{
+  "name": "Time marker: beginning of barley harvest",
+  "type": "entity",
+  "references": [
+    "Ruth 1:22; 2:23"
+  ],
+  "blurb": "Liturgical calendar cues the narrative—Passover/Weeks season of firstfruits underscores themes of provision and renewal.",
+  "category": "calendar",
+  "id": "e.time-marker-beginning-of-barley-harvest--7b285e9e",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ruth": [
+      1
+    ]
+  }
+}

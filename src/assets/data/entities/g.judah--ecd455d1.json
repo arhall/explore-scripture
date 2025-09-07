@@ -1,0 +1,23 @@
+{
+  "name": "Judah",
+  "type": "group",
+  "references": [
+    "Amos 2:4–5"
+  ],
+  "blurb": "Rejected the law of YHWH; lies led them astray; Jerusalem consumed by fire.",
+  "category": "nation",
+  "id": "g.judah--ecd455d1",
+  "canonical_id": "g.judah--5b0f7352",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "g.judah--1f7d2a4c",
+    "g.judah--a34b84cd"
+  ],
+  "book_references": {
+    "Amos": [
+      2
+    ]
+  }
+}

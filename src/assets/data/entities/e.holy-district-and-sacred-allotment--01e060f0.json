@@ -1,0 +1,18 @@
+{
+  "name": "Holy district and sacred allotment",
+  "type": "entity",
+  "references": [
+    "Ezekiel 45:1–8; 48:8–14"
+  ],
+  "blurb": "A central strip for sanctuary, priests, Levites, and the city—land use encodes theological priorities.",
+  "category": "land",
+  "id": "e.holy-district-and-sacred-allotment--01e060f0",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      45
+    ]
+  }
+}

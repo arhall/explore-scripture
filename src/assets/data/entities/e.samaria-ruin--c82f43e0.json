@@ -1,0 +1,19 @@
+{
+  "id": "e.samaria-ruin--c82f43e0",
+  "name": "Samaria (ruin)",
+  "type": "entity",
+  "references": [
+    "Micah 1:6–7"
+  ],
+  "category": "city",
+  "blurb": "Northern capital to be made a heap in the field; idolatrous wealth smashed and burned.",
+  "canonical_id": "e.samaria--fcae1760",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      1
+    ]
+  }
+}

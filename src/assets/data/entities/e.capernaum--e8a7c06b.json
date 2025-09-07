@@ -1,0 +1,50 @@
+{
+  "name": "Capernaum",
+  "type": "entity",
+  "category": "city",
+  "references": [
+    "Matt 4:13",
+    "Matt 8:5",
+    "Matt 11:23",
+    "Mark 1:21",
+    "Mark 2:1",
+    "Luke 4:31",
+    "Luke 7:1",
+    "John 2:12",
+    "John 6:17",
+    "John 6:24"
+  ],
+  "blurb": "Lakeside hub of teaching and healing; later warned for unbelief.",
+  "aka": [],
+  "id": "e.capernaum--e8a7c06b",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Mark",
+    "Luke",
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      4,
+      8,
+      11
+    ],
+    "Mark": [
+      1,
+      2
+    ],
+    "Luke": [
+      4,
+      7
+    ],
+    "John": [
+      2,
+      6
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "book": "1 Thessalonians",
+  "chapter": 1,
+  "entity_count": 18,
+  "entities": [
+    {
+      "id": "p.silas-silvanus--3ff90d56",
+      "name": "Silas (Silvanus)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 4
+    },
+    {
+      "id": "e.achaia--ba67eea7",
+      "name": "Achaia",
+      "type": "entity",
+      "role": "province",
+      "refs_count": 3
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 24
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "p.timothy--227fb1d9",
+      "name": "Timothy",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 12
+    },
+    {
+      "id": "e.macedonia--58a26877",
+      "name": "Macedonia",
+      "type": "entity",
+      "role": "province",
+      "refs_count": 5
+    },
+    {
+      "id": "g.church-of-the-thessalonians--e62e69ff",
+      "name": "Church of the Thessalonians",
+      "type": "group",
+      "role": "assembly",
+      "refs_count": 3
+    },
+    {
+      "id": "f.steadfastness-of-hope--756db1f9",
+      "name": "Steadfastness of hope",
+      "type": "figure",
+      "role": "triad",
+      "refs_count": 1
+    },
+    {
+      "id": "f.turned-to-god-from-idols--540b650d",
+      "name": "Turned to God from Idols",
+      "type": "figure",
+      "role": "conversion",
+      "refs_count": 1
+    }
+  ]
+}

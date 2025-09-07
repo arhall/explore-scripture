@@ -1,0 +1,77 @@
+{
+  "book": "Revelation",
+  "chapter": 14,
+  "entity_count": 21,
+  "entities": [
+    {
+      "id": "e.zion--4bd3e8e2",
+      "name": "Zion",
+      "type": "entity",
+      "role": "holy-mount",
+      "refs_count": 3
+    },
+    {
+      "id": "f.babylon-the-great-the-prostitute--8e0d98d3",
+      "name": "Babylon the Great (the prostitute)",
+      "type": "figure",
+      "role": "city-symbol",
+      "refs_count": 2
+    },
+    {
+      "id": "g.three-angels-messages--697cc9f0",
+      "name": "three angels’ messages",
+      "type": "group",
+      "role": "angelic-announcement",
+      "refs_count": 1
+    },
+    {
+      "id": "f.blessed-are-the-dead-who-die-in-the-lord-from-now-on--9b526d64",
+      "name": "Blessed are the dead who die in the Lord from now on",
+      "type": "figure",
+      "role": "beatitude",
+      "refs_count": 1
+    },
+    {
+      "id": "f.heptad-index--733a558f",
+      "name": "Heptad index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "p.another-angel-came-out-of-the-temple-in-heaven-he-too-had-a-sharp-sickle--e58f004d",
+      "name": "another angel came out of the temple in heaven, he too had a sharp sickle",
+      "type": "person",
+      "role": "angelic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.numeric-symbolism-index--20cda2ea",
+      "name": "Numeric symbolism index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.one-like-a-son-of-man-with-a-sharp-sickle--b91bc6b7",
+      "name": "one like a Son of Man with a sharp sickle",
+      "type": "figure",
+      "role": "harvest",
+      "refs_count": 1
+    },
+    {
+      "id": "f.great-winepress-of-god-s-wrath-1-600-stadia--e8de88f2",
+      "name": "great winepress of God’s wrath (1,600 stadia)",
+      "type": "figure",
+      "role": "judgment",
+      "refs_count": 1
+    },
+    {
+      "id": "e.babylon--9d648bf6",
+      "name": "Babylon",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 2
+    }
+  ]
+}

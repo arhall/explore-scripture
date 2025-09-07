@@ -1,0 +1,18 @@
+{
+  "name": "Gallows fifty cubits high",
+  "type": "entity",
+  "references": [
+    "Esther 5:14; 7:9–10"
+  ],
+  "blurb": "Instrument of intimidation turned into poetic justice—Haman is hung on his own device.",
+  "category": "record",
+  "id": "e.gallows-fifty-cubits-high--40641bef",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      5
+    ]
+  }
+}

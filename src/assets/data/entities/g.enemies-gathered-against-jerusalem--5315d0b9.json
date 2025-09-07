@@ -1,0 +1,20 @@
+{
+  "id": "g.enemies-gathered-against-jerusalem--5315d0b9",
+  "name": "Enemies gathered against Jerusalem",
+  "type": "group",
+  "references": [
+    "Zech 12:2-9",
+    "Zech 14:1-3"
+  ],
+  "category": "hostile-coalition",
+  "blurb": "Siege coalition ultimately shattered by divine intervention.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      12,
+      14
+    ]
+  }
+}

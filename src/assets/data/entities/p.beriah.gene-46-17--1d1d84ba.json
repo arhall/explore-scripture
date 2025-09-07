@@ -1,0 +1,19 @@
+{
+  "name": "Beriah",
+  "type": "person",
+  "references": [
+    "Genesis 46:17"
+  ],
+  "blurb": "Listed among the descendants who went down to Egypt with Jacob.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.beriah.gene-46-17--1d1d84ba",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      46
+    ]
+  }
+}

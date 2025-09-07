@@ -1,0 +1,18 @@
+{
+  "id": "e.olive-oil--e2ca6c1e",
+  "name": "Olive oil",
+  "type": "entity",
+  "references": [
+    "Zech 4:12"
+  ],
+  "category": "symbolic-resource",
+  "blurb": "Flow of Spirit-mediated supply for the lampstand.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      4
+    ]
+  }
+}

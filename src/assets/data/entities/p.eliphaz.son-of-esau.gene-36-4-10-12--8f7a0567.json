@@ -1,0 +1,21 @@
+{
+  "name": "Eliphaz (son of Esau)",
+  "type": "person",
+  "references": [
+    "Genesis 36:4,10–12"
+  ],
+  "blurb": "Firstborn of Esau by Adah; father of Teman, Omar, Zepho, Gatam, Kenaz; by Timna he fathers Amalek.",
+  "category": "genealogy",
+  "cross_references": [
+    "1 Chronicles 1:35–36"
+  ],
+  "id": "p.eliphaz.son-of-esau.gene-36-4-10-12--8f7a0567",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

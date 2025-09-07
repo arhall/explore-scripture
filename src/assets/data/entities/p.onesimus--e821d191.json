@@ -1,0 +1,25 @@
+{
+  "name": "Onesimus",
+  "type": "person",
+  "category": "letter-carrier",
+  "references": [
+    "Col 4:9",
+    "Philem 10-16"
+  ],
+  "cross_references": [
+    "Philem 10–16"
+  ],
+  "aka": [],
+  "id": "p.onesimus--e821d191",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      4
+    ]
+  }
+}

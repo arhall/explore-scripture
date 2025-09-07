@@ -1,0 +1,22 @@
+{
+  "name": "Merab",
+  "type": "person",
+  "references": [
+    "1 Samuel 18:17–19"
+  ],
+  "blurb": "Saul’s elder daughter promised then given to Adriel—politics of marriage.",
+  "relations": {
+    "father": "Saul",
+    "sister": "Michal"
+  },
+  "category": "narrative",
+  "id": "p.merab--e143733e",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      18
+    ]
+  }
+}

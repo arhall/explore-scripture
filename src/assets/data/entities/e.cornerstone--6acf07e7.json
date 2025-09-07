@@ -1,0 +1,18 @@
+{
+  "id": "e.cornerstone--6acf07e7",
+  "name": "Cornerstone",
+  "type": "entity",
+  "references": [
+    "Zech 10:4"
+  ],
+  "category": "architectural-symbol",
+  "blurb": "Foundation of communal stability re-emerging from Judah.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      10
+    ]
+  }
+}

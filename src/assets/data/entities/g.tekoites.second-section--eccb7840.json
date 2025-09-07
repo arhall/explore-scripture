@@ -1,0 +1,19 @@
+{
+  "name": "Tekoites (second section)",
+  "type": "group",
+  "references": [
+    "Nehemiah 3:27"
+  ],
+  "blurb": "Despite unhelpful nobles, commoners double down—exemplary persistence.",
+  "category": "narrative",
+  "id": "g.tekoites.second-section--eccb7840",
+  "canonical_id": "g.tekoites.first-section--0187d410",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      3
+    ]
+  }
+}

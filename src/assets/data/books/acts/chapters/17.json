@@ -1,0 +1,77 @@
+{
+  "book": "Acts",
+  "chapter": 17,
+  "entity_count": 27,
+  "entities": [
+    {
+      "id": "g.stoic-and-epicurean-philosophers--63c5bef2",
+      "name": "Stoic and Epicurean philosophers",
+      "type": "group",
+      "role": "philosophers",
+      "refs_count": 1
+    },
+    {
+      "id": "f.berea-mission--0246d0c3",
+      "name": "Berea mission",
+      "type": "figure",
+      "role": "mission",
+      "refs_count": 1
+    },
+    {
+      "id": "p.silas-silvanus--3ff90d56",
+      "name": "Silas (Silvanus)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 4
+    },
+    {
+      "id": "f.decrees-of-caesar-charge--cd0fc8b7",
+      "name": "Decrees of Caesar (charge)",
+      "type": "figure",
+      "role": "legal",
+      "refs_count": 1
+    },
+    {
+      "id": "e.athens-areopagus--d1071eb0",
+      "name": "Athens (Areopagus)",
+      "type": "entity",
+      "role": "venue",
+      "refs_count": 1
+    },
+    {
+      "id": "f.altar-to-an-unknown-god--ba76c380",
+      "name": "Altar to an unknown god",
+      "type": "figure",
+      "role": "object",
+      "refs_count": 1
+    },
+    {
+      "id": "f.speeches-in-acts-index--79e8df4b",
+      "name": "Speeches in Acts (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 10
+    },
+    {
+      "id": "g.dionysius-the-areopagite-and-damaris--5001b9be",
+      "name": "Dionysius the Areopagite and Damaris",
+      "type": "group",
+      "role": "converts",
+      "refs_count": 1
+    },
+    {
+      "id": "f.journeys-index--f80d022a",
+      "name": "Journeys (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 2
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 24
+    }
+  ]
+}

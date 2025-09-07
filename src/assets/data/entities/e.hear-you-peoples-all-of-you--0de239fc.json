@@ -1,0 +1,18 @@
+{
+  "id": "e.hear-you-peoples-all-of-you--0de239fc",
+  "name": "Hear, you peoples—all of you",
+  "type": "entity",
+  "references": [
+    "Micah 1:2"
+  ],
+  "category": "summons",
+  "blurb": "Universal summons; the case against Israel educates the nations.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      1
+    ]
+  }
+}

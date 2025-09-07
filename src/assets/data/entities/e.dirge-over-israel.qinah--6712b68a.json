@@ -1,0 +1,18 @@
+{
+  "name": "Dirge over Israel (qinah)",
+  "type": "entity",
+  "references": [
+    "Amos 5:1–3"
+  ],
+  "blurb": "Funeral song anticipates national death—lament as truth‑telling.",
+  "category": "lament",
+  "id": "e.dirge-over-israel.qinah--6712b68a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Amos": [
+      5
+    ]
+  }
+}

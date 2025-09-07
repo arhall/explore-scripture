@@ -1,0 +1,28 @@
+{
+  "name": "Power of the gospel",
+  "type": "title",
+  "category": "thesis",
+  "references": [
+    "Rom 1:16"
+  ],
+  "greek_terms": [
+    {
+      "term": "εὐαγγέλιον",
+      "gloss": "gospel"
+    }
+  ],
+  "blurb": "The gospel is God’s power for salvation to everyone who believes, Jew first and also Greek.",
+  "aka": [],
+  "id": "t.power-of-the-gospel--9c3bf86d",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      1
+    ]
+  }
+}

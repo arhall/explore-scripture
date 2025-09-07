@@ -1,0 +1,18 @@
+{
+  "name": "Lament for the princes of Israel (lions’ whelps)",
+  "type": "entity",
+  "references": [
+    "Ezekiel 19"
+  ],
+  "blurb": "Royal cubs learn to tear prey and are caged; a vine is uprooted—Davidic pathos under judgment.",
+  "category": "lament",
+  "id": "e.lament-for-the-princes-of-israel.lions-whelps--a03bad2d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      19
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+[
+  {
+    "id": "g.cherubim.gene-3-24--583c9558",
+    "name": "Cherubim",
+    "type": "group",
+    "url": "/entities/g.cherubim.gene-3-24--583c9558/",
+    "blurb": "Heavenly guardians stationed at Eden’s eastern gate with a flaming sword. They mark that re-entry to God’s presence is barred except by His provision, foreshadowing later tabernacle/temple symbolism.",
+    "searchText": "cherubim group narrative heavenly guardians stationed at eden’s eastern gate with a flaming sword. they mark that re-entry to god’s presence is barred except by his provision, foreshadowing later tabernacle/temple symbolism. ",
+    "references": 4,
+    "books": [
+      "1 Kings"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.tarshish.gene-10-3-4--a7a9a084",
+    "name": "Tarshish",
+    "type": "person",
+    "url": "/entities/p.tarshish.gene-10-3-4--a7a9a084/",
+    "blurb": "Descendant of Javan; part of the Japhethite branch associated with maritime and northern peoples.",
+    "searchText": "tarshish person genealogy descendant of javan; part of the japhethite branch associated with maritime and northern peoples. ",
+    "references": 3,
+    "books": [
+      "1 Kings"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.sheba.joktan.gene-10-26-29--1ce633dc",
+    "name": "Sheba (Joktan)",
+    "type": "person",
+    "url": "/entities/p.sheba.joktan.gene-10-26-29--1ce633dc/",
+    "blurb": "Son of Joktan; associated with Arabian regions and trade.",
+    "searchText": "sheba (joktan) person genealogy son of joktan; associated with arabian regions and trade. ",
+    "references": 2,
+    "books": [
+      "1 Kings"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.ophir.gene-10-26-29--d1448d17",
+    "name": "Ophir",
+    "type": "person",
+    "url": "/entities/p.ophir.gene-10-26-29--d1448d17/",
+    "blurb": "Son of Joktan; associated with Arabian regions and trade.",
+    "searchText": "ophir person genealogy son of joktan; associated with arabian regions and trade. ",
+    "references": 2,
+    "books": [
+      "1 Kings"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.sheba.jokshan.gene-25-3-4--426f8001",
+    "name": "Sheba (Jokshan)",
+    "type": "person",
+    "url": "/entities/p.sheba.jokshan.gene-25-3-4--426f8001/",
+    "blurb": "Descendant of Jokshan; branch of Abraham’s Keturah-line.",
+    "searchText": "sheba (jokshan) person genealogy descendant of jokshan; branch of abraham’s keturah-line. ",
+    "references": 2,
+    "books": [
+      "1 Kings"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "f.glory-cloud-filling-the-tabernacle--4ea7790a",
+    "name": "Glory-cloud filling the tabernacle",
+    "type": "figure",
+    "url": "/entities/f.glory-cloud-filling-the-tabernacle--4ea7790a/",
+    "blurb": "Visible sign of divine indwelling that guides Israel’s journeys.",
+    "searchText": "glory-cloud filling the tabernacle figure narrative visible sign of divine indwelling that guides israel’s journeys. ",
+    "references": 2,
+    "books": [
+      "1 Kings"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "f.glory-of-the-lord--eadf4e36",
+    "name": "Glory of the LORD",
+    "type": "figure",
+    "url": "/entities/f.glory-of-the-lord--eadf4e36/",
+    "blurb": "Appears at the inauguration of worship; fire consumes the offering. Theophany confirms that atonement is God’s gift, not human achievement.",
+    "searchText": "glory of the lord figure narrative appears at the inauguration of worship; fire consumes the offering. theophany confirms that atonement is god’s gift, not human achievement. ",
+    "references": 2,
+    "books": [
+      "1 Kings"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.solomon.son-of-david--c76a3c48",
+    "name": "Solomon (son of David)",
+    "type": "person",
+    "url": "/entities/p.solomon.son-of-david--c76a3c48/",
+    "blurb": "Royal figure anchoring the Song’s frame—owner of vineyards, bearer of the wedding crown, patron of wisdom and song (1 Kgs 4:32). He can be read as the bridegroom or as symbolic foil whose grandeur is relativized by the couple’s mutual love.",
+    "searchText": "solomon (son of david) person royal royal figure anchoring the song’s frame—owner of vineyards, bearer of the wedding crown, patron of wisdom and song (1 kgs 4:32). he can be read as the bridegroom or as symbolic foil whose grandeur is relativized by the couple’s mutual love. ",
+    "references": 2,
+    "books": [
+      "1 Kings"
+    ],
+    "category": "royal"
+  }
+]

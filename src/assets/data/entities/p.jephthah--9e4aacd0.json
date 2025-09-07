@@ -1,0 +1,15 @@
+{
+  "name": "Jephthah",
+  "type": "person",
+  "category": "faith-example",
+  "references": [
+    "Heb 11:32"
+  ],
+  "aka": [],
+  "id": "p.jephthah--9e4aacd0",
+  "book_references": {
+    "Hebrews": [
+      11
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Woman of Thebez with millstone",
+  "type": "person",
+  "references": [
+    "Judges 9:50–54"
+  ],
+  "blurb": "Anonymous heroine whose quick-witted strike ends Abimelech’s reign of terror—humbling the proud.",
+  "category": "narrative",
+  "id": "p.woman-of-thebez-with-millstone--8da97358",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      9
+    ]
+  }
+}

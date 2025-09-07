@@ -1,0 +1,19 @@
+{
+  "name": "Mehetabel",
+  "type": "person",
+  "references": [
+    "Genesis 36:39"
+  ],
+  "blurb": "Wife of Hadad (Hadar), queenly figure named with her lineage—daughter of Matred, granddaughter of Mezahab.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.mehetabel.gene-36-39--e799dc30",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

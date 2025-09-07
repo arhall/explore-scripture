@@ -1,0 +1,17 @@
+{
+  "name": "Zenas the lawyer",
+  "type": "person",
+  "category": "lawyer",
+  "references": [
+    "Titus 3:13"
+  ],
+  "aka": [
+    "Zenas"
+  ],
+  "id": "p.zenas-the-lawyer--ad6cc315",
+  "book_references": {
+    "Titus": [
+      3
+    ]
+  }
+}

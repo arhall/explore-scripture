@@ -1,0 +1,15 @@
+{
+  "name": "Firstborn",
+  "type": "title",
+  "category": "rank",
+  "references": [
+    "Heb 1:6"
+  ],
+  "aka": [],
+  "id": "t.firstborn--a7bb9e0c",
+  "book_references": {
+    "Hebrews": [
+      1
+    ]
+  }
+}

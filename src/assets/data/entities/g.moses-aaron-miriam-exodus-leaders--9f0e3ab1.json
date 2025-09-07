@@ -1,0 +1,18 @@
+{
+  "id": "g.moses-aaron-miriam-exodus-leaders--9f0e3ab1",
+  "name": "Moses, Aaron, Miriam (Exodus leaders)",
+  "type": "group",
+  "references": [
+    "Micah 6:4"
+  ],
+  "category": "exodus",
+  "blurb": "Exodus credentials ground the lawsuit—past grace magnifies present guilt.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      6
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Dodanim (Rodanim)",
+  "type": "person",
+  "references": [
+    "Genesis 10:3–4"
+  ],
+  "blurb": "Descendant of Javan; part of the Japhethite branch associated with maritime and northern peoples.",
+  "relations": {
+    "parents": [
+      "Javan"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.dodanim.rodanim.gene-10-3-4--c1518d82",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

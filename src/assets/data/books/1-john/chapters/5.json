@@ -1,0 +1,77 @@
+{
+  "book": "1 John",
+  "chapter": 5,
+  "entity_count": 14,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.i-write-so-that-you-may-know-you-have-eternal-life--b52ce12d",
+      "name": "I write so that you may know you have eternal life",
+      "type": "figure",
+      "role": "assurance",
+      "refs_count": 1
+    },
+    {
+      "id": "f.textual-note-5-7-8-comma-johanneum--a7cba113",
+      "name": "Textual note: 5:7–8 Comma Johanneum",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1
+    },
+    {
+      "id": "f.everyone-born-of-god-does-not-keep-on-sinning--d80f1333",
+      "name": "everyone born of God does not keep on sinning",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1
+    },
+    {
+      "id": "f.keep-yourselves-from-idols--ed47cc08",
+      "name": "keep yourselves from idols",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1
+    },
+    {
+      "id": "f.came-by-water-and-blood-jesus-christ--f2f59774",
+      "name": "came by water and blood—Jesus Christ",
+      "type": "figure",
+      "role": "testimony",
+      "refs_count": 1
+    },
+    {
+      "id": "f.this-is-the-victory-that-has-overcome-the-world-our-faith--7b09c43b",
+      "name": "this is the victory that has overcome the world—our faith",
+      "type": "figure",
+      "role": "testimony",
+      "refs_count": 1
+    },
+    {
+      "id": "f.the-spirit-is-the-one-who-testifies--1b5339fe",
+      "name": "the Spirit is the one who testifies",
+      "type": "figure",
+      "role": "testimony",
+      "refs_count": 1
+    },
+    {
+      "id": "f.if-anyone-sees-his-brother-committing-sin-not-leading-to-death-he-shall-ask--7bb47366",
+      "name": "if anyone sees his brother committing sin not leading to death he shall ask",
+      "type": "figure",
+      "role": "prayer",
+      "refs_count": 1
+    },
+    {
+      "id": "f.his-commandments-are-not-burdensome--6a9c7d66",
+      "name": "his commandments are not burdensome",
+      "type": "figure",
+      "role": "testimony",
+      "refs_count": 1
+    }
+  ]
+}

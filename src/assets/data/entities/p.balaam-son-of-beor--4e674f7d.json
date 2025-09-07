@@ -1,0 +1,36 @@
+{
+  "name": "Balaam son of Beor",
+  "type": "person",
+  "references": [
+    "Numbers 22–24; 31:8",
+    "Deuteronomy 23:4–5",
+    "2 Pet 2:15",
+    "Jude 11"
+  ],
+  "blurb": "Diviner who speaks true oracles under constraint yet later counsels seduction—tragic ambiguity.",
+  "category": "narrative",
+  "cross_references": [
+    "2 Peter 2:15",
+    "Jude 11",
+    "Revelation 2:14",
+    "Numbers 22–24"
+  ],
+  "id": "p.balaam-son-of-beor--4e674f7d",
+  "source_testaments": [
+    "OT"
+  ],
+  "aka": [
+    "Balaam"
+  ],
+  "book_references": {
+    "Deuteronomy": [
+      23
+    ],
+    "2 Peter": [
+      2
+    ],
+    "Jude": [
+      11
+    ]
+  }
+}

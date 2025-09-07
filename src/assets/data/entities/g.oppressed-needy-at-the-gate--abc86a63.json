@@ -1,0 +1,18 @@
+{
+  "name": "Oppressed needy at the gate",
+  "type": "group",
+  "references": [
+    "Amos 5:12; 5:15"
+  ],
+  "blurb": "Those who seek justice are crushed—Amos calls for goodness in the courts.",
+  "category": "victims",
+  "id": "g.oppressed-needy-at-the-gate--abc86a63",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Amos": [
+      5
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Jesus (Justus)",
+  "type": "person",
+  "category": "coworker",
+  "references": [
+    "Col 4:11"
+  ],
+  "aka": [
+    "Justus"
+  ],
+  "id": "p.jesus-justus--b7d62fea",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      4
+    ]
+  }
+}

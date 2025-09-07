@@ -1,0 +1,35 @@
+{
+  "book": "Judges",
+  "chapter": 9,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "p.abimelech-son-of-jerubbaal.gideon--55116883",
+      "name": "Abimelech son of Jerubbaal (Gideon)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.jotham-son-of-jerubbaal--dbd6b1ee",
+      "name": "Jotham son of Jerubbaal",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.shechemites-and-the-tower-of-shechem--27fd91d0",
+      "name": "Shechemites and the tower of Shechem",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.woman-of-thebez-with-millstone--8da97358",
+      "name": "Woman of Thebez with millstone",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "book": "Numbers",
+  "chapter": 33,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "e.stages-in-the-wilderness.itinerary--65512b56",
+      "name": "Stages in the wilderness (itinerary)",
+      "type": "entity",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

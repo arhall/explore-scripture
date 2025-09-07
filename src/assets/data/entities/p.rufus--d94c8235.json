@@ -1,0 +1,21 @@
+{
+  "name": "Rufus",
+  "type": "person",
+  "category": "chosen",
+  "references": [
+    "Rom 16:13"
+  ],
+  "aka": [],
+  "id": "p.rufus--d94c8235",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      16
+    ]
+  }
+}

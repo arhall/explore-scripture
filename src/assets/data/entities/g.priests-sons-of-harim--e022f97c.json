@@ -1,0 +1,20 @@
+{
+  "name": "Priests: sons of Harim",
+  "type": "group",
+  "references": [
+    "Ezra 2:39"
+  ],
+  "blurb": "Priestly division restored in the early return. Their 1017 members signal continuity of altar and sacrifice—legitimacy of worship tied to genealogical fidelity.",
+  "category": "worship",
+  "count": 1017,
+  "count_note": "Count per Ezra 2:39",
+  "id": "g.priests-sons-of-harim--e022f97c",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      2
+    ]
+  }
+}

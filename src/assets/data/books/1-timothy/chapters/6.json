@@ -1,0 +1,77 @@
+{
+  "book": "1 Timothy",
+  "chapter": 6,
+  "entity_count": 28,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.fight-the-good-fight-of-the-faith--f7cf0ab5",
+      "name": "fight the good fight of the faith",
+      "type": "figure",
+      "role": "struggle",
+      "refs_count": 1
+    },
+    {
+      "id": "f.love-of-money-root-of-evils--077fd5e4",
+      "name": "love of money root of evils",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1
+    },
+    {
+      "id": "g.slaves--81740c63",
+      "name": "slaves",
+      "type": "group",
+      "role": "social",
+      "refs_count": 2
+    },
+    {
+      "id": "g.morbid-craving-for-controversy--e1eb2f1b",
+      "name": "morbid craving for controversy",
+      "type": "group",
+      "role": "vice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.pierced-themselves-with-many-pangs--c89497b8",
+      "name": "pierced themselves with many pangs",
+      "type": "figure",
+      "role": "consequence",
+      "refs_count": 1
+    },
+    {
+      "id": "f.be-rich-in-good-works--d2b8e963",
+      "name": "be rich in good works",
+      "type": "figure",
+      "role": "charge",
+      "refs_count": 1
+    },
+    {
+      "id": "f.brought-nothing-into-the-world--e86b3f87",
+      "name": "brought nothing into the world",
+      "type": "figure",
+      "role": "proverb",
+      "refs_count": 1
+    },
+    {
+      "id": "f.charge-the-rich-not-to-be-haughty--30596eda",
+      "name": "charge the rich not to be haughty",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1
+    },
+    {
+      "id": "f.take-hold-of-eternal-life--32ed5850",
+      "name": "take hold of eternal life",
+      "type": "figure",
+      "role": "salvation",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "book": "Acts",
+  "chapter": 16,
+  "entity_count": 22,
+  "entities": [
+    {
+      "id": "e.bithynia-province--d00bbb46",
+      "name": "Bithynia (province)",
+      "type": "entity",
+      "role": "province",
+      "refs_count": 1
+    },
+    {
+      "id": "p.silas-silvanus--3ff90d56",
+      "name": "Silas (Silvanus)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 4
+    },
+    {
+      "id": "g.god-fearers-theosebeis--8ba75b09",
+      "name": "God-fearers (theosebeis)",
+      "type": "group",
+      "role": "gentile-associates",
+      "refs_count": 3
+    },
+    {
+      "id": "e.macedonia-province--6bbaf226",
+      "name": "Macedonia (province)",
+      "type": "entity",
+      "role": "province",
+      "refs_count": 3
+    },
+    {
+      "id": "e.place-of-prayer-by-the-river--e38b2094",
+      "name": "Place of prayer by the river",
+      "type": "entity",
+      "role": "site",
+      "refs_count": 1
+    },
+    {
+      "id": "p.philippian-jailer-unnamed--9aafafe1",
+      "name": "Philippian jailer (unnamed)",
+      "type": "person",
+      "role": "convert",
+      "refs_count": 1
+    },
+    {
+      "id": "f.journeys-index--f80d022a",
+      "name": "Journeys (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 2
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 24
+    },
+    {
+      "id": "f.growth-summary-16-5--18df9b3f",
+      "name": "Growth summary (16:5)",
+      "type": "figure",
+      "role": "summary",
+      "refs_count": 1
+    },
+    {
+      "id": "t.strategoi-magistrates--76207114",
+      "name": "Strategoi (magistrates)",
+      "type": "title",
+      "role": "civic-title",
+      "refs_count": 1
+    }
+  ]
+}

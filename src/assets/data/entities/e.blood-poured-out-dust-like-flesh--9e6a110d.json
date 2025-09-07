@@ -1,0 +1,18 @@
+{
+  "id": "e.blood-poured-out-dust-like-flesh--9e6a110d",
+  "name": "Blood poured out/dust-like flesh",
+  "type": "entity",
+  "references": [
+    "Zeph 1:17"
+  ],
+  "category": "judgment-imagery",
+  "blurb": "Graphic portrayal of the Day’s carnage and mortality.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zephaniah": [
+      1
+    ]
+  }
+}

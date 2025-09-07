@@ -1,0 +1,18 @@
+{
+  "name": "Old man of Gibeah (host)",
+  "type": "person",
+  "references": [
+    "Judges 19:16–21"
+  ],
+  "blurb": "Offers flawed hospitality in a corrupt city—Sodom echo in Benjamin’s territory.",
+  "category": "narrative",
+  "id": "p.old-man-of-gibeah.host--1556c8eb",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      19
+    ]
+  }
+}

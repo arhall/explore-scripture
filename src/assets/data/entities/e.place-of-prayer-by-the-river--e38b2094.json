@@ -1,0 +1,23 @@
+{
+  "name": "Place of prayer by the river",
+  "type": "entity",
+  "category": "site",
+  "references": [
+    "Acts 16:13"
+  ],
+  "aka": [],
+  "id": "e.place-of-prayer-by-the-river--e38b2094",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      16
+    ]
+  }
+}

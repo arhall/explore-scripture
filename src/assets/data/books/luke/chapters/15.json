@@ -1,0 +1,28 @@
+{
+  "book": "Luke",
+  "chapter": 15,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "f.lost-coin--55663339",
+      "name": "Lost Coin",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1
+    },
+    {
+      "id": "f.lost-sheep--e6d97332",
+      "name": "Lost Sheep",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1
+    },
+    {
+      "id": "f.prodigal-son--e16f114b",
+      "name": "Prodigal Son",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Greet Laodicea; read the letter",
+  "type": "figure",
+  "category": "reading-instruction",
+  "references": [
+    "Col 4:15–16"
+  ],
+  "aka": [],
+  "id": "f.greet-laodicea-read-the-letter--72809175",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      4
+    ]
+  }
+}

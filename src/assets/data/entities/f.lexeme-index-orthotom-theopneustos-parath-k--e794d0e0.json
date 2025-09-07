@@ -1,0 +1,25 @@
+{
+  "name": "Lexeme index (orthotoméō, theopneustos, parathēkē)",
+  "type": "figure",
+  "category": "lexeme-index",
+  "references": [
+    "2 Tim passim"
+  ],
+  "greek_terms": [
+    {
+      "term": "ὀρθοτομέω",
+      "gloss": "rightly handle/cut straight"
+    },
+    {
+      "term": "θεόπνευστος",
+      "gloss": "God-breathed"
+    },
+    {
+      "term": "παραθήκη",
+      "gloss": "deposit"
+    }
+  ],
+  "aka": [],
+  "id": "f.lexeme-index-orthotom-theopneustos-parath-k--e794d0e0",
+  "book_references": {}
+}

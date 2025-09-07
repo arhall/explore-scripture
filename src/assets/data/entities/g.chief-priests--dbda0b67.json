@@ -1,0 +1,39 @@
+{
+  "name": "Chief Priests",
+  "type": "group",
+  "category": "leadership",
+  "references": [
+    "Matt 21–27",
+    "Mark 11–15"
+  ],
+  "blurb": "Temple authorities opposing Jesus—drivers of the plot culminating in trial.",
+  "aka": [],
+  "id": "g.chief-priests--dbda0b67",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Mark",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "Mark": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

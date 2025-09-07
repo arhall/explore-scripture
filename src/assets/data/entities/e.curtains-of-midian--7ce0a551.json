@@ -1,0 +1,18 @@
+{
+  "id": "e.curtains-of-midian--7ce0a551",
+  "name": "Curtains of Midian",
+  "type": "entity",
+  "references": [
+    "Hab 3:7"
+  ],
+  "category": "peoples",
+  "blurb": "Nomadic dwellings quake; motif of distant witnesses to YHWH’s advance.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      3
+    ]
+  }
+}

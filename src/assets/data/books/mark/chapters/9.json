@@ -1,0 +1,56 @@
+{
+  "book": "Mark",
+  "chapter": 9,
+  "entity_count": 7,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "t.kingdom-of-god--e6ae8d7f",
+      "name": "Kingdom of God",
+      "type": "title",
+      "role": "kingdom",
+      "refs_count": 16
+    },
+    {
+      "id": "f.exorcisms-in-mark-index--57803780",
+      "name": "Exorcisms in Mark (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 3
+    },
+    {
+      "id": "p.john-son-of-zebedee--b337fe0e",
+      "name": "John son of Zebedee",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 6
+    },
+    {
+      "id": "f.transfiguration--7155a70f",
+      "name": "Transfiguration",
+      "type": "figure",
+      "role": "theophany",
+      "refs_count": 3
+    },
+    {
+      "id": "p.james-son-of-zebedee--26675adb",
+      "name": "James son of Zebedee",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 5
+    },
+    {
+      "id": "f.second-passion-prediction--a16060cd",
+      "name": "Second passion prediction",
+      "type": "figure",
+      "role": "passion-forecast",
+      "refs_count": 1
+    }
+  ]
+}

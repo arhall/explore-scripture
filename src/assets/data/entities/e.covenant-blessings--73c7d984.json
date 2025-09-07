@@ -1,0 +1,21 @@
+{
+  "name": "Covenant blessings",
+  "type": "entity",
+  "references": [
+    "Leviticus 26:3–13"
+  ],
+  "blurb": "Rain, peace, fruitfulness, and God’s dwelling—shalom as covenant outcome.",
+  "category": "ritual",
+  "cross_references": [
+    "Deuteronomy 14:22–29"
+  ],
+  "id": "e.covenant-blessings--73c7d984",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Leviticus": [
+      26
+    ]
+  }
+}

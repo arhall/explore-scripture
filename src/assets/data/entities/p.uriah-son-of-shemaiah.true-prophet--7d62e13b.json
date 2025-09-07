@@ -1,0 +1,18 @@
+{
+  "name": "Uriah son of Shemaiah (true prophet)",
+  "type": "person",
+  "references": [
+    "Jeremiah 26:20–23"
+  ],
+  "blurb": "Prophesies like Jeremiah, flees to Egypt, yet is extradited and killed by Jehoiakim—truth is costly in regimes of fear.",
+  "category": "prophet",
+  "id": "p.uriah-son-of-shemaiah.true-prophet--7d62e13b",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      26
+    ]
+  }
+}

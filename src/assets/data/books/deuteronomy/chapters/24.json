@@ -1,0 +1,42 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 24,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "p.miriam--c5bed854",
+      "name": "Miriam (recalled)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.people-of-israel--ecedc898",
+      "name": "People of Israel (second generation)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.remember-what-the-lord-did-to-miriam--cd05ea1a",
+      "name": "Remember what the LORD did to Miriam",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1
+    },
+    {
+      "id": "e.kidnapping-prohibited.man-stealing--9acef8c6",
+      "name": "Kidnapping (man-stealing) prohibited",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1
+    }
+  ]
+}

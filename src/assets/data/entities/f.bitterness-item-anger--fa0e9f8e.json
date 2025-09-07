@@ -1,0 +1,21 @@
+{
+  "name": "Bitterness item: Anger",
+  "type": "figure",
+  "category": "vice",
+  "references": [
+    "Eph 4:31"
+  ],
+  "aka": [],
+  "id": "f.bitterness-item-anger--fa0e9f8e",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      4
+    ]
+  }
+}

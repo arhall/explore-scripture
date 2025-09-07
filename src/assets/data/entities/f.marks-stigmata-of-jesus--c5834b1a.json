@@ -1,0 +1,27 @@
+{
+  "name": "Marks (stigmata) of Jesus",
+  "type": "figure",
+  "category": "marks",
+  "references": [
+    "Gal 6:17"
+  ],
+  "greek_terms": [
+    {
+      "term": "στίγματα",
+      "gloss": "marks/brandings"
+    }
+  ],
+  "aka": [],
+  "id": "f.marks-stigmata-of-jesus--c5834b1a",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Galatians": [
+      6
+    ]
+  }
+}

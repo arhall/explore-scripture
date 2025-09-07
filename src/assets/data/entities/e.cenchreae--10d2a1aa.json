@@ -1,0 +1,25 @@
+{
+  "name": "Cenchreae",
+  "type": "entity",
+  "category": "port-city",
+  "references": [
+    "1 Cor 1:2 (region context)",
+    "Rom 16:1"
+  ],
+  "aka": [],
+  "id": "e.cenchreae--10d2a1aa",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "1 Corinthians": [
+      1
+    ],
+    "Romans": [
+      16
+    ]
+  }
+}

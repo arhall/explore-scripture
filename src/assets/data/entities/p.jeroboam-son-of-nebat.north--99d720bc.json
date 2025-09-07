@@ -1,0 +1,21 @@
+{
+  "name": "Jeroboam son of Nebat (north)",
+  "type": "person",
+  "references": [
+    "2 Chronicles 10–13"
+  ],
+  "blurb": "Leads secession and fashions rival priests and festivals; Chronicler highlights his sin as a template for apostasy.",
+  "category": "narrative",
+  "id": "p.jeroboam-son-of-nebat.north--99d720bc",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "2 Chronicles": [
+      10,
+      11,
+      12,
+      13
+    ]
+  }
+}

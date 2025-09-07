@@ -1,0 +1,77 @@
+{
+  "book": "Colossians",
+  "chapter": 3,
+  "entity_count": 39,
+  "entities": [
+    {
+      "id": "f.put-on-forgiveness--611b5c21",
+      "name": "Put on: Forgiveness",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1
+    },
+    {
+      "id": "f.put-on-compassion--c290fc12",
+      "name": "Put on: Compassion",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1
+    },
+    {
+      "id": "f.seek-the-things-above--6a2554cb",
+      "name": "Seek the things above",
+      "type": "figure",
+      "role": "orientation",
+      "refs_count": 1
+    },
+    {
+      "id": "f.husbands-love--f8137996",
+      "name": "Husbands love",
+      "type": "figure",
+      "role": "household-code",
+      "refs_count": 1
+    },
+    {
+      "id": "f.put-away-anger--f4c83722",
+      "name": "Put away: Anger",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.put-to-death-sexual-immorality--9a9c05d7",
+      "name": "Put to death: Sexual Immorality",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.word-of-christ-dwell-richly--87074c6b",
+      "name": "Word of Christ dwell richly",
+      "type": "figure",
+      "role": "word",
+      "refs_count": 1
+    },
+    {
+      "id": "f.when-christ-appears-you-will-appear-with-him--24c89c5d",
+      "name": "When Christ appears, you will appear with him",
+      "type": "figure",
+      "role": "eschatology",
+      "refs_count": 1
+    },
+    {
+      "id": "f.put-away-lying--7ca9c453",
+      "name": "Put away: Lying",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1
+    }
+  ]
+}

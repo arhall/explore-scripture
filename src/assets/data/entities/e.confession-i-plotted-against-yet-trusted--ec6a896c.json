@@ -1,0 +1,18 @@
+{
+  "name": "Confession I: Plotted against, yet trusted",
+  "type": "entity",
+  "references": [
+    "Jeremiah 11:18–23; 12:1–6"
+  ],
+  "blurb": "Jeremiah wrestles with divine justice and betrayal by his own town; God answers with a call to endurance—if you stumble with footmen, how will you compete with horses?",
+  "category": "lament",
+  "id": "e.confession-i-plotted-against-yet-trusted--ec6a896c",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      11
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Joshua",
+  "chapter": 10,
+  "entity_count": 7,
+  "entities": [
+    {
+      "id": "t.adoni-zedek-king-of-jerusalem--a0bb4341",
+      "name": "Adoni-Zedek king of Jerusalem",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "t.hoham-king-of-hebron--06fbd855",
+      "name": "Hoham king of Hebron",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "t.piram-king-of-jarmuth--c695932a",
+      "name": "Piram king of Jarmuth",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "t.japhia-king-of-lachish--082ca4a9",
+      "name": "Japhia king of Lachish",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "t.debir-king-of-eglon--54f158fd",
+      "name": "Debir king of Eglon",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.sun-and-moon-stand-still.gibeon-aijalon--c1154b82",
+      "name": "Sun and moon stand still (Gibeon/Aijalon)",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1
+    },
+    {
+      "id": "g.makkedah-libnah-lachish-eglon-hebron-debir.southern-captures--03da8d0d",
+      "name": "Makkedah, Libnah, Lachish, Eglon, Hebron, Debir (southern captures)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

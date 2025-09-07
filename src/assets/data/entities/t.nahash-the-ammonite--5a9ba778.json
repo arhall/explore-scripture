@@ -1,0 +1,18 @@
+{
+  "name": "Nahash the Ammonite",
+  "type": "title",
+  "references": [
+    "1 Samuel 11"
+  ],
+  "blurb": "Siege of Jabesh-gilead with eye-gouging terms; Saul’s Spirit-stirred rescue unites the tribes.",
+  "category": "narrative",
+  "id": "t.nahash-the-ammonite--5a9ba778",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      11
+    ]
+  }
+}

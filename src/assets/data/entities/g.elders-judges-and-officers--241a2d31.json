@@ -1,0 +1,18 @@
+{
+  "name": "Elders, judges, and officers",
+  "type": "group",
+  "references": [
+    "Deuteronomy 16:18–20; 17:8–13"
+  ],
+  "blurb": "Local leaders tasked with impartial justice, handling hard cases at the central court—justice as a communal vocation.",
+  "category": "narrative",
+  "id": "g.elders-judges-and-officers--241a2d31",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Deuteronomy": [
+      16
+    ]
+  }
+}

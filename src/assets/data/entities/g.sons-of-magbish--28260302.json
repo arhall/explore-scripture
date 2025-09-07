@@ -1,0 +1,20 @@
+{
+  "name": "Sons of Magbish",
+  "type": "group",
+  "references": [
+    "Ezra 2:30"
+  ],
+  "blurb": "Enumerated among the first returnees under Zerubbabel; their counted men totaled 156. Family identity stabilizes land claims and synagogue-era communities; numbers witness to costly obedience.",
+  "category": "record",
+  "count": 156,
+  "count_note": "Count per Ezra 2:30",
+  "id": "g.sons-of-magbish--28260302",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      2
+    ]
+  }
+}

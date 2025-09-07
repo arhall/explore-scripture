@@ -1,0 +1,22 @@
+{
+  "name": "Textual note: 2 Cor 6:14–7:1 placement",
+  "type": "figure",
+  "category": "textual-notes",
+  "references": [
+    "2 Cor 6:14–7:1"
+  ],
+  "note": "Some consider this a non-Pauline insertion or later relocation; manuscript support debated.",
+  "aka": [],
+  "id": "f.textual-note-2-cor-6-14-7-1-placement--d4c2a15f",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "2 Corinthians": [
+      6
+    ]
+  }
+}

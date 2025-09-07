@@ -1,0 +1,22 @@
+{
+  "name": "Household of Narcissus (in the Lord)",
+  "type": "group",
+  "category": "household",
+  "references": [
+    "Rom 16:11"
+  ],
+  "house_church": true,
+  "aka": [],
+  "id": "g.household-of-narcissus-in-the-lord--c8ac43ef",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      16
+    ]
+  }
+}

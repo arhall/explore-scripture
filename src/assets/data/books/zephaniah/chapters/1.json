@@ -1,0 +1,77 @@
+{
+  "book": "Zephaniah",
+  "chapter": 1,
+  "entity_count": 35,
+  "entities": [
+    {
+      "id": "e.temple--1d486079",
+      "name": "Temple",
+      "type": "entity",
+      "role": "cultic",
+      "refs_count": 8
+    },
+    {
+      "id": "p.zephaniah-son-of-cushi--ab737f2e",
+      "name": "Zephaniah son of Cushi",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1
+    },
+    {
+      "id": "p.josiah-king-of-judah-context--c4304447",
+      "name": "Josiah king of Judah (context)",
+      "type": "person",
+      "role": "king",
+      "refs_count": 2
+    },
+    {
+      "id": "p.priests--17ce1c8d",
+      "name": "Priests",
+      "type": "person",
+      "role": "cultic-staff",
+      "refs_count": 5
+    },
+    {
+      "id": "p.officials--d601e9ad",
+      "name": "Officials",
+      "type": "person",
+      "role": "administration",
+      "refs_count": 1
+    },
+    {
+      "id": "p.merchants-traders--e8cff65b",
+      "name": "Merchants/Traders",
+      "type": "person",
+      "role": "economic",
+      "refs_count": 1
+    },
+    {
+      "id": "p.householders-on-rooftops--4eb5d5ab",
+      "name": "Householders on rooftops",
+      "type": "person",
+      "role": "lay-worshipers",
+      "refs_count": 1
+    },
+    {
+      "id": "p.gate-watch-personnel--d2fbeb0b",
+      "name": "Gate/Watch personnel",
+      "type": "person",
+      "role": "civic",
+      "refs_count": 1
+    },
+    {
+      "id": "g.jerusalem--3453dc1c",
+      "name": "Jerusalem",
+      "type": "group",
+      "role": "city-people",
+      "refs_count": 4
+    },
+    {
+      "id": "f.superscription--0ed1f723",
+      "name": "Superscription",
+      "type": "figure",
+      "role": "book-frame",
+      "refs_count": 2
+    }
+  ]
+}

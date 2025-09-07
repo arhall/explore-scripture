@@ -1,0 +1,15 @@
+{
+  "name": "new song",
+  "type": "figure",
+  "category": "hymn",
+  "references": [
+    "Rev 5:9-14"
+  ],
+  "aka": [],
+  "id": "f.new-song--61f06187",
+  "book_references": {
+    "Revelation": [
+      5
+    ]
+  }
+}

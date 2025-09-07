@@ -1,0 +1,77 @@
+{
+  "book": "Revelation",
+  "chapter": 3,
+  "entity_count": 20,
+  "entities": [
+    {
+      "id": "f.the-name-of-the-city-of-my-god-the-new-jerusalem--ac36be19",
+      "name": "the name of the city of my God, the New Jerusalem",
+      "type": "figure",
+      "role": "promise",
+      "refs_count": 1
+    },
+    {
+      "id": "f.buy-gold-refined-by-fire--c42230a9",
+      "name": "buy gold refined by fire",
+      "type": "figure",
+      "role": "counsel",
+      "refs_count": 1
+    },
+    {
+      "id": "f.heptad-index--733a558f",
+      "name": "Heptad index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.buy-salve-to-anoint-your-eyes--572f62f0",
+      "name": "buy salve to anoint your eyes",
+      "type": "figure",
+      "role": "counsel",
+      "refs_count": 1
+    },
+    {
+      "id": "t.key-of-david--40c014e3",
+      "name": "Key of David",
+      "type": "title",
+      "role": "authority",
+      "refs_count": 1
+    },
+    {
+      "id": "f.numeric-symbolism-index--20cda2ea",
+      "name": "Numeric symbolism index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.pillar-in-the-temple-of-my-god--02f24df1",
+      "name": "pillar in the temple of my God",
+      "type": "figure",
+      "role": "promise",
+      "refs_count": 1
+    },
+    {
+      "id": "f.i-will-come-like-a-thief--f44ca2bf",
+      "name": "I will come like a thief",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1
+    },
+    {
+      "id": "e.book-of-life--8432a3da",
+      "name": "book of life",
+      "type": "entity",
+      "role": "register",
+      "refs_count": 1
+    },
+    {
+      "id": "f.my-new-name--fd4b3311",
+      "name": "my new name",
+      "type": "figure",
+      "role": "promise",
+      "refs_count": 1
+    }
+  ]
+}

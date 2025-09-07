@@ -1,0 +1,1273 @@
+{
+  "book": "1 Timothy",
+  "slug": "1-timothy",
+  "entity_count": 138,
+  "key_figures": [
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 2,
+      "score": 17
+    },
+    {
+      "id": "p.adam.gene-2-5--6921e439",
+      "name": "Adam",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.eve.gene-2-5--7c858d94",
+      "name": "Eve",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.timothy--227fb1d9",
+      "name": "Timothy",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.alexander--4dd84a32",
+      "name": "Alexander",
+      "type": "person",
+      "role": "opponent",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.hymenaeus--4e3678af",
+      "name": "Hymenaeus",
+      "type": "person",
+      "role": "opponent",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 6,
+      "score": 8
+    },
+    {
+      "id": "g.deacons--a2471f07",
+      "name": "deacons",
+      "type": "group",
+      "role": "office",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.overseers-bishops--72c3f6fb",
+      "name": "overseers (bishops)",
+      "type": "group",
+      "role": "office",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.older-women--334ddcf4",
+      "name": "older women",
+      "type": "group",
+      "role": "cohort",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.slaves--81740c63",
+      "name": "slaves",
+      "type": "group",
+      "role": "social",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.younger-men--1519bc4c",
+      "name": "younger men",
+      "type": "group",
+      "role": "cohort",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.morbid-craving-for-controversy--e1eb2f1b",
+      "name": "morbid craving for controversy",
+      "type": "group",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.younger-women--d64e825d",
+      "name": "younger women",
+      "type": "group",
+      "role": "cohort",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.deaconesses-women-3-11--b3648381",
+      "name": "deaconesses/women (3:11)",
+      "type": "group",
+      "role": "office",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.widows-enrolled--8cbee06e",
+      "name": "widows (enrolled)",
+      "type": "group",
+      "role": "order",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.false-teachers--78ca172c",
+      "name": "false teachers",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.ascetic-forbidders-marriage-foods--296b2dd5",
+      "name": "ascetic forbidders (marriage/foods)",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.younger-widows--1b318e7e",
+      "name": "younger widows",
+      "type": "group",
+      "role": "order",
+      "refs_count": 1,
+      "score": 7
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 2,
+      "score": 17
+    },
+    {
+      "id": "p.adam.gene-2-5--6921e439",
+      "name": "Adam",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.eve.gene-2-5--7c858d94",
+      "name": "Eve",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.timothy--227fb1d9",
+      "name": "Timothy",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.alexander--4dd84a32",
+      "name": "Alexander",
+      "type": "person",
+      "role": "opponent",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.hymenaeus--4e3678af",
+      "name": "Hymenaeus",
+      "type": "person",
+      "role": "opponent",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 6,
+      "score": 8
+    },
+    {
+      "id": "g.deacons--a2471f07",
+      "name": "deacons",
+      "type": "group",
+      "role": "office",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.overseers-bishops--72c3f6fb",
+      "name": "overseers (bishops)",
+      "type": "group",
+      "role": "office",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.older-women--334ddcf4",
+      "name": "older women",
+      "type": "group",
+      "role": "cohort",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.slaves--81740c63",
+      "name": "slaves",
+      "type": "group",
+      "role": "social",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.younger-men--1519bc4c",
+      "name": "younger men",
+      "type": "group",
+      "role": "cohort",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.morbid-craving-for-controversy--e1eb2f1b",
+      "name": "morbid craving for controversy",
+      "type": "group",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.younger-women--d64e825d",
+      "name": "younger women",
+      "type": "group",
+      "role": "cohort",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.deaconesses-women-3-11--b3648381",
+      "name": "deaconesses/women (3:11)",
+      "type": "group",
+      "role": "office",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.widows-enrolled--8cbee06e",
+      "name": "widows (enrolled)",
+      "type": "group",
+      "role": "order",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.false-teachers--78ca172c",
+      "name": "false teachers",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.ascetic-forbidders-marriage-foods--296b2dd5",
+      "name": "ascetic forbidders (marriage/foods)",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.younger-widows--1b318e7e",
+      "name": "younger widows",
+      "type": "group",
+      "role": "order",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.teachers-of-the-law--039eafd2",
+      "name": "teachers of the Law",
+      "type": "group",
+      "role": "teachers",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.men-lifting-holy-hands--ae297a93",
+      "name": "men lifting holy hands",
+      "type": "group",
+      "role": "practice",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.rich-in-this-present-age--04f80cdd",
+      "name": "rich in this present age",
+      "type": "group",
+      "role": "wealth",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.those-who-desire-to-be-rich--bbfc9d3f",
+      "name": "those who desire to be rich",
+      "type": "group",
+      "role": "temptation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.older-men--90f04a13",
+      "name": "older men",
+      "type": "group",
+      "role": "cohort",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.elders-presbyters--92e988af",
+      "name": "elders (presbyters)",
+      "type": "group",
+      "role": "office",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.masters--cd98fdb7",
+      "name": "masters",
+      "type": "group",
+      "role": "social",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.kings-and-all-in-high-positions--2db0ec1f",
+      "name": "kings and all in high positions",
+      "type": "group",
+      "role": "civic",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.women-s-adornment-and-modesty--ed18a845",
+      "name": "women’s adornment and modesty",
+      "type": "group",
+      "role": "practice",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "t.mystery-of-godliness--ad8d9a64",
+      "name": "Mystery of godliness",
+      "type": "title",
+      "role": "hymn",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.trustworthy-saying--37efe0bd",
+      "name": "trustworthy saying",
+      "type": "title",
+      "role": "formula",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.one-god-and-one-mediator--7194197c",
+      "name": "one God and one Mediator",
+      "type": "title",
+      "role": "christology",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.man-of-god--ccc57f33",
+      "name": "man of God",
+      "type": "title",
+      "role": "address",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "f.myths-and-endless-genealogies--0b7e24fd",
+      "name": "myths and endless genealogies",
+      "type": "figure",
+      "role": "controversy",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.deacon-not-greedy-for-dishonest-gain--4515957c",
+      "name": "Deacon: not greedy for dishonest gain",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.fight-the-good-fight-of-the-faith--f7cf0ab5",
+      "name": "fight the good fight of the faith",
+      "type": "figure",
+      "role": "struggle",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.faith-and-a-good-conscience--a84a1c3d",
+      "name": "faith and a good conscience",
+      "type": "figure",
+      "role": "virtue-pair",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.widow-eligibility-brought-up-children--7b8f8127",
+      "name": "Widow eligibility: brought up children",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.widow-eligibility-devoted-to-every-good-work--b5a14a26",
+      "name": "Widow eligibility: devoted to every good work",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.love-of-money-root-of-evils--077fd5e4",
+      "name": "love of money root of evils",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.widow-eligibility-washed-the-saints-feet--e4ec60ef",
+      "name": "Widow eligibility: washed the saints’ feet",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.overseer-children-submissive--6fc38442",
+      "name": "Overseer: children submissive",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.lawful-use-of-the-law--34feacc1",
+      "name": "lawful use of the Law",
+      "type": "figure",
+      "role": "law",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.pierced-themselves-with-many-pangs--c89497b8",
+      "name": "pierced themselves with many pangs",
+      "type": "figure",
+      "role": "consequence",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.stewardship-from-god-by-faith--49b7f6d8",
+      "name": "stewardship from God by faith",
+      "type": "figure",
+      "role": "goal",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.saved-through-childbearing--b3514b39",
+      "name": "saved through childbearing",
+      "type": "figure",
+      "role": "interpretive",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.be-rich-in-good-works--d2b8e963",
+      "name": "be rich in good works",
+      "type": "figure",
+      "role": "charge",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.widow-eligibility-children-grandchildren-first-to-care--913eaabf",
+      "name": "Widow eligibility: children/grandchildren first to care",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.widow-eligibility-sets-her-hope-on-god-and-continues-in-supplications--84de185d",
+      "name": "Widow eligibility: sets her hope on God and continues in supplications",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.hymn-vindicated-by-the-spirit--6c0a4527",
+      "name": "Hymn: Vindicated by the Spirit",
+      "type": "figure",
+      "role": "hymn-line",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.supplications-prayers-intercessions-thanksgivings--945dfc70",
+      "name": "supplications, prayers, intercessions, thanksgivings",
+      "type": "figure",
+      "role": "prayer-list",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.brought-nothing-into-the-world--e86b3f87",
+      "name": "brought nothing into the world",
+      "type": "figure",
+      "role": "proverb",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.double-honor--16ffe380",
+      "name": "double honor",
+      "type": "figure",
+      "role": "valuation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.overseer-not-a-recent-convert--e28f3883",
+      "name": "Overseer: not a recent convert",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.king-eternal-immortal-invisible--f3d3017f",
+      "name": "King eternal, immortal, invisible",
+      "type": "figure",
+      "role": "doxology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.deacon-manage-children-and-households-well--425c8d05",
+      "name": "Deacon: manage children and households well",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.charge-the-rich-not-to-be-haughty--30596eda",
+      "name": "charge the rich not to be haughty",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.practice-these-things-immerse-in-them--296049b6",
+      "name": "practice these things; immerse in them",
+      "type": "figure",
+      "role": "discipline",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.the-law-for-the-lawless--26d46f04",
+      "name": "the Law for the lawless",
+      "type": "figure",
+      "role": "vice-catalogue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.take-hold-of-eternal-life--32ed5850",
+      "name": "take hold of eternal life",
+      "type": "figure",
+      "role": "salvation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.overseer-husband-of-one-wife--c46e2ad1",
+      "name": "Overseer: husband of one wife",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.godliness-with-contentment--62d1e4df",
+      "name": "godliness with contentment",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.the-appearing-of-our-lord-jesus--7538d5aa",
+      "name": "the appearing of our Lord Jesus",
+      "type": "figure",
+      "role": "eschatology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.formerly-a-blasphemer-and-persecutor--4db54bc6",
+      "name": "formerly a blasphemer and persecutor",
+      "type": "figure",
+      "role": "testimony",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.guard-the-deposit--85940424",
+      "name": "guard the deposit",
+      "type": "figure",
+      "role": "charge",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.overseer-manage-household-well--7e413e9b",
+      "name": "Overseer: manage household well",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.widow-eligibility-enroll-if-not-less-than-sixty--581684f7",
+      "name": "Widow eligibility: enroll if not less than sixty",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.hymn-taken-up-in-glory--4a2ec837",
+      "name": "Hymn: Taken up in glory",
+      "type": "figure",
+      "role": "hymn-line",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.the-sins-of-some-are-conspicuous--6bf2e2f1",
+      "name": "the sins of some are conspicuous",
+      "type": "figure",
+      "role": "discernment",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.good-works-are-also-conspicuous--790d47c2",
+      "name": "good works are also conspicuous",
+      "type": "figure",
+      "role": "discernment",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.do-nothing-from-partiality--5c24d05b",
+      "name": "do nothing from partiality",
+      "type": "figure",
+      "role": "justice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.imagining-godliness-as-a-means-of-gain--cd6df071",
+      "name": "imagining godliness as a means of gain",
+      "type": "figure",
+      "role": "critique",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.deaconess-women-dignified--a4e5d1e4",
+      "name": "Deaconess/Women: dignified",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.do-not-neglect-the-gift--e41b57e4",
+      "name": "do not neglect the gift",
+      "type": "figure",
+      "role": "charism",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.deacon-not-addicted-to-much-wine--61df5650",
+      "name": "Deacon: not addicted to much wine",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.deacon-hold-the-mystery-of-the-faith-with-a-clear-conscience--53980d07",
+      "name": "Deacon: hold the mystery of the faith with a clear conscience",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.overseer-not-a-lover-of-money--4f28e10f",
+      "name": "Overseer: not a lover of money",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.christ-jesus-displayed-perfect-patience--91f6c982",
+      "name": "Christ Jesus displayed perfect patience",
+      "type": "figure",
+      "role": "mercy",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.widow-eligibility-wife-of-one-husband--952590b3",
+      "name": "Widow eligibility: wife of one husband",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.deacon-not-double-tongued--68fda731",
+      "name": "Deacon: not double-tongued",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.overseer-not-quarrelsome--7cf2056a",
+      "name": "Overseer: not quarrelsome",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.overseer-well-thought-of-by-outsiders--c45dc8a1",
+      "name": "Overseer: well thought of by outsiders",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.deceitful-spirits-and-teachings-of-demons--ec78ba2b",
+      "name": "deceitful spirits and teachings of demons",
+      "type": "figure",
+      "role": "opponents",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.store-up-treasure-as-a-good-foundation--76ff7989",
+      "name": "store up treasure as a good foundation",
+      "type": "figure",
+      "role": "promise",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.some-have-turned-after-satan--40034ecb",
+      "name": "some have turned after Satan",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.keep-the-command-unstained-until-the-appearing--4c487a26",
+      "name": "keep the command unstained until the appearing",
+      "type": "figure",
+      "role": "obedience",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.shipwrecked-faith--33eb6ea0",
+      "name": "shipwrecked faith",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.prophecies-about-you--41e61141",
+      "name": "prophecies about you",
+      "type": "figure",
+      "role": "charism",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.widow-eligibility-not-self-indulgent--48c6446b",
+      "name": "Widow eligibility: not self-indulgent",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.hymn-manifested-in-the-flesh--6a715481",
+      "name": "Hymn: Manifested in the flesh",
+      "type": "figure",
+      "role": "hymn-line",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.widow-eligibility-truly-widows-left-all-alone--08004da3",
+      "name": "Widow eligibility: truly widows—left all alone",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.deaconess-women-not-slanderers--98ffe8a7",
+      "name": "Deaconess/Women: not slanderers",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-3-16-hymn-variant-god-he-who--a7fd2a22",
+      "name": "Textual note: 3:16 hymn variant (‘God/He who’)",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.overseer-respectable--317f543d",
+      "name": "Overseer: respectable",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.set-hope-on-god-not-riches--43ba85f6",
+      "name": "set hope on God not riches",
+      "type": "figure",
+      "role": "orientation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.ransom-for-all--72804640",
+      "name": "ransom for all",
+      "type": "figure",
+      "role": "atonement",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.handed-over-to-satan--097e8156",
+      "name": "handed over to Satan",
+      "type": "figure",
+      "role": "discipline",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.avoid-knowledge-falsely-so-called--af656aa4",
+      "name": "avoid knowledge falsely so-called",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.overseer-above-reproach--289eb728",
+      "name": "Overseer: above reproach",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.set-the-believers-an-example--1d5efc9c",
+      "name": "set the believers an example",
+      "type": "figure",
+      "role": "leadership",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.learn-quietly-with-all-submissiveness--d95e4054",
+      "name": "learn quietly with all submissiveness",
+      "type": "figure",
+      "role": "order",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.appointed-a-herald-and-apostle--b07d1d17",
+      "name": "appointed a herald and apostle",
+      "type": "figure",
+      "role": "commission",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.flee-these-things--e6de3a7f",
+      "name": "flee these things",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.be-ready-to-share--d91af609",
+      "name": "be ready to share",
+      "type": "figure",
+      "role": "charge",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sound-words-accord-with-godliness--2834f16e",
+      "name": "sound words—accord with godliness",
+      "type": "figure",
+      "role": "doctrine",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.do-good--61812857",
+      "name": "do good",
+      "type": "figure",
+      "role": "charge",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.rebuke-in-presence-of-all--dbd324cd",
+      "name": "rebuke in presence of all",
+      "type": "figure",
+      "role": "discipline",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.household-of-god-pillar-and-buttress--0709854d",
+      "name": "household of God / pillar and buttress",
+      "type": "figure",
+      "role": "ecclesiology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.deaconess-women-sober-minded--62a1f61d",
+      "name": "Deaconess/Women: sober-minded",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.hymn-believed-on-in-the-world--09df6e56",
+      "name": "Hymn: Believed on in the world",
+      "type": "figure",
+      "role": "hymn-line",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.deacon-husband-of-one-wife--e0d362a7",
+      "name": "Deacon: husband of one wife",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.overseer-sober-minded--e838a332",
+      "name": "Overseer: sober-minded",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.overseer-not-violent-but-gentle--25d43a6b",
+      "name": "Overseer: not violent but gentle",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.overseer-able-to-teach--cb945468",
+      "name": "Overseer: able to teach",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.a-little-wine-for-your-stomach--136e531a",
+      "name": "a little wine for your stomach",
+      "type": "figure",
+      "role": "pastoral-counsel",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.overseer-hospitable--ce6c3bd2",
+      "name": "Overseer: hospitable",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.hymn-seen-by-angels--cac462f8",
+      "name": "Hymn: Seen by angels",
+      "type": "figure",
+      "role": "hymn-line",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.deaconess-women-faithful-in-all-things--0b2e7a46",
+      "name": "Deaconess/Women: faithful in all things",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.hymn-proclaimed-among-the-nations--acd793be",
+      "name": "Hymn: Proclaimed among the nations",
+      "type": "figure",
+      "role": "hymn-line",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.peaceful-and-quiet-life--ad3e91c7",
+      "name": "peaceful and quiet life",
+      "type": "figure",
+      "role": "outcome",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-3-11-women-vs-wives--75aab7b3",
+      "name": "Textual note: 3:11 women vs wives",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.widow-eligibility-cared-for-the-afflicted--2955051a",
+      "name": "Widow eligibility: cared for the afflicted",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.deacon-dignified--01525711",
+      "name": "Deacon: dignified",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.be-generous--042f31f9",
+      "name": "be generous",
+      "type": "figure",
+      "role": "charge",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.deacon-tested-first-then-serve--bb7917cd",
+      "name": "Deacon: tested first then serve",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.everything-created-by-god-is-good--d4518aa3",
+      "name": "everything created by God is good",
+      "type": "figure",
+      "role": "creation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.widow-eligibility-well-known-for-good-works--31e36b2f",
+      "name": "Widow eligibility: well known for good works",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.honor-and-glory-forever--ea184537",
+      "name": "honor and glory forever",
+      "type": "figure",
+      "role": "doxology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.overseer-self-controlled--35510361",
+      "name": "Overseer: self-controlled",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.wage-the-good-warfare--977f86ed",
+      "name": "wage the good warfare",
+      "type": "figure",
+      "role": "charge",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.widow-eligibility-shown-hospitality--4e67f17d",
+      "name": "Widow eligibility: shown hospitality",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.do-not-admit-a-charge-without-two-or-three-witnesses--939a0712",
+      "name": "do not admit a charge without two or three witnesses",
+      "type": "figure",
+      "role": "procedure",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.pursue-righteousness-godliness-faith-love-steadfastness-gentleness--5b2540e7",
+      "name": "pursue righteousness godliness faith love steadfastness gentleness",
+      "type": "figure",
+      "role": "virtue-list",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.overseer-not-a-drunkard--948dfafa",
+      "name": "Overseer: not a drunkard",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.ephesus--a81cfcdf",
+      "name": "Ephesus",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.macedonia--58a26877",
+      "name": "Macedonia",
+      "type": "entity",
+      "role": "province",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.do-not-be-hasty-in-laying-on-hands--83fe45f3",
+      "name": "do not be hasty in laying on hands",
+      "type": "practice",
+      "role": "ordination",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.devote-yourself-to-the-public-reading-exhortation-teaching--2196828a",
+      "name": "devote yourself to the public reading, exhortation, teaching",
+      "type": "practice",
+      "role": "ministry",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

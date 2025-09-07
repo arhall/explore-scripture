@@ -1,0 +1,35 @@
+{
+  "book": "1 Samuel",
+  "chapter": 1,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "p.elkanah--96e47f98",
+      "name": "Elkanah",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 2
+    },
+    {
+      "id": "p.hannah--06cd303e",
+      "name": "Hannah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.peninnah--e28c14c0",
+      "name": "Peninnah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.eli-the-priest--a0684a21",
+      "name": "Eli the priest",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

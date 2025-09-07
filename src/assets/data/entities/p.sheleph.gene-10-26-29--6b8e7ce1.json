@@ -1,0 +1,24 @@
+{
+  "name": "Sheleph",
+  "type": "person",
+  "references": [
+    "Genesis 10:26–29"
+  ],
+  "blurb": "Son of Joktan; associated with Arabian regions and trade.",
+  "relations": {
+    "parents": [
+      "Joktan"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.sheleph.gene-10-26-29--6b8e7ce1",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

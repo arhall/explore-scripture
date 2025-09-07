@@ -1,0 +1,77 @@
+{
+  "book": "Galatians",
+  "chapter": 6,
+  "entity_count": 17,
+  "entities": [
+    {
+      "id": "f.prosopography-index--a2064234",
+      "name": "Prosopography (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.textual-note-israel-of-god-in-6-16--cbb9828b",
+      "name": "Textual note: Israel of God in 6:16",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1
+    },
+    {
+      "id": "f.new-creation-kain-ktisis--1e4fb1a2",
+      "name": "New creation (kainē ktisis)",
+      "type": "figure",
+      "role": "new-creation",
+      "refs_count": 1
+    },
+    {
+      "id": "f.each-will-bear-his-own-load--f3362b3a",
+      "name": "Each will bear his own load",
+      "type": "figure",
+      "role": "responsibility",
+      "refs_count": 1
+    },
+    {
+      "id": "f.see-with-what-large-letters--aa5d1dd2",
+      "name": "See with what large letters",
+      "type": "figure",
+      "role": "epistolary",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.the-israel-of-god-reading-note--a2b08fa8",
+      "name": "The Israel of God (reading note)",
+      "type": "figure",
+      "role": "interpretive-note",
+      "refs_count": 1
+    },
+    {
+      "id": "f.sowing-and-reaping--c97e2032",
+      "name": "Sowing and reaping",
+      "type": "figure",
+      "role": "principle",
+      "refs_count": 1
+    },
+    {
+      "id": "f.those-who-desire-a-good-showing-in-the-flesh--7c0e2cec",
+      "name": "Those who desire a good showing in the flesh",
+      "type": "figure",
+      "role": "motive",
+      "refs_count": 1
+    },
+    {
+      "id": "f.textual-note-gal-6-15-focus--a3d6496d",
+      "name": "Textual note: Gal 6:15 focus",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1
+    }
+  ]
+}

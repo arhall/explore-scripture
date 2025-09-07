@@ -1,0 +1,21 @@
+{
+  "book": "1 Samuel",
+  "chapter": 27,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "e.ziklag--ab3d6ac6",
+      "name": "Ziklag",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    },
+    {
+      "id": "t.achish-king-of-gath--cb61d592",
+      "name": "Achish king of Gath",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

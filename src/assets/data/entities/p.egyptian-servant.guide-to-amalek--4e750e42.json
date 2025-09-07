@@ -1,0 +1,18 @@
+{
+  "name": "Egyptian servant (guide to Amalek)",
+  "type": "person",
+  "references": [
+    "1 Samuel 30:11–15"
+  ],
+  "blurb": "Left for dead by his master; cared for by David and becomes providential guide—mercy opens intelligence.",
+  "category": "narrative",
+  "id": "p.egyptian-servant.guide-to-amalek--4e750e42",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      30
+    ]
+  }
+}

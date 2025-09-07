@@ -1,0 +1,18 @@
+{
+  "name": "Two sticks joined (Judah & Joseph)",
+  "type": "entity",
+  "references": [
+    "Ezekiel 37:15–28"
+  ],
+  "blurb": "Reunification enacted; one king over one people under an everlasting covenant and sanctuary presence.",
+  "category": "sign",
+  "id": "e.two-sticks-joined.judah-joseph--0a83a666",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      37
+    ]
+  }
+}

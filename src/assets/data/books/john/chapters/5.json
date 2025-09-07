@@ -1,0 +1,63 @@
+{
+  "book": "John",
+  "chapter": 5,
+  "entity_count": 8,
+  "entities": [
+    {
+      "id": "f.book-of-signs-index--9c42a3ac",
+      "name": "Book of Signs (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 7
+    },
+    {
+      "id": "f.festivals-in-john--4f63512e",
+      "name": "Festivals in John",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 6
+    },
+    {
+      "id": "p.lame-man-at-bethesda--e68d33a5",
+      "name": "Lame man at Bethesda",
+      "type": "person",
+      "role": "healed",
+      "refs_count": 1
+    },
+    {
+      "id": "f.witnesses-in-john--89d2e356",
+      "name": "Witnesses in John",
+      "type": "figure",
+      "role": "theme",
+      "refs_count": 3
+    },
+    {
+      "id": "f.text-critical-notes-john--08f724dd",
+      "name": "Text-critical notes (John)",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 3
+    },
+    {
+      "id": "e.bethesda-bethzatha-pool--cda2e674",
+      "name": "Bethesda (Bethzatha) pool",
+      "type": "entity",
+      "role": "site",
+      "refs_count": 1
+    },
+    {
+      "id": "f.unknown-feast-john-5-1--d38a5e47",
+      "name": "Unknown feast (John 5:1)",
+      "type": "figure",
+      "role": "festival",
+      "refs_count": 1
+    },
+    {
+      "id": "f.replacement-fulfillment-in-john--9da18d3a",
+      "name": "Replacement & fulfillment in John",
+      "type": "figure",
+      "role": "theme",
+      "refs_count": 4
+    }
+  ]
+}

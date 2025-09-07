@@ -1,0 +1,14 @@
+{
+  "name": "Christian reception: Kingdom is the LORD’s",
+  "type": "entity",
+  "references": [
+    "NT echoes"
+  ],
+  "blurb": "Themes of the Day of the Lord and the universal kingdom inform NT eschatology.",
+  "category": "reception",
+  "id": "e.christian-reception-kingdom-is-the-lords--b3d2efb2",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

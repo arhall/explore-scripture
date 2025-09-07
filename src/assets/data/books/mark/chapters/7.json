@@ -1,0 +1,49 @@
+{
+  "book": "Mark",
+  "chapter": 7,
+  "entity_count": 6,
+  "entities": [
+    {
+      "id": "f.hand-washing-tradition-controversy--cc53e7a5",
+      "name": "Hand-washing tradition controversy",
+      "type": "figure",
+      "role": "controversy",
+      "refs_count": 1
+    },
+    {
+      "id": "p.canaanite-woman--c73fb238",
+      "name": "Canaanite woman",
+      "type": "person",
+      "role": "gentile",
+      "refs_count": 1
+    },
+    {
+      "id": "g.pharisees--60cfcde1",
+      "name": "Pharisees",
+      "type": "group",
+      "role": "sect",
+      "refs_count": 6
+    },
+    {
+      "id": "f.corban-tradition--cf19f465",
+      "name": "Corban (tradition)",
+      "type": "figure",
+      "role": "halakhah",
+      "refs_count": 1
+    },
+    {
+      "id": "p.deaf-mute-ephphatha--3e44ff62",
+      "name": "Deaf-mute (Ephphatha)",
+      "type": "person",
+      "role": "healed",
+      "refs_count": 1
+    },
+    {
+      "id": "f.clean-and-unclean-heart--ac6d09f2",
+      "name": "Clean and unclean (heart)",
+      "type": "figure",
+      "role": "controversy",
+      "refs_count": 1
+    }
+  ]
+}

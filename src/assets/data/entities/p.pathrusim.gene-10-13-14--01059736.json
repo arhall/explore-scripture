@@ -1,0 +1,24 @@
+{
+  "name": "Pathrusim",
+  "type": "person",
+  "references": [
+    "Genesis 10:13–14"
+  ],
+  "blurb": "Descendant of Mizraim (Egypt); ancestor of groups associated with the Nile regions.",
+  "relations": {
+    "parents": [
+      "Mizraim"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.pathrusim.gene-10-13-14--01059736",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

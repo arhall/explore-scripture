@@ -1,0 +1,18 @@
+{
+  "name": "Satan",
+  "type": "figure",
+  "category": "adversary",
+  "references": [
+    "1 Thess 2:18"
+  ],
+  "aka": [
+    "the devil",
+    "the Tempter"
+  ],
+  "id": "f.satan--bf0233a4",
+  "book_references": {
+    "1 Thessalonians": [
+      2
+    ]
+  }
+}

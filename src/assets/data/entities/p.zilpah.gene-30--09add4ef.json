@@ -1,0 +1,25 @@
+{
+  "name": "Zilpah",
+  "type": "person",
+  "references": [
+    "Genesis 30"
+  ],
+  "blurb": "Leah’s maid who bears Gad and Asher to Jacob, furthering the growth of Israel’s household.",
+  "relations": {
+    "children": [
+      "Gad",
+      "Asher"
+    ]
+  },
+  "category": "narrative",
+  "cross_references": [],
+  "id": "p.zilpah.gene-30--09add4ef",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      30
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Meshullam son of Berechiah son of Meshezabel",
+  "type": "person",
+  "references": [
+    "Nehemiah 3:4"
+  ],
+  "blurb": "Urban stakeholder repairing opposite his house—place-based discipleship.",
+  "category": "narrative",
+  "id": "p.meshullam-son-of-berechiah-son-of-meshezabel--538fba85",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      3
+    ]
+  }
+}

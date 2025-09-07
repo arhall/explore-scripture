@@ -1,0 +1,14 @@
+{
+  "book": "Job",
+  "chapter": 31,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "e.jobs-oath-of-clearance.integrity-code--86fdf723",
+      "name": "Job’s oath of clearance (integrity code)",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1
+    }
+  ]
+}

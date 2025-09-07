@@ -1,0 +1,18 @@
+{
+  "name": "Scorching east wind",
+  "type": "entity",
+  "references": [
+    "Jonah 4:8"
+  ],
+  "blurb": "With the sun, intensifies Jonah’s discomfort—embodied pedagogy.",
+  "category": "cosmic",
+  "id": "e.scorching-east-wind--e7fc1ba4",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jonah": [
+      4
+    ]
+  }
+}

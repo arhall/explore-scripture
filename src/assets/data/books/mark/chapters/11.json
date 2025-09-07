@@ -1,0 +1,49 @@
+{
+  "book": "Mark",
+  "chapter": 11,
+  "entity_count": 6,
+  "entities": [
+    {
+      "id": "g.chief-priests--dbda0b67",
+      "name": "Chief Priests",
+      "type": "group",
+      "role": "leadership",
+      "refs_count": 2
+    },
+    {
+      "id": "f.fig-tree-withering--0113d002",
+      "name": "Fig tree (withering)",
+      "type": "figure",
+      "role": "sign",
+      "refs_count": 2
+    },
+    {
+      "id": "g.money-changers--a3d7b106",
+      "name": "Money-changers",
+      "type": "group",
+      "role": "economy",
+      "refs_count": 2
+    },
+    {
+      "id": "e.bethphage--30b5ed38",
+      "name": "Bethphage",
+      "type": "entity",
+      "role": "village",
+      "refs_count": 1
+    },
+    {
+      "id": "f.triumphal-entry--5fe5dc82",
+      "name": "Triumphal Entry",
+      "type": "figure",
+      "role": "event",
+      "refs_count": 3
+    },
+    {
+      "id": "e.bethany--4df7e1bd",
+      "name": "Bethany",
+      "type": "entity",
+      "role": "village",
+      "refs_count": 3
+    }
+  ]
+}

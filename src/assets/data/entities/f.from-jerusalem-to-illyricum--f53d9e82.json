@@ -1,0 +1,21 @@
+{
+  "name": "From Jerusalem to Illyricum",
+  "type": "figure",
+  "category": "mission-scope",
+  "references": [
+    "Rom 15:19"
+  ],
+  "aka": [],
+  "id": "f.from-jerusalem-to-illyricum--f53d9e82",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      15
+    ]
+  }
+}

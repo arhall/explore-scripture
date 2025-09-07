@@ -1,0 +1,21 @@
+{
+  "name": "Tryphaena",
+  "type": "person",
+  "category": "worker",
+  "references": [
+    "Rom 16:12"
+  ],
+  "aka": [],
+  "id": "p.tryphaena--93dd722f",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      16
+    ]
+  }
+}

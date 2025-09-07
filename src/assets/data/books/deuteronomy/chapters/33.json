@@ -1,0 +1,77 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 33,
+  "entity_count": 12,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "g.people-of-israel--ecedc898",
+      "name": "People of Israel (second generation)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.reuben--9636e0d2",
+      "name": "Reuben (tribe; Blessing of Moses)",
+      "type": "group",
+      "role": "poetry",
+      "refs_count": 1
+    },
+    {
+      "id": "g.judah--5b0f7352",
+      "name": "Judah (tribe; Blessing of Moses)",
+      "type": "group",
+      "role": "poetry",
+      "refs_count": 1
+    },
+    {
+      "id": "g.levi--b5b328a8",
+      "name": "Levi (tribe; Blessing of Moses)",
+      "type": "group",
+      "role": "poetry",
+      "refs_count": 1
+    },
+    {
+      "id": "g.benjamin--57fce3bd",
+      "name": "Benjamin (tribe; Blessing of Moses)",
+      "type": "group",
+      "role": "poetry",
+      "refs_count": 1
+    },
+    {
+      "id": "g.joseph-ephraim-manasseh--7c90273e",
+      "name": "Joseph—Ephraim & Manasseh (Blessing of Moses)",
+      "type": "group",
+      "role": "poetry",
+      "refs_count": 1
+    },
+    {
+      "id": "g.zebulun-and-issachar--0d9866df",
+      "name": "Zebulun and Issachar (tribes; Blessing of Moses)",
+      "type": "group",
+      "role": "poetry",
+      "refs_count": 1
+    },
+    {
+      "id": "g.gad--54d21397",
+      "name": "Gad (tribe; Blessing of Moses)",
+      "type": "group",
+      "role": "poetry",
+      "refs_count": 1
+    },
+    {
+      "id": "g.dan--7652eb80",
+      "name": "Dan (tribe; Blessing of Moses)",
+      "type": "group",
+      "role": "poetry",
+      "refs_count": 1
+    }
+  ]
+}

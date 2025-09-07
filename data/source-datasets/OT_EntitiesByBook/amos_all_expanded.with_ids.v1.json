@@ -1,0 +1,964 @@
+{
+  "book": "Amos",
+  "coverage": "Comprehensive Amos: prophet & Tekoa setting; Uzziah/Jeroboam frame; earthquake marker; full nation oracles (Damascus, Gaza, Tyre, Edom, Ammon, Moab, Judah, Israel); social classes & court critiques; shrines (Bethel/Gilgal/Beersheba) and Amaziah confrontation; geographies and comparison cities; five visions + intercessions; theological hymns, Day of YHWH, justice ethic, famine of the word; granular indictments; counter‑liturgies; restoration (Booth of David) and Acts 15 reception.",
+  "generated_at": "2025-09-02T22:16:06.952671",
+  "version": "v1.0-amos-all-expanded",
+  "id_scheme": "Cross-book stable by (type+primary-slug) with alias support; deterministic for new entries; reuses shared entities where present.",
+  "sections": [
+    {
+      "section": "Prophet & Superscription",
+      "entries": [
+        "Amos of Tekoa",
+        "Tekoa (Judah)",
+        "Earthquake marker (two years before)",
+        "Call narrative: ‘I was no prophet… but the LORD took me’"
+      ]
+    },
+    {
+      "section": "Historical Frame & Dynasties",
+      "entries": [
+        "Uzziah of Judah",
+        "Jeroboam II of Israel",
+        "House of Jeroboam"
+      ]
+    },
+    {
+      "section": "For Three Transgressions (Oracles Against Nations)",
+      "entries": [
+        "Damascus (Aram)",
+        "Gaza (Philistia)",
+        "Tyre (Phoenicia)",
+        "Edom",
+        "Ammon",
+        "Moab",
+        "Judah",
+        "Israel"
+      ]
+    },
+    {
+      "section": "Social Diagnoses & Class Profiles",
+      "entries": [
+        "Cows of Bashan (wealthy women)",
+        "Merchants with false balances",
+        "Judges at the gate (corrupted)",
+        "Drunkards of Samaria",
+        "Nazirites given wine",
+        "Prophets silenced (‘Do not prophesy!’)",
+        "Righteous sold for silver and sandals",
+        "Oppressed needy at the gate"
+      ]
+    },
+    {
+      "section": "Shrines, Priests, and Royal Confrontation",
+      "entries": [
+        "Bethel (royal sanctuary)",
+        "Gilgal (pilgrimage center)",
+        "Beersheba (southern shrine)",
+        "Amaziah the priest of Bethel",
+        "Amaziah’s wife (becomes a prostitute)",
+        "Amaziah’s children (fall by the sword)",
+        "Jeroboam II (in the Bethel dispute)"
+      ]
+    },
+    {
+      "section": "Geography, Comparison Cities, and Exodus Memory",
+      "entries": [
+        "Samaria (capital)",
+        "Mount Zion (in tension with Samaria)",
+        "Calneh",
+        "Hamath the great",
+        "Gath of the Philistines",
+        "Mount Carmel",
+        "The Arabah (rift valley)",
+        "Egypt (exodus memory)",
+        "Philistia & Aram (migration sovereignty)"
+      ]
+    },
+    {
+      "section": "Visions, Intercessions, and the Plumb Line",
+      "entries": [
+        "Vision: Locust swarm",
+        "Vision: Fire consuming the deep",
+        "Vision: Plumb line",
+        "Vision: Basket of summer fruit",
+        "Vision: YHWH beside the altar",
+        "Amos’ intercessions (twice)",
+        "YHWH relents… then will not relent"
+      ]
+    },
+    {
+      "section": "Theology, Hymns, and Rhetoric",
+      "entries": [
+        "You only have I known (election & accountability)",
+        "Does a lion roar…? (rhetorical chain)",
+        "Seek me and live",
+        "Day of YHWH is darkness, not light",
+        "Hymn: Maker of Pleiades and Orion",
+        "Hymn: He who forms the mountains…",
+        "Hymn: The LORD of hosts… who builds his chambers",
+        "Let justice roll down like waters",
+        "Famine of hearing the words of the LORD",
+        "Irony & sarcasm: ‘Go to Bethel and sin’",
+        "Dirge over Israel (qinah)",
+        "Woe oracles"
+      ]
+    },
+    {
+      "section": "Granular Indictments & Cultural Symptoms",
+      "entries": [
+        "Swearing, lying, murder, stealing, adultery (ten‑commandment breach)",
+        "Panting after the dust on the head of the poor",
+        "Father and son go in to the same girl",
+        "Garments taken in pledge beside every altar",
+        "Wine bought with fines in the house of their god",
+        "Ivory houses & winter/summer homes",
+        "Stretching themselves on beds of ivory",
+        "Inventing instruments like David (satirized)",
+        "Not grieved over the ruin of Joseph",
+        "Turning justice to wormwood",
+        "Hating the one who rebukes in the gate",
+        "Bribes and perverted justice"
+      ]
+    },
+    {
+      "section": "Counter‑Liturgies: Seeking God & Establishing Justice",
+      "entries": [
+        "Seek good, not evil, that you may live",
+        "Hate evil, love good",
+        "Let justice be established in the gate",
+        "Seek YHWH and live (anti‑pilgrimage)"
+      ]
+    },
+    {
+      "section": "Restoration & Mission Horizon",
+      "entries": [
+        "Booth of David restored",
+        "Nations called by my name",
+        "Plowman overtakes reaper; mountains drip wine",
+        "Replanted in their land, never again uprooted"
+      ]
+    },
+    {
+      "section": "Literary Patterns & Reception History",
+      "entries": [
+        "Formula: For three transgressions, even for four",
+        "Reception: James cites Amos at Jerusalem Council"
+      ]
+    }
+  ],
+  "entries_count": 80,
+  "entries": [
+    {
+      "name": "Amos of Tekoa",
+      "type": "person",
+      "references": [
+        "Amos 1:1; 7:14–15"
+      ],
+      "blurb": "Sheepbreeder and dresser of sycamore figs from Tekoa. A layman summoned by YHWH to confront northern Israel’s injustice and cultic corruption.",
+      "relations": {
+        "hometown": "Tekoa"
+      },
+      "category": "prophet",
+      "id": "p.amos-of-tekoa--c656eb34"
+    },
+    {
+      "name": "Tekoa (Judah)",
+      "type": "entity",
+      "references": [
+        "Amos 1:1"
+      ],
+      "blurb": "Village south of Jerusalem—launch pad for a prophetic mission that crosses borders into Israel.",
+      "category": "place",
+      "id": "e.tekoa--7dcc9cae"
+    },
+    {
+      "name": "Earthquake marker (two years before)",
+      "type": "entity",
+      "references": [
+        "Amos 1:1; Zech 14:5"
+      ],
+      "blurb": "Seismic memory dating Amos’ ministry—a shaking that embodies the book’s theme of divine disturbance.",
+      "category": "chronology",
+      "cross_references": [
+        "Zechariah 14:5"
+      ],
+      "id": "e.earthquake-marker.two-years-before--d9f36dfe"
+    },
+    {
+      "name": "Call narrative: ‘I was no prophet… but the LORD took me’",
+      "type": "entity",
+      "references": [
+        "Amos 7:14–15"
+      ],
+      "blurb": "Amos resists professional labels; vocation is an interruption—authority grounded in divine initiative, not guild status.",
+      "category": "vocation",
+      "id": "e.call-narrative-i-was-no-prophet-but-the-lord-took-me--36f77740"
+    },
+    {
+      "name": "Uzziah of Judah",
+      "type": "person",
+      "references": [
+        "Amos 1:1"
+      ],
+      "blurb": "Prosperous monarch; his reign provides the southern datum for Amos’ date.",
+      "category": "king",
+      "id": "p.uzziah-of-judah--aec578f4"
+    },
+    {
+      "name": "Jeroboam II of Israel",
+      "type": "person",
+      "references": [
+        "Amos 1:1; 7:10–11"
+      ],
+      "blurb": "Northern ruler during Israel’s economic boom. Amos predicts the sword against his house.",
+      "category": "king",
+      "id": "p.jeroboam-ii-of-israel--837d7e53"
+    },
+    {
+      "name": "House of Jeroboam",
+      "type": "group",
+      "references": [
+        "Amos 7:9,11"
+      ],
+      "blurb": "Dynastic target of plumb‑line judgment; prosperity without justice proves terminal.",
+      "category": "dynasty",
+      "id": "g.house-of-jeroboam--4215decc"
+    },
+    {
+      "name": "Damascus (Aram)",
+      "type": "group",
+      "references": [
+        "Amos 1:3–5"
+      ],
+      "blurb": "Threshing Gilead with iron sledges—industrialized cruelty; Damascus’ gates and bars will break.",
+      "category": "nation",
+      "id": "g.damascus.aram--38c72bb6"
+    },
+    {
+      "name": "Gaza (Philistia)",
+      "type": "group",
+      "references": [
+        "Amos 1:6–8"
+      ],
+      "blurb": "Mass deportations and slave trafficking; the remnant of Philistines perishes.",
+      "category": "nation",
+      "id": "g.gaza.philistia--2489b4b8"
+    },
+    {
+      "name": "Tyre (Phoenicia)",
+      "type": "group",
+      "references": [
+        "Amos 1:9–10"
+      ],
+      "blurb": "Betrayed a treaty of brotherhood and trafficked captives; walls devoured by fire.",
+      "category": "nation",
+      "id": "g.tyre--b1105484"
+    },
+    {
+      "name": "Edom",
+      "type": "group",
+      "references": [
+        "Amos 1:11–12"
+      ],
+      "blurb": "Perpetual anger and unrelenting wrath against his brother; Teman/Bozrah consumed.",
+      "category": "nation",
+      "id": "g.edom.desolate-wilderness--6976d032"
+    },
+    {
+      "name": "Ammon",
+      "type": "group",
+      "references": [
+        "Amos 1:13–15"
+      ],
+      "blurb": "Ripped open pregnant women to enlarge borders; Milcom goes into exile.",
+      "category": "nation",
+      "id": "g.ammon--2e86c4cb"
+    },
+    {
+      "name": "Moab",
+      "type": "group",
+      "references": [
+        "Amos 2:1–3"
+      ],
+      "blurb": "Burned the bones of Edom’s king—war crime against the dead; judge and princes cut off.",
+      "category": "nation",
+      "id": "g.moab--0526e590"
+    },
+    {
+      "name": "Judah",
+      "type": "group",
+      "references": [
+        "Amos 2:4–5"
+      ],
+      "blurb": "Rejected the law of YHWH; lies led them astray; Jerusalem consumed by fire.",
+      "category": "nation",
+      "id": "g.judah--ecd455d1"
+    },
+    {
+      "name": "Israel",
+      "type": "group",
+      "references": [
+        "Amos 2:6–16"
+      ],
+      "blurb": "Oppresses the poor, corrupts Nazirites, silences prophets; swift, strong, and mighty will not escape.",
+      "category": "nation",
+      "id": "g.israel.northern-kingdom--43968183"
+    },
+    {
+      "name": "Cows of Bashan (wealthy women)",
+      "type": "group",
+      "references": [
+        "Amos 4:1–3"
+      ],
+      "blurb": "Affluent women who crush the needy and demand drink; luxury morphs into predation.",
+      "category": "elite",
+      "id": "g.cows-of-bashan--90d9ff4c"
+    },
+    {
+      "name": "Merchants with false balances",
+      "type": "group",
+      "references": [
+        "Amos 8:4–6"
+      ],
+      "blurb": "Eager for the new moon to end so they can cheat with ephah and shekel; selling chaff as grain.",
+      "category": "commerce",
+      "id": "g.merchants-with-false-balances--20b3068f"
+    },
+    {
+      "name": "Judges at the gate (corrupted)",
+      "type": "group",
+      "references": [
+        "Amos 5:10–15"
+      ],
+      "blurb": "They hate the truth‑teller, take bribes, and push aside the needy in the gate—justice perverted.",
+      "category": "civic",
+      "id": "g.judges-at-the-gate--b6c5ac48"
+    },
+    {
+      "name": "Drunkards of Samaria",
+      "type": "group",
+      "references": [
+        "Amos 6:1–7"
+      ],
+      "blurb": "At ease in Zion and Samaria; anointed with oils, invent songs, but are not grieved over Joseph’s ruin.",
+      "category": "elite",
+      "id": "g.drunkards-of-samaria--1da13bea"
+    },
+    {
+      "name": "Nazirites given wine",
+      "type": "group",
+      "references": [
+        "Amos 2:11–12"
+      ],
+      "blurb": "Consecrated ascetics are pressured to violate vows—holiness mocked.",
+      "category": "vow",
+      "id": "g.nazirites-given-wine--c9e9ee9d"
+    },
+    {
+      "name": "Prophets silenced (‘Do not prophesy!’)",
+      "type": "group",
+      "references": [
+        "Amos 2:12; 7:12–13"
+      ],
+      "blurb": "Spiritual gag order at royal sanctuary—truth evicted from liturgical space.",
+      "category": "opposition",
+      "id": "g.prophets-silenced--5d53100d"
+    },
+    {
+      "name": "Righteous sold for silver and sandals",
+      "type": "group",
+      "references": [
+        "Amos 2:6–7"
+      ],
+      "blurb": "Human life priced at pocket change; sexual exploitation compounds economic injustice.",
+      "category": "victims",
+      "id": "g.righteous-sold-for-silver-and-sandals--c533c737"
+    },
+    {
+      "name": "Oppressed needy at the gate",
+      "type": "group",
+      "references": [
+        "Amos 5:12; 5:15"
+      ],
+      "blurb": "Those who seek justice are crushed—Amos calls for goodness in the courts.",
+      "category": "victims",
+      "id": "g.oppressed-needy-at-the-gate--abc86a63"
+    },
+    {
+      "name": "Bethel (royal sanctuary)",
+      "type": "entity",
+      "references": [
+        "Amos 3:14; 4:4; 7:13"
+      ],
+      "blurb": "Calf‑cult hub and king’s chapel; Amos’ words dismantle its pretensions.",
+      "category": "cult-site",
+      "id": "e.bethel--e80af22f"
+    },
+    {
+      "name": "Gilgal (pilgrimage center)",
+      "type": "entity",
+      "references": [
+        "Amos 4:4; 5:5"
+      ],
+      "blurb": "Religious busyness without obedience; going to Gilgal multiplies transgression.",
+      "category": "cult-site",
+      "id": "e.gilgal--52a48e88"
+    },
+    {
+      "name": "Beersheba (southern shrine)",
+      "type": "entity",
+      "references": [
+        "Amos 5:5"
+      ],
+      "blurb": "Pilgrimage to the south offers no refuge; only seeking YHWH gives life.",
+      "category": "cult-site",
+      "id": "e.beersheba--07231947"
+    },
+    {
+      "name": "Amaziah the priest of Bethel",
+      "type": "person",
+      "references": [
+        "Amos 7:10–17"
+      ],
+      "blurb": "Institutional gatekeeper who expels Amos; receives a hard oracle against his house.",
+      "category": "priest",
+      "id": "p.amaziah-the-priest-of-bethel--b1f8b236"
+    },
+    {
+      "name": "Amaziah’s wife (becomes a prostitute)",
+      "type": "person",
+      "references": [
+        "Amos 7:17"
+      ],
+      "blurb": "Personal fallout of resisting God’s word—prophetic judgment reaches the household.",
+      "category": "family",
+      "id": "p.amaziahs-wife--7a535104"
+    },
+    {
+      "name": "Amaziah’s children (fall by the sword)",
+      "type": "group",
+      "references": [
+        "Amos 7:17"
+      ],
+      "blurb": "The next generation suffers consequence—dynastic pretension ends.",
+      "category": "family",
+      "id": "g.amaziahs-children--8fce1f52"
+    },
+    {
+      "name": "Jeroboam II (in the Bethel dispute)",
+      "type": "person",
+      "references": [
+        "Amos 7:10–13"
+      ],
+      "blurb": "Named by Amaziah in the accusation; the ‘house of Jeroboam’ faces the plumb line.",
+      "category": "king",
+      "id": "p.jeroboam-ii.in-the-bethel-dispute--fc8cf226"
+    },
+    {
+      "name": "Samaria (capital)",
+      "type": "entity",
+      "references": [
+        "Amos 3:9; 6:1"
+      ],
+      "blurb": "Seat of luxury and injustice; foreign observers summoned to witness her turmoil.",
+      "category": "city",
+      "id": "e.samaria--fcae1760"
+    },
+    {
+      "name": "Mount Zion (in tension with Samaria)",
+      "type": "entity",
+      "references": [
+        "Amos 6:1"
+      ],
+      "blurb": "Security in Zion is also rebuked—religious privilege cannot shield injustice.",
+      "category": "mount",
+      "id": "e.mount-zion.in-tension-with-samaria--f68f4d61"
+    },
+    {
+      "name": "Calneh",
+      "type": "entity",
+      "references": [
+        "Amos 6:2"
+      ],
+      "blurb": "Example city for comparative downfall—go and see: are you better?",
+      "category": "city",
+      "id": "e.calneh--2b0898c3"
+    },
+    {
+      "name": "Hamath the great",
+      "type": "entity",
+      "references": [
+        "Amos 6:2"
+      ],
+      "blurb": "Northern power used illustratively—its greatness could not save it.",
+      "category": "city",
+      "id": "e.hamath-the-great--58c38c69"
+    },
+    {
+      "name": "Gath of the Philistines",
+      "type": "entity",
+      "references": [
+        "Amos 6:2"
+      ],
+      "blurb": "Philistine city invoked for rhetorical comparison—learn from history.",
+      "category": "city",
+      "id": "e.gath-of-the-philistines--c777beb0"
+    },
+    {
+      "name": "Mount Carmel",
+      "type": "entity",
+      "references": [
+        "Amos 9:3"
+      ],
+      "blurb": "No hiding place: even Carmel’s caves cannot conceal from divine pursuit.",
+      "category": "mount",
+      "id": "e.mount-carmel--c55d162a"
+    },
+    {
+      "name": "The Arabah (rift valley)",
+      "type": "entity",
+      "references": [
+        "Amos 6:12"
+      ],
+      "blurb": "Rhetorical terrain for impossibilities—horses running on rocks? plowing the sea?",
+      "category": "region",
+      "id": "e.the-arabah.rift-valley--7cd4cfca"
+    },
+    {
+      "name": "Egypt (exodus memory)",
+      "type": "group",
+      "references": [
+        "Amos 2:10; 3:1; 9:7"
+      ],
+      "blurb": "God who brought Israel from Egypt judges them by the same covenant grace.",
+      "category": "nation",
+      "id": "g.egypt--ab1ad00f"
+    },
+    {
+      "name": "Philistia & Aram (migration sovereignty)",
+      "type": "group",
+      "references": [
+        "Amos 9:7"
+      ],
+      "blurb": "God moved Philistines from Caphtor and Arameans from Kir—history is under His providence.",
+      "category": "sovereignty",
+      "id": "g.philistia-aram.migration-sovereignty--39a4caf3"
+    },
+    {
+      "name": "Vision: Locust swarm",
+      "type": "entity",
+      "references": [
+        "Amos 7:1–3"
+      ],
+      "blurb": "Post‑king’s mowing locusts threaten subsistence farms; Amos intercedes, and YHWH relents.",
+      "category": "vision",
+      "id": "e.vision-locust-swarm--1f129368"
+    },
+    {
+      "name": "Vision: Fire consuming the deep",
+      "type": "entity",
+      "references": [
+        "Amos 7:4–6"
+      ],
+      "blurb": "Cosmic drought/fire; again Amos intercedes, again YHWH relents—mercy delays judgment.",
+      "category": "vision",
+      "id": "e.vision-fire-consuming-the-deep--7115c6bf"
+    },
+    {
+      "name": "Vision: Plumb line",
+      "type": "entity",
+      "references": [
+        "Amos 7:7–9"
+      ],
+      "blurb": "God measures Israel’s house; high places and sanctuaries face demolition; house of Jeroboam cut off.",
+      "category": "vision",
+      "id": "e.vision-plumb-line--95204cf3"
+    },
+    {
+      "name": "Vision: Basket of summer fruit",
+      "type": "entity",
+      "references": [
+        "Amos 8:1–3"
+      ],
+      "blurb": "Wordplay (qayitz/ketz) signals ‘the end’; songs of the temple become wails.",
+      "category": "vision",
+      "id": "e.vision-basket-of-summer-fruit--5cdda23c"
+    },
+    {
+      "name": "Vision: YHWH beside the altar",
+      "type": "entity",
+      "references": [
+        "Amos 9:1–4"
+      ],
+      "blurb": "Final, unrelenting judgment: no escape to Sheol, heavens, Carmel, or sea.",
+      "category": "vision",
+      "id": "e.vision-yhwh-beside-the-altar--e502bc1a"
+    },
+    {
+      "name": "Amos’ intercessions (twice)",
+      "type": "entity",
+      "references": [
+        "Amos 7:2,5"
+      ],
+      "blurb": "‘O Lord GOD, please forgive/cease!’—prophetic ministry includes pleading for mercy.",
+      "category": "intercession",
+      "id": "e.amos-intercessions--bc3dff64"
+    },
+    {
+      "name": "YHWH relents… then will not relent",
+      "type": "entity",
+      "references": [
+        "Amos 7:3,6; 8:2"
+      ],
+      "blurb": "Pedagogy of patience gives way to decisive judgment when hardness persists.",
+      "category": "theology",
+      "id": "e.yhwh-relents-then-will-not-relent--caeb78e5"
+    },
+    {
+      "name": "You only have I known (election & accountability)",
+      "type": "entity",
+      "references": [
+        "Amos 3:2"
+      ],
+      "blurb": "Privilege intensifies responsibility—chosen people are held to covenant ethics.",
+      "category": "theology",
+      "id": "e.you-only-have-i-known.election-accountability--04d2db0e"
+    },
+    {
+      "name": "Does a lion roar…? (rhetorical chain)",
+      "type": "entity",
+      "references": [
+        "Amos 3:3–8"
+      ],
+      "blurb": "Logic of cause and effect culminates: the lion roars—who will not fear? the Lord speaks—who can but prophesy?",
+      "category": "rhetoric",
+      "id": "e.does-a-lion-roar.rhetorical-chain--84daa72b"
+    },
+    {
+      "name": "Seek me and live",
+      "type": "entity",
+      "references": [
+        "Amos 5:4–6"
+      ],
+      "blurb": "Pilgrimage will not save; seeking YHWH’s face reorients life toward justice.",
+      "category": "call",
+      "id": "e.seek-me-and-live--0196e7ac"
+    },
+    {
+      "name": "Day of YHWH is darkness, not light",
+      "type": "entity",
+      "references": [
+        "Amos 5:18–20"
+      ],
+      "blurb": "Religious triumphalism shattered—the Day exposes and reverses false hopes.",
+      "category": "day-of-yhwh",
+      "id": "e.day-of-yhwh-is-darkness-not-light--d0a2aadd"
+    },
+    {
+      "name": "Hymn: Maker of Pleiades and Orion",
+      "type": "entity",
+      "references": [
+        "Amos 5:8–9"
+      ],
+      "blurb": "Doctrinal spine for ethics: the Creator who turns dawn to darkness charges the mighty.",
+      "category": "hymn",
+      "id": "e.hymn-maker-of-pleiades-and-orion--862c557d"
+    },
+    {
+      "name": "Hymn: He who forms the mountains…",
+      "type": "entity",
+      "references": [
+        "Amos 4:13"
+      ],
+      "blurb": "Doxology interrupts satire—majestic Creator strides on the heights of the earth.",
+      "category": "hymn",
+      "id": "e.hymn-he-who-forms-the-mountains--747c9d51"
+    },
+    {
+      "name": "Hymn: The LORD of hosts… who builds his chambers",
+      "type": "entity",
+      "references": [
+        "Amos 9:5–6"
+      ],
+      "blurb": "Cosmic architecture hymn frames the final oracle—sovereign over sea and land.",
+      "category": "hymn",
+      "id": "e.hymn-the-lord-of-hosts-who-builds-his-chambers--5fdf2632"
+    },
+    {
+      "name": "Let justice roll down like waters",
+      "type": "entity",
+      "references": [
+        "Amos 5:24"
+      ],
+      "blurb": "Iconic line calling for structural righteousness, not liturgical noise.",
+      "category": "ethic",
+      "id": "e.let-justice-roll-down-like-waters--71eb19f4"
+    },
+    {
+      "name": "Famine of hearing the words of the LORD",
+      "type": "entity",
+      "references": [
+        "Amos 8:11–12"
+      ],
+      "blurb": "Judgment by silence—spiritual drought worse than crop failure.",
+      "category": "judgment",
+      "id": "e.famine-of-hearing-the-words-of-the-lord--1bd6aa33"
+    },
+    {
+      "name": "Irony & sarcasm: ‘Go to Bethel and sin’",
+      "type": "entity",
+      "references": [
+        "Amos 4:4–5"
+      ],
+      "blurb": "Prophetic mockery exposes performative piety—religion as vice.",
+      "category": "rhetoric",
+      "id": "e.irony-sarcasm-go-to-bethel-and-sin--e7b5b574"
+    },
+    {
+      "name": "Dirge over Israel (qinah)",
+      "type": "entity",
+      "references": [
+        "Amos 5:1–3"
+      ],
+      "blurb": "Funeral song anticipates national death—lament as truth‑telling.",
+      "category": "lament",
+      "id": "e.dirge-over-israel.qinah--6712b68a"
+    },
+    {
+      "name": "Woe oracles",
+      "type": "entity",
+      "references": [
+        "Amos 5:18; 6:1"
+      ],
+      "blurb": "‘Woe to you who desire the day of the LORD… Woe to the complacent in Zion…’—prophetic grief in judgment.",
+      "category": "woe",
+      "id": "e.woe-oracles--0640182a"
+    },
+    {
+      "name": "Swearing, lying, murder, stealing, adultery (ten‑commandment breach)",
+      "type": "entity",
+      "references": [
+        "Amos 2:6–8; 3:10; 5:12"
+      ],
+      "blurb": "Decalogue violations as social fabric tears—Torah ethics are public goods.",
+      "category": "ethic",
+      "id": "e.swearing-lying-murder-stealing-adultery.ten-commandment-breach--5e0a0722"
+    },
+    {
+      "name": "Panting after the dust on the head of the poor",
+      "type": "entity",
+      "references": [
+        "Amos 2:7"
+      ],
+      "blurb": "Even trivial pledges seized; humiliation monetized.",
+      "category": "abuse",
+      "id": "e.panting-after-the-dust-on-the-head-of-the-poor--1fd49b36"
+    },
+    {
+      "name": "Father and son go in to the same girl",
+      "type": "entity",
+      "references": [
+        "Amos 2:7"
+      ],
+      "blurb": "Sexual exploitation sanctified by cult payments—defiles God’s holy name.",
+      "category": "abuse",
+      "id": "e.father-and-son-go-in-to-the-same-girl--20f107b8"
+    },
+    {
+      "name": "Garments taken in pledge beside every altar",
+      "type": "entity",
+      "references": [
+        "Amos 2:8"
+      ],
+      "blurb": "Illegal collateral kept overnight; sanctuaries become comfort lounges for oppressors.",
+      "category": "abuse",
+      "id": "e.garments-taken-in-pledge-beside-every-altar--9bdafa54"
+    },
+    {
+      "name": "Wine bought with fines in the house of their god",
+      "type": "entity",
+      "references": [
+        "Amos 2:8"
+      ],
+      "blurb": "Miscarriage of justice funds revelry—legal system as bar tab.",
+      "category": "abuse",
+      "id": "e.wine-bought-with-fines-in-the-house-of-their-god--ee4325f5"
+    },
+    {
+      "name": "Ivory houses & winter/summer homes",
+      "type": "entity",
+      "references": [
+        "Amos 3:15; 6:11"
+      ],
+      "blurb": "Luxury real estate faces demolition; God’s sledgehammer against ostentation.",
+      "category": "luxury",
+      "id": "e.ivory-houses-winter-summer-homes--60947238"
+    },
+    {
+      "name": "Stretching themselves on beds of ivory",
+      "type": "entity",
+      "references": [
+        "Amos 6:4"
+      ],
+      "blurb": "Self‑indulgence indicts leaders who ignore collapse.",
+      "category": "luxury",
+      "id": "e.stretching-themselves-on-beds-of-ivory--92b173d7"
+    },
+    {
+      "name": "Inventing instruments like David (satirized)",
+      "type": "entity",
+      "references": [
+        "Amos 6:5"
+      ],
+      "blurb": "Music without mercy—art co‑opted by decadence.",
+      "category": "culture",
+      "id": "e.inventing-instruments-like-david.satirized--9d7e62b3"
+    },
+    {
+      "name": "Not grieved over the ruin of Joseph",
+      "type": "entity",
+      "references": [
+        "Amos 6:6"
+      ],
+      "blurb": "Core failure: numbness to covenant neighbor.",
+      "category": "ethic",
+      "id": "e.not-grieved-over-the-ruin-of-joseph--9f4558cf"
+    },
+    {
+      "name": "Turning justice to wormwood",
+      "type": "entity",
+      "references": [
+        "Amos 5:7"
+      ],
+      "blurb": "Sweet law made bitter; righteousness cast to the ground.",
+      "category": "judgment",
+      "id": "e.turning-justice-to-wormwood--3a098cc1"
+    },
+    {
+      "name": "Hating the one who rebukes in the gate",
+      "type": "entity",
+      "references": [
+        "Amos 5:10"
+      ],
+      "blurb": "Anti‑prophetic animus; truth‑tellers become enemy number one.",
+      "category": "opposition",
+      "id": "e.hating-the-one-who-rebukes-in-the-gate--2817a808"
+    },
+    {
+      "name": "Bribes and perverted justice",
+      "type": "entity",
+      "references": [
+        "Amos 5:12"
+      ],
+      "blurb": "Economic clout hijacks courts; righteousness priced out.",
+      "category": "corruption",
+      "id": "e.bribes-and-perverted-justice--9876c308"
+    },
+    {
+      "name": "Seek good, not evil, that you may live",
+      "type": "entity",
+      "references": [
+        "Amos 5:14–15"
+      ],
+      "blurb": "Moral reorientation paired with civic reform: establish justice in the gate; maybe God will be gracious.",
+      "category": "call",
+      "id": "e.seek-good-not-evil-that-you-may-live--b99653fa"
+    },
+    {
+      "name": "Hate evil, love good",
+      "type": "entity",
+      "references": [
+        "Amos 5:15"
+      ],
+      "blurb": "Affective discipleship underwrites structural change—love must be legislated in practice.",
+      "category": "call",
+      "id": "e.hate-evil-love-good--e7a57620"
+    },
+    {
+      "name": "Let justice be established in the gate",
+      "type": "entity",
+      "references": [
+        "Amos 5:15"
+      ],
+      "blurb": "Judicial reform as repentance enacted.",
+      "category": "civic",
+      "id": "e.let-justice-be-established-in-the-gate--5d93f405"
+    },
+    {
+      "name": "Seek YHWH and live (anti‑pilgrimage)",
+      "type": "entity",
+      "references": [
+        "Amos 5:4–6"
+      ],
+      "blurb": "Do not seek Bethel/Gilgal/Beersheba; seek the living God whose name is not a site.",
+      "category": "call",
+      "id": "e.seek-yhwh-and-live.anti-pilgrimage--cad6eda1"
+    },
+    {
+      "name": "Booth of David restored",
+      "type": "figure",
+      "references": [
+        "Amos 9:11"
+      ],
+      "blurb": "Fallen shelter raised, breaches repaired—royal hope reframed as sheltering presence.",
+      "category": "restoration",
+      "cross_references": [
+        "Acts 15:15–18"
+      ],
+      "id": "f.booth-of-david-restored--49a1d18e"
+    },
+    {
+      "name": "Nations called by my name",
+      "type": "group",
+      "references": [
+        "Amos 9:12"
+      ],
+      "blurb": "Gentile inclusion as covenant expansion—mission hinted in restoration.",
+      "category": "mission",
+      "cross_references": [
+        "Acts 15:17"
+      ],
+      "id": "g.nations-called-by-my-name--043ba148"
+    },
+    {
+      "name": "Plowman overtakes reaper; mountains drip wine",
+      "type": "entity",
+      "references": [
+        "Amos 9:13"
+      ],
+      "blurb": "Hyper‑abundance images undo the famine and drought—creation healed by justice.",
+      "category": "new-creation",
+      "id": "e.plowman-overtakes-reaper-mountains-drip-wine--49fa99c3"
+    },
+    {
+      "name": "Replanted in their land, never again uprooted",
+      "type": "entity",
+      "references": [
+        "Amos 9:15"
+      ],
+      "blurb": "Security as gift of God’s planting, not empire’s protection.",
+      "category": "promise",
+      "id": "e.replanted-in-their-land-never-again-uprooted--ad03c651"
+    },
+    {
+      "name": "Formula: For three transgressions, even for four",
+      "type": "entity",
+      "references": [
+        "Amos 1–2"
+      ],
+      "blurb": "Numerical proverb pattern escalates guilt and attention—rhetoric that hooks the audience before turning inward.",
+      "category": "literary",
+      "id": "e.formula-for-three-transgressions-even-for-four--7f35c3c8"
+    },
+    {
+      "name": "Reception: James cites Amos at Jerusalem Council",
+      "type": "entity",
+      "references": [
+        "Acts 15:13–18 (citing Amos 9:11–12)"
+      ],
+      "blurb": "Early church reads Amos as promise for Gentile inclusion without circumcision burden.",
+      "category": "reception",
+      "id": "e.reception-james-cites-amos-at-jerusalem-council--837b0658"
+    }
+  ]
+}

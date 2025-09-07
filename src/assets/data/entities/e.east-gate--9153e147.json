@@ -1,0 +1,18 @@
+{
+  "name": "East Gate",
+  "type": "entity",
+  "references": [
+    "Nehemiah 3:29"
+  ],
+  "blurb": "Strategic entry/exit of Jerusalem; physical security and symbolic holiness meet at the gates.",
+  "category": "place",
+  "id": "e.east-gate--9153e147",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      3
+    ]
+  }
+}

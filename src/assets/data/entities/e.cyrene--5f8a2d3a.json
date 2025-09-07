@@ -1,0 +1,25 @@
+{
+  "name": "Cyrene",
+  "type": "entity",
+  "category": "region",
+  "references": [
+    "Acts 6:9",
+    "Acts 11:20"
+  ],
+  "aka": [],
+  "id": "e.cyrene--5f8a2d3a",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      6,
+      11
+    ]
+  }
+}

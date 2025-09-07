@@ -1,0 +1,28 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 7,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "p.solomon.chronicles-focus--6c5c003a",
+      "name": "Solomon (Chronicles focus)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.fire-from-heaven-and-glory-fill-the-temple--3e5093eb",
+      "name": "Fire from heaven and glory fill the temple",
+      "type": "entity",
+      "role": "theophany",
+      "refs_count": 1
+    },
+    {
+      "id": "e.if-my-people.night-appearance-and-promise--ade69388",
+      "name": "If my people… (night appearance and promise)",
+      "type": "entity",
+      "role": "theophany",
+      "refs_count": 1
+    }
+  ]
+}

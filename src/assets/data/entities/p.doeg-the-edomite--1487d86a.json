@@ -1,0 +1,19 @@
+{
+  "name": "Doeg the Edomite",
+  "type": "person",
+  "references": [
+    "1 Samuel 21–22"
+  ],
+  "blurb": "Chief herdsman who betrays and butchers priests—outsider violence serving royal paranoia.",
+  "category": "narrative",
+  "id": "p.doeg-the-edomite--1487d86a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      21,
+      22
+    ]
+  }
+}

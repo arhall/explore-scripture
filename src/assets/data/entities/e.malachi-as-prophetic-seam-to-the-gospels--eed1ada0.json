@@ -1,0 +1,18 @@
+{
+  "id": "e.malachi-as-prophetic-seam-to-the-gospels--eed1ada0",
+  "name": "Malachi as prophetic seam to the Gospels",
+  "type": "entity",
+  "references": [
+    "Mal 4:4-6"
+  ],
+  "category": "canonical-theology",
+  "blurb": "Torah remembrance and Elijah promise bridge Tanakh to Gospel narratives.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      4
+    ]
+  }
+}

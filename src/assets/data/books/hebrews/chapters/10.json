@@ -1,0 +1,77 @@
+{
+  "book": "Hebrews",
+  "chapter": 10,
+  "entity_count": 21,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "f.hold-fast-the-confession--47acea84",
+      "name": "hold fast the confession",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1
+    },
+    {
+      "id": "f.sat-down-after-offering--beaccfb9",
+      "name": "sat down after offering",
+      "type": "figure",
+      "role": "session",
+      "refs_count": 1
+    },
+    {
+      "id": "f.trampling-the-son-of-god--34fafc4c",
+      "name": "trampling the Son of God",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1
+    },
+    {
+      "id": "f.perfected-for-all-time-by-one-offering--d842a0f5",
+      "name": "perfected for all time by one offering",
+      "type": "figure",
+      "role": "sanctification",
+      "refs_count": 1
+    },
+    {
+      "id": "g.we-are-not-of-those-who-shrink-back--2162bc66",
+      "name": "we are not of those who shrink back",
+      "type": "group",
+      "role": "perseverance",
+      "refs_count": 1
+    },
+    {
+      "id": "f.enemies-made-a-footstool--ef81b504",
+      "name": "enemies made a footstool",
+      "type": "figure",
+      "role": "psalm110",
+      "refs_count": 1
+    },
+    {
+      "id": "g.accepted-the-plundering-of-your-property--66d26680",
+      "name": "accepted the plundering of your property",
+      "type": "group",
+      "role": "suffering",
+      "refs_count": 1
+    },
+    {
+      "id": "f.fearful-expectation-of-judgment--ecbf88d8",
+      "name": "fearful expectation of judgment",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1
+    }
+  ]
+}

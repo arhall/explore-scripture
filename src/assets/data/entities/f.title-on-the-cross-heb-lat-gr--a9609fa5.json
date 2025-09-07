@@ -1,0 +1,23 @@
+{
+  "name": "Title on the cross (Heb/Lat/Gr)",
+  "type": "figure",
+  "category": "inscription",
+  "references": [
+    "John 19:19–22"
+  ],
+  "aka": [],
+  "id": "f.title-on-the-cross-heb-lat-gr--a9609fa5",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      19
+    ]
+  }
+}

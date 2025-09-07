@@ -1,0 +1,24 @@
+{
+  "name": "Achan (Achar) son of Carmi",
+  "type": "person",
+  "references": [
+    "Joshua 7"
+  ],
+  "blurb": "His hidden theft of devoted things brings communal defeat at Ai. Joshua’s inquiry exposes sin, and judgment restores Israel’s standing. Achan dramatizes how private idolatry imperils a public mission.",
+  "aka": [
+    "Achar"
+  ],
+  "category": "narrative",
+  "cross_references": [
+    "1 Chronicles 2:7"
+  ],
+  "id": "p.achan-son-of-carmi.achar--c148b71b",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joshua": [
+      7
+    ]
+  }
+}

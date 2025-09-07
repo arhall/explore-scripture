@@ -1,0 +1,77 @@
+{
+  "book": "John",
+  "chapter": 6,
+  "entity_count": 11,
+  "entities": [
+    {
+      "id": "f.book-of-signs-index--9c42a3ac",
+      "name": "Book of Signs (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 7
+    },
+    {
+      "id": "f.festivals-in-john--4f63512e",
+      "name": "Festivals in John",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 6
+    },
+    {
+      "id": "f.walking-on-the-water--53de19b6",
+      "name": "Walking on the water",
+      "type": "figure",
+      "role": "miracle",
+      "refs_count": 3
+    },
+    {
+      "id": "e.sea-of-galilee--fbfbf0a2",
+      "name": "Sea of Galilee",
+      "type": "entity",
+      "role": "body-of-water",
+      "refs_count": 10
+    },
+    {
+      "id": "p.philip--6919aa55",
+      "name": "Philip",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 3
+    },
+    {
+      "id": "t.i-am-bread-of-life--a3d84456",
+      "name": "I AM: Bread of Life",
+      "type": "title",
+      "role": "i-am",
+      "refs_count": 3
+    },
+    {
+      "id": "e.capernaum--e8a7c06b",
+      "name": "Capernaum",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 10
+    },
+    {
+      "id": "f.hard-saying-many-disciples-turn-back--72aa5a34",
+      "name": "Hard saying: many disciples turn back",
+      "type": "figure",
+      "role": "response",
+      "refs_count": 1
+    },
+    {
+      "id": "f.feeding-of-the-five-thousand--a8af349b",
+      "name": "Feeding of the five thousand",
+      "type": "figure",
+      "role": "miracle",
+      "refs_count": 4
+    },
+    {
+      "id": "f.water-bread-light-life-motifs--0fe6793a",
+      "name": "Water / Bread / Light / Life motifs",
+      "type": "figure",
+      "role": "theme",
+      "refs_count": 4
+    }
+  ]
+}

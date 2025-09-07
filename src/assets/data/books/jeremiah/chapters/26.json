@@ -1,0 +1,28 @@
+{
+  "book": "Jeremiah",
+  "chapter": 26,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "p.ahikam-son-of-shaphan--c33865c2",
+      "name": "Ahikam son of Shaphan",
+      "type": "person",
+      "role": "official",
+      "refs_count": 1
+    },
+    {
+      "id": "p.uriah-son-of-shemaiah.true-prophet--7d62e13b",
+      "name": "Uriah son of Shemaiah (true prophet)",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1
+    },
+    {
+      "id": "e.jeremiah-cites-micah-3-12--f1a0c7b9",
+      "name": "Jeremiah cites Micah (3:12)",
+      "type": "entity",
+      "role": "reception",
+      "refs_count": 1
+    }
+  ]
+}

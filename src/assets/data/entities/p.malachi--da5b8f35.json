@@ -1,0 +1,19 @@
+{
+  "id": "p.malachi--da5b8f35",
+  "name": "Malachi",
+  "type": "person",
+  "references": [
+    "Mal 1:1"
+  ],
+  "category": "prophet",
+  "note": "Name may be titular (“my messenger”).",
+  "blurb": "Post-exilic prophet framing covenant audit through disputation oracles; name/title underscores messenger theme.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      1
+    ]
+  }
+}

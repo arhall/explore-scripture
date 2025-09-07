@@ -1,0 +1,23 @@
+{
+  "name": "Elymas (Bar-Jesus)",
+  "type": "person",
+  "category": "magician",
+  "references": [
+    "Acts 13:6–12"
+  ],
+  "aka": [],
+  "id": "p.elymas-bar-jesus--4af214fb",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      13
+    ]
+  }
+}

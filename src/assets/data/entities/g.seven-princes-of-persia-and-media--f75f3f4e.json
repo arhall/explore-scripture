@@ -1,0 +1,18 @@
+{
+  "name": "Seven princes of Persia and Media",
+  "type": "group",
+  "references": [
+    "Esther 1:14"
+  ],
+  "blurb": "Carshena, Shethar, Admatha, Tarshish, Meres, Marsena, Memucan—inner council whose advice becomes empire-wide policy.",
+  "category": "record",
+  "id": "g.seven-princes-of-persia-and-media--f75f3f4e",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      1
+    ]
+  }
+}

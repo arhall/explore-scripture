@@ -1,0 +1,21 @@
+{
+  "name": "Peril: danger from rivers",
+  "type": "figure",
+  "category": "peril",
+  "references": [
+    "2 Cor 11:23–29"
+  ],
+  "aka": [],
+  "id": "f.peril-danger-from-rivers--dc2eeb01",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "2 Corinthians": [
+      11
+    ]
+  }
+}

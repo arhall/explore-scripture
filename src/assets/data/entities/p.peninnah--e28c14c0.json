@@ -1,0 +1,18 @@
+{
+  "name": "Peninnah",
+  "type": "person",
+  "references": [
+    "1 Samuel 1:2,6–7"
+  ],
+  "blurb": "Provokes Hannah and becomes a foil; the narrative channels her taunts into deeper prayer and merciful outcome.",
+  "category": "narrative",
+  "id": "p.peninnah--e28c14c0",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      1
+    ]
+  }
+}

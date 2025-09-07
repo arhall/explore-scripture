@@ -1,0 +1,18 @@
+{
+  "id": "g.victim-nations--23f45e55",
+  "name": "Victim nations",
+  "type": "group",
+  "references": [
+    "Hab 2:8"
+  ],
+  "category": "subject-peoples",
+  "blurb": "Peoples plundered by the Chaldeans; their taunt becomes judicial testimony.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      2
+    ]
+  }
+}

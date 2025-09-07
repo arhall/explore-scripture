@@ -1,0 +1,27 @@
+{
+  "name": "Obedience and disobedience catena",
+  "type": "figure",
+  "category": "catena",
+  "references": [
+    "Rom 10:16–21"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Isa 53:1; Deut 32:21; Isa 65:1–2; Ps 19:4",
+      "type": "catena"
+    }
+  ],
+  "aka": [],
+  "id": "f.obedience-and-disobedience-catena--9fd1e36f",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      10
+    ]
+  }
+}

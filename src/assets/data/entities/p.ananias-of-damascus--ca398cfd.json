@@ -1,0 +1,23 @@
+{
+  "name": "Ananias of Damascus",
+  "type": "person",
+  "category": "disciple",
+  "references": [
+    "Acts 9:10–19"
+  ],
+  "aka": [],
+  "id": "p.ananias-of-damascus--ca398cfd",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      9
+    ]
+  }
+}

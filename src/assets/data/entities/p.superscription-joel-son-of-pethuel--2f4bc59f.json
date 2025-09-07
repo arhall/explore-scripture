@@ -1,0 +1,21 @@
+{
+  "name": "Superscription: Joel son of Pethuel",
+  "type": "person",
+  "references": [
+    "Joel 1:1"
+  ],
+  "blurb": "Names the prophet and locates the book within Judah’s prophetic stream; precise reign-date is unstated.",
+  "relations": {
+    "father": "Pethuel"
+  },
+  "category": "prophet",
+  "id": "p.superscription-joel-son-of-pethuel--2f4bc59f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      1
+    ]
+  }
+}

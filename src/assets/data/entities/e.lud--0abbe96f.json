@@ -1,0 +1,18 @@
+{
+  "name": "Lud (Lydians)",
+  "type": "entity",
+  "references": [
+    "Ezekiel 27:10; 30:5"
+  ],
+  "blurb": "Mercenaries in Tyre’s army; later listed as Egypt’s allies.",
+  "category": "nation",
+  "id": "e.lud--0abbe96f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      27
+    ]
+  }
+}

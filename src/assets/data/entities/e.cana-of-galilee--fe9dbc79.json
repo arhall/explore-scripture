@@ -1,0 +1,27 @@
+{
+  "name": "Cana of Galilee",
+  "type": "entity",
+  "category": "town",
+  "references": [
+    "John 2:1",
+    "John 4:46",
+    "John 21:2"
+  ],
+  "aka": [],
+  "id": "e.cana-of-galilee--fe9dbc79",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      2,
+      4,
+      21
+    ]
+  }
+}

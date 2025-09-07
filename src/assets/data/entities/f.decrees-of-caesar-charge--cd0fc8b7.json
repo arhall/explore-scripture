@@ -1,0 +1,24 @@
+{
+  "name": "Decrees of Caesar (charge)",
+  "type": "figure",
+  "category": "legal",
+  "references": [
+    "Acts 17:7"
+  ],
+  "blurb": "Accusation in Thessalonica that Paul proclaims another king, violating imperial decrees.",
+  "aka": [],
+  "id": "f.decrees-of-caesar-charge--cd0fc8b7",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      17
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Nazareth",
+  "type": "entity",
+  "category": "place",
+  "references": [
+    "Matt 2:23",
+    "Matt 4:13",
+    "Luke 1:26–27",
+    "Luke 2:39",
+    "Luke 4:16"
+  ],
+  "blurb": "Galilean hometown shaping Jesus’ public identification; fulfills prophetic patterns of lowliness.",
+  "aka": [],
+  "id": "e.nazareth--4e4195a3",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      2,
+      4
+    ],
+    "Luke": [
+      1,
+      2,
+      4
+    ]
+  }
+}

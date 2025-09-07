@@ -1,0 +1,77 @@
+{
+  "book": "Micah",
+  "chapter": 1,
+  "entity_count": 25,
+  "entities": [
+    {
+      "id": "p.micah-of-moresheth--4e9f3b2a",
+      "name": "Micah of Moresheth",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1
+    },
+    {
+      "id": "e.moresheth-gath-hometown--7b2fa14c",
+      "name": "Moresheth-Gath (hometown)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    },
+    {
+      "id": "p.jotham-of-judah--0d9cfa12",
+      "name": "Jotham of Judah",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1
+    },
+    {
+      "id": "p.ahaz-of-judah--73ce91b0",
+      "name": "Ahaz of Judah",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1
+    },
+    {
+      "id": "p.hezekiah-of-judah--6b2d11f9",
+      "name": "Hezekiah of Judah",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1
+    },
+    {
+      "id": "g.contemporaries-isaiah-hosea-amos--d19c7a62",
+      "name": "Contemporaries: Isaiah, Hosea, Amos",
+      "type": "group",
+      "role": "intertext",
+      "refs_count": 1
+    },
+    {
+      "id": "d.yhwh-the-witness-judge--a329f8d0",
+      "name": "YHWH the Witness-Judge",
+      "type": "divine",
+      "role": "courtroom",
+      "refs_count": 2
+    },
+    {
+      "id": "e.hear-you-peoples-all-of-you--0de239fc",
+      "name": "Hear, you peoples—all of you",
+      "type": "entity",
+      "role": "summons",
+      "refs_count": 1
+    },
+    {
+      "id": "e.the-lord-from-his-holy-temple--9c5f7f32",
+      "name": "The LORD from his holy temple",
+      "type": "entity",
+      "role": "theophany",
+      "refs_count": 1
+    },
+    {
+      "id": "e.the-lord-comes-down-treads-high-places--b7a8f15e",
+      "name": "The LORD comes down, treads high places",
+      "type": "entity",
+      "role": "theophany",
+      "refs_count": 1
+    }
+  ]
+}

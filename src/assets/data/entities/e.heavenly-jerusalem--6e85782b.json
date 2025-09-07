@@ -1,0 +1,15 @@
+{
+  "name": "heavenly Jerusalem",
+  "type": "entity",
+  "category": "heavenly-city",
+  "references": [
+    "Heb 12:22"
+  ],
+  "aka": [],
+  "id": "e.heavenly-jerusalem--6e85782b",
+  "book_references": {
+    "Hebrews": [
+      12
+    ]
+  }
+}

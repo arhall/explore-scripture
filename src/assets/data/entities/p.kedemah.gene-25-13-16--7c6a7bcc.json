@@ -1,0 +1,24 @@
+{
+  "name": "Kedemah",
+  "type": "person",
+  "references": [
+    "Genesis 25:13–16"
+  ],
+  "blurb": "One of the twelve tribal leaders descended from Ishmael; their encampments stretched from Havilah to Shur.",
+  "relations": {
+    "parents": [
+      "Ishmael"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.kedemah.gene-25-13-16--7c6a7bcc",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      25
+    ]
+  }
+}

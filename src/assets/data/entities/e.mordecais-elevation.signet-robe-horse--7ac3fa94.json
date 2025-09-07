@@ -1,0 +1,18 @@
+{
+  "name": "Mordecai’s elevation (signet, robe, horse)",
+  "type": "entity",
+  "references": [
+    "Esther 8:1–15; 10:2–3"
+  ],
+  "blurb": "From sackcloth to royal blue and white—authority redirected toward the good of the people.",
+  "category": "record",
+  "id": "e.mordecais-elevation.signet-robe-horse--7ac3fa94",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      8
+    ]
+  }
+}

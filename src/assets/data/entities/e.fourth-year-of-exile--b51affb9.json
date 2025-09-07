@@ -1,0 +1,18 @@
+{
+  "name": "Fourth year of exile (vision prep?)",
+  "type": "entity",
+  "references": [
+    "Ezekiel 8:1 context"
+  ],
+  "blurb": "May reflect an earlier dating nuance—prophet locates his visions in lived exile time.",
+  "category": "chronology",
+  "id": "e.fourth-year-of-exile--b51affb9",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      8
+    ]
+  }
+}

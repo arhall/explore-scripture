@@ -1,0 +1,19 @@
+{
+  "name": "Gershom",
+  "type": "person",
+  "references": [
+    "Exodus 2:22; 18:3"
+  ],
+  "blurb": "Firstborn of Moses; his name memorializes Moses’ sojourning—‘I have been a stranger in a foreign land.’",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.gershom--9c79a831",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      2
+    ]
+  }
+}

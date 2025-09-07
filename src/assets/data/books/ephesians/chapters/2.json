@@ -1,0 +1,77 @@
+{
+  "book": "Ephesians",
+  "chapter": 2,
+  "entity_count": 30,
+  "entities": [
+    {
+      "id": "f.ot-echoes-peace-to-far-and-near-stone-texts--daf6239a",
+      "name": "OT echoes: peace to far and near; stone texts",
+      "type": "figure",
+      "role": "ot-echo",
+      "refs_count": 2
+    },
+    {
+      "id": "g.gentiles-the-uncircumcision--b84df77e",
+      "name": "Gentiles (the uncircumcision)",
+      "type": "group",
+      "role": "people",
+      "refs_count": 1
+    },
+    {
+      "id": "f.former-alienation-of-the-gentiles--a6f70b8e",
+      "name": "Former alienation of the Gentiles",
+      "type": "figure",
+      "role": "alienation",
+      "refs_count": 1
+    },
+    {
+      "id": "f.dividing-wall-broken-down--625237f2",
+      "name": "Dividing wall broken down",
+      "type": "figure",
+      "role": "barrier",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.but-god-rich-in-mercy--ca4186e7",
+      "name": "But God—rich in mercy",
+      "type": "figure",
+      "role": "mercy",
+      "refs_count": 1
+    },
+    {
+      "id": "f.seated-with-christ-in-heavenly-places--9cedeaa8",
+      "name": "Seated with Christ in heavenly places",
+      "type": "figure",
+      "role": "exaltation-with-Christ",
+      "refs_count": 1
+    },
+    {
+      "id": "g.prophets--c6dcaed9",
+      "name": "prophets",
+      "type": "group",
+      "role": "office",
+      "refs_count": 6
+    },
+    {
+      "id": "f.dead-in-trespasses-and-sins--6f7fd60d",
+      "name": "Dead in trespasses and sins",
+      "type": "figure",
+      "role": "condition",
+      "refs_count": 1
+    },
+    {
+      "id": "f.cornerstone--ad987ae5",
+      "name": "Cornerstone",
+      "type": "figure",
+      "role": "christology",
+      "refs_count": 1
+    }
+  ]
+}

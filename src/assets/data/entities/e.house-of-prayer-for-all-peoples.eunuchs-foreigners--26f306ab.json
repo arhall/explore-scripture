@@ -1,0 +1,18 @@
+{
+  "name": "House of prayer for all peoples (eunuchs & foreigners)",
+  "type": "entity",
+  "references": [
+    "Isaiah 56:3–8"
+  ],
+  "blurb": "Holiness without hostility; Sabbath‑keeping becomes solidarity across boundaries.",
+  "category": "inclusion",
+  "id": "e.house-of-prayer-for-all-peoples.eunuchs-foreigners--26f306ab",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Isaiah": [
+      56
+    ]
+  }
+}

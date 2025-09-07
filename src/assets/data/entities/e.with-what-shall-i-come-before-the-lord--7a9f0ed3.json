@@ -1,0 +1,18 @@
+{
+  "id": "e.with-what-shall-i-come-before-the-lord--7a9f0ed3",
+  "name": "With what shall I come before the LORD?",
+  "type": "entity",
+  "references": [
+    "Micah 6:6–7"
+  ],
+  "category": "worship",
+  "blurb": "Escalating sacrifices—calves, thousands of rams, rivers of oil, firstborn—exposed as missing the point.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      6
+    ]
+  }
+}

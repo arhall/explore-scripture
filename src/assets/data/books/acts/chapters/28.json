@@ -1,0 +1,77 @@
+{
+  "book": "Acts",
+  "chapter": 28,
+  "entity_count": 16,
+  "entities": [
+    {
+      "id": "t.kingdom-of-god--e6ae8d7f",
+      "name": "Kingdom of God",
+      "type": "title",
+      "role": "kingdom",
+      "refs_count": 16
+    },
+    {
+      "id": "f.rented-house-in-rome-two-years--402f79a2",
+      "name": "Rented house in Rome (two years)",
+      "type": "figure",
+      "role": "residence",
+      "refs_count": 1
+    },
+    {
+      "id": "e.appian-way-three-taverns--f3f2d4c4",
+      "name": "Appian Way (Three Taverns)",
+      "type": "entity",
+      "role": "road",
+      "refs_count": 1
+    },
+    {
+      "id": "f.alexandrian-ship-with-twin-gods--49f229ab",
+      "name": "Alexandrian ship with Twin Gods",
+      "type": "figure",
+      "role": "ship",
+      "refs_count": 1
+    },
+    {
+      "id": "e.rhegium--a7c22f11",
+      "name": "Rhegium",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1
+    },
+    {
+      "id": "e.rome-house-arrest--20f62a82",
+      "name": "Rome (house arrest)",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1
+    },
+    {
+      "id": "e.appius-forum--c481a22f",
+      "name": "Appius Forum",
+      "type": "entity",
+      "role": "waypoint",
+      "refs_count": 1
+    },
+    {
+      "id": "f.journeys-index--f80d022a",
+      "name": "Journeys (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 2
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 24
+    },
+    {
+      "id": "f.healings-on-malta--6dc8bf42",
+      "name": "Healings on Malta",
+      "type": "figure",
+      "role": "miracle",
+      "refs_count": 1
+    }
+  ]
+}

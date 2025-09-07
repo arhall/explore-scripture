@@ -1,0 +1,24 @@
+{
+  "name": "Saul’s conversion (Acts 9)",
+  "type": "figure",
+  "category": "conversion",
+  "references": [
+    "Acts 9:1–19"
+  ],
+  "blurb": "Encounter with the risen Jesus on the Damascus road.",
+  "aka": [],
+  "id": "f.saul-s-conversion-acts-9--604b096f",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      9
+    ]
+  }
+}

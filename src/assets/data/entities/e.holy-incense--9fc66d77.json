@@ -1,0 +1,21 @@
+{
+  "name": "Holy incense (formula)",
+  "type": "entity",
+  "references": [
+    "Exodus 30:34–38"
+  ],
+  "blurb": "Unique blend reserved for God.",
+  "category": "tabernacle",
+  "cross_references": [
+    "Hebrews 9:1–5"
+  ],
+  "id": "e.holy-incense--9fc66d77",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      30
+    ]
+  }
+}

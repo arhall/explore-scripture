@@ -1,0 +1,23 @@
+{
+  "name": "Aeneas at Lydda",
+  "type": "person",
+  "category": "healed",
+  "references": [
+    "Acts 9:32–35"
+  ],
+  "aka": [],
+  "id": "p.aeneas-at-lydda--56153658",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      9
+    ]
+  }
+}

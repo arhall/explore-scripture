@@ -1,0 +1,19 @@
+{
+  "id": "g.refugees-and-survivors--5e1a9c0b",
+  "name": "Refugees/Survivors",
+  "type": "group",
+  "references": [
+    "Nah 2:8"
+  ],
+  "category": "civilians",
+  "aka": [],
+  "blurb": "The city’s populace flees like a pool draining; human cost surfaces behind imperial spectacle.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      2
+    ]
+  }
+}

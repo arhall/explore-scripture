@@ -1,0 +1,22 @@
+{
+  "name": "Andronicus",
+  "type": "person",
+  "category": "coworker",
+  "references": [
+    "Rom 16:7"
+  ],
+  "note": "With Junia; ‘well known to the apostles’ (reading debated).",
+  "aka": [],
+  "id": "p.andronicus--41cab6be",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      16
+    ]
+  }
+}

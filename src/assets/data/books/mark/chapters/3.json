@@ -1,0 +1,77 @@
+{
+  "book": "Mark",
+  "chapter": 3,
+  "entity_count": 10,
+  "entities": [
+    {
+      "id": "g.herodians--f27fceea",
+      "name": "Herodians",
+      "type": "group",
+      "role": "political",
+      "refs_count": 2
+    },
+    {
+      "id": "t.boanerges-sons-of-thunder--2ae1cc53",
+      "name": "Boanerges (Sons of Thunder)",
+      "type": "title",
+      "role": "epithet",
+      "refs_count": 1
+    },
+    {
+      "id": "g.pharisees--60cfcde1",
+      "name": "Pharisees",
+      "type": "group",
+      "role": "sect",
+      "refs_count": 6
+    },
+    {
+      "id": "p.thomas-didymus--dd3e1141",
+      "name": "Thomas (Didymus)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1
+    },
+    {
+      "id": "p.bartholomew-nathanael--0dc778fd",
+      "name": "Bartholomew (Nathanael)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 3
+    },
+    {
+      "id": "g.the-twelve-group--75238567",
+      "name": "The Twelve (group)",
+      "type": "group",
+      "role": "apostolic-college",
+      "refs_count": 1
+    },
+    {
+      "id": "p.simon-the-zealot--51ebe2d5",
+      "name": "Simon the Zealot",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1
+    },
+    {
+      "id": "p.thaddaeus-judas-son-of-james--26e88cd5",
+      "name": "Thaddaeus (Judas son of James)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1
+    },
+    {
+      "id": "p.james-son-of-alphaeus--1f0cf189",
+      "name": "James son of Alphaeus",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1
+    },
+    {
+      "id": "f.withered-hand-on-the-sabbath--03369814",
+      "name": "Withered hand on the Sabbath",
+      "type": "figure",
+      "role": "controversy",
+      "refs_count": 2
+    }
+  ]
+}

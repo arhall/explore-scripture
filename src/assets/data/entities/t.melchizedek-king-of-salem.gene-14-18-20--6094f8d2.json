@@ -1,0 +1,22 @@
+{
+  "name": "Melchizedek king of Salem",
+  "type": "title",
+  "references": [
+    "Genesis 14:18–20"
+  ],
+  "blurb": "Priest-king who blesses Abraham and receives a tithe. Appearing without genealogy, he becomes the pattern of a priesthood grounded in divine appointment rather than lineage.",
+  "category": "narrative",
+  "cross_references": [
+    "Psalm 110:4",
+    "Hebrews 7"
+  ],
+  "id": "t.melchizedek-king-of-salem.gene-14-18-20--6094f8d2",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      14
+    ]
+  }
+}

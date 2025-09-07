@@ -1,0 +1,23 @@
+{
+  "name": "Martha of Bethany",
+  "type": "person",
+  "category": "disciple",
+  "references": [
+    "John 11:1–27"
+  ],
+  "aka": [],
+  "id": "p.martha-of-bethany--ab33d3a4",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      11
+    ]
+  }
+}

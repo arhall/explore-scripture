@@ -1,0 +1,21 @@
+{
+  "name": "Psalm 8 exposition",
+  "type": "figure",
+  "category": "exegesis",
+  "references": [
+    "Heb 2:6-8"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Ps 8:4-6",
+      "type": "quote"
+    }
+  ],
+  "aka": [],
+  "id": "f.psalm-8-exposition--e8f87b3c",
+  "book_references": {
+    "Hebrews": [
+      2
+    ]
+  }
+}

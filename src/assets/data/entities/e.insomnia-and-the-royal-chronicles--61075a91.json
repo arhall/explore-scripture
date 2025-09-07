@@ -1,0 +1,18 @@
+{
+  "name": "Insomnia and the royal chronicles",
+  "type": "entity",
+  "references": [
+    "Esther 6:1–3"
+  ],
+  "blurb": "Providential sleeplessness unearths Mordecai’s forgotten loyalty—archival mercy.",
+  "category": "record",
+  "id": "e.insomnia-and-the-royal-chronicles--61075a91",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      6
+    ]
+  }
+}

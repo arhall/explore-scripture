@@ -1,0 +1,18 @@
+{
+  "name": "A day’s journey proclamation",
+  "type": "entity",
+  "references": [
+    "Jonah 3:4"
+  ],
+  "blurb": "Jonah’s minimal sermon—five Hebrew words—yet explosive effect: Nineveh believes God.",
+  "category": "preaching",
+  "id": "e.a-days-journey-proclamation--aa8709f7",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jonah": [
+      3
+    ]
+  }
+}

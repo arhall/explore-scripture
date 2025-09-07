@@ -1,0 +1,25 @@
+{
+  "name": "Jamin",
+  "type": "person",
+  "references": [
+    "Genesis 46:10",
+    "Exodus 6:15"
+  ],
+  "blurb": "Son of Simeon listed among those who went to Egypt.",
+  "category": "genealogy",
+  "cross_references": [
+    "Genesis 46:10"
+  ],
+  "id": "p.jamin.gene-46-10--5972d38d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      46
+    ],
+    "Exodus": [
+      6
+    ]
+  }
+}

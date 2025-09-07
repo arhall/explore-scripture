@@ -1,0 +1,23 @@
+{
+  "name": "The Fair Havens (Crete)",
+  "type": "entity",
+  "category": "harbor",
+  "references": [
+    "Acts 27:8"
+  ],
+  "aka": [],
+  "id": "e.the-fair-havens-crete--4fbf6bfc",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      27
+    ]
+  }
+}

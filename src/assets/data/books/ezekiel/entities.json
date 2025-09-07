@@ -1,0 +1,1425 @@
+{
+  "book": "Ezekiel",
+  "slug": "ezekiel",
+  "entity_count": 157,
+  "key_figures": [
+    {
+      "id": "d.glory-of-the-lord-appearing-in-babylon.kavod--c4d80731",
+      "name": "Glory of the LORD (kavod) — appearing in Babylon",
+      "type": "divine",
+      "role": "theophany",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "d.glory-departs-the-temple--f40b39d9",
+      "name": "Glory departs the temple",
+      "type": "divine",
+      "role": "theophany",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "d.glory-returns-to-the-new-temple--b7b58e01",
+      "name": "Glory returns to the new temple",
+      "type": "divine",
+      "role": "theophany",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.pharaoh.hophra-apries-horizon--5a8042d1",
+      "name": "Pharaoh (Hophra/Apries horizon)",
+      "type": "person",
+      "role": "pharaoh",
+      "refs_count": 4,
+      "score": 14
+    },
+    {
+      "id": "p.nebuchadnezzar-ii-of-babylon.my-servant--a1611638",
+      "name": "Nebuchadnezzar II of Babylon (‘my servant’)",
+      "type": "person",
+      "role": "emperor",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.ezekiel-son-of-buzi--43c9f405",
+      "name": "Ezekiel son of Buzi",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.buzi.father-of-ezekiel--646c146d",
+      "name": "Buzi (father of Ezekiel)",
+      "type": "person",
+      "role": "priest",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.ezekiels-wife.the-delight-of-your-eyes--46bd3612",
+      "name": "Ezekiel’s wife (‘the delight of your eyes’)",
+      "type": "person",
+      "role": "family",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jehoiachin-in-exile.jeconiah--091fac40",
+      "name": "Jehoiachin (Jeconiah) in exile",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.zedekiah.prince-in-jerusalem--e701970b",
+      "name": "Zedekiah (‘prince in Jerusalem’)",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.prince-of-tyre--e919d820",
+      "name": "Prince of Tyre",
+      "type": "person",
+      "role": "prince",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.king-of-tyre.lament-figure--42a01c1b",
+      "name": "King of Tyre (lament figure)",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.prince-of-egypt--98a51f14",
+      "name": "Prince of Egypt",
+      "type": "person",
+      "role": "prince",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.king-of-sidon--dda5cc49",
+      "name": "King of Sidon",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.gog-of-the-land-of-magog--4f1eb8e2",
+      "name": "Gog of the land of Magog",
+      "type": "person",
+      "role": "apocalypse",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.egypt--ab1ad00f",
+      "name": "Egypt",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 4,
+      "score": 10
+    },
+    {
+      "id": "g.tyre.phoenicia--26eb5064",
+      "name": "Tyre (Phoenicia)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 3,
+      "score": 9
+    },
+    {
+      "id": "g.princes-of-the-land.allotments--0aa125e1",
+      "name": "Princes of the land (allotments)",
+      "type": "group",
+      "role": "leadership",
+      "refs_count": 2,
+      "score": 8
+    },
+    {
+      "id": "g.philistia--5497e6d6",
+      "name": "Philistia",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.moab--0526e590",
+      "name": "Moab",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "d.glory-of-the-lord-appearing-in-babylon.kavod--c4d80731",
+      "name": "Glory of the LORD (kavod) — appearing in Babylon",
+      "type": "divine",
+      "role": "theophany",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "d.glory-departs-the-temple--f40b39d9",
+      "name": "Glory departs the temple",
+      "type": "divine",
+      "role": "theophany",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "d.glory-returns-to-the-new-temple--b7b58e01",
+      "name": "Glory returns to the new temple",
+      "type": "divine",
+      "role": "theophany",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.pharaoh.hophra-apries-horizon--5a8042d1",
+      "name": "Pharaoh (Hophra/Apries horizon)",
+      "type": "person",
+      "role": "pharaoh",
+      "refs_count": 4,
+      "score": 14
+    },
+    {
+      "id": "p.nebuchadnezzar-ii-of-babylon.my-servant--a1611638",
+      "name": "Nebuchadnezzar II of Babylon (‘my servant’)",
+      "type": "person",
+      "role": "emperor",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.ezekiel-son-of-buzi--43c9f405",
+      "name": "Ezekiel son of Buzi",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.buzi.father-of-ezekiel--646c146d",
+      "name": "Buzi (father of Ezekiel)",
+      "type": "person",
+      "role": "priest",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.ezekiels-wife.the-delight-of-your-eyes--46bd3612",
+      "name": "Ezekiel’s wife (‘the delight of your eyes’)",
+      "type": "person",
+      "role": "family",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jehoiachin-in-exile.jeconiah--091fac40",
+      "name": "Jehoiachin (Jeconiah) in exile",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.zedekiah.prince-in-jerusalem--e701970b",
+      "name": "Zedekiah (‘prince in Jerusalem’)",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.prince-of-tyre--e919d820",
+      "name": "Prince of Tyre",
+      "type": "person",
+      "role": "prince",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.king-of-tyre.lament-figure--42a01c1b",
+      "name": "King of Tyre (lament figure)",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.prince-of-egypt--98a51f14",
+      "name": "Prince of Egypt",
+      "type": "person",
+      "role": "prince",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.king-of-sidon--dda5cc49",
+      "name": "King of Sidon",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.gog-of-the-land-of-magog--4f1eb8e2",
+      "name": "Gog of the land of Magog",
+      "type": "person",
+      "role": "apocalypse",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.egypt--ab1ad00f",
+      "name": "Egypt",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 4,
+      "score": 10
+    },
+    {
+      "id": "g.tyre.phoenicia--26eb5064",
+      "name": "Tyre (Phoenicia)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 3,
+      "score": 9
+    },
+    {
+      "id": "g.princes-of-the-land.allotments--0aa125e1",
+      "name": "Princes of the land (allotments)",
+      "type": "group",
+      "role": "leadership",
+      "refs_count": 2,
+      "score": 8
+    },
+    {
+      "id": "g.philistia--5497e6d6",
+      "name": "Philistia",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.moab--0526e590",
+      "name": "Moab",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.edom.bozrah--286918d3",
+      "name": "Edom (Bozrah)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.shepherds-of-israel.leaders--15a7dce7",
+      "name": "Shepherds of Israel (leaders)",
+      "type": "group",
+      "role": "leadership",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.ammon.jeremiah--e3cb1d55",
+      "name": "Ammon (Jeremiah)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.elders-of-israel-in-exile.inquirers--9103aa87",
+      "name": "Elders of Israel in exile (inquirers)",
+      "type": "group",
+      "role": "elders",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.exilic-community-by-the-chebar-canal--4921e3da",
+      "name": "Exilic community by the Chebar canal",
+      "type": "group",
+      "role": "diaspora",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.false-prophets-of-israel--18fda1d3",
+      "name": "False prophets of Israel",
+      "type": "group",
+      "role": "false-prophet",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.prophetesses-with-bands-and-veils--e5b23000",
+      "name": "Prophetesses with bands and veils",
+      "type": "group",
+      "role": "occult",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sidon.ezekiel--720ef745",
+      "name": "Sidon (Ezekiel)",
+      "type": "group",
+      "role": "city",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.assyria-as-a-towering-cedar--ddf88a81",
+      "name": "Assyria as a towering cedar",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.remnant-spared-for-witness--6241b625",
+      "name": "Remnant spared for witness",
+      "type": "group",
+      "role": "remnant",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.flock-of-the-lord.rescued--637e9574",
+      "name": "Flock of the LORD (rescued)",
+      "type": "group",
+      "role": "people",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.levites-who-went-astray--591ecb49",
+      "name": "Levites who went astray",
+      "type": "group",
+      "role": "priesthood",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.merchants-and-mariners-of-tyre--71f7be08",
+      "name": "Merchants and mariners of Tyre",
+      "type": "group",
+      "role": "economy",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.women-weeping-for-tammuz--4224e705",
+      "name": "Women weeping for Tammuz",
+      "type": "group",
+      "role": "idolatry",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.seventy-elders-with-censers--113a58f7",
+      "name": "Seventy elders with censers",
+      "type": "group",
+      "role": "idolatry",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.twenty-five-men-worshiping-the-sun--ee8ecea2",
+      "name": "Twenty‑five men worshiping the sun",
+      "type": "group",
+      "role": "idolatry",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.magog-meshech-and-tubal--34c89b69",
+      "name": "Magog, Meshech, and Tubal",
+      "type": "group",
+      "role": "nations",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "f.the-sighing-man.marked-remnant--4ce3e28a",
+      "name": "The sighing man (marked remnant)",
+      "type": "figure",
+      "role": "remnant",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.man-with-a-measuring-reed-and-line--ef5197c3",
+      "name": "Man with a measuring reed and line",
+      "type": "figure",
+      "role": "angelic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.man-clothed-in-linen-with-writing-kit--28fb178f",
+      "name": "Man clothed in linen with writing kit",
+      "type": "figure",
+      "role": "angelic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.david-my-servant-shepherd-king--b05a1fe7",
+      "name": "David my servant: shepherd‑king",
+      "type": "figure",
+      "role": "messianic",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.wheels-within-wheels-full-of-eyes--7fc9a681",
+      "name": "Wheels within wheels, full of eyes",
+      "type": "entity",
+      "role": "heavenly",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.hand-of-the-lord-spirit-transportations--974a7e05",
+      "name": "Hand of the LORD / Spirit transportations",
+      "type": "entity",
+      "role": "experience",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.river-of-life-from-the-temple--dc11fd8e",
+      "name": "River of life from the temple",
+      "type": "entity",
+      "role": "restoration",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.eating-the-scroll.sweet-bitter-calling--5a851e1c",
+      "name": "Eating the scroll (sweet/bitter calling)",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.mute-until-news-arrives--acbbc14f",
+      "name": "Mute until news arrives",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.brick-and-siege-model--4670d489",
+      "name": "Brick and siege model",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.lying-on-left-and-right-sides--065d7db4",
+      "name": "Lying on left and right sides",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.defiled-rations-baked-over-dung--ee55d8e3",
+      "name": "Defiled rations baked over dung",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.shaving-hair-and-dividing-thirds--a9e11d50",
+      "name": "Shaving hair and dividing thirds",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.packing-baggage-for-exile--554922f8",
+      "name": "Packing baggage for exile",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.sword-sharpened-and-polished--bb98f183",
+      "name": "Sword sharpened and polished",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.sighing-and-smiting-the-thigh--faff2602",
+      "name": "Sighing and smiting the thigh",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.cooking-pot-rusty-cauldron--2f3ee29a",
+      "name": "Cooking pot / rusty cauldron",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.prophets-wife-taken-no-mourning--bfedd544",
+      "name": "Prophet’s wife taken; no mourning",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.two-sticks-joined.judah-joseph--0a83a666",
+      "name": "Two sticks joined (Judah & Joseph)",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.valley-of-dry-bones--19de687d",
+      "name": "Valley of dry bones",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.watchman-charge.i-ii--b97f4242",
+      "name": "Watchman charge (I & II)",
+      "type": "entity",
+      "role": "commission",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.allegory-of-the-unfaithful-bride.jerusalem--2429bfef",
+      "name": "Allegory of the unfaithful bride (Jerusalem)",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.parable-of-the-eagles-and-the-vine--a3f95fa5",
+      "name": "Parable of the eagles and the vine",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.promise-of-the-tender-twig-cedar-on-high--015e98ac",
+      "name": "Promise of the tender twig / cedar on high",
+      "type": "entity",
+      "role": "hope",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.lament-for-the-princes-of-israel.lions-whelps--a03bad2d",
+      "name": "Lament for the princes of Israel (lions’ whelps)",
+      "type": "entity",
+      "role": "lament",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.allegory-of-two-sisters-oholah-oholibah.samaria--c09d3d1e",
+      "name": "Allegory of two sisters: Oholah & Oholibah",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.rusty-cauldron-song--2fb1f190",
+      "name": "Rusty cauldron song",
+      "type": "entity",
+      "role": "lament",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.dirge-for-tyre-the-trading-ship--1f574077",
+      "name": "Dirge for Tyre, the trading ship",
+      "type": "entity",
+      "role": "lament",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.laments-over-pharaoh-and-egypt--c570199f",
+      "name": "Laments over Pharaoh and Egypt",
+      "type": "entity",
+      "role": "lament",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.abominations-at-the-temple.four-scenes--ac3e335b",
+      "name": "Abominations at the temple (four scenes)",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.executioners-and-the-man-in-linen--bb6062a8",
+      "name": "Executioners and the man in linen",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.glory-leaves-threshold-and-east-gate--42b43260",
+      "name": "Glory leaves threshold and east gate",
+      "type": "entity",
+      "role": "theophany",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.glory-stands-on-the-mountain-east-of-the-city--ceea7ce4",
+      "name": "Glory stands on the mountain east of the city",
+      "type": "entity",
+      "role": "theophany",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.return-of-glory-by-the-east-gate--fef2569b",
+      "name": "Return of glory by the east gate",
+      "type": "entity",
+      "role": "theophany",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.east-gate-shut-for-the-prince--8a448a83",
+      "name": "East gate shut for the Prince",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.altar-of-burnt-offering.dimensions-consecration--6486138a",
+      "name": "Altar of burnt offering (dimensions & consecration)",
+      "type": "entity",
+      "role": "cult",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.zadokite-priests-clothing-duties-holiness--105cac09",
+      "name": "Zadokite priests: clothing, duties, holiness",
+      "type": "entity",
+      "role": "priesthood",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.levites-demotion-and-service--9060d126",
+      "name": "Levites’ demotion and service",
+      "type": "entity",
+      "role": "priesthood",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.chambers-for-singers-and-priests--2125c159",
+      "name": "Chambers for singers and priests",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.boiling-places-and-kitchens--44d0d6d6",
+      "name": "Boiling places and kitchens",
+      "type": "entity",
+      "role": "cult",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.princes-offerings-and-sabbaths--16fd30d4",
+      "name": "Prince’s offerings and Sabbaths",
+      "type": "entity",
+      "role": "royal-worship",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.just-weights-ephah-and-shekel--2908736a",
+      "name": "Just weights, ephah, and shekel",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.holy-district-and-sacred-allotment--01e060f0",
+      "name": "Holy district and sacred allotment",
+      "type": "entity",
+      "role": "land",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.tribal-allotments.restored-land--4867a1f9",
+      "name": "Tribal allotments (restored land)",
+      "type": "entity",
+      "role": "land",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.city-gates-named-for-tribes--ff7f733b",
+      "name": "City gates named for tribes",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.city-name-the-lord-is-there.yhwh-shammah--b3647fde",
+      "name": "City name: ‘The LORD is there’ (YHWH Shammah)",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.individual-responsibility-and-the-soul-that-sins-shall-die--4e54a51a",
+      "name": "Individual responsibility and the soul that sins shall die",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.corporate-memory-and-stubbornness--67cfc0b2",
+      "name": "Corporate memory and stubbornness",
+      "type": "entity",
+      "role": "history",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.new-heart-and-new-spirit--11a7e4b6",
+      "name": "New heart and new spirit",
+      "type": "entity",
+      "role": "renewal",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.sprinkled-clean-water-and-indwelling-spirit--e85f01a6",
+      "name": "Sprinkled clean water and indwelling Spirit",
+      "type": "entity",
+      "role": "renewal",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.covenant-of-peace-everlasting-covenant--67f94f49",
+      "name": "Covenant of peace / everlasting covenant",
+      "type": "entity",
+      "role": "covenant",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.proverb-the-days-are-prolonged-refuted--8fd76bde",
+      "name": "Proverb: ‘The days are prolonged’ refuted",
+      "type": "entity",
+      "role": "prophecy",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.proverb-the-fathers-ate-sour-grapes-refuted--1db75e08",
+      "name": "Proverb: ‘The fathers ate sour grapes’ refuted",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.justice-in-commerce-and-governance--600c8a53",
+      "name": "Justice in commerce and governance",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.hooks-in-the-jaws-gods-sovereignty-in-war--2aca1bd4",
+      "name": "Hooks in the jaws; God’s sovereignty in war",
+      "type": "entity",
+      "role": "apocalypse",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.earthquake-hail-fire-and-brimstone--935275f9",
+      "name": "Earthquake, hail, fire, and brimstone",
+      "type": "entity",
+      "role": "apocalypse",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.great-feast-of-birds-and-beasts--ccfd5947",
+      "name": "Great feast of birds and beasts",
+      "type": "entity",
+      "role": "apocalypse",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.burying-of-gog-valley-of-hamon-gog--30c9114a",
+      "name": "Burying of Gog: Valley of Hamon‑gog",
+      "type": "entity",
+      "role": "purity",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.house-of-israel-knows-the-lord-from-that-day-forward--e6a2baa1",
+      "name": "House of Israel knows the LORD from that day forward",
+      "type": "entity",
+      "role": "recognition",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.date-formula-fifth-year-fourth-month-fifth-day--38ed7e91",
+      "name": "Date formula: fifth year, fourth month, fifth day",
+      "type": "entity",
+      "role": "chronology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.mute-sign-resumes-twelfth-year-tenth-month-fifth-day--3eba8189",
+      "name": "Mute sign resumes: twelfth year, tenth month, fifth day",
+      "type": "entity",
+      "role": "chronology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.twenty-fifth-year-beginning-of-temple-vision--1f0254bd",
+      "name": "Twenty‑fifth year, beginning of temple vision",
+      "type": "entity",
+      "role": "chronology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.vision-transports.in-the-visions-of-god--53f280ac",
+      "name": "Vision transports (‘in the visions of God’)",
+      "type": "entity",
+      "role": "literary",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.rhetorical-refrain-set-your-face-toward--ad6c2690",
+      "name": "Rhetorical refrain: ‘set your face toward…’",
+      "type": "entity",
+      "role": "literary",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.proverb-and-riddle-technique.idah--394e7796",
+      "name": "Proverb and riddle (ḥidah) technique",
+      "type": "entity",
+      "role": "literary",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.chebar-canal.kebar--47a9332d",
+      "name": "Chebar canal (Kebar)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.tel-abib-by-the-chebar.tel-aviv--8a12eae3",
+      "name": "Tel‑Abib (Tel‑aviv) by the Chebar",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.north-gate-of-the-altar--498c2bbf",
+      "name": "North gate of the altar",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.inner-court-of-the-lords-house--b0c13e3c",
+      "name": "Inner court of the LORD’s house",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.east-gate-of-the-house-of-the-lord--031ec9e1",
+      "name": "East gate of the house of the LORD",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.valley-full-of-bones--127f4362",
+      "name": "Valley full of bones",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.valley-of-hamon-gog--bec90d18",
+      "name": "Valley of Hamon‑gog",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.cherub-face-man--9d971648",
+      "name": "Cherub face: man",
+      "type": "entity",
+      "role": "symbol",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.cherub-face-lion--7aa205a0",
+      "name": "Cherub face: lion",
+      "type": "entity",
+      "role": "symbol",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.cherub-face-ox--30f06cb4",
+      "name": "Cherub face: ox",
+      "type": "entity",
+      "role": "symbol",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.cherub-face-eagle--b57e3774",
+      "name": "Cherub face: eagle",
+      "type": "entity",
+      "role": "symbol",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.rodanim-rhodes--4db4e8ac",
+      "name": "Rodanim / Rhodes (possible reading)",
+      "type": "entity",
+      "role": "merchant",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.lud--0abbe96f",
+      "name": "Lud (Lydians)",
+      "type": "entity",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.put--15708e65",
+      "name": "Put (Libyans)",
+      "type": "entity",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.persia--79556c3b",
+      "name": "Persia (Parsu)",
+      "type": "entity",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.outer-court-chambers--75b6da4d",
+      "name": "Outer court chambers",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.inner-court-chambers--7d3ed7dc",
+      "name": "Inner court chambers",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.altar-dimensions--092d8e5b",
+      "name": "Altar dimensions",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.river-banks-with-trees--767a1a98",
+      "name": "River banks with trees",
+      "type": "entity",
+      "role": "restoration",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.pharaoh-hophra--a3215ccb",
+      "name": "Pharaoh Hophra (Apries)",
+      "type": "entity",
+      "role": "pharaoh",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.persia--eec34784",
+      "name": "Persia (ally of Gog)",
+      "type": "entity",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.cush--efec636c",
+      "name": "Cush (ally of Gog)",
+      "type": "entity",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.put--5443d03d",
+      "name": "Put (ally of Gog)",
+      "type": "entity",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.gomer--63bef61b",
+      "name": "Gomer (ally of Gog)",
+      "type": "entity",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.beth-togarmah--7385b287",
+      "name": "Beth‑Togarmah (ally of Gog)",
+      "type": "entity",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.prophet-as-watchman--b57d428b",
+      "name": "Prophet as Watchman",
+      "type": "entity",
+      "role": "office",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.jerusalem-as-foundling-infant--44bdc225",
+      "name": "Jerusalem as foundling infant",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.jerusalem-adorned-as-bride--25a4959f",
+      "name": "Jerusalem adorned as bride",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.jerusalems-harlotry--5da3d9fc",
+      "name": "Jerusalem’s harlotry",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.judgment-and-restoration-of-the-bride--1d5bf648",
+      "name": "Judgment and restoration of the bride",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.oholah--0e5e5928",
+      "name": "Oholah (Samaria)",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.oholibah--e9a2173c",
+      "name": "Oholibah (Jerusalem)",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.seventh-year-fifth-month--3ea4e617",
+      "name": "Seventh year, fifth month (elders before Ezekiel)",
+      "type": "entity",
+      "role": "chronology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.eleventh-year-first-month--740fea0b",
+      "name": "Eleventh year, first month (fall of Tyre)",
+      "type": "entity",
+      "role": "chronology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.twelfth-year-first-day--dd0d84c4",
+      "name": "Twelfth year, first day (oracle vs Egypt)",
+      "type": "entity",
+      "role": "chronology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.twelfth-year-twelfth-month--fe70706f",
+      "name": "Twelfth year, twelfth month (Egypt lament)",
+      "type": "entity",
+      "role": "chronology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.shipmasters-of-tyre--3e6c9e53",
+      "name": "Shipmasters of Tyre",
+      "type": "entity",
+      "role": "merchant",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.helmsmen-of-tyre--ca971d70",
+      "name": "Helmsmen (pilots) of Tyre",
+      "type": "entity",
+      "role": "merchant",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.caulkers-of-tyre--0a3bc0db",
+      "name": "Caulkers of Tyre",
+      "type": "entity",
+      "role": "merchant",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.mariners-of-tyre--5b8c834f",
+      "name": "Mariners of Tyre",
+      "type": "entity",
+      "role": "merchant",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.north-gate-of-outer-court--fa5c1b01",
+      "name": "North gate of outer court",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.south-gate-of-outer-court--b7df16f5",
+      "name": "South gate of outer court",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.east-gate-of-inner-court--83ef0956",
+      "name": "East gate of inner court",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.north-gate-of-inner-court--10119c2c",
+      "name": "North gate of inner court",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.tables-for-offerings--3fbf6a49",
+      "name": "Tables for offerings",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.priests-kitchens--71ec80e9",
+      "name": "Priests’ kitchens",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.gogs-shields-and-bucklers--6bb8bb31",
+      "name": "Gog’s shields and bucklers",
+      "type": "entity",
+      "role": "apocalypse",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.gogs-bows-and-arrows--0c0c6196",
+      "name": "Gog’s bows and arrows",
+      "type": "entity",
+      "role": "apocalypse",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.hailstones-fire-and-brimstone--a073c2d7",
+      "name": "Hailstones, fire, and brimstone",
+      "type": "entity",
+      "role": "apocalypse",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.birds-summoned-to-feast--544dcc8f",
+      "name": "Birds summoned to feast",
+      "type": "entity",
+      "role": "apocalypse",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.beasts-of-the-field-summoned-to-feast--d391b2f8",
+      "name": "Beasts of the field summoned to feast",
+      "type": "entity",
+      "role": "apocalypse",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.fourth-year-of-exile--b51affb9",
+      "name": "Fourth year of exile (vision prep?)",
+      "type": "entity",
+      "role": "chronology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.ninth-year-fourth-month--ae94fd53",
+      "name": "Ninth year, fourth month (oracle vs Egypt)",
+      "type": "entity",
+      "role": "chronology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.tenth-year-tenth-month--a202f743",
+      "name": "Tenth year, tenth month (oracle vs Egypt)",
+      "type": "entity",
+      "role": "chronology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.eleventh-year-seventh-month--2c2a19a1",
+      "name": "Eleventh year, seventh month (oracle vs Egypt)",
+      "type": "entity",
+      "role": "chronology",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

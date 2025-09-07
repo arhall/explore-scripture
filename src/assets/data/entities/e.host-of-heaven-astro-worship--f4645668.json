@@ -1,0 +1,18 @@
+{
+  "id": "e.host-of-heaven-astro-worship--f4645668",
+  "name": "Host of heaven (astro-worship)",
+  "type": "entity",
+  "references": [
+    "Zeph 1:5"
+  ],
+  "category": "celestial-cult",
+  "blurb": "Worship of sun, moon, and stars on rooftops; condemned practice.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zephaniah": [
+      1
+    ]
+  }
+}

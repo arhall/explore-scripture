@@ -1,0 +1,25 @@
+{
+  "name": "Solomon’s Portico",
+  "type": "entity",
+  "category": "site",
+  "references": [
+    "Acts 3:11",
+    "Acts 5:12"
+  ],
+  "aka": [],
+  "id": "e.solomon-s-portico--25981ded",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      3,
+      5
+    ]
+  }
+}

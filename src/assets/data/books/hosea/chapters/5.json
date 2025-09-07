@@ -1,0 +1,14 @@
+{
+  "book": "Hosea",
+  "chapter": 5,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "g.assyria--0b88cead",
+      "name": "Assyria",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 2
+    }
+  ]
+}

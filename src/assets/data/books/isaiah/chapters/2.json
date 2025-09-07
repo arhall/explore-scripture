@@ -1,0 +1,21 @@
+{
+  "book": "Isaiah",
+  "chapter": 2,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "e.ships-of-tarshish--9268cdea",
+      "name": "Ships of Tarshish",
+      "type": "entity",
+      "role": "symbol",
+      "refs_count": 1
+    },
+    {
+      "id": "e.swords-into-plowshares.zions-instruction--03251c07",
+      "name": "Swords into plowshares (Zion’s instruction)",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1
+    }
+  ]
+}

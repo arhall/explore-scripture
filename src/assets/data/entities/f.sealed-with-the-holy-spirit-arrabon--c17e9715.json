@@ -1,0 +1,27 @@
+{
+  "name": "Sealed with the Holy Spirit (arrabon)",
+  "type": "figure",
+  "category": "sealing",
+  "references": [
+    "Eph 1:13–14"
+  ],
+  "greek_terms": [
+    {
+      "term": "ἀρραβών",
+      "gloss": "pledge/down payment"
+    }
+  ],
+  "aka": [],
+  "id": "f.sealed-with-the-holy-spirit-arrabon--c17e9715",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      1
+    ]
+  }
+}

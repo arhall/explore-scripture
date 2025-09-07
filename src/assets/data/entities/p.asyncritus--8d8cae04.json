@@ -1,0 +1,21 @@
+{
+  "name": "Asyncritus",
+  "type": "person",
+  "category": "believer",
+  "references": [
+    "Rom 16:14"
+  ],
+  "aka": [],
+  "id": "p.asyncritus--8d8cae04",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      16
+    ]
+  }
+}

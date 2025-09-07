@@ -1,0 +1,15 @@
+{
+  "name": "Wilderness generation",
+  "type": "group",
+  "category": "example-negative",
+  "references": [
+    "Heb 3:7-11"
+  ],
+  "aka": [],
+  "id": "g.wilderness-generation--dd929cd6",
+  "book_references": {
+    "Hebrews": [
+      3
+    ]
+  }
+}

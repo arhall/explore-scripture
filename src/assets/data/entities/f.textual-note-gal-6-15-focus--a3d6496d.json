@@ -1,0 +1,22 @@
+{
+  "name": "Textual note: Gal 6:15 focus",
+  "type": "figure",
+  "category": "textual-notes",
+  "references": [
+    "Gal 6:15"
+  ],
+  "note": "Emphasis on ‘new creation’ vs circumcision/uncircumcision.",
+  "aka": [],
+  "id": "f.textual-note-gal-6-15-focus--a3d6496d",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Galatians": [
+      6
+    ]
+  }
+}

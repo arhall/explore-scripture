@@ -1,0 +1,19 @@
+{
+  "name": "Chief Pinon",
+  "type": "title",
+  "references": [
+    "Genesis 36:40–43"
+  ],
+  "blurb": "Territorial chief of Edom listed by dwelling places; maps the political geography of Seir.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "t.chief-pinon.gene-36-40-43--d3a3694d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

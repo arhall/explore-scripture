@@ -1,0 +1,18 @@
+{
+  "name": "Broken flask in the Valley of Hinnom (Topheth)",
+  "type": "entity",
+  "references": [
+    "Jeremiah 19:1–13"
+  ],
+  "blurb": "Irreversible ruin sign‑acted at the place of child sacrifice; horror meets holiness.",
+  "category": "sign",
+  "id": "e.broken-flask-in-the-valley-of-hinnom.topheth--4ded1c36",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      19
+    ]
+  }
+}

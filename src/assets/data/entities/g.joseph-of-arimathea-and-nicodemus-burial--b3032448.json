@@ -1,0 +1,23 @@
+{
+  "name": "Joseph of Arimathea and Nicodemus (burial)",
+  "type": "group",
+  "category": "burial",
+  "references": [
+    "John 19:38–42"
+  ],
+  "aka": [],
+  "id": "g.joseph-of-arimathea-and-nicodemus-burial--b3032448",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      19
+    ]
+  }
+}

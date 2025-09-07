@@ -1,0 +1,18 @@
+{
+  "name": "Job humbled: hand on mouth",
+  "type": "entity",
+  "references": [
+    "Job 40:3–5"
+  ],
+  "blurb": "Silence as wisdom’s gateway—repentance without self-hatred, awe without annihilation.",
+  "category": "spirituality",
+  "id": "e.job-humbled-hand-on-mouth--c2fe53fe",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Job": [
+      40
+    ]
+  }
+}

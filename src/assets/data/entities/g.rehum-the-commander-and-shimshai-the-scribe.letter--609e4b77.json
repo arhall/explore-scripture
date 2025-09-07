@@ -1,0 +1,18 @@
+{
+  "name": "Rehum the commander and Shimshai the scribe (letter)",
+  "type": "group",
+  "references": [
+    "Ezra 4:8–24"
+  ],
+  "blurb": "Accusatory letter to Artaxerxes brands Jerusalem rebellious; work halted by imperial delay and distrust.",
+  "category": "record",
+  "id": "g.rehum-the-commander-and-shimshai-the-scribe.letter--609e4b77",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      4
+    ]
+  }
+}

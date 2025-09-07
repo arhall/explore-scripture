@@ -1,0 +1,18 @@
+{
+  "id": "e.vision-made-plain--1281b7bb",
+  "name": "Vision made plain",
+  "type": "entity",
+  "references": [
+    "Hab 2:2"
+  ],
+  "category": "revelation",
+  "blurb": "Clarity in communication ensures communal obedience and enduring hope.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      2
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "e.god-as-shepherd-of-his-people--b10f3ae9",
+  "name": "God as shepherd of his people",
+  "type": "entity",
+  "references": [
+    "Micah 7:14"
+  ],
+  "category": "shepherd",
+  "blurb": "Pastoral petition for Bashan and Gilead pastures as in days of old.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      7
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "p.micah-of-moresheth--4e9f3b2a",
+  "name": "Micah of Moresheth",
+  "type": "person",
+  "references": [
+    "Micah 1:1"
+  ],
+  "category": "prophet",
+  "relations": {
+    "hometown": "Moresheth-Gath"
+  },
+  "blurb": "Rural prophet from Moresheth-Gath, speaking bluntly against urban corruption in Samaria and Jerusalem.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      1
+    ]
+  }
+}

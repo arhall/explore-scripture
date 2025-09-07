@@ -1,0 +1,36 @@
+{
+  "name": "Matthew (Levi)",
+  "type": "person",
+  "category": "apostle",
+  "aka": [
+    "Levi"
+  ],
+  "references": [
+    "Matt 9:9–13",
+    "Mark 2:14",
+    "Luke 5:27–32"
+  ],
+  "blurb": "Tax collector turned disciple; mercy not sacrifice reframes vocation and table fellowship.",
+  "id": "p.matthew-levi--e46c1088",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Mark",
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      9
+    ],
+    "Mark": [
+      2
+    ],
+    "Luke": [
+      5
+    ]
+  }
+}

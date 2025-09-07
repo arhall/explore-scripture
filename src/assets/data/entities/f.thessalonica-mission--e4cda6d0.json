@@ -1,0 +1,23 @@
+{
+  "name": "Thessalonica mission",
+  "type": "figure",
+  "category": "mission",
+  "references": [
+    "Acts 17:1–9"
+  ],
+  "aka": [],
+  "id": "f.thessalonica-mission--e4cda6d0",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      17
+    ]
+  }
+}

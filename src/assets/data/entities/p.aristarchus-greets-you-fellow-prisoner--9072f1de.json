@@ -1,0 +1,24 @@
+{
+  "name": "Aristarchus greets you (fellow prisoner)",
+  "type": "person",
+  "category": "coworker",
+  "references": [
+    "Col 4:10"
+  ],
+  "relations": {
+    "status": "fellow prisoner"
+  },
+  "aka": [],
+  "id": "p.aristarchus-greets-you-fellow-prisoner--9072f1de",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      4
+    ]
+  }
+}

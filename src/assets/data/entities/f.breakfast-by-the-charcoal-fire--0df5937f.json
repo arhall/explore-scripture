@@ -1,0 +1,23 @@
+{
+  "name": "Breakfast by the charcoal fire",
+  "type": "figure",
+  "category": "meal",
+  "references": [
+    "John 21:9–14"
+  ],
+  "aka": [],
+  "id": "f.breakfast-by-the-charcoal-fire--0df5937f",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      21
+    ]
+  }
+}

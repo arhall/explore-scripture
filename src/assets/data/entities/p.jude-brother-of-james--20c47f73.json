@@ -1,0 +1,15 @@
+{
+  "name": "Jude (brother of James)",
+  "type": "person",
+  "category": "author",
+  "references": [
+    "Jude 1"
+  ],
+  "aka": [],
+  "id": "p.jude-brother-of-james--20c47f73",
+  "book_references": {
+    "Jude": [
+      1
+    ]
+  }
+}

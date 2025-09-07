@@ -1,0 +1,21 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 23,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "p.jehoiada-the-priest.covenant-coup--2484abd9",
+      "name": "Jehoiada the priest (covenant & coup)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.mattan-priest-of-baal-slain-altars-torn-down--1e8c8d98",
+      "name": "Mattan priest of Baal slain; altars torn down",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Prayer + posted guard (sword and trowel)",
+  "type": "entity",
+  "references": [
+    "Nehemiah 4:7–23"
+  ],
+  "blurb": "Working with one hand and holding a weapon with the other—faith neither naive nor paralyzed.",
+  "category": "ethics",
+  "id": "e.prayer-posted-guard.sword-and-trowel--8da7d583",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      4
+    ]
+  }
+}

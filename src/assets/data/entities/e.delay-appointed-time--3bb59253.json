@@ -1,0 +1,18 @@
+{
+  "id": "e.delay-appointed-time--3bb59253",
+  "name": "Delay/appointed time",
+  "type": "entity",
+  "references": [
+    "Hab 2:3"
+  ],
+  "category": "apocalyptic-timing",
+  "blurb": "The vision hastens to the end; apparent delay tests fidelity without nullifying promise.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      2
+    ]
+  }
+}

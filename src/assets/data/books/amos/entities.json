@@ -1,0 +1,793 @@
+{
+  "book": "Amos",
+  "slug": "amos",
+  "entity_count": 78,
+  "key_figures": [
+    {
+      "id": "p.amos-of-tekoa--c656eb34",
+      "name": "Amos of Tekoa",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.uzziah-of-judah--aec578f4",
+      "name": "Uzziah of Judah",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jeroboam-ii-of-israel--837d7e53",
+      "name": "Jeroboam II of Israel",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.amaziah-the-priest-of-bethel--b1f8b236",
+      "name": "Amaziah the priest of Bethel",
+      "type": "person",
+      "role": "priest",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.amaziahs-wife--7a535104",
+      "name": "Amaziah’s wife (becomes a prostitute)",
+      "type": "person",
+      "role": "family",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jeroboam-ii.in-the-bethel-dispute--fc8cf226",
+      "name": "Jeroboam II (in the Bethel dispute)",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.moab--0526e590",
+      "name": "Moab",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.damascus.aram--38c72bb6",
+      "name": "Damascus (Aram)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.egypt--ab1ad00f",
+      "name": "Egypt",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.israel.northern-kingdom--43968183",
+      "name": "Israel (Northern Kingdom)",
+      "type": "group",
+      "role": "kingdom",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.edom.desolate-wilderness--6976d032",
+      "name": "Edom (desolate wilderness)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.house-of-jeroboam--4215decc",
+      "name": "House of Jeroboam",
+      "type": "group",
+      "role": "dynasty",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.gaza.philistia--2489b4b8",
+      "name": "Gaza (Philistia)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.ammon--2e86c4cb",
+      "name": "Ammon",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.judah--ecd455d1",
+      "name": "Judah",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.cows-of-bashan--90d9ff4c",
+      "name": "Cows of Bashan (wealthy women)",
+      "type": "group",
+      "role": "elite",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.merchants-with-false-balances--20b3068f",
+      "name": "Merchants with false balances",
+      "type": "group",
+      "role": "commerce",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.judges-at-the-gate--b6c5ac48",
+      "name": "Judges at the gate (corrupted)",
+      "type": "group",
+      "role": "civic",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.drunkards-of-samaria--1da13bea",
+      "name": "Drunkards of Samaria",
+      "type": "group",
+      "role": "elite",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nazirites-given-wine--c9e9ee9d",
+      "name": "Nazirites given wine",
+      "type": "group",
+      "role": "vow",
+      "refs_count": 1,
+      "score": 7
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "p.amos-of-tekoa--c656eb34",
+      "name": "Amos of Tekoa",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.uzziah-of-judah--aec578f4",
+      "name": "Uzziah of Judah",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jeroboam-ii-of-israel--837d7e53",
+      "name": "Jeroboam II of Israel",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.amaziah-the-priest-of-bethel--b1f8b236",
+      "name": "Amaziah the priest of Bethel",
+      "type": "person",
+      "role": "priest",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.amaziahs-wife--7a535104",
+      "name": "Amaziah’s wife (becomes a prostitute)",
+      "type": "person",
+      "role": "family",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jeroboam-ii.in-the-bethel-dispute--fc8cf226",
+      "name": "Jeroboam II (in the Bethel dispute)",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.moab--0526e590",
+      "name": "Moab",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.damascus.aram--38c72bb6",
+      "name": "Damascus (Aram)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.egypt--ab1ad00f",
+      "name": "Egypt",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.israel.northern-kingdom--43968183",
+      "name": "Israel (Northern Kingdom)",
+      "type": "group",
+      "role": "kingdom",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.edom.desolate-wilderness--6976d032",
+      "name": "Edom (desolate wilderness)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.house-of-jeroboam--4215decc",
+      "name": "House of Jeroboam",
+      "type": "group",
+      "role": "dynasty",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.gaza.philistia--2489b4b8",
+      "name": "Gaza (Philistia)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.ammon--2e86c4cb",
+      "name": "Ammon",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.judah--ecd455d1",
+      "name": "Judah",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.cows-of-bashan--90d9ff4c",
+      "name": "Cows of Bashan (wealthy women)",
+      "type": "group",
+      "role": "elite",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.merchants-with-false-balances--20b3068f",
+      "name": "Merchants with false balances",
+      "type": "group",
+      "role": "commerce",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.judges-at-the-gate--b6c5ac48",
+      "name": "Judges at the gate (corrupted)",
+      "type": "group",
+      "role": "civic",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.drunkards-of-samaria--1da13bea",
+      "name": "Drunkards of Samaria",
+      "type": "group",
+      "role": "elite",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nazirites-given-wine--c9e9ee9d",
+      "name": "Nazirites given wine",
+      "type": "group",
+      "role": "vow",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.prophets-silenced--5d53100d",
+      "name": "Prophets silenced (‘Do not prophesy!’)",
+      "type": "group",
+      "role": "opposition",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.righteous-sold-for-silver-and-sandals--c533c737",
+      "name": "Righteous sold for silver and sandals",
+      "type": "group",
+      "role": "victims",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.oppressed-needy-at-the-gate--abc86a63",
+      "name": "Oppressed needy at the gate",
+      "type": "group",
+      "role": "victims",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.amaziahs-children--8fce1f52",
+      "name": "Amaziah’s children (fall by the sword)",
+      "type": "group",
+      "role": "family",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.philistia-aram.migration-sovereignty--39a4caf3",
+      "name": "Philistia & Aram (migration sovereignty)",
+      "type": "group",
+      "role": "sovereignty",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.nations-called-by-my-name--043ba148",
+      "name": "Nations called by my name",
+      "type": "group",
+      "role": "mission",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "f.booth-of-david-restored--49a1d18e",
+      "name": "Booth of David restored",
+      "type": "figure",
+      "role": "restoration",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.formula-for-three-transgressions-even-for-four--7f35c3c8",
+      "name": "Formula: For three transgressions, even for four",
+      "type": "entity",
+      "role": "literary",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "e.samaria--fcae1760",
+      "name": "Samaria",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.gilgal--52a48e88",
+      "name": "Gilgal",
+      "type": "entity",
+      "role": "cult-site",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.tekoa--7dcc9cae",
+      "name": "Tekoa (Judah)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.earthquake-marker.two-years-before--d9f36dfe",
+      "name": "Earthquake marker (two years before)",
+      "type": "entity",
+      "role": "chronology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.call-narrative-i-was-no-prophet-but-the-lord-took-me--36f77740",
+      "name": "Call narrative: ‘I was no prophet… but the LORD took me’",
+      "type": "entity",
+      "role": "vocation",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.bethel--e80af22f",
+      "name": "Bethel (royal sanctuary)",
+      "type": "entity",
+      "role": "cult-site",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.beersheba--07231947",
+      "name": "Beersheba (southern shrine)",
+      "type": "entity",
+      "role": "cult-site",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.mount-zion.in-tension-with-samaria--f68f4d61",
+      "name": "Mount Zion (in tension with Samaria)",
+      "type": "entity",
+      "role": "mount",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.calneh--2b0898c3",
+      "name": "Calneh",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.hamath-the-great--58c38c69",
+      "name": "Hamath the great",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.gath-of-the-philistines--c777beb0",
+      "name": "Gath of the Philistines",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.mount-carmel--c55d162a",
+      "name": "Mount Carmel",
+      "type": "entity",
+      "role": "mount",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.the-arabah.rift-valley--7cd4cfca",
+      "name": "The Arabah (rift valley)",
+      "type": "entity",
+      "role": "region",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.vision-locust-swarm--1f129368",
+      "name": "Vision: Locust swarm",
+      "type": "entity",
+      "role": "vision",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.vision-fire-consuming-the-deep--7115c6bf",
+      "name": "Vision: Fire consuming the deep",
+      "type": "entity",
+      "role": "vision",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.vision-plumb-line--95204cf3",
+      "name": "Vision: Plumb line",
+      "type": "entity",
+      "role": "vision",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.vision-basket-of-summer-fruit--5cdda23c",
+      "name": "Vision: Basket of summer fruit",
+      "type": "entity",
+      "role": "vision",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.vision-yhwh-beside-the-altar--e502bc1a",
+      "name": "Vision: YHWH beside the altar",
+      "type": "entity",
+      "role": "vision",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.amos-intercessions--bc3dff64",
+      "name": "Amos’ intercessions (twice)",
+      "type": "entity",
+      "role": "intercession",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.yhwh-relents-then-will-not-relent--caeb78e5",
+      "name": "YHWH relents… then will not relent",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.you-only-have-i-known.election-accountability--04d2db0e",
+      "name": "You only have I known (election & accountability)",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.does-a-lion-roar.rhetorical-chain--84daa72b",
+      "name": "Does a lion roar…? (rhetorical chain)",
+      "type": "entity",
+      "role": "rhetoric",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.seek-me-and-live--0196e7ac",
+      "name": "Seek me and live",
+      "type": "entity",
+      "role": "call",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.day-of-yhwh-is-darkness-not-light--d0a2aadd",
+      "name": "Day of YHWH is darkness, not light",
+      "type": "entity",
+      "role": "day-of-yhwh",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.hymn-maker-of-pleiades-and-orion--862c557d",
+      "name": "Hymn: Maker of Pleiades and Orion",
+      "type": "entity",
+      "role": "hymn",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.hymn-he-who-forms-the-mountains--747c9d51",
+      "name": "Hymn: He who forms the mountains…",
+      "type": "entity",
+      "role": "hymn",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.hymn-the-lord-of-hosts-who-builds-his-chambers--5fdf2632",
+      "name": "Hymn: The LORD of hosts… who builds his chambers",
+      "type": "entity",
+      "role": "hymn",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.let-justice-roll-down-like-waters--71eb19f4",
+      "name": "Let justice roll down like waters",
+      "type": "entity",
+      "role": "ethic",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.famine-of-hearing-the-words-of-the-lord--1bd6aa33",
+      "name": "Famine of hearing the words of the LORD",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.irony-sarcasm-go-to-bethel-and-sin--e7b5b574",
+      "name": "Irony & sarcasm: ‘Go to Bethel and sin’",
+      "type": "entity",
+      "role": "rhetoric",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.dirge-over-israel.qinah--6712b68a",
+      "name": "Dirge over Israel (qinah)",
+      "type": "entity",
+      "role": "lament",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.woe-oracles--0640182a",
+      "name": "Woe oracles",
+      "type": "entity",
+      "role": "woe",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.swearing-lying-murder-stealing-adultery.ten-commandment-breach--5e0a0722",
+      "name": "Swearing, lying, murder, stealing, adultery (ten‑commandment breach)",
+      "type": "entity",
+      "role": "ethic",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.panting-after-the-dust-on-the-head-of-the-poor--1fd49b36",
+      "name": "Panting after the dust on the head of the poor",
+      "type": "entity",
+      "role": "abuse",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.father-and-son-go-in-to-the-same-girl--20f107b8",
+      "name": "Father and son go in to the same girl",
+      "type": "entity",
+      "role": "abuse",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.garments-taken-in-pledge-beside-every-altar--9bdafa54",
+      "name": "Garments taken in pledge beside every altar",
+      "type": "entity",
+      "role": "abuse",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.wine-bought-with-fines-in-the-house-of-their-god--ee4325f5",
+      "name": "Wine bought with fines in the house of their god",
+      "type": "entity",
+      "role": "abuse",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.ivory-houses-winter-summer-homes--60947238",
+      "name": "Ivory houses & winter/summer homes",
+      "type": "entity",
+      "role": "luxury",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.stretching-themselves-on-beds-of-ivory--92b173d7",
+      "name": "Stretching themselves on beds of ivory",
+      "type": "entity",
+      "role": "luxury",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.inventing-instruments-like-david.satirized--9d7e62b3",
+      "name": "Inventing instruments like David (satirized)",
+      "type": "entity",
+      "role": "culture",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.not-grieved-over-the-ruin-of-joseph--9f4558cf",
+      "name": "Not grieved over the ruin of Joseph",
+      "type": "entity",
+      "role": "ethic",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.turning-justice-to-wormwood--3a098cc1",
+      "name": "Turning justice to wormwood",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.hating-the-one-who-rebukes-in-the-gate--2817a808",
+      "name": "Hating the one who rebukes in the gate",
+      "type": "entity",
+      "role": "opposition",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.bribes-and-perverted-justice--9876c308",
+      "name": "Bribes and perverted justice",
+      "type": "entity",
+      "role": "corruption",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.seek-good-not-evil-that-you-may-live--b99653fa",
+      "name": "Seek good, not evil, that you may live",
+      "type": "entity",
+      "role": "call",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.hate-evil-love-good--e7a57620",
+      "name": "Hate evil, love good",
+      "type": "entity",
+      "role": "call",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.let-justice-be-established-in-the-gate--5d93f405",
+      "name": "Let justice be established in the gate",
+      "type": "entity",
+      "role": "civic",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.seek-yhwh-and-live.anti-pilgrimage--cad6eda1",
+      "name": "Seek YHWH and live (anti‑pilgrimage)",
+      "type": "entity",
+      "role": "call",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.plowman-overtakes-reaper-mountains-drip-wine--49fa99c3",
+      "name": "Plowman overtakes reaper; mountains drip wine",
+      "type": "entity",
+      "role": "new-creation",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.replanted-in-their-land-never-again-uprooted--ad03c651",
+      "name": "Replanted in their land, never again uprooted",
+      "type": "entity",
+      "role": "promise",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

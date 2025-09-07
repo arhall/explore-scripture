@@ -1,0 +1,1089 @@
+{
+  "book": "2 Timothy",
+  "slug": "2-timothy",
+  "entity_count": 115,
+  "key_figures": [
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.mark-john-mark-cousin-of-barnabas--091a32fe",
+      "name": "Mark (John Mark) (cousin of Barnabas)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.erastus--f42e12b9",
+      "name": "Erastus",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.demas--a8b9f62c",
+      "name": "Demas",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.trophimus--db8ead68",
+      "name": "Trophimus",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.titus--b5cd5081",
+      "name": "Titus",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.tychicus--24c2a0b4",
+      "name": "Tychicus",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.luke-the-beloved-physician--05b89346",
+      "name": "Luke (the beloved physician)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.aquila--742a292f",
+      "name": "Aquila",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.timothy--227fb1d9",
+      "name": "Timothy",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.eunice--ce3e2a16",
+      "name": "Eunice",
+      "type": "person",
+      "role": "family",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.onesiphorus--10cdd616",
+      "name": "Onesiphorus",
+      "type": "person",
+      "role": "patron",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.philetus--a900feca",
+      "name": "Philetus",
+      "type": "person",
+      "role": "opponent",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.alexander-the-coppersmith--8889e958",
+      "name": "Alexander the coppersmith",
+      "type": "person",
+      "role": "network",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.lois--a389cc81",
+      "name": "Lois",
+      "type": "person",
+      "role": "family",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.prisca-priscilla--870a31f7",
+      "name": "Prisca (Priscilla)",
+      "type": "person",
+      "role": "network",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.hymenaeus--4e3678af",
+      "name": "Hymenaeus",
+      "type": "person",
+      "role": "opponent",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.hermogenes--c3c616ef",
+      "name": "Hermogenes",
+      "type": "person",
+      "role": "defector",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.phygelus--075ac679",
+      "name": "Phygelus",
+      "type": "person",
+      "role": "defector",
+      "refs_count": 1,
+      "score": 11
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.mark-john-mark-cousin-of-barnabas--091a32fe",
+      "name": "Mark (John Mark) (cousin of Barnabas)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.erastus--f42e12b9",
+      "name": "Erastus",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.demas--a8b9f62c",
+      "name": "Demas",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.trophimus--db8ead68",
+      "name": "Trophimus",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.titus--b5cd5081",
+      "name": "Titus",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.tychicus--24c2a0b4",
+      "name": "Tychicus",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.luke-the-beloved-physician--05b89346",
+      "name": "Luke (the beloved physician)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.aquila--742a292f",
+      "name": "Aquila",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.timothy--227fb1d9",
+      "name": "Timothy",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.eunice--ce3e2a16",
+      "name": "Eunice",
+      "type": "person",
+      "role": "family",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.onesiphorus--10cdd616",
+      "name": "Onesiphorus",
+      "type": "person",
+      "role": "patron",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.philetus--a900feca",
+      "name": "Philetus",
+      "type": "person",
+      "role": "opponent",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.alexander-the-coppersmith--8889e958",
+      "name": "Alexander the coppersmith",
+      "type": "person",
+      "role": "network",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.lois--a389cc81",
+      "name": "Lois",
+      "type": "person",
+      "role": "family",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.prisca-priscilla--870a31f7",
+      "name": "Prisca (Priscilla)",
+      "type": "person",
+      "role": "network",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.hymenaeus--4e3678af",
+      "name": "Hymenaeus",
+      "type": "person",
+      "role": "opponent",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.hermogenes--c3c616ef",
+      "name": "Hermogenes",
+      "type": "person",
+      "role": "defector",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.phygelus--075ac679",
+      "name": "Phygelus",
+      "type": "person",
+      "role": "defector",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.carpus--cab37068",
+      "name": "Carpus",
+      "type": "person",
+      "role": "network",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.claudia--3919dc70",
+      "name": "Claudia",
+      "type": "person",
+      "role": "network",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.linus--cb036e1d",
+      "name": "Linus",
+      "type": "person",
+      "role": "network",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.eubulus--43dddf9d",
+      "name": "Eubulus",
+      "type": "person",
+      "role": "network",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.pudens--068d6574",
+      "name": "Pudens",
+      "type": "person",
+      "role": "network",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.crescens--1d121515",
+      "name": "Crescens",
+      "type": "person",
+      "role": "network",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.household-of-onesiphorus--f188b1cc",
+      "name": "household of Onesiphorus",
+      "type": "group",
+      "role": "household",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.itching-ears-audience--76da7915",
+      "name": "itching-ears audience",
+      "type": "group",
+      "role": "audience",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.at-my-first-defense-no-one-came-to-stand-by-me--2333aef3",
+      "name": "At my first defense no one came to stand by me",
+      "type": "group",
+      "role": "deserters",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.last-days-people--7536c639",
+      "name": "last days people",
+      "type": "group",
+      "role": "vice-catalogue",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.all-in-asia-turned-away--524f0542",
+      "name": "all in Asia turned away",
+      "type": "group",
+      "role": "defection",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.evil-people-and-impostors--5dd29bc5",
+      "name": "evil people and impostors",
+      "type": "group",
+      "role": "deceivers",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 4,
+      "score": 6
+    },
+    {
+      "id": "t.trustworthy-saying--37efe0bd",
+      "name": "trustworthy saying",
+      "type": "title",
+      "role": "formula",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "t.approved-worker--ff63c395",
+      "name": "approved worker",
+      "type": "title",
+      "role": "ministerial-profile",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "f.keep-your-head-endure-suffering-do-the-work-of-an-evangelist--bf3f84c2",
+      "name": "keep your head endure suffering do the work of an evangelist",
+      "type": "figure",
+      "role": "charge",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.flee-youthful-passions--d03db7d5",
+      "name": "flee youthful passions",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.last-days-vice-ungrateful--071459ff",
+      "name": "Last-days vice: ungrateful",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.last-days-vice-swollen-with-conceit--85412df7",
+      "name": "Last-days vice: swollen with conceit",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.soldier-metaphor--599b3992",
+      "name": "soldier metaphor",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.jannes-and-jambres-opposed-moses--8e3e14cc",
+      "name": "Jannes and Jambres opposed Moses",
+      "type": "figure",
+      "role": "opposition",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.be-strengthened-by-the-grace--bb49657f",
+      "name": "be strengthened by the grace",
+      "type": "figure",
+      "role": "empowerment",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.avoid-such-people--ece4d273",
+      "name": "avoid such people",
+      "type": "figure",
+      "role": "separation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.approved-worker-rightly-handling-the-word--a4cdc2a4",
+      "name": "approved worker rightly handling the word",
+      "type": "figure",
+      "role": "ministerial-skill",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.share-in-suffering-for-the-gospel--6526fb3c",
+      "name": "share in suffering for the gospel",
+      "type": "figure",
+      "role": "endurance",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.last-days-vice-without-self-control--3f46d3f7",
+      "name": "Last-days vice: without self-control",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.do-your-best-to-come-to-me-soon--1949e707",
+      "name": "Do your best to come to me soon",
+      "type": "figure",
+      "role": "travel-note",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.great-house-vessels--d119abbe",
+      "name": "great house vessels",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.preach-the-word--2c2d8382",
+      "name": "preach the word",
+      "type": "figure",
+      "role": "charge",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.last-days-vice-abusive--c20f9db7",
+      "name": "Last-days vice: abusive",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.last-days-vice-reckless--a7680707",
+      "name": "Last-days vice: reckless",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.last-days-vice-treacherous--356babdb",
+      "name": "Last-days vice: treacherous",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.last-days-vice-unholy--44746a67",
+      "name": "Last-days vice: unholy",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.guard-the-good-deposit-by-the-holy-spirit--adc120d7",
+      "name": "guard the good deposit by the Holy Spirit",
+      "type": "figure",
+      "role": "stewardship",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.last-days-vice-not-loving-good--53f4a276",
+      "name": "Last-days vice: not loving good",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.last-days-vice-slanderous--38130774",
+      "name": "Last-days vice: slanderous",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.last-days-vice-lovers-of-money--e22d6ba7",
+      "name": "Last-days vice: lovers of money",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.always-learning-never-arriving--73296497",
+      "name": "always learning never arriving",
+      "type": "figure",
+      "role": "critique",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.the-lord-will-award-on-that-day--a4cfc5d5",
+      "name": "the Lord will award on that day",
+      "type": "figure",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.last-days-vice-proud--c93084ed",
+      "name": "Last-days vice: proud",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.last-days-vice-disobedient-to-parents--56160c49",
+      "name": "Last-days vice: disobedient to parents",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.the-lord-be-with-your-spirit-grace-be-with-you--2b3cb008",
+      "name": "The Lord be with your spirit Grace be with you",
+      "type": "figure",
+      "role": "benediction",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.remember-jesus-christ-kerygma--599dbaca",
+      "name": "remember Jesus Christ (kerygma)",
+      "type": "figure",
+      "role": "kerygma",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.be-ready-in-season-and-out-of-season--72ac52f2",
+      "name": "be ready in season and out of season",
+      "type": "figure",
+      "role": "readiness",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.last-days-vice-brutal--44a27fbe",
+      "name": "Last-days vice: brutal",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.tears-long-to-see-you--7c41aca3",
+      "name": "tears; long to see you",
+      "type": "figure",
+      "role": "affection",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.trustworthy-saying-if-we-endure-we-will-also-reign-with-him--6ead85d6",
+      "name": "Trustworthy saying: If we endure, we will also reign with him",
+      "type": "figure",
+      "role": "hymnic-formula",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.athlete-metaphor--01292903",
+      "name": "athlete metaphor",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.finished-the-race-kept-the-faith--cd3ae218",
+      "name": "finished the race kept the faith",
+      "type": "figure",
+      "role": "valediction",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.equipped-for-every-good-work--14f71a1f",
+      "name": "equipped for every good work",
+      "type": "figure",
+      "role": "purpose",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.my-teaching-conduct-aim-faith-patience-love-steadfastness--3eada89e",
+      "name": "my teaching conduct aim faith patience love steadfastness",
+      "type": "figure",
+      "role": "example",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.tychicus-i-have-sent-to-ephesus--053d7857",
+      "name": "Tychicus I have sent to Ephesus",
+      "type": "figure",
+      "role": "travel-note",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.childhood-scriptures--607af1f6",
+      "name": "childhood Scriptures",
+      "type": "figure",
+      "role": "formation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.fan-into-flame-the-gift--307590f6",
+      "name": "fan into flame the gift",
+      "type": "figure",
+      "role": "charism",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.all-who-desire-to-live-godly-suffer-persecution--afd01d6f",
+      "name": "all who desire to live godly suffer persecution",
+      "type": "figure",
+      "role": "axiom",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.trustworthy-saying-if-we-deny-him-he-also-will-deny-us--a095138a",
+      "name": "Trustworthy saying: If we deny him, he also will deny us",
+      "type": "figure",
+      "role": "hymnic-formula",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.persecutions-at-antioch-iconium-lystra--da56a8eb",
+      "name": "persecutions at Antioch Iconium Lystra",
+      "type": "figure",
+      "role": "suffering",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.do-not-be-ashamed-of-the-testimony--8e5a0203",
+      "name": "do not be ashamed of the testimony",
+      "type": "figure",
+      "role": "courage",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.only-luke-is-with-me--174a33c6",
+      "name": "Only Luke is with me",
+      "type": "figure",
+      "role": "travel-note",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.last-days-vice-arrogant--ff642c44",
+      "name": "Last-days vice: arrogant",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.the-lord-will-rescue-me-and-bring-me-safely--6f02e531",
+      "name": "The Lord will rescue me and bring me safely",
+      "type": "figure",
+      "role": "confidence",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.god-s-firm-foundation-stands-inscription--374a9a7a",
+      "name": "God’s firm foundation stands (inscription)",
+      "type": "figure",
+      "role": "foundation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.resurrection-already-happened--293c4d71",
+      "name": "resurrection already happened",
+      "type": "figure",
+      "role": "heresy-claim",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.last-days-vice-unappeasable--fb533dc3",
+      "name": "Last-days vice: unappeasable",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.trustworthy-saying-if-we-are-faithless-he-remains-faithful-for-he-cannot-deny-himself--53673b29",
+      "name": "Trustworthy saying: If we are faithless, he remains faithful; for he cannot deny himself",
+      "type": "figure",
+      "role": "hymnic-formula",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.last-days-vice-heartless--e8032f71",
+      "name": "Last-days vice: heartless",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.bring-mark-he-is-useful-to-me--a11b835a",
+      "name": "Bring Mark; he is useful to me",
+      "type": "figure",
+      "role": "travel-note",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.last-days-vice-lovers-of-self--16a943c8",
+      "name": "Last-days vice: lovers of self",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.spirit-of-power-love-self-control--b0393e8f",
+      "name": "spirit of power love self-control",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sincere-faith--84702547",
+      "name": "sincere faith",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.irreverent-babble-will-lead-to-ungodliness--5869506e",
+      "name": "irreverent babble will lead to ungodliness",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.god-breathed-scripture--84a5fda4",
+      "name": "God-breathed Scripture",
+      "type": "figure",
+      "role": "bibliology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sound-pattern-of-words--3d5618fe",
+      "name": "sound pattern of words",
+      "type": "figure",
+      "role": "doctrine",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.last-days-vice-having-the-appearance-of-godliness-but-denying-its-power--89bc77c4",
+      "name": "Last-days vice: having the appearance of godliness but denying its power",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.farmer-metaphor--4bc4f9e9",
+      "name": "farmer metaphor",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.last-days-vice-lovers-of-pleasure-rather-than-lovers-of-god--59d152cb",
+      "name": "Last-days vice: lovers of pleasure rather than lovers of God",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.rescued-from-the-lion-s-mouth--6e3ee42a",
+      "name": "rescued from the lion’s mouth",
+      "type": "figure",
+      "role": "deliverance",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.i-have-fought-the-good-fight--ab8b66de",
+      "name": "I have fought the good fight",
+      "type": "figure",
+      "role": "valediction",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.erastus-remained-at-corinth--d34d2f02",
+      "name": "Erastus remained at Corinth",
+      "type": "figure",
+      "role": "travel-note",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.the-lord-stood-by-me-and-strengthened-me--3f35eb81",
+      "name": "the Lord stood by me and strengthened me",
+      "type": "figure",
+      "role": "providence",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.bring-the-cloak-books-parchments--f259006d",
+      "name": "Bring the cloak books parchments",
+      "type": "figure",
+      "role": "travel-note",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.lord-s-servant-not-quarrelsome-gentle-able-to-teach--a1db0225",
+      "name": "Lord’s servant not quarrelsome, gentle, able to teach",
+      "type": "figure",
+      "role": "ministerial-profile",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.trustworthy-saying-if-we-died-with-him-we-will-also-live-with-him--2d6d3f04",
+      "name": "Trustworthy saying: If we died with him, we will also live with him",
+      "type": "figure",
+      "role": "hymnic-formula",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.crown-of-righteousness--25fe688a",
+      "name": "crown of righteousness",
+      "type": "figure",
+      "role": "reward",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.trophimus-i-left-ill-at-miletus--a0e79045",
+      "name": "Trophimus I left ill at Miletus",
+      "type": "figure",
+      "role": "travel-note",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.corinth--56a50221",
+      "name": "Corinth",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.rome--cea6fbf5",
+      "name": "Rome",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.troas--42f4953e",
+      "name": "Troas",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.cloak-at-troas--a9518811",
+      "name": "cloak at Troas",
+      "type": "entity",
+      "role": "artifact",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.miletus--7ffbd538",
+      "name": "Miletus",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.prison--b4f9c81a",
+      "name": "prison",
+      "type": "entity",
+      "role": "institution",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.books-biblia--de93b32a",
+      "name": "books (biblia)",
+      "type": "entity",
+      "role": "artifact",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.galatia--ce819cb0",
+      "name": "Galatia",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.dalmatia--3accdd8d",
+      "name": "Dalmatia",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.parchments-membranae--65febd35",
+      "name": "parchments (membranae)",
+      "type": "entity",
+      "role": "artifact",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

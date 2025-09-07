@@ -1,0 +1,29 @@
+{
+  "name": "Abiding (μένω) theme",
+  "type": "figure",
+  "category": "theme",
+  "references": [
+    "John 15:4–10"
+  ],
+  "greek_terms": [
+    {
+      "term": "μένω",
+      "gloss": "abide/remain"
+    }
+  ],
+  "aka": [],
+  "id": "f.abiding-theme--05e8eef9",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      15
+    ]
+  }
+}

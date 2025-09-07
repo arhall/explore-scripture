@@ -1,0 +1,34 @@
+{
+  "name": "Joseph of Arimathea",
+  "type": "person",
+  "category": "disciple",
+  "references": [
+    "Matt 27:57–60",
+    "Mark 15:42–47",
+    "Luke 23:50–53"
+  ],
+  "blurb": "Respected council member who honors Jesus with burial; courage under risk.",
+  "aka": [],
+  "id": "p.joseph-of-arimathea--e7ff4ac4",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Mark",
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      27
+    ],
+    "Mark": [
+      15
+    ],
+    "Luke": [
+      23
+    ]
+  }
+}

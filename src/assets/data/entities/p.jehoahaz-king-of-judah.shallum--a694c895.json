@@ -1,0 +1,22 @@
+{
+  "name": "Jehoahaz (Shallum) king of Judah",
+  "type": "person",
+  "references": [
+    "Jeremiah 22:10–12"
+  ],
+  "blurb": "Reigns three months; exiled to Egypt. Jeremiah instructs not to weep for the dead but for the exile—displacement is the sharper grief.",
+  "relations": {
+    "kingdom": "Judah"
+  },
+  "category": "king",
+  "delta_note": "Also called Shallum.",
+  "id": "p.jehoahaz-king-of-judah.shallum--a694c895",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      22
+    ]
+  }
+}

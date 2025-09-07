@@ -1,0 +1,18 @@
+{
+  "id": "e.battle-bow--48556293",
+  "name": "Battle bow",
+  "type": "entity",
+  "references": [
+    "Zech 10:4"
+  ],
+  "category": "war-symbol",
+  "blurb": "Military capacity under divine leadership.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      10
+    ]
+  }
+}

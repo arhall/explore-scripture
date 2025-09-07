@@ -1,0 +1,18 @@
+{
+  "id": "g.robbers-of-god--63076f95",
+  "name": "Robbers of God",
+  "type": "group",
+  "references": [
+    "Mal 3:8-9"
+  ],
+  "category": "offenders",
+  "blurb": "Withholders of tithes and contributions; bring themselves under a curse.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      3
+    ]
+  }
+}

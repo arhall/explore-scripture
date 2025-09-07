@@ -1,0 +1,33 @@
+{
+  "name": "If anyone thirsts… (living water)",
+  "type": "figure",
+  "category": "teaching",
+  "references": [
+    "John 7:37–39"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Isa 55:1",
+      "type": "echo"
+    },
+    {
+      "src": "Ezek 47:1–12",
+      "type": "allusion"
+    }
+  ],
+  "aka": [],
+  "id": "f.if-anyone-thirsts-living-water--9a25760d",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      7
+    ]
+  }
+}

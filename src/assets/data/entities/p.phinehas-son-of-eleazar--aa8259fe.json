@@ -1,0 +1,23 @@
+{
+  "name": "Phinehas son of Eleazar",
+  "type": "person",
+  "references": [
+    "Judges 20:28"
+  ],
+  "blurb": "Priest who inquires before the ark at Bethel—continuity with wilderness holiness during civil strife.",
+  "category": "narrative",
+  "tribe": "Levi",
+  "cross_references": [
+    "Numbers 25:7–13",
+    "Joshua 22:13–31"
+  ],
+  "id": "p.phinehas-son-of-eleazar--aa8259fe",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      20
+    ]
+  }
+}

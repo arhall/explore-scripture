@@ -1,0 +1,18 @@
+{
+  "name": "Banquet 1: 180-day imperial display",
+  "type": "entity",
+  "references": [
+    "Esther 1:3–4"
+  ],
+  "blurb": "Showcase of glory and goods; human excess sets the stage for divine irony.",
+  "category": "festival",
+  "id": "e.banquet-1-180-day-imperial-display--cd4a347f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      1
+    ]
+  }
+}

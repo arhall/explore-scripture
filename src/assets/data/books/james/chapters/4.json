@@ -1,0 +1,77 @@
+{
+  "book": "James",
+  "chapter": 4,
+  "entity_count": 26,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "f.humble-yourselves-and-he-will-exalt-you--ae04edf3",
+      "name": "humble yourselves and he will exalt you",
+      "type": "figure",
+      "role": "promise",
+      "refs_count": 1
+    },
+    {
+      "id": "f.your-life-is-a-vapor--fa22adb9",
+      "name": "your life is a vapor",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1
+    },
+    {
+      "id": "f.resist-the-devil-and-he-will-flee--b30ffa56",
+      "name": "resist the devil and he will flee",
+      "type": "figure",
+      "role": "spiritual-warfare",
+      "refs_count": 1
+    },
+    {
+      "id": "f.you-covet-and-cannot-obtain-so-you-fight-and-quarrel--42ed4029",
+      "name": "you covet and cannot obtain so you fight and quarrel",
+      "type": "figure",
+      "role": "conflict",
+      "refs_count": 1
+    },
+    {
+      "id": "f.ask-wrongly-to-spend-on-passions--cbf7e506",
+      "name": "ask wrongly to spend on passions",
+      "type": "figure",
+      "role": "prayer",
+      "refs_count": 1
+    },
+    {
+      "id": "f.boasting-in-arrogance-is-evil--9c7ea33d",
+      "name": "boasting in arrogance is evil",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.god-opposes-the-proud-gives-grace-to-the-humble--339ec1d1",
+      "name": "God opposes the proud gives grace to the humble",
+      "type": "figure",
+      "role": "principle",
+      "refs_count": 1
+    },
+    {
+      "id": "f.submit-to-god--bca555eb",
+      "name": "submit to God",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1
+    }
+  ]
+}

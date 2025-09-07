@@ -1,0 +1,21 @@
+{
+  "name": "Remain as called",
+  "type": "figure",
+  "category": "calling",
+  "references": [
+    "1 Cor 7:17–24"
+  ],
+  "aka": [],
+  "id": "f.remain-as-called--bc6be8ad",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "1 Corinthians": [
+      7
+    ]
+  }
+}

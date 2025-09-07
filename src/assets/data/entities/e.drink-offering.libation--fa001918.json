@@ -1,0 +1,21 @@
+{
+  "name": "Drink offering (libation)",
+  "type": "entity",
+  "references": [
+    "Leviticus 23:13,18,37"
+  ],
+  "blurb": "Poured accompaniment to grain/burnt offerings—joy offered to God.",
+  "category": "ritual",
+  "cross_references": [
+    "Numbers 15:1–10"
+  ],
+  "id": "e.drink-offering.libation--fa001918",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Leviticus": [
+      23
+    ]
+  }
+}

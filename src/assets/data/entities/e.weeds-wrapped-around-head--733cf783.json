@@ -1,0 +1,18 @@
+{
+  "name": "Weeds wrapped around head",
+  "type": "entity",
+  "references": [
+    "Jonah 2:5"
+  ],
+  "blurb": "Seaweed like a burial shroud; emblem of entanglement in death.",
+  "category": "imagery",
+  "id": "e.weeds-wrapped-around-head--733cf783",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jonah": [
+      2
+    ]
+  }
+}

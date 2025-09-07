@@ -1,0 +1,25 @@
+{
+  "name": "Zechariah",
+  "type": "person",
+  "aka": [],
+  "category": "priest",
+  "references": [
+    "Luke 1:5–25",
+    "Luke 1:57–80"
+  ],
+  "blurb": "Priest of Abijah; struck mute, father of John; his Benedictus blesses the Redeemer.",
+  "id": "p.zechariah--3b1fa613",
+  "source_book": "Luke",
+  "source_books": [
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Luke": [
+      1
+    ]
+  }
+}

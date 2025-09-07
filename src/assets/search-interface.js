@@ -154,10 +154,10 @@ class SearchInterface {
       .search-input {
         width: 100%;
         padding: 0.75rem 1rem;
-        border: 2px solid var(--border-color, #e5e7eb);
+        border: 2px solid var(--border);
         border-radius: 0.5rem;
-        background: var(--bg-color, #ffffff);
-        color: var(--text-color, #1f2937);
+        background: var(--bg);
+        color: var(--text);
         font-size: 1rem;
         font-family: inherit;
         transition: all 0.2s ease;
@@ -165,8 +165,8 @@ class SearchInterface {
       }
       
       .search-input:focus {
-        border-color: var(--primary-color, #2563eb);
-        box-shadow: 0 0 0 3px var(--primary-color-light, #dbeafe);
+        border-color: var(--accent);
+        box-shadow: 0 0 0 3px var(--bg-secondary);
       }
       
       .search-clear {
@@ -176,7 +176,7 @@ class SearchInterface {
         transform: translateY(-50%);
         background: none;
         border: none;
-        color: var(--text-muted, #6b7280);
+        color: var(--text-secondary);
         cursor: pointer;
         padding: 0.25rem;
         border-radius: 0.25rem;
@@ -186,8 +186,8 @@ class SearchInterface {
       }
       
       .search-clear:hover {
-        color: var(--text-color, #1f2937);
-        background: var(--bg-hover, #f3f4f6);
+        color: var(--text);
+        background: var(--bg-secondary);
       }
       
       .search-results {
@@ -195,8 +195,8 @@ class SearchInterface {
         top: 100%;
         left: 0;
         right: 0;
-        background: var(--bg-color, #ffffff);
-        border: 1px solid var(--border-color, #e5e7eb);
+        background: var(--card);
+        border: 1px solid var(--border);
         border-radius: 0.5rem;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         max-height: 400px;
@@ -207,7 +207,7 @@ class SearchInterface {
       
       .search-result {
         padding: 0.75rem 1rem;
-        border-bottom: 1px solid var(--border-light, #f3f4f6);
+        border-bottom: 1px solid var(--border);
         cursor: pointer;
         transition: background-color 0.15s ease;
       }
@@ -218,24 +218,24 @@ class SearchInterface {
       
       .search-result:hover,
       .search-result.selected {
-        background: var(--bg-hover, #f8fafc);
+        background: var(--bg-secondary);
       }
       
       .search-result-title {
         font-weight: 600;
-        color: var(--text-color, #1f2937);
+        color: var(--text);
         margin-bottom: 0.25rem;
         font-size: 0.95rem;
       }
       
       .search-result-subtitle {
-        color: var(--text-muted, #6b7280);
+        color: var(--text-secondary);
         font-size: 0.85rem;
         margin-bottom: 0.25rem;
       }
       
       .search-result-description {
-        color: var(--text-muted, #6b7280);
+        color: var(--text-secondary);
         font-size: 0.8rem;
         line-height: 1.4;
       }
@@ -243,8 +243,8 @@ class SearchInterface {
       .search-result-type {
         display: inline-block;
         padding: 0.125rem 0.5rem;
-        background: var(--bg-tag, #f1f5f9);
-        color: var(--text-tag, #475569);
+        background: var(--bg-secondary);
+        color: var(--text-secondary);
         border-radius: 1rem;
         font-size: 0.75rem;
         font-weight: 500;
@@ -275,14 +275,14 @@ class SearchInterface {
       .search-empty {
         padding: 2rem 1rem;
         text-align: center;
-        color: var(--text-muted, #6b7280);
+        color: var(--text-secondary);
         font-size: 0.9rem;
       }
       
       .search-loading {
         padding: 1rem;
         text-align: center;
-        color: var(--text-muted, #6b7280);
+        color: var(--text-secondary);
         font-size: 0.9rem;
       }
       
@@ -302,33 +302,6 @@ class SearchInterface {
         }
       }
       
-      /* Dark mode support */
-      @media (prefers-color-scheme: dark) {
-        .search-input {
-          border-color: #374151;
-          background: #1f2937;
-          color: #f9fafb;
-        }
-        
-        .search-input:focus {
-          border-color: #3b82f6;
-          box-shadow: 0 0 0 3px #1e40af40;
-        }
-        
-        .search-results {
-          background: #1f2937;
-          border-color: #374151;
-        }
-        
-        .search-result:hover,
-        .search-result.selected {
-          background: #374151;
-        }
-        
-        .search-result {
-          border-color: #374151;
-        }
-      }
     `;
     
     document.head.appendChild(style);

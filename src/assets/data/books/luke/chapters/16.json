@@ -1,0 +1,21 @@
+{
+  "book": "Luke",
+  "chapter": 16,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "f.rich-man-and-lazarus--613a26d7",
+      "name": "Rich Man and Lazarus",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1
+    },
+    {
+      "id": "f.shrewd-manager--6b9bdf22",
+      "name": "Shrewd Manager",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1
+    }
+  ]
+}

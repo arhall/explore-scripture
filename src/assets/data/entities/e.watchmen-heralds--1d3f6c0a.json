@@ -1,0 +1,21 @@
+{
+  "id": "e.watchmen-heralds--1d3f6c0a",
+  "name": "Watchmen/Heralds",
+  "type": "entity",
+  "references": [
+    "Nah 2:1; 1:15"
+  ],
+  "category": "civic-religious",
+  "aka": [
+    "Messengers"
+  ],
+  "blurb": "Figures who announce and guard—vehicles of ‘good news’ and signals of impending judgment.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      2
+    ]
+  }
+}

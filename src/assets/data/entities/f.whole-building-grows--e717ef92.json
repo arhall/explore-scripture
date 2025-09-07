@@ -1,0 +1,21 @@
+{
+  "name": "Whole building grows",
+  "type": "figure",
+  "category": "growth",
+  "references": [
+    "Eph 2:21"
+  ],
+  "aka": [],
+  "id": "f.whole-building-grows--e717ef92",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      2
+    ]
+  }
+}

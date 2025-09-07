@@ -1,0 +1,21 @@
+{
+  "book": "Nehemiah",
+  "chapter": 7,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "e.census-of-the-first-return.book-of-genealogy-found--453dfbbe",
+      "name": "Census of the first return (book of genealogy found)",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1
+    },
+    {
+      "id": "e.examples-of-count-variations.ezra-2-neh-7--7c0895dc",
+      "name": "Examples of count variations (Ezra 2 ↔ Neh 7)",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1
+    }
+  ]
+}

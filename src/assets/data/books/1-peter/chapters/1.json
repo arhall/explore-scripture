@@ -1,0 +1,77 @@
+{
+  "book": "1 Peter",
+  "chapter": 1,
+  "entity_count": 25,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "p.simon-peter-cephas--d58cce37",
+      "name": "Simon Peter (Cephas)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 15
+    },
+    {
+      "id": "e.asia--f9f8eca9",
+      "name": "Asia",
+      "type": "entity",
+      "role": "province",
+      "refs_count": 1
+    },
+    {
+      "id": "f.joy-inexpressible-and-filled-with-glory--da257039",
+      "name": "joy inexpressible and filled with glory",
+      "type": "figure",
+      "role": "joy",
+      "refs_count": 1
+    },
+    {
+      "id": "e.pontus--e1ba858d",
+      "name": "Pontus",
+      "type": "entity",
+      "role": "province",
+      "refs_count": 1
+    },
+    {
+      "id": "f.in-sanctification-of-the-spirit--9fcca44b",
+      "name": "in sanctification of the Spirit",
+      "type": "figure",
+      "role": "sanctification",
+      "refs_count": 1
+    },
+    {
+      "id": "e.cappadocia--74c7c97a",
+      "name": "Cappadocia",
+      "type": "entity",
+      "role": "province",
+      "refs_count": 1
+    },
+    {
+      "id": "g.elect-exiles--25950da6",
+      "name": "elect exiles",
+      "type": "group",
+      "role": "addressees",
+      "refs_count": 1
+    },
+    {
+      "id": "f.for-sprinkling-of-jesus-christ--12ddf7bd",
+      "name": "for sprinkling of Jesus Christ",
+      "type": "figure",
+      "role": "covenant",
+      "refs_count": 1
+    }
+  ]
+}

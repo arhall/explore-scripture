@@ -1,0 +1,18 @@
+{
+  "name": "Wine bought with fines in the house of their god",
+  "type": "entity",
+  "references": [
+    "Amos 2:8"
+  ],
+  "blurb": "Miscarriage of justice funds revelry—legal system as bar tab.",
+  "category": "abuse",
+  "id": "e.wine-bought-with-fines-in-the-house-of-their-god--ee4325f5",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Amos": [
+      2
+    ]
+  }
+}

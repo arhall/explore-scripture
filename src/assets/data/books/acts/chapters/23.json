@@ -1,0 +1,49 @@
+{
+  "book": "Acts",
+  "chapter": 23,
+  "entity_count": 6,
+  "entities": [
+    {
+      "id": "f.claudius-lysias-letter--60416920",
+      "name": "Claudius Lysias (letter)",
+      "type": "figure",
+      "role": "letter",
+      "refs_count": 1
+    },
+    {
+      "id": "f.transfer-to-caesarea--54c3bb16",
+      "name": "Transfer to Caesarea",
+      "type": "figure",
+      "role": "transfer",
+      "refs_count": 1
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 24
+    },
+    {
+      "id": "p.claudius-lysias--06caac32",
+      "name": "Claudius Lysias",
+      "type": "person",
+      "role": "tribune",
+      "refs_count": 1
+    },
+    {
+      "id": "f.assassination-plot-of-forty--3daa9ff3",
+      "name": "Assassination plot of forty",
+      "type": "figure",
+      "role": "plot",
+      "refs_count": 1
+    },
+    {
+      "id": "f.sanhedrin-division-pharisees-sadducees--945ec3d5",
+      "name": "Sanhedrin division (Pharisees/Sadducees)",
+      "type": "figure",
+      "role": "trial",
+      "refs_count": 1
+    }
+  ]
+}

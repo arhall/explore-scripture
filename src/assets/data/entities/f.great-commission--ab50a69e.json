@@ -1,0 +1,24 @@
+{
+  "name": "Great Commission",
+  "type": "figure",
+  "category": "commission",
+  "references": [
+    "Matt 28:16–20"
+  ],
+  "blurb": "Risen Lord authorizes disciple-making to the nations in the triune name with perpetual presence.",
+  "aka": [],
+  "id": "f.great-commission--ab50a69e",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      28
+    ]
+  }
+}

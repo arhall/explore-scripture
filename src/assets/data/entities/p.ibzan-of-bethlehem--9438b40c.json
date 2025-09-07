@@ -1,0 +1,18 @@
+{
+  "name": "Ibzan of Bethlehem",
+  "type": "person",
+  "references": [
+    "Judges 12:8–10"
+  ],
+  "blurb": "Thirty sons and thirty daughters married widely—diplomatic household weaving unity across clans.",
+  "category": "narrative",
+  "id": "p.ibzan-of-bethlehem--9438b40c",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      12
+    ]
+  }
+}

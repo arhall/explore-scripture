@@ -1,0 +1,18 @@
+{
+  "name": "Exiles of Israel (Canaan to Zarephath)",
+  "type": "group",
+  "references": [
+    "Obadiah 1:20"
+  ],
+  "blurb": "Western/northern diaspora returns—from Phoenician Zarephath to the land of Canaan.",
+  "category": "diaspora",
+  "id": "g.exiles-of-israel--19ca7f24",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Obadiah": [
+      1
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Nazirite vow",
+  "type": "entity",
+  "references": [
+    "Numbers 6:1–21"
+  ],
+  "blurb": "Consecration of men or women by abstention and hair; holiness for a season.",
+  "category": "ritual",
+  "cross_references": [
+    "Judges 13",
+    "Acts 21:23–24"
+  ],
+  "id": "e.nazirite-vow--31359a7e",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      6
+    ]
+  }
+}

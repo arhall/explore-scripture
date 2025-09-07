@@ -1,0 +1,18 @@
+{
+  "name": "Hezekiah’s illness, pride, and humility",
+  "type": "entity",
+  "references": [
+    "2 Chronicles 32:24–26"
+  ],
+  "blurb": "A heart lifted is a heart warned; humility averts wrath in his days.",
+  "category": "ethics",
+  "id": "e.hezekiahs-illness-pride-and-humility--d85ca974",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "2 Chronicles": [
+      32
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "James (the Lord’s brother)",
+  "type": "person",
+  "category": "church-leader",
+  "references": [
+    "Acts 12:17",
+    "Acts 15:13",
+    "Acts 21:18",
+    "Gal 1:19",
+    "Gal 2:9,12",
+    "Jas 1:1"
+  ],
+  "aka": [],
+  "id": "p.james-the-lord-s-brother--02bc9aea",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      12,
+      15,
+      21
+    ],
+    "Galatians": [
+      1,
+      2
+    ],
+    "James": [
+      1
+    ]
+  }
+}

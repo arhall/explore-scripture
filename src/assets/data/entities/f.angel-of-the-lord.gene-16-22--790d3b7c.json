@@ -1,0 +1,31 @@
+{
+  "name": "Angel of the LORD",
+  "type": "figure",
+  "references": [
+    "Genesis 16; 22",
+    "Exodus 3:2–6",
+    "Numbers 22:22–35"
+  ],
+  "blurb": "Speaks with divine authority to Hagar and later stays Abraham’s hand on Moriah, revealing God as both holy and merciful.",
+  "category": "narrative",
+  "cross_references": [
+    "Genesis 16:7–14",
+    "Genesis 22:11–18",
+    "Acts 7:30–35"
+  ],
+  "id": "f.angel-of-the-lord.gene-16-22--790d3b7c",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "f.angel-of-the-lord--bb1d2281"
+  ],
+  "book_references": {
+    "Exodus": [
+      3
+    ],
+    "Numbers": [
+      22
+    ]
+  }
+}

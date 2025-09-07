@@ -1,0 +1,18 @@
+{
+  "name": "Sidon (Ezekiel)",
+  "type": "group",
+  "references": [
+    "Ezekiel 28:20–24"
+  ],
+  "blurb": "Nearby power pruned of pride—Israel’s neighborhood will be cleansed of contempt.",
+  "category": "city",
+  "id": "g.sidon.ezekiel--720ef745",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      28
+    ]
+  }
+}

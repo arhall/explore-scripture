@@ -1,0 +1,19 @@
+{
+  "name": "Sons of Solomon’s servants: Sotai",
+  "type": "group",
+  "references": [
+    "Ezra 2:55–57"
+  ],
+  "blurb": "Royal retainer families attached to temple service, later absorbed into the Nethinim designation.",
+  "category": "worship",
+  "count_note": "Included within combined total of 392 at Ezra 2:58",
+  "id": "g.sons-of-solomons-servants-sotai--691de9a3",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      2
+    ]
+  }
+}

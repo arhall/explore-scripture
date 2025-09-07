@@ -1,0 +1,265 @@
+{
+  "book": "Jude",
+  "slug": "jude",
+  "entity_count": 16,
+  "key_figures": [
+    {
+      "id": "p.cain.gene-4--931e91cf",
+      "name": "Cain",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.balaam-son-of-beor--4e674f7d",
+      "name": "Balaam son of Beor",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jude-brother-of-james--20c47f73",
+      "name": "Jude (brother of James)",
+      "type": "person",
+      "role": "author",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.korah--fd66fdd7",
+      "name": "Korah",
+      "type": "person",
+      "role": "negative-example",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.michael-the-archangel--94e31e76",
+      "name": "Michael the archangel",
+      "type": "person",
+      "role": "angelic",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.enoch--50efb186",
+      "name": "Enoch",
+      "type": "person",
+      "role": "faith-example",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.angels-who-did-not-keep-their-domain--08dd1f1c",
+      "name": "angels who did not keep their domain",
+      "type": "group",
+      "role": "angelic",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "f.assumption-of-moses-dispute--4986ed8c",
+      "name": "Assumption of Moses dispute",
+      "type": "figure",
+      "role": "tradition",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.they-walked-in-the-way-of-cain--bcddec8b",
+      "name": "they walked in the way of Cain",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.abandoned-themselves-for-the-sake-of-gain-to-balaam-s-error--421d0a51",
+      "name": "abandoned themselves for the sake of gain to Balaam’s error",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.perished-in-korah-s-rebellion--a1ada3d0",
+      "name": "perished in Korah’s rebellion",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.woe-to-them--458cf759",
+      "name": "woe to them",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-v-5-jesus-who-saved-a-people--32736de9",
+      "name": "Textual note: v.5 ‘Jesus’ who saved a people",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.gomorrah--655b0a7b",
+      "name": "Gomorrah",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.love-feasts--9cdb66df",
+      "name": "love feasts",
+      "type": "entity",
+      "role": "assembly",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.sodom--4295139b",
+      "name": "Sodom",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "p.cain.gene-4--931e91cf",
+      "name": "Cain",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.balaam-son-of-beor--4e674f7d",
+      "name": "Balaam son of Beor",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jude-brother-of-james--20c47f73",
+      "name": "Jude (brother of James)",
+      "type": "person",
+      "role": "author",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.korah--fd66fdd7",
+      "name": "Korah",
+      "type": "person",
+      "role": "negative-example",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.michael-the-archangel--94e31e76",
+      "name": "Michael the archangel",
+      "type": "person",
+      "role": "angelic",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.enoch--50efb186",
+      "name": "Enoch",
+      "type": "person",
+      "role": "faith-example",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.angels-who-did-not-keep-their-domain--08dd1f1c",
+      "name": "angels who did not keep their domain",
+      "type": "group",
+      "role": "angelic",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "f.assumption-of-moses-dispute--4986ed8c",
+      "name": "Assumption of Moses dispute",
+      "type": "figure",
+      "role": "tradition",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.they-walked-in-the-way-of-cain--bcddec8b",
+      "name": "they walked in the way of Cain",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.abandoned-themselves-for-the-sake-of-gain-to-balaam-s-error--421d0a51",
+      "name": "abandoned themselves for the sake of gain to Balaam’s error",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.perished-in-korah-s-rebellion--a1ada3d0",
+      "name": "perished in Korah’s rebellion",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.woe-to-them--458cf759",
+      "name": "woe to them",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-v-5-jesus-who-saved-a-people--32736de9",
+      "name": "Textual note: v.5 ‘Jesus’ who saved a people",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.gomorrah--655b0a7b",
+      "name": "Gomorrah",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.love-feasts--9cdb66df",
+      "name": "love feasts",
+      "type": "entity",
+      "role": "assembly",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.sodom--4295139b",
+      "name": "Sodom",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

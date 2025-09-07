@@ -1,0 +1,25 @@
+{
+  "name": "Psalms, hymns, spiritual songs",
+  "type": "figure",
+  "category": "worship",
+  "references": [
+    "Eph 5:19",
+    "Col 3:16"
+  ],
+  "aka": [],
+  "id": "f.psalms-hymns-spiritual-songs--62d8db47",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      5
+    ],
+    "Colossians": [
+      3
+    ]
+  }
+}

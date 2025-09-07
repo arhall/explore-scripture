@@ -1,0 +1,23 @@
+{
+  "name": "Citizenship avoids scourging",
+  "type": "figure",
+  "category": "legal",
+  "references": [
+    "Acts 22:25–29"
+  ],
+  "aka": [],
+  "id": "f.citizenship-avoids-scourging--208818ab",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      22
+    ]
+  }
+}

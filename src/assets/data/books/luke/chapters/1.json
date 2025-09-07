@@ -1,0 +1,77 @@
+{
+  "book": "Luke",
+  "chapter": 1,
+  "entity_count": 10,
+  "entities": [
+    {
+      "id": "f.benedictus--132e0042",
+      "name": "Benedictus",
+      "type": "figure",
+      "role": "canticle",
+      "refs_count": 1
+    },
+    {
+      "id": "p.elizabeth--60a3b651",
+      "name": "Elizabeth",
+      "type": "person",
+      "role": "matriarch",
+      "refs_count": 3
+    },
+    {
+      "id": "p.zechariah--3b1fa613",
+      "name": "Zechariah",
+      "type": "person",
+      "role": "priest",
+      "refs_count": 2
+    },
+    {
+      "id": "p.mary-mother-of-jesus--acfa811a",
+      "name": "Mary (mother of Jesus)",
+      "type": "person",
+      "role": "family",
+      "refs_count": 6
+    },
+    {
+      "id": "p.jesus-of-nazareth--c4738d73",
+      "name": "Jesus of Nazareth",
+      "type": "person",
+      "role": "messiah",
+      "refs_count": 35
+    },
+    {
+      "id": "f.magnificat--6d228acc",
+      "name": "Magnificat",
+      "type": "figure",
+      "role": "canticle",
+      "refs_count": 1
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "f.gabriel--f90d99b1",
+      "name": "Gabriel",
+      "type": "figure",
+      "role": "angel",
+      "refs_count": 2
+    },
+    {
+      "id": "p.theophilus--ebf69d0e",
+      "name": "Theophilus",
+      "type": "person",
+      "role": "patron",
+      "refs_count": 2
+    },
+    {
+      "id": "e.nazareth--4e4195a3",
+      "name": "Nazareth",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 5
+    }
+  ]
+}

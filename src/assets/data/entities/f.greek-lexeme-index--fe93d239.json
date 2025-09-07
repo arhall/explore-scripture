@@ -1,0 +1,69 @@
+{
+  "name": "Greek lexeme index",
+  "type": "figure",
+  "category": "lexeme-index",
+  "references": [
+    "Heb passim",
+    "Jas passim",
+    "1 Pet passim",
+    "2 Pet passim",
+    "1 John passim",
+    "2 John",
+    "3 John",
+    "Jude passim",
+    "Rev passim"
+  ],
+  "greek_terms": [
+    {
+      "term": "ὑπόστασις",
+      "gloss": "substance/confidence (1:3; 11:1)"
+    },
+    {
+      "term": "χαρακτήρ",
+      "gloss": "exact imprint (1:3)"
+    },
+    {
+      "term": "ἀρχηγός",
+      "gloss": "pioneer/author (2:10; 12:2)"
+    },
+    {
+      "term": "τελείωσις/τελειόω",
+      "gloss": "perfection"
+    },
+    {
+      "term": "διαθήκη",
+      "gloss": "covenant"
+    },
+    {
+      "term": "ἱλαστήριον",
+      "gloss": "mercy seat (9:5)"
+    },
+    {
+      "term": "ἐφάπαξ",
+      "gloss": "once for all (7:27; 9:12; 10:10)"
+    },
+    {
+      "term": "παρρησία",
+      "gloss": "confidence"
+    },
+    {
+      "term": "ὑπομονή",
+      "gloss": "endurance"
+    },
+    {
+      "term": "ἀποστῆναι",
+      "gloss": "to fall away (3:12)"
+    },
+    {
+      "term": "παραπίπτω",
+      "gloss": "to fall away (6:6)"
+    },
+    {
+      "term": "σαββατισμός",
+      "gloss": "Sabbath rest (4:9)"
+    }
+  ],
+  "aka": [],
+  "id": "f.greek-lexeme-index--fe93d239",
+  "book_references": {}
+}

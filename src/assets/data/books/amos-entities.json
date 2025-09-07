@@ -1,0 +1,668 @@
+[
+  {
+    "id": "g.egypt--ab1ad00f",
+    "name": "Egypt",
+    "type": "group",
+    "url": "/entities/g.egypt--ab1ad00f/",
+    "blurb": "From false refuge to future worshiper—altar in Egypt and highway with Assyria prophesy reconciliation.",
+    "searchText": "egypt group nation from false refuge to future worshiper—altar in egypt and highway with assyria prophesy reconciliation. g.egypt--cd780238",
+    "references": 6,
+    "books": [
+      "Jeremiah",
+      "Ezekiel",
+      "Hosea",
+      "Joel",
+      "Amos"
+    ],
+    "category": "nation"
+  },
+  {
+    "id": "e.samaria--fcae1760",
+    "name": "Samaria",
+    "type": "entity",
+    "url": "/entities/e.samaria--fcae1760/",
+    "blurb": "Capital city, cult center.",
+    "searchText": "samaria entity city capital city, cult center. ",
+    "references": 5,
+    "books": [
+      "Hosea",
+      "Amos",
+      "Obadiah",
+      "Luke"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "g.moab--0526e590",
+    "name": "Moab",
+    "type": "group",
+    "url": "/entities/g.moab--0526e590/",
+    "blurb": "Lament over Moab with a messianic refuge in David’s tent—steadfast love enthrones justice.",
+    "searchText": "moab group nation lament over moab with a messianic refuge in david’s tent—steadfast love enthrones justice. g.moab--406c6e00",
+    "references": 4,
+    "books": [
+      "Isaiah",
+      "Jeremiah",
+      "Ezekiel",
+      "Amos"
+    ],
+    "category": "nation"
+  },
+  {
+    "id": "g.damascus.aram--38c72bb6",
+    "name": "Damascus (Aram)",
+    "type": "group",
+    "url": "/entities/g.damascus.aram--38c72bb6/",
+    "blurb": "Falls with Ephraim; fading splendor catechizes dependence on God.",
+    "searchText": "damascus (aram) group nation falls with ephraim; fading splendor catechizes dependence on god. ",
+    "references": 3,
+    "books": [
+      "Jeremiah",
+      "Amos"
+    ],
+    "category": "nation"
+  },
+  {
+    "id": "g.edom.desolate-wilderness--6976d032",
+    "name": "Edom (desolate wilderness)",
+    "type": "group",
+    "url": "/entities/g.edom.desolate-wilderness--6976d032/",
+    "blurb": "Kinsfolk-turned-enemy condemned for bloodguilt.",
+    "searchText": "edom (desolate wilderness) group nation kinsfolk-turned-enemy condemned for bloodguilt. ",
+    "references": 3,
+    "books": [
+      "Joel",
+      "Amos",
+      "Obadiah"
+    ],
+    "category": "nation"
+  },
+  {
+    "id": "g.israel.northern-kingdom--43968183",
+    "name": "Israel (Northern Kingdom)",
+    "type": "group",
+    "url": "/entities/g.israel.northern-kingdom--43968183/",
+    "blurb": "Primary audience, depicted as wife and son.",
+    "searchText": "israel (northern kingdom) group kingdom primary audience, depicted as wife and son. g.israel--79cf1096 g.israel--a6f0ce51",
+    "references": 2,
+    "books": [
+      "Amos"
+    ],
+    "category": "kingdom"
+  },
+  {
+    "id": "p.jeroboam-ii.in-the-bethel-dispute--fc8cf226",
+    "name": "Jeroboam II (in the Bethel dispute)",
+    "type": "person",
+    "url": "/entities/p.jeroboam-ii.in-the-bethel-dispute--fc8cf226/",
+    "blurb": "Named by Amaziah in the accusation; the ‘house of Jeroboam’ faces the plumb line.",
+    "searchText": "jeroboam ii (in the bethel dispute) person king named by amaziah in the accusation; the ‘house of jeroboam’ faces the plumb line. ",
+    "references": 2,
+    "books": [
+      "Amos",
+      "2 Kings"
+    ],
+    "category": "king"
+  },
+  {
+    "id": "e.gilgal--52a48e88",
+    "name": "Gilgal",
+    "type": "entity",
+    "url": "/entities/e.gilgal--52a48e88/",
+    "blurb": "Former sacred site now corrupt.",
+    "searchText": "gilgal entity cult-site former sacred site now corrupt. ",
+    "references": 2,
+    "books": [
+      "Hosea",
+      "Amos"
+    ],
+    "category": "cult-site"
+  },
+  {
+    "id": "e.mount-zion.in-tension-with-samaria--f68f4d61",
+    "name": "Mount Zion (in tension with Samaria)",
+    "type": "entity",
+    "url": "/entities/e.mount-zion.in-tension-with-samaria--f68f4d61/",
+    "blurb": "Security in Zion is also rebuked—religious privilege cannot shield injustice.",
+    "searchText": "mount zion (in tension with samaria) entity mount security in zion is also rebuked—religious privilege cannot shield injustice. ",
+    "references": 2,
+    "books": [
+      "Amos",
+      "Obadiah"
+    ],
+    "category": "mount"
+  },
+  {
+    "id": "g.amaziahs-children--8fce1f52",
+    "name": "Amaziah’s children (fall by the sword)",
+    "type": "group",
+    "url": "/entities/g.amaziahs-children--8fce1f52/",
+    "blurb": "The next generation suffers consequence—dynastic pretension ends.",
+    "searchText": "amaziah’s children (fall by the sword) group family the next generation suffers consequence—dynastic pretension ends. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "family"
+  },
+  {
+    "id": "g.ammon--2e86c4cb",
+    "name": "Ammon",
+    "type": "group",
+    "url": "/entities/g.ammon--2e86c4cb/",
+    "blurb": "Ripped open pregnant women to enlarge borders; Milcom goes into exile.",
+    "searchText": "ammon group nation ripped open pregnant women to enlarge borders; milcom goes into exile. g.ammon--885931a0",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "nation"
+  },
+  {
+    "id": "g.cows-of-bashan--90d9ff4c",
+    "name": "Cows of Bashan (wealthy women)",
+    "type": "group",
+    "url": "/entities/g.cows-of-bashan--90d9ff4c/",
+    "blurb": "Affluent women who crush the needy and demand drink; luxury morphs into predation.",
+    "searchText": "cows of bashan (wealthy women) group elite affluent women who crush the needy and demand drink; luxury morphs into predation. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "elite"
+  },
+  {
+    "id": "g.drunkards-of-samaria--1da13bea",
+    "name": "Drunkards of Samaria",
+    "type": "group",
+    "url": "/entities/g.drunkards-of-samaria--1da13bea/",
+    "blurb": "At ease in Zion and Samaria; anointed with oils, invent songs, but are not grieved over Joseph’s ruin.",
+    "searchText": "drunkards of samaria group elite at ease in zion and samaria; anointed with oils, invent songs, but are not grieved over joseph’s ruin. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "elite"
+  },
+  {
+    "id": "g.gaza.philistia--2489b4b8",
+    "name": "Gaza (Philistia)",
+    "type": "group",
+    "url": "/entities/g.gaza.philistia--2489b4b8/",
+    "blurb": "Mass deportations and slave trafficking; the remnant of Philistines perishes.",
+    "searchText": "gaza (philistia) group nation mass deportations and slave trafficking; the remnant of philistines perishes. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "nation"
+  },
+  {
+    "id": "g.house-of-jeroboam--4215decc",
+    "name": "House of Jeroboam",
+    "type": "group",
+    "url": "/entities/g.house-of-jeroboam--4215decc/",
+    "blurb": "Dynastic target of plumb‑line judgment; prosperity without justice proves terminal.",
+    "searchText": "house of jeroboam group dynasty dynastic target of plumb‑line judgment; prosperity without justice proves terminal. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "dynasty"
+  },
+  {
+    "id": "g.judah--ecd455d1",
+    "name": "Judah",
+    "type": "group",
+    "url": "/entities/g.judah--ecd455d1/",
+    "blurb": "Rejected the law of YHWH; lies led them astray; Jerusalem consumed by fire.",
+    "searchText": "judah group nation rejected the law of yhwh; lies led them astray; jerusalem consumed by fire. g.judah--1f7d2a4c g.judah--a34b84cd",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "nation"
+  },
+  {
+    "id": "g.judges-at-the-gate--b6c5ac48",
+    "name": "Judges at the gate (corrupted)",
+    "type": "group",
+    "url": "/entities/g.judges-at-the-gate--b6c5ac48/",
+    "blurb": "They hate the truth‑teller, take bribes, and push aside the needy in the gate—justice perverted.",
+    "searchText": "judges at the gate (corrupted) group civic they hate the truth‑teller, take bribes, and push aside the needy in the gate—justice perverted. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "civic"
+  },
+  {
+    "id": "g.merchants-with-false-balances--20b3068f",
+    "name": "Merchants with false balances",
+    "type": "group",
+    "url": "/entities/g.merchants-with-false-balances--20b3068f/",
+    "blurb": "Eager for the new moon to end so they can cheat with ephah and shekel; selling chaff as grain.",
+    "searchText": "merchants with false balances group commerce eager for the new moon to end so they can cheat with ephah and shekel; selling chaff as grain. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "commerce"
+  },
+  {
+    "id": "g.nations-called-by-my-name--043ba148",
+    "name": "Nations called by my name",
+    "type": "group",
+    "url": "/entities/g.nations-called-by-my-name--043ba148/",
+    "blurb": "Gentile inclusion as covenant expansion—mission hinted in restoration.",
+    "searchText": "nations called by my name group mission gentile inclusion as covenant expansion—mission hinted in restoration. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "mission"
+  },
+  {
+    "id": "g.nazirites-given-wine--c9e9ee9d",
+    "name": "Nazirites given wine",
+    "type": "group",
+    "url": "/entities/g.nazirites-given-wine--c9e9ee9d/",
+    "blurb": "Consecrated ascetics are pressured to violate vows—holiness mocked.",
+    "searchText": "nazirites given wine group vow consecrated ascetics are pressured to violate vows—holiness mocked. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "vow"
+  },
+  {
+    "id": "g.oppressed-needy-at-the-gate--abc86a63",
+    "name": "Oppressed needy at the gate",
+    "type": "group",
+    "url": "/entities/g.oppressed-needy-at-the-gate--abc86a63/",
+    "blurb": "Those who seek justice are crushed—Amos calls for goodness in the courts.",
+    "searchText": "oppressed needy at the gate group victims those who seek justice are crushed—amos calls for goodness in the courts. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "victims"
+  },
+  {
+    "id": "g.philistia-aram.migration-sovereignty--39a4caf3",
+    "name": "Philistia & Aram (migration sovereignty)",
+    "type": "group",
+    "url": "/entities/g.philistia-aram.migration-sovereignty--39a4caf3/",
+    "blurb": "God moved Philistines from Caphtor and Arameans from Kir—history is under His providence.",
+    "searchText": "philistia & aram (migration sovereignty) group sovereignty god moved philistines from caphtor and arameans from kir—history is under his providence. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "sovereignty"
+  },
+  {
+    "id": "g.prophets-silenced--5d53100d",
+    "name": "Prophets silenced (‘Do not prophesy!’)",
+    "type": "group",
+    "url": "/entities/g.prophets-silenced--5d53100d/",
+    "blurb": "Spiritual gag order at royal sanctuary—truth evicted from liturgical space.",
+    "searchText": "prophets silenced (‘do not prophesy!’) group opposition spiritual gag order at royal sanctuary—truth evicted from liturgical space. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "opposition"
+  },
+  {
+    "id": "g.righteous-sold-for-silver-and-sandals--c533c737",
+    "name": "Righteous sold for silver and sandals",
+    "type": "group",
+    "url": "/entities/g.righteous-sold-for-silver-and-sandals--c533c737/",
+    "blurb": "Human life priced at pocket change; sexual exploitation compounds economic injustice.",
+    "searchText": "righteous sold for silver and sandals group victims human life priced at pocket change; sexual exploitation compounds economic injustice. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "victims"
+  },
+  {
+    "id": "p.amaziah-the-priest-of-bethel--b1f8b236",
+    "name": "Amaziah the priest of Bethel",
+    "type": "person",
+    "url": "/entities/p.amaziah-the-priest-of-bethel--b1f8b236/",
+    "blurb": "Institutional gatekeeper who expels Amos; receives a hard oracle against his house.",
+    "searchText": "amaziah the priest of bethel person priest institutional gatekeeper who expels amos; receives a hard oracle against his house. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "priest"
+  },
+  {
+    "id": "p.amaziahs-wife--7a535104",
+    "name": "Amaziah’s wife (becomes a prostitute)",
+    "type": "person",
+    "url": "/entities/p.amaziahs-wife--7a535104/",
+    "blurb": "Personal fallout of resisting God’s word—prophetic judgment reaches the household.",
+    "searchText": "amaziah’s wife (becomes a prostitute) person family personal fallout of resisting god’s word—prophetic judgment reaches the household. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "family"
+  },
+  {
+    "id": "p.amos-of-tekoa--c656eb34",
+    "name": "Amos of Tekoa",
+    "type": "person",
+    "url": "/entities/p.amos-of-tekoa--c656eb34/",
+    "blurb": "Sheepbreeder and dresser of sycamore figs from Tekoa. A layman summoned by YHWH to confront northern Israel’s injustice and cultic corruption.",
+    "searchText": "amos of tekoa person prophet sheepbreeder and dresser of sycamore figs from tekoa. a layman summoned by yhwh to confront northern israel’s injustice and cultic corruption. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "prophet"
+  },
+  {
+    "id": "p.jeroboam-ii-of-israel--837d7e53",
+    "name": "Jeroboam II of Israel",
+    "type": "person",
+    "url": "/entities/p.jeroboam-ii-of-israel--837d7e53/",
+    "blurb": "Northern ruler during Israel’s economic boom. Amos predicts the sword against his house.",
+    "searchText": "jeroboam ii of israel person king northern ruler during israel’s economic boom. amos predicts the sword against his house. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "king"
+  },
+  {
+    "id": "p.uzziah-of-judah--aec578f4",
+    "name": "Uzziah of Judah",
+    "type": "person",
+    "url": "/entities/p.uzziah-of-judah--aec578f4/",
+    "blurb": "Prosperous monarch; his reign provides the southern datum for Amos’ date.",
+    "searchText": "uzziah of judah person king prosperous monarch; his reign provides the southern datum for amos’ date. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "king"
+  },
+  {
+    "id": "e.amos-intercessions--bc3dff64",
+    "name": "Amos’ intercessions (twice)",
+    "type": "entity",
+    "url": "/entities/e.amos-intercessions--bc3dff64/",
+    "blurb": "‘O Lord GOD, please forgive/cease!’—prophetic ministry includes pleading for mercy.",
+    "searchText": "amos’ intercessions (twice) entity intercession ‘o lord god, please forgive/cease!’—prophetic ministry includes pleading for mercy. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "intercession"
+  },
+  {
+    "id": "e.beersheba--07231947",
+    "name": "Beersheba (southern shrine)",
+    "type": "entity",
+    "url": "/entities/e.beersheba--07231947/",
+    "blurb": "Pilgrimage to the south offers no refuge; only seeking YHWH gives life.",
+    "searchText": "beersheba (southern shrine) entity cult-site pilgrimage to the south offers no refuge; only seeking yhwh gives life. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "cult-site"
+  },
+  {
+    "id": "e.bethel--e80af22f",
+    "name": "Bethel (royal sanctuary)",
+    "type": "entity",
+    "url": "/entities/e.bethel--e80af22f/",
+    "blurb": "Calf‑cult hub and king’s chapel; Amos’ words dismantle its pretensions.",
+    "searchText": "bethel (royal sanctuary) entity cult-site calf‑cult hub and king’s chapel; amos’ words dismantle its pretensions. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "cult-site"
+  },
+  {
+    "id": "e.bribes-and-perverted-justice--9876c308",
+    "name": "Bribes and perverted justice",
+    "type": "entity",
+    "url": "/entities/e.bribes-and-perverted-justice--9876c308/",
+    "blurb": "Economic clout hijacks courts; righteousness priced out.",
+    "searchText": "bribes and perverted justice entity corruption economic clout hijacks courts; righteousness priced out. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "corruption"
+  },
+  {
+    "id": "e.call-narrative-i-was-no-prophet-but-the-lord-took-me--36f77740",
+    "name": "Call narrative: ‘I was no prophet… but the LORD took me’",
+    "type": "entity",
+    "url": "/entities/e.call-narrative-i-was-no-prophet-but-the-lord-took-me--36f77740/",
+    "blurb": "Amos resists professional labels; vocation is an interruption—authority grounded in divine initiative, not guild status.",
+    "searchText": "call narrative: ‘i was no prophet… but the lord took me’ entity vocation amos resists professional labels; vocation is an interruption—authority grounded in divine initiative, not guild status. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "vocation"
+  },
+  {
+    "id": "e.calneh--2b0898c3",
+    "name": "Calneh",
+    "type": "entity",
+    "url": "/entities/e.calneh--2b0898c3/",
+    "blurb": "Example city for comparative downfall—go and see: are you better?",
+    "searchText": "calneh entity city example city for comparative downfall—go and see: are you better? ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "e.day-of-yhwh-is-darkness-not-light--d0a2aadd",
+    "name": "Day of YHWH is darkness, not light",
+    "type": "entity",
+    "url": "/entities/e.day-of-yhwh-is-darkness-not-light--d0a2aadd/",
+    "blurb": "Religious triumphalism shattered—the Day exposes and reverses false hopes.",
+    "searchText": "day of yhwh is darkness, not light entity day-of-yhwh religious triumphalism shattered—the day exposes and reverses false hopes. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "day-of-yhwh"
+  },
+  {
+    "id": "e.dirge-over-israel.qinah--6712b68a",
+    "name": "Dirge over Israel (qinah)",
+    "type": "entity",
+    "url": "/entities/e.dirge-over-israel.qinah--6712b68a/",
+    "blurb": "Funeral song anticipates national death—lament as truth‑telling.",
+    "searchText": "dirge over israel (qinah) entity lament funeral song anticipates national death—lament as truth‑telling. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "lament"
+  },
+  {
+    "id": "e.does-a-lion-roar.rhetorical-chain--84daa72b",
+    "name": "Does a lion roar…? (rhetorical chain)",
+    "type": "entity",
+    "url": "/entities/e.does-a-lion-roar.rhetorical-chain--84daa72b/",
+    "blurb": "Logic of cause and effect culminates: the lion roars—who will not fear? the Lord speaks—who can but prophesy?",
+    "searchText": "does a lion roar…? (rhetorical chain) entity rhetoric logic of cause and effect culminates: the lion roars—who will not fear? the lord speaks—who can but prophesy? ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "rhetoric"
+  },
+  {
+    "id": "e.earthquake-marker.two-years-before--d9f36dfe",
+    "name": "Earthquake marker (two years before)",
+    "type": "entity",
+    "url": "/entities/e.earthquake-marker.two-years-before--d9f36dfe/",
+    "blurb": "Seismic memory dating Amos’ ministry—a shaking that embodies the book’s theme of divine disturbance.",
+    "searchText": "earthquake marker (two years before) entity chronology seismic memory dating amos’ ministry—a shaking that embodies the book’s theme of divine disturbance. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "chronology"
+  },
+  {
+    "id": "e.famine-of-hearing-the-words-of-the-lord--1bd6aa33",
+    "name": "Famine of hearing the words of the LORD",
+    "type": "entity",
+    "url": "/entities/e.famine-of-hearing-the-words-of-the-lord--1bd6aa33/",
+    "blurb": "Judgment by silence—spiritual drought worse than crop failure.",
+    "searchText": "famine of hearing the words of the lord entity judgment judgment by silence—spiritual drought worse than crop failure. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "judgment"
+  },
+  {
+    "id": "e.father-and-son-go-in-to-the-same-girl--20f107b8",
+    "name": "Father and son go in to the same girl",
+    "type": "entity",
+    "url": "/entities/e.father-and-son-go-in-to-the-same-girl--20f107b8/",
+    "blurb": "Sexual exploitation sanctified by cult payments—defiles God’s holy name.",
+    "searchText": "father and son go in to the same girl entity abuse sexual exploitation sanctified by cult payments—defiles god’s holy name. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "abuse"
+  },
+  {
+    "id": "e.formula-for-three-transgressions-even-for-four--7f35c3c8",
+    "name": "Formula: For three transgressions, even for four",
+    "type": "entity",
+    "url": "/entities/e.formula-for-three-transgressions-even-for-four--7f35c3c8/",
+    "blurb": "Numerical proverb pattern escalates guilt and attention—rhetoric that hooks the audience before turning inward.",
+    "searchText": "formula: for three transgressions, even for four entity literary numerical proverb pattern escalates guilt and attention—rhetoric that hooks the audience before turning inward. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "literary"
+  },
+  {
+    "id": "e.garments-taken-in-pledge-beside-every-altar--9bdafa54",
+    "name": "Garments taken in pledge beside every altar",
+    "type": "entity",
+    "url": "/entities/e.garments-taken-in-pledge-beside-every-altar--9bdafa54/",
+    "blurb": "Illegal collateral kept overnight; sanctuaries become comfort lounges for oppressors.",
+    "searchText": "garments taken in pledge beside every altar entity abuse illegal collateral kept overnight; sanctuaries become comfort lounges for oppressors. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "abuse"
+  },
+  {
+    "id": "e.gath-of-the-philistines--c777beb0",
+    "name": "Gath of the Philistines",
+    "type": "entity",
+    "url": "/entities/e.gath-of-the-philistines--c777beb0/",
+    "blurb": "Philistine city invoked for rhetorical comparison—learn from history.",
+    "searchText": "gath of the philistines entity city philistine city invoked for rhetorical comparison—learn from history. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "e.hamath-the-great--58c38c69",
+    "name": "Hamath the great",
+    "type": "entity",
+    "url": "/entities/e.hamath-the-great--58c38c69/",
+    "blurb": "Northern power used illustratively—its greatness could not save it.",
+    "searchText": "hamath the great entity city northern power used illustratively—its greatness could not save it. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "e.hate-evil-love-good--e7a57620",
+    "name": "Hate evil, love good",
+    "type": "entity",
+    "url": "/entities/e.hate-evil-love-good--e7a57620/",
+    "blurb": "Affective discipleship underwrites structural change—love must be legislated in practice.",
+    "searchText": "hate evil, love good entity call affective discipleship underwrites structural change—love must be legislated in practice. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "call"
+  },
+  {
+    "id": "e.hating-the-one-who-rebukes-in-the-gate--2817a808",
+    "name": "Hating the one who rebukes in the gate",
+    "type": "entity",
+    "url": "/entities/e.hating-the-one-who-rebukes-in-the-gate--2817a808/",
+    "blurb": "Anti‑prophetic animus; truth‑tellers become enemy number one.",
+    "searchText": "hating the one who rebukes in the gate entity opposition anti‑prophetic animus; truth‑tellers become enemy number one. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "opposition"
+  },
+  {
+    "id": "e.hymn-he-who-forms-the-mountains--747c9d51",
+    "name": "Hymn: He who forms the mountains…",
+    "type": "entity",
+    "url": "/entities/e.hymn-he-who-forms-the-mountains--747c9d51/",
+    "blurb": "Doxology interrupts satire—majestic Creator strides on the heights of the earth.",
+    "searchText": "hymn: he who forms the mountains… entity hymn doxology interrupts satire—majestic creator strides on the heights of the earth. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "hymn"
+  },
+  {
+    "id": "e.hymn-maker-of-pleiades-and-orion--862c557d",
+    "name": "Hymn: Maker of Pleiades and Orion",
+    "type": "entity",
+    "url": "/entities/e.hymn-maker-of-pleiades-and-orion--862c557d/",
+    "blurb": "Doctrinal spine for ethics: the Creator who turns dawn to darkness charges the mighty.",
+    "searchText": "hymn: maker of pleiades and orion entity hymn doctrinal spine for ethics: the creator who turns dawn to darkness charges the mighty. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "hymn"
+  },
+  {
+    "id": "e.hymn-the-lord-of-hosts-who-builds-his-chambers--5fdf2632",
+    "name": "Hymn: The LORD of hosts… who builds his chambers",
+    "type": "entity",
+    "url": "/entities/e.hymn-the-lord-of-hosts-who-builds-his-chambers--5fdf2632/",
+    "blurb": "Cosmic architecture hymn frames the final oracle—sovereign over sea and land.",
+    "searchText": "hymn: the lord of hosts… who builds his chambers entity hymn cosmic architecture hymn frames the final oracle—sovereign over sea and land. ",
+    "references": 1,
+    "books": [
+      "Amos"
+    ],
+    "category": "hymn"
+  }
+]

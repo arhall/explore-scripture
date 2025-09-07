@@ -1,0 +1,18 @@
+{
+  "id": "f.earthquake--d092b086",
+  "name": "Earthquake",
+  "type": "figure",
+  "references": [
+    "Hab 3:6"
+  ],
+  "category": "theophany-element",
+  "blurb": "He stands and shakes the earth; mountains are shattered—a cosmos-scale verdict.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      3
+    ]
+  }
+}

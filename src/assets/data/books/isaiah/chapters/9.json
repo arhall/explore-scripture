@@ -1,0 +1,14 @@
+{
+  "book": "Isaiah",
+  "chapter": 9,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "f.royal-child-wonderful-counselor-mighty-god-everlasting-father-prince-of-peace--5192f332",
+      "name": "Royal Child: Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace",
+      "type": "figure",
+      "role": "messianic",
+      "refs_count": 1
+    }
+  ]
+}

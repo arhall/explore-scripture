@@ -1,0 +1,26 @@
+{
+  "id": "e.day-of-the-lord-canonical-trajectory--3c1f698e",
+  "name": "Day of the LORD (canonical trajectory)",
+  "type": "entity",
+  "references": [
+    "Zeph 1:7",
+    "Zeph 1:14-18",
+    "Zeph 3:8"
+  ],
+  "category": "theology",
+  "cross_references": [
+    "Amos 5",
+    "Joel 2",
+    "Mal 4"
+  ],
+  "blurb": "From Amos’s warning to Joel’s apocalyptic textures to Zephaniah’s purification and Malachi’s eschaton—the Day as judgment-unto-renewal.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zephaniah": [
+      1,
+      3
+    ]
+  }
+}

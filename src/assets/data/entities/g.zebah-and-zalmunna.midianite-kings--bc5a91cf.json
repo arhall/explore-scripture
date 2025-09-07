@@ -1,0 +1,18 @@
+{
+  "name": "Zebah and Zalmunna (Midianite kings)",
+  "type": "group",
+  "references": [
+    "Judges 8:5–21"
+  ],
+  "blurb": "Captured kings whom Gideon executes; justice intersects with personal memory of slain brothers.",
+  "category": "narrative",
+  "id": "g.zebah-and-zalmunna.midianite-kings--bc5a91cf",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      8
+    ]
+  }
+}

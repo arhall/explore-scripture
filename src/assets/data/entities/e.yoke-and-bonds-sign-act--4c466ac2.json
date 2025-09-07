@@ -1,0 +1,19 @@
+{
+  "name": "Yoke and bonds sign‑act",
+  "type": "entity",
+  "references": [
+    "Jeremiah 27–28"
+  ],
+  "blurb": "Wooden (then iron) yokes dramatize submission to Babylon as God’s discipline; resisting is courting ruin.",
+  "category": "sign",
+  "id": "e.yoke-and-bonds-sign-act--4c466ac2",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      27,
+      28
+    ]
+  }
+}

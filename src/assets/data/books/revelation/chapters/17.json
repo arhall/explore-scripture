@@ -1,0 +1,77 @@
+{
+  "book": "Revelation",
+  "chapter": 17,
+  "entity_count": 14,
+  "entities": [
+    {
+      "id": "f.babylon-the-great-the-prostitute--8e0d98d3",
+      "name": "Babylon the Great (the prostitute)",
+      "type": "figure",
+      "role": "city-symbol",
+      "refs_count": 2
+    },
+    {
+      "id": "f.heptad-index--733a558f",
+      "name": "Heptad index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.numeric-symbolism-index--20cda2ea",
+      "name": "Numeric symbolism index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.seven-heads-seven-mountains-and-seven-kings--09770bc6",
+      "name": "seven heads = seven mountains and seven kings",
+      "type": "figure",
+      "role": "interpretive",
+      "refs_count": 1
+    },
+    {
+      "id": "f.here-is-a-mind-with-wisdom--102c82ca",
+      "name": "Here is a mind with wisdom",
+      "type": "figure",
+      "role": "wisdom-signal",
+      "refs_count": 1
+    },
+    {
+      "id": "f.city-contrast-index-babylon-vs-new-jerusalem--b56140e1",
+      "name": "City contrast index (Babylon vs New Jerusalem)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.great-prostitute-on-a-scarlet-beast--3f767c97",
+      "name": "great prostitute on a scarlet beast",
+      "type": "figure",
+      "role": "city-symbol",
+      "refs_count": 1
+    },
+    {
+      "id": "f.angel-index--12fa89a0",
+      "name": "Angel index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.ot-echo-index--3c58655d",
+      "name": "OT echo index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.drunk-with-the-blood-of-the-saints-and-martyrs-of-jesus--d3ce8fb0",
+      "name": "drunk with the blood of the saints and martyrs of Jesus",
+      "type": "figure",
+      "role": "persecution",
+      "refs_count": 1
+    }
+  ]
+}

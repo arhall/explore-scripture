@@ -1,0 +1,18 @@
+{
+  "name": "Corporate confession & long prayer (Levites lead)",
+  "type": "entity",
+  "references": [
+    "Nehemiah 9:1–38"
+  ],
+  "blurb": "History retold as doxology and repentance—covenant mercy emphasized amid repeated rebellion.",
+  "category": "theology",
+  "id": "e.corporate-confession-long-prayer.levites-lead--3cc81e6e",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      9
+    ]
+  }
+}

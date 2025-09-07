@@ -1,0 +1,21 @@
+{
+  "name": "Bitterness item: Malice",
+  "type": "figure",
+  "category": "vice",
+  "references": [
+    "Eph 4:31"
+  ],
+  "aka": [],
+  "id": "f.bitterness-item-malice--4d20188d",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      4
+    ]
+  }
+}

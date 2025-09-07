@@ -1,0 +1,18 @@
+{
+  "id": "e.song-over-zion--7d7bde28",
+  "name": "Song over Zion",
+  "type": "entity",
+  "references": [
+    "Zeph 3:17"
+  ],
+  "category": "doxology",
+  "blurb": "Divine singing as liturgical-theological climax.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zephaniah": [
+      3
+    ]
+  }
+}

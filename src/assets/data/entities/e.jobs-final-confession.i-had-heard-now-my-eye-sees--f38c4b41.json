@@ -1,0 +1,18 @@
+{
+  "name": "Job’s final confession (‘I had heard… now my eye sees’)",
+  "type": "entity",
+  "references": [
+    "Job 42:1–6"
+  ],
+  "blurb": "Knowledge becomes encounter—dust and ashes name finitude embraced before glory.",
+  "category": "spirituality",
+  "id": "e.jobs-final-confession.i-had-heard-now-my-eye-sees--f38c4b41",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Job": [
+      42
+    ]
+  }
+}

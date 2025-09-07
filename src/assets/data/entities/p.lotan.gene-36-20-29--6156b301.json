@@ -1,0 +1,19 @@
+{
+  "name": "Lotan",
+  "type": "person",
+  "references": [
+    "Genesis 36:20,29"
+  ],
+  "blurb": "Son of Seir the Horite; chief among the Horites.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.lotan.gene-36-20-29--6156b301",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

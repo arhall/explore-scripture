@@ -1,0 +1,18 @@
+{
+  "id": "e.house-of-the-wicked-storehouses-of-violence--a41b09ce",
+  "name": "House of the wicked—storehouses of violence",
+  "type": "entity",
+  "references": [
+    "Micah 6:12"
+  ],
+  "category": "economy",
+  "blurb": "Supply chains of harm; luxury stocked by oppression.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      6
+    ]
+  }
+}

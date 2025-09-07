@@ -1,0 +1,18 @@
+{
+  "name": "Jotham son of Jerubbaal",
+  "type": "person",
+  "references": [
+    "Judges 9:7–21"
+  ],
+  "blurb": "Survivor who speaks a fable from Mount Gerizim—thornbush kingship indicts Abimelech and the Shechemites.",
+  "category": "narrative",
+  "id": "p.jotham-son-of-jerubbaal--dbd6b1ee",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      9
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "f.trumpet-&-battle-cry--8e013d8f",
+  "name": "Trumpet & battle cry",
+  "type": "figure",
+  "references": [
+    "Zeph 1:16"
+  ],
+  "category": "war-signal",
+  "blurb": "Siege imagery framing the Day as a city’s fall before the Divine King.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zephaniah": [
+      1
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "book": "Jeremiah",
+  "chapter": 2,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "d.the-lord-fountain-of-living-waters--e3f7310b",
+      "name": "The LORD, fountain of living waters",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 1
+    },
+    {
+      "id": "e.baal-worship-in-judah--a02f027f",
+      "name": "Baal worship in Judah",
+      "type": "entity",
+      "role": "idol",
+      "refs_count": 1
+    },
+    {
+      "id": "e.wood-and-stone.generic-idols--34e4b208",
+      "name": "Wood and stone (generic idols)",
+      "type": "entity",
+      "role": "idol",
+      "refs_count": 1
+    }
+  ]
+}

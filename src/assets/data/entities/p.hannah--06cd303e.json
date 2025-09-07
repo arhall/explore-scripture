@@ -1,0 +1,26 @@
+{
+  "name": "Hannah",
+  "type": "person",
+  "references": [
+    "1 Samuel 1–2"
+  ],
+  "blurb": "From bitter tears to theology in song. Her vow yields Samuel; her Magnificat-like hymn celebrates God’s reversals—thrones topple, the lowly raised.",
+  "relations": {
+    "husband": "Elkanah",
+    "son": "Samuel"
+  },
+  "category": "narrative",
+  "cross_references": [
+    "Luke 1:46–55"
+  ],
+  "id": "p.hannah--06cd303e",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      1,
+      2
+    ]
+  }
+}

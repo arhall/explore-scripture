@@ -1,0 +1,21 @@
+{
+  "name": "John eats the little scroll",
+  "type": "figure",
+  "category": "commission",
+  "references": [
+    "Rev 10:8-11"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Ezek 2–3",
+      "type": "echo"
+    }
+  ],
+  "aka": [],
+  "id": "f.john-eats-the-little-scroll--fae1c2cc",
+  "book_references": {
+    "Revelation": [
+      10
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Sin Offering (Chatat)",
+  "type": "entity",
+  "references": [
+    "Leviticus 4–5"
+  ],
+  "blurb": "Purification offering that cleanses sanctuary and people from unintended sins—teaching that sin pollutes and must be dealt with.",
+  "category": "ritual",
+  "cross_references": [
+    "Hebrews 9:22–23"
+  ],
+  "id": "e.sin-offering.chatat--807c7def",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Leviticus": [
+      4,
+      5
+    ]
+  }
+}

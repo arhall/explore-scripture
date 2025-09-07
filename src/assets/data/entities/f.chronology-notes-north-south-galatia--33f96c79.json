@@ -1,0 +1,22 @@
+{
+  "name": "Chronology notes (North/South Galatia)",
+  "type": "figure",
+  "category": "chronology",
+  "references": [
+    "Gal intro"
+  ],
+  "chronology": {
+    "approx_year": "48–55",
+    "anchor": "Post-Antioch; relation to Acts 15 debated",
+    "confidence": "low"
+  },
+  "aka": [],
+  "id": "f.chronology-notes-north-south-galatia--33f96c79",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {}
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Trophimus",
+  "type": "person",
+  "category": "coworker",
+  "references": [
+    "Acts 20:4",
+    "Acts 21:29",
+    "2 Tim 4:9-22"
+  ],
+  "aka": [],
+  "id": "p.trophimus--db8ead68",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      20,
+      21
+    ],
+    "2 Timothy": [
+      4
+    ]
+  }
+}

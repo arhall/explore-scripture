@@ -1,0 +1,18 @@
+{
+  "name": "Hailstones, fire, and brimstone",
+  "type": "entity",
+  "references": [
+    "Ezekiel 38:22"
+  ],
+  "blurb": "Creation itself becomes God’s arsenal against Gog.",
+  "category": "apocalypse",
+  "id": "e.hailstones-fire-and-brimstone--a073c2d7",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      38
+    ]
+  }
+}

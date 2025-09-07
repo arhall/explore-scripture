@@ -1,0 +1,21 @@
+{
+  "name": "Damascus",
+  "type": "entity",
+  "category": "city",
+  "references": [
+    "Gal 1:17"
+  ],
+  "aka": [],
+  "id": "e.damascus--d97e6261",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Galatians": [
+      1
+    ]
+  }
+}

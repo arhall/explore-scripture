@@ -1,0 +1,27 @@
+{
+  "name": "Casluhim",
+  "type": "person",
+  "references": [
+    "Genesis 10:13–14"
+  ],
+  "blurb": "Descendant of Mizraim (Egypt); ancestor of groups associated with the Nile regions. From this line came the Philistines (later coastal people).",
+  "relations": {
+    "parents": [
+      "Mizraim"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "Jeremiah 47:4",
+    "Amos 9:7"
+  ],
+  "id": "p.casluhim.gene-10-13-14--b29a9e79",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

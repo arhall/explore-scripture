@@ -1,0 +1,17 @@
+{
+  "name": "Synagogue of the Jews (Thessalonica)",
+  "type": "entity",
+  "category": "synagogue",
+  "references": [
+    "Acts 17:1-2"
+  ],
+  "aka": [
+    "Synagogue of Thessalonica"
+  ],
+  "id": "e.synagogue-of-the-jews-thessalonica--aeea4a9f",
+  "book_references": {
+    "Acts": [
+      17
+    ]
+  }
+}

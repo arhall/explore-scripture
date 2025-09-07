@@ -1,0 +1,18 @@
+{
+  "name": "Anathoth (priestly town)",
+  "type": "entity",
+  "references": [
+    "Jeremiah 1:1; 11:21–23; 32:7–9"
+  ],
+  "blurb": "Jeremiah’s hometown—source of both identity and opposition; site of the field purchase sign.",
+  "category": "place",
+  "id": "e.anathoth.priestly-town--efab0470",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      1
+    ]
+  }
+}

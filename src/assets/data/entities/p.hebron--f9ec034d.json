@@ -1,0 +1,19 @@
+{
+  "name": "Hebron",
+  "type": "person",
+  "references": [
+    "Exodus 6:18"
+  ],
+  "blurb": "Son of Kohath; clan progenitor.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.hebron--f9ec034d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      6
+    ]
+  }
+}

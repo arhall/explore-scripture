@@ -1,0 +1,19 @@
+{
+  "name": "Eshban",
+  "type": "person",
+  "references": [
+    "Genesis 36:26"
+  ],
+  "blurb": "Son of Dishon; Horite descendant.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.eshban.gene-36-26--a0f035b2",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

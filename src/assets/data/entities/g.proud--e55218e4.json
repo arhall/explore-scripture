@@ -1,0 +1,18 @@
+{
+  "id": "g.proud--e55218e4",
+  "name": "Proud",
+  "type": "group",
+  "references": [
+    "Hab 2:4-5"
+  ],
+  "category": "ethical-group",
+  "blurb": "The swollen soul that is not upright; archetype of imperial arrogance.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      2
+    ]
+  }
+}

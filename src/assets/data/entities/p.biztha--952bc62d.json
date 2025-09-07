@@ -1,0 +1,18 @@
+{
+  "name": "Biztha",
+  "type": "person",
+  "references": [
+    "Esther 1:10"
+  ],
+  "blurb": "One of seven eunuchs; messenger of the king’s feast-fueled will.",
+  "category": "record",
+  "id": "p.biztha--952bc62d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      1
+    ]
+  }
+}

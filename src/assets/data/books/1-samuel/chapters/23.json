@@ -1,0 +1,21 @@
+{
+  "book": "1 Samuel",
+  "chapter": 23,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "e.keilah.rescued-then-potential-betrayal--bffd052d",
+      "name": "Keilah (rescued then potential betrayal)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    },
+    {
+      "id": "g.ziphites--583a7e4b",
+      "name": "Ziphites",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

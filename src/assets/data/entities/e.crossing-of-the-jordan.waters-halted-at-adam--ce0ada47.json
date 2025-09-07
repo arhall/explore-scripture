@@ -1,0 +1,21 @@
+{
+  "name": "Crossing of the Jordan (waters halted at Adam)",
+  "type": "entity",
+  "references": [
+    "Joshua 3:13–17; 4:7–18"
+  ],
+  "blurb": "Miracle of entry that mirrors the Red Sea: the ark leads, the waters heap up at Adam, and the people pass on dry ground—a rite of passage from wilderness to inheritance.",
+  "category": "sign",
+  "cross_references": [
+    "Psalm 114"
+  ],
+  "id": "e.crossing-of-the-jordan.waters-halted-at-adam--ce0ada47",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joshua": [
+      3
+    ]
+  }
+}

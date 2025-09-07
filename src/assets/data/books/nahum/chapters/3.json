@@ -1,0 +1,77 @@
+{
+  "book": "Nahum",
+  "chapter": 3,
+  "entity_count": 21,
+  "entities": [
+    {
+      "id": "g.nations--0f6f9c22",
+      "name": "Nations",
+      "type": "group",
+      "role": "audience",
+      "refs_count": 1
+    },
+    {
+      "id": "f.daughter-nineveh--7b2cae91",
+      "name": "Daughter Nineveh",
+      "type": "figure",
+      "role": "personified-city",
+      "refs_count": 1
+    },
+    {
+      "id": "f.the-harlot-city--c8d2f6a9",
+      "name": "The Harlot City",
+      "type": "figure",
+      "role": "personification",
+      "refs_count": 1
+    },
+    {
+      "id": "f.locust-swarm--9b7e2c11",
+      "name": "Locust/Grasshopper Swarm",
+      "type": "figure",
+      "role": "army-imagery",
+      "refs_count": 1
+    },
+    {
+      "id": "t.woe-oracle--e7a0d4f2",
+      "name": "Woe Oracle",
+      "type": "title",
+      "role": "literary-form",
+      "refs_count": 1
+    },
+    {
+      "id": "e.ninevehs-walls--c1a6e0b4",
+      "name": "Nineveh’s walls",
+      "type": "entity",
+      "role": "fortification",
+      "refs_count": 1
+    },
+    {
+      "id": "e.bloodshed--14b7a0e6",
+      "name": "Bloodshed",
+      "type": "entity",
+      "role": "indictment",
+      "refs_count": 1
+    },
+    {
+      "id": "e.shame-exposure--ad9c1e40",
+      "name": "Shame/Exposure motif",
+      "type": "entity",
+      "role": "judgment-imagery",
+      "refs_count": 1
+    },
+    {
+      "id": "e.sleep-of-the-shepherds--8d2b5e1c",
+      "name": "Sleep of the shepherds",
+      "type": "entity",
+      "role": "leadership-collapse",
+      "refs_count": 1
+    },
+    {
+      "id": "g.merchants-of-nineveh--a6e7c1d2",
+      "name": "Merchants of Nineveh",
+      "type": "group",
+      "role": "economic-class",
+      "refs_count": 1
+    }
+  ]
+}

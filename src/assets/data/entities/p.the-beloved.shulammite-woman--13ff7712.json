@@ -1,0 +1,27 @@
+{
+  "name": "The Beloved (Shulammite woman)",
+  "type": "person",
+  "references": [
+    "Song 1:5–6; 6:13; passim"
+  ],
+  "blurb": "Primary voice of the Song—dark yet lovely, vineyard worker turned garden of delight. She initiates pursuit (1:2–4), seeks at night (3:1–4), and claims mutual belonging (2:16; 6:3; 7:10). Background & Solomon: The text names Solomon (1:1; 3:7–11; 8:11–12) and portrays the bridegroom with royal imagery; some read the woman as **Solomon’s beloved** (Shulammite ≈ ‘Shunammite’), others see her as independent of the king, even contrasting her personal vineyard with Solomon’s commercial vineyard (8:11–12). Either way, her agency and fidelity stand central—love is covenantal, voluntary, and resilient.",
+  "aka": [
+    "Shulammite",
+    "Beloved",
+    "Bride"
+  ],
+  "relations": {
+    "family": "brothers (guardians)",
+    "status": "vineyard-keeper; shepherdess-imagery"
+  },
+  "category": "character",
+  "id": "p.the-beloved.shulammite-woman--13ff7712",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Song of Songs": [
+      1
+    ]
+  }
+}

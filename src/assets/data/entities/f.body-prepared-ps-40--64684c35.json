@@ -1,0 +1,21 @@
+{
+  "name": "Body prepared (Ps 40)",
+  "type": "figure",
+  "category": "ot-psalm",
+  "references": [
+    "Heb 10:5-7"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Ps 40:6-8 LXX",
+      "type": "quote"
+    }
+  ],
+  "aka": [],
+  "id": "f.body-prepared-ps-40--64684c35",
+  "book_references": {
+    "Hebrews": [
+      10
+    ]
+  }
+}

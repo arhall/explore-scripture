@@ -1,0 +1,42 @@
+{
+  "name": "Logos (Word)",
+  "type": "figure",
+  "category": "christology",
+  "references": [
+    "John 1:1–18"
+  ],
+  "greek_terms": [
+    {
+      "term": "λόγος",
+      "gloss": "Word"
+    },
+    {
+      "term": "μονογενής",
+      "gloss": "only/one-of-a-kind"
+    },
+    {
+      "term": "σκηνόω",
+      "gloss": "to tabernacle"
+    }
+  ],
+  "cross_references": [
+    "Gen 1:1",
+    "Exod 25–40"
+  ],
+  "blurb": "Preexistent Word through whom all came to be; tabernacled among us; reveals the Father.",
+  "aka": [],
+  "id": "f.logos-word--d2bf8f38",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      1
+    ]
+  }
+}

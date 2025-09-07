@@ -1,0 +1,49 @@
+{
+  "book": "Matthew",
+  "chapter": 3,
+  "entity_count": 6,
+  "entities": [
+    {
+      "id": "t.son-of-god--960b6889",
+      "name": "Son of God",
+      "type": "title",
+      "role": "christological-title",
+      "refs_count": 5
+    },
+    {
+      "id": "p.jesus-of-nazareth--c4738d73",
+      "name": "Jesus of Nazareth",
+      "type": "person",
+      "role": "messiah",
+      "refs_count": 35
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "e.jordan--4586837c",
+      "name": "Jordan",
+      "type": "entity",
+      "role": "river",
+      "refs_count": 4
+    },
+    {
+      "id": "e.wilderness-desert--5581794f",
+      "name": "Wilderness/Desert",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 5
+    },
+    {
+      "id": "p.john-the-baptist--509f9f1e",
+      "name": "John the Baptist",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 6
+    }
+  ]
+}

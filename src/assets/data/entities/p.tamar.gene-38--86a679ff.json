@@ -1,0 +1,21 @@
+{
+  "name": "Tamar",
+  "type": "person",
+  "references": [
+    "Genesis 38"
+  ],
+  "blurb": "Denied justice within Judah’s household, Tamar secures her rights through a shrewd plan. Her twins, Perez and Zerah, continue Judah’s line toward David.",
+  "category": "narrative",
+  "cross_references": [
+    "Matthew 1:3"
+  ],
+  "id": "p.tamar.gene-38--86a679ff",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      38
+    ]
+  }
+}

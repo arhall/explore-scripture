@@ -1,0 +1,28 @@
+{
+  "book": "Luke",
+  "chapter": 17,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "e.samaria--fcae1760",
+      "name": "Samaria",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 5
+    },
+    {
+      "id": "g.ten-lepers-samaritan-thankful--4f677df1",
+      "name": "Ten Lepers (Samaritan thankful)",
+      "type": "group",
+      "role": "healed",
+      "refs_count": 1
+    },
+    {
+      "id": "f.kingdom-within-among-you--af2bf31b",
+      "name": "Kingdom within/among you",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1
+    }
+  ]
+}

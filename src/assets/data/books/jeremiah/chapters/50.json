@@ -1,0 +1,21 @@
+{
+  "book": "Jeremiah",
+  "chapter": 50,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "g.babylon--bb4be558",
+      "name": "Babylon",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 2
+    },
+    {
+      "id": "e.fall-of-babylon.jeremiah--139c5011",
+      "name": "Fall of Babylon (Jeremiah)",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1
+    }
+  ]
+}

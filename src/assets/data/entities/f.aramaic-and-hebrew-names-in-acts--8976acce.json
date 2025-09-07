@@ -1,0 +1,41 @@
+{
+  "name": "Aramaic and Hebrew names in Acts",
+  "type": "figure",
+  "category": "language",
+  "references": [
+    "Acts 1:19",
+    "Acts 9:36",
+    "Acts 13:6"
+  ],
+  "aramaic_terms": [
+    {
+      "term": "Ἀκελδαμά",
+      "gloss": "Field of Blood"
+    },
+    {
+      "term": "Ταβιθά",
+      "gloss": "Tabitha (Dorcas)"
+    },
+    {
+      "term": "Βαριησοῦς",
+      "gloss": "Bar-Jesus"
+    }
+  ],
+  "aka": [],
+  "id": "f.aramaic-and-hebrew-names-in-acts--8976acce",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      1,
+      9,
+      13
+    ]
+  }
+}

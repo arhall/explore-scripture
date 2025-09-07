@@ -1,0 +1,21 @@
+{
+  "id": "e.sorceries--c0a7e1d3",
+  "name": "Sorceries",
+  "type": "entity",
+  "references": [
+    "Nah 3:4"
+  ],
+  "category": "occult-practice",
+  "aka": [
+    "Enchantments"
+  ],
+  "blurb": "Nineveh’s manipulative arts—political/spiritual seduction—draw divine exposure and contempt.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      3
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Baptism for the dead",
+  "type": "figure",
+  "category": "difficult-text",
+  "references": [
+    "1 Cor 15:29"
+  ],
+  "aka": [],
+  "id": "f.baptism-for-the-dead--423bcf82",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "1 Corinthians": [
+      15
+    ]
+  }
+}

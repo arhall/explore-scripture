@@ -1,0 +1,21 @@
+{
+  "name": "Sargon II of Assyria",
+  "type": "person",
+  "references": [
+    "Isaiah 20:1"
+  ],
+  "blurb": "Takes Ashdod; Isaiah’s sign dramatizes Egypt/Cush’s futility.",
+  "relations": {
+    "empire": "Assyria"
+  },
+  "category": "emperor",
+  "id": "p.sargon-ii-of-assyria--8676b5f2",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Isaiah": [
+      20
+    ]
+  }
+}

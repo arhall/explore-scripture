@@ -1,0 +1,18 @@
+{
+  "id": "e.debt-usury--c2e6134e",
+  "name": "Debt/Usury",
+  "type": "entity",
+  "references": [
+    "Hab 2:6-8"
+  ],
+  "category": "economic-vice",
+  "blurb": "Predatory lending practices condemned by wisdom and law traditions.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      2
+    ]
+  }
+}

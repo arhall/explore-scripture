@@ -1,0 +1,19 @@
+{
+  "name": "Men of Shechem",
+  "type": "group",
+  "references": [
+    "Genesis 34"
+  ],
+  "blurb": "City collective entangled in deceit, circumcision, and slaughter—an anatomy of communal folly and rage.",
+  "category": "narrative",
+  "cross_references": [],
+  "id": "g.men-of-shechem.gene-34--969a7ee3",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      34
+    ]
+  }
+}

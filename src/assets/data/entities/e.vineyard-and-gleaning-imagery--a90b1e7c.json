@@ -1,0 +1,18 @@
+{
+  "id": "e.vineyard-and-gleaning-imagery--a90b1e7c",
+  "name": "Vineyard and gleaning imagery",
+  "type": "entity",
+  "references": [
+    "Micah 7:1"
+  ],
+  "category": "agrarian",
+  "blurb": "No grapes, no figs—harvest failures mirror moral famine.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      7
+    ]
+  }
+}

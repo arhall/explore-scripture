@@ -1,6 +1,6 @@
 /**
  * Advanced Search Engine for Bible Explorer
- * Provides unified search across books, chapters, characters, and categories
+ * Provides unified search across books, chapters, and categories
  * Features: Fuzzy matching, autocomplete, performance optimization
  */
 
@@ -78,24 +78,24 @@ class SearchEngine {
       // Load books data
       promises.push(this.fetchJSON('/assets/data/books.json').catch(() => null));
       
-      // Load characters data
-      promises.push(this.fetchJSON('/assets/data/characters.json').catch(() => null));
-      
       // Load categories data
       promises.push(this.fetchJSON('/assets/data/categories.json').catch(() => null));
       
-      const [booksData, charactersData, categoriesData] = await Promise.all(promises);
+      // Load entities data
+      promises.push(this.fetchJSON('/assets/data/entities-search.json').catch(() => null));
+      
+      const [booksData, categoriesData, entitiesData] = await Promise.all(promises);
       
       this.searchData = {
         books: booksData || [],
-        characters: charactersData || [],
-        categories: categoriesData || []
+        categories: categoriesData || [],
+        entities: entitiesData || []
       };
       
     } catch (error) {
       console.error('[SearchEngine] Failed to load search data:', error);
       // Initialize with empty data if loading fails
-      this.searchData = { books: [], characters: [], categories: [] };
+      this.searchData = { books: [], categories: [], entities: [] };
     }
   }
 
@@ -115,11 +115,11 @@ class SearchEngine {
     // Build books index
     this.buildBooksIndex();
     
-    // Build characters index  
-    this.buildCharactersIndex();
-    
     // Build categories index
     this.buildCategoriesIndex();
+    
+    // Build entities index
+    this.buildEntitiesIndex();
     
     console.log('[SearchEngine] Indices built successfully');
   }
@@ -177,36 +177,6 @@ class SearchEngine {
     console.log(`[SearchEngine] Books index: ${bookItems.length} items`);
   }
 
-  // Build index for characters
-  buildCharactersIndex() {
-    const characters = this.searchData.characters;
-    const characterItems = [];
-    
-    characters.forEach(character => {
-      characterItems.push({
-        id: `character-${character.slug}`,
-        type: 'character',
-        title: character.name,
-        subtitle: 'Biblical Character',
-        description: character.description || `A biblical character mentioned in ${character.appearances ? character.appearances.length : 'multiple'} books.`,
-        url: `/characters/${character.slug}/`,
-        searchText: this.buildSearchText([
-          character.name,
-          character.description,
-          character.testament,
-          character.category,
-          ...(character.keyWords || []),
-          ...(character.appearances || [])
-        ]),
-        relevanceBoost: 1.5,
-        testament: character.testament,
-        category: character.category
-      });
-    });
-    
-    this.indices.set('characters', characterItems);
-    console.log(`[SearchEngine] Characters index: ${characterItems.length} items`);
-  }
 
   // Build index for categories
   buildCategoriesIndex() {
@@ -235,6 +205,50 @@ class SearchEngine {
     
     this.indices.set('categories', categoryItems);
     console.log(`[SearchEngine] Categories index: ${categoryItems.length} items`);
+  }
+
+  // Build index for entities (biblical characters, places, etc.)
+  buildEntitiesIndex() {
+    const entities = this.searchData.entities || [];
+    const entityItems = [];
+    
+    entities.forEach(entity => {
+      entityItems.push({
+        id: `entity-${entity.id}`,
+        type: 'entity',
+        title: entity.name,
+        subtitle: `${entity.type} • ${entity.references} reference${entity.references !== 1 ? 's' : ''}`,
+        description: entity.blurb || `A ${entity.type} mentioned in ${entity.books.length} book${entity.books.length !== 1 ? 's' : ''}: ${entity.books.slice(0, 3).join(', ')}${entity.books.length > 3 ? '...' : ''}`,
+        url: entity.url,
+        searchText: entity.searchText,
+        relevanceBoost: this.getEntityRelevanceBoost(entity.type, entity.references),
+        entityType: entity.type,
+        referenceCount: entity.references,
+        books: entity.books,
+        category: entity.category
+      });
+    });
+    
+    this.indices.set('entities', entityItems);
+    console.log(`[SearchEngine] Entities index: ${entityItems.length} items`);
+  }
+
+  // Calculate relevance boost based on entity type and reference count
+  getEntityRelevanceBoost(entityType, referenceCount) {
+    const typeBoosts = {
+      'divine': 3.0,
+      'person': 2.5,
+      'place': 2.0,
+      'title': 1.8,
+      'group': 1.5,
+      'event': 1.3,
+      'figure': 1.0
+    };
+    
+    const baseBoost = typeBoosts[entityType] || 1.0;
+    const referenceBoost = Math.min(referenceCount / 10, 1.0); // Max 1.0 boost for references
+    
+    return baseBoost + referenceBoost;
   }
 
   // Build searchable text from multiple fields

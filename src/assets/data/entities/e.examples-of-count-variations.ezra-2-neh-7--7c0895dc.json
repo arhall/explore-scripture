@@ -1,0 +1,19 @@
+{
+  "name": "Examples of count variations (Ezra 2 ↔ Neh 7)",
+  "type": "entity",
+  "references": [
+    "Nehemiah 7:8–10; 7:13–18"
+  ],
+  "blurb": "Some totals differ slightly (scribal tradition/rounding). We annotate deltas at the global combine stage while retaining the single canonical ID per family.",
+  "category": "record",
+  "delta_note": "Handled during global dedup audit; IDs unchanged from Ezra 2",
+  "id": "e.examples-of-count-variations.ezra-2-neh-7--7c0895dc",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      7
+    ]
+  }
+}

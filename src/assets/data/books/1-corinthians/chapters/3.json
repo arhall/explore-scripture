@@ -1,0 +1,49 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 3,
+  "entity_count": 6,
+  "entities": [
+    {
+      "id": "e.temple--1d486079",
+      "name": "Temple",
+      "type": "entity",
+      "role": "cultic",
+      "refs_count": 8
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.you-are-god-s-temple-community--040cd111",
+      "name": "You are God’s temple (community)",
+      "type": "figure",
+      "role": "temple",
+      "refs_count": 1
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "f.i-planted-apollos-watered--f36026d7",
+      "name": "I planted, Apollos watered",
+      "type": "figure",
+      "role": "teamwork",
+      "refs_count": 1
+    },
+    {
+      "id": "f.wood-hay-stubble-testing--fe9c7dbc",
+      "name": "Wood–hay–stubble testing",
+      "type": "figure",
+      "role": "testing",
+      "refs_count": 1
+    }
+  ]
+}

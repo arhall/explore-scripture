@@ -1,0 +1,23 @@
+{
+  "name": "Berea mission",
+  "type": "figure",
+  "category": "mission",
+  "references": [
+    "Acts 17:10–15"
+  ],
+  "aka": [],
+  "id": "f.berea-mission--0246d0c3",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      17
+    ]
+  }
+}

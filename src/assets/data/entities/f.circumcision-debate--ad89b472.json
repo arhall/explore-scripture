@@ -1,0 +1,23 @@
+{
+  "name": "Circumcision debate",
+  "type": "figure",
+  "category": "controversy",
+  "references": [
+    "Acts 15:1–5"
+  ],
+  "aka": [],
+  "id": "f.circumcision-debate--ad89b472",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      15
+    ]
+  }
+}

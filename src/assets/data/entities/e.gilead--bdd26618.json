@@ -1,0 +1,18 @@
+{
+  "name": "Gilead",
+  "type": "entity",
+  "references": [
+    "Obadiah 1:19"
+  ],
+  "blurb": "Transjordanian region east of Jordan—symbol of a fully mended land.",
+  "category": "region",
+  "id": "e.gilead--bdd26618",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Obadiah": [
+      1
+    ]
+  }
+}

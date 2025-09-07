@@ -1,0 +1,18 @@
+{
+  "name": "Abner son of Ner",
+  "type": "person",
+  "references": [
+    "1 Samuel 14:50–51; 17:55; 26:5–16"
+  ],
+  "blurb": "Saul’s general—capable but entangled in dynastic decline; will later pivot in the civil war.",
+  "category": "narrative",
+  "id": "p.abner-son-of-ner--cfd72a69",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      14
+    ]
+  }
+}

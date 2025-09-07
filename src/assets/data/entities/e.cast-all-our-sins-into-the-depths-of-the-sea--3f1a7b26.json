@@ -1,0 +1,18 @@
+{
+  "id": "e.cast-all-our-sins-into-the-depths-of-the-sea--3f1a7b26",
+  "name": "Cast all our sins into the depths of the sea",
+  "type": "entity",
+  "references": [
+    "Micah 7:19"
+  ],
+  "category": "forgiveness",
+  "blurb": "Exodus-colored image of irreversible pardon—no dredging allowed.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      7
+    ]
+  }
+}

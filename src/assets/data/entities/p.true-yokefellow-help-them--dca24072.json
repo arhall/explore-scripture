@@ -1,0 +1,24 @@
+{
+  "name": "True yokefellow help them",
+  "type": "person",
+  "aka": [
+    "Syzygus",
+    "True yokefellow"
+  ],
+  "category": "appeal",
+  "references": [
+    "Phil 4:3"
+  ],
+  "id": "p.true-yokefellow-help-them--dca24072",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Philippians": [
+      4
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "book": "Malachi",
+  "chapter": 3,
+  "entity_count": 49,
+  "entities": [
+    {
+      "id": "e.temple--1d486079",
+      "name": "Temple",
+      "type": "entity",
+      "role": "cultic",
+      "refs_count": 8
+    },
+    {
+      "id": "p.priests--17ce1c8d",
+      "name": "Priests",
+      "type": "person",
+      "role": "cultic-staff",
+      "refs_count": 5
+    },
+    {
+      "id": "p.scribes-recorders--1980dd30",
+      "name": "Scribes/Recorders",
+      "type": "person",
+      "role": "administration",
+      "refs_count": 3
+    },
+    {
+      "id": "g.remnant--e6a8b099",
+      "name": "Remnant",
+      "type": "group",
+      "role": "community",
+      "refs_count": 2
+    },
+    {
+      "id": "p.those-who-fear-the-lord--b90180a8",
+      "name": "Those who fear the LORD",
+      "type": "person",
+      "role": "pious-group",
+      "refs_count": 1
+    },
+    {
+      "id": "p.messenger-of-the-covenant-figure-link--82b7bc42",
+      "name": "Messenger of the covenant (figure-link)",
+      "type": "person",
+      "role": "ambiguous-figure",
+      "refs_count": 1
+    },
+    {
+      "id": "g.robbers-of-god--63076f95",
+      "name": "Robbers of God",
+      "type": "group",
+      "role": "offenders",
+      "refs_count": 1
+    },
+    {
+      "id": "g.arrogant-&-evildoers--7acb38fc",
+      "name": "Arrogant & evildoers",
+      "type": "group",
+      "role": "ethical-collective",
+      "refs_count": 2
+    },
+    {
+      "id": "g.blessed-by-the-nations--56fa21f8",
+      "name": "Blessed by the nations",
+      "type": "group",
+      "role": "witness-result",
+      "refs_count": 1
+    },
+    {
+      "id": "d.the-messenger-of-the-covenant--cab4319d",
+      "name": "The messenger of the covenant",
+      "type": "divine",
+      "role": "theophany-title",
+      "refs_count": 1
+    }
+  ]
+}

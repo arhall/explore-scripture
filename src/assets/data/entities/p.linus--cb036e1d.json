@@ -1,0 +1,15 @@
+{
+  "name": "Linus",
+  "type": "person",
+  "category": "network",
+  "references": [
+    "2 Tim 4:9-22"
+  ],
+  "aka": [],
+  "id": "p.linus--cb036e1d",
+  "book_references": {
+    "2 Timothy": [
+      4
+    ]
+  }
+}

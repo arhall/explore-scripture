@@ -1,0 +1,19 @@
+{
+  "id": "e.ninevehs-walls--c1a6e0b4",
+  "name": "Nineveh’s walls",
+  "type": "entity",
+  "references": [
+    "Nah 3:8, 12–13"
+  ],
+  "category": "fortification",
+  "aka": [],
+  "blurb": "Monumental defenses imagined as ripe figs; they collapse when shaken, signaling the end of Assyrian security.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      3
+    ]
+  }
+}

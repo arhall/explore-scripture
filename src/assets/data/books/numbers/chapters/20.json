@@ -1,0 +1,35 @@
+{
+  "book": "Numbers",
+  "chapter": 20,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "p.aaron--cc77e332",
+      "name": "Aaron",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 6
+    },
+    {
+      "id": "e.meribah.waters-of-contention--f647b87c",
+      "name": "Meribah (waters of contention)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    },
+    {
+      "id": "t.king-of-edom.refuses-passage--15df3198",
+      "name": "King of Edom (refuses passage)",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

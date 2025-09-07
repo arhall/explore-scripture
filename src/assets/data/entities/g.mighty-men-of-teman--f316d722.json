@@ -1,0 +1,18 @@
+{
+  "name": "Mighty men of Teman (dismayed)",
+  "type": "group",
+  "references": [
+    "Obadiah 1:9"
+  ],
+  "blurb": "Warriors lose heart; courage evaporates when God sets the day.",
+  "category": "military",
+  "id": "g.mighty-men-of-teman--f316d722",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Obadiah": [
+      1
+    ]
+  }
+}

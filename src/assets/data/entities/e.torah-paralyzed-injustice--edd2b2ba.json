@@ -1,0 +1,18 @@
+{
+  "id": "e.torah-paralyzed-injustice--edd2b2ba",
+  "name": "Torah paralyzed/Injustice",
+  "type": "entity",
+  "references": [
+    "Hab 1:2-4"
+  ],
+  "category": "legal-failure",
+  "blurb": "Judicial breakdown where law is numbed and the wicked hem in the righteous.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      1
+    ]
+  }
+}

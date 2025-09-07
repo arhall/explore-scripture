@@ -1,0 +1,18 @@
+{
+  "name": "Rechabites",
+  "type": "group",
+  "references": [
+    "Jeremiah 35:1–19"
+  ],
+  "blurb": "Nomadic clan who obey their ancestor’s command by abstaining from wine and city life—embarrassing Judah by embodied obedience.",
+  "category": "model",
+  "id": "g.rechabites--604781ac",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      35
+    ]
+  }
+}

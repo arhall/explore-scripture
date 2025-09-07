@@ -1,0 +1,665 @@
+[
+  {
+    "id": "p.moses--2c0fba85",
+    "name": "Moses",
+    "type": "person",
+    "url": "/entities/p.moses--2c0fba85/",
+    "blurb": "Rescued from the Nile by Pharaoh’s daughter, raised in the court, then exiled to Midian after defending a Hebrew. At the burning bush he meets the God of the fathers; reluctant yet called, he confront",
+    "searchText": "moses person narrative rescued from the nile by pharaoh’s daughter, raised in the court, then exiled to midian after defending a hebrew. at the burning bush he meets the god of the fathers; reluctant yet called, he confronts pharaoh with signs and speeches, leads through the plagues, and brings israel to the sea. moses’ story in these chapters showcases divine compassion, judgment, and the birth of a nation. ",
+    "references": 11,
+    "books": [
+      "Exodus",
+      "Leviticus",
+      "Numbers",
+      "Deuteronomy",
+      "Matthew",
+      "Mark",
+      "Hebrews"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.phinehas--accbe6db",
+    "name": "Phinehas",
+    "type": "person",
+    "url": "/entities/p.phinehas--accbe6db/",
+    "blurb": "Son of Eleazar; later zealous for covenant fidelity.",
+    "searchText": "phinehas person genealogy son of eleazar; later zealous for covenant fidelity. ",
+    "references": 4,
+    "books": [
+      "Exodus",
+      "Leviticus",
+      "Joshua"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.abihu--fcf5dac6",
+    "name": "Abihu",
+    "type": "person",
+    "url": "/entities/p.abihu--fcf5dac6/",
+    "blurb": "Son of Aaron who participates in the covenant meal; later judged for strange fire.",
+    "searchText": "abihu person narrative son of aaron who participates in the covenant meal; later judged for strange fire. ",
+    "references": 3,
+    "books": [
+      "Exodus",
+      "Leviticus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.eleazar--b3d5a12a",
+    "name": "Eleazar",
+    "type": "person",
+    "url": "/entities/p.eleazar--b3d5a12a/",
+    "blurb": "Son of Aaron who will succeed him as priest; later father of Phinehas.",
+    "searchText": "eleazar person narrative son of aaron who will succeed him as priest; later father of phinehas. ",
+    "references": 3,
+    "books": [
+      "Exodus",
+      "Leviticus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.nadab--51b037c1",
+    "name": "Nadab",
+    "type": "person",
+    "url": "/entities/p.nadab--51b037c1/",
+    "blurb": "Eldest son of Aaron who ascends partway up Sinai; later dies for unauthorized fire—holiness is not casual.",
+    "searchText": "nadab person narrative eldest son of aaron who ascends partway up sinai; later dies for unauthorized fire—holiness is not casual. ",
+    "references": 3,
+    "books": [
+      "Exodus",
+      "Leviticus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.ithamar--6dbd7a25",
+    "name": "Ithamar",
+    "type": "person",
+    "url": "/entities/p.ithamar--6dbd7a25/",
+    "blurb": "Youngest son of Aaron appointed to priestly service; supervises parts of the tabernacle work.",
+    "searchText": "ithamar person narrative youngest son of aaron appointed to priestly service; supervises parts of the tabernacle work. ",
+    "references": 2,
+    "books": [
+      "Exodus",
+      "Leviticus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "e.bread-of-the-presence--74efe08b",
+    "name": "Bread of the Presence",
+    "type": "entity",
+    "url": "/entities/e.bread-of-the-presence--74efe08b/",
+    "blurb": "Twelve loaves set weekly before God—covenant table fellowship; priests eat the holy bread.",
+    "searchText": "bread of the presence entity ritual twelve loaves set weekly before god—covenant table fellowship; priests eat the holy bread. ",
+    "references": 2,
+    "books": [
+      "Leviticus",
+      "Hebrews"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "d.god-speaking-from-the-tent.yhwh--9f556ac4",
+    "name": "God (YHWH) speaking from the Tent",
+    "type": "divine",
+    "url": "/entities/d.god-speaking-from-the-tent.yhwh--9f556ac4/",
+    "blurb": "Leviticus opens with the LORD calling to Moses from the tent of meeting, signaling nearness with order. God’s speech structures worship, ethics, and community—holiness flowing from His character.",
+    "searchText": "god (yhwh) speaking from the tent divine narrative leviticus opens with the lord calling to moses from the tent of meeting, signaling nearness with order. god’s speech structures worship, ethics, and community—holiness flowing from his character. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.community-witnesses.execution--c061beef",
+    "name": "Community witnesses (execution)",
+    "type": "group",
+    "url": "/entities/g.community-witnesses.execution--c061beef/",
+    "blurb": "Those who heard the blasphemy lay hands and cast the first stones—underscoring communal accountability in capital cases.",
+    "searchText": "community witnesses (execution) group narrative those who heard the blasphemy lay hands and cast the first stones—underscoring communal accountability in capital cases. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.foreigners-sojourners.gerim--ed359621",
+    "name": "Foreigners / Sojourners (Gerim)",
+    "type": "group",
+    "url": "/entities/g.foreigners-sojourners.gerim--ed359621/",
+    "blurb": "Non-Israelites dwelling among Israel who share protections and obligations. Israel’s ethic remembers Egypt: love the stranger as yourself.",
+    "searchText": "foreigners / sojourners (gerim) group narrative non-israelites dwelling among israel who share protections and obligations. israel’s ethic remembers egypt: love the stranger as yourself. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.mediums-and-necromancers--5a821d4f",
+    "name": "Mediums and necromancers",
+    "type": "group",
+    "url": "/entities/g.mediums-and-necromancers--5a821d4f/",
+    "blurb": "Practitioners barred from Israel’s life with God; their counsel competes with the LORD’s revelation and defiles the people.",
+    "searchText": "mediums and necromancers group narrative practitioners barred from israel’s life with god; their counsel competes with the lord’s revelation and defiles the people. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.people-of-israel--fa06221e",
+    "name": "People of Israel",
+    "type": "group",
+    "url": "/entities/g.people-of-israel--fa06221e/",
+    "blurb": "Corporate character called to be holy as the LORD is holy. Leviticus trains Israel to embody God’s justice, mercy, purity, and neighbor-love.",
+    "searchText": "people of israel group narrative corporate character called to be holy as the lord is holy. leviticus trains israel to embody god’s justice, mercy, purity, and neighbor-love. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.shelomith-daughter-of-dibri-of-the-tribe-of-dan--22637e2c",
+    "name": "Shelomith daughter of Dibri, of the tribe of Dan",
+    "type": "person",
+    "url": "/entities/p.shelomith-daughter-of-dibri-of-the-tribe-of-dan--22637e2c/",
+    "blurb": "Named as the mother in the blasphemy case—rare recognition of a woman’s lineage in case law. Her mention frames the community’s responsibility in God’s court.",
+    "searchText": "shelomith daughter of dibri, of the tribe of dan person narrative named as the mother in the blasphemy case—rare recognition of a woman’s lineage in case law. her mention frames the community’s responsibility in god’s court. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.the-blasphemer.half-israelite-half-egyptian--58e0a9f0",
+    "name": "The blasphemer (half-Israelite, half-Egyptian)",
+    "type": "person",
+    "url": "/entities/p.the-blasphemer.half-israelite-half-egyptian--58e0a9f0/",
+    "blurb": "Man who curses the Name in a quarrel; held in custody until the LORD rules. The case establishes that God’s holiness and justice apply equally to native and sojourner.",
+    "searchText": "the blasphemer (half-israelite, half-egyptian) person narrative man who curses the name in a quarrel; held in custody until the lord rules. the case establishes that god’s holiness and justice apply equally to native and sojourner. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "e.altar-of-burnt-offering--3f775d1b",
+    "name": "Altar of burnt offering",
+    "type": "entity",
+    "url": "/entities/e.altar-of-burnt-offering--3f775d1b/",
+    "blurb": "Meeting point of substitution and consecration—blood dashed, parts burned.",
+    "searchText": "altar of burnt offering entity ritual meeting point of substitution and consecration—blood dashed, parts burned. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.bodily-discharges.female--b1988d14",
+    "name": "Bodily discharges (female)",
+    "type": "entity",
+    "url": "/entities/e.bodily-discharges.female--b1988d14/",
+    "blurb": "Menstruation and abnormal flows—uncleanness with compassionate boundaries and restoration.",
+    "searchText": "bodily discharges (female) entity ritual menstruation and abnormal flows—uncleanness with compassionate boundaries and restoration. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.bodily-discharges.male--7a8fb8bc",
+    "name": "Bodily discharges (male)",
+    "type": "entity",
+    "url": "/entities/e.bodily-discharges.male--7a8fb8bc/",
+    "blurb": "Flows render a man unclean until evening or with offerings—holiness reaches intimate life.",
+    "searchText": "bodily discharges (male) entity ritual flows render a man unclean until evening or with offerings—holiness reaches intimate life. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.burnt-offering.olah--619e0828",
+    "name": "Burnt Offering (ʿOlah)",
+    "type": "entity",
+    "url": "/entities/e.burnt-offering.olah--619e0828/",
+    "blurb": "Whole offering ascending in smoke—total consecration. Signals surrender and atonement; entirely consumed for God.",
+    "searchText": "burnt offering (ʿolah) entity ritual whole offering ascending in smoke—total consecration. signals surrender and atonement; entirely consumed for god. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.childbirth-purification--71deec8f",
+    "name": "Childbirth purification",
+    "type": "entity",
+    "url": "/entities/e.childbirth-purification--71deec8f/",
+    "blurb": "Ritual periods and offerings after birth signal that life-events intersect with holy space—no moral stigma, but ordered access.",
+    "searchText": "childbirth purification entity ritual ritual periods and offerings after birth signal that life-events intersect with holy space—no moral stigma, but ordered access. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.clean-and-unclean-animals--8d1b528b",
+    "name": "Clean and unclean animals",
+    "type": "entity",
+    "url": "/entities/e.clean-and-unclean-animals--8d1b528b/",
+    "blurb": "Symbolic taxonomy teaching discernment and distinctiveness; food becomes catechesis in holiness.",
+    "searchText": "clean and unclean animals entity ritual symbolic taxonomy teaching discernment and distinctiveness; food becomes catechesis in holiness. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.covenant-blessings--73c7d984",
+    "name": "Covenant blessings",
+    "type": "entity",
+    "url": "/entities/e.covenant-blessings--73c7d984/",
+    "blurb": "Rain, peace, fruitfulness, and God’s dwelling—shalom as covenant outcome.",
+    "searchText": "covenant blessings entity ritual rain, peace, fruitfulness, and god’s dwelling—shalom as covenant outcome. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.covenant-curses--e659b336",
+    "name": "Covenant curses",
+    "type": "entity",
+    "url": "/entities/e.covenant-curses--e659b336/",
+    "blurb": "Escalating discipline toward exile—aimed at repentance and eventual remembrance.",
+    "searchText": "covenant curses entity ritual escalating discipline toward exile—aimed at repentance and eventual remembrance. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.day-of-atonement.yom-kippur--99b77069",
+    "name": "Day of Atonement (Yom Kippur)",
+    "type": "entity",
+    "url": "/entities/e.day-of-atonement.yom-kippur--99b77069/",
+    "blurb": "Annual rite of cleansing for sanctuary and people—high priest enters the Most Holy Place with blood, confesses over goats, and secures communal renewal.",
+    "searchText": "day of atonement (yom kippur) entity ritual annual rite of cleansing for sanctuary and people—high priest enters the most holy place with blood, confesses over goats, and secures communal renewal. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.drink-offering.libation--fa001918",
+    "name": "Drink offering (libation)",
+    "type": "entity",
+    "url": "/entities/e.drink-offering.libation--fa001918/",
+    "blurb": "Poured accompaniment to grain/burnt offerings—joy offered to God.",
+    "searchText": "drink offering (libation) entity ritual poured accompaniment to grain/burnt offerings—joy offered to god. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.feast-of-booths.sukkot--eb768823",
+    "name": "Feast of Booths (Sukkot)",
+    "type": "entity",
+    "url": "/entities/e.feast-of-booths.sukkot--eb768823/",
+    "blurb": "Week of living in booths—reenacting wilderness dependence and joy.",
+    "searchText": "feast of booths (sukkot) entity ritual week of living in booths—reenacting wilderness dependence and joy. e.feast-of-booths-sukkot--16dace51",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.feast-of-trumpets.yom-teruah--c7eaec8a",
+    "name": "Feast of Trumpets (Yom Teruah)",
+    "type": "entity",
+    "url": "/entities/e.feast-of-trumpets.yom-teruah--c7eaec8a/",
+    "blurb": "Rest with trumpet blasts—summons to sabbath joy and reflection.",
+    "searchText": "feast of trumpets (yom teruah) entity ritual rest with trumpet blasts—summons to sabbath joy and reflection. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.feast-of-unleavened-bread--197a3bac",
+    "name": "Feast of Unleavened Bread",
+    "type": "entity",
+    "url": "/entities/e.feast-of-unleavened-bread--197a3bac/",
+    "blurb": "A week of unleavened bread—embodied haste and purity; household holiness.",
+    "searchText": "feast of unleavened bread entity ritual a week of unleavened bread—embodied haste and purity; household holiness. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.feast-of-weeks.shavuot--51d774bb",
+    "name": "Feast of Weeks (Shavuot)",
+    "type": "entity",
+    "url": "/entities/e.feast-of-weeks.shavuot--51d774bb/",
+    "blurb": "Seven weeks from Firstfruits; bread with leaven; generosity to poor emphasized.",
+    "searchText": "feast of weeks (shavuot) entity ritual seven weeks from firstfruits; bread with leaven; generosity to poor emphasized. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.firstfruits.reishit-katzir--59eff5cf",
+    "name": "Firstfruits (Reishit Katzir)",
+    "type": "entity",
+    "url": "/entities/e.firstfruits.reishit-katzir--59eff5cf/",
+    "blurb": "Offering the first sheaf—gratitude that sanctifies the whole harvest.",
+    "searchText": "firstfruits (reishit katzir) entity ritual offering the first sheaf—gratitude that sanctifies the whole harvest. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.gleanings-for-the-poor-and-the-foreigner--3e15df07",
+    "name": "Gleanings for the poor and the foreigner",
+    "type": "entity",
+    "url": "/entities/e.gleanings-for-the-poor-and-the-foreigner--3e15df07/",
+    "blurb": "Edges and fallen grapes left—economy of mercy woven into harvest.",
+    "searchText": "gleanings for the poor and the foreigner entity ethics edges and fallen grapes left—economy of mercy woven into harvest. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.grain-offering.minchah--545899de",
+    "name": "Grain Offering (Minchah)",
+    "type": "entity",
+    "url": "/entities/e.grain-offering.minchah--545899de/",
+    "blurb": "Gift of flour, oil, and frankincense—memorial portion burned, remainder sustaining priests. Worship entwines generosity and provision.",
+    "searchText": "grain offering (minchah) entity ritual gift of flour, oil, and frankincense—memorial portion burned, remainder sustaining priests. worship entwines generosity and provision. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.guilt-offering.asham--cc37508a",
+    "name": "Guilt Offering (Asham)",
+    "type": "entity",
+    "url": "/entities/e.guilt-offering.asham--cc37508a/",
+    "blurb": "Reparation offering addressing desecration and harm with restitution—atonement tied to making wrongs right.",
+    "searchText": "guilt offering (asham) entity ritual reparation offering addressing desecration and harm with restitution—atonement tied to making wrongs right. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.handling-carcasses-and-creeping-things--17b69e6f",
+    "name": "Handling carcasses and creeping things",
+    "type": "entity",
+    "url": "/entities/e.handling-carcasses-and-creeping-things--17b69e6f/",
+    "blurb": "Touching carcasses conveys impurity—pedagogy in discernment.",
+    "searchText": "handling carcasses and creeping things entity ritual touching carcasses conveys impurity—pedagogy in discernment. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.heave-offering--a8285eae",
+    "name": "Heave offering",
+    "type": "entity",
+    "url": "/entities/e.heave-offering--a8285eae/",
+    "blurb": "Raised contribution allocated to priests—supporting sacred service.",
+    "searchText": "heave offering entity ritual raised contribution allocated to priests—supporting sacred service. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.holiness-code.love-of-neighbor--493bb89b",
+    "name": "Holiness code (love of neighbor)",
+    "type": "entity",
+    "url": "/entities/e.holiness-code.love-of-neighbor--493bb89b/",
+    "blurb": "Comprehensive vision of everyday holiness: honest weights, generous gleaning, impartial justice, and love for neighbor and stranger.",
+    "searchText": "holiness code (love of neighbor) entity ethics comprehensive vision of everyday holiness: honest weights, generous gleaning, impartial justice, and love for neighbor and stranger. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.holy-things-of-the-lord--e40b2232",
+    "name": "Holy things of the LORD",
+    "type": "entity",
+    "url": "/entities/e.holy-things-of-the-lord--e40b2232/",
+    "blurb": "Sanctified gifts, foods, and objects set apart for God—mishandling them incurs guilt, showing holiness is precious and protected.",
+    "searchText": "holy things of the lord entity ritual sanctified gifts, foods, and objects set apart for god—mishandling them incurs guilt, showing holiness is precious and protected. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.honest-weights-and-measures--53cb0258",
+    "name": "Honest weights and measures",
+    "type": "entity",
+    "url": "/entities/e.honest-weights-and-measures--53cb0258/",
+    "blurb": "Justice in commerce mirrors God’s righteousness; fraud desecrates community.",
+    "searchText": "honest weights and measures entity ethics justice in commerce mirrors god’s righteousness; fraud desecrates community. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.jubilee-year.yovel--29491bdb",
+    "name": "Jubilee year (Yovel)",
+    "type": "entity",
+    "url": "/entities/e.jubilee-year.yovel--29491bdb/",
+    "blurb": "Proclaims liberty, returns land, frees debt-slaves—resetting Israel’s life toward justice, family wholeness, and reliance on God.",
+    "searchText": "jubilee year (yovel) entity ritual proclaims liberty, returns land, frees debt-slaves—resetting israel’s life toward justice, family wholeness, and reliance on god. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.kinsman-redeemer.goel--5096cf8d",
+    "name": "Kinsman-redeemer (Go’el)",
+    "type": "entity",
+    "url": "/entities/e.kinsman-redeemer.goel--5096cf8d/",
+    "blurb": "Relative who restores land/freedom—family justice in God’s economy.",
+    "searchText": "kinsman-redeemer (go’el) entity ritual relative who restores land/freedom—family justice in god’s economy. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.lamp-perpetual-light--d54fbf3c",
+    "name": "Lamp / perpetual light",
+    "type": "entity",
+    "url": "/entities/e.lamp-perpetual-light--d54fbf3c/",
+    "blurb": "Olive oil keeps the lamp burning—unceasing witness to God’s presence.",
+    "searchText": "lamp / perpetual light entity ritual olive oil keeps the lamp burning—unceasing witness to god’s presence. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.love-your-neighbor-as-yourself--6ccb2bed",
+    "name": "Love your neighbor as yourself",
+    "type": "entity",
+    "url": "/entities/e.love-your-neighbor-as-yourself--6ccb2bed/",
+    "blurb": "Core ethical summit of the Torah—grounds Jesus’ summary of the law.",
+    "searchText": "love your neighbor as yourself entity ethics core ethical summit of the torah—grounds jesus’ summary of the law. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.ordination-offering-ram-of-ordination--b0452675",
+    "name": "Ordination Offering / Ram of Ordination",
+    "type": "entity",
+    "url": "/entities/e.ordination-offering-ram-of-ordination--b0452675/",
+    "blurb": "Consecration rites for priests—blood on ear, thumb, toe—devotion of hearing, doing, walking. Worship leadership flows from sanctified life.",
+    "searchText": "ordination offering / ram of ordination entity ritual consecration rites for priests—blood on ear, thumb, toe—devotion of hearing, doing, walking. worship leadership flows from sanctified life. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.passover.pesach--e77f0d4d",
+    "name": "Passover (Pesach)",
+    "type": "entity",
+    "url": "/entities/e.passover.pesach--e77f0d4d/",
+    "blurb": "Spring memorial of God’s deliverance; lamb and unleavened bread catechize redemption.",
+    "searchText": "passover (pesach) entity ritual spring memorial of god’s deliverance; lamb and unleavened bread catechize redemption. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.priestly-holiness-regulations--6125dc5e",
+    "name": "Priestly holiness regulations",
+    "type": "entity",
+    "url": "/entities/e.priestly-holiness-regulations--6125dc5e/",
+    "blurb": "Additional boundaries for priests and for sacrificial animals/gifts—leaders model wholeness before God and people.",
+    "searchText": "priestly holiness regulations entity ethics additional boundaries for priests and for sacrificial animals/gifts—leaders model wholeness before god and people. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.prohibition-of-blood-consumption--74021739",
+    "name": "Prohibition of blood consumption",
+    "type": "entity",
+    "url": "/entities/e.prohibition-of-blood-consumption--74021739/",
+    "blurb": "Life is in the blood; reserved for atonement—eating blood is forbidden.",
+    "searchText": "prohibition of blood consumption entity ritual life is in the blood; reserved for atonement—eating blood is forbidden. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.revering-parents-and-sabbaths--1aacf019",
+    "name": "Revering parents and Sabbaths",
+    "type": "entity",
+    "url": "/entities/e.revering-parents-and-sabbaths--1aacf019/",
+    "blurb": "Household piety pairs with sacred time—holiness starts at home.",
+    "searchText": "revering parents and sabbaths entity ethics household piety pairs with sacred time—holiness starts at home. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.sabbath-year.shemitah--4d4ada7a",
+    "name": "Sabbath year (Shemitah)",
+    "type": "entity",
+    "url": "/entities/e.sabbath-year.shemitah--4d4ada7a/",
+    "blurb": "Land rests every seventh year—ecology, economy, and trust braided into worship.",
+    "searchText": "sabbath year (shemitah) entity ritual land rests every seventh year—ecology, economy, and trust braided into worship. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.sabbaths-and-appointed-feasts--cf65521f",
+    "name": "Sabbaths and appointed feasts",
+    "type": "entity",
+    "url": "/entities/e.sabbaths-and-appointed-feasts--cf65521f/",
+    "blurb": "Sacred calendar structuring Israel’s time around redemption and dependence—weekly rest and yearly convocations.",
+    "searchText": "sabbaths and appointed feasts entity ritual sacred calendar structuring israel’s time around redemption and dependence—weekly rest and yearly convocations. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.sexual-holiness-code--4eb81db4",
+    "name": "Sexual holiness code",
+    "type": "entity",
+    "url": "/entities/e.sexual-holiness-code--4eb81db4/",
+    "blurb": "Boundaries safeguarding family, neighbor, and worship from exploitation and idolatry—holiness expressed in relationships.",
+    "searchText": "sexual holiness code entity ethics boundaries safeguarding family, neighbor, and worship from exploitation and idolatry—holiness expressed in relationships. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.sin-offering.chatat--807c7def",
+    "name": "Sin Offering (Chatat)",
+    "type": "entity",
+    "url": "/entities/e.sin-offering.chatat--807c7def/",
+    "blurb": "Purification offering that cleanses sanctuary and people from unintended sins—teaching that sin pollutes and must be dealt with.",
+    "searchText": "sin offering (chatat) entity ritual purification offering that cleanses sanctuary and people from unintended sins—teaching that sin pollutes and must be dealt with. ",
+    "references": 1,
+    "books": [
+      "Leviticus"
+    ],
+    "category": "ritual"
+  }
+]

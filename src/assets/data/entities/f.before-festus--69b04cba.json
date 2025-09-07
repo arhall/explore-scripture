@@ -1,0 +1,23 @@
+{
+  "name": "Before Festus",
+  "type": "figure",
+  "category": "trial",
+  "references": [
+    "Acts 25:1–12"
+  ],
+  "aka": [],
+  "id": "f.before-festus--69b04cba",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      25
+    ]
+  }
+}

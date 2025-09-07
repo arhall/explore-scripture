@@ -1,0 +1,34 @@
+{
+  "name": "Asher",
+  "type": "person",
+  "references": [
+    "Genesis 30:13"
+  ],
+  "blurb": "Son of Zilpah; tribe noted for abundance.",
+  "relations": {
+    "parents": [
+      "Jacob (Israel)",
+      "Zilpah"
+    ],
+    "children": [
+      "Imnah",
+      "Ishvah",
+      "Ishvi",
+      "Beriah",
+      "Serah (sister)"
+    ]
+  },
+  "category": "narrative",
+  "cross_references": [
+    "Deuteronomy 33:24"
+  ],
+  "id": "p.asher.gene-30-13--8f5c4759",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      30
+    ]
+  }
+}

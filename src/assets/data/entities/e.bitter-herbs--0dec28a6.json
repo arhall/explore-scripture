@@ -1,0 +1,22 @@
+{
+  "name": "Bitter herbs",
+  "type": "entity",
+  "references": [
+    "Exodus 12:8"
+  ],
+  "blurb": "Taste bondage to remember grace.",
+  "category": "ritual",
+  "cross_references": [
+    "1 Corinthians 5:7–8",
+    "Luke 22:15"
+  ],
+  "id": "e.bitter-herbs--0dec28a6",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      12
+    ]
+  }
+}

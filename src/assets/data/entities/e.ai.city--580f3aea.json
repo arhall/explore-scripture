@@ -1,0 +1,19 @@
+{
+  "name": "Ai (city)",
+  "type": "entity",
+  "references": [
+    "Joshua 7–8"
+  ],
+  "blurb": "Initial defeat due to sin, then victory by stratagem; altar and Torah-reading follow, binding victory to obedience.",
+  "category": "place",
+  "id": "e.ai.city--580f3aea",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joshua": [
+      7,
+      8
+    ]
+  }
+}

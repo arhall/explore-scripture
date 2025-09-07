@@ -1,0 +1,28 @@
+{
+  "name": "Adam–Christ typology",
+  "type": "figure",
+  "category": "typology",
+  "references": [
+    "Rom 5:12–21"
+  ],
+  "greek_terms": [
+    {
+      "term": "ἐφ’ ᾧ πάντες ἥμαρτον",
+      "gloss": "because/in whom all sinned (interpretive)"
+    }
+  ],
+  "blurb": "Adam’s trespass vs Christ’s gift; reign of death vs reign in life.",
+  "aka": [],
+  "id": "f.adam-christ-typology--b051304f",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      5
+    ]
+  }
+}

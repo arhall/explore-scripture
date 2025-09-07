@@ -1,0 +1,658 @@
+[
+  {
+    "id": "e.samaria--fcae1760",
+    "name": "Samaria",
+    "type": "entity",
+    "url": "/entities/e.samaria--fcae1760/",
+    "blurb": "Capital city, cult center.",
+    "searchText": "samaria entity city capital city, cult center. ",
+    "references": 5,
+    "books": [
+      "Hosea",
+      "Amos",
+      "Obadiah",
+      "Luke"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "g.edom.desolate-wilderness--6976d032",
+    "name": "Edom (desolate wilderness)",
+    "type": "group",
+    "url": "/entities/g.edom.desolate-wilderness--6976d032/",
+    "blurb": "Kinsfolk-turned-enemy condemned for bloodguilt.",
+    "searchText": "edom (desolate wilderness) group nation kinsfolk-turned-enemy condemned for bloodguilt. ",
+    "references": 3,
+    "books": [
+      "Joel",
+      "Amos",
+      "Obadiah"
+    ],
+    "category": "nation"
+  },
+  {
+    "id": "g.ephraim--5c67cb1c",
+    "name": "Ephraim",
+    "type": "group",
+    "url": "/entities/g.ephraim--5c67cb1c/",
+    "blurb": "Tribal metonym for northern kingdom.",
+    "searchText": "ephraim group tribe tribal metonym for northern kingdom. ",
+    "references": 2,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "tribe"
+  },
+  {
+    "id": "e.mount-zion.in-tension-with-samaria--f68f4d61",
+    "name": "Mount Zion (in tension with Samaria)",
+    "type": "entity",
+    "url": "/entities/e.mount-zion.in-tension-with-samaria--f68f4d61/",
+    "blurb": "Security in Zion is also rebuked—religious privilege cannot shield injustice.",
+    "searchText": "mount zion (in tension with samaria) entity mount security in zion is also rebuked—religious privilege cannot shield injustice. ",
+    "references": 2,
+    "books": [
+      "Amos",
+      "Obadiah"
+    ],
+    "category": "mount"
+  },
+  {
+    "id": "g.all-nations-under-judgment--7eab34d0",
+    "name": "All nations under judgment",
+    "type": "group",
+    "url": "/entities/g.all-nations-under-judgment--7eab34d0/",
+    "blurb": "Edom becomes a case study for a universal principle—the Day of YHWH is near upon all nations.",
+    "searchText": "all nations under judgment group nations edom becomes a case study for a universal principle—the day of yhwh is near upon all nations. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "nations"
+  },
+  {
+    "id": "g.benjamin--cc9e4fff",
+    "name": "Benjamin",
+    "type": "group",
+    "url": "/entities/g.benjamin--cc9e4fff/",
+    "blurb": "Southern tribe bordering Jerusalem; receives Gilead in the oracle’s map.",
+    "searchText": "benjamin group tribe southern tribe bordering jerusalem; receives gilead in the oracle’s map. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "tribe"
+  },
+  {
+    "id": "g.benjamin-shall-possess-gilead--edc90e94",
+    "name": "Benjamin shall possess Gilead",
+    "type": "group",
+    "url": "/entities/g.benjamin-shall-possess-gilead--edc90e94/",
+    "blurb": "Eastern territories assigned to Benjamin—a symbolic stitching of the land across the Jordan.",
+    "searchText": "benjamin shall possess gilead group settlers eastern territories assigned to benjamin—a symbolic stitching of the land across the jordan. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "settlers"
+  },
+  {
+    "id": "g.confederates-allies-who-deceive-edom--96ea923a",
+    "name": "Confederates/allies who deceive Edom",
+    "type": "group",
+    "url": "/entities/g.confederates-allies-who-deceive-edom--96ea923a/",
+    "blurb": "Those who ate your bread set a trap—diplomacy boomerangs; realpolitik cannot save against divine justice.",
+    "searchText": "confederates/allies who deceive edom group allies those who ate your bread set a trap—diplomacy boomerangs; realpolitik cannot save against divine justice. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "allies"
+  },
+  {
+    "id": "g.deliverers-ascend-mount-zion.saviors--c86ef078",
+    "name": "Deliverers (saviors) ascend Mount Zion",
+    "type": "group",
+    "url": "/entities/g.deliverers-ascend-mount-zion.saviors--c86ef078/",
+    "blurb": "A collegium of leaders executes judgment on Mount Esau—shared rule under God.",
+    "searchText": "deliverers (saviors) ascend mount zion group leaders a collegium of leaders executes judgment on mount esau—shared rule under god. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "leaders"
+  },
+  {
+    "id": "g.exiles-of-israel--19ca7f24",
+    "name": "Exiles of Israel (Canaan to Zarephath)",
+    "type": "group",
+    "url": "/entities/g.exiles-of-israel--19ca7f24/",
+    "blurb": "Western/northern diaspora returns—from Phoenician Zarephath to the land of Canaan.",
+    "searchText": "exiles of israel (canaan to zarephath) group diaspora western/northern diaspora returns—from phoenician zarephath to the land of canaan. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "diaspora"
+  },
+  {
+    "id": "g.exiles-of-jerusalem-in-sepharad--03e1d6f9",
+    "name": "Exiles of Jerusalem in Sepharad",
+    "type": "group",
+    "url": "/entities/g.exiles-of-jerusalem-in-sepharad--03e1d6f9/",
+    "blurb": "Far‑flung deportees (location debated: Spain? Sardis?) are included in the great return.",
+    "searchText": "exiles of jerusalem in sepharad group diaspora far‑flung deportees (location debated: spain? sardis?) are included in the great return. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "diaspora"
+  },
+  {
+    "id": "g.house-of-jacob--22e00a66",
+    "name": "House of Jacob",
+    "type": "group",
+    "url": "/entities/g.house-of-jacob--22e00a66/",
+    "blurb": "Corporate Israel pictured as a household to be restored to holiness and repossession.",
+    "searchText": "house of jacob group israel corporate israel pictured as a household to be restored to holiness and repossession. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "israel"
+  },
+  {
+    "id": "g.house-of-joseph--e0642c59",
+    "name": "House of Joseph (northern tribes)",
+    "type": "group",
+    "url": "/entities/g.house-of-joseph--e0642c59/",
+    "blurb": "Northern remnant folded into restoration—unity beyond the split monarchy.",
+    "searchText": "house of joseph (northern tribes) group israel northern remnant folded into restoration—unity beyond the split monarchy. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "israel"
+  },
+  {
+    "id": "g.mighty-men-of-teman--f316d722",
+    "name": "Mighty men of Teman (dismayed)",
+    "type": "group",
+    "url": "/entities/g.mighty-men-of-teman--f316d722/",
+    "blurb": "Warriors lose heart; courage evaporates when God sets the day.",
+    "searchText": "mighty men of teman (dismayed) group military warriors lose heart; courage evaporates when god sets the day. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "military"
+  },
+  {
+    "id": "g.possessors-from-the-negev.mountain-of-esau--ee567444",
+    "name": "Possessors from the Negev (mountain of Esau)",
+    "type": "group",
+    "url": "/entities/g.possessors-from-the-negev.mountain-of-esau--ee567444/",
+    "blurb": "Southern communities reclaim Edomite highlands—geopolitical reversal.",
+    "searchText": "possessors from the negev (mountain of esau) group settlers southern communities reclaim edomite highlands—geopolitical reversal. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "settlers"
+  },
+  {
+    "id": "g.possessors-of-the-hill-country-of-ephraim-and-samaria--c30d9ff3",
+    "name": "Possessors of the hill country of Ephraim and Samaria",
+    "type": "group",
+    "url": "/entities/g.possessors-of-the-hill-country-of-ephraim-and-samaria--c30d9ff3/",
+    "blurb": "Northern heartlands re‑incorporated—diaspora wounds healed.",
+    "searchText": "possessors of the hill country of ephraim and samaria group settlers northern heartlands re‑incorporated—diaspora wounds healed. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "settlers"
+  },
+  {
+    "id": "g.possessors-of-the-shephelah.philistines--c4eb0d37",
+    "name": "Possessors of the Shephelah (Philistines)",
+    "type": "group",
+    "url": "/entities/g.possessors-of-the-shephelah.philistines--c4eb0d37/",
+    "blurb": "Foothill dwellers extend claim into Philistine territory—restoration widens the borders.",
+    "searchText": "possessors of the shephelah (philistines) group settlers foothill dwellers extend claim into philistine territory—restoration widens the borders. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "settlers"
+  },
+  {
+    "id": "g.those-at-peace-with-you-trusted-friends--09fe6b97",
+    "name": "Those at peace with you / trusted friends",
+    "type": "group",
+    "url": "/entities/g.those-at-peace-with-you-trusted-friends--09fe6b97/",
+    "blurb": "Inner‑circle partners lead Edom to the border; betrayal from within undermines fortress pride.",
+    "searchText": "those at peace with you / trusted friends group allies inner‑circle partners lead edom to the border; betrayal from within undermines fortress pride. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "allies"
+  },
+  {
+    "id": "g.wise-men-of-teman--54df4679",
+    "name": "Wise men of Teman (to be cut off)",
+    "type": "group",
+    "url": "/entities/g.wise-men-of-teman--54df4679/",
+    "blurb": "Edom’s famed sages—decision‑makers whose counsel dries up under judgment.",
+    "searchText": "wise men of teman (to be cut off) group wisdom edom’s famed sages—decision‑makers whose counsel dries up under judgment. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "wisdom"
+  },
+  {
+    "id": "p.obadiah.prophet--4ac0ef81",
+    "name": "Obadiah (prophet)",
+    "type": "person",
+    "url": "/entities/p.obadiah.prophet--4ac0ef81/",
+    "blurb": "Name means ‘Servant of YHWH.’ Apart from the superscription, the prophet remains anonymous—his authority rests on the vision, not on pedigree.",
+    "searchText": "obadiah (prophet) person prophet name means ‘servant of yhwh.’ apart from the superscription, the prophet remains anonymous—his authority rests on the vision, not on pedigree. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "prophet"
+  },
+  {
+    "id": "e.as-you-have-done-it-shall-be-done-to-you--fc438ca8",
+    "name": "As you have done, it shall be done to you",
+    "type": "entity",
+    "url": "/entities/e.as-you-have-done-it-shall-be-done-to-you--fc438ca8/",
+    "blurb": "Lex talionis scaled to history; moral causality threads through geopolitics.",
+    "searchText": "as you have done, it shall be done to you entity justice lex talionis scaled to history; moral causality threads through geopolitics. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "justice"
+  },
+  {
+    "id": "e.deliverance-on-mount-zion--6b769f38",
+    "name": "Deliverance on Mount Zion",
+    "type": "entity",
+    "url": "/entities/e.deliverance-on-mount-zion--6b769f38/",
+    "blurb": "Holiness and rescue intertwine—salvation is not escape from holiness but its fruit.",
+    "searchText": "deliverance on mount zion entity restoration holiness and rescue intertwine—salvation is not escape from holiness but its fruit. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "restoration"
+  },
+  {
+    "id": "e.do-not-boast-in-the-day-of-distress--3bd4cfe1",
+    "name": "Do not boast in the day of distress",
+    "type": "entity",
+    "url": "/entities/e.do-not-boast-in-the-day-of-distress--3bd4cfe1/",
+    "blurb": "Public boasting weaponizes humiliation; pride recruits a crowd.",
+    "searchText": "do not boast in the day of distress entity charge public boasting weaponizes humiliation; pride recruits a crowd. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "charge"
+  },
+  {
+    "id": "e.do-not-enter-the-gate-of-my-people--ee619499",
+    "name": "Do not enter the gate of my people",
+    "type": "entity",
+    "url": "/entities/e.do-not-enter-the-gate-of-my-people--ee619499/",
+    "blurb": "Looting sacred space violates sanctuary and neighbor; the city’s gate becomes a crime scene.",
+    "searchText": "do not enter the gate of my people entity charge looting sacred space violates sanctuary and neighbor; the city’s gate becomes a crime scene. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "charge"
+  },
+  {
+    "id": "e.do-not-gloat-over-your-brothers-day--70bd46b1",
+    "name": "Do not gloat over your brother’s day",
+    "type": "entity",
+    "url": "/entities/e.do-not-gloat-over-your-brothers-day--70bd46b1/",
+    "blurb": "Schadenfreude against kin magnifies guilt; covenant ethics protect the vulnerable—even when judged.",
+    "searchText": "do not gloat over your brother’s day entity charge schadenfreude against kin magnifies guilt; covenant ethics protect the vulnerable—even when judged. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "charge"
+  },
+  {
+    "id": "e.do-not-hand-over-survivors--2ed1f254",
+    "name": "Do not hand over survivors",
+    "type": "entity",
+    "url": "/entities/e.do-not-hand-over-survivors--2ed1f254/",
+    "blurb": "Extradition of escapees collaborates with the oppressor, compounding bloodguilt.",
+    "searchText": "do not hand over survivors entity charge extradition of escapees collaborates with the oppressor, compounding bloodguilt. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "charge"
+  },
+  {
+    "id": "e.do-not-look-with-glee-on-his-misfortune--2121edd8",
+    "name": "Do not look with glee on his misfortune",
+    "type": "entity",
+    "url": "/entities/e.do-not-look-with-glee-on-his-misfortune--2121edd8/",
+    "blurb": "Voyeurism of suffering is complicity; gaze becomes participation.",
+    "searchText": "do not look with glee on his misfortune entity charge voyeurism of suffering is complicity; gaze becomes participation. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "charge"
+  },
+  {
+    "id": "e.do-not-loot-his-wealth-in-the-day-of-calamity--be5a11ff",
+    "name": "Do not loot his wealth in the day of calamity",
+    "type": "entity",
+    "url": "/entities/e.do-not-loot-his-wealth-in-the-day-of-calamity--be5a11ff/",
+    "blurb": "Economic predation completes the moral collapse—plunder as opportunism.",
+    "searchText": "do not loot his wealth in the day of calamity entity charge economic predation completes the moral collapse—plunder as opportunism. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "charge"
+  },
+  {
+    "id": "e.do-not-rejoice-over-judahs-people-in-the-day-of-their-ruin--049d1991",
+    "name": "Do not rejoice over Judah’s people in the day of their ruin",
+    "type": "entity",
+    "url": "/entities/e.do-not-rejoice-over-judahs-people-in-the-day-of-their-ruin--049d1991/",
+    "blurb": "Joy at disaster profanes solidarity; rejoicing turns to reaping.",
+    "searchText": "do not rejoice over judah’s people in the day of their ruin entity charge joy at disaster profanes solidarity; rejoicing turns to reaping. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "charge"
+  },
+  {
+    "id": "e.do-not-stand-at-the-crossroads-to-cut-off-fugitives--c503d189",
+    "name": "Do not stand at the crossroads to cut off fugitives",
+    "type": "entity",
+    "url": "/entities/e.do-not-stand-at-the-crossroads-to-cut-off-fugitives--c503d189/",
+    "blurb": "Ambush of refugees turns retreat into slaughter; geography weaponized.",
+    "searchText": "do not stand at the crossroads to cut off fugitives entity charge ambush of refugees turns retreat into slaughter; geography weaponized. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "charge"
+  },
+  {
+    "id": "e.drinking-the-cup-on-the-holy-mountain--bde80f3c",
+    "name": "Drinking the cup on the holy mountain",
+    "type": "entity",
+    "url": "/entities/e.drinking-the-cup-on-the-holy-mountain--bde80f3c/",
+    "blurb": "Those who drank on Zion (in triumph) will drink judgment to the dregs; revelry flips to ruin.",
+    "searchText": "drinking the cup on the holy mountain entity cup those who drank on zion (in triumph) will drink judgment to the dregs; revelry flips to ruin. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "cup"
+  },
+  {
+    "id": "e.eagles-nest-boast--e3e36ca1",
+    "name": "Eagle’s nest boast",
+    "type": "entity",
+    "url": "/entities/e.eagles-nest-boast--e3e36ca1/",
+    "blurb": "Even if you set your nest among the stars, from there I will bring you down—anti‑Babel warning recast for Edom.",
+    "searchText": "eagle’s nest boast entity image even if you set your nest among the stars, from there i will bring you down—anti‑babel warning recast for edom. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "image"
+  },
+  {
+    "id": "e.gilead--bdd26618",
+    "name": "Gilead",
+    "type": "entity",
+    "url": "/entities/e.gilead--bdd26618/",
+    "blurb": "Transjordanian region east of Jordan—symbol of a fully mended land.",
+    "searchText": "gilead entity region transjordanian region east of jordan—symbol of a fully mended land. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "region"
+  },
+  {
+    "id": "e.heavenly-report-and-messenger-to-the-nations--1cbb3b02",
+    "name": "Heavenly report and messenger to the nations",
+    "type": "entity",
+    "url": "/entities/e.heavenly-report-and-messenger-to-the-nations--1cbb3b02/",
+    "blurb": "Divine council imagery: a report is heard, a messenger goes out—God stirs an international response to Edom.",
+    "searchText": "heavenly report and messenger to the nations entity council divine council imagery: a report is heard, a messenger goes out—god stirs an international response to edom. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "council"
+  },
+  {
+    "id": "e.holiness-territory.holy-hill-holy-people--c3a375c8",
+    "name": "Holiness & territory (holy hill, holy people)",
+    "type": "entity",
+    "url": "/entities/e.holiness-territory.holy-hill-holy-people--c3a375c8/",
+    "blurb": "Holiness is not retreat but renewal; land and people are re‑ordered by sanctity.",
+    "searchText": "holiness & territory (holy hill, holy people) entity theology holiness is not retreat but renewal; land and people are re‑ordered by sanctity. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "e.house-of-esau-stubble--4bd18e3a",
+    "name": "House of Esau stubble",
+    "type": "entity",
+    "url": "/entities/e.house-of-esau-stubble--4bd18e3a/",
+    "blurb": "Combustible pride meets covenant flame; no survivor from Esau—hyperbolic finality of judgment oracle.",
+    "searchText": "house of esau stubble entity image combustible pride meets covenant flame; no survivor from esau—hyperbolic finality of judgment oracle. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "image"
+  },
+  {
+    "id": "e.house-of-jacob-a-fire-house-of-joseph-a-flame--4fcb6cbc",
+    "name": "House of Jacob a fire; House of Joseph a flame",
+    "type": "entity",
+    "url": "/entities/e.house-of-jacob-a-fire-house-of-joseph-a-flame--4fcb6cbc/",
+    "blurb": "Dual image of reunified Israel as purifying fire against Esau’s stubble.",
+    "searchText": "house of jacob a fire; house of joseph a flame entity image dual image of reunified israel as purifying fire against esau’s stubble. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "image"
+  },
+  {
+    "id": "e.house-of-jacob-shall-possess-their-possessions--a4887668",
+    "name": "House of Jacob shall possess their possessions",
+    "type": "entity",
+    "url": "/entities/e.house-of-jacob-shall-possess-their-possessions--a4887668/",
+    "blurb": "Reversal of dispossession; covenant inheritance restored by divine verdict.",
+    "searchText": "house of jacob shall possess their possessions entity inheritance reversal of dispossession; covenant inheritance restored by divine verdict. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "inheritance"
+  },
+  {
+    "id": "e.jerusalem-zion.refuge-and-holiness--ea0bf562",
+    "name": "Jerusalem/Zion (refuge and holiness)",
+    "type": "entity",
+    "url": "/entities/e.jerusalem-zion.refuge-and-holiness--ea0bf562/",
+    "blurb": "Mount Zion becomes a sanctuary and a base for repossession; holiness is the engine of recovery.",
+    "searchText": "jerusalem/zion (refuge and holiness) entity zion mount zion becomes a sanctuary and a base for repossession; holiness is the engine of recovery. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "zion"
+  },
+  {
+    "id": "e.kinship-ethics.brotherhood-obligation--06120607",
+    "name": "Kinship ethics (brotherhood obligation)",
+    "type": "entity",
+    "url": "/entities/e.kinship-ethics.brotherhood-obligation--06120607/",
+    "blurb": "To harm a brother is to attack God’s covenant design; fratricide is sacrilege.",
+    "searchText": "kinship ethics (brotherhood obligation) entity ethic to harm a brother is to attack god’s covenant design; fratricide is sacrilege. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "ethic"
+  },
+  {
+    "id": "e.mount-esau-seir.high-places--5e0df6fa",
+    "name": "Mount Esau / Seir (high places)",
+    "type": "entity",
+    "url": "/entities/e.mount-esau-seir.high-places--5e0df6fa/",
+    "blurb": "Edom’s mountainous stronghold—geography misread as invincibility; God will bring down the proud.",
+    "searchText": "mount esau / seir (high places) entity landform edom’s mountainous stronghold—geography misread as invincibility; god will bring down the proud. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "landform"
+  },
+  {
+    "id": "e.mount-esau.seir--e7caf109",
+    "name": "Mount Esau",
+    "type": "entity",
+    "url": "/entities/e.mount-esau.seir--e7caf109/",
+    "blurb": "Stage of judgment for the deliverers; last bastion of Edomite pride.",
+    "searchText": "mount esau entity landform stage of judgment for the deliverers; last bastion of edomite pride. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "landform"
+  },
+  {
+    "id": "e.negev--2c02de1c",
+    "name": "Negev (South)",
+    "type": "entity",
+    "url": "/entities/e.negev--2c02de1c/",
+    "blurb": "Arid southlands whose communities become frontier possessors.",
+    "searchText": "negev (south) entity region arid southlands whose communities become frontier possessors. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "region"
+  },
+  {
+    "id": "e.no-survivor-for-esau.oracle-hyperbole--81884ede",
+    "name": "No survivor for Esau (oracle hyperbole)",
+    "type": "entity",
+    "url": "/entities/e.no-survivor-for-esau.oracle-hyperbole--81884ede/",
+    "blurb": "Prophetic totalizing language to underline finality of judgment on systemic evil.",
+    "searchText": "no survivor for esau (oracle hyperbole) entity rhetoric prophetic totalizing language to underline finality of judgment on systemic evil. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "rhetoric"
+  },
+  {
+    "id": "e.pride-before-the-fall.theology-of-humility--ad1b36b3",
+    "name": "Pride before the fall (theology of humility)",
+    "type": "entity",
+    "url": "/entities/e.pride-before-the-fall.theology-of-humility--ad1b36b3/",
+    "blurb": "Obadiah crystallizes the axiom that pride blinds and isolates; humility is realism before God.",
+    "searchText": "pride before the fall (theology of humility) entity theology obadiah crystallizes the axiom that pride blinds and isolates; humility is realism before god. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "e.pride-deceives-you.rock-dwellers--024f4785",
+    "name": "Pride deceives you (rock‑dwellers)",
+    "type": "entity",
+    "url": "/entities/e.pride-deceives-you.rock-dwellers--024f4785/",
+    "blurb": "Edom trusts in altitude, alliances, and cunning. Pride is a theological hallucination that misreads reality.",
+    "searchText": "pride deceives you (rock‑dwellers) entity vice edom trusts in altitude, alliances, and cunning. pride is a theological hallucination that misreads reality. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "vice"
+  },
+  {
+    "id": "e.reap-what-you-sow.measure-returned--8663e1f5",
+    "name": "Reap what you sow (measure returned)",
+    "type": "entity",
+    "url": "/entities/e.reap-what-you-sow.measure-returned--8663e1f5/",
+    "blurb": "Moral boomerang—actions return enlarged; just recompense governs nations.",
+    "searchText": "reap what you sow (measure returned) entity theology moral boomerang—actions return enlarged; just recompense governs nations. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "e.seir--e718f73b",
+    "name": "Seir",
+    "type": "entity",
+    "url": "/entities/e.seir--e718f73b/",
+    "blurb": "Mountainous region synonymous with Edom—crags mistaken for castles.",
+    "searchText": "seir entity landform mountainous region synonymous with edom—crags mistaken for castles. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "landform"
+  },
+  {
+    "id": "e.sepharad--d5813001",
+    "name": "Sepharad",
+    "type": "entity",
+    "url": "/entities/e.sepharad--d5813001/",
+    "blurb": "Exilic toponym—site of Judean diaspora; exact ID debated.",
+    "searchText": "sepharad entity diaspora exilic toponym—site of judean diaspora; exact id debated. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "diaspora"
+  },
+  {
+    "id": "e.shephelah--edb03a36",
+    "name": "Shephelah (foothills)",
+    "type": "entity",
+    "url": "/entities/e.shephelah--edb03a36/",
+    "blurb": "Transition zone between hill country and coast—launchpad for reclaiming Philistia.",
+    "searchText": "shephelah (foothills) entity region transition zone between hill country and coast—launchpad for reclaiming philistia. ",
+    "references": 1,
+    "books": [
+      "Obadiah"
+    ],
+    "category": "region"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "name": "Keturah",
+  "type": "person",
+  "references": [
+    "Genesis 25:1–4"
+  ],
+  "blurb": "Later wife/concubine of Abraham whose sons populate regions to the east, showing Abraham’s fruitfulness beyond Isaac and Ishmael.",
+  "relations": {
+    "spouse_of": [
+      "Abram (Abraham)"
+    ],
+    "children": [
+      "Zimran",
+      "Jokshan",
+      "Medan",
+      "Midian",
+      "Ishbak",
+      "Shuah"
+    ]
+  },
+  "category": "narrative",
+  "cross_references": [
+    "1 Chronicles 1:32–33"
+  ],
+  "id": "p.keturah.gene-25-1-4--5745f996",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      25
+    ]
+  }
+}

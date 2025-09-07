@@ -31,10 +31,6 @@
   <!-- Module Loader (handles all other JS loading) -->
   <script src="/assets/module-loader.js"></script>
   
-  <!-- OpenTelemetry Web SDK (loaded lazily via module loader) -->
-  <link rel="preload" href="https://unpkg.com/@opentelemetry/api@1.7.0/build/esm/index.js" as="script" crossorigin>
-  <link rel="preload" href="https://unpkg.com/@opentelemetry/sdk-web@1.19.0/build/esm/index.js" as="script" crossorigin>
-  <link rel="preload" href="https://unpkg.com/@opentelemetry/auto-instrumentations-web@0.35.0/build/esm/index.js" as="script" crossorigin>
 </head>
 <body>
   <div class="container">
@@ -42,17 +38,16 @@
       <a class="nav-brand" href="/">Bible Explorer</a>
       <div class="nav-links">
         <a href="/categories/" class="nav-link {% if page.url == '/categories/' %}active{% endif %}">Sections</a>
-        <a href="/characters/" class="nav-link {% if page.url.startsWith('/characters/') %}active{% endif %}">Characters</a>
         <a href="/gospel-thread/" class="nav-link {% if page.url == '/gospel-thread/' %}active{% endif %}">Gospel Thread</a>
         <a href="/links/" class="nav-link {% if page.url == '/links/' %}active{% endif %}">Links</a>
-        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-          <span class="theme-icon">🌙</span>
-        </button>
         <button class="font-size-toggle" onclick="toggleFontSizeControls()" aria-label="Toggle font size controls">
           <span class="font-size-icon">Aa</span>
         </button>
         <button class="high-contrast-toggle" onclick="toggleHighContrast()" aria-label="Toggle high contrast mode">
           <span class="high-contrast-icon">◻</span>
+        </button>
+        <button class="theme-toggle-nav" onclick="toggleThemeDropdown()" aria-label="Change theme">
+          <span class="theme-icon">◈</span>
         </button>
         <button class="recents-bookmarks-toggle" onclick="toggleRecentsBookmarks()" aria-label="Toggle recent items and bookmarks">
           <span class="recents-icon">★</span>
@@ -240,6 +235,18 @@
       
       updateUI();
       return !isBookmarked;
+    }
+
+    function isBookmarked(url) {
+      return bookmarkedItems.some(item => item.url === url);
+    }
+
+    function updateBookmarkButton(bookmarked) {
+      const bookmarkButton = document.querySelector('[data-bookmark-button]');
+      if (bookmarkButton) {
+        bookmarkButton.classList.toggle('bookmarked', bookmarked);
+        bookmarkButton.setAttribute('aria-pressed', bookmarked.toString());
+      }
     }
 
     function updateUI() {
@@ -436,18 +443,18 @@
       }
     }
 
-    // Theme functionality (handled by theme-manager.js)
-    function toggleTheme() {
-      // This will be handled by the theme manager module when it loads
-      if (window.themeManager && window.themeManager.toggleTheme) {
-        window.themeManager.toggleTheme();
-      }
-    }
+    // Theme functionality is handled by theme-manager.js
 
     function toggleHighContrast() {
       // This will be handled by the theme manager module when it loads
       if (window.themeManager && window.themeManager.toggleHighContrast) {
         window.themeManager.toggleHighContrast();
+      }
+    }
+    
+    function toggleThemeDropdown() {
+      if (window.themeManager && window.themeManager.toggleDropdown) {
+        window.themeManager.toggleDropdown();
       }
     }
 

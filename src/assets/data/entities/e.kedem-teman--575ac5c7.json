@@ -1,0 +1,18 @@
+{
+  "id": "e.kedem-teman--575ac5c7",
+  "name": "Kedem/Teman",
+  "type": "entity",
+  "references": [
+    "Hab 3:3"
+  ],
+  "category": "geography",
+  "blurb": "From the south/east the Holy One comes—storm-theophany geography shared with Sinai traditions.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      3
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Tubal-cain",
+  "type": "person",
+  "references": [
+    "Genesis 4:22"
+  ],
+  "blurb": "Forger of bronze and iron—early metallurgist whose craft advances human culture despite moral decline.",
+  "relations": {
+    "parents": [
+      "Lamech (descendant of Cain)",
+      "Zillah"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.tubal-cain.gene-4-22--c70b226a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      4
+    ]
+  }
+}

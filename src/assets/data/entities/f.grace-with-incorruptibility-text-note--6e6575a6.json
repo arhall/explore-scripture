@@ -1,0 +1,22 @@
+{
+  "name": "Grace with incorruptibility (text-note)",
+  "type": "figure",
+  "category": "textual-notes",
+  "references": [
+    "Eph 6:24"
+  ],
+  "note": "Phrase ‘with incorruptibility’ (ἐν ἀφθαρσίᾳ) varies; scope and attachment debated.",
+  "aka": [],
+  "id": "f.grace-with-incorruptibility-text-note--6e6575a6",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      6
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Fear progression (afraid → exceedingly afraid → fear YHWH greatly)",
+  "type": "entity",
+  "references": [
+    "Jonah 1:10,16"
+  ],
+  "blurb": "Narrative scales fear into worship; terror matures into reverence.",
+  "category": "motif",
+  "id": "e.fear-progression.afraid-exceedingly-afraid-fear-yhwh-greatly--2b2e933f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jonah": [
+      1
+    ]
+  }
+}

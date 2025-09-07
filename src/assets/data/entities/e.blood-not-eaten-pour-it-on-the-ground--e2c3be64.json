@@ -1,0 +1,21 @@
+{
+  "name": "Blood not eaten; pour it on the ground",
+  "type": "entity",
+  "references": [
+    "Deuteronomy 12:16,23–25"
+  ],
+  "blurb": "Reverence for life extends the Levitical blood ethic into daily meals in the land.",
+  "category": "ritual",
+  "cross_references": [
+    "Leviticus 17:10–14"
+  ],
+  "id": "e.blood-not-eaten-pour-it-on-the-ground--e2c3be64",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Deuteronomy": [
+      12
+    ]
+  }
+}

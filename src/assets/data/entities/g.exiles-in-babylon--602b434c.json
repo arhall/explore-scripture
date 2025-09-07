@@ -1,0 +1,18 @@
+{
+  "name": "Exiles in Babylon",
+  "type": "group",
+  "references": [
+    "Jeremiah 29"
+  ],
+  "blurb": "Recipients of Jeremiah’s letter to build, plant, marry, seek the city’s shalom—exile as long obedience.",
+  "category": "diaspora",
+  "id": "g.exiles-in-babylon--602b434c",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      29
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Dating (debated)",
+  "type": "entity",
+  "references": [
+    "Joel (overview)"
+  ],
+  "blurb": "Scholars place Joel anywhere from 9th–5th century BCE. Internal cues (no king named; temple central; mention of Greeks) often suggest a post‑exilic or later monarchic context. We retain canonical theology while noting the debate.",
+  "category": "intro",
+  "id": "e.dating.debated--83ab32a2",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

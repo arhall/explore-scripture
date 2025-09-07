@@ -1,0 +1,27 @@
+{
+  "name": "Speak truth (Zech 8:16)",
+  "type": "figure",
+  "category": "ethic",
+  "references": [
+    "Eph 4:25"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Zech 8:16",
+      "type": "quotation"
+    }
+  ],
+  "aka": [],
+  "id": "f.speak-truth-zech-8-16--4f5995a1",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      4
+    ]
+  }
+}

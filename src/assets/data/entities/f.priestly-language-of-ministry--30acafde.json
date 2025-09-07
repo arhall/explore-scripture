@@ -1,0 +1,27 @@
+{
+  "name": "Priestly language of ministry",
+  "type": "figure",
+  "category": "priestly-metaphor",
+  "references": [
+    "Rom 15:16"
+  ],
+  "greek_terms": [
+    {
+      "term": "λειτουργός",
+      "gloss": "minister/priestly servant"
+    }
+  ],
+  "aka": [],
+  "id": "f.priestly-language-of-ministry--30acafde",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      15
+    ]
+  }
+}

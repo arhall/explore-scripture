@@ -1,0 +1,18 @@
+{
+  "id": "e.we-will-walk-in-the-name-of-the-lord--a7f3e2c1",
+  "name": "We will walk in the name of the LORD",
+  "type": "entity",
+  "references": [
+    "Micah 4:5"
+  ],
+  "category": "identity",
+  "blurb": "Covenant distinctiveness affirmed amidst pluralism.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      4
+    ]
+  }
+}

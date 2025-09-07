@@ -1,0 +1,26 @@
+{
+  "name": "Mary (mother of James and Joseph)",
+  "type": "person",
+  "category": "witness",
+  "references": [
+    "Matt 27:56",
+    "Matt 28:1"
+  ],
+  "blurb": "Faithful female disciple at cross and tomb—quiet steadfastness.",
+  "aka": [],
+  "id": "p.mary-mother-of-james-and-joseph--5aece911",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      27,
+      28
+    ]
+  }
+}

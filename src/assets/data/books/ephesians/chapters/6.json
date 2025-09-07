@@ -1,0 +1,77 @@
+{
+  "book": "Ephesians",
+  "chapter": 6,
+  "entity_count": 30,
+  "entities": [
+    {
+      "id": "f.pray-for-boldness-to-proclaim-the-mystery--c232f3f9",
+      "name": "Pray for boldness to proclaim the mystery",
+      "type": "figure",
+      "role": "prayer",
+      "refs_count": 1
+    },
+    {
+      "id": "f.armor-piece-shoes-of-readiness-of-the-gospel-of-peace--fe0a4283",
+      "name": "Armor piece: Shoes of readiness of the gospel of peace",
+      "type": "figure",
+      "role": "armor",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.armor-piece-belt-of-truth--bcd968f3",
+      "name": "Armor piece: Belt of truth",
+      "type": "figure",
+      "role": "armor",
+      "refs_count": 1
+    },
+    {
+      "id": "f.take-up-the-armor-to-stand--8bdf3d6a",
+      "name": "Take up the armor to stand",
+      "type": "figure",
+      "role": "armor",
+      "refs_count": 1
+    },
+    {
+      "id": "f.armor-piece-breastplate-of-righteousness--d7dafc65",
+      "name": "Armor piece: Breastplate of righteousness",
+      "type": "figure",
+      "role": "armor",
+      "refs_count": 1
+    },
+    {
+      "id": "f.keep-alert-with-perseverance--84162202",
+      "name": "Keep alert with perseverance",
+      "type": "figure",
+      "role": "watchfulness",
+      "refs_count": 1
+    },
+    {
+      "id": "f.honor-father-and-mother-with-promise--597f47c0",
+      "name": "Honor father and mother (with promise)",
+      "type": "figure",
+      "role": "household-code",
+      "refs_count": 1
+    },
+    {
+      "id": "f.whole-armor-of-god--103263ae",
+      "name": "Whole armor of God",
+      "type": "figure",
+      "role": "armor",
+      "refs_count": 1
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 24
+    }
+  ]
+}

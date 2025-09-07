@@ -1,0 +1,24 @@
+{
+  "name": "Textual note: Acts 15:34",
+  "type": "figure",
+  "category": "textual-notes",
+  "references": [
+    "Acts 15:34"
+  ],
+  "note": "Some manuscripts add that Silas remained in Antioch.",
+  "aka": [],
+  "id": "f.textual-note-acts-15-34--f4588dc1",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      15
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Breaking of bread (practice)",
+  "type": "figure",
+  "category": "community",
+  "references": [
+    "Acts 2:42,46",
+    "Acts 20:7,11"
+  ],
+  "blurb": "Common meals and Eucharistic practice in house gatherings; first day meeting in Troas.",
+  "aka": [],
+  "id": "f.breaking-of-bread-practice--2e261312",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      2,
+      20
+    ]
+  }
+}

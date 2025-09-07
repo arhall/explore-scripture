@@ -1,0 +1,63 @@
+{
+  "book": "Job",
+  "chapter": 42,
+  "entity_count": 8,
+  "entities": [
+    {
+      "id": "e.jobs-final-confession.i-had-heard-now-my-eye-sees--f38c4b41",
+      "name": "Job’s final confession (‘I had heard… now my eye sees’)",
+      "type": "entity",
+      "role": "spirituality",
+      "refs_count": 1
+    },
+    {
+      "id": "e.yhwhs-verdict-on-the-friends--41d3b10c",
+      "name": "YHWH’s verdict on the friends",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1
+    },
+    {
+      "id": "e.atoning-sacrifices-offered-via-jobs-priesthood--f2b2d352",
+      "name": "Atoning sacrifices offered via Job’s priesthood",
+      "type": "entity",
+      "role": "worship",
+      "refs_count": 1
+    },
+    {
+      "id": "e.restoration-double-portion.livestock--fb520fb2",
+      "name": "Restoration double portion (livestock)",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1
+    },
+    {
+      "id": "g.jobs-daughters-jemimah-keziah-keren-happuch--17a280f5",
+      "name": "Job’s daughters: Jemimah, Keziah, Keren-happuch",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.jobs-sons.after-restoration--a149bb29",
+      "name": "Job’s sons (after restoration)",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1
+    },
+    {
+      "id": "g.relatives-and-acquaintances-who-had-known-him-before--ea8eea6b",
+      "name": "Relatives and acquaintances who had known him before",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.jobs-lifespan-and-legacy--a53b701b",
+      "name": "Job’s lifespan and legacy",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1
+    }
+  ]
+}

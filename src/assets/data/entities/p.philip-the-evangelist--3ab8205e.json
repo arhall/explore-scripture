@@ -1,0 +1,27 @@
+{
+  "name": "Philip the Evangelist",
+  "type": "person",
+  "category": "evangelist",
+  "references": [
+    "Acts 6:5",
+    "Acts 8:5–13",
+    "Acts 21:8"
+  ],
+  "aka": [],
+  "id": "p.philip-the-evangelist--3ab8205e",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      6,
+      8,
+      21
+    ]
+  }
+}

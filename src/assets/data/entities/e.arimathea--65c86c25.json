@@ -1,0 +1,24 @@
+{
+  "name": "Arimathea",
+  "type": "entity",
+  "category": "town",
+  "references": [
+    "Matt 27:57"
+  ],
+  "blurb": "Hometown marker of Joseph; minor geography within passion narrative.",
+  "aka": [],
+  "id": "e.arimathea--65c86c25",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      27
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Clement",
+  "type": "person",
+  "category": "coworker",
+  "references": [
+    "Phil 4:3"
+  ],
+  "note": "Identity with Clement of Rome is unproven.",
+  "aka": [],
+  "id": "p.clement--b75b588b",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Philippians": [
+      4
+    ]
+  }
+}

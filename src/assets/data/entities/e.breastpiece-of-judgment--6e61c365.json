@@ -1,0 +1,21 @@
+{
+  "name": "Breastpiece of judgment",
+  "type": "entity",
+  "references": [
+    "Exodus 28:15–30"
+  ],
+  "blurb": "Urim/Thummim over the heart.",
+  "category": "priesthood",
+  "cross_references": [
+    "Leviticus 8"
+  ],
+  "id": "e.breastpiece-of-judgment--6e61c365",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      28
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Unknown feast (John 5:1)",
+  "type": "figure",
+  "category": "festival",
+  "references": [
+    "John 5:1"
+  ],
+  "blurb": "Unspecified feast of the Jews.",
+  "aka": [],
+  "id": "f.unknown-feast-john-5-1--d38a5e47",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      5
+    ]
+  }
+}

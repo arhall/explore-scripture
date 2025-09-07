@@ -1,0 +1,27 @@
+{
+  "name": "Sheba (Jokshan)",
+  "type": "person",
+  "references": [
+    "Genesis 25:3–4"
+  ],
+  "blurb": "Descendant of Jokshan; branch of Abraham’s Keturah-line.",
+  "relations": {
+    "parents": [
+      "Jokshan"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "1 Kings 10:1–13"
+  ],
+  "id": "p.sheba.jokshan.gene-25-3-4--426f8001",
+  "canonical_id": "p.sheba.joktan.gene-10-26-29--1ce633dc",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      25
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 1,
+  "entity_count": 9,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "e.corinth--56a50221",
+      "name": "Corinth",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 4
+    },
+    {
+      "id": "e.cenchreae--10d2a1aa",
+      "name": "Cenchreae",
+      "type": "entity",
+      "role": "port-city",
+      "refs_count": 2
+    },
+    {
+      "id": "f.calling-not-many-wise--10988ec1",
+      "name": "Calling: not many wise",
+      "type": "figure",
+      "role": "calling",
+      "refs_count": 1
+    },
+    {
+      "id": "p.sosthenes-co-sender--34452041",
+      "name": "Sosthenes (co-sender)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1
+    },
+    {
+      "id": "f.party-slogans-i-am-of--2d9fc0d3",
+      "name": "Party slogans (I am of...)",
+      "type": "figure",
+      "role": "division",
+      "refs_count": 1
+    },
+    {
+      "id": "p.gaius-host--8d1c0b0d",
+      "name": "Gaius (host)",
+      "type": "person",
+      "role": "host",
+      "refs_count": 2
+    },
+    {
+      "id": "f.word-of-the-cross-vs-wisdom--1f98ee2c",
+      "name": "Word of the cross vs wisdom",
+      "type": "figure",
+      "role": "paradox",
+      "refs_count": 1
+    },
+    {
+      "id": "g.chloe-s-people-report--9e25283b",
+      "name": "Chloe’s people (report)",
+      "type": "group",
+      "role": "reporters",
+      "refs_count": 1
+    }
+  ]
+}

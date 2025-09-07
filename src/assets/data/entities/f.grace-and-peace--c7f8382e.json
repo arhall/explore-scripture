@@ -1,0 +1,25 @@
+{
+  "name": "Grace and peace",
+  "type": "figure",
+  "category": "epistolary",
+  "references": [
+    "Eph 1:2",
+    "Philem 3"
+  ],
+  "aka": [],
+  "id": "f.grace-and-peace--c7f8382e",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      1
+    ],
+    "Philemon": [
+      3
+    ]
+  }
+}

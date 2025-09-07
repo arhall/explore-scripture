@@ -1,0 +1,21 @@
+{
+  "name": "do not admit a charge without two or three witnesses",
+  "type": "figure",
+  "category": "procedure",
+  "references": [
+    "1 Tim 5:19"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Deut 19:15",
+      "type": "allusion"
+    }
+  ],
+  "aka": [],
+  "id": "f.do-not-admit-a-charge-without-two-or-three-witnesses--939a0712",
+  "book_references": {
+    "1 Timothy": [
+      5
+    ]
+  }
+}

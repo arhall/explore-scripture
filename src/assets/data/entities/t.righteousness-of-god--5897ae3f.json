@@ -1,0 +1,30 @@
+{
+  "name": "Righteousness of God",
+  "type": "title",
+  "category": "thesis",
+  "references": [
+    "Rom 1:17",
+    "Rom 3:21–26"
+  ],
+  "greek_terms": [
+    {
+      "term": "δικαιοσύνη θεοῦ",
+      "gloss": "righteousness of God"
+    }
+  ],
+  "blurb": "God’s saving righteousness revealed from faith to faith; debated as attribute, action, or covenant faithfulness.",
+  "aka": [],
+  "id": "t.righteousness-of-god--5897ae3f",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      1,
+      3
+    ]
+  }
+}

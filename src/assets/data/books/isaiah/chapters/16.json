@@ -1,0 +1,14 @@
+{
+  "book": "Isaiah",
+  "chapter": 16,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "g.moab--0526e590",
+      "name": "Moab",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 4
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Painful visit (integrity note)",
+  "type": "figure",
+  "category": "integrity-notes",
+  "references": [
+    "2 Cor 2:1"
+  ],
+  "note": "Indicates a visit that caused pain; part of the letter’s integrity discussion.",
+  "aka": [],
+  "id": "f.painful-visit-integrity-note--a73c68b7",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "2 Corinthians": [
+      2
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Hezekiah and Isaiah pray; angel strikes the camp",
+  "type": "entity",
+  "references": [
+    "2 Chronicles 32:20–23"
+  ],
+  "blurb": "Deliverance as doxology—fear turns to offerings for Jerusalem and gifts for Hezekiah.",
+  "category": "theophany",
+  "id": "e.hezekiah-and-isaiah-pray-angel-strikes-the-camp--b4ddabff",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "2 Chronicles": [
+      32
+    ]
+  }
+}

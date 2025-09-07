@@ -1,0 +1,56 @@
+{
+  "book": "Hosea",
+  "chapter": 1,
+  "entity_count": 7,
+  "entities": [
+    {
+      "id": "p.hosea-son-of-beeri--8844380b",
+      "name": "Hosea son of Beeri",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1
+    },
+    {
+      "id": "p.beeri--e01f9d6b",
+      "name": "Beeri",
+      "type": "person",
+      "role": "family",
+      "refs_count": 1
+    },
+    {
+      "id": "p.gomer-daughter-of-diblaim--f0937d6b",
+      "name": "Gomer daughter of Diblaim",
+      "type": "person",
+      "role": "family",
+      "refs_count": 1
+    },
+    {
+      "id": "f.jezreel--35b22914",
+      "name": "Jezreel",
+      "type": "figure",
+      "role": "sign-name",
+      "refs_count": 1
+    },
+    {
+      "id": "f.lo-ruhamah--6aec452e",
+      "name": "Lo-Ruhamah",
+      "type": "figure",
+      "role": "sign-name",
+      "refs_count": 1
+    },
+    {
+      "id": "f.lo-ammi--48ab7f65",
+      "name": "Lo-Ammi",
+      "type": "figure",
+      "role": "sign-name",
+      "refs_count": 1
+    },
+    {
+      "id": "e.marriage-metaphor--8429d635",
+      "name": "Marriage metaphor",
+      "type": "entity",
+      "role": "metaphor",
+      "refs_count": 1
+    }
+  ]
+}

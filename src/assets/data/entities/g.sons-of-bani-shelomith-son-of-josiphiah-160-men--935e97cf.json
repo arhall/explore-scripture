@@ -1,0 +1,20 @@
+{
+  "name": "Sons of Bani: Shelomith son of Josiphiah, 160 men",
+  "type": "group",
+  "references": [
+    "Ezra 8:10"
+  ],
+  "blurb": "Heads of families in Ezra’s later return; numbers reflect adult males mustered for the journey and covenant renewal.",
+  "category": "record",
+  "count": 160,
+  "count_note": "Count per Ezra 8:10",
+  "id": "g.sons-of-bani-shelomith-son-of-josiphiah-160-men--935e97cf",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      8
+    ]
+  }
+}

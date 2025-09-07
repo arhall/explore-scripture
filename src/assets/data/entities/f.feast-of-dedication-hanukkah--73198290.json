@@ -1,0 +1,26 @@
+{
+  "name": "Feast of Dedication (Hanukkah)",
+  "type": "figure",
+  "category": "festival",
+  "references": [
+    "John 10:22"
+  ],
+  "festival": [
+    "Dedication"
+  ],
+  "aka": [],
+  "id": "f.feast-of-dedication-hanukkah--73198290",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      10
+    ]
+  }
+}

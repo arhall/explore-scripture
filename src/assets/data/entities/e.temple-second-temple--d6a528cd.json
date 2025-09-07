@@ -1,0 +1,22 @@
+{
+  "id": "e.temple-second-temple--d6a528cd",
+  "name": "Temple (Second Temple)",
+  "type": "entity",
+  "references": [
+    "Hag 1:8",
+    "Hag 2:3",
+    "Hag 2:9"
+  ],
+  "category": "cultic",
+  "blurb": "Central project of Haggai; locus of divine pleasure, glory, and peace.",
+  "canonical_id": "e.temple--1d486079",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      1,
+      2
+    ]
+  }
+}

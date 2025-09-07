@@ -1,0 +1,18 @@
+{
+  "id": "p.jotham-of-judah--0d9cfa12",
+  "name": "Jotham of Judah",
+  "type": "person",
+  "references": [
+    "Micah 1:1"
+  ],
+  "category": "king",
+  "blurb": "First of the kings in Micah’s superscription; period of relative stability before Ahaz.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      1
+    ]
+  }
+}

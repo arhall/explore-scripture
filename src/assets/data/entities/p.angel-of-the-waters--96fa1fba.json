@@ -1,0 +1,15 @@
+{
+  "name": "angel of the waters",
+  "type": "person",
+  "category": "angelic",
+  "references": [
+    "Rev 16:5"
+  ],
+  "aka": [],
+  "id": "p.angel-of-the-waters--96fa1fba",
+  "book_references": {
+    "Revelation": [
+      16
+    ]
+  }
+}

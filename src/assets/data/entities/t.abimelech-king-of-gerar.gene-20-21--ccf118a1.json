@@ -1,0 +1,22 @@
+{
+  "name": "Abimelech king of Gerar",
+  "type": "title",
+  "references": [
+    "Genesis 20–21"
+  ],
+  "blurb": "Philistine ruler who confronts Abraham over Sarah and later makes a treaty with both Abraham and Isaac. He recognizes God’s presence with them, modeling common grace among the nations.",
+  "category": "narrative",
+  "cross_references": [
+    "Genesis 26:26–33"
+  ],
+  "id": "t.abimelech-king-of-gerar.gene-20-21--ccf118a1",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      20,
+      21
+    ]
+  }
+}

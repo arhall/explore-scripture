@@ -1,0 +1,19 @@
+{
+  "name": "Manahath",
+  "type": "person",
+  "references": [
+    "Genesis 36:23"
+  ],
+  "blurb": "Son of Shobal; Horite descendant.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.manahath.gene-36-23--cbf8d34b",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

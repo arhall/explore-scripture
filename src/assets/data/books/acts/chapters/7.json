@@ -1,0 +1,42 @@
+{
+  "book": "Acts",
+  "chapter": 7,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "f.stephen-s-speech--29ec991d",
+      "name": "Stephen’s speech",
+      "type": "figure",
+      "role": "speech",
+      "refs_count": 1
+    },
+    {
+      "id": "f.speeches-in-acts-index--79e8df4b",
+      "name": "Speeches in Acts (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 10
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 24
+    },
+    {
+      "id": "f.garments-laid-at-saul--730670da",
+      "name": "Garments laid at Saul",
+      "type": "figure",
+      "role": "detail",
+      "refs_count": 1
+    },
+    {
+      "id": "f.stephen-s-martyrdom--71cd0ff9",
+      "name": "Stephen’s martyrdom",
+      "type": "figure",
+      "role": "martyrdom",
+      "refs_count": 1
+    }
+  ]
+}

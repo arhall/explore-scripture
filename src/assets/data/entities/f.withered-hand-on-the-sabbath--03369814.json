@@ -1,0 +1,33 @@
+{
+  "name": "Withered hand on the Sabbath",
+  "type": "figure",
+  "category": "controversy",
+  "references": [
+    "Mark 3:1–6",
+    "Luke 6:6–11"
+  ],
+  "synoptic_parallels": [
+    "Matt 12:9–14",
+    "Luke 6:6–11",
+    "Mark 3:1–6"
+  ],
+  "aka": [],
+  "id": "f.withered-hand-on-the-sabbath--03369814",
+  "source_book": "Mark",
+  "source_books": [
+    "Mark",
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Mark": [
+      3
+    ],
+    "Luke": [
+      6
+    ]
+  }
+}

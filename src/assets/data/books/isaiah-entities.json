@@ -1,0 +1,661 @@
+[
+  {
+    "id": "g.moab--0526e590",
+    "name": "Moab",
+    "type": "group",
+    "url": "/entities/g.moab--0526e590/",
+    "blurb": "Lament over Moab with a messianic refuge in David’s tent—steadfast love enthrones justice.",
+    "searchText": "moab group nation lament over moab with a messianic refuge in david’s tent—steadfast love enthrones justice. g.moab--406c6e00",
+    "references": 4,
+    "books": [
+      "Isaiah",
+      "Jeremiah",
+      "Ezekiel",
+      "Amos"
+    ],
+    "category": "nation"
+  },
+  {
+    "id": "g.philistia--5497e6d6",
+    "name": "Philistia",
+    "type": "group",
+    "url": "/entities/g.philistia--5497e6d6/",
+    "blurb": "Admonished not to gloat—serpent imagery escalates judgment metaphors.",
+    "searchText": "philistia group nation admonished not to gloat—serpent imagery escalates judgment metaphors. g.philistia--5b1520b6",
+    "references": 3,
+    "books": [
+      "Isaiah",
+      "Jeremiah",
+      "Ezekiel"
+    ],
+    "category": "nation"
+  },
+  {
+    "id": "g.tyre.phoenicia--26eb5064",
+    "name": "Tyre (Phoenicia)",
+    "type": "group",
+    "url": "/entities/g.tyre.phoenicia--26eb5064/",
+    "blurb": "Merchant queen humbled; wealth will later ‘belong to the LORD’ for holy service.",
+    "searchText": "tyre (phoenicia) group nation merchant queen humbled; wealth will later ‘belong to the lord’ for holy service. g.tyre--b1105484",
+    "references": 2,
+    "books": [
+      "Isaiah",
+      "Ezekiel"
+    ],
+    "category": "nation"
+  },
+  {
+    "id": "p.ahaz-king-of-judah--189a5877",
+    "name": "Ahaz king of Judah",
+    "type": "person",
+    "url": "/entities/p.ahaz-king-of-judah--189a5877/",
+    "blurb": "Closes temple doors, makes altars in every corner; sacrifices sons—political expedience weds idolatry.",
+    "searchText": "ahaz king of judah person narrative closes temple doors, makes altars in every corner; sacrifices sons—political expedience weds idolatry. ",
+    "references": 2,
+    "books": [
+      "2 Chronicles",
+      "Isaiah"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.jotham-king-of-judah--22629070",
+    "name": "Jotham king of Judah",
+    "type": "person",
+    "url": "/entities/p.jotham-king-of-judah--22629070/",
+    "blurb": "Builds and orders the state; people still corrupt—good leadership cannot alone reform hearts.",
+    "searchText": "jotham king of judah person narrative builds and orders the state; people still corrupt—good leadership cannot alone reform hearts. ",
+    "references": 2,
+    "books": [
+      "2 Chronicles",
+      "Isaiah"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "e.leviathan--380c58dd",
+    "name": "Leviathan",
+    "type": "entity",
+    "url": "/entities/e.leviathan--380c58dd/",
+    "blurb": "Sea-dragon of terrifying ferocity—no human can leash him; God alone plays with Leviathan. Evil’s chaos is not ultimate.",
+    "searchText": "leviathan entity theology sea-dragon of terrifying ferocity—no human can leash him; god alone plays with leviathan. evil’s chaos is not ultimate. ",
+    "references": 2,
+    "books": [
+      "Job",
+      "Isaiah"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "g.arabia.kedar-tema--1bbc65f6",
+    "name": "Arabia (Kedar, Tema)",
+    "type": "group",
+    "url": "/entities/g.arabia.kedar-tema--1bbc65f6/",
+    "blurb": "Desert tribes in both doom and doxology—judgment and praise ring through the tents.",
+    "searchText": "arabia (kedar, tema) group nation desert tribes in both doom and doxology—judgment and praise ring through the tents. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "nation"
+  },
+  {
+    "id": "g.bind-up-the-testimony-seal-the-teaching-among-my-disciples--1b3f5b6c",
+    "name": "Bind up the testimony; seal the teaching among my disciples",
+    "type": "group",
+    "url": "/entities/g.bind-up-the-testimony-seal-the-teaching-among-my-disciples--1b3f5b6c/",
+    "blurb": "Isaiah gathers a circle of learners; his children are ‘signs and portents’—a prophetic community shaped by Scripture.",
+    "searchText": "bind up the testimony; seal the teaching among my disciples group discipleship isaiah gathers a circle of learners; his children are ‘signs and portents’—a prophetic community shaped by scripture. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "discipleship"
+  },
+  {
+    "id": "g.blind-watchmen-mute-dogs.failed-shepherds--74428a74",
+    "name": "Blind watchmen, mute dogs (failed shepherds)",
+    "type": "group",
+    "url": "/entities/g.blind-watchmen-mute-dogs.failed-shepherds--74428a74/",
+    "blurb": "Leaders addicted to gain and sleep—satire exposes spiritual negligence that imperils the flock.",
+    "searchText": "blind watchmen, mute dogs (failed shepherds) group critique leaders addicted to gain and sleep—satire exposes spiritual negligence that imperils the flock. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "critique"
+  },
+  {
+    "id": "g.coastlands-isles--17ece02d",
+    "name": "Coastlands / Isles",
+    "type": "group",
+    "url": "/entities/g.coastlands-isles--17ece02d/",
+    "blurb": "Distant peoples summoned to court and song; horizon of mission widens beyond Israel.",
+    "searchText": "coastlands / isles group peoples distant peoples summoned to court and song; horizon of mission widens beyond israel. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "peoples"
+  },
+  {
+    "id": "g.elam-and-media--fe0219be",
+    "name": "Elam and Media",
+    "type": "group",
+    "url": "/entities/g.elam-and-media--fe0219be/",
+    "blurb": "Instruments raised against Babylon—empires are tools in a sovereign hand.",
+    "searchText": "elam and media group nations instruments raised against babylon—empires are tools in a sovereign hand. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "nations"
+  },
+  {
+    "id": "g.eunuchs-who-keep-my-sabbaths--0b991aba",
+    "name": "Eunuchs who keep my Sabbaths",
+    "type": "group",
+    "url": "/entities/g.eunuchs-who-keep-my-sabbaths--0b991aba/",
+    "blurb": "From exclusion to memorial and a name better than sons and daughters—holiness makes hospitality.",
+    "searchText": "eunuchs who keep my sabbaths group inclusion from exclusion to memorial and a name better than sons and daughters—holiness makes hospitality. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "inclusion"
+  },
+  {
+    "id": "g.seba-and-sheba--3935b8d7",
+    "name": "Seba and Sheba",
+    "type": "group",
+    "url": "/entities/g.seba-and-sheba--3935b8d7/",
+    "blurb": "Nations and riches reoriented to Zion; ransom language and pilgrimage converge in worship.",
+    "searchText": "seba and sheba group peoples nations and riches reoriented to zion; ransom language and pilgrimage converge in worship. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "peoples"
+  },
+  {
+    "id": "g.seraphim--b26df96f",
+    "name": "Seraphim",
+    "type": "group",
+    "url": "/entities/g.seraphim--b26df96f/",
+    "blurb": "Fiery throne‑room beings; a coal touches Isaiah’s lips—guilt removed, sin atoned.",
+    "searchText": "seraphim group heavenly fiery throne‑room beings; a coal touches isaiah’s lips—guilt removed, sin atoned. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "heavenly"
+  },
+  {
+    "id": "g.tartan-and-rabsaris.assyrian-envoys--18ee3a28",
+    "name": "Tartan and Rabsaris (Assyrian envoys)",
+    "type": "group",
+    "url": "/entities/g.tartan-and-rabsaris.assyrian-envoys--18ee3a28/",
+    "blurb": "Military and palace officials accompanying Rabshakeh—Assyria’s intimidation is bureaucratic as well as brutal.",
+    "searchText": "tartan and rabsaris (assyrian envoys) group officials military and palace officials accompanying rabshakeh—assyria’s intimidation is bureaucratic as well as brutal. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "officials"
+  },
+  {
+    "id": "g.watchmen-on-your-walls-o-jerusalem--325be0b0",
+    "name": "Watchmen on your walls, O Jerusalem",
+    "type": "group",
+    "url": "/entities/g.watchmen-on-your-walls-o-jerusalem--325be0b0/",
+    "blurb": "Intercessory sentinels who will not keep silent until Zion is established—a liturgy of persistence.",
+    "searchText": "watchmen on your walls, o jerusalem group ministry intercessory sentinels who will not keep silent until zion is established—a liturgy of persistence. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "ministry"
+  },
+  {
+    "id": "p.cyrus-the-great-of-persia--e5f9ed4c",
+    "name": "Cyrus the Great of Persia",
+    "type": "person",
+    "url": "/entities/p.cyrus-the-great-of-persia--e5f9ed4c/",
+    "blurb": "Named as YHWH’s ‘shepherd’ and ‘anointed’ to release exiles and rebuild—monotheism meets realpolitik in a stunning providence.",
+    "searchText": "cyrus the great of persia person king named as yhwh’s ‘shepherd’ and ‘anointed’ to release exiles and rebuild—monotheism meets realpolitik in a stunning providence. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "king"
+  },
+  {
+    "id": "p.eliakim-son-of-hilkiah--86222786",
+    "name": "Eliakim son of Hilkiah",
+    "type": "person",
+    "url": "/entities/p.eliakim-son-of-hilkiah--86222786/",
+    "blurb": "Given ‘the key of the house of David’—a peg fastened in a sure place; replaces the proud steward Shebna.",
+    "searchText": "eliakim son of hilkiah person official given ‘the key of the house of david’—a peg fastened in a sure place; replaces the proud steward shebna. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "official"
+  },
+  {
+    "id": "p.isaiah-son-of-amoz--c7e8486a",
+    "name": "Isaiah son of Amoz",
+    "type": "person",
+    "url": "/entities/p.isaiah-son-of-amoz--c7e8486a/",
+    "blurb": "Jerusalem court prophet spanning the reigns of Uzziah, Jotham, Ahaz, and Hezekiah. His ministry unites holy vision (ch. 6) with political counsel (7–8; 36–39) and eschatological comfort (40–66). Later",
+    "searchText": "isaiah son of amoz person prophet jerusalem court prophet spanning the reigns of uzziah, jotham, ahaz, and hezekiah. his ministry unites holy vision (ch. 6) with political counsel (7–8; 36–39) and eschatological comfort (40–66). later tradition remembers his martyrdom (sawn in two; cf. heb 11:37). ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "prophet"
+  },
+  {
+    "id": "p.joah-son-of-asaph.recorder--837c88fc",
+    "name": "Joah son of Asaph (recorder)",
+    "type": "person",
+    "url": "/entities/p.joah-son-of-asaph.recorder--837c88fc/",
+    "blurb": "Court recorder in the Hezekian delegation to the wall; a witness to Rabshakeh’s propaganda.",
+    "searchText": "joah son of asaph (recorder) person official court recorder in the hezekian delegation to the wall; a witness to rabshakeh’s propaganda. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "official"
+  },
+  {
+    "id": "p.maher-shalal-hash-baz.swift-spoil-speedy-prey--545f299a",
+    "name": "Maher‑shalal‑hash‑baz (‘Swift spoil, speedy prey’)",
+    "type": "person",
+    "url": "/entities/p.maher-shalal-hash-baz.swift-spoil-speedy-prey--545f299a/",
+    "blurb": "Child’s name warns Damascus and Samaria—history can turn on a word; plunder is imminent.",
+    "searchText": "maher‑shalal‑hash‑baz (‘swift spoil, speedy prey’) person sign-child child’s name warns damascus and samaria—history can turn on a word; plunder is imminent. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "sign-child"
+  },
+  {
+    "id": "p.merodach-baladan-of-babylon--78b7a9b8",
+    "name": "Merodach‑Baladan of Babylon",
+    "type": "person",
+    "url": "/entities/p.merodach-baladan-of-babylon--78b7a9b8/",
+    "blurb": "Envoys court Hezekiah after his recovery; flattery sets a trap—Isaiah prophesies future Babylonian exile.",
+    "searchText": "merodach‑baladan of babylon person king envoys court hezekiah after his recovery; flattery sets a trap—isaiah prophesies future babylonian exile. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "king"
+  },
+  {
+    "id": "p.prophetess.isaiahs-wife--c2825865",
+    "name": "Prophetess (Isaiah’s wife)",
+    "type": "person",
+    "url": "/entities/p.prophetess.isaiahs-wife--c2825865/",
+    "blurb": "Shares Isaiah’s vocation in a sign‑act pregnancy; the household itself becomes prophetic theater.",
+    "searchText": "prophetess (isaiah’s wife) person family shares isaiah’s vocation in a sign‑act pregnancy; the household itself becomes prophetic theater. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "family"
+  },
+  {
+    "id": "p.rabshakeh.field-commander--d99d9803",
+    "name": "Rabshakeh (field commander)",
+    "type": "person",
+    "url": "/entities/p.rabshakeh.field-commander--d99d9803/",
+    "blurb": "Master of psychological ops—targets language, identity, and faith; Isaiah reframes his speech as blasphemy to be answered by prayer.",
+    "searchText": "rabshakeh (field commander) person official master of psychological ops—targets language, identity, and faith; isaiah reframes his speech as blasphemy to be answered by prayer. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "official"
+  },
+  {
+    "id": "p.sargon-ii-of-assyria--8676b5f2",
+    "name": "Sargon II of Assyria",
+    "type": "person",
+    "url": "/entities/p.sargon-ii-of-assyria--8676b5f2/",
+    "blurb": "Takes Ashdod; Isaiah’s sign dramatizes Egypt/Cush’s futility.",
+    "searchText": "sargon ii of assyria person emperor takes ashdod; isaiah’s sign dramatizes egypt/cush’s futility. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "emperor"
+  },
+  {
+    "id": "p.sennacherib-of-assyria--9abe44ca",
+    "name": "Sennacherib of Assyria",
+    "type": "person",
+    "url": "/entities/p.sennacherib-of-assyria--9abe44ca/",
+    "blurb": "Boasts against the God of Israel; his army is struck in a night—empire meets the Angel of the LORD.",
+    "searchText": "sennacherib of assyria person emperor boasts against the god of israel; his army is struck in a night—empire meets the angel of the lord. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "emperor"
+  },
+  {
+    "id": "p.shear-jashub.a-remnant-shall-return--cc83fd77",
+    "name": "Shear‑jashub (‘A remnant shall return’)",
+    "type": "person",
+    "url": "/entities/p.shear-jashub.a-remnant-shall-return--cc83fd77/",
+    "blurb": "Accompanies Isaiah to meet Ahaz; his name pledges judgment‑through‑survival and anticipates post‑exilic hope.",
+    "searchText": "shear‑jashub (‘a remnant shall return’) person sign-child accompanies isaiah to meet ahaz; his name pledges judgment‑through‑survival and anticipates post‑exilic hope. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "sign-child"
+  },
+  {
+    "id": "p.shebna-the-steward-scribe--0229c782",
+    "name": "Shebna the steward/scribe",
+    "type": "person",
+    "url": "/entities/p.shebna-the-steward-scribe--0229c782/",
+    "blurb": "Self‑promoting official demoted by oracle; warns leaders against vanity amid crisis.",
+    "searchText": "shebna the steward/scribe person official self‑promoting official demoted by oracle; warns leaders against vanity amid crisis. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "official"
+  },
+  {
+    "id": "e.additional-woes-against-scoffers-and-alliance-makers--20793192",
+    "name": "Additional ‘woes’ against scoffers and alliance‑makers",
+    "type": "entity",
+    "url": "/entities/e.additional-woes-against-scoffers-and-alliance-makers--20793192/",
+    "blurb": "Unjust decrees, covenant with death, reliance on Egypt—prophetic ‘woe’ sharpens conscience.",
+    "searchText": "additional ‘woes’ against scoffers and alliance‑makers entity ethics unjust decrees, covenant with death, reliance on egypt—prophetic ‘woe’ sharpens conscience. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.ariel.jerusalem-altar-hearth--bc6b74bd",
+    "name": "Ariel (Jerusalem, ‘altar hearth’)",
+    "type": "entity",
+    "url": "/entities/e.ariel.jerusalem-altar-hearth--bc6b74bd/",
+    "blurb": "Siege‑stricken Jerusalem called ‘Ariel’—altar imagery frames both judgment and deliverance.",
+    "searchText": "ariel (jerusalem, ‘altar hearth’) entity city siege‑stricken jerusalem called ‘ariel’—altar imagery frames both judgment and deliverance. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "e.assyrian-invasion-overnight-deliverance--97795f35",
+    "name": "Assyrian invasion & overnight deliverance",
+    "type": "entity",
+    "url": "/entities/e.assyrian-invasion-overnight-deliverance--97795f35/",
+    "blurb": "Rabshakeh’s propaganda collapses before prayer; the angel strikes the camp—trust outlasts terror.",
+    "searchText": "assyrian invasion & overnight deliverance entity deliverance rabshakeh’s propaganda collapses before prayer; the angel strikes the camp—trust outlasts terror. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "deliverance"
+  },
+  {
+    "id": "e.banquet-on-the-mountain--c8ef3ea5",
+    "name": "Banquet on the mountain",
+    "type": "entity",
+    "url": "/entities/e.banquet-on-the-mountain--c8ef3ea5/",
+    "blurb": "A feast of rich food and well‑aged wine; God wipes tears and removes reproach—joy becomes public policy of the kingdom.",
+    "searchText": "banquet on the mountain entity hope a feast of rich food and well‑aged wine; god wipes tears and removes reproach—joy becomes public policy of the kingdom. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "hope"
+  },
+  {
+    "id": "e.bel-and-nebo.babylonian-gods--3679b594",
+    "name": "Bel and Nebo (Babylonian gods)",
+    "type": "entity",
+    "url": "/entities/e.bel-and-nebo.babylonian-gods--3679b594/",
+    "blurb": "Idols stoop and bow; they cannot save but must be carried—contrast with the God who carries His people.",
+    "searchText": "bel and nebo (babylonian gods) entity idol idols stoop and bow; they cannot save but must be carried—contrast with the god who carries his people. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "idol"
+  },
+  {
+    "id": "e.call-commission-of-isaiah--a4f0c431",
+    "name": "Call & commission of Isaiah",
+    "type": "entity",
+    "url": "/entities/e.call-commission-of-isaiah--a4f0c431/",
+    "blurb": "Trisagion vision; coal‑cleansed lips; a hardening ministry until holy seed remains—judgment that preserves a stump.",
+    "searchText": "call & commission of isaiah entity call trisagion vision; coal‑cleansed lips; a hardening ministry until holy seed remains—judgment that preserves a stump. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "call"
+  },
+  {
+    "id": "e.city-of-chaos.tohu--12570fee",
+    "name": "City of Chaos (tohu)",
+    "type": "entity",
+    "url": "/entities/e.city-of-chaos.tohu--12570fee/",
+    "blurb": "Uncreation imagery—sin disintegrates civic order into formlessness; only God’s kingdom endures.",
+    "searchText": "city of chaos (tohu) entity apocalypse uncreation imagery—sin disintegrates civic order into formlessness; only god’s kingdom endures. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "apocalypse"
+  },
+  {
+    "id": "e.comfort-new-exodus-program--5bc24efa",
+    "name": "Comfort–New Exodus program",
+    "type": "entity",
+    "url": "/entities/e.comfort-new-exodus-program--5bc24efa/",
+    "blurb": "Voice in the wilderness; shepherding God; trial of idols; Servant’s mission and passion; Zion’s restoration—return from exile as gospel template.",
+    "searchText": "comfort–new exodus program entity gospel voice in the wilderness; shepherding god; trial of idols; servant’s mission and passion; zion’s restoration—return from exile as gospel template. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "gospel"
+  },
+  {
+    "id": "e.cup-of-wrath-removed-and-given--a7adc2ee",
+    "name": "Cup of wrath removed and given",
+    "type": "entity",
+    "url": "/entities/e.cup-of-wrath-removed-and-given--a7adc2ee/",
+    "blurb": "Jerusalem drinks the cup of staggering; God takes it from her hand and gives it to oppressors—justice meets mercy.",
+    "searchText": "cup of wrath removed and given entity theology jerusalem drinks the cup of staggering; god takes it from her hand and gives it to oppressors—justice meets mercy. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "e.daughter-babylon--702ecaa6",
+    "name": "Daughter Babylon",
+    "type": "entity",
+    "url": "/entities/e.daughter-babylon--702ecaa6/",
+    "blurb": "Pampered ruler dethroned; exposure of occult pride—humiliation invites repentance yet receives justice.",
+    "searchText": "daughter babylon entity city pampered ruler dethroned; exposure of occult pride—humiliation invites repentance yet receives justice. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "e.death-swallowed-up-tears-wiped-away--98fd22ce",
+    "name": "Death swallowed up; tears wiped away",
+    "type": "entity",
+    "url": "/entities/e.death-swallowed-up-tears-wiped-away--98fd22ce/",
+    "blurb": "From shroud to celebration—resurrection hope breaks into prophetic poetry.",
+    "searchText": "death swallowed up; tears wiped away entity hope from shroud to celebration—resurrection hope breaks into prophetic poetry. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "hope"
+  },
+  {
+    "id": "e.desert-blossoms-like-the-crocus--3966a2f7",
+    "name": "Desert blossoms like the crocus",
+    "type": "entity",
+    "url": "/entities/e.desert-blossoms-like-the-crocus--3966a2f7/",
+    "blurb": "Hands strengthened, knees firm; blind see, deaf hear—creation healed and pilgrims sing on the Way of Holiness.",
+    "searchText": "desert blossoms like the crocus entity restoration hands strengthened, knees firm; blind see, deaf hear—creation healed and pilgrims sing on the way of holiness. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "restoration"
+  },
+  {
+    "id": "e.dumah.edom-oracle--094cce1e",
+    "name": "Dumah (Edom oracle)",
+    "type": "entity",
+    "url": "/entities/e.dumah.edom-oracle--094cce1e/",
+    "blurb": "Watchman’s riddle from Seir—morning comes, and also night; hope and warning entwined.",
+    "searchText": "dumah (edom oracle) entity oracle watchman’s riddle from seir—morning comes, and also night; hope and warning entwined. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "oracle"
+  },
+  {
+    "id": "e.everlasting-covenant-davidic-mercies--340ea6ef",
+    "name": "Everlasting covenant & Davidic mercies",
+    "type": "entity",
+    "url": "/entities/e.everlasting-covenant-davidic-mercies--340ea6ef/",
+    "blurb": "Free invitation to the thirsty; covenant fidelity to David extended to nations—mission by mercy, not merit.",
+    "searchText": "everlasting covenant & davidic mercies entity covenant free invitation to the thirsty; covenant fidelity to david extended to nations—mission by mercy, not merit. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "covenant"
+  },
+  {
+    "id": "e.final-gathering-and-universal-worship--3e659b4a",
+    "name": "Final gathering and universal worship",
+    "type": "entity",
+    "url": "/entities/e.final-gathering-and-universal-worship--3e659b4a/",
+    "blurb": "All nations and tongues come to see the glory; from new moon to new moon, all flesh worships before the LORD.",
+    "searchText": "final gathering and universal worship entity eschatology all nations and tongues come to see the glory; from new moon to new moon, all flesh worships before the lord. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "eschatology"
+  },
+  {
+    "id": "e.hephzibah-and-beulah.new-names--f3b2ff61",
+    "name": "Hephzibah and Beulah (new names)",
+    "type": "entity",
+    "url": "/entities/e.hephzibah-and-beulah.new-names--f3b2ff61/",
+    "blurb": "Forsaken becomes My‑Delight‑Is‑In‑Her; Desolate becomes Married—marital joy as civic restoration.",
+    "searchText": "hephzibah and beulah (new names) entity restoration forsaken becomes my‑delight‑is‑in‑her; desolate becomes married—marital joy as civic restoration. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "restoration"
+  },
+  {
+    "id": "e.hezekiahs-sickness-sign-of-the-shadow-and-babylonian-envoys--fc0959de",
+    "name": "Hezekiah’s sickness, sign of the shadow, and Babylonian envoys",
+    "type": "entity",
+    "url": "/entities/e.hezekiahs-sickness-sign-of-the-shadow-and-babylonian-envoys--fc0959de/",
+    "blurb": "The shadow retreats ten steps; boastful display invites future loss—healing must be stewarded with humility.",
+    "searchText": "hezekiah’s sickness, sign of the shadow, and babylonian envoys entity warning the shadow retreats ten steps; boastful display invites future loss—healing must be stewarded with humility. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "warning"
+  },
+  {
+    "id": "e.highway-motif.way-of-holiness-new-exodus--479428e2",
+    "name": "Highway motif (Way of Holiness / New Exodus)",
+    "type": "entity",
+    "url": "/entities/e.highway-motif.way-of-holiness-new-exodus--479428e2/",
+    "blurb": "A prepared road for the redeemed—wilderness becomes thoroughfare; nations join the pilgrimage.",
+    "searchText": "highway motif (way of holiness / new exodus) entity motif a prepared road for the redeemed—wilderness becomes thoroughfare; nations join the pilgrimage. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "motif"
+  },
+  {
+    "id": "e.historical-frame-uzziah-jotham-ahaz-hezekiah--cea0e9d5",
+    "name": "Historical frame: Uzziah, Jotham, Ahaz, Hezekiah",
+    "type": "entity",
+    "url": "/entities/e.historical-frame-uzziah-jotham-ahaz-hezekiah--cea0e9d5/",
+    "blurb": "Late 8th–early 7th century BCE: Assyria ascendant, Syro‑Ephraimite war, Sennacherib’s invasion, and the Babylonian horizon.",
+    "searchText": "historical frame: uzziah, jotham, ahaz, hezekiah entity history late 8th–early 7th century bce: assyria ascendant, syro‑ephraimite war, sennacherib’s invasion, and the babylonian horizon. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "history"
+  },
+  {
+    "id": "e.house-of-prayer-for-all-peoples.eunuchs-foreigners--26f306ab",
+    "name": "House of prayer for all peoples (eunuchs & foreigners)",
+    "type": "entity",
+    "url": "/entities/e.house-of-prayer-for-all-peoples.eunuchs-foreigners--26f306ab/",
+    "blurb": "Holiness without hostility; Sabbath‑keeping becomes solidarity across boundaries.",
+    "searchText": "house of prayer for all peoples (eunuchs & foreigners) entity inclusion holiness without hostility; sabbath‑keeping becomes solidarity across boundaries. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "inclusion"
+  },
+  {
+    "id": "e.idols-and-the-craftsman-parody--a447cb13",
+    "name": "Idols and the craftsman parody",
+    "type": "entity",
+    "url": "/entities/e.idols-and-the-craftsman-parody--a447cb13/",
+    "blurb": "Trial speeches mock the maker who warms himself with half the wood and worships the rest—monotheistic satire exposes the folly of carved gods.",
+    "searchText": "idols and the craftsman parody entity polemic trial speeches mock the maker who warms himself with half the wood and worships the rest—monotheistic satire exposes the folly of carved gods. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "polemic"
+  },
+  {
+    "id": "e.isaiahs-little-apocalypse--31c95a3d",
+    "name": "Isaiah’s Little Apocalypse",
+    "type": "entity",
+    "url": "/entities/e.isaiahs-little-apocalypse--31c95a3d/",
+    "blurb": "Cosmic judgment and song: city of chaos falls; a banquet on the mountain; death swallowed; resurrection sung; Leviathan slain.",
+    "searchText": "isaiah’s little apocalypse entity apocalypse cosmic judgment and song: city of chaos falls; a banquet on the mountain; death swallowed; resurrection sung; leviathan slain. ",
+    "references": 1,
+    "books": [
+      "Isaiah"
+    ],
+    "category": "apocalypse"
+  }
+]

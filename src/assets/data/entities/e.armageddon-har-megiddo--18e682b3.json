@@ -1,0 +1,18 @@
+{
+  "name": "Armageddon (Har-Megiddo)",
+  "type": "entity",
+  "category": "battle-site",
+  "references": [
+    "Rev 16:16"
+  ],
+  "aka": [
+    "Armageddon",
+    "Har-Megiddo"
+  ],
+  "id": "e.armageddon-har-megiddo--18e682b3",
+  "book_references": {
+    "Revelation": [
+      16
+    ]
+  }
+}

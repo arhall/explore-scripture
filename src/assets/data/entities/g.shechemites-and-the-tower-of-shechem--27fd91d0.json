@@ -1,0 +1,18 @@
+{
+  "name": "Shechemites and the tower of Shechem",
+  "type": "group",
+  "references": [
+    "Judges 9:46–49"
+  ],
+  "blurb": "Covenant city compromised by Baal-berith; fire at the tower becomes the judgment they plotted for others.",
+  "category": "narrative",
+  "id": "g.shechemites-and-the-tower-of-shechem--27fd91d0",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      9
+    ]
+  }
+}

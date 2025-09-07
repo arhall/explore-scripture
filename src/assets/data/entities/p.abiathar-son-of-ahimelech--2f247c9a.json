@@ -1,0 +1,21 @@
+{
+  "name": "Abiathar son of Ahimelech",
+  "type": "person",
+  "references": [
+    "1 Samuel 22:20–23; 23:6–9; 30:7"
+  ],
+  "blurb": "Escapes with the ephod and aligns with David—priestly legitimacy shelters the future king.",
+  "relations": {
+    "father": "Ahimelech"
+  },
+  "category": "narrative",
+  "id": "p.abiathar-son-of-ahimelech--2f247c9a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      22
+    ]
+  }
+}

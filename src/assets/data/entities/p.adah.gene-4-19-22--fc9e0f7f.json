@@ -1,0 +1,28 @@
+{
+  "name": "Adah",
+  "type": "person",
+  "references": [
+    "Genesis 4:19–22"
+  ],
+  "blurb": "Wife of Lamech; mother of Jabal and Jubal. Her line is linked with pastoralism and music.",
+  "relations": {
+    "spouse_of": [
+      "Lamech (descendant of Cain)"
+    ],
+    "children": [
+      "Jabal",
+      "Jubal"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.adah.gene-4-19-22--fc9e0f7f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      4
+    ]
+  }
+}

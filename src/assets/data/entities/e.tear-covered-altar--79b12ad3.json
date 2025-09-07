@@ -1,0 +1,18 @@
+{
+  "id": "e.tear-covered-altar--79b12ad3",
+  "name": "Tear-covered altar",
+  "type": "entity",
+  "references": [
+    "Mal 2:13"
+  ],
+  "category": "lament",
+  "blurb": "Weeping and groaning fail to mask covenant treachery.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      2
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Man of God to Eli",
+  "type": "person",
+  "references": [
+    "1 Samuel 2:27–36"
+  ],
+  "blurb": "Delivers the divine verdict on Eli’s line and promises a faithful priest to come—prophetic audit of leadership.",
+  "category": "narrative",
+  "id": "p.man-of-god-to-eli--197c56ef",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      2
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Holiness & territory (holy hill, holy people)",
+  "type": "entity",
+  "references": [
+    "Obadiah 1:17"
+  ],
+  "blurb": "Holiness is not retreat but renewal; land and people are re‑ordered by sanctity.",
+  "category": "theology",
+  "id": "e.holiness-territory.holy-hill-holy-people--c3a375c8",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Obadiah": [
+      1
+    ]
+  }
+}

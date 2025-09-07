@@ -1,0 +1,18 @@
+{
+  "name": "Tahanites (tribe of Ephraim)",
+  "type": "group",
+  "references": [
+    "Numbers 26"
+  ],
+  "blurb": "Clan of Ephraim counted in the second census.",
+  "category": "genealogy",
+  "id": "g.tahanites.tribe-of-ephraim--91a47e4d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      26
+    ]
+  }
+}

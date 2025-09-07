@@ -1,0 +1,28 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 2,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "p.solomon.chronicles-focus--6c5c003a",
+      "name": "Solomon (Chronicles focus)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "t.hiram-king-of-tyre.huram--9a49b256",
+      "name": "Hiram (Huram) king of Tyre",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.huram-abi-the-bronze-worker.hiram--f48d711b",
+      "name": "Huram-abi (Hiram) the bronze worker",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

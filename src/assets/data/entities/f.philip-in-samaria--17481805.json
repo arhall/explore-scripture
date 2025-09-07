@@ -1,0 +1,23 @@
+{
+  "name": "Philip in Samaria",
+  "type": "figure",
+  "category": "mission",
+  "references": [
+    "Acts 8:4–13"
+  ],
+  "aka": [],
+  "id": "f.philip-in-samaria--17481805",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      8
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "book": "Hebrews",
+  "chapter": 5,
+  "entity_count": 9,
+  "entities": [
+    {
+      "id": "p.aaron--cc77e332",
+      "name": "Aaron",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 6
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "g.infants-milk--5b4d3bb4",
+      "name": "infants (milk)",
+      "type": "group",
+      "role": "immaturity",
+      "refs_count": 1
+    },
+    {
+      "id": "g.mature-solid-food--1c82c6ec",
+      "name": "mature (solid food)",
+      "type": "group",
+      "role": "maturity",
+      "refs_count": 1
+    },
+    {
+      "id": "g.priests-levitical--356817bc",
+      "name": "priests (Levitical)",
+      "type": "group",
+      "role": "priesthood",
+      "refs_count": 1
+    },
+    {
+      "id": "p.melchizedek-introduced--879b1657",
+      "name": "Melchizedek (introduced)",
+      "type": "person",
+      "role": "priest-king",
+      "refs_count": 1
+    },
+    {
+      "id": "f.ot-quotations-allusions-index--e4c0f47d",
+      "name": "OT quotations/allusions index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "g.dull-of-hearing--d7b005d1",
+      "name": "dull of hearing",
+      "type": "group",
+      "role": "warning",
+      "refs_count": 1
+    },
+    {
+      "id": "f.learning-obedience--b2704152",
+      "name": "learning obedience",
+      "type": "figure",
+      "role": "discipleship",
+      "refs_count": 1
+    }
+  ]
+}

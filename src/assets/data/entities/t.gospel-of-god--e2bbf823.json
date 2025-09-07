@@ -1,0 +1,22 @@
+{
+  "name": "Gospel of God",
+  "type": "title",
+  "category": "theme",
+  "references": [
+    "Rom 1:1–4"
+  ],
+  "blurb": "Good news promised beforehand in the Scriptures concerning God’s Son.",
+  "aka": [],
+  "id": "t.gospel-of-god--e2bbf823",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      1
+    ]
+  }
+}

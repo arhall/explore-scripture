@@ -1,0 +1,77 @@
+{
+  "book": "Revelation",
+  "chapter": 6,
+  "entity_count": 20,
+  "entities": [
+    {
+      "id": "f.black-horse-rider-scales-ration-prices--a85c396e",
+      "name": "black horse rider (scales, ration prices)",
+      "type": "figure",
+      "role": "judgment",
+      "refs_count": 1
+    },
+    {
+      "id": "f.white-robes-given--a6b8d94b",
+      "name": "white robes given",
+      "type": "figure",
+      "role": "reward",
+      "refs_count": 1
+    },
+    {
+      "id": "f.heptad-index--733a558f",
+      "name": "Heptad index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.numeric-symbolism-index--20cda2ea",
+      "name": "Numeric symbolism index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.mountains-and-islands-moved--17dcc4d4",
+      "name": "mountains and islands moved",
+      "type": "figure",
+      "role": "cosmic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.pale-horse-rider-death-hades-follows--1ec15e34",
+      "name": "pale horse rider (Death; Hades follows)",
+      "type": "figure",
+      "role": "judgment",
+      "refs_count": 1
+    },
+    {
+      "id": "f.full-moon-like-blood--e4e4f0e1",
+      "name": "full moon like blood",
+      "type": "figure",
+      "role": "cosmic",
+      "refs_count": 1
+    },
+    {
+      "id": "g.kings-and-earth-dwellers-hide-in-caves--68c0c718",
+      "name": "kings and earth-dwellers hide in caves",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1
+    },
+    {
+      "id": "f.city-contrast-index-babylon-vs-new-jerusalem--b56140e1",
+      "name": "City contrast index (Babylon vs New Jerusalem)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.angel-index--12fa89a0",
+      "name": "Angel index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    }
+  ]
+}

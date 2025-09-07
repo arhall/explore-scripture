@@ -1,0 +1,658 @@
+[
+  {
+    "id": "g.egypt--ab1ad00f",
+    "name": "Egypt",
+    "type": "group",
+    "url": "/entities/g.egypt--ab1ad00f/",
+    "blurb": "From false refuge to future worshiper—altar in Egypt and highway with Assyria prophesy reconciliation.",
+    "searchText": "egypt group nation from false refuge to future worshiper—altar in egypt and highway with assyria prophesy reconciliation. g.egypt--cd780238",
+    "references": 6,
+    "books": [
+      "Jeremiah",
+      "Ezekiel",
+      "Hosea",
+      "Joel",
+      "Amos"
+    ],
+    "category": "nation"
+  },
+  {
+    "id": "g.edom.desolate-wilderness--6976d032",
+    "name": "Edom (desolate wilderness)",
+    "type": "group",
+    "url": "/entities/g.edom.desolate-wilderness--6976d032/",
+    "blurb": "Kinsfolk-turned-enemy condemned for bloodguilt.",
+    "searchText": "edom (desolate wilderness) group nation kinsfolk-turned-enemy condemned for bloodguilt. ",
+    "references": 3,
+    "books": [
+      "Joel",
+      "Amos",
+      "Obadiah"
+    ],
+    "category": "nation"
+  },
+  {
+    "id": "g.audience-judah-and-jerusalem--f8e73f6a",
+    "name": "Audience: Judah and Jerusalem",
+    "type": "group",
+    "url": "/entities/g.audience-judah-and-jerusalem--f8e73f6a/",
+    "blurb": "Summons focus on Zion and the temple community; the nations are addressed as adversaries called to judgment.",
+    "searchText": "audience: judah and jerusalem group audience summons focus on zion and the temple community; the nations are addressed as adversaries called to judgment. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "audience"
+  },
+  {
+    "id": "g.beasts-groan-herds-perplexed--e77fd0c7",
+    "name": "Beasts groan; herds perplexed",
+    "type": "group",
+    "url": "/entities/g.beasts-groan-herds-perplexed--e77fd0c7/",
+    "blurb": "Animal suffering underscores human sin’s collateral damage.",
+    "searchText": "beasts groan; herds perplexed group creation animal suffering underscores human sin’s collateral damage. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "creation"
+  },
+  {
+    "id": "g.bridegroom-bride-withheld-from-chamber--6363e98e",
+    "name": "Bridegroom & bride withheld from chamber",
+    "type": "group",
+    "url": "/entities/g.bridegroom-bride-withheld-from-chamber--6363e98e/",
+    "blurb": "Even joys of marriage pause for corporate repentance—covenant takes precedence over celebration.",
+    "searchText": "bridegroom & bride withheld from chamber group assembly even joys of marriage pause for corporate repentance—covenant takes precedence over celebration. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "assembly"
+  },
+  {
+    "id": "g.drunkards-drinkers-of-wine--6e33e8c5",
+    "name": "Drunkards & drinkers of wine",
+    "type": "group",
+    "url": "/entities/g.drunkards-drinkers-of-wine--6e33e8c5/",
+    "blurb": "Called to awaken first; indulgence interrupted by the cutting off of new wine.",
+    "searchText": "drunkards & drinkers of wine group social called to awaken first; indulgence interrupted by the cutting off of new wine. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "social"
+  },
+  {
+    "id": "g.elders.gray-beards--4a9e0334",
+    "name": "Elders (gray‑beards)",
+    "type": "group",
+    "url": "/entities/g.elders.gray-beards--4a9e0334/",
+    "blurb": "First addressed to remember and testify; they convene fasts and anchor communal memory.",
+    "searchText": "elders (gray‑beards) group leaders first addressed to remember and testify; they convene fasts and anchor communal memory. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "leaders"
+  },
+  {
+    "id": "g.farmers-vinedressers--40082a30",
+    "name": "Farmers & vinedressers",
+    "type": "group",
+    "url": "/entities/g.farmers-vinedressers--40082a30/",
+    "blurb": "Economic backbone hit first by devastation—lament trained through agrarian loss.",
+    "searchText": "farmers & vinedressers group workforce economic backbone hit first by devastation—lament trained through agrarian loss. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "workforce"
+  },
+  {
+    "id": "g.infants-and-nursing-babies--0edbb162",
+    "name": "Infants and nursing babies",
+    "type": "group",
+    "url": "/entities/g.infants-and-nursing-babies--0edbb162/",
+    "blurb": "Extremes of age included so the whole body bears the fast—dependence highlights urgency.",
+    "searchText": "infants and nursing babies group assembly extremes of age included so the whole body bears the fast—dependence highlights urgency. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "assembly"
+  },
+  {
+    "id": "g.javan.greeks-ionians--6a9ab7a5",
+    "name": "Javan (Greeks/Ionians)",
+    "type": "group",
+    "url": "/entities/g.javan.greeks-ionians--6a9ab7a5/",
+    "blurb": "Distant buyers of Judean slaves—global market implicated in covenant crimes.",
+    "searchText": "javan (greeks/ionians) group nation distant buyers of judean slaves—global market implicated in covenant crimes. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "nation"
+  },
+  {
+    "id": "g.people-consecrated-assembly.qahal--4179e2d3",
+    "name": "People: consecrated assembly (qahal)",
+    "type": "group",
+    "url": "/entities/g.people-consecrated-assembly.qahal--4179e2d3/",
+    "blurb": "From infants to elders, bridegroom to bride—whole community gathered for emergency worship.",
+    "searchText": "people: consecrated assembly (qahal) group assembly from infants to elders, bridegroom to bride—whole community gathered for emergency worship. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "assembly"
+  },
+  {
+    "id": "g.philistia.all-the-districts--d5349f12",
+    "name": "Philistia (all the districts)",
+    "type": "group",
+    "url": "/entities/g.philistia.all-the-districts--d5349f12/",
+    "blurb": "Coastal enemies complicit in trafficking captives for profit.",
+    "searchText": "philistia (all the districts) group nation coastal enemies complicit in trafficking captives for profit. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "nation"
+  },
+  {
+    "id": "g.priests-ministers-of-yhwh--ccdef719",
+    "name": "Priests, ministers of YHWH",
+    "type": "group",
+    "url": "/entities/g.priests-ministers-of-yhwh--ccdef719/",
+    "blurb": "Weeping between porch and altar, priests model repentance and intercede for the people’s reproach to be lifted.",
+    "searchText": "priests, ministers of yhwh group priesthood weeping between porch and altar, priests model repentance and intercede for the people’s reproach to be lifted. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "priesthood"
+  },
+  {
+    "id": "g.remnant-on-mount-zion--f684305c",
+    "name": "Remnant on Mount Zion",
+    "type": "group",
+    "url": "/entities/g.remnant-on-mount-zion--f684305c/",
+    "blurb": "In Jerusalem there will be survivors whom the LORD calls—election reframed as mission.",
+    "searchText": "remnant on mount zion group remnant in jerusalem there will be survivors whom the lord calls—election reframed as mission. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "remnant"
+  },
+  {
+    "id": "g.tyre-and-sidon--5651ad1b",
+    "name": "Tyre and Sidon",
+    "type": "group",
+    "url": "/entities/g.tyre-and-sidon--5651ad1b/",
+    "blurb": "Phoenician traders indicted for plunder and slave-trading of Judeans.",
+    "searchText": "tyre and sidon group nation phoenician traders indicted for plunder and slave-trading of judeans. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "nation"
+  },
+  {
+    "id": "p.superscription-joel-son-of-pethuel--2f4bc59f",
+    "name": "Superscription: Joel son of Pethuel",
+    "type": "person",
+    "url": "/entities/p.superscription-joel-son-of-pethuel--2f4bc59f/",
+    "blurb": "Names the prophet and locates the book within Judah’s prophetic stream; precise reign-date is unstated.",
+    "searchText": "superscription: joel son of pethuel person prophet names the prophet and locates the book within judah’s prophetic stream; precise reign-date is unstated. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "prophet"
+  },
+  {
+    "id": "e.acts-2-reception-of-joel-2--a48b2874",
+    "name": "Acts 2 reception of Joel 2",
+    "type": "entity",
+    "url": "/entities/e.acts-2-reception-of-joel-2--a48b2874/",
+    "blurb": "Peter reads Pentecost as the ‘afterward’—outpoured Spirit signals the last days.",
+    "searchText": "acts 2 reception of joel 2 entity reception peter reads pentecost as the ‘afterward’—outpoured spirit signals the last days. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "reception"
+  },
+  {
+    "id": "e.afterward-i-will-pour-out-my-spirit-on-all-flesh--b50cbf74",
+    "name": "Afterward: I will pour out my Spirit on all flesh",
+    "type": "entity",
+    "url": "/entities/e.afterward-i-will-pour-out-my-spirit-on-all-flesh--b50cbf74/",
+    "blurb": "Pentecostal horizon: democratized prophecy (sons, daughters, old, young, servants) as sign of the age to come.",
+    "searchText": "afterward: i will pour out my spirit on all flesh entity spirit pentecostal horizon: democratized prophecy (sons, daughters, old, young, servants) as sign of the age to come. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "spirit"
+  },
+  {
+    "id": "e.between-porch-and-altar-prayer--bb1d7fcc",
+    "name": "Between porch and altar prayer",
+    "type": "entity",
+    "url": "/entities/e.between-porch-and-altar-prayer--bb1d7fcc/",
+    "blurb": "‘Spare your people… make not your heritage a reproach’—intercession centers God’s reputation among nations.",
+    "searchText": "between porch and altar prayer entity intercession ‘spare your people… make not your heritage a reproach’—intercession centers god’s reputation among nations. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "intercession"
+  },
+  {
+    "id": "e.between-porch-and-altar.intercession-locus--6e872585",
+    "name": "Between porch and altar (intercession locus)",
+    "type": "entity",
+    "url": "/entities/e.between-porch-and-altar.intercession-locus--6e872585/",
+    "blurb": "Spatial theology: priests stand in the hinge between God and people, pleading for mercy and reputation of the Name.",
+    "searchText": "between porch and altar (intercession locus) entity temple spatial theology: priests stand in the hinge between god and people, pleading for mercy and reputation of the name. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "temple"
+  },
+  {
+    "id": "e.blow-the-trumpet-in-zion.alarm--76d7a885",
+    "name": "Blow the trumpet in Zion (alarm)",
+    "type": "entity",
+    "url": "/entities/e.blow-the-trumpet-in-zion.alarm--76d7a885/",
+    "blurb": "Sirens of holiness: the shofar warns of the Day of YHWH—a sacred emergency broadcast.",
+    "searchText": "blow the trumpet in zion (alarm) entity liturgy sirens of holiness: the shofar warns of the day of yhwh—a sacred emergency broadcast. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "liturgy"
+  },
+  {
+    "id": "e.blow-the-trumpet-in-zion.fast--63707a17",
+    "name": "Blow the trumpet in Zion (fast)",
+    "type": "entity",
+    "url": "/entities/e.blow-the-trumpet-in-zion.fast--63707a17/",
+    "blurb": "Second blast convenes a holy fast and solemn assembly; sound organizes repentance.",
+    "searchText": "blow the trumpet in zion (fast) entity liturgy second blast convenes a holy fast and solemn assembly; sound organizes repentance. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "liturgy"
+  },
+  {
+    "id": "e.day-of-yhwh.near-and-great--78ca5d45",
+    "name": "Day of YHWH (near and great)",
+    "type": "entity",
+    "url": "/entities/e.day-of-yhwh.near-and-great--78ca5d45/",
+    "blurb": "Event and horizon: a crisis that unmasks idols and crowns God’s kingship over all nations.",
+    "searchText": "day of yhwh (near and great) entity day-of-yhwh event and horizon: a crisis that unmasks idols and crowns god’s kingship over all nations. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "day-of-yhwh"
+  },
+  {
+    "id": "e.divine-jealousy-and-pity--b4496d3a",
+    "name": "Divine jealousy and pity",
+    "type": "entity",
+    "url": "/entities/e.divine-jealousy-and-pity--b4496d3a/",
+    "blurb": "God is stirred to zeal for his land and compassion for his people—covenant mercy activated.",
+    "searchText": "divine jealousy and pity entity attribute god is stirred to zeal for his land and compassion for his people—covenant mercy activated. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "attribute"
+  },
+  {
+    "id": "e.earthquakes-heavens-tremble--1dab0234",
+    "name": "Earthquakes, heavens tremble",
+    "type": "entity",
+    "url": "/entities/e.earthquakes-heavens-tremble--1dab0234/",
+    "blurb": "Cosmos participates in judgment—seismic sympathy.",
+    "searchText": "earthquakes, heavens tremble entity portent cosmos participates in judgment—seismic sympathy. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "portent"
+  },
+  {
+    "id": "e.eden-before-them-desert-behind-them--b6b8bc2f",
+    "name": "Eden before them, desert behind them",
+    "type": "entity",
+    "url": "/entities/e.eden-before-them-desert-behind-them--b6b8bc2f/",
+    "blurb": "Reversal of creation—locust march leaves de‑creation in its wake.",
+    "searchText": "eden before them, desert behind them entity image reversal of creation—locust march leaves de‑creation in its wake. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "image"
+  },
+  {
+    "id": "e.everyone-who-calls-on-the-name-of-yhwh-shall-be-saved--a8d8b845",
+    "name": "Everyone who calls on the name of YHWH shall be saved",
+    "type": "entity",
+    "url": "/entities/e.everyone-who-calls-on-the-name-of-yhwh-shall-be-saved--a8d8b845/",
+    "blurb": "Open invitation anchored in Zion; later echoed in apostolic preaching.",
+    "searchText": "everyone who calls on the name of yhwh shall be saved entity salvation open invitation anchored in zion; later echoed in apostolic preaching. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "salvation"
+  },
+  {
+    "id": "e.fast-consecrate-a-fast-call-a-sacred-assembly--bf6ac14a",
+    "name": "Fast: consecrate a fast, call a sacred assembly",
+    "type": "entity",
+    "url": "/entities/e.fast-consecrate-a-fast-call-a-sacred-assembly--bf6ac14a/",
+    "blurb": "Fasting becomes national therapy—lean bodies saying what words cannot.",
+    "searchText": "fast: consecrate a fast, call a sacred assembly entity practice fasting becomes national therapy—lean bodies saying what words cannot. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "practice"
+  },
+  {
+    "id": "e.fields-wasted-ground-mourns--3568178e",
+    "name": "Fields wasted; ground mourns",
+    "type": "entity",
+    "url": "/entities/e.fields-wasted-ground-mourns--3568178e/",
+    "blurb": "Creation personified as grieving participant in covenant drama.",
+    "searchText": "fields wasted; ground mourns entity creation creation personified as grieving participant in covenant drama. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "creation"
+  },
+  {
+    "id": "e.foreigners-shall-never-again-pass-through-her--c3405024",
+    "name": "Foreigners shall never again pass through her",
+    "type": "entity",
+    "url": "/entities/e.foreigners-shall-never-again-pass-through-her--c3405024/",
+    "blurb": "Sanctity protected—no trampling of holy space by hostile powers.",
+    "searchText": "foreigners shall never again pass through her entity zion sanctity protected—no trampling of holy space by hostile powers. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "zion"
+  },
+  {
+    "id": "e.fountain-from-the-house-of-yhwh--d1ad2f53",
+    "name": "Fountain from the house of YHWH",
+    "type": "entity",
+    "url": "/entities/e.fountain-from-the-house-of-yhwh--d1ad2f53/",
+    "blurb": "Temple-spring irrigates the Valley of Shittim—Edenic waters return to heal land.",
+    "searchText": "fountain from the house of yhwh entity temple temple-spring irrigates the valley of shittim—edenic waters return to heal land. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "temple"
+  },
+  {
+    "id": "e.gnats-of-ash-and-dust.implied-in-drought--af6501b5",
+    "name": "Gnats of ash and dust (implied in drought)",
+    "type": "entity",
+    "url": "/entities/e.gnats-of-ash-and-dust.implied-in-drought--af6501b5/",
+    "blurb": "Parched creation hints at plague ecology—Joel’s silence roars in images.",
+    "searchText": "gnats of ash and dust (implied in drought) entity motif parched creation hints at plague ecology—joel’s silence roars in images. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "motif"
+  },
+  {
+    "id": "e.grain-offering-and-drink-offering-cut-off--d222be04",
+    "name": "Grain offering and drink offering cut off",
+    "type": "entity",
+    "url": "/entities/e.grain-offering-and-drink-offering-cut-off--d222be04/",
+    "blurb": "Temple liturgy stalls when fields fail—worship tied to economy and ecology.",
+    "searchText": "grain offering and drink offering cut off entity cult-economy temple liturgy stalls when fields fail—worship tied to economy and ecology. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "cult-economy"
+  },
+  {
+    "id": "e.i-will-restore-the-years-the-locust-has-eaten--3494422c",
+    "name": "I will restore the years the locust has eaten",
+    "type": "entity",
+    "url": "/entities/e.i-will-restore-the-years-the-locust-has-eaten--3494422c/",
+    "blurb": "Time itself redeemed; losses become sites of testimony.",
+    "searchText": "i will restore the years the locust has eaten entity restoration time itself redeemed; losses become sites of testimony. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "restoration"
+  },
+  {
+    "id": "e.isaiah-micah-plowshares-reversal--e2877b1d",
+    "name": "Isaiah–Micah plowshares reversal",
+    "type": "entity",
+    "url": "/entities/e.isaiah-micah-plowshares-reversal--e2877b1d/",
+    "blurb": "Joel’s muster to war flips Zion’s peace oracle—irony intensifies judgment theme.",
+    "searchText": "isaiah–micah plowshares reversal entity intertext joel’s muster to war flips zion’s peace oracle—irony intensifies judgment theme. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "intertext"
+  },
+  {
+    "id": "e.let-the-weak-say-i-am-a-warrior--14091bf5",
+    "name": "Let the weak say, ‘I am a warrior’",
+    "type": "entity",
+    "url": "/entities/e.let-the-weak-say-i-am-a-warrior--14091bf5/",
+    "blurb": "Bitter parody of empowerment—mustering for judgment, not justice.",
+    "searchText": "let the weak say, ‘i am a warrior’ entity war bitter parody of empowerment—mustering for judgment, not justice. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "war"
+  },
+  {
+    "id": "e.like-horses-like-chariots--a6371d31",
+    "name": "Like horses… like chariots",
+    "type": "entity",
+    "url": "/entities/e.like-horses-like-chariots--a6371d31/",
+    "blurb": "Sound and speed metaphors heighten dread; natural disaster reads like invasion.",
+    "searchText": "like horses… like chariots entity image sound and speed metaphors heighten dread; natural disaster reads like invasion. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "image"
+  },
+  {
+    "id": "e.locusts-as-yhwhs-army--d2e0261b",
+    "name": "Locusts as YHWH’s army",
+    "type": "entity",
+    "url": "/entities/e.locusts-as-yhwhs-army--d2e0261b/",
+    "blurb": "Similes of cavalry, chariots, and disciplined ranks reframe nature as a divine instrument of holy war.",
+    "searchText": "locusts as yhwh’s army entity theophany similes of cavalry, chariots, and disciplined ranks reframe nature as a divine instrument of holy war. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "theophany"
+  },
+  {
+    "id": "e.mountains-drip-new-wine-hills-flow-with-milk--58c2588e",
+    "name": "Mountains drip new wine; hills flow with milk",
+    "type": "entity",
+    "url": "/entities/e.mountains-drip-new-wine-hills-flow-with-milk--58c2588e/",
+    "blurb": "Hyperbolic agrarian joy—creation re‑enchanted under divine reign.",
+    "searchText": "mountains drip new wine; hills flow with milk entity new-creation hyperbolic agrarian joy—creation re‑enchanted under divine reign. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "new-creation"
+  },
+  {
+    "id": "e.multitudes-multitudes--fc02fd39",
+    "name": "Multitudes, multitudes…",
+    "type": "entity",
+    "url": "/entities/e.multitudes-multitudes--fc02fd39/",
+    "blurb": "Poetic doubling amplifies dread and decisiveness.",
+    "searchText": "multitudes, multitudes… entity rhetoric poetic doubling amplifies dread and decisiveness. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "rhetoric"
+  },
+  {
+    "id": "e.my-people-shall-never-again-be-put-to-shame--2a318b2f",
+    "name": "My people shall never again be put to shame",
+    "type": "entity",
+    "url": "/entities/e.my-people-shall-never-again-be-put-to-shame--2a318b2f/",
+    "blurb": "Reputation repaired; knowledge of God relocates identity.",
+    "searchText": "my people shall never again be put to shame entity restoration reputation repaired; knowledge of god relocates identity. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "restoration"
+  },
+  {
+    "id": "e.naming-shame-vs-name-of-yhwh--a99a06e3",
+    "name": "Naming shame vs. name of YHWH",
+    "type": "entity",
+    "url": "/entities/e.naming-shame-vs-name-of-yhwh--a99a06e3/",
+    "blurb": "Public disgrace replaced by public invocation—identity rebuilt by the Name.",
+    "searchText": "naming shame vs. name of yhwh entity theology public disgrace replaced by public invocation—identity rebuilt by the name. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "e.new-wine-cut-off--3ab9fe35",
+    "name": "New wine cut off",
+    "type": "entity",
+    "url": "/entities/e.new-wine-cut-off--3ab9fe35/",
+    "blurb": "Pleasure pipeline closes; convivial culture sobers to reality.",
+    "searchText": "new wine cut off entity economy pleasure pipeline closes; convivial culture sobers to reality. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "economy"
+  },
+  {
+    "id": "e.northern-army.driven-to-seas--4c77e665",
+    "name": "Northern army (driven to seas)",
+    "type": "entity",
+    "url": "/entities/e.northern-army.driven-to-seas--4c77e665/",
+    "blurb": "Whether locusts or foreign troops, the threat from the north is expelled—stench left as sign of victory.",
+    "searchText": "northern army (driven to seas) entity war whether locusts or foreign troops, the threat from the north is expelled—stench left as sign of victory. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "war"
+  },
+  {
+    "id": "e.oil-languishes--19d5274f",
+    "name": "Oil languishes",
+    "type": "entity",
+    "url": "/entities/e.oil-languishes--19d5274f/",
+    "blurb": "Olive-based economy collapses; light and anointing thin out.",
+    "searchText": "oil languishes entity economy olive-based economy collapses; light and anointing thin out. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "economy"
+  },
+  {
+    "id": "e.pastures-consumed-by-fire--a564ccda",
+    "name": "Pastures consumed by fire",
+    "type": "entity",
+    "url": "/entities/e.pastures-consumed-by-fire--a564ccda/",
+    "blurb": "Heat and drought turn fields into tinder—judgment through weather and flame.",
+    "searchText": "pastures consumed by fire entity creation heat and drought turn fields into tinder—judgment through weather and flame. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "creation"
+  },
+  {
+    "id": "e.priestly-diction-temple-centrality--93917aa6",
+    "name": "Priestly diction & temple centrality",
+    "type": "entity",
+    "url": "/entities/e.priestly-diction-temple-centrality--93917aa6/",
+    "blurb": "Joel’s language and remedies are cultically inflected—fasts, offerings, priests, and altar define the cure.",
+    "searchText": "priestly diction & temple centrality entity literary joel’s language and remedies are cultically inflected—fasts, offerings, priests, and altar define the cure. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "literary"
+  },
+  {
+    "id": "e.rains-early-and-latter--88a0a39f",
+    "name": "Rains: early and latter",
+    "type": "entity",
+    "url": "/entities/e.rains-early-and-latter--88a0a39f/",
+    "blurb": "Covenant weather returns; agricultural rhythms healed.",
+    "searchText": "rains: early and latter entity creation covenant weather returns; agricultural rhythms healed. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "creation"
+  },
+  {
+    "id": "e.removal-of-northern-threat--7421b482",
+    "name": "Removal of northern threat",
+    "type": "entity",
+    "url": "/entities/e.removal-of-northern-threat--7421b482/",
+    "blurb": "Enemy expelled—shame reversed before watching nations.",
+    "searchText": "removal of northern threat entity restoration enemy expelled—shame reversed before watching nations. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "restoration"
+  },
+  {
+    "id": "e.restoration-of-grain-wine-oil--68b9d61b",
+    "name": "Restoration of grain, wine, oil",
+    "type": "entity",
+    "url": "/entities/e.restoration-of-grain-wine-oil--68b9d61b/",
+    "blurb": "Liturgy restocked—grace measured in sacks and skins.",
+    "searchText": "restoration of grain, wine, oil entity restoration liturgy restocked—grace measured in sacks and skins. ",
+    "references": 1,
+    "books": [
+      "Joel"
+    ],
+    "category": "restoration"
+  }
+]

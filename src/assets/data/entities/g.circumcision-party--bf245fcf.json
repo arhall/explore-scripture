@@ -1,0 +1,27 @@
+{
+  "name": "Circumcision party",
+  "type": "group",
+  "category": "opponents",
+  "references": [
+    "Gal 2:12",
+    "Titus 1:10"
+  ],
+  "aka": [
+    "those of the circumcision"
+  ],
+  "id": "g.circumcision-party--bf245fcf",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Galatians": [
+      2
+    ],
+    "Titus": [
+      1
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "saints",
+  "type": "group",
+  "category": "addressees",
+  "references": [
+    "Eph 1:1"
+  ],
+  "aka": [],
+  "id": "g.saints--a0084a21",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      1
+    ]
+  }
+}

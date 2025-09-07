@@ -1,0 +1,12 @@
+{
+  "id": "e.qumran-second-temple-apocalyptic-reception--f2c4606b",
+  "name": "Qumran/Second Temple apocalyptic reception",
+  "type": "entity",
+  "references": [],
+  "category": "reception-jewish",
+  "blurb": "Zechariah’s visions and Branch figure echo in sectarian and apocalyptic literature.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

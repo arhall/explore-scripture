@@ -1,0 +1,42 @@
+{
+  "book": "Romans",
+  "chapter": 11,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "f.ot-in-romans-9-11-index--50459e26",
+      "name": "OT in Romans 9–11 (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.doxology-rom-11-33-36--18314b5f",
+      "name": "Doxology (Rom 11:33–36)",
+      "type": "figure",
+      "role": "doxology",
+      "refs_count": 1
+    },
+    {
+      "id": "f.olive-tree-grafting-of-gentiles--ec119a82",
+      "name": "Olive tree: grafting of Gentiles",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1
+    },
+    {
+      "id": "f.mystery-fullness-of-gentiles-all-israel--770c1983",
+      "name": "Mystery: fullness of Gentiles; all Israel",
+      "type": "figure",
+      "role": "mystery",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-flow-index--23eef6cd",
+      "name": "Argument flow (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 8
+    }
+  ]
+}

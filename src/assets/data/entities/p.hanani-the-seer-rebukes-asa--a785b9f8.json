@@ -1,0 +1,18 @@
+{
+  "name": "Hanani the seer rebukes Asa",
+  "type": "person",
+  "references": [
+    "2 Chronicles 16:7–10"
+  ],
+  "blurb": "‘The eyes of the LORD range…’—trust critique leads to prison for the prophet and disease for the king.",
+  "category": "prophetic",
+  "id": "p.hanani-the-seer-rebukes-asa--a785b9f8",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "2 Chronicles": [
+      16
+    ]
+  }
+}

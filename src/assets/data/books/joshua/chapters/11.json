@@ -1,0 +1,21 @@
+{
+  "book": "Joshua",
+  "chapter": 11,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "t.jabin-king-of-hazor--801fbd73",
+      "name": "Jabin king of Hazor",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.hazor.city--1d0d46e2",
+      "name": "Hazor (city)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    }
+  ]
+}

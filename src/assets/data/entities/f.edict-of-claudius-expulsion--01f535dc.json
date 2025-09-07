@@ -1,0 +1,28 @@
+{
+  "name": "Edict of Claudius (expulsion)",
+  "type": "figure",
+  "category": "imperial-edict",
+  "references": [
+    "Acts 18:2"
+  ],
+  "chronology": {
+    "approx_year": 49,
+    "anchor": "Claudius expels Jews from Rome",
+    "confidence": "medium"
+  },
+  "aka": [],
+  "id": "f.edict-of-claudius-expulsion--01f535dc",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      18
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Assyria as empire",
+  "type": "group",
+  "references": [
+    "Background"
+  ],
+  "blurb": "Known for brutal warfare and mass deportations; Nineveh’s repentance therefore shocks and instructs Israel.",
+  "category": "empire",
+  "id": "g.assyria-as-empire--bfa08ba1",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Jethro (Reuel)",
+  "type": "person",
+  "references": [
+    "Exodus 2:18; 3:1",
+    "Exodus 18"
+  ],
+  "blurb": "Priest of Midian and Moses’ father-in-law; hosts Moses in exile and later counsels him in leadership.",
+  "aka": [
+    "Reuel"
+  ],
+  "category": "narrative",
+  "cross_references": [
+    "Exodus 18"
+  ],
+  "id": "p.jethro.reuel--3e8098d5",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      2,
+      18
+    ]
+  }
+}

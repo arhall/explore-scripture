@@ -1,0 +1,24 @@
+{
+  "name": "Laban",
+  "type": "person",
+  "references": [
+    "Genesis 24:29–31,50–60"
+  ],
+  "blurb": "Brother of Rebekah who extends hospitality to the servant; his more complex dealings emerge later in Jacob’s story.",
+  "category": "narrative",
+  "cross_references": [
+    "Genesis 29–31"
+  ],
+  "id": "p.laban.gene-24-29-31-50-60--0d6fa190",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "p.laban.gene-29-31--b1f2c20e"
+  ],
+  "book_references": {
+    "Genesis": [
+      24
+    ]
+  }
+}

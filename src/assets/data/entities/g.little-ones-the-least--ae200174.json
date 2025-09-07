@@ -1,0 +1,25 @@
+{
+  "name": "Little ones (the least)",
+  "type": "group",
+  "category": "community",
+  "references": [
+    "Matt 18:1–6",
+    "Matt 18:10"
+  ],
+  "blurb": "Greatness as humble care for the vulnerable; angels and the Shepherd’s pursuit define community ethos.",
+  "aka": [],
+  "id": "g.little-ones-the-least--ae200174",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      18
+    ]
+  }
+}

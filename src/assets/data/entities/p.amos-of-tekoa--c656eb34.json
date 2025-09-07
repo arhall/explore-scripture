@@ -1,0 +1,21 @@
+{
+  "name": "Amos of Tekoa",
+  "type": "person",
+  "references": [
+    "Amos 1:1; 7:14–15"
+  ],
+  "blurb": "Sheepbreeder and dresser of sycamore figs from Tekoa. A layman summoned by YHWH to confront northern Israel’s injustice and cultic corruption.",
+  "relations": {
+    "hometown": "Tekoa"
+  },
+  "category": "prophet",
+  "id": "p.amos-of-tekoa--c656eb34",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Amos": [
+      1
+    ]
+  }
+}

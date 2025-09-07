@@ -1,0 +1,17 @@
+{
+  "name": "Temple of God",
+  "type": "entity",
+  "category": "temple",
+  "references": [
+    "2 Thess 2:4"
+  ],
+  "aka": [
+    "Temple"
+  ],
+  "id": "e.temple-of-god--b568897a",
+  "book_references": {
+    "2 Thessalonians": [
+      2
+    ]
+  }
+}

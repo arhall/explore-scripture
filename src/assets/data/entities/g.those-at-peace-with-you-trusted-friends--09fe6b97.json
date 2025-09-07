@@ -1,0 +1,18 @@
+{
+  "name": "Those at peace with you / trusted friends",
+  "type": "group",
+  "references": [
+    "Obadiah 1:7"
+  ],
+  "blurb": "Inner‑circle partners lead Edom to the border; betrayal from within undermines fortress pride.",
+  "category": "allies",
+  "id": "g.those-at-peace-with-you-trusted-friends--09fe6b97",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Obadiah": [
+      1
+    ]
+  }
+}

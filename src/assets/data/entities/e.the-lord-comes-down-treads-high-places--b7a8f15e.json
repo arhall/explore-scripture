@@ -1,0 +1,18 @@
+{
+  "id": "e.the-lord-comes-down-treads-high-places--b7a8f15e",
+  "name": "The LORD comes down, treads high places",
+  "type": "entity",
+  "references": [
+    "Micah 1:3"
+  ],
+  "category": "theophany",
+  "blurb": "Divine warrior imagery: mountains melt like wax before the presence of the LORD.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      1
+    ]
+  }
+}

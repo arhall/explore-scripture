@@ -1,0 +1,18 @@
+{
+  "name": "Divine jealousy and pity",
+  "type": "entity",
+  "references": [
+    "Joel 2:18"
+  ],
+  "blurb": "God is stirred to zeal for his land and compassion for his people—covenant mercy activated.",
+  "category": "attribute",
+  "id": "e.divine-jealousy-and-pity--b4496d3a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      2
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Festival of Tabernacles (Booths)",
+  "type": "figure",
+  "category": "festival",
+  "references": [
+    "John 7:2",
+    "John 7:37",
+    "John 8:12"
+  ],
+  "festival": [
+    "Tabernacles"
+  ],
+  "aka": [],
+  "id": "f.festival-of-tabernacles-booths--4051e0c5",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      7,
+      8
+    ]
+  }
+}

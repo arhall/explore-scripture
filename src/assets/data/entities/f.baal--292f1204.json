@@ -1,0 +1,18 @@
+{
+  "name": "Baal",
+  "type": "figure",
+  "references": [
+    "Hosea 2:8"
+  ],
+  "blurb": "Idol husband, rival to YHWH.",
+  "category": "idol",
+  "id": "f.baal--292f1204",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Hosea": [
+      2
+    ]
+  }
+}

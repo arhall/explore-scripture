@@ -1,0 +1,710 @@
+[
+  {
+    "id": "d.holy-spirit--ad652b9c",
+    "name": "Holy Spirit",
+    "type": "divine",
+    "url": "/entities/d.holy-spirit--ad652b9c/",
+    "blurb": "Divine agent of conception, anointing, speech, and mission—integral to the triadic baptismal name.",
+    "searchText": "holy spirit divine theology divine agent of conception, anointing, speech, and mission—integral to the triadic baptismal name. ",
+    "references": 53,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "2 Corinthians",
+      "Galatians",
+      "1 Corinthians",
+      "Philippians",
+      "Ephesians",
+      "Romans",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "p.paul-saul--d4c08ff1",
+    "name": "Paul (Saul)",
+    "type": "person",
+    "url": "/entities/p.paul-saul--d4c08ff1/",
+    "blurb": "",
+    "searchText": "paul (saul) person apostle  ",
+    "references": 24,
+    "books": [
+      "Acts",
+      "Galatians",
+      "Philippians",
+      "Ephesians",
+      "Romans",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "2 Peter"
+    ],
+    "category": "apostle"
+  },
+  {
+    "id": "f.argument-map-index--c44b9b3a",
+    "name": "Argument map (index)",
+    "type": "figure",
+    "url": "/entities/f.argument-map-index--c44b9b3a/",
+    "blurb": "",
+    "searchText": "argument map (index) figure index  ",
+    "references": 17,
+    "books": [
+      "2 Corinthians",
+      "Galatians",
+      "1 Corinthians",
+      "Ephesians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John"
+    ],
+    "category": "index"
+  },
+  {
+    "id": "p.timothy--227fb1d9",
+    "name": "Timothy",
+    "type": "person",
+    "url": "/entities/p.timothy--227fb1d9/",
+    "blurb": "",
+    "searchText": "timothy person coworker  ",
+    "references": 12,
+    "books": [
+      "Acts",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Philemon",
+      "Hebrews"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "p.silas-silvanus--3ff90d56",
+    "name": "Silas (Silvanus)",
+    "type": "person",
+    "url": "/entities/p.silas-silvanus--3ff90d56/",
+    "blurb": "",
+    "searchText": "silas (silvanus) person coworker  ",
+    "references": 4,
+    "books": [
+      "Acts",
+      "1 Thessalonians",
+      "2 Thessalonians"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "g.church-of-the-thessalonians--e62e69ff",
+    "name": "Church of the Thessalonians",
+    "type": "group",
+    "url": "/entities/g.church-of-the-thessalonians--e62e69ff/",
+    "blurb": "",
+    "searchText": "church of the thessalonians group assembly  ",
+    "references": 3,
+    "books": [
+      "1 Thessalonians",
+      "2 Thessalonians"
+    ],
+    "category": "assembly"
+  },
+  {
+    "id": "g.idle-disorderly-ataktos--ca4ba91d",
+    "name": "Idle/Disorderly (ataktos)",
+    "type": "group",
+    "url": "/entities/g.idle-disorderly-ataktos--ca4ba91d/",
+    "blurb": "",
+    "searchText": "idle/disorderly (ataktos) group work-ethic  ",
+    "references": 2,
+    "books": [
+      "1 Thessalonians",
+      "2 Thessalonians"
+    ],
+    "category": "work-ethic"
+  },
+  {
+    "id": "g.busybodies--5238ba79",
+    "name": "Busybodies",
+    "type": "group",
+    "url": "/entities/g.busybodies--5238ba79/",
+    "blurb": "",
+    "searchText": "busybodies group work-ethic  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "work-ethic"
+  },
+  {
+    "id": "g.delivered-from-wicked-and-evil-men--7a798c6b",
+    "name": "Delivered from wicked and evil men",
+    "type": "group",
+    "url": "/entities/g.delivered-from-wicked-and-evil-men--7a798c6b/",
+    "blurb": "",
+    "searchText": "delivered from wicked and evil men group opponents  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "opponents"
+  },
+  {
+    "id": "g.faith-grows-love-increases--a9d50ce4",
+    "name": "Faith grows; love increases",
+    "type": "group",
+    "url": "/entities/g.faith-grows-love-increases--a9d50ce4/",
+    "blurb": "",
+    "searchText": "faith grows; love increases group virtue  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "virtue"
+  },
+  {
+    "id": "g.glorified-in-his-saints--013321c5",
+    "name": "Glorified in his saints",
+    "type": "group",
+    "url": "/entities/g.glorified-in-his-saints--013321c5/",
+    "blurb": "",
+    "searchText": "glorified in his saints group saints  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "saints"
+  },
+  {
+    "id": "g.persecutions-and-afflictions--8d31322e",
+    "name": "Persecutions and afflictions",
+    "type": "group",
+    "url": "/entities/g.persecutions-and-afflictions--8d31322e/",
+    "blurb": "",
+    "searchText": "persecutions and afflictions group suffering  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "suffering"
+  },
+  {
+    "id": "g.those-who-do-not-love-the-truth--c5e2d09a",
+    "name": "Those who do not love the truth",
+    "type": "group",
+    "url": "/entities/g.those-who-do-not-love-the-truth--c5e2d09a/",
+    "blurb": "",
+    "searchText": "those who do not love the truth group deceived  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "deceived"
+  },
+  {
+    "id": "g.unwilling-to-work-rule-target--a6efecc3",
+    "name": "Unwilling to work (rule target)",
+    "type": "group",
+    "url": "/entities/g.unwilling-to-work-rule-target--a6efecc3/",
+    "blurb": "",
+    "searchText": "unwilling to work (rule target) group subset  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "subset"
+  },
+  {
+    "id": "g.vengeance-on-those-who-do-not-obey--ec2dcd98",
+    "name": "Vengeance on those who do not obey",
+    "type": "group",
+    "url": "/entities/g.vengeance-on-those-who-do-not-obey--ec2dcd98/",
+    "blurb": "",
+    "searchText": "vengeance on those who do not obey group judgment  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "judgment"
+  },
+  {
+    "id": "g.warn-as-a-brother-cohort--8892c35e",
+    "name": "Warn-as-a-brother cohort",
+    "type": "group",
+    "url": "/entities/g.warn-as-a-brother-cohort--8892c35e/",
+    "blurb": "",
+    "searchText": "warn-as-a-brother cohort group discipline  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "discipline"
+  },
+  {
+    "id": "e.temple-of-god--b568897a",
+    "name": "Temple of God",
+    "type": "entity",
+    "url": "/entities/e.temple-of-god--b568897a/",
+    "blurb": "",
+    "searchText": "temple of god entity temple  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "temple"
+  },
+  {
+    "id": "f.advance-of-the-word--72d32cd4",
+    "name": "Advance of the word",
+    "type": "figure",
+    "url": "/entities/f.advance-of-the-word--72d32cd4/",
+    "blurb": "",
+    "searchText": "advance of the word figure mission  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "mission"
+  },
+  {
+    "id": "f.affliction-to-those-who-afflict-you--9d27da22",
+    "name": "Affliction to those who afflict you",
+    "type": "figure",
+    "url": "/entities/f.affliction-to-those-who-afflict-you--9d27da22/",
+    "blurb": "",
+    "searchText": "affliction to those who afflict you figure reversal  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "reversal"
+  },
+  {
+    "id": "f.alarmist-spoken-word--275d86e6",
+    "name": "Alarmist spoken word",
+    "type": "figure",
+    "url": "/entities/f.alarmist-spoken-word--275d86e6/",
+    "blurb": "",
+    "searchText": "alarmist spoken word figure disturbance  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "disturbance"
+  },
+  {
+    "id": "f.apostasy-rebellion--d89c8338",
+    "name": "Apostasy (rebellion)",
+    "type": "figure",
+    "url": "/entities/f.apostasy-rebellion--d89c8338/",
+    "blurb": "",
+    "searchText": "apostasy (rebellion) figure eschatology  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "eschatology"
+  },
+  {
+    "id": "f.apostolic-example-worked-night-and-day--af5d5607",
+    "name": "Apostolic example: worked night and day",
+    "type": "figure",
+    "url": "/entities/f.apostolic-example-worked-night-and-day--af5d5607/",
+    "blurb": "",
+    "searchText": "apostolic example: worked night and day figure example  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "example"
+  },
+  {
+    "id": "f.called-through-our-gospel--e70f55b4",
+    "name": "Called through our gospel",
+    "type": "figure",
+    "url": "/entities/f.called-through-our-gospel--e70f55b4/",
+    "blurb": "",
+    "searchText": "called through our gospel figure calling  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "calling"
+  },
+  {
+    "id": "f.chosen-for-salvation-sanctified-by-the-spirit--d2631793",
+    "name": "Chosen for salvation: sanctified by the Spirit",
+    "type": "figure",
+    "url": "/entities/f.chosen-for-salvation-sanctified-by-the-spirit--d2631793/",
+    "blurb": "",
+    "searchText": "chosen for salvation: sanctified by the spirit figure election  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "election"
+  },
+  {
+    "id": "f.comfort-and-strengthen-hearts--cd4bd5b1",
+    "name": "Comfort and strengthen hearts",
+    "type": "figure",
+    "url": "/entities/f.comfort-and-strengthen-hearts--cd4bd5b1/",
+    "blurb": "",
+    "searchText": "comfort and strengthen hearts figure prayer  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "prayer"
+  },
+  {
+    "id": "f.delusion-god-sends-strong-delusion--80ed31eb",
+    "name": "Delusion (God sends strong delusion)",
+    "type": "figure",
+    "url": "/entities/f.delusion-god-sends-strong-delusion--80ed31eb/",
+    "blurb": "",
+    "searchText": "delusion (god sends strong delusion) figure judicial-hardening  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "judicial-hardening"
+  },
+  {
+    "id": "f.direct-your-hearts-to-the-love-of-god-and-steadfastness-of-christ--de443360",
+    "name": "Direct your hearts to the love of God and steadfastness of Christ",
+    "type": "figure",
+    "url": "/entities/f.direct-your-hearts-to-the-love-of-god-and-steadfastness-of-christ--de443360/",
+    "blurb": "",
+    "searchText": "direct your hearts to the love of god and steadfastness of christ figure prayer  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "prayer"
+  },
+  {
+    "id": "f.do-not-be-quickly-shaken--1bf74f1d",
+    "name": "Do not be quickly shaken",
+    "type": "figure",
+    "url": "/entities/f.do-not-be-quickly-shaken--1bf74f1d/",
+    "blurb": "",
+    "searchText": "do not be quickly shaken figure pastoral  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "pastoral"
+  },
+  {
+    "id": "f.do-not-grow-weary-in-doing-good--9ccbcbfd",
+    "name": "Do not grow weary in doing good",
+    "type": "figure",
+    "url": "/entities/f.do-not-grow-weary-in-doing-good--9ccbcbfd/",
+    "blurb": "",
+    "searchText": "do not grow weary in doing good figure exhortation  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "exhortation"
+  },
+  {
+    "id": "f.eternal-destruction-away-from-the-presence--d6e308f3",
+    "name": "Eternal destruction away from the presence",
+    "type": "figure",
+    "url": "/entities/f.eternal-destruction-away-from-the-presence--d6e308f3/",
+    "blurb": "",
+    "searchText": "eternal destruction away from the presence figure judgment  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "judgment"
+  },
+  {
+    "id": "f.gathering-to-him-episynagoge--831a44af",
+    "name": "Gathering to him (episynagoge)",
+    "type": "figure",
+    "url": "/entities/f.gathering-to-him-episynagoge--831a44af/",
+    "blurb": "",
+    "searchText": "gathering to him (episynagoge) figure eschatology  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "eschatology"
+  },
+  {
+    "id": "f.grace-be-with-you-all--5327c983",
+    "name": "Grace be with you all",
+    "type": "figure",
+    "url": "/entities/f.grace-be-with-you-all--5327c983/",
+    "blurb": "",
+    "searchText": "grace be with you all figure benediction  f.grace-be-with-you-all--0fd6c20a",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "benediction"
+  },
+  {
+    "id": "f.if-anyone-is-unwilling-to-work-neither-let-him-eat--99dd1e31",
+    "name": "If anyone is unwilling to work, neither let him eat",
+    "type": "figure",
+    "url": "/entities/f.if-anyone-is-unwilling-to-work-neither-let-him-eat--99dd1e31/",
+    "blurb": "",
+    "searchText": "if anyone is unwilling to work, neither let him eat figure rule  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "rule"
+  },
+  {
+    "id": "f.keep-away-from-every-brother-walking-disorderly--af475863",
+    "name": "Keep away from every brother walking disorderly",
+    "type": "figure",
+    "url": "/entities/f.keep-away-from-every-brother-walking-disorderly--af475863/",
+    "blurb": "",
+    "searchText": "keep away from every brother walking disorderly figure discipline  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "discipline"
+  },
+  {
+    "id": "f.kill-with-the-breath-of-his-mouth-isa-echo--6b31b4e6",
+    "name": "Kill with the breath of his mouth (Isa echo)",
+    "type": "figure",
+    "url": "/entities/f.kill-with-the-breath-of-his-mouth-isa-echo--6b31b4e6/",
+    "blurb": "",
+    "searchText": "kill with the breath of his mouth (isa echo) figure judgment  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "judgment"
+  },
+  {
+    "id": "f.lawless-one-s-pseudo-signs-and-wonders--fcffa6e6",
+    "name": "Lawless one’s pseudo-signs and wonders",
+    "type": "figure",
+    "url": "/entities/f.lawless-one-s-pseudo-signs-and-wonders--fcffa6e6/",
+    "blurb": "",
+    "searchText": "lawless one’s pseudo-signs and wonders figure deception  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "deception"
+  },
+  {
+    "id": "f.lord-of-peace-give-peace-always--540cac26",
+    "name": "Lord of peace give peace always",
+    "type": "figure",
+    "url": "/entities/f.lord-of-peace-give-peace-always--540cac26/",
+    "blurb": "",
+    "searchText": "lord of peace give peace always figure benediction  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "benediction"
+  },
+  {
+    "id": "f.man-of-lawlessness-son-of-destruction--b0f1d2b1",
+    "name": "Man of Lawlessness (Son of Destruction)",
+    "type": "figure",
+    "url": "/entities/f.man-of-lawlessness-son-of-destruction--b0f1d2b1/",
+    "blurb": "",
+    "searchText": "man of lawlessness (son of destruction) figure eschatology  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "eschatology"
+  },
+  {
+    "id": "f.mark-that-one-and-have-nothing-to-do-shame--57cdae84",
+    "name": "Mark that one and have nothing to do (shame)",
+    "type": "figure",
+    "url": "/entities/f.mark-that-one-and-have-nothing-to-do-shame--57cdae84/",
+    "blurb": "",
+    "searchText": "mark that one and have nothing to do (shame) figure discipline  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "discipline"
+  },
+  {
+    "id": "f.mystery-of-lawlessness--a1101aec",
+    "name": "Mystery of Lawlessness",
+    "type": "figure",
+    "url": "/entities/f.mystery-of-lawlessness--a1101aec/",
+    "blurb": "",
+    "searchText": "mystery of lawlessness figure mystery  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "mystery"
+  },
+  {
+    "id": "f.parousia-of-the-lord--77d0a341",
+    "name": "Parousia of the Lord",
+    "type": "figure",
+    "url": "/entities/f.parousia-of-the-lord--77d0a341/",
+    "blurb": "",
+    "searchText": "parousia of the lord figure eschatology  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "eschatology"
+  },
+  {
+    "id": "f.paul-s-hand-sign-in-every-letter--f72c12af",
+    "name": "Paul’s hand—sign in every letter",
+    "type": "figure",
+    "url": "/entities/f.paul-s-hand-sign-in-every-letter--f72c12af/",
+    "blurb": "",
+    "searchText": "paul’s hand—sign in every letter figure autograph  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "autograph"
+  },
+  {
+    "id": "f.prayer-to-fulfill-every-resolve-for-good--467746e5",
+    "name": "Prayer to fulfill every resolve for good",
+    "type": "figure",
+    "url": "/entities/f.prayer-to-fulfill-every-resolve-for-good--467746e5/",
+    "blurb": "",
+    "searchText": "prayer to fulfill every resolve for good figure prayer  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "prayer"
+  },
+  {
+    "id": "f.pseudo-pauline-letter-as-if-from-us--5ab6c580",
+    "name": "Pseudo-Pauline letter (as if from us)",
+    "type": "figure",
+    "url": "/entities/f.pseudo-pauline-letter-as-if-from-us--5ab6c580/",
+    "blurb": "",
+    "searchText": "pseudo-pauline letter (as if from us) figure pseudepigraph  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "pseudepigraph"
+  },
+  {
+    "id": "f.purported-spirit-utterance--4cf7e841",
+    "name": "Purported spirit utterance",
+    "type": "figure",
+    "url": "/entities/f.purported-spirit-utterance--4cf7e841/",
+    "blurb": "",
+    "searchText": "purported spirit utterance figure disturbance  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "disturbance"
+  },
+  {
+    "id": "f.restrainer-masculine-he-who-restrains--ceb85965",
+    "name": "Restrainer (masculine: he who restrains)",
+    "type": "figure",
+    "url": "/entities/f.restrainer-masculine-he-who-restrains--ceb85965/",
+    "blurb": "",
+    "searchText": "restrainer (masculine: he who restrains) figure restrainer  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "restrainer"
+  },
+  {
+    "id": "f.restrainer-neuter-what-restrains--1e9c9733",
+    "name": "Restrainer (neuter: what restrains)",
+    "type": "figure",
+    "url": "/entities/f.restrainer-neuter-what-restrains--1e9c9733/",
+    "blurb": "",
+    "searchText": "restrainer (neuter: what restrains) figure restrainer  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "restrainer"
+  },
+  {
+    "id": "f.revelation-of-the-lord-jesus-from-heaven--83a764c6",
+    "name": "Revelation of the Lord Jesus from heaven",
+    "type": "figure",
+    "url": "/entities/f.revelation-of-the-lord-jesus-from-heaven--83a764c6/",
+    "blurb": "",
+    "searchText": "revelation of the lord jesus from heaven figure apocalypse  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "apocalypse"
+  },
+  {
+    "id": "f.righteous-judgment-of-god--424ed7a4",
+    "name": "Righteous judgment of God",
+    "type": "figure",
+    "url": "/entities/f.righteous-judgment-of-god--424ed7a4/",
+    "blurb": "",
+    "searchText": "righteous judgment of god figure judgment  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "judgment"
+  },
+  {
+    "id": "f.sits-in-the-temple-of-god--b03167c7",
+    "name": "Sits in the Temple of God",
+    "type": "figure",
+    "url": "/entities/f.sits-in-the-temple-of-god--b03167c7/",
+    "blurb": "",
+    "searchText": "sits in the temple of god figure claim  ",
+    "references": 1,
+    "books": [
+      "2 Thessalonians"
+    ],
+    "category": "claim"
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "book": "Esther",
+  "chapter": 2,
+  "entity_count": 7,
+  "entities": [
+    {
+      "id": "e.search-for-a-new-queen.virgin-candidates-gathered--4f57d241",
+      "name": "Search for a new queen (virgin candidates gathered)",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1
+    },
+    {
+      "id": "p.hegai.custodian-of-the-women--d19615b3",
+      "name": "Hegai (custodian of the women)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.shaashgaz.keeper-of-the-concubines--d07df965",
+      "name": "Shaashgaz (keeper of the concubines)",
+      "type": "person",
+      "role": "record",
+      "refs_count": 1
+    },
+    {
+      "id": "p.esther.hadassah--5f54df76",
+      "name": "Esther (Hadassah)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.mordecai-son-of-jair-son-of-shimei-son-of-kish.benjamite--bcbe6505",
+      "name": "Mordecai son of Jair, son of Shimei, son of Kish (Benjamite)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.bigthan-and-teresh.conspirators--3c7e31b2",
+      "name": "Bigthan and Teresh (conspirators)",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1
+    },
+    {
+      "id": "e.banquet-4-esthers-coronation-feast--01d7504a",
+      "name": "Banquet 4: Esther’s coronation feast",
+      "type": "entity",
+      "role": "festival",
+      "refs_count": 1
+    }
+  ]
+}

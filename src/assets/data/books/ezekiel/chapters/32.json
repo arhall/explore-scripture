@@ -1,0 +1,42 @@
+{
+  "book": "Ezekiel",
+  "chapter": 32,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "g.egypt--ab1ad00f",
+      "name": "Egypt",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 6
+    },
+    {
+      "id": "p.pharaoh.hophra-apries-horizon--5a8042d1",
+      "name": "Pharaoh (Hophra/Apries horizon)",
+      "type": "person",
+      "role": "pharaoh",
+      "refs_count": 1
+    },
+    {
+      "id": "e.laments-over-pharaoh-and-egypt--c570199f",
+      "name": "Laments over Pharaoh and Egypt",
+      "type": "entity",
+      "role": "lament",
+      "refs_count": 1
+    },
+    {
+      "id": "e.twelfth-year-first-day--dd0d84c4",
+      "name": "Twelfth year, first day (oracle vs Egypt)",
+      "type": "entity",
+      "role": "chronology",
+      "refs_count": 1
+    },
+    {
+      "id": "e.twelfth-year-twelfth-month--fe70706f",
+      "name": "Twelfth year, twelfth month (Egypt lament)",
+      "type": "entity",
+      "role": "chronology",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "e.vine-and-fig-tree-peace-ideal--4e1a93fd",
+  "name": "Vine & fig tree peace ideal",
+  "type": "entity",
+  "references": [
+    "Micah 4:4"
+  ],
+  "category": "agrarian",
+  "blurb": "Domestic abundance and safety—shalom pictured as simple plenty.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      4
+    ]
+  }
+}

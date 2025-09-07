@@ -1,0 +1,18 @@
+{
+  "name": "Priests, ministers of YHWH",
+  "type": "group",
+  "references": [
+    "Joel 1:9,13; 2:17"
+  ],
+  "blurb": "Weeping between porch and altar, priests model repentance and intercede for the people’s reproach to be lifted.",
+  "category": "priesthood",
+  "id": "g.priests-ministers-of-yhwh--ccdef719",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      1
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "The test of manna and clothing that did not wear out",
+  "type": "entity",
+  "references": [
+    "Deuteronomy 8:2–4"
+  ],
+  "blurb": "Wilderness pedagogy of dependence—bread alone is not enough, but every word from God.",
+  "category": "narrative",
+  "cross_references": [
+    "Matthew 4:4"
+  ],
+  "id": "e.the-test-of-manna-and-clothing-that-did-not-wear-out--e5712519",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Deuteronomy": [
+      8
+    ]
+  }
+}

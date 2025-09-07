@@ -1,0 +1,18 @@
+{
+  "id": "e.staff-favor--cbf57834",
+  "name": "Staff Favor",
+  "type": "entity",
+  "references": [
+    "Zech 11:10"
+  ],
+  "category": "shepherd-implement",
+  "blurb": "Instrument representing covenant grace.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      11
+    ]
+  }
+}

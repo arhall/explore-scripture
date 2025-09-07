@@ -1,0 +1,31 @@
+{
+  "name": "Golden chain",
+  "type": "figure",
+  "category": "salvation-order",
+  "references": [
+    "Rom 8:29–30"
+  ],
+  "greek_terms": [
+    {
+      "term": "προγινώσκω",
+      "gloss": "foreknow"
+    },
+    {
+      "term": "προορίζω",
+      "gloss": "predestine"
+    }
+  ],
+  "aka": [],
+  "id": "f.golden-chain--338feff6",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      8
+    ]
+  }
+}

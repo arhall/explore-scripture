@@ -1,0 +1,18 @@
+{
+  "id": "e.paneled-houses--c4becbe9",
+  "name": "Paneled houses",
+  "type": "entity",
+  "references": [
+    "Hag 1:4"
+  ],
+  "category": "domestic-comfort",
+  "blurb": "Symbol of misaligned priorities—lavished attention on private dwellings while the house lies waste.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      1
+    ]
+  }
+}

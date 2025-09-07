@@ -1,0 +1,56 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 1,
+  "entity_count": 7,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "p.caleb-son-of-jephunneh--2d6c16cf",
+      "name": "Caleb son of Jephunneh",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 4
+    },
+    {
+      "id": "p.joshua-son-of-nun--f4f7e0ff",
+      "name": "Joshua son of Nun",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.people-of-israel--ecedc898",
+      "name": "People of Israel (second generation)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.amorites--a542ead1",
+      "name": "Amorites (as a people)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.mount-horeb-in-review.sinai--722ad164",
+      "name": "Mount Horeb (Sinai) in review",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    },
+    {
+      "id": "e.kadesh-barnea.rebellion-recalled--e1d3760a",
+      "name": "Kadesh-barnea (rebellion recalled)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Hamor the Hivite",
+  "type": "person",
+  "references": [
+    "Genesis 34"
+  ],
+  "blurb": "Father of Shechem who negotiates for alliance with Jacob’s family; cannot mend the breach of justice.",
+  "category": "narrative",
+  "cross_references": [],
+  "id": "p.hamor-the-hivite.gene-34--b5b8407f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      34
+    ]
+  }
+}

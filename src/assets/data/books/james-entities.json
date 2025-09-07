@@ -1,0 +1,704 @@
+[
+  {
+    "id": "d.holy-spirit--ad652b9c",
+    "name": "Holy Spirit",
+    "type": "divine",
+    "url": "/entities/d.holy-spirit--ad652b9c/",
+    "blurb": "Divine agent of conception, anointing, speech, and mission—integral to the triadic baptismal name.",
+    "searchText": "holy spirit divine theology divine agent of conception, anointing, speech, and mission—integral to the triadic baptismal name. ",
+    "references": 53,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "2 Corinthians",
+      "Galatians",
+      "1 Corinthians",
+      "Philippians",
+      "Ephesians",
+      "Romans",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "p.jesus-of-nazareth--c4738d73",
+    "name": "Jesus of Nazareth",
+    "type": "person",
+    "url": "/entities/p.jesus-of-nazareth--c4738d73/",
+    "blurb": "Davidic and Abrahamic heir, true Israel in one person. Matthew stresses fulfillment: virgin conception (Isa 7:14), Bethlehem birth (Mic 5:2), exodus recapitulation (Hos 11:1), temptation victory, auth",
+    "searchText": "jesus of nazareth person messiah davidic and abrahamic heir, true israel in one person. matthew stresses fulfillment: virgin conception (isa 7:14), bethlehem birth (mic 5:2), exodus recapitulation (hos 11:1), temptation victory, authoritative torah fulfillment (5:17–20), suffering servant and risen lord. ",
+    "references": 35,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "Romans",
+      "James"
+    ],
+    "category": "messiah"
+  },
+  {
+    "id": "f.argument-map-index--c44b9b3a",
+    "name": "Argument map (index)",
+    "type": "figure",
+    "url": "/entities/f.argument-map-index--c44b9b3a/",
+    "blurb": "",
+    "searchText": "argument map (index) figure index  ",
+    "references": 17,
+    "books": [
+      "2 Corinthians",
+      "Galatians",
+      "1 Corinthians",
+      "Ephesians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John"
+    ],
+    "category": "index"
+  },
+  {
+    "id": "g.prophets--c6dcaed9",
+    "name": "prophets",
+    "type": "group",
+    "url": "/entities/g.prophets--c6dcaed9/",
+    "blurb": "",
+    "searchText": "prophets group office  ",
+    "references": 6,
+    "books": [
+      "Ephesians",
+      "Hebrews",
+      "James"
+    ],
+    "category": "office"
+  },
+  {
+    "id": "p.abraham--197f2a67",
+    "name": "Abraham",
+    "type": "person",
+    "url": "/entities/p.abraham--197f2a67/",
+    "blurb": "",
+    "searchText": "abraham person patriarch  ",
+    "references": 6,
+    "books": [
+      "Galatians",
+      "Hebrews",
+      "James",
+      "1 Peter"
+    ],
+    "category": "patriarch"
+  },
+  {
+    "id": "p.james-the-lord-s-brother--02bc9aea",
+    "name": "James (the Lord’s brother)",
+    "type": "person",
+    "url": "/entities/p.james-the-lord-s-brother--02bc9aea/",
+    "blurb": "",
+    "searchText": "james (the lord’s brother) person church-leader  ",
+    "references": 6,
+    "books": [
+      "Acts",
+      "Galatians",
+      "James"
+    ],
+    "category": "church-leader"
+  },
+  {
+    "id": "g.elders-presbyters--92e988af",
+    "name": "elders (presbyters)",
+    "type": "group",
+    "url": "/entities/g.elders-presbyters--92e988af/",
+    "blurb": "",
+    "searchText": "elders (presbyters) group office  g.elders-presbyters--55daaee3",
+    "references": 3,
+    "books": [
+      "1 Timothy",
+      "Titus",
+      "James"
+    ],
+    "category": "office"
+  },
+  {
+    "id": "p.elijah--86b7f065",
+    "name": "Elijah",
+    "type": "person",
+    "url": "/entities/p.elijah--86b7f065/",
+    "blurb": "Promised precursor who turns hearts, prefiguring renewal and reconciliation.",
+    "searchText": "elijah person prophet promised precursor who turns hearts, prefiguring renewal and reconciliation. p.elijah--e44c0270",
+    "references": 2,
+    "books": [
+      "Malachi",
+      "James"
+    ],
+    "category": "prophet"
+  },
+  {
+    "id": "p.rahab--16b66d34",
+    "name": "Rahab",
+    "type": "person",
+    "url": "/entities/p.rahab--16b66d34/",
+    "blurb": "",
+    "searchText": "rahab person faith-example  ",
+    "references": 2,
+    "books": [
+      "Hebrews",
+      "James"
+    ],
+    "category": "faith-example"
+  },
+  {
+    "id": "f.crown-of-life--52890c5b",
+    "name": "crown of life",
+    "type": "figure",
+    "url": "/entities/f.crown-of-life--52890c5b/",
+    "blurb": "",
+    "searchText": "crown of life figure reward  ",
+    "references": 2,
+    "books": [
+      "James",
+      "Revelation"
+    ],
+    "category": "reward"
+  },
+  {
+    "id": "g.adulterous-people--fb47c174",
+    "name": "adulterous people",
+    "type": "group",
+    "url": "/entities/g.adulterous-people--fb47c174/",
+    "blurb": "",
+    "searchText": "adulterous people group covenant-infidelity  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "covenant-infidelity"
+  },
+  {
+    "id": "g.bitter-jealousy-and-selfish-ambition--b7c5da55",
+    "name": "bitter jealousy and selfish ambition",
+    "type": "group",
+    "url": "/entities/g.bitter-jealousy-and-selfish-ambition--b7c5da55/",
+    "blurb": "",
+    "searchText": "bitter jealousy and selfish ambition group vices  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "vices"
+  },
+  {
+    "id": "g.day-laborers-harvesters--010afe1a",
+    "name": "day laborers (harvesters)",
+    "type": "group",
+    "url": "/entities/g.day-laborers-harvesters--010afe1a/",
+    "blurb": "",
+    "searchText": "day laborers (harvesters) group workers  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "workers"
+  },
+  {
+    "id": "g.demons-believe-and-shudder--c52620b6",
+    "name": "demons believe and shudder",
+    "type": "group",
+    "url": "/entities/g.demons-believe-and-shudder--c52620b6/",
+    "blurb": "",
+    "searchText": "demons believe and shudder group belief-without-obedience  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "belief-without-obedience"
+  },
+  {
+    "id": "g.doers-of-the-word-not-hearers-only--2288b300",
+    "name": "doers of the word not hearers only",
+    "type": "group",
+    "url": "/entities/g.doers-of-the-word-not-hearers-only--2288b300/",
+    "blurb": "",
+    "searchText": "doers of the word not hearers only group obedience  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "obedience"
+  },
+  {
+    "id": "g.double-minded-dipsychos--b8d9edb2",
+    "name": "double-minded (dipsychos)",
+    "type": "group",
+    "url": "/entities/g.double-minded-dipsychos--b8d9edb2/",
+    "blurb": "",
+    "searchText": "double-minded (dipsychos) group instability  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "instability"
+  },
+  {
+    "id": "g.judges-with-evil-thoughts--4fd15b25",
+    "name": "judges with evil thoughts",
+    "type": "group",
+    "url": "/entities/g.judges-with-evil-thoughts--4fd15b25/",
+    "blurb": "",
+    "searchText": "judges with evil thoughts group bias  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "bias"
+  },
+  {
+    "id": "g.man-with-gold-ring-fine-clothing--308b7a78",
+    "name": "man with gold ring fine clothing",
+    "type": "group",
+    "url": "/entities/g.man-with-gold-ring-fine-clothing--308b7a78/",
+    "blurb": "",
+    "searchText": "man with gold ring fine clothing group rich-figure  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "rich-figure"
+  },
+  {
+    "id": "g.orphans-and-widows--fc413942",
+    "name": "orphans and widows",
+    "type": "group",
+    "url": "/entities/g.orphans-and-widows--fc413942/",
+    "blurb": "",
+    "searchText": "orphans and widows group care  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "care"
+  },
+  {
+    "id": "g.poor-man-in-shabby-clothing--34dd9d26",
+    "name": "poor man in shabby clothing",
+    "type": "group",
+    "url": "/entities/g.poor-man-in-shabby-clothing--34dd9d26/",
+    "blurb": "",
+    "searchText": "poor man in shabby clothing group poor-figure  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "poor-figure"
+  },
+  {
+    "id": "g.rich-oppressors--5ea9ed9e",
+    "name": "rich oppressors",
+    "type": "group",
+    "url": "/entities/g.rich-oppressors--5ea9ed9e/",
+    "blurb": "",
+    "searchText": "rich oppressors group oppressors  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "oppressors"
+  },
+  {
+    "id": "g.righteous-person--38de99b6",
+    "name": "righteous person",
+    "type": "group",
+    "url": "/entities/g.righteous-person--38de99b6/",
+    "blurb": "",
+    "searchText": "righteous person group exemplar  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "exemplar"
+  },
+  {
+    "id": "g.teachers-many--f37ce98c",
+    "name": "teachers (many)",
+    "type": "group",
+    "url": "/entities/g.teachers-many--f37ce98c/",
+    "blurb": "",
+    "searchText": "teachers (many) group leadership  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "leadership"
+  },
+  {
+    "id": "g.twelve-tribes-in-the-dispersion--3b4b208e",
+    "name": "Twelve Tribes in the Dispersion",
+    "type": "group",
+    "url": "/entities/g.twelve-tribes-in-the-dispersion--3b4b208e/",
+    "blurb": "",
+    "searchText": "twelve tribes in the dispersion group addressees  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "addressees"
+  },
+  {
+    "id": "g.wanderer-from-the-truth--41a2f59e",
+    "name": "wanderer from the truth",
+    "type": "group",
+    "url": "/entities/g.wanderer-from-the-truth--41a2f59e/",
+    "blurb": "",
+    "searchText": "wanderer from the truth group wayward  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "wayward"
+  },
+  {
+    "id": "p.job--877e2717",
+    "name": "Job",
+    "type": "person",
+    "url": "/entities/p.job--877e2717/",
+    "blurb": "",
+    "searchText": "job person exemplar  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "exemplar"
+  },
+  {
+    "id": "t.coming-of-the-lord--75f40bd0",
+    "name": "coming of the Lord",
+    "type": "title",
+    "url": "/entities/t.coming-of-the-lord--75f40bd0/",
+    "blurb": "",
+    "searchText": "coming of the lord title eschatology  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "eschatology"
+  },
+  {
+    "id": "t.confess-your-sins-to-one-another--eb699980",
+    "name": "confess your sins to one another",
+    "type": "title",
+    "url": "/entities/t.confess-your-sins-to-one-another--eb699980/",
+    "blurb": "",
+    "searchText": "confess your sins to one another title practice  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "practice"
+  },
+  {
+    "id": "t.father-of-lights--7bd20d8b",
+    "name": "Father of lights",
+    "type": "title",
+    "url": "/entities/t.father-of-lights--7bd20d8b/",
+    "blurb": "",
+    "searchText": "father of lights title theology  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "t.friendship-with-the-world--eaf67429",
+    "name": "friendship with the world",
+    "type": "title",
+    "url": "/entities/t.friendship-with-the-world--eaf67429/",
+    "blurb": "",
+    "searchText": "friendship with the world title warning  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "warning"
+  },
+  {
+    "id": "t.law-of-liberty--023c3781",
+    "name": "law of liberty",
+    "type": "title",
+    "url": "/entities/t.law-of-liberty--023c3781/",
+    "blurb": "",
+    "searchText": "law of liberty title torah  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "torah"
+  },
+  {
+    "id": "t.lord-of-hosts-sabaoth-has-heard--3bd1a7f2",
+    "name": "Lord of Hosts (Sabaoth) has heard",
+    "type": "title",
+    "url": "/entities/t.lord-of-hosts-sabaoth-has-heard--3bd1a7f2/",
+    "blurb": "",
+    "searchText": "lord of hosts (sabaoth) has heard title divine-judge  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "divine-judge"
+  },
+  {
+    "id": "t.prayer-of-faith--ee48c05d",
+    "name": "prayer of faith",
+    "type": "title",
+    "url": "/entities/t.prayer-of-faith--ee48c05d/",
+    "blurb": "",
+    "searchText": "prayer of faith title promise  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "promise"
+  },
+  {
+    "id": "t.royal-law-love-your-neighbor--af501d6b",
+    "name": "royal law (love your neighbor)",
+    "type": "title",
+    "url": "/entities/t.royal-law-love-your-neighbor--af501d6b/",
+    "blurb": "",
+    "searchText": "royal law (love your neighbor) title law  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "law"
+  },
+  {
+    "id": "t.wisdom-from-above--09f15af6",
+    "name": "wisdom from above",
+    "type": "title",
+    "url": "/entities/t.wisdom-from-above--09f15af6/",
+    "blurb": "",
+    "searchText": "wisdom from above title wisdom  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "wisdom"
+  },
+  {
+    "id": "e.set-on-fire-by-gehenna--bfb290bc",
+    "name": "set on fire by Gehenna",
+    "type": "entity",
+    "url": "/entities/e.set-on-fire-by-gehenna--bfb290bc/",
+    "blurb": "",
+    "searchText": "set on fire by gehenna entity judgment  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "judgment"
+  },
+  {
+    "id": "e.synagogue-assembly--3b7a375a",
+    "name": "synagogue (assembly)",
+    "type": "entity",
+    "url": "/entities/e.synagogue-assembly--3b7a375a/",
+    "blurb": "",
+    "searchText": "synagogue (assembly) entity assembly  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "assembly"
+  },
+  {
+    "id": "f.abraham-offered-isaac-on-the-altar--f74e2cd5",
+    "name": "Abraham offered Isaac on the altar",
+    "type": "figure",
+    "url": "/entities/f.abraham-offered-isaac-on-the-altar--f74e2cd5/",
+    "blurb": "",
+    "searchText": "abraham offered isaac on the altar figure obedience  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "obedience"
+  },
+  {
+    "id": "f.anger-of-man-does-not-produce-god-s-righteousness--8d32b172",
+    "name": "anger of man does not produce God’s righteousness",
+    "type": "figure",
+    "url": "/entities/f.anger-of-man-does-not-produce-god-s-righteousness--8d32b172/",
+    "blurb": "",
+    "searchText": "anger of man does not produce god’s righteousness figure ethic  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "ethic"
+  },
+  {
+    "id": "f.anoint-with-oil-in-the-name-of-the-lord--1ac3ed62",
+    "name": "anoint with oil in the name of the Lord",
+    "type": "figure",
+    "url": "/entities/f.anoint-with-oil-in-the-name-of-the-lord--1ac3ed62/",
+    "blurb": "",
+    "searchText": "anoint with oil in the name of the lord figure ritual  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "f.ask-god-for-wisdom--c3e82d5e",
+    "name": "ask God for wisdom",
+    "type": "figure",
+    "url": "/entities/f.ask-god-for-wisdom--c3e82d5e/",
+    "blurb": "",
+    "searchText": "ask god for wisdom figure prayer  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "prayer"
+  },
+  {
+    "id": "f.ask-wrongly-to-spend-on-passions--cbf7e506",
+    "name": "ask wrongly to spend on passions",
+    "type": "figure",
+    "url": "/entities/f.ask-wrongly-to-spend-on-passions--cbf7e506/",
+    "blurb": "",
+    "searchText": "ask wrongly to spend on passions figure prayer  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "prayer"
+  },
+  {
+    "id": "f.be-patient-until-the-coming-of-the-lord--7f5b492d",
+    "name": "be patient until the coming of the Lord",
+    "type": "figure",
+    "url": "/entities/f.be-patient-until-the-coming-of-the-lord--7f5b492d/",
+    "blurb": "",
+    "searchText": "be patient until the coming of the lord figure exhortation  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "exhortation"
+  },
+  {
+    "id": "f.be-wretched-mourn-weep--3d1610ba",
+    "name": "be wretched mourn weep",
+    "type": "figure",
+    "url": "/entities/f.be-wretched-mourn-weep--3d1610ba/",
+    "blurb": "",
+    "searchText": "be wretched mourn weep figure repentance  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "repentance"
+  },
+  {
+    "id": "f.bits-in-horses-mouths--f413f9a2",
+    "name": "bits in horses’ mouths",
+    "type": "figure",
+    "url": "/entities/f.bits-in-horses-mouths--f413f9a2/",
+    "blurb": "",
+    "searchText": "bits in horses’ mouths figure metaphor  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "metaphor"
+  },
+  {
+    "id": "f.boasting-in-arrogance-is-evil--9c7ea33d",
+    "name": "boasting in arrogance is evil",
+    "type": "figure",
+    "url": "/entities/f.boasting-in-arrogance-is-evil--9c7ea33d/",
+    "blurb": "",
+    "searchText": "boasting in arrogance is evil figure vice  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "vice"
+  },
+  {
+    "id": "f.body-apart-from-spirit-is-dead--28229e5d",
+    "name": "body apart from spirit is dead",
+    "type": "figure",
+    "url": "/entities/f.body-apart-from-spirit-is-dead--28229e5d/",
+    "blurb": "",
+    "searchText": "body apart from spirit is dead figure analogy  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "analogy"
+  },
+  {
+    "id": "f.born-by-the-word-of-truth-firstfruits-of-his-creatures--ebe6d783",
+    "name": "born by the word of truth—firstfruits of his creatures",
+    "type": "figure",
+    "url": "/entities/f.born-by-the-word-of-truth-firstfruits-of-his-creatures--ebe6d783/",
+    "blurb": "",
+    "searchText": "born by the word of truth—firstfruits of his creatures figure new-birth  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "new-birth"
+  },
+  {
+    "id": "f.bring-him-back--e1e3b560",
+    "name": "bring him back",
+    "type": "figure",
+    "url": "/entities/f.bring-him-back--e1e3b560/",
+    "blurb": "",
+    "searchText": "bring him back figure restoration  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "restoration"
+  },
+  {
+    "id": "f.cleanse-hands-purify-hearts-you-double-minded--5d5c8c1f",
+    "name": "cleanse hands purify hearts you double-minded",
+    "type": "figure",
+    "url": "/entities/f.cleanse-hands-purify-hearts-you-double-minded--5d5c8c1f/",
+    "blurb": "",
+    "searchText": "cleanse hands purify hearts you double-minded figure repentance  ",
+    "references": 1,
+    "books": [
+      "James"
+    ],
+    "category": "repentance"
+  }
+]

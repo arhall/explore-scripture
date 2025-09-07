@@ -1,0 +1,19 @@
+{
+  "name": "Eliezer of Damascus",
+  "type": "person",
+  "references": [
+    "Genesis 15:2"
+  ],
+  "blurb": "Abraham’s trusted steward, initially poised to inherit in the absence of a son—highlighting the need for an heir from Abraham’s own body.",
+  "category": "narrative",
+  "cross_references": [],
+  "id": "p.eliezer-of-damascus.gene-15-2--e7d1804a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      15
+    ]
+  }
+}

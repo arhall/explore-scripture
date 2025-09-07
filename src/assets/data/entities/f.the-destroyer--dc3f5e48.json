@@ -1,0 +1,21 @@
+{
+  "name": "The Destroyer",
+  "type": "figure",
+  "references": [
+    "Exodus 12:23"
+  ],
+  "blurb": "Agent of judgment who passes over homes marked by the blood—underscoring both justice and mercy.",
+  "category": "narrative",
+  "cross_references": [
+    "1 Corinthians 10:10"
+  ],
+  "id": "f.the-destroyer--dc3f5e48",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      12
+    ]
+  }
+}

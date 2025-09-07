@@ -1,0 +1,77 @@
+{
+  "book": "Acts",
+  "chapter": 9,
+  "entity_count": 11,
+  "entities": [
+    {
+      "id": "p.simon-the-tanner-joppa--fac69373",
+      "name": "Simon the Tanner (Joppa)",
+      "type": "person",
+      "role": "host",
+      "refs_count": 2
+    },
+    {
+      "id": "f.aramaic-and-hebrew-names-in-acts--8976acce",
+      "name": "Aramaic and Hebrew names in Acts",
+      "type": "figure",
+      "role": "language",
+      "refs_count": 3
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 24
+    },
+    {
+      "id": "f.saul-s-conversion-acts-9--604b096f",
+      "name": "Saul’s conversion (Acts 9)",
+      "type": "figure",
+      "role": "conversion",
+      "refs_count": 1
+    },
+    {
+      "id": "f.textual-note-acts-9-5b-6--c4e3b437",
+      "name": "Textual note: Acts 9:5b–6",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1
+    },
+    {
+      "id": "p.aeneas-at-lydda--56153658",
+      "name": "Aeneas at Lydda",
+      "type": "person",
+      "role": "healed",
+      "refs_count": 1
+    },
+    {
+      "id": "p.ananias-of-damascus--ca398cfd",
+      "name": "Ananias of Damascus",
+      "type": "person",
+      "role": "disciple",
+      "refs_count": 1
+    },
+    {
+      "id": "f.escape-from-damascus-basket--06a9f18b",
+      "name": "Escape from Damascus (basket)",
+      "type": "figure",
+      "role": "escape",
+      "refs_count": 1
+    },
+    {
+      "id": "p.barnabas--d4ced718",
+      "name": "Barnabas",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 5
+    },
+    {
+      "id": "f.growth-summary-9-31--32bc151a",
+      "name": "Growth summary (9:31)",
+      "type": "figure",
+      "role": "summary",
+      "refs_count": 1
+    }
+  ]
+}

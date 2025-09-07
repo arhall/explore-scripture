@@ -1,0 +1,27 @@
+{
+  "name": "Spiritual vs natural person",
+  "type": "figure",
+  "category": "discernment",
+  "references": [
+    "1 Cor 2:6–16"
+  ],
+  "greek_terms": [
+    {
+      "term": "πνευματικός/ψυχικός",
+      "gloss": "spiritual/natural"
+    }
+  ],
+  "aka": [],
+  "id": "f.spiritual-vs-natural-person--ddb1eef6",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "1 Corinthians": [
+      2
+    ]
+  }
+}

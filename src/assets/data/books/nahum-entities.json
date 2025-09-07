@@ -1,0 +1,658 @@
+[
+  {
+    "id": "e.jerusalem--d3a5bc90",
+    "name": "Jerusalem",
+    "type": "entity",
+    "url": "/entities/e.jerusalem--d3a5bc90/",
+    "blurb": "The communal center of worship restored as Assyria’s threat is removed.",
+    "searchText": "jerusalem entity city the communal center of worship restored as assyria’s threat is removed. e.jerusalem--23c888bc e.jerusalem--6c42150d",
+    "references": 7,
+    "books": [
+      "Nahum",
+      "Galatians",
+      "2 Corinthians",
+      "1 Corinthians",
+      "Romans"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "e.zion--4bd3e8e2",
+    "name": "Zion",
+    "type": "entity",
+    "url": "/entities/e.zion--4bd3e8e2/",
+    "blurb": "Site of the ‘good news’ announcement: festivals resumed, vows kept, feet of the herald on the mountains.",
+    "searchText": "zion entity holy-mount site of the ‘good news’ announcement: festivals resumed, vows kept, feet of the herald on the mountains. e.zion--d7771d29 e.zion--ea3cecef",
+    "references": 3,
+    "books": [
+      "Nahum",
+      "1 Peter",
+      "Revelation"
+    ],
+    "category": "holy-mount"
+  },
+  {
+    "id": "g.merchants-of-nineveh--a6e7c1d2",
+    "name": "Merchants of Nineveh",
+    "type": "group",
+    "url": "/entities/g.merchants-of-nineveh--a6e7c1d2/",
+    "blurb": "Once numerous as stars, they vanish like locusts when judgment heat rises—profit proves ephemeral.",
+    "searchText": "merchants of nineveh group economic-class once numerous as stars, they vanish like locusts when judgment heat rises—profit proves ephemeral. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "economic-class"
+  },
+  {
+    "id": "g.nations--0f6f9c22",
+    "name": "Nations",
+    "type": "group",
+    "url": "/entities/g.nations--0f6f9c22/",
+    "blurb": "International witnesses who clap at Nineveh’s fall. The scope underscores public, exemplary justice.",
+    "searchText": "nations group audience international witnesses who clap at nineveh’s fall. the scope underscores public, exemplary justice. g.nations--883113b5 g.nations--ae173a5a",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "audience"
+  },
+  {
+    "id": "g.refugees-and-survivors--5e1a9c0b",
+    "name": "Refugees/Survivors",
+    "type": "group",
+    "url": "/entities/g.refugees-and-survivors--5e1a9c0b/",
+    "blurb": "The city’s populace flees like a pool draining; human cost surfaces behind imperial spectacle.",
+    "searchText": "refugees/survivors group civilians the city’s populace flees like a pool draining; human cost surfaces behind imperial spectacle. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "civilians"
+  },
+  {
+    "id": "g.soldiers-and-guards-of-nineveh--e1b7c3a9",
+    "name": "Soldiers/Guards of Nineveh",
+    "type": "group",
+    "url": "/entities/g.soldiers-and-guards-of-nineveh--e1b7c3a9/",
+    "blurb": "Crimson shields and flashing chariots project menace, yet they reel and stumble; finally they melt away.",
+    "searchText": "soldiers/guards of nineveh group military crimson shields and flashing chariots project menace, yet they reel and stumble; finally they melt away. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "military"
+  },
+  {
+    "id": "p.assyrian-kings-lion-line--3e9a1c0d",
+    "name": "Assyrian kings (lion line)",
+    "type": "person",
+    "url": "/entities/p.assyrian-kings-lion-line--3e9a1c0d/",
+    "blurb": "Royal house caricatured as lions who devoured prey for their cubs; their den is torched by YHWH.",
+    "searchText": "assyrian kings (lion line) person royalty royal house caricatured as lions who devoured prey for their cubs; their den is torched by yhwh. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "royalty"
+  },
+  {
+    "id": "p.nahum-of-elkosh--3b18a2d1",
+    "name": "Nahum of Elkosh",
+    "type": "person",
+    "url": "/entities/p.nahum-of-elkosh--3b18a2d1/",
+    "blurb": "The eponymous prophet whose oracle concentrates on Nineveh’s downfall. His name (“comfort”) frames judgment as consolation for Judah. Literary voice alternates between hymn (1:2–8), divine decree, and",
+    "searchText": "nahum of elkosh person prophet the eponymous prophet whose oracle concentrates on nineveh’s downfall. his name (“comfort”) frames judgment as consolation for judah. literary voice alternates between hymn (1:2–8), divine decree, and taunt/woe over tyrannical assyria. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "prophet"
+  },
+  {
+    "id": "t.acrostic-hymn--b6e3c5a0",
+    "name": "Acrostic Hymn (Nahum 1)",
+    "type": "title",
+    "url": "/entities/t.acrostic-hymn--b6e3c5a0/",
+    "blurb": "Scholars detect alphabetic sequencing in 1:2–8, a hymn extolling God’s justice and refuge; establishes the theological key for the book.",
+    "searchText": "acrostic hymn (nahum 1) title poetic-structure scholars detect alphabetic sequencing in 1:2–8, a hymn extolling god’s justice and refuge; establishes the theological key for the book. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "poetic-structure"
+  },
+  {
+    "id": "t.taunt-song--6f0d9a3b",
+    "name": "Taunt Song",
+    "type": "title",
+    "url": "/entities/t.taunt-song--6f0d9a3b/",
+    "blurb": "Mocking lament over a toppled tyrant, reversing imperial boasts into shame. Central to Nahum’s rhetoric.",
+    "searchText": "taunt song title literary-form mocking lament over a toppled tyrant, reversing imperial boasts into shame. central to nahum’s rhetoric. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "literary-form"
+  },
+  {
+    "id": "t.woe-oracle--e7a0d4f2",
+    "name": "Woe Oracle",
+    "type": "title",
+    "url": "/entities/t.woe-oracle--e7a0d4f2/",
+    "blurb": "Prophetic ‘woe’ formula indicting Nineveh’s bloodguilt, lies, and plunder.",
+    "searchText": "woe oracle title literary-form prophetic ‘woe’ formula indicting nineveh’s bloodguilt, lies, and plunder. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "literary-form"
+  },
+  {
+    "id": "e.assyrian-captives--71e0c9b3",
+    "name": "Assyrian captives",
+    "type": "entity",
+    "url": "/entities/e.assyrian-captives--71e0c9b3/",
+    "blurb": "As Nineveh once deported others, so it becomes the captive—lex talionis of history under God.",
+    "searchText": "assyrian captives entity reversal as nineveh once deported others, so it becomes the captive—lex talionis of history under god. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "reversal"
+  },
+  {
+    "id": "e.behold-i-am-against-you--a7b0c1e9",
+    "name": "“Behold, I am against you”",
+    "type": "entity",
+    "url": "/entities/e.behold-i-am-against-you--a7b0c1e9/",
+    "blurb": "YHWH’s adversative oracle formula; guarantees defeat irrespective of military calculus.",
+    "searchText": "“behold, i am against you” entity divine-decree yhwh’s adversative oracle formula; guarantees defeat irrespective of military calculus. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "divine-decree"
+  },
+  {
+    "id": "e.bloodshed--14b7a0e6",
+    "name": "Bloodshed",
+    "type": "entity",
+    "url": "/entities/e.bloodshed--14b7a0e6/",
+    "blurb": "Core charge: Nineveh is built on violence; prophetic justice targets structural bloodguilt.",
+    "searchText": "bloodshed entity indictment core charge: nineveh is built on violence; prophetic justice targets structural bloodguilt. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "indictment"
+  },
+  {
+    "id": "e.chains-bonds--e7c1a0b5",
+    "name": "Chains/Bonds",
+    "type": "entity",
+    "url": "/entities/e.chains-bonds--e7c1a0b5/",
+    "blurb": "Concrete tokens of subjugation; divine action shatters them for Judah.",
+    "searchText": "chains/bonds entity oppression concrete tokens of subjugation; divine action shatters them for judah. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "oppression"
+  },
+  {
+    "id": "e.charioteers--7e9c1a0d",
+    "name": "Charioteers",
+    "type": "entity",
+    "url": "/entities/e.charioteers--7e9c1a0d/",
+    "blurb": "Agents of urban chaos; speed and shine become omens of collapse rather than security.",
+    "searchText": "charioteers entity military agents of urban chaos; speed and shine become omens of collapse rather than security. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "military"
+  },
+  {
+    "id": "e.chariots-like-torches--93f5a6c1",
+    "name": "Chariots like torches",
+    "type": "entity",
+    "url": "/entities/e.chariots-like-torches--93f5a6c1/",
+    "blurb": "Vivid battle scene: chariots flashing, racing through streets; either Assyrian defenders or attackers—either way, chaos and doom.",
+    "searchText": "chariots like torches entity military vivid battle scene: chariots flashing, racing through streets; either assyrian defenders or attackers—either way, chaos and doom. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "military"
+  },
+  {
+    "id": "e.desertion-and-panic--7c0a9e2b",
+    "name": "Desertion/Panic",
+    "type": "entity",
+    "url": "/entities/e.desertion-and-panic--7c0a9e2b/",
+    "blurb": "Nineveh’s people flee; officials sleep; mercenaries vanish—symbolic of hollow power.",
+    "searchText": "desertion/panic entity battle-psychology nineveh’s people flee; officials sleep; mercenaries vanish—symbolic of hollow power. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "battle-psychology"
+  },
+  {
+    "id": "e.end-of-name--b1e0a7c4",
+    "name": "End of name",
+    "type": "entity",
+    "url": "/entities/e.end-of-name--b1e0a7c4/",
+    "blurb": "Memory, dynasty, and cultic prestige erased—total de-legitimization of Assyria’s legacy.",
+    "searchText": "end of name entity erasure memory, dynasty, and cultic prestige erased—total de-legitimization of assyria’s legacy. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "erasure"
+  },
+  {
+    "id": "e.exile-deportation--5c1e0a7b",
+    "name": "Exile/Deportation",
+    "type": "entity",
+    "url": "/entities/e.exile-deportation--5c1e0a7b/",
+    "blurb": "Nineveh’s tool becomes its fate; the city’s inhabitants are carried off, infants dashed—grim mirror justice.",
+    "searchText": "exile/deportation entity imperial-policy nineveh’s tool becomes its fate; the city’s inhabitants are carried off, infants dashed—grim mirror justice. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "imperial-policy"
+  },
+  {
+    "id": "e.festivals-and-vows--6b3c1f8e",
+    "name": "Festivals & vows (Judah)",
+    "type": "entity",
+    "url": "/entities/e.festivals-and-vows--6b3c1f8e/",
+    "blurb": "Cultic life resumes under divine protection; liturgical stability expresses social healing.",
+    "searchText": "festivals & vows (judah) entity ritual cultic life resumes under divine protection; liturgical stability expresses social healing. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.fig-trees-ripe--e1a0b7c9",
+    "name": "Fig trees—ripe fruit",
+    "type": "entity",
+    "url": "/entities/e.fig-trees-ripe--e1a0b7c9/",
+    "blurb": "Nineveh’s strongholds fall like ripe figs—ease of collapse belies prior boasting.",
+    "searchText": "fig trees—ripe fruit entity simile nineveh’s strongholds fall like ripe figs—ease of collapse belies prior boasting. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "simile"
+  },
+  {
+    "id": "e.fortress-stronghold-images--2f6a0e9b",
+    "name": "Fortress/Stronghold images",
+    "type": "entity",
+    "url": "/entities/e.fortress-stronghold-images--2f6a0e9b/",
+    "blurb": "The city’s strength proves illusory; fig-trees whose fruit falls when shaken.",
+    "searchText": "fortress/stronghold images entity metaphor the city’s strength proves illusory; fig-trees whose fruit falls when shaken. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "metaphor"
+  },
+  {
+    "id": "e.gates-of-the-rivers--9f0a1c7e",
+    "name": "Gates of the rivers",
+    "type": "entity",
+    "url": "/entities/e.gates-of-the-rivers--9f0a1c7e/",
+    "blurb": "Poetic doublet for ‘river gates’; emphasizes watery breach as decisive moment.",
+    "searchText": "gates of the rivers entity hydraulic poetic doublet for ‘river gates’; emphasizes watery breach as decisive moment. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "hydraulic"
+  },
+  {
+    "id": "e.good-news-to-zion--0e9f6a4d",
+    "name": "Good news to Zion",
+    "type": "entity",
+    "url": "/entities/e.good-news-to-zion--0e9f6a4d/",
+    "blurb": "Liberation proclamation: imperial threat removed, worship restored—an archetype for later ‘gospel’ language.",
+    "searchText": "good news to zion entity gospel-motif liberation proclamation: imperial threat removed, worship restored—an archetype for later ‘gospel’ language. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "gospel-motif"
+  },
+  {
+    "id": "e.harlot-sorceries--b9e1c0a7",
+    "name": "Harlot’s sorceries",
+    "type": "entity",
+    "url": "/entities/e.harlot-sorceries--b9e1c0a7/",
+    "blurb": "Political seduction and coercion under religious veneer; draws judgment for ensnaring nations.",
+    "searchText": "harlot’s sorceries entity vice political seduction and coercion under religious veneer; draws judgment for ensnaring nations. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "vice"
+  },
+  {
+    "id": "e.herald-on-the-mountains--a9e1c0b4",
+    "name": "Herald on the mountains",
+    "type": "entity",
+    "url": "/entities/e.herald-on-the-mountains--a9e1c0b4/",
+    "blurb": "Iconic image of beautiful feet bringing peace; later reused in New Testament proclamation.",
+    "searchText": "herald on the mountains entity gospel-image iconic image of beautiful feet bringing peace; later reused in new testament proclamation. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "gospel-image"
+  },
+  {
+    "id": "e.hooks-and-yokes--b3e6f51a",
+    "name": "Hooks and yokes",
+    "type": "entity",
+    "url": "/entities/e.hooks-and-yokes--b3e6f51a/",
+    "blurb": "Symbols of deportation and bondage; Judah’s yoke is shattered while enemies are led away with hooks.",
+    "searchText": "hooks and yokes entity oppression-tools symbols of deportation and bondage; judah’s yoke is shattered while enemies are led away with hooks. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "oppression-tools"
+  },
+  {
+    "id": "e.idols-of-nineveh--7e0f1a9b",
+    "name": "Idols of Nineveh",
+    "type": "entity",
+    "url": "/entities/e.idols-of-nineveh--7e0f1a9b/",
+    "blurb": "YHWH decrees their desecration—religious collapse accompanies political ruin.",
+    "searchText": "idols of nineveh entity cultic yhwh decrees their desecration—religious collapse accompanies political ruin. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "cultic"
+  },
+  {
+    "id": "e.innumerable-killed--0b7e1ac3",
+    "name": "Innumerable killed",
+    "type": "entity",
+    "url": "/entities/e.innumerable-killed--0b7e1ac3/",
+    "blurb": "Graphic aftermath underscores moral horror of Nineveh’s career and fall.",
+    "searchText": "innumerable killed entity battle-aftermath graphic aftermath underscores moral horror of nineveh’s career and fall. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "battle-aftermath"
+  },
+  {
+    "id": "e.nineveh--f4b91a37",
+    "name": "Nineveh",
+    "type": "entity",
+    "url": "/entities/e.nineveh--f4b91a37/",
+    "blurb": "Focus of Nahum’s oracle. Once repentant in Jonah, now portrayed as blood-soaked, deceitful, and doomed. Its walls, gates, idols, and treasures are plundered; shame replaces glory.",
+    "searchText": "nineveh entity city focus of nahum’s oracle. once repentant in jonah, now portrayed as blood-soaked, deceitful, and doomed. its walls, gates, idols, and treasures are plundered; shame replaces glory. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "e.ninevehs-gates--5a3bd1e7",
+    "name": "Nineveh’s gates",
+    "type": "entity",
+    "url": "/entities/e.ninevehs-gates--5a3bd1e7/",
+    "blurb": "‘River gates’ open; the city’s entry points fail, exposing it to invasion and flood.",
+    "searchText": "nineveh’s gates entity fortification ‘river gates’ open; the city’s entry points fail, exposing it to invasion and flood. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "fortification"
+  },
+  {
+    "id": "e.ninevehs-walls--c1a6e0b4",
+    "name": "Nineveh’s walls",
+    "type": "entity",
+    "url": "/entities/e.ninevehs-walls--c1a6e0b4/",
+    "blurb": "Monumental defenses imagined as ripe figs; they collapse when shaken, signaling the end of Assyrian security.",
+    "searchText": "nineveh’s walls entity fortification monumental defenses imagined as ripe figs; they collapse when shaken, signaling the end of assyrian security. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "fortification"
+  },
+  {
+    "id": "e.no-healer--c0b1a7e3",
+    "name": "No healer",
+    "type": "entity",
+    "url": "/entities/e.no-healer--c0b1a7e3/",
+    "blurb": "The malady is terminal; no remedy remains—judgment’s finality stressed.",
+    "searchText": "no healer entity medical-metaphor the malady is terminal; no remedy remains—judgment’s finality stressed. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "medical-metaphor"
+  },
+  {
+    "id": "e.nobles-and-courtiers--b7e1a0c9",
+    "name": "Nobles/Courtiers",
+    "type": "entity",
+    "url": "/entities/e.nobles-and-courtiers--b7e1a0c9/",
+    "blurb": "Elites scramble and then sleep; the collapse is administrative as well as military.",
+    "searchText": "nobles/courtiers entity royal-court elites scramble and then sleep; the collapse is administrative as well as military. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "royal-court"
+  },
+  {
+    "id": "e.overthrow-complete--d1c7a0e5",
+    "name": "Overthrow (complete)",
+    "type": "entity",
+    "url": "/entities/e.overthrow-complete--d1c7a0e5/",
+    "blurb": "Decreed finality: no second repentance arc; Nineveh’s wound is incurable.",
+    "searchText": "overthrow (complete) entity verdict decreed finality: no second repentance arc; nineveh’s wound is incurable. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "verdict"
+  },
+  {
+    "id": "e.palace--f1e0ac79",
+    "name": "Palace",
+    "type": "entity",
+    "url": "/entities/e.palace--f1e0ac79/",
+    "blurb": "When river gates open, the palace totters—palatial glory cannot withstand divine flood.",
+    "searchText": "palace entity royal when river gates open, the palace totters—palatial glory cannot withstand divine flood. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "royal"
+  },
+  {
+    "id": "e.pharaoh-no-amon-parallel--c1b7e0a5",
+    "name": "No-Amon (Thebes) parallel",
+    "type": "entity",
+    "url": "/entities/e.pharaoh-no-amon-parallel--c1b7e0a5/",
+    "blurb": "If Thebes, fortified by the Nile, fell, how much more Nineveh—scriptural reasoning by precedent.",
+    "searchText": "no-amon (thebes) parallel entity historical-analogy if thebes, fortified by the nile, fell, how much more nineveh—scriptural reasoning by precedent. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "historical-analogy"
+  },
+  {
+    "id": "e.plunder-and-treasure--f0a4b3c2",
+    "name": "Plunder/Treasure",
+    "type": "entity",
+    "url": "/entities/e.plunder-and-treasure--f0a4b3c2/",
+    "blurb": "The wealth amassed by predation becomes prey for invaders; heart-melting despair replaces luxury.",
+    "searchText": "plunder/treasure entity economic the wealth amassed by predation becomes prey for invaders; heart-melting despair replaces luxury. e.plunder-treasure--9196f2c6",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "economic"
+  },
+  {
+    "id": "e.pride-and-boast--e0a1b7c2",
+    "name": "Pride/Boast",
+    "type": "entity",
+    "url": "/entities/e.pride-and-boast--e0a1b7c2/",
+    "blurb": "Assyria’s hubris meets the divine ‘Behold, I am against you’—the covenant lawsuit climax.",
+    "searchText": "pride/boast entity sin-motif assyria’s hubris meets the divine ‘behold, i am against you’—the covenant lawsuit climax. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "sin-motif"
+  },
+  {
+    "id": "e.public-laughter--f0b3a1c6",
+    "name": "Public laughter",
+    "type": "entity",
+    "url": "/entities/e.public-laughter--f0b3a1c6/",
+    "blurb": "Communal mockery marks tyrant’s end; the nations applaud the justice they longed for.",
+    "searchText": "public laughter entity shame-culture communal mockery marks tyrant’s end; the nations applaud the justice they longed for. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "shame-culture"
+  },
+  {
+    "id": "e.ravening-lions--c4e0a1b7",
+    "name": "Ravening lions",
+    "type": "entity",
+    "url": "/entities/e.ravening-lions--c4e0a1b7/",
+    "blurb": "Extended pride-of-lions metaphor for Assyrian elites whose den is consumed.",
+    "searchText": "ravening lions entity predator-imagery extended pride-of-lions metaphor for assyrian elites whose den is consumed. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "predator-imagery"
+  },
+  {
+    "id": "e.refuge-rhetoric--a3e0d1b8",
+    "name": "Refuge rhetoric",
+    "type": "entity",
+    "url": "/entities/e.refuge-rhetoric--a3e0d1b8/",
+    "blurb": "Pastoral center of the book: wrath and refuge together narrate God’s character and care.",
+    "searchText": "refuge rhetoric entity pastoral-theology pastoral center of the book: wrath and refuge together narrate god’s character and care. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "pastoral-theology"
+  },
+  {
+    "id": "e.refuge-stronghold--8e1d0a6c",
+    "name": "Refuge/Stronghold",
+    "type": "entity",
+    "url": "/entities/e.refuge-stronghold--8e1d0a6c/",
+    "blurb": "Counterpoint to wrath: those who take refuge in YHWH find protection amid upheaval.",
+    "searchText": "refuge/stronghold entity theology counterpoint to wrath: those who take refuge in yhwh find protection amid upheaval. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "e.river-gates--a7c9e2d0",
+    "name": "River gates",
+    "type": "entity",
+    "url": "/entities/e.river-gates--a7c9e2d0/",
+    "blurb": "Engineering tied to the Khosr/Tigris; when breached, they become conduits of judgment rather than protection.",
+    "searchText": "river gates entity hydraulic-defense engineering tied to the khosr/tigris; when breached, they become conduits of judgment rather than protection. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "hydraulic-defense"
+  },
+  {
+    "id": "e.scatterer-at-the-gates--f7c3b0a2",
+    "name": "Scatterer at the gates",
+    "type": "entity",
+    "url": "/entities/e.scatterer-at-the-gates--f7c3b0a2/",
+    "blurb": "Personified invader whom YHWH uses to bring Nineveh low; calls Judah to keep feasts while enemies are scattered.",
+    "searchText": "scatterer at the gates entity invader personified invader whom yhwh uses to bring nineveh low; calls judah to keep feasts while enemies are scattered. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "invader"
+  },
+  {
+    "id": "e.shame-exposure--ad9c1e40",
+    "name": "Shame/Exposure motif",
+    "type": "entity",
+    "url": "/entities/e.shame-exposure--ad9c1e40/",
+    "blurb": "Honor-shame reversal: the tyrant is publicly humiliated; no healer, no comforter remains.",
+    "searchText": "shame/exposure motif entity judgment-imagery honor-shame reversal: the tyrant is publicly humiliated; no healer, no comforter remains. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "judgment-imagery"
+  },
+  {
+    "id": "e.shields-crimson--b1c9e3f0",
+    "name": "Shields (crimson)",
+    "type": "entity",
+    "url": "/entities/e.shields-crimson--b1c9e3f0/",
+    "blurb": "Visual marker of battle-readiness that ultimately fails to save the city.",
+    "searchText": "shields (crimson) entity military visual marker of battle-readiness that ultimately fails to save the city. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "military"
+  },
+  {
+    "id": "e.siege-ramps--e9a1c4b7",
+    "name": "Siege ramps",
+    "type": "entity",
+    "url": "/entities/e.siege-ramps--e9a1c4b7/",
+    "blurb": "Assault infrastructure signals relentless pressure against Nineveh’s walls.",
+    "searchText": "siege ramps entity military assault infrastructure signals relentless pressure against nineveh’s walls. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "military"
+  },
+  {
+    "id": "e.siege-towers--ac1e7b05",
+    "name": "Siege towers",
+    "type": "entity",
+    "url": "/entities/e.siege-towers--ac1e7b05/",
+    "blurb": "Protective structures for assault forces; their approach signals Nineveh’s end.",
+    "searchText": "siege towers entity military protective structures for assault forces; their approach signals nineveh’s end. ",
+    "references": 1,
+    "books": [
+      "Nahum"
+    ],
+    "category": "military"
+  }
+]

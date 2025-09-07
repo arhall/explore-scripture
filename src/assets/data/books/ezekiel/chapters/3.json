@@ -1,0 +1,42 @@
+{
+  "book": "Ezekiel",
+  "chapter": 3,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "e.hand-of-the-lord-spirit-transportations--974a7e05",
+      "name": "Hand of the LORD / Spirit transportations",
+      "type": "entity",
+      "role": "experience",
+      "refs_count": 1
+    },
+    {
+      "id": "e.mute-until-news-arrives--acbbc14f",
+      "name": "Mute until news arrives",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1
+    },
+    {
+      "id": "e.watchman-charge.i-ii--b97f4242",
+      "name": "Watchman charge (I & II)",
+      "type": "entity",
+      "role": "commission",
+      "refs_count": 1
+    },
+    {
+      "id": "e.tel-abib-by-the-chebar.tel-aviv--8a12eae3",
+      "name": "Tel‑Abib (Tel‑aviv) by the Chebar",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    },
+    {
+      "id": "e.prophet-as-watchman--b57d428b",
+      "name": "Prophet as Watchman",
+      "type": "entity",
+      "role": "office",
+      "refs_count": 1
+    }
+  ]
+}

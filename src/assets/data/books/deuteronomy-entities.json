@@ -1,0 +1,664 @@
+[
+  {
+    "id": "p.moses--2c0fba85",
+    "name": "Moses",
+    "type": "person",
+    "url": "/entities/p.moses--2c0fba85/",
+    "blurb": "Rescued from the Nile by Pharaoh’s daughter, raised in the court, then exiled to Midian after defending a Hebrew. At the burning bush he meets the God of the fathers; reluctant yet called, he confront",
+    "searchText": "moses person narrative rescued from the nile by pharaoh’s daughter, raised in the court, then exiled to midian after defending a hebrew. at the burning bush he meets the god of the fathers; reluctant yet called, he confronts pharaoh with signs and speeches, leads through the plagues, and brings israel to the sea. moses’ story in these chapters showcases divine compassion, judgment, and the birth of a nation. ",
+    "references": 11,
+    "books": [
+      "Exodus",
+      "Leviticus",
+      "Numbers",
+      "Deuteronomy",
+      "Matthew",
+      "Mark",
+      "Hebrews"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.balaam-son-of-beor--4e674f7d",
+    "name": "Balaam son of Beor",
+    "type": "person",
+    "url": "/entities/p.balaam-son-of-beor--4e674f7d/",
+    "blurb": "Diviner who speaks true oracles under constraint yet later counsels seduction—tragic ambiguity.",
+    "searchText": "balaam son of beor person narrative diviner who speaks true oracles under constraint yet later counsels seduction—tragic ambiguity. ",
+    "references": 4,
+    "books": [
+      "Deuteronomy",
+      "2 Peter",
+      "Jude"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.caleb-son-of-jephunneh--2d6c16cf",
+    "name": "Caleb son of Jephunneh",
+    "type": "person",
+    "url": "/entities/p.caleb-son-of-jephunneh--2d6c16cf/",
+    "blurb": "Spy from Judah who wholly follows the LORD; later receives Hebron as inheritance.",
+    "searchText": "caleb son of jephunneh person narrative spy from judah who wholly follows the lord; later receives hebron as inheritance. ",
+    "references": 4,
+    "books": [
+      "Deuteronomy",
+      "Joshua",
+      "Judges"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "t.og-king-of-bashan--349ffe75",
+    "name": "Og king of Bashan",
+    "type": "title",
+    "url": "/entities/t.og-king-of-bashan--349ffe75/",
+    "blurb": "Giant ruler defeated at Edrei—God gives victory over formidable foes.",
+    "searchText": "og king of bashan title narrative giant ruler defeated at edrei—god gives victory over formidable foes. ",
+    "references": 2,
+    "books": [
+      "Numbers",
+      "Deuteronomy"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "t.sihon-king-of-the-amorites--5e6315d3",
+    "name": "Sihon king of the Amorites",
+    "type": "title",
+    "url": "/entities/t.sihon-king-of-the-amorites--5e6315d3/",
+    "blurb": "Refuses passage; defeated; Israel possesses his land.",
+    "searchText": "sihon king of the amorites title narrative refuses passage; defeated; israel possesses his land. ",
+    "references": 2,
+    "books": [
+      "Numbers",
+      "Deuteronomy"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.amorites--a542ead1",
+    "name": "Amorites (as a people)",
+    "type": "group",
+    "url": "/entities/g.amorites--a542ead1/",
+    "blurb": "Regional power emblematic of Canaanite resistance—used pedagogically to teach reliance on God.",
+    "searchText": "amorites (as a people) group narrative regional power emblematic of canaanite resistance—used pedagogically to teach reliance on god. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.asher--f2c63955",
+    "name": "Asher (tribe; Blessing of Moses)",
+    "type": "group",
+    "url": "/entities/g.asher--f2c63955/",
+    "blurb": "Oil and strength imagery—prosperity with endurance.",
+    "searchText": "asher (tribe; blessing of moses) group poetry oil and strength imagery—prosperity with endurance. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "poetry"
+  },
+  {
+    "id": "g.benjamin--57fce3bd",
+    "name": "Benjamin (tribe; Blessing of Moses)",
+    "type": "group",
+    "url": "/entities/g.benjamin--57fce3bd/",
+    "blurb": "Beloved who dwells secure—temple geography foreshadowed.",
+    "searchText": "benjamin (tribe; blessing of moses) group poetry beloved who dwells secure—temple geography foreshadowed. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "poetry"
+  },
+  {
+    "id": "g.dan--7652eb80",
+    "name": "Dan (tribe; Blessing of Moses)",
+    "type": "group",
+    "url": "/entities/g.dan--7652eb80/",
+    "blurb": "Compressed image of vigor amid contested borders.",
+    "searchText": "dan (tribe; blessing of moses) group poetry compressed image of vigor amid contested borders. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "poetry"
+  },
+  {
+    "id": "g.edomites-and-egyptians--54390b81",
+    "name": "Edomites and Egyptians (measured mercy)",
+    "type": "group",
+    "url": "/entities/g.edomites-and-egyptians--54390b81/",
+    "blurb": "Kinship and history complicate enmity; limited inclusion underscores justice seasoned with memory.",
+    "searchText": "edomites and egyptians (measured mercy) group ethics kinship and history complicate enmity; limited inclusion underscores justice seasoned with memory. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "g.elders-judges-and-officers--241a2d31",
+    "name": "Elders, judges, and officers",
+    "type": "group",
+    "url": "/entities/g.elders-judges-and-officers--241a2d31/",
+    "blurb": "Local leaders tasked with impartial justice, handling hard cases at the central court—justice as a communal vocation.",
+    "searchText": "elders, judges, and officers group narrative local leaders tasked with impartial justice, handling hard cases at the central court—justice as a communal vocation. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.gad--54d21397",
+    "name": "Gad (tribe; Blessing of Moses)",
+    "type": "group",
+    "url": "/entities/g.gad--54d21397/",
+    "blurb": "Lion-like east-Jordan security joined to justice.",
+    "searchText": "gad (tribe; blessing of moses) group poetry lion-like east-jordan security joined to justice. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "poetry"
+  },
+  {
+    "id": "g.israel-weeps-for-moses-thirty-days--45561b49",
+    "name": "Israel weeps for Moses thirty days",
+    "type": "group",
+    "url": "/entities/g.israel-weeps-for-moses-thirty-days--45561b49/",
+    "blurb": "National grief recognizes covenantal leadership as gift—mourning as discipleship.",
+    "searchText": "israel weeps for moses thirty days group narrative national grief recognizes covenantal leadership as gift—mourning as discipleship. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.joseph-ephraim-manasseh--7c90273e",
+    "name": "Joseph—Ephraim & Manasseh (Blessing of Moses)",
+    "type": "group",
+    "url": "/entities/g.joseph-ephraim-manasseh--7c90273e/",
+    "blurb": "Bounty and strength; horns of a wild ox—Ephraim numerous, Manasseh resilient.",
+    "searchText": "joseph—ephraim & manasseh (blessing of moses) group poetry bounty and strength; horns of a wild ox—ephraim numerous, manasseh resilient. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "poetry"
+  },
+  {
+    "id": "g.judah--5b0f7352",
+    "name": "Judah (tribe; Blessing of Moses)",
+    "type": "group",
+    "url": "/entities/g.judah--5b0f7352/",
+    "blurb": "Intercession for help in battle—royal trajectory hinted.",
+    "searchText": "judah (tribe; blessing of moses) group poetry intercession for help in battle—royal trajectory hinted. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "poetry"
+  },
+  {
+    "id": "g.levi--b5b328a8",
+    "name": "Levi (tribe; Blessing of Moses)",
+    "type": "group",
+    "url": "/entities/g.levi--b5b328a8/",
+    "blurb": "Custodians of teaching, incense, and altar; zeal refined into intercession.",
+    "searchText": "levi (tribe; blessing of moses) group poetry custodians of teaching, incense, and altar; zeal refined into intercession. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "poetry"
+  },
+  {
+    "id": "g.levites-levitical-priests--4a4d13f1",
+    "name": "Levites / Levitical priests",
+    "type": "group",
+    "url": "/entities/g.levites-levitical-priests--4a4d13f1/",
+    "blurb": "Priestly tribe without land inheritance; teachers, blessers, and guardians of worship. Their dependence on tithes models trust in the LORD.",
+    "searchText": "levites / levitical priests group narrative priestly tribe without land inheritance; teachers, blessers, and guardians of worship. their dependence on tithes models trust in the lord. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.moabites-and-ammonites--7e1ee63d",
+    "name": "Moabites and Ammonites (assembly restrictions)",
+    "type": "group",
+    "url": "/entities/g.moabites-and-ammonites--7e1ee63d/",
+    "blurb": "Nations treated with wariness for historic hostility; yet Deuteronomy’s ethic leaves room for later redemptive exceptions.",
+    "searchText": "moabites and ammonites (assembly restrictions) group ethics nations treated with wariness for historic hostility; yet deuteronomy’s ethic leaves room for later redemptive exceptions. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "g.naphtali--9846e356",
+    "name": "Naphtali (tribe; Blessing of Moses)",
+    "type": "group",
+    "url": "/entities/g.naphtali--9846e356/",
+    "blurb": "Satisfied and full of blessing by sea and south.",
+    "searchText": "naphtali (tribe; blessing of moses) group poetry satisfied and full of blessing by sea and south. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "poetry"
+  },
+  {
+    "id": "g.people-of-israel--ecedc898",
+    "name": "People of Israel (second generation)",
+    "type": "group",
+    "url": "/entities/g.people-of-israel--ecedc898/",
+    "blurb": "Audience of Moses’ sermons—the children of the exodus, poised to enter the land. They are treated as a moral character, urged to ‘choose life.’",
+    "searchText": "people of israel (second generation) group narrative audience of moses’ sermons—the children of the exodus, poised to enter the land. they are treated as a moral character, urged to ‘choose life.’ ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.reuben--9636e0d2",
+    "name": "Reuben (tribe; Blessing of Moses)",
+    "type": "group",
+    "url": "/entities/g.reuben--9636e0d2/",
+    "blurb": "Petition for survival despite diminished standing.",
+    "searchText": "reuben (tribe; blessing of moses) group poetry petition for survival despite diminished standing. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "poetry"
+  },
+  {
+    "id": "g.sojourners-orphans-and-widows--83563f86",
+    "name": "Sojourners, orphans, and widows",
+    "type": "group",
+    "url": "/entities/g.sojourners-orphans-and-widows--83563f86/",
+    "blurb": "Protected triad who reveal God’s heart; Israel’s obedience is measured by their joy and provision.",
+    "searchText": "sojourners, orphans, and widows group ethics protected triad who reveal god’s heart; israel’s obedience is measured by their joy and provision. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "g.zebulun-and-issachar--0d9866df",
+    "name": "Zebulun and Issachar (tribes; Blessing of Moses)",
+    "type": "group",
+    "url": "/entities/g.zebulun-and-issachar--0d9866df/",
+    "blurb": "Commerce and learning under divine favor; worship linked to work.",
+    "searchText": "zebulun and issachar (tribes; blessing of moses) group poetry commerce and learning under divine favor; worship linked to work. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "poetry"
+  },
+  {
+    "id": "p.aaron--520c434c",
+    "name": "Aaron (recalled)",
+    "type": "person",
+    "url": "/entities/p.aaron--520c434c/",
+    "blurb": "Referenced during Moses’ retelling of the priestly transition; Aaron’s story frames the gift and gravity of high priesthood.",
+    "searchText": "aaron (recalled) person narrative referenced during moses’ retelling of the priestly transition; aaron’s story frames the gift and gravity of high priesthood. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.eleazar-the-priest--e22b314d",
+    "name": "Eleazar the priest",
+    "type": "person",
+    "url": "/entities/p.eleazar-the-priest--e22b314d/",
+    "blurb": "Successor to Aaron who safeguards the sacred and partners in allotment; represents stable priestly continuity after Moses.",
+    "searchText": "eleazar the priest person narrative successor to aaron who safeguards the sacred and partners in allotment; represents stable priestly continuity after moses. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.joshua-son-of-nun--f4f7e0ff",
+    "name": "Joshua son of Nun",
+    "type": "person",
+    "url": "/entities/p.joshua-son-of-nun--f4f7e0ff/",
+    "blurb": "Publicly commissioned in Moses’ sight, Joshua receives courage-commands and Spirit-endowment. In Deuteronomy he is a transitional figure: the servant who will turn sermons into steps of conquest.",
+    "searchText": "joshua son of nun person narrative publicly commissioned in moses’ sight, joshua receives courage-commands and spirit-endowment. in deuteronomy he is a transitional figure: the servant who will turn sermons into steps of conquest. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.miriam--c5bed854",
+    "name": "Miriam (recalled)",
+    "type": "person",
+    "url": "/entities/p.miriam--c5bed854/",
+    "blurb": "Her leprosy becomes a cautionary memorial against challenging God’s chosen servants—memory used for moral formation.",
+    "searchText": "miriam (recalled) person narrative her leprosy becomes a cautionary memorial against challenging god’s chosen servants—memory used for moral formation. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "e.ark-and-tablets-restored--a743c4cf",
+    "name": "Ark and tablets restored",
+    "type": "entity",
+    "url": "/entities/e.ark-and-tablets-restored--a743c4cf/",
+    "blurb": "Second tablets placed in ark—renewal after failure anchors hope in mercy.",
+    "searchText": "ark and tablets restored entity ritual second tablets placed in ark—renewal after failure anchors hope in mercy. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.asherah-poles-and-sacred-stones-prohibited--56bab1d4",
+    "name": "Asherah poles and sacred stones prohibited",
+    "type": "entity",
+    "url": "/entities/e.asherah-poles-and-sacred-stones-prohibited--56bab1d4/",
+    "blurb": "No pagan cult symbols next to the LORD’s altar—purity in worship space.",
+    "searchText": "asherah poles and sacred stones prohibited entity ethics no pagan cult symbols next to the lord’s altar—purity in worship space. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.blood-not-eaten-pour-it-on-the-ground--e2c3be64",
+    "name": "Blood not eaten; pour it on the ground",
+    "type": "entity",
+    "url": "/entities/e.blood-not-eaten-pour-it-on-the-ground--e2c3be64/",
+    "blurb": "Reverence for life extends the Levitical blood ethic into daily meals in the land.",
+    "searchText": "blood not eaten; pour it on the ground entity ritual reverence for life extends the levitical blood ethic into daily meals in the land. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.do-not-add-or-take-away-from-the-word--0ad7e2a4",
+    "name": "Do not add or take away from the word",
+    "type": "entity",
+    "url": "/entities/e.do-not-add-or-take-away-from-the-word--0ad7e2a4/",
+    "blurb": "Revelation is sufficient and authoritative; hedge against syncretism and legalism alike.",
+    "searchText": "do not add or take away from the word entity ethics revelation is sufficient and authoritative; hedge against syncretism and legalism alike. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.do-not-plow-with-an-ox-and-a-donkey-together--9d1bbbc3",
+    "name": "Do not plow with an ox and a donkey together",
+    "type": "entity",
+    "url": "/entities/e.do-not-plow-with-an-ox-and-a-donkey-together--9d1bbbc3/",
+    "blurb": "Moral imagination through husbandry—mercy and order even in work-yokes.",
+    "searchText": "do not plow with an ox and a donkey together entity ethics moral imagination through husbandry—mercy and order even in work-yokes. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.election-and-herem-against-canaanite-idolatry.ban--bbfd6dcf",
+    "name": "Election and herem (ban) against Canaanite idolatry",
+    "type": "entity",
+    "url": "/entities/e.election-and-herem-against-canaanite-idolatry.ban--bbfd6dcf/",
+    "blurb": "Chosen for holiness; idolatrous objects devoted to destruction lest they ensnare Israel.",
+    "searchText": "election and herem (ban) against canaanite idolatry entity ethics chosen for holiness; idolatrous objects devoted to destruction lest they ensnare israel. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.golden-calf-recalled--7d990247",
+    "name": "Golden calf recalled",
+    "type": "entity",
+    "url": "/entities/e.golden-calf-recalled--7d990247/",
+    "blurb": "Narrative of intercession and shattered tablets—covenant survives by grace.",
+    "searchText": "golden calf recalled entity narrative narrative of intercession and shattered tablets—covenant survives by grace. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "e.justice-at-the-gates--b428ac6f",
+    "name": "Justice at the gates",
+    "type": "entity",
+    "url": "/entities/e.justice-at-the-gates--b428ac6f/",
+    "blurb": "City gates as civic courts; elders stand as guardians of communal righteousness.",
+    "searchText": "justice at the gates entity ethics city gates as civic courts; elders stand as guardians of communal righteousness. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.kadesh-barnea.rebellion-recalled--e1d3760a",
+    "name": "Kadesh-barnea (rebellion recalled)",
+    "type": "entity",
+    "url": "/entities/e.kadesh-barnea.rebellion-recalled--e1d3760a/",
+    "blurb": "Turning point of unbelief that birthed the long wandering—Deuteronomy re-reads the wound for wisdom.",
+    "searchText": "kadesh-barnea (rebellion recalled) entity place turning point of unbelief that birthed the long wandering—deuteronomy re-reads the wound for wisdom. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "place"
+  },
+  {
+    "id": "e.kidnapping-prohibited.man-stealing--9acef8c6",
+    "name": "Kidnapping (man-stealing) prohibited",
+    "type": "entity",
+    "url": "/entities/e.kidnapping-prohibited.man-stealing--9acef8c6/",
+    "blurb": "Human life not to be trafficked; theft of persons is capital evil.",
+    "searchText": "kidnapping (man-stealing) prohibited entity ethics human life not to be trafficked; theft of persons is capital evil. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.kings-must-not-return-to-egypt-for-horses--af4f2cac",
+    "name": "Kings must not return to Egypt for horses",
+    "type": "entity",
+    "url": "/entities/e.kings-must-not-return-to-egypt-for-horses--af4f2cac/",
+    "blurb": "Strategic shortcuts to power betray trust—royalty must model dependence.",
+    "searchText": "kings must not return to egypt for horses entity ethics strategic shortcuts to power betray trust—royalty must model dependence. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.moses-charge-to-joshua.be-strong-and-courageous--2f45e84e",
+    "name": "Moses’ charge to Joshua (be strong and courageous)",
+    "type": "entity",
+    "url": "/entities/e.moses-charge-to-joshua.be-strong-and-courageous--2f45e84e/",
+    "blurb": "Succession framed in the LORD’s abiding presence—courage rooted in promise.",
+    "searchText": "moses’ charge to joshua (be strong and courageous) entity narrative succession framed in the lord’s abiding presence—courage rooted in promise. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "e.mount-horeb-in-review.sinai--722ad164",
+    "name": "Mount Horeb (Sinai) in review",
+    "type": "entity",
+    "url": "/entities/e.mount-horeb-in-review.sinai--722ad164/",
+    "blurb": "Covenant setting recalled—fire, voice, and no image; pedagogy of hearing over seeing.",
+    "searchText": "mount horeb (sinai) in review entity place covenant setting recalled—fire, voice, and no image; pedagogy of hearing over seeing. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "place"
+  },
+  {
+    "id": "e.no-intermarriage-with-idolatrous-nations--897a0285",
+    "name": "No intermarriage with idolatrous nations",
+    "type": "entity",
+    "url": "/entities/e.no-intermarriage-with-idolatrous-nations--897a0285/",
+    "blurb": "Marriage binds worship—guard the heart of the household from apostasy.",
+    "searchText": "no intermarriage with idolatrous nations entity ethics marriage binds worship—guard the heart of the household from apostasy. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.pisgah-mount-nebo.moses-view--aa804301",
+    "name": "Pisgah / Mount Nebo (Moses’ view)",
+    "type": "entity",
+    "url": "/entities/e.pisgah-mount-nebo.moses-view--aa804301/",
+    "blurb": "Lookout from which Moses surveys the promise—grace to see what he will not enter.",
+    "searchText": "pisgah / mount nebo (moses’ view) entity place lookout from which moses surveys the promise—grace to see what he will not enter. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "place"
+  },
+  {
+    "id": "e.prohibition-of-cross-dressing--bc7889c7",
+    "name": "Prohibition of cross-dressing",
+    "type": "entity",
+    "url": "/entities/e.prohibition-of-cross-dressing--bc7889c7/",
+    "blurb": "Maintain creational signals in attire—identity aligned with created order.",
+    "searchText": "prohibition of cross-dressing entity ethics maintain creational signals in attire—identity aligned with created order. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.promise-of-restoration-after-exile--505110c9",
+    "name": "Promise of restoration after exile",
+    "type": "entity",
+    "url": "/entities/e.promise-of-restoration-after-exile--505110c9/",
+    "blurb": "Return and heart-circumcision after curse—hope beyond failure baked into Torah.",
+    "searchText": "promise of restoration after exile entity ethics return and heart-circumcision after curse—hope beyond failure baked into torah. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.remember-the-lord-in-prosperity--147c969f",
+    "name": "Remember the LORD in prosperity",
+    "type": "entity",
+    "url": "/entities/e.remember-the-lord-in-prosperity--147c969f/",
+    "blurb": "Wealth is covenant gift, not personal boast—gratitude guards against proud amnesia.",
+    "searchText": "remember the lord in prosperity entity ethics wealth is covenant gift, not personal boast—gratitude guards against proud amnesia. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.remember-what-the-lord-did-to-miriam--cd05ea1a",
+    "name": "Remember what the LORD did to Miriam",
+    "type": "entity",
+    "url": "/entities/e.remember-what-the-lord-did-to-miriam--cd05ea1a/",
+    "blurb": "A cautionary memorial against speaking against God’s servants—leprosy as lesson.",
+    "searchText": "remember what the lord did to miriam entity ethics a cautionary memorial against speaking against god’s servants—leprosy as lesson. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.shema-practices-bind-and-write.tefillin-and-mezuzah--57a106c2",
+    "name": "Shema practices: bind and write (tefillin and mezuzah)",
+    "type": "entity",
+    "url": "/entities/e.shema-practices-bind-and-write.tefillin-and-mezuzah--57a106c2/",
+    "blurb": "Embodied memory on hand, head, and doorposts—home and body become liturgy.",
+    "searchText": "shema practices: bind and write (tefillin and mezuzah) entity ritual embodied memory on hand, head, and doorposts—home and body become liturgy. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "ritual"
+  },
+  {
+    "id": "e.the-test-of-manna-and-clothing-that-did-not-wear-out--e5712519",
+    "name": "The test of manna and clothing that did not wear out",
+    "type": "entity",
+    "url": "/entities/e.the-test-of-manna-and-clothing-that-did-not-wear-out--e5712519/",
+    "blurb": "Wilderness pedagogy of dependence—bread alone is not enough, but every word from God.",
+    "searchText": "the test of manna and clothing that did not wear out entity narrative wilderness pedagogy of dependence—bread alone is not enough, but every word from god. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "e.three-further-cities-of-refuge-if-land-expands--5706eca8",
+    "name": "Three further cities of refuge if land expands",
+    "type": "entity",
+    "url": "/entities/e.three-further-cities-of-refuge-if-land-expands--5706eca8/",
+    "blurb": "Mercy scales with blessing—justice infrastructure grows with territory.",
+    "searchText": "three further cities of refuge if land expands entity ethics mercy scales with blessing—justice infrastructure grows with territory. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "ethics"
+  },
+  {
+    "id": "e.witnesses-cast-first-stones--d6fa98f4",
+    "name": "Witnesses cast first stones",
+    "type": "entity",
+    "url": "/entities/e.witnesses-cast-first-stones--d6fa98f4/",
+    "blurb": "Accountability joined to testimony—deters casual capital accusations.",
+    "searchText": "witnesses cast first stones entity ethics accountability joined to testimony—deters casual capital accusations. ",
+    "references": 1,
+    "books": [
+      "Deuteronomy"
+    ],
+    "category": "ethics"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "name": "Those unable to prove Israelite ancestry (Delaiah, Tobiah, Nekoda)",
+  "type": "group",
+  "references": [
+    "Ezra 2:59–60"
+  ],
+  "blurb": "Arrived from Tel-melah, Tel-harsha, Cherub, Addan, and Immer; identity unclear, yet included in the narrative of return. Total 652.",
+  "category": "record",
+  "count": 652,
+  "count_note": "Sum across named families per Ezra 2:60",
+  "id": "g.those-unable-to-prove-israelite-ancestry.delaiah-tobiah-nekoda--9b84a073",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      2
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Jabal",
+  "type": "person",
+  "references": [
+    "Genesis 4:20"
+  ],
+  "blurb": "Called ‘father of those who dwell in tents and have livestock’—early pastoralist and nomadic herdsman line.",
+  "relations": {
+    "parents": [
+      "Lamech (descendant of Cain)",
+      "Adah"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.jabal.gene-4-20--c367206a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      4
+    ]
+  }
+}

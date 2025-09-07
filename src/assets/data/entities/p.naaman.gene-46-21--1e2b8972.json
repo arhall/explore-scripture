@@ -1,0 +1,19 @@
+{
+  "name": "Naaman",
+  "type": "person",
+  "references": [
+    "Genesis 46:21"
+  ],
+  "blurb": "Son of Benjamin listed in the migration list.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.naaman.gene-46-21--1e2b8972",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      46
+    ]
+  }
+}

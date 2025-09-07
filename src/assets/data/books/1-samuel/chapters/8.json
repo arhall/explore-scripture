@@ -1,0 +1,21 @@
+{
+  "book": "1 Samuel",
+  "chapter": 8,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "g.israels-elders-demand-a-king-like-the-nations--4f43fa64",
+      "name": "Israel’s elders demand a king like the nations",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.joel-and-abijah.samuels-sons--391be1e7",
+      "name": "Joel and Abijah (Samuel’s sons)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Togarmah",
+  "type": "person",
+  "references": [
+    "Genesis 10:3–4"
+  ],
+  "blurb": "Descendant of Gomer; part of the Japhethite branch associated with maritime and northern peoples.",
+  "relations": {
+    "parents": [
+      "Gomer"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "Jeremiah 51:27",
+    "Ezekiel 38:6"
+  ],
+  "id": "p.togarmah.gene-10-3-4--fc4c6dc4",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

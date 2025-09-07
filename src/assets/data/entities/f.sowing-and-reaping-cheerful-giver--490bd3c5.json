@@ -1,0 +1,28 @@
+{
+  "name": "Sowing and reaping; cheerful giver",
+  "type": "figure",
+  "category": "promise",
+  "references": [
+    "2 Cor 9:6–11"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Ps 112:9",
+      "type": "quotation"
+    }
+  ],
+  "collection_context": true,
+  "aka": [],
+  "id": "f.sowing-and-reaping-cheerful-giver--490bd3c5",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "2 Corinthians": [
+      9
+    ]
+  }
+}

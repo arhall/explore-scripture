@@ -1,0 +1,22 @@
+{
+  "name": "Textual note: Gal 2:20 reading",
+  "type": "figure",
+  "category": "textual-notes",
+  "references": [
+    "Gal 2:20"
+  ],
+  "note": "Genitive ‘faith of the Son of God’ vs objective ‘faith in the Son of God’ nuance.",
+  "aka": [],
+  "id": "f.textual-note-gal-2-20-reading--5172cf16",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Galatians": [
+      2
+    ]
+  }
+}

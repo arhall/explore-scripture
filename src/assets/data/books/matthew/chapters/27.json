@@ -1,0 +1,77 @@
+{
+  "book": "Matthew",
+  "chapter": 27,
+  "entity_count": 11,
+  "entities": [
+    {
+      "id": "g.chief-priests--dbda0b67",
+      "name": "Chief Priests",
+      "type": "group",
+      "role": "leadership",
+      "refs_count": 2
+    },
+    {
+      "id": "e.arimathea--65c86c25",
+      "name": "Arimathea",
+      "type": "entity",
+      "role": "town",
+      "refs_count": 1
+    },
+    {
+      "id": "e.golgotha--dcf7176b",
+      "name": "Golgotha",
+      "type": "entity",
+      "role": "place-of-execution",
+      "refs_count": 2
+    },
+    {
+      "id": "p.roman-centurion-at-the-cross--9e7e4bcd",
+      "name": "Roman centurion at the cross",
+      "type": "person",
+      "role": "gentile-witness",
+      "refs_count": 2
+    },
+    {
+      "id": "t.son-of-god--960b6889",
+      "name": "Son of God",
+      "type": "title",
+      "role": "christological-title",
+      "refs_count": 5
+    },
+    {
+      "id": "g.guards-at-the-tomb--1051127a",
+      "name": "Guards at the tomb",
+      "type": "group",
+      "role": "military",
+      "refs_count": 2
+    },
+    {
+      "id": "p.pontius-pilate--d8964343",
+      "name": "Pontius Pilate",
+      "type": "person",
+      "role": "prefect",
+      "refs_count": 5
+    },
+    {
+      "id": "p.mary-mother-of-james-and-joseph--5aece911",
+      "name": "Mary (mother of James and Joseph)",
+      "type": "person",
+      "role": "witness",
+      "refs_count": 2
+    },
+    {
+      "id": "p.judas-iscariot--530c61f0",
+      "name": "Judas Iscariot",
+      "type": "person",
+      "role": "betrayer",
+      "refs_count": 6
+    },
+    {
+      "id": "p.mary-magdalene--6dd9b3a6",
+      "name": "Mary Magdalene",
+      "type": "person",
+      "role": "witness",
+      "refs_count": 2
+    }
+  ]
+}

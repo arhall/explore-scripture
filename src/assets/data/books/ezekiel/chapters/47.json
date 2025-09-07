@@ -1,0 +1,28 @@
+{
+  "book": "Ezekiel",
+  "chapter": 47,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "e.river-of-life-from-the-temple--dc11fd8e",
+      "name": "River of life from the temple",
+      "type": "entity",
+      "role": "restoration",
+      "refs_count": 1
+    },
+    {
+      "id": "e.tribal-allotments.restored-land--4867a1f9",
+      "name": "Tribal allotments (restored land)",
+      "type": "entity",
+      "role": "land",
+      "refs_count": 1
+    },
+    {
+      "id": "e.river-banks-with-trees--767a1a98",
+      "name": "River banks with trees",
+      "type": "entity",
+      "role": "restoration",
+      "refs_count": 1
+    }
+  ]
+}

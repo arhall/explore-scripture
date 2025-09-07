@@ -1,0 +1,56 @@
+{
+  "book": "Luke",
+  "chapter": 19,
+  "entity_count": 7,
+  "entities": [
+    {
+      "id": "p.zacchaeus--44b0f476",
+      "name": "Zacchaeus",
+      "type": "person",
+      "role": "conversion",
+      "refs_count": 1
+    },
+    {
+      "id": "f.cleansing-of-the-temple--34c6b1cf",
+      "name": "Cleansing of the Temple",
+      "type": "figure",
+      "role": "prophetic-action",
+      "refs_count": 1
+    },
+    {
+      "id": "e.jericho--d03f1831",
+      "name": "Jericho",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 2
+    },
+    {
+      "id": "f.triumphal-entry--5fe5dc82",
+      "name": "Triumphal Entry",
+      "type": "figure",
+      "role": "event",
+      "refs_count": 3
+    },
+    {
+      "id": "f.ten-minas-pounds--75142d1b",
+      "name": "Ten Minas (Pounds)",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1
+    },
+    {
+      "id": "f.weeping-over-jerusalem--c14e4831",
+      "name": "Weeping over Jerusalem",
+      "type": "figure",
+      "role": "lament",
+      "refs_count": 1
+    },
+    {
+      "id": "f.table-fellowship-in-luke--65956cca",
+      "name": "Table fellowship in Luke",
+      "type": "figure",
+      "role": "theme",
+      "refs_count": 5
+    }
+  ]
+}

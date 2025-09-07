@@ -1,0 +1,77 @@
+{
+  "book": "Matthew",
+  "chapter": 4,
+  "entity_count": 13,
+  "entities": [
+    {
+      "id": "t.kingdom-of-god--e6ae8d7f",
+      "name": "Kingdom of God",
+      "type": "title",
+      "role": "kingdom",
+      "refs_count": 16
+    },
+    {
+      "id": "g.angels--b473a1d0",
+      "name": "Angels",
+      "type": "group",
+      "role": "heavenly-host",
+      "refs_count": 5
+    },
+    {
+      "id": "e.galilee--b36c23b8",
+      "name": "Galilee",
+      "type": "entity",
+      "role": "region",
+      "refs_count": 5
+    },
+    {
+      "id": "e.sea-of-galilee--fbfbf0a2",
+      "name": "Sea of Galilee",
+      "type": "entity",
+      "role": "body-of-water",
+      "refs_count": 10
+    },
+    {
+      "id": "p.john-son-of-zebedee--b337fe0e",
+      "name": "John son of Zebedee",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 6
+    },
+    {
+      "id": "p.andrew--95723853",
+      "name": "Andrew",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 3
+    },
+    {
+      "id": "f.satan-the-tempter--c27f1db2",
+      "name": "Satan (the tempter)",
+      "type": "figure",
+      "role": "adversary",
+      "refs_count": 1
+    },
+    {
+      "id": "p.jesus-of-nazareth--c4738d73",
+      "name": "Jesus of Nazareth",
+      "type": "person",
+      "role": "messiah",
+      "refs_count": 35
+    },
+    {
+      "id": "p.james-son-of-zebedee--26675adb",
+      "name": "James son of Zebedee",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 5
+    },
+    {
+      "id": "e.capernaum--e8a7c06b",
+      "name": "Capernaum",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 10
+    }
+  ]
+}

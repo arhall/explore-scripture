@@ -1,0 +1,23 @@
+{
+  "name": "Jason and the brethren",
+  "type": "person",
+  "category": "host",
+  "references": [
+    "Acts 17:5–9"
+  ],
+  "aka": [],
+  "id": "p.jason-and-the-brethren--994d7955",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      17
+    ]
+  }
+}

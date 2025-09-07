@@ -1,0 +1,19 @@
+{
+  "name": "Elon",
+  "type": "person",
+  "references": [
+    "Genesis 46:14"
+  ],
+  "blurb": "Son of Zebulun listed among those who went to Egypt.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.elon.gene-46-14--af090e63",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      46
+    ]
+  }
+}

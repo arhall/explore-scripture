@@ -1,0 +1,18 @@
+{
+  "name": "Covenant of peace / everlasting covenant",
+  "type": "entity",
+  "references": [
+    "Ezekiel 34:25; 37:26"
+  ],
+  "blurb": "Shalom covenant yields safety, fruitfulness, sanctuary presence—Edenic echoes in exile.",
+  "category": "covenant",
+  "id": "e.covenant-of-peace-everlasting-covenant--67f94f49",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      34
+    ]
+  }
+}

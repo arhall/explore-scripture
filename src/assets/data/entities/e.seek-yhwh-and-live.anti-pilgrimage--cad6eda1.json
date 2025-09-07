@@ -1,0 +1,18 @@
+{
+  "name": "Seek YHWH and live (anti‑pilgrimage)",
+  "type": "entity",
+  "references": [
+    "Amos 5:4–6"
+  ],
+  "blurb": "Do not seek Bethel/Gilgal/Beersheba; seek the living God whose name is not a site.",
+  "category": "call",
+  "id": "e.seek-yhwh-and-live.anti-pilgrimage--cad6eda1",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Amos": [
+      5
+    ]
+  }
+}

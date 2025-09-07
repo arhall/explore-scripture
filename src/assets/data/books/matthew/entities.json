@@ -1,0 +1,825 @@
+{
+  "book": "Matthew",
+  "slug": "matthew",
+  "entity_count": 82,
+  "key_figures": [
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 4,
+      "score": 19
+    },
+    {
+      "id": "p.jesus-of-nazareth--c4738d73",
+      "name": "Jesus of Nazareth",
+      "type": "person",
+      "role": "messiah",
+      "refs_count": 3,
+      "score": 18
+    },
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2,
+      "score": 17
+    },
+    {
+      "id": "p.simon-peter-cephas--d58cce37",
+      "name": "Simon Peter (Cephas)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 4,
+      "score": 14
+    },
+    {
+      "id": "g.chief-priests--dbda0b67",
+      "name": "Chief Priests",
+      "type": "group",
+      "role": "leadership",
+      "refs_count": 7,
+      "score": 13
+    },
+    {
+      "id": "p.mary-mother-of-jesus--acfa811a",
+      "name": "Mary (mother of Jesus)",
+      "type": "person",
+      "role": "family",
+      "refs_count": 3,
+      "score": 13
+    },
+    {
+      "id": "p.john-the-baptist--509f9f1e",
+      "name": "John the Baptist",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 3,
+      "score": 13
+    },
+    {
+      "id": "p.joseph-husband-of-mary--1e97fe8c",
+      "name": "Joseph (husband of Mary)",
+      "type": "person",
+      "role": "family",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.john-son-of-zebedee--b337fe0e",
+      "name": "John son of Zebedee",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.james-son-of-zebedee--26675adb",
+      "name": "James son of Zebedee",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.mary-mother-of-james-and-joseph--5aece911",
+      "name": "Mary (mother of James and Joseph)",
+      "type": "person",
+      "role": "witness",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.judas-iscariot--530c61f0",
+      "name": "Judas Iscariot",
+      "type": "person",
+      "role": "betrayer",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.mary-magdalene--6dd9b3a6",
+      "name": "Mary Magdalene",
+      "type": "person",
+      "role": "witness",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.rich-young-ruler--396254e1",
+      "name": "Rich young ruler",
+      "type": "person",
+      "role": "seeker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.herod-archelaus--c3b8f871",
+      "name": "Herod Archelaus",
+      "type": "person",
+      "role": "ruler",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.centurion-of-capernaum--64ec12c2",
+      "name": "Centurion of Capernaum",
+      "type": "person",
+      "role": "gentile",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.herod-the-great--89dd3337",
+      "name": "Herod the Great",
+      "type": "person",
+      "role": "ruler",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.herod-antipas--65f7f448",
+      "name": "Herod Antipas",
+      "type": "person",
+      "role": "tetrarch",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.peter-s-mother-in-law--dc99a53f",
+      "name": "Peter’s mother-in-law",
+      "type": "person",
+      "role": "healed",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.matthew-levi--e46c1088",
+      "name": "Matthew (Levi)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1,
+      "score": 11
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 4,
+      "score": 19
+    },
+    {
+      "id": "p.jesus-of-nazareth--c4738d73",
+      "name": "Jesus of Nazareth",
+      "type": "person",
+      "role": "messiah",
+      "refs_count": 3,
+      "score": 18
+    },
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2,
+      "score": 17
+    },
+    {
+      "id": "p.simon-peter-cephas--d58cce37",
+      "name": "Simon Peter (Cephas)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 4,
+      "score": 14
+    },
+    {
+      "id": "g.chief-priests--dbda0b67",
+      "name": "Chief Priests",
+      "type": "group",
+      "role": "leadership",
+      "refs_count": 7,
+      "score": 13
+    },
+    {
+      "id": "p.mary-mother-of-jesus--acfa811a",
+      "name": "Mary (mother of Jesus)",
+      "type": "person",
+      "role": "family",
+      "refs_count": 3,
+      "score": 13
+    },
+    {
+      "id": "p.john-the-baptist--509f9f1e",
+      "name": "John the Baptist",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 3,
+      "score": 13
+    },
+    {
+      "id": "p.joseph-husband-of-mary--1e97fe8c",
+      "name": "Joseph (husband of Mary)",
+      "type": "person",
+      "role": "family",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.john-son-of-zebedee--b337fe0e",
+      "name": "John son of Zebedee",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.james-son-of-zebedee--26675adb",
+      "name": "James son of Zebedee",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.mary-mother-of-james-and-joseph--5aece911",
+      "name": "Mary (mother of James and Joseph)",
+      "type": "person",
+      "role": "witness",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.judas-iscariot--530c61f0",
+      "name": "Judas Iscariot",
+      "type": "person",
+      "role": "betrayer",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.mary-magdalene--6dd9b3a6",
+      "name": "Mary Magdalene",
+      "type": "person",
+      "role": "witness",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.rich-young-ruler--396254e1",
+      "name": "Rich young ruler",
+      "type": "person",
+      "role": "seeker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.herod-archelaus--c3b8f871",
+      "name": "Herod Archelaus",
+      "type": "person",
+      "role": "ruler",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.centurion-of-capernaum--64ec12c2",
+      "name": "Centurion of Capernaum",
+      "type": "person",
+      "role": "gentile",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.herod-the-great--89dd3337",
+      "name": "Herod the Great",
+      "type": "person",
+      "role": "ruler",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.herod-antipas--65f7f448",
+      "name": "Herod Antipas",
+      "type": "person",
+      "role": "tetrarch",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.peter-s-mother-in-law--dc99a53f",
+      "name": "Peter’s mother-in-law",
+      "type": "person",
+      "role": "healed",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.matthew-levi--e46c1088",
+      "name": "Matthew (Levi)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.roman-centurion-at-the-cross--9e7e4bcd",
+      "name": "Roman centurion at the cross",
+      "type": "person",
+      "role": "gentile-witness",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.paralytic-lowered--16be799f",
+      "name": "Paralytic lowered",
+      "type": "person",
+      "role": "forgiven",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.andrew--95723853",
+      "name": "Andrew",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.daughter-of-herodias-salome--c136908c",
+      "name": "Daughter of Herodias (Salome)",
+      "type": "person",
+      "role": "royal",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.caiaphas--0abef2e3",
+      "name": "Caiaphas",
+      "type": "person",
+      "role": "high-priest",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.pontius-pilate--d8964343",
+      "name": "Pontius Pilate",
+      "type": "person",
+      "role": "prefect",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.herodias--9fdf64ba",
+      "name": "Herodias",
+      "type": "person",
+      "role": "royal",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.leper-cleansed--a69bbe44",
+      "name": "Leper (cleansed)",
+      "type": "person",
+      "role": "healed",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.joseph-of-arimathea--e7ff4ac4",
+      "name": "Joseph of Arimathea",
+      "type": "person",
+      "role": "disciple",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.angels--b473a1d0",
+      "name": "Angels",
+      "type": "group",
+      "role": "heavenly-host",
+      "refs_count": 3,
+      "score": 9
+    },
+    {
+      "id": "g.scribes--673ce0a5",
+      "name": "Scribes",
+      "type": "group",
+      "role": "leadership",
+      "refs_count": 3,
+      "score": 9
+    },
+    {
+      "id": "g.pharisees--60cfcde1",
+      "name": "Pharisees",
+      "type": "group",
+      "role": "sect",
+      "refs_count": 3,
+      "score": 9
+    },
+    {
+      "id": "g.hypocrites-warning--c6edd7a3",
+      "name": "Hypocrites (warning)",
+      "type": "group",
+      "role": "warning",
+      "refs_count": 2,
+      "score": 8
+    },
+    {
+      "id": "g.sadducees--d70bb352",
+      "name": "Sadducees",
+      "type": "group",
+      "role": "sect",
+      "refs_count": 2,
+      "score": 8
+    },
+    {
+      "id": "g.guards-at-the-tomb--1051127a",
+      "name": "Guards at the tomb",
+      "type": "group",
+      "role": "military",
+      "refs_count": 2,
+      "score": 8
+    },
+    {
+      "id": "g.gerasene-demoniacs--a0ccf547",
+      "name": "Gerasene demoniacs",
+      "type": "group",
+      "role": "delivered",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.twelve-apostles-group--95bd1d99",
+      "name": "Twelve Apostles (group)",
+      "type": "group",
+      "role": "apostolic-college",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.money-changers--a3d7b106",
+      "name": "Money-changers",
+      "type": "group",
+      "role": "economy",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.john-s-disciples--e13dcbe3",
+      "name": "John’s disciples",
+      "type": "group",
+      "role": "discipleship",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.little-ones-the-least--ae200174",
+      "name": "Little ones (the least)",
+      "type": "group",
+      "role": "community",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.magi-wise-men--3f99fd1f",
+      "name": "Magi (wise men)",
+      "type": "group",
+      "role": "pilgrims",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "t.kingdom-of-god--e6ae8d7f",
+      "name": "Kingdom of God",
+      "type": "title",
+      "role": "kingdom",
+      "refs_count": 3,
+      "score": 6
+    },
+    {
+      "id": "t.son-of-man--06ba03e2",
+      "name": "Son of Man",
+      "type": "title",
+      "role": "christological-title",
+      "refs_count": 3,
+      "score": 6
+    },
+    {
+      "id": "t.son-of-god--960b6889",
+      "name": "Son of God",
+      "type": "title",
+      "role": "christological-title",
+      "refs_count": 3,
+      "score": 6
+    },
+    {
+      "id": "t.father-in-heaven-address--d9822bcb",
+      "name": "Father in heaven (address)",
+      "type": "title",
+      "role": "prayer",
+      "refs_count": 1,
+      "score": 4
+    },
+    {
+      "id": "e.sea-of-galilee--fbfbf0a2",
+      "name": "Sea of Galilee",
+      "type": "entity",
+      "role": "body-of-water",
+      "refs_count": 3,
+      "score": 4
+    },
+    {
+      "id": "e.capernaum--e8a7c06b",
+      "name": "Capernaum",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 3,
+      "score": 4
+    },
+    {
+      "id": "e.sermon-on-the-mount--5d776cb7",
+      "name": "Sermon on the Mount",
+      "type": "entity",
+      "role": "discourse",
+      "refs_count": 3,
+      "score": 4
+    },
+    {
+      "id": "f.walking-on-the-water--53de19b6",
+      "name": "Walking on the water",
+      "type": "figure",
+      "role": "miracle",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sower--c7b1f8c3",
+      "name": "Sower",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.woes-against-the-pharisees--67b4d8dc",
+      "name": "Woes against the Pharisees",
+      "type": "figure",
+      "role": "discourse",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.unforgiving-servant--42088ea4",
+      "name": "Unforgiving servant",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.great-commission--ab50a69e",
+      "name": "Great Commission",
+      "type": "figure",
+      "role": "commission",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.galilee--b36c23b8",
+      "name": "Galilee",
+      "type": "entity",
+      "role": "region",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "f.laborers-in-the-vineyard--1a648b0d",
+      "name": "Laborers in the vineyard",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.rachel-s-weeping-ramah--3c64cf5d",
+      "name": "Rachel’s weeping (Ramah)",
+      "type": "figure",
+      "role": "intertext",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.satan-the-tempter--c27f1db2",
+      "name": "Satan (the tempter)",
+      "type": "figure",
+      "role": "adversary",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.transfiguration--7155a70f",
+      "name": "Transfiguration",
+      "type": "figure",
+      "role": "theophany",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.weeds-tares--880718a8",
+      "name": "Weeds (tares)",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.storm-on-the-sea--6db339db",
+      "name": "Storm on the sea",
+      "type": "figure",
+      "role": "miracle",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.mustard-seed--65a3eb91",
+      "name": "Mustard Seed",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.wilderness-desert--5581794f",
+      "name": "Wilderness/Desert",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "f.triumphal-entry--5fe5dc82",
+      "name": "Triumphal Entry",
+      "type": "figure",
+      "role": "event",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.leaven--6ce08931",
+      "name": "Leaven",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.feeding-of-the-five-thousand--a8af349b",
+      "name": "Feeding of the five thousand",
+      "type": "figure",
+      "role": "miracle",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.nazareth--4e4195a3",
+      "name": "Nazareth",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "e.olivet-discourse--eefbb50b",
+      "name": "Olivet Discourse",
+      "type": "entity",
+      "role": "discourse",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "f.confession-at-caesarea-philippi--26d79155",
+      "name": "Confession at Caesarea Philippi",
+      "type": "figure",
+      "role": "confession",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e:sign-of-jonah.nt-reception--f6a1fea6",
+      "name": "Sign of Jonah (NT reception)",
+      "type": "entity",
+      "role": "reception",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.bethlehem-prophecy-in-the-gospels--a1f0c79b",
+      "name": "Bethlehem prophecy in the Gospels",
+      "type": "entity",
+      "role": "reception",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.bethlehem--5e03c285",
+      "name": "Bethlehem",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.gethsemane--8c33c993",
+      "name": "Gethsemane",
+      "type": "entity",
+      "role": "garden",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.arimathea--65c86c25",
+      "name": "Arimathea",
+      "type": "entity",
+      "role": "town",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.golgotha--dcf7176b",
+      "name": "Golgotha",
+      "type": "entity",
+      "role": "place-of-execution",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.law-and-prophets-fulfillment--9a5a81bc",
+      "name": "Law and Prophets (fulfillment)",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.egypt--b2268b8d",
+      "name": "Egypt",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.beatitudes--ab187097",
+      "name": "Beatitudes",
+      "type": "entity",
+      "role": "teaching",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.jordan--4586837c",
+      "name": "Jordan",
+      "type": "entity",
+      "role": "river",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.chorazin--5c1c1e5b",
+      "name": "Chorazin",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.parables-of-the-kingdom--e55f511e",
+      "name": "Parables of the Kingdom",
+      "type": "entity",
+      "role": "discourse",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.bethsaida--7818677d",
+      "name": "Bethsaida",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.capernaum-woe--f39f87aa",
+      "name": "Capernaum (woe)",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "e.fountain-for-cleansing--beb98571",
+  "name": "Fountain for cleansing",
+  "type": "entity",
+  "references": [
+    "Zech 13:1"
+  ],
+  "category": "purification",
+  "blurb": "Perennial resource cleansing sin and impurity for the house of David and inhabitants of Jerusalem.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      13
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "e.no-healer--c0b1a7e3",
+  "name": "No healer",
+  "type": "entity",
+  "references": [
+    "Nah 3:19"
+  ],
+  "category": "medical-metaphor",
+  "aka": [
+    "Incurable wound"
+  ],
+  "blurb": "The malady is terminal; no remedy remains—judgment’s finality stressed.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      3
+    ]
+  }
+}

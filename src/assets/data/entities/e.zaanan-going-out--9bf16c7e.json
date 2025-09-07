@@ -1,0 +1,18 @@
+{
+  "id": "e.zaanan-going-out--9bf16c7e",
+  "name": "Zaanan (Going Out)",
+  "type": "entity",
+  "references": [
+    "Micah 1:11"
+  ],
+  "category": "city-wordplay",
+  "blurb": "‘Going-out’ town cannot go out; siege seals the streets—freedom frozen.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      1
+    ]
+  }
+}

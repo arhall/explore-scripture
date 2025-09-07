@@ -1,0 +1,18 @@
+{
+  "id": "e.therefore-zion-shall-be-plowed-as-a-field--a1e907c3",
+  "name": "Therefore Zion shall be plowed as a field",
+  "type": "entity",
+  "references": [
+    "Micah 3:12"
+  ],
+  "category": "rhetoric",
+  "blurb": "Shock verdict; later cited in Jeremiah as precedent for repentance.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      3
+    ]
+  }
+}

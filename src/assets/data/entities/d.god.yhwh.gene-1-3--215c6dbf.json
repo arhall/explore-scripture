@@ -1,0 +1,49 @@
+{
+  "name": "God (YHWH)",
+  "type": "divine",
+  "references": [
+    "Genesis 1–3",
+    "1 Thess passim",
+    "2 Thess passim",
+    "1 Tim passim",
+    "2 Tim passim",
+    "Titus passim",
+    "Philem passim",
+    "Heb passim",
+    "Jas passim",
+    "1 Pet passim",
+    "2 Pet passim",
+    "1 John passim",
+    "2 John passim",
+    "3 John passim",
+    "Jude passim",
+    "Phil passim",
+    "Eph passim",
+    "Gal passim",
+    "Col passim",
+    "2 Cor passim",
+    "1 Cor passim",
+    "Rom passim"
+  ],
+  "blurb": "God—the covenant name often rendered YHWH—is the Creator and Lord of history. Genesis portrays God as personal (speaking, blessing, judging), sovereign over chaos, and faithful to His promises. He forms humanity in His image (Gen 1:26–27), enters into relationship with them, and, after the fall, pursues them with mercy. Jewish tradition emphasizes God’s covenantal chesed (steadfast love) and justice; Christian theology sees in Genesis the roots of redemption that culminate in Christ. From Eden to Babel, God’s actions frame the story: creation, judgment (flood, dispersion), and gracious election.",
+  "category": "narrative",
+  "cross_references": [
+    "Genesis 1:26–27",
+    "Exodus 34:6–7",
+    "Hebrews 1:1–3"
+  ],
+  "id": "d.god.yhwh.gene-1-3--215c6dbf",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "d.god-yhwh--34eab3d9"
+  ],
+  "book_references": {
+    "Genesis": [
+      1,
+      2,
+      3
+    ]
+  }
+}

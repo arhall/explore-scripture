@@ -1,0 +1,21 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 35,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "p.josiah-king-of-judah.reformer--a10d5584",
+      "name": "Josiah king of Judah (reformer)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "t.pharaoh-neco-slays-josiah-at-megiddo--375c77e6",
+      "name": "Pharaoh Neco slays Josiah at Megiddo",
+      "type": "title",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

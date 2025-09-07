@@ -1,0 +1,19 @@
+{
+  "name": "Babylon",
+  "type": "entity",
+  "category": "city",
+  "references": [
+    "1 Pet 5:13",
+    "Rev 14:8; 16:19; 17–18"
+  ],
+  "aka": [],
+  "id": "e.babylon--9d648bf6",
+  "book_references": {
+    "1 Peter": [
+      5
+    ],
+    "Revelation": [
+      14
+    ]
+  }
+}

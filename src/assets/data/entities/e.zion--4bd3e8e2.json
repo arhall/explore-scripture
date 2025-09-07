@@ -1,0 +1,36 @@
+{
+  "id": "e.zion--4bd3e8e2",
+  "name": "Zion",
+  "type": "entity",
+  "references": [
+    "Nah 1:15",
+    "1 Pet 2:6",
+    "Rev 14:1"
+  ],
+  "category": "holy-mount",
+  "aka": [],
+  "place": "Jerusalem’s sacred hill",
+  "cross_references": [
+    "Ps 48; 87",
+    "Isa 2; 52:7"
+  ],
+  "blurb": "Site of the ‘good news’ announcement: festivals resumed, vows kept, feet of the herald on the mountains.",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "e.zion--d7771d29",
+    "e.zion--ea3cecef"
+  ],
+  "book_references": {
+    "Nahum": [
+      1
+    ],
+    "1 Peter": [
+      2
+    ],
+    "Revelation": [
+      14
+    ]
+  }
+}

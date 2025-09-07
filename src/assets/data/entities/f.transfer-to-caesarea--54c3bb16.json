@@ -1,0 +1,23 @@
+{
+  "name": "Transfer to Caesarea",
+  "type": "figure",
+  "category": "transfer",
+  "references": [
+    "Acts 23:23–35"
+  ],
+  "aka": [],
+  "id": "f.transfer-to-caesarea--54c3bb16",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      23
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "book": "Judges",
+  "chapter": 7,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "p.gideon-son-of-joash.jerubbaal--da4e2791",
+      "name": "Gideon (Jerubbaal) son of Joash",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.gideons-300-with-trumpets-and-jars--397f20c3",
+      "name": "Gideon’s 300 with trumpets and jars",
+      "type": "group",
+      "role": "sign",
+      "refs_count": 1
+    }
+  ]
+}

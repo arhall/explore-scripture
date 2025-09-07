@@ -1,0 +1,18 @@
+{
+  "name": "Justice in commerce and governance",
+  "type": "entity",
+  "references": [
+    "Ezekiel 22:12–29; 45:9–12"
+  ],
+  "blurb": "Oppression, bribery, and unequal measures profane God’s name—holiness is measured in markets too.",
+  "category": "ethics",
+  "id": "e.justice-in-commerce-and-governance--600c8a53",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      22
+    ]
+  }
+}

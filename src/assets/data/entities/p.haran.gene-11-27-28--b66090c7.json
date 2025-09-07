@@ -1,0 +1,31 @@
+{
+  "name": "Haran",
+  "type": "person",
+  "references": [
+    "Genesis 11:27–28"
+  ],
+  "blurb": "Father of Lot, Milcah, and Iscah; dies in Ur of the Chaldeans before Terah’s migration.",
+  "relations": {
+    "parents": [
+      "Terah"
+    ],
+    "children": [
+      "Lot",
+      "Milcah",
+      "Iscah"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "Genesis 11:27–29"
+  ],
+  "id": "p.haran.gene-11-27-28--b66090c7",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      11
+    ]
+  }
+}

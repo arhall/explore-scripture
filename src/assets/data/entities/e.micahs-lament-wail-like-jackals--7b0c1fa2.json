@@ -1,0 +1,18 @@
+{
+  "id": "e.micahs-lament-wail-like-jackals--7b0c1fa2",
+  "name": "Micah’s lament—wail like jackals, mourn like ostriches",
+  "type": "entity",
+  "references": [
+    "Micah 1:8"
+  ],
+  "category": "lament",
+  "blurb": "Prophet embodies grief; soundscape of judgment.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      1
+    ]
+  }
+}

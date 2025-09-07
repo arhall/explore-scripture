@@ -1,0 +1,27 @@
+{
+  "name": "Awake, sleeper (hymn fragment)",
+  "type": "figure",
+  "category": "hymn",
+  "references": [
+    "Eph 5:14"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Isa 60:1; 26:19",
+      "type": "allusion"
+    }
+  ],
+  "aka": [],
+  "id": "f.awake-sleeper-hymn-fragment--2e68c998",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      5
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "book": "Obadiah",
+  "chapter": 1,
+  "entity_count": 57,
+  "entities": [
+    {
+      "id": "g.ephraim--5c67cb1c",
+      "name": "Ephraim",
+      "type": "group",
+      "role": "tribe",
+      "refs_count": 2
+    },
+    {
+      "id": "e.samaria--fcae1760",
+      "name": "Samaria",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 5
+    },
+    {
+      "id": "g.edom.desolate-wilderness--6976d032",
+      "name": "Edom (desolate wilderness)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 3
+    },
+    {
+      "id": "e.mount-zion.in-tension-with-samaria--f68f4d61",
+      "name": "Mount Zion (in tension with Samaria)",
+      "type": "entity",
+      "role": "mount",
+      "refs_count": 2
+    },
+    {
+      "id": "p.obadiah.prophet--4ac0ef81",
+      "name": "Obadiah (prophet)",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 1
+    },
+    {
+      "id": "e.vision-frame-the-vision-of-obadiah--76692f96",
+      "name": "Vision frame: ‘The vision of Obadiah’",
+      "type": "entity",
+      "role": "literary",
+      "refs_count": 1
+    },
+    {
+      "id": "e.heavenly-report-and-messenger-to-the-nations--1cbb3b02",
+      "name": "Heavenly report and messenger to the nations",
+      "type": "entity",
+      "role": "council",
+      "refs_count": 1
+    },
+    {
+      "id": "f.esau.ancestor-typological--fb371e01",
+      "name": "Esau (ancestor, typological)",
+      "type": "figure",
+      "role": "ancestor",
+      "refs_count": 1
+    },
+    {
+      "id": "e.mount-esau-seir.high-places--5e0df6fa",
+      "name": "Mount Esau / Seir (high places)",
+      "type": "entity",
+      "role": "landform",
+      "refs_count": 1
+    },
+    {
+      "id": "e.pride-deceives-you.rock-dwellers--024f4785",
+      "name": "Pride deceives you (rock‑dwellers)",
+      "type": "entity",
+      "role": "vice",
+      "refs_count": 1
+    }
+  ]
+}

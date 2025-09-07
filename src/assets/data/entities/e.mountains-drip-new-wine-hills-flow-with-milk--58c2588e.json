@@ -1,0 +1,18 @@
+{
+  "name": "Mountains drip new wine; hills flow with milk",
+  "type": "entity",
+  "references": [
+    "Joel 3:18"
+  ],
+  "blurb": "Hyperbolic agrarian joy—creation re‑enchanted under divine reign.",
+  "category": "new-creation",
+  "id": "e.mountains-drip-new-wine-hills-flow-with-milk--58c2588e",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      3
+    ]
+  }
+}

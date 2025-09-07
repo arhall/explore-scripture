@@ -1,0 +1,23 @@
+{
+  "name": "Ananias and Sapphira",
+  "type": "group",
+  "category": "judgment",
+  "references": [
+    "Acts 5:1–11"
+  ],
+  "aka": [],
+  "id": "g.ananias-and-sapphira--7e4efba5",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      5
+    ]
+  }
+}

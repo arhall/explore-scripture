@@ -1,0 +1,22 @@
+{
+  "name": "Ten fearful spies",
+  "type": "group",
+  "references": [
+    "Numbers 13–14"
+  ],
+  "blurb": "Majority who magnify giants and melt hearts—contrast to faith of Joshua and Caleb.",
+  "category": "narrative",
+  "cross_references": [
+    "Hebrews 3–4"
+  ],
+  "id": "g.ten-fearful-spies--d1152615",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      13,
+      14
+    ]
+  }
+}

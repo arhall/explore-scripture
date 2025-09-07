@@ -1,0 +1,77 @@
+{
+  "book": "Micah",
+  "chapter": 6,
+  "entity_count": 17,
+  "entities": [
+    {
+      "id": "d.yhwh-the-witness-judge--a329f8d0",
+      "name": "YHWH the Witness-Judge",
+      "type": "divine",
+      "role": "courtroom",
+      "refs_count": 2
+    },
+    {
+      "id": "e.mountains-and-hills-as-witnesses--ec12b7aa",
+      "name": "Mountains and hills as witnesses",
+      "type": "entity",
+      "role": "witnesses",
+      "refs_count": 1
+    },
+    {
+      "id": "e.covenant-lawsuit-rib--e89fb61a",
+      "name": "Covenant lawsuit (rîb)",
+      "type": "entity",
+      "role": "genre",
+      "refs_count": 1
+    },
+    {
+      "id": "g.merchants-with-false-scales-and-weights--7f2ed501",
+      "name": "Merchants with false scales and weights",
+      "type": "group",
+      "role": "commerce",
+      "refs_count": 1
+    },
+    {
+      "id": "g.violence-in-the-houses-of-the-rich--e1b4a3d2",
+      "name": "Violence in the houses of the rich",
+      "type": "group",
+      "role": "corruption",
+      "refs_count": 1
+    },
+    {
+      "id": "g.moses-aaron-miriam-exodus-leaders--9f0e3ab1",
+      "name": "Moses, Aaron, Miriam (Exodus leaders)",
+      "type": "group",
+      "role": "exodus",
+      "refs_count": 1
+    },
+    {
+      "id": "g.balak-and-balaam--a7d309e1",
+      "name": "Balak and Balaam",
+      "type": "group",
+      "role": "allusion",
+      "refs_count": 1
+    },
+    {
+      "id": "e.from-shittim-to-gilgal--8c2f1a76",
+      "name": "From Shittim to Gilgal",
+      "type": "entity",
+      "role": "geography",
+      "refs_count": 1
+    },
+    {
+      "id": "g.statutes-of-omri-works-of-ahab--c1e8d70a",
+      "name": "Statutes of Omri and works of the house of Ahab",
+      "type": "group",
+      "role": "royal-precedent",
+      "refs_count": 1
+    },
+    {
+      "id": "e.with-what-shall-i-come-before-the-lord--7a9f0ed3",
+      "name": "With what shall I come before the LORD?",
+      "type": "entity",
+      "role": "worship",
+      "refs_count": 1
+    }
+  ]
+}

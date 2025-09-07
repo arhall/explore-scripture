@@ -1,0 +1,26 @@
+{
+  "name": "Amalekites",
+  "type": "group",
+  "references": [
+    "Exodus 17:8–16",
+    "1 Samuel 15"
+  ],
+  "blurb": "Nomadic attackers who ambush Israel; God declares war against Amalek from generation to generation.",
+  "category": "narrative",
+  "cross_references": [
+    "Deuteronomy 25:17–19",
+    "1 Samuel 15"
+  ],
+  "id": "g.amalekites--a3e94369",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      17
+    ],
+    "1 Samuel": [
+      15
+    ]
+  }
+}

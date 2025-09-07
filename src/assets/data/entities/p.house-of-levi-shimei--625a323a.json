@@ -1,0 +1,18 @@
+{
+  "id": "p.house-of-levi-shimei--625a323a",
+  "name": "House of Levi/Shimei",
+  "type": "person",
+  "references": [
+    "Zech 12:13"
+  ],
+  "category": "priestly-house",
+  "blurb": "Priestly families named in the great mourning; signals comprehensive repentance.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      12
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Stoic and Epicurean philosophers",
+  "type": "group",
+  "category": "philosophers",
+  "references": [
+    "Acts 17:18"
+  ],
+  "aka": [],
+  "id": "g.stoic-and-epicurean-philosophers--63c5bef2",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      17
+    ]
+  }
+}

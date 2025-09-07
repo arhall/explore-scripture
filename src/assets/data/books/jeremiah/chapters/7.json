@@ -1,0 +1,49 @@
+{
+  "book": "Jeremiah",
+  "chapter": 7,
+  "entity_count": 6,
+  "entities": [
+    {
+      "id": "g.women-baking-cakes-for-the-queen-of-heaven--e063a172",
+      "name": "Women baking cakes for the Queen of Heaven",
+      "type": "group",
+      "role": "idolatry",
+      "refs_count": 1
+    },
+    {
+      "id": "e.the-temple.sermon-at-the-gate--ff838934",
+      "name": "The Temple (Sermon at the Gate)",
+      "type": "entity",
+      "role": "worship",
+      "refs_count": 1
+    },
+    {
+      "id": "e.shiloh-precedent--1e3d59c7",
+      "name": "Shiloh precedent",
+      "type": "entity",
+      "role": "history",
+      "refs_count": 1
+    },
+    {
+      "id": "e.molech-topheth-sacrifices--d2b5cb9e",
+      "name": "Molech / Topheth sacrifices",
+      "type": "entity",
+      "role": "idol",
+      "refs_count": 1
+    },
+    {
+      "id": "e.queen-of-heaven--3e0fba5f",
+      "name": "Queen of Heaven",
+      "type": "entity",
+      "role": "idol",
+      "refs_count": 1
+    },
+    {
+      "id": "e.topheth-valley-of-hinnom.gehenna--36e269e1",
+      "name": "Topheth / Valley of Hinnom (Gehenna)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    }
+  ]
+}

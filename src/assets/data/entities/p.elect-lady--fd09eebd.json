@@ -1,0 +1,15 @@
+{
+  "name": "elect lady",
+  "type": "person",
+  "category": "addressee",
+  "references": [
+    "2 John 1"
+  ],
+  "aka": [],
+  "id": "p.elect-lady--fd09eebd",
+  "book_references": {
+    "2 John": [
+      1
+    ]
+  }
+}

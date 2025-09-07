@@ -1,0 +1,19 @@
+{
+  "name": "Mamre the Amorite",
+  "type": "person",
+  "references": [
+    "Genesis 14:13,24"
+  ],
+  "blurb": "Local ally of Abraham; his association shows the patriarch’s embeddedness in Canaanite networks.",
+  "category": "narrative",
+  "cross_references": [],
+  "id": "p.mamre-the-amorite.gene-14-13-24--2b33a9c6",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      14
+    ]
+  }
+}

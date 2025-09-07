@@ -1,0 +1,18 @@
+{
+  "id": "e.cut-off-sorceries--c09a7e13",
+  "name": "Cut off sorceries",
+  "type": "entity",
+  "references": [
+    "Micah 5:10–15"
+  ],
+  "category": "purge-note",
+  "blurb": "Manipulative spirituality ended; no spellcraft in Zion.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      5
+    ]
+  }
+}

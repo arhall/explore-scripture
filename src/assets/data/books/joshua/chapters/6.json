@@ -1,0 +1,14 @@
+{
+  "book": "Joshua",
+  "chapter": 6,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "e.jericho.city--d8b856fd",
+      "name": "Jericho (city)",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1
+    }
+  ]
+}

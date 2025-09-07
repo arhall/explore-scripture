@@ -1,0 +1,38 @@
+{
+  "name": "Wilderness/Desert",
+  "type": "entity",
+  "category": "place",
+  "references": [
+    "Matt 3:1",
+    "Matt 4:1",
+    "Mark 1:12–13",
+    "Luke 3:2",
+    "Luke 4:1"
+  ],
+  "blurb": "Testing ground where the Son triumphs over the tempter—Israel’s wilderness retold in obedience.",
+  "aka": [],
+  "id": "e.wilderness-desert--5581794f",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Mark",
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      3,
+      4
+    ],
+    "Mark": [
+      1
+    ],
+    "Luke": [
+      3,
+      4
+    ]
+  }
+}

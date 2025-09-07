@@ -1,0 +1,18 @@
+{
+  "name": "Davidic hope",
+  "type": "figure",
+  "references": [
+    "Hosea 3:5"
+  ],
+  "blurb": "Post-exilic hope: return to YHWH and David their king.",
+  "category": "messianic",
+  "id": "f.davidic-hope--c86d8bba",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Hosea": [
+      3
+    ]
+  }
+}

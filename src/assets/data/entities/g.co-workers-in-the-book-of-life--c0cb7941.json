@@ -1,0 +1,21 @@
+{
+  "name": "Co-workers in the book of life",
+  "type": "group",
+  "category": "coworkers",
+  "references": [
+    "Phil 4:3"
+  ],
+  "aka": [],
+  "id": "g.co-workers-in-the-book-of-life--c0cb7941",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Philippians": [
+      4
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Proverb: ‘The fathers ate sour grapes’ refuted",
+  "type": "entity",
+  "references": [
+    "Ezekiel 18:2"
+  ],
+  "blurb": "Inherited blame gives way to personal responsibility—each soul stands before God.",
+  "category": "ethics",
+  "id": "e.proverb-the-fathers-ate-sour-grapes-refuted--1db75e08",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      18
+    ]
+  }
+}

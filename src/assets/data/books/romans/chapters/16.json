@@ -1,0 +1,77 @@
+{
+  "book": "Romans",
+  "chapter": 16,
+  "entity_count": 44,
+  "entities": [
+    {
+      "id": "p.tryphaena--93dd722f",
+      "name": "Tryphaena",
+      "type": "person",
+      "role": "worker",
+      "refs_count": 1
+    },
+    {
+      "id": "p.epaenetus--c134dc56",
+      "name": "Epaenetus",
+      "type": "person",
+      "role": "believer",
+      "refs_count": 1
+    },
+    {
+      "id": "p.ampliatus--b07fce01",
+      "name": "Ampliatus",
+      "type": "person",
+      "role": "believer",
+      "refs_count": 1
+    },
+    {
+      "id": "p.urbanus--113e132c",
+      "name": "Urbanus",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1
+    },
+    {
+      "id": "p.tertius--bc18299e",
+      "name": "Tertius",
+      "type": "person",
+      "role": "amanuensis",
+      "refs_count": 1
+    },
+    {
+      "id": "p.erastus--f42e12b9",
+      "name": "Erastus",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 3
+    },
+    {
+      "id": "p.asyncritus--8d8cae04",
+      "name": "Asyncritus",
+      "type": "person",
+      "role": "believer",
+      "refs_count": 1
+    },
+    {
+      "id": "p.patrobas--dba2fcd4",
+      "name": "Patrobas",
+      "type": "person",
+      "role": "believer",
+      "refs_count": 1
+    },
+    {
+      "id": "p.mother-of-rufus--cf8ccee1",
+      "name": "Mother of Rufus",
+      "type": "person",
+      "role": "mother",
+      "refs_count": 1
+    },
+    {
+      "id": "p.phoebe--becf7925",
+      "name": "Phoebe",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1
+    }
+  ]
+}

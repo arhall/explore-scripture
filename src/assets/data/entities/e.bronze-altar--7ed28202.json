@@ -1,0 +1,21 @@
+{
+  "name": "Bronze altar (burnt offering)",
+  "type": "entity",
+  "references": [
+    "Exodus 27:1–8"
+  ],
+  "blurb": "Blood and fire meet.",
+  "category": "tabernacle",
+  "cross_references": [
+    "Hebrews 9:1–5"
+  ],
+  "id": "e.bronze-altar--7ed28202",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      27
+    ]
+  }
+}

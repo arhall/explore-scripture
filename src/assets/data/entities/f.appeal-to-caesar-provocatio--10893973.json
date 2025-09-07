@@ -1,0 +1,23 @@
+{
+  "name": "Appeal to Caesar (provocatio)",
+  "type": "figure",
+  "category": "legal",
+  "references": [
+    "Acts 25:11"
+  ],
+  "aka": [],
+  "id": "f.appeal-to-caesar-provocatio--10893973",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      25
+    ]
+  }
+}

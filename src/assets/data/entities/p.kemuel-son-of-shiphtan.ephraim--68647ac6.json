@@ -1,0 +1,18 @@
+{
+  "name": "Kemuel son of Shiphtan (Ephraim)",
+  "type": "person",
+  "references": [
+    "Numbers 34:24"
+  ],
+  "blurb": "Leader appointed to assist in apportioning Canaan by tribe.",
+  "category": "narrative",
+  "id": "p.kemuel-son-of-shiphtan.ephraim--68647ac6",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      34
+    ]
+  }
+}

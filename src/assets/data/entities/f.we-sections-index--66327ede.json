@@ -1,0 +1,30 @@
+{
+  "name": "We-sections (index)",
+  "type": "figure",
+  "category": "index",
+  "references": [
+    "Acts 16:10–17",
+    "Acts 20:5–15",
+    "Acts 21:1–18",
+    "Acts 27:1–28:16"
+  ],
+  "blurb": "First-person plural narrative sections indicating the author’s presence.",
+  "aka": [],
+  "id": "f.we-sections-index--66327ede",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      16,
+      20,
+      21,
+      27
+    ]
+  }
+}

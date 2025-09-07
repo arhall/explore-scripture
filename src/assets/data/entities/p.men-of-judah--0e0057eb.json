@@ -1,0 +1,18 @@
+{
+  "id": "p.men-of-judah--0e0057eb",
+  "name": "Men of Judah",
+  "type": "person",
+  "references": [
+    "Mal 2:11-16"
+  ],
+  "category": "laity",
+  "blurb": "Addressed regarding syncretistic marriages and treacherous divorce that covers one’s garment with violence.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      2
+    ]
+  }
+}

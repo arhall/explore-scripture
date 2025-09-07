@@ -1,0 +1,685 @@
+[
+  {
+    "id": "p.moses--2c0fba85",
+    "name": "Moses",
+    "type": "person",
+    "url": "/entities/p.moses--2c0fba85/",
+    "blurb": "Rescued from the Nile by Pharaoh’s daughter, raised in the court, then exiled to Midian after defending a Hebrew. At the burning bush he meets the God of the fathers; reluctant yet called, he confront",
+    "searchText": "moses person narrative rescued from the nile by pharaoh’s daughter, raised in the court, then exiled to midian after defending a hebrew. at the burning bush he meets the god of the fathers; reluctant yet called, he confronts pharaoh with signs and speeches, leads through the plagues, and brings israel to the sea. moses’ story in these chapters showcases divine compassion, judgment, and the birth of a nation. ",
+    "references": 11,
+    "books": [
+      "Exodus",
+      "Leviticus",
+      "Numbers",
+      "Deuteronomy",
+      "Matthew",
+      "Mark",
+      "Hebrews"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.aaron--cc77e332",
+    "name": "Aaron",
+    "type": "person",
+    "url": "/entities/p.aaron--cc77e332/",
+    "blurb": "Moses’ brother and spokesman, later high priest. Performs signs before Pharaoh, stretches the staff over Egypt and the sea, and leads in worship.",
+    "searchText": "aaron person narrative moses’ brother and spokesman, later high priest. performs signs before pharaoh, stretches the staff over egypt and the sea, and leads in worship. ",
+    "references": 6,
+    "books": [
+      "Exodus",
+      "Numbers",
+      "Hebrews"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.phinehas--accbe6db",
+    "name": "Phinehas",
+    "type": "person",
+    "url": "/entities/p.phinehas--accbe6db/",
+    "blurb": "Son of Eleazar; later zealous for covenant fidelity.",
+    "searchText": "phinehas person genealogy son of eleazar; later zealous for covenant fidelity. ",
+    "references": 4,
+    "books": [
+      "Exodus",
+      "Leviticus",
+      "Joshua"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.abihu--fcf5dac6",
+    "name": "Abihu",
+    "type": "person",
+    "url": "/entities/p.abihu--fcf5dac6/",
+    "blurb": "Son of Aaron who participates in the covenant meal; later judged for strange fire.",
+    "searchText": "abihu person narrative son of aaron who participates in the covenant meal; later judged for strange fire. ",
+    "references": 3,
+    "books": [
+      "Exodus",
+      "Leviticus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.eleazar--b3d5a12a",
+    "name": "Eleazar",
+    "type": "person",
+    "url": "/entities/p.eleazar--b3d5a12a/",
+    "blurb": "Son of Aaron who will succeed him as priest; later father of Phinehas.",
+    "searchText": "eleazar person narrative son of aaron who will succeed him as priest; later father of phinehas. ",
+    "references": 3,
+    "books": [
+      "Exodus",
+      "Leviticus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.miriam--5f6df826",
+    "name": "Miriam",
+    "type": "person",
+    "url": "/entities/p.miriam--5f6df826/",
+    "blurb": "Prophetess and sister of Moses who watches over him at the river and leads Israel’s women in song after the Sea crossing.",
+    "searchText": "miriam person narrative prophetess and sister of moses who watches over him at the river and leads israel’s women in song after the sea crossing. ",
+    "references": 3,
+    "books": [
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.nadab--51b037c1",
+    "name": "Nadab",
+    "type": "person",
+    "url": "/entities/p.nadab--51b037c1/",
+    "blurb": "Eldest son of Aaron who ascends partway up Sinai; later dies for unauthorized fire—holiness is not casual.",
+    "searchText": "nadab person narrative eldest son of aaron who ascends partway up sinai; later dies for unauthorized fire—holiness is not casual. ",
+    "references": 3,
+    "books": [
+      "Exodus",
+      "Leviticus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "f.angel-of-the-lord.gene-16-22--790d3b7c",
+    "name": "Angel of the LORD",
+    "type": "figure",
+    "url": "/entities/f.angel-of-the-lord.gene-16-22--790d3b7c/",
+    "blurb": "Speaks with divine authority to Hagar and later stays Abraham’s hand on Moriah, revealing God as both holy and merciful.",
+    "searchText": "angel of the lord figure narrative speaks with divine authority to hagar and later stays abraham’s hand on moriah, revealing god as both holy and merciful. f.angel-of-the-lord--bb1d2281",
+    "references": 3,
+    "books": [
+      "Exodus",
+      "Numbers"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.amalekites--a3e94369",
+    "name": "Amalekites",
+    "type": "group",
+    "url": "/entities/g.amalekites--a3e94369/",
+    "blurb": "Nomadic attackers who ambush Israel; God declares war against Amalek from generation to generation.",
+    "searchText": "amalekites group narrative nomadic attackers who ambush israel; god declares war against amalek from generation to generation. ",
+    "references": 2,
+    "books": [
+      "Exodus",
+      "1 Samuel"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.magicians-of-egypt.gene-41-8--39266da6",
+    "name": "Magicians of Egypt",
+    "type": "group",
+    "url": "/entities/g.magicians-of-egypt.gene-41-8--39266da6/",
+    "blurb": "Royal sages unable to interpret Pharaoh’s dreams; their inability spotlights Joseph’s God-given insight.",
+    "searchText": "magicians of egypt group narrative royal sages unable to interpret pharaoh’s dreams; their inability spotlights joseph’s god-given insight. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.amram--036a3a7e",
+    "name": "Amram",
+    "type": "person",
+    "url": "/entities/p.amram--036a3a7e/",
+    "blurb": "Levite of Kohath’s line who marries Jochebed; father of Moses, Aaron, and (by tradition) Miriam. Anchors Moses within Levi’s priestly heritage.",
+    "searchText": "amram person genealogy levite of kohath’s line who marries jochebed; father of moses, aaron, and (by tradition) miriam. anchors moses within levi’s priestly heritage. ",
+    "references": 2,
+    "books": [
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.carmi.gene-46-9--726703f6",
+    "name": "Carmi",
+    "type": "person",
+    "url": "/entities/p.carmi.gene-46-9--726703f6/",
+    "blurb": "Son of Reuben listed among those who went to Egypt.",
+    "searchText": "carmi person genealogy son of reuben listed among those who went to egypt. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.elkanah--96e47f98",
+    "name": "Elkanah",
+    "type": "person",
+    "url": "/entities/p.elkanah--96e47f98/",
+    "blurb": "Son of Korah; Korahite line (distinct from later Samuel’s father).",
+    "searchText": "elkanah person genealogy son of korah; korahite line (distinct from later samuel’s father). ",
+    "references": 2,
+    "books": [
+      "Exodus",
+      "1 Samuel"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.gershon.gene-46-11--db453443",
+    "name": "Gershon",
+    "type": "person",
+    "url": "/entities/p.gershon.gene-46-11--db453443/",
+    "blurb": "Son of Levi; later a Levitical clan progenitor.",
+    "searchText": "gershon person genealogy son of levi; later a levitical clan progenitor. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.hezron.gene-46-9-46-12--0d33b793",
+    "name": "Hezron",
+    "type": "person",
+    "url": "/entities/p.hezron.gene-46-9-46-12--0d33b793/",
+    "blurb": "Descendant in the lines of Reuben and Perez; ancestor-name later in Davidic genealogy.",
+    "searchText": "hezron person genealogy descendant in the lines of reuben and perez; ancestor-name later in davidic genealogy. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.ithamar--6dbd7a25",
+    "name": "Ithamar",
+    "type": "person",
+    "url": "/entities/p.ithamar--6dbd7a25/",
+    "blurb": "Youngest son of Aaron appointed to priestly service; supervises parts of the tabernacle work.",
+    "searchText": "ithamar person narrative youngest son of aaron appointed to priestly service; supervises parts of the tabernacle work. ",
+    "references": 2,
+    "books": [
+      "Exodus",
+      "Leviticus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.jachin.gene-46-10--4e6517d3",
+    "name": "Jachin",
+    "type": "person",
+    "url": "/entities/p.jachin.gene-46-10--4e6517d3/",
+    "blurb": "Son of Simeon listed among those who went to Egypt.",
+    "searchText": "jachin person genealogy son of simeon listed among those who went to egypt. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.jamin.gene-46-10--5972d38d",
+    "name": "Jamin",
+    "type": "person",
+    "url": "/entities/p.jamin.gene-46-10--5972d38d/",
+    "blurb": "Son of Simeon listed among those who went to Egypt.",
+    "searchText": "jamin person genealogy son of simeon listed among those who went to egypt. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.jemuel.nemuel.gene-46-10--4ea06837",
+    "name": "Jemuel (Nemuel)",
+    "type": "person",
+    "url": "/entities/p.jemuel.nemuel.gene-46-10--4ea06837/",
+    "blurb": "Son of Simeon listed among those who went to Egypt; name variant appears in later lists.",
+    "searchText": "jemuel (nemuel) person genealogy son of simeon listed among those who went to egypt; name variant appears in later lists. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.jethro.reuel--3e8098d5",
+    "name": "Jethro (Reuel)",
+    "type": "person",
+    "url": "/entities/p.jethro.reuel--3e8098d5/",
+    "blurb": "Priest of Midian and Moses’ father-in-law; hosts Moses in exile and later counsels him in leadership.",
+    "searchText": "jethro (reuel) person narrative priest of midian and moses’ father-in-law; hosts moses in exile and later counsels him in leadership. ",
+    "references": 2,
+    "books": [
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.jochebed--721423c7",
+    "name": "Jochebed",
+    "type": "person",
+    "url": "/entities/p.jochebed--721423c7/",
+    "blurb": "Mother of Moses and Aaron; her courageous concealment and crafting of the basket set the stage for Israel’s deliverer.",
+    "searchText": "jochebed person narrative mother of moses and aaron; her courageous concealment and crafting of the basket set the stage for israel’s deliverer. ",
+    "references": 2,
+    "books": [
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.joshua.hoshea--558e7dbd",
+    "name": "Joshua (Hoshea)",
+    "type": "person",
+    "url": "/entities/p.joshua.hoshea--558e7dbd/",
+    "blurb": "Young assistant who leads Israel against Amalek and remains at the tent—apprenticed in presence and courage.",
+    "searchText": "joshua (hoshea) person narrative young assistant who leads israel against amalek and remains at the tent—apprenticed in presence and courage. ",
+    "references": 2,
+    "books": [
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.kohath.gene-46-11--13ddd86a",
+    "name": "Kohath",
+    "type": "person",
+    "url": "/entities/p.kohath.gene-46-11--13ddd86a/",
+    "blurb": "Son of Levi; ancestor of Moses and Aaron’s line.",
+    "searchText": "kohath person genealogy son of levi; ancestor of moses and aaron’s line. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.korah.son-of-esau.gene-36-5-14-18--9ad77197",
+    "name": "Korah (son of Esau)",
+    "type": "person",
+    "url": "/entities/p.korah.son-of-esau.gene-36-5-14-18--9ad77197/",
+    "blurb": "Son of Esau by Oholibamah; later a clan chief (not to be confused with the Korah of Numbers 16).",
+    "searchText": "korah (son of esau) person genealogy son of esau by oholibamah; later a clan chief (not to be confused with the korah of numbers 16). p.korah-son-of-izhar--908ea275",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.merari.gene-46-11--fa4697ab",
+    "name": "Merari",
+    "type": "person",
+    "url": "/entities/p.merari.gene-46-11--fa4697ab/",
+    "blurb": "Son of Levi; founder of Levitical Merarites.",
+    "searchText": "merari person genealogy son of levi; founder of levitical merarites. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.ohad.gene-46-10--41fdc520",
+    "name": "Ohad",
+    "type": "person",
+    "url": "/entities/p.ohad.gene-46-10--41fdc520/",
+    "blurb": "Son of Simeon listed among those who went to Egypt.",
+    "searchText": "ohad person genealogy son of simeon listed among those who went to egypt. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.pallu.gene-46-9--0bb1b5b2",
+    "name": "Pallu",
+    "type": "person",
+    "url": "/entities/p.pallu.gene-46-9--0bb1b5b2/",
+    "blurb": "Son of Reuben listed among those who went to Egypt.",
+    "searchText": "pallu person genealogy son of reuben listed among those who went to egypt. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.shaul.son-of-a-canaanite-woman.gene-46-10--f81f8022",
+    "name": "Shaul (son of a Canaanite woman)",
+    "type": "person",
+    "url": "/entities/p.shaul.son-of-a-canaanite-woman.gene-46-10--f81f8022/",
+    "blurb": "Son of Simeon with a noted maternal descriptor.",
+    "searchText": "shaul (son of a canaanite woman) person genealogy son of simeon with a noted maternal descriptor. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.zohar.zerah.gene-46-10--097fbd18",
+    "name": "Zohar (Zerah)",
+    "type": "person",
+    "url": "/entities/p.zohar.zerah.gene-46-10--097fbd18/",
+    "blurb": "Son of Simeon listed among those who went to Egypt; variant ‘Zerah’ occurs elsewhere.",
+    "searchText": "zohar (zerah) person genealogy son of simeon listed among those who went to egypt; variant ‘zerah’ occurs elsewhere. ",
+    "references": 2,
+    "books": [
+      "Genesis",
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "e.altar-of-incense--8fedaed4",
+    "name": "Altar of incense",
+    "type": "entity",
+    "url": "/entities/e.altar-of-incense--8fedaed4/",
+    "blurb": "Sweet smoke of prayer.",
+    "searchText": "altar of incense entity tabernacle sweet smoke of prayer. ",
+    "references": 2,
+    "books": [
+      "Exodus",
+      "Hebrews"
+    ],
+    "category": "tabernacle"
+  },
+  {
+    "id": "e.ark-of-the-covenant--88be4dc9",
+    "name": "Ark of the Covenant",
+    "type": "entity",
+    "url": "/entities/e.ark-of-the-covenant--88be4dc9/",
+    "blurb": "Footstool of the King—revelation and atonement.",
+    "searchText": "ark of the covenant entity tabernacle footstool of the king—revelation and atonement. ",
+    "references": 2,
+    "books": [
+      "Exodus",
+      "Hebrews"
+    ],
+    "category": "tabernacle"
+  },
+  {
+    "id": "d.the-name-yhwh-i-am--052df719",
+    "name": "The Name YHWH / ‘I AM’",
+    "type": "divine",
+    "url": "/entities/d.the-name-yhwh-i-am--052df719/",
+    "blurb": "Divine self-revelation anchoring Israel’s faith: God is the living, self-existent One who remembers His covenant and comes down to save.",
+    "searchText": "the name yhwh / ‘i am’ divine narrative divine self-revelation anchoring israel’s faith: god is the living, self-existent one who remembers his covenant and comes down to save. ",
+    "references": 1,
+    "books": [
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.all-israel-at-the-sea--fe75828c",
+    "name": "All Israel at the Sea",
+    "type": "group",
+    "url": "/entities/g.all-israel-at-the-sea--fe75828c/",
+    "blurb": "Nation sees salvation and sings.",
+    "searchText": "all israel at the sea group narrative nation sees salvation and sings. ",
+    "references": 1,
+    "books": [
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.calf-worshipers--2229ae49",
+    "name": "Calf-worshipers",
+    "type": "group",
+    "url": "/entities/g.calf-worshipers--2229ae49/",
+    "blurb": "Those who press Aaron to make the golden calf and celebrate; their sin provokes judgment and intercession.",
+    "searchText": "calf-worshipers group narrative those who press aaron to make the golden calf and celebrate; their sin provokes judgment and intercession. ",
+    "references": 1,
+    "books": [
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.chiefs-of-thousands-hundreds-fifties-tens--8361dcf1",
+    "name": "Chiefs of thousands/hundreds/fifties/tens",
+    "type": "group",
+    "url": "/entities/g.chiefs-of-thousands-hundreds-fifties-tens--8361dcf1/",
+    "blurb": "Lay judges appointed to share the burden of justice—proto-structures for covenant community.",
+    "searchText": "chiefs of thousands/hundreds/fifties/tens group narrative lay judges appointed to share the burden of justice—proto-structures for covenant community. ",
+    "references": 1,
+    "books": [
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.elders-of-israel--e67509a3",
+    "name": "Elders of Israel",
+    "type": "group",
+    "url": "/entities/g.elders-of-israel--e67509a3/",
+    "blurb": "Representative leaders who receive Moses’ message and lead the people in Passover obedience.",
+    "searchText": "elders of israel group narrative representative leaders who receive moses’ message and lead the people in passover obedience. ",
+    "references": 1,
+    "books": [
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.firstborn-of-egypt--b0156eb2",
+    "name": "Firstborn of Egypt",
+    "type": "group",
+    "url": "/entities/g.firstborn-of-egypt--b0156eb2/",
+    "blurb": "Collective victims of the final plague—sobering sign that idolatrous powers cannot stand against the Holy One.",
+    "searchText": "firstborn of egypt group narrative collective victims of the final plague—sobering sign that idolatrous powers cannot stand against the holy one. ",
+    "references": 1,
+    "books": [
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.israelites-groaning-under-slavery--2eee904c",
+    "name": "Israelites groaning under slavery",
+    "type": "group",
+    "url": "/entities/g.israelites-groaning-under-slavery--2eee904c/",
+    "blurb": "Cry rises; God remembers covenant.",
+    "searchText": "israelites groaning under slavery group narrative cry rises; god remembers covenant. ",
+    "references": 1,
+    "books": [
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.levites-who-rallied-to-moses--42c6d1cf",
+    "name": "Levites who rallied to Moses",
+    "type": "group",
+    "url": "/entities/g.levites-who-rallied-to-moses--42c6d1cf/",
+    "blurb": "Tribe that stands for the LORD amid idolatry; their consecration is costly and becomes vocation.",
+    "searchText": "levites who rallied to moses group narrative tribe that stands for the lord amid idolatry; their consecration is costly and becomes vocation. ",
+    "references": 1,
+    "books": [
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.mixed-multitude--e0963096",
+    "name": "Mixed multitude",
+    "type": "group",
+    "url": "/entities/g.mixed-multitude--e0963096/",
+    "blurb": "Non-Israelites who join the Exodus, hinting at Israel’s mission to bless the nations and foreshadowing Gentile inclusion.",
+    "searchText": "mixed multitude group narrative non-israelites who join the exodus, hinting at israel’s mission to bless the nations and foreshadowing gentile inclusion. ",
+    "references": 1,
+    "books": [
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.pharaohs-army--ed80e6de",
+    "name": "Pharaoh’s army",
+    "type": "group",
+    "url": "/entities/g.pharaohs-army--ed80e6de/",
+    "blurb": "Chariots and horsemen pursuing Israel; swallowed by the Sea—an emblem of God’s warrior deliverance.",
+    "searchText": "pharaoh’s army group narrative chariots and horsemen pursuing israel; swallowed by the sea—an emblem of god’s warrior deliverance. ",
+    "references": 1,
+    "books": [
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.seventy-elders-of-israel--def85245",
+    "name": "Seventy elders of Israel",
+    "type": "group",
+    "url": "/entities/g.seventy-elders-of-israel--def85245/",
+    "blurb": "Leaders who see God’s glory atop Sinai and eat and drink—an astonishing moment of mediated nearness.",
+    "searchText": "seventy elders of israel group narrative leaders who see god’s glory atop sinai and eat and drink—an astonishing moment of mediated nearness. ",
+    "references": 1,
+    "books": [
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.skilled-craftsmen-wise-hearted--36ea4cc5",
+    "name": "Skilled craftsmen / wise-hearted",
+    "type": "group",
+    "url": "/entities/g.skilled-craftsmen-wise-hearted--36ea4cc5/",
+    "blurb": "Women and men whose wisdom-of-heart produces sacred space—an economy where craft serves communion.",
+    "searchText": "skilled craftsmen / wise-hearted group narrative women and men whose wisdom-of-heart produces sacred space—an economy where craft serves communion. ",
+    "references": 1,
+    "books": [
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.taskmasters-of-egypt--defcd472",
+    "name": "Taskmasters of Egypt",
+    "type": "group",
+    "url": "/entities/g.taskmasters-of-egypt--defcd472/",
+    "blurb": "Oppressive overseers who intensify Israel’s toil—exposing the cruelty of empire set against God’s purposes.",
+    "searchText": "taskmasters of egypt group narrative oppressive overseers who intensify israel’s toil—exposing the cruelty of empire set against god’s purposes. ",
+    "references": 1,
+    "books": [
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.women-who-served-at-the-entrance-of-the-tent-of-meeting--574019fd",
+    "name": "Women who served at the entrance of the tent of meeting",
+    "type": "group",
+    "url": "/entities/g.women-who-served-at-the-entrance-of-the-tent-of-meeting--574019fd/",
+    "blurb": "Women minister in holy work.",
+    "searchText": "women who served at the entrance of the tent of meeting group narrative women minister in holy work. ",
+    "references": 1,
+    "books": [
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "g.women-with-timbrels--c5854464",
+    "name": "Women with timbrels",
+    "type": "group",
+    "url": "/entities/g.women-with-timbrels--c5854464/",
+    "blurb": "The women of Israel who, led by Miriam, answer Moses’ song with praise—worship as public theology.",
+    "searchText": "women with timbrels group narrative the women of israel who, led by miriam, answer moses’ song with praise—worship as public theology. ",
+    "references": 1,
+    "books": [
+      "Exodus"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.abiasaph--5eede2e3",
+    "name": "Abiasaph",
+    "type": "person",
+    "url": "/entities/p.abiasaph--5eede2e3/",
+    "blurb": "Son of Korah; Korahite line.",
+    "searchText": "abiasaph person genealogy son of korah; korahite line. ",
+    "references": 1,
+    "books": [
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.amminadab--d0ec829a",
+    "name": "Amminadab",
+    "type": "person",
+    "url": "/entities/p.amminadab--d0ec829a/",
+    "blurb": "Father of Elisheba; Judahite ancestor.",
+    "searchText": "amminadab person genealogy father of elisheba; judahite ancestor. ",
+    "references": 1,
+    "books": [
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.assir--80707022",
+    "name": "Assir",
+    "type": "person",
+    "url": "/entities/p.assir--80707022/",
+    "blurb": "Son of Korah; part of the Korahite line.",
+    "searchText": "assir person genealogy son of korah; part of the korahite line. ",
+    "references": 1,
+    "books": [
+      "Exodus"
+    ],
+    "category": "genealogy"
+  },
+  {
+    "id": "p.bezalel-son-of-uri.tribe-of-judah--d9c1f4ec",
+    "name": "Bezalel son of Uri (tribe of Judah)",
+    "type": "person",
+    "url": "/entities/p.bezalel-son-of-uri.tribe-of-judah--d9c1f4ec/",
+    "blurb": "Spirit-filled artisan gifted in design, goldwork, and craftsmanship to build the tabernacle—art as worship.",
+    "searchText": "bezalel son of uri (tribe of judah) person narrative spirit-filled artisan gifted in design, goldwork, and craftsmanship to build the tabernacle—art as worship. ",
+    "references": 1,
+    "books": [
+      "Exodus"
+    ],
+    "category": "narrative"
+  }
+]

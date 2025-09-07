@@ -1,0 +1,21 @@
+{
+  "name": "The Rock was Christ",
+  "type": "figure",
+  "category": "christology",
+  "references": [
+    "1 Cor 10:4"
+  ],
+  "aka": [],
+  "id": "f.the-rock-was-christ--8dac9a9a",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "1 Corinthians": [
+      10
+    ]
+  }
+}

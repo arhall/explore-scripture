@@ -1,0 +1,21 @@
+{
+  "book": "John",
+  "chapter": 13,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "f.footwashing--59c330d0",
+      "name": "Footwashing",
+      "type": "figure",
+      "role": "enacted-parable",
+      "refs_count": 1
+    },
+    {
+      "id": "f.new-commandment--aca3662a",
+      "name": "New commandment",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1
+    }
+  ]
+}

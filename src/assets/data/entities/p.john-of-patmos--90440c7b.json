@@ -1,0 +1,24 @@
+{
+  "name": "John of Patmos",
+  "type": "person",
+  "category": "seer",
+  "references": [
+    "Rev 1:1,9; 22:8"
+  ],
+  "aka": [
+    "John the seer",
+    "the seer"
+  ],
+  "id": "p.john-of-patmos--90440c7b",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Revelation": [
+      1
+    ]
+  }
+}

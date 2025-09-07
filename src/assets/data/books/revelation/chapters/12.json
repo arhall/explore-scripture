@@ -1,0 +1,77 @@
+{
+  "book": "Revelation",
+  "chapter": 12,
+  "entity_count": 19,
+  "entities": [
+    {
+      "id": "f.woman-clothed-with-the-sun--64e5cb44",
+      "name": "woman clothed with the sun",
+      "type": "figure",
+      "role": "symbol",
+      "refs_count": 1
+    },
+    {
+      "id": "p.dragon-satan--4898b1bc",
+      "name": "dragon (Satan)",
+      "type": "person",
+      "role": "adversary",
+      "refs_count": 2
+    },
+    {
+      "id": "f.now-the-salvation-and-the-power-and-the-kingdom-of-our-god--15a65fe8",
+      "name": "Now the salvation and the power and the kingdom of our God",
+      "type": "figure",
+      "role": "hymn",
+      "refs_count": 1
+    },
+    {
+      "id": "f.time-times-and-half-a-time--d72c16f7",
+      "name": "time, times, and half a time",
+      "type": "figure",
+      "role": "duration",
+      "refs_count": 1
+    },
+    {
+      "id": "f.heptad-index--733a558f",
+      "name": "Heptad index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.numeric-symbolism-index--20cda2ea",
+      "name": "Numeric symbolism index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.the-earth-helped-the-woman--8334b342",
+      "name": "the earth helped the woman",
+      "type": "figure",
+      "role": "aid",
+      "refs_count": 1
+    },
+    {
+      "id": "g.michael-and-his-angels--a0d7eb46",
+      "name": "Michael and his angels",
+      "type": "group",
+      "role": "angelic",
+      "refs_count": 1
+    },
+    {
+      "id": "g.the-rest-of-her-offspring--d01b46e0",
+      "name": "the rest of her offspring",
+      "type": "group",
+      "role": "saints",
+      "refs_count": 1
+    },
+    {
+      "id": "f.male-child--0c5aab83",
+      "name": "male child",
+      "type": "figure",
+      "role": "messianic",
+      "refs_count": 1
+    }
+  ]
+}

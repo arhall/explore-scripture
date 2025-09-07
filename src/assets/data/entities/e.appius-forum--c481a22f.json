@@ -1,0 +1,25 @@
+{
+  "name": "Appius Forum",
+  "type": "entity",
+  "category": "waypoint",
+  "references": [
+    "Acts 28:15"
+  ],
+  "aka": [
+    "Forum of Appius"
+  ],
+  "id": "e.appius-forum--c481a22f",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      28
+    ]
+  }
+}

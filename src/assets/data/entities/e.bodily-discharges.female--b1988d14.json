@@ -1,0 +1,22 @@
+{
+  "name": "Bodily discharges (female)",
+  "type": "entity",
+  "references": [
+    "Leviticus 15:19–30"
+  ],
+  "blurb": "Menstruation and abnormal flows—uncleanness with compassionate boundaries and restoration.",
+  "category": "ritual",
+  "cross_references": [
+    "Acts 15:20"
+  ],
+  "id": "e.bodily-discharges.female--b1988d14",
+  "canonical_id": "e.bodily-discharges.male--7a8fb8bc",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Leviticus": [
+      15
+    ]
+  }
+}

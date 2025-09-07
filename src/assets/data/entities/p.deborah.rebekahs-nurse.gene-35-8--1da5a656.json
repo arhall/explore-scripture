@@ -1,0 +1,19 @@
+{
+  "name": "Deborah (Rebekah’s nurse)",
+  "type": "person",
+  "references": [
+    "Genesis 35:8"
+  ],
+  "blurb": "Beloved nurse of Rebekah who dies near Bethel; her memorial marks the tenderness of family memory.",
+  "category": "narrative",
+  "cross_references": [],
+  "id": "p.deborah.rebekahs-nurse.gene-35-8--1da5a656",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      35
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Question on the resurrection (Sadducees)",
+  "type": "figure",
+  "category": "controversy",
+  "references": [
+    "Luke 20:27–40"
+  ],
+  "synoptic_parallels": [
+    "Matt 22:23–33",
+    "Mark 12:18–27"
+  ],
+  "aka": [],
+  "id": "f.question-on-the-resurrection-sadducees--f1f845f1",
+  "source_book": "Luke",
+  "source_books": [
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Luke": [
+      20
+    ]
+  }
+}

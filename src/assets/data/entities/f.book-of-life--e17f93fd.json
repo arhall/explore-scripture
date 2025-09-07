@@ -1,0 +1,21 @@
+{
+  "name": "Book of Life",
+  "type": "figure",
+  "category": "heavenly-register",
+  "references": [
+    "Phil 4:3"
+  ],
+  "aka": [],
+  "id": "f.book-of-life--e17f93fd",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Philippians": [
+      4
+    ]
+  }
+}

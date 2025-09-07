@@ -1,0 +1,21 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 30,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "p.hezekiah-king-of-judah.chronicles-focus--66ee8fd1",
+      "name": "Hezekiah king of Judah (Chronicles focus)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.passover-invitation-to-north-laughter-and-repentance--48cb07d0",
+      "name": "Passover invitation to north; laughter and repentance",
+      "type": "entity",
+      "role": "festival",
+      "refs_count": 1
+    }
+  ]
+}

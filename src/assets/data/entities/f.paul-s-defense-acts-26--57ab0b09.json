@@ -1,0 +1,23 @@
+{
+  "name": "Paul’s defense (Acts 26)",
+  "type": "figure",
+  "category": "speech",
+  "references": [
+    "Acts 26:1–29"
+  ],
+  "aka": [],
+  "id": "f.paul-s-defense-acts-26--57ab0b09",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      26
+    ]
+  }
+}

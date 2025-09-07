@@ -1,0 +1,23 @@
+{
+  "name": "Herod Agrippa I struck down",
+  "type": "figure",
+  "category": "judgment",
+  "references": [
+    "Acts 12:20–23"
+  ],
+  "aka": [],
+  "id": "f.herod-agrippa-i-struck-down--36c089e2",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      12
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Ahuzzath (Abimelech’s adviser)",
+  "type": "person",
+  "references": [
+    "Genesis 26:26"
+  ],
+  "blurb": "Advisor to Abimelech mentioned in the later Isaac narrative; signals ongoing Philistine relations with the patriarchs.",
+  "category": "narrative",
+  "cross_references": [
+    "Genesis 26:26"
+  ],
+  "id": "p.ahuzzath.abimelechs-adviser.gene-26-26--3a6c72f8",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      26
+    ]
+  }
+}

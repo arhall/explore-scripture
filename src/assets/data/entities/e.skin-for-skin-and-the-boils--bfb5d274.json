@@ -1,0 +1,18 @@
+{
+  "name": "‘Skin for skin’ and the boils",
+  "type": "entity",
+  "references": [
+    "Job 2:4–8"
+  ],
+  "blurb": "The Accuser claims self-preservation rules the heart; loathsome sores strike Job from foot to crown. He sits among ashes scraping with a potsherd.",
+  "category": "narrative",
+  "id": "e.skin-for-skin-and-the-boils--bfb5d274",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Job": [
+      2
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "e.vanity-of-power--c7b1a0e3",
+  "name": "Vanity of power",
+  "type": "entity",
+  "references": [
+    "Nah 2:11–13; 3:15–17"
+  ],
+  "category": "wisdom-theme",
+  "aka": [
+    "Hollow might"
+  ],
+  "blurb": "A wisdom-like verdict on empire: predation seems secure until divine judgment exposes fragility.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      2
+    ]
+  }
+}

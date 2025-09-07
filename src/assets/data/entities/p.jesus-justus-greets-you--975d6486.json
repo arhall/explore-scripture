@@ -1,0 +1,21 @@
+{
+  "name": "Jesus (Justus) greets you",
+  "type": "person",
+  "category": "coworker",
+  "references": [
+    "Col 4:11"
+  ],
+  "aka": [],
+  "id": "p.jesus-justus-greets-you--975d6486",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      4
+    ]
+  }
+}

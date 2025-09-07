@@ -1,0 +1,29 @@
+{
+  "name": "Achaia",
+  "type": "entity",
+  "category": "province",
+  "references": [
+    "2 Cor 1:1",
+    "1 Cor 16:15",
+    "1 Thess 1:7-8"
+  ],
+  "aka": [],
+  "id": "e.achaia--ba67eea7",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "2 Corinthians": [
+      1
+    ],
+    "1 Corinthians": [
+      16
+    ],
+    "1 Thessalonians": [
+      1
+    ]
+  }
+}

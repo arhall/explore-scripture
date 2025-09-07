@@ -1,0 +1,656 @@
+[
+  {
+    "id": "e.temple--1d486079",
+    "name": "Temple",
+    "type": "entity",
+    "url": "/entities/e.temple--1d486079/",
+    "blurb": "Locus of divine kingship and human silence; judgment discourse ends in doxological hush.",
+    "searchText": "temple entity cultic locus of divine kingship and human silence; judgment discourse ends in doxological hush. e.temple--91a269ed",
+    "references": 8,
+    "books": [
+      "Habakkuk",
+      "Zephaniah",
+      "Zechariah",
+      "Malachi",
+      "1 Corinthians"
+    ],
+    "category": "cultic"
+  },
+  {
+    "id": "e.selah--ae23b118",
+    "name": "Selah",
+    "type": "entity",
+    "url": "/entities/e.selah--ae23b118/",
+    "blurb": "Liturgical pause or interlude; signals meditation or musical lift.",
+    "searchText": "selah entity musical-marker liturgical pause or interlude; signals meditation or musical lift. ",
+    "references": 3,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "musical-marker"
+  },
+  {
+    "id": "p.habakkuk--d7d46a7f",
+    "name": "Habakkuk",
+    "type": "person",
+    "url": "/entities/p.habakkuk--d7d46a7f/",
+    "blurb": "Prophet whose name likely means “embrace” or “wrestle,” mirroring his dialog with God over justice. Habakkuk functions as a temple-prophet/poet, voicing complaint, waiting at the watchpost, and conclu",
+    "searchText": "habakkuk person prophet prophet whose name likely means “embrace” or “wrestle,” mirroring his dialog with god over justice. habakkuk functions as a temple-prophet/poet, voicing complaint, waiting at the watchpost, and concluding with a psalm that models trust. ",
+    "references": 2,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "prophet"
+  },
+  {
+    "id": "p.priests-temple-musicians--de449f1b",
+    "name": "Priests/Temple musicians",
+    "type": "person",
+    "url": "/entities/p.priests-temple-musicians--de449f1b/",
+    "blurb": "Liturgical personnel implied by the musical notations and dedication to the choirmaster; they situate Habakkuk’s prayer within temple worship.",
+    "searchText": "priests/temple musicians person cultic-staff liturgical personnel implied by the musical notations and dedication to the choirmaster; they situate habakkuk’s prayer within temple worship. ",
+    "references": 2,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "cultic-staff"
+  },
+  {
+    "id": "e.arrows--c273afa6",
+    "name": "Arrows",
+    "type": "entity",
+    "url": "/entities/e.arrows--c273afa6/",
+    "blurb": "Instruments of divine judgment; flash like lightning.",
+    "searchText": "arrows entity weapon instruments of divine judgment; flash like lightning. ",
+    "references": 2,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "weapon"
+  },
+  {
+    "id": "e.faith-as-resilience--ff0aa2c7",
+    "name": "Faith as resilience",
+    "type": "entity",
+    "url": "/entities/e.faith-as-resilience--ff0aa2c7/",
+    "blurb": "Habakkuk’s model: waiting, trembling, trusting—faithfulness over the long delay.",
+    "searchText": "faith as resilience entity spirituality habakkuk’s model: waiting, trembling, trusting—faithfulness over the long delay. ",
+    "references": 2,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "spirituality"
+  },
+  {
+    "id": "f.arrows-spear-of-light--6b7f5944",
+    "name": "Arrows/Spear of light",
+    "type": "figure",
+    "url": "/entities/f.arrows-spear-of-light--6b7f5944/",
+    "blurb": "Your bow is bared; arrows flash like lightning; spears glitter as celestial bodies halt.",
+    "searchText": "arrows/spear of light figure theophany-weapon your bow is bared; arrows flash like lightning; spears glitter as celestial bodies halt. ",
+    "references": 2,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "theophany-weapon"
+  },
+  {
+    "id": "f.violence-as-boomerang--7c2c7893",
+    "name": "Violence as boomerang",
+    "type": "figure",
+    "url": "/entities/f.violence-as-boomerang--7c2c7893/",
+    "blurb": "Measure-for-measure justice: the violence and shame you inflicted returns upon your own head.",
+    "searchText": "violence as boomerang figure judicial-reversal measure-for-measure justice: the violence and shame you inflicted returns upon your own head. ",
+    "references": 2,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "judicial-reversal"
+  },
+  {
+    "id": "d.the-holy-one--02e7fe4a",
+    "name": "The Holy One",
+    "type": "divine",
+    "url": "/entities/d.the-holy-one--02e7fe4a/",
+    "blurb": "Divine title emphasizing moral purity and covenant reliability; frames the paradox of using a wicked nation without endorsing wickedness.",
+    "searchText": "the holy one divine title divine title emphasizing moral purity and covenant reliability; frames the paradox of using a wicked nation without endorsing wickedness. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "title"
+  },
+  {
+    "id": "g.drunkeners--38cc1b80",
+    "name": "Drunkeners",
+    "type": "group",
+    "url": "/entities/g.drunkeners--38cc1b80/",
+    "blurb": "Agents who shame neighbors with drink to gaze on nakedness; their own disgrace is decreed.",
+    "searchText": "drunkeners group vice-group agents who shame neighbors with drink to gaze on nakedness; their own disgrace is decreed. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "vice-group"
+  },
+  {
+    "id": "g.idol-makers--02bf38d1",
+    "name": "Idol-makers",
+    "type": "group",
+    "url": "/entities/g.idol-makers--02bf38d1/",
+    "blurb": "Craftsmen and sponsors of mute idols, indicting religion in service of power.",
+    "searchText": "idol-makers group cultic-artisans craftsmen and sponsors of mute idols, indicting religion in service of power. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "cultic-artisans"
+  },
+  {
+    "id": "g.proud--e55218e4",
+    "name": "Proud",
+    "type": "group",
+    "url": "/entities/g.proud--e55218e4/",
+    "blurb": "The swollen soul that is not upright; archetype of imperial arrogance.",
+    "searchText": "proud group ethical-group the swollen soul that is not upright; archetype of imperial arrogance. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "ethical-group"
+  },
+  {
+    "id": "g.righteous--8f4c3f58",
+    "name": "Righteous",
+    "type": "group",
+    "url": "/entities/g.righteous--8f4c3f58/",
+    "blurb": "Those who live by faith/faithfulness amid confusion and delay.",
+    "searchText": "righteous group ethical-group those who live by faith/faithfulness amid confusion and delay. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "ethical-group"
+  },
+  {
+    "id": "g.victim-nations--23f45e55",
+    "name": "Victim nations",
+    "type": "group",
+    "url": "/entities/g.victim-nations--23f45e55/",
+    "blurb": "Peoples plundered by the Chaldeans; their taunt becomes judicial testimony.",
+    "searchText": "victim nations group subject-peoples peoples plundered by the chaldeans; their taunt becomes judicial testimony. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "subject-peoples"
+  },
+  {
+    "id": "g.violent-city-builders--f2871581",
+    "name": "Violent city builders",
+    "type": "group",
+    "url": "/entities/g.violent-city-builders--f2871581/",
+    "blurb": "Those who erect empires with blood; their labor fuels the fire of divine judgment.",
+    "searchText": "violent city builders group oppressors those who erect empires with blood; their labor fuels the fire of divine judgment. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "oppressors"
+  },
+  {
+    "id": "p.debtors--2cc8143e",
+    "name": "Debtors",
+    "type": "person",
+    "url": "/entities/p.debtors--2cc8143e/",
+    "blurb": "Those crushed by predatory lending and conquest-tribute; in Habakkuk’s woes, their cry becomes the instrument of reversal.",
+    "searchText": "debtors person economically-oppressed those crushed by predatory lending and conquest-tribute; in habakkuk’s woes, their cry becomes the instrument of reversal. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "economically-oppressed"
+  },
+  {
+    "id": "p.judahs-unjust-judges--6c0fbaee",
+    "name": "Judah’s unjust judges",
+    "type": "person",
+    "url": "/entities/p.judahs-unjust-judges--6c0fbaee/",
+    "blurb": "Judicial actors in Judah whose perversion of justice—Torah paralyzed, the wicked hemming in the righteous—prompts Habakkuk’s first complaint.",
+    "searchText": "judah’s unjust judges person officials judicial actors in judah whose perversion of justice—torah paralyzed, the wicked hemming in the righteous—prompts habakkuk’s first complaint. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "officials"
+  },
+  {
+    "id": "p.oppressors-creditors--1f2213c0",
+    "name": "Oppressors/Creditors",
+    "type": "person",
+    "url": "/entities/p.oppressors-creditors--1f2213c0/",
+    "blurb": "Predators who exact usury and plunder. Their gain becomes their downfall as the nations they exploited rise to taunt them.",
+    "searchText": "oppressors/creditors person economic-agents predators who exact usury and plunder. their gain becomes their downfall as the nations they exploited rise to taunt them. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "economic-agents"
+  },
+  {
+    "id": "p.scribes-watchmen--b39b6bf7",
+    "name": "Scribes/Watchmen",
+    "type": "person",
+    "url": "/entities/p.scribes-watchmen--b39b6bf7/",
+    "blurb": "Figures who stand on the rampart and inscribe revelation. They embody vigilance and faithful transmission: write the vision plainly so runners can carry it.",
+    "searchText": "scribes/watchmen person office figures who stand on the rampart and inscribe revelation. they embody vigilance and faithful transmission: write the vision plainly so runners can carry it. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "office"
+  },
+  {
+    "id": "p.the-choirmaster--9e8e36ac",
+    "name": "The Choirmaster",
+    "type": "person",
+    "url": "/entities/p.the-choirmaster--9e8e36ac/",
+    "blurb": "Director of temple performance; the prayer’s liturgical setting underscores communal reception and catechesis.",
+    "searchText": "the choirmaster person musical-director director of temple performance; the prayer’s liturgical setting underscores communal reception and catechesis. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "musical-director"
+  },
+  {
+    "id": "e.chariots-of-salvation--edf1e792",
+    "name": "Chariots of salvation",
+    "type": "entity",
+    "url": "/entities/e.chariots-of-salvation--edf1e792/",
+    "blurb": "Divine mobility metaphor: God rides victorious for salvation.",
+    "searchText": "chariots of salvation entity theophany-vehicle divine mobility metaphor: god rides victorious for salvation. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "theophany-vehicle"
+  },
+  {
+    "id": "e.curtains-of-midian--7ce0a551",
+    "name": "Curtains of Midian",
+    "type": "entity",
+    "url": "/entities/e.curtains-of-midian--7ce0a551/",
+    "blurb": "Nomadic dwellings quake; motif of distant witnesses to YHWH’s advance.",
+    "searchText": "curtains of midian entity peoples nomadic dwellings quake; motif of distant witnesses to yhwh’s advance. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "peoples"
+  },
+  {
+    "id": "e.debt-usury--c2e6134e",
+    "name": "Debt/Usury",
+    "type": "entity",
+    "url": "/entities/e.debt-usury--c2e6134e/",
+    "blurb": "Predatory lending practices condemned by wisdom and law traditions.",
+    "searchText": "debt/usury entity economic-vice predatory lending practices condemned by wisdom and law traditions. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "economic-vice"
+  },
+  {
+    "id": "e.delay-appointed-time--3bb59253",
+    "name": "Delay/appointed time",
+    "type": "entity",
+    "url": "/entities/e.delay-appointed-time--3bb59253/",
+    "blurb": "The vision hastens to the end; apparent delay tests fidelity without nullifying promise.",
+    "searchText": "delay/appointed time entity apocalyptic-timing the vision hastens to the end; apparent delay tests fidelity without nullifying promise. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "apocalyptic-timing"
+  },
+  {
+    "id": "e.fields--d07ff7e3",
+    "name": "Fields",
+    "type": "entity",
+    "url": "/entities/e.fields--d07ff7e3/",
+    "blurb": "Fields yield no food—macro sign of covenant curse imagery reversed by faith.",
+    "searchText": "fields entity agrarian fields yield no food—macro sign of covenant curse imagery reversed by faith. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "agrarian"
+  },
+  {
+    "id": "e.fig-tree--9d45ae32",
+    "name": "Fig tree",
+    "type": "entity",
+    "url": "/entities/e.fig-tree--9d45ae32/",
+    "blurb": "Staple of prosperity; its failure dramatizes total economic collapse.",
+    "searchText": "fig tree entity agrarian staple of prosperity; its failure dramatizes total economic collapse. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "agrarian"
+  },
+  {
+    "id": "e.flocks--b7d1887e",
+    "name": "Flocks",
+    "type": "entity",
+    "url": "/entities/e.flocks--b7d1887e/",
+    "blurb": "Absence from the fold; pastoral economy collapses.",
+    "searchText": "flocks entity agrarian absence from the fold; pastoral economy collapses. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "agrarian"
+  },
+  {
+    "id": "e.foundation-built-on-blood--b90ae941",
+    "name": "Foundation built on blood",
+    "type": "entity",
+    "url": "/entities/e.foundation-built-on-blood--b90ae941/",
+    "blurb": "City-making through oppression; destined for fire.",
+    "searchText": "foundation built on blood entity urban-sin city-making through oppression; destined for fire. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "urban-sin"
+  },
+  {
+    "id": "e.herds--605358ab",
+    "name": "Herds",
+    "type": "entity",
+    "url": "/entities/e.herds--605358ab/",
+    "blurb": "No cattle in the stalls—yet the prophet rejoices in God.",
+    "searchText": "herds entity agrarian no cattle in the stalls—yet the prophet rejoices in god. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "agrarian"
+  },
+  {
+    "id": "e.high-places--3b98e1aa",
+    "name": "High places",
+    "type": "entity",
+    "url": "/entities/e.high-places--3b98e1aa/",
+    "blurb": "Metaphor for sure-footed triumph (hind’s feet) in God’s strength.",
+    "searchText": "high places entity victory-terrain metaphor for sure-footed triumph (hind’s feet) in god’s strength. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "victory-terrain"
+  },
+  {
+    "id": "e.idol--30f13668",
+    "name": "Idol",
+    "type": "entity",
+    "url": "/entities/e.idol--30f13668/",
+    "blurb": "Crafted god incapable of speech; indicts human attempts to control the divine.",
+    "searchText": "idol entity cult-object crafted god incapable of speech; indicts human attempts to control the divine. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "cult-object"
+  },
+  {
+    "id": "e.joy-amid-ruin--35d2fcea",
+    "name": "Joy amid ruin",
+    "type": "entity",
+    "url": "/entities/e.joy-amid-ruin--35d2fcea/",
+    "blurb": "Practiced rejoicing independent of circumstances; theological resilience.",
+    "searchText": "joy amid ruin entity spirituality practiced rejoicing independent of circumstances; theological resilience. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "spirituality"
+  },
+  {
+    "id": "e.kedem-teman--575ac5c7",
+    "name": "Kedem/Teman",
+    "type": "entity",
+    "url": "/entities/e.kedem-teman--575ac5c7/",
+    "blurb": "From the south/east the Holy One comes—storm-theophany geography shared with Sinai traditions.",
+    "searchText": "kedem/teman entity geography from the south/east the holy one comes—storm-theophany geography shared with sinai traditions. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "geography"
+  },
+  {
+    "id": "e.olive--ee921dca",
+    "name": "Olive",
+    "type": "entity",
+    "url": "/entities/e.olive--ee921dca/",
+    "blurb": "Olive-crop failure cuts deep into food, light, and wealth.",
+    "searchText": "olive entity agrarian olive-crop failure cuts deep into food, light, and wealth. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "agrarian"
+  },
+  {
+    "id": "e.paran--a4e18dd0",
+    "name": "Paran",
+    "type": "entity",
+    "url": "/entities/e.paran--a4e18dd0/",
+    "blurb": "Wilderness region associated with theophany; echoes Deut 33 and Judg 5.",
+    "searchText": "paran entity geography wilderness region associated with theophany; echoes deut 33 and judg 5. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "geography"
+  },
+  {
+    "id": "e.shame-drinking--ec87af79",
+    "name": "Shame-drinking",
+    "type": "entity",
+    "url": "/entities/e.shame-drinking--ec87af79/",
+    "blurb": "Instrumentalized intoxication to exploit others; reversed in the cup of wrath.",
+    "searchText": "shame-drinking entity vice instrumentalized intoxication to exploit others; reversed in the cup of wrath. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "vice"
+  },
+  {
+    "id": "e.shigionoth--028a7f6b",
+    "name": "Shigionoth",
+    "type": "entity",
+    "url": "/entities/e.shigionoth--028a7f6b/",
+    "blurb": "Rare term marking a passionate, possibly irregular rhythmic prayer-song.",
+    "searchText": "shigionoth entity musical-form rare term marking a passionate, possibly irregular rhythmic prayer-song. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "musical-form"
+  },
+  {
+    "id": "e.siege-apparatus--fc342ef2",
+    "name": "Siege apparatus",
+    "type": "entity",
+    "url": "/entities/e.siege-apparatus--fc342ef2/",
+    "blurb": "Nations mocked by the Chaldeans’ siege craft; fortresses fall like sand heaps.",
+    "searchText": "siege apparatus entity military nations mocked by the chaldeans’ siege craft; fortresses fall like sand heaps. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "military"
+  },
+  {
+    "id": "e.silence-before-the-lord--b00bb3ca",
+    "name": "Silence before the LORD",
+    "type": "entity",
+    "url": "/entities/e.silence-before-the-lord--b00bb3ca/",
+    "blurb": "Cultic posture of awe recognizing God’s universal sovereignty.",
+    "searchText": "silence before the lord entity liturgy cultic posture of awe recognizing god’s universal sovereignty. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "liturgy"
+  },
+  {
+    "id": "e.spear--66130b23",
+    "name": "Spear",
+    "type": "entity",
+    "url": "/entities/e.spear--66130b23/",
+    "blurb": "Glittering weapon aligned with cosmic portents.",
+    "searchText": "spear entity weapon glittering weapon aligned with cosmic portents. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "weapon"
+  },
+  {
+    "id": "e.speechless-stone--fe2f3d9a",
+    "name": "Speechless stone",
+    "type": "entity",
+    "url": "/entities/e.speechless-stone--fe2f3d9a/",
+    "blurb": "Stone that cannot teach versus the speaking God; satire of idolatry.",
+    "searchText": "speechless stone entity cult-object stone that cannot teach versus the speaking god; satire of idolatry. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "cult-object"
+  },
+  {
+    "id": "e.stringed-instruments--c681d324",
+    "name": "Stringed instruments",
+    "type": "entity",
+    "url": "/entities/e.stringed-instruments--c681d324/",
+    "blurb": "Performance direction linking prayer and praise in communal worship.",
+    "searchText": "stringed instruments entity musical performance direction linking prayer and praise in communal worship. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "musical"
+  },
+  {
+    "id": "e.tablets-write-the-vision--a0ac4498",
+    "name": "Tablets: Write the vision",
+    "type": "entity",
+    "url": "/entities/e.tablets-write-the-vision--a0ac4498/",
+    "blurb": "Inscribed message made legible for runners; durable medium for delayed fulfillment.",
+    "searchText": "tablets: write the vision entity revelation-transmission inscribed message made legible for runners; durable medium for delayed fulfillment. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "revelation-transmission"
+  },
+  {
+    "id": "e.tents-of-cushan--2c6b71c5",
+    "name": "Tents of Cushan",
+    "type": "entity",
+    "url": "/entities/e.tents-of-cushan--2c6b71c5/",
+    "blurb": "Peripheral nations tremble at divine march; signals universal reach.",
+    "searchText": "tents of cushan entity peoples peripheral nations tremble at divine march; signals universal reach. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "peoples"
+  },
+  {
+    "id": "e.torah-paralyzed-injustice--edd2b2ba",
+    "name": "Torah paralyzed/Injustice",
+    "type": "entity",
+    "url": "/entities/e.torah-paralyzed-injustice--edd2b2ba/",
+    "blurb": "Judicial breakdown where law is numbed and the wicked hem in the righteous.",
+    "searchText": "torah paralyzed/injustice entity legal-failure judicial breakdown where law is numbed and the wicked hem in the righteous. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "legal-failure"
+  },
+  {
+    "id": "e.vine--e6001c0b",
+    "name": "Vine",
+    "type": "entity",
+    "url": "/entities/e.vine--e6001c0b/",
+    "blurb": "Loss of grapes/wine intensifies the picture of deprivation.",
+    "searchText": "vine entity agrarian loss of grapes/wine intensifies the picture of deprivation. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "agrarian"
+  },
+  {
+    "id": "e.violence--972a2275",
+    "name": "Violence",
+    "type": "entity",
+    "url": "/entities/e.violence--972a2275/",
+    "blurb": "Core social sin that provokes theodicy and judgment.",
+    "searchText": "violence entity indictment core social sin that provokes theodicy and judgment. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "indictment"
+  },
+  {
+    "id": "e.vision-made-plain--1281b7bb",
+    "name": "Vision made plain",
+    "type": "entity",
+    "url": "/entities/e.vision-made-plain--1281b7bb/",
+    "blurb": "Clarity in communication ensures communal obedience and enduring hope.",
+    "searchText": "vision made plain entity revelation clarity in communication ensures communal obedience and enduring hope. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "revelation"
+  },
+  {
+    "id": "e.watchpost-rampart--54f57f2c",
+    "name": "Watchpost/Rampart",
+    "type": "entity",
+    "url": "/entities/e.watchpost-rampart--54f57f2c/",
+    "blurb": "Prophetic station for discerning vision and awaiting answer.",
+    "searchText": "watchpost/rampart entity vigilance prophetic station for discerning vision and awaiting answer. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "vigilance"
+  },
+  {
+    "id": "f.divine-theophany--ad1d1c3b",
+    "name": "Divine Theophany",
+    "type": "figure",
+    "url": "/entities/f.divine-theophany--ad1d1c3b/",
+    "blurb": "Processional appearance from Teman/Paran; cosmic upheaval attends the Warrior who goes forth for salvation of his anointed.",
+    "searchText": "divine theophany figure theophany processional appearance from teman/paran; cosmic upheaval attends the warrior who goes forth for salvation of his anointed. ",
+    "references": 1,
+    "books": [
+      "Habakkuk"
+    ],
+    "category": "theophany"
+  }
+]

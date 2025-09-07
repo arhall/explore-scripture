@@ -1,0 +1,21 @@
+{
+  "id": "e.charioteers--7e9c1a0d",
+  "name": "Charioteers",
+  "type": "entity",
+  "references": [
+    "Nah 2:4"
+  ],
+  "category": "military",
+  "aka": [
+    "Drivers"
+  ],
+  "blurb": "Agents of urban chaos; speed and shine become omens of collapse rather than security.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      2
+    ]
+  }
+}

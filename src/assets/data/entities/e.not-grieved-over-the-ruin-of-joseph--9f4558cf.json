@@ -1,0 +1,18 @@
+{
+  "name": "Not grieved over the ruin of Joseph",
+  "type": "entity",
+  "references": [
+    "Amos 6:6"
+  ],
+  "blurb": "Core failure: numbness to covenant neighbor.",
+  "category": "ethic",
+  "id": "e.not-grieved-over-the-ruin-of-joseph--9f4558cf",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Amos": [
+      6
+    ]
+  }
+}

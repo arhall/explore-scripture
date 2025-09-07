@@ -1,0 +1,21 @@
+{
+  "book": "Numbers",
+  "chapter": 36,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "g.clan-leaders-of-manasseh.gileadites--4e52e582",
+      "name": "Clan leaders of Manasseh (Gileadites)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Jews (the circumcision)",
+  "type": "group",
+  "category": "people",
+  "references": [
+    "Eph 2:11–15"
+  ],
+  "aka": [
+    "the circumcision"
+  ],
+  "id": "g.jews-the-circumcision--39747b7e",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      2
+    ]
+  }
+}

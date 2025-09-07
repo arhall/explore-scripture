@@ -1,0 +1,18 @@
+{
+  "id": "e.exile-to-babylon-there-you-shall-be-rescued--d8b120c9",
+  "name": "Exile to Babylon; there you shall be rescued",
+  "type": "entity",
+  "references": [
+    "Micah 4:10"
+  ],
+  "category": "exile-hope",
+  "blurb": "Specific exile-rescue horizon—judgment braided with hope.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      4
+    ]
+  }
+}

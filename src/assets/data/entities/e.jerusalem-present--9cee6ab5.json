@@ -1,0 +1,21 @@
+{
+  "name": "Jerusalem (present)",
+  "type": "entity",
+  "category": "allegory",
+  "references": [
+    "Gal 4:25"
+  ],
+  "aka": [],
+  "id": "e.jerusalem-present--9cee6ab5",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Galatians": [
+      4
+    ]
+  }
+}

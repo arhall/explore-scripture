@@ -1,0 +1,20 @@
+{
+  "name": "Sons of Jericho",
+  "type": "group",
+  "references": [
+    "Ezra 2:34"
+  ],
+  "blurb": "Enumerated among the first returnees under Zerubbabel; their counted men totaled 345. Family identity stabilizes land claims and synagogue-era communities; numbers witness to costly obedience.",
+  "category": "record",
+  "count": 345,
+  "count_note": "Count per Ezra 2:34",
+  "id": "g.sons-of-jericho--8944d5da",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      2
+    ]
+  }
+}

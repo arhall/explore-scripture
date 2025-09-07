@@ -1,0 +1,35 @@
+{
+  "name": "Principalities, powers, cosmic rulers",
+  "type": "figure",
+  "category": "cosmic",
+  "references": [
+    "Eph 6:12"
+  ],
+  "greek_terms": [
+    {
+      "term": "ἀρχαί",
+      "gloss": "rulers"
+    },
+    {
+      "term": "ἐξουσίαι",
+      "gloss": "authorities"
+    },
+    {
+      "term": "κοσμοκράτορες",
+      "gloss": "cosmic rulers"
+    }
+  ],
+  "aka": [],
+  "id": "f.principalities-powers-cosmic-rulers--23381374",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      6
+    ]
+  }
+}

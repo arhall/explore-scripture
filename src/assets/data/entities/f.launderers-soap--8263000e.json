@@ -1,0 +1,18 @@
+{
+  "id": "f.launderers-soap--8263000e",
+  "name": "Launderer’s soap",
+  "type": "figure",
+  "references": [
+    "Mal 3:2-3"
+  ],
+  "category": "purification",
+  "blurb": "Cleansing metaphor complementing the refiner’s furnace.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      3
+    ]
+  }
+}

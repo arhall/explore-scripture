@@ -1,0 +1,18 @@
+{
+  "name": "Weighing and guarding the sacred vessels",
+  "type": "entity",
+  "references": [
+    "Ezra 8:24–30"
+  ],
+  "blurb": "Priests steward treasure with transparency; holiness breeds accountability.",
+  "category": "ethics",
+  "id": "e.weighing-and-guarding-the-sacred-vessels--6f30e50c",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      8
+    ]
+  }
+}

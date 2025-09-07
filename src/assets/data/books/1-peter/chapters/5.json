@@ -1,0 +1,77 @@
+{
+  "book": "1 Peter",
+  "chapter": 5,
+  "entity_count": 21,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "p.mark-john-mark-cousin-of-barnabas--091a32fe",
+      "name": "Mark (John Mark) (cousin of Barnabas)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 4
+    },
+    {
+      "id": "f.your-adversary-the-devil-like-a-roaring-lion--cf1bd33f",
+      "name": "your adversary the devil like a roaring lion",
+      "type": "figure",
+      "role": "adversary",
+      "refs_count": 1
+    },
+    {
+      "id": "f.resist-firm-in-your-faith--4d0c7aaa",
+      "name": "resist firm in your faith",
+      "type": "figure",
+      "role": "resistance",
+      "refs_count": 1
+    },
+    {
+      "id": "f.cast-your-anxieties-on-him--2c6b5a7c",
+      "name": "cast your anxieties on him",
+      "type": "figure",
+      "role": "trust",
+      "refs_count": 1
+    },
+    {
+      "id": "g.she-who-is-in-babylon--b319850e",
+      "name": "she who is in Babylon",
+      "type": "group",
+      "role": "church",
+      "refs_count": 1
+    },
+    {
+      "id": "f.crown-of-glory--0d05729a",
+      "name": "crown of glory",
+      "type": "figure",
+      "role": "reward",
+      "refs_count": 1
+    },
+    {
+      "id": "t.chief-shepherd--43f256b8",
+      "name": "Chief Shepherd",
+      "type": "title",
+      "role": "christology",
+      "refs_count": 1
+    },
+    {
+      "id": "f.god-will-restore-you--dca3f929",
+      "name": "God will restore you",
+      "type": "figure",
+      "role": "promise",
+      "refs_count": 1
+    },
+    {
+      "id": "e.babylon--9d648bf6",
+      "name": "Babylon",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 2
+    }
+  ]
+}

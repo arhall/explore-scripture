@@ -1,0 +1,29 @@
+{
+  "name": "Leper (cleansed)",
+  "type": "person",
+  "category": "healed",
+  "references": [
+    "Matt 8:1–4",
+    "Mark 1:40–45"
+  ],
+  "blurb": "Touch transmits purity rather than impurity—sign of new creation.",
+  "aka": [],
+  "id": "p.leper-cleansed--a69bbe44",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Mark",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      8
+    ],
+    "Mark": [
+      1
+    ]
+  }
+}

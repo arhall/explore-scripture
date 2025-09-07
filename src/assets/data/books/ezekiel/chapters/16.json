@@ -1,0 +1,42 @@
+{
+  "book": "Ezekiel",
+  "chapter": 16,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "e.allegory-of-the-unfaithful-bride.jerusalem--2429bfef",
+      "name": "Allegory of the unfaithful bride (Jerusalem)",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1
+    },
+    {
+      "id": "e.jerusalem-as-foundling-infant--44bdc225",
+      "name": "Jerusalem as foundling infant",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1
+    },
+    {
+      "id": "e.jerusalem-adorned-as-bride--25a4959f",
+      "name": "Jerusalem adorned as bride",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1
+    },
+    {
+      "id": "e.jerusalems-harlotry--5da3d9fc",
+      "name": "Jerusalem’s harlotry",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1
+    },
+    {
+      "id": "e.judgment-and-restoration-of-the-bride--1d5bf648",
+      "name": "Judgment and restoration of the bride",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1
+    }
+  ]
+}

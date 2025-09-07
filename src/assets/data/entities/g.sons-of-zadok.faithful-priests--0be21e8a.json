@@ -1,0 +1,14 @@
+{
+  "name": "Sons of Zadok (faithful priests)",
+  "type": "group",
+  "references": [
+    "Ezekiel 40–46; esp. 44:15–31"
+  ],
+  "blurb": "Priestly line kept from idolatry; entrusted with altar service in the future temple—holiness institutionalized.",
+  "category": "priesthood",
+  "id": "g.sons-of-zadok.faithful-priests--0be21e8a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

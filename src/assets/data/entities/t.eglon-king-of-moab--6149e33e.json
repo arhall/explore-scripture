@@ -1,0 +1,18 @@
+{
+  "name": "Eglon king of Moab",
+  "type": "title",
+  "references": [
+    "Judges 3:12–25"
+  ],
+  "blurb": "Corpulent tyrant ruling from Jericho with Ammon and Amalek—his fall dramatizes reversal through unlikely means.",
+  "category": "narrative",
+  "id": "t.eglon-king-of-moab--6149e33e",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      3
+    ]
+  }
+}

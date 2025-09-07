@@ -1,0 +1,21 @@
+{
+  "name": "Samlah of Masrekah",
+  "type": "title",
+  "references": [
+    "Genesis 36:36"
+  ],
+  "blurb": "Edomite king; little else is recorded. Edom’s kingship structure foreshadows later national polities.",
+  "category": "genealogy",
+  "cross_references": [
+    "1 Chronicles 1:43–50"
+  ],
+  "id": "t.samlah-of-masrekah.gene-36-36--1dc4f12c",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

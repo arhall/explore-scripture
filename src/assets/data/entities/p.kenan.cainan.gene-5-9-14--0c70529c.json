@@ -1,0 +1,27 @@
+{
+  "name": "Kenan (Cainan)",
+  "type": "person",
+  "references": [
+    "Genesis 5:9–14"
+  ],
+  "blurb": "Ancestor in Seth’s line.",
+  "relations": {
+    "parents": [
+      "Enosh"
+    ],
+    "children": [
+      "Mahalalel"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.kenan.cainan.gene-5-9-14--0c70529c",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      5
+    ]
+  }
+}

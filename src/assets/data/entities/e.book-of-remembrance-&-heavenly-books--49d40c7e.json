@@ -1,0 +1,22 @@
+{
+  "id": "e.book-of-remembrance-&-heavenly-books--49d40c7e",
+  "name": "Book of Remembrance & heavenly books",
+  "type": "entity",
+  "references": [
+    "Mal 3:16"
+  ],
+  "category": "reception",
+  "cross_references": [
+    "Dan 7:10",
+    "Rev 20:12"
+  ],
+  "blurb": "Malachi’s scroll aligns with apocalyptic records of deeds and names.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      3
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "book": "Ezekiel",
+  "chapter": 13,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "g.false-prophets-of-israel--18fda1d3",
+      "name": "False prophets of Israel",
+      "type": "group",
+      "role": "false-prophet",
+      "refs_count": 1
+    },
+    {
+      "id": "g.prophetesses-with-bands-and-veils--e5b23000",
+      "name": "Prophetesses with bands and veils",
+      "type": "group",
+      "role": "occult",
+      "refs_count": 1
+    }
+  ]
+}

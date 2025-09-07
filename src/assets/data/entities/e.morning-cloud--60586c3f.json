@@ -1,0 +1,18 @@
+{
+  "name": "Morning cloud",
+  "type": "entity",
+  "references": [
+    "Hosea 6:4"
+  ],
+  "blurb": "Ephemeral piety.",
+  "category": "image",
+  "id": "e.morning-cloud--60586c3f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Hosea": [
+      6
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Gift: Tongues",
+  "type": "figure",
+  "category": "gift",
+  "references": [
+    "1 Cor 12:8–10",
+    "1 Cor 12:28"
+  ],
+  "aka": [],
+  "id": "f.gift-tongues--14ab707d",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "1 Corinthians": [
+      12
+    ]
+  }
+}

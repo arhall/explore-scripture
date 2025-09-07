@@ -1,0 +1,42 @@
+{
+  "book": "Acts",
+  "chapter": 5,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "f.apostolic-signs-and-wonders--bd37146b",
+      "name": "Apostolic signs and wonders",
+      "type": "figure",
+      "role": "miracles-index",
+      "refs_count": 1
+    },
+    {
+      "id": "e.solomon-s-portico--25981ded",
+      "name": "Solomon’s Portico",
+      "type": "entity",
+      "role": "site",
+      "refs_count": 2
+    },
+    {
+      "id": "g.ananias-and-sapphira--7e4efba5",
+      "name": "Ananias and Sapphira",
+      "type": "group",
+      "role": "judgment",
+      "refs_count": 1
+    },
+    {
+      "id": "p.simon-peter-cephas--d58cce37",
+      "name": "Simon Peter (Cephas)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 15
+    },
+    {
+      "id": "f.gamaliel-s-counsel--a7950526",
+      "name": "Gamaliel’s counsel",
+      "type": "figure",
+      "role": "advice",
+      "refs_count": 1
+    }
+  ]
+}

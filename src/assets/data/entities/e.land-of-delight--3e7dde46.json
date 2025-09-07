@@ -1,0 +1,18 @@
+{
+  "id": "e.land-of-delight--3e7dde46",
+  "name": "Land of delight",
+  "type": "entity",
+  "references": [
+    "Mal 3:12"
+  ],
+  "category": "land-ideal",
+  "blurb": "Transformed territory under covenant blessing.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Malachi": [
+      3
+    ]
+  }
+}

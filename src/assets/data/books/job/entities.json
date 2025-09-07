@@ -1,0 +1,529 @@
+{
+  "book": "Job",
+  "slug": "job",
+  "entity_count": 45,
+  "key_figures": [
+    {
+      "id": "p.elihu-son-of-barakel-the-buzite-of-the-family-of-ram--bb49309f",
+      "name": "Elihu son of Barakel the Buzite, of the family of Ram",
+      "type": "person",
+      "role": "wisdom",
+      "refs_count": 6,
+      "score": 16
+    },
+    {
+      "id": "p.jobs-wife--3a299a5e",
+      "name": "Job’s wife",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.eliphaz-the-temanite--2ba81d1d",
+      "name": "Eliphaz the Temanite",
+      "type": "person",
+      "role": "wisdom",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.bildad-the-shuhite--2f451710",
+      "name": "Bildad the Shuhite",
+      "type": "person",
+      "role": "wisdom",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.zophar-the-naamathite--5d7e3529",
+      "name": "Zophar the Naamathite",
+      "type": "person",
+      "role": "wisdom",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "e.eliphazs-second-bildads-second-zophars-second--07d81b46",
+      "name": "Eliphaz’s second; Bildad’s second; Zophar’s second",
+      "type": "entity",
+      "role": "wisdom",
+      "refs_count": 7,
+      "score": 8
+    },
+    {
+      "id": "g.sons-of-god.heavenly-council--5b46f7b6",
+      "name": "Sons of God (heavenly council)",
+      "type": "group",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sabean-raiders--10a86d1d",
+      "name": "Sabean raiders",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.chaldean-raiding-bands--f972a58f",
+      "name": "Chaldean raiding bands",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "e.eliphazs-third-bildads-third-zophar-silent--29356711",
+      "name": "Eliphaz’s third; Bildad’s third; Zophar silent",
+      "type": "entity",
+      "role": "wisdom",
+      "refs_count": 6,
+      "score": 7
+    },
+    {
+      "id": "g.jobs-daughters-jemimah-keziah-keren-happuch--17a280f5",
+      "name": "Job’s daughters: Jemimah, Keziah, Keren-happuch",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.jobs-sons.after-restoration--a149bb29",
+      "name": "Job’s sons (after restoration)",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.relatives-and-acquaintances-who-had-known-him-before--ea8eea6b",
+      "name": "Relatives and acquaintances who had known him before",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "e.eliphazs-first-speech-jobs-reply--7476540c",
+      "name": "Eliphaz’s first speech & Job’s reply",
+      "type": "entity",
+      "role": "wisdom",
+      "refs_count": 4,
+      "score": 5
+    },
+    {
+      "id": "e.zophars-first-speech-jobs-reply--9d0e8017",
+      "name": "Zophar’s first speech & Job’s reply",
+      "type": "entity",
+      "role": "wisdom",
+      "refs_count": 4,
+      "score": 5
+    },
+    {
+      "id": "e.bildads-first-speech-jobs-reply--e30366e6",
+      "name": "Bildad’s first speech & Job’s reply",
+      "type": "entity",
+      "role": "wisdom",
+      "refs_count": 3,
+      "score": 4
+    },
+    {
+      "id": "f.the-satan.the-accuser--c1b3251f",
+      "name": "The Satan (the Accuser)",
+      "type": "figure",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.land-of-uz--fb62932a",
+      "name": "Land of Uz",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.jobs-household-inventory.initial-prosperity--7b007ca3",
+      "name": "Job’s household inventory (initial prosperity)",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.family-feasting-cycle-jobs-priestly-intercession--e49fa618",
+      "name": "Family feasting cycle & Job’s priestly intercession",
+      "type": "entity",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 2
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "p.elihu-son-of-barakel-the-buzite-of-the-family-of-ram--bb49309f",
+      "name": "Elihu son of Barakel the Buzite, of the family of Ram",
+      "type": "person",
+      "role": "wisdom",
+      "refs_count": 6,
+      "score": 16
+    },
+    {
+      "id": "p.jobs-wife--3a299a5e",
+      "name": "Job’s wife",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.eliphaz-the-temanite--2ba81d1d",
+      "name": "Eliphaz the Temanite",
+      "type": "person",
+      "role": "wisdom",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.bildad-the-shuhite--2f451710",
+      "name": "Bildad the Shuhite",
+      "type": "person",
+      "role": "wisdom",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.zophar-the-naamathite--5d7e3529",
+      "name": "Zophar the Naamathite",
+      "type": "person",
+      "role": "wisdom",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "e.eliphazs-second-bildads-second-zophars-second--07d81b46",
+      "name": "Eliphaz’s second; Bildad’s second; Zophar’s second",
+      "type": "entity",
+      "role": "wisdom",
+      "refs_count": 7,
+      "score": 8
+    },
+    {
+      "id": "g.sons-of-god.heavenly-council--5b46f7b6",
+      "name": "Sons of God (heavenly council)",
+      "type": "group",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.sabean-raiders--10a86d1d",
+      "name": "Sabean raiders",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.chaldean-raiding-bands--f972a58f",
+      "name": "Chaldean raiding bands",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "e.eliphazs-third-bildads-third-zophar-silent--29356711",
+      "name": "Eliphaz’s third; Bildad’s third; Zophar silent",
+      "type": "entity",
+      "role": "wisdom",
+      "refs_count": 6,
+      "score": 7
+    },
+    {
+      "id": "g.jobs-daughters-jemimah-keziah-keren-happuch--17a280f5",
+      "name": "Job’s daughters: Jemimah, Keziah, Keren-happuch",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.jobs-sons.after-restoration--a149bb29",
+      "name": "Job’s sons (after restoration)",
+      "type": "group",
+      "role": "record",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.relatives-and-acquaintances-who-had-known-him-before--ea8eea6b",
+      "name": "Relatives and acquaintances who had known him before",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "e.eliphazs-first-speech-jobs-reply--7476540c",
+      "name": "Eliphaz’s first speech & Job’s reply",
+      "type": "entity",
+      "role": "wisdom",
+      "refs_count": 4,
+      "score": 5
+    },
+    {
+      "id": "e.zophars-first-speech-jobs-reply--9d0e8017",
+      "name": "Zophar’s first speech & Job’s reply",
+      "type": "entity",
+      "role": "wisdom",
+      "refs_count": 4,
+      "score": 5
+    },
+    {
+      "id": "e.bildads-first-speech-jobs-reply--e30366e6",
+      "name": "Bildad’s first speech & Job’s reply",
+      "type": "entity",
+      "role": "wisdom",
+      "refs_count": 3,
+      "score": 4
+    },
+    {
+      "id": "f.the-satan.the-accuser--c1b3251f",
+      "name": "The Satan (the Accuser)",
+      "type": "figure",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.land-of-uz--fb62932a",
+      "name": "Land of Uz",
+      "type": "entity",
+      "role": "place",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.jobs-household-inventory.initial-prosperity--7b007ca3",
+      "name": "Job’s household inventory (initial prosperity)",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.family-feasting-cycle-jobs-priestly-intercession--e49fa618",
+      "name": "Family feasting cycle & Job’s priestly intercession",
+      "type": "entity",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.fire-of-god.lightning--870dece3",
+      "name": "Fire of God (lightning)",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.great-wind-from-the-wilderness--643d6ac3",
+      "name": "Great wind from the wilderness",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.jobs-worship-in-loss.yhwh-gave--883078e4",
+      "name": "Job’s worship in loss (‘YHWH gave…’)",
+      "type": "entity",
+      "role": "spirituality",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.skin-for-skin-and-the-boils--bfb5d274",
+      "name": "‘Skin for skin’ and the boils",
+      "type": "entity",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.seven-days-and-nights-of-silent-sitting--4f5263d0",
+      "name": "Seven days and nights of silent sitting",
+      "type": "entity",
+      "role": "spirituality",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.jobs-curse-of-his-day--89cc2582",
+      "name": "Job’s curse of his day",
+      "type": "entity",
+      "role": "spirituality",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.job-longs-for-an-umpire-mediator--23052589",
+      "name": "Job longs for an umpire/mediator",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.my-witness-is-in-heaven--3c6b8772",
+      "name": "‘My witness is in heaven’",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.i-know-that-my-redeemer-lives--567a58f5",
+      "name": "‘I know that my Redeemer lives’",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.wisdom-hymn.where-can-wisdom-be-found--606ea35d",
+      "name": "Wisdom hymn (‘Where can wisdom be found?’)",
+      "type": "entity",
+      "role": "wisdom",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.jobs-oath-of-clearance.integrity-code--86fdf723",
+      "name": "Job’s oath of clearance (integrity code)",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.elihus-four-speeches--8e54ef30",
+      "name": "Elihu’s four speeches",
+      "type": "entity",
+      "role": "wisdom",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.whirlwind-theophany--2f87395e",
+      "name": "Whirlwind theophany",
+      "type": "entity",
+      "role": "theophany",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.cosmic-tour-sea-dawn-storehouses-of-snow-and-hail--6b61a402",
+      "name": "Cosmic tour: sea, dawn, storehouses of snow and hail",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.constellations.pleiades-orion-mazzaroth-bear--1ce5265f",
+      "name": "Constellations (Pleiades, Orion, Mazzaroth, Bear)",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.mountain-goats-deer-wild-donkey-wild-ox-ostrich--9027f066",
+      "name": "Mountain goats, deer, wild donkey, wild ox, ostrich",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.war-horse-hawk-eagle--94744d4c",
+      "name": "War horse, hawk, eagle",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.behemoth--3be3453c",
+      "name": "Behemoth",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.leviathan--380c58dd",
+      "name": "Leviathan",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.job-humbled-hand-on-mouth--c2fe53fe",
+      "name": "Job humbled: hand on mouth",
+      "type": "entity",
+      "role": "spirituality",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.jobs-final-confession.i-had-heard-now-my-eye-sees--f38c4b41",
+      "name": "Job’s final confession (‘I had heard… now my eye sees’)",
+      "type": "entity",
+      "role": "spirituality",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.yhwhs-verdict-on-the-friends--41d3b10c",
+      "name": "YHWH’s verdict on the friends",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.atoning-sacrifices-offered-via-jobs-priesthood--f2b2d352",
+      "name": "Atoning sacrifices offered via Job’s priesthood",
+      "type": "entity",
+      "role": "worship",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.restoration-double-portion.livestock--fb520fb2",
+      "name": "Restoration double portion (livestock)",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.jobs-lifespan-and-legacy--a53b701b",
+      "name": "Job’s lifespan and legacy",
+      "type": "entity",
+      "role": "record",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

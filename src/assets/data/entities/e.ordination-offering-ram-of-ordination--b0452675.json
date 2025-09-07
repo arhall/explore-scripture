@@ -1,0 +1,22 @@
+{
+  "name": "Ordination Offering / Ram of Ordination",
+  "type": "entity",
+  "references": [
+    "Leviticus 8–9"
+  ],
+  "blurb": "Consecration rites for priests—blood on ear, thumb, toe—devotion of hearing, doing, walking. Worship leadership flows from sanctified life.",
+  "category": "ritual",
+  "cross_references": [
+    "Exodus 29"
+  ],
+  "id": "e.ordination-offering-ram-of-ordination--b0452675",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Leviticus": [
+      8,
+      9
+    ]
+  }
+}

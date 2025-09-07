@@ -1,0 +1,22 @@
+{
+  "id": "e.ravening-lions--c4e0a1b7",
+  "name": "Ravening lions",
+  "type": "entity",
+  "references": [
+    "Nah 2:11–13"
+  ],
+  "category": "predator-imagery",
+  "aka": [
+    "Young lions",
+    "Lionesses"
+  ],
+  "blurb": "Extended pride-of-lions metaphor for Assyrian elites whose den is consumed.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      2
+    ]
+  }
+}

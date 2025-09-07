@@ -1,0 +1,20 @@
+{
+  "name": "Do not awaken love until it pleases (refrain)",
+  "type": "entity",
+  "references": [
+    "Song 2:7; 3:5; 8:4"
+  ],
+  "blurb": "Chastity refrain anchors timing—desire awaits proper season; love’s discipline enhances joy.",
+  "category": "wisdom",
+  "count": 3,
+  "count_note": "Refrain appears three times",
+  "id": "e.do-not-awaken-love-until-it-pleases.refrain--80a274e4",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Song of Songs": [
+      2
+    ]
+  }
+}

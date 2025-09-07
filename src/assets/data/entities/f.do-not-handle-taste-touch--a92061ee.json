@@ -1,0 +1,21 @@
+{
+  "name": "Do not handle, taste, touch",
+  "type": "figure",
+  "category": "ascetic-rules",
+  "references": [
+    "Col 2:21"
+  ],
+  "aka": [],
+  "id": "f.do-not-handle-taste-touch--a92061ee",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      2
+    ]
+  }
+}

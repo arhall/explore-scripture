@@ -1,0 +1,19 @@
+{
+  "name": "Elon the Zebulunite",
+  "type": "person",
+  "references": [
+    "Judges 12:11–12"
+  ],
+  "blurb": "Ten years of quiet rule from Zebulun—stability as a gift easily overlooked.",
+  "category": "narrative",
+  "tribe": "Zebulun",
+  "id": "p.elon-the-zebulunite--a0c52fb6",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      12
+    ]
+  }
+}

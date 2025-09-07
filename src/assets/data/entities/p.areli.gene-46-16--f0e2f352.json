@@ -1,0 +1,19 @@
+{
+  "name": "Areli",
+  "type": "person",
+  "references": [
+    "Genesis 46:16"
+  ],
+  "blurb": "Listed among the descendants who went down to Egypt with Jacob.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.areli.gene-46-16--f0e2f352",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      46
+    ]
+  }
+}

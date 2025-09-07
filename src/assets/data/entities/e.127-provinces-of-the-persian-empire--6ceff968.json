@@ -1,0 +1,18 @@
+{
+  "name": "127 provinces of the Persian Empire",
+  "type": "entity",
+  "references": [
+    "Esther 1:1; 8:9"
+  ],
+  "blurb": "Scope of the stage—edicts ripple across a multi-ethnic empire in every script and tongue.",
+  "category": "record",
+  "id": "e.127-provinces-of-the-persian-empire--6ceff968",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      1
+    ]
+  }
+}

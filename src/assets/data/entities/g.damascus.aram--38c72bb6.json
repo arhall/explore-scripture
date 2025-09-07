@@ -1,0 +1,23 @@
+{
+  "name": "Damascus (Aram)",
+  "type": "group",
+  "references": [
+    "Isaiah 7; 17",
+    "Jeremiah 49:23–27",
+    "Amos 1:3–5"
+  ],
+  "blurb": "Falls with Ephraim; fading splendor catechizes dependence on God.",
+  "category": "nation",
+  "id": "g.damascus.aram--38c72bb6",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      49
+    ],
+    "Amos": [
+      1
+    ]
+  }
+}

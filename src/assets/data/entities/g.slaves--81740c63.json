@@ -1,0 +1,19 @@
+{
+  "name": "slaves",
+  "type": "group",
+  "category": "social",
+  "references": [
+    "1 Tim 6:1",
+    "Titus 2:2-10"
+  ],
+  "aka": [],
+  "id": "g.slaves--81740c63",
+  "book_references": {
+    "1 Timothy": [
+      6
+    ],
+    "Titus": [
+      2
+    ]
+  }
+}

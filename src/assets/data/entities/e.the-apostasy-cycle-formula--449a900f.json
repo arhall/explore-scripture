@@ -1,0 +1,18 @@
+{
+  "name": "The apostasy cycle formula",
+  "type": "entity",
+  "references": [
+    "Judges 2:11–23"
+  ],
+  "blurb": "Did evil → oppression → cry → judge raised → deliverance → relapse. A theological template reading Israel’s history under covenant.",
+  "category": "summary",
+  "id": "e.the-apostasy-cycle-formula--449a900f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      2
+    ]
+  }
+}

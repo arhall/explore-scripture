@@ -1,0 +1,633 @@
+{
+  "book": "2 Thessalonians",
+  "slug": "2-thessalonians",
+  "entity_count": 58,
+  "key_figures": [
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.silas-silvanus--3ff90d56",
+      "name": "Silas (Silvanus)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.timothy--227fb1d9",
+      "name": "Timothy",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.church-of-the-thessalonians--e62e69ff",
+      "name": "Church of the Thessalonians",
+      "type": "group",
+      "role": "assembly",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.busybodies--5238ba79",
+      "name": "Busybodies",
+      "type": "group",
+      "role": "work-ethic",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.vengeance-on-those-who-do-not-obey--ec2dcd98",
+      "name": "Vengeance on those who do not obey",
+      "type": "group",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.delivered-from-wicked-and-evil-men--7a798c6b",
+      "name": "Delivered from wicked and evil men",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.idle-disorderly-ataktos--ca4ba91d",
+      "name": "Idle/Disorderly (ataktos)",
+      "type": "group",
+      "role": "work-ethic",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.warn-as-a-brother-cohort--8892c35e",
+      "name": "Warn-as-a-brother cohort",
+      "type": "group",
+      "role": "discipline",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.unwilling-to-work-rule-target--a6efecc3",
+      "name": "Unwilling to work (rule target)",
+      "type": "group",
+      "role": "subset",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.persecutions-and-afflictions--8d31322e",
+      "name": "Persecutions and afflictions",
+      "type": "group",
+      "role": "suffering",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.faith-grows-love-increases--a9d50ce4",
+      "name": "Faith grows; love increases",
+      "type": "group",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.glorified-in-his-saints--013321c5",
+      "name": "Glorified in his saints",
+      "type": "group",
+      "role": "saints",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.those-who-do-not-love-the-truth--c5e2d09a",
+      "name": "Those who do not love the truth",
+      "type": "group",
+      "role": "deceived",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 3,
+      "score": 5
+    },
+    {
+      "id": "f.man-of-lawlessness-son-of-destruction--b0f1d2b1",
+      "name": "Man of Lawlessness (Son of Destruction)",
+      "type": "figure",
+      "role": "eschatology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.traditions-oral--ac0000d9",
+      "name": "Traditions (oral)",
+      "type": "figure",
+      "role": "tradition",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.if-anyone-is-unwilling-to-work-neither-let-him-eat--99dd1e31",
+      "name": "If anyone is unwilling to work, neither let him eat",
+      "type": "figure",
+      "role": "rule",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.stand-firm-and-hold-the-traditions-paradosis--c5528822",
+      "name": "Stand firm and hold the traditions (paradosis)",
+      "type": "figure",
+      "role": "tradition",
+      "refs_count": 1,
+      "score": 3
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.silas-silvanus--3ff90d56",
+      "name": "Silas (Silvanus)",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.timothy--227fb1d9",
+      "name": "Timothy",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.church-of-the-thessalonians--e62e69ff",
+      "name": "Church of the Thessalonians",
+      "type": "group",
+      "role": "assembly",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.busybodies--5238ba79",
+      "name": "Busybodies",
+      "type": "group",
+      "role": "work-ethic",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.vengeance-on-those-who-do-not-obey--ec2dcd98",
+      "name": "Vengeance on those who do not obey",
+      "type": "group",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.delivered-from-wicked-and-evil-men--7a798c6b",
+      "name": "Delivered from wicked and evil men",
+      "type": "group",
+      "role": "opponents",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.idle-disorderly-ataktos--ca4ba91d",
+      "name": "Idle/Disorderly (ataktos)",
+      "type": "group",
+      "role": "work-ethic",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.warn-as-a-brother-cohort--8892c35e",
+      "name": "Warn-as-a-brother cohort",
+      "type": "group",
+      "role": "discipline",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.unwilling-to-work-rule-target--a6efecc3",
+      "name": "Unwilling to work (rule target)",
+      "type": "group",
+      "role": "subset",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.persecutions-and-afflictions--8d31322e",
+      "name": "Persecutions and afflictions",
+      "type": "group",
+      "role": "suffering",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.faith-grows-love-increases--a9d50ce4",
+      "name": "Faith grows; love increases",
+      "type": "group",
+      "role": "virtue",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.glorified-in-his-saints--013321c5",
+      "name": "Glorified in his saints",
+      "type": "group",
+      "role": "saints",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.those-who-do-not-love-the-truth--c5e2d09a",
+      "name": "Those who do not love the truth",
+      "type": "group",
+      "role": "deceived",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 3,
+      "score": 5
+    },
+    {
+      "id": "f.man-of-lawlessness-son-of-destruction--b0f1d2b1",
+      "name": "Man of Lawlessness (Son of Destruction)",
+      "type": "figure",
+      "role": "eschatology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.traditions-oral--ac0000d9",
+      "name": "Traditions (oral)",
+      "type": "figure",
+      "role": "tradition",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.if-anyone-is-unwilling-to-work-neither-let-him-eat--99dd1e31",
+      "name": "If anyone is unwilling to work, neither let him eat",
+      "type": "figure",
+      "role": "rule",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.stand-firm-and-hold-the-traditions-paradosis--c5528822",
+      "name": "Stand firm and hold the traditions (paradosis)",
+      "type": "figure",
+      "role": "tradition",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.prayer-to-fulfill-every-resolve-for-good--467746e5",
+      "name": "Prayer to fulfill every resolve for good",
+      "type": "figure",
+      "role": "prayer",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.we-hear-some-walk-in-idleness-busybodies--0d3b0c27",
+      "name": "We hear some walk in idleness, busybodies",
+      "type": "figure",
+      "role": "problem",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.called-through-our-gospel--e70f55b4",
+      "name": "Called through our gospel",
+      "type": "figure",
+      "role": "calling",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.traditions-written--2121de9a",
+      "name": "Traditions (written)",
+      "type": "figure",
+      "role": "tradition",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.work-quietly-and-eat-your-own-bread--3cfc0904",
+      "name": "Work quietly and eat your own bread",
+      "type": "figure",
+      "role": "solution",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.mark-that-one-and-have-nothing-to-do-shame--57cdae84",
+      "name": "Mark that one and have nothing to do (shame)",
+      "type": "figure",
+      "role": "discipline",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.delusion-god-sends-strong-delusion--80ed31eb",
+      "name": "Delusion (God sends strong delusion)",
+      "type": "figure",
+      "role": "judicial-hardening",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.do-not-be-quickly-shaken--1bf74f1d",
+      "name": "Do not be quickly shaken",
+      "type": "figure",
+      "role": "pastoral",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.the-lord-is-faithful-guard-you-from-the-evil-one--63dfb195",
+      "name": "The Lord is faithful: guard you from the evil one",
+      "type": "figure",
+      "role": "assurance",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.textual-note-2-13-from-the-beginning-vs-firstfruits--03b02618",
+      "name": "Textual note: 2:13 ‘from the beginning’ vs ‘firstfruits’",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.affliction-to-those-who-afflict-you--9d27da22",
+      "name": "Affliction to those who afflict you",
+      "type": "figure",
+      "role": "reversal",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.restrainer-neuter-what-restrains--1e9c9733",
+      "name": "Restrainer (neuter: what restrains)",
+      "type": "figure",
+      "role": "restrainer",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.warn-him-as-a-brother-not-enemy--788b11b2",
+      "name": "Warn him as a brother (not enemy)",
+      "type": "figure",
+      "role": "discipline",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.comfort-and-strengthen-hearts--cd4bd5b1",
+      "name": "Comfort and strengthen hearts",
+      "type": "figure",
+      "role": "prayer",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.paul-s-hand-sign-in-every-letter--f72c12af",
+      "name": "Paul’s hand—sign in every letter",
+      "type": "figure",
+      "role": "autograph",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.parousia-of-the-lord--77d0a341",
+      "name": "Parousia of the Lord",
+      "type": "figure",
+      "role": "eschatology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.revelation-of-the-lord-jesus-from-heaven--83a764c6",
+      "name": "Revelation of the Lord Jesus from heaven",
+      "type": "figure",
+      "role": "apocalypse",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.do-not-grow-weary-in-doing-good--9ccbcbfd",
+      "name": "Do not grow weary in doing good",
+      "type": "figure",
+      "role": "exhortation",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.lawless-one-s-pseudo-signs-and-wonders--fcffa6e6",
+      "name": "Lawless one’s pseudo-signs and wonders",
+      "type": "figure",
+      "role": "deception",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.apostasy-rebellion--d89c8338",
+      "name": "Apostasy (rebellion)",
+      "type": "figure",
+      "role": "eschatology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.eternal-destruction-away-from-the-presence--d6e308f3",
+      "name": "Eternal destruction away from the presence",
+      "type": "figure",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.gathering-to-him-episynagoge--831a44af",
+      "name": "Gathering to him (episynagoge)",
+      "type": "figure",
+      "role": "eschatology",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.purported-spirit-utterance--4cf7e841",
+      "name": "Purported spirit utterance",
+      "type": "figure",
+      "role": "disturbance",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.pseudo-pauline-letter-as-if-from-us--5ab6c580",
+      "name": "Pseudo-Pauline letter (as if from us)",
+      "type": "figure",
+      "role": "pseudepigraph",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.direct-your-hearts-to-the-love-of-god-and-steadfastness-of-christ--de443360",
+      "name": "Direct your hearts to the love of God and steadfastness of Christ",
+      "type": "figure",
+      "role": "prayer",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.mystery-of-lawlessness--a1101aec",
+      "name": "Mystery of Lawlessness",
+      "type": "figure",
+      "role": "mystery",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.advance-of-the-word--72d32cd4",
+      "name": "Advance of the word",
+      "type": "figure",
+      "role": "mission",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.apostolic-example-worked-night-and-day--af5d5607",
+      "name": "Apostolic example: worked night and day",
+      "type": "figure",
+      "role": "example",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.righteous-judgment-of-god--424ed7a4",
+      "name": "Righteous judgment of God",
+      "type": "figure",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.restrainer-masculine-he-who-restrains--ceb85965",
+      "name": "Restrainer (masculine: he who restrains)",
+      "type": "figure",
+      "role": "restrainer",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.keep-away-from-every-brother-walking-disorderly--af475863",
+      "name": "Keep away from every brother walking disorderly",
+      "type": "figure",
+      "role": "discipline",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.chosen-for-salvation-sanctified-by-the-spirit--d2631793",
+      "name": "Chosen for salvation: sanctified by the Spirit",
+      "type": "figure",
+      "role": "election",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.grace-be-with-you-all--5327c983",
+      "name": "Grace be with you all",
+      "type": "figure",
+      "role": "benediction",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.alarmist-spoken-word--275d86e6",
+      "name": "Alarmist spoken word",
+      "type": "figure",
+      "role": "disturbance",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.kill-with-the-breath-of-his-mouth-isa-echo--6b31b4e6",
+      "name": "Kill with the breath of his mouth (Isa echo)",
+      "type": "figure",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.lord-of-peace-give-peace-always--540cac26",
+      "name": "Lord of peace give peace always",
+      "type": "figure",
+      "role": "benediction",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.sits-in-the-temple-of-god--b03167c7",
+      "name": "Sits in the Temple of God",
+      "type": "figure",
+      "role": "claim",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.temple-of-god--b568897a",
+      "name": "Temple of God",
+      "type": "entity",
+      "role": "temple",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

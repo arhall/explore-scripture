@@ -1,0 +1,19 @@
+{
+  "name": "Manoah (Samson’s father)",
+  "type": "person",
+  "references": [
+    "Judges 13"
+  ],
+  "blurb": "A Danite who learns reverent listening as the Angel of the LORD announces a Nazarite deliverer. His hospitality meets holy fire.",
+  "category": "narrative",
+  "tribe": "Dan",
+  "id": "p.manoah.samsons-father--9154cacf",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      13
+    ]
+  }
+}

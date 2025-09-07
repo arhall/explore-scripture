@@ -1,0 +1,23 @@
+{
+  "name": "Altar to an unknown god",
+  "type": "figure",
+  "category": "object",
+  "references": [
+    "Acts 17:23"
+  ],
+  "aka": [],
+  "id": "f.altar-to-an-unknown-god--ba76c380",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      17
+    ]
+  }
+}

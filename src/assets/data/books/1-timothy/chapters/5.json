@@ -1,0 +1,77 @@
+{
+  "book": "1 Timothy",
+  "chapter": 5,
+  "entity_count": 29,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "g.older-women--334ddcf4",
+      "name": "older women",
+      "type": "group",
+      "role": "cohort",
+      "refs_count": 2
+    },
+    {
+      "id": "f.widow-eligibility-brought-up-children--7b8f8127",
+      "name": "Widow eligibility: brought up children",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1
+    },
+    {
+      "id": "f.widow-eligibility-devoted-to-every-good-work--b5a14a26",
+      "name": "Widow eligibility: devoted to every good work",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1
+    },
+    {
+      "id": "f.widow-eligibility-washed-the-saints-feet--e4ec60ef",
+      "name": "Widow eligibility: washed the saints’ feet",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1
+    },
+    {
+      "id": "g.younger-men--1519bc4c",
+      "name": "younger men",
+      "type": "group",
+      "role": "cohort",
+      "refs_count": 2
+    },
+    {
+      "id": "g.younger-women--d64e825d",
+      "name": "younger women",
+      "type": "group",
+      "role": "cohort",
+      "refs_count": 1
+    },
+    {
+      "id": "f.widow-eligibility-children-grandchildren-first-to-care--913eaabf",
+      "name": "Widow eligibility: children/grandchildren first to care",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1
+    },
+    {
+      "id": "f.widow-eligibility-sets-her-hope-on-god-and-continues-in-supplications--84de185d",
+      "name": "Widow eligibility: sets her hope on God and continues in supplications",
+      "type": "figure",
+      "role": "qualification",
+      "refs_count": 1
+    },
+    {
+      "id": "f.double-honor--16ffe380",
+      "name": "double honor",
+      "type": "figure",
+      "role": "valuation",
+      "refs_count": 1
+    }
+  ]
+}

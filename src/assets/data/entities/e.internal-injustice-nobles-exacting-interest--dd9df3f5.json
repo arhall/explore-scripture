@@ -1,0 +1,18 @@
+{
+  "name": "Internal injustice: nobles exacting interest",
+  "type": "entity",
+  "references": [
+    "Nehemiah 5:1–13"
+  ],
+  "blurb": "Economic repentance: mortgages and slavery reversed; leaders swear off usury—justice as revival.",
+  "category": "ethics",
+  "id": "e.internal-injustice-nobles-exacting-interest--dd9df3f5",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nehemiah": [
+      5
+    ]
+  }
+}

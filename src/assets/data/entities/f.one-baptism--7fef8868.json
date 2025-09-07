@@ -1,0 +1,21 @@
+{
+  "name": "One baptism",
+  "type": "figure",
+  "category": "one",
+  "references": [
+    "Eph 4:5"
+  ],
+  "aka": [],
+  "id": "f.one-baptism--7fef8868",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      4
+    ]
+  }
+}

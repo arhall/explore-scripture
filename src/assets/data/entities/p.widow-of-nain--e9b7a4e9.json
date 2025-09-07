@@ -1,0 +1,25 @@
+{
+  "name": "Widow of Nain",
+  "type": "person",
+  "aka": [],
+  "category": "raised",
+  "references": [
+    "Luke 7:11–17"
+  ],
+  "unique_to": "Luke",
+  "blurb": "Only-son raised; compassion motif heightened.",
+  "id": "p.widow-of-nain--e9b7a4e9",
+  "source_book": "Luke",
+  "source_books": [
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Luke": [
+      7
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Golgotha",
+  "type": "entity",
+  "category": "place-of-execution",
+  "references": [
+    "Matt 27:33–37",
+    "Mark 15:22–24"
+  ],
+  "blurb": "Skull place where kingship is mocked yet enthroned on a cross.",
+  "aka": [],
+  "id": "e.golgotha--dcf7176b",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Mark",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      27
+    ],
+    "Mark": [
+      15
+    ]
+  }
+}

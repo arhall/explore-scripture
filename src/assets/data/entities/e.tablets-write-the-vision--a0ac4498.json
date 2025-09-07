@@ -1,0 +1,18 @@
+{
+  "id": "e.tablets-write-the-vision--a0ac4498",
+  "name": "Tablets: Write the vision",
+  "type": "entity",
+  "references": [
+    "Hab 2:2-3"
+  ],
+  "category": "revelation-transmission",
+  "blurb": "Inscribed message made legible for runners; durable medium for delayed fulfillment.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      2
+    ]
+  }
+}

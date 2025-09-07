@@ -1,0 +1,18 @@
+{
+  "name": "Ekron",
+  "type": "entity",
+  "references": [
+    "1 Samuel 5:10–12"
+  ],
+  "blurb": "Philistine city that panics as the ark arrives—deathly dread hastens its return to Israel.",
+  "category": "place",
+  "id": "e.ekron--c14a05a7",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      5
+    ]
+  }
+}

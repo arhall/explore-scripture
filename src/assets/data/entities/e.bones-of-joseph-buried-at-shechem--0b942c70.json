@@ -1,0 +1,22 @@
+{
+  "name": "Bones of Joseph buried at Shechem",
+  "type": "entity",
+  "references": [
+    "Joshua 24:32"
+  ],
+  "blurb": "Centuries-old promise kept—exodus faith completes its arc as Joseph’s remains rest in the inheritance of his sons.",
+  "category": "narrative",
+  "cross_references": [
+    "Genesis 50:25",
+    "Exodus 13:19"
+  ],
+  "id": "e.bones-of-joseph-buried-at-shechem--0b942c70",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joshua": [
+      24
+    ]
+  }
+}

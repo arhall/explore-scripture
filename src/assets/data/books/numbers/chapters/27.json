@@ -1,0 +1,56 @@
+{
+  "book": "Numbers",
+  "chapter": 27,
+  "entity_count": 7,
+  "entities": [
+    {
+      "id": "p.noah.gene-5-32--6b1a74fb",
+      "name": "Noah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 5
+    },
+    {
+      "id": "p.milcah.gene-11-29--2c32743e",
+      "name": "Milcah",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 2
+    },
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "p.mahlah.daughter-of-zelophehad--55fe9045",
+      "name": "Mahlah (daughter of Zelophehad)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2
+    },
+    {
+      "id": "p.hoglah--0f5d4902",
+      "name": "Hoglah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2
+    },
+    {
+      "id": "p.tirzah.daughter-of-zelophehad--7eadf134",
+      "name": "Tirzah (daughter of Zelophehad)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2
+    },
+    {
+      "id": "e.commissioning-of-joshua--a82ea40f",
+      "name": "Commissioning of Joshua",
+      "type": "entity",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

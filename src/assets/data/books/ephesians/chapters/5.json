@@ -1,0 +1,77 @@
+{
+  "book": "Ephesians",
+  "chapter": 5,
+  "entity_count": 28,
+  "entities": [
+    {
+      "id": "f.be-imitators-of-god-walk-in-love--da14633f",
+      "name": "Be imitators of God; walk in love",
+      "type": "figure",
+      "role": "imitation",
+      "refs_count": 1
+    },
+    {
+      "id": "f.submitting-to-one-another-in-fear-of-christ--de00448b",
+      "name": "Submitting to one another in fear of Christ",
+      "type": "figure",
+      "role": "submission",
+      "refs_count": 1
+    },
+    {
+      "id": "f.formerly-darkness-now-light--aeaa320c",
+      "name": "Formerly darkness, now light",
+      "type": "figure",
+      "role": "identity",
+      "refs_count": 1
+    },
+    {
+      "id": "f.porneia-impurity-greed-not-named--3158698f",
+      "name": "Porneia, impurity, greed not named",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.genesis-2-24-quotation-great-mystery--10c46562",
+      "name": "Genesis 2:24 quotation (great mystery)",
+      "type": "figure",
+      "role": "mystery",
+      "refs_count": 1
+    },
+    {
+      "id": "f.do-not-get-drunk-with-wine-be-filled-with-the-spirit--c2a5a310",
+      "name": "Do not get drunk with wine; be filled with the Spirit",
+      "type": "figure",
+      "role": "Spirit",
+      "refs_count": 1
+    },
+    {
+      "id": "f.do-not-be-foolish-understand-the-lord-s-will--c692fab9",
+      "name": "Do not be foolish; understand the Lord’s will",
+      "type": "figure",
+      "role": "wisdom",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.wives-submit-as-to-the-lord--c0829bfb",
+      "name": "Wives submit as to the Lord",
+      "type": "figure",
+      "role": "household-code",
+      "refs_count": 1
+    },
+    {
+      "id": "f.nourish-and-cherish-as-own-body--7120cbec",
+      "name": "Nourish and cherish as own body",
+      "type": "figure",
+      "role": "household-code",
+      "refs_count": 1
+    }
+  ]
+}

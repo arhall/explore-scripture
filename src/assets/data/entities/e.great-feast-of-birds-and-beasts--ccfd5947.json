@@ -1,0 +1,18 @@
+{
+  "name": "Great feast of birds and beasts",
+  "type": "entity",
+  "references": [
+    "Ezekiel 39:17–20"
+  ],
+  "blurb": "Sacrificial banquet where enemies become the offering—reversal of power through holy irony.",
+  "category": "apocalypse",
+  "id": "e.great-feast-of-birds-and-beasts--ccfd5947",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      39
+    ]
+  }
+}

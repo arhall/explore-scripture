@@ -1,0 +1,18 @@
+{
+  "name": "Gershonites",
+  "type": "group",
+  "references": [
+    "Numbers 3:21–26; 4:24–28"
+  ],
+  "blurb": "Levitical clan charged with curtains, coverings, and screens of the tabernacle.",
+  "category": "genealogy",
+  "id": "g.gershonites--dc2282d0",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      3
+    ]
+  }
+}

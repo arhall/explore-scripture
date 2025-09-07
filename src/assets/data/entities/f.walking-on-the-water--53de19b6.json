@@ -1,0 +1,38 @@
+{
+  "name": "Walking on the water",
+  "type": "figure",
+  "category": "miracle",
+  "references": [
+    "Matt 14:22–33",
+    "Mark 6:45–52",
+    "John 6:16–21"
+  ],
+  "blurb": "I AM presence over chaos; worship as fitting response.",
+  "aka": [],
+  "id": "f.walking-on-the-water--53de19b6",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Mark",
+    "John",
+    "GospelsAndActs"
+  ],
+  "synoptic_parallels": [
+    "Matt 14:22–33",
+    "Mark 6:45–52"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      14
+    ],
+    "Mark": [
+      6
+    ],
+    "John": [
+      6
+    ]
+  }
+}

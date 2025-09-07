@@ -1,0 +1,23 @@
+{
+  "name": "Mnason of Cyprus (hosting)",
+  "type": "person",
+  "category": "host",
+  "references": [
+    "Acts 21:16"
+  ],
+  "aka": [],
+  "id": "p.mnason-of-cyprus-hosting--4c760c35",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      21
+    ]
+  }
+}

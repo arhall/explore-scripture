@@ -1,0 +1,18 @@
+{
+  "id": "e.fields--d07ff7e3",
+  "name": "Fields",
+  "type": "entity",
+  "references": [
+    "Hab 3:17"
+  ],
+  "category": "agrarian",
+  "blurb": "Fields yield no food—macro sign of covenant curse imagery reversed by faith.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      3
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Strategoi (magistrates)",
+  "type": "title",
+  "category": "civic-title",
+  "references": [
+    "Acts 16:20,22,35,38"
+  ],
+  "aka": [],
+  "id": "t.strategoi-magistrates--76207114",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      16
+    ]
+  }
+}

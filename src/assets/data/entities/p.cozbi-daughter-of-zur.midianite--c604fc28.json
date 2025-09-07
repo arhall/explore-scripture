@@ -1,0 +1,18 @@
+{
+  "name": "Cozbi daughter of Zur (Midianite)",
+  "type": "person",
+  "references": [
+    "Numbers 25:15"
+  ],
+  "blurb": "Noblewoman slain with Zimri; her father Zur is later killed.",
+  "category": "narrative",
+  "id": "p.cozbi-daughter-of-zur.midianite--c604fc28",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Numbers": [
+      25
+    ]
+  }
+}

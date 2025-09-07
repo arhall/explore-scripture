@@ -1,0 +1,23 @@
+{
+  "name": "Arrival in Jerusalem",
+  "type": "figure",
+  "category": "arrival",
+  "references": [
+    "Acts 21:17"
+  ],
+  "aka": [],
+  "id": "f.arrival-in-jerusalem--34e1ded9",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      21
+    ]
+  }
+}

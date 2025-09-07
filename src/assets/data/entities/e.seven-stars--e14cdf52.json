@@ -1,0 +1,21 @@
+{
+  "name": "seven stars",
+  "type": "entity",
+  "category": "symbol",
+  "references": [
+    "Rev 1:16,20"
+  ],
+  "aka": [],
+  "id": "e.seven-stars--e14cdf52",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Revelation": [
+      1
+    ]
+  }
+}

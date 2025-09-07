@@ -1,0 +1,18 @@
+{
+  "name": "Elam and Media",
+  "type": "group",
+  "references": [
+    "Isaiah 13:17; 21:2"
+  ],
+  "blurb": "Instruments raised against Babylon—empires are tools in a sovereign hand.",
+  "category": "nations",
+  "id": "g.elam-and-media--fe0219be",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Isaiah": [
+      13
+    ]
+  }
+}

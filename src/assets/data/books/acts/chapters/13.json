@@ -1,0 +1,77 @@
+{
+  "book": "Acts",
+  "chapter": 13,
+  "entity_count": 21,
+  "entities": [
+    {
+      "id": "e.antioch-pisidia--3e6e29fd",
+      "name": "Antioch (Pisidia)",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 2
+    },
+    {
+      "id": "p.john-mark--ac3d50bf",
+      "name": "John Mark",
+      "type": "person",
+      "role": "coworker",
+      "refs_count": 3
+    },
+    {
+      "id": "p.manaen-brought-up-with-herod--9c7e497b",
+      "name": "Manaen (brought up with Herod)",
+      "type": "person",
+      "role": "prophet-teacher",
+      "refs_count": 1
+    },
+    {
+      "id": "g.god-fearers-theosebeis--8ba75b09",
+      "name": "God-fearers (theosebeis)",
+      "type": "group",
+      "role": "gentile-associates",
+      "refs_count": 3
+    },
+    {
+      "id": "e.antioch-syria--329754ba",
+      "name": "Antioch (Syria)",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 5
+    },
+    {
+      "id": "f.aramaic-and-hebrew-names-in-acts--8976acce",
+      "name": "Aramaic and Hebrew names in Acts",
+      "type": "figure",
+      "role": "language",
+      "refs_count": 3
+    },
+    {
+      "id": "f.speeches-in-acts-index--79e8df4b",
+      "name": "Speeches in Acts (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 10
+    },
+    {
+      "id": "e.perga-in-pamphylia--971d6d49",
+      "name": "Perga in Pamphylia",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1
+    },
+    {
+      "id": "f.journeys-index--f80d022a",
+      "name": "Journeys (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 2
+    },
+    {
+      "id": "p.paul-saul--d4c08ff1",
+      "name": "Paul (Saul)",
+      "type": "person",
+      "role": "apostle",
+      "refs_count": 24
+    }
+  ]
+}

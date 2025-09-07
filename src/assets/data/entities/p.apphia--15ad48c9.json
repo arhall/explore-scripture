@@ -1,0 +1,15 @@
+{
+  "name": "Apphia",
+  "type": "person",
+  "category": "recipient-household",
+  "references": [
+    "Philem 2"
+  ],
+  "aka": [],
+  "id": "p.apphia--15ad48c9",
+  "book_references": {
+    "Philemon": [
+      2
+    ]
+  }
+}

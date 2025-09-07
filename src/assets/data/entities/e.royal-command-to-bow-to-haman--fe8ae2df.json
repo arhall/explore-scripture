@@ -1,0 +1,18 @@
+{
+  "name": "Royal command to bow to Haman",
+  "type": "entity",
+  "references": [
+    "Esther 3:2"
+  ],
+  "blurb": "Protocol collides with conscience; Mordecai’s refusal exposes an old war of loyalties.",
+  "category": "ethics",
+  "id": "e.royal-command-to-bow-to-haman--fe8ae2df",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Esther": [
+      3
+    ]
+  }
+}

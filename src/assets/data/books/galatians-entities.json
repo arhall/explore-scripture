@@ -1,0 +1,725 @@
+[
+  {
+    "id": "d.holy-spirit--ad652b9c",
+    "name": "Holy Spirit",
+    "type": "divine",
+    "url": "/entities/d.holy-spirit--ad652b9c/",
+    "blurb": "Divine agent of conception, anointing, speech, and mission—integral to the triadic baptismal name.",
+    "searchText": "holy spirit divine theology divine agent of conception, anointing, speech, and mission—integral to the triadic baptismal name. ",
+    "references": 53,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "2 Corinthians",
+      "Galatians",
+      "1 Corinthians",
+      "Philippians",
+      "Ephesians",
+      "Romans",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "p.paul-saul--d4c08ff1",
+    "name": "Paul (Saul)",
+    "type": "person",
+    "url": "/entities/p.paul-saul--d4c08ff1/",
+    "blurb": "",
+    "searchText": "paul (saul) person apostle  ",
+    "references": 24,
+    "books": [
+      "Acts",
+      "Galatians",
+      "Philippians",
+      "Ephesians",
+      "Romans",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "2 Peter"
+    ],
+    "category": "apostle"
+  },
+  {
+    "id": "f.argument-map-index--c44b9b3a",
+    "name": "Argument map (index)",
+    "type": "figure",
+    "url": "/entities/f.argument-map-index--c44b9b3a/",
+    "blurb": "",
+    "searchText": "argument map (index) figure index  ",
+    "references": 17,
+    "books": [
+      "2 Corinthians",
+      "Galatians",
+      "1 Corinthians",
+      "Ephesians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John"
+    ],
+    "category": "index"
+  },
+  {
+    "id": "p.simon-peter-cephas--d58cce37",
+    "name": "Simon Peter (Cephas)",
+    "type": "person",
+    "url": "/entities/p.simon-peter-cephas--d58cce37/",
+    "blurb": "First among equals—confessor and denier, restored to lead. Keys of the kingdom signify teaching/judicial authority under Christ.",
+    "searchText": "simon peter (cephas) person apostle first among equals—confessor and denier, restored to lead. keys of the kingdom signify teaching/judicial authority under christ. ",
+    "references": 15,
+    "books": [
+      "Matthew",
+      "Mark",
+      "John",
+      "Acts",
+      "Galatians",
+      "1 Peter",
+      "2 Peter"
+    ],
+    "category": "apostle"
+  },
+  {
+    "id": "e.jerusalem--d3a5bc90",
+    "name": "Jerusalem",
+    "type": "entity",
+    "url": "/entities/e.jerusalem--d3a5bc90/",
+    "blurb": "The communal center of worship restored as Assyria’s threat is removed.",
+    "searchText": "jerusalem entity city the communal center of worship restored as assyria’s threat is removed. e.jerusalem--23c888bc e.jerusalem--6c42150d",
+    "references": 7,
+    "books": [
+      "Nahum",
+      "Galatians",
+      "2 Corinthians",
+      "1 Corinthians",
+      "Romans"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "p.abraham--197f2a67",
+    "name": "Abraham",
+    "type": "person",
+    "url": "/entities/p.abraham--197f2a67/",
+    "blurb": "",
+    "searchText": "abraham person patriarch  ",
+    "references": 6,
+    "books": [
+      "Galatians",
+      "Hebrews",
+      "James",
+      "1 Peter"
+    ],
+    "category": "patriarch"
+  },
+  {
+    "id": "p.james-the-lord-s-brother--02bc9aea",
+    "name": "James (the Lord’s brother)",
+    "type": "person",
+    "url": "/entities/p.james-the-lord-s-brother--02bc9aea/",
+    "blurb": "",
+    "searchText": "james (the lord’s brother) person church-leader  ",
+    "references": 6,
+    "books": [
+      "Acts",
+      "Galatians",
+      "James"
+    ],
+    "category": "church-leader"
+  },
+  {
+    "id": "p.john-son-of-zebedee--b337fe0e",
+    "name": "John son of Zebedee",
+    "type": "person",
+    "url": "/entities/p.john-son-of-zebedee--b337fe0e/",
+    "blurb": "Beloved disciple in Johannine tradition; witness of glory on the mountain.",
+    "searchText": "john son of zebedee person apostle beloved disciple in johannine tradition; witness of glory on the mountain. ",
+    "references": 6,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Galatians"
+    ],
+    "category": "apostle"
+  },
+  {
+    "id": "p.barnabas--d4ced718",
+    "name": "Barnabas",
+    "type": "person",
+    "url": "/entities/p.barnabas--d4ced718/",
+    "blurb": "",
+    "searchText": "barnabas person coworker  ",
+    "references": 5,
+    "books": [
+      "Acts",
+      "Galatians"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "e.antioch-syria--329754ba",
+    "name": "Antioch (Syria)",
+    "type": "entity",
+    "url": "/entities/e.antioch-syria--329754ba/",
+    "blurb": "",
+    "searchText": "antioch (syria) entity city  ",
+    "references": 5,
+    "books": [
+      "Acts",
+      "Galatians"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "g.agitators--074ad61a",
+    "name": "Agitators",
+    "type": "group",
+    "url": "/entities/g.agitators--074ad61a/",
+    "blurb": "",
+    "searchText": "agitators group opponents  ",
+    "references": 3,
+    "books": [
+      "Galatians"
+    ],
+    "category": "opponents"
+  },
+  {
+    "id": "p.isaac.gene-17-25--66e8d49e",
+    "name": "Isaac",
+    "type": "person",
+    "url": "/entities/p.isaac.gene-17-25--66e8d49e/",
+    "blurb": "The son of promise, Isaac embodies God’s fidelity to His word. Spared on Moriah (Gen 22), he receives Abraham’s covenant and becomes father to Esau and Jacob. Isaac’s narrative is quieter yet pivotal,",
+    "searchText": "isaac person narrative the son of promise, isaac embodies god’s fidelity to his word. spared on moriah (gen 22), he receives abraham’s covenant and becomes father to esau and jacob. isaac’s narrative is quieter yet pivotal, showing god’s promise advancing through ordinary life and tested faith. p.isaac--3af10add p.isaac.gene-26--da8ff3bc",
+    "references": 3,
+    "books": [
+      "Genesis",
+      "Hebrews",
+      "Galatians"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.sarah--424e36f5",
+    "name": "Sarah",
+    "type": "person",
+    "url": "/entities/p.sarah--424e36f5/",
+    "blurb": "",
+    "searchText": "sarah person allegory  ",
+    "references": 3,
+    "books": [
+      "Galatians",
+      "Hebrews",
+      "1 Peter"
+    ],
+    "category": "allegory"
+  },
+  {
+    "id": "p.titus--b5cd5081",
+    "name": "Titus",
+    "type": "person",
+    "url": "/entities/p.titus--b5cd5081/",
+    "blurb": "",
+    "searchText": "titus person coworker  ",
+    "references": 3,
+    "books": [
+      "Galatians",
+      "2 Timothy",
+      "Titus"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "g.circumcision-party--bf245fcf",
+    "name": "Circumcision party",
+    "type": "group",
+    "url": "/entities/g.circumcision-party--bf245fcf/",
+    "blurb": "",
+    "searchText": "circumcision party group opponents  ",
+    "references": 2,
+    "books": [
+      "Galatians",
+      "Titus"
+    ],
+    "category": "opponents"
+  },
+  {
+    "id": "p.hagar.gene-16-21--1d27bdc5",
+    "name": "Hagar",
+    "type": "person",
+    "url": "/entities/p.hagar.gene-16-21--1d27bdc5/",
+    "blurb": "Hagar, Sarah’s Egyptian servant, becomes mother of Ishmael. The Angel of the LORD meets her in the wilderness; she names God ‘El-Roi’—‘the God who sees me.’ Her story shows God’s care for the oppresse",
+    "searchText": "hagar person narrative hagar, sarah’s egyptian servant, becomes mother of ishmael. the angel of the lord meets her in the wilderness; she names god ‘el-roi’—‘the god who sees me.’ her story shows god’s care for the oppressed and his purposes extending beyond the covenant line. p.hagar--e298da9b",
+    "references": 2,
+    "books": [
+      "Galatians"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "p.ishmael.gene-16-17-21-25-12-18--dcd41d5d",
+    "name": "Ishmael",
+    "type": "person",
+    "url": "/entities/p.ishmael.gene-16-17-21-25-12-18--dcd41d5d/",
+    "blurb": "Abraham’s son by Hagar, named because God ‘heard’ Hagar’s affliction. God promises to make him a great nation; he fathers twelve princes. Though not the covenant heir, Ishmael is not outside God’s pro",
+    "searchText": "ishmael person narrative abraham’s son by hagar, named because god ‘heard’ hagar’s affliction. god promises to make him a great nation; he fathers twelve princes. though not the covenant heir, ishmael is not outside god’s providential care. p.ishmael--dc59e15e",
+    "references": 2,
+    "books": [
+      "Galatians"
+    ],
+    "category": "narrative"
+  },
+  {
+    "id": "e.arabia--2f413cf0",
+    "name": "Arabia",
+    "type": "entity",
+    "url": "/entities/e.arabia--2f413cf0/",
+    "blurb": "",
+    "searchText": "arabia entity region  ",
+    "references": 2,
+    "books": [
+      "Galatians"
+    ],
+    "category": "region"
+  },
+  {
+    "id": "f.adoption-and-abba-father--e43423f5",
+    "name": "Adoption and Abba, Father",
+    "type": "figure",
+    "url": "/entities/f.adoption-and-abba-father--e43423f5/",
+    "blurb": "",
+    "searchText": "adoption and abba, father figure adoption  ",
+    "references": 2,
+    "books": [
+      "Galatians",
+      "Romans"
+    ],
+    "category": "adoption"
+  },
+  {
+    "id": "g.false-brothers--270e461b",
+    "name": "False brothers",
+    "type": "group",
+    "url": "/entities/g.false-brothers--270e461b/",
+    "blurb": "",
+    "searchText": "false brothers group opponents  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "opponents"
+  },
+  {
+    "id": "g.false-brothers-slipped-in--6442b191",
+    "name": "False brothers slipped in",
+    "type": "group",
+    "url": "/entities/g.false-brothers-slipped-in--6442b191/",
+    "blurb": "",
+    "searchText": "false brothers slipped in group opponents  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "opponents"
+  },
+  {
+    "id": "g.pillars-james-cephas-john--737f6166",
+    "name": "Pillars (James, Cephas, John)",
+    "type": "group",
+    "url": "/entities/g.pillars-james-cephas-john--737f6166/",
+    "blurb": "",
+    "searchText": "pillars (james, cephas, john) group leaders  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "leaders"
+  },
+  {
+    "id": "g.right-hand-of-fellowship-pillars--018f5431",
+    "name": "Right hand of fellowship (Pillars)",
+    "type": "group",
+    "url": "/entities/g.right-hand-of-fellowship-pillars--018f5431/",
+    "blurb": "",
+    "searchText": "right hand of fellowship (pillars) group agreement  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "agreement"
+  },
+  {
+    "id": "p.even-barnabas-led-astray--0b17b517",
+    "name": "Even Barnabas led astray",
+    "type": "person",
+    "url": "/entities/p.even-barnabas-led-astray--0b17b517/",
+    "blurb": "",
+    "searchText": "even barnabas led astray person conflict  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "conflict"
+  },
+  {
+    "id": "e.damascus--d97e6261",
+    "name": "Damascus",
+    "type": "entity",
+    "url": "/entities/e.damascus--d97e6261/",
+    "blurb": "",
+    "searchText": "damascus entity city  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "e.jerusalem-above--bd9f8f42",
+    "name": "Jerusalem above",
+    "type": "entity",
+    "url": "/entities/e.jerusalem-above--bd9f8f42/",
+    "blurb": "",
+    "searchText": "jerusalem above entity allegory  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "allegory"
+  },
+  {
+    "id": "e.jerusalem-present--9cee6ab5",
+    "name": "Jerusalem (present)",
+    "type": "entity",
+    "url": "/entities/e.jerusalem-present--9cee6ab5/",
+    "blurb": "",
+    "searchText": "jerusalem (present) entity allegory  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "allegory"
+  },
+  {
+    "id": "e.mount-sinai--206c3bd1",
+    "name": "Mount Sinai",
+    "type": "entity",
+    "url": "/entities/e.mount-sinai--206c3bd1/",
+    "blurb": "",
+    "searchText": "mount sinai entity allegory  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "allegory"
+  },
+  {
+    "id": "e.syria-and-cilicia--7450edf3",
+    "name": "Syria and Cilicia",
+    "type": "entity",
+    "url": "/entities/e.syria-and-cilicia--7450edf3/",
+    "blurb": "",
+    "searchText": "syria and cilicia entity region  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "region"
+  },
+  {
+    "id": "f.a-little-leaven-leavens-the-whole-lump--2c621407",
+    "name": "A little leaven leavens the whole lump",
+    "type": "figure",
+    "url": "/entities/f.a-little-leaven-leavens-the-whole-lump--2c621407/",
+    "blurb": "",
+    "searchText": "a little leaven leavens the whole lump figure metaphor  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "metaphor"
+  },
+  {
+    "id": "f.abraham-believed-god-gen-15-6--dd639f32",
+    "name": "Abraham believed God (Gen 15:6)",
+    "type": "figure",
+    "url": "/entities/f.abraham-believed-god-gen-15-6--dd639f32/",
+    "blurb": "",
+    "searchText": "abraham believed god (gen 15:6) figure abraham  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "Abraham"
+  },
+  {
+    "id": "f.advancement-in-judaism-and-zeal--1ed87c5f",
+    "name": "Advancement in Judaism and zeal",
+    "type": "figure",
+    "url": "/entities/f.advancement-in-judaism-and-zeal--1ed87c5f/",
+    "blurb": "",
+    "searchText": "advancement in judaism and zeal figure autobiography  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "autobiography"
+  },
+  {
+    "id": "f.anathema-on-contrary-gospels--03e998e7",
+    "name": "Anathema on contrary gospels",
+    "type": "figure",
+    "url": "/entities/f.anathema-on-contrary-gospels--03e998e7/",
+    "blurb": "",
+    "searchText": "anathema on contrary gospels figure curse  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "curse"
+  },
+  {
+    "id": "f.another-gospel-not-another--06bdebcc",
+    "name": "Another gospel (not another)",
+    "type": "figure",
+    "url": "/entities/f.another-gospel-not-another--06bdebcc/",
+    "blurb": "",
+    "searchText": "another gospel (not another) figure deviation  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "deviation"
+  },
+  {
+    "id": "f.antioch-incident-cephas-withdrew--2aa820fc",
+    "name": "Antioch incident: Cephas withdrew",
+    "type": "figure",
+    "url": "/entities/f.antioch-incident-cephas-withdrew--2aa820fc/",
+    "blurb": "",
+    "searchText": "antioch incident: cephas withdrew figure conflict  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "conflict"
+  },
+  {
+    "id": "f.apostleship-not-from-men--ef77a0bf",
+    "name": "Apostleship not from men",
+    "type": "figure",
+    "url": "/entities/f.apostleship-not-from-men--ef77a0bf/",
+    "blurb": "",
+    "searchText": "apostleship not from men figure authority  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "authority"
+  },
+  {
+    "id": "f.arabia-and-damascus-after-three-years--57503823",
+    "name": "Arabia and Damascus (after three years)",
+    "type": "figure",
+    "url": "/entities/f.arabia-and-damascus-after-three-years--57503823/",
+    "blurb": "",
+    "searchText": "arabia and damascus (after three years) figure chronology  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "chronology"
+  },
+  {
+    "id": "f.baptized-into-christ-clothed-with-christ--06b8c70b",
+    "name": "Baptized into Christ; clothed with Christ",
+    "type": "figure",
+    "url": "/entities/f.baptized-into-christ-clothed-with-christ--06b8c70b/",
+    "blurb": "",
+    "searchText": "baptized into christ; clothed with christ figure baptism  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "baptism"
+  },
+  {
+    "id": "f.bear-one-another-s-burdens--31e0fcbf",
+    "name": "Bear one another’s burdens",
+    "type": "figure",
+    "url": "/entities/f.bear-one-another-s-burdens--31e0fcbf/",
+    "blurb": "",
+    "searchText": "bear one another’s burdens figure pastoral  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "pastoral"
+  },
+  {
+    "id": "f.become-as-i-am-you-did-me-no-wrong--2fa0d877",
+    "name": "Become as I am; you did me no wrong",
+    "type": "figure",
+    "url": "/entities/f.become-as-i-am-you-did-me-no-wrong--2fa0d877/",
+    "blurb": "",
+    "searchText": "become as i am; you did me no wrong figure appeal  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "appeal"
+  },
+  {
+    "id": "f.bite-and-devour-one-another--40469885",
+    "name": "Bite and devour one another",
+    "type": "figure",
+    "url": "/entities/f.bite-and-devour-one-another--40469885/",
+    "blurb": "",
+    "searchText": "bite and devour one another figure warning  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "warning"
+  },
+  {
+    "id": "f.boast-only-in-the-cross--aac5fb08",
+    "name": "Boast only in the cross",
+    "type": "figure",
+    "url": "/entities/f.boast-only-in-the-cross--aac5fb08/",
+    "blurb": "",
+    "searchText": "boast only in the cross figure boast  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "boast"
+  },
+  {
+    "id": "f.cast-out-the-slave-woman--48f12e6e",
+    "name": "Cast out the slave woman",
+    "type": "figure",
+    "url": "/entities/f.cast-out-the-slave-woman--48f12e6e/",
+    "blurb": "",
+    "searchText": "cast out the slave woman figure command  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "command"
+  },
+  {
+    "id": "f.children-of-promise-like-isaac--cf3dc331",
+    "name": "Children of promise like Isaac",
+    "type": "figure",
+    "url": "/entities/f.children-of-promise-like-isaac--cf3dc331/",
+    "blurb": "",
+    "searchText": "children of promise like isaac figure promise  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "promise"
+  },
+  {
+    "id": "f.christ-became-a-curse-tree-deut-21-23--3eab8c3e",
+    "name": "Christ became a curse—tree (Deut 21:23)",
+    "type": "figure",
+    "url": "/entities/f.christ-became-a-curse-tree-deut-21-23--3eab8c3e/",
+    "blurb": "",
+    "searchText": "christ became a curse—tree (deut 21:23) figure atonement  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "atonement"
+  },
+  {
+    "id": "f.circumcision-avails-nothing-faith-working-through-love--694e3db5",
+    "name": "Circumcision avails nothing; faith working through love",
+    "type": "figure",
+    "url": "/entities/f.circumcision-avails-nothing-faith-working-through-love--694e3db5/",
+    "blurb": "",
+    "searchText": "circumcision avails nothing; faith working through love figure principle  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "principle"
+  },
+  {
+    "id": "f.crucified-with-christ-christ-lives-in-me--73578feb",
+    "name": "Crucified with Christ; Christ lives in me",
+    "type": "figure",
+    "url": "/entities/f.crucified-with-christ-christ-lives-in-me--73578feb/",
+    "blurb": "",
+    "searchText": "crucified with christ; christ lives in me figure union  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "union"
+  },
+  {
+    "id": "f.cursed-is-everyone-who-does-not-abide-deut-27-26--e4d2968b",
+    "name": "Cursed is everyone who does not abide (Deut 27:26)",
+    "type": "figure",
+    "url": "/entities/f.cursed-is-everyone-who-does-not-abide-deut-27-26--e4d2968b/",
+    "blurb": "",
+    "searchText": "cursed is everyone who does not abide (deut 27:26) figure curse  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "curse"
+  },
+  {
+    "id": "f.deliverance-from-the-present-evil-age--bcb4daa1",
+    "name": "Deliverance from the present evil age",
+    "type": "figure",
+    "url": "/entities/f.deliverance-from-the-present-evil-age--bcb4daa1/",
+    "blurb": "",
+    "searchText": "deliverance from the present evil age figure apocalyptic  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "apocalyptic"
+  },
+  {
+    "id": "f.desires-of-the-flesh-vs-spirit--e0a34ed9",
+    "name": "Desires of the flesh vs Spirit",
+    "type": "figure",
+    "url": "/entities/f.desires-of-the-flesh-vs-spirit--e0a34ed9/",
+    "blurb": "",
+    "searchText": "desires of the flesh vs spirit figure contrast  ",
+    "references": 1,
+    "books": [
+      "Galatians"
+    ],
+    "category": "contrast"
+  }
+]

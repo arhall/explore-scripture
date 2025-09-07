@@ -1,0 +1,29 @@
+{
+  "name": "Golgotha (Place of a Skull)",
+  "type": "entity",
+  "category": "site",
+  "references": [
+    "John 19:17"
+  ],
+  "aramaic_terms": [
+    {
+      "term": "Γολγοθᾶ",
+      "gloss": "skull"
+    }
+  ],
+  "aka": [],
+  "id": "e.golgotha-place-of-a-skull--06eb880e",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      19
+    ]
+  }
+}

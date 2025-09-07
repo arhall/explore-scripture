@@ -1,0 +1,18 @@
+{
+  "name": "YHWH’s verdict on the friends",
+  "type": "entity",
+  "references": [
+    "Job 42:7"
+  ],
+  "blurb": "God rebukes Eliphaz and his companions: ‘you have not spoken of me what is right, as my servant Job has.’ Orthodoxy without empathy misrepresents God.",
+  "category": "theology",
+  "id": "e.yhwhs-verdict-on-the-friends--41d3b10c",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Job": [
+      42
+    ]
+  }
+}

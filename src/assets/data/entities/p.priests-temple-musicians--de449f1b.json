@@ -1,0 +1,19 @@
+{
+  "id": "p.priests-temple-musicians--de449f1b",
+  "name": "Priests/Temple musicians",
+  "type": "person",
+  "references": [
+    "Hab 3:1",
+    "Hab 3:19"
+  ],
+  "category": "cultic-staff",
+  "blurb": "Liturgical personnel implied by the musical notations and dedication to the choirmaster; they situate Habakkuk’s prayer within temple worship.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      3
+    ]
+  }
+}

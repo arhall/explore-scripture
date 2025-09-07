@@ -1,0 +1,27 @@
+{
+  "name": "Everyone who calls (Joel 2:32)",
+  "type": "figure",
+  "category": "salvation",
+  "references": [
+    "Rom 10:13"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Joel 2:32",
+      "type": "quotation"
+    }
+  ],
+  "aka": [],
+  "id": "f.everyone-who-calls-joel-2-32--f5a4c3f1",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      10
+    ]
+  }
+}

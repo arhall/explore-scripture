@@ -1,0 +1,18 @@
+{
+  "name": "Prophets of lies, diviners, dreamers",
+  "type": "group",
+  "references": [
+    "Jeremiah 5:31; 14:14; 23; 27–29"
+  ],
+  "blurb": "A composite category of religious entrepreneurs who soothe consciences and subvert repentance; Jeremiah insists on submission to God’s discipline.",
+  "category": "religion",
+  "id": "g.prophets-of-lies-diviners-dreamers--cabc1f75",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      5
+    ]
+  }
+}

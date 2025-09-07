@@ -1,0 +1,27 @@
+{
+  "name": "Pharaoh raised up",
+  "type": "figure",
+  "category": "hardening",
+  "references": [
+    "Rom 9:17"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Exod 9:16",
+      "type": "quotation"
+    }
+  ],
+  "aka": [],
+  "id": "f.pharaoh-raised-up--d21bbcd7",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      9
+    ]
+  }
+}

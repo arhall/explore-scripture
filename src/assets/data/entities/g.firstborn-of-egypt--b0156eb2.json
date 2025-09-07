@@ -1,0 +1,20 @@
+{
+  "name": "Firstborn of Egypt",
+  "type": "group",
+  "references": [
+    "Exodus 11–12"
+  ],
+  "blurb": "Collective victims of the final plague—sobering sign that idolatrous powers cannot stand against the Holy One.",
+  "category": "narrative",
+  "cross_references": [],
+  "id": "g.firstborn-of-egypt--b0156eb2",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      11,
+      12
+    ]
+  }
+}

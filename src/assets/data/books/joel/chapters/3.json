@@ -1,0 +1,77 @@
+{
+  "book": "Joel",
+  "chapter": 3,
+  "entity_count": 18,
+  "entities": [
+    {
+      "id": "g.egypt--ab1ad00f",
+      "name": "Egypt",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 6
+    },
+    {
+      "id": "e.yhwh-roars-from-zion--80c8b302",
+      "name": "YHWH roars from Zion",
+      "type": "entity",
+      "role": "theophany",
+      "refs_count": 1
+    },
+    {
+      "id": "e.valley-of-jehoshaphat.yhwh-judges--11a45537",
+      "name": "Valley of Jehoshaphat (YHWH judges)",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1
+    },
+    {
+      "id": "e.valley-of-decision--29baa29f",
+      "name": "Valley of Decision",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1
+    },
+    {
+      "id": "g.tyre-and-sidon--5651ad1b",
+      "name": "Tyre and Sidon",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1
+    },
+    {
+      "id": "g.philistia.all-the-districts--d5349f12",
+      "name": "Philistia (all the districts)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1
+    },
+    {
+      "id": "g.javan.greeks-ionians--6a9ab7a5",
+      "name": "Javan (Greeks/Ionians)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 1
+    },
+    {
+      "id": "g.edom.desolate-wilderness--6976d032",
+      "name": "Edom (desolate wilderness)",
+      "type": "group",
+      "role": "nation",
+      "refs_count": 3
+    },
+    {
+      "id": "e.sanctify-war-beat-your-plowshares-into-swords--b1dc2307",
+      "name": "Sanctify war: ‘Beat your plowshares into swords’",
+      "type": "entity",
+      "role": "war",
+      "refs_count": 1
+    },
+    {
+      "id": "e.let-the-weak-say-i-am-a-warrior--14091bf5",
+      "name": "Let the weak say, ‘I am a warrior’",
+      "type": "entity",
+      "role": "war",
+      "refs_count": 1
+    }
+  ]
+}

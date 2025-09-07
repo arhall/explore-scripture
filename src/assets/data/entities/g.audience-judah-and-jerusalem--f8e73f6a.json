@@ -1,0 +1,18 @@
+{
+  "name": "Audience: Judah and Jerusalem",
+  "type": "group",
+  "references": [
+    "Joel 2:1,15,32; 3:1,16–20"
+  ],
+  "blurb": "Summons focus on Zion and the temple community; the nations are addressed as adversaries called to judgment.",
+  "category": "audience",
+  "id": "g.audience-judah-and-jerusalem--f8e73f6a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      2
+    ]
+  }
+}

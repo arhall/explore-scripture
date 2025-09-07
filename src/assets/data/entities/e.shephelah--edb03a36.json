@@ -1,0 +1,18 @@
+{
+  "name": "Shephelah (foothills)",
+  "type": "entity",
+  "references": [
+    "Obadiah 1:19"
+  ],
+  "blurb": "Transition zone between hill country and coast—launchpad for reclaiming Philistia.",
+  "category": "region",
+  "id": "e.shephelah--edb03a36",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Obadiah": [
+      1
+    ]
+  }
+}

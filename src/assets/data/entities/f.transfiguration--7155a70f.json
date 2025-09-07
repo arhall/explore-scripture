@@ -1,0 +1,42 @@
+{
+  "name": "Transfiguration",
+  "type": "figure",
+  "category": "theophany",
+  "references": [
+    "Matt 17:1–8",
+    "Mark 9:2–8",
+    "Luke 9:28–36"
+  ],
+  "cross_references": [
+    "Exod 34",
+    "Dan 7"
+  ],
+  "blurb": "Glory unveiled; Moses and Elijah witness the Son—listen to him.",
+  "aka": [],
+  "id": "f.transfiguration--7155a70f",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Mark",
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "synoptic_parallels": [
+    "Mark 9:2–8",
+    "Matt 17:1–8"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      17
+    ],
+    "Mark": [
+      9
+    ],
+    "Luke": [
+      9
+    ]
+  }
+}

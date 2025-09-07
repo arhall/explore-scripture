@@ -1,0 +1,23 @@
+{
+  "name": "Garments laid at Saul",
+  "type": "figure",
+  "category": "detail",
+  "references": [
+    "Acts 7:58"
+  ],
+  "aka": [],
+  "id": "f.garments-laid-at-saul--730670da",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      7
+    ]
+  }
+}

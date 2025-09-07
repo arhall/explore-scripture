@@ -1,0 +1,63 @@
+{
+  "book": "Zechariah",
+  "chapter": 13,
+  "entity_count": 8,
+  "entities": [
+    {
+      "id": "p.false-prophets--3b08b934",
+      "name": "False prophets",
+      "type": "person",
+      "role": "religious-impostors",
+      "refs_count": 1
+    },
+    {
+      "id": "f.cleansing-fountain-opened--4e748386",
+      "name": "Cleansing fountain opened",
+      "type": "figure",
+      "role": "purification",
+      "refs_count": 1
+    },
+    {
+      "id": "f.wounds-in-the-house-of-friends--c1d2aa63",
+      "name": "Wounds in the house of friends",
+      "type": "figure",
+      "role": "exposure",
+      "refs_count": 1
+    },
+    {
+      "id": "f.false-prophets-ashamed--2045b893",
+      "name": "False prophets ashamed",
+      "type": "figure",
+      "role": "purge",
+      "refs_count": 1
+    },
+    {
+      "id": "f.idolatry-cut-off-from-the-land--28e36cb2",
+      "name": "Idolatry cut off from the land",
+      "type": "figure",
+      "role": "purification",
+      "refs_count": 1
+    },
+    {
+      "id": "f.strike-the-shepherd--b57c4ee2",
+      "name": "Strike the shepherd",
+      "type": "figure",
+      "role": "scattering-motif",
+      "refs_count": 1
+    },
+    {
+      "id": "e.fountain-for-cleansing--beb98571",
+      "name": "Fountain for cleansing",
+      "type": "entity",
+      "role": "purification",
+      "refs_count": 1
+    },
+    {
+      "id": "e.shepherd-motif-cluster-john-10-matt-2631--d919d097",
+      "name": "Shepherd motif cluster (John 10; Matt 26:31)",
+      "type": "entity",
+      "role": "typology",
+      "refs_count": 2
+    }
+  ]
+}

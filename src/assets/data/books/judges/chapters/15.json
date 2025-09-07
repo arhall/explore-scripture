@@ -1,0 +1,35 @@
+{
+  "book": "Judges",
+  "chapter": 15,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "p.samson--343c8a4f",
+      "name": "Samson",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2
+    },
+    {
+      "id": "g.philistines.lords-of-the-philistines--1007e8c9",
+      "name": "Philistines (lords of the Philistines)",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.foxes-with-firebrands--9725b82d",
+      "name": "Foxes with firebrands",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1
+    },
+    {
+      "id": "e.jawbone-of-a-donkey--17aaa71d",
+      "name": "Jawbone of a donkey",
+      "type": "entity",
+      "role": "sign",
+      "refs_count": 1
+    }
+  ]
+}

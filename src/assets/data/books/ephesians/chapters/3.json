@@ -1,0 +1,77 @@
+{
+  "book": "Ephesians",
+  "chapter": 3,
+  "entity_count": 27,
+  "entities": [
+    {
+      "id": "f.gentiles-fellow-heirs-synkleronoma--63232ab6",
+      "name": "Gentiles fellow-heirs (synkleronoma)",
+      "type": "figure",
+      "role": "inheritance",
+      "refs_count": 1
+    },
+    {
+      "id": "f.bowing-the-knees-before-the-father--f8e2a299",
+      "name": "Bowing the knees before the Father",
+      "type": "figure",
+      "role": "prayer",
+      "refs_count": 1
+    },
+    {
+      "id": "f.strengthened-with-power-in-the-inner-person--e19d98ac",
+      "name": "Strengthened with power in the inner person",
+      "type": "figure",
+      "role": "strength",
+      "refs_count": 1
+    },
+    {
+      "id": "f.fellow-members-of-the-body-syssoma--ddbf322a",
+      "name": "Fellow-members of the body (syssoma)",
+      "type": "figure",
+      "role": "membership",
+      "refs_count": 1
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.do-not-lose-heart-at-my-tribulations--ad272fed",
+      "name": "Do not lose heart at my tribulations",
+      "type": "figure",
+      "role": "encouragement",
+      "refs_count": 1
+    },
+    {
+      "id": "f.textual-note-3-9-reading--173ed905",
+      "name": "Textual note: 3:9 reading",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1
+    },
+    {
+      "id": "f.every-family-in-heaven-and-earth-named--5b263633",
+      "name": "Every family in heaven and earth named",
+      "type": "figure",
+      "role": "family",
+      "refs_count": 1
+    },
+    {
+      "id": "f.rooted-and-grounded-in-love--64546c8e",
+      "name": "Rooted and grounded in love",
+      "type": "figure",
+      "role": "love",
+      "refs_count": 1
+    },
+    {
+      "id": "g.prophets--c6dcaed9",
+      "name": "prophets",
+      "type": "group",
+      "role": "office",
+      "refs_count": 6
+    }
+  ]
+}

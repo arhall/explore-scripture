@@ -1,0 +1,77 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 6,
+  "entity_count": 10,
+  "entities": [
+    {
+      "id": "e.temple--1d486079",
+      "name": "Temple",
+      "type": "entity",
+      "role": "cultic",
+      "refs_count": 8
+    },
+    {
+      "id": "t.kingdom-of-god--e6ae8d7f",
+      "name": "Kingdom of God",
+      "type": "title",
+      "role": "kingdom",
+      "refs_count": 16
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.you-are-not-your-own-temple-of-the-holy-spirit--c7ca6b8b",
+      "name": "You are not your own (Temple of the Holy Spirit)",
+      "type": "figure",
+      "role": "temple",
+      "refs_count": 1
+    },
+    {
+      "id": "f.lawsuits-among-believers--d93a0d5b",
+      "name": "Lawsuits among believers",
+      "type": "figure",
+      "role": "lawsuits",
+      "refs_count": 1
+    },
+    {
+      "id": "f.all-things-lawful-not-enslaved--cddfcbc6",
+      "name": "All things lawful, not enslaved",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1
+    },
+    {
+      "id": "f.textual-note-1-cor-6-20-expansion--b28febb1",
+      "name": "Textual note: 1 Cor 6:20 expansion",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "f.virtue-vice-lists-index--5cc409b3",
+      "name": "Virtue/Vice lists (index)",
+      "type": "figure",
+      "role": "virtue-vice-index",
+      "refs_count": 6
+    },
+    {
+      "id": "f.flee-sexual-immorality-porneia--07add2db",
+      "name": "Flee sexual immorality (porneia)",
+      "type": "figure",
+      "role": "ethic",
+      "refs_count": 1
+    }
+  ]
+}

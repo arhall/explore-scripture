@@ -1,0 +1,21 @@
+{
+  "name": "Tychicus the beloved brother",
+  "type": "person",
+  "category": "messenger",
+  "references": [
+    "Eph 6:21"
+  ],
+  "aka": [],
+  "id": "p.tychicus-the-beloved-brother--13f46009",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      6
+    ]
+  }
+}

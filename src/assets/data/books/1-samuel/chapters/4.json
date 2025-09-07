@@ -1,0 +1,35 @@
+{
+  "book": "1 Samuel",
+  "chapter": 4,
+  "entity_count": 4,
+  "entities": [
+    {
+      "id": "p.eli-the-priest--a0684a21",
+      "name": "Eli the priest",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.phinehas-wife--dfa52350",
+      "name": "Phinehas’ wife",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.ichabod--c8bbb38e",
+      "name": "Ichabod",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.ark-of-the-covenant.captured-and-returned--0c8b6ef5",
+      "name": "Ark of the Covenant (captured and returned)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1
+    }
+  ]
+}

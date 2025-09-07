@@ -1,0 +1,34 @@
+{
+  "name": "Nazareth synagogue (Isaiah 61)",
+  "type": "figure",
+  "aka": [],
+  "category": "programmatic",
+  "references": [
+    "Luke 4:16–30"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Isa 61:1–2",
+      "type": "reading"
+    },
+    {
+      "src": "Isa 58:6",
+      "type": "allusion"
+    }
+  ],
+  "blurb": "Mission manifesto: good news to poor, liberty for captives, sight for blind—fulfilled today.",
+  "id": "f.nazareth-synagogue-isaiah-61--317af53e",
+  "source_book": "Luke",
+  "source_books": [
+    "Luke",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Luke": [
+      4
+    ]
+  }
+}

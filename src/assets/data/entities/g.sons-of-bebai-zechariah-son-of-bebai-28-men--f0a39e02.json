@@ -1,0 +1,20 @@
+{
+  "name": "Sons of Bebai: Zechariah son of Bebai, 28 men",
+  "type": "group",
+  "references": [
+    "Ezra 8:11"
+  ],
+  "blurb": "Heads of families in Ezra’s later return; numbers reflect adult males mustered for the journey and covenant renewal.",
+  "category": "record",
+  "count": 28,
+  "count_note": "Count per Ezra 8:11",
+  "id": "g.sons-of-bebai-zechariah-son-of-bebai-28-men--f0a39e02",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      8
+    ]
+  }
+}

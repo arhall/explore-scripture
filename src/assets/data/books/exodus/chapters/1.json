@@ -1,0 +1,28 @@
+{
+  "book": "Exodus",
+  "chapter": 1,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "p.shiphrah--3230d8a5",
+      "name": "Shiphrah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "p.puah--590ef6e2",
+      "name": "Puah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "g.taskmasters-of-egypt--defcd472",
+      "name": "Taskmasters of Egypt",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1
+    }
+  ]
+}

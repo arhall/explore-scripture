@@ -1,0 +1,18 @@
+{
+  "name": "Naphtali (tribe; Blessing of Moses)",
+  "type": "group",
+  "references": [
+    "Deuteronomy 33:23"
+  ],
+  "blurb": "Satisfied and full of blessing by sea and south.",
+  "category": "poetry",
+  "id": "g.naphtali--9846e356",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Deuteronomy": [
+      33
+    ]
+  }
+}

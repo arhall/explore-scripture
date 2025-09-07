@@ -1,0 +1,49 @@
+{
+  "book": "Mark",
+  "chapter": 10,
+  "entity_count": 6,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "p.bartimaeus--ff93946b",
+      "name": "Bartimaeus",
+      "type": "person",
+      "role": "healed",
+      "refs_count": 1
+    },
+    {
+      "id": "f.children-blessed--348eebe5",
+      "name": "Children blessed",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1
+    },
+    {
+      "id": "p.rich-young-ruler--396254e1",
+      "name": "Rich young ruler",
+      "type": "person",
+      "role": "seeker",
+      "refs_count": 3
+    },
+    {
+      "id": "f.servant-leadership-saying--047012e9",
+      "name": "Servant leadership saying",
+      "type": "figure",
+      "role": "teaching",
+      "refs_count": 1
+    },
+    {
+      "id": "f.third-passion-prediction--dc7bb9e8",
+      "name": "Third passion prediction",
+      "type": "figure",
+      "role": "passion-forecast",
+      "refs_count": 1
+    }
+  ]
+}

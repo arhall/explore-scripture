@@ -4,8 +4,6 @@
  */
 
 const books = require('./src/_data/books.json');
-const characters = require('./src/_data/characters.js');
-const characterProfiles = require('./src/_data/characterProfiles.js');
 const categories = require('./src/_data/categories.js');
 
 module.exports = function() {
@@ -13,7 +11,6 @@ module.exports = function() {
   const searchData = {
     timestamp: new Date().toISOString(),
     books: processBooks(),
-    characters: processCharacters(),
     categories: processCategories()
   };
   
@@ -45,29 +42,6 @@ function processBooks() {
   });
 }
 
-function processCharacters() {
-  const charactersData = characters();
-  const profiles = characterProfiles();
-  
-  // Extract the characters array from the returned data
-  const charactersList = charactersData.characters || [];
-  
-  return charactersList.map(character => {
-    const profile = profiles[character.name] || {};
-    
-    return {
-      name: character.name,
-      slug: character.slug,
-      testament: character.testament,
-      category: character.category || profile.category,
-      description: generateCharacterDescription(character, profile),
-      keyWords: generateCharacterKeywords(character, profile),
-      appearances: character.appearances || [],
-      url: `/characters/${character.slug}/`,
-      hasProfile: !!profile.name
-    };
-  });
-}
 
 function processCategories() {
   return categories.map(category => {
@@ -114,60 +88,6 @@ function generateBookKeywords(book) {
   return Array.from(keywords);
 }
 
-function generateCharacterDescription(character, profile) {
-  if (profile.thematicRole) {
-    return profile.thematicRole;
-  }
-  
-  if (character.appearances && character.appearances.length > 0) {
-    return `Biblical character appearing in ${character.appearances.length} book${character.appearances.length > 1 ? 's' : ''}.`;
-  }
-  
-  return 'Biblical character mentioned in Scripture.';
-}
-
-function generateCharacterKeywords(character, profile) {
-  const keywords = new Set();
-  
-  // Add basic info
-  if (character.name) keywords.add(character.name.toLowerCase());
-  if (character.testament) keywords.add(character.testament.toLowerCase());
-  if (character.category) keywords.add(character.category.toLowerCase());
-  
-  // Add profile information
-  if (profile.category) keywords.add(profile.category.toLowerCase());
-  if (profile.thematicRole) {
-    const roleKeywords = extractKeywords(profile.thematicRole);
-    roleKeywords.forEach(keyword => keywords.add(keyword));
-  }
-  
-  // Add elements of power
-  if (profile.elementsOfPower) {
-    profile.elementsOfPower.forEach(element => {
-      const elementKeywords = extractKeywords(element);
-      elementKeywords.forEach(keyword => keywords.add(keyword));
-    });
-  }
-  
-  // Add gospel connections
-  if (profile.gospelConnections) {
-    const connectionKeywords = extractKeywords(profile.gospelConnections);
-    connectionKeywords.forEach(keyword => keywords.add(keyword));
-  }
-  
-  // Add appearances
-  if (character.appearances) {
-    character.appearances.forEach(appearance => {
-      if (typeof appearance === 'string') {
-        keywords.add(appearance.toLowerCase());
-      } else if (appearance && appearance.book) {
-        keywords.add(appearance.book.toLowerCase());
-      }
-    });
-  }
-  
-  return Array.from(keywords);
-}
 
 function extractKeywords(text) {
   if (!text || typeof text !== 'string') return [];

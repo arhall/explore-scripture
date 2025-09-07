@@ -1,0 +1,26 @@
+{
+  "name": "Buz",
+  "type": "person",
+  "references": [
+    "Genesis 22:21"
+  ],
+  "blurb": "Son of Nahor by Milcah; remembered among Abraham’s extended kin.",
+  "relations": {
+    "parents": [
+      "Nahor (brother of Abram)",
+      "Milcah"
+    ],
+    "children": null
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.buz.gene-22-21--6a914348",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      22
+    ]
+  }
+}

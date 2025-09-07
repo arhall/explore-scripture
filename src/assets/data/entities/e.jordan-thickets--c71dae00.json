@@ -1,0 +1,18 @@
+{
+  "id": "e.jordan-thickets--c71dae00",
+  "name": "Jordan thickets",
+  "type": "entity",
+  "references": [
+    "Zech 11:3"
+  ],
+  "category": "habitat",
+  "blurb": "Lion’s haunt echoes; shepherds wail as glory is ruined.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      11
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Put away: Wrath",
+  "type": "figure",
+  "category": "vice",
+  "references": [
+    "Col 3:8"
+  ],
+  "aka": [],
+  "id": "f.put-away-wrath--62d1badf",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      3
+    ]
+  }
+}

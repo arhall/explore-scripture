@@ -1,0 +1,652 @@
+[
+  {
+    "id": "g.faithful-remnant-gathered-healed--a7f43d10",
+    "name": "Faithful remnant (gathered, healed)",
+    "type": "group",
+    "url": "/entities/g.faithful-remnant-gathered-healed--a7f43d10/",
+    "blurb": "God assembles the lame and banished; remnant becomes both dew of blessing and lion of judgment.",
+    "searchText": "faithful remnant (gathered, healed) group remnant god assembles the lame and banished; remnant becomes both dew of blessing and lion of judgment. ",
+    "references": 4,
+    "books": [
+      "Micah"
+    ],
+    "category": "remnant"
+  },
+  {
+    "id": "g.nations-who-gloat-over-zion--c7a0e3d5",
+    "name": "Nations who gloat over Zion",
+    "type": "group",
+    "url": "/entities/g.nations-who-gloat-over-zion--c7a0e3d5/",
+    "blurb": "Coalition of mockers to be shamed; they will lick dust like serpents and fear the LORD.",
+    "searchText": "nations who gloat over zion group nations coalition of mockers to be shamed; they will lick dust like serpents and fear the lord. ",
+    "references": 3,
+    "books": [
+      "Micah"
+    ],
+    "category": "nations"
+  },
+  {
+    "id": "e.triadic-hear-oracles--cbe7019a",
+    "name": "Triadic ‘Hear’ oracles",
+    "type": "entity",
+    "url": "/entities/e.triadic-hear-oracles--cbe7019a/",
+    "blurb": "Summons structure organizes the book’s flow from summons to sentence to solution.",
+    "searchText": "triadic ‘hear’ oracles entity structure summons structure organizes the book’s flow from summons to sentence to solution. ",
+    "references": 3,
+    "books": [
+      "Micah"
+    ],
+    "category": "structure"
+  },
+  {
+    "id": "d.yhwh-the-witness-judge--a329f8d0",
+    "name": "YHWH the Witness-Judge",
+    "type": "divine",
+    "url": "/entities/d.yhwh-the-witness-judge--a329f8d0/",
+    "blurb": "God summons creation to hear the covenant case; plaintiff and judge in one.",
+    "searchText": "yhwh the witness-judge divine courtroom god summons creation to hear the covenant case; plaintiff and judge in one. ",
+    "references": 2,
+    "books": [
+      "Micah"
+    ],
+    "category": "courtroom"
+  },
+  {
+    "id": "g.assyria-invader--4e70c8d1",
+    "name": "Assyria (invader)",
+    "type": "group",
+    "url": "/entities/g.assyria-invader--4e70c8d1/",
+    "blurb": "Primary geopolitical threat in Micah’s horizon; foil for messianic peace.",
+    "searchText": "assyria (invader) group nation primary geopolitical threat in micah’s horizon; foil for messianic peace. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "nation"
+  },
+  {
+    "id": "g.balak-and-balaam--a7d309e1",
+    "name": "Balak and Balaam",
+    "type": "group",
+    "url": "/entities/g.balak-and-balaam--a7d309e1/",
+    "blurb": "Narrative of attempted cursing turned to blessing; remember to know the LORD’s righteous acts.",
+    "searchText": "balak and balaam group allusion narrative of attempted cursing turned to blessing; remember to know the lord’s righteous acts. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "allusion"
+  },
+  {
+    "id": "g.children-stripped-of-glory-forever--bcf1370a",
+    "name": "Children stripped of glory forever",
+    "type": "group",
+    "url": "/entities/g.children-stripped-of-glory-forever--bcf1370a/",
+    "blurb": "Intergenerational theft—future clipped by present greed.",
+    "searchText": "children stripped of glory forever group victims intergenerational theft—future clipped by present greed. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "victims"
+  },
+  {
+    "id": "g.contemporaries-isaiah-hosea-amos--d19c7a62",
+    "name": "Contemporaries: Isaiah, Hosea, Amos",
+    "type": "group",
+    "url": "/entities/g.contemporaries-isaiah-hosea-amos--d19c7a62/",
+    "blurb": "Micah overlaps with other 8th-century prophets; themes echo and spar with Isaiah 2, Hos 4, Am 5.",
+    "searchText": "contemporaries: isaiah, hosea, amos group intertext micah overlaps with other 8th-century prophets; themes echo and spar with isaiah 2, hos 4, am 5. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "intertext"
+  },
+  {
+    "id": "g.devisers-of-iniquity-at-mornings-light--e013f9ac",
+    "name": "Devisers of iniquity at morning’s light",
+    "type": "group",
+    "url": "/entities/g.devisers-of-iniquity-at-mornings-light--e013f9ac/",
+    "blurb": "Insomnia of greed—plotting on pillows, practicing at sunrise.",
+    "searchText": "devisers of iniquity at morning’s light group oppressors insomnia of greed—plotting on pillows, practicing at sunrise. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "oppressors"
+  },
+  {
+    "id": "g.egypt-and-assyria-restored-pathways--aa9f3d04",
+    "name": "Egypt & Assyria restored pathways",
+    "type": "group",
+    "url": "/entities/g.egypt-and-assyria-restored-pathways--aa9f3d04/",
+    "blurb": "Future highway imagery—diaspora gathered from rival powers.",
+    "searchText": "egypt & assyria restored pathways group nations future highway imagery—diaspora gathered from rival powers. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "nations"
+  },
+  {
+    "id": "g.evicting-women-from-pleasant-houses--bf92a614",
+    "name": "Evicting women from pleasant houses",
+    "type": "group",
+    "url": "/entities/g.evicting-women-from-pleasant-houses--bf92a614/",
+    "blurb": "Mothers displaced; domestic security shattered by elites.",
+    "searchText": "evicting women from pleasant houses group victims mothers displaced; domestic security shattered by elites. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "victims"
+  },
+  {
+    "id": "g.gathering-the-lame-and-the-banished--74e1bd3a",
+    "name": "Gathering the lame and the banished",
+    "type": "group",
+    "url": "/entities/g.gathering-the-lame-and-the-banished--74e1bd3a/",
+    "blurb": "God’s preferential option for the broken—kingdom composed of healed exiles.",
+    "searchText": "gathering the lame and the banished group remnant god’s preferential option for the broken—kingdom composed of healed exiles. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "remnant"
+  },
+  {
+    "id": "g.heads-of-jacob-rulers-of-israel--f3c91a7e",
+    "name": "Heads of Jacob / rulers of Israel",
+    "type": "group",
+    "url": "/entities/g.heads-of-jacob-rulers-of-israel--f3c91a7e/",
+    "blurb": "Cannibal rulers who flay and boil the people—grotesque metaphor for predatory governance.",
+    "searchText": "heads of jacob / rulers of israel group leaders cannibal rulers who flay and boil the people—grotesque metaphor for predatory governance. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "leaders"
+  },
+  {
+    "id": "g.judges-who-sell-justice--a0f2b7c9",
+    "name": "Judges who sell justice",
+    "type": "group",
+    "url": "/entities/g.judges-who-sell-justice--a0f2b7c9/",
+    "blurb": "Verdicts priced; courts become marketplaces—law as luxury good.",
+    "searchText": "judges who sell justice group corruption verdicts priced; courts become marketplaces—law as luxury good. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "corruption"
+  },
+  {
+    "id": "g.many-nations-come-to-zion--c0f6a213",
+    "name": "Many nations come to Zion",
+    "type": "group",
+    "url": "/entities/g.many-nations-come-to-zion--c0f6a213/",
+    "blurb": "International pilgrimage for Torah instruction—mission by attraction.",
+    "searchText": "many nations come to zion group nations international pilgrimage for torah instruction—mission by attraction. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "nations"
+  },
+  {
+    "id": "g.merchants-with-false-scales-and-weights--7f2ed501",
+    "name": "Merchants with false scales and weights",
+    "type": "group",
+    "url": "/entities/g.merchants-with-false-scales-and-weights--7f2ed501/",
+    "blurb": "Economic fraud sacralized—bags of deceit, stones that cheat.",
+    "searchText": "merchants with false scales and weights group commerce economic fraud sacralized—bags of deceit, stones that cheat. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "commerce"
+  },
+  {
+    "id": "g.moses-aaron-miriam-exodus-leaders--9f0e3ab1",
+    "name": "Moses, Aaron, Miriam (Exodus leaders)",
+    "type": "group",
+    "url": "/entities/g.moses-aaron-miriam-exodus-leaders--9f0e3ab1/",
+    "blurb": "Exodus credentials ground the lawsuit—past grace magnifies present guilt.",
+    "searchText": "moses, aaron, miriam (exodus leaders) group exodus exodus credentials ground the lawsuit—past grace magnifies present guilt. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "exodus"
+  },
+  {
+    "id": "g.priests-who-teach-for-a-price--2cf84c31",
+    "name": "Priests who teach for a price",
+    "type": "group",
+    "url": "/entities/g.priests-who-teach-for-a-price--2cf84c31/",
+    "blurb": "Instruction monetized; sacred vocation becomes side-hustle.",
+    "searchText": "priests who teach for a price group corruption instruction monetized; sacred vocation becomes side-hustle. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "corruption"
+  },
+  {
+    "id": "g.prophets-who-cry-peace-when-fed--c1a97230",
+    "name": "Prophets who cry ‘Peace’ when fed",
+    "type": "group",
+    "url": "/entities/g.prophets-who-cry-peace-when-fed--c1a97230/",
+    "blurb": "Stomachs steer sermons; oracles become meal tickets.",
+    "searchText": "prophets who cry ‘peace’ when fed group false-prophets stomachs steer sermons; oracles become meal tickets. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "false-prophets"
+  },
+  {
+    "id": "g.seven-shepherds-and-eight-leaders--f7e10c9a",
+    "name": "Seven shepherds and eight leaders",
+    "type": "group",
+    "url": "/entities/g.seven-shepherds-and-eight-leaders--f7e10c9a/",
+    "blurb": "Enigmatic fullness of leadership raised against Assyria—symbolic abundance of protection.",
+    "searchText": "seven shepherds and eight leaders group leaders enigmatic fullness of leadership raised against assyria—symbolic abundance of protection. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "leaders"
+  },
+  {
+    "id": "g.statutes-of-omri-works-of-ahab--c1e8d70a",
+    "name": "Statutes of Omri and works of the house of Ahab",
+    "type": "group",
+    "url": "/entities/g.statutes-of-omri-works-of-ahab--c1e8d70a/",
+    "blurb": "Northern dynasty paradigms of apostasy imported into Judah; policy becomes idolatry.",
+    "searchText": "statutes of omri and works of the house of ahab group royal-precedent northern dynasty paradigms of apostasy imported into judah; policy becomes idolatry. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "royal-precedent"
+  },
+  {
+    "id": "g.violence-in-the-houses-of-the-rich--e1b4a3d2",
+    "name": "Violence in the houses of the rich",
+    "type": "group",
+    "url": "/entities/g.violence-in-the-houses-of-the-rich--e1b4a3d2/",
+    "blurb": "Palatial neighborhoods built on blood and lies.",
+    "searchText": "violence in the houses of the rich group corruption palatial neighborhoods built on blood and lies. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "corruption"
+  },
+  {
+    "id": "p.ahaz-of-judah--73ce91b0",
+    "name": "Ahaz of Judah",
+    "type": "person",
+    "url": "/entities/p.ahaz-of-judah--73ce91b0/",
+    "blurb": "Crisis reign marked by Syro-Ephraimite war and Assyrian entanglements; religious compromise proliferates.",
+    "searchText": "ahaz of judah person king crisis reign marked by syro-ephraimite war and assyrian entanglements; religious compromise proliferates. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "king"
+  },
+  {
+    "id": "p.hezekiah-of-judah--6b2d11f9",
+    "name": "Hezekiah of Judah",
+    "type": "person",
+    "url": "/entities/p.hezekiah-of-judah--6b2d11f9/",
+    "blurb": "Reformer king during Assyrian pressure; Micah’s critique shapes later repentance (cf. Jer 26:18).",
+    "searchText": "hezekiah of judah person king reformer king during assyrian pressure; micah’s critique shapes later repentance (cf. jer 26:18). ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "king"
+  },
+  {
+    "id": "p.jotham-of-judah--0d9cfa12",
+    "name": "Jotham of Judah",
+    "type": "person",
+    "url": "/entities/p.jotham-of-judah--0d9cfa12/",
+    "blurb": "First of the kings in Micah’s superscription; period of relative stability before Ahaz.",
+    "searchText": "jotham of judah person king first of the kings in micah’s superscription; period of relative stability before ahaz. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "king"
+  },
+  {
+    "id": "p.micah-filled-with-power-justice-might--9f1c3b67",
+    "name": "Micah filled with power, justice, might",
+    "type": "person",
+    "url": "/entities/p.micah-filled-with-power-justice-might--9f1c3b67/",
+    "blurb": "True prophet stands in the Spirit to name sin without price tag.",
+    "searchText": "micah filled with power, justice, might person prophet true prophet stands in the spirit to name sin without price tag. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "prophet"
+  },
+  {
+    "id": "p.micah-of-moresheth--4e9f3b2a",
+    "name": "Micah of Moresheth",
+    "type": "person",
+    "url": "/entities/p.micah-of-moresheth--4e9f3b2a/",
+    "blurb": "Rural prophet from Moresheth-Gath, speaking bluntly against urban corruption in Samaria and Jerusalem.",
+    "searchText": "micah of moresheth person prophet rural prophet from moresheth-gath, speaking bluntly against urban corruption in samaria and jerusalem. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "prophet"
+  },
+  {
+    "id": "e.achzib-deception--d28b173a",
+    "name": "Achzib (Deception)",
+    "type": "entity",
+    "url": "/entities/e.achzib-deception--d28b173a/",
+    "blurb": "‘Deceptive brook’—promises water but dries up; kings of Israel find it a lie.",
+    "searchText": "achzib (deception) entity city-wordplay ‘deceptive brook’—promises water but dries up; kings of israel find it a lie. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "city-wordplay"
+  },
+  {
+    "id": "e.adullam--eb613f40",
+    "name": "Adullam",
+    "type": "entity",
+    "url": "/entities/e.adullam--eb613f40/",
+    "blurb": "Refuge of David now becomes repository of Judah’s glory—exile imagery revived.",
+    "searchText": "adullam entity city-wordplay refuge of david now becomes repository of judah’s glory—exile imagery revived. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "city-wordplay"
+  },
+  {
+    "id": "e.arise-and-thresh-daughter-zion--8d1f37b0",
+    "name": "Arise and thresh, daughter Zion",
+    "type": "entity",
+    "url": "/entities/e.arise-and-thresh-daughter-zion--8d1f37b0/",
+    "blurb": "Horns of iron, hoofs of bronze—sanctified strength to devote spoil to the LORD.",
+    "searchText": "arise and thresh, daughter zion entity warfare horns of iron, hoofs of bronze—sanctified strength to devote spoil to the lord. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "warfare"
+  },
+  {
+    "id": "e.babylon-named-exile--0f7c1b62",
+    "name": "Babylon (named exile)",
+    "type": "entity",
+    "url": "/entities/e.babylon-named-exile--0f7c1b62/",
+    "blurb": "City of captivity and stage of promised rescue—intermediate chastening in salvation history.",
+    "searchText": "babylon (named exile) entity city city of captivity and stage of promised rescue—intermediate chastening in salvation history. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "city"
+  },
+  {
+    "id": "e.beth-ezel-house-of-support--acf3b812",
+    "name": "Beth-ezel (House of Support)",
+    "type": "entity",
+    "url": "/entities/e.beth-ezel-house-of-support--acf3b812/",
+    "blurb": "Neighbor’s support withdrawn; the house of ‘support’ offers none in crisis.",
+    "searchText": "beth-ezel (house of support) entity city-wordplay neighbor’s support withdrawn; the house of ‘support’ offers none in crisis. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "city-wordplay"
+  },
+  {
+    "id": "e.beth-le-aphrah-house-of-dust--d903cf21",
+    "name": "Beth-le-aphrah (House of Dust)",
+    "type": "entity",
+    "url": "/entities/e.beth-le-aphrah-house-of-dust--d903cf21/",
+    "blurb": "Call to roll in the dust—name becomes enacted lament; Judah’s grief goes to ground.",
+    "searchText": "beth-le-aphrah (house of dust) entity city-wordplay call to roll in the dust—name becomes enacted lament; judah’s grief goes to ground. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "city-wordplay"
+  },
+  {
+    "id": "e.bethlehem-ephrathah-small-yet-ruler-emerges--a1730d2b",
+    "name": "Bethlehem Ephrathah—small yet ruler emerges",
+    "type": "entity",
+    "url": "/entities/e.bethlehem-ephrathah-small-yet-ruler-emerges--a1730d2b/",
+    "blurb": "From the least comes the greatest; origins ‘from of old’ signal Davidic hope renewed.",
+    "searchText": "bethlehem ephrathah—small yet ruler emerges entity messianic from the least comes the greatest; origins ‘from of old’ signal davidic hope renewed. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "messianic"
+  },
+  {
+    "id": "e.build-zion-with-blood--1e8739c4",
+    "name": "Build Zion with blood",
+    "type": "entity",
+    "url": "/entities/e.build-zion-with-blood--1e8739c4/",
+    "blurb": "Urban splendor erected on violence; architecture as indictment.",
+    "searchText": "build zion with blood entity corruption urban splendor erected on violence; architecture as indictment. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "corruption"
+  },
+  {
+    "id": "e.cannibal-metaphor-for-rulers--f907a23b",
+    "name": "Cannibal metaphor for rulers",
+    "type": "entity",
+    "url": "/entities/e.cannibal-metaphor-for-rulers--f907a23b/",
+    "blurb": "Grotesque image to shock moral senses—people treated as meat.",
+    "searchText": "cannibal metaphor for rulers entity rhetoric grotesque image to shock moral senses—people treated as meat. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "rhetoric"
+  },
+  {
+    "id": "e.cast-all-our-sins-into-the-depths-of-the-sea--3f1a7b26",
+    "name": "Cast all our sins into the depths of the sea",
+    "type": "entity",
+    "url": "/entities/e.cast-all-our-sins-into-the-depths-of-the-sea--3f1a7b26/",
+    "blurb": "Exodus-colored image of irreversible pardon—no dredging allowed.",
+    "searchText": "cast all our sins into the depths of the sea entity forgiveness exodus-colored image of irreversible pardon—no dredging allowed. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "forgiveness"
+  },
+  {
+    "id": "e.covenant-lawsuit-rib--e89fb61a",
+    "name": "Covenant lawsuit (rîb)",
+    "type": "entity",
+    "url": "/entities/e.covenant-lawsuit-rib--e89fb61a/",
+    "blurb": "Legal genre frames charges and ethical requirements; justice is covenantal, not merely civic.",
+    "searchText": "covenant lawsuit (rîb) entity genre legal genre frames charges and ethical requirements; justice is covenantal, not merely civic. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "genre"
+  },
+  {
+    "id": "e.cut-down-your-pillars--90e1a7cb",
+    "name": "Cut down your pillars",
+    "type": "entity",
+    "url": "/entities/e.cut-down-your-pillars--90e1a7cb/",
+    "blurb": "Cultic steles toppled—memory of false gods erased.",
+    "searchText": "cut down your pillars entity purge-note cultic steles toppled—memory of false gods erased. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "purge-note"
+  },
+  {
+    "id": "e.cut-off-carved-images--e10a7f3c",
+    "name": "Cut off carved images",
+    "type": "entity",
+    "url": "/entities/e.cut-off-carved-images--e10a7f3c/",
+    "blurb": "Tangible idols removed—art re-purposed to truth.",
+    "searchText": "cut off carved images entity purge-note tangible idols removed—art re-purposed to truth. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "purge-note"
+  },
+  {
+    "id": "e.cut-off-sorceries--c09a7e13",
+    "name": "Cut off sorceries",
+    "type": "entity",
+    "url": "/entities/e.cut-off-sorceries--c09a7e13/",
+    "blurb": "Manipulative spirituality ended; no spellcraft in Zion.",
+    "searchText": "cut off sorceries entity purge-note manipulative spirituality ended; no spellcraft in zion. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "purge-note"
+  },
+  {
+    "id": "e.cut-off-your-horses--f9a01e3b",
+    "name": "Cut off your horses",
+    "type": "entity",
+    "url": "/entities/e.cut-off-your-horses--f9a01e3b/",
+    "blurb": "Military mobility dismantled—trust relocated to God.",
+    "searchText": "cut off your horses entity purge-note military mobility dismantled—trust relocated to god. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "purge-note"
+  },
+  {
+    "id": "e.destroy-your-chariots--1a0f7c39",
+    "name": "Destroy your chariots",
+    "type": "entity",
+    "url": "/entities/e.destroy-your-chariots--1a0f7c39/",
+    "blurb": "Offensive hardware removed to unlearn war.",
+    "searchText": "destroy your chariots entity purge-note offensive hardware removed to unlearn war. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "purge-note"
+  },
+  {
+    "id": "e.destroy-your-cities-violence-hubs--a71e0c9f",
+    "name": "Destroy your cities (violence hubs)",
+    "type": "entity",
+    "url": "/entities/e.destroy-your-cities-violence-hubs--a71e0c9f/",
+    "blurb": "Repeating emphasis: God prunes instruments of oppression.",
+    "searchText": "destroy your cities (violence hubs) entity purge-note repeating emphasis: god prunes instruments of oppression. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "purge-note"
+  },
+  {
+    "id": "e.dishonest-scales-and-deceitful-weights--c78a1f0b",
+    "name": "Dishonest scales and deceitful weights",
+    "type": "entity",
+    "url": "/entities/e.dishonest-scales-and-deceitful-weights--c78a1f0b/",
+    "blurb": "Marketplace sins that corrode trust—God weighs the weights.",
+    "searchText": "dishonest scales and deceitful weights entity economy marketplace sins that corrode trust—god weighs the weights. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "economy"
+  },
+  {
+    "id": "e.do-justice--c01a7e93",
+    "name": "Do justice",
+    "type": "entity",
+    "url": "/entities/e.do-justice--c01a7e93/",
+    "blurb": "Public right-ordering—courts, contracts, care for vulnerable—central to covenant fidelity.",
+    "searchText": "do justice entity ethic public right-ordering—courts, contracts, care for vulnerable—central to covenant fidelity. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "ethic"
+  },
+  {
+    "id": "e.do-not-preach-they-preach--d8a3c0f1",
+    "name": "‘Do not preach!’ they preach",
+    "type": "entity",
+    "url": "/entities/e.do-not-preach-they-preach--d8a3c0f1/",
+    "blurb": "Censorship of truth; prophetic gag order from comfortable pews.",
+    "searchText": "‘do not preach!’ they preach entity opposition censorship of truth; prophetic gag order from comfortable pews. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "opposition"
+  },
+  {
+    "id": "e.each-under-vine-and-fig-tree--e20a7b15",
+    "name": "Each under vine and fig tree",
+    "type": "entity",
+    "url": "/entities/e.each-under-vine-and-fig-tree--e20a7b15/",
+    "blurb": "Security without militarism; sabbath economy embodied.",
+    "searchText": "each under vine and fig tree entity peace-vision security without militarism; sabbath economy embodied. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "peace-vision"
+  },
+  {
+    "id": "e.execute-vengeance-on-nations--e7c109af",
+    "name": "Execute vengeance on nations that did not obey",
+    "type": "entity",
+    "url": "/entities/e.execute-vengeance-on-nations--e7c109af/",
+    "blurb": "Universal moral court—God’s zeal completes the purge.",
+    "searchText": "execute vengeance on nations that did not obey entity purge-note universal moral court—god’s zeal completes the purge. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "purge-note"
+  },
+  {
+    "id": "e.exile-to-babylon-there-you-shall-be-rescued--d8b120c9",
+    "name": "Exile to Babylon; there you shall be rescued",
+    "type": "entity",
+    "url": "/entities/e.exile-to-babylon-there-you-shall-be-rescued--d8b120c9/",
+    "blurb": "Specific exile-rescue horizon—judgment braided with hope.",
+    "searchText": "exile to babylon; there you shall be rescued entity exile-hope specific exile-rescue horizon—judgment braided with hope. ",
+    "references": 1,
+    "books": [
+      "Micah"
+    ],
+    "category": "exile-hope"
+  }
+]

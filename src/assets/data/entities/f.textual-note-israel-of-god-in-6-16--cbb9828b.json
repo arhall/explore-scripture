@@ -1,0 +1,22 @@
+{
+  "name": "Textual note: Israel of God in 6:16",
+  "type": "figure",
+  "category": "textual-notes",
+  "references": [
+    "Gal 6:16"
+  ],
+  "note": "Interpretation of ‘the Israel of God’ debated (subset vs appositional).",
+  "aka": [],
+  "id": "f.textual-note-israel-of-god-in-6-16--cbb9828b",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Galatians": [
+      6
+    ]
+  }
+}

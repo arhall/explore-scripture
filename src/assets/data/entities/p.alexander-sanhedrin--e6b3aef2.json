@@ -1,0 +1,23 @@
+{
+  "name": "Alexander (Sanhedrin)",
+  "type": "person",
+  "category": "elite",
+  "references": [
+    "Acts 4:6"
+  ],
+  "aka": [],
+  "id": "p.alexander-sanhedrin--e6b3aef2",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      4
+    ]
+  }
+}

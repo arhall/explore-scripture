@@ -1,0 +1,18 @@
+{
+  "name": "Eden before them, desert behind them",
+  "type": "entity",
+  "references": [
+    "Joel 2:3"
+  ],
+  "blurb": "Reversal of creation—locust march leaves de‑creation in its wake.",
+  "category": "image",
+  "id": "e.eden-before-them-desert-behind-them--b6b8bc2f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Joel": [
+      2
+    ]
+  }
+}

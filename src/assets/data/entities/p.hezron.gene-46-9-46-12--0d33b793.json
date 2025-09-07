@@ -1,0 +1,26 @@
+{
+  "name": "Hezron",
+  "type": "person",
+  "references": [
+    "Genesis 46:9; 46:12",
+    "Exodus 6:14"
+  ],
+  "blurb": "Descendant in the lines of Reuben and Perez; ancestor-name later in Davidic genealogy.",
+  "category": "genealogy",
+  "cross_references": [
+    "Ruth 4:18",
+    "Genesis 46:9"
+  ],
+  "id": "p.hezron.gene-46-9-46-12--0d33b793",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      46
+    ],
+    "Exodus": [
+      6
+    ]
+  }
+}

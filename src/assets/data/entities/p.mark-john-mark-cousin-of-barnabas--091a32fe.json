@@ -1,0 +1,41 @@
+{
+  "name": "Mark (John Mark) (cousin of Barnabas)",
+  "type": "person",
+  "category": "coworker",
+  "references": [
+    "Col 4:10",
+    "2 Tim 4:9-22",
+    "Philem 24",
+    "1 Pet 5:13"
+  ],
+  "cross_references": [
+    "Acts 12:12",
+    "Philem 24",
+    "2 Tim 4:11"
+  ],
+  "aka": [
+    "John Mark",
+    "Mark the cousin of Barnabas"
+  ],
+  "id": "p.mark-john-mark-cousin-of-barnabas--091a32fe",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Colossians": [
+      4
+    ],
+    "2 Timothy": [
+      4
+    ],
+    "Philemon": [
+      24
+    ],
+    "1 Peter": [
+      5
+    ]
+  }
+}

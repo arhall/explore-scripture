@@ -1,0 +1,21 @@
+{
+  "name": "Patmos",
+  "type": "entity",
+  "category": "island",
+  "references": [
+    "Rev 1:9"
+  ],
+  "aka": [],
+  "id": "e.patmos--bfd027c2",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Revelation": [
+      1
+    ]
+  }
+}

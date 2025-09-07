@@ -1,0 +1,28 @@
+{
+  "name": "overseers (bishops)",
+  "type": "group",
+  "category": "office",
+  "references": [
+    "Phil 1:1",
+    "1 Tim 3:1"
+  ],
+  "aka": [
+    "overseers",
+    "bishops"
+  ],
+  "id": "g.overseers-bishops--72c3f6fb",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Philippians": [
+      1
+    ],
+    "1 Timothy": [
+      3
+    ]
+  }
+}

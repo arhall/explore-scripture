@@ -1,0 +1,25 @@
+{
+  "name": "Mary of Bethany",
+  "type": "person",
+  "category": "disciple",
+  "references": [
+    "John 11:2",
+    "John 12:1–8"
+  ],
+  "aka": [],
+  "id": "p.mary-of-bethany--7c3349d2",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      11,
+      12
+    ]
+  }
+}

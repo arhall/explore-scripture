@@ -1,0 +1,18 @@
+{
+  "name": "Garden locked, a spring sealed",
+  "type": "entity",
+  "references": [
+    "Song 4:12–15; 5:1; 6:2"
+  ],
+  "blurb": "Chastity and exclusivity: the bride as enclosed garden; love’s pleasures within covenant walls. Edenic echoes—pomegranates, spices, flowing waters.",
+  "category": "motif",
+  "id": "e.garden-locked-a-spring-sealed--9ce0206a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Song of Songs": [
+      4
+    ]
+  }
+}

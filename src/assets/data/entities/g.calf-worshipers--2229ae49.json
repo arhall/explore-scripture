@@ -1,0 +1,22 @@
+{
+  "name": "Calf-worshipers",
+  "type": "group",
+  "references": [
+    "Exodus 32"
+  ],
+  "blurb": "Those who press Aaron to make the golden calf and celebrate; their sin provokes judgment and intercession.",
+  "category": "narrative",
+  "cross_references": [
+    "Nehemiah 9:18",
+    "1 Corinthians 10:7"
+  ],
+  "id": "g.calf-worshipers--2229ae49",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      32
+    ]
+  }
+}

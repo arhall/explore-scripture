@@ -1,0 +1,50 @@
+{
+  "id": "e.jerusalem--d3a5bc90",
+  "name": "Jerusalem",
+  "type": "entity",
+  "references": [
+    "Nah 1:15 (implication via Zion)",
+    "Gal 1:17–18",
+    "Gal 2:1",
+    "2 Cor 8–9",
+    "2 Cor 1:16 context",
+    "1 Cor 16:3",
+    "Rom 15:25–31"
+  ],
+  "category": "city",
+  "aka": [],
+  "place": "Capital of Judah",
+  "cross_references": [
+    "Mic 4–5",
+    "Isa 52:7"
+  ],
+  "blurb": "The communal center of worship restored as Assyria’s threat is removed.",
+  "canonical_id": "e.jerusalem.ezekiels-vision-focus--e6176f76",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "e.jerusalem--23c888bc",
+    "e.jerusalem--6c42150d"
+  ],
+  "book_references": {
+    "Nahum": [
+      1
+    ],
+    "Galatians": [
+      1,
+      2
+    ],
+    "2 Corinthians": [
+      1,
+      8,
+      9
+    ],
+    "1 Corinthians": [
+      16
+    ],
+    "Romans": [
+      15
+    ]
+  }
+}

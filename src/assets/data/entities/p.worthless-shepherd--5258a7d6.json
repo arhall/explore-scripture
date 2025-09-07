@@ -1,0 +1,18 @@
+{
+  "id": "p.worthless-shepherd--5258a7d6",
+  "name": "Worthless Shepherd",
+  "type": "person",
+  "references": [
+    "Zech 11:17"
+  ],
+  "category": "shepherd-figure",
+  "blurb": "Idol shepherd whose arm and eye are struck; epitomizes failed rule.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      11
+    ]
+  }
+}

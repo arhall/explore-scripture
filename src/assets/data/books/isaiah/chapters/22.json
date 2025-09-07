@@ -1,0 +1,28 @@
+{
+  "book": "Isaiah",
+  "chapter": 22,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "p.eliakim-son-of-hilkiah--86222786",
+      "name": "Eliakim son of Hilkiah",
+      "type": "person",
+      "role": "official",
+      "refs_count": 1
+    },
+    {
+      "id": "p.shebna-the-steward-scribe--0229c782",
+      "name": "Shebna the steward/scribe",
+      "type": "person",
+      "role": "official",
+      "refs_count": 1
+    },
+    {
+      "id": "e.valley-of-vision.jerusalem-under-critique--11f1c53a",
+      "name": "Valley of Vision (Jerusalem under critique)",
+      "type": "entity",
+      "role": "city",
+      "refs_count": 1
+    }
+  ]
+}

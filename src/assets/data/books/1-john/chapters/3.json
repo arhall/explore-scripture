@@ -1,0 +1,77 @@
+{
+  "book": "1 John",
+  "chapter": 3,
+  "entity_count": 11,
+  "entities": [
+    {
+      "id": "p.cain.gene-4--931e91cf",
+      "name": "Cain",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 3
+    },
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "f.by-this-we-shall-know-that-we-are-of-the-truth--1867deeb",
+      "name": "by this we shall know that we are of the truth",
+      "type": "figure",
+      "role": "love",
+      "refs_count": 1
+    },
+    {
+      "id": "f.love-commandment-index--20fe17e2",
+      "name": "Love/commandment index",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 1
+    },
+    {
+      "id": "f.this-is-the-message-that-we-should-love-one-another--ebb153b0",
+      "name": "this is the message that we should love one another",
+      "type": "figure",
+      "role": "love",
+      "refs_count": 1
+    },
+    {
+      "id": "f.whoever-sees-his-brother-in-need-and-closes-his-heart--9461ddc2",
+      "name": "whoever sees his brother in need and closes his heart",
+      "type": "figure",
+      "role": "love",
+      "refs_count": 1
+    },
+    {
+      "id": "f.not-as-cain-who-was-of-the-evil-one-and-murdered-his-brother--72443d32",
+      "name": "not as Cain who was of the evil one and murdered his brother",
+      "type": "figure",
+      "role": "love",
+      "refs_count": 1
+    },
+    {
+      "id": "f.let-us-not-love-in-word-or-talk-but-in-deed-and-truth--bdeaa246",
+      "name": "let us not love in word or talk but in deed and truth",
+      "type": "figure",
+      "role": "love",
+      "refs_count": 1
+    },
+    {
+      "id": "f.we-know-we-have-passed-from-death-to-life-because-we-love--509dd535",
+      "name": "we know we have passed from death to life because we love",
+      "type": "figure",
+      "role": "love",
+      "refs_count": 1
+    }
+  ]
+}

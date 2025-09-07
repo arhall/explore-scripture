@@ -1,0 +1,21 @@
+{
+  "book": "Jeremiah",
+  "chapter": 37,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "p.irijah-son-of-shelemiah.guard--c55f149b",
+      "name": "Irijah son of Shelemiah (guard)",
+      "type": "person",
+      "role": "guard",
+      "refs_count": 1
+    },
+    {
+      "id": "g.court-princes-of-judah--231f3f94",
+      "name": "Court princes of Judah",
+      "type": "group",
+      "role": "court",
+      "refs_count": 1
+    }
+  ]
+}

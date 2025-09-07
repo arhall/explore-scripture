@@ -1,0 +1,22 @@
+{
+  "name": "Textual note: Gal 4:25 punctuation",
+  "type": "figure",
+  "category": "textual-notes",
+  "references": [
+    "Gal 4:25"
+  ],
+  "note": "Reading of ‘Hagar is Mount Sinai in Arabia’ and punctuation varies.",
+  "aka": [],
+  "id": "f.textual-note-gal-4-25-punctuation--39e438ee",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Galatians": [
+      4
+    ]
+  }
+}

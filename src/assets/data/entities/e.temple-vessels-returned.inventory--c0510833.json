@@ -1,0 +1,20 @@
+{
+  "name": "Temple vessels returned (inventory)",
+  "type": "entity",
+  "references": [
+    "Ezra 1:7–11"
+  ],
+  "blurb": "Vessels sanctified for Yahweh’s house return from Babylon: 30 gold basins, 1,000 silver basins, 29 utensils, 30 gold bowls, 410 silver bowls, and 1,000 other articles—5,400 pieces in all; entrusted to Sheshbazzar.",
+  "category": "ritual",
+  "count": 5400,
+  "count_note": "Detailed inventory in Ezra 1:9–11",
+  "id": "e.temple-vessels-returned.inventory--c0510833",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezra": [
+      1
+    ]
+  }
+}

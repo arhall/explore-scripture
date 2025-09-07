@@ -1,0 +1,21 @@
+{
+  "name": "Ben-ammi",
+  "type": "person",
+  "references": [
+    "Genesis 19:38"
+  ],
+  "blurb": "Son of Lot by his younger daughter; ancestor of the Ammonites. Israel’s later conflicts with Ammon are complex, yet prophetic hopes envision healing among nations.",
+  "category": "genealogy",
+  "cross_references": [
+    "Deuteronomy 2:19"
+  ],
+  "id": "p.ben-ammi.gene-19-38--6cde1249",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      19
+    ]
+  }
+}

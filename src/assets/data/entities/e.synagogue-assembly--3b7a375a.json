@@ -1,0 +1,18 @@
+{
+  "name": "synagogue (assembly)",
+  "type": "entity",
+  "category": "assembly",
+  "references": [
+    "Jas 2:2"
+  ],
+  "aka": [
+    "synagogue",
+    "assembly"
+  ],
+  "id": "e.synagogue-assembly--3b7a375a",
+  "book_references": {
+    "James": [
+      2
+    ]
+  }
+}

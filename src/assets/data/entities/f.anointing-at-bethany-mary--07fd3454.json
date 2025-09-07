@@ -1,0 +1,27 @@
+{
+  "name": "Anointing at Bethany (Mary)",
+  "type": "figure",
+  "category": "anointing",
+  "references": [
+    "John 12:1–8"
+  ],
+  "synoptic_parallels": [
+    "Matt 26:6–13",
+    "Mark 14:3–9"
+  ],
+  "aka": [],
+  "id": "f.anointing-at-bethany-mary--07fd3454",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      12
+    ]
+  }
+}

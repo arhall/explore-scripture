@@ -1,0 +1,22 @@
+{
+  "id": "g.soldiers-and-guards-of-nineveh--e1b7c3a9",
+  "name": "Soldiers/Guards of Nineveh",
+  "type": "group",
+  "references": [
+    "Nah 2:3–5; 3:17"
+  ],
+  "category": "military",
+  "aka": [
+    "Warriors",
+    "Officers"
+  ],
+  "blurb": "Crimson shields and flashing chariots project menace, yet they reel and stumble; finally they melt away.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      2
+    ]
+  }
+}

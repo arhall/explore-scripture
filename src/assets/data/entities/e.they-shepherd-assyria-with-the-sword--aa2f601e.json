@@ -1,0 +1,18 @@
+{
+  "id": "e.they-shepherd-assyria-with-the-sword--aa2f601e",
+  "name": "They shepherd Assyria with the sword",
+  "type": "entity",
+  "references": [
+    "Micah 5:6"
+  ],
+  "category": "warfare",
+  "blurb": "Aggressive defense imagery; enemies’ strongholds subdued.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      5
+    ]
+  }
+}

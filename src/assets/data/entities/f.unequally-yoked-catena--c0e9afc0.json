@@ -1,0 +1,28 @@
+{
+  "name": "Unequally yoked (catena)",
+  "type": "figure",
+  "category": "catena",
+  "references": [
+    "2 Cor 6:14–7:1"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Lev 26:11–12; Isa 52:11; 2 Sam 7:14; Ezek 20:34,37",
+      "type": "catena"
+    }
+  ],
+  "note": "Passage authenticity/placement debated; include as integrity note.",
+  "aka": [],
+  "id": "f.unequally-yoked-catena--c0e9afc0",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "2 Corinthians": [
+      6
+    ]
+  }
+}

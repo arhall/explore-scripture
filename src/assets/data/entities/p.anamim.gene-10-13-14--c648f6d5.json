@@ -1,0 +1,24 @@
+{
+  "name": "Anamim",
+  "type": "person",
+  "references": [
+    "Genesis 10:13–14"
+  ],
+  "blurb": "Descendant of Mizraim (Egypt); ancestor of groups associated with the Nile regions.",
+  "relations": {
+    "parents": [
+      "Mizraim"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.anamim.gene-10-13-14--c648f6d5",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

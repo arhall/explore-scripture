@@ -1,0 +1,18 @@
+{
+  "id": "p.the-choirmaster--9e8e36ac",
+  "name": "The Choirmaster",
+  "type": "person",
+  "references": [
+    "Hab 3:19"
+  ],
+  "category": "musical-director",
+  "blurb": "Director of temple performance; the prayer’s liturgical setting underscores communal reception and catechesis.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Habakkuk": [
+      3
+    ]
+  }
+}

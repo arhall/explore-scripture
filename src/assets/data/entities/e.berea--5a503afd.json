@@ -1,0 +1,18 @@
+{
+  "name": "Berea",
+  "type": "entity",
+  "category": "city",
+  "references": [
+    "Acts 17:10-14"
+  ],
+  "cross_references": [
+    "1 Thess 1:7-8"
+  ],
+  "aka": [],
+  "id": "e.berea--5a503afd",
+  "book_references": {
+    "Acts": [
+      17
+    ]
+  }
+}

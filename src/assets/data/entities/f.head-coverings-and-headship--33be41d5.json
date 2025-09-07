@@ -1,0 +1,27 @@
+{
+  "name": "Head coverings and headship (κεφαλή)",
+  "type": "figure",
+  "category": "worship-order",
+  "references": [
+    "1 Cor 11:2–16"
+  ],
+  "greek_terms": [
+    {
+      "term": "κεφαλή",
+      "gloss": "head/source/authority"
+    }
+  ],
+  "aka": [],
+  "id": "f.head-coverings-and-headship--33be41d5",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "1 Corinthians": [
+      11
+    ]
+  }
+}

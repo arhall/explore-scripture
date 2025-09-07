@@ -1,0 +1,39 @@
+{
+  "name": "Canaan",
+  "type": "person",
+  "references": [
+    "Genesis 10:6–20"
+  ],
+  "blurb": "Son of Ham; ancestor of significant Near Eastern peoples.",
+  "relations": {
+    "parents": [
+      "Ham"
+    ],
+    "children": [
+      "Sidon",
+      "Heth",
+      "Jebusites",
+      "Amorites",
+      "Girgashites",
+      "Hivites",
+      "Arkites",
+      "Sinites",
+      "Arvadites",
+      "Zemarites",
+      "Hamathites"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [
+    "1 Chronicles 1"
+  ],
+  "id": "p.canaan.gene-10-6-20--99323a64",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

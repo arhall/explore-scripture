@@ -1,0 +1,18 @@
+{
+  "id": "e.maroth-bitterness--f7bcd32a",
+  "name": "Maroth (Bitterness)",
+  "type": "entity",
+  "references": [
+    "Micah 1:12"
+  ],
+  "category": "city-wordplay",
+  "blurb": "Waits anxiously for good, but disaster comes from the LORD—bitter providence.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      1
+    ]
+  }
+}

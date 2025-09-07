@@ -1,0 +1,14 @@
+{
+  "book": "Matthew",
+  "chapter": 20,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "f.laborers-in-the-vineyard--1a648b0d",
+      "name": "Laborers in the vineyard",
+      "type": "figure",
+      "role": "parable",
+      "refs_count": 1
+    }
+  ]
+}

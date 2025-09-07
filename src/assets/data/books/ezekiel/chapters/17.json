@@ -1,0 +1,28 @@
+{
+  "book": "Ezekiel",
+  "chapter": 17,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "e.parable-of-the-eagles-and-the-vine--a3f95fa5",
+      "name": "Parable of the eagles and the vine",
+      "type": "entity",
+      "role": "allegory",
+      "refs_count": 1
+    },
+    {
+      "id": "e.promise-of-the-tender-twig-cedar-on-high--015e98ac",
+      "name": "Promise of the tender twig / cedar on high",
+      "type": "entity",
+      "role": "hope",
+      "refs_count": 1
+    },
+    {
+      "id": "e.proverb-and-riddle-technique.idah--394e7796",
+      "name": "Proverb and riddle (ḥidah) technique",
+      "type": "entity",
+      "role": "literary",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "House of Esau stubble",
+  "type": "entity",
+  "references": [
+    "Obadiah 1:18"
+  ],
+  "blurb": "Combustible pride meets covenant flame; no survivor from Esau—hyperbolic finality of judgment oracle.",
+  "category": "image",
+  "id": "e.house-of-esau-stubble--4bd18e3a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Obadiah": [
+      1
+    ]
+  }
+}

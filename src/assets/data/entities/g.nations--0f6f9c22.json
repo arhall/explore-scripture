@@ -1,0 +1,25 @@
+{
+  "id": "g.nations--0f6f9c22",
+  "name": "Nations",
+  "type": "group",
+  "references": [
+    "Nah 3:19"
+  ],
+  "category": "audience",
+  "aka": [
+    "Peoples"
+  ],
+  "blurb": "International witnesses who clap at Nineveh’s fall. The scope underscores public, exemplary justice.",
+  "source_testaments": [
+    "OT"
+  ],
+  "canonicalized_from": [
+    "g.nations--883113b5",
+    "g.nations--ae173a5a"
+  ],
+  "book_references": {
+    "Nahum": [
+      3
+    ]
+  }
+}

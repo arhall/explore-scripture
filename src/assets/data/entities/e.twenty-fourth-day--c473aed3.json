@@ -1,0 +1,22 @@
+{
+  "id": "e.twenty-fourth-day--c473aed3",
+  "name": "Twenty-fourth day",
+  "type": "entity",
+  "references": [
+    "Hag 1:15",
+    "Hag 2:10",
+    "Hag 2:18",
+    "Hag 2:20"
+  ],
+  "category": "calendar-day",
+  "blurb": "Repeated day-mark that punctuates restart of work and covenant blessing.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      1,
+      2
+    ]
+  }
+}

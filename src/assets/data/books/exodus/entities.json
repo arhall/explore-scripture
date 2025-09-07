@@ -1,0 +1,1065 @@
+{
+  "book": "Exodus",
+  "slug": "exodus",
+  "entity_count": 112,
+  "key_figures": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 39,
+      "score": 54
+    },
+    {
+      "id": "p.aaron--cc77e332",
+      "name": "Aaron",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 37,
+      "score": 47
+    },
+    {
+      "id": "d.the-name-yhwh-i-am--052df719",
+      "name": "The Name YHWH / ‘I AM’",
+      "type": "divine",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.jochebed--721423c7",
+      "name": "Jochebed",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.jethro.reuel--3e8098d5",
+      "name": "Jethro (Reuel)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.nadab--51b037c1",
+      "name": "Nadab",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.abihu--fcf5dac6",
+      "name": "Abihu",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.korah.son-of-esau.gene-36-5-14-18--9ad77197",
+      "name": "Korah (son of Esau)",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.pallu.gene-46-9--0bb1b5b2",
+      "name": "Pallu",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.hezron.gene-46-9-46-12--0d33b793",
+      "name": "Hezron",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.carmi.gene-46-9--726703f6",
+      "name": "Carmi",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jemuel.nemuel.gene-46-10--4ea06837",
+      "name": "Jemuel (Nemuel)",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jamin.gene-46-10--5972d38d",
+      "name": "Jamin",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.ohad.gene-46-10--41fdc520",
+      "name": "Ohad",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jachin.gene-46-10--4e6517d3",
+      "name": "Jachin",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.zohar.zerah.gene-46-10--097fbd18",
+      "name": "Zohar (Zerah)",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.shaul.son-of-a-canaanite-woman.gene-46-10--f81f8022",
+      "name": "Shaul (son of a Canaanite woman)",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.gershon.gene-46-11--db453443",
+      "name": "Gershon",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.kohath.gene-46-11--13ddd86a",
+      "name": "Kohath",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.merari.gene-46-11--fa4697ab",
+      "name": "Merari",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    }
+  ],
+  "all_entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 39,
+      "score": 54
+    },
+    {
+      "id": "p.aaron--cc77e332",
+      "name": "Aaron",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 37,
+      "score": 47
+    },
+    {
+      "id": "d.the-name-yhwh-i-am--052df719",
+      "name": "The Name YHWH / ‘I AM’",
+      "type": "divine",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 16
+    },
+    {
+      "id": "p.jochebed--721423c7",
+      "name": "Jochebed",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.jethro.reuel--3e8098d5",
+      "name": "Jethro (Reuel)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.nadab--51b037c1",
+      "name": "Nadab",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.abihu--fcf5dac6",
+      "name": "Abihu",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 2,
+      "score": 12
+    },
+    {
+      "id": "p.korah.son-of-esau.gene-36-5-14-18--9ad77197",
+      "name": "Korah (son of Esau)",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.pallu.gene-46-9--0bb1b5b2",
+      "name": "Pallu",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.hezron.gene-46-9-46-12--0d33b793",
+      "name": "Hezron",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.carmi.gene-46-9--726703f6",
+      "name": "Carmi",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jemuel.nemuel.gene-46-10--4ea06837",
+      "name": "Jemuel (Nemuel)",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jamin.gene-46-10--5972d38d",
+      "name": "Jamin",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.ohad.gene-46-10--41fdc520",
+      "name": "Ohad",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.jachin.gene-46-10--4e6517d3",
+      "name": "Jachin",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.zohar.zerah.gene-46-10--097fbd18",
+      "name": "Zohar (Zerah)",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.shaul.son-of-a-canaanite-woman.gene-46-10--f81f8022",
+      "name": "Shaul (son of a Canaanite woman)",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.gershon.gene-46-11--db453443",
+      "name": "Gershon",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.kohath.gene-46-11--13ddd86a",
+      "name": "Kohath",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.merari.gene-46-11--fa4697ab",
+      "name": "Merari",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.shiphrah--3230d8a5",
+      "name": "Shiphrah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.puah--590ef6e2",
+      "name": "Puah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.amram--036a3a7e",
+      "name": "Amram",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.miriam--5f6df826",
+      "name": "Miriam",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.pharaohs-daughter--be406ace",
+      "name": "Pharaoh’s daughter",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.zipporah--cdd35950",
+      "name": "Zipporah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.gershom--9c79a831",
+      "name": "Gershom",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.eliezer--10cb3d9b",
+      "name": "Eliezer",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.joshua.hoshea--558e7dbd",
+      "name": "Joshua (Hoshea)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.hur--21797ccd",
+      "name": "Hur",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.eleazar--b3d5a12a",
+      "name": "Eleazar",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.ithamar--6dbd7a25",
+      "name": "Ithamar",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.bezalel-son-of-uri.tribe-of-judah--d9c1f4ec",
+      "name": "Bezalel son of Uri (tribe of Judah)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.oholiab-son-of-ahisamach.tribe-of-dan--6478173e",
+      "name": "Oholiab son of Ahisamach (tribe of Dan)",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.libni--86702c48",
+      "name": "Libni",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.shimei--4e671b01",
+      "name": "Shimei",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.izhar--3f632a42",
+      "name": "Izhar",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.hebron--f9ec034d",
+      "name": "Hebron",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.uzziel--5e8c5073",
+      "name": "Uzziel",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.mishael--91a4fb48",
+      "name": "Mishael",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.elzaphan--f2f3abef",
+      "name": "Elzaphan",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.sithri--390cbafa",
+      "name": "Sithri",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.nepheg--f6424ac9",
+      "name": "Nepheg",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.zichri--162d70c3",
+      "name": "Zichri",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.assir--80707022",
+      "name": "Assir",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.elkanah--96e47f98",
+      "name": "Elkanah",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.abiasaph--5eede2e3",
+      "name": "Abiasaph",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.elisheba-daughter-of-amminadab.elisheva--5f22c00c",
+      "name": "Elisheba (Elisheva) daughter of Amminadab",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.phinehas--accbe6db",
+      "name": "Phinehas",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.nahshon--c5fa0974",
+      "name": "Nahshon",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.amminadab--d0ec829a",
+      "name": "Amminadab",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "p.putiel--6c453fd0",
+      "name": "Putiel",
+      "type": "person",
+      "role": "genealogy",
+      "refs_count": 1,
+      "score": 11
+    },
+    {
+      "id": "g.firstborn-of-egypt--b0156eb2",
+      "name": "Firstborn of Egypt",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 2,
+      "score": 8
+    },
+    {
+      "id": "g.all-israel-at-the-sea--fe75828c",
+      "name": "All Israel at the Sea",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 2,
+      "score": 8
+    },
+    {
+      "id": "g.magicians-of-egypt.gene-41-8--39266da6",
+      "name": "Magicians of Egypt",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.elders-of-israel--e67509a3",
+      "name": "Elders of Israel",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.taskmasters-of-egypt--defcd472",
+      "name": "Taskmasters of Egypt",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.mixed-multitude--e0963096",
+      "name": "Mixed multitude",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.pharaohs-army--ed80e6de",
+      "name": "Pharaoh’s army",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.women-with-timbrels--c5854464",
+      "name": "Women with timbrels",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.amalekites--a3e94369",
+      "name": "Amalekites",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.chiefs-of-thousands-hundreds-fifties-tens--8361dcf1",
+      "name": "Chiefs of thousands/hundreds/fifties/tens",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.seventy-elders-of-israel--def85245",
+      "name": "Seventy elders of Israel",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.skilled-craftsmen-wise-hearted--36ea4cc5",
+      "name": "Skilled craftsmen / wise-hearted",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.calf-worshipers--2229ae49",
+      "name": "Calf-worshipers",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.levites-who-rallied-to-moses--42c6d1cf",
+      "name": "Levites who rallied to Moses",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.israelites-groaning-under-slavery--2eee904c",
+      "name": "Israelites groaning under slavery",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "g.women-who-served-at-the-entrance-of-the-tent-of-meeting--574019fd",
+      "name": "Women who served at the entrance of the tent of meeting",
+      "type": "group",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 7
+    },
+    {
+      "id": "f.angel-of-the-lord.gene-16-22--790d3b7c",
+      "name": "Angel of the LORD",
+      "type": "figure",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.the-destroyer--dc3f5e48",
+      "name": "The Destroyer",
+      "type": "figure",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.pillar-of-cloud-and-fire--a58df403",
+      "name": "Pillar of cloud and fire",
+      "type": "figure",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.the-angel-who-goes-before--4ed22d67",
+      "name": "The Angel who goes before",
+      "type": "figure",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.glory-cloud-filling-the-tabernacle--4ea7790a",
+      "name": "Glory-cloud filling the tabernacle",
+      "type": "figure",
+      "role": "narrative",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.plague-death-of-firstborn--a3b8d276",
+      "name": "Plague: Death of firstborn",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 2,
+      "score": 3
+    },
+    {
+      "id": "f.golden-calf--27abe5ad",
+      "name": "Golden calf",
+      "type": "figure",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.staff-of-moses--71832e74",
+      "name": "Staff of Moses",
+      "type": "figure",
+      "role": "sign",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.serpent-rod--fe7b0882",
+      "name": "Serpent-rod (sign)",
+      "type": "figure",
+      "role": "sign",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.blood-as-a-sign--907612f4",
+      "name": "Blood as a sign",
+      "type": "figure",
+      "role": "sign",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "f.the-firstborn--a424a5cf",
+      "name": "The firstborn (holy to the LORD)",
+      "type": "figure",
+      "role": "sign",
+      "refs_count": 1,
+      "score": 3
+    },
+    {
+      "id": "e.plague-nile-to-blood--aca303ea",
+      "name": "Plague: Nile to blood",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.plague-frogs--062c2663",
+      "name": "Plague: Frogs",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.plague-gnats--04a2313b",
+      "name": "Plague: Gnats (lice)",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.plague-swarms--93908750",
+      "name": "Plague: Swarms (flies)",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.plague-livestock-disease--76626deb",
+      "name": "Plague: Livestock disease",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.plague-boils--81722923",
+      "name": "Plague: Boils",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.plague-hail--848e0663",
+      "name": "Plague: Hail",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.plague-locusts--9e810734",
+      "name": "Plague: Locusts",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.plague-darkness--38484a9a",
+      "name": "Plague: Darkness",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.passover-lamb--f2af337f",
+      "name": "Passover lamb",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.unleavened-bread--c358a8a0",
+      "name": "Unleavened bread (Matzah)",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.bitter-herbs--0dec28a6",
+      "name": "Bitter herbs",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.blood-on-the-doorposts-and-lintel--b763b279",
+      "name": "Blood on the doorposts and lintel",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.consecration-of-the-firstborn--45c46547",
+      "name": "Consecration of the firstborn",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.book-of-the-covenant--2e81fdb2",
+      "name": "Book of the Covenant",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.blood-of-the-covenant--2497d1f0",
+      "name": "Blood of the covenant",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.covenant-meal-on-the-mountain--85a14340",
+      "name": "Covenant meal on the mountain",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.two-tablets-of-the-testimony--f3925e77",
+      "name": "Two tablets of the testimony",
+      "type": "entity",
+      "role": "ritual",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.ark-of-the-covenant--88be4dc9",
+      "name": "Ark of the Covenant",
+      "type": "entity",
+      "role": "tabernacle",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.mercy-seat--9290710d",
+      "name": "Mercy seat (atonement cover)",
+      "type": "entity",
+      "role": "tabernacle",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.cherubim-over-the-mercy-seat--d4b4c34a",
+      "name": "Cherubim over the mercy seat",
+      "type": "entity",
+      "role": "tabernacle",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.table-of-the-bread-of-the-presence--f96cf238",
+      "name": "Table of the Bread of the Presence",
+      "type": "entity",
+      "role": "tabernacle",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.lampstand--d7d8259b",
+      "name": "Lampstand (Menorah)",
+      "type": "entity",
+      "role": "tabernacle",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.altar-of-incense--8fedaed4",
+      "name": "Altar of incense",
+      "type": "entity",
+      "role": "tabernacle",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.bronze-altar--7ed28202",
+      "name": "Bronze altar (burnt offering)",
+      "type": "entity",
+      "role": "tabernacle",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.bronze-laver--ead7ef38",
+      "name": "Bronze laver (basin)",
+      "type": "entity",
+      "role": "tabernacle",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.anointing-oil--e3bff4e9",
+      "name": "Anointing oil (holy)",
+      "type": "entity",
+      "role": "tabernacle",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.holy-incense--9fc66d77",
+      "name": "Holy incense (formula)",
+      "type": "entity",
+      "role": "tabernacle",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.ephod--37a108f4",
+      "name": "Ephod (high priest)",
+      "type": "entity",
+      "role": "priesthood",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.breastpiece-of-judgment--6e61c365",
+      "name": "Breastpiece of judgment",
+      "type": "entity",
+      "role": "priesthood",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.robe-of-the-ephod--24f429ae",
+      "name": "Robe of the ephod",
+      "type": "entity",
+      "role": "priesthood",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.turban-and-holy-crown--3af8bf8a",
+      "name": "Turban and holy crown (engraved ‘Holy to the LORD’)",
+      "type": "entity",
+      "role": "priesthood",
+      "refs_count": 1,
+      "score": 2
+    },
+    {
+      "id": "e.linen-tunics-sashes-caps--4d728898",
+      "name": "Linen tunics, sashes, caps",
+      "type": "entity",
+      "role": "priesthood",
+      "refs_count": 1,
+      "score": 2
+    }
+  ]
+}

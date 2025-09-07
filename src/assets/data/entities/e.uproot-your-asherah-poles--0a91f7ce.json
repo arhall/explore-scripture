@@ -1,0 +1,18 @@
+{
+  "id": "e.uproot-your-asherah-poles--0a91f7ce",
+  "name": "Uproot your Asherah poles",
+  "type": "entity",
+  "references": [
+    "Micah 5:10–15"
+  ],
+  "category": "purge-note",
+  "blurb": "Fertility cult ended at the root; sexuality re-covenanted.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      5
+    ]
+  }
+}

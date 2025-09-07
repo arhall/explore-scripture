@@ -1,0 +1,19 @@
+{
+  "name": "Sered",
+  "type": "person",
+  "references": [
+    "Genesis 46:14"
+  ],
+  "blurb": "Son of Zebulun listed among those who went to Egypt.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.sered.gene-46-14--1cd2c987",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      46
+    ]
+  }
+}

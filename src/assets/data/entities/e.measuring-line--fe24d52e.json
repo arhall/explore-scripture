@@ -1,0 +1,20 @@
+{
+  "id": "e.measuring-line--fe24d52e",
+  "name": "Measuring line",
+  "type": "entity",
+  "references": [
+    "Zech 1:16 (link)",
+    "Zech 2:1-2"
+  ],
+  "category": "construction-motif",
+  "blurb": "Associated with rebuilding/planning; intertextual link to Zechariah’s visions.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Zechariah": [
+      1,
+      2
+    ]
+  }
+}

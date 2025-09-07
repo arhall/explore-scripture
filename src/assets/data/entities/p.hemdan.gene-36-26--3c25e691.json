@@ -1,0 +1,19 @@
+{
+  "name": "Hemdan",
+  "type": "person",
+  "references": [
+    "Genesis 36:26"
+  ],
+  "blurb": "Son of Dishon; Horite descendant.",
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.hemdan.gene-36-26--3c25e691",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

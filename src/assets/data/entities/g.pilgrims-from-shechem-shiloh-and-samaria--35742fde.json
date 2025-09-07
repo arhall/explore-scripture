@@ -1,0 +1,18 @@
+{
+  "name": "Pilgrims from Shechem, Shiloh, and Samaria",
+  "type": "group",
+  "references": [
+    "Jeremiah 41:5"
+  ],
+  "blurb": "Eighty mourners with offerings arrive after Jerusalem’s fall and are slaughtered by Ishmael—piety caught in political violence.",
+  "category": "pilgrims",
+  "id": "g.pilgrims-from-shechem-shiloh-and-samaria--35742fde",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      41
+    ]
+  }
+}

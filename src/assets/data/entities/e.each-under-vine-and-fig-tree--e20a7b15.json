@@ -1,0 +1,18 @@
+{
+  "id": "e.each-under-vine-and-fig-tree--e20a7b15",
+  "name": "Each under vine and fig tree",
+  "type": "entity",
+  "references": [
+    "Micah 4:4"
+  ],
+  "category": "peace-vision",
+  "blurb": "Security without militarism; sabbath economy embodied.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      4
+    ]
+  }
+}

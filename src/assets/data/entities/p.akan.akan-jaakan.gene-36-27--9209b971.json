@@ -1,0 +1,21 @@
+{
+  "name": "Akan (Akan/Jaakan)",
+  "type": "person",
+  "references": [
+    "Genesis 36:27"
+  ],
+  "blurb": "Son of Ezer; Horite descendant with variant spelling.",
+  "category": "genealogy",
+  "cross_references": [
+    "1 Chronicles 1:42"
+  ],
+  "id": "p.akan.akan-jaakan.gene-36-27--9209b971",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      36
+    ]
+  }
+}

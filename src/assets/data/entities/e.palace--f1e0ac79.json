@@ -1,0 +1,21 @@
+{
+  "id": "e.palace--f1e0ac79",
+  "name": "Palace",
+  "type": "entity",
+  "references": [
+    "Nah 2:6"
+  ],
+  "category": "royal",
+  "aka": [
+    "Hekhal"
+  ],
+  "blurb": "When river gates open, the palace totters—palatial glory cannot withstand divine flood.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      2
+    ]
+  }
+}

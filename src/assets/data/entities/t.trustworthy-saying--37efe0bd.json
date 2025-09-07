@@ -1,0 +1,23 @@
+{
+  "name": "trustworthy saying",
+  "type": "title",
+  "category": "formula",
+  "references": [
+    "1 Tim 1:15",
+    "2 Tim 2:11-13",
+    "Titus 3:8"
+  ],
+  "aka": [],
+  "id": "t.trustworthy-saying--37efe0bd",
+  "book_references": {
+    "1 Timothy": [
+      1
+    ],
+    "2 Timothy": [
+      2
+    ],
+    "Titus": [
+      3
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Romans 9:33 conflation",
+  "type": "figure",
+  "category": "textual-notes",
+  "references": [
+    "Rom 9:33"
+  ],
+  "note": "Conflates Isa 8:14 and 28:16; forms a ‘stumbling stone’ composite.",
+  "aka": [],
+  "id": "f.romans-9-33-conflation--27cd28db",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      9
+    ]
+  }
+}

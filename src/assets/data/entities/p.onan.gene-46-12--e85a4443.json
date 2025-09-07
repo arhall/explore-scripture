@@ -1,0 +1,21 @@
+{
+  "name": "Onan",
+  "type": "person",
+  "references": [
+    "Genesis 46:12"
+  ],
+  "blurb": "Second son of Judah who died in Canaan; remembered in the genealogy.",
+  "category": "genealogy",
+  "cross_references": [
+    "Genesis 38:10"
+  ],
+  "id": "p.onan.gene-46-12--e85a4443",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      46
+    ]
+  }
+}

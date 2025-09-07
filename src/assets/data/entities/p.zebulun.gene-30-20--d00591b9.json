@@ -1,0 +1,32 @@
+{
+  "name": "Zebulun",
+  "type": "person",
+  "references": [
+    "Genesis 30:20"
+  ],
+  "blurb": "Son of Leah; later coastal/merchant associations in blessing texts.",
+  "relations": {
+    "parents": [
+      "Jacob (Israel)",
+      "Leah"
+    ],
+    "children": [
+      "Sered",
+      "Elon",
+      "Jahleel"
+    ]
+  },
+  "category": "narrative",
+  "cross_references": [
+    "Genesis 49:13"
+  ],
+  "id": "p.zebulun.gene-30-20--d00591b9",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      30
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "e.the-best-of-them-is-like-a-brier--99c703e5",
+  "name": "The best of them is like a brier",
+  "type": "entity",
+  "references": [
+    "Micah 7:4"
+  ],
+  "category": "metaphor",
+  "blurb": "Elite likened to thorns—approach means snag and wound.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Micah": [
+      7
+    ]
+  }
+}

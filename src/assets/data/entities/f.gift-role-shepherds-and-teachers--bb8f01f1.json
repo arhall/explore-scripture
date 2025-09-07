@@ -1,0 +1,21 @@
+{
+  "name": "Gift role: shepherds and teachers",
+  "type": "figure",
+  "category": "gift-role",
+  "references": [
+    "Eph 4:11"
+  ],
+  "aka": [],
+  "id": "f.gift-role-shepherds-and-teachers--bb8f01f1",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      4
+    ]
+  }
+}

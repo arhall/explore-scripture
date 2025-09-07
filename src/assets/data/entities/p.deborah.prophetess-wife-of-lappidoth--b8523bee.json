@@ -1,0 +1,23 @@
+{
+  "name": "Deborah (prophetess, wife of Lappidoth)",
+  "type": "person",
+  "references": [
+    "Judges 4–5"
+  ],
+  "blurb": "Prophet-judge who leads from a palm-tree court; summons Barak; sings victory. Her leadership is maternal (‘a mother in Israel’), marrying wisdom, courage, and worship. Judges 5, a theologically rich poem, frames battle as God’s storm theophany.",
+  "category": "narrative",
+  "cross_references": [
+    "Judges 5:7"
+  ],
+  "id": "p.deborah.prophetess-wife-of-lappidoth--b8523bee",
+  "canonical_id": "p.deborah.rebekahs-nurse.gene-35-8--1da5a656",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      4,
+      5
+    ]
+  }
+}

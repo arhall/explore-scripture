@@ -1,0 +1,24 @@
+{
+  "name": "Abida",
+  "type": "person",
+  "references": [
+    "Genesis 25:3–4"
+  ],
+  "blurb": "Descendant of Midian; branch of Abraham’s Keturah-line.",
+  "relations": {
+    "parents": [
+      "Midian"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.abida.gene-25-3-4--6d07dea2",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      25
+    ]
+  }
+}

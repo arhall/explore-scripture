@@ -1,0 +1,21 @@
+{
+  "book": "Isaiah",
+  "chapter": 39,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "p.merodach-baladan-of-babylon--78b7a9b8",
+      "name": "Merodach‑Baladan of Babylon",
+      "type": "person",
+      "role": "king",
+      "refs_count": 1
+    },
+    {
+      "id": "e.hezekiahs-sickness-sign-of-the-shadow-and-babylonian-envoys--fc0959de",
+      "name": "Hezekiah’s sickness, sign of the shadow, and Babylonian envoys",
+      "type": "entity",
+      "role": "warning",
+      "refs_count": 1
+    }
+  ]
+}

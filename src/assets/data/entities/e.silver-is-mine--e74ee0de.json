@@ -1,0 +1,18 @@
+{
+  "id": "e.silver-is-mine--e74ee0de",
+  "name": "Silver is Mine",
+  "type": "entity",
+  "references": [
+    "Hag 2:8"
+  ],
+  "category": "theology-of-wealth",
+  "blurb": "Affirms divine ownership of resources mobilized for the house.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      2
+    ]
+  }
+}

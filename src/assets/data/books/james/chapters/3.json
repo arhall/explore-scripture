@@ -1,0 +1,77 @@
+{
+  "book": "James",
+  "chapter": 3,
+  "entity_count": 25,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.bits-in-horses-mouths--f413f9a2",
+      "name": "bits in horses’ mouths",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1
+    },
+    {
+      "id": "g.teachers-many--f37ce98c",
+      "name": "teachers (many)",
+      "type": "group",
+      "role": "leadership",
+      "refs_count": 1
+    },
+    {
+      "id": "g.bitter-jealousy-and-selfish-ambition--b7c5da55",
+      "name": "bitter jealousy and selfish ambition",
+      "type": "group",
+      "role": "vices",
+      "refs_count": 1
+    },
+    {
+      "id": "f.we-all-stumble-in-many-ways--6f864eec",
+      "name": "we all stumble in many ways",
+      "type": "figure",
+      "role": "humility",
+      "refs_count": 1
+    },
+    {
+      "id": "f.fig-tree-cannot-bear-olives--acaf9f54",
+      "name": "fig tree cannot bear olives",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1
+    },
+    {
+      "id": "e.set-on-fire-by-gehenna--bfb290bc",
+      "name": "set on fire by Gehenna",
+      "type": "entity",
+      "role": "judgment",
+      "refs_count": 1
+    },
+    {
+      "id": "f.spring-cannot-pour-both-fresh-and-salt-water--7da1b767",
+      "name": "spring cannot pour both fresh and salt water",
+      "type": "figure",
+      "role": "metaphor",
+      "refs_count": 1
+    },
+    {
+      "id": "f.gentle--ed70bb55",
+      "name": "gentle",
+      "type": "figure",
+      "role": "virtue",
+      "refs_count": 1
+    },
+    {
+      "id": "f.no-human-being-can-tame-the-tongue--276a5cec",
+      "name": "no human being can tame the tongue",
+      "type": "figure",
+      "role": "warning",
+      "refs_count": 1
+    }
+  ]
+}

@@ -1,0 +1,697 @@
+[
+  {
+    "id": "d.holy-spirit--ad652b9c",
+    "name": "Holy Spirit",
+    "type": "divine",
+    "url": "/entities/d.holy-spirit--ad652b9c/",
+    "blurb": "Divine agent of conception, anointing, speech, and mission—integral to the triadic baptismal name.",
+    "searchText": "holy spirit divine theology divine agent of conception, anointing, speech, and mission—integral to the triadic baptismal name. ",
+    "references": 53,
+    "books": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "2 Corinthians",
+      "Galatians",
+      "1 Corinthians",
+      "Philippians",
+      "Ephesians",
+      "Romans",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Hebrews",
+      "James",
+      "1 Peter",
+      "2 Peter",
+      "1 John"
+    ],
+    "category": "theology"
+  },
+  {
+    "id": "p.paul-saul--d4c08ff1",
+    "name": "Paul (Saul)",
+    "type": "person",
+    "url": "/entities/p.paul-saul--d4c08ff1/",
+    "blurb": "",
+    "searchText": "paul (saul) person apostle  ",
+    "references": 24,
+    "books": [
+      "Acts",
+      "Galatians",
+      "Philippians",
+      "Ephesians",
+      "Romans",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Titus",
+      "Philemon",
+      "2 Peter"
+    ],
+    "category": "apostle"
+  },
+  {
+    "id": "p.timothy--227fb1d9",
+    "name": "Timothy",
+    "type": "person",
+    "url": "/entities/p.timothy--227fb1d9/",
+    "blurb": "",
+    "searchText": "timothy person coworker  ",
+    "references": 12,
+    "books": [
+      "Acts",
+      "Philippians",
+      "Colossians",
+      "1 Thessalonians",
+      "2 Thessalonians",
+      "1 Timothy",
+      "2 Timothy",
+      "Philemon",
+      "Hebrews"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "e.macedonia-province--6bbaf226",
+    "name": "Macedonia (province)",
+    "type": "entity",
+    "url": "/entities/e.macedonia-province--6bbaf226/",
+    "blurb": "",
+    "searchText": "macedonia (province) entity province  e.macedonia-province--c2082639",
+    "references": 3,
+    "books": [
+      "Acts",
+      "Philippians"
+    ],
+    "category": "province"
+  },
+  {
+    "id": "g.deacons--a2471f07",
+    "name": "deacons",
+    "type": "group",
+    "url": "/entities/g.deacons--a2471f07/",
+    "blurb": "",
+    "searchText": "deacons group office  ",
+    "references": 2,
+    "books": [
+      "Philippians",
+      "1 Timothy"
+    ],
+    "category": "office"
+  },
+  {
+    "id": "g.overseers-bishops--72c3f6fb",
+    "name": "overseers (bishops)",
+    "type": "group",
+    "url": "/entities/g.overseers-bishops--72c3f6fb/",
+    "blurb": "",
+    "searchText": "overseers (bishops) group office  ",
+    "references": 2,
+    "books": [
+      "Philippians",
+      "1 Timothy"
+    ],
+    "category": "office"
+  },
+  {
+    "id": "f.day-of-christ--51813e18",
+    "name": "Day of Christ",
+    "type": "figure",
+    "url": "/entities/f.day-of-christ--51813e18/",
+    "blurb": "",
+    "searchText": "day of christ figure eschatology  ",
+    "references": 2,
+    "books": [
+      "Philippians"
+    ],
+    "category": "eschatology"
+  },
+  {
+    "id": "f.rejoice-always--8fd4f7a4",
+    "name": "Rejoice always",
+    "type": "figure",
+    "url": "/entities/f.rejoice-always--8fd4f7a4/",
+    "blurb": "",
+    "searchText": "rejoice always figure joy  ",
+    "references": 2,
+    "books": [
+      "Philippians",
+      "1 Thessalonians"
+    ],
+    "category": "joy"
+  },
+  {
+    "id": "g.beware-the-dogs-beware-the-mutilation--ea18f52e",
+    "name": "Beware the dogs; beware the mutilation",
+    "type": "group",
+    "url": "/entities/g.beware-the-dogs-beware-the-mutilation--ea18f52e/",
+    "blurb": "",
+    "searchText": "beware the dogs; beware the mutilation group opponents  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "opponents"
+  },
+  {
+    "id": "g.caesar-s-household--38c22228",
+    "name": "Caesar’s household",
+    "type": "group",
+    "url": "/entities/g.caesar-s-household--38c22228/",
+    "blurb": "",
+    "searchText": "caesar’s household group imperial  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "imperial"
+  },
+  {
+    "id": "g.clement-and-fellow-workers--b765d7b1",
+    "name": "Clement and fellow workers",
+    "type": "group",
+    "url": "/entities/g.clement-and-fellow-workers--b765d7b1/",
+    "blurb": "",
+    "searchText": "clement and fellow workers group coworkers  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "coworkers"
+  },
+  {
+    "id": "g.co-workers-in-the-book-of-life--c0cb7941",
+    "name": "Co-workers in the book of life",
+    "type": "group",
+    "url": "/entities/g.co-workers-in-the-book-of-life--c0cb7941/",
+    "blurb": "",
+    "searchText": "co-workers in the book of life group coworkers  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "coworkers"
+  },
+  {
+    "id": "g.enemies-of-the-cross-god-is-belly--6447803c",
+    "name": "Enemies of the cross; god is belly",
+    "type": "group",
+    "url": "/entities/g.enemies-of-the-cross-god-is-belly--6447803c/",
+    "blurb": "",
+    "searchText": "enemies of the cross; god is belly group opponents  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "opponents"
+  },
+  {
+    "id": "g.greetings-especially-from-caesar-s-household--d8aa4ab6",
+    "name": "Greetings especially from Caesar’s household",
+    "type": "group",
+    "url": "/entities/g.greetings-especially-from-caesar-s-household--d8aa4ab6/",
+    "blurb": "",
+    "searchText": "greetings especially from caesar’s household group imperial  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "imperial"
+  },
+  {
+    "id": "g.imperial-guard-praetorium--bfbcae93",
+    "name": "Imperial guard (praetorium)",
+    "type": "group",
+    "url": "/entities/g.imperial-guard-praetorium--bfbcae93/",
+    "blurb": "",
+    "searchText": "imperial guard (praetorium) group imperial  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "imperial"
+  },
+  {
+    "id": "g.rival-preachers-envy-strife--85c5ede0",
+    "name": "Rival preachers (envy/strife)",
+    "type": "group",
+    "url": "/entities/g.rival-preachers-envy-strife--85c5ede0/",
+    "blurb": "",
+    "searchText": "rival preachers (envy/strife) group opponents  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "opponents"
+  },
+  {
+    "id": "p.clement--b75b588b",
+    "name": "Clement",
+    "type": "person",
+    "url": "/entities/p.clement--b75b588b/",
+    "blurb": "",
+    "searchText": "clement person coworker  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "p.epaphroditus--e107e0d7",
+    "name": "Epaphroditus",
+    "type": "person",
+    "url": "/entities/p.epaphroditus--e107e0d7/",
+    "blurb": "",
+    "searchText": "epaphroditus person messenger, envoy  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "messenger, envoy"
+  },
+  {
+    "id": "p.epaphroditus-brother-worker-soldier--abe6047f",
+    "name": "Epaphroditus: brother, worker, soldier",
+    "type": "person",
+    "url": "/entities/p.epaphroditus-brother-worker-soldier--abe6047f/",
+    "blurb": "",
+    "searchText": "epaphroditus: brother, worker, soldier person commendation  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "commendation"
+  },
+  {
+    "id": "p.euodia--27015a2f",
+    "name": "Euodia",
+    "type": "person",
+    "url": "/entities/p.euodia--27015a2f/",
+    "blurb": "",
+    "searchText": "euodia person women-leaders  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "women-leaders"
+  },
+  {
+    "id": "p.syntyche--88bd2124",
+    "name": "Syntyche",
+    "type": "person",
+    "url": "/entities/p.syntyche--88bd2124/",
+    "blurb": "",
+    "searchText": "syntyche person women-leaders  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "women-leaders"
+  },
+  {
+    "id": "p.true-yokefellow-help-them--dca24072",
+    "name": "True yokefellow help them",
+    "type": "person",
+    "url": "/entities/p.true-yokefellow-help-them--dca24072/",
+    "blurb": "",
+    "searchText": "true yokefellow help them person appeal  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "appeal"
+  },
+  {
+    "id": "p.true-yokefellow-syzygus-disputed--16547c4b",
+    "name": "True yokefellow (Syzygus) (disputed)",
+    "type": "person",
+    "url": "/entities/p.true-yokefellow-syzygus-disputed--16547c4b/",
+    "blurb": "",
+    "searchText": "true yokefellow (syzygus) (disputed) person coworker  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "coworker"
+  },
+  {
+    "id": "f.approve-what-is-excellent--1098f932",
+    "name": "Approve what is excellent",
+    "type": "figure",
+    "url": "/entities/f.approve-what-is-excellent--1098f932/",
+    "blurb": "",
+    "searchText": "approve what is excellent figure discernment  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "discernment"
+  },
+  {
+    "id": "f.attain-to-the-resurrection--f1e1ffef",
+    "name": "Attain to the resurrection",
+    "type": "figure",
+    "url": "/entities/f.attain-to-the-resurrection--f1e1ffef/",
+    "blurb": "",
+    "searchText": "attain to the resurrection figure hope  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "hope"
+  },
+  {
+    "id": "f.book-of-life--e17f93fd",
+    "name": "Book of Life",
+    "type": "figure",
+    "url": "/entities/f.book-of-life--e17f93fd/",
+    "blurb": "",
+    "searchText": "book of life figure heavenly-register  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "heavenly-register"
+  },
+  {
+    "id": "f.book-of-life-register--69ed4e09",
+    "name": "Book of Life (register)",
+    "type": "figure",
+    "url": "/entities/f.book-of-life-register--69ed4e09/",
+    "blurb": "",
+    "searchText": "book of life (register) figure heavenly-register  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "heavenly-register"
+  },
+  {
+    "id": "f.count-all-as-loss-for-christ--1c09854e",
+    "name": "Count all as loss for Christ",
+    "type": "figure",
+    "url": "/entities/f.count-all-as-loss-for-christ--1c09854e/",
+    "blurb": "",
+    "searchText": "count all as loss for christ figure valuation  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "valuation"
+  },
+  {
+    "id": "f.count-others-more-significant--53a17eb2",
+    "name": "Count others more significant",
+    "type": "figure",
+    "url": "/entities/f.count-others-more-significant--53a17eb2/",
+    "blurb": "",
+    "searchText": "count others more significant figure humility  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "humility"
+  },
+  {
+    "id": "f.credentials-blameless-under-the-law--86948c2e",
+    "name": "Credentials: Blameless Under The Law",
+    "type": "figure",
+    "url": "/entities/f.credentials-blameless-under-the-law--86948c2e/",
+    "blurb": "",
+    "searchText": "credentials: blameless under the law figure credential  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "credential"
+  },
+  {
+    "id": "f.credentials-circumcised-the-eighth-day--3af261c1",
+    "name": "Credentials: Circumcised The Eighth Day",
+    "type": "figure",
+    "url": "/entities/f.credentials-circumcised-the-eighth-day--3af261c1/",
+    "blurb": "",
+    "searchText": "credentials: circumcised the eighth day figure credential  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "credential"
+  },
+  {
+    "id": "f.credentials-hebrew-of-hebrews--96ce7b60",
+    "name": "Credentials: Hebrew Of Hebrews",
+    "type": "figure",
+    "url": "/entities/f.credentials-hebrew-of-hebrews--96ce7b60/",
+    "blurb": "",
+    "searchText": "credentials: hebrew of hebrews figure credential  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "credential"
+  },
+  {
+    "id": "f.credentials-of-israel--b3fc7e1a",
+    "name": "Credentials: Of Israel",
+    "type": "figure",
+    "url": "/entities/f.credentials-of-israel--b3fc7e1a/",
+    "blurb": "",
+    "searchText": "credentials: of israel figure credential  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "credential"
+  },
+  {
+    "id": "f.credentials-persecutor-of-the-church--912275d1",
+    "name": "Credentials: Persecutor Of The Church",
+    "type": "figure",
+    "url": "/entities/f.credentials-persecutor-of-the-church--912275d1/",
+    "blurb": "",
+    "searchText": "credentials: persecutor of the church figure credential  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "credential"
+  },
+  {
+    "id": "f.credentials-pharisee--7d2b9acf",
+    "name": "Credentials: Pharisee",
+    "type": "figure",
+    "url": "/entities/f.credentials-pharisee--7d2b9acf/",
+    "blurb": "",
+    "searchText": "credentials: pharisee figure credential  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "credential"
+  },
+  {
+    "id": "f.credentials-tribe-of-benjamin--0956ea77",
+    "name": "Credentials: Tribe Of Benjamin",
+    "type": "figure",
+    "url": "/entities/f.credentials-tribe-of-benjamin--0956ea77/",
+    "blurb": "",
+    "searchText": "credentials: tribe of benjamin figure credential  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "credential"
+  },
+  {
+    "id": "f.defense-and-confirmation-of-the-gospel--b3607f2b",
+    "name": "Defense and confirmation of the gospel",
+    "type": "figure",
+    "url": "/entities/f.defense-and-confirmation-of-the-gospel--b3607f2b/",
+    "blurb": "",
+    "searchText": "defense and confirmation of the gospel figure apologetic  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "apologetic"
+  },
+  {
+    "id": "f.deliverance-through-prayer-and-spirit--e1207f4d",
+    "name": "Deliverance through prayer and Spirit",
+    "type": "figure",
+    "url": "/entities/f.deliverance-through-prayer-and-spirit--e1207f4d/",
+    "blurb": "",
+    "searchText": "deliverance through prayer and spirit figure hope  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "hope"
+  },
+  {
+    "id": "f.do-all-things-without-grumbling--82bae0cf",
+    "name": "Do all things without grumbling",
+    "type": "figure",
+    "url": "/entities/f.do-all-things-without-grumbling--82bae0cf/",
+    "blurb": "",
+    "searchText": "do all things without grumbling figure ethic  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "ethic"
+  },
+  {
+    "id": "f.do-not-be-anxious-pray-with-thanksgiving--e2e3ccfa",
+    "name": "Do not be anxious; pray with thanksgiving",
+    "type": "figure",
+    "url": "/entities/f.do-not-be-anxious-pray-with-thanksgiving--e2e3ccfa/",
+    "blurb": "",
+    "searchText": "do not be anxious; pray with thanksgiving figure prayer  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "prayer"
+  },
+  {
+    "id": "f.emptied-himself-kenosis--1e64008b",
+    "name": "Emptied himself (kenosis)",
+    "type": "figure",
+    "url": "/entities/f.emptied-himself-kenosis--1e64008b/",
+    "blurb": "",
+    "searchText": "emptied himself (kenosis) figure christology  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "christology"
+  },
+  {
+    "id": "f.euodia-and-syntyche-agree-in-the-lord--2110413a",
+    "name": "Euodia and Syntyche agree in the Lord",
+    "type": "figure",
+    "url": "/entities/f.euodia-and-syntyche-agree-in-the-lord--2110413a/",
+    "blurb": "",
+    "searchText": "euodia and syntyche agree in the lord figure appeal  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "appeal"
+  },
+  {
+    "id": "f.every-knee-bow-every-tongue-confess-isa-45-23--cf07e528",
+    "name": "Every knee bow; every tongue confess (Isa 45:23)",
+    "type": "figure",
+    "url": "/entities/f.every-knee-bow-every-tongue-confess-isa-45-23--cf07e528/",
+    "blurb": "",
+    "searchText": "every knee bow; every tongue confess (isa 45:23) figure ot-echo  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "ot-echo"
+  },
+  {
+    "id": "f.fellowship-of-his-sufferings--bb0dd9d9",
+    "name": "Fellowship of his sufferings",
+    "type": "figure",
+    "url": "/entities/f.fellowship-of-his-sufferings--bb0dd9d9/",
+    "blurb": "",
+    "searchText": "fellowship of his sufferings figure discipleship  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "discipleship"
+  },
+  {
+    "id": "f.forgetting-what-lies-behind--8cd184d4",
+    "name": "Forgetting what lies behind",
+    "type": "figure",
+    "url": "/entities/f.forgetting-what-lies-behind--8cd184d4/",
+    "blurb": "",
+    "searchText": "forgetting what lies behind figure focus  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "focus"
+  },
+  {
+    "id": "f.form-of-a-servant-likeness-of-men--b9cf9240",
+    "name": "Form of a servant; likeness of men",
+    "type": "figure",
+    "url": "/entities/f.form-of-a-servant-likeness-of-men--b9cf9240/",
+    "blurb": "",
+    "searchText": "form of a servant; likeness of men figure incarnation  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "incarnation"
+  },
+  {
+    "id": "f.form-of-god-morphe--c058d9cb",
+    "name": "Form of God (morphe)",
+    "type": "figure",
+    "url": "/entities/f.form-of-god-morphe--c058d9cb/",
+    "blurb": "",
+    "searchText": "form of god (morphe) figure christology  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "christology"
+  },
+  {
+    "id": "f.fragrant-offering-acceptable-to-god--6185ebf2",
+    "name": "Fragrant offering acceptable to God",
+    "type": "figure",
+    "url": "/entities/f.fragrant-offering-acceptable-to-god--6185ebf2/",
+    "blurb": "",
+    "searchText": "fragrant offering acceptable to god figure sacrifice  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "sacrifice"
+  },
+  {
+    "id": "f.giving-and-receiving-ledger--3c11d7a5",
+    "name": "Giving and receiving ledger",
+    "type": "figure",
+    "url": "/entities/f.giving-and-receiving-ledger--3c11d7a5/",
+    "blurb": "",
+    "searchText": "giving and receiving ledger figure partnership  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "partnership"
+  },
+  {
+    "id": "f.god-will-supply-every-need--e9a15b72",
+    "name": "God will supply every need",
+    "type": "figure",
+    "url": "/entities/f.god-will-supply-every-need--e9a15b72/",
+    "blurb": "",
+    "searchText": "god will supply every need figure promise  ",
+    "references": 1,
+    "books": [
+      "Philippians"
+    ],
+    "category": "promise"
+  }
+]

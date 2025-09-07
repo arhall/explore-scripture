@@ -1,0 +1,14 @@
+{
+  "name": "Influence on Revelation (throne, river, city)",
+  "type": "entity",
+  "references": [
+    "Ezekiel 1; 40–48; cf. Rev 4; 21–22"
+  ],
+  "blurb": "John riffs on Ezekiel’s imagery—Christian reception reads temple as eschatological presence fulfilled.",
+  "category": "reception",
+  "id": "e.influence-on-revelation.throne-river-city--997b8979",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {}
+}

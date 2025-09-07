@@ -1,0 +1,28 @@
+{
+  "name": "Eleazar",
+  "type": "person",
+  "references": [
+    "Exodus 6:23; 28:1",
+    "Leviticus 10:6–7; 16:32; 26:1",
+    "Numbers 3–4; 16–20; 27; 31; 34"
+  ],
+  "blurb": "Son of Aaron who will succeed him as priest; later father of Phinehas.",
+  "category": "narrative",
+  "cross_references": [
+    "Numbers 20:25–28",
+    "Numbers 20:28",
+    "Joshua 14:1"
+  ],
+  "id": "p.eleazar--b3d5a12a",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Exodus": [
+      6
+    ],
+    "Leviticus": [
+      10
+    ]
+  }
+}

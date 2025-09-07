@@ -1,0 +1,20 @@
+{
+  "name": "Tribal allotments (restored land)",
+  "type": "entity",
+  "references": [
+    "Ezekiel 47:13–48:7; 48:23–29"
+  ],
+  "blurb": "Bands from north to south equalize access; ancient names become eschatological geography.",
+  "category": "land",
+  "count": 12,
+  "count_note": "Twelve tribal allocations",
+  "id": "e.tribal-allotments.restored-land--4867a1f9",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      47
+    ]
+  }
+}

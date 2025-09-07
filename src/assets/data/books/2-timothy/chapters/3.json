@@ -1,0 +1,77 @@
+{
+  "book": "2 Timothy",
+  "chapter": 3,
+  "entity_count": 31,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.last-days-vice-ungrateful--071459ff",
+      "name": "Last-days vice: ungrateful",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.last-days-vice-swollen-with-conceit--85412df7",
+      "name": "Last-days vice: swollen with conceit",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.jannes-and-jambres-opposed-moses--8e3e14cc",
+      "name": "Jannes and Jambres opposed Moses",
+      "type": "figure",
+      "role": "opposition",
+      "refs_count": 1
+    },
+    {
+      "id": "f.avoid-such-people--ece4d273",
+      "name": "avoid such people",
+      "type": "figure",
+      "role": "separation",
+      "refs_count": 1
+    },
+    {
+      "id": "f.last-days-vice-without-self-control--3f46d3f7",
+      "name": "Last-days vice: without self-control",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.last-days-vice-abusive--c20f9db7",
+      "name": "Last-days vice: abusive",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.last-days-vice-reckless--a7680707",
+      "name": "Last-days vice: reckless",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.last-days-vice-treacherous--356babdb",
+      "name": "Last-days vice: treacherous",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1
+    },
+    {
+      "id": "f.last-days-vice-unholy--44746a67",
+      "name": "Last-days vice: unholy",
+      "type": "figure",
+      "role": "vice",
+      "refs_count": 1
+    }
+  ]
+}

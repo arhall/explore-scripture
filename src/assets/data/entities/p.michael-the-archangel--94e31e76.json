@@ -1,0 +1,17 @@
+{
+  "name": "Michael the archangel",
+  "type": "person",
+  "category": "angelic",
+  "references": [
+    "Jude 9"
+  ],
+  "aka": [
+    "Archangel Michael"
+  ],
+  "id": "p.michael-the-archangel--94e31e76",
+  "book_references": {
+    "Jude": [
+      9
+    ]
+  }
+}

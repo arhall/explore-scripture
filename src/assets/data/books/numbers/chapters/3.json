@@ -1,0 +1,77 @@
+{
+  "book": "Numbers",
+  "chapter": 3,
+  "entity_count": 14,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "p.aaron--cc77e332",
+      "name": "Aaron",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 6
+    },
+    {
+      "id": "g.gershonites--dc2282d0",
+      "name": "Gershonites",
+      "type": "group",
+      "role": "genealogy",
+      "refs_count": 1
+    },
+    {
+      "id": "g.kohathites--821a15c7",
+      "name": "Kohathites",
+      "type": "group",
+      "role": "genealogy",
+      "refs_count": 1
+    },
+    {
+      "id": "g.merarites--e46abf8a",
+      "name": "Merarites",
+      "type": "group",
+      "role": "genealogy",
+      "refs_count": 1
+    },
+    {
+      "id": "g.libnites--f4dde633",
+      "name": "Libnites",
+      "type": "group",
+      "role": "genealogy",
+      "refs_count": 1
+    },
+    {
+      "id": "g.shimeites--2e3a4b22",
+      "name": "Shimeites",
+      "type": "group",
+      "role": "genealogy",
+      "refs_count": 1
+    },
+    {
+      "id": "g.amramites--feffc60c",
+      "name": "Amramites",
+      "type": "group",
+      "role": "genealogy",
+      "refs_count": 1
+    },
+    {
+      "id": "g.izharites--ccc5dc3b",
+      "name": "Izharites",
+      "type": "group",
+      "role": "genealogy",
+      "refs_count": 1
+    },
+    {
+      "id": "g.hebronites--8b1a8c9a",
+      "name": "Hebronites",
+      "type": "group",
+      "role": "genealogy",
+      "refs_count": 1
+    }
+  ]
+}

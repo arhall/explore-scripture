@@ -1,0 +1,18 @@
+{
+  "name": "Spirit of the LORD / Holy Spirit",
+  "type": "entity",
+  "references": [
+    "Isaiah 11:2; 32:15; 42:1; 44:3; 59:21; 61:1; 63:10–14"
+  ],
+  "blurb": "Creative outpouring, anointing for justice, covenantal indwelling, and grieving presence; pneumatology braided through Isaiah’s hope.",
+  "category": "theology",
+  "id": "e.spirit-of-the-lord-holy-spirit--b36a77db",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Isaiah": [
+      11
+    ]
+  }
+}

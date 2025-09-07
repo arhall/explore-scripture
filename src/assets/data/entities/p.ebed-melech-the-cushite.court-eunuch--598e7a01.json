@@ -1,0 +1,18 @@
+{
+  "name": "Ebed-melech the Cushite (court eunuch)",
+  "type": "person",
+  "references": [
+    "Jeremiah 38:7–13; 39:15–18"
+  ],
+  "blurb": "Foreign courtier who risks favor to rescue Jeremiah from the cistern; receives a promise of deliverance for trusting the LORD.",
+  "category": "court",
+  "id": "p.ebed-melech-the-cushite.court-eunuch--598e7a01",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jeremiah": [
+      38
+    ]
+  }
+}

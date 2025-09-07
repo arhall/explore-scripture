@@ -1,0 +1,21 @@
+{
+  "name": "Bitterness item: Wrath",
+  "type": "figure",
+  "category": "vice",
+  "references": [
+    "Eph 4:31"
+  ],
+  "aka": [],
+  "id": "f.bitterness-item-wrath--888bad72",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Ephesians": [
+      4
+    ]
+  }
+}

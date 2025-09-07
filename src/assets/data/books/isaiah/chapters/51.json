@@ -1,0 +1,28 @@
+{
+  "book": "Isaiah",
+  "chapter": 51,
+  "entity_count": 3,
+  "entities": [
+    {
+      "id": "f.the-arm-of-the-lord--95ac4f7b",
+      "name": "The Arm of the LORD",
+      "type": "figure",
+      "role": "theophany",
+      "refs_count": 1
+    },
+    {
+      "id": "e.cup-of-wrath-removed-and-given--a7adc2ee",
+      "name": "Cup of wrath removed and given",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1
+    },
+    {
+      "id": "e.comfort-new-exodus-program--5bc24efa",
+      "name": "Comfort–New Exodus program",
+      "type": "entity",
+      "role": "gospel",
+      "refs_count": 1
+    }
+  ]
+}

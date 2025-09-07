@@ -1,0 +1,18 @@
+{
+  "name": "Twelfth year, first day (oracle vs Egypt)",
+  "type": "entity",
+  "references": [
+    "Ezekiel 32:1"
+  ],
+  "blurb": "Funeral song date stamp.",
+  "category": "chronology",
+  "id": "e.twelfth-year-first-day--dd0d84c4",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      32
+    ]
+  }
+}

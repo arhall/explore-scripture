@@ -1,0 +1,19 @@
+{
+  "name": "Ephraim",
+  "type": "group",
+  "references": [
+    "Hosea",
+    "Obadiah 1:19"
+  ],
+  "blurb": "Tribal metonym for northern kingdom.",
+  "category": "tribe",
+  "id": "g.ephraim--5c67cb1c",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Obadiah": [
+      1
+    ]
+  }
+}

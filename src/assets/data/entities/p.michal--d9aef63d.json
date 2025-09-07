@@ -1,0 +1,22 @@
+{
+  "name": "Michal",
+  "type": "person",
+  "references": [
+    "1 Samuel 18:20–28; 19:11–17"
+  ],
+  "blurb": "Saul’s daughter who loves David; aids his escape with a **teraphim** ruse—loyalty at personal risk.",
+  "relations": {
+    "father": "Saul",
+    "husband": "David"
+  },
+  "category": "narrative",
+  "id": "p.michal--d9aef63d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      18
+    ]
+  }
+}

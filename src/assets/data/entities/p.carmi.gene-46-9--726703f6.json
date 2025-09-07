@@ -1,0 +1,25 @@
+{
+  "name": "Carmi",
+  "type": "person",
+  "references": [
+    "Genesis 46:9",
+    "Exodus 6:14"
+  ],
+  "blurb": "Son of Reuben listed among those who went to Egypt.",
+  "category": "genealogy",
+  "cross_references": [
+    "Genesis 46:9"
+  ],
+  "id": "p.carmi.gene-46-9--726703f6",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      46
+    ],
+    "Exodus": [
+      6
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Timnite woman (Samson’s first wife)",
+  "type": "person",
+  "references": [
+    "Judges 14"
+  ],
+  "blurb": "Marriage across enemy lines becomes a riddle and a rupture—personal folly intersects with divine strategy.",
+  "category": "narrative",
+  "id": "p.timnite-woman.samsons-first-wife--21cb1040",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Judges": [
+      14
+    ]
+  }
+}

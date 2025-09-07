@@ -1,0 +1,21 @@
+{
+  "name": "flower of grass withers",
+  "type": "figure",
+  "category": "metaphor",
+  "references": [
+    "Jas 1:10-11"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Isa 40:6-8",
+      "type": "allusion"
+    }
+  ],
+  "aka": [],
+  "id": "f.flower-of-grass-withers--c8120790",
+  "book_references": {
+    "James": [
+      1
+    ]
+  }
+}

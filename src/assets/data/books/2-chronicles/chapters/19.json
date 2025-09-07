@@ -1,0 +1,21 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 19,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "p.jehoshaphat-king-of-judah--81a933e8",
+      "name": "Jehoshaphat king of Judah",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 1
+    },
+    {
+      "id": "e.judicial-and-priestly-reforms.amariah-zebadiah--3e348e25",
+      "name": "Judicial and priestly reforms (Amariah, Zebadiah)",
+      "type": "entity",
+      "role": "ethics",
+      "refs_count": 1
+    }
+  ]
+}

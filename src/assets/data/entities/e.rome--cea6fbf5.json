@@ -1,0 +1,30 @@
+{
+  "name": "Rome",
+  "type": "entity",
+  "category": "city",
+  "references": [
+    "Rom 1:7,15",
+    "Rom 15:24,28",
+    "Rom 16:27",
+    "2 Tim context",
+    "2 Tim 4:10,13,20,22"
+  ],
+  "aka": [],
+  "id": "e.rome--cea6fbf5",
+  "source_books": [
+    "Epistles + Apocalypse (Combined)"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Romans": [
+      1,
+      15,
+      16
+    ],
+    "2 Timothy": [
+      4
+    ]
+  }
+}

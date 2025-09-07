@@ -1,0 +1,24 @@
+{
+  "name": "Seba",
+  "type": "person",
+  "references": [
+    "Genesis 10:7–12"
+  ],
+  "blurb": "Descendant of Cush; associated with regions to Israel’s south.",
+  "relations": {
+    "parents": [
+      "Cush"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.seba.gene-10-7-12--5747139f",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      10
+    ]
+  }
+}

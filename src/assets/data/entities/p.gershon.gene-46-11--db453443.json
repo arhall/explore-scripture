@@ -1,0 +1,25 @@
+{
+  "name": "Gershon",
+  "type": "person",
+  "references": [
+    "Genesis 46:11",
+    "Exodus 6:16–17"
+  ],
+  "blurb": "Son of Levi; later a Levitical clan progenitor.",
+  "category": "genealogy",
+  "cross_references": [
+    "Numbers 3:17"
+  ],
+  "id": "p.gershon.gene-46-11--db453443",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      46
+    ],
+    "Exodus": [
+      6
+    ]
+  }
+}

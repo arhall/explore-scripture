@@ -1,0 +1,23 @@
+{
+  "name": "Men of Egypt",
+  "type": "group",
+  "references": [
+    "Genesis 43–47"
+  ],
+  "blurb": "Collective populace impacted by the famine and by Joseph’s policies—juxtaposing survival with the costs of royal economy.",
+  "category": "narrative",
+  "cross_references": [],
+  "id": "g.men-of-egypt.gene-43-47--7166a39d",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      43,
+      44,
+      45,
+      46,
+      47
+    ]
+  }
+}

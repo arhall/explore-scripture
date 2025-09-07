@@ -1,0 +1,24 @@
+{
+  "name": "Kidron Valley & the Garden",
+  "type": "entity",
+  "category": "site",
+  "references": [
+    "John 18:1"
+  ],
+  "note": "Garden across the Kidron; harmonized with Gethsemane.",
+  "aka": [],
+  "id": "e.kidron-valley-the-garden--77b5abea",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      18
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "g.heavens--14559d2e",
+  "name": "Heavens",
+  "type": "group",
+  "references": [
+    "Hag 1:10"
+  ],
+  "category": "cosmic-domain",
+  "blurb": "Part of the created order enlisted in covenant discipline (withholding dew).",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Haggai": [
+      1
+    ]
+  }
+}

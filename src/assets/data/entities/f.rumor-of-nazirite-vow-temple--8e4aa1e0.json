@@ -1,0 +1,23 @@
+{
+  "name": "Rumor of Nazirite vow (Temple)",
+  "type": "figure",
+  "category": "controversy",
+  "references": [
+    "Acts 21:20–26"
+  ],
+  "aka": [],
+  "id": "f.rumor-of-nazirite-vow-temple--8e4aa1e0",
+  "source_book": "Acts",
+  "source_books": [
+    "Acts",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Acts": [
+      21
+    ]
+  }
+}

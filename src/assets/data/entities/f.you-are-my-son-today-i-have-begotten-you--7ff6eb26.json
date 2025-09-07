@@ -1,0 +1,21 @@
+{
+  "name": "You are my Son; today I have begotten you",
+  "type": "figure",
+  "category": "ot-catena",
+  "references": [
+    "Heb 1:5-14"
+  ],
+  "ot_quotes": [
+    {
+      "src": "Ps 2:7",
+      "type": "quote"
+    }
+  ],
+  "aka": [],
+  "id": "f.you-are-my-son-today-i-have-begotten-you--7ff6eb26",
+  "book_references": {
+    "Hebrews": [
+      1
+    ]
+  }
+}

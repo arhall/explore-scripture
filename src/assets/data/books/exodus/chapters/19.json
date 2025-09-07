@@ -1,0 +1,21 @@
+{
+  "book": "Exodus",
+  "chapter": 19,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "p.moses--2c0fba85",
+      "name": "Moses",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 11
+    },
+    {
+      "id": "p.aaron--cc77e332",
+      "name": "Aaron",
+      "type": "person",
+      "role": "narrative",
+      "refs_count": 6
+    }
+  ]
+}

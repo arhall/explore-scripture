@@ -1,0 +1,24 @@
+{
+  "name": "Dumah",
+  "type": "person",
+  "references": [
+    "Genesis 25:13–16"
+  ],
+  "blurb": "One of the twelve tribal leaders descended from Ishmael; their encampments stretched from Havilah to Shur.",
+  "relations": {
+    "parents": [
+      "Ishmael"
+    ]
+  },
+  "category": "genealogy",
+  "cross_references": [],
+  "id": "p.dumah.gene-25-13-16--97fd7fd1",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Genesis": [
+      25
+    ]
+  }
+}

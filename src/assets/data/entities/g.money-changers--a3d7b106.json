@@ -1,0 +1,29 @@
+{
+  "name": "Money-changers",
+  "type": "group",
+  "category": "economy",
+  "references": [
+    "Matt 21:12–13",
+    "Mark 11:15–17"
+  ],
+  "blurb": "Commercialization of sacred space rebuked; zeal for prayer to the nations.",
+  "aka": [],
+  "id": "g.money-changers--a3d7b106",
+  "source_book": "Matthew",
+  "source_books": [
+    "Matthew",
+    "Mark",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "Matthew": [
+      21
+    ],
+    "Mark": [
+      11
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 5,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "f.argument-map-index--c44b9b3a",
+      "name": "Argument map (index)",
+      "type": "figure",
+      "role": "index",
+      "refs_count": 17
+    },
+    {
+      "id": "f.ministry-of-reconciliation-ambassadors--fca353a8",
+      "name": "Ministry of reconciliation (ambassadors)",
+      "type": "figure",
+      "role": "reconciliation",
+      "refs_count": 1
+    },
+    {
+      "id": "f.earthly-tent-vs-building-from-god--885d05c3",
+      "name": "Earthly tent vs building from God",
+      "type": "figure",
+      "role": "resurrection-hope",
+      "refs_count": 1
+    },
+    {
+      "id": "f.made-sin-for-us-2-cor-5-21--726c425f",
+      "name": "Made sin for us (2 Cor 5:21)",
+      "type": "figure",
+      "role": "atonement",
+      "refs_count": 1
+    },
+    {
+      "id": "f.integrity-notes-composite-letter--69411f19",
+      "name": "Integrity notes (composite-letter)",
+      "type": "figure",
+      "role": "integrity-notes",
+      "refs_count": 1
+    }
+  ]
+}

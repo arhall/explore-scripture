@@ -1,0 +1,56 @@
+{
+  "book": "Matthew",
+  "chapter": 28,
+  "entity_count": 7,
+  "entities": [
+    {
+      "id": "g.angels--b473a1d0",
+      "name": "Angels",
+      "type": "group",
+      "role": "heavenly-host",
+      "refs_count": 5
+    },
+    {
+      "id": "f.great-commission--ab50a69e",
+      "name": "Great Commission",
+      "type": "figure",
+      "role": "commission",
+      "refs_count": 1
+    },
+    {
+      "id": "e.galilee--b36c23b8",
+      "name": "Galilee",
+      "type": "entity",
+      "role": "region",
+      "refs_count": 5
+    },
+    {
+      "id": "g.guards-at-the-tomb--1051127a",
+      "name": "Guards at the tomb",
+      "type": "group",
+      "role": "military",
+      "refs_count": 2
+    },
+    {
+      "id": "d.holy-spirit--ad652b9c",
+      "name": "Holy Spirit",
+      "type": "divine",
+      "role": "theology",
+      "refs_count": 53
+    },
+    {
+      "id": "p.mary-mother-of-james-and-joseph--5aece911",
+      "name": "Mary (mother of James and Joseph)",
+      "type": "person",
+      "role": "witness",
+      "refs_count": 2
+    },
+    {
+      "id": "p.mary-magdalene--6dd9b3a6",
+      "name": "Mary Magdalene",
+      "type": "person",
+      "role": "witness",
+      "refs_count": 2
+    }
+  ]
+}

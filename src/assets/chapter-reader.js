@@ -674,6 +674,12 @@ class ChapterReader {
   }
 
   initializeChapterButtons() {
+    // Check if buttons have already been initialized
+    if (document.querySelector('.chapter-reader-button')) {
+      console.log('[ChapterReader] Buttons already exist, skipping initialization');
+      return;
+    }
+    
     // Find all Enduring Word commentary links and add chapter reader buttons
     const commentaryLinks = document.querySelectorAll('a[href*="enduringword.com"]');
     const processedChapters = new Set();
@@ -791,6 +797,11 @@ class ChapterReader {
   }
 
   addChapterReaderButton(commentaryLink, chapterInfo) {
+    // Skip if this link is already processed (has a wrapper parent)
+    if (commentaryLink.parentNode && commentaryLink.parentNode.classList.contains('commentary-links')) {
+      return;
+    }
+    
     // Create wrapper for both links
     const wrapper = document.createElement('div');
     wrapper.className = 'commentary-links';
@@ -1657,6 +1668,8 @@ function initializeChapterReader() {
   if (!window.chapterReaderInstance) {
     window.chapterReaderInstance = new ChapterReader();
     console.log('[ChapterReader] Initialized and chapter buttons added');
+  } else {
+    console.log('[ChapterReader] Instance already exists, skipping initialization');
   }
 }
 

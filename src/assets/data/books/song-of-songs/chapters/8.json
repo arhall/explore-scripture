@@ -1,0 +1,21 @@
+{
+  "book": "Song of Songs",
+  "chapter": 8,
+  "entity_count": 2,
+  "entities": [
+    {
+      "id": "g.companions-friends-of-the-bridegroom--3fddac10",
+      "name": "Companions/friends of the bridegroom",
+      "type": "group",
+      "role": "chorus",
+      "refs_count": 1
+    },
+    {
+      "id": "e.covenantal-love-strong-as-death--78b0a609",
+      "name": "Covenantal love: strong as death",
+      "type": "entity",
+      "role": "theology",
+      "refs_count": 1
+    }
+  ]
+}

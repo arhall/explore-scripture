@@ -1,0 +1,19 @@
+{
+  "name": "Josiah king of Judah (reformer)",
+  "type": "person",
+  "references": [
+    "2 Chronicles 34–35"
+  ],
+  "blurb": "Seeks God young, purges high places, hears the book, renews covenant, and hosts a Passover unequaled since Samuel.",
+  "category": "narrative",
+  "id": "p.josiah-king-of-judah.reformer--a10d5584",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "2 Chronicles": [
+      34,
+      35
+    ]
+  }
+}

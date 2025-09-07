@@ -1,0 +1,27 @@
+{
+  "name": "Paraclete sayings (index)",
+  "type": "figure",
+  "category": "index",
+  "references": [
+    "John 14:16–26",
+    "John 15:26–27",
+    "John 16:7–15"
+  ],
+  "aka": [],
+  "id": "f.paraclete-sayings-index--af55cb78",
+  "source_book": "John",
+  "source_books": [
+    "John",
+    "GospelsAndActs"
+  ],
+  "source_testaments": [
+    "NT"
+  ],
+  "book_references": {
+    "John": [
+      14,
+      15,
+      16
+    ]
+  }
+}

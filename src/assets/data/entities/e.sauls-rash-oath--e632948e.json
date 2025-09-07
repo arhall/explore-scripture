@@ -1,0 +1,18 @@
+{
+  "name": "Saul’s rash oath",
+  "type": "entity",
+  "references": [
+    "1 Samuel 14:24–46"
+  ],
+  "blurb": "Ascetic zeal imperils Jonathan; victory muted by foolish leadership.",
+  "category": "ethics",
+  "id": "e.sauls-rash-oath--e632948e",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "1 Samuel": [
+      14
+    ]
+  }
+}

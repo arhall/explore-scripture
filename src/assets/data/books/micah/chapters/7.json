@@ -1,0 +1,77 @@
+{
+  "book": "Micah",
+  "chapter": 7,
+  "entity_count": 13,
+  "entities": [
+    {
+      "id": "e.no-cluster-to-eat-first-ripe-fig-desired--f07c29be",
+      "name": "No cluster to eat—first-ripe fig desired",
+      "type": "entity",
+      "role": "lament",
+      "refs_count": 1
+    },
+    {
+      "id": "e.the-best-of-them-is-like-a-brier--99c703e5",
+      "name": "The best of them is like a brier",
+      "type": "entity",
+      "role": "metaphor",
+      "refs_count": 1
+    },
+    {
+      "id": "e.trust-not-in-neighbor-guard-your-lips--1d2b9e70",
+      "name": "Trust not in neighbor; guard your lips",
+      "type": "entity",
+      "role": "decay",
+      "refs_count": 1
+    },
+    {
+      "id": "g.faithful-remnant-gathered-healed--a7f43d10",
+      "name": "Faithful remnant (gathered, healed)",
+      "type": "group",
+      "role": "remnant",
+      "refs_count": 4
+    },
+    {
+      "id": "g.egypt-and-assyria-restored-pathways--aa9f3d04",
+      "name": "Egypt & Assyria restored pathways",
+      "type": "group",
+      "role": "nations",
+      "refs_count": 1
+    },
+    {
+      "id": "g.nations-who-gloat-over-zion--c7a0e3d5",
+      "name": "Nations who gloat over Zion",
+      "type": "group",
+      "role": "nations",
+      "refs_count": 3
+    },
+    {
+      "id": "e.who-is-a-god-like-you--b3f108a0",
+      "name": "Who is a God like you? (Mi-kah-yah)",
+      "type": "entity",
+      "role": "doxology",
+      "refs_count": 1
+    },
+    {
+      "id": "e.he-will-tread-our-iniquities-underfoot--ac078f53",
+      "name": "He will tread our iniquities underfoot",
+      "type": "entity",
+      "role": "forgiveness",
+      "refs_count": 1
+    },
+    {
+      "id": "e.cast-all-our-sins-into-the-depths-of-the-sea--3f1a7b26",
+      "name": "Cast all our sins into the depths of the sea",
+      "type": "entity",
+      "role": "forgiveness",
+      "refs_count": 1
+    },
+    {
+      "id": "e.light-in-darkness-bear-indignation--607b1fe2",
+      "name": "Light in darkness—bear indignation, He will plead my cause",
+      "type": "entity",
+      "role": "hope",
+      "refs_count": 1
+    }
+  ]
+}

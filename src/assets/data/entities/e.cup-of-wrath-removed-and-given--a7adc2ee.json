@@ -1,0 +1,18 @@
+{
+  "name": "Cup of wrath removed and given",
+  "type": "entity",
+  "references": [
+    "Isaiah 51:17,22; 63:6"
+  ],
+  "blurb": "Jerusalem drinks the cup of staggering; God takes it from her hand and gives it to oppressors—justice meets mercy.",
+  "category": "theology",
+  "id": "e.cup-of-wrath-removed-and-given--a7adc2ee",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Isaiah": [
+      51
+    ]
+  }
+}

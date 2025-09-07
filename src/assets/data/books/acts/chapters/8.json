@@ -1,0 +1,42 @@
+{
+  "book": "Acts",
+  "chapter": 8,
+  "entity_count": 5,
+  "entities": [
+    {
+      "id": "f.textual-note-acts-8-37--f87bb2f5",
+      "name": "Textual note: Acts 8:37",
+      "type": "figure",
+      "role": "textual-notes",
+      "refs_count": 1
+    },
+    {
+      "id": "p.ethiopian-eunuch-gaza-road--536d0bac",
+      "name": "Ethiopian eunuch (Gaza road)",
+      "type": "person",
+      "role": "convert",
+      "refs_count": 1
+    },
+    {
+      "id": "p.philip-the-evangelist--3ab8205e",
+      "name": "Philip the Evangelist",
+      "type": "person",
+      "role": "evangelist",
+      "refs_count": 3
+    },
+    {
+      "id": "f.philip-in-samaria--17481805",
+      "name": "Philip in Samaria",
+      "type": "figure",
+      "role": "mission",
+      "refs_count": 1
+    },
+    {
+      "id": "p.simon-magus--ebcf22c3",
+      "name": "Simon Magus",
+      "type": "person",
+      "role": "opponent",
+      "refs_count": 1
+    }
+  ]
+}

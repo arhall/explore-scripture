@@ -1,0 +1,77 @@
+{
+  "book": "Habakkuk",
+  "chapter": 3,
+  "entity_count": 31,
+  "entities": [
+    {
+      "id": "p.habakkuk--d7d46a7f",
+      "name": "Habakkuk",
+      "type": "person",
+      "role": "prophet",
+      "refs_count": 2
+    },
+    {
+      "id": "p.priests-temple-musicians--de449f1b",
+      "name": "Priests/Temple musicians",
+      "type": "person",
+      "role": "cultic-staff",
+      "refs_count": 2
+    },
+    {
+      "id": "p.the-choirmaster--9e8e36ac",
+      "name": "The Choirmaster",
+      "type": "person",
+      "role": "musical-director",
+      "refs_count": 1
+    },
+    {
+      "id": "f.divine-theophany--ad1d1c3b",
+      "name": "Divine Theophany",
+      "type": "figure",
+      "role": "theophany",
+      "refs_count": 1
+    },
+    {
+      "id": "f.storm-whirlwind--937295a0",
+      "name": "Storm/Whirlwind",
+      "type": "figure",
+      "role": "theophany-element",
+      "refs_count": 1
+    },
+    {
+      "id": "f.earthquake--d092b086",
+      "name": "Earthquake",
+      "type": "figure",
+      "role": "theophany-element",
+      "refs_count": 1
+    },
+    {
+      "id": "f.rivers-sea-split--f9914f79",
+      "name": "Rivers/Sea split",
+      "type": "figure",
+      "role": "theophany-element",
+      "refs_count": 1
+    },
+    {
+      "id": "f.arrows-spear-of-light--6b7f5944",
+      "name": "Arrows/Spear of light",
+      "type": "figure",
+      "role": "theophany-weapon",
+      "refs_count": 2
+    },
+    {
+      "id": "f.sun-and-moon-stand--b7c0aab8",
+      "name": "Sun and Moon stand",
+      "type": "figure",
+      "role": "cosmic-sign",
+      "refs_count": 1
+    },
+    {
+      "id": "f.pestilence-plague--eece80ff",
+      "name": "Pestilence/Plague",
+      "type": "figure",
+      "role": "theophany-attendant",
+      "refs_count": 1
+    }
+  ]
+}

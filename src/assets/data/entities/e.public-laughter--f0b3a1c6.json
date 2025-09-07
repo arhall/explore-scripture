@@ -1,0 +1,21 @@
+{
+  "id": "e.public-laughter--f0b3a1c6",
+  "name": "Public laughter",
+  "type": "entity",
+  "references": [
+    "Nah 3:19"
+  ],
+  "category": "shame-culture",
+  "aka": [
+    "Clapping hands"
+  ],
+  "blurb": "Communal mockery marks tyrant’s end; the nations applaud the justice they longed for.",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Nahum": [
+      3
+    ]
+  }
+}

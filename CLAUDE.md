@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Bible Explorer is a comprehensive static Bible study platform built with Eleventy (11ty). It features 66 biblical books, 229 character studies, interactive chapter reading with live translation switching, and a modern UX design optimized for both desktop and mobile study experiences. The site generates 300+ pages and is optimized for Cloudflare Pages deployment.
+Bible Explorer is a comprehensive static Bible study platform built with Eleventy (11ty). It features 66 biblical books, interactive chapter reading with live translation switching, and a modern UX design optimized for both desktop and mobile study experiences. The site is optimized for Cloudflare Pages deployment.
 
 ## Development Commands
 
@@ -35,12 +35,7 @@ The dev server runs Eleventy with `--serve` flag, providing live reload during d
 ### Data-Driven Structure
 - **`src/_data/books.json`**: Contains all 66 biblical books with metadata (testament, category, author, language) and `chapterSummaries` object for chapter-by-chapter content
 - **`src/_data/categories.js`**: Defines the 10 biblical categories with descriptions and testament associations, dynamically calculates book counts
-- **`src/_data/characters.js`**: All biblical characters dynamically loaded from charactersByBook files with basic metadata and appearance tracking
-- **`src/_data/charactersForPages.js`**: Character data formatted for individual page generation
-- **`src/_data/characterProfiles.js`**: Detailed character study profiles with gospel connections and biographical information
-- **`src/_data/charactersByBook/`**: Character appearance data organized by individual biblical books (66 JSON files)
 - **`src/_data/bibleProjectVideos.json`**: YouTube video data for Bible Project overview videos integrated into book pages
-- **`src/_data/characterGospelInsights.js`**: Gospel connections and insights for character studies
 - **`src/_data/crossReferences.js`**: Cross-reference data for scripture connections
 - **`src/_data/gospelThreads.js`**: Thematic gospel thread data
 
@@ -54,14 +49,11 @@ The dev server runs Eleventy with `--serve` flag, providing live reload during d
   - High contrast mode and dyslexia-friendly options
   - Service worker integration and PWA features
 - **Book Layout** (`src/_includes/layouts/book.njk`): Individual book pages with metadata display, chapter summary tables, integrated chapter reader, and commentary buttons
-- **Character Layout** (`src/_includes/layouts/character.njk`): Professional character study pages with gospel connections
 - **Category Layout** (`src/_includes/layouts/category.njk`): Lists books within each category
 - **Components**: `src/_includes/components/breadcrumb.njk` for navigation breadcrumbs
 - **Macros**: `src/_includes/macros/scripture.njk` for scripture reference formatting
 - **Dynamic Page Generation**: 
   - Books: `src/books.njk` generates 66 individual book pages
-  - Characters: `src/characters.njk` generates character study pages
-  - Character Pagination: `src/characters-paginated.njk` with pagination support
   - Categories: `src/categories.njk` and `src/categories-dynamic.njk` for category pages
   - Gospel Thread: `src/gospel-thread.njk` for thematic connections
   - Examples: `src/examples/` with enhanced chapter examples
@@ -84,12 +76,11 @@ The dev server runs Eleventy with `--serve` flag, providing live reload during d
 - **Search Engine** (`src/assets/search-engine.js`): Advanced unified search system
   - Fuzzy matching with n-gram indexing and relevance scoring
   - Biblical synonyms and stop word filtering
-  - Search across books, chapters, characters, and categories
+  - Search across books, chapters, and categories
   - Performance optimization with caching and debouncing
   - Autocomplete and suggestion system
 - **Search Interface** (`src/assets/search-interface.js`): UI components for search functionality
 - **Scripture Widget** (`src/assets/scripture-widget.js`): Hover/tap Scripture references with verse previews
-- **Character Search** (`src/assets/character-search.js`): Fast client-side character search with filtering
 - **Theme Manager** (`src/assets/theme-manager.js`): Comprehensive theme system with multiple options
 - **Module Loader** (`src/assets/module-loader.js`): Dynamic JavaScript module loading with lazy loading for performance
   - Priority loading for critical modules on specific page types
@@ -107,21 +98,17 @@ The dev server runs Eleventy with `--serve` flag, providing live reload during d
 - Home: `/` (lists categories and books)
 - Categories: `/categories/` (category overview) and `/categories/{slug}/` (individual category pages)
 - Books: `/books/{slug}/` (individual book pages with chapter summaries)
-- Characters: `/characters/` (character listing) and `/characters/{slug}/` (individual character study pages)
+- Entities: `/entities/` (entity overview) and `/entities/{entity-id}/` (individual entity pages)
 - Gospel Thread: `/gospel-thread/` (thematic connections throughout scripture)
 - Links: `/links/` (external resources and references)
 
 ### Content Management
 - **Books**: Chapter summaries stored as key-value pairs in `chapterSummaries` objects (chapter number as key, summary text as value)
-- **Characters**: Detailed profiles in `characterProfiles.js` with study materials, gospel connections, and modern applications
-- **Character Appearances**: Tracked per book with chapter-level precision for navigation
-- **Gospel Connections**: Thematic data showing how characters point to Christ with theological insights
-- **Markdown Support**: Rich formatting available in summary strings and character profiles
+- **Markdown Support**: Rich formatting available in summary strings
 
 ### Modern UX Design
 - **Professional Styling**: Clean, minimal CSS with CSS custom properties for theming
 - **Responsive Grid**: CSS Grid and Flexbox for optimal layouts across devices  
-- **Character Pages**: Card-based design with clean typography and optimal information architecture
 - **Mobile-First**: Responsive design prioritizing mobile Bible study experience
 - **Theme System**: Comprehensive theming with 24 color options and dark mode as default
 - **Accessibility**: ARIA labels, keyboard navigation, focus states, and semantic HTML
@@ -134,14 +121,9 @@ src/
 ├── _data/                    # Data files for content generation
 │   ├── books.json           # All 66 biblical books with metadata and chapter summaries
 │   ├── categories.js        # 10 biblical categories with dynamic book counts
-│   ├── characters.js        # Character data dynamically loaded from charactersByBook
-│   ├── charactersForPages.js # Character data formatted for page generation
-│   ├── characterProfiles.js  # Detailed character studies with biographical data
-│   ├── characterGospelInsights.js # Gospel connections for characters
 │   ├── crossReferences.js   # Scripture cross-reference data
 │   ├── gospelThreads.js     # Thematic gospel thread data
 │   ├── bibleProjectVideos.json # YouTube integration data
-│   └── charactersByBook/    # Character appearances by book (66 JSON files)
 ├── _includes/               # Layouts and reusable templates
 │   ├── components/         # Reusable components
 │   │   └── breadcrumb.njk  # Navigation breadcrumbs
@@ -149,21 +131,22 @@ src/
 │   │   ├── base-minimal.njk # Clean base with theme system
 │   │   ├── base.njk        # Enhanced base with full features
 │   │   ├── book.njk        # Individual book pages with videos
-│   │   ├── character.njk   # Character study template
 │   │   └── category.njk    # Category listing pages
 │   └── macros/             # Template macros
 │       └── scripture.njk   # Scripture reference formatting
 ├── assets/                 # Interactive components and static assets
 │   ├── data/              # Generated data for client-side use
+│   │   ├── books/         # Individual book data files
+│   │   ├── entities/      # Entity data files (5516 entities)
 │   │   ├── books.json     # Books data for search
 │   │   ├── categories.json # Categories data for search
-│   │   ├── characters.json # Characters data for search
+│   │   ├── entities-search.json # Entity search index
+│   │   ├── redirects.json # Entity redirect mappings
 │   │   └── search-data.json # Unified search index
 │   ├── chapter-reader.js   # Chapter reading modal with multiple APIs
 │   ├── commentary-reader.js # Commentary system with 11 sources
 │   ├── search-engine.js    # Advanced unified search system
 │   ├── search-interface.js # Search UI components
-│   ├── character-search.js # Client-side character search
 │   ├── scripture-widget.js # Scripture reference tooltips
 │   ├── theme-manager.js    # Theme system
 │   ├── module-loader.js    # Dynamic module loading system
@@ -179,10 +162,10 @@ src/
 │   └── john-3-complete.njk
 ├── *.njk                   # Page templates and generators
 │   ├── books.njk          # Generates 66 book pages
-│   ├── characters.njk     # Generates character study pages
-│   ├── characters-paginated.njk # Character listing with pagination
 │   ├── categories.njk     # Category overview pages
 │   ├── categories-dynamic.njk # Dynamic category pages
+│   ├── entities.njk       # Entity overview page
+│   ├── entities-list.njk  # Entity listing page
 │   ├── gospel-thread.njk  # Gospel thread connections
 │   ├── index.njk          # Homepage
 │   ├── links.njk          # External resources
@@ -207,13 +190,19 @@ src/
 - **Performance Optimization**: Priority loading (50ms for high-traffic pages vs 1000ms default)
 - **State Management**: Proper coordination between search modules, data, and UI components
 
+### Entity System Architecture
+- **5516+ Entities**: Comprehensive biblical character and entity data with unique IDs
+- **Entity Processing**: Automated processing via `scripts/entity-processor.js` during build
+- **Cross-Reference System**: Bidirectional links between entities and biblical books
+- **Search Integration**: Dedicated entity search index (`entities-search.json`) with fuzzy matching
+- **URL Structure**: Entity pages use unique IDs (`/entities/{entity-id}/`) for consistent addressing
+- **Redirect System**: Handles entity ID changes and legacy URLs via `redirects.json`
+
 ### Content Updates
 - **Books**: Modify `src/_data/books.json` to add chapter summaries or update book metadata
-- **Characters**: Add profiles to `src/_data/characterProfiles.js` (characters.js is auto-generated from charactersByBook files)
 - **Categories**: Update `src/_data/categories.js` for navigation and grouping changes (book counts are calculated dynamically)
-- **Character Appearances**: Add to relevant `src/_data/charactersByBook/*.json` files (66 individual files by book)
+- **Entities**: Process via `scripts/entity-processor.js` - entity data managed through JSON files and build scripts
 - **Bible Project Videos**: Update `src/_data/bibleProjectVideos.json` for YouTube integration
-- **Gospel Insights**: Add to `src/_data/characterGospelInsights.js` for character gospel connections
 - **Cross References**: Update `src/_data/crossReferences.js` for scripture connections
 
 ### Code Patterns
@@ -221,7 +210,7 @@ src/
 - **Templating**: Follow existing Nunjucks patterns with proper data binding and error handling
 - **Styling**: Use CSS custom properties for theming, maintain mobile-first responsive design
 - **JavaScript**: Component-based architecture with clean separation of concerns
-- **URLs**: Slug-based URLs generated from book/category/character names for SEO
+- **URLs**: Slug-based URLs generated from book/category names for SEO
 
 ### UX Considerations
 - **Mobile-First**: Always test responsive design on mobile devices first

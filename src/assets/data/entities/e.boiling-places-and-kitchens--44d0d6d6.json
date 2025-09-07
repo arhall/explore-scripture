@@ -1,0 +1,18 @@
+{
+  "name": "Boiling places and kitchens",
+  "type": "entity",
+  "references": [
+    "Ezekiel 46:19–24"
+  ],
+  "blurb": "Sacred food preparation zones prevent holy from mingling with common—design as catechesis.",
+  "category": "cult",
+  "id": "e.boiling-places-and-kitchens--44d0d6d6",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Ezekiel": [
+      46
+    ]
+  }
+}

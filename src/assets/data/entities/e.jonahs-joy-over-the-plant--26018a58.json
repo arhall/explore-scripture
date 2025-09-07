@@ -1,0 +1,18 @@
+{
+  "name": "Jonah’s joy over the plant",
+  "type": "entity",
+  "references": [
+    "Jonah 4:6"
+  ],
+  "blurb": "First recorded joy—rooted in shade, not salvation—reveals malformed loves.",
+  "category": "emotion",
+  "id": "e.jonahs-joy-over-the-plant--26018a58",
+  "source_testaments": [
+    "OT"
+  ],
+  "book_references": {
+    "Jonah": [
+      4
+    ]
+  }
+}
