@@ -49,7 +49,13 @@ permalink: "/entities/{{ entityId }}/"
     <!-- Relationships Section -->
     <div class="entity-relations-section" id="entityRelations" style="display: none;">
       <h3>Relationships</h3>
-      <div class="relations-grid" id="relationsContent"></div>
+      <div class="relations-visualization" id="relationshipVisualization">
+        <!-- Relationship visualizer will be inserted here -->
+      </div>
+      <details class="relations-details">
+        <summary>View Detailed List</summary>
+        <div class="relations-grid" id="relationsContent"></div>
+      </details>
     </div>
     
     <!-- Scripture References Section -->
@@ -270,9 +276,32 @@ permalink: "/entities/{{ entityId }}/"
   function displayRelations() {
     const relationsEl = document.getElementById('entityRelations');
     const relationsContentEl = document.getElementById('relationsContent');
+    const vizContainer = document.getElementById('relationshipVisualization');
     
     if (!currentEntity.relations) return;
     
+    // Create interactive visualization
+    if (window.d3 && Object.keys(currentEntity.relations).length > 0) {
+      const visualizer = new EntityRelationshipVisualizer('relationshipVisualization');
+      visualizer.loadRelationships(currentEntity);
+    } else if (Object.keys(currentEntity.relations).length === 0) {
+      vizContainer.innerHTML = `
+        <div class="relations-empty">
+          <div class="empty-icon">🔗</div>
+          <p>No relationships documented for this entity.</p>
+        </div>
+      `;
+    } else {
+      vizContainer.innerHTML = `
+        <div class="relations-fallback">
+          <div class="fallback-message">
+            <p>📊 Interactive visualization not available. View details below.</p>
+          </div>
+        </div>
+      `;
+    }
+    
+    // Build detailed list (fallback and supplementary view)
     let relationsHtml = '';
     for (const [relationName, entities] of Object.entries(currentEntity.relations)) {
       const displayName = relationName.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
@@ -539,3 +568,55 @@ permalink: "/entities/{{ entityId }}/"
     }, 1000);
   });
 </script>
+
+<!-- Load D3.js for relationship visualization -->
+<script src="https://unpkg.com/d3@7/dist/d3.min.js"></script>
+<!-- Load Entity Relationship Visualizer -->
+<script src="/assets/entity-relationship-visualizer.js"></script>
+
+<style>
+/* Entity relationship visualization styles */
+.relations-details {
+  margin-top: 1rem;
+}
+
+.relations-details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent, #2563eb);
+  padding: 0.5rem 0;
+  list-style: none;
+}
+
+.relations-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.relations-details summary:before {
+  content: '▶';
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.relations-details[open] summary:before {
+  transform: rotate(90deg);
+}
+
+.relations-empty, .relations-fallback {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-secondary, #6b7280);
+  background: var(--bg-secondary, #f8fafc);
+  border-radius: 8px;
+  border: 1px solid var(--border, #e5e7eb);
+}
+
+.relations-empty .empty-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.fallback-message {
+  font-style: italic;
+}
+</style>

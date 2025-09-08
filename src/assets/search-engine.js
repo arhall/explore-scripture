@@ -236,19 +236,37 @@ class SearchEngine {
   // Calculate relevance boost based on entity type and reference count
   getEntityRelevanceBoost(entityType, referenceCount) {
     const typeBoosts = {
-      'divine': 3.0,
-      'person': 2.5,
-      'place': 2.0,
-      'title': 1.8,
-      'group': 1.5,
-      'event': 1.3,
-      'figure': 1.0
+      'divine': 3.5,        // God, Lord, Holy Spirit get highest boost
+      'person': 2.8,        // Major biblical figures
+      'place': 2.2,         // Important locations
+      'title': 2.0,         // Roles and titles
+      'group': 1.7,         // Tribes, nations, groups
+      'event': 1.5,         // Historical events
+      'figure': 1.2,        // Minor figures
+      'concept': 1.0        // Abstract concepts
     };
     
     const baseBoost = typeBoosts[entityType] || 1.0;
-    const referenceBoost = Math.min(referenceCount / 10, 1.0); // Max 1.0 boost for references
     
-    return baseBoost + referenceBoost;
+    // Enhanced reference counting with logarithmic scaling
+    // More references = more important, but with diminishing returns
+    const referenceBoost = referenceCount > 0 ? 
+      Math.min(Math.log10(referenceCount + 1) * 0.5, 2.0) : 0;
+    
+    // Additional boost for well-known entities
+    const importanceBoost = this.getEntityImportanceBoost(referenceCount);
+    
+    return baseBoost + referenceBoost + importanceBoost;
+  }
+
+  // Get importance boost based on reference patterns
+  getEntityImportanceBoost(referenceCount) {
+    if (referenceCount >= 100) return 1.0;      // Major figures (Jesus, God, etc.)
+    if (referenceCount >= 50) return 0.7;       // Important figures (David, Moses, etc.)
+    if (referenceCount >= 20) return 0.5;       // Notable figures
+    if (referenceCount >= 10) return 0.3;       // Mentioned figures
+    if (referenceCount >= 5) return 0.2;        // Minor figures
+    return 0;
   }
 
   // Build searchable text from multiple fields
@@ -334,49 +352,116 @@ class SearchEngine {
     let score = 0;
     const searchText = item.searchText.toLowerCase();
     const title = item.title.toLowerCase();
+    const queryLower = originalQuery.toLowerCase();
     
-    // Exact title match gets highest score
-    if (title === originalQuery.toLowerCase()) {
-      score += 100;
+    // Exact matches get highest priority
+    if (title === queryLower) {
+      score += 150; // Increased from 100
+    } else if (title.startsWith(queryLower)) {
+      score += 80; // Increased from 50  
+    } else if (title.includes(queryLower)) {
+      score += 40; // Increased from 25
     }
     
-    // Title starts with query
-    if (title.startsWith(originalQuery.toLowerCase())) {
-      score += 50;
-    }
+    // Word boundary matching (more precise)
+    const titleWords = title.split(/\s+/);
+    const queryWords = queryLower.split(/\s+/);
     
-    // Title contains query
-    if (title.includes(originalQuery.toLowerCase())) {
-      score += 25;
-    }
-    
-    // Token-based scoring
-    queryTokens.forEach(token => {
-      if (title.includes(token)) {
-        score += 10;
-      }
-      if (searchText.includes(token)) {
-        score += 5;
-      }
-      
-      // Fuzzy matching
-      if (this.fuzzyMatch(token, title)) {
-        score += 3;
-      }
-      if (this.fuzzyMatch(token, searchText)) {
-        score += 1;
-      }
-      
-      // Synonym matching
-      const synonyms = this.synonyms.get(token) || [];
-      synonyms.forEach(synonym => {
-        if (searchText.includes(synonym)) {
-          score += 2;
+    queryWords.forEach(queryWord => {
+      titleWords.forEach(titleWord => {
+        if (titleWord === queryWord) {
+          score += 30; // Exact word match
+        } else if (titleWord.startsWith(queryWord) && queryWord.length >= 3) {
+          score += 15; // Word prefix match
         }
       });
     });
     
-    return score;
+    // Token-based scoring with enhanced weights
+    queryTokens.forEach(token => {
+      // Title matching (most important)
+      if (title.includes(token)) {
+        const isWholeWord = new RegExp(`\\b${token}\\b`, 'i').test(title);
+        score += isWholeWord ? 20 : 12; // Higher score for whole word matches
+      }
+      
+      // Search text matching
+      if (searchText.includes(token)) {
+        const isWholeWord = new RegExp(`\\b${token}\\b`, 'i').test(searchText);
+        score += isWholeWord ? 8 : 5;
+      }
+      
+      // Enhanced fuzzy matching with context awareness
+      const fuzzyTitleScore = this.getFuzzyScore(token, title);
+      const fuzzySearchScore = this.getFuzzyScore(token, searchText);
+      score += fuzzyTitleScore * 4 + fuzzySearchScore * 2;
+      
+      // Synonym matching with context
+      this.expandWithSynonyms(token).forEach(synonym => {
+        if (searchText.includes(synonym)) {
+          const isWholeWord = new RegExp(`\\b${synonym}\\b`, 'i').test(searchText);
+          score += isWholeWord ? 6 : 3; // Increased from 2
+        }
+      });
+    });
+    
+    // Bonus scoring for entity-specific features
+    if (item.type === 'entity') {
+      score += this.getEntityContextBonus(item, queryTokens);
+    }
+    
+    // Length penalty for very long matches (prefer more specific results)
+    if (title.length > 50) {
+      score = score * 0.95;
+    }
+    
+    return Math.round(score);
+  }
+
+  // Get enhanced fuzzy matching score
+  getFuzzyScore(pattern, text) {
+    const distance = this.levenshteinDistance(pattern, text);
+    const maxLength = Math.max(pattern.length, text.length);
+    
+    if (distance === 0) return 1.0;
+    if (distance > Math.min(3, pattern.length / 2)) return 0;
+    
+    return Math.max(0, 1 - (distance / maxLength));
+  }
+
+  // Expand token with synonyms
+  expandWithSynonyms(token) {
+    return this.synonyms.get(token) || [];
+  }
+
+  // Get entity-specific context bonus
+  getEntityContextBonus(entity, queryTokens) {
+    let bonus = 0;
+    
+    // Check if query relates to entity attributes
+    queryTokens.forEach(token => {
+      // Testament context
+      if (entity.testament && entity.testament.toLowerCase().includes(token)) {
+        bonus += 5;
+      }
+      
+      // Role/title context
+      if (entity.role && entity.role.toLowerCase().includes(token)) {
+        bonus += 8;
+      }
+      
+      // Location context
+      if (entity.location && entity.location.toLowerCase().includes(token)) {
+        bonus += 6;
+      }
+      
+      // Tribe context
+      if (entity.tribe && entity.tribe.toLowerCase().includes(token)) {
+        bonus += 7;
+      }
+    });
+    
+    return bonus;
   }
 
   // Normalize search query

@@ -1039,11 +1039,8 @@ class ChapterReader {
           reference: `${chapterInfo.book} ${targetChapter}`
         };
         
-        // Close current modal and open new one
-        this.closeChapterReader();
-        setTimeout(() => {
-          this.openChapterReader(newChapterInfo);
-        }, 100);
+        // Update current modal in place instead of closing and reopening
+        this.navigateToChapter(overlay, newChapterInfo);
         
         // Track navigation
         if (window.telemetry) {
@@ -1081,6 +1078,63 @@ class ChapterReader {
     // Update the external link with new translation
     const externalLink = overlay.querySelector('.chapter-reader-external-link');
     externalLink.href = this.getBibleGatewayUrl(chapterInfo);
+  }
+
+  navigateToChapter(overlay, newChapterInfo) {
+    // Update the header title and navigation buttons
+    const navInfo = this.getNavigationInfo(newChapterInfo);
+    
+    // Update title
+    const title = overlay.querySelector('.chapter-reader-title');
+    if (title) {
+      title.innerHTML = `${newChapterInfo.reference} <span class="chapter-count">(${navInfo.currentChapter}/${navInfo.totalChapters})</span>`;
+    }
+    
+    // Update navigation buttons
+    const navSection = overlay.querySelector('.chapter-reader-nav-section');
+    if (navSection) {
+      navSection.innerHTML = `
+        ${navInfo.prevChapter ? 
+          `<button class="chapter-nav-btn prev" data-chapter="${navInfo.prevChapter.chapter}" title="Previous chapter">← ${navInfo.prevChapter.chapter}</button>` : 
+          '<span class="chapter-nav-placeholder"></span>'
+        }
+        <h2 class="chapter-reader-title">${newChapterInfo.reference} <span class="chapter-count">(${navInfo.currentChapter}/${navInfo.totalChapters})</span></h2>
+        ${navInfo.nextChapter ? 
+          `<button class="chapter-nav-btn next" data-chapter="${navInfo.nextChapter.chapter}" title="Next chapter">${navInfo.nextChapter.chapter} →</button>` : 
+          '<span class="chapter-nav-placeholder"></span>'
+        }
+      `;
+      
+      // Re-attach navigation event listeners
+      const newNavBtns = navSection.querySelectorAll('.chapter-nav-btn');
+      newNavBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const targetChapter = parseInt(e.currentTarget.dataset.chapter, 10);
+          const nextChapterInfo = {
+            book: newChapterInfo.book,
+            chapter: targetChapter,
+            reference: `${newChapterInfo.book} ${targetChapter}`
+          };
+          
+          // Recursive navigation
+          this.navigateToChapter(overlay, nextChapterInfo);
+          
+          // Track navigation
+          if (window.telemetry) {
+            window.telemetry.recordUserAction('chapter-navigation', `${newChapterInfo.book} ${newChapterInfo.chapter} → ${targetChapter}`);
+          }
+        });
+      });
+    }
+    
+    // Update content with new chapter
+    this.updateChapterContent(overlay, newChapterInfo);
+    
+    // Update external link in header controls
+    const headerExternalLink = overlay.querySelector('.chapter-reader-controls .chapter-reader-external-link');
+    if (headerExternalLink) {
+      headerExternalLink.href = this.getBibleGatewayUrl(newChapterInfo);
+    }
   }
 
   closeChapterReader() {

@@ -76,7 +76,7 @@ class GenealogyExplorer extends HTMLElement {
       if (guess) this.state.rootId = guess;
     }
 
-    // URL hash: #root=abram&mode=descendants&query=david
+    // URL hash support for deep linking: #root=abram&mode=descendants&query=david
     const params = new URLSearchParams(location.hash.slice(1));
     if (params.get("root")) this.state.rootId = params.get("root");
     if (params.get("mode")) this.state.mode = params.get("mode");

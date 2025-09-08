@@ -106,7 +106,8 @@
       "Bash(open http://localhost:8082/books/ecclesiastes/)",
       "Bash(npx eslint:*)",
       "Bash(open http://localhost:8080/genealogy/)",
-      "Bash(open http://localhost:8080/books/matthew/)"
+      "Bash(open http://localhost:8080/books/matthew/)",
+      "Bash(open http://localhost:8081/genealogy/)"
     ],
     "deny": [],
     "ask": []

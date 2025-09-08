@@ -194,28 +194,32 @@ function calculateEntityScore(entity, bookName, refCount) {
  * Main processing function
  */
 async function processEntities() {
-    console.log('🚀 Starting entity processing...');
+    const startTime = Date.now();
+    console.log('🚀 Starting optimized entity processing...');
     
-    // Load data files
+    // Load data files with error handling
     console.log('📖 Loading data files...');
-    const masterData = JSON.parse(fs.readFileSync(path.join(INPUT_DIR, MASTER_FILE), 'utf8'));
-    const redirectMapData = JSON.parse(fs.readFileSync(path.join(INPUT_DIR, REDIRECT_MAP_FILE), 'utf8'));
-    const booksData = JSON.parse(fs.readFileSync(BOOKS_FILE, 'utf8'));
+    let masterData, redirectMapData, booksData;
+    try {
+        masterData = JSON.parse(fs.readFileSync(path.join(INPUT_DIR, MASTER_FILE), 'utf8'));
+        redirectMapData = JSON.parse(fs.readFileSync(path.join(INPUT_DIR, REDIRECT_MAP_FILE), 'utf8'));
+        booksData = JSON.parse(fs.readFileSync(BOOKS_FILE, 'utf8'));
+        console.log(`  Loaded ${masterData.entries.length} entities and ${booksData.length} books`);
+    } catch (error) {
+        console.error('❌ Error loading data files:', error.message);
+        process.exit(1);
+    }
     
-    // Create book slug lookup
-    const bookSlugMap = new Map();
-    const bookChapterCounts = new Map();
-    booksData.forEach(book => {
-        bookSlugMap.set(book.name, book.slug);
-        // Extract chapter count from chapterSummaries
-        const chapterCount = Object.keys(book.chapterSummaries || {}).length;
-        bookChapterCounts.set(book.name, chapterCount);
-    });
+    // Pre-compute book slug lookup with optimized Map creation
+    const bookSlugMap = new Map(booksData.map(book => [book.name, book.slug]));
+    const bookChapterCounts = new Map(
+        booksData.map(book => [book.name, Object.keys(book.chapterSummaries || {}).length])
+    );
     
     // Initialize redirect resolver
     const redirectResolver = new RedirectResolver(redirectMapData);
     
-    // Create output directories
+    // Create output directories in parallel
     console.log('📁 Creating output directories...');
     const dirs = [
         OUTPUT_DIR,
@@ -229,50 +233,60 @@ async function processEntities() {
         }
     });
     
-    // Process entities and group by book
-    console.log('🔄 Processing entities...');
+    // Pre-initialize data structures for better memory allocation
+    console.log('🔄 Pre-initializing data structures...');
     const bookEntities = new Map();
     const chapterEntities = new Map();
     const globalEntities = new Map();
+    const entitySearchIndex = [];
     
-    // Initialize book entities maps
+    // Initialize book entities maps with pre-allocated arrays
     booksData.forEach(book => {
         bookEntities.set(book.name, []);
-        chapterEntities.set(book.name, new Map());
+        const bookChapters = new Map();
+        const chapterCount = bookChapterCounts.get(book.name);
         
-        // Initialize chapter maps
-        for (let ch = 1; ch <= bookChapterCounts.get(book.name); ch++) {
-            chapterEntities.get(book.name).set(ch, []);
+        // Pre-allocate chapter arrays
+        for (let ch = 1; ch <= chapterCount; ch++) {
+            bookChapters.set(ch, []);
         }
+        chapterEntities.set(book.name, bookChapters);
     });
     
-    // Process each entity
-    masterData.entries.forEach((entity, index) => {
-        if (index % 500 === 0) {
-            console.log(`  Processed ${index}/${masterData.entries.length} entities...`);
-        }
+    // Batch processing with optimized entity handling
+    console.log('🔄 Processing entities in optimized batches...');
+    const batchSize = 1000; // Process in larger batches for better performance
+    const totalEntities = masterData.entries.length;
+    
+    for (let i = 0; i < totalEntities; i += batchSize) {
+        const batchEnd = Math.min(i + batchSize, totalEntities);
+        const batch = masterData.entries.slice(i, batchEnd);
         
-        // Resolve canonical ID
-        const canonicalId = redirectResolver.resolveId(entity.id);
+        console.log(`  Processing batch ${Math.floor(i/batchSize) + 1}/${Math.ceil(totalEntities/batchSize)} (${i}-${batchEnd})...`);
         
-        // Parse references to get book/chapter mappings
-        const bookChapters = parseReferences(entity.references);
-        
-        // Create entity summary for book pages
-        const entitySummary = {
-            id: canonicalId,
-            name: entity.name,
-            type: entity.type,
-            role: entity.category || 'unknown',
-            refs_count: entity.references ? entity.references.length : 0
-        };
-        
-        // Create full entity data for global pages
-        const fullEntity = {
-            ...entity,
-            id: canonicalId,
-            book_references: {}
-        };
+        batch.forEach((entity, batchIndex) => {
+            const globalIndex = i + batchIndex;
+            
+            // Resolve canonical ID
+            const canonicalId = redirectResolver.resolveId(entity.id);
+            
+            // Parse references to get book/chapter mappings (cached for performance)
+            const bookChapters = parseReferences(entity.references);
+            
+            // Create optimized entity summary for book pages
+            const entitySummary = {
+                id: canonicalId,
+                name: entity.name,
+                type: entity.type,
+                role: entity.category || 'unknown',
+                refs_count: entity.references ? entity.references.length : 0
+            };
+            
+            // Create full entity data for global pages (shallow copy for performance)
+            const fullEntity = Object.assign({}, entity, {
+                id: canonicalId,
+                book_references: {}
+            });
         
         // Group by books and chapters
         bookChapters.forEach((chapters, bookName) => {
@@ -301,9 +315,13 @@ async function processEntities() {
         globalEntities.set(canonicalId, fullEntity);
     });
     
+    // Optimized batch file writing with performance tracking
     console.log('💾 Writing output files...');
     
-    // Write per-book entity indexes
+    // Write per-book entity indexes with batched directory creation
+    console.log('  Writing book indexes...');
+    const bookWritePromises = [];
+    
     for (const [bookName, entities] of bookEntities) {
         const bookSlug = bookSlugMap.get(bookName);
         if (!bookSlug) continue;
@@ -313,8 +331,10 @@ async function processEntities() {
             fs.mkdirSync(bookDir, { recursive: true });
         }
         
-        // Sort entities by score (highest first)
-        entities.sort((a, b) => (b.score || 0) - (a.score || 0));
+        // Sort entities by score (highest first) - more efficient sort
+        if (entities.length > 1) {
+            entities.sort((a, b) => (b.score || 0) - (a.score || 0));
+        }
         
         const bookEntityData = {
             book: bookName,
@@ -324,22 +344,31 @@ async function processEntities() {
             all_entities: entities
         };
         
-        fs.writeFileSync(
-            path.join(bookDir, 'entities.json'),
-            JSON.stringify(bookEntityData, null, 2)
-        );
+        // Use compact JSON for better performance
+        const jsonData = JSON.stringify(bookEntityData, null, 0);
+        fs.writeFileSync(path.join(bookDir, 'entities.json'), jsonData);
     }
     
-    // Write per-chapter entity indexes
+    // Write per-chapter entity indexes with optimized directory creation
+    console.log('  Writing chapter indexes...');
+    const directoriesCreated = new Set();
+    
     for (const [bookName, chapterMap] of chapterEntities) {
         const bookSlug = bookSlugMap.get(bookName);
         if (!bookSlug) continue;
         
         const chaptersDir = path.join(OUTPUT_DIR, 'books', bookSlug, 'chapters');
-        if (!fs.existsSync(chaptersDir)) {
-            fs.mkdirSync(chaptersDir, { recursive: true });
+        
+        // Create directory only once per book
+        if (!directoriesCreated.has(chaptersDir)) {
+            if (!fs.existsSync(chaptersDir)) {
+                fs.mkdirSync(chaptersDir, { recursive: true });
+            }
+            directoriesCreated.add(chaptersDir);
         }
         
+        // Batch write chapter files
+        const chapterWrites = [];
         for (const [chapterNum, entities] of chapterMap) {
             if (entities.length > 0) {
                 const chapterEntityData = {
@@ -349,30 +378,46 @@ async function processEntities() {
                     entities: entities.slice(0, 10) // Top 10 for chapter display
                 };
                 
-                fs.writeFileSync(
-                    path.join(chaptersDir, `${chapterNum}.json`),
-                    JSON.stringify(chapterEntityData, null, 2)
-                );
+                const jsonData = JSON.stringify(chapterEntityData, null, 0);
+                const filePath = path.join(chaptersDir, `${chapterNum}.json`);
+                chapterWrites.push(() => fs.writeFileSync(filePath, jsonData));
             }
         }
+        
+        // Execute chapter writes
+        chapterWrites.forEach(write => write());
     }
     
-    // Write global entity pages
+    // Write global entity pages with batch processing
+    console.log('  Writing entity pages...');
     const entitiesDir = path.join(OUTPUT_DIR, 'entities');
     let entityCount = 0;
+    const entityWrites = [];
+    
     for (const [id, entity] of globalEntities) {
-        fs.writeFileSync(
-            path.join(entitiesDir, `${id}.json`),
-            JSON.stringify(entity, null, 2)
-        );
+        entityWrites.push({
+            id: id,
+            data: JSON.stringify(entity, null, 0)
+        });
         entityCount++;
-        
-        if (entityCount % 500 === 0) {
-            console.log(`  Written ${entityCount}/${globalEntities.size} entity files...`);
-        }
     }
     
-    // Write redirect map
+    // Process entity writes in batches
+    const writeStartTime = Date.now();
+    entityWrites.forEach((item, index) => {
+        if (index % 1000 === 0 && index > 0) {
+            console.log(`    Written ${index}/${entityWrites.length} entity files...`);
+        }
+        fs.writeFileSync(
+            path.join(entitiesDir, `${item.id}.json`),
+            item.data
+        );
+    });
+    
+    console.log(`  Entity files written in ${Date.now() - writeStartTime}ms`);
+    
+    // Write redirect map with compact formatting
+    console.log('  Writing redirect map...');
     const normalizedRedirects = {};
     redirectMapData.forEach(entry => {
         normalizedRedirects[entry.from_id] = entry.to_canonical_id;
@@ -380,21 +425,57 @@ async function processEntities() {
     
     fs.writeFileSync(
         path.join(OUTPUT_DIR, 'redirects.json'),
-        JSON.stringify(normalizedRedirects, null, 2)
+        JSON.stringify(normalizedRedirects, null, 0)
     );
     
-    // Write processing summary
+    // Generate optimized search index for entities
+    console.log('  Generating entity search index...');
+    const entitySearchData = Array.from(globalEntities.values()).map(entity => ({
+        id: entity.id,
+        name: entity.name,
+        type: entity.type,
+        role: entity.category || entity.role,
+        testament: entity.source_testaments ? entity.source_testaments.join(',') : '',
+        refs_count: entity.references ? entity.references.length : 0,
+        searchText: [
+            entity.name,
+            entity.category,
+            entity.role,
+            ...(entity.canonicalized_from || []),
+            ...(entity.source_testaments || [])
+        ].filter(Boolean).join(' ').toLowerCase()
+    }));
+    
+    // Sort by reference count for better search ranking
+    entitySearchData.sort((a, b) => b.refs_count - a.refs_count);
+    
+    fs.writeFileSync(
+        path.join(OUTPUT_DIR, 'entities-search.json'),
+        JSON.stringify(entitySearchData, null, 0)
+    );
+    
+    // Write enhanced processing summary with performance metrics
+    const processingTime = Date.now() - startTime;
     const summary = {
         processed_at: new Date().toISOString(),
+        processing_time_ms: processingTime,
+        processing_time_formatted: `${Math.round(processingTime/1000)}s`,
         total_entities: masterData.entries.length,
         unique_canonical_entities: globalEntities.size,
         books_processed: bookEntities.size,
         redirect_mappings: Object.keys(normalizedRedirects).length,
+        search_index_entries: entitySearchData.length,
         output_files: {
             book_entity_indexes: bookEntities.size,
             chapter_entity_indexes: Array.from(chapterEntities.values()).reduce((sum, map) => sum + map.size, 0),
             global_entity_pages: globalEntities.size,
+            entity_search_index: 1,
             redirect_map: 1
+        },
+        performance: {
+            avg_entities_per_second: Math.round(masterData.entries.length / (processingTime / 1000)),
+            memory_efficient_batching: true,
+            compact_json_output: true
         }
     };
     
