@@ -29,36 +29,23 @@ class GenealogyExplorer extends HTMLElement {
   }
 
   connectedCallback() {
-    console.log('[GenealogyExplorer] connectedCallback called');
+    this.renderShell();
     
-    try {
-      this.renderShell();
-      console.log('[GenealogyExplorer] Shell rendered');
-      
-      // Check if D3 is available
-      if (!d3) {
-        console.error('[GenealogyExplorer] D3.js not available');
-        this.renderError('D3.js library not loaded');
-        return;
-      }
-      
-      console.log('[GenealogyExplorer] Initializing with D3 version:', d3.version);
-      
-      this.loadData().then(() => {
-        console.log('[GenealogyExplorer] Data loaded successfully');
-        this.buildIndex();
-        console.log('[GenealogyExplorer] Index built');
-        this.renderTree();
-        console.log('[GenealogyExplorer] Tree rendered');
-        window.addEventListener("keydown", this._onKey);
-      }).catch(error => {
-        console.error('[GenealogyExplorer] Failed to initialize:', error);
-        this.renderError('Failed to load genealogy data: ' + error.message);
-      });
-    } catch (error) {
-      console.error('[GenealogyExplorer] Error in connectedCallback:', error);
-      this.renderError('Component initialization failed: ' + error.message);
+    // Check if D3 is available
+    if (!d3) {
+      console.error('[GenealogyExplorer] D3.js not available');
+      this.renderError('D3.js library not loaded');
+      return;
     }
+    
+    this.loadData().then(() => {
+      this.buildIndex();
+      this.renderTree();
+      window.addEventListener("keydown", this._onKey);
+    }).catch(error => {
+      console.error('[GenealogyExplorer] Failed to initialize:', error);
+      this.renderError('Failed to load genealogy data: ' + error.message);
+    });
   }
   disconnectedCallback() {
     window.removeEventListener("keydown", this._onKey);
@@ -66,53 +53,27 @@ class GenealogyExplorer extends HTMLElement {
   attributeChangedCallback() {}
 
   async loadData() {
-    console.log('[GenealogyExplorer] Starting loadData');
     const src = this.getAttribute("data-src");
-    console.log('[GenealogyExplorer] Data source:', src);
-    
     if (src) {
-      try {
-        console.log('[GenealogyExplorer] Fetching data from:', src);
-        const res = await fetch(src);
-        console.log('[GenealogyExplorer] Fetch response status:', res.status);
-        
-        if (!res.ok) {
-          throw new Error(`HTTP ${res.status}: ${res.statusText}`);
-        }
-        
-        this.state.data = await res.json();
-        console.log('[GenealogyExplorer] Data loaded successfully:', this.state.data.length, 'items');
-      } catch (error) {
-        console.error('[GenealogyExplorer] Failed to fetch data:', error);
-        throw error;
+      const res = await fetch(src);
+      if (!res.ok) {
+        throw new Error(`HTTP ${res.status}: ${res.statusText}`);
       }
+      this.state.data = await res.json();
     } else {
-      console.log('[GenealogyExplorer] Looking for inline data');
       // Inline <script type="application/json"> next to this element
       const id = this.getAttribute("for") || this.getAttribute("id") || this.getAttribute("data-inline-id");
       const inline = document.querySelector(`#${id}-data`) || document.querySelector("script[type='application/json']");
       this.state.data = inline ? JSON.parse(inline.textContent) : [];
-      console.log('[GenealogyExplorer] Inline data found:', !!inline, 'items:', this.state.data.length);
     }
   }
 
   buildIndex() {
-    console.log('[GenealogyExplorer] Building index from data:', this.state.data.length, 'items');
     this.state.byId = new Map(this.state.data.map((d) => [d.id, d]));
-    console.log('[GenealogyExplorer] Index built with', this.state.byId.size, 'entries');
-    
     if (!this.state.byId.has(this.state.rootId)) {
-      console.log('[GenealogyExplorer] Root ID not found:', this.state.rootId);
       // attempt to pick a sensible root
       const guess = this.state.byId.has("jesus") ? "jesus" : this.state.data[0]?.id;
-      if (guess) {
-        console.log('[GenealogyExplorer] Using fallback root:', guess);
-        this.state.rootId = guess;
-      } else {
-        console.error('[GenealogyExplorer] No suitable root found!');
-      }
-    } else {
-      console.log('[GenealogyExplorer] Using root ID:', this.state.rootId);
+      if (guess) this.state.rootId = guess;
     }
 
     // URL hash: #root=abram&mode=descendants&query=david
@@ -120,7 +81,6 @@ class GenealogyExplorer extends HTMLElement {
     if (params.get("root")) this.state.rootId = params.get("root");
     if (params.get("mode")) this.state.mode = params.get("mode");
     if (params.get("query")) this.state.query = params.get("query");
-    console.log('[GenealogyExplorer] Final state:', this.state);
   }
 
   renderShell() {
@@ -180,21 +140,12 @@ class GenealogyExplorer extends HTMLElement {
   }
 
   renderTree() {
-    console.log('[GenealogyExplorer] Starting renderTree');
     const svgEl = this.querySelector("svg#svg");
-    console.log('[GenealogyExplorer] SVG element found:', !!svgEl);
-    
-    if (!svgEl) {
-      console.error('[GenealogyExplorer] No SVG element found for rendering!');
-      return;
-    }
-    
     const svg = d3.select(svgEl);
     svg.selectAll("*").remove();
 
     const W = this.clientWidth || 900;
     const H = this.clientHeight || 600;
-    console.log('[GenealogyExplorer] Rendering with dimensions:', W, 'x', H);
     svg.attr("viewBox", [0, 0, W, H]);
 
     const modeSel = this.querySelector("#mode");
@@ -321,41 +272,19 @@ class GenealogyExplorer extends HTMLElement {
   }
 
   renderError(customMessage = null) {
-    console.log('[GenealogyExplorer] Rendering error:', customMessage);
-    
-    // If we don't have a canvas yet, render it in the whole component
-    let targetEl = this.querySelector('.canvas');
-    if (!targetEl) {
-      targetEl = this;
-      console.log('[GenealogyExplorer] No canvas found, rendering error in component root');
-    }
-    
-    const errorMessage = customMessage || 'Unable to load the genealogy explorer. Please check your internet connection and try again.';
-    
-    if (targetEl) {
-      targetEl.innerHTML = `
-        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; min-height: 300px; padding: 2rem; text-align: center; background: var(--bg-secondary, #f8f9fa); border: 1px solid var(--border, #e5e7eb); border-radius: 8px;">
+    const canvas = this.querySelector('.canvas');
+    if (canvas) {
+      const errorMessage = customMessage || 'Unable to load the genealogy explorer. Please check your internet connection and try again.';
+      canvas.innerHTML = `
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 2rem; text-align: center;">
           <div style="font-size: 2rem; margin-bottom: 1rem;">⚠️</div>
-          <h3 style="margin: 0 0 0.5rem 0; color: #dc2626; font-family: inherit;">Failed to Load Genealogy Explorer</h3>
-          <p style="margin: 0 0 1rem 0; color: #6b7280; font-family: inherit; font-size: 0.9rem;">${errorMessage}</p>
-          <button onclick="location.reload()" style="background: #2563eb; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 6px; cursor: pointer; font-family: inherit;">
+          <h3 style="margin: 0 0 0.5rem 0; color: #dc2626;">Failed to Load Genealogy Explorer</h3>
+          <p style="margin: 0 0 1rem 0; color: #6b7280;">${errorMessage}</p>
+          <button onclick="location.reload()" style="background: #2563eb; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 6px; cursor: pointer;">
             Retry
           </button>
-          <div style="margin-top: 1rem; font-size: 0.8rem; color: #9ca3af;">
-            <details>
-              <summary style="cursor: pointer;">Technical Details</summary>
-              <div style="margin-top: 0.5rem; text-align: left;">
-                <div>User Agent: ${navigator.userAgent}</div>
-                <div>Screen: ${screen.width}x${screen.height}</div>
-                <div>D3.js Available: ${!!window.d3}</div>
-                <div>Custom Elements: ${!!window.customElements}</div>
-              </div>
-            </details>
-          </div>
         </div>
       `;
-    } else {
-      console.error('[GenealogyExplorer] No target element found for error rendering');
     }
   }
 
@@ -382,30 +311,4 @@ class GenealogyExplorer extends HTMLElement {
   }
 }
 
-// Register the custom element with error handling
-try {
-  customElements.define("genealogy-explorer", GenealogyExplorer);
-  console.log('[GenealogyExplorer] Custom element registered successfully');
-  
-  // Expose class globally for debugging
-  window.GenealogyExplorer = GenealogyExplorer;
-  
-  // Check if we have any existing components that need initialization
-  document.addEventListener('DOMContentLoaded', () => {
-    console.log('[GenealogyExplorer] DOM loaded, checking for components');
-    const components = document.querySelectorAll('genealogy-explorer');
-    console.log(`[GenealogyExplorer] Found ${components.length} components`);
-    
-    components.forEach((component, index) => {
-      console.log(`[GenealogyExplorer] Component ${index + 1}:`, {
-        hasContent: component.innerHTML.trim().length > 0,
-        display: window.getComputedStyle(component).display,
-        width: component.offsetWidth,
-        height: component.offsetHeight
-      });
-    });
-  });
-  
-} catch (error) {
-  console.error('[GenealogyExplorer] Failed to register custom element:', error);
-}
+customElements.define("genealogy-explorer", GenealogyExplorer);
