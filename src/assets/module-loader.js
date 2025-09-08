@@ -173,19 +173,26 @@ class ModuleLoader {
     });
     
     // Load telemetry after user interaction (not immediately)
-    const loadTelemetryOnInteraction = () => {
-      this.loadModule('telemetry');
-      document.removeEventListener('click', loadTelemetryOnInteraction);
-      document.removeEventListener('scroll', loadTelemetryOnInteraction);
-      document.removeEventListener('keydown', loadTelemetryOnInteraction);
-    };
+    // Skip telemetry on mobile browsers due to ES module compatibility issues
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768;
     
-    // Delay telemetry loading until user interacts
-    setTimeout(() => {
-      document.addEventListener('click', loadTelemetryOnInteraction, { once: true });
-      document.addEventListener('scroll', loadTelemetryOnInteraction, { once: true });
-      document.addEventListener('keydown', loadTelemetryOnInteraction, { once: true });
-    }, 2000);
+    if (!isMobile) {
+      const loadTelemetryOnInteraction = () => {
+        this.loadModule('telemetry');
+        document.removeEventListener('click', loadTelemetryOnInteraction);
+        document.removeEventListener('scroll', loadTelemetryOnInteraction);
+        document.removeEventListener('keydown', loadTelemetryOnInteraction);
+      };
+      
+      // Delay telemetry loading until user interacts
+      setTimeout(() => {
+        document.addEventListener('click', loadTelemetryOnInteraction, { once: true });
+        document.addEventListener('scroll', loadTelemetryOnInteraction, { once: true });
+        document.addEventListener('keydown', loadTelemetryOnInteraction, { once: true });
+      }, 2000);
+    } else {
+      console.log('[ModuleLoader] Skipping telemetry on mobile for compatibility');
+    }
   }
   
   loadPageSpecificModules() {

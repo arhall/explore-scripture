@@ -178,7 +178,7 @@ permalink: /genealogy/
       });
     }
     
-    if (window.telemetry) {
+    if (window.telemetry && typeof window.telemetry.recordNavigation === 'function') {
       window.telemetry.recordNavigation(type, window.location.href, { 
         category: category,
         tool: 'genealogy-explorer'
@@ -201,7 +201,7 @@ permalink: /genealogy/
     updateBookmarkButton(isBookmarked(window.location.pathname));
     
     // Track page view
-    if (window.telemetry) {
+    if (window.telemetry && typeof window.telemetry.recordPageView === 'function') {
       window.telemetry.recordPageView(window.location.pathname, 'Genealogy Explorer', {
         tool: 'genealogy-explorer',
         type: 'interactive-visualization'
