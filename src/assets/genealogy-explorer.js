@@ -66,24 +66,53 @@ class GenealogyExplorer extends HTMLElement {
   attributeChangedCallback() {}
 
   async loadData() {
+    console.log('[GenealogyExplorer] Starting loadData');
     const src = this.getAttribute("data-src");
+    console.log('[GenealogyExplorer] Data source:', src);
+    
     if (src) {
-      const res = await fetch(src);
-      this.state.data = await res.json();
+      try {
+        console.log('[GenealogyExplorer] Fetching data from:', src);
+        const res = await fetch(src);
+        console.log('[GenealogyExplorer] Fetch response status:', res.status);
+        
+        if (!res.ok) {
+          throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+        }
+        
+        this.state.data = await res.json();
+        console.log('[GenealogyExplorer] Data loaded successfully:', this.state.data.length, 'items');
+      } catch (error) {
+        console.error('[GenealogyExplorer] Failed to fetch data:', error);
+        throw error;
+      }
     } else {
+      console.log('[GenealogyExplorer] Looking for inline data');
       // Inline <script type="application/json"> next to this element
       const id = this.getAttribute("for") || this.getAttribute("id") || this.getAttribute("data-inline-id");
       const inline = document.querySelector(`#${id}-data`) || document.querySelector("script[type='application/json']");
       this.state.data = inline ? JSON.parse(inline.textContent) : [];
+      console.log('[GenealogyExplorer] Inline data found:', !!inline, 'items:', this.state.data.length);
     }
   }
 
   buildIndex() {
+    console.log('[GenealogyExplorer] Building index from data:', this.state.data.length, 'items');
     this.state.byId = new Map(this.state.data.map((d) => [d.id, d]));
+    console.log('[GenealogyExplorer] Index built with', this.state.byId.size, 'entries');
+    
     if (!this.state.byId.has(this.state.rootId)) {
+      console.log('[GenealogyExplorer] Root ID not found:', this.state.rootId);
       // attempt to pick a sensible root
       const guess = this.state.byId.has("jesus") ? "jesus" : this.state.data[0]?.id;
-      if (guess) this.state.rootId = guess;
+      if (guess) {
+        console.log('[GenealogyExplorer] Using fallback root:', guess);
+        this.state.rootId = guess;
+      } else {
+        console.error('[GenealogyExplorer] No suitable root found!');
+      }
+    } else {
+      console.log('[GenealogyExplorer] Using root ID:', this.state.rootId);
     }
 
     // URL hash: #root=abram&mode=descendants&query=david
@@ -91,6 +120,7 @@ class GenealogyExplorer extends HTMLElement {
     if (params.get("root")) this.state.rootId = params.get("root");
     if (params.get("mode")) this.state.mode = params.get("mode");
     if (params.get("query")) this.state.query = params.get("query");
+    console.log('[GenealogyExplorer] Final state:', this.state);
   }
 
   renderShell() {
@@ -150,12 +180,21 @@ class GenealogyExplorer extends HTMLElement {
   }
 
   renderTree() {
+    console.log('[GenealogyExplorer] Starting renderTree');
     const svgEl = this.querySelector("svg#svg");
+    console.log('[GenealogyExplorer] SVG element found:', !!svgEl);
+    
+    if (!svgEl) {
+      console.error('[GenealogyExplorer] No SVG element found for rendering!');
+      return;
+    }
+    
     const svg = d3.select(svgEl);
     svg.selectAll("*").remove();
 
     const W = this.clientWidth || 900;
     const H = this.clientHeight || 600;
+    console.log('[GenealogyExplorer] Rendering with dimensions:', W, 'x', H);
     svg.attr("viewBox", [0, 0, W, H]);
 
     const modeSel = this.querySelector("#mode");
