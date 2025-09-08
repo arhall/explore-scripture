@@ -54,6 +54,16 @@ permalink: /genealogy/
   </genealogy-explorer>
 </div>
 
+<!-- Debug information for mobile troubleshooting -->
+<div id="mobile-debug" style="display:none;"></div>
+<script>
+  // Show debug info on narrow screens for troubleshooting
+  if (window.innerWidth < 768) {
+    document.getElementById('mobile-debug').style.cssText = 
+      'display:block;position:fixed;top:10px;left:10px;right:10px;background:rgba(0,0,0,0.8);color:white;padding:10px;font-size:12px;z-index:1000;max-height:200px;overflow:auto;border-radius:4px;';
+  }
+</script>
+
 <div class="genealogy-help">
   <h3>How to Use</h3>
   <div class="help-grid">
@@ -83,10 +93,60 @@ permalink: /genealogy/
 
 <!-- Load D3.js first -->
 <script src="https://unpkg.com/d3@7/dist/d3.min.js"></script>
-<!-- Then load the genealogy explorer -->
-<script type="module" src="/assets/genealogy-explorer.js"></script>
+<!-- Then load the genealogy explorer (no module type for better mobile compatibility) -->
+<script src="/assets/genealogy-explorer.js"></script>
 
 <script>
+  // Debug logging for mobile troubleshooting
+  function debugLog(message, data = null) {
+    console.log(`[Genealogy Debug] ${message}`, data || '');
+    
+    // Show debug info on mobile devices for troubleshooting
+    if (window.innerWidth < 768) {
+      const debugEl = document.getElementById('mobile-debug');
+      if (debugEl) {
+        const time = new Date().toLocaleTimeString();
+        debugEl.innerHTML += `<div>${time}: ${message} ${data ? JSON.stringify(data) : ''}</div>`;
+      }
+    }
+  }
+
+  // Check if scripts loaded properly
+  window.addEventListener('load', function() {
+    debugLog('Window loaded');
+    debugLog('D3 available:', !!window.d3);
+    debugLog('GenealogyExplorer defined:', !!window.customElements.get('genealogy-explorer'));
+    
+    const explorer = document.querySelector('genealogy-explorer');
+    debugLog('Explorer element found:', !!explorer);
+    
+    if (explorer) {
+      debugLog('Explorer display style:', window.getComputedStyle(explorer).display);
+      debugLog('Explorer height:', window.getComputedStyle(explorer).height);
+    }
+    
+    // Try to force initialization if component exists but hasn't loaded
+    setTimeout(() => {
+      const stillEmpty = explorer && explorer.innerHTML.trim() === '';
+      if (stillEmpty) {
+        debugLog('Component empty after 3s, attempting manual initialization');
+        if (window.GenealogyExplorer) {
+          debugLog('Manually triggering connectedCallback');
+          try {
+            explorer.connectedCallback?.();
+          } catch (e) {
+            debugLog('Manual initialization error:', e.message);
+          }
+        }
+      }
+    }, 3000);
+  });
+
+  // Error handler for script loading
+  window.addEventListener('error', function(e) {
+    debugLog('Script error:', e.message + ' at ' + e.filename + ':' + e.lineno);
+  });
+
   // Bookmark functionality for the genealogy page
   function handleBookmarkClick() {
     const pageData = {
@@ -235,6 +295,7 @@ permalink: /genealogy/
     border-radius: 0;
     border-left: none;
     border-right: none;
+    min-height: 500px;
   }
   
   .feature-grid {
@@ -245,6 +306,37 @@ permalink: /genealogy/
   .help-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+  
+  /* Ensure genealogy explorer web component has proper height on mobile */
+  genealogy-explorer {
+    display: block !important;
+    height: 500px !important;
+    min-height: 500px !important;
+    width: 100% !important;
+    background: var(--bg-secondary) !important;
+    border: 1px solid var(--border) !important;
+  }
+  
+  /* Force content visibility */
+  genealogy-explorer * {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  /* Ensure the internal elements are sized properly */
+  genealogy-explorer .wrap {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  
+  genealogy-explorer .canvas {
+    height: calc(500px - 56px) !important;
+  }
+  
+  genealogy-explorer svg {
+    width: 100% !important;
+    height: 100% !important;
   }
 }
 </style>

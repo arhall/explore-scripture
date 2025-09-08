@@ -29,25 +29,36 @@ class GenealogyExplorer extends HTMLElement {
   }
 
   connectedCallback() {
-    this.renderShell();
+    console.log('[GenealogyExplorer] connectedCallback called');
     
-    // Check if D3 is available
-    if (!d3) {
-      console.error('[GenealogyExplorer] D3.js not available');
-      this.renderError();
-      return;
+    try {
+      this.renderShell();
+      console.log('[GenealogyExplorer] Shell rendered');
+      
+      // Check if D3 is available
+      if (!d3) {
+        console.error('[GenealogyExplorer] D3.js not available');
+        this.renderError('D3.js library not loaded');
+        return;
+      }
+      
+      console.log('[GenealogyExplorer] Initializing with D3 version:', d3.version);
+      
+      this.loadData().then(() => {
+        console.log('[GenealogyExplorer] Data loaded successfully');
+        this.buildIndex();
+        console.log('[GenealogyExplorer] Index built');
+        this.renderTree();
+        console.log('[GenealogyExplorer] Tree rendered');
+        window.addEventListener("keydown", this._onKey);
+      }).catch(error => {
+        console.error('[GenealogyExplorer] Failed to initialize:', error);
+        this.renderError('Failed to load genealogy data: ' + error.message);
+      });
+    } catch (error) {
+      console.error('[GenealogyExplorer] Error in connectedCallback:', error);
+      this.renderError('Component initialization failed: ' + error.message);
     }
-    
-    console.log('[GenealogyExplorer] Initializing with D3 version:', d3.version);
-    
-    this.loadData().then(() => {
-      this.buildIndex();
-      this.renderTree();
-      window.addEventListener("keydown", this._onKey);
-    }).catch(error => {
-      console.error('[GenealogyExplorer] Failed to initialize:', error);
-      this.renderError();
-    });
   }
   disconnectedCallback() {
     window.removeEventListener("keydown", this._onKey);
@@ -270,19 +281,42 @@ class GenealogyExplorer extends HTMLElement {
     svg.append("text").attr("x", 20).attr("y", 40).text("No data").attr("fill", "#9CA3AF");
   }
 
-  renderError() {
-    const canvas = this.querySelector('.canvas');
-    if (canvas) {
-      canvas.innerHTML = `
-        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 2rem; text-align: center;">
+  renderError(customMessage = null) {
+    console.log('[GenealogyExplorer] Rendering error:', customMessage);
+    
+    // If we don't have a canvas yet, render it in the whole component
+    let targetEl = this.querySelector('.canvas');
+    if (!targetEl) {
+      targetEl = this;
+      console.log('[GenealogyExplorer] No canvas found, rendering error in component root');
+    }
+    
+    const errorMessage = customMessage || 'Unable to load the genealogy explorer. Please check your internet connection and try again.';
+    
+    if (targetEl) {
+      targetEl.innerHTML = `
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; min-height: 300px; padding: 2rem; text-align: center; background: var(--bg-secondary, #f8f9fa); border: 1px solid var(--border, #e5e7eb); border-radius: 8px;">
           <div style="font-size: 2rem; margin-bottom: 1rem;">⚠️</div>
-          <h3 style="margin: 0 0 0.5rem 0; color: #dc2626;">Failed to Load Genealogy Explorer</h3>
-          <p style="margin: 0 0 1rem 0; color: #6b7280;">Unable to load the required D3.js library. Please check your internet connection and try again.</p>
-          <button onclick="location.reload()" style="background: #2563eb; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 6px; cursor: pointer;">
+          <h3 style="margin: 0 0 0.5rem 0; color: #dc2626; font-family: inherit;">Failed to Load Genealogy Explorer</h3>
+          <p style="margin: 0 0 1rem 0; color: #6b7280; font-family: inherit; font-size: 0.9rem;">${errorMessage}</p>
+          <button onclick="location.reload()" style="background: #2563eb; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 6px; cursor: pointer; font-family: inherit;">
             Retry
           </button>
+          <div style="margin-top: 1rem; font-size: 0.8rem; color: #9ca3af;">
+            <details>
+              <summary style="cursor: pointer;">Technical Details</summary>
+              <div style="margin-top: 0.5rem; text-align: left;">
+                <div>User Agent: ${navigator.userAgent}</div>
+                <div>Screen: ${screen.width}x${screen.height}</div>
+                <div>D3.js Available: ${!!window.d3}</div>
+                <div>Custom Elements: ${!!window.customElements}</div>
+              </div>
+            </details>
+          </div>
         </div>
       `;
+    } else {
+      console.error('[GenealogyExplorer] No target element found for error rendering');
     }
   }
 
@@ -309,4 +343,30 @@ class GenealogyExplorer extends HTMLElement {
   }
 }
 
-customElements.define("genealogy-explorer", GenealogyExplorer);
+// Register the custom element with error handling
+try {
+  customElements.define("genealogy-explorer", GenealogyExplorer);
+  console.log('[GenealogyExplorer] Custom element registered successfully');
+  
+  // Expose class globally for debugging
+  window.GenealogyExplorer = GenealogyExplorer;
+  
+  // Check if we have any existing components that need initialization
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('[GenealogyExplorer] DOM loaded, checking for components');
+    const components = document.querySelectorAll('genealogy-explorer');
+    console.log(`[GenealogyExplorer] Found ${components.length} components`);
+    
+    components.forEach((component, index) => {
+      console.log(`[GenealogyExplorer] Component ${index + 1}:`, {
+        hasContent: component.innerHTML.trim().length > 0,
+        display: window.getComputedStyle(component).display,
+        width: component.offsetWidth,
+        height: component.offsetHeight
+      });
+    });
+  });
+  
+} catch (error) {
+  console.error('[GenealogyExplorer] Failed to register custom element:', error);
+}
