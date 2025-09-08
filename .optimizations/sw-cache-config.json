@@ -1,0 +1,63 @@
+{
+  "version": "1.0.0",
+  "cacheName": "bible-explorer-v1",
+  "strategies": {
+    "static": {
+      "strategy": "CacheFirst",
+      "cacheName": "static-assets-v1",
+      "expiration": {
+        "maxEntries": 100,
+        "maxAgeSeconds": 31536000
+      },
+      "patterns": [
+        {}
+      ]
+    },
+    "data": {
+      "strategy": "NetworkFirst",
+      "cacheName": "data-cache-v1",
+      "networkTimeout": 3000,
+      "expiration": {
+        "maxEntries": 1000,
+        "maxAgeSeconds": 7200
+      },
+      "patterns": [
+        {}
+      ]
+    },
+    "pages": {
+      "strategy": "NetworkFirst",
+      "cacheName": "pages-cache-v1",
+      "networkTimeout": 2000,
+      "expiration": {
+        "maxEntries": 200,
+        "maxAgeSeconds": 3600
+      },
+      "patterns": [
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "api": {
+      "strategy": "NetworkOnly",
+      "cacheName": "api-cache-v1",
+      "patterns": [
+        {},
+        {}
+      ]
+    }
+  },
+  "offlineFallbacks": {
+    "text/html": "/offline.html",
+    "application/json": "{\"error\": \"offline\", \"message\": \"Content not available offline\"}"
+  },
+  "backgroundSync": {
+    "enabled": true,
+    "queues": [
+      "bookmark-sync",
+      "reading-progress"
+    ]
+  }
+}

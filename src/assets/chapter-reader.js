@@ -745,12 +745,26 @@ class ChapterReader {
       return;
     }
     
-    // Check if buttons have already been initialized
-    if (document.querySelector('.chapter-reader-button')) {
-      console.log('[ChapterReader] Buttons already exist, skipping initialization');
+    // Check if buttons have already been initialized by any system
+    if (document.querySelector('.chapter-reader-button') || document.querySelector('.commentary-reader-button')) {
+      console.log('[ChapterReader] Reader buttons already exist, skipping initialization');
       return;
     }
     
+    // Wait a bit to see if commentary reader initializes first
+    setTimeout(() => {
+      // Double-check after delay
+      if (window.commentaryReaderInstance || document.querySelector('.chapter-actions') || 
+          document.querySelector('.chapter-reader-button') || document.querySelector('.commentary-reader-button')) {
+        console.log('[ChapterReader] Commentary reader system initialized first, skipping');
+        return;
+      }
+      
+      this.proceedWithButtonInitialization();
+    }, 100);
+  }
+  
+  proceedWithButtonInitialization() {
     // Find all Enduring Word commentary links and add chapter reader buttons
     const commentaryLinks = document.querySelectorAll('a[href*="enduringword.com"]');
     console.log(`[ChapterReader] Found ${commentaryLinks.length} Enduring Word links`);
@@ -907,9 +921,13 @@ class ChapterReader {
   addChapterReaderButton(commentaryLink, chapterInfo) {
     console.log(`[ChapterReader] Processing link for ${chapterInfo.book} ${chapterInfo.chapter}`, commentaryLink);
     
-    // Skip if this link is already processed (has a wrapper parent)
-    if (commentaryLink.parentNode && commentaryLink.parentNode.classList.contains('commentary-links')) {
-      console.log(`[ChapterReader] Skipping ${chapterInfo.book} ${chapterInfo.chapter} - already has wrapper`);
+    // Skip if this link is already processed (has a wrapper parent or commentary reader buttons)
+    if (commentaryLink.parentNode && (
+        commentaryLink.parentNode.classList.contains('commentary-links') ||
+        commentaryLink.parentNode.classList.contains('chapter-actions') ||
+        commentaryLink.parentNode.querySelector('.commentary-reader-button')
+    )) {
+      console.log(`[ChapterReader] Skipping ${chapterInfo.book} ${chapterInfo.chapter} - already processed by commentary reader`);
       return;
     }
     
