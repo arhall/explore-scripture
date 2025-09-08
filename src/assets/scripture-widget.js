@@ -432,7 +432,7 @@ class ScriptureWidget {
     return this.getFallbackScripture(reference);
   }
 
-  async fetchFromSource(source, reference, translation) {
+  async fetchFromSource(source, reference, _translation) {
     if (source.name === 'bible-api') {
       // Bible API format: https://bible-api.com/john+3:16
       const formattedRef = reference.replace(/\s+/g, '+').toLowerCase();
@@ -557,9 +557,6 @@ class ScriptureWidget {
 
   autoDetectReferences() {
     // Optional: Auto-detect scripture references in text
-    const content = document.querySelector('main') || document.body;
-    const scriptureRegex = /\b([1-3]?\s?[A-Za-z]+)\s+(\d+):(\d+)(?:-(\d+))?\b/g;
-    
     // This would need more sophisticated implementation to avoid conflicts
     // For now, manual data-scripture attributes are recommended
   }

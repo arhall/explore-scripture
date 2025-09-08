@@ -135,6 +135,12 @@ class GospelThreadNavigator {
 
   setupActiveNavigation() {
     // Intersection Observer for active section highlighting
+    if (typeof IntersectionObserver === 'undefined') {
+      console.warn('IntersectionObserver not supported, skipping active navigation');
+      return;
+    }
+    
+    // eslint-disable-next-line no-undef
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach(entry => {

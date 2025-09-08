@@ -289,7 +289,7 @@ class SearchEngine {
     let allResults = [];
     
     // Search all indices
-    for (const [indexName, items] of this.indices) {
+    for (const [, items] of this.indices) {
       const indexResults = this.searchIndex(items, normalizedQuery, options);
       allResults = allResults.concat(indexResults);
     }
@@ -311,7 +311,7 @@ class SearchEngine {
   }
 
   // Search within a specific index
-  searchIndex(items, query, options = {}) {
+  searchIndex(items, query, _options = {}) {
     const results = [];
     const queryTokens = this.tokenize(query);
     

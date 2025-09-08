@@ -3,7 +3,7 @@
  * OTEL-compliant observability and telemetry setup
  */
 
-import { trace, metrics, logs } from '@opentelemetry/api';
+import { trace, metrics } from '@opentelemetry/api';
 import { WebSDK } from '@opentelemetry/sdk-web';
 import { getWebAutoInstrumentations } from '@opentelemetry/auto-instrumentations-web';
 import { Resource } from '@opentelemetry/resources';
@@ -261,7 +261,7 @@ class BibleExplorerTelemetry {
       return originalReplaceState.apply(this, args);
     };
 
-    window.addEventListener('popstate', (event) => {
+    window.addEventListener('popstate', (_event) => {
       this.recordNavigation('popstate', window.location.href);
     });
   }
@@ -325,7 +325,7 @@ class BibleExplorerTelemetry {
     if (typeof query !== 'string') return '[INVALID_QUERY]';
     
     // Remove potential sensitive information and limit length
-    return query.replace(/[<>\"/\\]/g, '')
+    return query.replace(/[<>"/\\]/g, '')
                 .replace(/\b(password|token|key|secret|auth)\b/gi, '[FILTERED]')
                 .substring(0, 50); // Shorter limit for telemetry
   }

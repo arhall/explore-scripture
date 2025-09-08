@@ -84,6 +84,7 @@ class SecurityConfig {
     if (typeof input !== 'string') return '';
 
     // Remove null bytes and control characters
+    // eslint-disable-next-line no-control-regex
     let sanitized = input.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, '');
 
     // Apply type-specific sanitization
@@ -224,7 +225,7 @@ class SecurityConfig {
       }
 
       return true;
-    } catch (e) {
+    } catch {
       console.warn('Security: Invalid URL format');
       return false;
     }
@@ -247,20 +248,27 @@ class SecurityConfig {
   // Setup security event monitoring
   setupSecurityMonitoring() {
     // Monitor for potential XSS attempts
-    const originalSetAttribute = Element.prototype.setAttribute;
-    Element.prototype.setAttribute = function(name, value) {
+    if (typeof Element !== 'undefined') {
+      // eslint-disable-next-line no-undef
+      const originalSetAttribute = Element.prototype.setAttribute;
+      // eslint-disable-next-line no-undef
+      Element.prototype.setAttribute = function(name, value) {
       if (typeof value === 'string' && !window.securityConfig.validateContent(value)) {
         console.error('Security: Blocked potentially malicious setAttribute');
         return;
       }
-      return originalSetAttribute.call(this, name, value);
-    };
+        return originalSetAttribute.call(this, name, value);
+      };
+    }
 
     // Monitor for suspicious DOM manipulation
-    const observer = new MutationObserver((mutations) => {
+    if (typeof MutationObserver !== 'undefined') {
+      // eslint-disable-next-line no-undef
+      const observer = new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {
         if (mutation.type === 'childList') {
           mutation.addedNodes.forEach((node) => {
+            // eslint-disable-next-line no-undef
             if (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'SCRIPT') {
               const src = node.getAttribute('src');
               if (src && !this.validateUrl(src)) {
@@ -273,18 +281,23 @@ class SecurityConfig {
       });
     });
 
-    // Start observing the document with the configured parameters
-    observer.observe(document, { childList: true, subtree: true });
+      // Start observing the document with the configured parameters
+      observer.observe(document, { childList: true, subtree: true });
+    }
 
     // Monitor for localStorage tampering
-    const originalSetItem = Storage.prototype.setItem;
-    Storage.prototype.setItem = function(key, value) {
-      if (typeof value === 'string' && !window.securityConfig.validateContent(value)) {
-        console.warn('Security: Blocked potentially malicious localStorage operation');
-        return;
-      }
-      return originalSetItem.call(this, key, value);
-    };
+    if (typeof Storage !== 'undefined') {
+      // eslint-disable-next-line no-undef
+      const originalSetItem = Storage.prototype.setItem;
+      // eslint-disable-next-line no-undef
+      Storage.prototype.setItem = function(key, value) {
+        if (typeof value === 'string' && !window.securityConfig.validateContent(value)) {
+          console.warn('Security: Blocked potentially malicious localStorage operation');
+          return;
+        }
+        return originalSetItem.call(this, key, value);
+      };
+    }
   }
 
   // Security audit function

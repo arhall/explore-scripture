@@ -127,7 +127,7 @@ class BibleExplorerLogger {
           });
         });
         observer.observe({ entryTypes: ['longtask'] });
-      } catch (e) {
+      } catch {
         this.debug('Long task monitoring not supported');
       }
     }
@@ -183,7 +183,7 @@ class BibleExplorerLogger {
         return value;
       }));
       return sanitized;
-    } catch (e) {
+    } catch {
       return { error: 'Failed to serialize data', original: String(data) };
     }
   }
@@ -214,12 +214,12 @@ class BibleExplorerLogger {
       }
       
       localStorage.setItem('bibleExplorerLogs', JSON.stringify(stored));
-    } catch (e) {
+    } catch {
       // Storage might be full, ignore silently
     }
   }
 
-  sendToExternal(logEntry) {
+  sendToExternal(_logEntry) {
     // Placeholder for external logging service integration
     // You could integrate with services like LogRocket, Sentry, etc.
     if (window.bibleExplorerConfig?.externalLogging) {

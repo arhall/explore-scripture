@@ -47,12 +47,12 @@ function getLastEntityArray(data) {
         return obj;
       }
       // Otherwise, search within array elements
-      for (let item of obj) {
+      for (const item of obj) {
         const result = findEntitiesRecursive(item);
         if (result) return result;
       }
     } else if (typeof obj === 'object' && obj !== null) {
-      for (let value of Object.values(obj)) {
+      for (const value of Object.values(obj)) {
         const result = findEntitiesRecursive(value);
         if (result) return result;
       }

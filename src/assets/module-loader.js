@@ -111,6 +111,7 @@ class ModuleLoader {
   setupIntersectionObserver() {
     if (!('IntersectionObserver' in window)) return;
     
+    // eslint-disable-next-line no-undef
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {

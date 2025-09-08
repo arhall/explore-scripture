@@ -41,6 +41,7 @@ class ChapterReader {
     this.currentTranslation = localStorage.getItem('preferred-chapter-translation') || 
                              localStorage.getItem('preferred-translation') || 'esv';
     this.currentModal = null;
+    this.keydownHandler = null;
     this.init();
   }
 
@@ -674,6 +675,8 @@ class ChapterReader {
   }
 
   initializeChapterButtons() {
+    console.log('[ChapterReader] Starting button initialization...');
+    
     // Check if buttons have already been initialized
     if (document.querySelector('.chapter-reader-button')) {
       console.log('[ChapterReader] Buttons already exist, skipping initialization');
@@ -682,6 +685,7 @@ class ChapterReader {
     
     // Find all Enduring Word commentary links and add chapter reader buttons
     const commentaryLinks = document.querySelectorAll('a[href*="enduringword.com"]');
+    console.log(`[ChapterReader] Found ${commentaryLinks.length} Enduring Word links`);
     const processedChapters = new Set();
     
     commentaryLinks.forEach(link => {
@@ -797,10 +801,22 @@ class ChapterReader {
   }
 
   addChapterReaderButton(commentaryLink, chapterInfo) {
+    console.log(`[ChapterReader] Processing link for ${chapterInfo.book} ${chapterInfo.chapter}`, commentaryLink);
+    
     // Skip if this link is already processed (has a wrapper parent)
     if (commentaryLink.parentNode && commentaryLink.parentNode.classList.contains('commentary-links')) {
+      console.log(`[ChapterReader] Skipping ${chapterInfo.book} ${chapterInfo.chapter} - already has wrapper`);
       return;
     }
+    
+    // Also check if there's already a chapter reader button for this specific chapter
+    const existingButton = commentaryLink.parentNode.querySelector('.chapter-reader-button');
+    if (existingButton) {
+      console.log(`[ChapterReader] Skipping ${chapterInfo.book} ${chapterInfo.chapter} - button already exists`);
+      return;
+    }
+    
+    console.log(`[ChapterReader] Adding button for ${chapterInfo.book} ${chapterInfo.chapter}`);
     
     // Create wrapper for both links
     const wrapper = document.createElement('div');
@@ -931,6 +947,13 @@ class ChapterReader {
   closeChapterReader() {
     if (this.currentModal) {
       this.currentModal.classList.remove('visible');
+      
+      // Clean up keyboard navigation handler
+      if (this.keydownHandler) {
+        document.removeEventListener('keydown', this.keydownHandler);
+        this.keydownHandler = null;
+      }
+      
       setTimeout(() => {
         if (this.currentModal && this.currentModal.parentNode) {
           this.currentModal.parentNode.removeChild(this.currentModal);
@@ -1074,7 +1097,8 @@ class ChapterReader {
       
       try {
         // Security: Timeout and signal for fetch
-        const controller = new AbortController();
+        // eslint-disable-next-line no-undef
+        const controller = typeof AbortController !== 'undefined' ? new AbortController() : { signal: null, abort: () => {} };
         const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
         
         const response = await fetch(`${source.endpoint}?q=${formattedRef}&include-verse-numbers=true&include-headings=false&include-footnotes=false`, {
@@ -1128,7 +1152,8 @@ class ChapterReader {
       const formattedRef = encodeURIComponent(cleanReference.replace(/\s+/g, '+').toLowerCase());
       
       try {
-        const controller = new AbortController();
+        // eslint-disable-next-line no-undef
+        const controller = typeof AbortController !== 'undefined' ? new AbortController() : { signal: null, abort: () => {} };
         const timeoutId = setTimeout(() => controller.abort(), 8000); // 8 second timeout
         
         const response = await fetch(`${source.endpoint}${formattedRef}`, {
@@ -1464,14 +1489,22 @@ class ChapterReader {
   }
 
   setupKeyboardNavigation() {
-    document.addEventListener('keydown', (e) => {
+    // Remove existing handler if present
+    if (this.keydownHandler) {
+      document.removeEventListener('keydown', this.keydownHandler);
+    }
+    
+    // Create and store new handler
+    this.keydownHandler = (e) => {
       if (this.currentModal) {
         if (e.key === 'Escape') {
           e.preventDefault();
           this.closeChapterReader();
         }
       }
-    });
+    };
+    
+    document.addEventListener('keydown', this.keydownHandler);
   }
 
 

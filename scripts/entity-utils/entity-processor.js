@@ -14,7 +14,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Configuration
-const INPUT_DIR = '.';
+const INPUT_DIR = './data/source-datasets';
 const OUTPUT_DIR = './src/assets/data';
 const MASTER_FILE = 'Bible_combined_all_expanded.with_ids.v2.json';
 const REDIRECT_MAP_FILE = 'Bible_id_redirect_map.v2.json';

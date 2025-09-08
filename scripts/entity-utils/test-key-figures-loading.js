@@ -91,7 +91,7 @@ async function testKeyFiguresLoading() {
             booksWithoutEntities++;
           }
         }
-      } catch (e) {
+      } catch {
         // Skip files with errors
       }
     }

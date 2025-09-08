@@ -102,7 +102,9 @@
       "Bash(open http://localhost:8082/books/daniel/)",
       "Bash(open http://localhost:8082/entities/)",
       "Bash(open http://localhost:8082/entities/d.god.yhwh.gene-1-3--215c6dbf/)",
-      "Bash(kill:*)"
+      "Bash(kill:*)",
+      "Bash(open http://localhost:8082/books/ecclesiastes/)",
+      "Bash(npx eslint:*)"
     ],
     "deny": [],
     "ask": []

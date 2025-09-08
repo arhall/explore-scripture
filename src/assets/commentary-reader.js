@@ -830,7 +830,7 @@ class CommentaryReader {
 
   getBookNameFromPage() {
     // Primary method: extract from URL path (most reliable)
-    const pathMatch = window.location.pathname.match(/\/books\/([^\/]+)/);
+    const pathMatch = window.location.pathname.match(/\/books\/([^/]+)/);
     if (pathMatch) {
       const slug = pathMatch[1];
       return this.convertSlugToBookName(slug);
@@ -1430,7 +1430,15 @@ class CommentaryReader {
         localStorage.setItem('preferred-commentary', newCommentary);
         
         // Trigger the change event to update content
-        sourceSelect.dispatchEvent(new Event('change'));
+        if (typeof Event !== 'undefined') {
+          // eslint-disable-next-line no-undef
+          sourceSelect.dispatchEvent(new Event('change'));
+        } else {
+          // Fallback for older browsers
+          const event = document.createEvent('HTMLEvents');
+          event.initEvent('change', true, false);
+          sourceSelect.dispatchEvent(event);
+        }
       }
     }
   }

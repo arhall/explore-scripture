@@ -26,6 +26,7 @@ class SearchInterface {
     this.handleDocumentClick = this.handleDocumentClick.bind(this);
     this.handleFocus = this.handleFocus.bind(this);
     this.handleBlur = this.handleBlur.bind(this);
+    this.handleClearClick = this.handleClearClick.bind(this);
   }
 
   async initialize() {
@@ -325,11 +326,7 @@ class SearchInterface {
     
     // Clear button
     if (clearButton) {
-      clearButton.addEventListener('click', () => {
-        input.value = '';
-        this.clearSearch();
-        input.focus();
-      });
+      clearButton.addEventListener('click', this.handleClearClick);
     }
     
     // Results events
@@ -417,6 +414,14 @@ class SearchInterface {
     }
   }
 
+  handleClearClick() {
+    if (this.input) {
+      this.input.value = '';
+      this.clearSearch();
+      this.input.focus();
+    }
+  }
+
   performSearch(query) {
     if (!this.searchEngine) {
       console.warn('[SearchInterface] Search engine not available');
@@ -451,10 +456,10 @@ class SearchInterface {
     
     const resultsHTML = this.results.map((result, index) => `
       <div class="search-result${index === this.selectedIndex ? ' selected' : ''}" 
-           data-url="${result.url}" 
+           data-url="${this.escapeHtml(result.url)}" 
            data-index="${index}">
         <div class="search-result-title">
-          <span class="search-result-type ${result.type}">${result.type}</span>
+          <span class="search-result-type ${this.escapeHtml(result.type)}">${this.escapeHtml(result.type)}</span>
           ${this.escapeHtml(result.text)}
         </div>
         ${result.subtitle ? `<div class="search-result-subtitle">${this.escapeHtml(result.subtitle)}</div>` : ''}
@@ -548,6 +553,38 @@ class SearchInterface {
       }
     }
   }
+
+  // Cleanup method to prevent memory leaks
+  destroy() {
+    if (!this.isInitialized) return;
+
+    // Remove event listeners
+    if (this.input) {
+      this.input.removeEventListener('input', this.handleInput);
+      this.input.removeEventListener('keydown', this.handleKeydown);
+      this.input.removeEventListener('focus', this.handleFocus);
+      this.input.removeEventListener('blur', this.handleBlur);
+    }
+
+    if (this.clearButton) {
+      this.clearButton.removeEventListener('click', this.handleClearClick);
+    }
+
+    if (this.resultsContainer) {
+      this.resultsContainer.removeEventListener('click', this.handleResultClick);
+    }
+
+    document.removeEventListener('click', this.handleDocumentClick);
+
+    // Clear references
+    this.input = null;
+    this.resultsContainer = null;
+    this.clearButton = null;
+    this.container = null;
+    this.searchEngine = null;
+    this.results = [];
+    this.isInitialized = false;
+  }
 }
 
 // Global search interface instance
@@ -555,7 +592,10 @@ window.searchInterface = null;
 
 // Initialize search interface when DOM is ready
 function initializeSearchInterface() {
-  if (window.searchInterface) return;
+  // Clean up existing instance to prevent memory leaks
+  if (window.searchInterface) {
+    window.searchInterface.destroy();
+  }
   
   window.searchInterface = new SearchInterface({
     maxResults: 8,

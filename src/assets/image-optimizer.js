@@ -6,7 +6,7 @@
 class ImageOptimizer {
   constructor() {
     this.supportsWebP = null;
-    this.supportsIntersectionObserver = 'IntersectionObserver' in window;
+    this.supportsIntersectionObserver = typeof IntersectionObserver !== 'undefined';
     this.lazyImages = [];
     this.init();
   }
@@ -26,7 +26,12 @@ class ImageOptimizer {
   }
   
   async checkWebPSupport() {
+    if (typeof Image === 'undefined') {
+      return false;
+    }
+    
     return new Promise((resolve) => {
+      // eslint-disable-next-line no-undef
       const webP = new Image();
       webP.onload = webP.onerror = () => {
         this.supportsWebP = webP.height === 2;
@@ -38,6 +43,7 @@ class ImageOptimizer {
   
   setupLazyLoading() {
     if (this.supportsIntersectionObserver) {
+      // eslint-disable-next-line no-undef
       this.intersectionObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -68,8 +74,9 @@ class ImageOptimizer {
   }
   
   observeNewImages() {
-    if (!('MutationObserver' in window)) return;
+    if (typeof MutationObserver === 'undefined') return;
     
+    // eslint-disable-next-line no-undef
     const mutationObserver = new MutationObserver((mutations) => {
       mutations.forEach(mutation => {
         mutation.addedNodes.forEach(node => {
@@ -98,9 +105,10 @@ class ImageOptimizer {
     const src = element.dataset.src;
     const srcset = element.dataset.srcset;
     
-    if (!src) return;
+    if (!src || typeof Image === 'undefined') return;
     
     // Create new image to test loading
+    // eslint-disable-next-line no-undef
     const img = new Image();
     
     img.onload = () => {
@@ -199,6 +207,12 @@ class ImageOptimizer {
   getPlaceholderImage(img) {
     const width = img.width || 400;
     const height = img.height || 300;
+    
+    if (typeof btoa === 'undefined') {
+      return `data:image/svg+xml,<svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="%23f0f0f0"/><text x="50%" y="50%" font-family="Arial, sans-serif" font-size="14" fill="%23ccc" text-anchor="middle" dy=".3em">Loading...</text></svg>`;
+    }
+    
+    // eslint-disable-next-line no-undef
     return `data:image/svg+xml;base64,${btoa(`
       <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
         <rect width="100%" height="100%" fill="#f0f0f0"/>
@@ -227,7 +241,7 @@ class ImageOptimizer {
   handleResize() {
     // Re-evaluate loaded images for better responsive variants
     const loadedImages = document.querySelectorAll('img.image-loaded[srcset]');
-    loadedImages.forEach(img => {
+    loadedImages.forEach(_img => {
       // Browser should handle this automatically with srcset
       // but we could add custom logic here if needed
     });

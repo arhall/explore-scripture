@@ -27,12 +27,12 @@ const ENTITY_SCHEMA = {
   }
 };
 
-function validateEntitySchema(entity, filePath) {
+function validateEntitySchema(entity, _filePath) {
   const errors = [];
   
   // Check required fields
   for (const field of ENTITY_SCHEMA.required) {
-    if (!entity.hasOwnProperty(field)) {
+    if (!Object.prototype.hasOwnProperty.call(entity, field)) {
       errors.push(`Missing required field: ${field}`);
     } else if (entity[field] === null || entity[field] === undefined) {
       errors.push(`Required field ${field} is null/undefined`);
@@ -41,7 +41,7 @@ function validateEntitySchema(entity, filePath) {
   
   // Check field types
   for (const [field, expectedType] of Object.entries(ENTITY_SCHEMA.types)) {
-    if (entity.hasOwnProperty(field) && entity[field] !== null && entity[field] !== undefined) {
+    if (Object.prototype.hasOwnProperty.call(entity, field) && entity[field] !== null && entity[field] !== undefined) {
       const actualType = Array.isArray(entity[field]) ? 'array' : typeof entity[field];
       if (actualType !== expectedType) {
         errors.push(`Field ${field} should be ${expectedType}, got ${actualType}`);
