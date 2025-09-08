@@ -1,0 +1,1069 @@
+[
+  {
+    "id": "adam",
+    "name": "Adam",
+    "children": ["cain", "abel", "seth"],
+    "spouses": ["eve"],
+    "role": "First man",
+    "verses": ["Gen 1:27", "Gen 2:7"]
+  },
+  {
+    "id": "eve",
+    "name": "Eve",
+    "children": ["cain", "abel", "seth"],
+    "spouses": ["adam"],
+    "role": "First woman",
+    "verses": ["Gen 2:22", "Gen 3:20"]
+  },
+  {
+    "id": "cain",
+    "name": "Cain",
+    "parents": ["adam", "eve"],
+    "children": ["enoch_cain"],
+    "role": "Firstborn son",
+    "verses": ["Gen 4:1"]
+  },
+  {
+    "id": "abel",
+    "name": "Abel",
+    "parents": ["adam", "eve"],
+    "role": "Second son",
+    "verses": ["Gen 4:2"]
+  },
+  {
+    "id": "seth",
+    "name": "Seth",
+    "parents": ["adam", "eve"],
+    "children": ["enos"],
+    "role": "Third son",
+    "verses": ["Gen 4:25"]
+  },
+  {
+    "id": "enoch_cain",
+    "name": "Enoch",
+    "parents": ["cain"],
+    "role": "Cain's son",
+    "verses": ["Gen 4:17"]
+  },
+  {
+    "id": "enos",
+    "name": "Enosh",
+    "parents": ["seth"],
+    "children": ["kenan"],
+    "role": "Son of Seth",
+    "verses": ["Gen 4:26"]
+  },
+  {
+    "id": "kenan",
+    "name": "Kenan",
+    "parents": ["enos"],
+    "children": ["mahalalel"],
+    "verses": ["Gen 5:9"]
+  },
+  {
+    "id": "mahalalel",
+    "name": "Mahalalel",
+    "parents": ["kenan"],
+    "children": ["jared"],
+    "verses": ["Gen 5:12"]
+  },
+  {
+    "id": "jared",
+    "name": "Jared",
+    "parents": ["mahalalel"],
+    "children": ["enoch_godly"],
+    "verses": ["Gen 5:15"]
+  },
+  {
+    "id": "enoch_godly",
+    "name": "Enoch",
+    "parents": ["jared"],
+    "children": ["methuselah"],
+    "role": "Walked with God",
+    "verses": ["Gen 5:21", "Gen 5:24"]
+  },
+  {
+    "id": "methuselah",
+    "name": "Methuselah",
+    "parents": ["enoch_godly"],
+    "children": ["lamech_noah"],
+    "role": "Oldest man",
+    "verses": ["Gen 5:25"]
+  },
+  {
+    "id": "lamech_noah",
+    "name": "Lamech",
+    "parents": ["methuselah"],
+    "children": ["noah"],
+    "verses": ["Gen 5:28"]
+  },
+  {
+    "id": "noah",
+    "name": "Noah",
+    "parents": ["lamech_noah"],
+    "children": ["shem", "ham", "japheth"],
+    "role": "Ark builder",
+    "verses": ["Gen 6:9", "Gen 7:1"]
+  },
+  {
+    "id": "shem",
+    "name": "Shem",
+    "parents": ["noah"],
+    "children": ["arpachshad"],
+    "role": "Son of Noah",
+    "verses": ["Gen 5:32"]
+  },
+  {
+    "id": "ham",
+    "name": "Ham",
+    "parents": ["noah"],
+    "children": ["canaan", "cush"],
+    "role": "Son of Noah",
+    "verses": ["Gen 5:32"]
+  },
+  {
+    "id": "japheth",
+    "name": "Japheth",
+    "parents": ["noah"],
+    "role": "Son of Noah",
+    "verses": ["Gen 5:32"]
+  },
+  {
+    "id": "canaan",
+    "name": "Canaan",
+    "parents": ["ham"],
+    "role": "Son of Ham",
+    "verses": ["Gen 9:22"]
+  },
+  {
+    "id": "cush",
+    "name": "Cush",
+    "parents": ["ham"],
+    "children": ["nimrod"],
+    "role": "Son of Ham",
+    "verses": ["Gen 10:6"]
+  },
+  {
+    "id": "nimrod",
+    "name": "Nimrod",
+    "parents": ["cush"],
+    "role": "Mighty hunter",
+    "verses": ["Gen 10:8"]
+  },
+  {
+    "id": "arpachshad",
+    "name": "Arpachshad",
+    "parents": ["shem"],
+    "children": ["shelah"],
+    "verses": ["Gen 10:22"]
+  },
+  {
+    "id": "shelah",
+    "name": "Shelah",
+    "parents": ["arpachshad"],
+    "children": ["eber"],
+    "verses": ["Gen 10:24"]
+  },
+  {
+    "id": "eber",
+    "name": "Eber",
+    "parents": ["shelah"],
+    "children": ["peleg", "joktan"],
+    "verses": ["Gen 10:24"]
+  },
+  {
+    "id": "peleg",
+    "name": "Peleg",
+    "parents": ["eber"],
+    "children": ["reu"],
+    "verses": ["Gen 10:25"]
+  },
+  {
+    "id": "joktan",
+    "name": "Joktan",
+    "parents": ["eber"],
+    "verses": ["Gen 10:25"]
+  },
+  {
+    "id": "reu",
+    "name": "Reu",
+    "parents": ["peleg"],
+    "children": ["serug"],
+    "verses": ["Gen 11:18"]
+  },
+  {
+    "id": "serug",
+    "name": "Serug",
+    "parents": ["reu"],
+    "children": ["nahor_elder"],
+    "verses": ["Gen 11:20"]
+  },
+  {
+    "id": "nahor_elder",
+    "name": "Nahor",
+    "parents": ["serug"],
+    "children": ["terah"],
+    "verses": ["Gen 11:22"]
+  },
+  {
+    "id": "terah",
+    "name": "Terah",
+    "parents": ["nahor_elder"],
+    "children": ["abraham", "nahor", "haran"],
+    "role": "Father of Abraham",
+    "verses": ["Gen 11:24"]
+  },
+  {
+    "id": "abraham",
+    "name": "Abraham",
+    "aka": ["Abram"],
+    "parents": ["terah"],
+    "children": ["isaac", "ishmael"],
+    "spouses": ["sarah", "hagar"],
+    "role": "Father of faith",
+    "tribe": "Israel",
+    "verses": ["Gen 12:1", "Gen 17:5"]
+  },
+  {
+    "id": "nahor",
+    "name": "Nahor",
+    "parents": ["terah"],
+    "children": ["bethuel"],
+    "role": "Abraham's brother",
+    "verses": ["Gen 11:26"]
+  },
+  {
+    "id": "haran",
+    "name": "Haran",
+    "parents": ["terah"],
+    "children": ["lot", "milcah", "iscah"],
+    "role": "Abraham's brother",
+    "verses": ["Gen 11:26"]
+  },
+  {
+    "id": "sarah",
+    "name": "Sarah",
+    "aka": ["Sarai"],
+    "children": ["isaac"],
+    "spouses": ["abraham"],
+    "role": "Abraham's wife",
+    "verses": ["Gen 17:15"]
+  },
+  {
+    "id": "hagar",
+    "name": "Hagar",
+    "children": ["ishmael"],
+    "spouses": ["abraham"],
+    "role": "Sarah's servant",
+    "verses": ["Gen 16:1"]
+  },
+  {
+    "id": "lot",
+    "name": "Lot",
+    "parents": ["haran"],
+    "role": "Abraham's nephew",
+    "verses": ["Gen 11:27"]
+  },
+  {
+    "id": "milcah",
+    "name": "Milcah",
+    "parents": ["haran"],
+    "spouses": ["nahor"],
+    "role": "Nahor's wife",
+    "verses": ["Gen 11:29"]
+  },
+  {
+    "id": "iscah",
+    "name": "Iscah",
+    "parents": ["haran"],
+    "verses": ["Gen 11:29"]
+  },
+  {
+    "id": "bethuel",
+    "name": "Bethuel",
+    "parents": ["nahor", "milcah"],
+    "children": ["rebekah", "laban"],
+    "verses": ["Gen 22:22"]
+  },
+  {
+    "id": "rebekah",
+    "name": "Rebekah",
+    "parents": ["bethuel"],
+    "children": ["jacob", "esau"],
+    "spouses": ["isaac"],
+    "role": "Isaac's wife",
+    "verses": ["Gen 24:15"]
+  },
+  {
+    "id": "laban",
+    "name": "Laban",
+    "parents": ["bethuel"],
+    "children": ["leah", "rachel"],
+    "role": "Rebekah's brother",
+    "verses": ["Gen 24:29"]
+  },
+  {
+    "id": "isaac",
+    "name": "Isaac",
+    "parents": ["abraham", "sarah"],
+    "children": ["jacob", "esau"],
+    "spouses": ["rebekah"],
+    "role": "Son of promise",
+    "tribe": "Israel",
+    "verses": ["Gen 21:3"]
+  },
+  {
+    "id": "ishmael",
+    "name": "Ishmael",
+    "parents": ["abraham", "hagar"],
+    "role": "Abraham's firstborn",
+    "verses": ["Gen 16:11"]
+  },
+  {
+    "id": "jacob",
+    "name": "Jacob",
+    "aka": ["Israel"],
+    "parents": ["isaac", "rebekah"],
+    "children": ["reuben", "simeon", "levi", "judah", "dan", "naphtali", "gad", "asher", "issachar", "zebulun", "joseph", "benjamin"],
+    "spouses": ["leah", "rachel"],
+    "role": "Father of 12 tribes",
+    "tribe": "Israel",
+    "verses": ["Gen 25:26", "Gen 32:28"]
+  },
+  {
+    "id": "esau",
+    "name": "Esau",
+    "aka": ["Edom"],
+    "parents": ["isaac", "rebekah"],
+    "role": "Jacob's twin",
+    "verses": ["Gen 25:25"]
+  },
+  {
+    "id": "leah",
+    "name": "Leah",
+    "parents": ["laban"],
+    "children": ["reuben", "simeon", "levi", "judah", "issachar", "zebulun"],
+    "spouses": ["jacob"],
+    "role": "Jacob's first wife",
+    "verses": ["Gen 29:16"]
+  },
+  {
+    "id": "rachel",
+    "name": "Rachel",
+    "parents": ["laban"],
+    "children": ["joseph", "benjamin"],
+    "spouses": ["jacob"],
+    "role": "Jacob's beloved wife",
+    "verses": ["Gen 29:16"]
+  },
+  {
+    "id": "reuben",
+    "name": "Reuben",
+    "parents": ["jacob", "leah"],
+    "role": "Firstborn of Jacob",
+    "tribe": "Israel",
+    "verses": ["Gen 29:32"]
+  },
+  {
+    "id": "simeon",
+    "name": "Simeon",
+    "parents": ["jacob", "leah"],
+    "role": "Son of Jacob",
+    "tribe": "Israel",
+    "verses": ["Gen 29:33"]
+  },
+  {
+    "id": "levi",
+    "name": "Levi",
+    "parents": ["jacob", "leah"],
+    "children": ["gershon", "kohath", "merari"],
+    "role": "Priestly tribe founder",
+    "tribe": "Levi",
+    "verses": ["Gen 29:34"]
+  },
+  {
+    "id": "judah",
+    "name": "Judah",
+    "parents": ["jacob", "leah"],
+    "children": ["perez", "zerah"],
+    "spouses": ["tamar"],
+    "role": "Royal tribe founder",
+    "tribe": "Judah",
+    "verses": ["Gen 29:35"]
+  },
+  {
+    "id": "dan",
+    "name": "Dan",
+    "parents": ["jacob", "bilhah"],
+    "role": "Son of Jacob",
+    "tribe": "Israel",
+    "verses": ["Gen 30:6"]
+  },
+  {
+    "id": "naphtali",
+    "name": "Naphtali",
+    "parents": ["jacob", "bilhah"],
+    "role": "Son of Jacob",
+    "tribe": "Israel",
+    "verses": ["Gen 30:8"]
+  },
+  {
+    "id": "gad",
+    "name": "Gad",
+    "parents": ["jacob", "zilpah"],
+    "role": "Son of Jacob",
+    "tribe": "Israel",
+    "verses": ["Gen 30:11"]
+  },
+  {
+    "id": "asher",
+    "name": "Asher",
+    "parents": ["jacob", "zilpah"],
+    "role": "Son of Jacob",
+    "tribe": "Israel",
+    "verses": ["Gen 30:13"]
+  },
+  {
+    "id": "issachar",
+    "name": "Issachar",
+    "parents": ["jacob", "leah"],
+    "role": "Son of Jacob",
+    "tribe": "Israel",
+    "verses": ["Gen 30:18"]
+  },
+  {
+    "id": "zebulun",
+    "name": "Zebulun",
+    "parents": ["jacob", "leah"],
+    "role": "Son of Jacob",
+    "tribe": "Israel",
+    "verses": ["Gen 30:20"]
+  },
+  {
+    "id": "joseph",
+    "name": "Joseph",
+    "parents": ["jacob", "rachel"],
+    "children": ["ephraim", "manasseh"],
+    "spouses": ["asenath"],
+    "role": "Dreamer, Egyptian ruler",
+    "tribe": "Israel",
+    "verses": ["Gen 30:24", "Gen 37:3"]
+  },
+  {
+    "id": "benjamin",
+    "name": "Benjamin",
+    "parents": ["jacob", "rachel"],
+    "role": "Youngest son of Jacob",
+    "tribe": "Israel",
+    "verses": ["Gen 35:18"]
+  },
+  {
+    "id": "bilhah",
+    "name": "Bilhah",
+    "children": ["dan", "naphtali"],
+    "spouses": ["jacob"],
+    "role": "Rachel's servant",
+    "verses": ["Gen 29:29"]
+  },
+  {
+    "id": "zilpah",
+    "name": "Zilpah",
+    "children": ["gad", "asher"],
+    "spouses": ["jacob"],
+    "role": "Leah's servant",
+    "verses": ["Gen 29:24"]
+  },
+  {
+    "id": "tamar",
+    "name": "Tamar",
+    "children": ["perez", "zerah"],
+    "spouses": ["judah"],
+    "role": "Judah's daughter-in-law",
+    "verses": ["Gen 38:6"]
+  },
+  {
+    "id": "perez",
+    "name": "Perez",
+    "parents": ["judah", "tamar"],
+    "children": ["hezron"],
+    "role": "Ancestor of David",
+    "tribe": "Judah",
+    "verses": ["Gen 38:29"]
+  },
+  {
+    "id": "zerah",
+    "name": "Zerah",
+    "parents": ["judah", "tamar"],
+    "role": "Twin of Perez",
+    "tribe": "Judah",
+    "verses": ["Gen 38:30"]
+  },
+  {
+    "id": "gershon",
+    "name": "Gershon",
+    "parents": ["levi"],
+    "role": "Son of Levi",
+    "tribe": "Levi",
+    "verses": ["Gen 46:11"]
+  },
+  {
+    "id": "kohath",
+    "name": "Kohath",
+    "parents": ["levi"],
+    "children": ["amram"],
+    "role": "Son of Levi",
+    "tribe": "Levi",
+    "verses": ["Gen 46:11"]
+  },
+  {
+    "id": "merari",
+    "name": "Merari",
+    "parents": ["levi"],
+    "role": "Son of Levi",
+    "tribe": "Levi",
+    "verses": ["Gen 46:11"]
+  },
+  {
+    "id": "ephraim",
+    "name": "Ephraim",
+    "parents": ["joseph", "asenath"],
+    "role": "Son of Joseph",
+    "tribe": "Israel",
+    "verses": ["Gen 41:52"]
+  },
+  {
+    "id": "manasseh",
+    "name": "Manasseh",
+    "parents": ["joseph", "asenath"],
+    "role": "Son of Joseph",
+    "tribe": "Israel",
+    "verses": ["Gen 41:51"]
+  },
+  {
+    "id": "asenath",
+    "name": "Asenath",
+    "children": ["ephraim", "manasseh"],
+    "spouses": ["joseph"],
+    "role": "Joseph's wife",
+    "verses": ["Gen 41:45"]
+  },
+  {
+    "id": "hezron",
+    "name": "Hezron",
+    "parents": ["perez"],
+    "children": ["ram"],
+    "role": "Son of Perez",
+    "tribe": "Judah",
+    "verses": ["Ruth 4:18"]
+  },
+  {
+    "id": "ram",
+    "name": "Ram",
+    "parents": ["hezron"],
+    "children": ["amminadab"],
+    "role": "Ancestor of David",
+    "tribe": "Judah",
+    "verses": ["Ruth 4:19"]
+  },
+  {
+    "id": "amminadab",
+    "name": "Amminadab",
+    "parents": ["ram"],
+    "children": ["nahshon"],
+    "role": "Ancestor of David",
+    "tribe": "Judah",
+    "verses": ["Ruth 4:19"]
+  },
+  {
+    "id": "nahshon",
+    "name": "Nahshon",
+    "parents": ["amminadab"],
+    "children": ["salmon"],
+    "role": "Leader of Judah",
+    "tribe": "Judah",
+    "verses": ["Num 1:7"]
+  },
+  {
+    "id": "salmon",
+    "name": "Salmon",
+    "parents": ["nahshon"],
+    "children": ["boaz"],
+    "spouses": ["rahab"],
+    "role": "Ancestor of David",
+    "tribe": "Judah",
+    "verses": ["Ruth 4:20"]
+  },
+  {
+    "id": "rahab",
+    "name": "Rahab",
+    "children": ["boaz"],
+    "spouses": ["salmon"],
+    "role": "Jericho prostitute",
+    "verses": ["Josh 2:1", "Matt 1:5"]
+  },
+  {
+    "id": "boaz",
+    "name": "Boaz",
+    "parents": ["salmon", "rahab"],
+    "children": ["obed"],
+    "spouses": ["ruth"],
+    "role": "Kinsman redeemer",
+    "tribe": "Judah",
+    "verses": ["Ruth 2:1"]
+  },
+  {
+    "id": "ruth",
+    "name": "Ruth",
+    "children": ["obed"],
+    "spouses": ["boaz"],
+    "role": "Moabite, ancestor of David",
+    "verses": ["Ruth 1:4"]
+  },
+  {
+    "id": "obed",
+    "name": "Obed",
+    "parents": ["boaz", "ruth"],
+    "children": ["jesse"],
+    "role": "Father of Jesse",
+    "tribe": "Judah",
+    "verses": ["Ruth 4:17"]
+  },
+  {
+    "id": "jesse",
+    "name": "Jesse",
+    "parents": ["obed"],
+    "children": ["david"],
+    "role": "Father of David",
+    "tribe": "Judah",
+    "verses": ["1 Sam 16:1"]
+  },
+  {
+    "id": "david",
+    "name": "David",
+    "parents": ["jesse"],
+    "children": ["solomon", "absalom", "amnon"],
+    "spouses": ["bathsheba", "michal", "abigail"],
+    "role": "King of Israel",
+    "tribe": "Judah",
+    "verses": ["1 Sam 16:13", "2 Sam 5:4"]
+  },
+  {
+    "id": "bathsheba",
+    "name": "Bathsheba",
+    "children": ["solomon"],
+    "spouses": ["david"],
+    "role": "David's wife",
+    "verses": ["2 Sam 11:3"]
+  },
+  {
+    "id": "michal",
+    "name": "Michal",
+    "spouses": ["david"],
+    "role": "Saul's daughter",
+    "verses": ["1 Sam 18:27"]
+  },
+  {
+    "id": "abigail",
+    "name": "Abigail",
+    "spouses": ["david"],
+    "role": "David's wife",
+    "verses": ["1 Sam 25:3"]
+  },
+  {
+    "id": "solomon",
+    "name": "Solomon",
+    "parents": ["david", "bathsheba"],
+    "children": ["rehoboam"],
+    "role": "Wise king",
+    "tribe": "Judah",
+    "verses": ["2 Sam 12:24", "1 Kings 3:12"]
+  },
+  {
+    "id": "absalom",
+    "name": "Absalom",
+    "parents": ["david"],
+    "role": "David's rebellious son",
+    "tribe": "Judah",
+    "verses": ["2 Sam 3:3"]
+  },
+  {
+    "id": "amnon",
+    "name": "Amnon",
+    "parents": ["david"],
+    "role": "David's firstborn",
+    "tribe": "Judah",
+    "verses": ["2 Sam 3:2"]
+  },
+  {
+    "id": "rehoboam",
+    "name": "Rehoboam",
+    "parents": ["solomon"],
+    "children": ["abijah_king"],
+    "role": "King of Judah",
+    "tribe": "Judah",
+    "verses": ["1 Kings 11:43"]
+  },
+  {
+    "id": "abijah_king",
+    "name": "Abijah",
+    "parents": ["rehoboam"],
+    "children": ["asa"],
+    "role": "King of Judah",
+    "tribe": "Judah",
+    "verses": ["1 Kings 14:31"]
+  },
+  {
+    "id": "asa",
+    "name": "Asa",
+    "parents": ["abijah_king"],
+    "children": ["jehoshaphat"],
+    "role": "Good king of Judah",
+    "tribe": "Judah",
+    "verses": ["1 Kings 15:8"]
+  },
+  {
+    "id": "jehoshaphat",
+    "name": "Jehoshaphat",
+    "parents": ["asa"],
+    "children": ["jehoram_judah"],
+    "role": "King of Judah",
+    "tribe": "Judah",
+    "verses": ["1 Kings 22:41"]
+  },
+  {
+    "id": "jehoram_judah",
+    "name": "Jehoram",
+    "parents": ["jehoshaphat"],
+    "children": ["ahaziah_judah"],
+    "role": "King of Judah",
+    "tribe": "Judah",
+    "verses": ["2 Kings 8:16"]
+  },
+  {
+    "id": "ahaziah_judah",
+    "name": "Ahaziah",
+    "parents": ["jehoram_judah"],
+    "children": ["joash_judah"],
+    "role": "King of Judah",
+    "tribe": "Judah",
+    "verses": ["2 Kings 8:25"]
+  },
+  {
+    "id": "joash_judah",
+    "name": "Joash",
+    "parents": ["ahaziah_judah"],
+    "children": ["amaziah"],
+    "role": "Boy king of Judah",
+    "tribe": "Judah",
+    "verses": ["2 Kings 11:2"]
+  },
+  {
+    "id": "amaziah",
+    "name": "Amaziah",
+    "parents": ["joash_judah"],
+    "children": ["uzziah"],
+    "role": "King of Judah",
+    "tribe": "Judah",
+    "verses": ["2 Kings 14:1"]
+  },
+  {
+    "id": "uzziah",
+    "name": "Uzziah",
+    "aka": ["Azariah"],
+    "parents": ["amaziah"],
+    "children": ["jotham"],
+    "role": "King of Judah",
+    "tribe": "Judah",
+    "verses": ["2 Kings 14:21"]
+  },
+  {
+    "id": "jotham",
+    "name": "Jotham",
+    "parents": ["uzziah"],
+    "children": ["ahaz"],
+    "role": "King of Judah",
+    "tribe": "Judah",
+    "verses": ["2 Kings 15:32"]
+  },
+  {
+    "id": "ahaz",
+    "name": "Ahaz",
+    "parents": ["jotham"],
+    "children": ["hezekiah"],
+    "role": "Wicked king of Judah",
+    "tribe": "Judah",
+    "verses": ["2 Kings 16:1"]
+  },
+  {
+    "id": "hezekiah",
+    "name": "Hezekiah",
+    "parents": ["ahaz"],
+    "children": ["manasseh_king"],
+    "role": "Godly king of Judah",
+    "tribe": "Judah",
+    "verses": ["2 Kings 18:1"]
+  },
+  {
+    "id": "manasseh_king",
+    "name": "Manasseh",
+    "parents": ["hezekiah"],
+    "children": ["amon"],
+    "role": "King of Judah",
+    "tribe": "Judah",
+    "verses": ["2 Kings 20:21"]
+  },
+  {
+    "id": "amon",
+    "name": "Amon",
+    "parents": ["manasseh_king"],
+    "children": ["josiah"],
+    "role": "King of Judah",
+    "tribe": "Judah",
+    "verses": ["2 Kings 21:18"]
+  },
+  {
+    "id": "josiah",
+    "name": "Josiah",
+    "parents": ["amon"],
+    "children": ["jehoiakim", "zedekiah"],
+    "role": "Reformer king",
+    "tribe": "Judah",
+    "verses": ["2 Kings 21:24"]
+  },
+  {
+    "id": "jehoiakim",
+    "name": "Jehoiakim",
+    "parents": ["josiah"],
+    "children": ["jehoiachin"],
+    "role": "King of Judah",
+    "tribe": "Judah",
+    "verses": ["2 Kings 23:34"]
+  },
+  {
+    "id": "jehoiachin",
+    "name": "Jehoiachin",
+    "parents": ["jehoiakim"],
+    "children": ["shealtiel"],
+    "role": "Exiled king",
+    "tribe": "Judah",
+    "verses": ["2 Kings 24:8"]
+  },
+  {
+    "id": "zedekiah",
+    "name": "Zedekiah",
+    "parents": ["josiah"],
+    "role": "Last king of Judah",
+    "tribe": "Judah",
+    "verses": ["2 Kings 24:17"]
+  },
+  {
+    "id": "shealtiel",
+    "name": "Shealtiel",
+    "parents": ["jehoiachin"],
+    "children": ["zerubbabel"],
+    "role": "Exile generation",
+    "tribe": "Judah",
+    "verses": ["1 Chr 3:17"]
+  },
+  {
+    "id": "zerubbabel",
+    "name": "Zerubbabel",
+    "parents": ["shealtiel"],
+    "children": ["abiud"],
+    "role": "Temple rebuilder",
+    "tribe": "Judah",
+    "verses": ["Ezra 3:2"]
+  },
+  {
+    "id": "abiud",
+    "name": "Abiud",
+    "parents": ["zerubbabel"],
+    "children": ["eliakim"],
+    "tribe": "Judah",
+    "verses": ["Matt 1:13"]
+  },
+  {
+    "id": "eliakim",
+    "name": "Eliakim",
+    "parents": ["abiud"],
+    "children": ["azor"],
+    "tribe": "Judah",
+    "verses": ["Matt 1:13"]
+  },
+  {
+    "id": "azor",
+    "name": "Azor",
+    "parents": ["eliakim"],
+    "children": ["zadok"],
+    "tribe": "Judah",
+    "verses": ["Matt 1:13"]
+  },
+  {
+    "id": "zadok",
+    "name": "Zadok",
+    "parents": ["azor"],
+    "children": ["achim"],
+    "tribe": "Judah",
+    "verses": ["Matt 1:14"]
+  },
+  {
+    "id": "achim",
+    "name": "Achim",
+    "parents": ["zadok"],
+    "children": ["eliud"],
+    "tribe": "Judah",
+    "verses": ["Matt 1:14"]
+  },
+  {
+    "id": "eliud",
+    "name": "Eliud",
+    "parents": ["achim"],
+    "children": ["eleazar"],
+    "tribe": "Judah",
+    "verses": ["Matt 1:14"]
+  },
+  {
+    "id": "eleazar",
+    "name": "Eleazar",
+    "parents": ["eliud"],
+    "children": ["matthan"],
+    "tribe": "Judah",
+    "verses": ["Matt 1:15"]
+  },
+  {
+    "id": "matthan",
+    "name": "Matthan",
+    "parents": ["eleazar"],
+    "children": ["jacob_joseph"],
+    "tribe": "Judah",
+    "verses": ["Matt 1:15"]
+  },
+  {
+    "id": "jacob_joseph",
+    "name": "Jacob",
+    "parents": ["matthan"],
+    "children": ["joseph_mary"],
+    "tribe": "Judah",
+    "verses": ["Matt 1:15"]
+  },
+  {
+    "id": "joseph_mary",
+    "name": "Joseph",
+    "parents": ["jacob_joseph"],
+    "children": ["jesus"],
+    "spouses": ["mary"],
+    "role": "Earthly father of Jesus",
+    "tribe": "Judah",
+    "verses": ["Matt 1:16"]
+  },
+  {
+    "id": "mary",
+    "name": "Mary",
+    "children": ["jesus"],
+    "spouses": ["joseph_mary"],
+    "role": "Mother of Jesus",
+    "verses": ["Luke 1:27"]
+  },
+  {
+    "id": "jesus",
+    "name": "Jesus",
+    "aka": ["Christ", "Messiah"],
+    "parents": ["joseph_mary", "mary"],
+    "role": "Son of God, Savior",
+    "tribe": "Judah",
+    "verses": ["Matt 1:1", "Luke 2:7"]
+  },
+  {
+    "id": "amram",
+    "name": "Amram",
+    "parents": ["kohath"],
+    "children": ["moses", "aaron", "miriam"],
+    "spouses": ["jochebed"],
+    "role": "Father of Moses",
+    "tribe": "Levi",
+    "verses": ["Exod 6:18"]
+  },
+  {
+    "id": "jochebed",
+    "name": "Jochebed",
+    "children": ["moses", "aaron", "miriam"],
+    "spouses": ["amram"],
+    "role": "Mother of Moses",
+    "tribe": "Levi",
+    "verses": ["Exod 6:20"]
+  },
+  {
+    "id": "moses",
+    "name": "Moses",
+    "parents": ["amram", "jochebed"],
+    "spouses": ["zipporah"],
+    "role": "Lawgiver, Prophet",
+    "tribe": "Levi",
+    "verses": ["Exod 2:10", "Deut 34:10"]
+  },
+  {
+    "id": "aaron",
+    "name": "Aaron",
+    "parents": ["amram", "jochebed"],
+    "children": ["nadab", "abihu", "eleazar_priest", "ithamar"],
+    "role": "First high priest",
+    "tribe": "Levi",
+    "verses": ["Exod 4:14", "Exod 28:1"]
+  },
+  {
+    "id": "miriam",
+    "name": "Miriam",
+    "parents": ["amram", "jochebed"],
+    "role": "Prophetess",
+    "tribe": "Levi",
+    "verses": ["Exod 15:20"]
+  },
+  {
+    "id": "zipporah",
+    "name": "Zipporah",
+    "spouses": ["moses"],
+    "role": "Moses' wife",
+    "verses": ["Exod 2:21"]
+  },
+  {
+    "id": "nadab",
+    "name": "Nadab",
+    "parents": ["aaron"],
+    "role": "Priest",
+    "tribe": "Levi",
+    "verses": ["Exod 6:23"]
+  },
+  {
+    "id": "abihu",
+    "name": "Abihu",
+    "parents": ["aaron"],
+    "role": "Priest",
+    "tribe": "Levi",
+    "verses": ["Exod 6:23"]
+  },
+  {
+    "id": "eleazar_priest",
+    "name": "Eleazar",
+    "parents": ["aaron"],
+    "children": ["phinehas"],
+    "role": "High priest",
+    "tribe": "Levi",
+    "verses": ["Exod 6:23"]
+  },
+  {
+    "id": "ithamar",
+    "name": "Ithamar",
+    "parents": ["aaron"],
+    "role": "Priest",
+    "tribe": "Levi",
+    "verses": ["Exod 6:23"]
+  },
+  {
+    "id": "phinehas",
+    "name": "Phinehas",
+    "parents": ["eleazar_priest"],
+    "role": "Zealous priest",
+    "tribe": "Levi",
+    "verses": ["Num 25:7"]
+  }
+]

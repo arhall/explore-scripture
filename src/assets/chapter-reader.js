@@ -133,11 +133,18 @@ class ChapterReader {
       /* Modal Header */
       .chapter-reader-header {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
         padding: 1.5rem 2rem;
         border-bottom: 1px solid var(--border, #e5e7eb);
         flex-shrink: 0;
+      }
+
+      .chapter-reader-nav-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
       }
 
       .chapter-reader-title {
@@ -145,6 +152,48 @@ class ChapterReader {
         font-weight: 600;
         color: var(--text, #111827);
         margin: 0;
+        flex: 1;
+        text-align: center;
+      }
+
+      .chapter-count {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: var(--text-secondary, #6b7280);
+      }
+
+      .chapter-nav-btn {
+        background: var(--accent, #2563eb);
+        color: white;
+        border: none;
+        padding: 0.5rem 0.75rem;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: all 0.2s;
+        white-space: nowrap;
+      }
+
+      .chapter-nav-btn:hover {
+        background: var(--accent-hover, #1d4ed8);
+        transform: translateY(-1px);
+      }
+
+      .chapter-nav-btn:active {
+        transform: translateY(0);
+      }
+
+      .chapter-nav-placeholder {
+        width: 60px;
+        height: 36px;
+      }
+
+      .chapter-reader-controls {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
       }
 
       .chapter-reader-controls {
@@ -296,6 +345,19 @@ class ChapterReader {
 
         .chapter-reader-controls {
           gap: 0.5rem;
+        }
+
+        .chapter-nav-btn {
+          font-size: 0.8rem;
+          padding: 0.4rem 0.6rem;
+        }
+
+        .chapter-reader-title {
+          font-size: 1.1rem;
+        }
+
+        .chapter-count {
+          font-size: 0.8rem;
         }
 
         .chapter-reader-translation-select {
@@ -677,6 +739,12 @@ class ChapterReader {
   initializeChapterButtons() {
     console.log('[ChapterReader] Starting button initialization...');
     
+    // If commentary reader is loaded OR if chapter-actions divs exist, skip to avoid duplication
+    if (window.commentaryReaderInstance || document.querySelector('.chapter-actions')) {
+      console.log('[ChapterReader] Commentary reader system detected, skipping button initialization to avoid duplication');
+      return;
+    }
+    
     // Check if buttons have already been initialized
     if (document.querySelector('.chapter-reader-button')) {
       console.log('[ChapterReader] Buttons already exist, skipping initialization');
@@ -800,6 +868,42 @@ class ChapterReader {
     return bookMap[slug] || slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
   }
 
+  getBookChapterCount(bookName) {
+    // Number of chapters in each book of the Bible
+    const chapterCounts = {
+      'Genesis': 50, 'Exodus': 40, 'Leviticus': 27, 'Numbers': 36, 'Deuteronomy': 34,
+      'Joshua': 24, 'Judges': 21, 'Ruth': 4, '1 Samuel': 31, '2 Samuel': 24,
+      '1 Kings': 22, '2 Kings': 25, '1 Chronicles': 29, '2 Chronicles': 36,
+      'Ezra': 10, 'Nehemiah': 13, 'Esther': 10, 'Job': 42, 'Psalms': 150,
+      'Proverbs': 31, 'Ecclesiastes': 12, 'Song of Songs': 8, 'Isaiah': 66,
+      'Jeremiah': 52, 'Lamentations': 5, 'Ezekiel': 48, 'Daniel': 12,
+      'Hosea': 14, 'Joel': 3, 'Amos': 9, 'Obadiah': 1, 'Jonah': 4,
+      'Micah': 7, 'Nahum': 3, 'Habakkuk': 3, 'Zephaniah': 3, 'Haggai': 2,
+      'Zechariah': 14, 'Malachi': 4, 'Matthew': 28, 'Mark': 16, 'Luke': 24,
+      'John': 21, 'Acts': 28, 'Romans': 16, '1 Corinthians': 16, '2 Corinthians': 13,
+      'Galatians': 6, 'Ephesians': 6, 'Philippians': 4, 'Colossians': 4,
+      '1 Thessalonians': 5, '2 Thessalonians': 3, '1 Timothy': 6, '2 Timothy': 4,
+      'Titus': 3, 'Philemon': 1, 'Hebrews': 13, 'James': 5, '1 Peter': 5,
+      '2 Peter': 3, '1 John': 5, '2 John': 1, '3 John': 1, 'Jude': 1, 'Revelation': 22
+    };
+    return chapterCounts[bookName] || 1;
+  }
+
+  getNavigationInfo(chapterInfo) {
+    const { book, chapter } = chapterInfo;
+    const totalChapters = this.getBookChapterCount(book);
+    
+    const prevChapter = chapter > 1 ? chapter - 1 : null;
+    const nextChapter = chapter < totalChapters ? chapter + 1 : null;
+    
+    return {
+      prevChapter: prevChapter ? { book, chapter: prevChapter, reference: `${book} ${prevChapter}` } : null,
+      nextChapter: nextChapter ? { book, chapter: nextChapter, reference: `${book} ${nextChapter}` } : null,
+      currentChapter: chapter,
+      totalChapters
+    };
+  }
+
   addChapterReaderButton(commentaryLink, chapterInfo) {
     console.log(`[ChapterReader] Processing link for ${chapterInfo.book} ${chapterInfo.chapter}`, commentaryLink);
     
@@ -875,11 +979,22 @@ class ChapterReader {
     overlay.className = 'chapter-reader-overlay';
     
     const bibleGatewayUrl = this.getBibleGatewayUrl(chapterInfo);
+    const navInfo = this.getNavigationInfo(chapterInfo);
     
     overlay.innerHTML = `
       <div class="chapter-reader-modal">
         <div class="chapter-reader-header">
-          <h2 class="chapter-reader-title">${chapterInfo.reference}</h2>
+          <div class="chapter-reader-nav-section">
+            ${navInfo.prevChapter ? 
+              `<button class="chapter-nav-btn prev" data-chapter="${navInfo.prevChapter.chapter}" title="Previous chapter">← ${navInfo.prevChapter.chapter}</button>` : 
+              '<span class="chapter-nav-placeholder"></span>'
+            }
+            <h2 class="chapter-reader-title">${chapterInfo.reference} <span class="chapter-count">(${navInfo.currentChapter}/${navInfo.totalChapters})</span></h2>
+            ${navInfo.nextChapter ? 
+              `<button class="chapter-nav-btn next" data-chapter="${navInfo.nextChapter.chapter}" title="Next chapter">${navInfo.nextChapter.chapter} →</button>` : 
+              '<span class="chapter-nav-placeholder"></span>'
+            }
+          </div>
           <div class="chapter-reader-controls">
             <select class="chapter-reader-translation-select" aria-label="Select Bible translation">
               ${Object.entries(this.translations).map(([key, trans]) => 
@@ -911,6 +1026,30 @@ class ChapterReader {
       
       // Update the iframe and external link
       this.updateChapterContent(overlay, chapterInfo);
+    });
+
+    // Chapter navigation buttons
+    const navBtns = overlay.querySelectorAll('.chapter-nav-btn');
+    navBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const targetChapter = parseInt(e.currentTarget.dataset.chapter, 10);
+        const newChapterInfo = {
+          book: chapterInfo.book,
+          chapter: targetChapter,
+          reference: `${chapterInfo.book} ${targetChapter}`
+        };
+        
+        // Close current modal and open new one
+        this.closeChapterReader();
+        setTimeout(() => {
+          this.openChapterReader(newChapterInfo);
+        }, 100);
+        
+        // Track navigation
+        if (window.telemetry) {
+          window.telemetry.recordUserAction('chapter-navigation', `${chapterInfo.book} ${chapterInfo.chapter} → ${targetChapter}`);
+        }
+      });
     });
 
     // Mobile view toggle functionality

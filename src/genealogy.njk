@@ -1,0 +1,250 @@
+---
+layout: base.njk
+title: Biblical Genealogy Explorer
+description: Interactive family tree visualization of biblical figures with zoom, search, and export capabilities
+permalink: /genealogy/
+---
+
+<div class="header">
+  <div class="header-content">
+    <h1>Biblical Genealogy Explorer</h1>
+    <span class="badge">Interactive</span>
+  </div>
+  <button class="bookmark-btn" onclick="handleBookmarkClick()" title="Add bookmark">
+    <span class="bookmark-icon">☆</span>
+    <span class="bookmark-text">Bookmark</span>
+  </button>
+</div>
+
+<p class="meta">
+  <strong>Navigate:</strong> Click nodes to expand/collapse • <strong>Search:</strong> Find biblical figures • <strong>Export:</strong> Download as PNG
+</p>
+
+<div class="genealogy-intro">
+  <h3>Explore Biblical Family Trees</h3>
+  <p>This interactive genealogy explorer allows you to visualize the family relationships between biblical figures. Switch between viewing descendants and ancestors, search for specific people, and export your current view as an image.</p>
+  
+  <div class="genealogy-features">
+    <div class="feature-grid">
+      <div class="feature">
+        <h4>🌳 Interactive Tree</h4>
+        <p>Click on any person to expand or collapse their family connections. Pan and zoom to explore different parts of the tree.</p>
+      </div>
+      <div class="feature">
+        <h4>🔍 Smart Search</h4>
+        <p>Search for any biblical figure and the tree will automatically center on them. Perfect for finding specific lineages.</p>
+      </div>
+      <div class="feature">
+        <h4>📸 Export View</h4>
+        <p>Export your current view as a PNG image for study materials, presentations, or personal reference.</p>
+      </div>
+      <div class="feature">
+        <h4>🎨 Color Coding</h4>
+        <p>Nodes are color-coded by tribe (Judah in purple, Levi in green, Israel in blue) for easy identification.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="genealogy-container">
+  <genealogy-explorer 
+    data-src="/assets/data/bible-genealogy.json" 
+    default-root="abraham" 
+    style="display:block;height:70vh;width:100%;">
+  </genealogy-explorer>
+</div>
+
+<div class="genealogy-help">
+  <h3>How to Use</h3>
+  <div class="help-grid">
+    <div class="help-item">
+      <h4>Navigation</h4>
+      <ul>
+        <li><strong>Click</strong> any node to expand or collapse their descendants/ancestors</li>
+        <li><strong>Drag</strong> to pan around the tree</li>
+        <li><strong>Scroll</strong> to zoom in and out</li>
+        <li><strong>Hover</strong> over nodes to see additional details</li>
+      </ul>
+    </div>
+    <div class="help-item">
+      <h4>Controls</h4>
+      <ul>
+        <li><strong>Mode:</strong> Switch between viewing descendants (downward) or ancestors (upward)</li>
+        <li><strong>Search:</strong> Type a name to find and center on that person</li>
+        <li><strong>Export:</strong> Download the current view as a PNG image</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<p class="back-link">
+  <a href="/" onclick="handleNavigation('genealogy-back', 'home')">← Back to Home</a>
+</p>
+
+<!-- Load D3.js first -->
+<script src="https://unpkg.com/d3@7/dist/d3.min.js"></script>
+<!-- Then load the genealogy explorer -->
+<script type="module" src="/assets/genealogy-explorer.js"></script>
+
+<script>
+  // Bookmark functionality for the genealogy page
+  function handleBookmarkClick() {
+    const pageData = {
+      url: window.location.pathname,
+      type: 'genealogy',
+      title: 'Biblical Genealogy Explorer',
+      category: 'Interactive Tools'
+    };
+    
+    const isBookmarked = toggleBookmark(pageData);
+    
+    // Show quick feedback
+    const bookmarkBtn = document.querySelector('.bookmark-btn');
+    if (bookmarkBtn) {
+      bookmarkBtn.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        bookmarkBtn.style.transform = 'scale(1)';
+      }, 150);
+    }
+  }
+
+  // Handle navigation clicks
+  function handleNavigation(type, category) {
+    if (window.logger) {
+      window.logger.userAction('navigation-click', { 
+        type: type, 
+        category: category,
+        from: 'Genealogy Explorer'
+      });
+    }
+    
+    if (window.telemetry) {
+      window.telemetry.recordNavigation(type, window.location.href, { 
+        category: category,
+        tool: 'genealogy-explorer'
+      });
+    }
+  }
+
+  // Initialize page
+  document.addEventListener('DOMContentLoaded', function() {
+    // Add this page to recent items
+    const pageData = {
+      url: window.location.pathname,
+      type: 'genealogy',
+      title: 'Biblical Genealogy Explorer',
+      category: 'Interactive Tools'
+    };
+    addToRecentItems(pageData);
+    
+    // Update bookmark button state
+    updateBookmarkButton(isBookmarked(window.location.pathname));
+    
+    // Track page view
+    if (window.telemetry) {
+      window.telemetry.recordPageView(window.location.pathname, 'Genealogy Explorer', {
+        tool: 'genealogy-explorer',
+        type: 'interactive-visualization'
+      });
+    }
+  });
+</script>
+
+<style>
+.genealogy-container {
+  margin: 2rem 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--bg-secondary);
+}
+
+.genealogy-intro {
+  margin: 1.5rem 0;
+}
+
+.genealogy-features {
+  margin: 1rem 0;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.feature {
+  background: var(--bg-secondary);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.feature h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+.feature p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.genealogy-help {
+  margin: 2rem 0 1rem 0;
+  padding: 1.5rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.help-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.help-item h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--accent);
+}
+
+.help-item ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.help-item li {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.help-item li strong {
+  color: var(--text);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .genealogy-container {
+    margin: 1rem -1rem;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+  
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .help-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+</style>

@@ -271,7 +271,7 @@ class SecurityConfig {
             // eslint-disable-next-line no-undef
             if (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'SCRIPT') {
               const src = node.getAttribute('src');
-              if (src && !this.validateUrl(src)) {
+              if (src && !this.validateUrl(src, this.config.csp.allowedDomains)) {
                 console.error('Security: Blocked unauthorized script injection');
                 node.remove();
               }
@@ -339,7 +339,7 @@ class SecurityConfig {
     
     scripts.forEach(script => {
       const src = script.getAttribute('src');
-      if (this.validateUrl(src)) {
+      if (this.validateUrl(src, this.config.csp.allowedDomains)) {
         secureCount++;
       }
     });
