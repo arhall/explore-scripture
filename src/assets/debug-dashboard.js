@@ -271,35 +271,50 @@ class DebugDashboard {
 
   attachEventListeners() {
     // Close button
-    document.getElementById('debug-close').addEventListener('click', () => {
-      this.hide();
-    });
+    const closeBtn = document.getElementById('debug-close');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        this.hide();
+      });
+    }
 
     // Export logs
-    document.getElementById('debug-export-logs').addEventListener('click', () => {
-      if (window.logger) {
-        window.logger.exportLogs();
-      }
-    });
+    const exportBtn = document.getElementById('debug-export-logs');
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => {
+        if (window.logger) {
+          window.logger.exportLogs();
+        }
+      });
+    }
 
     // Clear logs
-    document.getElementById('debug-clear-logs').addEventListener('click', () => {
-      if (window.logger) {
-        window.logger.clearLogs();
-        this.refreshData();
-      }
-    });
+    const clearBtn = document.getElementById('debug-clear-logs');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        if (window.logger) {
+          window.logger.clearLogs();
+          this.refreshData();
+        }
+      });
+    }
 
     // Filters
-    document.getElementById('debug-level-filter').addEventListener('change', (e) => {
-      this.filters.level = e.target.value;
-      this.refreshData();
-    });
+    const levelFilter = document.getElementById('debug-level-filter');
+    if (levelFilter) {
+      levelFilter.addEventListener('change', (e) => {
+        this.filters.level = e.target.value;
+        this.refreshData();
+      });
+    }
 
-    document.getElementById('debug-category-filter').addEventListener('change', (e) => {
-      this.filters.category = e.target.value;
-      this.refreshData();
-    });
+    const categoryFilter = document.getElementById('debug-category-filter');
+    if (categoryFilter) {
+      categoryFilter.addEventListener('change', (e) => {
+        this.filters.category = e.target.value;
+        this.refreshData();
+      });
+    }
 
     // Tabs
     document.querySelectorAll('.debug-tab').forEach(tab => {

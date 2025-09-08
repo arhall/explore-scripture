@@ -109,7 +109,10 @@
       "Bash(open http://localhost:8080/books/matthew/)",
       "Bash(open http://localhost:8081/genealogy/)",
       "Bash(open http://localhost:8081/books/genesis/)",
-      "Bash(open http://localhost:8082/books/genesis/)"
+      "Bash(open http://localhost:8082/books/genesis/)",
+      "Bash(open http://localhost:8082/books/matthew/)",
+      "Bash(open http://localhost:8081/test-chapter-reader.html)",
+      "Bash(open http://localhost:8081/responsive-test.html)"
     ],
     "deny": [],
     "ask": []

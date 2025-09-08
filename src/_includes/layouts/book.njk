@@ -6,7 +6,7 @@ layout: base.njk
     <h1>{{ book.name }}</h1>
     <span class="badge">{{ book.testament }}</span>
   </div>
-  <button class="bookmark-btn" onclick="handleBookmarkClick()" title="Add bookmark">
+  <button class="bookmark-btn" onclick="handleBookmarkClick()" title="Add bookmark" aria-label="Add bookmark for {{ book.name }}">
     <span class="bookmark-icon">☆</span>
     <span class="bookmark-text">Bookmark</span>
   </button>
@@ -65,13 +65,13 @@ layout: base.njk
       <!-- Figures will be loaded here -->
     </div>
     <div class="key-figures-actions">
-      <button class="load-more-btn" id="loadMoreFigures" onclick="loadMoreFigures()" style="display: none;">
+      <button class="load-more-btn" id="loadMoreFigures" onclick="loadMoreFigures()" style="display: none;" aria-label="Load more key figures">
         Load More Figures
       </button>
     </div>
   </div>
   <div class="key-figures-error" id="keyFiguresError" style="display: none;">
-    <p>Unable to load key figures. <a href="#" onclick="retryLoadFigures()">Try again</a></p>
+    <p>Unable to load key figures. <a href="#" onclick="retryLoadFigures()" aria-label="Retry loading key figures">Try again</a></p>
   </div>
   <div class="key-figures-empty" id="keyFiguresEmpty" style="display: none;">
     <div class="empty-state">
@@ -89,7 +89,7 @@ layout: base.njk
     <div class="table-of-contents">
       <h3>Table of Contents</h3>
       <div class="toc-toggle">
-        <button class="toc-toggle-btn" onclick="toggleTOC()" aria-label="Toggle table of contents">
+        <button class="toc-toggle-btn" onclick="toggleTOC()" aria-label="Toggle table of contents" aria-expanded="false">
           <span class="toc-icon">▦</span> 
           <span class="toc-text">Show all {{ chapterCount }} chapters</span>
         </button>
@@ -111,7 +111,8 @@ layout: base.njk
   <div class="chapter-navigation-info">
     <p><strong>Tip:</strong> Click on any chapter number to jump to it, or use the navigation buttons to move between chapters{% if chapterCount >= 15 %} • Use the table of contents above for quick navigation{% endif %}</p>
   </div>
-  <table class="table">
+  <div class="table-wrapper">
+    <table class="table">
     <thead>
       <tr><th>Chapter</th><th>Summary</th><th>Commentary</th></tr>
     </thead>
@@ -153,6 +154,7 @@ layout: base.njk
       {% endfor %}
     </tbody>
   </table>
+  </div>
 {% else %}
   <div class="chapter-summary">
     <h3>Chapter Summaries Coming Soon</h3>
@@ -359,7 +361,7 @@ layout: base.njk
     popup.innerHTML = `
       <div class="theme-popup-header">
         <h4>${theme.charAt(0).toUpperCase() + theme.slice(1)} Theme</h4>
-        <button class="close-popup" onclick="this.parentElement.parentElement.remove()">×</button>
+        <button class="close-popup" onclick="this.parentElement.parentElement.remove()" aria-label="Close theme references popup">×</button>
       </div>
       <div class="theme-references-list">
         ${themeRefs.slice(0, 8).map(ref => `

@@ -95,8 +95,8 @@
         installBanner.innerHTML = `
           <div class="install-content">
             <span class="install-text">📱 Install Bible Explorer for offline access</span>
-            <button class="install-btn" onclick="installPWA()">Install</button>
-            <button class="dismiss-btn" onclick="dismissInstall()">×</button>
+            <button class="install-btn" onclick="installPWA()" aria-label="Install Bible Explorer as an app">Install</button>
+            <button class="dismiss-btn" onclick="dismissInstall()" aria-label="Dismiss install prompt">×</button>
           </div>
         `;
         document.body.appendChild(installBanner);
@@ -142,8 +142,8 @@
       updateBanner.innerHTML = `
         <div class="update-content">
           <span class="update-text">🔄 New content available</span>
-          <button class="update-btn" onclick="refreshForUpdate()">Refresh</button>
-          <button class="dismiss-btn" onclick="dismissUpdate()">×</button>
+          <button class="update-btn" onclick="refreshForUpdate()" aria-label="Refresh to get latest content">Refresh</button>
+          <button class="dismiss-btn" onclick="dismissUpdate()" aria-label="Dismiss update notification">×</button>
         </div>
       `;
       document.body.appendChild(updateBanner);

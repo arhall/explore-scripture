@@ -338,7 +338,9 @@ class PerformanceMonitor {
 
       // Memory monitoring
       if ('memory' in performance) {
-        setInterval(() => {
+        this.memoryMonitoringId = setInterval(() => {
+          if (!this.isMonitoring) return;
+          
           const memoryMetric = {
             used: performance.memory.usedJSHeapSize,
             total: performance.memory.totalJSHeapSize,
@@ -684,12 +686,29 @@ class PerformanceMonitor {
   }
 
   startPeriodicReporting() {
-    setInterval(async () => {
+    // Clear any existing interval
+    if (this.reportingIntervalId) {
+      clearInterval(this.reportingIntervalId);
+    }
+    
+    this.reportingIntervalId = setInterval(async () => {
       if (this.isMonitoring) {
         const report = this.generatePerformanceReport();
         await this.sendReport(report);
       }
     }, this.reportingInterval);
+  }
+  
+  stopPeriodicReporting() {
+    if (this.reportingIntervalId) {
+      clearInterval(this.reportingIntervalId);
+      this.reportingIntervalId = null;
+    }
+    
+    if (this.memoryMonitoringId) {
+      clearInterval(this.memoryMonitoringId);
+      this.memoryMonitoringId = null;
+    }
   }
 
   generatePerformanceReport() {

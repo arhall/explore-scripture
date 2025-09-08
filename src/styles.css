@@ -2086,6 +2086,26 @@ a:hover {
   .chapter-summary {
     padding: 0.8rem;
   }
+  
+  /* Table responsive handling for very small screens */
+  .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .table {
+    min-width: 600px; /* Prevent table from becoming too narrow */
+  }
+  
+  .table td:first-child {
+    width: 100px; /* Reduce chapter column width on mobile */
+    min-width: 100px;
+  }
+  
+  .table td:last-child {
+    width: 120px; /* Reduce commentary column width on mobile */
+    min-width: 120px;
+  }
 }
 
 /* Character Pages */
