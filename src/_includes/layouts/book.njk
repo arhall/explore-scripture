@@ -47,41 +47,6 @@ layout: base.njk
   </div>
 {% endif %}
 
-<div class="key-figures-section" id="keyFiguresSection">
-  <div class="section-header">
-    <h3>Key Figures</h3>
-    <div class="section-controls">
-      <button class="view-all-btn" onclick="viewAllEntities('{{ book.slug }}')" title="View all characters and entities for this book">
-        View All →
-      </button>
-    </div>
-  </div>
-  <div class="key-figures-loading" id="keyFiguresLoading">
-    <div class="loading-spinner"></div>
-    <span>Loading key figures...</span>
-  </div>
-  <div class="key-figures-content" id="keyFiguresContent" style="display: none;">
-    <div class="key-figures-grid" id="keyFiguresGrid">
-      <!-- Figures will be loaded here -->
-    </div>
-    <div class="key-figures-actions">
-      <button class="load-more-btn" id="loadMoreFigures" onclick="loadMoreFigures()" style="display: none;" aria-label="Load more key figures">
-        Load More Figures
-      </button>
-    </div>
-  </div>
-  <div class="key-figures-error" id="keyFiguresError" style="display: none;">
-    <p>Unable to load key figures. <a href="#" onclick="retryLoadFigures()" aria-label="Retry loading key figures">Try again</a></p>
-  </div>
-  <div class="key-figures-empty" id="keyFiguresEmpty" style="display: none;">
-    <div class="empty-state">
-      <span class="empty-icon">📚</span>
-      <h4>No Key Figures Available</h4>
-      <p>This book focuses on themes, teachings, or poetry rather than specific named characters. The timeless truths and wisdom it contains are just as valuable for study and reflection.</p>
-    </div>
-  </div>
-</div>
-
 {% if book.chapterSummaries and (book.chapterSummaries | length) > 0 %}
   {% set chapterCount = (book.chapterSummaries | length) %}
   
@@ -155,6 +120,42 @@ layout: base.njk
     </tbody>
   </table>
   </div>
+
+  <div class="key-figures-section" id="keyFiguresSection">
+    <div class="section-header">
+      <h3>Key Figures</h3>
+      <div class="section-controls">
+        <button class="view-all-btn" onclick="viewAllEntities('{{ book.slug }}')" title="View all characters and entities for this book">
+          View All →
+        </button>
+      </div>
+    </div>
+    <div class="key-figures-loading" id="keyFiguresLoading">
+      <div class="loading-spinner"></div>
+      <span>Loading key figures...</span>
+    </div>
+    <div class="key-figures-content" id="keyFiguresContent" style="display: none;">
+      <div class="key-figures-grid" id="keyFiguresGrid">
+        <!-- Figures will be loaded here -->
+      </div>
+      <div class="key-figures-actions">
+        <button class="load-more-btn" id="loadMoreFigures" onclick="loadMoreFigures()" style="display: none;" aria-label="Load more key figures">
+          Load More Figures
+        </button>
+      </div>
+    </div>
+    <div class="key-figures-error" id="keyFiguresError" style="display: none;">
+      <p>Unable to load key figures. <a href="#" onclick="retryLoadFigures()" aria-label="Retry loading key figures">Try again</a></p>
+    </div>
+    <div class="key-figures-empty" id="keyFiguresEmpty" style="display: none;">
+      <div class="empty-state">
+        <span class="empty-icon">📚</span>
+        <h4>No Key Figures Available</h4>
+        <p>This book focuses on themes, teachings, or poetry rather than specific named characters. The timeless truths and wisdom it contains are just as valuable for study and reflection.</p>
+      </div>
+    </div>
+  </div>
+
 {% else %}
   <div class="chapter-summary">
     <h3>Chapter Summaries Coming Soon</h3>

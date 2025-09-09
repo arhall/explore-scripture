@@ -69,14 +69,20 @@ module.exports = function(eleventyConfig) {
   if (process.env.NODE_ENV === 'production') {
     const htmlnano = require('htmlnano');
     
-    eleventyConfig.addTransform("htmlnano", function(content, outputPath) {
+    eleventyConfig.addTransform("htmlnano", async function(content, outputPath) {
       if (outputPath && outputPath.endsWith(".html")) {
-        return htmlnano.process(content, {
-          removeComments: true,
-          collapseWhitespace: 'conservative',
-          minifyJs: true,
-          minifyCss: true
-        }).then(result => result.html);
+        try {
+          const result = await htmlnano.process(content, {
+            removeComments: true,
+            collapseWhitespace: 'conservative',
+            minifyJs: true,
+            minifyCss: true
+          });
+          return result.html;
+        } catch (error) {
+          console.warn('HTML minification failed:', error.message);
+          return content;
+        }
       }
       return content;
     });

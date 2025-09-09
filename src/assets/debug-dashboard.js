@@ -399,13 +399,13 @@ class DebugDashboard {
         <div style="margin-bottom: 4px; padding: 2px 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
           <div style="display: flex; gap: 8px; align-items: flex-start;">
             <span style="color: #666; width: 70px; flex-shrink: 0;">${time}</span>
-            <span style="color: ${color}; width: 50px; flex-shrink: 0; font-weight: bold;">${log.level}</span>
-            <span style="color: #9dd1ff; width: 80px; flex-shrink: 0;">${log.category}</span>
-            <span style="color: #e6ecff; flex: 1;">${log.message}</span>
+            <span style="color: ${color}; width: 50px; flex-shrink: 0; font-weight: bold;">${this.escapeHtml(log.level)}</span>
+            <span style="color: #9dd1ff; width: 80px; flex-shrink: 0;">${this.escapeHtml(log.category)}</span>
+            <span style="color: #e6ecff; flex: 1;">${this.escapeHtml(log.message)}</span>
           </div>
           ${Object.keys(log.data).length > 0 ? 
             `<div style="margin-left: 210px; color: #a7b2d6; font-size: 9px; margin-top: 2px;">
-              ${JSON.stringify(log.data, null, 2).substring(0, 200)}${Object.keys(log.data).length > 3 ? '...' : ''}
+              ${this.escapeHtml(JSON.stringify(log.data, null, 2).substring(0, 200))}${Object.keys(log.data).length > 3 ? '...' : ''}
             </div>` : ''
           }
         </div>
@@ -562,7 +562,7 @@ class DebugDashboard {
     // Update category filter options
     const currentValue = categoryFilter.value;
     categoryFilter.innerHTML = '<option value="all">All</option>' +
-      categories.map(cat => `<option value="${cat}">${cat}</option>`).join('');
+      categories.map(cat => `<option value="${this.escapeHtml(cat)}">${this.escapeHtml(cat)}</option>`).join('');
     categoryFilter.value = currentValue;
   }
 
@@ -601,6 +601,13 @@ class DebugDashboard {
     const sizes = ['B', 'KB', 'MB', 'GB'];
     const i = Math.floor(Math.log(bytes) / Math.log(k));
     return parseFloat((bytes / Math.pow(k, i)).toFixed(1)) + ' ' + sizes[i];
+  }
+
+  // Utility method to escape HTML and prevent XSS
+  escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
   }
 }
 

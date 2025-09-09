@@ -15,10 +15,8 @@ class ChapterReader {
       'web': { name: 'World English Bible', api: 'web' }
     };
     
-    // API Keys - in production, these should come from environment variables or config
-    this.apiKeys = {
-      esv: 'TEST_TOKEN' // Default test token - users need to replace with real API key
-    };
+    // API Keys - loaded securely from config
+    this.apiKeys = this.loadApiKeys();
 
     // The chapter reader now uses the global theme system
     
@@ -1105,7 +1103,7 @@ class ChapterReader {
     // Update title
     const title = overlay.querySelector('.chapter-reader-title');
     if (title) {
-      title.innerHTML = `${newChapterInfo.reference} <span class="chapter-count">(${navInfo.currentChapter}/${navInfo.totalChapters})</span>`;
+      title.innerHTML = `${this.escapeHtml(newChapterInfo.reference)} <span class="chapter-count">(${navInfo.currentChapter}/${navInfo.totalChapters})</span>`;
     }
     
     // Update navigation buttons
@@ -1186,7 +1184,7 @@ class ChapterReader {
     `;
 
     try {
-      const cacheKey = `${chapterInfo.reference}-${this.currentTranslation}`;
+      const cacheKey = `${this.escapeHtml(chapterInfo.reference)}-${this.currentTranslation}`;
       let chapterData = this.cache.get(cacheKey);
 
       if (!chapterData) {
@@ -1809,7 +1807,7 @@ class ChapterReader {
       reference: this.escapeHtml(data.reference || ''),
       translation: this.escapeHtml(data.translation || ''),
       verses: Array.isArray(data.verses) ? data.verses.map(verse => ({
-        number: parseInt(verse.number) || 0,
+        number: parseInt(verse.number, 10) || 0,
         text: this.escapeHtml(verse.text || '')
       })) : []
     };
@@ -1905,6 +1903,37 @@ class ChapterReader {
     
     window.chapterReaderInstance.openChapterReader(chapterInfo);
   }
+
+  // Secure API key loading - prevents hardcoded secrets
+  loadApiKeys() {
+    // Try to load from window.BIBLE_EXPLORER_CONFIG (set by build process)
+    if (typeof window !== 'undefined' && window.BIBLE_EXPLORER_CONFIG && window.BIBLE_EXPLORER_CONFIG.apiKeys) {
+      return window.BIBLE_EXPLORER_CONFIG.apiKeys;
+    }
+    
+    // Try localStorage (for development - not recommended for production)
+    if (typeof localStorage !== 'undefined') {
+      try {
+        const stored = localStorage.getItem('bibleExplorerApiKeys');
+        if (stored) {
+          return JSON.parse(stored);
+        }
+      } catch (e) {
+        console.warn('[ChapterReader] Invalid API keys in localStorage');
+      }
+    }
+    
+    // Fallback to empty object - APIs will fail gracefully
+    console.warn('[ChapterReader] No API keys configured. Scripture loading will be limited.');
+    return {};
+  }
+
+  // Utility method to escape HTML and prevent XSS
+  escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
 }
 
 // Initialize when DOM is ready OR immediately if DOM is already ready
@@ -1925,8 +1954,15 @@ if (document.readyState === 'loading') {
   initializeChapterReader();
 }
 
-// Also listen for custom events from module loader
-document.addEventListener('chapterReaderLoaded', initializeChapterReader);
+// Also listen for custom events from module loader - RACE CONDITION PROTECTION
+document.addEventListener('chapterReaderLoaded', () => {
+  // Prevent double initialization
+  if (window.chapterReaderInstance) {
+    console.warn('[ChapterReader] Already initialized, skipping duplicate initialization');
+    return;
+  }
+  initializeChapterReader();
+});
 
 // Global function for use in onclick handlers
 function openChapterReader(reference, book, chapter) {

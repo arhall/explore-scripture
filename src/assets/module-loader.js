@@ -57,9 +57,16 @@ class ModuleLoader {
       return Promise.resolve();
     }
     
-    // Check if currently loading
+    // Check if currently loading - RACE CONDITION FIX
     if (this.loadingModules.has(url)) {
-      return this.loadingModules.get(url);
+      // Wait for the existing promise to complete
+      try {
+        await this.loadingModules.get(url);
+        return Promise.resolve();
+      } catch (error) {
+        // If the existing load failed, continue with new attempt
+        console.warn(`[ModuleLoader] Previous load attempt failed for ${url}, retrying:`, error);
+      }
     }
     
     // Create loading promise

@@ -205,17 +205,44 @@ class BibleExplorerLogger {
 
   storeLog(logEntry) {
     try {
+      // Check available localStorage space before storing
+      const testKey = 'bibleExplorerLogsTest';
+      const testValue = JSON.stringify(logEntry);
+      
+      // Test if we can store this entry
+      localStorage.setItem(testKey, testValue);
+      localStorage.removeItem(testKey);
+      
       const stored = JSON.parse(localStorage.getItem('bibleExplorerLogs') || '[]');
+      
+      // Validate stored array structure
+      if (!Array.isArray(stored)) {
+        throw new Error('Invalid stored logs format');
+      }
+      
+      // Security: Validate log entry size (max 10KB per entry)
+      if (JSON.stringify(logEntry).length > 10240) {
+        console.warn('[Logger] Log entry too large, truncating');
+        logEntry = { ...logEntry, message: logEntry.message.substring(0, 1000) + '...[truncated]' };
+      }
+      
       stored.push(logEntry);
       
-      // Keep only last 100 logs in localStorage
-      if (stored.length > 100) {
-        stored.splice(0, stored.length - 100);
+      // More aggressive size management for business logic protection
+      if (stored.length > 50) {
+        stored.splice(0, stored.length - 50);
       }
       
       localStorage.setItem('bibleExplorerLogs', JSON.stringify(stored));
-    } catch {
-      // Storage might be full, ignore silently
+    } catch (error) {
+      // Clear corrupted logs and start fresh
+      try {
+        localStorage.removeItem('bibleExplorerLogs');
+        console.warn('[Logger] Storage issue resolved by clearing logs:', error.message);
+      } catch {
+        // If even removal fails, localStorage is completely full
+        console.error('[Logger] localStorage completely exhausted');
+      }
     }
   }
 

@@ -20,7 +20,7 @@ from urllib.parse import urljoin
 class TestRegressionFixes:
     """Test known regression issues and their fixes"""
     
-    BASE_URL = "http://localhost:8085"
+    BASE_URL = "http://localhost:8081"
     
     @pytest.fixture(params=["chrome", "firefox"])
     def browser(self, request):
@@ -138,6 +138,62 @@ class TestRegressionFixes:
         assert len(clickable_buttons) > 0, "At least one chapter reader button should be clickable"
         
         print(f"✅ Found {len(clickable_buttons)} working chapter reader buttons")
+
+    def test_no_duplicate_chapter_reader_buttons(self, browser):
+        """Test that there are no duplicate chapter reader buttons (regression fix)"""
+        print("\n🚫 Testing for duplicate chapter reader buttons...")
+        
+        # Test Genesis page
+        browser.get(urljoin(self.BASE_URL, "/books/genesis/"))
+        
+        # Wait for page and modules to load completely
+        self.wait_for_element(browser, "h1")
+        time.sleep(5)  # Wait longer for all modules to load and initialize
+        
+        # Count all chapter reader related buttons
+        all_reader_buttons = browser.find_elements(By.CSS_SELECTOR, 
+            ".chapter-reader-button, .read-chapter-btn, button[onclick*='readChapter'], button[onclick*='openChapter'], .commentary-reader-button"
+        )
+        
+        # Group buttons by their associated chapter
+        chapters_with_buttons = {}
+        for button in all_reader_buttons:
+            # Find the closest chapter row or container
+            try:
+                chapter_row = browser.execute_script("""
+                    const btn = arguments[0];
+                    const row = btn.closest('tr[id*="chapter-"]');
+                    return row ? row.id : null;
+                """, button)
+                
+                if chapter_row:
+                    if chapter_row not in chapters_with_buttons:
+                        chapters_with_buttons[chapter_row] = []
+                    chapters_with_buttons[chapter_row].append(button.get_attribute('class'))
+            except:
+                continue
+        
+        # Check for duplicates
+        duplicate_issues = []
+        for chapter, button_classes in chapters_with_buttons.items():
+            # Check for identical button types in same chapter
+            class_counts = {}
+            for btn_class in button_classes:
+                class_counts[btn_class] = class_counts.get(btn_class, 0) + 1
+            
+            duplicates = {k: v for k, v in class_counts.items() if v > 1}
+            if duplicates:
+                duplicate_issues.append(f"Chapter {chapter}: {duplicates}")
+        
+        print(f"Chapters with buttons: {len(chapters_with_buttons)}")
+        print(f"Duplicate issues found: {len(duplicate_issues)}")
+        
+        if duplicate_issues:
+            print(f"Duplicates: {duplicate_issues}")
+        
+        assert len(duplicate_issues) == 0, f"No duplicate chapter reader buttons should exist: {duplicate_issues}"
+        
+        print("✅ No duplicate chapter reader buttons found")
     
     def test_youtube_videos_not_blocked(self, browser):
         """Test that YouTube Bible Project videos are not blocked by CSP"""
@@ -403,6 +459,128 @@ class TestRegressionFixes:
         browser.set_window_size(1920, 1080)
         
         print("✅ Responsive design basics working")
+
+    def test_responsive_table_design(self, browser):
+        """Test that chapter summary tables are responsive (regression fix)"""
+        print("\n📊 Testing responsive table design...")
+        
+        # Test on a book page with chapter summaries
+        browser.get(urljoin(self.BASE_URL, "/books/genesis/"))
+        self.wait_for_element(browser, ".table")
+        
+        # Test mobile size
+        browser.set_window_size(375, 667)
+        time.sleep(1)
+        
+        # Check if table wrapper exists
+        table_wrapper = browser.find_elements(By.CSS_SELECTOR, ".table-wrapper")
+        print(f"Table wrapper found: {len(table_wrapper) > 0}")
+        
+        if len(table_wrapper) > 0:
+            # Check if wrapper has overflow-x auto
+            wrapper_overflow = browser.execute_script("""
+                const wrapper = document.querySelector('.table-wrapper');
+                return wrapper ? getComputedStyle(wrapper).overflowX : null;
+            """)
+            print(f"Table wrapper overflow-x: {wrapper_overflow}")
+            assert wrapper_overflow == "auto", "Table wrapper should have overflow-x: auto"
+        
+        # Check table has minimum width on small screens
+        table_width = browser.execute_script("""
+            const table = document.querySelector('.table');
+            return table ? getComputedStyle(table).minWidth : null;
+        """)
+        print(f"Table min-width: {table_width}")
+        
+        # Test that table doesn't break layout
+        body_width = browser.execute_script("return document.body.offsetWidth")
+        viewport_width = browser.execute_script("return window.innerWidth")
+        
+        print(f"Body width: {body_width}, Viewport width: {viewport_width}")
+        assert body_width <= viewport_width + 20, "Body should not exceed viewport width significantly"
+        
+        # Reset window size
+        browser.set_window_size(1920, 1080)
+        
+        print("✅ Responsive table design working")
+
+    def test_accessibility_aria_labels(self, browser):
+        """Test that interactive elements have proper ARIA labels (regression fix)"""
+        print("\n♿ Testing accessibility ARIA labels...")
+        
+        browser.get(self.BASE_URL)
+        time.sleep(2)
+        
+        # Check navigation buttons have aria-labels
+        nav_buttons = browser.find_elements(By.CSS_SELECTOR, ".nav button")
+        buttons_with_labels = 0
+        
+        for button in nav_buttons:
+            aria_label = button.get_attribute('aria-label')
+            title = button.get_attribute('title')
+            if aria_label or title:
+                buttons_with_labels += 1
+                print(f"Button with label: {aria_label or title}")
+        
+        print(f"Navigation buttons with accessibility labels: {buttons_with_labels}/{len(nav_buttons)}")
+        assert buttons_with_labels == len(nav_buttons), "All navigation buttons should have accessibility labels"
+        
+        # Test book page accessibility
+        browser.get(urljoin(self.BASE_URL, "/books/genesis/"))
+        time.sleep(2)
+        
+        # Check bookmark button
+        bookmark_buttons = browser.find_elements(By.CSS_SELECTOR, ".bookmark-btn")
+        for btn in bookmark_buttons:
+            aria_label = btn.get_attribute('aria-label') or btn.get_attribute('title')
+            assert aria_label is not None, "Bookmark buttons should have accessibility labels"
+            print(f"Bookmark button label: {aria_label}")
+        
+        # Check TOC toggle if present
+        toc_toggles = browser.find_elements(By.CSS_SELECTOR, ".toc-toggle-btn")
+        for toggle in toc_toggles:
+            aria_label = toggle.get_attribute('aria-label')
+            aria_expanded = toggle.get_attribute('aria-expanded')
+            assert aria_label is not None, "TOC toggle should have aria-label"
+            assert aria_expanded is not None, "TOC toggle should have aria-expanded"
+            print(f"TOC toggle - label: {aria_label}, expanded: {aria_expanded}")
+        
+        print("✅ Accessibility ARIA labels present")
+
+    def test_key_figures_position(self, browser):
+        """Test that key figures appear after chapter summaries (layout change)"""
+        print("\n👥 Testing key figures section positioning...")
+        
+        browser.get(urljoin(self.BASE_URL, "/books/genesis/"))
+        self.wait_for_element(browser, "h1")
+        time.sleep(3)
+        
+        # Find chapter summaries table and key figures section
+        chapter_table = browser.find_elements(By.CSS_SELECTOR, ".table")
+        key_figures = browser.find_elements(By.CSS_SELECTOR, ".key-figures-section")
+        
+        if len(chapter_table) > 0 and len(key_figures) > 0:
+            # Get vertical positions
+            table_position = browser.execute_script("""
+                const table = document.querySelector('.table');
+                return table ? table.getBoundingClientRect().bottom + window.scrollY : 0;
+            """)
+            
+            figures_position = browser.execute_script("""
+                const figures = document.querySelector('.key-figures-section');
+                return figures ? figures.getBoundingClientRect().top + window.scrollY : 0;
+            """)
+            
+            print(f"Chapter table bottom: {table_position}")
+            print(f"Key figures top: {figures_position}")
+            
+            assert figures_position > table_position, "Key figures should appear after chapter summaries table"
+            
+            # Check section header is visible
+            key_figures_header = browser.find_element(By.CSS_SELECTOR, ".key-figures-section h3")
+            assert key_figures_header.text == "Key Figures", "Key figures section should have proper heading"
+            
+        print("✅ Key figures positioned correctly after chapter summaries")
 
 if __name__ == "__main__":
     pytest.main([__file__, "-v", "-s"])

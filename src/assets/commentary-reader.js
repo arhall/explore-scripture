@@ -1492,7 +1492,15 @@ if (document.readyState === 'loading') {
 }
 
 // Also listen for custom events from module loader
-document.addEventListener('commentaryReaderLoaded', initializeCommentaryReader);
+// Race condition protection for commentary reader initialization
+document.addEventListener('commentaryReaderLoaded', () => {
+  // Prevent double initialization
+  if (window.commentaryReaderInstance) {
+    console.warn('[CommentaryReader] Already initialized, skipping duplicate initialization');
+    return;
+  }
+  initializeCommentaryReader();
+});
 
 // Global function for use in onclick handlers
 function openCommentaryReader(reference, book, chapter) {

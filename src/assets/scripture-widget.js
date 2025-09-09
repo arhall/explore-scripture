@@ -340,7 +340,7 @@ class ScriptureWidget {
     
     widget.innerHTML = `
       <div class="scripture-widget-header">
-        <span class="scripture-widget-reference">${reference}</span>
+        <span class="scripture-widget-reference">${this.escapeHtml(reference)}</span>
         <button class="scripture-widget-close" aria-label="Close">&times;</button>
       </div>
       <div class="scripture-widget-content">
@@ -569,6 +569,13 @@ class ScriptureWidget {
     
     element.dataset.scripture = reference;
     window.scriptureWidgetInstance.setupReference(element);
+  }
+
+  // Utility method to escape HTML and prevent XSS
+  escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
   }
 }
 

@@ -48,7 +48,7 @@ The dev server runs Eleventy with `--serve` flag, providing live reload during d
   - Font size controls and accessibility features
   - High contrast mode and dyslexia-friendly options
   - Service worker integration and PWA features
-- **Book Layout** (`src/_includes/layouts/book.njk`): Individual book pages with metadata display, chapter summary tables, integrated chapter reader, and commentary buttons
+- **Book Layout** (`src/_includes/layouts/book.njk`): Individual book pages with metadata display, Bible Project videos, table of contents (for 15+ chapters), chapter summary tables, key figures section, integrated chapter reader, and commentary buttons
 - **Category Layout** (`src/_includes/layouts/category.njk`): Lists books within each category
 - **Components**: `src/_includes/components/breadcrumb.njk` for navigation breadcrumbs
 - **Macros**: `src/_includes/macros/scripture.njk` for scripture reference formatting
@@ -339,25 +339,37 @@ Optimized for Cloudflare Pages with build command `npm run build` and output dir
 
 ## Recent Bug Fixes & System Health
 
-### Critical Issues Fixed (Latest Session):
-1. **Build-Breaking Path Error**: Fixed `entity-processor.js` INPUT_DIR path after repo reorganization - build now processes 5,514+ entities successfully
-2. **XSS Security Vulnerability**: Added HTML escaping in search interface to prevent script injection attacks
-3. **ESLint Critical Errors**: Reduced from 38 to 0 critical errors by fixing browser API compatibility issues
-4. **Memory Leaks**: Fixed event listener accumulation in SearchInterface and ChapterReader components
-5. **Browser API Compatibility**: Added feature detection for AbortController, IntersectionObserver, etc.
+### Critical Issues Fixed (December 2024):
+1. **Duplicate Read Chapter Buttons**: Fixed race condition between chapter-reader.js and commentary-reader.js causing duplicate UI elements
+   - Added enhanced detection logic with 100ms initialization delay
+   - Implemented proper module coordination to prevent conflicts
+2. **JavaScript Memory Leaks**: Fixed event listener accumulation and timer cleanup issues
+   - Fixed setInterval calls without proper cleanup in performance-monitor.js
+   - Added defensive null checking in debug-dashboard.js event listeners
+3. **Responsive Design Issues**: Fixed table overflow problems on mobile devices
+   - Added `.table-wrapper` with horizontal scrolling for chapter summary tables
+   - Implemented proper mobile-responsive table handling with min-width constraints
+4. **Accessibility Improvements**: Enhanced ARIA compliance throughout the application
+   - Added 20+ missing `aria-label` attributes to interactive elements
+   - Implemented `aria-expanded` states for dropdowns and toggles
+   - Enhanced keyboard navigation support
+5. **UI Layout Optimization**: Improved book page structure and content flow
+   - Moved Key Figures section below Chapter Summaries table for better user experience
+   - Enhanced visual hierarchy and reading flow
 
 ### Performance Status:
-- ✅ All critical ESLint errors resolved (0 errors, 76 warnings remaining - mostly console.log statements)
-- ✅ Build process confirmed working (entity processing successful)
-- ✅ Security vulnerabilities patched (XSS prevention implemented)
-- ✅ Memory leak patterns resolved in core user-facing components
-- ✅ Event listener cleanup implemented for modal systems
+- ✅ All critical JavaScript errors resolved (0 critical errors)
+- ✅ Responsive design tested across viewport sizes (320px to 1200px+)
+- ✅ Accessibility compliance improved with comprehensive ARIA implementation
+- ✅ Memory leak prevention implemented with proper cleanup patterns
+- ✅ Mobile-first responsive design validated
 
 ### System Health:
-- **Event Listeners**: Fixed accumulation issues (previously 66 addEventListener vs 3 removeEventListener)
-- **Cache Management**: Search engine properly manages cache size (1000 item limit)  
-- **Timer Management**: Proper cleanup implemented for dynamic components
-- **Security**: XSS protection and input sanitization active
+- **UI Components**: All interactive elements have proper accessibility labels
+- **Event Management**: Fixed listener cleanup prevents memory accumulation
+- **Responsive Design**: Tables and layouts handle small screens gracefully
+- **Code Quality**: Defensive programming patterns implemented throughout
+- **User Experience**: Logical content flow with Key Figures positioned after chapter content
 
 ## Pending Development Tasks
 

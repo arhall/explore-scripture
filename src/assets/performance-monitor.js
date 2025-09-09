@@ -827,6 +827,18 @@ class PerformanceMonitor {
   stop() {
     this.isMonitoring = false;
     
+    // Clear memory monitoring interval
+    if (this.memoryMonitoringId) {
+      clearInterval(this.memoryMonitoringId);
+      this.memoryMonitoringId = null;
+    }
+    
+    // Clear periodic reporting interval
+    if (this.reportingIntervalId) {
+      clearInterval(this.reportingIntervalId);
+      this.reportingIntervalId = null;
+    }
+    
     // Disconnect all observers
     this.observers.forEach(observer => {
       try {

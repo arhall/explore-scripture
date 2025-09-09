@@ -126,6 +126,12 @@ class SearchEngine {
 
   // Build index for books and their chapters
   buildBooksIndex() {
+    // Data validation security fix
+    if (!this.searchData || !Array.isArray(this.searchData.books)) {
+      console.warn('[SearchEngine] Invalid books data, skipping books index');
+      return;
+    }
+    
     const books = this.searchData.books;
     const bookItems = [];
     
@@ -167,7 +173,7 @@ class SearchEngine {
             ]),
             relevanceBoost: 1.0,
             bookName: book.name,
-            chapterNumber: parseInt(chapterNum)
+            chapterNumber: parseInt(chapterNum, 10)
           });
         });
       }

@@ -179,12 +179,34 @@
       try {
         const savedRecent = localStorage.getItem('recentItems');
         if (savedRecent) {
-          recentItems = JSON.parse(savedRecent).slice(0, 10);
+          try {
+            const parsed = JSON.parse(savedRecent);
+            if (Array.isArray(parsed)) {
+              recentItems = parsed.slice(0, 10);
+            } else {
+              throw new Error('Invalid recentItems format');
+            }
+          } catch (parseError) {
+            console.warn('Corrupted recentItems data, resetting:', parseError);
+            localStorage.removeItem('recentItems');
+            recentItems = [];
+          }
         }
         
         const savedBookmarks = localStorage.getItem('bookmarkedItems');
         if (savedBookmarks) {
-          bookmarkedItems = JSON.parse(savedBookmarks);
+          try {
+            const parsed = JSON.parse(savedBookmarks);
+            if (Array.isArray(parsed)) {
+              bookmarkedItems = parsed;
+            } else {
+              throw new Error('Invalid bookmarkedItems format');
+            }
+          } catch (parseError) {
+            console.warn('Corrupted bookmarkedItems data, resetting:', parseError);
+            localStorage.removeItem('bookmarkedItems');
+            bookmarkedItems = [];
+          }
         }
       } catch (error) {
         console.warn('Failed to load saved data:', error);
