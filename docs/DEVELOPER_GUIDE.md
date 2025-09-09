@@ -3,7 +3,7 @@
 ## Repository Structure
 
 ```
-bible-static-site/
+explore-scripture/
 ├── docs/                          # Documentation
 │   ├── CHAPTER_READER_GUIDE.md   # Chapter reader implementation
 │   ├── SCRIPTURE_WIDGET_GUIDE.md # Scripture widget implementation  

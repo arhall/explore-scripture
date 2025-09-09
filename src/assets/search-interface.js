@@ -1,5 +1,5 @@
 /**
- * Search Interface for Bible Explorer
+ * Search Interface for Explore Scripture
  * Provides autocomplete search with real-time suggestions across all content
  */
 

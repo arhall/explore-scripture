@@ -52,7 +52,7 @@ The Dockerfile uses a multi-stage build process:
 | Script | Command | Description |
 |--------|---------|-------------|
 | `npm run docker:build` | `./docker-build.sh` | Build the Docker image |
-| `npm run docker:run` | `docker run -p 8080:80 bible-static-site:latest` | Run container directly |
+| `npm run docker:run` | `docker run -p 8080:80 explore-scripture:latest` | Run container directly |
 | `npm run docker:up` | `docker-compose up` | Start with docker-compose |
 | `npm run docker:dev` | `docker-compose --profile dev up bible-site-dev` | Development mode |
 | `npm run docker:down` | `docker-compose down` | Stop all containers |
@@ -101,14 +101,14 @@ Excludes unnecessary files:
 ### 1. Direct Docker Run
 ```bash
 # Build image
-docker build -t bible-static-site:latest .
+docker build -t explore-scripture:latest .
 
 # Run container
 docker run -d \
   --name bible-site \
   --restart unless-stopped \
   -p 8080:80 \
-  bible-static-site:latest
+  explore-scripture:latest
 ```
 
 ### 2. Docker Compose (Recommended)
@@ -206,7 +206,7 @@ docker --version
 docker system prune -a
 
 # Rebuild from scratch
-docker build --no-cache -t bible-static-site:latest .
+docker build --no-cache -t explore-scripture:latest .
 ```
 
 #### Container Won't Start
@@ -250,14 +250,14 @@ docker exec bible-site nginx -s status
 ### Docker Hub Deployment
 ```bash
 # Tag for Docker Hub
-docker tag bible-static-site:latest username/bible-static-site:latest
+docker tag explore-scripture:latest username/explore-scripture:latest
 
 # Push to Docker Hub
-docker push username/bible-static-site:latest
+docker push username/explore-scripture:latest
 
 # Deploy on production server
-docker pull username/bible-static-site:latest
-docker run -d --name bible-site --restart always -p 80:80 username/bible-static-site:latest
+docker pull username/explore-scripture:latest
+docker run -d --name bible-site --restart always -p 80:80 username/explore-scripture:latest
 ```
 
 ### Cloud Deployment Examples
@@ -265,14 +265,14 @@ docker run -d --name bible-site --restart always -p 80:80 username/bible-static-
 #### AWS ECS
 ```json
 {
-  "family": "bible-static-site",
+  "family": "explore-scripture",
   "networkMode": "awsvpc",
   "cpu": "256",
   "memory": "512",
   "containerDefinitions": [
     {
       "name": "bible-site",
-      "image": "username/bible-static-site:latest",
+      "image": "username/explore-scripture:latest",
       "portMappings": [
         {
           "containerPort": 80,
@@ -287,8 +287,8 @@ docker run -d --name bible-site --restart always -p 80:80 username/bible-static-
 #### Google Cloud Run
 ```bash
 # Deploy to Cloud Run
-gcloud run deploy bible-static-site \
-  --image username/bible-static-site:latest \
+gcloud run deploy explore-scripture \
+  --image username/explore-scripture:latest \
   --platform managed \
   --region us-central1 \
   --allow-unauthenticated

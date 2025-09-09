@@ -1,5 +1,5 @@
 /**
- * CSS Optimizer for Bible Explorer
+ * CSS Optimizer for Explore Scripture
  * Handles critical CSS, lazy loading, and performance optimization
  */
 

@@ -1,7 +1,7 @@
-# Current Context - Bible Explorer
+# Current Context - Explore Scripture
 
 ## Project Overview
-Bible Explorer — Interactive Study Site - A comprehensive Bible study platform built with Eleventy (11ty) featuring 66 biblical books, 229 character studies, interactive chapter reader with live translation switching, and professional UX design optimized for desktop and mobile study.
+Explore Scripture — Interactive Study Site - A comprehensive Bible study platform built with Eleventy (11ty) featuring 66 biblical books, 229 character studies, interactive chapter reader with live translation switching, and professional UX design optimized for desktop and mobile study.
 
 ## Current State (Modern Bible Study Platform)
 - **Build Status**: Fully functional, optimized for performance (300+ pages in <3 seconds)
@@ -30,7 +30,7 @@ Bible Explorer — Interactive Study Site - A comprehensive Bible study platform
 
 ## Key Files and Locations
 ```
-/Users/andrewhall/repo/bible-static-site/
+/Users/andrewhall/repo/explore-scripture/
 ├── .eleventy.js (build configuration)
 ├── src/
 │   ├── _data/

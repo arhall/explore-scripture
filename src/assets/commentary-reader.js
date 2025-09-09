@@ -836,13 +836,13 @@ class CommentaryReader {
       return this.convertSlugToBookName(slug);
     }
     
-    // Fallback: extract from page title (format: "Book Name | Bible Explorer")
+    // Fallback: extract from page title (format: "Book Name | Explore Scripture")
     const pageTitle = document.title;
     const titleMatch = pageTitle.match(/^([^|]+)/);
     if (titleMatch) {
       const titlePart = titleMatch[1].trim();
-      // Make sure it's not just "Bible Explorer" or other site text
-      if (titlePart !== 'Bible Explorer' && !titlePart.includes('Bible Explorer')) {
+      // Make sure it's not just "Explore Scripture" or other site text
+      if (titlePart !== 'Explore Scripture' && !titlePart.includes('Explore Scripture')) {
         return titlePart;
       }
     }
@@ -851,7 +851,7 @@ class CommentaryReader {
     const mainHeading = document.querySelector('h1, .book-title, [class*="title"]');
     if (mainHeading) {
       const headingText = mainHeading.textContent.trim();
-      if (headingText && !headingText.includes('Bible Explorer')) {
+      if (headingText && !headingText.includes('Explore Scripture')) {
         return headingText;
       }
     }

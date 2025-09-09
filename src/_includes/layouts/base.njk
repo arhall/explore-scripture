@@ -17,8 +17,8 @@
   <meta name="theme-color" content="#2563eb">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="Bible Explorer">
-  <title>{{ title or 'Bible Explorer' }}</title>
+  <meta name="apple-mobile-web-app-title" content="Explore Scripture">
+  <title>{{ title or 'Explore Scripture' }}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -36,7 +36,7 @@
 <body>
   <div class="container">
     <nav class="nav">
-      <a class="nav-brand" href="/">Bible Explorer</a>
+      <a class="nav-brand" href="/">Explore Scripture</a>
       <div class="nav-links">
         <a href="/categories/" class="nav-link {% if page.url == '/categories/' %}active{% endif %}">Sections</a>
         <a href="/gospel-thread/" class="nav-link {% if page.url == '/gospel-thread/' %}active{% endif %}">Gospel Thread</a>
@@ -488,14 +488,14 @@
       
       // Auto-add current page to recent items
       const currentPageData = {
-        title: document.title.replace(' | Bible Explorer', '').replace('Bible Explorer', 'Home'),
+        title: document.title.replace(' | Explore Scripture', '').replace('Explore Scripture', 'Home'),
         subtitle: document.querySelector('meta[name="description"]')?.getAttribute('content')?.substring(0, 80) + '...' || '',
         url: window.location.pathname,
         timestamp: Date.now()
       };
       
       // Don't add if it's just the site title
-      if (currentPageData.title && currentPageData.title !== 'Bible Explorer') {
+      if (currentPageData.title && currentPageData.title !== 'Explore Scripture') {
         setTimeout(() => addToRecentItems(currentPageData), 1000);
       }
     });

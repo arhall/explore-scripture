@@ -1,6 +1,6 @@
 # Scripts Directory
 
-This directory contains utility scripts for the Bible Explorer project.
+This directory contains utility scripts for the Explore Scripture project.
 
 ## Active Scripts
 

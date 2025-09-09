@@ -1,5 +1,5 @@
 /**
- * OpenTelemetry Configuration for Bible Explorer
+ * OpenTelemetry Configuration for Explore Scripture
  * OTEL-compliant observability and telemetry setup
  */
 
@@ -41,7 +41,7 @@ class BibleExplorerTelemetry {
         [SemanticResourceAttributes.DEPLOYMENT_ENVIRONMENT]: this.environment,
         [SemanticResourceAttributes.SERVICE_INSTANCE_ID]: this.generateInstanceId(),
         // Custom attributes
-        'app.name': 'Bible Explorer',
+        'app.name': 'Explore Scripture',
         'app.type': 'static-web-app',
         'app.framework': 'eleventy'
       });

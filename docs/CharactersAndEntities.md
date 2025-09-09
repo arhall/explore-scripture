@@ -60,4 +60,4 @@
 - **Theme manager**: `src/assets/theme-manager.js` provides comprehensive theming
 - **Build integration**: Eleventy processes all entity pages during build
 
-The entity system is fully functional and integrated into the Bible Explorer platform, providing users with comprehensive search and navigation capabilities across all biblical content.
+The entity system is fully functional and integrated into the Explore Scripture platform, providing users with comprehensive search and navigation capabilities across all biblical content.

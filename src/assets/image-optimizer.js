@@ -1,5 +1,5 @@
 /**
- * Image Optimizer for Bible Explorer
+ * Image Optimizer for Explore Scripture
  * Implements lazy loading, WebP support, and responsive images
  */
 

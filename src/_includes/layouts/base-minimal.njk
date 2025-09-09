@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <title>{% if title %}{{ title }} - Bible Explorer{% else %}{{ renderData.title or metadata.title }}{% endif %}</title>
+  <title>{% if title %}{{ title }} - Explore Scripture{% else %}{{ renderData.title or metadata.title }}{% endif %}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
   <!-- Apple PWA Support -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="Bible Explorer">
+  <meta name="apple-mobile-web-app-title" content="Explore Scripture">
   <link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
   
   <!-- Microsoft PWA Support -->
@@ -30,7 +30,7 @@
 <body>
   <div class="container">
     <nav class="nav">
-      <a class="nav-brand" href="/">Bible Explorer</a>
+      <a class="nav-brand" href="/">Explore Scripture</a>
       <div class="nav-links">
         <a href="/categories/" class="nav-link {% if page.url == '/categories/' or page.url.startsWith('/categories/') %}active{% endif %}">Sections</a>
         <a href="/gospel-thread/" class="nav-link {% if page.url == '/gospel-thread/' %}active{% endif %}">Gospel Thread</a>
@@ -94,8 +94,8 @@
         installBanner.className = 'pwa-install-banner';
         installBanner.innerHTML = `
           <div class="install-content">
-            <span class="install-text">📱 Install Bible Explorer for offline access</span>
-            <button class="install-btn" onclick="installPWA()" aria-label="Install Bible Explorer as an app">Install</button>
+            <span class="install-text">📱 Install Explore Scripture for offline access</span>
+            <button class="install-btn" onclick="installPWA()" aria-label="Install Explore Scripture as an app">Install</button>
             <button class="dismiss-btn" onclick="dismissInstall()" aria-label="Dismiss install prompt">×</button>
           </div>
         `;

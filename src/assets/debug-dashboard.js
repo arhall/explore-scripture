@@ -28,7 +28,7 @@ class DebugDashboard {
     });
 
     // Add debug info to console
-    console.log('%c🔍 Bible Explorer Debug Mode Enabled', 'color: #6aa9ff; font-weight: bold;');
+    console.log('%c🔍 Explore Scripture Debug Mode Enabled', 'color: #6aa9ff; font-weight: bold;');
     console.log('%c📊 Press Ctrl+Shift+D to open debug dashboard', 'color: #a7b2d6;');
     
     // Create dashboard elements but keep hidden
@@ -122,7 +122,7 @@ class DebugDashboard {
           border-bottom: 1px solid #1f2a44;
         ">
           <div style="display: flex; align-items: center; gap: 12px;">
-            <span style="font-weight: bold; color: #6aa9ff;">🔍 Bible Explorer Debug Dashboard</span>
+            <span style="font-weight: bold; color: #6aa9ff;">🔍 Explore Scripture Debug Dashboard</span>
             <button id="debug-export-logs" style="
               background: #6aa9ff;
               color: #0b1220;

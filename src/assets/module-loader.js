@@ -1,5 +1,5 @@
 /**
- * Bible Explorer Module Loader
+ * Explore Scripture Module Loader
  * Implements lazy loading and code splitting for optimal performance
  */
 

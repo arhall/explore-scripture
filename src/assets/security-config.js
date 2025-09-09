@@ -1,5 +1,5 @@
 /**
- * Bible Explorer Security Configuration
+ * Explore Scripture Security Configuration
  * Centralized security settings and utilities
  */
 

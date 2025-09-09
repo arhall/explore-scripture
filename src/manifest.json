@@ -1,7 +1,7 @@
 {
-  "name": "Bible Explorer",
-  "short_name": "BibleExplorer",
-  "description": "Interactive Bible study with chapter summaries, character profiles, and embedded Scripture widgets",
+  "name": "Explore Scripture",
+  "short_name": "ExploreScripture",
+  "description": "Interactive Scripture study with chapter summaries, character profiles, and embedded Scripture widgets",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -105,7 +105,7 @@
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "Bible Explorer homepage on desktop"
+      "label": "Explore Scripture homepage on desktop"
     },
     {
       "src": "/assets/screenshots/mobile-scripture-widget.png",

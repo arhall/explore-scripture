@@ -1,4 +1,4 @@
-# Bible Explorer — Interactive Study Site
+# Explore Scripture — Interactive Study Site
 
 [![Built with Eleventy](https://img.shields.io/badge/Built%20with-Eleventy-000000.svg)](https://11ty.dev/)
 [![Deployed on Cloudflare Pages](https://img.shields.io/badge/Deployed%20on-Cloudflare%20Pages-F38020.svg)](https://pages.cloudflare.com/)
@@ -24,7 +24,7 @@ Built with **Eleventy (11ty)** for fast, static generation and optimized for **C
 ```bash
 # Clone and install
 git clone <your-repo-url>
-cd bible-static-site
+cd explore-scripture
 npm install
 
 # Start development server
@@ -118,7 +118,7 @@ tests/                      # Test suites (Selenium, Jest)
 
 ## 🎯 Entity System
 
-The heart of Bible Explorer is its comprehensive entity system with **5,500+ biblical entities**:
+The heart of Explore Scripture is its comprehensive entity system with **5,500+ biblical entities**:
 
 ### Entity Types
 - **👥 People**: Biblical characters with detailed profiles
@@ -315,4 +315,4 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
-**Bible Explorer** - Making Scripture study accessible, interactive, and engaging for modern Bible students.
+**Explore Scripture** - Making Scripture study accessible, interactive, and engaging for modern Bible students.

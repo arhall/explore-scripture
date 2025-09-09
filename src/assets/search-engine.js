@@ -1,5 +1,5 @@
 /**
- * Advanced Search Engine for Bible Explorer
+ * Advanced Search Engine for Explore Scripture
  * Provides unified search across books, chapters, and categories
  * Features: Fuzzy matching, autocomplete, performance optimization
  */

@@ -238,7 +238,7 @@ permalink: "/entities/{{ entityId }}/"
     }
     
     // Update page title and meta description for SEO
-    document.title = `${currentEntity.name} - Bible Explorer`;
+    document.title = `${currentEntity.name} - Explore Scripture`;
     
     // Update meta description dynamically
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -458,7 +458,7 @@ permalink: "/entities/{{ entityId }}/"
   function shareEntity() {
     if (navigator.share && currentEntity) {
       navigator.share({
-        title: `${currentEntity.name} - Bible Explorer`,
+        title: `${currentEntity.name} - Explore Scripture`,
         text: currentEntity.blurb ? currentEntity.blurb.substring(0, 200) + '...' : `Learn about ${currentEntity.name} in the Bible`,
         url: window.location.href
       });

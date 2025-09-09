@@ -113,7 +113,8 @@
       "Bash(open http://localhost:8082/books/matthew/)",
       "Bash(open http://localhost:8081/test-chapter-reader.html)",
       "Bash(open http://localhost:8081/responsive-test.html)",
-      "Bash(./test-env/bin/python -m pytest tests/test_regression_fixes.py::TestRegressionFixes::test_theme_toggle_functionality -v --tb=short)"
+      "Bash(./test-env/bin/python -m pytest tests/test_regression_fixes.py::TestRegressionFixes::test_theme_toggle_functionality -v --tb=short)",
+      "Bash(./setup-workers.sh:*)"
     ],
     "deny": [],
     "ask": []

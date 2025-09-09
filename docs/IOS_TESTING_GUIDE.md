@@ -1,7 +1,7 @@
 # iOS Safari Testing Guide
 
 ## Overview
-This guide covers setting up and running iOS Safari UI automation tests for Bible Explorer using Selenium WebDriver and Appium.
+This guide covers setting up and running iOS Safari UI automation tests for Explore Scripture using Selenium WebDriver and Appium.
 
 ## Test Types
 
@@ -290,4 +290,4 @@ python -m pytest tests/test_ios_safari.py -n 2 -v
 - ✅ Automatic dark mode detection
 - ✅ Touch-friendly theme toggle
 
-This comprehensive iOS testing setup ensures Bible Explorer works perfectly on iOS Safari across different device sizes and iOS versions.
+This comprehensive iOS testing setup ensures Explore Scripture works perfectly on iOS Safari across different device sizes and iOS versions.

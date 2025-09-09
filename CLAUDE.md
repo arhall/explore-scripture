@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Bible Explorer is a comprehensive static Bible study platform built with Eleventy (11ty). It features 66 biblical books, interactive chapter reading with live translation switching, and a modern UX design optimized for both desktop and mobile study experiences. The site is optimized for Cloudflare Pages deployment.
+Explore Scripture is a comprehensive static Scripture study platform built with Eleventy (11ty). It features 66 biblical books, interactive chapter reading with live translation switching, and a modern UX design optimized for both desktop and mobile study experiences. The site is optimized for Cloudflare Pages deployment.
 
 ## Development Commands
 
@@ -266,7 +266,7 @@ Comprehensive test suite with multiple testing frameworks:
 ### Python/Selenium Testing
 - **Chapter Reader tests** (`tests/test_chapter_reader.py`)
 - **Commentary System tests** (`tests/test_commentary_system.py`)
-- **Bible Explorer tests** (`tests/test_bible_explorer.py`)
+- **Explore Scripture tests** (`tests/test_bible_explorer.py`)
 - **iOS Safari tests** (`tests/test_ios_safari.py`)
 - **Regression tests** (`tests/test_regression_fixes.py`)
 - **Scripture Widget tests** (`tests/test_scripture_widget.py`)

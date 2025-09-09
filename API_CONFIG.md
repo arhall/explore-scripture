@@ -2,7 +2,7 @@
 
 ## Overview
 
-Bible Explorer integrates with external Bible APIs to provide scripture content. For security reasons, API keys are **not hardcoded** in the source code and must be configured separately.
+Explore Scripture integrates with external Bible APIs to provide scripture content. For security reasons, API keys are **not hardcoded** in the source code and must be configured separately.
 
 ## Security Best Practices
 

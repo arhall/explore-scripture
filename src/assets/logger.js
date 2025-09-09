@@ -1,5 +1,5 @@
 /**
- * Bible Explorer Logging System
+ * Explore Scripture Logging System
  * Comprehensive logging utility for debugging, analytics, and monitoring
  */
 

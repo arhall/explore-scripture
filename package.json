@@ -1,15 +1,15 @@
 {
-  "name": "bible-explorer",
+  "name": "explore-scripture",
   "version": "1.0.0",
-  "description": "Interactive Bible study platform with 5,500+ entities, chapter summaries, and embedded Scripture widgets",
+  "description": "Interactive Scripture study platform with 5,500+ entities, chapter summaries, and embedded Scripture widgets",
   "private": true,
-  "author": "Bible Explorer Team",
+  "author": "Explore Scripture Team",
   "license": "MIT",
-  "keywords": ["bible", "scripture", "study", "entities", "pwa", "eleventy"],
-  "homepage": "https://bible-explorer.pages.dev",
+  "keywords": ["scripture", "bible", "study", "entities", "pwa", "eleventy"],
+  "homepage": "https://explore-scripture.pages.dev",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/bible-explorer.git"
+    "url": "git+https://github.com/yourusername/explore-scripture.git"
   },
   "scripts": {
     "// Development": "",
@@ -20,6 +20,7 @@
     "// Building": "",
     "build": "npm run entities:process && npm run search:generate && eleventy",
     "build:production": "npm run entities:process && npm run search:generate && NODE_ENV=production eleventy && npm run optimize",
+    "build:workers": "npm run build:production && npm run workers:prepare",
     "build:analyze": "npm run build && node scripts/build-logger.js",
     "build:fast": "eleventy",
 
@@ -68,6 +69,13 @@
     "docker:dev": "docker-compose --profile dev up bible-site-dev",
     "docker:down": "docker-compose down",
 
+    "// Cloudflare Workers": "",
+    "workers:dev": "wrangler dev",
+    "workers:deploy": "wrangler deploy",
+    "workers:prepare": "node scripts/prepare-workers.js",
+    "workers:kv:create": "wrangler kv:namespace create CACHE && wrangler kv:namespace create ENTITIES",
+    "workers:kv:upload": "node scripts/upload-to-kv.js",
+
     "// Utility": "",
     "clean": "rm -rf _site build-logs tmp",
     "clean:all": "npm run clean && rm -rf node_modules test-env .pytest_cache",
@@ -97,6 +105,7 @@
     "puppeteer": "^24.17.0",
     "stylelint": "^16.23.1",
     "stylelint-config-standard": "^39.0.0",
-    "terser": "^5.43.1"
+    "terser": "^5.43.1",
+    "wrangler": "^3.78.12"
   }
 }

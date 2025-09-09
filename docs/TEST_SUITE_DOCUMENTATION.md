@@ -1,4 +1,4 @@
-# Bible Explorer - Selenium Test Suite Documentation
+# Explore Scripture - Selenium Test Suite Documentation
 
 ## Overview
 Comprehensive headless Chrome testing infrastructure for validating core functionality required for build validation.
@@ -209,7 +209,7 @@ The comprehensive Selenium test suite successfully validates:
 - ✅ Performance meets acceptable standards
 - ✅ CI/CD pipeline ready for automated testing
 
-This test infrastructure ensures that any code changes can be validated automatically before deployment, maintaining high quality and reliability standards for the Bible Explorer application.
+This test infrastructure ensures that any code changes can be validated automatically before deployment, maintaining high quality and reliability standards for the Explore Scripture application.
 
 ## Commentary System Tests (`test_commentary_system.py`)
 

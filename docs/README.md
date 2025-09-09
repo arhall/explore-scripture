@@ -33,7 +33,7 @@ npm run validate     # Full validation (lint + build + test)
 
 ### Project Structure
 ```
-bible-static-site/
+explore-scripture/
 ├── src/             # Source code
 ├── docs/            # Documentation (you are here)
 ├── tests/           # Test suite

@@ -2,7 +2,7 @@
 *As a Technical Architect*
 
 ## Executive Summary
-The Bible Explorer application shows solid foundation with Eleventy static site generation, but several architectural improvements could significantly enhance performance, maintainability, and user experience. This document outlines priority recommendations for technical enhancement.
+The Explore Scripture application shows solid foundation with Eleventy static site generation, but several architectural improvements could significantly enhance performance, maintainability, and user experience. This document outlines priority recommendations for technical enhancement.
 
 ## 🏗️ High Priority Architecture Improvements
 
@@ -183,7 +183,7 @@ class ErrorBoundary {
   }
   
   componentDidCatch(error, errorInfo) {
-    console.error('Bible Explorer Error:', error, errorInfo);
+    console.error('Explore Scripture Error:', error, errorInfo);
     // Send to error tracking service
   }
   
@@ -391,4 +391,4 @@ environments:
 - **Search Quality**: More relevant and faster search results
 - **Accessibility**: Better compliance with accessibility standards
 
-This technical architecture roadmap provides a clear path toward a more robust, performant, and maintainable Bible Explorer application while maintaining the current functionality that users expect.
+This technical architecture roadmap provides a clear path toward a more robust, performant, and maintainable Explore Scripture application while maintaining the current functionality that users expect.

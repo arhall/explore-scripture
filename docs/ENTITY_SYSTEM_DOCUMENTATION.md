@@ -1,6 +1,6 @@
 # Entity System Documentation
 
-The Bible Explorer Entity System provides comprehensive access to 5,500+ biblical characters, places, events, and concepts across all 66 books of the Bible.
+The Explore Scripture Entity System provides comprehensive access to 5,500+ biblical characters, places, events, and concepts across all 66 books of the Bible.
 
 ## Overview
 
@@ -78,7 +78,7 @@ Location: `src/assets/data/books/{book-slug}-entities.json`
 ## Key Features
 
 ### 1. Dynamic SEO Optimization
-- Page titles update to `{Entity Name} - Bible Explorer`
+- Page titles update to `{Entity Name} - Explore Scripture`
 - Meta descriptions auto-generated from entity blurbs
 - Proper canonical URLs and redirects
 
