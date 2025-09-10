@@ -1464,7 +1464,14 @@ class ChapterReader {
             : { signal: null, abort: () => {} };
         const timeoutId = setTimeout(() => controller.abort(), 8000); // 8 second timeout
 
-        const response = await fetch(`${source.endpoint}${formattedRef}`, {
+        // Validate URL before making request
+        const fullUrl = `${source.endpoint}${formattedRef}`;
+        if (!SecurityConfig?.isUrlSafe(fullUrl)) {
+          console.warn('Security: Blocked unsafe API URL:', fullUrl);
+          throw new Error('Invalid API URL blocked for security reasons');
+        }
+
+        const response = await fetch(fullUrl, {
           headers: {
             'User-Agent': 'BibleExplorer/1.0',
           },
@@ -1800,6 +1807,13 @@ class ChapterReader {
 
   renderBibleGatewayIframe(chapterInfo) {
     const url = this.getBibleGatewayUrl(chapterInfo);
+    
+    // Validate URL for security
+    if (!SecurityConfig?.isUrlSafe(url) && !url.startsWith('https://www.biblegateway.com/')) {
+      console.warn('Security: Blocked unsafe iframe URL:', url);
+      return '<div class="error">Invalid URL blocked for security reasons</div>';
+    }
+    
     const isMobile = window.innerWidth <= 768;
 
     // On mobile, add a toggle to switch between iframe and API content
@@ -1817,9 +1831,9 @@ class ChapterReader {
         ${mobileToggle}
         <div class="iframe-view-container">
           <iframe 
-            src="${url}" 
+            src="${this.escapeHtml(url)}" 
             class="chapter-reader-iframe"
-            title="${chapterInfo.reference} - ${this.translations[this.currentTranslation].name}"
+            title="${this.escapeHtml(chapterInfo.reference)} - ${this.escapeHtml(this.translations[this.currentTranslation].name)}"
             loading="lazy"
             sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
             referrerpolicy="no-referrer-when-downgrade">
@@ -1832,8 +1846,8 @@ class ChapterReader {
         </div>
         <div class="chapter-reader-iframe-fallback">
           <p>Having trouble? Try:</p>
-          <a href="${url}" target="_blank" class="chapter-reader-external-link">
-            ▦ Open ${chapterInfo.reference} on BibleGateway
+          <a href="${this.escapeHtml(url)}" target="_blank" class="chapter-reader-external-link">
+            ▦ Open ${this.escapeHtml(chapterInfo.reference)} on BibleGateway
           </a>
         </div>
       </div>

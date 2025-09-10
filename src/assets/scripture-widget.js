@@ -436,7 +436,15 @@ class ScriptureWidget {
     if (source.name === 'bible-api') {
       // Bible API format: https://bible-api.com/john+3:16
       const formattedRef = reference.replace(/\s+/g, '+').toLowerCase();
-      const response = await fetch(`${source.endpoint}${formattedRef}`);
+      const fullUrl = `${source.endpoint}${formattedRef}`;
+      
+      // Validate URL before making request
+      if (!SecurityConfig?.isUrlSafe(fullUrl)) {
+        console.warn('Security: Blocked unsafe API URL:', fullUrl);
+        throw new Error('Invalid API URL blocked for security reasons');
+      }
+      
+      const response = await fetch(fullUrl);
 
       if (!response.ok) throw new Error('API request failed');
 

@@ -130,6 +130,12 @@ class SearchEngine {
 
   // Helper to fetch JSON with error handling
   async fetchJSON(url) {
+    // Validate URL for security
+    if (!SecurityConfig?.isUrlSafe(url) && !url.startsWith('/') && !url.startsWith('./')) {
+      console.warn('Security: Blocked unsafe fetch URL:', url);
+      throw new Error('Invalid URL blocked for security reasons');
+    }
+    
     const response = await fetch(url);
     if (!response.ok) {
       throw new Error(`Failed to fetch ${url}: ${response.statusText}`);

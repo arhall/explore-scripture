@@ -40,7 +40,7 @@ port = 8787
 # Security headers
 [env.production]
 [env.production.vars]
-CSP_HEADER = "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https:; connect-src 'self' https://api.esv.org https://www.biblegateway.com; frame-src https://www.youtube.com https://www.biblegateway.com;"
+CSP_HEADER = "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https: https://i.ytimg.com; connect-src 'self' https://api.esv.org https://www.biblegateway.com https://bible-api.com; frame-src https://www.youtube.com https://www.biblegateway.com https://enduringword.com https://biblehub.com; object-src 'none'; base-uri 'self'; form-action 'self';"
 
 # Analytics - disabled until enabled in dashboard
 # [[analytics_engine_datasets]]

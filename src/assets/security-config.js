@@ -363,6 +363,81 @@ class SecurityConfig {
     });
     return status;
   }
+
+  // Secure DOM manipulation helpers
+  static createSecureElement(tagName, attributes = {}, textContent = '') {
+    const element = document.createElement(tagName);
+    
+    // Set attributes securely
+    Object.entries(attributes).forEach(([key, value]) => {
+      if (key === 'href' || key === 'src') {
+        // Validate URLs
+        if (SecurityConfig.isUrlSafe(value)) {
+          element.setAttribute(key, value);
+        } else {
+          console.warn(`Security: Blocked unsafe URL: ${value}`);
+        }
+      } else if (key.startsWith('on')) {
+        // Block event handler attributes
+        console.warn(`Security: Blocked event handler attribute: ${key}`);
+      } else {
+        element.setAttribute(key, value);
+      }
+    });
+    
+    // Set text content safely
+    if (textContent) {
+      element.textContent = textContent;
+    }
+    
+    return element;
+  }
+
+  static setSecureHTML(element, content) {
+    // Clear existing content
+    element.textContent = '';
+    
+    // Parse and sanitize HTML content
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = SecurityConfig.sanitizeHTML(content);
+    
+    // Move sanitized content to target element
+    while (tempDiv.firstChild) {
+      element.appendChild(tempDiv.firstChild);
+    }
+  }
+
+  static sanitizeHTML(html) {
+    // Remove dangerous elements and attributes
+    return html
+      .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
+      .replace(/<iframe\b[^<]*(?:(?!<\/iframe>)<[^<]*)*<\/iframe>/gi, '')
+      .replace(/javascript:/gi, '')
+      .replace(/on\w+\s*=\s*["'][^"']*["']/gi, '')
+      .replace(/style\s*=\s*["'][^"']*expression\s*\([^"']*["']/gi, '');
+  }
+
+  static isUrlSafe(url) {
+    try {
+      const parsed = new URL(url);
+      const allowedProtocols = ['http:', 'https:', 'mailto:'];
+      const allowedDomains = [
+        'self',
+        'biblegateway.com',
+        'api.esv.org', 
+        'bible-api.com',
+        'fonts.googleapis.com',
+        'fonts.gstatic.com'
+      ];
+      
+      return allowedProtocols.includes(parsed.protocol) &&
+             (allowedDomains.includes('*') || 
+              allowedDomains.some(domain => 
+                domain === 'self' || parsed.hostname.endsWith(domain)));
+    } catch {
+      return false;
+    }
+  }
 }
 
 // Initialize security configuration
