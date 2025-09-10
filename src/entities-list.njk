@@ -1,22 +1,30 @@
 ---
 layout: base.njk
-permalink: "/entities/"
+permalink: '/entities/'
 ---
 
 <div class="entities-listing-page">
   <div class="page-header">
     <h1>Biblical Characters & Entities</h1>
-    <p class="page-description">Explore people, places, events, and concepts throughout Scripture with detailed profiles and cross-references.</p>
+    <p class="page-description">
+      Explore people, places, events, and concepts throughout Scripture with detailed profiles and
+      cross-references.
+    </p>
   </div>
-  
+
   <div class="entities-controls">
     <div class="search-filter-section">
       <div class="search-box">
-        <input type="text" id="entitySearch" placeholder="Search entities..." 
-               onkeyup="filterEntities()" class="search-input">
+        <input
+          type="text"
+          id="entitySearch"
+          placeholder="Search entities..."
+          onkeyup="filterEntities()"
+          class="search-input"
+        />
         <button class="search-clear" onclick="clearEntitySearch()" title="Clear search">×</button>
       </div>
-      
+
       <div class="filter-controls">
         <div class="filter-group">
           <label for="typeFilter">Type:</label>
@@ -31,14 +39,14 @@ permalink: "/entities/"
             <option value="group">Groups</option>
           </select>
         </div>
-        
+
         <div class="filter-group">
           <label for="bookFilter">Book:</label>
           <select id="bookFilter" onchange="filterEntities()">
             <option value="">All Books</option>
           </select>
         </div>
-        
+
         <div class="filter-group">
           <label for="sortFilter">Sort by:</label>
           <select id="sortFilter" onchange="sortEntities()">
@@ -50,36 +58,44 @@ permalink: "/entities/"
         </div>
       </div>
     </div>
-    
+
     <div class="results-info">
       <span id="resultsCount">Loading entities...</span>
-      <button class="toggle-view-btn" onclick="toggleView()" id="viewToggle" title="Toggle between grid and list view">
+      <button
+        class="toggle-view-btn"
+        onclick="toggleView()"
+        id="viewToggle"
+        title="Toggle between grid and list view"
+      >
         <span id="viewIcon">⊞</span> Grid View
       </button>
     </div>
   </div>
-  
+
   <div class="entities-loading" id="entitiesLoading">
     <div class="loading-spinner"></div>
     <span>Loading entities...</span>
   </div>
-  
-  <div class="entities-content" id="entitiesContent" style="display: none;">
+
+  <div class="entities-content" id="entitiesContent" style="display: none">
     <div class="entities-grid" id="entitiesGrid">
       <!-- Entities will be loaded here -->
     </div>
-    
-    <div class="load-more-section" id="loadMoreSection" style="display: none;">
+
+    <div class="load-more-section" id="loadMoreSection" style="display: none">
       <button class="load-more-btn" onclick="loadMoreEntities()" id="loadMoreBtn">
         Load More Entities
       </button>
       <div class="load-more-info" id="loadMoreInfo"></div>
     </div>
   </div>
-  
-  <div class="entities-error" id="entitiesError" style="display: none;">
+
+  <div class="entities-error" id="entitiesError" style="display: none">
     <h3>Unable to Load Entities</h3>
-    <p>There was an error loading the entities data. <a href="#" onclick="retryLoadEntities()">Try again</a></p>
+    <p>
+      There was an error loading the entities data.
+      <a href="#" onclick="retryLoadEntities()">Try again</a>
+    </p>
   </div>
 </div>
 
@@ -92,44 +108,44 @@ permalink: "/entities/"
   const entitiesPerPage = 24;
   let currentView = 'grid'; // 'grid' or 'list'
   let isLoading = false;
-  
+
   // Entity type icons and colors
   const entityTypeConfig = {
-    'person': { icon: '👤', color: '#4A90E2', label: 'Person' },
-    'divine': { icon: '✨', color: '#F5A623', label: 'Divine' },
-    'place': { icon: '📍', color: '#7ED321', label: 'Place' },
-    'title': { icon: '👑', color: '#9013FE', label: 'Title' },
-    'figure': { icon: '🔷', color: '#50C8FF', label: 'Figure' },
-    'event': { icon: '⚡', color: '#FF6B35', label: 'Event' },
-    'group': { icon: '👥', color: '#BD10E0', label: 'Group' }
+    person: { icon: '👤', color: '#4A90E2', label: 'Person' },
+    divine: { icon: '✨', color: '#F5A623', label: 'Divine' },
+    place: { icon: '📍', color: '#7ED321', label: 'Place' },
+    title: { icon: '👑', color: '#9013FE', label: 'Title' },
+    figure: { icon: '🔷', color: '#50C8FF', label: 'Figure' },
+    event: { icon: '⚡', color: '#FF6B35', label: 'Event' },
+    group: { icon: '👥', color: '#BD10E0', label: 'Group' },
   };
-  
+
   async function loadAllEntities() {
     const loadingEl = document.getElementById('entitiesLoading');
     const contentEl = document.getElementById('entitiesContent');
     const errorEl = document.getElementById('entitiesError');
-    
+
     if (isLoading) return;
     isLoading = true;
-    
+
     try {
       loadingEl.style.display = 'flex';
       contentEl.style.display = 'none';
       errorEl.style.display = 'none';
-      
+
       // Load all entities from the centralized entities-search.json
       const [entitiesResponse, booksResponse] = await Promise.all([
         fetch('/assets/data/entities-search.json'),
-        fetch('/assets/data/books.json')
+        fetch('/assets/data/books.json'),
       ]);
-      
+
       if (!entitiesResponse.ok) {
         throw new Error('Failed to load entities data');
       }
-      
+
       const entitiesData = await entitiesResponse.json();
       const booksData = booksResponse.ok ? await booksResponse.json() : [];
-      
+
       // Process entities data for the listing
       allEntities = entitiesData.map(entity => ({
         id: entity.id,
@@ -139,33 +155,37 @@ permalink: "/entities/"
         book_count: entity.books ? entity.books.length : 0,
         books: entity.books || [],
         role: entity.type || 'Biblical figure',
-        book_references: entity.books ? entity.books.map(book => ({
-          book: book,
-          slug: book.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, ''),
-          count: Math.max(1, Math.floor((entity.references || 0) / entity.books.length))
-        })) : [],
+        book_references: entity.books
+          ? entity.books.map(book => ({
+              book: book,
+              slug: book
+                .toLowerCase()
+                .replace(/\s+/g, '-')
+                .replace(/[^a-z0-9-]/g, ''),
+              count: Math.max(1, Math.floor((entity.references || 0) / entity.books.length)),
+            }))
+          : [],
         blurb: entity.blurb || '',
-        score: entity.references || 0
+        score: entity.references || 0,
       }));
-      
+
       // Populate book filter with available books
       populateBookFilter(booksData);
-      
+
       // Initial filter and display
       filteredEntities = [...allEntities];
       sortEntities();
       displayEntities();
-      
+
       loadingEl.style.display = 'none';
       contentEl.style.display = 'block';
-      
+
       updateResultsInfo();
-      
     } catch (error) {
       console.error('Error loading entities:', error);
       loadingEl.style.display = 'none';
       errorEl.style.display = 'block';
-      
+
       if (window.logger) {
         window.logger.error('entities-listing-load-error', error.message);
       }
@@ -173,10 +193,10 @@ permalink: "/entities/"
       isLoading = false;
     }
   }
-  
+
   function populateBookFilter(booksData) {
     const bookFilterSelect = document.getElementById('bookFilter');
-    
+
     booksData.forEach(book => {
       const option = document.createElement('option');
       option.value = book.name;
@@ -184,50 +204,51 @@ permalink: "/entities/"
       bookFilterSelect.appendChild(option);
     });
   }
-  
+
   function filterEntities() {
     const searchTerm = document.getElementById('entitySearch').value.toLowerCase();
     const typeFilter = document.getElementById('typeFilter').value;
     const bookFilter = document.getElementById('bookFilter').value;
-    
+
     filteredEntities = allEntities.filter(entity => {
       // Search filter
-      const matchesSearch = !searchTerm || 
+      const matchesSearch =
+        !searchTerm ||
         entity.name.toLowerCase().includes(searchTerm) ||
         (entity.role && entity.role.toLowerCase().includes(searchTerm));
-      
+
       // Type filter
       const matchesType = !typeFilter || entity.type === typeFilter;
-      
+
       // Book filter
-      const matchesBook = !bookFilter || 
-        entity.book_references.some(ref => ref.book === bookFilter);
-      
+      const matchesBook =
+        !bookFilter || entity.book_references.some(ref => ref.book === bookFilter);
+
       return matchesSearch && matchesType && matchesBook;
     });
-    
+
     // Reset pagination
     currentPage = 0;
     displayedEntities = [];
-    
+
     sortEntities();
     displayEntities();
     updateResultsInfo();
-    
+
     // Track filtering
     if (window.telemetry) {
       window.telemetry.recordUserAction('entities-filter', 'applied', {
         searchTerm: searchTerm,
         typeFilter: typeFilter,
         bookFilter: bookFilter,
-        resultCount: filteredEntities.length
+        resultCount: filteredEntities.length,
       });
     }
   }
-  
+
   function sortEntities() {
     const sortBy = document.getElementById('sortFilter').value;
-    
+
     filteredEntities.sort((a, b) => {
       switch (sortBy) {
         case 'name':
@@ -242,56 +263,56 @@ permalink: "/entities/"
           return a.name.localeCompare(b.name);
       }
     });
-    
+
     // Reset displayed entities when sorting changes
     displayedEntities = [];
     currentPage = 0;
   }
-  
+
   function displayEntities() {
     const gridEl = document.getElementById('entitiesGrid');
     const loadMoreSection = document.getElementById('loadMoreSection');
     const loadMoreBtn = document.getElementById('loadMoreBtn');
     const loadMoreInfo = document.getElementById('loadMoreInfo');
-    
+
     // Calculate next batch
     const startIndex = currentPage * entitiesPerPage;
     const endIndex = Math.min(startIndex + entitiesPerPage, filteredEntities.length);
     const nextBatch = filteredEntities.slice(startIndex, endIndex);
-    
+
     // Add new entities to display
     displayedEntities = displayedEntities.concat(nextBatch);
-    
+
     // Render all displayed entities
     gridEl.innerHTML = displayedEntities.map(entity => createEntityCard(entity)).join('');
     gridEl.className = `entities-${currentView}`;
-    
+
     // Update load more section
     const hasMore = displayedEntities.length < filteredEntities.length;
     loadMoreSection.style.display = hasMore ? 'block' : 'none';
-    
+
     if (hasMore) {
       const remaining = filteredEntities.length - displayedEntities.length;
       loadMoreBtn.textContent = `Load ${Math.min(entitiesPerPage, remaining)} More`;
       loadMoreInfo.textContent = `Showing ${displayedEntities.length} of ${filteredEntities.length} entities`;
     }
-    
+
     currentPage++;
   }
-  
+
   function createEntityCard(entity) {
     const typeConfig = entityTypeConfig[entity.type] || entityTypeConfig['figure'];
     const entityUrl = `/entities/${entity.id}/`;
-    
+
     const booksList = entity.book_references
       .sort((a, b) => b.count - a.count)
       .slice(0, 3)
       .map(ref => ref.book)
       .join(', ');
-    
-    const moreBooks = entity.book_references.length > 3 ? 
-      ` +${entity.book_references.length - 3} more` : '';
-    
+
+    const moreBooks =
+      entity.book_references.length > 3 ? ` +${entity.book_references.length - 3} more` : '';
+
     return `
       <div class="entity-card" data-entity-id="${entity.id}" data-type="${entity.type}">
         <div class="entity-card-header">
@@ -328,24 +349,24 @@ permalink: "/entities/"
       </div>
     `;
   }
-  
+
   function loadMoreEntities() {
     displayEntities();
-    
+
     if (window.telemetry) {
       window.telemetry.recordUserAction('entities-load-more', currentPage, {
         totalDisplayed: displayedEntities.length,
-        totalFiltered: filteredEntities.length
+        totalFiltered: filteredEntities.length,
       });
     }
   }
-  
+
   function toggleView() {
     currentView = currentView === 'grid' ? 'list' : 'grid';
-    
+
     const viewToggle = document.getElementById('viewToggle');
     const viewIcon = document.getElementById('viewIcon');
-    
+
     if (currentView === 'grid') {
       viewIcon.textContent = '⊞';
       viewToggle.innerHTML = '<span id="viewIcon">⊞</span> Grid View';
@@ -353,24 +374,24 @@ permalink: "/entities/"
       viewIcon.textContent = '☰';
       viewToggle.innerHTML = '<span id="viewIcon">☰</span> List View';
     }
-    
+
     // Re-render with new view
     const gridEl = document.getElementById('entitiesGrid');
     gridEl.className = `entities-${currentView}`;
-    
+
     if (window.telemetry) {
       window.telemetry.recordUserAction('entities-view-toggle', currentView);
     }
   }
-  
+
   function clearEntitySearch() {
     document.getElementById('entitySearch').value = '';
     filterEntities();
   }
-  
+
   function updateResultsInfo() {
     const resultsCountEl = document.getElementById('resultsCount');
-    
+
     if (filteredEntities.length === 0) {
       resultsCountEl.textContent = 'No entities found';
     } else if (filteredEntities.length === allEntities.length) {
@@ -379,7 +400,7 @@ permalink: "/entities/"
       resultsCountEl.textContent = `${filteredEntities.length} of ${allEntities.length} entities`;
     }
   }
-  
+
   function retryLoadEntities() {
     allEntities = [];
     filteredEntities = [];
@@ -387,64 +408,66 @@ permalink: "/entities/"
     currentPage = 0;
     loadAllEntities();
   }
-  
+
   function trackEntityView(entityId, entityName) {
     if (window.telemetry) {
       window.telemetry.recordNavigation('entity-view-from-listing', `/entities/${entityId}/`, {
         entityId: entityId,
         entityName: entityName,
-        fromPage: 'entities-listing'
+        fromPage: 'entities-listing',
       });
     }
   }
-  
+
   // URL parameter handling
   function handleUrlParameters() {
     const urlParams = new URLSearchParams(window.location.search);
-    
+
     // Handle book filter
     const bookParam = urlParams.get('book');
     if (bookParam) {
       const bookFilterSelect = document.getElementById('bookFilter');
       bookFilterSelect.value = bookParam;
     }
-    
+
     // Handle search
     const searchParam = urlParams.get('search');
     if (searchParam) {
       document.getElementById('entitySearch').value = searchParam;
     }
-    
+
     // Handle type filter
     const typeParam = urlParams.get('type');
     if (typeParam) {
       document.getElementById('typeFilter').value = typeParam;
     }
   }
-  
+
   // Initialize
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     loadAllEntities().then(() => {
       handleUrlParameters();
-      if (document.getElementById('bookFilter').value || 
-          document.getElementById('entitySearch').value ||
-          document.getElementById('typeFilter').value) {
+      if (
+        document.getElementById('bookFilter').value ||
+        document.getElementById('entitySearch').value ||
+        document.getElementById('typeFilter').value
+      ) {
         filterEntities();
       }
     });
-    
+
     // Add keyboard shortcuts
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener('keydown', function (e) {
       if (e.key === '/' && e.target.tagName !== 'INPUT') {
         e.preventDefault();
         document.getElementById('entitySearch').focus();
       }
     });
-    
+
     // Track page view
     if (window.telemetry) {
       window.telemetry.recordPageView(window.location.pathname, 'Entities Listing', {
-        fromPage: document.referrer ? 'external' : 'internal'
+        fromPage: document.referrer ? 'external' : 'internal',
       });
     }
   });

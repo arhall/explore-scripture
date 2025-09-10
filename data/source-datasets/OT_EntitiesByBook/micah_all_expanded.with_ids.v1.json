@@ -31,11 +31,7 @@
     },
     {
       "section": "Cities & Capitals Under Judgment",
-      "entries": [
-        "Samaria (ruin)",
-        "Jerusalem/Zion (corrupt foundations)",
-        "Gath (‘Tell it not’)"
-      ]
+      "entries": ["Samaria (ruin)", "Jerusalem/Zion (corrupt foundations)", "Gath (‘Tell it not’)"]
     },
     {
       "section": "Philistine & Shephelah Town Wordplays",
@@ -61,7 +57,7 @@
       "type": "person",
       "references": ["Micah 1:1"],
       "category": "prophet",
-      "relations": {"hometown": "Moresheth-Gath"},
+      "relations": { "hometown": "Moresheth-Gath" },
       "blurb": "Rural prophet from Moresheth-Gath, speaking bluntly against urban corruption in Samaria and Jerusalem."
     },
     {
@@ -271,8 +267,7 @@
       "references": ["Micah 1:15–16"],
       "category": "city-wordplay",
       "blurb": "Refuge of David now becomes repository of Judah’s glory—exile imagery revived."
-    }
-    ,
+    },
     {
       "id": "g.heads-of-jacob-rulers-of-israel--f3c91a7e",
       "name": "Heads of Jacob / rulers of Israel",

@@ -15,27 +15,27 @@ class EntityRelationshipVisualizer {
     this.relationships = [];
     this.nodes = [];
     this.links = [];
-    
+
     // Color scheme for different relationship types
     this.relationshipColors = {
-      'family': '#e74c3c',
-      'spouse': '#e91e63',
-      'parent': '#9c27b0',
-      'child': '#673ab7',
-      'sibling': '#3f51b5',
-      'ancestor': '#2196f3',
-      'descendant': '#03a9f4',
-      'friend': '#00bcd4',
-      'enemy': '#ff5722',
-      'ruler': '#ff9800',
-      'subject': '#ffc107',
-      'mentor': '#4caf50',
-      'student': '#8bc34a',
-      'colleague': '#cddc39',
-      'associate': '#607d8b',
-      'default': '#9e9e9e'
+      family: '#e74c3c',
+      spouse: '#e91e63',
+      parent: '#9c27b0',
+      child: '#673ab7',
+      sibling: '#3f51b5',
+      ancestor: '#2196f3',
+      descendant: '#03a9f4',
+      friend: '#00bcd4',
+      enemy: '#ff5722',
+      ruler: '#ff9800',
+      subject: '#ffc107',
+      mentor: '#4caf50',
+      student: '#8bc34a',
+      colleague: '#cddc39',
+      associate: '#607d8b',
+      default: '#9e9e9e',
     };
-    
+
     this.init();
   }
 
@@ -78,15 +78,15 @@ class EntityRelationshipVisualizer {
 
     container.appendChild(vizContainer);
     this.svg = d3.select(container).select('.relationship-svg');
-    
+
     // Add zoom and pan
-    const zoom = d3.zoom()
+    const zoom = d3
+      .zoom()
       .scaleExtent([0.5, 3])
-      .on('zoom', (event) => {
-        this.svg.select('.graph-container')
-          .attr('transform', event.transform);
+      .on('zoom', event => {
+        this.svg.select('.graph-container').attr('transform', event.transform);
       });
-    
+
     this.svg.call(zoom);
 
     // Create main graph container
@@ -346,7 +346,7 @@ class EntityRelationshipVisualizer {
   loadRelationships(entityData) {
     this.currentEntity = entityData;
     this.relationships = entityData.relations || {};
-    
+
     if (Object.keys(this.relationships).length === 0) {
       this.showEmptyState();
       return;
@@ -360,7 +360,7 @@ class EntityRelationshipVisualizer {
   buildNetworkData() {
     this.nodes = [];
     this.links = [];
-    
+
     // Central node (current entity)
     this.nodes.push({
       id: this.currentEntity.id,
@@ -368,20 +368,20 @@ class EntityRelationshipVisualizer {
       type: this.currentEntity.type,
       central: true,
       x: this.width / 2,
-      y: this.height / 2
+      y: this.height / 2,
     });
 
     // Add related entities and links
     Object.entries(this.relationships).forEach(([relationType, entities]) => {
       entities.forEach(entityName => {
         const nodeId = `${relationType}-${entityName}`;
-        
+
         // Add entity node
         this.nodes.push({
           id: nodeId,
           name: entityName,
           type: 'related',
-          relationType: relationType
+          relationType: relationType,
         });
 
         // Add relationship link
@@ -389,7 +389,7 @@ class EntityRelationshipVisualizer {
           source: this.currentEntity.id,
           target: nodeId,
           type: relationType,
-          color: this.relationshipColors[relationType] || this.relationshipColors.default
+          color: this.relationshipColors[relationType] || this.relationshipColors.default,
         });
       });
     });
@@ -400,14 +400,22 @@ class EntityRelationshipVisualizer {
     container.selectAll('*').remove();
 
     // Create force simulation
-    this.simulation = d3.forceSimulation(this.nodes)
-      .force('link', d3.forceLink(this.links).id(d => d.id).distance(80))
+    this.simulation = d3
+      .forceSimulation(this.nodes)
+      .force(
+        'link',
+        d3
+          .forceLink(this.links)
+          .id(d => d.id)
+          .distance(80)
+      )
       .force('charge', d3.forceManyBody().strength(-300))
       .force('center', d3.forceCenter(this.width / 2, this.height / 2))
       .force('collision', d3.forceCollide().radius(25));
 
     // Render links
-    const links = container.append('g')
+    const links = container
+      .append('g')
       .attr('class', 'links')
       .selectAll('line')
       .data(this.links)
@@ -417,7 +425,8 @@ class EntityRelationshipVisualizer {
       .style('stroke', d => d.color);
 
     // Render link labels
-    const linkLabels = container.append('g')
+    const linkLabels = container
+      .append('g')
       .attr('class', 'link-labels')
       .selectAll('text')
       .data(this.links)
@@ -428,35 +437,42 @@ class EntityRelationshipVisualizer {
       .style('opacity', 0);
 
     // Render nodes
-    const nodes = container.append('g')
+    const nodes = container
+      .append('g')
       .attr('class', 'nodes')
       .selectAll('circle')
       .data(this.nodes)
       .enter()
       .append('circle')
       .attr('class', d => `node ${d.central ? 'central' : ''}`)
-      .attr('r', d => d.central ? 20 : 15)
-      .style('fill', d => d.central ? 
-        this.relationshipColors.default : 
-        this.relationshipColors[d.relationType] || this.relationshipColors.default)
-      .call(d3.drag()
-        .on('start', (event, d) => this.dragStart(event, d))
-        .on('drag', (event, d) => this.dragging(event, d))
-        .on('end', (event, d) => this.dragEnd(event, d)))
+      .attr('r', d => (d.central ? 20 : 15))
+      .style('fill', d =>
+        d.central
+          ? this.relationshipColors.default
+          : this.relationshipColors[d.relationType] || this.relationshipColors.default
+      )
+      .call(
+        d3
+          .drag()
+          .on('start', (event, d) => this.dragStart(event, d))
+          .on('drag', (event, d) => this.dragging(event, d))
+          .on('end', (event, d) => this.dragEnd(event, d))
+      )
       .on('click', (event, d) => this.selectNode(d))
       .on('mouseenter', () => linkLabels.style('opacity', 0.8))
       .on('mouseleave', () => linkLabels.style('opacity', 0));
 
     // Render node labels
-    const nodeLabels = container.append('g')
+    const nodeLabels = container
+      .append('g')
       .attr('class', 'node-labels')
       .selectAll('text')
       .data(this.nodes)
       .enter()
       .append('text')
       .attr('class', 'node-label')
-      .attr('dy', d => d.central ? 35 : 30)
-      .style('font-weight', d => d.central ? '600' : '500')
+      .attr('dy', d => (d.central ? 35 : 30))
+      .style('font-weight', d => (d.central ? '600' : '500'))
       .text(d => this.truncateText(d.name, 15));
 
     // Update positions on simulation tick
@@ -467,13 +483,9 @@ class EntityRelationshipVisualizer {
         .attr('x2', d => d.target.x)
         .attr('y2', d => d.target.y);
 
-      nodes
-        .attr('cx', d => d.x)
-        .attr('cy', d => d.y);
+      nodes.attr('cx', d => d.x).attr('cy', d => d.y);
 
-      nodeLabels
-        .attr('x', d => d.x)
-        .attr('y', d => d.y);
+      nodeLabels.attr('x', d => d.x).attr('y', d => d.y);
 
       linkLabels
         .attr('x', d => (d.source.x + d.target.x) / 2)
@@ -486,12 +498,16 @@ class EntityRelationshipVisualizer {
     if (!legendContainer) return;
 
     const relationTypes = Object.keys(this.relationships);
-    const legendHTML = relationTypes.map(type => `
+    const legendHTML = relationTypes
+      .map(
+        type => `
       <div class="legend-item">
         <div class="legend-color" style="background-color: ${this.relationshipColors[type] || this.relationshipColors.default}"></div>
         <span class="legend-label">${type.replace(/_/g, ' ')}</span>
       </div>
-    `).join('');
+    `
+      )
+      .join('');
 
     legendContainer.innerHTML = legendHTML;
   }
@@ -499,7 +515,10 @@ class EntityRelationshipVisualizer {
   selectNode(node) {
     // Update visual selection
     this.svg.selectAll('.node').classed('selected', false);
-    this.svg.selectAll('.node').filter(d => d.id === node.id).classed('selected', true);
+    this.svg
+      .selectAll('.node')
+      .filter(d => d.id === node.id)
+      .classed('selected', true);
 
     // Update info panel
     const infoPanel = document.getElementById('selectedInfo');
@@ -541,10 +560,7 @@ class EntityRelationshipVisualizer {
 
   resetZoom() {
     const zoom = d3.zoom().scaleExtent([0.5, 3]);
-    this.svg.transition().duration(750).call(
-      zoom.transform,
-      d3.zoomIdentity
-    );
+    this.svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity);
   }
 
   expandNetwork() {

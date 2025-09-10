@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 ---
+
 <div class="header">
   <h1>{{ category.name }}</h1>
   <span class="badge">{{ category.testament }}</span>
@@ -8,45 +9,39 @@ layout: base.njk
 
 <div class="chapter-summary">
   <p class="summary-text">{{ category.description }}</p>
-  
+
   {% if category.themes %}
   <div class="meta">
-    <strong>Key Themes:</strong> 
+    <strong>Key Themes:</strong>
     {% for theme in category.themes %}
-      <span class="badge" style="margin: 0.2rem;">{{ theme }}</span>
+    <span class="badge" style="margin: 0.2rem">{{ theme }}</span>
     {% endfor %}
   </div>
-  {% endif %}
-  
-  {% if category.keyFigures %}
+  {% endif %} {% if category.keyFigures %}
+  <div class="meta"><strong>Key Figures:</strong> {{ category.keyFigures | join(", ") }}</div>
+  {% endif %} {% if category.timeSpan %}
   <div class="meta">
-    <strong>Key Figures:</strong> {{ category.keyFigures | join(", ") }}
-  </div>
-  {% endif %}
-  
-  {% if category.timeSpan %}
-  <div class="meta">
-    <strong>Time Period:</strong> {{ category.timeSpan }} &nbsp;•&nbsp; 
-    <strong>Books:</strong> {{ category.bookCount }}
+    <strong>Time Period:</strong> {{ category.timeSpan }} &nbsp;•&nbsp; <strong>Books:</strong> {{
+    category.bookCount }}
   </div>
   {% endif %}
 </div>
 
 <h2>Books in {{ category.name }}</h2>
 <div class="grid">
-{% for b in books %}
-  {% if b.category == category.name %}
+  {% for b in books %} {% if b.category == category.name %}
   <a class="card" href="/books/{{ b.slug }}/">
     <h3>{{ b.name }}</h3>
     <p><strong>Author:</strong> {{ b.author }}</p>
     <p><strong>Language:</strong> {{ b.language }}</p>
     {% if b.chapterSummaries and (b.chapterSummaries | length) > 0 %}
-      <p style="font-size: 0.85rem; color: var(--muted);">{{ b.chapterSummaries | length }} chapters with summaries</p>
+    <p style="font-size: 0.85rem; color: var(--muted)">
+      {{ b.chapterSummaries | length }} chapters with summaries
+    </p>
     {% endif %}
     <span class="badge">{{ b.testament }}</span>
   </a>
-  {% endif %}
-{% endfor %}
+  {% endif %} {% endfor %}
 </div>
 
 <p class="back-link">

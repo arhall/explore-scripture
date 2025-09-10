@@ -7,21 +7,14 @@ class GospelThreadNavigator {
   constructor() {
     this.sections = [
       'core-themes',
-      'progressive-revelation', 
+      'progressive-revelation',
       'types-shadows',
       'gospel-books',
-      'gospel-heart'
+      'gospel-heart',
     ];
-    
-    this.themes = [
-      'creation',
-      'fall',
-      'promise',
-      'sacrifice',
-      'kingship',
-      'newCovenant'
-    ];
-    
+
+    this.themes = ['creation', 'fall', 'promise', 'sacrifice', 'kingship', 'newCovenant'];
+
     this.init();
   }
 
@@ -34,31 +27,33 @@ class GospelThreadNavigator {
 
   setupSmoothScrolling() {
     // Smooth scroll for all navigation and anchor links
-    const allLinks = document.querySelectorAll('.section-link, .anchor-link, .theme-anchor-link, .timeline-anchor-link');
-    
+    const allLinks = document.querySelectorAll(
+      '.section-link, .anchor-link, .theme-anchor-link, .timeline-anchor-link'
+    );
+
     allLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
+      link.addEventListener('click', e => {
         e.preventDefault();
         const targetId = link.getAttribute('href').substring(1);
         this.scrollToSection(targetId);
-        
+
         // Update URL without triggering scroll
         history.pushState(null, null, `#${targetId}`);
-        
+
         // Add share functionality
         this.addShareButton(link, targetId);
-        
+
         // Track navigation
         if (window.telemetry) {
           window.telemetry.recordNavigation('gospel-thread-section', targetId, {
             source: this.getLinkSource(link),
-            page: 'gospel-thread'
+            page: 'gospel-thread',
           });
         }
       });
     });
   }
-  
+
   getLinkSource(link) {
     if (link.classList.contains('section-link')) return 'section-navigation';
     if (link.classList.contains('anchor-link')) return 'section-anchor';
@@ -66,31 +61,31 @@ class GospelThreadNavigator {
     if (link.classList.contains('timeline-anchor-link')) return 'timeline-anchor';
     return 'unknown';
   }
-  
+
   addShareButton(linkElement, targetId) {
     // Remove existing share buttons
     document.querySelectorAll('.section-share-btn').forEach(btn => btn.remove());
-    
+
     // Create share button
     const shareBtn = document.createElement('button');
     shareBtn.className = 'section-share-btn';
     shareBtn.innerHTML = '📋';
     shareBtn.title = 'Copy link to section';
     shareBtn.setAttribute('aria-label', 'Copy section link');
-    
+
     // Position near the clicked link
     const rect = linkElement.getBoundingClientRect();
     shareBtn.style.position = 'fixed';
     shareBtn.style.top = `${rect.top - 40}px`;
     shareBtn.style.left = `${rect.left}px`;
     shareBtn.style.zIndex = '10000';
-    
+
     document.body.appendChild(shareBtn);
-    
+
     // Copy link functionality
     shareBtn.addEventListener('click', () => {
       const fullUrl = `${window.location.origin}/gospel-thread/#${targetId}`;
-      
+
       if (navigator.clipboard) {
         navigator.clipboard.writeText(fullUrl).then(() => {
           this.showCopyFeedback(shareBtn);
@@ -105,26 +100,26 @@ class GospelThreadNavigator {
         document.body.removeChild(textArea);
         this.showCopyFeedback(shareBtn);
       }
-      
+
       // Track sharing
       if (window.telemetry) {
         window.telemetry.recordUserAction('gospel-thread-share', targetId, {
-          method: 'copy-link'
+          method: 'copy-link',
         });
       }
     });
-    
+
     // Auto-remove after 5 seconds
     setTimeout(() => {
       shareBtn.remove();
     }, 5000);
   }
-  
+
   showCopyFeedback(button) {
     const originalText = button.innerHTML;
     button.innerHTML = '✅';
     button.disabled = true;
-    
+
     setTimeout(() => {
       if (document.body.contains(button)) {
         button.innerHTML = originalText;
@@ -139,10 +134,10 @@ class GospelThreadNavigator {
       console.warn('IntersectionObserver not supported, skipping active navigation');
       return;
     }
-    
+
     // eslint-disable-next-line no-undef
     const observer = new IntersectionObserver(
-      (entries) => {
+      entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             this.updateActiveNavigation(entry.target.id);
@@ -151,7 +146,7 @@ class GospelThreadNavigator {
       },
       {
         rootMargin: '-20% 0px -70% 0px',
-        threshold: 0.1
+        threshold: 0.1,
       }
     );
 
@@ -176,10 +171,9 @@ class GospelThreadNavigator {
     const sectionLinks = document.querySelectorAll('.section-link');
     sectionLinks.forEach(link => {
       const targetId = link.getAttribute('href').substring(1);
-      
+
       // Check if this section link should be active
-      if (targetId === activeId || 
-          (activeId.startsWith('theme-') && targetId === 'core-themes')) {
+      if (targetId === activeId || (activeId.startsWith('theme-') && targetId === 'core-themes')) {
         link.classList.add('active');
       } else {
         link.classList.remove('active');
@@ -189,7 +183,7 @@ class GospelThreadNavigator {
 
   scrollToSection(targetId) {
     const targetElement = document.getElementById(targetId);
-    
+
     if (!targetElement) {
       console.warn(`Gospel Thread Navigator: Target element ${targetId} not found`);
       return;
@@ -202,7 +196,7 @@ class GospelThreadNavigator {
 
     window.scrollTo({
       top: offsetPosition,
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
 
     // Add visual feedback
@@ -218,7 +212,7 @@ class GospelThreadNavigator {
   highlightTarget(element) {
     // Add temporary highlight class
     element.classList.add('scroll-target-highlight');
-    
+
     setTimeout(() => {
       element.classList.remove('scroll-target-highlight');
     }, 2000);
@@ -229,7 +223,7 @@ class GospelThreadNavigator {
     const hash = window.location.hash;
     if (hash) {
       const targetId = hash.substring(1);
-      
+
       // Delay scroll to ensure page is fully loaded
       setTimeout(() => {
         this.scrollToSection(targetId);
@@ -244,7 +238,7 @@ class GospelThreadNavigator {
     backToTop.innerHTML = '↑';
     backToTop.setAttribute('aria-label', 'Back to top');
     backToTop.style.display = 'none';
-    
+
     document.body.appendChild(backToTop);
 
     // Show/hide based on scroll position
@@ -260,16 +254,16 @@ class GospelThreadNavigator {
     backToTop.addEventListener('click', () => {
       window.scrollTo({
         top: 0,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
-      
+
       // Update URL
       history.pushState(null, null, window.location.pathname);
-      
+
       // Track action
       if (window.telemetry) {
         window.telemetry.recordUserAction('gospel-thread-back-to-top', 'click', {
-          scrollPosition: window.scrollY
+          scrollPosition: window.scrollY,
         });
       }
     });
@@ -391,7 +385,7 @@ function addGospelThreadStyles() {
       }
     }
   `;
-  
+
   document.head.appendChild(styles);
 }
 

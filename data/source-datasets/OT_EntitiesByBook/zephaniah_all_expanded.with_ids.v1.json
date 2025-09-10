@@ -43,10 +43,7 @@
     },
     {
       "section": "Divine",
-      "entries": [
-        "YHWH (the LORD)",
-        "King of Israel, the LORD in your midst"
-      ]
+      "entries": ["YHWH (the LORD)", "King of Israel, the LORD in your midst"]
     },
     {
       "section": "Figures (Personifications & Literary)",
@@ -130,9 +127,7 @@
       "id": "p.zephaniah-son-of-cushi--ab737f2e",
       "name": "Zephaniah son of Cushi",
       "type": "person",
-      "references": [
-        "Zeph 1:1"
-      ],
+      "references": ["Zeph 1:1"],
       "category": "prophet",
       "relations": {
         "father": "Cushi",
@@ -147,10 +142,7 @@
       "id": "p.josiah-king-of-judah-context--c4304447",
       "name": "Josiah king of Judah (context)",
       "type": "person",
-      "references": [
-        "Zeph 1:1",
-        "2 Kgs 22–23"
-      ],
+      "references": ["Zeph 1:1", "2 Kgs 22–23"],
       "category": "king",
       "blurb": "Reform-era monarch providing historical frame. Zephaniah’s indictments may precede or accompany Josiah’s centralizing reforms."
     },
@@ -158,9 +150,7 @@
       "id": "p.priests--17ce1c8d",
       "name": "Priests",
       "type": "person",
-      "references": [
-        "Zeph 1:4"
-      ],
+      "references": ["Zeph 1:4"],
       "category": "cultic-staff",
       "blurb": "Priestly establishment implicated in syncretism and compromise."
     },
@@ -168,9 +158,7 @@
       "id": "p.officials--d601e9ad",
       "name": "Officials",
       "type": "person",
-      "references": [
-        "Zeph 1:8"
-      ],
+      "references": ["Zeph 1:8"],
       "category": "administration",
       "blurb": "Royal officials whose conduct reflects cultural assimilation (foreign apparel) and injustice."
     },
@@ -178,9 +166,7 @@
       "id": "p.judges--43b9f1c3",
       "name": "Judges",
       "type": "person",
-      "references": [
-        "Zeph 3:3"
-      ],
+      "references": ["Zeph 3:3"],
       "category": "judicial",
       "blurb": "Predatory officials—wolves at evening who leave nothing for the morning."
     },
@@ -188,9 +174,7 @@
       "id": "p.prophets-jerusalem--f9927e09",
       "name": "Prophets (Jerusalem)",
       "type": "person",
-      "references": [
-        "Zeph 3:4"
-      ],
+      "references": ["Zeph 3:4"],
       "category": "religious-leaders",
       "blurb": "Reckless and treacherous; Zephaniah indicts prophetic malpractice alongside priests."
     },
@@ -198,9 +182,7 @@
       "id": "p.merchants-traders--e8cff65b",
       "name": "Merchants/Traders",
       "type": "person",
-      "references": [
-        "Zeph 1:11"
-      ],
+      "references": ["Zeph 1:11"],
       "category": "economic",
       "blurb": "Maktesh market class lamenting cutoffs; economy cannot shield from the Day."
     },
@@ -208,9 +190,7 @@
       "id": "p.householders-on-rooftops--4eb5d5ab",
       "name": "Householders on rooftops",
       "type": "person",
-      "references": [
-        "Zeph 1:5"
-      ],
+      "references": ["Zeph 1:5"],
       "category": "lay-worshipers",
       "blurb": "Practitioners of astral worship; a snapshot of syncretistic piety."
     },
@@ -218,9 +198,7 @@
       "id": "p.gate-watch-personnel--d2fbeb0b",
       "name": "Gate/Watch personnel",
       "type": "person",
-      "references": [
-        "Zeph 1:10"
-      ],
+      "references": ["Zeph 1:10"],
       "category": "civic",
       "blurb": "Civic guardians associated with city sectors named in judgment oracles."
     },
@@ -228,10 +206,7 @@
       "id": "g.judah--a34b84cd",
       "name": "Judah",
       "type": "group",
-      "references": [
-        "Zeph 1:4",
-        "Zeph 2:1-3"
-      ],
+      "references": ["Zeph 1:4", "Zeph 2:1-3"],
       "category": "people-of-god",
       "blurb": "Covenant people called to seek humility before the Day; subject to purifying judgment."
     },
@@ -239,10 +214,7 @@
       "id": "g.jerusalem--3453dc1c",
       "name": "Jerusalem",
       "type": "group",
-      "references": [
-        "Zeph 1:4-13",
-        "Zeph 3:1-7"
-      ],
+      "references": ["Zeph 1:4-13", "Zeph 3:1-7"],
       "category": "city-people",
       "blurb": "City of corruption and eventual renewal; site of leadership failure and divine rejoicing."
     },
@@ -250,9 +222,7 @@
       "id": "g.remnant-humble-and-lowly--6cf43d00",
       "name": "Remnant (humble and lowly)",
       "type": "group",
-      "references": [
-        "Zeph 3:12-13"
-      ],
+      "references": ["Zeph 3:12-13"],
       "category": "remnant",
       "blurb": "A purified community characterized by humility and honesty; they find refuge in the LORD."
     },
@@ -260,10 +230,7 @@
       "id": "g.nations--ae173a5a",
       "name": "Nations",
       "type": "group",
-      "references": [
-        "Zeph 2:11",
-        "Zeph 3:8-9"
-      ],
+      "references": ["Zeph 2:11", "Zeph 3:8-9"],
       "category": "international",
       "blurb": "Scope of the Day extends to all peoples; end-vision is universal worship with purified lips."
     },
@@ -271,9 +238,7 @@
       "id": "g.philistines--4b7e09f8",
       "name": "Philistines",
       "type": "group",
-      "references": [
-        "Zeph 2:4-7"
-      ],
+      "references": ["Zeph 2:4-7"],
       "category": "nation",
       "blurb": "Coastal peoples judged; their land becomes pasture for the remnant."
     },
@@ -281,9 +246,7 @@
       "id": "g.gaza--43b60de5",
       "name": "Gaza",
       "type": "group",
-      "references": [
-        "Zeph 2:4"
-      ],
+      "references": ["Zeph 2:4"],
       "category": "city",
       "blurb": "Philistine city facing abandonment in the Day."
     },
@@ -291,10 +254,7 @@
       "id": "g.ashkelon--990622d6",
       "name": "Ashkelon",
       "type": "group",
-      "references": [
-        "Zeph 2:4",
-        "Zeph 2:7"
-      ],
+      "references": ["Zeph 2:4", "Zeph 2:7"],
       "category": "city",
       "blurb": "Destined for desolation and later sheepfolds for the remnant."
     },
@@ -302,9 +262,7 @@
       "id": "g.ashdod--cc408eea",
       "name": "Ashdod",
       "type": "group",
-      "references": [
-        "Zeph 2:4"
-      ],
+      "references": ["Zeph 2:4"],
       "category": "city",
       "blurb": "Philistine city struck at noon—symbol of suddenness."
     },
@@ -312,9 +270,7 @@
       "id": "g.ekron--a4cdc849",
       "name": "Ekron",
       "type": "group",
-      "references": [
-        "Zeph 2:4"
-      ],
+      "references": ["Zeph 2:4"],
       "category": "city",
       "blurb": "Uprooted in the Day; completes the four-city Philistine list."
     },
@@ -322,9 +278,7 @@
       "id": "g.moab--406c6e00",
       "name": "Moab",
       "type": "group",
-      "references": [
-        "Zeph 2:8-10"
-      ],
+      "references": ["Zeph 2:8-10"],
       "category": "nation",
       "blurb": "Judged for pride and insults against Judah; becomes like Sodom’s wasteland."
     },
@@ -332,9 +286,7 @@
       "id": "g.ammon--885931a0",
       "name": "Ammon",
       "type": "group",
-      "references": [
-        "Zeph 2:8-10"
-      ],
+      "references": ["Zeph 2:8-10"],
       "category": "nation",
       "blurb": "Judged alongside Moab; incur reproach and become a desolation."
     },
@@ -342,22 +294,16 @@
       "id": "g.cush-ethiopia--1e3037d7",
       "name": "Cush (Ethiopia)",
       "type": "group",
-      "references": [
-        "Zeph 2:12"
-      ],
+      "references": ["Zeph 2:12"],
       "category": "nation",
-      "aka": [
-        "Cush"
-      ],
+      "aka": ["Cush"],
       "blurb": "Brief oracle asserting global reach: even distant Cush will be slain by the LORD’s sword."
     },
     {
       "id": "g.assyria--32bf2014",
       "name": "Assyria",
       "type": "group",
-      "references": [
-        "Zeph 2:13-15"
-      ],
+      "references": ["Zeph 2:13-15"],
       "category": "empire",
       "blurb": "Once-dominant power humbled; Nineveh becomes a haunt for animals."
     },
@@ -365,9 +311,7 @@
       "id": "g.nineveh--843ac71a",
       "name": "Nineveh",
       "type": "group",
-      "references": [
-        "Zeph 2:13-15"
-      ],
+      "references": ["Zeph 2:13-15"],
       "category": "capital-city",
       "blurb": "Boasting city reduced to ruins; animals lodge in her thresholds."
     },
@@ -375,9 +319,7 @@
       "id": "g.proud-arrogant--13e8b88d",
       "name": "Proud/Arrogant",
       "type": "group",
-      "references": [
-        "Zeph 3:11-12"
-      ],
+      "references": ["Zeph 3:11-12"],
       "category": "ethical-collective",
       "blurb": "The haughty removed from Zion; pride is antithetical to remnant identity."
     },
@@ -385,10 +327,7 @@
       "id": "g.humble-meek--30c1f2d1",
       "name": "Humble/Meek",
       "type": "group",
-      "references": [
-        "Zeph 2:3",
-        "Zeph 3:12-13"
-      ],
+      "references": ["Zeph 2:3", "Zeph 3:12-13"],
       "category": "ethical-collective",
       "blurb": "Those who seek the LORD and practice righteousness; core of the renewed community."
     },
@@ -396,9 +335,7 @@
       "id": "g.peoples-with-purified-lips--12bb2a3e",
       "name": "Peoples with purified lips",
       "type": "group",
-      "references": [
-        "Zeph 3:9"
-      ],
+      "references": ["Zeph 3:9"],
       "category": "worshiping-community",
       "blurb": "Nations transformed to call upon the LORD with one accord—Babel reversed."
     },
@@ -406,24 +343,16 @@
       "id": "d.yhwh-the-lord--68545cab",
       "name": "YHWH (the LORD)",
       "type": "divine",
-      "references": [
-        "Zeph 1:7",
-        "Zeph 1:12",
-        "Zeph 3:15-17"
-      ],
+      "references": ["Zeph 1:7", "Zeph 1:12", "Zeph 3:15-17"],
       "category": "judge-and-savior",
-      "aka": [
-        "the LORD"
-      ],
+      "aka": ["the LORD"],
       "blurb": "Divine King who searches Jerusalem with lamps, hosts a sacrificial feast of judgment, removes judgments, and rejoices over Zion with singing."
     },
     {
       "id": "d.king-of-israel-the-lord-in-your-midst--b2eb94d9",
       "name": "King of Israel, the LORD in your midst",
       "type": "divine",
-      "references": [
-        "Zeph 3:15-17"
-      ],
+      "references": ["Zeph 3:15-17"],
       "category": "royal-theophany",
       "blurb": "Title highlighting immanent kingship: God present as warrior-savior who quiets with love and exults over Zion in song."
     },
@@ -431,9 +360,7 @@
       "id": "f.superscription--0ed1f723",
       "name": "Superscription",
       "type": "figure",
-      "references": [
-        "Zeph 1:1"
-      ],
+      "references": ["Zeph 1:1"],
       "category": "book-frame",
       "blurb": "Names the prophet, genealogy, and Josian context—signals authority and possible royal descent."
     },
@@ -441,9 +368,7 @@
       "id": "f.universal-judgment-oracle--eac85432",
       "name": "Universal judgment oracle",
       "type": "figure",
-      "references": [
-        "Zeph 1:2-3"
-      ],
+      "references": ["Zeph 1:2-3"],
       "category": "scope",
       "blurb": "Sweeping decree against humans, beasts, birds, and fish—creation-scale purgation reminiscent of flood language."
     },
@@ -451,9 +376,7 @@
       "id": "f.jerusalems-woe-indictment--9ff5b50a",
       "name": "Jerusalem’s woe/indictment",
       "type": "figure",
-      "references": [
-        "Zeph 3:1-7"
-      ],
+      "references": ["Zeph 3:1-7"],
       "category": "woe",
       "blurb": "Woe to the rebellious city: officials, judges, prophets, and priests corrupt; the just LORD within remains faithful."
     },
@@ -461,9 +384,7 @@
       "id": "f.call-to-seek-humility--58527dd2",
       "name": "Call to seek humility",
       "type": "figure",
-      "references": [
-        "Zeph 2:1-3"
-      ],
+      "references": ["Zeph 2:1-3"],
       "category": "exhortation",
       "blurb": "Summons to gather, seek the LORD, righteousness, and humility—‘perhaps you may be hidden’ in the Day."
     },
@@ -471,11 +392,7 @@
       "id": "f.day-of-the-lord--1380fa46",
       "name": "Day of the LORD",
       "type": "figure",
-      "references": [
-        "Zeph 1:7",
-        "Zeph 1:14-18",
-        "Zeph 3:8"
-      ],
+      "references": ["Zeph 1:7", "Zeph 1:14-18", "Zeph 3:8"],
       "category": "central-theme",
       "blurb": "Near and comprehensive judgment that purifies a people for universal worship."
     },
@@ -483,9 +400,7 @@
       "id": "f.near-at-hand-day--ccd237d3",
       "name": "Near/at hand Day",
       "type": "figure",
-      "references": [
-        "Zeph 1:14"
-      ],
+      "references": ["Zeph 1:14"],
       "category": "temporal-marker",
       "blurb": "Immediacy rhetoric pressing repentance and watchfulness."
     },
@@ -493,9 +408,7 @@
       "id": "f.search-with-lamps--52981c6e",
       "name": "Search with lamps",
       "type": "figure",
-      "references": [
-        "Zeph 1:12"
-      ],
+      "references": ["Zeph 1:12"],
       "category": "investigative-judgment",
       "blurb": "Forensic image of God inspecting complacent hearts in Jerusalem."
     },
@@ -503,9 +416,7 @@
       "id": "f.bitter-day--6a533c69",
       "name": "Bitter Day",
       "type": "figure",
-      "references": [
-        "Zeph 1:14"
-      ],
+      "references": ["Zeph 1:14"],
       "category": "affective-tone",
       "blurb": "A day bitter even for the warrior; dread saturates the horizon."
     },
@@ -513,9 +424,7 @@
       "id": "f.day-of-wrath--6527f581",
       "name": "Day of wrath",
       "type": "figure",
-      "references": [
-        "Zeph 1:15"
-      ],
+      "references": ["Zeph 1:15"],
       "category": "wrath",
       "blurb": "Judicial anger applied to systemic evil; core Day epithet."
     },
@@ -523,9 +432,7 @@
       "id": "f.distress-&-anguish--16c3b706",
       "name": "Distress & anguish",
       "type": "figure",
-      "references": [
-        "Zeph 1:15"
-      ],
+      "references": ["Zeph 1:15"],
       "category": "consequence",
       "blurb": "Human experience under the Day; psychological and social breakdown."
     },
@@ -533,9 +440,7 @@
       "id": "f.trumpet-&-battle-cry--8e013d8f",
       "name": "Trumpet & battle cry",
       "type": "figure",
-      "references": [
-        "Zeph 1:16"
-      ],
+      "references": ["Zeph 1:16"],
       "category": "war-signal",
       "blurb": "Siege imagery framing the Day as a city’s fall before the Divine King."
     },
@@ -543,9 +448,7 @@
       "id": "f.darkness-&-gloom--4d8ab2aa",
       "name": "Darkness & gloom",
       "type": "figure",
-      "references": [
-        "Zeph 1:15"
-      ],
+      "references": ["Zeph 1:15"],
       "category": "cosmic-sign",
       "blurb": "Cosmic portents echoing Day language across the prophets."
     },
@@ -553,9 +456,7 @@
       "id": "f.clouds-&-thick-darkness--03d58a53",
       "name": "Clouds & thick darkness",
       "type": "figure",
-      "references": [
-        "Zeph 1:15"
-      ],
+      "references": ["Zeph 1:15"],
       "category": "cosmic-sign",
       "blurb": "Sinai-theophany textures transposed into judgment scene."
     },
@@ -563,9 +464,7 @@
       "id": "f.daughter-zion--62f017f8",
       "name": "Daughter Zion",
       "type": "figure",
-      "references": [
-        "Zeph 3:14-17"
-      ],
+      "references": ["Zeph 3:14-17"],
       "category": "personified-city",
       "blurb": "Summoned to sing; fear removed as God dwells within."
     },
@@ -573,9 +472,7 @@
       "id": "f.daughter-jerusalem--4561ad0d",
       "name": "Daughter Jerusalem",
       "type": "figure",
-      "references": [
-        "Zeph 3:14"
-      ],
+      "references": ["Zeph 3:14"],
       "category": "personified-city",
       "blurb": "Parallel personification emphasizing communal joy."
     },
@@ -583,9 +480,7 @@
       "id": "f.pride-of-moab-ammon--74848bcd",
       "name": "Pride of Moab/Ammon",
       "type": "figure",
-      "references": [
-        "Zeph 2:8-10"
-      ],
+      "references": ["Zeph 2:8-10"],
       "category": "taunt",
       "blurb": "Boast and insult against Judah answered by desolation and reversal."
     },
@@ -593,9 +488,7 @@
       "id": "f.boasting-city-nineveh--d9566985",
       "name": "Boasting city (Nineveh)",
       "type": "figure",
-      "references": [
-        "Zeph 2:15"
-      ],
+      "references": ["Zeph 2:15"],
       "category": "taunt",
       "blurb": "City that says ‘I am, and there is none besides me’—hubris meets desertion."
     },
@@ -603,9 +496,7 @@
       "id": "f.purified-speech-lips--f3d8014d",
       "name": "Purified speech/lips",
       "type": "figure",
-      "references": [
-        "Zeph 3:9"
-      ],
+      "references": ["Zeph 3:9"],
       "category": "restoration",
       "blurb": "Nations given a common tongue of worship—Babel reversed into doxology."
     },
@@ -613,9 +504,7 @@
       "id": "f.shame-removed--399b57dd",
       "name": "Shame removed",
       "type": "figure",
-      "references": [
-        "Zeph 3:11"
-      ],
+      "references": ["Zeph 3:11"],
       "category": "restoration",
       "blurb": "Removal of proud and shame from Zion; moral cleansing precedes joy."
     },
@@ -623,9 +512,7 @@
       "id": "f.rejoicing-singing-god--fcf42cb2",
       "name": "Rejoicing/singing God",
       "type": "figure",
-      "references": [
-        "Zeph 3:17"
-      ],
+      "references": ["Zeph 3:17"],
       "category": "divine-joy",
       "blurb": "Unique portrait of God exulting over his people with singing."
     },
@@ -633,9 +520,7 @@
       "id": "f.fear-removed--8c8c2c37",
       "name": "Fear removed",
       "type": "figure",
-      "references": [
-        "Zeph 3:15-16"
-      ],
+      "references": ["Zeph 3:15-16"],
       "category": "restoration",
       "blurb": "No more fear in Zion; divine presence secures peace."
     },
@@ -643,9 +528,7 @@
       "id": "f.judgments-removed--72cec12a",
       "name": "Judgments removed",
       "type": "figure",
-      "references": [
-        "Zeph 3:15"
-      ],
+      "references": ["Zeph 3:15"],
       "category": "legal-reversal",
       "blurb": "The verdict against Zion lifted; enemies turned back."
     },
@@ -653,9 +536,7 @@
       "id": "f.gathering-the-lame--0eb7efe8",
       "name": "Gathering the lame",
       "type": "figure",
-      "references": [
-        "Zeph 3:19"
-      ],
+      "references": ["Zeph 3:19"],
       "category": "compassion",
       "blurb": "The marginalized restored and assembled into honor."
     },
@@ -663,9 +544,7 @@
       "id": "f.gathering-the-outcast--34186b9c",
       "name": "Gathering the outcast",
       "type": "figure",
-      "references": [
-        "Zeph 3:19"
-      ],
+      "references": ["Zeph 3:19"],
       "category": "compassion",
       "blurb": "Exiles and outcasts brought home to praise and renown."
     },
@@ -673,9 +552,7 @@
       "id": "f.name-&-praise-among-nations--4ae73fea",
       "name": "Name & praise among nations",
       "type": "figure",
-      "references": [
-        "Zeph 3:19-20"
-      ],
+      "references": ["Zeph 3:19-20"],
       "category": "mission",
       "blurb": "Zion’s reputation reversed; global recognition of God’s saving work."
     },
@@ -683,9 +560,7 @@
       "id": "f.reversal-of-shame-honor--2e9a8e77",
       "name": "Reversal of shame/honor",
       "type": "figure",
-      "references": [
-        "Zeph 3:19"
-      ],
+      "references": ["Zeph 3:19"],
       "category": "honor-shame",
       "blurb": "Cultural reversal central to restoration: disgrace becomes fame."
     },
@@ -693,22 +568,16 @@
       "id": "f.babel-reversal-purified-lips--d8837dfa",
       "name": "Babel reversal (purified lips)",
       "type": "figure",
-      "references": [
-        "Zeph 3:9"
-      ],
+      "references": ["Zeph 3:9"],
       "category": "intertext",
-      "cross_references": [
-        "Gen 11"
-      ],
+      "cross_references": ["Gen 11"],
       "blurb": "Undoing of Babel’s dispersion in a worship-unified humanity."
     },
     {
       "id": "e.zion--d7771d29",
       "name": "Zion",
       "type": "entity",
-      "references": [
-        "Zeph 3:14-16"
-      ],
+      "references": ["Zeph 3:14-16"],
       "category": "holy-mount",
       "blurb": "Liturgical center of rejoicing; locus of divine presence."
     },
@@ -716,10 +585,7 @@
       "id": "e.jerusalem--23c888bc",
       "name": "Jerusalem",
       "type": "entity",
-      "references": [
-        "Zeph 1:4-13",
-        "Zeph 3:14-17"
-      ],
+      "references": ["Zeph 1:4-13", "Zeph 3:14-17"],
       "category": "city",
       "blurb": "From corrupt city to singing city—site of transformation."
     },
@@ -727,9 +593,7 @@
       "id": "e.temple--1d486079",
       "name": "Temple",
       "type": "entity",
-      "references": [
-        "Zeph 1:4"
-      ],
+      "references": ["Zeph 1:4"],
       "category": "cultic",
       "blurb": "Implicit in cultic critique; site of syncretism and intended purity."
     },
@@ -737,9 +601,7 @@
       "id": "e.maktesh-market-district--9816645d",
       "name": "Maktesh (market district)",
       "type": "entity",
-      "references": [
-        "Zeph 1:11"
-      ],
+      "references": ["Zeph 1:11"],
       "category": "economic",
       "blurb": "Commercial quarter whose merchants wail at economic collapse."
     },
@@ -747,9 +609,7 @@
       "id": "e.fish-gate--74d54f0b",
       "name": "Fish Gate",
       "type": "entity",
-      "references": [
-        "Zeph 1:10"
-      ],
+      "references": ["Zeph 1:10"],
       "category": "infrastructure",
       "blurb": "City sector signaling localized judgment imagery."
     },
@@ -757,9 +617,7 @@
       "id": "e.second-quarter--8bb2bfd7",
       "name": "Second Quarter",
       "type": "entity",
-      "references": [
-        "Zeph 1:10"
-      ],
+      "references": ["Zeph 1:10"],
       "category": "infrastructure",
       "blurb": "Residential/administrative district named in the sweep of judgment."
     },
@@ -767,9 +625,7 @@
       "id": "e.rooftops--086df74d",
       "name": "Rooftops",
       "type": "entity",
-      "references": [
-        "Zeph 1:5"
-      ],
+      "references": ["Zeph 1:5"],
       "category": "worship-site",
       "blurb": "Elevated locations for astral rites; emblem of domestic syncretism."
     },
@@ -777,22 +633,16 @@
       "id": "e.thresholds--4f61931d",
       "name": "Thresholds",
       "type": "entity",
-      "references": [
-        "Zeph 1:9"
-      ],
+      "references": ["Zeph 1:9"],
       "category": "cultic-motif",
-      "cross_references": [
-        "1 Sam 5:5"
-      ],
+      "cross_references": ["1 Sam 5:5"],
       "blurb": "Philistine ritual echo; leaping over thresholds marks foreign practice."
     },
     {
       "id": "e.foreign-apparel--ac8ffb89",
       "name": "Foreign apparel",
       "type": "entity",
-      "references": [
-        "Zeph 1:8"
-      ],
+      "references": ["Zeph 1:8"],
       "category": "assimilation-marker",
       "blurb": "Dress as sign of cultural/religious assimilation among officials."
     },
@@ -800,9 +650,7 @@
       "id": "e.baal--55db24d1",
       "name": "Baal",
       "type": "entity",
-      "references": [
-        "Zeph 1:4"
-      ],
+      "references": ["Zeph 1:4"],
       "category": "idol",
       "blurb": "Canaanite deity whose cult contaminated Judah’s worship."
     },
@@ -810,22 +658,16 @@
       "id": "e.milcom--7ff9546d",
       "name": "Milcom",
       "type": "entity",
-      "references": [
-        "Zeph 1:5"
-      ],
+      "references": ["Zeph 1:5"],
       "category": "idol",
-      "aka": [
-        "Molech"
-      ],
+      "aka": ["Molech"],
       "blurb": "Ammonite god; oath-taking to Milcom alongside YHWH typifies syncretism."
     },
     {
       "id": "e.idols--a723d30b",
       "name": "Idols",
       "type": "entity",
-      "references": [
-        "Zeph 1:3-5"
-      ],
+      "references": ["Zeph 1:3-5"],
       "category": "cult-objects",
       "blurb": "Generic reference to graven images; targets of purification."
     },
@@ -833,9 +675,7 @@
       "id": "e.host-of-heaven-astro-worship--f4645668",
       "name": "Host of heaven (astro-worship)",
       "type": "entity",
-      "references": [
-        "Zeph 1:5"
-      ],
+      "references": ["Zeph 1:5"],
       "category": "celestial-cult",
       "blurb": "Worship of sun, moon, and stars on rooftops; condemned practice."
     },
@@ -843,9 +683,7 @@
       "id": "e.silver-&-gold-cannot-deliver--d95b9b68",
       "name": "Silver & gold (cannot deliver)",
       "type": "entity",
-      "references": [
-        "Zeph 1:18"
-      ],
+      "references": ["Zeph 1:18"],
       "category": "economic",
       "blurb": "Wealth is powerless to avert the Day’s wrath."
     },
@@ -853,9 +691,7 @@
       "id": "e.sacrifice-banquet-of-the-lord--0262555e",
       "name": "Sacrifice/banquet of the LORD",
       "type": "entity",
-      "references": [
-        "Zeph 1:7-8"
-      ],
+      "references": ["Zeph 1:7-8"],
       "category": "judgment-feast",
       "blurb": "Irony: the LORD prepares a sacrificial feast where the guests are those judged."
     },
@@ -863,9 +699,7 @@
       "id": "e.blood-poured-out-dust-like-flesh--9e6a110d",
       "name": "Blood poured out/dust-like flesh",
       "type": "entity",
-      "references": [
-        "Zeph 1:17"
-      ],
+      "references": ["Zeph 1:17"],
       "category": "judgment-imagery",
       "blurb": "Graphic portrayal of the Day’s carnage and mortality."
     },
@@ -873,9 +707,7 @@
       "id": "e.complacent-on-their-dregs--c5a3b7fe",
       "name": "Complacent on their dregs",
       "type": "entity",
-      "references": [
-        "Zeph 1:12"
-      ],
+      "references": ["Zeph 1:12"],
       "category": "spiritual-stagnation",
       "blurb": "Wine metaphor for settled indifference—‘the LORD will not do good, nor will he do ill.’"
     },
@@ -883,9 +715,7 @@
       "id": "e.merchants-cut-off--52fbea06",
       "name": "Merchants cut off",
       "type": "entity",
-      "references": [
-        "Zeph 1:11"
-      ],
+      "references": ["Zeph 1:11"],
       "category": "economic-judgment",
       "blurb": "Commercial elites eliminated; false security exposed."
     },
@@ -893,9 +723,7 @@
       "id": "e.pasturelands-for-shepherds--e65856f4",
       "name": "Pasturelands for shepherds",
       "type": "entity",
-      "references": [
-        "Zeph 2:6-7"
-      ],
+      "references": ["Zeph 2:6-7"],
       "category": "reversal",
       "blurb": "Philistine coast becomes grazing land for the remnant—a peace economy."
     },
@@ -903,9 +731,7 @@
       "id": "e.nineveh-desolation-fauna--70178b8f",
       "name": "Nineveh desolation fauna",
       "type": "entity",
-      "references": [
-        "Zeph 2:14"
-      ],
+      "references": ["Zeph 2:14"],
       "category": "desolation",
       "blurb": "Herds, wild beasts, owl/pelican at thresholds—architectural capitals become perches."
     },
@@ -913,9 +739,7 @@
       "id": "e.purified-lips-→-worship-shoulder-to-shoulder--6c713344",
       "name": "Purified lips → worship shoulder to shoulder",
       "type": "entity",
-      "references": [
-        "Zeph 3:9"
-      ],
+      "references": ["Zeph 3:9"],
       "category": "worship",
       "blurb": "Unified service by the peoples; international liturgy."
     },
@@ -923,9 +747,7 @@
       "id": "e.song-over-zion--7d7bde28",
       "name": "Song over Zion",
       "type": "entity",
-      "references": [
-        "Zeph 3:17"
-      ],
+      "references": ["Zeph 3:17"],
       "category": "doxology",
       "blurb": "Divine singing as liturgical-theological climax."
     },
@@ -933,9 +755,7 @@
       "id": "e.rest-in-his-love--2d5b40f2",
       "name": "Rest in his love",
       "type": "entity",
-      "references": [
-        "Zeph 3:17"
-      ],
+      "references": ["Zeph 3:17"],
       "category": "pastoral-theology",
       "blurb": "God quiets you with his love—healing of fear and shame."
     },
@@ -943,9 +763,7 @@
       "id": "e.gathered-exiles--5ecf561d",
       "name": "Gathered exiles",
       "type": "entity",
-      "references": [
-        "Zeph 3:19-20"
-      ],
+      "references": ["Zeph 3:19-20"],
       "category": "return",
       "blurb": "Diaspora reversal; homecoming under divine favor."
     },
@@ -953,9 +771,7 @@
       "id": "e.restore-fortunes--59154a5f",
       "name": "Restore fortunes",
       "type": "entity",
-      "references": [
-        "Zeph 3:20"
-      ],
+      "references": ["Zeph 3:20"],
       "category": "restoration",
       "blurb": "Comprehensive reversal of losses under God’s timing."
     },
@@ -963,26 +779,16 @@
       "id": "e.day-of-the-lord-canonical-trajectory--3c1f698e",
       "name": "Day of the LORD (canonical trajectory)",
       "type": "entity",
-      "references": [
-        "Zeph 1:7",
-        "Zeph 1:14-18",
-        "Zeph 3:8"
-      ],
+      "references": ["Zeph 1:7", "Zeph 1:14-18", "Zeph 3:8"],
       "category": "theology",
-      "cross_references": [
-        "Amos 5",
-        "Joel 2",
-        "Mal 4"
-      ],
+      "cross_references": ["Amos 5", "Joel 2", "Mal 4"],
       "blurb": "From Amos’s warning to Joel’s apocalyptic textures to Zephaniah’s purification and Malachi’s eschaton—the Day as judgment-unto-renewal."
     },
     {
       "id": "e.judgment-as-purification--766bde7c",
       "name": "Judgment as purification",
       "type": "entity",
-      "references": [
-        "Zeph 3:9-13"
-      ],
+      "references": ["Zeph 3:9-13"],
       "category": "theology",
       "blurb": "Aim is not mere annihilation but a cleansed people with truthful lips and humble hearts."
     },
@@ -990,10 +796,7 @@
       "id": "e.remnant-theology-&-humility--3cdef1cf",
       "name": "Remnant theology & humility",
       "type": "entity",
-      "references": [
-        "Zeph 2:3",
-        "Zeph 3:12-13"
-      ],
+      "references": ["Zeph 2:3", "Zeph 3:12-13"],
       "category": "theology",
       "blurb": "Seek humility; the remnant is characterized by meekness and justice."
     },
@@ -1001,9 +804,7 @@
       "id": "e.universal-worship--d328b69f",
       "name": "Universal worship",
       "type": "entity",
-      "references": [
-        "Zeph 3:9-10"
-      ],
+      "references": ["Zeph 3:9-10"],
       "category": "missional-theology",
       "blurb": "Peoples from beyond the rivers of Cush bring offerings; worship becomes transnational."
     },
@@ -1011,13 +812,9 @@
       "id": "e.god-singing-over-his-people--933be0c6",
       "name": "God singing over his people",
       "type": "entity",
-      "references": [
-        "Zeph 3:17"
-      ],
+      "references": ["Zeph 3:17"],
       "category": "theology",
-      "cross_references": [
-        "Isa 62:5"
-      ],
+      "cross_references": ["Isa 62:5"],
       "blurb": "Unique biblical image shaping mystical and pastoral traditions."
     },
     {

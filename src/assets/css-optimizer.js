@@ -9,18 +9,18 @@ class CSSOptimizer {
     this.criticalCSS = this.extractCriticalCSS();
     this.init();
   }
-  
+
   init() {
     // Inline critical CSS
     this.inlineCriticalCSS();
-    
+
     // Set up lazy loading for non-critical styles
     this.setupLazyStyleLoading();
-    
+
     // Optimize font loading
     this.optimizeFontLoading();
   }
-  
+
   extractCriticalCSS() {
     // Define critical CSS patterns for above-the-fold content
     return {
@@ -47,7 +47,7 @@ class CSSOptimizer {
         }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
       `,
-      
+
       // Navigation (always visible)
       nav: `
         .nav { 
@@ -84,7 +84,7 @@ class CSSOptimizer {
           color: var(--text);
         }
       `,
-      
+
       // Loading states
       loading: `
         .loading { 
@@ -103,24 +103,24 @@ class CSSOptimizer {
           animation: shimmer 1.5s infinite; 
         }
         @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
-      `
+      `,
     };
   }
-  
+
   inlineCriticalCSS() {
     const criticalCSS = Object.values(this.criticalCSS).join('\n');
-    
+
     // Check if critical CSS is already inlined
     if (document.querySelector('#critical-css')) return;
-    
+
     const style = document.createElement('style');
     style.id = 'critical-css';
     style.textContent = criticalCSS;
     document.head.insertBefore(style, document.head.firstChild);
-    
+
     console.log('[CSSOptimizer] Critical CSS inlined');
   }
-  
+
   setupLazyStyleLoading() {
     // Load non-critical styles after page load
     if (document.readyState === 'loading') {
@@ -131,21 +131,21 @@ class CSSOptimizer {
       setTimeout(() => this.loadNonCriticalStyles(), 100);
     }
   }
-  
+
   loadNonCriticalStyles() {
     const nonCriticalStyles = [
       // Component-specific styles
       { href: '/styles.css', media: 'all' },
     ];
-    
+
     nonCriticalStyles.forEach(style => {
       this.loadStyleSheet(style.href, style.media);
     });
   }
-  
+
   loadStyleSheet(href, media = 'all') {
     if (this.loadedStyles.has(href)) return;
-    
+
     return new Promise((resolve, reject) => {
       const link = document.createElement('link');
       link.rel = 'stylesheet';
@@ -159,13 +159,13 @@ class CSSOptimizer {
       document.head.appendChild(link);
     });
   }
-  
+
   optimizeFontLoading() {
     // Preload critical font variants
     const criticalFonts = [
       'https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap',
     ];
-    
+
     criticalFonts.forEach(fontUrl => {
       const link = document.createElement('link');
       link.rel = 'preload';
@@ -176,7 +176,7 @@ class CSSOptimizer {
       };
       document.head.appendChild(link);
     });
-    
+
     // Use font-display: swap for better loading performance
     const fontOptimizationCSS = `
       @font-face {
@@ -184,12 +184,12 @@ class CSSOptimizer {
         font-display: swap;
       }
     `;
-    
+
     const style = document.createElement('style');
     style.textContent = fontOptimizationCSS;
     document.head.appendChild(style);
   }
-  
+
   // Lazy load styles based on page content
   loadStylesForContent(contentType) {
     const styleMap = {
@@ -197,21 +197,21 @@ class CSSOptimizer {
       'chapter-reader': '/assets/chapter-reader.css',
       'debug-dashboard': '/assets/debug-dashboard.css',
     };
-    
+
     const styleHref = styleMap[contentType];
     if (styleHref) {
       this.loadStyleSheet(styleHref);
     }
   }
-  
+
   // Preload styles for next likely page
   preloadStyles(nextPageType) {
     const preloadMap = {
-      'book': ['/assets/chapter-reader.css'],
-      'character': ['/assets/character-profile.css'],
-      'search': ['/assets/search-results.css'],
+      book: ['/assets/chapter-reader.css'],
+      character: ['/assets/character-profile.css'],
+      search: ['/assets/search-results.css'],
     };
-    
+
     const stylesToPreload = preloadMap[nextPageType] || [];
     stylesToPreload.forEach(href => {
       const link = document.createElement('link');
@@ -220,13 +220,13 @@ class CSSOptimizer {
       document.head.appendChild(link);
     });
   }
-  
+
   // Get optimization stats
   getStats() {
     return {
       loadedStyles: Array.from(this.loadedStyles),
       criticalCSSSize: Object.values(this.criticalCSS).join('').length,
-      totalLoadedStyles: this.loadedStyles.size
+      totalLoadedStyles: this.loadedStyles.size,
     };
   }
 }
@@ -236,7 +236,7 @@ const cssOptimizer = new CSSOptimizer();
 
 // Expose to global scope
 window.cssOptimizer = cssOptimizer;
-window.loadStylesForContent = (contentType) => cssOptimizer.loadStylesForContent(contentType);
-window.preloadStyles = (pageType) => cssOptimizer.preloadStyles(pageType);
+window.loadStylesForContent = contentType => cssOptimizer.loadStylesForContent(contentType);
+window.preloadStyles = pageType => cssOptimizer.preloadStyles(pageType);
 
 console.log('[CSSOptimizer] Initialized with critical CSS inlining and lazy loading');

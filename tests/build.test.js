@@ -4,14 +4,14 @@ const { execSync } = require('child_process');
 
 describe('Build Tests', () => {
   const siteDir = path.join(__dirname, '..', '_site');
-  
+
   beforeAll(() => {
     // Ensure we have a fresh build
     try {
-      execSync('npm run build', { 
+      execSync('npm run build', {
         cwd: path.join(__dirname, '..'),
         stdio: 'pipe', // Suppress output during tests
-        timeout: 30000 // 30 second timeout
+        timeout: 30000, // 30 second timeout
       });
     } catch (error) {
       console.error('Build failed:', error.message);
@@ -29,7 +29,7 @@ describe('Build Tests', () => {
         'index.html',
         'categories/index.html',
         'characters/index.html',
-        'links/index.html'
+        'links/index.html',
       ];
 
       requiredPages.forEach(page => {
@@ -40,10 +40,10 @@ describe('Build Tests', () => {
 
     test('should generate book pages', () => {
       const books = require('../src/_data/books.json');
-      
+
       // Test a few sample books
       const sampleBooks = ['genesis', 'matthew', 'psalms', 'revelation'];
-      
+
       sampleBooks.forEach(bookSlug => {
         const bookPath = path.join(siteDir, 'books', bookSlug, 'index.html');
         expect(fs.existsSync(bookPath)).toBe(true);
@@ -52,7 +52,7 @@ describe('Build Tests', () => {
 
     test('should generate category pages', () => {
       const categories = require('../src/_data/categories.js');
-      
+
       categories.forEach(category => {
         const categoryPath = path.join(siteDir, 'categories', category.slug, 'index.html');
         expect(fs.existsSync(categoryPath)).toBe(true);
@@ -60,10 +60,7 @@ describe('Build Tests', () => {
     });
 
     test('should copy static assets', () => {
-      const assetFiles = [
-        'styles.css',
-        'assets'
-      ];
+      const assetFiles = ['styles.css', 'assets'];
 
       assetFiles.forEach(asset => {
         const assetPath = path.join(siteDir, asset);
@@ -76,7 +73,7 @@ describe('Build Tests', () => {
     test('homepage should contain all categories', () => {
       const homepageContent = fs.readFileSync(path.join(siteDir, 'index.html'), 'utf8');
       const categories = require('../src/_data/categories.js');
-      
+
       categories.forEach(category => {
         expect(homepageContent).toContain(category.name);
       });
@@ -84,8 +81,8 @@ describe('Build Tests', () => {
 
     test('book pages should have chapter summaries when available', () => {
       const books = require('../src/_data/books.json');
-      const booksWithSummaries = books.filter(book => 
-        book.chapterSummaries && Object.keys(book.chapterSummaries).length > 0
+      const booksWithSummaries = books.filter(
+        book => book.chapterSummaries && Object.keys(book.chapterSummaries).length > 0
       );
 
       expect(booksWithSummaries.length).toBeGreaterThan(0);
@@ -93,7 +90,7 @@ describe('Build Tests', () => {
       // Test one book with summaries
       const testBook = booksWithSummaries[0];
       const bookContent = fs.readFileSync(
-        path.join(siteDir, 'books', testBook.slug, 'index.html'), 
+        path.join(siteDir, 'books', testBook.slug, 'index.html'),
         'utf8'
       );
 
@@ -104,10 +101,10 @@ describe('Build Tests', () => {
     test('category pages should only show books from that category', () => {
       // Test Law (Torah) category
       const categoryPath = path.join(siteDir, 'categories', 'law-torah', 'index.html');
-      
+
       // First check if the file exists
       expect(fs.existsSync(categoryPath)).toBe(true);
-      
+
       const categoryContent = fs.readFileSync(categoryPath, 'utf8');
 
       // Should contain Torah books
@@ -128,7 +125,8 @@ describe('Build Tests', () => {
 
     test('character pages should exist for significant characters only', () => {
       const charactersDir = path.join(siteDir, 'characters');
-      const characterDirs = fs.readdirSync(charactersDir, { withFileTypes: true })
+      const characterDirs = fs
+        .readdirSync(charactersDir, { withFileTypes: true })
         .filter(dirent => dirent.isDirectory())
         .map(dirent => dirent.name);
 
@@ -144,7 +142,7 @@ describe('Build Tests', () => {
         'books/genesis/index.html',
         'categories/law-torah/index.html',
         'characters/moses/index.html',
-        'links/index.html'
+        'links/index.html',
       ];
 
       expectedStructure.forEach(filePath => {
@@ -154,11 +152,11 @@ describe('Build Tests', () => {
 
     test('should not generate excessive character pages', () => {
       const charactersDir = path.join(siteDir, 'characters');
-      
+
       if (fs.existsSync(charactersDir)) {
         const items = fs.readdirSync(charactersDir, { withFileTypes: true });
         const directories = items.filter(item => item.isDirectory());
-        
+
         // Should be reasonable number (filtered to 3+ appearances)
         expect(directories.length).toBeLessThan(500);
       }
@@ -168,7 +166,7 @@ describe('Build Tests', () => {
   describe('Content Validation', () => {
     test('HTML files should be valid and complete', () => {
       const indexContent = fs.readFileSync(path.join(siteDir, 'index.html'), 'utf8');
-      
+
       expect(indexContent).toContain('<!doctype html>');
       expect(indexContent).toContain('<html');
       expect(indexContent).toContain('<head>');
@@ -179,7 +177,7 @@ describe('Build Tests', () => {
 
     test('should not contain unprocessed template syntax', () => {
       const indexContent = fs.readFileSync(path.join(siteDir, 'index.html'), 'utf8');
-      
+
       // Should not contain unprocessed Nunjucks template syntax (but compiled JS can have {{ in strings)
       expect(indexContent).not.toMatch(/\{\{\s*\w+/); // No unprocessed variables like {{ book.name }}
       expect(indexContent).not.toMatch(/\{\%\s*\w+/); // No unprocessed blocks like {% for %}

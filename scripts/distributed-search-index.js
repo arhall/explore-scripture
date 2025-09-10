@@ -8,185 +8,185 @@ const fs = require('fs');
 const path = require('path');
 
 class DistributedSearchIndex {
-    constructor() {
-        this.config = {
-            // Index sharding configuration
-            sharding: {
-                strategy: 'hybrid', // 'content-type', 'alphabetical', 'size-based', 'hybrid'
-                maxShardSize: 10 * 1024 * 1024, // 10MB per shard
-                minShardSize: 1 * 1024 * 1024,  // 1MB min
-                targetShards: 12, // Optimal number for parallel processing
-                rebalanceThreshold: 0.3 // Rebalance if size difference > 30%
-            },
-            
-            // Content indexing configuration
-            indexing: {
-                // Field weights for relevance scoring
-                fieldWeights: {
-                    title: 10.0,        // Book/chapter titles
-                    heading: 8.0,       // Section headings
-                    verse: 5.0,         // Verse content
-                    summary: 4.0,       // Chapter summaries
-                    name: 7.0,          // Entity names
-                    description: 3.0,   // Descriptions
-                    tag: 6.0,          // Tags and categories
-                    reference: 2.0      // Cross-references
-                },
-                
-                // Text processing configuration
-                processing: {
-                    stemming: true,         // Enable word stemming
-                    stopWords: true,        // Remove common stop words
-                    synonyms: true,         // Handle biblical synonyms
-                    abbreviations: true,    // Expand abbreviations
-                    fuzzyMatching: true,    // Enable fuzzy matching
-                    phoneticMatching: true, // Soundex-like matching
-                    contextualBoost: true   // Boost based on context
-                },
-                
-                // N-gram configuration
-                ngrams: {
-                    min: 2,         // Minimum n-gram size
-                    max: 4,         // Maximum n-gram size
-                    overlap: 1,     // Character overlap
-                    threshold: 0.1  // Minimum score threshold
-                }
-            },
-            
-            // Caching and storage configuration
-            caching: {
-                levels: {
-                    // L1: In-memory cache (fastest)
-                    l1: {
-                        type: 'memory',
-                        maxSize: 50 * 1024 * 1024, // 50MB
-                        ttl: 300000,  // 5 minutes
-                        maxEntries: 10000
-                    },
-                    
-                    // L2: IndexedDB cache (persistent)
-                    l2: {
-                        type: 'indexeddb',
-                        maxSize: 200 * 1024 * 1024, // 200MB
-                        ttl: 3600000, // 1 hour
-                        maxEntries: 100000
-                    },
-                    
-                    // L3: Service Worker cache (network fallback)
-                    l3: {
-                        type: 'service-worker',
-                        maxSize: 500 * 1024 * 1024, // 500MB
-                        ttl: 86400000, // 24 hours
-                        strategy: 'cache-first'
-                    }
-                },
-                
-                // Cache invalidation rules
-                invalidation: {
-                    contentUpdate: true,    // Invalidate on content changes
-                    timeBasedExpiry: true,  // Auto-expire old entries
-                    memoryPressure: true,   // Invalidate on low memory
-                    userPreferences: true   // Invalidate on preference changes
-                }
-            },
-            
-            // Query optimization configuration
-            optimization: {
-                // Query rewriting rules
-                rewriting: {
-                    expandAbbreviations: true,
-                    handleTypos: true,
-                    synonymExpansion: true,
-                    contextualExpansion: true
-                },
-                
-                // Result ranking factors
-                ranking: {
-                    textRelevance: 0.4,     // TF-IDF score weight
-                    popularityBoost: 0.2,   // Popular content boost
-                    recentnessBoost: 0.1,   // Recent content boost
-                    userPreference: 0.2,    // User preference boost
-                    contextualMatch: 0.1    // Contextual relevance boost
-                },
-                
-                // Performance targets
-                performance: {
-                    maxQueryTime: 100,      // 100ms target
-                    maxResultTime: 300,     // 300ms for full results
-                    maxIndexTime: 5000,     // 5s for index operations
-                    concurrentQueries: 10   // Support 10 concurrent queries
-                }
-            }
-        };
-        
-        this.indexData = {
-            shards: new Map(),
-            metadata: new Map(),
-            statistics: new Map(),
-            synonyms: new Map(),
-            abbreviations: new Map()
-        };
-        
-        this.cacheManager = null;
-        this.queryProcessor = null;
-    }
-    
-    /**
-     * Generate distributed search index system
-     */
-    async generateSearchIndexSystem() {
-        // Generate core index builder
-        const indexBuilder = this.generateIndexBuilder();
-        
-        // Generate query processor
-        const queryProcessor = this.generateQueryProcessor();
-        
-        // Generate cache manager
-        const cacheManager = this.generateCacheManager();
-        
-        // Generate search client
-        const searchClient = this.generateSearchClient();
-        
-        // Generate shard manager
-        const shardManager = this.generateShardManager();
-        
-        // Generate build integration
-        const buildIntegration = this.generateBuildIntegration();
-        
-        // Write all components
-        const outputDir = path.join(__dirname, '..', 'src', 'assets', 'search');
-        
-        await this.ensureDirectory(outputDir);
-        
-        await Promise.all([
-            this.writeComponent(indexBuilder, path.join(outputDir, 'index-builder.js')),
-            this.writeComponent(queryProcessor, path.join(outputDir, 'query-processor.js')),
-            this.writeComponent(cacheManager, path.join(outputDir, 'cache-manager.js')),
-            this.writeComponent(searchClient, path.join(outputDir, 'search-client.js')),
-            this.writeComponent(shardManager, path.join(outputDir, 'shard-manager.js')),
-            this.writeComponent(buildIntegration, path.join(__dirname, 'search-build-integration.js'))
-        ]);
-        
-        // Generate biblical data dictionaries
-        await this.generateBiblicalDictionaries(outputDir);
-        
-        console.log('✅ Distributed search index system generated');
-        
-        return {
-            indexBuilder,
-            queryProcessor,
-            cacheManager,
-            searchClient,
-            shardManager,
-            buildIntegration
-        };
-    }
-    
-    /**
-     * Generate index builder component
-     */
-    generateIndexBuilder() {
-        return `/**
+  constructor() {
+    this.config = {
+      // Index sharding configuration
+      sharding: {
+        strategy: 'hybrid', // 'content-type', 'alphabetical', 'size-based', 'hybrid'
+        maxShardSize: 10 * 1024 * 1024, // 10MB per shard
+        minShardSize: 1 * 1024 * 1024, // 1MB min
+        targetShards: 12, // Optimal number for parallel processing
+        rebalanceThreshold: 0.3, // Rebalance if size difference > 30%
+      },
+
+      // Content indexing configuration
+      indexing: {
+        // Field weights for relevance scoring
+        fieldWeights: {
+          title: 10.0, // Book/chapter titles
+          heading: 8.0, // Section headings
+          verse: 5.0, // Verse content
+          summary: 4.0, // Chapter summaries
+          name: 7.0, // Entity names
+          description: 3.0, // Descriptions
+          tag: 6.0, // Tags and categories
+          reference: 2.0, // Cross-references
+        },
+
+        // Text processing configuration
+        processing: {
+          stemming: true, // Enable word stemming
+          stopWords: true, // Remove common stop words
+          synonyms: true, // Handle biblical synonyms
+          abbreviations: true, // Expand abbreviations
+          fuzzyMatching: true, // Enable fuzzy matching
+          phoneticMatching: true, // Soundex-like matching
+          contextualBoost: true, // Boost based on context
+        },
+
+        // N-gram configuration
+        ngrams: {
+          min: 2, // Minimum n-gram size
+          max: 4, // Maximum n-gram size
+          overlap: 1, // Character overlap
+          threshold: 0.1, // Minimum score threshold
+        },
+      },
+
+      // Caching and storage configuration
+      caching: {
+        levels: {
+          // L1: In-memory cache (fastest)
+          l1: {
+            type: 'memory',
+            maxSize: 50 * 1024 * 1024, // 50MB
+            ttl: 300000, // 5 minutes
+            maxEntries: 10000,
+          },
+
+          // L2: IndexedDB cache (persistent)
+          l2: {
+            type: 'indexeddb',
+            maxSize: 200 * 1024 * 1024, // 200MB
+            ttl: 3600000, // 1 hour
+            maxEntries: 100000,
+          },
+
+          // L3: Service Worker cache (network fallback)
+          l3: {
+            type: 'service-worker',
+            maxSize: 500 * 1024 * 1024, // 500MB
+            ttl: 86400000, // 24 hours
+            strategy: 'cache-first',
+          },
+        },
+
+        // Cache invalidation rules
+        invalidation: {
+          contentUpdate: true, // Invalidate on content changes
+          timeBasedExpiry: true, // Auto-expire old entries
+          memoryPressure: true, // Invalidate on low memory
+          userPreferences: true, // Invalidate on preference changes
+        },
+      },
+
+      // Query optimization configuration
+      optimization: {
+        // Query rewriting rules
+        rewriting: {
+          expandAbbreviations: true,
+          handleTypos: true,
+          synonymExpansion: true,
+          contextualExpansion: true,
+        },
+
+        // Result ranking factors
+        ranking: {
+          textRelevance: 0.4, // TF-IDF score weight
+          popularityBoost: 0.2, // Popular content boost
+          recentnessBoost: 0.1, // Recent content boost
+          userPreference: 0.2, // User preference boost
+          contextualMatch: 0.1, // Contextual relevance boost
+        },
+
+        // Performance targets
+        performance: {
+          maxQueryTime: 100, // 100ms target
+          maxResultTime: 300, // 300ms for full results
+          maxIndexTime: 5000, // 5s for index operations
+          concurrentQueries: 10, // Support 10 concurrent queries
+        },
+      },
+    };
+
+    this.indexData = {
+      shards: new Map(),
+      metadata: new Map(),
+      statistics: new Map(),
+      synonyms: new Map(),
+      abbreviations: new Map(),
+    };
+
+    this.cacheManager = null;
+    this.queryProcessor = null;
+  }
+
+  /**
+   * Generate distributed search index system
+   */
+  async generateSearchIndexSystem() {
+    // Generate core index builder
+    const indexBuilder = this.generateIndexBuilder();
+
+    // Generate query processor
+    const queryProcessor = this.generateQueryProcessor();
+
+    // Generate cache manager
+    const cacheManager = this.generateCacheManager();
+
+    // Generate search client
+    const searchClient = this.generateSearchClient();
+
+    // Generate shard manager
+    const shardManager = this.generateShardManager();
+
+    // Generate build integration
+    const buildIntegration = this.generateBuildIntegration();
+
+    // Write all components
+    const outputDir = path.join(__dirname, '..', 'src', 'assets', 'search');
+
+    await this.ensureDirectory(outputDir);
+
+    await Promise.all([
+      this.writeComponent(indexBuilder, path.join(outputDir, 'index-builder.js')),
+      this.writeComponent(queryProcessor, path.join(outputDir, 'query-processor.js')),
+      this.writeComponent(cacheManager, path.join(outputDir, 'cache-manager.js')),
+      this.writeComponent(searchClient, path.join(outputDir, 'search-client.js')),
+      this.writeComponent(shardManager, path.join(outputDir, 'shard-manager.js')),
+      this.writeComponent(buildIntegration, path.join(__dirname, 'search-build-integration.js')),
+    ]);
+
+    // Generate biblical data dictionaries
+    await this.generateBiblicalDictionaries(outputDir);
+
+    console.log('✅ Distributed search index system generated');
+
+    return {
+      indexBuilder,
+      queryProcessor,
+      cacheManager,
+      searchClient,
+      shardManager,
+      buildIntegration,
+    };
+  }
+
+  /**
+   * Generate index builder component
+   */
+  generateIndexBuilder() {
+    return `/**
  * Distributed Search Index Builder
  * Builds optimized search indexes with intelligent sharding
  */
@@ -962,13 +962,13 @@ class ShardManager {
 
 export { SearchIndexBuilder, TextProcessor, ShardManager };
 `;
-    }
-    
-    /**
-     * Generate query processor component
-     */
-    generateQueryProcessor() {
-        return `/**
+  }
+
+  /**
+   * Generate query processor component
+   */
+  generateQueryProcessor() {
+    return `/**
  * Query Processor - Handles search query analysis and optimization
  */
 
@@ -1328,13 +1328,13 @@ class QueryProcessor {
 
 export default QueryProcessor;
 `;
-    }
-    
-    /**
-     * Generate cache manager component
-     */
-    generateCacheManager() {
-        return `/**
+  }
+
+  /**
+   * Generate cache manager component
+   */
+  generateCacheManager() {
+    return `/**
  * Multi-Level Cache Manager for Search System
  */
 
@@ -1845,13 +1845,13 @@ class ServiceWorkerCache {
 
 export { SearchCacheManager, MemoryCache, IndexedDBCache, ServiceWorkerCache };
 `;
-    }
-    
-    /**
-     * Generate search client component
-     */
-    generateSearchClient() {
-        return `/**
+  }
+
+  /**
+   * Generate search client component
+   */
+  generateSearchClient() {
+    return `/**
  * Distributed Search Client - Main search interface
  */
 
@@ -2477,13 +2477,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 export default DistributedSearchClient;
 `;
-    }
-    
-    /**
-     * Generate shard manager component
-     */
-    generateShardManager() {
-        return `/**
+  }
+
+  /**
+   * Generate shard manager component
+   */
+  generateShardManager() {
+    return `/**
  * Shard Manager - Manages distributed index shards
  */
 
@@ -2762,13 +2762,13 @@ class HealthMonitor {
 
 export { ShardManager, LoadBalancer, HealthMonitor };
 `;
-    }
-    
-    /**
-     * Generate build integration
-     */
-    generateBuildIntegration() {
-        return `/**
+  }
+
+  /**
+   * Generate build integration
+   */
+  generateBuildIntegration() {
+    return `/**
  * Build Integration for Distributed Search Index
  * Integrates with Eleventy build process to generate search indexes
  */
@@ -2932,71 +2932,88 @@ module.exports = {
     }
 };
 `;
+  }
+
+  /**
+   * Generate biblical dictionaries
+   */
+  async generateBiblicalDictionaries(outputDir) {
+    const dictionariesDir = path.join(outputDir, 'dictionaries');
+    await this.ensureDirectory(dictionariesDir);
+
+    // Generate synonyms dictionary
+    const synonyms = {
+      god: ['lord', 'yahweh', 'jehovah', 'almighty', 'father', 'creator'],
+      jesus: ['christ', 'messiah', 'savior', 'lord', 'son', 'lamb'],
+      'holy spirit': ['spirit', 'comforter', 'advocate', 'paraclete', 'helper'],
+      salvation: ['redemption', 'deliverance', 'rescue', 'saving'],
+      sin: ['transgression', 'iniquity', 'wickedness', 'trespass'],
+      love: ['charity', 'agape', 'compassion', 'mercy'],
+      faith: ['belief', 'trust', 'confidence', 'conviction'],
+      prayer: ['supplication', 'intercession', 'petition', 'worship'],
+      worship: ['praise', 'adoration', 'reverence', 'honor'],
+    };
+
+    await fs.writeFileSync(
+      path.join(dictionariesDir, 'synonyms.json'),
+      JSON.stringify(synonyms, null, 2),
+      'utf8'
+    );
+
+    // Generate abbreviations dictionary
+    const abbreviations = {
+      // Old Testament
+      gen: 'genesis',
+      ex: 'exodus',
+      lev: 'leviticus',
+      num: 'numbers',
+      deut: 'deuteronomy',
+      josh: 'joshua',
+      judg: 'judges',
+      // New Testament
+      matt: 'matthew',
+      mk: 'mark',
+      lk: 'luke',
+      jn: 'john',
+      rom: 'romans',
+      cor: 'corinthians',
+      gal: 'galatians',
+      eph: 'ephesians',
+      phil: 'philippians',
+      col: 'colossians',
+      thess: 'thessalonians',
+      tim: 'timothy',
+      tit: 'titus',
+      heb: 'hebrews',
+      jas: 'james',
+      pet: 'peter',
+      rev: 'revelation',
+    };
+
+    await fs.writeFileSync(
+      path.join(dictionariesDir, 'abbreviations.json'),
+      JSON.stringify(abbreviations, null, 2),
+      'utf8'
+    );
+  }
+
+  /**
+   * Ensure directory exists
+   */
+  async ensureDirectory(dirPath) {
+    if (!fs.existsSync(dirPath)) {
+      fs.mkdirSync(dirPath, { recursive: true });
     }
-    
-    /**
-     * Generate biblical dictionaries
-     */
-    async generateBiblicalDictionaries(outputDir) {
-        const dictionariesDir = path.join(outputDir, 'dictionaries');
-        await this.ensureDirectory(dictionariesDir);
-        
-        // Generate synonyms dictionary
-        const synonyms = {
-            'god': ['lord', 'yahweh', 'jehovah', 'almighty', 'father', 'creator'],
-            'jesus': ['christ', 'messiah', 'savior', 'lord', 'son', 'lamb'],
-            'holy spirit': ['spirit', 'comforter', 'advocate', 'paraclete', 'helper'],
-            'salvation': ['redemption', 'deliverance', 'rescue', 'saving'],
-            'sin': ['transgression', 'iniquity', 'wickedness', 'trespass'],
-            'love': ['charity', 'agape', 'compassion', 'mercy'],
-            'faith': ['belief', 'trust', 'confidence', 'conviction'],
-            'prayer': ['supplication', 'intercession', 'petition', 'worship'],
-            'worship': ['praise', 'adoration', 'reverence', 'honor']
-        };
-        
-        await fs.writeFileSync(
-            path.join(dictionariesDir, 'synonyms.json'),
-            JSON.stringify(synonyms, null, 2),
-            'utf8'
-        );
-        
-        // Generate abbreviations dictionary
-        const abbreviations = {
-            // Old Testament
-            'gen': 'genesis', 'ex': 'exodus', 'lev': 'leviticus', 'num': 'numbers',
-            'deut': 'deuteronomy', 'josh': 'joshua', 'judg': 'judges',
-            // New Testament  
-            'matt': 'matthew', 'mk': 'mark', 'lk': 'luke', 'jn': 'john',
-            'rom': 'romans', 'cor': 'corinthians', 'gal': 'galatians',
-            'eph': 'ephesians', 'phil': 'philippians', 'col': 'colossians',
-            'thess': 'thessalonians', 'tim': 'timothy', 'tit': 'titus',
-            'heb': 'hebrews', 'jas': 'james', 'pet': 'peter', 'rev': 'revelation'
-        };
-        
-        await fs.writeFileSync(
-            path.join(dictionariesDir, 'abbreviations.json'),
-            JSON.stringify(abbreviations, null, 2),
-            'utf8'
-        );
-    }
-    
-    /**
-     * Ensure directory exists
-     */
-    async ensureDirectory(dirPath) {
-        if (!fs.existsSync(dirPath)) {
-            fs.mkdirSync(dirPath, { recursive: true });
-        }
-    }
-    
-    /**
-     * Write component to file
-     */
-    async writeComponent(content, filePath) {
-        const dir = path.dirname(filePath);
-        await this.ensureDirectory(dir);
-        fs.writeFileSync(filePath, content, 'utf8');
-    }
+  }
+
+  /**
+   * Write component to file
+   */
+  async writeComponent(content, filePath) {
+    const dir = path.dirname(filePath);
+    await this.ensureDirectory(dir);
+    fs.writeFileSync(filePath, content, 'utf8');
+  }
 }
 
 // Export for build integration
@@ -3004,13 +3021,14 @@ module.exports = DistributedSearchIndex;
 
 // Run if called directly
 if (require.main === module) {
-    const searchIndex = new DistributedSearchIndex();
-    searchIndex.generateSearchIndexSystem()
-        .then(() => {
-            console.log('✅ Distributed search index system generated');
-        })
-        .catch(error => {
-            console.error('❌ Failed to generate search index system:', error);
-            process.exit(1);
-        });
+  const searchIndex = new DistributedSearchIndex();
+  searchIndex
+    .generateSearchIndexSystem()
+    .then(() => {
+      console.log('✅ Distributed search index system generated');
+    })
+    .catch(error => {
+      console.error('❌ Failed to generate search index system:', error);
+      process.exit(1);
+    });
 }

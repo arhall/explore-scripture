@@ -5,6 +5,7 @@ Tests mobile Safari-specific functionality and behaviors
 """
 
 import pytest
+from .config import get_test_urls
 import time
 import json
 from selenium import webdriver
@@ -69,7 +70,7 @@ class TestIOSSafari:
     @pytest.fixture(scope="class")
     def base_url(self):
         """Base URL for testing"""
-        return "http://localhost:8080"
+        return get_test_urls()["base"]
     
     def test_mobile_homepage_loads(self, mobile_safari_driver, base_url):
         """Test that homepage loads successfully on mobile Safari"""

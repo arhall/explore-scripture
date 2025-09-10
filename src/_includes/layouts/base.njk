@@ -1,322 +1,441 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Security Headers -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://www.biblegateway.com https://api.esv.org https://www.youtube.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: https://i.ytimg.com https://yt3.ggpht.com; connect-src 'self' https://api.esv.org https://bible-api.com https://www.biblegateway.com https://www.youtube.com; frame-src 'self' https://www.biblegateway.com https://www.youtube.com https://www.youtube-nocookie.com https://enduringword.com https://www.biblestudytools.com https://www.studylight.org https://biblehub.com; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()">
-  
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="theme-color" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="Explore Scripture">
-  <title>{{ title or 'Explore Scripture' }}</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
-  <meta name="description" content="{{ description or 'Chapter-by-chapter Bible summaries with categories and metadata.' }}">
-  <!-- Performance Optimizers (loaded first) -->
-  <script src="/assets/css-optimizer.js" async></script>
-  <script src="/assets/image-optimizer.js" async></script>
-  
-  <!-- Module Loader (handles all other JS loading) -->
-  <!-- Bundle optimizer replaces module-loader with intelligent loading -->
-  <script src="/assets/bundle-optimizer.js"></script>
-  
-</head>
-<body>
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-brand" href="/">Explore Scripture</a>
-      <div class="nav-links">
-        <a href="/categories/" class="nav-link {% if page.url == '/categories/' %}active{% endif %}">Sections</a>
-        <a href="/gospel-thread/" class="nav-link {% if page.url == '/gospel-thread/' %}active{% endif %}">Gospel Thread</a>
-        <a href="/genealogy/" class="nav-link {% if page.url == '/genealogy/' %}active{% endif %}">Genealogy</a>
-        <a href="/links/" class="nav-link {% if page.url == '/links/' %}active{% endif %}">Links</a>
-        <button class="font-size-toggle" onclick="toggleFontSizeControls()" aria-label="Toggle font size controls">
-          <span class="font-size-icon">Aa</span>
-        </button>
-        <button class="high-contrast-toggle" onclick="toggleHighContrast()" aria-label="Toggle high contrast mode">
-          <span class="high-contrast-icon">◻</span>
-        </button>
-        <button class="theme-toggle-nav" onclick="toggleThemeDropdown()" aria-label="Change theme" aria-expanded="false" aria-haspopup="true">
-          <span class="theme-icon">◈</span>
-        </button>
-        <button class="recents-bookmarks-toggle" onclick="toggleRecentsBookmarks()" aria-label="Toggle recent items and bookmarks">
-          <span class="recents-icon">★</span>
-        </button>
-      </div>
-    </nav>
-    
-    <div class="recents-bookmarks-panel" id="recentsBookmarksPanel">
-      <div class="recents-bookmarks-content">
-        <div class="recents-bookmarks-header">
-          <h3>Quick Access</h3>
-          <button class="close-panel-btn" onclick="toggleRecentsBookmarks()" aria-label="Close quick access panel">×</button>
-        </div>
-        
-        <div class="recents-bookmarks-tabs">
-          <button class="tab-btn active" onclick="switchTab('bookmarks')" id="bookmarksTab" aria-label="View bookmarks">
-            <span class="tab-icon">★</span>
-            Bookmarks (<span id="bookmarksCount">0</span>)
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Security Headers -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://www.biblegateway.com https://api.esv.org https://www.youtube.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: https://i.ytimg.com https://yt3.ggpht.com; connect-src 'self' https://api.esv.org https://bible-api.com https://www.biblegateway.com https://www.youtube.com; frame-src 'self' https://www.biblegateway.com https://www.youtube.com https://www.youtube-nocookie.com https://enduringword.com https://www.biblestudytools.com https://www.studylight.org https://biblehub.com; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;"
+    />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta
+      http-equiv="Permissions-Policy"
+      content="geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()"
+    />
+
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Explore Scripture" />
+    <title>{{ title or 'Explore Scripture' }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <meta
+      name="description"
+      content="{{ description or 'Chapter-by-chapter Bible summaries with categories and metadata.' }}"
+    />
+    <!-- Performance Optimizers (loaded first) -->
+    <script src="/assets/css-optimizer.js" async></script>
+    <script src="/assets/image-optimizer.js" async></script>
+
+    <!-- Module Loader (handles all other JS loading) -->
+    <!-- Bundle optimizer replaces module-loader with intelligent loading -->
+    <script src="/assets/bundle-optimizer.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <a class="nav-brand" href="/">Explore Scripture</a>
+        <div class="nav-links">
+          <a
+            href="/categories/"
+            class="nav-link {% if page.url == '/categories/' %}active{% endif %}"
+            >Sections</a
+          >
+          <a
+            href="/gospel-thread/"
+            class="nav-link {% if page.url == '/gospel-thread/' %}active{% endif %}"
+            >Gospel Thread</a
+          >
+          <a href="/genealogy/" class="nav-link {% if page.url == '/genealogy/' %}active{% endif %}"
+            >Genealogy</a
+          >
+          <a href="/links/" class="nav-link {% if page.url == '/links/' %}active{% endif %}"
+            >Links</a
+          >
+          <button
+            class="font-size-toggle"
+            onclick="toggleFontSizeControls()"
+            aria-label="Toggle font size controls"
+          >
+            <span class="font-size-icon">Aa</span>
           </button>
-          <button class="tab-btn" onclick="switchTab('recent')" id="recentTab" aria-label="View recent items">
-            <span class="tab-icon">↻</span>
-            Recent (<span id="recentCount">0</span>)
+          <button
+            class="high-contrast-toggle"
+            onclick="toggleHighContrast()"
+            aria-label="Toggle high contrast mode"
+          >
+            <span class="high-contrast-icon">◻</span>
+          </button>
+          <button
+            class="theme-toggle-nav"
+            onclick="toggleThemeDropdown()"
+            aria-label="Change theme"
+            aria-expanded="false"
+            aria-haspopup="true"
+          >
+            <span class="theme-icon">◈</span>
+          </button>
+          <button
+            class="recents-bookmarks-toggle"
+            onclick="toggleRecentsBookmarks()"
+            aria-label="Toggle recent items and bookmarks"
+          >
+            <span class="recents-icon">★</span>
           </button>
         </div>
-        
-        <div class="tab-content active" id="bookmarksContent">
-          <div class="tab-actions">
-            <button class="clear-all-btn" onclick="clearAllBookmarks()" aria-label="Clear all bookmarks">Clear All</button>
+      </nav>
+
+      <div class="recents-bookmarks-panel" id="recentsBookmarksPanel">
+        <div class="recents-bookmarks-content">
+          <div class="recents-bookmarks-header">
+            <h3>Quick Access</h3>
+            <button
+              class="close-panel-btn"
+              onclick="toggleRecentsBookmarks()"
+              aria-label="Close quick access panel"
+            >
+              ×
+            </button>
           </div>
-          <div class="items-list" id="bookmarksList">
-            <div class="empty-state">
-              <div class="empty-icon">★</div>
-              <p>No bookmarks yet</p>
-              <small>Bookmark pages to access them quickly later</small>
+
+          <div class="recents-bookmarks-tabs">
+            <button
+              class="tab-btn active"
+              onclick="switchTab('bookmarks')"
+              id="bookmarksTab"
+              aria-label="View bookmarks"
+            >
+              <span class="tab-icon">★</span>
+              Bookmarks (<span id="bookmarksCount">0</span>)
+            </button>
+            <button
+              class="tab-btn"
+              onclick="switchTab('recent')"
+              id="recentTab"
+              aria-label="View recent items"
+            >
+              <span class="tab-icon">↻</span>
+              Recent (<span id="recentCount">0</span>)
+            </button>
+          </div>
+
+          <div class="tab-content active" id="bookmarksContent">
+            <div class="tab-actions">
+              <button
+                class="clear-all-btn"
+                onclick="clearAllBookmarks()"
+                aria-label="Clear all bookmarks"
+              >
+                Clear All
+              </button>
+            </div>
+            <div class="items-list" id="bookmarksList">
+              <div class="empty-state">
+                <div class="empty-icon">★</div>
+                <p>No bookmarks yet</p>
+                <small>Bookmark pages to access them quickly later</small>
+              </div>
             </div>
           </div>
-        </div>
-        
-        <div class="tab-content" id="recentContent">
-          <div class="tab-actions">
-            <button class="clear-all-btn" onclick="clearAllRecentItems()" aria-label="Clear all recent items">Clear All</button>
-          </div>
-          <div class="items-list" id="recentsList">
-            <div class="empty-state">
-              <div class="empty-icon">↻</div>
-              <p>No recent items</p>
-              <small>Pages you visit will appear here</small>
+
+          <div class="tab-content" id="recentContent">
+            <div class="tab-actions">
+              <button
+                class="clear-all-btn"
+                onclick="clearAllRecentItems()"
+                aria-label="Clear all recent items"
+              >
+                Clear All
+              </button>
+            </div>
+            <div class="items-list" id="recentsList">
+              <div class="empty-state">
+                <div class="empty-icon">↻</div>
+                <p>No recent items</p>
+                <small>Pages you visit will appear here</small>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    
-    <div class="font-size-panel" id="fontSizePanel">
-      <div class="font-size-content">
-        <div class="font-size-header">
-          <h3>Text Size</h3>
-          <button class="close-font-panel" onclick="toggleFontSizeControls()" aria-label="Close font size panel">×</button>
-        </div>
-        
-        <div class="font-size-controls">
-          <div class="font-size-presets">
-            <button class="font-preset-btn" data-size="small" onclick="setFontSize('small')" aria-label="Set small font size">
-              <span class="preset-label">Small</span>
-              <span class="preset-sample">Aa</span>
-            </button>
-            <button class="font-preset-btn active" data-size="medium" onclick="setFontSize('medium')" aria-label="Set medium font size">
-              <span class="preset-label">Medium</span>
-              <span class="preset-sample">Aa</span>
-            </button>
-            <button class="font-preset-btn" data-size="large" onclick="setFontSize('large')" aria-label="Set large font size">
-              <span class="preset-label">Large</span>
-              <span class="preset-sample">Aa</span>
-            </button>
-            <button class="font-preset-btn" data-size="extra-large" onclick="setFontSize('extra-large')" aria-label="Set extra large font size">
-              <span class="preset-label">Extra Large</span>
-              <span class="preset-sample">Aa</span>
+
+      <div class="font-size-panel" id="fontSizePanel">
+        <div class="font-size-content">
+          <div class="font-size-header">
+            <h3>Text Size</h3>
+            <button
+              class="close-font-panel"
+              onclick="toggleFontSizeControls()"
+              aria-label="Close font size panel"
+            >
+              ×
             </button>
           </div>
-          
-          <div class="font-size-slider-container">
-            <label for="fontSizeSlider">Custom Size</label>
-            <div class="slider-wrapper">
-              <span class="slider-label">A</span>
-              <input type="range" id="fontSizeSlider" min="80" max="140" value="100" step="5" oninput="setCustomFontSize(this.value)">
-              <span class="slider-label large">A</span>
+
+          <div class="font-size-controls">
+            <div class="font-size-presets">
+              <button
+                class="font-preset-btn"
+                data-size="small"
+                onclick="setFontSize('small')"
+                aria-label="Set small font size"
+              >
+                <span class="preset-label">Small</span>
+                <span class="preset-sample">Aa</span>
+              </button>
+              <button
+                class="font-preset-btn active"
+                data-size="medium"
+                onclick="setFontSize('medium')"
+                aria-label="Set medium font size"
+              >
+                <span class="preset-label">Medium</span>
+                <span class="preset-sample">Aa</span>
+              </button>
+              <button
+                class="font-preset-btn"
+                data-size="large"
+                onclick="setFontSize('large')"
+                aria-label="Set large font size"
+              >
+                <span class="preset-label">Large</span>
+                <span class="preset-sample">Aa</span>
+              </button>
+              <button
+                class="font-preset-btn"
+                data-size="extra-large"
+                onclick="setFontSize('extra-large')"
+                aria-label="Set extra large font size"
+              >
+                <span class="preset-label">Extra Large</span>
+                <span class="preset-sample">Aa</span>
+              </button>
             </div>
-            <div class="slider-value" id="sliderValue">100%</div>
-          </div>
-          
-          <div class="font-options">
-            <label class="font-option">
-              <input type="checkbox" id="dyslexiaFont" onchange="toggleDyslexiaFont(this.checked)">
-              <span class="checkmark-text">Dyslexia-friendly font</span>
-            </label>
-            <label class="font-option">
-              <input type="checkbox" id="increaseLineHeight" onchange="toggleLineHeight(this.checked)">
-              <span class="checkmark-text">Increase line spacing</span>
-            </label>
-          </div>
-          
-          <div class="font-actions">
-            <button class="btn-secondary" onclick="resetFontSettings()" aria-label="Reset font settings to default">Reset to Default</button>
+
+            <div class="font-size-slider-container">
+              <label for="fontSizeSlider">Custom Size</label>
+              <div class="slider-wrapper">
+                <span class="slider-label">A</span>
+                <input
+                  type="range"
+                  id="fontSizeSlider"
+                  min="80"
+                  max="140"
+                  value="100"
+                  step="5"
+                  oninput="setCustomFontSize(this.value)"
+                />
+                <span class="slider-label large">A</span>
+              </div>
+              <div class="slider-value" id="sliderValue">100%</div>
+            </div>
+
+            <div class="font-options">
+              <label class="font-option">
+                <input
+                  type="checkbox"
+                  id="dyslexiaFont"
+                  onchange="toggleDyslexiaFont(this.checked)"
+                />
+                <span class="checkmark-text">Dyslexia-friendly font</span>
+              </label>
+              <label class="font-option">
+                <input
+                  type="checkbox"
+                  id="increaseLineHeight"
+                  onchange="toggleLineHeight(this.checked)"
+                />
+                <span class="checkmark-text">Increase line spacing</span>
+              </label>
+            </div>
+
+            <div class="font-actions">
+              <button
+                class="btn-secondary"
+                onclick="resetFontSettings()"
+                aria-label="Reset font settings to default"
+              >
+                Reset to Default
+              </button>
+            </div>
           </div>
         </div>
       </div>
+
+      {% include "components/breadcrumb.njk" %} {{ content | safe }}
+
+      <footer class="footer">Built with <a href="https://www.11ty.dev/">Eleventy</a> • 2024</footer>
     </div>
-    
-    {% include "components/breadcrumb.njk" %}
-    
-    {{ content | safe }}
-    
-    <footer class="footer">
-      Built with <a href="https://www.11ty.dev/">Eleventy</a> • 2024
-    </footer>
-  </div>
 
-  <script>
-    // Essential functionality only (no search)
-    
-    // Recent items and bookmarks functionality
-    let recentItems = [];
-    let bookmarkedItems = [];
+    <script>
+      // Essential functionality only (no search)
 
-    // Initialize data from localStorage
-    function initializeData() {
-      try {
-        const savedRecent = localStorage.getItem('recentItems');
-        if (savedRecent) {
-          try {
-            const parsed = JSON.parse(savedRecent);
-            if (Array.isArray(parsed)) {
-              recentItems = parsed.slice(0, 10);
-            } else {
-              throw new Error('Invalid recentItems format');
+      // Recent items and bookmarks functionality
+      let recentItems = [];
+      let bookmarkedItems = [];
+
+      // Initialize data from localStorage
+      function initializeData() {
+        try {
+          const savedRecent = localStorage.getItem('recentItems');
+          if (savedRecent) {
+            try {
+              const parsed = JSON.parse(savedRecent);
+              if (Array.isArray(parsed)) {
+                recentItems = parsed.slice(0, 10);
+              } else {
+                throw new Error('Invalid recentItems format');
+              }
+            } catch (parseError) {
+              console.warn('Corrupted recentItems data, resetting:', parseError);
+              localStorage.removeItem('recentItems');
+              recentItems = [];
             }
-          } catch (parseError) {
-            console.warn('Corrupted recentItems data, resetting:', parseError);
-            localStorage.removeItem('recentItems');
-            recentItems = [];
           }
-        }
-        
-        const savedBookmarks = localStorage.getItem('bookmarkedItems');
-        if (savedBookmarks) {
-          try {
-            const parsed = JSON.parse(savedBookmarks);
-            if (Array.isArray(parsed)) {
-              bookmarkedItems = parsed;
-            } else {
-              throw new Error('Invalid bookmarkedItems format');
+
+          const savedBookmarks = localStorage.getItem('bookmarkedItems');
+          if (savedBookmarks) {
+            try {
+              const parsed = JSON.parse(savedBookmarks);
+              if (Array.isArray(parsed)) {
+                bookmarkedItems = parsed;
+              } else {
+                throw new Error('Invalid bookmarkedItems format');
+              }
+            } catch (parseError) {
+              console.warn('Corrupted bookmarkedItems data, resetting:', parseError);
+              localStorage.removeItem('bookmarkedItems');
+              bookmarkedItems = [];
             }
-          } catch (parseError) {
-            console.warn('Corrupted bookmarkedItems data, resetting:', parseError);
-            localStorage.removeItem('bookmarkedItems');
-            bookmarkedItems = [];
           }
+        } catch (error) {
+          console.warn('Failed to load saved data:', error);
+          recentItems = [];
+          bookmarkedItems = [];
         }
-      } catch (error) {
-        console.warn('Failed to load saved data:', error);
-        recentItems = [];
-        bookmarkedItems = [];
-      }
-      
-      updateUI();
-    }
-    
-    function addToRecentItems(pageData) {
-      if (!pageData || !pageData.title) return;
-      
-      // Remove if already exists
-      recentItems = recentItems.filter(item => item.url !== pageData.url);
-      
-      // Add to beginning
-      recentItems.unshift(pageData);
-      
-      // Keep only last 10
-      recentItems = recentItems.slice(0, 10);
-      
-      // Save to localStorage
-      try {
-        localStorage.setItem('recentItems', JSON.stringify(recentItems));
-      } catch (error) {
-        console.warn('Failed to save recent items:', error);
-      }
-      
-      updateUI();
-    }
 
-    function toggleBookmark(pageData) {
-      if (!pageData || !pageData.title) return;
-      
-      const isBookmarked = bookmarkedItems.some(item => item.url === pageData.url);
-      
-      if (isBookmarked) {
-        bookmarkedItems = bookmarkedItems.filter(item => item.url !== pageData.url);
-      } else {
-        bookmarkedItems.push(pageData);
+        updateUI();
       }
-      
-      // Save to localStorage
-      try {
-        localStorage.setItem('bookmarkedItems', JSON.stringify(bookmarkedItems));
-      } catch (error) {
-        console.warn('Failed to save bookmarks:', error);
+
+      function addToRecentItems(pageData) {
+        if (!pageData || !pageData.title) return;
+
+        // Remove if already exists
+        recentItems = recentItems.filter(item => item.url !== pageData.url);
+
+        // Add to beginning
+        recentItems.unshift(pageData);
+
+        // Keep only last 10
+        recentItems = recentItems.slice(0, 10);
+
+        // Save to localStorage
+        try {
+          localStorage.setItem('recentItems', JSON.stringify(recentItems));
+        } catch (error) {
+          console.warn('Failed to save recent items:', error);
+        }
+
+        updateUI();
       }
-      
-      updateUI();
-      return !isBookmarked;
-    }
 
-    function isBookmarked(url) {
-      return bookmarkedItems.some(item => item.url === url);
-    }
+      function toggleBookmark(pageData) {
+        if (!pageData || !pageData.title) return;
 
-    function updateBookmarkButton(bookmarked) {
-      const bookmarkButton = document.querySelector('[data-bookmark-button]');
-      if (bookmarkButton) {
-        bookmarkButton.classList.toggle('bookmarked', bookmarked);
-        bookmarkButton.setAttribute('aria-pressed', bookmarked.toString());
+        const isBookmarked = bookmarkedItems.some(item => item.url === pageData.url);
+
+        if (isBookmarked) {
+          bookmarkedItems = bookmarkedItems.filter(item => item.url !== pageData.url);
+        } else {
+          bookmarkedItems.push(pageData);
+        }
+
+        // Save to localStorage
+        try {
+          localStorage.setItem('bookmarkedItems', JSON.stringify(bookmarkedItems));
+        } catch (error) {
+          console.warn('Failed to save bookmarks:', error);
+        }
+
+        updateUI();
+        return !isBookmarked;
       }
-    }
 
-    function updateUI() {
-      // Update counts
-      document.getElementById('recentCount').textContent = recentItems.length;
-      document.getElementById('bookmarksCount').textContent = bookmarkedItems.length;
-      
-      // Update lists
-      updateRecentsList();
-      updateBookmarksList();
-    }
+      function isBookmarked(url) {
+        return bookmarkedItems.some(item => item.url === url);
+      }
 
-    function updateRecentsList() {
-      const container = document.getElementById('recentsList');
-      if (recentItems.length === 0) {
-        container.innerHTML = `
+      function updateBookmarkButton(bookmarked) {
+        const bookmarkButton = document.querySelector('[data-bookmark-button]');
+        if (bookmarkButton) {
+          bookmarkButton.classList.toggle('bookmarked', bookmarked);
+          bookmarkButton.setAttribute('aria-pressed', bookmarked.toString());
+        }
+      }
+
+      function updateUI() {
+        // Update counts
+        document.getElementById('recentCount').textContent = recentItems.length;
+        document.getElementById('bookmarksCount').textContent = bookmarkedItems.length;
+
+        // Update lists
+        updateRecentsList();
+        updateBookmarksList();
+      }
+
+      function updateRecentsList() {
+        const container = document.getElementById('recentsList');
+        if (recentItems.length === 0) {
+          container.innerHTML = `
           <div class="empty-state">
             <div class="empty-icon">↻</div>
             <p>No recent items</p>
             <small>Pages you visit will appear here</small>
           </div>
         `;
-      } else {
-        container.innerHTML = recentItems.map(item => `
+        } else {
+          container.innerHTML = recentItems
+            .map(
+              item => `
           <div class="quick-access-item">
             <a href="${item.url}" class="item-link">
               <span class="item-title">${item.title}</span>
               <span class="item-subtitle">${item.subtitle || ''}</span>
             </a>
           </div>
-        `).join('');
+        `
+            )
+            .join('');
+        }
       }
-    }
 
-    function updateBookmarksList() {
-      const container = document.getElementById('bookmarksList');
-      if (bookmarkedItems.length === 0) {
-        container.innerHTML = `
+      function updateBookmarksList() {
+        const container = document.getElementById('bookmarksList');
+        if (bookmarkedItems.length === 0) {
+          container.innerHTML = `
           <div class="empty-state">
             <div class="empty-icon">★</div>
             <p>No bookmarks yet</p>
             <small>Bookmark pages to access them quickly later</small>
           </div>
         `;
-      } else {
-        container.innerHTML = bookmarkedItems.map(item => `
+        } else {
+          container.innerHTML = bookmarkedItems
+            .map(
+              item => `
           <div class="quick-access-item">
             <a href="${item.url}" class="item-link">
               <span class="item-title">${item.title}</span>
@@ -324,212 +443,221 @@
             </a>
             <button class="remove-bookmark" onclick="removeBookmark('${item.url}')" aria-label="Remove bookmark">×</button>
           </div>
-        `).join('');
+        `
+            )
+            .join('');
+        }
       }
-    }
 
-    function removeBookmark(url) {
-      bookmarkedItems = bookmarkedItems.filter(item => item.url !== url);
-      try {
-        localStorage.setItem('bookmarkedItems', JSON.stringify(bookmarkedItems));
-      } catch (error) {
-        console.warn('Failed to save bookmarks:', error);
+      function removeBookmark(url) {
+        bookmarkedItems = bookmarkedItems.filter(item => item.url !== url);
+        try {
+          localStorage.setItem('bookmarkedItems', JSON.stringify(bookmarkedItems));
+        } catch (error) {
+          console.warn('Failed to save bookmarks:', error);
+        }
+        updateUI();
       }
-      updateUI();
-    }
 
-    function clearAllRecentItems() {
-      recentItems = [];
-      try {
-        localStorage.removeItem('recentItems');
-      } catch (error) {
-        console.warn('Failed to clear recent items:', error);
+      function clearAllRecentItems() {
+        recentItems = [];
+        try {
+          localStorage.removeItem('recentItems');
+        } catch (error) {
+          console.warn('Failed to clear recent items:', error);
+        }
+        updateUI();
       }
-      updateUI();
-    }
 
-    function clearAllBookmarks() {
-      bookmarkedItems = [];
-      try {
-        localStorage.removeItem('bookmarkedItems');
-      } catch (error) {
-        console.warn('Failed to clear bookmarks:', error);
+      function clearAllBookmarks() {
+        bookmarkedItems = [];
+        try {
+          localStorage.removeItem('bookmarkedItems');
+        } catch (error) {
+          console.warn('Failed to clear bookmarks:', error);
+        }
+        updateUI();
       }
-      updateUI();
-    }
 
-    function toggleRecentsBookmarks() {
-      const panel = document.getElementById('recentsBookmarksPanel');
-      panel.classList.toggle('active');
-    }
-
-    function switchTab(tabName) {
-      const tabs = document.querySelectorAll('.tab-btn');
-      const contents = document.querySelectorAll('.tab-content');
-      
-      tabs.forEach(tab => tab.classList.remove('active'));
-      contents.forEach(content => content.classList.remove('active'));
-      
-      document.getElementById(tabName + 'Tab').classList.add('active');
-      document.getElementById(tabName + 'Content').classList.add('active');
-    }
-
-    // Font size controls
-    function toggleFontSizeControls() {
-      const panel = document.getElementById('fontSizePanel');
-      panel.classList.toggle('visible');
-    }
-
-    function setFontSize(size) {
-      const sizes = {
-        'small': '90%',
-        'medium': '100%',
-        'large': '110%',
-        'extra-large': '120%'
-      };
-      
-      document.documentElement.style.fontSize = sizes[size];
-      
-      // Update active button
-      document.querySelectorAll('.font-preset-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.size === size);
-      });
-      
-      // Update slider
-      const slider = document.getElementById('fontSizeSlider');
-      const value = parseInt(sizes[size]);
-      slider.value = value;
-      document.getElementById('sliderValue').textContent = sizes[size];
-      
-      // Save preference
-      try {
-        localStorage.setItem('fontSize', size);
-      } catch (error) {
-        console.warn('Failed to save font size preference:', error);
+      function toggleRecentsBookmarks() {
+        const panel = document.getElementById('recentsBookmarksPanel');
+        panel.classList.toggle('active');
       }
-    }
 
-    function setCustomFontSize(value) {
-      const percentage = value + '%';
-      document.documentElement.style.fontSize = percentage;
-      document.getElementById('sliderValue').textContent = percentage;
-      
-      // Update preset buttons
-      document.querySelectorAll('.font-preset-btn').forEach(btn => {
-        btn.classList.remove('active');
-      });
-      
-      // Save preference
-      try {
-        localStorage.setItem('customFontSize', value);
-      } catch (error) {
-        console.warn('Failed to save custom font size:', error);
+      function switchTab(tabName) {
+        const tabs = document.querySelectorAll('.tab-btn');
+        const contents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => tab.classList.remove('active'));
+        contents.forEach(content => content.classList.remove('active'));
+
+        document.getElementById(tabName + 'Tab').classList.add('active');
+        document.getElementById(tabName + 'Content').classList.add('active');
       }
-    }
 
-    function toggleDyslexiaFont(enabled) {
-      document.documentElement.classList.toggle('dyslexia-font', enabled);
-      try {
-        localStorage.setItem('dyslexiaFont', enabled);
-      } catch (error) {
-        console.warn('Failed to save dyslexia font preference:', error);
+      // Font size controls
+      function toggleFontSizeControls() {
+        const panel = document.getElementById('fontSizePanel');
+        panel.classList.toggle('visible');
       }
-    }
 
-    function toggleLineHeight(enabled) {
-      document.documentElement.classList.toggle('increased-line-height', enabled);
-      try {
-        localStorage.setItem('increasedLineHeight', enabled);
-      } catch (error) {
-        console.warn('Failed to save line height preference:', error);
+      function setFontSize(size) {
+        const sizes = {
+          small: '90%',
+          medium: '100%',
+          large: '110%',
+          'extra-large': '120%',
+        };
+
+        document.documentElement.style.fontSize = sizes[size];
+
+        // Update active button
+        document.querySelectorAll('.font-preset-btn').forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.size === size);
+        });
+
+        // Update slider
+        const slider = document.getElementById('fontSizeSlider');
+        const value = parseInt(sizes[size]);
+        slider.value = value;
+        document.getElementById('sliderValue').textContent = sizes[size];
+
+        // Save preference
+        try {
+          localStorage.setItem('fontSize', size);
+        } catch (error) {
+          console.warn('Failed to save font size preference:', error);
+        }
       }
-    }
 
-    function resetFontSettings() {
-      document.documentElement.style.fontSize = '';
-      document.documentElement.classList.remove('dyslexia-font', 'increased-line-height');
-      
-      // Reset UI
-      document.querySelector('.font-preset-btn[data-size="medium"]').classList.add('active');
-      document.getElementById('fontSizeSlider').value = 100;
-      document.getElementById('sliderValue').textContent = '100%';
-      document.getElementById('dyslexiaFont').checked = false;
-      document.getElementById('increaseLineHeight').checked = false;
-      
-      // Clear localStorage
-      try {
-        localStorage.removeItem('fontSize');
-        localStorage.removeItem('customFontSize');
-        localStorage.removeItem('dyslexiaFont');
-        localStorage.removeItem('increasedLineHeight');
-      } catch (error) {
-        console.warn('Failed to clear font preferences:', error);
+      function setCustomFontSize(value) {
+        const percentage = value + '%';
+        document.documentElement.style.fontSize = percentage;
+        document.getElementById('sliderValue').textContent = percentage;
+
+        // Update preset buttons
+        document.querySelectorAll('.font-preset-btn').forEach(btn => {
+          btn.classList.remove('active');
+        });
+
+        // Save preference
+        try {
+          localStorage.setItem('customFontSize', value);
+        } catch (error) {
+          console.warn('Failed to save custom font size:', error);
+        }
       }
-    }
 
-    // Theme functionality is handled by theme-manager.js
-
-    function toggleHighContrast() {
-      // This will be handled by the theme manager module when it loads
-      if (window.themeManager && window.themeManager.toggleHighContrast) {
-        window.themeManager.toggleHighContrast();
+      function toggleDyslexiaFont(enabled) {
+        document.documentElement.classList.toggle('dyslexia-font', enabled);
+        try {
+          localStorage.setItem('dyslexiaFont', enabled);
+        } catch (error) {
+          console.warn('Failed to save dyslexia font preference:', error);
+        }
       }
-    }
-    
-    function toggleThemeDropdown() {
-      if (window.themeManager && window.themeManager.toggleDropdown) {
-        window.themeManager.toggleDropdown();
-      }
-    }
 
-    // Initialize when page loads
-    document.addEventListener('DOMContentLoaded', function() {
-      initializeData();
-      
-      // Auto-add current page to recent items
-      const currentPageData = {
-        title: document.title.replace(' | Explore Scripture', '').replace('Explore Scripture', 'Home'),
-        subtitle: document.querySelector('meta[name="description"]')?.getAttribute('content')?.substring(0, 80) + '...' || '',
-        url: window.location.pathname,
-        timestamp: Date.now()
-      };
-      
-      // Don't add if it's just the site title
-      if (currentPageData.title && currentPageData.title !== 'Explore Scripture') {
-        setTimeout(() => addToRecentItems(currentPageData), 1000);
+      function toggleLineHeight(enabled) {
+        document.documentElement.classList.toggle('increased-line-height', enabled);
+        try {
+          localStorage.setItem('increasedLineHeight', enabled);
+        } catch (error) {
+          console.warn('Failed to save line height preference:', error);
+        }
       }
-    });
 
-    // Service worker registration and PWA functionality
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-          .then(registration => {
-            registration.addEventListener('updatefound', () => {
-              showUpdateNotification();
-            });
-          })
-          .catch(error => {
-            console.warn('SW registration failed:', error);
-          });
-      });
-      
-      // Listen for updates
-      navigator.serviceWorker.addEventListener('message', event => {
-        if (event.data && event.data.type === 'UPDATE_AVAILABLE') {
-          showUpdateNotification();
+      function resetFontSettings() {
+        document.documentElement.style.fontSize = '';
+        document.documentElement.classList.remove('dyslexia-font', 'increased-line-height');
+
+        // Reset UI
+        document.querySelector('.font-preset-btn[data-size="medium"]').classList.add('active');
+        document.getElementById('fontSizeSlider').value = 100;
+        document.getElementById('sliderValue').textContent = '100%';
+        document.getElementById('dyslexiaFont').checked = false;
+        document.getElementById('increaseLineHeight').checked = false;
+
+        // Clear localStorage
+        try {
+          localStorage.removeItem('fontSize');
+          localStorage.removeItem('customFontSize');
+          localStorage.removeItem('dyslexiaFont');
+          localStorage.removeItem('increasedLineHeight');
+        } catch (error) {
+          console.warn('Failed to clear font preferences:', error);
+        }
+      }
+
+      // Theme functionality is handled by theme-manager.js
+
+      function toggleHighContrast() {
+        // This will be handled by the theme manager module when it loads
+        if (window.themeManager && window.themeManager.toggleHighContrast) {
+          window.themeManager.toggleHighContrast();
+        }
+      }
+
+      function toggleThemeDropdown() {
+        if (window.themeManager && window.themeManager.toggleDropdown) {
+          window.themeManager.toggleDropdown();
+        }
+      }
+
+      // Initialize when page loads
+      document.addEventListener('DOMContentLoaded', function () {
+        initializeData();
+
+        // Auto-add current page to recent items
+        const currentPageData = {
+          title: document.title
+            .replace(' | Explore Scripture', '')
+            .replace('Explore Scripture', 'Home'),
+          subtitle:
+            document
+              .querySelector('meta[name="description"]')
+              ?.getAttribute('content')
+              ?.substring(0, 80) + '...' || '',
+          url: window.location.pathname,
+          timestamp: Date.now(),
+        };
+
+        // Don't add if it's just the site title
+        if (currentPageData.title && currentPageData.title !== 'Explore Scripture') {
+          setTimeout(() => addToRecentItems(currentPageData), 1000);
         }
       });
-    }
 
-    let updateNotification = null;
+      // Service worker registration and PWA functionality
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register('/sw.js')
+            .then(registration => {
+              registration.addEventListener('updatefound', () => {
+                showUpdateNotification();
+              });
+            })
+            .catch(error => {
+              console.warn('SW registration failed:', error);
+            });
+        });
 
-    function showUpdateNotification() {
-      if (updateNotification) return;
-      
-      updateNotification = document.createElement('div');
-      updateNotification.className = 'update-notification';
-      updateNotification.innerHTML = `
+        // Listen for updates
+        navigator.serviceWorker.addEventListener('message', event => {
+          if (event.data && event.data.type === 'UPDATE_AVAILABLE') {
+            showUpdateNotification();
+          }
+        });
+      }
+
+      let updateNotification = null;
+
+      function showUpdateNotification() {
+        if (updateNotification) return;
+
+        updateNotification = document.createElement('div');
+        updateNotification.className = 'update-notification';
+        updateNotification.innerHTML = `
         <div class="update-content">
           <span class="update-icon">↻</span>
           <div class="update-text">
@@ -540,48 +668,48 @@
           <button class="update-dismiss" onclick="dismissUpdateNotification()" aria-label="Dismiss update notification">✕</button>
         </div>
       `;
-      
-      document.body.appendChild(updateNotification);
-      
-      // Auto-remove after 10 seconds
-      setTimeout(() => {
-        dismissUpdateNotification();
-      }, 10000);
-    }
 
-    function dismissUpdateNotification() {
-      if (updateNotification) {
-        updateNotification.remove();
-        updateNotification = null;
+        document.body.appendChild(updateNotification);
+
+        // Auto-remove after 10 seconds
+        setTimeout(() => {
+          dismissUpdateNotification();
+        }, 10000);
       }
-    }
 
-    function updateServiceWorker() {
-      if (window.newServiceWorker) {
-        window.newServiceWorker.postMessage({ type: 'SKIP_WAITING' });
-        window.location.reload();
+      function dismissUpdateNotification() {
+        if (updateNotification) {
+          updateNotification.remove();
+          updateNotification = null;
+        }
       }
-    }
 
-    // Online/offline status
-    window.addEventListener('online', showOnlineStatus);
-    
-    function showOnlineStatus() {
-      const onlineIndicator = document.createElement('div');
-      onlineIndicator.className = 'online-indicator';
-      onlineIndicator.innerHTML = `
+      function updateServiceWorker() {
+        if (window.newServiceWorker) {
+          window.newServiceWorker.postMessage({ type: 'SKIP_WAITING' });
+          window.location.reload();
+        }
+      }
+
+      // Online/offline status
+      window.addEventListener('online', showOnlineStatus);
+
+      function showOnlineStatus() {
+        const onlineIndicator = document.createElement('div');
+        onlineIndicator.className = 'online-indicator';
+        onlineIndicator.innerHTML = `
         <div class="online-content">
           <div class="online-icon">●</div>
           <span>Back online!</span>
         </div>
       `;
-      
-      document.body.appendChild(onlineIndicator);
-      
-      setTimeout(() => {
-        onlineIndicator.remove();
-      }, 3000);
-    }
-  </script>
-</body>
+
+        document.body.appendChild(onlineIndicator);
+
+        setTimeout(() => {
+          onlineIndicator.remove();
+        }, 3000);
+      }
+    </script>
+  </body>
 </html>

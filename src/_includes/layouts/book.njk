@@ -1,174 +1,226 @@
 ---
 layout: base.njk
 ---
+
 <div class="header">
   <div class="header-content">
     <h1>{{ book.name }}</h1>
     <span class="badge">{{ book.testament }}</span>
   </div>
-  <button class="bookmark-btn" onclick="handleBookmarkClick()" title="Add bookmark" aria-label="Add bookmark for {{ book.name }}">
+  <button
+    class="bookmark-btn"
+    onclick="handleBookmarkClick()"
+    title="Add bookmark"
+    aria-label="Add bookmark for {{ book.name }}"
+  >
     <span class="bookmark-icon">☆</span>
     <span class="bookmark-text">Bookmark</span>
   </button>
 </div>
 
 <p class="meta">
-  <strong>Section:</strong> {{ book.category }} &nbsp; • &nbsp;
-  <strong>Trad. Author:</strong> {{ book.author }} &nbsp; • &nbsp;
-  <strong>Original Language:</strong> {{ book.language }}
+  <strong>Section:</strong> {{ book.category }} &nbsp; • &nbsp; <strong>Trad. Author:</strong> {{
+  book.author }} &nbsp; • &nbsp; <strong>Original Language:</strong> {{ book.language }}
 </p>
 
-{% set videoData = bibleProjectVideos[book.slug] %}
-{% if videoData %}
-  <div class="video-section">
-    <h3>Bible Project Overview</h3>
-    {% if videoData.parts %}
-      {% for part in videoData.parts %}
-        <div style="margin-bottom: 1.5rem;">
-          <h4>{{ part.title }}</h4>
-          <p class="video-title">{{ part.description }}</p>
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/{{ part.youtubeId }}" 
-                    title="{{ part.title }}" 
-                    allowfullscreen>
-            </iframe>
-          </div>
-        </div>
-      {% endfor %}
-    {% else %}
-      <p class="video-title">{{ videoData.description }}</p>
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/{{ videoData.youtubeId }}" 
-                title="{{ videoData.title }}" 
-                allowfullscreen>
-        </iframe>
-      </div>
-    {% endif %}
+{% set videoData = bibleProjectVideos[book.slug] %} {% if videoData %}
+<div class="video-section">
+  <h3>Bible Project Overview</h3>
+  {% if videoData.parts %} {% for part in videoData.parts %}
+  <div style="margin-bottom: 1.5rem">
+    <h4>{{ part.title }}</h4>
+    <p class="video-title">{{ part.description }}</p>
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/{{ part.youtubeId }}"
+        title="{{ part.title }}"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
   </div>
+  {% endfor %} {% else %}
+  <p class="video-title">{{ videoData.description }}</p>
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/{{ videoData.youtubeId }}"
+      title="{{ videoData.title }}"
+      allowfullscreen
+    >
+    </iframe>
+  </div>
+  {% endif %}
+</div>
+{% endif %} {% if book.chapterSummaries and (book.chapterSummaries | length) > 0 %} {% set
+chapterCount = (book.chapterSummaries | length) %} {% if chapterCount >= 15 %}
+<div class="table-of-contents">
+  <h3>Table of Contents</h3>
+  <div class="toc-toggle">
+    <button
+      class="toc-toggle-btn"
+      onclick="toggleTOC()"
+      aria-label="Toggle table of contents"
+      aria-expanded="false"
+    >
+      <span class="toc-icon">▦</span>
+      <span class="toc-text">Show all {{ chapterCount }} chapters</span>
+    </button>
+  </div>
+  <div class="toc-content" id="tocContent">
+    <div class="toc-grid">
+      {% for ch, sum in book.chapterSummaries | chapterSort %}
+      <a
+        href="#chapter-{{ ch }}"
+        class="toc-item"
+        onclick="scrollToChapter({{ ch }}); closeTOC();"
+        title="{{ sum | truncate(100) | striptags }}"
+      >
+        <span class="toc-chapter-num">{{ ch }}</span>
+        <span class="toc-chapter-preview">{{ sum | truncate(40) | striptags }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
 {% endif %}
 
-{% if book.chapterSummaries and (book.chapterSummaries | length) > 0 %}
-  {% set chapterCount = (book.chapterSummaries | length) %}
-  
-  {% if chapterCount >= 15 %}
-    <div class="table-of-contents">
-      <h3>Table of Contents</h3>
-      <div class="toc-toggle">
-        <button class="toc-toggle-btn" onclick="toggleTOC()" aria-label="Toggle table of contents" aria-expanded="false">
-          <span class="toc-icon">▦</span> 
-          <span class="toc-text">Show all {{ chapterCount }} chapters</span>
-        </button>
-      </div>
-      <div class="toc-content" id="tocContent">
-        <div class="toc-grid">
-          {% for ch, sum in book.chapterSummaries | chapterSort %}
-            <a href="#chapter-{{ ch }}" class="toc-item" onclick="scrollToChapter({{ ch }}); closeTOC();" title="{{ sum | truncate(100) | striptags }}">
-              <span class="toc-chapter-num">{{ ch }}</span>
-              <span class="toc-chapter-preview">{{ sum | truncate(40) | striptags }}</span>
-            </a>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-  {% endif %}
-
-  <h2>Chapter Summaries</h2>
-  <div class="chapter-navigation-info">
-    <p><strong>Tip:</strong> Click on any chapter number to jump to it, or use the navigation buttons to move between chapters{% if chapterCount >= 15 %} • Use the table of contents above for quick navigation{% endif %}</p>
-  </div>
-  <div class="table-wrapper">
-    <table class="table">
+<h2>Chapter Summaries</h2>
+<div class="chapter-navigation-info">
+  <p>
+    <strong>Tip:</strong> Click on any chapter number to jump to it, or use the navigation buttons
+    to move between chapters{% if chapterCount >= 15 %} • Use the table of contents above for quick
+    navigation{% endif %}
+  </p>
+</div>
+<div class="table-wrapper">
+  <table class="table">
     <thead>
-      <tr><th>Chapter</th><th>Summary</th><th>Commentary</th></tr>
+      <tr>
+        <th>Chapter</th>
+        <th>Summary</th>
+        <th>Commentary</th>
+      </tr>
     </thead>
     <tbody>
       {% for ch, sum in book.chapterSummaries | chapterSort %}
-        <tr id="chapter-{{ ch }}">
-          <td>
-            <span class="chapter-number">{{ ch }}</span>
-            <div class="chapter-nav-buttons">
-              {% set prevChapter = (ch | int) - 1 %}
-              {% set nextChapter = (ch | int) + 1 %}
-              {% if prevChapter > 0 and book.chapterSummaries[prevChapter] %}
-                <button class="chapter-nav-btn prev" onclick="scrollToChapter({{ prevChapter }})" title="Previous Chapter">
-                  ← {{ prevChapter }}
-                </button>
-              {% endif %}
-              {% if book.chapterSummaries[nextChapter] %}
-                <button class="chapter-nav-btn next" onclick="scrollToChapter({{ nextChapter }})" title="Next Chapter">
-                  {{ nextChapter }} →
-                </button>
-              {% endif %}
-            </div>
-          </td>
-          <td>
-            <div class="chapter-summary-text">{{ sum | safe }}</div>
-            <div class="chapter-cross-references" id="crossRefs-{{ ch }}"></div>
-          </td>
-          <td>
-            <div class="commentary-actions">
-              <a href="{{ book.name | commentaryUrl(ch) }}" 
-                 target="_blank" 
-                 class="commentary-link"
-                 rel="noopener">
-                Commentary
-              </a>
-            </div>
-          </td>
-        </tr>
+      <tr id="chapter-{{ ch }}">
+        <td>
+          <span class="chapter-number">{{ ch }}</span>
+          <div class="chapter-nav-buttons">
+            {% set prevChapter = (ch | int) - 1 %} {% set nextChapter = (ch | int) + 1 %} {% if
+            prevChapter > 0 and book.chapterSummaries[prevChapter] %}
+            <button
+              class="chapter-nav-btn prev"
+              onclick="scrollToChapter({{ prevChapter }})"
+              title="Previous Chapter"
+            >
+              ← {{ prevChapter }}
+            </button>
+            {% endif %} {% if book.chapterSummaries[nextChapter] %}
+            <button
+              class="chapter-nav-btn next"
+              onclick="scrollToChapter({{ nextChapter }})"
+              title="Next Chapter"
+            >
+              {{ nextChapter }} →
+            </button>
+            {% endif %}
+          </div>
+        </td>
+        <td>
+          <div class="chapter-summary-text">{{ sum | safe }}</div>
+          <div class="chapter-cross-references" id="crossRefs-{{ ch }}"></div>
+        </td>
+        <td>
+          <div class="commentary-actions">
+            <a
+              href="{{ book.name | commentaryUrl(ch) }}"
+              target="_blank"
+              class="commentary-link"
+              rel="noopener"
+            >
+              Commentary
+            </a>
+          </div>
+        </td>
+      </tr>
       {% endfor %}
     </tbody>
   </table>
-  </div>
+</div>
 
-  <div class="key-figures-section" id="keyFiguresSection">
-    <div class="section-header">
-      <h3>Key Figures</h3>
-      <div class="section-controls">
-        <button class="view-all-btn" onclick="viewAllEntities('{{ book.slug }}')" title="View all characters and entities for this book">
-          View All →
-        </button>
-      </div>
-    </div>
-    <div class="key-figures-loading" id="keyFiguresLoading">
-      <div class="loading-spinner"></div>
-      <span>Loading key figures...</span>
-    </div>
-    <div class="key-figures-content" id="keyFiguresContent" style="display: none;">
-      <div class="key-figures-grid" id="keyFiguresGrid">
-        <!-- Figures will be loaded here -->
-      </div>
-      <div class="key-figures-actions">
-        <button class="load-more-btn" id="loadMoreFigures" onclick="loadMoreFigures()" style="display: none;" aria-label="Load more key figures">
-          Load More Figures
-        </button>
-      </div>
-    </div>
-    <div class="key-figures-error" id="keyFiguresError" style="display: none;">
-      <p>Unable to load key figures. <a href="#" onclick="retryLoadFigures()" aria-label="Retry loading key figures">Try again</a></p>
-    </div>
-    <div class="key-figures-empty" id="keyFiguresEmpty" style="display: none;">
-      <div class="empty-state">
-        <span class="empty-icon">📚</span>
-        <h4>No Key Figures Available</h4>
-        <p>This book focuses on themes, teachings, or poetry rather than specific named characters. The timeless truths and wisdom it contains are just as valuable for study and reflection.</p>
-      </div>
+<div class="key-figures-section" id="keyFiguresSection">
+  <div class="section-header">
+    <h3>Key Figures</h3>
+    <div class="section-controls">
+      <button
+        class="view-all-btn"
+        onclick="viewAllEntities('{{ book.slug }}')"
+        title="View all characters and entities for this book"
+      >
+        View All →
+      </button>
     </div>
   </div>
+  <div class="key-figures-loading" id="keyFiguresLoading">
+    <div class="loading-spinner"></div>
+    <span>Loading key figures...</span>
+  </div>
+  <div class="key-figures-content" id="keyFiguresContent" style="display: none">
+    <div class="key-figures-grid" id="keyFiguresGrid">
+      <!-- Figures will be loaded here -->
+    </div>
+    <div class="key-figures-actions">
+      <button
+        class="load-more-btn"
+        id="loadMoreFigures"
+        onclick="loadMoreFigures()"
+        style="display: none"
+        aria-label="Load more key figures"
+      >
+        Load More Figures
+      </button>
+    </div>
+  </div>
+  <div class="key-figures-error" id="keyFiguresError" style="display: none">
+    <p>
+      Unable to load key figures.
+      <a href="#" onclick="retryLoadFigures()" aria-label="Retry loading key figures">Try again</a>
+    </p>
+  </div>
+  <div class="key-figures-empty" id="keyFiguresEmpty" style="display: none">
+    <div class="empty-state">
+      <span class="empty-icon">📚</span>
+      <h4>No Key Figures Available</h4>
+      <p>
+        This book focuses on themes, teachings, or poetry rather than specific named characters. The
+        timeless truths and wisdom it contains are just as valuable for study and reflection.
+      </p>
+    </div>
+  </div>
+</div>
 
 {% else %}
-  <div class="chapter-summary">
-    <h3>Chapter Summaries Coming Soon</h3>
-    <p class="meta">We're working on detailed chapter-by-chapter summaries for {{ book.name }}. Check back soon!</p>
-    
-    {% if videoData %}
-      <p class="meta">In the meantime, watch the Bible Project overview above for a great introduction to this book.</p>
-    {% endif %}
-  </div>
+<div class="chapter-summary">
+  <h3>Chapter Summaries Coming Soon</h3>
+  <p class="meta">
+    We're working on detailed chapter-by-chapter summaries for {{ book.name }}. Check back soon!
+  </p>
+
+  {% if videoData %}
+  <p class="meta">
+    In the meantime, watch the Bible Project overview above for a great introduction to this book.
+  </p>
+  {% endif %}
+</div>
 {% endif %}
 
 <p class="back-link">
-  <a href="/categories/{{ book.category | slug }}/" onclick="handleNavigation('category-back', '{{ book.category }}')">← Back to {{ book.category }}</a>
+  <a
+    href="/categories/{{ book.category | slug }}/"
+    onclick="handleNavigation('category-back', '{{ book.category }}')"
+    >← Back to {{ book.category }}</a
+  >
 </p>
 
 <script>
@@ -178,11 +230,11 @@ layout: base.njk
     const tocText = document.querySelector('.toc-text');
     const tocIcon = document.querySelector('.toc-icon');
     const isVisible = tocContent.style.display === 'block';
-    
+
     tocContent.style.display = isVisible ? 'none' : 'block';
     tocText.textContent = isVisible ? 'Show all {{ (book.chapterSummaries | length) }} chapters' : 'Hide table of contents';
     tocIcon.textContent = isVisible ? '▦' : '□';
-    
+
     // Track TOC usage
     if (window.telemetry) {
       window.telemetry.recordUserAction('toc-toggle', isVisible ? 'close' : 'open', {
@@ -191,12 +243,12 @@ layout: base.njk
       });
     }
   }
-  
+
   function closeTOC() {
     const tocContent = document.getElementById('tocContent');
     const tocText = document.querySelector('.toc-text');
     const tocIcon = document.querySelector('.toc-icon');
-    
+
     if (tocContent.style.display === 'block') {
       tocContent.style.display = 'none';
       tocText.textContent = 'Show all {{ (book.chapterSummaries | length) }} chapters';
@@ -208,17 +260,17 @@ layout: base.njk
   function scrollToChapter(chapterNumber) {
     const element = document.getElementById('chapter-' + chapterNumber);
     if (element) {
-      element.scrollIntoView({ 
-        behavior: 'smooth', 
-        block: 'center' 
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
       });
-      
+
       // Add highlight animation
       element.classList.add('chapter-highlight');
       setTimeout(() => {
         element.classList.remove('chapter-highlight');
       }, 2000);
-      
+
       // Track navigation
       if (window.telemetry) {
         window.telemetry.recordNavigation('chapter-nav', window.location.href, {
@@ -229,26 +281,26 @@ layout: base.njk
       }
     }
   }
-  
+
   // Keyboard navigation for chapters
   document.addEventListener('keydown', function(e) {
     // Only if not typing in an input
     if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
       return;
     }
-    
+
     if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
       // Find current visible chapter and go to previous
       const chapters = document.querySelectorAll('[id^="chapter-"]');
       let currentChapter = null;
-      
+
       chapters.forEach(chapter => {
         const rect = chapter.getBoundingClientRect();
         if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
           currentChapter = chapter;
         }
       });
-      
+
       if (currentChapter) {
         const chapterNum = parseInt(currentChapter.id.split('-')[1]);
         const prevBtn = currentChapter.querySelector('.chapter-nav-btn.prev');
@@ -261,14 +313,14 @@ layout: base.njk
       // Find current visible chapter and go to next
       const chapters = document.querySelectorAll('[id^="chapter-"]');
       let currentChapter = null;
-      
+
       chapters.forEach(chapter => {
         const rect = chapter.getBoundingClientRect();
         if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
           currentChapter = chapter;
         }
       });
-      
+
       if (currentChapter) {
         const chapterNum = parseInt(currentChapter.id.split('-')[1]);
         const nextBtn = currentChapter.querySelector('.chapter-nav-btn.next');
@@ -289,9 +341,9 @@ layout: base.njk
       category: '{{ book.category }}',
       testament: '{{ book.testament }}'
     };
-    
+
     const isBookmarked = toggleBookmark(pageData);
-    
+
     // Show quick feedback
     const bookmarkBtn = document.querySelector('.bookmark-btn');
     if (bookmarkBtn) {
@@ -305,15 +357,15 @@ layout: base.njk
   // Initialize cross-references for all chapters in this book
   function initializeChapterCrossReferences() {
     if (typeof getCrossReferencesForChapter === 'undefined') return;
-    
+
     const bookSlug = '{{ book.slug }}';
     const chapterRows = document.querySelectorAll('[id^="chapter-"]');
-    
+
     chapterRows.forEach(row => {
       const chapterNum = row.id.split('-')[1];
       const crossRefsContainer = document.getElementById(`crossRefs-${chapterNum}`);
       const summaryText = row.querySelector('.chapter-summary-text');
-      
+
       if (crossRefsContainer && summaryText) {
         // Process summary text for automatic cross-references
         if (typeof processTextForCrossReferences === 'function') {
@@ -321,13 +373,13 @@ layout: base.njk
           const processedText = processTextForCrossReferences(originalText, bookSlug, chapterNum);
           summaryText.innerHTML = processedText;
         }
-        
+
         // Get and display cross-references for this chapter
         const crossRefs = getCrossReferencesForChapter(bookSlug, chapterNum);
         if (crossRefs && crossRefs.length > 0) {
           displayCrossReferences(crossRefsContainer, crossRefs);
         }
-        
+
         // Add thematic reference indicators
         addThemeReferenceTooltips(summaryText);
       }
@@ -342,7 +394,7 @@ layout: base.njk
         e.preventDefault();
         showThematicReferences(theme, element);
       });
-      
+
       element.style.cursor = 'pointer';
       element.style.textDecoration = 'underline';
       element.style.textDecorationStyle = 'dotted';
@@ -352,10 +404,10 @@ layout: base.njk
 
   function showThematicReferences(theme, triggerElement) {
     if (typeof getThematicReferences === 'undefined') return;
-    
+
     const themeRefs = getThematicReferences(theme);
     if (themeRefs.length === 0) return;
-    
+
     // Create and show popup with thematic references
     const popup = document.createElement('div');
     popup.className = 'theme-references-popup';
@@ -373,7 +425,7 @@ layout: base.njk
         `).join('')}
       </div>
     `;
-    
+
     // Position popup near trigger element
     document.body.appendChild(popup);
     const rect = triggerElement.getBoundingClientRect();
@@ -381,18 +433,18 @@ layout: base.njk
     popup.style.top = (rect.bottom + window.scrollY + 10) + 'px';
     popup.style.left = Math.min(rect.left + window.scrollX, window.innerWidth - 320) + 'px';
     popup.style.zIndex = '1000';
-    
+
     // Auto-remove after delay or on click outside
     setTimeout(() => {
       if (popup.parentElement) popup.remove();
     }, 10000);
-    
+
     document.addEventListener('click', function(e) {
       if (!popup.contains(e.target) && e.target !== triggerElement) {
         popup.remove();
       }
     }, { once: true });
-    
+
     // Track theme exploration
     if (window.telemetry) {
       window.telemetry.recordUserAction('theme-explore', theme, {
@@ -406,7 +458,7 @@ layout: base.njk
     const showMoreBtn = event.target;
     const crossRefsList = showMoreBtn.previousElementSibling;
     const hiddenRefs = crossRefsList.querySelectorAll('.cross-reference-item[style*="display: none"]');
-    
+
     if (hiddenRefs.length > 0) {
       hiddenRefs.forEach(ref => ref.style.display = 'block');
       showMoreBtn.textContent = 'Show less';
@@ -431,20 +483,20 @@ layout: base.njk
     const contentEl = document.getElementById('keyFiguresContent');
     const errorEl = document.getElementById('keyFiguresError');
     const emptyEl = document.getElementById('keyFiguresEmpty');
-    
+
     try {
       loadingEl.style.display = 'flex';
       contentEl.style.display = 'none';
       errorEl.style.display = 'none';
       emptyEl.style.display = 'none';
-      
+
       // Load entities specific to this book from per-book entity file
       const bookEntitiesUrl = `/assets/data/books/${bookSlug}-entities.json`;
       const response = await fetch(bookEntitiesUrl);
-      
+
       let keyFigures = [];
       let bookEntities = [];
-      
+
       if (response.ok) {
         bookEntities = await response.json();
         // Take top 20 entities (already sorted by reference count)
@@ -462,21 +514,21 @@ layout: base.njk
         keyFigures = [];
         bookEntities = [];
       }
-      
+
       currentFiguresData = {
         book: bookName,
         slug: bookSlug,
         key_figures: keyFigures,
         all_entities: bookEntities
       };
-      
+
       displayKeyFigures();
-      
+
     } catch (error) {
       console.error('Error loading key figures:', error);
       loadingEl.style.display = 'none';
       errorEl.style.display = 'block';
-      
+
       if (window.logger) {
         window.logger.error('key-figures-load-error', error.message, {
           book: bookSlug,
@@ -492,32 +544,32 @@ layout: base.njk
     const emptyEl = document.getElementById('keyFiguresEmpty');
     const gridEl = document.getElementById('keyFiguresGrid');
     const loadMoreBtn = document.getElementById('loadMoreFigures');
-    
+
     loadingEl.style.display = 'none';
-    
+
     // Handle missing or empty data
     if (!currentFiguresData || !currentFiguresData.key_figures || currentFiguresData.key_figures.length === 0) {
       contentEl.style.display = 'none';
       emptyEl.style.display = 'block';
       return;
     }
-    
+
     // Show content for books with entities
     emptyEl.style.display = 'none';
     contentEl.style.display = 'block';
-    
+
     // Show initial batch of figures
     const initialFigures = currentFiguresData.key_figures.slice(0, figuresPerPage);
     currentDisplayedFigures = initialFigures.length;
-    
+
     gridEl.innerHTML = initialFigures.map(figure => createFigureCard(figure)).join('');
-    
+
     // Show load more button if there are more figures
     if (currentFiguresData.key_figures.length > figuresPerPage) {
       loadMoreBtn.style.display = 'block';
       loadMoreBtn.textContent = `Load ${Math.min(figuresPerPage, currentFiguresData.key_figures.length - currentDisplayedFigures)} More`;
     }
-    
+
     // Track figures display
     if (window.telemetry) {
       window.telemetry.recordUserAction('key-figures-loaded', '{{ book.slug }}', {
@@ -537,11 +589,11 @@ layout: base.njk
       'event': '⚡',
       'group': '👥'
     };
-    
+
     const typeIcon = typeIcons[figure.type] || '📖';
     const entityUrl = `/entities/${figure.id}`;
     const bookFilterUrl = `${entityUrl}?book={{ book.slug }}`;
-    
+
     return `
       <div class="key-figure-card" data-entity-id="${figure.id}" data-type="${figure.type}">
         <div class="figure-header">
@@ -568,18 +620,18 @@ layout: base.njk
 
   function loadMoreFigures() {
     if (!currentFiguresData || !currentFiguresData.key_figures) return;
-    
+
     const gridEl = document.getElementById('keyFiguresGrid');
     const loadMoreBtn = document.getElementById('loadMoreFigures');
-    
+
     const nextBatch = currentFiguresData.key_figures.slice(
-      currentDisplayedFigures, 
+      currentDisplayedFigures,
       currentDisplayedFigures + figuresPerPage
     );
-    
+
     gridEl.innerHTML += nextBatch.map(figure => createFigureCard(figure)).join('');
     currentDisplayedFigures += nextBatch.length;
-    
+
     // Update or hide load more button
     if (currentDisplayedFigures >= currentFiguresData.key_figures.length) {
       loadMoreBtn.style.display = 'none';
@@ -587,7 +639,7 @@ layout: base.njk
       const remaining = currentFiguresData.key_figures.length - currentDisplayedFigures;
       loadMoreBtn.textContent = `Load ${Math.min(figuresPerPage, remaining)} More`;
     }
-    
+
     // Track load more action
     if (window.telemetry) {
       window.telemetry.recordUserAction('key-figures-load-more', '{{ book.slug }}', {
@@ -599,14 +651,14 @@ layout: base.njk
 
   function viewAllEntities(bookSlug) {
     const entityUrl = `/entities?book=${bookSlug}`;
-    
+
     if (window.telemetry) {
       window.telemetry.recordNavigation('view-all-entities', entityUrl, {
         book: bookSlug,
         fromPage: 'book'
       });
     }
-    
+
     window.location.href = entityUrl;
   }
 
@@ -623,7 +675,7 @@ layout: base.njk
         fromPage: 'book'
       });
     }
-    
+
     if (window.logger) {
       window.logger.userAction('entity-navigation', {
         entityId: entityId,
@@ -639,7 +691,7 @@ layout: base.njk
     const bookSlug = '{{ book.slug }}';
     const bookName = '{{ book.name }}';
     const testament = '{{ book.testament }}';
-    
+
     // Add this page to recent items
     const pageData = {
       url: window.location.pathname,
@@ -649,22 +701,22 @@ layout: base.njk
       testament: testament
     };
     addToRecentItems(pageData);
-    
+
     // Update bookmark button state
     updateBookmarkButton(isBookmarked(window.location.pathname));
-    
+
     // Initialize cross-references for all chapters
     initializeChapterCrossReferences();
-    
+
     // Load key figures for this book
     loadKeyFigures();
-    
+
     // Track video loads
     const videoIframes = document.querySelectorAll('.video-container iframe');
     videoIframes.forEach((iframe, index) => {
       const videoTitle = iframe.title || 'Bible Project Video';
       const videoId = iframe.src.match(/embed\/([^?]+)/)?.[1] || 'unknown';
-      
+
       // Track video load
       iframe.addEventListener('load', function() {
         if (window.logger) {
@@ -682,13 +734,13 @@ layout: base.njk
         }
       });
     });
-    
+
     // Track commentary link clicks
     const commentaryLinks = document.querySelectorAll('.commentary-link');
     commentaryLinks.forEach(link => {
       link.addEventListener('click', function(e) {
         const chapter = this.href.match(/-(\d+)\//)?.[1] || 'unknown';
-        
+
         if (window.logger) {
           window.logger.userAction('commentary-click', {
             book: bookName,
@@ -696,7 +748,7 @@ layout: base.njk
             url: this.href
           });
         }
-        
+
         if (window.telemetry) {
           window.telemetry.recordNavigation('commentary-click', this.href, {
             book: bookSlug,
@@ -706,7 +758,7 @@ layout: base.njk
         }
       });
     });
-    
+
     // Track page view for this book
     if (window.telemetry) {
       window.telemetry.recordPageView(window.location.pathname, bookName, {
@@ -716,19 +768,19 @@ layout: base.njk
       });
     }
   });
-  
+
   // Handle navigation clicks
   function handleNavigation(type, category) {
     if (window.logger) {
-      window.logger.userAction('navigation-click', { 
-        type: type, 
+      window.logger.userAction('navigation-click', {
+        type: type,
         category: category,
         from: '{{ book.name }}'
       });
     }
-    
+
     if (window.telemetry) {
-      window.telemetry.recordNavigation(type, window.location.href, { 
+      window.telemetry.recordNavigation(type, window.location.href, {
         category: category,
         book: '{{ book.slug }}'
       });

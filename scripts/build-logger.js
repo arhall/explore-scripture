@@ -19,7 +19,7 @@ class BuildLogger {
         css: 0,
         js: 0,
         json: 0,
-        other: 0
+        other: 0,
       },
       sizes: {
         total: 0,
@@ -27,48 +27,47 @@ class BuildLogger {
         css: 0,
         js: 0,
         json: 0,
-        other: 0
+        other: 0,
       },
       books: {
         total: 0,
         withSummaries: 0,
         withVideos: 0,
-        totalChapters: 0
+        totalChapters: 0,
       },
       errors: [],
-      warnings: []
+      warnings: [],
     };
   }
 
   async collectBuildStats() {
     try {
       console.log('🔍 Collecting build statistics...');
-      
+
       // Analyze source files
       await this.analyzeDirectory('src');
-      
+
       // Analyze built files if _site exists
       try {
         await this.analyzeDirectory('_site');
       } catch (e) {
         this.stats.warnings.push('_site directory not found - build may not be complete');
       }
-      
+
       // Analyze data files
       await this.analyzeDataFiles();
-      
+
       // Calculate build duration
       const buildDuration = Date.now() - this.startTime;
       this.stats.buildDuration = buildDuration;
       this.stats.buildEnd = new Date().toISOString();
-      
+
       return this.stats;
-      
     } catch (error) {
       this.stats.errors.push({
         message: error.message,
         stack: error.stack,
-        component: 'build-stats-collection'
+        component: 'build-stats-collection',
       });
       throw error;
     }
@@ -77,11 +76,11 @@ class BuildLogger {
   async analyzeDirectory(dirPath, prefix = '') {
     try {
       const items = await fs.readdir(dirPath);
-      
+
       for (const item of items) {
         const fullPath = path.join(dirPath, item);
         const stat = await fs.stat(fullPath);
-        
+
         if (stat.isDirectory()) {
           // Skip node_modules and other build directories
           if (!['node_modules', '.git', '.netlify', '.cache'].includes(item)) {
@@ -90,10 +89,10 @@ class BuildLogger {
         } else if (stat.isFile()) {
           const ext = path.extname(item).toLowerCase();
           const size = stat.size;
-          
+
           this.stats.files.total++;
           this.stats.sizes.total += size;
-          
+
           // Categorize by file type
           switch (ext) {
             case '.html':
@@ -129,10 +128,10 @@ class BuildLogger {
       const booksPath = path.join('src', '_data', 'books.json');
       try {
         const booksData = JSON.parse(await fs.readFile(booksPath, 'utf8'));
-        
+
         if (Array.isArray(booksData)) {
           this.stats.books.total = booksData.length;
-          
+
           booksData.forEach(book => {
             if (book.chapterSummaries && Object.keys(book.chapterSummaries).length > 0) {
               this.stats.books.withSummaries++;
@@ -143,7 +142,7 @@ class BuildLogger {
       } catch (e) {
         this.stats.warnings.push('Could not analyze books.json');
       }
-      
+
       // Analyze video data
       const videosPath = path.join('src', '_data', 'bibleProjectVideos.json');
       try {
@@ -152,11 +151,10 @@ class BuildLogger {
       } catch (e) {
         this.stats.warnings.push('Could not analyze bibleProjectVideos.json');
       }
-      
     } catch (error) {
       this.stats.errors.push({
         message: `Data file analysis failed: ${error.message}`,
-        component: 'data-analysis'
+        component: 'data-analysis',
       });
     }
   }
@@ -183,7 +181,7 @@ class BuildLogger {
         booksWithContent: `${this.stats.books.withSummaries}/${this.stats.books.total}`,
         totalChapters: this.stats.books.totalChapters,
         errors: this.stats.errors.length,
-        warnings: this.stats.warnings.length
+        warnings: this.stats.warnings.length,
       },
       breakdown: {
         files: this.stats.files,
@@ -193,22 +191,22 @@ class BuildLogger {
           js: this.formatSize(this.stats.sizes.js),
           json: this.formatSize(this.stats.sizes.json),
           other: this.formatSize(this.stats.sizes.other),
-          total: this.formatSize(this.stats.sizes.total)
-        }
+          total: this.formatSize(this.stats.sizes.total),
+        },
       },
       content: {
-        books: this.stats.books
+        books: this.stats.books,
       },
       issues: {
         errors: this.stats.errors,
-        warnings: this.stats.warnings
+        warnings: this.stats.warnings,
       },
       metadata: {
         buildStart: this.stats.buildStart,
         buildEnd: this.stats.buildEnd,
         buildDuration: this.stats.buildDuration,
-        timestamp: new Date().toISOString()
-      }
+        timestamp: new Date().toISOString(),
+      },
     };
 
     return report;
@@ -218,26 +216,25 @@ class BuildLogger {
     try {
       const report = this.generateReport();
       const logPath = path.join('build-logs');
-      
+
       // Ensure logs directory exists
       try {
         await fs.mkdir(logPath, { recursive: true });
       } catch (e) {
         // Directory might already exist
       }
-      
+
       // Save detailed log
       const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
       const detailedLogPath = path.join(logPath, `build-${timestamp}.json`);
       await fs.writeFile(detailedLogPath, JSON.stringify(report, null, 2));
-      
+
       // Save latest log (overwrite)
       const latestLogPath = path.join(logPath, 'latest-build.json');
       await fs.writeFile(latestLogPath, JSON.stringify(report, null, 2));
-      
+
       console.log('📊 Build log saved to:', detailedLogPath);
       return detailedLogPath;
-      
     } catch (error) {
       console.error('Failed to save build log:', error);
       throw error;
@@ -246,7 +243,7 @@ class BuildLogger {
 
   printSummary() {
     const report = this.generateReport();
-    
+
     console.log('\n📋 Build Summary:');
     console.log('─'.repeat(50));
     console.log(`⏱️  Build Duration: ${report.summary.buildDuration}`);
@@ -254,32 +251,32 @@ class BuildLogger {
     console.log(`📦 Total Size: ${report.summary.totalSize}`);
     console.log(`📖 Books with Content: ${report.summary.booksWithContent}`);
     console.log(`📄 Total Chapters: ${report.summary.totalChapters}`);
-    
+
     if (report.summary.errors > 0) {
       console.log(`❌ Errors: ${report.summary.errors}`);
     }
-    
+
     if (report.summary.warnings > 0) {
       console.log(`⚠️  Warnings: ${report.summary.warnings}`);
     }
-    
+
     console.log('\n📊 File Breakdown:');
     console.log(`  HTML: ${report.breakdown.files.html} files (${report.breakdown.sizes.html})`);
     console.log(`  CSS:  ${report.breakdown.files.css} files (${report.breakdown.sizes.css})`);
     console.log(`  JS:   ${report.breakdown.files.js} files (${report.breakdown.sizes.js})`);
     console.log(`  JSON: ${report.breakdown.files.json} files (${report.breakdown.sizes.json})`);
     console.log(`  Other: ${report.breakdown.files.other} files (${report.breakdown.sizes.other})`);
-    
+
     if (report.issues.warnings.length > 0) {
       console.log('\n⚠️  Warnings:');
       report.issues.warnings.forEach(warning => console.log(`  - ${warning}`));
     }
-    
+
     if (report.issues.errors.length > 0) {
       console.log('\n❌ Errors:');
       report.issues.errors.forEach(error => console.log(`  - ${error.message}`));
     }
-    
+
     console.log('─'.repeat(50));
   }
 }
@@ -287,8 +284,9 @@ class BuildLogger {
 // CLI execution
 if (require.main === module) {
   const logger = new BuildLogger();
-  
-  logger.collectBuildStats()
+
+  logger
+    .collectBuildStats()
     .then(() => {
       logger.printSummary();
       return logger.saveBuildLog();
@@ -297,7 +295,7 @@ if (require.main === module) {
       console.log('✅ Build analysis complete!');
       process.exit(0);
     })
-    .catch((error) => {
+    .catch(error => {
       console.error('❌ Build analysis failed:', error.message);
       process.exit(1);
     });

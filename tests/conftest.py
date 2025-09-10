@@ -11,6 +11,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.safari.options import Options as SafariOptions
 from appium import webdriver as appium_webdriver
 from appium.options.ios import XCUITestOptions
+from .config import get_base_url, get_test_urls
 
 
 def wait_for_server(url, timeout=30):
@@ -29,11 +30,19 @@ def wait_for_server(url, timeout=30):
 
 @pytest.fixture(scope="session")
 def server():
-    """Start development server for testing"""
+    """Start development server for testing (only for local testing)"""
+    base_url = get_base_url()
+    
+    # Only relevant for local testing
+    if "localhost" not in base_url:
+        print(f"Using production URL: {base_url}")
+        yield base_url
+        return
+    
     # Check if server is already running
-    if wait_for_server("http://localhost:8080", timeout=5):
+    if wait_for_server(base_url, timeout=5):
         print("Development server already running")
-        yield "http://localhost:8080"
+        yield base_url
         return
     
     # Start server if not running
@@ -45,12 +54,12 @@ def server():
     )
     
     # Wait for server to be ready
-    if not wait_for_server("http://localhost:8080", timeout=30):
+    if not wait_for_server(base_url, timeout=30):
         proc.terminate()
         pytest.fail("Development server failed to start")
     
     print("Development server ready")
-    yield "http://localhost:8080"
+    yield base_url
     
     # Cleanup
     proc.terminate()

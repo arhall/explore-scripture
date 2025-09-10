@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: "Page Not Found"
+title: 'Page Not Found'
 description: "The page you're looking for doesn't exist."
 permalink: /404.html
 ---
@@ -10,16 +10,12 @@ permalink: /404.html
     <div class="error-icon">▦</div>
     <h1>Page Not Found</h1>
     <p class="error-message">The page you're looking for doesn't exist or may have been moved.</p>
-    
+
     <div class="error-actions">
-      <button class="error-action-btn primary" onclick="focusSearch()">
-        ⌕ Try Searching
-      </button>
-      <a href="/" class="error-action-btn secondary">
-        ⌂ Go Home
-      </a>
+      <button class="error-action-btn primary" onclick="focusSearch()">⌕ Try Searching</button>
+      <a href="/" class="error-action-btn secondary"> ⌂ Go Home </a>
     </div>
-    
+
     <div class="error-suggestions">
       <h3>Popular Destinations</h3>
       <div class="suggestions-grid">
@@ -53,7 +49,7 @@ permalink: /404.html
         </a>
       </div>
     </div>
-    
+
     <div class="search-help">
       <h4>Search Tips</h4>
       <div class="search-examples">
@@ -62,16 +58,27 @@ permalink: /404.html
         <button class="search-example" onclick="searchExample('Gospels')">Gospels</button>
         <button class="search-example" onclick="searchExample('Psalms')">Psalms</button>
       </div>
-      <p>Try searching for books, characters, or topics. Our search will help identify the type of content you're looking for.</p>
+      <p>
+        Try searching for books, characters, or topics. Our search will help identify the type of
+        content you're looking for.
+      </p>
     </div>
-    
+
     <div class="error-report">
       <details>
         <summary>Report this issue</summary>
         <div class="error-details">
           <p><strong>URL:</strong> <code id="currentUrl"></code></p>
           <p><strong>Referrer:</strong> <code id="referrer"></code></p>
-          <p>If you believe this page should exist, please <a href="https://github.com/anthropics/claude-code/issues" target="_blank" rel="noopener">report it as an issue</a>.</p>
+          <p>
+            If you believe this page should exist, please
+            <a
+              href="https://github.com/anthropics/claude-code/issues"
+              target="_blank"
+              rel="noopener"
+              >report it as an issue</a
+            >.
+          </p>
         </div>
       </details>
     </div>
@@ -87,7 +94,7 @@ permalink: /404.html
       searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   }
-  
+
   // Search examples
   function searchExample(query) {
     const searchInput = document.getElementById('searchInput');
@@ -98,17 +105,17 @@ permalink: /404.html
       searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   }
-  
+
   // Fill error details
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('currentUrl').textContent = window.location.href;
     document.getElementById('referrer').textContent = document.referrer || 'Direct navigation';
-    
+
     // Track 404 page view
     if (window.telemetry) {
       window.telemetry.recordPageView('/404', '404 Error', {
         requestedUrl: window.location.pathname,
-        referrer: document.referrer
+        referrer: document.referrer,
       });
     }
   });

@@ -1,164 +1,113 @@
-{# Scripture reference macro for embedded Bible verses #}
-
-{# 
-  Main Scripture reference macro
-  Usage: {{ scripture("John 3:16", "For God so loved the world...") }}
-  or:    {{ scripture("John 3:16") }} - will display reference as text
-#}
-{% macro scripture(reference, displayText="") %}
-  <span data-scripture="{{ reference }}" class="scripture-reference" title="Click to view {{ reference }}">
-    {%- if displayText -%}
-      {{ displayText }}
-    {%- else -%}
-      {{ reference }}
-    {%- endif -%}
-  </span>
-{% endmacro %}
-
-{# 
-  Inline Scripture reference for flow within text
-  Usage: The Bible says {{ scriptureInline("John 3:16", "God so loved the world") }} and this shows...
-#}
-{% macro scriptureInline(reference, displayText="") %}
-  <span data-scripture="{{ reference }}" class="scripture-reference inline" title="View {{ reference }}">
-    {%- if displayText -%}
-      {{ displayText }}
-    {%- else -%}
-      {{ reference }}
-    {%- endif -%}
-  </span>
-{% endmacro %}
-
-{# 
-  Block Scripture reference for quotes or emphasis
-  Usage: {{ scriptureBlock("Psalm 23:1", "The Lord is my shepherd, I shall not want") }}
-#}
-{% macro scriptureBlock(reference, displayText="", cssClass="") %}
-  <div class="scripture-block {{ cssClass }}" data-scripture="{{ reference }}">
-    <div class="scripture-text">{{ displayText }}</div>
-    <div class="scripture-ref">— {{ reference }}</div>
+{# Scripture reference macro for embedded Bible verses #} {# Main Scripture reference macro Usage:
+{{ scripture("John 3:16", "For God so loved the world...") }} or: {{ scripture("John 3:16") }} -
+will display reference as text #} {% macro scripture(reference, displayText="") %}
+<span
+  data-scripture="{{ reference }}"
+  class="scripture-reference"
+  title="Click to view {{ reference }}"
+>
+  {%- if displayText -%} {{ displayText }} {%- else -%} {{ reference }} {%- endif -%}
+</span>
+{% endmacro %} {# Inline Scripture reference for flow within text Usage: The Bible says {{
+scriptureInline("John 3:16", "God so loved the world") }} and this shows... #} {% macro
+scriptureInline(reference, displayText="") %}
+<span
+  data-scripture="{{ reference }}"
+  class="scripture-reference inline"
+  title="View {{ reference }}"
+>
+  {%- if displayText -%} {{ displayText }} {%- else -%} {{ reference }} {%- endif -%}
+</span>
+{% endmacro %} {# Block Scripture reference for quotes or emphasis Usage: {{ scriptureBlock("Psalm
+23:1", "The Lord is my shepherd, I shall not want") }} #} {% macro scriptureBlock(reference,
+displayText="", cssClass="") %}
+<div class="scripture-block {{ cssClass }}" data-scripture="{{ reference }}">
+  <div class="scripture-text">{{ displayText }}</div>
+  <div class="scripture-ref">— {{ reference }}</div>
+</div>
+{% endmacro %} {# Scripture list for multiple references Usage: {{ scriptureList([ {ref: "John
+3:16", text: "For God so loved..."}, {ref: "Romans 8:28", text: "All things work together..."} ]) }}
+#} {% macro scriptureList(scriptures, title="Related Scriptures") %}
+<div class="scripture-list">
+  {% if title %}
+  <h4 class="scripture-list-title">{{ title }}</h4>
+  {% endif %}
+  <ul class="scripture-items">
+    {% for item in scriptures %}
+    <li class="scripture-item">{{ scripture(item.ref, item.text or item.ref) }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endmacro %} {# Gospel connection macro - highlights Christ-centered connections Usage: {{
+gospelConnection("Genesis 3:15", "This first promise points to Christ", "Romans 16:20") }} #} {%
+macro gospelConnection(reference, explanation, fulfillmentRef="") %}
+<div class="gospel-connection">
+  <div class="gospel-connection-header">
+    <span class="gospel-icon">✝️</span>
+    <span class="gospel-title">Gospel Connection</span>
   </div>
-{% endmacro %}
-
-{# 
-  Scripture list for multiple references
-  Usage: {{ scriptureList([
-    {ref: "John 3:16", text: "For God so loved..."},
-    {ref: "Romans 8:28", text: "All things work together..."}
-  ]) }}
-#}
-{% macro scriptureList(scriptures, title="Related Scriptures") %}
-  <div class="scripture-list">
-    {% if title %}
-      <h4 class="scripture-list-title">{{ title }}</h4>
+  <div class="gospel-connection-content">
+    <div class="gospel-reference">{{ scripture(reference) }}</div>
+    <div class="gospel-explanation">
+      {{ explanation }} {% if fulfillmentRef %} See also: {{ scripture(fulfillmentRef) }} {% endif
+      %}
+    </div>
+  </div>
+</div>
+{% endmacro %} {# Cross-reference macro for related passages Usage: {{ crossReference([ {ref:
+"Matthew 5:17", note: "Jesus fulfills the law"}, {ref: "Romans 3:21", note: "Righteousness apart
+from law"} ], "Law and Grace") }} #} {% macro crossReference(references, title="Cross References")
+%}
+<div class="cross-reference">
+  <div class="cross-reference-header">
+    <span class="cross-ref-icon">🔗</span>
+    <h4 class="cross-ref-title">{{ title }}</h4>
+  </div>
+  <div class="cross-reference-list">
+    {% for ref in references %}
+    <div class="cross-ref-item">
+      {{ scripture(ref.ref) }} {% if ref.note %}
+      <span class="cross-ref-note">— {{ ref.note }}</span>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endmacro %} {# Chapter summary with embedded references Usage: {{ chapterSummary("Genesis", 1,
+"In the beginning...", ["Genesis 1:1", "Genesis 1:27"]) }} #} {% macro chapterSummary(book, chapter,
+summary, keyVerses=[]) %}
+<div class="chapter-summary">
+  <div class="chapter-summary-header">
+    <h3>{{ book }} {{ chapter }}</h3>
+    {% if keyVerses.length > 0 %}
+    <div class="key-verses">
+      <strong>Key Verses:</strong>
+      {% for verse in keyVerses %} {{ scripture(verse) }}{% if not loop.last %}, {% endif %} {%
+      endfor %}
+    </div>
     {% endif %}
-    <ul class="scripture-items">
-      {% for item in scriptures %}
-        <li class="scripture-item">
-          {{ scripture(item.ref, item.text or item.ref) }}
-        </li>
-      {% endfor %}
-    </ul>
   </div>
-{% endmacro %}
-
-{# 
-  Gospel connection macro - highlights Christ-centered connections
-  Usage: {{ gospelConnection("Genesis 3:15", "This first promise points to Christ", "Romans 16:20") }}
-#}
-{% macro gospelConnection(reference, explanation, fulfillmentRef="") %}
-  <div class="gospel-connection">
-    <div class="gospel-connection-header">
-      <span class="gospel-icon">✝️</span>
-      <span class="gospel-title">Gospel Connection</span>
-    </div>
-    <div class="gospel-connection-content">
-      <div class="gospel-reference">
-        {{ scripture(reference) }}
-      </div>
-      <div class="gospel-explanation">
-        {{ explanation }}
-        {% if fulfillmentRef %}
-          See also: {{ scripture(fulfillmentRef) }}
-        {% endif %}
-      </div>
-    </div>
+  <div class="chapter-summary-content">{{ summary | safe }}</div>
+</div>
+{% endmacro %} {# Theological theme box with Scripture support Usage: {{
+theologicalTheme("Justification", "We are made right with God by faith alone", ["Romans 3:28",
+"Ephesians 2:8-9"]) }} #} {% macro theologicalTheme(theme, explanation, supportingVerses=[]) %}
+<div class="theological-theme">
+  <div class="theme-header">
+    <h4 class="theme-title">{{ theme }}</h4>
   </div>
-{% endmacro %}
-
-{# 
-  Cross-reference macro for related passages
-  Usage: {{ crossReference([
-    {ref: "Matthew 5:17", note: "Jesus fulfills the law"},
-    {ref: "Romans 3:21", note: "Righteousness apart from law"}
-  ], "Law and Grace") }}
-#}
-{% macro crossReference(references, title="Cross References") %}
-  <div class="cross-reference">
-    <div class="cross-reference-header">
-      <span class="cross-ref-icon">🔗</span>
-      <h4 class="cross-ref-title">{{ title }}</h4>
-    </div>
-    <div class="cross-reference-list">
-      {% for ref in references %}
-        <div class="cross-ref-item">
-          {{ scripture(ref.ref) }}
-          {% if ref.note %}
-            <span class="cross-ref-note">— {{ ref.note }}</span>
-          {% endif %}
-        </div>
+  <div class="theme-content">
+    <p class="theme-explanation">{{ explanation }}</p>
+    {% if supportingVerses.length > 0 %}
+    <div class="supporting-scriptures">
+      <strong>Scripture Support:</strong>
+      {% for verse in supportingVerses %} {{ scripture(verse) }}{% if not loop.last %}, {% endif %}
       {% endfor %}
     </div>
+    {% endif %}
   </div>
-{% endmacro %}
-
-{# 
-  Chapter summary with embedded references
-  Usage: {{ chapterSummary("Genesis", 1, "In the beginning...", ["Genesis 1:1", "Genesis 1:27"]) }}
-#}
-{% macro chapterSummary(book, chapter, summary, keyVerses=[]) %}
-  <div class="chapter-summary">
-    <div class="chapter-summary-header">
-      <h3>{{ book }} {{ chapter }}</h3>
-      {% if keyVerses.length > 0 %}
-        <div class="key-verses">
-          <strong>Key Verses:</strong>
-          {% for verse in keyVerses %}
-            {{ scripture(verse) }}{% if not loop.last %}, {% endif %}
-          {% endfor %}
-        </div>
-      {% endif %}
-    </div>
-    <div class="chapter-summary-content">
-      {{ summary | safe }}
-    </div>
-  </div>
-{% endmacro %}
-
-{# 
-  Theological theme box with Scripture support
-  Usage: {{ theologicalTheme("Justification", "We are made right with God by faith alone", ["Romans 3:28", "Ephesians 2:8-9"]) }}
-#}
-{% macro theologicalTheme(theme, explanation, supportingVerses=[]) %}
-  <div class="theological-theme">
-    <div class="theme-header">
-      <h4 class="theme-title">{{ theme }}</h4>
-    </div>
-    <div class="theme-content">
-      <p class="theme-explanation">{{ explanation }}</p>
-      {% if supportingVerses.length > 0 %}
-        <div class="supporting-scriptures">
-          <strong>Scripture Support:</strong>
-          {% for verse in supportingVerses %}
-            {{ scripture(verse) }}{% if not loop.last %}, {% endif %}
-          {% endfor %}
-        </div>
-      {% endif %}
-    </div>
-  </div>
-{% endmacro %}
-
-{# Add CSS styles for the macros #}
+</div>
+{% endmacro %} {# Add CSS styles for the macros #}
 <style>
   /* Scripture Reference Styles */
   .scripture-reference {
@@ -234,7 +183,7 @@
   }
 
   .scripture-item:before {
-    content: "•";
+    content: '•';
     color: var(--accent, #2563eb);
     font-weight: bold;
     position: absolute;
@@ -396,29 +345,29 @@
     }
   }
 
-  [data-theme="dark"] .scripture-block {
+  [data-theme='dark'] .scripture-block {
     background: var(--card-dark, #1f2937);
   }
 
-  [data-theme="dark"] .scripture-list {
+  [data-theme='dark'] .scripture-list {
     background: var(--bg-secondary-dark, #111827);
   }
 
-  [data-theme="dark"] .cross-reference {
+  [data-theme='dark'] .cross-reference {
     background: var(--card-dark, #1f2937);
     border-color: var(--border-dark, #374151);
   }
 
-  [data-theme="dark"] .cross-reference-header {
+  [data-theme='dark'] .cross-reference-header {
     border-color: var(--border-light-dark, #4b5563);
   }
 
-  [data-theme="dark"] .chapter-summary {
+  [data-theme='dark'] .chapter-summary {
     background: var(--card-dark, #1f2937);
     border-color: var(--border-dark, #374151);
   }
 
-  [data-theme="dark"] .chapter-summary-header {
+  [data-theme='dark'] .chapter-summary-header {
     border-color: var(--border-light-dark, #4b5563);
   }
 </style>

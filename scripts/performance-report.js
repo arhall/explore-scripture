@@ -18,25 +18,25 @@ function generatePerformanceReport() {
     nodeVersion: process.version,
     platform: process.platform,
     arch: process.arch,
-    sections: []
+    sections: [],
   };
 
   // Build Performance
   console.log('⏱️  Measuring build performance...');
   const buildStartTime = Date.now();
-  
+
   try {
     execSync('npm run clean && npm run build', { stdio: 'pipe' });
     const buildTime = Date.now() - buildStartTime;
-    
+
     const buildStatus = getBuildStatus(buildTime);
     reportData.sections.push({
       name: 'Build Performance',
       metrics: {
         buildTime: buildTime,
         status: buildStatus,
-        sla: SLA_THRESHOLDS.buildTime.target
-      }
+        sla: SLA_THRESHOLDS.buildTime.target,
+      },
     });
 
     console.log(`   Build completed in ${buildTime}ms ${getStatusEmoji(buildStatus)}`);
@@ -48,12 +48,12 @@ function generatePerformanceReport() {
   // Site Size Analysis
   console.log('\\n📦 Analyzing site size...');
   const siteDir = path.join(__dirname, '..', '_site');
-  
+
   try {
     const totalSize = execSync(`du -sb "${siteDir}" | cut -f1`, { encoding: 'utf8' });
     const sizeMB = parseInt(totalSize) / (1024 * 1024);
     const sizeStatus = getSizeStatus(sizeMB);
-    
+
     const fileCount = execSync(`find "${siteDir}" -type f | wc -l`, { encoding: 'utf8' });
     const totalFiles = parseInt(fileCount.trim());
 
@@ -63,11 +63,13 @@ function generatePerformanceReport() {
         totalSizeMB: Math.round(sizeMB * 100) / 100,
         fileCount: totalFiles,
         status: sizeStatus,
-        sla: SLA_THRESHOLDS.siteSize.target
-      }
+        sla: SLA_THRESHOLDS.siteSize.target,
+      },
     });
 
-    console.log(`   Total size: ${sizeMB.toFixed(2)}MB (${totalFiles} files) ${getStatusEmoji(sizeStatus)}`);
+    console.log(
+      `   Total size: ${sizeMB.toFixed(2)}MB (${totalFiles} files) ${getStatusEmoji(sizeStatus)}`
+    );
   } catch (error) {
     console.error('   ❌ Size analysis failed:', error.message);
   }
@@ -75,20 +77,26 @@ function generatePerformanceReport() {
   // File Type Distribution
   console.log('\\n📋 File type analysis...');
   try {
-    const extOutput = execSync(`find "${siteDir}" -name "*.*" -type f | sed 's/.*\\.//' | sort | uniq -c | sort -nr | head -5`, { encoding: 'utf8' });
+    const extOutput = execSync(
+      `find "${siteDir}" -name "*.*" -type f | sed 's/.*\\.//' | sort | uniq -c | sort -nr | head -5`,
+      { encoding: 'utf8' }
+    );
     const fileTypes = {};
-    
-    extOutput.trim().split('\\n').forEach(line => {
-      const [count, ext] = line.trim().split(/\\s+/);
-      if (ext) {
-        fileTypes[ext] = parseInt(count);
-        console.log(`   .${ext}: ${count} files`);
-      }
-    });
+
+    extOutput
+      .trim()
+      .split('\\n')
+      .forEach(line => {
+        const [count, ext] = line.trim().split(/\\s+/);
+        if (ext) {
+          fileTypes[ext] = parseInt(count);
+          console.log(`   .${ext}: ${count} files`);
+        }
+      });
 
     reportData.sections.push({
       name: 'File Distribution',
-      metrics: { fileTypes }
+      metrics: { fileTypes },
     });
   } catch (error) {
     console.error('   ⚠️  File type analysis failed:', error.message);
@@ -101,7 +109,7 @@ function generatePerformanceReport() {
     const charactersModule = require('../src/_data/characters.js');
     const characters = charactersModule();
     const endTime = process.hrtime.bigint();
-    
+
     const processingTime = Number(endTime - startTime) / 1000000; // ms
     const processingRate = characters.length / (processingTime / 1000); // chars/second
 
@@ -110,8 +118,8 @@ function generatePerformanceReport() {
       metrics: {
         processingTimeMs: Math.round(processingTime),
         characterCount: characters.length,
-        processingRate: Math.round(processingRate)
-      }
+        processingRate: Math.round(processingRate),
+      },
     });
 
     console.log(`   Processed ${characters.length} characters in ${Math.round(processingTime)}ms`);
@@ -143,8 +151,8 @@ function generatePerformanceReport() {
         totalBooks: books.length,
         totalChapters: totalChapters,
         completedSummaries: completedSummaries,
-        completionRate: Math.round(completionRate * 100) / 100
-      }
+        completionRate: Math.round(completionRate * 100) / 100,
+      },
     });
 
     console.log(`   ${books.length} books, ${totalChapters} chapters`);
@@ -166,10 +174,10 @@ function generatePerformanceReport() {
 
   console.log(`\\n📊 Performance report saved to: ${reportPath}`);
   console.log('\\n🎯 Overall Performance Summary:');
-  
+
   const overallScore = calculateOverallScore(reportData);
   console.log(`   Overall Score: ${overallScore}/100 ${getScoreEmoji(overallScore)}`);
-  
+
   return reportData;
 }
 
@@ -189,10 +197,10 @@ function getSizeStatus(sizeMB) {
 
 function getStatusEmoji(status) {
   const emojis = {
-    'excellent': '🚀',
-    'good': '✅',
-    'acceptable': '⚠️',
-    'needs-improvement': '❌'
+    excellent: '🚀',
+    good: '✅',
+    acceptable: '⚠️',
+    'needs-improvement': '❌',
   };
   return emojis[status] || '❓';
 }
@@ -206,7 +214,7 @@ function getScoreEmoji(score) {
 
 function generateRecommendations(reportData) {
   const recommendations = [];
-  
+
   const buildMetrics = reportData.sections.find(s => s.name === 'Build Performance')?.metrics;
   if (buildMetrics && buildMetrics.buildTime > SLA_THRESHOLDS.buildTime.good) {
     recommendations.push('Consider optimizing Eleventy configuration for faster builds');
@@ -260,14 +268,14 @@ function getBuildScore(buildTime) {
   if (buildTime <= SLA_THRESHOLDS.buildTime.excellent) return 100;
   if (buildTime <= SLA_THRESHOLDS.buildTime.good) return 90;
   if (buildTime <= SLA_THRESHOLDS.buildTime.target) return 80;
-  return Math.max(50, 80 - ((buildTime - SLA_THRESHOLDS.buildTime.target) / 100));
+  return Math.max(50, 80 - (buildTime - SLA_THRESHOLDS.buildTime.target) / 100);
 }
 
 function getSizeScore(sizeMB) {
   if (sizeMB <= SLA_THRESHOLDS.siteSize.excellent) return 100;
   if (sizeMB <= SLA_THRESHOLDS.siteSize.good) return 90;
   if (sizeMB <= SLA_THRESHOLDS.siteSize.target) return 80;
-  return Math.max(50, 80 - ((sizeMB - SLA_THRESHOLDS.siteSize.target) * 2));
+  return Math.max(50, 80 - (sizeMB - SLA_THRESHOLDS.siteSize.target) * 2);
 }
 
 // Run if called directly
@@ -277,5 +285,5 @@ if (require.main === module) {
 
 module.exports = {
   generatePerformanceReport,
-  SLA_THRESHOLDS
+  SLA_THRESHOLDS,
 };

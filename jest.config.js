@@ -1,15 +1,12 @@
 module.exports = {
   testEnvironment: 'jsdom',
-  testMatch: [
-    '**/__tests__/**/*.js',
-    '**/?(*.)+(spec|test).js'
-  ],
+  testMatch: ['**/__tests__/**/*.js', '**/?(*.)+(spec|test).js'],
   collectCoverageFrom: [
     'src/_data/**/*.js',
     'scripts/**/*.js',
     '!src/_data/charactersByBook/**',
     '!node_modules/**',
-    '!coverage/**'
+    '!coverage/**',
   ],
   coverageDirectory: 'coverage',
   coverageReporters: ['text', 'lcov', 'html'],
@@ -25,8 +22,8 @@ module.exports = {
         '<rootDir>/tests/data.test.js',
         '<rootDir>/tests/filters.test.js',
         '<rootDir>/tests/characters.test.js',
-        '<rootDir>/tests/build.test.js'
-      ]
+        '<rootDir>/tests/build.test.js',
+      ],
     },
     {
       displayName: 'performance',
@@ -34,8 +31,8 @@ module.exports = {
       testMatch: [
         '<rootDir>/tests/performance.test.js',
         '<rootDir>/tests/lighthouse.test.js',
-        '<rootDir>/tests/benchmark.test.js'
-      ]
-    }
-  ]
+        '<rootDir>/tests/benchmark.test.js',
+      ],
+    },
+  ],
 };

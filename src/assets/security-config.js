@@ -10,7 +10,7 @@ class SecurityConfig {
       rateLimits: {
         api: { maxRequests: 10, timeWindow: 60000 }, // 10 requests per minute
         search: { maxRequests: 30, timeWindow: 60000 }, // 30 searches per minute
-        logging: { maxEvents: 100, timeWindow: 60000 } // 100 log events per minute
+        logging: { maxEvents: 100, timeWindow: 60000 }, // 100 log events per minute
       },
 
       // Content Security Policy configuration
@@ -22,15 +22,9 @@ class SecurityConfig {
           'https://bible-api.com',
           'https://fonts.googleapis.com',
           'https://fonts.gstatic.com',
-          'https://unpkg.com'
+          'https://unpkg.com',
         ],
-        blockedPatterns: [
-          /javascript:/gi,
-          /<script/gi,
-          /on\w+\s*=/gi,
-          /eval\(/gi,
-          /Function\(/gi
-        ]
+        blockedPatterns: [/javascript:/gi, /<script/gi, /on\w+\s*=/gi, /eval\(/gi, /Function\(/gi],
       },
 
       // Input validation patterns
@@ -39,7 +33,7 @@ class SecurityConfig {
         translation: /^[a-zA-Z]+$/,
         searchQuery: /^[a-zA-Z0-9\s\-'".,:;!?()]+$/,
         slug: /^[a-z0-9-]+$/,
-        sessionId: /^session_\d+_[a-f0-9]+$/
+        sessionId: /^session_\d+_[a-f0-9]+$/,
       },
 
       // Security headers
@@ -47,7 +41,7 @@ class SecurityConfig {
         'X-Content-Type-Options': 'nosniff',
         'X-Frame-Options': 'SAMEORIGIN',
         'X-XSS-Protection': '1; mode=block',
-        'Referrer-Policy': 'strict-origin-when-cross-origin'
+        'Referrer-Policy': 'strict-origin-when-cross-origin',
       },
 
       // Sensitive data patterns to filter from logs
@@ -58,8 +52,8 @@ class SecurityConfig {
         /secret/gi,
         /auth/gi,
         /cookie/gi,
-        /session/gi
-      ]
+        /session/gi,
+      ],
     };
 
     this.rateLimiters = new Map();
@@ -71,7 +65,7 @@ class SecurityConfig {
     Object.keys(this.config.rateLimits).forEach(service => {
       this.rateLimiters.set(service, {
         requests: [],
-        config: this.config.rateLimits[service]
+        config: this.config.rateLimits[service],
       });
     });
 
@@ -99,7 +93,10 @@ class SecurityConfig {
         sanitized = sanitized.replace(/[^a-zA-Z0-9\s:-]/g, '').substring(0, 50);
         break;
       case 'translation':
-        sanitized = sanitized.replace(/[^a-zA-Z]/g, '').toLowerCase().substring(0, 10);
+        sanitized = sanitized
+          .replace(/[^a-zA-Z]/g, '')
+          .toLowerCase()
+          .substring(0, 10);
         break;
       default:
         sanitized = sanitized.substring(0, 1000);
@@ -120,11 +117,11 @@ class SecurityConfig {
   escapeHtml(unsafe) {
     if (typeof unsafe !== 'string') return '';
     return unsafe
-         .replace(/&/g, "&amp;")
-         .replace(/</g, "&lt;")
-         .replace(/>/g, "&gt;")
-         .replace(/"/g, "&quot;")
-         .replace(/'/g, "&#039;");
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
   }
 
   // Validate input against patterns
@@ -141,16 +138,14 @@ class SecurityConfig {
 
     const now = Date.now();
     const key = `${service}_${identifier}`;
-    
+
     // Get or create request history for this identifier
     if (!limiter[key]) {
       limiter[key] = [];
     }
 
     // Remove old requests outside time window
-    limiter[key] = limiter[key].filter(time => 
-      now - time < limiter.config.timeWindow
-    );
+    limiter[key] = limiter[key].filter(time => now - time < limiter.config.timeWindow);
 
     // Check if limit exceeded
     if (limiter[key].length >= limiter.config.maxRequests) {
@@ -170,9 +165,7 @@ class SecurityConfig {
     const filtered = {};
     for (const [key, value] of Object.entries(obj)) {
       // Check if key matches sensitive patterns
-      const isSensitive = this.config.sensitivePatterns.some(pattern => 
-        pattern.test(key)
-      );
+      const isSensitive = this.config.sensitivePatterns.some(pattern => pattern.test(key));
 
       if (isSensitive) {
         filtered[key] = '[FILTERED]';
@@ -191,11 +184,9 @@ class SecurityConfig {
     if (window.crypto && window.crypto.getRandomValues) {
       const array = new Uint8Array(16);
       window.crypto.getRandomValues(array);
-      return prefix + '_' + Array.from(array, byte => 
-        byte.toString(16).padStart(2, '0')
-      ).join('');
+      return prefix + '_' + Array.from(array, byte => byte.toString(16).padStart(2, '0')).join('');
     }
-    
+
     // Fallback for older browsers
     return prefix + '_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
   }
@@ -204,7 +195,7 @@ class SecurityConfig {
   validateUrl(url, allowedDomains = null) {
     try {
       const parsedUrl = new URL(url);
-      
+
       // Check protocol
       if (!['http:', 'https:'].includes(parsedUrl.protocol)) {
         return false;
@@ -212,12 +203,17 @@ class SecurityConfig {
 
       // Check against allowed domains if provided
       if (allowedDomains) {
-        const allowed = Array.isArray(allowedDomains) ? allowedDomains : this.config.csp.allowedDomains;
+        const allowed = Array.isArray(allowedDomains)
+          ? allowedDomains
+          : this.config.csp.allowedDomains;
         const isAllowed = allowed.some(domain => {
           if (domain === 'self') return parsedUrl.origin === window.location.origin;
-          return parsedUrl.origin === domain || parsedUrl.hostname.endsWith(domain.replace('https://', ''));
+          return (
+            parsedUrl.origin === domain ||
+            parsedUrl.hostname.endsWith(domain.replace('https://', ''))
+          );
         });
-        
+
         if (!isAllowed) {
           console.warn(`Security: Blocked request to unauthorized domain: ${parsedUrl.hostname}`);
           return false;
@@ -252,11 +248,11 @@ class SecurityConfig {
       // eslint-disable-next-line no-undef
       const originalSetAttribute = Element.prototype.setAttribute;
       // eslint-disable-next-line no-undef
-      Element.prototype.setAttribute = function(name, value) {
-      if (typeof value === 'string' && !window.securityConfig.validateContent(value)) {
-        console.error('Security: Blocked potentially malicious setAttribute');
-        return;
-      }
+      Element.prototype.setAttribute = function (name, value) {
+        if (typeof value === 'string' && !window.securityConfig.validateContent(value)) {
+          console.error('Security: Blocked potentially malicious setAttribute');
+          return;
+        }
         return originalSetAttribute.call(this, name, value);
       };
     }
@@ -264,22 +260,22 @@ class SecurityConfig {
     // Monitor for suspicious DOM manipulation
     if (typeof MutationObserver !== 'undefined') {
       // eslint-disable-next-line no-undef
-      const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        if (mutation.type === 'childList') {
-          mutation.addedNodes.forEach((node) => {
-            // eslint-disable-next-line no-undef
-            if (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'SCRIPT') {
-              const src = node.getAttribute('src');
-              if (src && !this.validateUrl(src, this.config.csp.allowedDomains)) {
-                console.error('Security: Blocked unauthorized script injection');
-                node.remove();
+      const observer = new MutationObserver(mutations => {
+        mutations.forEach(mutation => {
+          if (mutation.type === 'childList') {
+            mutation.addedNodes.forEach(node => {
+              // eslint-disable-next-line no-undef
+              if (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'SCRIPT') {
+                const src = node.getAttribute('src');
+                if (src && !this.validateUrl(src, this.config.csp.allowedDomains)) {
+                  console.error('Security: Blocked unauthorized script injection');
+                  node.remove();
+                }
               }
-            }
-          });
-        }
+            });
+          }
+        });
       });
-    });
 
       // Start observing the document with the configured parameters
       observer.observe(document, { childList: true, subtree: true });
@@ -290,7 +286,7 @@ class SecurityConfig {
       // eslint-disable-next-line no-undef
       const originalSetItem = Storage.prototype.setItem;
       // eslint-disable-next-line no-undef
-      Storage.prototype.setItem = function(key, value) {
+      Storage.prototype.setItem = function (key, value) {
         if (typeof value === 'string' && !window.securityConfig.validateContent(value)) {
           console.warn('Security: Blocked potentially malicious localStorage operation');
           return;
@@ -309,9 +305,9 @@ class SecurityConfig {
         httpsUsage: window.location.protocol === 'https:',
         secureScripts: this.auditScripts(),
         rateLimiters: this.auditRateLimiters(),
-        contentValidation: true // Implemented above
+        contentValidation: true, // Implemented above
       },
-      recommendations: []
+      recommendations: [],
     };
 
     // Add recommendations based on audit results
@@ -336,7 +332,7 @@ class SecurityConfig {
   auditScripts() {
     const scripts = document.querySelectorAll('script[src]');
     let secureCount = 0;
-    
+
     scripts.forEach(script => {
       const src = script.getAttribute('src');
       if (this.validateUrl(src, this.config.csp.allowedDomains)) {
@@ -347,22 +343,22 @@ class SecurityConfig {
     return {
       total: scripts.length,
       secure: secureCount,
-      ratio: scripts.length ? secureCount / scripts.length : 1
+      ratio: scripts.length ? secureCount / scripts.length : 1,
     };
   }
 
   auditRateLimiters() {
     const status = {};
     this.rateLimiters.forEach((limiter, service) => {
-      const activeConnections = Object.keys(limiter).filter(key => 
-        key !== 'config' && limiter[key].length > 0
+      const activeConnections = Object.keys(limiter).filter(
+        key => key !== 'config' && limiter[key].length > 0
       ).length;
-      
+
       status[service] = {
         configured: true,
         activeConnections,
         maxRequests: limiter.config.maxRequests,
-        timeWindow: limiter.config.timeWindow
+        timeWindow: limiter.config.timeWindow,
       };
     });
     return status;
@@ -373,8 +369,10 @@ class SecurityConfig {
 window.securityConfig = new SecurityConfig();
 
 // Perform initial security audit in debug mode
-if (window.location.hostname === 'localhost' || 
-    localStorage.getItem('bibleExplorerDebug') === 'true') {
+if (
+  window.location.hostname === 'localhost' ||
+  localStorage.getItem('bibleExplorerDebug') === 'true'
+) {
   setTimeout(() => {
     window.securityConfig.performSecurityAudit();
   }, 2000);

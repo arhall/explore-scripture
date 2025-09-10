@@ -5,6 +5,7 @@ Tests for known issues and fixes to prevent regressions
 """
 
 import pytest
+from .config import get_test_urls
 import time
 import json
 from selenium import webdriver
@@ -20,7 +21,7 @@ from urllib.parse import urljoin
 class TestRegressionFixes:
     """Test known regression issues and their fixes"""
     
-    BASE_URL = "http://localhost:8081"
+    BASE_URL = get_test_urls()["base"]
     
     @pytest.fixture(params=["chrome", "firefox"])
     def browser(self, request):

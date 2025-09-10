@@ -16,12 +16,12 @@ class BibleExplorerTelemetry {
     this.serviceName = 'bible-explorer-web';
     this.serviceVersion = '1.0.0';
     this.environment = this.getEnvironment();
-    
+
     this.sdk = null;
     this.tracer = null;
     this.meter = null;
     this.logger = null;
-    
+
     this.init();
   }
 
@@ -43,7 +43,7 @@ class BibleExplorerTelemetry {
         // Custom attributes
         'app.name': 'Explore Scripture',
         'app.type': 'static-web-app',
-        'app.framework': 'eleventy'
+        'app.framework': 'eleventy',
       });
 
       // Configure SDK
@@ -55,27 +55,21 @@ class BibleExplorerTelemetry {
           getWebAutoInstrumentations({
             '@opentelemetry/instrumentation-xml-http-request': {
               enabled: true,
-              propagateTraceHeaderCorsUrls: [
-                /^https:\/\/api\./,
-                /^https:\/\/.*\.bible-explorer\./
-              ]
+              propagateTraceHeaderCorsUrls: [/^https:\/\/api\./, /^https:\/\/.*\.bible-explorer\./],
             },
             '@opentelemetry/instrumentation-fetch': {
               enabled: true,
-              propagateTraceHeaderCorsUrls: [
-                /^https:\/\/api\./,
-                /^https:\/\/.*\.bible-explorer\./
-              ]
+              propagateTraceHeaderCorsUrls: [/^https:\/\/api\./, /^https:\/\/.*\.bible-explorer\./],
             },
             '@opentelemetry/instrumentation-document-load': {
-              enabled: true
+              enabled: true,
             },
             '@opentelemetry/instrumentation-user-interaction': {
               enabled: true,
-              eventNames: ['click', 'submit', 'keydown']
-            }
-          })
-        ]
+              eventNames: ['click', 'submit', 'keydown'],
+            },
+          }),
+        ],
       });
 
       // Start the SDK
@@ -93,9 +87,8 @@ class BibleExplorerTelemetry {
 
       console.log('OpenTelemetry initialized successfully', {
         serviceName: this.serviceName,
-        environment: this.environment
+        environment: this.environment,
       });
-
     } catch (error) {
       console.error('Failed to initialize OpenTelemetry:', error);
       // Fallback to basic logging if OTEL fails
@@ -108,20 +101,20 @@ class BibleExplorerTelemetry {
     if (this.environment === 'development') {
       return new ConsoleSpanExporter();
     }
-    
+
     // In production, you would configure OTLP exporter
     // return new OTLPTraceExporter({
     //   url: 'https://your-otel-collector/v1/traces',
     //   headers: { 'Authorization': 'Bearer your-token' }
     // });
-    
+
     return new ConsoleSpanExporter();
   }
 
   getMetricReader() {
     return new PeriodicExportingMetricReader({
       exporter: new ConsoleMetricExporter(),
-      exportIntervalMillis: 30000 // Export every 30 seconds
+      exportIntervalMillis: 30000, // Export every 30 seconds
     });
   }
 
@@ -130,9 +123,12 @@ class BibleExplorerTelemetry {
     if (window.crypto && window.crypto.getRandomValues) {
       const array = new Uint8Array(16);
       window.crypto.getRandomValues(array);
-      return 'instance_' + Date.now() + '_' + Array.from(array, byte => 
-        byte.toString(16).padStart(2, '0')
-      ).join('');
+      return (
+        'instance_' +
+        Date.now() +
+        '_' +
+        Array.from(array, byte => byte.toString(16).padStart(2, '0')).join('')
+      );
     }
     // Fallback for older browsers
     return 'instance_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
@@ -142,75 +138,78 @@ class BibleExplorerTelemetry {
     // Page view counter
     this.pageViewCounter = this.meter.createCounter('bible_explorer_page_views', {
       description: 'Number of page views',
-      unit: '1'
+      unit: '1',
     });
 
     // Search query counter
     this.searchCounter = this.meter.createCounter('bible_explorer_searches', {
       description: 'Number of search queries',
-      unit: '1'
+      unit: '1',
     });
 
     // Search duration histogram
     this.searchDurationHistogram = this.meter.createHistogram('bible_explorer_search_duration', {
       description: 'Search operation duration',
-      unit: 'ms'
+      unit: 'ms',
     });
 
     // Video interaction counter
     this.videoInteractionCounter = this.meter.createCounter('bible_explorer_video_interactions', {
       description: 'Video play/pause/seek interactions',
-      unit: '1'
+      unit: '1',
     });
 
     // Navigation counter
     this.navigationCounter = this.meter.createCounter('bible_explorer_navigation', {
       description: 'Page navigation events',
-      unit: '1'
+      unit: '1',
     });
 
     // Error counter
     this.errorCounter = this.meter.createCounter('bible_explorer_errors', {
       description: 'Application errors',
-      unit: '1'
+      unit: '1',
     });
 
     // User session duration
     this.sessionDurationHistogram = this.meter.createHistogram('bible_explorer_session_duration', {
       description: 'User session duration',
-      unit: 'ms'
+      unit: 'ms',
     });
 
     // Active users gauge (approximate)
     this.activeUsersGauge = this.meter.createUpDownCounter('bible_explorer_active_users', {
       description: 'Approximate number of active users',
-      unit: '1'
+      unit: '1',
     });
   }
 
   setupCustomTracing() {
     // Trace page loads
     this.tracePageLoad();
-    
+
     // Trace user interactions
     this.traceUserInteractions();
-    
+
     // Trace search operations
     this.traceSearchOperations();
-    
+
     // Set up privacy-respecting data collection
     this.setupPrivacyControls();
   }
 
   setupPrivacyControls() {
     // Check for Do Not Track header
-    this.respectsDoNotTrack = navigator.doNotTrack === '1' || 
-                              navigator.doNotTrack === 'yes' || 
-                              navigator.msDoNotTrack === '1';
-    
+    this.respectsDoNotTrack =
+      navigator.doNotTrack === '1' ||
+      navigator.doNotTrack === 'yes' ||
+      navigator.msDoNotTrack === '1';
+
     // Allow users to opt-out of telemetry
-    if (localStorage.getItem('bibleExplorerTelemetryOptOut') === 'true' || 
-        this.respectsDoNotTrack) {
+    if (
+      localStorage.getItem('bibleExplorerTelemetryOptOut') === 'true' ||
+      this.respectsDoNotTrack
+    ) {
       console.log('Telemetry disabled by user preference');
       this.disabled = true;
     }
@@ -221,19 +220,20 @@ class BibleExplorerTelemetry {
       attributes: {
         'page.url': window.location.href,
         'page.title': document.title,
-        'user.agent': navigator.userAgent
-      }
+        'user.agent': navigator.userAgent,
+      },
     });
 
     window.addEventListener('load', () => {
       const perfData = performance.getEntriesByType('navigation')[0];
-      
+
       span.setAttributes({
-        'page.load.dom_content_loaded': perfData.domContentLoadedEventEnd - perfData.domContentLoadedEventStart,
+        'page.load.dom_content_loaded':
+          perfData.domContentLoadedEventEnd - perfData.domContentLoadedEventStart,
         'page.load.complete': perfData.loadEventEnd - perfData.loadEventStart,
         'page.load.total': perfData.loadEventEnd - perfData.fetchStart,
         'page.load.dns_lookup': perfData.domainLookupEnd - perfData.domainLookupStart,
-        'page.load.server_response': perfData.responseEnd - perfData.requestStart
+        'page.load.server_response': perfData.responseEnd - perfData.requestStart,
       });
 
       span.end();
@@ -241,7 +241,7 @@ class BibleExplorerTelemetry {
       // Record metrics
       this.pageViewCounter.add(1, {
         'page.path': window.location.pathname,
-        'page.title': document.title
+        'page.title': document.title,
       });
     });
   }
@@ -251,17 +251,17 @@ class BibleExplorerTelemetry {
     const originalPushState = history.pushState;
     const originalReplaceState = history.replaceState;
 
-    history.pushState = function(...args) {
+    history.pushState = function (...args) {
       telemetry.recordNavigation('pushstate', args[2]);
       return originalPushState.apply(this, args);
     };
 
-    history.replaceState = function(...args) {
+    history.replaceState = function (...args) {
       telemetry.recordNavigation('replacestate', args[2]);
       return originalReplaceState.apply(this, args);
     };
 
-    window.addEventListener('popstate', (_event) => {
+    window.addEventListener('popstate', _event => {
       this.recordNavigation('popstate', window.location.href);
     });
   }
@@ -275,47 +275,47 @@ class BibleExplorerTelemetry {
   recordPageView(path, title, attributes = {}) {
     // Security: Respect privacy preferences
     if (this.disabled) return;
-    
+
     const span = this.tracer.startSpan('page.view', {
       attributes: {
         'page.path': path,
         'page.title': title,
-        ...this.sanitizeAttributes(attributes)
-      }
+        ...this.sanitizeAttributes(attributes),
+      },
     });
-    
+
     this.pageViewCounter.add(1, {
       'page.path': path,
-      'page.title': title
+      'page.title': title,
     });
-    
+
     span.end();
   }
 
   recordSearch(query, resultCount, duration, attributes = {}) {
     // Security: Respect privacy preferences
     if (this.disabled) return;
-    
+
     // Security: Sanitize and limit search query for privacy
     const sanitizedQuery = this.sanitizeSearchQuery(query);
-    
+
     const span = this.tracer.startSpan('search.query', {
       attributes: {
         'search.query': sanitizedQuery,
         'search.result_count': resultCount,
         'search.duration_ms': duration,
         'search.has_results': resultCount > 0,
-        ...this.sanitizeAttributes(attributes)
-      }
+        ...this.sanitizeAttributes(attributes),
+      },
     });
 
     this.searchCounter.add(1, {
       'search.has_results': resultCount > 0 ? 'true' : 'false',
-      'search.result_count_range': this.getResultCountRange(resultCount)
+      'search.result_count_range': this.getResultCountRange(resultCount),
     });
 
     this.searchDurationHistogram.record(duration, {
-      'search.has_results': resultCount > 0 ? 'true' : 'false'
+      'search.has_results': resultCount > 0 ? 'true' : 'false',
     });
 
     span.end();
@@ -323,23 +323,24 @@ class BibleExplorerTelemetry {
 
   sanitizeSearchQuery(query) {
     if (typeof query !== 'string') return '[INVALID_QUERY]';
-    
+
     // Remove potential sensitive information and limit length
-    return query.replace(/[<>"/\\]/g, '')
-                .replace(/\b(password|token|key|secret|auth)\b/gi, '[FILTERED]')
-                .substring(0, 50); // Shorter limit for telemetry
+    return query
+      .replace(/[<>"/\\]/g, '')
+      .replace(/\b(password|token|key|secret|auth)\b/gi, '[FILTERED]')
+      .substring(0, 50); // Shorter limit for telemetry
   }
 
   sanitizeAttributes(attributes) {
     if (!attributes || typeof attributes !== 'object') return {};
-    
+
     const sanitized = {};
     for (const [key, value] of Object.entries(attributes)) {
       // Skip sensitive keys
       if (/password|token|key|secret|auth|cookie|session/i.test(key)) {
         continue;
       }
-      
+
       // Sanitize string values
       if (typeof value === 'string') {
         sanitized[key] = value.substring(0, 100);
@@ -353,19 +354,19 @@ class BibleExplorerTelemetry {
   recordVideoInteraction(action, videoId, bookSlug, attributes = {}) {
     // Security: Respect privacy preferences
     if (this.disabled) return;
-    
+
     const span = this.tracer.startSpan('video.interaction', {
       attributes: {
         'video.action': action,
         'video.id': videoId,
         'book.slug': bookSlug,
-        ...this.sanitizeAttributes(attributes)
-      }
+        ...this.sanitizeAttributes(attributes),
+      },
     });
 
     this.videoInteractionCounter.add(1, {
       'video.action': action,
-      'book.testament': attributes.testament || 'unknown'
+      'book.testament': attributes.testament || 'unknown',
     });
 
     span.end();
@@ -374,19 +375,19 @@ class BibleExplorerTelemetry {
   recordNavigation(method, url, attributes = {}) {
     // Security: Respect privacy preferences
     if (this.disabled) return;
-    
+
     const span = this.tracer.startSpan('navigation', {
       attributes: {
         'navigation.method': method,
         'navigation.url': url,
         'navigation.from': document.referrer,
-        ...this.sanitizeAttributes(attributes)
-      }
+        ...this.sanitizeAttributes(attributes),
+      },
     });
 
     this.navigationCounter.add(1, {
       'navigation.method': method,
-      'navigation.type': this.getNavigationType(url)
+      'navigation.type': this.getNavigationType(url),
     });
 
     span.end();
@@ -394,7 +395,7 @@ class BibleExplorerTelemetry {
 
   recordError(error, context = {}) {
     // Security: Always record errors for security monitoring, but sanitize data
-    
+
     const sanitizedContext = this.sanitizeAttributes(context);
     const span = this.tracer.startSpan('error.occurrence', {
       attributes: {
@@ -402,8 +403,8 @@ class BibleExplorerTelemetry {
         'error.message': (error.message || 'unknown').substring(0, 200),
         'error.stack': (error.stack || '').substring(0, 500),
         'error.context': JSON.stringify(sanitizedContext),
-        ...sanitizedContext
-      }
+        ...sanitizedContext,
+      },
     });
 
     span.recordException(error);
@@ -411,7 +412,7 @@ class BibleExplorerTelemetry {
 
     this.errorCounter.add(1, {
       'error.type': error.name || 'unknown',
-      'error.context': context.component || 'unknown'
+      'error.context': context.component || 'unknown',
     });
 
     span.end();
@@ -420,9 +421,9 @@ class BibleExplorerTelemetry {
   recordUserSession(duration) {
     // Security: Respect privacy preferences
     if (this.disabled) return;
-    
+
     this.sessionDurationHistogram.record(duration, {
-      'session.type': duration > 300000 ? 'long' : 'short' // 5 minutes threshold
+      'session.type': duration > 300000 ? 'long' : 'short', // 5 minutes threshold
     });
   }
 
@@ -444,20 +445,20 @@ class BibleExplorerTelemetry {
   initFallbackTelemetry() {
     // Minimal telemetry if OTEL fails
     this.tracer = {
-      startSpan: () => ({ 
-        setAttributes: () => {}, 
-        end: () => {}, 
+      startSpan: () => ({
+        setAttributes: () => {},
+        end: () => {},
         recordException: () => {},
-        setStatus: () => {}
-      })
+        setStatus: () => {},
+      }),
     };
-    
+
     this.meter = {
       createCounter: () => ({ add: () => {} }),
       createHistogram: () => ({ record: () => {} }),
-      createUpDownCounter: () => ({ add: () => {} })
+      createUpDownCounter: () => ({ add: () => {} }),
     };
-    
+
     console.warn('Using fallback telemetry - OTEL initialization failed');
   }
 

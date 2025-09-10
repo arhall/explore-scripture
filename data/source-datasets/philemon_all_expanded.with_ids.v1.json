@@ -77,24 +77,15 @@
       "name": "Jesus of Nazareth",
       "type": "person",
       "category": "messiah",
-      "references": [
-        "Philem passim"
-      ],
-      "aka": [
-        "Jesus",
-        "Christ",
-        "Messiah",
-        "Jesus Christ"
-      ],
+      "references": ["Philem passim"],
+      "aka": ["Jesus", "Christ", "Messiah", "Jesus Christ"],
       "id": "p.jesus-of-nazareth--c4738d73"
     },
     {
       "name": "God (YHWH)",
       "type": "divine",
       "category": "theology",
-      "references": [
-        "Philem passim"
-      ],
+      "references": ["Philem passim"],
       "aka": [],
       "id": "d.god-yhwh--34eab3d9"
     },
@@ -102,21 +93,15 @@
       "name": "Paul (Saul)",
       "type": "person",
       "category": "author",
-      "references": [
-        "Philem 1"
-      ],
-      "aka": [
-        "Saul"
-      ],
+      "references": ["Philem 1"],
+      "aka": ["Saul"],
       "id": "p.paul-saul--d4c08ff1"
     },
     {
       "name": "Timothy",
       "type": "person",
       "category": "co-sender",
-      "references": [
-        "Philem 1"
-      ],
+      "references": ["Philem 1"],
       "aka": [],
       "id": "p.timothy--227fb1d9"
     },
@@ -124,9 +109,7 @@
       "name": "Philemon",
       "type": "person",
       "category": "recipient",
-      "references": [
-        "Philem 1"
-      ],
+      "references": ["Philem 1"],
       "aka": [],
       "id": "p.philemon--59310849"
     },
@@ -134,9 +117,7 @@
       "name": "Apphia",
       "type": "person",
       "category": "recipient-household",
-      "references": [
-        "Philem 2"
-      ],
+      "references": ["Philem 2"],
       "aka": [],
       "id": "p.apphia--15ad48c9"
     },
@@ -144,9 +125,7 @@
       "name": "Archippus",
       "type": "person",
       "category": "recipient-household",
-      "references": [
-        "Philem 2"
-      ],
+      "references": ["Philem 2"],
       "aka": [],
       "id": "p.archippus--4f541ba4"
     },
@@ -154,9 +133,7 @@
       "name": "church in your house",
       "type": "group",
       "category": "house-church",
-      "references": [
-        "Philem 2"
-      ],
+      "references": ["Philem 2"],
       "aka": [],
       "id": "g.church-in-your-house--92fd012a"
     },
@@ -164,9 +141,7 @@
       "name": "Onesimus",
       "type": "person",
       "category": "slave-convert",
-      "references": [
-        "Philem 10-16"
-      ],
+      "references": ["Philem 10-16"],
       "aka": [],
       "id": "p.onesimus--e821d191"
     },
@@ -174,9 +149,7 @@
       "name": "prison",
       "type": "entity",
       "category": "institution",
-      "references": [
-        "Philem 1,9-10,13"
-      ],
+      "references": ["Philem 1,9-10,13"],
       "aka": [],
       "id": "e.prison--b4f9c81a"
     },
@@ -184,9 +157,7 @@
       "name": "grace and peace",
       "type": "figure",
       "category": "blessing",
-      "references": [
-        "Philem 3"
-      ],
+      "references": ["Philem 3"],
       "aka": [],
       "id": "f.grace-and-peace--011b3249"
     },
@@ -194,9 +165,7 @@
       "name": "love and faith toward the Lord and all saints",
       "type": "figure",
       "category": "commendation",
-      "references": [
-        "Philem 5"
-      ],
+      "references": ["Philem 5"],
       "aka": [],
       "id": "f.love-and-faith-toward-the-lord-and-all-saints--33011824"
     },
@@ -204,9 +173,7 @@
       "name": "refresh the hearts of the saints",
       "type": "figure",
       "category": "ministry",
-      "references": [
-        "Philem 7"
-      ],
+      "references": ["Philem 7"],
       "aka": [],
       "id": "f.refresh-the-hearts-of-the-saints--efc1d8ad"
     },
@@ -214,9 +181,7 @@
       "name": "I derived much joy and comfort",
       "type": "figure",
       "category": "thanksgiving",
-      "references": [
-        "Philem 7"
-      ],
+      "references": ["Philem 7"],
       "aka": [],
       "id": "f.i-derived-much-joy-and-comfort--841b384a"
     },
@@ -224,9 +189,7 @@
       "name": "though I am bold to command, I appeal for love",
       "type": "figure",
       "category": "rhetoric",
-      "references": [
-        "Philem 8-9"
-      ],
+      "references": ["Philem 8-9"],
       "aka": [],
       "id": "f.though-i-am-bold-to-command-i-appeal-for-love--5e83f7dd"
     },
@@ -234,9 +197,7 @@
       "name": "Paul the aged and now a prisoner",
       "type": "figure",
       "category": "ethos",
-      "references": [
-        "Philem 9"
-      ],
+      "references": ["Philem 9"],
       "aka": [],
       "id": "f.paul-the-aged-and-now-a-prisoner--75ed1d39"
     },
@@ -244,9 +205,7 @@
       "name": "Onesimus formerly useless now useful",
       "type": "figure",
       "category": "wordplay",
-      "references": [
-        "Philem 11"
-      ],
+      "references": ["Philem 11"],
       "aka": [],
       "id": "f.onesimus-formerly-useless-now-useful--e32b0b58"
     },
@@ -254,9 +213,7 @@
       "name": "I am sending my very heart",
       "type": "figure",
       "category": "affection",
-      "references": [
-        "Philem 12"
-      ],
+      "references": ["Philem 12"],
       "aka": [],
       "id": "f.i-am-sending-my-very-heart--36e134b4"
     },
@@ -264,9 +221,7 @@
       "name": "I would have liked to keep him with me",
       "type": "figure",
       "category": "desire",
-      "references": [
-        "Philem 13"
-      ],
+      "references": ["Philem 13"],
       "aka": [],
       "id": "f.i-would-have-liked-to-keep-him-with-me--892bb36a"
     },
@@ -274,9 +229,7 @@
       "name": "without your consent I would do nothing",
       "type": "figure",
       "category": "consent",
-      "references": [
-        "Philem 14"
-      ],
+      "references": ["Philem 14"],
       "aka": [],
       "id": "f.without-your-consent-i-would-do-nothing--0edd2e24"
     },
@@ -284,9 +237,7 @@
       "name": "perhaps he was parted from you for a while",
       "type": "figure",
       "category": "providence",
-      "references": [
-        "Philem 15"
-      ],
+      "references": ["Philem 15"],
       "aka": [],
       "id": "f.perhaps-he-was-parted-from-you-for-a-while--c58f97aa"
     },
@@ -294,9 +245,7 @@
       "name": "no longer as a slave",
       "type": "figure",
       "category": "status-shift",
-      "references": [
-        "Philem 16"
-      ],
+      "references": ["Philem 16"],
       "aka": [],
       "id": "f.no-longer-as-a-slave--4202cb16"
     },
@@ -304,9 +253,7 @@
       "name": "more than a slave—a beloved brother",
       "type": "figure",
       "category": "status-upgrade",
-      "references": [
-        "Philem 16"
-      ],
+      "references": ["Philem 16"],
       "aka": [],
       "id": "f.more-than-a-slave-a-beloved-brother--edc24088"
     },
@@ -314,9 +261,7 @@
       "name": "receive him as you would me",
       "type": "figure",
       "category": "identification",
-      "references": [
-        "Philem 17"
-      ],
+      "references": ["Philem 17"],
       "aka": [],
       "id": "f.receive-him-as-you-would-me--da5f9c42"
     },
@@ -324,9 +269,7 @@
       "name": "brother beloved",
       "type": "title",
       "category": "kinship",
-      "references": [
-        "Philem 16-17"
-      ],
+      "references": ["Philem 16-17"],
       "aka": [],
       "id": "t.brother-beloved--acc2146c"
     },
@@ -334,9 +277,7 @@
       "name": "both in the flesh and in the Lord",
       "type": "figure",
       "category": "sphere",
-      "references": [
-        "Philem 16"
-      ],
+      "references": ["Philem 16"],
       "aka": [],
       "id": "f.both-in-the-flesh-and-in-the-lord--c629d8be"
     },
@@ -344,22 +285,15 @@
       "name": "partners (koinonos)",
       "type": "figure",
       "category": "partnership",
-      "references": [
-        "Philem 17"
-      ],
-      "aka": [
-        "partner",
-        "koinonos"
-      ],
+      "references": ["Philem 17"],
+      "aka": ["partner", "koinonos"],
       "id": "f.partners-koinonos--adfb1c23"
     },
     {
       "name": "charge it to my account",
       "type": "figure",
       "category": "substitution",
-      "references": [
-        "Philem 18"
-      ],
+      "references": ["Philem 18"],
       "aka": [],
       "id": "f.charge-it-to-my-account--a0cfdd2a"
     },
@@ -367,9 +301,7 @@
       "name": "I write with my own hand",
       "type": "figure",
       "category": "autograph",
-      "references": [
-        "Philem 19"
-      ],
+      "references": ["Philem 19"],
       "aka": [],
       "id": "f.i-write-with-my-own-hand--dd512a82"
     },
@@ -377,9 +309,7 @@
       "name": "I will repay",
       "type": "figure",
       "category": "pledge",
-      "references": [
-        "Philem 19"
-      ],
+      "references": ["Philem 19"],
       "aka": [],
       "id": "f.i-will-repay--384147ca"
     },
@@ -387,9 +317,7 @@
       "name": "you owe me even your own self",
       "type": "figure",
       "category": "obligation",
-      "references": [
-        "Philem 19"
-      ],
+      "references": ["Philem 19"],
       "aka": [],
       "id": "f.you-owe-me-even-your-own-self--d2ab4b4a"
     },
@@ -397,9 +325,7 @@
       "name": "refresh my heart in Christ",
       "type": "figure",
       "category": "request",
-      "references": [
-        "Philem 20"
-      ],
+      "references": ["Philem 20"],
       "aka": [],
       "id": "f.refresh-my-heart-in-christ--bbe3976b"
     },
@@ -407,9 +333,7 @@
       "name": "confidence in your obedience",
       "type": "figure",
       "category": "confidence",
-      "references": [
-        "Philem 21"
-      ],
+      "references": ["Philem 21"],
       "aka": [],
       "id": "f.confidence-in-your-obedience--57f12247"
     },
@@ -417,9 +341,7 @@
       "name": "do even more than I say",
       "type": "figure",
       "category": "beyond",
-      "references": [
-        "Philem 21"
-      ],
+      "references": ["Philem 21"],
       "aka": [],
       "id": "f.do-even-more-than-i-say--be52ab48"
     },
@@ -427,9 +349,7 @@
       "name": "prepare a guest room for me",
       "type": "figure",
       "category": "hospitality",
-      "references": [
-        "Philem 22"
-      ],
+      "references": ["Philem 22"],
       "aka": [],
       "id": "f.prepare-a-guest-room-for-me--cb583c8b"
     },
@@ -437,9 +357,7 @@
       "name": "I hope to be granted to you through your prayers",
       "type": "figure",
       "category": "intercession",
-      "references": [
-        "Philem 22"
-      ],
+      "references": ["Philem 22"],
       "aka": [],
       "id": "f.i-hope-to-be-granted-to-you-through-your-prayers--6450d981"
     },
@@ -447,9 +365,7 @@
       "name": "Epaphras",
       "type": "person",
       "category": "coworker",
-      "references": [
-        "Philem 23"
-      ],
+      "references": ["Philem 23"],
       "aka": [],
       "id": "p.epaphras--9d5c0168"
     },
@@ -457,9 +373,7 @@
       "name": "fellow prisoner",
       "type": "group",
       "category": "status",
-      "references": [
-        "Philem 23"
-      ],
+      "references": ["Philem 23"],
       "aka": [],
       "id": "g.fellow-prisoner--2e76ab7d"
     },
@@ -467,34 +381,23 @@
       "name": "Mark (John Mark) (cousin of Barnabas)",
       "type": "person",
       "category": "coworker",
-      "references": [
-        "Philem 24"
-      ],
-      "aka": [
-        "John Mark",
-        "Mark the cousin of Barnabas"
-      ],
+      "references": ["Philem 24"],
+      "aka": ["John Mark", "Mark the cousin of Barnabas"],
       "id": "p.mark-john-mark-cousin-of-barnabas--091a32fe"
     },
     {
       "name": "Aristarchus of Thessalonica",
       "type": "person",
       "category": "coworker",
-      "references": [
-        "Philem 24"
-      ],
-      "aka": [
-        "Aristarchus"
-      ],
+      "references": ["Philem 24"],
+      "aka": ["Aristarchus"],
       "id": "p.aristarchus-of-thessalonica--82aa43a2"
     },
     {
       "name": "Demas",
       "type": "person",
       "category": "coworker",
-      "references": [
-        "Philem 24"
-      ],
+      "references": ["Philem 24"],
       "aka": [],
       "id": "p.demas--a8b9f62c"
     },
@@ -502,22 +405,15 @@
       "name": "Luke (the beloved physician)",
       "type": "person",
       "category": "coworker",
-      "references": [
-        "Philem 24"
-      ],
-      "aka": [
-        "Luke",
-        "Luke the physician"
-      ],
+      "references": ["Philem 24"],
+      "aka": ["Luke", "Luke the physician"],
       "id": "p.luke-the-beloved-physician--05b89346"
     },
     {
       "name": "fellow workers",
       "type": "group",
       "category": "team",
-      "references": [
-        "Philem 24"
-      ],
+      "references": ["Philem 24"],
       "aka": [],
       "id": "g.fellow-workers--13859857"
     },
@@ -525,9 +421,7 @@
       "name": "grace of the Lord Jesus with your spirit",
       "type": "figure",
       "category": "benediction",
-      "references": [
-        "Philem 25"
-      ],
+      "references": ["Philem 25"],
       "aka": [],
       "id": "f.grace-of-the-lord-jesus-with-your-spirit--5a07fa24"
     },
@@ -535,12 +429,8 @@
       "name": "Colossae",
       "type": "entity",
       "category": "city",
-      "references": [
-        "Col 1:2"
-      ],
-      "cross_references": [
-        "Philem address context"
-      ],
+      "references": ["Col 1:2"],
+      "cross_references": ["Philem address context"],
       "aka": [],
       "id": "e.colossae--4c307fad"
     }

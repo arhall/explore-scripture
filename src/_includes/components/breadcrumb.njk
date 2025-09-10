@@ -8,84 +8,81 @@
       </a>
       <span class="breadcrumb-separator" aria-hidden="true">›</span>
     </li>
-    
+
     {% if book %}
-      <li class="breadcrumb-item">
-        <a href="/#{{ book.testament | slug }}" class="breadcrumb-link">
-          <span class="breadcrumb-icon">{% if book.testament === "Old Testament" %}📜{% else %}✝️{% endif %}</span>
-          {{ book.testament }}
-        </a>
-        <span class="breadcrumb-separator" aria-hidden="true">›</span>
-      </li>
-      
-      <li class="breadcrumb-item">
-        <a href="/categories/{{ book.category | slug }}/" class="breadcrumb-link">
-          <span class="breadcrumb-icon">📚</span>
-          {{ book.category }}
-        </a>
-        <span class="breadcrumb-separator" aria-hidden="true">›</span>
-      </li>
-      
-      <li class="breadcrumb-item current">
-        <span class="breadcrumb-current" aria-current="page">
-          {{ book.name }}
-        </span>
-      </li>
-      
+    <li class="breadcrumb-item">
+      <a href="/#{{ book.testament | slug }}" class="breadcrumb-link">
+        <span class="breadcrumb-icon"
+          >{% if book.testament === "Old Testament" %}📜{% else %}✝️{% endif %}</span
+        >
+        {{ book.testament }}
+      </a>
+      <span class="breadcrumb-separator" aria-hidden="true">›</span>
+    </li>
+
+    <li class="breadcrumb-item">
+      <a href="/categories/{{ book.category | slug }}/" class="breadcrumb-link">
+        <span class="breadcrumb-icon">📚</span>
+        {{ book.category }}
+      </a>
+      <span class="breadcrumb-separator" aria-hidden="true">›</span>
+    </li>
+
+    <li class="breadcrumb-item current">
+      <span class="breadcrumb-current" aria-current="page"> {{ book.name }} </span>
+    </li>
+
     {% elif character %}
-      <li class="breadcrumb-item">
-        <a href="/characters/" class="breadcrumb-link">
-          <span class="breadcrumb-icon">👤</span>
-          Characters
-        </a>
-        <span class="breadcrumb-separator" aria-hidden="true">›</span>
-      </li>
-      
-      <li class="breadcrumb-item current">
-        <span class="breadcrumb-current" aria-current="page">
-          {{ character.name }}
-        </span>
-      </li>
-      
+    <li class="breadcrumb-item">
+      <a href="/characters/" class="breadcrumb-link">
+        <span class="breadcrumb-icon">👤</span>
+        Characters
+      </a>
+      <span class="breadcrumb-separator" aria-hidden="true">›</span>
+    </li>
+
+    <li class="breadcrumb-item current">
+      <span class="breadcrumb-current" aria-current="page"> {{ character.name }} </span>
+    </li>
+
     {% elif category %}
-      <li class="breadcrumb-item">
-        <a href="/#{{ category.testament | slug }}" class="breadcrumb-link">
-          <span class="breadcrumb-icon">{% if category.testament === "Old Testament" %}📜{% else %}✝️{% endif %}</span>
-          {{ category.testament }}
-        </a>
-        <span class="breadcrumb-separator" aria-hidden="true">›</span>
-      </li>
-      
-      <li class="breadcrumb-item current">
-        <span class="breadcrumb-current" aria-current="page">
-          {{ category.name }}
-        </span>
-      </li>
-      
+    <li class="breadcrumb-item">
+      <a href="/#{{ category.testament | slug }}" class="breadcrumb-link">
+        <span class="breadcrumb-icon"
+          >{% if category.testament === "Old Testament" %}📜{% else %}✝️{% endif %}</span
+        >
+        {{ category.testament }}
+      </a>
+      <span class="breadcrumb-separator" aria-hidden="true">›</span>
+    </li>
+
+    <li class="breadcrumb-item current">
+      <span class="breadcrumb-current" aria-current="page"> {{ category.name }} </span>
+    </li>
+
     {% elif page.url.startsWith('/characters/') and page.url !== '/characters/' %}
-      <li class="breadcrumb-item current">
-        <span class="breadcrumb-current" aria-current="page">
-          <span class="breadcrumb-icon">👤</span>
-          Characters
-        </span>
-      </li>
-      
+    <li class="breadcrumb-item current">
+      <span class="breadcrumb-current" aria-current="page">
+        <span class="breadcrumb-icon">👤</span>
+        Characters
+      </span>
+    </li>
+
     {% elif page.url.startsWith('/gospel-thread/') %}
-      <li class="breadcrumb-item current">
-        <span class="breadcrumb-current" aria-current="page">
-          <span class="breadcrumb-icon">🧵</span>
-          Gospel Thread
-        </span>
-      </li>
-      
+    <li class="breadcrumb-item current">
+      <span class="breadcrumb-current" aria-current="page">
+        <span class="breadcrumb-icon">🧵</span>
+        Gospel Thread
+      </span>
+    </li>
+
     {% elif page.url.startsWith('/links/') %}
-      <li class="breadcrumb-item current">
-        <span class="breadcrumb-current" aria-current="page">
-          <span class="breadcrumb-icon">🔗</span>
-          Links
-        </span>
-      </li>
+    <li class="breadcrumb-item current">
+      <span class="breadcrumb-current" aria-current="page">
+        <span class="breadcrumb-icon">🔗</span>
+        Links
+      </span>
+    </li>
     {% endif %}
-    
   </ol>
 </nav>

@@ -1,6 +1,6 @@
 /**
  * Bundle Optimizer and Lazy Loading Manager
- * 
+ *
  * Implements intelligent module loading, code splitting,
  * and progressive enhancement for better performance
  */
@@ -13,25 +13,25 @@ class BundleOptimizer {
     this.criticalModules = new Set(['theme-manager', 'logger']);
     this.moduleRegistry = new Map();
     this.loadTiming = new Map();
-    
+
     this.init();
   }
 
   init() {
     console.log('[BundleOptimizer] Initializing...');
-    
+
     // Setup intersection observer for lazy loading
     this.setupIntersectionObserver();
-    
+
     // Setup module registry
     this.registerModules();
-    
+
     // Load critical modules immediately
     this.loadCriticalModules();
-    
+
     // Setup event listeners for user interactions
     this.setupInteractionListeners();
-    
+
     console.log('[BundleOptimizer] Ready');
   }
 
@@ -43,14 +43,14 @@ class BundleOptimizer {
         url: '/assets/theme-manager.js',
         priority: 'critical',
         size: 8, // KB
-        dependencies: []
+        dependencies: [],
       },
-      
-      'logger': {
+
+      logger: {
         url: '/assets/logger.js',
         priority: 'critical',
         size: 5,
-        dependencies: []
+        dependencies: [],
       },
 
       // High Priority - Load on interaction or visibility
@@ -59,7 +59,7 @@ class BundleOptimizer {
         priority: 'high',
         size: 25,
         dependencies: [],
-        triggers: ['search-focus', 'search-visible']
+        triggers: ['search-focus', 'search-visible'],
       },
 
       'search-interface': {
@@ -67,7 +67,7 @@ class BundleOptimizer {
         priority: 'high',
         size: 15,
         dependencies: ['search-engine'],
-        triggers: ['search-focus', 'search-visible']
+        triggers: ['search-focus', 'search-visible'],
       },
 
       // Medium Priority - Load when likely to be needed
@@ -76,15 +76,15 @@ class BundleOptimizer {
         priority: 'medium',
         size: 35,
         dependencies: [],
-        triggers: ['chapter-btn-visible', 'book-page-visit']
+        triggers: ['chapter-btn-visible', 'book-page-visit'],
       },
 
       'commentary-reader': {
         url: '/assets/commentary-reader.js',
-        priority: 'medium', 
+        priority: 'medium',
         size: 20,
         dependencies: [],
-        triggers: ['commentary-btn-visible', 'book-page-visit']
+        triggers: ['commentary-btn-visible', 'book-page-visit'],
       },
 
       // Low Priority - Load on demand
@@ -93,7 +93,7 @@ class BundleOptimizer {
         priority: 'low',
         size: 45,
         dependencies: ['d3'],
-        triggers: ['entity-relations-visible']
+        triggers: ['entity-relations-visible'],
       },
 
       'genealogy-explorer': {
@@ -101,17 +101,17 @@ class BundleOptimizer {
         priority: 'low',
         size: 50,
         dependencies: ['d3'],
-        triggers: ['genealogy-page-visit']
+        triggers: ['genealogy-page-visit'],
       },
 
       // External dependencies
-      'd3': {
+      d3: {
         url: 'https://unpkg.com/d3@7/dist/d3.min.js',
         priority: 'external',
         size: 250,
         dependencies: [],
-        cached: true
-      }
+        cached: true,
+      },
     };
 
     // Register all modules
@@ -120,7 +120,7 @@ class BundleOptimizer {
         ...config,
         loaded: false,
         loading: false,
-        error: null
+        error: null,
       });
     });
   }
@@ -131,17 +131,20 @@ class BundleOptimizer {
       return;
     }
 
-    this.intersectionObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const triggers = entry.target.dataset.lazyTrigger?.split(',') || [];
-          triggers.forEach(trigger => this.handleTrigger(trigger.trim()));
-        }
-      });
-    }, {
-      rootMargin: '50px', // Load 50px before element becomes visible
-      threshold: 0.1
-    });
+    this.intersectionObserver = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const triggers = entry.target.dataset.lazyTrigger?.split(',') || [];
+            triggers.forEach(trigger => this.handleTrigger(trigger.trim()));
+          }
+        });
+      },
+      {
+        rootMargin: '50px', // Load 50px before element becomes visible
+        threshold: 0.1,
+      }
+    );
 
     // Observe elements that should trigger lazy loading
     this.observeLazyElements();
@@ -155,7 +158,9 @@ class BundleOptimizer {
     }
 
     // Search elements
-    const searchElements = document.querySelectorAll('input[type="search"], .search-box, #searchInput');
+    const searchElements = document.querySelectorAll(
+      'input[type="search"], .search-box, #searchInput'
+    );
     searchElements.forEach(el => {
       el.dataset.lazyTrigger = 'search-visible';
       this.intersectionObserver?.observe(el);
@@ -168,7 +173,7 @@ class BundleOptimizer {
       this.intersectionObserver?.observe(el);
     });
 
-    // Commentary buttons  
+    // Commentary buttons
     const commentaryBtns = document.querySelectorAll('.commentary-btn');
     commentaryBtns.forEach(el => {
       el.dataset.lazyTrigger = 'commentary-btn-visible';
@@ -185,7 +190,7 @@ class BundleOptimizer {
 
   setupInteractionListeners() {
     // Search focus triggers
-    document.addEventListener('focusin', (e) => {
+    document.addEventListener('focusin', e => {
       if (e.target.matches('input[type="search"], .search-box')) {
         this.handleTrigger('search-focus');
       }
@@ -193,7 +198,7 @@ class BundleOptimizer {
 
     // Page-specific triggers based on URL
     const currentPath = window.location.pathname;
-    
+
     if (currentPath.startsWith('/books/')) {
       setTimeout(() => this.handleTrigger('book-page-visit'), 1000);
     } else if (currentPath === '/genealogy/') {
@@ -203,7 +208,7 @@ class BundleOptimizer {
 
   loadCriticalModules() {
     console.log('[BundleOptimizer] Loading critical modules...');
-    
+
     this.criticalModules.forEach(moduleName => {
       this.loadModule(moduleName, { priority: 'critical' });
     });
@@ -211,10 +216,10 @@ class BundleOptimizer {
 
   async handleTrigger(trigger) {
     console.log(`[BundleOptimizer] Trigger: ${trigger}`);
-    
+
     // Find modules that should be loaded for this trigger
     const modulesToLoad = [];
-    
+
     this.moduleRegistry.forEach((config, name) => {
       if (config.triggers?.includes(trigger) && !config.loaded && !config.loading) {
         modulesToLoad.push(name);
@@ -223,7 +228,7 @@ class BundleOptimizer {
 
     if (modulesToLoad.length > 0) {
       console.log(`[BundleOptimizer] Loading modules for trigger "${trigger}":`, modulesToLoad);
-      
+
       // Load modules in priority order
       const sortedModules = modulesToLoad.sort((a, b) => {
         const priorityOrder = { critical: 0, high: 1, medium: 2, low: 3, external: 4 };
@@ -239,7 +244,7 @@ class BundleOptimizer {
     }
   }
 
-  async loadModule(moduleName, options = {}) {
+  async loadModule(moduleName, _options = {}) {
     const config = this.moduleRegistry.get(moduleName);
     if (!config) {
       console.error(`[BundleOptimizer] Module not found: ${moduleName}`);
@@ -256,18 +261,19 @@ class BundleOptimizer {
     }
 
     console.log(`[BundleOptimizer] Loading module: ${moduleName} (${config.size}KB)`);
-    
+
     const loadStart = performance.now();
     config.loading = true;
 
     try {
       // Load dependencies first
       if (config.dependencies && config.dependencies.length > 0) {
-        console.log(`[BundleOptimizer] Loading dependencies for ${moduleName}:`, config.dependencies);
-        
-        await Promise.all(
-          config.dependencies.map(dep => this.loadModule(dep))
+        console.log(
+          `[BundleOptimizer] Loading dependencies for ${moduleName}:`,
+          config.dependencies
         );
+
+        await Promise.all(config.dependencies.map(dep => this.loadModule(dep)));
       }
 
       // Create loading promise
@@ -294,21 +300,20 @@ class BundleOptimizer {
           module: moduleName,
           loadTime,
           size: config.size,
-          priority: config.priority
+          priority: config.priority,
         });
       }
 
       return true;
-
     } catch (error) {
       console.error(`[BundleOptimizer] Failed to load ${moduleName}:`, error);
-      
+
       config.loading = false;
       config.error = error.message;
-      
+
       // Clean up promises
       this.loadingPromises.delete(moduleName);
-      
+
       return false;
     }
   }
@@ -322,7 +327,7 @@ class BundleOptimizer {
           resolve();
           return;
         }
-        
+
         // Wait for existing script to load
         existing.addEventListener('load', resolve);
         existing.addEventListener('error', reject);
@@ -365,14 +370,14 @@ class BundleOptimizer {
     link.href = config.url;
     link.as = 'script';
     link.crossOrigin = 'anonymous';
-    
+
     document.head.appendChild(link);
   }
 
   // Progressive enhancement for features
   enhance(feature, callback) {
     const featureModules = this.getModulesForFeature(feature);
-    
+
     if (featureModules.length === 0) {
       // No modules needed, enhance immediately
       callback();
@@ -394,11 +399,11 @@ class BundleOptimizer {
 
   getModulesForFeature(feature) {
     const featureModules = {
-      'search': ['search-engine', 'search-interface'],
+      search: ['search-engine', 'search-interface'],
       'chapter-reading': ['chapter-reader'],
-      'commentary': ['commentary-reader'],
+      commentary: ['commentary-reader'],
       'entity-relationships': ['entity-relationship-visualizer', 'd3'],
-      'genealogy': ['genealogy-explorer', 'd3']
+      genealogy: ['genealogy-explorer', 'd3'],
     };
 
     return featureModules[feature] || [];
@@ -406,15 +411,18 @@ class BundleOptimizer {
 
   // Get loading statistics
   getStats() {
-    const loadedCount = Array.from(this.moduleRegistry.values())
-      .filter(config => config.loaded).length;
-    
-    const totalSize = Array.from(this.moduleRegistry.entries())
-      .filter(([name, config]) => config.loaded)
-      .reduce((total, [name, config]) => total + config.size, 0);
+    const loadedCount = Array.from(this.moduleRegistry.values()).filter(
+      config => config.loaded
+    ).length;
 
-    const avgLoadTime = Array.from(this.loadTiming.values())
-      .reduce((sum, time, _, arr) => sum + time / arr.length, 0);
+    const totalSize = Array.from(this.moduleRegistry.entries())
+      .filter(([_name, config]) => config.loaded)
+      .reduce((total, [_name, config]) => total + config.size, 0);
+
+    const avgLoadTime = Array.from(this.loadTiming.values()).reduce(
+      (sum, time, _, arr) => sum + time / arr.length,
+      0
+    );
 
     return {
       modulesLoaded: loadedCount,
@@ -422,8 +430,8 @@ class BundleOptimizer {
       totalSizeKB: totalSize,
       avgLoadTimeMs: Math.round(avgLoadTime),
       loadedModules: Array.from(this.moduleRegistry.entries())
-        .filter(([name, config]) => config.loaded)
-        .map(([name, config]) => ({ name, size: config.size, priority: config.priority }))
+        .filter(([_name, config]) => config.loaded)
+        .map(([name, config]) => ({ name, size: config.size, priority: config.priority })),
     };
   }
 
@@ -437,7 +445,7 @@ class BundleOptimizer {
     if (this.intersectionObserver) {
       this.intersectionObserver.disconnect();
     }
-    
+
     this.loadingPromises.clear();
     this.loadTiming.clear();
     this.loadedModules.clear();

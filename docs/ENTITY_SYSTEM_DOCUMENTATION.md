@@ -1,12 +1,16 @@
 # Entity System Documentation
 
-The Explore Scripture Entity System provides comprehensive access to 5,500+ biblical characters, places, events, and concepts across all 66 books of the Bible.
+The Explore Scripture Entity System provides comprehensive access to 5,500+
+biblical characters, places, events, and concepts across all 66 books of the
+Bible.
 
 ## Overview
 
 The entity system consists of:
-- **5,514 Individual Entities**: Each with dedicated pages and detailed information
-- **66 Book Entity Collections**: Key figures for each biblical book 
+
+- **5,514 Individual Entities**: Each with dedicated pages and detailed
+  information
+- **66 Book Entity Collections**: Key figures for each biblical book
 - **Search Integration**: Entities searchable through the unified search system
 - **Cross-References**: Links between related entities and scripture passages
 
@@ -15,7 +19,7 @@ The entity system consists of:
 The system includes 8 types of entities:
 
 - **`person`**: Biblical characters (Abraham, Moses, Jesus, etc.)
-- **`place`**: Geographic locations (Jerusalem, Egypt, Babylon, etc.) 
+- **`place`**: Geographic locations (Jerusalem, Egypt, Babylon, etc.)
 - **`divine`**: Divine beings and concepts (God, Holy Spirit, etc.)
 - **`title`**: Roles and titles (King, Prophet, Priest, etc.)
 - **`figure`**: Symbolic or metaphorical figures
@@ -26,6 +30,7 @@ The system includes 8 types of entities:
 ## Data Structure
 
 ### Individual Entity Files
+
 Location: `src/assets/data/entities/{entity-id}.json`
 
 ```json
@@ -51,13 +56,14 @@ Location: `src/assets/data/entities/{entity-id}.json`
 ```
 
 ### Book Entity Collections
+
 Location: `src/assets/data/books/{book-slug}-entities.json`
 
 ```json
 [
   {
     "id": "p.moses.exod-2--xyz123",
-    "name": "Moses", 
+    "name": "Moses",
     "type": "person",
     "url": "/entities/p.moses.exod-2--xyz123/",
     "blurb": "Prophet who led Israel out of Egypt",
@@ -78,21 +84,25 @@ Location: `src/assets/data/books/{book-slug}-entities.json`
 ## Key Features
 
 ### 1. Dynamic SEO Optimization
+
 - Page titles update to `{Entity Name} - Explore Scripture`
 - Meta descriptions auto-generated from entity blurbs
 - Proper canonical URLs and redirects
 
 ### 2. Search Integration
+
 - Entities indexed in `src/assets/data/entities-search.json`
 - Searchable by name, type, category, and description
 - Integrated with main site search engine
 
 ### 3. Cross-References
+
 - Links to related scripture passages
 - Navigation between related entities
 - Book-specific filtering
 
 ### 4. Accessibility Features
+
 - ARIA labels for interactive elements
 - Keyboard navigation support
 - High contrast mode compatibility
@@ -100,7 +110,9 @@ Location: `src/assets/data/books/{book-slug}-entities.json`
 ## Loading System
 
 ### Book Key Figures
-The `loadKeyFigures()` function in `book.njk:712` fetches entity data for each book:
+
+The `loadKeyFigures()` function in `book.njk:712` fetches entity data for each
+book:
 
 ```javascript
 async function loadKeyFigures() {
@@ -111,6 +123,7 @@ async function loadKeyFigures() {
 ```
 
 ### Individual Entity Pages
+
 Entity pages use pagination in `src/entities.njk`:
 
 ```yaml
@@ -118,12 +131,13 @@ pagination:
   data: entityIds
   size: 1
   alias: entityId
-permalink: "/entities/{{ entityId }}/"
+permalink: '/entities/{{ entityId }}/'
 ```
 
 ## Redirects System
 
-Legacy entity IDs are mapped to canonical IDs in `src/assets/data/redirects.json`:
+Legacy entity IDs are mapped to canonical IDs in
+`src/assets/data/redirects.json`:
 
 ```json
 {
@@ -136,9 +150,13 @@ JavaScript automatically redirects users from old URLs to canonical ones.
 ## Management Scripts
 
 ### Key Scripts
-- `scripts/entity-utils/test-key-figures-loading.js` - Verify all 66 books have entity data
-- `scripts/entity-utils/extract-book-entities.js` - Extract entities from combined dataset
-- `scripts/entity-utils/validate-entity-schema.js` - Validate JSON schema compliance
+
+- `scripts/entity-utils/test-key-figures-loading.js` - Verify all 66 books have
+  entity data
+- `scripts/entity-utils/extract-book-entities.js` - Extract entities from
+  combined dataset
+- `scripts/entity-utils/validate-entity-schema.js` - Validate JSON schema
+  compliance
 
 ### Usage Examples
 
@@ -166,33 +184,39 @@ Entity data can be accessed programmatically:
 
 ```javascript
 // Load specific entity
-const entity = await fetch('/assets/data/entities/p.david.1-sam-16--a1b2c3d4.json')
-  .then(r => r.json());
+const entity = await fetch(
+  '/assets/data/entities/p.david.1-sam-16--a1b2c3d4.json'
+).then(r => r.json());
 
 // Load book entities
-const bookEntities = await fetch('/assets/data/books/genesis-entities.json')
-  .then(r => r.json());
+const bookEntities = await fetch(
+  '/assets/data/books/genesis-entities.json'
+).then(r => r.json());
 
 // Check for redirects
-const redirects = await fetch('/assets/data/redirects.json')
-  .then(r => r.json());
+const redirects = await fetch('/assets/data/redirects.json').then(r =>
+  r.json()
+);
 ```
 
 ## Best Practices
 
 ### Adding New Entities
+
 1. Generate unique ID using format: `{type}.{name-slug}.{reference}--{hash}`
 2. Include all required fields: `id`, `name`, `type`
 3. Add book references in `book_references` object
 4. Update search index and book collections
 
 ### Schema Compliance
+
 - Use established entity types (`person`, `place`, etc.)
 - Include descriptive blurbs under 160 characters for SEO
 - Format references as arrays of strings
 - Validate with schema checker before deployment
 
 ### Performance Optimization
+
 - Limit book entity collections to top 50 entities by reference count
 - Use gzip-friendly JSON formatting
 - Implement proper caching headers
@@ -201,12 +225,14 @@ const redirects = await fetch('/assets/data/redirects.json')
 ## Troubleshooting
 
 ### Common Issues
+
 - **404 on entity pages**: Check `entityIds.js` is generating correct ID list
 - **Missing key figures**: Verify book entity file exists and is valid JSON
 - **Search not working**: Ensure `entities-search.json` is up to date
 - **Redirect loops**: Check `redirects.json` for circular mappings
 
 ### Debug Tools
+
 - Browser console shows entity loading errors
 - Debug mode (`?debug=true`) provides detailed logging
 - Test scripts validate data integrity

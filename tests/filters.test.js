@@ -24,15 +24,15 @@ describe('Eleventy Filters', () => {
   describe('chapterSort filter', () => {
     test('should sort chapters numerically in ascending order', () => {
       const chapters = {
-        '10': 'Chapter 10 summary',
-        '2': 'Chapter 2 summary', 
-        '1': 'Chapter 1 summary',
-        '11': 'Chapter 11 summary'
+        10: 'Chapter 10 summary',
+        2: 'Chapter 2 summary',
+        1: 'Chapter 1 summary',
+        11: 'Chapter 11 summary',
       };
 
       const sorted = filters.chapterSort(chapters);
       const sortedChapters = sorted.map(([ch, summary]) => ch);
-      
+
       expect(sortedChapters).toEqual(['1', '2', '10', '11']);
     });
 
@@ -44,39 +44,57 @@ describe('Eleventy Filters', () => {
 
     test('should preserve chapter summaries', () => {
       const chapters = {
-        '2': 'Second chapter',
-        '1': 'First chapter'
+        2: 'Second chapter',
+        1: 'First chapter',
       };
 
       const sorted = filters.chapterSort(chapters);
-      
+
       expect(sorted).toEqual([
         ['1', 'First chapter'],
-        ['2', 'Second chapter']
+        ['2', 'Second chapter'],
       ]);
     });
   });
 
   describe('commentaryUrl filter', () => {
     test('should generate correct URLs for regular books', () => {
-      expect(filters.commentaryUrl('Genesis', '1')).toBe('https://enduringword.com/bible-commentary/genesis-1/');
-      expect(filters.commentaryUrl('Matthew', '5')).toBe('https://enduringword.com/bible-commentary/matthew-5/');
-      expect(filters.commentaryUrl('Revelation', '21')).toBe('https://enduringword.com/bible-commentary/revelation-21/');
+      expect(filters.commentaryUrl('Genesis', '1')).toBe(
+        'https://enduringword.com/bible-commentary/genesis-1/'
+      );
+      expect(filters.commentaryUrl('Matthew', '5')).toBe(
+        'https://enduringword.com/bible-commentary/matthew-5/'
+      );
+      expect(filters.commentaryUrl('Revelation', '21')).toBe(
+        'https://enduringword.com/bible-commentary/revelation-21/'
+      );
     });
 
     test('should handle Psalms correctly (singular)', () => {
-      expect(filters.commentaryUrl('Psalms', '23')).toBe('https://enduringword.com/bible-commentary/psalm-23/');
-      expect(filters.commentaryUrl('Psalms', '119')).toBe('https://enduringword.com/bible-commentary/psalm-119/');
+      expect(filters.commentaryUrl('Psalms', '23')).toBe(
+        'https://enduringword.com/bible-commentary/psalm-23/'
+      );
+      expect(filters.commentaryUrl('Psalms', '119')).toBe(
+        'https://enduringword.com/bible-commentary/psalm-119/'
+      );
     });
 
     test('should handle numbered books correctly', () => {
-      expect(filters.commentaryUrl('1 Samuel', '17')).toBe('https://enduringword.com/bible-commentary/1-samuel-17/');
-      expect(filters.commentaryUrl('2 Kings', '2')).toBe('https://enduringword.com/bible-commentary/2-kings-2/');
-      expect(filters.commentaryUrl('1 Corinthians', '13')).toBe('https://enduringword.com/bible-commentary/1-corinthians-13/');
+      expect(filters.commentaryUrl('1 Samuel', '17')).toBe(
+        'https://enduringword.com/bible-commentary/1-samuel-17/'
+      );
+      expect(filters.commentaryUrl('2 Kings', '2')).toBe(
+        'https://enduringword.com/bible-commentary/2-kings-2/'
+      );
+      expect(filters.commentaryUrl('1 Corinthians', '13')).toBe(
+        'https://enduringword.com/bible-commentary/1-corinthians-13/'
+      );
     });
 
     test('should handle books with spaces', () => {
-      expect(filters.commentaryUrl('Song of Songs', '1')).toBe('https://enduringword.com/bible-commentary/song-of-songs-1/');
+      expect(filters.commentaryUrl('Song of Songs', '1')).toBe(
+        'https://enduringword.com/bible-commentary/song-of-songs-1/'
+      );
     });
   });
 

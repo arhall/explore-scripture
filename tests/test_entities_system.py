@@ -4,6 +4,7 @@ Tests entity pages, search functionality, and cross-references.
 """
 
 import pytest
+from .config import get_test_urls
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -19,7 +20,7 @@ class TestEntitiesSystem:
     @pytest.fixture(autouse=True)
     def setup(self):
         """Set up test environment."""
-        self.base_url = "http://localhost:8080"
+        self.base_url = get_test_urls()["base"]
         
         # Sample entities to test with
         self.test_entities = [

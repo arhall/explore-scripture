@@ -2,58 +2,60 @@
 const d3 = window.d3;
 
 const COLORS = {
-  defaultNode: "#4B5563",
-  leafNode: "#A3A3A3",
-  link: "#D1D5DB",
-  focus: "#111827",
+  defaultNode: '#4B5563',
+  leafNode: '#A3A3A3',
+  link: '#D1D5DB',
+  focus: '#111827',
   tribes: {
-    Judah: "#8B5CF6",
-    Levi: "#10B981",
-    Israel: "#2563EB",
+    Judah: '#8B5CF6',
+    Levi: '#10B981',
+    Israel: '#2563EB',
   },
 };
 
 class GenealogyExplorer extends HTMLElement {
-  static observedAttributes = ["data-src", "default-root", "mode"];
+  static observedAttributes = ['data-src', 'default-root', 'mode'];
   constructor() {
     super();
     // Don't use Shadow DOM to avoid D3 compatibility issues
     this.state = {
       data: [],
       byId: new Map(),
-      mode: this.getAttribute("mode") || "descendants",
-      rootId: this.getAttribute("default-root") || "abram",
-      query: "",
+      mode: this.getAttribute('mode') || 'descendants',
+      rootId: this.getAttribute('default-root') || 'abram',
+      query: '',
     };
     this._onKey = this._onKey.bind(this);
   }
 
   connectedCallback() {
     this.renderShell();
-    
+
     // Check if D3 is available
     if (!d3) {
       console.error('[GenealogyExplorer] D3.js not available');
       this.renderError('D3.js library not loaded');
       return;
     }
-    
-    this.loadData().then(() => {
-      this.buildIndex();
-      this.renderTree();
-      window.addEventListener("keydown", this._onKey);
-    }).catch(error => {
-      console.error('[GenealogyExplorer] Failed to initialize:', error);
-      this.renderError('Failed to load genealogy data: ' + error.message);
-    });
+
+    this.loadData()
+      .then(() => {
+        this.buildIndex();
+        this.renderTree();
+        window.addEventListener('keydown', this._onKey);
+      })
+      .catch(error => {
+        console.error('[GenealogyExplorer] Failed to initialize:', error);
+        this.renderError('Failed to load genealogy data: ' + error.message);
+      });
   }
   disconnectedCallback() {
-    window.removeEventListener("keydown", this._onKey);
+    window.removeEventListener('keydown', this._onKey);
   }
   attributeChangedCallback() {}
 
   async loadData() {
-    const src = this.getAttribute("data-src");
+    const src = this.getAttribute('data-src');
     if (src) {
       const res = await fetch(src);
       if (!res.ok) {
@@ -62,25 +64,28 @@ class GenealogyExplorer extends HTMLElement {
       this.state.data = await res.json();
     } else {
       // Inline <script type="application/json"> next to this element
-      const id = this.getAttribute("for") || this.getAttribute("id") || this.getAttribute("data-inline-id");
-      const inline = document.querySelector(`#${id}-data`) || document.querySelector("script[type='application/json']");
+      const id =
+        this.getAttribute('for') || this.getAttribute('id') || this.getAttribute('data-inline-id');
+      const inline =
+        document.querySelector(`#${id}-data`) ||
+        document.querySelector("script[type='application/json']");
       this.state.data = inline ? JSON.parse(inline.textContent) : [];
     }
   }
 
   buildIndex() {
-    this.state.byId = new Map(this.state.data.map((d) => [d.id, d]));
+    this.state.byId = new Map(this.state.data.map(d => [d.id, d]));
     if (!this.state.byId.has(this.state.rootId)) {
       // attempt to pick a sensible root
-      const guess = this.state.byId.has("jesus") ? "jesus" : this.state.data[0]?.id;
+      const guess = this.state.byId.has('jesus') ? 'jesus' : this.state.data[0]?.id;
       if (guess) this.state.rootId = guess;
     }
 
     // URL hash support for deep linking: #root=abram&mode=descendants&query=david
     const params = new URLSearchParams(location.hash.slice(1));
-    if (params.get("root")) this.state.rootId = params.get("root");
-    if (params.get("mode")) this.state.mode = params.get("mode");
-    if (params.get("query")) this.state.query = params.get("query");
+    if (params.get('root')) this.state.rootId = params.get('root');
+    if (params.get('mode')) this.state.mode = params.get('mode');
+    if (params.get('query')) this.state.query = params.get('query');
   }
 
   renderShell() {
@@ -127,46 +132,53 @@ class GenealogyExplorer extends HTMLElement {
   }
 
   buildHierarchy(rootId, mode) {
-    const relKey = mode === "ancestors" ? "parents" : "children";
+    const relKey = mode === 'ancestors' ? 'parents' : 'children';
     const visit = (id, seen = new Set()) => {
       const me = this.state.byId.get(id);
       if (!me || seen.has(id)) return null;
       seen.add(id);
-      const kids = (me[relKey] || []).filter((k) => this.state.byId.has(k));
-      return { ...me, children: kids.map((k) => visit(k, seen)).filter(Boolean) };
+      const kids = (me[relKey] || []).filter(k => this.state.byId.has(k));
+      return { ...me, children: kids.map(k => visit(k, seen)).filter(Boolean) };
     };
     const root = visit(rootId);
     return d3.hierarchy(root);
   }
 
   renderTree() {
-    const svgEl = this.querySelector("svg#svg");
+    const svgEl = this.querySelector('svg#svg');
     const svg = d3.select(svgEl);
-    svg.selectAll("*").remove();
+    svg.selectAll('*').remove();
 
     const W = this.clientWidth || 900;
     const H = this.clientHeight || 600;
-    svg.attr("viewBox", [0, 0, W, H]);
+    svg.attr('viewBox', [0, 0, W, H]);
 
-    const modeSel = this.querySelector("#mode");
+    const modeSel = this.querySelector('#mode');
     modeSel.value = this.state.mode;
-    const search = this.querySelector("#search");
+    const search = this.querySelector('#search');
     search.value = this.state.query;
 
     const root = this.buildHierarchy(this.state.rootId, this.state.mode);
     if (!root) return this.renderEmpty(svg);
 
     // Collapse all except root
-    root.each((d) => (d._children = d.children));
+    root.each(d => (d._children = d.children));
     root.children = root._children; // show first layer by default
 
-    const g = svg.append("g").attr("transform", `translate(80,${H / 2})`);
-    const linkG = g.append("g").attr("fill", "none").attr("stroke", COLORS.link).attr("stroke-width", 1.25);
-    const nodeG = g.append("g").attr("stroke-linejoin", "round").attr("stroke-width", 1.5);
+    const g = svg.append('g').attr('transform', `translate(80,${H / 2})`);
+    const linkG = g
+      .append('g')
+      .attr('fill', 'none')
+      .attr('stroke', COLORS.link)
+      .attr('stroke-width', 1.25);
+    const nodeG = g.append('g').attr('stroke-linejoin', 'round').attr('stroke-width', 1.5);
 
     const tree = d3.tree().nodeSize([28, 240]);
 
-    const diagonal = d3.linkHorizontal().x((d) => d.y).y((d) => d.x);
+    const diagonal = d3
+      .linkHorizontal()
+      .x(d => d.y)
+      .y(d => d.x);
 
     function colorFor(d) {
       const tribe = d.data.tribe;
@@ -174,107 +186,173 @@ class GenealogyExplorer extends HTMLElement {
       return d.children || d._children ? COLORS.defaultNode : COLORS.leafNode;
     }
 
-    const update = (source) => {
+    const update = source => {
       tree(root);
       const nodes = root.descendants().reverse();
       const links = root.links();
 
-      let left = root, right = root;
-      root.eachBefore((n) => { if (n.x < left.x) left = n; if (n.x > right.x) right = n; });
+      let left = root,
+        right = root;
+      root.eachBefore(n => {
+        if (n.x < left.x) left = n;
+        if (n.x > right.x) right = n;
+      });
       const heightNeeded = Math.max(600, right.x - left.x + 80);
-      svg.attr("height", heightNeeded);
+      svg.attr('height', heightNeeded);
 
       const t = svg.transition().duration(400);
 
-      const node = nodeG.selectAll("g.node").data(nodes, (d) => d.data.id);
-      const nodeEnter = node.enter().append("g").attr("class", "node")
-        .attr("transform", `translate(${source.y0 || 0},${source.x0 || 0})`)
-        .on("click", (event, d) => { d.children = d.children ? null : d._children; update(d); })
-        .on("mousemove", (event, d) => showTip(event, d.data))
-        .on("mouseleave", hideTip);
+      const node = nodeG.selectAll('g.node').data(nodes, d => d.data.id);
+      const nodeEnter = node
+        .enter()
+        .append('g')
+        .attr('class', 'node')
+        .attr('transform', `translate(${source.y0 || 0},${source.x0 || 0})`)
+        .on('click', (event, d) => {
+          d.children = d.children ? null : d._children;
+          update(d);
+        })
+        .on('mousemove', (event, d) => showTip(event, d.data))
+        .on('mouseleave', hideTip);
 
-      nodeEnter.append("circle").attr("r", 7).attr("fill", colorFor).attr("stroke", COLORS.focus);
-      nodeEnter.append("text")
-        .attr("dy", "0.32em").attr("x", 12).attr("text-anchor", "start")
-        .text((d) => d.data.name)
-        .clone(true).lower().attr("stroke", "white");
+      nodeEnter.append('circle').attr('r', 7).attr('fill', colorFor).attr('stroke', COLORS.focus);
+      nodeEnter
+        .append('text')
+        .attr('dy', '0.32em')
+        .attr('x', 12)
+        .attr('text-anchor', 'start')
+        .text(d => d.data.name)
+        .clone(true)
+        .lower()
+        .attr('stroke', 'white');
 
-      node.merge(nodeEnter).transition(t).attr("transform", (d) => `translate(${d.y},${d.x})`);
-      node.exit().transition(t).remove().attr("transform", (d) => `translate(${source.y},${source.x})`).select("circle").attr("r", 1e-6);
+      node
+        .merge(nodeEnter)
+        .transition(t)
+        .attr('transform', d => `translate(${d.y},${d.x})`);
+      node
+        .exit()
+        .transition(t)
+        .remove()
+        .attr('transform', d => `translate(${source.y},${source.x})`)
+        .select('circle')
+        .attr('r', 1e-6);
 
-      const link = linkG.selectAll("path").data(links, (d) => d.target.data.id);
-      link.enter().append("path").attr("d", (d) => diagonal({ source: { x: source.x0 || 0, y: source.y0 || 0 }, target: { x: source.x0 || 0, y: source.y0 || 0 } }))
-        .merge(link).transition(t).attr("d", diagonal);
-      link.exit().transition(t).remove().attr("d", (d) => diagonal({ source: { x: source.x, y: source.y }, target: { x: source.x, y: source.y } }));
+      const link = linkG.selectAll('path').data(links, d => d.target.data.id);
+      link
+        .enter()
+        .append('path')
+        .attr('d', d =>
+          diagonal({
+            source: { x: source.x0 || 0, y: source.y0 || 0 },
+            target: { x: source.x0 || 0, y: source.y0 || 0 },
+          })
+        )
+        .merge(link)
+        .transition(t)
+        .attr('d', diagonal);
+      link
+        .exit()
+        .transition(t)
+        .remove()
+        .attr('d', d =>
+          diagonal({ source: { x: source.x, y: source.y }, target: { x: source.x, y: source.y } })
+        );
 
-      root.eachBefore((d) => { d.x0 = d.x; d.y0 = d.y; });
+      root.eachBefore(d => {
+        d.x0 = d.x;
+        d.y0 = d.y;
+      });
     };
 
     // Tooltip
-    const tip = d3.select(this).append("div").attr("class", "tip").style("display", "none");
+    const tip = d3.select(this).append('div').attr('class', 'tip').style('display', 'none');
     const showTip = (event, data) => {
-      const { clientX:x, clientY:y } = event;
-      tip.style("display", "block").style("left", x + 12 + "px").style("top", y + 12 + "px").html(`
+      const { clientX: x, clientY: y } = event;
+      tip
+        .style('display', 'block')
+        .style('left', x + 12 + 'px')
+        .style('top', y + 12 + 'px').html(`
         <div style="font-weight:600">${data.name}</div>
-        ${data.aka ? `<div style='font-size:.85rem;color:#6B7280'>aka: ${data.aka.join(", ")}</div>`: ""}
-        ${data.role ? `<div style='font-size:.85rem;color:#6B7280'>Role: ${data.role}</div>`: ""}
-        ${data.tribe ? `<div style='font-size:.85rem;color:#6B7280'>Tribe: ${data.tribe}</div>`: ""}
-        ${data.spouses ? `<div style='font-size:.85rem;color:#6B7280'>Spouses: ${data.spouses.join(", ")}</div>`: ""}
-        ${data.verses ? `<div style='font-size:.85rem;color:#6B7280'>Refs: ${data.verses.join("; ")}</div>`: ""}
+        ${data.aka ? `<div style='font-size:.85rem;color:#6B7280'>aka: ${data.aka.join(', ')}</div>` : ''}
+        ${data.role ? `<div style='font-size:.85rem;color:#6B7280'>Role: ${data.role}</div>` : ''}
+        ${data.tribe ? `<div style='font-size:.85rem;color:#6B7280'>Tribe: ${data.tribe}</div>` : ''}
+        ${data.spouses ? `<div style='font-size:.85rem;color:#6B7280'>Spouses: ${data.spouses.join(', ')}</div>` : ''}
+        ${data.verses ? `<div style='font-size:.85rem;color:#6B7280'>Refs: ${data.verses.join('; ')}</div>` : ''}
       `);
     };
-    const hideTip = () => tip.style("display", "none");
+    const hideTip = () => tip.style('display', 'none');
 
     // Zoom/pan
-    const zoom = d3.zoom().scaleExtent([0.3, 2.5]).on("zoom", (event) => g.attr("transform", event.transform));
+    const zoom = d3
+      .zoom()
+      .scaleExtent([0.3, 2.5])
+      .on('zoom', event => g.attr('transform', event.transform));
     svg.call(zoom);
 
     // Controls
-    this.querySelector("#mode").onchange = (e) => { this.state.mode = e.target.value; this.pushHash(); this.renderTree(); };
-    this.querySelector("#search").onchange = (e) => { this.state.query = e.target.value; this.centerOnQuery(g, svg); this.pushHash(); };
-    this.querySelector("#export").onclick = () => this.exportPng(svgEl);
+    this.querySelector('#mode').onchange = e => {
+      this.state.mode = e.target.value;
+      this.pushHash();
+      this.renderTree();
+    };
+    this.querySelector('#search').onchange = e => {
+      this.state.query = e.target.value;
+      this.centerOnQuery(g, svg);
+      this.pushHash();
+    };
+    this.querySelector('#export').onclick = () => this.exportPng(svgEl);
 
     update(root);
 
     // Center first view
-    svg.transition().duration(350).call(zoom.transform, d3.zoomIdentity.translate(80, H/2));
+    svg
+      .transition()
+      .duration(350)
+      .call(zoom.transform, d3.zoomIdentity.translate(80, H / 2));
   }
 
   centerOnQuery(g, svg) {
-    const q = (this.state.query || "").toLowerCase().trim();
+    const q = (this.state.query || '').toLowerCase().trim();
     if (!q) return;
     const root = this.buildHierarchy(this.state.rootId, this.state.mode);
-    const hit = root.descendants().find((d) => (d.data.name || "").toLowerCase().includes(q));
+    const hit = root.descendants().find(d => (d.data.name || '').toLowerCase().includes(q));
     if (!hit) return;
     const { x, y } = hit;
     const H = this.clientHeight || 600;
-    svg.transition().duration(400).call(d3.zoom().transform, d3.zoomIdentity.translate(120 - y, H/2 - x).scale(1));
+    svg
+      .transition()
+      .duration(400)
+      .call(d3.zoom().transform, d3.zoomIdentity.translate(120 - y, H / 2 - x).scale(1));
   }
 
   pushHash() {
     const params = new URLSearchParams(location.hash.slice(1));
-    params.set("root", this.state.rootId);
-    params.set("mode", this.state.mode);
-    if (this.state.query) params.set("query", this.state.query); else params.delete("query");
-    history.replaceState(null, "", `#${params.toString()}`);
+    params.set('root', this.state.rootId);
+    params.set('mode', this.state.mode);
+    if (this.state.query) params.set('query', this.state.query);
+    else params.delete('query');
+    history.replaceState(null, '', `#${params.toString()}`);
   }
 
   _onKey(e) {
-    if (["ArrowLeft","ArrowRight","ArrowUp","ArrowDown","Enter"].includes(e.key)) {
+    if (['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Enter'].includes(e.key)) {
       // Future: maintain a focused node; for now, just prevent scroll when svg focused
-      if (document.activeElement === this.querySelector("#search")) return;
+      if (document.activeElement === this.querySelector('#search')) return;
       e.preventDefault();
     }
   }
 
   renderEmpty(svg) {
-    svg.append("text").attr("x", 20).attr("y", 40).text("No data").attr("fill", "#9CA3AF");
+    svg.append('text').attr('x', 20).attr('y', 40).text('No data').attr('fill', '#9CA3AF');
   }
 
   renderError(customMessage = null) {
     const canvas = this.querySelector('.canvas');
     if (canvas) {
-      const errorMessage = customMessage || 'Unable to load the genealogy explorer. Please check your internet connection and try again.';
+      const errorMessage =
+        customMessage ||
+        'Unable to load the genealogy explorer. Please check your internet connection and try again.';
       canvas.innerHTML = `
         <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 2rem; text-align: center;">
           <div style="font-size: 2rem; margin-bottom: 1rem;">⚠️</div>
@@ -290,20 +368,20 @@ class GenealogyExplorer extends HTMLElement {
 
   exportPng(svgEl) {
     const svgData = new XMLSerializer().serializeToString(svgEl);
-    const svgBlob = new Blob([svgData], { type: "image/svg+xml;charset=utf-8" });
+    const svgBlob = new Blob([svgData], { type: 'image/svg+xml;charset=utf-8' });
     const url = URL.createObjectURL(svgBlob);
     const img = new Image();
     img.onload = () => {
-      const canvas = document.createElement("canvas");
+      const canvas = document.createElement('canvas');
       canvas.width = svgEl.clientWidth || 1200;
       canvas.height = svgEl.clientHeight || 800;
-      const ctx = canvas.getContext("2d");
-      ctx.fillStyle = getComputedStyle(document.body).getPropertyValue("--bg") || "#fff";
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = getComputedStyle(document.body).getPropertyValue('--bg') || '#fff';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       ctx.drawImage(img, 0, 0);
-      const a = document.createElement("a");
+      const a = document.createElement('a');
       a.download = `genealogy-${this.state.rootId}.png`;
-      a.href = canvas.toDataURL("image/png");
+      a.href = canvas.toDataURL('image/png');
       a.click();
       URL.revokeObjectURL(url);
     };
@@ -311,4 +389,4 @@ class GenealogyExplorer extends HTMLElement {
   }
 }
 
-customElements.define("genealogy-explorer", GenealogyExplorer);
+customElements.define('genealogy-explorer', GenealogyExplorer);

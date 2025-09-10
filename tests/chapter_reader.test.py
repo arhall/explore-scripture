@@ -4,6 +4,7 @@ Test Chapter Reader functionality
 """
 
 import pytest
+from .config import get_test_urls
 import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -15,7 +16,7 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException
 def test_chapter_reader_loads_on_book_pages(chrome_driver):
     """Test that Chapter Reader JavaScript loads only on book pages"""
     # Test book page (should load chapter-reader.js)
-    chrome_driver.get("http://localhost:8080/books/genesis/")
+    chrome_driver.get(get_test_urls()["genesis"])
     
     # Wait for page to load
     WebDriverWait(chrome_driver, 10).until(
@@ -52,7 +53,7 @@ def test_chapter_reader_not_loaded_on_main_pages(chrome_driver):
 
 def test_read_chapter_buttons_present(chrome_driver):
     """Test that Read Chapter buttons are present on book pages with summaries"""
-    chrome_driver.get("http://localhost:8080/books/genesis/")
+    chrome_driver.get(get_test_urls()["genesis"])
     
     # Wait for page to load
     WebDriverWait(chrome_driver, 10).until(
@@ -73,7 +74,7 @@ def test_read_chapter_buttons_present(chrome_driver):
 
 def test_chapter_reader_modal_opens(chrome_driver):
     """Test that clicking Read Chapter button opens the modal"""
-    chrome_driver.get("http://localhost:8080/books/genesis/")
+    chrome_driver.get(get_test_urls()["genesis"])
     
     # Wait for page to load
     WebDriverWait(chrome_driver, 10).until(
@@ -97,7 +98,7 @@ def test_chapter_reader_modal_opens(chrome_driver):
 
 def test_chapter_reader_modal_contains_iframe(chrome_driver):
     """Test that the chapter reader modal contains BibleGateway iframe"""
-    chrome_driver.get("http://localhost:8080/books/genesis/")
+    chrome_driver.get(get_test_urls()["genesis"])
     
     # Wait for page to load
     WebDriverWait(chrome_driver, 10).until(
@@ -126,7 +127,7 @@ def test_chapter_reader_modal_contains_iframe(chrome_driver):
 
 def test_chapter_reader_modal_has_external_link(chrome_driver):
     """Test that the modal has an external link button"""
-    chrome_driver.get("http://localhost:8080/books/genesis/")
+    chrome_driver.get(get_test_urls()["genesis"])
     
     # Wait for page to load
     WebDriverWait(chrome_driver, 10).until(
@@ -158,7 +159,7 @@ def test_chapter_reader_modal_has_external_link(chrome_driver):
 
 def test_chapter_reader_modal_closes(chrome_driver):
     """Test that the modal can be closed"""
-    chrome_driver.get("http://localhost:8080/books/genesis/")
+    chrome_driver.get(get_test_urls()["genesis"])
     
     # Wait for page to load
     WebDriverWait(chrome_driver, 10).until(
@@ -188,7 +189,7 @@ def test_chapter_reader_modal_closes(chrome_driver):
 @pytest.mark.responsive
 def test_chapter_reader_responsive_sizing(chrome_driver):
     """Test that chapter reader modal is responsive on different screen sizes"""
-    chrome_driver.get("http://localhost:8080/books/genesis/")
+    chrome_driver.get(get_test_urls()["genesis"])
     
     # Test desktop size
     chrome_driver.set_window_size(1920, 1080)
@@ -290,7 +291,7 @@ def test_chapter_reader_works_across_books(chrome_driver):
 @pytest.mark.accessibility
 def test_chapter_reader_accessibility(chrome_driver):
     """Test chapter reader accessibility features"""
-    chrome_driver.get("http://localhost:8080/books/genesis/")
+    chrome_driver.get(get_test_urls()["genesis"])
     
     # Wait for page to load
     WebDriverWait(chrome_driver, 10).until(

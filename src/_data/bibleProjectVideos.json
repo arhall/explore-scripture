@@ -9,7 +9,7 @@
         "description": "The story of beginnings: creation, fall, flood, and Babel"
       },
       {
-        "chapters": "12-50", 
+        "chapters": "12-50",
         "title": "Genesis 12-50",
         "youtubeId": "F4isSyennFo",
         "description": "God's covenant with Abraham and the patriarchs"
@@ -28,7 +28,7 @@
       {
         "chapters": "19-40",
         "title": "Exodus 19-40",
-        "youtubeId": "oNpTha80yyE", 
+        "youtubeId": "oNpTha80yyE",
         "description": "The covenant at Sinai and the tabernacle"
       }
     ]
@@ -39,7 +39,7 @@
     "description": "Holiness and how to live in God's presence"
   },
   "numbers": {
-    "title": "Numbers Overview", 
+    "title": "Numbers Overview",
     "youtubeId": "tp5MIrMZFqo",
     "description": "Israel's 40 years of wilderness wandering"
   },
@@ -69,7 +69,7 @@
     "description": "From judges to kings: Samuel, Saul, and David"
   },
   "2-samuel": {
-    "title": "2 Samuel Overview", 
+    "title": "2 Samuel Overview",
     "youtubeId": "YvoWDXNDJgs",
     "description": "King David's reign, victories, and failures"
   },
@@ -89,7 +89,7 @@
     "description": "A retelling of Israel's history focused on hope and restoration"
   },
   "2-chronicles": {
-    "title": "1 & 2 Chronicles Overview", 
+    "title": "1 & 2 Chronicles Overview",
     "youtubeId": "HR7xaHv3Ias",
     "description": "A retelling of Israel's history focused on hope and restoration"
   },
@@ -100,7 +100,7 @@
   },
   "nehemiah": {
     "title": "Ezra-Nehemiah Overview",
-    "youtubeId": "MkETkRv9tG8", 
+    "youtubeId": "MkETkRv9tG8",
     "description": "The return from exile and rebuilding of Jerusalem"
   },
   "esther": {
@@ -144,7 +144,7 @@
       },
       {
         "chapters": "40-66",
-        "title": "Isaiah 40-66", 
+        "title": "Isaiah 40-66",
         "youtubeId": "_TzdEPuqgQg",
         "description": "Comfort and restoration for God's people"
       }
@@ -444,7 +444,7 @@
       {
         "chapters": "12-22",
         "title": "Revelation 12-22",
-        "youtubeId": "QpnIrbq2bKo", 
+        "youtubeId": "QpnIrbq2bKo",
         "description": "The new heaven and new earth"
       }
     ]

@@ -34,10 +34,7 @@
     },
     {
       "section": "Divine",
-      "entries": [
-        "YHWH (the LORD)",
-        "The messenger of the covenant"
-      ]
+      "entries": ["YHWH (the LORD)", "The messenger of the covenant"]
     },
     {
       "section": "Figures (Personifications & Literary Units)",
@@ -154,9 +151,7 @@
       "id": "p.malachi--da5b8f35",
       "name": "Malachi",
       "type": "person",
-      "references": [
-        "Mal 1:1"
-      ],
+      "references": ["Mal 1:1"],
       "category": "prophet",
       "note": "Name may be titular (“my messenger”).",
       "blurb": "Post-exilic prophet framing covenant audit through disputation oracles; name/title underscores messenger theme."
@@ -165,9 +160,7 @@
       "id": "p.governor-persian-administration--f5d06843",
       "name": "Governor (Persian administration)",
       "type": "person",
-      "references": [
-        "Mal 1:8"
-      ],
+      "references": ["Mal 1:8"],
       "category": "monarchic-official",
       "blurb": "Persian-appointed administrator whose table becomes a rhetorical test for offering quality."
     },
@@ -175,11 +168,7 @@
       "id": "p.priests--17ce1c8d",
       "name": "Priests",
       "type": "person",
-      "references": [
-        "Mal 1:6-14",
-        "Mal 2:1-9",
-        "Mal 3:3-4"
-      ],
+      "references": ["Mal 1:6-14", "Mal 2:1-9", "Mal 3:3-4"],
       "category": "cultic-staff",
       "blurb": "Charged with teaching Torah and guarding holiness; indicted for despising the name and corrupt instruction."
     },
@@ -187,9 +176,7 @@
       "id": "p.levites--8c194d1e",
       "name": "Levites",
       "type": "person",
-      "references": [
-        "Mal 2:4-6"
-      ],
+      "references": ["Mal 2:4-6"],
       "category": "tribal-priesthood",
       "blurb": "Bearers of the covenant with Levi—idealized for fear, truthful instruction, and turning many from iniquity."
     },
@@ -197,9 +184,7 @@
       "id": "p.men-of-judah--0e0057eb",
       "name": "Men of Judah",
       "type": "person",
-      "references": [
-        "Mal 2:11-16"
-      ],
+      "references": ["Mal 2:11-16"],
       "category": "laity",
       "blurb": "Addressed regarding syncretistic marriages and treacherous divorce that covers one’s garment with violence."
     },
@@ -207,9 +192,7 @@
       "id": "p.scribes-recorders--1980dd30",
       "name": "Scribes/Recorders",
       "type": "person",
-      "references": [
-        "Mal 3:16"
-      ],
+      "references": ["Mal 3:16"],
       "category": "administration",
       "blurb": "Implicit functionaries as the Book of Remembrance is written for those who fear the LORD."
     },
@@ -217,9 +200,7 @@
       "id": "p.those-who-fear-the-lord--b90180a8",
       "name": "Those who fear the LORD",
       "type": "person",
-      "references": [
-        "Mal 3:16-18"
-      ],
+      "references": ["Mal 3:16-18"],
       "category": "pious-group",
       "blurb": "Community that speaks together; marked for remembrance and treasured possession."
     },
@@ -227,9 +208,7 @@
       "id": "p.elijah--86b7f065",
       "name": "Elijah",
       "type": "person",
-      "references": [
-        "Mal 4:5-6"
-      ],
+      "references": ["Mal 4:5-6"],
       "category": "prophet",
       "blurb": "Promised precursor who turns hearts, prefiguring renewal and reconciliation."
     },
@@ -237,9 +216,7 @@
       "id": "p.messenger-of-the-covenant-figure-link--82b7bc42",
       "name": "Messenger of the covenant (figure-link)",
       "type": "person",
-      "references": [
-        "Mal 3:1"
-      ],
+      "references": ["Mal 3:1"],
       "category": "ambiguous-figure",
       "blurb": "Linked to theophany and temple; identity debated in reception history."
     },
@@ -247,9 +224,7 @@
       "id": "g.israel--79cf1096",
       "name": "Israel",
       "type": "group",
-      "references": [
-        "Mal 1:1"
-      ],
+      "references": ["Mal 1:1"],
       "category": "people-of-god",
       "blurb": "Primary audience of the disputations; called back to covenant fidelity."
     },
@@ -257,9 +232,7 @@
       "id": "g.judah--a34b84cd",
       "name": "Judah",
       "type": "group",
-      "references": [
-        "Mal 2:11"
-      ],
+      "references": ["Mal 2:11"],
       "category": "tribal-collective",
       "blurb": "Indicted for profaning the sanctuary and covenant through marriage practices and treachery."
     },
@@ -267,9 +240,7 @@
       "id": "g.remnant--e6a8b099",
       "name": "Remnant",
       "type": "group",
-      "references": [
-        "Mal 3:16-18"
-      ],
+      "references": ["Mal 3:16-18"],
       "category": "fearers-of-the-lord",
       "blurb": "Those who fear the LORD; distinguished in the day that is coming."
     },
@@ -277,10 +248,7 @@
       "id": "g.nations--ae173a5a",
       "name": "Nations",
       "type": "group",
-      "references": [
-        "Mal 1:11",
-        "Mal 3:12"
-      ],
+      "references": ["Mal 1:11", "Mal 3:12"],
       "category": "international",
       "blurb": "Witnesses to Israel’s worship and blessing; envisioned as acknowledging the LORD’s great name."
     },
@@ -288,9 +256,7 @@
       "id": "g.profaners-of-the-sanctuary--aa9e037b",
       "name": "Profaners of the sanctuary",
       "type": "group",
-      "references": [
-        "Mal 2:11"
-      ],
+      "references": ["Mal 2:11"],
       "category": "offenders",
       "blurb": "Violators who marry the daughter of a foreign god, desecrating the beloved sanctuary."
     },
@@ -298,9 +264,7 @@
       "id": "g.robbers-of-god--63076f95",
       "name": "Robbers of God",
       "type": "group",
-      "references": [
-        "Mal 3:8-9"
-      ],
+      "references": ["Mal 3:8-9"],
       "category": "offenders",
       "blurb": "Withholders of tithes and contributions; bring themselves under a curse."
     },
@@ -308,10 +272,7 @@
       "id": "g.arrogant-&-evildoers--7acb38fc",
       "name": "Arrogant & evildoers",
       "type": "group",
-      "references": [
-        "Mal 3:15",
-        "Mal 4:1"
-      ],
+      "references": ["Mal 3:15", "Mal 4:1"],
       "category": "ethical-collective",
       "blurb": "Seemingly prosperous yet destined for stubble in the coming Day."
     },
@@ -319,9 +280,7 @@
       "id": "g.blessed-by-the-nations--56fa21f8",
       "name": "Blessed by the nations",
       "type": "group",
-      "references": [
-        "Mal 3:12"
-      ],
+      "references": ["Mal 3:12"],
       "category": "witness-result",
       "blurb": "Outcome of covenant obedience—Israel called blessed and land delightsome."
     },
@@ -329,24 +288,16 @@
       "id": "d.yhwh-the-lord--68545cab",
       "name": "YHWH (the LORD)",
       "type": "divine",
-      "references": [
-        "Mal 1:6",
-        "Mal 1:14",
-        "Mal 3:6"
-      ],
+      "references": ["Mal 1:6", "Mal 1:14", "Mal 3:6"],
       "category": "great-king",
-      "aka": [
-        "the LORD"
-      ],
+      "aka": ["the LORD"],
       "blurb": "Great King whose name is to be feared among the nations; unchanging in covenant justice and mercy."
     },
     {
       "id": "d.the-messenger-of-the-covenant--cab4319d",
       "name": "The messenger of the covenant",
       "type": "divine",
-      "references": [
-        "Mal 3:1"
-      ],
+      "references": ["Mal 3:1"],
       "category": "theophany-title",
       "note": "Interpretations vary: angelic, theophanic, or messianic; treated here as divine title with figure cross-link.",
       "blurb": "The Lord whom you seek comes suddenly to his temple to purify and judge."
@@ -355,9 +306,7 @@
       "id": "f.superscription--0ed1f723",
       "name": "Superscription",
       "type": "figure",
-      "references": [
-        "Mal 1:1"
-      ],
+      "references": ["Mal 1:1"],
       "category": "book-frame",
       "blurb": "‘Oracle. The word of the LORD to Israel by Malachi’—frames the disputation style."
     },
@@ -365,10 +314,7 @@
       "id": "f.name-title-debate-malachi-my-messenger--fcfd29d6",
       "name": "Name/title debate: Malachi (“my messenger”)",
       "type": "figure",
-      "references": [
-        "Mal 1:1",
-        "Mal 3:1"
-      ],
+      "references": ["Mal 1:1", "Mal 3:1"],
       "category": "onomastics",
       "blurb": "Explores titular vs. proper-name readings and thematic links to messenger motif."
     },
@@ -376,9 +322,7 @@
       "id": "f.disputation-formula-you-say…-but-i-say…--1d2ac905",
       "name": "Disputation formula: You say… But I say…",
       "type": "figure",
-      "references": [
-        "Mal 1–3"
-      ],
+      "references": ["Mal 1–3"],
       "category": "literary-form",
       "blurb": "Dialogic pattern structuring accusation, objection, and divine rebuttal across the book."
     },
@@ -386,9 +330,7 @@
       "id": "f.i-have-loved-you---how-have-you-loved-us?--13facf67",
       "name": "I have loved you / How have you loved us?",
       "type": "figure",
-      "references": [
-        "Mal 1:2-3"
-      ],
+      "references": ["Mal 1:2-3"],
       "category": "disputation",
       "blurb": "Opening contestation of divine love resolved in election history."
     },
@@ -396,9 +338,7 @@
       "id": "f.jacob–esau-election--64cb52b3",
       "name": "Jacob–Esau election",
       "type": "figure",
-      "references": [
-        "Mal 1:2-3"
-      ],
+      "references": ["Mal 1:2-3"],
       "category": "election",
       "blurb": "Divine preference of Jacob; theological axis for covenant identity."
     },
@@ -406,9 +346,7 @@
       "id": "f.edom-territory-of-wickedness--5a044e8b",
       "name": "Edom: territory of wickedness",
       "type": "figure",
-      "references": [
-        "Mal 1:4"
-      ],
+      "references": ["Mal 1:4"],
       "category": "taunt",
       "blurb": "Oracle against Edom as emblem of persistent opposition to God."
     },
@@ -416,9 +354,7 @@
       "id": "f.edoms-rebuilding-thwarted--95cce11a",
       "name": "Edom’s rebuilding thwarted",
       "type": "figure",
-      "references": [
-        "Mal 1:4"
-      ],
+      "references": ["Mal 1:4"],
       "category": "reversal",
       "blurb": "Human rebuilding plans frustrated by divine demolition—naming them ‘wicked land.’"
     },
@@ -426,10 +362,7 @@
       "id": "f.great-king-among-the-nations--fd410052",
       "name": "Great King among the nations",
       "type": "figure",
-      "references": [
-        "Mal 1:11",
-        "Mal 1:14"
-      ],
+      "references": ["Mal 1:11", "Mal 1:14"],
       "category": "universal-sovereignty",
       "blurb": "God’s name magnified among the nations; anticipates universal worship."
     },
@@ -437,9 +370,7 @@
       "id": "f.polluted-offerings---contemptible-altar--0ed02059",
       "name": "Polluted offerings / Contemptible altar",
       "type": "figure",
-      "references": [
-        "Mal 1:6-14"
-      ],
+      "references": ["Mal 1:6-14"],
       "category": "cult-critique",
       "blurb": "Blind, lame, and sick animals expose disdain for the LORD’s table."
     },
@@ -447,9 +378,7 @@
       "id": "f.covenant-with-levi-ideal--bef441a3",
       "name": "Covenant with Levi (ideal)",
       "type": "figure",
-      "references": [
-        "Mal 2:4-6"
-      ],
+      "references": ["Mal 2:4-6"],
       "category": "priestly-ideal",
       "blurb": "Levi’s fear, truthful lips, and turning from iniquity as priestly norm."
     },
@@ -457,9 +386,7 @@
       "id": "f.corrupt-priestly-instruction--faeb1186",
       "name": "Corrupt priestly instruction",
       "type": "figure",
-      "references": [
-        "Mal 2:7-9"
-      ],
+      "references": ["Mal 2:7-9"],
       "category": "failure",
       "blurb": "Instruction causes many to stumble; favoritism and partiality corrode justice."
     },
@@ -467,9 +394,7 @@
       "id": "f.priestly-lips-knowledge-should-preserve-torah--aaa5e60a",
       "name": "Priestly lips/knowledge should preserve Torah",
       "type": "figure",
-      "references": [
-        "Mal 2:7"
-      ],
+      "references": ["Mal 2:7"],
       "category": "catechesis",
       "blurb": "Priests as knowledge-keepers and YHWH’s messengers for the people."
     },
@@ -477,9 +402,7 @@
       "id": "f.faithless-judah-daughter-of-a-foreign-god--29005c1c",
       "name": "Faithless Judah: daughter of a foreign god",
       "type": "figure",
-      "references": [
-        "Mal 2:11"
-      ],
+      "references": ["Mal 2:11"],
       "category": "syncretism",
       "blurb": "Mixed marriages framed as covenant betrayal and sanctuary profanation."
     },
@@ -487,9 +410,7 @@
       "id": "f.faithless-judah-divorce-&-violence--f6b20d2f",
       "name": "Faithless Judah: divorce & violence",
       "type": "figure",
-      "references": [
-        "Mal 2:13-16"
-      ],
+      "references": ["Mal 2:13-16"],
       "category": "family-ethics",
       "note": "Translation variants on 2:16 are noted across traditions.",
       "blurb": "Treachery against covenant wives; violence imagery covers one’s garment."
@@ -498,9 +419,7 @@
       "id": "f.profaning-the-sanctuary-which-he-loves--924a296b",
       "name": "Profaning the sanctuary which he loves",
       "type": "figure",
-      "references": [
-        "Mal 2:11"
-      ],
+      "references": ["Mal 2:11"],
       "category": "sanctuary",
       "blurb": "Desecration of the sacred sphere via unfaithful unions."
     },
@@ -508,9 +427,7 @@
       "id": "f.wearied-the-lord-with-words---where-is-justice?--61891ea7",
       "name": "Wearied the LORD with words / Where is justice?",
       "type": "figure",
-      "references": [
-        "Mal 2:17"
-      ],
+      "references": ["Mal 2:17"],
       "category": "theodicy",
       "blurb": "Misreading divine patience as indifference provokes corrective theophany."
     },
@@ -518,9 +435,7 @@
       "id": "f.behold-i-send-my-messenger--d4ecad38",
       "name": "Behold, I send my messenger",
       "type": "figure",
-      "references": [
-        "Mal 3:1"
-      ],
+      "references": ["Mal 3:1"],
       "category": "forerunner",
       "blurb": "Preparatory figure clearing the way before the Lord."
     },
@@ -528,9 +443,7 @@
       "id": "f.sudden-coming-to-his-temple--acc4a26c",
       "name": "Sudden coming to his temple",
       "type": "figure",
-      "references": [
-        "Mal 3:1"
-      ],
+      "references": ["Mal 3:1"],
       "category": "theophany",
       "blurb": "The Lord/ messenger of the covenant arrives in judgment and purification."
     },
@@ -538,9 +451,7 @@
       "id": "f.messenger-of-the-covenant-theophany-focus--38e12713",
       "name": "Messenger of the covenant (theophany focus)",
       "type": "figure",
-      "references": [
-        "Mal 3:1"
-      ],
+      "references": ["Mal 3:1"],
       "category": "ambiguous-figure",
       "blurb": "Temple-focused arrival tied to refining priests and purifying worship."
     },
@@ -548,9 +459,7 @@
       "id": "f.who-can-endure-the-day-of-his-coming?--be4383c3",
       "name": "Who can endure the day of his coming?",
       "type": "figure",
-      "references": [
-        "Mal 3:2"
-      ],
+      "references": ["Mal 3:2"],
       "category": "rhetorical",
       "blurb": "Threshold question introducing refiner and launderer images."
     },
@@ -558,9 +467,7 @@
       "id": "f.refiners-fire--18b0d2fd",
       "name": "Refiner’s fire",
       "type": "figure",
-      "references": [
-        "Mal 3:2-3"
-      ],
+      "references": ["Mal 3:2-3"],
       "category": "purification",
       "blurb": "Smelting image for removing dross from priesthood and people."
     },
@@ -568,9 +475,7 @@
       "id": "f.launderers-soap--8263000e",
       "name": "Launderer’s soap",
       "type": "figure",
-      "references": [
-        "Mal 3:2-3"
-      ],
+      "references": ["Mal 3:2-3"],
       "category": "purification",
       "blurb": "Cleansing metaphor complementing the refiner’s furnace."
     },
@@ -578,9 +483,7 @@
       "id": "f.offerings-in-righteousness--d8b7ee6f",
       "name": "Offerings in righteousness",
       "type": "figure",
-      "references": [
-        "Mal 3:3-4"
-      ],
+      "references": ["Mal 3:3-4"],
       "category": "cult-restoration",
       "blurb": "Purified worship acceptable as in former days and years of old."
     },
@@ -588,9 +491,7 @@
       "id": "f.court-list-of-indictments-35--71d256b0",
       "name": "Court list of indictments (3:5)",
       "type": "figure",
-      "references": [
-        "Mal 3:5"
-      ],
+      "references": ["Mal 3:5"],
       "category": "lawsuit",
       "blurb": "Sorcery, adultery, false swearing, wage oppression, and injustice toward the vulnerable."
     },
@@ -598,9 +499,7 @@
       "id": "f.return-to-me-and-i-will-return-to-you--e08b22b2",
       "name": "Return to me and I will return to you",
       "type": "figure",
-      "references": [
-        "Mal 3:7"
-      ],
+      "references": ["Mal 3:7"],
       "category": "call-to-renewal",
       "blurb": "Reciprocal covenant invitation anchoring the tithes appeal."
     },
@@ -608,9 +507,7 @@
       "id": "f.how-have-we-robbed-god?-tithes-&-offerings--58fe5085",
       "name": "How have we robbed God? Tithes & offerings",
       "type": "figure",
-      "references": [
-        "Mal 3:8"
-      ],
+      "references": ["Mal 3:8"],
       "category": "disputation",
       "blurb": "Dialog exposes covenant theft and invites restoration."
     },
@@ -618,9 +515,7 @@
       "id": "f.storehouse-test--c912cf17",
       "name": "Storehouse test",
       "type": "figure",
-      "references": [
-        "Mal 3:10"
-      ],
+      "references": ["Mal 3:10"],
       "category": "obedience-test",
       "blurb": "Bring the full tithe and see if blessing flows."
     },
@@ -628,9 +523,7 @@
       "id": "f.windows-of-heaven-opened--f590d0a5",
       "name": "Windows of heaven opened",
       "type": "figure",
-      "references": [
-        "Mal 3:10"
-      ],
+      "references": ["Mal 3:10"],
       "category": "blessing",
       "blurb": "Heaven’s bounty poured out without measure."
     },
@@ -638,9 +531,7 @@
       "id": "f.devourer-rebuked--4e5946dc",
       "name": "Devourer rebuked",
       "type": "figure",
-      "references": [
-        "Mal 3:11"
-      ],
+      "references": ["Mal 3:11"],
       "category": "protection",
       "blurb": "Pest/crop-destroyer restrained; agriculture flourishes."
     },
@@ -648,9 +539,7 @@
       "id": "f.all-nations-will-call-you-blessed--b68429da",
       "name": "All nations will call you blessed",
       "type": "figure",
-      "references": [
-        "Mal 3:12"
-      ],
+      "references": ["Mal 3:12"],
       "category": "witness",
       "blurb": "Reputation among nations restored through covenant faithfulness."
     },
@@ -658,9 +547,7 @@
       "id": "f.land-of-delight--59c81720",
       "name": "Land of delight",
       "type": "figure",
-      "references": [
-        "Mal 3:12"
-      ],
+      "references": ["Mal 3:12"],
       "category": "land-theology",
       "blurb": "The land becomes a delight—Edenic resonance under faithful economy."
     },
@@ -668,9 +555,7 @@
       "id": "f.hard-words-against-god---prosper-of-arrogant--1faa3996",
       "name": "Hard words against God / Prosper of arrogant",
       "type": "figure",
-      "references": [
-        "Mal 3:13-15"
-      ],
+      "references": ["Mal 3:13-15"],
       "category": "theodicy",
       "blurb": "Misread prosperity and cynical speech confronted by divine record-keeping."
     },
@@ -678,9 +563,7 @@
       "id": "f.book-of-remembrance-written--03d0dc93",
       "name": "Book of Remembrance written",
       "type": "figure",
-      "references": [
-        "Mal 3:16"
-      ],
+      "references": ["Mal 3:16"],
       "category": "heavenly-record",
       "blurb": "Divine memorial for those who fear the LORD and esteem his name."
     },
@@ -688,9 +571,7 @@
       "id": "f.my-treasured-possession-segullah--8492b793",
       "name": "My treasured possession (segullah)",
       "type": "figure",
-      "references": [
-        "Mal 3:17"
-      ],
+      "references": ["Mal 3:17"],
       "category": "identity",
       "blurb": "Covenant endearment term signaling special ownership and protection."
     },
@@ -698,9 +579,7 @@
       "id": "f.distinction-between-righteous-and-wicked--4d3edc6a",
       "name": "Distinction between righteous and wicked",
       "type": "figure",
-      "references": [
-        "Mal 3:18"
-      ],
+      "references": ["Mal 3:18"],
       "category": "wisdom-motif",
       "blurb": "Clear moral differentiation reinstated by divine judgment."
     },
@@ -708,9 +587,7 @@
       "id": "f.day-of-the-lord-oven-burning-like-a-furnace--49cdd84e",
       "name": "Day of the LORD: oven burning like a furnace",
       "type": "figure",
-      "references": [
-        "Mal 4:1"
-      ],
+      "references": ["Mal 4:1"],
       "category": "day-of-the-lord",
       "blurb": "Arrogant and evildoers reduced to stubble in total judgment."
     },
@@ -718,9 +595,7 @@
       "id": "f.neither-root-nor-branch-left--ca14c586",
       "name": "Neither root nor branch left",
       "type": "figure",
-      "references": [
-        "Mal 4:1"
-      ],
+      "references": ["Mal 4:1"],
       "category": "annihilation",
       "blurb": "Completeness of destruction motif; no hope for wicked structures."
     },
@@ -728,9 +603,7 @@
       "id": "f.sun-of-righteousness-with-healing-in-its-wings--4398c4d0",
       "name": "Sun of righteousness with healing in its wings",
       "type": "figure",
-      "references": [
-        "Mal 4:2"
-      ],
+      "references": ["Mal 4:2"],
       "category": "salvation-image",
       "blurb": "Radiant vindication and healing for those who fear the name."
     },
@@ -738,9 +611,7 @@
       "id": "f.going-out-leaping-like-calves--b6f095bd",
       "name": "Going out leaping like calves",
       "type": "figure",
-      "references": [
-        "Mal 4:2"
-      ],
+      "references": ["Mal 4:2"],
       "category": "joy-figure",
       "blurb": "Pastoral freedom image epitomizing restored life."
     },
@@ -748,9 +619,7 @@
       "id": "f.tread-down-the-wicked---ashes-under-your-feet--41fbd567",
       "name": "Tread down the wicked / Ashes under your feet",
       "type": "figure",
-      "references": [
-        "Mal 4:3"
-      ],
+      "references": ["Mal 4:3"],
       "category": "reversal",
       "blurb": "Victory image where former oppressors become ash underfoot."
     },
@@ -758,9 +627,7 @@
       "id": "f.remember-the-torah-of-moses--c4410305",
       "name": "Remember the Torah of Moses",
       "type": "figure",
-      "references": [
-        "Mal 4:4"
-      ],
+      "references": ["Mal 4:4"],
       "category": "canonical-pivot",
       "blurb": "Mosaic instruction commands covenant memory at the canon’s seam."
     },
@@ -768,9 +635,7 @@
       "id": "f.mount-horeb-sinai-recall--4dfe0741",
       "name": "Mount Horeb/Sinai recall",
       "type": "figure",
-      "references": [
-        "Mal 4:4"
-      ],
+      "references": ["Mal 4:4"],
       "category": "theophany-memory",
       "blurb": "Sinai event invoked to ground present obedience."
     },
@@ -778,9 +643,7 @@
       "id": "f.behold-i-send-elijah--5a83cc47",
       "name": "Behold, I send Elijah",
       "type": "figure",
-      "references": [
-        "Mal 4:5"
-      ],
+      "references": ["Mal 4:5"],
       "category": "forerunner",
       "blurb": "Prophetic return heralding the great and awesome Day of the LORD."
     },
@@ -788,9 +651,7 @@
       "id": "f.hearts-of-fathers-to-children-&-children-to-fathers--b9015cc4",
       "name": "Hearts of fathers to children & children to fathers",
       "type": "figure",
-      "references": [
-        "Mal 4:6"
-      ],
+      "references": ["Mal 4:6"],
       "category": "reconciliation",
       "blurb": "Relational restoration preventing total devastation—social fruit of repentance."
     },
@@ -798,10 +659,7 @@
       "id": "e.temple--1d486079",
       "name": "Temple",
       "type": "entity",
-      "references": [
-        "Mal 3:1",
-        "Mal 3:10"
-      ],
+      "references": ["Mal 3:1", "Mal 3:10"],
       "category": "cultic",
       "blurb": "Locus of sudden theophany and storehouse-centered obedience."
     },
@@ -809,10 +667,7 @@
       "id": "e.altar--0b0acf47",
       "name": "Altar",
       "type": "entity",
-      "references": [
-        "Mal 1:7-10",
-        "Mal 2:13"
-      ],
+      "references": ["Mal 1:7-10", "Mal 2:13"],
       "category": "cultic",
       "blurb": "Despised table revealed by blemished offerings and tear-stained supplications."
     },
@@ -820,10 +675,7 @@
       "id": "e.table-of-the-lord--f7c9c982",
       "name": "Table of the LORD",
       "type": "entity",
-      "references": [
-        "Mal 1:7",
-        "Mal 1:12"
-      ],
+      "references": ["Mal 1:7", "Mal 1:12"],
       "category": "cultic",
       "blurb": "Metonym for altar service; called ‘contemptible’ by corrupt priests."
     },
@@ -831,9 +683,7 @@
       "id": "e.blind-animals--d0054c17",
       "name": "Blind animals",
       "type": "entity",
-      "references": [
-        "Mal 1:8"
-      ],
+      "references": ["Mal 1:8"],
       "category": "blemish",
       "blurb": "Unacceptable sacrifices that dishonor the Great King."
     },
@@ -841,9 +691,7 @@
       "id": "e.lame-animals--373a255e",
       "name": "Lame animals",
       "type": "entity",
-      "references": [
-        "Mal 1:8"
-      ],
+      "references": ["Mal 1:8"],
       "category": "blemish",
       "blurb": "Defective offerings illustrating priestly negligence."
     },
@@ -851,9 +699,7 @@
       "id": "e.sick-animals--d6cbdfc0",
       "name": "Sick animals",
       "type": "entity",
-      "references": [
-        "Mal 1:8"
-      ],
+      "references": ["Mal 1:8"],
       "category": "blemish",
       "blurb": "Polluted gifts forbidden by Torah and rebuked by the prophet."
     },
@@ -861,9 +707,7 @@
       "id": "e.tear-covered-altar--79b12ad3",
       "name": "Tear-covered altar",
       "type": "entity",
-      "references": [
-        "Mal 2:13"
-      ],
+      "references": ["Mal 2:13"],
       "category": "lament",
       "blurb": "Weeping and groaning fail to mask covenant treachery."
     },
@@ -871,9 +715,7 @@
       "id": "e.covenant-with-levi-entity--907a0226",
       "name": "Covenant with Levi (entity)",
       "type": "entity",
-      "references": [
-        "Mal 2:4-5"
-      ],
+      "references": ["Mal 2:4-5"],
       "category": "covenant",
       "blurb": "Formal bond characterized by life, peace, fear, and truthful instruction."
     },
@@ -881,9 +723,7 @@
       "id": "e.priestly-lips-knowledge-ideal-syllabus--f4cf666c",
       "name": "Priestly lips/knowledge (ideal syllabus)",
       "type": "entity",
-      "references": [
-        "Mal 2:7"
-      ],
+      "references": ["Mal 2:7"],
       "category": "catechesis",
       "blurb": "Repository of Torah expected from priestly office."
     },
@@ -891,9 +731,7 @@
       "id": "e.sanctuary-which-he-loves--8ac1ec94",
       "name": "Sanctuary (which he loves)",
       "type": "entity",
-      "references": [
-        "Mal 2:11"
-      ],
+      "references": ["Mal 2:11"],
       "category": "holy-space",
       "blurb": "Beloved sphere profaned by unfaithful unions."
     },
@@ -901,9 +739,7 @@
       "id": "e.daughter-of-a-foreign-god-motif--a2198874",
       "name": "Daughter of a foreign god (motif)",
       "type": "entity",
-      "references": [
-        "Mal 2:11"
-      ],
+      "references": ["Mal 2:11"],
       "category": "syncretism",
       "blurb": "Marriage that compromises covenant fidelity and communal holiness."
     },
@@ -911,9 +747,7 @@
       "id": "e.divorce-certificate--4d57ee9d",
       "name": "Divorce certificate",
       "type": "entity",
-      "references": [
-        "Mal 2:16"
-      ],
+      "references": ["Mal 2:16"],
       "category": "legal",
       "blurb": "Legal instrument implicated in treacherous dismissals."
     },
@@ -921,9 +755,7 @@
       "id": "e.violence-covers-ones-garment--88fc96a1",
       "name": "Violence covers one’s garment",
       "type": "entity",
-      "references": [
-        "Mal 2:16"
-      ],
+      "references": ["Mal 2:16"],
       "category": "violence-metaphor",
       "blurb": "Graphic idiom for harm done through marital treachery."
     },
@@ -931,9 +763,7 @@
       "id": "e.storehouse--e2d26181",
       "name": "Storehouse",
       "type": "entity",
-      "references": [
-        "Mal 3:10"
-      ],
+      "references": ["Mal 3:10"],
       "category": "infrastructure",
       "blurb": "Temple depot for tithes provisioning priests and the poor."
     },
@@ -941,9 +771,7 @@
       "id": "e.tithes--cc2a3137",
       "name": "Tithes",
       "type": "entity",
-      "references": [
-        "Mal 3:8-10"
-      ],
+      "references": ["Mal 3:8-10"],
       "category": "economics",
       "blurb": "Covenant contributions withheld by the people—central test case of fidelity."
     },
@@ -951,9 +779,7 @@
       "id": "e.offerings--5c831b1f",
       "name": "Offerings",
       "type": "entity",
-      "references": [
-        "Mal 3:8"
-      ],
+      "references": ["Mal 3:8"],
       "category": "economics",
       "blurb": "Accompany tithes; their neglect constitutes robbery against God."
     },
@@ -961,9 +787,7 @@
       "id": "e.windows-of-heaven--a406effe",
       "name": "Windows of heaven",
       "type": "entity",
-      "references": [
-        "Mal 3:10"
-      ],
+      "references": ["Mal 3:10"],
       "category": "blessing-image",
       "blurb": "Heavenly sluices pouring down abundance on obedience."
     },
@@ -971,9 +795,7 @@
       "id": "e.devourer--3413b031",
       "name": "Devourer",
       "type": "entity",
-      "references": [
-        "Mal 3:11"
-      ],
+      "references": ["Mal 3:11"],
       "category": "judgment-agent",
       "blurb": "Crop-destroying force rebuked by the LORD when tithes are restored."
     },
@@ -981,9 +803,7 @@
       "id": "e.book-of-remembrance--3858f25b",
       "name": "Book of Remembrance",
       "type": "entity",
-      "references": [
-        "Mal 3:16"
-      ],
+      "references": ["Mal 3:16"],
       "category": "heavenly-record",
       "blurb": "Scroll recording names of those who fear the LORD; ties to wider ‘books’ tradition."
     },
@@ -991,9 +811,7 @@
       "id": "e.treasured-possession-segullah--2eedea3b",
       "name": "Treasured possession (segullah)",
       "type": "entity",
-      "references": [
-        "Mal 3:17"
-      ],
+      "references": ["Mal 3:17"],
       "category": "identity",
       "blurb": "Covenant term of endearment echoing Exodus 19:5; signals special status."
     },
@@ -1001,9 +819,7 @@
       "id": "e.oven-furnace--dffa0dc4",
       "name": "Oven/Furnace",
       "type": "entity",
-      "references": [
-        "Mal 4:1"
-      ],
+      "references": ["Mal 4:1"],
       "category": "judgment-image",
       "blurb": "Apocalyptic heat symbol consuming the wicked like stubble."
     },
@@ -1011,9 +827,7 @@
       "id": "e.stubble--0d9bfb67",
       "name": "Stubble",
       "type": "entity",
-      "references": [
-        "Mal 4:1"
-      ],
+      "references": ["Mal 4:1"],
       "category": "judgment-image",
       "blurb": "Dry, flammable residue signifying the fate of the arrogant."
     },
@@ -1021,9 +835,7 @@
       "id": "e.ashes--bde761ad",
       "name": "Ashes",
       "type": "entity",
-      "references": [
-        "Mal 4:3"
-      ],
+      "references": ["Mal 4:3"],
       "category": "judgment-result",
       "blurb": "Aftermath of the Day when the wicked are trodden underfoot."
     },
@@ -1031,9 +843,7 @@
       "id": "e.sun-of-righteousness--000aeb3d",
       "name": "Sun of righteousness",
       "type": "entity",
-      "references": [
-        "Mal 4:2"
-      ],
+      "references": ["Mal 4:2"],
       "category": "salvation-symbol",
       "blurb": "Solar image for vindication and healing to those who fear the name."
     },
@@ -1041,9 +851,7 @@
       "id": "e.wings-healing--d7913167",
       "name": "Wings (healing)",
       "type": "entity",
-      "references": [
-        "Mal 4:2"
-      ],
+      "references": ["Mal 4:2"],
       "category": "salvation-symbol",
       "blurb": "Healing reaches like sunbeams/‘wings’ from the righteous sun."
     },
@@ -1051,9 +859,7 @@
       "id": "e.land-of-delight--3e7dde46",
       "name": "Land of delight",
       "type": "entity",
-      "references": [
-        "Mal 3:12"
-      ],
+      "references": ["Mal 3:12"],
       "category": "land-ideal",
       "blurb": "Transformed territory under covenant blessing."
     },
@@ -1061,9 +867,7 @@
       "id": "e.governors-table--10f77ce2",
       "name": "Governor’s table",
       "type": "entity",
-      "references": [
-        "Mal 1:8"
-      ],
+      "references": ["Mal 1:8"],
       "category": "political-symbol",
       "blurb": "Rhetorical benchmark for acceptable gifts—if not fit for the governor, not fit for God."
     },
@@ -1071,9 +875,7 @@
       "id": "e.incense-and-pure-offering-among-the-nations--b47e6b94",
       "name": "Incense and pure offering among the nations",
       "type": "entity",
-      "references": [
-        "Mal 1:11"
-      ],
+      "references": ["Mal 1:11"],
       "category": "universal-worship",
       "blurb": "Universal reverence motif with diverse interpretations (prayer, spiritual sacrifices, eschatological worship)."
     },
@@ -1081,9 +883,7 @@
       "id": "e.edoms-ruins-desolation--84fb931d",
       "name": "Edom’s ruins/desolation",
       "type": "entity",
-      "references": [
-        "Mal 1:3-4"
-      ],
+      "references": ["Mal 1:3-4"],
       "category": "judgment-landscape",
       "blurb": "A desolate wasteland despite rebuilding attempts—marker of divine opposition."
     },
@@ -1091,9 +891,7 @@
       "id": "e.justice-triad-orphan-widow-sojourner--a555d0d3",
       "name": "Justice triad: orphan, widow, sojourner",
       "type": "entity",
-      "references": [
-        "Mal 3:5"
-      ],
+      "references": ["Mal 3:5"],
       "category": "social-justice",
       "blurb": "Litmus group for covenant fidelity in legal practice."
     },
@@ -1101,9 +899,7 @@
       "id": "e.perjury--95cdfe24",
       "name": "Perjury",
       "type": "entity",
-      "references": [
-        "Mal 3:5"
-      ],
+      "references": ["Mal 3:5"],
       "category": "legal-vice",
       "blurb": "False swearing undercuts justice and community trust."
     },
@@ -1111,9 +907,7 @@
       "id": "e.sorcery--1ed64562",
       "name": "Sorcery",
       "type": "entity",
-      "references": [
-        "Mal 3:5"
-      ],
+      "references": ["Mal 3:5"],
       "category": "religious-vice",
       "blurb": "Illicit power-seeking condemned in the covenant lawsuit."
     },
@@ -1121,9 +915,7 @@
       "id": "e.adultery--c6566507",
       "name": "Adultery",
       "type": "entity",
-      "references": [
-        "Mal 3:5"
-      ],
+      "references": ["Mal 3:5"],
       "category": "moral-vice",
       "blurb": "Sexual unfaithfulness linked to broader covenant treachery."
     },
@@ -1131,9 +923,7 @@
       "id": "e.oppression-of-wage-earner--033a7497",
       "name": "Oppression of wage earner",
       "type": "entity",
-      "references": [
-        "Mal 3:5"
-      ],
+      "references": ["Mal 3:5"],
       "category": "economic-vice",
       "blurb": "Withholding or exploiting laborers—central justice infraction."
     },
@@ -1141,9 +931,7 @@
       "id": "e.election-love-jacob–esau--b2afbf7c",
       "name": "Election love (Jacob–Esau)",
       "type": "entity",
-      "references": [
-        "Mal 1:2-3"
-      ],
+      "references": ["Mal 1:2-3"],
       "category": "theology",
       "blurb": "Divine love/election as covenant foundation rather than sentimentalism."
     },
@@ -1151,9 +939,7 @@
       "id": "e.priestly-vocation-&-catechesis--a32d07be",
       "name": "Priestly vocation & catechesis",
       "type": "entity",
-      "references": [
-        "Mal 2:7"
-      ],
+      "references": ["Mal 2:7"],
       "category": "theology",
       "blurb": "Priests as teachers and guardians of knowledge for communal holiness."
     },
@@ -1161,9 +947,7 @@
       "id": "e.sanctuary-holiness-vs-profanation--78e1f4b0",
       "name": "Sanctuary holiness vs. profanation",
       "type": "entity",
-      "references": [
-        "Mal 2:11"
-      ],
+      "references": ["Mal 2:11"],
       "category": "theology",
       "blurb": "Boundaries around sacred life threatened by syncretism and treachery."
     },
@@ -1171,9 +955,7 @@
       "id": "e.marriage-covenant-ethics--d561f9f1",
       "name": "Marriage covenant ethics",
       "type": "entity",
-      "references": [
-        "Mal 2:14-16"
-      ],
+      "references": ["Mal 2:14-16"],
       "category": "ethics",
       "blurb": "Faithfulness and nonviolence as covenant essentials within the home."
     },
@@ -1181,10 +963,7 @@
       "id": "e.theodicy-and-divine-patience--2ab1e050",
       "name": "Theodicy and divine patience",
       "type": "entity",
-      "references": [
-        "Mal 2:17",
-        "Mal 3:13-15"
-      ],
+      "references": ["Mal 2:17", "Mal 3:13-15"],
       "category": "theology",
       "blurb": "God’s timing and record-keeping answer cynical narratives of injustice."
     },
@@ -1192,9 +971,7 @@
       "id": "e.tithes-&-covenant-economics--00d1cb50",
       "name": "Tithes & covenant economics",
       "type": "entity",
-      "references": [
-        "Mal 3:8-12"
-      ],
+      "references": ["Mal 3:8-12"],
       "category": "economics-theology",
       "blurb": "Material obedience integrates worship, justice, and communal provision."
     },
@@ -1202,9 +979,7 @@
       "id": "e.refiners-fire-as-purgation--31d6347f",
       "name": "Refiner’s fire as purgation",
       "type": "entity",
-      "references": [
-        "Mal 3:2-3"
-      ],
+      "references": ["Mal 3:2-3"],
       "category": "theology",
       "blurb": "Judgment serves purification toward acceptable worship."
     },
@@ -1212,9 +987,7 @@
       "id": "e.day-of-the-lord-in-malachi--dfb1ce82",
       "name": "Day of the LORD in Malachi",
       "type": "entity",
-      "references": [
-        "Mal 4:1-3"
-      ],
+      "references": ["Mal 4:1-3"],
       "category": "eschatology",
       "blurb": "Final separation culminating in restoration joy and wickedness as ash."
     },
@@ -1222,9 +995,7 @@
       "id": "e.universal-worship-incense-pure-offering-111-interpretations--8c2758c2",
       "name": "Universal worship: incense/pure offering (1:11) interpretations",
       "type": "entity",
-      "references": [
-        "Mal 1:11"
-      ],
+      "references": ["Mal 1:11"],
       "category": "reception",
       "blurb": "Jewish and Christian readings span eschatological sacrifices, prayer, and Eucharistic imagery."
     },
@@ -1232,23 +1003,16 @@
       "id": "e.book-of-remembrance-&-heavenly-books--49d40c7e",
       "name": "Book of Remembrance & heavenly books",
       "type": "entity",
-      "references": [
-        "Mal 3:16"
-      ],
+      "references": ["Mal 3:16"],
       "category": "reception",
-      "cross_references": [
-        "Dan 7:10",
-        "Rev 20:12"
-      ],
+      "cross_references": ["Dan 7:10", "Rev 20:12"],
       "blurb": "Malachi’s scroll aligns with apocalyptic records of deeds and names."
     },
     {
       "id": "e.segullah-treasured-possession-theology--e98d9fdf",
       "name": "Segullah (treasured possession) theology",
       "type": "entity",
-      "references": [
-        "Mal 3:17"
-      ],
+      "references": ["Mal 3:17"],
       "category": "identity-theology",
       "blurb": "Echo of Sinai covenant identity shaping communal assurance."
     },
@@ -1256,9 +1020,7 @@
       "id": "e.elijah-typology-and-john-the-baptist--14a1a424",
       "name": "Elijah typology and John the Baptist",
       "type": "entity",
-      "references": [
-        "Mal 4:5-6"
-      ],
+      "references": ["Mal 4:5-6"],
       "category": "reception-christian",
       "cross_references": [
         "Matt 11:10",
@@ -1282,9 +1044,7 @@
       "id": "e.malachi-as-prophetic-seam-to-the-gospels--eed1ada0",
       "name": "Malachi as prophetic seam to the Gospels",
       "type": "entity",
-      "references": [
-        "Mal 4:4-6"
-      ],
+      "references": ["Mal 4:4-6"],
       "category": "canonical-theology",
       "blurb": "Torah remembrance and Elijah promise bridge Tanakh to Gospel narratives."
     }

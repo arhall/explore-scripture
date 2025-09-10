@@ -7,68 +7,68 @@ class CommentaryReader {
   constructor() {
     this.commentaries = {
       // Iframe-compatible commentaries (sorted by popularity/usefulness)
-      'enduring-word': { 
-        name: 'Enduring Word (David Guzik)', 
+      'enduring-word': {
+        name: 'Enduring Word (David Guzik)',
         baseUrl: 'https://enduringword.com/bible-commentary',
         description: 'Clear, practical commentary with modern application',
-        allowsIframe: true
+        allowsIframe: true,
       },
-      'matthew-henry': { 
-        name: 'Matthew Henry Commentary', 
+      'matthew-henry': {
+        name: 'Matthew Henry Commentary',
         baseUrl: 'https://www.biblestudytools.com/commentaries/matthew-henry-complete',
         description: 'Classic devotional commentary',
-        allowsIframe: true
+        allowsIframe: true,
       },
-      'jfb': { 
-        name: 'Jamieson-Fausset-Brown Commentary', 
+      jfb: {
+        name: 'Jamieson-Fausset-Brown Commentary',
         baseUrl: 'https://biblehub.com/commentaries/jfb',
         description: 'Scholarly verse-by-verse exposition',
-        allowsIframe: true
+        allowsIframe: true,
       },
-      'scofield': { 
-        name: 'Scofield Reference Notes (1917)', 
+      scofield: {
+        name: 'Scofield Reference Notes (1917)',
         baseUrl: 'https://biblehub.com/commentaries/sco',
         description: 'Classic dispensational commentary with cross-references',
-        allowsIframe: true
+        allowsIframe: true,
       },
-      'pulpit': { 
-        name: 'Pulpit Commentary', 
+      pulpit: {
+        name: 'Pulpit Commentary',
         baseUrl: 'https://biblehub.com/commentaries/pulpit',
         description: 'Homiletical and exegetical insights',
-        allowsIframe: true
+        allowsIframe: true,
       },
-      'john-gill': { 
-        name: 'John Gill - Exposition of the Bible', 
+      'john-gill': {
+        name: 'John Gill - Exposition of the Bible',
         baseUrl: 'https://www.biblestudytools.com/commentaries/gills-exposition-of-the-bible',
         description: 'Detailed theological exposition',
-        allowsIframe: true
+        allowsIframe: true,
       },
-      
+
       // Direct access only (StudyLight blocks iframes)
-      'barnes-notes': { 
-        name: 'Barnes\' Notes', 
+      'barnes-notes': {
+        name: "Barnes' Notes",
         baseUrl: 'https://www.studylight.org/commentaries/eng/bnb',
         description: 'Verse-by-verse commentary',
-        allowsIframe: false // StudyLight blocks iframes
+        allowsIframe: false, // StudyLight blocks iframes
       },
-      'calvin': { 
-        name: 'Calvin\'s Bible Commentaries', 
+      calvin: {
+        name: "Calvin's Bible Commentaries",
         baseUrl: 'https://www.studylight.org/commentaries/eng/cal',
         description: 'Reformed theological perspective',
-        allowsIframe: false // StudyLight blocks iframes
+        allowsIframe: false, // StudyLight blocks iframes
       },
-      'homiletic': { 
-        name: 'Preacher\'s Homiletic Commentary', 
+      homiletic: {
+        name: "Preacher's Homiletic Commentary",
         baseUrl: 'https://www.studylight.org/commentaries/eng/phc',
         description: 'Preaching and teaching resources',
-        allowsIframe: false // StudyLight blocks iframes
+        allowsIframe: false, // StudyLight blocks iframes
       },
-      'biblical-illustrator': { 
-        name: 'The Biblical Illustrator (Exell)', 
+      'biblical-illustrator': {
+        name: 'The Biblical Illustrator (Exell)',
         baseUrl: 'https://www.studylight.org/commentaries/eng/tbi',
         description: 'Illustrations and practical applications',
-        allowsIframe: false // StudyLight blocks iframes
-      }
+        allowsIframe: false, // StudyLight blocks iframes
+      },
     };
 
     // URL patterns will be defined in a method to access 'this' properly
@@ -749,11 +749,13 @@ class CommentaryReader {
     // Find all commentary links in the book page and add our button system
     const commentaryLinks = document.querySelectorAll('.commentary-link');
     const processedChapters = new Set();
-    
+
     // If no commentary-link elements found, try fallback selectors
     if (commentaryLinks.length === 0) {
       // Try to find any existing commentary links as fallback
-      const fallbackLinks = document.querySelectorAll('a[href*="enduringword.com"], a[href*="commentary"]');
+      const fallbackLinks = document.querySelectorAll(
+        'a[href*="enduringword.com"], a[href*="commentary"]'
+      );
       fallbackLinks.forEach(link => this.processCommentaryLink(link, processedChapters));
     } else {
       // Process the commentary-link elements
@@ -763,10 +765,10 @@ class CommentaryReader {
 
   processCommentaryLink(link, processedChapters) {
     const chapterInfo = this.extractChapterInfoFromContext(link);
-    
+
     if (chapterInfo) {
       const chapterKey = `${chapterInfo.book}-${chapterInfo.chapter}`;
-      
+
       // Only add button if we haven't processed this chapter yet
       if (!processedChapters.has(chapterKey)) {
         this.addCommentaryReaderButton(link, chapterInfo);
@@ -781,7 +783,7 @@ class CommentaryReader {
       const urlInfo = this.extractChapterInfo(link.href);
       if (urlInfo) return urlInfo;
     }
-    
+
     // Method 2: Extract from DOM context - look for chapter number in the row
     const tableRow = link.closest('tr');
     if (tableRow) {
@@ -797,13 +799,13 @@ class CommentaryReader {
             return {
               book: bookName,
               chapter: chapterNum,
-              reference: `${bookName} ${chapterNum}`
+              reference: `${bookName} ${chapterNum}`,
             };
           }
         }
       }
     }
-    
+
     // Method 3: Try to extract chapter from nearby elements
     const parentCell = link.closest('td');
     if (parentCell) {
@@ -818,13 +820,13 @@ class CommentaryReader {
             return {
               book: bookName,
               chapter: chapterNum,
-              reference: `${bookName} ${chapterNum}`
+              reference: `${bookName} ${chapterNum}`,
             };
           }
         }
       }
     }
-    
+
     return null;
   }
 
@@ -835,7 +837,7 @@ class CommentaryReader {
       const slug = pathMatch[1];
       return this.convertSlugToBookName(slug);
     }
-    
+
     // Fallback: extract from page title (format: "Book Name | Explore Scripture")
     const pageTitle = document.title;
     const titleMatch = pageTitle.match(/^([^|]+)/);
@@ -846,7 +848,7 @@ class CommentaryReader {
         return titlePart;
       }
     }
-    
+
     // Last resort: try to find book name in page heading
     const mainHeading = document.querySelector('h1, .book-title, [class*="title"]');
     if (mainHeading) {
@@ -855,7 +857,7 @@ class CommentaryReader {
         return headingText;
       }
     }
-    
+
     return null;
   }
 
@@ -869,7 +871,7 @@ class CommentaryReader {
       return {
         book: bookName,
         chapter: parseInt(chapter, 10),
-        reference: `${bookName} ${chapter}`
+        reference: `${bookName} ${chapter}`,
       };
     }
     return null;
@@ -878,148 +880,148 @@ class CommentaryReader {
   convertSlugToBookName(slug) {
     // Convert URL slug back to proper book name
     const bookMap = {
-      'genesis': 'Genesis',
-      'exodus': 'Exodus',
-      'leviticus': 'Leviticus',
-      'numbers': 'Numbers',
-      'deuteronomy': 'Deuteronomy',
-      'joshua': 'Joshua',
-      'judges': 'Judges',
-      'ruth': 'Ruth',
+      genesis: 'Genesis',
+      exodus: 'Exodus',
+      leviticus: 'Leviticus',
+      numbers: 'Numbers',
+      deuteronomy: 'Deuteronomy',
+      joshua: 'Joshua',
+      judges: 'Judges',
+      ruth: 'Ruth',
       '1-samuel': '1 Samuel',
       '2-samuel': '2 Samuel',
       '1-kings': '1 Kings',
       '2-kings': '2 Kings',
       '1-chronicles': '1 Chronicles',
       '2-chronicles': '2 Chronicles',
-      'ezra': 'Ezra',
-      'nehemiah': 'Nehemiah',
-      'esther': 'Esther',
-      'job': 'Job',
-      'psalm': 'Psalms',
-      'proverbs': 'Proverbs',
-      'ecclesiastes': 'Ecclesiastes',
+      ezra: 'Ezra',
+      nehemiah: 'Nehemiah',
+      esther: 'Esther',
+      job: 'Job',
+      psalm: 'Psalms',
+      proverbs: 'Proverbs',
+      ecclesiastes: 'Ecclesiastes',
       'song-of-songs': 'Song of Songs',
-      'isaiah': 'Isaiah',
-      'jeremiah': 'Jeremiah',
-      'lamentations': 'Lamentations',
-      'ezekiel': 'Ezekiel',
-      'daniel': 'Daniel',
-      'hosea': 'Hosea',
-      'joel': 'Joel',
-      'amos': 'Amos',
-      'obadiah': 'Obadiah',
-      'jonah': 'Jonah',
-      'micah': 'Micah',
-      'nahum': 'Nahum',
-      'habakkuk': 'Habakkuk',
-      'zephaniah': 'Zephaniah',
-      'haggai': 'Haggai',
-      'zechariah': 'Zechariah',
-      'malachi': 'Malachi',
-      'matthew': 'Matthew',
-      'mark': 'Mark',
-      'luke': 'Luke',
-      'john': 'John',
-      'acts': 'Acts',
-      'romans': 'Romans',
+      isaiah: 'Isaiah',
+      jeremiah: 'Jeremiah',
+      lamentations: 'Lamentations',
+      ezekiel: 'Ezekiel',
+      daniel: 'Daniel',
+      hosea: 'Hosea',
+      joel: 'Joel',
+      amos: 'Amos',
+      obadiah: 'Obadiah',
+      jonah: 'Jonah',
+      micah: 'Micah',
+      nahum: 'Nahum',
+      habakkuk: 'Habakkuk',
+      zephaniah: 'Zephaniah',
+      haggai: 'Haggai',
+      zechariah: 'Zechariah',
+      malachi: 'Malachi',
+      matthew: 'Matthew',
+      mark: 'Mark',
+      luke: 'Luke',
+      john: 'John',
+      acts: 'Acts',
+      romans: 'Romans',
       '1-corinthians': '1 Corinthians',
       '2-corinthians': '2 Corinthians',
-      'galatians': 'Galatians',
-      'ephesians': 'Ephesians',
-      'philippians': 'Philippians',
-      'colossians': 'Colossians',
+      galatians: 'Galatians',
+      ephesians: 'Ephesians',
+      philippians: 'Philippians',
+      colossians: 'Colossians',
       '1-thessalonians': '1 Thessalonians',
       '2-thessalonians': '2 Thessalonians',
       '1-timothy': '1 Timothy',
       '2-timothy': '2 Timothy',
-      'titus': 'Titus',
-      'philemon': 'Philemon',
-      'hebrews': 'Hebrews',
-      'james': 'James',
+      titus: 'Titus',
+      philemon: 'Philemon',
+      hebrews: 'Hebrews',
+      james: 'James',
       '1-peter': '1 Peter',
       '2-peter': '2 Peter',
       '1-john': '1 John',
       '2-john': '2 John',
       '3-john': '3 John',
-      'jude': 'Jude',
-      'revelation': 'Revelation'
+      jude: 'Jude',
+      revelation: 'Revelation',
     };
-    
+
     return bookMap[slug] || slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
   }
 
   slugifyBook(bookName) {
     // Convert book name to URL slug format
     const reverseMap = {
-      'Genesis': 'genesis',
-      'Exodus': 'exodus',
-      'Leviticus': 'leviticus',
-      'Numbers': 'numbers',
-      'Deuteronomy': 'deuteronomy',
-      'Joshua': 'joshua',
-      'Judges': 'judges',
-      'Ruth': 'ruth',
+      Genesis: 'genesis',
+      Exodus: 'exodus',
+      Leviticus: 'leviticus',
+      Numbers: 'numbers',
+      Deuteronomy: 'deuteronomy',
+      Joshua: 'joshua',
+      Judges: 'judges',
+      Ruth: 'ruth',
       '1 Samuel': '1-samuel',
       '2 Samuel': '2-samuel',
       '1 Kings': '1-kings',
       '2 Kings': '2-kings',
       '1 Chronicles': '1-chronicles',
       '2 Chronicles': '2-chronicles',
-      'Ezra': 'ezra',
-      'Nehemiah': 'nehemiah',
-      'Esther': 'esther',
-      'Job': 'job',
-      'Psalms': 'psalm',
-      'Proverbs': 'proverbs',
-      'Ecclesiastes': 'ecclesiastes',
+      Ezra: 'ezra',
+      Nehemiah: 'nehemiah',
+      Esther: 'esther',
+      Job: 'job',
+      Psalms: 'psalm',
+      Proverbs: 'proverbs',
+      Ecclesiastes: 'ecclesiastes',
       'Song of Songs': 'song-of-songs',
-      'Isaiah': 'isaiah',
-      'Jeremiah': 'jeremiah',
-      'Lamentations': 'lamentations',
-      'Ezekiel': 'ezekiel',
-      'Daniel': 'daniel',
-      'Hosea': 'hosea',
-      'Joel': 'joel',
-      'Amos': 'amos',
-      'Obadiah': 'obadiah',
-      'Jonah': 'jonah',
-      'Micah': 'micah',
-      'Nahum': 'nahum',
-      'Habakkuk': 'habakkuk',
-      'Zephaniah': 'zephaniah',
-      'Haggai': 'haggai',
-      'Zechariah': 'zechariah',
-      'Malachi': 'malachi',
-      'Matthew': 'matthew',
-      'Mark': 'mark',
-      'Luke': 'luke',
-      'John': 'john',
-      'Acts': 'acts',
-      'Romans': 'romans',
+      Isaiah: 'isaiah',
+      Jeremiah: 'jeremiah',
+      Lamentations: 'lamentations',
+      Ezekiel: 'ezekiel',
+      Daniel: 'daniel',
+      Hosea: 'hosea',
+      Joel: 'joel',
+      Amos: 'amos',
+      Obadiah: 'obadiah',
+      Jonah: 'jonah',
+      Micah: 'micah',
+      Nahum: 'nahum',
+      Habakkuk: 'habakkuk',
+      Zephaniah: 'zephaniah',
+      Haggai: 'haggai',
+      Zechariah: 'zechariah',
+      Malachi: 'malachi',
+      Matthew: 'matthew',
+      Mark: 'mark',
+      Luke: 'luke',
+      John: 'john',
+      Acts: 'acts',
+      Romans: 'romans',
       '1 Corinthians': '1-corinthians',
       '2 Corinthians': '2-corinthians',
-      'Galatians': 'galatians',
-      'Ephesians': 'ephesians',
-      'Philippians': 'philippians',
-      'Colossians': 'colossians',
+      Galatians: 'galatians',
+      Ephesians: 'ephesians',
+      Philippians: 'philippians',
+      Colossians: 'colossians',
       '1 Thessalonians': '1-thessalonians',
       '2 Thessalonians': '2-thessalonians',
       '1 Timothy': '1-timothy',
       '2 Timothy': '2-timothy',
-      'Titus': 'titus',
-      'Philemon': 'philemon',
-      'Hebrews': 'hebrews',
-      'James': 'james',
+      Titus: 'titus',
+      Philemon: 'philemon',
+      Hebrews: 'hebrews',
+      James: 'james',
       '1 Peter': '1-peter',
       '2 Peter': '2-peter',
       '1 John': '1-john',
       '2 John': '2-john',
       '3 John': '3-john',
-      'Jude': 'jude',
-      'Revelation': 'revelation'
+      Jude: 'jude',
+      Revelation: 'revelation',
     };
-    
+
     return reverseMap[bookName] || bookName.toLowerCase().replace(/\s+/g, '-');
   }
 
@@ -1045,7 +1047,7 @@ class CommentaryReader {
           return 'song-of-songs';
       }
     }
-    
+
     // For all other books, use the standard formatting
     return this.getBookNameForSource(bookName, source);
   }
@@ -1055,31 +1057,31 @@ class CommentaryReader {
     const wrapper = document.createElement('div');
     wrapper.className = 'chapter-actions';
     wrapper.style.cssText = 'display: flex; gap: 0.5rem; align-items: center; margin-top: 0.5rem;';
-    
+
     // Create Read Chapter button
     const chapterButton = document.createElement('button');
     chapterButton.className = 'chapter-reader-button';
     chapterButton.innerHTML = `<span>Read Chapter</span>`;
-    chapterButton.addEventListener('click', (e) => {
+    chapterButton.addEventListener('click', e => {
       e.preventDefault();
       if (window.chapterReaderInstance) {
         window.chapterReaderInstance.openChapterReader(chapterInfo);
       }
     });
-    
+
     // Create Read Commentary button
     const commentaryButton = document.createElement('button');
     commentaryButton.className = 'commentary-reader-button';
     commentaryButton.innerHTML = `<span>Read Commentary</span>`;
-    commentaryButton.addEventListener('click', (e) => {
+    commentaryButton.addEventListener('click', e => {
       e.preventDefault();
       this.openCommentaryReader(chapterInfo);
     });
-    
+
     // Add both buttons to wrapper
     wrapper.appendChild(chapterButton);
     wrapper.appendChild(commentaryButton);
-    
+
     // Replace the existing link with our button wrapper
     existingCommentaryLink.parentNode.replaceChild(wrapper, existingCommentaryLink);
   }
@@ -1109,18 +1111,21 @@ class CommentaryReader {
   createModal(chapterInfo) {
     const overlay = document.createElement('div');
     overlay.className = 'commentary-reader-overlay';
-    
+
     const currentCommentaryInfo = this.commentaries[this.currentCommentary];
-    
+
     overlay.innerHTML = `
       <div class="commentary-reader-modal">
         <div class="commentary-reader-header">
           <h2 class="commentary-reader-title">${chapterInfo.reference} Commentary</h2>
           <div class="commentary-reader-controls">
             <select class="commentary-reader-source-select" aria-label="Select commentary source">
-              ${Object.entries(this.commentaries).map(([key, info]) => 
-                `<option value="${key}" ${key === this.currentCommentary ? 'selected' : ''}>${info.name}</option>`
-              ).join('')}
+              ${Object.entries(this.commentaries)
+                .map(
+                  ([key, info]) =>
+                    `<option value="${key}" ${key === this.currentCommentary ? 'selected' : ''}>${info.name}</option>`
+                )
+                .join('')}
             </select>
             <button class="commentary-reader-close" aria-label="Close commentary reader">&times;</button>
           </div>
@@ -1140,16 +1145,16 @@ class CommentaryReader {
 
     // Commentary source selector change
     const sourceSelect = overlay.querySelector('.commentary-reader-source-select');
-    sourceSelect.addEventListener('change', (e) => {
+    sourceSelect.addEventListener('change', e => {
       this.currentCommentary = e.target.value;
       localStorage.setItem('preferred-commentary', this.currentCommentary);
-      
+
       // Update the commentary content and description
       this.updateCommentaryContent(overlay, chapterInfo);
     });
 
     // Close on overlay click
-    overlay.addEventListener('click', (e) => {
+    overlay.addEventListener('click', e => {
       if (e.target === overlay) {
         this.closeCommentaryReader();
       }
@@ -1162,7 +1167,7 @@ class CommentaryReader {
     // Update the iframe with new commentary source
     const contentDiv = overlay.querySelector('.commentary-reader-content');
     contentDiv.innerHTML = this.renderCommentaryIframe(chapterInfo);
-    
+
     // Update the description
     const descriptionDiv = overlay.querySelector('.commentary-source-description');
     descriptionDiv.textContent = this.commentaries[this.currentCommentary].description;
@@ -1186,34 +1191,34 @@ class CommentaryReader {
     const chapter = chapterInfo.chapter;
     const baseUrl = this.commentaries[source].baseUrl;
     const bookName = this.getSourceSpecificBookName(book, source);
-    
+
     // Build URL based on commentary source format
     switch (source) {
       case 'enduring-word':
         return `${baseUrl}/${bookName}-${chapter}`;
-        
+
       case 'matthew-henry':
         // Matthew Henry has special format for Song of Songs
         if (book === 'Song of Songs') {
           return `${baseUrl}/song-of-solomon/song-of-solomon-${chapter}.html`;
         }
         return `${baseUrl}/${bookName}/${chapter}.html`;
-        
+
       case 'jfb':
       case 'scofield':
       case 'pulpit':
         return `${baseUrl}/${bookName}/${chapter}.htm`;
-        
+
       case 'john-gill':
         return `${baseUrl}/${bookName}-${chapter}/`;
-        
+
       case 'barnes-notes':
       case 'calvin':
       case 'homiletic':
       case 'biblical-illustrator':
         // StudyLight format: /eng/bnb/genesis.html (no chapter in URL)
         return `${baseUrl}/${bookName}.html`;
-        
+
       default:
         // Fallback to enduring word format
         return `${this.commentaries['enduring-word'].baseUrl}/${this.getSourceSpecificBookName(book, 'enduring-word')}-${chapter}`;
@@ -1226,25 +1231,25 @@ class CommentaryReader {
       case 'enduring-word':
         // Enduring Word uses hyphenated format: genesis, 1-john
         return this.slugifyBook(bookName);
-        
+
       case 'matthew-henry':
       case 'john-gill':
         // BibleStudyTools uses hyphenated format: genesis, 1-corinthians
         return this.slugifyBook(bookName);
-        
+
       case 'jfb':
-      case 'scofield': 
+      case 'scofield':
       case 'pulpit':
         // BibleHub uses underscores for numbered books: genesis, 1_samuel, 1_chronicles
         return this.getBibleHubBookName(bookName);
-        
+
       case 'barnes-notes':
       case 'calvin':
       case 'homiletic':
       case 'biblical-illustrator':
         // StudyLight uses hyphenated format: genesis, 1-samuel
         return this.slugifyBook(bookName);
-        
+
       default:
         return this.slugifyBook(bookName);
     }
@@ -1253,90 +1258,90 @@ class CommentaryReader {
   // BibleHub specific book name formatting (uses underscores for numbered books)
   getBibleHubBookName(bookName) {
     const bibleHubMap = {
-      'Genesis': 'genesis',
-      'Exodus': 'exodus',
-      'Leviticus': 'leviticus',
-      'Numbers': 'numbers',
-      'Deuteronomy': 'deuteronomy',
-      'Joshua': 'joshua',
-      'Judges': 'judges',
-      'Ruth': 'ruth',
+      Genesis: 'genesis',
+      Exodus: 'exodus',
+      Leviticus: 'leviticus',
+      Numbers: 'numbers',
+      Deuteronomy: 'deuteronomy',
+      Joshua: 'joshua',
+      Judges: 'judges',
+      Ruth: 'ruth',
       '1 Samuel': '1_samuel',
       '2 Samuel': '2_samuel',
       '1 Kings': '1_kings',
       '2 Kings': '2_kings',
       '1 Chronicles': '1_chronicles',
       '2 Chronicles': '2_chronicles',
-      'Ezra': 'ezra',
-      'Nehemiah': 'nehemiah',
-      'Esther': 'esther',
-      'Job': 'job',
-      'Psalms': 'psalms',
-      'Proverbs': 'proverbs',
-      'Ecclesiastes': 'ecclesiastes',
+      Ezra: 'ezra',
+      Nehemiah: 'nehemiah',
+      Esther: 'esther',
+      Job: 'job',
+      Psalms: 'psalms',
+      Proverbs: 'proverbs',
+      Ecclesiastes: 'ecclesiastes',
       'Song of Songs': 'songs',
-      'Isaiah': 'isaiah',
-      'Jeremiah': 'jeremiah',
-      'Lamentations': 'lamentations',
-      'Ezekiel': 'ezekiel',
-      'Daniel': 'daniel',
-      'Hosea': 'hosea',
-      'Joel': 'joel',
-      'Amos': 'amos',
-      'Obadiah': 'obadiah',
-      'Jonah': 'jonah',
-      'Micah': 'micah',
-      'Nahum': 'nahum',
-      'Habakkuk': 'habakkuk',
-      'Zephaniah': 'zephaniah',
-      'Haggai': 'haggai',
-      'Zechariah': 'zechariah',
-      'Malachi': 'malachi',
-      'Matthew': 'matthew',
-      'Mark': 'mark',
-      'Luke': 'luke',
-      'John': 'john',
-      'Acts': 'acts',
-      'Romans': 'romans',
+      Isaiah: 'isaiah',
+      Jeremiah: 'jeremiah',
+      Lamentations: 'lamentations',
+      Ezekiel: 'ezekiel',
+      Daniel: 'daniel',
+      Hosea: 'hosea',
+      Joel: 'joel',
+      Amos: 'amos',
+      Obadiah: 'obadiah',
+      Jonah: 'jonah',
+      Micah: 'micah',
+      Nahum: 'nahum',
+      Habakkuk: 'habakkuk',
+      Zephaniah: 'zephaniah',
+      Haggai: 'haggai',
+      Zechariah: 'zechariah',
+      Malachi: 'malachi',
+      Matthew: 'matthew',
+      Mark: 'mark',
+      Luke: 'luke',
+      John: 'john',
+      Acts: 'acts',
+      Romans: 'romans',
       '1 Corinthians': '1_corinthians',
       '2 Corinthians': '2_corinthians',
-      'Galatians': 'galatians',
-      'Ephesians': 'ephesians',
-      'Philippians': 'philippians',
-      'Colossians': 'colossians',
+      Galatians: 'galatians',
+      Ephesians: 'ephesians',
+      Philippians: 'philippians',
+      Colossians: 'colossians',
       '1 Thessalonians': '1_thessalonians',
       '2 Thessalonians': '2_thessalonians',
       '1 Timothy': '1_timothy',
       '2 Timothy': '2_timothy',
-      'Titus': 'titus',
-      'Philemon': 'philemon',
-      'Hebrews': 'hebrews',
-      'James': 'james',
+      Titus: 'titus',
+      Philemon: 'philemon',
+      Hebrews: 'hebrews',
+      James: 'james',
       '1 Peter': '1_peter',
       '2 Peter': '2_peter',
       '1 John': '1_john',
       '2 John': '2_john',
       '3 John': '3_john',
-      'Jude': 'jude',
-      'Revelation': 'revelation'
+      Jude: 'jude',
+      Revelation: 'revelation',
     };
-    
+
     return bibleHubMap[bookName] || bookName.toLowerCase().replace(/\s+/g, '_');
   }
 
   // BibleGateway specific book name formatting
   getBibleGatewayBookName(bookName) {
     const bibleGatewayMap = {
-      'Song of Songs': 'Song of Solomon'
+      'Song of Songs': 'Song of Solomon',
     };
-    
+
     return bibleGatewayMap[bookName] || bookName;
   }
 
   renderCommentaryIframe(chapterInfo) {
     const url = this.getCommentaryUrl(chapterInfo);
     const commentaryInfo = this.commentaries[this.currentCommentary];
-    
+
     // Check if this commentary allows iframe embedding
     if (commentaryInfo.allowsIframe) {
       return `
@@ -1415,20 +1420,20 @@ class CommentaryReader {
     const workingCommentaries = Object.keys(this.commentaries).filter(
       key => this.commentaries[key].allowsIframe && key !== this.currentCommentary
     );
-    
+
     if (workingCommentaries.length > 0) {
       // Prefer Enduring Word first, then others
-      const newCommentary = workingCommentaries.includes('enduring-word') 
-        ? 'enduring-word' 
+      const newCommentary = workingCommentaries.includes('enduring-word')
+        ? 'enduring-word'
         : workingCommentaries[0];
-      
+
       // Update the select dropdown
       const sourceSelect = this.currentModal?.querySelector('.commentary-reader-source-select');
       if (sourceSelect) {
         sourceSelect.value = newCommentary;
         this.currentCommentary = newCommentary;
         localStorage.setItem('preferred-commentary', newCommentary);
-        
+
         // Trigger the change event to update content
         if (typeof Event !== 'undefined') {
           // eslint-disable-next-line no-undef
@@ -1444,7 +1449,7 @@ class CommentaryReader {
   }
 
   setupKeyboardNavigation() {
-    document.addEventListener('keydown', (e) => {
+    document.addEventListener('keydown', e => {
       if (this.currentModal) {
         if (e.key === 'Escape') {
           e.preventDefault();
@@ -1459,18 +1464,18 @@ class CommentaryReader {
     if (!window.commentaryReaderInstance) {
       window.commentaryReaderInstance = new CommentaryReader();
     }
-    
+
     if (source && window.commentaryReaderInstance.commentaries[source]) {
       window.commentaryReaderInstance.currentCommentary = source;
       localStorage.setItem('preferred-commentary', source);
     }
-    
+
     const chapterInfo = {
       book: book,
       chapter: chapter,
-      reference: `${book} ${chapter}`
+      reference: `${book} ${chapter}`,
     };
-    
+
     window.commentaryReaderInstance.openCommentaryReader(chapterInfo);
   }
 }
@@ -1507,13 +1512,13 @@ function openCommentaryReader(reference, book, chapter) {
   if (!window.commentaryReaderInstance) {
     window.commentaryReaderInstance = new CommentaryReader();
   }
-  
+
   const chapterInfo = {
     book: book,
     chapter: chapter,
-    reference: reference
+    reference: reference,
   };
-  
+
   window.commentaryReaderInstance.openCommentaryReader(chapterInfo);
 }
 

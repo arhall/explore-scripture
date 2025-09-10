@@ -10,16 +10,19 @@ description: Chapter-by-chapter Bible summaries, videos, and commentary for ever
       <span class="hero-badge-text">Complete Bible Study Platform</span>
     </div>
     <h1 class="hero-title">
-      Explore Scripture with 
+      Explore Scripture with
       <span class="hero-highlight">Purpose & Clarity</span>
     </h1>
-    <p class="hero-description">From Genesis to Revelation—discover the unified story of redemption through expert commentary, chapter summaries, and visual overviews designed for modern Bible study.</p>
-    
+    <p class="hero-description">
+      From Genesis to Revelation—discover the unified story of redemption through expert commentary,
+      chapter summaries, and visual overviews designed for modern Bible study.
+    </p>
+
     <div class="hero-actions">
       <a href="/categories/" class="hero-cta primary">Start Exploring</a>
       <button onclick="focusSearch()" class="hero-cta secondary">Search Scripture</button>
     </div>
-    
+
     <div class="hero-stats">
       <div class="stat">
         <div class="stat-number">66</div>
@@ -33,7 +36,7 @@ description: Chapter-by-chapter Bible summaries, videos, and commentary for ever
       </div>
     </div>
   </div>
-  
+
   <div class="hero-visual">
     <div class="hero-books">
       <div class="hero-book testament-old">Old Testament</div>
@@ -48,7 +51,7 @@ description: Chapter-by-chapter Bible summaries, videos, and commentary for ever
     <h2>Everything You Need for Deep Bible Study</h2>
     <p>Comprehensive tools designed to help you understand Scripture's message</p>
   </div>
-  
+
   <div class="features-grid">
     <div class="feature-card highlighted">
       <div class="feature-icon">▦</div>
@@ -81,74 +84,70 @@ description: Chapter-by-chapter Bible summaries, videos, and commentary for ever
   <div class="testament-header">
     <div class="testament-badge">39 Books</div>
     <h2>Old Testament</h2>
-    <p class="section-intro">The foundation of faith—God's covenant with Israel and the promise of redemption</p>
+    <p class="section-intro">
+      The foundation of faith—God's covenant with Israel and the promise of redemption
+    </p>
   </div>
-  
-  {% for category in categories %}
-    {% if category.testament == "Old Testament" %}
-      <div class="category-group">
-        <div class="category-header">
-          <h3>
-            <a href="/categories/{{ category.slug }}/">{{ category.name }}</a>
-            <span class="book-count">{{ category.bookCount }} books</span>
-          </h3>
-          <p class="category-description">{{ category.description }}</p>
-        </div>
-        
-        <div class="category-books">
-          {% for book in books %}
-            {% if book.category == category.name %}
-            <a href="/books/{{ book.slug }}/" class="book-card">
-              <div class="book-title">{{ book.name }}</div>
-              {% if book.chapterSummaries and (book.chapterSummaries | length) > 0 %}
-                <div class="book-progress">{{ book.chapterSummaries | length }} chapters</div>
-              {% else %}
-                <div class="book-progress pending">Coming soon</div>
-              {% endif %}
-            </a>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </div>
-    {% endif %}
-  {% endfor %}
+
+  {% for category in categories %} {% if category.testament == "Old Testament" %}
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/{{ category.slug }}/">{{ category.name }}</a>
+        <span class="book-count">{{ category.bookCount }} books</span>
+      </h3>
+      <p class="category-description">{{ category.description }}</p>
+    </div>
+
+    <div class="category-books">
+      {% for book in books %} {% if book.category == category.name %}
+      <a href="/books/{{ book.slug }}/" class="book-card">
+        <div class="book-title">{{ book.name }}</div>
+        {% if book.chapterSummaries and (book.chapterSummaries | length) > 0 %}
+        <div class="book-progress">{{ book.chapterSummaries | length }} chapters</div>
+        {% else %}
+        <div class="book-progress pending">Coming soon</div>
+        {% endif %}
+      </a>
+      {% endif %} {% endfor %}
+    </div>
+  </div>
+  {% endif %} {% endfor %}
 </section>
 
 <section class="testament-section new-testament">
   <div class="testament-header">
     <div class="testament-badge">27 Books</div>
     <h2>New Testament</h2>
-    <p class="section-intro">The fulfillment of promise—the life of Christ and the birth of the Church</p>
+    <p class="section-intro">
+      The fulfillment of promise—the life of Christ and the birth of the Church
+    </p>
   </div>
-  
-  {% for category in categories %}
-    {% if category.testament == "New Testament" %}
-      <div class="category-group">
-        <div class="category-header">
-          <h3>
-            <a href="/categories/{{ category.slug }}/">{{ category.name }}</a>
-            <span class="book-count">{{ category.bookCount }} books</span>
-          </h3>
-          <p class="category-description">{{ category.description }}</p>
-        </div>
-        
-        <div class="category-books">
-          {% for book in books %}
-            {% if book.category == category.name %}
-            <a href="/books/{{ book.slug }}/" class="book-card">
-              <div class="book-title">{{ book.name }}</div>
-              {% if book.chapterSummaries and (book.chapterSummaries | length) > 0 %}
-                <div class="book-progress">{{ book.chapterSummaries | length }} chapters</div>
-              {% else %}
-                <div class="book-progress pending">Coming soon</div>
-              {% endif %}
-            </a>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </div>
-    {% endif %}
-  {% endfor %}
+
+  {% for category in categories %} {% if category.testament == "New Testament" %}
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/{{ category.slug }}/">{{ category.name }}</a>
+        <span class="book-count">{{ category.bookCount }} books</span>
+      </h3>
+      <p class="category-description">{{ category.description }}</p>
+    </div>
+
+    <div class="category-books">
+      {% for book in books %} {% if book.category == category.name %}
+      <a href="/books/{{ book.slug }}/" class="book-card">
+        <div class="book-title">{{ book.name }}</div>
+        {% if book.chapterSummaries and (book.chapterSummaries | length) > 0 %}
+        <div class="book-progress">{{ book.chapterSummaries | length }} chapters</div>
+        {% else %}
+        <div class="book-progress pending">Coming soon</div>
+        {% endif %}
+      </a>
+      {% endif %} {% endfor %}
+    </div>
+  </div>
+  {% endif %} {% endfor %}
 </section>
 
 <script>
@@ -158,7 +157,7 @@ description: Chapter-by-chapter Bible summaries, videos, and commentary for ever
     if (searchInput) {
       searchInput.focus();
       searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      
+
       // Track hero CTA usage
       if (window.telemetry) {
         window.telemetry.recordUserAction('hero-search-cta');

@@ -7,9 +7,7 @@
   "sections": [
     {
       "section": "Overview & Superscription",
-      "entries": [
-        "Song of Songs (which is Solomon’s)"
-      ]
+      "entries": ["Song of Songs (which is Solomon’s)"]
     },
     {
       "section": "Voices & Characters",
@@ -65,9 +63,7 @@
     {
       "name": "Song of Songs (which is Solomon’s)",
       "type": "entity",
-      "references": [
-        "Song 1:1"
-      ],
+      "references": ["Song 1:1"],
       "blurb": "The superlative ‘Song of Songs’ signals a collection of love poetry framed by Solomon’s name—either authorship, dedication, or Solomonic idiom. The book sanctifies marital desire within wisdom theology.",
       "category": "editorial",
       "id": "e.song-of-songs.which-is-solomons--7814b94f"
@@ -75,15 +71,9 @@
     {
       "name": "The Beloved (Shulammite woman)",
       "type": "person",
-      "references": [
-        "Song 1:5–6; 6:13; passim"
-      ],
+      "references": ["Song 1:5–6; 6:13; passim"],
       "blurb": "Primary voice of the Song—dark yet lovely, vineyard worker turned garden of delight. She initiates pursuit (1:2–4), seeks at night (3:1–4), and claims mutual belonging (2:16; 6:3; 7:10). Background & Solomon: The text names Solomon (1:1; 3:7–11; 8:11–12) and portrays the bridegroom with royal imagery; some read the woman as **Solomon’s beloved** (Shulammite ≈ ‘Shunammite’), others see her as independent of the king, even contrasting her personal vineyard with Solomon’s commercial vineyard (8:11–12). Either way, her agency and fidelity stand central—love is covenantal, voluntary, and resilient.",
-      "aka": [
-        "Shulammite",
-        "Beloved",
-        "Bride"
-      ],
+      "aka": ["Shulammite", "Beloved", "Bride"],
       "relations": {
         "family": "brothers (guardians)",
         "status": "vineyard-keeper; shepherdess-imagery"
@@ -94,40 +84,29 @@
     {
       "name": "The Lover / Bridegroom",
       "type": "person",
-      "references": [
-        "Song 1:2–4; 2:8–17; 4:1–15; 5:2–16; 7:6–10"
-      ],
+      "references": ["Song 1:2–4; 2:8–17; 4:1–15; 5:2–16; 7:6–10"],
       "blurb": "Speaks with shepherd and kingly tones—leaping over mountains, crafting palanquin, crowning day of wedding. Whether identified with Solomon or read as archetypal bridegroom, he models delighted, attentive love.",
-      "aka": [
-        "Beloved (male)",
-        "Bridegroom"
-      ],
+      "aka": ["Beloved (male)", "Bridegroom"],
       "category": "character",
       "id": "p.the-lover-bridegroom.male--1b5f1d5d"
     },
     {
       "name": "Solomon (son of David)",
       "type": "person",
-      "references": [
-        "Song 1:1; 3:7,9,11; 8:11–12"
-      ],
+      "references": ["Song 1:1; 3:7,9,11; 8:11–12"],
       "blurb": "Royal figure anchoring the Song’s frame—owner of vineyards, bearer of the wedding crown, patron of wisdom and song (1 Kgs 4:32). He can be read as the bridegroom or as symbolic foil whose grandeur is relativized by the couple’s mutual love.",
       "relations": {
         "father": "David",
         "tribe": "Judah"
       },
       "category": "royal",
-      "cross_references": [
-        "1 Kings 3–4"
-      ],
+      "cross_references": ["1 Kings 3–4"],
       "id": "p.solomon.son-of-david--c76a3c48"
     },
     {
       "name": "Daughters of Jerusalem (chorus)",
       "type": "group",
-      "references": [
-        "Song 1:5; 2:7; 3:5; 5:8–9; 6:1; 8:4"
-      ],
+      "references": ["Song 1:5; 2:7; 3:5; 5:8–9; 6:1; 8:4"],
       "blurb": "Choral companions who hear, question, and witness—liturgical audience framing love’s pedagogy. They receive the refrain ‘Do not awaken love until it pleases.’",
       "category": "chorus",
       "id": "g.daughters-of-jerusalem.chorus--e88ed0a7"
@@ -135,9 +114,7 @@
     {
       "name": "Brothers of the Beloved",
       "type": "group",
-      "references": [
-        "Song 1:6; 8:8–9"
-      ],
+      "references": ["Song 1:6; 8:8–9"],
       "blurb": "Guardians of her honor who made her keep the vineyards; later negotiate protection for a younger sister—family structures that both constrain and care.",
       "category": "family",
       "id": "g.brothers-of-the-beloved--f8c3c9dc"
@@ -145,9 +122,7 @@
     {
       "name": "Watchmen of the city",
       "type": "group",
-      "references": [
-        "Song 3:3; 5:7"
-      ],
+      "references": ["Song 3:3; 5:7"],
       "blurb": "Public order figures: once helpful in her search; later violent guardians who beat and strip her—ambivalence of societal gatekeepers over intimate love.",
       "category": "civic",
       "id": "g.watchmen-of-the-city--83561a20"
@@ -155,9 +130,7 @@
     {
       "name": "Mother’s house & maternal figures",
       "type": "entity",
-      "references": [
-        "Song 3:4; 8:2,5"
-      ],
+      "references": ["Song 3:4; 8:2,5"],
       "blurb": "Site of nurture and intimacy; the beloved longs to bring him to her mother’s house—love is embedded in family memory and blessing.",
       "category": "family",
       "id": "e.mothers-house-maternal-figures--011e9b3e"
@@ -165,9 +138,7 @@
     {
       "name": "Companions/friends of the bridegroom",
       "type": "group",
-      "references": [
-        "Song 8:13"
-      ],
+      "references": ["Song 8:13"],
       "blurb": "Listeners near the couple’s garden; wedding-feast echoes; community delights in private joy without intrusion.",
       "category": "chorus",
       "id": "g.companions-friends-of-the-bridegroom--3fddac10"
@@ -175,9 +146,7 @@
     {
       "name": "Garden locked, a spring sealed",
       "type": "entity",
-      "references": [
-        "Song 4:12–15; 5:1; 6:2"
-      ],
+      "references": ["Song 4:12–15; 5:1; 6:2"],
       "blurb": "Chastity and exclusivity: the bride as enclosed garden; love’s pleasures within covenant walls. Edenic echoes—pomegranates, spices, flowing waters.",
       "category": "motif",
       "id": "e.garden-locked-a-spring-sealed--9ce0206a"
@@ -185,9 +154,7 @@
     {
       "name": "Vineyard imagery (own vineyard vs Solomon’s)",
       "type": "entity",
-      "references": [
-        "Song 1:6; 2:15; 8:11–12"
-      ],
+      "references": ["Song 1:6; 2:15; 8:11–12"],
       "blurb": "Her ‘own vineyard’ (self/body/agency) contrasts with Solomon’s commercial vineyard with keepers—love resists commodification while inviting mutual enjoyment.",
       "category": "motif",
       "id": "e.vineyard-imagery.own-vineyard-vs-solomons--175cdbf9"
@@ -195,9 +162,7 @@
     {
       "name": "Animals of desire and danger",
       "type": "group",
-      "references": [
-        "Song 2:7–9; 2:15; 4:5; 4:8; 7:3"
-      ],
+      "references": ["Song 2:7–9; 2:15; 4:5; 4:8; 7:3"],
       "blurb": "Gazelle and stag (agility/desire), foxes (small threats to vineyards), doves (beauty/faithfulness). Creatures voice love’s energy and vulnerabilities.",
       "category": "imagery",
       "id": "g.animals-of-desire-and-danger--44a833ad"
@@ -205,9 +170,7 @@
     {
       "name": "Body metaphors of beauty",
       "type": "entity",
-      "references": [
-        "Song 4:1–7; 5:10–16; 7:1–9"
-      ],
+      "references": ["Song 4:1–7; 5:10–16; 7:1–9"],
       "blurb": "Eyes as doves, hair like goats, neck as tower, teeth like shorn ewes; for him: head like gold, eyes like doves, legs like alabaster—metaphors dignify embodiment without pornographic gaze.",
       "category": "imagery",
       "id": "e.body-metaphors-of-beauty--c50f470e"
@@ -215,9 +178,7 @@
     {
       "name": "Season of singing (springtime)",
       "type": "entity",
-      "references": [
-        "Song 2:10–13"
-      ],
+      "references": ["Song 2:10–13"],
       "blurb": "Winter past, flowers appear, voice of the turtledove—creation’s renewal mirrors awakened love.",
       "category": "season",
       "id": "e.season-of-singing.springtime--e4cbd27a"
@@ -225,9 +186,7 @@
     {
       "name": "Fragrance, oils, spices",
       "type": "group",
-      "references": [
-        "Song 1:3; 3:6; 4:13–16; 5:5"
-      ],
+      "references": ["Song 1:3; 3:6; 4:13–16; 5:5"],
       "blurb": "Nard, myrrh, frankincense, saffron, cinnamon, aloes—olfactory worship of love; sensory theology of delight.",
       "category": "imagery",
       "id": "g.fragrance-oils-spices--cd384092"
@@ -235,9 +194,7 @@
     {
       "name": "Architecture & towers (Heshbon, Damascus)",
       "type": "entity",
-      "references": [
-        "Song 4:4; 7:4"
-      ],
+      "references": ["Song 4:4; 7:4"],
       "blurb": "Neck like the tower of David; nose like the tower of Lebanon—beauty pictured with civic strength; love builds, it does not merely adorn.",
       "category": "imagery",
       "id": "e.architecture-towers.heshbon-damascus--c5006cf5"
@@ -245,9 +202,7 @@
     {
       "name": "City by night (search scenes)",
       "type": "entity",
-      "references": [
-        "Song 3:1–4; 5:2–8"
-      ],
+      "references": ["Song 3:1–4; 5:2–8"],
       "blurb": "Nocturnal quests dramatize desire and vulnerability; longing refuses apathy, risks misunderstanding to find the beloved.",
       "category": "motif",
       "id": "e.city-by-night.search-scenes--d2b371d1"
@@ -255,9 +210,7 @@
     {
       "name": "Wedding day & palanquin",
       "type": "entity",
-      "references": [
-        "Song 3:6–11"
-      ],
+      "references": ["Song 3:6–11"],
       "blurb": "Solomon’s litter with sixty warriors; mother crowns him on the day of gladness—public celebration of private covenant.",
       "category": "wedding",
       "id": "e.wedding-day-palanquin--f9135e58"
@@ -265,9 +218,7 @@
     {
       "name": "Place-names & landscapes (En-gedi, Sharon, Tirzah, Jerusalem, Lebanon, Hermon, Amana, Senir)",
       "type": "group",
-      "references": [
-        "Song 1:14; 2:1; 6:4; 3:6; 4:8"
-      ],
+      "references": ["Song 1:14; 2:1; 6:4; 3:6; 4:8"],
       "blurb": "Geography becomes metaphor—strength, fragrance, fertility, majesty; love roams Israel’s map as temple-garden renewed.",
       "category": "place",
       "id": "g.place-names-landscapes.en-gedi-sharon-tirzah-jerusalem-lebanon-hermon-amana-senir--134e9b1d"
@@ -275,9 +226,7 @@
     {
       "name": "Covenantal love: strong as death",
       "type": "entity",
-      "references": [
-        "Song 8:6–7"
-      ],
+      "references": ["Song 8:6–7"],
       "blurb": "Set me as a seal upon your heart and arm—the seal marks ownership and permanence; love’s flame is ‘a flame of YH’ (shalhevetyah). Many waters cannot quench love.",
       "category": "theology",
       "id": "e.covenantal-love-strong-as-death--78b0a609"
@@ -285,9 +234,7 @@
     {
       "name": "Mutuality and consent",
       "type": "entity",
-      "references": [
-        "Song 1:4; 2:16; 6:3; 7:10"
-      ],
+      "references": ["Song 1:4; 2:16; 6:3; 7:10"],
       "blurb": "‘Draw me after you’; ‘I am my beloved’s and he is mine’—mutual belonging and initiative contrast with exploitative eros; desire is dialogical and dignifying.",
       "category": "ethics",
       "id": "e.mutuality-and-consent--4bf2b29f"
@@ -295,9 +242,7 @@
     {
       "name": "Do not awaken love until it pleases (refrain)",
       "type": "entity",
-      "references": [
-        "Song 2:7; 3:5; 8:4"
-      ],
+      "references": ["Song 2:7; 3:5; 8:4"],
       "blurb": "Chastity refrain anchors timing—desire awaits proper season; love’s discipline enhances joy.",
       "category": "wisdom",
       "count": 3,
@@ -307,9 +252,7 @@
     {
       "name": "Eden restored in the temple-garden",
       "type": "entity",
-      "references": [
-        "Song 4–6; 8:13"
-      ],
+      "references": ["Song 4–6; 8:13"],
       "blurb": "Garden, rivers, fruitful trees, and unashamed delight—wisdom’s end is not mere restraint but redeemed eros woven into creation’s praise.",
       "category": "theology",
       "id": "e.eden-restored-in-the-temple-garden--a8650402"
@@ -317,9 +260,7 @@
     {
       "name": "Canonical/typological horizons",
       "type": "entity",
-      "references": [
-        "Song 2:16; 3:11; 8:6–7"
-      ],
+      "references": ["Song 2:16; 3:11; 8:6–7"],
       "blurb": "Israel as YHWH’s bride; Christ and the Church as later reading—yet the literal marital sense remains the text’s primary register; typology arises from covenant patterns, not allegory alone.",
       "category": "theology",
       "id": "e.canonical-typological-horizons--0dd4dfd2"
@@ -327,9 +268,7 @@
     {
       "name": "‘Your love is better than wine’",
       "type": "entity",
-      "references": [
-        "Song 1:2–4"
-      ],
+      "references": ["Song 1:2–4"],
       "blurb": "Opening prayer of desire—love surpasses luxury; the king brings her into his chambers, yet agency remains with the woman’s voice.",
       "category": "poetry",
       "id": "e.your-love-is-better-than-wine--0dac6ce6"
@@ -337,9 +276,7 @@
     {
       "name": "‘Catch for us the foxes’",
       "type": "entity",
-      "references": [
-        "Song 2:15"
-      ],
+      "references": ["Song 2:15"],
       "blurb": "Small threats spoil vineyards—early vigilance protects tender love; community (‘for us’) guards covenant joy.",
       "category": "wisdom",
       "id": "e.catch-for-us-the-foxes--3357e992"
@@ -347,9 +284,7 @@
     {
       "name": "‘My beloved is mine, and I am his’",
       "type": "entity",
-      "references": [
-        "Song 2:16; 6:3; 7:10"
-      ],
+      "references": ["Song 2:16; 6:3; 7:10"],
       "blurb": "Triple confession of mutual possession charts growth: from possession to priority (‘I am my beloved’s’).",
       "category": "covenant",
       "id": "e.my-beloved-is-mine-and-i-am-his--7fa577b8"
@@ -357,9 +292,7 @@
     {
       "name": "‘Who is this coming up from the wilderness’",
       "type": "entity",
-      "references": [
-        "Song 3:6; 8:5"
-      ],
+      "references": ["Song 3:6; 8:5"],
       "blurb": "Exodus echoes—love emerges from wilderness into wedding. Salvation history becomes marriage imagery.",
       "category": "theology",
       "id": "e.who-is-this-coming-up-from-the-wilderness--6c074f3b"
@@ -367,9 +300,7 @@
     {
       "name": "‘Turn, turn, O Shulammite’",
       "type": "entity",
-      "references": [
-        "Song 6:13"
-      ],
+      "references": ["Song 6:13"],
       "blurb": "Public gaze on private beauty—dance imagery raises questions of objectification vs celebration; the text leans toward covenant festivity guarded by consent.",
       "category": "poetry",
       "id": "e.turn-turn-o-shulammite--b5be4cd7"

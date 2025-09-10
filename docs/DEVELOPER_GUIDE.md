@@ -6,7 +6,7 @@
 explore-scripture/
 ├── docs/                          # Documentation
 │   ├── CHAPTER_READER_GUIDE.md   # Chapter reader implementation
-│   ├── SCRIPTURE_WIDGET_GUIDE.md # Scripture widget implementation  
+│   ├── SCRIPTURE_WIDGET_GUIDE.md # Scripture widget implementation
 │   ├── TEST_SUITE_DOCUMENTATION.md # Testing documentation
 │   ├── DEVELOPER_GUIDE.md        # This developer guide
 │   ├── PERFORMANCE.md            # Performance optimization guide
@@ -54,6 +54,7 @@ explore-scripture/
 ## Development Workflow
 
 ### Setup
+
 ```bash
 # Install dependencies
 npm install
@@ -66,6 +67,7 @@ npm run dev
 ```
 
 ### Code Quality
+
 ```bash
 # Run all linters
 npm run lint
@@ -80,6 +82,7 @@ npm run format      # Format code with Prettier
 ```
 
 ### Testing
+
 ```bash
 # Run all tests (requires Chrome)
 npm test
@@ -92,6 +95,7 @@ npm run test:smoke
 ```
 
 ### Building
+
 ```bash
 # Development build
 npm run build
@@ -106,6 +110,7 @@ npm run build:analyze
 ## Code Standards
 
 ### JavaScript
+
 - ES6+ features preferred
 - Use `const` and `let`, avoid `var`
 - Proper error handling with try/catch
@@ -113,19 +118,22 @@ npm run build:analyze
 - Browser compatibility: Modern browsers (ES2020+)
 
 ### CSS
+
 - CSS custom properties for theming
 - Mobile-first responsive design
 - BEM-like class naming where applicable
 - Stylelint ensures consistent formatting
 
 ### HTML/Nunjucks
+
 - Semantic HTML5 elements
 - Accessible markup (ARIA labels, proper heading hierarchy)
 - Nunjucks templating with data-driven content
 - SEO-friendly meta tags
 
 ### Documentation
-- Markdown format with consistent structure  
+
+- Markdown format with consistent structure
 - Code examples for all features
 - API documentation for JavaScript modules
 - Keep README and guides up to date
@@ -133,25 +141,29 @@ npm run build:analyze
 ## Key Technologies
 
 ### Core Stack
+
 - **Eleventy (11ty)**: Static site generator for 300+ pages
 - **Nunjucks**: Template engine with macros and data-driven content
 - **Vanilla JavaScript**: Modern ES6+ with component-based architecture
 - **CSS Custom Properties**: 24-theme system with automatic dark mode detection
 
 ### Development Tools
+
 - **ESLint**: JavaScript linting
-- **Stylelint**: CSS linting  
+- **Stylelint**: CSS linting
 - **Prettier**: Code formatting
 - **Jest**: JavaScript unit testing
 - **Selenium**: End-to-end browser testing
 
 ### Build Tools
+
 - **PostCSS**: CSS processing and optimization
 - **Terser**: JavaScript minification
 - **HTMLnano**: HTML optimization
 - **Docker**: Containerized deployment
 
 ### Analytics & Monitoring
+
 - **OpenTelemetry**: Performance monitoring
 - **Custom Logger**: Client-side logging system
 - **Lighthouse**: Performance auditing
@@ -160,6 +172,7 @@ npm run build:analyze
 ## Performance Considerations
 
 ### JavaScript Loading
+
 - Scripts conditionally loaded based on page type
 - Chapter Reader only loads on book pages (live translation switching)
 - Character Search loads on character pages (client-side filtering)
@@ -167,18 +180,21 @@ npm run build:analyze
 - Service Worker for caching
 
 ### CSS Optimization
+
 - Single CSS file with critical styles inline
 - CSS custom properties reduce bundle size
 - Media queries for responsive loading
 - Vendor prefixes only where necessary
 
 ### Image & Asset Optimization
+
 - SVG icons for scalability
 - WebP format where supported
 - Lazy loading for images
 - CDN-ready structure
 
 ### Build Optimization
+
 - HTML minification in production
 - CSS optimization with cssnano
 - JavaScript terser for compression
@@ -187,24 +203,28 @@ npm run build:analyze
 ## Testing Strategy
 
 ### Unit Tests (JavaScript)
+
 - Core functionality testing
 - API response handling
 - Utility function validation
 - Mocking for external dependencies
 
 ### Integration Tests (Selenium)
+
 - End-to-end user workflows
 - Cross-browser compatibility
 - Mobile responsive testing
 - Accessibility validation
 
 ### Performance Tests
+
 - Lighthouse auditing
 - Core Web Vitals monitoring
 - Bundle size tracking
 - Load time analysis
 
 ### Manual Testing
+
 - Visual regression testing
 - Usability testing
 - Content validation
@@ -213,18 +233,21 @@ npm run build:analyze
 ## Deployment
 
 ### Development
+
 - Local dev server with live reload
 - Debug mode with enhanced logging
 - Source maps for debugging
 - Hot module replacement
 
 ### Staging/Production
+
 - Cloudflare Pages deployment
 - Optimized builds with compression
 - CDN for static assets
 - Performance monitoring enabled
 
 ### Docker Support
+
 - Development container setup
 - Production-ready images
 - Multi-stage builds for optimization
@@ -235,37 +258,44 @@ npm run build:analyze
 ### Common Issues
 
 #### Build Failures
+
 - Check Node.js version (v16+ required)
 - Clear `_site` directory and rebuild
 - Verify all dependencies installed
 - Check for syntax errors in templates
 
 #### JavaScript Errors
+
 - Open browser dev console
 - Enable debug mode: `?debug=true`
 - Check network tab for failed requests
 - Verify API endpoints are accessible
 
 #### Styling Issues
+
 - Clear browser cache
 - Check CSS custom property support
 - Verify theme system is loaded
 - Test in different browsers
 
 #### Performance Issues
+
 - Run build analysis: `npm run build:analyze`
 - Check bundle sizes in build logs
 - Use Lighthouse for performance audit
 - Monitor loading waterfall
 
 ### Debug Mode
+
 Enable enhanced debugging:
+
 ```javascript
 localStorage.setItem('bibleExplorerDebug', 'true');
 // or add ?debug=true to URL
 ```
 
 Debug mode provides:
+
 - Enhanced console logging
 - Performance metrics dashboard
 - Error tracking and reporting
@@ -274,23 +304,28 @@ Debug mode provides:
 ## Contributing
 
 ### Code Review Checklist
+
 - [ ] All tests pass
-- [ ] Code follows style guidelines  
+- [ ] Code follows style guidelines
 - [ ] Documentation updated
 - [ ] Performance impact assessed
 - [ ] Accessibility considerations met
 - [ ] Cross-browser testing completed
 
 ### Git Workflow
+
 - Feature branches for new development
 - Descriptive commit messages
 - Squash commits before merging
 - Update documentation with changes
 
 ### Issue Reporting
+
 - Use provided issue templates
 - Include reproduction steps
 - Provide browser/device information
 - Include relevant error messages
 
-This developer guide should help new contributors understand the codebase structure, development workflow, and best practices for maintaining code quality and performance.
+This developer guide should help new contributors understand the codebase
+structure, development workflow, and best practices for maintaining code quality
+and performance.

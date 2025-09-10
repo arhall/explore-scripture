@@ -8,333 +8,318 @@ const fs = require('fs');
 const path = require('path');
 
 class PredictivePreloader {
-    constructor() {
-        this.config = {
-            // User behavior patterns
-            patterns: {
-                // Common navigation sequences
-                sequences: [
-                    ['genesis', 'exodus', 'leviticus'], // Sequential book reading
-                    ['matthew', 'mark', 'luke', 'john'], // Gospel reading
-                    ['romans', '1-corinthians', '2-corinthians'], // Pauline epistles
-                    ['genesis-1', 'genesis-2', 'genesis-3'], // Chapter sequences
-                    ['psalm-23', 'john-3-16', 'romans-8-28'], // Popular verses
-                ],
-                
-                // Time-based patterns (seasonal/liturgical)
-                seasonal: {
-                    christmas: ['matthew-1', 'matthew-2', 'luke-1', 'luke-2', 'isaiah-9'],
-                    easter: ['matthew-27', 'matthew-28', 'mark-15', 'mark-16', 'luke-23', 'luke-24'],
-                    advent: ['isaiah-7', 'isaiah-9', 'micah-5', 'matthew-1', 'luke-1'],
-                    lent: ['matthew-4', 'mark-1', 'luke-4', 'psalm-51', 'joel-2']
-                },
-                
-                // Study patterns
-                topical: {
-                    salvation: ['john-3', 'romans-3', 'romans-6', 'ephesians-2'],
-                    prayer: ['matthew-6', 'luke-11', '1-thessalonians-5', 'philippians-4'],
-                    love: ['1-corinthians-13', '1-john-4', 'john-15', 'romans-8'],
-                    wisdom: ['proverbs-3', 'james-1', 'ecclesiastes-3', 'psalm-119']
-                }
-            },
-            
-            // Preloading strategies
-            strategies: {
-                // Immediate preload (high confidence)
-                immediate: {
-                    priority: 'high',
-                    threshold: 0.8,
-                    maxSize: '500KB',
-                    resources: ['critical-css', 'chapter-data', 'search-index']
-                },
-                
-                // Background preload (medium confidence)
-                background: {
-                    priority: 'low',
-                    threshold: 0.5,
-                    maxSize: '2MB',
-                    resources: ['commentary-data', 'cross-references', 'entity-data']
-                },
-                
-                // On-hover preload (user intent detected)
-                hover: {
-                    priority: 'medium',
-                    delay: 200, // ms
-                    resources: ['page-data', 'images', 'videos']
-                },
-                
-                // Viewport-based preload (visible elements)
-                viewport: {
-                    rootMargin: '50px',
-                    threshold: 0.1,
-                    resources: ['lazy-images', 'chapter-summaries']
-                }
-            }
-        };
-        
-        this.analytics = {
-            predictions: new Map(),
-            accuracy: new Map(),
-            performance: new Map()
-        };
-    }
-    
-    /**
-     * Generate predictive preloading configuration
-     */
-    async generatePreloadConfig() {
-        const config = {
-            // Machine learning model for user behavior prediction
-            mlModel: this.generateMLModel(),
-            
-            // Preload rules based on patterns
-            rules: this.generatePreloadRules(),
-            
-            // Resource prioritization matrix
-            prioritization: this.generatePrioritizationMatrix(),
-            
-            // Performance budgets
-            budgets: this.generatePerformanceBudgets()
-        };
-        
-        // Write configuration
-        const outputPath = path.join(__dirname, '..', 'src', 'assets', 'predictive-preloader.js');
-        await this.writePreloaderScript(config, outputPath);
-        
-        // Generate service worker integration
-        await this.generateServiceWorkerIntegration();
-        
-        return config;
-    }
-    
-    /**
-     * Generate machine learning model for prediction
-     */
-    generateMLModel() {
-        return {
-            // Simplified neural network for browser execution
-            weights: {
-                // Input layer: [current_page, time_on_page, scroll_depth, previous_pages]
-                input: [
-                    [0.3, 0.2, 0.1, 0.4], // Book navigation weight
-                    [0.4, 0.3, 0.2, 0.1], // Chapter navigation weight
-                    [0.2, 0.4, 0.3, 0.1], // Search behavior weight
-                    [0.1, 0.2, 0.3, 0.4]  // Cross-reference weight
-                ],
-                
-                // Hidden layer
-                hidden: [
-                    [0.5, 0.3, 0.2],
-                    [0.3, 0.4, 0.3],
-                    [0.2, 0.3, 0.5]
-                ],
-                
-                // Output layer: prediction confidence
-                output: [0.6, 0.3, 0.1]
-            },
-            
-            // Activation function parameters
-            activation: {
-                type: 'sigmoid',
-                threshold: 0.5
-            },
-            
-            // Learning parameters
-            learning: {
-                rate: 0.01,
-                momentum: 0.9,
-                decay: 0.001
-            }
-        };
-    }
-    
-    /**
-     * Generate preload rules based on patterns
-     */
-    generatePreloadRules() {
-        const rules = [];
-        
-        // Sequential navigation rules
-        this.config.patterns.sequences.forEach((sequence, index) => {
-            for (let i = 0; i < sequence.length - 1; i++) {
-                rules.push({
-                    id: `seq_${index}_${i}`,
-                    trigger: sequence[i],
-                    target: sequence[i + 1],
-                    confidence: 0.7,
-                    strategy: 'background',
-                    resources: ['chapter-data', 'commentary']
-                });
-            }
+  constructor() {
+    this.config = {
+      // User behavior patterns
+      patterns: {
+        // Common navigation sequences
+        sequences: [
+          ['genesis', 'exodus', 'leviticus'], // Sequential book reading
+          ['matthew', 'mark', 'luke', 'john'], // Gospel reading
+          ['romans', '1-corinthians', '2-corinthians'], // Pauline epistles
+          ['genesis-1', 'genesis-2', 'genesis-3'], // Chapter sequences
+          ['psalm-23', 'john-3-16', 'romans-8-28'], // Popular verses
+        ],
+
+        // Time-based patterns (seasonal/liturgical)
+        seasonal: {
+          christmas: ['matthew-1', 'matthew-2', 'luke-1', 'luke-2', 'isaiah-9'],
+          easter: ['matthew-27', 'matthew-28', 'mark-15', 'mark-16', 'luke-23', 'luke-24'],
+          advent: ['isaiah-7', 'isaiah-9', 'micah-5', 'matthew-1', 'luke-1'],
+          lent: ['matthew-4', 'mark-1', 'luke-4', 'psalm-51', 'joel-2'],
+        },
+
+        // Study patterns
+        topical: {
+          salvation: ['john-3', 'romans-3', 'romans-6', 'ephesians-2'],
+          prayer: ['matthew-6', 'luke-11', '1-thessalonians-5', 'philippians-4'],
+          love: ['1-corinthians-13', '1-john-4', 'john-15', 'romans-8'],
+          wisdom: ['proverbs-3', 'james-1', 'ecclesiastes-3', 'psalm-119'],
+        },
+      },
+
+      // Preloading strategies
+      strategies: {
+        // Immediate preload (high confidence)
+        immediate: {
+          priority: 'high',
+          threshold: 0.8,
+          maxSize: '500KB',
+          resources: ['critical-css', 'chapter-data', 'search-index'],
+        },
+
+        // Background preload (medium confidence)
+        background: {
+          priority: 'low',
+          threshold: 0.5,
+          maxSize: '2MB',
+          resources: ['commentary-data', 'cross-references', 'entity-data'],
+        },
+
+        // On-hover preload (user intent detected)
+        hover: {
+          priority: 'medium',
+          delay: 200, // ms
+          resources: ['page-data', 'images', 'videos'],
+        },
+
+        // Viewport-based preload (visible elements)
+        viewport: {
+          rootMargin: '50px',
+          threshold: 0.1,
+          resources: ['lazy-images', 'chapter-summaries'],
+        },
+      },
+    };
+
+    this.analytics = {
+      predictions: new Map(),
+      accuracy: new Map(),
+      performance: new Map(),
+    };
+  }
+
+  /**
+   * Generate predictive preloading configuration
+   */
+  async generatePreloadConfig() {
+    const config = {
+      // Machine learning model for user behavior prediction
+      mlModel: this.generateMLModel(),
+
+      // Preload rules based on patterns
+      rules: this.generatePreloadRules(),
+
+      // Resource prioritization matrix
+      prioritization: this.generatePrioritizationMatrix(),
+
+      // Performance budgets
+      budgets: this.generatePerformanceBudgets(),
+    };
+
+    // Write configuration
+    const outputPath = path.join(__dirname, '..', 'src', 'assets', 'predictive-preloader.js');
+    await this.writePreloaderScript(config, outputPath);
+
+    // Generate service worker integration
+    await this.generateServiceWorkerIntegration();
+
+    return config;
+  }
+
+  /**
+   * Generate machine learning model for prediction
+   */
+  generateMLModel() {
+    return {
+      // Simplified neural network for browser execution
+      weights: {
+        // Input layer: [current_page, time_on_page, scroll_depth, previous_pages]
+        input: [
+          [0.3, 0.2, 0.1, 0.4], // Book navigation weight
+          [0.4, 0.3, 0.2, 0.1], // Chapter navigation weight
+          [0.2, 0.4, 0.3, 0.1], // Search behavior weight
+          [0.1, 0.2, 0.3, 0.4], // Cross-reference weight
+        ],
+
+        // Hidden layer
+        hidden: [
+          [0.5, 0.3, 0.2],
+          [0.3, 0.4, 0.3],
+          [0.2, 0.3, 0.5],
+        ],
+
+        // Output layer: prediction confidence
+        output: [0.6, 0.3, 0.1],
+      },
+
+      // Activation function parameters
+      activation: {
+        type: 'sigmoid',
+        threshold: 0.5,
+      },
+
+      // Learning parameters
+      learning: {
+        rate: 0.01,
+        momentum: 0.9,
+        decay: 0.001,
+      },
+    };
+  }
+
+  /**
+   * Generate preload rules based on patterns
+   */
+  generatePreloadRules() {
+    const rules = [];
+
+    // Sequential navigation rules
+    this.config.patterns.sequences.forEach((sequence, index) => {
+      for (let i = 0; i < sequence.length - 1; i++) {
+        rules.push({
+          id: `seq_${index}_${i}`,
+          trigger: sequence[i],
+          target: sequence[i + 1],
+          confidence: 0.7,
+          strategy: 'background',
+          resources: ['chapter-data', 'commentary'],
         });
-        
-        // Seasonal content rules
-        Object.entries(this.config.patterns.seasonal).forEach(([season, chapters]) => {
-            chapters.forEach((chapter, index) => {
-                if (index < chapters.length - 1) {
-                    rules.push({
-                        id: `seasonal_${season}_${index}`,
-                        trigger: chapter,
-                        target: chapters[index + 1],
-                        confidence: 0.8,
-                        strategy: 'immediate',
-                        seasonal: season,
-                        resources: ['chapter-data', 'cross-references']
-                    });
-                }
-            });
+      }
+    });
+
+    // Seasonal content rules
+    Object.entries(this.config.patterns.seasonal).forEach(([season, chapters]) => {
+      chapters.forEach((chapter, index) => {
+        if (index < chapters.length - 1) {
+          rules.push({
+            id: `seasonal_${season}_${index}`,
+            trigger: chapter,
+            target: chapters[index + 1],
+            confidence: 0.8,
+            strategy: 'immediate',
+            seasonal: season,
+            resources: ['chapter-data', 'cross-references'],
+          });
+        }
+      });
+    });
+
+    // Topical study rules
+    Object.entries(this.config.patterns.topical).forEach(([topic, chapters]) => {
+      chapters.forEach((chapter, index) => {
+        const otherChapters = chapters.filter((_, i) => i !== index);
+        rules.push({
+          id: `topical_${topic}_${index}`,
+          trigger: chapter,
+          targets: otherChapters,
+          confidence: 0.6,
+          strategy: 'background',
+          topic: topic,
+          resources: ['chapter-data', 'commentary', 'cross-references'],
         });
-        
-        // Topical study rules
-        Object.entries(this.config.patterns.topical).forEach(([topic, chapters]) => {
-            chapters.forEach((chapter, index) => {
-                const otherChapters = chapters.filter((_, i) => i !== index);
-                rules.push({
-                    id: `topical_${topic}_${index}`,
-                    trigger: chapter,
-                    targets: otherChapters,
-                    confidence: 0.6,
-                    strategy: 'background',
-                    topic: topic,
-                    resources: ['chapter-data', 'commentary', 'cross-references']
-                });
-            });
-        });
-        
-        // Popular content rules
-        const popularContent = [
-            'john-3-16', 'psalm-23', 'romans-8-28', '1-corinthians-13',
-            'genesis-1', 'matthew-5', 'revelation-21'
-        ];
-        
-        popularContent.forEach(content => {
-            rules.push({
-                id: `popular_${content}`,
-                trigger: 'homepage',
-                target: content,
-                confidence: 0.5,
-                strategy: 'background',
-                resources: ['chapter-data']
-            });
-        });
-        
-        return rules;
-    }
-    
-    /**
-     * Generate resource prioritization matrix
-     */
-    generatePrioritizationMatrix() {
-        return {
-            // Critical path resources (must load first)
-            critical: {
-                weight: 1.0,
-                resources: [
-                    'main-css',
-                    'core-js',
-                    'navigation-data',
-                    'theme-config'
-                ]
-            },
-            
-            // Important resources (load early)
-            important: {
-                weight: 0.8,
-                resources: [
-                    'search-engine',
-                    'chapter-reader',
-                    'book-data',
-                    'category-data'
-                ]
-            },
-            
-            // Enhanced resources (load when bandwidth allows)
-            enhanced: {
-                weight: 0.6,
-                resources: [
-                    'commentary-system',
-                    'cross-references',
-                    'entity-data',
-                    'video-integration'
-                ]
-            },
-            
-            // Optional resources (load last)
-            optional: {
-                weight: 0.4,
-                resources: [
-                    'advanced-features',
-                    'analytics',
-                    'social-sharing',
-                    'print-styles'
-                ]
-            }
-        };
-    }
-    
-    /**
-     * Generate performance budgets
-     */
-    generatePerformanceBudgets() {
-        return {
-            // Network-based budgets
-            network: {
-                '4g': {
-                    totalSize: '2MB',
-                    criticalSize: '500KB',
-                    requestCount: 50,
-                    loadTime: '3s'
-                },
-                '3g': {
-                    totalSize: '1MB',
-                    criticalSize: '300KB',
-                    requestCount: 30,
-                    loadTime: '5s'
-                },
-                '2g': {
-                    totalSize: '500KB',
-                    criticalSize: '150KB',
-                    requestCount: 20,
-                    loadTime: '8s'
-                }
-            },
-            
-            // Device-based budgets
-            device: {
-                desktop: {
-                    memory: '50MB',
-                    cpu: '100ms',
-                    storage: '20MB'
-                },
-                tablet: {
-                    memory: '30MB',
-                    cpu: '200ms',
-                    storage: '15MB'
-                },
-                mobile: {
-                    memory: '20MB',
-                    cpu: '300ms',
-                    storage: '10MB'
-                }
-            },
-            
-            // Time-based budgets
-            timing: {
-                firstByte: '200ms',
-                firstPaint: '1s',
-                firstContentfulPaint: '1.5s',
-                largestContentfulPaint: '2.5s',
-                firstInputDelay: '100ms',
-                cumulativeLayoutShift: '0.1'
-            }
-        };
-    }
-    
-    /**
-     * Write the predictive preloader script
-     */
-    async writePreloaderScript(config, outputPath) {
-        const script = `/**
+      });
+    });
+
+    // Popular content rules
+    const popularContent = [
+      'john-3-16',
+      'psalm-23',
+      'romans-8-28',
+      '1-corinthians-13',
+      'genesis-1',
+      'matthew-5',
+      'revelation-21',
+    ];
+
+    popularContent.forEach(content => {
+      rules.push({
+        id: `popular_${content}`,
+        trigger: 'homepage',
+        target: content,
+        confidence: 0.5,
+        strategy: 'background',
+        resources: ['chapter-data'],
+      });
+    });
+
+    return rules;
+  }
+
+  /**
+   * Generate resource prioritization matrix
+   */
+  generatePrioritizationMatrix() {
+    return {
+      // Critical path resources (must load first)
+      critical: {
+        weight: 1.0,
+        resources: ['main-css', 'core-js', 'navigation-data', 'theme-config'],
+      },
+
+      // Important resources (load early)
+      important: {
+        weight: 0.8,
+        resources: ['search-engine', 'chapter-reader', 'book-data', 'category-data'],
+      },
+
+      // Enhanced resources (load when bandwidth allows)
+      enhanced: {
+        weight: 0.6,
+        resources: ['commentary-system', 'cross-references', 'entity-data', 'video-integration'],
+      },
+
+      // Optional resources (load last)
+      optional: {
+        weight: 0.4,
+        resources: ['advanced-features', 'analytics', 'social-sharing', 'print-styles'],
+      },
+    };
+  }
+
+  /**
+   * Generate performance budgets
+   */
+  generatePerformanceBudgets() {
+    return {
+      // Network-based budgets
+      network: {
+        '4g': {
+          totalSize: '2MB',
+          criticalSize: '500KB',
+          requestCount: 50,
+          loadTime: '3s',
+        },
+        '3g': {
+          totalSize: '1MB',
+          criticalSize: '300KB',
+          requestCount: 30,
+          loadTime: '5s',
+        },
+        '2g': {
+          totalSize: '500KB',
+          criticalSize: '150KB',
+          requestCount: 20,
+          loadTime: '8s',
+        },
+      },
+
+      // Device-based budgets
+      device: {
+        desktop: {
+          memory: '50MB',
+          cpu: '100ms',
+          storage: '20MB',
+        },
+        tablet: {
+          memory: '30MB',
+          cpu: '200ms',
+          storage: '15MB',
+        },
+        mobile: {
+          memory: '20MB',
+          cpu: '300ms',
+          storage: '10MB',
+        },
+      },
+
+      // Time-based budgets
+      timing: {
+        firstByte: '200ms',
+        firstPaint: '1s',
+        firstContentfulPaint: '1.5s',
+        largestContentfulPaint: '2.5s',
+        firstInputDelay: '100ms',
+        cumulativeLayoutShift: '0.1',
+      },
+    };
+  }
+
+  /**
+   * Write the predictive preloader script
+   */
+  async writePreloaderScript(config, outputPath) {
+    const script = `/**
  * Predictive Content Preloader - Client-Side Implementation
  * Auto-generated by predictive-preloader.js
  */
@@ -897,24 +882,24 @@ if (typeof window !== 'undefined') {
 
 export default PredictivePreloader;
 `;
-        
-        fs.writeFileSync(outputPath, script, 'utf8');
+
+    fs.writeFileSync(outputPath, script, 'utf8');
+  }
+
+  /**
+   * Generate service worker integration
+   */
+  async generateServiceWorkerIntegration() {
+    const swPath = path.join(__dirname, '..', 'src', 'sw.js');
+
+    // Read existing service worker
+    let swContent = '';
+    if (fs.existsSync(swPath)) {
+      swContent = fs.readFileSync(swPath, 'utf8');
     }
-    
-    /**
-     * Generate service worker integration
-     */
-    async generateServiceWorkerIntegration() {
-        const swPath = path.join(__dirname, '..', 'src', 'sw.js');
-        
-        // Read existing service worker
-        let swContent = '';
-        if (fs.existsSync(swPath)) {
-            swContent = fs.readFileSync(swPath, 'utf8');
-        }
-        
-        // Add predictive caching logic
-        const predictiveCaching = `
+
+    // Add predictive caching logic
+    const predictiveCaching = `
 // Predictive Caching Integration
 class PredictiveCacheManager {
     constructor() {
@@ -991,19 +976,19 @@ class PredictiveCacheManager {
 
 const predictiveCacheManager = new PredictiveCacheManager();
 `;
-        
-        // Integrate with existing service worker
-        if (!swContent.includes('PredictiveCacheManager')) {
-            // Add predictive caching to existing service worker
-            const updatedContent = swContent.replace(
-                'self.addEventListener(\'fetch\',',
-                `${predictiveCaching}
+
+    // Integrate with existing service worker
+    if (!swContent.includes('PredictiveCacheManager')) {
+      // Add predictive caching to existing service worker
+      const updatedContent = swContent.replace(
+        "self.addEventListener('fetch',",
+        `${predictiveCaching}
 self.addEventListener('fetch',`
-            );
-            
-            fs.writeFileSync(swPath, updatedContent, 'utf8');
-        }
+      );
+
+      fs.writeFileSync(swPath, updatedContent, 'utf8');
     }
+  }
 }
 
 // Export for build integration
@@ -1011,13 +996,14 @@ module.exports = PredictivePreloader;
 
 // Run if called directly
 if (require.main === module) {
-    const preloader = new PredictivePreloader();
-    preloader.generatePreloadConfig()
-        .then(() => {
-            console.log('✅ Predictive preloader configuration generated');
-        })
-        .catch(error => {
-            console.error('❌ Failed to generate predictive preloader:', error);
-            process.exit(1);
-        });
+  const preloader = new PredictivePreloader();
+  preloader
+    .generatePreloadConfig()
+    .then(() => {
+      console.log('✅ Predictive preloader configuration generated');
+    })
+    .catch(error => {
+      console.error('❌ Failed to generate predictive preloader:', error);
+      process.exit(1);
+    });
 }

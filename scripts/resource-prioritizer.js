@@ -1,6 +1,6 @@
 /**
  * Intelligent Resource Prioritization System
- * Dynamically adjusts resource loading priorities based on user behavior, 
+ * Dynamically adjusts resource loading priorities based on user behavior,
  * device capabilities, network conditions, and real-time performance metrics.
  */
 
@@ -8,218 +8,225 @@ const fs = require('fs');
 const path = require('path');
 
 class ResourcePrioritizer {
-    constructor() {
-        this.config = {
-            // Resource categories with base priorities
-            resourceTypes: {
-                'critical-css': {
-                    basePriority: 100,
-                    loadStrategy: 'blocking',
-                    timeout: 5000,
-                    fallback: 'inline-css'
-                },
-                'navigation-js': {
-                    basePriority: 95,
-                    loadStrategy: 'blocking',
-                    timeout: 3000,
-                    fallback: 'basic-navigation'
-                },
-                'chapter-reader': {
-                    basePriority: 80,
-                    loadStrategy: 'lazy',
-                    timeout: 5000,
-                    fallback: 'text-fallback'
-                },
-                'search-engine': {
-                    basePriority: 75,
-                    loadStrategy: 'deferred',
-                    timeout: 8000,
-                    fallback: 'basic-search'
-                },
-                'commentary-system': {
-                    basePriority: 60,
-                    loadStrategy: 'on-demand',
-                    timeout: 10000,
-                    fallback: 'external-links'
-                },
-                'theme-system': {
-                    basePriority: 90,
-                    loadStrategy: 'immediate',
-                    timeout: 2000,
-                    fallback: 'default-theme'
-                },
-                'analytics': {
-                    basePriority: 20,
-                    loadStrategy: 'background',
-                    timeout: 15000,
-                    fallback: 'none'
-                },
-                'social-features': {
-                    basePriority: 30,
-                    loadStrategy: 'background',
-                    timeout: 20000,
-                    fallback: 'none'
-                }
-            },
-            
-            // Priority adjustment factors
-            adjustmentFactors: {
-                // Network-based adjustments
-                network: {
-                    '4g': { multiplier: 1.0, maxConcurrent: 6, chunkSize: '1MB' },
-                    '3g': { multiplier: 0.7, maxConcurrent: 4, chunkSize: '500KB' },
-                    '2g': { multiplier: 0.3, maxConcurrent: 2, chunkSize: '200KB' },
-                    'slow-2g': { multiplier: 0.1, maxConcurrent: 1, chunkSize: '100KB' },
-                    'offline': { multiplier: 0.0, maxConcurrent: 0, chunkSize: '0KB' }
-                },
-                
-                // Device-based adjustments
-                device: {
-                    desktop: { 
-                        multiplier: 1.0, 
-                        memoryLimit: '100MB',
-                        cpuIntensive: true,
-                        parallelLoading: 8
-                    },
-                    tablet: { 
-                        multiplier: 0.8, 
-                        memoryLimit: '60MB',
-                        cpuIntensive: true,
-                        parallelLoading: 6
-                    },
-                    mobile: { 
-                        multiplier: 0.6, 
-                        memoryLimit: '40MB',
-                        cpuIntensive: false,
-                        parallelLoading: 4
-                    },
-                    'low-end': { 
-                        multiplier: 0.3, 
-                        memoryLimit: '20MB',
-                        cpuIntensive: false,
-                        parallelLoading: 2
-                    }
-                },
-                
-                // Usage pattern adjustments
-                usage: {
-                    'first-time': { 
-                        criticalBoost: 1.2,
-                        experienceBoost: 0.8,
-                        guidanceBoost: 1.5
-                    },
-                    'returning': { 
-                        criticalBoost: 1.0,
-                        experienceBoost: 1.1,
-                        guidanceBoost: 0.9
-                    },
-                    'power-user': { 
-                        criticalBoost: 0.9,
-                        experienceBoost: 1.3,
-                        guidanceBoost: 0.7
-                    },
-                    'casual': { 
-                        criticalBoost: 1.1,
-                        experienceBoost: 0.9,
-                        guidanceBoost: 1.0
-                    }
-                },
-                
-                // Time-based adjustments
-                temporal: {
-                    'peak-hours': { multiplier: 0.8, description: '7-9 AM, 7-10 PM' },
-                    'off-hours': { multiplier: 1.2, description: '10 PM - 7 AM' },
-                    'weekend': { multiplier: 1.1, description: 'Saturday-Sunday' },
-                    'holidays': { multiplier: 0.9, description: 'Religious holidays' }
-                }
-            },
-            
-            // Performance budgets by priority level
-            performanceBudgets: {
-                critical: {
-                    loadTime: '1s',
-                    size: '100KB',
-                    requests: 5,
-                    renderBlocking: true
-                },
-                high: {
-                    loadTime: '2s',
-                    size: '300KB',
-                    requests: 10,
-                    renderBlocking: false
-                },
-                medium: {
-                    loadTime: '5s',
-                    size: '800KB',
-                    requests: 20,
-                    renderBlocking: false
-                },
-                low: {
-                    loadTime: '10s',
-                    size: '2MB',
-                    requests: 50,
-                    renderBlocking: false
-                }
-            }
-        };
-        
-        this.analytics = {
-            loadTimes: new Map(),
-            failureRates: new Map(),
-            userPatterns: new Map(),
-            resourceUsage: new Map()
-        };
-        
-        this.currentContext = {
-            network: '4g',
-            device: 'desktop',
-            userType: 'returning',
-            timeContext: 'off-hours',
-            pageType: 'home',
-            batteryLevel: 1.0,
-            memoryPressure: 'normal'
-        };
-    }
-    
-    /**
-     * Generate intelligent resource prioritization system
-     */
-    async generatePrioritizationSystem() {
-        // Create prioritization client script
-        const clientScript = await this.generateClientScript();
-        
-        // Generate resource manifest
-        const manifest = this.generateResourceManifest();
-        
-        // Create performance budgets
-        const budgets = this.generatePerformanceBudgets();
-        
-        // Generate adaptation strategies
-        const strategies = this.generateAdaptationStrategies();
-        
-        // Write client implementation
-        const outputPath = path.join(__dirname, '..', 'src', 'assets', 'resource-prioritizer.js');
-        await this.writeClientScript(clientScript, outputPath);
-        
-        // Write resource manifest
-        const manifestPath = path.join(__dirname, '..', 'src', 'assets', 'data', 'resource-manifest.json');
-        fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2), 'utf8');
-        
-        console.log('✅ Intelligent resource prioritization system generated');
-        
-        return {
-            clientScript,
-            manifest,
-            budgets,
-            strategies
-        };
-    }
-    
-    /**
-     * Generate client-side prioritization script
-     */
-    async generateClientScript() {
-        return `/**
+  constructor() {
+    this.config = {
+      // Resource categories with base priorities
+      resourceTypes: {
+        'critical-css': {
+          basePriority: 100,
+          loadStrategy: 'blocking',
+          timeout: 5000,
+          fallback: 'inline-css',
+        },
+        'navigation-js': {
+          basePriority: 95,
+          loadStrategy: 'blocking',
+          timeout: 3000,
+          fallback: 'basic-navigation',
+        },
+        'chapter-reader': {
+          basePriority: 80,
+          loadStrategy: 'lazy',
+          timeout: 5000,
+          fallback: 'text-fallback',
+        },
+        'search-engine': {
+          basePriority: 75,
+          loadStrategy: 'deferred',
+          timeout: 8000,
+          fallback: 'basic-search',
+        },
+        'commentary-system': {
+          basePriority: 60,
+          loadStrategy: 'on-demand',
+          timeout: 10000,
+          fallback: 'external-links',
+        },
+        'theme-system': {
+          basePriority: 90,
+          loadStrategy: 'immediate',
+          timeout: 2000,
+          fallback: 'default-theme',
+        },
+        analytics: {
+          basePriority: 20,
+          loadStrategy: 'background',
+          timeout: 15000,
+          fallback: 'none',
+        },
+        'social-features': {
+          basePriority: 30,
+          loadStrategy: 'background',
+          timeout: 20000,
+          fallback: 'none',
+        },
+      },
+
+      // Priority adjustment factors
+      adjustmentFactors: {
+        // Network-based adjustments
+        network: {
+          '4g': { multiplier: 1.0, maxConcurrent: 6, chunkSize: '1MB' },
+          '3g': { multiplier: 0.7, maxConcurrent: 4, chunkSize: '500KB' },
+          '2g': { multiplier: 0.3, maxConcurrent: 2, chunkSize: '200KB' },
+          'slow-2g': { multiplier: 0.1, maxConcurrent: 1, chunkSize: '100KB' },
+          offline: { multiplier: 0.0, maxConcurrent: 0, chunkSize: '0KB' },
+        },
+
+        // Device-based adjustments
+        device: {
+          desktop: {
+            multiplier: 1.0,
+            memoryLimit: '100MB',
+            cpuIntensive: true,
+            parallelLoading: 8,
+          },
+          tablet: {
+            multiplier: 0.8,
+            memoryLimit: '60MB',
+            cpuIntensive: true,
+            parallelLoading: 6,
+          },
+          mobile: {
+            multiplier: 0.6,
+            memoryLimit: '40MB',
+            cpuIntensive: false,
+            parallelLoading: 4,
+          },
+          'low-end': {
+            multiplier: 0.3,
+            memoryLimit: '20MB',
+            cpuIntensive: false,
+            parallelLoading: 2,
+          },
+        },
+
+        // Usage pattern adjustments
+        usage: {
+          'first-time': {
+            criticalBoost: 1.2,
+            experienceBoost: 0.8,
+            guidanceBoost: 1.5,
+          },
+          returning: {
+            criticalBoost: 1.0,
+            experienceBoost: 1.1,
+            guidanceBoost: 0.9,
+          },
+          'power-user': {
+            criticalBoost: 0.9,
+            experienceBoost: 1.3,
+            guidanceBoost: 0.7,
+          },
+          casual: {
+            criticalBoost: 1.1,
+            experienceBoost: 0.9,
+            guidanceBoost: 1.0,
+          },
+        },
+
+        // Time-based adjustments
+        temporal: {
+          'peak-hours': { multiplier: 0.8, description: '7-9 AM, 7-10 PM' },
+          'off-hours': { multiplier: 1.2, description: '10 PM - 7 AM' },
+          weekend: { multiplier: 1.1, description: 'Saturday-Sunday' },
+          holidays: { multiplier: 0.9, description: 'Religious holidays' },
+        },
+      },
+
+      // Performance budgets by priority level
+      performanceBudgets: {
+        critical: {
+          loadTime: '1s',
+          size: '100KB',
+          requests: 5,
+          renderBlocking: true,
+        },
+        high: {
+          loadTime: '2s',
+          size: '300KB',
+          requests: 10,
+          renderBlocking: false,
+        },
+        medium: {
+          loadTime: '5s',
+          size: '800KB',
+          requests: 20,
+          renderBlocking: false,
+        },
+        low: {
+          loadTime: '10s',
+          size: '2MB',
+          requests: 50,
+          renderBlocking: false,
+        },
+      },
+    };
+
+    this.analytics = {
+      loadTimes: new Map(),
+      failureRates: new Map(),
+      userPatterns: new Map(),
+      resourceUsage: new Map(),
+    };
+
+    this.currentContext = {
+      network: '4g',
+      device: 'desktop',
+      userType: 'returning',
+      timeContext: 'off-hours',
+      pageType: 'home',
+      batteryLevel: 1.0,
+      memoryPressure: 'normal',
+    };
+  }
+
+  /**
+   * Generate intelligent resource prioritization system
+   */
+  async generatePrioritizationSystem() {
+    // Create prioritization client script
+    const clientScript = await this.generateClientScript();
+
+    // Generate resource manifest
+    const manifest = this.generateResourceManifest();
+
+    // Create performance budgets
+    const budgets = this.generatePerformanceBudgets();
+
+    // Generate adaptation strategies
+    const strategies = this.generateAdaptationStrategies();
+
+    // Write client implementation
+    const outputPath = path.join(__dirname, '..', 'src', 'assets', 'resource-prioritizer.js');
+    await this.writeClientScript(clientScript, outputPath);
+
+    // Write resource manifest
+    const manifestPath = path.join(
+      __dirname,
+      '..',
+      'src',
+      'assets',
+      'data',
+      'resource-manifest.json'
+    );
+    fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2), 'utf8');
+
+    console.log('✅ Intelligent resource prioritization system generated');
+
+    return {
+      clientScript,
+      manifest,
+      budgets,
+      strategies,
+    };
+  }
+
+  /**
+   * Generate client-side prioritization script
+   */
+  async generateClientScript() {
+    return `/**
  * Intelligent Resource Prioritizer - Client Implementation
  * Auto-generated by resource-prioritizer.js
  */
@@ -992,211 +999,211 @@ if (typeof window !== 'undefined') {
 
 export default ResourcePrioritizer;
 `;
+  }
+
+  /**
+   * Generate resource manifest
+   */
+  generateResourceManifest() {
+    return {
+      version: '1.0.0',
+      generatedAt: new Date().toISOString(),
+      resources: {
+        critical: [
+          {
+            id: 'critical-css',
+            url: '/styles.css',
+            type: 'text/css',
+            size: 45120,
+            integrity: 'sha384-...',
+            priority: 100,
+            loadStrategy: 'blocking',
+          },
+          {
+            id: 'navigation-js',
+            url: '/assets/navigation.js',
+            type: 'application/javascript',
+            size: 12800,
+            integrity: 'sha384-...',
+            priority: 95,
+            loadStrategy: 'blocking',
+          },
+        ],
+
+        high: [
+          {
+            id: 'theme-system',
+            url: '/assets/theme-manager.js',
+            type: 'application/javascript',
+            size: 8960,
+            integrity: 'sha384-...',
+            priority: 90,
+            loadStrategy: 'immediate',
+          },
+          {
+            id: 'chapter-reader',
+            url: '/assets/chapter-reader.js',
+            type: 'application/javascript',
+            size: 35840,
+            integrity: 'sha384-...',
+            priority: 80,
+            loadStrategy: 'lazy',
+          },
+        ],
+
+        medium: [
+          {
+            id: 'search-engine',
+            url: '/assets/search-engine.js',
+            type: 'application/javascript',
+            size: 48640,
+            integrity: 'sha384-...',
+            priority: 75,
+            loadStrategy: 'deferred',
+          },
+          {
+            id: 'commentary-system',
+            url: '/assets/commentary-reader.js',
+            type: 'application/javascript',
+            size: 28160,
+            integrity: 'sha384-...',
+            priority: 60,
+            loadStrategy: 'on-demand',
+          },
+        ],
+
+        low: [
+          {
+            id: 'social-features',
+            url: '/assets/social-sharing.js',
+            type: 'application/javascript',
+            size: 15360,
+            integrity: 'sha384-...',
+            priority: 30,
+            loadStrategy: 'background',
+          },
+          {
+            id: 'analytics',
+            url: '/assets/analytics.js',
+            type: 'application/javascript',
+            size: 20480,
+            integrity: 'sha384-...',
+            priority: 20,
+            loadStrategy: 'background',
+          },
+        ],
+      },
+
+      // Adaptive loading rules
+      adaptiveRules: [
+        {
+          condition: 'network.effectiveType === "slow-2g"',
+          action: 'disable-non-critical',
+          priority: 'critical-only',
+        },
+        {
+          condition: 'device.memory < 2',
+          action: 'reduce-concurrent',
+          maxConcurrent: 2,
+        },
+        {
+          condition: 'battery.level < 0.2 && !battery.charging',
+          action: 'defer-background',
+          priority: 'essential-only',
+        },
+      ],
+
+      // Performance budgets
+      budgets: {
+        critical: { size: '150KB', time: '1s' },
+        high: { size: '400KB', time: '2s' },
+        medium: { size: '800KB', time: '5s' },
+        low: { size: '2MB', time: '10s' },
+      },
+    };
+  }
+
+  /**
+   * Generate performance budgets
+   */
+  generatePerformanceBudgets() {
+    return {
+      global: {
+        maxTotalSize: '5MB',
+        maxRequests: 100,
+        maxCriticalPath: '150KB',
+        maxRenderBlockingTime: '1s',
+      },
+
+      byNetworkType: {
+        '4g': { maxSize: '5MB', maxTime: '3s' },
+        '3g': { maxSize: '2MB', maxTime: '5s' },
+        '2g': { maxSize: '1MB', maxTime: '8s' },
+        'slow-2g': { maxSize: '500KB', maxTime: '15s' },
+      },
+
+      byDeviceType: {
+        desktop: { maxMemory: '100MB', maxCPU: '100ms' },
+        tablet: { maxMemory: '60MB', maxCPU: '200ms' },
+        mobile: { maxMemory: '40MB', maxCPU: '300ms' },
+        'low-end': { maxMemory: '20MB', maxCPU: '500ms' },
+      },
+
+      coreWebVitals: {
+        LCP: '2.5s',
+        FID: '100ms',
+        CLS: '0.1',
+      },
+    };
+  }
+
+  /**
+   * Generate adaptation strategies
+   */
+  generateAdaptationStrategies() {
+    return {
+      networkAdaptations: {
+        '4g': 'aggressive-loading',
+        '3g': 'balanced-loading',
+        '2g': 'conservative-loading',
+        'slow-2g': 'minimal-loading',
+      },
+
+      deviceAdaptations: {
+        'low-memory': 'reduce-cache-size',
+        'slow-cpu': 'defer-heavy-computations',
+        'small-screen': 'prioritize-viewport-content',
+        'high-dpi': 'load-high-res-assets',
+      },
+
+      userPatternAdaptations: {
+        'first-time': 'guided-experience',
+        returning: 'optimized-for-performance',
+        'power-user': 'full-feature-set',
+        casual: 'simplified-interface',
+      },
+
+      contextualAdaptations: {
+        'low-battery': 'power-saving-mode',
+        'save-data': 'data-efficient-mode',
+        'peak-hours': 'cdn-optimization',
+        offline: 'cached-content-only',
+      },
+    };
+  }
+
+  /**
+   * Write client script to file
+   */
+  async writeClientScript(script, outputPath) {
+    // Ensure directory exists
+    const dir = path.dirname(outputPath);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
     }
-    
-    /**
-     * Generate resource manifest
-     */
-    generateResourceManifest() {
-        return {
-            version: '1.0.0',
-            generatedAt: new Date().toISOString(),
-            resources: {
-                critical: [
-                    {
-                        id: 'critical-css',
-                        url: '/styles.css',
-                        type: 'text/css',
-                        size: 45120,
-                        integrity: 'sha384-...',
-                        priority: 100,
-                        loadStrategy: 'blocking'
-                    },
-                    {
-                        id: 'navigation-js',
-                        url: '/assets/navigation.js',
-                        type: 'application/javascript',
-                        size: 12800,
-                        integrity: 'sha384-...',
-                        priority: 95,
-                        loadStrategy: 'blocking'
-                    }
-                ],
-                
-                high: [
-                    {
-                        id: 'theme-system',
-                        url: '/assets/theme-manager.js',
-                        type: 'application/javascript',
-                        size: 8960,
-                        integrity: 'sha384-...',
-                        priority: 90,
-                        loadStrategy: 'immediate'
-                    },
-                    {
-                        id: 'chapter-reader',
-                        url: '/assets/chapter-reader.js',
-                        type: 'application/javascript',
-                        size: 35840,
-                        integrity: 'sha384-...',
-                        priority: 80,
-                        loadStrategy: 'lazy'
-                    }
-                ],
-                
-                medium: [
-                    {
-                        id: 'search-engine',
-                        url: '/assets/search-engine.js',
-                        type: 'application/javascript',
-                        size: 48640,
-                        integrity: 'sha384-...',
-                        priority: 75,
-                        loadStrategy: 'deferred'
-                    },
-                    {
-                        id: 'commentary-system',
-                        url: '/assets/commentary-reader.js',
-                        type: 'application/javascript',
-                        size: 28160,
-                        integrity: 'sha384-...',
-                        priority: 60,
-                        loadStrategy: 'on-demand'
-                    }
-                ],
-                
-                low: [
-                    {
-                        id: 'social-features',
-                        url: '/assets/social-sharing.js',
-                        type: 'application/javascript',
-                        size: 15360,
-                        integrity: 'sha384-...',
-                        priority: 30,
-                        loadStrategy: 'background'
-                    },
-                    {
-                        id: 'analytics',
-                        url: '/assets/analytics.js',
-                        type: 'application/javascript',
-                        size: 20480,
-                        integrity: 'sha384-...',
-                        priority: 20,
-                        loadStrategy: 'background'
-                    }
-                ]
-            },
-            
-            // Adaptive loading rules
-            adaptiveRules: [
-                {
-                    condition: 'network.effectiveType === "slow-2g"',
-                    action: 'disable-non-critical',
-                    priority: 'critical-only'
-                },
-                {
-                    condition: 'device.memory < 2',
-                    action: 'reduce-concurrent',
-                    maxConcurrent: 2
-                },
-                {
-                    condition: 'battery.level < 0.2 && !battery.charging',
-                    action: 'defer-background',
-                    priority: 'essential-only'
-                }
-            ],
-            
-            // Performance budgets
-            budgets: {
-                critical: { size: '150KB', time: '1s' },
-                high: { size: '400KB', time: '2s' },
-                medium: { size: '800KB', time: '5s' },
-                low: { size: '2MB', time: '10s' }
-            }
-        };
-    }
-    
-    /**
-     * Generate performance budgets
-     */
-    generatePerformanceBudgets() {
-        return {
-            global: {
-                maxTotalSize: '5MB',
-                maxRequests: 100,
-                maxCriticalPath: '150KB',
-                maxRenderBlockingTime: '1s'
-            },
-            
-            byNetworkType: {
-                '4g': { maxSize: '5MB', maxTime: '3s' },
-                '3g': { maxSize: '2MB', maxTime: '5s' },
-                '2g': { maxSize: '1MB', maxTime: '8s' },
-                'slow-2g': { maxSize: '500KB', maxTime: '15s' }
-            },
-            
-            byDeviceType: {
-                desktop: { maxMemory: '100MB', maxCPU: '100ms' },
-                tablet: { maxMemory: '60MB', maxCPU: '200ms' },
-                mobile: { maxMemory: '40MB', maxCPU: '300ms' },
-                'low-end': { maxMemory: '20MB', maxCPU: '500ms' }
-            },
-            
-            coreWebVitals: {
-                LCP: '2.5s',
-                FID: '100ms',
-                CLS: '0.1'
-            }
-        };
-    }
-    
-    /**
-     * Generate adaptation strategies
-     */
-    generateAdaptationStrategies() {
-        return {
-            networkAdaptations: {
-                '4g': 'aggressive-loading',
-                '3g': 'balanced-loading', 
-                '2g': 'conservative-loading',
-                'slow-2g': 'minimal-loading'
-            },
-            
-            deviceAdaptations: {
-                'low-memory': 'reduce-cache-size',
-                'slow-cpu': 'defer-heavy-computations',
-                'small-screen': 'prioritize-viewport-content',
-                'high-dpi': 'load-high-res-assets'
-            },
-            
-            userPatternAdaptations: {
-                'first-time': 'guided-experience',
-                'returning': 'optimized-for-performance',
-                'power-user': 'full-feature-set',
-                'casual': 'simplified-interface'
-            },
-            
-            contextualAdaptations: {
-                'low-battery': 'power-saving-mode',
-                'save-data': 'data-efficient-mode',
-                'peak-hours': 'cdn-optimization',
-                'offline': 'cached-content-only'
-            }
-        };
-    }
-    
-    /**
-     * Write client script to file
-     */
-    async writeClientScript(script, outputPath) {
-        // Ensure directory exists
-        const dir = path.dirname(outputPath);
-        if (!fs.existsSync(dir)) {
-            fs.mkdirSync(dir, { recursive: true });
-        }
-        
-        fs.writeFileSync(outputPath, script, 'utf8');
-    }
+
+    fs.writeFileSync(outputPath, script, 'utf8');
+  }
 }
 
 // Export for build integration
@@ -1204,13 +1211,14 @@ module.exports = ResourcePrioritizer;
 
 // Run if called directly
 if (require.main === module) {
-    const prioritizer = new ResourcePrioritizer();
-    prioritizer.generatePrioritizationSystem()
-        .then(() => {
-            console.log('✅ Intelligent resource prioritization system generated');
-        })
-        .catch(error => {
-            console.error('❌ Failed to generate resource prioritization system:', error);
-            process.exit(1);
-        });
+  const prioritizer = new ResourcePrioritizer();
+  prioritizer
+    .generatePrioritizationSystem()
+    .then(() => {
+      console.log('✅ Intelligent resource prioritization system generated');
+    })
+    .catch(error => {
+      console.error('❌ Failed to generate resource prioritization system:', error);
+      process.exit(1);
+    });
 }

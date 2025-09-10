@@ -46,10 +46,7 @@
     },
     {
       "section": "Job 32–37 (Elihu’s Contribution)",
-      "entries": [
-        "Elihu son of Barakel the Buzite, of the family of Ram",
-        "Elihu’s four speeches"
-      ]
+      "entries": ["Elihu son of Barakel the Buzite, of the family of Ram", "Elihu’s four speeches"]
     },
     {
       "section": "Job 38–41 (The Divine Cross-Examination)",
@@ -83,27 +80,20 @@
     {
       "name": "Job of Uz",
       "type": "person",
-      "references": [
-        "Job 1–2; 29–31; 42:7–17"
-      ],
+      "references": ["Job 1–2; 29–31; 42:7–17"],
       "blurb": "Blameless and upright, Job fears God and turns from evil. His piety is domestic (regular intercession for his children) and public (justice at the gate). His agony tests whether righteousness can stand without reward.",
       "relations": {
         "wife": "Unnamed",
         "children": "7 sons, 3 daughters"
       },
       "category": "narrative",
-      "cross_references": [
-        "Ezekiel 14:14",
-        "James 5:11"
-      ],
+      "cross_references": ["Ezekiel 14:14", "James 5:11"],
       "id": "p.job-of-uz--10ab66c9"
     },
     {
       "name": "The LORD (YHWH)",
       "type": "divine",
-      "references": [
-        "Job 1–2; 38–42"
-      ],
+      "references": ["Job 1–2; 38–42"],
       "blurb": "Covenant God who permits testing yet sets boundaries; finally answers Job from the whirlwind, giving vision rather than a syllogism—wisdom as trust in the Maker’s governance.",
       "category": "theology",
       "id": "d.the-lord.yhwh--9df0e557"
@@ -111,22 +101,16 @@
     {
       "name": "The Satan (the Accuser)",
       "type": "figure",
-      "references": [
-        "Job 1:6–12; 2:1–7"
-      ],
+      "references": ["Job 1:6–12; 2:1–7"],
       "blurb": "Court adversary who questions the integrity of piety apart from prosperity—his reach is real but leashed (‘only…’).",
-      "aka": [
-        "the Accuser"
-      ],
+      "aka": ["the Accuser"],
       "category": "theology",
       "id": "f.the-satan.the-accuser--c1b3251f"
     },
     {
       "name": "Sons of God (heavenly council)",
       "type": "group",
-      "references": [
-        "Job 1:6; 2:1; 38:7"
-      ],
+      "references": ["Job 1:6; 2:1; 38:7"],
       "blurb": "Heavenly court where angelic beings present themselves; creation and governance are pictured as council work under YHWH’s sovereignty.",
       "category": "theology",
       "id": "g.sons-of-god.heavenly-council--5b46f7b6"
@@ -134,22 +118,16 @@
     {
       "name": "Land of Uz",
       "type": "entity",
-      "references": [
-        "Job 1:1"
-      ],
+      "references": ["Job 1:1"],
       "blurb": "Liminal territory likely east/southeast of Israel (cf. Edom/Aram traditions); wisdom rises from the margins.",
       "category": "place",
-      "cross_references": [
-        "Lamentations 4:21"
-      ],
+      "cross_references": ["Lamentations 4:21"],
       "id": "e.land-of-uz--fb62932a"
     },
     {
       "name": "Job’s household inventory (initial prosperity)",
       "type": "entity",
-      "references": [
-        "Job 1:2–3"
-      ],
+      "references": ["Job 1:2–3"],
       "blurb": "Seven sons, three daughters; 7,000 sheep, 3,000 camels, 500 yoke of oxen, 500 female donkeys, and very many servants—greatest of the people of the east.",
       "category": "record",
       "count": 1,
@@ -159,9 +137,7 @@
     {
       "name": "Family feasting cycle & Job’s priestly intercession",
       "type": "entity",
-      "references": [
-        "Job 1:4–5"
-      ],
+      "references": ["Job 1:4–5"],
       "blurb": "Sons host rotating banquets; Job rises early to offer burnt offerings ‘perhaps my children have sinned’—intercession anchors festivity.",
       "category": "worship",
       "id": "e.family-feasting-cycle-jobs-priestly-intercession--e49fa618"
@@ -169,9 +145,7 @@
     {
       "name": "Sabean raiders",
       "type": "group",
-      "references": [
-        "Job 1:15"
-      ],
+      "references": ["Job 1:15"],
       "blurb": "Southern marauders who seize oxen and donkeys and kill servants—first human blow in Job’s cascade of loss.",
       "category": "narrative",
       "id": "g.sabean-raiders--10a86d1d"
@@ -179,9 +153,7 @@
     {
       "name": "Fire of God (lightning)",
       "type": "entity",
-      "references": [
-        "Job 1:16"
-      ],
+      "references": ["Job 1:16"],
       "blurb": "Heaven-sent calamity that consumes sheep and servants—mystery of secondary causes under divine leash.",
       "category": "theology",
       "id": "e.fire-of-god.lightning--870dece3"
@@ -189,9 +161,7 @@
     {
       "name": "Chaldean raiding bands",
       "type": "group",
-      "references": [
-        "Job 1:17"
-      ],
+      "references": ["Job 1:17"],
       "blurb": "Northern/mesopotamian raiders in three companies who carry off camels—international reach of Job’s testing.",
       "category": "narrative",
       "id": "g.chaldean-raiding-bands--f972a58f"
@@ -199,9 +169,7 @@
     {
       "name": "Great wind from the wilderness",
       "type": "entity",
-      "references": [
-        "Job 1:18–19"
-      ],
+      "references": ["Job 1:18–19"],
       "blurb": "Windstorm collapses the eldest brother’s house, killing all ten children—creation’s wildness not absent from God’s world.",
       "category": "theology",
       "id": "e.great-wind-from-the-wilderness--643d6ac3"
@@ -209,9 +177,7 @@
     {
       "name": "Job’s worship in loss (‘YHWH gave…’)",
       "type": "entity",
-      "references": [
-        "Job 1:20–22"
-      ],
+      "references": ["Job 1:20–22"],
       "blurb": "Tear, shave, fall, worship—doxology through dust. Confession: ‘Blessed be the Name of YHWH.’ No charge of wrong.",
       "category": "spirituality",
       "id": "e.jobs-worship-in-loss.yhwh-gave--883078e4"
@@ -219,9 +185,7 @@
     {
       "name": "‘Skin for skin’ and the boils",
       "type": "entity",
-      "references": [
-        "Job 2:4–8"
-      ],
+      "references": ["Job 2:4–8"],
       "blurb": "The Accuser claims self-preservation rules the heart; loathsome sores strike Job from foot to crown. He sits among ashes scraping with a potsherd.",
       "category": "narrative",
       "id": "e.skin-for-skin-and-the-boils--bfb5d274"
@@ -229,9 +193,7 @@
     {
       "name": "Job’s wife",
       "type": "person",
-      "references": [
-        "Job 2:9–10"
-      ],
+      "references": ["Job 2:9–10"],
       "blurb": "Suffering partner who voices a terrible counsel—‘curse God and die’—thereby foregrounding Job’s persevering fear of God.",
       "category": "narrative",
       "id": "p.jobs-wife--3a299a5e"
@@ -239,9 +201,7 @@
     {
       "name": "Eliphaz the Temanite",
       "type": "person",
-      "references": [
-        "Job 2:11; 4–5; 15; 22"
-      ],
+      "references": ["Job 2:11; 4–5; 15; 22"],
       "blurb": "Edomite sage; emphasizes retributive order and mystical insight (‘a word stealthily came to me’). His wisdom is often true but misapplied—he weaponizes proverbs against a sufferer.",
       "category": "wisdom",
       "id": "p.eliphaz-the-temanite--2ba81d1d"
@@ -249,9 +209,7 @@
     {
       "name": "Bildad the Shuhite",
       "type": "person",
-      "references": [
-        "Job 2:11; 8; 18; 25"
-      ],
+      "references": ["Job 2:11; 8; 18; 25"],
       "blurb": "Traditionalist who leans on ancestral sayings; elevates divine justice but shrinks God’s compassion. His final speech is extremely brief—argument exhausted before truth.",
       "category": "wisdom",
       "id": "p.bildad-the-shuhite--2f451710"
@@ -259,9 +217,7 @@
     {
       "name": "Zophar the Naamathite",
       "type": "person",
-      "references": [
-        "Job 2:11; 11; 20"
-      ],
+      "references": ["Job 2:11; 11; 20"],
       "blurb": "Moral absolutist; impatient with nuance; insists Job’s guilt is less punished than deserved. Zeal without knowledge.",
       "category": "wisdom",
       "id": "p.zophar-the-naamathite--5d7e3529"
@@ -269,9 +225,7 @@
     {
       "name": "Seven days and nights of silent sitting",
       "type": "entity",
-      "references": [
-        "Job 2:13"
-      ],
+      "references": ["Job 2:13"],
       "blurb": "True beginning of comfort—presence without words; the best counsel they will give is before they speak.",
       "category": "spirituality",
       "count": 7,
@@ -281,9 +235,7 @@
     {
       "name": "Job’s curse of his day",
       "type": "entity",
-      "references": [
-        "Job 3"
-      ],
+      "references": ["Job 3"],
       "blurb": "Lament erupts not against God’s existence but against his own birthday—biblical permission to bring unvarnished pain to God.",
       "category": "spirituality",
       "id": "e.jobs-curse-of-his-day--89cc2582"
@@ -291,9 +243,7 @@
     {
       "name": "Job longs for an umpire/mediator",
       "type": "entity",
-      "references": [
-        "Job 9:32–35"
-      ],
+      "references": ["Job 9:32–35"],
       "blurb": "Cries for a daysman to lay a hand on both God and man—seed of the mediator hope that later theology will harvest.",
       "category": "theology",
       "id": "e.job-longs-for-an-umpire-mediator--23052589"
@@ -301,9 +251,7 @@
     {
       "name": "‘My witness is in heaven’",
       "type": "entity",
-      "references": [
-        "Job 16:19–21"
-      ],
+      "references": ["Job 16:19–21"],
       "blurb": "From the ash heap Job imagines an advocate—heaven holds a testimony for the wronged.",
       "category": "theology",
       "id": "e.my-witness-is-in-heaven--3c6b8772"
@@ -311,9 +259,7 @@
     {
       "name": "‘I know that my Redeemer lives’",
       "type": "entity",
-      "references": [
-        "Job 19:25–27"
-      ],
+      "references": ["Job 19:25–27"],
       "blurb": "Go’el language (kinsman-redeemer) migrates from land/family law to eschatological hope—vision beyond the skin and the grave.",
       "category": "theology",
       "id": "e.i-know-that-my-redeemer-lives--567a58f5"
@@ -321,9 +267,7 @@
     {
       "name": "Wisdom hymn (‘Where can wisdom be found?’)",
       "type": "entity",
-      "references": [
-        "Job 28"
-      ],
+      "references": ["Job 28"],
       "blurb": "Mining imagery contrasts human ingenuity with wisdom’s hiddenness; ‘the fear of the LORD—that is wisdom.’",
       "category": "wisdom",
       "id": "e.wisdom-hymn.where-can-wisdom-be-found--606ea35d"
@@ -331,9 +275,7 @@
     {
       "name": "Job’s oath of clearance (integrity code)",
       "type": "entity",
-      "references": [
-        "Job 31"
-      ],
+      "references": ["Job 31"],
       "blurb": "A counter-liturgy of righteousness: covenant with eyes, justice to servants, care for poor, refusal of greed and idolatry—an ethic God later vindicates.",
       "category": "ethics",
       "id": "e.jobs-oath-of-clearance.integrity-code--86fdf723"
@@ -341,9 +283,7 @@
     {
       "name": "Eliphaz’s first speech & Job’s reply",
       "type": "entity",
-      "references": [
-        "Job 4–7"
-      ],
+      "references": ["Job 4–7"],
       "blurb": "Eliphaz argues suffering reveals secret sin; Job counters with honesty about despair and the asymmetry between man and God.",
       "category": "wisdom",
       "id": "e.eliphazs-first-speech-jobs-reply--7476540c"
@@ -351,9 +291,7 @@
     {
       "name": "Bildad’s first speech & Job’s reply",
       "type": "entity",
-      "references": [
-        "Job 8–10"
-      ],
+      "references": ["Job 8–10"],
       "blurb": "Bildad trusts the sayings of fathers; Job longs for a mediator and protests God’s overwhelming might.",
       "category": "wisdom",
       "id": "e.bildads-first-speech-jobs-reply--e30366e6"
@@ -361,9 +299,7 @@
     {
       "name": "Zophar’s first speech & Job’s reply",
       "type": "entity",
-      "references": [
-        "Job 11–14"
-      ],
+      "references": ["Job 11–14"],
       "blurb": "Zophar presumes hidden guilt; Job insists on speaking to the Almighty even at risk to himself.",
       "category": "wisdom",
       "id": "e.zophars-first-speech-jobs-reply--9d0e8017"
@@ -371,9 +307,7 @@
     {
       "name": "Eliphaz’s second; Bildad’s second; Zophar’s second",
       "type": "entity",
-      "references": [
-        "Job 15–21"
-      ],
+      "references": ["Job 15–21"],
       "blurb": "Friends double down on retribution; Job observes the prosperity of the wicked and the pain of the innocent.",
       "category": "wisdom",
       "id": "e.eliphazs-second-bildads-second-zophars-second--07d81b46"
@@ -381,9 +315,7 @@
     {
       "name": "Eliphaz’s third; Bildad’s third; Zophar silent",
       "type": "entity",
-      "references": [
-        "Job 22–27"
-      ],
+      "references": ["Job 22–27"],
       "blurb": "Argument thins; pious clichés cannot carry the freight of the ash heap.",
       "category": "wisdom",
       "id": "e.eliphazs-third-bildads-third-zophar-silent--29356711"
@@ -391,9 +323,7 @@
     {
       "name": "Elihu son of Barakel the Buzite, of the family of Ram",
       "type": "person",
-      "references": [
-        "Job 32–37"
-      ],
+      "references": ["Job 32–37"],
       "blurb": "Young, angry, and nuanced—he rebukes both Job and the friends; emphasizes pedagogic suffering and God’s transcendence communicated through creation, dreams, and pain.",
       "category": "wisdom",
       "id": "p.elihu-son-of-barakel-the-buzite-of-the-family-of-ram--bb49309f"
@@ -401,9 +331,7 @@
     {
       "name": "Elihu’s four speeches",
       "type": "entity",
-      "references": [
-        "Job 32:6–37:24"
-      ],
+      "references": ["Job 32:6–37:24"],
       "blurb": "1) Human limitation and inspiration; 2) God’s justice beyond our sight; 3) Warning against rebellious talk; 4) Storm theophany prelude—‘God is clothed with awesome majesty.’",
       "category": "wisdom",
       "id": "e.elihus-four-speeches--8e54ef30"
@@ -411,9 +339,7 @@
     {
       "name": "Whirlwind theophany",
       "type": "entity",
-      "references": [
-        "Job 38:1; 40:6"
-      ],
+      "references": ["Job 38:1; 40:6"],
       "blurb": "God answers not with a syllogism but with a storm—questioning that heals vision; awe becomes epistemology.",
       "category": "theophany",
       "id": "e.whirlwind-theophany--2f87395e"
@@ -421,9 +347,7 @@
     {
       "name": "Cosmic tour: sea, dawn, storehouses of snow and hail",
       "type": "entity",
-      "references": [
-        "Job 38:8–23"
-      ],
+      "references": ["Job 38:8–23"],
       "blurb": "Creation as ordered wildness—boundaries for sea and seasons; meteorology as catechesis.",
       "category": "theology",
       "id": "e.cosmic-tour-sea-dawn-storehouses-of-snow-and-hail--6b61a402"
@@ -431,9 +355,7 @@
     {
       "name": "Constellations (Pleiades, Orion, Mazzaroth, Bear)",
       "type": "entity",
-      "references": [
-        "Job 38:31–33"
-      ],
+      "references": ["Job 38:31–33"],
       "blurb": "Stars under leash—astral glory serves the Lord of hosts.",
       "category": "theology",
       "id": "e.constellations.pleiades-orion-mazzaroth-bear--1ce5265f"
@@ -441,9 +363,7 @@
     {
       "name": "Mountain goats, deer, wild donkey, wild ox, ostrich",
       "type": "entity",
-      "references": [
-        "Job 39:1–18"
-      ],
+      "references": ["Job 39:1–18"],
       "blurb": "Untamable creatures witness to God’s delight in freedom and surprise—wisdom refuses reductionism.",
       "category": "theology",
       "id": "e.mountain-goats-deer-wild-donkey-wild-ox-ostrich--9027f066"
@@ -451,9 +371,7 @@
     {
       "name": "War horse, hawk, eagle",
       "type": "entity",
-      "references": [
-        "Job 39:19–30"
-      ],
+      "references": ["Job 39:19–30"],
       "blurb": "Power and predation exist under providence—God’s world is not domesticated by our comfort.",
       "category": "theology",
       "id": "e.war-horse-hawk-eagle--94744d4c"
@@ -461,9 +379,7 @@
     {
       "name": "Behemoth",
       "type": "entity",
-      "references": [
-        "Job 40:15–24"
-      ],
+      "references": ["Job 40:15–24"],
       "blurb": "Primal strength that only its Maker can approach—symbol of creaturely might; debated identity (hippo? mythic beast?).",
       "category": "theology",
       "id": "e.behemoth--3be3453c"
@@ -471,9 +387,7 @@
     {
       "name": "Leviathan",
       "type": "entity",
-      "references": [
-        "Job 41"
-      ],
+      "references": ["Job 41"],
       "blurb": "Sea-dragon of terrifying ferocity—no human can leash him; God alone plays with Leviathan. Evil’s chaos is not ultimate.",
       "category": "theology",
       "id": "e.leviathan--380c58dd"
@@ -481,9 +395,7 @@
     {
       "name": "Job humbled: hand on mouth",
       "type": "entity",
-      "references": [
-        "Job 40:3–5"
-      ],
+      "references": ["Job 40:3–5"],
       "blurb": "Silence as wisdom’s gateway—repentance without self-hatred, awe without annihilation.",
       "category": "spirituality",
       "id": "e.job-humbled-hand-on-mouth--c2fe53fe"
@@ -491,9 +403,7 @@
     {
       "name": "Job’s final confession (‘I had heard… now my eye sees’)",
       "type": "entity",
-      "references": [
-        "Job 42:1–6"
-      ],
+      "references": ["Job 42:1–6"],
       "blurb": "Knowledge becomes encounter—dust and ashes name finitude embraced before glory.",
       "category": "spirituality",
       "id": "e.jobs-final-confession.i-had-heard-now-my-eye-sees--f38c4b41"
@@ -501,9 +411,7 @@
     {
       "name": "YHWH’s verdict on the friends",
       "type": "entity",
-      "references": [
-        "Job 42:7"
-      ],
+      "references": ["Job 42:7"],
       "blurb": "God rebukes Eliphaz and his companions: ‘you have not spoken of me what is right, as my servant Job has.’ Orthodoxy without empathy misrepresents God.",
       "category": "theology",
       "id": "e.yhwhs-verdict-on-the-friends--41d3b10c"
@@ -511,9 +419,7 @@
     {
       "name": "Atoning sacrifices offered via Job’s priesthood",
       "type": "entity",
-      "references": [
-        "Job 42:8–9"
-      ],
+      "references": ["Job 42:8–9"],
       "blurb": "Friends bring bulls and rams; Job prays for them—intercession restores community.",
       "category": "worship",
       "id": "e.atoning-sacrifices-offered-via-jobs-priesthood--f2b2d352"
@@ -521,9 +427,7 @@
     {
       "name": "Restoration double portion (livestock)",
       "type": "entity",
-      "references": [
-        "Job 42:10–12"
-      ],
+      "references": ["Job 42:10–12"],
       "blurb": "Sheep 14,000; camels 6,000; oxen 1,000 yoke; female donkeys 1,000—God’s generosity answers loss yet does not erase grief.",
       "category": "record",
       "id": "e.restoration-double-portion.livestock--fb520fb2"
@@ -531,9 +435,7 @@
     {
       "name": "Job’s daughters: Jemimah, Keziah, Keren-happuch",
       "type": "group",
-      "references": [
-        "Job 42:13–15"
-      ],
+      "references": ["Job 42:13–15"],
       "blurb": "Named for beauty and blessing—inheritance granted with their brothers, subverting norms; Keren-happuch (‘horn of eye-shadow’) hints at adornment and dignity.",
       "category": "narrative",
       "count": 3,
@@ -543,9 +445,7 @@
     {
       "name": "Job’s sons (after restoration)",
       "type": "group",
-      "references": [
-        "Job 42:13"
-      ],
+      "references": ["Job 42:13"],
       "blurb": "Seven sons—number of completeness resumes; the text preserves daughters’ names as a theological signal.",
       "category": "record",
       "count": 7,
@@ -555,9 +455,7 @@
     {
       "name": "Relatives and acquaintances who had known him before",
       "type": "group",
-      "references": [
-        "Job 42:11"
-      ],
+      "references": ["Job 42:11"],
       "blurb": "They eat with him, comfort him, and each gives a piece of silver and a ring of gold—community repairs the social fabric of suffering.",
       "category": "narrative",
       "id": "g.relatives-and-acquaintances-who-had-known-him-before--ea8eea6b"
@@ -565,9 +463,7 @@
     {
       "name": "Job’s lifespan and legacy",
       "type": "entity",
-      "references": [
-        "Job 42:16–17"
-      ],
+      "references": ["Job 42:16–17"],
       "blurb": "Lives 140 more years; sees four generations—longevity as a sign of peace, not payment. He dies ‘old and full of days.’",
       "category": "record",
       "count": 140,

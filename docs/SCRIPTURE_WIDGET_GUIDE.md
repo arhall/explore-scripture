@@ -1,11 +1,16 @@
 # Scripture Widget Implementation Guide
 
 ## Overview
-The Scripture Widget provides an interactive way to display Bible verses directly within chapter summaries and study content. Users can hover (desktop) or tap (mobile) on Scripture references to view the full text without leaving the page.
+
+The Scripture Widget provides an interactive way to display Bible verses
+directly within chapter summaries and study content. Users can hover (desktop)
+or tap (mobile) on Scripture references to view the full text without leaving
+the page.
 
 ## Features
 
 ### ✅ Core Functionality
+
 - **Hover/Tap Display**: Desktop hover and mobile tap support
 - **Configurable Translations**: ESV, NIV, NLT, NKJV, NASB, AMPC
 - **Responsive Design**: Optimized for both desktop and mobile
@@ -15,6 +20,7 @@ The Scripture Widget provides an interactive way to display Bible verses directl
 - **Accessibility**: Keyboard navigation and screen reader support
 
 ### 🎨 Visual Design
+
 - **Clean Interface**: Minimal, non-intrusive design
 - **Smooth Animations**: Subtle transitions and hover effects
 - **Mobile-First**: Bottom sheet on mobile, tooltip on desktop
@@ -41,22 +47,26 @@ Import the Scripture macros in your template:
 ```
 
 #### Simple Reference
+
 ```njk
 {{ scripture("John 3:16") }}
 {{ scripture("Romans 8:28", "All things work together for good") }}
 ```
 
 #### Inline Reference
+
 ```njk
 The Bible teaches us that {{ scriptureInline("John 3:16", "God so loved the world") }} and this demonstrates His love.
 ```
 
 #### Block Quote
+
 ```njk
 {{ scriptureBlock("Psalm 23:1", "The Lord is my shepherd, I shall not want.") }}
 ```
 
 #### Gospel Connection
+
 ```njk
 {{ gospelConnection("Genesis 3:15", "This first promise of redemption points to Christ's victory over Satan", "Romans 16:20") }}
 ```
@@ -64,6 +74,7 @@ The Bible teaches us that {{ scriptureInline("John 3:16", "God so loved the worl
 ### 3. Advanced Usage
 
 #### Scripture List
+
 ```njk
 {% from "macros/scripture.njk" import scriptureList %}
 
@@ -75,6 +86,7 @@ The Bible teaches us that {{ scriptureInline("John 3:16", "God so loved the worl
 ```
 
 #### Cross References
+
 ```njk
 {% from "macros/scripture.njk" import crossReference %}
 
@@ -86,25 +98,28 @@ The Bible teaches us that {{ scriptureInline("John 3:16", "God so loved the worl
 ```
 
 #### Theological Theme
+
 ```njk
 {% from "macros/scripture.njk" import theologicalTheme %}
 
-{{ theologicalTheme("Justification by Faith", 
-  "We are declared righteous by God through faith alone, not by works", 
+{{ theologicalTheme("Justification by Faith",
+  "We are declared righteous by God through faith alone, not by works",
   ["Romans 3:28", "Ephesians 2:8-9", "Galatians 2:16"]) }}
 ```
 
 ## API Configuration
 
 ### Supported Translations
+
 - **ESV**: English Standard Version
-- **NIV**: New International Version  
+- **NIV**: New International Version
 - **NLT**: New Living Translation
 - **NKJV**: New King James Version
 - **NASB**: New American Standard Bible
 - **AMPC**: Amplified Bible Classic
 
 ### API Sources
+
 1. **Bible API** (bible-api.com) - Primary source
 2. **API.Bible** - Secondary source (requires API key)
 3. **Fallback Data** - Local common verses for offline/error scenarios
@@ -112,16 +127,19 @@ The Bible teaches us that {{ scriptureInline("John 3:16", "God so loved the worl
 ## User Experience
 
 ### Desktop Behavior
+
 - **Hover Trigger**: 300ms delay to prevent accidental activation
 - **Tooltip Positioning**: Smart positioning to stay within viewport
 - **Close Options**: Click close button or mouse leave after delay
 
 ### Mobile Behavior
+
 - **Tap Activation**: Immediate response to touch
 - **Bottom Sheet**: Slides up from bottom of screen
 - **Touch Targets**: Optimized for finger-friendly interaction
 
 ### Translation Selector
+
 - **Location**: Added to navigation bar
 - **Persistence**: User preference saved in localStorage
 - **Cache Invalidation**: Clears cache when translation changes
@@ -139,31 +157,31 @@ layout: base.njk
 
 <div class="chapter-study">
   <h1>Romans 8: Life in the Spirit</h1>
-  
+
   <div class="chapter-overview">
     <p>
-      Romans 8 presents the glorious reality of life in the Holy Spirit for those 
-      who are in Christ Jesus. Paul begins by declaring that there is 
-      {{ scripture("Romans 8:1", "no condemnation for those who are in Christ Jesus") }}, 
-      and goes on to describe the Spirit-led life that is characterized by freedom, 
+      Romans 8 presents the glorious reality of life in the Holy Spirit for those
+      who are in Christ Jesus. Paul begins by declaring that there is
+      {{ scripture("Romans 8:1", "no condemnation for those who are in Christ Jesus") }},
+      and goes on to describe the Spirit-led life that is characterized by freedom,
       adoption, hope, and ultimate glorification.
     </p>
   </div>
 
   <div class="main-themes">
-    {{ theologicalTheme("No Condemnation", 
-      "Believers are free from the condemning power of sin and death", 
+    {{ theologicalTheme("No Condemnation",
+      "Believers are free from the condemning power of sin and death",
       ["Romans 8:1", "Romans 5:1", "John 5:24"]) }}
 
-    {{ gospelConnection("Romans 8:15", 
+    {{ gospelConnection("Romans 8:15",
       "The Spirit of adoption allows us to cry 'Abba, Father' showing our intimate relationship with God through Christ",
       "Galatians 4:6") }}
   </div>
 
   <h2>Key Verses</h2>
   <p>
-    The chapter contains several of the most beloved verses in Scripture, 
-    including {{ scripture("Romans 8:28") }} and {{ scripture("Romans 8:37-39") }}. 
+    The chapter contains several of the most beloved verses in Scripture,
+    including {{ scripture("Romans 8:28") }} and {{ scripture("Romans 8:37-39") }}.
     These verses provide comfort and assurance to believers facing trials.
   </p>
 </div>
@@ -172,6 +190,7 @@ layout: base.njk
 ## Customization Options
 
 ### CSS Variables
+
 ```css
 :root {
   --scripture-accent: #2563eb;
@@ -183,34 +202,40 @@ layout: base.njk
 ```
 
 ### JavaScript Configuration
+
 ```javascript
 // Customize widget behavior
 window.scriptureWidgetInstance.translations['custom'] = {
   name: 'Custom Translation',
-  api: 'custom-api-key'
+  api: 'custom-api-key',
 };
 
 // Add custom API source
 window.scriptureWidgetInstance.apiSources.push({
   name: 'custom-api',
   endpoint: 'https://custom-bible-api.com/',
-  format: (data) => ({ /* custom format */ })
+  format: data => ({
+    /* custom format */
+  }),
 });
 ```
 
 ## Performance Considerations
 
 ### Caching Strategy
+
 - **Memory Cache**: API responses cached during session
 - **LocalStorage**: User preferences persisted
 - **TTL**: 24-hour cache expiration for Scripture content
 
 ### Loading Optimization
+
 - **Lazy Loading**: Widget scripts loaded asynchronously
 - **Prefetching**: Common verses pre-cached
 - **Debouncing**: Prevents excessive API calls
 
 ### Error Handling
+
 - **Graceful Degradation**: Falls back to local content if APIs fail
 - **Retry Logic**: Attempts multiple API sources before failing
 - **User Feedback**: Clear error messages with retry options
@@ -218,18 +243,23 @@ window.scriptureWidgetInstance.apiSources.push({
 ## Best Practices
 
 ### Content Guidelines
-1. **Reference Format**: Use standard abbreviations (e.g., "John 3:16", "1 Cor 13:4-7")
+
+1. **Reference Format**: Use standard abbreviations (e.g., "John 3:16", "1 Cor
+   13:4-7")
 2. **Context Consideration**: Provide enough context for verse understanding
 3. **Translation Notes**: Acknowledge when specific translations are important
-4. **Theological Accuracy**: Ensure references support the theological point being made
+4. **Theological Accuracy**: Ensure references support the theological point
+   being made
 
 ### User Experience
+
 1. **Don't Overuse**: Limit to meaningful references that add value
 2. **Mobile Testing**: Verify tap targets are appropriate size
 3. **Loading States**: Ensure loading indicators are visible
 4. **Accessibility**: Provide alternative access methods for screen readers
 
 ### Technical
+
 1. **Error Boundaries**: Implement proper error handling
 2. **Performance Monitoring**: Track API response times
 3. **Analytics**: Monitor which verses are most accessed
@@ -238,20 +268,26 @@ window.scriptureWidgetInstance.apiSources.push({
 ## Integration with Existing Features
 
 ### Search Enhancement
-Scripture widgets can enhance search results by providing immediate verse context.
+
+Scripture widgets can enhance search results by providing immediate verse
+context.
 
 ### Bookmark Integration
+
 Allow users to bookmark favorite verses discovered through widgets.
 
 ### Study Plans
+
 Include Scripture widgets in reading plans and study guides.
 
 ### Social Sharing
+
 Enable sharing of specific verses with their context.
 
 ## Future Enhancements
 
 ### Planned Features
+
 - [ ] Audio playback for verses
 - [ ] Multiple parallel translations
 - [ ] Verse comparison tools
@@ -260,10 +296,15 @@ Enable sharing of specific verses with their context.
 - [ ] Offline mode improvements
 
 ### API Considerations
+
 - [ ] Better fallback strategies
 - [ ] Rate limiting handling
 - [ ] Authentication for premium APIs
 - [ ] Caching optimization
 - [ ] Performance metrics
 
-This Scripture Widget system significantly enhances the Bible study experience by making Scripture text immediately accessible while maintaining the flow of reading and study. The combination of smart UX design, robust fallback systems, and flexible implementation options makes it a powerful tool for Bible education platforms.
+This Scripture Widget system significantly enhances the Bible study experience
+by making Scripture text immediately accessible while maintaining the flow of
+reading and study. The combination of smart UX design, robust fallback systems,
+and flexible implementation options makes it a powerful tool for Bible education
+platforms.

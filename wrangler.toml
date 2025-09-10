@@ -3,14 +3,14 @@ main = "src/worker.js"
 compatibility_date = "2024-09-09"
 compatibility_flags = ["nodejs_compat"]
 
-# Account settings (using environment variables)
+# Account settings (use environment variable or local config)
 account_id = "${CLOUDFLARE_ACCOUNT_ID}"
 
 # Environment variables
 [vars]
 ENVIRONMENT = "production"
 
-# KV Namespaces for caching
+# KV Namespaces for caching (use environment variables or local config)
 [[kv_namespaces]]
 binding = "CACHE"
 id = "${CLOUDFLARE_KV_CACHE_ID}"
@@ -21,31 +21,28 @@ binding = "ENTITIES"
 id = "${CLOUDFLARE_KV_ENTITIES_ID}"
 preview_id = "${CLOUDFLARE_KV_ENTITIES_PREVIEW_ID}"
 
-# Static assets configuration
+# Static assets configuration (legacy but works in local dev)
 [site]
 bucket = "_site"
 
-# Build configuration
-[build]
-command = "npm run build:workers"
-cwd = "./"
+# Build configuration - disabled for direct deploy
+# [build]
+# command = "npm run build:workers-temp"
+# cwd = "./"
 
 # Development settings
 [dev]
 local_protocol = "https"
 port = 8787
 
-# Routes
-[[routes]]
-pattern = "*bible-explorer.pages.dev/*"
-zone_name = "pages.dev"
+# Routes - removed problematic pages.dev route
 
 # Security headers
 [env.production]
 [env.production.vars]
 CSP_HEADER = "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https:; connect-src 'self' https://api.esv.org https://www.biblegateway.com; frame-src https://www.youtube.com https://www.biblegateway.com;"
 
-# Analytics
-[[analytics_engine_datasets]]
-binding = "BIBLE_ANALYTICS"
-dataset = "explore_scripture_analytics"
+# Analytics - disabled until enabled in dashboard
+# [[analytics_engine_datasets]]
+# binding = "BIBLE_ANALYTICS"
+# dataset = "explore_scripture_analytics"

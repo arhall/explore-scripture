@@ -6,28 +6,28 @@
 class ScriptureWidget {
   constructor() {
     this.translations = {
-      'esv': { name: 'English Standard Version', api: 'esv' },
-      'niv': { name: 'New International Version', api: 'niv' },
-      'nlt': { name: 'New Living Translation', api: 'nlt' },
-      'nkjv': { name: 'New King James Version', api: 'nkjv' },
-      'nasb': { name: 'New American Standard Bible', api: 'nasb' },
-      'ampc': { name: 'Amplified Bible Classic', api: 'ampc' }
+      esv: { name: 'English Standard Version', api: 'esv' },
+      niv: { name: 'New International Version', api: 'niv' },
+      nlt: { name: 'New Living Translation', api: 'nlt' },
+      nkjv: { name: 'New King James Version', api: 'nkjv' },
+      nasb: { name: 'New American Standard Bible', api: 'nasb' },
+      ampc: { name: 'Amplified Bible Classic', api: 'ampc' },
     };
-    
+
     this.apiSources = [
       {
         name: 'bible-api',
         endpoint: 'https://bible-api.com/',
-        format: this.formatBibleApiResponse.bind(this)
+        format: this.formatBibleApiResponse.bind(this),
       },
       {
         name: 'api.bible',
         endpoint: 'https://api.scripture.api.bible/v1/bibles/',
         apiKey: null, // Would need API key for production
-        format: this.formatApiBibleResponse.bind(this)
-      }
+        format: this.formatApiBibleResponse.bind(this),
+      },
     ];
-    
+
     this.cache = new Map();
     this.currentTranslation = localStorage.getItem('preferred-translation') || 'esv';
     this.init();
@@ -277,7 +277,7 @@ class ScriptureWidget {
     if (!reference) return;
 
     element.classList.add('scripture-reference');
-    
+
     // Desktop: hover events
     let hoverTimeout;
     element.addEventListener('mouseenter', () => {
@@ -294,7 +294,7 @@ class ScriptureWidget {
     });
 
     // Mobile: touch events
-    element.addEventListener('click', (e) => {
+    element.addEventListener('click', e => {
       e.preventDefault();
       const widget = element.querySelector('.scripture-widget');
       if (widget && widget.classList.contains('visible')) {
@@ -337,7 +337,7 @@ class ScriptureWidget {
   createWidget(reference) {
     const widget = document.createElement('div');
     widget.className = 'scripture-widget';
-    
+
     widget.innerHTML = `
       <div class="scripture-widget-header">
         <span class="scripture-widget-reference">${this.escapeHtml(reference)}</span>
@@ -356,7 +356,7 @@ class ScriptureWidget {
     `;
 
     // Close button functionality
-    widget.querySelector('.scripture-widget-close').addEventListener('click', (e) => {
+    widget.querySelector('.scripture-widget-close').addEventListener('click', e => {
       e.stopPropagation();
       widget.classList.remove('visible');
       setTimeout(() => widget.remove(), 200);
@@ -377,8 +377,8 @@ class ScriptureWidget {
 
     // Desktop positioning logic
     const widgetRect = widget.getBoundingClientRect();
-    let left = rect.left + (rect.width / 2) - (widgetRect.width / 2);
-    
+    let left = rect.left + rect.width / 2 - widgetRect.width / 2;
+
     // Ensure widget doesn't go off screen
     if (left < 10) left = 10;
     if (left + widgetRect.width > viewportWidth - 10) {
@@ -395,7 +395,7 @@ class ScriptureWidget {
 
   async loadScriptureContent(widget, reference) {
     const contentDiv = widget.querySelector('.scripture-widget-content');
-    
+
     try {
       const cacheKey = `${reference}-${this.currentTranslation}`;
       let scriptureData = this.cache.get(cacheKey);
@@ -437,13 +437,13 @@ class ScriptureWidget {
       // Bible API format: https://bible-api.com/john+3:16
       const formattedRef = reference.replace(/\s+/g, '+').toLowerCase();
       const response = await fetch(`${source.endpoint}${formattedRef}`);
-      
+
       if (!response.ok) throw new Error('API request failed');
-      
+
       const data = await response.json();
       return source.format(data);
     }
-    
+
     return null;
   }
 
@@ -456,9 +456,9 @@ class ScriptureWidget {
       reference: data.reference,
       verses: data.verses.map(verse => ({
         number: verse.verse,
-        text: verse.text.trim()
+        text: verse.text.trim(),
       })),
-      translation: data.translation_name || 'Unknown'
+      translation: data.translation_name || 'Unknown',
     };
   }
 
@@ -468,9 +468,9 @@ class ScriptureWidget {
       reference: data.reference.display,
       verses: data.passages.map(passage => ({
         number: passage.verse_number,
-        text: passage.text
+        text: passage.text,
       })),
-      translation: data.bible.name
+      translation: data.bible.name,
     };
   }
 
@@ -479,48 +479,62 @@ class ScriptureWidget {
     const fallbacks = {
       'john 3:16': {
         reference: 'John 3:16',
-        verses: [{
-          number: 16,
-          text: 'For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.'
-        }],
-        translation: 'English Standard Version'
+        verses: [
+          {
+            number: 16,
+            text: 'For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.',
+          },
+        ],
+        translation: 'English Standard Version',
       },
       'romans 8:28': {
         reference: 'Romans 8:28',
-        verses: [{
-          number: 28,
-          text: 'And we know that for those who love God all things work together for good, for those who are called according to his purpose.'
-        }],
-        translation: 'English Standard Version'
+        verses: [
+          {
+            number: 28,
+            text: 'And we know that for those who love God all things work together for good, for those who are called according to his purpose.',
+          },
+        ],
+        translation: 'English Standard Version',
       },
       'genesis 1:1': {
         reference: 'Genesis 1:1',
-        verses: [{
-          number: 1,
-          text: 'In the beginning, God created the heavens and the earth.'
-        }],
-        translation: 'English Standard Version'
-      }
+        verses: [
+          {
+            number: 1,
+            text: 'In the beginning, God created the heavens and the earth.',
+          },
+        ],
+        translation: 'English Standard Version',
+      },
     };
 
     const key = reference.toLowerCase();
-    return fallbacks[key] || {
-      reference: reference,
-      verses: [{
-        number: 1,
-        text: 'Scripture text temporarily unavailable. Please check your connection and try again.'
-      }],
-      translation: 'Error'
-    };
+    return (
+      fallbacks[key] || {
+        reference: reference,
+        verses: [
+          {
+            number: 1,
+            text: 'Scripture text temporarily unavailable. Please check your connection and try again.',
+          },
+        ],
+        translation: 'Error',
+      }
+    );
   }
 
   renderScriptureContent(data) {
-    const versesHtml = data.verses.map(verse => `
+    const versesHtml = data.verses
+      .map(
+        verse => `
       <div class="scripture-widget-verse">
         <span class="verse-number">${verse.number}</span>
         ${verse.text}
       </div>
-    `).join('');
+    `
+      )
+      .join('');
 
     return `
       <div class="scripture-widget-verses">
@@ -536,13 +550,16 @@ class ScriptureWidget {
     selector.innerHTML = `
       <label for="translation-select">Bible Translation:</label>
       <select id="translation-select">
-        ${Object.entries(this.translations).map(([key, trans]) => 
-          `<option value="${key}" ${key === this.currentTranslation ? 'selected' : ''}>${trans.name}</option>`
-        ).join('')}
+        ${Object.entries(this.translations)
+          .map(
+            ([key, trans]) =>
+              `<option value="${key}" ${key === this.currentTranslation ? 'selected' : ''}>${trans.name}</option>`
+          )
+          .join('')}
       </select>
     `;
 
-    selector.querySelector('select').addEventListener('change', (e) => {
+    selector.querySelector('select').addEventListener('change', e => {
       this.currentTranslation = e.target.value;
       localStorage.setItem('preferred-translation', this.currentTranslation);
       this.cache.clear(); // Clear cache when translation changes
@@ -566,7 +583,7 @@ class ScriptureWidget {
     if (!window.scriptureWidgetInstance) {
       window.scriptureWidgetInstance = new ScriptureWidget();
     }
-    
+
     element.dataset.scripture = reference;
     window.scriptureWidgetInstance.setupReference(element);
   }

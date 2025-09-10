@@ -1,33 +1,48 @@
 # Explore Scripture - Selenium Test Suite Documentation
 
 ## Overview
-Comprehensive headless Chrome testing infrastructure for validating core functionality required for build validation.
+
+Comprehensive headless Chrome testing infrastructure for validating core
+functionality required for build validation.
 
 ## Test Suite Features
 
 ### ✅ Implemented Tests
 
 #### Core Functionality
-- **Homepage Loading**: Validates page loads, container exists, navigation displays
-- **Navigation Elements**: Tests nav brand, menu links (Sections, Characters, Gospel Thread, Links), and accessibility
-- **Theme Toggle**: Verifies 24-theme system with light/dark mode switching functionality  
-- **Character Search**: Tests client-side character search input and filtering results
-- **Chapter Reader**: Validates modal functionality, translation switching, and mobile optimization
-- **Character Pages**: Tests professional layout, gospel connections, and responsive design
-- **Book Pages**: Chapter summaries, commentary links, and "Read Chapter" button functionality
+
+- **Homepage Loading**: Validates page loads, container exists, navigation
+  displays
+- **Navigation Elements**: Tests nav brand, menu links (Sections, Characters,
+  Gospel Thread, Links), and accessibility
+- **Theme Toggle**: Verifies 24-theme system with light/dark mode switching
+  functionality
+- **Character Search**: Tests client-side character search input and filtering
+  results
+- **Chapter Reader**: Validates modal functionality, translation switching, and
+  mobile optimization
+- **Character Pages**: Tests professional layout, gospel connections, and
+  responsive design
+- **Book Pages**: Chapter summaries, commentary links, and "Read Chapter" button
+  functionality
 - **Category Pages**: Book listings and organization by biblical categories
 - **Responsive Design**: Mobile viewport testing and content overflow checks
-- **Accessibility Features**: Skip links, ARIA labels, keyboard navigation, and semantic HTML validation
-- **Performance**: Page load time monitoring, CSS/JS validation, and static generation metrics
+- **Accessibility Features**: Skip links, ARIA labels, keyboard navigation, and
+  semantic HTML validation
+- **Performance**: Page load time monitoring, CSS/JS validation, and static
+  generation metrics
 
 #### Error Handling
-- **JavaScript Error Filtering**: Distinguishes critical errors from optional module failures
+
+- **JavaScript Error Filtering**: Distinguishes critical errors from optional
+  module failures
 - **Graceful Degradation**: Tests work even when optional features fail
 - **Timeout Handling**: Robust waiting for elements with appropriate timeouts
 
 ### 🚀 Usage
 
 #### Quick Start
+
 ```bash
 # Run all tests
 ./run_tests.sh
@@ -43,18 +58,20 @@ npm run test:setup
 ```
 
 #### iOS Safari Testing
+
 ```bash
 # Run iOS Safari tests (macOS only)
 ./run_ios_tests.sh
 
 # Or use npm scripts
 npm run test:safari      # Safari desktop simulation
-npm run test:mobile      # Mobile responsive tests  
+npm run test:mobile      # Mobile responsive tests
 npm run test:ios         # iOS simulator tests
 npm run test:ios-all     # All iOS Safari tests
 ```
 
 #### Manual Test Execution
+
 ```bash
 # Activate environment
 source test-env/bin/activate
@@ -68,6 +85,7 @@ python -m pytest tests/ --html=report.html  # Generate HTML report
 ### 📊 Test Configuration
 
 #### Files Structure
+
 ```
 tests/
 ├── test_bible_explorer.py     # Main test suite (Chrome)
@@ -88,12 +106,13 @@ tests/
 
 pytest.ini                  # Pytest configuration with iOS markers
 run_tests.sh                # Main test execution script
-run_ios_tests.sh            # iOS Safari test execution script  
+run_ios_tests.sh            # iOS Safari test execution script
 .github/workflows/test.yml  # CI/CD pipeline
 docs/IOS_TESTING_GUIDE.md   # Complete iOS testing setup guide
 ```
 
 #### Dependencies
+
 - **Selenium**: Browser automation and testing (Chrome & Safari)
 - **Appium**: iOS mobile automation testing
 - **Pytest**: Test framework with HTML reporting
@@ -104,29 +123,41 @@ docs/IOS_TESTING_GUIDE.md   # Complete iOS testing setup guide
 ### 🎯 Test Coverage
 
 #### Validated Functionality
-✅ **Page Rendering**: All page types (home, books, characters, categories), navigation, content sections  
-✅ **Interactive Features**: 24-theme system with dark mode default, chapter reader modal, character search, translation switching  
-✅ **Entity/Character Studies**: Professional layouts, gospel connections, cross-references, mobile responsiveness
-✅ **Bible Reading**: Chapter reader with 7 translations (ESV, NIV, NLT, NKJV, NASB, AMPC, WEB), mobile optimization
-✅ **Responsive Design**: Mobile-first approach, optimized viewports, clean button hierarchy  
-✅ **Accessibility**: ARIA labels, keyboard navigation, semantic HTML, theme compatibility  
-✅ **Performance**: Fast static generation (300+ pages), optimized assets, lazy loading with module loader
-✅ **Modern UX**: Clean professional design, proper spacing, no excessive decorations  
-✅ **iOS Safari Compatibility**: Native iOS Safari testing with touch events and viewport behavior
-✅ **Mobile-First Design**: Full-screen modals, view toggles, 44px touch targets, responsive breakpoints
-✅ **Progressive Web App**: Service worker, offline caching, install prompts, update notifications
-✅ **Regression Testing**: YouTube video support, chapter reader functionality, theme toggle restoration
-✅ **Advanced Search**: Fuzzy matching with n-gram indexing, relevance scoring, and synonym support
-✅ **Commentary System**: 11 commentary sources with modal interface and source-specific URL handling  
+
+✅ **Page Rendering**: All page types (home, books, characters, categories),
+navigation, content sections  
+✅ **Interactive Features**: 24-theme system with dark mode default, chapter
+reader modal, character search, translation switching  
+✅ **Entity/Character Studies**: Professional layouts, gospel connections,
+cross-references, mobile responsiveness ✅ **Bible Reading**: Chapter reader
+with 7 translations (ESV, NIV, NLT, NKJV, NASB, AMPC, WEB), mobile optimization
+✅ **Responsive Design**: Mobile-first approach, optimized viewports, clean
+button hierarchy  
+✅ **Accessibility**: ARIA labels, keyboard navigation, semantic HTML, theme
+compatibility  
+✅ **Performance**: Fast static generation (300+ pages), optimized assets, lazy
+loading with module loader ✅ **Modern UX**: Clean professional design, proper
+spacing, no excessive decorations  
+✅ **iOS Safari Compatibility**: Native iOS Safari testing with touch events and
+viewport behavior ✅ **Mobile-First Design**: Full-screen modals, view toggles,
+44px touch targets, responsive breakpoints ✅ **Progressive Web App**: Service
+worker, offline caching, install prompts, update notifications ✅ **Regression
+Testing**: YouTube video support, chapter reader functionality, theme toggle
+restoration ✅ **Advanced Search**: Fuzzy matching with n-gram indexing,
+relevance scoring, and synonym support ✅ **Commentary System**: 11 commentary
+sources with modal interface and source-specific URL handling
 
 #### Build Quality Gates
+
 - Homepage must load within 10 seconds with proper navigation
 - All page types (books, characters, categories) must render correctly
-- Character reader modal must function with live translation switching and dynamic loading
-- Entity/character search must filter results without page refresh  
+- Character reader modal must function with live translation switching and
+  dynamic loading
+- Entity/character search must filter results without page refresh
 - No duplicate "Read Chapter" buttons per chapter
 - Mobile design must maximize viewport space (hidden external links on mobile)
-- All entity pages must generate with professional layouts and proper cross-references
+- All entity pages must generate with professional layouts and proper
+  cross-references
 - No critical JavaScript errors (excludes optional modules)
 - Theme system must support all 24 themes with dark mode as default
 - AMPC and other Bible translation links must work correctly
@@ -137,12 +168,14 @@ docs/IOS_TESTING_GUIDE.md   # Complete iOS testing setup guide
 ### 🏗️ CI/CD Integration
 
 #### GitHub Actions
+
 - **Automated Testing**: Runs on push to main/develop branches
 - **Matrix Testing**: Multiple Node.js and Python versions
 - **Artifact Upload**: Test reports and screenshots on failure
 - **Dependency Caching**: Faster builds with npm and pip caching
 
 #### Local Development
+
 - **Pre-commit Testing**: Run tests before committing changes
 - **Development Server**: Automatically starts and validates dev server
 - **Hot Reload**: Tests can run against live development server
@@ -151,19 +184,22 @@ docs/IOS_TESTING_GUIDE.md   # Complete iOS testing setup guide
 ### 🔧 Configuration Options
 
 #### Test Markers
+
 ```python
 @pytest.mark.smoke      # Quick smoke tests for basic functionality
 @pytest.mark.full       # Complete test suite
-@pytest.mark.performance # Performance-related tests  
+@pytest.mark.performance # Performance-related tests
 @pytest.mark.accessibility # Accessibility tests
 ```
 
 #### Environment Variables
+
 - `HEADLESS=false`: Run tests in visible browser (debugging)
 - `TEST_URL=http://custom:8080`: Override test URL
 - `TIMEOUT=30`: Set custom timeout for test operations
 
 #### Chrome Options
+
 - Headless mode for CI/CD
 - Custom window size (1920x1080)
 - Disabled security for local testing
@@ -172,12 +208,14 @@ docs/IOS_TESTING_GUIDE.md   # Complete iOS testing setup guide
 ### 🚨 Common Issues and Solutions
 
 #### Test Failures
+
 1. **Timeout Errors**: Increase wait times or check server startup
 2. **Element Not Found**: Verify CSS selectors match current markup
 3. **JavaScript Errors**: Update error filtering for new optional modules
 4. **Chrome Driver Issues**: Ensure Chrome/Chromium is installed
 
 #### Performance Issues
+
 - Tests run in headless mode for speed
 - Parallel execution not implemented (sequential for reliability)
 - Shared browser instances per test class to reduce overhead
@@ -185,6 +223,7 @@ docs/IOS_TESTING_GUIDE.md   # Complete iOS testing setup guide
 ### 📈 Future Enhancements
 
 #### Potential Additions
+
 - **Visual Regression**: Screenshot comparison testing
 - **API Testing**: Backend endpoint validation
 - **Load Testing**: Performance under concurrent users
@@ -193,6 +232,7 @@ docs/IOS_TESTING_GUIDE.md   # Complete iOS testing setup guide
 - **Accessibility**: WCAG compliance automation
 
 #### Integration Options
+
 - **Monitoring**: Connect to application performance monitoring
 - **Reporting**: Integration with test management systems
 - **Alerting**: Slack/email notifications for test failures
@@ -201,28 +241,36 @@ docs/IOS_TESTING_GUIDE.md   # Complete iOS testing setup guide
 ## Success Criteria Met ✅
 
 The comprehensive Selenium test suite successfully validates:
+
 - ✅ Core site functionality works as expected
-- ✅ Build process completes without critical errors  
+- ✅ Build process completes without critical errors
 - ✅ User interface elements are accessible and functional
 - ✅ Responsive design works across viewports
 - ✅ JavaScript executes properly for core features
 - ✅ Performance meets acceptable standards
 - ✅ CI/CD pipeline ready for automated testing
 
-This test infrastructure ensures that any code changes can be validated automatically before deployment, maintaining high quality and reliability standards for the Explore Scripture application.
+This test infrastructure ensures that any code changes can be validated
+automatically before deployment, maintaining high quality and reliability
+standards for the Explore Scripture application.
 
 ## Commentary System Tests (`test_commentary_system.py`)
 
 **Status**: ✅ **COMPLETED & FIXED**
 
-Comprehensive test suite for the Commentary Reader system with 11 commentary sources.
+Comprehensive test suite for the Commentary Reader system with 11 commentary
+sources.
 
 ### Test Coverage
 
-1. **Commentary Button Presence**: ✅ Validates Read Chapter and Read Commentary buttons exist for all book pages
-2. **Modal Functionality**: ✅ Tests commentary modal opening (import issues fixed)
-3. **Source Switching**: ✅ Verifies switching between different commentary sources 
-4. **Iframe vs Direct Access**: ✅ Tests iframe-compatible vs blocked sources handling
+1. **Commentary Button Presence**: ✅ Validates Read Chapter and Read Commentary
+   buttons exist for all book pages
+2. **Modal Functionality**: ✅ Tests commentary modal opening (import issues
+   fixed)
+3. **Source Switching**: ✅ Verifies switching between different commentary
+   sources
+4. **Iframe vs Direct Access**: ✅ Tests iframe-compatible vs blocked sources
+   handling
 5. **Book Name Edge Cases**: ✅ Validates URL generation for special cases
 6. **Keyboard Navigation**: ✅ Tests ESC key and keyboard interactions
 7. **Chapter Reader Integration**: ✅ Ensures both systems work together
@@ -232,7 +280,8 @@ Comprehensive test suite for the Commentary Reader system with 11 commentary sou
 ### Test Results Summary
 
 - **✅ Core Functionality**: Commentary buttons are properly created and present
-- **✅ UI Interactions**: Import issues resolved (selenium.webdriver vs selenium.webchrome_driver)
+- **✅ UI Interactions**: Import issues resolved (selenium.webdriver vs
+  selenium.webchrome_driver)
 - **✅ Test Framework**: Proper Selenium setup with Chrome driver
 - **✅ Server Integration**: Development server properly detected and used
 
@@ -240,32 +289,40 @@ Comprehensive test suite for the Commentary Reader system with 11 commentary sou
 
 **Status**: 🆕 **NEW - COMPREHENSIVE COVERAGE**
 
-Complete test suite for the new Entity/Character system replacing the old character system.
+Complete test suite for the new Entity/Character system replacing the old
+character system.
 
 ### Test Coverage
 
-1. **Entity Page Loading**: ✅ Tests entities overview page loads with proper listings
+1. **Entity Page Loading**: ✅ Tests entities overview page loads with proper
+   listings
 2. **Entity Search**: ✅ Validates search functionality for filtering entities
-3. **Individual Entity Pages**: ✅ Tests specific entity pages with proper information display
+3. **Individual Entity Pages**: ✅ Tests specific entity pages with proper
+   information display
 4. **Cross-References**: ✅ Validates links between entities and biblical books
 5. **Book Filtering**: ✅ Tests filtering entities by biblical books
 6. **Responsive Design**: ✅ Mobile viewport testing and layout validation
-7. **Navigation Breadcrumbs**: ✅ Tests navigation between entity and overview pages
+7. **Navigation Breadcrumbs**: ✅ Tests navigation between entity and overview
+   pages
 8. **Error Handling**: ✅ Validates proper handling of invalid entity IDs
-9. **Data Integrity**: ✅ Tests entity data loading and JavaScript error monitoring
+9. **Data Integrity**: ✅ Tests entity data loading and JavaScript error
+   monitoring
 
 ### Key Features Validated
 
-- **Entity Page Structure**: Professional layouts with entity information and cross-references
+- **Entity Page Structure**: Professional layouts with entity information and
+  cross-references
 - **Search Integration**: Client-side filtering and search functionality
 - **Cross-Reference System**: Links between entities and biblical books
 - **Mobile Optimization**: Responsive design with proper card stacking
 - **Error Handling**: Graceful handling of non-existent entities
-- **Data Loading**: Proper entity data loading without critical JavaScript errors
+- **Data Loading**: Proper entity data loading without critical JavaScript
+  errors
 
 ### Entity Test Data
 
 Sample entities tested:
+
 - **Adam** (`p.adam.gene-2-5--6921e439`): Genesis references
 - **Moses** (`p.moses.exod-2-10--e5a2f8b7`): Exodus, Numbers, Deuteronomy
 - **David** (`p.david.1sam-16-13--c4d3e9f1`): Samuel, Psalms references

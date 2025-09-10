@@ -2,7 +2,7 @@
 
 /**
  * Advanced Content Delivery Optimizer
- * 
+ *
  * Implements cutting-edge content delivery strategies:
  * - Adaptive content optimization based on device/connection
  * - Image format optimization with next-gen formats
@@ -20,7 +20,7 @@ class ContentDeliveryOptimizer {
     this.outputDir = '.content-delivery';
     this.configDir = path.join(this.outputDir, 'config');
     this.strategiesDir = path.join(this.outputDir, 'strategies');
-    
+
     // Device profiles for adaptive optimization
     this.deviceProfiles = {
       mobile: {
@@ -28,24 +28,24 @@ class ContentDeliveryOptimizer {
         preferredFormats: ['webp', 'jpeg'],
         compressionLevel: 'aggressive',
         bundleStrategy: 'minimal',
-        connectionTypes: ['slow-2g', '2g', '3g']
+        connectionTypes: ['slow-2g', '2g', '3g'],
       },
       tablet: {
         maxImageWidth: 768,
         preferredFormats: ['webp', 'avif', 'jpeg'],
         compressionLevel: 'balanced',
         bundleStrategy: 'selective',
-        connectionTypes: ['3g', '4g']
+        connectionTypes: ['3g', '4g'],
       },
       desktop: {
         maxImageWidth: 1200,
         preferredFormats: ['avif', 'webp', 'jpeg'],
         compressionLevel: 'quality',
         bundleStrategy: 'full',
-        connectionTypes: ['4g', 'wifi']
-      }
+        connectionTypes: ['4g', 'wifi'],
+      },
     };
-    
+
     // Geographic optimization profiles
     this.geoProfiles = {
       developed: {
@@ -53,28 +53,28 @@ class ContentDeliveryOptimizer {
         networkQuality: 'high',
         compressionPreference: 'quality',
         formatPreference: ['avif', 'webp'],
-        bundleAggressiveness: 'moderate'
+        bundleAggressiveness: 'moderate',
       },
       developing: {
         regions: ['IN', 'BR', 'MX', 'ID', 'PH', 'VN', 'TH'],
         networkQuality: 'medium',
         compressionPreference: 'balanced',
         formatPreference: ['webp', 'jpeg'],
-        bundleAggressiveness: 'aggressive'
+        bundleAggressiveness: 'aggressive',
       },
       emerging: {
         regions: ['NG', 'KE', 'BD', 'PK', 'EG'],
         networkQuality: 'low',
         compressionPreference: 'size',
         formatPreference: ['jpeg'],
-        bundleAggressiveness: 'minimal'
-      }
+        bundleAggressiveness: 'minimal',
+      },
     };
   }
 
   async initialize() {
     console.log('🚚 Initializing Advanced Content Delivery Optimizer...');
-    
+
     // Create output directories
     [this.outputDir, this.configDir, this.strategiesDir].forEach(dir => {
       if (!fs.existsSync(dir)) {
@@ -86,41 +86,41 @@ class ContentDeliveryOptimizer {
   // Generate adaptive loading strategies
   generateAdaptiveLoadingStrategies() {
     console.log('🔄 Generating adaptive loading strategies...');
-    
+
     const strategies = {
       // Critical path optimization
       criticalPath: {
         description: 'Optimize critical rendering path for fastest first paint',
         implementation: this.generateCriticalPathStrategy(),
         metrics: ['FCP', 'LCP', 'CLS'],
-        deviceSupport: ['mobile', 'tablet', 'desktop']
+        deviceSupport: ['mobile', 'tablet', 'desktop'],
       },
-      
+
       // Progressive enhancement strategy
       progressiveEnhancement: {
         description: 'Layer features based on device capabilities',
         implementation: this.generateProgressiveStrategy(),
         metrics: ['TTI', 'FID', 'TBT'],
-        deviceSupport: ['mobile', 'tablet', 'desktop']
+        deviceSupport: ['mobile', 'tablet', 'desktop'],
       },
-      
+
       // Bandwidth-aware loading
       bandwidthAware: {
         description: 'Adapt content delivery based on connection speed',
         implementation: this.generateBandwidthAwareStrategy(),
         metrics: ['bandwidth_efficiency', 'data_usage'],
-        deviceSupport: ['mobile', 'tablet']
+        deviceSupport: ['mobile', 'tablet'],
       },
-      
+
       // Geographic optimization
       geographic: {
         description: 'Optimize content based on user location',
         implementation: this.generateGeographicStrategy(),
         metrics: ['global_performance', 'regional_optimization'],
-        deviceSupport: ['mobile', 'tablet', 'desktop']
-      }
+        deviceSupport: ['mobile', 'tablet', 'desktop'],
+      },
     };
-    
+
     return strategies;
   }
 
@@ -264,7 +264,7 @@ body {
   <!-- Critical JavaScript -->
   <script src="/assets/bundle-optimizer.js"></script>
 </body>
-</html>`
+</html>`,
     };
   }
 
@@ -437,23 +437,23 @@ progressiveEnhancer.applyEnhancements();`,
           features: ['essential-navigation', 'basic-search', 'simple-reading'],
           assets: ['core.css', 'basic.js'],
           totalSize: '50KB',
-          deviceTargets: ['low-end mobile', 'slow connections']
+          deviceTargets: ['low-end mobile', 'slow connections'],
         },
-        
+
         enhanced: {
           features: ['advanced-search', 'chapter-reader', 'commentary-system'],
           assets: ['enhanced.css', 'features.js', 'search.js'],
           totalSize: '150KB',
-          deviceTargets: ['mid-range devices', '3G+ connections']
+          deviceTargets: ['mid-range devices', '3G+ connections'],
         },
-        
+
         premium: {
           features: ['full-visualization', 'predictive-features', 'advanced-analytics'],
           assets: ['premium.css', 'visualizations.js', 'd3.js', 'analytics.js'],
           totalSize: '350KB',
-          deviceTargets: ['high-end devices', '4G+ connections']
-        }
-      }
+          deviceTargets: ['high-end devices', '4G+ connections'],
+        },
+      },
     };
   }
 
@@ -666,7 +666,7 @@ class BandwidthAwareLoader {
 
 // Auto-initialize bandwidth-aware loading
 const bandwidthAwareLoader = new BandwidthAwareLoader();
-bandwidthAwareLoader.adaptContentDelivery();`
+bandwidthAwareLoader.adaptContentDelivery();`,
     };
   }
 
@@ -820,111 +820,111 @@ class GeographicOptimizer {
 
 // Auto-initialize geographic optimization
 const geographicOptimizer = new GeographicOptimizer();
-geographicOptimizer.optimizeForRegion();`
+geographicOptimizer.optimizeForRegion();`,
     };
   }
 
   // Generate HTTP/3 and modern protocol configurations
   generateModernProtocolConfig() {
     console.log('🌐 Generating modern protocol configurations...');
-    
+
     return {
       http3: {
         enabled: true,
         altSvc: 'h3=":443"; ma=86400, h3-29=":443"; ma=86400',
         priority: 'high',
-        benefits: ['Lower latency', 'Better multiplexing', 'Improved mobile performance']
+        benefits: ['Lower latency', 'Better multiplexing', 'Improved mobile performance'],
       },
-      
+
       http2: {
         serverPush: {
           enabled: true,
           resources: [
             '/assets/bundle-optimizer.js',
             '/assets/theme-manager.js',
-            '/assets/styles.css'
+            '/assets/styles.css',
           ],
-          strategy: 'critical_path_only'
+          strategy: 'critical_path_only',
         },
         multiplexing: {
           enabled: true,
-          maxConcurrentStreams: 100
-        }
+          maxConcurrentStreams: 100,
+        },
       },
-      
+
       earlyHints: {
         enabled: true,
         resources: [
           { rel: 'preload', href: '/assets/bundle-optimizer.js', as: 'script' },
           { rel: 'preload', href: '/assets/styles.css', as: 'style' },
-          { rel: 'dns-prefetch', href: '//fonts.googleapis.com' }
-        ]
+          { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
+        ],
       },
-      
+
       compression: {
         brotli: {
           enabled: true,
           quality: 11,
           windowBits: 22,
-          mode: 'text'
+          mode: 'text',
         },
         gzip: {
           enabled: true,
           level: 9,
-          fallback: true
-        }
+          fallback: true,
+        },
       },
-      
+
       caching: {
         immutable: {
           pattern: '\\.(?:js|css|png|jpg|jpeg|gif|ico|svg|woff2)$',
           maxAge: 31536000,
-          directive: 'public, max-age=31536000, immutable'
+          directive: 'public, max-age=31536000, immutable',
         },
         hashed: {
           pattern: '\\.[a-f0-9]{8}\\.',
           maxAge: 31536000,
-          directive: 'public, max-age=31536000, immutable'
-        }
-      }
+          directive: 'public, max-age=31536000, immutable',
+        },
+      },
     };
   }
 
   // Generate image optimization configurations
   generateImageOptimizationConfig() {
     console.log('🖼️ Generating image optimization configurations...');
-    
+
     return {
       formats: {
         avif: {
           quality: 80,
           effort: 4,
           enabled: true,
-          fallback: 'webp'
+          fallback: 'webp',
         },
         webp: {
           quality: 85,
           effort: 4,
           enabled: true,
-          fallback: 'jpeg'
+          fallback: 'jpeg',
         },
         jpeg: {
           quality: 90,
           progressive: true,
-          enabled: true
-        }
+          enabled: true,
+        },
       },
-      
+
       responsive: {
         breakpoints: [320, 480, 768, 1024, 1200],
         devicePixelRatios: [1, 2],
         lazyLoading: {
           enabled: true,
           rootMargin: '50px',
-          threshold: 0.1
-        }
+          threshold: 0.1,
+        },
       },
-      
+
       optimization: {
         lossless: ['png', 'gif'],
         lossy: ['jpeg', 'webp', 'avif'],
@@ -935,24 +935,24 @@ geographicOptimizer.optimizeForRegion();`
             removeEditorsNSData: true,
             cleanupAttrs: true,
             minifyStyles: true,
-            convertStyleToAttrs: true
-          }
-        }
+            convertStyleToAttrs: true,
+          },
+        },
       },
-      
+
       adaptive: {
         connectionAware: {
           'slow-2g': { quality: 60, maxWidth: 480 },
           '2g': { quality: 70, maxWidth: 640 },
           '3g': { quality: 80, maxWidth: 800 },
-          '4g': { quality: 90, maxWidth: 1200 }
+          '4g': { quality: 90, maxWidth: 1200 },
         },
         saveDataMode: {
           quality: 50,
           maxWidth: 400,
-          format: 'jpeg'
-        }
-      }
+          format: 'jpeg',
+        },
+      },
     };
   }
 
@@ -968,18 +968,18 @@ geographicOptimizer.optimizeForRegion();`
             firstContentfulPaint: '-40%',
             largestContentfulPaint: '-35%',
             cumulativeLayoutShift: '-60%',
-            timeToInteractive: '-45%'
-          }
+            timeToInteractive: '-45%',
+          },
         },
-        
+
         imageOptimization: {
           implemented: true,
           formats: ['AVIF', 'WebP', 'JPEG'],
           responsive: true,
           lazyLoading: true,
-          expectedSavings: '60-80% bandwidth reduction'
+          expectedSavings: '60-80% bandwidth reduction',
         },
-        
+
         protocolOptimization: {
           http3: 'enabled',
           http2Push: 'selective',
@@ -988,10 +988,10 @@ geographicOptimizer.optimizeForRegion();`
           expectedImprovements: {
             connectionTime: '-25%',
             requestLatency: '-30%',
-            mobilePerformance: '-35%'
-          }
+            mobilePerformance: '-35%',
+          },
         },
-        
+
         geographicOptimization: {
           regions: ['US', 'EU', 'ASIA', 'GLOBAL'],
           adaptiveContent: true,
@@ -999,32 +999,32 @@ geographicOptimizer.optimizeForRegion();`
           expectedImprovements: {
             globalLatency: '-50%',
             regionalOptimization: '90% coverage',
-            emergingMarkets: '+200% performance'
-          }
-        }
+            emergingMarkets: '+200% performance',
+          },
+        },
       },
-      
+
       implementation: {
         complexity: 'High',
         dependencies: ['Cloudflare Workers', 'Image CDN', 'Analytics'],
         rolloutStrategy: 'Progressive by region',
-        monitoringRequired: true
+        monitoringRequired: true,
       },
-      
+
       metrics: {
         coreWebVitals: {
           lcp: { target: '<2.5s', expectedImprovement: '35%' },
           fid: { target: '<100ms', expectedImprovement: '45%' },
-          cls: { target: '<0.1', expectedImprovement: '60%' }
+          cls: { target: '<0.1', expectedImprovement: '60%' },
         },
         businessMetrics: {
           bounceRate: { expectedImprovement: '-25%' },
           sessionDuration: { expectedImprovement: '+30%' },
-          mobileUsage: { expectedImprovement: '+40%' }
-        }
-      }
+          mobileUsage: { expectedImprovement: '+40%' },
+        },
+      },
     };
-    
+
     return report;
   }
 
@@ -1032,24 +1032,24 @@ geographicOptimizer.optimizeForRegion();`
   async optimize() {
     const startTime = Date.now();
     console.log('🚀 Starting advanced content delivery optimization...');
-    
+
     await this.initialize();
-    
+
     const components = {
       adaptiveStrategies: this.generateAdaptiveLoadingStrategies(),
       protocolConfig: this.generateModernProtocolConfig(),
       imageConfig: this.generateImageOptimizationConfig(),
-      report: this.generateOptimizationReport()
+      report: this.generateOptimizationReport(),
     };
-    
+
     // Write configuration files
     const files = {
       'adaptive-loading-strategies.json': JSON.stringify(components.adaptiveStrategies, null, 2),
       'protocol-configuration.json': JSON.stringify(components.protocolConfig, null, 2),
       'image-optimization.json': JSON.stringify(components.imageConfig, null, 2),
-      'content-delivery-report.json': JSON.stringify(components.report, null, 2)
+      'content-delivery-report.json': JSON.stringify(components.report, null, 2),
     };
-    
+
     // Write strategy implementations
     const strategies = components.adaptiveStrategies;
     Object.entries(strategies).forEach(([name, strategy]) => {
@@ -1060,16 +1060,18 @@ geographicOptimizer.optimizeForRegion();`
         );
       }
     });
-    
+
     // Write all configuration files
     Object.entries(files).forEach(([filename, content]) => {
       fs.writeFileSync(path.join(this.configDir, filename), content);
       console.log(`   Generated: ${filename}`);
     });
-    
-    console.log(`✅ Advanced content delivery optimization complete in ${Date.now() - startTime}ms`);
+
+    console.log(
+      `✅ Advanced content delivery optimization complete in ${Date.now() - startTime}ms`
+    );
     console.log(`📊 Report saved: ${path.join(this.configDir, 'content-delivery-report.json')}`);
-    
+
     return components.report;
   }
 }
@@ -1080,14 +1082,24 @@ module.exports = { ContentDeliveryOptimizer };
 // CLI execution
 if (require.main === module) {
   const optimizer = new ContentDeliveryOptimizer();
-  
-  optimizer.optimize()
+
+  optimizer
+    .optimize()
     .then(report => {
       console.log('\n📈 Content Delivery Summary:');
       console.log('   Strategies:', Object.keys(report.strategies).length);
-      console.log('   Expected LCP Improvement:', report.metrics.coreWebVitals.lcp.expectedImprovement);
-      console.log('   Expected FID Improvement:', report.metrics.coreWebVitals.fid.expectedImprovement);
-      console.log('   Expected CLS Improvement:', report.metrics.coreWebVitals.cls.expectedImprovement);
+      console.log(
+        '   Expected LCP Improvement:',
+        report.metrics.coreWebVitals.lcp.expectedImprovement
+      );
+      console.log(
+        '   Expected FID Improvement:',
+        report.metrics.coreWebVitals.fid.expectedImprovement
+      );
+      console.log(
+        '   Expected CLS Improvement:',
+        report.metrics.coreWebVitals.cls.expectedImprovement
+      );
     })
     .catch(error => {
       console.error('❌ Content delivery optimization failed:', error);

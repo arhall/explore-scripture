@@ -37,10 +37,7 @@
     },
     {
       "section": "Divine",
-      "entries": [
-        "YHWH (the LORD)",
-        "Spirit of the LORD"
-      ]
+      "entries": ["YHWH (the LORD)", "Spirit of the LORD"]
     },
     {
       "section": "Figures (Personifications & Literary Units)",
@@ -115,13 +112,7 @@
       "id": "p.haggai--2c135658",
       "name": "Haggai",
       "type": "person",
-      "references": [
-        "Hag 1:1",
-        "Hag 1:3",
-        "Hag 2:1",
-        "Hag 2:10",
-        "Hag 2:20"
-      ],
+      "references": ["Hag 1:1", "Hag 1:3", "Hag 2:1", "Hag 2:10", "Hag 2:20"],
       "category": "prophet",
       "blurb": "Post-exilic prophet whose oracles in 520 BCE catalyze the Temple rebuild through rebuke, encouragement, legal clarification, and royal promise."
     },
@@ -129,12 +120,7 @@
       "id": "p.zerubbabel-son-of-shealtiel--90a5bfcc",
       "name": "Zerubbabel son of Shealtiel",
       "type": "person",
-      "references": [
-        "Hag 1:1",
-        "Hag 1:14",
-        "Hag 2:2",
-        "Hag 2:20-23"
-      ],
+      "references": ["Hag 1:1", "Hag 1:14", "Hag 2:2", "Hag 2:20-23"],
       "category": "governor",
       "relations": {
         "lineage": "Davidic (through Jehoiachin)"
@@ -145,11 +131,7 @@
       "id": "p.joshua-jeshua-son-of-jehozadak--692382b1",
       "name": "Joshua (Jeshua) son of Jehozadak",
       "type": "person",
-      "references": [
-        "Hag 1:1",
-        "Hag 1:14",
-        "Hag 2:2"
-      ],
+      "references": ["Hag 1:1", "Hag 1:14", "Hag 2:2"],
       "category": "high-priest",
       "blurb": "High priest partnering with Zerubbabel. Central to ritual purity and the legitimation of the rebuilt Temple."
     },
@@ -157,11 +139,7 @@
       "id": "p.darius-i-persian-king--face83b7",
       "name": "Darius I (Persian king)",
       "type": "person",
-      "references": [
-        "Hag 1:1",
-        "Hag 2:10",
-        "Hag 2:20"
-      ],
+      "references": ["Hag 1:1", "Hag 2:10", "Hag 2:20"],
       "category": "monarch",
       "blurb": "Persian ruler whose regnal year dates Haggai’s messages. His administration frames Yehud’s provincial realities."
     },
@@ -169,9 +147,7 @@
       "id": "p.priests--17ce1c8d",
       "name": "Priests",
       "type": "person",
-      "references": [
-        "Hag 2:11-13"
-      ],
+      "references": ["Hag 2:11-13"],
       "category": "cultic-staff",
       "blurb": "Consulted on holiness/defilement transfer; their ruling diagnoses the people’s impurity pre-repentance."
     },
@@ -179,10 +155,7 @@
       "id": "p.elders-heads-of-fathers-houses--97dd92f8",
       "name": "Elders/Heads of fathers’ houses",
       "type": "person",
-      "references": [
-        "Ezra 5:5",
-        "Hag 1:12"
-      ],
+      "references": ["Ezra 5:5", "Hag 1:12"],
       "category": "community-leadership",
       "blurb": "Local leaders coordinating work and consent; continuity with Ezra’s narrative."
     },
@@ -190,9 +163,7 @@
       "id": "p.remnant-of-the-people--16e642e4",
       "name": "Remnant of the people",
       "type": "person",
-      "references": [
-        "Hag 1:12-14"
-      ],
+      "references": ["Hag 1:12-14"],
       "category": "returned-community",
       "blurb": "Post-exilic body that obeys the word, fears the LORD, and resumes the work when their spirits are stirred."
     },
@@ -200,9 +171,7 @@
       "id": "p.opponents-context-from-ezra--07aba943",
       "name": "Opponents (context from Ezra)",
       "type": "person",
-      "references": [
-        "Ezra 4–6 (context)"
-      ],
+      "references": ["Ezra 4–6 (context)"],
       "category": "adversaries",
       "blurb": "Regional opposition that delayed the rebuild until prophetic intervention reignited authorization."
     },
@@ -210,10 +179,7 @@
       "id": "p.scribes-recorders--1980dd30",
       "name": "Scribes/Recorders",
       "type": "person",
-      "references": [
-        "Hag 1:1",
-        "Hag 2:1"
-      ],
+      "references": ["Hag 1:1", "Hag 2:1"],
       "category": "administration",
       "blurb": "Officials responsible for dating/oracle documentation; ensure durable memory of commands and promises."
     },
@@ -221,10 +187,7 @@
       "id": "g.judah--a34b84cd",
       "name": "Judah",
       "type": "group",
-      "references": [
-        "Hag 1:1",
-        "Hag 1:14"
-      ],
+      "references": ["Hag 1:1", "Hag 1:14"],
       "category": "people-of-god",
       "blurb": "The covenant community reconstituted in Yehud, summoned to prioritize the LORD’s house."
     },
@@ -232,10 +195,7 @@
       "id": "g.jerusalem--3453dc1c",
       "name": "Jerusalem",
       "type": "group",
-      "references": [
-        "Hag 1:4",
-        "Hag 1:8"
-      ],
+      "references": ["Hag 1:4", "Hag 1:8"],
       "category": "city-people",
       "blurb": "City center where the house lies desolate until the community obeys the word to build."
     },
@@ -251,9 +211,7 @@
       "id": "g.nations--ae173a5a",
       "name": "Nations",
       "type": "group",
-      "references": [
-        "Hag 2:7"
-      ],
+      "references": ["Hag 2:7"],
       "category": "international",
       "blurb": "Peoples shaken so that treasure/glory flows toward God’s house; also scope of divine sovereignty."
     },
@@ -261,9 +219,7 @@
       "id": "g.householders-with-paneled-houses--11aa1a43",
       "name": "Householders with paneled houses",
       "type": "group",
-      "references": [
-        "Hag 1:4"
-      ],
+      "references": ["Hag 1:4"],
       "category": "ethical-collective",
       "blurb": "Residents investing in private comfort while the Temple remains in ruins—focus of the initial rebuke."
     },
@@ -271,9 +227,7 @@
       "id": "g.priestly-cohort--e618612a",
       "name": "Priestly cohort",
       "type": "group",
-      "references": [
-        "Hag 2:11-14"
-      ],
+      "references": ["Hag 2:11-14"],
       "category": "cultic-group",
       "blurb": "Priests tasked with halakhic discernment; their answers structure the defilement diagnosis."
     },
@@ -281,9 +235,7 @@
       "id": "g.workforce-with-stirred-spirit--1af5c8b0",
       "name": "Workforce with stirred spirit",
       "type": "group",
-      "references": [
-        "Hag 1:14"
-      ],
+      "references": ["Hag 1:14"],
       "category": "labor-force",
       "blurb": "Collective energized by divine presence to rebuild the house."
     },
@@ -291,9 +243,7 @@
       "id": "g.heavens--14559d2e",
       "name": "Heavens",
       "type": "group",
-      "references": [
-        "Hag 1:10"
-      ],
+      "references": ["Hag 1:10"],
       "category": "cosmic-domain",
       "blurb": "Part of the created order enlisted in covenant discipline (withholding dew)."
     },
@@ -301,9 +251,7 @@
       "id": "g.earth--0709c344",
       "name": "Earth",
       "type": "group",
-      "references": [
-        "Hag 1:10"
-      ],
+      "references": ["Hag 1:10"],
       "category": "cosmic-domain",
       "blurb": "Yield curtailed under covenant discipline; later blessed ‘from this day.’"
     },
@@ -311,9 +259,7 @@
       "id": "g.sea--e6727116",
       "name": "Sea",
       "type": "group",
-      "references": [
-        "Hag 2:6"
-      ],
+      "references": ["Hag 2:6"],
       "category": "cosmic-domain",
       "blurb": "Included in the shaking imagery signaling cosmic scope."
     },
@@ -321,9 +267,7 @@
       "id": "g.dry-land--46d756d0",
       "name": "Dry land",
       "type": "group",
-      "references": [
-        "Hag 2:6"
-      ],
+      "references": ["Hag 2:6"],
       "category": "cosmic-domain",
       "blurb": "Complements the sea in total-creation shaking."
     },
@@ -331,25 +275,16 @@
       "id": "d.yhwh-the-lord--68545cab",
       "name": "YHWH (the LORD)",
       "type": "divine",
-      "references": [
-        "Hag 1:2",
-        "Hag 1:13",
-        "Hag 2:4-9",
-        "Hag 2:19-23"
-      ],
+      "references": ["Hag 1:2", "Hag 1:13", "Hag 2:4-9", "Hag 2:19-23"],
       "category": "covenant-king",
-      "aka": [
-        "the LORD"
-      ],
+      "aka": ["the LORD"],
       "blurb": "Speaker of rebuke and comfort, owner of silver and gold, present with his people, and sovereign over nations and cosmos."
     },
     {
       "id": "d.spirit-of-the-lord--428b0e29",
       "name": "Spirit of the LORD",
       "type": "divine",
-      "references": [
-        "Hag 1:14"
-      ],
+      "references": ["Hag 1:14"],
       "category": "divine-agency",
       "blurb": "Stirs Zerubbabel, Joshua, and the remnant to obey and work—personal presence empowering communal renewal."
     },
@@ -357,12 +292,7 @@
       "id": "f.superscription-&-date-frame--e3ae2d17",
       "name": "Superscription & date frame",
       "type": "figure",
-      "references": [
-        "Hag 1:1",
-        "Hag 2:1",
-        "Hag 2:10",
-        "Hag 2:20"
-      ],
+      "references": ["Hag 1:1", "Hag 2:1", "Hag 2:10", "Hag 2:20"],
       "category": "book-frame",
       "blurb": "Four time-stamped oracles in Darius’s second year (520 BCE) providing a precise historical scaffold."
     },
@@ -370,9 +300,7 @@
       "id": "f.oracle-#1-consider-your-ways--aea11a15",
       "name": "Oracle #1: Consider your ways",
       "type": "figure",
-      "references": [
-        "Hag 1:2-11"
-      ],
+      "references": ["Hag 1:2-11"],
       "category": "rebuke",
       "blurb": "Reproof for neglecting the house; call to bring wood and build so God may take pleasure and be glorified."
     },
@@ -380,9 +308,7 @@
       "id": "f.withheld-dew-&-drought--e6fd095a",
       "name": "Withheld dew & drought",
       "type": "figure",
-      "references": [
-        "Hag 1:10-11"
-      ],
+      "references": ["Hag 1:10-11"],
       "category": "discipline-motif",
       "blurb": "Covenant discipline expressed through environmental shortage across grain, wine, oil, and labor returns."
     },
@@ -390,9 +316,7 @@
       "id": "f.oracle-#2-i-am-with-you--5d674478",
       "name": "Oracle #2: I am with you",
       "type": "figure",
-      "references": [
-        "Hag 1:12-15"
-      ],
+      "references": ["Hag 1:12-15"],
       "category": "encouragement",
       "blurb": "Assurance of presence catalyzing obedience; spirits stirred in leaders and people."
     },
@@ -400,9 +324,7 @@
       "id": "f.small-beginnings-→-greater-glory--883da04d",
       "name": "Small beginnings → greater glory",
       "type": "figure",
-      "references": [
-        "Hag 2:3-9"
-      ],
+      "references": ["Hag 2:3-9"],
       "category": "reversal",
       "blurb": "The present house, though modest, will surpass the former in glory; peace promised in this place."
     },
@@ -410,9 +332,7 @@
       "id": "f.oracle-#3-holiness-vs-defilement-priestly-q&a--3cee330e",
       "name": "Oracle #3: Holiness vs. defilement (priestly Q&A)",
       "type": "figure",
-      "references": [
-        "Hag 2:10-14"
-      ],
+      "references": ["Hag 2:10-14"],
       "category": "legal-discernment",
       "blurb": "Two halakhic hypotheticals reveal that defilement transfers readily but holiness does not; the people’s work had been unclean."
     },
@@ -420,9 +340,7 @@
       "id": "f.oracle-#4-zerubbabel-the-signet--bdad1a9f",
       "name": "Oracle #4: Zerubbabel the signet",
       "type": "figure",
-      "references": [
-        "Hag 2:20-23"
-      ],
+      "references": ["Hag 2:20-23"],
       "category": "royal-promise",
       "blurb": "On the day of shaking, Zerubbabel is chosen as a signet ring—symbol of authority and covenant fidelity."
     },
@@ -430,10 +348,7 @@
       "id": "f.shaking-of-the-nations--e6c1f49d",
       "name": "Shaking of the nations",
       "type": "figure",
-      "references": [
-        "Hag 2:6-7",
-        "Hag 2:21-22"
-      ],
+      "references": ["Hag 2:6-7", "Hag 2:21-22"],
       "category": "cosmic-theophany",
       "blurb": "Heaven and earth, sea and dry land convulse; thrones and chariots are overthrown."
     },
@@ -441,9 +356,7 @@
       "id": "f.from-this-day-i-bless-you--5e853854",
       "name": "From this day I bless you",
       "type": "figure",
-      "references": [
-        "Hag 2:18-19"
-      ],
+      "references": ["Hag 2:18-19"],
       "category": "reversal",
       "blurb": "Turning point marked on the calendar: despite prior crop failure, blessing begins from the foundation day."
     },
@@ -451,13 +364,9 @@
       "id": "f.desire-treasures-of-all-nations--bce82192",
       "name": "Desire/Treasures of all nations",
       "type": "figure",
-      "references": [
-        "Hag 2:7"
-      ],
+      "references": ["Hag 2:7"],
       "category": "tribute",
-      "aka": [
-        "Treasures of the nations"
-      ],
+      "aka": ["Treasures of the nations"],
       "note": "Translation debated; this corpus emphasizes treasure/tribute influx while noting traditional Christological reading in some traditions.",
       "blurb": "The wealth/glory of nations comes to fill God’s house; mission-through-Temple motif."
     },
@@ -465,9 +374,7 @@
       "id": "f.signet-ring-royal-investiture--aecca62b",
       "name": "Signet ring (royal investiture)",
       "type": "figure",
-      "references": [
-        "Hag 2:23"
-      ],
+      "references": ["Hag 2:23"],
       "category": "symbol",
       "blurb": "Seal of royal authority; in Haggai, a pledge to the Davidic line embodied in Zerubbabel."
     },
@@ -475,9 +382,7 @@
       "id": "f.covenant-from-egypt-→-present-work--ae881d39",
       "name": "Covenant from Egypt → present work",
       "type": "figure",
-      "references": [
-        "Hag 2:4-5"
-      ],
+      "references": ["Hag 2:4-5"],
       "category": "covenant-continuity",
       "blurb": "The same covenant and Spirit from the Exodus undergird courage and work in the present."
     },
@@ -485,11 +390,7 @@
       "id": "e.temple-second-temple--d6a528cd",
       "name": "Temple (Second Temple)",
       "type": "entity",
-      "references": [
-        "Hag 1:8",
-        "Hag 2:3",
-        "Hag 2:9"
-      ],
+      "references": ["Hag 1:8", "Hag 2:3", "Hag 2:9"],
       "category": "cultic",
       "blurb": "Central project of Haggai; locus of divine pleasure, glory, and peace."
     },
@@ -497,9 +398,7 @@
       "id": "e.foundation-stone--8140a192",
       "name": "Foundation stone",
       "type": "entity",
-      "references": [
-        "Hag 2:18"
-      ],
+      "references": ["Hag 2:18"],
       "category": "construction",
       "blurb": "Laid as the hinge of blessing; tangible sign of work resumed."
     },
@@ -507,10 +406,7 @@
       "id": "e.altar--0b0acf47",
       "name": "Altar",
       "type": "entity",
-      "references": [
-        "Ezra 3:2-3 (context)",
-        "Hag 2:14"
-      ],
+      "references": ["Ezra 3:2-3 (context)", "Hag 2:14"],
       "category": "cultic",
       "blurb": "Sacrificial center implying need for purity; background to holiness/defilement diagnosis."
     },
@@ -518,9 +414,7 @@
       "id": "e.paneled-houses--c4becbe9",
       "name": "Paneled houses",
       "type": "entity",
-      "references": [
-        "Hag 1:4"
-      ],
+      "references": ["Hag 1:4"],
       "category": "domestic-comfort",
       "blurb": "Symbol of misaligned priorities—lavished attention on private dwellings while the house lies waste."
     },
@@ -528,9 +422,7 @@
       "id": "e.timber--45e768a9",
       "name": "Timber",
       "type": "entity",
-      "references": [
-        "Hag 1:8"
-      ],
+      "references": ["Hag 1:8"],
       "category": "material",
       "blurb": "Wood to be brought from the hills for rebuilding."
     },
@@ -538,9 +430,7 @@
       "id": "e.stone--8c28d07f",
       "name": "Stone",
       "type": "entity",
-      "references": [
-        "Hag 1:8"
-      ],
+      "references": ["Hag 1:8"],
       "category": "material",
       "blurb": "Construction material for the house; image of permanence."
     },
@@ -548,9 +438,7 @@
       "id": "e.hill-country-go-up-and-bring-wood--93d1d432",
       "name": "Hill country (go up and bring wood)",
       "type": "entity",
-      "references": [
-        "Hag 1:8"
-      ],
+      "references": ["Hag 1:8"],
       "category": "supply-chain",
       "blurb": "Source landscape for materials; obedience has logistical expression."
     },
@@ -558,9 +446,7 @@
       "id": "e.dew--0085d280",
       "name": "Dew",
       "type": "entity",
-      "references": [
-        "Hag 1:10"
-      ],
+      "references": ["Hag 1:10"],
       "category": "climate",
       "blurb": "Withheld as part of covenant discipline, reversing agrarian blessing."
     },
@@ -568,9 +454,7 @@
       "id": "e.drought--04c5628d",
       "name": "Drought",
       "type": "entity",
-      "references": [
-        "Hag 1:11"
-      ],
+      "references": ["Hag 1:11"],
       "category": "climate",
       "blurb": "Summoned against land, grain, wine, oil, men, cattle, and labor."
     },
@@ -578,9 +462,7 @@
       "id": "e.grain--4a58741c",
       "name": "Grain",
       "type": "entity",
-      "references": [
-        "Hag 1:10-11"
-      ],
+      "references": ["Hag 1:10-11"],
       "category": "produce",
       "blurb": "One of the triad of staples diminished under discipline."
     },
@@ -588,10 +470,7 @@
       "id": "e.wine--6ac692d6",
       "name": "Wine",
       "type": "entity",
-      "references": [
-        "Hag 1:11",
-        "Hag 2:12"
-      ],
+      "references": ["Hag 1:11", "Hag 2:12"],
       "category": "produce",
       "blurb": "Staple produce; also used in priestly hypotheticals."
     },
@@ -599,9 +478,7 @@
       "id": "e.oil--f29ac3ca",
       "name": "Oil",
       "type": "entity",
-      "references": [
-        "Hag 1:11"
-      ],
+      "references": ["Hag 1:11"],
       "category": "produce",
       "blurb": "Olive oil scarcity marks economic distress pre-blessing."
     },
@@ -609,9 +486,7 @@
       "id": "e.work-of-your-hands--f43338e2",
       "name": "Work of your hands",
       "type": "entity",
-      "references": [
-        "Hag 2:14"
-      ],
+      "references": ["Hag 2:14"],
       "category": "labor",
       "blurb": "Comprehensive scope of defilement prior to repentance; later blessed."
     },
@@ -619,9 +494,7 @@
       "id": "e.holy-meat--99803ab4",
       "name": "Holy meat",
       "type": "entity",
-      "references": [
-        "Hag 2:12"
-      ],
+      "references": ["Hag 2:12"],
       "category": "ritual",
       "blurb": "Consecrated flesh used as a test case for holiness transfer."
     },
@@ -629,23 +502,16 @@
       "id": "e.fold-of-a-robe--722ee7df",
       "name": "Fold of a robe",
       "type": "entity",
-      "references": [
-        "Hag 2:12"
-      ],
+      "references": ["Hag 2:12"],
       "category": "ritual",
-      "aka": [
-        "Skirt",
-        "Garment fold"
-      ],
+      "aka": ["Skirt", "Garment fold"],
       "blurb": "Carrier in the first hypothetical—does holiness transfer by contact? (Answer: no)."
     },
     {
       "id": "e.unclean-corpse--4830e7c6",
       "name": "Unclean corpse",
       "type": "entity",
-      "references": [
-        "Hag 2:13"
-      ],
+      "references": ["Hag 2:13"],
       "category": "ritual-impurity",
       "blurb": "Defilement source in the second hypothetical—uncleanness does transfer by contact."
     },
@@ -653,9 +519,7 @@
       "id": "e.skirt-garment-conduit--22d313fa",
       "name": "Skirt/garment (conduit)",
       "type": "entity",
-      "references": [
-        "Hag 2:12"
-      ],
+      "references": ["Hag 2:12"],
       "category": "ritual",
       "blurb": "Instrument in holiness test; highlights non-transfer of holiness."
     },
@@ -663,9 +527,7 @@
       "id": "e.silver-is-mine--e74ee0de",
       "name": "Silver is Mine",
       "type": "entity",
-      "references": [
-        "Hag 2:8"
-      ],
+      "references": ["Hag 2:8"],
       "category": "theology-of-wealth",
       "blurb": "Affirms divine ownership of resources mobilized for the house."
     },
@@ -673,9 +535,7 @@
       "id": "e.gold-is-mine--f6dadfa5",
       "name": "Gold is Mine",
       "type": "entity",
-      "references": [
-        "Hag 2:8"
-      ],
+      "references": ["Hag 2:8"],
       "category": "theology-of-wealth",
       "blurb": "Parallel to silver; undercuts scarcity anxiety."
     },
@@ -683,9 +543,7 @@
       "id": "e.zion--d7771d29",
       "name": "Zion",
       "type": "entity",
-      "references": [
-        "Hag 2:9 (implication)"
-      ],
+      "references": ["Hag 2:9 (implication)"],
       "category": "holy-mount",
       "blurb": "Theological locus of peace associated with the house."
     },
@@ -693,10 +551,7 @@
       "id": "e.jerusalem--23c888bc",
       "name": "Jerusalem",
       "type": "entity",
-      "references": [
-        "Hag 1:4",
-        "Hag 1:8"
-      ],
+      "references": ["Hag 1:4", "Hag 1:8"],
       "category": "city",
       "blurb": "Urban center of the rebuild and communal obedience."
     },
@@ -704,9 +559,7 @@
       "id": "e.province-of-yehud--d6396712",
       "name": "Province of Yehud",
       "type": "entity",
-      "references": [
-        "Hag 1:1"
-      ],
+      "references": ["Hag 1:1"],
       "category": "administrative",
       "blurb": "Persian province in which Judah/Jerusalem function post-exile."
     },
@@ -714,9 +567,7 @@
       "id": "e.sixth-month--808f665f",
       "name": "Sixth month",
       "type": "entity",
-      "references": [
-        "Hag 1:1"
-      ],
+      "references": ["Hag 1:1"],
       "category": "calendar",
       "blurb": "Timestamp of Oracle #1 in Darius’s second year."
     },
@@ -724,9 +575,7 @@
       "id": "e.seventh-month--96daadf4",
       "name": "Seventh month",
       "type": "entity",
-      "references": [
-        "Hag 2:1"
-      ],
+      "references": ["Hag 2:1"],
       "category": "calendar",
       "blurb": "Timestamp of Oracle #2; encouragement during Sukkot season context."
     },
@@ -734,10 +583,7 @@
       "id": "e.ninth-month--2428c7f2",
       "name": "Ninth month",
       "type": "entity",
-      "references": [
-        "Hag 2:10",
-        "Hag 2:20"
-      ],
+      "references": ["Hag 2:10", "Hag 2:20"],
       "category": "calendar",
       "blurb": "Timestamp for Oracles #3–#4; hinge for ‘from this day’ blessing."
     },
@@ -745,12 +591,7 @@
       "id": "e.twenty-fourth-day--c473aed3",
       "name": "Twenty-fourth day",
       "type": "entity",
-      "references": [
-        "Hag 1:15",
-        "Hag 2:10",
-        "Hag 2:18",
-        "Hag 2:20"
-      ],
+      "references": ["Hag 1:15", "Hag 2:10", "Hag 2:18", "Hag 2:20"],
       "category": "calendar-day",
       "blurb": "Repeated day-mark that punctuates restart of work and covenant blessing."
     },
@@ -758,9 +599,7 @@
       "id": "e.measuring-line--fe24d52e",
       "name": "Measuring line",
       "type": "entity",
-      "references": [
-        "Zech 1:16 (link)"
-      ],
+      "references": ["Zech 1:16 (link)"],
       "category": "construction-motif",
       "blurb": "Associated with rebuilding/planning; intertextual link to Zechariah’s visions."
     },
@@ -776,9 +615,7 @@
       "id": "e.foundation-measurement--d0c9eb46",
       "name": "Foundation measurement",
       "type": "entity",
-      "references": [
-        "Hag 2:18"
-      ],
+      "references": ["Hag 2:18"],
       "category": "construction-motif",
       "blurb": "Technical act marking the blessing hinge; ensures tangible progress."
     },
@@ -786,10 +623,7 @@
       "id": "e.heavens-earth-sea-dry-land-cosmic-set--7f1119b8",
       "name": "Heavens/Earth/Sea/Dry land (cosmic set)",
       "type": "entity",
-      "references": [
-        "Hag 2:6",
-        "Hag 2:21-22"
-      ],
+      "references": ["Hag 2:6", "Hag 2:21-22"],
       "category": "cosmic",
       "blurb": "The entire created order addressed in the shaking—signals theophanic sovereignty."
     },
@@ -797,10 +631,7 @@
       "id": "e.presence-theology-i-am-with-you--cc473d31",
       "name": "Presence theology: I am with you",
       "type": "entity",
-      "references": [
-        "Hag 1:13",
-        "Hag 2:4"
-      ],
+      "references": ["Hag 1:13", "Hag 2:4"],
       "category": "theology",
       "blurb": "Divine presence as the primary motivator and comfort for obedience."
     },
@@ -808,9 +639,7 @@
       "id": "e.spirit-stirs-the-people--82399bd0",
       "name": "Spirit stirs the people",
       "type": "entity",
-      "references": [
-        "Hag 1:14"
-      ],
+      "references": ["Hag 1:14"],
       "category": "pneumatology",
       "blurb": "Personal agency of the Spirit energizes leadership and laity."
     },
@@ -818,9 +647,7 @@
       "id": "e.holiness-&-defilement-transfer-logic--932d3695",
       "name": "Holiness & defilement transfer logic",
       "type": "entity",
-      "references": [
-        "Hag 2:11-14"
-      ],
+      "references": ["Hag 2:11-14"],
       "category": "ritual-theology",
       "blurb": "Hermeneutic key: impurity spreads; holiness requires consecration and obedience."
     },
@@ -828,9 +655,7 @@
       "id": "e.greater-glory-of-this-house--ef2da18f",
       "name": "Greater glory of this house",
       "type": "entity",
-      "references": [
-        "Hag 2:9"
-      ],
+      "references": ["Hag 2:9"],
       "category": "temple-theology",
       "blurb": "Promise that presence and peace confer a surpassing glory on the second house."
     },
@@ -838,22 +663,16 @@
       "id": "e.shaking-once-more-heb-1226–27--9e773752",
       "name": "Shaking once more (Heb 12:26–27)",
       "type": "entity",
-      "references": [
-        "Hag 2:6-7"
-      ],
+      "references": ["Hag 2:6-7"],
       "category": "reception-christian",
-      "cross_references": [
-        "Heb 12:26-27"
-      ],
+      "cross_references": ["Heb 12:26-27"],
       "blurb": "New Testament reads Haggai’s shaking as eschatological removal of the shakable to reveal the unshakable kingdom."
     },
     {
       "id": "e.zerubbabel-and-the-davidic-hope--2e22a075",
       "name": "Zerubbabel and the Davidic hope",
       "type": "entity",
-      "references": [
-        "Hag 2:23"
-      ],
+      "references": ["Hag 2:23"],
       "category": "messianic-horizon",
       "blurb": "Signet promise sustains expectation of Davidic restoration without immediate enthronement."
     },
@@ -861,9 +680,7 @@
       "id": "e.temple-as-mission-center--d620df44",
       "name": "Temple as mission center",
       "type": "entity",
-      "references": [
-        "Hag 2:7-9"
-      ],
+      "references": ["Hag 2:7-9"],
       "category": "missional-theology",
       "blurb": "Nations’ treasures flow to the house; peace radiates from God’s presence in Zion."
     },
@@ -871,9 +688,7 @@
       "id": "e.ezra-5–6-coordination--a473265c",
       "name": "Ezra 5–6 coordination",
       "type": "entity",
-      "references": [
-        "Ezra 5–6"
-      ],
+      "references": ["Ezra 5–6"],
       "category": "historical-link",
       "blurb": "Imperial verification and decrees align with prophetic impetus to complete the Temple."
     },
@@ -881,9 +696,7 @@
       "id": "e.zechariah-1–8-coordination--93e40792",
       "name": "Zechariah 1–8 coordination",
       "type": "entity",
-      "references": [
-        "Zech 1–8"
-      ],
+      "references": ["Zech 1–8"],
       "category": "prophetic-link",
       "blurb": "Parallel prophetic window with shared leaders, temple vision, and eschatological encouragement."
     }

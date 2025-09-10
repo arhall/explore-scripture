@@ -1,233 +1,262 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <title>{% if title %}{{ title }} - Explore Scripture{% else %}{{ renderData.title or metadata.title }}{% endif %}</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Critical CSS will be inlined by CSS optimizer -->
-  <link rel="preload" href="/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="/styles.css"></noscript>
-  
-  <!-- PWA Manifest -->
-  <link rel="manifest" href="/manifest.json">
-  
-  <!-- Apple PWA Support -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="Explore Scripture">
-  <link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
-  
-  <!-- Microsoft PWA Support -->
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="msapplication-TileImage" content="/assets/icons/icon-144x144.png">
-  
-  {% if description %}<meta name="description" content="{{ description }}">{% endif %}
-</head>
-<body>
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-brand" href="/">Explore Scripture</a>
-      <div class="nav-links">
-        <a href="/categories/" class="nav-link {% if page.url == '/categories/' or page.url.startsWith('/categories/') %}active{% endif %}">Sections</a>
-        <a href="/gospel-thread/" class="nav-link {% if page.url == '/gospel-thread/' %}active{% endif %}">Gospel Thread</a>
-        <a href="/genealogy/" class="nav-link {% if page.url == '/genealogy/' %}active{% endif %}">Genealogy</a>
-        <a href="/links/" class="nav-link {% if page.url == '/links/' %}active{% endif %}">Links</a>
-        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-          <span class="theme-icon">🌙</span>
-        </button>
-      </div>
-    </nav>
-    
-    {{ content | safe }}
-  </div>
-  
-  <!-- Performance Optimization Scripts -->
-  <script src="/assets/css-optimizer.js" async></script>
-  <script src="/assets/image-optimizer.js" async></script>
-  <script src="/assets/module-loader.js"></script>
-  
-  <script>
-    // PWA Variables
-    let deferredPrompt;
-    let installButton;
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <title>
+      {% if title %}{{ title }} - Explore Scripture{% else %}{{ renderData.title or metadata.title
+      }}{% endif %}
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Critical CSS will be inlined by CSS optimizer -->
+    <link
+      rel="preload"
+      href="/styles.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="/styles.css" /></noscript>
 
-    // Service Worker Registration
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/sw.js')
-          .then(function(registration) {
-            console.log('[PWA] Service Worker registered successfully:', registration.scope);
-            
-            // Check for updates
-            registration.addEventListener('updatefound', () => {
-              const newWorker = registration.installing;
-              newWorker.addEventListener('statechange', () => {
-                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                  // New content is available, notify user
-                  showUpdateNotification();
-                }
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Apple PWA Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Explore Scripture" />
+    <link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png" />
+
+    <!-- Microsoft PWA Support -->
+    <meta name="msapplication-TileColor" content="#2563eb" />
+    <meta name="msapplication-TileImage" content="/assets/icons/icon-144x144.png" />
+
+    {% if description %}
+    <meta name="description" content="{{ description }}" />
+    {% endif %}
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <a class="nav-brand" href="/">Explore Scripture</a>
+        <div class="nav-links">
+          <a
+            href="/categories/"
+            class="nav-link {% if page.url == '/categories/' or page.url.startsWith('/categories/') %}active{% endif %}"
+            >Sections</a
+          >
+          <a
+            href="/gospel-thread/"
+            class="nav-link {% if page.url == '/gospel-thread/' %}active{% endif %}"
+            >Gospel Thread</a
+          >
+          <a href="/genealogy/" class="nav-link {% if page.url == '/genealogy/' %}active{% endif %}"
+            >Genealogy</a
+          >
+          <a href="/links/" class="nav-link {% if page.url == '/links/' %}active{% endif %}"
+            >Links</a
+          >
+          <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+            <span class="theme-icon">🌙</span>
+          </button>
+        </div>
+      </nav>
+
+      {{ content | safe }}
+    </div>
+
+    <!-- Performance Optimization Scripts -->
+    <script src="/assets/css-optimizer.js" async></script>
+    <script src="/assets/image-optimizer.js" async></script>
+    <script src="/assets/module-loader.js"></script>
+
+    <script>
+      // PWA Variables
+      let deferredPrompt;
+      let installButton;
+
+      // Service Worker Registration
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker
+            .register('/sw.js')
+            .then(function (registration) {
+              console.log('[PWA] Service Worker registered successfully:', registration.scope);
+
+              // Check for updates
+              registration.addEventListener('updatefound', () => {
+                const newWorker = registration.installing;
+                newWorker.addEventListener('statechange', () => {
+                  if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                    // New content is available, notify user
+                    showUpdateNotification();
+                  }
+                });
               });
+            })
+            .catch(function (error) {
+              console.log('[PWA] Service Worker registration failed:', error);
             });
-          })
-          .catch(function(error) {
-            console.log('[PWA] Service Worker registration failed:', error);
-          });
+        });
+      }
+
+      // PWA Install Prompt
+      window.addEventListener('beforeinstallprompt', function (e) {
+        e.preventDefault();
+        deferredPrompt = e;
+        showInstallButton();
       });
-    }
 
-    // PWA Install Prompt
-    window.addEventListener('beforeinstallprompt', function(e) {
-      e.preventDefault();
-      deferredPrompt = e;
-      showInstallButton();
-    });
-
-    // Show install button
-    function showInstallButton() {
-      // Only show if not already in standalone mode
-      if (!window.matchMedia('(display-mode: standalone)').matches && !window.navigator.standalone) {
-        const installBanner = document.createElement('div');
-        installBanner.className = 'pwa-install-banner';
-        installBanner.innerHTML = `
+      // Show install button
+      function showInstallButton() {
+        // Only show if not already in standalone mode
+        if (
+          !window.matchMedia('(display-mode: standalone)').matches &&
+          !window.navigator.standalone
+        ) {
+          const installBanner = document.createElement('div');
+          installBanner.className = 'pwa-install-banner';
+          installBanner.innerHTML = `
           <div class="install-content">
             <span class="install-text">📱 Install Explore Scripture for offline access</span>
             <button class="install-btn" onclick="installPWA()" aria-label="Install Explore Scripture as an app">Install</button>
             <button class="dismiss-btn" onclick="dismissInstall()" aria-label="Dismiss install prompt">×</button>
           </div>
         `;
-        document.body.appendChild(installBanner);
-        
-        // Auto-hide after 10 seconds if user hasn't interacted
-        setTimeout(() => {
-          if (document.querySelector('.pwa-install-banner')) {
+          document.body.appendChild(installBanner);
+
+          // Auto-hide after 10 seconds if user hasn't interacted
+          setTimeout(() => {
+            if (document.querySelector('.pwa-install-banner')) {
+              dismissInstall();
+            }
+          }, 10000);
+        }
+      }
+
+      // Install PWA
+      function installPWA() {
+        if (deferredPrompt) {
+          deferredPrompt.prompt();
+          deferredPrompt.userChoice.then(function (choiceResult) {
+            console.log('[PWA] User choice:', choiceResult.outcome);
+            if (choiceResult.outcome === 'accepted') {
+              console.log('[PWA] User accepted the install prompt');
+            }
+            deferredPrompt = null;
             dismissInstall();
-          }
-        }, 10000);
+          });
+        }
       }
-    }
 
-    // Install PWA
-    function installPWA() {
-      if (deferredPrompt) {
-        deferredPrompt.prompt();
-        deferredPrompt.userChoice.then(function(choiceResult) {
-          console.log('[PWA] User choice:', choiceResult.outcome);
-          if (choiceResult.outcome === 'accepted') {
-            console.log('[PWA] User accepted the install prompt');
-          }
-          deferredPrompt = null;
-          dismissInstall();
-        });
+      // Dismiss install banner
+      function dismissInstall() {
+        const banner = document.querySelector('.pwa-install-banner');
+        if (banner) {
+          banner.remove();
+        }
+        // Remember user dismissed, don't show again for this session
+        sessionStorage.setItem('pwa-install-dismissed', 'true');
       }
-    }
 
-    // Dismiss install banner
-    function dismissInstall() {
-      const banner = document.querySelector('.pwa-install-banner');
-      if (banner) {
-        banner.remove();
-      }
-      // Remember user dismissed, don't show again for this session
-      sessionStorage.setItem('pwa-install-dismissed', 'true');
-    }
-
-    // Show update notification
-    function showUpdateNotification() {
-      const updateBanner = document.createElement('div');
-      updateBanner.className = 'pwa-update-banner';
-      updateBanner.innerHTML = `
+      // Show update notification
+      function showUpdateNotification() {
+        const updateBanner = document.createElement('div');
+        updateBanner.className = 'pwa-update-banner';
+        updateBanner.innerHTML = `
         <div class="update-content">
           <span class="update-text">🔄 New content available</span>
           <button class="update-btn" onclick="refreshForUpdate()" aria-label="Refresh to get latest content">Refresh</button>
           <button class="dismiss-btn" onclick="dismissUpdate()" aria-label="Dismiss update notification">×</button>
         </div>
       `;
-      document.body.appendChild(updateBanner);
-    }
-
-    // Refresh for update
-    function refreshForUpdate() {
-      window.location.reload();
-    }
-
-    // Dismiss update banner
-    function dismissUpdate() {
-      const banner = document.querySelector('.pwa-update-banner');
-      if (banner) {
-        banner.remove();
-      }
-    }
-
-    // Theme toggle functionality
-    function toggleTheme() {
-      const html = document.documentElement;
-      const currentTheme = html.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      
-      html.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-      
-      // Update theme toggle icon
-      const themeIcon = document.querySelector('.theme-icon');
-      if (themeIcon) {
-        themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
-      }
-    }
-
-    // Initialize theme and PWA on page load
-    document.addEventListener('DOMContentLoaded', function() {
-      const savedTheme = localStorage.getItem('theme');
-      // Default to dark mode (changed from light mode default)
-      const initialTheme = savedTheme || 'dark';
-      
-      document.documentElement.setAttribute('data-theme', initialTheme);
-      
-      // Update theme toggle icon
-      const themeIcon = document.querySelector('.theme-icon');
-      if (themeIcon) {
-        themeIcon.textContent = initialTheme === 'dark' ? '☀️' : '🌙';
+        document.body.appendChild(updateBanner);
       }
 
-      // Check if user previously dismissed install prompt
-      if (!sessionStorage.getItem('pwa-install-dismissed') && deferredPrompt) {
-        showInstallButton();
+      // Refresh for update
+      function refreshForUpdate() {
+        window.location.reload();
       }
 
-      // Listen for service worker messages
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.addEventListener('message', function(event) {
-          if (event.data.type === 'BACK_ONLINE') {
-            console.log('[PWA] Back online, syncing data');
-            // Could show a "back online" notification here
-          }
-        });
+      // Dismiss update banner
+      function dismissUpdate() {
+        const banner = document.querySelector('.pwa-update-banner');
+        if (banner) {
+          banner.remove();
+        }
       }
-    });
 
-    // Handle online/offline status
-    window.addEventListener('online', function() {
-      console.log('[PWA] Back online');
-      // Remove offline indicator if present
-      const offlineIndicator = document.querySelector('.offline-indicator');
-      if (offlineIndicator) {
-        offlineIndicator.remove();
-      }
-    });
+      // Theme toggle functionality
+      function toggleTheme() {
+        const html = document.documentElement;
+        const currentTheme = html.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
-    window.addEventListener('offline', function() {
-      console.log('[PWA] Offline mode');
-      // Show offline indicator
-      if (!document.querySelector('.offline-indicator')) {
-        const indicator = document.createElement('div');
-        indicator.className = 'offline-indicator';
-        indicator.innerHTML = '📴 Offline - Using cached content';
-        document.body.appendChild(indicator);
+        html.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+
+        // Update theme toggle icon
+        const themeIcon = document.querySelector('.theme-icon');
+        if (themeIcon) {
+          themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        }
       }
-    });
-  </script>
-</body>
+
+      // Initialize theme and PWA on page load
+      document.addEventListener('DOMContentLoaded', function () {
+        const savedTheme = localStorage.getItem('theme');
+        // Default to dark mode (changed from light mode default)
+        const initialTheme = savedTheme || 'dark';
+
+        document.documentElement.setAttribute('data-theme', initialTheme);
+
+        // Update theme toggle icon
+        const themeIcon = document.querySelector('.theme-icon');
+        if (themeIcon) {
+          themeIcon.textContent = initialTheme === 'dark' ? '☀️' : '🌙';
+        }
+
+        // Check if user previously dismissed install prompt
+        if (!sessionStorage.getItem('pwa-install-dismissed') && deferredPrompt) {
+          showInstallButton();
+        }
+
+        // Listen for service worker messages
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.addEventListener('message', function (event) {
+            if (event.data.type === 'BACK_ONLINE') {
+              console.log('[PWA] Back online, syncing data');
+              // Could show a "back online" notification here
+            }
+          });
+        }
+      });
+
+      // Handle online/offline status
+      window.addEventListener('online', function () {
+        console.log('[PWA] Back online');
+        // Remove offline indicator if present
+        const offlineIndicator = document.querySelector('.offline-indicator');
+        if (offlineIndicator) {
+          offlineIndicator.remove();
+        }
+      });
+
+      window.addEventListener('offline', function () {
+        console.log('[PWA] Offline mode');
+        // Show offline indicator
+        if (!document.querySelector('.offline-indicator')) {
+          const indicator = document.createElement('div');
+          indicator.className = 'offline-indicator';
+          indicator.innerHTML = '📴 Offline - Using cached content';
+          document.body.appendChild(indicator);
+        }
+      });
+    </script>
+  </body>
 </html>

@@ -186,12 +186,7 @@
     },
     {
       "section": "Cherubim Faces (Ezek 1,10)",
-      "entries": [
-        "Cherub face: man",
-        "Cherub face: lion",
-        "Cherub face: ox",
-        "Cherub face: eagle"
-      ]
+      "entries": ["Cherub face: man", "Cherub face: lion", "Cherub face: ox", "Cherub face: eagle"]
     },
     {
       "section": "Additional Tyre Traders and Mercenaries",
@@ -213,9 +208,7 @@
     },
     {
       "section": "Specific Pharaoh Identification",
-      "entries": [
-        "Pharaoh Hophra (Apries)"
-      ]
+      "entries": ["Pharaoh Hophra (Apries)"]
     },
     {
       "section": "Expanded Gog Confederacy",
@@ -229,9 +222,7 @@
     },
     {
       "section": "Watchman Motif",
-      "entries": [
-        "Prophet as Watchman"
-      ]
+      "entries": ["Prophet as Watchman"]
     },
     {
       "section": "Allegory of Jerusalem as Bride (Ch 16) in Stages",
@@ -244,10 +235,7 @@
     },
     {
       "section": "Oholah & Oholibah Distinguished",
-      "entries": [
-        "Oholah (Samaria)",
-        "Oholibah (Jerusalem)"
-      ]
+      "entries": ["Oholah (Samaria)", "Oholibah (Jerusalem)"]
     },
     {
       "section": "Additional Chronology Markers",
@@ -303,9 +291,7 @@
     {
       "name": "Ezekiel son of Buzi",
       "type": "person",
-      "references": [
-        "Ezekiel 1:1–3; 2–3; 33:21–22; 40:1–4"
-      ],
+      "references": ["Ezekiel 1:1–3; 2–3; 33:21–22; 40:1–4"],
       "blurb": "Priest‑prophet among the exiles by the Chebar canal. Commissioned by the Glory to speak to a hard‑foreheaded people; his body and biography become the message.",
       "relations": {
         "father": "Buzi",
@@ -317,9 +303,7 @@
     {
       "name": "Buzi (father of Ezekiel)",
       "type": "person",
-      "references": [
-        "Ezekiel 1:3"
-      ],
+      "references": ["Ezekiel 1:3"],
       "blurb": "Priestly father whose name signals Ezekiel’s temple literacy and passion for holiness.",
       "relations": {
         "son": "Ezekiel"
@@ -330,9 +314,7 @@
     {
       "name": "Ezekiel’s wife (‘the delight of your eyes’)",
       "type": "person",
-      "references": [
-        "Ezekiel 24:15–27"
-      ],
+      "references": ["Ezekiel 24:15–27"],
       "blurb": "Her sudden death becomes a sign: as the temple—the people’s delight—is taken away, mourning is muted; grief turns theological.",
       "relations": {
         "husband": "Ezekiel"
@@ -343,9 +325,7 @@
     {
       "name": "Elders of Israel in exile (inquirers)",
       "type": "group",
-      "references": [
-        "Ezekiel 8:1; 14:1; 20:1"
-      ],
+      "references": ["Ezekiel 8:1; 14:1; 20:1"],
       "blurb": "Leaders who come seeking a word yet are confronted with their idolatry; inquiry without obedience is judged.",
       "category": "elders",
       "id": "g.elders-of-israel-in-exile.inquirers--9103aa87"
@@ -353,9 +333,7 @@
     {
       "name": "Exilic community by the Chebar canal",
       "type": "group",
-      "references": [
-        "Ezekiel 1:1; 3:15; 33:30–33"
-      ],
+      "references": ["Ezekiel 1:1; 3:15; 33:30–33"],
       "blurb": "Audience of Ezekiel’s sign‑acts; neighbors who talk about the prophet as a performer but must heed his words to live.",
       "category": "diaspora",
       "id": "g.exilic-community-by-the-chebar-canal--4921e3da"
@@ -363,9 +341,7 @@
     {
       "name": "The sighing man (marked remnant)",
       "type": "figure",
-      "references": [
-        "Ezekiel 9:4"
-      ],
+      "references": ["Ezekiel 9:4"],
       "blurb": "Those who grieve abominations receive a protective mark—judgment discriminates by contrition.",
       "category": "remnant",
       "id": "f.the-sighing-man.marked-remnant--4ce3e28a"
@@ -373,9 +349,7 @@
     {
       "name": "False prophets of Israel",
       "type": "group",
-      "references": [
-        "Ezekiel 13:1–16"
-      ],
+      "references": ["Ezekiel 13:1–16"],
       "blurb": "Whitewash flimsy walls; promise peace where there is none—prophecy as PR is dismantled by storm.",
       "category": "false-prophet",
       "id": "g.false-prophets-of-israel--18fda1d3"
@@ -383,9 +357,7 @@
     {
       "name": "Prophetesses with bands and veils",
       "type": "group",
-      "references": [
-        "Ezekiel 13:17–23"
-      ],
+      "references": ["Ezekiel 13:17–23"],
       "blurb": "Women who ensnare souls with magical paraphernalia; God tears off the charms to free the hunted life.",
       "category": "occult",
       "id": "g.prophetesses-with-bands-and-veils--e5b23000"
@@ -393,9 +365,7 @@
     {
       "name": "Jehoiachin (Jeconiah) in exile",
       "type": "person",
-      "references": [
-        "Ezekiel 1:2; 33:21; 40:1"
-      ],
+      "references": ["Ezekiel 1:2; 33:21; 40:1"],
       "blurb": "Exiled Davidic king whose reign marks Ezekiel’s dates—a living reminder that the monarchy is under judgment yet preserved.",
       "relations": {
         "status": "exile",
@@ -407,9 +377,7 @@
     {
       "name": "Zedekiah (‘prince in Jerusalem’)",
       "type": "person",
-      "references": [
-        "Ezekiel 12:10–13; 17:11–21"
-      ],
+      "references": ["Ezekiel 12:10–13; 17:11–21"],
       "blurb": "Covenant‑breaker who seeks Egypt; Ezekiel predicts his capture and blindness—oath‑breaking as sacrilege.",
       "category": "king",
       "id": "p.zedekiah.prince-in-jerusalem--e701970b"
@@ -417,9 +385,7 @@
     {
       "name": "Nebuchadnezzar II of Babylon (‘king of kings’)",
       "type": "person",
-      "references": [
-        "Ezekiel 26:7; 29:18–20; 30:10"
-      ],
+      "references": ["Ezekiel 26:7; 29:18–20; 30:10"],
       "blurb": "Instrument of God’s justice against Tyre and Egypt; even empire’s wages are reckoned by the LORD.",
       "relations": {
         "empire": "Babylon"
@@ -430,9 +396,7 @@
     {
       "name": "Pharaoh (Hophra/Apries horizon)",
       "type": "person",
-      "references": [
-        "Ezekiel 29–32"
-      ],
+      "references": ["Ezekiel 29–32"],
       "blurb": "Self‑exalting ruler pictured as a Nile monster; his arm is broken, his pride felled—Egypt’s mythic power is leashed.",
       "relations": {
         "kingdom": "Egypt"
@@ -443,9 +407,7 @@
     {
       "name": "Prince of Tyre",
       "type": "person",
-      "references": [
-        "Ezekiel 28:1–10"
-      ],
+      "references": ["Ezekiel 28:1–10"],
       "blurb": "Human ruler deified by commerce and wisdom; reminded he is but a man before the God he mimics.",
       "relations": {
         "city": "Tyre"
@@ -456,9 +418,7 @@
     {
       "name": "King of Tyre (lament figure)",
       "type": "person",
-      "references": [
-        "Ezekiel 28:11–19"
-      ],
+      "references": ["Ezekiel 28:11–19"],
       "blurb": "Lament paints primeval splendor and downfall; royal hubris reads like an Adamic recapitulation in a trading empire’s key.",
       "relations": {
         "city": "Tyre"
@@ -469,9 +429,7 @@
     {
       "name": "Prince of Egypt",
       "type": "person",
-      "references": [
-        "Ezekiel 30:13–19"
-      ],
+      "references": ["Ezekiel 30:13–19"],
       "blurb": "Target of judgment oracles; cities crumble and idols cease—political power is theological.",
       "relations": {
         "kingdom": "Egypt"
@@ -482,9 +440,7 @@
     {
       "name": "King of Sidon",
       "type": "person",
-      "references": [
-        "Ezekiel 28:20–24"
-      ],
+      "references": ["Ezekiel 28:20–24"],
       "blurb": "Brief oracle: judgment purges scorn; Israel’s neighbors become sanctifying instruments not thorns.",
       "relations": {
         "city": "Sidon"
@@ -495,9 +451,7 @@
     {
       "name": "Ammon (Ezekiel)",
       "type": "group",
-      "references": [
-        "Ezekiel 25:1–7"
-      ],
+      "references": ["Ezekiel 25:1–7"],
       "blurb": "Glee at Israel’s demise is rebuked; desolation and Moabite possession follow—schadenfreude is a policy God overturns.",
       "category": "nation",
       "id": "g.ammon.jeremiah--e3cb1d55"
@@ -505,9 +459,7 @@
     {
       "name": "Moab (Ezekiel)",
       "type": "group",
-      "references": [
-        "Ezekiel 25:8–11"
-      ],
+      "references": ["Ezekiel 25:8–11"],
       "blurb": "‘Judah is like all nations’—Moab’s leveling taunt elicits a surgical judgment that opens Israel to vindication.",
       "category": "nation",
       "id": "g.moab--0526e590"
@@ -515,9 +467,7 @@
     {
       "name": "Edom (Ezekiel)",
       "type": "group",
-      "references": [
-        "Ezekiel 25:12–14; 35"
-      ],
+      "references": ["Ezekiel 25:12–14; 35"],
       "blurb": "Perpetual enmity targeted; Mount Seir becomes a desolation—violence against Israel ricochets against Edom.",
       "category": "nation",
       "id": "g.edom.bozrah--286918d3"
@@ -525,9 +475,7 @@
     {
       "name": "Philistia (Ezekiel)",
       "type": "group",
-      "references": [
-        "Ezekiel 25:15–17"
-      ],
+      "references": ["Ezekiel 25:15–17"],
       "blurb": "Old hostilities meet new retribution; vengeance with wrath teaches YHWH’s identity among the nations.",
       "category": "nation",
       "id": "g.philistia--5497e6d6"
@@ -535,9 +483,7 @@
     {
       "name": "Tyre (city and network)",
       "type": "group",
-      "references": [
-        "Ezekiel 26–28"
-      ],
+      "references": ["Ezekiel 26–28"],
       "blurb": "Maritime hub whose trade web (ch. 27) maps the world’s desires; when the hub falls, the economy mourns like a funeral at sea.",
       "category": "city",
       "id": "g.tyre.phoenicia--26eb5064"
@@ -545,9 +491,7 @@
     {
       "name": "Sidon (Ezekiel)",
       "type": "group",
-      "references": [
-        "Ezekiel 28:20–24"
-      ],
+      "references": ["Ezekiel 28:20–24"],
       "blurb": "Nearby power pruned of pride—Israel’s neighborhood will be cleansed of contempt.",
       "category": "city",
       "id": "g.sidon.ezekiel--720ef745"
@@ -555,9 +499,7 @@
     {
       "name": "Egypt (Ezekiel)",
       "type": "group",
-      "references": [
-        "Ezekiel 29–32"
-      ],
+      "references": ["Ezekiel 29–32"],
       "blurb": "River kingdom pictured as a crocodile; boasts of the Nile are broken; she descends among the slain in the netherworld laments.",
       "category": "nation",
       "id": "g.egypt--ab1ad00f"
@@ -565,9 +507,7 @@
     {
       "name": "Assyria as a towering cedar",
       "type": "group",
-      "references": [
-        "Ezekiel 31:1–18"
-      ],
+      "references": ["Ezekiel 31:1–18"],
       "blurb": "Once lofty above the nations, felled by the ruthless of the nations—parable for Egypt and all proud trees.",
       "category": "nation",
       "id": "g.assyria-as-a-towering-cedar--ddf88a81"
@@ -575,9 +515,7 @@
     {
       "name": "House of Israel (Ezekiel)",
       "type": "group",
-      "references": [
-        "Ezekiel (passim)"
-      ],
+      "references": ["Ezekiel (passim)"],
       "blurb": "Corporate covenant identity addressed in judgment and hope; the goal is a heart that knows the LORD.",
       "category": "covenant",
       "id": "g.house-of-israel.ezekiel--113fadef"
@@ -585,9 +523,7 @@
     {
       "name": "House of Judah (Ezekiel)",
       "type": "group",
-      "references": [
-        "Ezekiel (passim)"
-      ],
+      "references": ["Ezekiel (passim)"],
       "blurb": "Southern kingdom as distinct addressee; responsibility is personal (ch. 18) yet never isolated from communal calling.",
       "category": "covenant",
       "id": "g.house-of-judah.ezekiel--2124637d"
@@ -595,9 +531,7 @@
     {
       "name": "Remnant spared for witness",
       "type": "group",
-      "references": [
-        "Ezekiel 6:8–10; 14:22–23"
-      ],
+      "references": ["Ezekiel 6:8–10; 14:22–23"],
       "blurb": "Survivors confess idols were vain; their testimony justifies God and seeds renewal.",
       "category": "remnant",
       "id": "g.remnant-spared-for-witness--6241b625"
@@ -605,9 +539,7 @@
     {
       "name": "Shepherds of Israel (bad leaders)",
       "type": "group",
-      "references": [
-        "Ezekiel 34:1–10"
-      ],
+      "references": ["Ezekiel 34:1–10"],
       "blurb": "Feed themselves, not the flock; God Himself will shepherd—and set over them David my servant.",
       "category": "leadership",
       "id": "g.shepherds-of-israel.leaders--15a7dce7"
@@ -615,9 +547,7 @@
     {
       "name": "Flock of the LORD (rescued)",
       "type": "group",
-      "references": [
-        "Ezekiel 34:11–22"
-      ],
+      "references": ["Ezekiel 34:11–22"],
       "blurb": "YHWH seeks the strayed, heals the injured, and judges fat and lean sheep—justice as pastoral care.",
       "category": "people",
       "id": "g.flock-of-the-lord.rescued--637e9574"
@@ -625,9 +555,7 @@
     {
       "name": "Sons of Zadok (faithful priests)",
       "type": "group",
-      "references": [
-        "Ezekiel 40–46; esp. 44:15–31"
-      ],
+      "references": ["Ezekiel 40–46; esp. 44:15–31"],
       "blurb": "Priestly line kept from idolatry; entrusted with altar service in the future temple—holiness institutionalized.",
       "category": "priesthood",
       "id": "g.sons-of-zadok.faithful-priests--0be21e8a"
@@ -635,9 +563,7 @@
     {
       "name": "Levites who went astray",
       "type": "group",
-      "references": [
-        "Ezekiel 44:10–14"
-      ],
+      "references": ["Ezekiel 44:10–14"],
       "blurb": "Still serve, but at a distance; their unfaithfulness reorders cultic proximity—mercy with memory.",
       "category": "priesthood",
       "id": "g.levites-who-went-astray--591ecb49"
@@ -645,9 +571,7 @@
     {
       "name": "Princes of the land (allotments)",
       "type": "group",
-      "references": [
-        "Ezekiel 45–46"
-      ],
+      "references": ["Ezekiel 45–46"],
       "blurb": "A prince bounded by just weights and land rights—royal power tamed by holiness and equity.",
       "category": "leadership",
       "id": "g.princes-of-the-land.allotments--0aa125e1"
@@ -655,9 +579,7 @@
     {
       "name": "Merchants and mariners of Tyre",
       "type": "group",
-      "references": [
-        "Ezekiel 27"
-      ],
+      "references": ["Ezekiel 27"],
       "blurb": "From Tarshish to Javan, a chorus of traders mourns the sinking of a globalized economy—commerce is not neutral in prophetic ethics.",
       "category": "economy",
       "id": "g.merchants-and-mariners-of-tyre--71f7be08"
@@ -665,9 +587,7 @@
     {
       "name": "Women weeping for Tammuz",
       "type": "group",
-      "references": [
-        "Ezekiel 8:14"
-      ],
+      "references": ["Ezekiel 8:14"],
       "blurb": "Cult of dying‑rising god intrudes the temple; grief rituals co‑opted for idolatry.",
       "category": "idolatry",
       "id": "g.women-weeping-for-tammuz--4224e705"
@@ -675,9 +595,7 @@
     {
       "name": "Seventy elders with censers",
       "type": "group",
-      "references": [
-        "Ezekiel 8:11"
-      ],
+      "references": ["Ezekiel 8:11"],
       "blurb": "Incense before carved images in the temple’s dark rooms—leadership hypocrisy unmasked.",
       "category": "idolatry",
       "id": "g.seventy-elders-with-censers--113a58f7"
@@ -685,9 +603,7 @@
     {
       "name": "Twenty‑five men worshiping the sun",
       "type": "group",
-      "references": [
-        "Ezekiel 8:16"
-      ],
+      "references": ["Ezekiel 8:16"],
       "blurb": "Backs to the temple, faces east—cosmic treason in the inner court; creation worship replaces Creator.",
       "category": "idolatry",
       "id": "g.twenty-five-men-worshiping-the-sun--ee8ecea2"
@@ -695,9 +611,7 @@
     {
       "name": "Glory of the LORD (kavod) — appearing in Babylon",
       "type": "divine",
-      "references": [
-        "Ezekiel 1:1–28"
-      ],
+      "references": ["Ezekiel 1:1–28"],
       "blurb": "Storm‑throne chariot with living creatures and wheels within wheels; the God of Israel is mobile, sovereign in exile.",
       "category": "theophany",
       "id": "d.glory-of-the-lord-appearing-in-babylon.kavod--c4d80731"
@@ -705,9 +619,7 @@
     {
       "name": "Glory departs the temple",
       "type": "divine",
-      "references": [
-        "Ezekiel 10:1–22; 11:22–25"
-      ],
+      "references": ["Ezekiel 10:1–22; 11:22–25"],
       "blurb": "From threshold to east gate to the mount—presence withdraws in stages; judgment explained as relational rupture.",
       "category": "theophany",
       "id": "d.glory-departs-the-temple--f40b39d9"
@@ -715,9 +627,7 @@
     {
       "name": "Glory returns to the new temple",
       "type": "divine",
-      "references": [
-        "Ezekiel 43:1–5"
-      ],
+      "references": ["Ezekiel 43:1–5"],
       "blurb": "The earth‑filling radiance enters by the east gate; the sanctuary becomes the axis of renewed creation.",
       "category": "theophany",
       "id": "d.glory-returns-to-the-new-temple--b7b58e01"
@@ -725,9 +635,7 @@
     {
       "name": "Living creatures / Cherubim",
       "type": "group",
-      "references": [
-        "Ezekiel 1; 10"
-      ],
+      "references": ["Ezekiel 1; 10"],
       "blurb": "Four‑faced beings bearing the throne; later named ‘cherubim’—hybrid guardians of holiness and mobility.",
       "category": "heavenly",
       "id": "g.living-creatures-cherubim--016fa89c"
@@ -735,9 +643,7 @@
     {
       "name": "Wheels within wheels, full of eyes",
       "type": "entity",
-      "references": [
-        "Ezekiel 1:15–21; 10:9–13"
-      ],
+      "references": ["Ezekiel 1:15–21; 10:9–13"],
       "blurb": "Omnidirectional movement and perception—vision of providence that sees and acts everywhere.",
       "category": "heavenly",
       "id": "e.wheels-within-wheels-full-of-eyes--7fc9a681"
@@ -745,9 +651,7 @@
     {
       "name": "Man with a measuring reed and line",
       "type": "figure",
-      "references": [
-        "Ezekiel 40:3–5; 42"
-      ],
+      "references": ["Ezekiel 40:3–5; 42"],
       "blurb": "Bronze‑like being who guides Ezekiel through the temple tour—order, proportion, and holiness measured out.",
       "category": "angelic",
       "id": "f.man-with-a-measuring-reed-and-line--ef5197c3"
@@ -755,9 +659,7 @@
     {
       "name": "Man clothed in linen with writing kit",
       "type": "figure",
-      "references": [
-        "Ezekiel 9:2–11"
-      ],
+      "references": ["Ezekiel 9:2–11"],
       "blurb": "Marks the mourners; executes judgment protocol—liturgy and justice coordinated by heaven.",
       "category": "angelic",
       "id": "f.man-clothed-in-linen-with-writing-kit--28fb178f"
@@ -765,9 +667,7 @@
     {
       "name": "Hand of the LORD / Spirit transportations",
       "type": "entity",
-      "references": [
-        "Ezekiel 3:14; 8:3; 11:1; 37:1; 40:1–2"
-      ],
+      "references": ["Ezekiel 3:14; 8:3; 11:1; 37:1; 40:1–2"],
       "blurb": "Prophetic ecstasy moves Ezekiel across spaces and scenes; revelation is embodied relocation.",
       "category": "experience",
       "id": "e.hand-of-the-lord-spirit-transportations--974a7e05"
@@ -775,9 +675,7 @@
     {
       "name": "River of life from the temple",
       "type": "entity",
-      "references": [
-        "Ezekiel 47:1–12"
-      ],
+      "references": ["Ezekiel 47:1–12"],
       "blurb": "Trickles to a torrent healing the Dead Sea; trees bear fruit monthly—creation renewed from the holy presence.",
       "category": "restoration",
       "id": "e.river-of-life-from-the-temple--dc11fd8e"
@@ -785,9 +683,7 @@
     {
       "name": "Eating the scroll (sweet/bitter calling)",
       "type": "entity",
-      "references": [
-        "Ezekiel 2:8–3:3"
-      ],
+      "references": ["Ezekiel 2:8–3:3"],
       "blurb": "The prophet internalizes the message; he speaks digestion—word becomes flesh in his ministry.",
       "category": "sign",
       "id": "e.eating-the-scroll.sweet-bitter-calling--5a851e1c"
@@ -795,9 +691,7 @@
     {
       "name": "Mute until news arrives",
       "type": "entity",
-      "references": [
-        "Ezekiel 3:26–27; 24:27; 33:21–22"
-      ],
+      "references": ["Ezekiel 3:26–27; 24:27; 33:21–22"],
       "blurb": "Silence as sign until Jerusalem falls; speech restored for restoration oracles—timing is theology.",
       "category": "sign",
       "id": "e.mute-until-news-arrives--acbbc14f"
@@ -805,9 +699,7 @@
     {
       "name": "Brick and siege model",
       "type": "entity",
-      "references": [
-        "Ezekiel 4:1–3"
-      ],
+      "references": ["Ezekiel 4:1–3"],
       "blurb": "A miniature Jerusalem under siege—prophetic street theater that preaches strategy and doom.",
       "category": "sign",
       "id": "e.brick-and-siege-model--4670d489"
@@ -815,9 +707,7 @@
     {
       "name": "Lying on left and right sides",
       "type": "entity",
-      "references": [
-        "Ezekiel 4:4–8"
-      ],
+      "references": ["Ezekiel 4:4–8"],
       "blurb": "390 days for Israel, 40 for Judah—bearing iniquity dramatized in the prophet’s body.",
       "category": "sign",
       "count": 430,
@@ -827,9 +717,7 @@
     {
       "name": "Defiled rations baked over dung",
       "type": "entity",
-      "references": [
-        "Ezekiel 4:9–17"
-      ],
+      "references": ["Ezekiel 4:9–17"],
       "blurb": "Scarcity and uncleanness of exile previewed; concession to cow dung signals mitigated mercy.",
       "category": "sign",
       "id": "e.defiled-rations-baked-over-dung--ee55d8e3"
@@ -837,9 +725,7 @@
     {
       "name": "Shaving hair and dividing thirds",
       "type": "entity",
-      "references": [
-        "Ezekiel 5:1–4"
-      ],
+      "references": ["Ezekiel 5:1–4"],
       "blurb": "A third burned, a third struck, a third scattered—few hairs tucked in as remnant; judgment in proportions.",
       "category": "sign",
       "id": "e.shaving-hair-and-dividing-thirds--a9e11d50"
@@ -847,9 +733,7 @@
     {
       "name": "Packing baggage for exile",
       "type": "entity",
-      "references": [
-        "Ezekiel 12:1–7"
-      ],
+      "references": ["Ezekiel 12:1–7"],
       "blurb": "Dig through the wall, go out at dusk—Zedekiah’s fate encoded in a prophet’s pantomime.",
       "category": "sign",
       "id": "e.packing-baggage-for-exile--554922f8"
@@ -857,9 +741,7 @@
     {
       "name": "Sword sharpened and polished",
       "type": "entity",
-      "references": [
-        "Ezekiel 21:9–17"
-      ],
+      "references": ["Ezekiel 21:9–17"],
       "blurb": "A flashing sword dances in prophetic hands—judgment is imminent and indiscriminate among the wicked.",
       "category": "sign",
       "id": "e.sword-sharpened-and-polished--bb98f183"
@@ -867,9 +749,7 @@
     {
       "name": "Sighing and smiting the thigh",
       "type": "entity",
-      "references": [
-        "Ezekiel 21:6–7,12"
-      ],
+      "references": ["Ezekiel 21:6–7,12"],
       "blurb": "Embodied groans communicate terror ahead—prophet feels before he speaks.",
       "category": "sign",
       "id": "e.sighing-and-smiting-the-thigh--faff2602"
@@ -877,9 +757,7 @@
     {
       "name": "Cooking pot / rusty cauldron",
       "type": "entity",
-      "references": [
-        "Ezekiel 24:3–14"
-      ],
+      "references": ["Ezekiel 24:3–14"],
       "blurb": "Jerusalem as a pot whose rust will not go out—blood guilt baked in; only fire answers.",
       "category": "sign",
       "id": "e.cooking-pot-rusty-cauldron--2f3ee29a"
@@ -887,9 +765,7 @@
     {
       "name": "Prophet’s wife taken; no mourning",
       "type": "entity",
-      "references": [
-        "Ezekiel 24:15–24"
-      ],
+      "references": ["Ezekiel 24:15–24"],
       "blurb": "Personal bereavement as public oracle; silence becomes sermon for a stunned community.",
       "category": "sign",
       "id": "e.prophets-wife-taken-no-mourning--bfedd544"
@@ -897,9 +773,7 @@
     {
       "name": "Two sticks joined (Judah & Joseph)",
       "type": "entity",
-      "references": [
-        "Ezekiel 37:15–28"
-      ],
+      "references": ["Ezekiel 37:15–28"],
       "blurb": "Reunification enacted; one king over one people under an everlasting covenant and sanctuary presence.",
       "category": "sign",
       "id": "e.two-sticks-joined.judah-joseph--0a83a666"
@@ -907,9 +781,7 @@
     {
       "name": "Valley of dry bones",
       "type": "entity",
-      "references": [
-        "Ezekiel 37:1–14"
-      ],
+      "references": ["Ezekiel 37:1–14"],
       "blurb": "Spirit breathes on slain bones; graves open—resurrection imagery pledges national restoration and more.",
       "category": "sign",
       "id": "e.valley-of-dry-bones--19de687d"
@@ -917,9 +789,7 @@
     {
       "name": "Watchman charge (I & II)",
       "type": "entity",
-      "references": [
-        "Ezekiel 3:16–21; 33:1–9"
-      ],
+      "references": ["Ezekiel 3:16–21; 33:1–9"],
       "blurb": "Accountability for warning; bloodguilt lifted by faithful speech—pastoral vigilance codified.",
       "category": "commission",
       "id": "e.watchman-charge.i-ii--b97f4242"
@@ -927,9 +797,7 @@
     {
       "name": "Allegory of the unfaithful bride (Jerusalem)",
       "type": "entity",
-      "references": [
-        "Ezekiel 16"
-      ],
+      "references": ["Ezekiel 16"],
       "blurb": "From abandoned infant to adorned queen to adulterous city—grace abused becomes a courtroom drama.",
       "category": "allegory",
       "id": "e.allegory-of-the-unfaithful-bride.jerusalem--2429bfef"
@@ -937,9 +805,7 @@
     {
       "name": "Parable of the eagles and the vine",
       "type": "entity",
-      "references": [
-        "Ezekiel 17:1–21"
-      ],
+      "references": ["Ezekiel 17:1–21"],
       "blurb": "Babylon and Egypt as great eagles; Judah’s treachery is horticultural folly—rooted politics gone wrong.",
       "category": "allegory",
       "id": "e.parable-of-the-eagles-and-the-vine--a3f95fa5"
@@ -947,9 +813,7 @@
     {
       "name": "Promise of the tender twig / cedar on high",
       "type": "entity",
-      "references": [
-        "Ezekiel 17:22–24"
-      ],
+      "references": ["Ezekiel 17:22–24"],
       "blurb": "God plants a sprig that becomes shelter for birds—kingdom hope after failed statecraft.",
       "category": "hope",
       "id": "e.promise-of-the-tender-twig-cedar-on-high--015e98ac"
@@ -957,9 +821,7 @@
     {
       "name": "Lament for the princes of Israel (lions’ whelps)",
       "type": "entity",
-      "references": [
-        "Ezekiel 19"
-      ],
+      "references": ["Ezekiel 19"],
       "blurb": "Royal cubs learn to tear prey and are caged; a vine is uprooted—Davidic pathos under judgment.",
       "category": "lament",
       "id": "e.lament-for-the-princes-of-israel.lions-whelps--a03bad2d"
@@ -967,23 +829,16 @@
     {
       "name": "Allegory of two sisters: Oholah & Oholibah",
       "type": "entity",
-      "references": [
-        "Ezekiel 23"
-      ],
+      "references": ["Ezekiel 23"],
       "blurb": "Samaria and Jerusalem personified as promiscuous sisters; shocking satire of political idolatry.",
-      "aka": [
-        "Oholah (Samaria)",
-        "Oholibah (Jerusalem)"
-      ],
+      "aka": ["Oholah (Samaria)", "Oholibah (Jerusalem)"],
       "category": "allegory",
       "id": "e.allegory-of-two-sisters-oholah-oholibah.samaria--c09d3d1e"
     },
     {
       "name": "Rusty cauldron song",
       "type": "entity",
-      "references": [
-        "Ezekiel 24:3–14"
-      ],
+      "references": ["Ezekiel 24:3–14"],
       "blurb": "A grim cooking song indicting Jerusalem’s entrenched bloodguilt—kitchen liturgy of justice.",
       "category": "lament",
       "id": "e.rusty-cauldron-song--2fb1f190"
@@ -991,9 +846,7 @@
     {
       "name": "Dirge for Tyre, the trading ship",
       "type": "entity",
-      "references": [
-        "Ezekiel 27"
-      ],
+      "references": ["Ezekiel 27"],
       "blurb": "Every mast and sail named; when the ship sinks, the world’s markets wail—commerce can be an idol with a funeral.",
       "category": "lament",
       "id": "e.dirge-for-tyre-the-trading-ship--1f574077"
@@ -1001,9 +854,7 @@
     {
       "name": "Laments over Pharaoh and Egypt",
       "type": "entity",
-      "references": [
-        "Ezekiel 32:1–32"
-      ],
+      "references": ["Ezekiel 32:1–32"],
       "blurb": "Monster hauled up with hooks; descent among the uncircumcised—mythic pride meets Sheol’s realism.",
       "category": "lament",
       "id": "e.laments-over-pharaoh-and-egypt--c570199f"
@@ -1011,9 +862,7 @@
     {
       "name": "Abominations at the temple (four scenes)",
       "type": "entity",
-      "references": [
-        "Ezekiel 8:5–18"
-      ],
+      "references": ["Ezekiel 8:5–18"],
       "blurb": "From the idol at the north gate to elders in chambers, women for Tammuz, and sun‑worshipers—cumulative desecration triggers departure of glory.",
       "category": "temple",
       "id": "e.abominations-at-the-temple.four-scenes--ac3e335b"
@@ -1021,9 +870,7 @@
     {
       "name": "Executioners and the man in linen",
       "type": "entity",
-      "references": [
-        "Ezekiel 9:1–11"
-      ],
+      "references": ["Ezekiel 9:1–11"],
       "blurb": "Six with weapons plus one scribe—judgment begins at the sanctuary; holiness is not safe for hypocrisy.",
       "category": "temple",
       "id": "e.executioners-and-the-man-in-linen--bb6062a8"
@@ -1031,9 +878,7 @@
     {
       "name": "Glory leaves threshold and east gate",
       "type": "entity",
-      "references": [
-        "Ezekiel 10:4,18–19"
-      ],
+      "references": ["Ezekiel 10:4,18–19"],
       "blurb": "Vacating the holy house step by step—the slow grief of divine departure.",
       "category": "theophany",
       "id": "e.glory-leaves-threshold-and-east-gate--42b43260"
@@ -1041,9 +886,7 @@
     {
       "name": "Glory stands on the mountain east of the city",
       "type": "entity",
-      "references": [
-        "Ezekiel 11:22–25"
-      ],
+      "references": ["Ezekiel 11:22–25"],
       "blurb": "Presence pauses eastward as if waiting for repentance—mercy lingers even in judgment.",
       "category": "theophany",
       "id": "e.glory-stands-on-the-mountain-east-of-the-city--ceea7ce4"
@@ -1051,9 +894,7 @@
     {
       "name": "Return of glory by the east gate",
       "type": "entity",
-      "references": [
-        "Ezekiel 43:1–5"
-      ],
+      "references": ["Ezekiel 43:1–5"],
       "blurb": "Sanctuary re‑inhabited; holiness returns as gift, not presumption—architecture serves presence.",
       "category": "theophany",
       "id": "e.return-of-glory-by-the-east-gate--fef2569b"
@@ -1061,9 +902,7 @@
     {
       "name": "East gate shut for the Prince",
       "type": "entity",
-      "references": [
-        "Ezekiel 44:1–3; 46:1–2"
-      ],
+      "references": ["Ezekiel 44:1–3; 46:1–2"],
       "blurb": "Reserved access signifies reverence; the Prince’s worship exemplifies ordered leadership.",
       "category": "temple",
       "id": "e.east-gate-shut-for-the-prince--8a448a83"
@@ -1071,9 +910,7 @@
     {
       "name": "Altar of burnt offering (dimensions & consecration)",
       "type": "entity",
-      "references": [
-        "Ezekiel 43:13–27"
-      ],
+      "references": ["Ezekiel 43:13–27"],
       "blurb": "Four horns, steps to the east; a week‑long ordination liturgy reinstates sacrificial fellowship.",
       "category": "cult",
       "id": "e.altar-of-burnt-offering.dimensions-consecration--6486138a"
@@ -1081,9 +918,7 @@
     {
       "name": "Zadokite priests: clothing, duties, holiness",
       "type": "entity",
-      "references": [
-        "Ezekiel 44:15–31"
-      ],
+      "references": ["Ezekiel 44:15–31"],
       "blurb": "Instructions on garments, hair, marriages, teaching, and judgment—holiness woven into everyday service.",
       "category": "priesthood",
       "id": "e.zadokite-priests-clothing-duties-holiness--105cac09"
@@ -1091,9 +926,7 @@
     {
       "name": "Levites’ demotion and service",
       "type": "entity",
-      "references": [
-        "Ezekiel 44:10–14"
-      ],
+      "references": ["Ezekiel 44:10–14"],
       "blurb": "They bear iniquity of past idolatry; serve at gates and slaughter but stay back from the altar—mercy disciplines memory.",
       "category": "priesthood",
       "id": "e.levites-demotion-and-service--9060d126"
@@ -1101,9 +934,7 @@
     {
       "name": "Chambers for singers and priests",
       "type": "entity",
-      "references": [
-        "Ezekiel 40:44–46"
-      ],
+      "references": ["Ezekiel 40:44–46"],
       "blurb": "Music and ministry have designated spaces—worship is architected, not improvised.",
       "category": "temple",
       "id": "e.chambers-for-singers-and-priests--2125c159"
@@ -1111,9 +942,7 @@
     {
       "name": "Boiling places and kitchens",
       "type": "entity",
-      "references": [
-        "Ezekiel 46:19–24"
-      ],
+      "references": ["Ezekiel 46:19–24"],
       "blurb": "Sacred food preparation zones prevent holy from mingling with common—design as catechesis.",
       "category": "cult",
       "id": "e.boiling-places-and-kitchens--44d0d6d6"
@@ -1121,9 +950,7 @@
     {
       "name": "Prince’s offerings and Sabbaths",
       "type": "entity",
-      "references": [
-        "Ezekiel 45:17; 46:1–12"
-      ],
+      "references": ["Ezekiel 45:17; 46:1–12"],
       "blurb": "The Prince funds and models festival worship—politics underwrites piety without usurping priestly roles.",
       "category": "royal-worship",
       "id": "e.princes-offerings-and-sabbaths--16fd30d4"
@@ -1131,9 +958,7 @@
     {
       "name": "Just weights, ephah, and shekel",
       "type": "entity",
-      "references": [
-        "Ezekiel 45:9–12"
-      ],
+      "references": ["Ezekiel 45:9–12"],
       "blurb": "Holiness entails economic honesty; corrupted scales profane the land.",
       "category": "ethics",
       "id": "e.just-weights-ephah-and-shekel--2908736a"
@@ -1141,9 +966,7 @@
     {
       "name": "Holy district and sacred allotment",
       "type": "entity",
-      "references": [
-        "Ezekiel 45:1–8; 48:8–14"
-      ],
+      "references": ["Ezekiel 45:1–8; 48:8–14"],
       "blurb": "A central strip for sanctuary, priests, Levites, and the city—land use encodes theological priorities.",
       "category": "land",
       "id": "e.holy-district-and-sacred-allotment--01e060f0"
@@ -1151,9 +974,7 @@
     {
       "name": "Tribal allotments (restored land)",
       "type": "entity",
-      "references": [
-        "Ezekiel 47:13–48:7; 48:23–29"
-      ],
+      "references": ["Ezekiel 47:13–48:7; 48:23–29"],
       "blurb": "Bands from north to south equalize access; ancient names become eschatological geography.",
       "category": "land",
       "count": 12,
@@ -1163,9 +984,7 @@
     {
       "name": "City gates named for tribes",
       "type": "entity",
-      "references": [
-        "Ezekiel 48:30–34"
-      ],
+      "references": ["Ezekiel 48:30–34"],
       "blurb": "Twelve gates inscribe identity into architecture—belonging is built into coming and going.",
       "category": "city",
       "id": "e.city-gates-named-for-tribes--ff7f733b"
@@ -1173,9 +992,7 @@
     {
       "name": "City name: ‘The LORD is there’ (YHWH Shammah)",
       "type": "entity",
-      "references": [
-        "Ezekiel 48:35"
-      ],
+      "references": ["Ezekiel 48:35"],
       "blurb": "Final word of the book: presence defines the polis—God’s nearness is the city’s security.",
       "category": "theology",
       "id": "e.city-name-the-lord-is-there.yhwh-shammah--b3647fde"
@@ -1183,9 +1000,7 @@
     {
       "name": "‘Son of Man’ (ben ’adam) address",
       "type": "title",
-      "references": [
-        "Ezekiel (passim)"
-      ],
+      "references": ["Ezekiel (passim)"],
       "blurb": "God’s repeated address to Ezekiel underscores creatureliness and vocation—humility fitted for high vision.",
       "category": "identity",
       "id": "t.son-of-man-address.ben-adam--ff789949"
@@ -1193,9 +1008,7 @@
     {
       "name": "‘They shall know that I am the LORD’ refrain",
       "type": "entity",
-      "references": [
-        "Ezekiel (passim)"
-      ],
+      "references": ["Ezekiel (passim)"],
       "blurb": "Recognition formula punctuates judgments and restorations; theology aims at doxology in history.",
       "category": "refrain",
       "id": "e.they-shall-know-that-i-am-the-lord-refrain--38067a2b"
@@ -1203,9 +1016,7 @@
     {
       "name": "Individual responsibility and the soul that sins shall die",
       "type": "entity",
-      "references": [
-        "Ezekiel 18:1–32"
-      ],
+      "references": ["Ezekiel 18:1–32"],
       "blurb": "Proverbs about sour grapes are retired; repentance is real time, not genealogy—God delights to save.",
       "category": "ethics",
       "id": "e.individual-responsibility-and-the-soul-that-sins-shall-die--4e54a51a"
@@ -1213,9 +1024,7 @@
     {
       "name": "Corporate memory and stubbornness",
       "type": "entity",
-      "references": [
-        "Ezekiel 20"
-      ],
+      "references": ["Ezekiel 20"],
       "blurb": "A long courtroom rehearsal of rebellion in Egypt, wilderness, and land—grace keeps choosing for His name’s sake.",
       "category": "history",
       "id": "e.corporate-memory-and-stubbornness--67cfc0b2"
@@ -1223,9 +1032,7 @@
     {
       "name": "New heart and new spirit",
       "type": "entity",
-      "references": [
-        "Ezekiel 11:19–20; 36:26–27"
-      ],
+      "references": ["Ezekiel 11:19–20; 36:26–27"],
       "blurb": "Stone to flesh; Spirit within—obedience becomes gift before it is task.",
       "category": "renewal",
       "id": "e.new-heart-and-new-spirit--11a7e4b6"
@@ -1233,9 +1040,7 @@
     {
       "name": "Sprinkled clean water and indwelling Spirit",
       "type": "entity",
-      "references": [
-        "Ezekiel 36:25–27"
-      ],
+      "references": ["Ezekiel 36:25–27"],
       "blurb": "Purification and presence repair covenant—holiness becomes habitat.",
       "category": "renewal",
       "id": "e.sprinkled-clean-water-and-indwelling-spirit--e85f01a6"
@@ -1243,9 +1048,7 @@
     {
       "name": "David my servant: shepherd‑king",
       "type": "figure",
-      "references": [
-        "Ezekiel 34:23–24; 37:24–25"
-      ],
+      "references": ["Ezekiel 34:23–24; 37:24–25"],
       "blurb": "A Davidic ruler under God shepherds a united people—royalty recast as pastoral care.",
       "category": "messianic",
       "id": "f.david-my-servant-shepherd-king--b05a1fe7"
@@ -1253,9 +1056,7 @@
     {
       "name": "Covenant of peace / everlasting covenant",
       "type": "entity",
-      "references": [
-        "Ezekiel 34:25; 37:26"
-      ],
+      "references": ["Ezekiel 34:25; 37:26"],
       "blurb": "Shalom covenant yields safety, fruitfulness, sanctuary presence—Edenic echoes in exile.",
       "category": "covenant",
       "id": "e.covenant-of-peace-everlasting-covenant--67f94f49"
@@ -1263,9 +1064,7 @@
     {
       "name": "Abominations list and anatomy of idolatry",
       "type": "entity",
-      "references": [
-        "Ezekiel 8; 14; 16; 20; 23"
-      ],
+      "references": ["Ezekiel 8; 14; 16; 20; 23"],
       "blurb": "From heart idols to public rites—prophetic diagnosis links liturgy to life.",
       "category": "idolatry",
       "id": "e.abominations-list-and-anatomy-of-idolatry--69b28a54"
@@ -1273,9 +1072,7 @@
     {
       "name": "Proverb: ‘The days are prolonged’ refuted",
       "type": "entity",
-      "references": [
-        "Ezekiel 12:21–28"
-      ],
+      "references": ["Ezekiel 12:21–28"],
       "blurb": "Delay does not cancel judgment; the word hastens to perform—prophetic timing is moral, not mechanical.",
       "category": "prophecy",
       "id": "e.proverb-the-days-are-prolonged-refuted--8fd76bde"
@@ -1283,9 +1080,7 @@
     {
       "name": "Proverb: ‘The fathers ate sour grapes’ refuted",
       "type": "entity",
-      "references": [
-        "Ezekiel 18:2"
-      ],
+      "references": ["Ezekiel 18:2"],
       "blurb": "Inherited blame gives way to personal responsibility—each soul stands before God.",
       "category": "ethics",
       "id": "e.proverb-the-fathers-ate-sour-grapes-refuted--1db75e08"
@@ -1293,9 +1088,7 @@
     {
       "name": "Defilement of land and bloodguilt",
       "type": "entity",
-      "references": [
-        "Ezekiel 7; 9; 22; 24"
-      ],
+      "references": ["Ezekiel 7; 9; 22; 24"],
       "blurb": "Violence pollutes; only purgative judgment and renewed worship cleanse a place.",
       "category": "ethics",
       "id": "e.defilement-of-land-and-bloodguilt--d709fc7a"
@@ -1303,9 +1096,7 @@
     {
       "name": "Justice in commerce and governance",
       "type": "entity",
-      "references": [
-        "Ezekiel 22:12–29; 45:9–12"
-      ],
+      "references": ["Ezekiel 22:12–29; 45:9–12"],
       "blurb": "Oppression, bribery, and unequal measures profane God’s name—holiness is measured in markets too.",
       "category": "ethics",
       "id": "e.justice-in-commerce-and-governance--600c8a53"
@@ -1313,9 +1104,7 @@
     {
       "name": "Gog of the land of Magog",
       "type": "person",
-      "references": [
-        "Ezekiel 38:1–3"
-      ],
+      "references": ["Ezekiel 38:1–3"],
       "blurb": "Archetypal invader from the far north; a cipher for final hostility gathered against God’s people.",
       "category": "apocalypse",
       "id": "p.gog-of-the-land-of-magog--4f1eb8e2"
@@ -1323,9 +1112,7 @@
     {
       "name": "Magog, Meshech, and Tubal",
       "type": "group",
-      "references": [
-        "Ezekiel 38:2–3; 39:1"
-      ],
+      "references": ["Ezekiel 38:2–3; 39:1"],
       "blurb": "Peoples marshaled under Gog; geopolitics become theater for divine reputation.",
       "category": "nations",
       "id": "g.magog-meshech-and-tubal--34c89b69"
@@ -1333,9 +1120,7 @@
     {
       "name": "Hooks in the jaws; God’s sovereignty in war",
       "type": "entity",
-      "references": [
-        "Ezekiel 38:4"
-      ],
+      "references": ["Ezekiel 38:4"],
       "blurb": "Aggression is leashed and led—God drags the dragon to its own defeat.",
       "category": "apocalypse",
       "id": "e.hooks-in-the-jaws-gods-sovereignty-in-war--2aca1bd4"
@@ -1343,9 +1128,7 @@
     {
       "name": "Earthquake, hail, fire, and brimstone",
       "type": "entity",
-      "references": [
-        "Ezekiel 38:19–22"
-      ],
+      "references": ["Ezekiel 38:19–22"],
       "blurb": "Cosmic judgments unmake the invaders; creation fights for its Maker.",
       "category": "apocalypse",
       "id": "e.earthquake-hail-fire-and-brimstone--935275f9"
@@ -1353,9 +1136,7 @@
     {
       "name": "Great feast of birds and beasts",
       "type": "entity",
-      "references": [
-        "Ezekiel 39:17–20"
-      ],
+      "references": ["Ezekiel 39:17–20"],
       "blurb": "Sacrificial banquet where enemies become the offering—reversal of power through holy irony.",
       "category": "apocalypse",
       "id": "e.great-feast-of-birds-and-beasts--ccfd5947"
@@ -1363,9 +1144,7 @@
     {
       "name": "Burying of Gog: Valley of Hamon‑gog",
       "type": "entity",
-      "references": [
-        "Ezekiel 39:11–16"
-      ],
+      "references": ["Ezekiel 39:11–16"],
       "blurb": "Seven months to cleanse the land; markers for bones—holiness includes public sanitation after war.",
       "category": "purity",
       "id": "e.burying-of-gog-valley-of-hamon-gog--30c9114a"
@@ -1373,9 +1152,7 @@
     {
       "name": "House of Israel knows the LORD from that day forward",
       "type": "entity",
-      "references": [
-        "Ezekiel 39:21–29"
-      ],
+      "references": ["Ezekiel 39:21–29"],
       "blurb": "Judgment and mercy culminate in recognition and Spirit outpouring—exile read as pedagogy of grace.",
       "category": "recognition",
       "id": "e.house-of-israel-knows-the-lord-from-that-day-forward--e6a2baa1"
@@ -1383,9 +1160,7 @@
     {
       "name": "Date formula: fifth year, fourth month, fifth day",
       "type": "entity",
-      "references": [
-        "Ezekiel 1:1–2"
-      ],
+      "references": ["Ezekiel 1:1–2"],
       "blurb": "Precision timestamps Ezekiel’s vision; sacred history keeps a calendar.",
       "category": "chronology",
       "id": "e.date-formula-fifth-year-fourth-month-fifth-day--38ed7e91"
@@ -1393,9 +1168,7 @@
     {
       "name": "Mute sign resumes: twelfth year, tenth month, fifth day",
       "type": "entity",
-      "references": [
-        "Ezekiel 33:21–22"
-      ],
+      "references": ["Ezekiel 33:21–22"],
       "blurb": "News of the city’s fall arrives; a long silence breaks—new phase of ministry begins.",
       "category": "chronology",
       "id": "e.mute-sign-resumes-twelfth-year-tenth-month-fifth-day--3eba8189"
@@ -1403,9 +1176,7 @@
     {
       "name": "Twenty‑fifth year, beginning of temple vision",
       "type": "entity",
-      "references": [
-        "Ezekiel 40:1–2"
-      ],
+      "references": ["Ezekiel 40:1–2"],
       "blurb": "‘Head of the year’ marks the grand tour of the future temple—hope is architected.",
       "category": "chronology",
       "id": "e.twenty-fifth-year-beginning-of-temple-vision--1f0254bd"
@@ -1413,9 +1184,7 @@
     {
       "name": "Vision transports (‘in the visions of God’)",
       "type": "entity",
-      "references": [
-        "Ezekiel 8:3; 11:24; 40:2"
-      ],
+      "references": ["Ezekiel 8:3; 11:24; 40:2"],
       "blurb": "Spatial shifts locate prophecy between earth and heaven—mystical geography for pastoral ends.",
       "category": "literary",
       "id": "e.vision-transports.in-the-visions-of-god--53f280ac"
@@ -1423,9 +1192,7 @@
     {
       "name": "Rhetorical refrain: ‘set your face toward…’",
       "type": "entity",
-      "references": [
-        "Ezekiel 20:46; 21:2; 25:2"
-      ],
+      "references": ["Ezekiel 20:46; 21:2; 25:2"],
       "blurb": "Command formula that turns the prophet like a compass—speech as directional warfare.",
       "category": "literary",
       "id": "e.rhetorical-refrain-set-your-face-toward--ad6c2690"
@@ -1433,9 +1200,7 @@
     {
       "name": "Proverb and riddle (ḥidah) technique",
       "type": "entity",
-      "references": [
-        "Ezekiel 17:2; 12:22–23"
-      ],
+      "references": ["Ezekiel 17:2; 12:22–23"],
       "blurb": "Encrypted speech invites engagement, then clarification—education by mystery.",
       "category": "literary",
       "id": "e.proverb-and-riddle-technique.idah--394e7796"
@@ -1443,9 +1208,7 @@
     {
       "name": "Merkabah tradition (chariot mysticism) seedbed",
       "type": "entity",
-      "references": [
-        "Ezekiel 1; 10"
-      ],
+      "references": ["Ezekiel 1; 10"],
       "blurb": "Later Jewish mystical readings find ascent patterns here; Ezekiel remains anchored in covenant ethics, not escape.",
       "category": "reception",
       "id": "e.merkabah-tradition-seedbed.chariot-mysticism--6d2c2999"
@@ -1453,9 +1216,7 @@
     {
       "name": "Influence on Revelation (throne, river, city)",
       "type": "entity",
-      "references": [
-        "Ezekiel 1; 40–48; cf. Rev 4; 21–22"
-      ],
+      "references": ["Ezekiel 1; 40–48; cf. Rev 4; 21–22"],
       "blurb": "John riffs on Ezekiel’s imagery—Christian reception reads temple as eschatological presence fulfilled.",
       "category": "reception",
       "id": "e.influence-on-revelation.throne-river-city--997b8979"
@@ -1463,9 +1224,7 @@
     {
       "name": "Chebar canal (Kebar)",
       "type": "entity",
-      "references": [
-        "Ezekiel 1:1; 3:15"
-      ],
+      "references": ["Ezekiel 1:1; 3:15"],
       "blurb": "Exilic waterway in Babylonia—becomes a sanctuary of visions; God localizes glory among the displaced.",
       "category": "place",
       "id": "e.chebar-canal.kebar--47a9332d"
@@ -1473,9 +1232,7 @@
     {
       "name": "Tel‑Abib (Tel‑aviv) by the Chebar",
       "type": "entity",
-      "references": [
-        "Ezekiel 3:15"
-      ],
+      "references": ["Ezekiel 3:15"],
       "blurb": "Settlement where Ezekiel sits overwhelmed seven days; pastoral incubation before speech.",
       "category": "place",
       "id": "e.tel-abib-by-the-chebar.tel-aviv--8a12eae3"
@@ -1483,9 +1240,7 @@
     {
       "name": "Jerusalem (Ezekiel’s vision focus)",
       "type": "entity",
-      "references": [
-        "Ezekiel 4–5; 8–11; 24"
-      ],
+      "references": ["Ezekiel 4–5; 8–11; 24"],
       "blurb": "City under siege, defiled, and deserted by glory—yet target of future cleansing and re‑inhabitation.",
       "category": "city",
       "id": "e.jerusalem.ezekiels-vision-focus--e6176f76"
@@ -1493,9 +1248,7 @@
     {
       "name": "North gate of the altar",
       "type": "entity",
-      "references": [
-        "Ezekiel 8:5"
-      ],
+      "references": ["Ezekiel 8:5"],
       "blurb": "Site of the provocative idol—threshold of desecration that triggers the tour of abominations.",
       "category": "place",
       "id": "e.north-gate-of-the-altar--498c2bbf"
@@ -1503,9 +1256,7 @@
     {
       "name": "Inner court of the LORD’s house",
       "type": "entity",
-      "references": [
-        "Ezekiel 8:16; 10:3–4"
-      ],
+      "references": ["Ezekiel 8:16; 10:3–4"],
       "blurb": "Stage of sun worship and glory’s cloud—profanation and presence collide.",
       "category": "place",
       "id": "e.inner-court-of-the-lords-house--b0c13e3c"
@@ -1513,9 +1264,7 @@
     {
       "name": "East gate of the house of the LORD",
       "type": "entity",
-      "references": [
-        "Ezekiel 10:19; 43:1–4; 44:1–3"
-      ],
+      "references": ["Ezekiel 10:19; 43:1–4; 44:1–3"],
       "blurb": "Processional portal for departure and return of glory; now dignified by the Prince’s rites.",
       "category": "place",
       "id": "e.east-gate-of-the-house-of-the-lord--031ec9e1"
@@ -1523,9 +1272,7 @@
     {
       "name": "Valley full of bones",
       "type": "entity",
-      "references": [
-        "Ezekiel 37:1–2"
-      ],
+      "references": ["Ezekiel 37:1–2"],
       "blurb": "Locale of the resurrection vision—God’s clinic for pastoral imagination.",
       "category": "place",
       "id": "e.valley-full-of-bones--127f4362"
@@ -1533,9 +1280,7 @@
     {
       "name": "Valley of Hamon‑gog",
       "type": "entity",
-      "references": [
-        "Ezekiel 39:11–16"
-      ],
+      "references": ["Ezekiel 39:11–16"],
       "blurb": "Burying ground east of the sea—memory of judgment curated for generations.",
       "category": "place",
       "id": "e.valley-of-hamon-gog--bec90d18"
@@ -1543,9 +1288,7 @@
     {
       "name": "Cherub face: man",
       "type": "entity",
-      "references": [
-        "Ezekiel 1:10; 10:14"
-      ],
+      "references": ["Ezekiel 1:10; 10:14"],
       "blurb": "Symbol of reason and humanity within God’s throne imagery.",
       "category": "symbol",
       "id": "e.cherub-face-man--9d971648"
@@ -1553,9 +1296,7 @@
     {
       "name": "Cherub face: lion",
       "type": "entity",
-      "references": [
-        "Ezekiel 1:10; 10:14"
-      ],
+      "references": ["Ezekiel 1:10; 10:14"],
       "blurb": "Symbol of kingship and courage.",
       "category": "symbol",
       "id": "e.cherub-face-lion--7aa205a0"
@@ -1563,9 +1304,7 @@
     {
       "name": "Cherub face: ox",
       "type": "entity",
-      "references": [
-        "Ezekiel 1:10; 10:14"
-      ],
+      "references": ["Ezekiel 1:10; 10:14"],
       "blurb": "Symbol of strength and service.",
       "category": "symbol",
       "id": "e.cherub-face-ox--30f06cb4"
@@ -1573,9 +1312,7 @@
     {
       "name": "Cherub face: eagle",
       "type": "entity",
-      "references": [
-        "Ezekiel 1:10; 10:14"
-      ],
+      "references": ["Ezekiel 1:10; 10:14"],
       "blurb": "Symbol of vision and swiftness.",
       "category": "symbol",
       "id": "e.cherub-face-eagle--b57e3774"
@@ -1583,9 +1320,7 @@
     {
       "name": "Rodanim / Rhodes (possible reading)",
       "type": "entity",
-      "references": [
-        "Ezekiel 27:15"
-      ],
+      "references": ["Ezekiel 27:15"],
       "blurb": "Sea traders linked to ivory and ebony—minor partner in Tyre’s hub.",
       "category": "merchant",
       "id": "e.rodanim-rhodes--4db4e8ac"
@@ -1593,9 +1328,7 @@
     {
       "name": "Lud (Lydians)",
       "type": "entity",
-      "references": [
-        "Ezekiel 27:10; 30:5"
-      ],
+      "references": ["Ezekiel 27:10; 30:5"],
       "blurb": "Mercenaries in Tyre’s army; later listed as Egypt’s allies.",
       "category": "nation",
       "id": "e.lud--0abbe96f"
@@ -1603,9 +1336,7 @@
     {
       "name": "Put (Libyans)",
       "type": "entity",
-      "references": [
-        "Ezekiel 27:10; 30:5"
-      ],
+      "references": ["Ezekiel 27:10; 30:5"],
       "blurb": "African allies/mercenaries in Tyre and Egypt.",
       "category": "nation",
       "id": "e.put--15708e65"
@@ -1613,9 +1344,7 @@
     {
       "name": "Persia (Parsu)",
       "type": "entity",
-      "references": [
-        "Ezekiel 27:10; 38:5"
-      ],
+      "references": ["Ezekiel 27:10; 38:5"],
       "blurb": "Persians appear both as Tyrian mercenaries and Gog’s allies.",
       "category": "nation",
       "id": "e.persia--79556c3b"
@@ -1623,9 +1352,7 @@
     {
       "name": "Outer court chambers",
       "type": "entity",
-      "references": [
-        "Ezekiel 40:17–19"
-      ],
+      "references": ["Ezekiel 40:17–19"],
       "blurb": "Thirty chambers for the people—access structured by holiness zones.",
       "category": "temple",
       "id": "e.outer-court-chambers--75b6da4d"
@@ -1633,9 +1360,7 @@
     {
       "name": "Inner court chambers",
       "type": "entity",
-      "references": [
-        "Ezekiel 40:44–46"
-      ],
+      "references": ["Ezekiel 40:44–46"],
       "blurb": "Priestly chambers with song and sacrifice—Zadokite access codified.",
       "category": "temple",
       "id": "e.inner-court-chambers--7d3ed7dc"
@@ -1643,9 +1368,7 @@
     {
       "name": "Altar dimensions",
       "type": "entity",
-      "references": [
-        "Ezekiel 43:13–17"
-      ],
+      "references": ["Ezekiel 43:13–17"],
       "blurb": "Precise measurements declare order and permanence of worship.",
       "category": "temple",
       "id": "e.altar-dimensions--092d8e5b"
@@ -1653,9 +1376,7 @@
     {
       "name": "River banks with trees",
       "type": "entity",
-      "references": [
-        "Ezekiel 47:6–12"
-      ],
+      "references": ["Ezekiel 47:6–12"],
       "blurb": "Trees on both sides with monthly fruit and healing leaves.",
       "category": "restoration",
       "id": "e.river-banks-with-trees--767a1a98"
@@ -1663,9 +1384,7 @@
     {
       "name": "Pharaoh Hophra (Apries)",
       "type": "entity",
-      "references": [
-        "Ezekiel 29:1–21 (historical context)"
-      ],
+      "references": ["Ezekiel 29:1–21 (historical context)"],
       "blurb": "Likely the Pharaoh addressed in oracles; Egypt’s pride bound to Nile crocodile imagery.",
       "category": "pharaoh",
       "id": "e.pharaoh-hophra--a3215ccb"
@@ -1673,9 +1392,7 @@
     {
       "name": "Persia (ally of Gog)",
       "type": "entity",
-      "references": [
-        "Ezekiel 38:5"
-      ],
+      "references": ["Ezekiel 38:5"],
       "blurb": "Eastern power enlisted in Gog’s confederacy.",
       "category": "nation",
       "id": "e.persia--eec34784"
@@ -1683,9 +1400,7 @@
     {
       "name": "Cush (ally of Gog)",
       "type": "entity",
-      "references": [
-        "Ezekiel 38:5"
-      ],
+      "references": ["Ezekiel 38:5"],
       "blurb": "Nubian/Ethiopian forces bolster the invasion.",
       "category": "nation",
       "id": "e.cush--efec636c"
@@ -1693,9 +1408,7 @@
     {
       "name": "Put (ally of Gog)",
       "type": "entity",
-      "references": [
-        "Ezekiel 38:5"
-      ],
+      "references": ["Ezekiel 38:5"],
       "blurb": "North African partner in Gog’s war.",
       "category": "nation",
       "id": "e.put--5443d03d"
@@ -1703,9 +1416,7 @@
     {
       "name": "Gomer (ally of Gog)",
       "type": "entity",
-      "references": [
-        "Ezekiel 38:6"
-      ],
+      "references": ["Ezekiel 38:6"],
       "blurb": "Northern people included in the apocalyptic roster.",
       "category": "nation",
       "id": "e.gomer--63bef61b"
@@ -1713,9 +1424,7 @@
     {
       "name": "Beth‑Togarmah (ally of Gog)",
       "type": "entity",
-      "references": [
-        "Ezekiel 38:6"
-      ],
+      "references": ["Ezekiel 38:6"],
       "blurb": "From the far north, cavalry hosts under Gog.",
       "category": "nation",
       "id": "e.beth-togarmah--7385b287"
@@ -1723,9 +1432,7 @@
     {
       "name": "Prophet as Watchman",
       "type": "entity",
-      "references": [
-        "Ezekiel 3:16–21; 33:1–9"
-      ],
+      "references": ["Ezekiel 3:16–21; 33:1–9"],
       "blurb": "Office to warn wicked and righteous alike; accountability for silence stressed.",
       "category": "office",
       "id": "e.prophet-as-watchman--b57d428b"
@@ -1733,9 +1440,7 @@
     {
       "name": "Jerusalem as foundling infant",
       "type": "entity",
-      "references": [
-        "Ezekiel 16:4–7"
-      ],
+      "references": ["Ezekiel 16:4–7"],
       "blurb": "Abandoned and cast out, rescued by divine compassion.",
       "category": "allegory",
       "id": "e.jerusalem-as-foundling-infant--44bdc225"
@@ -1743,9 +1448,7 @@
     {
       "name": "Jerusalem adorned as bride",
       "type": "entity",
-      "references": [
-        "Ezekiel 16:8–14"
-      ],
+      "references": ["Ezekiel 16:8–14"],
       "blurb": "Clothed and crowned by YHWH’s grace.",
       "category": "allegory",
       "id": "e.jerusalem-adorned-as-bride--25a4959f"
@@ -1753,9 +1456,7 @@
     {
       "name": "Jerusalem’s harlotry",
       "type": "entity",
-      "references": [
-        "Ezekiel 16:15–34"
-      ],
+      "references": ["Ezekiel 16:15–34"],
       "blurb": "Lavish gifts squandered on idols and lovers—political adultery imagery.",
       "category": "allegory",
       "id": "e.jerusalems-harlotry--5da3d9fc"
@@ -1763,9 +1464,7 @@
     {
       "name": "Judgment and restoration of the bride",
       "type": "entity",
-      "references": [
-        "Ezekiel 16:35–63"
-      ],
+      "references": ["Ezekiel 16:35–63"],
       "blurb": "Despite betrayal, covenant remembered and renewed.",
       "category": "allegory",
       "id": "e.judgment-and-restoration-of-the-bride--1d5bf648"
@@ -1773,9 +1472,7 @@
     {
       "name": "Oholah (Samaria)",
       "type": "entity",
-      "references": [
-        "Ezekiel 23:4–10"
-      ],
+      "references": ["Ezekiel 23:4–10"],
       "blurb": "Older sister symbolizing Samaria; whored with Assyria.",
       "category": "allegory",
       "id": "e.oholah--0e5e5928"
@@ -1783,9 +1480,7 @@
     {
       "name": "Oholibah (Jerusalem)",
       "type": "entity",
-      "references": [
-        "Ezekiel 23:11–35"
-      ],
+      "references": ["Ezekiel 23:11–35"],
       "blurb": "Younger sister symbolizing Jerusalem; exceeded Samaria in whoredoms with Babylon and Egypt.",
       "category": "allegory",
       "id": "e.oholibah--e9a2173c"
@@ -1793,9 +1488,7 @@
     {
       "name": "Seventh year, fifth month (elders before Ezekiel)",
       "type": "entity",
-      "references": [
-        "Ezekiel 20:1"
-      ],
+      "references": ["Ezekiel 20:1"],
       "blurb": "Historical anchor for recounting Israel’s rebellion.",
       "category": "chronology",
       "id": "e.seventh-year-fifth-month--3ea4e617"
@@ -1803,9 +1496,7 @@
     {
       "name": "Eleventh year, first month (fall of Tyre)",
       "type": "entity",
-      "references": [
-        "Ezekiel 26:1"
-      ],
+      "references": ["Ezekiel 26:1"],
       "blurb": "Marks beginning of Tyre oracle cluster.",
       "category": "chronology",
       "id": "e.eleventh-year-first-month--740fea0b"
@@ -1813,9 +1504,7 @@
     {
       "name": "Twelfth year, first day (oracle vs Egypt)",
       "type": "entity",
-      "references": [
-        "Ezekiel 32:1"
-      ],
+      "references": ["Ezekiel 32:1"],
       "blurb": "Funeral song date stamp.",
       "category": "chronology",
       "id": "e.twelfth-year-first-day--dd0d84c4"
@@ -1823,9 +1512,7 @@
     {
       "name": "Twelfth year, twelfth month (Egypt lament)",
       "type": "entity",
-      "references": [
-        "Ezekiel 32:17"
-      ],
+      "references": ["Ezekiel 32:17"],
       "blurb": "Second lament of Egypt dated precisely.",
       "category": "chronology",
       "id": "e.twelfth-year-twelfth-month--fe70706f"
@@ -1833,9 +1520,7 @@
     {
       "name": "Shipmasters of Tyre",
       "type": "entity",
-      "references": [
-        "Ezekiel 27:28"
-      ],
+      "references": ["Ezekiel 27:28"],
       "blurb": "Commanders of Tyre’s trading fleet—when city falls, their cry echoes at sea.",
       "category": "merchant",
       "id": "e.shipmasters-of-tyre--3e6c9e53"
@@ -1843,9 +1528,7 @@
     {
       "name": "Helmsmen (pilots) of Tyre",
       "type": "entity",
-      "references": [
-        "Ezekiel 27:27-28"
-      ],
+      "references": ["Ezekiel 27:27-28"],
       "blurb": "Guides of commerce whose cry shakes when the shipwreck comes.",
       "category": "merchant",
       "id": "e.helmsmen-of-tyre--ca971d70"
@@ -1853,9 +1536,7 @@
     {
       "name": "Caulkers of Tyre",
       "type": "entity",
-      "references": [
-        "Ezekiel 27:27"
-      ],
+      "references": ["Ezekiel 27:27"],
       "blurb": "Repairers of seams—laborers undone in judgment.",
       "category": "merchant",
       "id": "e.caulkers-of-tyre--0a3bc0db"
@@ -1863,9 +1544,7 @@
     {
       "name": "Mariners of Tyre",
       "type": "entity",
-      "references": [
-        "Ezekiel 27:29"
-      ],
+      "references": ["Ezekiel 27:29"],
       "blurb": "Seafarers who abandon ship to lament Tyre’s ruin.",
       "category": "merchant",
       "id": "e.mariners-of-tyre--5b8c834f"
@@ -1873,9 +1552,7 @@
     {
       "name": "North gate of outer court",
       "type": "entity",
-      "references": [
-        "Ezekiel 40:20-23"
-      ],
+      "references": ["Ezekiel 40:20-23"],
       "blurb": "Gate with chambers, vestibule, and measurements—symmetry underlines holiness.",
       "category": "temple",
       "id": "e.north-gate-of-outer-court--fa5c1b01"
@@ -1883,9 +1560,7 @@
     {
       "name": "South gate of outer court",
       "type": "entity",
-      "references": [
-        "Ezekiel 40:24-27"
-      ],
+      "references": ["Ezekiel 40:24-27"],
       "blurb": "Mirrored design—God’s order consistent across approaches.",
       "category": "temple",
       "id": "e.south-gate-of-outer-court--b7df16f5"
@@ -1893,9 +1568,7 @@
     {
       "name": "East gate of inner court",
       "type": "entity",
-      "references": [
-        "Ezekiel 40:32-34"
-      ],
+      "references": ["Ezekiel 40:32-34"],
       "blurb": "Sacred entry aligned with divine glory return.",
       "category": "temple",
       "id": "e.east-gate-of-inner-court--83ef0956"
@@ -1903,9 +1576,7 @@
     {
       "name": "North gate of inner court",
       "type": "entity",
-      "references": [
-        "Ezekiel 40:35-37"
-      ],
+      "references": ["Ezekiel 40:35-37"],
       "blurb": "Parallel design, regulating priestly approach.",
       "category": "temple",
       "id": "e.north-gate-of-inner-court--10119c2c"
@@ -1913,9 +1584,7 @@
     {
       "name": "Tables for offerings",
       "type": "entity",
-      "references": [
-        "Ezekiel 40:39-43"
-      ],
+      "references": ["Ezekiel 40:39-43"],
       "blurb": "Eight stone tables where burnt offerings prepared.",
       "category": "temple",
       "id": "e.tables-for-offerings--3fbf6a49"
@@ -1923,9 +1592,7 @@
     {
       "name": "Priests’ kitchens",
       "type": "entity",
-      "references": [
-        "Ezekiel 46:19-24"
-      ],
+      "references": ["Ezekiel 46:19-24"],
       "blurb": "Chambers in corners for boiling sacrifices, guarding holy/profane boundary.",
       "category": "temple",
       "id": "e.priests-kitchens--71ec80e9"
@@ -1933,9 +1600,7 @@
     {
       "name": "Gog’s shields and bucklers",
       "type": "entity",
-      "references": [
-        "Ezekiel 38:4"
-      ],
+      "references": ["Ezekiel 38:4"],
       "blurb": "Weapons symbolize scale of threat, later burned for 7 years.",
       "category": "apocalypse",
       "id": "e.gogs-shields-and-bucklers--6bb8bb31"
@@ -1943,9 +1608,7 @@
     {
       "name": "Gog’s bows and arrows",
       "type": "entity",
-      "references": [
-        "Ezekiel 39:3"
-      ],
+      "references": ["Ezekiel 39:3"],
       "blurb": "Weapons struck from hands, emblematic of divine disarmament.",
       "category": "apocalypse",
       "id": "e.gogs-bows-and-arrows--0c0c6196"
@@ -1953,9 +1616,7 @@
     {
       "name": "Hailstones, fire, and brimstone",
       "type": "entity",
-      "references": [
-        "Ezekiel 38:22"
-      ],
+      "references": ["Ezekiel 38:22"],
       "blurb": "Creation itself becomes God’s arsenal against Gog.",
       "category": "apocalypse",
       "id": "e.hailstones-fire-and-brimstone--a073c2d7"
@@ -1963,9 +1624,7 @@
     {
       "name": "Birds summoned to feast",
       "type": "entity",
-      "references": [
-        "Ezekiel 39:17"
-      ],
+      "references": ["Ezekiel 39:17"],
       "blurb": "Raptors called to gorge on fallen warriors.",
       "category": "apocalypse",
       "id": "e.birds-summoned-to-feast--544dcc8f"
@@ -1973,9 +1632,7 @@
     {
       "name": "Beasts of the field summoned to feast",
       "type": "entity",
-      "references": [
-        "Ezekiel 39:17"
-      ],
+      "references": ["Ezekiel 39:17"],
       "blurb": "Domestic and wild animals included in the banquet of justice.",
       "category": "apocalypse",
       "id": "e.beasts-of-the-field-summoned-to-feast--d391b2f8"
@@ -1983,9 +1640,7 @@
     {
       "name": "Fourth year of exile (vision prep?)",
       "type": "entity",
-      "references": [
-        "Ezekiel 8:1 context"
-      ],
+      "references": ["Ezekiel 8:1 context"],
       "blurb": "May reflect an earlier dating nuance—prophet locates his visions in lived exile time.",
       "category": "chronology",
       "id": "e.fourth-year-of-exile--b51affb9"
@@ -1993,9 +1648,7 @@
     {
       "name": "Ninth year, fourth month (oracle vs Egypt)",
       "type": "entity",
-      "references": [
-        "Ezekiel 29:1"
-      ],
+      "references": ["Ezekiel 29:1"],
       "blurb": "Oracles precisely timestamped.",
       "category": "chronology",
       "id": "e.ninth-year-fourth-month--ae94fd53"
@@ -2003,9 +1656,7 @@
     {
       "name": "Tenth year, tenth month (oracle vs Egypt)",
       "type": "entity",
-      "references": [
-        "Ezekiel 29:17"
-      ],
+      "references": ["Ezekiel 29:17"],
       "blurb": "Date when Nebuchadnezzar’s wages discussed.",
       "category": "chronology",
       "id": "e.tenth-year-tenth-month--a202f743"
@@ -2013,9 +1664,7 @@
     {
       "name": "Eleventh year, seventh month (oracle vs Egypt)",
       "type": "entity",
-      "references": [
-        "Ezekiel 30:20"
-      ],
+      "references": ["Ezekiel 30:20"],
       "blurb": "Chronological anchors stitch theology into history.",
       "category": "chronology",
       "id": "e.eleventh-year-seventh-month--2c2a19a1"

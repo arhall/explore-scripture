@@ -15,6 +15,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
+from .config import get_test_urls
 
 
 class TestBibleExplorer:
@@ -40,7 +41,7 @@ class TestBibleExplorer:
     @pytest.fixture(scope="class")
     def base_url(self):
         """Base URL for testing"""
-        return "http://localhost:8080"
+        return get_test_urls()["base"]
     
     def test_homepage_loads(self, driver, base_url):
         """Test that homepage loads successfully"""

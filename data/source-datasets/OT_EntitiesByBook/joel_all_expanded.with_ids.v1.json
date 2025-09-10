@@ -143,9 +143,7 @@
     {
       "name": "Superscription: Joel son of Pethuel",
       "type": "person",
-      "references": [
-        "Joel 1:1"
-      ],
+      "references": ["Joel 1:1"],
       "blurb": "Names the prophet and locates the book within Judah’s prophetic stream; precise reign-date is unstated.",
       "relations": {
         "father": "Pethuel"
@@ -156,9 +154,7 @@
     {
       "name": "Dating (debated)",
       "type": "entity",
-      "references": [
-        "Joel (overview)"
-      ],
+      "references": ["Joel (overview)"],
       "blurb": "Scholars place Joel anywhere from 9th–5th century BCE. Internal cues (no king named; temple central; mention of Greeks) often suggest a post‑exilic or later monarchic context. We retain canonical theology while noting the debate.",
       "category": "intro",
       "id": "e.dating.debated--83ab32a2"
@@ -166,9 +162,7 @@
     {
       "name": "Audience: Judah and Jerusalem",
       "type": "group",
-      "references": [
-        "Joel 2:1,15,32; 3:1,16–20"
-      ],
+      "references": ["Joel 2:1,15,32; 3:1,16–20"],
       "blurb": "Summons focus on Zion and the temple community; the nations are addressed as adversaries called to judgment.",
       "category": "audience",
       "id": "g.audience-judah-and-jerusalem--f8e73f6a"
@@ -176,9 +170,7 @@
     {
       "name": "Elders (gray‑beards)",
       "type": "group",
-      "references": [
-        "Joel 1:2; 1:14; 2:16"
-      ],
+      "references": ["Joel 1:2; 1:14; 2:16"],
       "blurb": "First addressed to remember and testify; they convene fasts and anchor communal memory.",
       "category": "leaders",
       "id": "g.elders.gray-beards--4a9e0334"
@@ -186,9 +178,7 @@
     {
       "name": "Priests, ministers of YHWH",
       "type": "group",
-      "references": [
-        "Joel 1:9,13; 2:17"
-      ],
+      "references": ["Joel 1:9,13; 2:17"],
       "blurb": "Weeping between porch and altar, priests model repentance and intercede for the people’s reproach to be lifted.",
       "category": "priesthood",
       "id": "g.priests-ministers-of-yhwh--ccdef719"
@@ -196,9 +186,7 @@
     {
       "name": "People: consecrated assembly (qahal)",
       "type": "group",
-      "references": [
-        "Joel 1:14; 2:15–16"
-      ],
+      "references": ["Joel 1:14; 2:15–16"],
       "blurb": "From infants to elders, bridegroom to bride—whole community gathered for emergency worship.",
       "category": "assembly",
       "id": "g.people-consecrated-assembly.qahal--4179e2d3"
@@ -206,9 +194,7 @@
     {
       "name": "Bridegroom & bride withheld from chamber",
       "type": "group",
-      "references": [
-        "Joel 2:16"
-      ],
+      "references": ["Joel 2:16"],
       "blurb": "Even joys of marriage pause for corporate repentance—covenant takes precedence over celebration.",
       "category": "assembly",
       "id": "g.bridegroom-bride-withheld-from-chamber--6363e98e"
@@ -216,9 +202,7 @@
     {
       "name": "Infants and nursing babies",
       "type": "group",
-      "references": [
-        "Joel 2:16"
-      ],
+      "references": ["Joel 2:16"],
       "blurb": "Extremes of age included so the whole body bears the fast—dependence highlights urgency.",
       "category": "assembly",
       "id": "g.infants-and-nursing-babies--0edbb162"
@@ -226,9 +210,7 @@
     {
       "name": "Farmers & vinedressers",
       "type": "group",
-      "references": [
-        "Joel 1:11–12"
-      ],
+      "references": ["Joel 1:11–12"],
       "blurb": "Economic backbone hit first by devastation—lament trained through agrarian loss.",
       "category": "workforce",
       "id": "g.farmers-vinedressers--40082a30"
@@ -236,9 +218,7 @@
     {
       "name": "Drunkards & drinkers of wine",
       "type": "group",
-      "references": [
-        "Joel 1:5"
-      ],
+      "references": ["Joel 1:5"],
       "blurb": "Called to awaken first; indulgence interrupted by the cutting off of new wine.",
       "category": "social",
       "id": "g.drunkards-drinkers-of-wine--6e33e8c5"
@@ -246,9 +226,7 @@
     {
       "name": "Blow the trumpet in Zion (alarm)",
       "type": "entity",
-      "references": [
-        "Joel 2:1"
-      ],
+      "references": ["Joel 2:1"],
       "blurb": "Sirens of holiness: the shofar warns of the Day of YHWH—a sacred emergency broadcast.",
       "category": "liturgy",
       "id": "e.blow-the-trumpet-in-zion.alarm--76d7a885"
@@ -256,9 +234,7 @@
     {
       "name": "Blow the trumpet in Zion (fast)",
       "type": "entity",
-      "references": [
-        "Joel 2:15"
-      ],
+      "references": ["Joel 2:15"],
       "blurb": "Second blast convenes a holy fast and solemn assembly; sound organizes repentance.",
       "category": "liturgy",
       "id": "e.blow-the-trumpet-in-zion.fast--63707a17"
@@ -266,9 +242,7 @@
     {
       "name": "Fast: consecrate a fast, call a sacred assembly",
       "type": "entity",
-      "references": [
-        "Joel 1:14; 2:15"
-      ],
+      "references": ["Joel 1:14; 2:15"],
       "blurb": "Fasting becomes national therapy—lean bodies saying what words cannot.",
       "category": "practice",
       "id": "e.fast-consecrate-a-fast-call-a-sacred-assembly--bf6ac14a"
@@ -276,9 +250,7 @@
     {
       "name": "Sackcloth (priests & people)",
       "type": "entity",
-      "references": [
-        "Joel 1:13"
-      ],
+      "references": ["Joel 1:13"],
       "blurb": "Scratchy sign of grief; external symbol to train internal contrition.",
       "category": "practice",
       "id": "e.sackcloth.priests-people--9336c5d4"
@@ -286,9 +258,7 @@
     {
       "name": "Between porch and altar (intercession locus)",
       "type": "entity",
-      "references": [
-        "Joel 2:17"
-      ],
+      "references": ["Joel 2:17"],
       "blurb": "Spatial theology: priests stand in the hinge between God and people, pleading for mercy and reputation of the Name.",
       "category": "temple",
       "id": "e.between-porch-and-altar.intercession-locus--6e872585"
@@ -296,9 +266,7 @@
     {
       "name": "Gnawing locust (gazam)",
       "type": "figure",
-      "references": [
-        "Joel 1:4"
-      ],
+      "references": ["Joel 1:4"],
       "blurb": "First wave in the consumption cycle—chews through initial growth.",
       "category": "plague",
       "id": "f.gnawing-locust.gazam--17a99b3c"
@@ -306,9 +274,7 @@
     {
       "name": "Swarming locust (arbeh)",
       "type": "figure",
-      "references": [
-        "Joel 1:4; 2:25"
-      ],
+      "references": ["Joel 1:4; 2:25"],
       "blurb": "Cloud of eaters saturating the sky; the most common biblical locust term.",
       "category": "plague",
       "id": "f.swarming-locust.arbeh--2e513d9f"
@@ -316,9 +282,7 @@
     {
       "name": "Creeping/young locust (yeleq)",
       "type": "figure",
-      "references": [
-        "Joel 1:4; 2:25"
-      ],
+      "references": ["Joel 1:4; 2:25"],
       "blurb": "Larval hoppers stripping what remains at ground level.",
       "category": "plague",
       "id": "f.creeping-young-locust.yeleq--6c654aa5"
@@ -326,9 +290,7 @@
     {
       "name": "Destroying locust (ḥasil)",
       "type": "figure",
-      "references": [
-        "Joel 1:4; 2:25"
-      ],
+      "references": ["Joel 1:4; 2:25"],
       "blurb": "Final, finishing wave—nothing green remains.",
       "category": "plague",
       "id": "f.destroying-locust.asil--fa468d3e"
@@ -336,9 +298,7 @@
     {
       "name": "Locusts as YHWH’s army",
       "type": "entity",
-      "references": [
-        "Joel 2:2–11"
-      ],
+      "references": ["Joel 2:2–11"],
       "blurb": "Similes of cavalry, chariots, and disciplined ranks reframe nature as a divine instrument of holy war.",
       "category": "theophany",
       "id": "e.locusts-as-yhwhs-army--d2e0261b"
@@ -346,9 +306,7 @@
     {
       "name": "Northern army (driven to seas)",
       "type": "entity",
-      "references": [
-        "Joel 2:20"
-      ],
+      "references": ["Joel 2:20"],
       "blurb": "Whether locusts or foreign troops, the threat from the north is expelled—stench left as sign of victory.",
       "category": "war",
       "note": "Interpretations differ on whether this denotes insects or invaders.",
@@ -357,9 +315,7 @@
     {
       "name": "Grain offering and drink offering cut off",
       "type": "entity",
-      "references": [
-        "Joel 1:9,13; 2:14"
-      ],
+      "references": ["Joel 1:9,13; 2:14"],
       "blurb": "Temple liturgy stalls when fields fail—worship tied to economy and ecology.",
       "category": "cult-economy",
       "id": "e.grain-offering-and-drink-offering-cut-off--d222be04"
@@ -367,9 +323,7 @@
     {
       "name": "New wine cut off",
       "type": "entity",
-      "references": [
-        "Joel 1:5"
-      ],
+      "references": ["Joel 1:5"],
       "blurb": "Pleasure pipeline closes; convivial culture sobers to reality.",
       "category": "economy",
       "id": "e.new-wine-cut-off--3ab9fe35"
@@ -377,9 +331,7 @@
     {
       "name": "Oil languishes",
       "type": "entity",
-      "references": [
-        "Joel 1:10"
-      ],
+      "references": ["Joel 1:10"],
       "blurb": "Olive-based economy collapses; light and anointing thin out.",
       "category": "economy",
       "id": "e.oil-languishes--19d5274f"
@@ -387,9 +339,7 @@
     {
       "name": "Fields wasted; ground mourns",
       "type": "entity",
-      "references": [
-        "Joel 1:10–12"
-      ],
+      "references": ["Joel 1:10–12"],
       "blurb": "Creation personified as grieving participant in covenant drama.",
       "category": "creation",
       "id": "e.fields-wasted-ground-mourns--3568178e"
@@ -397,9 +347,7 @@
     {
       "name": "Beasts groan; herds perplexed",
       "type": "group",
-      "references": [
-        "Joel 1:18"
-      ],
+      "references": ["Joel 1:18"],
       "blurb": "Animal suffering underscores human sin’s collateral damage.",
       "category": "creation",
       "id": "g.beasts-groan-herds-perplexed--e77fd0c7"
@@ -407,9 +355,7 @@
     {
       "name": "Pastures consumed by fire",
       "type": "entity",
-      "references": [
-        "Joel 1:19–20"
-      ],
+      "references": ["Joel 1:19–20"],
       "blurb": "Heat and drought turn fields into tinder—judgment through weather and flame.",
       "category": "creation",
       "id": "e.pastures-consumed-by-fire--a564ccda"
@@ -417,9 +363,7 @@
     {
       "name": "Day of YHWH (near and great)",
       "type": "entity",
-      "references": [
-        "Joel 1:15; 2:1,11,31; 3:14"
-      ],
+      "references": ["Joel 1:15; 2:1,11,31; 3:14"],
       "blurb": "Event and horizon: a crisis that unmasks idols and crowns God’s kingship over all nations.",
       "category": "day-of-yhwh",
       "id": "e.day-of-yhwh.near-and-great--78ca5d45"
@@ -427,9 +371,7 @@
     {
       "name": "Eden before them, desert behind them",
       "type": "entity",
-      "references": [
-        "Joel 2:3"
-      ],
+      "references": ["Joel 2:3"],
       "blurb": "Reversal of creation—locust march leaves de‑creation in its wake.",
       "category": "image",
       "id": "e.eden-before-them-desert-behind-them--b6b8bc2f"
@@ -437,9 +379,7 @@
     {
       "name": "Like horses… like chariots",
       "type": "entity",
-      "references": [
-        "Joel 2:4–5"
-      ],
+      "references": ["Joel 2:4–5"],
       "blurb": "Sound and speed metaphors heighten dread; natural disaster reads like invasion.",
       "category": "image",
       "id": "e.like-horses-like-chariots--a6371d31"
@@ -447,9 +387,7 @@
     {
       "name": "Earthquakes, heavens tremble",
       "type": "entity",
-      "references": [
-        "Joel 2:10"
-      ],
+      "references": ["Joel 2:10"],
       "blurb": "Cosmos participates in judgment—seismic sympathy.",
       "category": "portent",
       "id": "e.earthquakes-heavens-tremble--1dab0234"
@@ -457,9 +395,7 @@
     {
       "name": "Sun turned to darkness, moon to blood",
       "type": "entity",
-      "references": [
-        "Joel 2:31"
-      ],
+      "references": ["Joel 2:31"],
       "blurb": "Apocalyptic optics announce the great and terrible day.",
       "category": "portent",
       "id": "e.sun-turned-to-darkness-moon-to-blood--1670e9b9"
@@ -467,9 +403,7 @@
     {
       "name": "Stars withdraw their shining",
       "type": "entity",
-      "references": [
-        "Joel 2:10; 3:15"
-      ],
+      "references": ["Joel 2:10; 3:15"],
       "blurb": "Lights dim at the approach of the Divine Warrior.",
       "category": "portent",
       "id": "e.stars-withdraw-their-shining--41157be9"
@@ -477,9 +411,7 @@
     {
       "name": "YHWH roars from Zion",
       "type": "entity",
-      "references": [
-        "Joel 3:16"
-      ],
+      "references": ["Joel 3:16"],
       "blurb": "The Divine Lion’s voice steadies Jerusalem and shakes the nations.",
       "category": "theophany",
       "id": "e.yhwh-roars-from-zion--80c8b302"
@@ -487,9 +419,7 @@
     {
       "name": "Return to me with all your heart",
       "type": "entity",
-      "references": [
-        "Joel 2:12–13"
-      ],
+      "references": ["Joel 2:12–13"],
       "blurb": "Tear hearts, not garments—appeal to God’s name as gracious and compassionate.",
       "category": "repentance",
       "id": "e.return-to-me-with-all-your-heart--60af3e06"
@@ -497,9 +427,7 @@
     {
       "name": "Between porch and altar prayer",
       "type": "entity",
-      "references": [
-        "Joel 2:17"
-      ],
+      "references": ["Joel 2:17"],
       "blurb": "‘Spare your people… make not your heritage a reproach’—intercession centers God’s reputation among nations.",
       "category": "intercession",
       "id": "e.between-porch-and-altar-prayer--bb1d7fcc"
@@ -507,9 +435,7 @@
     {
       "name": "Divine jealousy and pity",
       "type": "entity",
-      "references": [
-        "Joel 2:18"
-      ],
+      "references": ["Joel 2:18"],
       "blurb": "God is stirred to zeal for his land and compassion for his people—covenant mercy activated.",
       "category": "attribute",
       "id": "e.divine-jealousy-and-pity--b4496d3a"
@@ -517,9 +443,7 @@
     {
       "name": "Restoration of grain, wine, oil",
       "type": "entity",
-      "references": [
-        "Joel 2:19"
-      ],
+      "references": ["Joel 2:19"],
       "blurb": "Liturgy restocked—grace measured in sacks and skins.",
       "category": "restoration",
       "id": "e.restoration-of-grain-wine-oil--68b9d61b"
@@ -527,9 +451,7 @@
     {
       "name": "Removal of northern threat",
       "type": "entity",
-      "references": [
-        "Joel 2:20"
-      ],
+      "references": ["Joel 2:20"],
       "blurb": "Enemy expelled—shame reversed before watching nations.",
       "category": "restoration",
       "id": "e.removal-of-northern-threat--7421b482"
@@ -537,9 +459,7 @@
     {
       "name": "Rains: early and latter",
       "type": "entity",
-      "references": [
-        "Joel 2:23"
-      ],
+      "references": ["Joel 2:23"],
       "blurb": "Covenant weather returns; agricultural rhythms healed.",
       "category": "creation",
       "id": "e.rains-early-and-latter--88a0a39f"
@@ -547,9 +467,7 @@
     {
       "name": "Threshing floors full; vats overflow",
       "type": "entity",
-      "references": [
-        "Joel 2:24"
-      ],
+      "references": ["Joel 2:24"],
       "blurb": "Abundance images replace famine—signs of covenant renewal.",
       "category": "restoration",
       "id": "e.threshing-floors-full-vats-overflow--aa005df0"
@@ -557,9 +475,7 @@
     {
       "name": "I will restore the years the locust has eaten",
       "type": "entity",
-      "references": [
-        "Joel 2:25"
-      ],
+      "references": ["Joel 2:25"],
       "blurb": "Time itself redeemed; losses become sites of testimony.",
       "category": "restoration",
       "id": "e.i-will-restore-the-years-the-locust-has-eaten--3494422c"
@@ -567,9 +483,7 @@
     {
       "name": "My people shall never again be put to shame",
       "type": "entity",
-      "references": [
-        "Joel 2:26–27"
-      ],
+      "references": ["Joel 2:26–27"],
       "blurb": "Reputation repaired; knowledge of God relocates identity.",
       "category": "restoration",
       "id": "e.my-people-shall-never-again-be-put-to-shame--2a318b2f"
@@ -577,35 +491,25 @@
     {
       "name": "Afterward: I will pour out my Spirit on all flesh",
       "type": "entity",
-      "references": [
-        "Joel 2:28–29"
-      ],
+      "references": ["Joel 2:28–29"],
       "blurb": "Pentecostal horizon: democratized prophecy (sons, daughters, old, young, servants) as sign of the age to come.",
       "category": "spirit",
-      "cross_references": [
-        "Acts 2:16–21"
-      ],
+      "cross_references": ["Acts 2:16–21"],
       "id": "e.afterward-i-will-pour-out-my-spirit-on-all-flesh--b50cbf74"
     },
     {
       "name": "Everyone who calls on the name of YHWH shall be saved",
       "type": "entity",
-      "references": [
-        "Joel 2:32"
-      ],
+      "references": ["Joel 2:32"],
       "blurb": "Open invitation anchored in Zion; later echoed in apostolic preaching.",
       "category": "salvation",
-      "cross_references": [
-        "Romans 10:13; Acts 2:21"
-      ],
+      "cross_references": ["Romans 10:13; Acts 2:21"],
       "id": "e.everyone-who-calls-on-the-name-of-yhwh-shall-be-saved--a8d8b845"
     },
     {
       "name": "Remnant on Mount Zion",
       "type": "group",
-      "references": [
-        "Joel 2:32"
-      ],
+      "references": ["Joel 2:32"],
       "blurb": "In Jerusalem there will be survivors whom the LORD calls—election reframed as mission.",
       "category": "remnant",
       "id": "g.remnant-on-mount-zion--f684305c"
@@ -613,9 +517,7 @@
     {
       "name": "Valley of Jehoshaphat (YHWH judges)",
       "type": "entity",
-      "references": [
-        "Joel 3:2,12"
-      ],
+      "references": ["Joel 3:2,12"],
       "blurb": "Courtroom-battlefield where God gathers nations to answer for crimes against Judah.",
       "category": "judgment",
       "id": "e.valley-of-jehoshaphat.yhwh-judges--11a45537"
@@ -623,9 +525,7 @@
     {
       "name": "Valley of Decision",
       "type": "entity",
-      "references": [
-        "Joel 3:14"
-      ],
+      "references": ["Joel 3:14"],
       "blurb": "Human indecision meets divine decision—finality thundered over multitudes.",
       "category": "judgment",
       "id": "e.valley-of-decision--29baa29f"
@@ -633,9 +533,7 @@
     {
       "name": "Tyre and Sidon",
       "type": "group",
-      "references": [
-        "Joel 3:4–6"
-      ],
+      "references": ["Joel 3:4–6"],
       "blurb": "Phoenician traders indicted for plunder and slave-trading of Judeans.",
       "category": "nation",
       "id": "g.tyre-and-sidon--5651ad1b"
@@ -643,9 +541,7 @@
     {
       "name": "Philistia (all the districts)",
       "type": "group",
-      "references": [
-        "Joel 3:4–6"
-      ],
+      "references": ["Joel 3:4–6"],
       "blurb": "Coastal enemies complicit in trafficking captives for profit.",
       "category": "nation",
       "id": "g.philistia.all-the-districts--d5349f12"
@@ -653,9 +549,7 @@
     {
       "name": "Javan (Greeks/Ionians)",
       "type": "group",
-      "references": [
-        "Joel 3:6"
-      ],
+      "references": ["Joel 3:6"],
       "blurb": "Distant buyers of Judean slaves—global market implicated in covenant crimes.",
       "category": "nation",
       "id": "g.javan.greeks-ionians--6a9ab7a5"
@@ -663,9 +557,7 @@
     {
       "name": "Egypt (desolation declared)",
       "type": "group",
-      "references": [
-        "Joel 3:19"
-      ],
+      "references": ["Joel 3:19"],
       "blurb": "Neighbor empire judged for violence against Judah.",
       "category": "nation",
       "id": "g.egypt--ab1ad00f"
@@ -673,9 +565,7 @@
     {
       "name": "Edom (desolate wilderness)",
       "type": "group",
-      "references": [
-        "Joel 3:19"
-      ],
+      "references": ["Joel 3:19"],
       "blurb": "Kinsfolk-turned-enemy condemned for bloodguilt.",
       "category": "nation",
       "id": "g.edom.desolate-wilderness--6976d032"
@@ -683,9 +573,7 @@
     {
       "name": "Sanctify war: ‘Beat your plowshares into swords’",
       "type": "entity",
-      "references": [
-        "Joel 3:9–10"
-      ],
+      "references": ["Joel 3:9–10"],
       "blurb": "Ironic reversal of Isaiah 2/Micah 4—God summons nations to their own undoing.",
       "category": "war",
       "id": "e.sanctify-war-beat-your-plowshares-into-swords--b1dc2307"
@@ -693,9 +581,7 @@
     {
       "name": "Let the weak say, ‘I am a warrior’",
       "type": "entity",
-      "references": [
-        "Joel 3:10"
-      ],
+      "references": ["Joel 3:10"],
       "blurb": "Bitter parody of empowerment—mustering for judgment, not justice.",
       "category": "war",
       "id": "e.let-the-weak-say-i-am-a-warrior--14091bf5"
@@ -703,9 +589,7 @@
     {
       "name": "Sickle and winepress of wrath",
       "type": "entity",
-      "references": [
-        "Joel 3:13"
-      ],
+      "references": ["Joel 3:13"],
       "blurb": "Harvest metaphors for judgment ripeness—grapes of wrath trodden.",
       "category": "judgment",
       "id": "e.sickle-and-winepress-of-wrath--a450c6ae"
@@ -713,9 +597,7 @@
     {
       "name": "Zion/Jerusalem as refuge",
       "type": "entity",
-      "references": [
-        "Joel 2:32; 3:16–17"
-      ],
+      "references": ["Joel 2:32; 3:16–17"],
       "blurb": "Holy hill becomes sanctuary; knowing the LORD sets boundaries against profanation.",
       "category": "zion",
       "id": "e.zion-jerusalem-as-refuge--10f188cd"
@@ -723,9 +605,7 @@
     {
       "name": "Fountain from the house of YHWH",
       "type": "entity",
-      "references": [
-        "Joel 3:18"
-      ],
+      "references": ["Joel 3:18"],
       "blurb": "Temple-spring irrigates the Valley of Shittim—Edenic waters return to heal land.",
       "category": "temple",
       "id": "e.fountain-from-the-house-of-yhwh--d1ad2f53"
@@ -733,9 +613,7 @@
     {
       "name": "Mountains drip new wine; hills flow with milk",
       "type": "entity",
-      "references": [
-        "Joel 3:18"
-      ],
+      "references": ["Joel 3:18"],
       "blurb": "Hyperbolic agrarian joy—creation re‑enchanted under divine reign.",
       "category": "new-creation",
       "id": "e.mountains-drip-new-wine-hills-flow-with-milk--58c2588e"
@@ -743,9 +621,7 @@
     {
       "name": "Valley of Shittim (Acacias) watered",
       "type": "entity",
-      "references": [
-        "Joel 3:18"
-      ],
+      "references": ["Joel 3:18"],
       "blurb": "Dry places transformed by temple river—judgment land remade into garden.",
       "category": "landscape",
       "id": "e.valley-of-shittim-watered.acacias--f3e0b389"
@@ -753,9 +629,7 @@
     {
       "name": "Foreigners shall never again pass through her",
       "type": "entity",
-      "references": [
-        "Joel 3:17"
-      ],
+      "references": ["Joel 3:17"],
       "blurb": "Sanctity protected—no trampling of holy space by hostile powers.",
       "category": "zion",
       "id": "e.foreigners-shall-never-again-pass-through-her--c3405024"
@@ -763,9 +637,7 @@
     {
       "name": "YHWH dwells in Zion",
       "type": "entity",
-      "references": [
-        "Joel 3:21"
-      ],
+      "references": ["Joel 3:21"],
       "blurb": "Covenant climax: divine presence restores belonging and holiness.",
       "category": "presence",
       "id": "e.yhwh-dwells-in-zion--949a79cd"
@@ -773,9 +645,7 @@
     {
       "name": "Priestly diction & temple centrality",
       "type": "entity",
-      "references": [
-        "Joel 1–2"
-      ],
+      "references": ["Joel 1–2"],
       "blurb": "Joel’s language and remedies are cultically inflected—fasts, offerings, priests, and altar define the cure.",
       "category": "literary",
       "id": "e.priestly-diction-temple-centrality--93917aa6"
@@ -783,9 +653,7 @@
     {
       "name": "Intertexts: Amos, Isaiah, Obadiah",
       "type": "entity",
-      "references": [
-        "Joel (passim)"
-      ],
+      "references": ["Joel (passim)"],
       "blurb": "Joel echoes and is echoed—Day of YHWH, Zion refuge, and Edom/Egypt judgments cycle through the Twelve.",
       "category": "intertext",
       "id": "e.intertexts-amos-isaiah-obadiah--a282fd9a"
@@ -793,9 +661,7 @@
     {
       "name": "Acts 2 reception of Joel 2",
       "type": "entity",
-      "references": [
-        "Joel 2:28–32; Acts 2"
-      ],
+      "references": ["Joel 2:28–32; Acts 2"],
       "blurb": "Peter reads Pentecost as the ‘afterward’—outpoured Spirit signals the last days.",
       "category": "reception",
       "id": "e.acts-2-reception-of-joel-2--a48b2874"
@@ -803,9 +669,7 @@
     {
       "name": "Isaiah–Micah plowshares reversal",
       "type": "entity",
-      "references": [
-        "Joel 3:10; Isa 2; Mic 4"
-      ],
+      "references": ["Joel 3:10; Isa 2; Mic 4"],
       "blurb": "Joel’s muster to war flips Zion’s peace oracle—irony intensifies judgment theme.",
       "category": "intertext",
       "id": "e.isaiah-micah-plowshares-reversal--e2877b1d"
@@ -813,9 +677,7 @@
     {
       "name": "Theology of reversal: from famine to feast",
       "type": "entity",
-      "references": [
-        "Joel 1–2"
-      ],
+      "references": ["Joel 1–2"],
       "blurb": "Loss → lament → liturgy → life restored: a canonical pattern of death and resurrection.",
       "category": "theology",
       "id": "e.theology-of-reversal-from-famine-to-feast--d08049cc"
@@ -823,9 +685,7 @@
     {
       "name": "Gnats of ash and dust (implied in drought)",
       "type": "entity",
-      "references": [
-        "Joel 1:19–20"
-      ],
+      "references": ["Joel 1:19–20"],
       "blurb": "Parched creation hints at plague ecology—Joel’s silence roars in images.",
       "category": "motif",
       "id": "e.gnats-of-ash-and-dust.implied-in-drought--af6501b5"
@@ -833,9 +693,7 @@
     {
       "name": "Windows of the temple (priests’ vantage)",
       "type": "entity",
-      "references": [
-        "Joel 2:17 (spatial)"
-      ],
+      "references": ["Joel 2:17 (spatial)"],
       "blurb": "Between porch and altar imagines a clerical threshold where mercy is pled.",
       "category": "temple",
       "id": "e.windows-of-the-temple.priests-vantage--d5d21146"
@@ -843,9 +701,7 @@
     {
       "name": "Naming shame vs. name of YHWH",
       "type": "entity",
-      "references": [
-        "Joel 2:17,26–27,32"
-      ],
+      "references": ["Joel 2:17,26–27,32"],
       "blurb": "Public disgrace replaced by public invocation—identity rebuilt by the Name.",
       "category": "theology",
       "id": "e.naming-shame-vs-name-of-yhwh--a99a06e3"
@@ -853,9 +709,7 @@
     {
       "name": "‘Who can endure it?’ rhetorical question",
       "type": "entity",
-      "references": [
-        "Joel 2:11"
-      ],
+      "references": ["Joel 2:11"],
       "blurb": "Apocalyptic humility—no presumption survives the Day, only repentance.",
       "category": "rhetoric",
       "id": "e.who-can-endure-it-rhetorical-question--de204f9a"
@@ -863,9 +717,7 @@
     {
       "name": "Multitudes, multitudes…",
       "type": "entity",
-      "references": [
-        "Joel 3:14"
-      ],
+      "references": ["Joel 3:14"],
       "blurb": "Poetic doubling amplifies dread and decisiveness.",
       "category": "rhetoric",
       "id": "e.multitudes-multitudes--fc02fd39"

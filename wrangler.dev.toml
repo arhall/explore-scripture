@@ -1,0 +1,59 @@
+name = "explore-scripture-dev"
+main = "src/worker.js"
+compatibility_date = "2024-09-09"
+compatibility_flags = ["nodejs_compat"]
+
+# Development configuration optimized for fast builds
+# Account settings (using environment variables)
+account_id = "${CLOUDFLARE_ACCOUNT_ID}"
+
+# Environment variables for development
+[vars]
+ENVIRONMENT = "development"
+BUILD_MODE = "development"
+ENABLE_CACHING = "false"
+DEBUG_MODE = "true"
+
+# KV Namespaces for development (optional - can use local storage)
+[[kv_namespaces]]
+binding = "CACHE"
+id = "${CLOUDFLARE_KV_CACHE_DEV_ID}"
+preview_id = "${CLOUDFLARE_KV_CACHE_DEV_ID}"
+
+[[kv_namespaces]]
+binding = "ENTITIES"
+id = "${CLOUDFLARE_KV_ENTITIES_DEV_ID}"
+preview_id = "${CLOUDFLARE_KV_ENTITIES_DEV_ID}"
+
+# Static assets configuration
+[site]
+bucket = "_site"
+
+# Build configuration for development
+[build]
+command = "echo 'Using pre-built optimized site' && ls -la _site | head -5"
+cwd = "./"
+
+# Development settings optimized for speed
+[dev]
+local_protocol = "https"
+port = 8787
+# Use local mode for faster development
+local = true
+# Persist data across restarts
+persist_to = "./.wrangler/state"
+
+# Development-specific routes (optional)
+[[routes]]
+pattern = "*dev.explore-scripture.pages.dev/*"
+zone_name = "pages.dev"
+
+# Lighter security headers for development
+[env.development]
+[env.development.vars]
+CSP_HEADER = "default-src 'self' 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https:; connect-src 'self' https://api.esv.org https://www.biblegateway.com; frame-src https://www.youtube.com https://www.biblegateway.com;"
+
+# Development analytics (optional)
+[[analytics_engine_datasets]]
+binding = "BIBLE_ANALYTICS_DEV"
+dataset = "explore_scripture_dev"

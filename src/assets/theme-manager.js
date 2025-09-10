@@ -6,12 +6,12 @@
 class ThemeManager {
   constructor() {
     this.themes = {
-      'light': {
+      light: {
         name: 'Light',
         category: 'Default',
         colors: {
           '--bg': '#ffffff',
-          '--card': '#ffffff', 
+          '--card': '#ffffff',
           '--text': '#111827',
           '--text-secondary': '#6b7280',
           '--accent': '#2563eb',
@@ -22,10 +22,10 @@ class ThemeManager {
           '--success-dark': '#059669',
           '--warning': '#f59e0b',
           '--warning-dark': '#d97706',
-          '--error': '#dc2626'
-        }
+          '--error': '#dc2626',
+        },
       },
-      'warm': {
+      warm: {
         name: 'Warm',
         category: 'Light',
         colors: {
@@ -41,10 +41,10 @@ class ThemeManager {
           '--success-dark': '#047857',
           '--warning': '#d97706',
           '--warning-dark': '#b45309',
-          '--error': '#dc2626'
-        }
+          '--error': '#dc2626',
+        },
       },
-      'nature': {
+      nature: {
         name: 'Nature',
         category: 'Light',
         colors: {
@@ -60,10 +60,10 @@ class ThemeManager {
           '--success-dark': '#15803d',
           '--warning': '#ca8a04',
           '--warning-dark': '#a16207',
-          '--error': '#dc2626'
-        }
+          '--error': '#dc2626',
+        },
       },
-      'ocean': {
+      ocean: {
         name: 'Ocean',
         category: 'Light',
         colors: {
@@ -79,10 +79,10 @@ class ThemeManager {
           '--success-dark': '#059669',
           '--warning': '#f59e0b',
           '--warning-dark': '#d97706',
-          '--error': '#dc2626'
-        }
+          '--error': '#dc2626',
+        },
       },
-      'slate': {
+      slate: {
         name: 'Slate',
         category: 'Dark',
         colors: {
@@ -98,10 +98,10 @@ class ThemeManager {
           '--success-dark': '#059669',
           '--warning': '#f59e0b',
           '--warning-dark': '#d97706',
-          '--error': '#ef4444'
-        }
+          '--error': '#ef4444',
+        },
       },
-      'charcoal': {
+      charcoal: {
         name: 'Charcoal',
         category: 'Dark',
         colors: {
@@ -117,10 +117,10 @@ class ThemeManager {
           '--success-dark': '#65a30d',
           '--warning': '#eab308',
           '--warning-dark': '#ca8a04',
-          '--error': '#ef4444'
-        }
+          '--error': '#ef4444',
+        },
       },
-      'midnight': {
+      midnight: {
         name: 'Midnight',
         category: 'Dark',
         colors: {
@@ -136,10 +136,10 @@ class ThemeManager {
           '--success-dark': '#65a30d',
           '--warning': '#f59e0b',
           '--warning-dark': '#d97706',
-          '--error': '#f87171'
-        }
+          '--error': '#f87171',
+        },
       },
-      'purple': {
+      purple: {
         name: 'Purple',
         category: 'Dark',
         colors: {
@@ -155,10 +155,10 @@ class ThemeManager {
           '--success-dark': '#059669',
           '--warning': '#f59e0b',
           '--warning-dark': '#d97706',
-          '--error': '#f87171'
-        }
+          '--error': '#f87171',
+        },
       },
-      'cream': {
+      cream: {
         name: 'Cream',
         category: 'Light',
         colors: {
@@ -174,10 +174,10 @@ class ThemeManager {
           '--success-dark': '#15803d',
           '--warning': '#d97706',
           '--warning-dark': '#b45309',
-          '--error': '#dc2626'
-        }
+          '--error': '#dc2626',
+        },
       },
-      'coral': {
+      coral: {
         name: 'Coral',
         category: 'Light',
         colors: {
@@ -193,10 +193,10 @@ class ThemeManager {
           '--success-dark': '#15803d',
           '--warning': '#f59e0b',
           '--warning-dark': '#d97706',
-          '--error': '#dc2626'
-        }
+          '--error': '#dc2626',
+        },
       },
-      'sage': {
+      sage: {
         name: 'Sage',
         category: 'Light',
         colors: {
@@ -212,10 +212,10 @@ class ThemeManager {
           '--success-dark': '#059669',
           '--warning': '#f59e0b',
           '--warning-dark': '#d97706',
-          '--error': '#dc2626'
-        }
+          '--error': '#dc2626',
+        },
       },
-      'lavender': {
+      lavender: {
         name: 'Lavender',
         category: 'Light',
         colors: {
@@ -231,10 +231,10 @@ class ThemeManager {
           '--success-dark': '#059669',
           '--warning': '#f59e0b',
           '--warning-dark': '#d97706',
-          '--error': '#dc2626'
-        }
+          '--error': '#dc2626',
+        },
       },
-      'stone': {
+      stone: {
         name: 'Stone',
         category: 'Dark',
         colors: {
@@ -250,10 +250,10 @@ class ThemeManager {
           '--success-dark': '#16a34a',
           '--warning': '#f59e0b',
           '--warning-dark': '#d97706',
-          '--error': '#ef4444'
-        }
+          '--error': '#ef4444',
+        },
       },
-      'ember': {
+      ember: {
         name: 'Ember',
         category: 'Dark',
         colors: {
@@ -269,10 +269,10 @@ class ThemeManager {
           '--success-dark': '#16a34a',
           '--warning': '#f59e0b',
           '--warning-dark': '#d97706',
-          '--error': '#f87171'
-        }
+          '--error': '#f87171',
+        },
       },
-      'forest': {
+      forest: {
         name: 'Forest',
         category: 'Dark',
         colors: {
@@ -288,10 +288,10 @@ class ThemeManager {
           '--success-dark': '#16a34a',
           '--warning': '#fbbf24',
           '--warning-dark': '#f59e0b',
-          '--error': '#f87171'
-        }
+          '--error': '#f87171',
+        },
       },
-      'indigo': {
+      indigo: {
         name: 'Indigo',
         category: 'Dark',
         colors: {
@@ -307,10 +307,10 @@ class ThemeManager {
           '--success-dark': '#16a34a',
           '--warning': '#fbbf24',
           '--warning-dark': '#f59e0b',
-          '--error': '#f87171'
-        }
+          '--error': '#f87171',
+        },
       },
-      'rose': {
+      rose: {
         name: 'Rose',
         category: 'Light',
         colors: {
@@ -326,10 +326,10 @@ class ThemeManager {
           '--success-dark': '#15803d',
           '--warning': '#f59e0b',
           '--warning-dark': '#d97706',
-          '--error': '#dc2626'
-        }
+          '--error': '#dc2626',
+        },
       },
-      'sky': {
+      sky: {
         name: 'Sky',
         category: 'Light',
         colors: {
@@ -345,10 +345,10 @@ class ThemeManager {
           '--success-dark': '#15803d',
           '--warning': '#f59e0b',
           '--warning-dark': '#d97706',
-          '--error': '#dc2626'
-        }
+          '--error': '#dc2626',
+        },
       },
-      'amber': {
+      amber: {
         name: 'Amber',
         category: 'Light',
         colors: {
@@ -364,10 +364,10 @@ class ThemeManager {
           '--success-dark': '#15803d',
           '--warning': '#f59e0b',
           '--warning-dark': '#d97706',
-          '--error': '#dc2626'
-        }
+          '--error': '#dc2626',
+        },
       },
-      'ruby': {
+      ruby: {
         name: 'Ruby',
         category: 'Dark',
         colors: {
@@ -383,10 +383,10 @@ class ThemeManager {
           '--success-dark': '#16a34a',
           '--warning': '#fbbf24',
           '--warning-dark': '#f59e0b',
-          '--error': '#f87171'
-        }
+          '--error': '#f87171',
+        },
       },
-      'emerald': {
+      emerald: {
         name: 'Emerald',
         category: 'Dark',
         colors: {
@@ -402,10 +402,10 @@ class ThemeManager {
           '--success-dark': '#059669',
           '--warning': '#fbbf24',
           '--warning-dark': '#f59e0b',
-          '--error': '#f87171'
-        }
+          '--error': '#f87171',
+        },
       },
-      'cyan': {
+      cyan: {
         name: 'Cyan',
         category: 'Light',
         colors: {
@@ -421,10 +421,10 @@ class ThemeManager {
           '--success-dark': '#15803d',
           '--warning': '#f59e0b',
           '--warning-dark': '#d97706',
-          '--error': '#dc2626'
-        }
+          '--error': '#dc2626',
+        },
       },
-      'mint': {
+      mint: {
         name: 'Mint',
         category: 'Light',
         colors: {
@@ -440,11 +440,11 @@ class ThemeManager {
           '--success-dark': '#059669',
           '--warning': '#f59e0b',
           '--warning-dark': '#d97706',
-          '--error': '#dc2626'
-        }
-      }
+          '--error': '#dc2626',
+        },
+      },
     };
-    
+
     this.currentTheme = localStorage.getItem('site-theme') || 'slate';
     this.init();
   }
@@ -454,13 +454,13 @@ class ThemeManager {
     this.restoreHighContrast();
     this.createThemeSwitcher();
   }
-  
+
   restoreHighContrast() {
     try {
       const highContrast = localStorage.getItem('highContrast') === 'true';
       if (highContrast) {
         document.documentElement.classList.add('high-contrast');
-        
+
         // Update button if it exists
         const contrastBtn = document.querySelector('.high-contrast-toggle .high-contrast-icon');
         if (contrastBtn) {
@@ -477,12 +477,12 @@ class ThemeManager {
     if (!theme) return;
 
     const root = document.documentElement;
-    
+
     // Apply theme colors with additional CSS variables
     Object.entries(theme.colors).forEach(([property, value]) => {
       root.style.setProperty(property, value);
     });
-    
+
     // Add alpha variants for the theme
     const accentColor = theme.colors['--accent'];
     if (accentColor) {
@@ -493,23 +493,25 @@ class ThemeManager {
       root.style.setProperty('--accent-alpha-25', this.hexToRgba(accentColor, 0.25));
       root.style.setProperty('--accent-alpha-30', this.hexToRgba(accentColor, 0.3));
     }
-    
+
     // Update body class for theme-specific styling
     document.body.className = document.body.className.replace(/theme-\w+/g, '');
     document.body.classList.add(`theme-${themeKey}`);
-    
+
     // Set data attribute for theme-specific CSS
     root.setAttribute('data-theme', themeKey);
-    
+
     this.currentTheme = themeKey;
     localStorage.setItem('site-theme', themeKey);
-    
+
     // Dispatch custom event for other components to listen to
-    window.dispatchEvent(new CustomEvent('themeChanged', { 
-      detail: { theme: themeKey, colors: theme.colors } 
-    }));
+    window.dispatchEvent(
+      new CustomEvent('themeChanged', {
+        detail: { theme: themeKey, colors: theme.colors },
+      })
+    );
   }
-  
+
   hexToRgba(hex, alpha) {
     const r = parseInt(hex.slice(1, 3), 16);
     const g = parseInt(hex.slice(3, 5), 16);
@@ -520,7 +522,7 @@ class ThemeManager {
   createThemeSwitcher() {
     // Check if we have a navigation theme button
     const navButton = document.querySelector('.theme-toggle-nav');
-    
+
     if (navButton) {
       // Use navigation integration
       this.createNavigationDropdown();
@@ -528,11 +530,11 @@ class ThemeManager {
       // Fallback to floating button
       this.createFloatingButton();
     }
-    
+
     // Add CSS if not already present
     this.addStyles();
   }
-  
+
   createNavigationDropdown() {
     // Remove existing dropdown
     const existing = document.getElementById('theme-nav-dropdown');
@@ -543,14 +545,14 @@ class ThemeManager {
     dropdown.id = 'theme-nav-dropdown';
     dropdown.className = 'theme-nav-dropdown';
     dropdown.innerHTML = this.generateDropdownContent();
-    
+
     // Position relative to navigation
     document.body.appendChild(dropdown);
-    
+
     // Setup event listeners for navigation integration
     this.setupNavigationListeners(dropdown);
   }
-  
+
   createFloatingButton() {
     // Remove existing switcher
     const existing = document.getElementById('theme-switcher');
@@ -560,35 +562,39 @@ class ThemeManager {
     const switcher = document.createElement('div');
     switcher.id = 'theme-switcher';
     switcher.className = 'theme-switcher';
-    
+
     const button = document.createElement('button');
     button.className = 'theme-switcher-button';
     button.setAttribute('aria-label', 'Change theme');
     button.innerHTML = '◈';
-    
+
     const dropdown = document.createElement('div');
     dropdown.className = 'theme-switcher-dropdown';
     dropdown.innerHTML = this.generateDropdownContent();
-    
+
     switcher.appendChild(button);
     switcher.appendChild(dropdown);
     document.body.appendChild(switcher);
-    
+
     // Add event listeners
     this.setupEventListeners(switcher, button, dropdown);
   }
 
   generateDropdownContent() {
     const categories = [...new Set(Object.values(this.themes).map(t => t.category))];
-    
-    return categories.map(category => {
-      const categoryThemes = Object.entries(this.themes)
-        .filter(([, theme]) => theme.category === category);
-      
-      return `
+
+    return categories
+      .map(category => {
+        const categoryThemes = Object.entries(this.themes).filter(
+          ([, theme]) => theme.category === category
+        );
+
+        return `
         <div class="theme-category">
           <div class="theme-category-label">${category}</div>
-          ${categoryThemes.map(([key, theme]) => `
+          ${categoryThemes
+            .map(
+              ([key, theme]) => `
             <button 
               class="theme-option ${key === this.currentTheme ? 'active' : ''}" 
               data-theme="${key}"
@@ -600,29 +606,32 @@ class ThemeManager {
               </div>
               <span class="theme-name">${theme.name}</span>
             </button>
-          `).join('')}
+          `
+            )
+            .join('')}
         </div>
       `;
-    }).join('');
+      })
+      .join('');
   }
 
   setupEventListeners(switcher, button, dropdown) {
     // Toggle dropdown
-    button.addEventListener('click', (e) => {
+    button.addEventListener('click', e => {
       e.stopPropagation();
       dropdown.classList.toggle('open');
     });
 
     // Theme selection
-    dropdown.addEventListener('click', (e) => {
+    dropdown.addEventListener('click', e => {
       if (e.target.classList.contains('theme-option') || e.target.closest('.theme-option')) {
         const themeButton = e.target.closest('.theme-option');
         const themeKey = themeButton.dataset.theme;
-        
+
         // Update active state
         dropdown.querySelectorAll('.theme-option').forEach(opt => opt.classList.remove('active'));
         themeButton.classList.add('active');
-        
+
         // Apply theme
         this.applyTheme(themeKey);
         dropdown.classList.remove('open');
@@ -635,22 +644,22 @@ class ThemeManager {
     });
 
     // Prevent dropdown from closing when clicking inside
-    dropdown.addEventListener('click', (e) => {
+    dropdown.addEventListener('click', e => {
       e.stopPropagation();
     });
   }
-  
+
   setupNavigationListeners(dropdown) {
     // Theme selection
-    dropdown.addEventListener('click', (e) => {
+    dropdown.addEventListener('click', e => {
       if (e.target.classList.contains('theme-option') || e.target.closest('.theme-option')) {
         const themeButton = e.target.closest('.theme-option');
         const themeKey = themeButton.dataset.theme;
-        
+
         // Update active state
         dropdown.querySelectorAll('.theme-option').forEach(opt => opt.classList.remove('active'));
         themeButton.classList.add('active');
-        
+
         // Apply theme
         this.applyTheme(themeKey);
         dropdown.classList.remove('open');
@@ -658,21 +667,23 @@ class ThemeManager {
     });
 
     // Close dropdown when clicking outside
-    document.addEventListener('click', (e) => {
+    document.addEventListener('click', e => {
       if (!dropdown.contains(e.target) && !e.target.closest('.theme-toggle-nav')) {
         dropdown.classList.remove('open');
       }
     });
 
     // Prevent dropdown from closing when clicking inside
-    dropdown.addEventListener('click', (e) => {
+    dropdown.addEventListener('click', e => {
       e.stopPropagation();
     });
   }
-  
+
   // Toggle dropdown method for navigation button
   toggleDropdown() {
-    const dropdown = document.getElementById('theme-nav-dropdown') || document.querySelector('.theme-switcher-dropdown');
+    const dropdown =
+      document.getElementById('theme-nav-dropdown') ||
+      document.querySelector('.theme-switcher-dropdown');
     if (dropdown) {
       dropdown.classList.toggle('open');
     }
@@ -870,7 +881,7 @@ class ThemeManager {
         }
       }
     `;
-    
+
     document.head.appendChild(styles);
   }
 
@@ -878,23 +889,25 @@ class ThemeManager {
   toggleHighContrast() {
     const isHighContrast = document.documentElement.classList.contains('high-contrast');
     document.documentElement.classList.toggle('high-contrast', !isHighContrast);
-    
+
     try {
       localStorage.setItem('highContrast', !isHighContrast);
     } catch (error) {
       console.warn('Failed to save high contrast preference:', error);
     }
-    
+
     // Update high contrast button if it exists
     const contrastBtn = document.querySelector('.high-contrast-toggle .high-contrast-icon');
     if (contrastBtn) {
       contrastBtn.textContent = !isHighContrast ? '◼' : '◻';
     }
-    
+
     // Dispatch event
-    window.dispatchEvent(new CustomEvent('highContrastToggled', { 
-      detail: { enabled: !isHighContrast } 
-    }));
+    window.dispatchEvent(
+      new CustomEvent('highContrastToggled', {
+        detail: { enabled: !isHighContrast },
+      })
+    );
   }
 
   // Public API
@@ -920,14 +933,14 @@ if (document.readyState === 'loading') {
 
 function initializeThemeManager() {
   window.themeManager = new ThemeManager();
-  
+
   // Ensure global functions are available
   window.toggleHighContrast = () => {
     if (window.themeManager) {
       window.themeManager.toggleHighContrast();
     }
   };
-  
+
   window.toggleThemeDropdown = () => {
     if (window.themeManager) {
       window.themeManager.toggleDropdown();

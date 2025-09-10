@@ -22,9 +22,5 @@
     "declaration-block-no-duplicate-properties": null,
     "media-feature-name-value-no-unknown": null
   },
-  "ignoreFiles": [
-    "_site/**",
-    "node_modules/**",
-    "tmp/**"
-  ]
+  "ignoreFiles": ["_site/**", "node_modules/**", "tmp/**"]
 }

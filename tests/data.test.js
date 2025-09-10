@@ -41,9 +41,9 @@ describe('Bible Data Tests', () => {
     test('book slugs should be unique and URL-safe', () => {
       const slugs = books.map(book => book.slug);
       const uniqueSlugs = [...new Set(slugs)];
-      
+
       expect(slugs.length).toBe(uniqueSlugs.length);
-      
+
       slugs.forEach(slug => {
         expect(slug).toMatch(/^[a-z0-9-]+$/); // Only lowercase, numbers, and hyphens
         expect(slug).not.toMatch(/^-|-$/); // No leading or trailing hyphens
@@ -51,15 +51,15 @@ describe('Bible Data Tests', () => {
     });
 
     test('chapter summaries should be properly formatted', () => {
-      const booksWithSummaries = books.filter(book => 
-        book.chapterSummaries && Object.keys(book.chapterSummaries).length > 0
+      const booksWithSummaries = books.filter(
+        book => book.chapterSummaries && Object.keys(book.chapterSummaries).length > 0
       );
-      
+
       expect(booksWithSummaries.length).toBeGreaterThan(0);
-      
+
       booksWithSummaries.forEach(book => {
         const chapters = Object.keys(book.chapterSummaries);
-        
+
         chapters.forEach(chapter => {
           expect(chapter).toMatch(/^\d+$/); // Chapter numbers should be numeric strings
           expect(typeof book.chapterSummaries[chapter]).toBe('string');
@@ -124,7 +124,7 @@ describe('Bible Data Tests', () => {
     test('Law (Torah) should have exactly 5 books', () => {
       const lawBooks = books.filter(book => book.category === 'Law (Torah)');
       expect(lawBooks.length).toBe(5);
-      
+
       const expectedBooks = ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy'];
       const actualBooks = lawBooks.map(book => book.name).sort();
       expect(actualBooks).toEqual(expectedBooks.sort());
@@ -133,7 +133,7 @@ describe('Bible Data Tests', () => {
     test('Gospels should have exactly 4 books', () => {
       const gospels = books.filter(book => book.category === 'Gospels');
       expect(gospels.length).toBe(4);
-      
+
       const expectedGospels = ['Matthew', 'Mark', 'Luke', 'John'];
       const actualGospels = gospels.map(book => book.name).sort();
       expect(actualGospels).toEqual(expectedGospels.sort());

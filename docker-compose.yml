@@ -4,13 +4,13 @@ services:
   bible-site:
     build: .
     ports:
-      - "8080:80"
+      - '8080:80'
     container_name: bible-static-site
     restart: unless-stopped
     environment:
       - NODE_ENV=production
     healthcheck:
-      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost/"]
+      test: ['CMD', 'wget', '--no-verbose', '--tries=1', '--spider', 'http://localhost/']
       interval: 30s
       timeout: 10s
       retries: 3
@@ -22,7 +22,7 @@ services:
       context: .
       target: builder
     ports:
-      - "8081:8080"
+      - '8081:8080'
     container_name: bible-static-site-dev
     volumes:
       - .:/app

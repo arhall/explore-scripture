@@ -4,20 +4,30 @@
 [![Deployed on Cloudflare Pages](https://img.shields.io/badge/Deployed%20on-Cloudflare%20Pages-F38020.svg)](https://pages.cloudflare.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-A comprehensive Bible study platform featuring **5,500+ biblical entities**, interactive chapter reading, and modern UX design optimized for desktop and mobile study.
+A comprehensive Bible study platform featuring **5,500+ biblical entities**,
+interactive chapter reading, and modern UX design optimized for desktop and
+mobile study.
+
+**🌐 Live Site**: **<https://explore-scripture.pages.dev>**
 
 ## ✨ Key Features
 
-- **📚 66 Biblical Books** organized by categories (Law, History, Poetry, Prophets, Gospels, Epistles, Apocalypse)
-- **👥 5,500+ Biblical Entities** including people, places, concepts with detailed study content
-- **📖 Interactive Chapter Reader** with live translation switching (ESV, NIV, NLT, NKJV, NASB, AMPC, WEB)
-- **💬 Commentary System** with 11 high-quality sources including Matthew Henry, JFB, and more
-- **🔍 Advanced Search** with fuzzy matching, biblical synonyms, and unified entity search
+- **📚 66 Biblical Books** organized by categories (Law, History, Poetry,
+  Prophets, Gospels, Epistles, Apocalypse)
+- **👥 5,500+ Biblical Entities** including people, places, concepts with
+  detailed study content
+- **📖 Interactive Chapter Reader** with live translation switching (ESV, NIV,
+  NLT, NKJV, NASB, AMPC, WEB)
+- **💬 Commentary System** with 11 high-quality sources including Matthew Henry,
+  JFB, and more
+- **🔍 Advanced Search** with fuzzy matching, biblical synonyms, and unified
+  entity search
 - **🎨 24 Theme System** with automatic dark mode and accessibility features
 - **📱 PWA Support** with offline caching and native app-like experience
 - **⚡ High Performance** - 4,000+ pages generated in ~11 seconds
 
-Built with **Eleventy (11ty)** for fast, static generation and optimized for **Cloudflare Pages** deployment.
+Built with **Eleventy (11ty)** for fast, static generation and optimized for
+**Cloudflare Pages** deployment.
 
 ## 🚀 Quick Start
 
@@ -29,13 +39,14 @@ npm install
 
 # Start development server
 npm run dev
-# Server runs at http://localhost:8080
+# Server runs at http://localhost:8080 (local development)
 
 # Build for production
 npm run build
 ```
 
 **Directory Structure:**
+
 - **Input**: `src/` (templates, data, assets)
 - **Output**: `_site/` (generated static site)
 - **Data**: `data/source-datasets/` (large entity datasets)
@@ -45,6 +56,7 @@ npm run build
 ## 📋 Development Commands
 
 ### Core Development
+
 ```bash
 # Development server with live reload
 npm run dev
@@ -59,6 +71,7 @@ npm run build:fast       # Skip entity processing
 ```
 
 ### Entity Management
+
 ```bash
 npm run entities:process  # Process entity data
 npm run entities:extract  # Extract book entities
@@ -67,6 +80,7 @@ npm run entities:test     # Test key figures loading
 ```
 
 ### Testing & Quality
+
 ```bash
 npm run test             # Run all tests
 npm run test:selenium    # Selenium web tests
@@ -79,6 +93,7 @@ npm run format           # Format code with Prettier
 ```
 
 ### Optimization & Analysis
+
 ```bash
 npm run optimize         # Optimize CSS and HTML
 npm run performance:report # Generate performance report
@@ -87,7 +102,7 @@ npm run logs:analyze     # Analyze build logs
 
 ## 🏗️ Project Structure
 
-```
+```text
 src/
 ├── _data/                    # Data files for content generation
 │   ├── books.json           # 66 biblical books with metadata
@@ -118,9 +133,11 @@ tests/                      # Test suites (Selenium, Jest)
 
 ## 🎯 Entity System
 
-The heart of Explore Scripture is its comprehensive entity system with **5,500+ biblical entities**:
+The heart of Explore Scripture is its comprehensive entity system with **5,500+
+biblical entities**:
 
 ### Entity Types
+
 - **👥 People**: Biblical characters with detailed profiles
 - **📍 Places**: Geographical locations and their significance
 - **💭 Concepts**: Theological concepts and themes
@@ -128,6 +145,7 @@ The heart of Explore Scripture is its comprehensive entity system with **5,500+ 
 - **📅 Events**: Major biblical events and their context
 
 ### Entity Features
+
 - **Unique URLs**: Each entity has a stable `/entities/{id}` URL
 - **Cross-References**: Entities link to related people, places, and concepts
 - **Search Integration**: All entities searchable through unified search system
@@ -135,6 +153,7 @@ The heart of Explore Scripture is its comprehensive entity system with **5,500+ 
 - **Redirect System**: Canonical ID mapping prevents broken links
 
 ### Data Processing
+
 ```bash
 # Process entity data from source datasets
 npm run entities:process
@@ -149,6 +168,7 @@ npm run entities:validate
 ## 📖 Chapter & Commentary System
 
 ### Interactive Chapter Reader
+
 - **Modal Interface**: Full-screen chapter reading experience
 - **7 Translations**: ESV, NIV, NLT, NKJV, NASB, AMPC, WEB
 - **Live Switching**: Change translations without page reload
@@ -156,6 +176,7 @@ npm run entities:validate
 - **BibleGateway Integration**: Reliable verse fetching with fallbacks
 
 ### Commentary System
+
 - **11 Commentary Sources**: Matthew Henry, JFB, Scofield, John Gill, and more
 - **Source-Specific URLs**: Custom formatting for each commentary provider
 - **Iframe Support**: 6 sources with embedded viewing, 4 with direct access
@@ -165,6 +186,7 @@ npm run entities:validate
 ## 🔍 Search System
 
 ### Advanced Search Features
+
 - **Unified Search**: Books, chapters, entities, and categories in one interface
 - **Fuzzy Matching**: Find content even with typos or partial matches
 - **Biblical Synonyms**: Understands biblical language and concepts
@@ -173,6 +195,7 @@ npm run entities:validate
 - **Performance Optimized**: Debounced queries with caching
 
 ### Search Data Generation
+
 ```bash
 # Generate search indices
 npm run search:generate
@@ -185,6 +208,7 @@ npm run search:generate
 ## 🎨 Theme & Accessibility
 
 ### Theme System
+
 - **24 Color Themes**: Professional color palettes for every preference
 - **Dark Mode Default**: Optimized for comfortable Bible study
 - **Automatic Detection**: Respects user's system preferences
@@ -192,6 +216,7 @@ npm run search:generate
 - **Cross-Component**: Consistent theming across all interactive elements
 
 ### Accessibility Features
+
 - **ARIA Labels**: Proper screen reader support throughout
 - **Keyboard Navigation**: Full keyboard accessibility for all features
 - **Focus Management**: Clear focus indicators and logical tab order
@@ -202,12 +227,14 @@ npm run search:generate
 ## ⚡ Performance & Optimization
 
 ### Build Performance
+
 - **Fast Generation**: 4,000+ pages in ~11 seconds
 - **Incremental Builds**: Only regenerate changed content during development
 - **Asset Optimization**: CSS minification, image optimization
 - **Bundle Analysis**: Detailed build reports in `build-logs/`
 
 ### Runtime Performance
+
 - **Static First**: Minimal JavaScript for core functionality
 - **Lazy Loading**: Components load on demand
 - **Service Worker**: Offline support and caching
@@ -217,12 +244,14 @@ npm run search:generate
 ## 🧪 Testing
 
 ### Test Coverage
+
 - **Selenium Tests**: End-to-end browser testing with Python
 - **Jest Tests**: Unit tests for JavaScript components
 - **Performance Tests**: Lighthouse audits and build analysis
 - **Entity Tests**: Data validation and integrity checks
 
 ### Running Tests
+
 ```bash
 # Setup test environment (first time only)
 npm run test:setup
@@ -238,6 +267,7 @@ npm run test:mobile      # Mobile-specific tests
 ```
 
 ### Test Categories
+
 - **Core Functionality**: Search, navigation, content rendering
 - **Interactive Features**: Chapter reader, commentary system, theme toggle
 - **Accessibility**: Screen reader support, keyboard navigation
@@ -247,6 +277,7 @@ npm run test:mobile      # Mobile-specific tests
 ## 🚀 Deployment
 
 ### Cloudflare Pages Setup
+
 1. **Connect Repository**: Link your Git repository to Cloudflare Pages
 2. **Build Configuration**:
    - **Framework**: Eleventy
@@ -257,6 +288,7 @@ npm run test:mobile      # Mobile-specific tests
 4. **Custom Domain**: Optional - configure in Cloudflare Pages dashboard
 
 ### Build Optimization for Production
+
 ```bash
 # Full production build with optimization
 npm run build:production
@@ -272,24 +304,28 @@ npm run build:production
 ## 🤝 Contributing
 
 ### Development Setup
+
 1. **Fork and Clone**: Fork the repository and clone locally
 2. **Install Dependencies**: `npm install`
 3. **Setup Tests**: `npm run test:setup`
 4. **Start Development**: `npm run dev`
 
 ### Code Standards
+
 - **ESLint**: JavaScript code quality (`npm run lint:js`)
 - **Stylelint**: CSS standards (`npm run lint:css`)
 - **Prettier**: Code formatting (`npm run format`)
 - **Pre-commit**: Validation runs automatically (`npm run precommit`)
 
 ### Content Editing
+
 - **Books**: Edit `src/_data/books.json` for book metadata and chapter summaries
 - **Entities**: Entity data managed through `scripts/entity-processor.js`
 - **Themes**: Add themes in `src/assets/theme-manager.js`
 - **Search**: Search data auto-generated from content changes
 
 ### Pull Request Process
+
 1. **Create Branch**: Feature branches from `main`
 2. **Run Tests**: Ensure all tests pass (`npm run test`)
 3. **Check Quality**: Run linting and formatting (`npm run lint:fix`)
@@ -299,11 +335,15 @@ npm run build:production
 ## 📚 Documentation
 
 ### Available Guides
+
 - **[CLAUDE.md](CLAUDE.md)**: AI assistant instructions and project context
-- **[Current Context](docs/archive/CURRENT_CONTEXT.md)**: Project status and recent changes
-- **[Characters and Entities](CharactersAndEntities.md)**: Entity system implementation details
+- **[Current Context](docs/archive/CURRENT_CONTEXT.md)**: Project status and
+  recent changes
+- **[Characters and Entities](CharactersAndEntities.md)**: Entity system
+  implementation details
 
 ### Technical Documentation
+
 - **Architecture**: See `CLAUDE.md` for detailed technical architecture
 - **API Integration**: Chapter reader and commentary system documentation
 - **Performance**: Build optimization and caching strategies
@@ -315,4 +355,5 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
-**Explore Scripture** - Making Scripture study accessible, interactive, and engaging for modern Bible students.
+**Explore Scripture** - Making Scripture study accessible, interactive, and
+engaging for modern Bible students.

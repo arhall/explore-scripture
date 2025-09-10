@@ -1,10 +1,14 @@
 # Explore Scripture → Cloudflare Workers Migration Guide
 
-This guide walks you through migrating the Explore Scripture static site to Cloudflare Workers for enhanced performance, global distribution, and edge computing capabilities.
+This guide walks you through migrating the Explore Scripture static site to
+Cloudflare Workers for enhanced performance, global distribution, and edge
+computing capabilities.
 
 ## 🎯 Migration Overview
 
-The migration transforms Explore Scripture from a pure static site to a hybrid edge-computing application that combines static assets with dynamic Workers functionality:
+The migration transforms Explore Scripture from a pure static site to a hybrid
+edge-computing application that combines static assets with dynamic Workers
+functionality:
 
 - **Static assets** served from Cloudflare Pages
 - **API endpoints** powered by Cloudflare Workers
@@ -181,7 +185,7 @@ dataset = "bible_explorer_analytics"
 The Workers deployment includes:
 
 - **Page views** and user sessions
-- **Search queries** and popular results  
+- **Search queries** and popular results
 - **Entity access** patterns
 - **API response times**
 - **Cache hit rates**
@@ -189,6 +193,7 @@ The Workers deployment includes:
 ### Accessing Analytics
 
 View analytics in the Cloudflare dashboard:
+
 1. Go to Analytics & Logs > Analytics Engine
 2. Query your datasets for insights
 3. Create custom dashboards
@@ -256,6 +261,7 @@ The Workers deployment includes:
 ### Workers Requests
 
 Free tier includes 100,000 requests/day:
+
 - Typical site: 1,000-10,000 requests/day
 - Large site: 50,000-100,000 requests/day
 - Enterprise: Paid plan recommended
@@ -265,60 +271,64 @@ Free tier includes 100,000 requests/day:
 ### Common Issues
 
 1. **Authentication Errors**
+
    ```bash
    wrangler login
    wrangler whoami  # Verify authentication
    ```
 
 2. **KV Upload Failures**
+
    ```bash
    # Check namespace configuration
    wrangler kv:namespace list
-   
+
    # Verify data files exist
    ls -la _site/assets/data/
    ```
 
 3. **Deployment Errors**
+
    ```bash
    # Check wrangler.toml syntax
    wrangler validate
-   
+
    # View deployment logs
    wrangler tail
    ```
 
 4. **Performance Issues**
+
    ```bash
    # Check KV usage
    wrangler kv:key list --binding=ENTITIES
-   
+
    # Monitor cache hit rates in dashboard
    ```
 
 ### Getting Help
 
 - **Cloudflare Community**: https://community.cloudflare.com/
-- **Workers Discord**: https://discord.gg/cloudflaredev  
+- **Workers Discord**: https://discord.gg/cloudflaredev
 - **Documentation**: https://developers.cloudflare.com/workers/
 
 ## 📈 Performance Comparison
 
-| Metric | Static Site | Workers Deployment |
-|--------|-------------|-------------------|
-| Global distribution | Pages only | Pages + Workers |
-| Entity lookup | Client-side only | Edge KV (sub-ms) |
-| Search performance | Client processing | Pre-indexed + cached |
-| API responses | External only | Edge + external |
-| Cache hit rate | ~70% | ~95% |
-| TTFB (avg) | 200-500ms | 50-150ms |
+| Metric              | Static Site       | Workers Deployment   |
+| ------------------- | ----------------- | -------------------- |
+| Global distribution | Pages only        | Pages + Workers      |
+| Entity lookup       | Client-side only  | Edge KV (sub-ms)     |
+| Search performance  | Client processing | Pre-indexed + cached |
+| API responses       | External only     | Edge + external      |
+| Cache hit rate      | ~70%              | ~95%                 |
+| TTFB (avg)          | 200-500ms         | 50-150ms             |
 
 ## 🎉 Next Steps
 
 After successful migration:
 
 1. **Monitor performance** in Cloudflare dashboard
-2. **Set up alerts** for errors or performance degradation  
+2. **Set up alerts** for errors or performance degradation
 3. **Optimize caching** based on usage patterns
 4. **Implement A/B testing** for new features
 5. **Add more API endpoints** as needed

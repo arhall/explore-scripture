@@ -1,27 +1,105 @@
-const fs = require('fs');
-const path = require('path');
+// Auto-generated entity IDs for pagination
+// Updated: 2025-09-10T03:04:02.652Z
 
-/**
- * Generate entity IDs for pagination in entities.njk
- */
-module.exports = function() {
-  try {
-    const entitiesDir = path.join(__dirname, '../assets/data/entities');
-    
-    if (!fs.existsSync(entitiesDir)) {
-      console.log('Entities directory not found, returning empty array');
-      return [];
-    }
-    
-    const entityFiles = fs.readdirSync(entitiesDir)
-      .filter(file => file.endsWith('.json'))
-      .map(file => path.basename(file, '.json'));
-    
-    console.log(`Found ${entityFiles.length} entity files for pagination`);
-    return entityFiles;
-    
-  } catch (error) {
-    console.error('Error loading entity IDs:', error);
-    return [];
-  }
-};
+module.exports = [
+  'd.glory-departs-the-temple--f40b39d9',
+  'd.glory-of-the-lord-appearing-in-babylon.kavod--c4d80731',
+  'd.glory-returns-to-the-new-temple--b7b58e01',
+  'd.god-at-sinai.yhwh--3c93f7b8',
+  'd.god-speaking-from-the-tent.yhwh--9f556ac4',
+  'd.god-the-judge-of-all--3be44a40',
+  'd.god.yhwh.gene-1-3--215c6dbf',
+  'd.holy-spirit--ad652b9c',
+  'd.king-of-israel-the-lord-in-your-midst--b2eb94d9',
+  'd.king-over-all-the-earth--5432144d',
+  'd.spirit-of-the-lord--428b0e29',
+  'd.the-holy-one--02e7fe4a',
+  'd.the-lord-fountain-of-living-waters--e3f7310b',
+  'd.the-lord-the-holy-one-of-israel.yhwh--53d03337',
+  'd.the-lord.yhwh--9df0e557',
+  'd.the-messenger-of-the-covenant--cab4319d',
+  'd.the-name-yhwh-i-am--052df719',
+  'd.yhwh--376a912b',
+  'd.yhwh-the-witness-judge--a329f8d0',
+  'e.127-provinces-of-the-persian-empire--6ceff968',
+  'e.13th-of-adar-battles-plunder-refused-in-susa-and-provinces--377716bf',
+  'e.a-days-journey-proclamation--aa8709f7',
+  'e.aaron-s-rod-that-budded--40e4de0c',
+  'e.abominations-at-the-temple.four-scenes--ac3e335b',
+  'e.abominations-list-and-anatomy-of-idolatry--69b28a54',
+  'e.abyss--d6229968',
+  'e.achaia--ba67eea7',
+  'e.achaia-province--53c44611',
+  'e.achzib-deception--d28b173a',
+  'e.acts-2-reception-of-joel-2--a48b2874',
+  'e.additional-woes-against-scoffers-and-alliance-makers--20793192',
+  'e.adullam--eb613f40',
+  'e.adultery--c6566507',
+  'e.aenon-near-salim--e5d3d23a',
+  'e.afterward-i-will-pour-out-my-spirit-on-all-flesh--b50cbf74',
+  'e.ai.city--580f3aea',
+  'e.akeldama-field-of-blood--21b35dd4',
+  'e.allegory-of-the-unfaithful-bride.jerusalem--2429bfef',
+  'e.allegory-of-two-sisters-oholah-oholibah.samaria--c09d3d1e',
+  'e.alliance-with-ahab-micaiahs-lone-voice--be8117f5',
+  'e.almond-tree-branch-vision--f0cb6a1a',
+  'e.alongside-haggai-ezra-5–6-link--26757389',
+  'e.altar--0b0acf47',
+  'e.altar-covering-from-bronze-censers--98019a6f',
+  'e.altar-dimensions--092d8e5b',
+  'e.altar-of-burnt-offering--3f775d1b',
+  'e.altar-of-burnt-offering.dimensions-consecration--6486138a',
+  'e.altar-of-incense--8fedaed4',
+  'e.altar-on-mount-ebal-and-covenant-reading--50d9bffe',
+  'e.altar-outside-the-camp--1760ba44',
+  'e.altar-rebuilt-feast-of-booths-observed--fcc5f173',
+  'e.amos-intercessions--bc3dff64',
+  'e.anathoth.priestly-town--efab0470',
+  'e.angelology-interpreting-angel-&-angel-of-the-lord--49e35388',
+  'e.anger-at-the-plants-death--d2714d52',
+  'e.animals-for-transport--7bfa2ed1',
+  'e.anointing-oil--e3bff4e9',
+  'e.anointing-with-oil-and-signs.flask--e326a4ae',
+  'e.antioch-pisidia--3e6e29fd',
+  'e.antioch-syria--329754ba',
+  'e.apocalyptic-reception-revelation--9dd24460',
+  'e.appian-way-three-taverns--f3f2d4c4',
+  'e.appius-forum--c481a22f',
+  'e.arabia--2f413cf0',
+  'e.architecture-towers.heshbon-damascus--c5006cf5',
+  'e.areopagus--fe84e0cc',
+  'e.ariel.jerusalem-altar-hearth--bc6b74bd',
+  'e.arimathea--65c86c25',
+  'e.arise-and-thresh-daughter-zion--8d1f37b0',
+  'e.arise-go-repetition--5ca6aa84',
+  'e.arise-o-lord-return-o-lord--bb6e138c',
+  'e.ark-and-tablets-restored--a743c4cf',
+  'e.ark-brought-in-priests-singers-and-cymbals--6abd0639',
+  'e.ark-of-the-covenant--88be4dc9',
+  'e.ark-of-the-covenant.captured-and-returned--0c8b6ef5',
+  'e.armageddon-har-megiddo--18e682b3',
+  'e.arrows--c273afa6',
+  'e.as-you-have-done-it-shall-be-done-to-you--fc438ca8',
+  'e.ashdod--d2c1cfe0',
+  'e.asher-allotment.entity--766958f9',
+  'e.asherah-poles-and-sacred-stones-prohibited--56bab1d4',
+  'e.ashes--bde761ad',
+  'e.ashes-as-throne--3e4148c8',
+  'e.asia--f9f8eca9',
+  'e.asia-province--55dbcf0b',
+  'e.assembly-in-rain-proclamation-and-investigation--56966631',
+  'e.assyria-in-decline--f2a3366a',
+  'e.assyrian-captives--71e0c9b3',
+  'e.assyrian-era-backdrop--c2d45f3e',
+  'e.assyrian-invasion-overnight-deliverance--97795f35',
+  'e.athaliah-usurps-royal-seed-hidden--38904916',
+  'e.athens-areopagus--d1071eb0',
+  'e.atoning-sacrifices-offered-via-jobs-priesthood--f2b2d352',
+  'e.baal--55db24d1',
+  'e.baal-worship-in-judah--a02f027f',
+  'e.babylon--9d648bf6',
+  'e.babylon-named-exile--0f7c1b62',
+  'e.balaams-oracles--79ce7dff',
+  'e.banquet-1-180-day-imperial-display--cd4a347f',
+  'e.banquet-10-purim-as-ordinance.feasting-and-gifts--8039e14e',
+];

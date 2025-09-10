@@ -157,9 +157,7 @@
     {
       "name": "Jeremiah son of Hilkiah",
       "type": "person",
-      "references": [
-        "Jeremiah 1:1–10; 20; 26; 32; 37–43; 52"
-      ],
+      "references": ["Jeremiah 1:1–10; 20; 26; 32; 37–43; 52"],
       "blurb": "Priest from Anathoth called as a youth to be a fortified city and iron pillar. His ministry is marked by ‘confessions’—raw prayers of pain and fidelity—and by enacted signs that interpret Judah’s fall as covenant justice and future hope.",
       "relations": {
         "father": "Hilkiah",
@@ -171,9 +169,7 @@
     {
       "name": "Hilkiah (priest of Anathoth, father of Jeremiah)",
       "type": "person",
-      "references": [
-        "Jeremiah 1:1"
-      ],
+      "references": ["Jeremiah 1:1"],
       "blurb": "Priestly lineage roots Jeremiah’s message in covenant law; not to be confused with Hilkiah the high priest of Josiah’s reform.",
       "relations": {
         "son": "Jeremiah",
@@ -185,9 +181,7 @@
     {
       "name": "Baruch son of Neriah (scribe)",
       "type": "person",
-      "references": [
-        "Jeremiah 36; 43:3; 45"
-      ],
+      "references": ["Jeremiah 36; 43:3; 45"],
       "blurb": "Trusted scribe who writes, reads, and rewrites the burned scroll. Receives a personal oracle (ch. 45) promising life as spoil in days of upheaval.",
       "relations": {
         "brother": "Seraiah son of Neriah"
@@ -198,9 +192,7 @@
     {
       "name": "Seraiah son of Neriah (quartermaster/official)",
       "type": "person",
-      "references": [
-        "Jeremiah 51:59–64"
-      ],
+      "references": ["Jeremiah 51:59–64"],
       "blurb": "Carries Jeremiah’s scroll to Babylon with Zedekiah’s entourage; reads the oracle against Babylon and sinks the scroll in the Euphrates as enacted end of the empire.",
       "category": "official",
       "id": "p.seraiah-son-of-neriah.quartermaster-official--d273d488"
@@ -208,9 +200,7 @@
     {
       "name": "Ebed-melech the Cushite (court eunuch)",
       "type": "person",
-      "references": [
-        "Jeremiah 38:7–13; 39:15–18"
-      ],
+      "references": ["Jeremiah 38:7–13; 39:15–18"],
       "blurb": "Foreign courtier who risks favor to rescue Jeremiah from the cistern; receives a promise of deliverance for trusting the LORD.",
       "category": "court",
       "id": "p.ebed-melech-the-cushite.court-eunuch--598e7a01"
@@ -218,9 +208,7 @@
     {
       "name": "Ahikam son of Shaphan",
       "type": "person",
-      "references": [
-        "Jeremiah 26:24"
-      ],
+      "references": ["Jeremiah 26:24"],
       "blurb": "Statesman who protects Jeremiah in early ministry, echoing Shaphan’s reform legacy under Josiah.",
       "category": "official",
       "id": "p.ahikam-son-of-shaphan--c33865c2"
@@ -228,9 +216,7 @@
     {
       "name": "Gedaliah son of Ahikam (governor)",
       "type": "person",
-      "references": [
-        "Jeremiah 39:14; 40–41"
-      ],
+      "references": ["Jeremiah 39:14; 40–41"],
       "blurb": "Appointed by Babylon over the remnant at Mizpah; advocates submission for survival. Assassinated by Ishmael, precipitating flight to Egypt.",
       "category": "governor",
       "id": "p.gedaliah-son-of-ahikam.governor--4bdc837f"
@@ -238,9 +224,7 @@
     {
       "name": "Ishmael son of Nethaniah",
       "type": "person",
-      "references": [
-        "Jeremiah 40:14–41:18"
-      ],
+      "references": ["Jeremiah 40:14–41:18"],
       "blurb": "Royal descendant who murders Gedaliah and many others; his coup fragments the remnant and deepens chaos.",
       "category": "royal",
       "id": "p.ishmael-son-of-nethaniah--31fcb3ce"
@@ -248,9 +232,7 @@
     {
       "name": "Johanan son of Kareah",
       "type": "person",
-      "references": [
-        "Jeremiah 40:8–16; 41:11–18; 42–43"
-      ],
+      "references": ["Jeremiah 40:8–16; 41:11–18; 42–43"],
       "blurb": "Military leader who warns Gedaliah, rescues captives from Ishmael, then disregards Jeremiah’s counsel and drags the remnant to Egypt.",
       "category": "military",
       "id": "p.johanan-son-of-kareah--3f7716b6"
@@ -258,9 +240,7 @@
     {
       "name": "Baalis king of Ammon",
       "type": "person",
-      "references": [
-        "Jeremiah 40:14"
-      ],
+      "references": ["Jeremiah 40:14"],
       "blurb": "Foreign instigator who commissions Ishmael to assassinate Gedaliah—regional politics entangle the remnant.",
       "relations": {
         "kingdom": "Ammon"
@@ -271,9 +251,7 @@
     {
       "name": "Hanamel son of Shallum (cousin)",
       "type": "person",
-      "references": [
-        "Jeremiah 32:6–12"
-      ],
+      "references": ["Jeremiah 32:6–12"],
       "blurb": "Relative from whom Jeremiah buys the Anathoth field; the deed is sealed as a sign that houses and fields will again be possessed in the land.",
       "category": "family",
       "id": "p.hanamel-son-of-shallum.cousin--0ec93b0b"
@@ -281,9 +259,7 @@
     {
       "name": "Irijah son of Shelemiah (guard)",
       "type": "person",
-      "references": [
-        "Jeremiah 37:13–14"
-      ],
+      "references": ["Jeremiah 37:13–14"],
       "blurb": "Accuses Jeremiah of desertion; embodies suspicion and breakdown of trust in a collapsing city.",
       "category": "guard",
       "id": "p.irijah-son-of-shelemiah.guard--c55f149b"
@@ -291,9 +267,7 @@
     {
       "name": "Pilgrims from Shechem, Shiloh, and Samaria",
       "type": "group",
-      "references": [
-        "Jeremiah 41:5"
-      ],
+      "references": ["Jeremiah 41:5"],
       "blurb": "Eighty mourners with offerings arrive after Jerusalem’s fall and are slaughtered by Ishmael—piety caught in political violence.",
       "category": "pilgrims",
       "id": "g.pilgrims-from-shechem-shiloh-and-samaria--35742fde"
@@ -301,9 +275,7 @@
     {
       "name": "Josiah king of Judah",
       "type": "person",
-      "references": [
-        "Jeremiah 1:2; 22:10–12; 2 Chronicles 35:25"
-      ],
+      "references": ["Jeremiah 1:2; 22:10–12; 2 Chronicles 35:25"],
       "blurb": "Reforming king lamented by Jeremiah; his death at Megiddo marks a hinge toward Judah’s unraveling.",
       "relations": {
         "kingdom": "Judah"
@@ -314,9 +286,7 @@
     {
       "name": "Jehoahaz (Shallum) king of Judah",
       "type": "person",
-      "references": [
-        "Jeremiah 22:10–12"
-      ],
+      "references": ["Jeremiah 22:10–12"],
       "blurb": "Reigns three months; exiled to Egypt. Jeremiah instructs not to weep for the dead but for the exile—displacement is the sharper grief.",
       "relations": {
         "kingdom": "Judah"
@@ -328,9 +298,7 @@
     {
       "name": "Jehoiakim (Eliakim) king of Judah",
       "type": "person",
-      "references": [
-        "Jeremiah 22:13–19; 26; 36"
-      ],
+      "references": ["Jeremiah 22:13–19; 26; 36"],
       "blurb": "Builds with injustice, sheds innocent blood, burns the scroll; prophecy declares a donkey’s burial—disgrace for a king who scorned the word.",
       "relations": {
         "kingdom": "Judah"
@@ -341,9 +309,7 @@
     {
       "name": "Jehoiachin (Coniah/Jeconiah) king of Judah",
       "type": "person",
-      "references": [
-        "Jeremiah 22:24–30; 24; 52:31–34"
-      ],
+      "references": ["Jeremiah 22:24–30; 24; 52:31–34"],
       "blurb": "Exiled to Babylon; ‘write this man childless’ declares judgment on his line, yet hope flickers in later restoration narratives.",
       "relations": {
         "kingdom": "Judah"
@@ -354,9 +320,7 @@
     {
       "name": "Zedekiah (Mattaniah) king of Judah",
       "type": "person",
-      "references": [
-        "Jeremiah 21; 24; 27–29; 32; 34; 37–39"
-      ],
+      "references": ["Jeremiah 21; 24; 27–29; 32; 34; 37–39"],
       "blurb": "Vacillates between fear and inquiry; repeatedly consults Jeremiah but refuses obedience—tragic figure presiding over the fall.",
       "relations": {
         "kingdom": "Judah"
@@ -367,9 +331,7 @@
     {
       "name": "Pharaoh Necho II of Egypt",
       "type": "person",
-      "references": [
-        "Jeremiah 46:2; 2 Kings 23:29–35"
-      ],
+      "references": ["Jeremiah 46:2; 2 Kings 23:29–35"],
       "blurb": "Defeats Josiah at Megiddo and installs Jehoiakim; Egypt appears both as temptation and as judged nation in Jeremiah’s oracles.",
       "relations": {
         "kingdom": "Egypt"
@@ -380,9 +342,7 @@
     {
       "name": "Hophra (Apries) of Egypt",
       "type": "person",
-      "references": [
-        "Jeremiah 44:30"
-      ],
+      "references": ["Jeremiah 44:30"],
       "blurb": "Pharaoh named in Jeremiah’s Egypt oracles; his fall is prophesied as a sign to exiles in Egypt.",
       "relations": {
         "kingdom": "Egypt"
@@ -393,9 +353,7 @@
     {
       "name": "Nebuchadnezzar II of Babylon (‘my servant’)",
       "type": "person",
-      "references": [
-        "Jeremiah 25:9; 27:6; 43:10"
-      ],
+      "references": ["Jeremiah 25:9; 27:6; 43:10"],
       "blurb": "YHWH calls the pagan emperor ‘my servant’—divine sovereignty bends empires for judgment and restoration.",
       "relations": {
         "empire": "Babylon"
@@ -406,9 +364,7 @@
     {
       "name": "Nebuzaradan (captain of the guard)",
       "type": "person",
-      "references": [
-        "Jeremiah 39:9–14; 40:1–6; 52:12–16"
-      ],
+      "references": ["Jeremiah 39:9–14; 40:1–6; 52:12–16"],
       "blurb": "Babylonian official who burns the city, releases Jeremiah, and appoints Gedaliah; an instrument of ordered judgment.",
       "relations": {
         "empire": "Babylon"
@@ -419,9 +375,7 @@
     {
       "name": "Evil‑Merodach (Amel‑Marduk) king of Babylon",
       "type": "person",
-      "references": [
-        "Jeremiah 52:31–34"
-      ],
+      "references": ["Jeremiah 52:31–34"],
       "blurb": "Elevates Jehoiachin from prison; tiny mercy at the exile’s end foreshadows future kindnesses.",
       "relations": {
         "empire": "Babylon"
@@ -432,9 +386,7 @@
     {
       "name": "Babylonian princes at Jerusalem’s fall",
       "type": "group",
-      "references": [
-        "Jeremiah 39:3"
-      ],
+      "references": ["Jeremiah 39:3"],
       "blurb": "Nergal‑sharezer, Samgar‑nebo, Sarsechim, and others—named officials embody the bureaucratic machinery of conquest.",
       "relations": {
         "empire": "Babylon"
@@ -445,9 +397,7 @@
     {
       "name": "Envoys of Edom, Moab, Ammon, Tyre, Sidon to Zedekiah",
       "type": "group",
-      "references": [
-        "Jeremiah 27:1–7"
-      ],
+      "references": ["Jeremiah 27:1–7"],
       "blurb": "Regional diplomats receive Jeremiah’s yoke‑message: submit to Babylon and live—prudence under providence.",
       "category": "envoys",
       "id": "g.envoys-of-edom-moab-ammon-tyre-sidon-to-zedekiah--748d17b8"
@@ -455,9 +405,7 @@
     {
       "name": "Uriah son of Shemaiah (true prophet)",
       "type": "person",
-      "references": [
-        "Jeremiah 26:20–23"
-      ],
+      "references": ["Jeremiah 26:20–23"],
       "blurb": "Prophesies like Jeremiah, flees to Egypt, yet is extradited and killed by Jehoiakim—truth is costly in regimes of fear.",
       "category": "prophet",
       "id": "p.uriah-son-of-shemaiah.true-prophet--7d62e13b"
@@ -465,9 +413,7 @@
     {
       "name": "Hananiah son of Azzur (false prophet)",
       "type": "person",
-      "references": [
-        "Jeremiah 28"
-      ],
+      "references": ["Jeremiah 28"],
       "blurb": "Breaks Jeremiah’s wooden yoke and promises quick deliverance; dies within the year by the word of the LORD—presumption exposed.",
       "category": "false-prophet",
       "id": "p.hananiah-son-of-azzur.false-prophet--c3778e8b"
@@ -475,9 +421,7 @@
     {
       "name": "Pashhur son of Immer (temple priest)",
       "type": "person",
-      "references": [
-        "Jeremiah 20:1–6"
-      ],
+      "references": ["Jeremiah 20:1–6"],
       "blurb": "Beats Jeremiah and puts him in stocks; receives a name‑oracle ‘Terror on Every Side’ (Magor‑missabib) forecasting exile.",
       "category": "priest",
       "id": "p.pashhur-son-of-immer.temple-priest--0a96787b"
@@ -485,9 +429,7 @@
     {
       "name": "Pashhur son of Malchiah (official)",
       "type": "person",
-      "references": [
-        "Jeremiah 21:1; 38:1–6"
-      ],
+      "references": ["Jeremiah 21:1; 38:1–6"],
       "blurb": "Court official allied with princes who push for Jeremiah’s execution and cistern‑imprisonment.",
       "category": "official",
       "id": "p.pashhur-son-of-malchiah.official--302a309d"
@@ -495,9 +437,7 @@
     {
       "name": "Shemaiah the Nehelamite (false prophet)",
       "type": "person",
-      "references": [
-        "Jeremiah 29:24–32"
-      ],
+      "references": ["Jeremiah 29:24–32"],
       "blurb": "Writes from exile to silence Jeremiah; the LORD rebukes his letters as lies.",
       "category": "false-prophet",
       "id": "p.shemaiah-the-nehelamite.false-prophet--38a4c2e5"
@@ -505,9 +445,7 @@
     {
       "name": "Ahab son of Kolaiah & Zedekiah son of Maaseiah",
       "type": "group",
-      "references": [
-        "Jeremiah 29:21–23"
-      ],
+      "references": ["Jeremiah 29:21–23"],
       "blurb": "False prophets in Babylon—condemned for lies and immorality; Babylon becomes their judgment ground.",
       "category": "false-prophet",
       "id": "g.ahab-son-of-kolaiah-zedekiah-son-of-maaseiah--9fea07f9"
@@ -515,9 +453,7 @@
     {
       "name": "Prophets of lies, diviners, dreamers",
       "type": "group",
-      "references": [
-        "Jeremiah 5:31; 14:14; 23; 27–29"
-      ],
+      "references": ["Jeremiah 5:31; 14:14; 23; 27–29"],
       "blurb": "A composite category of religious entrepreneurs who soothe consciences and subvert repentance; Jeremiah insists on submission to God’s discipline.",
       "category": "religion",
       "id": "g.prophets-of-lies-diviners-dreamers--cabc1f75"
@@ -525,9 +461,7 @@
     {
       "name": "Priests and men of Anathoth",
       "type": "group",
-      "references": [
-        "Jeremiah 11:21–23"
-      ],
+      "references": ["Jeremiah 11:21–23"],
       "blurb": "Jeremiah’s own town plots against him—persecution can be intimate; covenant treachery begins at home.",
       "category": "hometown",
       "id": "g.priests-and-men-of-anathoth--77cbe271"
@@ -535,9 +469,7 @@
     {
       "name": "Shepherds of Israel (leaders)",
       "type": "group",
-      "references": [
-        "Jeremiah 23:1–4"
-      ],
+      "references": ["Jeremiah 23:1–4"],
       "blurb": "Destroy and scatter the sheep; God promises to raise faithful shepherds and a righteous Branch.",
       "category": "leadership",
       "id": "g.shepherds-of-israel.leaders--15a7dce7"
@@ -545,9 +477,7 @@
     {
       "name": "Court princes of Judah",
       "type": "group",
-      "references": [
-        "Jeremiah 36–38"
-      ],
+      "references": ["Jeremiah 36–38"],
       "blurb": "A mixed group—some seek Jeremiah’s life, others shield him; politics of the last days are factional.",
       "category": "court",
       "id": "g.court-princes-of-judah--231f3f94"
@@ -555,9 +485,7 @@
     {
       "name": "Rechabites",
       "type": "group",
-      "references": [
-        "Jeremiah 35:1–19"
-      ],
+      "references": ["Jeremiah 35:1–19"],
       "blurb": "Nomadic clan who obey their ancestor’s command by abstaining from wine and city life—embarrassing Judah by embodied obedience.",
       "category": "model",
       "id": "g.rechabites--604781ac"
@@ -565,9 +493,7 @@
     {
       "name": "Remnant in Judah",
       "type": "group",
-      "references": [
-        "Jeremiah 40–41"
-      ],
+      "references": ["Jeremiah 40–41"],
       "blurb": "Those left in the land after deportations; fragile governance under Gedaliah collapses into fear and flight.",
       "category": "remnant",
       "id": "g.remnant-in-judah--e9086cc3"
@@ -575,9 +501,7 @@
     {
       "name": "Remnant in Egypt",
       "type": "group",
-      "references": [
-        "Jeremiah 42–44"
-      ],
+      "references": ["Jeremiah 42–44"],
       "blurb": "Against prophetic counsel, the remnant drags Jeremiah to Egypt and persists in idolatry—exile does not guarantee repentance.",
       "category": "remnant",
       "id": "g.remnant-in-egypt--9f961639"
@@ -585,9 +509,7 @@
     {
       "name": "Exiles in Babylon",
       "type": "group",
-      "references": [
-        "Jeremiah 29"
-      ],
+      "references": ["Jeremiah 29"],
       "blurb": "Recipients of Jeremiah’s letter to build, plant, marry, seek the city’s shalom—exile as long obedience.",
       "category": "diaspora",
       "id": "g.exiles-in-babylon--602b434c"
@@ -595,9 +517,7 @@
     {
       "name": "Women baking cakes for the Queen of Heaven",
       "type": "group",
-      "references": [
-        "Jeremiah 7:18; 44:17–19"
-      ],
+      "references": ["Jeremiah 7:18; 44:17–19"],
       "blurb": "Household piety enshrines idolatry; women’s agency is named yet redirected toward covenant fidelity.",
       "category": "idolatry",
       "id": "g.women-baking-cakes-for-the-queen-of-heaven--e063a172"
@@ -605,9 +525,7 @@
     {
       "name": "Chaldeans (Babylonians)",
       "type": "group",
-      "references": [
-        "Jeremiah 21:4–10; 32:29"
-      ],
+      "references": ["Jeremiah 21:4–10; 32:29"],
       "blurb": "Military arm of Babylon—agents of the siege and torchbearers of judgment.",
       "category": "empire",
       "id": "g.chaldeans.babylonians--fb8020e1"
@@ -615,9 +533,7 @@
     {
       "name": "Egypt (Jeremiah)",
       "type": "group",
-      "references": [
-        "Jeremiah 46"
-      ],
+      "references": ["Jeremiah 46"],
       "blurb": "Oracle against Egypt: from Carchemish to the day of disaster—YHWH’s sword has a mission even among empires.",
       "category": "nation",
       "id": "g.egypt--ab1ad00f"
@@ -625,9 +541,7 @@
     {
       "name": "Philistia (Jeremiah)",
       "type": "group",
-      "references": [
-        "Jeremiah 47"
-      ],
+      "references": ["Jeremiah 47"],
       "blurb": "Sword of the LORD unsheathed along the coast—lament for Gaza and Ashkelon.",
       "category": "nation",
       "id": "g.philistia--5497e6d6"
@@ -635,9 +549,7 @@
     {
       "name": "Moab (Jeremiah)",
       "type": "group",
-      "references": [
-        "Jeremiah 48"
-      ],
+      "references": ["Jeremiah 48"],
       "blurb": "Long taunt and lament; Moab’s pride is shattered, yet a latter‑day restoration glimmers.",
       "category": "nation",
       "id": "g.moab--0526e590"
@@ -645,9 +557,7 @@
     {
       "name": "Ammon (Jeremiah)",
       "type": "group",
-      "references": [
-        "Jeremiah 49:1–6"
-      ],
+      "references": ["Jeremiah 49:1–6"],
       "blurb": "Questions over Milcom’s inheritance; promise of restoration after judgment.",
       "category": "nation",
       "id": "g.ammon.jeremiah--e3cb1d55"
@@ -655,9 +565,7 @@
     {
       "name": "Edom (Jeremiah)",
       "type": "group",
-      "references": [
-        "Jeremiah 49:7–22"
-      ],
+      "references": ["Jeremiah 49:7–22"],
       "blurb": "Wisdom confounded in Teman; eagle imagery signals swift descent.",
       "category": "nation",
       "id": "g.edom.bozrah--286918d3"
@@ -665,9 +573,7 @@
     {
       "name": "Damascus (Jeremiah)",
       "type": "group",
-      "references": [
-        "Jeremiah 49:23–27"
-      ],
+      "references": ["Jeremiah 49:23–27"],
       "blurb": "City of fame becomes feeble; fire in Ben‑hadad’s palace.",
       "category": "nation",
       "id": "g.damascus.aram--38c72bb6"
@@ -675,9 +581,7 @@
     {
       "name": "Kedar and Hazor",
       "type": "group",
-      "references": [
-        "Jeremiah 49:28–33"
-      ],
+      "references": ["Jeremiah 49:28–33"],
       "blurb": "Desert tribes struck by Nebuchadnezzar—tents, flocks, and curtains plundered.",
       "category": "nation",
       "id": "g.kedar-and-hazor--9f03e052"
@@ -685,9 +589,7 @@
     {
       "name": "Elam (Jeremiah)",
       "type": "group",
-      "references": [
-        "Jeremiah 49:34–39"
-      ],
+      "references": ["Jeremiah 49:34–39"],
       "blurb": "Bow of Elam broken; in the latter days a restorative promise rises.",
       "category": "nation",
       "id": "g.elam.jeremiah--ef1ff6f5"
@@ -695,9 +597,7 @@
     {
       "name": "Babylon (Jeremiah)",
       "type": "group",
-      "references": [
-        "Jeremiah 50–51"
-      ],
+      "references": ["Jeremiah 50–51"],
       "blurb": "Hammer of the whole earth shattered; pride and idolatry judged; Israel and Judah seek the LORD together.",
       "category": "nation",
       "id": "g.babylon--bb4be558"
@@ -705,9 +605,7 @@
     {
       "name": "The Temple (Sermon at the Gate)",
       "type": "entity",
-      "references": [
-        "Jeremiah 7:1–15; 26"
-      ],
+      "references": ["Jeremiah 7:1–15; 26"],
       "blurb": "False security in sacred space is rebuked; obedience outranks ritual. Shiloh proves God’s willingness to raze His own house for righteousness.",
       "category": "worship",
       "id": "e.the-temple.sermon-at-the-gate--ff838934"
@@ -715,9 +613,7 @@
     {
       "name": "Shiloh precedent",
       "type": "entity",
-      "references": [
-        "Jeremiah 7:12–14"
-      ],
+      "references": ["Jeremiah 7:12–14"],
       "blurb": "Historic sanctuary destroyed—living memory leveraged as warning against presumption.",
       "category": "history",
       "id": "e.shiloh-precedent--1e3d59c7"
@@ -725,23 +621,16 @@
     {
       "name": "New Covenant (law on the heart)",
       "type": "entity",
-      "references": [
-        "Jeremiah 31:31–34"
-      ],
+      "references": ["Jeremiah 31:31–34"],
       "blurb": "Climactic promise of inwardized Torah, universal knowledge of God, and forgiven sin; later cited in Hebrews as fulfilled in Christ.",
       "category": "covenant",
-      "cross_references": [
-        "Hebrews 8:8–12",
-        "Hebrews 10:16–17"
-      ],
+      "cross_references": ["Hebrews 8:8–12", "Hebrews 10:16–17"],
       "id": "e.new-covenant.law-on-the-heart--33a29855"
     },
     {
       "name": "Cup of wrath to the nations",
       "type": "entity",
-      "references": [
-        "Jeremiah 25:15–29"
-      ],
+      "references": ["Jeremiah 25:15–29"],
       "blurb": "Jeremiah makes nations drink the cup—symbol of inescapable judgment that levels geopolitical pretensions.",
       "category": "judgment",
       "id": "e.cup-of-wrath-to-the-nations--0741c1e7"
@@ -749,9 +638,7 @@
     {
       "name": "Good and bad figs",
       "type": "entity",
-      "references": [
-        "Jeremiah 24:1–10"
-      ],
+      "references": ["Jeremiah 24:1–10"],
       "blurb": "Parable of exiles (good) who will be restored vs. those clinging to the land (bad) who face sword, famine, and pestilence.",
       "category": "parable",
       "id": "e.good-and-bad-figs--eab629d5"
@@ -759,9 +646,7 @@
     {
       "name": "Almond tree branch vision",
       "type": "entity",
-      "references": [
-        "Jeremiah 1:11–12"
-      ],
+      "references": ["Jeremiah 1:11–12"],
       "blurb": "Wordplay: shoqed/shoqed—God watches over His word to perform it; call vision anchors ministry in divine vigilance.",
       "category": "call",
       "id": "e.almond-tree-branch-vision--f0cb6a1a"
@@ -769,9 +654,7 @@
     {
       "name": "Boiling pot from the north",
       "type": "entity",
-      "references": [
-        "Jeremiah 1:13–16"
-      ],
+      "references": ["Jeremiah 1:13–16"],
       "blurb": "Judgment tilts toward Jerusalem from the north—Babylon’s approach mapped in metaphor.",
       "category": "call",
       "id": "e.boiling-pot-from-the-north--70519d3a"
@@ -779,9 +662,7 @@
     {
       "name": "Yoke and bonds sign‑act",
       "type": "entity",
-      "references": [
-        "Jeremiah 27–28"
-      ],
+      "references": ["Jeremiah 27–28"],
       "blurb": "Wooden (then iron) yokes dramatize submission to Babylon as God’s discipline; resisting is courting ruin.",
       "category": "sign",
       "id": "e.yoke-and-bonds-sign-act--4c466ac2"
@@ -789,9 +670,7 @@
     {
       "name": "Scroll burned and rewritten",
       "type": "entity",
-      "references": [
-        "Jeremiah 36"
-      ],
+      "references": ["Jeremiah 36"],
       "blurb": "Jehoiakim burns; Jeremiah dictates again—God’s word proves fireproof by resilience.",
       "category": "scripture",
       "id": "e.scroll-burned-and-rewritten--25f09fb4"
@@ -799,9 +678,7 @@
     {
       "name": "Potter and clay",
       "type": "entity",
-      "references": [
-        "Jeremiah 18:1–11"
-      ],
+      "references": ["Jeremiah 18:1–11"],
       "blurb": "Divine sovereignty and responsive judgment—clay can be reworked; nations can repent and live.",
       "category": "parable",
       "id": "e.potter-and-clay--7fa0674b"
@@ -809,9 +686,7 @@
     {
       "name": "Broken flask in the Valley of Hinnom (Topheth)",
       "type": "entity",
-      "references": [
-        "Jeremiah 19:1–13"
-      ],
+      "references": ["Jeremiah 19:1–13"],
       "blurb": "Irreversible ruin sign‑acted at the place of child sacrifice; horror meets holiness.",
       "category": "sign",
       "id": "e.broken-flask-in-the-valley-of-hinnom.topheth--4ded1c36"
@@ -819,9 +694,7 @@
     {
       "name": "Rachel weeping for her children",
       "type": "entity",
-      "references": [
-        "Jeremiah 31:15"
-      ],
+      "references": ["Jeremiah 31:15"],
       "blurb": "Personified grief at Ramah over exiles; comfort promised. Later echoed in Matthew 2:18.",
       "category": "lament",
       "id": "e.rachel-weeping-for-her-children--8ae8039a"
@@ -829,9 +702,7 @@
     {
       "name": "The LORD, fountain of living waters",
       "type": "divine",
-      "references": [
-        "Jeremiah 2:13; 17:13"
-      ],
+      "references": ["Jeremiah 2:13; 17:13"],
       "blurb": "Cistern‑digging folly vs. covenant spring—metaphor diagnoses idolatry as thirst misdirected.",
       "category": "theology",
       "id": "d.the-lord-fountain-of-living-waters--e3f7310b"
@@ -839,9 +710,7 @@
     {
       "name": "Jeremiah as iron pillar and bronze wall",
       "type": "figure",
-      "references": [
-        "Jeremiah 1:18–19"
-      ],
+      "references": ["Jeremiah 1:18–19"],
       "blurb": "Prophetic identity: fortified against kings, officials, priests, and people—courage by calling.",
       "category": "prophet",
       "id": "f.jeremiah-as-iron-pillar-and-bronze-wall--b4457e33"
@@ -849,9 +718,7 @@
     {
       "name": "Field of Hanamel (sealed deed)",
       "type": "entity",
-      "references": [
-        "Jeremiah 32:6–15"
-      ],
+      "references": ["Jeremiah 32:6–15"],
       "blurb": "Purchase deed stored in earthenware—down payment on restoration during siege.",
       "category": "hope",
       "id": "e.field-of-hanamel.sealed-deed--1c2a7dc3"
@@ -859,9 +726,7 @@
     {
       "name": "Seventy years of exile",
       "type": "entity",
-      "references": [
-        "Jeremiah 25:11–12; 29:10"
-      ],
+      "references": ["Jeremiah 25:11–12; 29:10"],
       "blurb": "A fixed term for Babylon’s dominion; hope is calendared without being cheapened.",
       "category": "timeline",
       "id": "e.seventy-years-of-exile--0ace1506"
@@ -869,9 +734,7 @@
     {
       "name": "Letter to the exiles",
       "type": "entity",
-      "references": [
-        "Jeremiah 29:1–23"
-      ],
+      "references": ["Jeremiah 29:1–23"],
       "blurb": "Build, plant, marry, seek the city’s shalom; pray for the city—exile as vocation, not mere penalty.",
       "category": "diaspora",
       "id": "e.letter-to-the-exiles--2bbb4310"
@@ -879,9 +742,7 @@
     {
       "name": "Book of Consolation (Jeremiah 30–33)",
       "type": "entity",
-      "references": [
-        "Jeremiah 30–33"
-      ],
+      "references": ["Jeremiah 30–33"],
       "blurb": "A cluster of salvation oracles: new covenant, restored Zion, Branch of David, and joyful city—judgment serves joy.",
       "category": "gospel",
       "id": "e.book-of-consolation.jeremiah-30-33--f322b9f0"
@@ -889,9 +750,7 @@
     {
       "name": "Branch of David / ‘The LORD is our righteousness’",
       "type": "figure",
-      "references": [
-        "Jeremiah 23:5–6; 33:15–16"
-      ],
+      "references": ["Jeremiah 23:5–6; 33:15–16"],
       "blurb": "Righteous ruler who executes justice; the city shares His name—civic holiness by royal grace.",
       "category": "messianic",
       "id": "f.branch-of-david-the-lord-is-our-righteousness--5f60821d"
@@ -899,9 +758,7 @@
     {
       "name": "Gathering of the remnant / Good shepherds",
       "type": "entity",
-      "references": [
-        "Jeremiah 23:1–8; 31:10"
-      ],
+      "references": ["Jeremiah 23:1–8; 31:10"],
       "blurb": "Scattered flock regathered; shepherds after God’s heart replace exploiters—pastoral blueprint for restoration.",
       "category": "restoration",
       "id": "e.gathering-of-the-remnant-good-shepherds--ced3ea44"
@@ -909,9 +766,7 @@
     {
       "name": "‘Terror on Every Side’ (Magor‑missabib) motif",
       "type": "entity",
-      "references": [
-        "Jeremiah 20:3; 6:25; 46:5"
-      ],
+      "references": ["Jeremiah 20:3; 6:25; 46:5"],
       "blurb": "Catchphrase of dread that stalks the narrative—social unraveling voiced as a refrain.",
       "category": "motif",
       "id": "e.terror-on-every-side-motif.magor-missabib--c9044f05"
@@ -919,9 +774,7 @@
     {
       "name": "Promise of return after seventy years",
       "type": "entity",
-      "references": [
-        "Jeremiah 29:10–14"
-      ],
+      "references": ["Jeremiah 29:10–14"],
       "blurb": "I will visit you and fulfill my promise—seeking God with whole heart finds Him even in exile.",
       "category": "hope",
       "id": "e.promise-of-return-after-seventy-years--9c559e1f"
@@ -929,9 +782,7 @@
     {
       "name": "Fall of Babylon (Jeremiah)",
       "type": "entity",
-      "references": [
-        "Jeremiah 50–51"
-      ],
+      "references": ["Jeremiah 50–51"],
       "blurb": "Comprehensive takedown of the proud empire—idols exposed, captives recalled; scroll sunk in Euphrates seals the word.",
       "category": "judgment",
       "id": "e.fall-of-babylon.jeremiah--139c5011"
@@ -939,9 +790,7 @@
     {
       "name": "Universal judgment of the nations",
       "type": "entity",
-      "references": [
-        "Jeremiah 25:15–33"
-      ],
+      "references": ["Jeremiah 25:15–33"],
       "blurb": "From Jerusalem outward, the cup circulates—no refuge in geopolitics when the Judge arises.",
       "category": "judgment",
       "id": "e.universal-judgment-of-the-nations--ea110fdf"
@@ -949,9 +798,7 @@
     {
       "name": "Covenant with day and night",
       "type": "entity",
-      "references": [
-        "Jeremiah 33:19–26"
-      ],
+      "references": ["Jeremiah 33:19–26"],
       "blurb": "If the fixed order could be broken, then Davidic and Levitical promises might fail—creation itself guarantees covenant fidelity.",
       "category": "covenant",
       "id": "e.covenant-with-day-and-night--9ed7ecc0"
@@ -959,9 +806,7 @@
     {
       "name": "Rebuilt Jerusalem, measured and holy",
       "type": "entity",
-      "references": [
-        "Jeremiah 31:38–40"
-      ],
+      "references": ["Jeremiah 31:38–40"],
       "blurb": "Surveyed from the Tower of Hananel to the Corner Gate; the valley of dead bodies becomes sacred to the LORD—cartography of hope.",
       "category": "restoration",
       "id": "e.rebuilt-jerusalem-measured-and-holy--161aface"
@@ -969,9 +814,7 @@
     {
       "name": "Baal worship in Judah",
       "type": "entity",
-      "references": [
-        "Jeremiah 2:8; 7:9; 11:13"
-      ],
+      "references": ["Jeremiah 2:8; 7:9; 11:13"],
       "blurb": "Altars as numerous as streets; prophetic polemic targets covenant infidelity masquerading as piety.",
       "category": "idol",
       "id": "e.baal-worship-in-judah--a02f027f"
@@ -979,9 +822,7 @@
     {
       "name": "Molech / Topheth sacrifices",
       "type": "entity",
-      "references": [
-        "Jeremiah 7:31–32; 19:5–6"
-      ],
+      "references": ["Jeremiah 7:31–32; 19:5–6"],
       "blurb": "Child sacrifice condemned; Valley of Hinnom renamed slaughter—horror meets the holiness of God.",
       "category": "idol",
       "id": "e.molech-topheth-sacrifices--d2b5cb9e"
@@ -989,9 +830,7 @@
     {
       "name": "Queen of Heaven",
       "type": "entity",
-      "references": [
-        "Jeremiah 7:18; 44:17–25"
-      ],
+      "references": ["Jeremiah 7:18; 44:17–25"],
       "blurb": "Popular goddess venerated with cakes, libations, and incense—Jeremiah indicts the practice as covenant treason.",
       "category": "idol",
       "id": "e.queen-of-heaven--3e0fba5f"
@@ -999,9 +838,7 @@
     {
       "name": "Wood and stone (generic idols)",
       "type": "entity",
-      "references": [
-        "Jeremiah 2:27–28; 3:9"
-      ],
+      "references": ["Jeremiah 2:27–28; 3:9"],
       "blurb": "You say to a tree, ‘You are my father’—satire of dependency on what cannot save.",
       "category": "idol",
       "id": "e.wood-and-stone.generic-idols--34e4b208"
@@ -1009,9 +846,7 @@
     {
       "name": "Anathoth (priestly town)",
       "type": "entity",
-      "references": [
-        "Jeremiah 1:1; 11:21–23; 32:7–9"
-      ],
+      "references": ["Jeremiah 1:1; 11:21–23; 32:7–9"],
       "blurb": "Jeremiah’s hometown—source of both identity and opposition; site of the field purchase sign.",
       "category": "place",
       "id": "e.anathoth.priestly-town--efab0470"
@@ -1019,9 +854,7 @@
     {
       "name": "Ramah (Rachel’s weeping)",
       "type": "entity",
-      "references": [
-        "Jeremiah 31:15"
-      ],
+      "references": ["Jeremiah 31:15"],
       "blurb": "Checkpoint north of Jerusalem associated with deportations; grief voices hope’s need.",
       "category": "place",
       "id": "e.ramah.rachels-weeping--04fdc072"
@@ -1029,9 +862,7 @@
     {
       "name": "Topheth / Valley of Hinnom (Gehenna)",
       "type": "entity",
-      "references": [
-        "Jeremiah 7:31–32; 19:2–6"
-      ],
+      "references": ["Jeremiah 7:31–32; 19:2–6"],
       "blurb": "Site of child sacrifice and prophetic shattering of the flask; later Jewish imagination associates it with eschatological judgment.",
       "category": "place",
       "id": "e.topheth-valley-of-hinnom.gehenna--36e269e1"
@@ -1039,9 +870,7 @@
     {
       "name": "Tahpanhes (Daphnae) in Egypt",
       "type": "entity",
-      "references": [
-        "Jeremiah 43:7–13"
-      ],
+      "references": ["Jeremiah 43:7–13"],
       "blurb": "Jeremiah buries stones at Pharaoh’s house as a sign that Nebuchadnezzar will spread his canopy there—exile follows disobedience.",
       "category": "place",
       "id": "e.tahpanhes-in-egypt.daphnae--ca8a65c0"
@@ -1049,9 +878,7 @@
     {
       "name": "Migdol, Noph (Memphis), and Pathros (Upper Egypt)",
       "type": "group",
-      "references": [
-        "Jeremiah 44:1"
-      ],
+      "references": ["Jeremiah 44:1"],
       "blurb": "Destinations of the Judean remnant in Egypt—diaspora mapped for judgment or mercy.",
       "category": "places",
       "id": "g.migdol-noph-and-pathros.memphis--b2619580"
@@ -1059,9 +886,7 @@
     {
       "name": "Euphrates (Perath) River",
       "type": "entity",
-      "references": [
-        "Jeremiah 13:1–11; 51:63–64"
-      ],
+      "references": ["Jeremiah 13:1–11; 51:63–64"],
       "blurb": "Linen loincloth hidden and ruined; Babylon‑scroll sunk—river as theater of humiliation and empire’s end.",
       "category": "place",
       "id": "e.euphrates-river.perath--0d1d9205"
@@ -1069,9 +894,7 @@
     {
       "name": "Confession I: Plotted against, yet trusted",
       "type": "entity",
-      "references": [
-        "Jeremiah 11:18–23; 12:1–6"
-      ],
+      "references": ["Jeremiah 11:18–23; 12:1–6"],
       "blurb": "Jeremiah wrestles with divine justice and betrayal by his own town; God answers with a call to endurance—if you stumble with footmen, how will you compete with horses?",
       "category": "lament",
       "id": "e.confession-i-plotted-against-yet-trusted--ec6a896c"
@@ -1079,9 +902,7 @@
     {
       "name": "Confession II: Woe is me, my mother",
       "type": "entity",
-      "references": [
-        "Jeremiah 15:10–21"
-      ],
+      "references": ["Jeremiah 15:10–21"],
       "blurb": "Loneliness and insult weigh on the prophet; the LORD’s word is joy yet isolates him—promise of strengthened wall renews vocation.",
       "category": "lament",
       "id": "e.confession-ii-woe-is-me-my-mother--a58a588b"
@@ -1089,9 +910,7 @@
     {
       "name": "Confession III: Heal me, O LORD",
       "type": "entity",
-      "references": [
-        "Jeremiah 17:14–18"
-      ],
+      "references": ["Jeremiah 17:14–18"],
       "blurb": "Prayer for vindication amid mockery; Jeremiah entrusts vengeance to God rather than personal retaliation.",
       "category": "lament",
       "id": "e.confession-iii-heal-me-o-lord--7be30ee1"
@@ -1099,9 +918,7 @@
     {
       "name": "Confession IV: Plot against the prophet",
       "type": "entity",
-      "references": [
-        "Jeremiah 18:18–23"
-      ],
+      "references": ["Jeremiah 18:18–23"],
       "blurb": "‘Come, let us strike the prophet with the tongue’—Jeremiah pleads for justice against conspirators.",
       "category": "lament",
       "id": "e.confession-iv-plot-against-the-prophet--f9b8a593"
@@ -1109,9 +926,7 @@
     {
       "name": "Confession V: You deceived me, O LORD",
       "type": "entity",
-      "references": [
-        "Jeremiah 20:7–18"
-      ],
+      "references": ["Jeremiah 20:7–18"],
       "blurb": "The fiercest lament swings from compulsion to curse of birth; yet a fire in his bones will not let him keep silent.",
       "category": "lament",
       "id": "e.confession-v-you-deceived-me-o-lord--84603d3b"

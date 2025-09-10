@@ -11,14 +11,14 @@ class SearchInterface {
     this.maxResults = options.maxResults || 8;
     this.minQueryLength = options.minQueryLength || 1;
     this.debounceDelay = options.debounceDelay || 150;
-    
+
     this.isInitialized = false;
     this.searchEngine = null;
     this.currentQuery = '';
     this.selectedIndex = -1;
     this.results = [];
     this.isVisible = false;
-    
+
     // Bind methods
     this.handleInput = this.handleInput.bind(this);
     this.handleKeydown = this.handleKeydown.bind(this);
@@ -31,20 +31,19 @@ class SearchInterface {
 
   async initialize() {
     if (this.isInitialized) return;
-    
+
     try {
       // Wait for search engine to be ready
       await this.waitForSearchEngine();
-      
+
       // Initialize UI
       this.initializeUI();
-      
+
       // Bind events
       this.bindEvents();
-      
+
       this.isInitialized = true;
       console.log('[SearchInterface] Initialized successfully');
-      
     } catch (error) {
       console.error('[SearchInterface] Failed to initialize:', error);
       throw error;
@@ -57,13 +56,13 @@ class SearchInterface {
       this.searchEngine = window.searchEngine;
       return;
     }
-    
+
     // Wait for search engine to be ready
     return new Promise((resolve, reject) => {
       const timeout = setTimeout(() => {
         reject(new Error('Search engine initialization timeout'));
       }, 10000); // 10 second timeout
-      
+
       const checkEngine = () => {
         if (window.searchEngine && window.searchEngine.initialized) {
           clearTimeout(timeout);
@@ -73,14 +72,18 @@ class SearchInterface {
           setTimeout(checkEngine, 100);
         }
       };
-      
+
       // Also listen for the ready event
-      window.addEventListener('searchEngineReady', () => {
-        clearTimeout(timeout);
-        this.searchEngine = window.searchEngine;
-        resolve();
-      }, { once: true });
-      
+      window.addEventListener(
+        'searchEngineReady',
+        () => {
+          clearTimeout(timeout);
+          this.searchEngine = window.searchEngine;
+          resolve();
+        },
+        { once: true }
+      );
+
       checkEngine();
     });
   }
@@ -92,7 +95,7 @@ class SearchInterface {
       container = document.createElement('div');
       container.id = this.containerId;
       container.className = 'search-container';
-      
+
       // Insert after navigation
       const nav = document.querySelector('.nav');
       if (nav) {
@@ -121,7 +124,7 @@ class SearchInterface {
         <div id="${this.resultsId}" class="search-results" style="display: none;"></div>
       </div>
     `;
-    
+
     // Add search styles
     this.addSearchStyles();
   }
@@ -129,7 +132,7 @@ class SearchInterface {
   addSearchStyles() {
     // Check if styles already exist
     if (document.getElementById('search-interface-styles')) return;
-    
+
     const style = document.createElement('style');
     style.id = 'search-interface-styles';
     style.textContent = `
@@ -304,7 +307,7 @@ class SearchInterface {
       }
       
     `;
-    
+
     document.head.appendChild(style);
   }
 
@@ -312,31 +315,31 @@ class SearchInterface {
     const input = document.getElementById(this.inputId);
     const results = document.getElementById(this.resultsId);
     const clearButton = this.container?.querySelector('.search-clear');
-    
+
     if (!input) {
       console.error('[SearchInterface] Search input not found');
       return;
     }
-    
+
     // Input events
     input.addEventListener('input', this.handleInput);
     input.addEventListener('keydown', this.handleKeydown);
     input.addEventListener('focus', this.handleFocus);
     input.addEventListener('blur', this.handleBlur);
-    
+
     // Clear button
     if (clearButton) {
       clearButton.addEventListener('click', this.handleClearClick);
     }
-    
+
     // Results events
     if (results) {
       results.addEventListener('click', this.handleResultClick);
     }
-    
+
     // Document events
     document.addEventListener('click', this.handleDocumentClick);
-    
+
     // Store references
     this.input = input;
     this.resultsContainer = results;
@@ -347,23 +350,23 @@ class SearchInterface {
   handleInput(event) {
     const query = event.target.value.trim();
     this.currentQuery = query;
-    
+
     // Show/hide clear button
     if (this.clearButton) {
       this.clearButton.style.display = query ? 'block' : 'none';
     }
-    
+
     if (query.length < this.minQueryLength) {
       this.hideResults();
       return;
     }
-    
+
     this.performSearch(query);
   }
 
   handleKeydown(event) {
     if (!this.isVisible) return;
-    
+
     switch (event.key) {
       case 'ArrowDown':
         event.preventDefault();
@@ -427,24 +430,28 @@ class SearchInterface {
       console.warn('[SearchInterface] Search engine not available');
       return;
     }
-    
+
     // Use debounced search for performance
-    this.searchEngine.debouncedSearch(query, (results) => {
-      this.results = results;
-      this.selectedIndex = -1;
-      this.renderResults();
-      
-      if (results.length > 0) {
-        this.showResults();
-      } else {
-        this.hideResults();
-      }
-    }, this.debounceDelay);
+    this.searchEngine.debouncedSearch(
+      query,
+      results => {
+        this.results = results;
+        this.selectedIndex = -1;
+        this.renderResults();
+
+        if (results.length > 0) {
+          this.showResults();
+        } else {
+          this.hideResults();
+        }
+      },
+      this.debounceDelay
+    );
   }
 
   renderResults() {
     if (!this.resultsContainer) return;
-    
+
     if (this.results.length === 0) {
       this.resultsContainer.innerHTML = `
         <div class="search-empty">
@@ -453,8 +460,10 @@ class SearchInterface {
       `;
       return;
     }
-    
-    const resultsHTML = this.results.map((result, index) => `
+
+    const resultsHTML = this.results
+      .map(
+        (result, index) => `
       <div class="search-result${index === this.selectedIndex ? ' selected' : ''}" 
            data-url="${this.escapeHtml(result.url)}" 
            data-index="${index}">
@@ -464,29 +473,31 @@ class SearchInterface {
         </div>
         ${result.subtitle ? `<div class="search-result-subtitle">${this.escapeHtml(result.subtitle)}</div>` : ''}
       </div>
-    `).join('');
-    
+    `
+      )
+      .join('');
+
     this.resultsContainer.innerHTML = resultsHTML;
   }
 
   navigateResults(direction) {
     if (this.results.length === 0) return;
-    
+
     this.selectedIndex += direction;
-    
+
     if (this.selectedIndex >= this.results.length) {
       this.selectedIndex = 0;
     } else if (this.selectedIndex < 0) {
       this.selectedIndex = this.results.length - 1;
     }
-    
+
     this.updateSelection();
   }
 
   updateSelection() {
     const resultElements = this.resultsContainer?.querySelectorAll('.search-result');
     if (!resultElements) return;
-    
+
     resultElements.forEach((element, index) => {
       element.classList.toggle('selected', index === this.selectedIndex);
     });
@@ -520,7 +531,7 @@ class SearchInterface {
     this.results = [];
     this.selectedIndex = -1;
     this.hideResults();
-    
+
     if (this.clearButton) {
       this.clearButton.style.display = 'none';
     }
@@ -596,13 +607,13 @@ function initializeSearchInterface() {
   if (window.searchInterface) {
     window.searchInterface.destroy();
   }
-  
+
   window.searchInterface = new SearchInterface({
     maxResults: 8,
     minQueryLength: 1,
-    debounceDelay: 150
+    debounceDelay: 150,
   });
-  
+
   window.searchInterface.initialize().catch(error => {
     console.error('[SearchInterface] Failed to initialize:', error);
   });

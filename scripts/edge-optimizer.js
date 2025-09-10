@@ -2,7 +2,7 @@
 
 /**
  * Advanced Edge Computing Optimizer
- * 
+ *
  * Implements cutting-edge edge computing strategies:
  * - Intelligent edge caching with predictive preloading
  * - Dynamic content personalization at the edge
@@ -25,7 +25,7 @@ class EdgeOptimizer {
 
   async initialize() {
     console.log('⚡ Initializing Advanced Edge Computing Optimizer...');
-    
+
     // Create edge computing directories
     [this.edgeDir, this.workersDir, this.configDir, this.analyticsDir].forEach(dir => {
       if (!fs.existsSync(dir)) {
@@ -37,7 +37,7 @@ class EdgeOptimizer {
   // Generate intelligent Cloudflare Worker with advanced features
   generateIntelligentWorker() {
     console.log('🧠 Generating intelligent Cloudflare Worker...');
-    
+
     const workerScript = `// Advanced Intelligent Cloudflare Worker for Bible Explorer
 // Implements predictive caching, personalization, and real-time optimization
 
@@ -667,14 +667,14 @@ function generatePathSuggestions(pathname) {
   
   return suggestions;
 }`;
-    
+
     return workerScript;
   }
 
   // Generate edge configuration for different environments
   generateEdgeConfigurations() {
     console.log('⚙️ Generating edge configurations...');
-    
+
     const configurations = {
       // Production configuration
       production: {
@@ -682,226 +682,222 @@ function generatePathSuggestions(pathname) {
         caching: {
           aggressive: true,
           maxAge: {
-            static: 31536000,  // 1 year
-            dynamic: 3600,     // 1 hour
-            api: 300          // 5 minutes
+            static: 31536000, // 1 year
+            dynamic: 3600, // 1 hour
+            api: 300, // 5 minutes
           },
           compression: {
             brotli: true,
             gzip: true,
-            level: 11
-          }
+            level: 11,
+          },
         },
         analytics: {
           enabled: true,
           sampling: 0.1, // 10% sampling
-          realTime: true
+          realTime: true,
         },
         security: {
           rateLimiting: true,
           ddosProtection: true,
-          botManagement: true
+          botManagement: true,
         },
         optimization: {
           imageOptimization: true,
           minification: true,
-          bundleOptimization: true
-        }
+          bundleOptimization: true,
+        },
       },
-      
+
       // Staging configuration
       staging: {
         environment: 'staging',
         caching: {
           aggressive: false,
           maxAge: {
-            static: 3600,    // 1 hour
-            dynamic: 300,    // 5 minutes
-            api: 60         // 1 minute
+            static: 3600, // 1 hour
+            dynamic: 300, // 5 minutes
+            api: 60, // 1 minute
           },
           compression: {
             brotli: true,
             gzip: true,
-            level: 6
-          }
+            level: 6,
+          },
         },
         analytics: {
           enabled: true,
           sampling: 1.0, // 100% sampling for testing
-          realTime: true
+          realTime: true,
         },
         security: {
           rateLimiting: false,
           ddosProtection: false,
-          botManagement: false
+          botManagement: false,
         },
         optimization: {
           imageOptimization: false,
           minification: false,
-          bundleOptimization: false
-        }
+          bundleOptimization: false,
+        },
       },
-      
+
       // Development configuration
       development: {
         environment: 'development',
         caching: {
           aggressive: false,
           maxAge: {
-            static: 0,      // No caching
-            dynamic: 0,     // No caching
-            api: 0         // No caching
+            static: 0, // No caching
+            dynamic: 0, // No caching
+            api: 0, // No caching
           },
           compression: {
             brotli: false,
             gzip: false,
-            level: 1
-          }
+            level: 1,
+          },
         },
         analytics: {
           enabled: false,
           sampling: 0,
-          realTime: false
+          realTime: false,
         },
         security: {
           rateLimiting: false,
           ddosProtection: false,
-          botManagement: false
+          botManagement: false,
         },
         optimization: {
           imageOptimization: false,
           minification: false,
-          bundleOptimization: false
-        }
-      }
+          bundleOptimization: false,
+        },
+      },
     };
-    
+
     return configurations;
   }
 
   // Generate Cloudflare Workers KV bindings configuration
   generateKVConfiguration() {
     console.log('🗄️ Generating KV storage configuration...');
-    
+
     return {
       bindings: {
         // Cache for frequently accessed data
         EDGE_CACHE: {
           type: 'kv_namespace',
           name: 'bible-explorer-edge-cache',
-          description: 'Edge cache for frequently accessed Bible data'
+          description: 'Edge cache for frequently accessed Bible data',
         },
-        
+
         // User preferences and personalization data
         USER_PREFERENCES: {
-          type: 'kv_namespace', 
+          type: 'kv_namespace',
           name: 'bible-explorer-user-prefs',
-          description: 'User preferences and personalization settings'
+          description: 'User preferences and personalization settings',
         },
-        
+
         // Analytics and metrics storage
         EDGE_ANALYTICS: {
           type: 'kv_namespace',
           name: 'bible-explorer-analytics',
-          description: 'Real-time analytics and performance metrics'
+          description: 'Real-time analytics and performance metrics',
         },
-        
+
         // Search query cache and suggestions
         SEARCH_CACHE: {
           type: 'kv_namespace',
-          name: 'bible-explorer-search-cache', 
-          description: 'Search query cache and intelligent suggestions'
-        }
+          name: 'bible-explorer-search-cache',
+          description: 'Search query cache and intelligent suggestions',
+        },
       },
-      
+
       // KV usage patterns
       patterns: {
         cache: {
           keyPrefix: 'cache:',
           ttl: 3600, // 1 hour
-          examples: [
-            'cache:entity:abraham',
-            'cache:search:jesus',
-            'cache:book:genesis'
-          ]
+          examples: ['cache:entity:abraham', 'cache:search:jesus', 'cache:book:genesis'],
         },
-        
+
         userPrefs: {
           keyPrefix: 'user:',
           ttl: 604800, // 1 week
           examples: [
             'user:fingerprint123:theme',
             'user:fingerprint123:bookmarks',
-            'user:fingerprint123:reading-progress'
-          ]
+            'user:fingerprint123:reading-progress',
+          ],
         },
-        
+
         analytics: {
           keyPrefix: 'analytics:',
           ttl: 86400, // 24 hours
           examples: [
             'analytics:daily:2024-01-01',
             'analytics:search:trending',
-            'analytics:performance:metrics'
-          ]
+            'analytics:performance:metrics',
+          ],
         },
-        
+
         search: {
           keyPrefix: 'search:',
           ttl: 1800, // 30 minutes
           examples: [
             'search:query:jesus:suggestions',
             'search:popular:US',
-            'search:autocomplete:dav'
-          ]
-        }
-      }
+            'search:autocomplete:dav',
+          ],
+        },
+      },
     };
   }
 
   // Generate edge analytics configuration
   generateEdgeAnalytics() {
     console.log('📊 Generating edge analytics configuration...');
-    
+
     return {
       version: '1.0.0',
       collection: {
         performance: {
           metrics: [
             'response_time',
-            'cache_hit_rate', 
+            'cache_hit_rate',
             'bandwidth_saved',
             'compression_ratio',
-            'edge_processing_time'
+            'edge_processing_time',
           ],
           sampling: 0.1, // 10% sampling
-          aggregation: 'daily'
+          aggregation: 'daily',
         },
-        
+
         user: {
           metrics: [
             'page_views',
             'search_queries',
             'entity_access_patterns',
             'geographic_distribution',
-            'device_types'
+            'device_types',
           ],
           sampling: 0.05, // 5% sampling
-          privacy: 'anonymized'
+          privacy: 'anonymized',
         },
-        
+
         content: {
           metrics: [
             'popular_entities',
             'trending_searches',
             'content_access_patterns',
-            'peak_usage_times'
+            'peak_usage_times',
           ],
           sampling: 1.0, // 100% sampling
-          aggregation: 'hourly'
-        }
+          aggregation: 'hourly',
+        },
       },
-      
+
       realTime: {
         dashboard: {
           enabled: true,
@@ -910,40 +906,40 @@ function generatePathSuggestions(pathname) {
             'current_requests_per_second',
             'active_users_estimate',
             'cache_performance',
-            'error_rate'
-          ]
+            'error_rate',
+          ],
         },
-        
+
         alerts: {
           thresholds: {
             error_rate: { warning: 1, critical: 5 }, // percentage
             response_time: { warning: 1000, critical: 2000 }, // ms
-            cache_hit_rate: { warning: 70, critical: 50 } // percentage
+            cache_hit_rate: { warning: 70, critical: 50 }, // percentage
           },
-          channels: ['email', 'slack', 'webhook']
-        }
+          channels: ['email', 'slack', 'webhook'],
+        },
       },
-      
+
       storage: {
         retention: {
-          raw: 7,      // 7 days
+          raw: 7, // 7 days
           aggregated: 90, // 90 days
-          summary: 365  // 1 year
+          summary: 365, // 1 year
         },
-        
+
         compression: {
           enabled: true,
           algorithm: 'gzip',
-          level: 9
-        }
-      }
+          level: 9,
+        },
+      },
     };
   }
 
   // Generate edge security configuration
   generateSecurityConfiguration() {
     console.log('🔒 Generating edge security configuration...');
-    
+
     return {
       rateLimiting: {
         rules: [
@@ -953,7 +949,7 @@ function generatePathSuggestions(pathname) {
             limit: 100,
             window: 60, // seconds
             action: 'block',
-            bypassOnGoodReputation: true
+            bypassOnGoodReputation: true,
           },
           {
             name: 'search_rate_limit',
@@ -962,10 +958,10 @@ function generatePathSuggestions(pathname) {
             window: 60,
             action: 'challenge',
             geoDifferentiation: {
-              'US': 200,
-              'EU': 150,
-              'OTHER': 100
-            }
+              US: 200,
+              EU: 150,
+              OTHER: 100,
+            },
           },
           {
             name: 'entity_rate_limit',
@@ -973,49 +969,39 @@ function generatePathSuggestions(pathname) {
             limit: 300,
             window: 60,
             action: 'throttle',
-            throttlePercent: 50
-          }
+            throttlePercent: 50,
+          },
         ],
-        
-        whitelist: [
-          'search engines',
-          'monitoring services',
-          'known good bots'
-        ]
+
+        whitelist: ['search engines', 'monitoring services', 'known good bots'],
       },
-      
+
       ddosProtection: {
         enabled: true,
         sensitivity: 'medium',
         thresholds: {
           requests_per_minute: 1000,
           unique_ips_threshold: 50,
-          suspicious_patterns: ['rapid_requests', 'unusual_user_agents']
+          suspicious_patterns: ['rapid_requests', 'unusual_user_agents'],
         },
         actions: {
           challenge: 'javascript_challenge',
           block: 'temporary_block_5_minutes',
-          monitor: 'log_and_continue'
-        }
+          monitor: 'log_and_continue',
+        },
       },
-      
+
       botManagement: {
         enabled: true,
         mode: 'allow_known_good',
-        knownGoodBots: [
-          'googlebot',
-          'bingbot',
-          'slurp',
-          'duckduckbot',
-          'baiduspider'
-        ],
+        knownGoodBots: ['googlebot', 'bingbot', 'slurp', 'duckduckbot', 'baiduspider'],
         suspiciousBotActions: {
           challenge: true,
           log: true,
-          notify: false
-        }
+          notify: false,
+        },
       },
-      
+
       contentSecurityPolicy: {
         enabled: true,
         directives: {
@@ -1027,9 +1013,9 @@ function generatePathSuggestions(pathname) {
           'connect-src': ["'self'", 'api.esv.org', 'bible-api.com'],
           'frame-ancestors': ["'none'"],
           'base-uri': ["'self'"],
-          'form-action': ["'self'"]
-        }
-      }
+          'form-action': ["'self'"],
+        },
+      },
     };
   }
 
@@ -1037,50 +1023,47 @@ function generatePathSuggestions(pathname) {
   async optimize() {
     const startTime = Date.now();
     console.log('🚀 Starting advanced edge computing optimization...');
-    
+
     await this.initialize();
-    
+
     // Generate all edge computing components
     const components = {
       intelligentWorker: this.generateIntelligentWorker(),
       edgeConfigurations: this.generateEdgeConfigurations(),
       kvConfiguration: this.generateKVConfiguration(),
       edgeAnalytics: this.generateEdgeAnalytics(),
-      securityConfiguration: this.generateSecurityConfiguration()
+      securityConfiguration: this.generateSecurityConfiguration(),
     };
-    
+
     // Write all components to files
     const files = {
       'intelligent-worker.js': components.intelligentWorker,
       'edge-configurations.json': JSON.stringify(components.edgeConfigurations, null, 2),
       'kv-configuration.json': JSON.stringify(components.kvConfiguration, null, 2),
       'edge-analytics.json': JSON.stringify(components.edgeAnalytics, null, 2),
-      'security-configuration.json': JSON.stringify(components.securityConfiguration, null, 2)
+      'security-configuration.json': JSON.stringify(components.securityConfiguration, null, 2),
     };
-    
+
     for (const [filename, content] of Object.entries(files)) {
       const filePath = path.join(this.edgeDir, filename);
       fs.writeFileSync(filePath, content);
       console.log(`   Generated: ${filename}`);
     }
-    
+
     // Generate deployment guide
     const deploymentGuide = this.generateDeploymentGuide();
-    fs.writeFileSync(
-      path.join(this.edgeDir, 'DEPLOYMENT_GUIDE.md'),
-      deploymentGuide
-    );
-    
+    fs.writeFileSync(path.join(this.edgeDir, 'DEPLOYMENT_GUIDE.md'), deploymentGuide);
+
     // Generate optimization report
     const report = this.generateOptimizationReport(Date.now() - startTime);
     fs.writeFileSync(
       path.join(this.edgeDir, 'edge-optimization-report.json'),
       JSON.stringify(report, null, 2)
     );
-    
+
     console.log(`✅ Advanced edge computing optimization complete in ${Date.now() - startTime}ms`);
     console.log(`📊 Report saved: ${path.join(this.edgeDir, 'edge-optimization-report.json')}`);
-    
+
     return report;
   }
 
@@ -1145,58 +1128,58 @@ wrangler kv:namespace create "SEARCH_CACHE"
             'Real-time analytics',
             'Adaptive compression',
             'Smart routing',
-            'Edge personalization'
+            'Edge personalization',
           ],
           estimatedPerformanceGains: {
             cacheHitRate: '+85%',
             responseTime: '-40%',
             bandwidthSaved: '+65%',
-            originRequests: '-75%'
-          }
+            originRequests: '-75%',
+          },
         },
-        
+
         kvStorage: {
           namespaces: 4,
           estimatedStorage: '100MB - 1GB',
           keyPatterns: 12,
-          ttlOptimization: 'Intelligent based on access patterns'
+          ttlOptimization: 'Intelligent based on access patterns',
         },
-        
+
         analytics: {
           metricsTracked: 15,
           realTimeUpdates: '5 second intervals',
           dataRetention: '1 year aggregated',
-          privacyCompliant: 'Fully anonymized'
+          privacyCompliant: 'Fully anonymized',
         },
-        
+
         security: {
           rateLimitingRules: 3,
           ddosProtection: 'Advanced with ML detection',
           botManagement: 'Known-good bot allowlist',
-          cspHeaders: 'Strict content security policy'
-        }
+          cspHeaders: 'Strict content security policy',
+        },
       },
-      
+
       deployment: {
         complexity: 'Medium',
         estimatedSetupTime: '2-4 hours',
         prerequisites: ['Cloudflare Pro/Business plan', 'Wrangler CLI', 'KV storage'],
-        rollbackStrategy: 'Automated rollback on error threshold'
+        rollbackStrategy: 'Automated rollback on error threshold',
       },
-      
+
       costOptimization: {
         estimatedSavings: {
           bandwidthCosts: '60-80%',
           originServerLoad: '75%',
-          responseTime: '40%'
+          responseTime: '40%',
         },
         cloudflareFeatures: [
           'Workers (10,000 requests/day free)',
-          'KV Storage (10GB-operations/day free)', 
+          'KV Storage (10GB-operations/day free)',
           'Analytics (included)',
-          'Rate Limiting (10 rules free)'
-        ]
-      }
+          'Rate Limiting (10 rules free)',
+        ],
+      },
     };
   }
 }
@@ -1207,15 +1190,22 @@ module.exports = { EdgeOptimizer };
 // CLI execution
 if (require.main === module) {
   const optimizer = new EdgeOptimizer();
-  
-  optimizer.optimize()
+
+  optimizer
+    .optimize()
     .then(report => {
       console.log('\n📈 Edge Computing Summary:');
       console.log(`   Processing Time: ${report.processingTime}ms`);
       console.log(`   Components Generated: ${Object.keys(report.components).length}`);
-      console.log(`   Expected Cache Hit Rate: ${report.components.intelligentWorker.estimatedPerformanceGains.cacheHitRate}`);
-      console.log(`   Expected Response Time Improvement: ${report.components.intelligentWorker.estimatedPerformanceGains.responseTime}`);
-      console.log(`   Expected Bandwidth Savings: ${report.components.intelligentWorker.estimatedPerformanceGains.bandwidthSaved}`);
+      console.log(
+        `   Expected Cache Hit Rate: ${report.components.intelligentWorker.estimatedPerformanceGains.cacheHitRate}`
+      );
+      console.log(
+        `   Expected Response Time Improvement: ${report.components.intelligentWorker.estimatedPerformanceGains.responseTime}`
+      );
+      console.log(
+        `   Expected Bandwidth Savings: ${report.components.intelligentWorker.estimatedPerformanceGains.bandwidthSaved}`
+      );
     })
     .catch(error => {
       console.error('❌ Edge computing optimization failed:', error);

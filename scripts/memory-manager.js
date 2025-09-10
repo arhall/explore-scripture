@@ -8,169 +8,169 @@ const fs = require('fs');
 const path = require('path');
 
 class MemoryManager {
-    constructor() {
-        this.config = {
-            // Memory thresholds and limits
-            memoryLimits: {
-                // Total memory limits by device type
-                desktop: {
-                    total: 100 * 1024 * 1024, // 100MB
-                    cache: 50 * 1024 * 1024,  // 50MB
-                    dom: 30 * 1024 * 1024,    // 30MB
-                    variables: 20 * 1024 * 1024 // 20MB
-                },
-                tablet: {
-                    total: 60 * 1024 * 1024,  // 60MB
-                    cache: 30 * 1024 * 1024,  // 30MB
-                    dom: 20 * 1024 * 1024,    // 20MB
-                    variables: 10 * 1024 * 1024 // 10MB
-                },
-                mobile: {
-                    total: 40 * 1024 * 1024,  // 40MB
-                    cache: 20 * 1024 * 1024,  // 20MB
-                    dom: 15 * 1024 * 1024,    // 15MB
-                    variables: 5 * 1024 * 1024  // 5MB
-                },
-                'low-end': {
-                    total: 20 * 1024 * 1024,  // 20MB
-                    cache: 10 * 1024 * 1024,  // 10MB
-                    dom: 7 * 1024 * 1024,     // 7MB
-                    variables: 3 * 1024 * 1024  // 3MB
-                }
-            },
-            
-            // Warning and critical thresholds (percentage of limits)
-            thresholds: {
-                warning: 0.75,  // 75% of limit
-                critical: 0.90, // 90% of limit
-                emergency: 0.95 // 95% of limit
-            },
-            
-            // Cleanup strategies
-            cleanupStrategies: {
-                // Cache cleanup
-                cache: {
-                    lru: true,           // Least Recently Used eviction
-                    ttl: true,           // Time To Live expiration
-                    sizeLimit: true,     // Size-based eviction
-                    priority: 'high'
-                },
-                
-                // DOM cleanup
-                dom: {
-                    observers: true,     // Clean up observers
-                    eventListeners: true, // Remove event listeners
-                    timers: true,        // Clear timers and intervals
-                    priority: 'critical'
-                },
-                
-                // Variable cleanup
-                variables: {
-                    weakMaps: true,      // Use WeakMap for references
-                    nullifyReferences: true, // Nullify large objects
-                    garbageCollect: true, // Force garbage collection
-                    priority: 'medium'
-                },
-                
-                // Module cleanup
-                modules: {
-                    unloadUnused: true,  // Unload unused modules
-                    resetState: true,    // Reset module state
-                    clearClosures: true, // Clear closure references
-                    priority: 'low'
-                }
-            },
-            
-            // Memory monitoring configuration
-            monitoring: {
-                interval: 5000,      // Check every 5 seconds
-                detailedInterval: 30000, // Detailed analysis every 30 seconds
-                reportingInterval: 300000, // Report every 5 minutes
-                leakDetectionThreshold: 5, // MB increase per minute
-                maxHistorySize: 100  // Keep last 100 measurements
-            },
-            
-            // Leak detection patterns
-            leakPatterns: {
-                domNodes: {
-                    threshold: 1000,    // Alert if DOM grows by 1000+ nodes
-                    checkInterval: 10000 // Check every 10 seconds
-                },
-                eventListeners: {
-                    threshold: 100,     // Alert if 100+ listeners added without cleanup
-                    trackTypes: ['click', 'scroll', 'resize', 'keydown']
-                },
-                timers: {
-                    threshold: 50,      // Alert if 50+ timers active
-                    maxAge: 300000     // Alert if timer runs for 5+ minutes
-                },
-                closures: {
-                    threshold: 1000,    // Alert if 1000+ closure references
-                    maxRetainedSize: 10 * 1024 * 1024 // 10MB in closures
-                }
-            }
-        };
-        
-        this.state = {
-            currentUsage: {
-                total: 0,
-                cache: 0,
-                dom: 0,
-                variables: 0
-            },
-            history: [],
-            leaks: new Set(),
-            cleanupQueue: [],
-            isMonitoring: false,
-            deviceType: 'mobile' // Default to most constrained
-        };
-        
-        // Tracking collections
-        this.trackedObjects = new WeakMap();
-        this.trackedTimers = new Map();
-        this.trackedListeners = new Map();
-        this.trackedObservers = new Set();
-    }
-    
-    /**
-     * Generate memory management system
-     */
-    async generateMemoryManagementSystem() {
-        // Generate client-side memory manager
-        const clientScript = await this.generateClientScript();
-        
-        // Generate memory profiler
-        const profilerScript = this.generateMemoryProfiler();
-        
-        // Generate cleanup utilities
-        const cleanupUtils = this.generateCleanupUtilities();
-        
-        // Generate monitoring dashboard
-        const dashboardScript = this.generateMonitoringDashboard();
-        
-        // Write files
-        const outputDir = path.join(__dirname, '..', 'src', 'assets');
-        
-        await this.writeScript(clientScript, path.join(outputDir, 'memory-manager.js'));
-        await this.writeScript(profilerScript, path.join(outputDir, 'memory-profiler.js'));
-        await this.writeScript(cleanupUtils, path.join(outputDir, 'cleanup-utils.js'));
-        await this.writeScript(dashboardScript, path.join(outputDir, 'memory-dashboard.js'));
-        
-        console.log('✅ Advanced memory management system generated');
-        
-        return {
-            clientScript,
-            profilerScript,
-            cleanupUtils,
-            dashboardScript
-        };
-    }
-    
-    /**
-     * Generate client-side memory manager
-     */
-    async generateClientScript() {
-        return `/**
+  constructor() {
+    this.config = {
+      // Memory thresholds and limits
+      memoryLimits: {
+        // Total memory limits by device type
+        desktop: {
+          total: 100 * 1024 * 1024, // 100MB
+          cache: 50 * 1024 * 1024, // 50MB
+          dom: 30 * 1024 * 1024, // 30MB
+          variables: 20 * 1024 * 1024, // 20MB
+        },
+        tablet: {
+          total: 60 * 1024 * 1024, // 60MB
+          cache: 30 * 1024 * 1024, // 30MB
+          dom: 20 * 1024 * 1024, // 20MB
+          variables: 10 * 1024 * 1024, // 10MB
+        },
+        mobile: {
+          total: 40 * 1024 * 1024, // 40MB
+          cache: 20 * 1024 * 1024, // 20MB
+          dom: 15 * 1024 * 1024, // 15MB
+          variables: 5 * 1024 * 1024, // 5MB
+        },
+        'low-end': {
+          total: 20 * 1024 * 1024, // 20MB
+          cache: 10 * 1024 * 1024, // 10MB
+          dom: 7 * 1024 * 1024, // 7MB
+          variables: 3 * 1024 * 1024, // 3MB
+        },
+      },
+
+      // Warning and critical thresholds (percentage of limits)
+      thresholds: {
+        warning: 0.75, // 75% of limit
+        critical: 0.9, // 90% of limit
+        emergency: 0.95, // 95% of limit
+      },
+
+      // Cleanup strategies
+      cleanupStrategies: {
+        // Cache cleanup
+        cache: {
+          lru: true, // Least Recently Used eviction
+          ttl: true, // Time To Live expiration
+          sizeLimit: true, // Size-based eviction
+          priority: 'high',
+        },
+
+        // DOM cleanup
+        dom: {
+          observers: true, // Clean up observers
+          eventListeners: true, // Remove event listeners
+          timers: true, // Clear timers and intervals
+          priority: 'critical',
+        },
+
+        // Variable cleanup
+        variables: {
+          weakMaps: true, // Use WeakMap for references
+          nullifyReferences: true, // Nullify large objects
+          garbageCollect: true, // Force garbage collection
+          priority: 'medium',
+        },
+
+        // Module cleanup
+        modules: {
+          unloadUnused: true, // Unload unused modules
+          resetState: true, // Reset module state
+          clearClosures: true, // Clear closure references
+          priority: 'low',
+        },
+      },
+
+      // Memory monitoring configuration
+      monitoring: {
+        interval: 5000, // Check every 5 seconds
+        detailedInterval: 30000, // Detailed analysis every 30 seconds
+        reportingInterval: 300000, // Report every 5 minutes
+        leakDetectionThreshold: 5, // MB increase per minute
+        maxHistorySize: 100, // Keep last 100 measurements
+      },
+
+      // Leak detection patterns
+      leakPatterns: {
+        domNodes: {
+          threshold: 1000, // Alert if DOM grows by 1000+ nodes
+          checkInterval: 10000, // Check every 10 seconds
+        },
+        eventListeners: {
+          threshold: 100, // Alert if 100+ listeners added without cleanup
+          trackTypes: ['click', 'scroll', 'resize', 'keydown'],
+        },
+        timers: {
+          threshold: 50, // Alert if 50+ timers active
+          maxAge: 300000, // Alert if timer runs for 5+ minutes
+        },
+        closures: {
+          threshold: 1000, // Alert if 1000+ closure references
+          maxRetainedSize: 10 * 1024 * 1024, // 10MB in closures
+        },
+      },
+    };
+
+    this.state = {
+      currentUsage: {
+        total: 0,
+        cache: 0,
+        dom: 0,
+        variables: 0,
+      },
+      history: [],
+      leaks: new Set(),
+      cleanupQueue: [],
+      isMonitoring: false,
+      deviceType: 'mobile', // Default to most constrained
+    };
+
+    // Tracking collections
+    this.trackedObjects = new WeakMap();
+    this.trackedTimers = new Map();
+    this.trackedListeners = new Map();
+    this.trackedObservers = new Set();
+  }
+
+  /**
+   * Generate memory management system
+   */
+  async generateMemoryManagementSystem() {
+    // Generate client-side memory manager
+    const clientScript = await this.generateClientScript();
+
+    // Generate memory profiler
+    const profilerScript = this.generateMemoryProfiler();
+
+    // Generate cleanup utilities
+    const cleanupUtils = this.generateCleanupUtilities();
+
+    // Generate monitoring dashboard
+    const dashboardScript = this.generateMonitoringDashboard();
+
+    // Write files
+    const outputDir = path.join(__dirname, '..', 'src', 'assets');
+
+    await this.writeScript(clientScript, path.join(outputDir, 'memory-manager.js'));
+    await this.writeScript(profilerScript, path.join(outputDir, 'memory-profiler.js'));
+    await this.writeScript(cleanupUtils, path.join(outputDir, 'cleanup-utils.js'));
+    await this.writeScript(dashboardScript, path.join(outputDir, 'memory-dashboard.js'));
+
+    console.log('✅ Advanced memory management system generated');
+
+    return {
+      clientScript,
+      profilerScript,
+      cleanupUtils,
+      dashboardScript,
+    };
+  }
+
+  /**
+   * Generate client-side memory manager
+   */
+  async generateClientScript() {
+    return `/**
  * Advanced Memory Manager - Client Implementation
  * Auto-generated by memory-manager.js
  */
@@ -1278,13 +1278,13 @@ if (typeof window !== 'undefined') {
 
 export default MemoryManager;
 `;
-    }
-    
-    /**
-     * Generate memory profiler
-     */
-    generateMemoryProfiler() {
-        return `/**
+  }
+
+  /**
+   * Generate memory profiler
+   */
+  generateMemoryProfiler() {
+    return `/**
  * Memory Profiler - Advanced Memory Analysis Tool
  */
 
@@ -1420,13 +1420,13 @@ class MemoryProfiler {
 
 export default MemoryProfiler;
 `;
-    }
-    
-    /**
-     * Generate cleanup utilities
-     */
-    generateCleanupUtilities() {
-        return `/**
+  }
+
+  /**
+   * Generate cleanup utilities
+   */
+  generateCleanupUtilities() {
+    return `/**
  * Cleanup Utilities - Helper functions for memory management
  */
 
@@ -1548,13 +1548,13 @@ class WeakLRUCache {
 
 export { CleanupUtils, CleanupManager, WeakLRUCache };
 `;
-    }
-    
-    /**
-     * Generate monitoring dashboard
-     */
-    generateMonitoringDashboard() {
-        return `/**
+  }
+
+  /**
+   * Generate monitoring dashboard
+   */
+  generateMonitoringDashboard() {
+    return `/**
  * Memory Monitoring Dashboard - Real-time memory usage visualization
  */
 
@@ -1742,19 +1742,19 @@ document.addEventListener('keydown', (e) => {
 
 export default MemoryDashboard;
 `;
+  }
+
+  /**
+   * Write script to file
+   */
+  async writeScript(script, filePath) {
+    const dir = path.dirname(filePath);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
     }
-    
-    /**
-     * Write script to file
-     */
-    async writeScript(script, filePath) {
-        const dir = path.dirname(filePath);
-        if (!fs.existsSync(dir)) {
-            fs.mkdirSync(dir, { recursive: true });
-        }
-        
-        fs.writeFileSync(filePath, script, 'utf8');
-    }
+
+    fs.writeFileSync(filePath, script, 'utf8');
+  }
 }
 
 // Export for build integration
@@ -1762,13 +1762,14 @@ module.exports = MemoryManager;
 
 // Run if called directly
 if (require.main === module) {
-    const memoryManager = new MemoryManager();
-    memoryManager.generateMemoryManagementSystem()
-        .then(() => {
-            console.log('✅ Advanced memory management system generated');
-        })
-        .catch(error => {
-            console.error('❌ Failed to generate memory management system:', error);
-            process.exit(1);
-        });
+  const memoryManager = new MemoryManager();
+  memoryManager
+    .generateMemoryManagementSystem()
+    .then(() => {
+      console.log('✅ Advanced memory management system generated');
+    })
+    .catch(error => {
+      console.error('❌ Failed to generate memory management system:', error);
+      process.exit(1);
+    });
 }

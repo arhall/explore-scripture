@@ -1,25 +1,26 @@
 ---
 layout: base.njk
-title: "The Gospel Thread"
-description: "Trace Christ and His redemptive work throughout all of Scripture - from Genesis to Revelation."
+title: 'The Gospel Thread'
+description: 'Trace Christ and His redemptive work throughout all of Scripture - from Genesis to Revelation.'
 permalink: /gospel-thread/
 ---
 
 <div class="gospel-thread-header">
   <h1>🧵 The Gospel Thread</h1>
   <p class="hero-description">
-    Discover how every part of Scripture points to Christ and His redemptive work. 
-    From the first promise in Genesis to the final victory in Revelation, see the 
-    unified story of God's plan to save His people.
+    Discover how every part of Scripture points to Christ and His redemptive work. From the first
+    promise in Genesis to the final victory in Revelation, see the unified story of God's plan to
+    save His people.
   </p>
-  
+
   <div class="gospel-verse">
     <blockquote>
-      "And beginning with Moses and all the Prophets, he interpreted to them in all the Scriptures the things concerning himself."
+      "And beginning with Moses and all the Prophets, he interpreted to them in all the Scriptures
+      the things concerning himself."
     </blockquote>
     <cite>— Luke 24:27</cite>
   </div>
-  
+
   <!-- Section Navigation -->
   <div class="gospel-navigation">
     <h3>Navigate to Section:</h3>
@@ -39,30 +40,36 @@ permalink: /gospel-thread/
     <a href="#core-themes" class="anchor-link" aria-label="Link to Core Gospel Themes">#</a>
   </div>
   <p class="section-description">
-    Six foundational themes that weave through Scripture, all finding their fulfillment in Jesus Christ.
+    Six foundational themes that weave through Scripture, all finding their fulfillment in Jesus
+    Christ.
   </p>
-  
+
   <div class="gospel-themes-grid">
     {% for themeId, theme in gospelThreads.coreThemes %}
-      <div class="gospel-theme-card" data-theme="{{ themeId }}" id="theme-{{ themeId }}">
-        <div class="theme-header">
-          <h3>{{ theme.name }}</h3>
-          <a href="#theme-{{ themeId }}" class="theme-anchor-link" aria-label="Link to {{ theme.name }}">#</a>
-        </div>
-        <p class="theme-description">{{ theme.description }}</p>
-        <div class="theme-connection">
-          <strong>Gospel Connection:</strong>
-          <p>{{ theme.gospelConnection }}</p>
-        </div>
-        <div class="key-verses">
-          <h4>Key Verses:</h4>
-          <ul>
-            {% for verse in theme.keyVerses %}
-              <li>{{ verse }}</li>
-            {% endfor %}
-          </ul>
-        </div>
+    <div class="gospel-theme-card" data-theme="{{ themeId }}" id="theme-{{ themeId }}">
+      <div class="theme-header">
+        <h3>{{ theme.name }}</h3>
+        <a
+          href="#theme-{{ themeId }}"
+          class="theme-anchor-link"
+          aria-label="Link to {{ theme.name }}"
+          >#</a
+        >
       </div>
+      <p class="theme-description">{{ theme.description }}</p>
+      <div class="theme-connection">
+        <strong>Gospel Connection:</strong>
+        <p>{{ theme.gospelConnection }}</p>
+      </div>
+      <div class="key-verses">
+        <h4>Key Verses:</h4>
+        <ul>
+          {% for verse in theme.keyVerses %}
+          <li>{{ verse }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
     {% endfor %}
   </div>
 </div>
@@ -70,35 +77,45 @@ permalink: /gospel-thread/
 <div class="progressive-revelation-section" id="progressive-revelation">
   <div class="section-header-with-anchor">
     <h2>Progressive Revelation</h2>
-    <a href="#progressive-revelation" class="anchor-link" aria-label="Link to Progressive Revelation">#</a>
+    <a
+      href="#progressive-revelation"
+      class="anchor-link"
+      aria-label="Link to Progressive Revelation"
+      >#</a
+    >
   </div>
   <p class="section-description">
-    See how God gradually revealed His plan of salvation throughout biblical history, 
-    with each period building toward the ultimate revelation in Jesus Christ.
+    See how God gradually revealed His plan of salvation throughout biblical history, with each
+    period building toward the ultimate revelation in Jesus Christ.
   </p>
-  
+
   <div class="revelation-timeline">
-    {% for period in gospelThreads.progressiveRevelation %}
-      {% set periodSlug = period.period | lower | replace(" ", "-") | replace(".", "") %}
-      <div class="timeline-item" id="period-{{ periodSlug }}">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3>{{ period.period }}</h3>
-            <a href="#period-{{ periodSlug }}" class="timeline-anchor-link" aria-label="Link to {{ period.period }}">#</a>
-          </div>
-          <div class="timeline-books">
-            {% for book in period.books %}
-              <span class="timeline-book">{{ book }}</span>
-            {% endfor %}
-          </div>
-          <p class="revelation-text">{{ period.revelation }}</p>
-          <div class="gospel-advancement">
-            <strong>Gospel Development:</strong>
-            <p>{{ period.gospelAdvancement }}</p>
-          </div>
+    {% for period in gospelThreads.progressiveRevelation %} {% set periodSlug = period.period |
+    lower | replace(" ", "-") | replace(".", "") %}
+    <div class="timeline-item" id="period-{{ periodSlug }}">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <h3>{{ period.period }}</h3>
+          <a
+            href="#period-{{ periodSlug }}"
+            class="timeline-anchor-link"
+            aria-label="Link to {{ period.period }}"
+            >#</a
+          >
+        </div>
+        <div class="timeline-books">
+          {% for book in period.books %}
+          <span class="timeline-book">{{ book }}</span>
+          {% endfor %}
+        </div>
+        <p class="revelation-text">{{ period.revelation }}</p>
+        <div class="gospel-advancement">
+          <strong>Gospel Development:</strong>
+          <p>{{ period.gospelAdvancement }}</p>
         </div>
       </div>
+    </div>
     {% endfor %}
   </div>
 </div>
@@ -106,64 +123,65 @@ permalink: /gospel-thread/
 <div class="christ-types-section" id="types-shadows">
   <div class="section-header-with-anchor">
     <h2>Types and Shadows of Christ</h2>
-    <a href="#types-shadows" class="anchor-link" aria-label="Link to Types and Shadows of Christ">#</a>
+    <a href="#types-shadows" class="anchor-link" aria-label="Link to Types and Shadows of Christ"
+      >#</a
+    >
   </div>
   <p class="section-description">
-    Throughout the Old Testament, God provided pictures and patterns that find their 
-    perfect fulfillment in Jesus Christ.
+    Throughout the Old Testament, God provided pictures and patterns that find their perfect
+    fulfillment in Jesus Christ.
   </p>
-  
+
   <div class="types-grid">
-    {% for bookId, bookData in gospelThreads.books %}
-      {% if bookData.christTypes %}
-        {% for type in bookData.christTypes %}
-          <div class="christ-type-card">
-            <div class="type-header">
-              <span class="book-reference">{{ type.passage }}</span>
-              <h4>{{ type.type }}</h4>
-            </div>
-            <p class="type-description">{{ type.description }}</p>
-            <div class="type-fulfillment">
-              <strong>Fulfilled in Christ:</strong>
-              <p>{{ type.fulfillment }}</p>
-            </div>
-          </div>
-        {% endfor %}
-      {% endif %}
-    {% endfor %}
+    {% for bookId, bookData in gospelThreads.books %} {% if bookData.christTypes %} {% for type in
+    bookData.christTypes %}
+    <div class="christ-type-card">
+      <div class="type-header">
+        <span class="book-reference">{{ type.passage }}</span>
+        <h4>{{ type.type }}</h4>
+      </div>
+      <p class="type-description">{{ type.description }}</p>
+      <div class="type-fulfillment">
+        <strong>Fulfilled in Christ:</strong>
+        <p>{{ type.fulfillment }}</p>
+      </div>
+    </div>
+    {% endfor %} {% endif %} {% endfor %}
   </div>
 </div>
 
 <div class="gospel-books-section" id="gospel-books">
   <div class="section-header-with-anchor">
     <h2>Gospel Connections by Book</h2>
-    <a href="#gospel-books" class="anchor-link" aria-label="Link to Gospel Connections by Book">#</a>
+    <a href="#gospel-books" class="anchor-link" aria-label="Link to Gospel Connections by Book"
+      >#</a
+    >
   </div>
   <p class="section-description">
     Explore how each book of the Bible contributes to the grand narrative of redemption.
   </p>
-  
+
   <div class="gospel-books-grid">
-    {% for book in books %}
-      {% set bookData = gospelThreads.books[book.slug] %}
-      {% if bookData %}
-        <a href="/books/{{ book.slug }}/#gospel-connection" class="gospel-book-card">
-          <div class="book-header">
-            <h3>{{ book.name }}</h3>
-            <div class="book-themes">
-              {% for theme in bookData.gospelThemes %}
-                <span class="theme-tag theme-{{ theme }}">{{ gospelThreads.coreThemes[theme].name | replace("God's ", "") | replace("The ", "") }}</span>
-              {% endfor %}
-            </div>
-          </div>
-          <div class="book-connections">
-            {% for connection in bookData.keyGospelConnections %}
-              <p>• {{ connection }}</p>
-            {% endfor %}
-          </div>
-        </a>
-      {% endif %}
-    {% endfor %}
+    {% for book in books %} {% set bookData = gospelThreads.books[book.slug] %} {% if bookData %}
+    <a href="/books/{{ book.slug }}/#gospel-connection" class="gospel-book-card">
+      <div class="book-header">
+        <h3>{{ book.name }}</h3>
+        <div class="book-themes">
+          {% for theme in bookData.gospelThemes %}
+          <span class="theme-tag theme-{{ theme }}"
+            >{{ gospelThreads.coreThemes[theme].name | replace("God's ", "") | replace("The ", "")
+            }}</span
+          >
+          {% endfor %}
+        </div>
+      </div>
+      <div class="book-connections">
+        {% for connection in bookData.keyGospelConnections %}
+        <p>• {{ connection }}</p>
+        {% endfor %}
+      </div>
+    </a>
+    {% endif %} {% endfor %}
   </div>
 </div>
 
@@ -174,10 +192,14 @@ permalink: /gospel-thread/
       <a href="#gospel-heart" class="anchor-link" aria-label="Link to Heart of the Gospel">#</a>
     </div>
     <p class="gospel-summary">
-      All of Scripture points to this central truth: <strong>God so loved the world that He gave His 
-      only Son, that whoever believes in Him should not perish but have eternal life</strong> (John 3:16).
+      All of Scripture points to this central truth:
+      <strong
+        >God so loved the world that He gave His only Son, that whoever believes in Him should not
+        perish but have eternal life</strong
+      >
+      (John 3:16).
     </p>
-    
+
     <div class="gospel-points">
       <div class="gospel-point">
         <h4>📖 God's Word Reveals</h4>
@@ -196,14 +218,13 @@ permalink: /gospel-thread/
         <p>All of salvation displays God's grace and glory</p>
       </div>
     </div>
-    
+
     <div class="gospel-invitation">
       <h3>How to Respond</h3>
       <p>
-        The Gospel Thread running through Scripture calls for a response of faith. 
-        If you would like to know more about becoming a Christian or growing in your faith, 
-        we encourage you to speak with a pastor or mature Christian friend, and to study 
-        God's Word prayerfully.
+        The Gospel Thread running through Scripture calls for a response of faith. If you would like
+        to know more about becoming a Christian or growing in your faith, we encourage you to speak
+        with a pastor or mature Christian friend, and to study God's Word prayerfully.
       </p>
       <p class="gospel-prayer">
         <em>"Faith comes by hearing, and hearing through the word of Christ"</em> (Romans 10:17)

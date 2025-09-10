@@ -17,10 +17,10 @@ const LIGHTHOUSE_SLA = {
 // Core Web Vitals SLAs (in milliseconds)
 const WEB_VITALS_SLA = {
   lcp: 2500, // Largest Contentful Paint
-  fid: 100,  // First Input Delay
-  cls: 0.1,  // Cumulative Layout Shift (score, not time)
+  fid: 100, // First Input Delay
+  cls: 0.1, // Cumulative Layout Shift (score, not time)
   fcp: 1800, // First Contentful Paint
-  si: 3000,  // Speed Index
+  si: 3000, // Speed Index
   tti: 3500, // Time to Interactive
 };
 
@@ -34,7 +34,7 @@ describe('Lighthouse Performance Tests', () => {
     // Start local server for lighthouse testing
     const app = express();
     app.use(express.static(siteDir));
-    
+
     server = app.listen(0, 'localhost');
     const port = server.address().port;
     baseUrl = `http://localhost:${port}`;
@@ -43,7 +43,7 @@ describe('Lighthouse Performance Tests', () => {
 
     // Launch Chrome for Lighthouse
     chrome = await chromeLauncher.launch({
-      chromeFlags: ['--headless', '--no-sandbox', '--disable-dev-shm-usage']
+      chromeFlags: ['--headless', '--no-sandbox', '--disable-dev-shm-usage'],
     });
   }, 30000);
 
@@ -78,7 +78,9 @@ describe('Lighthouse Performance Tests', () => {
     console.log(`\\n📊 Lighthouse Results for ${testName}:`);
     console.log(`Performance: ${Math.round(report.categories.performance.score * 100)}/100`);
     console.log(`Accessibility: ${Math.round(report.categories.accessibility.score * 100)}/100`);
-    console.log(`Best Practices: ${Math.round(report.categories['best-practices'].score * 100)}/100`);
+    console.log(
+      `Best Practices: ${Math.round(report.categories['best-practices'].score * 100)}/100`
+    );
     console.log(`SEO: ${Math.round(report.categories.seo.score * 100)}/100`);
 
     return report;
@@ -96,8 +98,12 @@ describe('Lighthouse Performance Tests', () => {
       const cls = report.audits['cumulative-layout-shift'].numericValue;
 
       console.log(`\\n🚀 Core Web Vitals:`);
-      console.log(`LCP (Largest Contentful Paint): ${Math.round(lcp)}ms (SLA: ${WEB_VITALS_SLA.lcp}ms)`);
-      console.log(`FCP (First Contentful Paint): ${Math.round(fcp)}ms (SLA: ${WEB_VITALS_SLA.fcp}ms)`);
+      console.log(
+        `LCP (Largest Contentful Paint): ${Math.round(lcp)}ms (SLA: ${WEB_VITALS_SLA.lcp}ms)`
+      );
+      console.log(
+        `FCP (First Contentful Paint): ${Math.round(fcp)}ms (SLA: ${WEB_VITALS_SLA.fcp}ms)`
+      );
       console.log(`SI (Speed Index): ${Math.round(si)}ms (SLA: ${WEB_VITALS_SLA.si}ms)`);
       console.log(`TTI (Time to Interactive): ${Math.round(tti)}ms (SLA: ${WEB_VITALS_SLA.tti}ms)`);
       console.log(`CLS (Cumulative Layout Shift): ${cls.toFixed(3)} (SLA: ${WEB_VITALS_SLA.cls})`);
@@ -148,7 +154,7 @@ describe('Lighthouse Performance Tests', () => {
   describe('Accessibility Performance', () => {
     test('should have excellent accessibility scores', async () => {
       const report = await runLighthouse(baseUrl, 'Accessibility Check');
-      
+
       const accessibilityScore = Math.round(report.categories.accessibility.score * 100);
       console.log(`\\n♿ Accessibility Score: ${accessibilityScore}/100`);
 
@@ -167,7 +173,9 @@ describe('Lighthouse Performance Tests', () => {
         if (report.audits[auditId]) {
           const audit = report.audits[auditId];
           const status = audit.score === 1 ? '✅' : audit.score === null ? '⚠️' : '❌';
-          console.log(`${status} ${audit.title}: ${audit.score === 1 ? 'PASS' : 'NEEDS ATTENTION'}`);
+          console.log(
+            `${status} ${audit.title}: ${audit.score === 1 ? 'PASS' : 'NEEDS ATTENTION'}`
+          );
         }
       });
 
@@ -178,7 +186,7 @@ describe('Lighthouse Performance Tests', () => {
   describe('SEO Performance', () => {
     test('should have excellent SEO optimization', async () => {
       const report = await runLighthouse(baseUrl, 'SEO Check');
-      
+
       const seoScore = Math.round(report.categories.seo.score * 100);
       console.log(`\\n🔍 SEO Score: ${seoScore}/100`);
 
@@ -197,7 +205,9 @@ describe('Lighthouse Performance Tests', () => {
         if (report.audits[auditId]) {
           const audit = report.audits[auditId];
           const status = audit.score === 1 ? '✅' : audit.score === null ? '⚠️' : '❌';
-          console.log(`${status} ${audit.title}: ${audit.score === 1 ? 'PASS' : 'NEEDS ATTENTION'}`);
+          console.log(
+            `${status} ${audit.title}: ${audit.score === 1 ? 'PASS' : 'NEEDS ATTENTION'}`
+          );
         }
       });
 
@@ -210,7 +220,7 @@ describe('Lighthouse Performance Tests', () => {
       const report = await runLighthouse(baseUrl, 'Performance Opportunities');
 
       console.log('\\n⚡ Performance Opportunities:');
-      
+
       const opportunities = [
         'render-blocking-resources',
         'unused-css-rules',
@@ -226,7 +236,8 @@ describe('Lighthouse Performance Tests', () => {
         if (report.audits[auditId] && report.audits[auditId].details) {
           const audit = report.audits[auditId];
           const savings = audit.numericValue || 0;
-          if (savings > 100) { // Only show if > 100ms potential savings
+          if (savings > 100) {
+            // Only show if > 100ms potential savings
             console.log(`📊 ${audit.title}: ${Math.round(savings)}ms potential savings`);
             totalSavings += savings;
           }
@@ -234,7 +245,7 @@ describe('Lighthouse Performance Tests', () => {
       });
 
       console.log(`\\n💰 Total Potential Savings: ${Math.round(totalSavings)}ms`);
-      
+
       // Performance should already be well optimized
       expect(totalSavings).toBeLessThan(1000); // Less than 1 second total potential savings
     }, 60000);

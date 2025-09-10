@@ -26,6 +26,12 @@ _tmp/
 .env.test.local
 .env.production.local
 
+# Cloudflare configuration with sensitive data
+wrangler.local.toml
+.wrangler/
+kv-bulk-upload.json
+kv-manifest.json
+
 # IDEs and editors
 .vscode/
 .idea/
@@ -95,6 +101,27 @@ Bible_*.json
 !jest.config.json
 !.stylelintrc.json
 !src/**/*.json
+
+# Generated entity files (5516 individual files generated during build)
+src/assets/data/entities/
+src/assets/data/books/*/entities.json
+src/assets/data/books/*/chapters/
+src/assets/data/redirects.json
+src/assets/data/entities-search.json
+
+# Generated data files (created by build process)
+src/assets/data/search-data.json
+src/assets/data/processing-summary.json
+src/assets/data/books/*-entities.json
+
+# Local configuration (personal settings)
+.claude/settings.local.json
+
+# Build optimization reports (generated during build)
+.optimizations/
+
+# Test files
+test-search.html
 
 # Generated documentation
 docs/api/
