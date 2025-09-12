@@ -334,20 +334,24 @@ npm run build:production
 
 ## 📚 Documentation
 
-### Available Guides
+### Quick Reference
 
-- **[CLAUDE.md](CLAUDE.md)**: AI assistant instructions and project context
-- **[Current Context](docs/archive/CURRENT_CONTEXT.md)**: Project status and
-  recent changes
-- **[Characters and Entities](CharactersAndEntities.md)**: Entity system
-  implementation details
+- **[COMMANDS.md](COMMANDS.md)**: Essential commands reference and workflows
+- **[DEPLOYMENT.md](DEPLOYMENT.md)**: Complete deployment and testing guide
+- **[tests/README.md](tests/README.md)**: Detailed testing documentation
 
-### Technical Documentation
+### Technical Guides
 
-- **Architecture**: See `CLAUDE.md` for detailed technical architecture
-- **API Integration**: Chapter reader and commentary system documentation
-- **Performance**: Build optimization and caching strategies
-- **Entity System**: Data processing and search integration
+- **[CLAUDE.md](CLAUDE.md)**: Comprehensive technical documentation and AI assistant context
+- **[SCALABILITY.md](SCALABILITY.md)**: Performance optimization and scaling details  
+- **[CharactersAndEntities.md](CharactersAndEntities.md)**: Entity system implementation
+
+### Development Resources
+
+- **Architecture**: Component-based architecture with modern build tools
+- **API Integration**: Multiple Bible translation sources and commentary providers
+- **Performance**: Static generation with intelligent caching and optimization
+- **Entity System**: 5,500+ entities with cross-reference search and linking
 
 ## 📄 License
 

@@ -5,7 +5,7 @@ Tests mobile Safari-specific functionality and behaviors
 """
 
 import pytest
-from .config import get_test_urls
+from config import get_test_urls
 import time
 import json
 from selenium import webdriver

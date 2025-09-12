@@ -4,7 +4,7 @@ Tests URL generation, book name mapping, and commentary integration.
 """
 
 import pytest
-from .config import get_test_urls
+from config import get_test_urls
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait

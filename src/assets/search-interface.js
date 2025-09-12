@@ -43,7 +43,20 @@ class SearchInterface {
       this.bindEvents();
 
       this.isInitialized = true;
-      console.log('[SearchInterface] Initialized successfully');
+      console.log('[SearchInterface] Initialized successfully - v4.1.0 - Removed search icon');
+      
+      // Bind suggestion events
+      this.bindSuggestionEvents();
+      
+      // Force apply styles after initialization
+      setTimeout(() => {
+        const container = document.getElementById(this.containerId);
+        if (container) {
+          container.style.maxWidth = '680px';
+          container.style.margin = '2rem auto 3rem auto';
+          console.log('[SearchInterface] Applied premium container styles');
+        }
+      }, 100);
     } catch (error) {
       console.error('[SearchInterface] Failed to initialize:', error);
       throw error;
@@ -108,18 +121,37 @@ class SearchInterface {
     // Create search HTML structure
     container.innerHTML = `
       <div class="search-wrapper">
+        <div class="search-hero">
+          <h2 class="search-title">Discover Scripture</h2>
+          <p class="search-subtitle">Search 66 books, 5,500+ characters, and comprehensive commentary</p>
+        </div>
         <div class="search-input-container">
           <input 
             type="text" 
             id="${this.inputId}"
             class="search-input"
-            placeholder="Search books, chapters, characters..."
+            placeholder="Try 'Genesis creation' or 'David'"
             autocomplete="off"
             spellcheck="false"
+            aria-label="Search scripture, characters, and commentary"
           />
+          <div class="search-shortcut" id="searchShortcut" aria-label="Keyboard shortcut">
+            <span class="shortcut-key">${this.getShortcutKey()}</span>
+            <span class="shortcut-text">K</span>
+          </div>
           <button class="search-clear" aria-label="Clear search" style="display: none;">
-            <span class="search-clear-icon">×</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
           </button>
+        </div>
+        <div class="search-suggestions">
+          <span class="suggestion-label">Popular:</span>
+          <button class="search-suggestion" data-query="Genesis creation">Genesis creation</button>
+          <button class="search-suggestion" data-query="Jesus parables">Jesus parables</button>
+          <button class="search-suggestion" data-query="David">David</button>
+          <button class="search-suggestion" data-query="Exodus">Exodus</button>
         </div>
         <div id="${this.resultsId}" class="search-results" style="display: none;"></div>
       </div>
@@ -138,80 +170,235 @@ class SearchInterface {
     style.textContent = `
       .search-container {
         position: relative;
-        max-width: 600px;
-        margin: 1rem auto;
-        padding: 0 1rem;
+        max-width: 680px !important;
+        margin: 2rem auto 3rem auto !important;
+        padding: 0 1.5rem !important;
         z-index: 1000;
+        display: flex !important;
+        justify-content: center !important;
       }
       
       .search-wrapper {
         position: relative;
         width: 100%;
       }
+
+      .search-hero {
+        text-align: center;
+        margin-bottom: 2rem;
+        opacity: 0;
+        animation: fadeInUp 0.8s ease forwards;
+      }
+
+      .search-title {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.95);
+        margin: 0 0 0.5rem 0;
+        letter-spacing: -0.025em;
+        line-height: 1.1;
+      }
+
+      .search-subtitle {
+        font-size: 1.125rem;
+        color: rgba(156, 163, 175, 0.9);
+        margin: 0;
+        font-weight: 400;
+        line-height: 1.4;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
       
       .search-input-container {
         position: relative;
         display: flex;
         align-items: center;
+        background: rgba(51, 65, 85, 0.8);
+        border: 1px solid rgba(75, 85, 99, 0.4);
+        border-radius: 12px;
+        transition: all 0.2s ease;
+        min-height: 48px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        opacity: 0;
+        animation: fadeInUp 0.8s ease 0.2s forwards;
       }
+
+      .search-input-container:hover {
+        border-color: rgba(59, 130, 246, 0.5);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .search-input-container:focus-within {
+        border-color: rgba(59, 130, 246, 0.8);
+        box-shadow: 
+          0 4px 12px rgba(0, 0, 0, 0.15),
+          0 0 0 3px rgba(59, 130, 246, 0.1);
+      }
+
       
       .search-input {
-        width: 100%;
-        padding: 0.75rem 1rem;
-        border: 2px solid var(--border);
-        border-radius: 0.5rem;
-        background: var(--bg);
-        color: var(--text);
-        font-size: 1rem;
-        font-family: inherit;
-        transition: all 0.2s ease;
+        flex: 1;
+        padding: 14px 16px 14px 20px;
+        background: transparent;
+        border: none;
+        color: rgba(255, 255, 255, 0.95);
+        font-size: 15px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
         outline: none;
+        font-weight: 400;
+        line-height: 1.4;
+        min-width: 0;
       }
       
-      .search-input:focus {
-        border-color: var(--accent);
-        box-shadow: 0 0 0 3px var(--bg-secondary);
+      .search-input::placeholder {
+        color: rgba(156, 163, 175, 0.6);
+        font-weight: 400;
+        transition: color 0.3s ease;
+      }
+
+      .search-input:focus::placeholder {
+        color: rgba(156, 163, 175, 0.4);
+      }
+
+      .search-suggestions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+        opacity: 0;
+        animation: fadeInUp 0.8s ease 0.4s forwards;
+      }
+
+      .suggestion-label {
+        color: rgba(156, 163, 175, 0.7);
+        font-size: 14px;
+        font-weight: 500;
+        margin-right: 4px;
+      }
+
+      .search-suggestion {
+        background: rgba(59, 130, 246, 0.1);
+        border: 1px solid rgba(59, 130, 246, 0.2);
+        border-radius: 20px;
+        padding: 6px 16px;
+        color: rgba(147, 197, 253, 0.9);
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        outline: none;
+      }
+
+      .search-suggestion:hover {
+        background: rgba(59, 130, 246, 0.2);
+        border-color: rgba(59, 130, 246, 0.4);
+        color: rgba(147, 197, 253, 1);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+      }
+
+      .search-suggestion:active {
+        transform: translateY(0);
+      }
+
+      .search-shortcut {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px 6px;
+        margin-right: 12px;
+        background: rgba(17, 24, 39, 0.6);
+        border: 1px solid rgba(75, 85, 99, 0.4);
+        border-radius: 4px;
+        font-size: 11px;
+        color: rgba(156, 163, 175, 0.7);
+        gap: 1px;
+        user-select: none;
+        transition: all 0.2s ease;
+        font-family: ui-monospace, 'SF Mono', 'Monaco', 'Consolas', monospace;
+        font-weight: 500;
+        flex-shrink: 0;
+      }
+
+      .search-input-container:hover .search-shortcut {
+        background: rgba(17, 24, 39, 0.9);
+        border-color: rgba(75, 85, 99, 0.8);
+        color: rgba(156, 163, 175, 1);
+      }
+
+      .search-input-container:focus-within .search-shortcut {
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(0.9);
+      }
+
+      .shortcut-key {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1;
+      }
+
+      .shortcut-text {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1;
       }
       
       .search-clear {
-        position: absolute;
-        right: 0.5rem;
-        top: 50%;
-        transform: translateY(-50%);
-        background: none;
+        padding: 6px 8px;
+        background: transparent;
         border: none;
-        color: var(--text-secondary);
+        color: rgba(255, 255, 255, 0.4);
         cursor: pointer;
-        padding: 0.25rem;
-        border-radius: 0.25rem;
-        font-size: 1.25rem;
+        border-radius: 6px;
+        font-size: 16px;
         line-height: 1;
-        transition: color 0.2s ease;
+        transition: all 0.25s ease;
+        margin-right: 6px;
+        display: none;
       }
       
       .search-clear:hover {
-        color: var(--text);
-        background: var(--bg-secondary);
+        color: rgba(255, 255, 255, 0.8);
+        background: rgba(255, 255, 255, 0.1);
+        transform: scale(1.1);
       }
       
       .search-results {
         position: absolute;
-        top: 100%;
+        top: calc(100% + 4px);
         left: 0;
         right: 0;
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: 0.5rem;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        background: rgba(17, 24, 39, 0.95);
+        border: 1px solid rgba(75, 85, 99, 0.6);
+        border-radius: 8px;
+        box-shadow: 
+          0 10px 25px rgba(0, 0, 0, 0.25),
+          0 4px 10px rgba(0, 0, 0, 0.1);
         max-height: 400px;
         overflow-y: auto;
+        overflow-x: hidden;
         z-index: 1001;
-        margin-top: 0.25rem;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
       }
       
       .search-result {
-        padding: 0.75rem 1rem;
-        border-bottom: 1px solid var(--border);
+        padding: 12px 16px;
+        border-bottom: 1px solid rgba(75, 85, 99, 0.3);
         cursor: pointer;
         transition: background-color 0.15s ease;
       }
@@ -222,90 +409,188 @@ class SearchInterface {
       
       .search-result:hover,
       .search-result.selected {
-        background: var(--bg-secondary);
+        background: rgba(59, 130, 246, 0.1);
       }
       
       .search-result-title {
         font-weight: 600;
-        color: var(--text);
-        margin-bottom: 0.25rem;
-        font-size: 0.95rem;
+        color: rgba(243, 244, 246, 0.95);
+        margin-bottom: 4px;
+        font-size: 14px;
+        line-height: 1.3;
       }
       
       .search-result-subtitle {
-        color: var(--text-secondary);
-        font-size: 0.85rem;
-        margin-bottom: 0.25rem;
+        color: rgba(156, 163, 175, 0.9);
+        font-size: 13px;
+        margin-bottom: 6px;
+        font-weight: 500;
+        line-height: 1.2;
       }
       
       .search-result-description {
-        color: var(--text-secondary);
-        font-size: 0.8rem;
+        color: rgba(156, 163, 175, 0.7);
+        font-size: 12px;
         line-height: 1.4;
+        font-weight: 400;
       }
       
       .search-result-type {
         display: inline-block;
-        padding: 0.125rem 0.5rem;
-        background: var(--bg-secondary);
-        color: var(--text-secondary);
-        border-radius: 1rem;
-        font-size: 0.75rem;
-        font-weight: 500;
-        text-transform: capitalize;
-        margin-right: 0.5rem;
+        padding: 2px 8px;
+        background: rgba(75, 85, 99, 0.6);
+        color: rgba(156, 163, 175, 0.9);
+        border-radius: 4px;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-right: 8px;
+        letter-spacing: 0.5px;
       }
       
       .search-result-type.book {
-        background: #dbeafe;
-        color: #1e40af;
+        background: rgba(59, 130, 246, 0.2);
+        color: rgba(147, 197, 253, 1);
       }
       
       .search-result-type.character {
-        background: #fecaca;
-        color: #dc2626;
+        background: rgba(239, 68, 68, 0.2);
+        color: rgba(252, 165, 165, 1);
       }
       
       .search-result-type.chapter {
-        background: #d1fae5;
-        color: #059669;
+        background: rgba(34, 197, 94, 0.2);
+        color: rgba(134, 239, 172, 1);
       }
       
       .search-result-type.category {
-        background: #fef3c7;
-        color: #d97706;
+        background: rgba(245, 158, 11, 0.2);
+        color: rgba(253, 230, 138, 1);
       }
       
       .search-empty {
         padding: 2rem 1rem;
         text-align: center;
-        color: var(--text-secondary);
-        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      /* Mobile Responsive Styles */
+      @media (max-width: 768px) {
+        .search-container {
+          max-width: 100% !important;
+          margin: 1.5rem auto 2rem auto !important;
+          padding: 0 1rem !important;
+        }
+
+        .search-hero {
+          margin-bottom: 1.5rem;
+        }
+
+        .search-title {
+          font-size: 1.875rem;
+        }
+
+        .search-subtitle {
+          font-size: 1rem;
+        }
+
+        .search-input-container {
+          min-height: 46px;
+          border-radius: 10px;
+        }
+
+        .search-input {
+          font-size: 16px; /* Prevents zoom on iOS */
+          padding: 12px 14px 12px 16px;
+        }
+
+        .search-shortcut {
+          display: none; /* Hide keyboard shortcut on mobile */
+        }
+
+        .search-suggestions {
+          margin-top: 12px;
+          gap: 8px;
+        }
+
+        .search-suggestion {
+          font-size: 13px;
+          padding: 5px 12px;
+        }
+
+        .search-results {
+          max-height: 60vh;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .search-container {
+          padding: 0 1rem !important;
+          margin: 1rem auto 1.5rem auto !important;
+        }
+
+        .search-hero {
+          margin-bottom: 1.25rem;
+        }
+
+        .search-title {
+          font-size: 1.75rem;
+        }
+
+        .search-subtitle {
+          font-size: 0.9rem;
+        }
+
+        .search-input-container {
+          min-height: 44px;
+          border-radius: 8px;
+        }
+
+        .search-input {
+          padding: 10px 12px 10px 14px;
+          font-size: 16px;
+        }
+
+        .search-shortcut {
+          margin-right: 8px;
+          padding: 3px 5px;
+          font-size: 10px;
+        }
+
+        .search-suggestions {
+          margin-top: 10px;
+          gap: 6px;
+        }
+
+        .suggestion-label {
+          font-size: 13px;
+        }
+
+        .search-suggestion {
+          font-size: 12px;
+          padding: 4px 10px;
+        }
+
+        .search-result {
+          padding: 12px 14px;
+        }
+
+        .search-result-title {
+          font-size: 14px;
+        }
+
+        .search-result-subtitle {
+          font-size: 13px;
+        }
       }
       
       .search-loading {
-        padding: 1rem;
+        padding: 1.5rem;
         text-align: center;
-        color: var(--text-secondary);
-        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 14px;
+        font-weight: 500;
       }
-      
-      /* Mobile responsiveness */
-      @media (max-width: 768px) {
-        .search-container {
-          margin: 0.5rem auto;
-          padding: 0 0.5rem;
-        }
-        
-        .search-input {
-          font-size: 16px; /* Prevent zoom on iOS */
-        }
-        
-        .search-results {
-          max-height: 300px;
-        }
-      }
-      
     `;
 
     document.head.appendChild(style);
@@ -345,6 +630,22 @@ class SearchInterface {
     this.resultsContainer = results;
     this.clearButton = clearButton;
     this.container = document.getElementById(this.containerId);
+  }
+
+  bindSuggestionEvents() {
+    const suggestions = this.container?.querySelectorAll('.search-suggestion');
+    if (suggestions) {
+      suggestions.forEach(suggestion => {
+        suggestion.addEventListener('click', (e) => {
+          const query = e.target.dataset.query;
+          if (query && this.input) {
+            this.input.value = query;
+            this.input.focus();
+            this.performSearch(query);
+          }
+        });
+      });
+    }
   }
 
   handleInput(event) {
@@ -392,6 +693,7 @@ class SearchInterface {
     if (this.currentQuery.length >= this.minQueryLength && this.results.length > 0) {
       this.showResults();
     }
+    this.updateShortcutHint();
   }
 
   handleBlur() {
@@ -399,6 +701,7 @@ class SearchInterface {
     setTimeout(() => {
       this.hideResults();
     }, 150);
+    this.updateShortcutHint();
   }
 
   handleResultClick(event) {
@@ -565,6 +868,24 @@ class SearchInterface {
     }
   }
 
+  // Get platform-specific shortcut key
+  getShortcutKey() {
+    // Detect platform
+    const isMac = /Mac|iPhone|iPad|iPod/.test(navigator.userAgent) || navigator.platform === 'MacIntel';
+    return isMac ? '⌘' : 'Ctrl+';
+  }
+
+  // Update shortcut hint visibility
+  updateShortcutHint() {
+    const shortcutHint = document.getElementById('searchShortcut');
+    if (shortcutHint) {
+      const input = document.getElementById(this.inputId);
+      if (input) {
+        shortcutHint.style.display = input === document.activeElement ? 'none' : 'flex';
+      }
+    }
+  }
+
   // Cleanup method to prevent memory leaks
   destroy() {
     if (!this.isInitialized) return;
@@ -598,6 +919,9 @@ class SearchInterface {
   }
 }
 
+// Export SearchInterface class to global scope
+window.SearchInterface = SearchInterface;
+
 // Global search interface instance
 window.searchInterface = null;
 
@@ -619,12 +943,12 @@ function initializeSearchInterface() {
   });
 }
 
-// Auto-initialize
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initializeSearchInterface);
-} else {
-  initializeSearchInterface();
-}
+// Auto-initialize disabled - will be initialized manually from base.njk
+// if (document.readyState === 'loading') {
+//   document.addEventListener('DOMContentLoaded', initializeSearchInterface);
+// } else {
+//   initializeSearchInterface();
+// }
 
 // Export for module systems
 if (typeof module !== 'undefined' && module.exports) {

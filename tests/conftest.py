@@ -11,7 +11,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.safari.options import Options as SafariOptions
 from appium import webdriver as appium_webdriver
 from appium.options.ios import XCUITestOptions
-from .config import get_base_url, get_test_urls
+from config import get_base_url, get_test_urls
 
 
 def wait_for_server(url, timeout=30):

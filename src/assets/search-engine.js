@@ -103,18 +103,34 @@ class SearchEngine {
   // Load all search data from the site
   async loadSearchData() {
     try {
+      console.log('[SearchEngine] Loading search data...');
       const promises = [];
 
       // Load books data
-      promises.push(this.fetchJSON('/assets/data/books.json').catch(() => null));
+      promises.push(this.fetchJSON('/assets/data/books.json').catch(err => {
+        console.error('[SearchEngine] Failed to load books data:', err);
+        return null;
+      }));
 
       // Load categories data
-      promises.push(this.fetchJSON('/assets/data/categories.json').catch(() => null));
+      promises.push(this.fetchJSON('/assets/data/categories.json').catch(err => {
+        console.error('[SearchEngine] Failed to load categories data:', err);
+        return null;
+      }));
 
       // Load entities data
-      promises.push(this.fetchJSON('/assets/data/entities-search.json').catch(() => null));
+      promises.push(this.fetchJSON('/assets/data/entities-search.json').catch(err => {
+        console.error('[SearchEngine] Failed to load entities data:', err);
+        return null;
+      }));
 
       const [booksData, categoriesData, entitiesData] = await Promise.all(promises);
+
+      console.log('[SearchEngine] Loaded data:', {
+        books: booksData?.length || 0,
+        categories: categoriesData?.length || 0,
+        entities: entitiesData?.length || 0
+      });
 
       this.searchData = {
         books: booksData || [],
@@ -130,8 +146,8 @@ class SearchEngine {
 
   // Helper to fetch JSON with error handling
   async fetchJSON(url) {
-    // Validate URL for security
-    if (!SecurityConfig?.isUrlSafe(url) && !url.startsWith('/') && !url.startsWith('./')) {
+    // Validate URL for security - only allow local URLs
+    if (!url.startsWith('/') && !url.startsWith('./')) {
       console.warn('Security: Blocked unsafe fetch URL:', url);
       throw new Error('Invalid URL blocked for security reasons');
     }
@@ -573,6 +589,9 @@ class SearchEngine {
     }, delay);
   }
 }
+
+// Export SearchEngine class to global scope
+window.SearchEngine = SearchEngine;
 
 // Global search engine instance
 window.searchEngine = new SearchEngine();
