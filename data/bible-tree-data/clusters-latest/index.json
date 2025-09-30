@@ -1,0 +1,76 @@
+[
+  {
+    "slug": "primeval",
+    "title": "Primeval (Creation → Flood → Nations)",
+    "roots": [
+      "403",
+      "404",
+      "418",
+      "420"
+    ]
+  },
+  {
+    "slug": "patriarchs",
+    "title": "Patriarchs (Abraham, Isaac, Jacob)",
+    "roots": [
+      "144",
+      "383"
+    ]
+  },
+  {
+    "slug": "tribal",
+    "title": "Tribal & National Lines",
+    "roots": [
+      "112",
+      "144",
+      "390",
+      "45"
+    ]
+  },
+  {
+    "slug": "priestly",
+    "title": "Priestly Line (Levi → Aaron → High Priests)",
+    "roots": [
+      "185",
+      "314",
+      "340"
+    ]
+  },
+  {
+    "slug": "royal",
+    "title": "Royal Line (Judah → David → Kings → Zerubbabel)",
+    "roots": [
+      "153",
+      "215",
+      "231"
+    ]
+  },
+  {
+    "slug": "messianic",
+    "title": "Messianic (Matthew & Luke)",
+    "roots": []
+  },
+  {
+    "slug": "judges",
+    "title": "Judges & Notables",
+    "roots": [
+      "70",
+      "80",
+      "121",
+      "183",
+      "252",
+      "283",
+      "436",
+      "488",
+      "522",
+      "573",
+      "588",
+      "591",
+      "598",
+      "608",
+      "617",
+      "622",
+      "632"
+    ]
+  }
+]

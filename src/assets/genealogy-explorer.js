@@ -269,17 +269,35 @@ class GenealogyExplorer extends HTMLElement {
     const tip = d3.select(this).append('div').attr('class', 'tip').style('display', 'none');
     const showTip = (event, data) => {
       const { clientX: x, clientY: y } = event;
+
+      // Use tooltipRaw if available, otherwise construct from available data
+      let tooltipContent = '';
+      if (data.tooltipRaw) {
+        // Split tooltip by newlines and format
+        const lines = data.tooltipRaw.split('\n').filter(line => line.trim());
+        tooltipContent = lines.map((line, idx) => {
+          if (idx === 0) {
+            return `<div style="font-weight:600">${line}</div>`;
+          }
+          return `<div style='font-size:.85rem;color:#6B7280'>${line}</div>`;
+        }).join('');
+      } else {
+        // Fallback to legacy format
+        tooltipContent = `
+          <div style="font-weight:600">${data.name}</div>
+          ${data.aka ? `<div style='font-size:.85rem;color:#6B7280'>aka: ${data.aka.join(', ')}</div>` : ''}
+          ${data.role ? `<div style='font-size:.85rem;color:#6B7280'>Role: ${data.role}</div>` : ''}
+          ${data.tribe ? `<div style='font-size:.85rem;color:#6B7280'>Tribe: ${data.tribe}</div>` : ''}
+          ${data.spouses ? `<div style='font-size:.85rem;color:#6B7280'>Spouses: ${data.spouses.join(', ')}</div>` : ''}
+          ${data.verses ? `<div style='font-size:.85rem;color:#6B7280'>Refs: ${data.verses.join('; ')}</div>` : ''}
+        `;
+      }
+
       tip
         .style('display', 'block')
         .style('left', x + 12 + 'px')
-        .style('top', y + 12 + 'px').html(`
-        <div style="font-weight:600">${data.name}</div>
-        ${data.aka ? `<div style='font-size:.85rem;color:#6B7280'>aka: ${data.aka.join(', ')}</div>` : ''}
-        ${data.role ? `<div style='font-size:.85rem;color:#6B7280'>Role: ${data.role}</div>` : ''}
-        ${data.tribe ? `<div style='font-size:.85rem;color:#6B7280'>Tribe: ${data.tribe}</div>` : ''}
-        ${data.spouses ? `<div style='font-size:.85rem;color:#6B7280'>Spouses: ${data.spouses.join(', ')}</div>` : ''}
-        ${data.verses ? `<div style='font-size:.85rem;color:#6B7280'>Refs: ${data.verses.join('; ')}</div>` : ''}
-      `);
+        .style('top', y + 12 + 'px')
+        .html(tooltipContent);
     };
     const hideTip = () => tip.style('display', 'none');
 

@@ -27,35 +27,36 @@
 
 ### 📋 Current Priorities
 
-#### ✅ COMPLETED: Biblical Genealogy Explorer [TOP PRIORITY]
+#### ✅ COMPLETED: Biblical Genealogy Tree Visualization
 
-**Status**: IMPLEMENTED | **Implementation**: Complete and deployed
+**Status**: FULLY IMPLEMENTED | **Location**: `src/genealogies.njk` | **Completed**: January 2025
 
-- [x] **Extract Web Component**: Move genealogy-explorer.js code from example
-      file to `src/assets/`
-- [x] **Create Genealogy Page**: Implement `src/genealogy.njk` using base.njk
-      layout
-- [x] **Generate Data**: Create biblical genealogy JSON from existing entity
-      system data
-- [x] **Add Navigation**: Add "Genealogy" item to main navigation in base
-      layouts
-- [x] **Test Features**: Interactive tree, zoom/pan, search, export PNG,
-      keyboard navigation
-- [x] **Mobile Optimization**: Ensure responsive design and touch interactions
-- [x] **Accessibility**: Implement keyboard navigation and screen reader support
+**Features Implemented**:
 
-**Features Include**:
+- [x] **Interactive D3.js Tree**: Full genealogy tree from Adam to Jesus with 7 thematic clusters
+- [x] **Multi-line Tooltips**: Scripture references from `tooltipRaw` field with proper formatting
+- [x] **Messianic Line Highlighting**: 134 individuals marked in red (Matthew 1 & Luke 3 genealogies)
+- [x] **Dynamic Circle States**: Filled when unexpanded, hollow when expanded or leaf nodes
+- [x] **Seven Clusters**: Primeval, Patriarchs, Tribal, Priestly, Royal, Messianic, Judges
+- [x] **Judges Cluster**: Populated with 17 judges (Othniel, Ehud, Tola, Jair, Jephthah, Gideon, Eli, Samuel, etc.)
+- [x] **Zoom & Pan Controls**: Interactive navigation with mouse/touch support
+- [x] **Search Functionality**: Find and highlight specific biblical figures
+- [x] **Keyboard Navigation**: Arrow keys, Enter to expand/collapse
+- [x] **Theme Integration**: Full dark/light mode support
 
-- Interactive family tree visualization with D3.js
-- Zoom and pan with mouse/touch
-- Search to find and highlight specific biblical figures
-- Export current view as PNG image
-- Color coding by tribes (Judah=purple, Levi=green, Israel=blue)
-- Hover tooltips showing roles, spouses, biblical references
-- URL hash permalinks for deep linking (e.g. `#root=abraham&mode=descendants`)
-- Keyboard navigation (arrow keys to navigate, Enter to expand/collapse)
-- Descendants vs Ancestors view modes
-- Dark/light theme integration
+**Data Pipeline**:
+- Source: `data/bible-tree-data/raw-latest/nodes.csv`
+- Scripts: `mark_messianic_line.py`, `mark_judges.py`, `generate_bible_tree.py`
+- Output: `src/assets/data/bible-tree.json`
+
+**Styling**:
+- Regular nodes: Solid `rgb(102, 121, 168)` (blue) when filled
+- Messianic line: Solid `#dc143c` (red) when filled
+- Hollow strokes when expanded or leaf nodes
+
+**Testing**:
+- Test suite: `tests/test_genealogy_visualization.py`
+- Coverage: Page loading, cluster navigation, highlighting, tooltips, circle states
 
 #### Content Enhancement
 
@@ -127,6 +128,8 @@
   entities
 - **Mobile Optimization**: Responsive design and touch-friendly interface
   complete
+- **Genealogy Minimap**: Functionally available; pending QA on new scaling
+  approach (see active fix above).
 
 #### Recent Fixes (Latest Session)
 
@@ -143,6 +146,9 @@
 - ✅ **Read Chapter Button Duplication**: Fixed duplicate button issue by
   preventing chapter-reader.js from initializing when commentary-reader.js is
   present
+- ✅ **Genealogy Minimap State Cache**: `src/genealogies.njk` now stores node and
+  link sets so minimap scale recalculates with the latest bounds after
+  fit-to-stage.
 - ✅ **Biblical Genealogy Explorer**: Complete implementation deployed with
   interactive D3.js family tree, search, navigation, and export features
 - ✅ **Chapter Navigation**: Added Previous/Next chapter navigation to Chapter

@@ -74,7 +74,7 @@ class IncrementalBuilder {
         'src/**/*.njk', // All pages depend on base layout
       ],
 
-      'src/_includes/layouts/base-minimal.njk': ['src/genealogy.njk', 'src/links.njk'],
+      'src/_includes/layouts/base-minimal.njk': ['src/links.njk'],
 
       // Entity dependencies
       'data/source-datasets/Bible_combined_all_expanded.with_ids.v2.json': [
@@ -131,7 +131,6 @@ class IncrementalBuilder {
       'src/books.njk',
       'src/categories.njk',
       'src/entities.njk',
-      'src/genealogy.njk',
       'src/gospel-thread.njk',
 
       // JavaScript assets
@@ -140,7 +139,6 @@ class IncrementalBuilder {
       'src/assets/chapter-reader.js',
       'src/assets/commentary-reader.js',
       'src/assets/entity-relationship-visualizer.js',
-      'src/assets/genealogy-explorer.js',
 
       // Styles
       'src/styles.css',

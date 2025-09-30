@@ -29,6 +29,15 @@ mobile study.
 Built with **Eleventy (11ty)** for fast, static generation and optimized for
 **Cloudflare Pages** deployment.
 
+## 🛠️ Current Focus & Known Issues
+
+- **Genealogy minimap QA** – Recent refactor caches node/link sets in
+  `src/genealogies.njk` so the minimap scale tracks the main tree after
+  `Fit tree`. Please verify on `/genealogies/` across desktop and mobile and
+  record findings in `docs/genealogies-research/README.md`.
+- Broader content expansion, SEO, and UX enhancements remain on the medium-term
+  roadmap (see `TODO.md`).
+
 ## 🚀 Quick Start
 
 ```bash

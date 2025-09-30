@@ -1,0 +1,1166 @@
+{
+  "cluster": "tribal",
+  "title": "Tribal & National Lines",
+  "roots": [
+    "112",
+    "144",
+    "390",
+    "45"
+  ],
+  "tree": {
+    "id": "ROOT",
+    "name": "ROOT",
+    "children": [
+      {
+        "id": "45",
+        "name": "Ishmael",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5807.298136645963,
+        "y": 3280,
+        "tooltipRaw": "Ishmael\n\nLived: 1890-1753 BCE (137 years)\n\nSpouse: Unnamed Egyptian (Genesis 21:21)\n \n\n(Genesis 16:16, 1 Chronicles 1:28, Genesis 25:17)\n\nIshmael became an archer (Genesis 21:20).",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Ishmael Lived: 1890-1753 BCE (137 years) Spouse: Unnamed Egyptian (Genesis 21:21) (Genesis 16:16, 1 Chronicles 1:28, Genesis 25:17) Ishmael became an archer (Genesis 21:20).",
+          "extra": {
+            "Ishmael Lived": "1890-1753 BCE (137 years) Spouse: Unnamed Egyptian (Genesis 21:21) (Genesis 16:16, 1 Chronicles 1:28, Genesis 25:17) Ishmael became an archer (Genesis 21:20)."
+          },
+          "name": "Ishmael Lived",
+          "spouse": "Unnamed Egyptian (Genesis 21:21) (Genesis 16:16",
+          "refs": [
+            "Genesis 21:21",
+            "Genesis 16:16",
+            "Genesis 25:17",
+            "Genesis 21:20"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "96",
+        "name": "Joshua",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5131.708074534162,
+        "y": 2560,
+        "tooltipRaw": "Joshua\n\n(Haggai 1:1, Haggai 1:12, Zechariah 6:11)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Joshua (Haggai 1:1, Haggai 1:12, Zechariah 6:11)",
+          "extra": {},
+          "name": "Joshua (Haggai",
+          "refs": [
+            "Haggai 1:1",
+            "Haggai 1:12",
+            "Zechariah 6:11"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "97",
+        "name": "Nun (or Non)",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5131.708074534162,
+        "y": 2480,
+        "tooltipRaw": "Nun (or Non)\n\n(1 Chronicles 7:27)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Nun (or Non) (1 Chronicles 7:27)",
+          "extra": {},
+          "name": "Nun (or Non) ("
+        },
+        "children": []
+      },
+      {
+        "id": "98",
+        "name": "Elishama",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5131.708074534162,
+        "y": 2400,
+        "tooltipRaw": "Elishama\n\n(1 Chronicles 2:41)Is this possibly the Elishama the scribe mentioned in Jeremiah 36:12, 36:20-21?",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Elishama (1 Chronicles 2:41)Is this possibly the Elishama the scribe mentioned in Jeremiah 36:12, 36:20-21?",
+          "extra": {},
+          "name": "Elishama (",
+          "refs": [
+            "Jeremiah 36:12"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "99",
+        "name": "Ammihud",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5131.708074534162,
+        "y": 2320,
+        "tooltipRaw": "Ammihud\n\n(1 Chronicles 7:26)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Ammihud (1 Chronicles 7:26)",
+          "extra": {},
+          "name": "Ammihud ("
+        },
+        "children": []
+      },
+      {
+        "id": "100",
+        "name": "Ladan",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5131.708074534162,
+        "y": 2240,
+        "tooltipRaw": "Ladan\n\n(1 Chronicles 7:26)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Ladan (1 Chronicles 7:26)",
+          "extra": {},
+          "name": "Ladan ("
+        },
+        "children": []
+      },
+      {
+        "id": "101",
+        "name": "Tahan",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5131.708074534162,
+        "y": 2160,
+        "tooltipRaw": "Tahan\n\n(1 Chronicles 7:25)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Tahan (1 Chronicles 7:25)",
+          "extra": {},
+          "name": "Tahan ("
+        },
+        "children": []
+      },
+      {
+        "id": "102",
+        "name": "Telah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5131.708074534162,
+        "y": 2080,
+        "tooltipRaw": "Telah\n\n(1 Chronicles 7:25)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Telah (1 Chronicles 7:25)",
+          "extra": {},
+          "name": "Telah ("
+        },
+        "children": []
+      },
+      {
+        "id": "103",
+        "name": "Resheph",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5131.708074534162,
+        "y": 2000,
+        "tooltipRaw": "Resheph\n\n(1 Chronicles 7:25)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Resheph (1 Chronicles 7:25)",
+          "extra": {},
+          "name": "Resheph ("
+        },
+        "children": []
+      },
+      {
+        "id": "104",
+        "name": "Rephah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5113.198757763976,
+        "y": 2000,
+        "tooltipRaw": "Rephah\n\n(1 Chronicles 7:25)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Rephah (1 Chronicles 7:25)",
+          "extra": {},
+          "name": "Rephah ("
+        },
+        "children": []
+      },
+      {
+        "id": "105",
+        "name": "Sheerah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5094.689440993789,
+        "y": 2000,
+        "tooltipRaw": "Sheerah\n\n(1 Chronicles 7:24)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Sheerah (1 Chronicles 7:24)",
+          "extra": {},
+          "name": "Sheerah ("
+        },
+        "children": []
+      },
+      {
+        "id": "106",
+        "name": "Beriah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5113.198757763976,
+        "y": 1920,
+        "tooltipRaw": "Beriah\n\n(Genesis 46:17, 1 Chronicles 7:30)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Beriah (Genesis 46:17, 1 Chronicles 7:30)",
+          "extra": {},
+          "name": "Beriah (Genesis",
+          "refs": [
+            "Genesis 46:17"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "107",
+        "name": "Elead",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5088.519668737061,
+        "y": 1920,
+        "tooltipRaw": "Elead\n\n(1 Chronicles 7:21)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Elead (1 Chronicles 7:21)",
+          "extra": {},
+          "name": "Elead ("
+        },
+        "children": []
+      },
+      {
+        "id": "108",
+        "name": "Ezer",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5063.840579710144,
+        "y": 1920,
+        "tooltipRaw": "Ezer\n\n(1 Chronicles 4:4)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Ezer (1 Chronicles 4:4)",
+          "extra": {},
+          "name": "Ezer ("
+        },
+        "children": []
+      },
+      {
+        "id": "109",
+        "name": "Shuthelah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5039.16149068323,
+        "y": 1920,
+        "tooltipRaw": "Shuthelah\n\n(1 Chronicles 7:21)",
+        "initiallyVisible": true,
+        "hadCollapsedChildren": true,
+        "tooltipParsed": {
+          "raw": "Shuthelah (1 Chronicles 7:21)",
+          "extra": {},
+          "name": "Shuthelah ("
+        },
+        "children": []
+      },
+      {
+        "id": "110",
+        "name": "Ephraim",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5076.180124223602,
+        "y": 1840,
+        "tooltipRaw": "Ephraim\n\n(Genesis 41:52)\n\nMore details are available\nat Psalm11918.org",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Ephraim (Genesis 41:52) More details are available at Psalm11918.org",
+          "extra": {},
+          "name": "Ephraim (Genesis",
+          "refs": [
+            "Genesis 41:52"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "111",
+        "name": "Manasseh",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4861.009316770186,
+        "y": 1840,
+        "tooltipRaw": "Manasseh\n\n(1 Chronicles 3:13, Matthew 1:10)",
+        "initiallyVisible": true,
+        "hadCollapsedChildren": true,
+        "tooltipParsed": {
+          "raw": "Manasseh (1 Chronicles 3:13, Matthew 1:10)",
+          "extra": {},
+          "name": "Manasseh (",
+          "refs": [
+            "Matthew 1:10"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "112",
+        "name": "Joseph",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4968.594720496894,
+        "y": 1760,
+        "tooltipRaw": "Joseph\n\n(Luke 3:30)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Joseph (Luke 3:30)",
+          "extra": {},
+          "name": "Joseph (Luke",
+          "refs": [
+            "Luke 3:30"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "386",
+        "name": "Ammonites",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 55.52795031055901,
+        "y": 1760,
+        "tooltipRaw": "Ammonites\n\n(Genesis 19:38)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Ammonites (Genesis 19:38)",
+          "extra": {},
+          "name": "Ammonites (Genesis",
+          "refs": [
+            "Genesis 19:38"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "387",
+        "name": "Ben Ammi",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 55.52795031055901,
+        "y": 1680,
+        "tooltipRaw": "Ben Ammi\n\n(Genesis 19:38)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Ben Ammi (Genesis 19:38)",
+          "extra": {},
+          "name": "Ben Ammi (Genesis",
+          "refs": [
+            "Genesis 19:38"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "388",
+        "name": "Moabites",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 18.509316770186334,
+        "y": 1760,
+        "tooltipRaw": "Moabites\n\n(Genesis 19:37)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Moabites (Genesis 19:37)",
+          "extra": {},
+          "name": "Moabites (Genesis",
+          "refs": [
+            "Genesis 19:37"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "389",
+        "name": "Moab",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 18.509316770186334,
+        "y": 1680,
+        "tooltipRaw": "Moab\n\n(Genesis 19:37)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Moab (Genesis 19:37)",
+          "extra": {},
+          "name": "Moab (Genesis",
+          "refs": [
+            "Genesis 19:37"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "390",
+        "name": "Lot",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 37.01863354037267,
+        "y": 1600,
+        "tooltipRaw": "Lot\n\n(Genesis 11:27)\n\nLot and his family were the only ones saved from the destruction of Sodom and Gomorrah (Genesis 19:29)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Lot (Genesis 11:27) Lot and his family were the only ones saved from the destruction of Sodom and Gomorrah (Genesis 19:29)",
+          "extra": {},
+          "name": "Lot (Genesis",
+          "refs": [
+            "Genesis 11:27",
+            "Genesis 19:29"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "564",
+        "name": "Shuthelah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5057.670807453416,
+        "y": 2400,
+        "tooltipRaw": "(1 Chronicles 7:21)",
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 7:21)",
+          "extra": {}
+        },
+        "children": []
+      },
+      {
+        "id": "565",
+        "name": "Zabad",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5057.670807453416,
+        "y": 2320,
+        "tooltipRaw": "Zabad\n\n(1 Chronicles 2:36)",
+        "tooltipParsed": {
+          "raw": "Zabad (1 Chronicles 2:36)",
+          "extra": {},
+          "name": "Zabad ("
+        },
+        "children": []
+      },
+      {
+        "id": "566",
+        "name": "Tahath",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5057.670807453416,
+        "y": 2240,
+        "tooltipRaw": "(1 Chronicles 7:20)",
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 7:20)",
+          "extra": {}
+        },
+        "children": []
+      },
+      {
+        "id": "567",
+        "name": "Eleadah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5057.670807453416,
+        "y": 2160,
+        "tooltipRaw": "Eleadah\n\n(1 Chronicles 7:20)",
+        "tooltipParsed": {
+          "raw": "Eleadah (1 Chronicles 7:20)",
+          "extra": {},
+          "name": "Eleadah ("
+        },
+        "children": []
+      },
+      {
+        "id": "568",
+        "name": "Tahath",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5057.670807453416,
+        "y": 2080,
+        "tooltipRaw": "(1 Chronicles 7:20)",
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 7:20)",
+          "extra": {}
+        },
+        "children": []
+      },
+      {
+        "id": "569",
+        "name": "Bered",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5057.670807453416,
+        "y": 2000,
+        "tooltipRaw": "Bered\n\n(1 Chronicles 7:20)",
+        "tooltipParsed": {
+          "raw": "Bered (1 Chronicles 7:20)",
+          "extra": {},
+          "name": "Bered ("
+        },
+        "children": []
+      },
+      {
+        "id": "570",
+        "name": "Eranites",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5020.652173913043,
+        "y": 2080,
+        "tooltipRaw": "Eranites\n\n(Numbers 26:36)",
+        "tooltipParsed": {
+          "raw": "Eranites (Numbers 26:36)",
+          "extra": {},
+          "name": "Eranites (Numbers",
+          "refs": [
+            "Numbers 26:36"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "571",
+        "name": "Eran",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 5020.652173913043,
+        "y": 2000,
+        "tooltipRaw": "Eran\n\n(Numbers 26:36)",
+        "tooltipParsed": {
+          "raw": "Eran (Numbers 26:36)",
+          "extra": {},
+          "name": "Eran (Numbers",
+          "refs": [
+            "Numbers 26:36"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "572",
+        "name": "Rakem",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4983.633540372671,
+        "y": 2080,
+        "tooltipRaw": "Rakem\n\n(1 Chronicles 7:16)",
+        "tooltipParsed": {
+          "raw": "Rakem (1 Chronicles 7:16)",
+          "extra": {},
+          "name": "Rakem ("
+        },
+        "children": []
+      },
+      {
+        "id": "573",
+        "name": "Bedan",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4965.124223602485,
+        "y": 2160,
+        "tooltipRaw": "Bedan\n\n(1 Chronicles 7:17)",
+        "tooltipParsed": {
+          "raw": "Bedan (1 Chronicles 7:17)",
+          "extra": {},
+          "name": "Bedan ("
+        },
+        "children": []
+      },
+      {
+        "id": "574",
+        "name": "Ulam",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4965.124223602485,
+        "y": 2080,
+        "tooltipRaw": "Ulam\n\n(1 Chronicles 7:16)",
+        "tooltipParsed": {
+          "raw": "Ulam (1 Chronicles 7:16)",
+          "extra": {},
+          "name": "Ulam ("
+        },
+        "children": []
+      },
+      {
+        "id": "575",
+        "name": "Sheresh",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4974.378881987577,
+        "y": 2000,
+        "tooltipRaw": "Sheresh\n\n(1 Chronicles 7:16)",
+        "tooltipParsed": {
+          "raw": "Sheresh (1 Chronicles 7:16)",
+          "extra": {},
+          "name": "Sheresh ("
+        },
+        "children": []
+      },
+      {
+        "id": "576",
+        "name": "Peresh",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4941.987577639751,
+        "y": 2000,
+        "tooltipRaw": "Peresh\n\n(1 Chronicles 7:16)",
+        "tooltipParsed": {
+          "raw": "Peresh (1 Chronicles 7:16)",
+          "extra": {},
+          "name": "Peresh ("
+        },
+        "children": []
+      },
+      {
+        "id": "577",
+        "name": "Mahlah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4928.105590062111,
+        "y": 2080,
+        "tooltipRaw": "Mahlah\n\n(Numbers 27:1)",
+        "tooltipParsed": {
+          "raw": "Mahlah (Numbers 27:1)",
+          "extra": {},
+          "name": "Mahlah (Numbers",
+          "refs": [
+            "Numbers 27:1"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "578",
+        "name": "Abiezer",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4909.596273291926,
+        "y": 2080,
+        "tooltipRaw": "Abiezer\n\n(Joshua 17:2)",
+        "tooltipParsed": {
+          "raw": "Abiezer (Joshua 17:2)",
+          "extra": {},
+          "name": "Abiezer (Joshua",
+          "refs": [
+            "Joshua 17:2"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "579",
+        "name": "Ishod",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4891.086956521739,
+        "y": 2080,
+        "tooltipRaw": "Ishod\n\n(1 Chronicles 7:18)",
+        "tooltipParsed": {
+          "raw": "Ishod (1 Chronicles 7:18)",
+          "extra": {},
+          "name": "Ishod ("
+        },
+        "children": []
+      },
+      {
+        "id": "580",
+        "name": "Hammolecheth",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4909.596273291926,
+        "y": 2000,
+        "tooltipRaw": "Hammolecheth\n\n(1 Chronicles 7:18)",
+        "tooltipParsed": {
+          "raw": "Hammolecheth (1 Chronicles 7:18)",
+          "extra": {},
+          "name": "Hammolecheth ("
+        },
+        "children": []
+      },
+      {
+        "id": "581",
+        "name": "Tirzah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4891.086956521739,
+        "y": 2240,
+        "tooltipRaw": "Tirzah\n\n(Numbers 27:1)",
+        "tooltipParsed": {
+          "raw": "Tirzah (Numbers 27:1)",
+          "extra": {},
+          "name": "Tirzah (Numbers",
+          "refs": [
+            "Numbers 27:1"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "582",
+        "name": "Milcah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4872.577639751553,
+        "y": 2240,
+        "tooltipRaw": "Milcah\n\n(Numbers 27:1)",
+        "tooltipParsed": {
+          "raw": "Milcah (Numbers 27:1)",
+          "extra": {},
+          "name": "Milcah (Numbers",
+          "refs": [
+            "Numbers 27:1"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "583",
+        "name": "Hoglah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4854.068322981367,
+        "y": 2240,
+        "tooltipRaw": "Hoglah\n\n(Numbers 27:1)",
+        "tooltipParsed": {
+          "raw": "Hoglah (Numbers 27:1)",
+          "extra": {},
+          "name": "Hoglah (Numbers",
+          "refs": [
+            "Numbers 27:1"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "584",
+        "name": "Noah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4835.5590062111805,
+        "y": 2240,
+        "tooltipRaw": "(Numbers 27:1)",
+        "tooltipParsed": {
+          "raw": "(Numbers 27:1)",
+          "extra": {},
+          "refs": [
+            "Numbers 27:1"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "585",
+        "name": "Mahlah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4817.0496894409935,
+        "y": 2240,
+        "tooltipRaw": "(Numbers 27:1)",
+        "tooltipParsed": {
+          "raw": "(Numbers 27:1)",
+          "extra": {},
+          "refs": [
+            "Numbers 27:1"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "586",
+        "name": "Zelophehad",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4854.068322981367,
+        "y": 2160,
+        "tooltipRaw": "Zelophehad\n\n(Numbers 27:1)",
+        "tooltipParsed": {
+          "raw": "Zelophehad (Numbers 27:1)",
+          "extra": {},
+          "name": "Zelophehad (Numbers",
+          "refs": [
+            "Numbers 27:1"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "587",
+        "name": "Hepher",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4854.068322981367,
+        "y": 2080,
+        "tooltipRaw": "Hepher\n\n(1 Chronicles 4:6)",
+        "tooltipParsed": {
+          "raw": "Hepher (1 Chronicles 4:6)",
+          "extra": {},
+          "name": "Hepher ("
+        },
+        "children": []
+      },
+      {
+        "id": "588",
+        "name": "Jephthah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4780.031055900621,
+        "y": 2240,
+        "tooltipRaw": "Jephthah\n\n(Judges 10:3)\n\nAniam is a grandchild of Gilead and therefore a Gileadite.\n\nJephthah judged Israel six years.",
+        "tooltipParsed": {
+          "raw": "Jephthah (Judges 10:3) Aniam is a grandchild of Gilead and therefore a Gileadite. Jephthah judged Israel six years.",
+          "extra": {},
+          "name": "Jephthah (Judges",
+          "refs": [
+            "Judges 10:3"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "589",
+        "name": "Aniam",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4780.031055900621,
+        "y": 2160,
+        "tooltipRaw": "Aniam\n\n(1 Chronicles 7:19)",
+        "tooltipParsed": {
+          "raw": "Aniam (1 Chronicles 7:19)",
+          "extra": {},
+          "name": "Aniam ("
+        },
+        "children": []
+      },
+      {
+        "id": "590",
+        "name": "Likhi",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4761.521739130435,
+        "y": 2160,
+        "tooltipRaw": "Likhi\n\n(1 Chronicles 7:19)",
+        "tooltipParsed": {
+          "raw": "Likhi (1 Chronicles 7:19)",
+          "extra": {},
+          "name": "Likhi ("
+        },
+        "children": []
+      },
+      {
+        "id": "591",
+        "name": "Jair",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4743.012422360249,
+        "y": 2240,
+        "tooltipRaw": "(Judges 10:3) Shechem is a grandchild of Gilead and therefore a Gileadite. Jair judged Israel twenty-two years.",
+        "tooltipParsed": {
+          "raw": "(Judges 10:3) Shechem is a grandchild of Gilead and therefore a Gileadite. Jair judged Israel twenty-two years.",
+          "extra": {},
+          "refs": [
+            "Judges 10:3"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "592",
+        "name": "Shechem",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4743.012422360249,
+        "y": 2160,
+        "tooltipRaw": "Shechem\n\n(Joshua 17:2)",
+        "tooltipParsed": {
+          "raw": "Shechem (Joshua 17:2)",
+          "extra": {},
+          "name": "Shechem (Joshua",
+          "refs": [
+            "Joshua 17:2"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "593",
+        "name": "Ahian",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4724.503105590062,
+        "y": 2160,
+        "tooltipRaw": "Ahian\n\n(1 Chronicles 7:19)",
+        "tooltipParsed": {
+          "raw": "Ahian (1 Chronicles 7:19)",
+          "extra": {},
+          "name": "Ahian ("
+        },
+        "children": []
+      },
+      {
+        "id": "594",
+        "name": "Shemida",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4752.267080745341,
+        "y": 2080,
+        "tooltipRaw": "Shemida\n\n(Joshua 17:2)",
+        "tooltipParsed": {
+          "raw": "Shemida (Joshua 17:2)",
+          "extra": {},
+          "name": "Shemida (Joshua",
+          "refs": [
+            "Joshua 17:2"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "595",
+        "name": "Shechem",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4733.757763975155,
+        "y": 2080,
+        "tooltipRaw": "(Joshua 17:2)",
+        "tooltipParsed": {
+          "raw": "(Joshua 17:2)",
+          "extra": {},
+          "refs": [
+            "Joshua 17:2"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "596",
+        "name": "Asriel",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4715.248447204969,
+        "y": 2080,
+        "tooltipRaw": "Asriel\n\n(1 Chronicles 7:14)",
+        "tooltipParsed": {
+          "raw": "Asriel (1 Chronicles 7:14)",
+          "extra": {},
+          "name": "Asriel ("
+        },
+        "children": []
+      },
+      {
+        "id": "597",
+        "name": "Helek",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4696.739130434782,
+        "y": 2080,
+        "tooltipRaw": "Helek\n\n(Joshua 17:2)",
+        "tooltipParsed": {
+          "raw": "Helek (Joshua 17:2)",
+          "extra": {},
+          "name": "Helek (Joshua",
+          "refs": [
+            "Joshua 17:2"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "598",
+        "name": "Gideon",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4678.229813664596,
+        "y": 2320,
+        "tooltipRaw": "Gideon\n\n(Judges 6:11)",
+        "tooltipParsed": {
+          "raw": "Gideon (Judges 6:11)",
+          "extra": {},
+          "name": "Gideon (Judges",
+          "refs": [
+            "Judges 6:11"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "599",
+        "name": "Joash",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4678.229813664596,
+        "y": 2240,
+        "tooltipRaw": "(Judges 6:11)",
+        "tooltipParsed": {
+          "raw": "(Judges 6:11)",
+          "extra": {},
+          "refs": [
+            "Judges 6:11"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "600",
+        "name": "Abiezrites",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4678.229813664596,
+        "y": 2160,
+        "tooltipRaw": "Abiezrites\n\n(Judges 6:11)\n\nAlthough Judges 6 mentions 'Abiezrites', it is not known if it is THIS Abiezer or the son of Hammolecheth from which they derive.",
+        "tooltipParsed": {
+          "raw": "Abiezrites (Judges 6:11) Although Judges 6 mentions 'Abiezrites', it is not known if it is THIS Abiezer or the son of Hammolecheth from which they derive.",
+          "extra": {},
+          "name": "Abiezrites (Judges",
+          "refs": [
+            "Judges 6:11"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "601",
+        "name": "Abiezer",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4678.229813664596,
+        "y": 2080,
+        "tooltipRaw": "(Joshua 17:2)",
+        "tooltipParsed": {
+          "raw": "(Joshua 17:2)",
+          "extra": {},
+          "refs": [
+            "Joshua 17:2"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "602",
+        "name": "Gilead",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4766.149068322981,
+        "y": 2000,
+        "tooltipRaw": "Gilead\n\n(1 Chronicles 7:14)",
+        "tooltipParsed": {
+          "raw": "Gilead (1 Chronicles 7:14)",
+          "extra": {},
+          "name": "Gilead ("
+        },
+        "children": []
+      },
+      {
+        "id": "603",
+        "name": "Machir",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4870.26397515528,
+        "y": 1920,
+        "tooltipRaw": "Machir\n\nSpouse: Maacah (1 Chronicles 7:16)\n \n\n(1 Chronicles 7:14)",
+        "tooltipParsed": {
+          "raw": "Machir Spouse: Maacah (1 Chronicles 7:16) (1 Chronicles 7:14)",
+          "extra": {
+            "Machir Spouse": "Maacah (1 Chronicles 7:16) (1 Chronicles 7:14)"
+          },
+          "name": "Machir Spouse",
+          "spouse": "Maacah (1 Chronicles 7:16) (1 Chronicles 7:14)"
+        },
+        "children": []
+      },
+      {
+        "id": "604",
+        "name": "Asriel",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 4851.754658385093,
+        "y": 1920,
+        "tooltipRaw": "(1 Chronicles 7:14)",
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 7:14)",
+          "extra": {}
+        },
+        "children": []
+      }
+    ]
+  },
+  "stats": {
+    "nodes": 64
+  }
+}

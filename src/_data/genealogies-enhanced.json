@@ -1,0 +1,984 @@
+{
+  "persons": {
+    "adam": {
+      "id": "adam",
+      "name": "Adam",
+      "aliases": ["The First Man"],
+      "meaning": "Man, mankind, from adamah (ground)",
+      "roles": ["first_man", "covenant_head"],
+      "references": ["Gen 1:27", "Gen 2:7", "Gen 2:19-20", "Gen 5:1-2"],
+      "cluster": "primeval",
+      "covenantLine": true,
+      "theologicalNote": "First covenant head, federal representative of humanity, prophetic recipient of the protoevangelium (Gen 3:15)"
+    },
+    "eve": {
+      "id": "eve",
+      "name": "Eve",
+      "aliases": ["The Mother of All Living"],
+      "meaning": "Living, life-giver",
+      "roles": ["first_woman", "mother"],
+      "references": ["Gen 2:22", "Gen 3:20", "Gen 4:1"],
+      "cluster": "primeval",
+      "covenantLine": true,
+      "theologicalNote": "Mother of all humanity, recipient of the protoevangelium promise"
+    },
+    "cain": {
+      "id": "cain",
+      "name": "Cain",
+      "meaning": "Acquired, possession",
+      "roles": ["firstborn", "murderer", "city_builder"],
+      "references": ["Gen 4:1", "Gen 4:8", "Gen 4:17"],
+      "cluster": "primeval",
+      "covenantLine": false,
+      "theologicalNote": "First murderer, established the line of civilization apart from God"
+    },
+    "enoch_cain_son": {
+      "id": "enoch_cain_son",
+      "name": "Enoch",
+      "aliases": ["Cain's son"],
+      "meaning": "Dedicated",
+      "roles": ["city_namesake"],
+      "references": ["Gen 4:17"],
+      "cluster": "cains_line",
+      "covenantLine": false,
+      "theologicalNote": "First city named after him, representing human civilization apart from God"
+    },
+    "irad": {
+      "id": "irad",
+      "name": "Irad",
+      "meaning": "Fleet, swift",
+      "roles": ["descendant_of_cain"],
+      "references": ["Gen 4:18"],
+      "cluster": "cains_line",
+      "covenantLine": false,
+      "theologicalNote": "Part of Cain's genealogy showing human progression"
+    },
+    "mehujael": {
+      "id": "mehujael",
+      "name": "Mehujael",
+      "meaning": "Smitten of God",
+      "roles": ["descendant_of_cain"],
+      "references": ["Gen 4:18"],
+      "cluster": "cains_line",
+      "covenantLine": false,
+      "theologicalNote": "Continues Cain's line of civilization"
+    },
+    "methushael": {
+      "id": "methushael",
+      "name": "Methushael",
+      "meaning": "Man of God",
+      "roles": ["descendant_of_cain"],
+      "references": ["Gen 4:18"],
+      "cluster": "cains_line",
+      "covenantLine": false,
+      "theologicalNote": "Grandfather of Lamech in Cain's line"
+    },
+    "lamech_cain": {
+      "id": "lamech_cain",
+      "name": "Lamech",
+      "aliases": ["Lamech the Violent"],
+      "meaning": "Powerful, wild man",
+      "roles": ["polygamist", "violent_man", "father_of_civilization"],
+      "references": ["Gen 4:19-24"],
+      "cluster": "cains_line",
+      "covenantLine": false,
+      "theologicalNote": "First polygamist, boastful of violence, father of cultural achievements"
+    },
+    "jabal": {
+      "id": "jabal",
+      "name": "Jabal",
+      "meaning": "Stream, moving",
+      "roles": ["father_of_nomads", "livestock_keeper"],
+      "references": ["Gen 4:20"],
+      "cluster": "cains_line",
+      "covenantLine": false,
+      "theologicalNote": "Father of those who dwell in tents and raise livestock"
+    },
+    "jubal": {
+      "id": "jubal",
+      "name": "Jubal",
+      "meaning": "Music, sound",
+      "roles": ["father_of_musicians"],
+      "references": ["Gen 4:21"],
+      "cluster": "cains_line",
+      "covenantLine": false,
+      "theologicalNote": "Father of all who play the harp and flute, inventor of music"
+    },
+    "tubal_cain": {
+      "id": "tubal_cain",
+      "name": "Tubal-Cain",
+      "meaning": "You will be brought of Cain",
+      "roles": ["metalworker", "inventor"],
+      "references": ["Gen 4:22"],
+      "cluster": "cains_line",
+      "covenantLine": false,
+      "theologicalNote": "Forger of bronze and iron instruments, technological advancement"
+    },
+    "naamah": {
+      "id": "naamah",
+      "name": "Naamah",
+      "meaning": "Pleasant, beautiful",
+      "roles": ["sister"],
+      "references": ["Gen 4:22"],
+      "cluster": "cains_line",
+      "covenantLine": false,
+      "theologicalNote": "Sister of Tubal-Cain, representing beauty in Cain's line"
+    },
+    "abel": {
+      "id": "abel",
+      "name": "Abel",
+      "meaning": "Breath, vapor",
+      "roles": ["shepherd", "martyr"],
+      "references": ["Gen 4:2", "Gen 4:4", "Heb 11:4"],
+      "cluster": "primeval",
+      "covenantLine": false,
+      "theologicalNote": "First martyr, righteous offering accepted by God, prototype of faithful worship"
+    },
+    "seth": {
+      "id": "seth",
+      "name": "Seth",
+      "meaning": "Appointed, set",
+      "roles": ["covenant_heir"],
+      "references": ["Gen 4:25", "Gen 5:3"],
+      "cluster": "primeval",
+      "covenantLine": true,
+      "theologicalNote": "Appointed replacement for Abel, through whom the covenant line continues"
+    },
+    "enosh": {
+      "id": "enosh",
+      "name": "Enosh",
+      "meaning": "Mortal man, frail",
+      "roles": ["covenant_heir"],
+      "references": ["Gen 4:26", "Gen 5:6"],
+      "cluster": "primeval",
+      "covenantLine": true,
+      "theologicalNote": "In his time, people began to call upon the name of the Lord"
+    },
+    "kenan": {
+      "id": "kenan",
+      "name": "Kenan",
+      "meaning": "Sorrow, possession",
+      "roles": ["covenant_heir"],
+      "references": ["Gen 5:9"],
+      "cluster": "primeval",
+      "covenantLine": true,
+      "theologicalNote": "Continued the godly line toward Noah"
+    },
+    "mahalalel": {
+      "id": "mahalalel",
+      "name": "Mahalalel",
+      "meaning": "Praise of God",
+      "roles": ["covenant_heir"],
+      "references": ["Gen 5:12"],
+      "cluster": "primeval",
+      "covenantLine": true,
+      "theologicalNote": "His name means praise of God, showing faith in the godly line"
+    },
+    "jared": {
+      "id": "jared",
+      "name": "Jared",
+      "meaning": "Descent",
+      "roles": ["covenant_heir"],
+      "references": ["Gen 5:15"],
+      "cluster": "primeval",
+      "covenantLine": true,
+      "theologicalNote": "Father of Enoch who walked with God"
+    },
+    "enoch_godly": {
+      "id": "enoch_godly",
+      "name": "Enoch",
+      "meaning": "Dedicated",
+      "roles": ["prophet", "translated_one"],
+      "references": ["Gen 5:21", "Gen 5:24", "Heb 11:5", "Jude 14"],
+      "cluster": "primeval",
+      "covenantLine": true,
+      "theologicalNote": "Walked with God and was translated; first prophet mentioned by name"
+    },
+    "methuselah": {
+      "id": "methuselah",
+      "name": "Methuselah",
+      "meaning": "Man of the dart/javelin, or When he dies it shall come",
+      "roles": ["oldest_man"],
+      "references": ["Gen 5:25", "Gen 5:27"],
+      "cluster": "primeval",
+      "covenantLine": true,
+      "theologicalNote": "Oldest recorded human (969 years), died the year of the flood"
+    },
+    "lamech_noah": {
+      "id": "lamech_noah",
+      "name": "Lamech",
+      "aliases": ["Lamech the Righteous"],
+      "meaning": "Powerful",
+      "roles": ["father_of_comfort"],
+      "references": ["Gen 5:28-29"],
+      "cluster": "primeval",
+      "covenantLine": true,
+      "theologicalNote": "Prophesied that Noah would bring comfort from the curse on the ground"
+    },
+    "noah": {
+      "id": "noah",
+      "name": "Noah",
+      "meaning": "Rest, comfort",
+      "roles": ["righteous_remnant", "ark_builder", "covenant_head"],
+      "references": ["Gen 5:29", "Gen 6:9", "Gen 8:20", "Gen 9:1-17"],
+      "cluster": "primeval",
+      "covenantLine": true,
+      "theologicalNote": "Covenant head of new humanity, recipient of the Noahic covenant, righteous remnant"
+    },
+    "shem": {
+      "id": "shem",
+      "name": "Shem",
+      "meaning": "Name, renown",
+      "roles": ["blessed_son", "covenant_heir"],
+      "references": ["Gen 5:32", "Gen 9:26", "Gen 10:1"],
+      "cluster": "table_of_nations",
+      "covenantLine": true,
+      "theologicalNote": "Blessed son through whom the covenant line continues, ancestor of Semitic peoples"
+    },
+    "ham": {
+      "id": "ham",
+      "name": "Ham",
+      "meaning": "Hot, warm",
+      "roles": ["cursed_son", "father_of_nations"],
+      "references": ["Gen 5:32", "Gen 9:22", "Gen 10:6"],
+      "cluster": "table_of_nations",
+      "covenantLine": false,
+      "theologicalNote": "Father of Canaan who was cursed, ancestor of African and Middle Eastern peoples"
+    },
+    "japheth": {
+      "id": "japheth",
+      "name": "Japheth",
+      "meaning": "Enlargement, beauty",
+      "roles": ["blessed_son", "father_of_nations"],
+      "references": ["Gen 5:32", "Gen 9:27", "Gen 10:2"],
+      "cluster": "table_of_nations",
+      "covenantLine": false,
+      "theologicalNote": "Enlarged and dwelling in tents of Shem, ancestor of European peoples"
+    },
+    "abraham": {
+      "id": "abraham",
+      "name": "Abraham",
+      "aliases": ["Abram"],
+      "meaning": "Father of many nations (from Abram: exalted father)",
+      "roles": ["patriarch", "covenant_head", "father_of_faith"],
+      "references": ["Gen 12:1-3", "Gen 15:1-21", "Gen 17:1-22", "Rom 4:16"],
+      "cluster": "patriarchs",
+      "covenantLine": true,
+      "theologicalNote": "Father of the faithful, recipient of the Abrahamic covenant, through whom all nations are blessed"
+    },
+    "isaac": {
+      "id": "isaac",
+      "name": "Isaac",
+      "meaning": "Laughter, he laughs",
+      "roles": ["patriarch", "covenant_heir", "promised_son"],
+      "references": ["Gen 17:19", "Gen 21:3", "Gen 26:3-4"],
+      "cluster": "patriarchs",
+      "covenantLine": true,
+      "theologicalNote": "Son of promise, type of Christ in the binding of Isaac, covenant heir"
+    },
+    "ishmael": {
+      "id": "ishmael",
+      "name": "Ishmael",
+      "meaning": "God hears",
+      "roles": ["son_of_abraham", "archer"],
+      "references": ["Gen 16:11", "Gen 17:20", "Gen 21:20"],
+      "cluster": "patriarchs",
+      "covenantLine": false,
+      "outsider": true,
+      "theologicalNote": "Son of the flesh, father of Arab nations, blessed but not covenant heir"
+    },
+    "jacob": {
+      "id": "jacob",
+      "name": "Jacob",
+      "aliases": ["Israel"],
+      "meaning": "Supplanter, heel-holder (Jacob); He wrestles with God (Israel)",
+      "roles": ["patriarch", "covenant_heir", "father_of_tribes"],
+      "references": ["Gen 25:26", "Gen 28:13-15", "Gen 32:28", "Gen 35:10"],
+      "cluster": "patriarchs",
+      "covenantLine": true,
+      "theologicalNote": "Covenant heir, father of the twelve tribes, transformed by God's grace"
+    },
+    "esau": {
+      "id": "esau",
+      "name": "Esau",
+      "aliases": ["Edom"],
+      "meaning": "Hairy, rough",
+      "roles": ["twin_brother", "hunter"],
+      "references": ["Gen 25:25", "Gen 25:30", "Gen 36:1"],
+      "cluster": "patriarchs",
+      "covenantLine": false,
+      "theologicalNote": "Rejected covenant blessing, father of Edomites, represents the flesh"
+    },
+    "reuben": {
+      "id": "reuben",
+      "name": "Reuben",
+      "meaning": "See, a son",
+      "roles": ["tribal_patriarch", "firstborn"],
+      "references": ["Gen 29:32", "Gen 49:3-4"],
+      "cluster": "twelve_tribes",
+      "covenantLine": false,
+      "theologicalNote": "Firstborn but lost birthright due to sin, tribe settled east of Jordan"
+    },
+    "simeon": {
+      "id": "simeon",
+      "name": "Simeon",
+      "meaning": "Hearing",
+      "roles": ["tribal_patriarch"],
+      "references": ["Gen 29:33", "Gen 49:5-7"],
+      "cluster": "twelve_tribes",
+      "covenantLine": false,
+      "theologicalNote": "Violent with Levi at Shechem, tribe scattered in Israel"
+    },
+    "levi": {
+      "id": "levi",
+      "name": "Levi",
+      "meaning": "Joined, attached",
+      "roles": ["tribal_patriarch", "priestly_line"],
+      "references": ["Gen 29:34", "Exod 32:26-29", "Num 3:6"],
+      "cluster": "twelve_tribes",
+      "covenantLine": false,
+      "priestly": true,
+      "theologicalNote": "Priestly tribe, set apart for service to God, zealous for God's honor"
+    },
+    "judah": {
+      "id": "judah",
+      "name": "Judah",
+      "meaning": "Praise",
+      "roles": ["tribal_patriarch", "royal_line"],
+      "references": ["Gen 29:35", "Gen 49:10", "1 Chr 5:2"],
+      "cluster": "twelve_tribes",
+      "covenantLine": true,
+      "theologicalNote": "Royal tribe, holder of the scepter promise, messianic line"
+    },
+    "dan": {
+      "id": "dan",
+      "name": "Dan",
+      "meaning": "Judge",
+      "roles": ["tribal_patriarch"],
+      "references": ["Gen 30:6", "Gen 49:16-17"],
+      "cluster": "twelve_tribes",
+      "covenantLine": false,
+      "theologicalNote": "Tribe of judges, settled in north and south of Israel"
+    },
+    "naphtali": {
+      "id": "naphtali",
+      "name": "Naphtali",
+      "meaning": "Wrestling",
+      "roles": ["tribal_patriarch"],
+      "references": ["Gen 30:8", "Gen 49:21"],
+      "cluster": "twelve_tribes",
+      "covenantLine": false,
+      "theologicalNote": "Tribe in northern Israel, known for agility and beautiful words"
+    },
+    "gad": {
+      "id": "gad",
+      "name": "Gad",
+      "meaning": "Fortune, troop",
+      "roles": ["tribal_patriarch"],
+      "references": ["Gen 30:11", "Gen 49:19"],
+      "cluster": "twelve_tribes",
+      "covenantLine": false,
+      "theologicalNote": "Warrior tribe, settled east of Jordan"
+    },
+    "asher": {
+      "id": "asher",
+      "name": "Asher",
+      "meaning": "Happy, blessed",
+      "roles": ["tribal_patriarch"],
+      "references": ["Gen 30:13", "Gen 49:20"],
+      "cluster": "twelve_tribes",
+      "covenantLine": false,
+      "theologicalNote": "Tribe blessed with abundance, rich food and royal delicacies"
+    },
+    "issachar": {
+      "id": "issachar",
+      "name": "Issachar",
+      "meaning": "Reward, wages",
+      "roles": ["tribal_patriarch"],
+      "references": ["Gen 30:18", "Gen 49:14-15"],
+      "cluster": "twelve_tribes",
+      "covenantLine": false,
+      "theologicalNote": "Strong tribe that understood the times, willing to serve"
+    },
+    "zebulun": {
+      "id": "zebulun",
+      "name": "Zebulun",
+      "meaning": "Dwelling",
+      "roles": ["tribal_patriarch"],
+      "references": ["Gen 30:20", "Gen 49:13"],
+      "cluster": "twelve_tribes",
+      "covenantLine": false,
+      "theologicalNote": "Seafaring tribe, dwelling at the haven of ships"
+    },
+    "joseph": {
+      "id": "joseph",
+      "name": "Joseph",
+      "meaning": "He will add",
+      "roles": ["tribal_patriarch", "dreamer", "savior"],
+      "references": ["Gen 30:24", "Gen 37:5", "Gen 50:20"],
+      "cluster": "twelve_tribes",
+      "covenantLine": false,
+      "theologicalNote": "Type of Christ, saved Israel from famine, father of Ephraim and Manasseh"
+    },
+    "benjamin": {
+      "id": "benjamin",
+      "name": "Benjamin",
+      "meaning": "Son of the right hand",
+      "roles": ["tribal_patriarch", "beloved"],
+      "references": ["Gen 35:18", "Gen 49:27"],
+      "cluster": "twelve_tribes",
+      "covenantLine": false,
+      "theologicalNote": "Beloved youngest son, warrior tribe, tribe of King Saul"
+    },
+    "perez": {
+      "id": "perez",
+      "name": "Perez",
+      "meaning": "Breach, bursting forth",
+      "roles": ["ancestor_of_david"],
+      "references": ["Gen 38:29", "Ruth 4:18", "Matt 1:3"],
+      "cluster": "royal_line",
+      "covenantLine": true,
+      "theologicalNote": "Son of Judah and Tamar, ancestor of David, represents breakthrough"
+    },
+    "boaz": {
+      "id": "boaz",
+      "name": "Boaz",
+      "meaning": "In him is strength",
+      "roles": ["kinsman_redeemer", "landowner"],
+      "references": ["Ruth 2:1", "Ruth 4:13", "Matt 1:5"],
+      "cluster": "royal_line",
+      "covenantLine": true,
+      "theologicalNote": "Kinsman-redeemer, type of Christ as Redeemer, ancestor of David"
+    },
+    "ruth": {
+      "id": "ruth",
+      "name": "Ruth",
+      "meaning": "Friendship, companion",
+      "roles": ["moabitess", "loyal_daughter"],
+      "references": ["Ruth 1:16", "Ruth 4:13", "Matt 1:5"],
+      "cluster": "royal_line",
+      "covenantLine": true,
+      "outsider": true,
+      "theologicalNote": "Gentile woman grafted into covenant line, model of faithful loyalty"
+    },
+    "obed": {
+      "id": "obed",
+      "name": "Obed",
+      "meaning": "Servant, worshipper",
+      "roles": ["grandfather_of_david"],
+      "references": ["Ruth 4:17", "Matt 1:5"],
+      "cluster": "royal_line",
+      "covenantLine": true,
+      "theologicalNote": "Son of Boaz and Ruth, grandfather of David"
+    },
+    "jesse": {
+      "id": "jesse",
+      "name": "Jesse",
+      "meaning": "Wealthy, gift",
+      "roles": ["father_of_david"],
+      "references": ["1 Sam 16:1", "Isa 11:1", "Matt 1:5"],
+      "cluster": "royal_line",
+      "covenantLine": true,
+      "theologicalNote": "Father of David, root from which the Branch (Messiah) springs"
+    },
+    "david": {
+      "id": "david",
+      "name": "David",
+      "meaning": "Beloved",
+      "roles": ["king", "psalmist", "man_after_gods_heart"],
+      "references": ["1 Sam 16:13", "2 Sam 7:12-16", "Acts 13:22"],
+      "cluster": "royal_line",
+      "covenantLine": true,
+      "theologicalNote": "Ideal king, recipient of Davidic covenant, type of the Messiah"
+    },
+    "solomon": {
+      "id": "solomon",
+      "name": "Solomon",
+      "meaning": "Peace",
+      "roles": ["king", "temple_builder", "wise_man"],
+      "references": ["2 Sam 12:24", "1 Kgs 3:12", "1 Kgs 6:1"],
+      "cluster": "royal_line",
+      "covenantLine": true,
+      "theologicalNote": "Wisest king, temple builder, type of Messiah's peaceful reign"
+    },
+    "nathan_son": {
+      "id": "nathan_son",
+      "name": "Nathan",
+      "meaning": "Gift",
+      "roles": ["son_of_david"],
+      "references": ["2 Sam 5:14", "1 Chr 3:5", "Luke 3:31"],
+      "cluster": "royal_line",
+      "covenantLine": true,
+      "theologicalNote": "Son of David through whom Luke traces Jesus' genealogy"
+    },
+    "zerubbabel": {
+      "id": "zerubbabel",
+      "name": "Zerubbabel",
+      "meaning": "Seed of Babylon",
+      "roles": ["post_exilic_leader", "temple_rebuilder"],
+      "references": ["Ezra 3:2", "Hag 2:23", "Matt 1:12"],
+      "cluster": "post_exile",
+      "covenantLine": true,
+      "theologicalNote": "Led return from exile, rebuilt temple, signet ring of the Lord"
+    },
+    "joseph_husband": {
+      "id": "joseph_husband",
+      "name": "Joseph",
+      "meaning": "He will add",
+      "roles": ["carpenter", "guardian", "righteous_man"],
+      "references": ["Matt 1:16", "Matt 1:19", "Luke 3:23"],
+      "cluster": "messianic_line",
+      "covenantLine": true,
+      "theologicalNote": "Legal father of Jesus, righteous man, descendant of David"
+    },
+    "jesus": {
+      "id": "jesus",
+      "name": "Jesus",
+      "aliases": ["Christ", "Messiah", "Son of David", "Son of God"],
+      "meaning": "Yahweh saves",
+      "roles": ["messiah", "king", "priest", "prophet", "redeemer"],
+      "references": ["Matt 1:1", "Luke 1:32", "Heb 7:14", "Rev 5:5"],
+      "cluster": "messianic_line",
+      "covenantLine": true,
+      "theologicalNote": "Fulfillment of all covenant promises, eternal King, perfect sacrifice, God incarnate"
+    }
+  },
+  "relations": {
+    "adam_eve": {
+      "from": "adam",
+      "to": "eve",
+      "type": "marriage",
+      "references": ["Gen 2:23-24"]
+    },
+    "adam_cain": {
+      "from": "adam",
+      "to": "cain",
+      "type": "blood",
+      "references": ["Gen 4:1"]
+    },
+    "adam_abel": {
+      "from": "adam",
+      "to": "abel",
+      "type": "blood",
+      "references": ["Gen 4:2"]
+    },
+    "adam_seth": {
+      "from": "adam",
+      "to": "seth",
+      "type": "blood",
+      "references": ["Gen 4:25"]
+    },
+    "cain_enoch": {
+      "from": "cain",
+      "to": "enoch_cain_son",
+      "type": "blood",
+      "references": ["Gen 4:17"]
+    },
+    "enoch_irad": {
+      "from": "enoch_cain_son",
+      "to": "irad",
+      "type": "blood",
+      "references": ["Gen 4:18"]
+    },
+    "irad_mehujael": {
+      "from": "irad",
+      "to": "mehujael",
+      "type": "blood",
+      "references": ["Gen 4:18"]
+    },
+    "mehujael_methushael": {
+      "from": "mehujael",
+      "to": "methushael",
+      "type": "blood",
+      "references": ["Gen 4:18"]
+    },
+    "methushael_lamech": {
+      "from": "methushael",
+      "to": "lamech_cain",
+      "type": "blood",
+      "references": ["Gen 4:18"]
+    },
+    "lamech_jabal": {
+      "from": "lamech_cain",
+      "to": "jabal",
+      "type": "blood",
+      "references": ["Gen 4:20"]
+    },
+    "lamech_jubal": {
+      "from": "lamech_cain",
+      "to": "jubal",
+      "type": "blood",
+      "references": ["Gen 4:21"]
+    },
+    "lamech_tubal": {
+      "from": "lamech_cain",
+      "to": "tubal_cain",
+      "type": "blood",
+      "references": ["Gen 4:22"]
+    },
+    "lamech_naamah": {
+      "from": "lamech_cain",
+      "to": "naamah",
+      "type": "blood",
+      "references": ["Gen 4:22"]
+    },
+    "seth_enosh": {
+      "from": "seth",
+      "to": "enosh",
+      "type": "blood",
+      "references": ["Gen 4:26"]
+    },
+    "enosh_kenan": {
+      "from": "enosh",
+      "to": "kenan",
+      "type": "blood",
+      "references": ["Gen 5:9"]
+    },
+    "kenan_mahalalel": {
+      "from": "kenan",
+      "to": "mahalalel",
+      "type": "blood",
+      "references": ["Gen 5:12"]
+    },
+    "mahalalel_jared": {
+      "from": "mahalalel",
+      "to": "jared",
+      "type": "blood",
+      "references": ["Gen 5:15"]
+    },
+    "jared_enoch": {
+      "from": "jared",
+      "to": "enoch_godly",
+      "type": "blood",
+      "references": ["Gen 5:18"]
+    },
+    "enoch_methuselah": {
+      "from": "enoch_godly",
+      "to": "methuselah",
+      "type": "blood",
+      "references": ["Gen 5:21"]
+    },
+    "methuselah_lamech": {
+      "from": "methuselah",
+      "to": "lamech_noah",
+      "type": "blood",
+      "references": ["Gen 5:25"]
+    },
+    "lamech_noah_rel": {
+      "from": "lamech_noah",
+      "to": "noah",
+      "type": "blood",
+      "references": ["Gen 5:28"]
+    },
+    "noah_shem": {
+      "from": "noah",
+      "to": "shem",
+      "type": "blood",
+      "references": ["Gen 5:32"]
+    },
+    "noah_ham": {
+      "from": "noah",
+      "to": "ham",
+      "type": "blood",
+      "references": ["Gen 5:32"]
+    },
+    "noah_japheth": {
+      "from": "noah",
+      "to": "japheth",
+      "type": "blood",
+      "references": ["Gen 5:32"]
+    },
+    "abraham_isaac": {
+      "from": "abraham",
+      "to": "isaac",
+      "type": "blood",
+      "references": ["Gen 21:3"]
+    },
+    "abraham_ishmael": {
+      "from": "abraham",
+      "to": "ishmael",
+      "type": "blood",
+      "references": ["Gen 16:15"]
+    },
+    "isaac_jacob": {
+      "from": "isaac",
+      "to": "jacob",
+      "type": "blood",
+      "references": ["Gen 25:26"]
+    },
+    "isaac_esau": {
+      "from": "isaac",
+      "to": "esau",
+      "type": "blood",
+      "references": ["Gen 25:25"]
+    },
+    "jacob_reuben": {
+      "from": "jacob",
+      "to": "reuben",
+      "type": "blood",
+      "references": ["Gen 29:32"]
+    },
+    "jacob_simeon": {
+      "from": "jacob",
+      "to": "simeon",
+      "type": "blood",
+      "references": ["Gen 29:33"]
+    },
+    "jacob_levi": {
+      "from": "jacob",
+      "to": "levi",
+      "type": "blood",
+      "references": ["Gen 29:34"]
+    },
+    "jacob_judah": {
+      "from": "jacob",
+      "to": "judah",
+      "type": "blood",
+      "references": ["Gen 29:35"]
+    },
+    "jacob_dan": {
+      "from": "jacob",
+      "to": "dan",
+      "type": "blood",
+      "references": ["Gen 30:6"]
+    },
+    "jacob_naphtali": {
+      "from": "jacob",
+      "to": "naphtali",
+      "type": "blood",
+      "references": ["Gen 30:8"]
+    },
+    "jacob_gad": {
+      "from": "jacob",
+      "to": "gad",
+      "type": "blood",
+      "references": ["Gen 30:11"]
+    },
+    "jacob_asher": {
+      "from": "jacob",
+      "to": "asher",
+      "type": "blood",
+      "references": ["Gen 30:13"]
+    },
+    "jacob_issachar": {
+      "from": "jacob",
+      "to": "issachar",
+      "type": "blood",
+      "references": ["Gen 30:18"]
+    },
+    "jacob_zebulun": {
+      "from": "jacob",
+      "to": "zebulun",
+      "type": "blood",
+      "references": ["Gen 30:20"]
+    },
+    "jacob_joseph": {
+      "from": "jacob",
+      "to": "joseph",
+      "type": "blood",
+      "references": ["Gen 30:24"]
+    },
+    "jacob_benjamin": {
+      "from": "jacob",
+      "to": "benjamin",
+      "type": "blood",
+      "references": ["Gen 35:18"]
+    },
+    "judah_perez": {
+      "from": "judah",
+      "to": "perez",
+      "type": "blood",
+      "references": ["Gen 38:29"]
+    },
+    "boaz_ruth": {
+      "from": "boaz",
+      "to": "ruth",
+      "type": "marriage",
+      "references": ["Ruth 4:13"]
+    },
+    "boaz_obed": {
+      "from": "boaz",
+      "to": "obed",
+      "type": "blood",
+      "references": ["Ruth 4:17"]
+    },
+    "obed_jesse": {
+      "from": "obed",
+      "to": "jesse",
+      "type": "blood",
+      "references": ["Ruth 4:22"]
+    },
+    "jesse_david": {
+      "from": "jesse",
+      "to": "david",
+      "type": "blood",
+      "references": ["1 Sam 16:1"]
+    },
+    "david_solomon": {
+      "from": "david",
+      "to": "solomon",
+      "type": "blood",
+      "references": ["2 Sam 12:24"]
+    },
+    "david_nathan": {
+      "from": "david",
+      "to": "nathan_son",
+      "type": "blood",
+      "references": ["2 Sam 5:14"]
+    },
+    "joseph_jesus": {
+      "from": "joseph_husband",
+      "to": "jesus",
+      "type": "legal",
+      "references": ["Matt 1:16"]
+    }
+  },
+  "clusters": {
+    "primeval": {
+      "id": "primeval",
+      "name": "Primeval Period",
+      "description": "From Adam through Noah to the nations",
+      "period": "Creation to c. 2000 BC",
+      "keyThemes": ["Creation", "Fall", "Flood", "Nations"],
+      "persons": ["adam", "eve", "seth", "enosh", "kenan", "mahalalel", "jared", "enoch_godly", "methuselah", "lamech_noah", "noah"],
+      "covenants": ["Adamic", "Noahic"]
+    },
+    "cains_line": {
+      "id": "cains_line",
+      "name": "Cain's Line",
+      "description": "The line of Cain showing human civilization apart from God",
+      "period": "c. 4000-3000 BC",
+      "keyThemes": ["Violence", "Civilization", "Technology", "Culture"],
+      "persons": ["cain", "enoch_cain_son", "irad", "mehujael", "methushael", "lamech_cain", "jabal", "jubal", "tubal_cain", "naamah"],
+      "covenants": []
+    },
+    "table_of_nations": {
+      "id": "table_of_nations",
+      "name": "Table of Nations",
+      "description": "Noah's sons and the 70 nations",
+      "period": "c. 2500-2000 BC",
+      "keyThemes": ["Dispersion", "Languages", "Nations", "Geography"],
+      "persons": ["noah", "shem", "ham", "japheth"],
+      "covenants": ["Noahic"]
+    },
+    "patriarchs": {
+      "id": "patriarchs",
+      "name": "Patriarchal Period",
+      "description": "Abraham, Isaac, and Jacob - the founding fathers",
+      "period": "c. 2000-1600 BC",
+      "keyThemes": ["Promise", "Faith", "Covenant", "Election"],
+      "persons": ["abraham", "isaac", "ishmael", "jacob", "esau"],
+      "covenants": ["Abrahamic"]
+    },
+    "twelve_tribes": {
+      "id": "twelve_tribes",
+      "name": "Twelve Tribes",
+      "description": "The sons of Jacob who became the twelve tribes of Israel",
+      "period": "c. 1900-1400 BC",
+      "keyThemes": ["Tribes", "Inheritance", "Egypt", "Exodus"],
+      "persons": ["reuben", "simeon", "levi", "judah", "dan", "naphtali", "gad", "asher", "issachar", "zebulun", "joseph", "benjamin"],
+      "covenants": ["Mosaic"]
+    },
+    "royal_line": {
+      "id": "royal_line",
+      "name": "Royal Line",
+      "description": "From Judah through David to the kings",
+      "period": "c. 1400-586 BC",
+      "keyThemes": ["Kingship", "Temple", "Psalms", "Prophecy"],
+      "persons": ["perez", "boaz", "ruth", "obed", "jesse", "david", "solomon", "nathan_son"],
+      "covenants": ["Davidic"]
+    },
+    "post_exile": {
+      "id": "post_exile",
+      "name": "Post-Exile Period",
+      "description": "Return from Babylon and temple rebuilding",
+      "period": "536-400 BC",
+      "keyThemes": ["Restoration", "Temple", "Law", "Hope"],
+      "persons": ["zerubbabel"],
+      "covenants": ["New Covenant promises"]
+    },
+    "messianic_line": {
+      "id": "messianic_line",
+      "name": "Messianic Line",
+      "description": "The genealogies leading to Christ",
+      "period": "400 BC - 4 BC",
+      "keyThemes": ["Fulfillment", "Incarnation", "Messiah", "Salvation"],
+      "persons": ["joseph_husband", "jesus"],
+      "covenants": ["New Covenant"]
+    }
+  },
+  "genealogicalLines": {
+    "genesis_4_cain": {
+      "id": "genesis_4_cain",
+      "name": "Cain's Genealogy",
+      "reference": "Genesis 4:17-24",
+      "purpose": "Shows human culture developing apart from God, with increasing violence",
+      "structure": "Seven generations from Cain to his descendants",
+      "distinctive": "Focus on cultural achievements (cities, music, metallurgy) and violence",
+      "line": ["cain", "enoch_cain_son", "irad", "mehujael", "methushael", "lamech_cain"]
+    },
+    "genesis_5_seth": {
+      "id": "genesis_5_seth",
+      "name": "Seth's Genealogy",
+      "reference": "Genesis 5:1-32",
+      "purpose": "Traces the godly line from Adam to Noah",
+      "structure": "Ten generations with ages and 'and he died' formula",
+      "distinctive": "Emphasizes mortality but also hope (Enoch translated, Lamech's prophecy)",
+      "line": ["adam", "seth", "enosh", "kenan", "mahalalel", "jared", "enoch_godly", "methuselah", "lamech_noah", "noah"]
+    },
+    "genesis_10_nations": {
+      "id": "genesis_10_nations",
+      "name": "Table of Nations",
+      "reference": "Genesis 10:1-32",
+      "purpose": "Shows the origin of all nations from Noah's sons",
+      "structure": "70 nations from Shem, Ham, and Japheth",
+      "distinctive": "Geographic and ethnic distribution of humanity",
+      "line": ["noah", "shem", "ham", "japheth"]
+    },
+    "genesis_11_shem": {
+      "id": "genesis_11_shem",
+      "name": "Shem to Abraham",
+      "reference": "Genesis 11:10-32",
+      "purpose": "Narrows focus from nations to Abraham's line",
+      "structure": "Ten generations from Shem to Abraham",
+      "distinctive": "Decreasing lifespans, leading to covenant calling",
+      "line": ["shem", "abraham"]
+    },
+    "twelve_sons": {
+      "id": "twelve_sons",
+      "name": "Jacob's Twelve Sons",
+      "reference": "Genesis 29:31-30:24, 35:16-26",
+      "purpose": "Establishes the twelve tribes of Israel",
+      "structure": "Sons by four mothers (Leah, Rachel, Bilhah, Zilpah)",
+      "distinctive": "Birth order and tribal characteristics revealed",
+      "line": ["reuben", "simeon", "levi", "judah", "dan", "naphtali", "gad", "asher", "issachar", "zebulun", "joseph", "benjamin"]
+    },
+    "ruth_genealogy": {
+      "id": "ruth_genealogy",
+      "name": "Perez to David",
+      "reference": "Ruth 4:18-22",
+      "purpose": "Connects Ruth's story to Israel's greatest king",
+      "structure": "Ten generations from Perez to David",
+      "distinctive": "Includes foreign women in David's lineage",
+      "line": ["perez", "boaz", "obed", "jesse", "david"]
+    },
+    "matthew": {
+      "id": "matthew",
+      "name": "Matthew's Genealogy",
+      "reference": "Matthew 1:1-17",
+      "purpose": "Proves Jesus is the rightful King of Israel",
+      "structure": "Three sets of fourteen generations",
+      "distinctive": "Royal line through Solomon",
+      "line": ["abraham", "isaac", "jacob", "judah", "perez", "boaz", "obed", "jesse", "david", "solomon", "zerubbabel", "joseph_husband", "jesus"]
+    },
+    "luke": {
+      "id": "luke",
+      "name": "Luke's Genealogy",
+      "reference": "Luke 3:23-38",
+      "purpose": "Shows Jesus as the Son of Man for all humanity",
+      "structure": "Ascending genealogy back to Adam",
+      "distinctive": "Line through Nathan (David's son)",
+      "line": ["adam", "seth", "enosh", "noah", "shem", "abraham", "isaac", "jacob", "judah", "perez", "boaz", "obed", "jesse", "david", "nathan_son", "zerubbabel", "joseph_husband", "jesus"]
+    }
+  }
+}

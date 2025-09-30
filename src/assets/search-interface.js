@@ -5,12 +5,17 @@
 
 class SearchInterface {
   constructor(options = {}) {
+    // Parameter validation
+    if (options && typeof options !== 'object') {
+      throw new TypeError('SearchInterface options must be an object');
+    }
+
     this.containerId = options.containerId || 'search-container';
     this.inputId = options.inputId || 'search-input';
     this.resultsId = options.resultsId || 'search-results';
-    this.maxResults = options.maxResults || 8;
-    this.minQueryLength = options.minQueryLength || 1;
-    this.debounceDelay = options.debounceDelay || 150;
+    this.maxResults = Math.max(1, parseInt(options.maxResults) || 8);
+    this.minQueryLength = Math.max(0, parseInt(options.minQueryLength) || 1);
+    this.debounceDelay = Math.max(0, parseInt(options.debounceDelay) || 150);
 
     this.isInitialized = false;
     this.searchEngine = null;
@@ -18,6 +23,7 @@ class SearchInterface {
     this.selectedIndex = -1;
     this.results = [];
     this.isVisible = false;
+    this.styleTimeout = null; // Track style application timeout
 
     // Bind methods
     this.handleInput = this.handleInput.bind(this);
@@ -43,19 +49,22 @@ class SearchInterface {
       this.bindEvents();
 
       this.isInitialized = true;
-      console.log('[SearchInterface] Initialized successfully - v4.1.0 - Removed search icon');
+      console.log('[SearchInterface] Initialized successfully - v4.5.0 - Fixed error boundaries and edge cases');
       
       // Bind suggestion events
       this.bindSuggestionEvents();
       
       // Force apply styles after initialization
-      setTimeout(() => {
-        const container = document.getElementById(this.containerId);
-        if (container) {
-          container.style.maxWidth = '680px';
-          container.style.margin = '2rem auto 3rem auto';
-          console.log('[SearchInterface] Applied premium container styles');
+      this.styleTimeout = setTimeout(() => {
+        if (this.isInitialized) { // Check if component is still active
+          const container = document.getElementById(this.containerId);
+          if (container) {
+            container.style.maxWidth = '680px';
+            container.style.margin = '2rem auto 3rem auto';
+            console.log('[SearchInterface] Applied premium container styles');
+          }
         }
+        this.styleTimeout = null;
       }, 100);
     } catch (error) {
       console.error('[SearchInterface] Failed to initialize:', error);
@@ -72,32 +81,40 @@ class SearchInterface {
 
     // Wait for search engine to be ready
     return new Promise((resolve, reject) => {
+      let resolved = false; // Prevent multiple resolution
+      let pollingInterval = null;
+      
       const timeout = setTimeout(() => {
-        reject(new Error('Search engine initialization timeout'));
+        if (!resolved) {
+          resolved = true;
+          if (pollingInterval) {
+            clearInterval(pollingInterval);
+          }
+          reject(new Error('Search engine initialization timeout'));
+        }
       }, 10000); // 10 second timeout
 
-      const checkEngine = () => {
-        if (window.searchEngine && window.searchEngine.initialized) {
+      const resolveOnce = () => {
+        if (!resolved) {
+          resolved = true;
           clearTimeout(timeout);
+          if (pollingInterval) {
+            clearInterval(pollingInterval);
+          }
           this.searchEngine = window.searchEngine;
           resolve();
-        } else {
-          setTimeout(checkEngine, 100);
         }
       };
 
-      // Also listen for the ready event
-      window.addEventListener(
-        'searchEngineReady',
-        () => {
-          clearTimeout(timeout);
-          this.searchEngine = window.searchEngine;
-          resolve();
-        },
-        { once: true }
-      );
+      // Polling with interval instead of recursive setTimeout to prevent stack issues
+      pollingInterval = setInterval(() => {
+        if (window.searchEngine && window.searchEngine.initialized) {
+          resolveOnce();
+        }
+      }, 100);
 
-      checkEngine();
+      // Also listen for the ready event
+      window.addEventListener('searchEngineReady', resolveOnce, { once: true });
     });
   }
 
@@ -110,11 +127,23 @@ class SearchInterface {
       container.className = 'search-container';
 
       // Insert after navigation
-      const nav = document.querySelector('.nav');
-      if (nav) {
-        nav.insertAdjacentElement('afterend', container);
-      } else {
-        document.body.insertBefore(container, document.body.firstChild);
+      try {
+        const nav = document.querySelector('.nav');
+        if (nav && nav.parentNode) {
+          nav.insertAdjacentElement('afterend', container);
+        } else {
+          // Fallback: insert at beginning of body
+          if (document.body && document.body.firstChild) {
+            document.body.insertBefore(container, document.body.firstChild);
+          } else if (document.body) {
+            document.body.appendChild(container);
+          } else {
+            throw new Error('Unable to find suitable container for search interface');
+          }
+        }
+      } catch (error) {
+        console.error('[SearchInterface] Failed to insert container:', error);
+        throw error;
       }
     }
 
@@ -125,7 +154,7 @@ class SearchInterface {
           <h2 class="search-title">Discover Scripture</h2>
           <p class="search-subtitle">Search 66 books, 5,500+ characters, and comprehensive commentary</p>
         </div>
-        <div class="search-input-container">
+        <div class="search-input-container" role="combobox" aria-expanded="false" aria-haspopup="listbox">
           <input 
             type="text" 
             id="${this.inputId}"
@@ -134,8 +163,12 @@ class SearchInterface {
             autocomplete="off"
             spellcheck="false"
             aria-label="Search scripture, characters, and commentary"
+            aria-describedby="search-instructions"
+            role="searchbox"
+            aria-autocomplete="list"
+            aria-controls="${this.resultsId}"
           />
-          <div class="search-shortcut" id="searchShortcut" aria-label="Keyboard shortcut">
+          <div class="search-shortcut" id="searchShortcut" aria-label="Keyboard shortcut Command K">
             <span class="shortcut-key">${this.getShortcutKey()}</span>
             <span class="shortcut-text">K</span>
           </div>
@@ -146,14 +179,18 @@ class SearchInterface {
             </svg>
           </button>
         </div>
-        <div class="search-suggestions">
-          <span class="suggestion-label">Popular:</span>
-          <button class="search-suggestion" data-query="Genesis creation">Genesis creation</button>
-          <button class="search-suggestion" data-query="Jesus parables">Jesus parables</button>
-          <button class="search-suggestion" data-query="David">David</button>
-          <button class="search-suggestion" data-query="Exodus">Exodus</button>
+        <div id="search-instructions" class="sr-only">
+          Type to search for books, chapters, or biblical characters. Use arrow keys to navigate results and Enter to select.
         </div>
-        <div id="${this.resultsId}" class="search-results" style="display: none;"></div>
+        <div class="search-suggestions" role="group" aria-label="Popular search suggestions">
+          <span class="suggestion-label">Popular:</span>
+          <button class="search-suggestion" data-query="Genesis creation" aria-label="Search for Genesis creation">Genesis creation</button>
+          <button class="search-suggestion" data-query="Jesus parables" aria-label="Search for Jesus parables">Jesus parables</button>
+          <button class="search-suggestion" data-query="David" aria-label="Search for David">David</button>
+          <button class="search-suggestion" data-query="Exodus" aria-label="Search for Exodus">Exodus</button>
+        </div>
+        <div id="${this.resultsId}" class="search-results" role="listbox" aria-label="Search results" style="display: none;"></div>
+        <div aria-live="polite" aria-atomic="true" class="sr-only" id="search-announcements"></div>
       </div>
     `;
 
@@ -176,6 +213,18 @@ class SearchInterface {
         z-index: 1000;
         display: flex !important;
         justify-content: center !important;
+      }
+      
+      .sr-only {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        clip: rect(0,0,0,0) !important;
+        white-space: nowrap !important;
+        border: 0 !important;
       }
       
       .search-wrapper {
@@ -597,12 +646,18 @@ class SearchInterface {
   }
 
   bindEvents() {
+    const container = document.getElementById(this.containerId);
     const input = document.getElementById(this.inputId);
     const results = document.getElementById(this.resultsId);
-    const clearButton = this.container?.querySelector('.search-clear');
+    const clearButton = container?.querySelector('.search-clear');
 
     if (!input) {
       console.error('[SearchInterface] Search input not found');
+      return;
+    }
+
+    if (!container) {
+      console.error('[SearchInterface] Search container not found');
       return;
     }
 
@@ -629,23 +684,33 @@ class SearchInterface {
     this.input = input;
     this.resultsContainer = results;
     this.clearButton = clearButton;
-    this.container = document.getElementById(this.containerId);
+    this.container = container;
   }
 
   bindSuggestionEvents() {
-    const suggestions = this.container?.querySelectorAll('.search-suggestion');
-    if (suggestions) {
-      suggestions.forEach(suggestion => {
-        suggestion.addEventListener('click', (e) => {
-          const query = e.target.dataset.query;
-          if (query && this.input) {
-            this.input.value = query;
-            this.input.focus();
-            this.performSearch(query);
-          }
-        });
-      });
+    if (!this.container) {
+      console.warn('[SearchInterface] Container not available for suggestion events');
+      return;
     }
+
+    // Use event delegation to handle dynamically added suggestions
+    this.handleSuggestionClick = (e) => {
+      const suggestion = e.target.closest('.search-suggestion');
+      if (suggestion) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const query = suggestion.dataset.query;
+        if (query && this.input) {
+          this.input.value = query;
+          this.currentQuery = query;
+          this.input.focus();
+          this.performSearch(query);
+        }
+      }
+    };
+    
+    this.container.addEventListener('click', this.handleSuggestionClick);
   }
 
   handleInput(event) {
@@ -697,20 +762,39 @@ class SearchInterface {
   }
 
   handleBlur() {
+    // Clear any existing blur timeout to prevent multiple executions
+    if (this.blurTimeout) {
+      clearTimeout(this.blurTimeout);
+    }
+    
     // Delay hiding to allow clicks on results
-    setTimeout(() => {
-      this.hideResults();
+    this.blurTimeout = setTimeout(() => {
+      if (this.isInitialized) {  // Only execute if component is still active
+        this.hideResults();
+      }
+      this.blurTimeout = null;
     }, 150);
     this.updateShortcutHint();
   }
 
   handleResultClick(event) {
-    const resultElement = event.target.closest('.search-result');
-    if (resultElement) {
-      const url = resultElement.dataset.url;
-      if (url) {
-        window.location.href = url;
+    try {
+      const resultElement = event.target.closest('.search-result');
+      if (resultElement) {
+        const url = resultElement.dataset.url;
+        if (url && typeof url === 'string' && url.trim()) {
+          // Basic URL validation
+          if (url.startsWith('/') || url.startsWith('http')) {
+            window.location.href = url;
+          } else {
+            console.warn('[SearchInterface] Invalid URL format:', url);
+          }
+        } else {
+          console.warn('[SearchInterface] No valid URL found for result');
+        }
       }
+    } catch (error) {
+      console.error('[SearchInterface] Error handling result click:', error);
     }
   }
 
@@ -734,22 +818,44 @@ class SearchInterface {
       return;
     }
 
-    // Use debounced search for performance
-    this.searchEngine.debouncedSearch(
-      query,
-      results => {
-        this.results = results;
-        this.selectedIndex = -1;
-        this.renderResults();
+    if (!query || typeof query !== 'string') {
+      console.warn('[SearchInterface] Invalid search query:', query);
+      this.hideResults();
+      return;
+    }
 
-        if (results.length > 0) {
-          this.showResults();
-        } else {
-          this.hideResults();
-        }
-      },
-      this.debounceDelay
-    );
+    // Use debounced search for performance
+    try {
+      this.searchEngine.debouncedSearch(
+        query,
+        results => {
+          // Check if component is still initialized to prevent race conditions
+          if (!this.isInitialized) {
+            console.log('[SearchInterface] Ignoring search results - component destroyed');
+            return;
+          }
+          
+          if (!Array.isArray(results)) {
+            console.warn('[SearchInterface] Invalid search results:', results);
+            return;
+          }
+          
+          this.results = results;
+          this.selectedIndex = -1;
+          this.renderResults();
+
+          if (results.length > 0) {
+            this.showResults();
+          } else {
+            this.hideResults();
+          }
+        },
+        this.debounceDelay
+      );
+    } catch (error) {
+      console.error('[SearchInterface] Search error:', error);
+      this.hideResults();
+    }
   }
 
   renderResults() {
@@ -757,8 +863,8 @@ class SearchInterface {
 
     if (this.results.length === 0) {
       this.resultsContainer.innerHTML = `
-        <div class="search-empty">
-          No results found for "${this.currentQuery}"
+        <div class="search-empty" role="status" aria-live="polite">
+          No results found for "${this.escapeHtml(this.currentQuery || '')}"
         </div>
       `;
       return;
@@ -769,9 +875,12 @@ class SearchInterface {
         (result, index) => `
       <div class="search-result${index === this.selectedIndex ? ' selected' : ''}" 
            data-url="${this.escapeHtml(result.url)}" 
-           data-index="${index}">
+           data-index="${index}"
+           role="option"
+           aria-selected="${index === this.selectedIndex ? 'true' : 'false'}"
+           tabindex="-1">
         <div class="search-result-title">
-          <span class="search-result-type ${this.escapeHtml(result.type)}">${this.escapeHtml(result.type)}</span>
+          <span class="search-result-type ${this.escapeHtml(result.type)}" aria-label="${this.escapeHtml(result.type)} type">${this.escapeHtml(result.type)}</span>
           ${this.escapeHtml(result.text)}
         </div>
         ${result.subtitle ? `<div class="search-result-subtitle">${this.escapeHtml(result.subtitle)}</div>` : ''}
@@ -781,10 +890,16 @@ class SearchInterface {
       .join('');
 
     this.resultsContainer.innerHTML = resultsHTML;
+    
+    // Announce results to screen readers
+    this.announceResults();
   }
 
   navigateResults(direction) {
-    if (this.results.length === 0) return;
+    if (!Array.isArray(this.results) || this.results.length === 0) {
+      this.selectedIndex = -1;
+      return;
+    }
 
     this.selectedIndex += direction;
 
@@ -802,16 +917,37 @@ class SearchInterface {
     if (!resultElements) return;
 
     resultElements.forEach((element, index) => {
-      element.classList.toggle('selected', index === this.selectedIndex);
+      const isSelected = index === this.selectedIndex;
+      element.classList.toggle('selected', isSelected);
+      element.setAttribute('aria-selected', isSelected ? 'true' : 'false');
     });
+    
+    // Announce selection change to screen readers
+    if (this.selectedIndex >= 0 && this.selectedIndex < this.results.length) {
+      const selectedResult = this.results[this.selectedIndex];
+      this.announceSelection(selectedResult);
+    }
   }
 
   selectResult() {
-    if (this.selectedIndex >= 0 && this.selectedIndex < this.results.length) {
-      const result = this.results[this.selectedIndex];
-      if (result.url) {
-        window.location.href = result.url;
+    try {
+      if (this.selectedIndex >= 0 && 
+          this.selectedIndex < this.results.length && 
+          Array.isArray(this.results)) {
+        const result = this.results[this.selectedIndex];
+        if (result && result.url && typeof result.url === 'string' && result.url.trim()) {
+          // Basic URL validation
+          if (result.url.startsWith('/') || result.url.startsWith('http')) {
+            window.location.href = result.url;
+          } else {
+            console.warn('[SearchInterface] Invalid result URL:', result.url);
+          }
+        } else {
+          console.warn('[SearchInterface] No valid URL in selected result');
+        }
       }
+    } catch (error) {
+      console.error('[SearchInterface] Error selecting result:', error);
     }
   }
 
@@ -819,6 +955,7 @@ class SearchInterface {
     if (this.resultsContainer && this.results.length > 0) {
       this.resultsContainer.style.display = 'block';
       this.isVisible = true;
+      this.updateExpandedState(true);
     }
   }
 
@@ -826,6 +963,7 @@ class SearchInterface {
     if (this.resultsContainer) {
       this.resultsContainer.style.display = 'none';
       this.isVisible = false;
+      this.updateExpandedState(false);
     }
   }
 
@@ -841,6 +979,12 @@ class SearchInterface {
   }
 
   escapeHtml(text) {
+    if (text === null || text === undefined) {
+      return '';
+    }
+    if (typeof text !== 'string') {
+      text = String(text);
+    }
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
@@ -906,7 +1050,22 @@ class SearchInterface {
       this.resultsContainer.removeEventListener('click', this.handleResultClick);
     }
 
+    if (this.container && this.handleSuggestionClick) {
+      this.container.removeEventListener('click', this.handleSuggestionClick);
+    }
+
     document.removeEventListener('click', this.handleDocumentClick);
+
+    // Clear any pending timeouts
+    if (this.blurTimeout) {
+      clearTimeout(this.blurTimeout);
+      this.blurTimeout = null;
+    }
+    
+    if (this.styleTimeout) {
+      clearTimeout(this.styleTimeout);
+      this.styleTimeout = null;
+    }
 
     // Clear references
     this.input = null;
@@ -916,6 +1075,48 @@ class SearchInterface {
     this.searchEngine = null;
     this.results = [];
     this.isInitialized = false;
+  }
+
+  // Accessibility methods for screen reader announcements
+  announceResults() {
+    const announcer = document.getElementById('search-announcements');
+    if (!announcer) return;
+
+    const resultCount = Array.isArray(this.results) ? this.results.length : 0;
+    const query = this.escapeHtml(this.currentQuery || '');
+    let message = '';
+    
+    if (resultCount === 0) {
+      message = `No results found for "${query}"`;
+    } else if (resultCount === 1) {
+      message = `1 result found for "${query}". Use arrow keys to navigate.`;
+    } else {
+      message = `${resultCount} results found for "${query}". Use arrow keys to navigate.`;
+    }
+    
+    announcer.textContent = message;
+  }
+
+  announceSelection(result) {
+    const announcer = document.getElementById('search-announcements');
+    if (!announcer || !result) return;
+
+    const position = this.selectedIndex + 1;
+    const total = Array.isArray(this.results) ? this.results.length : 0;
+    const type = this.escapeHtml(result.type || '');
+    const text = this.escapeHtml(result.text || '');
+    const subtitle = result.subtitle ? ', ' + this.escapeHtml(result.subtitle) : '';
+    const message = `${position} of ${total}: ${type} ${text}${subtitle}`;
+    
+    announcer.textContent = message;
+  }
+
+  // Update ARIA expanded state
+  updateExpandedState(expanded) {
+    const inputContainer = this.container?.querySelector('[role="combobox"]');
+    if (inputContainer) {
+      inputContainer.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+    }
   }
 }
 

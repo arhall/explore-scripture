@@ -482,23 +482,24 @@ purely static generation.
 
 ## Pending Development Tasks
 
-### High Priority TODO Items:
+### Recently Completed:
 
-1. **Biblical Genealogy Explorer Implementation**
-   - **File**: `Immersive_Biblical_Genealogy_Example.js` contains complete
-     implementation
-   - **Task**: Create `/genealogy/` page as new top-level navigation item
-   - **Requirements**:
-     - Extract Web Component code from example file
-     - Create `src/genealogy.njk` page template using `base.njk` layout
-     - Implement `src/assets/genealogy-explorer.js` with D3 visualization
-     - Generate biblical genealogy data JSON from existing entity system
-     - Add genealogy nav item to main navigation in base layouts
-     - Features include: Interactive tree, zoom/pan, search, export PNG,
-       keyboard navigation
-     - Biblical character data with tribes, roles, spouses, children
-       relationships
-     - URL hash permalinks for deep linking to specific people/views
+1. **Biblical Genealogy Tree Visualization** ✅
+   - **Location**: `src/genealogies.njk` - Complete D3.js visualization
+   - **Features Implemented**:
+     - Multi-line tooltips with Scripture references from `tooltipRaw` CSV field
+     - Messianic line highlighting (red circles/links) for 134 individuals
+     - Dynamic circle fill states: filled when unexpanded, hollow when expanded/leaf
+     - Seven thematic clusters: Primeval, Patriarchs, Tribal, Priestly, Royal, Messianic, Judges
+     - Interactive zoom/pan, search, cluster navigation, keyboard controls
+   - **Data Pipeline**:
+     - Source: `data/bible-tree-data/raw-latest/nodes.csv` (genealogy nodes)
+     - Processing: `scripts/generate_bible_tree.py` → `src/assets/data/bible-tree.json`
+     - Scripts: `scripts/mark_messianic_line.py`, `scripts/mark_judges.py`
+   - **Judges Cluster**: Populated with 17 judges (Othniel, Ehud, Tola, Jair, Jephthah, Gideon, Eli, Samuel, etc.)
+   - **Styling**: Solid fills (`rgb(102, 121, 168)` for regular, `#dc143c` for messianic)
+
+### High Priority TODO Items:
 
 2. **Entity System Enhancements**
    - Improve entity search relevance scoring

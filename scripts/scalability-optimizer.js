@@ -185,7 +185,7 @@ class ScalabilityOptimizer {
       mediumPriority: ['chapter-reader.js', 'commentary-reader.js'],
 
       // Low priority - loaded on demand
-      lowPriority: ['entity-relationship-visualizer.js', 'genealogy-explorer.js'],
+      lowPriority: ['entity-relationship-visualizer.js'],
 
       // External dependencies
       external: {

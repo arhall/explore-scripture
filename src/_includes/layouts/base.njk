@@ -7,10 +7,9 @@
     <!-- Security Headers -->
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https: https://i.ytimg.com https://yt3.ggpht.com; connect-src 'self' https://api.esv.org https://www.biblegateway.com https://bible-api.com; frame-src 'self' https://www.youtube.com https://www.biblegateway.com https://www.youtube-nocookie.com https://enduringword.com https://www.biblestudytools.com https://www.studylight.org https://biblehub.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://api.reftagger.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https: https://i.ytimg.com https://yt3.ggpht.com; connect-src 'self' https://api.esv.org https://www.biblegateway.com https://bible-api.com; frame-src 'self' https://www.youtube.com https://www.biblegateway.com https://www.youtube-nocookie.com https://enduringword.com https://www.biblestudytools.com https://www.studylight.org https://biblehub.com https://biblefamilytree.info https://onemessianicgentile.com https://www.onemessianicgentile.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;"
     />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
     <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
     <meta
@@ -21,6 +20,7 @@
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#2563eb" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Explore Scripture" />
@@ -59,8 +59,10 @@
             class="nav-link {% if page.url == '/gospel-thread/' %}active{% endif %}"
             >Gospel Thread</a
           >
-          <a href="/genealogy/" class="nav-link {% if page.url == '/genealogy/' %}active{% endif %}"
-            >Genealogy</a
+          <a
+            href="/genealogies/"
+            class="nav-link {% if page.url == '/genealogies/' %}active{% endif %}"
+            >Genealogies</a
           >
           <a href="/links/" class="nav-link {% if page.url == '/links/' %}active{% endif %}"
             >Links</a

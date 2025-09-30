@@ -1,0 +1,814 @@
+{
+  "persons": {
+    "adam": {
+      "id": "adam", "name": "Adam", "aliases": ["The First Man"],
+      "meaning": "Man, mankind, from adamah (ground)",
+      "roles": ["first_man", "covenant_head"], "covenantLine": true,
+      "references": ["Gen 1:27", "Gen 2:7", "Gen 5:1-2"],
+      "cluster": "primeval", "period": "Creation"
+    },
+    "eve": {
+      "id": "eve", "name": "Eve", "aliases": ["The Mother of All Living"],
+      "meaning": "Living, life-giver", "roles": ["first_woman", "mother"],
+      "references": ["Gen 2:22", "Gen 3:20"], "cluster": "primeval"
+    },
+    "cain": {
+      "id": "cain", "name": "Cain", "meaning": "Acquired, possession",
+      "roles": ["firstborn", "murderer", "city_builder"], "covenantLine": false,
+      "references": ["Gen 4:1", "Gen 4:8", "Gen 4:17"], "cluster": "cains_line"
+    },
+    "abel": {
+      "id": "abel", "name": "Abel", "meaning": "Breath, vapor",
+      "roles": ["shepherd", "martyr"], "covenantLine": false,
+      "references": ["Gen 4:2", "Gen 4:4", "Heb 11:4"], "cluster": "primeval"
+    },
+    "seth": {
+      "id": "seth", "name": "Seth", "meaning": "Appointed, set",
+      "roles": ["covenant_heir"], "covenantLine": true,
+      "references": ["Gen 4:25", "Gen 5:3"], "cluster": "primeval"
+    },
+    "enoch_cain": {
+      "id": "enoch_cain", "name": "Enoch", "aliases": ["Cain's son"],
+      "meaning": "Dedicated", "roles": ["city_namesake"], "covenantLine": false,
+      "references": ["Gen 4:17"], "cluster": "cains_line", "parent": "cain"
+    },
+    "irad": {
+      "id": "irad", "name": "Irad", "meaning": "Fleet, swift",
+      "roles": ["descendant_of_cain"], "covenantLine": false,
+      "references": ["Gen 4:18"], "cluster": "cains_line", "parent": "enoch_cain"
+    },
+    "mehujael": {
+      "id": "mehujael", "name": "Mehujael", "meaning": "Smitten of God",
+      "roles": ["descendant_of_cain"], "covenantLine": false,
+      "references": ["Gen 4:18"], "cluster": "cains_line", "parent": "irad"
+    },
+    "methushael": {
+      "id": "methushael", "name": "Methushael", "meaning": "Man of God",
+      "roles": ["descendant_of_cain"], "covenantLine": false,
+      "references": ["Gen 4:18"], "cluster": "cains_line", "parent": "mehujael"
+    },
+    "lamech_cain": {
+      "id": "lamech_cain", "name": "Lamech", "aliases": ["Lamech the Violent"],
+      "meaning": "Powerful, wild man", "roles": ["polygamist", "violent_man"], "covenantLine": false,
+      "references": ["Gen 4:19-24"], "cluster": "cains_line", "parent": "methushael"
+    },
+    "adah": {
+      "id": "adah", "name": "Adah", "meaning": "Ornament",
+      "roles": ["wife"], "references": ["Gen 4:19"], "cluster": "cains_line"
+    },
+    "zillah": {
+      "id": "zillah", "name": "Zillah", "meaning": "Shadow",
+      "roles": ["wife"], "references": ["Gen 4:19"], "cluster": "cains_line"
+    },
+    "jabal": {
+      "id": "jabal", "name": "Jabal", "meaning": "Stream, moving",
+      "roles": ["father_of_nomads", "livestock_keeper"], "covenantLine": false,
+      "references": ["Gen 4:20"], "cluster": "cains_line", "parent": "lamech_cain", "mother": "adah"
+    },
+    "jubal": {
+      "id": "jubal", "name": "Jubal", "meaning": "Music, sound",
+      "roles": ["father_of_musicians"], "covenantLine": false,
+      "references": ["Gen 4:21"], "cluster": "cains_line", "parent": "lamech_cain", "mother": "adah"
+    },
+    "tubal_cain": {
+      "id": "tubal_cain", "name": "Tubal-Cain", "meaning": "You will be brought of Cain",
+      "roles": ["metalworker", "inventor"], "covenantLine": false,
+      "references": ["Gen 4:22"], "cluster": "cains_line", "parent": "lamech_cain", "mother": "zillah"
+    },
+    "naamah": {
+      "id": "naamah", "name": "Naamah", "meaning": "Pleasant, beautiful",
+      "roles": ["sister"], "covenantLine": false,
+      "references": ["Gen 4:22"], "cluster": "cains_line", "parent": "lamech_cain", "mother": "zillah"
+    },
+    "enosh": {
+      "id": "enosh", "name": "Enosh", "meaning": "Mortal man, frail",
+      "roles": ["covenant_heir"], "covenantLine": true,
+      "references": ["Gen 4:26", "Gen 5:6"], "cluster": "primeval", "parent": "seth"
+    },
+    "kenan": {
+      "id": "kenan", "name": "Kenan", "meaning": "Sorrow, possession",
+      "roles": ["covenant_heir"], "covenantLine": true,
+      "references": ["Gen 5:9"], "cluster": "primeval", "parent": "enosh"
+    },
+    "mahalalel": {
+      "id": "mahalalel", "name": "Mahalalel", "meaning": "Praise of God",
+      "roles": ["covenant_heir"], "covenantLine": true,
+      "references": ["Gen 5:12"], "cluster": "primeval", "parent": "kenan"
+    },
+    "jared": {
+      "id": "jared", "name": "Jared", "meaning": "Descent",
+      "roles": ["covenant_heir"], "covenantLine": true,
+      "references": ["Gen 5:15"], "cluster": "primeval", "parent": "mahalalel"
+    },
+    "enoch_godly": {
+      "id": "enoch_godly", "name": "Enoch", "aliases": ["Enoch the Righteous"],
+      "meaning": "Dedicated", "roles": ["prophet", "translated_one"], "covenantLine": true,
+      "references": ["Gen 5:21", "Gen 5:24", "Heb 11:5"], "cluster": "primeval", "parent": "jared"
+    },
+    "methuselah": {
+      "id": "methuselah", "name": "Methuselah", "meaning": "When he dies it shall come",
+      "roles": ["oldest_man"], "covenantLine": true,
+      "references": ["Gen 5:25", "Gen 5:27"], "cluster": "primeval", "parent": "enoch_godly"
+    },
+    "lamech_noah": {
+      "id": "lamech_noah", "name": "Lamech", "aliases": ["Lamech the Righteous"],
+      "meaning": "Powerful", "roles": ["father_of_comfort"], "covenantLine": true,
+      "references": ["Gen 5:28-29"], "cluster": "primeval", "parent": "methuselah"
+    },
+    "noah": {
+      "id": "noah", "name": "Noah", "meaning": "Rest, comfort",
+      "roles": ["righteous_remnant", "ark_builder", "covenant_head"], "covenantLine": true,
+      "references": ["Gen 5:29", "Gen 6:9", "Gen 9:1-17"], "cluster": "primeval", "parent": "lamech_noah"
+    },
+    "shem": {
+      "id": "shem", "name": "Shem", "meaning": "Name, renown",
+      "roles": ["blessed_son", "covenant_heir"], "covenantLine": true,
+      "references": ["Gen 5:32", "Gen 9:26", "Gen 10:1"], "cluster": "table_of_nations", "parent": "noah"
+    },
+    "ham": {
+      "id": "ham", "name": "Ham", "meaning": "Hot, warm",
+      "roles": ["cursed_son", "father_of_nations"], "covenantLine": false,
+      "references": ["Gen 5:32", "Gen 9:22", "Gen 10:6"], "cluster": "table_of_nations", "parent": "noah"
+    },
+    "japheth": {
+      "id": "japheth", "name": "Japheth", "meaning": "Enlargement, beauty",
+      "roles": ["blessed_son", "father_of_nations"], "covenantLine": false,
+      "references": ["Gen 5:32", "Gen 9:27", "Gen 10:2"], "cluster": "table_of_nations", "parent": "noah"
+    },
+    "gomer": {
+      "id": "gomer", "name": "Gomer", "meaning": "Complete",
+      "roles": ["son_of_japheth"], "references": ["Gen 10:2"], "cluster": "table_of_nations", "parent": "japheth"
+    },
+    "magog": {
+      "id": "magog", "name": "Magog", "meaning": "Land of Gog",
+      "roles": ["son_of_japheth"], "references": ["Gen 10:2"], "cluster": "table_of_nations", "parent": "japheth"
+    },
+    "madai": {
+      "id": "madai", "name": "Madai", "meaning": "Medes",
+      "roles": ["son_of_japheth"], "references": ["Gen 10:2"], "cluster": "table_of_nations", "parent": "japheth"
+    },
+    "javan": {
+      "id": "javan", "name": "Javan", "meaning": "Greece",
+      "roles": ["son_of_japheth"], "references": ["Gen 10:2"], "cluster": "table_of_nations", "parent": "japheth"
+    },
+    "tubal": {
+      "id": "tubal", "name": "Tubal", "meaning": "You will be brought",
+      "roles": ["son_of_japheth"], "references": ["Gen 10:2"], "cluster": "table_of_nations", "parent": "japheth"
+    },
+    "meshech": {
+      "id": "meshech", "name": "Meshech", "meaning": "Drawing out",
+      "roles": ["son_of_japheth"], "references": ["Gen 10:2"], "cluster": "table_of_nations", "parent": "japheth"
+    },
+    "tiras": {
+      "id": "tiras", "name": "Tiras", "meaning": "Desire",
+      "roles": ["son_of_japheth"], "references": ["Gen 10:2"], "cluster": "table_of_nations", "parent": "japheth"
+    },
+    "cush": {
+      "id": "cush", "name": "Cush", "meaning": "Black",
+      "roles": ["son_of_ham"], "references": ["Gen 10:6"], "cluster": "table_of_nations", "parent": "ham"
+    },
+    "mizraim": {
+      "id": "mizraim", "name": "Mizraim", "meaning": "Egypt",
+      "roles": ["son_of_ham"], "references": ["Gen 10:6"], "cluster": "table_of_nations", "parent": "ham"
+    },
+    "put": {
+      "id": "put", "name": "Put", "meaning": "Libya",
+      "roles": ["son_of_ham"], "references": ["Gen 10:6"], "cluster": "table_of_nations", "parent": "ham"
+    },
+    "canaan": {
+      "id": "canaan", "name": "Canaan", "meaning": "Land of purple",
+      "roles": ["son_of_ham", "cursed"], "references": ["Gen 9:25", "Gen 10:6"], "cluster": "table_of_nations", "parent": "ham"
+    },
+    "nimrod": {
+      "id": "nimrod", "name": "Nimrod", "meaning": "Rebel",
+      "roles": ["mighty_hunter", "kingdom_builder"], "references": ["Gen 10:8-12"], "cluster": "table_of_nations", "parent": "cush"
+    },
+    "elam": {
+      "id": "elam", "name": "Elam", "meaning": "Hidden",
+      "roles": ["son_of_shem"], "references": ["Gen 10:22"], "cluster": "table_of_nations", "parent": "shem"
+    },
+    "asshur": {
+      "id": "asshur", "name": "Asshur", "meaning": "Assyria",
+      "roles": ["son_of_shem"], "references": ["Gen 10:22"], "cluster": "table_of_nations", "parent": "shem"
+    },
+    "arpachshad": {
+      "id": "arpachshad", "name": "Arpachshad", "meaning": "Healer",
+      "roles": ["son_of_shem"], "covenantLine": true,
+      "references": ["Gen 10:22", "Gen 11:10"], "cluster": "table_of_nations", "parent": "shem"
+    },
+    "lud": {
+      "id": "lud", "name": "Lud", "meaning": "Strife",
+      "roles": ["son_of_shem"], "references": ["Gen 10:22"], "cluster": "table_of_nations", "parent": "shem"
+    },
+    "aram": {
+      "id": "aram", "name": "Aram", "meaning": "High",
+      "roles": ["son_of_shem"], "references": ["Gen 10:22"], "cluster": "table_of_nations", "parent": "shem"
+    },
+    "shelah": {
+      "id": "shelah", "name": "Shelah", "meaning": "Sprout",
+      "roles": ["covenant_heir"], "covenantLine": true,
+      "references": ["Gen 11:12"], "cluster": "patriarchs", "parent": "arpachshad"
+    },
+    "eber": {
+      "id": "eber", "name": "Eber", "meaning": "Beyond",
+      "roles": ["covenant_heir"], "covenantLine": true,
+      "references": ["Gen 11:14"], "cluster": "patriarchs", "parent": "shelah"
+    },
+    "peleg": {
+      "id": "peleg", "name": "Peleg", "meaning": "Division",
+      "roles": ["covenant_heir"], "covenantLine": true,
+      "references": ["Gen 11:16"], "cluster": "patriarchs", "parent": "eber"
+    },
+    "reu": {
+      "id": "reu", "name": "Reu", "meaning": "Friend",
+      "roles": ["covenant_heir"], "covenantLine": true,
+      "references": ["Gen 11:18"], "cluster": "patriarchs", "parent": "peleg"
+    },
+    "serug": {
+      "id": "serug", "name": "Serug", "meaning": "Branch",
+      "roles": ["covenant_heir"], "covenantLine": true,
+      "references": ["Gen 11:20"], "cluster": "patriarchs", "parent": "reu"
+    },
+    "nahor_grandfather": {
+      "id": "nahor_grandfather", "name": "Nahor", "meaning": "Snorting",
+      "roles": ["covenant_heir"], "covenantLine": true,
+      "references": ["Gen 11:22"], "cluster": "patriarchs", "parent": "serug"
+    },
+    "terah": {
+      "id": "terah", "name": "Terah", "meaning": "Delay",
+      "roles": ["father_of_abraham"], "covenantLine": true,
+      "references": ["Gen 11:24"], "cluster": "patriarchs", "parent": "nahor_grandfather"
+    },
+    "abraham": {
+      "id": "abraham", "name": "Abraham", "aliases": ["Abram"],
+      "meaning": "Father of many nations", "roles": ["patriarch", "covenant_head"], "covenantLine": true,
+      "references": ["Gen 12:1-3", "Gen 15:1-21", "Gen 17:1-22"], "cluster": "patriarchs", "parent": "terah"
+    },
+    "nahor_brother": {
+      "id": "nahor_brother", "name": "Nahor", "meaning": "Snorting",
+      "roles": ["brother_of_abraham"], "references": ["Gen 11:27"], "cluster": "patriarchs", "parent": "terah"
+    },
+    "haran": {
+      "id": "haran", "name": "Haran", "meaning": "Mountaineer",
+      "roles": ["brother_of_abraham"], "references": ["Gen 11:27"], "cluster": "patriarchs", "parent": "terah"
+    },
+    "lot": {
+      "id": "lot", "name": "Lot", "meaning": "Covering",
+      "roles": ["nephew_of_abraham"], "references": ["Gen 11:27"], "cluster": "patriarchs", "parent": "haran"
+    },
+    "moab": {
+      "id": "moab", "name": "Moab", "meaning": "From father",
+      "roles": ["ancestor_of_moabites", "outsider"], "outsider": true,
+      "references": ["Gen 19:37"], "cluster": "patriarchs", "parent": "lot"
+    },
+    "benammi": {
+      "id": "benammi", "name": "Ben-Ammi", "meaning": "Son of my people",
+      "roles": ["ancestor_of_ammonites", "outsider"], "outsider": true,
+      "references": ["Gen 19:38"], "cluster": "patriarchs", "parent": "lot"
+    },
+    "milcah": {
+      "id": "milcah", "name": "Milcah", "meaning": "Queen",
+      "roles": ["wife_of_nahor"], "references": ["Gen 11:29"], "cluster": "patriarchs"
+    },
+    "isaac": {
+      "id": "isaac", "name": "Isaac", "meaning": "Laughter",
+      "roles": ["patriarch", "promised_son"], "covenantLine": true,
+      "references": ["Gen 17:19", "Gen 21:3"], "cluster": "patriarchs", "parent": "abraham"
+    },
+    "ishmael": {
+      "id": "ishmael", "name": "Ishmael", "meaning": "God hears",
+      "roles": ["son_of_abraham"], "covenantLine": false,
+      "references": ["Gen 16:11", "Gen 17:20"], "cluster": "patriarchs", "parent": "abraham"
+    },
+    "nebaioth": {
+      "id": "nebaioth", "name": "Nebaioth", "meaning": "Heights",
+      "roles": ["son_of_ishmael"], "references": ["Gen 25:13"], "cluster": "patriarchs", "parent": "ishmael"
+    },
+    "kedar": {
+      "id": "kedar", "name": "Kedar", "meaning": "Dark",
+      "roles": ["son_of_ishmael"], "references": ["Gen 25:13"], "cluster": "patriarchs", "parent": "ishmael"
+    },
+    "jacob": {
+      "id": "jacob", "name": "Jacob", "aliases": ["Israel"],
+      "meaning": "Supplanter / He wrestles with God", "roles": ["patriarch", "father_of_tribes"], "covenantLine": true,
+      "references": ["Gen 25:26", "Gen 32:28"], "cluster": "patriarchs", "parent": "isaac"
+    },
+    "esau": {
+      "id": "esau", "name": "Esau", "aliases": ["Edom"],
+      "meaning": "Hairy", "roles": ["twin_brother", "hunter"], "covenantLine": false,
+      "references": ["Gen 25:25", "Gen 36:1"], "cluster": "patriarchs", "parent": "isaac"
+    },
+    "eliphaz_esau": {
+      "id": "eliphaz_esau", "name": "Eliphaz", "meaning": "My God is fine gold",
+      "roles": ["chief_of_edom"], "references": ["Gen 36:4", "Gen 36:15"], "cluster": "patriarchs", "parent": "esau"
+    },
+    "teman": {
+      "id": "teman", "name": "Teman", "meaning": "Southland",
+      "roles": ["chief_of_edom"], "references": ["Gen 36:11", "Gen 36:15"], "cluster": "patriarchs", "parent": "eliphaz_esau"
+    },
+    "amalek": {
+      "id": "amalek", "name": "Amalek", "meaning": "People of lapping",
+      "roles": ["ancestor_of_amalekites", "outsider"], "outsider": true,
+      "references": ["Gen 36:12", "Exod 17:8"], "cluster": "patriarchs", "parent": "eliphaz_esau"
+    },
+    "reuben": {
+      "id": "reuben", "name": "Reuben", "meaning": "See, a son",
+      "roles": ["tribal_patriarch", "firstborn"], "covenantLine": false,
+      "references": ["Gen 29:32"], "cluster": "twelve_tribes", "parent": "jacob", "mother": "leah"
+    },
+    "simeon": {
+      "id": "simeon", "name": "Simeon", "meaning": "Hearing",
+      "roles": ["tribal_patriarch"], "covenantLine": false,
+      "references": ["Gen 29:33"], "cluster": "twelve_tribes", "parent": "jacob", "mother": "leah"
+    },
+    "levi": {
+      "id": "levi", "name": "Levi", "meaning": "Joined",
+      "roles": ["tribal_patriarch", "priestly_line"], "covenantLine": false, "priestly": true,
+      "references": ["Gen 29:34"], "cluster": "twelve_tribes", "parent": "jacob", "mother": "leah"
+    },
+    "kohath": {
+      "id": "kohath", "name": "Kohath", "meaning": "Assembly",
+      "roles": ["levite_clan_head"], "priestly": true,
+      "references": ["Exod 6:16-18", "Num 3:17-32"], "cluster": "priestly_line", "parent": "levi"
+    },
+    "amram": {
+      "id": "amram", "name": "Amram", "meaning": "Exalted people",
+      "roles": ["levite", "father_of_moses"], "priestly": true,
+      "references": ["Exod 6:18-20"], "cluster": "priestly_line", "parent": "kohath"
+    },
+    "aaron_priest": {
+      "id": "aaron_priest", "name": "Aaron", "aliases": ["Brother of Moses"],
+      "meaning": "Exalted", "roles": ["high_priest", "spokesman"], "priestly": true,
+      "references": ["Exod 6:23", "Lev 8:12"], "cluster": "priestly_line", "parent": "amram"
+    },
+    "eleazar_priest": {
+      "id": "eleazar_priest", "name": "Eleazar", "meaning": "God has helped",
+      "roles": ["high_priest"], "priestly": true,
+      "references": ["Num 3:32", "Josh 14:1"], "cluster": "priestly_line", "parent": "aaron_priest"
+    },
+    "phinehas": {
+      "id": "phinehas", "name": "Phinehas", "meaning": "Dark-skinned",
+      "roles": ["zealous_priest"], "priestly": true,
+      "references": ["Num 25:7-13"], "cluster": "priestly_line", "parent": "eleazar_priest"
+    },
+    "abishua": {
+      "id": "abishua", "name": "Abishua", "meaning": "My father is salvation",
+      "roles": ["high_priest"], "priestly": true,
+      "references": ["1 Chr 6:4"], "cluster": "priestly_line", "parent": "phinehas"
+    },
+    "bukki": {
+      "id": "bukki", "name": "Bukki", "meaning": "Waste/emptying",
+      "roles": ["high_priest"], "priestly": true,
+      "references": ["1 Chr 6:5"], "cluster": "priestly_line", "parent": "abishua"
+    },
+    "uzzi": {
+      "id": "uzzi", "name": "Uzzi", "meaning": "My strength",
+      "roles": ["high_priest"], "priestly": true,
+      "references": ["1 Chr 6:5"], "cluster": "priestly_line", "parent": "bukki"
+    },
+    "zerahiah": {
+      "id": "zerahiah", "name": "Zerahiah", "meaning": "Yahweh has risen",
+      "roles": ["high_priest"], "priestly": true,
+      "references": ["1 Chr 6:6"], "cluster": "priestly_line", "parent": "uzzi"
+    },
+    "meraioth": {
+      "id": "meraioth", "name": "Meraioth", "meaning": "Rebellious" ,
+      "roles": ["high_priest"], "priestly": true,
+      "references": ["1 Chr 6:6"], "cluster": "priestly_line", "parent": "zerahiah"
+    },
+    "amariah": {
+      "id": "amariah", "name": "Amariah", "meaning": "Yahweh has promised",
+      "roles": ["high_priest"], "priestly": true,
+      "references": ["1 Chr 6:7"], "cluster": "priestly_line", "parent": "meraioth"
+    },
+    "ahitub": {
+      "id": "ahitub", "name": "Ahitub", "meaning": "My brother is good",
+      "roles": ["high_priest"], "priestly": true,
+      "references": ["1 Chr 6:7"], "cluster": "priestly_line", "parent": "amariah"
+    },
+    "zadok_high_priest": {
+      "id": "zadok_high_priest", "name": "Zadok", "meaning": "Righteous",
+      "roles": ["high_priest", "supporter_of_david"], "priestly": true,
+      "references": ["2 Sam 8:17", "1 Chr 6:8"], "cluster": "priestly_line", "parent": "ahitub"
+    },
+    "seraiah_priest": {
+      "id": "seraiah_priest", "name": "Seraiah", "meaning": "Yahweh has prevailed",
+      "roles": ["high_priest", "exile_martyr"], "priestly": true,
+      "references": ["2 Kgs 25:18", "1 Chr 6:14"], "cluster": "priestly_line", "parent": "zadok_high_priest"
+    },
+    "jehozadak": {
+      "id": "jehozadak", "name": "Jehozadak", "meaning": "Yahweh is righteous",
+      "roles": ["high_priest", "exile"], "priestly": true,
+      "references": ["1 Chr 6:15"], "cluster": "priestly_line", "parent": "seraiah_priest"
+    },
+    "judah": {
+      "id": "judah", "name": "Judah", "meaning": "Praise",
+      "roles": ["tribal_patriarch", "royal_line"], "covenantLine": true,
+      "references": ["Gen 29:35", "Gen 49:10"], "cluster": "twelve_tribes", "parent": "jacob", "mother": "leah"
+    },
+    "dan": {
+      "id": "dan", "name": "Dan", "meaning": "Judge",
+      "roles": ["tribal_patriarch"], "covenantLine": false,
+      "references": ["Gen 30:6"], "cluster": "twelve_tribes", "parent": "jacob", "mother": "bilhah"
+    },
+    "naphtali": {
+      "id": "naphtali", "name": "Naphtali", "meaning": "Wrestling",
+      "roles": ["tribal_patriarch"], "covenantLine": false,
+      "references": ["Gen 30:8"], "cluster": "twelve_tribes", "parent": "jacob", "mother": "bilhah"
+    },
+    "gad": {
+      "id": "gad", "name": "Gad", "meaning": "Fortune",
+      "roles": ["tribal_patriarch"], "covenantLine": false,
+      "references": ["Gen 30:11"], "cluster": "twelve_tribes", "parent": "jacob", "mother": "zilpah"
+    },
+    "asher": {
+      "id": "asher", "name": "Asher", "meaning": "Happy",
+      "roles": ["tribal_patriarch"], "covenantLine": false,
+      "references": ["Gen 30:13"], "cluster": "twelve_tribes", "parent": "jacob", "mother": "zilpah"
+    },
+    "issachar": {
+      "id": "issachar", "name": "Issachar", "meaning": "Reward",
+      "roles": ["tribal_patriarch"], "covenantLine": false,
+      "references": ["Gen 30:18"], "cluster": "twelve_tribes", "parent": "jacob", "mother": "leah"
+    },
+    "zebulun": {
+      "id": "zebulun", "name": "Zebulun", "meaning": "Dwelling",
+      "roles": ["tribal_patriarch"], "covenantLine": false,
+      "references": ["Gen 30:20"], "cluster": "twelve_tribes", "parent": "jacob", "mother": "leah"
+    },
+    "joseph": {
+      "id": "joseph", "name": "Joseph", "meaning": "He will add",
+      "roles": ["tribal_patriarch", "dreamer", "savior"], "covenantLine": false,
+      "references": ["Gen 30:24", "Gen 37:5"], "cluster": "twelve_tribes", "parent": "jacob", "mother": "rachel"
+    },
+    "benjamin": {
+      "id": "benjamin", "name": "Benjamin", "meaning": "Son of the right hand",
+      "roles": ["tribal_patriarch"], "covenantLine": false,
+      "references": ["Gen 35:18"], "cluster": "twelve_tribes", "parent": "jacob", "mother": "rachel"
+    },
+    "er": {
+      "id": "er", "name": "Er", "meaning": "Watchful",
+      "roles": ["son_of_judah"], "covenantLine": false,
+      "references": ["Gen 38:3"], "cluster": "twelve_tribes", "parent": "judah"
+    },
+    "onan": {
+      "id": "onan", "name": "Onan", "meaning": "Strong",
+      "roles": ["son_of_judah"], "covenantLine": false,
+      "references": ["Gen 38:4"], "cluster": "twelve_tribes", "parent": "judah"
+    },
+    "shelah_judah": {
+      "id": "shelah_judah", "name": "Shelah", "meaning": "Sprout",
+      "roles": ["son_of_judah"], "covenantLine": false,
+      "references": ["Gen 38:5"], "cluster": "twelve_tribes", "parent": "judah"
+    },
+    "perez": {
+      "id": "perez", "name": "Perez", "meaning": "Breach",
+      "roles": ["son_of_judah", "ancestor_of_david"], "covenantLine": true,
+      "references": ["Gen 38:29", "Ruth 4:18"], "cluster": "royal_line", "parent": "judah", "mother": "tamar"
+    },
+    "zerah": {
+      "id": "zerah", "name": "Zerah", "meaning": "Rising",
+      "roles": ["son_of_judah"], "covenantLine": false,
+      "references": ["Gen 38:30"], "cluster": "twelve_tribes", "parent": "judah", "mother": "tamar"
+    },
+    "hezron": {
+      "id": "hezron", "name": "Hezron", "meaning": "Enclosure",
+      "roles": ["ancestor_of_david"], "covenantLine": true,
+      "references": ["Ruth 4:18"], "cluster": "royal_line", "parent": "perez"
+    },
+    "ram": {
+      "id": "ram", "name": "Ram", "meaning": "High",
+      "roles": ["ancestor_of_david"], "covenantLine": true,
+      "references": ["Ruth 4:19"], "cluster": "royal_line", "parent": "hezron"
+    },
+    "amminadab": {
+      "id": "amminadab", "name": "Amminadab", "meaning": "My people are noble",
+      "roles": ["ancestor_of_david"], "covenantLine": true,
+      "references": ["Ruth 4:19"], "cluster": "royal_line", "parent": "ram"
+    },
+    "nahshon": {
+      "id": "nahshon", "name": "Nahshon", "meaning": "Serpent",
+      "roles": ["ancestor_of_david", "tribal_leader"], "covenantLine": true,
+      "references": ["Ruth 4:20", "Num 1:7"], "cluster": "royal_line", "parent": "amminadab"
+    },
+    "salmon": {
+      "id": "salmon", "name": "Salmon", "meaning": "Peaceful",
+      "roles": ["ancestor_of_david"], "covenantLine": true,
+      "references": ["Ruth 4:20"], "cluster": "royal_line", "parent": "nahshon"
+    },
+    "boaz": {
+      "id": "boaz", "name": "Boaz", "meaning": "In him is strength",
+      "roles": ["kinsman_redeemer", "ancestor_of_david"], "covenantLine": true,
+      "references": ["Ruth 2:1", "Ruth 4:21"], "cluster": "royal_line", "parent": "salmon"
+    },
+    "ruth": {
+      "id": "ruth", "name": "Ruth", "meaning": "Friendship",
+      "roles": ["moabitess", "loyal_daughter"], "covenantLine": true, "outsider": true,
+      "references": ["Ruth 1:16", "Ruth 4:13"], "cluster": "royal_line"
+    },
+    "obed": {
+      "id": "obed", "name": "Obed", "meaning": "Servant",
+      "roles": ["grandfather_of_david"], "covenantLine": true,
+      "references": ["Ruth 4:17"], "cluster": "royal_line", "parent": "boaz", "mother": "ruth"
+    },
+    "jesse": {
+      "id": "jesse", "name": "Jesse", "meaning": "Wealthy",
+      "roles": ["father_of_david"], "covenantLine": true,
+      "references": ["1 Sam 16:1"], "cluster": "royal_line", "parent": "obed"
+    },
+    "david": {
+      "id": "david", "name": "David", "meaning": "Beloved",
+      "roles": ["king", "psalmist", "man_after_gods_heart"], "covenantLine": true,
+      "references": ["1 Sam 16:13", "2 Sam 7:12-16"], "cluster": "royal_line", "parent": "jesse"
+    },
+    "solomon": {
+      "id": "solomon", "name": "Solomon", "meaning": "Peace",
+      "roles": ["king", "temple_builder"], "covenantLine": true,
+      "references": ["2 Sam 12:24", "1 Kgs 6:1"], "cluster": "royal_line", "parent": "david"
+    },
+    "nathan_son": {
+      "id": "nathan_son", "name": "Nathan", "meaning": "Gift",
+      "roles": ["son_of_david"], "covenantLine": true,
+      "references": ["2 Sam 5:14", "Luke 3:31"], "cluster": "royal_line", "parent": "david"
+    },
+    "rehoboam": {
+      "id": "rehoboam", "name": "Rehoboam", "meaning": "The people are enlarged",
+      "roles": ["king_of_judah"], "covenantLine": true,
+      "references": ["1 Kgs 11:43", "Matt 1:7"], "cluster": "royal_line", "parent": "solomon"
+    },
+    "abijah": {
+      "id": "abijah", "name": "Abijah", "meaning": "My father is Yahweh",
+      "roles": ["king_of_judah"], "covenantLine": true,
+      "references": ["1 Kgs 14:31", "Matt 1:7"], "cluster": "royal_line", "parent": "rehoboam"
+    },
+    "asa": {
+      "id": "asa", "name": "Asa", "meaning": "Physician",
+      "roles": ["king_of_judah"], "covenantLine": true,
+      "references": ["1 Kgs 15:8", "Matt 1:7"], "cluster": "royal_line", "parent": "abijah"
+    },
+    "jehoshaphat": {
+      "id": "jehoshaphat", "name": "Jehoshaphat", "meaning": "Yahweh has judged",
+      "roles": ["king_of_judah"], "covenantLine": true,
+      "references": ["1 Kgs 22:41", "Matt 1:8"], "cluster": "royal_line", "parent": "asa"
+    },
+    "joram": {
+      "id": "joram", "name": "Joram", "meaning": "Yahweh is exalted",
+      "roles": ["king_of_judah"], "covenantLine": true,
+      "references": ["2 Kgs 8:16", "Matt 1:8"], "cluster": "royal_line", "parent": "jehoshaphat"
+    },
+    "uzziah": {
+      "id": "uzziah", "name": "Uzziah", "aliases": ["Azariah"],
+      "meaning": "My strength is Yahweh", "roles": ["king_of_judah"], "covenantLine": true,
+      "references": ["2 Kgs 14:21", "Matt 1:8"], "cluster": "royal_line", "parent": "joram"
+    },
+    "jotham": {
+      "id": "jotham", "name": "Jotham", "meaning": "Yahweh is perfect",
+      "roles": ["king_of_judah"], "covenantLine": true,
+      "references": ["2 Kgs 15:32", "Matt 1:9"], "cluster": "royal_line", "parent": "uzziah"
+    },
+    "ahaz": {
+      "id": "ahaz", "name": "Ahaz", "meaning": "He has grasped",
+      "roles": ["king_of_judah"], "covenantLine": true,
+      "references": ["2 Kgs 15:38", "Matt 1:9"], "cluster": "royal_line", "parent": "jotham"
+    },
+    "hezekiah": {
+      "id": "hezekiah", "name": "Hezekiah", "meaning": "Yahweh strengthens",
+      "roles": ["king_of_judah", "reformer"], "covenantLine": true,
+      "references": ["2 Kgs 16:20", "Matt 1:9"], "cluster": "royal_line", "parent": "ahaz"
+    },
+    "manasseh": {
+      "id": "manasseh", "name": "Manasseh", "meaning": "Causing to forget",
+      "roles": ["king_of_judah"], "covenantLine": true,
+      "references": ["2 Kgs 20:21", "Matt 1:10"], "cluster": "royal_line", "parent": "hezekiah"
+    },
+    "amon": {
+      "id": "amon", "name": "Amon", "meaning": "Faithful",
+      "roles": ["king_of_judah"], "covenantLine": true,
+      "references": ["2 Kgs 21:18", "Matt 1:10"], "cluster": "royal_line", "parent": "manasseh"
+    },
+    "josiah": {
+      "id": "josiah", "name": "Josiah", "meaning": "Yahweh supports",
+      "roles": ["king_of_judah", "reformer"], "covenantLine": true,
+      "references": ["2 Kgs 21:24", "Matt 1:10"], "cluster": "royal_line", "parent": "amon"
+    },
+    "jeconiah": {
+      "id": "jeconiah", "name": "Jeconiah", "aliases": ["Jehoiachin"],
+      "meaning": "Yahweh establishes", "roles": ["king_of_judah", "exile"], "covenantLine": true,
+      "references": ["2 Kgs 24:6", "Matt 1:11"], "cluster": "post_exile", "parent": "josiah"
+    },
+    "shealtiel": {
+      "id": "shealtiel", "name": "Shealtiel", "meaning": "I have asked of God",
+      "roles": ["post_exilic_leader"], "covenantLine": true,
+      "references": ["1 Chr 3:17", "Matt 1:12"], "cluster": "post_exile", "parent": "jeconiah"
+    },
+    "zerubbabel": {
+      "id": "zerubbabel", "name": "Zerubbabel", "meaning": "Seed of Babylon",
+      "roles": ["post_exilic_leader", "temple_rebuilder"], "covenantLine": true,
+      "references": ["Ezra 3:2", "Matt 1:12"], "cluster": "post_exile", "parent": "shealtiel"
+    },
+    "abiud": {
+      "id": "abiud", "name": "Abiud", "meaning": "My father is majesty",
+      "roles": ["post_exilic_descendant"], "covenantLine": true,
+      "references": ["Matt 1:13"], "cluster": "post_exile", "parent": "zerubbabel"
+    },
+    "eliakim": {
+      "id": "eliakim", "name": "Eliakim", "meaning": "God establishes",
+      "roles": ["post_exilic_descendant"], "covenantLine": true,
+      "references": ["Matt 1:13"], "cluster": "post_exile", "parent": "abiud"
+    },
+    "azor": {
+      "id": "azor", "name": "Azor", "meaning": "Helper",
+      "roles": ["post_exilic_descendant"], "covenantLine": true,
+      "references": ["Matt 1:13"], "cluster": "post_exile", "parent": "eliakim"
+    },
+    "zadok": {
+      "id": "zadok", "name": "Zadok", "meaning": "Righteous",
+      "roles": ["post_exilic_descendant"], "covenantLine": true,
+      "references": ["Matt 1:14"], "cluster": "post_exile", "parent": "azor"
+    },
+    "achim": {
+      "id": "achim", "name": "Achim", "meaning": "Brother",
+      "roles": ["post_exilic_descendant"], "covenantLine": true,
+      "references": ["Matt 1:14"], "cluster": "post_exile", "parent": "zadok"
+    },
+    "eliud": {
+      "id": "eliud", "name": "Eliud", "meaning": "God is my praise",
+      "roles": ["post_exilic_descendant"], "covenantLine": true,
+      "references": ["Matt 1:14"], "cluster": "post_exile", "parent": "achim"
+    },
+    "eleazar": {
+      "id": "eleazar", "name": "Eleazar", "meaning": "God has helped",
+      "roles": ["post_exilic_descendant"], "covenantLine": true,
+      "references": ["Matt 1:15"], "cluster": "post_exile", "parent": "eliud"
+    },
+    "matthan": {
+      "id": "matthan", "name": "Matthan", "meaning": "Gift",
+      "roles": ["post_exilic_descendant"], "covenantLine": true,
+      "references": ["Matt 1:15"], "cluster": "post_exile", "parent": "eleazar"
+    },
+    "jacob_father": {
+      "id": "jacob_father", "name": "Jacob", "meaning": "Supplanter",
+      "roles": ["father_of_joseph"], "covenantLine": true,
+      "references": ["Matt 1:15"], "cluster": "messianic_line", "parent": "matthan"
+    },
+    "joseph_husband": {
+      "id": "joseph_husband", "name": "Joseph", "meaning": "He will add",
+      "roles": ["carpenter", "guardian", "righteous_man"], "covenantLine": true,
+      "references": ["Matt 1:16", "Luke 3:23"], "cluster": "messianic_line", "parent": "jacob_father"
+    },
+    "mary": {
+      "id": "mary", "name": "Mary", "meaning": "Bitter",
+      "roles": ["mother_of_jesus", "virgin"], "covenantLine": true,
+      "references": ["Matt 1:16", "Luke 1:27"], "cluster": "messianic_line"
+    },
+    "jesus": {
+      "id": "jesus", "name": "Jesus", "aliases": ["Christ", "Messiah"],
+      "meaning": "Yahweh saves", "roles": ["messiah", "king", "redeemer"], "covenantLine": true,
+      "references": ["Matt 1:1", "Luke 1:32"], "cluster": "messianic_line", "mother": "mary", "legalFather": "joseph_husband"
+    }
+  },
+  "clusters": {
+    "primeval": {
+      "id": "primeval", "name": "Primeval Period", "period": "Creation - c. 2000 BC",
+      "description": "From Adam through Noah showing the covenant line",
+      "keyThemes": ["Creation", "Fall", "Flood", "Covenant"], "color": "#8B4513",
+      "genealogies": ["genesis_5_seth", "genesis_10_nations"]
+    },
+    "cains_line": {
+      "id": "cains_line", "name": "Cain's Line", "period": "c. 4000-3000 BC",
+      "description": "Civilization apart from God", "keyThemes": ["Violence", "Culture", "Technology"], "color": "#B22222",
+      "genealogies": ["genesis_4_cain"]
+    },
+    "table_of_nations": {
+      "id": "table_of_nations", "name": "Table of Nations", "period": "c. 2500-2000 BC",
+      "description": "70 nations from Noah's sons", "keyThemes": ["Nations", "Languages", "Geography"], "color": "#4682B4",
+      "genealogies": ["genesis_10_nations"]
+    },
+    "patriarchs": {
+      "id": "patriarchs", "name": "Patriarchal Period", "period": "c. 2000-1600 BC",
+      "description": "Abraham, Isaac, Jacob - founding fathers", "keyThemes": ["Promise", "Faith", "Covenant"], "color": "#DAA520",
+      "genealogies": ["genesis_11_shem", "ishmael_line", "esau_line", "lot_line"]
+    },
+    "twelve_tribes": {
+      "id": "twelve_tribes", "name": "Twelve Tribes", "period": "c. 1900-1400 BC",
+      "description": "Jacob's sons who became Israel's tribes", "keyThemes": ["Tribes", "Egypt", "Exodus"], "color": "#9370DB",
+      "genealogies": ["twelve_sons"]
+    },
+    "priestly_line": {
+      "id": "priestly_line", "name": "Priestly Line", "period": "c. 1800-400 BC",
+      "description": "Levi's descendants serving as priests and high priests", "keyThemes": ["Sanctuary", "Sacrifice", "Holiness"], "color": "#2E8B57",
+      "genealogies": ["levitical_high_priests"]
+    },
+    "royal_line": {
+      "id": "royal_line", "name": "Royal Line", "period": "c. 1400-586 BC",
+      "description": "From Judah through David to the kings", "keyThemes": ["Kingship", "Temple", "Prophecy"], "color": "#FF6347",
+      "genealogies": ["ruth_genealogy"]
+    },
+    "post_exile": {
+      "id": "post_exile", "name": "Post-Exile", "period": "536-400 BC",
+      "description": "Return from Babylon and restoration", "keyThemes": ["Restoration", "Temple", "Hope"], "color": "#32CD32",
+      "genealogies": ["ruth_genealogy", "matthew_genealogy"]
+    },
+    "messianic_line": {
+      "id": "messianic_line", "name": "Messianic Line", "period": "400 BC - 4 BC",
+      "description": "The genealogies leading to Christ", "keyThemes": ["Fulfillment", "Incarnation", "Salvation"], "color": "#FFD700",
+      "genealogies": ["matthew_genealogy", "luke_genealogy"]
+    }
+  },
+  "genealogicalLines": {
+    "genesis_4_cain": {
+      "id": "genesis_4_cain", "name": "Cain's Genealogy (Gen 4:17-24)",
+      "description": "Line of civilization apart from God",
+      "persons": ["adam", "cain", "enoch_cain", "irad", "mehujael", "methushael", "lamech_cain", "jabal", "jubal", "tubal_cain", "naamah"]
+    },
+    "genesis_5_seth": {
+      "id": "genesis_5_seth", "name": "Seth's Genealogy (Gen 5:1-32)",
+      "description": "The godly line from Adam to Noah",
+      "persons": ["adam", "seth", "enosh", "kenan", "mahalalel", "jared", "enoch_godly", "methuselah", "lamech_noah", "noah"]
+    },
+    "genesis_10_nations": {
+      "id": "genesis_10_nations", "name": "Table of Nations (Gen 10)",
+      "description": "70 nations from Noah's three sons",
+      "persons": ["noah", "shem", "ham", "japheth", "elam", "asshur", "arpachshad", "aram", "cush", "mizraim", "canaan", "gomer", "magog", "javan"]
+    },
+    "genesis_11_shem": {
+      "id": "genesis_11_shem", "name": "Shem to Abraham (Gen 11:10-26)",
+      "description": "Covenant line narrowing to Abraham",
+      "persons": ["shem", "arpachshad", "shelah", "eber", "peleg", "reu", "serug", "nahor_grandfather", "terah", "abraham"]
+    },
+    "ishmael_line": {
+      "id": "ishmael_line", "name": "Ishmael's Line (Gen 25:12-18)",
+      "description": "Twelve princes promised to Ishmael, showing God's care for Abraham's other son",
+      "persons": ["abraham", "ishmael", "nebaioth", "kedar"]
+    },
+    "esau_line": {
+      "id": "esau_line", "name": "Esau's Chiefs (Gen 36)",
+      "description": "The chiefs of Edom tracing Esau's legacy beside Jacob",
+      "persons": ["isaac", "esau", "eliphaz_esau", "teman", "amalek"]
+    },
+    "lot_line": {
+      "id": "lot_line", "name": "Lot's Sons (Gen 19:30-38)",
+      "description": "Origins of Moab and Ammon alongside Israel",
+      "persons": ["haran", "lot", "moab", "benammi"]
+    },
+    "twelve_sons": {
+      "id": "twelve_sons", "name": "Jacob's Twelve Sons (Gen 29-35)",
+      "description": "The twelve tribes of Israel",
+      "persons": ["jacob", "reuben", "simeon", "levi", "judah", "dan", "naphtali", "gad", "asher", "issachar", "zebulun", "joseph", "benjamin"]
+    },
+    "levitical_high_priests": {
+      "id": "levitical_high_priests", "name": "Levitical High Priests (Exod 6; 1 Chr 6)",
+      "description": "Succession from Levi through Zadok and the exile (condensed milestones)",
+      "persons": ["levi", "kohath", "amram", "aaron_priest", "eleazar_priest", "phinehas", "abishua", "bukki", "uzzi", "zerahiah", "meraioth", "amariah", "ahitub", "zadok_high_priest", "seraiah_priest", "jehozadak"]
+    },
+    "ruth_genealogy": {
+      "id": "ruth_genealogy", "name": "Perez to David (Ruth 4:18-22)",
+      "description": "Royal line through Ruth",
+      "persons": ["perez", "hezron", "ram", "amminadab", "nahshon", "salmon", "boaz", "obed", "jesse", "david"]
+    },
+    "matthew_genealogy": {
+      "id": "matthew_genealogy", "name": "Matthew's Genealogy (Matt 1:1-17)",
+      "description": "Jesus as King through Solomon",
+      "persons": ["abraham", "isaac", "jacob", "judah", "perez", "hezron", "ram", "amminadab", "nahshon", "salmon", "boaz", "obed", "jesse", "david", "solomon", "rehoboam", "abijah", "asa", "jehoshaphat", "joram", "uzziah", "jotham", "ahaz", "hezekiah", "manasseh", "amon", "josiah", "jeconiah", "shealtiel", "zerubbabel", "abiud", "eliakim", "azor", "zadok", "achim", "eliud", "eleazar", "matthan", "jacob_father", "joseph_husband", "jesus"]
+    },
+    "luke_genealogy": {
+      "id": "luke_genealogy", "name": "Luke's Genealogy (Luke 3:23-38)",
+      "description": "Jesus as Son of Man through Nathan",
+      "persons": ["adam", "seth", "enosh", "kenan", "mahalalel", "jared", "enoch_godly", "methuselah", "lamech_noah", "noah", "shem", "arpachshad", "shelah", "eber", "peleg", "reu", "serug", "nahor_grandfather", "terah", "abraham", "isaac", "jacob", "judah", "perez", "hezron", "ram", "amminadab", "nahshon", "salmon", "boaz", "obed", "jesse", "david", "nathan_son", "zerubbabel", "joseph_husband", "jesus"]
+    }
+  },
+  "comparisons": {
+    "messianic": {
+      "id": "messianic",
+      "title": "Messianic Genealogy: Matthew 1 vs Luke 3",
+      "description": "Compare the royal and prophetic presentations of Jesus' lineage.",
+      "left": {
+        "label": "Matthew's Royal Line",
+        "genealogy": "matthew_genealogy",
+        "focus": "Highlights Jesus as the promised Son of David and legal heir to the throne."
+      },
+      "right": {
+        "label": "Luke's Universal Line",
+        "genealogy": "luke_genealogy",
+        "focus": "Traces Jesus back to Adam to show him as Son of Man for all peoples."
+      },
+      "notes": [
+        {
+          "type": "difference",
+          "heading": "Royal vs. Prophetic Branch",
+          "body": "Matthew follows Solomon and the kings of Judah; Luke follows Nathan, another son of David."
+        },
+        {
+          "type": "convergence",
+          "heading": "Shared Exilic Convergence",
+          "body": "Both lines meet again with Shealtiel and Zerubbabel, culminating in Joseph and Jesus."
+        },
+        {
+          "type": "extension",
+          "heading": "Luke Extends to Adam",
+          "body": "Luke continues past Abraham to Adam to emphasize God's plan for all humanity."
+        }
+      ]
+    }
+  }
+}

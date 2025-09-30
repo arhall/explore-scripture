@@ -1,0 +1,2817 @@
+---
+layout: base.njk
+title: Biblical Genealogies
+description: Explore the "scarlet thread" of covenant promises from Adam to Jesus
+permalink: /genealogies/
+eleventyNavigation:
+  key: Genealogies
+  order: 4
+---
+
+<div class="genealogy-explorer">
+  <!-- Header -->
+  <header class="genealogy-header">
+    <h1>Biblical Genealogies</h1>
+    <p class="subtitle">Explore the "scarlet thread" of covenant promises from Adam to Jesus</p>
+
+  </header>
+
+  <!-- Primary Tab Navigation -->
+  <div class="genealogy-primary-tabs" role="tablist" aria-label="Genealogy resources">
+    <button class="primary-tab active" role="tab" aria-selected="true" aria-controls="tab-interactive" id="tab-button-interactive" data-target="interactive">Interactive Family Tree</button>
+    <button class="primary-tab" role="tab" aria-selected="false" aria-controls="tab-poster" id="tab-button-poster" data-target="poster">Poster Overview</button>
+    <button class="primary-tab" role="tab" aria-selected="false" aria-controls="tab-resources" id="tab-button-resources" data-target="resources">Study Articles</button>
+  </div>
+
+  <main class="genealogy-primary-panels">
+    <section id="tab-interactive" class="primary-panel active" role="tabpanel" aria-labelledby="tab-button-interactive">
+      <div class="tree-shell">
+        <header class="tree-shell-header">
+          <div>
+            <h3>Interactive Bible Family Tree</h3>
+            <p class="tree-shell-subtitle">Pan and zoom through the covenant line from Adam to Jesus. Highlight key roles or hide labels as needed.</p>
+          </div>
+          <a class="tree-shell-link" href="https://onemessianicgentile.com/biblefamilytree/default.html" target="_blank" rel="noopener">View original project ↗</a>
+        </header>
+
+        <div class="family-tree" data-component="bible-family-tree">
+          <div class="family-tree-controls" role="group" aria-label="Tree display options">
+            <div class="tree-row tree-row--primary">
+              <label class="tree-select" for="tree-view-select">
+                <span class="tree-select-label">View</span>
+                <select id="tree-view-select" aria-label="Select genealogy view"></select>
+              </label>
+              <div class="tree-breadcrumb" id="tree-breadcrumb" aria-live="polite">Whole Bible Genealogy</div>
+              <div class="tree-actions">
+                <button type="button" class="tree-action tree-action--secondary" id="tree-collapse-all">Minimize all</button>
+                <button type="button" class="tree-action" id="tree-expand-all">Show entire tree</button>
+                <button type="button" class="tree-action" id="tree-zoom-in">Zoom in</button>
+                <button type="button" class="tree-action tree-action--secondary" id="tree-zoom-out">Zoom out</button>
+                <button type="button" class="tree-action tree-action--ghost" id="tree-fullscreen-toggle">Full screen</button>
+                <button type="button" class="tree-action tree-action--secondary" id="tree-fit-tree">Fit tree</button>
+                <button type="button" class="tree-action tree-action--secondary" id="tree-fit-focus" disabled>Fit selection</button>
+              </div>
+            </div>
+            <div class="tree-row tree-row--search">
+              <div class="tree-search">
+                <label class="tree-search-label" for="tree-search-input">Find a person</label>
+                <div class="tree-search-controls">
+                  <input id="tree-search-input" type="search" placeholder="Search name (e.g., David)" autocomplete="off" enterkeyhint="search" />
+                  <button type="button" class="tree-action" id="tree-search-button">Search</button>
+                  <button type="button" class="tree-action tree-action--secondary" id="tree-search-clear">Clear</button>
+                </div>
+              </div>
+              <div class="tree-legend" aria-hidden="true">
+                <span class="legend-item"><span class="legend-dot legend-dot--messiah"></span> Messiah line</span>
+                <span class="legend-item"><span class="legend-dot legend-dot--priest"></span> Levitical priest</span>
+                <span class="legend-item"><span class="legend-dot legend-dot--judge"></span> Judge</span>
+                <span class="legend-item"><span class="legend-dot legend-dot--tribe"></span> Tribe root</span>
+              </div>
+            </div>
+            <div class="tree-row tree-row--secondary">
+              <label class="tree-control">
+                <input id="toggle-messiah" type="checkbox" checked />
+                <span>Highlight Messiah line</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="family-tree-meta" id="family-tree-meta" hidden>
+            <h4 id="family-tree-meta-title"></h4>
+            <p id="family-tree-meta-tooltip" class="family-tree-meta-tooltip"></p>
+            <p id="family-tree-meta-blurb"></p>
+            <ul id="family-tree-meta-scripture" class="family-tree-meta-scripture"></ul>
+          </div>
+
+            <div class="family-tree-stage">
+              <div id="family-tree-status" class="family-tree-status" role="status" aria-live="polite" hidden></div>
+              <div id="family-tree-tooltip" class="family-tree-tooltip" role="status" aria-live="polite" hidden></div>
+              <div class="family-tree-hint" hidden>Scroll to zoom • drag to pan • tap with two fingers to pan on mobile</div>
+              <div id="tree-confirm" class="tree-confirm" aria-hidden="true">
+                <div class="tree-confirm-dialog" role="dialog" aria-modal="true" aria-labelledby="tree-confirm-title">
+                  <h4 id="tree-confirm-title">Show the entire family tree?</h4>
+                  <p>The complete view has over a thousand nodes and can feel overwhelming on smaller screens. Continue?</p>
+                  <div class="tree-confirm-actions">
+                    <button type="button" class="tree-action tree-action--secondary" id="tree-confirm-cancel">Cancel</button>
+                    <button type="button" class="tree-action" id="tree-confirm-accept">Show everything</button>
+                  </div>
+                </div>
+              </div>
+              <svg id="family-tree-svg" role="img" aria-label="Interactive visualization of the Bible family tree"></svg>
+              <div class="family-tree-minimap" id="family-tree-minimap" aria-hidden="true">
+                <svg id="family-tree-minimap-svg"></svg>
+              </div>
+              <aside class="family-tree-details" id="tree-details" aria-live="polite">
+                <button type="button" class="details-toggle" id="tree-details-toggle" aria-expanded="true">Hide details</button>
+                <div class="details-inner" id="tree-details-content">
+                  <h4 id="tree-details-name">Select a person</h4>
+                  <p id="tree-details-tooltip" class="details-tooltip">Click a name in the tree to view biography and references.</p>
+                  <div id="tree-details-meta" class="details-meta"></div>
+                </div>
+              </aside>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="tab-poster" class="primary-panel" role="tabpanel" aria-labelledby="tab-button-poster">
+      <div class="poster-header">
+        <h3>Biblical Family Tree Poster</h3>
+        <div class="poster-actions">
+          <a href="https://onemessianicgentile.com/biblefamilytree/default.html" target="_blank" rel="noopener" class="poster-link">Original Interactive Site ↗</a>
+          <a href="https://biblefamilytree.info/wp-content/uploads/2016/09/BiblicalFamilyTree.pdf" target="_blank" rel="noopener" class="poster-link">Download High Resolution PDF ↗</a>
+        </div>
+      </div>
+      <div class="poster-viewer">
+        <div class="poster-scroll">
+          <img src="/assets/bible-geneaology.png" alt="Comprehensive biblical family tree poster" />
+        </div>
+      </div>
+      <p class="poster-footnote">Swipe horizontally or vertically to navigate on mobile. For the clearest view, open the high-resolution PDF.</p>
+    </section>
+
+    <section id="tab-resources" class="primary-panel" role="tabpanel" aria-labelledby="tab-button-resources">
+      <div class="resources-card">
+        <h3>Further Study</h3>
+        <p>Explore in-depth discussions on biblical genealogies:</p>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Genealogies_in_the_Bible" target="_blank" rel="noopener">Genealogies in the Bible &mdash; Wikipedia overview ↗</a></li>
+          <li><a href="https://www.desiringgod.org/articles/the-bibles-family-trees" target="_blank" rel="noopener">Desiring God: The Bible's Family Trees ↗</a></li>
+        </ul>
+        <p class="resources-note">Both links open in a new tab so you can keep the genealogy explorer handy.</p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script defer>
+  (function () {
+    const tabButtons = Array.from(document.querySelectorAll('.primary-tab'));
+    const panels = Array.from(document.querySelectorAll('.primary-panel'));
+
+    function debugLog(label, payload) {
+      if (!window.__GENEALOGY_DEBUG) {
+        window.__GENEALOGY_DEBUG = {};
+      }
+      try {
+        const clone = typeof payload === 'object' && payload !== null
+          ? JSON.parse(JSON.stringify(payload))
+          : payload;
+        if (!Array.isArray(window.__GENEALOGY_DEBUG[label])) {
+          window.__GENEALOGY_DEBUG[label] = [];
+        }
+        window.__GENEALOGY_DEBUG[label].push(clone);
+        console.log(label, clone);
+      } catch (error) {
+        console.log(label, payload, '(failed to stringify)', error);
+      }
+    }
+
+    tabButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const target = button.dataset.target;
+        tabButtons.forEach((btn) => {
+          const isActive = btn === button;
+          btn.classList.toggle('active', isActive);
+          btn.setAttribute('aria-selected', String(isActive));
+        });
+
+        panels.forEach((panel) => {
+          const matches = panel.id === `tab-${target}`;
+          panel.classList.toggle('active', matches);
+          panel.hidden = !matches;
+        });
+      });
+    });
+
+    panels.forEach((panel, index) => {
+      if (!panel.classList.contains('active')) {
+        panel.hidden = true;
+      } else if (index === 0) {
+        panel.hidden = false;
+      }
+    });
+
+    const svgEl = document.getElementById('family-tree-svg');
+    const stageEl = document.querySelector('.family-tree-stage');
+    const tooltipEl = document.getElementById('family-tree-tooltip');
+    const statusEl = document.getElementById('family-tree-status');
+    const hintEl = document.querySelector('.family-tree-hint');
+    const toggleMessiah = document.getElementById('toggle-messiah');
+    let focusAnnouncementTimeout = null;
+
+    if (!svgEl || !stageEl) {
+      return;
+    }
+
+    setStatus('Loading visualization library…');
+
+    ensureD3()
+      .then((d3) => {
+        setStatus('Loading family tree data…');
+        initializeTree(d3);
+      })
+      .catch((error) => {
+        console.error('Failed to load D3 for family tree:', error);
+        setStatus('Interactive family tree unavailable: D3 failed to load.', true);
+      });
+
+    function initializeTree(d3) {
+      const viewSelect = document.getElementById('tree-view-select');
+      const expandBtn = document.getElementById('tree-expand-all');
+      const collapseBtn = document.getElementById('tree-collapse-all');
+      const fullscreenBtn = document.getElementById('tree-fullscreen-toggle');
+      const fitTreeBtn = document.getElementById('tree-fit-tree');
+      const fitSelectionBtn = document.getElementById('tree-fit-focus');
+      const zoomInBtn = document.getElementById('tree-zoom-in');
+      const zoomOutBtn = document.getElementById('tree-zoom-out');
+      const searchInput = document.getElementById('tree-search-input');
+      const searchButton = document.getElementById('tree-search-button');
+      const searchClear = document.getElementById('tree-search-clear');
+      const confirmOverlay = document.getElementById('tree-confirm');
+      const confirmAccept = document.getElementById('tree-confirm-accept');
+      const confirmCancel = document.getElementById('tree-confirm-cancel');
+      const metaContainer = document.getElementById('family-tree-meta');
+      const metaTitle = document.getElementById('family-tree-meta-title');
+      const metaTooltip = document.getElementById('family-tree-meta-tooltip');
+      const metaBlurb = document.getElementById('family-tree-meta-blurb');
+      const metaScripture = document.getElementById('family-tree-meta-scripture');
+      const breadcrumbEl = document.getElementById('tree-breadcrumb');
+
+      const detailsEl = document.getElementById('tree-details');
+      const detailsToggle = document.getElementById('tree-details-toggle');
+      const detailsNameEl = document.getElementById('tree-details-name');
+      const detailsTooltipEl = document.getElementById('tree-details-tooltip');
+      const detailsMetaEl = document.getElementById('tree-details-meta');
+
+      const minimapContainer = document.getElementById('family-tree-minimap');
+      const minimapSvg = minimapContainer ? d3.select('#family-tree-minimap-svg') : null;
+      const minimapState = {
+        width: 220,
+        height: 150,
+        margin: 12,
+        scale: 1,
+        offsetX: 0,
+        offsetY: 0,
+        viewportWidth: 0,
+        viewportHeight: 0
+      };
+      function minMapScale(boundsWidth, boundsHeight, paddingValue) {
+        const usableWidth = Math.max(1, minimapState.width - paddingValue * 2);
+        const usableHeight = Math.max(1, minimapState.height - paddingValue * 2);
+        const scaleWidth = boundsWidth > 0 ? usableWidth / boundsWidth : Number.POSITIVE_INFINITY;
+        const scaleHeight = boundsHeight > 0 ? usableHeight / boundsHeight : Number.POSITIVE_INFINITY;
+        let scale = Math.min(scaleWidth, scaleHeight);
+        if (!Number.isFinite(scale) || scale <= 0) {
+          scale = 1;
+        }
+        return Math.min(5, Math.max(0.02, scale));
+      }
+      const minimapLinksGroup = minimapSvg ? minimapSvg.append('g').attr('class', 'minimap-links') : null;
+      const minimapNodesGroup = minimapSvg ? minimapSvg.append('g').attr('class', 'minimap-nodes') : null;
+      const minimapViewport = minimapSvg ? minimapSvg.append('rect').attr('class', 'minimap-viewport') : null;
+      let minimapViewportDragging = false;
+      let minimapUpdateScheduled = false;
+
+      const svg = d3.select(svgEl);
+      const rootGroup = svg.append('g');
+      const linkGroup = rootGroup.append('g').attr('class', 'tree-links');
+      const nodeGroup = rootGroup.append('g').attr('class', 'tree-nodes');
+      const treeWrapper = stageEl.closest('.family-tree');
+
+      if (minimapSvg) {
+        updateMinimapDimensions(true);
+        minimapSvg.on('click', (event) => {
+          if (event.defaultPrevented) return;
+          const pointer = d3.pointer(event, minimapSvg.node());
+          centerOnMinimapCoordinates(pointer[0], pointer[1]);
+        });
+      }
+
+      if (minimapViewport) {
+        const minimapDrag = d3.drag()
+          .on('start', () => {
+            minimapViewportDragging = true;
+          })
+          .on('drag', (event) => {
+            dragMinimapViewport(event.x, event.y);
+          })
+          .on('end', () => {
+            minimapViewportDragging = false;
+            scheduleMinimapViewportUpdate();
+          });
+        minimapViewport.call(minimapDrag);
+      }
+
+      const zoom = d3.zoom()
+        .scaleExtent([0.01, 3.2])
+        .filter((event) => {
+          if (event.type === 'dblclick') {
+            return true;
+          }
+          if (event.type === 'wheel') return false;
+          return !event.ctrlKey || event.type.startsWith('touch');
+        })
+        .on('zoom', (event) => {
+          rootGroup.attr('transform', event.transform);
+          state.currentTransform = event.transform;
+          applyZoomClass(event.transform.k);
+          scheduleMinimapViewportUpdate({ immediate: true });
+        });
+      svg.call(zoom);
+      svg.on('dblclick.zoom', null);
+      svg.on('dblclick', (event) => {
+        event.preventDefault();
+        const pointer = d3.pointer(event, svg.node());
+        svg.transition().duration(240).call(zoom.scaleBy, 1.45, pointer);
+      });
+      stageEl.addEventListener('wheel', handleWheel, { passive: false });
+
+      resizeSvg();
+      window.addEventListener('resize', handleResize);
+
+      const state = {
+        dataset: null,
+        currentView: null,
+        treeRoot: null,
+        isExpandedAll: false,
+        searchIndex: [],
+        highlightId: null,
+        currentTransform: d3.zoomIdentity,
+        tribeColorById: new Map(),
+        minimapNodes: null,
+        minimapLinks: null
+      };
+
+      const TRIBE_COLOR_PALETTE = {
+        Reuben: '#ef4444',
+        Simeon: '#f97316',
+        Levi: '#16a34a',
+        Judah: '#facc15',
+        Dan: '#0ea5e9',
+        Naphtali: '#6366f1',
+        Gad: '#8b5cf6',
+        Asher: '#ec4899',
+        Issachar: '#14b8a6',
+        Zebulun: '#06b6d4',
+        Joseph: '#10b981',
+        Benjamin: '#9333ea'
+      };
+
+      const treeLayout = d3.tree()
+        .nodeSize([140, 120])
+        .separation((a, b) => (a.parent === b.parent ? 1.1 : 1.3));
+
+      applyZoomClass(state.currentTransform.k);
+
+      const diagonal = d3.linkVertical()
+        .x((d) => d.x)
+        .y((d) => d.y);
+
+      let highlightMessiah = toggleMessiah ? toggleMessiah.checked : true;
+
+      loadTreeData()
+        .then((data) => {
+          state.dataset = prepareViews(data);
+          populateViewSelect(state.dataset);
+          setStatus('');
+          renderView(state.dataset.master);
+          if (hintEl) {
+            hintEl.hidden = false;
+          }
+        })
+        .catch((error) => {
+          console.error('Failed to load tree data:', error);
+          setStatus('Unable to load the interactive family tree right now.', true);
+        });
+
+      if (toggleMessiah) {
+        toggleMessiah.addEventListener('change', () => {
+          highlightMessiah = toggleMessiah.checked;
+          if (state.treeRoot) {
+            update(state.treeRoot);
+          }
+          applyToggleStates();
+        });
+      }
+
+      viewSelect?.addEventListener('change', () => {
+        const nextView = resolveView(viewSelect.value, state.dataset);
+        if (nextView) {
+          renderView(nextView);
+        }
+      });
+
+      hideConfirm({ restoreFocus: false });
+
+      searchButton?.addEventListener('click', () => {
+        if (!state.treeRoot) return;
+        handleSearch((searchInput?.value || '').trim());
+      });
+
+      searchInput?.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+          event.preventDefault();
+          handleSearch((searchInput?.value || '').trim());
+        }
+      });
+
+      searchClear?.addEventListener('click', () => {
+        if (searchInput) {
+          searchInput.value = '';
+        }
+        clearSearchHighlight();
+        update(state.treeRoot || {});
+        applyToggleStates();
+        setStatus('');
+      });
+
+      zoomInBtn?.addEventListener('click', () => {
+        svg.transition().duration(300).call(zoom.scaleBy, 1.15);
+      });
+
+      zoomOutBtn?.addEventListener('click', () => {
+        svg.transition().duration(300).call(zoom.scaleBy, 1 / 1.15);
+      });
+
+      detailsToggle?.addEventListener('click', () => {
+        if (!detailsEl) return;
+        const collapsed = detailsEl.classList.toggle('collapsed');
+        detailsToggle.textContent = collapsed ? 'Show details' : 'Hide details';
+        detailsToggle.setAttribute('aria-expanded', String(!collapsed));
+      });
+
+      document.addEventListener('keydown', (event) => {
+        const targetTag = event.target?.tagName;
+        if (targetTag === 'INPUT' || targetTag === 'TEXTAREA' || event.target?.isContentEditable) {
+          return;
+        }
+
+        if (event.key === 'Escape' && treeWrapper?.classList.contains('fullscreen-active')) {
+          toggleFullscreen(false);
+          return;
+        }
+
+        if (event.key === '+' || event.key === '=' || event.key === 'Add') {
+          event.preventDefault();
+          svg.transition().duration(200).call(zoom.scaleBy, 1.15);
+          return;
+        }
+
+        if (event.key === '-' || event.key === '_' || event.key === 'Subtract') {
+          event.preventDefault();
+          svg.transition().duration(200).call(zoom.scaleBy, 1 / 1.15);
+          return;
+        }
+
+        if (event.key === 'ArrowUp') {
+          event.preventDefault();
+          panBy(0, 80);
+          return;
+        }
+        if (event.key === 'ArrowDown') {
+          event.preventDefault();
+          panBy(0, -80);
+          return;
+        }
+        if (event.key === 'ArrowLeft') {
+          event.preventDefault();
+          panBy(80, 0);
+          return;
+        }
+        if (event.key === 'ArrowRight') {
+          event.preventDefault();
+          panBy(-80, 0);
+          return;
+        }
+
+        if (event.key?.toLowerCase() === 'f') {
+          event.preventDefault();
+          if (event.shiftKey && state.focusNode) {
+            fitToNode(state.focusNode, true);
+          } else {
+            fitToStage(true);
+          }
+        }
+      });
+
+      function toggleFullscreen(forceValue) {
+        if (!treeWrapper) return;
+        const shouldEnable = typeof forceValue === 'boolean'
+          ? forceValue
+          : !treeWrapper.classList.contains('fullscreen-active');
+
+        if (shouldEnable) {
+          treeWrapper.classList.add('fullscreen-active');
+          document.body.classList.add('tree-fullscreen-lock');
+          fullscreenBtn?.classList.add('active');
+          if (fullscreenBtn) {
+            fullscreenBtn.textContent = 'Exit full screen';
+          }
+        } else {
+          treeWrapper.classList.remove('fullscreen-active');
+          document.body.classList.remove('tree-fullscreen-lock');
+          fullscreenBtn?.classList.remove('active');
+          if (fullscreenBtn) {
+            fullscreenBtn.textContent = 'Full screen';
+          }
+        }
+
+        window.requestAnimationFrame(() => {
+          resizeSvg();
+          updateMinimapDimensions();
+          fitToStage(false);
+          scheduleMinimapViewportUpdate();
+        });
+      }
+
+      let tooltipHover = false;
+      let tooltipHideTimeout = null;
+
+      tooltipEl?.addEventListener('mouseenter', () => {
+        tooltipHover = true;
+      });
+
+      tooltipEl?.addEventListener('mouseleave', () => {
+        tooltipHover = false;
+        hideTooltip();
+      });
+
+      expandBtn?.addEventListener('click', () => {
+        if (!state.treeRoot) return;
+        if (!hasCollapsedNodes(state.treeRoot)) {
+          return;
+        }
+        showConfirm();
+      });
+
+      collapseBtn?.addEventListener('click', () => {
+        if (!state.treeRoot) return;
+        state.isExpandedAll = false;
+        collapseAll(state.treeRoot);
+        applyInitialVisibility(state.treeRoot, state.currentView?.type);
+        clearSearchHighlight();
+        setFocusNode(null);
+        update(state.treeRoot);
+        applyToggleStates();
+        scheduleFitToStage({ animate: true, extraFrames: 1, delay: 320 });
+      });
+
+      fullscreenBtn?.addEventListener('click', () => {
+        toggleFullscreen();
+      });
+
+      fitTreeBtn?.addEventListener('click', () => {
+        scheduleFitToStage({ resetViewport: true, animate: true, delay: 160 });
+      });
+
+      fitSelectionBtn?.addEventListener('click', () => {
+        if (state.focusNode) {
+          fitToNode(state.focusNode, true);
+        }
+      });
+
+      confirmCancel?.addEventListener('click', (event) => {
+        event?.preventDefault();
+        event?.stopPropagation();
+        hideConfirm();
+      });
+
+      confirmAccept?.addEventListener('click', (event) => {
+        event?.preventDefault();
+        event?.stopPropagation();
+        hideConfirm();
+        if (!state.treeRoot) return;
+        state.isExpandedAll = true;
+        expandAll(state.treeRoot);
+        update(state.treeRoot);
+        applyToggleStates();
+        scheduleFitToStage({ resetViewport: true, animate: true, extraFrames: 1, delay: 360 });
+      });
+
+      function loadTreeData() {
+        return fetch('/assets/data/bible-tree.json', { credentials: 'same-origin' })
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error(`Request failed with status ${response.status}`);
+            }
+            return response.json();
+          });
+      }
+
+      function prepareViews(raw) {
+        const master = {
+          type: 'master',
+          slug: 'master',
+          title: raw?.master?.title || 'Whole Bible Genealogy',
+          tree: raw?.master?.tree
+        };
+
+        const clusters = Array.isArray(raw?.clusters) ? raw.clusters.map((entry) => ({
+          type: 'cluster',
+          slug: entry.slug,
+          title: entry.title || formatLabel(entry.slug),
+          tooltip: entry.tooltip || null,
+          blurb: entry.blurb || null,
+          scripture: Array.isArray(entry.scripture) ? entry.scripture : [],
+          tree: entry.tree
+        })) : [];
+
+        return { master, clusters };
+      }
+
+      function populateViewSelect(dataset) {
+        if (!viewSelect) return;
+        const options = [
+          { value: 'master', label: dataset.master.title || 'Whole Bible Overview' },
+          ...dataset.clusters.map((cluster) => ({
+            value: `cluster:${cluster.slug}`,
+            label: cluster.title || formatLabel(cluster.slug)
+          }))
+        ];
+
+        viewSelect.innerHTML = options
+          .map((opt) => `<option value="${opt.value}">${opt.label}</option>`)
+          .join('');
+        viewSelect.value = 'master';
+      }
+
+      function resolveView(value, dataset) {
+        if (!value || !dataset) return null;
+        if (value === 'master') {
+          return dataset.master;
+        }
+        if (value.startsWith('cluster:')) {
+          const slug = value.split(':')[1];
+          return dataset.clusters.find((cluster) => cluster.slug === slug) || null;
+        }
+        return null;
+      }
+
+      function renderView(view, { animateFit = true } = {}) {
+        if (!view?.tree) {
+          setStatus('Selected view is unavailable.', true);
+          return;
+        }
+
+        state.currentView = view;
+        state.isExpandedAll = false;
+        hideConfirm({ restoreFocus: false });
+
+        if (viewSelect) {
+          const value = view.type === 'master' ? 'master' : `cluster:${view.slug}`;
+          if (viewSelect.value !== value) {
+            viewSelect.value = value;
+          }
+        }
+
+        const cloned = cloneTree(view.tree);
+        state.searchIndex = buildSearchIndexFromData(cloned);
+        state.highlightId = null;
+        if (searchInput) {
+          searchInput.value = '';
+        }
+        state.tribeColorById = collectTribeColors(cloned);
+
+        const root = d3.hierarchy(cloned);
+        root.x0 = root.x;
+        root.y0 = root.y;
+
+        collapseAll(root);
+        applyInitialVisibility(root, view.type);
+
+        setFocusNode(null);
+        state.treeRoot = root;
+        updateMeta(view);
+        update(root);
+        applyToggleStates();
+        scheduleFitToStage({ resetViewport: true, animate: animateFit, extraFrames: 1, delay: 320 });
+      }
+
+      function update(source) {
+        if (!state.treeRoot) return;
+
+        treeLayout(state.treeRoot);
+        const nodes = state.treeRoot.descendants();
+
+        const MIN_HORIZONTAL_COMPRESSION = 0.2;
+        let compression = 1;
+        if (stageEl?.clientWidth) {
+          const nodeMinX = d3.min(nodes, (node) => node.x) ?? 0;
+          const nodeMaxX = d3.max(nodes, (node) => node.x) ?? 0;
+          const actualWidth = Math.max(1, nodeMaxX - nodeMinX);
+          const availableWidth = Math.max(260, (stageEl.clientWidth || 1000) - 2 * 80);
+          const targetCompression = Math.min(1, availableWidth / actualWidth);
+          compression = targetCompression < MIN_HORIZONTAL_COMPRESSION ? MIN_HORIZONTAL_COMPRESSION : targetCompression;
+          if (compression < 1) {
+            nodes.forEach((node) => {
+              node.x = nodeMinX + (node.x - nodeMinX) * compression;
+            });
+          }
+          debugLog('[Genealogy][Layout] Horizontal compression', {
+            compression,
+            actualWidth,
+            availableWidth,
+            nodeMinX,
+            nodeMaxX,
+            minCompression: MIN_HORIZONTAL_COMPRESSION
+          });
+        }
+
+        const hideDenseLabels = compression < 0.48;
+        const hideLeafLabels = compression < 0.32;
+        nodes.forEach((node) => {
+          const isLeaf = !node.children || node.children.length === 0;
+          const isHighlight = state.highlightId === node.data.id;
+          const depth = node.depth ?? 0;
+          let hide = false;
+          if (!isHighlight) {
+            if (hideLeafLabels && depth >= 3 && isLeaf) {
+              hide = true;
+            } else if (hideDenseLabels && depth >= 4) {
+              hide = true;
+            }
+          }
+          node.shouldHideLabel = hide;
+        });
+
+        const links = state.treeRoot.links();
+        const duration = 300;
+
+        const linkSel = linkGroup.selectAll('path.link')
+          .data(links, (d) => d.target.data.id);
+
+        const linkEnter = linkSel.enter()
+          .append('path')
+          .attr('class', (d) => `link${highlightMessiah && isMessiahLink(d) ? ' link--messiah' : ''}`)
+          .attr('d', () => {
+            const o = { x: source.x0 ?? 0, y: source.y0 ?? 0 };
+            return diagonal({ source: o, target: o });
+          });
+
+        linkEnter.merge(linkSel)
+          .transition()
+          .duration(duration)
+          .attr('class', (d) => `link${highlightMessiah && isMessiahLink(d) ? ' link--messiah' : ''}`)
+          .attr('d', diagonal);
+
+        linkSel.exit()
+          .transition()
+          .duration(duration)
+          .attr('d', () => {
+            const o = { x: source.x ?? 0, y: source.y ?? 0 };
+            return diagonal({ source: o, target: o });
+          })
+          .remove();
+
+        const nodeSel = nodeGroup.selectAll('g.node')
+          .data(nodes, (d) => d.data.id);
+
+        const nodeEnter = nodeSel.enter()
+          .append('g')
+          .attr('class', 'node')
+          .attr('transform', () => `translate(${source.x0 ?? 0},${source.y0 ?? 0})`)
+          .on('click', (event, d) => {
+            event.stopPropagation();
+            setFocusNode(d);
+            if (event.altKey) {
+              fitToNode(d, true);
+              return;
+            }
+            toggleNode(d);
+            update(d);
+            applyToggleStates();
+          })
+          .on('mousemove', (event, d) => showTooltip(event, d.data))
+          .on('mouseleave', hideTooltip);
+
+        nodeEnter.append('circle')
+          .attr('class', 'main-node')
+          .attr('r', 0)
+          .classed('messiah', (d) => highlightMessiah && !!d.data.messiahLine)
+          .each(function(d) {
+            styleNodeCircle(d3.select(this), d);
+          })
+          .transition()
+          .duration(duration)
+          .attr('r', 9);
+
+        nodeEnter.append('circle')
+          .attr('class', 'meta-dot')
+          .attr('cx', 14)
+          .attr('cy', -12)
+          .attr('r', (d) => (d.data.levitical || d.data.judge) ? 4 : 0)
+          .classed('meta-priest', (d) => !!d.data.levitical)
+          .classed('meta-judge', (d) => !!d.data.judge);
+
+        nodeEnter.append('text')
+          .attr('dy', '0.32em')
+          .attr('x', 16)
+          .attr('y', 0)
+          .attr('text-anchor', 'start')
+          .text((d) => d.data.name || '');
+
+        const nodeMerge = nodeEnter.merge(nodeSel);
+        nodeMerge.transition()
+          .duration(duration)
+          .attr('transform', (d) => `translate(${d.x},${d.y})`);
+
+        nodeMerge
+          .classed('node-highlighted', (d) => state.highlightId === d.data.id);
+
+        nodeMerge.classed('node-label-hidden', (d) => d.shouldHideLabel);
+
+        nodeMerge.select('circle.main-node')
+          .classed('has-children', (d) => !!(d.children || d._children))
+          .classed('collapsed', (d) => !!d._children)
+          .classed('expanded', (d) => !!d.children && !d._children)
+          .classed('messiah', (d) => highlightMessiah && !!d.data.messiahLine)
+          .each(function(d) {
+            styleNodeCircle(d3.select(this), d);
+          });
+
+        nodeMerge.select('.meta-dot')
+          .attr('r', (d) => (d.data.levitical || d.data.judge) ? 4 : 0)
+          .classed('meta-priest', (d) => !!d.data.levitical)
+          .classed('meta-judge', (d) => !!d.data.judge);
+
+        nodeMerge.select('text')
+          .text((d) => d.data.name || '')
+          .classed('node-label-hidden', (d) => d.shouldHideLabel)
+          .attr('opacity', (d) => (d.shouldHideLabel ? 0 : 1));
+
+        nodeSel.exit()
+          .transition()
+          .duration(duration)
+          .attr('transform', () => `translate(${source.x ?? 0},${source.y ?? 0})`)
+          .remove();
+
+        nodes.forEach((node) => {
+          node.x0 = node.x;
+          node.y0 = node.y;
+        });
+
+        const bounds = rootGroup.node()?.getBBox();
+        if (bounds && Number.isFinite(bounds.width) && Number.isFinite(bounds.height)) {
+          updateMinimap(nodes, links, bounds);
+        }
+
+        hideTooltip();
+
+        if (expandBtn) {
+          const hasCollapsed = hasCollapsedNodes(state.treeRoot);
+          expandBtn.disabled = !hasCollapsed;
+        }
+      }
+
+      function toggleNode(node) {
+        if (node.children) {
+          node._children = node.children;
+          node.children = null;
+        } else if (node._children) {
+          node.children = node._children;
+          node._children = null;
+        }
+      }
+
+      function expandAll(node) {
+        if (node._children) {
+          node.children = node._children;
+          node._children = null;
+        }
+        (node.children || []).forEach(expandAll);
+      }
+
+      function collapseAll(node) {
+        if (node.children) {
+          node._children = node.children;
+          node._children.forEach(collapseAll);
+          node.children = null;
+        } else if (node._children) {
+          node._children.forEach(collapseAll);
+        }
+      }
+
+      function hasCollapsedNodes(root) {
+        let collapsed = false;
+        root.each((node) => {
+          if (node._children) {
+            collapsed = true;
+          }
+        });
+        return collapsed;
+      }
+
+      function ensureAncestorsExpanded(node, includeSelf = false) {
+        let current = includeSelf ? node : node?.parent;
+        while (current) {
+          if (current._children) {
+            current.children = current._children;
+            current._children = null;
+          }
+          current = current.parent;
+        }
+      }
+
+      function findNodeById(root, id) {
+        if (!root || !id) return null;
+        const stack = [root];
+        while (stack.length) {
+          const node = stack.pop();
+          if (node.data?.id === id) {
+            return node;
+          }
+          if (node.children) {
+            stack.push(...node.children);
+          }
+          if (node._children) {
+            stack.push(...node._children);
+          }
+        }
+        return null;
+      }
+
+      function applyInitialVisibility(root, type) {
+        // Always show the root level
+        if (root._children) {
+          root.children = root._children;
+          root._children = null;
+        }
+
+        const stack = [root];
+        while (stack.length) {
+          const node = stack.pop();
+          if (type === 'master') {
+            if (node.data?.initiallyVisible) {
+              ensureAncestorsExpanded(node, true);
+            }
+          } else {
+            const maxDepth = 3;
+            if ((node.depth ?? 0) <= maxDepth) {
+              ensureAncestorsExpanded(node, true);
+            }
+          }
+
+          if (node._children) {
+            stack.push(...node._children);
+          }
+          if (node.children) {
+            stack.push(...node.children);
+          }
+        }
+      }
+
+      function buildSearchIndexFromData(node, acc = []) {
+        if (!node) return acc;
+        if (node.id && node.name) {
+          acc.push({ id: node.id, name: String(node.name).toLowerCase() });
+        }
+        (node.children || []).forEach((child) => buildSearchIndexFromData(child, acc));
+        return acc;
+      }
+
+      function collectTribeColors(tree) {
+        const map = new Map();
+        (function walk(node) {
+          if (!node) return;
+          const paletteColor = TRIBE_COLOR_PALETTE[node.name];
+          if (paletteColor && !map.has(node.id)) {
+            map.set(node.id, makeColor(paletteColor));
+          }
+          (node.children || []).forEach(walk);
+        }(tree));
+        return map;
+      }
+
+      function handleSearch(rawQuery) {
+        const query = rawQuery?.toLowerCase() ?? '';
+        if (!query) {
+          clearSearchHighlight();
+          update(state.treeRoot || {});
+          applyToggleStates();
+          setStatus('');
+          return;
+        }
+
+        const exactMatch = state.searchIndex.find((entry) => entry.name === query);
+        const partialMatch = state.searchIndex.find((entry) => entry.name.includes(query));
+        const targetEntry = exactMatch || partialMatch;
+
+        if (!targetEntry) {
+          setStatus(`No match for "${rawQuery}" in ${state.currentView?.title || 'this view'}.`, true);
+          window.setTimeout(() => setStatus(''), 2500);
+          return;
+        }
+
+        const targetNode = findNodeById(state.treeRoot, targetEntry.id);
+        if (!targetNode) {
+          setStatus(`"${rawQuery}" is currently hidden in this view. Try expanding more nodes or switching to a focused view.`, true);
+          window.setTimeout(() => setStatus(''), 2500);
+          return;
+        }
+
+        revealNode(targetNode);
+        state.highlightId = targetNode.data.id;
+        update(targetNode);
+        setFocusNode(targetNode);
+        applyToggleStates();
+        focusOnNode(targetNode);
+        setStatus('');
+      }
+
+      function revealNode(node) {
+        ensureAncestorsExpanded(node, true);
+        if (node._children) {
+          node.children = node._children;
+          node._children = null;
+        }
+      }
+
+      function clearSearchHighlight() {
+        state.highlightId = null;
+        if (state.treeRoot) {
+          applyToggleStates();
+        }
+      }
+
+      function focusOnNode(node) {
+        const stageWidth = stageEl.clientWidth || svgEl.clientWidth || 800;
+        const stageHeight = stageEl.clientHeight || svgEl.clientHeight || 600;
+        const currentScale = state.currentTransform?.k || 1;
+        const targetScale = Math.min(Math.max(currentScale, 0.8), 2.2);
+        const translateX = stageWidth / 2 - node.x * targetScale;
+        const translateY = stageHeight / 2 - node.y * targetScale;
+        const transform = d3.zoomIdentity.translate(translateX, translateY).scale(targetScale);
+        setCamera(transform, 400);
+      }
+
+      function handleWheel(event) {
+        if (!state.treeRoot) return;
+        event.preventDefault();
+        const current = state.currentTransform || d3.zoomIdentity;
+        const factor = event.ctrlKey ? 0.4 : 0.7;
+        const nextX = current.x - event.deltaX;
+        const nextY = current.y - event.deltaY * factor;
+        const transform = d3.zoomIdentity.translate(nextX, nextY).scale(current.k);
+        setCamera(transform, 0);
+      }
+
+      function panBy(dx, dy) {
+        const current = state.currentTransform || d3.zoomIdentity;
+        const transform = d3.zoomIdentity
+          .translate(current.x + dx, current.y + dy)
+          .scale(current.k);
+        setCamera(transform, 150);
+      }
+
+      function centerOnCoordinates(x, y, animate = true) {
+        const stageWidth = stageEl.clientWidth || svgEl.clientWidth || 800;
+        const stageHeight = stageEl.clientHeight || svgEl.clientHeight || 600;
+        const k = state.currentTransform?.k || 1;
+        const translateX = stageWidth / 2 - x * k;
+        const translateY = stageHeight / 2 - y * k;
+        const transform = d3.zoomIdentity.translate(translateX, translateY).scale(k);
+        setCamera(transform, animate ? 300 : 0);
+      }
+
+      function makeColor(hex, alpha = 0.28) {
+        const clean = hex.replace('#', '');
+        const bigint = parseInt(clean, 16);
+        const r = (bigint >> 16) & 255;
+        const g = (bigint >> 8) & 255;
+        const b = bigint & 255;
+        return {
+          stroke: hex,
+          fill: `rgba(${r}, ${g}, ${b}, ${alpha})`
+        };
+      }
+
+      function styleNodeCircle(circle, d) {
+        const highlight = state.highlightId === d.data.id;
+        const tribeStyle = state.tribeColorById.get(d.data.id) || (TRIBE_COLOR_PALETTE[d.data.name] ? makeColor(TRIBE_COLOR_PALETTE[d.data.name]) : null);
+        const priest = !!d.data.levitical;
+        const judge = !!d.data.judge;
+        let stroke = null;
+        let fill = null;
+        let strokeWidth = null;
+
+        if (highlight) {
+          stroke = 'var(--tree-accent)';
+          fill = 'rgba(122, 162, 255, 0.32)';
+          strokeWidth = 3;
+        } else if (highlightMessiah && d.data.messiahLine) {
+          stroke = '#dc143c';
+          fill = 'rgba(220, 20, 60, 0.24)';
+          strokeWidth = 2.8;
+        } else if (tribeStyle) {
+          stroke = tribeStyle.stroke;
+          fill = tribeStyle.fill;
+          strokeWidth = 2.25;
+        } else if (priest) {
+          stroke = 'var(--tree-priest)';
+          fill = 'rgba(80, 200, 120, 0.28)';
+          strokeWidth = 2;
+        } else if (judge) {
+          stroke = 'var(--tree-judge)';
+          fill = 'rgba(255, 159, 28, 0.28)';
+          strokeWidth = 2;
+        }
+
+        circle
+          .style('fill', fill || 'rgba(35, 48, 82, 0.95)')
+          .style('stroke', stroke || 'rgba(102, 121, 168, 0.75)')
+          .style('stroke-width', strokeWidth || 1.25);
+      }
+
+      function updateMinimapDimensions(force = false) {
+        if (!minimapContainer || !minimapSvg) {
+          return;
+        }
+        const stageRect = stageEl.getBoundingClientRect();
+        const fallbackWidth = stageEl.clientWidth || 1000;
+        const fallbackHeight = stageEl.clientHeight || Math.max(600, fallbackWidth * 0.6);
+        const stageWidth = stageRect.width || fallbackWidth;
+        const stageHeight = stageRect.height || fallbackHeight;
+
+        if (!force && !stageWidth) {
+          return;
+        }
+
+        const targetWidth = Math.round(Math.min(320, Math.max(180, stageWidth * 0.22)));
+        const aspectRatio = stageWidth && stageHeight ? stageWidth / stageHeight : 1.6;
+        const targetHeight = Math.round(Math.min(220, Math.max(130, targetWidth / aspectRatio)));
+
+        minimapState.width = targetWidth;
+        minimapState.height = targetHeight;
+        minimapState.margin = Math.max(8, Math.min(18, Math.round(targetWidth * 0.08)));
+
+        minimapContainer.style.width = `${targetWidth}px`;
+        minimapContainer.style.height = `${targetHeight}px`;
+        minimapSvg.attr('width', targetWidth).attr('height', targetHeight);
+
+        debugLog('[Genealogy][Minimap] Dimensions updated', {
+          stageWidth,
+          stageHeight,
+          targetWidth,
+          targetHeight,
+          margin: minimapState.margin
+        });
+      }
+
+      function updateMinimap(nodes, links, bounds) {
+        if (!minimapSvg) return;
+
+        if (Array.isArray(nodes)) {
+          state.minimapNodes = nodes;
+        }
+        if (Array.isArray(links)) {
+          state.minimapLinks = links;
+        }
+
+        const effectiveBounds = bounds || state.treeBounds;
+        if (!effectiveBounds || !Number.isFinite(effectiveBounds.width) || !Number.isFinite(effectiveBounds.height)) {
+          return;
+        }
+        state.treeBounds = effectiveBounds;
+
+        const nodeData = Array.isArray(state.minimapNodes) ? state.minimapNodes : [];
+        const linkData = Array.isArray(state.minimapLinks) ? state.minimapLinks : [];
+
+        if (minimapContainer) {
+          minimapContainer.setAttribute('aria-hidden', 'false');
+        }
+
+        updateMinimapDimensions();
+
+        debugLog('[Genealogy][Minimap] Rebuilding minimap data', {
+          nodeCount: nodeData.length,
+          linkCount: linkData.length,
+          bounds: {
+            x: effectiveBounds.x,
+            y: effectiveBounds.y,
+            width: effectiveBounds.width,
+            height: effectiveBounds.height
+          },
+          stage: {
+            width: stageEl.clientWidth || svgEl.clientWidth,
+            height: stageEl.clientHeight || svgEl.clientHeight
+          }
+        });
+
+        const padding = minimapState.margin;
+        const width = effectiveBounds.width || 1;
+        const height = effectiveBounds.height || 1;
+        minimapState.scale = minMapScale(width, height, padding);
+        if (!Number.isFinite(minimapState.scale) || minimapState.scale <= 0) {
+          minimapState.scale = 1;
+        }
+        debugLog('[Genealogy][Minimap] Scale calculation', {
+          bounds: {
+            width,
+            height
+          },
+          padding,
+          mapWidth: minimapState.width,
+          mapHeight: minimapState.height,
+          scale: minimapState.scale
+        });
+        minimapState.offsetX = padding - effectiveBounds.x * minimapState.scale;
+        minimapState.offsetY = padding - effectiveBounds.y * minimapState.scale;
+
+        if (minimapLinksGroup) {
+          const miniLinks = minimapLinksGroup.selectAll('line').data(linkData, (d) => d.target.data.id);
+          miniLinks.enter().append('line').attr('class', 'minimap-link');
+          minimapLinksGroup.selectAll('line')
+            .attr('x1', (d) => d.source.x * minimapState.scale + minimapState.offsetX)
+            .attr('y1', (d) => d.source.y * minimapState.scale + minimapState.offsetY)
+            .attr('x2', (d) => d.target.x * minimapState.scale + minimapState.offsetX)
+            .attr('y2', (d) => d.target.y * minimapState.scale + minimapState.offsetY);
+          miniLinks.exit().remove();
+        }
+
+        if (minimapNodesGroup) {
+          const miniNodes = minimapNodesGroup.selectAll('circle').data(nodeData, (d) => d.data.id);
+          miniNodes.enter().append('circle').attr('class', 'minimap-node');
+          minimapNodesGroup.selectAll('circle')
+            .attr('cx', (d) => d.x * minimapState.scale + minimapState.offsetX)
+            .attr('cy', (d) => d.y * minimapState.scale + minimapState.offsetY)
+            .attr('r', (d) => (d.depth === 0 ? 3 : 1.8));
+          miniNodes.exit().remove();
+        }
+
+        scheduleMinimapViewportUpdate();
+      }
+
+      function scheduleMinimapViewportUpdate({ immediate = false, reason = 'unspecified' } = {}) {
+        if (!minimapSvg) return;
+        if (immediate) {
+          debugLog('[Genealogy][Minimap] Immediate viewport update', {
+            reason,
+            transform: {
+              x: state.currentTransform?.x,
+              y: state.currentTransform?.y,
+              k: state.currentTransform?.k
+            }
+          });
+          updateMinimapViewport();
+          return;
+        }
+        if (minimapUpdateScheduled) return;
+        minimapUpdateScheduled = true;
+        window.requestAnimationFrame(() => {
+          minimapUpdateScheduled = false;
+          debugLog('[Genealogy][Minimap] RAF viewport update', {
+            reason,
+            transform: {
+              x: state.currentTransform?.x,
+              y: state.currentTransform?.y,
+              k: state.currentTransform?.k
+            }
+          });
+          updateMinimapViewport();
+        });
+      }
+
+      function updateMinimapViewport() {
+        if (!minimapViewport || !state.treeBounds || !state.currentTransform) return;
+        const k = state.currentTransform.k || 1;
+        const x = state.currentTransform.x || 0;
+        const y = state.currentTransform.y || 0;
+        const stageWidth = stageEl.clientWidth || svgEl.clientWidth || 800;
+        const stageHeight = stageEl.clientHeight || svgEl.clientHeight || 600;
+        const topLeftX = (-x) / k;
+        const topLeftY = (-y) / k;
+        const bottomRightX = (stageWidth - x) / k;
+        const bottomRightY = (stageHeight - y) / k;
+
+        const rawVw = Math.max(12, (bottomRightX - topLeftX) * minimapState.scale);
+        const rawVh = Math.max(12, (bottomRightY - topLeftY) * minimapState.scale);
+
+        const vw = Math.max(12, Math.min(minimapState.width, rawVw));
+        const vh = Math.max(12, Math.min(minimapState.height, rawVh));
+
+        minimapState.viewportWidth = vw;
+        minimapState.viewportHeight = vh;
+
+        const maxVx = Math.max(0, minimapState.width - vw);
+        const maxVy = Math.max(0, minimapState.height - vh);
+
+        const vx = topLeftX * minimapState.scale + minimapState.offsetX;
+        const vy = topLeftY * minimapState.scale + minimapState.offsetY;
+
+        const clampedVx = Math.max(0, Math.min(maxVx, Number.isFinite(vx) ? vx : 0));
+        const clampedVy = Math.max(0, Math.min(maxVy, Number.isFinite(vy) ? vy : 0));
+
+        minimapViewport
+          .attr('x', clampedVx)
+          .attr('y', clampedVy)
+          .attr('width', vw)
+          .attr('height', vh);
+
+        debugLog('[Genealogy][Minimap] Viewport updated', {
+          stage: { width: stageWidth, height: stageHeight },
+          transform: {
+            x: state.currentTransform?.x,
+            y: state.currentTransform?.y,
+            k: state.currentTransform?.k
+          },
+          bounds: state.treeBounds
+            ? {
+                x: state.treeBounds.x,
+                y: state.treeBounds.y,
+                width: state.treeBounds.width,
+                height: state.treeBounds.height
+              }
+            : null,
+          minimap: {
+            width: minimapState.width,
+            height: minimapState.height,
+            scale: minimapState.scale,
+            offsetX: minimapState.offsetX,
+            offsetY: minimapState.offsetY,
+            viewport: { x: clampedVx, y: clampedVy, width: vw, height: vh }
+          }
+        });
+      }
+
+      function centerOnMinimapCoordinates(miniX, miniY) {
+        const treeX = (miniX - minimapState.offsetX) / minimapState.scale;
+        const treeY = (miniY - minimapState.offsetY) / minimapState.scale;
+        centerOnCoordinates(treeX, treeY, true);
+      }
+
+      function dragMinimapViewport(pointerX, pointerY) {
+        if (!minimapViewport || minimapState.viewportWidth === 0 || minimapState.viewportHeight === 0) {
+          return;
+        }
+        const rawX = pointerX - minimapState.viewportWidth / 2;
+        const rawY = pointerY - minimapState.viewportHeight / 2;
+        const newX = Math.max(0, Math.min(minimapState.width - minimapState.viewportWidth, rawX));
+        const newY = Math.max(0, Math.min(minimapState.height - minimapState.viewportHeight, rawY));
+        minimapViewport
+          .attr('x', newX)
+          .attr('y', newY);
+        const centerTreeX = (newX + minimapState.viewportWidth / 2 - minimapState.offsetX) / minimapState.scale;
+        const centerTreeY = (newY + minimapState.viewportHeight / 2 - minimapState.offsetY) / minimapState.scale;
+        centerOnCoordinates(centerTreeX, centerTreeY, false);
+      }
+
+      function setFocusNode(node) {
+        state.focusNode = node;
+        if (breadcrumbEl) {
+          if (node) {
+            const trail = node.ancestors().reverse().map((n) => n.data?.name || 'Unnamed');
+            breadcrumbEl.textContent = trail.join(' / ');
+          } else {
+            breadcrumbEl.textContent = state.currentView?.title || 'Genealogy';
+          }
+        }
+        if (fitSelectionBtn) {
+          fitSelectionBtn.disabled = !node;
+        }
+        updateDetails(node);
+        if (node) {
+          const refs = Array.isArray(node.data?.refs) && node.data.refs.length ? ` (${node.data.refs[0]})` : '';
+          announceFocus(`Centered on: ${node.data?.name || 'Unknown'}${refs}`);
+        } else {
+          setStatus('');
+        }
+      }
+
+      function updateDetails(node) {
+        if (!detailsEl || !detailsNameEl || !detailsTooltipEl || !detailsMetaEl) return;
+        if (!node) {
+          detailsEl.classList.remove('has-selection');
+          detailsNameEl.textContent = 'Select a person';
+          detailsTooltipEl.textContent = 'Click a name in the tree to view biography and references.';
+          detailsMetaEl.innerHTML = '';
+          return;
+        }
+
+        detailsEl.classList.add('has-selection');
+        const data = node.data || {};
+        detailsNameEl.textContent = data.name || 'Unknown';
+        detailsTooltipEl.textContent = data.tooltip || '';
+
+        const tags = [];
+        if (data.messiahLine) tags.push('Messianic line');
+        if (data.levitical) tags.push('Levitical priest');
+        if (data.judge) tags.push('Judge');
+        const tagsHtml = tags.length ? `<p class="details-tags">${tags.join(' • ')}</p>` : '';
+
+        const refsHtml = Array.isArray(data.refs) && data.refs.length
+          ? `<ul class="details-refs">${data.refs.map((ref) => `<li>${ref}</li>`).join('')}</ul>`
+          : '';
+
+        const childCount = (node.children ? node.children.length : 0) + (node._children ? node._children.length : 0);
+        const childSummary = `<p class="details-summary">Children: ${childCount}</p>`;
+
+        detailsMetaEl.innerHTML = `${tagsHtml}${refsHtml}${childSummary}`;
+
+        if (window.refTagger && typeof window.refTagger.tag === 'function') {
+          window.refTagger.tag(detailsEl);
+        }
+      }
+
+      function announceFocus(message) {
+        if (!statusEl) return;
+        statusEl.classList.remove('family-tree-status--error');
+        statusEl.hidden = false;
+        statusEl.textContent = message;
+        statusEl.dataset.mode = 'focus';
+        if (focusAnnouncementTimeout) {
+          window.clearTimeout(focusAnnouncementTimeout);
+        }
+        focusAnnouncementTimeout = window.setTimeout(() => {
+          if (statusEl.dataset.mode === 'focus') {
+            statusEl.hidden = true;
+            statusEl.dataset.mode = '';
+          }
+        }, 2400);
+      }
+
+      function applyToggleStates() {
+        nodeGroup.selectAll('text').style('display', null);
+        nodeGroup.selectAll('g.node')
+          .classed('node-highlighted', (d) => state.highlightId === d.data.id)
+          .select('circle.main-node')
+          .classed('messiah', (d) => highlightMessiah && !!d.data.messiahLine)
+          .each(function(d) {
+            styleNodeCircle(d3.select(this), d);
+          });
+      }
+
+      function isMessiahLink(link) {
+        return !!(link.source?.data?.messiahLine && link.target?.data?.messiahLine);
+      }
+
+      function showTooltip(event, data) {
+        if (!tooltipEl) return;
+        tooltipHover = false;
+        if (tooltipHideTimeout) {
+          window.clearTimeout(tooltipHideTimeout);
+          tooltipHideTimeout = null;
+        }
+        tooltipEl.innerHTML = renderTooltip(data);
+        const bounds = stageEl.getBoundingClientRect();
+        const offsetX = event.clientX - bounds.left + 18;
+        const offsetY = event.clientY - bounds.top + 18;
+        tooltipEl.style.left = `${offsetX}px`;
+        tooltipEl.style.top = `${offsetY}px`;
+        tooltipEl.hidden = false;
+      }
+
+      function hideTooltip(force = false) {
+        if (!tooltipEl) return;
+        if (!force && tooltipHover) {
+          return;
+        }
+        if (!force) {
+          tooltipHideTimeout = window.setTimeout(() => {
+            if (!tooltipHover) {
+              tooltipEl.hidden = true;
+            }
+          }, 120);
+          return;
+        }
+        if (tooltipHideTimeout) {
+          window.clearTimeout(tooltipHideTimeout);
+          tooltipHideTimeout = null;
+        }
+        tooltipEl.hidden = true;
+      }
+
+      function updateMeta(view) {
+        if (!metaContainer) return;
+        const isCluster = view.type === 'cluster';
+        metaContainer.hidden = !isCluster;
+
+        if (!isCluster) {
+          metaTitle.textContent = '';
+          metaTooltip.textContent = '';
+          metaBlurb.textContent = '';
+          metaScripture.innerHTML = '';
+          return;
+        }
+
+        metaTitle.textContent = view.title || 'Focused genealogy';
+        metaTooltip.textContent = view.tooltip || '';
+        metaTooltip.hidden = !view.tooltip;
+        metaBlurb.textContent = view.blurb || '';
+        metaBlurb.hidden = !view.blurb;
+
+        if (Array.isArray(view.scripture) && view.scripture.length) {
+          metaScripture.innerHTML = view.scripture
+            .map((ref) => `<li>${ref}</li>`)
+            .join('');
+          metaScripture.hidden = false;
+        } else {
+          metaScripture.innerHTML = '';
+          metaScripture.hidden = true;
+        }
+      }
+
+      function resizeSvg() {
+        const width = stageEl.clientWidth || stageEl.getBoundingClientRect().width || 800;
+        const height = stageEl.clientHeight || stageEl.getBoundingClientRect().height || 600;
+        svg.attr('width', width);
+        svg.attr('height', height);
+      }
+
+      function handleResize() {
+        resizeSvg();
+        updateMinimapDimensions();
+        fitToStage(false);
+        scheduleMinimapViewportUpdate();
+      }
+
+      function applyZoomClass(scale) {
+        if (!treeWrapper) return;
+        const distant = scale < 0.18;
+        const medium = scale >= 0.18 && scale < 0.6;
+        treeWrapper.classList.toggle('tree-zoom-distant', distant);
+        treeWrapper.classList.toggle('tree-zoom-medium', medium);
+        treeWrapper.classList.toggle('tree-zoom-close', !distant && !medium);
+      }
+
+      function setCamera(transform, duration = 0) {
+        if (duration > 0) {
+          state.currentTransform = transform;
+          console.log('[Genealogy][Camera] Transition start', {
+            duration,
+            transform: { x: transform.x, y: transform.y, k: transform.k }
+          });
+          svg.transition().duration(duration).call(zoom.transform, transform).on('end', () => {
+            console.log('[Genealogy][Camera] Transition complete', {
+              transform: { x: transform.x, y: transform.y, k: transform.k }
+            });
+            applyZoomClass(transform.k);
+            scheduleMinimapViewportUpdate();
+          });
+        } else {
+          svg.call(zoom.transform, transform);
+          state.currentTransform = transform;
+          console.log('[Genealogy][Camera] Transform applied instantly', {
+            transform: { x: transform.x, y: transform.y, k: transform.k }
+          });
+          applyZoomClass(transform.k);
+          scheduleMinimapViewportUpdate();
+        }
+      }
+
+      function scheduleFitToStage({ resetViewport = false, animate = false, extraFrames = 0, delay = 0 } = {}) {
+        const runFit = () => {
+          if (resetViewport) {
+            debugLog('[Genealogy][Fit] Reset transform to identity');
+            svg.call(zoom.transform, d3.zoomIdentity);
+            state.currentTransform = d3.zoomIdentity;
+          }
+          console.log('[Genealogy][Fit] Executing fitToStage', { animate, resetViewport, extraFrames, delay });
+          fitToStage(animate);
+          scheduleMinimapViewportUpdate({ immediate: true, reason: animate ? 'fit-start-animate' : 'fit-start' });
+          if (!animate) {
+            console.log('[Genealogy][Fit] Minimap refresh immediately (no animation)');
+            scheduleMinimapViewportUpdate({ immediate: true, reason: 'fit-no-animation' });
+          } else {
+            window.setTimeout(() => {
+              console.log('[Genealogy][Fit] Minimap refresh after animation');
+              scheduleMinimapViewportUpdate({ immediate: true, reason: 'fit-animation-complete' });
+            }, 500);
+          }
+        };
+
+        const begin = () => {
+          let framesRemaining = Math.max(0, extraFrames);
+          const tick = () => {
+            if (framesRemaining > 0) {
+              framesRemaining -= 1;
+              window.requestAnimationFrame(tick);
+            } else {
+              runFit();
+            }
+          };
+          window.requestAnimationFrame(tick);
+        };
+
+        if (delay > 0) {
+          window.setTimeout(begin, delay);
+        } else {
+          begin();
+        }
+      }
+
+      function fitToStage(animate = false) {
+        if (!state.treeRoot) return;
+        const bounds = rootGroup.node()?.getBBox();
+        if (!bounds || !Number.isFinite(bounds.width) || !Number.isFinite(bounds.height)) {
+          console.warn('[Genealogy][Fit] Bounds unavailable for fitToStage', bounds);
+          return;
+        }
+
+        const stageWidth = stageEl.clientWidth || svgEl.clientWidth;
+        const stageHeight = stageEl.clientHeight || svgEl.clientHeight;
+        if (!stageWidth || !stageHeight) {
+          console.warn('[Genealogy][Fit] Stage dimensions unavailable', { stageWidth, stageHeight });
+          return;
+        }
+
+        const marginHorizontal = Math.max(60, Math.min(stageWidth * 0.07, 160));
+        const marginVertical = Math.max(80, Math.min(stageHeight * 0.12, 180));
+
+        const availableWidth = Math.max(stageWidth - marginHorizontal * 2, 220);
+        const availableHeight = Math.max(stageHeight - marginVertical * 2, 220);
+
+        const scale = Math.max(
+          0.01,
+          Math.min(2.6, Math.min(availableWidth / bounds.width, availableHeight / bounds.height))
+        );
+
+        const scaledWidth = bounds.width * scale;
+        const scaledHeight = bounds.height * scale;
+
+        const translateX = ((stageWidth - scaledWidth) / 2) - bounds.x * scale;
+        const translateY = ((stageHeight - scaledHeight) / 2) - bounds.y * scale;
+
+        debugLog('[Genealogy][Fit] Computed transform', {
+          animate,
+          stageWidth,
+          stageHeight,
+          bounds: {
+            x: bounds.x,
+            y: bounds.y,
+            width: bounds.width,
+            height: bounds.height
+          },
+          marginHorizontal,
+          marginVertical,
+          availableWidth,
+          availableHeight,
+          scale,
+          translateX,
+          translateY
+        });
+
+        const transform = d3.zoomIdentity.translate(translateX, translateY).scale(scale);
+        state.treeBounds = bounds;
+        updateMinimap(null, null, bounds);
+        setCamera(transform, animate ? 450 : 0);
+      }
+
+      function fitToNode(node, animate = true) {
+        if (!node) return;
+        const descendants = node.descendants();
+        if (!descendants.length) return;
+        let minX = Infinity;
+        let maxX = -Infinity;
+        let minY = Infinity;
+        let maxY = -Infinity;
+        descendants.forEach((n) => {
+          minX = Math.min(minX, n.x);
+          maxX = Math.max(maxX, n.x);
+          minY = Math.min(minY, n.y);
+          maxY = Math.max(maxY, n.y);
+        });
+        const stageWidth = stageEl.clientWidth || svgEl.clientWidth || 800;
+        const stageHeight = stageEl.clientHeight || svgEl.clientHeight || 600;
+        const padding = 120;
+        const width = Math.max(1, maxX - minX);
+        const height = Math.max(1, maxY - minY);
+        const scale = Math.max(
+          0.3,
+          Math.min(2.6, Math.min((stageWidth - padding) / width, (stageHeight - padding) / height))
+        );
+        const translateX = stageWidth / 2 - (minX + width / 2) * scale;
+        const translateY = stageHeight / 2 - (minY + height / 2) * scale;
+        const transform = d3.zoomIdentity.translate(translateX, translateY).scale(scale);
+        setCamera(transform, animate ? 400 : 0);
+      }
+
+      function showConfirm() {
+        if (!confirmOverlay) return;
+        confirmOverlay.classList.add('is-visible');
+        confirmOverlay.setAttribute('aria-hidden', 'false');
+        expandBtn?.setAttribute('aria-expanded', 'true');
+        confirmAccept?.focus();
+      }
+
+      function hideConfirm({ restoreFocus = true } = {}) {
+        if (!confirmOverlay) return;
+        confirmOverlay.classList.remove('is-visible');
+        confirmOverlay.setAttribute('aria-hidden', 'true');
+        expandBtn?.setAttribute('aria-expanded', 'false');
+        if (restoreFocus) {
+          expandBtn?.focus();
+        }
+      }
+    }
+
+    function setStatus(message, isError) {
+      if (!statusEl) {
+        return;
+      }
+      if (!message) {
+        statusEl.textContent = '';
+        statusEl.hidden = true;
+        statusEl.classList.remove('family-tree-status--error');
+        statusEl.dataset.mode = '';
+        if (focusAnnouncementTimeout) {
+          window.clearTimeout(focusAnnouncementTimeout);
+          focusAnnouncementTimeout = null;
+        }
+        return;
+      }
+      statusEl.textContent = message;
+      statusEl.hidden = false;
+      statusEl.classList.toggle('family-tree-status--error', Boolean(isError));
+       statusEl.dataset.mode = 'status';
+      if (focusAnnouncementTimeout) {
+        window.clearTimeout(focusAnnouncementTimeout);
+        focusAnnouncementTimeout = null;
+      }
+    }
+
+    function renderTooltip(data) {
+      if (!data) {
+        return '';
+      }
+
+      const parts = [];
+      if (data.name) {
+        parts.push(`<strong>${data.name}</strong>`);
+      }
+
+      const roleLabels = [];
+      if (data.messiahLine) roleLabels.push('In messianic line');
+      if (data.levitical) roleLabels.push('Levitical priest');
+      if (data.judge) roleLabels.push('Judge');
+      if (roleLabels.length) {
+        parts.push(`<div class="tooltip-line"><em>${roleLabels.join(' • ')}</em></div>`);
+      }
+
+      // Use tooltipRaw if available, otherwise fall back to tooltip
+      const tooltipText = data.tooltipRaw || data.tooltip;
+      if (tooltipText) {
+        // Split by newlines and format each line
+        const lines = tooltipText.split('\n').filter(line => line.trim());
+        lines.forEach((line, idx) => {
+          // Skip the first line if it's the same as the name (already shown)
+          if (idx === 0 && line.trim() === data.name) {
+            return;
+          }
+          parts.push(`<div class="tooltip-line">${line}</div>`);
+        });
+      }
+
+      return parts.join('');
+    }
+
+    function sanitizeTooltip(node) {
+      const tooltip = typeof node.tooltip === 'string' ? node.tooltip.trim() : '';
+      const placeholder = 'Shimei (1 Chronicles 4:26)';
+      if (tooltip && tooltip !== placeholder) {
+        return tooltip;
+      }
+      const refs = Array.isArray(node.refs)
+        ? node.refs
+        : Array.isArray(node.references)
+          ? node.references
+          : [];
+      const firstRef = refs.find((ref) => typeof ref === 'string' && ref.trim().length > 0);
+      if (node.name && firstRef) {
+        return `${node.name} (${firstRef})`;
+      }
+      if (node.meaning && node.name) {
+        return `${node.name} — ${node.meaning}`;
+      }
+      return node.name || '';
+    }
+
+    function cloneTree(node) {
+      if (!node || typeof node !== 'object') return null;
+      const clone = { id: node.id, name: node.name };
+      if (node.messiahLine) clone.messiahLine = true;
+      if (node.levitical) clone.levitical = true;
+      if (node.judge) clone.judge = true;
+      const derivedTooltip = sanitizeTooltip(node);
+      if (derivedTooltip) clone.tooltip = derivedTooltip;
+      if (Array.isArray(node.refs)) {
+        clone.refs = node.refs.slice(0, 4);
+      } else if (Array.isArray(node.references)) {
+        clone.refs = node.references.slice(0, 4);
+      }
+      if (node.hadCollapsedChildren) clone.hadCollapsedChildren = true;
+      if (node.initiallyVisible === false) clone.initiallyVisible = false;
+      if (Array.isArray(node.children)) {
+        clone.children = node.children.map(cloneTree).filter(Boolean);
+      }
+      return clone;
+    }
+
+    function formatLabel(slug = '') {
+      return slug
+        .split(/[-_]/)
+        .filter(Boolean)
+        .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+        .join(' ');
+    }
+
+    function ensureD3() {
+      if (window.d3) {
+        return Promise.resolve(window.d3);
+      }
+
+      if (window.bundleOptimizer?.require) {
+        return window.bundleOptimizer.require('d3')
+          .then(() => {
+            if (window.d3) {
+              return window.d3;
+            }
+            throw new Error('D3 not available after bundle optimizer load');
+          })
+          .catch((error) => {
+            console.warn('Bundle optimizer could not load D3, falling back to direct script:', error);
+            return injectD3Script();
+          });
+      }
+
+      return injectD3Script();
+    }
+
+    function injectD3Script() {
+      return new Promise((resolve, reject) => {
+        if (window.d3) {
+          resolve(window.d3);
+          return;
+        }
+
+        const existing = document.querySelector('script[data-d3-fallback="true"]');
+        if (existing) {
+          existing.addEventListener('load', () => {
+            if (window.d3) {
+              resolve(window.d3);
+            } else {
+              reject(new Error('D3 missing after fallback load'));
+            }
+          });
+          existing.addEventListener('error', () => reject(new Error('Failed to load fallback D3 script')));
+          return;
+        }
+
+        const script = document.createElement('script');
+        script.src = 'https://unpkg.com/d3@7/dist/d3.min.js';
+        script.async = true;
+        script.dataset.d3Fallback = 'true';
+
+        script.addEventListener('load', () => {
+          if (window.d3) {
+            resolve(window.d3);
+          } else {
+            reject(new Error('D3 missing after fallback load'));
+          }
+        });
+
+        script.addEventListener('error', () => {
+          reject(new Error('Failed to load fallback D3 script'));
+        });
+
+        document.head.appendChild(script);
+      });
+    }
+
+      }());
+</script>
+
+<style>
+.genealogy-explorer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.genealogy-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.genealogy-header h1 {
+  font-size: clamp(2.2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.genealogy-primary-tabs {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.primary-tab {
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-tab:hover,
+.primary-tab:focus {
+  outline: none;
+  background: rgba(37, 99, 235, 0.12);
+  color: var(--accent);
+}
+
+.primary-tab.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.25);
+}
+
+.genealogy-primary-panels {
+  position: relative;
+}
+
+.primary-panel {
+  display: none;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  box-shadow: 0 18px 34px rgba(15, 23, 42, 0.15);
+}
+
+.primary-panel.active {
+  display: block;
+}
+
+.tree-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tree-shell-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.tree-shell-header h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.tree-shell-subtitle {
+  margin: 0.35rem 0 0;
+  max-width: 56ch;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.tree-shell-link {
+  padding: 0.6rem 1.3rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tree-shell-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 24px rgba(37, 99, 235, 0.3);
+}
+
+.family-tree {
+  --tree-bg: #0b1020;
+  --tree-panel: rgba(16, 26, 52, 0.78);
+  --tree-border: rgba(148, 163, 184, 0.22);
+  --tree-ink: #e8ecff;
+  --tree-muted: #9aa7d8;
+  --tree-accent: #7aa2ff;
+  --tree-accent-2: #ffd166;
+  --tree-priest: #50c878;
+  --tree-judge: #ff9f1c;
+  display: flex;
+  flex-direction: column;
+  gap: 1.05rem;
+  padding: 1.25rem;
+  border-radius: 20px;
+  border: 1px solid var(--tree-border);
+  background: linear-gradient(180deg, rgba(9, 17, 34, 0.85), rgba(12, 19, 38, 0.7));
+  color: var(--tree-ink);
+}
+
+.family-tree-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(10, 18, 35, 0.7);
+}
+
+.tree-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.tree-row--primary {
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.tree-row--search {
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.tree-row--secondary {
+  justify-content: flex-start;
+}
+
+.tree-breadcrumb {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--tree-muted);
+  min-width: 0;
+  margin-left: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tree-action--ghost {
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: rgba(13, 22, 43, 0.6);
+}
+
+.tree-action--ghost.active,
+.tree-action--ghost:hover {
+  border-color: rgba(122, 162, 255, 0.8);
+  background: rgba(122, 162, 255, 0.22);
+}
+
+.tree-search {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: min(420px, 100%);
+}
+
+.tree-search-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--tree-muted);
+  font-weight: 600;
+}
+
+.tree-search-controls {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.tree-search-controls input {
+  flex: 1 1 210px;
+  padding: 0.45rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(13, 22, 43, 0.8);
+  color: var(--tree-ink);
+  font-weight: 600;
+}
+
+.family-tree-stage {
+  position: relative;
+  touch-action: none;
+  flex: 1 1 auto;
+}
+
+.family-tree-minimap {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 220px;
+  height: 150px;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(9, 15, 30, 0.82);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 24px 40px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  pointer-events: auto;
+}
+
+.family-tree-minimap svg {
+  width: 100%;
+  height: 100%;
+}
+
+.minimap-link {
+  stroke: rgba(255, 255, 255, 0.3);
+  stroke-width: 0.75px;
+}
+
+.minimap-node {
+  fill: rgba(255, 255, 255, 0.85);
+  stroke: none;
+}
+
+.minimap-viewport {
+  fill: rgba(122, 162, 255, 0.18);
+  stroke: rgba(122, 162, 255, 0.85);
+  stroke-width: 1.2px;
+  cursor: move;
+  pointer-events: all;
+}
+
+.family-tree-details {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 280px;
+  max-height: calc(100% - 32px);
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background: rgba(9, 15, 30, 0.92);
+  box-shadow: 0 24px 40px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  color: var(--tree-ink);
+  pointer-events: auto;
+}
+
+.family-tree-details.collapsed {
+  transform: translateX(110%);
+  pointer-events: none;
+}
+
+.details-toggle {
+  align-self: flex-end;
+  background: rgba(13, 22, 43, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  color: var(--tree-muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.details-inner {
+  overflow: auto;
+  padding-right: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.details-inner h4 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.details-tooltip {
+  margin: 0;
+  color: var(--tree-muted);
+  line-height: 1.5;
+}
+
+.details-meta {
+  display: grid;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.details-tags {
+  margin: 0;
+  font-weight: 600;
+  color: rgba(255, 209, 102, 0.9);
+}
+
+.details-refs {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--tree-ink);
+  line-height: 1.45;
+}
+
+.details-summary {
+  margin: 0;
+  color: var(--tree-muted);
+}
+
+.family-tree.fullscreen-active {
+  position: fixed;
+  inset: 0;
+  padding: 1.5rem;
+  width: 100vw;
+  height: 100vh;
+  z-index: 60;
+  background: linear-gradient(180deg, rgba(9, 17, 34, 0.96), rgba(12, 19, 38, 0.92));
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+}
+
+.family-tree.fullscreen-active .family-tree-stage {
+  min-height: unset;
+  height: 100%;
+}
+
+body.tree-fullscreen-lock {
+  overflow: hidden;
+}
+
+.tree-select {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 600;
+  color: var(--tree-muted);
+}
+
+.tree-select-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.tree-select select {
+  min-width: 220px;
+  padding: 0.45rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(13, 22, 43, 0.8);
+  color: var(--tree-ink);
+  font-weight: 600;
+}
+
+.tree-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tree-action {
+  padding: 0.45rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid rgba(122, 162, 255, 0.8);
+  background: rgba(122, 162, 255, 0.18);
+  color: var(--tree-ink);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.tree-action:hover {
+  background: rgba(122, 162, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.tree-action[disabled] {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.tree-action[disabled]:hover {
+  background: rgba(122, 162, 255, 0.18);
+}
+
+.tree-action--secondary {
+  border-color: rgba(148, 163, 184, 0.4);
+  background: rgba(13, 22, 43, 0.6);
+}
+
+.tree-action--secondary:hover {
+  background: rgba(148, 163, 184, 0.2);
+}
+
+.tree-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  background: rgba(11, 21, 40, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-weight: 600;
+}
+
+.tree-control input {
+  accent-color: var(--tree-accent);
+  transform: scale(1.05);
+}
+
+.tree-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-left: auto;
+  color: var(--tree-muted);
+  font-size: 0.9rem;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.legend-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.legend-dot--messiah {
+  background: #dc143c;
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.25);
+}
+
+.legend-dot--priest {
+  background: var(--tree-priest);
+}
+
+.legend-dot--judge {
+  background: var(--tree-judge);
+}
+
+.legend-dot--tribe {
+  background: linear-gradient(135deg, #ef4444 0%, #9333ea 100%);
+}
+
+.family-tree-meta {
+  border-radius: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(11, 19, 36, 0.65);
+  padding: 1rem 1.25rem;
+  line-height: 1.55;
+}
+
+.family-tree-meta h4 {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+  color: var(--tree-ink);
+}
+
+.family-tree-meta-tooltip {
+  margin: 0;
+  color: var(--tree-accent-2);
+  font-weight: 600;
+}
+
+.family-tree-meta-blurb {
+  margin: 0.6rem 0;
+}
+
+.family-tree-meta-scripture {
+  margin: 0.75rem 0 0;
+  padding-left: 1.25rem;
+  color: var(--tree-muted);
+  font-size: 0.95rem;
+}
+
+.family-tree-stage {
+  position: relative;
+  min-height: clamp(360px, 60vh, 720px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  background:
+    radial-gradient(1200px 800px at 40% 30%, rgba(255, 255, 255, 0.07), transparent 60%),
+    linear-gradient(180deg, rgba(6, 12, 26, 0.95), rgba(12, 20, 40, 0.9));
+}
+
+.family-tree-stage svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.family-tree.tree-zoom-distant .node text {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.family-tree.tree-zoom-medium .node text {
+  opacity: 0.6;
+  font-size: 0.6rem;
+}
+
+.family-tree .node.node-label-hidden text {
+  pointer-events: none;
+}
+
+.family-tree .node.node-label-hidden:hover text,
+.family-tree .node.node-label-hidden:focus-within text {
+  opacity: 1 !important;
+  pointer-events: all;
+}
+
+.family-tree .link {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.2);
+  stroke-width: 1.35px;
+  stroke-linecap: round;
+}
+
+.family-tree .node circle.main-node {
+  fill: none;
+  stroke: rgba(102, 121, 168, 0.75);
+  stroke-width: 1.25px;
+  transition: fill 0.2s ease, stroke 0.2s ease;
+}
+
+/* Nodes with children that are not fully expanded should be filled */
+.family-tree .node circle.main-node.has-children:not(.expanded) {
+  fill: rgb(102, 121, 168);
+  stroke: rgb(102, 121, 168);
+  stroke-width: 1.5px;
+}
+
+/* Nodes with children that ARE fully expanded should be hollow */
+.family-tree .node circle.main-node.has-children.expanded {
+  fill: none;
+  stroke: rgba(142, 168, 220, 0.85);
+  stroke-width: 1.5px;
+}
+
+/* Messianic line - hollow by default */
+.family-tree .node circle.main-node.messiah {
+  stroke: #dc143c;
+  stroke-width: 2.4px;
+}
+
+/* Messianic line with children that are not fully expanded should be filled red */
+.family-tree .node circle.main-node.messiah.has-children:not(.expanded) {
+  fill: #dc143c;
+  stroke: #dc143c;
+  stroke-width: 2.6px;
+}
+
+/* Messianic line with children that ARE fully expanded should be hollow red */
+.family-tree .node circle.main-node.messiah.has-children.expanded {
+  fill: none;
+  stroke: #dc143c;
+  stroke-width: 2.4px;
+}
+
+.family-tree .node.node-highlighted text {
+  fill: #dcf0ff;
+  font-weight: 700;
+}
+
+.family-tree .node circle.main-node:hover {
+  stroke: var(--tree-accent);
+}
+
+.family-tree .node text {
+  fill: var(--tree-ink);
+  font-size: 12px;
+  paint-order: stroke;
+  stroke: rgba(11, 16, 32, 0.75);
+  stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.family-tree .link--messiah {
+  stroke: #dc143c;
+  stroke-width: 2.4px;
+}
+
+.family-tree .link--messiah:hover {
+  stroke-width: 2.8px;
+}
+
+.family-tree .meta-dot {
+  stroke: none;
+  fill: var(--tree-muted);
+}
+
+.family-tree .meta-dot.meta-priest {
+  fill: var(--tree-priest);
+}
+
+.family-tree .meta-dot.meta-judge {
+  fill: var(--tree-judge);
+}
+
+.family-tree-tooltip {
+  position: absolute;
+  pointer-events: auto;
+  background: rgba(11, 17, 32, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--tree-ink);
+  padding: 0.75rem 0.9rem;
+  border-radius: 12px;
+  font-size: 12px;
+  line-height: 1.4;
+  max-width: 280px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+  z-index: 3;
+}
+
+.tooltip-line {
+  margin-top: 0.35rem;
+}
+
+.tooltip-label {
+  color: var(--tree-muted);
+  font-weight: 600;
+  margin-right: 0.25rem;
+}
+
+.family-tree-status {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(10, 18, 35, 0.85);
+  color: var(--tree-muted);
+  font-size: 0.9rem;
+  z-index: 2;
+}
+
+.family-tree-status--error {
+  color: #ffe4e6;
+  border-color: rgba(239, 71, 111, 0.5);
+}
+
+.family-tree-hint {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 0.45rem 0.65rem;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--tree-muted);
+  font-size: 0.85rem;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.tree-confirm {
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 12, 25, 0.78);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+
+.tree-confirm.is-visible {
+  display: flex;
+}
+
+.tree-confirm-dialog {
+  width: min(320px, 90%);
+  background: rgba(10, 18, 35, 0.95);
+  border-radius: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  padding: 1.25rem;
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.45);
+  text-align: left;
+}
+
+.tree-confirm-dialog h4 {
+  margin: 0 0 0.5rem;
+}
+
+.tree-confirm-dialog p {
+  margin: 0 0 1rem;
+  color: var(--tree-muted);
+  line-height: 1.5;
+}
+
+.tree-confirm-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.poster-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.poster-header h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.poster-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.poster-link {
+  padding: 0.55rem 1.1rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg-primary);
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.poster-link:hover {
+  background: rgba(37, 99, 235, 0.12);
+}
+
+.poster-viewer {
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+.poster-scroll {
+  overflow: auto;
+  max-height: clamp(360px, 70vh, 780px);
+}
+
+.poster-scroll img {
+  display: block;
+  max-width: none;
+  width: 100%;
+  min-width: 640px;
+}
+
+.poster-footnote {
+  margin-top: 1rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.resources-card {
+  background: var(--bg-primary);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  padding: 1.75rem;
+  line-height: 1.7;
+}
+
+.resources-card h3 {
+  margin-top: 0;
+}
+
+.resources-card ul {
+  padding-left: 1.25rem;
+  margin: 1rem 0;
+}
+
+.resources-card a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.resources-card a:hover {
+  text-decoration: underline;
+}
+
+.resources-note {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .genealogy-explorer {
+    padding: 1.5rem 0.75rem 3rem;
+  }
+
+  .primary-panel {
+    padding: 1.25rem;
+    border-radius: 14px;
+  }
+
+  .tree-shell-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tree-shell-link {
+    align-self: flex-start;
+  }
+
+  .family-tree-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tree-row--primary {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tree-row--search {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tree-select select {
+    width: 100%;
+  }
+
+  .tree-actions {
+    justify-content: space-between;
+  }
+
+  .tree-action {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  .tree-search-controls {
+    flex-direction: column;
+  }
+
+  .tree-search-controls input {
+    width: 100%;
+  }
+
+  .tree-actions .tree-action--ghost {
+    display: none;
+  }
+
+  .family-tree-minimap,
+  .family-tree-details {
+    display: none;
+  }
+
+  .tree-legend {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    margin-left: 0;
+  }
+
+  .family-tree-stage {
+    min-height: 420px;
+  }
+
+  .poster-scroll {
+    max-height: 65vh;
+  }
+
+  .poster-scroll img {
+    width: 140%;
+  }
+}
+</style>
+
+<script>
+  var refTagger = {
+    settings: {
+      bibleVersion: 'ESV'
+    }
+  };
+
+  (function (d, t) {
+    var n = d.querySelector('[nonce]');
+    refTagger.settings.nonce = n && (n.nonce || n.getAttribute('nonce'));
+    var g = d.createElement(t);
+    var s = d.getElementsByTagName(t)[0];
+    g.src = 'https://api.reftagger.com/v2/RefTagger.js';
+    g.nonce = refTagger.settings.nonce;
+    s.parentNode.insertBefore(g, s);
+  }(document, 'script'));
+</script>

@@ -1,0 +1,13 @@
+{
+  "cluster": "judges",
+  "title": "Judges & Notables",
+  "roots": [],
+  "tree": {
+    "id": "ROOT",
+    "name": "ROOT",
+    "children": []
+  },
+  "stats": {
+    "nodes": 0
+  }
+}

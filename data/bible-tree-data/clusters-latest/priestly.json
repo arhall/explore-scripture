@@ -1,0 +1,787 @@
+{
+  "cluster": "priestly",
+  "title": "Priestly Line (Levi → Aaron → High Priests)",
+  "roots": [
+    "185",
+    "314",
+    "340"
+  ],
+  "tree": {
+    "id": "ROOT",
+    "name": "ROOT",
+    "children": [
+      {
+        "id": "175",
+        "name": "sister",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2235,
+        "y": 5920,
+        "tooltipRaw": "sister\n\nsee Mark 6:3",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "sister see Mark 6:3",
+          "extra": {},
+          "refs": [
+            "Mark 6:3"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "176",
+        "name": "sister",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2216.490683229814,
+        "y": 5920,
+        "tooltipRaw": "see Mark 6:3",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "see Mark 6:3",
+          "extra": {},
+          "refs": [
+            "Mark 6:3"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "177",
+        "name": "Simon",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2197.981366459627,
+        "y": 5920,
+        "tooltipRaw": "Simon\n\nsee Mark 6:3",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Simon see Mark 6:3",
+          "extra": {},
+          "name": "Simon see Mark",
+          "refs": [
+            "Mark 6:3"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "178",
+        "name": "Judas",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 5920,
+        "tooltipRaw": "Judas\n\nsee Mark 6:3",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Judas see Mark 6:3",
+          "extra": {},
+          "name": "Judas see Mark",
+          "refs": [
+            "Mark 6:3"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "179",
+        "name": "Joses",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2160.9627329192544,
+        "y": 5920,
+        "tooltipRaw": "Joses\n\nsee Mark 6:3",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Joses see Mark 6:3",
+          "extra": {},
+          "name": "Joses see Mark",
+          "refs": [
+            "Mark 6:3"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "180",
+        "name": "James (Jacob)",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2142.4534161490683,
+        "y": 5920,
+        "tooltipRaw": "James (Jacob)\n\nsee Mark 6:3",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "James (Jacob) see Mark 6:3",
+          "extra": {},
+          "name": "James (Jacob) see Mark",
+          "refs": [
+            "Mark 6:3"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "181",
+        "name": "Yeshua the Messiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2123.944099378882,
+        "y": 5920,
+        "tooltipRaw": "Yeshua the Messiah\n\n(Matthew 1:16)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Yeshua the Messiah (Matthew 1:16)",
+          "extra": {},
+          "name": "Yeshua the Messiah (Matthew",
+          "refs": [
+            "Matthew 1:16"
+          ],
+          "roles": [
+            "Messiah line"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "182",
+        "name": "Mary",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 5840,
+        "tooltipRaw": "Mary\n\nSpouse: Joseph\n \n\n(Matthew 1:16, Luke 3:23, Acts 1:14)\n\nMary, by whom Yeshua was born (Matthew 1:16).",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Mary Spouse: Joseph (Matthew 1:16, Luke 3:23, Acts 1:14) Mary, by whom Yeshua was born (Matthew 1:16).",
+          "extra": {
+            "Mary Spouse": "Joseph (Matthew 1:16, Luke 3:23, Acts 1:14) Mary, by whom Yeshua was born (Matthew 1:16)."
+          },
+          "name": "Mary Spouse",
+          "spouse": "Joseph (Matthew 1:16",
+          "refs": [
+            "Matthew 1:16",
+            "Luke 3:23",
+            "Acts 1:14"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "183",
+        "name": "Eli",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 5760,
+        "tooltipRaw": "Eli\n\n(Luke 3:23)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Eli (Luke 3:23)",
+          "extra": {},
+          "name": "Eli (Luke",
+          "refs": [
+            "Luke 3:23"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "184",
+        "name": "Matthat",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 5680,
+        "tooltipRaw": "Matthat\n\n(Luke 3:29)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Matthat (Luke 3:29)",
+          "extra": {},
+          "name": "Matthat (Luke",
+          "refs": [
+            "Luke 3:29"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "185",
+        "name": "Levi",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 5600,
+        "tooltipRaw": "Levi\n\nLived: 1729-1592 BCE (137 years)\n\n(Genesis 29:34, 1 Chronicles 2:1)\n\nMore details are available\nat Psalm11918.org",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Levi Lived: 1729-1592 BCE (137 years) (Genesis 29:34, 1 Chronicles 2:1) More details are available at Psalm11918.org",
+          "extra": {
+            "Levi Lived": "1729-1592 BCE (137 years) (Genesis 29:34, 1 Chronicles 2:1) More details are available at Psalm11918.org"
+          },
+          "name": "Levi Lived",
+          "refs": [
+            "Genesis 29:34"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "313",
+        "name": "Ithamar",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1115.1863354037268,
+        "y": 2080,
+        "tooltipRaw": "Ithamar\n\n(Exodus 6:23, Numbers 3:2, Numbers 26:60, 1 Chronicles 6:3, 1 Chronicles 24:1)\n\nMoses, Aaron, and his sons were to camp before the tabernacle eastward, toward the sunrise (Numbers 3:38).",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Ithamar (Exodus 6:23, Numbers 3:2, Numbers 26:60, 1 Chronicles 6:3, 1 Chronicles 24:1) Moses, Aaron, and his sons were to camp before the tabernacle eastward, toward the sunrise (Numbers 3:38).",
+          "extra": {},
+          "name": "Ithamar (Exodus",
+          "refs": [
+            "Exodus 6:23",
+            "Numbers 3:2",
+            "Numbers 26:60",
+            "Numbers 3:38"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "314",
+        "name": "Ezra",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1105.9316770186335,
+        "y": 3760,
+        "tooltipRaw": "Ezra\n\n(Ezra 7:1)Ezra was the priest who returned to Jerusalem after the Babylonian captivity and recorded the events in the book of the Bible named Ezra.",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Ezra (Ezra 7:1)Ezra was the priest who returned to Jerusalem after the Babylonian captivity and recorded the events in the book of the Bible named Ezra.",
+          "extra": {},
+          "name": "Ezra (Ezra",
+          "refs": [
+            "Ezra 7:1"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "315",
+        "name": "Joshua",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1087.4223602484471,
+        "y": 3840,
+        "tooltipRaw": "(Haggai 1:1, Haggai 1:12, Zechariah 6:11)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Haggai 1:1, Haggai 1:12, Zechariah 6:11)",
+          "extra": {},
+          "refs": [
+            "Haggai 1:1",
+            "Haggai 1:12",
+            "Zechariah 6:11"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "316",
+        "name": "Jehozadak",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1087.4223602484471,
+        "y": 3760,
+        "tooltipRaw": "Jehozadak\n\n(1 Chronicles 6:14)\n\nJehozadak was high priest (Haggai 1:1) when Judah and Jerusalem were carried away into exile by Nebuchadnezzar (1 Chronicles 6:15).",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Jehozadak (1 Chronicles 6:14) Jehozadak was high priest (Haggai 1:1) when Judah and Jerusalem were carried away into exile by Nebuchadnezzar (1 Chronicles 6:15).",
+          "extra": {},
+          "name": "Jehozadak (",
+          "refs": [
+            "Haggai 1:1"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "317",
+        "name": "Seraiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 3680,
+        "tooltipRaw": "(1 Chronicles 6:14, Ezra 7:1)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 6:14, Ezra 7:1)",
+          "extra": {},
+          "refs": [
+            "Ezra 7:1"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "318",
+        "name": "Azariah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 3600,
+        "tooltipRaw": "(1 Chronicles 6:13, Ezra 7:1)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 6:13, Ezra 7:1)",
+          "extra": {},
+          "refs": [
+            "Ezra 7:1"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "319",
+        "name": "Hilkiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 3520,
+        "tooltipRaw": "Hilkiah\n\n(1 Chronicles 6:45-46)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Hilkiah (1 Chronicles 6:45-46)",
+          "extra": {},
+          "name": "Hilkiah ("
+        },
+        "children": []
+      },
+      {
+        "id": "320",
+        "name": "Shallum",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 3440,
+        "tooltipRaw": "(1 Chronicles 6:12, Ezra 7:1-2)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 6:12, Ezra 7:1-2)",
+          "extra": {},
+          "refs": [
+            "Ezra 7:1"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "321",
+        "name": "Zadok",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 3360,
+        "tooltipRaw": "Zadok\n\n(1 Chronicles 6:8, 6:53)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Zadok (1 Chronicles 6:8, 6:53)",
+          "extra": {},
+          "name": "Zadok ("
+        },
+        "children": []
+      },
+      {
+        "id": "322",
+        "name": "Ahitub",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 3280,
+        "tooltipRaw": "(1 Chronicles 6:7, 6:52)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 6:7, 6:52)",
+          "extra": {}
+        },
+        "children": []
+      },
+      {
+        "id": "323",
+        "name": "Amariah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 3200,
+        "tooltipRaw": "Amariah\n\n(1 Chronicles 23:19, 1 Chronicles 24:23)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Amariah (1 Chronicles 23:19, 1 Chronicles 24:23)",
+          "extra": {},
+          "name": "Amariah ("
+        },
+        "children": []
+      },
+      {
+        "id": "324",
+        "name": "Azariah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 3120,
+        "tooltipRaw": "(1 Chronicles 6:10, Ezra 7:3)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 6:10, Ezra 7:3)",
+          "extra": {},
+          "refs": [
+            "Ezra 7:3"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "325",
+        "name": "Johanan",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 3040,
+        "tooltipRaw": "Johanan\n\n(1 Chronicles 3:24)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Johanan (1 Chronicles 3:24)",
+          "extra": {},
+          "name": "Johanan ("
+        },
+        "children": []
+      },
+      {
+        "id": "326",
+        "name": "Azariah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 2960,
+        "tooltipRaw": "(1 Chronicles 6:9, Ezra 7:3)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 6:9, Ezra 7:3)",
+          "extra": {},
+          "refs": [
+            "Ezra 7:3"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "327",
+        "name": "Ahimaaz",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 2880,
+        "tooltipRaw": "Ahimaaz\n\n(1 Chronicles 6:8, 6:53)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Ahimaaz (1 Chronicles 6:8, 6:53)",
+          "extra": {},
+          "name": "Ahimaaz ("
+        },
+        "children": []
+      },
+      {
+        "id": "328",
+        "name": "Zadok",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 2800,
+        "tooltipRaw": "(1 Chronicles 6:8, 6:53)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 6:8, 6:53)",
+          "extra": {}
+        },
+        "children": []
+      },
+      {
+        "id": "329",
+        "name": "Ahitub",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 2720,
+        "tooltipRaw": "(1 Chronicles 6:7, 6:52)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 6:7, 6:52)",
+          "extra": {}
+        },
+        "children": []
+      },
+      {
+        "id": "330",
+        "name": "Amariah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 2640,
+        "tooltipRaw": "(1 Chronicles 6:7, 6:52, Ezra 7:3)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 6:7, 6:52, Ezra 7:3)",
+          "extra": {},
+          "refs": [
+            "Ezra 7:3"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "331",
+        "name": "Meraioth",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 2560,
+        "tooltipRaw": "Meraioth\n\n(1 Chronicles 6:6, 6:52, Ezra 7:3-4)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Meraioth (1 Chronicles 6:6, 6:52, Ezra 7:3-4)",
+          "extra": {},
+          "name": "Meraioth (",
+          "refs": [
+            "Ezra 7:3"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "332",
+        "name": "Zerahiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 2480,
+        "tooltipRaw": "Zerahiah\n\n(1 Chronicles 6:6, 6:51, Ezra 7:4)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Zerahiah (1 Chronicles 6:6, 6:51, Ezra 7:4)",
+          "extra": {},
+          "name": "Zerahiah (",
+          "refs": [
+            "Ezra 7:4"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "333",
+        "name": "Uzzi",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 2400,
+        "tooltipRaw": "(1 Chronicles 6:5, 6:51, Ezra 7:4)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 6:5, 6:51, Ezra 7:4)",
+          "extra": {},
+          "refs": [
+            "Ezra 7:4"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "334",
+        "name": "Bukki",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 2320,
+        "tooltipRaw": "Bukki\n\n(1 Chronicles 6:5, 6:51, Ezra 7:4-5)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Bukki (1 Chronicles 6:5, 6:51, Ezra 7:4-5)",
+          "extra": {},
+          "name": "Bukki (",
+          "refs": [
+            "Ezra 7:4"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "335",
+        "name": "Abishua",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 2240,
+        "tooltipRaw": "(1 Chronicles 6:4, 1 Chronicles 6:50, Ezra 7:5)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 6:4, 1 Chronicles 6:50, Ezra 7:5)",
+          "extra": {},
+          "refs": [
+            "Ezra 7:5"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "336",
+        "name": "Phinehas",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 2160,
+        "tooltipRaw": "(Exodus 6:25, Numbers 25:7-8, 1 Chronicles 6:50, Ezra 7:5) The LORD gave Phinehas His covenant of peace- covenant of a perpetual priesthood (Numbers 25:11-13)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Exodus 6:25, Numbers 25:7-8, 1 Chronicles 6:50, Ezra 7:5) The LORD gave Phinehas His covenant of peace- covenant of a perpetual priesthood (Numbers 25:11-13)",
+          "extra": {},
+          "refs": [
+            "Exodus 6:25",
+            "Numbers 25:7",
+            "Ezra 7:5",
+            "Numbers 25:11"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "337",
+        "name": "Eleazar",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1096.6770186335405,
+        "y": 2080,
+        "tooltipRaw": "(Exodus 6:23, Numbers 3:2, Numbers 26:60, 1 Chronicles 6:3, 6:50, 24:1, Ezra 7:5) Moses, Aaron, and his sons were to camp before the tabernacle eastward, toward the sunrise (Numbers 3:38).",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Exodus 6:23, Numbers 3:2, Numbers 26:60, 1 Chronicles 6:3, 6:50, 24:1, Ezra 7:5) Moses, Aaron, and his sons were to camp before the tabernacle eastward, toward the sunrise (Numbers 3:38).",
+          "extra": {},
+          "refs": [
+            "Exodus 6:23",
+            "Numbers 3:2",
+            "Numbers 26:60",
+            "Ezra 7:5",
+            "Numbers 3:38"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "338",
+        "name": "Abihu",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1078.167701863354,
+        "y": 2080,
+        "tooltipRaw": "Abihu\n\n(Exodus 6:23, Numbers 3:2, Numbers 26:60, 1 Chronicles 6:3, 1 Chronicles 24:1-2)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Abihu (Exodus 6:23, Numbers 3:2, Numbers 26:60, 1 Chronicles 6:3, 1 Chronicles 24:1-2)",
+          "extra": {},
+          "name": "Abihu (Exodus",
+          "refs": [
+            "Exodus 6:23",
+            "Numbers 3:2",
+            "Numbers 26:60"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "339",
+        "name": "Nadab",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1059.6583850931677,
+        "y": 2080,
+        "tooltipRaw": "(Exodus 6:23, Numbers 3:2, Numbers 26:60, 1 Chronicles 6:3, 1 Chronicles 24:1-2)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Exodus 6:23, Numbers 3:2, Numbers 26:60, 1 Chronicles 6:3, 1 Chronicles 24:1-2)",
+          "extra": {},
+          "refs": [
+            "Exodus 6:23",
+            "Numbers 3:2",
+            "Numbers 26:60"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "340",
+        "name": "Aaron",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1087.4223602484471,
+        "y": 2000,
+        "tooltipRaw": "Aaron\n\nLived: 1559-1436 BCE (123 years)\n\n(Exodus 6:20, Numbers 26:59, 1 Chronicles 6:3, 1 Chronicles 23:13)\n\nMoses, Aaron, and his sons were to camp before the tabernacle eastward, toward the sunrise (Numbers 3:38).",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Aaron Lived: 1559-1436 BCE (123 years) (Exodus 6:20, Numbers 26:59, 1 Chronicles 6:3, 1 Chronicles 23:13) Moses, Aaron, and his sons were to camp before the tabernacle eastward, toward the sunrise (Numbers 3:38).",
+          "extra": {
+            "Aaron Lived": "1559-1436 BCE (123 years) (Exodus 6:20, Numbers 26:59, 1 Chronicles 6:3, 1 Chronicles 23:13) Moses, Aaron, and his sons were to camp before the tabernacle eastward, toward the sunrise (Numbers 3:38)."
+          },
+          "name": "Aaron Lived",
+          "refs": [
+            "Exodus 6:20",
+            "Numbers 26:59",
+            "Numbers 3:38"
+          ]
+        },
+        "children": []
+      }
+    ]
+  },
+  "stats": {
+    "nodes": 39
+  }
+}

@@ -98,9 +98,9 @@ class BundleOptimizer {
 
       'genealogy-explorer': {
         url: '/assets/genealogy-explorer.js',
-        priority: 'low',
-        size: 50,
-        dependencies: ['d3'],
+        priority: 'medium',
+        size: 35,
+        dependencies: [],
         triggers: ['genealogy-page-visit'],
       },
 
@@ -403,7 +403,7 @@ class BundleOptimizer {
       'chapter-reading': ['chapter-reader'],
       commentary: ['commentary-reader'],
       'entity-relationships': ['entity-relationship-visualizer', 'd3'],
-      genealogy: ['genealogy-explorer', 'd3'],
+      genealogy: ['genealogy-explorer'],
     };
 
     return featureModules[feature] || [];

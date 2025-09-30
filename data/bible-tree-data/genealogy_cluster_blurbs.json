@@ -1,0 +1,88 @@
+{
+  "primeval": {
+    "title": "Primeval (Creation → Flood → Nations)",
+    "tooltip": "From Adam to Noah (Genesis 5), Scripture shows both the spread of sin (Cain; Genesis 4) and God’s preservation through Seth. After the Flood, the Table of Nations maps every people group from Noah’s sons (Genesis 10).",
+    "blurb": "The primeval genealogies trace the earliest story of humanity, beginning with Adam and moving through Seth to Noah. They highlight the contrast between Cain’s line of violence and the preserved line of promise through Seth. After the Flood, Genesis 10 (the Table of Nations) shows how the families of Japheth, Ham, and Shem spread across the world, preparing the narrative focus to narrow through Shem’s line to Abram in Genesis 11:10–32.",
+    "scripture": [
+      "Genesis 4",
+      "Genesis 5",
+      "Genesis 10",
+      "Genesis 11:10–32",
+      "1 Chronicles 1:1–27"
+    ]
+  },
+  "patriarchs": {
+    "title": "Patriarchs (Abraham, Isaac, Jacob)",
+    "tooltip": "God’s covenant promises focus through Abraham (Genesis 12), then Isaac (Genesis 25), and Jacob/Israel (Genesis 29–35; 46). The line narrows by grace, not human merit.",
+    "blurb": "The patriarchal genealogies follow God’s covenant promises as they narrow from the nations to one chosen family. Abraham is called to be a blessing to all nations; through Isaac (not Ishmael) the covenant line continues, and through Jacob/Israel the twelve tribes are born. These records root salvation history in real people and families chosen by God’s grace.",
+    "scripture": [
+      "Genesis 12",
+      "Genesis 16–17",
+      "Genesis 21–22",
+      "Genesis 25",
+      "Genesis 29–35",
+      "Genesis 46"
+    ]
+  },
+  "tribal": {
+    "title": "Tribal & National Lines",
+    "tooltip": "Explore Israel’s tribes (Numbers 26; 1 Chronicles 2–8) alongside neighboring peoples: Ishmael’s princes (Genesis 25), Esau’s chiefs (Genesis 36), and Lot’s sons, Moab and Ammon (Genesis 19).",
+    "blurb": "The tribal and national genealogies establish Israel’s identity and situate the nation among its neighbors. Jacob’s twelve sons become the heads of Israel’s tribes, while Ishmael’s descendants, Esau/Edom’s chiefs and kings, and Lot’s sons (Moab and Ammon) form the surrounding peoples. These lists show both distinction and constant interaction between Israel and other nations.",
+    "scripture": [
+      "Genesis 19:36–38",
+      "Genesis 25:12–18",
+      "Genesis 36",
+      "Genesis 46:8–27",
+      "Numbers 1",
+      "Numbers 26",
+      "1 Chronicles 2–8"
+    ]
+  },
+  "priestly": {
+    "title": "Priestly Line (Levi → Aaron → High Priests)",
+    "tooltip": "Levi’s line—especially Aaron’s descendants—secured the right to serve at the altar (Exodus 6; Numbers 3). Later records trace high priests and Levites who returned from exile (Ezra 7; Nehemiah 12).",
+    "blurb": "The priestly genealogies preserve the lineage of Levi with special attention to Aaron’s house. These names validated who could minister in tabernacle and temple, underscoring holiness, atonement, and orderly worship. Post‑exilic lists show continuity of priestly service after the return, even as the people rebuilt their life with God at the center.",
+    "scripture": [
+      "Exodus 6:14–27",
+      "Numbers 3",
+      "1 Chronicles 6",
+      "Ezra 7:1–5",
+      "Nehemiah 12:1–26"
+    ]
+  },
+  "royal": {
+    "title": "Royal Line (Judah → David → Kings → Zerubbabel)",
+    "tooltip": "From Judah’s promise (Genesis 49:10) to David and the kings of Judah (1 Chronicles 3), Scripture preserves the Davidic line through exile and restoration, including Zerubbabel (Ezra 3; Haggai 2).",
+    "blurb": "The royal genealogies trace God’s promise of kingship through Judah to David and his descendants. Even when the monarchy fell and the people were exiled, the Davidic line endured, keeping alive the hope of an everlasting throne. Post‑exilic figures like Zerubbabel signal God’s ongoing commitment to restore His people and fulfill the covenant made with David.",
+    "scripture": [
+      "Genesis 49:10",
+      "Ruth 4:18–22",
+      "1 Chronicles 2–3",
+      "2 Samuel 7",
+      "Ezra 3",
+      "Haggai 2:20–23",
+      "Zechariah 4"
+    ]
+  },
+  "messianic": {
+    "title": "Messianic (Matthew & Luke)",
+    "tooltip": "Matthew 1:1–17 traces Jesus’ legal/royal line through Solomon; Luke 3:23–38 traces His biological line through Nathan back to Adam. Together they present Jesus as Son of David and Son of God.",
+    "blurb": "The New Testament preserves two inspired genealogies of Jesus. Matthew emphasizes Jesus’ legal right to David’s throne through the royal line of Solomon, highlighting covenant fulfillment. Luke traces the line through David’s son Nathan back to Adam, presenting Jesus as the true Son of Man and the Savior for all people. Displaying both lines side‑by‑side helps readers see complementary truths about Christ’s identity.",
+    "scripture": [
+      "Matthew 1:1–17",
+      "Luke 3:23–38",
+      "Isaiah 11:1–2",
+      "Romans 1:3–4"
+    ]
+  },
+  "judges": {
+    "title": "Judges & Notables",
+    "tooltip": "Scattered notes mention judges and leaders raised by God in times of need (Judges; 1 Samuel 12:11). They anticipate the ultimate Deliverer.",
+    "blurb": "Before the monarchy, God raised up judges—temporary deliverers who rescued Israel from oppression and called the people back to faithfulness. Genealogical notices about these leaders remind readers that God provides shepherds for His people in every generation and point forward to the true and final Deliverer.",
+    "scripture": [
+      "Judges (overview)",
+      "1 Samuel 12:11",
+      "Hebrews 11:32–34"
+    ]
+  }
+}

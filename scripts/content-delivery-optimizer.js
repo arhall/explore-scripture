@@ -354,7 +354,6 @@ class ProgressiveEnhancer {
   async applyPremiumEnhancements() {
     // Full feature set for high-end devices
     await this.loadModule('entity-relationship-visualizer');
-    await this.loadModule('genealogy-explorer');
     this.enableAdvancedAnimations();
     this.enablePredictiveLoading();
     this.enableHighResImages();

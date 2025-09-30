@@ -1,0 +1,3243 @@
+{
+  "cluster": "royal",
+  "title": "Royal Line (Judah → David → Kings → Zerubbabel)",
+  "roots": [
+    "153",
+    "215",
+    "231"
+  ],
+  "tree": {
+    "id": "ROOT",
+    "name": "ROOT",
+    "children": [
+      {
+        "id": "127",
+        "name": "Tamar",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2487.1894409937886,
+        "y": 2640,
+        "tooltipRaw": "Tamar\n\n(1 Chronicles 3:9)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Tamar (1 Chronicles 3:9)",
+          "extra": {},
+          "name": "Tamar ("
+        },
+        "children": []
+      },
+      {
+        "id": "128",
+        "name": "Japhia",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2468.6801242236024,
+        "y": 2640,
+        "tooltipRaw": "Japhia\n\n(1 Chronicles 3:7)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Japhia (1 Chronicles 3:7)",
+          "extra": {},
+          "name": "Japhia ("
+        },
+        "children": []
+      },
+      {
+        "id": "129",
+        "name": "Nepheg",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2450.170807453416,
+        "y": 2640,
+        "tooltipRaw": "Nepheg\n\n(Exodus 6:21)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Nepheg (Exodus 6:21)",
+          "extra": {},
+          "name": "Nepheg (Exodus",
+          "refs": [
+            "Exodus 6:21"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "130",
+        "name": "Nogah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2431.66149068323,
+        "y": 2640,
+        "tooltipRaw": "Nogah\n\n(1 Chronicles 3:7)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Nogah (1 Chronicles 3:7)",
+          "extra": {},
+          "name": "Nogah ("
+        },
+        "children": []
+      },
+      {
+        "id": "131",
+        "name": "Eliphelet",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2413.1521739130435,
+        "y": 2640,
+        "tooltipRaw": "Eliphelet\n\n(1 Chronicles 3:6)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Eliphelet (1 Chronicles 3:6)",
+          "extra": {},
+          "name": "Eliphelet ("
+        },
+        "children": []
+      },
+      {
+        "id": "132",
+        "name": "Elishama",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2394.6428571428573,
+        "y": 2640,
+        "tooltipRaw": "(1 Chronicles 3:6)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 3:6)",
+          "extra": {}
+        },
+        "children": []
+      },
+      {
+        "id": "133",
+        "name": "Ibhar",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2376.1335403726707,
+        "y": 2640,
+        "tooltipRaw": "Ibhar\n\n(1 Chronicles 3:6)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Ibhar (1 Chronicles 3:6)",
+          "extra": {},
+          "name": "Ibhar ("
+        },
+        "children": []
+      },
+      {
+        "id": "134",
+        "name": "Shallum",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2385.388198757764,
+        "y": 3920,
+        "tooltipRaw": "Shallum\n\n(1 Chronicles 4:25)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Shallum (1 Chronicles 4:25)",
+          "extra": {},
+          "name": "Shallum ("
+        },
+        "children": []
+      },
+      {
+        "id": "135",
+        "name": "Zedekiah (or Matteniah)",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2366.8788819875776,
+        "y": 3920,
+        "tooltipRaw": "Zedekiah (or Matteniah)\n\n(1 Chronicles 3:15)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Zedekiah (or Matteniah) (1 Chronicles 3:15)",
+          "extra": {},
+          "name": "Zedekiah (or Matteniah) ("
+        },
+        "children": []
+      },
+      {
+        "id": "136",
+        "name": "Zedekiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2357.6242236024846,
+        "y": 4000,
+        "tooltipRaw": "Zedekiah\n\n(1 Chronicles 3:16)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Zedekiah (1 Chronicles 3:16)",
+          "extra": {},
+          "name": "Zedekiah ("
+        },
+        "children": []
+      },
+      {
+        "id": "137",
+        "name": "Nedabiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2461.7391304347825,
+        "y": 4080,
+        "tooltipRaw": "Nedabiah\n\n(1 Chronicles 3:18)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Nedabiah (1 Chronicles 3:18)",
+          "extra": {},
+          "name": "Nedabiah ("
+        },
+        "children": []
+      },
+      {
+        "id": "138",
+        "name": "Hoshama",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2443.2298136645963,
+        "y": 4080,
+        "tooltipRaw": "Hoshama\n\n(1 Chronicles 3:18)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Hoshama (1 Chronicles 3:18)",
+          "extra": {},
+          "name": "Hoshama ("
+        },
+        "children": []
+      },
+      {
+        "id": "139",
+        "name": "Jekamiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2424.7204968944097,
+        "y": 4080,
+        "tooltipRaw": "Jekamiah\n\n(1 Chronicles 2:41)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Jekamiah (1 Chronicles 2:41)",
+          "extra": {},
+          "name": "Jekamiah ("
+        },
+        "children": []
+      },
+      {
+        "id": "140",
+        "name": "Shenazzar",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2406.2111801242236,
+        "y": 4080,
+        "tooltipRaw": "Shenazzar\n\n(1 Chronicles 3:18)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Shenazzar (1 Chronicles 3:18)",
+          "extra": {},
+          "name": "Shenazzar ("
+        },
+        "children": []
+      },
+      {
+        "id": "141",
+        "name": "Pedaiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2387.701863354037,
+        "y": 4080,
+        "tooltipRaw": "Pedaiah\n\n(1 Chronicles 3:18)",
+        "initiallyVisible": true,
+        "hadCollapsedChildren": true,
+        "tooltipParsed": {
+          "raw": "Pedaiah (1 Chronicles 3:18)",
+          "extra": {},
+          "name": "Pedaiah ("
+        },
+        "children": []
+      },
+      {
+        "id": "142",
+        "name": "Malchiram",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2311.3509316770187,
+        "y": 4080,
+        "tooltipRaw": "Malchiram\n\n(1 Chronicles 3:18)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Malchiram (1 Chronicles 3:18)",
+          "extra": {},
+          "name": "Malchiram ("
+        },
+        "children": []
+      },
+      {
+        "id": "143",
+        "name": "Joseph",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2235,
+        "y": 4960,
+        "tooltipRaw": "(Matthew 1:16)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Matthew 1:16)",
+          "extra": {},
+          "refs": [
+            "Matthew 1:16"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "144",
+        "name": "Jacob",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2235,
+        "y": 4880,
+        "tooltipRaw": "Jacob\n\n(Matthew 1:15)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Jacob (Matthew 1:15)",
+          "extra": {},
+          "name": "Jacob (Matthew",
+          "refs": [
+            "Matthew 1:15"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "145",
+        "name": "Matthan",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2235,
+        "y": 4800,
+        "tooltipRaw": "Matthan\n\n(Matthew 1:15)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Matthan (Matthew 1:15)",
+          "extra": {},
+          "name": "Matthan (Matthew",
+          "refs": [
+            "Matthew 1:15"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "146",
+        "name": "Eleazar",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2235,
+        "y": 4720,
+        "tooltipRaw": "Eleazar\n\n(1 Chronicles 23:21)\n\nEleazar had no sons (1 Chronicles 24:28)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Eleazar (1 Chronicles 23:21) Eleazar had no sons (1 Chronicles 24:28)",
+          "extra": {},
+          "name": "Eleazar ("
+        },
+        "children": []
+      },
+      {
+        "id": "147",
+        "name": "Eliud",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2235,
+        "y": 4640,
+        "tooltipRaw": "Eliud\n\n(Matthew 1:14)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Eliud (Matthew 1:14)",
+          "extra": {},
+          "name": "Eliud (Matthew",
+          "refs": [
+            "Matthew 1:14"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "148",
+        "name": "Achim",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2235,
+        "y": 4560,
+        "tooltipRaw": "Achim\n\n(Matthew 1:14)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Achim (Matthew 1:14)",
+          "extra": {},
+          "name": "Achim (Matthew",
+          "refs": [
+            "Matthew 1:14"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "149",
+        "name": "Zadoc",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2235,
+        "y": 4480,
+        "tooltipRaw": "Zadoc\n\n(Matthew 1:14)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Zadoc (Matthew 1:14)",
+          "extra": {},
+          "name": "Zadoc (Matthew",
+          "refs": [
+            "Matthew 1:14"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "150",
+        "name": "Azor",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2235,
+        "y": 4400,
+        "tooltipRaw": "Azor\n\n(Matthew 1:13)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Azor (Matthew 1:13)",
+          "extra": {},
+          "name": "Azor (Matthew",
+          "refs": [
+            "Matthew 1:13"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "151",
+        "name": "Eliakim",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2235,
+        "y": 4320,
+        "tooltipRaw": "Eliakim\n\n(Luke 3:30)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Eliakim (Luke 3:30)",
+          "extra": {},
+          "name": "Eliakim (Luke",
+          "refs": [
+            "Luke 3:30"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "152",
+        "name": "Abihud",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2235,
+        "y": 4240,
+        "tooltipRaw": "(Matthew 1:13)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Matthew 1:13)",
+          "extra": {},
+          "refs": [
+            "Matthew 1:13"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "153",
+        "name": "Zerubbabel",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2235,
+        "y": 4160,
+        "tooltipRaw": "Zerubbabel\n\n(1 Chronicles 3:19)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Zerubbabel (1 Chronicles 3:19)",
+          "extra": {},
+          "name": "Zerubbabel ("
+        },
+        "children": []
+      },
+      {
+        "id": "154",
+        "name": "Shealtiel",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2235,
+        "y": 4080,
+        "tooltipRaw": "Shealtiel\n\n(Luke 3:27)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Shealtiel (Luke 3:27)",
+          "extra": {},
+          "name": "Shealtiel (Luke",
+          "refs": [
+            "Luke 3:27"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "155",
+        "name": "Zedekiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2216.490683229814,
+        "y": 4080,
+        "tooltipRaw": "(1 Chronicles 3:16)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 3:16)",
+          "extra": {}
+        },
+        "children": []
+      },
+      {
+        "id": "156",
+        "name": "Jehoiachin (or Jeconiah)",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2339.114906832298,
+        "y": 4000,
+        "tooltipRaw": "Jehoiachin (or Jeconiah)\n\n(1 Chronicles 3:16, Matthew 1:11)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Jehoiachin (or Jeconiah) (1 Chronicles 3:16, Matthew 1:11)",
+          "extra": {},
+          "name": "Jehoiachin (or Jeconiah) (",
+          "refs": [
+            "Matthew 1:11"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "157",
+        "name": "Jehoiakim (or Eliakim)",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2348.369565217391,
+        "y": 3920,
+        "tooltipRaw": "Jehoiakim (or Eliakim)\n\n(1 Chronicles 3:15)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Jehoiakim (or Eliakim) (1 Chronicles 3:15)",
+          "extra": {},
+          "name": "Jehoiakim (or Eliakim) ("
+        },
+        "children": []
+      },
+      {
+        "id": "158",
+        "name": "Jehoahaz (or Johanan)",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2329.8602484472053,
+        "y": 3920,
+        "tooltipRaw": "Jehoahaz (or Johanan)\n\n(1 Chronicles 3:15)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Jehoahaz (or Johanan) (1 Chronicles 3:15)",
+          "extra": {},
+          "name": "Jehoahaz (or Johanan) ("
+        },
+        "children": []
+      },
+      {
+        "id": "159",
+        "name": "Josiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2357.6242236024846,
+        "y": 3840,
+        "tooltipRaw": "Josiah\n\n(1 Chronicles 3:14, Matthew 1:10)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Josiah (1 Chronicles 3:14, Matthew 1:10)",
+          "extra": {},
+          "name": "Josiah (",
+          "refs": [
+            "Matthew 1:10"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "160",
+        "name": "Amon",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2357.6242236024846,
+        "y": 3760,
+        "tooltipRaw": "Amon\n\n(1 Chronicles 3:14, Matthew 1:10)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Amon (1 Chronicles 3:14, Matthew 1:10)",
+          "extra": {},
+          "name": "Amon (",
+          "refs": [
+            "Matthew 1:10"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "161",
+        "name": "Manasseh",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2357.6242236024846,
+        "y": 3680,
+        "tooltipRaw": "(1 Chronicles 3:13, Matthew 1:10)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 3:13, Matthew 1:10)",
+          "extra": {},
+          "refs": [
+            "Matthew 1:10"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "162",
+        "name": "Hezekiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2357.6242236024846,
+        "y": 3600,
+        "tooltipRaw": "Hezekiah\n\n(1 Chronicles 3:13, Matthew 1:9)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Hezekiah (1 Chronicles 3:13, Matthew 1:9)",
+          "extra": {},
+          "name": "Hezekiah (",
+          "refs": [
+            "Matthew 1:9"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "163",
+        "name": "Ahaz",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2357.6242236024846,
+        "y": 3520,
+        "tooltipRaw": "(1 Chronicles 3:13, Matthew 1:9)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 3:13, Matthew 1:9)",
+          "extra": {},
+          "refs": [
+            "Matthew 1:9"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "164",
+        "name": "Jotham",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2357.6242236024846,
+        "y": 3440,
+        "tooltipRaw": "Jotham\n\n(1 Chronicles 2:47)Jahdai being one of Caleb's concubines/wives.",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Jotham (1 Chronicles 2:47)Jahdai being one of Caleb's concubines/wives.",
+          "extra": {},
+          "name": "Jotham ("
+        },
+        "children": []
+      },
+      {
+        "id": "165",
+        "name": "Azariah (or Uzziah)",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2357.6242236024846,
+        "y": 3360,
+        "tooltipRaw": "Azariah (or Uzziah)\n\n(1 Chronicles 3:12, Matthew 1:8)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Azariah (or Uzziah) (1 Chronicles 3:12, Matthew 1:8)",
+          "extra": {},
+          "name": "Azariah (or Uzziah) (",
+          "refs": [
+            "Matthew 1:8"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "166",
+        "name": "Amaziah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2357.6242236024846,
+        "y": 3280,
+        "tooltipRaw": "Amaziah\n\n(1 Chronicles 4:34)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Amaziah (1 Chronicles 4:34)",
+          "extra": {},
+          "name": "Amaziah ("
+        },
+        "children": []
+      },
+      {
+        "id": "167",
+        "name": "Joash",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2357.6242236024846,
+        "y": 3200,
+        "tooltipRaw": "Joash\n\n(Judges 6:11)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Joash (Judges 6:11)",
+          "extra": {},
+          "name": "Joash (Judges",
+          "refs": [
+            "Judges 6:11"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "168",
+        "name": "Ahaziah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2357.6242236024846,
+        "y": 3120,
+        "tooltipRaw": "Ahaziah\n\n(1 Chronicles 3:11)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Ahaziah (1 Chronicles 3:11)",
+          "extra": {},
+          "name": "Ahaziah ("
+        },
+        "children": []
+      },
+      {
+        "id": "169",
+        "name": "Joram",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2357.6242236024846,
+        "y": 3040,
+        "tooltipRaw": "Joram\n\n(1 Chronicles 26:24-25)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Joram (1 Chronicles 26:24-25)",
+          "extra": {},
+          "name": "Joram ("
+        },
+        "children": []
+      },
+      {
+        "id": "170",
+        "name": "Jehoshaphat",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2357.6242236024846,
+        "y": 2960,
+        "tooltipRaw": "Jehoshaphat\n\n(1 Chronicles 3:10, Matthew 1:8)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Jehoshaphat (1 Chronicles 3:10, Matthew 1:8)",
+          "extra": {},
+          "name": "Jehoshaphat (",
+          "refs": [
+            "Matthew 1:8"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "171",
+        "name": "Asa",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2357.6242236024846,
+        "y": 2880,
+        "tooltipRaw": "Asa\n\n(1 Chronicles 3:10, Matthew 1:7)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Asa (1 Chronicles 3:10, Matthew 1:7)",
+          "extra": {},
+          "name": "Asa (",
+          "refs": [
+            "Matthew 1:7"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "172",
+        "name": "Abijah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2357.6242236024846,
+        "y": 2800,
+        "tooltipRaw": "Abijah\n\n(1 Chronicles 7:8)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Abijah (1 Chronicles 7:8)",
+          "extra": {},
+          "name": "Abijah ("
+        },
+        "children": []
+      },
+      {
+        "id": "173",
+        "name": "Rehoboam",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2357.6242236024846,
+        "y": 2720,
+        "tooltipRaw": "Rehoboam\n\n(1 Chronicles 3:10, Matthew 1:7)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Rehoboam (1 Chronicles 3:10, Matthew 1:7)",
+          "extra": {},
+          "name": "Rehoboam (",
+          "refs": [
+            "Matthew 1:7"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "174",
+        "name": "Solomon",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2357.6242236024846,
+        "y": 2640,
+        "tooltipRaw": "Solomon\n\nLived: 1012-961 BCE (70 years)\n\n(1 Chronicles 3:5, Matthew 1:6)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Solomon Lived: 1012-961 BCE (70 years) (1 Chronicles 3:5, Matthew 1:6)",
+          "extra": {
+            "Solomon Lived": "1012-961 BCE (70 years) (1 Chronicles 3:5, Matthew 1:6)"
+          },
+          "name": "Solomon Lived",
+          "refs": [
+            "Matthew 1:6"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "175",
+        "name": "sister",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2235,
+        "y": 5920,
+        "tooltipRaw": "sister\n\nsee Mark 6:3",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "sister see Mark 6:3",
+          "extra": {},
+          "refs": [
+            "Mark 6:3"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "176",
+        "name": "sister",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2216.490683229814,
+        "y": 5920,
+        "tooltipRaw": "see Mark 6:3",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "see Mark 6:3",
+          "extra": {},
+          "refs": [
+            "Mark 6:3"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "177",
+        "name": "Simon",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2197.981366459627,
+        "y": 5920,
+        "tooltipRaw": "Simon\n\nsee Mark 6:3",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Simon see Mark 6:3",
+          "extra": {},
+          "name": "Simon see Mark",
+          "refs": [
+            "Mark 6:3"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "178",
+        "name": "Judas",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 5920,
+        "tooltipRaw": "Judas\n\nsee Mark 6:3",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Judas see Mark 6:3",
+          "extra": {},
+          "name": "Judas see Mark",
+          "refs": [
+            "Mark 6:3"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "179",
+        "name": "Joses",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2160.9627329192544,
+        "y": 5920,
+        "tooltipRaw": "Joses\n\nsee Mark 6:3",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Joses see Mark 6:3",
+          "extra": {},
+          "name": "Joses see Mark",
+          "refs": [
+            "Mark 6:3"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "180",
+        "name": "James (Jacob)",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2142.4534161490683,
+        "y": 5920,
+        "tooltipRaw": "James (Jacob)\n\nsee Mark 6:3",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "James (Jacob) see Mark 6:3",
+          "extra": {},
+          "name": "James (Jacob) see Mark",
+          "refs": [
+            "Mark 6:3"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "181",
+        "name": "Yeshua the Messiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2123.944099378882,
+        "y": 5920,
+        "tooltipRaw": "Yeshua the Messiah\n\n(Matthew 1:16)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Yeshua the Messiah (Matthew 1:16)",
+          "extra": {},
+          "name": "Yeshua the Messiah (Matthew",
+          "refs": [
+            "Matthew 1:16"
+          ],
+          "roles": [
+            "Messiah line"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "182",
+        "name": "Mary",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 5840,
+        "tooltipRaw": "Mary\n\nSpouse: Joseph\n \n\n(Matthew 1:16, Luke 3:23, Acts 1:14)\n\nMary, by whom Yeshua was born (Matthew 1:16).",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Mary Spouse: Joseph (Matthew 1:16, Luke 3:23, Acts 1:14) Mary, by whom Yeshua was born (Matthew 1:16).",
+          "extra": {
+            "Mary Spouse": "Joseph (Matthew 1:16, Luke 3:23, Acts 1:14) Mary, by whom Yeshua was born (Matthew 1:16)."
+          },
+          "name": "Mary Spouse",
+          "spouse": "Joseph (Matthew 1:16",
+          "refs": [
+            "Matthew 1:16",
+            "Luke 3:23",
+            "Acts 1:14"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "183",
+        "name": "Eli",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 5760,
+        "tooltipRaw": "Eli\n\n(Luke 3:23)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Eli (Luke 3:23)",
+          "extra": {},
+          "name": "Eli (Luke",
+          "refs": [
+            "Luke 3:23"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "184",
+        "name": "Matthat",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 5680,
+        "tooltipRaw": "Matthat\n\n(Luke 3:29)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Matthat (Luke 3:29)",
+          "extra": {},
+          "name": "Matthat (Luke",
+          "refs": [
+            "Luke 3:29"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "185",
+        "name": "Levi",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 5600,
+        "tooltipRaw": "Levi\n\nLived: 1729-1592 BCE (137 years)\n\n(Genesis 29:34, 1 Chronicles 2:1)\n\nMore details are available\nat Psalm11918.org",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Levi Lived: 1729-1592 BCE (137 years) (Genesis 29:34, 1 Chronicles 2:1) More details are available at Psalm11918.org",
+          "extra": {
+            "Levi Lived": "1729-1592 BCE (137 years) (Genesis 29:34, 1 Chronicles 2:1) More details are available at Psalm11918.org"
+          },
+          "name": "Levi Lived",
+          "refs": [
+            "Genesis 29:34"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "186",
+        "name": "Melchi",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 5520,
+        "tooltipRaw": "Melchi\n\n(Luke 3:28)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Melchi (Luke 3:28)",
+          "extra": {},
+          "name": "Melchi (Luke",
+          "refs": [
+            "Luke 3:28"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "187",
+        "name": "Jannai",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 5440,
+        "tooltipRaw": "Jannai\n\n(Luke 3:24)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Jannai (Luke 3:24)",
+          "extra": {},
+          "name": "Jannai (Luke",
+          "refs": [
+            "Luke 3:24"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "188",
+        "name": "Joseph",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 5360,
+        "tooltipRaw": "(Luke 3:24)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Luke 3:24)",
+          "extra": {},
+          "refs": [
+            "Luke 3:24"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "189",
+        "name": "Mattathias",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 5280,
+        "tooltipRaw": "Mattathias\n\n(Luke 3:26)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Mattathias (Luke 3:26)",
+          "extra": {},
+          "name": "Mattathias (Luke",
+          "refs": [
+            "Luke 3:26"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "190",
+        "name": "Amos",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 5200,
+        "tooltipRaw": "Amos\n\n(Luke 3:25)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Amos (Luke 3:25)",
+          "extra": {},
+          "name": "Amos (Luke",
+          "refs": [
+            "Luke 3:25"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "191",
+        "name": "Nahum",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 5120,
+        "tooltipRaw": "Nahum\n\n(Luke 3:25)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Nahum (Luke 3:25)",
+          "extra": {},
+          "name": "Nahum (Luke",
+          "refs": [
+            "Luke 3:25"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "192",
+        "name": "Hesli",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 5040,
+        "tooltipRaw": "Hesli\n\n(Luke 3:25)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Hesli (Luke 3:25)",
+          "extra": {},
+          "name": "Hesli (Luke",
+          "refs": [
+            "Luke 3:25"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "193",
+        "name": "Naggai",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 4960,
+        "tooltipRaw": "(Luke 3:25)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Luke 3:25)",
+          "extra": {},
+          "refs": [
+            "Luke 3:25"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "194",
+        "name": "Maath",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 4880,
+        "tooltipRaw": "Maath\n\n(Luke 3:26)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Maath (Luke 3:26)",
+          "extra": {},
+          "name": "Maath (Luke",
+          "refs": [
+            "Luke 3:26"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "195",
+        "name": "Mattathias",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 4800,
+        "tooltipRaw": "(Luke 3:26)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Luke 3:26)",
+          "extra": {},
+          "refs": [
+            "Luke 3:26"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "196",
+        "name": "Semein",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 4720,
+        "tooltipRaw": "Semein\n\n(Luke 3:26)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Semein (Luke 3:26)",
+          "extra": {},
+          "name": "Semein (Luke",
+          "refs": [
+            "Luke 3:26"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "197",
+        "name": "Josech",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 4640,
+        "tooltipRaw": "Josech\n\n(Luke 3:26)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Josech (Luke 3:26)",
+          "extra": {},
+          "name": "Josech (Luke",
+          "refs": [
+            "Luke 3:26"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "198",
+        "name": "Joda",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 4560,
+        "tooltipRaw": "Joda\n\n(Luke 3:26)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Joda (Luke 3:26)",
+          "extra": {},
+          "name": "Joda (Luke",
+          "refs": [
+            "Luke 3:26"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "199",
+        "name": "Joanan",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 4480,
+        "tooltipRaw": "Joanan\n\n(Luke 3:27)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Joanan (Luke 3:27)",
+          "extra": {},
+          "name": "Joanan (Luke",
+          "refs": [
+            "Luke 3:27"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "200",
+        "name": "Rhesa",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 4400,
+        "tooltipRaw": "(Luke 3:27)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Luke 3:27)",
+          "extra": {},
+          "refs": [
+            "Luke 3:27"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "201",
+        "name": "Zerubbabel",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 4320,
+        "tooltipRaw": "(Luke 3:27)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Luke 3:27)",
+          "extra": {},
+          "refs": [
+            "Luke 3:27"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "202",
+        "name": "Shealtiel",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 4240,
+        "tooltipRaw": "(Luke 3:27)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Luke 3:27)",
+          "extra": {},
+          "refs": [
+            "Luke 3:27"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "203",
+        "name": "Neri",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 4160,
+        "tooltipRaw": "Neri\n\n(Luke 3:27)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Neri (Luke 3:27)",
+          "extra": {},
+          "name": "Neri (Luke",
+          "refs": [
+            "Luke 3:27"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "204",
+        "name": "Melchi",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 4080,
+        "tooltipRaw": "(Luke 3:28)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Luke 3:28)",
+          "extra": {},
+          "refs": [
+            "Luke 3:28"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "205",
+        "name": "Addi",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 4000,
+        "tooltipRaw": "Addi\n\n(Luke 3:28)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Addi (Luke 3:28)",
+          "extra": {},
+          "name": "Addi (Luke",
+          "refs": [
+            "Luke 3:28"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "206",
+        "name": "Cosam",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 3920,
+        "tooltipRaw": "Cosam\n\n(Luke 3:28)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Cosam (Luke 3:28)",
+          "extra": {},
+          "name": "Cosam (Luke",
+          "refs": [
+            "Luke 3:28"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "207",
+        "name": "Elmadam",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 3840,
+        "tooltipRaw": "(Luke 3:28)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Luke 3:28)",
+          "extra": {},
+          "refs": [
+            "Luke 3:28"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "208",
+        "name": "Er",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 3760,
+        "tooltipRaw": "Er\n\n(Genesis 38:2-3, Genesis 46:12, 1 Chronicles 2:3)\n\nEr was evil in the sight of the LORD, so the LORD took his life. (Genesis 38:7)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Er (Genesis 38:2-3, Genesis 46:12, 1 Chronicles 2:3) Er was evil in the sight of the LORD, so the LORD took his life. (Genesis 38:7)",
+          "extra": {},
+          "name": "Er (Genesis",
+          "refs": [
+            "Genesis 38:2",
+            "Genesis 46:12",
+            "Genesis 38:7"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "209",
+        "name": "Joshua",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 3680,
+        "tooltipRaw": "(Luke 3:29)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Luke 3:29)",
+          "extra": {},
+          "refs": [
+            "Luke 3:29"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "210",
+        "name": "Eliezer",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 3600,
+        "tooltipRaw": "Eliezer\n\n(1 Chronicles 7:8)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Eliezer (1 Chronicles 7:8)",
+          "extra": {},
+          "name": "Eliezer ("
+        },
+        "children": []
+      },
+      {
+        "id": "211",
+        "name": "Jorim",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 3520,
+        "tooltipRaw": "Jorim\n\n(Luke 3:29)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Jorim (Luke 3:29)",
+          "extra": {},
+          "name": "Jorim (Luke",
+          "refs": [
+            "Luke 3:29"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "212",
+        "name": "Matthat",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 3440,
+        "tooltipRaw": "(Luke 3:29)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Luke 3:29)",
+          "extra": {},
+          "refs": [
+            "Luke 3:29"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "213",
+        "name": "Levi",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 3360,
+        "tooltipRaw": "(Luke 3:29)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Luke 3:29)",
+          "extra": {},
+          "refs": [
+            "Luke 3:29"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "214",
+        "name": "Simeon",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 3280,
+        "tooltipRaw": "Simeon\n\n(Genesis 29:33, 1 Chronicles 2:1)\n\nMore details are available\nat Psalm11918.org",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Simeon (Genesis 29:33, 1 Chronicles 2:1) More details are available at Psalm11918.org",
+          "extra": {},
+          "name": "Simeon (Genesis",
+          "refs": [
+            "Genesis 29:33"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "215",
+        "name": "Judah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 3200,
+        "tooltipRaw": "Judah\n\nSpouse: Bath-shua the Canaanitess (1 Chronicles 2:3) and Tamar (1 Chronicles 2:4)\n \n\n(Genesis 29:35, 1 Chronicles 2:1)\n\nMore details are available\nat Psalm11918.org",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Judah Spouse: Bath-shua the Canaanitess (1 Chronicles 2:3) and Tamar (1 Chronicles 2:4) (Genesis 29:35, 1 Chronicles 2:1) More details are available at Psalm11918.org",
+          "extra": {
+            "Judah Spouse": "Bath-shua the Canaanitess (1 Chronicles 2:3) and Tamar (1 Chronicles 2:4) (Genesis 29:35, 1 Chronicles 2:1) More details are available at Psalm11918.org"
+          },
+          "name": "Judah Spouse",
+          "spouse": "Bath-shua the Canaanitess (1 Chronicles 2:3) and Tamar (1 Chronicles 2:4) (Genesis 29:35",
+          "refs": [
+            "Genesis 29:35"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "216",
+        "name": "Joseph",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 3120,
+        "tooltipRaw": "(Luke 3:30)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Luke 3:30)",
+          "extra": {},
+          "refs": [
+            "Luke 3:30"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "217",
+        "name": "Jonam",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 3040,
+        "tooltipRaw": "Jonam\n\n(Luke 3:30)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Jonam (Luke 3:30)",
+          "extra": {},
+          "name": "Jonam (Luke",
+          "refs": [
+            "Luke 3:30"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "218",
+        "name": "Eliakim",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 2960,
+        "tooltipRaw": "(Luke 3:30)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Luke 3:30)",
+          "extra": {},
+          "refs": [
+            "Luke 3:30"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "219",
+        "name": "Melea",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 2880,
+        "tooltipRaw": "Melea\n\n(Luke 3:31)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Melea (Luke 3:31)",
+          "extra": {},
+          "name": "Melea (Luke",
+          "refs": [
+            "Luke 3:31"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "220",
+        "name": "Menna",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 2800,
+        "tooltipRaw": "Menna\n\n(Luke 3:31)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Menna (Luke 3:31)",
+          "extra": {},
+          "name": "Menna (Luke",
+          "refs": [
+            "Luke 3:31"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "221",
+        "name": "Mattatha",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 2720,
+        "tooltipRaw": "(Luke 3:31)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Luke 3:31)",
+          "extra": {},
+          "refs": [
+            "Luke 3:31"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "222",
+        "name": "Nathan",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2179.472049689441,
+        "y": 2640,
+        "tooltipRaw": "Nathan\n\n(1 Chronicles 2:36)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Nathan (1 Chronicles 2:36)",
+          "extra": {},
+          "name": "Nathan ("
+        },
+        "children": []
+      },
+      {
+        "id": "223",
+        "name": "Shobab",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2160.9627329192544,
+        "y": 2640,
+        "tooltipRaw": "Shobab\n\n(1 Chronicles 2:18)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Shobab (1 Chronicles 2:18)",
+          "extra": {},
+          "name": "Shobab ("
+        },
+        "children": []
+      },
+      {
+        "id": "224",
+        "name": "Shimea",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2142.4534161490683,
+        "y": 2640,
+        "tooltipRaw": "Shimea\n\n(1 Chronicles 6:29-30)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Shimea (1 Chronicles 6:29-30)",
+          "extra": {},
+          "name": "Shimea ("
+        },
+        "children": []
+      },
+      {
+        "id": "225",
+        "name": "Ithream",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2123.944099378882,
+        "y": 2640,
+        "tooltipRaw": "Ithream\n\n(1 Chronicles 3:3)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Ithream (1 Chronicles 3:3)",
+          "extra": {},
+          "name": "Ithream ("
+        },
+        "children": []
+      },
+      {
+        "id": "226",
+        "name": "Shephatiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2105.4347826086955,
+        "y": 2640,
+        "tooltipRaw": "Shephatiah\n\n(1 Chronicles 3:3)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Shephatiah (1 Chronicles 3:3)",
+          "extra": {},
+          "name": "Shephatiah ("
+        },
+        "children": []
+      },
+      {
+        "id": "227",
+        "name": "Adinijah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2086.9254658385094,
+        "y": 2640,
+        "tooltipRaw": "Adinijah\n\n(1 Chronicles 3:2)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Adinijah (1 Chronicles 3:2)",
+          "extra": {},
+          "name": "Adinijah ("
+        },
+        "children": []
+      },
+      {
+        "id": "228",
+        "name": "Absolom",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2068.416149068323,
+        "y": 2640,
+        "tooltipRaw": "Absolom\n\n(1 Chronicles 3:1)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Absolom (1 Chronicles 3:1)",
+          "extra": {},
+          "name": "Absolom ("
+        },
+        "children": []
+      },
+      {
+        "id": "229",
+        "name": "Daniel",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2049.9068322981366,
+        "y": 2640,
+        "tooltipRaw": "Daniel\n\n(1 Chronicles 3:1)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Daniel (1 Chronicles 3:1)",
+          "extra": {},
+          "name": "Daniel ("
+        },
+        "children": []
+      },
+      {
+        "id": "230",
+        "name": "Ammon",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2031.3975155279502,
+        "y": 2640,
+        "tooltipRaw": "Ammon\n\n(1 Chronicles 3:1)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Ammon (1 Chronicles 3:1)",
+          "extra": {},
+          "name": "Ammon ("
+        },
+        "children": []
+      },
+      {
+        "id": "231",
+        "name": "David",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2259.2934782608695,
+        "y": 2560,
+        "tooltipRaw": "David\n\nLived: 1070-1000 BCE (70 years)\n\nSpouse: Ahinoam the Jezreelitess, Abigail the Carmelitess (1 Chronicles 3:1), Maacah, the daughter of Talmai king of Geshur (1 Chronicles 3:2), Haggith (1 Chr 3:2), Abital (1 Chr 3:3), Eglah (1 Chr 3:3), Bath-shua the daughter of Ammiel (1 Chr 3:5)\n \n\n(Ruth 4:22, 1 Chronicles 2:15)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "David Lived: 1070-1000 BCE (70 years) Spouse: Ahinoam the Jezreelitess, Abigail the Carmelitess (1 Chronicles 3:1), Maacah, the daughter of Talmai king of Geshur (1 Chronicles 3:2), Haggith (1 Chr 3:2), Abital (1 Chr 3:3), Eglah (1 Chr 3:3), Bath-shua the daughter of Ammiel (1 Chr 3:5) (Ruth 4:22, 1 Chronicles 2:15)",
+          "extra": {
+            "David Lived": "1070-1000 BCE (70 years) Spouse: Ahinoam the Jezreelitess, Abigail the Carmelitess (1 Chronicles 3:1), Maacah, the daughter of Talmai king of Geshur (1 Chronicles 3:2), Haggith (1 Chr 3:2), Abital (1 Chr 3:3), Eglah (1 Chr 3:3), Bath-shua the daughter of Ammiel (1 Chr 3:5) (Ruth 4:22, 1 Chronicles 2:15)"
+          },
+          "name": "David Lived",
+          "spouse": "Ahinoam the Jezreelitess",
+          "refs": [
+            "1 Chr 3:2",
+            "1 Chr 3:3",
+            "1 Chr 3:5",
+            "Ruth 4:22"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "238",
+        "name": "Jesse",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2373.2414596273293,
+        "y": 2480,
+        "tooltipRaw": "Jesse\n\n(Ruth 4:22, 1 Chronicles 2:12)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Jesse (Ruth 4:22, 1 Chronicles 2:12)",
+          "extra": {},
+          "name": "Jesse (Ruth",
+          "refs": [
+            "Ruth 4:22"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "239",
+        "name": "Obed",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2373.2414596273293,
+        "y": 2400,
+        "tooltipRaw": "Obed\n\n(1 Chronicles 2:37)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Obed (1 Chronicles 2:37)",
+          "extra": {},
+          "name": "Obed ("
+        },
+        "children": []
+      },
+      {
+        "id": "240",
+        "name": "Boaz",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2373.2414596273293,
+        "y": 2320,
+        "tooltipRaw": "Boaz\n\n(Ruth 4:21, 1 Chronicles 2:11)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Boaz (Ruth 4:21, 1 Chronicles 2:11)",
+          "extra": {},
+          "name": "Boaz (Ruth",
+          "refs": [
+            "Ruth 4:21"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "241",
+        "name": "Salma (or Salmon)",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2373.2414596273293,
+        "y": 2240,
+        "tooltipRaw": "Salma (or Salmon)\n\n(Ruth 4:20, 1 Chronicles 2:11)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Salma (or Salmon) (Ruth 4:20, 1 Chronicles 2:11)",
+          "extra": {},
+          "name": "Salma (or Salmon) (Ruth",
+          "refs": [
+            "Ruth 4:20"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "242",
+        "name": "Nahshon",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2373.2414596273293,
+        "y": 2160,
+        "tooltipRaw": "Nahshon\n\n(Ruth 4:20, 1 Chronicles 2:10)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Nahshon (Ruth 4:20, 1 Chronicles 2:10)",
+          "extra": {},
+          "name": "Nahshon (Ruth",
+          "refs": [
+            "Ruth 4:20"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "243",
+        "name": "Amminidab",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2373.2414596273293,
+        "y": 2080,
+        "tooltipRaw": "Amminidab\n\n(Ruth 4:19, 1 Chronicles 2:10)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Amminidab (Ruth 4:19, 1 Chronicles 2:10)",
+          "extra": {},
+          "name": "Amminidab (Ruth",
+          "refs": [
+            "Ruth 4:19"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "244",
+        "name": "Ram (or Amram)",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2373.2414596273293,
+        "y": 2000,
+        "tooltipRaw": "Ram (or Amram)\n\n(Ruth 4:19, 1 Chronicles 2:9)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Ram (or Amram) (Ruth 4:19, 1 Chronicles 2:9)",
+          "extra": {},
+          "name": "Ram (or Amram) (Ruth",
+          "refs": [
+            "Ruth 4:19"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "246",
+        "name": "Hezron",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2823.827639751553,
+        "y": 1920,
+        "tooltipRaw": "Hezron\n\n(Genesis 46:9, 1 Chronicles 4:1, 1 Chronicles 5:3)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Hezron (Genesis 46:9, 1 Chronicles 4:1, 1 Chronicles 5:3)",
+          "extra": {},
+          "name": "Hezron (Genesis",
+          "refs": [
+            "Genesis 46:9"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "247",
+        "name": "Perez",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2833.082298136646,
+        "y": 1840,
+        "tooltipRaw": "Perez\n\n(Genesis 38:29, Genesis 46:12, Numbers 26:20, 1 Chronicles 2:4, 1 Chronicles 4:1)Perez was the twin brother of Zerah. (Genesis 38:29-30)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Perez (Genesis 38:29, Genesis 46:12, Numbers 26:20, 1 Chronicles 2:4, 1 Chronicles 4:1)Perez was the twin brother of Zerah. (Genesis 38:29-30)",
+          "extra": {},
+          "name": "Perez (Genesis",
+          "refs": [
+            "Genesis 38:29",
+            "Genesis 46:12",
+            "Numbers 26:20"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "264",
+        "name": "Judah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2755.5745341614906,
+        "y": 1760,
+        "tooltipRaw": "(Genesis 29:35, 1 Chronicles 2:1) More details are available at Psalm11918.org",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Genesis 29:35, 1 Chronicles 2:1) More details are available at Psalm11918.org",
+          "extra": {},
+          "refs": [
+            "Genesis 29:35"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "368",
+        "name": "Jacob/Israel",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 3042.4689440993793,
+        "y": 1680,
+        "tooltipRaw": "Jacob/Israel\n\nLived: 1816-1669 BCE (147 years)\n\nSpouse: Leah (Genesis 29:23)\nRachel (Genesis 29:28)\n \n\n(Genesis 21:26, 1 Chronicles 1:34, Luke 3:34, Genesis 49:33)\n\nG-d changed Jacob's name to Israel (Genesis 32:28).",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Jacob/Israel Lived: 1816-1669 BCE (147 years) Spouse: Leah (Genesis 29:23) Rachel (Genesis 29:28) (Genesis 21:26, 1 Chronicles 1:34, Luke 3:34, Genesis 49:33) G-d changed Jacob's name to Israel (Genesis 32:28).",
+          "extra": {
+            "Israel Lived": "1816-1669 BCE (147 years) Spouse: Leah (Genesis 29:23) Rachel (Genesis 29:28) (Genesis 21:26, 1 Chronicles 1:34, Luke 3:34, Genesis 49:33) G-d changed Jacob's name to Israel (Genesis 32:28)."
+          },
+          "name": "Jacob",
+          "spouse": "Leah (Genesis 29:23) Rachel (Genesis 29:28) (Genesis 21:26",
+          "refs": [
+            "Genesis 29:23",
+            "Genesis 29:28",
+            "Genesis 21:26",
+            "Luke 3:34",
+            "Genesis 49:33",
+            "Genesis 32:28"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "383",
+        "name": "Isaac",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 1706.3276397515526,
+        "y": 1600,
+        "tooltipRaw": "Isaac\n\nLived: 1876-1696 BCE (180 years)\n\nSpouse: Rebekah (Genesis 25:20)\n \n\n(Genesis 21:5, 1 Chronicles 1:34, Luke 3:34, Genesis 35:28-29)\n\nG-d named Isaac before he was even born (Genesis 17:19).",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Isaac Lived: 1876-1696 BCE (180 years) Spouse: Rebekah (Genesis 25:20) (Genesis 21:5, 1 Chronicles 1:34, Luke 3:34, Genesis 35:28-29) G-d named Isaac before he was even born (Genesis 17:19).",
+          "extra": {
+            "Isaac Lived": "1876-1696 BCE (180 years) Spouse: Rebekah (Genesis 25:20) (Genesis 21:5, 1 Chronicles 1:34, Luke 3:34, Genesis 35:28-29) G-d named Isaac before he was even born (Genesis 17:19)."
+          },
+          "name": "Isaac Lived",
+          "spouse": "Rebekah (Genesis 25:20) (Genesis 21:5",
+          "refs": [
+            "Genesis 25:20",
+            "Genesis 21:5",
+            "Luke 3:34",
+            "Genesis 35:28",
+            "Genesis 17:19"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "385",
+        "name": "Abram/Abraham",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2956.863354037267,
+        "y": 1520,
+        "tooltipRaw": "Abram/Abraham\n\nLived: 1976-1801 BCE (175 years)\n\nSpouse: Sarai/Sarah (Genesis 11:29, 17:15)\n \n\n(Genesis 11:26, 1 Chronicles 1:26-27, Luke 3:34, Genesis 25:7-10)\n\nG-d renamed Abram to Abraham (Genesis 17:5).\n\nAbram was the first person called 'Hebrew' in the Bible (Genesis 14:13).\n\nAbram was born 1948 years from the creation of the world.",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Abram/Abraham Lived: 1976-1801 BCE (175 years) Spouse: Sarai/Sarah (Genesis 11:29, 17:15) (Genesis 11:26, 1 Chronicles 1:26-27, Luke 3:34, Genesis 25:7-10) G-d renamed Abram to Abraham (Genesis 17:5). Abram was the first person called 'Hebrew' in the Bible (Genesis 14:13). Abram was born 1948 years from the creation of the world.",
+          "extra": {
+            "Abraham Lived": "1976-1801 BCE (175 years) Spouse: Sarai/Sarah (Genesis 11:29, 17:15) (Genesis 11:26, 1 Chronicles 1:26-27, Luke 3:34, Genesis 25:7-10) G-d renamed Abram to Abraham (Genesis 17:5). Abram was the first person called 'Hebrew' in the Bible (Genesis 14:13). Abram was born 1948 years from the creation of the world."
+          },
+          "name": "Abram",
+          "spouse": "Sarai/Sarah (Genesis 11:29",
+          "refs": [
+            "Genesis 11:29",
+            "Genesis 11:26",
+            "Luke 3:34",
+            "Genesis 25:7",
+            "Genesis 17:5",
+            "Genesis 14:13"
+          ],
+          "born": "1948 years from the creation of the world"
+        },
+        "children": []
+      },
+      {
+        "id": "392",
+        "name": "Terah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2938.354037267081,
+        "y": 1440,
+        "tooltipRaw": "Terah\n\nLived: 2046-1841 BCE (205 years)\n\n(Genesis 11:24, 1 Chronicles 1:25-26, Luke 3:34, Genesis 11:32)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Terah Lived: 2046-1841 BCE (205 years) (Genesis 11:24, 1 Chronicles 1:25-26, Luke 3:34, Genesis 11:32)",
+          "extra": {
+            "Terah Lived": "2046-1841 BCE (205 years) (Genesis 11:24, 1 Chronicles 1:25-26, Luke 3:34, Genesis 11:32)"
+          },
+          "name": "Terah Lived",
+          "refs": [
+            "Genesis 11:24",
+            "Luke 3:34",
+            "Genesis 11:32"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "393",
+        "name": "Nahor",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2938.354037267081,
+        "y": 1360,
+        "tooltipRaw": "(Genesis 11:22, 1 Chronicles 1:25-26, Luke 3:34-35, Genesis 11:24-25)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Genesis 11:22, 1 Chronicles 1:25-26, Luke 3:34-35, Genesis 11:24-25)",
+          "extra": {},
+          "refs": [
+            "Genesis 11:22",
+            "Luke 3:34",
+            "Genesis 11:24"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "394",
+        "name": "Serug",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2938.354037267081,
+        "y": 1280,
+        "tooltipRaw": "Serug\n\nLived: 2105-1875 BCE (230 years)\n\n(Genesis 11:20, 1 Chronicles 1:25-26, Luke 3:35, Genesis 11:22-23)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Serug Lived: 2105-1875 BCE (230 years) (Genesis 11:20, 1 Chronicles 1:25-26, Luke 3:35, Genesis 11:22-23)",
+          "extra": {
+            "Serug Lived": "2105-1875 BCE (230 years) (Genesis 11:20, 1 Chronicles 1:25-26, Luke 3:35, Genesis 11:22-23)"
+          },
+          "name": "Serug Lived",
+          "refs": [
+            "Genesis 11:20",
+            "Luke 3:35",
+            "Genesis 11:22"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "395",
+        "name": "Reu",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2938.354037267081,
+        "y": 1200,
+        "tooltipRaw": "Reu\n\nLived: 2137-1898 BCE (239 years)\n\n(Genesis 10:25, 1 Chronicles 1:24-25, Luke 3:35, Genesis 11:20-21)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Reu Lived: 2137-1898 BCE (239 years) (Genesis 10:25, 1 Chronicles 1:24-25, Luke 3:35, Genesis 11:20-21)",
+          "extra": {
+            "Reu Lived": "2137-1898 BCE (239 years) (Genesis 10:25, 1 Chronicles 1:24-25, Luke 3:35, Genesis 11:20-21)"
+          },
+          "name": "Reu Lived",
+          "refs": [
+            "Genesis 10:25",
+            "Luke 3:35",
+            "Genesis 11:20"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "396",
+        "name": "Peleg",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2938.354037267081,
+        "y": 1120,
+        "tooltipRaw": "Peleg\n\nLived: 2167-1928 BCE (239 years)\n\n(Genesis 10:25, 1 Chronicles 1:19, Luke 3:35, Genesis 11:18-19)\n\nThe first person of Scripture's genealogies to die after the Flood was someone born after the Flood: Peleg.",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Peleg Lived: 2167-1928 BCE (239 years) (Genesis 10:25, 1 Chronicles 1:19, Luke 3:35, Genesis 11:18-19) The first person of Scripture's genealogies to die after the Flood was someone born after the Flood: Peleg.",
+          "extra": {
+            "Peleg Lived": "2167-1928 BCE (239 years) (Genesis 10:25, 1 Chronicles 1:19, Luke 3:35, Genesis 11:18-19) The first person of Scripture's genealogies to die after the Flood was someone born after the Flood: Peleg."
+          },
+          "name": "Peleg Lived",
+          "refs": [
+            "Genesis 10:25",
+            "Luke 3:35",
+            "Genesis 11:18"
+          ],
+          "born": "after the Flood"
+        },
+        "children": []
+      },
+      {
+        "id": "398",
+        "name": "Eber (or Heber)",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2864.3167701863354,
+        "y": 1040,
+        "tooltipRaw": "Eber (or Heber)\n\nLived: 2201-1737 BCE (464 years)\n\n(Genesis 10:24, 1 Chronicles 1:18, Luke 3:35, Genesis 11:17-18)\n\nEber/Heber is the person who became the father of the Hebrews. Abram was the first to be called a Hebrew in Scripture (Genesis 14:13).",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Eber (or Heber) Lived: 2201-1737 BCE (464 years) (Genesis 10:24, 1 Chronicles 1:18, Luke 3:35, Genesis 11:17-18) Eber/Heber is the person who became the father of the Hebrews. Abram was the first to be called a Hebrew in Scripture (Genesis 14:13).",
+          "extra": {
+            "Lived": "2201-1737 BCE (464 years) (Genesis 10:24, 1 Chronicles 1:18, Luke 3:35, Genesis 11:17-18) Eber/Heber is the person who became the father of the Hebrews. Abram was the first to be called a Hebrew in Scripture (Genesis 14:13)."
+          },
+          "name": "Eber (or Heber) Lived",
+          "refs": [
+            "Genesis 10:24",
+            "Luke 3:35",
+            "Genesis 11:17",
+            "Genesis 14:13"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "399",
+        "name": "Shelah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2864.3167701863354,
+        "y": 960,
+        "tooltipRaw": "(Genesis 10:24, 1 Chronicles 1:18, Luke 3:35)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "(Genesis 10:24, 1 Chronicles 1:18, Luke 3:35)",
+          "extra": {},
+          "refs": [
+            "Genesis 10:24",
+            "Luke 3:35"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "400",
+        "name": "Arpachshad (or Arphaxad)",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2864.3167701863354,
+        "y": 880,
+        "tooltipRaw": "Arpachshad (or Arphaxad)\n\nLived: 2266-1828 BCE (438 years)\n\n(Genesis 10:22, 1 Chronicles 1:17, Luke 3:36)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Arpachshad (or Arphaxad) Lived: 2266-1828 BCE (438 years) (Genesis 10:22, 1 Chronicles 1:17, Luke 3:36)",
+          "extra": {
+            "Lived": "2266-1828 BCE (438 years) (Genesis 10:22, 1 Chronicles 1:17, Luke 3:36)"
+          },
+          "name": "Arpachshad (or Arphaxad) Lived",
+          "refs": [
+            "Genesis 10:22",
+            "Luke 3:36"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "403",
+        "name": "Shem",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2878.198757763975,
+        "y": 800,
+        "tooltipRaw": "Shem\n\nLived: 2366-1766 BCE (600 years)\n\n(Genesis 5:32, 1 Chronicles 1:4, Luke 3:36)(Genesis 11:10-11)\n\nShem was the oldest of Noah's sons (Shem is older than Japheth- Genesis 10:21, Ham is the youngest son- Genesis 9:22-24)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Shem Lived: 2366-1766 BCE (600 years) (Genesis 5:32, 1 Chronicles 1:4, Luke 3:36)(Genesis 11:10-11) Shem was the oldest of Noah's sons (Shem is older than Japheth- Genesis 10:21, Ham is the youngest son- Genesis 9:22-24)",
+          "extra": {
+            "Shem Lived": "2366-1766 BCE (600 years) (Genesis 5:32, 1 Chronicles 1:4, Luke 3:36)(Genesis 11:10-11) Shem was the oldest of Noah's sons (Shem is older than Japheth- Genesis 10:21, Ham is the youngest son- Genesis 9:22-24)"
+          },
+          "name": "Shem Lived",
+          "refs": [
+            "Genesis 5:32",
+            "Luke 3:36",
+            "Genesis 11:10",
+            "Genesis 10:21",
+            "Genesis 9:22"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "404",
+        "name": "Noah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 3151.2111801242236,
+        "y": 720,
+        "tooltipRaw": "Noah\n\n(Numbers 27:1)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Noah (Numbers 27:1)",
+          "extra": {},
+          "name": "Noah (Numbers",
+          "refs": [
+            "Numbers 27:1"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "405",
+        "name": "Lamech",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 3151.2111801242236,
+        "y": 640,
+        "tooltipRaw": "Lamech\n\nSpouse: Adah and Zillah (Genesis 4:19)\n \n\n(Genesis 4:18)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Lamech Spouse: Adah and Zillah (Genesis 4:19) (Genesis 4:18)",
+          "extra": {
+            "Lamech Spouse": "Adah and Zillah (Genesis 4:19) (Genesis 4:18)"
+          },
+          "name": "Lamech Spouse",
+          "spouse": "Adah and Zillah (Genesis 4:19) (Genesis 4:18)",
+          "refs": [
+            "Genesis 4:19",
+            "Genesis 4:18"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "406",
+        "name": "Methuselah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 3151.2111801242236,
+        "y": 560,
+        "tooltipRaw": "Methuselah\n\nLived: 3237-2268 BCE (969 years)\n\n(Genesis 5:21, 1 Chronicles 1:2, Luke 3:37, Genesis 5:27)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Methuselah Lived: 3237-2268 BCE (969 years) (Genesis 5:21, 1 Chronicles 1:2, Luke 3:37, Genesis 5:27)",
+          "extra": {
+            "Methuselah Lived": "3237-2268 BCE (969 years) (Genesis 5:21, 1 Chronicles 1:2, Luke 3:37, Genesis 5:27)"
+          },
+          "name": "Methuselah Lived",
+          "refs": [
+            "Genesis 5:21",
+            "Luke 3:37",
+            "Genesis 5:27"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "407",
+        "name": "Enoch",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 3151.2111801242236,
+        "y": 480,
+        "tooltipRaw": "Enoch\n\n(Genesis 4:17)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Enoch (Genesis 4:17)",
+          "extra": {},
+          "name": "Enoch (Genesis",
+          "refs": [
+            "Genesis 4:17"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "408",
+        "name": "Jared",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 3151.2111801242236,
+        "y": 400,
+        "tooltipRaw": "Jared\n\nLived: 3464-2502 BCE (962 years)\n\n(Genesis 5:15, 1 Chronicles 1:2, Luke 3:37, Genesis 5:20)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Jared Lived: 3464-2502 BCE (962 years) (Genesis 5:15, 1 Chronicles 1:2, Luke 3:37, Genesis 5:20)",
+          "extra": {
+            "Jared Lived": "3464-2502 BCE (962 years) (Genesis 5:15, 1 Chronicles 1:2, Luke 3:37, Genesis 5:20)"
+          },
+          "name": "Jared Lived",
+          "refs": [
+            "Genesis 5:15",
+            "Luke 3:37",
+            "Genesis 5:20"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "409",
+        "name": "Mahalalel",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 3151.2111801242236,
+        "y": 320,
+        "tooltipRaw": "Mahalalel\n\nLived: 3529-2634 BCE (895 years)\n\n(Genesis 5:12, Luke 3:37, Genesis 5:17)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Mahalalel Lived: 3529-2634 BCE (895 years) (Genesis 5:12, Luke 3:37, Genesis 5:17)",
+          "extra": {
+            "Mahalalel Lived": "3529-2634 BCE (895 years) (Genesis 5:12, Luke 3:37, Genesis 5:17)"
+          },
+          "name": "Mahalalel Lived",
+          "refs": [
+            "Genesis 5:12",
+            "Luke 3:37",
+            "Genesis 5:17"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "410",
+        "name": "Kenan",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 3151.2111801242236,
+        "y": 240,
+        "tooltipRaw": "Kenan\n\nLived: 3599-2689 BCE (910 years)\n\n(Genesis 4:26, 1 Chronicles 1:2, Genesis 5:14)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Kenan Lived: 3599-2689 BCE (910 years) (Genesis 4:26, 1 Chronicles 1:2, Genesis 5:14)",
+          "extra": {
+            "Kenan Lived": "3599-2689 BCE (910 years) (Genesis 4:26, 1 Chronicles 1:2, Genesis 5:14)"
+          },
+          "name": "Kenan Lived",
+          "refs": [
+            "Genesis 4:26",
+            "Genesis 5:14"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "411",
+        "name": "Enosh",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 3151.2111801242236,
+        "y": 160,
+        "tooltipRaw": "Enosh\n\nLived: 3689-2784 BCE (905 years)\n\n(Genesis 4:26, 1 Chronicles 1:1, Luke 3:38, Genesis 5:11)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Enosh Lived: 3689-2784 BCE (905 years) (Genesis 4:26, 1 Chronicles 1:1, Luke 3:38, Genesis 5:11)",
+          "extra": {
+            "Enosh Lived": "3689-2784 BCE (905 years) (Genesis 4:26, 1 Chronicles 1:1, Luke 3:38, Genesis 5:11)"
+          },
+          "name": "Enosh Lived",
+          "refs": [
+            "Genesis 4:26",
+            "Luke 3:38",
+            "Genesis 5:11"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "412",
+        "name": "Seth",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 3151.2111801242236,
+        "y": 80,
+        "tooltipRaw": "Seth\n\nLived: 3794-2882 BCE (912 years)\n\n(Genesis 4:25, 1 Chronicles 1:1, Luke 3:38, Genesis 5:8)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Seth Lived: 3794-2882 BCE (912 years) (Genesis 4:25, 1 Chronicles 1:1, Luke 3:38, Genesis 5:8)",
+          "extra": {
+            "Seth Lived": "3794-2882 BCE (912 years) (Genesis 4:25, 1 Chronicles 1:1, Luke 3:38, Genesis 5:8)"
+          },
+          "name": "Seth Lived",
+          "refs": [
+            "Genesis 4:25",
+            "Luke 3:38",
+            "Genesis 5:8"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "420",
+        "name": "Adam",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 3109.5652173913045,
+        "y": 0,
+        "tooltipRaw": "Adam\n\nLived: 3924-2994 BCE (930 years)\n\nSpouse: Eve (Genesis 3:20)\n \n\nAdam was created by G-d on the sixth day (Genesis 2:19, Genesis 5:5)",
+        "initiallyVisible": true,
+        "tooltipParsed": {
+          "raw": "Adam Lived: 3924-2994 BCE (930 years) Spouse: Eve (Genesis 3:20) Adam was created by G-d on the sixth day (Genesis 2:19, Genesis 5:5)",
+          "extra": {
+            "Adam Lived": "3924-2994 BCE (930 years) Spouse: Eve (Genesis 3:20) Adam was created by G-d on the sixth day (Genesis 2:19, Genesis 5:5)"
+          },
+          "name": "Adam Lived",
+          "spouse": "Eve (Genesis 3:20) Adam was created by G-d on the sixth day (Genesis 2:19",
+          "refs": [
+            "Genesis 3:20",
+            "Genesis 2:19",
+            "Genesis 5:5"
+          ]
+        },
+        "children": []
+      },
+      {
+        "id": "786",
+        "name": "Shimei",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2396.9565217391305,
+        "y": 4160,
+        "tooltipRaw": "(1 Chronicles 3:19)",
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 3:19)",
+          "extra": {}
+        },
+        "children": []
+      },
+      {
+        "id": "787",
+        "name": "Jushab-hesed",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2443.2298136645963,
+        "y": 4240,
+        "tooltipRaw": "Jushab-hesed\n\n(1 Chronicles 3:20)",
+        "tooltipParsed": {
+          "raw": "Jushab-hesed (1 Chronicles 3:20)",
+          "extra": {},
+          "name": "Jushab-hesed ("
+        },
+        "children": []
+      },
+      {
+        "id": "788",
+        "name": "Hasadiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2424.7204968944097,
+        "y": 4240,
+        "tooltipRaw": "Hasadiah\n\n(1 Chronicles 3:20)",
+        "tooltipParsed": {
+          "raw": "Hasadiah (1 Chronicles 3:20)",
+          "extra": {},
+          "name": "Hasadiah ("
+        },
+        "children": []
+      },
+      {
+        "id": "789",
+        "name": "Berechiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2406.2111801242236,
+        "y": 4240,
+        "tooltipRaw": "(1 Chronicles 3:20)",
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 3:20)",
+          "extra": {}
+        },
+        "children": []
+      },
+      {
+        "id": "790",
+        "name": "Ohel",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2387.701863354037,
+        "y": 4240,
+        "tooltipRaw": "Ohel\n\n(1 Chronicles 3:20)",
+        "tooltipParsed": {
+          "raw": "Ohel (1 Chronicles 3:20)",
+          "extra": {},
+          "name": "Ohel ("
+        },
+        "children": []
+      },
+      {
+        "id": "791",
+        "name": "Hashubah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2369.192546583851,
+        "y": 4240,
+        "tooltipRaw": "Hashubah\n\n(1 Chronicles 3:20)",
+        "tooltipParsed": {
+          "raw": "Hashubah (1 Chronicles 3:20)",
+          "extra": {},
+          "name": "Hashubah ("
+        },
+        "children": []
+      },
+      {
+        "id": "792",
+        "name": "Shelomith",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2350.6832298136646,
+        "y": 4240,
+        "tooltipRaw": "Shelomith\n\n(1 Chronicles 3:19)",
+        "tooltipParsed": {
+          "raw": "Shelomith (1 Chronicles 3:19)",
+          "extra": {},
+          "name": "Shelomith ("
+        },
+        "children": []
+      },
+      {
+        "id": "793",
+        "name": "Shaphat",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2420.0931677018634,
+        "y": 4480,
+        "tooltipRaw": "Shaphat\n\n(1 Chronicles 3:22)",
+        "tooltipParsed": {
+          "raw": "Shaphat (1 Chronicles 3:22)",
+          "extra": {},
+          "name": "Shaphat ("
+        },
+        "children": []
+      },
+      {
+        "id": "794",
+        "name": "Azrikam",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2420.0931677018634,
+        "y": 4560,
+        "tooltipRaw": "(1 Chronicles 3:23)",
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 3:23)",
+          "extra": {}
+        },
+        "children": []
+      },
+      {
+        "id": "795",
+        "name": "Hizkiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2401.583850931677,
+        "y": 4560,
+        "tooltipRaw": "Hizkiah\n\n(1 Chronicles 3:23)",
+        "tooltipParsed": {
+          "raw": "Hizkiah (1 Chronicles 3:23)",
+          "extra": {},
+          "name": "Hizkiah ("
+        },
+        "children": []
+      },
+      {
+        "id": "796",
+        "name": "Anani",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2438.6024844720496,
+        "y": 4640,
+        "tooltipRaw": "Anani\n\n(1 Chronicles 3:24)",
+        "tooltipParsed": {
+          "raw": "Anani (1 Chronicles 3:24)",
+          "extra": {},
+          "name": "Anani ("
+        },
+        "children": []
+      },
+      {
+        "id": "797",
+        "name": "Delaiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2420.0931677018634,
+        "y": 4640,
+        "tooltipRaw": "Delaiah\n\n(1 Chronicles 3:24)",
+        "tooltipParsed": {
+          "raw": "Delaiah (1 Chronicles 3:24)",
+          "extra": {},
+          "name": "Delaiah ("
+        },
+        "children": []
+      },
+      {
+        "id": "798",
+        "name": "Johanan",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2401.583850931677,
+        "y": 4640,
+        "tooltipRaw": "(1 Chronicles 3:24)",
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 3:24)",
+          "extra": {}
+        },
+        "children": []
+      },
+      {
+        "id": "799",
+        "name": "Akkub",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2383.0745341614906,
+        "y": 4640,
+        "tooltipRaw": "Akkub\n\n(1 Chronicles 3:24)",
+        "tooltipParsed": {
+          "raw": "Akkub (1 Chronicles 3:24)",
+          "extra": {},
+          "name": "Akkub ("
+        },
+        "children": []
+      },
+      {
+        "id": "800",
+        "name": "Pelaiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2364.5652173913045,
+        "y": 4640,
+        "tooltipRaw": "Pelaiah\n\n(1 Chronicles 3:24)",
+        "tooltipParsed": {
+          "raw": "Pelaiah (1 Chronicles 3:24)",
+          "extra": {},
+          "name": "Pelaiah ("
+        },
+        "children": []
+      },
+      {
+        "id": "801",
+        "name": "Eliashib",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2346.055900621118,
+        "y": 4640,
+        "tooltipRaw": "Eliashib\n\n(1 Chronicles 3:24)",
+        "tooltipParsed": {
+          "raw": "Eliashib (1 Chronicles 3:24)",
+          "extra": {},
+          "name": "Eliashib ("
+        },
+        "children": []
+      },
+      {
+        "id": "802",
+        "name": "Hodaviah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2327.5465838509317,
+        "y": 4640,
+        "tooltipRaw": "Hodaviah\n\n(1 Chronicles 3:24)",
+        "tooltipParsed": {
+          "raw": "Hodaviah (1 Chronicles 3:24)",
+          "extra": {},
+          "name": "Hodaviah ("
+        },
+        "children": []
+      },
+      {
+        "id": "803",
+        "name": "Elioenai",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2383.0745341614906,
+        "y": 4560,
+        "tooltipRaw": "(1 Chronicles 3:23)",
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 3:23)",
+          "extra": {}
+        },
+        "children": []
+      },
+      {
+        "id": "804",
+        "name": "Neariah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2401.583850931677,
+        "y": 4480,
+        "tooltipRaw": "Neariah\n\n(1 Chronicles 3:22)",
+        "tooltipParsed": {
+          "raw": "Neariah (1 Chronicles 3:22)",
+          "extra": {},
+          "name": "Neariah ("
+        },
+        "children": []
+      },
+      {
+        "id": "805",
+        "name": "Bariah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2383.0745341614906,
+        "y": 4480,
+        "tooltipRaw": "Bariah\n\n(1 Chronicles 3:22)",
+        "tooltipParsed": {
+          "raw": "Bariah (1 Chronicles 3:22)",
+          "extra": {},
+          "name": "Bariah ("
+        },
+        "children": []
+      },
+      {
+        "id": "806",
+        "name": "Igal",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2364.5652173913045,
+        "y": 4480,
+        "tooltipRaw": "Igal\n\n(1 Chronicles 3:22)",
+        "tooltipParsed": {
+          "raw": "Igal (1 Chronicles 3:22)",
+          "extra": {},
+          "name": "Igal ("
+        },
+        "children": []
+      },
+      {
+        "id": "807",
+        "name": "Hattush",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2346.055900621118,
+        "y": 4480,
+        "tooltipRaw": "Hattush\n\n(1 Chronicles 3:22)",
+        "tooltipParsed": {
+          "raw": "Hattush (1 Chronicles 3:22)",
+          "extra": {},
+          "name": "Hattush ("
+        },
+        "children": []
+      },
+      {
+        "id": "808",
+        "name": "Shemaiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2383.0745341614906,
+        "y": 4400,
+        "tooltipRaw": "Shemaiah\n\n(1 Chronicles 4:37)",
+        "tooltipParsed": {
+          "raw": "Shemaiah (1 Chronicles 4:37)",
+          "extra": {},
+          "name": "Shemaiah ("
+        },
+        "children": []
+      },
+      {
+        "id": "809",
+        "name": "Jeshaiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2290.527950310559,
+        "y": 4640,
+        "tooltipRaw": "Jeshaiah\n\n(1 Chronicles 3:21)",
+        "tooltipParsed": {
+          "raw": "Jeshaiah (1 Chronicles 3:21)",
+          "extra": {},
+          "name": "Jeshaiah ("
+        },
+        "children": []
+      },
+      {
+        "id": "810",
+        "name": "Pelatiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2272.018633540373,
+        "y": 4640,
+        "tooltipRaw": "Pelatiah\n\n(1 Chronicles 3:21)",
+        "tooltipParsed": {
+          "raw": "Pelatiah (1 Chronicles 3:21)",
+          "extra": {},
+          "name": "Pelatiah ("
+        },
+        "children": []
+      },
+      {
+        "id": "811",
+        "name": "Rephaiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2281.273291925466,
+        "y": 4560,
+        "tooltipRaw": "(1 Chronicles 3:21)",
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 3:21)",
+          "extra": {}
+        },
+        "children": []
+      },
+      {
+        "id": "812",
+        "name": "Arnan",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2281.273291925466,
+        "y": 4480,
+        "tooltipRaw": "Arnan\n\n(1 Chronicles 3:21)",
+        "tooltipParsed": {
+          "raw": "Arnan (1 Chronicles 3:21)",
+          "extra": {},
+          "name": "Arnan ("
+        },
+        "children": []
+      },
+      {
+        "id": "813",
+        "name": "Obadiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2281.273291925466,
+        "y": 4400,
+        "tooltipRaw": "(1 Chronicles 3:21)",
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 3:21)",
+          "extra": {}
+        },
+        "children": []
+      },
+      {
+        "id": "814",
+        "name": "Shecaniah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2332.1739130434785,
+        "y": 4320,
+        "tooltipRaw": "Shecaniah\n\n(1 Chronicles 3:21)",
+        "tooltipParsed": {
+          "raw": "Shecaniah (1 Chronicles 3:21)",
+          "extra": {},
+          "name": "Shecaniah ("
+        },
+        "children": []
+      },
+      {
+        "id": "815",
+        "name": "Hananiah",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2332.1739130434785,
+        "y": 4240,
+        "tooltipRaw": "(1 Chronicles 3:19)",
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 3:19)",
+          "extra": {}
+        },
+        "children": []
+      },
+      {
+        "id": "816",
+        "name": "Meshullam",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2313.664596273292,
+        "y": 4240,
+        "tooltipRaw": "(1 Chronicles 3:19)",
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 3:19)",
+          "extra": {}
+        },
+        "children": []
+      },
+      {
+        "id": "817",
+        "name": "Zerubbabel",
+        "messiahLine": false,
+        "levitical": false,
+        "judge": false,
+        "x": 2378.4472049689443,
+        "y": 4160,
+        "tooltipRaw": "(1 Chronicles 3:19)",
+        "tooltipParsed": {
+          "raw": "(1 Chronicles 3:19)",
+          "extra": {}
+        },
+        "children": []
+      }
+    ]
+  },
+  "stats": {
+    "nodes": 169
+  }
+}
