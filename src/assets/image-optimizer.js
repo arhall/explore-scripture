@@ -80,6 +80,15 @@ class ImageOptimizer {
   observeNewImages() {
     if (typeof MutationObserver === 'undefined') return;
 
+    // Check if document.body exists before observing
+    if (!document.body) {
+      // Wait for DOM to be ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => this.observeNewImages());
+      }
+      return;
+    }
+
     // eslint-disable-next-line no-undef
     const mutationObserver = new MutationObserver(mutations => {
       mutations.forEach(mutation => {
