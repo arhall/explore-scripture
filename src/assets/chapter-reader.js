@@ -1466,7 +1466,7 @@ class ChapterReader {
 
         // Validate URL before making request
         const fullUrl = `${source.endpoint}${formattedRef}`;
-        if (!SecurityConfig?.isUrlSafe(fullUrl)) {
+        if (typeof SecurityConfig !== 'undefined' && SecurityConfig?.isUrlSafe && !SecurityConfig.isUrlSafe(fullUrl)) {
           console.warn('Security: Blocked unsafe API URL:', fullUrl);
           throw new Error('Invalid API URL blocked for security reasons');
         }
@@ -1807,9 +1807,9 @@ class ChapterReader {
 
   renderBibleGatewayIframe(chapterInfo) {
     const url = this.getBibleGatewayUrl(chapterInfo);
-    
+
     // Validate URL for security
-    if (!SecurityConfig?.isUrlSafe(url) && !url.startsWith('https://www.biblegateway.com/')) {
+    if (typeof SecurityConfig !== 'undefined' && SecurityConfig?.isUrlSafe && !SecurityConfig.isUrlSafe(url) && !url.startsWith('https://www.biblegateway.com/')) {
       console.warn('Security: Blocked unsafe iframe URL:', url);
       return '<div class="error">Invalid URL blocked for security reasons</div>';
     }
