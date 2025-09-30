@@ -55,6 +55,11 @@ class PerformanceMonitor {
     this.reportingInterval = 30000; // 30 seconds
     this.maxMetricsHistory = 100;
 
+    // Bind event handlers for cleanup
+    this.boundTrackInteraction = this.trackInteraction.bind(this);
+    this.boundTrackError = this.trackError.bind(this);
+    this.boundTrackPromiseRejection = this.trackPromiseRejection.bind(this);
+
     this.init();
   }
 
@@ -267,13 +272,14 @@ class PerformanceMonitor {
     }
 
     // User interaction monitoring
-    ['click', 'scroll', 'keydown', 'touchstart'].forEach(eventType => {
-      document.addEventListener(eventType, this.trackInteraction.bind(this), { passive: true });
+    this.interactionEventTypes = ['click', 'scroll', 'keydown', 'touchstart'];
+    this.interactionEventTypes.forEach(eventType => {
+      document.addEventListener(eventType, this.boundTrackInteraction, { passive: true });
     });
 
     // Error monitoring
-    window.addEventListener('error', this.trackError.bind(this));
-    window.addEventListener('unhandledrejection', this.trackPromiseRejection.bind(this));
+    window.addEventListener('error', this.boundTrackError);
+    window.addEventListener('unhandledrejection', this.boundTrackPromiseRejection);
   }
 
   // System monitoring
@@ -850,6 +856,16 @@ class PerformanceMonitor {
       clearInterval(this.reportingIntervalId);
       this.reportingIntervalId = null;
     }
+
+    // Remove event listeners
+    if (this.interactionEventTypes) {
+      this.interactionEventTypes.forEach(eventType => {
+        document.removeEventListener(eventType, this.boundTrackInteraction);
+      });
+    }
+
+    window.removeEventListener('error', this.boundTrackError);
+    window.removeEventListener('unhandledrejection', this.boundTrackPromiseRejection);
 
     // Disconnect all observers
     this.observers.forEach(observer => {

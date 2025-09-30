@@ -387,9 +387,16 @@ class BibleExplorerLogger {
     const a = document.createElement('a');
     a.href = url;
     a.download = `bible-explorer-logs-${this.sessionId}.json`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+
+    if (document.body) {
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    } else {
+      // Fallback: just trigger click without appending
+      a.click();
+    }
+
     URL.revokeObjectURL(url);
 
     this.info('Logs exported', { logCount: this.logs.length });

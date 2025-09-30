@@ -8,6 +8,8 @@ class ImageOptimizer {
     this.supportsWebP = null;
     this.supportsIntersectionObserver = typeof IntersectionObserver !== 'undefined';
     this.lazyImages = [];
+    this.resizeTimeout = null;
+    this.boundHandleResize = null;
     this.init();
   }
 
@@ -246,11 +248,12 @@ class ImageOptimizer {
     };
 
     // Add resize listener to update image sources if needed
-    let resizeTimeout;
-    window.addEventListener('resize', () => {
-      clearTimeout(resizeTimeout);
-      resizeTimeout = setTimeout(() => this.handleResize(), 250);
-    });
+    this.boundHandleResize = () => {
+      clearTimeout(this.resizeTimeout);
+      this.resizeTimeout = setTimeout(() => this.handleResize(), 250);
+    };
+
+    window.addEventListener('resize', this.boundHandleResize);
   }
 
   handleResize() {
@@ -317,6 +320,26 @@ class ImageOptimizer {
       totalLazyImages: document.querySelectorAll('img[data-src]').length,
       loadedImages: document.querySelectorAll('img.image-loaded').length,
     };
+  }
+
+  destroy() {
+    // Clear resize timeout
+    if (this.resizeTimeout) {
+      clearTimeout(this.resizeTimeout);
+      this.resizeTimeout = null;
+    }
+
+    // Remove resize listener
+    if (this.boundHandleResize) {
+      window.removeEventListener('resize', this.boundHandleResize);
+      this.boundHandleResize = null;
+    }
+
+    // Disconnect intersection observer
+    if (this.intersectionObserver) {
+      this.intersectionObserver.disconnect();
+      this.intersectionObserver = null;
+    }
   }
 }
 

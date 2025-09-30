@@ -63,8 +63,10 @@ class DebugDashboard {
     this.refreshInterval = setInterval(() => {
       this.refreshData();
     }, 2000);
-    
-    document.body.style.paddingTop = '350px';
+
+    if (document.body) {
+      document.body.style.paddingTop = '350px';
+    }
   }
 
   hide() {
@@ -78,8 +80,10 @@ class DebugDashboard {
       clearInterval(this.refreshInterval);
       this.refreshInterval = null;
     }
-    
-    document.body.style.paddingTop = '';
+
+    if (document.body) {
+      document.body.style.paddingTop = '';
+    }
   }
 
   createDashboard() {
@@ -88,7 +92,17 @@ class DebugDashboard {
     const dashboard = document.createElement('div');
     dashboard.id = 'debug-dashboard';
     dashboard.innerHTML = this.getDashboardHTML();
-    document.body.appendChild(dashboard);
+
+    if (document.body) {
+      document.body.appendChild(dashboard);
+    } else {
+      // Wait for DOM ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+          if (document.body) document.body.appendChild(dashboard);
+        });
+      }
+    }
 
     // Add event listeners
     this.attachEventListeners();

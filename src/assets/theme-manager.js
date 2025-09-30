@@ -495,8 +495,10 @@ class ThemeManager {
     }
 
     // Update body class for theme-specific styling
-    document.body.className = document.body.className.replace(/theme-\w+/g, '');
-    document.body.classList.add(`theme-${themeKey}`);
+    if (document.body) {
+      document.body.className = document.body.className.replace(/theme-\w+/g, '');
+      document.body.classList.add(`theme-${themeKey}`);
+    }
 
     // Set data attribute for theme-specific CSS
     root.setAttribute('data-theme', themeKey);
@@ -547,7 +549,16 @@ class ThemeManager {
     dropdown.innerHTML = this.generateDropdownContent();
 
     // Position relative to navigation
-    document.body.appendChild(dropdown);
+    if (document.body) {
+      document.body.appendChild(dropdown);
+    } else {
+      // Wait for DOM ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+          if (document.body) document.body.appendChild(dropdown);
+        });
+      }
+    }
 
     // Setup event listeners for navigation integration
     this.setupNavigationListeners(dropdown);
@@ -574,7 +585,17 @@ class ThemeManager {
 
     switcher.appendChild(button);
     switcher.appendChild(dropdown);
-    document.body.appendChild(switcher);
+
+    if (document.body) {
+      document.body.appendChild(switcher);
+    } else {
+      // Wait for DOM ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+          if (document.body) document.body.appendChild(switcher);
+        });
+      }
+    }
 
     // Add event listeners
     this.setupEventListeners(switcher, button, dropdown);

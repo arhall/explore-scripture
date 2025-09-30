@@ -14,6 +14,9 @@ class BundleOptimizer {
     this.moduleRegistry = new Map();
     this.loadTiming = new Map();
 
+    // Bind event handler for cleanup
+    this.boundFocusinHandler = this.handleFocusin.bind(this);
+
     this.init();
   }
 
@@ -188,20 +191,22 @@ class BundleOptimizer {
     });
   }
 
+  handleFocusin(e) {
+    if (e.target.matches('input[type="search"], .search-box')) {
+      this.handleTrigger('search-focus');
+    }
+  }
+
   setupInteractionListeners() {
     // Search focus triggers
-    document.addEventListener('focusin', e => {
-      if (e.target.matches('input[type="search"], .search-box')) {
-        this.handleTrigger('search-focus');
-      }
-    });
+    document.addEventListener('focusin', this.boundFocusinHandler);
 
     // Page-specific triggers based on URL
     const currentPath = window.location.pathname;
 
     if (currentPath.startsWith('/books/')) {
       setTimeout(() => this.handleTrigger('book-page-visit'), 1000);
-    } else if (currentPath === '/genealogy/') {
+    } else if (currentPath === '/genealogy/')) {
       setTimeout(() => this.handleTrigger('genealogy-page-visit'), 500);
     }
   }
@@ -445,6 +450,9 @@ class BundleOptimizer {
     if (this.intersectionObserver) {
       this.intersectionObserver.disconnect();
     }
+
+    // Remove event listener
+    document.removeEventListener('focusin', this.boundFocusinHandler);
 
     this.loadingPromises.clear();
     this.loadTiming.clear();
