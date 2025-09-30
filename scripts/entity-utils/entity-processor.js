@@ -310,7 +310,7 @@ async function processEntities() {
   const bookEntities = new Map();
   const chapterEntities = new Map();
   const globalEntities = new Map();
-  const entitySearchIndex = [];
+  // const entitySearchIndex = []; // Unused - keeping for future search optimization
 
   // Initialize book entities maps with pre-allocated arrays
   booksData.forEach(book => {
@@ -338,8 +338,8 @@ async function processEntities() {
       `  Processing batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(totalEntities / batchSize)} (${i}-${batchEnd})...`
     );
 
-    batch.forEach((entity, batchIndex) => {
-      const globalIndex = i + batchIndex;
+    batch.forEach((entity, _batchIndex) => {
+      // const globalIndex = i + batchIndex; // Unused - keeping for future indexing needs
 
       // Resolve canonical ID
       const canonicalId = redirectResolver.resolveId(entity.id);
@@ -394,7 +394,7 @@ async function processEntities() {
 
     // Write per-book entity indexes with batched directory creation
     console.log('  Writing book indexes...');
-    const bookWritePromises = [];
+    // const bookWritePromises = []; // Unused - sequential writes for stability
 
     for (const [bookName, entities] of bookEntities) {
       const bookSlug = bookSlugMap.get(bookName);
@@ -473,7 +473,7 @@ async function processEntities() {
         id: id,
         data: JSON.stringify(entity, null, 0),
       });
-      entityCount++;
+      // entityCount++; // Unused counter - count is entityWrites.length
     }
 
     // Process entity writes in batches

@@ -1,3 +1,5 @@
+/* global HTMLElement, location, XMLSerializer, Image, getComputedStyle, customElements */
+
 // Use globally loaded D3.js
 const d3 = window.d3;
 
@@ -234,7 +236,7 @@ class GenealogyExplorer extends HTMLElement {
         .exit()
         .transition(t)
         .remove()
-        .attr('transform', d => `translate(${source.y},${source.x})`)
+        .attr('transform', _d => `translate(${source.y},${source.x})`)
         .select('circle')
         .attr('r', 1e-6);
 
@@ -242,7 +244,7 @@ class GenealogyExplorer extends HTMLElement {
       link
         .enter()
         .append('path')
-        .attr('d', d =>
+        .attr('d', _d =>
           diagonal({
             source: { x: source.x0 || 0, y: source.y0 || 0 },
             target: { x: source.x0 || 0, y: source.y0 || 0 },
@@ -255,7 +257,7 @@ class GenealogyExplorer extends HTMLElement {
         .exit()
         .transition(t)
         .remove()
-        .attr('d', d =>
+        .attr('d', _d =>
           diagonal({ source: { x: source.x, y: source.y }, target: { x: source.x, y: source.y } })
         );
 

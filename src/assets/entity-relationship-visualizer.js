@@ -4,6 +4,8 @@
  * Uses D3.js for network graph visualization
  */
 
+/* global d3 */
+
 class EntityRelationshipVisualizer {
   constructor(containerId) {
     this.container = containerId;

@@ -502,7 +502,7 @@ class PerformanceMonitor {
     }
   }
 
-  analyzeSearchPerformance(searchMetric) {
+  analyzeSearchPerformance(_searchMetric) {
     // Detect consistently slow searches
     const recentSearches = this.metrics.customMetrics.searchPerformance.slice(-10);
     const averageSearchTime =
@@ -631,7 +631,7 @@ class PerformanceMonitor {
       }
 
       return selector;
-    } catch (error) {
+    } catch (_error) {
       return element.tagName ? element.tagName.toLowerCase() : 'unknown';
     }
   }
@@ -664,14 +664,14 @@ class PerformanceMonitor {
     }
   }
 
-  estimateTimeSavings(resource) {
+  estimateTimeSavings(_resource) {
     // Estimate time savings from cache hit (simplified)
     return 200; // ms average network request time saved
   }
 
-  updateAPIReliabilityStats(endpoint, success, responseTime) {
+  updateAPIReliabilityStats(endpoint, _success, _responseTime) {
     // Track API reliability metrics
-    const sanitizedEndpoint = this.sanitizeEndpoint(endpoint);
+    const _sanitizedEndpoint = this.sanitizeEndpoint(endpoint);
     // Implementation would track success rates and response times per endpoint
   }
 

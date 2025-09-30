@@ -3,6 +3,8 @@
  * Supports hover on desktop, tap on mobile
  */
 
+/* global SecurityConfig */
+
 class ScriptureWidget {
   constructor() {
     this.translations = {
@@ -437,9 +439,9 @@ class ScriptureWidget {
       // Bible API format: https://bible-api.com/john+3:16
       const formattedRef = reference.replace(/\s+/g, '+').toLowerCase();
       const fullUrl = `${source.endpoint}${formattedRef}`;
-      
+
       // Validate URL before making request
-      if (!SecurityConfig?.isUrlSafe(fullUrl)) {
+      if (typeof SecurityConfig !== 'undefined' && SecurityConfig?.isUrlSafe && !SecurityConfig.isUrlSafe(fullUrl)) {
         console.warn('Security: Blocked unsafe API URL:', fullUrl);
         throw new Error('Invalid API URL blocked for security reasons');
       }

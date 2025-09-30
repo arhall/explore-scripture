@@ -206,7 +206,7 @@ class BundleOptimizer {
 
     if (currentPath.startsWith('/books/')) {
       setTimeout(() => this.handleTrigger('book-page-visit'), 1000);
-    } else if (currentPath === '/genealogy/')) {
+    } else if (currentPath === '/genealogy/') {
       setTimeout(() => this.handleTrigger('genealogy-page-visit'), 500);
     }
   }

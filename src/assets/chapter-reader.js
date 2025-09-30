@@ -3,6 +3,8 @@
  * Works alongside Scripture Widget for seamless Bible study
  */
 
+/* global SecurityConfig */
+
 class ChapterReader {
   constructor() {
     this.translations = {
