@@ -6,7 +6,7 @@
     "category": "Law (Torah)",
     "author": "Moses",
     "language": "Hebrew",
-    "chapterCount": 11,
+    "chapterCount": 50,
     "chapters": [
       {
         "number": 1,
@@ -51,6 +51,162 @@
       {
         "number": 11,
         "summary": "Humanity rebels by building Babel; God confuses their language and scatters them, then calls Abraham to start over."
+      },
+      {
+        "number": 12,
+        "summary": "God calls Abram to go to Canaan, promises blessing and a great nation; famine drives him to Egypt where he misrepresents Sarai."
+      },
+      {
+        "number": 13,
+        "summary": "Abram and Lot separate to avoid strife; God reaffirms the land promise as Abram dwells near Hebron."
+      },
+      {
+        "number": 14,
+        "summary": "Abram rescues Lot from warring kings, is blessed by Melchizedek, and refuses plunder to honor God."
+      },
+      {
+        "number": 15,
+        "summary": "God covenants with Abram, promising innumerable offspring and land; Abram believes and it is counted as righteousness."
+      },
+      {
+        "number": 16,
+        "summary": "Sarai gives Hagar to Abram; Ishmael is conceived; God sees Hagar’s affliction and promises a future for her son."
+      },
+      {
+        "number": 17,
+        "summary": "God establishes circumcision as the covenant sign, renames Abram to Abraham and Sarai to Sarah, and promises Isaac."
+      },
+      {
+        "number": 18,
+        "summary": "The Lord visits Abraham, announces Isaac’s birth; Abraham intercedes for Sodom with bold, compassionate prayer."
+      },
+      {
+        "number": 19,
+        "summary": "Sodom and Gomorrah are judged; Lot is rescued, his wife looks back and becomes a pillar of salt; Moab and Ammon arise from Lot’s daughters."
+      },
+      {
+        "number": 20,
+        "summary": "Abraham repeats the sister ruse in Gerar; God protects Sarah and corrects Abimelech."
+      },
+      {
+        "number": 21,
+        "summary": "Isaac is born; Hagar and Ishmael are sent away but preserved by God; Abraham makes a treaty at Beersheba."
+      },
+      {
+        "number": 22,
+        "summary": "God tests Abraham with Isaac’s sacrifice; the Lord provides a ram and reaffirms His oath of blessing."
+      },
+      {
+        "number": 23,
+        "summary": "Sarah dies; Abraham purchases the cave of Machpelah as a family burial site in Canaan."
+      },
+      {
+        "number": 24,
+        "summary": "Abraham’s servant, led by God’s providence, finds Rebekah who willingly becomes Isaac’s wife."
+      },
+      {
+        "number": 25,
+        "summary": "Abraham dies; Esau and Jacob are born; Esau sells his birthright to Jacob for a meal."
+      },
+      {
+        "number": 26,
+        "summary": "God confirms the promise to Isaac; a famine, a repeat of the sister ruse, well disputes, and a covenant with Abimelech follow."
+      },
+      {
+        "number": 27,
+        "summary": "Jacob, guided by Rebekah, deceives Isaac to gain the blessing; Esau vows revenge."
+      },
+      {
+        "number": 28,
+        "summary": "Jacob flees; at Bethel he dreams of a ladder to heaven and receives God’s covenant promises."
+      },
+      {
+        "number": 29,
+        "summary": "Jacob serves Laban, marries Leah by deception and then Rachel, and begins to build his family."
+      },
+      {
+        "number": 30,
+        "summary": "Rachel and Leah compete in childbearing; mandrakes and flocks feature as God prospers Jacob."
+      },
+      {
+        "number": 31,
+        "summary": "Jacob departs secretly; God warns Laban; they make a covenant at Mizpah and part ways."
+      },
+      {
+        "number": 32,
+        "summary": "Jacob prepares to meet Esau, wrestles with a mysterious man, receives the name Israel, and is blessed."
+      },
+      {
+        "number": 33,
+        "summary": "Esau and Jacob reconcile; Jacob settles near Shechem."
+      },
+      {
+        "number": 34,
+        "summary": "Dinah is violated; Simeon and Levi massacre the men of Shechem, bringing reproach on Jacob’s house."
+      },
+      {
+        "number": 35,
+        "summary": "God calls Jacob back to Bethel; foreign gods are put away; Rachel dies bearing Benjamin; Isaac dies and is buried."
+      },
+      {
+        "number": 36,
+        "summary": "The generations of Esau: the chiefs and kings of Edom are listed."
+      },
+      {
+        "number": 37,
+        "summary": "Joseph’s dreams provoke jealousy; his brothers sell him into slavery; he is taken to Egypt and sold to Potiphar."
+      },
+      {
+        "number": 38,
+        "summary": "Judah and Tamar’s story displays sin, justice, and unexpected lineage mercy."
+      },
+      {
+        "number": 39,
+        "summary": "In Egypt Joseph prospers under Potiphar, resists temptation, is falsely accused, and imprisoned but the Lord is with him."
+      },
+      {
+        "number": 40,
+        "summary": "Joseph interprets the cupbearer’s and baker’s dreams in prison; the cupbearer is restored but forgets Joseph."
+      },
+      {
+        "number": 41,
+        "summary": "Joseph interprets Pharaoh’s dreams of famine and plenty, rises to power, and stores grain to save many lives."
+      },
+      {
+        "number": 42,
+        "summary": "Joseph’s brothers come to buy grain; Simeon is detained; they are tested and troubled by their guilt."
+      },
+      {
+        "number": 43,
+        "summary": "The brothers return with Benjamin; Joseph hosts them, stirring fear and wonder."
+      },
+      {
+        "number": 44,
+        "summary": "Joseph’s silver cup test prompts Judah’s heartfelt plea to spare Benjamin for their father’s sake."
+      },
+      {
+        "number": 45,
+        "summary": "Joseph reveals himself, forgives his brothers, and summons Jacob to Egypt under God’s providential plan."
+      },
+      {
+        "number": 46,
+        "summary": "Jacob journeys to Egypt with his household; God assures him; the family settles in Goshen."
+      },
+      {
+        "number": 47,
+        "summary": "Joseph manages the famine economy; Jacob blesses Pharaoh; land policy shifts; Jacob nears death."
+      },
+      {
+        "number": 48,
+        "summary": "Jacob blesses Ephraim and Manasseh, crossing hands to give the younger the greater blessing."
+      },
+      {
+        "number": 49,
+        "summary": "Jacob prophesies over his twelve sons, then dies instructing burial in Machpelah."
+      },
+      {
+        "number": 50,
+        "summary": "Joseph buries Jacob in Canaan, reassures his brothers of forgiveness, and dies in faith, awaiting God’s visitation."
       }
     ],
     "keywords": [
@@ -166,7 +322,262 @@
       "scatters",
       "calls",
       "abraham",
-      "start"
+      "start",
+      "abram",
+      "canaan",
+      "blessing",
+      "great",
+      "nation",
+      "famine",
+      "drives",
+      "egypt",
+      "where",
+      "misrepresents",
+      "sarai",
+      "lot",
+      "separate",
+      "avoid",
+      "strife",
+      "reaffirms",
+      "promise",
+      "dwells",
+      "near",
+      "hebron",
+      "rescues",
+      "warring",
+      "kings",
+      "blessed",
+      "melchizedek",
+      "refuses",
+      "plunder",
+      "honor",
+      "covenants",
+      "promising",
+      "innumerable",
+      "offspring",
+      "believes",
+      "counted",
+      "righteousness",
+      "gives",
+      "hagar",
+      "ishmael",
+      "conceived",
+      "sees",
+      "affliction",
+      "future",
+      "son",
+      "circumcision",
+      "sign",
+      "renames",
+      "sarah",
+      "isaac",
+      "lord",
+      "visits",
+      "announces",
+      "birth",
+      "intercedes",
+      "sodom",
+      "bold",
+      "compassionate",
+      "prayer",
+      "gomorrah",
+      "judged",
+      "rescued",
+      "wife",
+      "looks",
+      "back",
+      "becomes",
+      "pillar",
+      "salt",
+      "moab",
+      "ammon",
+      "arise",
+      "daughters",
+      "repeats",
+      "sister",
+      "ruse",
+      "gerar",
+      "protects",
+      "corrects",
+      "abimelech",
+      "born",
+      "sent",
+      "away",
+      "preserved",
+      "makes",
+      "treaty",
+      "beersheba",
+      "tests",
+      "provides",
+      "ram",
+      "oath",
+      "dies",
+      "purchases",
+      "cave",
+      "machpelah",
+      "burial",
+      "site",
+      "servant",
+      "led",
+      "providence",
+      "finds",
+      "rebekah",
+      "who",
+      "willingly",
+      "esau",
+      "jacob",
+      "sells",
+      "birthright",
+      "meal",
+      "confirms",
+      "repeat",
+      "well",
+      "disputes",
+      "follow",
+      "guided",
+      "deceives",
+      "gain",
+      "vows",
+      "revenge",
+      "flees",
+      "bethel",
+      "dreams",
+      "ladder",
+      "heaven",
+      "receives",
+      "serves",
+      "laban",
+      "marries",
+      "leah",
+      "deception",
+      "rachel",
+      "begins",
+      "compete",
+      "childbearing",
+      "mandrakes",
+      "flocks",
+      "feature",
+      "prospers",
+      "departs",
+      "secretly",
+      "warns",
+      "make",
+      "mizpah",
+      "part",
+      "ways",
+      "prepares",
+      "meet",
+      "wrestles",
+      "mysterious",
+      "man",
+      "name",
+      "israel",
+      "reconcile",
+      "settles",
+      "shechem",
+      "dinah",
+      "violated",
+      "simeon",
+      "levi",
+      "massacre",
+      "men",
+      "reproach",
+      "house",
+      "foreign",
+      "gods",
+      "put",
+      "bearing",
+      "benjamin",
+      "buried",
+      "generations",
+      "chiefs",
+      "edom",
+      "listed",
+      "joseph",
+      "provoke",
+      "brothers",
+      "sell",
+      "slavery",
+      "sold",
+      "potiphar",
+      "judah",
+      "tamar",
+      "story",
+      "displays",
+      "justice",
+      "unexpected",
+      "lineage",
+      "mercy",
+      "resists",
+      "temptation",
+      "falsely",
+      "accused",
+      "imprisoned",
+      "interprets",
+      "cupbearer",
+      "baker",
+      "prison",
+      "restored",
+      "forgets",
+      "pharaoh",
+      "plenty",
+      "rises",
+      "power",
+      "stores",
+      "grain",
+      "save",
+      "many",
+      "come",
+      "buy",
+      "detained",
+      "tested",
+      "troubled",
+      "guilt",
+      "return",
+      "hosts",
+      "stirring",
+      "fear",
+      "wonder",
+      "silver",
+      "cup",
+      "prompts",
+      "heartfelt",
+      "plea",
+      "spare",
+      "father",
+      "sake",
+      "reveals",
+      "himself",
+      "forgives",
+      "summons",
+      "providential",
+      "plan",
+      "journeys",
+      "household",
+      "assures",
+      "goshen",
+      "manages",
+      "economy",
+      "blesses",
+      "policy",
+      "shifts",
+      "nears",
+      "ephraim",
+      "manasseh",
+      "crossing",
+      "hands",
+      "give",
+      "younger",
+      "greater",
+      "prophesies",
+      "twelve",
+      "instructing",
+      "buries",
+      "reassures",
+      "forgiveness",
+      "faith",
+      "awaiting",
+      "visitation"
     ],
     "url": "/books/genesis/"
   },
