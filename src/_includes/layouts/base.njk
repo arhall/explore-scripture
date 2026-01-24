@@ -282,7 +282,7 @@
 
       {% include "components/breadcrumb.njk" %} {{ content | safe }}
 
-      <footer class="footer">Built with <a href="https://www.11ty.dev/">Eleventy</a> • 2024</footer>
+      <footer class="footer">Built with <a href="https://www.11ty.dev/">Eleventy</a> • 2024 • Last updated: {{ build.lastUpdated }} (commit {{ build.commitHash }})</footer>
     </div>
 
     <script>
