@@ -37,7 +37,7 @@ const ESSENTIAL_RESOURCES = [
   '/assets/chapter-reader.js',
   '/categories/',
   '/characters/',
-  '/gospel-thread/',
+  '/map/',
   '/links/',
   OFFLINE_URL,
 ];
@@ -275,7 +275,7 @@ function shouldCache(url) {
     pathname.startsWith('/categories/') ||
     pathname.startsWith('/characters/') ||
     pathname.startsWith('/books/') ||
-    pathname.startsWith('/gospel-thread/') ||
+    pathname.startsWith('/map/') ||
     pathname === '/links/'
   ) {
     return true;

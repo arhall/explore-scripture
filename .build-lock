@@ -1,0 +1,6 @@
+{
+  "pid": 75420,
+  "startTime": 1769281325895,
+  "command": "/Users/andrewhall/.nvm/versions/node/v24.9.0/bin/node /Users/andrewhall/repo/explore-scripture/scripts/build-safeguards.js dev",
+  "maxDuration": 300000
+}

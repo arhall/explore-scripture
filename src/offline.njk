@@ -213,7 +213,7 @@ eleventyExcludeFromCollections: true
       return 'Character: ' + pathname.split('/')[2].replace(/-/g, ' ');
     if (pathname.startsWith('/categories/'))
       return 'Category: ' + pathname.split('/')[2].replace(/-/g, ' ');
-    if (pathname === '/gospel-thread/') return 'Gospel Thread';
+    if (pathname === '/map/') return 'Map';
     if (pathname === '/links/') return 'Links';
     return pathname;
   }
@@ -223,7 +223,7 @@ eleventyExcludeFromCollections: true
     if (pathname.startsWith('/books/')) return '📖';
     if (pathname.startsWith('/characters/')) return '👤';
     if (pathname.startsWith('/categories/')) return '📚';
-    if (pathname === '/gospel-thread/') return '🧵';
+    if (pathname === '/map/') return '⌖';
     if (pathname === '/links/') return '🔗';
     return '📄';
   }

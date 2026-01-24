@@ -1,0 +1,245 @@
+---
+layout: base.njk
+title: Map
+description: Explore Scripture locations with Paul's journeys, early churches, and chapter-level places.
+permalink: /map/
+---
+
+<div class="map-page">
+  <section class="hero-section map-hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-text">Map MVP</span>
+      </div>
+      <h1 class="hero-title">Map</h1>
+      <p class="hero-description">
+        Map turns where into a study tool. Follow Paul's journeys, surface key early churches, and
+        connect passages to geography without losing the reading-first experience.
+      </p>
+      <div class="hero-actions">
+        <a class="hero-cta primary" href="#mvp-preview">Explore Paul's Journeys</a>
+        <a class="hero-cta secondary" href="#map-features">See MVP scope</a>
+      </div>
+      <div class="hero-stats map-hero-stats">
+        <div class="stat">
+          <div class="stat-number">4</div>
+          <div class="stat-label">Journey routes</div>
+          <div class="stat-sublabel">Acts 13-28</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Places</div>
+          <div class="stat-sublabel">MVP scope</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">8</div>
+          <div class="stat-label">Church hubs</div>
+          <div class="stat-sublabel">Acts + epistles</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section" id="map-features">
+    <div class="map-section-header">
+      <div>
+        <h2>What the MVP includes</h2>
+        <p>
+          Start with Paul's journeys and the early church network. Every element is built to
+          support reading, not replace it.
+        </p>
+      </div>
+      <div class="map-badge">MVP Scope</div>
+    </div>
+
+    <div class="map-feature-grid">
+      <div class="map-feature-card">
+        <h3>Journey routes</h3>
+        <p>Pick Journey 1-3 or To Rome and step through ordered stops with Acts references.</p>
+      </div>
+      <div class="map-feature-card">
+        <h3>Stop-by-stop focus</h3>
+        <p>Use next/previous controls to jump between cities and return to the text in one click.</p>
+      </div>
+      <div class="map-feature-card">
+        <h3>Ancient churches</h3>
+        <p>Toggle key communities like Antioch, Corinth, Ephesus, and Rome with profile panels.</p>
+      </div>
+      <div class="map-feature-card">
+        <h3>Chapter-aware defaults</h3>
+        <p>Open the map from Acts 13-28 and the relevant stops are already filtered.</p>
+      </div>
+      <div class="map-feature-card">
+        <h3>Modern labels</h3>
+        <p>Optional modern place labels keep orientation clear without overwhelming the map.</p>
+      </div>
+      <div class="map-feature-card">
+        <h3>Bookmarkable views</h3>
+        <p>Save a place, a journey, or a full map state to revisit later.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section map-entry" id="map-entry">
+    <div class="map-section-header">
+      <div>
+        <h2>Entry points</h2>
+        <p>Map lives in the top nav and also appears inside Acts pages for instant context.</p>
+      </div>
+    </div>
+    <div class="map-entry-grid">
+      <div class="map-entry-card">
+        <h3>Top nav: Map</h3>
+        <p>Start with a focused landing page that defaults to Paul's journeys (MVP).</p>
+      </div>
+      <div class="map-entry-card">
+        <h3>Acts book page</h3>
+        <p>Use a dedicated CTA: "View Paul's journeys on Map".</p>
+      </div>
+      <div class="map-entry-card">
+        <h3>Acts chapter pages</h3>
+        <p>Open directly to that chapter's places with a filtered stop list.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section map-preview" id="mvp-preview">
+    <div class="map-section-header">
+      <div>
+        <h2>Paul's Journeys (MVP preview)</h2>
+        <p>Journey controls, ordered stops, and church markers inside a single workspace.</p>
+      </div>
+      <div class="map-preview-actions">
+        <button class="map-toggle active" type="button" aria-pressed="true">Journeys</button>
+        <button class="map-toggle" type="button" aria-pressed="false">Churches</button>
+        <button class="map-toggle" type="button" aria-pressed="false">Modern labels</button>
+      </div>
+    </div>
+
+    <div class="map-shell">
+      <aside class="map-panel">
+        <div class="map-panel-header">
+          <div>
+            <div class="map-kicker">Journey overview</div>
+            <h3>Paul's First Journey</h3>
+            <p>Acts 13-14 • 13 stops</p>
+          </div>
+          <div class="map-panel-controls">
+            <button class="map-pill active" type="button">Journey 1</button>
+            <button class="map-pill" type="button">Journey 2</button>
+            <button class="map-pill" type="button">Journey 3</button>
+            <button class="map-pill" type="button">To Rome</button>
+          </div>
+        </div>
+
+        <div class="map-controls">
+          <button class="map-action" type="button">Previous</button>
+          <button class="map-action primary" type="button">Play</button>
+          <button class="map-action" type="button">Next</button>
+        </div>
+
+        <ol class="map-stop-list">
+          <li class="map-stop active">
+            <div class="map-stop-header">
+              <span class="map-stop-name">Antioch (Syria)</span>
+              <span class="map-stop-tag">Galatia</span>
+            </div>
+            <p class="map-stop-ref">Acts 13:1-3</p>
+            <div class="map-stop-actions">
+              <button class="map-action small" type="button">Read</button>
+              <button class="map-action small" type="button">Focus</button>
+              <button class="map-action small" type="button">Bookmark</button>
+            </div>
+          </li>
+          <li class="map-stop">
+            <div class="map-stop-header">
+              <span class="map-stop-name">Seleucia</span>
+              <span class="map-stop-tag">Syria</span>
+            </div>
+            <p class="map-stop-ref">Acts 13:4</p>
+            <div class="map-stop-actions">
+              <button class="map-action small" type="button">Read</button>
+              <button class="map-action small" type="button">Focus</button>
+              <button class="map-action small" type="button">Bookmark</button>
+            </div>
+          </li>
+          <li class="map-stop">
+            <div class="map-stop-header">
+              <span class="map-stop-name">Salamis (Cyprus)</span>
+              <span class="map-stop-tag">Cyprus</span>
+            </div>
+            <p class="map-stop-ref">Acts 13:5</p>
+            <div class="map-stop-actions">
+              <button class="map-action small" type="button">Read</button>
+              <button class="map-action small" type="button">Focus</button>
+              <button class="map-action small" type="button">Bookmark</button>
+            </div>
+          </li>
+        </ol>
+
+        <div class="map-panel-footer">
+          <div class="map-churches-card">
+            <h4>Ancient churches</h4>
+            <p>Antioch, Corinth, Ephesus, Philippi, Thessalonica, Rome.</p>
+            <button class="map-action small" type="button">Browse churches</button>
+          </div>
+        </div>
+      </aside>
+
+      <div class="map-canvas" aria-label="Map canvas preview">
+        <div class="map-toolbar">
+          <input
+            class="map-search"
+            type="search"
+            placeholder="Search: Ephesus, Galatia, Rome"
+            aria-label="Search places or regions"
+          />
+          <div class="map-toolbar-actions">
+            <span class="map-toolbar-pill">Layers</span>
+            <span class="map-toolbar-pill">Era: Acts</span>
+          </div>
+        </div>
+
+        <div class="map-canvas-stage">
+          <svg class="map-route-svg" viewBox="0 0 600 360" role="img" aria-label="Route preview">
+            <path class="map-route-path" d="M120 260 L180 220 L250 210 L320 170 L390 180 L470 140" />
+            <circle class="map-route-stop" cx="120" cy="260" r="8" />
+            <circle class="map-route-stop" cx="180" cy="220" r="8" />
+            <circle class="map-route-stop" cx="250" cy="210" r="8" />
+            <circle class="map-route-stop" cx="320" cy="170" r="8" />
+            <circle class="map-route-stop" cx="390" cy="180" r="8" />
+            <circle class="map-route-stop" cx="470" cy="140" r="8" />
+          </svg>
+          <div class="map-confident">Confidence: High</div>
+          <div class="map-legend">
+            <span class="map-legend-item"><span class="map-dot"></span> Journey stops</span>
+            <span class="map-legend-item"><span class="map-dot muted"></span> Churches</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section map-next">
+    <div class="map-section-header">
+      <div>
+        <h2>Next after MVP</h2>
+        <p>Expand to OT routes, tribal boundaries, and multi-era overlays with confidence labels.</p>
+      </div>
+    </div>
+    <div class="map-next-grid">
+      <div class="map-next-card">
+        <h3>OT routes</h3>
+        <p>Exodus, exile, and return paths with model variants.</p>
+      </div>
+      <div class="map-next-card">
+        <h3>Tribes by era</h3>
+        <p>Timeline slider for shifting tribal territories.</p>
+      </div>
+      <div class="map-next-card">
+        <h3>Empires + provinces</h3>
+        <p>Roman, Persian, and Greek overlays with confidence cues.</p>
+      </div>
+    </div>
+  </section>
+</div>

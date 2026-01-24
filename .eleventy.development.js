@@ -1,7 +1,7 @@
 
 // Auto-generated optimized Eleventy config
 // Mode: development
-// Generated: 2026-01-24T04:14:33.927Z
+// Generated: 2026-01-24T19:01:42.437Z
 
 module.exports = function(eleventyConfig) {
   // Performance optimizations for development
@@ -61,10 +61,11 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("chapterSort", function(chapterObj) {
     if (!chapterObj) return [];
-    return Object.keys(chapterObj)
-      .map(Number)
-      .filter(n => !isNaN(n))
-      .sort((a, b) => a - b);
+    return Object.entries(chapterObj).sort((a, b) => {
+      const numA = parseInt(a[0], 10);
+      const numB = parseInt(b[0], 10);
+      return numA - numB;
+    });
   });
 
   // Get proper commentary URL for different books
