@@ -1,0 +1,358 @@
+---
+notesbridge_uid: d5ef6c10-c91a-499b-ac0f-f3f6905a0bdb
+apple_notes_id: x-coredata://FEE55BCF-3869-47B1-B2C2-EA92DFBAB0C4/ICNote/p3731
+apple_folder_path: iCloud/Bible Character Studies/OT
+last_sync_hash: 4cee2da0911b81c5efa7acdfac270b8e31cd3ab00475fee6f7a17a629306f9ce
+last_sync_at: 2025-12-31T06:25:53Z
+---
+<!-- notesbridge:apple-html -->
+<div><h1>Jeremiah</h1></div>
+<div><br></div>
+<div><b><h1>Jeremiah — Bible Character Study</h1></b></div>
+<div><b><h2>1) Story Summary (Chronological)</h2></b></div>
+<div>Jeremiah is a prophet called by the LORD in Judah during the final decades before Jerusalem’s fall to Babylon. His ministry begins in the <b>13th year of King Josiah</b> (Jer 1:1–2) and spans the reigns of Judah’s last kings—<b>Josiah, Jehoahaz, Jehoiakim, Jehoiachin, Zedekiah</b>—and continues <b>after Jerusalem is destroyed</b> (Jer 1:2–3; 2 Kgs 23:31–24:20; 25:1–26).</div>
+<div>From the start, Jeremiah is commissioned “<b>to pluck up and to break down… to build and to plant</b>” (Jer 1:10). He preaches repentance, exposes Judah’s covenant-breaking and idolatry (Jer 2–6), and warns that the temple cannot be used as a religious “charm” while the nation persists in injustice and false worship (Jer 7:1–15). His words provoke intense opposition—threats from his hometown (Jer 11:18–23), public trials (Jer 26:7–16), beatings and imprisonment (Jer 20:1–2), and repeated confinement during the siege (Jer 37–38).</div>
+<div>Jeremiah’s ministry includes vivid sign-acts: a marred linen loincloth (Jer 13:1–11), a shattered jar (Jer 19:1–13), yokes symbolizing Babylon’s rule (Jer 27:1–11), and the <b>purchase of a field</b> during siege to proclaim future restoration (Jer 32:6–15). He dictates God’s words to <b>Baruch</b>, whose scroll is burned by King Jehoiakim—only for Jeremiah to dictate it again with “many similar words” added (Jer 36:1–32). He confronts false prophets, most notably <b>Hananiah</b>, whose message of quick deliverance is judged as deception (Jer 28:1–17).</div>
+<div>In the darkest days, Jeremiah also becomes a prophet of hope: he sends a letter to the exiles urging faithful life in Babylon while awaiting God’s long-term restoration (Jer 29:1–14), and he announces the <b>New Covenant</b>—God’s law written on the heart, sins forgiven, and true knowledge of the LORD (Jer 31:31–34). After Jerusalem falls, Jeremiah remains with the remnant under Babylonian governance (Jer 40:1–6). When violence and fear lead the people to flee toward Egypt against God’s word, Jeremiah continues to warn them there (Jer 42–44). Scripture does not clearly record Jeremiah’s death; later traditions exist, but they are <b>not explicit in the Bible</b>.</div>
+<div><b>Where his story begins:</b> Jeremiah’s call and commission (Jer 1:1–10).<b>Where his story ends (in Scripture):</b> His post-fall ministry among the remnant and in Egypt (Jer 40–44), with Jerusalem’s fall narrated as the book’s historical capstone (Jer 52; cf. 2 Kgs 25).</div>
+<div><br></div>
+<div><b><h2>2) What He’s Known For</h2></b></div>
+<div>Jeremiah is most known as the prophet who <b>faithfully proclaimed God’s judgment and mercy</b> on the eve of exile—often at great personal cost—while also delivering some of Scripture’s richest promises of restoration, especially the <b>New Covenant</b> (Jer 31:31–34).</div>
+<div><b>Headline descriptors</b><br></div>
+<ul>
+<li><b>Called from the womb</b> for a hard prophetic mission (Jer 1:4–10).</li>
+<li><b>“Prophet to the nations”</b> declaring God’s sovereignty over kingdoms (Jer 1:5; 18:7–10).</li>
+<li><b>Persecuted, rejected, and imprisoned</b>, yet compelled to speak (Jer 20:7–9; 37–38).</li>
+<li><b>Temple sermon preacher</b> exposing false security (Jer 7:1–15).</li>
+<li><b>Opponent of false prophecy</b>, insisting on truth over optimism (Jer 23:16–22; 28).</li>
+<li><b>Prophet of the New Covenant</b>, heart transformation, and forgiveness (Jer 31:31–34).</li>
+<li><b>Weeping intercessor</b>, pouring out lament and grief before God (Jer 9:1; 14:7–9; 20:14–18).</li>
+</ul>
+<div><br></div>
+<div><b><h2>3) Where He Appears in the Bible</h2></b></div>
+<div><b><h2>Primary narrative locations</h2></b></div>
+<ul>
+<li><b>Jeremiah 1–44</b> — Jeremiah’s call, preaching, conflicts, and ministry through and after Jerusalem’s fall.</li>
+<li><b>Jeremiah 46–51</b> — Oracles against the nations (Babylon, Egypt, etc.).</li>
+<li><b>Jeremiah 52</b> — Historical appendix recounting Jerusalem’s fall and aftermath (cf. 2 Kgs 24–25).</li>
+</ul>
+<div><b><h2>Secondary references (later mentions, summaries, teachings)</h2></b></div>
+<ul>
+<li><b>2 Kings 22–25</b> — Historical context for Judah’s last kings and the fall of Jerusalem; aligns with Jeremiah’s era (2 Kgs 23:31–25:26).</li>
+<li><b>2 Chronicles 35–36</b> — Jeremiah laments Josiah and is linked to Judah’s final collapse (2 Chr 35:25; 36:21–22).</li>
+<li><b>Ezra 1:1–4</b> — Cyrus’s decree is connected to “the word of the LORD by the mouth of Jeremiah” (Ezra 1:1).</li>
+<li><b>Daniel 9:2</b> — Daniel studies “the books,” specifically Jeremiah’s word about Jerusalem’s desolations (Dan 9:2; cf. Jer 25:11–12; 29:10).</li>
+<li><b>Matthew 2:17–18</b> — Jeremiah’s “Rachel weeping” is cited in connection with Herod’s massacre (Matt 2:17–18; Jer 31:15).</li>
+<li><b>Hebrews 8:8–12; 10:16–17</b> — The New Covenant promise is quoted as fulfilled in Christ (Heb 8:8–12; 10:16–17; Jer 31:31–34).</li>
+</ul>
+<div><br></div>
+<div><b><h2>4) Vital Statistics</h2></b></div>
+<div><b>Historical setting (as Scripture indicates)</b><br></div>
+<ul>
+<li>Begins in <b>Josiah’s 13th year</b> and runs to the <b>exile era</b> (Jer 1:2–3).</li>
+<li>Ministers through Judah’s final kings and the Babylonian conquest (Jer 1:2–3; 2 Kgs 24–25; Jer 39–40).</li>
+</ul>
+<div><b>Geography</b><br></div>
+<ul>
+<li><b>Anathoth (in Benjamin)</b> — Jeremiah’s hometown (Jer 1:1; 11:21).</li>
+<li><b>Jerusalem</b> — center of his preaching, trials, imprisonments, and siege narratives (Jer 7; 26; 37–39).</li>
+<li><b>Ramah / Benjamin region</b> — scenes surrounding deportations and remnant movements (Jer 40:1).</li>
+<li><b>Egypt</b> — Jeremiah’s later ministry among refugees (Jer 43–44).</li>
+</ul>
+<div><b>Family and relationships</b><br></div>
+<ul>
+<li><b>Father:</b> Hilkiah (Jer 1:1). (Scripture does not explicitly identify him with Josiah’s high priest—avoid assuming.)</li>
+<li><b>No wife/children:</b> commanded not to marry as a sign of coming judgment (Jer 16:1–4).</li>
+<li><b>Scribe/ally:</b> <b>Baruch son of Neriah</b> (Jer 36:4; 45:1).</li>
+<li><b>Protector:</b> <b>Ahikam son of Shaphan</b> helps preserve Jeremiah’s life (Jer 26:24).</li>
+<li><b>Rescuer:</b> <b>Ebed-melech the Ethiopian</b> delivers Jeremiah from the cistern (Jer 38:7–13).</li>
+<li><b>Adversaries:</b> priests/prophets/officials (Jer 20:1–2; 26:7–11), false prophets like <b>Hananiah</b> (Jer 28), hostile leaders during siege (Jer 37–38), and even townsmen/family networks (Jer 11:18–23; 12:6).</li>
+</ul>
+<div><b>Roles/offices</b><br></div>
+<ul>
+<li><b>Prophet</b> (Jer 1:5).</li>
+<li><b>Watchman/Herald of covenant lawsuit</b> against Judah’s unfaithfulness (Jer 2:1–13).</li>
+<li><b>Intercessor</b>—though at times forbidden to pray for the people due to hardened rebellion (Jer 7:16; 14:11).</li>
+</ul>
+<div><b>Key turning points</b><br></div>
+<ul>
+<li><b>Call and commissioning</b> (Jer 1:4–10).</li>
+<li><b>Temple sermon conflict</b> (Jer 7:1–15; 26:1–16).</li>
+<li><b>Personal crisis and “fire in bones” resolve</b> (Jer 20:7–9).</li>
+<li><b>Scroll burned and rewritten</b> (Jer 36:1–32).</li>
+<li><b>Clash with Hananiah over the yoke</b> (Jer 28).</li>
+<li><b>Hope enacted: purchase of a field</b> during siege (Jer 32:6–15).</li>
+<li><b>New Covenant proclamation</b> (Jer 31:31–34).</li>
+<li><b>Imprisonment/cistern and rescue</b> (Jer 38:6–13).</li>
+<li><b>Post-fall ministry and forced journey to Egypt</b> (Jer 40–44).</li>
+</ul>
+<div><br></div>
+<div><b><h2>5) Pivotal Moments and Timeline (Chronological Table)</h2></b></div>
+<div><object><table cellspacing="0" cellpadding="0" style="border-collapse: collapse; direction: ltr">
+<tbody>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Event</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Reference</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Why it matters</b></div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jeremiah’s call “from the womb”</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jer 1:4–10</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Establishes divine initiative and the scope: nations, uprooting and planting.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>God’s promise of opposition and protection</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jer 1:17–19</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Frames his entire ministry: resistance is guaranteed, but God’s presence is greater.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Early indictments of covenant unfaithfulness</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jer 2:1–13</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Judah’s core sin is abandoning “the fountain of living waters” for broken cisterns.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Plot from his hometown Anathoth</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jer 11:18–23; 12:6</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Shows betrayal close to home; intensifies the cost of prophetic truth.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Temple sermon: false security exposed</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jer 7:1–15</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Confronts “the temple of the LORD” mantra; worship without obedience is condemned.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Trial after temple preaching</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jer 26:7–16, 24</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Public crisis: Jeremiah nearly dies; God preserves him through providential allies.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jeremiah’s “confessions” and inner turmoil</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jer 15:10–21; 20:7–18</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Reveals the psychological/spiritual burden of faithful ministry.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Scroll dictated to Baruch</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jer 36:1–4</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Shows God’s word being preserved and published amid national decline.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jehoiakim burns the scroll; Jeremiah rewrites</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jer 36:20–32</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Human contempt cannot nullify God’s word; the message returns with added words.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Yoke sign-act; confrontation with Hananiah</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jer 27:1–11; 28:1–17</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Tests true vs. false prophecy; “peace” must be weighed by God’s actual word.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Letter to the exiles</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jer 29:1–14</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Reorients God’s people to faithful life under discipline, anchored in future hope.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Book of Consolation: restoration promised</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jer 30–33</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Holds judgment and hope together; God promises healing and a future.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>New Covenant announced</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jer 31:31–34</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Climactic theological promise: heart renewal, forgiveness, true knowledge of God.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Field purchase in Anathoth during siege</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jer 32:6–15</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Embodied hope: land deeds in wartime signal God’s future restoration.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jerusalem falls; Jeremiah spared and released</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jer 39:11–14; 40:1–6</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>God preserves his prophet; Jeremiah chooses to remain with the remnant.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Remnant refuses God’s word and goes to Egypt</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jer 42:1–22; 43:1–7</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Illustrates persistent unbelief; Jeremiah’s ministry continues amid rejection.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Final warnings in Egypt against idolatry</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jer 44:1–14</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ends with covenant confrontation: fear-driven “safety plans” can become rebellion.</div>
+</td></tr>
+</tbody>
+</table></object><br></div>
+<div><b><h2>6) Strengths, Weaknesses, and Heart-Level Patterns</h2></b></div>
+<div><b><h2>Strengths (with passages)</h2></b></div>
+<ul>
+<li><b>Courage under pressure:</b> He is commanded not to fear faces, and he stands firm before kings, priests, and crowds (Jer 1:17–19; 26:12–15; 38:14–18).</li>
+<li><b>Faithful proclamation of God’s word:</b> Even when silence would be easier, the word burns within him (Jer 20:8–9).</li>
+<li><b>Compassion and grief for sin’s consequences:</b> His tears match the seriousness of judgment (Jer 9:1; 13:17; 14:17).</li>
+<li><b>Willingness to embody God’s message:</b> Jeremiah’s life becomes a sign (no marriage, Jer 16:1–4; sign-acts, Jer 13; 19; 27; 32).</li>
+<li><b>Theological clarity about true repentance and worship:</b> He refuses superficial religion and demands covenant fidelity (Jer 7:5–11; 23:16–22).</li>
+</ul>
+<div><b><h2>Weaknesses / sins / blind spots (shown with careful context)</h2></b></div>
+<ul>
+<li><b>Fear and inadequacy at the outset:</b> “I do not know how to speak… I am only a youth” (Jer 1:6). God corrects and strengthens him (Jer 1:7–9).</li>
+<li><b>Deep discouragement and anguish:</b> Jeremiah’s laments include sharp complaint and despair (Jer 15:10–18; 20:14–18). Scripture presents these transparently—lament is not celebrated as virtue, but it <i>is</i> brought honestly before God.</li>
+<li><b>Longing for vindication against opponents:</b> He prays for justice against persecutors (Jer 11:20; 18:19–23). This must be read in the context of covenant violence against him (Jer 11:18–19) and God’s righteous judgment; still, it reveals the strain and intensity of his emotional world.</li>
+</ul>
+<div><b><h2>Motives / fears / desires (careful inferences anchored to text)</h2></b></div>
+<ul>
+<li><b>Desire to be faithful to God’s voice</b> even when it costs him reputation and safety (Jer 20:9; 26:12–15).</li>
+<li><b>Fear of rejection and suffering</b>, honestly acknowledged (Jer 1:6; 20:7–8).</li>
+<li><b>Longing for a repentant people and a healed covenant relationship</b>, seen in tears and intercession (Jer 14:7–9, 19–22).</li>
+</ul>
+<div><b><h2>What changes (or doesn’t) over time?</h2></b></div>
+<ul>
+<li><b>Doesn’t change:</b> The core conflict remains the same—Jeremiah’s message contradicts the people’s preferred narrative (Jer 6:14; 8:11; 23:16–17), and opposition persists (Jer 26; 36; 37–38; 43).</li>
+<li><b>Deepens over time:</b> His inner life grows more exposed (Jer 15; 20), and his theology of hope becomes more articulated—especially restoration and the New Covenant (Jer 30–33). Judgment is not his final word; mercy is real, but it comes God’s way and in God’s time (Jer 29:10–14; 31:31–34; 32:36–44).</li>
+</ul>
+<div><br></div>
+<div><b><h2>7) Victories and Challenges</h2></b></div>
+<div><b><h2>Major “wins” (obedience, influence, faith, leadership)</h2></b></div>
+<ul>
+<li><b>He accepts a daunting calling</b> and is strengthened by God’s presence (Jer 1:4–10, 17–19).</li>
+<li><b>He speaks truth at the temple</b> despite life-threatening backlash (Jer 7:1–15; 26:12–16).</li>
+<li><b>God’s word preserved despite royal hostility:</b> scroll burned, then rewritten and expanded (Jer 36:20–32).</li>
+<li><b>He exposes false prophecy</b> and upholds God’s long-range discipline and hope (Jer 28:1–17; 29:1–14).</li>
+<li><b>He embodies hope in catastrophe:</b> purchase of land during siege and prayers that anchor hope in God’s sovereignty (Jer 32:6–17, 26–44).</li>
+<li><b>He delivers the New Covenant promise</b>—a pinnacle of redemptive hope (Jer 31:31–34).</li>
+<li><b>He remains with the remnant</b> rather than pursuing comfort, continuing ministry after the fall (Jer 40:1–6).</li>
+</ul>
+<div><b><h2>Major challenges (suffering, opposition, doubt)</h2></b></div>
+<ul>
+<li><b>Threats from his own town and networks</b> (Jer 11:18–23; 12:6).</li>
+<li><b>Public shaming and imprisonment</b> (Jer 20:1–2; 37:15–16).</li>
+<li><b>Accusations of treason and repeated confinement</b> during siege (Jer 37:11–14; 38:1–6).</li>
+<li><b>Near-death in a cistern</b>, rescued by an unlikely ally (Jer 38:6–13).</li>
+<li><b>Emotional and spiritual anguish</b> in sustained rejection (Jer 15:10–18; 20:14–18).</li>
+<li><b>Post-fall defiance:</b> the remnant asks for guidance, then rejects it and flees to Egypt (Jer 42:1–22; 43:1–7).</li>
+</ul>
+<div><b>Cost of faithfulness:</b> Jeremiah’s obedience brings isolation, loss of ordinary life (Jer 16:1–4), and repeated suffering (Jer 20; 37–38).<b>Consequences of compromise:</b> Judah’s refusal to hear God’s word ends in exile and devastation (Jer 25:8–11; 39:1–10), and the remnant’s fear-driven “escape plan” leads them into renewed idolatry warnings in Egypt (Jer 44:1–14).</div>
+<div><br></div>
+<div><b><h2>8) Essential Verses and Key Cross-References (Organized by Themes)</h2></b></div>
+<div><b><h2>Calling, fear, perseverance</h2></b></div>
+<ul>
+<li>Jer 1:4–10 — Called and appointed; God puts His words in Jeremiah’s mouth.</li>
+<li>Jer 1:17–19 — Opposition promised; God’s protection assured.</li>
+<li>Jer 20:9 — The word as an inextinguishable fire.</li>
+</ul>
+<div><b>Cross-references:</b> Exod 4:10–12 (Moses’ speech fears); Isa 6:1–8 (prophetic commissioning); 2 Cor 4:7–12 (ministry through weakness).</div>
+<div><b><h2>Covenant unfaithfulness and idolatry</h2></b></div>
+<ul>
+<li>Jer 2:13 — Forsaking the fountain; broken cisterns.</li>
+<li>Jer 7:9–11 — Temple sermon: worship used to cover sin.</li>
+<li>Jer 17:5–9 — Trust in man vs. trust in the LORD; deceitful heart.</li>
+</ul>
+<div><b>Cross-references:</b> Deut 6:4–15 (covenant loyalty); 1 Kgs 18:21 (divided worship); Rom 1:21–25 (idolatry exchange).</div>
+<div><b><h2>True vs. false prophecy; God’s word stands</h2></b></div>
+<ul>
+<li>Jer 23:16–22 — False prophets speak visions of their own minds.</li>
+<li>Jer 28:15–17 — Hananiah judged; truth over “quick peace.”</li>
+<li>Jer 36:23–32 — Scroll burned; word reissued and expanded.</li>
+</ul>
+<div><b>Cross-references:</b> Deut 18:20–22 (testing prophets); Ezek 13 (false prophecy); Matt 24:11 (false prophets).</div>
+<div><b><h2>Exile, waiting, and faithful life under discipline</h2></b></div>
+<ul>
+<li>Jer 29:4–7 — Seek the welfare of the city in exile.</li>
+<li>Jer 29:10–14 — God’s long-term plan to restore after the appointed time.</li>
+<li>Jer 25:11–12 — Desolation and the set span of Babylon’s dominance.</li>
+</ul>
+<div><b>Cross-references:</b> Dan 9:2–3 (Daniel learns from Jeremiah); 1 Pet 1:1; 2:11–12 (exiles as identity); Heb 12:5–11 (discipline and hope).</div>
+<div><b><h2>Restoration and hope</h2></b></div>
+<ul>
+<li>Jer 31:3 — Everlasting love and drawing mercy.</li>
+<li>Jer 32:17; 32:27 — Nothing too hard for the LORD; sovereignty over all flesh.</li>
+<li>Jer 33:3 — Call and God answers with great things.</li>
+</ul>
+<div><b>Cross-references:</b> Isa 40:1–5 (comfort); Lam 3:19–26 (hope amid ruin); Rom 8:18–39 (suffering and hope).</div>
+<div><b><h2>The New Covenant and heart transformation</h2></b></div>
+<ul>
+<li>Jer 31:31–34 — Law on the heart; forgiveness; knowing the LORD.</li>
+<li>Jer 32:40–41 — Everlasting covenant; God’s doing.</li>
+<li>Jer 24:7 — A heart to know the LORD.</li>
+</ul>
+<div><b>Cross-references:</b> Ezek 36:26–27 (new heart, new spirit); Luke 22:20 (new covenant in Christ’s blood); Heb 8:8–12; 10:16–17 (Jeremiah fulfilled in Christ).</div>
+<div><b><h2>Messianic promise (Righteous Branch)</h2></b></div>
+<ul>
+<li>Jer 23:5–6 — A righteous Branch from David; “The LORD is our righteousness.”</li>
+<li>Jer 33:14–16 — Branch promise reiterated amid hope for Jerusalem.</li>
+</ul>
+<div><b>Cross-references:</b> Isa 11:1–5 (shoot/branch); Luke 1:32–33 (Davidic kingship); 1 Cor 1:30 (Christ our righteousness).</div>
+<div><br></div>
+<div><b><h2>9) Theology and Big Themes</h2></b></div>
+<div><b><h2>God’s character revealed</h2></b></div>
+<ul>
+<li><b>Holiness and justice:</b> God judges covenant-breaking, violence, and idolatry (Jer 7:5–15; 25:8–11).</li>
+<li><b>Patience and persistence:</b> God sends prophets “again and again,” yet the people refuse (cf. Jer 7:25–26).</li>
+<li><b>Sovereignty over nations:</b> God uproots and plants kingdoms by His word (Jer 1:10; 18:7–10; 27:5–7; 32:27).</li>
+<li><b>Mercy and covenant love:</b> Restoration is promised not because Judah deserves it, but because God is faithful to His purposes (Jer 31:3; 32:36–41).</li>
+</ul>
+<div><b><h2>Covenant, worship, exile, restoration</h2></b></div>
+<ul>
+<li><b>Covenant lawsuit:</b> Jeremiah indicts Israel/Judah for breaking covenant, especially in idolatry and injustice (Jer 2:1–13; 7:9–11).</li>
+<li><b>True worship:</b> Temple presence is not protection if hearts remain rebellious (Jer 7:1–15).</li>
+<li><b>Exile as covenant discipline:</b> Babylon’s rise is framed as God’s instrument of judgment (Jer 25:8–11; 27:6).</li>
+<li><b>Restoration beyond judgment:</b> God promises return, rebuilding, and renewed relationship (Jer 30:18–22; 31:27–28).</li>
+</ul>
+<div><b><h2>Human nature: sin, grace, repentance, perseverance</h2></b></div>
+<ul>
+<li><b>The heart problem:</b> The human heart is profoundly unreliable (Jer 17:9), hence the need for <b>heart-level renewal</b> (Jer 31:33; 24:7).</li>
+<li><b>Repentance must be real:</b> superficial “peace” and ritual cannot substitute for obedience (Jer 6:14; 7:9–11).</li>
+<li><b>Persevering under rejection:</b> Jeremiah models continuing to speak God’s truth when it is unwelcome (Jer 20:9; 26:12–15).</li>
+</ul>
+<div><br></div>
+<div><b><h2>10) How Jeremiah Points Us to Christ</h2></b></div>
+<div><b><h2>1) The suffering prophet pattern (careful typology)</h2></b></div>
+<div>Jeremiah is rejected by leaders, accused falsely, beaten, imprisoned, and nearly killed (Jer 20:1–2; 26:7–11; 37–38). This pattern anticipates the greater rejection of Jesus—the faithful prophet who suffers at the hands of His people’s leaders (cf. Matt 21:33–46; Luke 13:33–34). Jeremiah is not the Messiah, but his life <b>prefigures</b> the cost of speaking God’s truth in a hostile world.</div>
+<div><b><h2>2) The New Covenant fulfilled in Jesus</h2></b></div>
+<div>Jeremiah’s climactic promise is the <b>New Covenant</b>: God writes His law on hearts, forgives sin, and brings true knowledge of Himself (Jer 31:31–34). The New Testament explicitly applies this to Christ’s saving work (Heb 8:8–12; 10:16–17), and Jesus identifies His death as inaugurating the New Covenant (Luke 22:20).</div>
+<div><b><h2>3) The Righteous Branch and “The LORD is our righteousness”</h2></b></div>
+<div>Jeremiah foretells a Davidic king who will reign wisely and be called “<b>The LORD is our righteousness</b>” (Jer 23:5–6; 33:14–16). This points forward to the Messiah’s righteous rule and the gospel reality that righteousness is found in the LORD Himself—fulfilled in Christ (cf. 1 Cor 1:30).</div>
+<div><b><h2>4) Rachel weeping and gospel consolation</h2></b></div>
+<div>Jeremiah’s image of <b>Rachel weeping</b> (Jer 31:15) is cited in Matthew in connection with Herod’s slaughter (Matt 2:17–18). In Jeremiah, that weeping sits in a restoration context (Jer 31:16–17), and in Matthew it sits near the coming of the true King—sorrow meets the dawn of redemption.</div>
+<div><br></div>
+<div><b><h2>11) Lessons and Applications</h2></b></div>
+<div><b><h2>Examples to imitate (tied to Scripture)</h2></b></div>
+<ol>
+<li><b>Let God define your calling, not your fears</b> (Jer 1:6–9).</li>
+<li><b>Speak truth even when it costs you</b> (Jer 26:12–15; 20:9).</li>
+<li><b>Refuse shallow religion—pursue obedient worship</b> (Jer 7:5–11).</li>
+<li><b>Test “encouraging” messages by God’s word, not by vibes</b> (Jer 23:16–22; 28:1–17).</li>
+<li><b>Practice faithful presence in hard places</b> (Jer 29:4–7).</li>
+<li><b>Anchor hope in God’s sovereignty, not circumstances</b> (Jer 32:17, 27).</li>
+<li><b>Bring grief to God honestly</b>—lament is permitted, not prohibited (Jer 15:10–18; 20:14–18).</li>
+<li><b>Invest in obedience that looks foolish to the world</b> (Jer 32:6–15).</li>
+<li><b>Keep God’s long view</b>—His timing may be longer than yours (Jer 29:10–14).</li>
+<li><b>Cherish the New Covenant promise: heart change and forgiveness</b> (Jer 31:31–34).</li>
+</ol>
+<div><b><h2>Warnings to heed</h2></b></div>
+<ol>
+<li><b>Don’t treat spiritual symbols as immunity</b> (Jer 7:1–15).</li>
+<li><b>Idolatry is often an exchange—leaving living water for broken cisterns</b> (Jer 2:13).</li>
+<li><b>Fear-based decisions can become disobedience</b> (Jer 42:19–22; 43:1–7).</li>
+<li><b>False prophecy thrives where people prefer comfort over repentance</b> (Jer 6:14; 23:17).</li>
+</ol>
+<div><b><h2>Application areas</h2></b></div>
+<ul>
+<li><b>Personal holiness:</b> repent with integrity, not performance (Jer 7:5–11; 24:7).</li>
+<li><b>Relationships:</b> beware betrayal and pressure; seek faithful companions (Jer 12:6; 26:24; 36:4).</li>
+<li><b>Prayer:</b> pray with honesty and reverence; accept God’s hard answers (Jer 14:7–9; 7:16).</li>
+<li><b>Suffering:</b> endurance doesn’t erase pain; it brings pain to God and keeps obeying (Jer 20:9; 15:15–21).</li>
+<li><b>Decision-making:</b> don’t ask God for guidance while planning to reject it (Jer 42:1–22).</li>
+<li><b>Leadership:</b> lead by truth, not crowds; resist “peace” slogans that ignore sin (Jer 23:16–22; 28).</li>
+</ul>
+<div><br></div>
+<div><b><h2>12) Discussion and Reflection Questions</h2></b></div>
+<div><b><h2>Personal reflection</h2></b></div>
+<ol>
+<li>Where do you feel “too young / not enough” like Jeremiah (Jer 1:6), and what does God’s answer teach you (Jer 1:7–9)?</li>
+<li>What modern “broken cisterns” tempt you to look for life apart from God (Jer 2:13)?</li>
+<li>How do you respond when obedience costs reputation or comfort (Jer 26:12–15; 20:9)?</li>
+<li>What does Jeremiah’s lament teach you about bringing pain to God without abandoning God (Jer 15:10–21; 20:14–18)?</li>
+<li>In what ways might fear be steering your choices more than faith (Jer 42:19–22)?</li>
+</ol>
+<div><b><h2>Small group discussion</h2></b></div>
+<ol>
+<li>Why is the temple sermon still relevant for religious communities today (Jer 7:1–11)?</li>
+<li>How do you distinguish true encouragement from false reassurance (Jer 23:16–22; 28:1–17)?</li>
+<li>What does it look like to “seek the welfare of the city” as believers in a hostile culture (Jer 29:4–7)?</li>
+<li>How can a community cultivate hope without denying judgment or consequences (Jer 30–33)?</li>
+<li>What practices help a group submit to God’s word when it contradicts their plans (Jer 42)?</li>
+</ol>
+<div><b><h2>Deep study (text observation)</h2></b></div>
+<ol>
+<li>In Jer 1:4–10, list everything God does vs. what Jeremiah does. What does that teach about vocation?</li>
+<li>In Jer 7:5–11, identify the ethical behaviors God emphasizes. How are they linked to worship?</li>
+<li>In Jer 23:16–22, what marks false prophets, and what marks true prophetic standing “in the council of the LORD”?</li>
+<li>Read Jer 29:4–14 carefully: what commands are immediate, and what promises are time-bound (Jer 29:10)?</li>
+<li>In Jer 31:31–34, what are the New Covenant’s features (law, knowledge, forgiveness), and how do Hebrews 8 and 10 use them (Heb 8:8–12; 10:16–17)?</li>
+<li>In Jer 32:6–44, track the movement from sign-act to prayer to God’s answer. What logic does God use to ground hope?</li>
+</ol>
+<div><br></div>
+<div><b><h2>13) Prayer Response</h2></b></div>
+<div>Lord God, You formed and called Jeremiah for Your purposes (Jer 1:5), and You sustained him when obedience was costly (Jer 1:17–19). Forgive us for trusting in religious forms while resisting Your voice (Jer 7:8–11), and for drinking from broken cisterns that cannot hold life (Jer 2:13). Write Your law on our hearts, forgive our sins, and make us truly know You, as You promised in the New Covenant (Jer 31:33–34). Give us courage to speak truth with humility, to endure suffering without abandoning faith, and to hope in You when circumstances look hopeless (Jer 20:9; 32:17, 27). In Jesus’ name, Amen.</div>
+<!-- /notesbridge:apple-html -->

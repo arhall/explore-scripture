@@ -1,0 +1,332 @@
+---
+notesbridge_uid: eb21620a-2b35-4eec-b536-95d5133b14c8
+apple_notes_id: x-coredata://FEE55BCF-3869-47B1-B2C2-EA92DFBAB0C4/ICNote/p3756
+apple_folder_path: iCloud/Bible Character Studies/OT
+last_sync_hash: bf4142b45e8e0bd13ed8d3b89033901db64a6e33120961f9c29e9a6e5d4fdf24
+last_sync_at: 2025-12-31T06:45:22Z
+---
+<!-- notesbridge:apple-html -->
+<div><h1>Jonah</h1></div>
+<div><br></div>
+<div><b><h1>Jonah — Bible Character Study</h1></b></div>
+<div><b><h2>1) Story Summary (Chronological)</h2></b></div>
+<div>Jonah (“son of Amittai”) appears as a prophet of Israel during the reign of Jeroboam II (king of the northern kingdom), associated with a prophecy about Israel’s borders being restored (2 Kings 14:25). The book of Jonah then narrates a specific divine commission: Jonah is commanded to go east to <b>Nineveh</b> (capital city of Assyria) and preach against its evil (Jon 1:1–2). Jonah instead flees west toward <b>Tarshish</b>, attempting to escape the LORD’s presence and calling (Jon 1:3).</div>
+<div>God pursues Jonah with a great storm at sea. Pagan sailors fear, pray, and eventually learn Jonah is fleeing from the LORD, “the God of heaven, who made the sea and the dry land” (Jon 1:4–10). Jonah is thrown into the sea, the storm ceases, and the sailors respond with fear of the LORD and sacrifices/vows (Jon 1:11–16). God appoints a great fish to swallow Jonah; Jonah remains in the fish three days and three nights (Jon 1:17).</div>
+<div>From inside the fish Jonah prays—a psalm-like prayer of distress, deliverance, and renewed orientation to the LORD (Jon 2:1–9). God commands the fish, and Jonah is vomited onto dry land (Jon 2:10). The word of the LORD comes a second time: Jonah goes to Nineveh and proclaims coming judgment (Jon 3:1–4). In an astonishing reversal, Nineveh believes God, repents with fasting, and even the king humbles himself, calling for turning from violence and evil (Jon 3:5–9). God relents of the disaster he had spoken (Jon 3:10).</div>
+<div>Jonah’s response exposes the heart conflict: he becomes angry, confessing he fled initially because he knew God is “gracious… merciful… slow to anger… abounding in steadfast love… relenting from disaster” (Jon 4:1–2). Outside the city Jonah sulks and pleads for death (Jon 4:3). God teaches Jonah through an object lesson: a plant gives shade, then dies by a worm and scorching wind; Jonah again rages over his discomfort (Jon 4:6–8). God rebukes Jonah’s distorted compassion and defends his own pity for Nineveh—many people and even animals—ending with a penetrating question rather than a neat resolution (Jon 4:9–11).</div>
+<div><b>Where Jonah’s story begins and ends:</b><br></div>
+<ul>
+<li>Begins with Jonah’s prophetic identity and call (2 Kings 14:25; Jon 1:1–2).</li>
+<li>Ends with God’s final question exposing Jonah’s heart and highlighting divine compassion (Jon 4:11).</li>
+</ul>
+<div><br></div>
+<div><b><h2>2) What Jonah Is Known For</h2></b></div>
+<div>Jonah is most known for being the prophet who <b>ran from God’s mission</b>, was <b>swallowed by a great fish</b>, and whose preaching sparked <b>mass repentance in Nineveh</b>—followed by Jonah’s anger at God’s mercy (Jon 1:3; 1:17; 3:4–10; 4:1–2).</div>
+<div><b>Headline descriptors</b><br></div>
+<ul>
+<li>Runaway prophet (Jon 1:3)</li>
+<li>Preacher to Nineveh (Jon 3:1–4)</li>
+<li>Recipient of dramatic deliverance (Jon 1:17; 2:10)</li>
+<li>Reluctant participant in Gentile repentance (Jon 3:5–10)</li>
+<li>Exposed by God’s compassion lesson (Jon 4:6–11)</li>
+<li>“Sign of Jonah” used by Jesus (Matt 12:39–41; Luke 11:29–32)</li>
+</ul>
+<div><br></div>
+<div><b><h2>3) Where Jonah Appears in the Bible</h2></b></div>
+<div><b><h2>Primary narrative locations</h2></b></div>
+<ul>
+<li><b>Jonah — 1:1–4:11</b> — Jonah’s call, flight, deliverance, preaching, Nineveh’s repentance, Jonah’s anger, God’s rebuke.</li>
+</ul>
+<div><b><h2>Secondary references / later mentions</h2></b></div>
+<ul>
+<li><b>2 Kings — 14:25</b> — Jonah son of Amittai prophesies in Jeroboam II’s era regarding Israel’s restoration of borders.</li>
+<li><b>Matthew — 12:39–41</b> — Jesus cites “the sign of Jonah” and Nineveh’s repentance as a witness against an unrepentant generation.</li>
+<li><b>Matthew — 16:4</b> — “Sign of Jonah” again in Jesus’ teaching.</li>
+<li><b>Luke — 11:29–32</b> — Jonah as a sign; Ninevites will rise in judgment because they repented at Jonah’s preaching.</li>
+<li><b>(Theme echoes)</b> Exodus 34:6–7; Joel 2:13 — the very mercy formula Jonah quotes (Jon 4:2).</li>
+</ul>
+<div><br></div>
+<div><b><h2>4) Vital Statistics</h2></b></div>
+<div><b>Historical setting (as Scripture indicates)</b><br></div>
+<ul>
+<li>Jonah is identified as a prophet in Israel during <b>Jeroboam II</b> (2 Kings 14:25). The book of Jonah does not explicitly date the Nineveh mission, but this anchor strongly suggests an 8th-century BC setting (uncertain beyond what Scripture states).</li>
+</ul>
+<div><b>Geography</b><br></div>
+<ul>
+<li><b>Gath-hepher</b> (implied by Jonah’s identity elsewhere; Scripture locates it in later tradition, but Jonah’s hometown is not stated in Jonah itself—so treat as <i>uncertain</i> from Jonah alone).</li>
+<li><b>Joppa</b> (departure port) (Jon 1:3)</li>
+<li><b>Tarshish</b> (intended destination, far from Nineveh) (Jon 1:3)</li>
+<li><b>The sea / “the depths”</b> (storm and drowning imagery) (Jon 1:4; 2:3–6)</li>
+<li><b>Nineveh</b> (mission field) (Jon 1:2; 3:2–3)</li>
+<li><b>East of Nineveh</b> (Jonah’s waiting place) (Jon 4:5)</li>
+</ul>
+<div><b>Family and relationships</b><br></div>
+<ul>
+<li><b>Father:</b> Amittai (Jon 1:1; 2 Kings 14:25)</li>
+<li>No spouse/children recorded.</li>
+<li>Key human interactions:</li>
+<ul>
+<li><b>Sailors</b> (Jon 1:4–16)</li>
+<li><b>Ninevites and their king</b> (Jon 3:5–9)</li>
+</ul>
+<li>Divine “relationships” in the narrative:</li>
+<ul>
+<li><b>The LORD</b> (caller, pursuer, deliverer, teacher) (Jon 1:1–2; 1:4; 2:10; 4:6–11)</li>
+<li><b>Appointed agents:</b> fish, plant, worm, wind (Jon 1:17; 4:6–8)</li>
+</ul>
+</ul>
+<div><b>Roles/offices</b><br></div>
+<ul>
+<li><b>Prophet</b> (Jon 1:1; 2 Kings 14:25)</li>
+</ul>
+<div><b>Key turning points</b><br></div>
+<ul>
+<li>Call to preach against Nineveh (Jon 1:1–2)</li>
+<li>Flight toward Tarshish (Jon 1:3)</li>
+<li>Storm confrontation and being cast into the sea (Jon 1:4–15)</li>
+<li>Being swallowed and praying from the fish (Jon 1:17–2:9)</li>
+<li>Second commission and obedience (Jon 3:1–3)</li>
+<li>Nineveh’s repentance and God’s relenting (Jon 3:5–10)</li>
+<li>Jonah’s anger and God’s corrective lesson (Jon 4:1–11)</li>
+</ul>
+<div><br></div>
+<div><b><h2>5) Pivotal Moments and Timeline (Chronological Table)</h2></b></div>
+<div><object><table cellspacing="0" cellpadding="0" style="border-collapse: collapse; direction: ltr">
+<tbody>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Event</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Reference</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Why it matters</b></div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jonah is commissioned to go to Nineveh</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jon 1:1–2</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>God’s mission targets a violent Gentile city; Jonah’s calling is explicit and direct.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jonah flees toward Tarshish from Joppa</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jon 1:3</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>The prophet’s rebellion sets the theological tension: can God’s servant outrun God?</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>God sends a great storm; Jonah is exposed</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jon 1:4–10</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>God’s sovereignty over creation confronts Jonah; pagans learn the Creator’s identity (Jon 1:9).</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jonah is thrown into the sea; storm stops; sailors fear the LORD</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jon 1:11–16</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jonah’s disobedience endangers others; yet God brings sailors to reverent fear and worship.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>God appoints a great fish; Jonah is inside “three days and three nights”</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jon 1:17</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Judgment and mercy intertwine—Jonah is both stopped and preserved.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jonah prays from the fish; vows renewed worship</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jon 2:1–9</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jonah turns to God in distress, confessing deliverance belongs to the LORD (Jon 2:9).</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jonah is delivered onto dry land</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jon 2:10</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>God’s mercy restores Jonah to mission rather than discarding him.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Second call; Jonah preaches in Nineveh</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jon 3:1–4</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Grace gives a second chance; Jonah becomes the reluctant messenger.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Nineveh repents; God relents of announced disaster</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jon 3:5–10</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>The “impossible” happens: a wicked city turns, and God shows mercy in response to repentance.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jonah is angry; admits he feared God’s mercy</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jon 4:1–2</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jonah’s theology is correct (Exod 34:6–7), but his heart resents grace to enemies.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Plant/worm/wind lesson; God’s final question</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jon 4:6–11</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>God exposes Jonah’s misplaced compassion and reveals his own compassionate character.</div>
+</td></tr>
+</tbody>
+</table></object><br></div>
+<div><b><h2>6) Strengths, Weaknesses, and Heart-Level Patterns</h2></b></div>
+<div><b><h2>Strengths (with textual evidence)</h2></b></div>
+<ul>
+<li><b>Clear theological knowledge of God’s character</b>: Jonah can articulate God’s mercy and patience (Jon 4:2).</li>
+<li><b>Honest prayer in crisis</b>: Jonah prays from the depths and acknowledges God’s deliverance (Jon 2:1–9; esp. 2:9).</li>
+<li><b>Eventual obedience to God’s word</b>: after the second call, Jonah goes to Nineveh and proclaims the message (Jon 3:1–4).</li>
+<li><b>Willingness to accept personal cost (partially)</b>: Jonah tells sailors to throw him into the sea (Jon 1:12). (Motives are mixed/unstated; the act is clear.)</li>
+</ul>
+<div><b><h2>Weaknesses / sins / blind spots</h2></b></div>
+<ul>
+<li><b>Direct disobedience to God’s commission</b>: Jonah flees “from the presence of the LORD” (Jon 1:3).</li>
+<li><b>Hard-hearted anger at mercy</b>: Jonah is “exceedingly displeased” when God relents (Jon 4:1) and grows angry enough to want death (Jon 4:3, 9).</li>
+<li><b>Distorted compassion / self-focus</b>: Jonah grieves the loss of a plant more than the possible destruction of a city (Jon 4:6–11).</li>
+<li><b>Resistance to God’s mission to outsiders</b>: Jonah’s own explanation—he fled because he expected God would show mercy (Jon 4:2)—reveals a deep reluctance toward grace for Nineveh.</li>
+</ul>
+<div><b><h2>Motives, fears, desires (careful inferences anchored to text)</h2></b></div>
+<ul>
+<li><b>Desire to avoid being the instrument of Nineveh’s mercy</b>: Jonah explicitly says his flight was because he knew God would be gracious and relent (Jon 4:2).</li>
+<li><b>Desire for judgment on Nineveh</b> (inference): Jonah’s anger at God’s relenting (Jon 4:1–2) and his waiting to “see what would become of the city” (Jon 4:5) fit a posture that hoped for judgment rather than mercy.</li>
+<li><b>Concern for personal comfort and reputation</b> (possible): Jonah’s grief over the plant and heat (Jon 4:6–8) shows comfort matters greatly to him in the moment; reputation isn’t stated, so treat that as uncertain.</li>
+</ul>
+<div><b><h2>What changes (or doesn’t) over time?</h2></b></div>
+<ul>
+<li><b>Change:</b> Jonah moves from flight to compliance—he does go and preach (Jon 1:3 → 3:1–4).</li>
+<li><b>Little change (or a slower change):</b> Jonah’s heart posture toward God’s mercy remains resistant; after Nineveh repents, Jonah is still angry, self-justifying, and needs God’s confrontation (Jon 4:1–11). The narrative ends with Jonah under God’s probing question rather than with Jonah’s explicit repentance (Jon 4:11).</li>
+</ul>
+<div><br></div>
+<div><b><h2>7) Victories and Challenges</h2></b></div>
+<div><b><h2>Major “wins” (with references)</h2></b></div>
+<ul>
+<li><b>Delivered from drowning and death</b>: God appoints the fish and rescues Jonah (Jon 1:17; 2:10).</li>
+<li><b>Prayer and renewed worship</b>: Jonah turns to the LORD in distress and confesses God as deliverer (Jon 2:1–9).</li>
+<li><b>Preaches God’s warning in Nineveh</b>: Jonah obeys the renewed call (Jon 3:1–4).</li>
+<li><b>City-wide repentance follows Jonah’s preaching</b>: Nineveh believes God and turns (Jon 3:5–9).</li>
+<li><b>God’s mercy displayed through Jonah’s ministry</b>: God relents in response to repentance (Jon 3:10).</li>
+</ul>
+<div><b><h2>Major challenges (with references)</h2></b></div>
+<ul>
+<li><b>Temptation to run from God’s calling</b>: Jonah flees immediately (Jon 1:3).</li>
+<li><b>Consequences of disobedience affecting others</b>: storm endangers the sailors (Jon 1:4–5, 11).</li>
+<li><b>Near-death descent imagery</b>: Jonah describes being overwhelmed and near Sheol (Jon 2:3–6).</li>
+<li><b>Anger, bitterness, and self-pity</b>: Jonah’s repeated “better for me to die” posture (Jon 4:3, 8–9).</li>
+<li><b>Opposition to God’s mercy</b>: Jonah resents grace for enemies (Jon 4:1–2).</li>
+</ul>
+<div><b>Cost and consequences highlighted</b><br></div>
+<ul>
+<li>Compromise/disobedience brings chaos and threat to others (Jon 1:4–15).</li>
+<li>Faithfulness (even reluctant) becomes the channel of mercy to many (Jon 3:4–10).</li>
+<li>God’s discipline is severe but purposeful, aimed at restoration and heart change (Jon 1:4; 1:17; 4:6–11).</li>
+</ul>
+<div><br></div>
+<div><b><h2>8) Essential Verses and Key Cross-References (Organized by Themes)</h2></b></div>
+<div><b><h2>Calling, mission, and obedience</h2></b></div>
+<ul>
+<li>Jon 1:1–3 — Call to Nineveh; flight to Tarshish.</li>
+<li>Jon 3:1–3 — Second call; Jonah goes.<b>Cross-references:</b><br></li>
+<li>Exod 34:6–7 — God’s mercy/justice character (echoed in Jon 4:2).</li>
+<li>Ps 139:7–10 — The futility of fleeing God’s presence (theme resonance).</li>
+</ul>
+<div><b><h2>God’s sovereignty over creation</h2></b></div>
+<ul>
+<li>Jon 1:4 — The LORD hurls a great wind.</li>
+<li>Jon 1:9 — Jonah confesses the Creator of sea and land.</li>
+<li>Jon 1:17 — God appoints a great fish.</li>
+<li>Jon 4:6–8 — God appoints plant, worm, and wind.<b>Cross-references:</b><br></li>
+<li>Ps 107:23–30 — The LORD stills storms and delivers sailors (thematic parallel).</li>
+<li>Job 38–41 (selected) — God’s rule over the sea and creatures (broad echo).</li>
+</ul>
+<div><b><h2>Repentance and mercy</h2></b></div>
+<ul>
+<li>Jon 3:5 — Nineveh believes God; fasting begins.</li>
+<li>Jon 3:8–9 — Turning from violence; hope in God’s relenting.</li>
+<li>Jon 3:10 — God sees their turning; relents of disaster.<b>Cross-references:</b><br></li>
+<li>Joel 2:13 — “Gracious… merciful… slow to anger…” (same mercy language).</li>
+<li>Jer 18:7–10 — God’s stated pattern: judgment announced may be withheld upon repentance.</li>
+</ul>
+<div><b><h2>Prayer from the depths and deliverance</h2></b></div>
+<ul>
+<li>Jon 2:1–2 — Jonah prays out of distress.</li>
+<li>Jon 2:6–9 — Deliverance belongs to the LORD.<b>Cross-references:</b><br></li>
+<li>Ps 18:4–6 — Crying out from distress; God hears.</li>
+<li>Ps 42:7 — “Deep calls to deep” (imagery resonance).</li>
+</ul>
+<div><b><h2>Heart exposure: anger, compassion, and God’s character</h2></b></div>
+<ul>
+<li>Jon 4:1–2 — Jonah angry; confesses God’s gracious character.</li>
+<li>Jon 4:10–11 — God contrasts Jonah’s pity with God’s pity for Nineveh.<b>Cross-references:</b><br></li>
+<li>Luke 15:25–32 — The resentful elder brother (thematic echo: anger at mercy).</li>
+<li>Mic 7:18 — God delights in steadfast love/mercy (theme resonance).</li>
+</ul>
+<div><b><h2>NT interpretation: the “sign of Jonah”</h2></b></div>
+<ul>
+<li>Matt 12:39–41 — Jonah as sign; Nineveh condemns unbelief.</li>
+<li>Luke 11:29–32 — Jonah’s preaching and the call to repentance.<b>Cross-reference:</b><br></li>
+<li>Matt 12:40 — “three days and three nights” pattern applied to Jesus’ burial/resurrection.</li>
+</ul>
+<div><br></div>
+<div><b><h2>9) Theology and Big Themes</h2></b></div>
+<div><b><h2>God’s character revealed</h2></b></div>
+<ul>
+<li><b>Sovereign Lord over creation and events</b>: God sends wind, controls the sea, appoints the fish, plant, worm, wind (Jon 1:4; 1:17; 4:6–8).</li>
+<li><b>Merciful and patient</b>: Jonah himself cites God as gracious, merciful, slow to anger, abounding in steadfast love (Jon 4:2; cf. Exod 34:6–7).</li>
+<li><b>Just yet responsive to repentance</b>: Nineveh’s evil matters (Jon 1:2), but God relents when they turn (Jon 3:10).</li>
+<li><b>Compassionate toward nations and the “other”</b>: God’s concern extends beyond Israel to a violent Gentile city and even its animals (Jon 4:11).</li>
+</ul>
+<div><b><h2>Mission, kingdom, and witness</h2></b></div>
+<ul>
+<li>God sends his prophet outward, confronting Israel’s narrowness and revealing a missional heartbeat (Jon 1:1–2; 3:1–4).</li>
+<li>Even pagan sailors become witnesses—fearing the LORD, offering sacrifice, making vows (Jon 1:16).</li>
+</ul>
+<div><b><h2>Human nature: sin, grace, repentance</h2></b></div>
+<ul>
+<li><b>Religious knowledge without aligned affections</b>: Jonah can confess true theology (Jon 1:9; 4:2) while resisting God’s priorities (Jon 1:3; 4:1).</li>
+<li><b>Repentance can appear where least expected</b>: Nineveh responds dramatically (Jon 3:5–9), while the prophet struggles to repent (Jon 4:1–11).</li>
+<li><b>Grace is offensive to the proud</b>: Jonah’s anger shows the scandal of mercy (Jon 4:1–2).</li>
+</ul>
+<div><br></div>
+<div><b><h2>10) How Jonah Points Us to Christ</h2></b></div>
+<div><b><h2>Typology explicitly used by Jesus: the “sign of Jonah”</h2></b></div>
+<div>Jesus directly connects Jonah’s three days in the fish to his own death and resurrection: “as Jonah was three days and three nights… so will the Son of Man…” (Matt 12:40; cf. Jon 1:17). The pattern is not merely survival, but a sign that authenticates God’s warning and calls for repentance (Matt 12:39–41; Luke 11:29–32).</div>
+<div><b><h2>“Greater than Jonah”</h2></b></div>
+<div>Jesus says the Ninevites repented at Jonah’s preaching, and “something greater than Jonah is here” (Matt 12:41). Jonah is a reluctant prophet; Jesus is the obedient Son who willingly gives himself (contrast implied by the comparison, Matt 12:41).</div>
+<div><b><h2>Gospel connections</h2></b></div>
+<ul>
+<li><b>Repentance in response to God’s word</b>: Nineveh’s response previews the gospel call—turning from evil and seeking mercy (Jon 3:8–10; Luke 11:32).</li>
+<li><b>God’s mercy to outsiders</b>: Jonah dramatizes God’s compassion beyond ethnic/national boundaries (Jon 4:11), aligning with the later global scope of God’s saving purpose (theme-level connection; see Matt 28:19).</li>
+</ul>
+<div><br></div>
+<div><b><h2>11) Lessons and Applications</h2></b></div>
+<div><b><h2>Examples to imitate</h2></b></div>
+<ol>
+<li><b>Take God’s call seriously</b>—running doesn’t cancel it; it multiplies pain (Jon 1:1–4).</li>
+<li><b>Confess God plainly in a confused world</b> (Jon 1:9).</li>
+<li><b>Pray from the depths</b>—when discipline exposes you, return to the LORD (Jon 2:1–2).</li>
+<li><b>Trust that salvation belongs to the LORD</b> (Jon 2:9).</li>
+<li><b>Obey the “second call”</b>—God’s mercy often gives another opportunity (Jon 3:1–3).</li>
+<li><b>Believe repentance matters</b>—God sees and responds to genuine turning (Jon 3:10).</li>
+</ol>
+<div><b><h2>Warnings to heed</h2></b></div>
+<ol>
+<li><b>Religious knowledge can coexist with deep rebellion</b> (Jon 4:2 with Jon 1:3).</li>
+<li><b>Beware anger at grace</b>—especially when God is merciful to those you dislike or fear (Jon 4:1–2).</li>
+<li><b>Don’t value comfort over compassion</b> (Jon 4:6–11).</li>
+<li><b>Don’t assume you’re the moral center of the story</b>—God’s final question re-centers Jonah (and us) on God’s heart (Jon 4:11).</li>
+</ol>
+<div><b><h2>Application areas</h2></b></div>
+<ul>
+<li><b>Personal holiness:</b> repent quickly; don’t “manage sin” by running (Jon 1:3; 3:10).</li>
+<li><b>Relationships:</b> watch for resentment when others receive mercy you wanted withheld (Jon 4:1–2).</li>
+<li><b>Prayer:</b> cultivate honest, Scripture-shaped prayer in distress (Jon 2:1–9).</li>
+<li><b>Suffering/discipline:</b> interpret God’s pursuit as purposeful, not merely punitive (Jon 1:4; 2:10; 4:6–11).</li>
+<li><b>Leadership/ministry:</b> your heart must match your message; preaching can be used by God even when the preacher is conflicted—but that is not a safe place to stay (Jon 3:4–10; 4:1–11).</li>
+</ul>
+<div><br></div>
+<div><b><h2>12) Discussion and Reflection Questions (10–20)</h2></b></div>
+<div><b><h2>Personal reflection</h2></b></div>
+<ol>
+<li>Where are you currently tempted to “go to Tarshish” instead of obeying God (Jon 1:3)?</li>
+<li>What do you learn about God’s pursuit from the storm and the fish (Jon 1:4; 1:17)?</li>
+<li>How does Jonah’s prayer shape your own language for crisis (Jon 2:1–9)?</li>
+<li>What does Jonah 2:9 (“salvation belongs to the LORD”) correct in your thinking?</li>
+<li>Do you ever feel angry at God’s mercy toward others? What triggers it (Jon 4:1–2)?</li>
+</ol>
+<div><b><h2>Small group discussion</h2></b></div>
+<ol>
+<li>Compare the sailors’ spiritual movement with Jonah’s in chapter 1 (Jon 1:5–16). What surprises you?</li>
+<li>What elements of Nineveh’s repentance stand out (Jon 3:5–9)? What might “turning from violence” look like today (Jon 3:8)?</li>
+<li>Why might God end the book with a question (Jon 4:11)? What effect does that have on the reader?</li>
+</ol>
+<div><b><h2>Deep study (text-observation)</h2></b></div>
+<ol>
+<li>Track what God “appoints” in the narrative (fish/plant/worm/wind). What is each appointed thing meant to accomplish (Jon 1:17; 4:6–8)?</li>
+<li>What does Jonah say about God that is true (Jon 4:2), and why does that truth make him angry?</li>
+<li>What contrasts do you see between Jonah’s pity (Jon 4:10) and God’s pity (Jon 4:11)?</li>
+<li>How does Jonah’s waiting “to see what would become of the city” function in the story (Jon 4:5)?</li>
+<li>What do Jesus’ references to Jonah add to your understanding of Jonah’s significance (Matt 12:39–41; Luke 11:29–32)?</li>
+</ol>
+<div><b><h2>Application/formation</h2></b></div>
+<ol>
+<li>Where do you need to align your affections with your theology (Jon 4:2–3)?</li>
+<li>How can your community cultivate compassion for “Nineveh” places/people today (Jon 4:11)?</li>
+<li>In what ways might repentance be more likely among “outsiders” than among insiders—and why (Jon 3:5–10; Matt 12:41)?</li>
+</ol>
+<div><br></div>
+<div><b><h2>13) Prayer Response</h2></b></div>
+<div>Lord, you are the God of heaven who made the sea and the dry land (Jon 1:9). Forgive me for the ways I run from your word and resist your compassion (Jon 1:3; 4:1–2). In distress, teach me to pray and to trust that salvation belongs to you alone (Jon 2:1–2, 9). Give me a heart that rejoices in your mercy, even toward those I struggle to love (Jon 4:10–11). Make me quick to obey your call and quick to repent when you expose my sin (Jon 3:1–3, 10). Through Jesus—the One greater than Jonah—grant me resurrection hope and true repentance (Matt 12:40–41). Amen.</div>
+<!-- /notesbridge:apple-html -->

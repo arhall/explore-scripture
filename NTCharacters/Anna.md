@@ -1,0 +1,244 @@
+---
+notesbridge_uid: 33be3010-1a53-42d1-b8b2-adc08bb2205d
+apple_notes_id: x-coredata://FEE55BCF-3869-47B1-B2C2-EA92DFBAB0C4/ICNote/p3841
+apple_folder_path: iCloud/Bible Character Studies/NT
+last_sync_hash: b049d27d368e3a14aa4a7fc6d027b3526a786a99b183018cd471ba889dd1b927
+last_sync_at: 2025-12-31T04:09:45Z
+---
+<!-- notesbridge:apple-html -->
+<div><h1>Anna</h1></div>
+<div><br></div>
+<div><b><h1>Anna (Prophetess) — Bible Character Study</h1></b></div>
+<div><b><h2>1) Story Summary (Chronological)</h2></b></div>
+<div>Anna appears briefly but powerfully at the climax of Luke’s infancy narrative. She is introduced as <b>“a prophetess”</b> from the <b>tribe of Asher</b>, living as a long-term widow devoted to worship (Luke 2:36–37). At the very moment Simeon blesses God over the infant Jesus, <b>Anna comes up “at that very hour,” gives thanks to God, and begins speaking about Jesus</b> to those in Jerusalem who were <b>“waiting for the redemption of Jerusalem”</b> (Luke 2:38).</div>
+<div><b>Where her story begins and ends:</b> Her entire biblical record is contained in <b>Luke 2:36–38</b>.</div>
+<div><br></div>
+<div><b><h2>2) What She’s Known For</h2></b></div>
+<div>Anna is most known for being a faithful, prayerful, prophetic witness who recognizes Jesus as the long-awaited Redeemer and publicly testifies to Him.</div>
+<div><b>Headlines (3–7):</b><br></div>
+<ul>
+<li><b>Prophetess in Israel</b> (Luke 2:36)</li>
+<li><b>Elderly widow marked by devotion</b> (Luke 2:36–37)</li>
+<li><b>Persistent worshiper—fasting and prayer “night and day”</b> (Luke 2:37)</li>
+<li><b>Part of the faithful remnant “waiting” for redemption</b> (Luke 2:38)</li>
+<li><b>Gives thanks to God upon seeing Jesus</b> (Luke 2:38)</li>
+<li><b>Evangelizes: speaks of the child to others</b> (Luke 2:38)</li>
+</ul>
+<div><br></div>
+<div><b><h2>3) Where She Appears in the Bible</h2></b></div>
+<div><b><h2>Primary narrative location</h2></b></div>
+<ul>
+<li><b>Luke — 2:36–38</b> — Anna is introduced, worships continually, recognizes Jesus, gives thanks, and speaks of Him to those awaiting redemption.</li>
+</ul>
+<div><b><h2>Secondary references</h2></b></div>
+<ul>
+<li><b>None explicitly</b> (Anna is not mentioned elsewhere by name).</li>
+</ul>
+<div><br></div>
+<div><b><h2>4) Vital Statistics</h2></b></div>
+<div><b>Historical setting (as Scripture indicates):</b><br></div>
+<ul>
+<li>During the infancy of Jesus, at the time of His presentation in the temple (Luke 2:22–24). This is within the early reign period of the Roman era in Judea as implied by Luke’s larger narrative framework (Luke 1:5), though Anna’s scene itself is localized to the temple (Luke 2:27–38).</li>
+</ul>
+<div><b>Geography (strongly associated):</b><br></div>
+<ul>
+<li><b>Jerusalem temple</b> — “She did not depart from the temple” (Luke 2:37).</li>
+<li><b>Jerusalem</b> — her audience includes those waiting for “the redemption of Jerusalem” (Luke 2:38).</li>
+</ul>
+<div><b>Family and relationships:</b><br></div>
+<ul>
+<li><b>Father:</b> Phanuel (Luke 2:36).</li>
+<li><b>Tribe:</b> Asher (Luke 2:36).</li>
+<li><b>Husband:</b> unnamed; marriage lasted <b>seven years</b> (Luke 2:36).</li>
+<li><b>Key associations in the narrative:</b> Simeon (shared scene, same temple moment; Luke 2:25–35, 38), Mary and Joseph (presenting Jesus; Luke 2:22–24, 27, 33–35).</li>
+</ul>
+<div><b>Roles/offices:</b><br></div>
+<ul>
+<li><b>Prophetess</b> (Luke 2:36).</li>
+<li><b>Worshiper/intercessor</b> characterized by <b>fasting and prayer</b> (Luke 2:37).</li>
+<li><b>Witness/evangelist</b> to those awaiting redemption (Luke 2:38).</li>
+</ul>
+<div><b>Key turning points:</b><br></div>
+<ul>
+<li><b>Recognition of the Messiah</b> at Jesus’ presentation (Luke 2:27–28, 36–38).</li>
+<li><b>Public testimony</b> to the expectant community (Luke 2:38).</li>
+</ul>
+<div><b>Note on uncertain detail (age):</b> Luke states either (a) she was <b>84 years old</b>, or (b) she had been a <b>widow for 84 years</b>, depending on how one takes the phrase in Luke 2:37. The text clearly presents her as “advanced in years” either way (Luke 2:36–37). Because translations differ, treat precise age as <b>uncertain</b> while affirming her great age and long widowhood as <b>explicit</b> (Luke 2:36–37).</div>
+<div><br></div>
+<div><b><h2>5) Pivotal Moments and Timeline (Chronological Table)</h2></b></div>
+<div><object><table cellspacing="0" cellpadding="0" style="border-collapse: collapse; direction: ltr">
+<tbody>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Event</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Reference</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Why it matters</b></div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Anna is introduced: prophetess, daughter of Phanuel, tribe of Asher; advanced in years</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Luke 2:36</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Establishes her credibility: a recognized prophetic figure within Israel and a living testimony of faithfulness across decades.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Her life of devotion is described: widowhood, continual temple presence, fasting and prayer</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Luke 2:37</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Shows the <i>posture</i> of her life—persistent worship and dependence upon God, shaping her readiness to recognize God’s salvation.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>She arrives “at that very hour,” gives thanks to God upon seeing Jesus</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Luke 2:38</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Signals divine timing: her praise functions as a second witness confirming Jesus’ identity in the temple.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>She speaks about Jesus to those waiting for Jerusalem’s redemption</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Luke 2:38</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Her prophetic ministry turns outward—she becomes a herald to the expectant remnant, linking Jesus to redemption hopes.</div>
+</td></tr>
+</tbody>
+</table></object><br></div>
+<div><b><h2>6) Strengths, Weaknesses, and Heart-Level Patterns</h2></b></div>
+<div><b><h2>Strengths (with textual grounding)</h2></b></div>
+<ul>
+<li><b>Spiritual vigilance / readiness:</b> She is present “at that very hour,” poised to respond when God’s salvation is revealed (Luke 2:38).</li>
+<li><b>Persevering devotion:</b> “Did not depart from the temple, worshiping with fasting and prayer night and day” (Luke 2:37).</li>
+<li><b>Gratitude-centered faith:</b> “She began to give thanks to God” upon encountering Jesus (Luke 2:38).</li>
+<li><b>Witness-bearing courage:</b> “Spoke of him to all who were waiting for the redemption of Jerusalem” (Luke 2:38).</li>
+</ul>
+<div><b><h2>Weaknesses / sins / blind spots</h2></b></div>
+<ul>
+<li><b>None are recorded.</b> Scripture does not attribute moral failure or rebuke to Anna (Luke 2:36–38). We should not invent flaws.</li>
+</ul>
+<div><b><h2>Motives / fears / desires (careful inferences anchored to the text)</h2></b></div>
+<ul>
+<li><b>Desire for God’s redemption:</b> Her audience is defined as those “waiting for the redemption of Jerusalem,” implying she shares and serves that hope (Luke 2:38; cf. Luke 2:25).</li>
+<li><b>God-centered longing expressed through worship:</b> Her pattern of fasting and prayer suggests sustained dependence and longing for God’s action (Luke 2:37; cf. 1 Tim 5:5).</li>
+</ul>
+<div><b><h2>What changes (or doesn’t) over time?</h2></b></div>
+<ul>
+<li><b>What doesn’t change:</b> Decades of steady devotion—fasting, prayer, worship (Luke 2:37).</li>
+<li><b>What changes:</b> Her hidden life of worship becomes <b>public testimony</b> when Christ appears—she moves from continual intercession to active proclamation (Luke 2:38).</li>
+</ul>
+<div><br></div>
+<div><b><h2>7) Victories and Challenges</h2></b></div>
+<div><b><h2>Major “wins” (obedience, faith, influence)</h2></b></div>
+<ul>
+<li><b>A lifetime of steadfast worship:</b> She persists in fasting and prayer “night and day” (Luke 2:37).</li>
+<li><b>Recognizes and rejoices in God’s salvation:</b> She thanks God upon seeing Jesus (Luke 2:38; cf. Luke 2:30–32).</li>
+<li><b>Becomes a messenger to the waiting remnant:</b> She speaks of Jesus to those awaiting redemption (Luke 2:38).</li>
+</ul>
+<div><b><h2>Major challenges (suffering, cost, adversity)</h2></b></div>
+<ul>
+<li><b>Widowhood and long years:</b> She experienced the loss of her husband after a short marriage (seven years) and lived many years as a widow (Luke 2:36–37).</li>
+<li><b>The cost of consecration:</b> Continual worship and disciplines (fasting/prayer) imply ongoing self-denial and persistence rather than ease (Luke 2:37; cf. Luke 18:1).</li>
+</ul>
+<div><br></div>
+<div><b><h2>8) Essential Verses and Key Cross-References (Organized by Theme)</h2></b></div>
+<div><b><h2>Waiting, hope, and redemption</h2></b></div>
+<ul>
+<li><b>Luke 2:38</b> — She speaks of Jesus to those waiting for Jerusalem’s redemption.</li>
+<li><b>Luke 2:25</b> — Simeon waits for the “consolation of Israel” (parallel hope-context).</li>
+<li><b>Isaiah 52:9</b> — The LORD comforts and redeems Jerusalem.</li>
+<li><b>Isaiah 59:20</b> — A Redeemer comes to Zion.</li>
+<li><b>Luke 1:68</b> — God “has visited and redeemed his people.”</li>
+</ul>
+<div><b><h2>Worship, prayer, and perseverance</h2></b></div>
+<ul>
+<li><b>Luke 2:37</b> — Worshiping with fasting and prayer night and day.</li>
+<li><b>Luke 18:1</b> — Always to pray and not lose heart.</li>
+<li><b>1 Thessalonians 5:17</b> — “Pray without ceasing.”</li>
+<li><b>1 Timothy 5:5</b> — The godly widow continues in supplications and prayers night and day.</li>
+<li><b>Psalm 27:4</b> — Seeking to dwell in the house of the LORD.</li>
+<li><b>Psalm 84:1–2</b> — Longing for the courts of the LORD.</li>
+</ul>
+<div><b><h2>Prophetic witness and confession</h2></b></div>
+<ul>
+<li><b>Luke 2:36</b> — “A prophetess.”</li>
+<li><b>Luke 2:38</b> — She speaks of Him to others.</li>
+<li><b>Deuteronomy 19:15</b> — Establishing matters by witnesses (conceptually echoed as Simeon + Anna testify).</li>
+<li><b>Isaiah 40:9–11</b> — Good news of God’s coming shepherd-king (fits the “speaking” and announcement pattern).</li>
+</ul>
+<div><b><h2>Christ in the temple / fulfillment</h2></b></div>
+<ul>
+<li><b>Luke 2:22–24, 27–28</b> — The temple presentation context.</li>
+<li><b>Malachi 3:1</b> — The Lord comes to His temple.</li>
+<li><b>John 1:14</b> — The Word “tabernacled” among us (fulfillment of dwelling-with-God theme).</li>
+</ul>
+<div><br></div>
+<div><b><h2>9) Theology and Big Themes</h2></b></div>
+<div><b><h2>God’s character revealed</h2></b></div>
+<ul>
+<li><b>Faithfulness to promises:</b> God brings redemption in the very place of worship and promise (Luke 2:22–24, 27–38).</li>
+<li><b>Tenderness to the lowly:</b> God uses an elderly widow—socially vulnerable—to recognize and announce the Messiah (Luke 2:36–38; cf. Luke 1:52–53).</li>
+<li><b>Providential timing:</b> “At that very hour” underscores God’s orchestration (Luke 2:38).</li>
+</ul>
+<div><b><h2>Covenant, worship, and the faithful remnant</h2></b></div>
+<ul>
+<li>Anna embodies the <b>remnant posture</b>: waiting, praying, worshiping, longing for redemption (Luke 2:37–38; cf. Luke 2:25).</li>
+<li>The temple setting highlights <b>continuity and fulfillment</b>: Israel’s worship space becomes the stage for recognizing the One who brings salvation (Luke 2:27–38).</li>
+</ul>
+<div><b><h2>Human nature: suffering and perseverance</h2></b></div>
+<ul>
+<li>Her widowhood and long devotion show that suffering can deepen dependence rather than extinguish hope (Luke 2:36–37).</li>
+<li>Her life illustrates perseverance in spiritual disciplines as a means God uses to prepare hearts to recognize Christ (Luke 2:37–38).</li>
+</ul>
+<div><br></div>
+<div><b><h2>10) How Anna Points Us to Christ</h2></b></div>
+<div><b><h2>A faithful-witness pattern that centers on Jesus</h2></b></div>
+<ul>
+<li>Anna functions as a <b>Spirit-timed witness</b> who recognizes Christ and testifies publicly (Luke 2:38). In Luke’s narrative, she stands alongside Simeon as a confirming voice that <b>God’s salvation has arrived</b> (Luke 2:25–32, 38).</li>
+</ul>
+<div><b><h2>Redemption hope fulfilled in Jesus</h2></b></div>
+<ul>
+<li>She speaks to those waiting for “the redemption of Jerusalem” (Luke 2:38). Luke frames Jesus as the answer to redemption-longing (Luke 1:68; 2:30–32).</li>
+<li>Old Testament redemption promises for Zion/Jerusalem (e.g., Isa 52:9; 59:20) find their trajectory in the Messiah she proclaims (Luke 2:38).</li>
+</ul>
+<div><b><h2>Temple fulfillment trajectory</h2></b></div>
+<ul>
+<li>The Messiah is recognized <b>in the temple</b> (Luke 2:27–38), resonating with the expectation of the Lord’s coming to His temple (Mal 3:1). Anna’s presence highlights that true temple worship leads to Christ—not away from Him.</li>
+</ul>
+<div><br></div>
+<div><b><h2>11) Lessons and Applications (8–15, tied to Scripture)</h2></b></div>
+<ol>
+<li><b>Long obedience can prepare you to recognize God’s decisive work.</b> Anna’s decades of worship precede her clear recognition of Jesus (Luke 2:37–38).</li>
+<li><b>Suffering doesn’t disqualify you; God often turns it into ministry.</b> Her widowhood frames her devotion and witness (Luke 2:36–38).</li>
+<li><b>Persistent prayer is a posture of hope, not passivity.</b> “Night and day” prayer and fasting show active waiting (Luke 2:37; cf. Luke 18:1).</li>
+<li><b>Gratitude is a fitting response to Christ.</b> Her first recorded reaction is thanksgiving (Luke 2:38).</li>
+<li><b>Speak of Christ to other “waiters.”</b> She targeted those longing for redemption (Luke 2:38).</li>
+<li><b>God delights to use overlooked people as heralds.</b> An elderly widow becomes a public witness in the temple (Luke 2:36–38; cf. Luke 1:52).</li>
+<li><b>True worship culminates in testimony.</b> Devotion to God leads Anna to proclaim the Messiah (Luke 2:37–38).</li>
+<li><b>The church should honor and learn from faithful older saints.</b> Anna’s maturity and fruitfulness in old age are highlighted, not sidelined (Luke 2:36–38).</li>
+<li><b>Don’t measure spiritual significance by length of “screen time” in Scripture.</b> Three verses reveal a lifetime of faithfulness (Luke 2:36–38).</li>
+<li><b>Center your hopes on God’s redemption, not circumstances.</b> Her hope is “redemption” even after loss (Luke 2:38).</li>
+</ol>
+<div><b><h2>Warnings to heed</h2></b></div>
+<ul>
+<li><b>Don’t let disappointment harden into silence.</b> Anna’s suffering did not stop her worship or witness (Luke 2:36–38).</li>
+<li><b>Don’t confuse waiting with inactivity.</b> Biblical waiting often looks like prayerful, worshipful perseverance (Luke 2:37; cf. Luke 18:1).</li>
+</ul>
+<div><b><h2>Examples to imitate</h2></b></div>
+<ul>
+<li><b>Persevering prayer and worship</b> (Luke 2:37).</li>
+<li><b>Immediate thanksgiving and bold speech about Christ</b> (Luke 2:38).</li>
+</ul>
+<div><br></div>
+<div><b><h2>12) Discussion and Reflection Questions (10–20)</h2></b></div>
+<div><b><h2>Personal reflection</h2></b></div>
+<ol>
+<li>What does “waiting for redemption” look like in your current season (Luke 2:38)?</li>
+<li>Where has suffering tempted you to withdraw, and how does Anna challenge that (Luke 2:36–37)?</li>
+<li>What rhythms of prayer could help you “not lose heart” (Luke 2:37; Luke 18:1)?</li>
+<li>Is thanksgiving your reflex when you consider Christ, or do other emotions dominate (Luke 2:38)?</li>
+<li>Who around you is “waiting”—open, hungry, searching—and how can you speak of Jesus to them (Luke 2:38)?</li>
+</ol>
+<div><b><h2>Small group discussion</h2></b></div>
+<ol>
+<li>How do Simeon and Anna together model “witness” in Luke’s infancy narrative (Luke 2:25–32, 38)?</li>
+<li>What might it cost to cultivate the kind of spiritual attentiveness Anna displays (Luke 2:37)?</li>
+<li>How can a church better honor and mobilize older saints for ministry (Luke 2:36–38)?</li>
+</ol>
+<div><b><h2>Deep study (text-observation)</h2></b></div>
+<ol>
+<li>What details does Luke choose to include about Anna, and what does he omit (Luke 2:36–38)? Why might that matter?</li>
+<li>What is the significance of “at that very hour” in Luke 2:38?</li>
+<li>What do “fasting” and “prayer” communicate about her desires and priorities (Luke 2:37)?</li>
+<li>Who are “all who were waiting for the redemption of Jerusalem,” and how does that phrase shape Anna’s audience (Luke 2:38; cf. Luke 2:25)?</li>
+<li>How does Anna’s temple-centered devotion relate to the theme of fulfillment in Luke 2 (Luke 2:22–24, 27–38)?</li>
+</ol>
+<div><br></div>
+<div><b><h2>13) Prayer Response</h2></b></div>
+<div>Lord God, You are faithful to redeem, and You keep Your promises in Your perfect time (Luke 2:38). Make us steadfast in worship—people of prayer who do not lose heart (Luke 2:37; Luke 18:1). Teach us to give thanks when we behold Christ and to speak of Him to those who are waiting and weary (Luke 2:38). Use our seasons of loss and longing to deepen our hope in Your salvation. Through Jesus our Redeemer, amen (Luke 1:68; Luke 2:30–32).</div>
+<!-- /notesbridge:apple-html -->

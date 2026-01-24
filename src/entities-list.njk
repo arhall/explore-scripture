@@ -37,6 +37,27 @@ permalink: '/entities/'
             <option value="figure">Figures</option>
             <option value="event">Events</option>
             <option value="group">Groups</option>
+            <option value="concept">Concepts</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="studyFilter">Character Study:</label>
+          <select id="studyFilter" onchange="filterEntities()">
+            <option value="">All</option>
+            <option value="yes">Has Study</option>
+            <option value="no">No Study</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="testamentFilter">Testament:</label>
+          <select id="testamentFilter" onchange="filterEntities()">
+            <option value="">All</option>
+            <option value="OT">Old Testament</option>
+            <option value="NT">New Testament</option>
+            <option value="Both">Both</option>
+            <option value="Unknown">Unknown</option>
           </select>
         </div>
 
@@ -118,6 +139,7 @@ permalink: '/entities/'
     figure: { icon: '🔷', color: '#50C8FF', label: 'Figure' },
     event: { icon: '⚡', color: '#FF6B35', label: 'Event' },
     group: { icon: '👥', color: '#BD10E0', label: 'Group' },
+    concept: { icon: '💡', color: '#14B8A6', label: 'Concept' },
   };
 
   async function loadAllEntities() {
@@ -154,6 +176,9 @@ permalink: '/entities/'
         total_refs: entity.references || 0,
         book_count: entity.books ? entity.books.length : 0,
         books: entity.books || [],
+        testament: entity.testament || 'Unknown',
+        testaments: entity.testaments || [],
+        hasCharacterStudy: Boolean(entity.hasCharacterStudy),
         role: entity.type || 'Biblical figure',
         book_references: entity.books
           ? entity.books.map(book => ({
@@ -209,6 +234,8 @@ permalink: '/entities/'
     const searchTerm = document.getElementById('entitySearch').value.toLowerCase();
     const typeFilter = document.getElementById('typeFilter').value;
     const bookFilter = document.getElementById('bookFilter').value;
+    const studyFilter = document.getElementById('studyFilter').value;
+    const testamentFilter = document.getElementById('testamentFilter').value;
 
     filteredEntities = allEntities.filter(entity => {
       // Search filter
@@ -220,11 +247,19 @@ permalink: '/entities/'
       // Type filter
       const matchesType = !typeFilter || entity.type === typeFilter;
 
+      // Character study filter
+      const matchesStudy =
+        !studyFilter ||
+        (studyFilter === 'yes' ? entity.hasCharacterStudy : !entity.hasCharacterStudy);
+
+      // Testament filter
+      const matchesTestament = !testamentFilter || entity.testament === testamentFilter;
+
       // Book filter
       const matchesBook =
         !bookFilter || entity.book_references.some(ref => ref.book === bookFilter);
 
-      return matchesSearch && matchesType && matchesBook;
+      return matchesSearch && matchesType && matchesStudy && matchesTestament && matchesBook;
     });
 
     // Reset pagination
@@ -240,6 +275,8 @@ permalink: '/entities/'
       window.telemetry.recordUserAction('entities-filter', 'applied', {
         searchTerm: searchTerm,
         typeFilter: typeFilter,
+        studyFilter: studyFilter,
+        testamentFilter: testamentFilter,
         bookFilter: bookFilter,
         resultCount: filteredEntities.length,
       });
@@ -428,6 +465,20 @@ permalink: '/entities/'
     if (bookParam) {
       const bookFilterSelect = document.getElementById('bookFilter');
       bookFilterSelect.value = bookParam;
+    }
+
+    // Handle character study filter
+    const studyParam = urlParams.get('study');
+    if (studyParam) {
+      const studyFilterSelect = document.getElementById('studyFilter');
+      studyFilterSelect.value = studyParam;
+    }
+
+    // Handle testament filter
+    const testamentParam = urlParams.get('testament');
+    if (testamentParam) {
+      const testamentFilterSelect = document.getElementById('testamentFilter');
+      testamentFilterSelect.value = testamentParam;
     }
 
     // Handle search

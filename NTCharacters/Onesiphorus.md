@@ -1,0 +1,247 @@
+---
+notesbridge_uid: 7061a81a-8cec-4490-b5bf-e57546d8240d
+apple_notes_id: x-coredata://FEE55BCF-3869-47B1-B2C2-EA92DFBAB0C4/ICNote/p3923
+apple_folder_path: iCloud/Bible Character Studies/NT
+last_sync_hash: 26acaa020cc8382097271cd98a8823f9e6e816b78a4a5a598187ee5f2589db96
+last_sync_at: 2025-12-31T04:54:34Z
+---
+<!-- notesbridge:apple-html -->
+<div><b><h1>Onesiphorus</h1></b></div>
+<div><b><h1><br></h1></b></div>
+<div><b><h1>Onesiphorus — Bible Character Study</h1></b></div>
+<div><b><h2>1) Story Summary (chronological)</h2></b></div>
+<div>Onesiphorus appears late in the New Testament story, during the apostle Paul’s final known imprisonment in Rome (commonly associated with Paul’s “second” Roman imprisonment). In a letter written to Timothy, Paul contrasts widespread desertion in Asia with the faithful, courageous loyalty of Onesiphorus. Paul recalls how Onesiphorus <i>often refreshed</i> him, <i>was not ashamed</i> of Paul’s chains, and <i>searched diligently</i> in Rome until he found Paul and ministered to him. Paul then prays that the Lord would grant mercy to Onesiphorus and his household—both in the present and “on that day” (the day of the Lord’s final reckoning). (2 Tim 1:15–18)</div>
+<div>By the end of the letter, Paul again sends greetings to “the household of Onesiphorus,” placing Onesiphorus’s family in the community Timothy knows (very likely in or near Ephesus, where Timothy was serving). (2 Tim 4:19; cf. 1 Tim 1:3)</div>
+<div><b>Where his story begins and ends in the Bible:</b><br></div>
+<ul>
+<li>Begins: Paul’s commendation and prayer for him (2 Tim 1:16–18)</li>
+<li>Ends: Greeting to his household (2 Tim 4:19)</li>
+</ul>
+<div><b><h2>2) What They’re Known For</h2></b></div>
+<div>Onesiphorus is most known for <b>fearless support of a suffering apostle</b>—a model of steadfast, practical love when public association with Paul carried risk.</div>
+<div><b>Headline descriptors</b><br></div>
+<ul>
+<li><b>“Not ashamed of Paul’s chains”</b> (2 Tim 1:16)</li>
+<li><b>A refresher/encourager</b> to a weary servant (2 Tim 1:16)</li>
+<li><b>A diligent seeker</b> who searched until he found Paul (2 Tim 1:17)</li>
+<li><b>A courageous friend in Rome</b> when others deserted (2 Tim 1:15–17)</li>
+<li><b>A faithful servant in Ephesus</b> (2 Tim 1:18)</li>
+<li><b>A household leader with an identifiable family community</b> (“household of Onesiphorus”) (2 Tim 1:16; 4:19)</li>
+</ul>
+<div><b><h2>3) Where They Appear in the Bible</h2></b></div>
+<div><b><h2>Primary narrative locations</h2></b></div>
+<ul>
+<li><b>2 Timothy — 1:16–18</b> — Paul recounts Onesiphorus’s mercy, courage, and help to him in Rome; Paul prays mercy over him and his household.</li>
+<li><b>2 Timothy — 4:19</b> — Paul greets “the household of Onesiphorus.”</li>
+</ul>
+<div><b><h2>Secondary references (context that frames him)</h2></b></div>
+<ul>
+<li><b>2 Timothy — 1:15</b> — Onesiphorus is contrasted with desertion in Asia (“all who are in Asia turned away from me…”).</li>
+<li><b>1 Timothy — 1:3</b> — Timothy’s placement in <b>Ephesus</b> provides background for Onesiphorus’s known service there (2 Tim 1:18).</li>
+</ul>
+<div><b><h2>4) Vital Statistics</h2></b></div>
+<ul>
+<li><b>Historical setting:</b> Late apostolic era; Paul writing from imprisonment in <b>Rome</b> near the end of his ministry (2 Tim 1:8, 16–17; 4:6–8).</li>
+<li><b>Geography (associated places):</b><br></li>
+<ul>
+<li><b>Rome</b> — where he sought out Paul and found him (2 Tim 1:17)</li>
+<li><b>Ephesus</b> — where Timothy ministered and where Onesiphorus had rendered notable service (2 Tim 1:18; cf. 1 Tim 1:3)</li>
+</ul>
+<li><b>Family and relationships:</b><br></li>
+<ul>
+<li><b>Household/family</b> explicitly mentioned (2 Tim 1:16; 4:19)</li>
+<li><b>Ally/relationship:</b> a benefactor and friend to Paul (2 Tim 1:16–17)</li>
+</ul>
+<li><b>Roles/offices:</b> Not given a formal office title in the text; functionally he acts as a <b>faithful disciple</b>, <b>supporter</b>, <b>servant/helper</b>, and <b>courageous advocate</b> for Paul (2 Tim 1:16–18).</li>
+<li><b>Key turning points (explicit/implicit):</b><br></li>
+<ul>
+<li>Choosing <b>public solidarity</b> with an imprisoned apostle (2 Tim 1:16)</li>
+<li>Traveling/searching in <b>Rome</b> until he found Paul (2 Tim 1:17)</li>
+<li>Ongoing pattern of <b>service in Ephesus</b> (2 Tim 1:18)</li>
+</ul>
+</ul>
+<div><b>Uncertainties to note (stick to the text):</b>Some readers infer Onesiphorus may have been deceased by the time of writing because Paul repeatedly mentions his “household” (2 Tim 1:16; 4:19) and offers a prayer oriented to “that day” (2 Tim 1:18). The text <b>does not explicitly say</b> he had died; it only clearly states Paul’s prayer and his household’s presence. Treat this as <b>uncertain</b>.</div>
+<div><b><h2>5) Pivotal Moments and Timeline (chronological)</h2></b></div>
+<div><object><table cellspacing="0" cellpadding="0" style="border-collapse: collapse; direction: ltr">
+<tbody>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Event</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Reference</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Why it matters</b></div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Many in Asia turn away from Paul; Onesiphorus stands out</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Tim 1:15–16</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>The narrative frames faithfulness under pressure: Onesiphorus is highlighted as a counterexample to desertion.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Onesiphorus “often refreshed” Paul and was not ashamed of his chains</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Tim 1:16</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>He embodies courageous, practical love when association with Paul carried social and legal danger.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>He arrives in Rome and searches “very earnestly” until he finds Paul</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Tim 1:17</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Persistence + risk: he does not merely sympathize from afar; he acts sacrificially to locate and help Paul.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Paul recalls Onesiphorus’s service “at Ephesus”</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Tim 1:18</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>His faithfulness is not a one-off heroic moment; it appears to be a consistent pattern of service.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Paul prays mercy for Onesiphorus and his household; mercy “on that day”</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Tim 1:16, 18</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Paul interprets such loyalty through an eternal lens—future vindication and mercy from the Lord.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Paul greets “the household of Onesiphorus” in final instructions</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Tim 4:19</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Shows the household’s continued connection to the church and to Timothy’s sphere of ministry.</div>
+</td></tr>
+</tbody>
+</table></object><br></div>
+<div><b><span style="font-size: 16px">6) Strengths, Weaknesses, and Heart-Level Patterns</span></b></div>
+<div><b><h2>Strengths (evidenced qualities)</h2></b></div>
+<ul>
+<li><b>Courage (unashamed loyalty):</b> “he was not ashamed of my chains” (2 Tim 1:16).</li>
+<li><b>Mercy and generosity:</b> “may the Lord grant mercy to the household of Onesiphorus… he often refreshed me” (2 Tim 1:16).</li>
+<li><b>Persevering diligence:</b> “he searched for me earnestly and found me” (2 Tim 1:17).</li>
+<li><b>Servant-hearted ministry:</b> “how much service he rendered at Ephesus—you know very well” (2 Tim 1:18).</li>
+<li><b>Long-haul faithfulness (pattern not moment):</b> Paul’s language suggests repeated actions (“often refreshed,” “how much service”) (2 Tim 1:16, 18).</li>
+</ul>
+<div><b><h2>Weaknesses / sins / blind spots (what Scripture shows)</h2></b></div>
+<div>Scripture records <b>no specific failures</b> or sins of Onesiphorus. We should not invent them. The text is intentionally commendatory (2 Tim 1:16–18).</div>
+<div><b><h2>Motives / fears / desires (careful inferences anchored to text)</h2></b></div>
+<ul>
+<li><b>Desire to strengthen a suffering saint:</b> implied by “often refreshed me” (2 Tim 1:16).</li>
+<li><b>Fear of man resisted by fear of God:</b> implied by “not ashamed” in a context where shame and desertion were real pressures (2 Tim 1:15–16; cf. 2 Tim 1:8).</li>
+<li><b>Love that acts at cost:</b> implied by travel/search effort in Rome (2 Tim 1:17).</li>
+</ul>
+<div><b><h2>What changes (or doesn’t) over time?</h2></b></div>
+<ul>
+<li>The text suggests <b>consistency</b>, not character drift: repeated refreshment (2 Tim 1:16), strenuous seeking (2 Tim 1:17), and a history of service in Ephesus (2 Tim 1:18). The “arc” we see is steady faithfulness under intensifying pressure around Paul.</li>
+</ul>
+<div><b><h2>7) Victories and Challenges</h2></b></div>
+<div><b><h2>Major wins (faithful obedience and influence)</h2></b></div>
+<ul>
+<li><b>Bold identification with Paul’s suffering:</b> not ashamed of chains (2 Tim 1:16).</li>
+<li><b>Practical encouragement that strengthened Paul:</b> “often refreshed me” (2 Tim 1:16).</li>
+<li><b>Effective help in a hostile city:</b> found Paul in Rome and ministered (2 Tim 1:17).</li>
+<li><b>A reputation for service recognized by Timothy:</b> “you know very well” his service at Ephesus (2 Tim 1:18).</li>
+</ul>
+<div><b><h2>Major challenges (costs and risks implied by the text)</h2></b></div>
+<ul>
+<li><b>Social stigma and danger:</b> in the same letter Paul urges, “do not be ashamed… of me his prisoner” (2 Tim 1:8). Onesiphorus lived that exhortation (2 Tim 1:16).</li>
+<li><b>The difficulty of locating a prisoner in Rome:</b> “searched… earnestly” implies obstacles and persistence (2 Tim 1:17).</li>
+<li><b>Isolation around Paul:</b> the broader context is abandonment (“all… turned away from me”) (2 Tim 1:15), intensifying the cost of loyalty.</li>
+</ul>
+<div><b>The cost of faithfulness:</b> Onesiphorus’s faithfulness is explicitly defined against the backdrop of widespread withdrawal (2 Tim 1:15–17), showing that loyalty to Christ’s servants can be lonely and risky, yet honored by God (2 Tim 1:18).</div>
+<div><b><h2>8) Essential Verses and Key Cross-References (organized by themes)</h2></b></div>
+<div><b><h2>A) Direct “essential verses” tied to Onesiphorus</h2></b></div>
+<ul>
+<li><b>2 Tim 1:16</b> — Mercy on his household; he often refreshed Paul; not ashamed of chains.</li>
+<li><b>2 Tim 1:17</b> — In Rome he searched earnestly and found Paul.</li>
+<li><b>2 Tim 1:18</b> — Prayer for mercy “on that day”; reminder of his service in Ephesus.</li>
+<li><b>2 Tim 4:19</b> — Greeting to the household of Onesiphorus.</li>
+</ul>
+<div><b><h2>B) Cross-references that echo his themes</h2></b></div>
+<div><b>1) Not ashamed / courageous witness</b><br></div>
+<ul>
+<li><b>2 Tim 1:8</b> — “Do not be ashamed… of me his prisoner.”</li>
+<li><b>Rom 1:16</b> — “I am not ashamed of the gospel.”</li>
+<li><b>Mark 8:38</b> — Warning against being ashamed of Christ and his words.</li>
+<li><b>Heb 2:11</b> — Jesus “is not ashamed” to call believers brothers.</li>
+</ul>
+<div><b>2) Mercy and refreshment to the saints</b><br></div>
+<ul>
+<li><b>Matt 5:7</b> — “Blessed are the merciful…”</li>
+<li><b>Philem 7</b> — “the hearts of the saints have been refreshed through you.”</li>
+<li><b>1 Thess 5:11</b> — Encourage and build one another up.</li>
+</ul>
+<div><b>3) Care for prisoners / solidarity in suffering</b><br></div>
+<ul>
+<li><b>Matt 25:36, 40</b> — Visiting the imprisoned as service to Christ.</li>
+<li><b>Heb 13:3</b> — Remember prisoners as though in prison with them.</li>
+<li><b>Heb 10:34</b> — Compassion on prisoners and joyful acceptance of loss (theme parallel).</li>
+</ul>
+<div><b>4) Perseverance in doing good</b><br></div>
+<ul>
+<li><b>Gal 6:9–10</b> — Do not grow weary; do good to the household of faith.</li>
+<li><b>1 Cor 15:58</b> — Abounding in the work of the Lord, knowing it’s not in vain.</li>
+</ul>
+<div><b>5) “That day” / final mercy and reward</b><br></div>
+<ul>
+<li><b>2 Tim 4:8</b> — Crown “on that day.”</li>
+<li><b>2 Tim 1:12</b> — God guards “until that day.”</li>
+<li><b>Jude 21</b> — Wait for “the mercy of our Lord Jesus Christ.”</li>
+<li><b>Rom 2:16</b> — “the day… God judges the secrets of men.”</li>
+</ul>
+<div><b><h2>9) Theology and Big Themes</h2></b></div>
+<ul>
+<li><b>God’s mercy toward the merciful:</b> Paul explicitly prays mercy over Onesiphorus’s household and over Onesiphorus “on that day” (2 Tim 1:16, 18), highlighting mercy as both a present reality and an eschatological hope.</li>
+<li><b>Perseverance and loyalty under pressure:</b> In a context of desertion (2 Tim 1:15), Onesiphorus models steadfastness, echoing the letter’s repeated call to endurance (2 Tim 2:3; 4:5).</li>
+<li><b>The fellowship of suffering in Christ:</b> Onesiphorus’s refusal to be ashamed aligns with Paul’s theology that suffering for the gospel is part of Christian discipleship (2 Tim 1:8; 2:9–10).</li>
+<li><b>The church as households and networks of care:</b> Mention of “the household of Onesiphorus” shows how faith and ministry often moved through households (2 Tim 1:16; 4:19; cf. Acts 16:31–34 as a broader pattern).</li>
+<li><b>Final judgment and hope (“that day”):</b> Onesiphorus’s story is framed by “that day,” linking present faithfulness to the Lord’s final evaluation and mercy (2 Tim 1:18; cf. 4:8).</li>
+</ul>
+<div><b><h2>10) How Onesiphorus Points Us to Christ</h2></b></div>
+<ul>
+<li><b>A living picture of unashamed identification:</b> Onesiphorus is “not ashamed” of Paul’s chains (2 Tim 1:16), mirroring the gospel-shaped posture Paul commands (2 Tim 1:8). This points us to Jesus, who is <b>not ashamed</b> to identify with his people (Heb 2:11) and calls disciples to public allegiance (Mark 8:38).</li>
+<li><b>Christlike mercy to the suffering:</b> Onesiphorus’s merciful action toward an imprisoned servant resonates with Jesus’s teaching that serving “the least of these,” including prisoners, is service rendered to Christ himself (Matt 25:36, 40).</li>
+<li><b>A “seeking” pattern that echoes the gospel:</b> He “searched… earnestly and found” Paul (2 Tim 1:17). While not strict typology, it harmonizes with the broader biblical pattern of love that <i>goes after</i> the vulnerable rather than staying safely distant (Luke 10:33–35; Heb 13:3).</li>
+<li><b>Eternal perspective on mercy:</b> Paul’s prayer for mercy “on that day” (2 Tim 1:18) directs us to Christ the Judge and Savior, through whom final mercy is hoped for and received (Jude 21; 2 Tim 4:8).</li>
+</ul>
+<div><b><h2>11) Lessons and Applications (8–15, tied to Scripture)</h2></b></div>
+<ol>
+<li><b>Christian love is not merely sentiment; it refreshes people in concrete ways.</b> (2 Tim 1:16; cf. Philem 7)</li>
+<li><b>Don’t let social shame determine your loyalties—especially to Christ and his suffering people.</b> (2 Tim 1:8, 16; Mark 8:38)</li>
+<li><b>Faithfulness may mean standing almost alone.</b> (2 Tim 1:15–16)</li>
+<li><b>Persistent, costly service honors God.</b> Onesiphorus “searched… earnestly” (2 Tim 1:17; cf. Gal 6:9)</li>
+<li><b>Remember prisoners as part of faithful discipleship.</b> (Heb 13:3; Matt 25:36)</li>
+<li><b>A household can become a platform for ministry and legacy.</b> (2 Tim 1:16; 4:19)</li>
+<li><b>Pray for mercy over those who serve and suffer.</b> Paul intercedes specifically (2 Tim 1:16–18).</li>
+<li><b>Measure present risks by future realities (“that day”).</b> (2 Tim 1:18; 4:8)</li>
+<li><b>Consistent service in ordinary places matters as much as heroic moments.</b> (2 Tim 1:18)</li>
+<li><b>Encouragement is warfare in the Christian life—refreshing the weary strengthens the mission.</b> (2 Tim 1:16; 2:1)</li>
+</ol>
+<div><b><h2>Warnings to heed</h2></b></div>
+<ul>
+<li><b>The pull to desert suffering believers when it becomes costly.</b> (2 Tim 1:15; cf. 4:10)</li>
+<li><b>Shame-driven silence about the gospel and its messengers.</b> (2 Tim 1:8, 16)</li>
+</ul>
+<div><b><h2>Examples to imitate</h2></b></div>
+<ul>
+<li><b>Merciful courage and practical solidarity.</b> (2 Tim 1:16–17)</li>
+<li><b>Long-term, local service recognized by the church.</b> (2 Tim 1:18)</li>
+</ul>
+<div><b><h2>Application areas</h2></b></div>
+<ul>
+<li><b>Personal holiness:</b> repent of fear-of-man; pursue courage (2 Tim 1:7–8, 16).</li>
+<li><b>Relationships:</b> be a “refresher,” not a drain (2 Tim 1:16; Philem 7).</li>
+<li><b>Prayer:</b> intercede specifically for faithful servants and their households (2 Tim 1:16–18).</li>
+<li><b>Suffering:</b> draw near to sufferers rather than stepping back (Heb 13:3).</li>
+<li><b>Decision-making:</b> choose actions that will make sense “on that day” (2 Tim 1:18; 4:8).</li>
+<li><b>Leadership:</b> cultivate cultures where serving the suffering is honored (2 Tim 1:16–18).</li>
+</ul>
+<div><b><h2>12) Discussion and Reflection Questions (10–20)</h2></b></div>
+<div><b><h2>Personal reflection</h2></b></div>
+<ol>
+<li>Where am I tempted to feel “ashamed” of Christ, the gospel, or unpopular Christians? (2 Tim 1:8, 16)</li>
+<li>Who has “refreshed” my faith recently—and how can I become that kind of person? (2 Tim 1:16)</li>
+<li>What would costly loyalty look like in my current relationships? (2 Tim 1:15–17)</li>
+<li>Do I think about decisions in light of “that day”? (2 Tim 1:18; 4:8)</li>
+<li>What fears keep me from moving toward suffering people? (Heb 13:3)</li>
+</ol>
+<div><b><h2>Small group discussion</h2></b></div>
+<ol>
+<li>Why do you think desertion was common around Paul at this stage? (2 Tim 1:15; 4:16)</li>
+<li>What might Onesiphorus have risked by searching for Paul in Rome? (2 Tim 1:17)</li>
+<li>How can a church cultivate practical mercy without enabling unhealthy dependency? (2 Tim 1:16; Gal 6:2, 5)</li>
+<li>What does it mean to “remember prisoners” in modern contexts? (Heb 13:3; Matt 25:36)</li>
+<li>How should we pray for those who serve faithfully but receive little recognition? (2 Tim 1:16–18)</li>
+</ol>
+<div><b><h2>Deep study (text-observation)</h2></b></div>
+<ol>
+<li>What repeated words/ideas does Paul use to describe Onesiphorus (mercy, refresh, not ashamed, sought, found, service)? (2 Tim 1:16–18)</li>
+<li>What is the rhetorical effect of placing Onesiphorus right after the statement about Asia turning away? (2 Tim 1:15–16)</li>
+<li>Why might Paul mention the “household” twice? What does it communicate? (2 Tim 1:16; 4:19)</li>
+<li>What does “on that day” mean in 2 Timothy, and how does it shape ethics? (2 Tim 1:18; 4:8)</li>
+<li>How does Onesiphorus function as an embodied example of Paul’s exhortation in 2 Tim 1:8? (2 Tim 1:8, 16)</li>
+</ol>
+<div><b><h2>13) Prayer Response</h2></b></div>
+<div>Lord Jesus, you are not ashamed to call your people your brothers and sisters (Heb 2:11). Forgive us for the times we shrink back in fear or shame (Mark 8:38). Give us the courage of Onesiphorus—to love in costly, practical ways, to refresh the weary, and to draw near to those who suffer for your name (2 Tim 1:16–17; Heb 13:3). Make our homes places of mercy and service (2 Tim 1:16; 4:19). Teach us to live now in light of “that day,” trusting your righteous judgment and pleading for your mercy (2 Tim 1:18; 4:8). Strengthen your servants who feel alone, and make us faithful friends who do not abandon them. Amen.</div>
+<!-- /notesbridge:apple-html -->

@@ -1,0 +1,264 @@
+---
+notesbridge_uid: 1248b3d6-ead6-4fd8-854a-c640feb6f4f2
+apple_notes_id: x-coredata://FEE55BCF-3869-47B1-B2C2-EA92DFBAB0C4/ICNote/p3847
+apple_folder_path: iCloud/Bible Character Studies/NT
+last_sync_hash: e1f1dbe44c628f9b5a6216916fae9f312826a693ac348c5576aed95d8bbd02ba
+last_sync_at: 2025-12-31T03:37:40Z
+---
+<!-- notesbridge:apple-html -->
+<div><h1>Lazarus</h1></div>
+<div><br></div>
+<div><b><h1>Lazarus (of Bethany) — Bible Character Study</h1></b></div>
+<div><b>Important note on names:</b> The New Testament also includes a <b>“Lazarus” in Jesus’ parable of the rich man and Lazarus</b> (Luke 16:19–31). That is a <b>parable character</b>, and Scripture does <b>not</b> identify him as the same person as <b>Lazarus of Bethany</b> (John 11–12). In this study, “Lazarus” refers primarily to <b>Lazarus of Bethany</b> unless otherwise stated.</div>
+<div><br></div>
+<div><b><h2>1) Story Summary</h2></b></div>
+<div>Lazarus enters the biblical narrative as a beloved friend of Jesus and the brother of <b>Martha and Mary</b> in <b>Bethany</b> (John 11:1–5). When Lazarus falls seriously ill, his sisters send word to Jesus, expecting His help (John 11:3). Jesus delays, explaining that the illness will serve God’s glory (John 11:4–6). During that delay, Lazarus dies (John 11:14).</div>
+<div>Jesus then travels to Bethany near Jerusalem (John 11:17–18). Martha meets Him first, grieving yet confessing faith in God’s ability and in the future resurrection (John 11:21–27). Mary also comes weeping, and Jesus—deeply moved—<b>weeps</b> with them (John 11:32–35). At the tomb, Jesus commands the stone removed, prays to the Father, and calls Lazarus out; Lazarus comes out alive, still bound in grave cloths (John 11:38–44). Many believe, while others report to the authorities, and opposition intensifies (John 11:45–53).</div>
+<div>Afterward, Lazarus appears again at a meal in Bethany where Mary anoints Jesus (John 12:1–8). Crowds come not only to see Jesus but also to see Lazarus—the living sign of Jesus’ life-giving power (John 12:9). The chief priests plot to kill Lazarus too, because many were believing in Jesus on account of him (John 12:10–11). Lazarus’s narrative effectively ends there, with his resurrected life functioning as public testimony that provokes both faith and hostility (John 12:9–11).</div>
+<div><b>Where his story begins and ends:</b><br></div>
+<ul>
+<li><b>Begins:</b> John 11:1–3 (introduced as the brother of Mary and Martha, sick in Bethany)</li>
+<li><b>Ends:</b> John 12:10–11 (leaders plot to kill him; many believe because of him)</li>
+</ul>
+<div><br></div>
+<div><b><h2>2) What He’s Known For</h2></b></div>
+<div>Lazarus is most known as <b>the man Jesus raised from the dead</b>, a climactic “sign” that displays Christ’s authority over death and foreshadows Jesus’ own resurrection (John 11:43–44; cf. John 12:9–11).</div>
+<div><b>Headline descriptors</b><br></div>
+<ul>
+<li><b>Beloved friend of Jesus</b> (John 11:3, 11, 36)</li>
+<li><b>Center of Jesus’ greatest public sign in John’s Gospel</b> (John 11:43–44)</li>
+<li><b>Living testimony that stirred belief</b> (John 12:9–11)</li>
+<li><b>A flashpoint for escalating opposition</b> (John 11:45–53; 12:10–11)</li>
+<li><b>Silent-but-powerful witness</b> (not recorded speaking; the sign speaks through him—John 12:11)</li>
+<li><b>A picture of life granted by Christ’s call</b> (John 11:43–44)</li>
+</ul>
+<div><br></div>
+<div><b><h2>3) Where He Appears in the Bible</h2></b></div>
+<div><b><h2>Primary narrative locations</h2></b></div>
+<ul>
+<li><b>John — 11:1–44</b> — Lazarus is sick, dies, and is raised by Jesus.</li>
+<li><b>John — 11:45–53</b> — The raising triggers belief and intensifies the leaders’ plot against Jesus.</li>
+<li><b>John — 12:1–11</b> — Lazarus reclines at table; crowds come; leaders plot to kill Lazarus because many believe.</li>
+</ul>
+<div><b><h2>Secondary / thematic references</h2></b></div>
+<ul>
+<li><b>Luke — 16:19–31</b> — “Lazarus” in a parable (not identified with Bethany; treat as distinct unless Scripture says otherwise).</li>
+<li><b>John — 11:25–26</b> — Jesus’ “I am the resurrection and the life” declaration occurs in Lazarus’s narrative context.</li>
+<li><b>John — 5:25–29</b> — Jesus teaches His voice will raise the dead; Lazarus’s raising illustrates this claim.</li>
+<li><b>John — 10:17–18</b> — Jesus’ authority over life/death frames the sign.</li>
+<li><b>John — 20:30–31</b> — John’s purpose statement helps interpret Lazarus’s raising as a “sign” written to produce belief.</li>
+</ul>
+<div><br></div>
+<div><b><h2>4) Vital Statistics</h2></b></div>
+<ul>
+<li><b>Historical setting:</b> Late in Jesus’ earthly ministry, near Jerusalem, shortly before Passover and the crucifixion (John 11:18, 55; 12:1).</li>
+<li><b>Geography:</b> <b>Bethany</b>, near Jerusalem (about fifteen stadia away) (John 11:18); associated with gatherings at the home shared with Mary and Martha (John 11:1; 12:1–2).</li>
+<li><b>Family &amp relationships:</b><br></li>
+<ul>
+<li>Sisters: <b>Martha</b> and <b>Mary</b> (John 11:1–2, 5, 19).</li>
+<li>Relationship with Jesus: described as loved and as friend (John 11:3, 5, 11).</li>
+<li>Wider community: mourners and visitors from Jerusalem present (John 11:19, 31).</li>
+</ul>
+<li><b>Roles/offices:</b> No official office named; functions as a <b>disciple/friend</b> whose life becomes a public witness (John 11:11; 12:10–11).</li>
+<li><b>Key turning points:</b><br></li>
+<ul>
+<li><b>Illness and Jesus’ delay</b> (John 11:3–6)</li>
+<li><b>Death and burial</b> (John 11:14–17)</li>
+<li><b>Jesus’ declaration: “I am the resurrection and the life”</b> (John 11:25–26)</li>
+<li><b>Resurrection at Jesus’ command</b> (John 11:43–44)</li>
+<li><b>Becoming a catalyst for belief and opposition</b> (John 11:45–53; 12:10–11)</li>
+</ul>
+</ul>
+<div><br></div>
+<div><b><h2>5) Pivotal Moments and Timeline</h2></b></div>
+<div><object><table cellspacing="0" cellpadding="0" style="border-collapse: collapse; direction: ltr">
+<tbody>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Event</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Reference</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Why it matters</b></div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Lazarus is introduced as brother of Mary and Martha; becomes ill</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 11:1–3</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Establishes the relational setting and the crisis that will become a revelation of Jesus’ glory.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jesus intentionally delays</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 11:4–6</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Frames the event theologically: not random tragedy, but a stage for God’s glory and deeper faith.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jesus announces Lazarus has died</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 11:14–15</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Moves the story from healing to resurrection, intensifying the sign and its implications.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Martha’s grief and confession; Jesus’ “I am” statement</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 11:21–27</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Connects the sign to doctrine: resurrection is not merely an event but grounded in Christ’s person.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jesus weeps with the mourners</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 11:33–35</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Reveals Jesus’ real compassion and divine-human engagement with death’s sorrow.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>The tomb opened; Jesus prays; Lazarus called out</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 11:39–44</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Displays Jesus’ authority over death by His word; a lived demonstration of His claims.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Many believe; leaders plot Jesus’ death</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 11:45–53</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>The sign divides: it produces faith in some and hardening/hostility in others.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Lazarus at the Bethany meal; crowds come to see him</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 12:1–2, 9</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Lazarus becomes visible “evidence” that draws attention to Jesus.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Leaders plot to kill Lazarus too</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 12:10–11</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Shows the cost of being a living testimony; opposition escalates against both Jesus and His witnesses.</div>
+</td></tr>
+</tbody>
+</table></object><br></div>
+<div><b><h2>6) Strengths, Weaknesses, and Heart-Level Patterns</h2></b></div>
+<div><b><h2>Strengths (evidenced in the text)</h2></b></div>
+<ul>
+<li><b>Beloved in the community of faith and friendship with Jesus</b> (John 11:3, 5, 11, 36).</li>
+<li><b>His life becomes a powerful, unarguable testimony to Christ’s authority</b>—many believe “on account of him” (John 12:10–11).</li>
+<li><b>Receives life by responding to Christ’s call</b> (Lazarus comes out when Jesus calls) (John 11:43–44).</li>
+</ul>
+<div><b><h2>Weaknesses / sins / blind spots</h2></b></div>
+<ul>
+<li>Scripture records <b>no explicit moral failure</b> or spoken doubt from Lazarus himself. He is notably silent in the narrative. We should not invent faults where the text is quiet.</li>
+</ul>
+<div><b><h2>Motives / fears / desires (careful inferences)</h2></b></div>
+<ul>
+<li>The sisters’ message (“he whom you love is ill”) suggests Lazarus is part of a relationship of trust and love with Jesus (John 11:3, 5).</li>
+<li>Lazarus’s “role” is less about his inner psychology (not narrated) and more about what his story <b>reveals about Jesus</b> (John 11:4, 25–26; 12:9–11).</li>
+</ul>
+<div><b><h2>What changes (or doesn’t) over time?</h2></b></div>
+<ul>
+<li><b>Radical change:</b> from death to life by the command of Christ (John 11:43–44).</li>
+<li><b>Relational continuity:</b> he remains in fellowship—reclining at table with Jesus afterward (John 12:1–2).</li>
+<li><b>Public pressure increases:</b> after resurrection, he becomes a target of hostility (John 12:10–11).</li>
+</ul>
+<div><br></div>
+<div><b><h2>7) Victories and Challenges</h2></b></div>
+<div><b><h2>Major “wins”</h2></b></div>
+<ul>
+<li><b>Raised from the dead by Jesus’ word</b> (John 11:43–44).</li>
+<li><b>Becomes an instrument through whom many believe in Jesus</b> (John 12:9–11).</li>
+<li><b>His story magnifies God’s glory in Christ</b> (John 11:4, 40).</li>
+</ul>
+<div><b><h2>Major challenges</h2></b></div>
+<ul>
+<li><b>Suffering and death</b> (John 11:14–17).</li>
+<li><b>Family grief and communal mourning</b> surrounding his death (John 11:19, 31–35).</li>
+<li><b>Becoming a target for murder because of association with Jesus’ work</b> (John 12:10–11).</li>
+</ul>
+<div><b>Cost of faithfulness / consequences of hardened unbelief:</b>The same miracle that births faith also provokes lethal opposition (John 11:45–53; 12:10–11). Lazarus’s resurrected life becomes a “sign” that forces a response.</div>
+<div><br></div>
+<div><b><h2>8) Essential Verses and Key Cross-References</h2></b></div>
+<div><b><h2>Theme: Jesus’ authority over death and life</h2></b></div>
+<ul>
+<li>John 11:25–26 — “I am the resurrection and the life…”</li>
+<li>John 11:43–44 — Lazarus raised by Jesus’ command.</li>
+<li>John 11:40 — “Did I not tell you…you would see the glory of God?”</li>
+<li>John 5:25 — The dead hear the Son’s voice and live.</li>
+<li>John 5:28–29 — Resurrection to life/judgment.</li>
+<li>John 10:17–18 — Jesus’ authority to lay down life and take it up again.</li>
+</ul>
+<div><b><h2>Theme: Faith formed through delay, sorrow, and revelation</h2></b></div>
+<ul>
+<li>John 11:4–6 — Jesus delays for God’s glory.</li>
+<li>John 11:14–15 — “for your sake I am glad…so that you may believe.”</li>
+<li>John 11:21–27 — Martha’s confession and Jesus’ self-revelation.</li>
+<li>John 11:32–35 — Jesus enters grief; Jesus weeps.</li>
+</ul>
+<div><b><h2>Theme: Witness that provokes belief and opposition</h2></b></div>
+<ul>
+<li>John 11:45–53 — Belief and plotting after the sign.</li>
+<li>John 12:9–11 — Many believe because of Lazarus; leaders plot to kill him.</li>
+<li>John 20:30–31 — Signs written so you may believe and have life.</li>
+</ul>
+<div><b><h2>Broader NT echoes (life from death; union with Christ)</h2></b></div>
+<ul>
+<li>Romans 6:4–5 — Newness of life and resurrection union with Christ.</li>
+<li>Ephesians 2:4–6 — Made alive with Christ.</li>
+<li>1 Corinthians 15:20–22 — Resurrection hope grounded in Christ.</li>
+<li>Colossians 3:1–4 — Raised with Christ; life hidden with Him.</li>
+</ul>
+<div><br></div>
+<div><b><h2>9) Theology and Big Themes</h2></b></div>
+<ul>
+<li><b>Christology: Jesus as Life-giver.</b> Lazarus’s raising is not merely compassion; it reveals Jesus’ identity and authority (John 11:25–26, 43–44).</li>
+<li><b>Glory of God revealed in suffering and reversal.</b> The narrative repeatedly interprets the event as aimed at God’s glory (John 11:4, 40).</li>
+<li><b>The already/not-yet of resurrection hope.</b> Martha affirms future resurrection (John 11:24), and Jesus brings a present sign that anticipates the final resurrection (John 11:25–26; cf. John 5:28–29).</li>
+<li><b>The division caused by Jesus’ works.</b> The sign produces both belief and hardened plotting (John 11:45–53; 12:10–11).</li>
+<li><b>Compassion and incarnation.</b> Jesus’ tears show His genuine engagement with human grief even while He intends to overturn death (John 11:33–35).</li>
+<li><b>Substitution and mission trajectory.</b> The raising of Lazarus accelerates the plot that leads to Jesus’ death (John 11:47–53), fitting John’s theme that Jesus gives life through His own sacrifice (cf. John 10:11, 17–18).</li>
+</ul>
+<div><br></div>
+<div><b><h2>10) How Lazarus Points Us to Christ</h2></b></div>
+<ul>
+<li><b>As a “sign” that validates Jesus’ identity and mission.</b> John frames miracles as signs meant to produce faith in Jesus as the Christ (John 20:30–31). Lazarus’s resurrection functions as a climactic sign (John 11:43–44; 12:9–11).</li>
+<li><b>As a living illustration of Jesus’ claim:</b> “I am the resurrection and the life” (John 11:25–26). Lazarus’s experience embodies that declaration (John 11:43–44).</li>
+<li><b>Pattern that anticipates Jesus’ own death and resurrection.</b> Lazarus is raised and becomes a catalyst for the leaders’ resolve to kill Jesus (John 11:45–53). In John’s narrative logic, life for others is bound up with Jesus’ path to the cross (John 11:50–52; cf. John 10:11).</li>
+<li><b>Gospel connection: life comes by Christ’s effective call.</b> Lazarus does not cooperate his way out of death; he lives because Jesus calls him (John 11:43–44), echoing the broader truth that the Son gives life by His voice (John 5:25).</li>
+</ul>
+<div><br></div>
+<div><b><h2>11) Lessons and Applications</h2></b></div>
+<ol>
+<li><b>Jesus’ delays are not indifference.</b> His love is explicit even when He waits (John 11:5–6).</li>
+<li><b>Suffering can be a stage for God’s glory without minimizing pain.</b> Jesus interprets the illness theologically (John 11:4) and still weeps (John 11:35).</li>
+<li><b>Bring honest grief to Jesus.</b> Martha and Mary speak plainly (“Lord, if you had been here…”) (John 11:21, 32).</li>
+<li><b>Anchor hope in Jesus’ person, not only in future events.</b> “I am the resurrection…” (John 11:25–26).</li>
+<li><b>Faith grows through revelation amid sorrow.</b> “so that you may believe” (John 11:14–15).</li>
+<li><b>Jesus’ power is exercised through His word.</b> “Lazarus, come out” (John 11:43).</li>
+<li><b>God often uses ordinary households for extraordinary testimony.</b> A family in Bethany becomes the setting for major revelation (John 11:1–2; 12:1–2).</li>
+<li><b>A public witness to Christ can attract hostility.</b> Lazarus becomes a target because many believe (John 12:10–11).</li>
+<li><b>Signs demand a response; neutrality is not stable.</b> Some believe, others plot (John 11:45–53).</li>
+<li><b>New life leads into fellowship and worship.</b> Lazarus is soon at table with Jesus; Mary’s devotion frames the aftermath (John 12:1–3).</li>
+</ol>
+<div><b>Warnings to heed</b><br></div>
+<ul>
+<li>Don’t interpret God’s timing as lack of love (John 11:5–6).</li>
+<li>Beware hardening against clear evidence of Christ (John 11:47–53).</li>
+</ul>
+<div><b>Examples to imitate</b><br></div>
+<ul>
+<li>Bring grief to Jesus; confess truth about Him (John 11:21–27).</li>
+<li>Let your life—quietly or loudly—point others to Christ (John 12:11).</li>
+</ul>
+<div>Applications to specific areas:</div>
+<ul>
+<li><b>Personal holiness:</b> Live as someone Christ has “called out” of death into life (John 5:25; 11:43–44).</li>
+<li><b>Relationships:</b> Enter others’ grief with Christlike compassion (John 11:33–35).</li>
+<li><b>Prayer:</b> Trust the Father’s hearing and purposes (John 11:41–42).</li>
+<li><b>Suffering:</b> Hold together lament and hope (John 11:21–27, 35).</li>
+<li><b>Leadership:</b> Recognize that truth can polarize; respond with faith, not manipulation (John 11:45–53).</li>
+</ul>
+<div><br></div>
+<div><b><h2>12) Discussion and Reflection Questions (10–20)</h2></b></div>
+<div><b><h2>Personal reflection</h2></b></div>
+<ol>
+<li>Where do you most struggle with Jesus’ timing, and how does John 11:5–6 challenge your assumptions?</li>
+<li>What do Martha’s words in John 11:21–22 reveal about faith that is grieving?</li>
+<li>How does Jesus’ weeping (John 11:35) shape your view of His compassion in your suffering?</li>
+</ol>
+<div><b><h2>Small group discussion</h2></b></div>
+<ol>
+<li>Why does Jesus interpret Lazarus’s illness in terms of God’s glory (John 11:4, 40)? What does that mean—and what does it <i>not</i> mean?</li>
+<li>What’s the difference between believing in “a resurrection someday” (John 11:24) and trusting Jesus as resurrection and life now (John 11:25–26)?</li>
+<li>How do you see both mercy and authority in Jesus at the tomb (John 11:33–44)?</li>
+<li>Why do some people respond with faith while others respond with hostility (John 11:45–53)?</li>
+</ol>
+<div><b><h2>Deep study (text observation)</h2></b></div>
+<ol>
+<li>Track the language of love/friendship in John 11:3, 5, 11, 36. What role does it play in interpreting the delay?</li>
+<li>What repeated misunderstandings appear in John 11, and how does Jesus clarify them (John 11:11–15, 23–26, 39–40)?</li>
+<li>What does Jesus’ prayer in John 11:41–42 teach about His relationship with the Father and the purpose of the sign?</li>
+<li>Compare John 5:25–29 with John 11:43–44. What claims are illustrated by Lazarus’s raising?</li>
+<li>Why do the leaders want Lazarus dead in John 12:10–11? What does that reveal about the nature of unbelief?</li>
+<li>How does Mary’s anointing (John 12:1–8) frame the Lazarus sign within Jesus’ approaching death?</li>
+<li>How does John 20:30–31 function as a “lens” for reading the Lazarus narrative?</li>
+</ol>
+<div><br></div>
+<div><b><h2>13) Prayer Response</h2></b></div>
+<div>Lord Jesus, You are the resurrection and the life (John 11:25). Teach us to trust Your love even when You delay (John 11:5–6). Meet us in our grief, and form real faith in us as You did in Bethany (John 11:21–27, 35). By Your life-giving word, call us out of death and into obedience, so our lives would point others to You (John 5:25; 11:43–44; 12:11). Keep us steadfast when witness brings opposition (John 12:10–11), and fix our hope on the glory of God revealed in You (John 11:40). Amen.</div>
+<!-- /notesbridge:apple-html -->

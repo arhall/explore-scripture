@@ -84,6 +84,25 @@ async function generateEntitiesSearchData() {
   console.log('🔍 Generating entities search data...');
 
   const entitiesDir = path.join(__dirname, 'src', 'assets', 'data', 'entities');
+  const profileIndexPath = path.join(
+    __dirname,
+    'src',
+    'assets',
+    'data',
+    'character-profiles',
+    'index.json'
+  );
+  let profileIndex = null;
+
+  if (fs.existsSync(profileIndexPath)) {
+    try {
+      profileIndex = JSON.parse(fs.readFileSync(profileIndexPath, 'utf8'));
+    } catch (error) {
+      console.warn(`Failed to read character profile index: ${error.message}`);
+    }
+  }
+
+  const profilesByEntityId = profileIndex?.profilesByEntityId || {};
 
   if (!fs.existsSync(entitiesDir)) {
     throw new Error('Entities directory not found. Run entity processor first.');
@@ -123,6 +142,13 @@ async function generateEntitiesSearchData() {
     try {
       const entityPath = path.join(entitiesDir, file);
       const entityData = JSON.parse(fs.readFileSync(entityPath, 'utf8'));
+      const profile = profilesByEntityId[entityData.id] || null;
+      const profileBooks = profile?.book_references ? Object.keys(profile.book_references) : [];
+      const entityBooks = Object.keys(entityData.book_references || {});
+      const books = entityBooks.length > 0 ? entityBooks : profileBooks;
+      const testaments = normalizeTestaments(entityData.source_testaments);
+      const testamentLabel = getTestamentLabel(testaments);
+      const hasCharacterStudy = Boolean(profile);
 
       // Create search-optimized entity data
       const searchEntity = {
@@ -141,8 +167,11 @@ async function generateEntitiesSearchData() {
           .join(' ')
           .toLowerCase(),
         references: (entityData.references || []).length,
-        books: Object.keys(entityData.book_references || {}),
+        books,
         category: entityData.category || 'unknown',
+        testaments,
+        testament: testamentLabel,
+        hasCharacterStudy,
       };
 
       entitiesSearchData.push(searchEntity);
@@ -201,6 +230,25 @@ async function generatePerBookEntityData(entitiesData) {
   }
 
   console.log(`✅ Generated ${bookFiles.length} per-book entity files`);
+}
+
+function normalizeTestaments(testaments = []) {
+  const normalized = (testaments || []).map(testament => {
+    const value = `${testament}`.toLowerCase();
+    if (value.includes('old') || value === 'ot') return 'OT';
+    if (value.includes('new') || value === 'nt') return 'NT';
+    return testament;
+  });
+
+  return [...new Set(normalized)].filter(Boolean);
+}
+
+function getTestamentLabel(testaments = []) {
+  if (!testaments || testaments.length === 0) return 'Unknown';
+  if (testaments.includes('OT') && testaments.includes('NT')) return 'Both';
+  if (testaments.includes('OT')) return 'OT';
+  if (testaments.includes('NT')) return 'NT';
+  return testaments[0];
 }
 
 // Run the generator

@@ -44,6 +44,15 @@ permalink: '/entities/{{ entityId }}/'
       <div class="entity-blurb" id="entityBlurb"></div>
     </div>
 
+    <!-- Character Profile Section -->
+    <div class="entity-profile-section" id="entityProfile" style="display: none">
+      <div class="section-header">
+        <h3>Character Study</h3>
+        <span class="profile-source" id="entityProfileSource"></span>
+      </div>
+      <div class="entity-profile-content" id="entityProfileContent"></div>
+    </div>
+
     <!-- Relationships Section -->
     <div class="entity-relations-section" id="entityRelations" style="display: none">
       <h3>Relationships</h3>
@@ -119,6 +128,7 @@ permalink: '/entities/{{ entityId }}/'
   // Entity page functionality
   let currentEntity = null;
   let currentBookFilter = '';
+  let characterProfileIndex = null;
 
   // Entity type icons
   const entityTypeIcons = {
@@ -129,6 +139,7 @@ permalink: '/entities/{{ entityId }}/'
     figure: '🔷',
     event: '⚡',
     group: '👥',
+    concept: '💡',
   };
 
   async function loadEntity() {
@@ -190,6 +201,8 @@ permalink: '/entities/{{ entityId }}/'
 
     const loadingEl = document.getElementById('entityLoading');
     const contentEl = document.getElementById('entityContent');
+    const descriptionSection = document.getElementById('entityDescription');
+    const blurbEl = document.getElementById('entityBlurb');
 
     loadingEl.style.display = 'none';
     contentEl.style.display = 'block';
@@ -222,11 +235,19 @@ permalink: '/entities/{{ entityId }}/'
 
     // Display description
     if (currentEntity.blurb) {
-      document.getElementById('entityBlurb').innerHTML = formatEntityText(currentEntity.blurb);
+      blurbEl.innerHTML = formatEntityText(currentEntity.blurb);
+      if (descriptionSection) {
+        descriptionSection.style.display = 'block';
+      }
     } else {
-      document.getElementById('entityBlurb').innerHTML =
-        '<p class="muted">No description available for this entity.</p>';
+      blurbEl.innerHTML = '';
+      if (descriptionSection) {
+        descriptionSection.style.display = 'none';
+      }
     }
+
+    // Display character profile content if available
+    loadCharacterProfile();
 
     // Display relationships
     if (currentEntity.relations && Object.keys(currentEntity.relations).length > 0) {
@@ -275,6 +296,66 @@ permalink: '/entities/{{ entityId }}/'
         entityId: currentEntity.id,
         bookFilter: currentBookFilter || 'none',
       });
+    }
+  }
+
+  async function loadCharacterProfile() {
+    if (!currentEntity) return;
+
+    const profileSection = document.getElementById('entityProfile');
+    const profileContentEl = document.getElementById('entityProfileContent');
+    const profileSourceEl = document.getElementById('entityProfileSource');
+    const descriptionSection = document.getElementById('entityDescription');
+    const blurbEl = document.getElementById('entityBlurb');
+
+    if (!profileSection || !profileContentEl) return;
+
+    try {
+      if (!characterProfileIndex) {
+        const response = await fetch('/assets/data/character-profiles/index.json');
+        if (!response.ok) return;
+        characterProfileIndex = await response.json();
+      }
+
+      const profile =
+        characterProfileIndex?.profilesByEntityId?.[currentEntity.id] || null;
+
+      if (!profile) {
+        if (!currentEntity.blurb && descriptionSection && blurbEl) {
+          blurbEl.innerHTML = '<p class="muted">No description available for this entity.</p>';
+          descriptionSection.style.display = 'block';
+        }
+        return;
+      }
+
+      const htmlResponse = await fetch(profile.html_path);
+      if (!htmlResponse.ok) return;
+      const html = await htmlResponse.text();
+
+      if (window.SecurityConfig && window.SecurityConfig.setSecureHTML) {
+        window.SecurityConfig.setSecureHTML(profileContentEl, html);
+      } else {
+        profileContentEl.innerHTML = html;
+      }
+
+      currentEntity.profile_book_references = profile.book_references || {};
+
+      if (profileSourceEl) {
+        profileSourceEl.textContent = profile.source_path ? `Source: ${profile.source_path}` : '';
+      }
+
+      if (!currentEntity.blurb && profile.summary && blurbEl && descriptionSection) {
+        blurbEl.innerHTML = formatEntityText(profile.summary);
+        descriptionSection.style.display = 'block';
+      }
+
+      profileSection.style.display = 'block';
+
+      if (Object.keys(currentEntity.profile_book_references || {}).length > 0) {
+        displayReferences();
+      }
+    } catch (error) {
+      console.warn('Character profile load failed:', error);
     }
   }
 
@@ -331,12 +412,13 @@ permalink: '/entities/{{ entityId }}/'
   }
 
   function displayReferences() {
-    if (!currentEntity.book_references) {
+    const mergedReferences = getMergedBookReferences();
+    if (!mergedReferences) {
       populateBookFilter([]);
       return;
     }
 
-    const books = Object.keys(currentEntity.book_references);
+    const books = Object.keys(mergedReferences);
     populateBookFilter(books);
 
     updateReferenceDisplay();
@@ -362,14 +444,15 @@ permalink: '/entities/{{ entityId }}/'
   function updateReferenceDisplay() {
     const referencesListEl = document.getElementById('referencesList');
     const referenceStatsEl = document.getElementById('referenceStats');
+    const mergedReferences = getMergedBookReferences();
 
-    if (!currentEntity.book_references) {
+    if (!mergedReferences || Object.keys(mergedReferences).length === 0) {
       referencesListEl.innerHTML = '<p class="no-references">No references found.</p>';
       referenceStatsEl.textContent = '';
       return;
     }
 
-    let displayBooks = Object.entries(currentEntity.book_references);
+    let displayBooks = Object.entries(mergedReferences);
 
     // Filter by book if selected
     if (currentBookFilter) {
@@ -417,6 +500,31 @@ permalink: '/entities/{{ entityId }}/'
 
     referencesListEl.innerHTML =
       referencesHtml || '<p class="no-references">No matching references found.</p>';
+  }
+
+  function getMergedBookReferences() {
+    if (!currentEntity) return null;
+
+    const merged = {};
+    const addReferences = source => {
+      if (!source) return;
+      Object.entries(source).forEach(([book, chapters]) => {
+        if (!merged[book]) {
+          merged[book] = new Set();
+        }
+        chapters.forEach(chapter => merged[book].add(chapter));
+      });
+    };
+
+    addReferences(currentEntity.book_references || {});
+    addReferences(currentEntity.profile_book_references || {});
+
+    const result = {};
+    Object.entries(merged).forEach(([book, chapters]) => {
+      result[book] = Array.from(chapters).sort((a, b) => a - b);
+    });
+
+    return result;
   }
 
   function displayCrossReferences() {

@@ -1,0 +1,303 @@
+---
+notesbridge_uid: 87994de8-6f24-4687-8a73-8c883d41725b
+apple_notes_id: x-coredata://FEE55BCF-3869-47B1-B2C2-EA92DFBAB0C4/ICNote/p3875
+apple_folder_path: iCloud/Bible Character Studies/NT
+last_sync_hash: 0c43245b598865632ba0590e9e00fb4d2e9c1e38aaa1a013454cceb6639c543f
+last_sync_at: 2025-12-31T05:14:26Z
+---
+<!-- notesbridge:apple-html -->
+<div><h1>Titus</h1></div>
+<div><br></div>
+<div><b><h1>Titus — Bible Character Study</h1></b></div>
+<div><b><h2>1) Story Summary (Chronological)</h2></b></div>
+<div>Titus emerges in the New Testament as a trusted Gentile co-laborer of Paul—an emissary, problem-solver, and church organizer. His story is told through Paul’s letters rather than a narrative account in Acts (Titus is never named in Acts).</div>
+<ul>
+<li><b>Early ministry / identity:</b> Titus is introduced as a <b>Greek (Gentile) believer</b> who accompanies Paul and Barnabas to Jerusalem. There, Titus becomes a living test case for the gospel’s freedom: Paul refuses to compel his circumcision, defending justification by faith against coercion (Galatians 2:1–5).</li>
+<li><b>Trusted delegate to Corinth:</b> Later, Titus is deeply involved in Paul’s tense relationship with the Corinthian church. Paul anxiously waits for Titus’s report and is comforted when Titus arrives with good news of the Corinthians’ response (2 Corinthians 2:12–13; 7:5–7, 13–16). Titus not only delivers messages but also shepherds relationships—earning the Corinthians’ affection through sincere care (2 Corinthians 7:13–15).</li>
+<li><b>Partner in the collection for the saints:</b> Titus also plays a key role in coordinating the <b>offering for the Jerusalem saints</b>, entrusted with logistical and reputational integrity alongside other brothers “so that no one should blame us” (2 Corinthians 8:6, 16–21; 12:17–18).</li>
+<li><b>Commissioned leader in Crete:</b> Paul later leaves Titus in <b>Crete</b> to “put what remained into order” and appoint elders in every town (Titus 1:4–5). In that assignment, Titus must confront false teachers and cultivate healthy church life through sound doctrine and good works (Titus 1:9–16; 2:1–15; 3:1–11).</li>
+<li><b>Later movements:</b> Paul asks Titus to meet him at <b>Nicopolis</b> and help with traveling coworkers (Titus 3:12–13). Near the end of Paul’s life, Titus is mentioned as having gone to <b>Dalmatia</b> (2 Timothy 4:10).</li>
+</ul>
+<div><b>Where his story begins in Scripture:</b> Galatians 2:1–5.<b>Where it ends in Scripture:</b> 2 Timothy 4:10 (last explicit mention).</div>
+<div><br></div>
+<div><b><h2>2) What He’s Known For</h2></b></div>
+<div>Titus is most known as <b>Paul’s reliable Gentile coworker</b>—a representative who can be trusted with delicate church conflicts and demanding organizational work.</div>
+<div><b>Headlines</b><br></div>
+<ul>
+<li><b>Uncircumcised Greek believer used to defend gospel freedom</b> (Galatians 2:3–5)</li>
+<li><b>Paul’s trusted emissary and encourager to troubled churches</b> (2 Corinthians 7:6–7)</li>
+<li><b>A partner marked by integrity in handling money and reputation</b> (2 Corinthians 8:16–21)</li>
+<li><b>A pastor-organizer left to appoint elders and correct error</b> (Titus 1:5, 9–13)</li>
+<li><b>A catalyst for reconciliation with Corinth</b> (2 Corinthians 7:13–15)</li>
+<li><b>A coworker who shares Paul’s “ways” (no manipulation, no exploitation)</b> (2 Corinthians 12:17–18)</li>
+</ul>
+<div><br></div>
+<div><b><h2>3) Where He Appears in the Bible</h2></b></div>
+<div><b><h2>Primary narrative locations (main story happens)</h2></b></div>
+<ul>
+<li><b>Galatians — 2:1–5</b> — Titus in Jerusalem as the uncircumcised Gentile test case for the gospel.</li>
+<li><b>2 Corinthians — 2:12–13; 7:5–16; 8:6, 16–24; 12:17–18</b> — Titus as Paul’s emissary, comforter, and partner in the collection.</li>
+<li><b>Titus — 1:4–5; 1:9–16; 2:1–15; 3:1–15</b> — Paul’s instructions to Titus for ordering Crete’s churches and promoting godliness.</li>
+<li><b>2 Timothy — 4:10</b> — Titus has gone to Dalmatia.</li>
+</ul>
+<div><b><h2>Secondary references (themes/echoes that interpret his role)</h2></b></div>
+<ul>
+<li><b>Acts — 15:1–29</b> — The circumcision controversy and defense of Gentile freedom parallels Galatians 2 (Titus not named).</li>
+<li><b>Romans — 15:25–28</b> — The Jerusalem collection context parallels 2 Corinthians 8–9.</li>
+<li><b>1 Corinthians — multiple</b> — Background to the strained Corinth relationship that Titus later helps heal (esp. 1 Corinthians 1:10–13; 5:1–13; 2 Corinthians 7:8–12).</li>
+</ul>
+<div><br></div>
+<div><b><h2>4) Vital Statistics</h2></b></div>
+<ul>
+<li><b>Historical setting:</b> Mid–first century apostolic era (Paul’s ministry years), during major Gentile expansion and controversy over circumcision and law observance (Galatians 2:1–5; Titus 1:5).</li>
+<li><b>Geography strongly associated:</b><br></li>
+<ul>
+<li><b>Jerusalem</b> (Galatians 2:1–2)</li>
+<li><b>Corinth / Achaia and Macedonia</b> (2 Corinthians 2:12–13; 7:5–7; 8:1, 6)</li>
+<li><b>Crete</b> (Titus 1:5)</li>
+<li><b>Nicopolis</b> (Titus 3:12)</li>
+<li><b>Dalmatia</b> (2 Timothy 4:10)</li>
+</ul>
+<li><b>Family/relationships:</b> No biological family mentioned. Key relationships are ministry relationships:</li>
+<ul>
+<li><b>Paul</b> calls him “my true child in a common faith” (Titus 1:4).</li>
+<li>Associated with <b>Barnabas</b> in the Jerusalem trip (Galatians 2:1).</li>
+<li>Closely connected to the <b>Corinthians</b> (2 Corinthians 7:13–15).</li>
+</ul>
+<li><b>Roles/offices:</b><br></li>
+<ul>
+<li><b>Gentile convert / coworker</b><br></li>
+<li><b>Apostolic delegate / envoy</b> (2 Corinthians 7:6–7; 8:16–17)</li>
+<li><b>Church organizer and elder-appointing leader</b> in Crete (Titus 1:5)</li>
+</ul>
+<li><b>Key turning points:</b><br></li>
+<ul>
+<li><b>Refusal of compelled circumcision</b> to defend gospel truth (Galatians 2:3–5)</li>
+<li><b>Reconciliation mission to Corinth</b> (2 Corinthians 7:6–7, 13–15)</li>
+<li><b>Crete assignment</b> to order churches and confront false teaching (Titus 1:5, 9–13)</li>
+</ul>
+</ul>
+<div><br></div>
+<div><b><h2>5) Pivotal Moments and Timeline (Chronological Table)</h2></b></div>
+<div><object><table cellspacing="0" cellpadding="0" style="border-collapse: collapse; direction: ltr">
+<tbody>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Event</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Reference</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Why it matters</b></div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus accompanies Paul and Barnabas to Jerusalem</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Galatians 2:1–2</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus’s presence embodies the Gentile mission and forces the question: must Gentiles become Jews to be full Christians?</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus is not compelled to be circumcised</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Galatians 2:3–5</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>The “truth of the gospel” is defended—no coercion; justification is not through the works of the law.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Paul longs for Titus and lacks rest until he hears from him</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Corinthians 2:12–13</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Shows Titus’s importance as Paul’s trusted messenger and the emotional weight of church conflict.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus arrives with news; God comforts Paul through him</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Corinthians 7:5–7</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus is an instrument of God’s consolation and a bearer of repentance-and-restoration reports.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus’s affection grows for the Corinthians through his ministry</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Corinthians 7:13–15</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Demonstrates Titus’s pastoral sincerity and the fruit of humble service.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus leads in completing the collection for the saints</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Corinthians 8:6, 16–21</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Money handling becomes a discipleship and integrity issue; Titus is trusted for accountable stewardship.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Paul testifies Titus walked in the same spirit and steps</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Corinthians 12:17–18</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus is proven upright—no exploitation, no self-serving agenda.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus left in Crete to appoint elders and set things in order</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus 1:5</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus shifts from envoy work to institutional strengthening—healthy leadership structures for church maturity.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus commanded to silence false teachers and insist on sound doctrine</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus 1:9–16; 2:1</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus must combine courage with discernment: doctrine matters because it produces godliness.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus urged toward a grace-shaped ethic of good works</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus 2:11–14; 3:1–8</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>The gospel’s grace trains believers into holiness and public witness.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus asked to join Paul at Nicopolis; help Zenas and Apollos</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus 3:12–13</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus is mobile and dependable; ministry includes planning, travel, and resourcing coworkers.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus later goes to Dalmatia</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Timothy 4:10</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Titus remains active in mission as Paul nears death; the work continues beyond Paul.</div>
+</td></tr>
+</tbody>
+</table></object><br></div>
+<div><b><h2>6) Strengths, Weaknesses, and Heart-Level Patterns</h2></b></div>
+<div><b><h2>Strengths (with textual grounding)</h2></b></div>
+<ul>
+<li><b>Conviction and steadiness under pressure</b>: Titus stands as an uncircumcised Gentile believer without yielding to coercion (Galatians 2:3–5).</li>
+<li><b>Trusted reliability</b>: Paul’s distress in Troas highlights how much Paul depends on Titus’s faithfulness (2 Corinthians 2:12–13).</li>
+<li><b>Pastoral warmth and relational skill</b>: Titus not only reports repentance—he wins genuine affection through sincere service (2 Corinthians 7:13–15).</li>
+<li><b>Integrity and accountability</b>: Titus is chosen for financial stewardship and transparent handling “so that no one should blame us” (2 Corinthians 8:16–21).</li>
+<li><b>Courage to confront error</b>: In Crete he must rebuke deceivers and protect the flock with sound doctrine (Titus 1:9–13).</li>
+</ul>
+<div><b><h2>Weaknesses / sins / blind spots (what Scripture actually shows)</h2></b></div>
+<div>Scripture does <b>not</b> record a specific moral failure, rebuke, or correction of Titus comparable to what we see for other leaders (e.g., Galatians 2:11–14 for Peter). The main “weaknesses” we can responsibly note are <b>implied vulnerabilities</b> of his assignment, not documented sins:</div>
+<ul>
+<li>He is placed in contexts requiring <b>conflict management</b> and <b>rebuke</b> (2 Corinthians 7:8–12; Titus 1:10–13), implying heavy pressure and potential discouragement—but the text does not describe him failing.</li>
+</ul>
+<div><b><h2>Motives / fears / desires (careful inference anchored to text)</h2></b></div>
+<ul>
+<li><b>Desire to preserve gospel truth and unity</b>: His Jerusalem episode centers on protecting “the truth of the gospel” for Gentiles (Galatians 2:5).</li>
+<li><b>Desire for the church’s health and order</b>: His Cretan mission is explicitly to “put what remained into order” (Titus 1:5), suggesting a builder/organizer impulse under apostolic direction.</li>
+<li><b>A servant’s posture rather than self-advancement</b>: Paul’s insistence that Titus did not “take advantage” of the Corinthians implies Titus’s motive was not gain but their good (2 Corinthians 12:17–18).</li>
+</ul>
+<div><b><h2>What changes (or doesn’t) over time?</h2></b></div>
+<ul>
+<li><b>Consistent pattern:</b> Titus remains a <b>trusted delegate</b> across years and regions—Jerusalem → Corinth → Crete → later mission (Galatians 2:1–5; 2 Corinthians 7:6–7; Titus 1:5; 2 Timothy 4:10).</li>
+<li><b>Development in responsibility:</b> He appears to move from being a key companion in doctrinal conflict (Galatians 2) to a skilled reconciler and steward (2 Corinthians), then to an organizer of local church leadership (Titus 1:5).</li>
+</ul>
+<div><br></div>
+<div><b><h2>7) Victories and Challenges</h2></b></div>
+<div><b><h2>Major “wins” (obedience, leadership, influence)</h2></b></div>
+<ul>
+<li><b>Gospel freedom preserved</b> (Galatians 2:3–5) — Titus’s uncircumcised status becomes a decisive defense of Gentile inclusion by faith.</li>
+<li><b>Reconciliation strengthened</b> (2 Corinthians 7:6–7, 13–15) — Titus helps restore trust between Paul and the Corinthians.</li>
+<li><b>Trusted stewardship with finances</b> (2 Corinthians 8:16–21) — Titus models integrity and accountability in sensitive matters.</li>
+<li><b>Church order established in Crete</b> (Titus 1:5) — Titus is entrusted to appoint elders and build stable leadership.</li>
+<li><b>Doctrinal protection and moral formation</b> (Titus 1:9–16; 2:1–14; 3:8) — He is charged to cultivate communities that match the gospel with good works.</li>
+</ul>
+<div><b><h2>Major challenges (opposition, suffering, costs)</h2></b></div>
+<ul>
+<li><b>Pressure from “false brothers” and coercion</b> (Galatians 2:4–5) — A direct threat to gospel liberty.</li>
+<li><b>Carrying hard messages and navigating grief/repentance</b> (2 Corinthians 7:8–12) — Titus operates in the relational fallout of church discipline and correction.</li>
+<li><b>Confronting entrenched false teaching and corrupt cultural patterns</b> (Titus 1:10–16) — Including “rebuke them sharply” so that they may be sound (Titus 1:13).</li>
+</ul>
+<div><b>Cost of faithfulness:</b> Titus’s call requires being “sent,” bearing anxiety and conflict, confronting deceivers, and living transparently before churches (2 Corinthians 2:13; Titus 1:9–13; 2 Corinthians 8:20–21).</div>
+<div><br></div>
+<div><b><h2>8) Essential Verses and Key Cross-References (Organized by Theme)</h2></b></div>
+<div><b><h2>Gospel freedom and truth</h2></b></div>
+<ul>
+<li><b>Galatians 2:3–5</b> — Titus not compelled to be circumcised; refusal to yield preserves gospel truth.</li>
+<li><b>Cross-refs:</b> Acts 15:1–11 (Gentile inclusion debate); Romans 3:28 (justification by faith); Ephesians 2:8–9 (salvation by grace).</li>
+</ul>
+<div><b><h2>Comfort, repentance, and reconciliation</h2></b></div>
+<ul>
+<li><b>2 Corinthians 7:6–7</b> — God comforts Paul by Titus’s coming and report.</li>
+<li><b>2 Corinthians 7:13–15</b> — Titus’s joy and affection for the Corinthians.</li>
+<li><b>Cross-refs:</b> Matthew 18:15–17 (church correction); 2 Corinthians 2:6–8 (restoring the repentant).</li>
+</ul>
+<div><b><h2>Integrity and stewardship</h2></b></div>
+<ul>
+<li><b>2 Corinthians 8:16–21</b> — Titus’s earnestness; careful financial accountability.</li>
+<li><b>2 Corinthians 12:17–18</b> — Titus did not exploit; walked in same spirit.</li>
+<li><b>Cross-refs:</b> Proverbs 11:3 (integrity); 1 Timothy 3:8–9 (tested character); Romans 12:17 (honorable conduct).</li>
+</ul>
+<div><b><h2>Church order and leadership</h2></b></div>
+<ul>
+<li><b>Titus 1:5</b> — Appoint elders; set things in order.</li>
+<li><b>Titus 1:9</b> — Elders must hold firm to sound doctrine and refute opponents.</li>
+<li><b>Cross-refs:</b> 1 Timothy 3:1–7 (overseer qualifications); Acts 20:28–31 (guarding the flock).</li>
+</ul>
+<div><b><h2>Grace-driven holiness and good works</h2></b></div>
+<ul>
+<li><b>Titus 2:11–14</b> — Grace trains godliness; Christ redeems and purifies a people zealous for good works.</li>
+<li><b>Titus 3:8</b> — Insist on these things so believers devote themselves to good works.</li>
+<li><b>Cross-refs:</b> Ephesians 2:10 (created for good works); James 2:14–17 (living faith acts).</li>
+</ul>
+<div><b><h2>Mission continuity beyond Paul</h2></b></div>
+<ul>
+<li><b>2 Timothy 4:10</b> — Titus to Dalmatia.</li>
+<li><b>Cross-refs:</b> 2 Timothy 2:2 (entrusting ministry); Matthew 28:18–20 (ongoing mission).</li>
+</ul>
+<div>(That’s 14 core passages; you can expand by reading Titus 2–3 as a unified “ethic of grace.”)</div>
+<div><br></div>
+<div><b><h2>9) Theology and Big Themes</h2></b></div>
+<ul>
+<li><b>Justification and gospel freedom:</b> Titus’s uncircumcision episode embodies the truth that Gentiles are not second-class—no added boundary markers required for belonging (Galatians 2:3–5).</li>
+<li><b>God’s comfort mediated through faithful servants:</b> Paul explicitly attributes divine comfort to Titus’s arrival—God comforts through embodied fellowship and truthful reports (2 Corinthians 7:6–7).</li>
+<li><b>Holiness as grace’s training, not legalism’s ladder:</b> In Titus, grace appears and <i>trains</i> believers to renounce ungodliness and live upright lives (Titus 2:11–12). Good works flow from redemption, not as its price (Titus 2:14; 3:8).</li>
+<li><b>Church health requires ordered leadership and doctrinal clarity:</b> Elders must teach sound doctrine and correct opponents; false teaching is not a private quirk but a church-threatening disease (Titus 1:5, 9–11).</li>
+<li><b>Public witness through good works:</b> The ethical instructions in Titus stress believers’ reputation before outsiders and authorities (Titus 3:1–2, 8), connecting doctrine to mission.</li>
+</ul>
+<div><br></div>
+<div><b><h2>10) How Titus Points Us to Christ</h2></b></div>
+<div>Titus is not presented as a “type” of Christ in the strong OT sense, but his ministry patterns <b>echo</b> gospel realities that culminate in Jesus:</div>
+<ul>
+<li><b>Christ secures the freedom Titus embodies.</b> Titus’s uncircumcision becomes a concrete defense of the gospel that Christ accomplished—salvation grounded in Christ, not identity badges (Galatians 2:3–5; compare Galatians 2:16).</li>
+<li><b>Christ is the true Redeemer who creates a holy people.</b> The letter to Titus centers on Jesus’s redeeming work: Christ “gave himself… to redeem… and to purify… a people… zealous for good works” (Titus 2:14). Titus’s mission is to cultivate communities that look like that redeemed people (Titus 2:1–10; 3:8).</li>
+<li><b>Christ is the Chief Shepherd behind Titus’s shepherding tasks.</b> Titus appoints elders and refutes wolves (Titus 1:5, 9–11), pointing beyond himself to Jesus’s protective shepherding of his church (cf. John 10:11–16; 1 Peter 5:2–4).</li>
+<li><b>Christ reconciles; Titus participates.</b> Titus’s role in Corinth reflects the reconciling heart of the gospel—restoration after repentance (2 Corinthians 7:6–15; cf. 2 Corinthians 5:18–20).</li>
+</ul>
+<div><br></div>
+<div><b><h2>11) Lessons and Applications (Scripture-tied)</h2></b></div>
+<ol>
+<li><b>Defend the gospel without yielding to coercion</b> (Galatians 2:3–5).</li>
+<li><b>Faithful presence can be God’s instrument of comfort</b> (2 Corinthians 7:6–7).</li>
+<li><b>Reconciliation ministry is real ministry, not “side work”</b> (2 Corinthians 7:13–15).</li>
+<li><b>Handle money with proactive transparency</b> (2 Corinthians 8:20–21).</li>
+<li><b>Earnestness and accountability belong together</b> (2 Corinthians 8:16–18).</li>
+<li><b>Healthy churches require ordered leadership, not improvisation forever</b> (Titus 1:5).</li>
+<li><b>Leaders must be able to teach and also to refute</b> (Titus 1:9).</li>
+<li><b>False teaching is often relationally aggressive and spiritually corrosive</b> (Titus 1:10–11, 16).</li>
+<li><b>Grace trains believers; holiness is not optional</b> (Titus 2:11–12).</li>
+<li><b>Christ’s redemption aims at a purified people eager for good works</b> (Titus 2:14).</li>
+<li><b>Insist on core gospel implications so believers devote themselves to good works</b> (Titus 3:8).</li>
+<li><b>Avoid fruitless controversies that fracture witness</b> (Titus 3:9–11).</li>
+<li><b>Mission is collaborative: support coworkers and share resources</b> (Titus 3:12–13).</li>
+</ol>
+<div><b><h2>Warnings to heed</h2></b></div>
+<ul>
+<li>Don’t let <b>legalism</b> redefine belonging (Galatians 2:4–5).</li>
+<li>Don’t tolerate <b>deceitful teaching</b> that produces hypocrisy (Titus 1:10–16).</li>
+<li>Don’t get consumed by <b>quarrels</b> that bear no gospel fruit (Titus 3:9).</li>
+</ul>
+<div><b><h2>Examples to imitate</h2></b></div>
+<ul>
+<li><b>Integrity under scrutiny</b> (2 Corinthians 8:20–21; 12:17–18)</li>
+<li><b>Pastoral warmth that produces trust</b> (2 Corinthians 7:13–15)</li>
+<li><b>Courage to order the church faithfully</b> (Titus 1:5, 9)</li>
+</ul>
+<div><b>Application lanes</b><br></div>
+<ul>
+<li><b>Personal holiness:</b> Let grace train you (Titus 2:11–12).</li>
+<li><b>Relationships:</b> Pursue reconciliation with truth and tenderness (2 Corinthians 7:13–15).</li>
+<li><b>Decision-making:</b> Choose transparency when stakes and reputations are high (2 Corinthians 8:20–21).</li>
+<li><b>Leadership:</b> Build structures (elders) that protect doctrine and produce health (Titus 1:5, 9).</li>
+</ul>
+<div><br></div>
+<div><b><h2>12) Discussion and Reflection Questions</h2></b></div>
+<div><b><h2>Personal reflection</h2></b></div>
+<ol>
+<li>Where am I tempted to add “requirements” to belonging that Scripture doesn’t require? (Galatians 2:3–5)</li>
+<li>How do I respond when pressured by confident voices claiming to speak for God? (Titus 1:10–11)</li>
+<li>What does it look like for grace to “train” me this week? (Titus 2:11–12)</li>
+<li>Do my good works flow from redemption—or from a need to prove myself? (Titus 2:14; 3:8)</li>
+</ol>
+<div><b><h2>Small group discussion</h2></b></div>
+<ol>
+<li>What makes reconciliation so hard, and how does Titus’s Corinth ministry help? (2 Corinthians 7:13–15)</li>
+<li>What practices safeguard integrity in handling money and ministry resources? (2 Corinthians 8:20–21)</li>
+<li>Why is appointing elders a gospel issue, not just an organizational one? (Titus 1:5, 9)</li>
+</ol>
+<div><b><h2>Deep study (text observation)</h2></b></div>
+<ol>
+<li>In Galatians 2:4–5, what exactly is the threat, and what does Paul refuse to do?</li>
+<li>In 2 Corinthians 7:6–7, list what Titus brings and what effects it produces in Paul.</li>
+<li>In Titus 1:10–16, what are the marks of the false teachers (speech, motives, fruit)?</li>
+<li>In Titus 2:11–14, what does grace do, and what does Christ’s self-giving aim to produce?</li>
+<li>In Titus 3:8–11, what is Titus told to <i>insist on</i>, and what is he told to <i>avoid</i>?</li>
+</ol>
+<div><b><h2>Leadership and mission</h2></b></div>
+<ol>
+<li>What qualities are non-negotiable for those who teach in the church? (Titus 1:9)</li>
+<li>How can leaders rebuke “sharply” (Titus 1:13) while still aiming at restoration and health?</li>
+<li>What does Paul’s trust in Titus reveal about the value of dependable “second-chair” leaders? (2 Corinthians 8:16–18)</li>
+</ol>
+<div><br></div>
+<div><b><h2>13) Prayer Response</h2></b></div>
+<div>Lord God, thank you for the truth of the gospel that does not enslave but sets free through Christ. Keep us from adding burdens you have not commanded, and make us steadfast when pressured to compromise the truth (Galatians 2:4–5). Train us by your grace to renounce ungodliness and to live self-controlled, upright lives as we wait for our blessed hope (Titus 2:11–13). Give us integrity that is above reproach in every stewardship and relationship (2 Corinthians 8:20–21), and make us instruments of comfort and reconciliation in your church (2 Corinthians 7:6–7). Purify us through Jesus Christ, who gave himself to redeem us and to make us zealous for good works (Titus 2:14). Amen.</div>
+<!-- /notesbridge:apple-html -->

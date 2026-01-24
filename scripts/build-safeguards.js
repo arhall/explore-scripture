@@ -277,10 +277,14 @@ class BuildSafeguards {
       // Run search generation with timeout
       await this.runWithTimeout('npm', ['run', 'search:generate']);
 
-      // Run Eleventy build with timeout
-      await this.runWithTimeout('npx', ['eleventy', '--config=.eleventy.development.js']);
-
-      console.log('✅ Safe development build completed');
+      // Start Eleventy dev server (long-running)
+      console.log('🌐 Starting Eleventy dev server (this will run until you stop it)...');
+      await this.runLongRunningProcess('npx', [
+        'eleventy',
+        '--config=.eleventy.development.js',
+        '--serve',
+        '--watch',
+      ]);
     } catch (error) {
       console.error('❌ Safe build failed:', error.message);
       throw error;

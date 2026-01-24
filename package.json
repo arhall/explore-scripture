@@ -32,11 +32,11 @@
     "build:workers-safe": "node scripts/workers-safe-build.js",
     "build:workers-dev": "npm run build:dev && npm run workers:prepare",
     "build:dev": "npm run entities:dev && npm run search:generate && node scripts/optimized-eleventy-build.js development",
-    "entities:dev": "node scripts/optimized-entity-processor.js development",
+    "entities:dev": "node scripts/optimized-entity-processor.js development && node scripts/entity-utils/character-profile-sync.js",
     "build:analyze": "npm run build && node scripts/build-logger.js",
     "build:fast": "eleventy",
     "// Entity Management": "",
-    "entities:process": "node scripts/entity-utils/entity-processor.js",
+    "entities:process": "node scripts/entity-utils/entity-processor.js && node scripts/entity-utils/character-profile-sync.js",
     "entities:extract": "node scripts/entity-utils/extract-book-entities.js",
     "entities:validate": "node scripts/entity-utils/validate-entity-schema.js",
     "entities:test": "node scripts/entity-utils/test-key-figures-loading.js",
@@ -120,5 +120,8 @@
   },
   "dependencies": {
     "@cloudflare/kv-asset-handler": "^0.4.0"
+  },
+  "overrides": {
+    "undici": "7.18.2"
   }
 }

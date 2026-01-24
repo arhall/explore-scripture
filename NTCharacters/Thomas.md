@@ -1,0 +1,317 @@
+---
+notesbridge_uid: 7d519e7a-bc1f-46ae-bb86-c30e44eccce9
+apple_notes_id: x-coredata://FEE55BCF-3869-47B1-B2C2-EA92DFBAB0C4/ICNote/p3819
+apple_folder_path: iCloud/Bible Character Studies/NT
+last_sync_hash: f1c08a8f86cadf69e7460b5c234bb7feaf0e2f85730175de11a08901e54f17a3
+last_sync_at: 2025-12-31T05:06:40Z
+---
+<!-- notesbridge:apple-html -->
+<div><h1>Thomas</h1></div>
+<div><br></div>
+<div><b><h1>Thomas (also called “Didymus”) — Bible Character Study</h1></b></div>
+<div><b><h2>1) Story Summary (chronological)</h2></b></div>
+<div>Thomas is one of the Twelve apostles chosen by Jesus (Matt 10:2–4; Mark 3:13–19; Luke 6:12–16). In the Gospel of John, he emerges not merely as a name in a list, but as a real disciple with a distinct voice—candid, loyal, and sometimes slow to believe.</div>
+<div>As Jesus’ public ministry intensifies and danger rises in Judea, Thomas shows grim courage: when Jesus intends to return near Jerusalem after Lazarus dies, Thomas says to the other disciples, “Let us also go, that we may die with him” (John 11:16). Later, in the Farewell Discourse, Thomas honestly admits confusion when Jesus speaks of going away and the way to the Father: “Lord, we do not know where you are going. How can we know the way?” (John 14:5). Jesus answers with one of the clearest self-revelations in Scripture: “I am the way, and the truth, and the life” (John 14:6).</div>
+<div>After the crucifixion, Thomas is absent when the risen Jesus first appears to the gathered disciples (John 20:19, 20:24). When the others testify, “We have seen the Lord,” Thomas refuses to accept their witness without personal confirmation, insisting on seeing and touching Jesus’ wounds (John 20:25). Eight days later, Jesus appears again and graciously invites Thomas to examine the evidence; Thomas responds with the climactic confession of the Gospel: “My Lord and my God!” (John 20:26–28). Jesus then pronounces a beatitude that reaches beyond Thomas to future believers: “Blessed are those who have not seen and yet have believed” (John 20:29). Thomas is later listed among the apostles after the ascension as they devote themselves to prayer, awaiting the promised Spirit (Acts 1:13–14). He also appears among the disciples at the Sea of Tiberias after the resurrection (John 21:2).</div>
+<div><b>Where his story begins and ends in the Bible:</b><br><i>Begins</i> with his inclusion among the Twelve (Matt 10:3; Mark 3:18; Luke 6:15).<i>Ends</i> with post-resurrection appearances and apostolic waiting/prayer (John 21:2; Acts 1:13–14).</div>
+<div><br></div>
+<div><b><h2>2) What They’re Known For</h2></b></div>
+<div>Thomas is most known for his initial refusal to believe the resurrection testimony without personal sight—and for his profound confession of Jesus’ identity once confronted by the risen Christ (John 20:24–29).</div>
+<div><b>Headlines (3–7):</b><br></div>
+<ul>
+<li><b>One of the Twelve</b> chosen by Jesus (Matt 10:3).</li>
+<li><b>Called “Didymus” (“Twin”)</b> in John’s Gospel (John 20:24).</li>
+<li><b>Courage in the face of danger</b> (“let us…die with him”) (John 11:16).</li>
+<li><b>Honest questioner</b> who admits confusion and seeks clarity (John 14:5).</li>
+<li><b>Skeptical of secondhand testimony</b> regarding the resurrection (John 20:25).</li>
+<li><b>Moves from doubt to worship</b> with a towering confession: “My Lord and my God!” (John 20:28).</li>
+<li><b>Included with the praying apostolic community</b> awaiting the Spirit (Acts 1:13–14).</li>
+</ul>
+<div><br></div>
+<div><b><h2>3) Where They Appear in the Bible</h2></b></div>
+<div><b><h2>Primary narrative locations</h2></b></div>
+<ul>
+<li><b>Matthew — 10:2–4</b> — Listed among the Twelve (“Thomas…”) (Matt 10:3).</li>
+<li><b>Mark — 3:13–19</b> — Listed among those appointed as apostles (Mark 3:18).</li>
+<li><b>Luke — 6:12–16</b> — Listed among the apostles chosen after prayer (Luke 6:15).</li>
+<li><b>John — 11:16</b> — Urges the disciples to go with Jesus into danger (John 11:16).</li>
+<li><b>John — 14:5–6</b> — Asks “How can we know the way?” prompting Jesus’ “I am the way…” (John 14:5–6).</li>
+<li><b>John — 20:24–29</b> — Absent at first appearance; doubts; then confesses Jesus as Lord and God (John 20:24–29).</li>
+<li><b>John — 21:2</b> — Present with other disciples at the Sea of Tiberias (John 21:2).</li>
+<li><b>Acts — 1:13–14</b> — Listed among apostles in Jerusalem; devoted to prayer (Acts 1:13–14).</li>
+</ul>
+<div><b><h2>Secondary references / thematic echoes (not named, but interpretive)</h2></b></div>
+<ul>
+<li><b>John — 20:30–31</b> — John states his purpose: that readers “believe…Jesus is the Christ… and…have life” (John 20:31), immediately following Thomas’ confession (John 20:28–29).</li>
+<li><b>1 Peter — 1:8–9</b> — “Though you have not seen him, you love him… you believe…” echoes the “not seen and yet believed” theme (1 Pet 1:8–9).</li>
+<li><b>2 Corinthians — 5:7</b> — “We walk by faith, not by sight” aligns with Jesus’ beatitude (2 Cor 5:7; John 20:29).</li>
+</ul>
+<div><br></div>
+<div><b><h2>4) Vital Statistics</h2></b></div>
+<ul>
+<li><b>Historical setting:</b><br></li>
+<ul>
+<li>Late Second Temple Judaism under Roman rule; Jesus’ earthly ministry culminating in crucifixion and resurrection (broad NT context; Thomas’ explicit scenes: John 11; John 14; John 20–21).</li>
+<li>Post-ascension waiting in Jerusalem prior to Pentecost (Acts 1:13–14).</li>
+</ul>
+<li><b>Geography (strongly associated):</b><br></li>
+<ul>
+<li><b>Judea / near Jerusalem</b> (context of Lazarus and rising hostility) (John 11:7–8, 11:16).</li>
+<li><b>Jerusalem</b> (post-resurrection appearances and apostolic gathering) (John 20:19, 20:26; Acts 1:13).</li>
+<li><b>Sea of Tiberias (Galilee)</b> (post-resurrection fishing narrative) (John 21:1–2).</li>
+</ul>
+<li><b>Family and relationships:</b><br></li>
+<ul>
+<li><b>Name/alias:</b> “Thomas, called Didymus” (John 20:24; 21:2). “Didymus” means “twin” (implied by the Greek term; Scripture gives no further family detail).</li>
+<li><b>Parents/spouse/children:</b> <b>Not stated in Scripture</b>.</li>
+<li><b>Allies/companions:</b> The other apostles and disciples (Matt 10:2–4; John 20:24–25; Acts 1:13–14).</li>
+<li><b>Enemies:</b> Not individually specified; shares the opposition faced by Jesus and his followers (John 11:8, 11:16).</li>
+</ul>
+<li><b>Roles/offices:</b><br></li>
+<ul>
+<li><b>Disciple / apostle</b> (Matt 10:2–4; Luke 6:13–16; Acts 1:13).</li>
+</ul>
+<li><b>Key turning points:</b><br></li>
+<ul>
+<li><b>Crisis of danger:</b> willingness to go toward death with Jesus (John 11:16).</li>
+<li><b>Crisis of understanding:</b> asks for clarity about Jesus’ “way” (John 14:5–6).</li>
+<li><b>Crisis of belief:</b> refuses secondhand resurrection testimony; demands evidence (John 20:24–25).</li>
+<li><b>Covenant moment (new-creation reality):</b> encounters the risen Christ; confesses Jesus as Lord and God (John 20:26–28).</li>
+<li><b>Re-formed community:</b> returns to the gathered disciples and apostolic prayer (John 21:2; Acts 1:13–14).</li>
+</ul>
+</ul>
+<div><b>Debated/uncertain details:</b> Later church traditions about Thomas’ missionary routes and death are <b>not recorded in Scripture</b>, so this study does not treat them as certain.</div>
+<div><br></div>
+<div><b><h2>5) Pivotal Moments and Timeline (chronological)</h2></b></div>
+<div><object><table cellspacing="0" cellpadding="0" style="border-collapse: collapse; direction: ltr">
+<tbody>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Event</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Reference</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Why it matters</b></div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Chosen as one of the Twelve</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Matt 10:2–4; Mark 3:18; Luke 6:15</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Establishes Thomas as an authorized eyewitness/apostolic representative in Jesus’ inner circle.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Courage toward danger in Judea</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 11:16</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Shows loyalty and a willingness to suffer with Jesus when death seems likely.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Honest confession of confusion (“How can we know the way?”)</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 14:5</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Thomas voices what others may be thinking; his question prompts Jesus’ definitive self-revelation.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Absent from first resurrection appearance</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 20:19, 20:24</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>His absence becomes the immediate occasion for the “sight vs. faith” episode.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Refuses secondhand testimony; demands personal proof</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 20:25</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Displays skepticism and a desire for certainty; raises the issue of how testimony leads to faith.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jesus appears and invites examination</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 20:26–27</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Christ meets Thomas in mercy and truth—inviting him from unbelief to faith.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Climactic confession: “My Lord and my God!”</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 20:28</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>One of the strongest explicit confessions of Jesus’ deity in the Gospels, offered as worship.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Beatitude for future believers</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 20:29</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jesus validates apostolic witness while blessing those who will believe without seeing him physically.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Present among disciples at Sea of Tiberias</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 21:2</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Thomas remains in the community of disciples after the resurrection, participating in restoration-era discipleship.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Listed among apostles devoted to prayer awaiting the Spirit</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Acts 1:13–14</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Confirms his ongoing apostolic identity and place in the foundational praying church.</div>
+</td></tr>
+</tbody>
+</table></object><br></div>
+<div><b><h2>6) Strengths, Weaknesses, and Heart-Level Patterns</h2></b></div>
+<div><b><h2>Strengths (with textual evidence)</h2></b></div>
+<ul>
+<li><b>Loyal courage / willingness to suffer with Christ:</b>Thomas is the one who says, “Let us also go, that we may die with him” (John 11:16). Even if tinged with pessimism, it is not cowardice.</li>
+<li><b>Intellectual honesty and clarity-seeking:</b>He does not pretend understanding: “We do not know where you are going. How can we know the way?” (John 14:5). His honesty draws out Jesus’ saving self-disclosure (John 14:6).</li>
+<li><b>Capacity for profound worship and confession:</b>When confronted by the risen Christ, Thomas does not merely concede; he worships: “My Lord and my God!” (John 20:28).</li>
+</ul>
+<div><b><h2>Weaknesses / blind spots (with textual evidence and brief context)</h2></b></div>
+<ul>
+<li><b>Resistance to believing on apostolic testimony alone:</b>“Unless I see… and place my finger… I will never believe” (John 20:25). The absolute language (“never”) reveals a hardened posture in that moment.</li>
+<li><b>A tendency toward “sight-conditioned” faith:</b>Jesus directly addresses it: “Have you believed because you have seen me?” (John 20:29). Thomas needed what later believers will not have.</li>
+</ul>
+<div><b><h2>Motives / fears / desires (careful inferences anchored to the text)</h2></b></div>
+<ul>
+<li><b>Desire for certainty and fear of deception:</b>Thomas’ demand for tactile proof suggests he fears being misled by grief, rumor, or misplaced hope (John 20:25). Scripture doesn’t psychoanalyze him, but it clearly shows his insistence on verification.</li>
+<li><b>Desire to be faithful without self-deception:</b>The same man who is willing to “die with” Jesus (John 11:16) refuses to confess resurrection faith lightly (John 20:25). The text supports a pattern: he is serious about truth, even when slow to believe.</li>
+</ul>
+<div><b><h2>What changes (or doesn’t) over time?</h2></b></div>
+<ul>
+<li><b>What doesn’t change:</b> Thomas stays candid—speaking plainly when he doesn’t understand (John 14:5) or doesn’t believe (John 20:25).</li>
+<li><b>What changes:</b> He moves from conditional skepticism to unqualified worship. The end point is not “less personality,” but a transformed confession anchored in the risen Christ (John 20:28–29). He is later found again among the disciples and apostles in unity and prayer (John 21:2; Acts 1:13–14).</li>
+</ul>
+<div><br></div>
+<div><b><h2>7) Victories and Challenges</h2></b></div>
+<div><b><h2>Major “wins” (obedience, faith, influence)</h2></b></div>
+<ul>
+<li><b>Courage to follow Jesus toward danger:</b> “Let us also go…” (John 11:16).</li>
+<li><b>Asks the question that elicits a central Christological claim:</b> (John 14:5–6).</li>
+<li><b>Confesses Jesus’ lordship and deity:</b> “My Lord and my God!” (John 20:28).</li>
+<li><b>Returns to the community and perseveres as an apostle:</b> present with disciples (John 21:2) and among the praying apostles (Acts 1:13–14).</li>
+</ul>
+<div><b><h2>Major challenges (doubt, fear, obstacles)</h2></b></div>
+<ul>
+<li><b>Doubt in the resurrection witness:</b> refuses the disciples’ testimony (John 20:25).</li>
+<li><b>Spiritual cost of unbelief:</b> Jesus frames Thomas’ posture as moving toward unbelief—“Do not disbelieve, but believe” (John 20:27).</li>
+<li><b>The pressure of crisis and confusion:</b> his moments arise in contexts of death-threats (John 11:8, 11:16), interpretive confusion (John 14:5), and post-crucifixion trauma (John 20:24–25).</li>
+</ul>
+<div><b>Cost of faithfulness / consequence of compromise:</b>Thomas’ unwillingness to believe kept him from the joy the other disciples experienced when they first saw the risen Lord (compare John 20:20 with John 20:24–25). Yet Christ’s mercy restores him, and his confession becomes part of the Gospel’s climactic testimony (John 20:28–31).</div>
+<div><br></div>
+<div><b><h2>8) Essential Verses and Key Cross-References (organized by themes)</h2></b></div>
+<div><b><h2>Theme: Discipleship identity and calling</h2></b></div>
+<ul>
+<li>Matt 10:3 — Thomas listed among the Twelve.</li>
+<li>Mark 3:18 — Thomas listed among those appointed.</li>
+<li>Luke 6:15 — Thomas named among apostles.</li>
+<li>Acts 1:13–14 — Thomas among praying apostles awaiting the Spirit.</li>
+</ul>
+<div><b><h2>Theme: Courage and loyalty under threat</h2></b></div>
+<ul>
+<li>John 11:16 — “Let us also go, that we may die with him.”</li>
+<li>John 12:24–26 — Following Jesus includes costly discipleship (echoes the willingness Thomas voiced).</li>
+</ul>
+<div><b><h2>Theme: Honest questions that lead to revelation</h2></b></div>
+<ul>
+<li>John 14:5 — “How can we know the way?”</li>
+<li>John 14:6 — “I am the way, and the truth, and the life…”</li>
+</ul>
+<div><b><h2>Theme: Doubt, evidence, and resurrection faith</h2></b></div>
+<ul>
+<li>John 20:24 — Thomas absent at first appearance.</li>
+<li>John 20:25 — Demands sight and touch.</li>
+<li>John 20:26–27 — Jesus invites examination; calls him to believe.</li>
+<li>John 20:28 — “My Lord and my God!”</li>
+<li>John 20:29 — “Blessed are those who have not seen and yet have believed.”</li>
+<li>John 20:31 — John’s purpose: belief leading to life.</li>
+</ul>
+<div><b>Cross-references that interpret/echo this theme:</b><br></div>
+<ul>
+<li>1 Pet 1:8–9 — Believing without seeing, rejoicing in salvation.</li>
+<li>2 Cor 5:7 — Walking by faith, not sight.</li>
+<li>Heb 11:1 — Faith as conviction regarding unseen realities.</li>
+<li>Luke 24:36–43 — The risen Jesus provides tangible evidence to disciples (resurrection is bodily), consistent with John 20:27.</li>
+</ul>
+<div><b><h2>Theme: Apostolic witness and the life of faith</h2></b></div>
+<ul>
+<li>John 21:2 — Thomas remains among the disciples in post-resurrection life.</li>
+<li>Acts 1:8 — Apostolic witness empowered by the Spirit (Thomas is among those commissioned in the apostolic band; Acts 1:13–14).</li>
+</ul>
+<div><br></div>
+<div><b><h2>9) Theology and Big Themes</h2></b></div>
+<div><b><h2>God’s character revealed</h2></b></div>
+<ul>
+<li><b>Patience and condescension (gracious accommodation):</b> Jesus meets Thomas where he is, offering proof rather than crushing him (John 20:26–27).</li>
+<li><b>Truthfulness and historicity:</b> The resurrection is presented as objective, bodily reality—wounds present, touch invited (John 20:27; cf. Luke 24:39–40).</li>
+<li><b>Mercy that leads to worship:</b> Jesus’ mercy does not end in mere comfort but culminates in confession (John 20:28).</li>
+</ul>
+<div><b><h2>Discipleship, mission, and the nature of faith</h2></b></div>
+<ul>
+<li><b>Faith grounded in witness:</b> Thomas’ story sits right next to John’s stated purpose that written testimony leads to belief and life (John 20:28–31).</li>
+<li><b>The transition from sight to testimony-based faith:</b> Jesus blesses those who will believe without physical sight (John 20:29), anticipating the normal Christian experience after the ascension.</li>
+<li><b>The apostolic community as a praying, waiting people:</b> Thomas is among the apostles devoted to prayer before Pentecost (Acts 1:13–14).</li>
+</ul>
+<div><b><h2>Human nature: fear, doubt, and grace</h2></b></div>
+<ul>
+<li><b>The heart can demand control:</b> “Unless I see… I will never believe” (John 20:25) shows the human impulse to set terms for trust.</li>
+<li><b>Grace can transform skepticism into confession:</b> Jesus’ initiative moves Thomas from refusal to worship (John 20:26–28).</li>
+<li><b>True faith is not blind credulity, but trust in the risen Christ:</b> Thomas is not praised for doubting; he is called to believe (John 20:27), yet his story shows that Christianity is rooted in real events and real testimony (John 20:30–31).</li>
+</ul>
+<div><br></div>
+<div><b><h2>10) How Thomas Points Us to Christ</h2></b></div>
+<div><b><h2>Christ’s person (explicitly confessed)</h2></b></div>
+<ul>
+<li>Thomas’ confession, “My Lord and my God!” directly exalts Jesus in divine terms (John 20:28). In John’s narrative, this functions as a culminating recognition of who Jesus is (compare John 1:1, 1:14, 20:28).</li>
+</ul>
+<div><b><h2>Christ’s resurrection and the gospel logic</h2></b></div>
+<ul>
+<li>Jesus invites Thomas to examine his wounds (John 20:27), underscoring that the resurrection is <b>bodily</b> and the crucified one is the risen one. This anchors the gospel proclamation in history (John 20:30–31).</li>
+</ul>
+<div><b><h2>Faith through testimony (the ordinary path for later believers)</h2></b></div>
+<ul>
+<li>Jesus’ beatitude, “Blessed are those who have not seen and yet have believed” (John 20:29), pushes beyond Thomas to the post-ascension church, where faith comes through apostolic witness and the Spirit (Acts 1:8; cf. John 17:20).</li>
+</ul>
+<div><b><h2>Gospel connections (salvation, grace, life)</h2></b></div>
+<ul>
+<li>John places Thomas’ confession immediately before the purpose statement: these signs are written “so that you may believe… and…have life” (John 20:31). Thomas becomes a living illustration of the Gospel’s aim: encounter (through witness), belief, and life in Christ.</li>
+</ul>
+<div><b>Typology caution:</b> Thomas is not presented as an “office type” (prophet/priest/king). The strongest Christ-pointing here is <b>confessional and revelatory</b>: Thomas’ journey showcases the risen Christ’s identity and the blessedness of faith grounded in apostolic testimony (John 20:28–31).</div>
+<div><br></div>
+<div><b><h2>11) Lessons and Applications (8–15, tied to Scripture)</h2></b></div>
+<ol>
+<li><b>Bring your confusion to Jesus honestly.</b> Thomas asks bluntly, and Jesus answers profoundly (John 14:5–6).</li>
+<li><b>Courage can coexist with fear or gloom—don’t despise imperfect faith, but direct it toward Christ.</b> Thomas is willing to die with Jesus (John 11:16).</li>
+<li><b>Doubt is not a virtue, but Christ can meet doubters with mercy and truth.</b> “Do not disbelieve, but believe” (John 20:27).</li>
+<li><b>Refusing credible testimony can harden into unbelief.</b> Thomas sets strict terms (John 20:25) and is corrected by Jesus (John 20:27).</li>
+<li><b>The goal is not merely “evidence,” but worship.</b> The climax is confession: “My Lord and my God!” (John 20:28).</li>
+<li><b>You are not disadvantaged as a later believer—Jesus pronounces blessing on faith without physical sight.</b> (John 20:29; cf. 1 Pet 1:8–9).</li>
+<li><b>Christian faith is anchored in real events, not vague spirituality.</b> Jesus’ wounds and presence are concrete (John 20:27), and John writes so you may believe and have life (John 20:31).</li>
+<li><b>Stay with the people of God in seasons of doubt and grief.</b> Thomas’ absence coincides with missing joy (John 20:24–25), but he is later found again among the disciples (John 21:2) and the praying church (Acts 1:13–14).</li>
+<li><b>Let Scripture’s testimony do its designed work: to produce belief and life.</b> John’s stated purpose is explicit (John 20:31).</li>
+<li><b>Jesus is patient, but he calls for decision.</b> He doesn’t leave Thomas in suspended skepticism (John 20:27).</li>
+</ol>
+<div><b><h2>Warnings to heed</h2></b></div>
+<ul>
+<li><b>Don’t make unbelief your identity.</b> Thomas is corrected and called to faith (John 20:27), not affirmed in skepticism (John 20:25).</li>
+<li><b>Don’t set terms for Jesus.</b> Thomas’ “unless I see…” is overturned by Jesus’ sovereign self-disclosure (John 20:26–27).</li>
+</ul>
+<div><b><h2>Examples to imitate</h2></b></div>
+<ul>
+<li><b>Candid honesty before Christ</b> (John 14:5).</li>
+<li><b>Loyalty to Christ even when costly</b> (John 11:16).</li>
+<li><b>Wholehearted confession and worship</b> (John 20:28).</li>
+</ul>
+<div><b>Application to life domains</b><br></div>
+<ul>
+<li><b>Personal holiness:</b> Replace conditions you place on God with humble trust in Christ’s word (John 20:27–29).</li>
+<li><b>Relationships/community:</b> Don’t isolate when struggling; remain with the gathered disciples (John 20:19, 20:26; Acts 1:14).</li>
+<li><b>Prayer:</b> Follow the apostolic pattern of devoted prayer while waiting on God’s promises (Acts 1:14).</li>
+<li><b>Suffering/uncertainty:</b> Courage doesn’t require emotional certainty; follow Christ even when outcomes look bleak (John 11:16).</li>
+<li><b>Decision-making/leadership:</b> Ask clarifying questions that lead to truth rather than pretending confidence (John 14:5–6).</li>
+</ul>
+<div><br></div>
+<div><b><h2>12) Discussion and Reflection Questions (10–20)</h2></b></div>
+<div><b><h2>Personal reflection</h2></b></div>
+<ol>
+<li>Where do you currently say, functionally, “Unless I see… I will never believe” (John 20:25)?</li>
+<li>How does Jesus’ invitation—“Do not disbelieve, but believe” (John 20:27)—land on you today?</li>
+<li>What “terms” do you tend to set for trusting God, and what would repentance look like? (John 20:25–27)</li>
+<li>When you don’t understand, do you bring honest questions to Christ like Thomas (John 14:5), or withdraw?</li>
+</ol>
+<div><b><h2>Small group discussion</h2></b></div>
+<ol>
+<li>Thomas shows courage (John 11:16) and doubt (John 20:25). How can both be true in a disciple?</li>
+<li>Why do you think Jesus chose to give Thomas the evidence he demanded (John 20:26–27) rather than rebuking him more sharply?</li>
+<li>What does Thomas’ confession (John 20:28) teach us about the proper endpoint of apologetics/evidence?</li>
+</ol>
+<div><b><h2>Deep study (text-observation)</h2></b></div>
+<ol>
+<li>In John 20:24–29, what verbs describe Thomas’ posture before and after Jesus appears?</li>
+<li>Compare the disciples’ testimony (“We have seen the Lord,” John 20:25) with John’s purpose statement (John 20:31). What role does testimony play in belief?</li>
+<li>What is the significance of Jesus retaining wounds in resurrection (John 20:27)?</li>
+<li>How does John 14:5–6 connect Thomas’ question with the exclusive claims of Christ?</li>
+<li>What do you learn about the church’s posture between ascension and Pentecost in Acts 1:13–14?</li>
+</ol>
+<div><b><h2>Application and synthesis</h2></b></div>
+<ol>
+<li>What practices help you “walk by faith, not by sight” (2 Cor 5:7) without becoming naïve or gullible?</li>
+<li>How can a church community care for honest doubters while still calling for faith (John 20:27)?</li>
+<li>What does “Blessed are those who have not seen…” mean for how you read Scripture and value apostolic witness (John 20:29–31)?</li>
+<li>How might Thomas’ story reshape the label “Doubting Thomas” into something more biblically accurate?</li>
+</ol>
+<div><br></div>
+<div><b><h2>13) Prayer Response (Scripture-shaped)</h2></b></div>
+<div>Lord Jesus Christ, risen and reigning, we confess with Thomas: <b>You are our Lord and our God</b> (John 20:28). Forgive us for the ways we set conditions on trusting You—when we demand sight before faith (John 20:25). By Your mercy, speak to our unbelief: “Do not disbelieve, but believe” (John 20:27). Teach us to receive the apostolic witness written for our life (John 20:31), and make us among those who have not seen and yet believe (John 20:29). Strengthen our courage to follow You even when the path looks costly (John 11:16), and keep us devoted in prayer with Your people as we wait on Your promises (Acts 1:14). Amen.</div>
+<!-- /notesbridge:apple-html -->

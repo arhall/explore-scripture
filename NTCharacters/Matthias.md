@@ -1,0 +1,238 @@
+---
+notesbridge_uid: 46b2f0b3-0410-41c6-9560-80dd29c01638
+apple_notes_id: x-coredata://FEE55BCF-3869-47B1-B2C2-EA92DFBAB0C4/ICNote/p3827
+apple_folder_path: iCloud/Bible Character Studies/NT
+last_sync_hash: 9657e3b9f2af022614ef69d2b9a353672106e487a0914a10d08afc67faff2d15
+last_sync_at: 2025-12-31T04:23:29Z
+---
+<!-- notesbridge:apple-html -->
+<div><b><h1>Matthias</h1></b></div>
+<div><b><br></b></div>
+<div><b><h1>Matthias — Bible Character Study (Scripture-Primary)</h1></b></div>
+<div><b><h2>1) Story Summary (chronological)</h2></b></div>
+<div>Matthias appears in the Bible at a critical “in-between” moment: after Jesus’ ascension and before Pentecost. The remaining apostles return to Jerusalem, devote themselves to prayer with the broader band of disciples, and address the vacancy created by Judas Iscariot’s betrayal and death (Acts 1:12–14, 1:15–20).</div>
+<div>Peter leads the group (about 120 believers) in interpreting Judas’s fall through Scripture and proposes that another man be appointed to take Judas’s “office” (Acts 1:15–20; citing Ps 69:25; Ps 109:8). The qualifications are specific: the candidate must have accompanied Jesus and the apostles during Jesus’ earthly ministry “beginning from the baptism of John” until the ascension, so that he can serve as a witness to the resurrection alongside the Eleven (Acts 1:21–22).</div>
+<div>Two qualified men are put forward—Joseph called Barsabbas (also called Justus) and Matthias (Acts 1:23). The believers pray, explicitly appealing to the Lord as the one who “knows the hearts of all” to show whom He has chosen for this apostolic ministry (Acts 1:24–25). They then cast lots, and the lot falls to Matthias. He is “numbered with the eleven apostles,” restoring the apostolic band as “the Twelve” (Acts 1:26).</div>
+<div><b>Where his story begins/ends in Scripture:</b> Matthias’s narrative begins and ends in <b>Acts 1:23–26</b>. After this, the Bible does not record any further deeds or words of Matthias by name.</div>
+<div><br></div>
+<div><b><h2>2) What They’re Known For</h2></b></div>
+<div>Matthias is most known for being <b>chosen to replace Judas Iscariot</b> among the apostles—selected in a prayerful, Scripture-shaped process to be a resurrection witness (Acts 1:21–26).</div>
+<div><b>Headline descriptors</b><br></div>
+<ul>
+<li><b>Apostolic replacement for Judas’s office</b> (Acts 1:20, 1:26)</li>
+<li><b>Qualified eyewitness companion of Jesus’ ministry</b> (Acts 1:21–22)</li>
+<li><b>Chosen through prayer and appeal to God’s heart-knowledge</b> (Acts 1:24)</li>
+<li><b>“Numbered with the eleven,” restoring the Twelve</b> (Acts 1:26)</li>
+<li><b>A quiet figure whose faithfulness is implied more than narrated</b> (Acts 1:21–23)</li>
+</ul>
+<div><br></div>
+<div><b><h2>3) Where They Appear in the Bible</h2></b></div>
+<div><b>Primary narrative locations</b><br></div>
+<ul>
+<li><b>Acts — 1:23–26 —</b> Matthias is nominated, prayed over, chosen by lot, and added to the Eleven.</li>
+</ul>
+<div><b>Secondary references (context that explains his appointment)</b><br></div>
+<ul>
+<li><b>Acts — 1:12–14 —</b> The apostles and disciples devote themselves to prayer in Jerusalem after the ascension.</li>
+<li><b>Acts — 1:15–22 —</b> Peter frames Judas’s vacancy biblically; defines apostolic qualifications.</li>
+<li><b>Psalms — 69:25 —</b> Scripture cited regarding Judas’s desolation (quoted in Acts 1:20).</li>
+<li><b>Psalms — 109:8 —</b> Scripture cited: “let another take his office” (quoted in Acts 1:20).</li>
+</ul>
+<div><b>Note:</b> Later traditions about Matthias’s ministry or death exist outside Scripture, but <b>are not recorded in the Bible</b> and should be treated as uncertain.</div>
+<div><br></div>
+<div><b><h2>4) Vital Statistics</h2></b></div>
+<div><b>Historical setting (as Scripture indicates)</b><br></div>
+<ul>
+<li><b>Timeframe:</b> The days between <b>Jesus’ ascension</b> and <b>Pentecost</b> (Acts 1:9–12; 2:1).</li>
+<li><b>Political/religious backdrop:</b> Jerusalem under Roman rule; Jewish leadership opposition already evident in the passion narratives and will intensify in Acts (cf. Acts 4:1–3).</li>
+</ul>
+<div><b>Geography</b><br></div>
+<ul>
+<li><b>Jerusalem</b> — the immediate setting for his appointment (Acts 1:12–15).</li>
+<li>Matthias had been present through Jesus’ wider ministry footprint (implied by the qualification that he accompanied them from John’s baptism onward; Acts 1:21–22), but no specific towns are assigned to him by name.</li>
+</ul>
+<div><b>Family and relationships</b><br></div>
+<ul>
+<li><b>Parents/spouse/children:</b> Not given in Scripture.</li>
+<li><b>Key relationships:</b><br></li>
+<ul>
+<li>The <b>Eleven apostles</b> (Acts 1:13, 1:26)</li>
+<li>The broader community of disciples (“about 120”) participating in the process (Acts 1:15, 1:23)</li>
+<li><b>Joseph Barsabbas/Justus</b> as the other candidate (Acts 1:23)</li>
+<li>Peter as the principal speaker guiding the assembly (Acts 1:15–22)</li>
+</ul>
+</ul>
+<div><b>Roles/offices</b><br></div>
+<ul>
+<li><b>Apostle</b> (Acts 1:26). His apostolic function is framed particularly as a <b>witness to the resurrection</b> (Acts 1:22; cf. Acts 1:8).</li>
+</ul>
+<div><b>Key turning points</b><br></div>
+<ul>
+<li><b>Public identification as a qualified candidate</b> (Acts 1:23).</li>
+<li><b>Being chosen and numbered with the apostles</b> (Acts 1:26).</li>
+</ul>
+<div><br></div>
+<div><b><h2>5) Pivotal Moments and Timeline (chronological table)</h2></b></div>
+<div><object><table cellspacing="0" cellpadding="0" style="border-collapse: collapse; direction: ltr">
+<tbody>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Event</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Reference</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Why it matters</b></div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>The disciples return to Jerusalem and devote themselves to unified prayer</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Acts 1:12–14</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Matthias’s appointment happens in a praying, worshipful, united community—leadership decisions are set in dependence on God.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Peter interprets Judas’s fall through Scripture and identifies a vacancy (“office”)</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Acts 1:15–20; Ps 69:25; Ps 109:8</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>The church treats leadership succession as under God’s Word and providence, not mere pragmatism.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Apostolic qualifications defined: companion from John’s baptism to ascension; witness to resurrection</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Acts 1:21–22</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Establishes what this unique apostolic role requires: credible eyewitness continuity centered on the risen Christ.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Two men are put forward, including Matthias</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Acts 1:23</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Suggests Matthias had a recognized reputation and history among the disciples, even if he is otherwise “hidden” in the narratives.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Prayer to the heart-knowing Lord for His choice</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Acts 1:24–25</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>The decisive appeal is to God’s knowledge and appointment, not to human insight.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Lots cast; Matthias chosen; he is numbered with the Eleven</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Acts 1:26</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>The vacancy is filled, restoring the apostolic band and preparing the community for Pentecost and witness (Acts 2:1–4).</div>
+</td></tr>
+</tbody>
+</table></object><br></div>
+<div><b><h2>6) Strengths, Weaknesses, and Heart-Level Patterns</h2></b></div>
+<div><b>Strengths (evidenced by passages)</b></div>
+<ul>
+<li><b>Long-haul faithfulness and proximity to Jesus’ ministry</b> — He had accompanied the disciples “all the time” Jesus went in and out among them, from John’s baptism to the ascension (Acts 1:21–22). That implies sustained commitment, not a late or casual association.</li>
+<li><b>Qualified to serve as a resurrection witness</b> — The explicit purpose of the replacement is to become “a witness with us to his resurrection” (Acts 1:22). Matthias meets that requirement (Acts 1:23).</li>
+<li><b>Recognized credibility in the community</b> — He is not self-appointed; he is “put forward” by the gathered believers (Acts 1:23), suggesting trust and visibility.</li>
+<li><b>Willingness to be chosen (or not chosen) under God’s decision</b> — The process places both candidates under the Lord’s choice (Acts 1:24–26), indicating humility and submission (inference anchored to the communal process, Acts 1:23–26).</li>
+</ul>
+<div><b>Weaknesses / sins / blind spots</b></div>
+<ul>
+<li><b>No explicit weaknesses are recorded</b> about Matthias in Scripture. The Bible does not narrate his later actions, failures, or growth.</li>
+<li>The one <i>nearby warning</i> is not about Matthias but about <b>Judas</b>—a sobering contrast that frames the moment (Acts 1:16–20; cf. Acts 1:25).</li>
+</ul>
+<div><b>Motives / fears / desires (careful inference anchored to text)</b></div>
+<ul>
+<li><b>Desire to be faithful to Christ and His mission</b> is implied by the required identity of the apostolic role: a witness to the resurrection (Acts 1:8, 1:22). Matthias’s eligibility suggests alignment with that calling.</li>
+<li><b>Humility before God’s sovereign choice</b> is implied by the prayer “show which one of these two you have chosen” (Acts 1:24). Matthias stands within that posture, though Scripture does not quote him.</li>
+</ul>
+<div><b>What changes (or doesn’t) over time?</b></div>
+<ul>
+<li>Scripture shows a <i>single decisive change</i>: Matthias moves from being a long-term disciple in the wider circle to being <b>numbered among the apostles</b> (Acts 1:21–23, 1:26).</li>
+<li>Beyond that, <b>Scripture is silent</b>. We should not manufacture a development arc the text does not give.</li>
+</ul>
+<div><br></div>
+<div><b><h2>7) Victories and Challenges</h2></b></div>
+<div><b>Major “wins” (with references)</b></div>
+<ul>
+<li><b>Chosen to serve in apostolic ministry</b> — Added to the Eleven as Judas’s replacement (Acts 1:26).</li>
+<li><b>Counted trustworthy as a resurrection witness</b> — Meeting the stated qualification (Acts 1:21–22).</li>
+<li><b>Part of a unified praying church at a hinge point in redemptive history</b> — The community’s devotion to prayer frames the event (Acts 1:14).</li>
+</ul>
+<div><b>Major challenges (with references)</b></div>
+<ul>
+<li><b>Stepping into the shadow of Judas’s betrayal</b> — The vacancy exists because of grievous sin and tragedy (Acts 1:16–20, 1:25). Serving faithfully would mean bearing the weight of that contrast.</li>
+<li><b>The cost of public witness in Acts</b> — While not narrated for Matthias specifically, the apostolic calling defined here (“witness”) is repeatedly met with opposition and suffering in Acts (Acts 4:18–20; 5:40–42). It is reasonable to say the office he entered carried that cost (inference grounded in Acts’ repeated pattern and in the defined role in Acts 1:8, 1:22).</li>
+</ul>
+<div><br></div>
+<div><b><h2>8) Essential Verses and Key Cross-References (organized by themes)</h2></b></div>
+<div><b>Theme: Calling and Qualification for Witness</b></div>
+<ul>
+<li><b>Acts 1:21–22</b> — Qualification and purpose: companion through Jesus’ ministry, witness to resurrection.</li>
+<li><b>Acts 1:8</b> — The risen Jesus defines the mission: Spirit-empowered witness.</li>
+<li><b>Luke 24:48</b> — Disciples as “witnesses” of these things.</li>
+<li><b>Acts 2:32</b> — “This Jesus God raised up… we all are witnesses.”</li>
+<li><b>Acts 4:20</b> — “We cannot but speak of what we have seen and heard.”</li>
+<li><b>1 John 1:1–3</b> — Apostolic testimony rooted in what was heard/seen (echoes the eyewitness theme).</li>
+</ul>
+<div><b>Theme: Scripture Fulfillment and Leadership Succession</b></div>
+<ul>
+<li><b>Acts 1:15–20</b> — Judas’s fall interpreted via Scripture.</li>
+<li><b>Psalm 69:25</b> — Cited regarding desolation (Acts 1:20).</li>
+<li><b>Psalm 109:8</b> — Cited: another takes his office (Acts 1:20).</li>
+<li><b>Ephesians 2:19–20</b> — The church built on the foundation of apostles and prophets, Christ the cornerstone.</li>
+<li><b>Revelation 21:14</b> — The “twelve” apostolic foundation imagery (note: not naming Matthias, but echoing “twelve” as a category).</li>
+</ul>
+<div><b>Theme: Prayerful Dependence and God’s Heart-Knowledge</b></div>
+<ul>
+<li><b>Acts 1:14</b> — Devoted to prayer.</li>
+<li><b>Acts 1:24</b> — “You, Lord, who know the hearts of all…”</li>
+<li><b>1 Samuel 16:7</b> — The Lord looks on the heart (theological echo of Acts 1:24).</li>
+<li><b>Proverbs 15:3</b> — The Lord’s eyes everywhere (supports divine knowledge).</li>
+<li><b>Psalm 139:1–4</b> — God’s searching knowledge (fits the appeal of Acts 1:24).</li>
+</ul>
+<div><b>Theme: Providence and the Casting of Lots (pre-Pentecost moment)</b></div>
+<ul>
+<li><b>Acts 1:26</b> — Lots cast; Matthias chosen.</li>
+<li><b>Proverbs 16:33</b> — “The lot is cast… but its every decision is from the LORD.”</li>
+<li><b>Leviticus 16:8</b> — Lots used in priestly/holy context (background for lot practice).</li>
+<li><b>Joshua 18:10</b> — Lots used in allocating inheritance (biblical precedent).</li>
+</ul>
+<div><br></div>
+<div><b><h2>9) Theology and Big Themes</h2></b></div>
+<div><b>God’s sovereignty in guiding His church</b>The community explicitly addresses the Lord as the one who knows hearts and chooses servants (Acts 1:24–25). Even the lot—an outward means—falls under God’s providential rule (Acts 1:26; cf. Prov 16:33).</div>
+<div><b>The authority of Scripture in interpreting crisis</b>Peter does not treat Judas’s betrayal as random chaos; he interprets it through “the Scripture” and applies it to the church’s present need (Acts 1:16–20; citing Ps 69:25; Ps 109:8).</div>
+<div><b>The apostolic office as resurrection testimony</b>The defining mark in the text is not charisma, strategy, or status, but suitability to bear eyewitness testimony to the risen Christ (Acts 1:21–22). This keeps the church’s foundation Christ-centered and historical, not mythical (Acts 1:8; Luke 24:48).</div>
+<div><b>The church’s life between Ascension and Pentecost</b>Acts 1 shows a dependent, waiting church: obedient (returning as instructed, Acts 1:4, 1:12), united (Acts 1:14), prayerful (Acts 1:14), Word-shaped (Acts 1:16–20), preparing for Spirit-empowered mission (Acts 1:8; 2:1–4).</div>
+<div><b>Human responsibility under divine appointment</b>They take real steps—define qualifications, nominate candidates, pray, and act (Acts 1:21–26). Yet they attribute the decisive choice to God (Acts 1:24–25).</div>
+<div><br></div>
+<div><b><h2>10) How Matthias Points Us to Christ</h2></b></div>
+<div><b>Christ centers the office: witness to </b><b><i>His</i></b><b> resurrection</b>Matthias is chosen not to draw attention to himself but to reinforce the church’s testimony that <b>Jesus is risen</b> (Acts 1:22; 2:32). His selection serves the proclamation of Christ.</div>
+<div><b>Christ rules and supplies His church after the Ascension</b>Though Jesus has ascended, the disciples treat the Lord as active—He knows hearts and chooses His servants (Acts 1:24; cf. Acts 1:9–11). This aligns with the broader NT witness that the risen Christ shepherds and builds His church (cf. Matt 16:18).</div>
+<div><b>A pattern of restoration after betrayal</b>Judas’s betrayal creates a rupture (Acts 1:16–20). The appointment of Matthias shows Christ’s community not collapsing into cynicism but being re-ordered for faithful witness (Acts 1:21–26). The story highlights that the mission continues by God’s gracious provision, not by human perfection.</div>
+<div><b>Office-and-foundation imagery ultimately belongs to Christ</b>Even where apostles are called “foundation” stones (Eph 2:20), Christ is the cornerstone (Eph 2:20). Matthias’s inclusion underscores that the foundation is not self-made; it is established by God for the sake of Christ’s dwelling-place people (Eph 2:19–22).</div>
+<div><br></div>
+<div><b><h2>11) Lessons and Applications (tied to Scripture)</h2></b></div>
+<ol>
+<li><b>Let Scripture interpret crises, not emotions alone</b> (Acts 1:16–20).</li>
+<li><b>Prioritize spiritual qualifications that fit the calling</b> (Acts 1:21–22).</li>
+<li><b>Major decisions belong in a praying community</b> (Acts 1:14, 1:24).</li>
+<li><b>Trust the Lord’s heart-knowledge when humans can’t see fully</b> (Acts 1:24; cf. 1 Sam 16:7).</li>
+<li><b>Leadership succession matters for mission continuity</b> (Acts 1:20–22, 1:26).</li>
+<li><b>Faithfulness over time often precedes public usefulness</b> (Acts 1:21–23).</li>
+<li><b>God can advance His mission even after grievous failure in leadership</b> (Acts 1:16–20, 1:26).</li>
+<li><b>The church is prepared for witness before it is empowered for witness</b>—obedience and prayer precede Pentecost (Acts 1:4, 1:14; 2:1–4).</li>
+<li><b>The goal of Christian leadership is testimony to Christ, not platform-building</b> (Acts 1:22; 2:32).</li>
+<li><b>Accept God’s choices with humility</b>—the community yields final selection to the Lord (Acts 1:24–26).</li>
+</ol>
+<div><b>Warnings to heed</b><br></div>
+<ul>
+<li><b>Judas-like proximity without true fidelity is deadly</b> (Acts 1:16–20; cf. Acts 1:25).</li>
+<li><b>Do not treat ministry offices as personal entitlement</b>—they sought “whom you have chosen” (Acts 1:24), not “whom we prefer.”</li>
+</ul>
+<div><b>Examples to imitate</b><br></div>
+<ul>
+<li><b>Unified devotion to prayer</b> (Acts 1:14).</li>
+<li><b>Word-shaped decision-making</b> (Acts 1:16–20).</li>
+<li><b>Mission-centered qualifications</b> (Acts 1:21–22).</li>
+</ul>
+<div><b>Application focus areas</b><br></div>
+<ul>
+<li><b>Personal holiness:</b> pursue long obedience in the same direction (Acts 1:21–22).</li>
+<li><b>Relationships/community:</b> cultivate unity and shared prayer before hard decisions (Acts 1:14).</li>
+<li><b>Prayer:</b> anchor choices in God’s omniscience and wisdom (Acts 1:24).</li>
+<li><b>Suffering/opposition:</b> expect witness to carry cost (Acts 1:8; Acts 4:20).</li>
+<li><b>Leadership:</b> measure readiness by fit-to-call, not visibility (Acts 1:21–22).</li>
+</ul>
+<div><br></div>
+<div><b><h2>12) Discussion and Reflection Questions (10–20)</h2></b></div>
+<div><b>Personal reflection</b><br></div>
+<ol>
+<li>What does Matthias’s hidden history (implied by Acts 1:21–22) teach you about long-term faithfulness?</li>
+<li>Where are you tempted to want “office” or recognition rather than Christ-centered service (Acts 1:24–26)?</li>
+<li>How does the prayer in Acts 1:24 reshape the way you make decisions?</li>
+</ol>
+<div><b>Small group discussion</b>4) Why do you think Acts emphasizes “witness to the resurrection” as central to apostolic ministry (Acts 1:22)? 5) What safeguards do you see in the church’s process—Scripture, qualifications, prayer, community participation (Acts 1:15–26)? 6) How should Judas’s story function as a warning for church leadership today (Acts 1:16–20)?</div>
+<div><b>Deep study (text-observation)</b>7) List every action taken by the community in Acts 1:15–26. Which are human responsibilities, and which are explicitly attributed to God? 8) What exactly are the qualifications in Acts 1:21–22, and what do they imply about the nature of apostolic testimony? 9) What Scriptures does Peter cite, and how does he apply them (Acts 1:20; Ps 69:25; Ps 109:8)? 10) What does “know the hearts of all” contribute to the logic of their decision (Acts 1:24)? 11) Why might Luke include the detail about the lot (Acts 1:26)? How does Prov 16:33 help? 12) What is emphasized more in the passage: the candidates’ personalities or God’s choice and the office’s purpose?</div>
+<div><b>Application and theology</b>13) What are wise ways to apply Acts 1 without flattening its unique, unrepeatable apostolic context (Acts 1:21–22)? 14) How does this passage prepare readers for Pentecost and the mission that follows (Acts 1:8; 2:1–4)? 15) Where do you need to practice waiting, praying, and acting in the right order (Acts 1:4, 1:14)?</div>
+<div><br></div>
+<div><b><h2>13) Prayer Response (Scripture-shaped)</h2></b></div>
+<div>Lord Jesus, You are the risen King who knows the hearts of all (Acts 1:24) and who calls Your people to be Your witnesses (Acts 1:8). Make us faithful over time, like those who followed You steadily and quietly (Acts 1:21–22). Guard us from hypocrisy and betrayal, and keep us steadfast in holiness and truth (Acts 1:16–20). Teach us to seek Your will in prayer and unity (Acts 1:14), to honor Your Word (Acts 1:16–20), and to serve for the sake of Your name rather than our own. By Your Spirit, give us courage to speak what we have seen and heard in Christ (Acts 4:20). Amen.</div>
+<!-- /notesbridge:apple-html -->

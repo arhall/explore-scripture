@@ -1,0 +1,370 @@
+---
+notesbridge_uid: a2fd7b35-f9e7-43f3-9d19-b25f353a770b
+apple_notes_id: x-coredata://FEE55BCF-3869-47B1-B2C2-EA92DFBAB0C4/ICNote/p3746
+apple_folder_path: iCloud/Bible Character Studies/OT
+last_sync_hash: d7add5910f86277c35391e7308bb725981bbdd8a4421074d69fac31c95613b6a
+last_sync_at: 2025-12-31T05:41:21Z
+---
+<!-- notesbridge:apple-html -->
+<div><h1>Ezekiel</h1></div>
+<div><br></div>
+<div><b><h1>Ezekiel — Bible Character Study</h1></b></div>
+<div><b><h2>1) Story Summary (chronological)</h2></b></div>
+<div>Ezekiel is a <b>priest turned prophet</b> called by God <b>in exile</b> among the deported community in Babylon. His story begins when “the heavens were opened” and he saw visions of God by the <b>Chebar canal</b> (Ezek 1:1–3). There, in the <b>fifth year of King Jehoiachin’s exile</b>, the LORD commissioned him as a prophet to a “rebellious house” (Ezek 2:1–7; 3:1–11).</div>
+<div>Much of Ezekiel’s early ministry is marked by <b>symbolic sign-acts</b> (bearing iniquity, depicting Jerusalem’s siege, shaving his hair) and <b>hard-edged oracles of judgment</b> explaining why Jerusalem must fall (Ezek 4:1–6:14; 12:1–28). God makes him a <b>watchman</b>—accountable to warn the wicked and the righteous alike (Ezek 3:16–21). He is also struck with a kind of <b>divinely imposed muteness</b>, speaking only when God opens his mouth (Ezek 3:26–27).</div>
+<div>A central hinge is Ezekiel’s vision of the <b>glory of the LORD departing</b> the temple because of Israel’s abominations (Ezek 8:1–11:25), paired with promises of restoration: God will gather his people, give them <b>one heart</b> and <b>a new spirit</b>, and restore covenant faithfulness (Ezek 11:14–20).</div>
+<div>After sustained warnings, the news finally arrives that <b>Jerusalem has fallen</b> (Ezek 33:21). At that point Ezekiel’s mouth is opened (Ezek 33:22), and the message turns more decisively toward <b>hope</b>: God himself will shepherd his scattered flock and set over them “one shepherd… my servant David” (Ezek 34:11–24). The LORD will act for the sake of his holy name, cleanse his people, and give them a <b>new heart</b> and <b>Spirit-enabled obedience</b> (Ezek 36:22–28). Ezekiel sees the famous vision of the <b>valley of dry bones</b>—a picture of national resurrection by the Spirit’s power (Ezek 37:1–14)—and the promised reunification of Israel (Ezek 37:15–28).</div>
+<div>The book culminates in an extended vision of a <b>future temple</b>, renewed worship, and God’s returning presence (Ezek 40:1–43:12). From the temple flows a life-giving river bringing healing and fruitfulness (Ezek 47:1–12). Ezekiel’s story ends where it began: with the reality of God’s presence—now permanently among his people—summed up in the final name of the city: <b>“The LORD is there”</b> (Ezek 48:35).</div>
+<div><b>Where his story begins:</b> Ezek 1:1–3<b>Where it ends:</b> Ezek 48:35</div>
+<div><br></div>
+<div><b><h2>2) What He’s Known For</h2></b></div>
+<div>Ezekiel is most known for receiving and communicating God’s word through <b>visions, symbolic acts, and detailed oracles</b> during the exile—especially emphasizing God’s <b>holiness</b>, the justice of the exile, and the certainty of future restoration by God’s own initiative.</div>
+<div><b>Headline descriptors</b><br></div>
+<ul>
+<li><b>Exilic prophet of the glory of God</b> (Ezek 1:28; 10:18–19; 43:1–5)</li>
+<li><b>Priest-prophet</b> (Ezek 1:3)</li>
+<li><b>Watchman accountable to warn</b> (Ezek 3:17; 33:7–9)</li>
+<li><b>Living sign to Israel</b> (Ezek 12:6, 11; 24:24, 27)</li>
+<li><b>Prophet of individual responsibility</b> (Ezek 18:1–32)</li>
+<li><b>Herald of the new heart and Spirit</b> (Ezek 36:26–27)</li>
+<li><b>Visionary of new temple / new creation river</b> (Ezek 40–48; 47:1–12)</li>
+</ul>
+<div><br></div>
+<div><b><h2>3) Where He Appears in the Bible</h2></b></div>
+<div><b><h2>Primary narrative location (main story happens)</h2></b></div>
+<ul>
+<li><b>Ezekiel</b> — <b>Ezek 1–48</b> — Ezekiel’s call, sign-acts, judgments, restoration promises, temple vision.</li>
+</ul>
+<div><b><h2>Secondary references (later mentions / echoes)</h2></b></div>
+<div>Ezekiel is <b>not explicitly named elsewhere</b> in the Old or New Testament (unlike Isaiah or Jeremiah). However, his themes and imagery are strongly <b>echoed</b> later:</div>
+<ul>
+<li><b>John</b> — <b>John 10:11–16</b> — “Good shepherd” themes resonate with Ezek 34:11–24.</li>
+<li><b>2 Corinthians</b> — <b>2 Cor 3:3–6</b> — New covenant/Spirit themes cohere with Ezek 36:26–27.</li>
+<li><b>Revelation</b> — <b>Rev 4:6–8; 11:1–2; 21:10–22:2</b> — Living creatures, temple/city vision, and river of life echo Ezek 1; 40–48; 47:1–12.</li>
+</ul>
+<div><br></div>
+<div><b><h2>4) Vital Statistics</h2></b></div>
+<div><b>Historical setting (as Scripture indicates)</b><br></div>
+<ul>
+<li>Ezekiel prophesies among the exiles in Babylon beginning in the <b>fifth year of Jehoiachin’s exile</b> (Ezek 1:2).</li>
+<li>The book contains multiple dated oracles (e.g., Ezek 8:1; 20:1; 24:1; 33:21; 40:1; 29:17), spanning many years of exile.</li>
+</ul>
+<div><b>Geography</b><br></div>
+<ul>
+<li><b>Babylonia</b>: “land of the Chaldeans” (Ezek 1:3)</li>
+<li><b>Chebar canal/river</b> (Ezek 1:1; 3:15, 23)</li>
+<li><b>Jerusalem / the temple</b> (frequent; key visions in Ezek 8–11; 40–48)</li>
+</ul>
+<div><b>Family and relationships</b><br></div>
+<ul>
+<li><b>Father:</b> Buzi (Ezek 1:3)</li>
+<li><b>Wife:</b> unnamed; called “the delight of your eyes”; her death is used as a sign (Ezek 24:15–18)</li>
+<li><b>Community ties:</b> elders of Israel come to him repeatedly (Ezek 8:1; 14:1; 20:1)</li>
+</ul>
+<div><b>Roles/offices</b><br></div>
+<ul>
+<li><b>Priest</b> (Ezek 1:3)</li>
+<li><b>Prophet</b> (Ezek 2:5; 3:1–4)</li>
+<li><b>Watchman</b> (Ezek 3:17; 33:7)</li>
+</ul>
+<div><b>Key turning points</b><br></div>
+<ul>
+<li><b>Call/commission &amp first vision</b> (Ezek 1:1–3:15)</li>
+<li><b>Appointed watchman</b> (Ezek 3:16–21)</li>
+<li><b>Glory departs the temple</b> (Ezek 10:18–19; 11:22–23)</li>
+<li><b>Personal loss as prophetic sign (wife’s death)</b> (Ezek 24:15–24)</li>
+<li><b>News of Jerusalem’s fall; mouth opened</b> (Ezek 33:21–22)</li>
+<li><b>Shift to restoration: shepherd, new heart, Spirit</b> (Ezek 34:11–24; 36:22–27)</li>
+<li><b>Dry bones / reunification hope</b> (Ezek 37:1–28)</li>
+<li><b>Temple vision; glory returns; “The LORD is there”</b> (Ezek 43:1–5; 48:35)</li>
+</ul>
+<div><br></div>
+<div><b><h2>5) Pivotal Moments and Timeline (chronological)</h2></b></div>
+<div><object><table cellspacing="0" cellpadding="0" style="border-collapse: collapse; direction: ltr">
+<tbody>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Event</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Reference</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Why it matters</b></div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezekiel among exiles; heavens opened</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 1:1–3</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Sets the exilic context; God is not confined to Jerusalem.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Vision of the LORD’s glory (living creatures/wheels)</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 1:4–28</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Establishes God’s holiness, sovereignty, and mobility—his throne is present even in exile.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Commission to a rebellious house</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 2:1–7</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Frames Ezekiel’s ministry: faithful proclamation despite resistance.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Eats the scroll</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 3:1–3</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Internalizes God’s word—sweet to the taste, though often hard in content.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Appointed watchman</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 3:16–21</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezekiel becomes morally accountable to warn; introduces personal responsibility.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Bound/mute except when God opens his mouth</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 3:26–27</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Highlights that his ministry is governed by God’s initiative, not personal agenda.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Sign-acts of siege and exile</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 4:1–6:14; 12:1–11</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Embodies the coming judgment so the people “may know” the LORD’s word is sure.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Temple abominations revealed</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 8:1–18</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Explains why judgment is just: covenant treachery in worship at the center.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Glory departs the temple</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 10:18–19; 11:22–23</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Theological climax of judgment: God’s presence withdraws from defiled worship.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Promise: new heart / new spirit (early form)</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 11:14–20</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>God’s restoration will be inward and covenantal, not merely geographic.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Wife dies; Ezekiel commanded not to mourn publicly</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 24:15–24</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Costly personal sign: exile will numb public mourning—judgment is overwhelming and deserved.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>News: Jerusalem has fallen</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 33:21</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Historical hinge that validates Ezekiel’s warnings.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezekiel’s mouth opened</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 33:22</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Marks transition: from warning to rebuilding hope and shepherding.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>God the Shepherd; one shepherd “David”</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 34:11–24</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Replaces corrupt leaders; points to righteous messianic kingship and divine care.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>“Not for your sake… but for my holy name” + cleansing</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 36:22–25</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Grounds salvation in God’s glory and covenant faithfulness.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>New heart and Spirit enabling obedience</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 36:26–27</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Core promise of regeneration and sanctifying power—God changes the people from within.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Valley of dry bones</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 37:1–14</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Picture of resurrection-like restoration by the Spirit—hopelessness overturned.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Vision of new temple and worship order</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 40:1–46:24</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Portrays ordered, holy presence and restored worship.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Glory returns to the temple</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 43:1–5</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Reversal of Ezek 10–11: God returns to dwell with his people.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>River of life from the temple</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 47:1–12</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>New-creation abundance and healing flowing from God’s presence.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Final name: “The LORD is there”</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ezek 48:35</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ends with permanent presence—ultimate hope of covenant communion.</div>
+</td></tr>
+</tbody>
+</table></object><br></div>
+<div><b><h2>6) Strengths, Weaknesses, and Heart-Level Patterns</h2></b></div>
+<div><b><h2>Strengths (evidenced in passages)</h2></b></div>
+<ul>
+<li><b>Reverent responsiveness to God’s glory</b>: He falls on his face before the vision (Ezek 1:28) and rises only when the Spirit enables (Ezek 2:1–2).</li>
+<li><b>Obedience in hard assignments</b>: He performs humiliating/difficult sign-acts (Ezek 4:1–8; 12:3–7) and bears painful personal commands (Ezek 24:15–18).</li>
+<li><b>Faithful proclamation despite resistance</b>: God warns he will face hard hearts, yet must speak (Ezek 2:3–7; 3:7–11).</li>
+<li><b>Seriousness about holiness and worship</b>: His visions center on God’s holiness, the defilement of the temple, and the necessity of purified worship (Ezek 8:5–18; 43:7–12).</li>
+<li><b>Pastoral vigilance (watchman)</b>: He is commissioned to warn clearly, emphasizing responsibility before God (Ezek 3:17–21; 33:7–9).</li>
+</ul>
+<div><b><h2>Weaknesses / limits / burdens (text-grounded)</h2></b></div>
+<div>Scripture does not spotlight “scandal” sins in Ezekiel’s life, but it does show <b>human frailty under overwhelming calling</b>:</div>
+<ul>
+<li><b>Overwhelmed / undone by glory</b>: He falls facedown at the initial vision (Ezek 1:28), needing the Spirit to set him on his feet (Ezek 2:2). This is not disobedience, but a real limitation.</li>
+<li><b>Constrained agency (muteness/binding)</b>: He is made unable to function normally—“tongue cling to the roof… mute” except when God opens his mouth (Ezek 3:26–27). The cost is real, even if not moral failure.</li>
+<li><b>Deep grief borne in silence</b>: The command not to mourn publicly at his wife’s death (Ezek 24:15–18) reveals the severe emotional weight of prophetic ministry.</li>
+</ul>
+<div><b><h2>Motives / fears / desires (careful inference anchored to text)</h2></b></div>
+<ul>
+<li><b>Consuming concern for God’s name and holiness</b>: God repeatedly frames restoration as action “for the sake of my holy name” (Ezek 36:22–23). Ezekiel’s message coheres with this priority throughout.</li>
+<li><b>Desire for covenant faithfulness rooted in inner change</b>: His oracles stress the need for a new heart and Spirit-enabled obedience (Ezek 36:26–27), implying a focus beyond external reform.</li>
+</ul>
+<div><b><h2>What changes (or doesn’t) over time?</h2></b></div>
+<ul>
+<li><b>Changes in message tone and purpose:</b> Earlier: warnings and explanations of judgment (Ezek 4–24). Later: hope, restoration, shepherding, new creation (Ezek 33–48), especially after the fall is confirmed (Ezek 33:21–22).</li>
+<li><b>Consistency in theological center:</b> God’s <b>holiness</b>, <b>sovereignty</b>, and commitment to <b>vindicate his name</b> remain constant (Ezek 1:28; 36:22–23; 43:7–8).</li>
+<li><b>Shift from imposed silence to freer speech:</b> The narrative signals a turning point when his mouth is opened after Jerusalem’s fall (Ezek 33:22).</li>
+</ul>
+<div><br></div>
+<div><b><h2>7) Victories and Challenges</h2></b></div>
+<div><b><h2>Major “wins” (obedience, influence, faithfulness)</h2></b></div>
+<ul>
+<li><b>Faithful commissioning and proclamation</b> despite expected resistance (Ezek 2:3–7; 3:7–11).</li>
+<li><b>Courageous enactment of sign-acts</b> that make judgment undeniable (Ezek 4:1–8; 12:3–11).</li>
+<li><b>Clear articulation of personal responsibility</b> before God (Ezek 18:1–32; 33:7–9).</li>
+<li><b>Hope-bearing promises</b> that shaped Israel’s understanding of restoration (Ezek 36:26–27; 37:1–14).</li>
+<li><b>Vision of God’s returning presence</b> anchoring ultimate hope (Ezek 43:1–5; 48:35).</li>
+</ul>
+<div><b><h2>Major challenges (suffering, opposition, costly calling)</h2></b></div>
+<ul>
+<li><b>Ministering to a “rebellious house”</b> with hard hearts (Ezek 2:3–7; 3:7–9).</li>
+<li><b>Public vulnerability and discomfort</b> through symbolic acts (Ezek 4:4–8; 12:5–7).</li>
+<li><b>Silence and restriction</b> as part of his prophetic role (Ezek 3:26–27).</li>
+<li><b>Profound personal loss</b> used as a sign to the people (Ezek 24:15–24).</li>
+<li><b>Bearing the weight of national catastrophe</b> and communicating God’s justice in it (Ezek 24:1–14; 33:21).</li>
+</ul>
+<div><b>Cost of faithfulness:</b> Ezekiel’s obedience is not abstract—his body, voice, and grief become part of the message (Ezek 4:4–8; 3:26–27; 24:15–18).</div>
+<div><br></div>
+<div><b><h2>8) Essential Verses and Key Cross-References (organized by themes)</h2></b></div>
+<div><b><h2>God’s glory, holiness, and presence</h2></b></div>
+<ul>
+<li><b>Ezek 1:28</b> — Ezekiel’s response to the likeness of the glory of the LORD.</li>
+<li><b>Ezek 10:18–19; 11:22–23</b> — The glory departs the temple.</li>
+<li><b>Ezek 43:1–5</b> — The glory returns to dwell among his people.</li>
+<li><b>Ezek 48:35</b> — “The LORD is there.”</li>
+</ul>
+<div><b>Cross-refs:</b> Exod 40:34–38 (glory filling tabernacle); Isa 6:1–5 (holy vision); Rev 21:22–23 (God’s presence as light).</div>
+<div><b><h2>Prophetic calling, watchman responsibility</h2></b></div>
+<ul>
+<li><b>Ezek 2:5–7</b> — Whether they hear or refuse, they will know a prophet was among them.</li>
+<li><b>Ezek 3:17</b> — “I have made you a watchman.”</li>
+<li><b>Ezek 33:7–9</b> — Watchman accountability to warn.</li>
+</ul>
+<div><b>Cross-refs:</b> Jer 1:4–10 (prophetic call); Acts 20:26–27 (warning with whole counsel motif).</div>
+<div><b><h2>Sin, judgment, and accountability</h2></b></div>
+<ul>
+<li><b>Ezek 18:4</b> — “The soul who sins shall die.”</li>
+<li><b>Ezek 18:20</b> — Individual responsibility clarified.</li>
+<li><b>Ezek 33:11</b> — God’s desire that the wicked turn and live.</li>
+</ul>
+<div><b>Cross-refs:</b> Deut 30:19–20 (choose life); Rom 2:6–11 (judgment according to deeds); Jas 1:14–15 (sin’s progression).</div>
+<div><b><h2>Restoration by God’s initiative: cleansing, new heart, Spirit</h2></b></div>
+<ul>
+<li><b>Ezek 36:22–23</b> — God acts for his name’s sake.</li>
+<li><b>Ezek 36:25</b> — Cleansing with clean water (promise).</li>
+<li><b>Ezek 36:26–27</b> — New heart; Spirit enabling obedience.</li>
+</ul>
+<div><b>Cross-refs:</b> Jer 31:31–34 (new covenant); John 3:5–8 (Spirit new birth); Titus 3:5 (washing/regeneration).</div>
+<div><b><h2>Shepherd, king, and true leadership</h2></b></div>
+<ul>
+<li><b>Ezek 34:11–16</b> — God himself seeks and feeds the sheep.</li>
+<li><b>Ezek 34:23–24</b> — One shepherd, “my servant David.”</li>
+</ul>
+<div><b>Cross-refs:</b> Ps 23 (the LORD shepherd); John 10:11–16 (Good Shepherd); Heb 13:20 (great Shepherd).</div>
+<div><b><h2>Resurrection-like hope and reunification</h2></b></div>
+<ul>
+<li><b>Ezek 37:1–14</b> — Dry bones; Spirit brings life.</li>
+<li><b>Ezek 37:24–28</b> — Davidic shepherd; covenant of peace; sanctuary among them.</li>
+</ul>
+<div><b>Cross-refs:</b> Isa 26:19 (resurrection language); Rom 8:11 (Spirit gives life); Eph 2:1–10 (from death to life).</div>
+<div><b><h2>New creation river / life from God’s presence</h2></b></div>
+<ul>
+<li><b>Ezek 47:1–12</b> — River from the temple bringing healing and fruit.</li>
+</ul>
+<div><b>Cross-refs:</b> Gen 2:10–14 (river imagery); Rev 22:1–2 (river of life).</div>
+<div><br></div>
+<div><b><h2>9) Theology and Big Themes</h2></b></div>
+<div><b><h2>God’s character revealed</h2></b></div>
+<ul>
+<li><b>Holiness and glory:</b> God’s throne-vision and the temple visions magnify his holiness (Ezek 1:28; 43:7–12).</li>
+<li><b>Sovereignty in exile:</b> God speaks and reigns in Babylon as truly as in Jerusalem (Ezek 1:1–3).</li>
+<li><b>Justice:</b> The exile is explained as covenant judgment for abominations, especially corrupt worship (Ezek 8:5–18; 24:1–14).</li>
+<li><b>Mercy grounded in God’s name:</b> Restoration is not sentimental; it is God’s determination to vindicate his holy name (Ezek 36:22–23).</li>
+<li><b>Presence as the goal:</b> The book moves from departure of glory to return of glory and permanent dwelling (Ezek 10:18–19; 43:1–5; 48:35).</li>
+</ul>
+<div><b><h2>Covenant, exile, worship, kingdom</h2></b></div>
+<ul>
+<li><b>Exile interpreted theologically:</b> Not merely geopolitics—covenant consequences (Ezek 20:1–44; 24:1–14).</li>
+<li><b>Worship and the temple:</b> Defilement leads to departure; future holiness leads to return (Ezek 8–11; 40–48).</li>
+<li><b>Kingdom leadership:</b> False shepherds are judged; God raises true shepherding under “David” (Ezek 34:1–24; 37:24–25).</li>
+</ul>
+<div><b><h2>Human nature: sin, responsibility, regeneration</h2></b></div>
+<ul>
+<li><b>Personal accountability:</b> God rejects fatalistic blame-shifting (Ezek 18:1–4, 19–20).</li>
+<li><b>Need for inner transformation:</b> The decisive fix is not mere relocation but a <b>new heart</b> and God’s <b>Spirit</b> (Ezek 36:26–27).</li>
+<li><b>Hope for the hopeless:</b> Dry bones imagery speaks to utter inability apart from divine action (Ezek 37:1–14).</li>
+</ul>
+<div><br></div>
+<div><b><h2>10) How Ezekiel Points Us to Christ</h2></b></div>
+<div><b><h2>1) The prophet office and the Word of God</h2></b></div>
+<div>Ezekiel embodies the prophetic pattern: sent to a resistant people, speaking God’s words faithfully (Ezek 2:3–7). Christ is the final and greatest prophet who speaks what he hears from the Father (cf. Deut 18:15; Acts 3:22–23), and who is himself the Word (John 1:1, 14).</div>
+<div><b><h2>2) The Shepherd promise fulfilled in Jesus</h2></b></div>
+<div>Ezekiel 34 holds together two truths: <b>God himself</b> will shepherd (Ezek 34:11–16) and God will set <b>one shepherd, “David,”</b> over them (Ezek 34:23–24). In the New Testament, Jesus identifies himself as <b>the Good Shepherd</b> who gathers one flock (John 10:11–16), fulfilling the shepherd-king hope.</div>
+<div><b><h2>3) New heart / Spirit → new covenant realities in Christ</h2></b></div>
+<div>Ezekiel’s promise of <b>new heart</b> and <b>indwelling Spirit</b> (Ezek 36:26–27) aligns with the new covenant promise (Jer 31:31–34) and is realized through Christ’s saving work and the Spirit’s application (John 3:5–8; Titus 3:5; 2 Cor 3:3–6).</div>
+<div><b><h2>4) Presence and temple fulfillment</h2></b></div>
+<div>Ezekiel’s final hope is God dwelling with his people (Ezek 48:35). The New Testament presents Jesus as the locus of God’s presence (“Immanuel,” Matt 1:23; “the Word became flesh,” John 1:14), and the end-state as God dwelling with his people forever (Rev 21:3)—echoing Ezekiel’s trajectory from lost presence to restored presence.</div>
+<div><b><h2>5) New creation river imagery</h2></b></div>
+<div>The river from the temple (Ezek 47:1–12) anticipates the river of life in the consummation (Rev 22:1–2). In Christ, living water imagery is already inaugurated (John 7:37–39), pointing from exile to renewal, from death to life.</div>
+<div><br></div>
+<div><b><h2>11) Lessons and Applications (Scripture-tied)</h2></b></div>
+<ol>
+<li><b>God is present and sovereign even in “exile” seasons</b> (Ezek 1:1–3).</li>
+<li><b>A true call to speak God’s word does not depend on audience approval</b> (Ezek 2:5–7).</li>
+<li><b>Faithfulness may require costly obedience, not convenient ministry</b> (Ezek 4:4–8; 24:15–18).</li>
+<li><b>Worship corruption is not “minor”—it provokes real judgment</b> (Ezek 8:5–18).</li>
+<li><b>God’s people cannot hide behind family history or blame-shifting</b> (Ezek 18:1–4, 20).</li>
+<li><b>Warning is love: watchman responsibility is a mercy to others</b> (Ezek 3:17–21; 33:7–9).</li>
+<li><b>God’s restoration aims at his glory and the vindication of his name</b> (Ezek 36:22–23).</li>
+<li><b>Real change requires a new heart and the Spirit’s power</b> (Ezek 36:26–27).</li>
+<li><b>Hopelessness is not final when God speaks life</b> (Ezek 37:1–14).</li>
+<li><b>Leadership matters: God opposes exploitative shepherds</b> (Ezek 34:1–10).</li>
+<li><b>God himself seeks the scattered—he is the initiator in salvation</b> (Ezek 34:11–16).</li>
+<li><b>The ultimate hope is God dwelling with his people</b> (Ezek 43:1–5; 48:35).</li>
+</ol>
+<div><b><h2>Warnings to heed</h2></b></div>
+<ul>
+<li><b>Treating sin as inevitable or inherited excuses</b> (Ezek 18:1–4).</li>
+<li><b>Defiling worship with idols while assuming God’s presence is guaranteed</b> (Ezek 8:5–18; 10:18–19).</li>
+<li><b>Leadership that feeds itself instead of the flock</b> (Ezek 34:2–10).</li>
+</ul>
+<div><b><h2>Examples to imitate</h2></b></div>
+<ul>
+<li><b>Reverent responsiveness to God’s holiness</b> (Ezek 1:28; 2:2).</li>
+<li><b>Costly obedience under God’s command</b> (Ezek 12:3–7; 24:15–18).</li>
+<li><b>Clarity about repentance and turning to live</b> (Ezek 33:11; 18:30–32).</li>
+</ul>
+<div><b>Application snapshots</b><br></div>
+<ul>
+<li><b>Personal holiness:</b> Put away “idols of the heart” (Ezek 14:1–6).</li>
+<li><b>Relationships:</b> Practice responsibility and repentance rather than blame (Ezek 18:20–32).</li>
+<li><b>Prayer:</b> Pray for God to act for his name, cleansing and renewing hearts (Ezek 36:22–27).</li>
+<li><b>Suffering:</b> God may make your pain meaningful without making it easy (Ezek 24:15–24).</li>
+<li><b>Decision-making/leadership:</b> Shepherd rather than exploit; seek the lost (Ezek 34:4, 11–16).</li>
+</ul>
+<div><br></div>
+<div><b><h2>12) Discussion and Reflection Questions</h2></b></div>
+<div><b><h2>Personal reflection</h2></b></div>
+<ol>
+<li>Where am I tempted to think God is “far away” because circumstances feel like exile? (Ezek 1:1–3)</li>
+<li>What “idols of the heart” compete with worship and obedience? (Ezek 14:1–6)</li>
+<li>Do I resist responsibility by blaming others, my past, or my environment? (Ezek 18:1–4, 20)</li>
+<li>What would Spirit-enabled obedience look like in one concrete habit this week? (Ezek 36:26–27)</li>
+<li>Where do I feel like “dry bones,” and what would it mean to ask God for life? (Ezek 37:1–14)</li>
+</ol>
+<div><b><h2>Small group discussion</h2></b></div>
+<ol>
+<li>Why is Ezekiel’s opening vision (Ezek 1) crucial for understanding the exile?</li>
+<li>How do Ezekiel’s sign-acts function as mercy as well as warning? (Ezek 4; 12)</li>
+<li>What does the departure of glory teach about God’s holiness and worship? (Ezek 10–11)</li>
+<li>How do Ezek 34’s shepherd promises reshape our view of leadership in the people of God? (Ezek 34:1–24)</li>
+<li>How do you hold together “not for your sake” (Ezek 36:22) with God’s real compassion for his people?</li>
+</ol>
+<div><b><h2>Deep study (text-observation)</h2></b></div>
+<ol>
+<li>Track the phrase “that they/you shall know that I am the LORD” across the book—what triggers it?</li>
+<li>In Ezek 18, what arguments does God use to dismantle the proverb about sour grapes? (Ezek 18:1–20)</li>
+<li>In Ezek 36:22–27, list everything God promises to do. What is the human role in the passage?</li>
+<li>In Ezek 37:1–14, what is the role of the word (“prophesy”) and the Spirit (“breath”)?</li>
+<li>Compare the glory’s departure (Ezek 10–11) with the glory’s return (Ezek 43). What changes?</li>
+<li>What does the river in Ezek 47 heal, and what does it produce? What might that signify biblically? (Ezek 47:8–12)</li>
+<li>Why does the book end with a name (“The LORD is there”)? What does that say about the goal of redemption? (Ezek 48:35)</li>
+</ol>
+<div><br></div>
+<div><b><h2>13) Prayer Response</h2></b></div>
+<div>Lord God, the Holy One whose glory fills heaven and earth, we confess that our hearts are prone to idols and excuses. You are righteous in judgment and merciful in restoring. For the sake of your holy name, cleanse us and give us a new heart; put your Spirit within us and cause us to walk in your ways (Ezek 36:25–27). When we feel like dry bones, speak your life-giving word and breathe by your Spirit that we may live (Ezek 37:5–6, 14). Make us faithful watchmen who warn with love and live with integrity before you (Ezek 3:17–21). Shepherd us by your promised Shepherd-King, and dwell among us until it can truly be said of your people: “The LORD is there” (Ezek 34:23; 48:35). Amen.</div>
+<!-- /notesbridge:apple-html -->

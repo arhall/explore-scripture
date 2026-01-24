@@ -131,6 +131,23 @@ class TestEntitiesSystem:
         # At least one of these should exist for a valid entity page
         assert len(info_sections) > 0 or len(book_references) > 0, "No entity information or book references found"
 
+    def test_entity_profile_content_loads(self, chrome_driver):
+        """Test that character profile content loads on entity pages."""
+        entity_id = "p.david--951bc327"
+        chrome_driver.get(f"{self.base_url}/entities/{entity_id}/")
+
+        WebDriverWait(chrome_driver, 10).until(
+            EC.presence_of_element_located((By.TAG_NAME, "h1"))
+        )
+
+        # Wait for profile content to load
+        WebDriverWait(chrome_driver, 15).until(
+            lambda driver: driver.find_element(By.ID, "entityProfileContent").text.strip() != ""
+        )
+
+        profile_section = chrome_driver.find_element(By.ID, "entityProfile")
+        assert profile_section.is_displayed(), "Character profile section is not visible"
+
     def test_entity_cross_references(self, chrome_driver):
         """Test cross-references between entities and books."""
         # Navigate to a book page that should have entities
@@ -189,6 +206,32 @@ class TestEntitiesSystem:
                 
                 # Should have at least some characters from Genesis
                 assert len(visible_cards) > 0, "No entities shown after filtering by Genesis"
+
+    def test_entities_filter_character_study_and_testament(self, chrome_driver):
+        """Test filtering by character study availability and testament."""
+        chrome_driver.get(f"{self.base_url}/entities/")
+
+        WebDriverWait(chrome_driver, 10).until(
+            EC.presence_of_element_located((By.TAG_NAME, "body"))
+        )
+
+        study_filter = WebDriverWait(chrome_driver, 10).until(
+            EC.presence_of_element_located((By.ID, "studyFilter"))
+        )
+        testament_filter = WebDriverWait(chrome_driver, 10).until(
+            EC.presence_of_element_located((By.ID, "testamentFilter"))
+        )
+
+        from selenium.webdriver.support.ui import Select
+        Select(study_filter).select_by_value("yes")
+        Select(testament_filter).select_by_value("OT")
+
+        time.sleep(2)
+
+        entity_cards = chrome_driver.find_elements(By.CSS_SELECTOR, ".entity-card, .character-card")
+        visible_cards = [card for card in entity_cards if card.is_displayed()]
+
+        assert len(visible_cards) > 0, "No entities shown after filtering by character study and OT"
 
     def test_entity_responsive_design(self, chrome_driver):
         """Test entity pages work on mobile viewport."""

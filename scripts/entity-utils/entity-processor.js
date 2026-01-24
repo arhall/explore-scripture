@@ -194,6 +194,166 @@ const BOOK_ABBREVIATIONS = {
   Revelation: 'Revelation',
 };
 
+const ENTITY_TYPE_ALIASES = {
+  practice: 'concept',
+};
+
+const KNOWN_ENTITY_TYPES = new Set([
+  'person',
+  'divine',
+  'place',
+  'title',
+  'figure',
+  'event',
+  'group',
+  'concept',
+]);
+
+const PLACE_CATEGORIES = new Set([
+  'place',
+  'city',
+  'region',
+  'province',
+  'site',
+  'town',
+  'village',
+  'land',
+  'landform',
+  'landscape',
+  'mount',
+  'mountain',
+  'river',
+  'sea',
+  'body-of-water',
+  'island',
+  'harbor',
+  'port',
+  'port-city',
+  'heavenly-city',
+  'holy-mount',
+  'royal-mount',
+  'battle-site',
+  'place-of-execution',
+  'road',
+  'gate',
+  'fortification',
+  'district',
+  'realm',
+  'habitat',
+  'garden',
+  'valley',
+  'wilderness',
+  'desert',
+  'sanctuary',
+  'holy-space',
+  'cult-site',
+  'worship-site',
+  'sacred-geo',
+]);
+
+const PLACE_CATEGORY_SUFFIXES = [
+  '-city',
+  '-mount',
+  '-mountain',
+  '-river',
+  '-sea',
+  '-island',
+  '-valley',
+  '-harbor',
+  '-port',
+];
+
+const GROUP_CATEGORIES = new Set([
+  'nation',
+  'peoples',
+  'people',
+  'tribe',
+  'family',
+  'assembly',
+  'council',
+  'household',
+  'royal-court',
+]);
+
+const EVENT_CATEGORIES = new Set([
+  'judgment',
+  'festival',
+  'war',
+  'vision',
+  'lament',
+  'oracle',
+  'prophecy',
+  'theophany',
+  'sign',
+  'portent',
+  'deliverance',
+  'exile',
+  'return',
+  'restoration',
+  'renewal',
+  'reversal',
+  'object-lesson',
+  'day-of-yhwh',
+  'call',
+  'commission',
+  'preaching',
+  'discourse',
+  'battle-aftermath',
+  'warfare',
+  'confession',
+  'intercession',
+  'prayer',
+  'apocalypse',
+]);
+
+const EVENT_CATEGORY_SUFFIXES = [
+  '-war',
+  '-battle',
+  '-judgment',
+  '-vision',
+  '-lament',
+  '-prophecy',
+  '-oracle',
+  '-festival',
+  '-theophany',
+  '-sign',
+  '-portent',
+];
+
+function normalizeEntityType(type) {
+  if (!type) return '';
+  const lowerType = type.toLowerCase();
+  return ENTITY_TYPE_ALIASES[lowerType] || lowerType;
+}
+
+function categoryEndsWith(category, suffixes) {
+  return suffixes.some(suffix => category.endsWith(suffix));
+}
+
+function resolveEntityType(entity) {
+  const baseType = normalizeEntityType(entity.type);
+  if (baseType && baseType !== 'entity' && KNOWN_ENTITY_TYPES.has(baseType)) {
+    return baseType;
+  }
+
+  const category = (entity.category || '').toLowerCase();
+  if (!category) {
+    return baseType || 'concept';
+  }
+
+  if (PLACE_CATEGORIES.has(category) || categoryEndsWith(category, PLACE_CATEGORY_SUFFIXES)) {
+    return 'place';
+  }
+  if (GROUP_CATEGORIES.has(category)) {
+    return 'group';
+  }
+  if (EVENT_CATEGORIES.has(category) || categoryEndsWith(category, EVENT_CATEGORY_SUFFIXES)) {
+    return 'event';
+  }
+
+  return 'concept';
+}
+
 /**
  * Parse chapter references from entity reference strings
  */
@@ -242,7 +402,7 @@ function parseReferences(references = []) {
 /**
  * Calculate entity score for sorting
  */
-function calculateEntityScore(entity, bookName, refCount) {
+function calculateEntityScore(entity, bookName, refCount, entityType) {
   let score = refCount;
 
   // Type weights
@@ -254,9 +414,10 @@ function calculateEntityScore(entity, bookName, refCount) {
     figure: 2,
     event: 4,
     group: 6,
+    concept: 2,
   };
 
-  score += typeWeights[entity.type] || 1;
+  score += typeWeights[entityType || entity.type] || 1;
 
   // Boost for longer blurbs (more important entities typically have more content)
   if (entity.blurb && entity.blurb.length > 200) {
@@ -347,11 +508,14 @@ async function processEntities() {
       // Parse references to get book/chapter mappings (cached for performance)
       const bookChapters = parseReferences(entity.references);
 
+      // Disambiguate generic entity types for better UX and search relevance
+      const resolvedType = resolveEntityType(entity);
+
       // Create optimized entity summary for book pages
       const entitySummary = {
         id: canonicalId,
         name: entity.name,
-        type: entity.type,
+        type: resolvedType,
         role: entity.category || 'unknown',
         refs_count: entity.references ? entity.references.length : 0,
       };
@@ -359,6 +523,7 @@ async function processEntities() {
       // Create full entity data for global pages (shallow copy for performance)
       const fullEntity = Object.assign({}, entity, {
         id: canonicalId,
+        type: resolvedType,
         book_references: {},
       });
 
@@ -369,7 +534,7 @@ async function processEntities() {
           const bookEntitySummary = {
             ...entitySummary,
             refs_count: chapters.size,
-            score: calculateEntityScore(entity, bookName, chapters.size),
+            score: calculateEntityScore(entity, bookName, chapters.size, resolvedType),
           };
           bookEntities.get(bookName).push(bookEntitySummary);
 

@@ -1,0 +1,383 @@
+---
+notesbridge_uid: bda8f5d2-d5cd-41ad-9e19-78f6cd178dce
+apple_notes_id: x-coredata://FEE55BCF-3869-47B1-B2C2-EA92DFBAB0C4/ICNote/p3668
+apple_folder_path: iCloud/Bible Character Studies/OT
+last_sync_hash: e3208b47fefa6af1d691a826c2242e779a8c0935365e56e483faa6a3e467b6dc
+last_sync_at: 2025-12-31T06:03:47Z
+---
+<!-- notesbridge:apple-html -->
+<div><h1>David</h1></div>
+<div><br></div>
+<div><b><h1>Bible Character Study: David</h1></b></div>
+<div><b><h2>1) Story Summary (Chronological)</h2></b></div>
+<div>David’s story begins as a young shepherd from Bethlehem, the youngest son of Jesse, chosen by God and anointed by Samuel to replace Saul as king (1 Sam 16:1–13). He rises to national attention by defeating Goliath in the name of the LORD, displaying faith that God saves not by human strength but by His own power (1 Sam 17:45–47). David enters Saul’s court, serves as a warrior and musician, and forms a covenant friendship with Jonathan, Saul’s son (1 Sam 18:1–5; 19:1–7; 20:16–17, 41–42).</div>
+<div>As Saul’s jealousy hardens, David becomes a fugitive for years—hiding, suffering betrayal, gathering distressed followers, and repeatedly refusing to kill Saul when given the chance, because Saul is “the LORD’s anointed” (1 Sam 19:9–12; 22:1–2; 24:1–7; 26:8–11). After Saul and Jonathan die (1 Sam 31:1–6), David becomes king over Judah in Hebron (2 Sam 2:1–4), then over all Israel (2 Sam 5:1–5). He captures Jerusalem and makes it his political center (2 Sam 5:6–10), and he brings the ark toward Jerusalem, emphasizing worship and God’s presence among His people (2 Sam 6:12–19).</div>
+<div>At the height of David’s reign, God makes a covenant promise that David’s house and throne will be established, and that God will raise up a royal descendant with an enduring kingdom (2 Sam 7:8–16). Yet David later commits grievous sin with Bathsheba—adultery, deception, and the arranged death of Uriah (2 Sam 11:2–17). Confronted by Nathan, David confesses (2 Sam 12:13), but the consequences ripple through his household: tragedy, violence, and fracture (2 Sam 12:10–12; 13:1–29; 15:1–14). Absalom’s rebellion drives David temporarily from Jerusalem (2 Sam 15–16), though God preserves him and restores the kingdom (2 Sam 18:6–15; 19:9–15).</div>
+<div>Near the end of his life, David sins again by numbering the people, and the resulting judgment leads to an altar site that becomes central to Israel’s worship future (2 Sam 24:10–25; 1 Chron 21:1–28). David prepares for the temple (which he is not allowed to build) and publicly charges Solomon to serve the LORD with a whole heart (1 Chron 22:7–10; 28:9–10). David’s story ends with his death after a long reign and Solomon’s enthronement (1 Kings 2:1–12; 1 Chron 29:26–28). David continues to be discussed throughout Scripture as the archetypal king and the covenant line from which the Messiah comes (Matt 1:1; Luke 1:32–33; Acts 13:22–23).</div>
+<div><br></div>
+<div><b><h2>2) What David Is Known For</h2></b></div>
+<div>David is most known as <b>the LORD’s chosen king</b>, a shepherd-warrior-poet whose life displays both remarkable faith and sobering failure, and whose dynasty is central to God’s kingdom promises (1 Sam 16:12–13; 2 Sam 7:12–16).</div>
+<div><b>Headline descriptors</b><br></div>
+<ul>
+<li><b>Anointed “man after God’s heart”</b> (1 Sam 13:14; Acts 13:22)</li>
+<li><b>Giant-slayer who trusted the LORD</b> (1 Sam 17:45–47)</li>
+<li><b>Fugitive who refused vengeance</b> (1 Sam 24:6; 26:9–11)</li>
+<li><b>Unifier king who established Jerusalem</b> (2 Sam 5:6–10)</li>
+<li><b>Worshiper/psalmist who sought God in prayer</b> (e.g., Ps 23:1; Ps 27:4; Ps 51:1–4)</li>
+<li><b>Recipient of the Davidic covenant</b> (2 Sam 7:8–16)</li>
+<li><b>Sinner who truly confessed and repented</b> (2 Sam 12:13; Ps 51:10–12)</li>
+</ul>
+<div><br></div>
+<div><b><h2>3) Where David Appears in the Bible</h2></b></div>
+<div><b><h2>Primary narrative locations (main story)</h2></b></div>
+<ul>
+<li><b>Ruth — 4:17–22</b> — Genealogy leading to David (his family line is introduced).</li>
+<li><b>1 Samuel — 16:1–31:13</b> — Anointing, Goliath, Saul’s court, exile, Saul’s death.</li>
+<li><b>2 Samuel — 1:1–24:25</b> — Kingship, Jerusalem, covenant, sin, family turmoil, restoration, census.</li>
+<li><b>1 Kings — 1:1–2:12</b> — Succession to Solomon; David’s final charge and death.</li>
+<li><b>1 Chronicles — 10:1–29:30</b> — Parallel history highlighting worship, organization, temple preparations.</li>
+</ul>
+<div><b><h2>Secondary references (later mentions, summaries, teachings)</h2></b></div>
+<ul>
+<li><b>2 Chronicles — 1:1; 6:4–17; 7:17–18</b> — Davidic covenant referenced in Solomon’s era.</li>
+<li><b>Psalms — many superscriptions and Davidic prayers</b> — David as worshiper/poet (e.g., Ps 3 title; Ps 51 title; Ps 23; Ps 27; Ps 110).</li>
+<li><b>Isaiah — 9:6–7; 11:1–10; 55:3–4</b> — Messianic hope tied to David’s line and covenant.</li>
+<li><b>Jeremiah — 23:5–6; 33:14–17</b> — Righteous Branch from David.</li>
+<li><b>Ezekiel — 34:23–24; 37:24–25</b> — “David” as shorthand for the promised shepherd-king.</li>
+<li><b>Hosea — 3:5</b> — Israel returns seeking the LORD and “David their king.”</li>
+<li><b>Amos — 9:11</b> — Restoration of “the booth of David.”</li>
+<li><b>Matthew — 1:1; 9:27; 21:9</b> — Jesus identified as “Son of David.”</li>
+<li><b>Luke — 1:32–33; 2:4; 20:41–44</b> — Davidic throne promise; David’s city; David’s “Lord.”</li>
+<li><b>Acts — 2:25–36; 13:22–23, 34–37</b> — David as prophet/witness to resurrection and Messiah.</li>
+<li><b>Romans — 1:3–4</b> — Jesus descended from David “according to the flesh.”</li>
+<li><b>Hebrews — 11:32</b> — David among examples of faith.</li>
+<li><b>Revelation — 5:5; 22:16</b> — Jesus as Root/Offspring of David.</li>
+</ul>
+<div><br></div>
+<div><b><h2>4) Vital Statistics</h2></b></div>
+<div><b>Historical setting (as Scripture indicates)</b><br></div>
+<ul>
+<li>Transition from the <b>period of the judges</b> to the <b>monarchy</b> (1 Sam 8:4–7; 10:1; 13:1–2).</li>
+<li>David reigns <b>after Saul</b>, first in Hebron, then over all Israel (2 Sam 2:1–4; 5:1–5).</li>
+<li>Exact dates are debated; Scripture’s emphasis is theological and historical rather than providing a modern calendar.</li>
+</ul>
+<div><b>Geography strongly associated</b><br></div>
+<ul>
+<li><b>Bethlehem</b> (birthplace/roots; 1 Sam 16:1, 4; Luke 2:4)</li>
+<li><b>Valley of Elah</b> (Goliath; 1 Sam 17:2, 19)</li>
+<li><b>Nob</b> (priestly aid; 1 Sam 21:1–6)</li>
+<li><b>Cave of Adullam</b> (fugitive gathering; 1 Sam 22:1–2)</li>
+<li><b>En-gedi</b> (spares Saul; 1 Sam 24:1–7)</li>
+<li><b>Ziklag</b> (Philistine territory base; 1 Sam 27:5–7; 30:1–6)</li>
+<li><b>Hebron</b> (first kingship; 2 Sam 2:1–4)</li>
+<li><b>Jerusalem/Zion</b> (captured/established; ark brought; 2 Sam 5:6–10; 6:12–17)</li>
+</ul>
+<div><b>Family and relationships</b><br></div>
+<ul>
+<li><b>Father:</b> Jesse (1 Sam 16:1)</li>
+<li><b>Mother:</b> not named in the main narrative (explicit details limited).</li>
+<li><b>Brothers:</b> incl. Eliab (1 Sam 16:6–11; 17:28)</li>
+<li><b>Closest friend:</b> Jonathan (1 Sam 18:1–4; 20:16–17)</li>
+<li><b>Wives:</b> Michal (1 Sam 18:27), Abigail (1 Sam 25:39–42), Bathsheba (2 Sam 11:27); others mentioned (2 Sam 3:2–5; 5:13).</li>
+<li><b>Children (selected):</b> Amnon, Absalom, Solomon (2 Sam 3:2–3; 12:24; 13:1; 15:1).</li>
+<li><b>Key allies:</b> Samuel (1 Sam 16:13), Nathan (2 Sam 12:1–13), Gad (2 Sam 24:11–14), Joab (2 Sam 2:13–17; 8:16).</li>
+<li><b>Key enemies/opponents:</b> Goliath/Philistines (1 Sam 17:4–11), Saul (1 Sam 18:10–11; 19:10), Absalom (2 Sam 15:10–14), internal rivals (e.g., Sheba; 2 Sam 20:1–2).</li>
+</ul>
+<div><b>Roles/offices</b><br></div>
+<ul>
+<li><b>Shepherd</b> (1 Sam 16:11; 17:34–35)</li>
+<li><b>Warrior/commander</b> (1 Sam 18:5, 14–16)</li>
+<li><b>King</b> (2 Sam 5:3–5)</li>
+<li><b>Psalmist/worship leader</b> (2 Sam 6:14–15; many psalms associated with him)</li>
+<li><b>Covenant recipient</b> of a dynastic promise (2 Sam 7:12–16)</li>
+</ul>
+<div><b>Key turning points</b><br></div>
+<ul>
+<li>Anointed by Samuel (1 Sam 16:12–13)</li>
+<li>Defeats Goliath (1 Sam 17:45–50)</li>
+<li>Flees Saul; learns restraint/faith under pressure (1 Sam 19–26)</li>
+<li>Becomes king; unites Israel (2 Sam 5:1–5)</li>
+<li>Receives the Davidic covenant (2 Sam 7:8–16)</li>
+<li>Falls into sin with Bathsheba; confronted and confesses (2 Sam 11–12)</li>
+<li>Endures Absalom’s rebellion (2 Sam 15–19)</li>
+<li>Census and altar site (2 Sam 24:10–25)</li>
+<li>Prepares for temple; charges Solomon (1 Chron 22:7–10; 28:9–10)</li>
+</ul>
+<div><br></div>
+<div><b><h2>5) Pivotal Moments and Timeline (Decisive Events)</h2></b></div>
+<div><object><table cellspacing="0" cellpadding="0" style="border-collapse: collapse; direction: ltr">
+<tbody>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Event</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Reference</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Why it matters</b></div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>David anointed by Samuel</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>1 Sam 16:12–13</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>God chooses David by His own criteria, not human appearance (1 Sam 16:7).</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>David defeats Goliath</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>1 Sam 17:45–50</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Establishes David’s faith-centered identity and public emergence; God’s deliverance theme (1 Sam 17:47).</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Covenant friendship with Jonathan</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>1 Sam 18:1–4; 20:16–17</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Shows loyal love and God’s providence through relationships in hostile seasons.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>David spares Saul (first major instance)</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>1 Sam 24:4–7</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>David refuses vengeance and honors the LORD’s anointed, trusting God’s timing.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>David spares Saul again</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>1 Sam 26:9–11</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Reinforces David’s restraint and fear of the LORD under extreme pressure.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Saul and Jonathan die; David laments</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Sam 1:17–27</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>David models grief without triumphalism; transitions to kingship.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>David made king over Judah</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Sam 2:1–4</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>First stage of his reign; beginning of national consolidation.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>David made king over all Israel</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Sam 5:1–5</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Unification of the tribes; fulfillment of God’s intention for kingship direction.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jerusalem captured; established</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Sam 5:6–10</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Political and spiritual center set; “City of David.”</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Ark brought to Jerusalem</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Sam 6:12–19</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Worship and God’s presence prioritized; David leads as worshiper-king.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Davidic covenant given</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Sam 7:8–16</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Foundational kingdom promise: David’s house and future king in God’s plan.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Sin with Bathsheba; Uriah killed</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Sam 11:2–17</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Turning point revealing severe moral failure; sets stage for discipline and fallout.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Nathan confronts; David confesses</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Sam 12:1–13</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>A decisive repentance moment (“I have sinned against the LORD”).</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Absalom’s rebellion</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Sam 15:10–14</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Kingdom crisis; consequences within David’s house; tests David’s faith and leadership.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>David restored after Absalom’s defeat</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Sam 19:9–15</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>God preserves David’s reign despite collapse and grief (2 Sam 18:33).</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Census; judgment; altar site secured</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>2 Sam 24:10–25</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Shows pride/distrust consequences; ends with mercy and a worship site tied to temple future (1 Chron 21:18–28).</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>David charges Solomon; temple preparations</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>1 Chron 22:7–10; 28:9–10</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>David hands off mission with a call to wholehearted devotion.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>David dies; Solomon established</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>1 Kings 2:1–12</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Closes David’s reign; transition to the next phase of the kingdom story.</div>
+</td></tr>
+</tbody>
+</table></object><br></div>
+<div><b><h2>6) Strengths, Weaknesses, and Heart-Level Patterns</h2></b></div>
+<div><b><h2>Strengths (with textual evidence)</h2></b></div>
+<ul>
+<li><b>Faith in the LORD over human strength</b>: David frames Goliath’s battle as the LORD’s, not his own skill (1 Sam 17:45–47).</li>
+<li><b>Reverence and restraint (refusing revenge)</b>: David will not strike Saul because Saul is “the LORD’s anointed” (1 Sam 24:6; 26:9–11).</li>
+<li><b>Worship and delight in God</b>: David’s desire centers on God’s presence (Ps 27:4); he shepherds Israel with integrity (Ps 78:70–72).</li>
+<li><b>Capacity for genuine confession</b>: When confronted, David plainly admits sin (2 Sam 12:13) and pleads for heart renewal (Ps 51:10–12).</li>
+<li><b>Leadership and courage under pressure</b>: He strengthens himself in the LORD amid crisis (1 Sam 30:6) and seeks God’s direction (2 Sam 5:19).</li>
+</ul>
+<div><b><h2>Weaknesses / sins / blind spots (with brief context)</h2></b></div>
+<ul>
+<li><b>Lust → adultery → deceit → murder</b>: David takes Bathsheba and engineers Uriah’s death (2 Sam 11:2–17). This is not a “momentary slip” but a chain of compounding sin.</li>
+<li><b>Misuse of power</b>: The Bathsheba narrative explicitly shows royal power used to take and to conceal (2 Sam 11:4–15).</li>
+<li><b>Family leadership failures</b>: David’s household becomes marked by grievous conflict (2 Sam 13:1–29; 15:1–14). The text highlights painful consequences without excusing David.</li>
+<li><b>Pride or misplaced security (census)</b>: David later “struck” by conscience admits sin after numbering the people (2 Sam 24:10), implying a heart posture problem even if motives are debated.</li>
+<li><b>Complicated marital pattern (multiple wives/concubines)</b>: David’s expanding household is noted (2 Sam 5:13; 3:2–5), and the narrative later displays family fracture (2 Sam 13–18).</li>
+</ul>
+<div><b><h2>Motives / fears / desires (careful inferences anchored to text)</h2></b></div>
+<ul>
+<li><b>Desire for God’s presence and worship</b>: David’s actions around the ark and his psalms show a God-centered longing (2 Sam 6:14–17; Ps 27:4).</li>
+<li><b>Fear of the LORD shaping ethics</b>: His refusal to kill Saul is explicitly tied to reverence for God’s anointed (1 Sam 24:6).</li>
+<li><b>Desire for legacy/house building (mixed)</b>: David wants to build God a “house,” but God redirects him and promises to build David a “house” (dynasty) instead (2 Sam 7:1–11).</li>
+<li><b>Moments of self-protective pragmatism</b>: David seeks refuge among Philistines during Saul’s pursuit (1 Sam 27:1–7), showing complex survival decisions in a hostile world.</li>
+</ul>
+<div><b><h2>What changes (or doesn’t) over time?</h2></b></div>
+<ul>
+<li><b>Consistent</b>: David repeatedly shows <b>reverence for the LORD</b> and a reflex to seek God (1 Sam 24:6; 2 Sam 5:19).</li>
+<li><b>Tragically revealed</b>: When secure in power, David’s <b>capacity for grave compromise</b> surfaces (2 Sam 11:2–17).</li>
+<li><b>Hopeful</b>: David’s pattern of <b>real repentance</b> remains a defining mark after sin is exposed (2 Sam 12:13; Ps 51:1–4).</li>
+</ul>
+<div><br></div>
+<div><b><h2>7) Victories and Challenges</h2></b></div>
+<div><b><h2>Major “wins” (with references)</h2></b></div>
+<ul>
+<li><b>Goliath defeated by faith</b> (1 Sam 17:45–50)</li>
+<li><b>Repeated mercy toward Saul</b> (1 Sam 24:6–7; 26:9–11)</li>
+<li><b>Kingdom unified under David</b> (2 Sam 5:1–5)</li>
+<li><b>Jerusalem established</b> (2 Sam 5:6–10)</li>
+<li><b>Worship centrality: ark brought up</b> (2 Sam 6:12–19)</li>
+<li><b>Davidic covenant received</b> (2 Sam 7:8–16)</li>
+<li><b>Deliverance in crisis: Ziklag</b>—David strengthens himself in the LORD and pursues wisely (1 Sam 30:6–8, 18–20)</li>
+</ul>
+<div><b><h2>Major challenges (temptations, suffering, opposition)</h2></b></div>
+<ul>
+<li><b>Long unjust persecution by Saul</b> (1 Sam 19:10–12; 23:14–15)</li>
+<li><b>Moral collapse with Bathsheba/Uriah</b> (2 Sam 11:2–17)</li>
+<li><b>Painful consequences inside his family</b> (2 Sam 12:10–12; 13:1–29; 15:1–14)</li>
+<li><b>Betrayal and exile during Absalom’s coup</b> (2 Sam 15:13–14; 16:5–8)</li>
+<li><b>Grief that does not cancel duty</b>: David mourns deeply even as king (2 Sam 18:33)</li>
+<li><b>Census sin and judgment</b> (2 Sam 24:10–17)</li>
+</ul>
+<div><b>Cost of faithfulness / consequences of compromise</b><br></div>
+<ul>
+<li>Faithfulness often costs David comfort and safety (years of exile; 1 Sam 22:1–2; 23:14).</li>
+<li>Compromise costs deeply—loss, turmoil, and ongoing consequences in his household (2 Sam 12:10–12).</li>
+</ul>
+<div><br></div>
+<div><b><h2>8) Essential Verses and Key Cross-References (Organized by Theme)</h2></b></div>
+<div><b><h2>Calling and God’s choice</h2></b></div>
+<ul>
+<li><b>1 Sam 16:7</b> — God looks at the heart, not appearance.</li>
+<li><b>1 Sam 16:12–13</b> — David anointed; Spirit comes upon him.</li>
+<li><b>Acts 13:22</b> — David as “a man after my heart” (summary testimony).</li>
+</ul>
+<div><b><h2>Faith and courage</h2></b></div>
+<ul>
+<li><b>1 Sam 17:45–47</b> — Battle belongs to the LORD.</li>
+<li><b>Ps 27:1</b> — “The LORD is my light and my salvation; whom shall I fear?”</li>
+<li><b>Heb 11:32</b> — David remembered among the faithful.</li>
+</ul>
+<div><b><h2>Restraint, ethics, and trust in God’s timing</h2></b></div>
+<ul>
+<li><b>1 Sam 24:6</b> — Will not harm the LORD’s anointed.</li>
+<li><b>1 Sam 26:10–11</b> — Leaves Saul’s fate to the LORD.</li>
+<li><b>Rom 12:19</b> (cross-reference) — Vengeance belongs to God (echoes David’s restraint ethic).</li>
+</ul>
+<div><b><h2>Worship, shepherding, and prayer</h2></b></div>
+<ul>
+<li><b>2 Sam 6:14–15</b> — David worships with abandon before the LORD.</li>
+<li><b>Ps 23:1–4</b> — The LORD as shepherd (David’s shepherd-king theology).</li>
+<li><b>Ps 27:4</b> — One thing desired: dwell in God’s presence.</li>
+<li><b>Ps 63:1</b> (wilderness longing; theme aligns with David’s exile prayers).</li>
+</ul>
+<div><b><h2>Covenant and kingdom promise</h2></b></div>
+<ul>
+<li><b>2 Sam 7:12–16</b> — Davidic covenant promise of enduring throne.</li>
+<li><b>Ps 89:3–4</b> — Reflects covenant promises to David.</li>
+<li><b>Isa 9:6–7</b> (cross-reference) — Kingdom on David’s throne with endless peace.</li>
+<li><b>Luke 1:32–33</b> (cross-reference) — Jesus receives David’s throne promise fulfillment.</li>
+</ul>
+<div><b><h2>Sin, repentance, and mercy</h2></b></div>
+<ul>
+<li><b>2 Sam 12:13</b> — “I have sinned against the LORD.”</li>
+<li><b>Ps 51:1–4, 10–12</b> — Confession and heart renewal.</li>
+<li><b>1 John 1:9</b> (cross-reference) — Confession and cleansing (theme resonance).</li>
+</ul>
+<div><b><h2>Messiah and “Son of David”</h2></b></div>
+<ul>
+<li><b>Matt 1:1</b> — Jesus Christ, son of David.</li>
+<li><b>Rom 1:3–4</b> — Descended from David; declared Son of God in power.</li>
+<li><b>Acts 2:30–36</b> — David points to the resurrection and enthronement of Christ.</li>
+<li><b>Rev 22:16</b> — Jesus: Root and Offspring of David.</li>
+</ul>
+<div>(You can expand this set further by adding Ps 110:1 with Matt 22:41–45; Acts 13:34–37.)</div>
+<div><br></div>
+<div><b><h2>9) Theology and Big Themes in David’s Life</h2></b></div>
+<ul>
+<li><b>God’s sovereign election and heart-based evaluation</b>: God chooses David by His own wisdom, not outward impressiveness (1 Sam 16:7, 12–13).</li>
+<li><b>The kingdom of God mediated through covenant</b>: The Davidic covenant anchors biblical hope for a righteous king and enduring kingdom (2 Sam 7:12–16; Ps 89:3–4).</li>
+<li><b>Worship as central to leadership</b>: David’s kingship is repeatedly tied to honoring God’s presence (2 Sam 6:12–19) and shepherding God’s people (Ps 78:70–72).</li>
+<li><b>Human sin—even in the best leaders</b>: David’s fall demonstrates the depth and reach of sin (2 Sam 11:2–17) and the seriousness of God’s holiness and justice (2 Sam 12:10–12).</li>
+<li><b>Repentance and mercy without cheap grace</b>: David is forgiven (2 Sam 12:13), yet consequences remain—showing both mercy and righteous discipline.</li>
+<li><b>Suffering and preservation</b>: David’s exile years display God’s protection amid prolonged injustice (1 Sam 23:14; Ps 57:1).</li>
+<li><b>Hope for a better King</b>: David is a real king but not the final one—his life creates longing for a perfect Son of David (Isa 9:6–7; Luke 1:32–33).</li>
+</ul>
+<div><br></div>
+<div><b><h2>10) How David Points Us to Christ</h2></b></div>
+<div><b><h2>Office and pattern (biblically grounded)</h2></b></div>
+<ul>
+<li><b>Anointed king</b>: David is literally anointed (1 Sam 16:13); Jesus is the ultimate “Anointed One” (Messiah/Christ), publicly identified and empowered by the Spirit (Luke 3:21–22; Acts 10:38).</li>
+<li><b>Shepherd-king</b>: David shepherds Israel (Ps 78:70–72). Jesus fulfills the shepherd ideal perfectly as the “good shepherd” who lays down His life (John 10:11).</li>
+<li><b>Covenant line and throne promise</b>: God promises David an enduring house and throne (2 Sam 7:12–16). The New Testament explicitly ties Jesus to David’s line and throne (Matt 1:1; Luke 1:32–33; Rom 1:3–4).</li>
+</ul>
+<div><b><h2>David as witness to Messiah (OT↔NT links)</h2></b></div>
+<ul>
+<li>David’s words are treated as prophetic testimony to Christ’s resurrection and lordship (Acts 2:25–36, drawing on Ps 16; and Matt 22:41–45, drawing on Ps 110:1).</li>
+<li>The repeated cry “Son of David” around Jesus highlights Him as the promised king and deliverer (Matt 9:27; 21:9).</li>
+</ul>
+<div><b><h2>Gospel connections</h2></b></div>
+<div>David’s story teaches that:</div>
+<ul>
+<li><b>God saves by grace, not human merit</b> (compare David’s election: 1 Sam 16:7–13; with David’s failure: 2 Sam 11).</li>
+<li><b>Even the best human king is not enough</b>—we need a sinless King whose reign brings final justice and peace (Isa 9:6–7; Luke 1:32–33).</li>
+<li><b>Repentance is real</b> but cannot erase every consequence—pointing to the need for deeper cleansing and a better covenant fulfillment ultimately found in Christ (Ps 51:10–12; Heb 9:14).</li>
+</ul>
+<div><br></div>
+<div><b><h2>11) Lessons and Applications</h2></b></div>
+<div><b><h2>Examples to imitate (Scripture-tethered)</h2></b></div>
+<ol>
+<li><b>Let God define worth and calling</b> (1 Sam 16:7).</li>
+<li><b>Face fear with God-centered faith</b> (1 Sam 17:45–47).</li>
+<li><b>Refuse revenge; entrust justice to God</b> (1 Sam 24:6; 26:10–11).</li>
+<li><b>Strengthen yourself in the LORD during crisis</b> (1 Sam 30:6).</li>
+<li><b>Seek God’s direction before acting</b> (2 Sam 5:19).</li>
+<li><b>Prioritize worship and God’s presence</b> (2 Sam 6:12–15; Ps 27:4).</li>
+<li><b>Confess sin plainly when exposed</b> (2 Sam 12:13).</li>
+<li><b>Pursue heart-level renewal, not image management</b> (Ps 51:10–12).</li>
+<li><b>Lead as a shepherd, not a tyrant</b> (Ps 78:70–72).</li>
+<li><b>Prepare and disciple the next generation intentionally</b> (1 Chron 28:9–10).</li>
+</ol>
+<div><b><h2>Warnings to heed</h2></b></div>
+<ol>
+<li><b>Private lust can become public ruin</b> (2 Sam 11:2–17).</li>
+<li><b>Power magnifies sin’s damage</b> (2 Sam 11:4–15).</li>
+<li><b>Forgiveness doesn’t mean “no consequences”</b> (2 Sam 12:10–12).</li>
+<li><b>Spiritual success yesterday doesn’t guarantee holiness tomorrow</b> (contrast 1 Sam 17 with 2 Sam 11).</li>
+<li><b>Pride and misplaced security can invite discipline</b> (2 Sam 24:10–17).</li>
+</ol>
+<div><b>Application areas</b><br></div>
+<ul>
+<li><b>Personal holiness:</b> guard the heart and confess quickly (Ps 51:1–4).</li>
+<li><b>Relationships:</b> practice loyal love and integrity under pressure (1 Sam 20:16–17).</li>
+<li><b>Prayer:</b> cultivate desire for God Himself (Ps 27:4).</li>
+<li><b>Suffering:</b> trust God in prolonged seasons of injustice (1 Sam 23:14).</li>
+<li><b>Leadership:</b> shepherd with integrity; don’t leverage power for self (Ps 78:70–72; 2 Sam 11:4).</li>
+</ul>
+<div><br></div>
+<div><b><h2>12) Discussion and Reflection Questions</h2></b></div>
+<div><b><h2>Personal reflection</h2></b></div>
+<ol>
+<li>Where am I tempted to measure worth by outward impressiveness rather than God’s evaluation? (1 Sam 16:7)</li>
+<li>What “Goliath” situations expose whether I trust God’s power or my own? (1 Sam 17:45–47)</li>
+<li>Where am I tempted toward revenge or vindication, and what would it look like to entrust justice to God? (1 Sam 24:6; 26:10–11)</li>
+<li>What practices help me “strengthen myself in the LORD” when discouraged? (1 Sam 30:6)</li>
+<li>If confronted, do I defend myself—or confess plainly like David? (2 Sam 12:13)</li>
+</ol>
+<div><b><h2>Small group discussion</h2></b></div>
+<ol>
+<li>What makes David a compelling example of faith, and what makes him a sobering warning? (1 Sam 17; 2 Sam 11)</li>
+<li>How do worship and leadership relate in David’s story? (2 Sam 6:12–15; Ps 27:4)</li>
+<li>How should we understand forgiveness alongside consequences? (2 Sam 12:13; 12:10–12)</li>
+<li>In what ways does David’s life create longing for a better King? (2 Sam 7:12–16; Luke 1:32–33)</li>
+</ol>
+<div><b><h2>Deep study (text-observation)</h2></b></div>
+<ol>
+<li>In 1 Samuel 24 and 26, what reasons does David give for sparing Saul, and what do they reveal about his theology? (1 Sam 24:6; 26:9–11)</li>
+<li>Trace the “verbs of taking” and “sending” in 2 Samuel 11—what do they show about power and agency? (2 Sam 11:2–15)</li>
+<li>What is the core promise of 2 Samuel 7, and how is it echoed later in Scripture? (2 Sam 7:12–16; Isa 9:6–7; Luke 1:32–33)</li>
+<li>In Psalm 51, what does David ask God to do that goes beyond forgiveness? (Ps 51:10–12)</li>
+<li>How does Acts interpret David’s words as pointing beyond David himself? (Acts 2:25–36)</li>
+<li>Where do you see God’s mercy at the end of David’s story despite David’s sin? (2 Sam 24:18–25)</li>
+</ol>
+<div><br></div>
+<div><b><h2>13) Prayer Response</h2></b></div>
+<div>O LORD, You see not as man sees—you look on the heart (1 Sam 16:7). Give us faith that trusts Your power and not our strength (1 Sam 17:47). Keep us from the pride and lust that destroy, and when we sin, grant us the honesty to confess without excuses (2 Sam 12:13). Create in us a clean heart and renew a right spirit within us (Ps 51:10). Teach us to wait for Your timing, to refuse vengeance, and to worship You as our greatest good (1 Sam 24:6; Ps 27:4). And fix our hope on the true Son of David, Jesus Christ, whose kingdom will never end (Luke 1:32–33). Amen.</div>
+<!-- /notesbridge:apple-html -->

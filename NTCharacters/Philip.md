@@ -1,0 +1,265 @@
+---
+notesbridge_uid: 48825a3b-db09-441f-92c4-d6e28eff0422
+apple_notes_id: x-coredata://FEE55BCF-3869-47B1-B2C2-EA92DFBAB0C4/ICNote/p3815
+apple_folder_path: iCloud/Bible Character Studies/NT
+last_sync_hash: 6f7cb031573a31a38a21ca393e54e0463b4dfeb0d9ae1644da204220afb78144
+last_sync_at: 2025-12-31T04:25:18Z
+---
+<!-- notesbridge:apple-html -->
+<div><h1>Philip</h1></div>
+<div><br></div>
+<div><b><h2>Philip (the Apostle) — Bible Character Study</h2></b></div>
+<div><i>Note:</i> The New Testament mentions multiple men named Philip (e.g., <b>Philip the evangelist</b> in Acts 6; 8; 21). This study focuses on <b>Philip the apostle</b>, one of the Twelve (Matt 10:3; Mark 3:18; Luke 6:14; Acts 1:13). Where something might overlap or be uncertain, I’ll label it.</div>
+<div><br></div>
+<div><b><h2>1) Story Summary (Chronological)</h2></b></div>
+<div>Philip enters the biblical story as one of Jesus’ early disciples, called directly by Jesus with the simple summons: “Follow me” (John 1:43). He is from <b>Bethsaida</b>, the same town as Andrew and Peter (John 1:44). Immediately after being called, Philip becomes a “connector”—he finds Nathanael and points him to Jesus as the promised one from the Law and Prophets (John 1:45). Nathanael’s encounter with Jesus leads to a striking confession of Jesus’ identity (John 1:47–49).</div>
+<div>Philip appears at several key moments in John’s Gospel. At the feeding of the five thousand, Jesus tests Philip by asking where bread can be bought for the crowd; Philip responds with practical calculation—two hundred denarii would not be enough (John 6:5–7). Later, some Greeks who want to see Jesus approach Philip; Philip brings the request to Andrew, and together they tell Jesus (John 12:20–22). In the Upper Room, Philip asks Jesus to “show us the Father,” prompting one of Jesus’ clearest statements about his unity with the Father: “Whoever has seen me has seen the Father” (John 14:8–11).</div>
+<div>After the resurrection and ascension, Philip is listed among the apostles gathered in Jerusalem, devoted to prayer, awaiting the promised Spirit (Acts 1:13–14). From there, Scripture does not give a distinct narrative of Philip’s later ministry. Any later traditions about where he served or how he died are <b>outside Scripture</b> and should be held as uncertain.</div>
+<div><b>Where his story begins in the Bible:</b> his call and early discipleship (John 1:43).<b>Where his story ends in the Bible:</b> listed among the apostles after Jesus’ ascension (Acts 1:13).</div>
+<div><br></div>
+<div><b><h2>2) What He’s Known For</h2></b></div>
+<div>Philip is most known in Scripture for being a <b>directly called apostle</b> who repeatedly appears as a sincere, practical disciple—often bringing people and questions to Jesus.</div>
+<div><b>Headlines (3–7):</b><br></div>
+<ul>
+<li><b>Personally called by Jesus</b>: “Follow me” (John 1:43)</li>
+<li><b>Early witness to Jesus as fulfillment of Scripture</b> (John 1:45)</li>
+<li><b>Brings Nathanael to Jesus</b> (John 1:45–46)</li>
+<li><b>Tested in the “bread” question</b> (John 6:5–7)</li>
+<li><b>Gateway contact for Greeks seeking Jesus</b> (John 12:20–22)</li>
+<li><b>Asks the “show us the Father” question</b> that elicits a major Christological statement (John 14:8–11)</li>
+<li><b>Perseveres with the apostolic band in prayer</b> after the ascension (Acts 1:13–14)</li>
+</ul>
+<div><br></div>
+<div><b><h2>3) Where He Appears in the Bible (Books + Key Passages)</h2></b></div>
+<div><b><h2>Primary narrative locations</h2></b></div>
+<ul>
+<li><b>John — 1:43–51</b> — Jesus calls Philip; Philip brings Nathanael; Nathanael confesses Jesus.</li>
+<li><b>John — 6:5–7</b> — Jesus tests Philip about feeding the crowd; Philip calculates cost.</li>
+<li><b>John — 12:20–22</b> — Greeks approach Philip to see Jesus; Philip and Andrew relay it.</li>
+<li><b>John — 14:8–11</b> — Philip asks to see the Father; Jesus teaches about seeing the Father in the Son.</li>
+</ul>
+<div><b><h2>Secondary references (lists/summaries)</h2></b></div>
+<ul>
+<li><b>Matthew — 10:2–4</b> — Philip listed among the Twelve.</li>
+<li><b>Mark — 3:16–19</b> — Philip listed among the Twelve.</li>
+<li><b>Luke — 6:12–16</b> — Philip listed among the apostles chosen after prayer.</li>
+<li><b>Acts — 1:13</b> — Philip listed among apostles in Jerusalem after the ascension.</li>
+</ul>
+<div><br></div>
+<div><b><h2>4) Vital Statistics</h2></b></div>
+<div><b>Historical setting (as Scripture indicates):</b><br></div>
+<ul>
+<li>Public ministry of Jesus under Roman rule, culminating in crucifixion/resurrection/ascension; early Jerusalem community after the ascension (e.g., John 1; 6; 12; 14; Acts 1).</li>
+</ul>
+<div><b>Geography strongly associated:</b><br></div>
+<ul>
+<li><b>Bethsaida</b> (John 1:44).</li>
+<li>Appears within the Gospel settings of Galilee/Judea/Jerusalem contexts (John 6; 12; 14), though Philip’s personal movements are not detailed.</li>
+</ul>
+<div><b>Family and relationships (explicit in Scripture):</b><br></div>
+<ul>
+<li><b>Town connection</b>: Bethsaida, same as Andrew and Peter (John 1:44).</li>
+<li><b>Key relational links</b>:</li>
+<ul>
+<li><b>Nathanael</b> (Philip brings him to Jesus) (John 1:45–46).</li>
+<li><b>Andrew</b> (partners with Philip in bringing the Greeks’ request to Jesus) (John 12:20–22).</li>
+</ul>
+<li><b>Spouse/children</b>: not stated in Scripture.</li>
+</ul>
+<div><b>Roles/offices:</b><br></div>
+<ul>
+<li><b>Disciple / Apostle (one of the Twelve)</b> (Matt 10:3; Mark 3:18; Luke 6:14; Acts 1:13).</li>
+</ul>
+<div><b>Key turning points (call, crisis, covenant moments):</b><br></div>
+<ul>
+<li><b>Call to follow Jesus</b> (John 1:43).</li>
+<li><b>Immediate evangelistic action</b> (John 1:45).</li>
+<li><b>Test of faith/practicality in provision</b> (John 6:5–7).</li>
+<li><b>Contact point for Gentile seekers</b> (John 12:20–22).</li>
+<li><b>Major “faith vs sight” moment in the Upper Room</b> (John 14:8–11).</li>
+<li><b>Persevering with the apostolic community in prayer</b> post-ascension (Acts 1:13–14).</li>
+</ul>
+<div><br></div>
+<div><b><h2>5) Pivotal Moments and Timeline (Chronological Table)</h2></b></div>
+<div><object><table cellspacing="0" cellpadding="0" style="border-collapse: collapse; direction: ltr">
+<tbody>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Event</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Reference</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Why it matters</b></div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jesus calls Philip: “Follow me.”</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 1:43</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Philip’s discipleship begins with direct divine initiative, not self-appointment.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Philip identifies Jesus in Scripture terms and tells Nathanael</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 1:45–46</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Shows Philip’s early conviction that Jesus fulfills the Law/Prophets and his instinct to bring others.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Nathanael’s encounter and confession after Philip’s invitation</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 1:47–49</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Highlights Philip’s role as a connector; his witness becomes the doorway to another’s confession.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Jesus tests Philip about feeding the crowd</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 6:5–7</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Reveals Philip’s practical mindset and sets up Jesus’ display of sufficient provision.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Greeks seek Jesus through Philip; Philip tells Andrew; they tell Jesus</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 12:20–22</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Philip becomes an access point for non-Jews seeking Christ—anticipating the widening mission.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Philip asks: “Show us the Father”</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>John 14:8–11</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Philip’s question prompts Jesus’ clear teaching on the Son revealing the Father—core Christology and discipleship.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Philip listed among apostles devoted to prayer after the ascension</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Acts 1:13–14</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Confirms his continued place among the apostolic witnesses awaiting the Spirit’s empowerment.</div>
+</td></tr>
+</tbody>
+</table></object><br></div>
+<div><b><h2>6) Strengths, Weaknesses, and Heart-Level Patterns</h2></b></div>
+<div><b><h2>Strengths (with textual grounding)</h2></b></div>
+<ul>
+<li><b>Responsive obedience to Jesus’ call</b> (John 1:43).</li>
+<li><b>Evangelistic initiative: he seeks out Nathanael quickly</b> (John 1:45–46).</li>
+<li><b>Scripture-shaped witness</b>: he frames Jesus as fulfillment of Moses and the prophets (John 1:45).</li>
+<li><b>Serves as a bridge to seekers</b> (Greeks) rather than dismissing them (John 12:20–22).</li>
+<li><b>Honest questioning in discipleship</b>: he asks what he doesn’t understand rather than pretending (John 14:8).</li>
+</ul>
+<div><b><h2>Weaknesses / blind spots (shown in passages)</h2></b></div>
+<ul>
+<li><b>Tends toward human calculation when tested</b>: Philip focuses on insufficient money rather than Jesus’ sufficiency (John 6:5–7).</li>
+<li><b>Struggles with “seeing” faith</b>: he asks for a direct display of the Father, and Jesus corrects him—Philip has been with Jesus yet still needs clarity (John 14:8–11).</li>
+</ul>
+<div><b><h2>Motives / fears / desires (careful inferences anchored to text)</h2></b></div>
+<ul>
+<li><b>Desire for certainty and clarity</b>: Philip wants enough bread (John 6:7) and wants a visible revelation of God (John 14:8).</li>
+<li><b>Likely fear of inadequacy</b> in the face of massive need: his response in John 6:7 emphasizes “not enough,” suggesting an instinct to measure the mission by resources on hand.</li>
+</ul>
+<div><b><h2>What changes (or doesn’t) over time?</h2></b></div>
+<ul>
+<li><b>Consistent pattern:</b> Philip is repeatedly the one interacting at the boundary of “access” to Jesus—bringing Nathanael (John 1:45–46), fielding the Greeks (John 12:20–22), asking a clarifying question in the Upper Room (John 14:8).</li>
+<li><b>Limited narrative after the ascension:</b> Scripture confirms his continued presence among the apostles (Acts 1:13), but does not track personal growth moments beyond that. Any claims about later development must stay modest.</li>
+</ul>
+<div><br></div>
+<div><b><h2>7) Victories and Challenges</h2></b></div>
+<div><b><h2>Major wins (obedience, influence, faith)</h2></b></div>
+<ul>
+<li><b>Brings Nathanael to Jesus</b> (John 1:45–46).</li>
+<li><b>Plays a role in opening a door to Gentile interest</b> (“Greeks” wanting Jesus) (John 12:20–22).</li>
+<li><b>Stays with the praying apostolic community</b>—perseverance and unity (Acts 1:13–14).</li>
+</ul>
+<div><b><h2>Major challenges (doubt, limitation, misunderstanding, pressure)</h2></b></div>
+<ul>
+<li><b>The feeding test exposes limited faith imagination</b> (John 6:5–7).</li>
+<li><b>The “show us the Father” request exposes incomplete grasp of Jesus’ identity</b> even late in the ministry (John 14:8–11).</li>
+<li><b>The cost of faithfulness (implicit):</b> remaining with Jesus and the apostles places him among those who will face persecution (Acts frames this generally for the apostolic band; see Acts 4:18–20; 5:40–42 as context for what the apostles faced).</li>
+</ul>
+<div><br></div>
+<div><b><h2>8) Essential Verses and Key Cross-References (Organized by Themes)</h2></b></div>
+<div><b><h2>Calling and witness</h2></b></div>
+<ul>
+<li>John 1:43 — “Follow me.”</li>
+<li>John 1:45 — Philip identifies Jesus as fulfillment of Moses and the prophets.</li>
+<li>John 1:46 — “Come and see.”<b>Cross-references:</b><br></li>
+<li>Matt 4:19 — Jesus’ call pattern (“Follow me…”)</li>
+<li>Deut 18:15 — “prophet like Moses” expectation (Philip’s “Moses wrote” language resonates)</li>
+</ul>
+<div><b><h2>Faith tested: need vs provision</h2></b></div>
+<ul>
+<li>John 6:5–7 — Jesus tests Philip; Philip calculates cost.<b>Cross-references:</b><br></li>
+<li>John 6:35 — Jesus as the bread of life (interprets the feeding sign)</li>
+<li>Mark 6:37 — parallel pressure (“You give them something to eat”) highlights disciples’ insufficiency</li>
+</ul>
+<div><b><h2>Mission widening: seekers from the nations</h2></b></div>
+<ul>
+<li>John 12:20–22 — Greeks come to Philip to see Jesus.<b>Cross-references:</b><br></li>
+<li>John 12:32 — Jesus draws “all” to himself (fits the Gentile-seeker moment)</li>
+<li>Isa 49:6 — servant as light to nations (theme echoed in Gospel mission trajectory)</li>
+</ul>
+<div><b><h2>Knowing God through Christ</h2></b></div>
+<ul>
+<li>John 14:8–11 — Philip asks; Jesus teaches seeing the Father in the Son.<b>Cross-references:</b><br></li>
+<li>John 1:18 — the Son makes the Father known</li>
+<li>Col 1:15 — Christ as image of the invisible God</li>
+<li>Heb 1:3 — exact imprint of God’s nature</li>
+</ul>
+<div><b><h2>Perseverance with the apostolic witness</h2></b></div>
+<ul>
+<li>Acts 1:13–14 — apostles devoted to prayer, awaiting the Spirit.<b>Cross-references:</b><br></li>
+<li>Acts 2:1–4 — Spirit comes (context for what they awaited)</li>
+<li>Luke 24:49 — “stay…until you are clothed with power”</li>
+</ul>
+<div><i>(That’s 10+ essential verses directly tied to Philip, plus interpretive cross-references.)</i><br></div>
+<div><br></div>
+<div><b><h2>9) Theology and Big Themes</h2></b></div>
+<ul>
+<li><b>Jesus’ initiative in discipleship:</b> Philip’s story begins with Christ’s call, not Philip’s self-directed quest (John 1:43).</li>
+<li><b>Scripture fulfillment and true identification of Jesus:</b> Philip’s claim “Moses… and the prophets wrote” places Jesus at the center of the biblical storyline (John 1:45; cf. Luke 24:27).</li>
+<li><b>Faith vs sight:</b> Philip’s desire for adequate resources and visible proof highlights the disciple’s ongoing need to trust Christ’s sufficiency and revelation (John 6:5–7; 14:8–11).</li>
+<li><b>Christology (God revealed in the Son):</b> Philip’s question becomes the occasion for Jesus’ teaching on the Father-Son unity—seeing Jesus is seeing the Father (John 14:9–11; cf. John 1:18).</li>
+<li><b>Mission expansion:</b> Greeks seeking Jesus through Philip anticipates the widening reach of Jesus’ saving work beyond Israel (John 12:20–22; cf. John 12:32).</li>
+<li><b>The ordinary means of kingdom advance:</b> Philip is not portrayed as flashy—he speaks, brings, asks, relays. Yet God uses these “ordinary” acts to bring others near to Christ (John 1:45–46; 12:20–22).</li>
+</ul>
+<div><br></div>
+<div><b><h2>10) How Philip Points Us to Christ</h2></b></div>
+<ul>
+<li><b>Philip’s “Come and see” points to Christ as the true object of faith.</b> He does not merely win an argument; he brings Nathanael to Jesus himself (John 1:46). This reflects the gospel pattern: people are saved not by secondhand rumor but by encountering Christ through the apostolic witness (cf. John 20:31; 1 John 1:1–3).</li>
+<li><b>Philip’s limits highlight Christ’s sufficiency.</b> In the feeding test, Philip’s resources are inadequate—setting the stage for Jesus to show himself as the provider and (in John’s theology) the true bread from heaven (John 6:5–7; 6:35).</li>
+<li><b>Philip’s request to see the Father draws out Jesus’ identity.</b> Jesus’ answer anchors the Christian doctrine that the Father is known in and through the Son (John 14:8–11; John 1:18). Philip’s question becomes a window into the glory of Christ.</li>
+<li><b>Philip as a bridge to Gentile seekers anticipates Christ’s worldwide saving mission.</b> Greeks seek Jesus (John 12:20–22), and Jesus soon speaks of drawing “all” to himself (John 12:32), pointing to the cross-resurrection mission that reaches the nations (cf. Matt 28:18–20; Acts 1:8).</li>
+</ul>
+<div><br></div>
+<div><b><h2>11) Lessons and Applications (8–15, tied to Scripture)</h2></b></div>
+<ol>
+<li><b>Jesus’ call is personal and authoritative—respond promptly.</b> (John 1:43)</li>
+<li><b>Bring people to Jesus, even if your explanation is imperfect.</b> “Come and see.” (John 1:46)</li>
+<li><b>Use Scripture to frame who Jesus is.</b> Philip connects Jesus to Moses and the prophets (John 1:45).</li>
+<li><b>When need feels overwhelming, don’t stop at calculation—bring it to Christ.</b> Philip counts cost (John 6:7); the passage invites trust in Jesus’ provision (John 6:5–7).</li>
+<li><b>God often uses “relational pathways” to reach seekers.</b> Greeks find Jesus through Philip (John 12:20–22).</li>
+<li><b>Ask honest questions—but let Jesus correct your assumptions.</b> Philip asks to see the Father; Jesus reorients him to Christ-centered revelation (John 14:8–11).</li>
+<li><b>To know God truly, look to Jesus.</b> “Whoever has seen me has seen the Father.” (John 14:9)</li>
+<li><b>Stay devoted to prayer and community as you wait on God’s power.</b> (Acts 1:13–14)</li>
+<li><b>Your usefulness is not measured by spotlight moments but by faithful mediation—bringing, telling, connecting.</b> (John 1:45–46; 12:20–22)</li>
+<li><b>Warnings to heed:</b><br></li>
+<li>Beware reducing spiritual problems to logistical ones (John 6:5–7).</li>
+<li>Beware demanding sight when Christ has already revealed enough to trust him (John 14:8–11).</li>
+<li><b>Examples to imitate:</b><br></li>
+<li>Initiative in witness (John 1:45).</li>
+<li>Openness to seekers outside your “circle” (John 12:20–22).</li>
+</ol>
+<div>Applications to specific areas:</div>
+<ul>
+<li><b>Personal holiness:</b> keep your view of God anchored in Christ’s words (John 14:10–11).</li>
+<li><b>Relationships:</b> be the person who says, “Come and see,” not “Go away.” (John 1:46; 12:21–22)</li>
+<li><b>Prayer:</b> persist with God’s people in prayerful dependence (Acts 1:14).</li>
+<li><b>Suffering/pressure:</b> don’t let scarcity-thinking govern you; Christ is sufficient (John 6:5–7).</li>
+<li><b>Decision-making/leadership:</b> bring needs and questions to Jesus rather than letting practicality become unbelief (John 6:5–7; 14:8–11).</li>
+</ul>
+<div><br></div>
+<div><b><h2>12) Discussion and Reflection Questions (10–20)</h2></b></div>
+<div><b><h2>Personal reflection</h2></b></div>
+<ol>
+<li>In what areas do you default to Philip’s “resource calculation” rather than faith (John 6:5–7)?</li>
+<li>Who is your “Nathanael”—someone you can simply invite: “Come and see” (John 1:46)?</li>
+<li>What does it look like for you to “see the Father” by looking to Jesus (John 14:9)?</li>
+</ol>
+<div><b><h2>Small group discussion</h2></b></div>
+<ol>
+<li>Why do you think Jesus tested Philip specifically in John 6:5–6? What does that reveal about discipleship?</li>
+<li>What can we learn from Philip and Andrew’s teamwork when the Greeks approach (John 12:20–22)?</li>
+<li>How should Jesus’ words in John 14:9 shape Christian worship and prayer?</li>
+</ol>
+<div><b><h2>Deep study (text observation)</h2></b></div>
+<ol>
+<li>Compare Philip’s confession about Jesus (John 1:45) with Nathanael’s confession (John 1:49). What’s similar/different?</li>
+<li>In John 6:5–7, what does the text explicitly say Jesus already knew (John 6:6)? How does that shape your reading of Philip’s response?</li>
+<li>Why might the Greeks approach Philip “who was from Bethsaida in Galilee” (John 12:21)? What details does John include, and what might they suggest?</li>
+<li>In John 14:8–11, trace Jesus’ logic: what reasons does he give for believing his unity with the Father?</li>
+<li>What does Acts 1:13–14 emphasize about the apostles’ posture before Pentecost?</li>
+<li>If Philip’s story is mostly brief scenes, what does that teach about how Scripture forms faithful disciples through selected moments?</li>
+</ol>
+<div><br></div>
+<div><b><h2>13) Prayer Response</h2></b></div>
+<div>Lord Jesus Christ, you called Philip with a simple word—“Follow me”—and you still call sinners by your grace (John 1:43). Forgive us for measuring obedience by what we can afford or control, as if your power were limited by our resources (John 6:5–7). Give us hearts that bring others to you with humble confidence: “Come and see” (John 1:46). Teach us to know the Father by beholding you, the true revelation of God (John 14:9; John 1:18). Make us faithful bridges for seekers, and keep us devoted to prayer as we depend on your Spirit (John 12:20–22; Acts 1:14). Amen.</div>
+<!-- /notesbridge:apple-html -->

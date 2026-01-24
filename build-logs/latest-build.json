@@ -1,29 +1,29 @@
 {
   "summary": {
-    "buildDuration": "2.3s",
-    "totalFiles": 19804,
-    "totalSize": "240.1 MB",
+    "buildDuration": "505ms",
+    "totalFiles": 18667,
+    "totalSize": "305.6 MB",
     "booksWithContent": "66/66",
-    "totalChapters": 1150,
+    "totalChapters": 1189,
     "errors": 0,
     "warnings": 0
   },
   "breakdown": {
     "files": {
-      "total": 19804,
-      "html": 6827,
-      "css": 3,
-      "js": 36,
-      "json": 12912,
+      "total": 18667,
+      "html": 5601,
+      "css": 2,
+      "js": 43,
+      "json": 12995,
       "other": 26
     },
     "sizes": {
-      "html": "216.5 MB",
-      "css": "313.5 KB",
-      "js": "608.7 KB",
-      "json": "22.2 MB",
-      "other": "432.2 KB",
-      "total": "240.1 MB"
+      "html": "268.4 MB",
+      "css": "318.3 KB",
+      "js": "1 MB",
+      "json": "32.8 MB",
+      "other": "3.1 MB",
+      "total": "305.6 MB"
     }
   },
   "content": {
@@ -31,7 +31,7 @@
       "total": 66,
       "withSummaries": 66,
       "withVideos": 66,
-      "totalChapters": 1150
+      "totalChapters": 1189
     }
   },
   "issues": {
@@ -39,9 +39,9 @@
     "warnings": []
   },
   "metadata": {
-    "buildStart": "2025-09-06T14:30:26.406Z",
-    "buildEnd": "2025-09-06T14:30:28.751Z",
-    "buildDuration": 2345,
-    "timestamp": "2025-09-06T14:30:28.751Z"
+    "buildStart": "2026-01-19T22:38:09.153Z",
+    "buildEnd": "2026-01-19T22:38:09.658Z",
+    "buildDuration": 505,
+    "timestamp": "2026-01-19T22:38:09.659Z"
   }
 }

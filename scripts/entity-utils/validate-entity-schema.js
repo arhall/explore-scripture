@@ -70,7 +70,17 @@ function validateEntitySchema(entity, _filePath) {
   }
 
   // Validate entity type
-  const validTypes = ['person', 'place', 'divine', 'title', 'figure', 'event', 'group', 'entity'];
+  const validTypes = [
+    'person',
+    'place',
+    'divine',
+    'title',
+    'figure',
+    'event',
+    'group',
+    'concept',
+    'entity',
+  ];
   if (entity.type && !validTypes.includes(entity.type)) {
     errors.push(`Invalid entity type: ${entity.type} (valid types: ${validTypes.join(', ')})`);
   }

@@ -1,0 +1,303 @@
+---
+notesbridge_uid: f30c0b5e-e3f5-41ab-a8d2-1d880f48de6a
+apple_notes_id: x-coredata://FEE55BCF-3869-47B1-B2C2-EA92DFBAB0C4/ICNote/p3760
+apple_folder_path: iCloud/Bible Character Studies/OT
+last_sync_hash: 19c7f387d640f0b20e79362ce3fc9d44074b134fb1e984b752fbf8654c899c90
+last_sync_at: 2025-12-31T06:49:13Z
+---
+<!-- notesbridge:apple-html -->
+<div><h1>Nahum</h1></div>
+<div><br></div>
+<div><b><h1>Nahum — Bible Character Study</h1></b></div>
+<div><b><h2>1) Story Summary (Chronological)</h2></b></div>
+<div>Nahum is introduced as “Nahum of Elkosh” and identified with “the book of the vision of Nahum” (Nahum 1:1). Unlike many prophets, Scripture gives almost no biographical narrative about him—no call story, no royal court scenes, no travel itinerary, no opponents named. His “story” is essentially the content and setting of his prophetic message.</div>
+<div>Nahum’s prophecy is an oracle of judgment against Nineveh, the capital of Assyria (Nahum 1:1; 2:8; 3:7). Assyria had been an instrument of severe oppression and violence across the ancient Near East and had already crushed the northern kingdom of Israel (cf. 2 Kings 17:5–6). Nahum proclaims that the LORD—who is patient yet just—will bring Assyria’s dominance to an end and will “make a complete end” of Nineveh (Nahum 1:2–3, 1:8–9, 1:14).</div>
+<div>The book’s internal historical markers point to a time after the fall of Thebes (“No-amon”) in Egypt (Nahum 3:8–10) and before Nineveh’s fall (anticipated throughout; Nahum 2:6–10; 3:18–19). Therefore, Nahum’s ministry is best placed in the later 7th century BC (uncertain in exact year), in the shadow of Assyria’s power but before its collapse. Scripture begins and ends his account in the superscription and the closing taunt over Nineveh’s irreversible wound (Nahum 1:1; 3:19).</div>
+<div><b>Where his story begins:</b> The superscription (Nahum 1:1).<b>Where his story ends:</b> The final pronouncement over Nineveh (Nahum 3:19).</div>
+<div><br></div>
+<div><b><h2>2) What He’s Known For</h2></b></div>
+<div>Nahum is most known as the prophet who announced God’s certain judgment on Nineveh/Assyria and comfort to God’s afflicted people through the assurance that oppression will not last forever (Nahum 1:7, 1:12–13, 1:15; 3:19).</div>
+<div><b>Headlines (3–7):</b><br></div>
+<ul>
+<li><b>“The vision concerning Nineveh”</b> — a focused oracle against the Assyrian capital (Nahum 1:1).</li>
+<li><b>Herald of God’s justice against cruelty</b> — God opposes violent arrogance (Nahum 2:12–13; 3:1–4).</li>
+<li><b>Teacher of God’s character: slow to anger, great in power</b> (Nahum 1:2–3).</li>
+<li><b>Comfort to the oppressed: the LORD is a stronghold</b> (Nahum 1:7, 1:12–13).</li>
+<li><b>Announcer of the end of an empire</b> — Nineveh’s “wound is grievous” and final (Nahum 3:19).</li>
+<li><b>Poet-prophet of divine warfare and reversal</b> — imagery of siege, flood, shame, and collapse (Nahum 1:8; 2:6–10; 3:5–7).</li>
+</ul>
+<div><br></div>
+<div><b><h2>3) Where He Appears in the Bible</h2></b></div>
+<div><b><h2>Primary narrative location (main story happens)</h2></b></div>
+<ul>
+<li><b>Nahum — 1:1–3:19</b> — The complete prophetic “vision” about Nineveh; Nahum’s only explicit appearance is in the title (Nahum 1:1).</li>
+</ul>
+<div><b><h2>Secondary references (later mentions, summaries, themes)</h2></b></div>
+<div>Nahum is not explicitly named elsewhere in the canon with clear identification. The themes of his message are echoed broadly:</div>
+<ul>
+<li><b>Jonah — 1:1–4:11</b> — Earlier prophetic mission to Nineveh calling for repentance; backdrop for Nineveh’s later return to violence (Jonah 3:5–10; 4:2).</li>
+<li><b>2 Kings — 17:5–6; 18:9–12</b> — Assyria’s conquest of Israel; context for Assyria’s brutality and Judah’s fear (2 Kings 17:5–6).</li>
+<li><b>Isaiah — 10:5–19</b> — Assyria as “the rod” in God’s hand, yet judged for arrogance; aligns with Nahum’s judgment theme (Isaiah 10:12, 10:15–19).</li>
+<li><b>Zephaniah — 2:13–15</b> — Prophecy of Nineveh’s desolation (theme-parallel) (Zephaniah 2:13–15).</li>
+<li><b>Revelation — 18:1–24; 19:1–3</b> — Pattern of God judging a violent, arrogant “city/empire” and vindicating the oppressed; a later echo of the same moral logic (Revelation 18:2, 18:24; 19:1–3).</li>
+</ul>
+<div><br></div>
+<div><b><h2>4) Vital Statistics</h2></b></div>
+<div><b>Historical setting (as Scripture indicates):</b><br></div>
+<ul>
+<li>After the fall of <b>No-amon/Thebes</b> (Nahum 3:8–10).</li>
+<li>Before the fall of <b>Nineveh</b> (anticipated as future judgment throughout; Nahum 2:6–10; 3:18–19).</li>
+<li>Exact dating is <b>uncertain</b>; Scripture gives no king’s regnal year (contrast e.g., Isaiah 1:1; Jeremiah 1:2–3).</li>
+</ul>
+<div><b>Geography (places associated):</b><br></div>
+<ul>
+<li><b>Elkosh</b> (Nahum’s hometown) — location <b>uncertain</b> (Nahum 1:1).</li>
+<li><b>Nineveh</b> — target of prophecy (Nahum 1:1; 2:8; 3:7).</li>
+<li><b>No-amon/Thebes</b> — example of a mighty city that fell (Nahum 3:8–10).</li>
+</ul>
+<div><b>Family and relationships:</b><br></div>
+<ul>
+<li><b>Unknown</b> in Scripture (Nahum 1:1 provides only a demonym: “the Elkoshite”).</li>
+</ul>
+<div><b>Roles/offices:</b><br></div>
+<ul>
+<li><b>Prophet</b> — bearer of “vision” and “oracle” (Nahum 1:1).</li>
+<li><b>Poetic theologian</b> — the book’s opening hymnic/creedal description of God (Nahum 1:2–8).</li>
+</ul>
+<div><b>Key turning points (call, crisis, covenant moments):</b><br></div>
+<ul>
+<li><b>Commission/call not recorded</b> (no narrative like Isaiah 6:1–8; Jeremiah 1:4–10).</li>
+<li><b>Crisis addressed:</b> Assyrian violence and intimidation; God promises to break the yoke and affliction (Nahum 1:12–13).</li>
+<li><b>Covenant frame:</b> God’s protection of those who “take refuge” in him (Nahum 1:7), and his opposition to those who oppose him (Nahum 1:2, 1:14).</li>
+</ul>
+<div><br></div>
+<div><b><h2>5) Pivotal Moments and Timeline (Chronological Table)</h2></b></div>
+<div><object><table cellspacing="0" cellpadding="0" style="border-collapse: collapse; direction: ltr">
+<tbody>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Event</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Reference</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Why it matters</b></div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Nahum identified; the prophecy framed as an “oracle” and “vision” concerning Nineveh</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Nahum 1:1</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Establishes scope: this is a focused word of judgment against a specific imperial center.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>God’s character proclaimed: jealous, avenging, slow to anger, great in power</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Nahum 1:2–3</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>The theological foundation: divine patience is real, but justice is certain—God will not “clear the guilty.”</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Refuge offered: the LORD is “a stronghold” and “knows” those who take refuge</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Nahum 1:7</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Judgment against Nineveh is simultaneously comfort for the faithful; God is not only wrathful but protective.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Promise of deliverance for God’s people: affliction will not rise again; the yoke will be broken</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Nahum 1:12–13</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>A pastoral promise: oppression has an endpoint decreed by God.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>“Good news” motif: feet of the herald; celebration of feasts; the wicked will not pass through again</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Nahum 1:15</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Signals restoration and worship freedom—judgment clears space for covenant life.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Vivid portrayal of Nineveh’s siege and collapse</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Nahum 2:1–10</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>The prophetic vision moves from decree to dramatic depiction—what God has declared will be enacted.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Moral indictment: Nineveh as a “bloody city,” full of lies and plunder</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Nahum 3:1</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>The “why” of judgment: violence, deception, exploitation.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Historical analogy: No-amon (Thebes) fell despite power and allies</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Nahum 3:8–10</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>A warning from recent history: if Thebes fell, Nineveh is not invincible.</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Final verdict: Nineveh’s wound is incurable; universal relief at its fall</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Nahum 3:18–19</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>The oracle closes with irreversible judgment and worldwide recognition of Assyria’s brutality.</div>
+</td></tr>
+</tbody>
+</table></object><br></div>
+<div><b><h2>6) Strengths, Weaknesses, and Heart-Level Patterns</h2></b></div>
+<div><b><h2>Strengths (evidenced in the text)</h2></b></div>
+<ul>
+<li><b>Theologically grounded proclamation:</b> Nahum roots his message in God’s character—justice and patience together (Nahum 1:2–3).</li>
+<li><b>Confidence in God’s sovereignty over nations:</b> He depicts God commanding outcomes (“I will make your grave,” “I am against you”) (Nahum 1:14; 2:13; 3:5).</li>
+<li><b>Pastoral clarity for sufferers:</b> He names God as “good” and a “stronghold” in trouble (Nahum 1:7) and promises affliction’s end (Nahum 1:12).</li>
+<li><b>Moral discernment:</b> He identifies systemic evil—bloodshed, exploitation, dehumanizing violence (Nahum 3:1–4; 2:12).</li>
+</ul>
+<div><b><h2>Weaknesses / sins / blind spots</h2></b></div>
+<div>Scripture records <b>no explicit personal moral failures</b> for Nahum. We should not invent them. The book is an oracle, not a biography (Nahum 1:1).</div>
+<div><b><h2>Motives / fears / desires (careful inference anchored to text)</h2></b></div>
+<ul>
+<li><b>Desire for God’s vindication of justice</b> is strongly implied by the emphasis on vengeance against cruelty (Nahum 1:2; 3:1–4).</li>
+<li><b>Concern for God’s people’s relief</b> is implied by promises of broken yoke and renewed worship (Nahum 1:12–13, 1:15). These are inferences from the message’s aims, not stated inner feelings (Nahum 1:7, 1:12–13).</li>
+</ul>
+<div><b><h2>What changes (or doesn’t) over time?</h2></b></div>
+<ul>
+<li><b>The message intensifies from theological foundation to concrete downfall imagery.</b> It begins with who God is (Nahum 1:2–8), moves to promises for Judah (Nahum 1:12–15), then unfolds the collapse of Nineveh (Nahum 2:1–3:19).</li>
+<li><b>God’s posture remains consistent:</b> patient yet just—he will not acquit guilt (Nahum 1:3) and he is a refuge for those who trust him (Nahum 1:7).</li>
+</ul>
+<div><br></div>
+<div><b><h2>7) Victories and Challenges</h2></b></div>
+<div><b><h2>Major “wins” (faithfulness/impact) with references</h2></b></div>
+<ul>
+<li><b>He speaks a word that re-centers history on God, not empire</b> (Nahum 1:2–3, 1:14).</li>
+<li><b>He offers real comfort rooted in God’s covenant care</b> (“stronghold,” “knows those who take refuge”) (Nahum 1:7).</li>
+<li><b>He announces liberation imagery—yoke broken, worship restored</b> (Nahum 1:12–13, 1:15).</li>
+<li><b>He exposes evil plainly</b> (“bloody city… lies… plunder”) (Nahum 3:1).</li>
+</ul>
+<div><b><h2>Major challenges (cost/opposition/suffering) with references</h2></b></div>
+<div>No direct narrative of persecution is recorded. The likely challenge is <b>the burden of delivering severe judgment</b> (the “oracle/burden”) (Nahum 1:1), and naming imperial violence without flinching (Nahum 3:1–4). The text itself stresses the weightiness of judgment: “Who can stand before his indignation?” (Nahum 1:6).</div>
+<div><b>Cost of faithfulness (in principle):</b> speaking God’s verdict against a terrifying superpower would have required fear of God more than fear of man (implied by Nahum 1:2–3, 1:6), though Scripture does not narrate consequences for Nahum personally.</div>
+<div><br></div>
+<div><b><h2>8) Essential Verses and Key Cross-References (Organized by Themes)</h2></b></div>
+<div><b><h2>A) God’s character: justice and patience</h2></b></div>
+<div><b>Essential (Nahum):</b><br></div>
+<ul>
+<li>Nahum 1:2–3 — jealous/avenging; slow to anger; will not clear the guilty.</li>
+<li>Nahum 1:6 — none can endure his wrath.</li>
+</ul>
+<div><b>Cross-references:</b><br></div>
+<ul>
+<li>Exodus 34:6–7 — slow to anger; will by no means clear the guilty.</li>
+<li>Numbers 14:18 — same tension: patient yet just.</li>
+<li>Romans 2:4–6 — patience not permission; judgment according to works.</li>
+</ul>
+<div><b><h2>B) Refuge and comfort for God’s people</h2></b></div>
+<div><b>Essential (Nahum):</b><br></div>
+<ul>
+<li>Nahum 1:7 — “The LORD is good, a stronghold… he knows those who take refuge.”</li>
+<li>Nahum 1:12–13 — affliction ends; yoke broken.</li>
+<li>Nahum 1:15 — herald of good news; worship restored.</li>
+</ul>
+<div><b>Cross-references:</b><br></div>
+<ul>
+<li>Psalm 46:1 — God a refuge and strength.</li>
+<li>Isaiah 12:2 — trust and not be afraid.</li>
+<li>Matthew 11:28–30 — Christ’s yoke is easy (contrast with oppressive yokes; cf. Nahum 1:13).</li>
+</ul>
+<div><b><h2>C) Judgment on violent, exploitative power</h2></b></div>
+<div><b>Essential (Nahum):</b><br></div>
+<ul>
+<li>Nahum 2:13 — “I am against you,” declares the LORD of hosts.</li>
+<li>Nahum 3:1 — “Woe to the bloody city… full of lies and plunder.”</li>
+<li>Nahum 3:5–7 — public exposure and desolation.</li>
+<li>Nahum 3:18–19 — irreversible wound; universal recognition.</li>
+</ul>
+<div><b>Cross-references:</b><br></div>
+<ul>
+<li>Isaiah 10:12–19 — God judges Assyria’s arrogance.</li>
+<li>Habakkuk 2:12 — woe to building a city by bloodshed.</li>
+<li>Revelation 18:2, 18:24 — judgment on a violent, idolatrous “city” and its bloodguilt.</li>
+</ul>
+<div><b><h2>D) The certainty of God’s word in history</h2></b></div>
+<div><b>Essential (Nahum):</b><br></div>
+<ul>
+<li>Nahum 1:8–9 — “complete end… will not rise up a second time.”</li>
+<li>Nahum 1:14 — the LORD decrees Nineveh’s end.</li>
+</ul>
+<div><b>Cross-references:</b><br></div>
+<ul>
+<li>Isaiah 46:9–11 — God declares the end from the beginning.</li>
+<li>Proverbs 21:30–31 — no wisdom can stand against the LORD.</li>
+</ul>
+<div><br></div>
+<div><b><h2>9) Theology and Big Themes</h2></b></div>
+<div><b><h2>God’s character revealed</h2></b></div>
+<ul>
+<li><b>Holiness and justice:</b> God is not indifferent to violence and cruelty (Nahum 1:2–3; 3:1).</li>
+<li><b>Patience with moral clarity:</b> “Slow to anger” does not mean “never judges” (Nahum 1:3).</li>
+<li><b>Covenant care and refuge:</b> God is “good” and a “stronghold” to those who take refuge (Nahum 1:7).</li>
+</ul>
+<div><b><h2>Kingdom, exile, and imperial critique</h2></b></div>
+<ul>
+<li><b>God rules over empires:</b> Nineveh’s power is real, but not ultimate (Nahum 1:14; 2:13).</li>
+<li><b>Judgment as liberation:</b> The breaking of the yoke is a salvation motif for God’s people (Nahum 1:12–13; 1:15).</li>
+<li><b>Moral accountability of nations:</b> The “bloody city” theme shows God evaluates public injustice (Nahum 3:1–4).</li>
+</ul>
+<div><b><h2>Human nature (sin, pride, cruelty)</h2></b></div>
+<ul>
+<li><b>Violence begets judgment:</b> Nineveh is portrayed as predatory and plundering (Nahum 2:12; 3:1).</li>
+<li><b>Arrogance is self-deceptive:</b> “No-amon” fell; so will Nineveh (Nahum 3:8–10).</li>
+<li><b>Oppression creates universal longing for justice:</b> “All who hear… clap” at Nineveh’s downfall (Nahum 3:19).</li>
+</ul>
+<div><br></div>
+<div><b><h2>10) How Nahum Points Us to Christ</h2></b></div>
+<div>Nahum does not function as a direct “type” of Christ in a narrative sense (no sustained biographical parallel is given). But his message strongly <b>prepares</b> and <b>clarifies</b> gospel realities.</div>
+<div><b><h2>A) The pattern: God judges evil to save the oppressed</h2></b></div>
+<ul>
+<li>Nahum’s oracle shows that God’s salvation includes <b>real justice</b> against evil powers (Nahum 1:2–3; 3:1).</li>
+<li>In the New Testament, Christ’s kingdom also includes final judgment and the defeat of oppressive evil (2 Thessalonians 1:6–10; Revelation 19:11–16).</li>
+</ul>
+<div><b><h2>B) The cross as the meeting place of Nahum 1:3 and Nahum 1:7</h2></b></div>
+<ul>
+<li>Nahum insists God “will not clear the guilty” (Nahum 1:3) and yet is a refuge for those who trust him (Nahum 1:7).</li>
+<li>The gospel proclaims that God remains just while justifying sinners through Christ’s atoning work (Romans 3:25–26). The refuge Nahum celebrates (Nahum 1:7) is ultimately found “in Christ” (Romans 8:1).</li>
+</ul>
+<div><b><h2>C) “Good news” and restored worship</h2></b></div>
+<ul>
+<li>Nahum’s “good news” herald image (Nahum 1:15) anticipates the broader biblical pattern of heralded deliverance and worship restored (cf. Isaiah 52:7).</li>
+<li>The New Testament announces the definitive “good news” of God’s reign through Jesus (Mark 1:14–15), bringing peace with God and a cleansed worship (Hebrews 10:19–22).</li>
+</ul>
+<div><br></div>
+<div><b><h2>11) Lessons and Applications (8–15, tied to Scripture)</h2></b></div>
+<ol>
+<li><b>Let God define reality, not empire.</b> Assyria looks unstoppable, but God decrees its end (Nahum 1:14; cf. Isaiah 46:10–11).</li>
+<li><b>God’s patience is not moral indifference.</b> “Slow to anger” coexists with “will not clear the guilty” (Nahum 1:3; cf. Romans 2:4–6).</li>
+<li><b>Oppression is not invisible to heaven.</b> God names violence and deceit and brings accountability (Nahum 3:1; cf. Habakkuk 2:12).</li>
+<li><b>For the believer, God is not only judge but refuge.</b> “The LORD is good… a stronghold” (Nahum 1:7; cf. Psalm 46:1).</li>
+<li><b>Hope can be specific, not vague.</b> God promises the yoke will break and affliction will end (Nahum 1:12–13).</li>
+<li><b>Worship matters: deliverance aims at restored covenant life.</b> “Keep your feasts… fulfill your vows” (Nahum 1:15).</li>
+<li><b>History is full of “No-amon” reminders—power can fall quickly.</b> Use past judgments to cultivate humility and repentance (Nahum 3:8–10).</li>
+<li><b>God opposes predatory systems.</b> Nineveh’s lion imagery condemns exploitation (Nahum 2:11–13).</li>
+<li><b>Take refuge in God, not in alliances, wealth, or reputation.</b> Nineveh’s defenses fail (Nahum 2:6–10; 3:12–13).</li>
+<li><b>Justice and mercy meet in the gospel.</b> God remains just and provides refuge through Christ (Nahum 1:3, 1:7; cf. Romans 3:25–26).</li>
+</ol>
+<div><b><h2>Warnings to heed</h2></b></div>
+<ul>
+<li><b>Don’t confuse temporary dominance with divine approval</b> (Nahum 3:8–10).</li>
+<li><b>Violence, deceit, and exploitation invite God’s “woe”</b> (Nahum 3:1).</li>
+</ul>
+<div><b><h2>Examples to imitate</h2></b></div>
+<ul>
+<li><b>Speak about God with theological accuracy and moral courage</b> (Nahum 1:2–3; 3:1).</li>
+<li><b>Anchor comfort in God’s character, not circumstances</b> (Nahum 1:7).</li>
+</ul>
+<div>Applications for:</div>
+<ul>
+<li><b>Personal holiness:</b> repent of “small” predatory sins—lying, exploiting, dehumanizing others (Nahum 3:1; cf. Ephesians 4:25–28).</li>
+<li><b>Relationships:</b> refuse manipulation and coercion; pursue truth and peace (Nahum 3:1; cf. Romans 12:18).</li>
+<li><b>Prayer:</b> pray refuge-prayers in trouble, grounded in God’s goodness (Nahum 1:7; cf. Psalm 46:1).</li>
+<li><b>Suffering:</b> trust that affliction is not forever and God sets limits (Nahum 1:12; cf. 2 Corinthians 4:17–18).</li>
+<li><b>Leadership:</b> reject “lion” leadership that feeds on others (Nahum 2:11–12; cf. Mark 10:42–45).</li>
+</ul>
+<div><br></div>
+<div><b><h2>12) Discussion and Reflection Questions (10–20)</h2></b></div>
+<div><b><h2>Personal reflection</h2></b></div>
+<ol>
+<li>When you read “The LORD is… slow to anger… and will not at all acquit the wicked” (Nahum 1:3), what tensions do you feel—and how does Scripture hold them together (Exodus 34:6–7; Romans 3:25–26)?</li>
+<li>What does it practically mean for you to “take refuge” in God (Nahum 1:7)? Where do you run first when trouble hits?</li>
+<li>Nahum 1:12–13 promises God breaks yokes. What “yokes” (sin patterns, fears, pressures) feel unbreakable to you?</li>
+</ol>
+<div><b><h2>Small group discussion</h2></b></div>
+<ol>
+<li>How does Nahum challenge modern assumptions that “power = right” (Nahum 1:14; 3:8–10)?</li>
+<li>Why do you think Scripture includes vivid judgment oracles like Nahum—what do they protect God’s people from believing? (Nahum 1:7; 3:19)</li>
+<li>In Nahum 3:1–4, what forms of evil are named? Which are most visible in our world? Which are most subtle?</li>
+</ol>
+<div><b><h2>Deep study (text-observation)</h2></b></div>
+<ol>
+<li>Trace the attributes of God in Nahum 1:2–8. Which are repeated? Which images are used (storm, sea, mountains), and what do they emphasize (Nahum 1:3–6)?</li>
+<li>Compare Nahum 1:15 with Isaiah 52:7. What overlaps? What differs in context and outcome?</li>
+<li>In Nahum 2:6–10, list the verbs describing Nineveh’s collapse. How does the pacing serve the message?</li>
+<li>Why does Nahum bring up No-amon/Thebes (Nahum 3:8–10)? What argument is he making?</li>
+<li>What is the effect of the closing line—“upon whom has not come your unceasing evil?” (Nahum 3:19). What does it reveal about Nineveh’s global reputation?</li>
+</ol>
+<div><b><h2>Christ-focused</h2></b></div>
+<ol>
+<li>How does Nahum help you understand why the New Testament speaks of final judgment (Revelation 19:1–3) and also offers refuge in Christ (Romans 8:1)?</li>
+<li>Where do you see the logic of Nahum 1:3 and 1:7 answered most clearly in the cross (Romans 3:25–26)?</li>
+</ol>
+<div><br></div>
+<div><b><h2>13) Prayer Response</h2></b></div>
+<div>Lord God, you are good and a stronghold in the day of trouble (Nahum 1:7). You are slow to anger and great in power, and you will not clear the guilty (Nahum 1:3). Teach us to fear you more than we fear the powers of this world, and to take refuge in you with sincere faith. Forgive us for the ways we tolerate “bloody city” sins in miniature—deceit, exploitation, and cruelty (Nahum 3:1). Give comfort to the afflicted and humility to the strong. Thank you that in Jesus you remain just and you justify those who trust him (Romans 3:25–26). Help us to keep our vows, worship with joy, and walk in holiness as people you have delivered (Nahum 1:15). Amen.</div>
+<!-- /notesbridge:apple-html -->
