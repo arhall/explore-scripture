@@ -57,7 +57,7 @@ class BuildSafeguards {
 
       // If build is older than max time, remove stale lock
       if (buildAge > this.maxBuildTime) {
-        console.log('🧹 Removing stale build lock (exceeded max duration)');
+        console.log(' Removing stale build lock (exceeded max duration)');
         this.removeBuildLock();
         return false;
       }
@@ -65,13 +65,13 @@ class BuildSafeguards {
       // Check if the process is still running
       try {
         process.kill(lockData.pid, 0); // Check if process exists
-        console.log(`⚠️  Build already in progress (PID: ${lockData.pid})`);
+        console.log(`WARN  Build already in progress (PID: ${lockData.pid})`);
         console.log(`   Started: ${new Date(lockData.startTime).toISOString()}`);
         console.log(`   Duration: ${Math.floor(buildAge / 1000)}s`);
         return true;
       } catch (e) {
         // Process doesn't exist, remove stale lock
-        console.log('🧹 Removing stale build lock (process not found)');
+        console.log(' Removing stale build lock (process not found)');
         this.removeBuildLock();
         return false;
       }
@@ -84,7 +84,7 @@ class BuildSafeguards {
 
   async runWithTimeout(command, args = [], options = {}) {
     return new Promise((resolve, reject) => {
-      console.log(`🚀 Running: ${command} ${args.join(' ')}`);
+      console.log(` Running: ${command} ${args.join(' ')}`);
 
       const startTime = Date.now();
       const child = spawn(command, args, {
@@ -100,7 +100,7 @@ class BuildSafeguards {
 
       // Timeout handler
       const timeout = setTimeout(() => {
-        console.log(`❌ Build timeout after ${this.maxBuildTime / 1000}s`);
+        console.log(`ERROR Build timeout after ${this.maxBuildTime / 1000}s`);
         child.kill('SIGTERM');
 
         // Force kill after 5 more seconds
@@ -115,7 +115,7 @@ class BuildSafeguards {
       const memoryCheck = setInterval(() => {
         const memUsage = process.memoryUsage();
         if (memUsage.heapUsed > this.maxMemoryUsage) {
-          console.log(`❌ Memory usage exceeded ${this.maxMemoryUsage / 1024 / 1024}MB`);
+          console.log(`ERROR Memory usage exceeded ${this.maxMemoryUsage / 1024 / 1024}MB`);
           child.kill('SIGTERM');
           clearInterval(memoryCheck);
           reject(new Error('Memory usage exceeded'));
@@ -128,7 +128,7 @@ class BuildSafeguards {
         this.processTracker.delete(child.pid);
 
         const duration = Date.now() - startTime;
-        console.log(`✅ Process completed in ${Math.floor(duration / 1000)}s`);
+        console.log(`OK Process completed in ${Math.floor(duration / 1000)}s`);
 
         if (code === 0) {
           resolve(code);
@@ -147,7 +147,7 @@ class BuildSafeguards {
   }
 
   async killRunawayProcesses() {
-    console.log('🔍 Checking for runaway Node processes...');
+    console.log(' Checking for runaway Node processes...');
 
     try {
       const { stdout } = await this.runCommand(
@@ -178,7 +178,7 @@ class BuildSafeguards {
       });
 
       if (suspiciousProcesses.length > 0) {
-        console.log('⚠️  Found suspicious processes:');
+        console.log('WARN  Found suspicious processes:');
         suspiciousProcesses.forEach(proc => {
           console.log(`   PID: ${proc.pid}, CPU: ${proc.cpu}%, Memory: ${proc.memory}%`);
           console.log(`   Command: ${proc.command}`);
@@ -191,7 +191,7 @@ class BuildSafeguards {
             proc.command.includes('wrangler') ||
             (proc.command.includes('node') && proc.cpu > 100)
           ) {
-            console.log(`🔪 Killing runaway process PID ${proc.pid}`);
+            console.log(` Killing runaway process PID ${proc.pid}`);
             try {
               process.kill(proc.pid, 'SIGTERM');
               // Force kill after 5 seconds
@@ -208,10 +208,10 @@ class BuildSafeguards {
           }
         }
       } else {
-        console.log('✅ No runaway processes found');
+        console.log('OK No runaway processes found');
       }
     } catch (error) {
-      console.log('⚠️  Could not check for runaway processes:', error.message);
+      console.log('WARN  Could not check for runaway processes:', error.message);
     }
   }
 
@@ -250,7 +250,7 @@ class BuildSafeguards {
   async preventInfiniteLoop() {
     // Check for build lock
     if (this.checkExistingBuild()) {
-      console.log('❌ Build already in progress. Aborting to prevent conflicts.');
+      console.log('ERROR Build already in progress. Aborting to prevent conflicts.');
       process.exit(1);
     }
 
@@ -260,7 +260,7 @@ class BuildSafeguards {
     // Create new build lock
     await this.createBuildLock();
 
-    console.log('🛡️  Build safeguards activated');
+    console.log('  Build safeguards activated');
     console.log(`   Max build time: ${this.maxBuildTime / 1000}s`);
     console.log(`   Max memory: ${this.maxMemoryUsage / 1024 / 1024}MB`);
   }
@@ -269,7 +269,7 @@ class BuildSafeguards {
     await this.preventInfiniteLoop();
 
     try {
-      console.log('🚀 Starting safe development build...');
+      console.log(' Starting safe development build...');
 
       // Run entity processing with timeout
       await this.runWithTimeout('npm', ['run', 'entities:dev']);
@@ -278,7 +278,7 @@ class BuildSafeguards {
       await this.runWithTimeout('npm', ['run', 'search:generate']);
 
       // Start Eleventy dev server (long-running)
-      console.log('🌐 Starting Eleventy dev server (this will run until you stop it)...');
+      console.log(' Starting Eleventy dev server (this will run until you stop it)...');
       await this.runLongRunningProcess('npx', [
         'eleventy',
         '--config=.eleventy.development.js',
@@ -286,7 +286,7 @@ class BuildSafeguards {
         '--watch',
       ]);
     } catch (error) {
-      console.error('❌ Safe build failed:', error.message);
+      console.error('ERROR Safe build failed:', error.message);
       throw error;
     } finally {
       this.removeBuildLock();
@@ -297,16 +297,16 @@ class BuildSafeguards {
     await this.preventInfiniteLoop();
 
     try {
-      console.log('🚀 Starting safe Cloudflare Workers dev...');
+      console.log(' Starting safe Cloudflare Workers dev...');
 
       // First, do a quick build
       await this.runWithTimeout('npm', ['run', 'build:workers-dev']);
 
       // Then start wrangler dev - this should run indefinitely
-      console.log('🌐 Starting wrangler dev (this will run until you stop it)...');
+      console.log(' Starting wrangler dev (this will run until you stop it)...');
       await this.runLongRunningProcess('npx', ['wrangler', 'dev', '--local']);
     } catch (error) {
-      console.error('❌ Safe workers dev failed:', error.message);
+      console.error('ERROR Safe workers dev failed:', error.message);
       throw error;
     } finally {
       this.removeBuildLock();
@@ -315,7 +315,7 @@ class BuildSafeguards {
 
   async runLongRunningProcess(command, args = []) {
     return new Promise((resolve, reject) => {
-      console.log(`🚀 Running long-running process: ${command} ${args.join(' ')}`);
+      console.log(` Running long-running process: ${command} ${args.join(' ')}`);
 
       const child = spawn(command, args, {
         stdio: 'inherit',
@@ -324,23 +324,23 @@ class BuildSafeguards {
 
       // Set up signal handlers to properly handle Ctrl+C
       process.on('SIGINT', () => {
-        console.log('\n🛑 Received interrupt signal, stopping wrangler...');
+        console.log('\n Received interrupt signal, stopping wrangler...');
         child.kill('SIGINT');
         resolve(0); // Treat interrupt as success
       });
 
       process.on('SIGTERM', () => {
-        console.log('\n🛑 Received terminate signal, stopping wrangler...');
+        console.log('\n Received terminate signal, stopping wrangler...');
         child.kill('SIGTERM');
         resolve(0); // Treat termination as success
       });
 
       child.on('exit', (code, signal) => {
         if (signal === 'SIGINT' || signal === 'SIGTERM') {
-          console.log(`✅ Wrangler stopped gracefully (${signal})`);
+          console.log(`OK Wrangler stopped gracefully (${signal})`);
           resolve(0);
         } else if (code === 0) {
-          console.log('✅ Wrangler completed successfully');
+          console.log('OK Wrangler completed successfully');
           resolve(code);
         } else {
           reject(new Error(`Process exited with code ${code}`));
@@ -385,7 +385,7 @@ if (require.main === module) {
           console.log('  cleanup - Clean up locks and kill runaway processes');
       }
     } catch (error) {
-      console.error('❌ Safeguards failed:', error.message);
+      console.error('ERROR Safeguards failed:', error.message);
       process.exit(1);
     }
   })();

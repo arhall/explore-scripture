@@ -124,23 +124,40 @@ class SearchEngine {
         return null;
       }));
 
-      const [booksData, categoriesData, entitiesData] = await Promise.all(promises);
+      // Load parables data
+      promises.push(this.fetchJSON('/assets/data/parables-search.json').catch(err => {
+        console.error('[SearchEngine] Failed to load parables data:', err);
+        return null;
+      }));
+
+      // Load people-groups data
+      promises.push(this.fetchJSON('/assets/data/people-groups-search.json').catch(err => {
+        console.error('[SearchEngine] Failed to load people groups data:', err);
+        return null;
+      }));
+
+      const [booksData, categoriesData, entitiesData, parablesData, peopleGroupsData] =
+        await Promise.all(promises);
 
       console.log('[SearchEngine] Loaded data:', {
         books: booksData?.length || 0,
         categories: categoriesData?.length || 0,
-        entities: entitiesData?.length || 0
+        entities: entitiesData?.length || 0,
+        parables: parablesData?.length || 0,
+        peopleGroups: peopleGroupsData?.length || 0,
       });
 
       this.searchData = {
         books: booksData || [],
         categories: categoriesData || [],
         entities: entitiesData || [],
+        parables: parablesData || [],
+        peopleGroups: peopleGroupsData || [],
       };
     } catch (error) {
       console.error('[SearchEngine] Failed to load search data:', error);
       // Initialize with empty data if loading fails
-      this.searchData = { books: [], categories: [], entities: [] };
+      this.searchData = { books: [], categories: [], entities: [], parables: [], peopleGroups: [] };
     }
   }
 
@@ -171,6 +188,12 @@ class SearchEngine {
 
     // Build entities index
     this.buildEntitiesIndex();
+
+    // Build parables index
+    this.buildParablesIndex();
+
+    // Build people groups index
+    this.buildPeopleGroupsIndex();
 
     console.log('[SearchEngine] Indices built successfully');
   }
@@ -285,6 +308,78 @@ class SearchEngine {
 
     this.indices.set('entities', entityItems);
     console.log(`[SearchEngine] Entities index: ${entityItems.length} items`);
+  }
+
+  // Build index for parables
+  buildParablesIndex() {
+    const parables = this.searchData.parables || [];
+    const parableItems = [];
+
+    parables.forEach(parable => {
+      const isCollection = parable.type === 'parables';
+      const refs = parable.refs || [];
+      const gospels = parable.gospels || [];
+      const subtitle = isCollection
+        ? `${parable.parableCount || 0} parables`
+        : `${gospels.join(', ')} • ${refs.length} ref${refs.length !== 1 ? 's' : ''}`;
+
+      parableItems.push({
+        id: `parable-${parable.id}`,
+        type: parable.type || 'parable',
+        title: parable.title,
+        subtitle: subtitle.trim(),
+        description: this.truncateText(parable.summary || '', 150),
+        url: parable.url,
+        searchText:
+          parable.searchText ||
+          this.buildSearchText([
+            parable.title,
+            parable.summary,
+            gospels.join(' '),
+            refs.join(' '),
+          ]),
+        relevanceBoost: isCollection ? 1.6 : 1.3,
+        gospels,
+        references: refs.length,
+      });
+    });
+
+    this.indices.set('parables', parableItems);
+    console.log(`[SearchEngine] Parables index: ${parableItems.length} items`);
+  }
+
+  // Build index for people groups
+  buildPeopleGroupsIndex() {
+    const groups = this.searchData.peopleGroups || [];
+    const groupItems = [];
+
+    groups.forEach(group => {
+      groupItems.push({
+        id: `group-${group.id}`,
+        type: 'group',
+        title: group.name,
+        subtitle: `${group.categoryLabel || group.category || 'Group'} • ${group.testament || ''}`.trim(),
+        description: this.truncateText(group.notes || '', 150),
+        url: group.url,
+        searchText:
+          group.searchText ||
+          this.buildSearchText([
+            group.name,
+            group.categoryLabel,
+            group.category,
+            group.testament,
+            group.notes,
+            (group.altNames || []).join(' '),
+            (group.exampleRefs || []).join(' '),
+          ]),
+        relevanceBoost: 1.1,
+        category: group.category,
+        testament: group.testament,
+      });
+    });
+
+    this.indices.set('groups', groupItems);
+    console.log(`[SearchEngine] People groups index: ${groupItems.length} items`);
   }
 
   // Calculate relevance boost based on entity type and reference count

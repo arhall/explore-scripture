@@ -151,12 +151,12 @@ if (require.main === module) {
   const mode = process.argv[2] || 'development';
   const strategy = cache.getOptimalBuildStrategy(mode);
 
-  console.log('🔍 Build Cache Analysis:');
-  console.log(`📊 Mode: ${mode}`);
-  console.log(`⚡ Skip entity processing: ${strategy.skipEntityProcessing}`);
-  console.log(`🔍 Skip search generation: ${strategy.skipSearchGeneration}`);
-  console.log(`📈 Use incremental build: ${strategy.useIncrementalBuild}`);
-  console.log(`⏱️  Estimated time: ${strategy.estimatedTime}s`);
+  console.log(' Build Cache Analysis:');
+  console.log(` Mode: ${mode}`);
+  console.log(` Skip entity processing: ${strategy.skipEntityProcessing}`);
+  console.log(` Skip search generation: ${strategy.skipSearchGeneration}`);
+  console.log(` Use incremental build: ${strategy.useIncrementalBuild}`);
+  console.log(`⏱  Estimated time: ${strategy.estimatedTime}s`);
 
   // Output JSON for script consumption
   if (process.argv.includes('--json')) {

@@ -25,11 +25,11 @@ def test_base_url_selection():
     if os.getenv("EXPLORE_SCRIPTURE_LOCAL", "").lower() == "true":
         expected = os.getenv("LOCAL_BASE_URL", "http://localhost:8080")
         assert base_url == expected, f"Expected {expected}, got {base_url}"
-        print(f"✅ Using local development server: {base_url}")
+        print(f"OK Using local development server: {base_url}")
     else:
         expected = os.getenv("PRODUCTION_BASE_URL", "https://explore-scripture.pages.dev")
         assert base_url == expected, f"Expected {expected}, got {base_url}"
-        print(f"✅ Using production server: {base_url}")
+        print(f"OK Using production server: {base_url}")
 
 
 def test_test_urls_generated():
@@ -41,7 +41,7 @@ def test_test_urls_generated():
         assert key in urls, f"Missing required URL key: {key}"
         assert urls[key].startswith("http"), f"Invalid URL for {key}: {urls[key]}"
     
-    print("✅ Test URLs generated successfully:")
+    print("OK Test URLs generated successfully:")
     for key, url in urls.items():
         print(f"  {key}: {url}")
 
@@ -56,7 +56,7 @@ def test_browser_configuration():
     assert height.isdigit(), f"BROWSER_HEIGHT should be numeric, got: {height}"
     assert isinstance(headless, bool), f"HEADLESS should be boolean, got: {headless}"
     
-    print(f"✅ Browser config - Width: {width}, Height: {height}, Headless: {headless}")
+    print(f"OK Browser config - Width: {width}, Height: {height}, Headless: {headless}")
 
 
 def test_timeout_configuration():
@@ -67,7 +67,7 @@ def test_timeout_configuration():
     assert test_timeout > 0, f"TEST_TIMEOUT should be positive, got: {test_timeout}"
     assert page_load_timeout > 0, f"PAGE_LOAD_TIMEOUT should be positive, got: {page_load_timeout}"
     
-    print(f"✅ Timeouts - Test: {test_timeout}ms, Page Load: {page_load_timeout}ms")
+    print(f"OK Timeouts - Test: {test_timeout}ms, Page Load: {page_load_timeout}ms")
 
 
 if __name__ == "__main__":
@@ -77,4 +77,4 @@ if __name__ == "__main__":
     test_test_urls_generated()
     test_browser_configuration()
     test_timeout_configuration()
-    print("\n🎉 All environment configuration tests passed!")
+    print("\n All environment configuration tests passed!")

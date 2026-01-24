@@ -19,7 +19,7 @@ class OptimizedEleventyBuild {
   }
 
   async optimizeEntityPagination(mode = 'development') {
-    console.log(`🔧 Optimizing Eleventy pagination for ${mode} mode...`);
+    console.log(` Optimizing Eleventy pagination for ${mode} mode...`);
 
     if (mode === 'development') {
       await this.createDevelopmentEntityPagination();
@@ -32,7 +32,7 @@ class OptimizedEleventyBuild {
     // In development, only paginate priority entities to reduce build time
     const entitiesDir = './src/assets/data/entities';
     if (!fs.existsSync(entitiesDir)) {
-      console.log('⚠️  No entities directory found, skipping pagination optimization');
+      console.log('WARN  No entities directory found, skipping pagination optimization');
       return;
     }
 
@@ -43,7 +43,7 @@ class OptimizedEleventyBuild {
     const devEntityIds = entityFiles.slice(0, 100).map(f => f.replace('.json', ''));
 
     console.log(
-      `📊 Development mode: Paginating ${devEntityIds.length} entities (vs ${entityFiles.length} total)`
+      `Development mode: Paginating ${devEntityIds.length} entities (vs ${entityFiles.length} total)`
     );
 
     await this.updateEntityPaginationFile(devEntityIds);
@@ -56,14 +56,14 @@ class OptimizedEleventyBuild {
     // In production, paginate all entities
     const entitiesDir = './src/assets/data/entities';
     if (!fs.existsSync(entitiesDir)) {
-      console.log('⚠️  No entities directory found, skipping pagination optimization');
+      console.log('WARN  No entities directory found, skipping pagination optimization');
       return;
     }
 
     const entityFiles = fs.readdirSync(entitiesDir).filter(f => f.endsWith('.json'));
     const allEntityIds = entityFiles.map(f => f.replace('.json', ''));
 
-    console.log(`🏭 Production mode: Paginating all ${allEntityIds.length} entities`);
+    console.log(` Production mode: Paginating all ${allEntityIds.length} entities`);
 
     await this.updateEntityPaginationFile(allEntityIds);
   }
@@ -80,21 +80,21 @@ module.exports = ${JSON.stringify(entityIds, null, 2)};
 `;
 
     fs.writeFileSync(entitiesDataFile, entityIdsContent);
-    console.log(`✅ Updated ${entitiesDataFile} with ${entityIds.length} entity IDs`);
+    console.log(`OK Updated ${entitiesDataFile} with ${entityIds.length} entity IDs`);
   }
 
   async createEntityPlaceholders(remainingCount) {
     if (remainingCount <= 0) return;
 
-    console.log(`📝 Noted ${remainingCount} remaining entities for production build`);
+    console.log(` Noted ${remainingCount} remaining entities for production build`);
 
     // Instead of creating a conflicting placeholder file,
     // just log the information for development reference
-    console.log(`   ℹ️  ${remainingCount} additional entities will be available in production`);
+    console.log(`   ℹ  ${remainingCount} additional entities will be available in production`);
   }
 
   async optimizeStaticAssets() {
-    console.log('🎯 Optimizing static asset copying...');
+    console.log(' Optimizing static asset copying...');
 
     // Check if assets have changed
     const assetPaths = ['./src/assets', './src/styles.css', './src/manifest.json'];
@@ -104,16 +104,16 @@ module.exports = ${JSON.stringify(entityIds, null, 2)};
     );
 
     if (!hasAssetsChanged) {
-      console.log('✅ Static assets unchanged, skipping copy');
+      console.log('OK Static assets unchanged, skipping copy');
       return false;
     }
 
-    console.log('📋 Static assets changed, will be copied during build');
+    console.log(' Static assets changed, will be copied during build');
     return true;
   }
 
   async createOptimizedEleventyConfig(mode = 'development') {
-    console.log(`⚙️  Creating optimized Eleventy config for ${mode}...`);
+    console.log(`  Creating optimized Eleventy config for ${mode}...`);
 
     const isDev = mode === 'development';
 
@@ -232,13 +232,13 @@ module.exports = function(eleventyConfig) {
 
     const configPath = `./.eleventy.${mode}.js`;
     fs.writeFileSync(configPath, optimizedConfig);
-    console.log(`✅ Created optimized config: ${configPath}`);
+    console.log(`OK Created optimized config: ${configPath}`);
 
     return configPath;
   }
 
   async runOptimizedBuild(mode = 'development') {
-    console.log(`🚀 Running optimized Eleventy build for ${mode}...`);
+    console.log(` Running optimized Eleventy build for ${mode}...`);
 
     // Create optimized configuration
     const configPath = await this.createOptimizedEleventyConfig(mode);
@@ -265,11 +265,11 @@ if (require.main === module) {
       await builder.optimizeEntityPagination(mode);
       const { configPath, buildCommand } = await builder.runOptimizedBuild(mode);
 
-      console.log('✅ Eleventy optimization complete!');
-      console.log(`🔧 Config: ${configPath}`);
-      console.log(`🚀 Command: ${buildCommand}`);
+      console.log('OK Eleventy optimization complete!');
+      console.log(` Config: ${configPath}`);
+      console.log(` Command: ${buildCommand}`);
     } catch (error) {
-      console.error('❌ Eleventy optimization failed:', error);
+      console.error('ERROR Eleventy optimization failed:', error);
       process.exit(1);
     }
   })();

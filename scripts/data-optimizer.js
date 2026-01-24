@@ -28,7 +28,7 @@ class DataOptimizer {
   }
 
   async initialize() {
-    console.log('🗄️ Initializing Advanced Data Optimizer...');
+    console.log(' Initializing Advanced Data Optimizer...');
 
     // Create optimized directories
     [this.optimizedDir, this.indexDir].forEach(dir => {
@@ -40,7 +40,7 @@ class DataOptimizer {
 
   // Create optimized binary indexes for ultra-fast lookups
   async createBinaryIndexes() {
-    console.log('📊 Creating binary search indexes...');
+    console.log(' Creating binary search indexes...');
 
     try {
       // Load entity data
@@ -79,7 +79,7 @@ class DataOptimizer {
 
       return indexes;
     } catch (error) {
-      console.error('❌ Failed to create binary indexes:', error);
+      console.error('ERROR Failed to create binary indexes:', error);
       throw error;
     }
   }
@@ -332,7 +332,7 @@ class DataOptimizer {
 
   // Create compressed data chunks for streaming
   async createCompressedChunks() {
-    console.log('🗜️ Creating compressed data chunks...');
+    console.log(' Creating compressed data chunks...');
 
     try {
       const entitiesPath = path.join(this.dataDir, 'entities-search.json');
@@ -391,7 +391,7 @@ class DataOptimizer {
 
       return manifest;
     } catch (error) {
-      console.error('❌ Failed to create compressed chunks:', error);
+      console.error('ERROR Failed to create compressed chunks:', error);
       throw error;
     }
   }
@@ -424,7 +424,7 @@ class DataOptimizer {
 
   // Create bloom filter for fast negative lookups
   createBloomFilter(entities) {
-    console.log('🌸 Creating Bloom filter for fast negative lookups...');
+    console.log(' Creating Bloom filter for fast negative lookups...');
 
     const filter = new Array(this.bloomFilterBits).fill(0);
     const hashFunctions = 3;
@@ -507,7 +507,7 @@ class DataOptimizer {
   // Main execution
   async optimize() {
     const startTime = Date.now();
-    console.log('🚀 Starting advanced data optimization...');
+    console.log(' Starting advanced data optimization...');
 
     await this.initialize();
 
@@ -527,8 +527,8 @@ class DataOptimizer {
       JSON.stringify(report, null, 2)
     );
 
-    console.log(`✅ Advanced data optimization complete in ${Date.now() - startTime}ms`);
-    console.log(`📊 Report saved: ${path.join(this.optimizedDir, 'optimization-report.json')}`);
+    console.log(`OK Advanced data optimization complete in ${Date.now() - startTime}ms`);
+    console.log(` Report saved: ${path.join(this.optimizedDir, 'optimization-report.json')}`);
 
     return report;
   }
@@ -598,7 +598,7 @@ if (require.main === module) {
   optimizer
     .optimize()
     .then(report => {
-      console.log('\n📈 Optimization Summary:');
+      console.log('\n Optimization Summary:');
       console.log(`   Original Size: ${report.optimization.originalSize}`);
       console.log(`   Optimized Size: ${report.optimization.optimizedSize}`);
       console.log(`   Compression: ${report.optimization.compressionRatio}`);
@@ -606,7 +606,7 @@ if (require.main === module) {
       console.log(`   Processing Time: ${report.processingTime}ms`);
     })
     .catch(error => {
-      console.error('❌ Data optimization failed:', error);
+      console.error('ERROR Data optimization failed:', error);
       process.exit(1);
     });
 }

@@ -66,7 +66,7 @@ class TestRegressionFixes:
     
     def test_theme_toggle_functionality(self, browser):
         """Test that theme toggle works correctly"""
-        print("\n🎨 Testing theme toggle functionality...")
+        print("\n Testing theme toggle functionality...")
         
         browser.get(self.BASE_URL)
         
@@ -104,11 +104,11 @@ class TestRegressionFixes:
         final_theme = browser.execute_script("return document.documentElement.getAttribute('data-theme') || 'light'")
         assert final_theme == initial_theme, "Theme should return to initial state"
         
-        print("✅ Theme toggle functionality working correctly")
+        print("OK Theme toggle functionality working correctly")
     
     def test_chapter_reader_buttons_present(self, browser):
         """Test that Read Chapter buttons are present on book pages"""
-        print("\n📖 Testing chapter reader buttons...")
+        print("\n Testing chapter reader buttons...")
         
         # Test Genesis page
         browser.get(urljoin(self.BASE_URL, "/books/genesis/"))
@@ -138,11 +138,11 @@ class TestRegressionFixes:
         clickable_buttons = [btn for btn in chapter_buttons if btn.is_displayed() and btn.is_enabled()]
         assert len(clickable_buttons) > 0, "At least one chapter reader button should be clickable"
         
-        print(f"✅ Found {len(clickable_buttons)} working chapter reader buttons")
+        print(f"OK Found {len(clickable_buttons)} working chapter reader buttons")
 
     def test_no_duplicate_chapter_reader_buttons(self, browser):
         """Test that there are no duplicate chapter reader buttons (regression fix)"""
-        print("\n🚫 Testing for duplicate chapter reader buttons...")
+        print("\n Testing for duplicate chapter reader buttons...")
         
         # Test Genesis page
         browser.get(urljoin(self.BASE_URL, "/books/genesis/"))
@@ -194,11 +194,11 @@ class TestRegressionFixes:
         
         assert len(duplicate_issues) == 0, f"No duplicate chapter reader buttons should exist: {duplicate_issues}"
         
-        print("✅ No duplicate chapter reader buttons found")
+        print("OK No duplicate chapter reader buttons found")
     
     def test_youtube_videos_not_blocked(self, browser):
         """Test that YouTube Bible Project videos are not blocked by CSP"""
-        print("\n📺 Testing YouTube video embedding...")
+        print("\n Testing YouTube video embedding...")
         
         browser.get(self.BASE_URL)
         
@@ -245,11 +245,11 @@ class TestRegressionFixes:
             print(f"YouTube allowed in CSP: {youtube_allowed}")
             assert youtube_allowed, "YouTube should be allowed in Content Security Policy"
         
-        print("✅ YouTube videos should not be blocked by CSP")
+        print("OK YouTube videos should not be blocked by CSP")
     
     def test_biblegateway_integration_working(self, browser):
         """Test that BibleGateway integration is not blocked"""
-        print("\n📜 Testing BibleGateway integration...")
+        print("\n Testing BibleGateway integration...")
         
         browser.get(urljoin(self.BASE_URL, "/books/genesis/"))
         
@@ -287,11 +287,11 @@ class TestRegressionFixes:
             print(f"BibleGateway allowed in CSP: {biblegateway_allowed}")
             assert biblegateway_allowed, "BibleGateway should be allowed in Content Security Policy"
         
-        print("✅ BibleGateway integration should work")
+        print("OK BibleGateway integration should work")
     
     def test_javascript_modules_loading_correctly(self, browser):
         """Test that JavaScript modules are loading in the correct order"""
-        print("\n⚡ Testing JavaScript module loading...")
+        print("\n Testing JavaScript module loading...")
         
         browser.get(self.BASE_URL)
         
@@ -325,11 +325,11 @@ class TestRegressionFixes:
             print(f"Chapter reader loaded on book page: {chapter_reader_loaded}")
             assert chapter_reader_loaded, "Chapter reader should load on book pages"
         
-        print("✅ JavaScript modules loading correctly")
+        print("OK JavaScript modules loading correctly")
     
     def test_critical_css_loading(self, browser):
         """Test that critical CSS is properly inlined"""
-        print("\n🎨 Testing critical CSS loading...")
+        print("\n Testing critical CSS loading...")
         
         browser.get(self.BASE_URL)
         
@@ -347,11 +347,11 @@ class TestRegressionFixes:
         
         assert nav_display != "none", "Navigation should be visible with critical CSS"
         
-        print("✅ Critical CSS loading correctly")
+        print("OK Critical CSS loading correctly")
     
     def test_service_worker_registration(self, browser):
         """Test that service worker registers successfully"""
-        print("\n🔧 Testing service worker registration...")
+        print("\n Testing service worker registration...")
         
         browser.get(self.BASE_URL)
         time.sleep(3)  # Wait for SW registration
@@ -374,11 +374,11 @@ class TestRegressionFixes:
         
         print(f"Service worker scope: {sw_scope}")
         
-        print("✅ Service worker registration tested")
+        print("OK Service worker registration tested")
     
     def test_offline_functionality(self, browser):
         """Test offline page and caching functionality"""
-        print("\n📴 Testing offline functionality...")
+        print("\n Testing offline functionality...")
         
         # First load the main page to populate cache
         browser.get(self.BASE_URL)
@@ -397,11 +397,11 @@ class TestRegressionFixes:
         offline_features = browser.find_elements(By.CSS_SELECTOR, ".offline-features, .offline-content")
         assert len(offline_features) > 0, "Offline page should have feature descriptions"
         
-        print("✅ Offline functionality present")
+        print("OK Offline functionality present")
     
     def test_search_functionality_basic(self, browser):
         """Test basic search functionality"""
-        print("\n🔍 Testing search functionality...")
+        print("\n Testing search functionality...")
         
         browser.get(self.BASE_URL)
         time.sleep(3)  # Wait for search modules to load
@@ -425,11 +425,11 @@ class TestRegressionFixes:
             
             search_input.clear()
             
-        print("✅ Search functionality tested")
+        print("OK Search functionality tested")
 
     def test_responsive_design_basics(self, browser):
         """Test basic responsive design functionality"""
-        print("\n📱 Testing responsive design...")
+        print("\n Testing responsive design...")
         
         browser.get(self.BASE_URL)
         
@@ -459,11 +459,11 @@ class TestRegressionFixes:
         # Reset window size
         browser.set_window_size(1920, 1080)
         
-        print("✅ Responsive design basics working")
+        print("OK Responsive design basics working")
 
     def test_responsive_table_design(self, browser):
         """Test that chapter summary tables are responsive (regression fix)"""
-        print("\n📊 Testing responsive table design...")
+        print("\n Testing responsive table design...")
         
         # Test on a book page with chapter summaries
         browser.get(urljoin(self.BASE_URL, "/books/genesis/"))
@@ -503,11 +503,11 @@ class TestRegressionFixes:
         # Reset window size
         browser.set_window_size(1920, 1080)
         
-        print("✅ Responsive table design working")
+        print("OK Responsive table design working")
 
     def test_accessibility_aria_labels(self, browser):
         """Test that interactive elements have proper ARIA labels (regression fix)"""
-        print("\n♿ Testing accessibility ARIA labels...")
+        print("\n Testing accessibility ARIA labels...")
         
         browser.get(self.BASE_URL)
         time.sleep(2)
@@ -546,11 +546,11 @@ class TestRegressionFixes:
             assert aria_expanded is not None, "TOC toggle should have aria-expanded"
             print(f"TOC toggle - label: {aria_label}, expanded: {aria_expanded}")
         
-        print("✅ Accessibility ARIA labels present")
+        print("OK Accessibility ARIA labels present")
 
     def test_key_figures_position(self, browser):
         """Test that key figures appear after chapter summaries (layout change)"""
-        print("\n👥 Testing key figures section positioning...")
+        print("\n Testing key figures section positioning...")
         
         browser.get(urljoin(self.BASE_URL, "/books/genesis/"))
         self.wait_for_element(browser, "h1")
@@ -581,7 +581,7 @@ class TestRegressionFixes:
             key_figures_header = browser.find_element(By.CSS_SELECTOR, ".key-figures-section h3")
             assert key_figures_header.text == "Key Figures", "Key figures section should have proper heading"
             
-        print("✅ Key figures positioned correctly after chapter summaries")
+        print("OK Key figures positioned correctly after chapter summaries")
 
 if __name__ == "__main__":
     pytest.main([__file__, "-v", "-s"])

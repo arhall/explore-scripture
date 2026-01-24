@@ -362,7 +362,7 @@ class PredictivePreloader {
         // Start background prediction
         this.startPredictionLoop();
         
-        console.log('🔮 Predictive Preloader initialized');
+        console.log(' Predictive Preloader initialized');
     }
     
     /**
@@ -564,7 +564,7 @@ class PredictivePreloader {
             
             // Check performance budget
             if (!this.checkPerformanceBudget(totalSize, strategyConfig)) {
-                console.log(\`⚠️  Preload skipped for \${target}: exceeds performance budget\`);
+                console.log(\`WARN  Preload skipped for \${target}: exceeds performance budget\`);
                 return;
             }
             
@@ -581,7 +581,7 @@ class PredictivePreloader {
                     resources: successful.map(result => result.value)
                 });
                 
-                console.log(\`🚀 Preloaded \${successful.length}/\${resources.length} resources for \${target}\`);
+                console.log(\` Preloaded \${successful.length}/\${resources.length} resources for \${target}\`);
             }
             
         } catch (error) {
@@ -802,9 +802,9 @@ class PredictivePreloader {
         
         // Log performance metrics
         if (window.bibleExplorerDebug) {
-            console.log('🎯 Prediction Analytics:', this.analytics);
-            console.log('💾 Cache Size:', this.cache.size);
-            console.log('🧠 Active Predictions:', this.predictions.size);
+            console.log(' Prediction Analytics:', this.analytics);
+            console.log(' Cache Size:', this.cache.size);
+            console.log(' Active Predictions:', this.predictions.size);
         }
     }
     
@@ -1000,10 +1000,10 @@ if (require.main === module) {
   preloader
     .generatePreloadConfig()
     .then(() => {
-      console.log('✅ Predictive preloader configuration generated');
+      console.log('OK Predictive preloader configuration generated');
     })
     .catch(error => {
-      console.error('❌ Failed to generate predictive preloader:', error);
+      console.error('ERROR Failed to generate predictive preloader:', error);
       process.exit(1);
     });
 }

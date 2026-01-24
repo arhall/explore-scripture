@@ -10,9 +10,11 @@ const path = require('path');
 
 // Import data modules
 const searchDataModule = require('./searchDataGenerator.js');
+const parablesData = require('./src/_data/parables.js');
+const peopleGroupsData = require('./src/_data/peopleGroups.js');
 
 async function generateSearchData() {
-  console.log('🔍 Generating search data...');
+  console.log(' Generating search data...');
 
   try {
     // Generate search data
@@ -37,28 +39,39 @@ async function generateSearchData() {
       entitiesData = await generateEntitiesSearchData();
       searchData.entities = entitiesData;
     } catch (error) {
-      console.log('⚠️  Entities data not found, skipping entity search indexing');
+      console.log('WARN  Entities data not found, skipping entity search indexing');
       searchData.entities = [];
     }
+
+    // Generate parables and people-group search data
+    const parablesSearchData = generateParablesSearchData(parablesData);
+    const peopleGroupsSearchData = generatePeopleGroupsSearchData(peopleGroupsData);
+
+    searchData.parables = parablesSearchData;
+    searchData.peopleGroups = peopleGroupsSearchData;
 
     // Write individual data files
     await Promise.all([
       writeJSON(path.join(dataDir, 'books.json'), searchData.books),
       writeJSON(path.join(dataDir, 'categories.json'), searchData.categories),
       writeJSON(path.join(dataDir, 'entities-search.json'), entitiesData),
+      writeJSON(path.join(dataDir, 'parables-search.json'), parablesSearchData),
+      writeJSON(path.join(dataDir, 'people-groups-search.json'), peopleGroupsSearchData),
       writeJSON(path.join(dataDir, 'search-data.json'), searchData),
     ]);
 
-    console.log('✅ Search data generated successfully');
-    console.log(`📊 Stats:`);
+    console.log('OK Search data generated successfully');
+    console.log(` Stats:`);
     console.log(`   - Books: ${searchData.books.length}`);
     console.log(`   - Categories: ${searchData.categories.length}`);
     console.log(`   - Entities: ${entitiesData.length}`);
+    console.log(`   - Parables: ${parablesSearchData.length}`);
+    console.log(`   - People Groups: ${peopleGroupsSearchData.length}`);
     console.log(
       `   - Total chapters: ${searchData.books.reduce((sum, book) => sum + book.chapterCount, 0)}`
     );
   } catch (error) {
-    console.error('❌ Failed to generate search data:', error);
+    console.error('ERROR Failed to generate search data:', error);
     process.exit(1);
   }
 }
@@ -70,7 +83,7 @@ async function writeJSON(filePath, data) {
       if (err) {
         reject(err);
       } else {
-        console.log(`   ✓ ${path.basename(filePath)} (${(jsonString.length / 1024).toFixed(1)}KB)`);
+        console.log(`   OK ${path.basename(filePath)} (${(jsonString.length / 1024).toFixed(1)}KB)`);
         resolve();
       }
     });
@@ -81,7 +94,7 @@ async function writeJSON(filePath, data) {
  * Generate entities search data from processed entity files
  */
 async function generateEntitiesSearchData() {
-  console.log('🔍 Generating entities search data...');
+  console.log(' Generating entities search data...');
 
   const entitiesDir = path.join(__dirname, 'src', 'assets', 'data', 'entities');
   const profileIndexPath = path.join(
@@ -133,7 +146,7 @@ async function generateEntitiesSearchData() {
   const entityFiles = [...prioritizedFiles, ...otherFiles];
 
   console.log(
-    `📊 Entity selection: ${prioritizedFiles.length} prioritized + ${otherFiles.length} others = ${entityFiles.length} total`
+    `Entity selection: ${prioritizedFiles.length} prioritized + ${otherFiles.length} others = ${entityFiles.length} total`
   );
 
   const entitiesSearchData = [];
@@ -183,7 +196,7 @@ async function generateEntitiesSearchData() {
   // Sort by number of references (most important first)
   entitiesSearchData.sort((a, b) => b.references - a.references);
 
-  console.log(`✅ Generated search data for ${entitiesSearchData.length} entities`);
+  console.log(`OK Generated search data for ${entitiesSearchData.length} entities`);
 
   // Generate per-book entity files for better performance
   await generatePerBookEntityData(entitiesSearchData);
@@ -192,7 +205,7 @@ async function generateEntitiesSearchData() {
 }
 
 async function generatePerBookEntityData(entitiesData) {
-  console.log('📚 Generating per-book entity data...');
+  console.log(' Generating per-book entity data...');
 
   const booksDir = path.join(__dirname, 'src', 'assets', 'data', 'books');
   if (!fs.existsSync(booksDir)) {
@@ -229,7 +242,7 @@ async function generatePerBookEntityData(entitiesData) {
     bookFiles.push(fileName);
   }
 
-  console.log(`✅ Generated ${bookFiles.length} per-book entity files`);
+  console.log(`OK Generated ${bookFiles.length} per-book entity files`);
 }
 
 function normalizeTestaments(testaments = []) {
@@ -249,6 +262,85 @@ function getTestamentLabel(testaments = []) {
   if (testaments.includes('OT')) return 'OT';
   if (testaments.includes('NT')) return 'NT';
   return testaments[0];
+}
+
+function generateParablesSearchData(parables = []) {
+  const items = Array.isArray(parables) ? parables : [];
+  const parableTitles = items.map(parable => parable.title).filter(Boolean);
+
+  const parentEntry = {
+    id: 'jesus-parables',
+    title: "Jesus' Parables",
+    url: '/parables/',
+    summary: 'A curated list of parables taught by Jesus in the Gospels.',
+    type: 'parables',
+    parableCount: items.length,
+    searchText: ['Jesus parables', ...parableTitles].join(' ').toLowerCase(),
+  };
+
+  const parableEntries = items.map(parable => {
+    const refs = parable.refs || [];
+    const gospels = parable.gospels || [];
+    const anchor = parable.anchor || String(parable.id || '').toLowerCase();
+
+    return {
+      id: parable.id,
+      title: parable.title,
+      url: `/parables/#${anchor}`,
+      summary: parable.summary || '',
+      refs,
+      gospels,
+      type: 'parable',
+      searchText: [
+        parable.title,
+        parable.summary || '',
+        gospels.join(' '),
+        refs.join(' '),
+        'parable',
+      ]
+        .join(' ')
+        .toLowerCase(),
+    };
+  });
+
+  return [parentEntry, ...parableEntries];
+}
+
+function generatePeopleGroupsSearchData(peopleGroupsData) {
+  const groups = Array.isArray(peopleGroupsData)
+    ? peopleGroupsData
+    : peopleGroupsData?.groups || [];
+
+  return groups.map(group => {
+    const altNames = group.alt_names || [];
+    const exampleRefs = group.example_refs || [];
+    const categoryLabel = group.categoryLabel || group.category || 'Unknown';
+    const anchor = group.anchor || group.id;
+
+    return {
+      id: group.id,
+      name: group.name,
+      category: group.category,
+      categoryLabel,
+      testament: group.testament,
+      altNames,
+      notes: group.notes || '',
+      exampleRefs,
+      url: `/people-groups/#${anchor}`,
+      searchText: [
+        group.name,
+        categoryLabel,
+        group.category,
+        group.testament,
+        group.notes || '',
+        altNames.join(' '),
+        exampleRefs.join(' '),
+        'people group',
+      ]
+        .join(' ')
+        .toLowerCase(),
+    };
+  });
 }
 
 // Run the generator

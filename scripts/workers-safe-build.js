@@ -18,7 +18,7 @@ class WorkersSafeBuild {
   }
 
   async createTempDataStructure() {
-    console.log('📁 Creating temporary data structure...');
+    console.log(' Creating temporary data structure...');
 
     // Create temp directory
     if (fs.existsSync(this.tempDataDir)) {
@@ -32,7 +32,7 @@ class WorkersSafeBuild {
       await this.copyDirectory(dataDir, this.tempDataDir);
     }
 
-    console.log('✅ Temporary data structure created');
+    console.log('OK Temporary data structure created');
   }
 
   async copyDirectory(src, dest) {
@@ -56,7 +56,7 @@ class WorkersSafeBuild {
 
   async runCommand(command, args = []) {
     return new Promise((resolve, reject) => {
-      console.log(`🚀 Running: ${command} ${args.join(' ')}`);
+      console.log(` Running: ${command} ${args.join(' ')}`);
 
       const child = spawn(command, args, {
         stdio: 'inherit',
@@ -86,7 +86,7 @@ class WorkersSafeBuild {
   }
 
   async buildWithoutWatching() {
-    console.log('🔨 Building site without triggering file watchers...');
+    console.log(' Building site without triggering file watchers...');
 
     try {
       // Set environment variables to use temp data
@@ -108,21 +108,21 @@ class WorkersSafeBuild {
       // Prepare workers files
       await this.runCommand('node', ['scripts/prepare-workers.js']);
 
-      console.log('✅ Safe build completed');
+      console.log('OK Safe build completed');
     } catch (error) {
-      console.error('❌ Build failed:', error.message);
+      console.error('ERROR Build failed:', error.message);
       throw error;
     }
   }
 
   async cleanup() {
-    console.log('🧹 Cleaning up temporary files...');
+    console.log(' Cleaning up temporary files...');
 
     if (fs.existsSync('./tmp')) {
       fs.rmSync('./tmp', { recursive: true });
     }
 
-    console.log('✅ Cleanup completed');
+    console.log('OK Cleanup completed');
   }
 
   async run() {
@@ -131,9 +131,9 @@ class WorkersSafeBuild {
       await this.buildWithoutWatching();
       await this.cleanup();
 
-      console.log('🎉 Workers safe build completed successfully!');
+      console.log(' Workers safe build completed successfully!');
     } catch (error) {
-      console.error('💥 Workers safe build failed:', error.message);
+      console.error(' Workers safe build failed:', error.message);
       await this.cleanup();
       process.exit(1);
     }

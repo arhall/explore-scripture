@@ -170,7 +170,7 @@ class DistributedSearchIndex {
     // Generate biblical data dictionaries
     await this.generateBiblicalDictionaries(outputDir);
 
-    console.log('✅ Distributed search index system generated');
+    console.log('OK Distributed search index system generated');
 
     return {
       indexBuilder,
@@ -209,7 +209,7 @@ class SearchIndexBuilder {
      */
     async buildIndex(contentSources) {
         const startTime = Date.now();
-        console.log('🔨 Building distributed search index...');
+        console.log(' Building distributed search index...');
         
         try {
             // Step 1: Analyze content for optimal sharding
@@ -232,10 +232,10 @@ class SearchIndexBuilder {
             
             this.statistics.buildTime = Date.now() - startTime;
             
-            console.log(\`✅ Search index built in \${this.statistics.buildTime}ms\`);
-            console.log(\`   📊 Documents: \${this.statistics.documentsProcessed}\`);
-            console.log(\`   🔤 Terms: \${this.statistics.termsIndexed}\`);
-            console.log(\`   📦 Shards: \${this.statistics.shardsCreated}\`);
+            console.log(\`OK Search index built in \${this.statistics.buildTime}ms\`);
+            console.log(\`    Documents: \${this.statistics.documentsProcessed}\`);
+            console.log(\`    Terms: \${this.statistics.termsIndexed}\`);
+            console.log(\`    Shards: \${this.statistics.shardsCreated}\`);
             
             return {
                 indexes: optimizedIndexes,
@@ -245,7 +245,7 @@ class SearchIndexBuilder {
             };
             
         } catch (error) {
-            console.error('❌ Index building failed:', error);
+            console.error('ERROR Index building failed:', error);
             throw error;
         }
     }
@@ -386,7 +386,7 @@ class SearchIndexBuilder {
         
         // Build index for each shard
         for (const [shardId, shardDocuments] of documentGroups.entries()) {
-            console.log(\`📦 Building shard \${shardId} with \${shardDocuments.length} documents\`);
+            console.log(\` Building shard \${shardId} with \${shardDocuments.length} documents\`);
             
             const shardIndex = await this.buildSingleShardIndex(shardDocuments, shardId);
             indexes.set(shardId, shardIndex);
@@ -471,7 +471,7 @@ class SearchIndexBuilder {
         const optimized = new Map();
         
         for (const [shardId, index] of indexes.entries()) {
-            console.log(\`⚡ Optimizing shard \${shardId}\`);
+            console.log(\` Optimizing shard \${shardId}\`);
             
             const optimizedIndex = {
                 ...index,
@@ -945,14 +945,14 @@ class ShardManager {
     
     balanceShards() {
         // Implement shard rebalancing logic
-        console.log('⚖️  Checking shard balance...');
+        console.log('  Checking shard balance...');
         
         const shardSizes = Array.from(this.metadata.values()).map(m => m.size);
         const avgSize = shardSizes.reduce((a, b) => a + b, 0) / shardSizes.length;
         const maxDeviation = Math.max(...shardSizes.map(size => Math.abs(size - avgSize)));
         
         if (maxDeviation > avgSize * 0.3) {
-            console.log('🔄 Shards need rebalancing');
+            console.log(' Shards need rebalancing');
             return true;
         }
         
@@ -1885,8 +1885,8 @@ class DistributedSearchClient {
             this.shardManager = new ShardManager();
             
             this.isInitialized = true;
-            console.log('🔍 Distributed Search Client initialized');
-            console.log(\`📦 Loaded \${this.indexes.size} search index shards\`);
+            console.log(' Distributed Search Client initialized');
+            console.log(\` Loaded \${this.indexes.size} search index shards\`);
             
         } catch (error) {
             console.error('Failed to initialize search client:', error);
@@ -2469,7 +2469,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         window.searchClient = new DistributedSearchClient();
         await window.searchClient.init();
-        console.log('🔍 Search system ready');
+        console.log(' Search system ready');
     } catch (error) {
         console.error('Failed to initialize search system:', error);
     }
@@ -2510,7 +2510,7 @@ class ShardManager {
             status: 'active'
         });
         
-        console.log(\`📦 Registered shard: \${shardId}\`);
+        console.log(\` Registered shard: \${shardId}\`);
     }
     
     /**
@@ -2562,7 +2562,7 @@ class ShardManager {
             metadata.health = health;
             
             if (health.status === 'unhealthy') {
-                console.warn(\`⚠️  Shard \${shardId} is unhealthy:\`, health.issues);
+                console.warn(\`WARN  Shard \${shardId} is unhealthy:\`, health.issues);
             }
         }
     }
@@ -2798,7 +2798,7 @@ class SearchBuildIntegration {
         this.eleventyConfig.addPassthroughCopy('src/assets/data/search-*');
         this.eleventyConfig.addPassthroughCopy('src/assets/search/');
         
-        console.log('🔍 Search build integration configured');
+        console.log(' Search build integration configured');
     }
     
     /**
@@ -2806,7 +2806,7 @@ class SearchBuildIntegration {
      */
     async generateSearchIndexes() {
         try {
-            console.log('🔨 Generating distributed search indexes...');
+            console.log(' Generating distributed search indexes...');
             
             // Load content sources
             const contentSources = await this.loadContentSources();
@@ -2817,10 +2817,10 @@ class SearchBuildIntegration {
             // Write indexes to files
             await this.writeIndexesToFiles(indexResult);
             
-            console.log('✅ Search indexes generated successfully');
+            console.log('OK Search indexes generated successfully');
             
         } catch (error) {
-            console.error('❌ Failed to generate search indexes:', error);
+            console.error('ERROR Failed to generate search indexes:', error);
             throw error;
         }
     }
@@ -3025,10 +3025,10 @@ if (require.main === module) {
   searchIndex
     .generateSearchIndexSystem()
     .then(() => {
-      console.log('✅ Distributed search index system generated');
+      console.log('OK Distributed search index system generated');
     })
     .catch(error => {
-      console.error('❌ Failed to generate search index system:', error);
+      console.error('ERROR Failed to generate search index system:', error);
       process.exit(1);
     });
 }

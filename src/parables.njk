@@ -1,0 +1,41 @@
+---
+layout: base.njk
+title: Jesus' Parables
+description: Short summaries and Scripture references for Jesus' parables across the Gospels.
+---
+
+{% from "macros/scripture.njk" import scripture %}
+
+<div class="header">
+  <h1>Jesus' Parables</h1>
+  <p class="meta">
+    A curated list of parables taught by Jesus, with quick summaries and Scripture references.
+  </p>
+</div>
+
+<div class="parables-grid">
+  {% for parable in parables %}
+  <article class="parable-card" id="{{ parable.anchor }}">
+    <div class="parable-header">
+      <h2>{{ parable.title }}</h2>
+      <span class="parable-id">{{ parable.id }}</span>
+    </div>
+
+    <p class="parable-summary">{{ parable.summary }}</p>
+
+    <div class="parable-meta">
+      <span class="label">Gospels:</span>
+      <span class="value">{{ parable.gospels | join(', ') }}</span>
+    </div>
+
+    <div class="parable-refs">
+      <span class="label">References:</span>
+      <span class="value">
+        {% for ref in parable.refs %}
+          {{ scripture(ref) }}{% if not loop.last %}, {% endif %}
+        {% endfor %}
+      </span>
+    </div>
+  </article>
+  {% endfor %}
+</div>

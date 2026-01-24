@@ -12,48 +12,48 @@ const SITE_DIR = '_site';
 const ASSETS_DIR = path.join(SITE_DIR, 'assets');
 const DATA_DIR = path.join(ASSETS_DIR, 'data');
 
-console.log('🚀 Preparing Explore Scripture for Cloudflare Workers...');
+console.log(' Preparing Explore Scripture for Cloudflare Workers...');
 
 async function main() {
-  console.log('⏱️  Starting workers preparation with timeout...');
+  console.log('⏱  Starting workers preparation with timeout...');
 
   // Add overall timeout
   const timeout = setTimeout(() => {
-    console.error('❌ Workers preparation timed out after 60 seconds');
+    console.error('ERROR Workers preparation timed out after 60 seconds');
     process.exit(1);
   }, 60000);
 
   try {
     // 1. Optimize service worker for Workers environment
-    console.log('1️⃣ Optimizing service worker...');
+    console.log('1 Optimizing service worker...');
     optimizeServiceWorker();
 
     // 2. Create Workers-specific manifest
-    console.log('2️⃣ Creating Workers manifest...');
+    console.log('2 Creating Workers manifest...');
     createWorkersManifest();
 
     // 3. Optimize data files for KV storage
-    console.log('3️⃣ Optimizing data files...');
+    console.log('3 Optimizing data files...');
     await optimizeDataFiles();
 
     // 4. Create deployment summary
-    console.log('4️⃣ Creating deployment summary...');
+    console.log('4 Creating deployment summary...');
     createDeploymentSummary();
 
     clearTimeout(timeout);
-    console.log('✅ Workers preparation complete!');
+    console.log('OK Workers preparation complete!');
 
     // Force process exit to prevent hanging
     process.exit(0);
   } catch (error) {
     clearTimeout(timeout);
-    console.error('❌ Workers preparation failed:', error);
+    console.error('ERROR Workers preparation failed:', error);
     process.exit(1);
   }
 }
 
 function optimizeServiceWorker() {
-  console.log('📝 Optimizing service worker...');
+  console.log(' Optimizing service worker...');
 
   const swPath = path.join(SITE_DIR, 'sw.js');
 
@@ -73,12 +73,12 @@ ${swContent}
 `;
 
     fs.writeFileSync(swPath, workersSwContent);
-    console.log('   ✓ Service worker optimized for Workers');
+    console.log('   OK Service worker optimized for Workers');
   }
 }
 
 function createWorkersManifest() {
-  console.log('📋 Creating Workers manifest...');
+  console.log(' Creating Workers manifest...');
 
   const manifest = {
     name: 'Explore Scripture',
@@ -115,18 +115,18 @@ function createWorkersManifest() {
 
   fs.writeFileSync(path.join(SITE_DIR, 'workers-manifest.json'), JSON.stringify(manifest, null, 2));
 
-  console.log('   ✓ Workers manifest created');
+  console.log('   OK Workers manifest created');
 }
 
 async function optimizeDataFiles() {
-  console.log('🗂️  Optimizing data files for KV storage...');
+  console.log('  Optimizing data files for KV storage...');
 
   if (!fs.existsSync(DATA_DIR)) {
-    console.warn('   ⚠️  Data directory not found, skipping optimization');
+    console.warn('   WARN  Data directory not found, skipping optimization');
     return;
   }
 
-  console.log(`   📁 Data directory: ${DATA_DIR}`);
+  console.log(`    Data directory: ${DATA_DIR}`);
 
   // Add timeout for this specific function
   return new Promise((resolve, reject) => {
@@ -170,9 +170,9 @@ async function processDataFiles() {
   // Process entity files
   const entitiesDir = path.join(DATA_DIR, 'entities');
   if (fs.existsSync(entitiesDir)) {
-    console.log('   🔍 Scanning entity files...');
+    console.log('    Scanning entity files...');
     const entityFiles = fs.readdirSync(entitiesDir);
-    console.log(`   📊 Found ${entityFiles.length} entity files to process`);
+    console.log(`    Found ${entityFiles.length} entity files to process`);
 
     let processed = 0;
     for (const file of entityFiles) {
@@ -199,13 +199,20 @@ async function processDataFiles() {
         }
       }
     }
-    console.log(`   ✅ Completed processing ${stats.entityFiles} entity files`);
+    console.log(`   OK Completed processing ${stats.entityFiles} entity files`);
   } else {
-    console.log('   ⚠️  No entities directory found');
+    console.log('   WARN  No entities directory found');
   }
 
   // Process search data files
-  const searchFiles = ['books.json', 'categories.json', 'entities-search.json', 'search-data.json'];
+  const searchFiles = [
+    'books.json',
+    'categories.json',
+    'entities-search.json',
+    'parables-search.json',
+    'people-groups-search.json',
+    'search-data.json',
+  ];
   for (const file of searchFiles) {
     const filePath = path.join(DATA_DIR, file);
     if (fs.existsSync(filePath)) {
@@ -249,9 +256,9 @@ async function processDataFiles() {
   // Save KV manifest
   fs.writeFileSync(path.join(SITE_DIR, 'kv-manifest.json'), JSON.stringify(kvManifest, null, 2));
 
-  console.log('   ✓ KV manifest created');
+  console.log('   OK KV manifest created');
   console.log(
-    `   📊 Processed ${stats.totalFiles} files (${(stats.totalSize / 1024 / 1024).toFixed(2)}MB)`
+    `   Processed ${stats.totalFiles} files (${(stats.totalSize / 1024 / 1024).toFixed(2)}MB)`
   );
   console.log(`      - Entities: ${stats.entityFiles} files`);
   console.log(`      - Search data: ${stats.searchFiles} files`);
@@ -259,7 +266,7 @@ async function processDataFiles() {
 }
 
 function createDeploymentSummary() {
-  console.log('📈 Creating deployment summary...');
+  console.log(' Creating deployment summary...');
 
   const summary = {
     timestamp: new Date().toISOString(),
@@ -302,10 +309,10 @@ function createDeploymentSummary() {
     JSON.stringify(summary, null, 2)
   );
 
-  console.log('   ✓ Deployment summary created');
+  console.log('   OK Deployment summary created');
 
   // Print next steps
-  console.log('\\n🎯 Next Steps:');
+  console.log('\\n Next Steps:');
   console.log('1. Install Wrangler CLI: npm install -g wrangler');
   console.log('2. Login to Cloudflare: wrangler login');
   console.log('3. Update wrangler.toml with your account ID');
@@ -317,7 +324,7 @@ function createDeploymentSummary() {
 // Run the script
 if (require.main === module) {
   main().catch(error => {
-    console.error('❌ Workers preparation failed:', error);
+    console.error('ERROR Workers preparation failed:', error);
     process.exit(1);
   });
 }

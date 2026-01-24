@@ -156,7 +156,7 @@ class MemoryManager {
     await this.writeScript(cleanupUtils, path.join(outputDir, 'cleanup-utils.js'));
     await this.writeScript(dashboardScript, path.join(outputDir, 'memory-dashboard.js'));
 
-    console.log('✅ Advanced memory management system generated');
+    console.log('OK Advanced memory management system generated');
 
     return {
       clientScript,
@@ -199,9 +199,9 @@ class MemoryManager {
         this.hasMemoryAPI = 'memory' in performance;
         this.hasObserverAPI = 'PerformanceObserver' in window;
         
-        console.log('🧠 Memory Manager initialized');
-        console.log('📱 Device type:', this.state.deviceType);
-        console.log('🔧 Memory API available:', this.hasMemoryAPI);
+        console.log(' Memory Manager initialized');
+        console.log(' Device type:', this.state.deviceType);
+        console.log(' Memory API available:', this.hasMemoryAPI);
     }
     
     /**
@@ -234,7 +234,7 @@ class MemoryManager {
             forceCleanup: this.forceCleanup.bind(this)
         };
         
-        console.log('✅ Memory Manager ready');
+        console.log('OK Memory Manager ready');
     }
     
     /**
@@ -274,7 +274,7 @@ class MemoryManager {
             this.generateMemoryReport();
         }, this.config.monitoring.reportingInterval);
         
-        console.log('📊 Memory monitoring started');
+        console.log(' Memory monitoring started');
     }
     
     /**
@@ -483,7 +483,7 @@ class MemoryManager {
      * Handle emergency memory situation
      */
     handleEmergencyMemory() {
-        console.warn('🚨 EMERGENCY: Memory usage critical! Performing aggressive cleanup...');
+        console.warn(' EMERGENCY: Memory usage critical! Performing aggressive cleanup...');
         
         // Perform aggressive cleanup
         this.forceCleanup('emergency');
@@ -499,7 +499,7 @@ class MemoryManager {
      * Handle critical memory situation
      */
     handleCriticalMemory() {
-        console.warn('⚠️  CRITICAL: Memory usage high! Performing cleanup...');
+        console.warn('WARN  CRITICAL: Memory usage high! Performing cleanup...');
         
         // Perform cleanup
         this.forceCleanup('critical');
@@ -515,7 +515,7 @@ class MemoryManager {
      * Handle warning memory situation
      */
     handleWarningMemory() {
-        console.log('⚡ WARNING: Memory usage elevated. Optimizing...');
+        console.log(' WARNING: Memory usage elevated. Optimizing...');
         
         // Perform gentle cleanup
         this.requestCleanup('warning');
@@ -557,7 +557,7 @@ class MemoryManager {
         const lastCheck = this.getLastMetric('domNodes');
         
         if (lastCheck && currentNodeCount - lastCheck > this.config.leakPatterns.domNodes.threshold) {
-            console.warn(\`🔍 Potential DOM leak detected: \${currentNodeCount - lastCheck} nodes added\`);
+            console.warn(\` Potential DOM leak detected: \${currentNodeCount - lastCheck} nodes added\`);
             this.reportLeak('dom-nodes', {
                 increase: currentNodeCount - lastCheck,
                 current: currentNodeCount,
@@ -574,7 +574,7 @@ class MemoryManager {
         const threshold = this.config.leakPatterns.eventListeners.threshold;
         
         if (currentListeners > threshold) {
-            console.warn(\`🔍 Potential listener leak: \${currentListeners} active listeners\`);
+            console.warn(\` Potential listener leak: \${currentListeners} active listeners\`);
             
             // Analyze listener types
             const listenersByType = new Map();
@@ -607,7 +607,7 @@ class MemoryManager {
         });
         
         if (this.trackedTimers.size > threshold.threshold || longRunning > 10) {
-            console.warn(\`🔍 Potential timer leak: \${this.trackedTimers.size} active timers, \${longRunning} long-running\`);
+            console.warn(\` Potential timer leak: \${this.trackedTimers.size} active timers, \${longRunning} long-running\`);
             this.reportLeak('timers', {
                 total: this.trackedTimers.size,
                 longRunning: longRunning
@@ -633,7 +633,7 @@ class MemoryManager {
         const increaseRate = increase / (this.config.monitoring.interval * 10 / 60000); // MB per minute
         
         if (increaseRate > this.config.monitoring.leakDetectionThreshold) {
-            console.warn(\`🔍 Potential memory leak: \${increaseRate.toFixed(2)} MB/min increase\`);
+            console.warn(\` Potential memory leak: \${increaseRate.toFixed(2)} MB/min increase\`);
             this.reportLeak('memory-trend', {
                 increaseRate: increaseRate,
                 recentAvg: recentAvg,
@@ -842,7 +842,7 @@ class MemoryManager {
      * Perform automatic cleanup
      */
     performAutomaticCleanup() {
-        console.log('🧹 Performing automatic cleanup...');
+        console.log(' Performing automatic cleanup...');
         
         // Clean expired cache entries
         this.cleanExpiredCache();
@@ -870,7 +870,7 @@ class MemoryManager {
             const cacheSize = this.estimateObjectSize(window.searchCache);
             if (cacheSize > this.config.memoryLimits[this.state.deviceType].cache * 0.5) {
                 window.searchCache.clear();
-                console.log('🧹 Cleared search cache');
+                console.log(' Cleared search cache');
             }
         }
         
@@ -953,7 +953,7 @@ class MemoryManager {
     }
     
     forceCleanup(level = 'normal') {
-        console.log(\`🧹 Force cleanup: \${level}\`);
+        console.log(\` Force cleanup: \${level}\`);
         
         switch (level) {
             case 'emergency':
@@ -996,7 +996,7 @@ class MemoryManager {
     
     enableDetailedMonitoring(enabled = true) {
         if (enabled) {
-            console.log('📊 Detailed memory monitoring enabled');
+            console.log(' Detailed memory monitoring enabled');
             // Increase monitoring frequency
             this.config.monitoring.interval = 1000;
             this.config.monitoring.detailedInterval = 5000;
@@ -1025,7 +1025,7 @@ class MemoryManager {
         
         // Emit event for monitoring systems
         if (window.bibleExplorerDebug) {
-            console.warn('🔍 Memory leak detected:', leak);
+            console.warn(' Memory leak detected:', leak);
         }
         
         // Trigger cleanup for leak type
@@ -1060,7 +1060,7 @@ class MemoryManager {
         // Clean up listeners on elements that might be leaking
         this.trackedListeners.forEach((info, element) => {
             if (info.count > 10) { // Arbitrary threshold
-                console.log(\`🧹 Cleaning up \${info.count} listeners on element\`);
+                console.log(\` Cleaning up \${info.count} listeners on element\`);
                 // This is aggressive - in practice, you'd be more selective
                 element.removeEventListener = Element.prototype.removeEventListener;
             }
@@ -1103,7 +1103,7 @@ class MemoryManager {
     
     // Cleanup implementations
     performEmergencyCleanup() {
-        console.log('🚨 Emergency cleanup initiated');
+        console.log(' Emergency cleanup initiated');
         
         // Clear all caches
         if (window.caches) {
@@ -1132,7 +1132,7 @@ class MemoryManager {
     }
     
     performCriticalCleanup() {
-        console.log('⚠️ Critical cleanup initiated');
+        console.log('WARN Critical cleanup initiated');
         
         // Reduce cache sizes by 50%
         this.reduceCacheSizes(0.5);
@@ -1148,7 +1148,7 @@ class MemoryManager {
     }
     
     performNormalCleanup() {
-        console.log('🧹 Normal cleanup initiated');
+        console.log(' Normal cleanup initiated');
         
         // Standard cleanup procedures
         this.cleanExpiredCache();
@@ -1157,7 +1157,7 @@ class MemoryManager {
     }
     
     performFullCleanup() {
-        console.log('🗑️ Full cleanup on page unload');
+        console.log(' Full cleanup on page unload');
         
         // Clear all tracked items
         this.trackedTimers.clear();
@@ -1193,7 +1193,7 @@ class MemoryManager {
     
     disableNonEssentialFeatures() {
         // Disable features that consume memory
-        console.log('🔇 Disabling non-essential features to preserve memory');
+        console.log(' Disabling non-essential features to preserve memory');
         
         // Disable analytics
         if (window.analytics) {
@@ -1238,7 +1238,7 @@ class MemoryManager {
         const report = this.getMemoryReport();
         
         if (window.bibleExplorerDebug) {
-            console.group('📊 Detailed Memory Analysis');
+            console.group('Detailed Memory Analysis');
             console.log('Current Usage:', report.current);
             console.log('Tracking Stats:', report.tracking);
             console.log('Recommendations:', report.recommendations);
@@ -1257,7 +1257,7 @@ class MemoryManager {
         const report = this.getMemoryReport();
         
         // Log summary
-        console.log(\`🧠 Memory Report - Usage: \${(report.current.percentage * 100).toFixed(1)}% (\${Math.round(report.current.total / 1024 / 1024)}MB)\`);
+        console.log(\` Memory Report - Usage: \${(report.current.percentage * 100).toFixed(1)}% (\${Math.round(report.current.total / 1024 / 1024)}MB)\`);
         
         // Store report for external access
         this.lastReport = report;
@@ -1305,7 +1305,7 @@ class MemoryProfiler {
         this.isRecording = true;
         
         this.takeSnapshot('start');
-        console.log(\`📊 Memory profiling started: \${sessionName}\`);
+        console.log(\` Memory profiling started: \${sessionName}\`);
     }
     
     stopProfiling() {
@@ -1319,7 +1319,7 @@ class MemoryProfiler {
         this.isRecording = false;
         
         const report = this.analyzeSession(this.currentSession);
-        console.log(\`📊 Memory profiling completed: \${this.currentSession.name}\`);
+        console.log(\` Memory profiling completed: \${this.currentSession.name}\`);
         
         return report;
     }
@@ -1701,7 +1701,7 @@ class MemoryDashboard {
         // Update recommendations
         const recommendationsEl = this.dashboard.querySelector('#recommendations');
         recommendationsEl.innerHTML = report.recommendations.map(rec => 
-            \`<div class="recommendation">⚠️ \${rec}</div>\`
+            \`<div class="recommendation">WARN \${rec}</div>\`
         ).join('');
         
         // Update memory chart (simplified)
@@ -1766,10 +1766,10 @@ if (require.main === module) {
   memoryManager
     .generateMemoryManagementSystem()
     .then(() => {
-      console.log('✅ Advanced memory management system generated');
+      console.log('OK Advanced memory management system generated');
     })
     .catch(error => {
-      console.error('❌ Failed to generate memory management system:', error);
+      console.error('ERROR Failed to generate memory management system:', error);
       process.exit(1);
     });
 }

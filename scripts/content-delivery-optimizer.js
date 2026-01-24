@@ -73,7 +73,7 @@ class ContentDeliveryOptimizer {
   }
 
   async initialize() {
-    console.log('🚚 Initializing Advanced Content Delivery Optimizer...');
+    console.log(' Initializing Advanced Content Delivery Optimizer...');
 
     // Create output directories
     [this.outputDir, this.configDir, this.strategiesDir].forEach(dir => {
@@ -85,7 +85,7 @@ class ContentDeliveryOptimizer {
 
   // Generate adaptive loading strategies
   generateAdaptiveLoadingStrategies() {
-    console.log('🔄 Generating adaptive loading strategies...');
+    console.log(' Generating adaptive loading strategies...');
 
     const strategies = {
       // Critical path optimization
@@ -825,7 +825,7 @@ geographicOptimizer.optimizeForRegion();`,
 
   // Generate HTTP/3 and modern protocol configurations
   generateModernProtocolConfig() {
-    console.log('🌐 Generating modern protocol configurations...');
+    console.log(' Generating modern protocol configurations...');
 
     return {
       http3: {
@@ -891,7 +891,7 @@ geographicOptimizer.optimizeForRegion();`,
 
   // Generate image optimization configurations
   generateImageOptimizationConfig() {
-    console.log('🖼️ Generating image optimization configurations...');
+    console.log(' Generating image optimization configurations...');
 
     return {
       formats: {
@@ -1030,7 +1030,7 @@ geographicOptimizer.optimizeForRegion();`,
   // Main execution
   async optimize() {
     const startTime = Date.now();
-    console.log('🚀 Starting advanced content delivery optimization...');
+    console.log(' Starting advanced content delivery optimization...');
 
     await this.initialize();
 
@@ -1067,9 +1067,9 @@ geographicOptimizer.optimizeForRegion();`,
     });
 
     console.log(
-      `✅ Advanced content delivery optimization complete in ${Date.now() - startTime}ms`
+      `OK Advanced content delivery optimization complete in ${Date.now() - startTime}ms`
     );
-    console.log(`📊 Report saved: ${path.join(this.configDir, 'content-delivery-report.json')}`);
+    console.log(` Report saved: ${path.join(this.configDir, 'content-delivery-report.json')}`);
 
     return components.report;
   }
@@ -1085,7 +1085,7 @@ if (require.main === module) {
   optimizer
     .optimize()
     .then(report => {
-      console.log('\n📈 Content Delivery Summary:');
+      console.log('\n Content Delivery Summary:');
       console.log('   Strategies:', Object.keys(report.strategies).length);
       console.log(
         '   Expected LCP Improvement:',
@@ -1101,7 +1101,7 @@ if (require.main === module) {
       );
     })
     .catch(error => {
-      console.error('❌ Content delivery optimization failed:', error);
+      console.error('ERROR Content delivery optimization failed:', error);
       process.exit(1);
     });
 }

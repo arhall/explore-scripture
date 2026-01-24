@@ -24,13 +24,13 @@ class OptimizedEntityProcessor {
   async processEntitiesOptimized(mode = 'development') {
     const strategy = this.cache.getOptimalBuildStrategy(mode);
 
-    console.log('🚀 Starting optimized entity processing...');
-    console.log(`📊 Mode: ${mode}`);
-    console.log(`⚡ Strategy: ${strategy.skipEntityProcessing ? 'SKIP' : 'PROCESS'}`);
+    console.log(' Starting optimized entity processing...');
+    console.log(` Mode: ${mode}`);
+    console.log(` Strategy: ${strategy.skipEntityProcessing ? 'SKIP' : 'PROCESS'}`);
 
     if (strategy.skipEntityProcessing) {
-      console.log('✅ Entity processing skipped - no changes detected');
-      console.log('📁 Using cached entity data');
+      console.log('OK Entity processing skipped - no changes detected');
+      console.log(' Using cached entity data');
       return this.validateCachedData();
     }
 
@@ -43,7 +43,7 @@ class OptimizedEntityProcessor {
   }
 
   async processEntitiesDevelopment() {
-    console.log('🔧 Development mode: Processing essential entities only');
+    console.log(' Development mode: Processing essential entities only');
 
     // In development, only process high-priority entities
     const entityData = JSON.parse(
@@ -63,7 +63,7 @@ class OptimizedEntityProcessor {
       .slice(0, 1000); // Limit to first 1000 priority entities
 
     console.log(
-      `📊 Processing ${priorityEntities.length} priority entities (vs ${entityData.entries.length} total)`
+      `Processing ${priorityEntities.length} priority entities (vs ${entityData.entries.length} total)`
     );
 
     // Process priority entities quickly
@@ -77,7 +77,7 @@ class OptimizedEntityProcessor {
   }
 
   async processEntitiesProduction() {
-    console.log('🏭 Production mode: Processing all entities with optimization');
+    console.log(' Production mode: Processing all entities with optimization');
 
     // Use existing optimized processor but with better memory management
     const { processEntities } = require('./entity-utils/entity-processor.js');
@@ -93,7 +93,7 @@ class OptimizedEntityProcessor {
 
     for (let i = 0; i < chunks.length; i++) {
       const chunk = chunks[i];
-      console.log(`⚡ Processing batch ${i + 1}/${chunks.length} (${chunk.length} entities)`);
+      console.log(` Processing batch ${i + 1}/${chunks.length} (${chunk.length} entities)`);
 
       // Process chunk in parallel where possible
       const batchResult = await this.processChunkParallel(chunk);
@@ -140,7 +140,7 @@ class OptimizedEntityProcessor {
   }
 
   async createPlaceholderData(remainingCount) {
-    console.log(`📝 Creating placeholder data for ${remainingCount} remaining entities`);
+    console.log(` Creating placeholder data for ${remainingCount} remaining entities`);
 
     // Create a manifest of all entities without processing each individually
     const placeholder = {
@@ -165,11 +165,11 @@ class OptimizedEntityProcessor {
     const allExist = requiredFiles.every(file => fs.existsSync(file));
 
     if (!allExist) {
-      console.log('⚠️  Cache validation failed - forcing rebuild');
+      console.log('WARN  Cache validation failed - forcing rebuild');
       return this.processEntitiesDevelopment();
     }
 
-    console.log('✅ Cache validation passed');
+    console.log('OK Cache validation passed');
     return true;
   }
 
@@ -197,11 +197,11 @@ if (require.main === module) {
   processor
     .processEntitiesOptimized(mode)
     .then(result => {
-      console.log('✅ Optimized entity processing complete!');
-      console.log(`📊 Result: ${result}`);
+      console.log('OK Optimized entity processing complete!');
+      console.log(` Result: ${result}`);
     })
     .catch(error => {
-      console.error('❌ Entity processing failed:', error);
+      console.error('ERROR Entity processing failed:', error);
       process.exit(1);
     });
 }

@@ -12,7 +12,7 @@ const { execSync } = require('child_process');
 const SITE_DIR = '_site';
 const DATA_DIR = path.join(SITE_DIR, 'assets', 'data');
 
-console.log('📦 Uploading Explore Scripture data to Cloudflare KV...');
+console.log(' Uploading Explore Scripture data to Cloudflare KV...');
 
 async function main() {
   // Check if KV manifest exists
@@ -24,30 +24,30 @@ async function main() {
   
   const kvManifest = JSON.parse(fs.readFileSync(kvManifestPath, 'utf8'));
   
-  console.log('📊 Upload Summary:');
+  console.log(' Upload Summary:');
   console.log(`   - Entities: ${kvManifest.entities.length} files`);
   console.log(`   - Search data: ${kvManifest.searchData.length} files`);
   console.log(`   - Book data: ${kvManifest.bookData.length} files`);
   
   // Upload entities to ENTITIES namespace
   if (kvManifest.entities.length > 0) {
-    console.log('\\n🔄 Uploading entities...');
+    console.log('\\n Uploading entities...');
     await uploadEntities(kvManifest.entities);
   }
   
   // Upload search data to CACHE namespace
   if (kvManifest.searchData.length > 0) {
-    console.log('\\n🔍 Uploading search data...');
+    console.log('\\n Uploading search data...');
     await uploadSearchData(kvManifest.searchData);
   }
   
   // Upload book data to CACHE namespace
   if (kvManifest.bookData.length > 0) {
-    console.log('\\n📚 Uploading book data...');
+    console.log('\\n Uploading book data...');
     await uploadBookData(kvManifest.bookData);
   }
   
-  console.log('\\n✅ KV upload complete!');
+  console.log('\\nOK KV upload complete!');
   
   // Create upload summary
   createUploadSummary(kvManifest);
@@ -73,10 +73,10 @@ async function uploadEntities(entities) {
           
           // Progress indicator
           if (uploaded % 100 === 0) {
-            console.log(`     ✓ ${uploaded}/${entities.length} entities uploaded`);
+            console.log(`     OK ${uploaded}/${entities.length} entities uploaded`);
           }
         } catch (error) {
-          console.warn(`     ⚠️  Failed to upload ${entity.key}:`, error.message);
+          console.warn(`     WARN  Failed to upload ${entity.key}:`, error.message);
         }
       }
     }
@@ -87,7 +87,7 @@ async function uploadEntities(entities) {
     }
   }
   
-  console.log(`   ✅ Uploaded ${uploaded}/${entities.length} entities to KV`);
+  console.log(`   OK Uploaded ${uploaded}/${entities.length} entities to KV`);
 }
 
 async function uploadSearchData(searchFiles) {
@@ -102,14 +102,14 @@ async function uploadSearchData(searchFiles) {
         execSync(command, { stdio: 'pipe' });
         uploaded++;
         
-        console.log(`   ✓ Uploaded ${searchFile.key}`);
+        console.log(`   OK Uploaded ${searchFile.key}`);
       } catch (error) {
-        console.warn(`   ⚠️  Failed to upload ${searchFile.key}:`, error.message);
+        console.warn(`   WARN  Failed to upload ${searchFile.key}:`, error.message);
       }
     }
   }
   
-  console.log(`   ✅ Uploaded ${uploaded}/${searchFiles.length} search data files to KV`);
+  console.log(`   OK Uploaded ${uploaded}/${searchFiles.length} search data files to KV`);
 }
 
 async function uploadBookData(bookFiles) {
@@ -124,14 +124,14 @@ async function uploadBookData(bookFiles) {
         execSync(command, { stdio: 'pipe' });
         uploaded++;
         
-        console.log(`   ✓ Uploaded ${bookFile.key}`);
+        console.log(`   OK Uploaded ${bookFile.key}`);
       } catch (error) {
-        console.warn(`   ⚠️  Failed to upload ${bookFile.key}:`, error.message);
+        console.warn(`   WARN  Failed to upload ${bookFile.key}:`, error.message);
       }
     }
   }
   
-  console.log(`   ✅ Uploaded ${uploaded}/${bookFiles.length} book data files to KV`);
+  console.log(`   OK Uploaded ${uploaded}/${bookFiles.length} book data files to KV`);
 }
 
 function createUploadSummary(kvManifest) {
@@ -164,7 +164,7 @@ function createUploadSummary(kvManifest) {
     JSON.stringify(summary, null, 2)
   );
   
-  console.log('\\n📋 Upload summary saved to kv-upload-summary.json');
+  console.log('\\n Upload summary saved to kv-upload-summary.json');
 }
 
 // Error handling wrapper
@@ -187,16 +187,16 @@ function validateWrangler() {
 
 // Pre-flight checks
 function preflightChecks() {
-  console.log('🔍 Running pre-flight checks...');
+  console.log(' Running pre-flight checks...');
   
   // Check Wrangler installation
   validateWrangler();
-  console.log('   ✓ Wrangler CLI found');
+  console.log('   OK Wrangler CLI found');
   
   // Check authentication
   try {
     execSync('wrangler whoami', { stdio: 'pipe' });
-    console.log('   ✓ Cloudflare authentication verified');
+    console.log('   OK Cloudflare authentication verified');
   } catch (error) {
     throw new Error('Not authenticated with Cloudflare. Run: wrangler login');
   }
@@ -205,9 +205,9 @@ function preflightChecks() {
   if (!fs.existsSync(DATA_DIR)) {
     throw new Error('Data directory not found. Run: npm run build:workers');
   }
-  console.log('   ✓ Data directory exists');
+  console.log('   OK Data directory exists');
   
-  console.log('   ✅ Pre-flight checks passed');
+  console.log('   OK Pre-flight checks passed');
 }
 
 // Run the script
@@ -215,8 +215,8 @@ if (require.main === module) {
   preflightChecks();
   
   main().catch(error => {
-    console.error('\\n❌ KV upload failed:', error.message);
-    console.error('\\n💡 Troubleshooting:');
+    console.error('\\nERROR KV upload failed:', error.message);
+    console.error('\\n Troubleshooting:');
     console.error('   1. Ensure you\\'re logged in: wrangler login');
     console.error('   2. Check your wrangler.toml configuration');
     console.error('   3. Verify KV namespaces exist: wrangler kv:namespace list');

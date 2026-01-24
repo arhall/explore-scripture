@@ -336,6 +336,40 @@ class TestEntitiesSystem:
         
         assert len(entity_elements) > 0, "No entity data appears to be loaded"
 
+    def test_parables_page_loads(self, chrome_driver):
+        """Test that the parables page renders and has scripture references."""
+        chrome_driver.get(f"{self.base_url}/parables/")
+
+        WebDriverWait(chrome_driver, 10).until(
+            EC.presence_of_element_located((By.TAG_NAME, "h1"))
+        )
+
+        heading = chrome_driver.find_element(By.TAG_NAME, "h1")
+        assert "Parables" in heading.text, "Parables page heading missing"
+
+        parable_cards = chrome_driver.find_elements(By.CLASS_NAME, "parable-card")
+        assert len(parable_cards) > 0, "No parable cards found on parables page"
+
+        scripture_refs = chrome_driver.find_elements(By.CSS_SELECTOR, "[data-scripture]")
+        assert len(scripture_refs) > 0, "No scripture references found on parables page"
+
+    def test_people_groups_page_loads(self, chrome_driver):
+        """Test that the people groups page renders and lists groups."""
+        chrome_driver.get(f"{self.base_url}/people-groups/")
+
+        WebDriverWait(chrome_driver, 10).until(
+            EC.presence_of_element_located((By.TAG_NAME, "h1"))
+        )
+
+        heading = chrome_driver.find_element(By.TAG_NAME, "h1")
+        assert "People Groups" in heading.text, "People groups page heading missing"
+
+        group_cards = chrome_driver.find_elements(By.CLASS_NAME, "people-group-card")
+        assert len(group_cards) > 0, "No people group cards found on people groups page"
+
+        page_text = chrome_driver.find_element(By.TAG_NAME, "body").text
+        assert "Israelites" in page_text, "Expected people group name not found on page"
+
     def tearDown(self):
         """Clean up after tests."""
         pass

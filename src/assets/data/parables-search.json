@@ -1,0 +1,794 @@
+[
+  {
+    "id": "jesus-parables",
+    "title": "Jesus' Parables",
+    "url": "/parables/",
+    "summary": "A curated list of parables taught by Jesus in the Gospels.",
+    "type": "parables",
+    "parableCount": 52,
+    "searchText": "jesus parables wise & foolish builders children in the marketplace new patch on an old garment new wine in old wineskins the sower (four soils) the weeds among the wheat the mustard seed the leaven hidden treasure pearl of great price the dragnet householder with new and old treasures lamp on a stand (lamp under a basket) the measure you use growing seed (seed growing secretly) the lost sheep the lost coin the prodigal son (lost son) the unforgiving servant workers in the vineyard the two sons the wicked tenants the wedding banquet (with wedding garment) the great banquet taking the lowest seat tower builder (counting the cost) king going to war friend at midnight the strong man (plundering the house) the rich fool (bigger barns) watchful servants (waiting for the master) thief in the night (burglar and homeowner) faithful vs. wicked servant / steward the barren fig tree fig tree lesson (budding branch / all trees) the ten virgins the talents the minas (pounds) the dishonest (shrewd) manager the rich man and lazarus unworthy servants (servant and master at supper) persistent widow and the unjust judge pharisee and tax collector blind leading the blind speck and log tree and its fruit unclean spirit returning sheep and goats (judgment scene) shepherd and the door (sheepfold) the good shepherd vine and branches grain of wheat"
+  },
+  {
+    "id": "P001",
+    "title": "Wise & Foolish Builders",
+    "url": "/parables/#p001",
+    "summary": "One man builds a house on rock and it stands through storm and flood; another builds on sand/without a foundation and the house collapses when the storm hits.",
+    "refs": [
+      "Matthew 7:24-27",
+      "Luke 6:47-49"
+    ],
+    "gospels": [
+      "Matthew",
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "wise & foolish builders one man builds a house on rock and it stands through storm and flood; another builds on sand/without a foundation and the house collapses when the storm hits. matthew luke matthew 7:24-27 luke 6:47-49 parable"
+  },
+  {
+    "id": "P002",
+    "title": "Children in the Marketplace",
+    "url": "/parables/#p002",
+    "summary": "Children complain that others will not join their games: they played music but no one danced, and they sang a funeral song but no one mourned.",
+    "refs": [
+      "Matthew 11:16-19",
+      "Luke 7:31-35"
+    ],
+    "gospels": [
+      "Matthew",
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "children in the marketplace children complain that others will not join their games: they played music but no one danced, and they sang a funeral song but no one mourned. matthew luke matthew 11:16-19 luke 7:31-35 parable"
+  },
+  {
+    "id": "P003",
+    "title": "New Patch on an Old Garment",
+    "url": "/parables/#p003",
+    "summary": "A new cloth patch sewn onto an old garment pulls away and tears the old fabric, making the rip worse.",
+    "refs": [
+      "Matthew 9:16",
+      "Mark 2:21",
+      "Luke 5:36"
+    ],
+    "gospels": [
+      "Matthew",
+      "Mark",
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "new patch on an old garment a new cloth patch sewn onto an old garment pulls away and tears the old fabric, making the rip worse. matthew mark luke matthew 9:16 mark 2:21 luke 5:36 parable"
+  },
+  {
+    "id": "P004",
+    "title": "New Wine in Old Wineskins",
+    "url": "/parables/#p004",
+    "summary": "New wine poured into old wineskins expands and bursts them, spilling the wine; new wine belongs in fresh skins (Luke adds that someone used to old wine says the old is good).",
+    "refs": [
+      "Matthew 9:17",
+      "Mark 2:22",
+      "Luke 5:37-39"
+    ],
+    "gospels": [
+      "Matthew",
+      "Mark",
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "new wine in old wineskins new wine poured into old wineskins expands and bursts them, spilling the wine; new wine belongs in fresh skins (luke adds that someone used to old wine says the old is good). matthew mark luke matthew 9:17 mark 2:22 luke 5:37-39 parable"
+  },
+  {
+    "id": "P005",
+    "title": "The Sower (Four Soils)",
+    "url": "/parables/#p005",
+    "summary": "A farmer scatters seed: some falls on the path and is eaten by birds, some on rocky ground sprouts quickly then withers, some among thorns is choked, and some on good soil produces a harvest.",
+    "refs": [
+      "Matthew 13:1-23",
+      "Mark 4:1-20",
+      "Luke 8:4-15"
+    ],
+    "gospels": [
+      "Matthew",
+      "Mark",
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "the sower (four soils) a farmer scatters seed: some falls on the path and is eaten by birds, some on rocky ground sprouts quickly then withers, some among thorns is choked, and some on good soil produces a harvest. matthew mark luke matthew 13:1-23 mark 4:1-20 luke 8:4-15 parable"
+  },
+  {
+    "id": "P006",
+    "title": "The Weeds Among the Wheat",
+    "url": "/parables/#p006",
+    "summary": "An enemy sows weeds among a man's wheat; servants want to pull them up, but the owner says to wait until harvest, when wheat and weeds will be gathered and separated.",
+    "refs": [
+      "Matthew 13:24-30",
+      "Matthew 13:36-43"
+    ],
+    "gospels": [
+      "Matthew"
+    ],
+    "type": "parable",
+    "searchText": "the weeds among the wheat an enemy sows weeds among a man's wheat; servants want to pull them up, but the owner says to wait until harvest, when wheat and weeds will be gathered and separated. matthew matthew 13:24-30 matthew 13:36-43 parable"
+  },
+  {
+    "id": "P007",
+    "title": "The Mustard Seed",
+    "url": "/parables/#p007",
+    "summary": "A tiny mustard seed is planted and grows into a large plant with branches where birds can perch or nest.",
+    "refs": [
+      "Matthew 13:31-32",
+      "Mark 4:30-32",
+      "Luke 13:18-19"
+    ],
+    "gospels": [
+      "Matthew",
+      "Mark",
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "the mustard seed a tiny mustard seed is planted and grows into a large plant with branches where birds can perch or nest. matthew mark luke matthew 13:31-32 mark 4:30-32 luke 13:18-19 parable"
+  },
+  {
+    "id": "P008",
+    "title": "The Leaven",
+    "url": "/parables/#p008",
+    "summary": "A woman mixes a small amount of leaven into a large batch of flour until it spreads through the whole dough.",
+    "refs": [
+      "Matthew 13:33",
+      "Luke 13:20-21"
+    ],
+    "gospels": [
+      "Matthew",
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "the leaven a woman mixes a small amount of leaven into a large batch of flour until it spreads through the whole dough. matthew luke matthew 13:33 luke 13:20-21 parable"
+  },
+  {
+    "id": "P009",
+    "title": "Hidden Treasure",
+    "url": "/parables/#p009",
+    "summary": "A man finds treasure hidden in a field, hides it again, then sells what he has to buy the field.",
+    "refs": [
+      "Matthew 13:44"
+    ],
+    "gospels": [
+      "Matthew"
+    ],
+    "type": "parable",
+    "searchText": "hidden treasure a man finds treasure hidden in a field, hides it again, then sells what he has to buy the field. matthew matthew 13:44 parable"
+  },
+  {
+    "id": "P010",
+    "title": "Pearl of Great Price",
+    "url": "/parables/#p010",
+    "summary": "A merchant searching for pearls finds one extremely valuable pearl and sells everything to buy it.",
+    "refs": [
+      "Matthew 13:45-46"
+    ],
+    "gospels": [
+      "Matthew"
+    ],
+    "type": "parable",
+    "searchText": "pearl of great price a merchant searching for pearls finds one extremely valuable pearl and sells everything to buy it. matthew matthew 13:45-46 parable"
+  },
+  {
+    "id": "P011",
+    "title": "The Dragnet",
+    "url": "/parables/#p011",
+    "summary": "Fishermen cast a large net that gathers all kinds of fish; when it is full, they sit down and sort the good into containers and throw away the bad.",
+    "refs": [
+      "Matthew 13:47-50"
+    ],
+    "gospels": [
+      "Matthew"
+    ],
+    "type": "parable",
+    "searchText": "the dragnet fishermen cast a large net that gathers all kinds of fish; when it is full, they sit down and sort the good into containers and throw away the bad. matthew matthew 13:47-50 parable"
+  },
+  {
+    "id": "P012",
+    "title": "Householder with New and Old Treasures",
+    "url": "/parables/#p012",
+    "summary": "A householder brings out of his storeroom both older items and newer ones.",
+    "refs": [
+      "Matthew 13:52"
+    ],
+    "gospels": [
+      "Matthew"
+    ],
+    "type": "parable",
+    "searchText": "householder with new and old treasures a householder brings out of his storeroom both older items and newer ones. matthew matthew 13:52 parable"
+  },
+  {
+    "id": "P013",
+    "title": "Lamp on a Stand (Lamp Under a Basket)",
+    "url": "/parables/#p013",
+    "summary": "A lamp is lit and placed on a stand so it gives light; it is not put under a basket/container or under a bed where it is hidden.",
+    "refs": [
+      "Matthew 5:14-16",
+      "Mark 4:21-25",
+      "Luke 8:16-18"
+    ],
+    "gospels": [
+      "Matthew",
+      "Mark",
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "lamp on a stand (lamp under a basket) a lamp is lit and placed on a stand so it gives light; it is not put under a basket/container or under a bed where it is hidden. matthew mark luke matthew 5:14-16 mark 4:21-25 luke 8:16-18 parable"
+  },
+  {
+    "id": "P014",
+    "title": "The Measure You Use",
+    "url": "/parables/#p014",
+    "summary": "A measuring cup is used: the amount measured out is matched (or exceeded) in return, and those who have gain more while those who do not lose even what they seem to have.",
+    "refs": [
+      "Mark 4:24-25",
+      "Luke 8:18"
+    ],
+    "gospels": [
+      "Mark",
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "the measure you use a measuring cup is used: the amount measured out is matched (or exceeded) in return, and those who have gain more while those who do not lose even what they seem to have. mark luke mark 4:24-25 luke 8:18 parable"
+  },
+  {
+    "id": "P015",
+    "title": "Growing Seed (Seed Growing Secretly)",
+    "url": "/parables/#p015",
+    "summary": "A man scatters seed and, while he sleeps and wakes, it sprouts and grows - first blade, then ear, then full grain - until it is ripe and he harvests.",
+    "refs": [
+      "Mark 4:26-29"
+    ],
+    "gospels": [
+      "Mark"
+    ],
+    "type": "parable",
+    "searchText": "growing seed (seed growing secretly) a man scatters seed and, while he sleeps and wakes, it sprouts and grows - first blade, then ear, then full grain - until it is ripe and he harvests. mark mark 4:26-29 parable"
+  },
+  {
+    "id": "P016",
+    "title": "The Lost Sheep",
+    "url": "/parables/#p016",
+    "summary": "A shepherd with a hundred sheep loses one, leaves the ninety-nine, searches until he finds it, and returns rejoicing.",
+    "refs": [
+      "Matthew 18:12-14",
+      "Luke 15:3-7"
+    ],
+    "gospels": [
+      "Matthew",
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "the lost sheep a shepherd with a hundred sheep loses one, leaves the ninety-nine, searches until he finds it, and returns rejoicing. matthew luke matthew 18:12-14 luke 15:3-7 parable"
+  },
+  {
+    "id": "P017",
+    "title": "The Lost Coin",
+    "url": "/parables/#p017",
+    "summary": "A woman loses one of ten coins, lights a lamp, sweeps the house, searches carefully until she finds it, then calls others to rejoice.",
+    "refs": [
+      "Luke 15:8-10"
+    ],
+    "gospels": [
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "the lost coin a woman loses one of ten coins, lights a lamp, sweeps the house, searches carefully until she finds it, then calls others to rejoice. luke luke 15:8-10 parable"
+  },
+  {
+    "id": "P018",
+    "title": "The Prodigal Son (Lost Son)",
+    "url": "/parables/#p018",
+    "summary": "A younger son takes his inheritance early, leaves, squanders it, and ends up starving; he returns, and his father runs to welcome and restore him with a feast while the older brother refuses to celebrate.",
+    "refs": [
+      "Luke 15:11-32"
+    ],
+    "gospels": [
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "the prodigal son (lost son) a younger son takes his inheritance early, leaves, squanders it, and ends up starving; he returns, and his father runs to welcome and restore him with a feast while the older brother refuses to celebrate. luke luke 15:11-32 parable"
+  },
+  {
+    "id": "P019",
+    "title": "The Unforgiving Servant",
+    "url": "/parables/#p019",
+    "summary": "A king forgives a servant's enormous debt; that servant then refuses to forgive a fellow servant's small debt, leading the king to punish the first servant.",
+    "refs": [
+      "Matthew 18:21-35"
+    ],
+    "gospels": [
+      "Matthew"
+    ],
+    "type": "parable",
+    "searchText": "the unforgiving servant a king forgives a servant's enormous debt; that servant then refuses to forgive a fellow servant's small debt, leading the king to punish the first servant. matthew matthew 18:21-35 parable"
+  },
+  {
+    "id": "P020",
+    "title": "Workers in the Vineyard",
+    "url": "/parables/#p020",
+    "summary": "A landowner hires workers at different hours of the day but pays them all the same wage at day's end, and the early workers complain.",
+    "refs": [
+      "Matthew 20:1-16"
+    ],
+    "gospels": [
+      "Matthew"
+    ],
+    "type": "parable",
+    "searchText": "workers in the vineyard a landowner hires workers at different hours of the day but pays them all the same wage at day's end, and the early workers complain. matthew matthew 20:1-16 parable"
+  },
+  {
+    "id": "P021",
+    "title": "The Two Sons",
+    "url": "/parables/#p021",
+    "summary": "A father asks two sons to work: one says no but later goes, the other says yes but does not go.",
+    "refs": [
+      "Matthew 21:28-32"
+    ],
+    "gospels": [
+      "Matthew"
+    ],
+    "type": "parable",
+    "searchText": "the two sons a father asks two sons to work: one says no but later goes, the other says yes but does not go. matthew matthew 21:28-32 parable"
+  },
+  {
+    "id": "P022",
+    "title": "The Wicked Tenants",
+    "url": "/parables/#p022",
+    "summary": "Tenants beat and kill the owner's servants sent for fruit; they then kill the owner's son to seize the inheritance, and the owner comes, destroys the tenants, and gives the vineyard to others.",
+    "refs": [
+      "Matthew 21:33-46",
+      "Mark 12:1-12",
+      "Luke 20:9-19"
+    ],
+    "gospels": [
+      "Matthew",
+      "Mark",
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "the wicked tenants tenants beat and kill the owner's servants sent for fruit; they then kill the owner's son to seize the inheritance, and the owner comes, destroys the tenants, and gives the vineyard to others. matthew mark luke matthew 21:33-46 mark 12:1-12 luke 20:9-19 parable"
+  },
+  {
+    "id": "P023",
+    "title": "The Wedding Banquet (with Wedding Garment)",
+    "url": "/parables/#p023",
+    "summary": "A king prepares a wedding feast and invites guests who refuse and even mistreat messengers; he fills the hall with others, but one guest without wedding clothes is expelled.",
+    "refs": [
+      "Matthew 22:1-14"
+    ],
+    "gospels": [
+      "Matthew"
+    ],
+    "type": "parable",
+    "searchText": "the wedding banquet (with wedding garment) a king prepares a wedding feast and invites guests who refuse and even mistreat messengers; he fills the hall with others, but one guest without wedding clothes is expelled. matthew matthew 22:1-14 parable"
+  },
+  {
+    "id": "P024",
+    "title": "The Great Banquet",
+    "url": "/parables/#p024",
+    "summary": "Invited guests make excuses and decline; the host brings in the poor and outcasts, then sends for more from roads and hedges until the house is filled.",
+    "refs": [
+      "Luke 14:15-24"
+    ],
+    "gospels": [
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "the great banquet invited guests make excuses and decline; the host brings in the poor and outcasts, then sends for more from roads and hedges until the house is filled. luke luke 14:15-24 parable"
+  },
+  {
+    "id": "P025",
+    "title": "Taking the Lowest Seat",
+    "url": "/parables/#p025",
+    "summary": "At a banquet, someone takes an honored seat and is told to move down; another takes a low seat and is invited to move up.",
+    "refs": [
+      "Luke 14:7-11"
+    ],
+    "gospels": [
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "taking the lowest seat at a banquet, someone takes an honored seat and is told to move down; another takes a low seat and is invited to move up. luke luke 14:7-11 parable"
+  },
+  {
+    "id": "P026",
+    "title": "Tower Builder (Counting the Cost)",
+    "url": "/parables/#p026",
+    "summary": "Someone starts building a tower without calculating costs, lays a foundation, cannot finish, and becomes an object of ridicule.",
+    "refs": [
+      "Luke 14:28-30"
+    ],
+    "gospels": [
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "tower builder (counting the cost) someone starts building a tower without calculating costs, lays a foundation, cannot finish, and becomes an object of ridicule. luke luke 14:28-30 parable"
+  },
+  {
+    "id": "P027",
+    "title": "King Going to War",
+    "url": "/parables/#p027",
+    "summary": "A king considers going to war while outnumbered, evaluates whether he can win, and if not, sends to seek terms of peace.",
+    "refs": [
+      "Luke 14:31-33"
+    ],
+    "gospels": [
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "king going to war a king considers going to war while outnumbered, evaluates whether he can win, and if not, sends to seek terms of peace. luke luke 14:31-33 parable"
+  },
+  {
+    "id": "P028",
+    "title": "Friend at Midnight",
+    "url": "/parables/#p028",
+    "summary": "A man wakes his friend at midnight asking for bread for a guest; the friend initially refuses but eventually gets up and gives what is needed.",
+    "refs": [
+      "Luke 11:5-8"
+    ],
+    "gospels": [
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "friend at midnight a man wakes his friend at midnight asking for bread for a guest; the friend initially refuses but eventually gets up and gives what is needed. luke luke 11:5-8 parable"
+  },
+  {
+    "id": "P029",
+    "title": "The Strong Man (Plundering the House)",
+    "url": "/parables/#p029",
+    "summary": "A strong man guards his house, but a stronger one overpowers him, binds/defeats him, and takes his goods.",
+    "refs": [
+      "Matthew 12:29",
+      "Mark 3:27",
+      "Luke 11:21-22"
+    ],
+    "gospels": [
+      "Matthew",
+      "Mark",
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "the strong man (plundering the house) a strong man guards his house, but a stronger one overpowers him, binds/defeats him, and takes his goods. matthew mark luke matthew 12:29 mark 3:27 luke 11:21-22 parable"
+  },
+  {
+    "id": "P030",
+    "title": "The Rich Fool (Bigger Barns)",
+    "url": "/parables/#p030",
+    "summary": "A rich man's land yields abundantly; he tears down barns to build bigger ones and plans to relax, but that night he dies and his stored goods are left behind.",
+    "refs": [
+      "Luke 12:16-21"
+    ],
+    "gospels": [
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "the rich fool (bigger barns) a rich man's land yields abundantly; he tears down barns to build bigger ones and plans to relax, but that night he dies and his stored goods are left behind. luke luke 12:16-21 parable"
+  },
+  {
+    "id": "P031",
+    "title": "Watchful Servants (Waiting for the Master)",
+    "url": "/parables/#p031",
+    "summary": "Servants stay dressed and ready with lamps lit, waiting to open immediately when the master returns and knocks.",
+    "refs": [
+      "Luke 12:35-38"
+    ],
+    "gospels": [
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "watchful servants (waiting for the master) servants stay dressed and ready with lamps lit, waiting to open immediately when the master returns and knocks. luke luke 12:35-38 parable"
+  },
+  {
+    "id": "P032",
+    "title": "Thief in the Night (Burglar and Homeowner)",
+    "url": "/parables/#p032",
+    "summary": "If the homeowner knew when a thief was coming, he would stay awake and not let the house be broken into.",
+    "refs": [
+      "Matthew 24:43-44",
+      "Luke 12:39-40"
+    ],
+    "gospels": [
+      "Matthew",
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "thief in the night (burglar and homeowner) if the homeowner knew when a thief was coming, he would stay awake and not let the house be broken into. matthew luke matthew 24:43-44 luke 12:39-40 parable"
+  },
+  {
+    "id": "P033",
+    "title": "Faithful vs. Wicked Servant / Steward",
+    "url": "/parables/#p033",
+    "summary": "A master leaves a servant in charge; one carries out responsibilities, another abuses others and behaves badly, and the master returns unexpectedly to deal with each.",
+    "refs": [
+      "Matthew 24:45-51",
+      "Mark 13:34-37",
+      "Luke 12:42-48"
+    ],
+    "gospels": [
+      "Matthew",
+      "Mark",
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "faithful vs. wicked servant / steward a master leaves a servant in charge; one carries out responsibilities, another abuses others and behaves badly, and the master returns unexpectedly to deal with each. matthew mark luke matthew 24:45-51 mark 13:34-37 luke 12:42-48 parable"
+  },
+  {
+    "id": "P034",
+    "title": "The Barren Fig Tree",
+    "url": "/parables/#p034",
+    "summary": "A man looks for fruit on a fig tree for years and finds none, orders it cut down, but the gardener asks for one more year to dig around it and fertilize it before deciding.",
+    "refs": [
+      "Luke 13:6-9"
+    ],
+    "gospels": [
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "the barren fig tree a man looks for fruit on a fig tree for years and finds none, orders it cut down, but the gardener asks for one more year to dig around it and fertilize it before deciding. luke luke 13:6-9 parable"
+  },
+  {
+    "id": "P035",
+    "title": "Fig Tree Lesson (Budding Branch / All Trees)",
+    "url": "/parables/#p035",
+    "summary": "When a fig tree (and other trees) put out leaves, people know summer is near; likewise, observing certain signs indicates nearness.",
+    "refs": [
+      "Matthew 24:32-35",
+      "Mark 13:28-31",
+      "Luke 21:29-33"
+    ],
+    "gospels": [
+      "Matthew",
+      "Mark",
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "fig tree lesson (budding branch / all trees) when a fig tree (and other trees) put out leaves, people know summer is near; likewise, observing certain signs indicates nearness. matthew mark luke matthew 24:32-35 mark 13:28-31 luke 21:29-33 parable"
+  },
+  {
+    "id": "P036",
+    "title": "The Ten Virgins",
+    "url": "/parables/#p036",
+    "summary": "Ten bridesmaids await the bridegroom; five bring extra oil and five do not. The bridegroom arrives at midnight, the prepared enter the feast, and the door is shut before the others return.",
+    "refs": [
+      "Matthew 25:1-13"
+    ],
+    "gospels": [
+      "Matthew"
+    ],
+    "type": "parable",
+    "searchText": "the ten virgins ten bridesmaids await the bridegroom; five bring extra oil and five do not. the bridegroom arrives at midnight, the prepared enter the feast, and the door is shut before the others return. matthew matthew 25:1-13 parable"
+  },
+  {
+    "id": "P037",
+    "title": "The Talents",
+    "url": "/parables/#p037",
+    "summary": "A man going on a journey entrusts differing sums to servants; two trade and gain more, one hides the money. On return, the first two are rewarded and the one who buried it is condemned.",
+    "refs": [
+      "Matthew 25:14-30"
+    ],
+    "gospels": [
+      "Matthew"
+    ],
+    "type": "parable",
+    "searchText": "the talents a man going on a journey entrusts differing sums to servants; two trade and gain more, one hides the money. on return, the first two are rewarded and the one who buried it is condemned. matthew matthew 25:14-30 parable"
+  },
+  {
+    "id": "P038",
+    "title": "The Minas (Pounds)",
+    "url": "/parables/#p038",
+    "summary": "A nobleman goes away to receive a kingdom, entrusts money to servants to do business, is rejected by some citizens, then returns as king to reward profitable servants, condemn the one who hid the money, and judge opponents.",
+    "refs": [
+      "Luke 19:11-27"
+    ],
+    "gospels": [
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "the minas (pounds) a nobleman goes away to receive a kingdom, entrusts money to servants to do business, is rejected by some citizens, then returns as king to reward profitable servants, condemn the one who hid the money, and judge opponents. luke luke 19:11-27 parable"
+  },
+  {
+    "id": "P039",
+    "title": "The Dishonest (Shrewd) Manager",
+    "url": "/parables/#p039",
+    "summary": "A manager accused of wasting his master's goods is about to be fired, so he quickly reduces debtors' bills to secure their future favor; the master commends his shrewdness.",
+    "refs": [
+      "Luke 16:1-13"
+    ],
+    "gospels": [
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "the dishonest (shrewd) manager a manager accused of wasting his master's goods is about to be fired, so he quickly reduces debtors' bills to secure their future favor; the master commends his shrewdness. luke luke 16:1-13 parable"
+  },
+  {
+    "id": "P040",
+    "title": "The Rich Man and Lazarus",
+    "url": "/parables/#p040",
+    "summary": "A rich man lives in luxury while poor Lazarus lies at his gate. Both die: Lazarus is comforted and the rich man is in torment, begging for relief and for Lazarus to warn his brothers, but the request is denied.",
+    "refs": [
+      "Luke 16:19-31"
+    ],
+    "gospels": [
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "the rich man and lazarus a rich man lives in luxury while poor lazarus lies at his gate. both die: lazarus is comforted and the rich man is in torment, begging for relief and for lazarus to warn his brothers, but the request is denied. luke luke 16:19-31 parable"
+  },
+  {
+    "id": "P041",
+    "title": "Unworthy Servants (Servant and Master at Supper)",
+    "url": "/parables/#p041",
+    "summary": "A servant returns from fieldwork; the master expects the servant to prepare and serve the meal first, and only afterward does the servant eat.",
+    "refs": [
+      "Luke 17:7-10"
+    ],
+    "gospels": [
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "unworthy servants (servant and master at supper) a servant returns from fieldwork; the master expects the servant to prepare and serve the meal first, and only afterward does the servant eat. luke luke 17:7-10 parable"
+  },
+  {
+    "id": "P042",
+    "title": "Persistent Widow and the Unjust Judge",
+    "url": "/parables/#p042",
+    "summary": "A widow repeatedly appeals to an unjust judge for justice; he finally grants her request simply to stop being worn down by her persistence.",
+    "refs": [
+      "Luke 18:1-8"
+    ],
+    "gospels": [
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "persistent widow and the unjust judge a widow repeatedly appeals to an unjust judge for justice; he finally grants her request simply to stop being worn down by her persistence. luke luke 18:1-8 parable"
+  },
+  {
+    "id": "P043",
+    "title": "Pharisee and Tax Collector",
+    "url": "/parables/#p043",
+    "summary": "Two men pray: a Pharisee boasts about his righteousness, while a tax collector stands at a distance, beats his chest, and pleads for mercy.",
+    "refs": [
+      "Luke 18:9-14"
+    ],
+    "gospels": [
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "pharisee and tax collector two men pray: a pharisee boasts about his righteousness, while a tax collector stands at a distance, beats his chest, and pleads for mercy. luke luke 18:9-14 parable"
+  },
+  {
+    "id": "P044",
+    "title": "Blind Leading the Blind",
+    "url": "/parables/#p044",
+    "summary": "A blind person tries to guide another blind person, and both end up falling into a pit.",
+    "refs": [
+      "Luke 6:39"
+    ],
+    "gospels": [
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "blind leading the blind a blind person tries to guide another blind person, and both end up falling into a pit. luke luke 6:39 parable"
+  },
+  {
+    "id": "P045",
+    "title": "Speck and Log",
+    "url": "/parables/#p045",
+    "summary": "Someone tries to remove a tiny speck from another person's eye while a large plank remains in his own eye.",
+    "refs": [
+      "Matthew 7:3-5",
+      "Luke 6:41-42"
+    ],
+    "gospels": [
+      "Matthew",
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "speck and log someone tries to remove a tiny speck from another person's eye while a large plank remains in his own eye. matthew luke matthew 7:3-5 luke 6:41-42 parable"
+  },
+  {
+    "id": "P046",
+    "title": "Tree and Its Fruit",
+    "url": "/parables/#p046",
+    "summary": "A good tree produces good fruit and a bad tree produces bad fruit; each tree is recognized by what it bears.",
+    "refs": [
+      "Matthew 7:17-20",
+      "Luke 6:43-45"
+    ],
+    "gospels": [
+      "Matthew",
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "tree and its fruit a good tree produces good fruit and a bad tree produces bad fruit; each tree is recognized by what it bears. matthew luke matthew 7:17-20 luke 6:43-45 parable"
+  },
+  {
+    "id": "P047",
+    "title": "Unclean Spirit Returning",
+    "url": "/parables/#p047",
+    "summary": "An unclean spirit leaves a person, wanders, then returns to find the house empty and in order; it brings more spirits, and the person's final state becomes worse than before.",
+    "refs": [
+      "Matthew 12:43-45",
+      "Luke 11:24-26"
+    ],
+    "gospels": [
+      "Matthew",
+      "Luke"
+    ],
+    "type": "parable",
+    "searchText": "unclean spirit returning an unclean spirit leaves a person, wanders, then returns to find the house empty and in order; it brings more spirits, and the person's final state becomes worse than before. matthew luke matthew 12:43-45 luke 11:24-26 parable"
+  },
+  {
+    "id": "P048",
+    "title": "Sheep and Goats (Judgment Scene)",
+    "url": "/parables/#p048",
+    "summary": "A king separates people like a shepherd separates sheep from goats, places them on different sides, recounts their deeds, and pronounces different outcomes.",
+    "refs": [
+      "Matthew 25:31-46"
+    ],
+    "gospels": [
+      "Matthew"
+    ],
+    "type": "parable",
+    "searchText": "sheep and goats (judgment scene) a king separates people like a shepherd separates sheep from goats, places them on different sides, recounts their deeds, and pronounces different outcomes. matthew matthew 25:31-46 parable"
+  },
+  {
+    "id": "P049",
+    "title": "Shepherd and the Door (Sheepfold)",
+    "url": "/parables/#p049",
+    "summary": "A shepherd enters the sheepfold by the door, calls his sheep and leads them out, and they follow; thieves climb in another way to steal and harm.",
+    "refs": [
+      "John 10:1-10"
+    ],
+    "gospels": [
+      "John"
+    ],
+    "type": "parable",
+    "searchText": "shepherd and the door (sheepfold) a shepherd enters the sheepfold by the door, calls his sheep and leads them out, and they follow; thieves climb in another way to steal and harm. john john 10:1-10 parable"
+  },
+  {
+    "id": "P050",
+    "title": "The Good Shepherd",
+    "url": "/parables/#p050",
+    "summary": "The good shepherd lays down his life for the sheep; a hired hand runs away when danger comes; the shepherd knows his sheep and gathers them.",
+    "refs": [
+      "John 10:11-18"
+    ],
+    "gospels": [
+      "John"
+    ],
+    "type": "parable",
+    "searchText": "the good shepherd the good shepherd lays down his life for the sheep; a hired hand runs away when danger comes; the shepherd knows his sheep and gathers them. john john 10:11-18 parable"
+  },
+  {
+    "id": "P051",
+    "title": "Vine and Branches",
+    "url": "/parables/#p051",
+    "summary": "A vine has branches; the gardener prunes fruitful branches and removes fruitless ones; connected branches bear fruit while severed ones wither.",
+    "refs": [
+      "John 15:1-17"
+    ],
+    "gospels": [
+      "John"
+    ],
+    "type": "parable",
+    "searchText": "vine and branches a vine has branches; the gardener prunes fruitful branches and removes fruitless ones; connected branches bear fruit while severed ones wither. john john 15:1-17 parable"
+  },
+  {
+    "id": "P052",
+    "title": "Grain of Wheat",
+    "url": "/parables/#p052",
+    "summary": "A grain of wheat falls into the ground; if it dies it produces many grains, but if it remains alone it stays a single grain.",
+    "refs": [
+      "John 12:24"
+    ],
+    "gospels": [
+      "John"
+    ],
+    "type": "parable",
+    "searchText": "grain of wheat a grain of wheat falls into the ground; if it dies it produces many grains, but if it remains alone it stays a single grain. john john 12:24 parable"
+  }
+]

@@ -28,7 +28,7 @@ class IncrementalBuilder {
   }
 
   async initialize() {
-    console.log('🔄 Initializing incremental build system...');
+    console.log(' Initializing incremental build system...');
 
     await this.optimizer.initialize();
     this.loadBuildManifest();
@@ -113,7 +113,7 @@ class IncrementalBuilder {
 
   // Check which files have changed since last build
   detectChangedFiles() {
-    console.log('🔍 Detecting changed files...');
+    console.log(' Detecting changed files...');
 
     const filesToCheck = [
       // Core data files
@@ -170,7 +170,7 @@ class IncrementalBuilder {
 
   // Calculate which files need to be rebuilt based on dependencies
   calculateFilesToRebuild() {
-    console.log('📋 Calculating files to rebuild...');
+    console.log(' Calculating files to rebuild...');
 
     this.filesToRebuild.clear();
 
@@ -231,11 +231,11 @@ class IncrementalBuilder {
   // Execute incremental build
   async executeBuild() {
     const buildStartTime = Date.now();
-    console.log('🚀 Starting incremental build...');
+    console.log(' Starting incremental build...');
 
     const hasChanges = this.detectChangedFiles();
     if (!hasChanges) {
-      console.log('✅ No changes detected, skipping build');
+      console.log('OK No changes detected, skipping build');
       return { skipped: true, reason: 'no-changes' };
     }
 
@@ -270,7 +270,7 @@ class IncrementalBuilder {
     this.saveBuildManifest();
 
     const buildTime = Date.now() - buildStartTime;
-    console.log(`✅ Incremental build completed in ${buildTime}ms`);
+    console.log(`OK Incremental build completed in ${buildTime}ms`);
 
     return {
       ...buildResult,
@@ -306,7 +306,7 @@ class IncrementalBuilder {
   }
 
   async buildEntitiesOnly() {
-    console.log('🔧 Building entities only...');
+    console.log(' Building entities only...');
 
     const { processEntities } = require('./entity-utils/entity-processor.js');
     await processEntities();
@@ -315,7 +315,7 @@ class IncrementalBuilder {
   }
 
   async buildTemplatesOnly(templates) {
-    console.log(`🔧 Building ${templates.length} templates only...`);
+    console.log(` Building ${templates.length} templates only...`);
 
     // Use Eleventy's incremental build if available
     const { exec } = require('child_process');
@@ -336,7 +336,7 @@ class IncrementalBuilder {
   }
 
   async buildPartial(components) {
-    console.log(`🔧 Partial build of ${components.length} components...`);
+    console.log(` Partial build of ${components.length} components...`);
 
     // Build only specific components
     const results = [];
@@ -360,7 +360,7 @@ class IncrementalBuilder {
   }
 
   async buildFull() {
-    console.log('🔧 Full build required...');
+    console.log(' Full build required...');
 
     const { exec } = require('child_process');
     const { promisify } = require('util');
@@ -408,7 +408,7 @@ if (require.main === module) {
       console.log(`Files rebuilt: ${result.filesRebuilt}`);
       console.log(`Build time: ${result.buildTime}ms`);
     } catch (error) {
-      console.error('❌ Incremental build failed:', error);
+      console.error('ERROR Incremental build failed:', error);
       process.exit(1);
     }
   }

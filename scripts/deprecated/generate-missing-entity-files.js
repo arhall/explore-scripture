@@ -34,18 +34,18 @@ const bookNameMapping = {
 
 async function generateMissingEntityFiles() {
   try {
-    console.log('🔍 Loading entities-search.json...');
+    console.log(' Loading entities-search.json...');
 
     // Load the main entities data
     const entitiesSearchPath = path.join(__dirname, '../src/assets/data/entities-search.json');
     const entitiesData = JSON.parse(fs.readFileSync(entitiesSearchPath, 'utf8'));
 
-    console.log(`📊 Loaded ${entitiesData.length} entities`);
+    console.log(` Loaded ${entitiesData.length} entities`);
 
     // Generate entity files for each missing book
     for (const bookSlug of missingBooks) {
       const bookName = bookNameMapping[bookSlug];
-      console.log(`\n📖 Processing ${bookName} (${bookSlug})...`);
+      console.log(`\n Processing ${bookName} (${bookSlug})...`);
 
       // Filter entities that appear in this book
       const bookEntities = entitiesData.filter(
@@ -63,7 +63,7 @@ async function generateMissingEntityFiles() {
         );
         fs.writeFileSync(outputPath, JSON.stringify(bookEntities, null, 2));
 
-        console.log(`   ✅ Created ${bookSlug}-entities.json with ${bookEntities.length} entities`);
+        console.log(`   OK Created ${bookSlug}-entities.json with ${bookEntities.length} entities`);
 
         // Log a few sample entities for verification
         if (bookEntities.length > 0) {
@@ -72,18 +72,18 @@ async function generateMissingEntityFiles() {
             .map(e => e.name)
             .join(', ');
           console.log(
-            `   📝 Sample entities: ${sampleNames}${bookEntities.length > 3 ? '...' : ''}`
+            `   Sample entities: ${sampleNames}${bookEntities.length > 3 ? '...' : ''}`
           );
         }
       } else {
-        console.log(`   ⚠️  No entities found for ${bookName} - this may indicate a mapping issue`);
+        console.log(`   WARN  No entities found for ${bookName} - this may indicate a mapping issue`);
       }
     }
 
-    console.log('\n✅ Entity file generation complete!');
+    console.log('\nOK Entity file generation complete!');
 
     // Verification: check if all files were created
-    console.log('\n🔍 Verification:');
+    console.log('\n Verification:');
     for (const bookSlug of missingBooks) {
       const filePath = path.join(
         __dirname,
@@ -92,11 +92,11 @@ async function generateMissingEntityFiles() {
       );
       const exists = fs.existsSync(filePath);
       const size = exists ? fs.statSync(filePath).size : 0;
-      const status = exists ? `✅ Created (${Math.round(size / 1024)}KB)` : '❌ Missing';
+      const status = exists ? `OK Created (${Math.round(size / 1024)}KB)` : 'ERROR Missing';
       console.log(`   ${bookSlug}-entities.json: ${status}`);
     }
   } catch (error) {
-    console.error('❌ Error generating entity files:', error);
+    console.error('ERROR Error generating entity files:', error);
     process.exit(1);
   }
 }

@@ -5,10 +5,14 @@ const path = require('path');
 describe('Bible Data Tests', () => {
   let books;
   let categories;
+  let parables;
+  let peopleGroups;
 
   beforeAll(() => {
     books = require('../src/_data/books.json');
     categories = require('../src/_data/categories.js');
+    parables = require('../src/_data/parables.js');
+    peopleGroups = require('../src/_data/peopleGroups.js');
   });
 
   describe('Books Data', () => {
@@ -143,6 +147,61 @@ describe('Bible Data Tests', () => {
       const psalms = books.find(book => book.name === 'Psalms');
       expect(psalms).toBeDefined();
       expect(psalms.category).toBe('Poetry & Writings');
+    });
+  });
+
+  describe('Parables Data', () => {
+    test('parables should include 52 entries', () => {
+      expect(parables).toBeDefined();
+      expect(Array.isArray(parables)).toBe(true);
+      expect(parables.length).toBe(52);
+    });
+
+    test('each parable should have required fields', () => {
+      parables.forEach(parable => {
+        expect(parable).toHaveProperty('id');
+        expect(parable).toHaveProperty('title');
+        expect(parable).toHaveProperty('refs');
+        expect(parable).toHaveProperty('gospels');
+        expect(parable).toHaveProperty('summary');
+        expect(parable).toHaveProperty('anchor');
+
+        expect(typeof parable.id).toBe('string');
+        expect(typeof parable.title).toBe('string');
+        expect(Array.isArray(parable.refs)).toBe(true);
+        expect(Array.isArray(parable.gospels)).toBe(true);
+        expect(typeof parable.summary).toBe('string');
+        expect(typeof parable.anchor).toBe('string');
+        expect(parable.refs.length).toBeGreaterThan(0);
+      });
+    });
+
+    test('should include a well-known parable', () => {
+      const parableTitles = parables.map(parable => parable.title);
+      expect(parableTitles).toContain('The Prodigal Son (Lost Son)');
+    });
+  });
+
+  describe('People Groups Data', () => {
+    test('people groups should include required fields', () => {
+      expect(peopleGroups).toBeDefined();
+      expect(Array.isArray(peopleGroups.groups)).toBe(true);
+      expect(peopleGroups.groups.length).toBeGreaterThan(50);
+
+      peopleGroups.groups.forEach(group => {
+        expect(group).toHaveProperty('id');
+        expect(group).toHaveProperty('name');
+        expect(group).toHaveProperty('category');
+        expect(group).toHaveProperty('testament');
+        expect(group).toHaveProperty('example_refs');
+        expect(group).toHaveProperty('anchor');
+      });
+    });
+
+    test('should include key covenant identity groups', () => {
+      const groupIds = peopleGroups.groups.map(group => group.id);
+      expect(groupIds).toContain('covenant_israelites');
+      expect(groupIds).toContain('covenant_jews');
     });
   });
 });

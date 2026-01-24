@@ -75,7 +75,7 @@ describe('Lighthouse Performance Tests', () => {
     const runnerResult = await lighthouse(url, options);
     const report = runnerResult.lhr;
 
-    console.log(`\\n📊 Lighthouse Results for ${testName}:`);
+    console.log(`\\n Lighthouse Results for ${testName}:`);
     console.log(`Performance: ${Math.round(report.categories.performance.score * 100)}/100`);
     console.log(`Accessibility: ${Math.round(report.categories.accessibility.score * 100)}/100`);
     console.log(
@@ -97,7 +97,7 @@ describe('Lighthouse Performance Tests', () => {
       const tti = report.audits['interactive'].numericValue;
       const cls = report.audits['cumulative-layout-shift'].numericValue;
 
-      console.log(`\\n🚀 Core Web Vitals:`);
+      console.log(`\\n Core Web Vitals:`);
       console.log(
         `LCP (Largest Contentful Paint): ${Math.round(lcp)}ms (SLA: ${WEB_VITALS_SLA.lcp}ms)`
       );
@@ -141,9 +141,9 @@ describe('Lighthouse Performance Tests', () => {
         Object.entries(scores).forEach(([category, score]) => {
           const sla = LIGHTHOUSE_SLA[category];
           if (score >= sla) {
-            console.log(`✅ ${category}: ${score}/100 (exceeds SLA: ${sla})`);
+            console.log(`OK ${category}: ${score}/100 (exceeds SLA: ${sla})`);
           } else {
-            console.log(`⚠️ ${category}: ${score}/100 (below SLA: ${sla})`);
+            console.log(`WARN ${category}: ${score}/100 (below SLA: ${sla})`);
           }
           expect(score).toBeGreaterThanOrEqual(sla);
         });
@@ -156,7 +156,7 @@ describe('Lighthouse Performance Tests', () => {
       const report = await runLighthouse(baseUrl, 'Accessibility Check');
 
       const accessibilityScore = Math.round(report.categories.accessibility.score * 100);
-      console.log(`\\n♿ Accessibility Score: ${accessibilityScore}/100`);
+      console.log(`\\n Accessibility Score: ${accessibilityScore}/100`);
 
       // Check specific accessibility audits
       const criticalAudits = [
@@ -168,11 +168,11 @@ describe('Lighthouse Performance Tests', () => {
         'meta-viewport',
       ];
 
-      console.log('\\n🔍 Accessibility Audit Details:');
+      console.log('\\n Accessibility Audit Details:');
       criticalAudits.forEach(auditId => {
         if (report.audits[auditId]) {
           const audit = report.audits[auditId];
-          const status = audit.score === 1 ? '✅' : audit.score === null ? '⚠️' : '❌';
+          const status = audit.score === 1 ? 'OK' : audit.score === null ? 'WARN' : 'ERROR';
           console.log(
             `${status} ${audit.title}: ${audit.score === 1 ? 'PASS' : 'NEEDS ATTENTION'}`
           );
@@ -188,7 +188,7 @@ describe('Lighthouse Performance Tests', () => {
       const report = await runLighthouse(baseUrl, 'SEO Check');
 
       const seoScore = Math.round(report.categories.seo.score * 100);
-      console.log(`\\n🔍 SEO Score: ${seoScore}/100`);
+      console.log(`\\n SEO Score: ${seoScore}/100`);
 
       // Check specific SEO audits
       const seoAudits = [
@@ -200,11 +200,11 @@ describe('Lighthouse Performance Tests', () => {
         'viewport',
       ];
 
-      console.log('\\n📈 SEO Audit Details:');
+      console.log('\\n SEO Audit Details:');
       seoAudits.forEach(auditId => {
         if (report.audits[auditId]) {
           const audit = report.audits[auditId];
-          const status = audit.score === 1 ? '✅' : audit.score === null ? '⚠️' : '❌';
+          const status = audit.score === 1 ? 'OK' : audit.score === null ? 'WARN' : 'ERROR';
           console.log(
             `${status} ${audit.title}: ${audit.score === 1 ? 'PASS' : 'NEEDS ATTENTION'}`
           );
@@ -219,7 +219,7 @@ describe('Lighthouse Performance Tests', () => {
     test('should identify and validate performance optimizations', async () => {
       const report = await runLighthouse(baseUrl, 'Performance Opportunities');
 
-      console.log('\\n⚡ Performance Opportunities:');
+      console.log('\\n Performance Opportunities:');
 
       const opportunities = [
         'render-blocking-resources',
@@ -238,13 +238,13 @@ describe('Lighthouse Performance Tests', () => {
           const savings = audit.numericValue || 0;
           if (savings > 100) {
             // Only show if > 100ms potential savings
-            console.log(`📊 ${audit.title}: ${Math.round(savings)}ms potential savings`);
+            console.log(` ${audit.title}: ${Math.round(savings)}ms potential savings`);
             totalSavings += savings;
           }
         }
       });
 
-      console.log(`\\n💰 Total Potential Savings: ${Math.round(totalSavings)}ms`);
+      console.log(`\\n Total Potential Savings: ${Math.round(totalSavings)}ms`);
 
       // Performance should already be well optimized
       expect(totalSavings).toBeLessThan(1000); // Less than 1 second total potential savings
@@ -272,7 +272,7 @@ describe('Lighthouse Performance Tests', () => {
       const report = runnerResult.lhr;
 
       const mobilePerformance = Math.round(report.categories.performance.score * 100);
-      console.log(`\\n📱 Mobile Performance Score: ${mobilePerformance}/100`);
+      console.log(`\\n Mobile Performance Score: ${mobilePerformance}/100`);
 
       // Mobile performance should be at least 85 (slightly lower than desktop)
       expect(mobilePerformance).toBeGreaterThanOrEqual(85);
@@ -281,8 +281,8 @@ describe('Lighthouse Performance Tests', () => {
       const lcp = report.audits['largest-contentful-paint'].numericValue;
       const fcp = report.audits['first-contentful-paint'].numericValue;
 
-      console.log(`📱 Mobile LCP: ${Math.round(lcp)}ms`);
-      console.log(`📱 Mobile FCP: ${Math.round(fcp)}ms`);
+      console.log(` Mobile LCP: ${Math.round(lcp)}ms`);
+      console.log(` Mobile FCP: ${Math.round(fcp)}ms`);
 
       // Mobile should still meet reasonable thresholds
       expect(lcp).toBeLessThan(4000); // 4s for mobile LCP

@@ -476,13 +476,15 @@ async function loadSearchData(env, request) {
   if (!searchData) {
     // Load from static assets using the request origin
     const originUrl = new URL(request.url).origin;
-    const [books, categories, entities] = await Promise.all([
+    const [books, categories, entities, parables, peopleGroups] = await Promise.all([
       fetch(`${originUrl}/assets/data/books.json`).then(r => r.json()),
       fetch(`${originUrl}/assets/data/categories.json`).then(r => r.json()),
       fetch(`${originUrl}/assets/data/entities-search.json`).then(r => r.json()),
+      fetch(`${originUrl}/assets/data/parables-search.json`).then(r => r.json()),
+      fetch(`${originUrl}/assets/data/people-groups-search.json`).then(r => r.json()),
     ]);
 
-    searchData = { books, categories, entities };
+    searchData = { books, categories, entities, parables, peopleGroups };
 
     // Cache for 6 hours
     await env.CACHE.put(cacheKey, JSON.stringify(searchData), { expirationTtl: 21600 });
@@ -520,6 +522,38 @@ function performSearch(searchData, query, type) {
           text: entity.name,
           url: entity.url,
           subtitle: entity.type,
+        });
+      }
+    });
+  }
+
+  // Search parables
+  if (type === 'all' || type === 'parables') {
+    searchData.parables?.forEach(parable => {
+      const parableText = (parable.title || '').toLowerCase();
+      const searchText = (parable.searchText || '').toLowerCase();
+      if (parableText.includes(lowerQuery) || searchText.includes(lowerQuery)) {
+        results.push({
+          type: parable.type || 'parable',
+          text: parable.title,
+          url: parable.url,
+          subtitle: parable.gospels ? parable.gospels.join(', ') : 'Parable',
+        });
+      }
+    });
+  }
+
+  // Search people groups
+  if (type === 'all' || type === 'groups') {
+    searchData.peopleGroups?.forEach(group => {
+      const groupText = (group.name || '').toLowerCase();
+      const searchText = (group.searchText || '').toLowerCase();
+      if (groupText.includes(lowerQuery) || searchText.includes(lowerQuery)) {
+        results.push({
+          type: 'group',
+          text: group.name,
+          url: group.url,
+          subtitle: group.categoryLabel || group.category || 'Group',
         });
       }
     });

@@ -43,15 +43,15 @@ function compressHtmlFiles(dir) {
 
         if (minified.length < content.length) {
           fs.writeFileSync(fullPath, minified);
-          console.log(`✅ Compressed ${fullPath}: ${content.length} -> ${minified.length} bytes`);
+          console.log(`OK Compressed ${fullPath}: ${content.length} -> ${minified.length} bytes`);
         }
 
         processedFiles++;
         if (processedFiles % 50 === 0) {
-          console.log(`📊 Processed ${processedFiles} HTML files so far...`);
+          console.log(` Processed ${processedFiles} HTML files so far...`);
         }
       } catch (error) {
-        console.error(`❌ Error compressing ${fullPath}:`, error.message);
+        console.error(`ERROR Error compressing ${fullPath}:`, error.message);
       }
     }
   }
@@ -63,23 +63,23 @@ if (fs.existsSync(siteDir)) {
 
   // Add timeout to prevent hanging
   const timeout = setTimeout(() => {
-    console.error('❌ HTML compression timed out after 30 seconds');
+    console.error('ERROR HTML compression timed out after 30 seconds');
     process.exit(1);
   }, 30000);
 
   try {
     compressHtmlFiles(siteDir);
     clearTimeout(timeout);
-    console.log('✅ HTML compression complete.');
+    console.log('OK HTML compression complete.');
 
     // Force exit to prevent hanging
     process.exit(0);
   } catch (error) {
     clearTimeout(timeout);
-    console.error('❌ HTML compression failed:', error.message);
+    console.error('ERROR HTML compression failed:', error.message);
     process.exit(1);
   }
 } else {
-  console.error('❌ _site directory not found. Run build first.');
+  console.error('ERROR _site directory not found. Run build first.');
   process.exit(1);
 }

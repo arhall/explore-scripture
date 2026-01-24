@@ -66,7 +66,7 @@ class CompressionOptimizer {
   }
 
   async initialize() {
-    console.log('🗜️ Initializing Advanced Compression Optimizer...');
+    console.log(' Initializing Advanced Compression Optimizer...');
 
     // Create directories
     [this.outputDir, this.tempDir].forEach(dir => {
@@ -78,7 +78,7 @@ class CompressionOptimizer {
 
   // Advanced HTML minification with semantic preservation
   async optimizeHTML() {
-    console.log('📄 Optimizing HTML files...');
+    console.log(' Optimizing HTML files...');
 
     const htmlFiles = this.findFiles(this.inputDir, '.html');
     const results = [];
@@ -127,7 +127,7 @@ class CompressionOptimizer {
           `   ${relativePath}: ${this.formatBytes(originalSize)} → ${this.formatBytes(optimizedSize)} (${savings}% savings)`
         );
       } catch (error) {
-        console.error(`   ❌ Failed to optimize ${filePath}:`, error.message);
+        console.error(`   ERROR Failed to optimize ${filePath}:`, error.message);
       }
     }
 
@@ -136,7 +136,7 @@ class CompressionOptimizer {
 
   // Advanced CSS optimization with unused rule removal
   async optimizeCSS() {
-    console.log('🎨 Optimizing CSS files...');
+    console.log(' Optimizing CSS files...');
 
     const cssFiles = this.findFiles(this.inputDir, '.css');
     const results = [];
@@ -184,7 +184,7 @@ class CompressionOptimizer {
           `   ${relativePath}: ${this.formatBytes(originalSize)} → ${this.formatBytes(optimizedSize)} (${savings}% savings)`
         );
       } catch (error) {
-        console.error(`   ❌ Failed to optimize ${filePath}:`, error.message);
+        console.error(`   ERROR Failed to optimize ${filePath}:`, error.message);
       }
     }
 
@@ -193,7 +193,7 @@ class CompressionOptimizer {
 
   // Advanced JavaScript optimization with tree shaking
   async optimizeJS() {
-    console.log('📜 Optimizing JavaScript files...');
+    console.log(' Optimizing JavaScript files...');
 
     const jsFiles = this.findFiles(this.inputDir, '.js');
     const results = [];
@@ -241,7 +241,7 @@ class CompressionOptimizer {
           `   ${relativePath}: ${this.formatBytes(originalSize)} → ${this.formatBytes(optimizedSize)} (${savings}% savings)`
         );
       } catch (error) {
-        console.error(`   ❌ Failed to optimize ${filePath}:`, error.message);
+        console.error(`   ERROR Failed to optimize ${filePath}:`, error.message);
       }
     }
 
@@ -250,7 +250,7 @@ class CompressionOptimizer {
 
   // Advanced JSON compression with schema optimization
   async optimizeJSON() {
-    console.log('🗂️ Optimizing JSON files...');
+    console.log(' Optimizing JSON files...');
 
     const jsonFiles = this.findFiles(this.inputDir, '.json');
     const results = [];
@@ -300,7 +300,7 @@ class CompressionOptimizer {
           );
         }
       } catch (error) {
-        console.error(`   ❌ Failed to optimize ${filePath}:`, error.message);
+        console.error(`   ERROR Failed to optimize ${filePath}:`, error.message);
       }
     }
 
@@ -595,7 +595,7 @@ class CompressionOptimizer {
   // Main execution
   async optimize() {
     const startTime = Date.now();
-    console.log('🚀 Starting advanced compression optimization...');
+    console.log(' Starting advanced compression optimization...');
 
     await this.initialize();
 
@@ -620,8 +620,8 @@ class CompressionOptimizer {
       fs.rmSync(this.tempDir, { recursive: true, force: true });
     }
 
-    console.log(`✅ Advanced compression complete in ${Date.now() - startTime}ms`);
-    console.log(`📊 Report saved: ${path.join(this.outputDir, 'compression-report.json')}`);
+    console.log(`OK Advanced compression complete in ${Date.now() - startTime}ms`);
+    console.log(` Report saved: ${path.join(this.outputDir, 'compression-report.json')}`);
 
     return report;
   }
@@ -699,7 +699,7 @@ if (require.main === module) {
   optimizer
     .optimize()
     .then(report => {
-      console.log('\n📈 Compression Summary:');
+      console.log('\n Compression Summary:');
       console.log(`   Total Files: ${report.summary.totalFiles}`);
       console.log(`   Original Size: ${report.summary.originalSize}`);
       console.log(`   Optimized Size: ${report.summary.optimizedSize}`);
@@ -708,7 +708,7 @@ if (require.main === module) {
       console.log(`   Processing Time: ${report.processingTime}ms`);
     })
     .catch(error => {
-      console.error('❌ Compression optimization failed:', error);
+      console.error('ERROR Compression optimization failed:', error);
       process.exit(1);
     });
 }

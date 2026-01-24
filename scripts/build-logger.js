@@ -42,7 +42,7 @@ class BuildLogger {
 
   async collectBuildStats() {
     try {
-      console.log('🔍 Collecting build statistics...');
+      console.log(' Collecting build statistics...');
 
       // Analyze source files
       await this.analyzeDirectory('src');
@@ -233,7 +233,7 @@ class BuildLogger {
       const latestLogPath = path.join(logPath, 'latest-build.json');
       await fs.writeFile(latestLogPath, JSON.stringify(report, null, 2));
 
-      console.log('📊 Build log saved to:', detailedLogPath);
+      console.log(' Build log saved to:', detailedLogPath);
       return detailedLogPath;
     } catch (error) {
       console.error('Failed to save build log:', error);
@@ -244,23 +244,23 @@ class BuildLogger {
   printSummary() {
     const report = this.generateReport();
 
-    console.log('\n📋 Build Summary:');
-    console.log('─'.repeat(50));
-    console.log(`⏱️  Build Duration: ${report.summary.buildDuration}`);
-    console.log(`📁 Total Files: ${report.summary.totalFiles}`);
-    console.log(`📦 Total Size: ${report.summary.totalSize}`);
-    console.log(`📖 Books with Content: ${report.summary.booksWithContent}`);
-    console.log(`📄 Total Chapters: ${report.summary.totalChapters}`);
+    console.log('\n Build Summary:');
+    console.log(''.repeat(50));
+    console.log(`⏱  Build Duration: ${report.summary.buildDuration}`);
+    console.log(` Total Files: ${report.summary.totalFiles}`);
+    console.log(` Total Size: ${report.summary.totalSize}`);
+    console.log(` Books with Content: ${report.summary.booksWithContent}`);
+    console.log(` Total Chapters: ${report.summary.totalChapters}`);
 
     if (report.summary.errors > 0) {
-      console.log(`❌ Errors: ${report.summary.errors}`);
+      console.log(`ERROR Errors: ${report.summary.errors}`);
     }
 
     if (report.summary.warnings > 0) {
-      console.log(`⚠️  Warnings: ${report.summary.warnings}`);
+      console.log(`WARN  Warnings: ${report.summary.warnings}`);
     }
 
-    console.log('\n📊 File Breakdown:');
+    console.log('\n File Breakdown:');
     console.log(`  HTML: ${report.breakdown.files.html} files (${report.breakdown.sizes.html})`);
     console.log(`  CSS:  ${report.breakdown.files.css} files (${report.breakdown.sizes.css})`);
     console.log(`  JS:   ${report.breakdown.files.js} files (${report.breakdown.sizes.js})`);
@@ -268,16 +268,16 @@ class BuildLogger {
     console.log(`  Other: ${report.breakdown.files.other} files (${report.breakdown.sizes.other})`);
 
     if (report.issues.warnings.length > 0) {
-      console.log('\n⚠️  Warnings:');
+      console.log('\nWARN  Warnings:');
       report.issues.warnings.forEach(warning => console.log(`  - ${warning}`));
     }
 
     if (report.issues.errors.length > 0) {
-      console.log('\n❌ Errors:');
+      console.log('\nERROR Errors:');
       report.issues.errors.forEach(error => console.log(`  - ${error.message}`));
     }
 
-    console.log('─'.repeat(50));
+    console.log(''.repeat(50));
   }
 }
 
@@ -292,11 +292,11 @@ if (require.main === module) {
       return logger.saveBuildLog();
     })
     .then(() => {
-      console.log('✅ Build analysis complete!');
+      console.log('OK Build analysis complete!');
       process.exit(0);
     })
     .catch(error => {
-      console.error('❌ Build analysis failed:', error.message);
+      console.error('ERROR Build analysis failed:', error.message);
       process.exit(1);
     });
 }

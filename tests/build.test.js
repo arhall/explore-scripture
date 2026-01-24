@@ -30,6 +30,8 @@ describe('Build Tests', () => {
         'categories/index.html',
         'characters/index.html',
         'links/index.html',
+        'parables/index.html',
+        'people-groups/index.html',
       ];
 
       requiredPages.forEach(page => {

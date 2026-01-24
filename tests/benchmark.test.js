@@ -9,7 +9,7 @@ describe('Performance Benchmarks', () => {
 
   beforeAll(() => {
     // Ensure fresh build for consistent benchmarking
-    console.log('🏗️  Preparing fresh build for benchmarking...');
+    console.log('  Preparing fresh build for benchmarking...');
     execSync('npm run clean && npm run build', {
       cwd: path.join(__dirname, '..'),
       stdio: 'pipe',
@@ -21,7 +21,7 @@ describe('Performance Benchmarks', () => {
       const iterations = 3;
       const buildTimes = [];
 
-      console.log(`\\n⏱️  Running ${iterations} build iterations...`);
+      console.log(`\\n⏱  Running ${iterations} build iterations...`);
 
       for (let i = 0; i < iterations; i++) {
         // Clean build
@@ -48,7 +48,7 @@ describe('Performance Benchmarks', () => {
       const minBuildTime = Math.min(...buildTimes);
       const maxBuildTime = Math.max(...buildTimes);
 
-      console.log(`\\n📊 Build Performance Summary:`);
+      console.log(`\\n Build Performance Summary:`);
       console.log(`   Average: ${Math.round(avgBuildTime)}ms`);
       console.log(`   Best: ${Math.round(minBuildTime)}ms`);
       console.log(`   Worst: ${Math.round(maxBuildTime)}ms`);
@@ -75,7 +75,7 @@ describe('Performance Benchmarks', () => {
       const iterations = 5;
       const incrementalTimes = [];
 
-      console.log(`\\n⚡ Running ${iterations} incremental build iterations...`);
+      console.log(`\\n Running ${iterations} incremental build iterations...`);
 
       for (let i = 0; i < iterations; i++) {
         const startTime = process.hrtime.bigint();
@@ -95,7 +95,7 @@ describe('Performance Benchmarks', () => {
       const avgIncrementalTime =
         incrementalTimes.reduce((a, b) => a + b, 0) / incrementalTimes.length;
 
-      console.log(`\\n📊 Incremental Build Average: ${Math.round(avgIncrementalTime)}ms`);
+      console.log(`\\n Incremental Build Average: ${Math.round(avgIncrementalTime)}ms`);
 
       benchmarkResults.incrementalBuild = {
         average: avgIncrementalTime,
@@ -137,12 +137,12 @@ describe('Performance Benchmarks', () => {
       const largeFilesCmd = `find "${siteDir}" -type f -exec ls -la {} + | sort -nrk5 | head -5`;
       const largeFiles = execSync(largeFilesCmd, { encoding: 'utf8' });
 
-      console.log(`\\n📁 Site Size Metrics:`);
+      console.log(`\\n Site Size Metrics:`);
       console.log(`   Total Size: ${(totalBytes / 1024 / 1024).toFixed(2)} MB`);
       console.log(`   File Count: ${fileCount.toLocaleString()}`);
       console.log(`   Directory Count: ${dirCount.toLocaleString()}`);
       console.log(`   Average File Size: ${(avgFileSize / 1024).toFixed(2)} KB`);
-      console.log(`\\n🔍 Largest Files:`);
+      console.log(`\\n Largest Files:`);
       console.log(
         largeFiles
           .split('\\n')
@@ -166,7 +166,7 @@ describe('Performance Benchmarks', () => {
       const extCmd = `find "${siteDir}" -type f -name "*.*" | sed 's/.*\\.//' | sort | uniq -c | sort -nr`;
       const extOutput = execSync(extCmd, { encoding: 'utf8' });
 
-      console.log(`\\n📋 File Type Distribution:`);
+      console.log(`\\n File Type Distribution:`);
 
       const lines = extOutput.trim().split('\n').slice(0, 10); // Top 10
       lines.forEach(line => {
@@ -198,7 +198,7 @@ describe('Performance Benchmarks', () => {
       const endTime = process.hrtime.bigint();
       const processingTime = Number(endTime - startTime) / 1000000;
 
-      console.log(`\\n👥 Character Data Processing:`);
+      console.log(`\\n Character Data Processing:`);
       console.log(`   Processing Time: ${Math.round(processingTime)}ms`);
       console.log(`   Characters Processed: ${characters.length.toLocaleString()}`);
       console.log(
@@ -235,7 +235,7 @@ describe('Performance Benchmarks', () => {
       const endTime = process.hrtime.bigint();
       const processingTime = Number(endTime - startTime) / 1000000;
 
-      console.log(`\\n📚 Books Data Processing:`);
+      console.log(`\\n Books Data Processing:`);
       console.log(`   Processing Time: ${Math.round(processingTime)}ms`);
       console.log(`   Books Processed: ${books.length}`);
       console.log(`   Chapters Found: ${chapterCount.toLocaleString()}`);
@@ -265,8 +265,8 @@ describe('Performance Benchmarks', () => {
 
     fs.writeFileSync(resultsPath, JSON.stringify(resultData, null, 2));
 
-    console.log(`\\n💾 Benchmark results saved to: ${resultsPath}`);
-    console.log(`\\n🎯 Performance Summary:`);
+    console.log(`\\n Benchmark results saved to: ${resultsPath}`);
+    console.log(`\\n Performance Summary:`);
     console.log(`   Average Build Time: ${Math.round(benchmarkResults.build?.average || 0)}ms`);
     console.log(
       `   Total Site Size: ${((benchmarkResults.sizeMetrics?.totalSize || 0) / 1024 / 1024).toFixed(2)}MB`

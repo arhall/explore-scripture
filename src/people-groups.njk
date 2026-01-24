@@ -1,0 +1,58 @@
+---
+layout: base.njk
+title: People Groups
+description: Named people groups in the Bible, with categories, notes, and example Scripture references.
+---
+
+{% from "macros/scripture.njk" import scripture %}
+
+<div class="header">
+  <h1>People Groups</h1>
+  <p class="meta">
+    Named people groups across the Old and New Testaments, organized by category with example references.
+  </p>
+</div>
+
+<div class="people-groups">
+  {% for category in peopleGroups.categories %}
+  <section class="people-group-category" id="{{ category.id }}">
+    <div class="section-header">
+      <h2>{{ category.label }}</h2>
+      <p class="section-description">{{ category.groups | length }} groups</p>
+    </div>
+
+    <div class="people-groups-grid">
+      {% for group in category.groups %}
+      <article class="people-group-card" id="{{ group.anchor }}">
+        <div class="people-group-header">
+          <h3>{{ group.name }}</h3>
+          <span class="people-group-testament">{{ group.testament }}</span>
+        </div>
+
+        {% if group.alt_names and group.alt_names.length %}
+        <p class="people-group-aliases">
+          <span class="label">Also known as:</span>
+          <span class="value">{{ group.alt_names | join(', ') }}</span>
+        </p>
+        {% endif %}
+
+        {% if group.notes %}
+        <p class="people-group-notes">{{ group.notes }}</p>
+        {% endif %}
+
+        {% if group.example_refs and group.example_refs.length %}
+        <div class="people-group-refs">
+          <span class="label">Example references:</span>
+          <span class="value">
+            {% for ref in group.example_refs %}
+              {{ scripture(ref) }}{% if not loop.last %}, {% endif %}
+            {% endfor %}
+          </span>
+        </div>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+</div>

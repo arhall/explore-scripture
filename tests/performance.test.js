@@ -86,11 +86,11 @@ describe('Performance Tests', () => {
       console.log(`Build completed in ${buildTime}ms`);
 
       if (buildTime <= PERFORMANCE_SLA.buildTime.warning) {
-        console.log('✅ Excellent build performance');
+        console.log('OK Excellent build performance');
       } else if (buildTime <= PERFORMANCE_SLA.buildTime.target) {
-        console.log('✅ Good build performance');
+        console.log('OK Good build performance');
       } else {
-        console.log('⚠️ Build performance exceeds target SLA');
+        console.log('WARN Build performance exceeds target SLA');
       }
 
       expect(buildTime).toBeLessThan(PERFORMANCE_SLA.buildTime.target);
@@ -178,11 +178,11 @@ describe('Performance Tests', () => {
           console.log(`${testPage.name} loaded in ${loadTime}ms`);
 
           if (loadTime <= testPage.sla * 0.7) {
-            console.log('✅ Excellent page load performance');
+            console.log('OK Excellent page load performance');
           } else if (loadTime <= testPage.sla) {
-            console.log('✅ Good page load performance');
+            console.log('OK Good page load performance');
           } else {
-            console.log('⚠️ Page load exceeds SLA target');
+            console.log('WARN Page load exceeds SLA target');
           }
 
           expect(loadTime).toBeLessThan(testPage.sla);

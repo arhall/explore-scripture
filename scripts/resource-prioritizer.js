@@ -212,7 +212,7 @@ class ResourcePrioritizer {
     );
     fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2), 'utf8');
 
-    console.log('✅ Intelligent resource prioritization system generated');
+    console.log('OK Intelligent resource prioritization system generated');
 
     return {
       clientScript,
@@ -253,10 +253,10 @@ class ResourcePrioritizer {
         this.performanceObserver = null;
         this.resourceObserver = null;
         
-        console.log('🎯 Resource Prioritizer initialized');
-        console.log('📱 Device:', this.deviceInfo);
-        console.log('📶 Network:', this.networkInfo);
-        console.log('👤 User Context:', this.userContext);
+        console.log(' Resource Prioritizer initialized');
+        console.log(' Device:', this.deviceInfo);
+        console.log(' Network:', this.networkInfo);
+        console.log(' User Context:', this.userContext);
     }
     
     /**
@@ -544,7 +544,7 @@ class ResourcePrioritizer {
         
         this.loadQueue.enqueue(prioritizedResource, priority);
         
-        console.log(\`📊 Prioritized \${resourceType}: \${Math.round(priority)} (base: \${baseConfig.basePriority})\`);
+        console.log(\` Prioritized \${resourceType}: \${Math.round(priority)} (base: \${baseConfig.basePriority})\`);
         
         return priority;
     }
@@ -671,7 +671,7 @@ class ResourcePrioritizer {
             clearTimeout(timeoutId);
             
             if (strategy.retries > 0) {
-                console.log(\`🔄 Retrying load of \${url} (\${strategy.retries} retries left)\`);
+                console.log(\` Retrying load of \${url} (\${strategy.retries} retries left)\`);
                 strategy.retries--;
                 return await this.fetchWithStrategy(url, strategy, options);
             }
@@ -730,7 +730,7 @@ class ResourcePrioritizer {
     async handleLoadFailure(resource, error) {
         const { config, type } = resource;
         
-        console.log(\`🔄 Attempting fallback for \${type}...\`);
+        console.log(\` Attempting fallback for \${type}...\`);
         
         switch (config.fallback) {
             case 'inline-css':
@@ -851,7 +851,7 @@ class ResourcePrioritizer {
         // Re-detect network conditions
         const newNetworkInfo = this.detectNetwork();
         if (newNetworkInfo.effectiveType !== this.networkInfo.effectiveType) {
-            console.log(\`📶 Network change detected: \${this.networkInfo.effectiveType} → \${newNetworkInfo.effectiveType}\`);
+            console.log(\` Network change detected: \${this.networkInfo.effectiveType} → \${newNetworkInfo.effectiveType}\`);
             this.networkInfo = newNetworkInfo;
             this.reprioritizeQueue();
         }
@@ -862,7 +862,7 @@ class ResourcePrioritizer {
             const memoryUsage = memoryInfo.usedJSHeapSize / memoryInfo.totalJSHeapSize;
             
             if (memoryUsage > 0.8) {
-                console.log('🧠 High memory usage detected, reducing load queue');
+                console.log(' High memory usage detected, reducing load queue');
                 this.reduceLoadQueue();
             }
         }
@@ -898,7 +898,7 @@ class ResourcePrioritizer {
         
         // Log performance insights
         if (window.bibleExplorerDebug) {
-            console.log('📊 Resource Loading Analytics:');
+            console.log(' Resource Loading Analytics:');
             loadTimesByType.forEach((times, type) => {
                 const avg = times.reduce((a, b) => a + b, 0) / times.length;
                 console.log(\`  \${type}: \${Math.round(avg)}ms average (\${times.length} loads)\`);
@@ -914,14 +914,14 @@ class ResourcePrioritizer {
         if ('PerformanceObserver' in window) {
             new PerformanceObserver((list) => {
                 list.getEntries().forEach(entry => {
-                    console.log(\`🎯 LCP: \${Math.round(entry.startTime)}ms\`);
+                    console.log(\` LCP: \${Math.round(entry.startTime)}ms\`);
                 });
             }).observe({ entryTypes: ['largest-contentful-paint'] });
             
             // First Input Delay
             new PerformanceObserver((list) => {
                 list.getEntries().forEach(entry => {
-                    console.log(\`⚡ FID: \${Math.round(entry.processingStart - entry.startTime)}ms\`);
+                    console.log(\` FID: \${Math.round(entry.processingStart - entry.startTime)}ms\`);
                 });
             }).observe({ entryTypes: ['first-input'] });
         }
@@ -1215,10 +1215,10 @@ if (require.main === module) {
   prioritizer
     .generatePrioritizationSystem()
     .then(() => {
-      console.log('✅ Intelligent resource prioritization system generated');
+      console.log('OK Intelligent resource prioritization system generated');
     })
     .catch(error => {
-      console.error('❌ Failed to generate resource prioritization system:', error);
+      console.error('ERROR Failed to generate resource prioritization system:', error);
       process.exit(1);
     });
 }

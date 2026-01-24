@@ -100,6 +100,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.watchIgnores.add('src/assets/data/books/*/chapters/*.json');
   eleventyConfig.watchIgnores.add('src/assets/data/entities/*.json');
   eleventyConfig.watchIgnores.add('src/assets/data/entities-search.json');
+  eleventyConfig.watchIgnores.add('src/assets/data/parables-search.json');
+  eleventyConfig.watchIgnores.add('src/assets/data/people-groups-search.json');
   eleventyConfig.watchIgnores.add('src/assets/data/search-data.json');
   eleventyConfig.watchIgnores.add('src/assets/data/processing-summary.json');
   eleventyConfig.watchIgnores.add('src/assets/data/redirects.json');

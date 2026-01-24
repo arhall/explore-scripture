@@ -89,7 +89,7 @@ def update_messianic_line():
             name = row.get('name', '').strip()
             if name in MESSIANIC_LINE:
                 row['messiahLine'] = 'true'
-                print(f"✓ Marked {name} as in messianic line")
+                print(f"OK Marked {name} as in messianic line")
             rows.append(row)
 
     # Write back to CSV
@@ -99,8 +99,8 @@ def update_messianic_line():
         writer.writerows(rows)
 
     marked_count = sum(1 for row in rows if row.get('messiahLine') == 'true')
-    print(f"\n✅ Updated {csv_path}")
-    print(f"📊 Marked {marked_count} individuals in the messianic line")
+    print(f"\nOK Updated {csv_path}")
+    print(f" Marked {marked_count} individuals in the messianic line")
 
 if __name__ == '__main__':
     update_messianic_line()

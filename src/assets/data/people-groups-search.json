@@ -1,0 +1,2775 @@
+[
+  {
+    "id": "covenant_hebrews",
+    "name": "Hebrews",
+    "category": "covenant_identity",
+    "categoryLabel": "Covenant Identity",
+    "testament": "Both",
+    "altNames": [
+      "Hebrew"
+    ],
+    "notes": "An identity label used for Abraham's descendants / Israelites, and also used in NT contexts.",
+    "exampleRefs": [
+      "Genesis 14",
+      "Exodus 1",
+      "Philippians 3"
+    ],
+    "url": "/people-groups/#covenant_hebrews",
+    "searchText": "hebrews covenant identity covenant_identity both an identity label used for abraham's descendants / israelites, and also used in nt contexts. hebrew genesis 14 exodus 1 philippians 3 people group"
+  },
+  {
+    "id": "covenant_israelites",
+    "name": "Israelites",
+    "category": "covenant_identity",
+    "categoryLabel": "Covenant Identity",
+    "testament": "Both",
+    "altNames": [
+      "Children of Israel",
+      "Sons of Israel",
+      "House of Israel"
+    ],
+    "notes": "Covenant people descended from Jacob/Israel; also used as a national label.",
+    "exampleRefs": [
+      "Exodus",
+      "Judges",
+      "Romans 9"
+    ],
+    "url": "/people-groups/#covenant_israelites",
+    "searchText": "israelites covenant identity covenant_identity both covenant people descended from jacob/israel; also used as a national label. children of israel sons of israel house of israel exodus judges romans 9 people group"
+  },
+  {
+    "id": "covenant_judeans",
+    "name": "Judeans / Judahites",
+    "category": "covenant_identity",
+    "categoryLabel": "Covenant Identity",
+    "testament": "Both",
+    "altNames": [
+      "Judeans",
+      "Judahites",
+      "Men of Judah"
+    ],
+    "notes": "People associated with Judah / the southern kingdom / later Judea.",
+    "exampleRefs": [
+      "2 Kings",
+      "Nehemiah",
+      "John 7"
+    ],
+    "url": "/people-groups/#covenant_judeans",
+    "searchText": "judeans / judahites covenant identity covenant_identity both people associated with judah / the southern kingdom / later judea. judeans judahites men of judah 2 kings nehemiah john 7 people group"
+  },
+  {
+    "id": "covenant_jews",
+    "name": "Jews",
+    "category": "covenant_identity",
+    "categoryLabel": "Covenant Identity",
+    "testament": "Both",
+    "altNames": [
+      "Jew",
+      "The Jewish people"
+    ],
+    "notes": "Prominent post-exile label; central in the NT.",
+    "exampleRefs": [
+      "Esther",
+      "John",
+      "Acts"
+    ],
+    "url": "/people-groups/#covenant_jews",
+    "searchText": "jews covenant identity covenant_identity both prominent post-exile label; central in the nt. jew the jewish people esther john acts people group"
+  },
+  {
+    "id": "covenant_samaritans",
+    "name": "Samaritans",
+    "category": "covenant_identity",
+    "categoryLabel": "Covenant Identity",
+    "testament": "NT",
+    "altNames": [
+      "People of Samaria"
+    ],
+    "notes": "Distinct community related to Israel with separate temple/traditions in NT era.",
+    "exampleRefs": [
+      "John 4",
+      "Luke 10",
+      "Acts 8"
+    ],
+    "url": "/people-groups/#covenant_samaritans",
+    "searchText": "samaritans covenant identity covenant_identity nt distinct community related to israel with separate temple/traditions in nt era. people of samaria john 4 luke 10 acts 8 people group"
+  },
+  {
+    "id": "collective_gentiles",
+    "name": "Gentiles / The Nations",
+    "category": "collective_label",
+    "categoryLabel": "Collective Label",
+    "testament": "Both",
+    "altNames": [
+      "Nations",
+      "Heathen (older translations)"
+    ],
+    "notes": "Collective label for non-Israel peoples; often theological category as well as ethnic.",
+    "exampleRefs": [
+      "Genesis 12",
+      "Isaiah 49",
+      "Acts 10"
+    ],
+    "url": "/people-groups/#collective_gentiles",
+    "searchText": "gentiles / the nations collective label collective_label both collective label for non-israel peoples; often theological category as well as ethnic. nations heathen (older translations) genesis 12 isaiah 49 acts 10 people group"
+  },
+  {
+    "id": "nt_proselytes",
+    "name": "Proselytes",
+    "category": "civic_class",
+    "categoryLabel": "Civic Class",
+    "testament": "NT",
+    "altNames": [
+      "Proselyte"
+    ],
+    "notes": "Gentiles who fully converted to Judaism (term appears explicitly).",
+    "exampleRefs": [
+      "Matthew 23",
+      "Acts 2"
+    ],
+    "url": "/people-groups/#nt_proselytes",
+    "searchText": "proselytes civic class civic_class nt gentiles who fully converted to judaism (term appears explicitly). proselyte matthew 23 acts 2 people group"
+  },
+  {
+    "id": "nt_godfearers",
+    "name": "God-fearers",
+    "category": "civic_class",
+    "categoryLabel": "Civic Class",
+    "testament": "NT",
+    "altNames": [
+      "Worshipers of God",
+      "Those who fear God"
+    ],
+    "notes": "Gentiles attached to synagogue worship without full conversion (NT phrasing).",
+    "exampleRefs": [
+      "Acts 10",
+      "Acts 13"
+    ],
+    "url": "/people-groups/#nt_godfearers",
+    "searchText": "god-fearers civic class civic_class nt gentiles attached to synagogue worship without full conversion (nt phrasing). worshipers of god those who fear god acts 10 acts 13 people group"
+  },
+  {
+    "id": "tribe_reuben",
+    "name": "Reuben",
+    "category": "tribe",
+    "categoryLabel": "Tribe",
+    "testament": "OT",
+    "altNames": [
+      "Reubenites"
+    ],
+    "notes": "One of the twelve tribes of Israel.",
+    "exampleRefs": [
+      "Numbers 1",
+      "Joshua 13"
+    ],
+    "url": "/people-groups/#tribe_reuben",
+    "searchText": "reuben tribe tribe ot one of the twelve tribes of israel. reubenites numbers 1 joshua 13 people group"
+  },
+  {
+    "id": "tribe_simeon",
+    "name": "Simeon",
+    "category": "tribe",
+    "categoryLabel": "Tribe",
+    "testament": "OT",
+    "altNames": [
+      "Simeonites"
+    ],
+    "notes": "One of the twelve tribes of Israel.",
+    "exampleRefs": [
+      "Numbers 1",
+      "Joshua 19"
+    ],
+    "url": "/people-groups/#tribe_simeon",
+    "searchText": "simeon tribe tribe ot one of the twelve tribes of israel. simeonites numbers 1 joshua 19 people group"
+  },
+  {
+    "id": "tribe_levi",
+    "name": "Levi",
+    "category": "tribe",
+    "categoryLabel": "Tribe",
+    "testament": "OT",
+    "altNames": [
+      "Levites"
+    ],
+    "notes": "Tribe set apart for priestly/temple service; also functions as a people-group label.",
+    "exampleRefs": [
+      "Exodus 32",
+      "Numbers 3"
+    ],
+    "url": "/people-groups/#tribe_levi",
+    "searchText": "levi tribe tribe ot tribe set apart for priestly/temple service; also functions as a people-group label. levites exodus 32 numbers 3 people group"
+  },
+  {
+    "id": "tribe_judah",
+    "name": "Judah",
+    "category": "tribe",
+    "categoryLabel": "Tribe",
+    "testament": "OT",
+    "altNames": [
+      "Judahites"
+    ],
+    "notes": "Tribe associated with Davidic kingship; later identity overlaps with 'Jews/Judeans'.",
+    "exampleRefs": [
+      "Genesis 49",
+      "2 Samuel 2"
+    ],
+    "url": "/people-groups/#tribe_judah",
+    "searchText": "judah tribe tribe ot tribe associated with davidic kingship; later identity overlaps with 'jews/judeans'. judahites genesis 49 2 samuel 2 people group"
+  },
+  {
+    "id": "tribe_dan",
+    "name": "Dan",
+    "category": "tribe",
+    "categoryLabel": "Tribe",
+    "testament": "OT",
+    "altNames": [
+      "Danites"
+    ],
+    "notes": "One of the twelve tribes of Israel.",
+    "exampleRefs": [
+      "Judges 18",
+      "Numbers 2"
+    ],
+    "url": "/people-groups/#tribe_dan",
+    "searchText": "dan tribe tribe ot one of the twelve tribes of israel. danites judges 18 numbers 2 people group"
+  },
+  {
+    "id": "tribe_naphtali",
+    "name": "Naphtali",
+    "category": "tribe",
+    "categoryLabel": "Tribe",
+    "testament": "OT",
+    "altNames": [
+      "Naphtalites"
+    ],
+    "notes": "One of the twelve tribes of Israel.",
+    "exampleRefs": [
+      "Joshua 19",
+      "Judges 4"
+    ],
+    "url": "/people-groups/#tribe_naphtali",
+    "searchText": "naphtali tribe tribe ot one of the twelve tribes of israel. naphtalites joshua 19 judges 4 people group"
+  },
+  {
+    "id": "tribe_gad",
+    "name": "Gad",
+    "category": "tribe",
+    "categoryLabel": "Tribe",
+    "testament": "OT",
+    "altNames": [
+      "Gadites"
+    ],
+    "notes": "One of the twelve tribes of Israel.",
+    "exampleRefs": [
+      "Numbers 32",
+      "Joshua 13"
+    ],
+    "url": "/people-groups/#tribe_gad",
+    "searchText": "gad tribe tribe ot one of the twelve tribes of israel. gadites numbers 32 joshua 13 people group"
+  },
+  {
+    "id": "tribe_asher",
+    "name": "Asher",
+    "category": "tribe",
+    "categoryLabel": "Tribe",
+    "testament": "OT",
+    "altNames": [
+      "Asherites"
+    ],
+    "notes": "One of the twelve tribes of Israel.",
+    "exampleRefs": [
+      "Joshua 19",
+      "Judges 1"
+    ],
+    "url": "/people-groups/#tribe_asher",
+    "searchText": "asher tribe tribe ot one of the twelve tribes of israel. asherites joshua 19 judges 1 people group"
+  },
+  {
+    "id": "tribe_issachar",
+    "name": "Issachar",
+    "category": "tribe",
+    "categoryLabel": "Tribe",
+    "testament": "OT",
+    "altNames": [
+      "Issacharites"
+    ],
+    "notes": "One of the twelve tribes of Israel.",
+    "exampleRefs": [
+      "1 Chronicles 12",
+      "Numbers 1"
+    ],
+    "url": "/people-groups/#tribe_issachar",
+    "searchText": "issachar tribe tribe ot one of the twelve tribes of israel. issacharites 1 chronicles 12 numbers 1 people group"
+  },
+  {
+    "id": "tribe_zebulun",
+    "name": "Zebulun",
+    "category": "tribe",
+    "categoryLabel": "Tribe",
+    "testament": "OT",
+    "altNames": [
+      "Zebulunites"
+    ],
+    "notes": "One of the twelve tribes of Israel.",
+    "exampleRefs": [
+      "Joshua 19",
+      "Judges 5"
+    ],
+    "url": "/people-groups/#tribe_zebulun",
+    "searchText": "zebulun tribe tribe ot one of the twelve tribes of israel. zebulunites joshua 19 judges 5 people group"
+  },
+  {
+    "id": "tribe_benjamin",
+    "name": "Benjamin",
+    "category": "tribe",
+    "categoryLabel": "Tribe",
+    "testament": "OT",
+    "altNames": [
+      "Benjaminites"
+    ],
+    "notes": "One of the twelve tribes of Israel.",
+    "exampleRefs": [
+      "Judges 19-21",
+      "1 Samuel 9"
+    ],
+    "url": "/people-groups/#tribe_benjamin",
+    "searchText": "benjamin tribe tribe ot one of the twelve tribes of israel. benjaminites judges 19-21 1 samuel 9 people group"
+  },
+  {
+    "id": "tribe_ephraim",
+    "name": "Ephraim",
+    "category": "tribe",
+    "categoryLabel": "Tribe",
+    "testament": "OT",
+    "altNames": [
+      "Ephraimites"
+    ],
+    "notes": "Joseph-tribe; also used as a label for the northern kingdom ('Ephraim').",
+    "exampleRefs": [
+      "Joshua 16",
+      "Hosea"
+    ],
+    "url": "/people-groups/#tribe_ephraim",
+    "searchText": "ephraim tribe tribe ot joseph-tribe; also used as a label for the northern kingdom ('ephraim'). ephraimites joshua 16 hosea people group"
+  },
+  {
+    "id": "tribe_manasseh",
+    "name": "Manasseh",
+    "category": "tribe",
+    "categoryLabel": "Tribe",
+    "testament": "OT",
+    "altNames": [
+      "Manassites"
+    ],
+    "notes": "Joseph-tribe; includes half-tribe east of Jordan.",
+    "exampleRefs": [
+      "Joshua 13",
+      "Joshua 17"
+    ],
+    "url": "/people-groups/#tribe_manasseh",
+    "searchText": "manasseh tribe tribe ot joseph-tribe; includes half-tribe east of jordan. manassites joshua 13 joshua 17 people group"
+  },
+  {
+    "id": "priestly_levites",
+    "name": "Levites",
+    "category": "priestly_levitical",
+    "categoryLabel": "Priestly / Levitical",
+    "testament": "Both",
+    "altNames": [],
+    "notes": "Tribal/service group associated with sanctuary/temple duties.",
+    "exampleRefs": [
+      "Numbers 3",
+      "Luke 10",
+      "Acts 4"
+    ],
+    "url": "/people-groups/#priestly_levites",
+    "searchText": "levites priestly / levitical priestly_levitical both tribal/service group associated with sanctuary/temple duties.  numbers 3 luke 10 acts 4 people group"
+  },
+  {
+    "id": "priestly_aaronic",
+    "name": "Aaronic Priests (Sons of Aaron)",
+    "category": "priestly_levitical",
+    "categoryLabel": "Priestly / Levitical",
+    "testament": "Both",
+    "altNames": [
+      "Priests"
+    ],
+    "notes": "Priestly line within Levi; 'priests' often broader office label too.",
+    "exampleRefs": [
+      "Leviticus",
+      "Hebrews 7"
+    ],
+    "url": "/people-groups/#priestly_aaronic",
+    "searchText": "aaronic priests (sons of aaron) priestly / levitical priestly_levitical both priestly line within levi; 'priests' often broader office label too. priests leviticus hebrews 7 people group"
+  },
+  {
+    "id": "priestly_kohathites",
+    "name": "Kohathites",
+    "category": "priestly_levitical",
+    "categoryLabel": "Priestly / Levitical",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Levitical clan.",
+    "exampleRefs": [
+      "Numbers 4",
+      "1 Chronicles 6"
+    ],
+    "url": "/people-groups/#priestly_kohathites",
+    "searchText": "kohathites priestly / levitical priestly_levitical ot levitical clan.  numbers 4 1 chronicles 6 people group"
+  },
+  {
+    "id": "priestly_gershonites",
+    "name": "Gershonites",
+    "category": "priestly_levitical",
+    "categoryLabel": "Priestly / Levitical",
+    "testament": "OT",
+    "altNames": [
+      "Gershonites"
+    ],
+    "notes": "Levitical clan.",
+    "exampleRefs": [
+      "Numbers 4",
+      "1 Chronicles 6"
+    ],
+    "url": "/people-groups/#priestly_gershonites",
+    "searchText": "gershonites priestly / levitical priestly_levitical ot levitical clan. gershonites numbers 4 1 chronicles 6 people group"
+  },
+  {
+    "id": "priestly_merarites",
+    "name": "Merarites",
+    "category": "priestly_levitical",
+    "categoryLabel": "Priestly / Levitical",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Levitical clan.",
+    "exampleRefs": [
+      "Numbers 4",
+      "1 Chronicles 6"
+    ],
+    "url": "/people-groups/#priestly_merarites",
+    "searchText": "merarites priestly / levitical priestly_levitical ot levitical clan.  numbers 4 1 chronicles 6 people group"
+  },
+  {
+    "id": "priestly_zadokites",
+    "name": "Zadokites (House of Zadok)",
+    "category": "priestly_levitical",
+    "categoryLabel": "Priestly / Levitical",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Priestly lineage associated with Zadok in later OT history and temple discussions.",
+    "exampleRefs": [
+      "2 Samuel 8",
+      "Ezekiel 44"
+    ],
+    "url": "/people-groups/#priestly_zadokites",
+    "searchText": "zadokites (house of zadok) priestly / levitical priestly_levitical ot priestly lineage associated with zadok in later ot history and temple discussions.  2 samuel 8 ezekiel 44 people group"
+  },
+  {
+    "id": "empire_assyrians",
+    "name": "Assyrians",
+    "category": "empire_people",
+    "categoryLabel": "Empire People",
+    "testament": "OT",
+    "altNames": [
+      "Asshur (as a people/region label in genealogies)"
+    ],
+    "notes": "Major Mesopotamian imperial people.",
+    "exampleRefs": [
+      "2 Kings 17",
+      "Isaiah 10"
+    ],
+    "url": "/people-groups/#empire_assyrians",
+    "searchText": "assyrians empire people empire_people ot major mesopotamian imperial people. asshur (as a people/region label in genealogies) 2 kings 17 isaiah 10 people group"
+  },
+  {
+    "id": "empire_babylonians",
+    "name": "Babylonians",
+    "category": "empire_people",
+    "categoryLabel": "Empire People",
+    "testament": "OT",
+    "altNames": [
+      "Chaldeans (often closely associated)"
+    ],
+    "notes": "Imperial people associated with Babylon and the exile period.",
+    "exampleRefs": [
+      "2 Kings 24-25",
+      "Daniel 1"
+    ],
+    "url": "/people-groups/#empire_babylonians",
+    "searchText": "babylonians empire people empire_people ot imperial people associated with babylon and the exile period. chaldeans (often closely associated) 2 kings 24-25 daniel 1 people group"
+  },
+  {
+    "id": "empire_chaldeans",
+    "name": "Chaldeans",
+    "category": "empire_people",
+    "categoryLabel": "Empire People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Often linked with Babylon; also appears as raiders in Job.",
+    "exampleRefs": [
+      "Daniel 2",
+      "Job 1"
+    ],
+    "url": "/people-groups/#empire_chaldeans",
+    "searchText": "chaldeans empire people empire_people ot often linked with babylon; also appears as raiders in job.  daniel 2 job 1 people group"
+  },
+  {
+    "id": "empire_persians",
+    "name": "Persians",
+    "category": "empire_people",
+    "categoryLabel": "Empire People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Imperial people in the post-exilic period.",
+    "exampleRefs": [
+      "Ezra",
+      "Esther",
+      "Daniel 6"
+    ],
+    "url": "/people-groups/#empire_persians",
+    "searchText": "persians empire people empire_people ot imperial people in the post-exilic period.  ezra esther daniel 6 people group"
+  },
+  {
+    "id": "empire_medes",
+    "name": "Medes",
+    "category": "empire_people",
+    "categoryLabel": "Empire People",
+    "testament": "Both",
+    "altNames": [
+      "Median"
+    ],
+    "notes": "Appears in OT empire context and in NT diaspora lists.",
+    "exampleRefs": [
+      "Daniel 5-6",
+      "Acts 2"
+    ],
+    "url": "/people-groups/#empire_medes",
+    "searchText": "medes empire people empire_people both appears in ot empire context and in nt diaspora lists. median daniel 5-6 acts 2 people group"
+  },
+  {
+    "id": "empire_parthians",
+    "name": "Parthians",
+    "category": "empire_people",
+    "categoryLabel": "Empire People",
+    "testament": "NT",
+    "altNames": [],
+    "notes": "Named in NT diaspora roll-call.",
+    "exampleRefs": [
+      "Acts 2"
+    ],
+    "url": "/people-groups/#empire_parthians",
+    "searchText": "parthians empire people empire_people nt named in nt diaspora roll-call.  acts 2 people group"
+  },
+  {
+    "id": "empire_greeks",
+    "name": "Greeks",
+    "category": "empire_people",
+    "categoryLabel": "Empire People",
+    "testament": "NT",
+    "altNames": [
+      "Hellenes",
+      "Greek-speaking peoples (contextual)"
+    ],
+    "notes": "Ethnic/cultural label; sometimes broad shorthand for the Gentile world in NT rhetoric.",
+    "exampleRefs": [
+      "John 12",
+      "Acts 17",
+      "Romans 1"
+    ],
+    "url": "/people-groups/#empire_greeks",
+    "searchText": "greeks empire people empire_people nt ethnic/cultural label; sometimes broad shorthand for the gentile world in nt rhetoric. hellenes greek-speaking peoples (contextual) john 12 acts 17 romans 1 people group"
+  },
+  {
+    "id": "empire_romans",
+    "name": "Romans",
+    "category": "empire_people",
+    "categoryLabel": "Empire People",
+    "testament": "NT",
+    "altNames": [
+      "Roman"
+    ],
+    "notes": "Imperial people/citizens; appears widely in NT.",
+    "exampleRefs": [
+      "Acts 16",
+      "Romans 1",
+      "Acts 28"
+    ],
+    "url": "/people-groups/#empire_romans",
+    "searchText": "romans empire people empire_people nt imperial people/citizens; appears widely in nt. roman acts 16 romans 1 acts 28 people group"
+  },
+  {
+    "id": "ethnic_egyptians",
+    "name": "Egyptians",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "Both",
+    "altNames": [
+      "Mizraim (genealogical label)"
+    ],
+    "notes": "Major neighboring nation; also appears in NT lists.",
+    "exampleRefs": [
+      "Exodus",
+      "Isaiah 19",
+      "Acts 2"
+    ],
+    "url": "/people-groups/#ethnic_egyptians",
+    "searchText": "egyptians ethnic nation ethnic_nation both major neighboring nation; also appears in nt lists. mizraim (genealogical label) exodus isaiah 19 acts 2 people group"
+  },
+  {
+    "id": "ethnic_philistines",
+    "name": "Philistines",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Coastal people frequently in conflict with Israel.",
+    "exampleRefs": [
+      "Judges",
+      "1 Samuel"
+    ],
+    "url": "/people-groups/#ethnic_philistines",
+    "searchText": "philistines ethnic nation ethnic_nation ot coastal people frequently in conflict with israel.  judges 1 samuel people group"
+  },
+  {
+    "id": "ethnic_caphtorim",
+    "name": "Caphtorim",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [
+      "Caphtorites (as a gentilic form)"
+    ],
+    "notes": "People associated with Caphtor; connected to Philistine origin traditions.",
+    "exampleRefs": [
+      "Deuteronomy 2",
+      "Amos 9"
+    ],
+    "url": "/people-groups/#ethnic_caphtorim",
+    "searchText": "caphtorim ethnic nation ethnic_nation ot people associated with caphtor; connected to philistine origin traditions. caphtorites (as a gentilic form) deuteronomy 2 amos 9 people group"
+  },
+  {
+    "id": "ethnic_cherethites",
+    "name": "Cherethites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Often linked with coastal/Philistine contexts; appears as a distinct group in royal/military settings.",
+    "exampleRefs": [
+      "1 Samuel 30",
+      "2 Samuel 8"
+    ],
+    "url": "/people-groups/#ethnic_cherethites",
+    "searchText": "cherethites ethnic nation ethnic_nation ot often linked with coastal/philistine contexts; appears as a distinct group in royal/military settings.  1 samuel 30 2 samuel 8 people group"
+  },
+  {
+    "id": "ethnic_pelethites",
+    "name": "Pelethites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Often paired with Cherethites as elite guard group in David's administration.",
+    "exampleRefs": [
+      "2 Samuel 8",
+      "1 Kings 1"
+    ],
+    "url": "/people-groups/#ethnic_pelethites",
+    "searchText": "pelethites ethnic nation ethnic_nation ot often paired with cherethites as elite guard group in david's administration.  2 samuel 8 1 kings 1 people group"
+  },
+  {
+    "id": "ethnic_edemites",
+    "name": "Edomites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "Both",
+    "altNames": [
+      "Edom",
+      "Idumeans (later form)"
+    ],
+    "notes": "Descendants of Esau; recurring neighboring people.",
+    "exampleRefs": [
+      "Genesis 36",
+      "Obadiah",
+      "Mark 3 (Idumea as region)"
+    ],
+    "url": "/people-groups/#ethnic_edemites",
+    "searchText": "edomites ethnic nation ethnic_nation both descendants of esau; recurring neighboring people. edom idumeans (later form) genesis 36 obadiah mark 3 (idumea as region) people group"
+  },
+  {
+    "id": "ethnic_moabites",
+    "name": "Moabites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [
+      "Moab"
+    ],
+    "notes": "Neighbor nation east of the Jordan; central in Ruth.",
+    "exampleRefs": [
+      "Numbers 22",
+      "Ruth"
+    ],
+    "url": "/people-groups/#ethnic_moabites",
+    "searchText": "moabites ethnic nation ethnic_nation ot neighbor nation east of the jordan; central in ruth. moab numbers 22 ruth people group"
+  },
+  {
+    "id": "ethnic_ammonites",
+    "name": "Ammonites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [
+      "Ammon"
+    ],
+    "notes": "Neighbor nation east of the Jordan.",
+    "exampleRefs": [
+      "Judges 10-11",
+      "2 Samuel 10"
+    ],
+    "url": "/people-groups/#ethnic_ammonites",
+    "searchText": "ammonites ethnic nation ethnic_nation ot neighbor nation east of the jordan. ammon judges 10-11 2 samuel 10 people group"
+  },
+  {
+    "id": "ethnic_ishmaelites",
+    "name": "Ishmaelites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "People descended from Ishmael; appears in patriarchal narratives.",
+    "exampleRefs": [
+      "Genesis 37"
+    ],
+    "url": "/people-groups/#ethnic_ishmaelites",
+    "searchText": "ishmaelites ethnic nation ethnic_nation ot people descended from ishmael; appears in patriarchal narratives.  genesis 37 people group"
+  },
+  {
+    "id": "ethnic_midianites",
+    "name": "Midianites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [
+      "Midian"
+    ],
+    "notes": "Desert people; prominent in Exodus/Judges era narratives.",
+    "exampleRefs": [
+      "Exodus 2-3",
+      "Judges 6-8"
+    ],
+    "url": "/people-groups/#ethnic_midianites",
+    "searchText": "midianites ethnic nation ethnic_nation ot desert people; prominent in exodus/judges era narratives. midian exodus 2-3 judges 6-8 people group"
+  },
+  {
+    "id": "ethnic_amalekites",
+    "name": "Amalekites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [
+      "Amalek"
+    ],
+    "notes": "Recurring hostile people group in wilderness and monarchy narratives.",
+    "exampleRefs": [
+      "Exodus 17",
+      "1 Samuel 15"
+    ],
+    "url": "/people-groups/#ethnic_amalekites",
+    "searchText": "amalekites ethnic nation ethnic_nation ot recurring hostile people group in wilderness and monarchy narratives. amalek exodus 17 1 samuel 15 people group"
+  },
+  {
+    "id": "ethnic_arameans",
+    "name": "Arameans (Syrians)",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [
+      "Syrians",
+      "Aram"
+    ],
+    "notes": "Northern neighbors; appears as kingdom(s) and as ethnic label.",
+    "exampleRefs": [
+      "1 Kings 20",
+      "2 Kings 5"
+    ],
+    "url": "/people-groups/#ethnic_arameans",
+    "searchText": "arameans (syrians) ethnic nation ethnic_nation ot northern neighbors; appears as kingdom(s) and as ethnic label. syrians aram 1 kings 20 2 kings 5 people group"
+  },
+  {
+    "id": "ethnic_canaanites",
+    "name": "Canaanites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [
+      "Canaan"
+    ],
+    "notes": "Umbrella label for peoples in the land; also one of the classic -ites.",
+    "exampleRefs": [
+      "Genesis 12",
+      "Joshua 3"
+    ],
+    "url": "/people-groups/#ethnic_canaanites",
+    "searchText": "canaanites ethnic nation ethnic_nation ot umbrella label for peoples in the land; also one of the classic -ites. canaan genesis 12 joshua 3 people group"
+  },
+  {
+    "id": "ethnic_amorites",
+    "name": "Amorites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Prominent Canaan-region people group in conquest-era lists.",
+    "exampleRefs": [
+      "Genesis 15",
+      "Joshua 10"
+    ],
+    "url": "/people-groups/#ethnic_amorites",
+    "searchText": "amorites ethnic nation ethnic_nation ot prominent canaan-region people group in conquest-era lists.  genesis 15 joshua 10 people group"
+  },
+  {
+    "id": "ethnic_hittites",
+    "name": "Hittites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "People group appearing in patriarchal and conquest-era contexts.",
+    "exampleRefs": [
+      "Genesis 23",
+      "Joshua 1"
+    ],
+    "url": "/people-groups/#ethnic_hittites",
+    "searchText": "hittites ethnic nation ethnic_nation ot people group appearing in patriarchal and conquest-era contexts.  genesis 23 joshua 1 people group"
+  },
+  {
+    "id": "ethnic_jebusites",
+    "name": "Jebusites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Associated with Jerusalem (Jebus) prior to David's conquest.",
+    "exampleRefs": [
+      "Joshua 15",
+      "2 Samuel 5"
+    ],
+    "url": "/people-groups/#ethnic_jebusites",
+    "searchText": "jebusites ethnic nation ethnic_nation ot associated with jerusalem (jebus) prior to david's conquest.  joshua 15 2 samuel 5 people group"
+  },
+  {
+    "id": "ethnic_perizzites",
+    "name": "Perizzites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Included in classic land peoples lists.",
+    "exampleRefs": [
+      "Genesis 13",
+      "Joshua 3"
+    ],
+    "url": "/people-groups/#ethnic_perizzites",
+    "searchText": "perizzites ethnic nation ethnic_nation ot included in classic land peoples lists.  genesis 13 joshua 3 people group"
+  },
+  {
+    "id": "ethnic_girgashites",
+    "name": "Girgashites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Included in classic land peoples lists.",
+    "exampleRefs": [
+      "Deuteronomy 7",
+      "Joshua 3"
+    ],
+    "url": "/people-groups/#ethnic_girgashites",
+    "searchText": "girgashites ethnic nation ethnic_nation ot included in classic land peoples lists.  deuteronomy 7 joshua 3 people group"
+  },
+  {
+    "id": "ethnic_hivites",
+    "name": "Hivites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Included in classic land peoples lists; associated with Gibeonites in some contexts.",
+    "exampleRefs": [
+      "Genesis 34",
+      "Joshua 9"
+    ],
+    "url": "/people-groups/#ethnic_hivites",
+    "searchText": "hivites ethnic nation ethnic_nation ot included in classic land peoples lists; associated with gibeonites in some contexts.  genesis 34 joshua 9 people group"
+  },
+  {
+    "id": "ethnic_kenites",
+    "name": "Kenites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Group connected with Midian-related narratives and later settlement among Israel.",
+    "exampleRefs": [
+      "Numbers 24",
+      "Judges 1"
+    ],
+    "url": "/people-groups/#ethnic_kenites",
+    "searchText": "kenites ethnic nation ethnic_nation ot group connected with midian-related narratives and later settlement among israel.  numbers 24 judges 1 people group"
+  },
+  {
+    "id": "ethnic_kenizzites",
+    "name": "Kenizzites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [
+      "Kenezites"
+    ],
+    "notes": "Named among land peoples; also appears as a gentilic/family link (e.g., Caleb).",
+    "exampleRefs": [
+      "Genesis 15",
+      "Numbers 32"
+    ],
+    "url": "/people-groups/#ethnic_kenizzites",
+    "searchText": "kenizzites ethnic nation ethnic_nation ot named among land peoples; also appears as a gentilic/family link (e.g., caleb). kenezites genesis 15 numbers 32 people group"
+  },
+  {
+    "id": "ethnic_kadmonites",
+    "name": "Kadmonites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Named among land peoples in patriarchal promise lists.",
+    "exampleRefs": [
+      "Genesis 15"
+    ],
+    "url": "/people-groups/#ethnic_kadmonites",
+    "searchText": "kadmonites ethnic nation ethnic_nation ot named among land peoples in patriarchal promise lists.  genesis 15 people group"
+  },
+  {
+    "id": "ethnic_gibeonites",
+    "name": "Gibeonites",
+    "category": "clan",
+    "categoryLabel": "Clan",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Treaty community in Joshua; later appears as distinct group.",
+    "exampleRefs": [
+      "Joshua 9",
+      "2 Samuel 21"
+    ],
+    "url": "/people-groups/#ethnic_gibeonites",
+    "searchText": "gibeonites clan clan ot treaty community in joshua; later appears as distinct group.  joshua 9 2 samuel 21 people group"
+  },
+  {
+    "id": "ethnic_sidonian",
+    "name": "Sidonians",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "Both",
+    "altNames": [
+      "Sidon"
+    ],
+    "notes": "Phoenician city-people; appears in OT and NT.",
+    "exampleRefs": [
+      "Judges 10",
+      "Mark 7",
+      "Acts 12"
+    ],
+    "url": "/people-groups/#ethnic_sidonian",
+    "searchText": "sidonians ethnic nation ethnic_nation both phoenician city-people; appears in ot and nt. sidon judges 10 mark 7 acts 12 people group"
+  },
+  {
+    "id": "ethnic_tyrian",
+    "name": "Tyrians",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "Both",
+    "altNames": [
+      "Tyre"
+    ],
+    "notes": "Phoenician city-people; appears in OT and NT.",
+    "exampleRefs": [
+      "1 Kings 5",
+      "Matthew 11",
+      "Acts 21"
+    ],
+    "url": "/people-groups/#ethnic_tyrian",
+    "searchText": "tyrians ethnic nation ethnic_nation both phoenician city-people; appears in ot and nt. tyre 1 kings 5 matthew 11 acts 21 people group"
+  },
+  {
+    "id": "giants_rephaim",
+    "name": "Rephaim",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "A people-group term associated with giant traditions and a region name in some texts.",
+    "exampleRefs": [
+      "Genesis 14",
+      "Deuteronomy 3"
+    ],
+    "url": "/people-groups/#giants_rephaim",
+    "searchText": "rephaim ethnic nation ethnic_nation ot a people-group term associated with giant traditions and a region name in some texts.  genesis 14 deuteronomy 3 people group"
+  },
+  {
+    "id": "giants_anakim",
+    "name": "Anakim (Anakites)",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [
+      "Anakites"
+    ],
+    "notes": "Giant-associated people in conquest narratives.",
+    "exampleRefs": [
+      "Numbers 13",
+      "Joshua 11"
+    ],
+    "url": "/people-groups/#giants_anakim",
+    "searchText": "anakim (anakites) ethnic nation ethnic_nation ot giant-associated people in conquest narratives. anakites numbers 13 joshua 11 people group"
+  },
+  {
+    "id": "giants_emim",
+    "name": "Emim",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Group associated with Moabite giant traditions.",
+    "exampleRefs": [
+      "Deuteronomy 2"
+    ],
+    "url": "/people-groups/#giants_emim",
+    "searchText": "emim ethnic nation ethnic_nation ot group associated with moabite giant traditions.  deuteronomy 2 people group"
+  },
+  {
+    "id": "giants_zamzummim",
+    "name": "Zamzummim",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Group associated with Ammonite giant traditions.",
+    "exampleRefs": [
+      "Deuteronomy 2"
+    ],
+    "url": "/people-groups/#giants_zamzummim",
+    "searchText": "zamzummim ethnic nation ethnic_nation ot group associated with ammonite giant traditions.  deuteronomy 2 people group"
+  },
+  {
+    "id": "ethnic_horites",
+    "name": "Horites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "People associated with Seir/Edom-region traditions.",
+    "exampleRefs": [
+      "Genesis 14",
+      "Genesis 36"
+    ],
+    "url": "/people-groups/#ethnic_horites",
+    "searchText": "horites ethnic nation ethnic_nation ot people associated with seir/edom-region traditions.  genesis 14 genesis 36 people group"
+  },
+  {
+    "id": "ethnic_avvim",
+    "name": "Avvim",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [
+      "Avvites (gentilic form)"
+    ],
+    "notes": "People mentioned in conquest/settlement contexts.",
+    "exampleRefs": [
+      "Deuteronomy 2",
+      "Joshua 13"
+    ],
+    "url": "/people-groups/#ethnic_avvim",
+    "searchText": "avvim ethnic nation ethnic_nation ot people mentioned in conquest/settlement contexts. avvites (gentilic form) deuteronomy 2 joshua 13 people group"
+  },
+  {
+    "id": "africa_cushites",
+    "name": "Cushites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "Both",
+    "altNames": [
+      "Ethiopians (common translation)"
+    ],
+    "notes": "African-region people group; also appears indirectly in NT-related contexts (e.g., Ethiopian official).",
+    "exampleRefs": [
+      "Numbers 12",
+      "Isaiah 18",
+      "Acts 8"
+    ],
+    "url": "/people-groups/#africa_cushites",
+    "searchText": "cushites ethnic nation ethnic_nation both african-region people group; also appears indirectly in nt-related contexts (e.g., ethiopian official). ethiopians (common translation) numbers 12 isaiah 18 acts 8 people group"
+  },
+  {
+    "id": "africa_lubim",
+    "name": "Lubim",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [
+      "Libyans (often)"
+    ],
+    "notes": "People group named in some OT historical lists.",
+    "exampleRefs": [
+      "2 Chronicles 12",
+      "2 Chronicles 16"
+    ],
+    "url": "/people-groups/#africa_lubim",
+    "searchText": "lubim ethnic nation ethnic_nation ot people group named in some ot historical lists. libyans (often) 2 chronicles 12 2 chronicles 16 people group"
+  },
+  {
+    "id": "africa_sukkim",
+    "name": "Sukkim",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Named in an OT coalition list.",
+    "exampleRefs": [
+      "2 Chronicles 12"
+    ],
+    "url": "/people-groups/#africa_sukkim",
+    "searchText": "sukkim ethnic nation ethnic_nation ot named in an ot coalition list.  2 chronicles 12 people group"
+  },
+  {
+    "id": "nt_cyrenians",
+    "name": "Cyrenians",
+    "category": "regional_demonym",
+    "categoryLabel": "Regional Demonym",
+    "testament": "NT",
+    "altNames": [
+      "Libya near Cyrene (phrasing)"
+    ],
+    "notes": "Diaspora/regional label in NT.",
+    "exampleRefs": [
+      "Acts 2",
+      "Acts 6",
+      "Acts 11"
+    ],
+    "url": "/people-groups/#nt_cyrenians",
+    "searchText": "cyrenians regional demonym regional_demonym nt diaspora/regional label in nt. libya near cyrene (phrasing) acts 2 acts 6 acts 11 people group"
+  },
+  {
+    "id": "regional_cappadocians",
+    "name": "Cappadocians",
+    "category": "regional_demonym",
+    "categoryLabel": "Regional Demonym",
+    "testament": "NT",
+    "altNames": [],
+    "notes": "Region/people label in NT lists.",
+    "exampleRefs": [
+      "Acts 2",
+      "1 Peter 1"
+    ],
+    "url": "/people-groups/#regional_cappadocians",
+    "searchText": "cappadocians regional demonym regional_demonym nt region/people label in nt lists.  acts 2 1 peter 1 people group"
+  },
+  {
+    "id": "regional_pontians",
+    "name": "Pontians",
+    "category": "regional_demonym",
+    "categoryLabel": "Regional Demonym",
+    "testament": "NT",
+    "altNames": [
+      "Pontus (region)"
+    ],
+    "notes": "Region/people label in NT.",
+    "exampleRefs": [
+      "Acts 2",
+      "Acts 18",
+      "1 Peter 1"
+    ],
+    "url": "/people-groups/#regional_pontians",
+    "searchText": "pontians regional demonym regional_demonym nt region/people label in nt. pontus (region) acts 2 acts 18 1 peter 1 people group"
+  },
+  {
+    "id": "regional_asians",
+    "name": "Asians (Roman province of Asia)",
+    "category": "regional_demonym",
+    "categoryLabel": "Regional Demonym",
+    "testament": "NT",
+    "altNames": [
+      "Asia (province)"
+    ],
+    "notes": "NT 'Asia' is typically the Roman province in western Anatolia, not the modern continent label.",
+    "exampleRefs": [
+      "Acts 2",
+      "Acts 19",
+      "1 Corinthians 16"
+    ],
+    "url": "/people-groups/#regional_asians",
+    "searchText": "asians (roman province of asia) regional demonym regional_demonym nt nt 'asia' is typically the roman province in western anatolia, not the modern continent label. asia (province) acts 2 acts 19 1 corinthians 16 people group"
+  },
+  {
+    "id": "regional_phrygians",
+    "name": "Phrygians",
+    "category": "regional_demonym",
+    "categoryLabel": "Regional Demonym",
+    "testament": "NT",
+    "altNames": [
+      "Phrygia (region)"
+    ],
+    "notes": "Region/people label in NT lists.",
+    "exampleRefs": [
+      "Acts 2",
+      "Acts 16",
+      "Acts 18"
+    ],
+    "url": "/people-groups/#regional_phrygians",
+    "searchText": "phrygians regional demonym regional_demonym nt region/people label in nt lists. phrygia (region) acts 2 acts 16 acts 18 people group"
+  },
+  {
+    "id": "regional_pamphylians",
+    "name": "Pamphylians",
+    "category": "regional_demonym",
+    "categoryLabel": "Regional Demonym",
+    "testament": "NT",
+    "altNames": [
+      "Pamphylia (region)"
+    ],
+    "notes": "Region/people label in NT lists.",
+    "exampleRefs": [
+      "Acts 2",
+      "Acts 13",
+      "Acts 14"
+    ],
+    "url": "/people-groups/#regional_pamphylians",
+    "searchText": "pamphylians regional demonym regional_demonym nt region/people label in nt lists. pamphylia (region) acts 2 acts 13 acts 14 people group"
+  },
+  {
+    "id": "regional_cilicians",
+    "name": "Cilicians",
+    "category": "regional_demonym",
+    "categoryLabel": "Regional Demonym",
+    "testament": "NT",
+    "altNames": [
+      "Cilicia (region)"
+    ],
+    "notes": "Region/people label in NT.",
+    "exampleRefs": [
+      "Acts 6",
+      "Acts 15",
+      "Acts 21"
+    ],
+    "url": "/people-groups/#regional_cilicians",
+    "searchText": "cilicians regional demonym regional_demonym nt region/people label in nt. cilicia (region) acts 6 acts 15 acts 21 people group"
+  },
+  {
+    "id": "regional_cretans",
+    "name": "Cretans",
+    "category": "regional_demonym",
+    "categoryLabel": "Regional Demonym",
+    "testament": "NT",
+    "altNames": [
+      "Crete (island)"
+    ],
+    "notes": "Named in NT diaspora list and later epistles.",
+    "exampleRefs": [
+      "Acts 2",
+      "Titus 1"
+    ],
+    "url": "/people-groups/#regional_cretans",
+    "searchText": "cretans regional demonym regional_demonym nt named in nt diaspora list and later epistles. crete (island) acts 2 titus 1 people group"
+  },
+  {
+    "id": "regional_galatians",
+    "name": "Galatians",
+    "category": "regional_demonym",
+    "categoryLabel": "Regional Demonym",
+    "testament": "NT",
+    "altNames": [
+      "Galatia (region)"
+    ],
+    "notes": "Region/people label in NT letters and travel narratives.",
+    "exampleRefs": [
+      "Acts 16",
+      "Galatians 1",
+      "1 Peter 1"
+    ],
+    "url": "/people-groups/#regional_galatians",
+    "searchText": "galatians regional demonym regional_demonym nt region/people label in nt letters and travel narratives. galatia (region) acts 16 galatians 1 1 peter 1 people group"
+  },
+  {
+    "id": "regional_lycaonians",
+    "name": "Lycaonians",
+    "category": "regional_demonym",
+    "categoryLabel": "Regional Demonym",
+    "testament": "NT",
+    "altNames": [
+      "Lycaonia (region)"
+    ],
+    "notes": "Appears in Acts as a distinct language/people label.",
+    "exampleRefs": [
+      "Acts 14"
+    ],
+    "url": "/people-groups/#regional_lycaonians",
+    "searchText": "lycaonians regional demonym regional_demonym nt appears in acts as a distinct language/people label. lycaonia (region) acts 14 people group"
+  },
+  {
+    "id": "regional_macedonians",
+    "name": "Macedonians",
+    "category": "regional_demonym",
+    "categoryLabel": "Regional Demonym",
+    "testament": "NT",
+    "altNames": [
+      "Macedonia (region)"
+    ],
+    "notes": "Distinct regional identity in NT mission narratives and letters.",
+    "exampleRefs": [
+      "Acts 16",
+      "2 Corinthians 8",
+      "Philippians 4"
+    ],
+    "url": "/people-groups/#regional_macedonians",
+    "searchText": "macedonians regional demonym regional_demonym nt distinct regional identity in nt mission narratives and letters. macedonia (region) acts 16 2 corinthians 8 philippians 4 people group"
+  },
+  {
+    "id": "regional_bithynians",
+    "name": "Bithynians",
+    "category": "regional_demonym",
+    "categoryLabel": "Regional Demonym",
+    "testament": "NT",
+    "altNames": [
+      "Bithynia (region)"
+    ],
+    "notes": "Region/people label in NT.",
+    "exampleRefs": [
+      "Acts 16",
+      "1 Peter 1"
+    ],
+    "url": "/people-groups/#regional_bithynians",
+    "searchText": "bithynians regional demonym regional_demonym nt region/people label in nt. bithynia (region) acts 16 1 peter 1 people group"
+  },
+  {
+    "id": "nt_scythians",
+    "name": "Scythians",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "NT",
+    "altNames": [],
+    "notes": "Named as an ethnic extreme example in NT rhetoric.",
+    "exampleRefs": [
+      "Colossians 3"
+    ],
+    "url": "/people-groups/#nt_scythians",
+    "searchText": "scythians ethnic nation ethnic_nation nt named as an ethnic extreme example in nt rhetoric.  colossians 3 people group"
+  },
+  {
+    "id": "nt_barbarians",
+    "name": "Barbarians",
+    "category": "collective_label",
+    "categoryLabel": "Collective Label",
+    "testament": "NT",
+    "altNames": [],
+    "notes": "Greco-Roman cultural label for non-Greek speakers; used in NT.",
+    "exampleRefs": [
+      "Romans 1",
+      "Acts 28",
+      "1 Corinthians 14"
+    ],
+    "url": "/people-groups/#nt_barbarians",
+    "searchText": "barbarians collective label collective_label nt greco-roman cultural label for non-greek speakers; used in nt.  romans 1 acts 28 1 corinthians 14 people group"
+  },
+  {
+    "id": "religious_sect_pharisees",
+    "name": "Pharisees",
+    "category": "religious_sect",
+    "categoryLabel": "Religious Sect",
+    "testament": "NT",
+    "altNames": [],
+    "notes": "Second Temple Jewish sect prominent in the Gospels and Acts.",
+    "exampleRefs": [
+      "Matthew 23",
+      "Acts 5",
+      "Acts 23"
+    ],
+    "url": "/people-groups/#religious_sect_pharisees",
+    "searchText": "pharisees religious sect religious_sect nt second temple jewish sect prominent in the gospels and acts.  matthew 23 acts 5 acts 23 people group"
+  },
+  {
+    "id": "religious_sect_sadducees",
+    "name": "Sadducees",
+    "category": "religious_sect",
+    "categoryLabel": "Religious Sect",
+    "testament": "NT",
+    "altNames": [],
+    "notes": "Second Temple Jewish sect associated with temple leadership.",
+    "exampleRefs": [
+      "Matthew 22",
+      "Acts 5"
+    ],
+    "url": "/people-groups/#religious_sect_sadducees",
+    "searchText": "sadducees religious sect religious_sect nt second temple jewish sect associated with temple leadership.  matthew 22 acts 5 people group"
+  },
+  {
+    "id": "religious_office_scribes",
+    "name": "Scribes",
+    "category": "religious_office",
+    "categoryLabel": "Religious Office",
+    "testament": "NT",
+    "altNames": [
+      "Teachers of the law (often)"
+    ],
+    "notes": "Torah experts; appear as a recognizable group.",
+    "exampleRefs": [
+      "Mark 2",
+      "Luke 5"
+    ],
+    "url": "/people-groups/#religious_office_scribes",
+    "searchText": "scribes religious office religious_office nt torah experts; appear as a recognizable group. teachers of the law (often) mark 2 luke 5 people group"
+  },
+  {
+    "id": "religious_office_lawyers",
+    "name": "Lawyers (Torah experts)",
+    "category": "religious_office",
+    "categoryLabel": "Religious Office",
+    "testament": "NT",
+    "altNames": [
+      "Experts in the law"
+    ],
+    "notes": "Recognizable group in Jesus' controversies.",
+    "exampleRefs": [
+      "Luke 10",
+      "Luke 11"
+    ],
+    "url": "/people-groups/#religious_office_lawyers",
+    "searchText": "lawyers (torah experts) religious office religious_office nt recognizable group in jesus' controversies. experts in the law luke 10 luke 11 people group"
+  },
+  {
+    "id": "religious_office_chief_priests",
+    "name": "Chief Priests",
+    "category": "religious_office",
+    "categoryLabel": "Religious Office",
+    "testament": "NT",
+    "altNames": [],
+    "notes": "Temple leadership grouping in the Gospels/Acts.",
+    "exampleRefs": [
+      "Matthew 26",
+      "Acts 4"
+    ],
+    "url": "/people-groups/#religious_office_chief_priests",
+    "searchText": "chief priests religious office religious_office nt temple leadership grouping in the gospels/acts.  matthew 26 acts 4 people group"
+  },
+  {
+    "id": "religious_office_elders",
+    "name": "Elders (Jewish leadership)",
+    "category": "religious_office",
+    "categoryLabel": "Religious Office",
+    "testament": "NT",
+    "altNames": [],
+    "notes": "Leadership group frequently paired with chief priests and scribes.",
+    "exampleRefs": [
+      "Matthew 26",
+      "Acts 4"
+    ],
+    "url": "/people-groups/#religious_office_elders",
+    "searchText": "elders (jewish leadership) religious office religious_office nt leadership group frequently paired with chief priests and scribes.  matthew 26 acts 4 people group"
+  },
+  {
+    "id": "political_party_herodians",
+    "name": "Herodians",
+    "category": "political_party",
+    "categoryLabel": "Political Party",
+    "testament": "NT",
+    "altNames": [],
+    "notes": "Political grouping aligned with Herodian interests.",
+    "exampleRefs": [
+      "Mark 3",
+      "Mark 12"
+    ],
+    "url": "/people-groups/#political_party_herodians",
+    "searchText": "herodians political party political_party nt political grouping aligned with herodian interests.  mark 3 mark 12 people group"
+  },
+  {
+    "id": "political_party_zealots",
+    "name": "Zealots",
+    "category": "political_party",
+    "categoryLabel": "Political Party",
+    "testament": "NT",
+    "altNames": [],
+    "notes": "Political identity label; also used as a descriptor for Simon in the Twelve.",
+    "exampleRefs": [
+      "Luke 6",
+      "Acts 1"
+    ],
+    "url": "/people-groups/#political_party_zealots",
+    "searchText": "zealots political party political_party nt political identity label; also used as a descriptor for simon in the twelve.  luke 6 acts 1 people group"
+  },
+  {
+    "id": "political_party_sicarii",
+    "name": "Assassins (Sicarii)",
+    "category": "political_party",
+    "categoryLabel": "Political Party",
+    "testament": "NT",
+    "altNames": [
+      "Sicarii (in some translations/notes)"
+    ],
+    "notes": "Mentioned as a violent political group in Acts (translation varies).",
+    "exampleRefs": [
+      "Acts 21"
+    ],
+    "url": "/people-groups/#political_party_sicarii",
+    "searchText": "assassins (sicarii) political party political_party nt mentioned as a violent political group in acts (translation varies). sicarii (in some translations/notes) acts 21 people group"
+  },
+  {
+    "id": "movement_the_way",
+    "name": "The Way",
+    "category": "movement",
+    "categoryLabel": "Movement",
+    "testament": "NT",
+    "altNames": [],
+    "notes": "Early Christian movement self-designation in Acts.",
+    "exampleRefs": [
+      "Acts 9",
+      "Acts 19",
+      "Acts 24"
+    ],
+    "url": "/people-groups/#movement_the_way",
+    "searchText": "the way movement movement nt early christian movement self-designation in acts.  acts 9 acts 19 acts 24 people group"
+  },
+  {
+    "id": "movement_christians",
+    "name": "Christians",
+    "category": "movement",
+    "categoryLabel": "Movement",
+    "testament": "NT",
+    "altNames": [],
+    "notes": "Name applied to Jesus-followers (explicit in NT).",
+    "exampleRefs": [
+      "Acts 11",
+      "Acts 26",
+      "1 Peter 4"
+    ],
+    "url": "/people-groups/#movement_christians",
+    "searchText": "christians movement movement nt name applied to jesus-followers (explicit in nt).  acts 11 acts 26 1 peter 4 people group"
+  },
+  {
+    "id": "movement_nazarenes",
+    "name": "Nazarenes (as a label for Jesus-followers)",
+    "category": "movement",
+    "categoryLabel": "Movement",
+    "testament": "NT",
+    "altNames": [],
+    "notes": "Used as an external label for the Jesus movement in Acts.",
+    "exampleRefs": [
+      "Acts 24"
+    ],
+    "url": "/people-groups/#movement_nazarenes",
+    "searchText": "nazarenes (as a label for jesus-followers) movement movement nt used as an external label for the jesus movement in acts.  acts 24 people group"
+  },
+  {
+    "id": "civic_tax_collectors",
+    "name": "Tax Collectors (Publicans)",
+    "category": "civic_class",
+    "categoryLabel": "Civic Class",
+    "testament": "NT",
+    "altNames": [
+      "Publicans"
+    ],
+    "notes": "Recognizable social/occupational group in the Gospels.",
+    "exampleRefs": [
+      "Matthew 9",
+      "Luke 19"
+    ],
+    "url": "/people-groups/#civic_tax_collectors",
+    "searchText": "tax collectors (publicans) civic class civic_class nt recognizable social/occupational group in the gospels. publicans matthew 9 luke 19 people group"
+  },
+  {
+    "id": "civic_freedmen",
+    "name": "Freedmen",
+    "category": "civic_class",
+    "categoryLabel": "Civic Class",
+    "testament": "NT",
+    "altNames": [
+      "Synagogue of the Freedmen (phrase)"
+    ],
+    "notes": "Appears as a named synagogue-associated grouping in Acts.",
+    "exampleRefs": [
+      "Acts 6"
+    ],
+    "url": "/people-groups/#civic_freedmen",
+    "searchText": "freedmen civic class civic_class nt appears as a named synagogue-associated grouping in acts. synagogue of the freedmen (phrase) acts 6 people group"
+  },
+  {
+    "id": "military_soldiers",
+    "name": "Soldiers",
+    "category": "military_class",
+    "categoryLabel": "Military Class",
+    "testament": "NT",
+    "altNames": [],
+    "notes": "Common NT social/military grouping.",
+    "exampleRefs": [
+      "Luke 3",
+      "Matthew 27",
+      "Acts 10"
+    ],
+    "url": "/people-groups/#military_soldiers",
+    "searchText": "soldiers military class military_class nt common nt social/military grouping.  luke 3 matthew 27 acts 10 people group"
+  },
+  {
+    "id": "military_centurions",
+    "name": "Centurions",
+    "category": "military_class",
+    "categoryLabel": "Military Class",
+    "testament": "NT",
+    "altNames": [],
+    "notes": "Roman military officer class appearing repeatedly in NT narratives.",
+    "exampleRefs": [
+      "Matthew 8",
+      "Acts 10",
+      "Acts 27"
+    ],
+    "url": "/people-groups/#military_centurions",
+    "searchText": "centurions military class military_class nt roman military officer class appearing repeatedly in nt narratives.  matthew 8 acts 10 acts 27 people group"
+  },
+  {
+    "id": "temple_nethinim",
+    "name": "Nethinim (Temple servants)",
+    "category": "religious_office",
+    "categoryLabel": "Religious Office",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Post-exilic temple service group named in Ezra/Nehemiah lists.",
+    "exampleRefs": [
+      "Ezra 2",
+      "Nehemiah 7"
+    ],
+    "url": "/people-groups/#temple_nethinim",
+    "searchText": "nethinim (temple servants) religious office religious_office ot post-exilic temple service group named in ezra/nehemiah lists.  ezra 2 nehemiah 7 people group"
+  },
+  {
+    "id": "temple_gatekeepers",
+    "name": "Gatekeepers (Temple)",
+    "category": "religious_office",
+    "categoryLabel": "Religious Office",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Recognizable temple guild/service grouping.",
+    "exampleRefs": [
+      "1 Chronicles 9",
+      "Nehemiah 12"
+    ],
+    "url": "/people-groups/#temple_gatekeepers",
+    "searchText": "gatekeepers (temple) religious office religious_office ot recognizable temple guild/service grouping.  1 chronicles 9 nehemiah 12 people group"
+  },
+  {
+    "id": "temple_singers",
+    "name": "Singers (Temple)",
+    "category": "religious_office",
+    "categoryLabel": "Religious Office",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Recognizable temple guild/service grouping (often descendants of Asaph, etc.).",
+    "exampleRefs": [
+      "1 Chronicles 15",
+      "Ezra 2"
+    ],
+    "url": "/people-groups/#temple_singers",
+    "searchText": "singers (temple) religious office religious_office ot recognizable temple guild/service grouping (often descendants of asaph, etc.).  1 chronicles 15 ezra 2 people group"
+  },
+  {
+    "id": "religious_office_nazirites",
+    "name": "Nazirites",
+    "category": "religious_office",
+    "categoryLabel": "Religious Office",
+    "testament": "Both",
+    "altNames": [
+      "Nazarite (older spelling)"
+    ],
+    "notes": "Vowed dedication group/category in Torah; echoed in NT contexts via vow language.",
+    "exampleRefs": [
+      "Numbers 6",
+      "Acts 21"
+    ],
+    "url": "/people-groups/#religious_office_nazirites",
+    "searchText": "nazirites religious office religious_office both vowed dedication group/category in torah; echoed in nt contexts via vow language. nazarite (older spelling) numbers 6 acts 21 people group"
+  },
+  {
+    "id": "ethnic_arabs",
+    "name": "Arabs",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "NT",
+    "altNames": [],
+    "notes": "Explicitly named in NT diaspora list.",
+    "exampleRefs": [
+      "Acts 2"
+    ],
+    "url": "/people-groups/#ethnic_arabs",
+    "searchText": "arabs ethnic nation ethnic_nation nt explicitly named in nt diaspora list.  acts 2 people group"
+  },
+  {
+    "id": "clan_sabeans",
+    "name": "Sabeans",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [
+      "Sheba / people of Sheba (contextual)"
+    ],
+    "notes": "Appears as a raiding people group (Job) and as a named people in prophetic texts.",
+    "exampleRefs": [
+      "Job 1",
+      "Isaiah 45",
+      "Joel 3"
+    ],
+    "url": "/people-groups/#clan_sabeans",
+    "searchText": "sabeans ethnic nation ethnic_nation ot appears as a raiding people group (job) and as a named people in prophetic texts. sheba / people of sheba (contextual) job 1 isaiah 45 joel 3 people group"
+  },
+  {
+    "id": "clan_dedanites",
+    "name": "Dedanites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [
+      "Dedan"
+    ],
+    "notes": "Named people in genealogies and prophetic oracles.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Ezekiel 27"
+    ],
+    "url": "/people-groups/#clan_dedanites",
+    "searchText": "dedanites ethnic nation ethnic_nation ot named people in genealogies and prophetic oracles. dedan genesis 10 ezekiel 27 people group"
+  },
+  {
+    "id": "clan_kedar",
+    "name": "Kedarites (Kedar)",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [
+      "Kedar"
+    ],
+    "notes": "Desert people group named in prophetic/poetic texts.",
+    "exampleRefs": [
+      "Isaiah 60",
+      "Psalm 120"
+    ],
+    "url": "/people-groups/#clan_kedar",
+    "searchText": "kedarites (kedar) ethnic nation ethnic_nation ot desert people group named in prophetic/poetic texts. kedar isaiah 60 psalm 120 people group"
+  },
+  {
+    "id": "clan_hagrites",
+    "name": "Hagrites (Hagarites)",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [
+      "Hagarites"
+    ],
+    "notes": "Named people group in Chronicles genealogical/war lists.",
+    "exampleRefs": [
+      "1 Chronicles 5",
+      "Psalm 83"
+    ],
+    "url": "/people-groups/#clan_hagrites",
+    "searchText": "hagrites (hagarites) ethnic nation ethnic_nation ot named people group in chronicles genealogical/war lists. hagarites 1 chronicles 5 psalm 83 people group"
+  },
+  {
+    "id": "clan_meunites",
+    "name": "Meunites",
+    "category": "ethnic_nation",
+    "categoryLabel": "Ethnic Nation",
+    "testament": "OT",
+    "altNames": [
+      "Mehunim (spelling variant in some contexts)"
+    ],
+    "notes": "Named people group in OT narratives/lists.",
+    "exampleRefs": [
+      "2 Chronicles 26",
+      "Ezra 2"
+    ],
+    "url": "/people-groups/#clan_meunites",
+    "searchText": "meunites ethnic nation ethnic_nation ot named people group in ot narratives/lists. mehunim (spelling variant in some contexts) 2 chronicles 26 ezra 2 people group"
+  },
+  {
+    "id": "clan_shuhites",
+    "name": "Shuhites",
+    "category": "clan",
+    "categoryLabel": "Clan",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Gentilic clan label (e.g., Bildad the Shuhite).",
+    "exampleRefs": [
+      "Job 2"
+    ],
+    "url": "/people-groups/#clan_shuhites",
+    "searchText": "shuhites clan clan ot gentilic clan label (e.g., bildad the shuhite).  job 2 people group"
+  },
+  {
+    "id": "clan_temanites",
+    "name": "Temanites",
+    "category": "clan",
+    "categoryLabel": "Clan",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Gentilic clan label (e.g., Eliphaz the Temanite).",
+    "exampleRefs": [
+      "Job 2",
+      "Obadiah 1"
+    ],
+    "url": "/people-groups/#clan_temanites",
+    "searchText": "temanites clan clan ot gentilic clan label (e.g., eliphaz the temanite).  job 2 obadiah 1 people group"
+  },
+  {
+    "id": "clan_naamathites",
+    "name": "Naamathites",
+    "category": "clan",
+    "categoryLabel": "Clan",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Gentilic clan label (e.g., Zophar the Naamathite).",
+    "exampleRefs": [
+      "Job 2"
+    ],
+    "url": "/people-groups/#clan_naamathites",
+    "searchText": "naamathites clan clan ot gentilic clan label (e.g., zophar the naamathite).  job 2 people group"
+  },
+  {
+    "id": "clan_buzites",
+    "name": "Buzites",
+    "category": "clan",
+    "categoryLabel": "Clan",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Gentilic clan label (e.g., Elihu the Buzite).",
+    "exampleRefs": [
+      "Job 32"
+    ],
+    "url": "/people-groups/#clan_buzites",
+    "searchText": "buzites clan clan ot gentilic clan label (e.g., elihu the buzite).  job 32 people group"
+  },
+  {
+    "id": "table_japheth_gomer",
+    "name": "Gomer",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Table of Nations people-name functioning as a people-group label.",
+    "exampleRefs": [
+      "Genesis 10",
+      "1 Chronicles 1",
+      "Ezekiel 38"
+    ],
+    "url": "/people-groups/#table_japheth_gomer",
+    "searchText": "gomer table of nations people table_of_nations_people ot table of nations people-name functioning as a people-group label.  genesis 10 1 chronicles 1 ezekiel 38 people group"
+  },
+  {
+    "id": "table_japheth_ashkenaz",
+    "name": "Ashkenaz",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Table of Nations people-name.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Jeremiah 51"
+    ],
+    "url": "/people-groups/#table_japheth_ashkenaz",
+    "searchText": "ashkenaz table of nations people table_of_nations_people ot table of nations people-name.  genesis 10 jeremiah 51 people group"
+  },
+  {
+    "id": "table_japheth_riphath",
+    "name": "Riphath",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [
+      "Diphath (1 Chr spelling variant)"
+    ],
+    "notes": "Table of Nations people-name with spelling variation across parallel lists.",
+    "exampleRefs": [
+      "Genesis 10",
+      "1 Chronicles 1"
+    ],
+    "url": "/people-groups/#table_japheth_riphath",
+    "searchText": "riphath table of nations people table_of_nations_people ot table of nations people-name with spelling variation across parallel lists. diphath (1 chr spelling variant) genesis 10 1 chronicles 1 people group"
+  },
+  {
+    "id": "table_japheth_togarmah",
+    "name": "Togarmah",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [
+      "Beth-togarmah (place/people association)"
+    ],
+    "notes": "Table of Nations people-name.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Ezekiel 27",
+      "Ezekiel 38"
+    ],
+    "url": "/people-groups/#table_japheth_togarmah",
+    "searchText": "togarmah table of nations people table_of_nations_people ot table of nations people-name. beth-togarmah (place/people association) genesis 10 ezekiel 27 ezekiel 38 people group"
+  },
+  {
+    "id": "table_japheth_magog",
+    "name": "Magog",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Table of Nations people-name; used in later prophetic imagery.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Ezekiel 38"
+    ],
+    "url": "/people-groups/#table_japheth_magog",
+    "searchText": "magog table of nations people table_of_nations_people ot table of nations people-name; used in later prophetic imagery.  genesis 10 ezekiel 38 people group"
+  },
+  {
+    "id": "table_japheth_madai",
+    "name": "Madai",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [
+      "Medes (later ethnic label)"
+    ],
+    "notes": "Genealogical people-name connected with later Median identity in some readings.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Daniel 5"
+    ],
+    "url": "/people-groups/#table_japheth_madai",
+    "searchText": "madai table of nations people table_of_nations_people ot genealogical people-name connected with later median identity in some readings. medes (later ethnic label) genesis 10 daniel 5 people group"
+  },
+  {
+    "id": "table_japheth_javan",
+    "name": "Javan",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [
+      "Ionians / Greeks (often)"
+    ],
+    "notes": "Genealogical people-name often associated with Greek-world identity in prophetic texts.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Isaiah 66",
+      "Ezekiel 27"
+    ],
+    "url": "/people-groups/#table_japheth_javan",
+    "searchText": "javan table of nations people table_of_nations_people ot genealogical people-name often associated with greek-world identity in prophetic texts. ionians / greeks (often) genesis 10 isaiah 66 ezekiel 27 people group"
+  },
+  {
+    "id": "table_japheth_elishah",
+    "name": "Elishah",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Table of Nations people-name.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Ezekiel 27"
+    ],
+    "url": "/people-groups/#table_japheth_elishah",
+    "searchText": "elishah table of nations people table_of_nations_people ot table of nations people-name.  genesis 10 ezekiel 27 people group"
+  },
+  {
+    "id": "table_japheth_tarshish",
+    "name": "Tarshish",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Appears as place/people label in trade and voyage contexts.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Jonah 1",
+      "Ezekiel 27"
+    ],
+    "url": "/people-groups/#table_japheth_tarshish",
+    "searchText": "tarshish table of nations people table_of_nations_people ot appears as place/people label in trade and voyage contexts.  genesis 10 jonah 1 ezekiel 27 people group"
+  },
+  {
+    "id": "table_japheth_kittim",
+    "name": "Kittim",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Table of Nations people-name; later used as a broad maritime/Greek-world label in some texts.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Numbers 24",
+      "Daniel 11"
+    ],
+    "url": "/people-groups/#table_japheth_kittim",
+    "searchText": "kittim table of nations people table_of_nations_people ot table of nations people-name; later used as a broad maritime/greek-world label in some texts.  genesis 10 numbers 24 daniel 11 people group"
+  },
+  {
+    "id": "table_japheth_dodanim",
+    "name": "Dodanim",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [
+      "Rodanim (spelling variant)"
+    ],
+    "notes": "Table of Nations people-name with a common parallel-list spelling variant.",
+    "exampleRefs": [
+      "Genesis 10",
+      "1 Chronicles 1"
+    ],
+    "url": "/people-groups/#table_japheth_dodanim",
+    "searchText": "dodanim table of nations people table_of_nations_people ot table of nations people-name with a common parallel-list spelling variant. rodanim (spelling variant) genesis 10 1 chronicles 1 people group"
+  },
+  {
+    "id": "table_japheth_tubal",
+    "name": "Tubal",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Table of Nations people-name; appears in prophetic trade/war lists.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Ezekiel 27",
+      "Ezekiel 38"
+    ],
+    "url": "/people-groups/#table_japheth_tubal",
+    "searchText": "tubal table of nations people table_of_nations_people ot table of nations people-name; appears in prophetic trade/war lists.  genesis 10 ezekiel 27 ezekiel 38 people group"
+  },
+  {
+    "id": "table_japheth_meshech",
+    "name": "Meshech",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Table of Nations people-name; appears in prophetic lists.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Psalm 120",
+      "Ezekiel 38"
+    ],
+    "url": "/people-groups/#table_japheth_meshech",
+    "searchText": "meshech table of nations people table_of_nations_people ot table of nations people-name; appears in prophetic lists.  genesis 10 psalm 120 ezekiel 38 people group"
+  },
+  {
+    "id": "table_japheth_tiras",
+    "name": "Tiras",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Table of Nations people-name.",
+    "exampleRefs": [
+      "Genesis 10",
+      "1 Chronicles 1"
+    ],
+    "url": "/people-groups/#table_japheth_tiras",
+    "searchText": "tiras table of nations people table_of_nations_people ot table of nations people-name.  genesis 10 1 chronicles 1 people group"
+  },
+  {
+    "id": "table_ham_cush",
+    "name": "Cush",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Genealogical people-name; related to Cushites as an ethnic label.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Isaiah 18"
+    ],
+    "url": "/people-groups/#table_ham_cush",
+    "searchText": "cush table of nations people table_of_nations_people ot genealogical people-name; related to cushites as an ethnic label.  genesis 10 isaiah 18 people group"
+  },
+  {
+    "id": "table_ham_seba",
+    "name": "Seba",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Table of Nations people-name.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Isaiah 43"
+    ],
+    "url": "/people-groups/#table_ham_seba",
+    "searchText": "seba table of nations people table_of_nations_people ot table of nations people-name.  genesis 10 isaiah 43 people group"
+  },
+  {
+    "id": "table_ham_havilah_hamline",
+    "name": "Havilah (Ham-line)",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Appears in multiple genealogical contexts; this entry is the Ham-line Havilah in Genesis 10.",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_ham_havilah_hamline",
+    "searchText": "havilah (ham-line) table of nations people table_of_nations_people ot appears in multiple genealogical contexts; this entry is the ham-line havilah in genesis 10.  genesis 10 people group"
+  },
+  {
+    "id": "table_ham_sabtah",
+    "name": "Sabtah",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Table of Nations people-name.",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_ham_sabtah",
+    "searchText": "sabtah table of nations people table_of_nations_people ot table of nations people-name.  genesis 10 people group"
+  },
+  {
+    "id": "table_ham_raamah",
+    "name": "Raamah",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Table of Nations people-name.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Ezekiel 27"
+    ],
+    "url": "/people-groups/#table_ham_raamah",
+    "searchText": "raamah table of nations people table_of_nations_people ot table of nations people-name.  genesis 10 ezekiel 27 people group"
+  },
+  {
+    "id": "table_ham_sabteca",
+    "name": "Sabteca",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Table of Nations people-name.",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_ham_sabteca",
+    "searchText": "sabteca table of nations people table_of_nations_people ot table of nations people-name.  genesis 10 people group"
+  },
+  {
+    "id": "table_ham_sheba",
+    "name": "Sheba",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Appears in genealogies and later narratives (e.g., Queen of Sheba; distinct from Sabeans as a people label in some contexts).",
+    "exampleRefs": [
+      "Genesis 10",
+      "1 Kings 10",
+      "Psalm 72"
+    ],
+    "url": "/people-groups/#table_ham_sheba",
+    "searchText": "sheba table of nations people table_of_nations_people ot appears in genealogies and later narratives (e.g., queen of sheba; distinct from sabeans as a people label in some contexts).  genesis 10 1 kings 10 psalm 72 people group"
+  },
+  {
+    "id": "table_ham_dedan",
+    "name": "Dedan",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Appears in genealogies and later prophetic trade lists.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Ezekiel 27"
+    ],
+    "url": "/people-groups/#table_ham_dedan",
+    "searchText": "dedan table of nations people table_of_nations_people ot appears in genealogies and later prophetic trade lists.  genesis 10 ezekiel 27 people group"
+  },
+  {
+    "id": "table_ham_mizraim",
+    "name": "Mizraim",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [
+      "Egypt (as a nation label)"
+    ],
+    "notes": "Genealogical people-name corresponding to Egypt in many readings.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Psalm 105"
+    ],
+    "url": "/people-groups/#table_ham_mizraim",
+    "searchText": "mizraim table of nations people table_of_nations_people ot genealogical people-name corresponding to egypt in many readings. egypt (as a nation label) genesis 10 psalm 105 people group"
+  },
+  {
+    "id": "table_ham_ludim",
+    "name": "Ludim",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Table of Nations people-name.",
+    "exampleRefs": [
+      "Genesis 10",
+      "1 Chronicles 1"
+    ],
+    "url": "/people-groups/#table_ham_ludim",
+    "searchText": "ludim table of nations people table_of_nations_people ot table of nations people-name.  genesis 10 1 chronicles 1 people group"
+  },
+  {
+    "id": "table_ham_anamim",
+    "name": "Anamim",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Table of Nations people-name.",
+    "exampleRefs": [
+      "Genesis 10",
+      "1 Chronicles 1"
+    ],
+    "url": "/people-groups/#table_ham_anamim",
+    "searchText": "anamim table of nations people table_of_nations_people ot table of nations people-name.  genesis 10 1 chronicles 1 people group"
+  },
+  {
+    "id": "table_ham_lehabim",
+    "name": "Lehabim",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Table of Nations people-name.",
+    "exampleRefs": [
+      "Genesis 10",
+      "1 Chronicles 1"
+    ],
+    "url": "/people-groups/#table_ham_lehabim",
+    "searchText": "lehabim table of nations people table_of_nations_people ot table of nations people-name.  genesis 10 1 chronicles 1 people group"
+  },
+  {
+    "id": "table_ham_naphtuhim",
+    "name": "Naphtuhim",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Table of Nations people-name.",
+    "exampleRefs": [
+      "Genesis 10",
+      "1 Chronicles 1"
+    ],
+    "url": "/people-groups/#table_ham_naphtuhim",
+    "searchText": "naphtuhim table of nations people table_of_nations_people ot table of nations people-name.  genesis 10 1 chronicles 1 people group"
+  },
+  {
+    "id": "table_ham_pathrusim",
+    "name": "Pathrusim",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Table of Nations people-name.",
+    "exampleRefs": [
+      "Genesis 10",
+      "1 Chronicles 1"
+    ],
+    "url": "/people-groups/#table_ham_pathrusim",
+    "searchText": "pathrusim table of nations people table_of_nations_people ot table of nations people-name.  genesis 10 1 chronicles 1 people group"
+  },
+  {
+    "id": "table_ham_casluhim",
+    "name": "Casluhim",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Table of Nations people-name (noted near Philistine/Caphtor origins traditions in Genesis 10).",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_ham_casluhim",
+    "searchText": "casluhim table of nations people table_of_nations_people ot table of nations people-name (noted near philistine/caphtor origins traditions in genesis 10).  genesis 10 people group"
+  },
+  {
+    "id": "table_ham_caphtorim",
+    "name": "Caphtorim",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Table of Nations people-name (see also Caphtorim as an ethnic label in later texts).",
+    "exampleRefs": [
+      "Genesis 10",
+      "Deuteronomy 2"
+    ],
+    "url": "/people-groups/#table_ham_caphtorim",
+    "searchText": "caphtorim table of nations people table_of_nations_people ot table of nations people-name (see also caphtorim as an ethnic label in later texts).  genesis 10 deuteronomy 2 people group"
+  },
+  {
+    "id": "table_ham_put",
+    "name": "Put",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [
+      "Putites (gentilic form, contextual)"
+    ],
+    "notes": "Table of Nations people-name; appears in prophetic war lists.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Ezekiel 30",
+      "Nahum 3"
+    ],
+    "url": "/people-groups/#table_ham_put",
+    "searchText": "put table of nations people table_of_nations_people ot table of nations people-name; appears in prophetic war lists. putites (gentilic form, contextual) genesis 10 ezekiel 30 nahum 3 people group"
+  },
+  {
+    "id": "table_ham_canaan",
+    "name": "Canaan (genealogical)",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Ancestor-name that also functions as a broad people-group label (Canaanites).",
+    "exampleRefs": [
+      "Genesis 10",
+      "Genesis 12"
+    ],
+    "url": "/people-groups/#table_ham_canaan",
+    "searchText": "canaan (genealogical) table of nations people table_of_nations_people ot ancestor-name that also functions as a broad people-group label (canaanites).  genesis 10 genesis 12 people group"
+  },
+  {
+    "id": "table_ham_sidon",
+    "name": "Sidon (genealogical)",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Canaan's firstborn in Genesis 10; ties to Sidonians as a people label.",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_ham_sidon",
+    "searchText": "sidon (genealogical) table of nations people table_of_nations_people ot canaan's firstborn in genesis 10; ties to sidonians as a people label.  genesis 10 people group"
+  },
+  {
+    "id": "table_ham_heth",
+    "name": "Heth",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [
+      "Hittites (linked in genealogical framing)"
+    ],
+    "notes": "Genealogical people-name behind 'sons of Heth' phrasing.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Genesis 23"
+    ],
+    "url": "/people-groups/#table_ham_heth",
+    "searchText": "heth table of nations people table_of_nations_people ot genealogical people-name behind 'sons of heth' phrasing. hittites (linked in genealogical framing) genesis 10 genesis 23 people group"
+  },
+  {
+    "id": "table_ham_arkites",
+    "name": "Arkites",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Genesis 10 Canaanite subgroup people-name.",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_ham_arkites",
+    "searchText": "arkites table of nations people table_of_nations_people ot genesis 10 canaanite subgroup people-name.  genesis 10 people group"
+  },
+  {
+    "id": "table_ham_sinites",
+    "name": "Sinites",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Genesis 10 Canaanite subgroup people-name.",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_ham_sinites",
+    "searchText": "sinites table of nations people table_of_nations_people ot genesis 10 canaanite subgroup people-name.  genesis 10 people group"
+  },
+  {
+    "id": "table_ham_arvadites",
+    "name": "Arvadites",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [
+      "Arvad (island/city association)"
+    ],
+    "notes": "Genesis 10 Canaanite subgroup people-name; appears in later trade lists.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Ezekiel 27"
+    ],
+    "url": "/people-groups/#table_ham_arvadites",
+    "searchText": "arvadites table of nations people table_of_nations_people ot genesis 10 canaanite subgroup people-name; appears in later trade lists. arvad (island/city association) genesis 10 ezekiel 27 people group"
+  },
+  {
+    "id": "table_ham_zemarites",
+    "name": "Zemarites",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Genesis 10 Canaanite subgroup people-name.",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_ham_zemarites",
+    "searchText": "zemarites table of nations people table_of_nations_people ot genesis 10 canaanite subgroup people-name.  genesis 10 people group"
+  },
+  {
+    "id": "table_ham_hamathites",
+    "name": "Hamathites",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [
+      "Hamath (city/people association)"
+    ],
+    "notes": "Genesis 10 Canaanite subgroup people-name; Hamath also appears as a regional label later.",
+    "exampleRefs": [
+      "Genesis 10",
+      "2 Kings 14"
+    ],
+    "url": "/people-groups/#table_ham_hamathites",
+    "searchText": "hamathites table of nations people table_of_nations_people ot genesis 10 canaanite subgroup people-name; hamath also appears as a regional label later. hamath (city/people association) genesis 10 2 kings 14 people group"
+  },
+  {
+    "id": "table_shem_elam",
+    "name": "Elam",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "Both",
+    "altNames": [
+      "Elamites"
+    ],
+    "notes": "Genealogical people-name; Elamites explicitly named in NT diaspora list.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Isaiah 11",
+      "Acts 2"
+    ],
+    "url": "/people-groups/#table_shem_elam",
+    "searchText": "elam table of nations people table_of_nations_people both genealogical people-name; elamites explicitly named in nt diaspora list. elamites genesis 10 isaiah 11 acts 2 people group"
+  },
+  {
+    "id": "table_shem_asshur",
+    "name": "Asshur",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [
+      "Assyrians (linked)"
+    ],
+    "notes": "Genealogical people-name tied to Assyrian identity in many readings.",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_shem_asshur",
+    "searchText": "asshur table of nations people table_of_nations_people ot genealogical people-name tied to assyrian identity in many readings. assyrians (linked) genesis 10 people group"
+  },
+  {
+    "id": "table_shem_arphaxad",
+    "name": "Arphaxad",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Genealogical people-name (often functions more as ancestry than later gentilic).",
+    "exampleRefs": [
+      "Genesis 10",
+      "1 Chronicles 1"
+    ],
+    "url": "/people-groups/#table_shem_arphaxad",
+    "searchText": "arphaxad table of nations people table_of_nations_people ot genealogical people-name (often functions more as ancestry than later gentilic).  genesis 10 1 chronicles 1 people group"
+  },
+  {
+    "id": "table_shem_lud",
+    "name": "Lud",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [
+      "Lydians (sometimes associated historically; Bible uses Lud/Ludim forms)"
+    ],
+    "notes": "Genealogical people-name; do not confuse with Ludim (from Mizraim).",
+    "exampleRefs": [
+      "Genesis 10",
+      "Ezekiel 27"
+    ],
+    "url": "/people-groups/#table_shem_lud",
+    "searchText": "lud table of nations people table_of_nations_people ot genealogical people-name; do not confuse with ludim (from mizraim). lydians (sometimes associated historically; bible uses lud/ludim forms) genesis 10 ezekiel 27 people group"
+  },
+  {
+    "id": "table_shem_aram",
+    "name": "Aram",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [
+      "Arameans (Syrians)"
+    ],
+    "notes": "Genealogical people-name tied to Aramean identity.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Deuteronomy 26"
+    ],
+    "url": "/people-groups/#table_shem_aram",
+    "searchText": "aram table of nations people table_of_nations_people ot genealogical people-name tied to aramean identity. arameans (syrians) genesis 10 deuteronomy 26 people group"
+  },
+  {
+    "id": "table_shem_uz",
+    "name": "Uz",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Genealogical people-name; also associated with land of Uz in Job.",
+    "exampleRefs": [
+      "Genesis 10",
+      "Job 1"
+    ],
+    "url": "/people-groups/#table_shem_uz",
+    "searchText": "uz table of nations people table_of_nations_people ot genealogical people-name; also associated with land of uz in job.  genesis 10 job 1 people group"
+  },
+  {
+    "id": "table_shem_hul",
+    "name": "Hul",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Genealogical people-name.",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_shem_hul",
+    "searchText": "hul table of nations people table_of_nations_people ot genealogical people-name.  genesis 10 people group"
+  },
+  {
+    "id": "table_shem_gether",
+    "name": "Gether",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Genealogical people-name.",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_shem_gether",
+    "searchText": "gether table of nations people table_of_nations_people ot genealogical people-name.  genesis 10 people group"
+  },
+  {
+    "id": "table_shem_mash",
+    "name": "Mash",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [
+      "Meshech (variant in some parallel lists)"
+    ],
+    "notes": "Genealogical people-name with known parallel-list variation.",
+    "exampleRefs": [
+      "Genesis 10",
+      "1 Chronicles 1"
+    ],
+    "url": "/people-groups/#table_shem_mash",
+    "searchText": "mash table of nations people table_of_nations_people ot genealogical people-name with known parallel-list variation. meshech (variant in some parallel lists) genesis 10 1 chronicles 1 people group"
+  },
+  {
+    "id": "table_joktan_almodad",
+    "name": "Almodad",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Joktan-line people-name (Genesis 10).",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_joktan_almodad",
+    "searchText": "almodad table of nations people table_of_nations_people ot joktan-line people-name (genesis 10).  genesis 10 people group"
+  },
+  {
+    "id": "table_joktan_sheleph",
+    "name": "Sheleph",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Joktan-line people-name (Genesis 10).",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_joktan_sheleph",
+    "searchText": "sheleph table of nations people table_of_nations_people ot joktan-line people-name (genesis 10).  genesis 10 people group"
+  },
+  {
+    "id": "table_joktan_hazarmaveth",
+    "name": "Hazarmaveth",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Joktan-line people-name (Genesis 10).",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_joktan_hazarmaveth",
+    "searchText": "hazarmaveth table of nations people table_of_nations_people ot joktan-line people-name (genesis 10).  genesis 10 people group"
+  },
+  {
+    "id": "table_joktan_jerah",
+    "name": "Jerah",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Joktan-line people-name (Genesis 10).",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_joktan_jerah",
+    "searchText": "jerah table of nations people table_of_nations_people ot joktan-line people-name (genesis 10).  genesis 10 people group"
+  },
+  {
+    "id": "table_joktan_hadoram",
+    "name": "Hadoram",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Joktan-line people-name (Genesis 10).",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_joktan_hadoram",
+    "searchText": "hadoram table of nations people table_of_nations_people ot joktan-line people-name (genesis 10).  genesis 10 people group"
+  },
+  {
+    "id": "table_joktan_uzal",
+    "name": "Uzal",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Joktan-line people-name (Genesis 10).",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_joktan_uzal",
+    "searchText": "uzal table of nations people table_of_nations_people ot joktan-line people-name (genesis 10).  genesis 10 people group"
+  },
+  {
+    "id": "table_joktan_diklah",
+    "name": "Diklah",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Joktan-line people-name (Genesis 10).",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_joktan_diklah",
+    "searchText": "diklah table of nations people table_of_nations_people ot joktan-line people-name (genesis 10).  genesis 10 people group"
+  },
+  {
+    "id": "table_joktan_obal",
+    "name": "Obal",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [
+      "Ebal (spelling variant in some lists)"
+    ],
+    "notes": "Joktan-line people-name with possible parallel-list variation.",
+    "exampleRefs": [
+      "Genesis 10",
+      "1 Chronicles 1"
+    ],
+    "url": "/people-groups/#table_joktan_obal",
+    "searchText": "obal table of nations people table_of_nations_people ot joktan-line people-name with possible parallel-list variation. ebal (spelling variant in some lists) genesis 10 1 chronicles 1 people group"
+  },
+  {
+    "id": "table_joktan_abimael",
+    "name": "Abimael",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Joktan-line people-name (Genesis 10).",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_joktan_abimael",
+    "searchText": "abimael table of nations people table_of_nations_people ot joktan-line people-name (genesis 10).  genesis 10 people group"
+  },
+  {
+    "id": "table_joktan_ophir",
+    "name": "Ophir",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Joktan-line people-name; also appears as a trade/gold source in later narratives.",
+    "exampleRefs": [
+      "Genesis 10",
+      "1 Kings 9"
+    ],
+    "url": "/people-groups/#table_joktan_ophir",
+    "searchText": "ophir table of nations people table_of_nations_people ot joktan-line people-name; also appears as a trade/gold source in later narratives.  genesis 10 1 kings 9 people group"
+  },
+  {
+    "id": "table_joktan_havilah_joktanline",
+    "name": "Havilah (Joktan-line)",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Joktan-line Havilah (distinct genealogical placement from Ham-line Havilah).",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_joktan_havilah_joktanline",
+    "searchText": "havilah (joktan-line) table of nations people table_of_nations_people ot joktan-line havilah (distinct genealogical placement from ham-line havilah).  genesis 10 people group"
+  },
+  {
+    "id": "table_joktan_jobab",
+    "name": "Jobab",
+    "category": "table_of_nations_people",
+    "categoryLabel": "Table of Nations People",
+    "testament": "OT",
+    "altNames": [],
+    "notes": "Joktan-line people-name (Genesis 10).",
+    "exampleRefs": [
+      "Genesis 10"
+    ],
+    "url": "/people-groups/#table_joktan_jobab",
+    "searchText": "jobab table of nations people table_of_nations_people ot joktan-line people-name (genesis 10).  genesis 10 people group"
+  }
+]

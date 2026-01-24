@@ -23,7 +23,7 @@ class ScalabilityOptimizer {
   }
 
   async initialize() {
-    console.log('🚀 Initializing Scalability Optimizer...');
+    console.log(' Initializing Scalability Optimizer...');
 
     // Create cache directory
     if (!fs.existsSync(this.cacheDir)) {
@@ -82,7 +82,7 @@ class ScalabilityOptimizer {
 
   // Optimize entity data into chunks for better loading performance
   async optimizeEntityChunks(entitiesData) {
-    console.log('📦 Creating optimized entity chunks...');
+    console.log(' Creating optimized entity chunks...');
 
     const chunks = [];
     const chunkManifest = {
@@ -135,7 +135,7 @@ class ScalabilityOptimizer {
 
   // Generate progressive loading search index
   generateProgressiveSearchIndex(entitiesData) {
-    console.log('🔍 Generating progressive search index...');
+    console.log(' Generating progressive search index...');
 
     // Create tiered search index for progressive loading
     const searchTiers = {
@@ -172,7 +172,7 @@ class ScalabilityOptimizer {
 
   // Optimize JavaScript bundles
   async optimizeBundles() {
-    console.log('📦 Optimizing JavaScript bundles...');
+    console.log(' Optimizing JavaScript bundles...');
 
     const bundleConfig = {
       // Critical path - loaded immediately
@@ -214,7 +214,7 @@ class ScalabilityOptimizer {
     const memoryCheckInterval = options.memoryCheckInterval || 100;
     const results = [];
 
-    console.log(`🧠 Processing ${inputData.length} items with memory limits...`);
+    console.log(` Processing ${inputData.length} items with memory limits...`);
 
     for (let i = 0; i < inputData.length; i += batchSize) {
       const batch = inputData.slice(i, i + batchSize);
@@ -336,9 +336,9 @@ if (require.main === module) {
   async function main() {
     try {
       await optimizer.initialize();
-      console.log('✅ Scalability optimizer ready for integration');
+      console.log('OK Scalability optimizer ready for integration');
     } catch (error) {
-      console.error('❌ Optimization failed:', error);
+      console.error('ERROR Optimization failed:', error);
       process.exit(1);
     }
   }

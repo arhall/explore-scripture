@@ -9086,3 +9086,133 @@ h3 {
     scroll-margin-top: 1rem;
   }
 }
+
+/* Parables Page */
+.parables-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.parable-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.parable-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.parable-header h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.parable-id {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+}
+
+.parable-summary {
+  margin: 0.75rem 0 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.parable-meta,
+.parable-refs {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.parable-card .label {
+  font-weight: 600;
+  margin-right: 0.35rem;
+}
+
+.parable-card .value {
+  color: var(--text-secondary);
+}
+
+/* People Groups Page */
+.people-groups {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.people-group-category .section-header {
+  margin-bottom: 1.5rem;
+}
+
+.people-groups-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.people-group-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.people-group-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.people-group-header h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.people-group-testament {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: var(--accent-alpha-10);
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.people-group-aliases,
+.people-group-notes,
+.people-group-refs {
+  margin-top: 0.6rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.people-group-aliases .label,
+.people-group-refs .label {
+  font-weight: 600;
+  color: var(--text);
+  margin-right: 0.35rem;
+}
+
+@media (max-width: 768px) {
+  .parables-grid,
+  .people-groups-grid {
+    grid-template-columns: 1fr;
+  }
+}

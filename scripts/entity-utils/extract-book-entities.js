@@ -82,28 +82,28 @@ function entityAppearsInBook(entity, bookName) {
 }
 
 async function extractBookEntities() {
-  console.log('📖 Extracting Book Entities from Combined Dataset\n');
+  console.log(' Extracting Book Entities from Combined Dataset\n');
 
   try {
     // Load the combined dataset
-    console.log('📂 Loading Bible_combined_all_expanded.with_ids.v2.json...');
+    console.log(' Loading Bible_combined_all_expanded.with_ids.v2.json...');
     const combinedData = JSON.parse(
       fs.readFileSync('Bible_combined_all_expanded.with_ids.v2.json', 'utf8')
     );
 
     if (!combinedData.entries || !Array.isArray(combinedData.entries)) {
-      console.error('❌ Invalid data structure - no entries array found');
+      console.error('ERROR Invalid data structure - no entries array found');
       return;
     }
 
-    console.log(`📊 Found ${combinedData.entries.length} total entities`);
-    console.log('🔍 Extracting entities for each book...\n');
+    console.log(` Found ${combinedData.entries.length} total entities`);
+    console.log(' Extracting entities for each book...\n');
 
     let successCount = 0;
     let failCount = 0;
 
     for (const [bookSlug, bookName] of Object.entries(booksToExtract)) {
-      console.log(`📖 Processing ${bookName} (${bookSlug})...`);
+      console.log(` Processing ${bookName} (${bookSlug})...`);
 
       try {
         // Filter entities that appear in this book
@@ -113,10 +113,10 @@ async function extractBookEntities() {
           .sort((a, b) => b.references - a.references) // Sort by reference count descending
           .slice(0, 50); // Limit to top 50 entities
 
-        console.log(`   🔍 Found ${bookEntities.length} entities`);
+        console.log(`    Found ${bookEntities.length} entities`);
 
         if (bookEntities.length === 0) {
-          console.log(`   ⚠️  No entities found for ${bookName}`);
+          console.log(`   WARN  No entities found for ${bookName}`);
           failCount++;
           continue;
         }
@@ -125,40 +125,40 @@ async function extractBookEntities() {
         const outputPath = path.join('src/assets/data/books', `${bookSlug}-entities.json`);
         fs.writeFileSync(outputPath, JSON.stringify(bookEntities, null, 2));
 
-        console.log(`   💾 Saved ${bookEntities.length} entities to ${bookSlug}-entities.json`);
+        console.log(`    Saved ${bookEntities.length} entities to ${bookSlug}-entities.json`);
 
         // Show sample entities
         const sampleNames = bookEntities
           .slice(0, 3)
           .map(e => e.name)
           .join(', ');
-        console.log(`   📝 Top entities: ${sampleNames}${bookEntities.length > 3 ? '...' : ''}`);
+        console.log(`    Top entities: ${sampleNames}${bookEntities.length > 3 ? '...' : ''}`);
 
         successCount++;
       } catch (error) {
-        console.error(`   ❌ Error processing ${bookSlug}:`, error.message);
+        console.error(`   ERROR Error processing ${bookSlug}:`, error.message);
         failCount++;
       }
 
       console.log(''); // Empty line between books
     }
 
-    console.log(`📊 Extraction Results:`);
-    console.log(`   ✅ Success: ${successCount} books`);
-    console.log(`   ❌ Failed: ${failCount} books`);
+    console.log(` Extraction Results:`);
+    console.log(`   OK Success: ${successCount} books`);
+    console.log(`   ERROR Failed: ${failCount} books`);
 
     if (successCount > 0) {
-      console.log(`\n🎉 Successfully extracted entities for ${successCount} books!`);
-      console.log(`\n🧪 Run the test script to verify: node scripts/test-key-figures-loading.js`);
+      console.log(`\n Successfully extracted entities for ${successCount} books!`);
+      console.log(`\n Run the test script to verify: node scripts/test-key-figures-loading.js`);
     }
   } catch (error) {
-    console.error('❌ Failed to load combined dataset:', error.message);
+    console.error('ERROR Failed to load combined dataset:', error.message);
     process.exit(1);
   }
 }
 
 // Run the extraction
 extractBookEntities().catch(error => {
-  console.error('❌ Extraction failed:', error);
+  console.error('ERROR Extraction failed:', error);
   process.exit(1);
 });

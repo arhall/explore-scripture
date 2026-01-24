@@ -12,7 +12,7 @@ const path = require('path');
 const booksData = JSON.parse(fs.readFileSync('src/_data/books.json', 'utf8'));
 
 async function testKeyFiguresLoading() {
-  console.log('🧪 Testing Key Figures Loading for All 66 Books\n');
+  console.log(' Testing Key Figures Loading for All 66 Books\n');
 
   let passCount = 0;
   let failCount = 0;
@@ -25,7 +25,7 @@ async function testKeyFiguresLoading() {
     try {
       // Check if file exists
       if (!fs.existsSync(entityFile)) {
-        console.log(`❌ ${book.name} (${bookSlug}): Entity file missing`);
+        console.log(`ERROR ${book.name} (${bookSlug}): Entity file missing`);
         failures.push({ book: book.name, slug: bookSlug, error: 'File missing' });
         failCount++;
         continue;
@@ -36,7 +36,7 @@ async function testKeyFiguresLoading() {
 
       // Check if it's an array
       if (!Array.isArray(entityData)) {
-        console.log(`❌ ${book.name} (${bookSlug}): Entity data is not an array`);
+        console.log(`ERROR ${book.name} (${bookSlug}): Entity data is not an array`);
         failures.push({ book: book.name, slug: bookSlug, error: 'Not an array' });
         failCount++;
         continue;
@@ -45,34 +45,34 @@ async function testKeyFiguresLoading() {
       // Success
       const entityCount = entityData.length;
       const status = entityCount === 0 ? '(empty)' : `(${entityCount} entities)`;
-      console.log(`✅ ${book.name} (${bookSlug}): ${status}`);
+      console.log(`OK ${book.name} (${bookSlug}): ${status}`);
       passCount++;
     } catch (error) {
-      console.log(`❌ ${book.name} (${bookSlug}): ${error.message}`);
+      console.log(`ERROR ${book.name} (${bookSlug}): ${error.message}`);
       failures.push({ book: book.name, slug: bookSlug, error: error.message });
       failCount++;
     }
   }
 
-  console.log(`\n📊 Test Results:`);
-  console.log(`   ✅ Passed: ${passCount}/${booksData.length} books`);
-  console.log(`   ❌ Failed: ${failCount}/${booksData.length} books`);
+  console.log(`\n Test Results:`);
+  console.log(`   OK Passed: ${passCount}/${booksData.length} books`);
+  console.log(`   ERROR Failed: ${failCount}/${booksData.length} books`);
 
   if (failures.length > 0) {
-    console.log(`\n🔍 Failures:`);
+    console.log(`\n Failures:`);
     failures.forEach(failure => {
       console.log(`   • ${failure.book} (${failure.slug}): ${failure.error}`);
     });
   }
 
   if (failCount === 0) {
-    console.log(`\n🎉 All 66 books have properly formatted entity files!`);
+    console.log(`\n All 66 books have properly formatted entity files!`);
   } else {
-    console.log(`\n⚠️  ${failCount} books need attention.`);
+    console.log(`\nWARN  ${failCount} books need attention.`);
   }
 
   // Additional stats
-  console.log(`\n📈 Entity Statistics:`);
+  console.log(`\n Entity Statistics:`);
   let totalEntities = 0;
   let booksWithEntities = 0;
   let booksWithoutEntities = 0;
@@ -96,14 +96,14 @@ async function testKeyFiguresLoading() {
     }
   }
 
-  console.log(`   📚 Books with entities: ${booksWithEntities}`);
-  console.log(`   📄 Books without entities: ${booksWithoutEntities}`);
-  console.log(`   👥 Total entities: ${totalEntities}`);
-  console.log(`   📊 Average entities per book: ${(totalEntities / booksData.length).toFixed(1)}`);
+  console.log(`    Books with entities: ${booksWithEntities}`);
+  console.log(`    Books without entities: ${booksWithoutEntities}`);
+  console.log(`    Total entities: ${totalEntities}`);
+  console.log(`    Average entities per book: ${(totalEntities / booksData.length).toFixed(1)}`);
 }
 
 // Run the test
 testKeyFiguresLoading().catch(error => {
-  console.error('❌ Test failed:', error);
+  console.error('ERROR Test failed:', error);
   process.exit(1);
 });

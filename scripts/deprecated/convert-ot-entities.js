@@ -64,38 +64,38 @@ function getLastEntityArray(data) {
 }
 
 async function convertOTEntities() {
-  console.log('🔄 Converting OT Entity Files to Site Format\n');
+  console.log(' Converting OT Entity Files to Site Format\n');
 
   let successCount = 0;
   let failCount = 0;
 
   for (const [bookSlug, fileName] of Object.entries(booksToConvert)) {
     const bookName = bookSlug.charAt(0).toUpperCase() + bookSlug.slice(1);
-    console.log(`📖 Processing ${bookName} (${bookSlug})...`);
+    console.log(` Processing ${bookName} (${bookSlug})...`);
 
     try {
       const sourcePath = path.join('OT_EntitiesByBook', fileName);
 
       if (!fs.existsSync(sourcePath)) {
-        console.log(`   ❌ Source file not found: ${fileName}`);
+        console.log(`   ERROR Source file not found: ${fileName}`);
         failCount++;
         continue;
       }
 
       // Read the OT entity file
       const otData = JSON.parse(fs.readFileSync(sourcePath, 'utf8'));
-      console.log(`   📂 Loaded OT data for ${otData.book || bookName}`);
+      console.log(`    Loaded OT data for ${otData.book || bookName}`);
 
       // Extract entities array from the nested structure
       const entities = getLastEntityArray(otData);
 
       if (!entities || !Array.isArray(entities)) {
-        console.log(`   ❌ Could not find entities array in ${fileName}`);
+        console.log(`   ERROR Could not find entities array in ${fileName}`);
         failCount++;
         continue;
       }
 
-      console.log(`   🔍 Found ${entities.length} entities`);
+      console.log(`    Found ${entities.length} entities`);
 
       // Convert to site format
       const convertedEntities = entities
@@ -104,13 +104,13 @@ async function convertOTEntities() {
         .sort((a, b) => b.references - a.references) // Sort by reference count descending
         .slice(0, 50); // Limit to top 50 entities
 
-      console.log(`   ✅ Converted ${convertedEntities.length} entities`);
+      console.log(`   OK Converted ${convertedEntities.length} entities`);
 
       // Write to site format
       const outputPath = path.join('src/assets/data/books', `${bookSlug}-entities.json`);
       fs.writeFileSync(outputPath, JSON.stringify(convertedEntities, null, 2));
 
-      console.log(`   💾 Saved to ${bookSlug}-entities.json`);
+      console.log(`    Saved to ${bookSlug}-entities.json`);
 
       // Show sample entities
       if (convertedEntities.length > 0) {
@@ -119,31 +119,31 @@ async function convertOTEntities() {
           .map(e => e.name)
           .join(', ');
         console.log(
-          `   📝 Top entities: ${sampleNames}${convertedEntities.length > 3 ? '...' : ''}`
+          `   Top entities: ${sampleNames}${convertedEntities.length > 3 ? '...' : ''}`
         );
       }
 
       successCount++;
     } catch (error) {
-      console.error(`   ❌ Error processing ${bookSlug}:`, error.message);
+      console.error(`   ERROR Error processing ${bookSlug}:`, error.message);
       failCount++;
     }
 
     console.log(''); // Empty line between books
   }
 
-  console.log(`📊 Conversion Results:`);
-  console.log(`   ✅ Success: ${successCount} books`);
-  console.log(`   ❌ Failed: ${failCount} books`);
+  console.log(` Conversion Results:`);
+  console.log(`   OK Success: ${successCount} books`);
+  console.log(`   ERROR Failed: ${failCount} books`);
 
   if (successCount > 0) {
-    console.log(`\n🎉 Successfully converted ${successCount} books with real entity data!`);
-    console.log(`\n🧪 Run the test script to verify: node scripts/test-key-figures-loading.js`);
+    console.log(`\n Successfully converted ${successCount} books with real entity data!`);
+    console.log(`\n Run the test script to verify: node scripts/test-key-figures-loading.js`);
   }
 }
 
 // Run the conversion
 convertOTEntities().catch(error => {
-  console.error('❌ Conversion failed:', error);
+  console.error('ERROR Conversion failed:', error);
   process.exit(1);
 });

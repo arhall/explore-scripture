@@ -161,7 +161,7 @@ class MicroFrontendOrchestrator {
         // Generate build integration
         await this.generateBuildIntegration();
         
-        console.log('✅ Micro-frontend architecture generated');
+        console.log('OK Micro-frontend architecture generated');
     }
     
     /**
@@ -201,7 +201,7 @@ class ${this.toPascalCase(name)}Module {
      */
     async init() {
         try {
-            console.log(\`🚀 Initializing \${this.name} module\`);
+            console.log(\` Initializing \${this.name} module\`);
             
             // Load dependencies
             await this.loadDependencies();
@@ -221,10 +221,10 @@ class ${this.toPascalCase(name)}Module {
                 timestamp: Date.now()
             });
             
-            console.log(\`✅ \${this.name} module initialized\`);
+            console.log(\`OK \${this.name} module initialized\`);
             
         } catch (error) {
-            console.error(\`❌ Failed to initialize \${this.name} module:\`, error);
+            console.error(\`ERROR Failed to initialize \${this.name} module:\`, error);
             this.eventBus.emit('module:error', {
                 module: this.name,
                 error: error.message,
@@ -275,7 +275,7 @@ class ${this.toPascalCase(name)}Module {
      * Handle incoming events
      */
     handleEvent(event) {
-        console.log(\`📡 \${this.name} received event:\`, event.type);
+        console.log(\` \${this.name} received event:\`, event.type);
         
         switch (event.type) {
             case 'activate':
@@ -362,7 +362,7 @@ class ${this.toPascalCase(name)}Module {
      * Destroy the module
      */
     async destroy() {
-        console.log(\`🗑️  Destroying \${this.name} module\`);
+        console.log(\`  Destroying \${this.name} module\`);
         
         // Remove event listeners
         const channelName = this.orchestrator.getChannelName('${name}');
@@ -792,7 +792,7 @@ class SearchEngineImplementation extends SearchEngineModule {
         const fuzzyMatcherDep = this.dependencies.get('fuzzy-matcher');
         this.fuzzyMatcher = new fuzzyMatcherDep.FuzzyMatcher();
         
-        console.log(\`📚 Search index loaded: \${this.searchIndex.entries.length} entries\`);
+        console.log(\` Search index loaded: \${this.searchIndex.entries.length} entries\`);
     }
     
     initUnifiedSearch() {
@@ -1307,7 +1307,7 @@ class ThemeSystemImplementation extends ThemeSystemModule {
             timestamp: Date.now()
         });
         
-        console.log(\`🎨 Theme changed to: \${this.themes[themeName].name}\`);
+        console.log(\` Theme changed to: \${this.themes[themeName].name}\`);
     }
     
     handleThemeSwitch(event) {
@@ -1441,7 +1441,7 @@ class MicroFrontendOrchestrator {
         this.loadQueue = [];
         this.isLoading = false;
         
-        console.log('🎭 Micro-Frontend Orchestrator initialized');
+        console.log(' Micro-Frontend Orchestrator initialized');
     }
     
     /**
@@ -1499,10 +1499,10 @@ class MicroFrontendOrchestrator {
             // Set up page lifecycle events
             this.setupPageLifecycle();
             
-            console.log('✅ Micro-Frontend Orchestrator ready');
+            console.log('OK Micro-Frontend Orchestrator ready');
             
         } catch (error) {
-            console.error('❌ Failed to initialize orchestrator:', error);
+            console.error('ERROR Failed to initialize orchestrator:', error);
         }
     }
     
@@ -1519,7 +1519,7 @@ class MicroFrontendOrchestrator {
         );
         
         await Promise.all(promises);
-        console.log(\`📦 Loaded \${promises.length} shared dependencies\`);
+        console.log(\` Loaded \${promises.length} shared dependencies\`);
     }
     
     /**
@@ -1556,7 +1556,7 @@ class MicroFrontendOrchestrator {
         );
         
         await Promise.all(promises);
-        console.log(\`⚡ Loaded \${criticalModules.length} critical modules\`);
+        console.log(\` Loaded \${criticalModules.length} critical modules\`);
     }
     
     /**
@@ -1677,7 +1677,7 @@ class MicroFrontendOrchestrator {
         }
         
         try {
-            console.log(\`📥 Loading \${name} module...\`);
+            console.log(\` Loading \${name} module...\`);
             
             // Dynamic import of module
             const ModuleClass = await import(\`./\${config.entry}\`);
@@ -1688,11 +1688,11 @@ class MicroFrontendOrchestrator {
             
             this.modules.set(name, moduleInstance);
             
-            console.log(\`✅ \${name} module loaded and initialized\`);
+            console.log(\`OK \${name} module loaded and initialized\`);
             return moduleInstance;
             
         } catch (error) {
-            console.error(\`❌ Failed to load \${name} module:\`, error);
+            console.error(\`ERROR Failed to load \${name} module:\`, error);
             
             // Emit error event
             this.eventBus.emit('module:load-error', {
@@ -1787,7 +1787,7 @@ class MicroFrontendOrchestrator {
      * Destroy all modules (cleanup)
      */
     async destroy() {
-        console.log('🧹 Destroying micro-frontend orchestrator...');
+        console.log(' Destroying micro-frontend orchestrator...');
         
         const destroyPromises = Array.from(this.modules.values()).map(
             module => module.destroy()
@@ -1798,7 +1798,7 @@ class MicroFrontendOrchestrator {
         this.modules.clear();
         this.dependencies.clear();
         
-        console.log('✅ Orchestrator destroyed');
+        console.log('OK Orchestrator destroyed');
     }
 }
 
@@ -2219,14 +2219,14 @@ eleventyConfig.addPassthroughCopy("src/assets/modules");
 
 // Add module bundling
 eleventyConfig.on('beforeBuild', async () => {
-    console.log('🎭 Building micro-frontends...');
+    console.log(' Building micro-frontends...');
     
     // Generate module manifests
     const MicroFrontendOrchestrator = require('./scripts/micro-frontend-orchestrator.js');
     const orchestrator = new MicroFrontendOrchestrator();
     await orchestrator.generateMicroFrontends();
     
-    console.log('✅ Micro-frontends built');
+    console.log('OK Micro-frontends built');
 });
 `;
         
@@ -2252,10 +2252,10 @@ if (require.main === module) {
     const orchestrator = new MicroFrontendOrchestrator();
     orchestrator.generateMicroFrontends()
         .then(() => {
-            console.log('✅ Micro-frontend architecture generated successfully');
+            console.log('OK Micro-frontend architecture generated successfully');
         })
         .catch(error => {
-            console.error('❌ Failed to generate micro-frontend architecture:', error);
+            console.error('ERROR Failed to generate micro-frontend architecture:', error);
             process.exit(1);
         });
 }

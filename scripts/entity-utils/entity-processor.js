@@ -432,10 +432,10 @@ function calculateEntityScore(entity, bookName, refCount, entityType) {
  */
 async function processEntities() {
   const startTime = Date.now();
-  console.log('🚀 Starting optimized entity processing...');
+  console.log(' Starting optimized entity processing...');
 
   // Load data files with error handling
-  console.log('📖 Loading data files...');
+  console.log(' Loading data files...');
   let masterData, redirectMapData, booksData;
   try {
     masterData = JSON.parse(fs.readFileSync(path.join(INPUT_DIR, MASTER_FILE), 'utf8'));
@@ -443,7 +443,7 @@ async function processEntities() {
     booksData = JSON.parse(fs.readFileSync(BOOKS_FILE, 'utf8'));
     console.log(`  Loaded ${masterData.entries.length} entities and ${booksData.length} books`);
   } catch (error) {
-    console.error('❌ Error loading data files:', error.message);
+    console.error('ERROR Error loading data files:', error.message);
     process.exit(1);
   }
 
@@ -457,7 +457,7 @@ async function processEntities() {
   const redirectResolver = new RedirectResolver(redirectMapData);
 
   // Create output directories in parallel
-  console.log('📁 Creating output directories...');
+  console.log(' Creating output directories...');
   const dirs = [OUTPUT_DIR, path.join(OUTPUT_DIR, 'books'), path.join(OUTPUT_DIR, 'entities')];
 
   dirs.forEach(dir => {
@@ -467,7 +467,7 @@ async function processEntities() {
   });
 
   // Pre-initialize data structures for better memory allocation
-  console.log('🔄 Pre-initializing data structures...');
+  console.log(' Pre-initializing data structures...');
   const bookEntities = new Map();
   const chapterEntities = new Map();
   const globalEntities = new Map();
@@ -487,7 +487,7 @@ async function processEntities() {
   });
 
   // Batch processing with optimized entity handling
-  console.log('🔄 Processing entities in optimized batches...');
+  console.log(' Processing entities in optimized batches...');
   const batchSize = 1000; // Process in larger batches for better performance
   const totalEntities = masterData.entries.length;
 
@@ -555,7 +555,7 @@ async function processEntities() {
     });
 
     // Optimized batch file writing with performance tracking
-    console.log('💾 Writing output files...');
+    console.log(' Writing output files...');
 
     // Write per-book entity indexes with batched directory creation
     console.log('  Writing book indexes...');
@@ -726,8 +726,8 @@ async function processEntities() {
       JSON.stringify(summary, null, 2)
     );
 
-    console.log('✅ Entity processing complete!');
-    console.log(`📊 Summary:`);
+    console.log('OK Entity processing complete!');
+    console.log(` Summary:`);
     console.log(`   - Processed ${summary.total_entities} entities`);
     console.log(`   - Generated ${summary.unique_canonical_entities} unique entities`);
     console.log(`   - Created ${summary.output_files.book_entity_indexes} book indexes`);

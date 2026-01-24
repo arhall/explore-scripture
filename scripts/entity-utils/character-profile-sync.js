@@ -654,7 +654,7 @@ function loadEntities() {
       });
     }
   } else {
-    console.warn(`⚠️  Master dataset missing at ${MASTER_DATASET_FILE}, treating all entities as base.`);
+    console.warn(`WARN  Master dataset missing at ${MASTER_DATASET_FILE}, treating all entities as base.`);
   }
 
   const entityFiles = fs.readdirSync(ENTITIES_DIR).filter(file => file.endsWith('.json'));
@@ -678,7 +678,7 @@ function loadEntities() {
 
 function updateEntityIds(entityIdsToAdd) {
   if (!fs.existsSync(ENTITY_IDS_FILE)) {
-    console.warn(`⚠️  entityIds.js not found at ${ENTITY_IDS_FILE}, skipping update.`);
+    console.warn(`WARN  entityIds.js not found at ${ENTITY_IDS_FILE}, skipping update.`);
     return;
   }
 
@@ -712,7 +712,7 @@ function updateEntityIds(entityIdsToAdd) {
 
 function updateEntitySearchIndex(newEntities) {
   if (!fs.existsSync(ENTITY_SEARCH_FILE)) {
-    console.warn(`⚠️  entities-search.json not found at ${ENTITY_SEARCH_FILE}, skipping update.`);
+    console.warn(`WARN  entities-search.json not found at ${ENTITY_SEARCH_FILE}, skipping update.`);
     return;
   }
 
@@ -778,7 +778,7 @@ function ensureProfileGeneratedFlag(entityId) {
 }
 
 async function syncCharacterProfiles() {
-  console.log('🧭 Syncing character profiles...');
+  console.log(' Syncing character profiles...');
 
   ensureDir(PROFILE_OUTPUT_DIR);
 
@@ -793,7 +793,7 @@ async function syncCharacterProfiles() {
   });
 
   if (profileFiles.length === 0) {
-    console.warn('⚠️  No character profile files found.');
+    console.warn('WARN  No character profile files found.');
     return;
   }
 
@@ -924,13 +924,13 @@ async function syncCharacterProfiles() {
   updateEntitySearchIndex(newEntities);
   updateEntityIds(newEntityIds);
 
-  console.log(`✅ Character profile sync complete.`);
+  console.log(`OK Character profile sync complete.`);
   console.log(`   Profiles: ${summary.total_profiles}`);
   console.log(`   Matched: ${summary.matched_existing}`);
   console.log(`   Created: ${summary.created_entities}`);
 }
 
 syncCharacterProfiles().catch(error => {
-  console.error('❌ Character profile sync failed:', error);
+  console.error('ERROR Character profile sync failed:', error);
   process.exit(1);
 });

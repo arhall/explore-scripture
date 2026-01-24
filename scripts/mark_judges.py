@@ -72,7 +72,7 @@ def update_judges():
             name = row.get('name', '').strip()
             if name in JUDGES:
                 row['judge'] = 'true'
-                print(f"✓ Marked {name} as judge")
+                print(f"OK Marked {name} as judge")
                 marked_count += 1
             rows.append(row)
 
@@ -82,8 +82,8 @@ def update_judges():
         writer.writeheader()
         writer.writerows(rows)
 
-    print(f"\n✅ Updated {csv_path}")
-    print(f"📊 Marked {marked_count} judges")
+    print(f"\nOK Updated {csv_path}")
+    print(f" Marked {marked_count} judges")
 
 if __name__ == '__main__':
     update_judges()

@@ -90,6 +90,14 @@ class BundleOptimizer {
         triggers: ['commentary-btn-visible', 'book-page-visit'],
       },
 
+      'scripture-widget': {
+        url: '/assets/scripture-widget.js',
+        priority: 'low',
+        size: 20,
+        dependencies: [],
+        triggers: ['scripture-visible'],
+      },
+
       // Low Priority - Load on demand
       'entity-relationship-visualizer': {
         url: '/assets/entity-relationship-visualizer.js',
@@ -180,6 +188,13 @@ class BundleOptimizer {
     const commentaryBtns = document.querySelectorAll('.commentary-btn');
     commentaryBtns.forEach(el => {
       el.dataset.lazyTrigger = 'commentary-btn-visible';
+      this.intersectionObserver?.observe(el);
+    });
+
+    // Scripture references
+    const scriptureRefs = document.querySelectorAll('[data-scripture], .scripture-reference');
+    scriptureRefs.forEach(el => {
+      el.dataset.lazyTrigger = 'scripture-visible';
       this.intersectionObserver?.observe(el);
     });
 

@@ -11,7 +11,7 @@ const SLA_THRESHOLDS = {
 };
 
 function generatePerformanceReport() {
-  console.log('🚀 Generating Performance Report...\n');
+  console.log(' Generating Performance Report...\n');
 
   const reportData = {
     timestamp: new Date().toISOString(),
@@ -22,7 +22,7 @@ function generatePerformanceReport() {
   };
 
   // Build Performance
-  console.log('⏱️  Measuring build performance...');
+  console.log('⏱  Measuring build performance...');
   const buildStartTime = Date.now();
 
   try {
@@ -41,12 +41,12 @@ function generatePerformanceReport() {
 
     console.log(`   Build completed in ${buildTime}ms ${getStatusEmoji(buildStatus)}`);
   } catch (error) {
-    console.error('   ❌ Build failed:', error.message);
+    console.error('   ERROR Build failed:', error.message);
     return;
   }
 
   // Site Size Analysis
-  console.log('\\n📦 Analyzing site size...');
+  console.log('\\n Analyzing site size...');
   const siteDir = path.join(__dirname, '..', '_site');
 
   try {
@@ -71,11 +71,11 @@ function generatePerformanceReport() {
       `   Total size: ${sizeMB.toFixed(2)}MB (${totalFiles} files) ${getStatusEmoji(sizeStatus)}`
     );
   } catch (error) {
-    console.error('   ❌ Size analysis failed:', error.message);
+    console.error('   ERROR Size analysis failed:', error.message);
   }
 
   // File Type Distribution
-  console.log('\\n📋 File type analysis...');
+  console.log('\\n File type analysis...');
   try {
     const extOutput = execSync(
       `find "${siteDir}" -name "*.*" -type f | sed 's/.*\\.//' | sort | uniq -c | sort -nr | head -5`,
@@ -99,11 +99,11 @@ function generatePerformanceReport() {
       metrics: { fileTypes },
     });
   } catch (error) {
-    console.error('   ⚠️  File type analysis failed:', error.message);
+    console.error('   WARN  File type analysis failed:', error.message);
   }
 
   // Character Processing Performance
-  console.log('\\n👥 Testing character data processing...');
+  console.log('\\n Testing character data processing...');
   try {
     const startTime = process.hrtime.bigint();
     const charactersModule = require('../src/_data/characters.js');
@@ -125,11 +125,11 @@ function generatePerformanceReport() {
     console.log(`   Processed ${characters.length} characters in ${Math.round(processingTime)}ms`);
     console.log(`   Rate: ${Math.round(processingRate)} characters/second`);
   } catch (error) {
-    console.error('   ❌ Character processing test failed:', error.message);
+    console.error('   ERROR Character processing test failed:', error.message);
   }
 
   // Books Data Validation
-  console.log('\\n📚 Validating books data...');
+  console.log('\\n Validating books data...');
   try {
     const books = require('../src/_data/books.json');
     let totalChapters = 0;
@@ -158,11 +158,11 @@ function generatePerformanceReport() {
     console.log(`   ${books.length} books, ${totalChapters} chapters`);
     console.log(`   ${completedSummaries} summaries completed (${completionRate.toFixed(1)}%)`);
   } catch (error) {
-    console.error('   ❌ Books data validation failed:', error.message);
+    console.error('   ERROR Books data validation failed:', error.message);
   }
 
   // Performance Recommendations
-  console.log('\\n💡 Performance Recommendations:');
+  console.log('\\n Performance Recommendations:');
   const recommendations = generateRecommendations(reportData);
   recommendations.forEach(rec => console.log(`   • ${rec}`));
 
@@ -172,8 +172,8 @@ function generatePerformanceReport() {
   const reportPath = path.join(__dirname, '..', 'performance-report.json');
   fs.writeFileSync(reportPath, JSON.stringify(reportData, null, 2));
 
-  console.log(`\\n📊 Performance report saved to: ${reportPath}`);
-  console.log('\\n🎯 Overall Performance Summary:');
+  console.log(`\\n Performance report saved to: ${reportPath}`);
+  console.log('\\n Overall Performance Summary:');
 
   const overallScore = calculateOverallScore(reportData);
   console.log(`   Overall Score: ${overallScore}/100 ${getScoreEmoji(overallScore)}`);
@@ -196,20 +196,20 @@ function getSizeStatus(sizeMB) {
 }
 
 function getStatusEmoji(status) {
-  const emojis = {
-    excellent: '🚀',
-    good: '✅',
-    acceptable: '⚠️',
-    'needs-improvement': '❌',
+  const labels = {
+    excellent: 'EXCELLENT',
+    good: 'GOOD',
+    acceptable: 'ACCEPTABLE',
+    'needs-improvement': 'NEEDS IMPROVEMENT',
   };
-  return emojis[status] || '❓';
+  return labels[status] || 'UNKNOWN';
 }
 
 function getScoreEmoji(score) {
-  if (score >= 95) return '🚀';
-  if (score >= 90) return '✅';
-  if (score >= 80) return '⚠️';
-  return '❌';
+  if (score >= 95) return 'EXCELLENT';
+  if (score >= 90) return 'GOOD';
+  if (score >= 80) return 'WARN';
+  return 'ERROR';
 }
 
 function generateRecommendations(reportData) {
@@ -231,7 +231,7 @@ function generateRecommendations(reportData) {
   }
 
   if (recommendations.length === 0) {
-    recommendations.push('Excellent performance! All metrics meet targets 🎉');
+    recommendations.push('Excellent performance! All metrics meet targets.');
   }
 
   return recommendations;

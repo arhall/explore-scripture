@@ -89,7 +89,7 @@ function validateEntitySchema(entity, _filePath) {
 }
 
 async function validateAllEntityFiles() {
-  console.log('🔍 Validating Entity JSON Schema\n');
+  console.log(' Validating Entity JSON Schema\n');
 
   const entitiesDir = 'src/assets/data/entities';
   const bookEntitiesDir = 'src/assets/data/books';
@@ -101,7 +101,7 @@ async function validateAllEntityFiles() {
 
   try {
     // Validate individual entity files
-    console.log('📁 Validating individual entity files...');
+    console.log(' Validating individual entity files...');
 
     if (fs.existsSync(entitiesDir)) {
       const entityFiles = fs.readdirSync(entitiesDir).filter(file => file.endsWith('.json'));
@@ -118,20 +118,20 @@ async function validateAllEntityFiles() {
             validFiles++;
           } else {
             invalidFiles++;
-            console.log(`❌ ${file}: ${errors.length} errors`);
+            console.log(`ERROR ${file}: ${errors.length} errors`);
             errors.forEach(error => console.log(`   - ${error}`));
             allErrors.push({ file, errors });
           }
         } catch (parseError) {
           invalidFiles++;
-          console.log(`❌ ${file}: JSON parse error - ${parseError.message}`);
+          console.log(`ERROR ${file}: JSON parse error - ${parseError.message}`);
           allErrors.push({ file, errors: [`JSON parse error: ${parseError.message}`] });
         }
       }
     }
 
     // Validate book entity files
-    console.log('\n📚 Validating book entity files...');
+    console.log('\n Validating book entity files...');
 
     if (fs.existsSync(bookEntitiesDir)) {
       const bookFiles = fs
@@ -147,7 +147,7 @@ async function validateAllEntityFiles() {
 
           if (!Array.isArray(bookData)) {
             invalidFiles++;
-            console.log(`❌ ${file}: Book entity file should be an array`);
+            console.log(`ERROR ${file}: Book entity file should be an array`);
             allErrors.push({ file, errors: ['Book entity file should be an array'] });
             continue;
           }
@@ -168,34 +168,34 @@ async function validateAllEntityFiles() {
             validFiles++;
           } else {
             invalidFiles++;
-            console.log(`❌ ${file}: ${fileErrors.length} errors`);
+            console.log(`ERROR ${file}: ${fileErrors.length} errors`);
             fileErrors.forEach(error => console.log(`   - ${error}`));
             allErrors.push({ file, errors: fileErrors });
           }
         } catch (parseError) {
           invalidFiles++;
-          console.log(`❌ ${file}: JSON parse error - ${parseError.message}`);
+          console.log(`ERROR ${file}: JSON parse error - ${parseError.message}`);
           allErrors.push({ file, errors: [`JSON parse error: ${parseError.message}`] });
         }
       }
     }
   } catch (error) {
-    console.error('❌ Validation failed:', error.message);
+    console.error('ERROR Validation failed:', error.message);
     return;
   }
 
   // Summary
-  console.log('\n📊 Validation Summary:');
-  console.log(`   ✅ Valid files: ${validFiles}/${totalFiles}`);
-  console.log(`   ❌ Invalid files: ${invalidFiles}/${totalFiles}`);
+  console.log('\n Validation Summary:');
+  console.log(`   OK Valid files: ${validFiles}/${totalFiles}`);
+  console.log(`   ERROR Invalid files: ${invalidFiles}/${totalFiles}`);
   console.log(
-    `   📝 Total errors: ${allErrors.reduce((sum, item) => sum + item.errors.length, 0)}`
+    `   Total errors: ${allErrors.reduce((sum, item) => sum + item.errors.length, 0)}`
   );
 
   if (invalidFiles === 0) {
-    console.log('\n🎉 All entity files pass schema validation!');
+    console.log('\n All entity files pass schema validation!');
   } else {
-    console.log(`\n⚠️  ${invalidFiles} files need attention.`);
+    console.log(`\nWARN  ${invalidFiles} files need attention.`);
 
     // Show most common errors
     const errorCounts = {};
@@ -206,7 +206,7 @@ async function validateAllEntityFiles() {
       });
     });
 
-    console.log('\n🔍 Most common errors:');
+    console.log('\n Most common errors:');
     Object.entries(errorCounts)
       .sort((a, b) => b[1] - a[1])
       .slice(0, 5)
@@ -218,6 +218,6 @@ async function validateAllEntityFiles() {
 
 // Run validation
 validateAllEntityFiles().catch(error => {
-  console.error('❌ Validation script failed:', error);
+  console.error('ERROR Validation script failed:', error);
   process.exit(1);
 });

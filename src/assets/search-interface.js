@@ -516,6 +516,21 @@ class SearchInterface {
         background: rgba(245, 158, 11, 0.2);
         color: rgba(253, 230, 138, 1);
       }
+
+      .search-result-type.parable {
+        background: rgba(20, 184, 166, 0.2);
+        color: rgba(153, 246, 228, 1);
+      }
+
+      .search-result-type.parables {
+        background: rgba(14, 116, 144, 0.25);
+        color: rgba(125, 211, 252, 1);
+      }
+
+      .search-result-type.group {
+        background: rgba(148, 163, 184, 0.2);
+        color: rgba(226, 232, 240, 1);
+      }
       
       .search-empty {
         padding: 2rem 1rem;
@@ -880,7 +895,7 @@ class SearchInterface {
            aria-selected="${index === this.selectedIndex ? 'true' : 'false'}"
            tabindex="-1">
         <div class="search-result-title">
-          <span class="search-result-type ${this.escapeHtml(result.type)}" aria-label="${this.escapeHtml(result.type)} type">${this.escapeHtml(result.type)}</span>
+          <span class="search-result-type ${this.escapeHtml(result.type)}" aria-label="${this.escapeHtml(this.getTypeLabel(result.type))} type">${this.escapeHtml(this.getTypeLabel(result.type))}</span>
           ${this.escapeHtml(result.text)}
         </div>
         ${result.subtitle ? `<div class="search-result-subtitle">${this.escapeHtml(result.subtitle)}</div>` : ''}
@@ -976,6 +991,17 @@ class SearchInterface {
     if (this.clearButton) {
       this.clearButton.style.display = 'none';
     }
+  }
+
+  getTypeLabel(type) {
+    const labels = {
+      'people-group': 'people group',
+      parables: 'parables',
+      parable: 'parable',
+      group: 'people group',
+    };
+
+    return labels[type] || type;
   }
 
   escapeHtml(text) {
@@ -1103,7 +1129,7 @@ class SearchInterface {
 
     const position = this.selectedIndex + 1;
     const total = Array.isArray(this.results) ? this.results.length : 0;
-    const type = this.escapeHtml(result.type || '');
+    const type = this.escapeHtml(this.getTypeLabel(result.type || ''));
     const text = this.escapeHtml(result.text || '');
     const subtitle = result.subtitle ? ', ' + this.escapeHtml(result.subtitle) : '';
     const message = `${position} of ${total}: ${type} ${text}${subtitle}`;

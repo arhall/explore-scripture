@@ -24,7 +24,7 @@ class EdgeOptimizer {
   }
 
   async initialize() {
-    console.log('⚡ Initializing Advanced Edge Computing Optimizer...');
+    console.log(' Initializing Advanced Edge Computing Optimizer...');
 
     // Create edge computing directories
     [this.edgeDir, this.workersDir, this.configDir, this.analyticsDir].forEach(dir => {
@@ -36,7 +36,7 @@ class EdgeOptimizer {
 
   // Generate intelligent Cloudflare Worker with advanced features
   generateIntelligentWorker() {
-    console.log('🧠 Generating intelligent Cloudflare Worker...');
+    console.log(' Generating intelligent Cloudflare Worker...');
 
     const workerScript = `// Advanced Intelligent Cloudflare Worker for Bible Explorer
 // Implements predictive caching, personalization, and real-time optimization
@@ -673,7 +673,7 @@ function generatePathSuggestions(pathname) {
 
   // Generate edge configuration for different environments
   generateEdgeConfigurations() {
-    console.log('⚙️ Generating edge configurations...');
+    console.log(' Generating edge configurations...');
 
     const configurations = {
       // Production configuration
@@ -781,7 +781,7 @@ function generatePathSuggestions(pathname) {
 
   // Generate Cloudflare Workers KV bindings configuration
   generateKVConfiguration() {
-    console.log('🗄️ Generating KV storage configuration...');
+    console.log(' Generating KV storage configuration...');
 
     return {
       bindings: {
@@ -857,7 +857,7 @@ function generatePathSuggestions(pathname) {
 
   // Generate edge analytics configuration
   generateEdgeAnalytics() {
-    console.log('📊 Generating edge analytics configuration...');
+    console.log(' Generating edge analytics configuration...');
 
     return {
       version: '1.0.0',
@@ -938,7 +938,7 @@ function generatePathSuggestions(pathname) {
 
   // Generate edge security configuration
   generateSecurityConfiguration() {
-    console.log('🔒 Generating edge security configuration...');
+    console.log(' Generating edge security configuration...');
 
     return {
       rateLimiting: {
@@ -1022,7 +1022,7 @@ function generatePathSuggestions(pathname) {
   // Main execution method
   async optimize() {
     const startTime = Date.now();
-    console.log('🚀 Starting advanced edge computing optimization...');
+    console.log(' Starting advanced edge computing optimization...');
 
     await this.initialize();
 
@@ -1061,8 +1061,8 @@ function generatePathSuggestions(pathname) {
       JSON.stringify(report, null, 2)
     );
 
-    console.log(`✅ Advanced edge computing optimization complete in ${Date.now() - startTime}ms`);
-    console.log(`📊 Report saved: ${path.join(this.edgeDir, 'edge-optimization-report.json')}`);
+    console.log(`OK Advanced edge computing optimization complete in ${Date.now() - startTime}ms`);
+    console.log(` Report saved: ${path.join(this.edgeDir, 'edge-optimization-report.json')}`);
 
     return report;
   }
@@ -1194,7 +1194,7 @@ if (require.main === module) {
   optimizer
     .optimize()
     .then(report => {
-      console.log('\n📈 Edge Computing Summary:');
+      console.log('\n Edge Computing Summary:');
       console.log(`   Processing Time: ${report.processingTime}ms`);
       console.log(`   Components Generated: ${Object.keys(report.components).length}`);
       console.log(
@@ -1208,7 +1208,7 @@ if (require.main === module) {
       );
     })
     .catch(error => {
-      console.error('❌ Edge computing optimization failed:', error);
+      console.error('ERROR Edge computing optimization failed:', error);
       process.exit(1);
     });
 }

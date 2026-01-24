@@ -17,7 +17,7 @@ class SafeWranglerDev {
   }
 
   async createSafeBuildScript() {
-    console.log('🔧 Creating safe build configuration...');
+    console.log(' Creating safe build configuration...');
 
     // Ensure temp directory exists
     if (!fs.existsSync(this.tempDir)) {
@@ -57,7 +57,7 @@ async function runCommand(command, args = []) {
 
 async function safeBuild() {
     try {
-        console.log('🚀 Running safe build for wrangler...');
+        console.log(' Running safe build for wrangler...');
         
         // Skip entity processing if files exist
         if (!require('fs').existsSync('./src/assets/data/books.json')) {
@@ -72,10 +72,10 @@ async function safeBuild() {
         // Quick Eleventy build
         await runCommand('npx', ['eleventy', '--config=.eleventy.js', '--quiet']);
         
-        console.log('✅ Safe build complete');
+        console.log('OK Safe build complete');
         
     } catch (error) {
-        console.error('❌ Safe build failed:', error.message);
+        console.error('ERROR Safe build failed:', error.message);
         process.exit(1);
     }
 }
@@ -86,11 +86,11 @@ if (require.main === module) {
 `;
 
     fs.writeFileSync(path.join(this.tempDir, 'safe-build.js'), safeBuildScript);
-    console.log('✅ Safe build script created');
+    console.log('OK Safe build script created');
   }
 
   async updateWranglerConfig() {
-    console.log('🔧 Creating safe wrangler configuration...');
+    console.log(' Creating safe wrangler configuration...');
 
     // Create a temporary wrangler.toml that uses the safe build
     const safeWranglerConfig = `name = "explore-scripture"
@@ -147,11 +147,11 @@ dataset = "explore_scripture_analytics"
 `;
 
     fs.writeFileSync('./wrangler.safe.toml', safeWranglerConfig);
-    console.log('✅ Safe wrangler config created');
+    console.log('OK Safe wrangler config created');
   }
 
   async runSafeBuild() {
-    console.log('🏗️  Running initial safe build...');
+    console.log('  Running initial safe build...');
 
     return new Promise((resolve, reject) => {
       const buildProcess = spawn('npm', ['run', 'build:workers-temp'], {
@@ -166,7 +166,7 @@ dataset = "explore_scripture_analytics"
       buildProcess.on('exit', code => {
         clearTimeout(timeout);
         if (code === 0) {
-          console.log('✅ Initial build completed');
+          console.log('OK Initial build completed');
           resolve(code);
         } else {
           reject(new Error(`Build failed with code ${code}`));
@@ -181,7 +181,7 @@ dataset = "explore_scripture_analytics"
   }
 
   async startSafeWrangler() {
-    console.log('🚀 Starting wrangler with safe configuration...');
+    console.log(' Starting wrangler with safe configuration...');
 
     const wranglerProcess = spawn(
       'npx',
@@ -193,38 +193,38 @@ dataset = "explore_scripture_analytics"
 
     // Handle graceful shutdown
     process.on('SIGINT', () => {
-      console.log('\n🛑 Shutting down wrangler...');
+      console.log('\n Shutting down wrangler...');
       wranglerProcess.kill('SIGINT');
       process.exit(0);
     });
 
     process.on('SIGTERM', () => {
-      console.log('\n🛑 Terminating wrangler...');
+      console.log('\n Terminating wrangler...');
       wranglerProcess.kill('SIGTERM');
       process.exit(0);
     });
 
     wranglerProcess.on('exit', code => {
-      console.log(`✅ Wrangler exited with code ${code}`);
+      console.log(`OK Wrangler exited with code ${code}`);
       process.exit(code);
     });
 
     wranglerProcess.on('error', error => {
-      console.error('❌ Wrangler error:', error);
+      console.error('ERROR Wrangler error:', error);
       process.exit(1);
     });
   }
 
   async run() {
     try {
-      console.log('🛡️  Starting Safe Wrangler Dev...');
+      console.log('  Starting Safe Wrangler Dev...');
 
       await this.createSafeBuildScript();
       await this.updateWranglerConfig();
       await this.runSafeBuild();
       await this.startSafeWrangler();
     } catch (error) {
-      console.error('❌ Safe Wrangler Dev failed:', error.message);
+      console.error('ERROR Safe Wrangler Dev failed:', error.message);
       process.exit(1);
     }
   }
