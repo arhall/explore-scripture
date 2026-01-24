@@ -1,0 +1,358 @@
+{
+  "version": "1.0",
+  "era": "acts",
+  "journeys": [
+    {
+      "id": "jn_pauls_first",
+      "name": "Paul's First Journey",
+      "era": "acts",
+      "summary": "Acts 13-14",
+      "stops": [
+        { "place_id": "antioch_syria", "order": 0, "scripture_refs": ["Acts 13:1-3"] },
+        { "place_id": "seleucia", "order": 1, "scripture_refs": ["Acts 13:4"] },
+        { "place_id": "salamis", "order": 2, "scripture_refs": ["Acts 13:5"] },
+        { "place_id": "paphos", "order": 3, "scripture_refs": ["Acts 13:6-12"] },
+        { "place_id": "perga", "order": 4, "scripture_refs": ["Acts 13:13"] },
+        { "place_id": "antioch_pisidia", "order": 5, "scripture_refs": ["Acts 13:14-52"] },
+        { "place_id": "iconium", "order": 6, "scripture_refs": ["Acts 14:1-7"] },
+        { "place_id": "lystra", "order": 7, "scripture_refs": ["Acts 14:8-20"] },
+        { "place_id": "derbe", "order": 8, "scripture_refs": ["Acts 14:20-21"] },
+        { "place_id": "lystra", "order": 9, "scripture_refs": ["Acts 14:21-22"] },
+        { "place_id": "iconium", "order": 10, "scripture_refs": ["Acts 14:21-22"] },
+        { "place_id": "antioch_pisidia", "order": 11, "scripture_refs": ["Acts 14:21-22"] },
+        { "place_id": "perga", "order": 12, "scripture_refs": ["Acts 14:24-25"] },
+        { "place_id": "attalia", "order": 13, "scripture_refs": ["Acts 14:25"] },
+        { "place_id": "antioch_syria", "order": 14, "scripture_refs": ["Acts 14:26-28"] }
+      ],
+      "segments": [
+        {
+          "from_place_id": "antioch_syria",
+          "to_place_id": "seleucia",
+          "confidence": { "level": "high" },
+          "scripture_refs": ["Acts 13:4"]
+        },
+        {
+          "from_place_id": "seleucia",
+          "to_place_id": "salamis",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 13:4-5"]
+        },
+        {
+          "from_place_id": "salamis",
+          "to_place_id": "paphos",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 13:6"]
+        },
+        {
+          "from_place_id": "paphos",
+          "to_place_id": "perga",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 13:13"]
+        },
+        {
+          "from_place_id": "perga",
+          "to_place_id": "antioch_pisidia",
+          "confidence": { "level": "high" },
+          "scripture_refs": ["Acts 13:14"]
+        },
+        {
+          "from_place_id": "antioch_pisidia",
+          "to_place_id": "iconium",
+          "confidence": { "level": "high" },
+          "scripture_refs": ["Acts 14:1"]
+        },
+        {
+          "from_place_id": "iconium",
+          "to_place_id": "lystra",
+          "confidence": { "level": "low" },
+          "scripture_refs": ["Acts 14:6"]
+        },
+        {
+          "from_place_id": "lystra",
+          "to_place_id": "derbe",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 14:20"]
+        },
+        {
+          "from_place_id": "derbe",
+          "to_place_id": "lystra",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 14:21"]
+        },
+        {
+          "from_place_id": "lystra",
+          "to_place_id": "iconium",
+          "confidence": { "level": "high" },
+          "scripture_refs": ["Acts 14:21"]
+        },
+        {
+          "from_place_id": "iconium",
+          "to_place_id": "antioch_pisidia",
+          "confidence": { "level": "high" },
+          "scripture_refs": ["Acts 14:21"]
+        },
+        {
+          "from_place_id": "antioch_pisidia",
+          "to_place_id": "perga",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 14:24"]
+        },
+        {
+          "from_place_id": "perga",
+          "to_place_id": "attalia",
+          "confidence": { "level": "high" },
+          "scripture_refs": ["Acts 14:25"]
+        },
+        {
+          "from_place_id": "attalia",
+          "to_place_id": "antioch_syria",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 14:26"]
+        }
+      ]
+    },
+    {
+      "id": "jn_pauls_second",
+      "name": "Paul's Second Journey",
+      "era": "acts",
+      "summary": "Acts 15:36-18:22",
+      "stops": [
+        { "place_id": "antioch_syria", "order": 0, "scripture_refs": ["Acts 15:36-41"] },
+        { "place_id": "tarsus", "order": 1, "scripture_refs": ["Acts 15:41"] },
+        { "place_id": "derbe", "order": 2, "scripture_refs": ["Acts 16:1"] },
+        { "place_id": "lystra", "order": 3, "scripture_refs": ["Acts 16:1-3"] },
+        { "place_id": "troas", "order": 4, "scripture_refs": ["Acts 16:8-10"] },
+        { "place_id": "philippi", "order": 5, "scripture_refs": ["Acts 16:12-40"] },
+        { "place_id": "thessalonica", "order": 6, "scripture_refs": ["Acts 17:1-9"] },
+        { "place_id": "berea", "order": 7, "scripture_refs": ["Acts 17:10-15"] },
+        { "place_id": "athens", "order": 8, "scripture_refs": ["Acts 17:16-34"] },
+        { "place_id": "corinth", "order": 9, "scripture_refs": ["Acts 18:1-17"] },
+        { "place_id": "ephesus", "order": 10, "scripture_refs": ["Acts 18:19-21"] },
+        { "place_id": "caesarea", "order": 11, "scripture_refs": ["Acts 18:22"] },
+        { "place_id": "jerusalem", "order": 12, "scripture_refs": ["Acts 18:22"] },
+        { "place_id": "antioch_syria", "order": 13, "scripture_refs": ["Acts 18:22"] }
+      ],
+      "segments": [
+        {
+          "from_place_id": "antioch_syria",
+          "to_place_id": "tarsus",
+          "confidence": { "level": "high" },
+          "scripture_refs": ["Acts 15:41"]
+        },
+        {
+          "from_place_id": "tarsus",
+          "to_place_id": "derbe",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 16:1"]
+        },
+        {
+          "from_place_id": "derbe",
+          "to_place_id": "lystra",
+          "confidence": { "level": "high" },
+          "scripture_refs": ["Acts 16:1"]
+        },
+        {
+          "from_place_id": "lystra",
+          "to_place_id": "troas",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 16:6-8"]
+        },
+        {
+          "from_place_id": "troas",
+          "to_place_id": "philippi",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 16:11-12"]
+        },
+        {
+          "from_place_id": "philippi",
+          "to_place_id": "thessalonica",
+          "confidence": { "level": "high" },
+          "scripture_refs": ["Acts 17:1"]
+        },
+        {
+          "from_place_id": "thessalonica",
+          "to_place_id": "berea",
+          "confidence": { "level": "high" },
+          "scripture_refs": ["Acts 17:10"]
+        },
+        {
+          "from_place_id": "berea",
+          "to_place_id": "athens",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 17:14-16"]
+        },
+        {
+          "from_place_id": "athens",
+          "to_place_id": "corinth",
+          "confidence": { "level": "high" },
+          "scripture_refs": ["Acts 18:1"]
+        },
+        {
+          "from_place_id": "corinth",
+          "to_place_id": "ephesus",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 18:18-19"]
+        },
+        {
+          "from_place_id": "ephesus",
+          "to_place_id": "caesarea",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 18:21-22"]
+        },
+        {
+          "from_place_id": "caesarea",
+          "to_place_id": "jerusalem",
+          "confidence": { "level": "high" },
+          "scripture_refs": ["Acts 18:22"]
+        },
+        {
+          "from_place_id": "jerusalem",
+          "to_place_id": "antioch_syria",
+          "confidence": { "level": "high" },
+          "scripture_refs": ["Acts 18:22"]
+        }
+      ]
+    },
+    {
+      "id": "jn_pauls_third",
+      "name": "Paul's Third Journey",
+      "era": "acts",
+      "summary": "Acts 18:23-21:17",
+      "stops": [
+        { "place_id": "antioch_syria", "order": 0, "scripture_refs": ["Acts 18:23"] },
+        { "place_id": "ephesus", "order": 1, "scripture_refs": ["Acts 19:1-41"] },
+        { "place_id": "troas", "order": 2, "scripture_refs": ["Acts 20:5-6"] },
+        { "place_id": "philippi", "order": 3, "scripture_refs": ["Acts 20:6"] },
+        { "place_id": "corinth", "order": 4, "scripture_refs": ["Acts 20:2-3"] },
+        { "place_id": "troas", "order": 5, "scripture_refs": ["Acts 20:6-12"] },
+        { "place_id": "miletus", "order": 6, "scripture_refs": ["Acts 20:15-38"] },
+        { "place_id": "tyre", "order": 7, "scripture_refs": ["Acts 21:3-6"] },
+        { "place_id": "caesarea", "order": 8, "scripture_refs": ["Acts 21:8-16"] },
+        { "place_id": "jerusalem", "order": 9, "scripture_refs": ["Acts 21:17"] }
+      ],
+      "segments": [
+        {
+          "from_place_id": "antioch_syria",
+          "to_place_id": "ephesus",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 18:23", "Acts 19:1"]
+        },
+        {
+          "from_place_id": "ephesus",
+          "to_place_id": "troas",
+          "confidence": { "level": "high" },
+          "scripture_refs": ["Acts 20:1"]
+        },
+        {
+          "from_place_id": "troas",
+          "to_place_id": "philippi",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 20:6"]
+        },
+        {
+          "from_place_id": "philippi",
+          "to_place_id": "corinth",
+          "confidence": { "level": "high" },
+          "scripture_refs": ["Acts 20:2"]
+        },
+        {
+          "from_place_id": "corinth",
+          "to_place_id": "troas",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 20:3"]
+        },
+        {
+          "from_place_id": "troas",
+          "to_place_id": "miletus",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 20:15"]
+        },
+        {
+          "from_place_id": "miletus",
+          "to_place_id": "tyre",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 21:3"]
+        },
+        {
+          "from_place_id": "tyre",
+          "to_place_id": "caesarea",
+          "confidence": { "level": "high" },
+          "scripture_refs": ["Acts 21:8"]
+        },
+        {
+          "from_place_id": "caesarea",
+          "to_place_id": "jerusalem",
+          "confidence": { "level": "high" },
+          "scripture_refs": ["Acts 21:15-17"]
+        }
+      ]
+    },
+    {
+      "id": "jn_to_rome",
+      "name": "Voyage to Rome",
+      "era": "acts",
+      "summary": "Acts 27-28",
+      "stops": [
+        { "place_id": "caesarea", "order": 0, "scripture_refs": ["Acts 27:1"] },
+        { "place_id": "sidon", "order": 1, "scripture_refs": ["Acts 27:3"] },
+        { "place_id": "myra", "order": 2, "scripture_refs": ["Acts 27:5-6"] },
+        { "place_id": "fair_havens", "order": 3, "scripture_refs": ["Acts 27:8"] },
+        { "place_id": "malta", "order": 4, "scripture_refs": ["Acts 28:1-10"] },
+        { "place_id": "syracuse", "order": 5, "scripture_refs": ["Acts 28:12"] },
+        { "place_id": "rhegium", "order": 6, "scripture_refs": ["Acts 28:13"] },
+        { "place_id": "puteoli", "order": 7, "scripture_refs": ["Acts 28:13-14"] },
+        { "place_id": "rome", "order": 8, "scripture_refs": ["Acts 28:14-31"] }
+      ],
+      "segments": [
+        {
+          "from_place_id": "caesarea",
+          "to_place_id": "sidon",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 27:1-3"]
+        },
+        {
+          "from_place_id": "sidon",
+          "to_place_id": "myra",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 27:4-6"]
+        },
+        {
+          "from_place_id": "myra",
+          "to_place_id": "fair_havens",
+          "confidence": { "level": "low" },
+          "scripture_refs": ["Acts 27:7-8"]
+        },
+        {
+          "from_place_id": "fair_havens",
+          "to_place_id": "malta",
+          "confidence": { "level": "low" },
+          "scripture_refs": ["Acts 27:27-28:1"]
+        },
+        {
+          "from_place_id": "malta",
+          "to_place_id": "syracuse",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 28:11-12"]
+        },
+        {
+          "from_place_id": "syracuse",
+          "to_place_id": "rhegium",
+          "confidence": { "level": "medium" },
+          "scripture_refs": ["Acts 28:13"]
+        },
+        {
+          "from_place_id": "rhegium",
+          "to_place_id": "puteoli",
+          "confidence": { "level": "high" },
+          "scripture_refs": ["Acts 28:13-14"]
+        },
+        {
+          "from_place_id": "puteoli",
+          "to_place_id": "rome",
+          "confidence": { "level": "high" },
+          "scripture_refs": ["Acts 28:14-15"]
+        }
+      ]
+    }
+  ]
+}

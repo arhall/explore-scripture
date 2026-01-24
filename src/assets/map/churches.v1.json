@@ -1,0 +1,137 @@
+{
+  "version": "1.0",
+  "churches": [
+    {
+      "id": "ch_antioch",
+      "place_id": "antioch_syria",
+      "name": "Church in Antioch",
+      "summary": "A Spirit-led sending church that commissions Barnabas and Paul for mission.",
+      "key_passages": [
+        {
+          "ref": "Acts 11:19-26",
+          "link": "https://www.biblegateway.com/passage/?search=Acts+11:19-26"
+        },
+        {
+          "ref": "Acts 13:1-3",
+          "link": "https://www.biblegateway.com/passage/?search=Acts+13:1-3"
+        }
+      ],
+      "related_letters": ["Galatians"]
+    },
+    {
+      "id": "ch_jerusalem",
+      "place_id": "jerusalem",
+      "name": "Church in Jerusalem",
+      "summary": "The earliest church, anchored around the apostles and the Jerusalem council.",
+      "key_passages": [
+        {
+          "ref": "Acts 2:42-47",
+          "link": "https://www.biblegateway.com/passage/?search=Acts+2:42-47"
+        },
+        {
+          "ref": "Acts 15:1-21",
+          "link": "https://www.biblegateway.com/passage/?search=Acts+15:1-21"
+        }
+      ],
+      "related_letters": ["James"]
+    },
+    {
+      "id": "ch_ephesus",
+      "place_id": "ephesus",
+      "name": "Church in Ephesus",
+      "summary": "A strategic hub in Asia with extended teaching and discipleship.",
+      "key_passages": [
+        {
+          "ref": "Acts 19:1-10",
+          "link": "https://www.biblegateway.com/passage/?search=Acts+19:1-10"
+        },
+        {
+          "ref": "Revelation 2:1-7",
+          "link": "https://www.biblegateway.com/passage/?search=Revelation+2:1-7"
+        }
+      ],
+      "related_letters": ["Ephesians"]
+    },
+    {
+      "id": "ch_corinth",
+      "place_id": "corinth",
+      "name": "Church in Corinth",
+      "summary": "A diverse church shaped by Paul's long ministry and later correspondence.",
+      "key_passages": [
+        {
+          "ref": "Acts 18:1-11",
+          "link": "https://www.biblegateway.com/passage/?search=Acts+18:1-11"
+        },
+        {
+          "ref": "1 Corinthians 1:10-17",
+          "link": "https://www.biblegateway.com/passage/?search=1+Corinthians+1:10-17"
+        }
+      ],
+      "related_letters": ["1 Corinthians", "2 Corinthians"]
+    },
+    {
+      "id": "ch_philippi",
+      "place_id": "philippi",
+      "name": "Church in Philippi",
+      "summary": "A generous church born from Lydia's conversion and the jailer's baptism.",
+      "key_passages": [
+        {
+          "ref": "Acts 16:13-34",
+          "link": "https://www.biblegateway.com/passage/?search=Acts+16:13-34"
+        },
+        {
+          "ref": "Philippians 1:3-6",
+          "link": "https://www.biblegateway.com/passage/?search=Philippians+1:3-6"
+        }
+      ],
+      "related_letters": ["Philippians"]
+    },
+    {
+      "id": "ch_thessalonica",
+      "place_id": "thessalonica",
+      "name": "Church in Thessalonica",
+      "summary": "A young church encouraged to persevere amid persecution.",
+      "key_passages": [
+        {
+          "ref": "Acts 17:1-9",
+          "link": "https://www.biblegateway.com/passage/?search=Acts+17:1-9"
+        },
+        {
+          "ref": "1 Thessalonians 1:2-7",
+          "link": "https://www.biblegateway.com/passage/?search=1+Thessalonians+1:2-7"
+        }
+      ],
+      "related_letters": ["1 Thessalonians", "2 Thessalonians"]
+    },
+    {
+      "id": "ch_rome",
+      "place_id": "rome",
+      "name": "Church in Rome",
+      "summary": "A mature church addressed by Paul before his arrival.",
+      "key_passages": [
+        {
+          "ref": "Romans 1:7-15",
+          "link": "https://www.biblegateway.com/passage/?search=Romans+1:7-15"
+        },
+        {
+          "ref": "Acts 28:16-31",
+          "link": "https://www.biblegateway.com/passage/?search=Acts+28:16-31"
+        }
+      ],
+      "related_letters": ["Romans"]
+    },
+    {
+      "id": "ch_smyrna",
+      "place_id": "smyrna",
+      "name": "Church in Smyrna",
+      "summary": "One of the seven churches of Asia, commended for faithfulness.",
+      "key_passages": [
+        {
+          "ref": "Revelation 2:8-11",
+          "link": "https://www.biblegateway.com/passage/?search=Revelation+2:8-11"
+        }
+      ],
+      "related_letters": []
+    }
+  ]
+}

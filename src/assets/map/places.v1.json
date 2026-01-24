@@ -1,0 +1,296 @@
+{
+  "version": "1.0",
+  "chip_taxonomy": "roman_province",
+  "places": [
+    {
+      "id": "antioch_syria",
+      "names": {
+        "primary": "Antioch (Syria)",
+        "also_known_as": ["Antioch on the Orontes"],
+        "modern_label": "Antakya"
+      },
+      "coords": [36.202, 36.16],
+      "chip": { "type": "province", "value": "Syria" },
+      "confidence": { "level": "high", "notes": "Well-attested urban center" },
+      "scripture_refs": ["Acts 11:19-26", "Acts 13:1-3"],
+      "summary": "Primary sending church for Paul's journeys."
+    },
+    {
+      "id": "seleucia",
+      "names": { "primary": "Seleucia" },
+      "coords": [36.1, 36.07],
+      "chip": { "type": "province", "value": "Syria" },
+      "confidence": { "level": "high", "notes": "Harbor for Antioch" },
+      "scripture_refs": ["Acts 13:4"],
+      "summary": "Port city for departure to Cyprus."
+    },
+    {
+      "id": "salamis",
+      "names": { "primary": "Salamis (Cyprus)" },
+      "coords": [33.9, 35.17],
+      "chip": { "type": "province", "value": "Cyprus" },
+      "confidence": { "level": "high", "notes": "Ancient city on Cyprus" },
+      "scripture_refs": ["Acts 13:5"],
+      "summary": "First stop on Cyprus."
+    },
+    {
+      "id": "paphos",
+      "names": { "primary": "Paphos" },
+      "coords": [32.42, 34.77],
+      "chip": { "type": "province", "value": "Cyprus" },
+      "confidence": { "level": "high", "notes": "Roman provincial capital" },
+      "scripture_refs": ["Acts 13:6-12"],
+      "summary": "Site of Sergius Paulus encounter."
+    },
+    {
+      "id": "perga",
+      "names": { "primary": "Perga" },
+      "coords": [30.85, 36.96],
+      "chip": { "type": "province", "value": "Pamphylia" },
+      "confidence": { "level": "high", "notes": "Well-known Pamphylian city" },
+      "scripture_refs": ["Acts 13:13-14"],
+      "summary": "Gateway into inland Asia Minor."
+    },
+    {
+      "id": "antioch_pisidia",
+      "names": {
+        "primary": "Antioch (Pisidia)",
+        "also_known_as": ["Pisidian Antioch"]
+      },
+      "coords": [31.18, 38.29],
+      "chip": { "type": "province", "value": "Galatia" },
+      "confidence": { "level": "high", "notes": "Roman colony in Galatia" },
+      "scripture_refs": ["Acts 13:14-52"],
+      "summary": "Major synagogue sermon in Acts 13."
+    },
+    {
+      "id": "iconium",
+      "names": { "primary": "Iconium" },
+      "coords": [32.49, 37.87],
+      "chip": { "type": "province", "value": "Galatia" },
+      "confidence": { "level": "high", "notes": "Ancient city in Lycaonia" },
+      "scripture_refs": ["Acts 14:1-7"],
+      "summary": "Long stay with signs and opposition."
+    },
+    {
+      "id": "lystra",
+      "names": { "primary": "Lystra" },
+      "coords": [32.5, 37.58],
+      "chip": { "type": "province", "value": "Galatia" },
+      "confidence": { "level": "low", "notes": "Location approximate" },
+      "scripture_refs": ["Acts 14:8-20"],
+      "summary": "Healing of the crippled man and persecution."
+    },
+    {
+      "id": "derbe",
+      "names": { "primary": "Derbe" },
+      "coords": [33.5, 37.35],
+      "chip": { "type": "province", "value": "Galatia" },
+      "confidence": { "level": "medium", "notes": "Regional location approximate" },
+      "scripture_refs": ["Acts 14:20-21"],
+      "summary": "Easternmost stop on Journey 1."
+    },
+    {
+      "id": "attalia",
+      "names": { "primary": "Attalia" },
+      "coords": [30.71, 36.89],
+      "chip": { "type": "province", "value": "Pamphylia" },
+      "confidence": { "level": "high", "notes": "Pamphylian port" },
+      "scripture_refs": ["Acts 14:25"],
+      "summary": "Port for return to Antioch."
+    },
+    {
+      "id": "tarsus",
+      "names": { "primary": "Tarsus" },
+      "coords": [34.89, 36.92],
+      "chip": { "type": "province", "value": "Cilicia" },
+      "confidence": { "level": "high", "notes": "Paul's home city" },
+      "scripture_refs": ["Acts 15:41"],
+      "summary": "Passage through Cilicia."
+    },
+    {
+      "id": "troas",
+      "names": { "primary": "Troas" },
+      "coords": [26.18, 39.82],
+      "chip": { "type": "province", "value": "Asia" },
+      "confidence": { "level": "high", "notes": "Port city near Aegean" },
+      "scripture_refs": ["Acts 16:8-10", "Acts 20:5-12"],
+      "summary": "Macedonian call received here."
+    },
+    {
+      "id": "philippi",
+      "names": { "primary": "Philippi" },
+      "coords": [24.29, 41.01],
+      "chip": { "type": "province", "value": "Macedonia" },
+      "confidence": { "level": "high", "notes": "Roman colony" },
+      "scripture_refs": ["Acts 16:12-40"],
+      "summary": "Lydia and the jailer believe."
+    },
+    {
+      "id": "thessalonica",
+      "names": { "primary": "Thessalonica" },
+      "coords": [22.94, 40.64],
+      "chip": { "type": "province", "value": "Macedonia" },
+      "confidence": { "level": "high", "notes": "Major port city" },
+      "scripture_refs": ["Acts 17:1-9"],
+      "summary": "Sabbath preaching and opposition."
+    },
+    {
+      "id": "berea",
+      "names": { "primary": "Berea" },
+      "coords": [22.2, 40.52],
+      "chip": { "type": "province", "value": "Macedonia" },
+      "confidence": { "level": "high", "notes": "Known for noble response" },
+      "scripture_refs": ["Acts 17:10-15"],
+      "summary": "Bereans examine the Scriptures daily."
+    },
+    {
+      "id": "athens",
+      "names": { "primary": "Athens" },
+      "coords": [23.73, 37.98],
+      "chip": { "type": "province", "value": "Achaia" },
+      "confidence": { "level": "high", "notes": "Well-known city" },
+      "scripture_refs": ["Acts 17:16-34"],
+      "summary": "Areopagus discourse."
+    },
+    {
+      "id": "corinth",
+      "names": { "primary": "Corinth" },
+      "coords": [22.93, 37.94],
+      "chip": { "type": "province", "value": "Achaia" },
+      "confidence": { "level": "high", "notes": "Commercial hub" },
+      "scripture_refs": ["Acts 18:1-17"],
+      "summary": "Extended stay and church planted."
+    },
+    {
+      "id": "ephesus",
+      "names": {
+        "primary": "Ephesus",
+        "also_known_as": ["Efes", "Selcuk"],
+        "modern_label": "Selcuk"
+      },
+      "coords": [27.34, 37.95],
+      "chip": { "type": "province", "value": "Asia" },
+      "confidence": { "level": "high", "notes": "Major provincial capital" },
+      "scripture_refs": ["Acts 18:19-21", "Acts 19:1-41"],
+      "summary": "Extended ministry and riot over Artemis."
+    },
+    {
+      "id": "miletus",
+      "names": { "primary": "Miletus" },
+      "coords": [27.28, 37.53],
+      "chip": { "type": "province", "value": "Asia" },
+      "confidence": { "level": "medium", "notes": "Coastal location approximate" },
+      "scripture_refs": ["Acts 20:15-38"],
+      "summary": "Farewell to Ephesian elders."
+    },
+    {
+      "id": "tyre",
+      "names": { "primary": "Tyre" },
+      "coords": [35.19, 33.27],
+      "chip": { "type": "province", "value": "Syria" },
+      "confidence": { "level": "high", "notes": "Phoenician port" },
+      "scripture_refs": ["Acts 21:3-6"],
+      "summary": "Disciples warn Paul before Jerusalem."
+    },
+    {
+      "id": "caesarea",
+      "names": { "primary": "Caesarea" },
+      "coords": [34.89, 32.5],
+      "chip": { "type": "province", "value": "Judea" },
+      "confidence": { "level": "high", "notes": "Roman administrative center" },
+      "scripture_refs": ["Acts 21:8-16", "Acts 23:23-35"],
+      "summary": "Paul stays with Philip and later imprisoned."
+    },
+    {
+      "id": "jerusalem",
+      "names": { "primary": "Jerusalem" },
+      "coords": [35.22, 31.78],
+      "chip": { "type": "province", "value": "Judea" },
+      "confidence": { "level": "high", "notes": "Central city" },
+      "scripture_refs": ["Acts 15:1-21", "Acts 21:17-36"],
+      "summary": "Council and Paul's arrest."
+    },
+    {
+      "id": "sidon",
+      "names": { "primary": "Sidon" },
+      "coords": [35.37, 33.56],
+      "chip": { "type": "province", "value": "Syria" },
+      "confidence": { "level": "high", "notes": "Phoenician harbor" },
+      "scripture_refs": ["Acts 27:3"],
+      "summary": "First stop on voyage to Rome."
+    },
+    {
+      "id": "myra",
+      "names": { "primary": "Myra" },
+      "coords": [29.9, 36.26],
+      "chip": { "type": "province", "value": "Lycia" },
+      "confidence": { "level": "medium", "notes": "Port location approximate" },
+      "scripture_refs": ["Acts 27:5-6"],
+      "summary": "Transfer to Alexandrian ship."
+    },
+    {
+      "id": "fair_havens",
+      "names": { "primary": "Fair Havens (Crete)" },
+      "coords": [25.13, 35.0],
+      "chip": { "type": "province", "value": "Crete" },
+      "confidence": { "level": "low", "notes": "Harbor location approximate" },
+      "scripture_refs": ["Acts 27:8"],
+      "summary": "Debate about wintering here."
+    },
+    {
+      "id": "malta",
+      "names": { "primary": "Malta" },
+      "coords": [14.51, 35.9],
+      "chip": { "type": "province", "value": "Sicily" },
+      "confidence": { "level": "medium", "notes": "Island identification in Acts" },
+      "scripture_refs": ["Acts 28:1-10"],
+      "summary": "Shipwreck and ministry on Malta."
+    },
+    {
+      "id": "syracuse",
+      "names": { "primary": "Syracuse" },
+      "coords": [15.29, 37.07],
+      "chip": { "type": "province", "value": "Sicily" },
+      "confidence": { "level": "high", "notes": "Major Sicilian port" },
+      "scripture_refs": ["Acts 28:12"],
+      "summary": "Harbor stop on voyage to Rome."
+    },
+    {
+      "id": "rhegium",
+      "names": { "primary": "Rhegium" },
+      "coords": [15.65, 38.11],
+      "chip": { "type": "province", "value": "Italia" },
+      "confidence": { "level": "high", "notes": "Strait of Messina port" },
+      "scripture_refs": ["Acts 28:13"],
+      "summary": "Italian coastal stop."
+    },
+    {
+      "id": "puteoli",
+      "names": { "primary": "Puteoli" },
+      "coords": [14.12, 40.83],
+      "chip": { "type": "province", "value": "Italia" },
+      "confidence": { "level": "high", "notes": "Port near Naples" },
+      "scripture_refs": ["Acts 28:13-14"],
+      "summary": "Disembarkation point before Rome."
+    },
+    {
+      "id": "rome",
+      "names": { "primary": "Rome" },
+      "coords": [12.5, 41.9],
+      "chip": { "type": "province", "value": "Italia" },
+      "confidence": { "level": "high", "notes": "Imperial capital" },
+      "scripture_refs": ["Acts 28:14-31"],
+      "summary": "Paul's final destination in Acts."
+    },
+    {
+      "id": "smyrna",
+      "names": { "primary": "Smyrna" },
+      "coords": [27.14, 38.42],
+      "chip": { "type": "province", "value": "Asia" },
+      "confidence": { "level": "high", "notes": "Port city in Asia" },
+      "scripture_refs": ["Revelation 2:8-11"],
+      "summary": "One of the seven churches of Asia."
+    }
+  ]
+}

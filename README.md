@@ -140,6 +140,21 @@ scripts/                    # Build and utility scripts
 tests/                      # Test suites (Selenium, Jest)
 ```
 
+## 🗺️ Map (MVP) dev notes
+
+- Data lives in `src/assets/map/` and is passed through to `/assets/map/` at build time.
+  - `places.v1.json`, `journeys.v1.json`, `churches.v1.json`, and `styles/v1.json`
+  - Bump the version suffix when making breaking changes to the schema.
+- Journey stops reference `place_id` values in `places.v1.json`.
+  - `segments` are ordered and should match the stop order (segments count = stops count - 1).
+- Chip taxonomy for the MVP is **Roman provinces** (`chip.type = "province"`), so data and UI stay aligned.
+- Search synonyms come from `names.also_known_as` + `names.modern_label`.
+  - The search normalizer strips diacritics so `Selcuk` also matches `Selçuk` input.
+- URL state is encoded as query params, e.g.
+  `/map/?journey=jn_pauls_first&stop=0&layers=journeys,churches&z=6&c=27.34,37.93`
+  - Load order: URL → `localStorage` (`mapState.v1`) → defaults.
+  - Any journey/stop/layer/map move updates both the URL and `localStorage`.
+
 ## 🎯 Entity System
 
 The heart of Explore Scripture is its comprehensive entity system with **5,500+

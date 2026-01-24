@@ -113,6 +113,8 @@ src/assets/data/entities-search.json
 src/assets/data/search-data.json
 src/assets/data/processing-summary.json
 src/assets/data/books/*-entities.json
+src/assets/data/character-profiles/
+src/assets/data/
 
 # Local configuration (personal settings)
 .claude/settings.local.json
