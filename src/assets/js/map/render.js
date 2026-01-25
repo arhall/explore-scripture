@@ -10,8 +10,10 @@ export const LAYER_IDS = {
   stopsLow: 'journey-stops-low',
   stops: 'journey-stops',
   stopSelected: 'journey-stop-selected',
+  stopLabels: 'journey-stop-labels',
   modernLabels: 'journey-modern-labels',
   churches: 'churches',
+  churchLabels: 'church-labels',
 };
 
 const getPlaceCoords = (placesById, placeId) => {
@@ -170,6 +172,36 @@ export const ensureMapLayers = (map, theme) => {
   });
 
   map.addLayer({
+    id: LAYER_IDS.churchLabels,
+    type: 'symbol',
+    source: 'churches',
+    minzoom: 4,
+    layout: {
+      'text-field': ['get', 'name'],
+      'text-size': [
+        'interpolate',
+        ['linear'],
+        ['zoom'],
+        4,
+        11,
+        6,
+        12,
+        8,
+        13,
+      ],
+      'text-offset': [0, 1.2],
+      'text-anchor': 'top',
+      'text-max-width': 8,
+      'text-optional': true,
+    },
+    paint: {
+      'text-color': theme.textSecondary,
+      'text-halo-color': theme.background,
+      'text-halo-width': 1,
+    },
+  });
+
+  map.addLayer({
     id: LAYER_IDS.stopsLow,
     type: 'circle',
     source: 'journey-stops',
@@ -205,6 +237,26 @@ export const ensureMapLayers = (map, theme) => {
       'circle-radius': 7,
       'circle-stroke-width': 3,
       'circle-stroke-color': theme.background,
+    },
+  });
+
+  map.addLayer({
+    id: LAYER_IDS.stopLabels,
+    type: 'symbol',
+    source: 'journey-stops',
+    minzoom: 6,
+    layout: {
+      'text-field': ['get', 'name'],
+      'text-size': 12,
+      'text-offset': [0, 1.25],
+      'text-anchor': 'top',
+      'text-max-width': 8,
+      'text-optional': true,
+    },
+    paint: {
+      'text-color': theme.textSecondary,
+      'text-halo-color': theme.background,
+      'text-halo-width': 1,
     },
   });
 

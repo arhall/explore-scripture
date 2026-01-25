@@ -4,6 +4,7 @@ const DEFAULT_LAYERS = {
   journeys: true,
   churches: false,
   modern_labels: false,
+  base_labels: true,
 };
 
 const DEFAULT_STATE = {
@@ -29,11 +30,14 @@ const parseCenter = value => {
 const parseLayers = value => {
   if (!value) return null;
   const set = new Set(value.split(',').map(item => item.trim()).filter(Boolean));
-  return {
+  const parsed = {
     journeys: set.has('journeys'),
     churches: set.has('churches'),
     modern_labels: set.has('modern_labels'),
   };
+  if (set.has('base_labels')) parsed.base_labels = true;
+  if (set.has('base_labels_off')) parsed.base_labels = false;
+  return parsed;
 };
 
 export const getDefaultState = () => ({
@@ -108,11 +112,19 @@ export const getInitialState = () => {
   });
 };
 
-export const formatLayersParam = layers =>
-  Object.entries(layers)
-    .filter(([, enabled]) => enabled)
-    .map(([key]) => key)
-    .join(',');
+export const formatLayersParam = layers => {
+  if (!layers) return '';
+  const params = [];
+  if (layers.journeys) params.push('journeys');
+  if (layers.churches) params.push('churches');
+  if (layers.modern_labels) params.push('modern_labels');
+  if (layers.base_labels === false) {
+    params.push('base_labels_off');
+  } else if (layers.base_labels === true) {
+    params.push('base_labels');
+  }
+  return params.join(',');
+};
 
 export const createUrlFromState = state => {
   const params = new URLSearchParams();

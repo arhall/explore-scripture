@@ -90,35 +90,79 @@ permalink: /map/
 
       <div class="map-canvas">
         <div class="map-toolbar">
-          <div class="map-search-wrap">
-            <input
-              class="map-search"
-              id="mapSearchInput"
-              type="search"
-              placeholder="Search: Ephesus, Efes, Selcuk"
-              aria-label="Search places or regions"
-              autocomplete="off"
-            />
-            <div class="map-search-results" id="mapSearchResults" role="listbox"></div>
-          </div>
-          <div class="map-toolbar-actions">
+          <div class="map-toolbar-left">
             <button
-              class="map-toolbar-btn"
-              type="button"
-              data-action="layers"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Layers
-            </button>
-            <button
-              class="map-toolbar-btn"
+              class="map-toolbar-btn map-anchor-btn"
               type="button"
               data-action="anchor-view"
               aria-label="Return to anchor view"
             >
-              Compass
+              Return to anchor
             </button>
+            <div class="map-search-wrap">
+              <input
+                class="map-search"
+                id="mapSearchInput"
+                type="search"
+                placeholder="Search: Ephesus, Efes, Selcuk"
+                aria-label="Search places or regions"
+                autocomplete="off"
+              />
+              <div class="map-search-results" id="mapSearchResults" role="listbox"></div>
+            </div>
+          </div>
+          <div class="map-toolbar-actions">
+            <div class="map-layers-control">
+              <button
+                class="map-toolbar-btn"
+                type="button"
+                data-action="layers"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Layers
+              </button>
+              <div class="map-layers-popover" id="mapLayersPopover" role="dialog" hidden>
+                <div class="map-layers-header">
+                  <span>Layers</span>
+                  <button
+                    class="map-layers-close"
+                    type="button"
+                    data-action="close-layers"
+                    aria-label="Close layers"
+                  >
+                    ×
+                  </button>
+                </div>
+                <label class="map-layer-toggle">
+                  <input type="checkbox" data-layer="journeys" checked />
+                  <span>Journeys</span>
+                </label>
+                <label class="map-layer-toggle">
+                  <input type="checkbox" data-layer="churches" />
+                  <span>Churches</span>
+                </label>
+                <label class="map-layer-toggle">
+                  <input type="checkbox" data-layer="modern_labels" />
+                  <span>Modern labels</span>
+                </label>
+                <label class="map-layer-toggle">
+                  <input type="checkbox" data-layer="base_labels" checked />
+                  <span>Base labels</span>
+                </label>
+                <div class="map-layer-group">
+                  <div class="map-layer-title">Coming soon</div>
+                  <label class="map-layer-toggle disabled">
+                    <input type="checkbox" disabled />
+                    <span>Boundaries</span>
+                  </label>
+                  <label class="map-layer-toggle disabled">
+                    <input type="checkbox" disabled />
+                    <span>People groups</span>
+                  </label>
+                </div>
+              </div>
+            </div>
             <button class="map-toolbar-btn" type="button" data-action="bookmark-view">
               Bookmark view
             </button>
@@ -129,46 +173,21 @@ permalink: /map/
         <div class="map-canvas-stage">
           <div id="map" class="maplibre-map" role="application" aria-label="Interactive map"></div>
           <div class="map-confidence" id="mapConfidence">Confidence: High</div>
+          <div class="map-point-popover" id="mapPointPopover" hidden>
+            <button
+              class="map-point-close"
+              type="button"
+              data-action="close-point"
+              aria-label="Close point details"
+            >
+              ×
+            </button>
+            <div class="map-point-content" id="mapPointContent"></div>
+          </div>
           <div class="map-legend">
             <span class="map-legend-item"><span class="map-dot"></span> Journey stops</span>
             <span class="map-legend-item"><span class="map-dot muted"></span> Churches</span>
             <span class="map-legend-item"><span class="map-dot hollow"></span> Low confidence</span>
-          </div>
-          <div class="map-layers-popover" id="mapLayersPopover" role="dialog" hidden>
-            <div class="map-layers-header">
-              <span>Layers</span>
-              <button
-                class="map-layers-close"
-                type="button"
-                data-action="close-layers"
-                aria-label="Close layers"
-              >
-                ×
-              </button>
-            </div>
-            <label class="map-layer-toggle">
-              <input type="checkbox" data-layer="journeys" checked />
-              <span>Journeys</span>
-            </label>
-            <label class="map-layer-toggle">
-              <input type="checkbox" data-layer="churches" />
-              <span>Churches</span>
-            </label>
-            <label class="map-layer-toggle">
-              <input type="checkbox" data-layer="modern_labels" />
-              <span>Modern labels</span>
-            </label>
-            <div class="map-layer-group">
-              <div class="map-layer-title">Coming soon</div>
-              <label class="map-layer-toggle disabled">
-                <input type="checkbox" disabled />
-                <span>Boundaries</span>
-              </label>
-              <label class="map-layer-toggle disabled">
-                <input type="checkbox" disabled />
-                <span>People groups</span>
-              </label>
-            </div>
           </div>
         </div>
       </div>

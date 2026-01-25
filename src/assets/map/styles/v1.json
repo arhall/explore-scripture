@@ -4,8 +4,13 @@
   "sources": {
     "osm": {
       "type": "raster",
-      "tiles": ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
+      "tiles": ["https://basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png"],
       "tileSize": 256,
+      "attribution": "© OpenStreetMap contributors, © CARTO"
+    },
+    "osm-labels": {
+      "type": "vector",
+      "url": "https://demotiles.maplibre.org/tiles/tiles.json",
       "attribution": "© OpenStreetMap contributors"
     }
   },
@@ -14,6 +19,70 @@
       "id": "osm-base",
       "type": "raster",
       "source": "osm"
+    },
+    {
+      "id": "osm-country-labels",
+      "type": "symbol",
+      "source": "osm-labels",
+      "source-layer": "countries",
+      "minzoom": 1,
+      "layout": {
+        "text-field": ["get", "NAME"],
+        "text-font": ["Noto Sans Regular"],
+        "text-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          1,
+          10,
+          3,
+          12,
+          5,
+          14,
+          7,
+          16
+        ],
+        "text-allow-overlap": false,
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#4b5563",
+        "text-halo-color": "#f8fafc",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "osm-centroid-labels",
+      "type": "symbol",
+      "source": "osm-labels",
+      "source-layer": "centroids",
+      "minzoom": 4,
+      "layout": {
+        "text-field": ["get", "NAME"],
+        "text-font": ["Noto Sans Regular"],
+        "text-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          4,
+          10,
+          6,
+          12,
+          8,
+          14,
+          10,
+          16,
+          12,
+          18
+        ],
+        "text-allow-overlap": false,
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#5b677a",
+        "text-halo-color": "#f8fafc",
+        "text-halo-width": 1
+      }
     }
   ],
   "glyphs": "https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf"

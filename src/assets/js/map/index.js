@@ -20,6 +20,7 @@ import {
 
 const MAPLIBRE_VERSION = '3.6.1';
 const MAPLIBRE_CDN = `https://cdn.jsdelivr.net/npm/maplibre-gl@${MAPLIBRE_VERSION}/dist`;
+const BASE_STYLE_URL = 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json';
 
 const elements = {
   map: document.getElementById('map'),
@@ -36,6 +37,8 @@ const elements = {
   toast: document.getElementById('mapToast'),
   churchList: document.getElementById('mapChurchList'),
   churchProfile: document.getElementById('mapChurchProfile'),
+  pointPopover: document.getElementById('mapPointPopover'),
+  pointContent: document.getElementById('mapPointContent'),
 };
 
 if (!elements.map) {
@@ -52,6 +55,123 @@ const theme = {
   warning: getCssVar('--warning', '#f59e0b'),
   textSecondary: getCssVar('--text-secondary', '#475569'),
   background: getCssVar('--bg', '#ffffff'),
+};
+
+const CUSTOM_SOURCES = new Set(['journey-stops', 'journey-segments', 'churches']);
+const CUSTOM_LAYER_IDS = new Set(Object.values(LAYER_IDS));
+const BASE_LABEL_LAYER_ALLOWLIST = new Set([
+  'place_country_1',
+  'place_city_r5',
+  'place_city_r6',
+  'place_capital_dot_z7',
+  'watername_ocean',
+  'watername_sea',
+]);
+let baseLabelLayerIds = [];
+
+const logLayersDebug = (message, data = {}) => {
+  console.info(`[Map][Layers] ${message}`, data);
+};
+
+const logPanelDebug = (message, data = {}) => {
+  console.info(`[Map][Panel] ${message}`, data);
+};
+
+const getBaseLabelLayerIds = map => {
+  const style = map.getStyle();
+  if (!style || !Array.isArray(style.layers)) return [];
+  return style.layers
+    .filter(
+      layer =>
+        layer.type === 'symbol' &&
+        BASE_LABEL_LAYER_ALLOWLIST.has(layer.id) &&
+        !CUSTOM_LAYER_IDS.has(layer.id) &&
+        !CUSTOM_SOURCES.has(layer.source)
+    )
+    .map(layer => layer.id);
+};
+
+const localizeBaseLabelLayers = map => {
+  baseLabelLayerIds.forEach(layerId => {
+    map.setLayoutProperty(layerId, 'text-field', [
+      'coalesce',
+      ['get', 'name_en'],
+      ['get', 'name:en'],
+      ['get', 'name:latin'],
+      ['get', 'name'],
+    ]);
+  });
+};
+
+const formatCoords = coords => {
+  if (!coords || coords.length !== 2) return '';
+  const [lng, lat] = coords;
+  return `${lat.toFixed(4)}, ${lng.toFixed(4)}`;
+};
+
+const buildCoordCitations = (coords, zoom) => {
+  if (!coords || coords.length !== 2) return '';
+  const [lng, lat] = coords;
+  const latStr = lat.toFixed(5);
+  const lngStr = lng.toFixed(5);
+  const mapZoom = Math.max(4, Math.min(14, Math.round(zoom || 6)));
+  const osmUrl = `https://www.openstreetmap.org/?mlat=${latStr}&mlon=${lngStr}#map=${mapZoom}/${latStr}/${lngStr}`;
+  const latDir = lat >= 0 ? 'N' : 'S';
+  const lngDir = lng >= 0 ? 'E' : 'W';
+  const geohackParams = `${Math.abs(lat).toFixed(5)}_${latDir}_${Math.abs(lng).toFixed(5)}_${lngDir}`;
+  const geohackUrl = `https://geohack.toolforge.org/geohack.php?params=${geohackParams}`;
+  return `
+    <a href="${osmUrl}" target="_blank" rel="noopener">OpenStreetMap</a>
+    <a href="${geohackUrl}" target="_blank" rel="noopener">GeoHack</a>
+  `;
+};
+
+const positionPointPopover = (map, coords) => {
+  if (!map || !coords || !elements.pointPopover || !elements.map) return;
+  const container = elements.map.closest('.map-canvas-stage');
+  if (!container) return;
+  const point = map.project(coords);
+  const padding = 12;
+
+  elements.pointPopover.style.left = '0px';
+  elements.pointPopover.style.top = '0px';
+  elements.pointPopover.style.transform = 'none';
+
+  requestAnimationFrame(() => {
+    const { width, height } = container.getBoundingClientRect();
+    const popRect = elements.pointPopover.getBoundingClientRect();
+    let left = point.x - popRect.width / 2;
+    let top = point.y - popRect.height - 12;
+
+    left = Math.min(Math.max(padding, left), width - popRect.width - padding);
+    top = Math.min(Math.max(padding, top), height - popRect.height - padding);
+
+    elements.pointPopover.style.left = `${left}px`;
+    elements.pointPopover.style.top = `${top}px`;
+  });
+};
+
+const showPointPopover = (map, { title, subtitle, coords, meta }) => {
+  if (!elements.pointPopover || !elements.pointContent) return;
+  const citations = buildCoordCitations(coords, map?.getZoom?.());
+  elements.pointContent.innerHTML = `
+    <div class="map-point-title">${title}</div>
+    ${subtitle ? `<div class="map-point-subtitle">${subtitle}</div>` : ''}
+    ${meta ? `<div class="map-point-meta">${meta}</div>` : ''}
+    ${coords ? `<div class="map-point-meta">Coordinates: ${formatCoords(coords)}</div>` : ''}
+    ${
+      citations
+        ? `<div class="map-point-meta">Citations:</div><div class="map-point-citations">${citations}</div>`
+        : ''
+    }
+  `;
+  elements.pointPopover.removeAttribute('hidden');
+  positionPointPopover(map, coords);
+};
+
+const hidePointPopover = () => {
+  if (!elements.pointPopover) return;
+  elements.pointPopover.setAttribute('hidden', '');
 };
 
 const loadJson = async url => {
@@ -363,6 +483,7 @@ const syncState = state => {
 };
 
 const setLayerState = (map, state) => {
+  const baseLabelsEnabled = state.layers.base_labels !== false;
   const journeyLayers = [
     LAYER_IDS.segments,
     LAYER_IDS.segmentsLow,
@@ -370,10 +491,14 @@ const setLayerState = (map, state) => {
     LAYER_IDS.stopsLow,
     LAYER_IDS.stops,
     LAYER_IDS.stopSelected,
+    LAYER_IDS.stopLabels,
   ];
   const modernLabelLayers = [LAYER_IDS.modernLabels];
-  const churchLayers = [LAYER_IDS.churches];
+  const churchLayers = [LAYER_IDS.churches, LAYER_IDS.churchLabels];
 
+  if (baseLabelLayerIds.length) {
+    setLayerVisibility(map, baseLabelLayerIds, baseLabelsEnabled);
+  }
   setLayerVisibility(map, journeyLayers, state.layers.journeys);
   setLayerVisibility(map, modernLabelLayers, state.layers.journeys && state.layers.modern_labels);
   setLayerVisibility(map, churchLayers, state.layers.churches);
@@ -399,14 +524,15 @@ const attachLayerToggleHandlers = (state, getAnchorCoords) => {
 };
 
 const toggleLayersPopover = open => {
-  if (!elements.layersPopover || !elements.layersButton) return;
+  if (!elements.layersPopover) return;
   const shouldOpen = open ?? elements.layersPopover.hasAttribute('hidden');
+  logLayersDebug('toggle', { open: shouldOpen });
   if (shouldOpen) {
     elements.layersPopover.removeAttribute('hidden');
-    elements.layersButton.setAttribute('aria-expanded', 'true');
+    elements.layersButton?.setAttribute('aria-expanded', 'true');
   } else {
     elements.layersPopover.setAttribute('hidden', '');
-    elements.layersButton.setAttribute('aria-expanded', 'false');
+    elements.layersButton?.setAttribute('aria-expanded', 'false');
   }
 };
 
@@ -508,6 +634,7 @@ const init = async () => {
 
   let map;
   let maplibregl;
+  let suppressNextMapClick = false;
   const hasStoredView =
     Array.isArray(state.center) &&
     state.center.length === 2 &&
@@ -525,7 +652,7 @@ const init = async () => {
 
     map = new maplibregl.Map({
       container: elements.map,
-      style: '/assets/map/styles/v1.json',
+      style: BASE_STYLE_URL,
       center: initialCenter,
       zoom: initialZoom,
       attributionControl: true,
@@ -535,6 +662,9 @@ const init = async () => {
 
     map.on('load', () => {
       ensureMapLayers(map, theme);
+      baseLabelLayerIds = getBaseLabelLayerIds(map);
+      localizeBaseLabelLayers(map);
+      logLayersDebug('base labels', { count: baseLabelLayerIds.length, ids: baseLabelLayerIds });
 
       const journeyGeojson = buildJourneyGeojson(currentJourney, placesById);
       updateJourneySources(map, journeyGeojson);
@@ -568,6 +698,17 @@ const init = async () => {
       const stopIndex = Number(feature.properties?.stop_index);
       if (Number.isInteger(stopIndex)) {
         selectStop(stopIndex, { focus: true });
+        suppressNextMapClick = true;
+        const stop = stops[stopIndex];
+        if (stop) {
+          const place = stop.place;
+          showPointPopover(map, {
+            title: place.names?.primary || place.id,
+            subtitle: `Journey stop ${stopIndex + 1}`,
+            coords: place.coords,
+            meta: stop.scriptureRefs?.length ? stop.scriptureRefs.join(' • ') : null,
+          });
+        }
       }
     });
 
@@ -586,6 +727,15 @@ const init = async () => {
       const church = churches.find(item => item.id === churchId);
       if (church) {
         renderChurchProfile(church, placesById);
+        suppressNextMapClick = true;
+        const placeName = church.place_id ? placesById.get(church.place_id)?.names?.primary : '';
+        const meta = [placeName, church.summary].filter(Boolean).join(' • ');
+        showPointPopover(map, {
+          title: church.name,
+          subtitle: 'Church',
+          coords: feature.geometry?.coordinates || church.coords,
+          meta: meta || null,
+        });
         if (feature.geometry?.coordinates) {
           map.flyTo({ center: feature.geometry.coordinates, zoom: Math.max(map.getZoom(), 6.5) });
         }
@@ -598,6 +748,19 @@ const init = async () => {
 
     map.on('mouseleave', LAYER_IDS.churches, () => {
       map.getCanvas().style.cursor = '';
+    });
+
+    map.on('click', () => {
+      if (suppressNextMapClick) {
+        suppressNextMapClick = false;
+        return;
+      }
+      hidePointPopover();
+      toggleLayersPopover(false);
+    });
+
+    map.on('movestart', () => {
+      hidePointPopover();
     });
   } catch (error) {
     console.error('[Map] Failed to initialize MapLibre', error);
@@ -709,6 +872,7 @@ const init = async () => {
 
   document.querySelectorAll('.map-pill').forEach(button => {
     button.addEventListener('click', () => {
+      logPanelDebug('journey click', { journey: button.dataset.journey });
       selectJourney(button.dataset.journey);
     });
     if (button.dataset.journey === state.journeyId) {
@@ -833,6 +997,7 @@ const init = async () => {
   });
 
   elements.layersButton?.addEventListener('click', () => {
+    logLayersDebug('button click');
     toggleLayersPopover();
   });
 
@@ -846,15 +1011,59 @@ const init = async () => {
     map.fitBounds(anchorBounds, { padding: getAnchorPadding(), duration: 700 });
   });
 
-  elements.layersPopover?.addEventListener('click', event => {
+  const closeLayersHandler = event => {
     const closeButton = event.target.closest('[data-action="close-layers"]');
-    if (closeButton) {
-      toggleLayersPopover(false);
-    }
+    if (!closeButton) return;
+    logLayersDebug('close click', {
+      type: event.type,
+      target: event.target?.className || event.target?.tagName,
+    });
+    event.preventDefault();
+    event.stopPropagation();
+    toggleLayersPopover(false);
+  };
+
+  document.addEventListener('pointerdown', closeLayersHandler, true);
+  document.addEventListener('click', closeLayersHandler, true);
+
+  document.addEventListener('click', event => {
+    const closePoint = event.target.closest('[data-action="close-point"]');
+    if (!closePoint) return;
+    event.preventDefault();
+    event.stopPropagation();
+    hidePointPopover();
   });
 
-  document.querySelector('[data-action="toggle-church-list"]')?.addEventListener('click', () => {
+  document.addEventListener(
+    'pointerdown',
+    event => {
+      if (!elements.layersPopover || elements.layersPopover.hasAttribute('hidden')) return;
+      logLayersDebug('pointerdown', {
+        inPopover: elements.layersPopover.contains(event.target),
+        target: event.target?.className || event.target?.tagName,
+      });
+    },
+    true
+  );
+
+  document.addEventListener(
+    'pointerdown',
+    event => {
+      const panel = document.querySelector('.map-panel');
+      if (!panel) return;
+      const inPanel = panel.contains(event.target);
+      if (!inPanel) return;
+      logPanelDebug('panel pointerdown', {
+        target: event.target?.className || event.target?.tagName,
+      });
+    },
+    true
+  );
+
+  const toggleChurchList = () => {
+    logPanelDebug('toggle churches list');
     if (!elements.churchList) return;
+    const panel = document.querySelector('.map-panel');
     const isHidden = elements.churchList.hasAttribute('hidden');
     if (isHidden) {
       elements.churchList.removeAttribute('hidden');
@@ -862,7 +1071,53 @@ const init = async () => {
     } else {
       elements.churchList.setAttribute('hidden', '');
     }
+    elements.churchList.style.display = isHidden ? 'grid' : 'none';
+    elements.churchList.style.visibility = isHidden ? 'visible' : 'hidden';
+    elements.churchList.style.opacity = isHidden ? '1' : '0';
+    panel?.classList.toggle('churches-open', isHidden);
+    if (churchToggleButton) {
+      churchToggleButton.setAttribute('aria-expanded', String(isHidden));
+      churchToggleButton.textContent = isHidden ? 'Hide churches' : 'Browse churches';
+    }
+    if (isHidden) {
+      elements.churchList.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    } else {
+      panel?.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    const computed = window.getComputedStyle(elements.churchList);
+    logPanelDebug('church list state', {
+      hidden: elements.churchList.hasAttribute('hidden'),
+      display: computed.display,
+      height: elements.churchList.getBoundingClientRect().height,
+      childCount: elements.churchList.children.length,
+    });
+  };
+
+  const churchToggleButton = document.querySelector('[data-action="toggle-church-list"]');
+  logPanelDebug('church toggle bind', { found: Boolean(churchToggleButton) });
+  churchToggleButton?.addEventListener('click', event => {
+    logPanelDebug('church toggle click', {
+      target: event.target?.className || event.target?.tagName,
+    });
+    event.preventDefault();
+    event.stopPropagation();
+    toggleChurchList();
   });
+
+  document.addEventListener(
+    'click',
+    event => {
+      const target = event.target.closest?.('[data-action="toggle-church-list"]');
+      if (!target) return;
+      logPanelDebug('church toggle delegated', {
+        target: event.target?.className || event.target?.tagName,
+      });
+      event.preventDefault();
+      event.stopPropagation();
+      toggleChurchList();
+    },
+    true
+  );
 
   elements.churchList?.addEventListener('click', event => {
     const button = event.target.closest('.map-church-item');
