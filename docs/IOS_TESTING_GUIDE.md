@@ -5,13 +5,16 @@
 This guide covers setting up and running iOS Safari UI automation tests for
 Explore Scripture using Selenium WebDriver and Appium.
 
+> Note: `tests/test_ios_safari.py` now runs through Appium (iOS Simulator/device).
+> The old Safari desktop simulation path is no longer used by this suite.
+
 ## Test Types
 
-### 1. **Safari Desktop Simulation** (Easiest)
+### 1. **Safari Desktop Simulation** (Legacy/manual checks)
 
 - Uses macOS Safari WebDriver
 - Simulates mobile viewport (375x812, 393x852)
-- Tests responsive design and touch interactions
+- Useful for quick visual spot-checks only
 - **Requirements**: macOS with Safari
 
 ### 2. **iOS Simulator Testing** (Recommended)
@@ -35,19 +38,24 @@ Explore Scripture using Selenium WebDriver and Appium.
 - Node.js and npm
 - Xcode (for iOS Simulator)
 
-### Quick Setup (Safari Desktop Simulation)
+### Quick Setup (iOS Simulator via Appium)
 
 ```bash
 # 1. Install Python dependencies
 npm run test:setup
 
-# 2. Enable Safari WebDriver (one time setup)
-# Go to Safari > Preferences > Advanced
-# Check "Show Develop menu in menu bar"
-# Go to Develop > Allow Remote Automation
+# 2. Install Appium + iOS driver (one time setup)
+npm install -g appium@next
+appium driver install xcuitest
 
-# 3. Run mobile Safari tests
+# 3. Boot simulator + start Appium
+xcrun simctl boot "iPhone 14"
+open -a Simulator
+appium --port 4723
+
+# 4. Run iOS Safari tests
 npm run test:mobile
+npm run test:ios
 ```
 
 ### Full iOS Setup (iOS Simulator)
@@ -79,6 +87,10 @@ appium-doctor --ios
 ```bash
 # List available simulators
 xcrun simctl list devices available
+
+# If your installed iOS runtime differs from the defaults, set it explicitly
+xcrun simctl list runtimes | rg "iOS"
+export IOS_PLATFORM_VERSION=17.2   # example
 
 # Boot iPhone 14 simulator (adjust as needed)
 xcrun simctl boot "iPhone 14"

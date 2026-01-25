@@ -1,0 +1,1511 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://api.reftagger.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' data: https://fonts.gstatic.com https://basemaps.cartocdn.com https://tiles.basemaps.cartocdn.com https://*.basemaps.cartocdn.com; img-src 'self' data: https: https://i.ytimg.com https://yt3.ggpht.com; connect-src 'self' https://api.esv.org https://www.biblegateway.com https://bible-api.com https://tile.openstreetmap.org https://basemaps.cartocdn.com https://tiles.basemaps.cartocdn.com https://tiles-a.basemaps.cartocdn.com https://tiles-b.basemaps.cartocdn.com https://tiles-c.basemaps.cartocdn.com https://tiles-d.basemaps.cartocdn.com https://*.basemaps.cartocdn.com https://demotiles.maplibre.org https://cdn.jsdelivr.net; worker-src 'self' https://unpkg.com https://cdn.jsdelivr.net blob:; frame-src 'self' https://www.youtube.com https://www.biblegateway.com https://www.youtube-nocookie.com https://enduringword.com https://www.biblestudytools.com https://www.studylight.org https://biblehub.com https://biblefamilytree.info https://onemessianicgentile.com https://www.onemessianicgentile.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()">
+
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Explore Scripture">
+    <title>Explore Scripture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    
+    <meta name="description" content="Chapter-by-chapter Bible summaries, videos, and commentary for every book of Scripture.">
+    <!-- Performance Optimizers (loaded first) -->
+    <script src="/assets/css-optimizer.js" async=""></script>
+    <script src="/assets/image-optimizer.js" async=""></script>
+
+    <!-- Module Loader (handles all other JS loading) -->
+    <!-- Bundle optimizer replaces module-loader with intelligent loading -->
+    <script src="/assets/bundle-optimizer.js"></script><style type="text/css"></style>
+  <script type="module" integrity="sha512-I1nWw2KfQnK/t/zOlALFhLrZA1yzsCzBl7DxamXdg/QF7kq+O4sYBZLl0DFCE7vP2ixPccL/k0/oqvhyDB73zQ==" src="/.11ty/reload-client.js"></script><script src="/assets/search-engine.js"></script></head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <a class="nav-brand" href="/">Explore Scripture</a>
+        <div class="nav-links">
+          <a href="/categories/" class="nav-link ">Sections</a>
+          <a href="/map/" class="nav-link ">Map</a>
+          <a href="/genealogies/" class="nav-link ">Genealogies</a>
+          <a href="/links/" class="nav-link ">Links</a>
+          <button class="font-size-toggle" onclick="toggleFontSizeControls()" aria-label="Toggle font size controls">
+            <span class="font-size-icon">Aa</span>
+          </button>
+          <button class="high-contrast-toggle" onclick="toggleHighContrast()" aria-label="Toggle high contrast mode">
+            <span class="high-contrast-icon">◻</span>
+          </button>
+          <button class="theme-toggle-nav" onclick="toggleThemeDropdown()" aria-label="Change theme" aria-expanded="false" aria-haspopup="true">
+            <span class="theme-icon">◈</span>
+          </button>
+          <button class="recents-bookmarks-toggle" onclick="toggleRecentsBookmarks()" aria-label="Toggle recent items and bookmarks">
+            <span class="recents-icon">★</span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Search Container -->
+      
+      <div id="search-container"></div>
+      
+
+      <div class="recents-bookmarks-panel" id="recentsBookmarksPanel">
+        <div class="recents-bookmarks-content">
+          <div class="recents-bookmarks-header">
+            <h3>Quick Access</h3>
+            <button class="close-panel-btn" onclick="toggleRecentsBookmarks()" aria-label="Close quick access panel">
+              ×
+            </button>
+          </div>
+
+          <div class="recents-bookmarks-tabs">
+            <button class="tab-btn active" onclick="switchTab('bookmarks')" id="bookmarksTab" aria-label="View bookmarks">
+              <span class="tab-icon">★</span>
+              Bookmarks (<span id="bookmarksCount">0</span>)
+            </button>
+            <button class="tab-btn" onclick="switchTab('recent')" id="recentTab" aria-label="View recent items">
+              <span class="tab-icon">↻</span>
+              Recent (<span id="recentCount">4</span>)
+            </button>
+          </div>
+
+          <div class="tab-content active" id="bookmarksContent">
+            <div class="tab-actions">
+              <button class="clear-all-btn" onclick="clearAllBookmarks()" aria-label="Clear all bookmarks">
+                Clear All
+              </button>
+            </div>
+            <div class="items-list" id="bookmarksList">
+          <div class="empty-state">
+            <div class="empty-icon">★</div>
+            <p>No bookmarks yet</p>
+            <small>Bookmark pages to access them quickly later</small>
+          </div>
+        </div>
+          </div>
+
+          <div class="tab-content" id="recentContent">
+            <div class="tab-actions">
+              <button class="clear-all-btn" onclick="clearAllRecentItems()" aria-label="Clear all recent items">
+                Clear All
+              </button>
+            </div>
+            <div class="items-list" id="recentsList">
+          <div class="quick-access-item">
+            <a href="/" class="item-link">
+              <span class="item-title">Home</span>
+              <span class="item-subtitle">Chapter-by-chapter Bible summaries, videos, and commentary for every book of Scr...</span>
+            </a>
+          </div>
+        
+          <div class="quick-access-item">
+            <a href="/categories/" class="item-link">
+              <span class="item-title">Sections</span>
+              <span class="item-subtitle">Chapter-by-chapter Bible summaries with categories and metadata....</span>
+            </a>
+          </div>
+        
+          <div class="quick-access-item">
+            <a href="/examples/john-3-complete/" class="item-link">
+              <span class="item-title">John 3 - Complete Study with Chapter Reader</span>
+              <span class="item-subtitle">John 3 study featuring both Scripture widget for verses and full chapter reader ...</span>
+            </a>
+          </div>
+        
+          <div class="quick-access-item">
+            <a href="/books/genesis/" class="item-link">
+              <span class="item-title">Home</span>
+              <span class="item-subtitle">Chapter-by-chapter Bible summaries with categories and metadata....</span>
+            </a>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="font-size-panel" id="fontSizePanel">
+        <div class="font-size-content">
+          <div class="font-size-header">
+            <h3>Text Size</h3>
+            <button class="close-font-panel" onclick="toggleFontSizeControls()" aria-label="Close font size panel">
+              ×
+            </button>
+          </div>
+
+          <div class="font-size-controls">
+            <div class="font-size-presets">
+              <button class="font-preset-btn" data-size="small" onclick="setFontSize('small')" aria-label="Set small font size">
+                <span class="preset-label">Small</span>
+                <span class="preset-sample">Aa</span>
+              </button>
+              <button class="font-preset-btn active" data-size="medium" onclick="setFontSize('medium')" aria-label="Set medium font size">
+                <span class="preset-label">Medium</span>
+                <span class="preset-sample">Aa</span>
+              </button>
+              <button class="font-preset-btn" data-size="large" onclick="setFontSize('large')" aria-label="Set large font size">
+                <span class="preset-label">Large</span>
+                <span class="preset-sample">Aa</span>
+              </button>
+              <button class="font-preset-btn" data-size="extra-large" onclick="setFontSize('extra-large')" aria-label="Set extra large font size">
+                <span class="preset-label">Extra Large</span>
+                <span class="preset-sample">Aa</span>
+              </button>
+            </div>
+
+            <div class="font-size-slider-container">
+              <label for="fontSizeSlider">Custom Size</label>
+              <div class="slider-wrapper">
+                <span class="slider-label">A</span>
+                <input type="range" id="fontSizeSlider" min="80" max="140" value="100" step="5" oninput="setCustomFontSize(this.value)">
+                <span class="slider-label large">A</span>
+              </div>
+              <div class="slider-value" id="sliderValue">100%</div>
+            </div>
+
+            <div class="font-options">
+              <label class="font-option">
+                <input type="checkbox" id="dyslexiaFont" onchange="toggleDyslexiaFont(this.checked)">
+                <span class="checkmark-text">Dyslexia-friendly font</span>
+              </label>
+              <label class="font-option">
+                <input type="checkbox" id="increaseLineHeight" onchange="toggleLineHeight(this.checked)">
+                <span class="checkmark-text">Increase line spacing</span>
+              </label>
+            </div>
+
+            <div class="font-actions">
+              <button class="btn-secondary" onclick="resetFontSettings()" aria-label="Reset font settings to default">
+                Reset to Default
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      
+<nav class="breadcrumb-nav" aria-label="Breadcrumb navigation">
+  <ol class="breadcrumb-list">
+    <li class="breadcrumb-item">
+      <a href="/" class="breadcrumb-link">
+        <span class="breadcrumb-icon">🏠</span>
+        Home
+      </a>
+      <span class="breadcrumb-separator" aria-hidden="true">›</span>
+    </li>
+
+    
+  </ol>
+</nav>
+
+      
+      
+<div class="hero-section">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="hero-badge-text">Complete Bible Study Platform</span>
+    </div>
+    <h1 class="hero-title">
+      Explore Scripture with
+      <span class="hero-highlight">Purpose &amp; Clarity</span>
+    </h1>
+    <p class="hero-description">
+      From Genesis to Revelation—discover the unified story of redemption through expert commentary,
+      chapter summaries, and visual overviews designed for modern Bible study.
+    </p>
+
+    <div class="hero-actions">
+      <a href="/categories/" class="hero-cta primary">Start Exploring</a>
+      <button onclick="focusSearch()" class="hero-cta secondary">Search Scripture</button>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-number">66</div>
+        <div class="stat-label">Biblical Books</div>
+        <div class="stat-sublabel">Complete Coverage</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">1,189</div>
+        <div class="stat-label">Chapters</div>
+        <div class="stat-sublabel">Fully Indexed</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="hero-books">
+      <div class="hero-book testament-old">Old Testament</div>
+      <div class="hero-book testament-new">New Testament</div>
+    </div>
+    <div class="hero-connector"></div>
+  </div>
+</div>
+
+<div class="features-section">
+  <div class="features-header">
+    <h2>Everything You Need for Deep Bible Study</h2>
+    <p>Comprehensive tools designed to help you understand Scripture's message</p>
+  </div>
+
+  <div class="features-grid">
+    <div class="feature-card highlighted">
+      <div class="feature-icon">▦</div>
+      <h3>Expert Summaries</h3>
+      <p>Theologically sound chapter summaries that capture the essence of each passage</p>
+      <div class="feature-stats">Ready for study</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">▶</div>
+      <h3>Visual Learning</h3>
+      <p>Bible Project animated videos that make complex themes accessible</p>
+      <div class="feature-stats">Watch &amp; learn</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">◗</div>
+      <h3>Trusted Resources</h3>
+      <p>Direct access to respected commentaries and biblical scholarship</p>
+      <div class="feature-stats">Deep study</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">⌕</div>
+      <h3>Intelligent Search</h3>
+      <p>Find exactly what you're looking for across books, themes, and categories</p>
+      <div class="feature-stats">Instant results</div>
+    </div>
+  </div>
+</div>
+
+<section class="testament-section old-testament">
+  <div class="testament-header">
+    <div class="testament-badge">39 Books</div>
+    <h2>Old Testament</h2>
+    <p class="section-intro">
+      The foundation of faith—God's covenant with Israel and the promise of redemption
+    </p>
+  </div>
+
+   
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/law-torah/">Law (Torah)</a>
+        <span class="book-count">5 books</span>
+      </h3>
+      <p class="category-description">Genesis through Deuteronomy: creation, covenant, and the formation of Israel.</p>
+    </div>
+
+    <div class="category-books">
+       
+      <a href="/books/genesis/" class="book-card">
+        <div class="book-title">Genesis</div>
+        
+        <div class="book-progress">50 chapters</div>
+        
+      </a>
+        
+      <a href="/books/exodus/" class="book-card">
+        <div class="book-title">Exodus</div>
+        
+        <div class="book-progress">40 chapters</div>
+        
+      </a>
+        
+      <a href="/books/leviticus/" class="book-card">
+        <div class="book-title">Leviticus</div>
+        
+        <div class="book-progress">27 chapters</div>
+        
+      </a>
+        
+      <a href="/books/numbers/" class="book-card">
+        <div class="book-title">Numbers</div>
+        
+        <div class="book-progress">36 chapters</div>
+        
+      </a>
+        
+      <a href="/books/deuteronomy/" class="book-card">
+        <div class="book-title">Deuteronomy</div>
+        
+        <div class="book-progress">34 chapters</div>
+        
+      </a>
+                                                                                                                                 
+    </div>
+  </div>
+    
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/history/">History</a>
+        <span class="book-count">12 books</span>
+      </h3>
+      <p class="category-description">Joshua through Esther: conquest, kingdom, exile, and return.</p>
+    </div>
+
+    <div class="category-books">
+                 
+      <a href="/books/joshua/" class="book-card">
+        <div class="book-title">Joshua</div>
+        
+        <div class="book-progress">24 chapters</div>
+        
+      </a>
+        
+      <a href="/books/judges/" class="book-card">
+        <div class="book-title">Judges</div>
+        
+        <div class="book-progress">21 chapters</div>
+        
+      </a>
+        
+      <a href="/books/ruth/" class="book-card">
+        <div class="book-title">Ruth</div>
+        
+        <div class="book-progress">4 chapters</div>
+        
+      </a>
+        
+      <a href="/books/1-samuel/" class="book-card">
+        <div class="book-title">1 Samuel</div>
+        
+        <div class="book-progress">31 chapters</div>
+        
+      </a>
+        
+      <a href="/books/2-samuel/" class="book-card">
+        <div class="book-title">2 Samuel</div>
+        
+        <div class="book-progress">24 chapters</div>
+        
+      </a>
+        
+      <a href="/books/1-kings/" class="book-card">
+        <div class="book-title">1 Kings</div>
+        
+        <div class="book-progress">22 chapters</div>
+        
+      </a>
+        
+      <a href="/books/2-kings/" class="book-card">
+        <div class="book-title">2 Kings</div>
+        
+        <div class="book-progress">25 chapters</div>
+        
+      </a>
+        
+      <a href="/books/1-chronicles/" class="book-card">
+        <div class="book-title">1 Chronicles</div>
+        
+        <div class="book-progress">29 chapters</div>
+        
+      </a>
+        
+      <a href="/books/2-chronicles/" class="book-card">
+        <div class="book-title">2 Chronicles</div>
+        
+        <div class="book-progress">36 chapters</div>
+        
+      </a>
+        
+      <a href="/books/ezra/" class="book-card">
+        <div class="book-title">Ezra</div>
+        
+        <div class="book-progress">10 chapters</div>
+        
+      </a>
+        
+      <a href="/books/nehemiah/" class="book-card">
+        <div class="book-title">Nehemiah</div>
+        
+        <div class="book-progress">13 chapters</div>
+        
+      </a>
+        
+      <a href="/books/esther/" class="book-card">
+        <div class="book-title">Esther</div>
+        
+        <div class="book-progress">10 chapters</div>
+        
+      </a>
+                                                                                                         
+    </div>
+  </div>
+    
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/poetry-writings/">Poetry &amp; Writings</a>
+        <span class="book-count">5 books</span>
+      </h3>
+      <p class="category-description">Job through Song of Songs: wisdom, worship, and reflections.</p>
+    </div>
+
+    <div class="category-books">
+                                         
+      <a href="/books/job/" class="book-card">
+        <div class="book-title">Job</div>
+        
+        <div class="book-progress">42 chapters</div>
+        
+      </a>
+        
+      <a href="/books/psalms/" class="book-card">
+        <div class="book-title">Psalms</div>
+        
+        <div class="book-progress">150 chapters</div>
+        
+      </a>
+        
+      <a href="/books/proverbs/" class="book-card">
+        <div class="book-title">Proverbs</div>
+        
+        <div class="book-progress">31 chapters</div>
+        
+      </a>
+        
+      <a href="/books/ecclesiastes/" class="book-card">
+        <div class="book-title">Ecclesiastes</div>
+        
+        <div class="book-progress">12 chapters</div>
+        
+      </a>
+        
+      <a href="/books/song-of-songs/" class="book-card">
+        <div class="book-title">Song of Songs</div>
+        
+        <div class="book-progress">8 chapters</div>
+        
+      </a>
+                                                                                               
+    </div>
+  </div>
+    
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/major-prophets/">Major Prophets</a>
+        <span class="book-count">5 books</span>
+      </h3>
+      <p class="category-description">Isaiah through Daniel: large prophetic works addressing judgment and hope.</p>
+    </div>
+
+    <div class="category-books">
+                                                   
+      <a href="/books/isaiah/" class="book-card">
+        <div class="book-title">Isaiah</div>
+        
+        <div class="book-progress">66 chapters</div>
+        
+      </a>
+        
+      <a href="/books/jeremiah/" class="book-card">
+        <div class="book-title">Jeremiah</div>
+        
+        <div class="book-progress">52 chapters</div>
+        
+      </a>
+        
+      <a href="/books/lamentations/" class="book-card">
+        <div class="book-title">Lamentations</div>
+        
+        <div class="book-progress">5 chapters</div>
+        
+      </a>
+        
+      <a href="/books/ezekiel/" class="book-card">
+        <div class="book-title">Ezekiel</div>
+        
+        <div class="book-progress">48 chapters</div>
+        
+      </a>
+        
+      <a href="/books/daniel/" class="book-card">
+        <div class="book-title">Daniel</div>
+        
+        <div class="book-progress">12 chapters</div>
+        
+      </a>
+                                                                                     
+    </div>
+  </div>
+    
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/minor-prophets/">Minor Prophets</a>
+        <span class="book-count">12 books</span>
+      </h3>
+      <p class="category-description">Hosea through Malachi: shorter prophetic books with powerful messages.</p>
+    </div>
+
+    <div class="category-books">
+                                                             
+      <a href="/books/hosea/" class="book-card">
+        <div class="book-title">Hosea</div>
+        
+        <div class="book-progress">14 chapters</div>
+        
+      </a>
+        
+      <a href="/books/joel/" class="book-card">
+        <div class="book-title">Joel</div>
+        
+        <div class="book-progress">3 chapters</div>
+        
+      </a>
+        
+      <a href="/books/amos/" class="book-card">
+        <div class="book-title">Amos</div>
+        
+        <div class="book-progress">9 chapters</div>
+        
+      </a>
+        
+      <a href="/books/obadiah/" class="book-card">
+        <div class="book-title">Obadiah</div>
+        
+        <div class="book-progress">1 chapters</div>
+        
+      </a>
+        
+      <a href="/books/jonah/" class="book-card">
+        <div class="book-title">Jonah</div>
+        
+        <div class="book-progress">4 chapters</div>
+        
+      </a>
+        
+      <a href="/books/micah/" class="book-card">
+        <div class="book-title">Micah</div>
+        
+        <div class="book-progress">7 chapters</div>
+        
+      </a>
+        
+      <a href="/books/nahum/" class="book-card">
+        <div class="book-title">Nahum</div>
+        
+        <div class="book-progress">3 chapters</div>
+        
+      </a>
+        
+      <a href="/books/habakkuk/" class="book-card">
+        <div class="book-title">Habakkuk</div>
+        
+        <div class="book-progress">3 chapters</div>
+        
+      </a>
+        
+      <a href="/books/zephaniah/" class="book-card">
+        <div class="book-title">Zephaniah</div>
+        
+        <div class="book-progress">3 chapters</div>
+        
+      </a>
+        
+      <a href="/books/haggai/" class="book-card">
+        <div class="book-title">Haggai</div>
+        
+        <div class="book-progress">2 chapters</div>
+        
+      </a>
+        
+      <a href="/books/zechariah/" class="book-card">
+        <div class="book-title">Zechariah</div>
+        
+        <div class="book-progress">14 chapters</div>
+        
+      </a>
+        
+      <a href="/books/malachi/" class="book-card">
+        <div class="book-title">Malachi</div>
+        
+        <div class="book-progress">4 chapters</div>
+        
+      </a>
+                                                             
+    </div>
+  </div>
+             
+</section>
+
+<section class="testament-section new-testament">
+  <div class="testament-header">
+    <div class="testament-badge">27 Books</div>
+    <h2>New Testament</h2>
+    <p class="section-intro">
+      The fulfillment of promise—the life of Christ and the birth of the Church
+    </p>
+  </div>
+
+             
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/gospels/">Gospels</a>
+        <span class="book-count">4 books</span>
+      </h3>
+      <p class="category-description">Matthew, Mark, Luke, John: the life, death, and resurrection of Jesus.</p>
+    </div>
+
+    <div class="category-books">
+                                                                                     
+      <a href="/books/matthew/" class="book-card">
+        <div class="book-title">Matthew</div>
+        
+        <div class="book-progress">28 chapters</div>
+        
+      </a>
+        
+      <a href="/books/mark/" class="book-card">
+        <div class="book-title">Mark</div>
+        
+        <div class="book-progress">16 chapters</div>
+        
+      </a>
+        
+      <a href="/books/luke/" class="book-card">
+        <div class="book-title">Luke</div>
+        
+        <div class="book-progress">24 chapters</div>
+        
+      </a>
+        
+      <a href="/books/john/" class="book-card">
+        <div class="book-title">John</div>
+        
+        <div class="book-progress">21 chapters</div>
+        
+      </a>
+                                                     
+    </div>
+  </div>
+    
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/acts/">Acts</a>
+        <span class="book-count">1 books</span>
+      </h3>
+      <p class="category-description">The birth and expansion of the early Church.</p>
+    </div>
+
+    <div class="category-books">
+                                                                                             
+      <a href="/books/acts/" class="book-card">
+        <div class="book-title">Acts</div>
+        
+        <div class="book-progress">28 chapters</div>
+        
+      </a>
+                                                   
+    </div>
+  </div>
+    
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/pauline-epistles/">Pauline Epistles</a>
+        <span class="book-count">13 books</span>
+      </h3>
+      <p class="category-description">Letters attributed to Paul addressing doctrine and church life.</p>
+    </div>
+
+    <div class="category-books">
+                                                                                               
+      <a href="/books/romans/" class="book-card">
+        <div class="book-title">Romans</div>
+        
+        <div class="book-progress">16 chapters</div>
+        
+      </a>
+        
+      <a href="/books/1-corinthians/" class="book-card">
+        <div class="book-title">1 Corinthians</div>
+        
+        <div class="book-progress">16 chapters</div>
+        
+      </a>
+        
+      <a href="/books/2-corinthians/" class="book-card">
+        <div class="book-title">2 Corinthians</div>
+        
+        <div class="book-progress">13 chapters</div>
+        
+      </a>
+        
+      <a href="/books/galatians/" class="book-card">
+        <div class="book-title">Galatians</div>
+        
+        <div class="book-progress">6 chapters</div>
+        
+      </a>
+        
+      <a href="/books/ephesians/" class="book-card">
+        <div class="book-title">Ephesians</div>
+        
+        <div class="book-progress">6 chapters</div>
+        
+      </a>
+        
+      <a href="/books/philippians/" class="book-card">
+        <div class="book-title">Philippians</div>
+        
+        <div class="book-progress">4 chapters</div>
+        
+      </a>
+        
+      <a href="/books/colossians/" class="book-card">
+        <div class="book-title">Colossians</div>
+        
+        <div class="book-progress">4 chapters</div>
+        
+      </a>
+        
+      <a href="/books/1-thessalonians/" class="book-card">
+        <div class="book-title">1 Thessalonians</div>
+        
+        <div class="book-progress">5 chapters</div>
+        
+      </a>
+        
+      <a href="/books/2-thessalonians/" class="book-card">
+        <div class="book-title">2 Thessalonians</div>
+        
+        <div class="book-progress">3 chapters</div>
+        
+      </a>
+        
+      <a href="/books/1-timothy/" class="book-card">
+        <div class="book-title">1 Timothy</div>
+        
+        <div class="book-progress">6 chapters</div>
+        
+      </a>
+        
+      <a href="/books/2-timothy/" class="book-card">
+        <div class="book-title">2 Timothy</div>
+        
+        <div class="book-progress">4 chapters</div>
+        
+      </a>
+        
+      <a href="/books/titus/" class="book-card">
+        <div class="book-title">Titus</div>
+        
+        <div class="book-progress">3 chapters</div>
+        
+      </a>
+        
+      <a href="/books/philemon/" class="book-card">
+        <div class="book-title">Philemon</div>
+        
+        <div class="book-progress">1 chapters</div>
+        
+      </a>
+                         
+    </div>
+  </div>
+    
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/general-epistles/">General Epistles</a>
+        <span class="book-count">8 books</span>
+      </h3>
+      <p class="category-description">Letters by other apostles and leaders to the wider church.</p>
+    </div>
+
+    <div class="category-books">
+                                                                                                                         
+      <a href="/books/hebrews/" class="book-card">
+        <div class="book-title">Hebrews</div>
+        
+        <div class="book-progress">13 chapters</div>
+        
+      </a>
+        
+      <a href="/books/james/" class="book-card">
+        <div class="book-title">James</div>
+        
+        <div class="book-progress">5 chapters</div>
+        
+      </a>
+        
+      <a href="/books/1-peter/" class="book-card">
+        <div class="book-title">1 Peter</div>
+        
+        <div class="book-progress">5 chapters</div>
+        
+      </a>
+        
+      <a href="/books/2-peter/" class="book-card">
+        <div class="book-title">2 Peter</div>
+        
+        <div class="book-progress">3 chapters</div>
+        
+      </a>
+        
+      <a href="/books/1-john/" class="book-card">
+        <div class="book-title">1 John</div>
+        
+        <div class="book-progress">5 chapters</div>
+        
+      </a>
+        
+      <a href="/books/2-john/" class="book-card">
+        <div class="book-title">2 John</div>
+        
+        <div class="book-progress">1 chapters</div>
+        
+      </a>
+        
+      <a href="/books/3-john/" class="book-card">
+        <div class="book-title">3 John</div>
+        
+        <div class="book-progress">1 chapters</div>
+        
+      </a>
+        
+      <a href="/books/jude/" class="book-card">
+        <div class="book-title">Jude</div>
+        
+        <div class="book-progress">1 chapters</div>
+        
+      </a>
+         
+    </div>
+  </div>
+    
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/apocalypse/">Apocalypse</a>
+        <span class="book-count">1 books</span>
+      </h3>
+      <p class="category-description">Revelation: apocalyptic prophecy and ultimate hope.</p>
+    </div>
+
+    <div class="category-books">
+                                                                                                                                         
+      <a href="/books/revelation/" class="book-card">
+        <div class="book-title">Revelation</div>
+        
+        <div class="book-progress">22 chapters</div>
+        
+      </a>
+       
+    </div>
+  </div>
+   
+</section>
+
+<script>
+  // Hero search functionality
+  function focusSearch() {
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+      searchInput.focus();
+      searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      // Track hero CTA usage
+      if (window.telemetry) {
+        window.telemetry.recordUserAction('hero-search-cta');
+      }
+    }
+  }
+</script>
+
+
+      <footer class="footer">Built with <a href="https://www.11ty.dev/">Eleventy</a> • 2024 • Last updated: Jan 24, 2026, 2:02 PM EST (commit 05b6493)</footer>
+    </div>
+
+    <script>
+      // Initialize search functionality with direct module loading
+      async function initializeSearch() {
+        try {
+          console.log('[Base] Starting search initialization...');
+          
+          // Load search engine script if not already loaded
+          if (!window.SearchEngine) {
+            console.log('[Base] Loading search engine...');
+            await loadScript('/assets/search-engine.js');
+            console.log('[Base] Search engine loaded');
+          }
+          
+          // Load search interface script if not already loaded  
+          if (!window.SearchInterface) {
+            console.log('[Base] Loading search interface...');
+            await loadScript('/assets/search-interface.js');
+            console.log('[Base] Search interface loaded');
+          }
+          
+          // Wait a moment for scripts to initialize
+          await new Promise(resolve => setTimeout(resolve, 500));
+          
+          console.log('[Base] SearchEngine available:', typeof window.SearchEngine);
+          console.log('[Base] SearchInterface available:', typeof window.SearchInterface);
+          console.log('[Base] Search engine instance:', window.searchEngine);
+          console.log('[Base] Search engine initialized:', window.searchEngine?.initialized);
+          
+          // Create search interface instance
+          const searchInterface = new SearchInterface({
+            containerId: 'search-container',
+            inputId: 'searchInput',
+            resultsId: 'search-results'
+          });
+          
+          console.log('[Base] SearchInterface instance created:', searchInterface);
+          
+          // Initialize the search interface
+          await searchInterface.initialize();
+          console.log('[Base] Search functionality initialized successfully');
+          
+          // Test search functionality
+          if (window.searchEngine && window.searchEngine.initialized) {
+            const testResults = window.searchEngine.search('luke');
+            console.log('[Base] Test search results:', testResults);
+          }
+          
+        } catch (error) {
+          console.error('[Base] Failed to initialize search:', error);
+          console.error('[Base] Error details:', error.stack);
+        }
+      }
+
+      // Helper function to load scripts
+      function loadScript(src) {
+        return new Promise((resolve, reject) => {
+          // Check if script is already loaded
+          const existingScript = document.querySelector(`script[src="${src}"]`);
+          if (existingScript) {
+            resolve();
+            return;
+          }
+          
+          const script = document.createElement('script');
+          script.src = src;
+          script.onload = resolve;
+          script.onerror = reject;
+          document.head.appendChild(script);
+        });
+      }
+
+      // Recent items and bookmarks functionality
+      let recentItems = [];
+      let bookmarkedItems = [];
+
+      // Initialize data from localStorage
+      function initializeData() {
+        try {
+          const savedRecent = localStorage.getItem('recentItems');
+          if (savedRecent) {
+            try {
+              const parsed = JSON.parse(savedRecent);
+              if (Array.isArray(parsed)) {
+                recentItems = parsed.slice(0, 10);
+              } else {
+                throw new Error('Invalid recentItems format');
+              }
+            } catch (parseError) {
+              console.warn('Corrupted recentItems data, resetting:', parseError);
+              localStorage.removeItem('recentItems');
+              recentItems = [];
+            }
+          }
+
+          const savedBookmarks = localStorage.getItem('bookmarkedItems');
+          if (savedBookmarks) {
+            try {
+              const parsed = JSON.parse(savedBookmarks);
+              if (Array.isArray(parsed)) {
+                bookmarkedItems = parsed;
+              } else {
+                throw new Error('Invalid bookmarkedItems format');
+              }
+            } catch (parseError) {
+              console.warn('Corrupted bookmarkedItems data, resetting:', parseError);
+              localStorage.removeItem('bookmarkedItems');
+              bookmarkedItems = [];
+            }
+          }
+        } catch (error) {
+          console.warn('Failed to load saved data:', error);
+          recentItems = [];
+          bookmarkedItems = [];
+        }
+
+        updateUI();
+      }
+
+      function addToRecentItems(pageData) {
+        if (!pageData || !pageData.title) return;
+
+        // Remove if already exists
+        recentItems = recentItems.filter(item => item.url !== pageData.url);
+
+        // Add to beginning
+        recentItems.unshift(pageData);
+
+        // Keep only last 10
+        recentItems = recentItems.slice(0, 10);
+
+        // Save to localStorage
+        try {
+          localStorage.setItem('recentItems', JSON.stringify(recentItems));
+        } catch (error) {
+          console.warn('Failed to save recent items:', error);
+        }
+
+        updateUI();
+      }
+
+      function toggleBookmark(pageData) {
+        if (!pageData || !pageData.title) return;
+
+        const isBookmarked = bookmarkedItems.some(item => item.url === pageData.url);
+
+        if (isBookmarked) {
+          bookmarkedItems = bookmarkedItems.filter(item => item.url !== pageData.url);
+        } else {
+          bookmarkedItems.push(pageData);
+        }
+
+        // Save to localStorage
+        try {
+          localStorage.setItem('bookmarkedItems', JSON.stringify(bookmarkedItems));
+        } catch (error) {
+          console.warn('Failed to save bookmarks:', error);
+        }
+
+        updateUI();
+        return !isBookmarked;
+      }
+
+      function isBookmarked(url) {
+        return bookmarkedItems.some(item => item.url === url);
+      }
+
+      function updateBookmarkButton(bookmarked) {
+        const bookmarkButton = document.querySelector('[data-bookmark-button]');
+        if (bookmarkButton) {
+          bookmarkButton.classList.toggle('bookmarked', bookmarked);
+          bookmarkButton.setAttribute('aria-pressed', bookmarked.toString());
+        }
+      }
+
+      function updateUI() {
+        // Update counts
+        document.getElementById('recentCount').textContent = recentItems.length;
+        document.getElementById('bookmarksCount').textContent = bookmarkedItems.length;
+
+        // Update lists
+        updateRecentsList();
+        updateBookmarksList();
+      }
+
+      function updateRecentsList() {
+        const container = document.getElementById('recentsList');
+        if (recentItems.length === 0) {
+          container.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-icon">↻</div>
+            <p>No recent items</p>
+            <small>Pages you visit will appear here</small>
+          </div>
+        `;
+        } else {
+          container.innerHTML = recentItems
+            .map(
+              item => `
+          <div class="quick-access-item">
+            <a href="${item.url}" class="item-link">
+              <span class="item-title">${item.title}</span>
+              <span class="item-subtitle">${item.subtitle || ''}</span>
+            </a>
+          </div>
+        `
+            )
+            .join('');
+        }
+      }
+
+      function updateBookmarksList() {
+        const container = document.getElementById('bookmarksList');
+        if (bookmarkedItems.length === 0) {
+          container.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-icon">★</div>
+            <p>No bookmarks yet</p>
+            <small>Bookmark pages to access them quickly later</small>
+          </div>
+        `;
+        } else {
+          container.innerHTML = bookmarkedItems
+            .map(
+              item => `
+          <div class="quick-access-item">
+            <a href="${item.url}" class="item-link">
+              <span class="item-title">${item.title}</span>
+              <span class="item-subtitle">${item.subtitle || ''}</span>
+            </a>
+            <button class="remove-bookmark" onclick="removeBookmark('${item.url}')" aria-label="Remove bookmark">×</button>
+          </div>
+        `
+            )
+            .join('');
+        }
+      }
+
+      function removeBookmark(url) {
+        bookmarkedItems = bookmarkedItems.filter(item => item.url !== url);
+        try {
+          localStorage.setItem('bookmarkedItems', JSON.stringify(bookmarkedItems));
+        } catch (error) {
+          console.warn('Failed to save bookmarks:', error);
+        }
+        updateUI();
+      }
+
+      function clearAllRecentItems() {
+        recentItems = [];
+        try {
+          localStorage.removeItem('recentItems');
+        } catch (error) {
+          console.warn('Failed to clear recent items:', error);
+        }
+        updateUI();
+      }
+
+      function clearAllBookmarks() {
+        bookmarkedItems = [];
+        try {
+          localStorage.removeItem('bookmarkedItems');
+        } catch (error) {
+          console.warn('Failed to clear bookmarks:', error);
+        }
+        updateUI();
+      }
+
+      function toggleRecentsBookmarks() {
+        const panel = document.getElementById('recentsBookmarksPanel');
+        if (!panel) return;
+        panel.classList.toggle('visible');
+      }
+
+      function switchTab(tabName) {
+        const tabs = document.querySelectorAll('.tab-btn');
+        const contents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => tab.classList.remove('active'));
+        contents.forEach(content => content.classList.remove('active'));
+
+        document.getElementById(tabName + 'Tab').classList.add('active');
+        document.getElementById(tabName + 'Content').classList.add('active');
+      }
+
+      // Font size controls
+      function toggleFontSizeControls() {
+        const panel = document.getElementById('fontSizePanel');
+        panel.classList.toggle('visible');
+      }
+
+      function setFontSize(size) {
+        const sizes = {
+          small: '90%',
+          medium: '100%',
+          large: '110%',
+          'extra-large': '120%',
+        };
+
+        document.documentElement.style.fontSize = sizes[size];
+
+        // Update active button
+        document.querySelectorAll('.font-preset-btn').forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.size === size);
+        });
+
+        // Update slider
+        const slider = document.getElementById('fontSizeSlider');
+        const value = parseInt(sizes[size]);
+        slider.value = value;
+        document.getElementById('sliderValue').textContent = sizes[size];
+
+        // Save preference
+        try {
+          localStorage.setItem('fontSize', size);
+        } catch (error) {
+          console.warn('Failed to save font size preference:', error);
+        }
+      }
+
+      function setCustomFontSize(value) {
+        const percentage = value + '%';
+        document.documentElement.style.fontSize = percentage;
+        document.getElementById('sliderValue').textContent = percentage;
+
+        // Update preset buttons
+        document.querySelectorAll('.font-preset-btn').forEach(btn => {
+          btn.classList.remove('active');
+        });
+
+        // Save preference
+        try {
+          localStorage.setItem('customFontSize', value);
+        } catch (error) {
+          console.warn('Failed to save custom font size:', error);
+        }
+      }
+
+      function toggleDyslexiaFont(enabled) {
+        document.documentElement.classList.toggle('dyslexia-font', enabled);
+        try {
+          localStorage.setItem('dyslexiaFont', enabled);
+        } catch (error) {
+          console.warn('Failed to save dyslexia font preference:', error);
+        }
+      }
+
+      function toggleLineHeight(enabled) {
+        document.documentElement.classList.toggle('increased-line-height', enabled);
+        try {
+          localStorage.setItem('increasedLineHeight', enabled);
+        } catch (error) {
+          console.warn('Failed to save line height preference:', error);
+        }
+      }
+
+      function resetFontSettings() {
+        document.documentElement.style.fontSize = '';
+        document.documentElement.classList.remove('dyslexia-font', 'increased-line-height');
+
+        // Reset UI
+        document.querySelector('.font-preset-btn[data-size="medium"]').classList.add('active');
+        document.getElementById('fontSizeSlider').value = 100;
+        document.getElementById('sliderValue').textContent = '100%';
+        document.getElementById('dyslexiaFont').checked = false;
+        document.getElementById('increaseLineHeight').checked = false;
+
+        // Clear localStorage
+        try {
+          localStorage.removeItem('fontSize');
+          localStorage.removeItem('customFontSize');
+          localStorage.removeItem('dyslexiaFont');
+          localStorage.removeItem('increasedLineHeight');
+        } catch (error) {
+          console.warn('Failed to clear font preferences:', error);
+        }
+      }
+
+      // Theme functionality is handled by theme-manager.js
+
+      function toggleHighContrast() {
+        // This will be handled by the theme manager module when it loads
+        if (window.themeManager && window.themeManager.toggleHighContrast) {
+          window.themeManager.toggleHighContrast();
+        }
+      }
+
+      function toggleThemeDropdown() {
+        if (window.themeManager && window.themeManager.toggleDropdown) {
+          window.themeManager.toggleDropdown();
+        }
+      }
+
+      // Global keyboard shortcuts - cross-platform compatible
+      document.addEventListener('keydown', function(e) {
+        // Check for Cmd+K (Mac) or Ctrl+K (Windows/Linux) to focus search
+        const isMac = /Mac|iPhone|iPad|iPod/.test(navigator.userAgent) || navigator.platform === 'MacIntel';
+        const isShortcutPressed = isMac ? e.metaKey : e.ctrlKey;
+        
+        if (isShortcutPressed && e.key.toLowerCase() === 'k') {
+          e.preventDefault();
+          const searchInput = document.getElementById('searchInput');
+          if (searchInput) {
+            searchInput.focus();
+            searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Clear existing search if any
+            if (searchInput.value.trim()) {
+              searchInput.select();
+            }
+          }
+        }
+        
+        // Escape key to blur search input
+        if (e.key === 'Escape') {
+          const searchInput = document.getElementById('searchInput');
+          if (searchInput && searchInput === document.activeElement) {
+            searchInput.blur();
+          }
+        }
+      });
+
+      // Initialize when page loads
+      document.addEventListener('DOMContentLoaded', function () {
+        initializeData();
+
+        // Initialize search functionality (skip on map)
+        
+        initializeSearch();
+        
+
+        // Auto-add current page to recent items
+        const currentPageData = {
+          title: document.title
+            .replace(' | Explore Scripture', '')
+            .replace('Explore Scripture', 'Home'),
+          subtitle:
+            document
+              .querySelector('meta[name="description"]')
+              ?.getAttribute('content')
+              ?.substring(0, 80) + '...' || '',
+          url: window.location.pathname,
+          timestamp: Date.now(),
+        };
+
+        // Don't add if it's just the site title
+        if (currentPageData.title && currentPageData.title !== 'Explore Scripture') {
+          setTimeout(() => addToRecentItems(currentPageData), 1000);
+        }
+      });
+
+      // Service worker registration and PWA functionality
+      let swRegistration = null;
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register('/sw.js')
+            .then(registration => {
+              swRegistration = registration;
+
+              if (registration.waiting && navigator.serviceWorker.controller) {
+                window.newServiceWorker = registration.waiting;
+                showUpdateNotification();
+              }
+
+              registration.addEventListener('updatefound', () => {
+                const newWorker = registration.installing;
+                if (!newWorker) return;
+                window.newServiceWorker = newWorker;
+                newWorker.addEventListener('statechange', () => {
+                  if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                    showUpdateNotification();
+                  }
+                });
+              });
+            })
+            .catch(error => {
+              console.warn('SW registration failed:', error);
+            });
+        });
+
+        // Listen for updates
+        navigator.serviceWorker.addEventListener('message', event => {
+          if (event.data && event.data.type === 'UPDATE_AVAILABLE') {
+            showUpdateNotification();
+          }
+        });
+
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+          if (!window.__swWaitingForRefresh || window.__swRefreshing) return;
+          window.__swRefreshing = true;
+          window.location.reload();
+        });
+      }
+
+      let updateNotification = null;
+
+      function showUpdateNotification() {
+        if (updateNotification) return;
+        window.__swUpdateAvailable = true;
+
+        updateNotification = document.createElement('div');
+        updateNotification.className = 'update-notification';
+        updateNotification.innerHTML = `
+        <div class="update-content">
+          <span class="update-icon">↻</span>
+          <div class="update-text">
+            <div class="update-title">Update Available</div>
+            <div class="update-subtitle">A new version is ready</div>
+          </div>
+          <button class="update-btn" onclick="updateServiceWorker()" aria-label="Update to latest version">Update</button>
+          <button class="update-dismiss" onclick="dismissUpdateNotification()" aria-label="Dismiss update notification">✕</button>
+        </div>
+      `;
+
+        document.body.appendChild(updateNotification);
+
+        // Auto-remove after 10 seconds
+        setTimeout(() => {
+          dismissUpdateNotification();
+        }, 10000);
+      }
+
+      function dismissUpdateNotification() {
+        if (updateNotification) {
+          updateNotification.remove();
+          updateNotification = null;
+        }
+      }
+
+      function updateServiceWorker() {
+        const pendingWorker =
+          window.newServiceWorker || (swRegistration && swRegistration.waiting);
+        if (pendingWorker) {
+          window.__swWaitingForRefresh = true;
+          pendingWorker.postMessage({ type: 'SKIP_WAITING' });
+          dismissUpdateNotification();
+          return;
+        }
+
+        if (window.__swUpdateAvailable) {
+          window.__swWaitingForRefresh = true;
+          window.location.reload();
+        }
+      }
+
+      // Online/offline status
+      window.addEventListener('online', showOnlineStatus);
+
+      function showOnlineStatus() {
+        const onlineIndicator = document.createElement('div');
+        onlineIndicator.className = 'online-indicator';
+        onlineIndicator.innerHTML = `
+        <div class="online-content">
+          <div class="online-icon">●</div>
+          <span>Back online!</span>
+        </div>
+      `;
+
+        document.body.appendChild(onlineIndicator);
+
+        setTimeout(() => {
+          onlineIndicator.remove();
+        }, 3000);
+      }
+
+      // Add version info to console
+      console.log('🔧 Site Version: v3.0.0 - Premium search experience with hero section');
+    </script>
+    
+    <!-- Version info -->
+    <div style="position: fixed; bottom: 5px; right: 5px; font-size: 10px; color: rgba(255,255,255,0.3); pointer-events: none; z-index: 9999;">
+      v3.0.0
+    </div>
+  
+
+</body></html>

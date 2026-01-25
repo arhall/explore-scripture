@@ -173,7 +173,7 @@ describe('Build Tests', () => {
       expect(indexContent).toContain('<html');
       expect(indexContent).toContain('<head>');
       expect(indexContent).toContain('<body>');
-      expect(indexContent).toContain('Bible Explorer');
+      expect(indexContent).toContain('Explore Scripture');
       expect(indexContent).toContain('</html>');
     });
 

@@ -1,4 +1,4 @@
-/* global HTMLElement, location, XMLSerializer, Image, getComputedStyle, customElements */
+/* global HTMLElement, location, XMLSerializer, getComputedStyle, customElements */
 
 // Use globally loaded D3.js
 const d3 = window.d3;

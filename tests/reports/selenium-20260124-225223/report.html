@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">report.html</title>
+      <style type="text/css">body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  /* do not increase min-width as some may use split screens */
+  min-width: 800px;
+  color: #999;
+}
+
+h1 {
+  font-size: 24px;
+  color: black;
+}
+
+h2 {
+  font-size: 16px;
+  color: black;
+}
+
+p {
+  color: black;
+}
+
+a {
+  color: #999;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/******************************
+ * SUMMARY INFORMATION
+ ******************************/
+#environment td {
+  padding: 5px;
+  border: 1px solid #e6e6e6;
+  vertical-align: top;
+}
+#environment tr:nth-child(odd) {
+  background-color: #f6f6f6;
+}
+#environment ul {
+  margin: 0;
+  padding: 0 20px;
+}
+
+/******************************
+ * TEST RESULT COLORS
+ ******************************/
+span.passed,
+.passed .col-result {
+  color: green;
+}
+
+span.skipped,
+span.xfailed,
+span.rerun,
+.skipped .col-result,
+.xfailed .col-result,
+.rerun .col-result {
+  color: orange;
+}
+
+span.error,
+span.failed,
+span.xpassed,
+.error .col-result,
+.failed .col-result,
+.xpassed .col-result {
+  color: red;
+}
+
+.col-links__extra {
+  margin-right: 3px;
+}
+
+/******************************
+ * RESULTS TABLE
+ *
+ * 1. Table Layout
+ * 2. Extra
+ * 3. Sorting items
+ *
+ ******************************/
+/*------------------
+ * 1. Table Layout
+ *------------------*/
+#results-table {
+  border: 1px solid #e6e6e6;
+  color: #999;
+  font-size: 12px;
+  width: 100%;
+}
+#results-table th,
+#results-table td {
+  padding: 5px;
+  border: 1px solid #e6e6e6;
+  text-align: left;
+}
+#results-table th {
+  font-weight: bold;
+}
+
+/*------------------
+ * 2. Extra
+ *------------------*/
+.logwrapper {
+  max-height: 230px;
+  overflow-y: scroll;
+  background-color: #e6e6e6;
+}
+.logwrapper.expanded {
+  max-height: none;
+}
+.logwrapper.expanded .logexpander:after {
+  content: "collapse [-]";
+}
+.logwrapper .logexpander {
+  z-index: 1;
+  position: sticky;
+  top: 10px;
+  width: max-content;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 5px 7px;
+  margin: 10px 0 10px calc(100% - 80px);
+  cursor: pointer;
+  background-color: #e6e6e6;
+}
+.logwrapper .logexpander:after {
+  content: "expand [+]";
+}
+.logwrapper .logexpander:hover {
+  color: #000;
+  border-color: #000;
+}
+.logwrapper .log {
+  min-height: 40px;
+  position: relative;
+  top: -50px;
+  height: calc(100% + 50px);
+  border: 1px solid #e6e6e6;
+  color: black;
+  display: block;
+  font-family: "Courier New", Courier, monospace;
+  padding: 5px;
+  padding-right: 80px;
+  white-space: pre-wrap;
+}
+
+div.media {
+  border: 1px solid #e6e6e6;
+  float: right;
+  height: 240px;
+  margin: 0 5px;
+  overflow: hidden;
+  width: 320px;
+}
+
+.media-container {
+  display: grid;
+  grid-template-columns: 25px auto 25px;
+  align-items: center;
+  flex: 1 1;
+  overflow: hidden;
+  height: 200px;
+}
+
+.media-container--fullscreen {
+  grid-template-columns: 0px auto 0px;
+}
+
+.media-container__nav--right,
+.media-container__nav--left {
+  text-align: center;
+  cursor: pointer;
+}
+
+.media-container__viewport {
+  cursor: pointer;
+  text-align: center;
+  height: inherit;
+}
+.media-container__viewport img,
+.media-container__viewport video {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+.media__name,
+.media__counter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 0 0 25px;
+  align-items: center;
+}
+
+.collapsible td:not(.col-links) {
+  cursor: pointer;
+}
+.collapsible td:not(.col-links):hover::after {
+  color: #bbb;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.col-result {
+  width: 130px;
+}
+.col-result:hover::after {
+  content: " (hide details)";
+}
+
+.col-result.collapsed:hover::after {
+  content: " (show details)";
+}
+
+#environment-header h2:hover::after {
+  content: " (hide details)";
+  color: #bbb;
+  font-style: italic;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#environment-header.collapsed h2:hover::after {
+  content: " (show details)";
+  color: #bbb;
+  font-style: italic;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/*------------------
+ * 3. Sorting items
+ *------------------*/
+.sortable {
+  cursor: pointer;
+}
+.sortable.desc:after {
+  content: " ";
+  position: relative;
+  left: 5px;
+  bottom: -12.5px;
+  border: 10px solid #4caf50;
+  border-bottom: 0;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+.sortable.asc:after {
+  content: " ";
+  position: relative;
+  left: 5px;
+  bottom: 12.5px;
+  border: 10px solid #4caf50;
+  border-top: 0;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.hidden, .summary__reload__button.hidden {
+  display: none;
+}
+
+.summary__data {
+  flex: 0 0 550px;
+}
+.summary__reload {
+  flex: 1 1;
+  display: flex;
+  justify-content: center;
+}
+.summary__reload__button {
+  flex: 0 0 300px;
+  display: flex;
+  color: white;
+  font-weight: bold;
+  background-color: #4caf50;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.summary__reload__button:hover {
+  background-color: #46a049;
+}
+.summary__spacer {
+  flex: 0 0 550px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters,
+.collapse {
+  display: flex;
+  align-items: center;
+}
+.filters button,
+.collapse button {
+  color: #999;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.filters button:hover,
+.collapse button:hover {
+  color: #ccc;
+}
+
+.filter__label {
+  margin-right: 10px;
+}
+
+      </style>
+    
+  </head>
+  <body>
+    <h1 id="title">report.html</h1>
+    <p>Report generated on 24-Jan-2026 at 22:55:25 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.2.0</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</td>
+        </tr>
+      </tbody>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">92 tests took 00:03:01.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" >
+            <span class="failed">15 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" >
+            <span class="passed">77 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" >
+            <span class="skipped">1 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" >
+            <span class="error">12 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled>
+            <span class="rerun">0 Reruns</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="retried" disabled>
+            <span class="retried">0 Retried,</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.14.2&#34;, &#34;Platform&#34;: &#34;macOS-26.2-arm64-arm-64bit-Mach-O&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;9.0.2&#34;, &#34;pluggy&#34;: &#34;1.6.0&#34;}, &#34;Plugins&#34;: {&#34;xdist&#34;: &#34;3.8.0&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;, &#34;html&#34;: &#34;4.2.0&#34;}, &#34;JAVA_HOME&#34;: &#34;/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home&#34;}, &#34;tests&#34;: {&#34;tests/test_env_config.py::test_environment_variables_loaded&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_env_config.py::test_environment_variables_loaded&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_env_config.py::test_environment_variables_loaded&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw7] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\nEXPLORE_SCRIPTURE_LOCAL: true\nLOCAL_BASE_URL: http://localhost:8080\nPRODUCTION_BASE_URL: https://explore-scripture.pages.dev\n&#34;}], &#34;tests/test_ios_safari.py::TestIOSSafari::test_mobile_homepage_loads&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tests/test_ios_safari.py::TestIOSSafari::test_mobile_homepage_loads::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_ios_safari.py::TestIOSSafari::test_mobile_homepage_loads::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw4] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\nFixture &amp;quot;_appium_server_url&amp;quot; called directly. Fixtures are not meant to be called directly,\nbut are created automatically when test functions request them as parameters.\nSee https://docs.pytest.org/en/stable/explanation/fixtures.html for more information about fixtures, and\nhttps://docs.pytest.org/en/stable/deprecations.html#calling-fixtures-directly\n&#34;}], &#34;tests/test_ios_safari.py::TestIOSSafari::test_mobile_navigation_menu&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tests/test_ios_safari.py::TestIOSSafari::test_mobile_navigation_menu::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_ios_safari.py::TestIOSSafari::test_mobile_navigation_menu::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw4] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\nFixture &amp;quot;_appium_server_url&amp;quot; called directly. Fixtures are not meant to be called directly,\nbut are created automatically when test functions request them as parameters.\nSee https://docs.pytest.org/en/stable/explanation/fixtures.html for more information about fixtures, and\nhttps://docs.pytest.org/en/stable/deprecations.html#calling-fixtures-directly\n&#34;}], &#34;tests/test_ios_safari.py::TestIOSSafari::test_mobile_theme_toggle&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tests/test_ios_safari.py::TestIOSSafari::test_mobile_theme_toggle::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_ios_safari.py::TestIOSSafari::test_mobile_theme_toggle::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw4] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\nFixture &amp;quot;_appium_server_url&amp;quot; called directly. Fixtures are not meant to be called directly,\nbut are created automatically when test functions request them as parameters.\nSee https://docs.pytest.org/en/stable/explanation/fixtures.html for more information about fixtures, and\nhttps://docs.pytest.org/en/stable/deprecations.html#calling-fixtures-directly\n&#34;}], &#34;tests/test_env_config.py::test_base_url_selection&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_env_config.py::test_base_url_selection&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_env_config.py::test_base_url_selection&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw7] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\nOK Using local development server: http://localhost:8080\n&#34;}], &#34;tests/test_env_config.py::test_test_urls_generated&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_env_config.py::test_test_urls_generated&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_env_config.py::test_test_urls_generated&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw7] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\nOK Test URLs generated successfully:\n  base: http://localhost:8080\n  genesis: http://localhost:8080/books/genesis/\n  entities: http://localhost:8080/entities/\n  categories: http://localhost:8080/categories/\n  gospel_thread: http://localhost:8080/gospel-thread/\n  search_api: http://localhost:8080/api/search\n&#34;}], &#34;tests/test_env_config.py::test_browser_configuration&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_env_config.py::test_browser_configuration&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_env_config.py::test_browser_configuration&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw7] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\nOK Browser config - Width: 1280, Height: 720, Headless: False\n&#34;}], &#34;tests/test_ios_safari.py::TestIOSSafari::test_mobile_character_search&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tests/test_ios_safari.py::TestIOSSafari::test_mobile_character_search::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_ios_safari.py::TestIOSSafari::test_mobile_character_search::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw4] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\nFixture &amp;quot;_appium_server_url&amp;quot; called directly. Fixtures are not meant to be called directly,\nbut are created automatically when test functions request them as parameters.\nSee https://docs.pytest.org/en/stable/explanation/fixtures.html for more information about fixtures, and\nhttps://docs.pytest.org/en/stable/deprecations.html#calling-fixtures-directly\n&#34;}], &#34;tests/test_env_config.py::test_timeout_configuration&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_env_config.py::test_timeout_configuration&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_env_config.py::test_timeout_configuration&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw7] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\nOK Timeouts - Test: 30000ms, Page Load: 10000ms\n&#34;}], &#34;tests/test_ios_safari.py::TestIOSSafari::test_mobile_chapter_reader&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tests/test_ios_safari.py::TestIOSSafari::test_mobile_chapter_reader::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_ios_safari.py::TestIOSSafari::test_mobile_chapter_reader::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw4] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\nFixture &amp;quot;_appium_server_url&amp;quot; called directly. Fixtures are not meant to be called directly,\nbut are created automatically when test functions request them as parameters.\nSee https://docs.pytest.org/en/stable/explanation/fixtures.html for more information about fixtures, and\nhttps://docs.pytest.org/en/stable/deprecations.html#calling-fixtures-directly\n&#34;}], &#34;tests/test_ios_safari.py::TestIOSSafari::test_mobile_scripture_widget&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tests/test_ios_safari.py::TestIOSSafari::test_mobile_scripture_widget::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_ios_safari.py::TestIOSSafari::test_mobile_scripture_widget::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw4] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\nFixture &amp;quot;_appium_server_url&amp;quot; called directly. Fixtures are not meant to be called directly,\nbut are created automatically when test functions request them as parameters.\nSee https://docs.pytest.org/en/stable/explanation/fixtures.html for more information about fixtures, and\nhttps://docs.pytest.org/en/stable/deprecations.html#calling-fixtures-directly\n&#34;}], &#34;tests/test_ios_safari.py::TestIOSSafari::test_mobile_responsive_design&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tests/test_ios_safari.py::TestIOSSafari::test_mobile_responsive_design::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_ios_safari.py::TestIOSSafari::test_mobile_responsive_design::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw4] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\nFixture &amp;quot;_appium_server_url&amp;quot; called directly. Fixtures are not meant to be called directly,\nbut are created automatically when test functions request them as parameters.\nSee https://docs.pytest.org/en/stable/explanation/fixtures.html for more information about fixtures, and\nhttps://docs.pytest.org/en/stable/deprecations.html#calling-fixtures-directly\n&#34;}], &#34;tests/test_ios_safari.py::TestIOSSafari::test_mobile_performance_basic&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tests/test_ios_safari.py::TestIOSSafari::test_mobile_performance_basic::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_ios_safari.py::TestIOSSafari::test_mobile_performance_basic::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw4] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\nFixture &amp;quot;_appium_server_url&amp;quot; called directly. Fixtures are not meant to be called directly,\nbut are created automatically when test functions request them as parameters.\nSee https://docs.pytest.org/en/stable/explanation/fixtures.html for more information about fixtures, and\nhttps://docs.pytest.org/en/stable/deprecations.html#calling-fixtures-directly\n&#34;}], &#34;tests/test_ios_safari.py::TestIOSSafari::test_mobile_book_navigation&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tests/test_ios_safari.py::TestIOSSafari::test_mobile_book_navigation::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_ios_safari.py::TestIOSSafari::test_mobile_book_navigation::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw4] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\nFixture &amp;quot;_appium_server_url&amp;quot; called directly. Fixtures are not meant to be called directly,\nbut are created automatically when test functions request them as parameters.\nSee https://docs.pytest.org/en/stable/explanation/fixtures.html for more information about fixtures, and\nhttps://docs.pytest.org/en/stable/deprecations.html#calling-fixtures-directly\n&#34;}], &#34;tests/test_ios_safari.py::TestIOSSafari::test_mobile_accessibility_basics&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tests/test_ios_safari.py::TestIOSSafari::test_mobile_accessibility_basics::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_ios_safari.py::TestIOSSafari::test_mobile_accessibility_basics::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw4] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\nFixture &amp;quot;_appium_server_url&amp;quot; called directly. Fixtures are not meant to be called directly,\nbut are created automatically when test functions request them as parameters.\nSee https://docs.pytest.org/en/stable/explanation/fixtures.html for more information about fixtures, and\nhttps://docs.pytest.org/en/stable/deprecations.html#calling-fixtures-directly\n&#34;}], &#34;tests/test_ios_safari.py::TestIOSSpecific::test_ios_safari_viewport_behavior&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tests/test_ios_safari.py::TestIOSSpecific::test_ios_safari_viewport_behavior::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_ios_safari.py::TestIOSSpecific::test_ios_safari_viewport_behavior::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw4] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\nFixture &amp;quot;_appium_server_url&amp;quot; called directly. Fixtures are not meant to be called directly,\nbut are created automatically when test functions request them as parameters.\nSee https://docs.pytest.org/en/stable/explanation/fixtures.html for more information about fixtures, and\nhttps://docs.pytest.org/en/stable/deprecations.html#calling-fixtures-directly\n&#34;}], &#34;tests/test_ios_safari.py::TestIOSSpecific::test_ios_touch_events&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tests/test_ios_safari.py::TestIOSSpecific::test_ios_touch_events::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_ios_safari.py::TestIOSSpecific::test_ios_touch_events::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw4] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\nFixture &amp;quot;_appium_server_url&amp;quot; called directly. Fixtures are not meant to be called directly,\nbut are created automatically when test functions request them as parameters.\nSee https://docs.pytest.org/en/stable/explanation/fixtures.html for more information about fixtures, and\nhttps://docs.pytest.org/en/stable/deprecations.html#calling-fixtures-directly\n&#34;}], &#34;tests/test_entities_system.py::TestEntitiesSystem::test_entities_page_loads&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_entities_system.py::TestEntitiesSystem::test_entities_page_loads&#34;, &#34;duration&#34;: &#34;00:00:06&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_entities_system.py::TestEntitiesSystem::test_entities_page_loads&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:06&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw2] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_homepage_loads&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_homepage_loads&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_bible_explorer.py::TestBibleExplorer::test_homepage_loads&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\ntests/test_bible_explorer.py:82: in test_homepage_loads\n    assert len(critical_errors) == 0, f&amp;quot;Critical JavaScript errors found: {critical_errors}&amp;quot;\nE   AssertionError: Critical JavaScript errors found: [{&amp;#x27;level&amp;#x27;: &amp;#x27;SEVERE&amp;#x27;, &amp;#x27;message&amp;#x27;: &amp;#x27;network - A bad HTTP response code (404) was received when fetching the script.&amp;#x27;, &amp;#x27;source&amp;#x27;: &amp;#x27;network&amp;#x27;, &amp;#x27;timestamp&amp;#x27;: 1769313151765}]\nE   assert 1 == 0\nE    +  where 1 = len([{&amp;#x27;level&amp;#x27;: &amp;#x27;SEVERE&amp;#x27;, &amp;#x27;message&amp;#x27;: &amp;#x27;network - A bad HTTP response code (404) was received when fetching the script.&amp;#x27;, &amp;#x27;source&amp;#x27;: &amp;#x27;network&amp;#x27;, &amp;#x27;timestamp&amp;#x27;: 1769313151765}])\n&#34;}], &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_navigation_elements&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_navigation_elements&#34;, &#34;duration&#34;: &#34;190 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_bible_explorer.py::TestBibleExplorer::test_navigation_elements&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;190 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_hero_section_content&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_hero_section_content&#34;, &#34;duration&#34;: &#34;165 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_bible_explorer.py::TestBibleExplorer::test_hero_section_content&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;165 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_genealogy_page_loads&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_genealogy_page_loads&#34;, &#34;duration&#34;: &#34;00:00:08&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_genealogy_page_loads&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:08&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_theme_toggle&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_theme_toggle&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_bible_explorer.py::TestBibleExplorer::test_theme_toggle&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_theme_toggle_functionality[chrome]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_theme_toggle_functionality[chrome]&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_theme_toggle_functionality[chrome]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing theme toggle functionality...\nInitial theme: slate\nNew theme: light\nOK Theme toggle functionality working correctly\n&#34;}], &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_search_functionality&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_search_functionality&#34;, &#34;duration&#34;: &#34;729 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_bible_explorer.py::TestBibleExplorer::test_search_functionality&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;729 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\ntests/test_bible_explorer.py:187: in test_search_functionality\n    assert search_input.is_displayed()\nE   assert False\nE    +  where False = is_displayed()\nE    +    where is_displayed = &amp;lt;selenium.webdriver.remote.webelement.WebElement (session=&amp;quot;d261344a1a04af520786f64f5d82723c&amp;quot;, element=&amp;quot;f.EF3D1D95EC46C67FD9EFFDC8B21C94C5.d.B74343CCB735BD22C8A56150EDA9F698.e.127&amp;quot;)&amp;gt;.is_displayed\n&#34;}], &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_font_controls&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_font_controls&#34;, &#34;duration&#34;: &#34;00:00:01&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_bible_explorer.py::TestBibleExplorer::test_font_controls&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:01&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_e2e_ui.py::TestE2EUI::test_global_search_direct_reference&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_e2e_ui.py::TestE2EUI::test_global_search_direct_reference&#34;, &#34;duration&#34;: &#34;00:00:12&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_e2e_ui.py::TestE2EUI::test_global_search_direct_reference&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:12&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw7] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n---------------------------- Captured stdout setup -----------------------------\nDevelopment server already running\n&#34;}], &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_high_contrast_mode&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_high_contrast_mode&#34;, &#34;duration&#34;: &#34;00:00:01&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_bible_explorer.py::TestBibleExplorer::test_high_contrast_mode&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:01&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_entities_system.py::TestEntitiesSystem::test_entity_search_functionality&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_entities_system.py::TestEntitiesSystem::test_entity_search_functionality&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_entities_system.py::TestEntitiesSystem::test_entity_search_functionality&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw2] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_commentary_system.py::TestCommentarySystem::test_commentary_buttons_exist&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_commentary_system.py::TestCommentarySystem::test_commentary_buttons_exist&#34;, &#34;duration&#34;: &#34;00:00:13&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_commentary_system.py::TestCommentarySystem::test_commentary_buttons_exist&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:13&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw5] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_responsive_layout_mobile&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_responsive_layout_mobile&#34;, &#34;duration&#34;: &#34;00:00:01&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_bible_explorer.py::TestBibleExplorer::test_responsive_layout_mobile&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:01&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_scripture_widget.py::test_scripture_widget_loads&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_scripture_widget.py::test_scripture_widget_loads&#34;, &#34;duration&#34;: &#34;00:00:16&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_scripture_widget.py::test_scripture_widget_loads&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:16&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw6] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\ntests/test_scripture_widget.py:42: in test_scripture_widget_loads\n    ensure_scripture_widget_loaded(chrome_driver)\ntests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded\n    WebDriverWait(driver, 10).until(\ntest-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until\n    raise TimeoutException(message, screen, stacktrace)\nE   selenium.common.exceptions.TimeoutException: Message:\n&#34;}], &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_cluster_dropdown_exists&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_cluster_dropdown_exists&#34;, &#34;duration&#34;: &#34;00:00:09&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_cluster_dropdown_exists&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:09&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_e2e_ui.py::TestE2EUI::test_sections_browse_cards&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_e2e_ui.py::TestE2EUI::test_sections_browse_cards&#34;, &#34;duration&#34;: &#34;00:00:08&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_e2e_ui.py::TestE2EUI::test_sections_browse_cards&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:08&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw7] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_theme_toggle_functionality[firefox]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_theme_toggle_functionality[firefox]&#34;, &#34;duration&#34;: &#34;00:00:13&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_theme_toggle_functionality[firefox]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:13&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing theme toggle functionality...\nInitial theme: slate\nNew theme: light\nOK Theme toggle functionality working correctly\n&#34;}], &#34;tests/test_commentary_system.py::TestCommentarySystem::test_commentary_modal_opens&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_commentary_system.py::TestCommentarySystem::test_commentary_modal_opens&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_commentary_system.py::TestCommentarySystem::test_commentary_modal_opens&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw5] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_royal_line_cluster_exists&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_royal_line_cluster_exists&#34;, &#34;duration&#34;: &#34;00:00:06&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_royal_line_cluster_exists&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:06&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_accessibility_features&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_accessibility_features&#34;, &#34;duration&#34;: &#34;00:00:11&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_bible_explorer.py::TestBibleExplorer::test_accessibility_features&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:11&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_page_performance&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_page_performance&#34;, &#34;duration&#34;: &#34;232 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_bible_explorer.py::TestBibleExplorer::test_page_performance&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;232 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_character_page_navigation&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_character_page_navigation&#34;, &#34;duration&#34;: &#34;797 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_bible_explorer.py::TestBibleExplorer::test_character_page_navigation&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;797 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_css_loading_and_styling&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_css_loading_and_styling&#34;, &#34;duration&#34;: &#34;144 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_bible_explorer.py::TestBibleExplorer::test_css_loading_and_styling&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;144 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_javascript_execution&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_bible_explorer.py::TestBibleExplorer::test_javascript_execution&#34;, &#34;duration&#34;: &#34;302 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_bible_explorer.py::TestBibleExplorer::test_javascript_execution&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;302 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_e2e_ui.py::TestE2EUI::test_quick_access_panel_toggle&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_e2e_ui.py::TestE2EUI::test_quick_access_panel_toggle&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_e2e_ui.py::TestE2EUI::test_quick_access_panel_toggle&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw7] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\ntests/test_e2e_ui.py:86: in test_quick_access_panel_toggle\n    toggle.click()\ntest-env/lib/python3.14/site-packages/selenium/webdriver/remote/webelement.py:114: in click\n    self._execute(Command.CLICK_ELEMENT)\ntest-env/lib/python3.14/site-packages/selenium/webdriver/remote/webelement.py:508: in _execute\n    return self._parent.execute(command, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntest-env/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py:432: in execute\n    self.error_handler.check_response(response)\ntest-env/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py:232: in check_response\n    raise exception_class(message, screen, stacktrace)\nE   selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element &amp;lt;button class=&amp;quot;recents-bookmarks-toggle&amp;quot; onclick=&amp;quot;toggleRecentsBookmarks()&amp;quot; aria-label=&amp;quot;Toggle recent items and bookmarks&amp;quot;&amp;gt;...&amp;lt;/button&amp;gt; is not clickable at point (1509, 72). Other element would receive the click: &amp;lt;div class=&amp;quot;recents-bookmarks-content&amp;quot;&amp;gt;...&amp;lt;/div&amp;gt;\nE     (Session info: chrome=144.0.7559.97); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception\nE   Stacktrace:\nE   0   chromedriver                        0x0000000104604640 cxxbridge1$str$ptr + 3087720\nE   1   chromedriver                        0x00000001045fc8b4 cxxbridge1$str$ptr + 3055580\nE   2   chromedriver                        0x00000001040e2890 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75272\nE   3   chromedriver                        0x0000000104131b08 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 399488\nE   4   chromedriver                        0x0000000104130030 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392616\nE   5   chromedriver                        0x000000010412dd98 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 383760\nE   6   chromedriver                        0x000000010412d138 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 380592\nE   7   chromedriver                        0x0000000104121d28 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334496\nE   8   chromedriver                        0x00000001041217a4 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333084\nE   9   chromedriver                        0x000000010416b064 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634332\nE   10  chromedriver                        0x00000001041200e4 _RNvCs5DBLTqoOdVp_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 327260\nE   11  chromedriver                        0x00000001045c3620 cxxbridge1$str$ptr + 2821448\nE   12  chromedriver                        0x00000001045c6d5c cxxbridge1$str$ptr + 2835588\nE   13  chromedriver                        0x00000001045a89c4 cxxbridge1$str$ptr + 2711788\nE   14  chromedriver                        0x00000001045c75e0 cxxbridge1$str$ptr + 2837768\nE   15  chromedriver                        0x0000000104598990 cxxbridge1$str$ptr + 2646200\nE   16  chromedriver                        0x00000001045eb9bc cxxbridge1$str$ptr + 2986212\nE   17  chromedriver                        0x00000001045ebb38 cxxbridge1$str$ptr + 2986592\nE   18  chromedriver                        0x00000001045fc50c cxxbridge1$str$ptr + 3054644\nE   19  libsystem_pthread.dylib             0x0000000182b95c08 _pthread_start + 136\nE   20  libsystem_pthread.dylib             0x0000000182b90ba8 thread_start + 8\n&#34;}], &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_messianic_line_checkbox&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_messianic_line_checkbox&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_messianic_line_checkbox&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_entities_system.py::TestEntitiesSystem::test_individual_entity_page&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_entities_system.py::TestEntitiesSystem::test_individual_entity_page&#34;, &#34;duration&#34;: &#34;00:00:18&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_entities_system.py::TestEntitiesSystem::test_individual_entity_page&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:18&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw2] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_tree_nodes_render&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_tree_nodes_render&#34;, &#34;duration&#34;: &#34;00:00:05&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_tree_nodes_render&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:05&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_chapter_reader_buttons_present[chrome]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_chapter_reader_buttons_present[chrome]&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_chapter_reader_buttons_present[chrome]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing chapter reader buttons...\nFound 50 chapter reader buttons\nOK Found 50 working chapter reader buttons\n&#34;}], &#34;tests/test_commentary_system.py::TestCommentarySystem::test_commentary_source_switching&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_commentary_system.py::TestCommentarySystem::test_commentary_source_switching&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_commentary_system.py::TestCommentarySystem::test_commentary_source_switching&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw5] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_entities_system.py::TestEntitiesSystem::test_entity_profile_content_loads&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;tests/test_entities_system.py::TestEntitiesSystem::test_entity_profile_content_loads&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_entities_system.py::TestEntitiesSystem::test_entity_profile_content_loads&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw2] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n(&amp;#x27;/Users/andrewhall/repo/explore-scripture/tests/test_entities_system.py&amp;#x27;, 143, &amp;#x27;Skipped: Entity not found for profile test&amp;#x27;)\n&#34;}], &#34;tests/test_scripture_widget.py::test_scripture_references_enhanced&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_scripture_widget.py::test_scripture_references_enhanced&#34;, &#34;duration&#34;: &#34;00:00:17&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_scripture_widget.py::test_scripture_references_enhanced&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:17&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw6] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\ntests/test_scripture_widget.py:54: in test_scripture_references_enhanced\n    ensure_scripture_widget_loaded(chrome_driver)\ntests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded\n    WebDriverWait(driver, 10).until(\ntest-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until\n    raise TimeoutException(message, screen, stacktrace)\nE   selenium.common.exceptions.TimeoutException: Message:\n&#34;}], &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_messianic_line_highlighting&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_messianic_line_highlighting&#34;, &#34;duration&#34;: &#34;00:00:09&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_messianic_line_highlighting&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:09&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_entities_system.py::TestEntitiesSystem::test_entity_cross_references&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_entities_system.py::TestEntitiesSystem::test_entity_cross_references&#34;, &#34;duration&#34;: &#34;00:00:09&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_entities_system.py::TestEntitiesSystem::test_entity_cross_references&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:09&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw2] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_chapter_reader_buttons_present[firefox]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_chapter_reader_buttons_present[firefox]&#34;, &#34;duration&#34;: &#34;00:00:13&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_chapter_reader_buttons_present[firefox]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:13&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing chapter reader buttons...\nFound 100 chapter reader buttons\nOK Found 100 working chapter reader buttons\n&#34;}], &#34;tests/test_commentary_system.py::TestCommentarySystem::test_iframe_vs_direct_access_handling&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_commentary_system.py::TestCommentarySystem::test_iframe_vs_direct_access_handling&#34;, &#34;duration&#34;: &#34;00:00:13&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_commentary_system.py::TestCommentarySystem::test_iframe_vs_direct_access_handling&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:13&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw5] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_tooltip_appears_on_hover&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_tooltip_appears_on_hover&#34;, &#34;duration&#34;: &#34;00:00:06&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_tooltip_appears_on_hover&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:06&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_entities_system.py::TestEntitiesSystem::test_entity_book_filtering&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_entities_system.py::TestEntitiesSystem::test_entity_book_filtering&#34;, &#34;duration&#34;: &#34;00:00:04&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_entities_system.py::TestEntitiesSystem::test_entity_book_filtering&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:04&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw2] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_royal_line_cluster_loads&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_royal_line_cluster_loads&#34;, &#34;duration&#34;: &#34;00:00:04&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_royal_line_cluster_loads&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:04&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\ntests/test_genealogy_visualization.py:168: in test_royal_line_cluster_loads\n    select.select_by_value(&amp;#x27;cluster:royal_line&amp;#x27;)\ntest-env/lib/python3.14/site-packages/selenium/webdriver/support/select.py:85: in select_by_value\n    raise NoSuchElementException(f&amp;quot;Cannot locate option with value: {value}&amp;quot;)\nE   selenium.common.exceptions.NoSuchElementException: Message: Cannot locate option with value: cluster:royal_line; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\n&#34;}], &#34;tests/test_scripture_widget.py::test_desktop_hover_behavior&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_scripture_widget.py::test_desktop_hover_behavior&#34;, &#34;duration&#34;: &#34;00:00:17&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_scripture_widget.py::test_desktop_hover_behavior&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:17&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw6] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\ntests/test_scripture_widget.py:78: in test_desktop_hover_behavior\n    ensure_scripture_widget_loaded(chrome_driver)\ntests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded\n    WebDriverWait(driver, 10).until(\ntest-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until\n    raise TimeoutException(message, screen, stacktrace)\nE   selenium.common.exceptions.TimeoutException: Message:\n&#34;}], &#34;tests/test_entities_system.py::TestEntitiesSystem::test_entities_filter_character_study_and_testament&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_entities_system.py::TestEntitiesSystem::test_entities_filter_character_study_and_testament&#34;, &#34;duration&#34;: &#34;00:00:05&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_entities_system.py::TestEntitiesSystem::test_entities_filter_character_study_and_testament&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:05&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw2] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_cluster_has_expected_nodes&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_cluster_has_expected_nodes&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_cluster_has_expected_nodes&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\ntests/test_genealogy_visualization.py:187: in test_cluster_has_expected_nodes\n    select.select_by_value(&amp;#x27;cluster:royal_line&amp;#x27;)\ntest-env/lib/python3.14/site-packages/selenium/webdriver/support/select.py:85: in select_by_value\n    raise NoSuchElementException(f&amp;quot;Cannot locate option with value: {value}&amp;quot;)\nE   selenium.common.exceptions.NoSuchElementException: Message: Cannot locate option with value: cluster:royal_line; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_no_duplicate_chapter_reader_buttons[chrome]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_no_duplicate_chapter_reader_buttons[chrome]&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_no_duplicate_chapter_reader_buttons[chrome]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing for duplicate chapter reader buttons...\nChapters with buttons: 50\nDuplicate issues found: 0\nOK No duplicate chapter reader buttons found\n&#34;}], &#34;tests/test_entities_system.py::TestEntitiesSystem::test_entity_responsive_design&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_entities_system.py::TestEntitiesSystem::test_entity_responsive_design&#34;, &#34;duration&#34;: &#34;00:00:04&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_entities_system.py::TestEntitiesSystem::test_entity_responsive_design&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:04&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw2] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_circle_fill_states&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_circle_fill_states&#34;, &#34;duration&#34;: &#34;00:00:08&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_circle_fill_states&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:08&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_search_functionality_exists&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_search_functionality_exists&#34;, &#34;duration&#34;: &#34;00:00:04&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_search_functionality_exists&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:04&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_commentary_system.py::TestCommentarySystem::test_book_name_edge_cases&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_commentary_system.py::TestCommentarySystem::test_book_name_edge_cases&#34;, &#34;duration&#34;: &#34;00:00:19&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_commentary_system.py::TestCommentarySystem::test_book_name_edge_cases&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:19&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw5] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_scripture_widget.py::test_mobile_tap_behavior&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_scripture_widget.py::test_mobile_tap_behavior&#34;, &#34;duration&#34;: &#34;00:00:15&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_scripture_widget.py::test_mobile_tap_behavior&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:15&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw6] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\ntests/test_scripture_widget.py:108: in test_mobile_tap_behavior\n    ensure_scripture_widget_loaded(chrome_driver)\ntests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded\n    WebDriverWait(driver, 10).until(\ntest-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until\n    raise TimeoutException(message, screen, stacktrace)\nE   selenium.common.exceptions.TimeoutException: Message:\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_no_duplicate_chapter_reader_buttons[firefox]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_no_duplicate_chapter_reader_buttons[firefox]&#34;, &#34;duration&#34;: &#34;00:00:13&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_no_duplicate_chapter_reader_buttons[firefox]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:13&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing for duplicate chapter reader buttons...\nChapters with buttons: 50\nDuplicate issues found: 0\nOK No duplicate chapter reader buttons found\n&#34;}], &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_zoom_controls_exist&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_zoom_controls_exist&#34;, &#34;duration&#34;: &#34;00:00:04&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_zoom_controls_exist&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:04&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_data_file_accessible&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_data_file_accessible&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_data_file_accessible&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_youtube_videos_not_blocked[chrome]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_youtube_videos_not_blocked[chrome]&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_youtube_videos_not_blocked[chrome]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing YouTube video embedding...\nCSP Header: default-src &amp;#x27;self&amp;#x27;; script-src &amp;#x27;self&amp;#x27; &amp;#x27;unsafe-inline&amp;#x27; https://cdn.jsdelivr.net https://unpkg.com https://api.reftagger.com; style-src &amp;#x27;self&amp;#x27; &amp;#x27;unsafe-inline&amp;#x27; https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src &amp;#x27;self&amp;#x27; data: https://fonts.gstatic.com https://basemaps.cartocdn.com https://tiles.basemaps.cartocdn.com https://*.basemaps.cartocdn.com; img-src &amp;#x27;self&amp;#x27; data: https: https://i.ytimg.com https://yt3.ggpht.com; connect-src &amp;#x27;self&amp;#x27; https://api.esv.org https://www.biblegateway.com https://bible-api.com https://tile.openstreetmap.org https://basemaps.cartocdn.com https://tiles.basemaps.cartocdn.com https://tiles-a.basemaps.cartocdn.com https://tiles-b.basemaps.cartocdn.com https://tiles-c.basemaps.cartocdn.com https://tiles-d.basemaps.cartocdn.com https://*.basemaps.cartocdn.com https://demotiles.maplibre.org https://cdn.jsdelivr.net; worker-src &amp;#x27;self&amp;#x27; https://unpkg.com https://cdn.jsdelivr.net blob:; frame-src &amp;#x27;self&amp;#x27; https://www.youtube.com https://www.biblegateway.com https://www.youtube-nocookie.com https://enduringword.com https://www.biblestudytools.com https://www.studylight.org https://biblehub.com https://biblefamilytree.info https://onemessianicgentile.com https://www.onemessianicgentile.com; object-src &amp;#x27;none&amp;#x27;; base-uri &amp;#x27;self&amp;#x27;; form-action &amp;#x27;self&amp;#x27;; upgrade-insecure-requests;\nYouTube allowed in CSP: True\nOK YouTube videos should not be blocked by CSP\n&#34;}], &#34;tests/test_entities_system.py::TestEntitiesSystem::test_entity_navigation_breadcrumbs&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_entities_system.py::TestEntitiesSystem::test_entity_navigation_breadcrumbs&#34;, &#34;duration&#34;: &#34;00:00:15&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_entities_system.py::TestEntitiesSystem::test_entity_navigation_breadcrumbs&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:15&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw2] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_youtube_videos_not_blocked[firefox]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_youtube_videos_not_blocked[firefox]&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_youtube_videos_not_blocked[firefox]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing YouTube video embedding...\nCSP Header: default-src &amp;#x27;self&amp;#x27;; script-src &amp;#x27;self&amp;#x27; &amp;#x27;unsafe-inline&amp;#x27; https://cdn.jsdelivr.net https://unpkg.com https://api.reftagger.com; style-src &amp;#x27;self&amp;#x27; &amp;#x27;unsafe-inline&amp;#x27; https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src &amp;#x27;self&amp;#x27; data: https://fonts.gstatic.com https://basemaps.cartocdn.com https://tiles.basemaps.cartocdn.com https://*.basemaps.cartocdn.com; img-src &amp;#x27;self&amp;#x27; data: https: https://i.ytimg.com https://yt3.ggpht.com; connect-src &amp;#x27;self&amp;#x27; https://api.esv.org https://www.biblegateway.com https://bible-api.com https://tile.openstreetmap.org https://basemaps.cartocdn.com https://tiles.basemaps.cartocdn.com https://tiles-a.basemaps.cartocdn.com https://tiles-b.basemaps.cartocdn.com https://tiles-c.basemaps.cartocdn.com https://tiles-d.basemaps.cartocdn.com https://*.basemaps.cartocdn.com https://demotiles.maplibre.org https://cdn.jsdelivr.net; worker-src &amp;#x27;self&amp;#x27; https://unpkg.com https://cdn.jsdelivr.net blob:; frame-src &amp;#x27;self&amp;#x27; https://www.youtube.com https://www.biblegateway.com https://www.youtube-nocookie.com https://enduringword.com https://www.biblestudytools.com https://www.studylight.org https://biblehub.com https://biblefamilytree.info https://onemessianicgentile.com https://www.onemessianicgentile.com; object-src &amp;#x27;none&amp;#x27;; base-uri &amp;#x27;self&amp;#x27;; form-action &amp;#x27;self&amp;#x27;; upgrade-insecure-requests;\nYouTube allowed in CSP: True\nOK YouTube videos should not be blocked by CSP\n&#34;}], &#34;tests/test_entities_system.py::TestEntitiesSystem::test_entity_error_handling&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_entities_system.py::TestEntitiesSystem::test_entity_error_handling&#34;, &#34;duration&#34;: &#34;00:00:04&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_entities_system.py::TestEntitiesSystem::test_entity_error_handling&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:04&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw2] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_entities_system.py::TestEntitiesSystem::test_entity_data_integrity&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_entities_system.py::TestEntitiesSystem::test_entity_data_integrity&#34;, &#34;duration&#34;: &#34;00:00:01&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_entities_system.py::TestEntitiesSystem::test_entity_data_integrity&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:01&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw2] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_entities_system.py::TestEntitiesSystem::test_parables_page_loads&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_entities_system.py::TestEntitiesSystem::test_parables_page_loads&#34;, &#34;duration&#34;: &#34;00:00:01&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_entities_system.py::TestEntitiesSystem::test_parables_page_loads&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:01&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw2] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_biblegateway_integration_working[chrome]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_biblegateway_integration_working[chrome]&#34;, &#34;duration&#34;: &#34;00:00:05&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_biblegateway_integration_working[chrome]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:05&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing BibleGateway integration...\nBibleGateway allowed in CSP: True\nOK BibleGateway integration should work\n&#34;}], &#34;tests/test_entities_system.py::TestEntitiesSystem::test_people_groups_page_loads&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_entities_system.py::TestEntitiesSystem::test_people_groups_page_loads&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_entities_system.py::TestEntitiesSystem::test_people_groups_page_loads&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw2] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_commentary_system.py::TestCommentarySystem::test_modal_keyboard_navigation&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_commentary_system.py::TestCommentarySystem::test_modal_keyboard_navigation&#34;, &#34;duration&#34;: &#34;00:00:15&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_commentary_system.py::TestCommentarySystem::test_modal_keyboard_navigation&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:15&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw5] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_scripture_widget.py::test_scripture_widget_styles&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_scripture_widget.py::test_scripture_widget_styles&#34;, &#34;duration&#34;: &#34;00:00:14&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_scripture_widget.py::test_scripture_widget_styles&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:14&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw6] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\ntests/test_scripture_widget.py:136: in test_scripture_widget_styles\n    ensure_scripture_widget_loaded(chrome_driver)\ntests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded\n    WebDriverWait(driver, 10).until(\ntest-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until\n    raise TimeoutException(message, screen, stacktrace)\nE   selenium.common.exceptions.TimeoutException: Message:\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_biblegateway_integration_working[firefox]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_biblegateway_integration_working[firefox]&#34;, &#34;duration&#34;: &#34;00:00:08&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_biblegateway_integration_working[firefox]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:08&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing BibleGateway integration...\nBibleGateway allowed in CSP: True\nOK BibleGateway integration should work\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_javascript_modules_loading_correctly[chrome]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_javascript_modules_loading_correctly[chrome]&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_javascript_modules_loading_correctly[chrome]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing JavaScript module loading...\nBundle registry size: 10\nTheme manager loaded: True\nOK JavaScript modules loading correctly\n&#34;}], &#34;tests/test_scripture_widget.py::test_translation_selector_functionality&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_scripture_widget.py::test_translation_selector_functionality&#34;, &#34;duration&#34;: &#34;00:00:14&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_scripture_widget.py::test_translation_selector_functionality&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:14&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw6] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\ntests/test_scripture_widget.py:169: in test_translation_selector_functionality\n    ensure_scripture_widget_loaded(chrome_driver)\ntests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded\n    WebDriverWait(driver, 10).until(\ntest-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until\n    raise TimeoutException(message, screen, stacktrace)\nE   selenium.common.exceptions.TimeoutException: Message:\n&#34;}], &#34;tests/test_commentary_system.py::TestCommentarySystem::test_chapter_reader_integration&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_commentary_system.py::TestCommentarySystem::test_chapter_reader_integration&#34;, &#34;duration&#34;: &#34;00:00:15&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_commentary_system.py::TestCommentarySystem::test_chapter_reader_integration&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:15&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw5] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_javascript_modules_loading_correctly[firefox]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_javascript_modules_loading_correctly[firefox]&#34;, &#34;duration&#34;: &#34;00:00:05&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_javascript_modules_loading_correctly[firefox]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:05&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing JavaScript module loading...\nBundle registry size: 10\nTheme manager loaded: True\nOK JavaScript modules loading correctly\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_critical_css_loading[chrome]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_critical_css_loading[chrome]&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_critical_css_loading[chrome]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing critical CSS loading...\nCritical CSS inlined: True\nBody background: rgb(15, 23, 42)\nNav display: flex\nOK Critical CSS loading correctly\n&#34;}], &#34;tests/test_commentary_system.py::TestCommentarySystem::test_mobile_responsiveness&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_commentary_system.py::TestCommentarySystem::test_mobile_responsiveness&#34;, &#34;duration&#34;: &#34;00:00:04&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_commentary_system.py::TestCommentarySystem::test_mobile_responsiveness&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:04&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw5] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_critical_css_loading[firefox]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_critical_css_loading[firefox]&#34;, &#34;duration&#34;: &#34;00:00:04&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_critical_css_loading[firefox]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:04&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing critical CSS loading...\nCritical CSS inlined: True\nBody background: rgb(15, 23, 42)\nNav display: flex\nOK Critical CSS loading correctly\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_service_worker_registration[chrome]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_service_worker_registration[chrome]&#34;, &#34;duration&#34;: &#34;00:00:05&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_service_worker_registration[chrome]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:05&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing service worker registration...\nService worker registered: False\nService worker scope: None\nOK Service worker registration tested\n&#34;}], &#34;tests/test_scripture_widget.py::test_scripture_widget_error_handling&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_scripture_widget.py::test_scripture_widget_error_handling&#34;, &#34;duration&#34;: &#34;00:00:14&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_scripture_widget.py::test_scripture_widget_error_handling&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:14&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw6] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\ntests/test_scripture_widget.py:198: in test_scripture_widget_error_handling\n    ensure_scripture_widget_loaded(chrome_driver)\ntests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded\n    WebDriverWait(driver, 10).until(\ntest-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until\n    raise TimeoutException(message, screen, stacktrace)\nE   selenium.common.exceptions.TimeoutException: Message:\n&#34;}], &#34;tests/test_scripture_widget.py::test_scripture_macros_rendering&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_scripture_widget.py::test_scripture_macros_rendering&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_scripture_widget.py::test_scripture_macros_rendering&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw6] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_commentary_system.py::TestCommentarySystem::test_all_books_have_commentary_buttons&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_commentary_system.py::TestCommentarySystem::test_all_books_have_commentary_buttons&#34;, &#34;duration&#34;: &#34;00:00:13&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_commentary_system.py::TestCommentarySystem::test_all_books_have_commentary_buttons&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:13&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw5] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_service_worker_registration[firefox]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_service_worker_registration[firefox]&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_service_worker_registration[firefox]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing service worker registration...\nService worker registered: False\nService worker scope: None\nOK Service worker registration tested\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_offline_functionality[chrome]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_offline_functionality[chrome]&#34;, &#34;duration&#34;: &#34;00:00:04&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_offline_functionality[chrome]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:04&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing offline functionality...\nOffline page title: You&amp;#x27;re Offline\nOK Offline functionality present\n&#34;}], &#34;tests/test_scripture_widget.py::test_scripture_widget_accessibility&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_scripture_widget.py::test_scripture_widget_accessibility&#34;, &#34;duration&#34;: &#34;00:00:12&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_scripture_widget.py::test_scripture_widget_accessibility&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:12&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw6] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\ntests/test_scripture_widget.py:238: in test_scripture_widget_accessibility\n    ensure_scripture_widget_loaded(chrome_driver)\ntests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded\n    WebDriverWait(driver, 10).until(\ntest-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until\n    raise TimeoutException(message, screen, stacktrace)\nE   selenium.common.exceptions.TimeoutException: Message:\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_offline_functionality[firefox]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_offline_functionality[firefox]&#34;, &#34;duration&#34;: &#34;00:00:06&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_offline_functionality[firefox]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:06&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing offline functionality...\nOffline page title: You&amp;#x27;re Offline\nOK Offline functionality present\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_search_functionality_basic[chrome]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_search_functionality_basic[chrome]&#34;, &#34;duration&#34;: &#34;00:00:06&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_search_functionality_basic[chrome]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:06&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing search functionality...\nFound search input: Try &amp;#x27;Genesis creation&amp;#x27; or &amp;#x27;David&amp;#x27;\nSearch results/suggestions found: 10\nOK Search functionality tested\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_search_functionality_basic[firefox]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_search_functionality_basic[firefox]&#34;, &#34;duration&#34;: &#34;00:00:08&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_search_functionality_basic[firefox]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:08&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing search functionality...\nFound search input: Try &amp;#x27;Genesis creation&amp;#x27; or &amp;#x27;David&amp;#x27;\nSearch results/suggestions found: 10\nOK Search functionality tested\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_design_basics[chrome]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_design_basics[chrome]&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_design_basics[chrome]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing responsive design...\nNav display - Desktop: flex, Mobile: flex\nOK Responsive design basics working\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_design_basics[firefox]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_design_basics[firefox]&#34;, &#34;duration&#34;: &#34;00:00:05&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_design_basics[firefox]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:05&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing responsive design...\nNav display - Desktop: flex, Mobile: flex\nOK Responsive design basics working\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_table_design[chrome]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_table_design[chrome]&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_table_design[chrome]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\ntests/test_regression_fixes.py:515: in test_responsive_table_design\n    assert wrapper_scroll, &amp;quot;Table should overflow when wrapper is visible&amp;quot;\nE   AssertionError: Table should overflow when wrapper is visible\nE   assert False\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing responsive table design...\nTable wrapper found: True\nTable wrapper overflow-x: visible\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_table_design[firefox]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_table_design[firefox]&#34;, &#34;duration&#34;: &#34;00:00:05&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_table_design[firefox]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:05&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\ntests/test_regression_fixes.py:515: in test_responsive_table_design\n    assert wrapper_scroll, &amp;quot;Table should overflow when wrapper is visible&amp;quot;\nE   AssertionError: Table should overflow when wrapper is visible\nE   assert False\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing responsive table design...\nTable wrapper found: True\nTable wrapper overflow-x: visible\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_accessibility_aria_labels[chrome]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_accessibility_aria_labels[chrome]&#34;, &#34;duration&#34;: &#34;00:00:06&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_accessibility_aria_labels[chrome]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:06&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing accessibility ARIA labels...\nButton with label: Toggle font size controls\nButton with label: Toggle high contrast mode\nButton with label: Change theme\nButton with label: Toggle recent items and bookmarks\nNavigation buttons with accessibility labels: 4/4\nBookmark button label: Add bookmark for Genesis\nTOC toggle - label: Toggle table of contents, expanded: false\nOK Accessibility ARIA labels present\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_accessibility_aria_labels[firefox]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_accessibility_aria_labels[firefox]&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_accessibility_aria_labels[firefox]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing accessibility ARIA labels...\nButton with label: Toggle font size controls\nButton with label: Toggle high contrast mode\nButton with label: Change theme\nButton with label: Toggle recent items and bookmarks\nNavigation buttons with accessibility labels: 4/4\nBookmark button label: Add bookmark for Genesis\nTOC toggle - label: Toggle table of contents, expanded: false\nOK Accessibility ARIA labels present\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_key_figures_position[chrome]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_key_figures_position[chrome]&#34;, &#34;duration&#34;: &#34;00:00:05&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_key_figures_position[chrome]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:05&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing key figures section positioning...\nChapter table bottom: 10192.921875\nKey figures top: 10216.921875\nOK Key figures positioned correctly after chapter summaries\n&#34;}], &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_key_figures_position[firefox]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_regression_fixes.py::TestRegressionFixes::test_key_figures_position[firefox]&#34;, &#34;duration&#34;: &#34;00:00:06&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_regression_fixes.py::TestRegressionFixes::test_key_figures_position[firefox]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:06&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python\n\n----------------------------- Captured stdout call -----------------------------\n\n Testing key figures section positioning...\nChapter table bottom: 10397.316650390623\nKey figures top: 10421.31640625\nOK Key figures positioned correctly after chapter summaries\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > .col-result')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > .col-result')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+  </body>
+</html>

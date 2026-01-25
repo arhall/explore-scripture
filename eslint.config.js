@@ -27,6 +27,7 @@ export default [
         history: 'readonly',
         module: 'readonly',
         IntersectionObserver: 'readonly',
+        Image: 'readonly',
         AbortController: 'readonly',
       },
     },
@@ -36,6 +37,12 @@ export default [
       'no-debugger': 'error',
       'prefer-const': 'error',
       'no-var': 'error',
+    },
+  },
+  {
+    files: ['src/assets/**/*.js'],
+    rules: {
+      'no-console': 'off',
     },
   },
   {

@@ -1,5 +1,7 @@
 # Performance Optimizations
 
+For how to run performance tests, see `docs/PERFORMANCE_TESTING.md`.
+
 ## Build Time & Size Improvements
 
 ### Before Optimization

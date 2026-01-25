@@ -24,6 +24,20 @@ import time
 class TestGenealogyVisualization:
     """Test suite for genealogy tree visualization."""
 
+    def _wait_for_cluster_option(self, driver, wait, value_hint, label_hint):
+        """Wait for a cluster option to appear and return it."""
+        def _find_option(_driver):
+            select_el = _driver.find_element(By.ID, 'tree-view-select')
+            options = select_el.find_elements(By.TAG_NAME, 'option')
+            for option in options:
+                value = (option.get_attribute('value') or '').lower()
+                label = (option.text or '').lower()
+                if value_hint in value or label_hint in label:
+                    return option
+            return False
+
+        return wait.until(_find_option)
+
     @pytest.fixture
     def driver(self):
         """Setup Chrome driver for testing."""
@@ -58,28 +72,24 @@ class TestGenealogyVisualization:
 
         # Wait for cluster selector
         cluster_select = wait.until(
-            EC.presence_of_element_located((By.ID, 'clusterSelect'))
+            EC.presence_of_element_located((By.ID, 'tree-view-select'))
         )
         assert cluster_select is not None
 
+        # Wait for options to populate (data loads async)
+        wait.until(lambda d: len(cluster_select.find_elements(By.TAG_NAME, 'option')) >= 2)
+
         # Check that options exist
         options = cluster_select.find_elements(By.TAG_NAME, 'option')
-        assert len(options) >= 7, "Should have at least 7 cluster options"
+        assert len(options) >= 2, "Should have at least 2 view options"
 
-    def test_judges_cluster_exists(self, driver):
-        """Test that judges cluster is available in dropdown."""
+    def test_royal_line_cluster_exists(self, driver):
+        """Test that Royal Line cluster is available in dropdown."""
         driver.get('http://localhost:8080/genealogies/')
         wait = WebDriverWait(driver, 10)
 
-        cluster_select = wait.until(
-            EC.presence_of_element_located((By.ID, 'clusterSelect'))
-        )
-
-        # Find judges option
-        options = cluster_select.find_elements(By.TAG_NAME, 'option')
-        cluster_values = [opt.get_attribute('value') for opt in options]
-
-        assert 'judges' in cluster_values, "Judges cluster should be available"
+        option = self._wait_for_cluster_option(driver, wait, 'royal', 'royal line')
+        assert option is not None
 
     def test_messianic_line_checkbox(self, driver):
         """Test that messianic line highlight checkbox exists."""
@@ -88,7 +98,7 @@ class TestGenealogyVisualization:
 
         # Find messianic line checkbox
         checkbox = wait.until(
-            EC.presence_of_element_located((By.ID, 'highlightMessiah'))
+            EC.presence_of_element_located((By.ID, 'toggle-messiah'))
         )
         assert checkbox is not None
         assert checkbox.get_attribute('type') == 'checkbox'
@@ -118,7 +128,7 @@ class TestGenealogyVisualization:
         time.sleep(2)
 
         # Enable messianic line highlighting
-        checkbox = driver.find_element(By.ID, 'highlightMessiah')
+        checkbox = driver.find_element(By.ID, 'toggle-messiah')
         if not checkbox.is_selected():
             checkbox.click()
 
@@ -148,49 +158,61 @@ class TestGenealogyVisualization:
             time.sleep(0.5)
 
             # Check for tooltip
-            tooltip = driver.find_elements(By.CLASS_NAME, 'tooltip')
-            # Tooltip should appear (implementation may vary)
-            assert True  # Basic test passes if no errors
+        tooltip = driver.find_elements(By.ID, 'family-tree-tooltip')
+        assert len(tooltip) > 0
 
-    def test_judges_cluster_loads(self, driver):
-        """Test that judges cluster can be selected and loads data."""
+    def test_royal_line_cluster_loads(self, driver):
+        """Test that royal line cluster can be selected and loads data."""
         driver.get('http://localhost:8080/genealogies/')
         wait = WebDriverWait(driver, 10)
 
         # Wait for cluster selector
-        cluster_select = wait.until(
-            EC.presence_of_element_located((By.ID, 'clusterSelect'))
+        wait.until(
+            EC.presence_of_element_located((By.ID, 'tree-view-select'))
         )
 
-        # Select judges cluster
+        option = self._wait_for_cluster_option(driver, wait, 'royal', 'royal line')
+
+        # Select royal line cluster
         from selenium.webdriver.support.ui import Select
+        cluster_select = driver.find_element(By.ID, 'tree-view-select')
         select = Select(cluster_select)
-        select.select_by_value('judges')
+        option_value = option.get_attribute('value')
+        if option_value:
+            select.select_by_value(option_value)
+        else:
+            select.select_by_visible_text(option.text)
 
         time.sleep(2)
 
         # Check that nodes are rendered
         circles = driver.find_elements(By.CSS_SELECTOR, 'circle.main-node')
-        assert len(circles) > 0, "Judges cluster should render nodes"
+        assert len(circles) > 0, "Royal line cluster should render nodes"
 
-    def test_node_has_judge_class(self, driver):
-        """Test that judge nodes have appropriate styling."""
+    def test_cluster_has_expected_nodes(self, driver):
+        """Test that selected cluster renders multiple nodes."""
         driver.get('http://localhost:8080/genealogies/')
         wait = WebDriverWait(driver, 10)
 
-        # Select judges cluster
-        cluster_select = wait.until(
-            EC.presence_of_element_located((By.ID, 'clusterSelect'))
+        # Select royal line cluster
+        wait.until(
+            EC.presence_of_element_located((By.ID, 'tree-view-select'))
         )
+        option = self._wait_for_cluster_option(driver, wait, 'royal', 'royal line')
         from selenium.webdriver.support.ui import Select
+        cluster_select = driver.find_element(By.ID, 'tree-view-select')
         select = Select(cluster_select)
-        select.select_by_value('judges')
+        option_value = option.get_attribute('value')
+        if option_value:
+            select.select_by_value(option_value)
+        else:
+            select.select_by_visible_text(option.text)
 
         time.sleep(2)
 
-        # Check for judge-related elements
+        # Check for cluster nodes
         circles = driver.find_elements(By.CSS_SELECTOR, 'circle.main-node')
-        assert len(circles) >= 10, "Should have multiple judges in cluster"
+        assert len(circles) >= 5, "Should have multiple nodes in cluster"
 
     def test_circle_fill_states(self, driver):
         """Test that circles have proper fill states (filled/hollow)."""
@@ -220,14 +242,10 @@ class TestGenealogyVisualization:
         wait = WebDriverWait(driver, 10)
 
         # Look for search input
-        try:
-            search_input = wait.until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, 'input[type="text"]'))
-            )
-            assert search_input is not None
-        except TimeoutException:
-            # Search may not be implemented yet
-            pytest.skip("Search functionality not yet implemented")
+        search_input = wait.until(
+            EC.presence_of_element_located((By.ID, 'tree-search-input'))
+        )
+        assert search_input is not None
 
     def test_zoom_controls_exist(self, driver):
         """Test that zoom controls are available."""
@@ -249,9 +267,9 @@ class TestGenealogyVisualization:
         """Test that bible-tree.json data file is accessible."""
         driver.get('http://localhost:8080/assets/data/bible-tree.json')
 
-        # Check that JSON loads without 404
-        assert '404' not in driver.page_source
-        assert 'master' in driver.page_source or 'clusters' in driver.page_source
+        # Check that JSON loads with expected keys
+        assert '"generatedAt"' in driver.page_source
+        assert '"master"' in driver.page_source or '"clusters"' in driver.page_source
 
 
 if __name__ == '__main__':

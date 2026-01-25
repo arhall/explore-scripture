@@ -1,0 +1,288 @@
+Loaded test configuration from: /Users/andrewhall/repo/explore-scripture/.env.test.local
+============================= test session starts ==============================
+platform darwin -- Python 3.14.2, pytest-9.0.2, pluggy-1.6.0 -- /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+cachedir: .pytest_cache
+metadata: {'Python': '3.14.2', 'Platform': 'macOS-26.2-arm64-arm-64bit-Mach-O', 'Packages': {'pytest': '9.0.2', 'pluggy': '1.6.0'}, 'Plugins': {'xdist': '3.8.0', 'metadata': '3.1.1', 'html': '4.2.0'}, 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home'}
+rootdir: /Users/andrewhall/repo/explore-scripture
+configfile: pytest.ini
+plugins: xdist-3.8.0, metadata-3.1.1, html-4.2.0
+created: 2/2 workers
+2 workers [93 items]
+
+scheduling tests via LoadFileScheduling
+
+tests/test_bible_explorer.py::TestBibleExplorer::test_homepage_loads 
+tests/test_regression_fixes.py::TestRegressionFixes::test_theme_toggle_functionality[chrome] 
+[gw1] [  1%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_homepage_loads 
+tests/test_bible_explorer.py::TestBibleExplorer::test_navigation_elements 
+[gw1] [  2%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_navigation_elements 
+tests/test_bible_explorer.py::TestBibleExplorer::test_hero_section_content 
+[gw1] [  3%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_hero_section_content 
+tests/test_bible_explorer.py::TestBibleExplorer::test_theme_toggle 
+[gw1] [  4%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_theme_toggle 
+tests/test_bible_explorer.py::TestBibleExplorer::test_search_functionality 
+[gw1] [  5%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_search_functionality 
+tests/test_bible_explorer.py::TestBibleExplorer::test_font_controls 
+[gw0] [  6%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_theme_toggle_functionality[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_theme_toggle_functionality[firefox] 
+[gw1] [  7%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_font_controls 
+tests/test_bible_explorer.py::TestBibleExplorer::test_high_contrast_mode 
+[gw1] [  8%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_high_contrast_mode 
+tests/test_bible_explorer.py::TestBibleExplorer::test_responsive_layout_mobile 
+[gw1] [  9%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_responsive_layout_mobile 
+tests/test_bible_explorer.py::TestBibleExplorer::test_accessibility_features 
+[gw0] [ 10%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_theme_toggle_functionality[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_chapter_reader_buttons_present[chrome] 
+[gw1] [ 11%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_accessibility_features 
+tests/test_bible_explorer.py::TestBibleExplorer::test_page_performance 
+[gw1] [ 12%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_page_performance 
+tests/test_bible_explorer.py::TestBibleExplorer::test_character_page_navigation 
+[gw1] [ 13%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_character_page_navigation 
+tests/test_bible_explorer.py::TestBibleExplorer::test_css_loading_and_styling 
+[gw1] [ 15%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_css_loading_and_styling 
+tests/test_bible_explorer.py::TestBibleExplorer::test_javascript_execution 
+[gw1] [ 16%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_javascript_execution 
+tests/test_entities_system.py::TestEntitiesSystem::test_entities_page_loads 
+[gw0] [ 17%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_chapter_reader_buttons_present[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_chapter_reader_buttons_present[firefox] 
+[gw1] [ 18%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_entities_page_loads 
+tests/test_entities_system.py::TestEntitiesSystem::test_entity_search_functionality 
+[gw1] [ 19%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_entity_search_functionality 
+tests/test_entities_system.py::TestEntitiesSystem::test_individual_entity_page 
+[gw0] [ 20%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_chapter_reader_buttons_present[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_no_duplicate_chapter_reader_buttons[chrome] 
+[gw1] [ 21%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_individual_entity_page 
+tests/test_entities_system.py::TestEntitiesSystem::test_entity_profile_content_loads 
+[gw1] [ 22%] SKIPPED tests/test_entities_system.py::TestEntitiesSystem::test_entity_profile_content_loads 
+tests/test_entities_system.py::TestEntitiesSystem::test_entity_cross_references 
+[gw0] [ 23%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_no_duplicate_chapter_reader_buttons[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_no_duplicate_chapter_reader_buttons[firefox] 
+[gw1] [ 24%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_entity_cross_references 
+tests/test_entities_system.py::TestEntitiesSystem::test_entity_book_filtering 
+[gw1] [ 25%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_entity_book_filtering 
+tests/test_entities_system.py::TestEntitiesSystem::test_entities_filter_character_study_and_testament 
+[gw0] [ 26%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_no_duplicate_chapter_reader_buttons[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_youtube_videos_not_blocked[chrome] 
+[gw1] [ 27%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_entities_filter_character_study_and_testament 
+tests/test_entities_system.py::TestEntitiesSystem::test_entity_responsive_design 
+[gw0] [ 29%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_youtube_videos_not_blocked[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_youtube_videos_not_blocked[firefox] 
+[gw1] [ 30%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_entity_responsive_design 
+tests/test_entities_system.py::TestEntitiesSystem::test_entity_navigation_breadcrumbs 
+[gw0] [ 31%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_youtube_videos_not_blocked[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_biblegateway_integration_working[chrome] 
+[gw0] [ 32%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_biblegateway_integration_working[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_biblegateway_integration_working[firefox] 
+[gw1] [ 33%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_entity_navigation_breadcrumbs 
+tests/test_entities_system.py::TestEntitiesSystem::test_entity_error_handling 
+[gw0] [ 34%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_biblegateway_integration_working[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_javascript_modules_loading_correctly[chrome] 
+[gw1] [ 35%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_entity_error_handling 
+tests/test_entities_system.py::TestEntitiesSystem::test_entity_data_integrity 
+[gw0] [ 36%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_javascript_modules_loading_correctly[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_javascript_modules_loading_correctly[firefox] 
+[gw1] [ 37%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_entity_data_integrity 
+tests/test_entities_system.py::TestEntitiesSystem::test_parables_page_loads 
+[gw1] [ 38%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_parables_page_loads 
+tests/test_entities_system.py::TestEntitiesSystem::test_people_groups_page_loads 
+[gw1] [ 39%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_people_groups_page_loads 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_genealogy_page_loads 
+[gw0] [ 40%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_javascript_modules_loading_correctly[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_critical_css_loading[chrome] 
+[gw1] [ 41%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_genealogy_page_loads 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_cluster_dropdown_exists 
+[gw0] [ 43%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_critical_css_loading[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_critical_css_loading[firefox] 
+[gw1] [ 44%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_cluster_dropdown_exists 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_royal_line_cluster_exists 
+[gw0] [ 45%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_critical_css_loading[firefox] 
+[gw1] [ 46%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_royal_line_cluster_exists 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_messianic_line_checkbox 
+tests/test_regression_fixes.py::TestRegressionFixes::test_service_worker_registration[chrome] 
+[gw1] [ 47%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_messianic_line_checkbox 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_tree_nodes_render 
+[gw0] [ 48%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_service_worker_registration[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_service_worker_registration[firefox] 
+[gw1] [ 49%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_tree_nodes_render 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_messianic_line_highlighting 
+[gw1] [ 50%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_messianic_line_highlighting 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_tooltip_appears_on_hover 
+[gw0] [ 51%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_service_worker_registration[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_offline_functionality[chrome] 
+[gw1] [ 52%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_tooltip_appears_on_hover 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_royal_line_cluster_loads 
+[gw0] [ 53%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_offline_functionality[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_offline_functionality[firefox] 
+[gw1] [ 54%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_royal_line_cluster_loads 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_cluster_has_expected_nodes 
+[gw0] [ 55%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_offline_functionality[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_search_functionality_basic[chrome] 
+[gw1] [ 56%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_cluster_has_expected_nodes 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_circle_fill_states 
+[gw1] [ 58%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_circle_fill_states 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_search_functionality_exists 
+[gw1] [ 59%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_search_functionality_exists 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_zoom_controls_exist 
+[gw0] [ 60%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_search_functionality_basic[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_search_functionality_basic[firefox] 
+[gw1] [ 61%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_zoom_controls_exist 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_data_file_accessible 
+[gw1] [ 62%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_data_file_accessible 
+tests/test_commentary_system.py::TestCommentarySystem::test_commentary_buttons_exist 
+[gw1] [ 63%] PASSED tests/test_commentary_system.py::TestCommentarySystem::test_commentary_buttons_exist 
+tests/test_commentary_system.py::TestCommentarySystem::test_commentary_modal_opens 
+[gw0] [ 64%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_search_functionality_basic[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_design_basics[chrome] 
+[gw1] [ 65%] PASSED tests/test_commentary_system.py::TestCommentarySystem::test_commentary_modal_opens 
+tests/test_commentary_system.py::TestCommentarySystem::test_commentary_source_switching 
+[gw0] [ 66%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_design_basics[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_design_basics[firefox] 
+[gw1] [ 67%] PASSED tests/test_commentary_system.py::TestCommentarySystem::test_commentary_source_switching 
+tests/test_commentary_system.py::TestCommentarySystem::test_iframe_vs_direct_access_handling 
+[gw0] [ 68%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_design_basics[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_table_design[chrome] 
+[gw0] [ 69%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_table_design[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_table_design[firefox] 
+[gw1] [ 70%] PASSED tests/test_commentary_system.py::TestCommentarySystem::test_iframe_vs_direct_access_handling 
+tests/test_commentary_system.py::TestCommentarySystem::test_book_name_edge_cases 
+[gw0] [ 72%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_table_design[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_accessibility_aria_labels[chrome] 
+[gw0] [ 73%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_accessibility_aria_labels[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_accessibility_aria_labels[firefox] 
+[gw1] [ 74%] PASSED tests/test_commentary_system.py::TestCommentarySystem::test_book_name_edge_cases 
+tests/test_commentary_system.py::TestCommentarySystem::test_modal_keyboard_navigation 
+[gw0] [ 75%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_accessibility_aria_labels[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_key_figures_position[chrome] 
+[gw1] [ 76%] PASSED tests/test_commentary_system.py::TestCommentarySystem::test_modal_keyboard_navigation 
+tests/test_commentary_system.py::TestCommentarySystem::test_chapter_reader_integration 
+[gw1] [ 77%] PASSED tests/test_commentary_system.py::TestCommentarySystem::test_chapter_reader_integration 
+tests/test_commentary_system.py::TestCommentarySystem::test_mobile_responsiveness 
+[gw1] [ 78%] PASSED tests/test_commentary_system.py::TestCommentarySystem::test_mobile_responsiveness 
+tests/test_commentary_system.py::TestCommentarySystem::test_all_books_have_commentary_buttons 
+[gw1] [ 79%] PASSED tests/test_commentary_system.py::TestCommentarySystem::test_all_books_have_commentary_buttons 
+tests/test_env_config.py::test_environment_variables_loaded 
+[gw1] [ 80%] PASSED tests/test_env_config.py::test_environment_variables_loaded 
+tests/test_env_config.py::test_base_url_selection 
+[gw1] [ 81%] PASSED tests/test_env_config.py::test_base_url_selection 
+tests/test_env_config.py::test_test_urls_generated 
+[gw1] [ 82%] PASSED tests/test_env_config.py::test_test_urls_generated 
+tests/test_env_config.py::test_browser_configuration 
+[gw1] [ 83%] PASSED tests/test_env_config.py::test_browser_configuration 
+tests/test_env_config.py::test_timeout_configuration 
+[gw1] [ 84%] PASSED tests/test_env_config.py::test_timeout_configuration 
+tests/test_e2e_ui.py::TestE2EUI::test_global_search_direct_reference 
+[gw1] [ 86%] PASSED tests/test_e2e_ui.py::TestE2EUI::test_global_search_direct_reference 
+tests/test_e2e_ui.py::TestE2EUI::test_sections_browse_cards 
+[gw1] [ 87%] PASSED tests/test_e2e_ui.py::TestE2EUI::test_sections_browse_cards 
+tests/test_e2e_ui.py::TestE2EUI::test_quick_access_panel_toggle 
+[gw1] [ 88%] PASSED tests/test_e2e_ui.py::TestE2EUI::test_quick_access_panel_toggle 
+[gw0] [ 89%] FAILED tests/test_regression_fixes.py::TestRegressionFixes::test_key_figures_position[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_key_figures_position[firefox] 
+[gw0] [ 90%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_key_figures_position[firefox] 
+tests/test_scripture_widget.py::test_scripture_widget_loads 
+[gw0] [ 91%] PASSED tests/test_scripture_widget.py::test_scripture_widget_loads 
+tests/test_scripture_widget.py::test_scripture_references_enhanced 
+[gw0] [ 92%] PASSED tests/test_scripture_widget.py::test_scripture_references_enhanced 
+tests/test_scripture_widget.py::test_desktop_hover_behavior 
+[gw0] [ 93%] PASSED tests/test_scripture_widget.py::test_desktop_hover_behavior 
+tests/test_scripture_widget.py::test_mobile_tap_behavior 
+[gw0] [ 94%] PASSED tests/test_scripture_widget.py::test_mobile_tap_behavior 
+tests/test_scripture_widget.py::test_scripture_widget_styles 
+[gw0] [ 95%] PASSED tests/test_scripture_widget.py::test_scripture_widget_styles 
+tests/test_scripture_widget.py::test_translation_selector_functionality 
+[gw0] [ 96%] PASSED tests/test_scripture_widget.py::test_translation_selector_functionality 
+tests/test_scripture_widget.py::test_scripture_widget_error_handling 
+[gw0] [ 97%] PASSED tests/test_scripture_widget.py::test_scripture_widget_error_handling 
+tests/test_scripture_widget.py::test_scripture_macros_rendering 
+[gw0] [ 98%] PASSED tests/test_scripture_widget.py::test_scripture_macros_rendering 
+tests/test_scripture_widget.py::test_scripture_widget_accessibility 
+[gw0] [100%] PASSED tests/test_scripture_widget.py::test_scripture_widget_accessibility 
+
+=================================== FAILURES ===================================
+____________ TestRegressionFixes.test_key_figures_position[chrome] _____________
+[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+test-env/lib/python3.14/site-packages/urllib3/connectionpool.py:534: in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/urllib3/connection.py:571: in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+/opt/homebrew/Cellar/python@3.14/3.14.2_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py:1450: in getresponse
+    response.begin()
+/opt/homebrew/Cellar/python@3.14/3.14.2_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py:336: in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+/opt/homebrew/Cellar/python@3.14/3.14.2_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py:297: in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/homebrew/Cellar/python@3.14/3.14.2_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py:725: in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+E   TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+tests/test_regression_fixes.py:583: in test_key_figures_position
+    browser.get(urljoin(self.BASE_URL, "/books/genesis/"))
+test-env/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py:452: in get
+    self.execute(Command.GET, {"url": url})
+test-env/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py:429: in execute
+    response = cast(RemoteConnection, self.command_executor).execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/remote/remote_connection.py:406: in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/remote/remote_connection.py:430: in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/urllib3/_request_methods.py:143: in request
+    return self.request_encode_body(
+test-env/lib/python3.14/site-packages/urllib3/_request_methods.py:278: in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/urllib3/poolmanager.py:457: in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/urllib3/connectionpool.py:841: in urlopen
+    retries = retries.increment(
+test-env/lib/python3.14/site-packages/urllib3/util/retry.py:490: in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/urllib3/util/util.py:39: in reraise
+    raise value
+test-env/lib/python3.14/site-packages/urllib3/connectionpool.py:787: in urlopen
+    response = self._make_request(
+test-env/lib/python3.14/site-packages/urllib3/connectionpool.py:536: in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+test-env/lib/python3.14/site-packages/urllib3/connectionpool.py:367: in _raise_timeout
+    raise ReadTimeoutError(
+E   urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=56654): Read timed out. (read timeout=120)
+----------------------------- Captured stdout call -----------------------------
+
+ Testing key figures section positioning...
+- generated xml file: /Users/andrewhall/repo/explore-scripture/tests/reports/selenium-20260125-145604/junit.xml -
+============================= slowest 20 durations =============================
+120.00s call     tests/test_regression_fixes.py::TestRegressionFixes::test_key_figures_position[chrome]
+15.04s call     tests/test_commentary_system.py::TestCommentarySystem::test_book_name_edge_cases
+13.07s call     tests/test_commentary_system.py::TestCommentarySystem::test_chapter_reader_integration
+12.75s call     tests/test_commentary_system.py::TestCommentarySystem::test_all_books_have_commentary_buttons
+12.47s call     tests/test_commentary_system.py::TestCommentarySystem::test_modal_keyboard_navigation
+10.87s call     tests/test_entities_system.py::TestEntitiesSystem::test_individual_entity_page
+10.79s call     tests/test_entities_system.py::TestEntitiesSystem::test_entity_navigation_breadcrumbs
+10.11s call     tests/test_bible_explorer.py::TestBibleExplorer::test_accessibility_features
+6.88s call     tests/test_commentary_system.py::TestCommentarySystem::test_iframe_vs_direct_access_handling
+6.80s call     tests/test_regression_fixes.py::TestRegressionFixes::test_no_duplicate_chapter_reader_buttons[chrome]
+6.66s call     tests/test_regression_fixes.py::TestRegressionFixes::test_no_duplicate_chapter_reader_buttons[firefox]
+5.94s call     tests/test_regression_fixes.py::TestRegressionFixes::test_accessibility_aria_labels[firefox]
+5.81s call     tests/test_regression_fixes.py::TestRegressionFixes::test_search_functionality_basic[chrome]
+5.76s call     tests/test_regression_fixes.py::TestRegressionFixes::test_accessibility_aria_labels[chrome]
+5.56s call     tests/test_regression_fixes.py::TestRegressionFixes::test_search_functionality_basic[firefox]
+5.37s call     tests/test_commentary_system.py::TestCommentarySystem::test_commentary_source_switching
+4.94s call     tests/test_regression_fixes.py::TestRegressionFixes::test_theme_toggle_functionality[chrome]
+4.86s call     tests/test_regression_fixes.py::TestRegressionFixes::test_theme_toggle_functionality[firefox]
+4.77s call     tests/test_regression_fixes.py::TestRegressionFixes::test_chapter_reader_buttons_present[chrome]
+4.72s call     tests/test_regression_fixes.py::TestRegressionFixes::test_chapter_reader_buttons_present[firefox]
+- Generated html report: file:///Users/andrewhall/repo/explore-scripture/tests/reports/selenium-20260125-145604/report.html -
+=========================== short test summary info ============================
+FAILED tests/test_regression_fixes.py::TestRegressionFixes::test_key_figures_position[chrome] - urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=56654): Read timed out. (read timeout=120)
+============= 1 failed, 91 passed, 1 skipped in 420.34s (0:07:00) ==============
+Loaded test configuration from: /Users/andrewhall/repo/explore-scripture/.env.test.local

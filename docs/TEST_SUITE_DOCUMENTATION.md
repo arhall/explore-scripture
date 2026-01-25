@@ -1,9 +1,11 @@
-# Explore Scripture - Selenium Test Suite Documentation
+# Explore Scripture - Test Suite Documentation
 
 ## Overview
 
-Comprehensive headless Chrome testing infrastructure for validating core
-functionality required for build validation.
+This repo uses two primary test stacks:
+
+- **Pytest + Selenium/Appium** for end-to-end UI validation.
+- **Jest** for data, build, and performance validation.
 
 ## Test Suite Features
 
@@ -44,18 +46,27 @@ functionality required for build validation.
 #### Quick Start
 
 ```bash
-# Run all tests
+# Run Selenium/Pytest suite
 ./run_tests.sh
 
 # Or use npm script
 npm test
 
-# Run specific test
+# Run Selenium suite only
 npm run test:selenium
 
 # Setup only (first time)
 npm run test:setup
 ```
+
+#### Performance Tests (Jest)
+
+```bash
+# Run performance project (build, Lighthouse, benchmarks)
+npx jest --selectProjects performance
+```
+
+See `docs/PERFORMANCE_TESTING.md` for details and prerequisites.
 
 #### iOS Safari Testing
 
@@ -67,7 +78,6 @@ npm run test:setup
 npm run test:safari      # Safari desktop simulation
 npm run test:mobile      # Mobile responsive tests
 npm run test:ios         # iOS simulator tests
-npm run test:ios-all     # All iOS Safari tests
 ```
 
 #### Manual Test Execution
@@ -80,6 +90,35 @@ source test-env/bin/activate
 python -m pytest tests/ -v -m smoke      # Quick smoke tests
 python -m pytest tests/ -v --tb=short    # Full suite with short traceback
 python -m pytest tests/ --html=report.html  # Generate HTML report
+
+# Run Jest unit/data tests (default project)
+npx jest --selectProjects default
+```
+
+#### Selenium Worker Count
+
+`npm run test:selenium` defaults to **2** workers for stability. Override with
+`PYTEST_WORKERS`:
+
+```bash
+# Use 1 worker (serial)
+PYTEST_WORKERS=1 npm run test:selenium
+
+# Use 4 workers
+PYTEST_WORKERS=4 npm run test:selenium
+```
+
+#### Selenium Marker Filter
+
+`npm run test:selenium` skips iOS/Appium tests by default to avoid long setup
+times. Override with `PYTEST_MARKERS`:
+
+```bash
+# Include everything (including iOS/mobile markers)
+PYTEST_MARKERS="" npm run test:selenium
+
+# Run only iOS/mobile tests (requires Appium + simulator)
+PYTEST_MARKERS="ios or mobile" npm run test:selenium
 ```
 
 ### 📊 Test Configuration
@@ -100,15 +139,16 @@ tests/
 ├── filters.test.js           # Template filter tests
 ├── data.test.js              # Data validation tests
 ├── build.test.js             # Build process tests
-├── lighthouse.test.js        # Performance tests
-├── benchmark.test.js         # Performance benchmarks
-└── performance.test.js       # Additional performance tests
+├── lighthouse.test.js        # Lighthouse performance tests (Jest)
+├── benchmark.test.js         # Performance benchmarks (Jest)
+└── performance.test.js       # Build/site/page performance tests (Jest)
 
 pytest.ini                  # Pytest configuration with iOS markers
 run_tests.sh                # Main test execution script
 run_ios_tests.sh            # iOS Safari test execution script
 .github/workflows/test.yml  # CI/CD pipeline
 docs/IOS_TESTING_GUIDE.md   # Complete iOS testing setup guide
+docs/PERFORMANCE_TESTING.md # Performance test usage and details
 ```
 
 #### Dependencies
@@ -116,6 +156,9 @@ docs/IOS_TESTING_GUIDE.md   # Complete iOS testing setup guide
 - **Selenium**: Browser automation and testing (Chrome & Safari)
 - **Appium**: iOS mobile automation testing
 - **Pytest**: Test framework with HTML reporting
+- **Jest**: Unit/data and performance test runner
+- **Puppeteer**: Browser automation for performance timing
+- **Lighthouse CLI**: Performance audits
 - **Chrome/Chromium**: Desktop browser for testing
 - **Safari**: macOS/iOS browser testing
 - **Python 3.9+**: Runtime environment
@@ -194,9 +237,15 @@ sources with modal interface and source-specific URL handling
 
 #### Environment Variables
 
-- `HEADLESS=false`: Run tests in visible browser (debugging)
-- `TEST_URL=http://custom:8080`: Override test URL
-- `TIMEOUT=30`: Set custom timeout for test operations
+- `EXPLORE_SCRIPTURE_LOCAL=true`: Use local server URLs
+- `LOCAL_BASE_URL=http://localhost:8080`: Override local base URL
+- `PRODUCTION_BASE_URL=https://explore-scripture.pages.dev`: Override production URL
+- `TEST_TIMEOUT=240000`: Selenium script timeout (ms)
+- `PAGE_LOAD_TIMEOUT=240000`: Selenium page-load timeout (ms)
+- `PYTEST_WORKERS=auto`: Pytest-xdist worker count (use `1` to serialize)
+- `APPIUM_SERVER_URL=http://localhost:4723`: Appium server URL
+- `IOS_PLATFORM_VERSION`, `IOS_DEVICE_NAME`, `IOS_UDID`: iOS simulator/device selection
+- `IOS_PYTEST_MARKER=ios|mobile|safari`: Limit iOS test markers in `run_ios_tests.sh`
 
 #### Chrome Options
 
@@ -217,7 +266,7 @@ sources with modal interface and source-specific URL handling
 #### Performance Issues
 
 - Tests run in headless mode for speed
-- Parallel execution not implemented (sequential for reliability)
+- Pytest uses xdist parallelism; set `PYTEST_WORKERS=1` to debug in serial
 - Shared browser instances per test class to reduce overhead
 
 ### 📈 Future Enhancements

@@ -631,7 +631,7 @@ class PerformanceMonitor {
       }
 
       return selector;
-    } catch (_error) {
+    } catch {
       return element.tagName ? element.tagName.toLowerCase() : 'unknown';
     }
   }
@@ -671,7 +671,7 @@ class PerformanceMonitor {
 
   updateAPIReliabilityStats(endpoint, _success, _responseTime) {
     // Track API reliability metrics
-    const _sanitizedEndpoint = this.sanitizeEndpoint(endpoint);
+    this.sanitizeEndpoint(endpoint);
     // Implementation would track success rates and response times per endpoint
   }
 

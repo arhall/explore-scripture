@@ -300,7 +300,6 @@ function extractBookReferencesFromText(text, bookMap) {
 
   patterns.forEach((pattern, index) => {
     let match;
-    // eslint-disable-next-line no-cond-assign
     while ((match = pattern.exec(normalizedText)) !== null) {
       const rawBookName = match[1].replace(/\s+/g, ' ').trim();
       const startChapter = parseInt(match[2], 10);
@@ -423,12 +422,6 @@ function normalizeName(value) {
     .replace(/[^a-z0-9\s]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
-}
-
-function tokenize(value) {
-  const normalized = normalizeName(value);
-  if (!normalized) return [];
-  return normalized.split(' ').filter(Boolean);
 }
 
 function uniqueList(items) {
@@ -689,9 +682,7 @@ function updateEntityIds(entityIdsToAdd) {
       .map(file => file.replace('.json', ''))
   );
 
-  // eslint-disable-next-line global-require, import/no-dynamic-require
   const existingIds = require(ENTITY_IDS_FILE);
-  const existingSet = new Set(existingIds);
 
   const filteredExisting = existingIds.filter(id => currentEntityIds.has(id));
   const filteredSet = new Set(filteredExisting);
@@ -822,8 +813,8 @@ async function syncCharacterProfiles() {
     const match = findBestEntityMatch(candidateNames, entities);
 
     let entityId = match?.entity?.id;
-    let entityName = match?.entity?.name || profileName;
-    let entityType = match?.entity?.type || 'person';
+    const entityName = match?.entity?.name || profileName;
+    const entityType = match?.entity?.type || 'person';
     let status = match?.entity?.profileGenerated ? 'created' : 'matched';
     let matchStrategy = match?.matchStrategy || 'created';
     let matchSource = match?.matchSource || 'name';

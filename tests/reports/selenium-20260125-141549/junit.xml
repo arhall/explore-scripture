@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="13" tests="105" time="1021.871" timestamp="2026-01-25T14:15:50.029610-05:00" hostname="MacBookPro.lan"><testcase classname="tests.test_env_config" name="test_environment_variables_loaded" time="0.003" /><testcase classname="tests.test_env_config" name="test_base_url_selection" time="0.000" /><testcase classname="tests.test_env_config" name="test_test_urls_generated" time="0.003" /><testcase classname="tests.test_env_config" name="test_browser_configuration" time="0.001" /><testcase classname="tests.test_env_config" name="test_timeout_configuration" time="0.001" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_theme_toggle_functionality[chrome]" time="51.556" /><testcase classname="tests.test_scripture_widget" name="test_scripture_widget_loads" time="49.009" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_homepage_loads" time="44.633" /><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entities_page_loads" time="51.623" /><testcase classname="tests.test_e2e_ui.TestE2EUI" name="test_global_search_direct_reference" time="94.239" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_genealogy_page_loads" time="60.282" /><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_commentary_buttons_exist" time="90.717" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_navigation_elements" time="2.402" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_hero_section_content" time="1.538" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_theme_toggle" time="1.995" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_search_functionality" time="2.447" /><testcase classname="tests.test_scripture_widget" name="test_scripture_references_enhanced" time="30.181" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_font_controls" time="1.762" /><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_search_functionality" time="33.947" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_high_contrast_mode" time="0.751" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_responsive_layout_mobile" time="1.093" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_accessibility_features" time="10.427" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_theme_toggle_functionality[firefox]" time="55.299" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_cluster_dropdown_exists" time="43.765"><failure message="AssertionError: Should have at least 2 view options&#10;assert 0 &gt;= 2&#10; +  where 0 = len([])">tests/test_genealogy_visualization.py:81: in test_cluster_dropdown_exists
+    assert len(options) &gt;= 2, "Should have at least 2 view options"
+E   AssertionError: Should have at least 2 view options
+E   assert 0 &gt;= 2
+E    +  where 0 = len([])</failure></testcase><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_page_performance" time="1.364" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_character_page_navigation" time="1.919" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_css_loading_and_styling" time="0.518" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_javascript_execution" time="0.530" /><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_individual_entity_page" time="38.094" /><testcase classname="tests.test_scripture_widget" name="test_desktop_hover_behavior" time="34.203" /><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_commentary_modal_opens" time="30.088" /><testcase classname="tests.test_e2e_ui.TestE2EUI" name="test_sections_browse_cards" time="16.342" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_royal_line_cluster_exists" time="16.374" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_chapter_reader_buttons_present[chrome]" time="28.229" /><testcase classname="tests.test_e2e_ui.TestE2EUI" name="test_quick_access_panel_toggle" time="11.706" /><testcase classname="tests.test_scripture_widget" name="test_mobile_tap_behavior" time="14.748" /><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_homepage_loads" time="119.816"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;Stacktrace:&#10;UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)&#10;    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:27: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)
+    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)</skipped></testcase><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_commentary_source_switching" time="41.922" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_messianic_line_checkbox" time="33.710" /><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_profile_content_loads" time="31.694"><skipped type="pytest.skip" message="Entity not found for profile test">/Users/andrewhall/repo/explore-scripture/tests/test_entities_system.py:143: Entity not found for profile test</skipped></testcase><testcase classname="tests.test_scripture_widget" name="test_scripture_widget_styles" time="26.209" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_chapter_reader_buttons_present[firefox]" time="38.167" /><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_cross_references" time="85.900" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_tree_nodes_render" time="20.710" /><testcase classname="tests.test_scripture_widget" name="test_translation_selector_functionality" time="19.924" /><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_iframe_vs_direct_access_handling" time="18.608" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_no_duplicate_chapter_reader_buttons[chrome]" time="13.915" /><testcase classname="tests.test_scripture_widget" name="test_scripture_widget_error_handling" time="7.901" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_messianic_line_highlighting" time="8.911" /><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_book_name_edge_cases" time="27.823" /><testcase classname="tests.test_scripture_widget" name="test_scripture_macros_rendering" time="4.419" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_tooltip_appears_on_hover" time="7.434" /><testcase classname="tests.test_scripture_widget" name="test_scripture_widget_accessibility" time="18.915" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_royal_line_cluster_loads" time="34.665" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_no_duplicate_chapter_reader_buttons[firefox]" time="45.846" /><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_modal_keyboard_navigation" time="28.692" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_cluster_has_expected_nodes" time="8.681" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_youtube_videos_not_blocked[chrome]" time="3.794" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_circle_fill_states" time="7.281" /><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_chapter_reader_integration" time="20.224" /><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_book_filtering" time="9.986" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_youtube_videos_not_blocked[firefox]" time="10.173" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_search_functionality_exists" time="6.833" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_biblegateway_integration_working[chrome]" time="34.669" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_zoom_controls_exist" time="6.080" /><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_navigation_menu" time="131.604"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: The simulator 10236BF7-E292-410C-98FE-F538DCD152F3 has failed to finish booting after 120s. Original status: Monitoring boot status for appiumTest-481D9A77-0BC4-4284-B0F1-AA3001F19606-iPhone 14 (10236BF7-E292-410C-98FE-F538DCD152F3).&#10;[2026-01-25 19:19:10 +0000] Status=2, isTerminal=NO, Elapsed=01:15.&#10;&#09;Waiting on Data Migration&#10;&#09;&#09;Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)&#10;&#09;&#09;Migration Elapsed:00:00 seconds&#10;&#10;[2026-01-25 19:19:11 +0000] Status=2, isTerminal=NO, Elapsed=01:15.&#10;&#09;Waiting on Data Migration&#10;&#09;&#09;Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)&#10;&#09;&#09;Migration Elapsed:00:03 seconds&#10;&#10;[2026-01-25 19:19:11 +0000] Status=2, isTerminal=NO, Elapsed=01:16.&#10;&#09;Waiting on Data Migration&#10;&#09;&#09;Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)&#10;&#09;&#09;Migration Elapsed:00:04 seconds&#10;&#10;[2026-01-25 19:19:12 +0000] Status=2, isTerminal=NO, Elapsed=01:16.&#10;&#09;Waiting on Data Migration&#10;&#09;&#09;Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)&#10;&#09;&#09;Migration Elapsed:00:04 seconds&#10;&#10;[2026-01-25 19:19:15 +0000] Status=2, isTerminal=NO, Elapsed=01:19.&#10;&#09;Waiting on Data Migration&#10;&#09;&#09;Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)&#10;&#09;&#09;Migration Elapsed:00:05 seconds&#10;&#10;[2026-01-25 19:19:16 +0000] Status=2, isTerminal=NO, Elapsed=01:21.&#10;&#09;Waiting on Data Migration&#10;&#09;&#09;Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)&#10;&#09;&#09;Migration Elapsed:00:08 seconds&#10;&#10;[2026-01-25 19:19:17 +0000] Status=2, isTerminal=NO, Elapsed=01:22.&#10;&#09;Waiting on Data Migration&#10;&#09;&#09;Reason:Running plugin com.apple.appleaccount.migrator (AppleAccountMigrator.migrator)&#10;&#09;&#09;Migration Elapsed:00:10 seconds&#10;&#10;[2026-01-25 19:19:18 +0000] Status=2, isTerminal=NO, Elapsed=01:22.&#10;&#09;Waiting on Data Migration&#10;&#09;&#09;Reason:Running plugin com.apple.PreferencesMigrator (PreferencesMigrator.migrator)&#10;&#09;&#09;Migration Elapsed:00:11 seconds&#10;&#10;[2026-01-25 19:19:18 +0000] Status=2, isTerminal=NO, Elapsed=01:23.&#10;&#09;Waiting on Data Migration&#10;&#09;&#09;Reason:Running plugin com.apple.PreferencesMigrator (PreferencesMigrator.migrator)&#10;&#09;&#09;Migration Elapsed:00:11 seconds&#10;&#10;[2026-01-25 19:19:20 +0000] Status=4, isTerminal=NO, Elapsed=01:24.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:21 +0000] Status=4, isTerminal=NO, Elapsed=01:25.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:21 +0000] Status=4, isTerminal=NO, Elapsed=01:26.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:22 +0000] Status=4, isTerminal=NO, Elapsed=01:27.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:23 +0000] Status=4, isTerminal=NO, Elapsed=01:28.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:24 +0000] Status=4, isTerminal=NO, Elapsed=01:29.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:25 +0000] Status=4, isTerminal=NO, Elapsed=01:30.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:26 +0000] Status=4, isTerminal=NO, Elapsed=01:31.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:27 +0000] Status=4, isTerminal=NO, Elapsed=01:32.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:28 +0000] Status=4, isTerminal=NO, Elapsed=01:33.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:29 +0000] Status=4, isTerminal=NO, Elapsed=01:34.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:30 +0000] Status=4, isTerminal=NO, Elapsed=01:35.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:31 +0000] Status=4, isTerminal=NO, Elapsed=01:36.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:32 +0000] Status=4, isTerminal=NO, Elapsed=01:37.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:33 +0000] Status=4, isTerminal=NO, Elapsed=01:38.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:34 +0000] Status=4, isTerminal=NO, Elapsed=01:39.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:35 +0000] Status=4, isTerminal=NO, Elapsed=01:40.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:36 +0000] Status=4, isTerminal=NO, Elapsed=01:41.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:37 +0000] Status=4, isTerminal=NO, Elapsed=01:42.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:38 +0000] Status=4, isTerminal=NO, Elapsed=01:43.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:39 +0000] Status=4, isTerminal=NO, Elapsed=01:44.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:40 +0000] Status=4, isTerminal=NO, Elapsed=01:45.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:41 +0000] Status=4, isTerminal=NO, Elapsed=01:46.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:42 +0000] Status=4, isTerminal=NO, Elapsed=01:47.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:43 +0000] Status=4, isTerminal=NO, Elapsed=01:48.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:44 +0000] Status=4, isTerminal=NO, Elapsed=01:49.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:45 +0000] Status=4, isTerminal=NO, Elapsed=01:50.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:47 +0000] Status=4, isTerminal=NO, Elapsed=01:52.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:47 +0000] Status=4, isTerminal=NO, Elapsed=01:52.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:48 +0000] Status=4, isTerminal=NO, Elapsed=01:53.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:49 +0000] Status=4, isTerminal=NO, Elapsed=01:54.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:50 +0000] Status=4, isTerminal=NO, Elapsed=01:55.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:51 +0000] Status=4, isTerminal=NO, Elapsed=01:56.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:52 +0000] Status=4, isTerminal=NO, Elapsed=01:57.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:53 +0000] Status=4, isTerminal=NO, Elapsed=01:58.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:54 +0000] Status=4, isTerminal=NO, Elapsed=01:59.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:55 +0000] Status=4, isTerminal=NO, Elapsed=02:00.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:56 +0000] Status=4, isTerminal=NO, Elapsed=02:01.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:57 +0000] Status=4, isTerminal=NO, Elapsed=02:02.&#10;&#09;Waiting on System App&#10;&#10;Stacktrace:&#10;UnknownError: An unknown server-side error occurred while processing the command. Original error: The simulator 10236BF7-E292-410C-98FE-F538DCD152F3 has failed to finish booting after 120s. Original status: Monitoring boot status for appiumTest-481D9A77-0BC4-4284-B0F1-AA3001F19606-iPhone 14 (10236BF7-E292-410C-98FE-F538DCD152F3).&#10;[2026-01-25 19:19:10 +0000] Status=2, isTerminal=NO, Elapsed=01:15.&#10;&#09;Waiting on Data Migration&#10;&#09;&#09;Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)&#10;&#09;&#09;Migration Elapsed:00:00 seconds&#10;&#10;[2026-01-25 19:19:11 +0000] Status=2, isTerminal=NO, Elapsed=01:15.&#10;&#09;Waiting on Data Migration&#10;&#09;&#09;Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)&#10;&#09;&#09;Migration Elapsed:00:03 seconds&#10;&#10;[2026-01-25 19:19:11 +0000] Status=2, isTerminal=NO, Elapsed=01:16.&#10;&#09;Waiting on Data Migration&#10;&#09;&#09;Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)&#10;&#09;&#09;Migration Elapsed:00:04 seconds&#10;&#10;[2026-01-25 19:19:12 +0000] Status=2, isTerminal=NO, Elapsed=01:16.&#10;&#09;Waiting on Data Migration&#10;&#09;&#09;Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)&#10;&#09;&#09;Migration Elapsed:00:04 seconds&#10;&#10;[2026-01-25 19:19:15 +0000] Status=2, isTerminal=NO, Elapsed=01:19.&#10;&#09;Waiting on Data Migration&#10;&#09;&#09;Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)&#10;&#09;&#09;Migration Elapsed:00:05 seconds&#10;&#10;[2026-01-25 19:19:16 +0000] Status=2, isTerminal=NO, Elapsed=01:21.&#10;&#09;Waiting on Data Migration&#10;&#09;&#09;Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)&#10;&#09;&#09;Migration Elapsed:00:08 seconds&#10;&#10;[2026-01-25 19:19:17 +0000] Status=2, isTerminal=NO, Elapsed=01:22.&#10;&#09;Waiting on Data Migration&#10;&#09;&#09;Reason:Running plugin com.apple.appleaccount.migrator (AppleAccountMigrator.migrator)&#10;&#09;&#09;Migration Elapsed:00:10 seconds&#10;&#10;[2026-01-25 19:19:18 +0000] Status=2, isTerminal=NO, Elapsed=01:22.&#10;&#09;Waiting on Data Migration&#10;&#09;&#09;Reason:Running plugin com.apple.PreferencesMigrator (PreferencesMigrator.migrator)&#10;&#09;&#09;Migration Elapsed:00:11 seconds&#10;&#10;[2026-01-25 19:19:18 +0000] Status=2, isTerminal=NO, Elapsed=01:23.&#10;&#09;Waiting on Data Migration&#10;&#09;&#09;Reason:Running plugin com.apple.PreferencesMigrator (PreferencesMigrator.migrator)&#10;&#09;&#09;Migration Elapsed:00:11 seconds&#10;&#10;[2026-01-25 19:19:20 +0000] Status=4, isTerminal=NO, Elapsed=01:24.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:21 +0000] Status=4, isTerminal=NO, Elapsed=01:25.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:21 +0000] Status=4, isTerminal=NO, Elapsed=01:26.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:22 +0000] Status=4, isTerminal=NO, Elapsed=01:27.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:23 +0000] Status=4, isTerminal=NO, Elapsed=01:28.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:24 +0000] Status=4, isTerminal=NO, Elapsed=01:29.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:25 +0000] Status=4, isTerminal=NO, Elapsed=01:30.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:26 +0000] Status=4, isTerminal=NO, Elapsed=01:31.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:27 +0000] Status=4, isTerminal=NO, Elapsed=01:32.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:28 +0000] Status=4, isTerminal=NO, Elapsed=01:33.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:29 +0000] Status=4, isTerminal=NO, Elapsed=01:34.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:30 +0000] Status=4, isTerminal=NO, Elapsed=01:35.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:31 +0000] Status=4, isTerminal=NO, Elapsed=01:36.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:32 +0000] Status=4, isTerminal=NO, Elapsed=01:37.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:33 +0000] Status=4, isTerminal=NO, Elapsed=01:38.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:34 +0000] Status=4, isTerminal=NO, Elapsed=01:39.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:35 +0000] Status=4, isTerminal=NO, Elapsed=01:40.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:36 +0000] Status=4, isTerminal=NO, Elapsed=01:41.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:37 +0000] Status=4, isTerminal=NO, Elapsed=01:42.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:38 +0000] Status=4, isTerminal=NO, Elapsed=01:43.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:39 +0000] Status=4, isTerminal=NO, Elapsed=01:44.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:40 +0000] Status=4, isTerminal=NO, Elapsed=01:45.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:41 +0000] Status=4, isTerminal=NO, Elapsed=01:46.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:42 +0000] Status=4, isTerminal=NO, Elapsed=01:47.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:43 +0000] Status=4, isTerminal=NO, Elapsed=01:48.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:44 +0000] Status=4, isTerminal=NO, Elapsed=01:49.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:45 +0000] Status=4, isTerminal=NO, Elapsed=01:50.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:47 +0000] Status=4, isTerminal=NO, Elapsed=01:52.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:47 +0000] Status=4, isTerminal=NO, Elapsed=01:52.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:48 +0000] Status=4, isTerminal=NO, Elapsed=01:53.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:49 +0000] Status=4, isTerminal=NO, Elapsed=01:54.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:50 +0000] Status=4, isTerminal=NO, Elapsed=01:55.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:51 +0000] Status=4, isTerminal=NO, Elapsed=01:56.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:52 +0000] Status=4, isTerminal=NO, Elapsed=01:57.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:53 +0000] Status=4, isTerminal=NO, Elapsed=01:58.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:54 +0000] Status=4, isTerminal=NO, Elapsed=01:59.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:55 +0000] Status=4, isTerminal=NO, Elapsed=02:00.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:56 +0000] Status=4, isTerminal=NO, Elapsed=02:01.&#10;&#09;Waiting on System App&#10;&#10;[2026-01-25 19:19:57 +0000] Status=4, isTerminal=NO, Elapsed=02:02.&#10;&#09;Waiting on System App&#10;&#10;    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)&#10;    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:45: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: The simulator 10236BF7-E292-410C-98FE-F538DCD152F3 has failed to finish booting after 120s. Original status: Monitoring boot status for appiumTest-481D9A77-0BC4-4284-B0F1-AA3001F19606-iPhone 14 (10236BF7-E292-410C-98FE-F538DCD152F3).
+[2026-01-25 19:19:10 +0000] Status=2, isTerminal=NO, Elapsed=01:15.
+	Waiting on Data Migration
+		Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)
+		Migration Elapsed:00:00 seconds
+
+[2026-01-25 19:19:11 +0000] Status=2, isTerminal=NO, Elapsed=01:15.
+	Waiting on Data Migration
+		Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)
+		Migration Elapsed:00:03 seconds
+
+[2026-01-25 19:19:11 +0000] Status=2, isTerminal=NO, Elapsed=01:16.
+	Waiting on Data Migration
+		Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)
+		Migration Elapsed:00:04 seconds
+
+[2026-01-25 19:19:12 +0000] Status=2, isTerminal=NO, Elapsed=01:16.
+	Waiting on Data Migration
+		Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)
+		Migration Elapsed:00:04 seconds
+
+[2026-01-25 19:19:15 +0000] Status=2, isTerminal=NO, Elapsed=01:19.
+	Waiting on Data Migration
+		Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)
+		Migration Elapsed:00:05 seconds
+
+[2026-01-25 19:19:16 +0000] Status=2, isTerminal=NO, Elapsed=01:21.
+	Waiting on Data Migration
+		Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)
+		Migration Elapsed:00:08 seconds
+
+[2026-01-25 19:19:17 +0000] Status=2, isTerminal=NO, Elapsed=01:22.
+	Waiting on Data Migration
+		Reason:Running plugin com.apple.appleaccount.migrator (AppleAccountMigrator.migrator)
+		Migration Elapsed:00:10 seconds
+
+[2026-01-25 19:19:18 +0000] Status=2, isTerminal=NO, Elapsed=01:22.
+	Waiting on Data Migration
+		Reason:Running plugin com.apple.PreferencesMigrator (PreferencesMigrator.migrator)
+		Migration Elapsed:00:11 seconds
+
+[2026-01-25 19:19:18 +0000] Status=2, isTerminal=NO, Elapsed=01:23.
+	Waiting on Data Migration
+		Reason:Running plugin com.apple.PreferencesMigrator (PreferencesMigrator.migrator)
+		Migration Elapsed:00:11 seconds
+
+[2026-01-25 19:19:20 +0000] Status=4, isTerminal=NO, Elapsed=01:24.
+	Waiting on System App
+
+[2026-01-25 19:19:21 +0000] Status=4, isTerminal=NO, Elapsed=01:25.
+	Waiting on System App
+
+[2026-01-25 19:19:21 +0000] Status=4, isTerminal=NO, Elapsed=01:26.
+	Waiting on System App
+
+[2026-01-25 19:19:22 +0000] Status=4, isTerminal=NO, Elapsed=01:27.
+	Waiting on System App
+
+[2026-01-25 19:19:23 +0000] Status=4, isTerminal=NO, Elapsed=01:28.
+	Waiting on System App
+
+[2026-01-25 19:19:24 +0000] Status=4, isTerminal=NO, Elapsed=01:29.
+	Waiting on System App
+
+[2026-01-25 19:19:25 +0000] Status=4, isTerminal=NO, Elapsed=01:30.
+	Waiting on System App
+
+[2026-01-25 19:19:26 +0000] Status=4, isTerminal=NO, Elapsed=01:31.
+	Waiting on System App
+
+[2026-01-25 19:19:27 +0000] Status=4, isTerminal=NO, Elapsed=01:32.
+	Waiting on System App
+
+[2026-01-25 19:19:28 +0000] Status=4, isTerminal=NO, Elapsed=01:33.
+	Waiting on System App
+
+[2026-01-25 19:19:29 +0000] Status=4, isTerminal=NO, Elapsed=01:34.
+	Waiting on System App
+
+[2026-01-25 19:19:30 +0000] Status=4, isTerminal=NO, Elapsed=01:35.
+	Waiting on System App
+
+[2026-01-25 19:19:31 +0000] Status=4, isTerminal=NO, Elapsed=01:36.
+	Waiting on System App
+
+[2026-01-25 19:19:32 +0000] Status=4, isTerminal=NO, Elapsed=01:37.
+	Waiting on System App
+
+[2026-01-25 19:19:33 +0000] Status=4, isTerminal=NO, Elapsed=01:38.
+	Waiting on System App
+
+[2026-01-25 19:19:34 +0000] Status=4, isTerminal=NO, Elapsed=01:39.
+	Waiting on System App
+
+[2026-01-25 19:19:35 +0000] Status=4, isTerminal=NO, Elapsed=01:40.
+	Waiting on System App
+
+[2026-01-25 19:19:36 +0000] Status=4, isTerminal=NO, Elapsed=01:41.
+	Waiting on System App
+
+[2026-01-25 19:19:37 +0000] Status=4, isTerminal=NO, Elapsed=01:42.
+	Waiting on System App
+
+[2026-01-25 19:19:38 +0000] Status=4, isTerminal=NO, Elapsed=01:43.
+	Waiting on System App
+
+[2026-01-25 19:19:39 +0000] Status=4, isTerminal=NO, Elapsed=01:44.
+	Waiting on System App
+
+[2026-01-25 19:19:40 +0000] Status=4, isTerminal=NO, Elapsed=01:45.
+	Waiting on System App
+
+[2026-01-25 19:19:41 +0000] Status=4, isTerminal=NO, Elapsed=01:46.
+	Waiting on System App
+
+[2026-01-25 19:19:42 +0000] Status=4, isTerminal=NO, Elapsed=01:47.
+	Waiting on System App
+
+[2026-01-25 19:19:43 +0000] Status=4, isTerminal=NO, Elapsed=01:48.
+	Waiting on System App
+
+[2026-01-25 19:19:44 +0000] Status=4, isTerminal=NO, Elapsed=01:49.
+	Waiting on System App
+
+[2026-01-25 19:19:45 +0000] Status=4, isTerminal=NO, Elapsed=01:50.
+	Waiting on System App
+
+[2026-01-25 19:19:47 +0000] Status=4, isTerminal=NO, Elapsed=01:52.
+	Waiting on System App
+
+[2026-01-25 19:19:47 +0000] Status=4, isTerminal=NO, Elapsed=01:52.
+	Waiting on System App
+
+[2026-01-25 19:19:48 +0000] Status=4, isTerminal=NO, Elapsed=01:53.
+	Waiting on System App
+
+[2026-01-25 19:19:49 +0000] Status=4, isTerminal=NO, Elapsed=01:54.
+	Waiting on System App
+
+[2026-01-25 19:19:50 +0000] Status=4, isTerminal=NO, Elapsed=01:55.
+	Waiting on System App
+
+[2026-01-25 19:19:51 +0000] Status=4, isTerminal=NO, Elapsed=01:56.
+	Waiting on System App
+
+[2026-01-25 19:19:52 +0000] Status=4, isTerminal=NO, Elapsed=01:57.
+	Waiting on System App
+
+[2026-01-25 19:19:53 +0000] Status=4, isTerminal=NO, Elapsed=01:58.
+	Waiting on System App
+
+[2026-01-25 19:19:54 +0000] Status=4, isTerminal=NO, Elapsed=01:59.
+	Waiting on System App
+
+[2026-01-25 19:19:55 +0000] Status=4, isTerminal=NO, Elapsed=02:00.
+	Waiting on System App
+
+[2026-01-25 19:19:56 +0000] Status=4, isTerminal=NO, Elapsed=02:01.
+	Waiting on System App
+
+[2026-01-25 19:19:57 +0000] Status=4, isTerminal=NO, Elapsed=02:02.
+	Waiting on System App
+
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The simulator 10236BF7-E292-410C-98FE-F538DCD152F3 has failed to finish booting after 120s. Original status: Monitoring boot status for appiumTest-481D9A77-0BC4-4284-B0F1-AA3001F19606-iPhone 14 (10236BF7-E292-410C-98FE-F538DCD152F3).
+[2026-01-25 19:19:10 +0000] Status=2, isTerminal=NO, Elapsed=01:15.
+	Waiting on Data Migration
+		Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)
+		Migration Elapsed:00:00 seconds
+
+[2026-01-25 19:19:11 +0000] Status=2, isTerminal=NO, Elapsed=01:15.
+	Waiting on Data Migration
+		Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)
+		Migration Elapsed:00:03 seconds
+
+[2026-01-25 19:19:11 +0000] Status=2, isTerminal=NO, Elapsed=01:16.
+	Waiting on Data Migration
+		Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)
+		Migration Elapsed:00:04 seconds
+
+[2026-01-25 19:19:12 +0000] Status=2, isTerminal=NO, Elapsed=01:16.
+	Waiting on Data Migration
+		Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)
+		Migration Elapsed:00:04 seconds
+
+[2026-01-25 19:19:15 +0000] Status=2, isTerminal=NO, Elapsed=01:19.
+	Waiting on Data Migration
+		Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)
+		Migration Elapsed:00:05 seconds
+
+[2026-01-25 19:19:16 +0000] Status=2, isTerminal=NO, Elapsed=01:21.
+	Waiting on Data Migration
+		Reason:Running plugin com.apple.managedconfiguration.migrator (MCProfile.migrator, user-agnostic)
+		Migration Elapsed:00:08 seconds
+
+[2026-01-25 19:19:17 +0000] Status=2, isTerminal=NO, Elapsed=01:22.
+	Waiting on Data Migration
+		Reason:Running plugin com.apple.appleaccount.migrator (AppleAccountMigrator.migrator)
+		Migration Elapsed:00:10 seconds
+
+[2026-01-25 19:19:18 +0000] Status=2, isTerminal=NO, Elapsed=01:22.
+	Waiting on Data Migration
+		Reason:Running plugin com.apple.PreferencesMigrator (PreferencesMigrator.migrator)
+		Migration Elapsed:00:11 seconds
+
+[2026-01-25 19:19:18 +0000] Status=2, isTerminal=NO, Elapsed=01:23.
+	Waiting on Data Migration
+		Reason:Running plugin com.apple.PreferencesMigrator (PreferencesMigrator.migrator)
+		Migration Elapsed:00:11 seconds
+
+[2026-01-25 19:19:20 +0000] Status=4, isTerminal=NO, Elapsed=01:24.
+	Waiting on System App
+
+[2026-01-25 19:19:21 +0000] Status=4, isTerminal=NO, Elapsed=01:25.
+	Waiting on System App
+
+[2026-01-25 19:19:21 +0000] Status=4, isTerminal=NO, Elapsed=01:26.
+	Waiting on System App
+
+[2026-01-25 19:19:22 +0000] Status=4, isTerminal=NO, Elapsed=01:27.
+	Waiting on System App
+
+[2026-01-25 19:19:23 +0000] Status=4, isTerminal=NO, Elapsed=01:28.
+	Waiting on System App
+
+[2026-01-25 19:19:24 +0000] Status=4, isTerminal=NO, Elapsed=01:29.
+	Waiting on System App
+
+[2026-01-25 19:19:25 +0000] Status=4, isTerminal=NO, Elapsed=01:30.
+	Waiting on System App
+
+[2026-01-25 19:19:26 +0000] Status=4, isTerminal=NO, Elapsed=01:31.
+	Waiting on System App
+
+[2026-01-25 19:19:27 +0000] Status=4, isTerminal=NO, Elapsed=01:32.
+	Waiting on System App
+
+[2026-01-25 19:19:28 +0000] Status=4, isTerminal=NO, Elapsed=01:33.
+	Waiting on System App
+
+[2026-01-25 19:19:29 +0000] Status=4, isTerminal=NO, Elapsed=01:34.
+	Waiting on System App
+
+[2026-01-25 19:19:30 +0000] Status=4, isTerminal=NO, Elapsed=01:35.
+	Waiting on System App
+
+[2026-01-25 19:19:31 +0000] Status=4, isTerminal=NO, Elapsed=01:36.
+	Waiting on System App
+
+[2026-01-25 19:19:32 +0000] Status=4, isTerminal=NO, Elapsed=01:37.
+	Waiting on System App
+
+[2026-01-25 19:19:33 +0000] Status=4, isTerminal=NO, Elapsed=01:38.
+	Waiting on System App
+
+[2026-01-25 19:19:34 +0000] Status=4, isTerminal=NO, Elapsed=01:39.
+	Waiting on System App
+
+[2026-01-25 19:19:35 +0000] Status=4, isTerminal=NO, Elapsed=01:40.
+	Waiting on System App
+
+[2026-01-25 19:19:36 +0000] Status=4, isTerminal=NO, Elapsed=01:41.
+	Waiting on System App
+
+[2026-01-25 19:19:37 +0000] Status=4, isTerminal=NO, Elapsed=01:42.
+	Waiting on System App
+
+[2026-01-25 19:19:38 +0000] Status=4, isTerminal=NO, Elapsed=01:43.
+	Waiting on System App
+
+[2026-01-25 19:19:39 +0000] Status=4, isTerminal=NO, Elapsed=01:44.
+	Waiting on System App
+
+[2026-01-25 19:19:40 +0000] Status=4, isTerminal=NO, Elapsed=01:45.
+	Waiting on System App
+
+[2026-01-25 19:19:41 +0000] Status=4, isTerminal=NO, Elapsed=01:46.
+	Waiting on System App
+
+[2026-01-25 19:19:42 +0000] Status=4, isTerminal=NO, Elapsed=01:47.
+	Waiting on System App
+
+[2026-01-25 19:19:43 +0000] Status=4, isTerminal=NO, Elapsed=01:48.
+	Waiting on System App
+
+[2026-01-25 19:19:44 +0000] Status=4, isTerminal=NO, Elapsed=01:49.
+	Waiting on System App
+
+[2026-01-25 19:19:45 +0000] Status=4, isTerminal=NO, Elapsed=01:50.
+	Waiting on System App
+
+[2026-01-25 19:19:47 +0000] Status=4, isTerminal=NO, Elapsed=01:52.
+	Waiting on System App
+
+[2026-01-25 19:19:47 +0000] Status=4, isTerminal=NO, Elapsed=01:52.
+	Waiting on System App
+
+[2026-01-25 19:19:48 +0000] Status=4, isTerminal=NO, Elapsed=01:53.
+	Waiting on System App
+
+[2026-01-25 19:19:49 +0000] Status=4, isTerminal=NO, Elapsed=01:54.
+	Waiting on System App
+
+[2026-01-25 19:19:50 +0000] Status=4, isTerminal=NO, Elapsed=01:55.
+	Waiting on System App
+
+[2026-01-25 19:19:51 +0000] Status=4, isTerminal=NO, Elapsed=01:56.
+	Waiting on System App
+
+[2026-01-25 19:19:52 +0000] Status=4, isTerminal=NO, Elapsed=01:57.
+	Waiting on System App
+
+[2026-01-25 19:19:53 +0000] Status=4, isTerminal=NO, Elapsed=01:58.
+	Waiting on System App
+
+[2026-01-25 19:19:54 +0000] Status=4, isTerminal=NO, Elapsed=01:59.
+	Waiting on System App
+
+[2026-01-25 19:19:55 +0000] Status=4, isTerminal=NO, Elapsed=02:00.
+	Waiting on System App
+
+[2026-01-25 19:19:56 +0000] Status=4, isTerminal=NO, Elapsed=02:01.
+	Waiting on System App
+
+[2026-01-25 19:19:57 +0000] Status=4, isTerminal=NO, Elapsed=02:02.
+	Waiting on System App
+
+    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)
+    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)</skipped></testcase><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entities_filter_character_study_and_testament" time="17.894" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_data_file_accessible" time="7.247" /><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_mobile_responsiveness" time="25.597" /><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_responsive_design" time="11.898" /><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_navigation_breadcrumbs" time="18.876" /><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_all_books_have_commentary_buttons" time="100.464" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_biblegateway_integration_working[firefox]" time="15.175" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_javascript_modules_loading_correctly[chrome]" time="13.691" /><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_error_handling" time="35.872" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_javascript_modules_loading_correctly[firefox]" time="23.851" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_critical_css_loading[chrome]" time="7.147" /><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_data_integrity" time="5.952" /><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_parables_page_loads" time="3.119" /><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_people_groups_page_loads" time="4.829" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_critical_css_loading[firefox]" time="9.474" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_service_worker_registration[chrome]" time="4.524" /><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_theme_toggle" time="106.861"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;Stacktrace:&#10;UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)&#10;    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:76: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)
+    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)</skipped></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_service_worker_registration[firefox]" time="14.190" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_offline_functionality[chrome]" time="20.278" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_offline_functionality[firefox]" time="8.717" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_search_functionality_basic[chrome]" time="9.450" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_search_functionality_basic[firefox]" time="24.680" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_responsive_design_basics[chrome]" time="5.862" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_responsive_design_basics[firefox]" time="9.275" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_responsive_table_design[chrome]" time="7.035" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_responsive_table_design[firefox]" time="9.986" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_accessibility_aria_labels[chrome]" time="8.540" /><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_character_search" time="113.885"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;Stacktrace:&#10;UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)&#10;    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:116: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)
+    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)</skipped></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_accessibility_aria_labels[firefox]" time="21.351" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_key_figures_position[chrome]" time="7.508" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_key_figures_position[firefox]" time="12.775" /><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_chapter_reader" time="93.250"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;Stacktrace:&#10;UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)&#10;    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:154: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)
+    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)</skipped></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_scripture_widget" time="61.285"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;Stacktrace:&#10;UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)&#10;    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:225: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)
+    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)</skipped></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_responsive_design" time="68.096"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;Stacktrace:&#10;UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)&#10;    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:261: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)
+    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)</skipped></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_performance_basic" time="61.553"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;Stacktrace:&#10;UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)&#10;    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:291: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)
+    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)</skipped></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_book_navigation" time="61.453"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;Stacktrace:&#10;UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)&#10;    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:330: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)
+    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)</skipped></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_accessibility_basics" time="60.988"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;Stacktrace:&#10;UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)&#10;    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:361: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)
+    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)</skipped></testcase><testcase classname="tests.test_ios_safari.TestIOSSpecific" name="test_ios_safari_viewport_behavior" time="70.321"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;Stacktrace:&#10;UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)&#10;    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:396: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)
+    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)</skipped></testcase><testcase classname="tests.test_ios_safari.TestIOSSpecific" name="test_ios_touch_events" time="71.302"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;Stacktrace:&#10;UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)&#10;    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:418: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: Message: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+    at getResponseForW3CError (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1143:9)
+    at asyncHandler (/Users/andrewhall/.nvm/versions/node/v24.9.0/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:487:57)</skipped></testcase></testsuite></testsuites>

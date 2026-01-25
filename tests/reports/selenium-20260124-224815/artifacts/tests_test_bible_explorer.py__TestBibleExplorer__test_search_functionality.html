@@ -1,0 +1,2479 @@
+<html lang="en" data-theme="slate" style="--bg: #0f172a; --card: #1e293b; --text: #f1f5f9; --text-secondary: #cbd5e1; --accent: #3b82f6; --accent-dark: #2563eb; --border: #334155; --bg-secondary: #334155; --success: #10b981; --success-dark: #059669; --warning: #f59e0b; --warning-dark: #d97706; --error: #ef4444; --accent-alpha-3: rgba(59, 130, 246, 0.03); --accent-alpha-5: rgba(59, 130, 246, 0.05); --accent-alpha-10: rgba(59, 130, 246, 0.1); --accent-alpha-20: rgba(59, 130, 246, 0.2); --accent-alpha-25: rgba(59, 130, 246, 0.25); --accent-alpha-30: rgba(59, 130, 246, 0.3);"><head><style id="critical-css">
+        :root { 
+          --bg: #ffffff; 
+          --text: #0f172a; 
+          --accent: #3b82f6; 
+          --border: #e2e8f0;
+        }
+        [data-theme="dark"] { 
+          --bg: #0f172a; 
+          --text: #f1f5f9; 
+          --accent: #60a5fa; 
+          --border: #334155;
+        }
+        body { 
+          font-family: Inter, system-ui, -apple-system, sans-serif; 
+          background: var(--bg); 
+          color: var(--text); 
+          margin: 0; 
+          line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+      
+
+        .nav { 
+          display: flex; 
+          justify-content: space-between; 
+          align-items: center; 
+          padding: 1rem 0; 
+          border-bottom: 1px solid var(--border);
+        }
+        .nav-brand { 
+          font-weight: 700; 
+          font-size: 1.25rem; 
+          color: var(--accent); 
+          text-decoration: none;
+        }
+        .nav-links { display: flex; gap: 1rem; align-items: center; }
+        .nav-link { 
+          color: var(--text); 
+          text-decoration: none; 
+          padding: 0.5rem 1rem; 
+          border-radius: 6px;
+          transition: background-color 0.2s;
+        }
+        .nav-link:hover, .nav-link.active { 
+          background: var(--accent); 
+          color: white; 
+        }
+        .theme-toggle { 
+          background: transparent; 
+          border: 1px solid var(--border); 
+          border-radius: 6px; 
+          padding: 0.5rem; 
+          cursor: pointer;
+          color: var(--text);
+        }
+      
+
+        .loading { 
+          display: inline-block; 
+          width: 20px; 
+          height: 20px; 
+          border: 2px solid var(--border); 
+          border-radius: 50%; 
+          border-top-color: var(--accent); 
+          animation: spin 1s linear infinite; 
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .skeleton { 
+          background: linear-gradient(90deg, var(--border) 25%, transparent 50%, var(--border) 75%); 
+          background-size: 200% 100%; 
+          animation: shimmer 1.5s infinite; 
+        }
+        @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+      </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://api.reftagger.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' data: https://fonts.gstatic.com https://basemaps.cartocdn.com https://tiles.basemaps.cartocdn.com https://*.basemaps.cartocdn.com; img-src 'self' data: https: https://i.ytimg.com https://yt3.ggpht.com; connect-src 'self' https://api.esv.org https://www.biblegateway.com https://bible-api.com https://tile.openstreetmap.org https://basemaps.cartocdn.com https://tiles.basemaps.cartocdn.com https://tiles-a.basemaps.cartocdn.com https://tiles-b.basemaps.cartocdn.com https://tiles-c.basemaps.cartocdn.com https://tiles-d.basemaps.cartocdn.com https://*.basemaps.cartocdn.com https://demotiles.maplibre.org https://cdn.jsdelivr.net; worker-src 'self' https://unpkg.com https://cdn.jsdelivr.net blob:; frame-src 'self' https://www.youtube.com https://www.biblegateway.com https://www.youtube-nocookie.com https://enduringword.com https://www.biblestudytools.com https://www.studylight.org https://biblehub.com https://biblefamilytree.info https://onemessianicgentile.com https://www.onemessianicgentile.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()">
+
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Explore Scripture">
+    <title>Explore Scripture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    
+    <meta name="description" content="Chapter-by-chapter Bible summaries, videos, and commentary for every book of Scripture.">
+    <!-- Performance Optimizers (loaded first) -->
+    <script src="/assets/css-optimizer.js" async=""></script>
+    <script src="/assets/image-optimizer.js" async=""></script>
+
+    <!-- Module Loader (handles all other JS loading) -->
+    <!-- Bundle optimizer replaces module-loader with intelligent loading -->
+    <script src="/assets/bundle-optimizer.js"></script><link rel="stylesheet" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap"><style>
+      @font-face {
+        font-family: 'Inter';
+        font-display: swap;
+      }
+    </style><script src="/assets/theme-manager.js" async="" data-module="theme-manager" data-loaded="true"></script><script src="/assets/logger.js" async="" data-module="logger" data-loaded="true"></script>
+  <script type="module" integrity="sha512-I1nWw2KfQnK/t/zOlALFhLrZA1yzsCzBl7DxamXdg/QF7kq+O4sYBZLl0DFCE7vP2ixPccL/k0/oqvhyDB73zQ==" src="/.11ty/reload-client.js"></script><style>
+  .lazy-image {
+    transition: opacity 0.3s ease;
+  }
+  .image-loading {
+    opacity: 0.5;
+  }
+  .image-loaded {
+    opacity: 1;
+  }
+  .image-error {
+    opacity: 0.7;
+    filter: grayscale(100%);
+  }
+</style><style id="theme-switcher-styles">
+      /* Navigation Theme Button Styling */
+      .theme-toggle-nav {
+        background: none;
+        border: none;
+        color: var(--text-secondary);
+        cursor: pointer;
+        padding: 0.5rem;
+        margin: 0;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+      }
+      
+      .theme-toggle-nav:hover {
+        background: var(--bg-secondary);
+        color: var(--text);
+      }
+      
+      /* Navigation Theme Dropdown */
+      .theme-nav-dropdown {
+        position: fixed;
+        top: 60px;
+        right: 20px;
+        min-width: 280px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-8px);
+        transition: all 0.2s ease;
+        max-height: 400px;
+        overflow-y: auto;
+        z-index: 9999;
+      }
+
+      .theme-nav-dropdown.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      /* Floating Theme Switcher (Fallback) */
+      .theme-switcher {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 9998;
+      }
+
+      .theme-switcher-button {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 2px solid var(--border);
+        background: var(--card);
+        color: var(--text);
+        font-size: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transition: all 0.2s ease;
+      }
+
+      .theme-switcher-button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .theme-switcher-dropdown {
+        position: absolute;
+        top: 56px;
+        right: 0;
+        min-width: 280px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-8px);
+        transition: all 0.2s ease;
+        max-height: 400px;
+        overflow-y: auto;
+        z-index: 9999;
+      }
+
+      .theme-switcher-dropdown.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .theme-category {
+        padding: 8px 0;
+      }
+
+      .theme-category:not(:last-child) {
+        border-bottom: 1px solid var(--border);
+      }
+
+      .theme-category-label {
+        padding: 8px 16px;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--text-secondary);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .theme-option {
+        width: 100%;
+        padding: 12px 16px;
+        border: none;
+        background: none;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+        transition: all 0.15s ease;
+        color: var(--text);
+      }
+
+      .theme-option:hover {
+        background: var(--bg-secondary);
+      }
+
+      .theme-option.active {
+        background: var(--accent);
+        color: white;
+      }
+
+      .theme-option.active .theme-name {
+        font-weight: 600;
+      }
+
+      .theme-preview {
+        display: flex;
+        width: 32px;
+        height: 20px;
+        border-radius: 4px;
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        flex-shrink: 0;
+      }
+
+      .theme-preview-bg {
+        flex: 2;
+      }
+
+      .theme-preview-card {
+        flex: 2;
+      }
+
+      .theme-preview-accent {
+        flex: 1;
+      }
+
+      .theme-name {
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      @media (max-width: 768px) {
+        .theme-switcher {
+          top: 16px;
+          right: 16px;
+        }
+        
+        .theme-switcher-button {
+          width: 44px;
+          height: 44px;
+          font-size: 18px;
+        }
+        
+        .theme-switcher-dropdown {
+          min-width: 240px;
+        }
+      }
+    </style><script src="/assets/search-engine.js"></script><script src="/assets/search-interface.js"></script><link rel="stylesheet" href="/styles.css" media="all"><style id="search-interface-styles">
+      .search-container {
+        position: relative;
+        max-width: 680px !important;
+        margin: 2rem auto 3rem auto !important;
+        padding: 0 1.5rem !important;
+        z-index: 1000;
+        display: flex !important;
+        justify-content: center !important;
+      }
+      
+      .sr-only {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        clip: rect(0,0,0,0) !important;
+        white-space: nowrap !important;
+        border: 0 !important;
+      }
+      
+      .search-wrapper {
+        position: relative;
+        width: 100%;
+      }
+
+      .search-hero {
+        text-align: center;
+        margin-bottom: 2rem;
+        opacity: 0;
+        animation: fadeInUp 0.8s ease forwards;
+      }
+
+      .search-title {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.95);
+        margin: 0 0 0.5rem 0;
+        letter-spacing: -0.025em;
+        line-height: 1.1;
+      }
+
+      .search-subtitle {
+        font-size: 1.125rem;
+        color: rgba(156, 163, 175, 0.9);
+        margin: 0;
+        font-weight: 400;
+        line-height: 1.4;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      .search-input-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        background: rgba(51, 65, 85, 0.8);
+        border: 1px solid rgba(75, 85, 99, 0.4);
+        border-radius: 12px;
+        transition: all 0.2s ease;
+        min-height: 48px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        opacity: 0;
+        animation: fadeInUp 0.8s ease 0.2s forwards;
+      }
+
+      .search-input-container:hover {
+        border-color: rgba(59, 130, 246, 0.5);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .search-input-container:focus-within {
+        border-color: rgba(59, 130, 246, 0.8);
+        box-shadow: 
+          0 4px 12px rgba(0, 0, 0, 0.15),
+          0 0 0 3px rgba(59, 130, 246, 0.1);
+      }
+
+      
+      .search-input {
+        flex: 1;
+        padding: 14px 16px 14px 20px;
+        background: transparent;
+        border: none;
+        color: rgba(255, 255, 255, 0.95);
+        font-size: 15px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+        outline: none;
+        font-weight: 400;
+        line-height: 1.4;
+        min-width: 0;
+      }
+      
+      .search-input::placeholder {
+        color: rgba(156, 163, 175, 0.6);
+        font-weight: 400;
+        transition: color 0.3s ease;
+      }
+
+      .search-input:focus::placeholder {
+        color: rgba(156, 163, 175, 0.4);
+      }
+
+      .search-suggestions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+        opacity: 0;
+        animation: fadeInUp 0.8s ease 0.4s forwards;
+      }
+
+      .suggestion-label {
+        color: rgba(156, 163, 175, 0.7);
+        font-size: 14px;
+        font-weight: 500;
+        margin-right: 4px;
+      }
+
+      .search-suggestion {
+        background: rgba(59, 130, 246, 0.1);
+        border: 1px solid rgba(59, 130, 246, 0.2);
+        border-radius: 20px;
+        padding: 6px 16px;
+        color: rgba(147, 197, 253, 0.9);
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        outline: none;
+      }
+
+      .search-suggestion:hover {
+        background: rgba(59, 130, 246, 0.2);
+        border-color: rgba(59, 130, 246, 0.4);
+        color: rgba(147, 197, 253, 1);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+      }
+
+      .search-suggestion:active {
+        transform: translateY(0);
+      }
+
+      .search-shortcut {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px 6px;
+        margin-right: 12px;
+        background: rgba(17, 24, 39, 0.6);
+        border: 1px solid rgba(75, 85, 99, 0.4);
+        border-radius: 4px;
+        font-size: 11px;
+        color: rgba(156, 163, 175, 0.7);
+        gap: 1px;
+        user-select: none;
+        transition: all 0.2s ease;
+        font-family: ui-monospace, 'SF Mono', 'Monaco', 'Consolas', monospace;
+        font-weight: 500;
+        flex-shrink: 0;
+      }
+
+      .search-input-container:hover .search-shortcut {
+        background: rgba(17, 24, 39, 0.9);
+        border-color: rgba(75, 85, 99, 0.8);
+        color: rgba(156, 163, 175, 1);
+      }
+
+      .search-input-container:focus-within .search-shortcut {
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(0.9);
+      }
+
+      .shortcut-key {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1;
+      }
+
+      .shortcut-text {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1;
+      }
+      
+      .search-clear {
+        padding: 6px 8px;
+        background: transparent;
+        border: none;
+        color: rgba(255, 255, 255, 0.4);
+        cursor: pointer;
+        border-radius: 6px;
+        font-size: 16px;
+        line-height: 1;
+        transition: all 0.25s ease;
+        margin-right: 6px;
+        display: none;
+      }
+      
+      .search-clear:hover {
+        color: rgba(255, 255, 255, 0.8);
+        background: rgba(255, 255, 255, 0.1);
+        transform: scale(1.1);
+      }
+      
+      .search-results {
+        position: absolute;
+        top: calc(100% + 4px);
+        left: 0;
+        right: 0;
+        background: rgba(17, 24, 39, 0.95);
+        border: 1px solid rgba(75, 85, 99, 0.6);
+        border-radius: 8px;
+        box-shadow: 
+          0 10px 25px rgba(0, 0, 0, 0.25),
+          0 4px 10px rgba(0, 0, 0, 0.1);
+        max-height: 400px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        z-index: 1001;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+      }
+      
+      .search-result {
+        padding: 12px 16px;
+        border-bottom: 1px solid rgba(75, 85, 99, 0.3);
+        cursor: pointer;
+        transition: background-color 0.15s ease;
+      }
+      
+      .search-result:last-child {
+        border-bottom: none;
+      }
+      
+      .search-result:hover,
+      .search-result.selected {
+        background: rgba(59, 130, 246, 0.1);
+      }
+      
+      .search-result-title {
+        font-weight: 600;
+        color: rgba(243, 244, 246, 0.95);
+        margin-bottom: 4px;
+        font-size: 14px;
+        line-height: 1.3;
+      }
+      
+      .search-result-subtitle {
+        color: rgba(156, 163, 175, 0.9);
+        font-size: 13px;
+        margin-bottom: 6px;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+      
+      .search-result-description {
+        color: rgba(156, 163, 175, 0.7);
+        font-size: 12px;
+        line-height: 1.4;
+        font-weight: 400;
+      }
+      
+      .search-result-type {
+        display: inline-block;
+        padding: 2px 8px;
+        background: rgba(75, 85, 99, 0.6);
+        color: rgba(156, 163, 175, 0.9);
+        border-radius: 4px;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-right: 8px;
+        letter-spacing: 0.5px;
+      }
+      
+      .search-result-type.book {
+        background: rgba(59, 130, 246, 0.2);
+        color: rgba(147, 197, 253, 1);
+      }
+      
+      .search-result-type.character {
+        background: rgba(239, 68, 68, 0.2);
+        color: rgba(252, 165, 165, 1);
+      }
+      
+      .search-result-type.chapter {
+        background: rgba(34, 197, 94, 0.2);
+        color: rgba(134, 239, 172, 1);
+      }
+
+      .search-result-type.passage {
+        background: rgba(34, 197, 94, 0.2);
+        color: rgba(134, 239, 172, 1);
+      }
+      
+      .search-result-type.category {
+        background: rgba(245, 158, 11, 0.2);
+        color: rgba(253, 230, 138, 1);
+      }
+
+      .search-result-type.parable {
+        background: rgba(20, 184, 166, 0.2);
+        color: rgba(153, 246, 228, 1);
+      }
+
+      .search-result-type.parables {
+        background: rgba(14, 116, 144, 0.25);
+        color: rgba(125, 211, 252, 1);
+      }
+
+      .search-result-type.group {
+        background: rgba(148, 163, 184, 0.2);
+        color: rgba(226, 232, 240, 1);
+      }
+      
+      .search-empty {
+        padding: 2rem 1rem;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      /* Mobile Responsive Styles */
+      @media (max-width: 768px) {
+        .search-container {
+          max-width: 100% !important;
+          margin: 1.5rem auto 2rem auto !important;
+          padding: 0 1rem !important;
+        }
+
+        .search-hero {
+          margin-bottom: 1.5rem;
+        }
+
+        .search-title {
+          font-size: 1.875rem;
+        }
+
+        .search-subtitle {
+          font-size: 1rem;
+        }
+
+        .search-input-container {
+          min-height: 46px;
+          border-radius: 10px;
+        }
+
+        .search-input {
+          font-size: 16px; /* Prevents zoom on iOS */
+          padding: 12px 14px 12px 16px;
+        }
+
+        .search-shortcut {
+          display: none; /* Hide keyboard shortcut on mobile */
+        }
+
+        .search-suggestions {
+          margin-top: 12px;
+          gap: 8px;
+        }
+
+        .search-suggestion {
+          font-size: 13px;
+          padding: 5px 12px;
+        }
+
+        .search-results {
+          max-height: 60vh;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .search-container {
+          padding: 0 1rem !important;
+          margin: 1rem auto 1.5rem auto !important;
+        }
+
+        .search-hero {
+          margin-bottom: 1.25rem;
+        }
+
+        .search-title {
+          font-size: 1.75rem;
+        }
+
+        .search-subtitle {
+          font-size: 0.9rem;
+        }
+
+        .search-input-container {
+          min-height: 44px;
+          border-radius: 8px;
+        }
+
+        .search-input {
+          padding: 10px 12px 10px 14px;
+          font-size: 16px;
+        }
+
+        .search-shortcut {
+          margin-right: 8px;
+          padding: 3px 5px;
+          font-size: 10px;
+        }
+
+        .search-suggestions {
+          margin-top: 10px;
+          gap: 6px;
+        }
+
+        .suggestion-label {
+          font-size: 13px;
+        }
+
+        .search-suggestion {
+          font-size: 12px;
+          padding: 4px 10px;
+        }
+
+        .search-result {
+          padding: 12px 14px;
+        }
+
+        .search-result-title {
+          font-size: 14px;
+        }
+
+        .search-result-subtitle {
+          font-size: 13px;
+        }
+      }
+      
+      .search-loading {
+        padding: 1.5rem;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 14px;
+        font-weight: 500;
+      }
+    </style></head>
+  <body class="theme-slate">
+    <div class="container">
+      <nav class="nav">
+        <a class="nav-brand" href="/">Explore Scripture</a>
+        <div class="nav-links">
+          <a href="/categories/" class="nav-link ">Sections</a>
+          <a href="/map/" class="nav-link ">Map</a>
+          <a href="/genealogies/" class="nav-link ">Genealogies</a>
+          <a href="/links/" class="nav-link ">Links</a>
+          <button class="font-size-toggle" onclick="toggleFontSizeControls()" aria-label="Toggle font size controls">
+            <span class="font-size-icon">Aa</span>
+          </button>
+          <button class="high-contrast-toggle" onclick="toggleHighContrast()" aria-label="Toggle high contrast mode">
+            <span class="high-contrast-icon">◻</span>
+          </button>
+          <button class="theme-toggle-nav" onclick="toggleThemeDropdown()" aria-label="Change theme" aria-expanded="false" aria-haspopup="true">
+            <span class="theme-icon">◈</span>
+          </button>
+          <button class="recents-bookmarks-toggle" onclick="toggleRecentsBookmarks()" aria-label="Toggle recent items and bookmarks">
+            <span class="recents-icon">★</span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Search Container -->
+      
+      <div id="search-container" style="max-width: 680px; margin: 2rem auto 3rem;">
+      <div class="search-wrapper">
+        <div class="search-hero">
+          <h2 class="search-title">Discover Scripture</h2>
+          <p class="search-subtitle">Search 66 books, 5,500+ characters, and comprehensive commentary</p>
+        </div>
+        <div class="search-input-container" role="combobox" aria-expanded="false" aria-haspopup="listbox">
+          <input type="text" id="searchInput" class="search-input" placeholder="Try 'Genesis creation' or 'David'" autocomplete="off" spellcheck="false" aria-label="Search scripture, characters, and commentary" aria-describedby="search-instructions" role="searchbox" aria-autocomplete="list" aria-controls="search-results">
+          <div class="search-shortcut" id="searchShortcut" aria-label="Keyboard shortcut Command K">
+            <span class="shortcut-key">⌘</span>
+            <span class="shortcut-text">K</span>
+          </div>
+          <button class="search-clear" aria-label="Clear search" style="display: none;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <div id="search-instructions" class="sr-only">
+          Type to search for books, chapters, or biblical characters. Use arrow keys to navigate results and Enter to select.
+        </div>
+        <div class="search-suggestions" role="group" aria-label="Popular search suggestions">
+          <span class="suggestion-label">Popular:</span>
+          <button class="search-suggestion" data-query="Genesis creation" aria-label="Search for Genesis creation">Genesis creation</button>
+          <button class="search-suggestion" data-query="Jesus parables" aria-label="Search for Jesus parables">Jesus parables</button>
+          <button class="search-suggestion" data-query="David" aria-label="Search for David">David</button>
+          <button class="search-suggestion" data-query="Exodus" aria-label="Search for Exodus">Exodus</button>
+        </div>
+        <div id="search-results" class="search-results" role="listbox" aria-label="Search results" style="display: none;"></div>
+        <div aria-live="polite" aria-atomic="true" class="sr-only" id="search-announcements"></div>
+      </div>
+    </div>
+      
+
+      <div class="recents-bookmarks-panel" id="recentsBookmarksPanel">
+        <div class="recents-bookmarks-content">
+          <div class="recents-bookmarks-header">
+            <h3>Quick Access</h3>
+            <button class="close-panel-btn" onclick="toggleRecentsBookmarks()" aria-label="Close quick access panel">
+              ×
+            </button>
+          </div>
+
+          <div class="recents-bookmarks-tabs">
+            <button class="tab-btn active" onclick="switchTab('bookmarks')" id="bookmarksTab" aria-label="View bookmarks">
+              <span class="tab-icon">★</span>
+              Bookmarks (<span id="bookmarksCount">0</span>)
+            </button>
+            <button class="tab-btn" onclick="switchTab('recent')" id="recentTab" aria-label="View recent items">
+              <span class="tab-icon">↻</span>
+              Recent (<span id="recentCount">1</span>)
+            </button>
+          </div>
+
+          <div class="tab-content active" id="bookmarksContent">
+            <div class="tab-actions">
+              <button class="clear-all-btn" onclick="clearAllBookmarks()" aria-label="Clear all bookmarks">
+                Clear All
+              </button>
+            </div>
+            <div class="items-list" id="bookmarksList">
+          <div class="empty-state">
+            <div class="empty-icon">★</div>
+            <p>No bookmarks yet</p>
+            <small>Bookmark pages to access them quickly later</small>
+          </div>
+        </div>
+          </div>
+
+          <div class="tab-content" id="recentContent">
+            <div class="tab-actions">
+              <button class="clear-all-btn" onclick="clearAllRecentItems()" aria-label="Clear all recent items">
+                Clear All
+              </button>
+            </div>
+            <div class="items-list" id="recentsList">
+          <div class="quick-access-item">
+            <a href="/" class="item-link">
+              <span class="item-title">Home</span>
+              <span class="item-subtitle">Chapter-by-chapter Bible summaries, videos, and commentary for every book of Scr...</span>
+            </a>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="font-size-panel" id="fontSizePanel">
+        <div class="font-size-content">
+          <div class="font-size-header">
+            <h3>Text Size</h3>
+            <button class="close-font-panel" onclick="toggleFontSizeControls()" aria-label="Close font size panel">
+              ×
+            </button>
+          </div>
+
+          <div class="font-size-controls">
+            <div class="font-size-presets">
+              <button class="font-preset-btn" data-size="small" onclick="setFontSize('small')" aria-label="Set small font size">
+                <span class="preset-label">Small</span>
+                <span class="preset-sample">Aa</span>
+              </button>
+              <button class="font-preset-btn active" data-size="medium" onclick="setFontSize('medium')" aria-label="Set medium font size">
+                <span class="preset-label">Medium</span>
+                <span class="preset-sample">Aa</span>
+              </button>
+              <button class="font-preset-btn" data-size="large" onclick="setFontSize('large')" aria-label="Set large font size">
+                <span class="preset-label">Large</span>
+                <span class="preset-sample">Aa</span>
+              </button>
+              <button class="font-preset-btn" data-size="extra-large" onclick="setFontSize('extra-large')" aria-label="Set extra large font size">
+                <span class="preset-label">Extra Large</span>
+                <span class="preset-sample">Aa</span>
+              </button>
+            </div>
+
+            <div class="font-size-slider-container">
+              <label for="fontSizeSlider">Custom Size</label>
+              <div class="slider-wrapper">
+                <span class="slider-label">A</span>
+                <input type="range" id="fontSizeSlider" min="80" max="140" value="100" step="5" oninput="setCustomFontSize(this.value)">
+                <span class="slider-label large">A</span>
+              </div>
+              <div class="slider-value" id="sliderValue">100%</div>
+            </div>
+
+            <div class="font-options">
+              <label class="font-option">
+                <input type="checkbox" id="dyslexiaFont" onchange="toggleDyslexiaFont(this.checked)">
+                <span class="checkmark-text">Dyslexia-friendly font</span>
+              </label>
+              <label class="font-option">
+                <input type="checkbox" id="increaseLineHeight" onchange="toggleLineHeight(this.checked)">
+                <span class="checkmark-text">Increase line spacing</span>
+              </label>
+            </div>
+
+            <div class="font-actions">
+              <button class="btn-secondary" onclick="resetFontSettings()" aria-label="Reset font settings to default">
+                Reset to Default
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      
+<nav class="breadcrumb-nav" aria-label="Breadcrumb navigation">
+  <ol class="breadcrumb-list">
+    <li class="breadcrumb-item">
+      <a href="/" class="breadcrumb-link">
+        <span class="breadcrumb-icon">🏠</span>
+        Home
+      </a>
+      <span class="breadcrumb-separator" aria-hidden="true">›</span>
+    </li>
+
+    
+  </ol>
+</nav>
+
+      
+      
+<div class="hero-section">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="hero-badge-text">Complete Bible Study Platform</span>
+    </div>
+    <h1 class="hero-title">
+      Explore Scripture with
+      <span class="hero-highlight">Purpose &amp; Clarity</span>
+    </h1>
+    <p class="hero-description">
+      From Genesis to Revelation—discover the unified story of redemption through expert commentary,
+      chapter summaries, and visual overviews designed for modern Bible study.
+    </p>
+
+    <div class="hero-actions">
+      <a href="/categories/" class="hero-cta primary">Start Exploring</a>
+      <button onclick="focusSearch()" class="hero-cta secondary">Search Scripture</button>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-number">66</div>
+        <div class="stat-label">Biblical Books</div>
+        <div class="stat-sublabel">Complete Coverage</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">1,189</div>
+        <div class="stat-label">Chapters</div>
+        <div class="stat-sublabel">Fully Indexed</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="hero-books">
+      <div class="hero-book testament-old">Old Testament</div>
+      <div class="hero-book testament-new">New Testament</div>
+    </div>
+    <div class="hero-connector"></div>
+  </div>
+</div>
+
+<div class="features-section">
+  <div class="features-header">
+    <h2>Everything You Need for Deep Bible Study</h2>
+    <p>Comprehensive tools designed to help you understand Scripture's message</p>
+  </div>
+
+  <div class="features-grid">
+    <div class="feature-card highlighted">
+      <div class="feature-icon">▦</div>
+      <h3>Expert Summaries</h3>
+      <p>Theologically sound chapter summaries that capture the essence of each passage</p>
+      <div class="feature-stats">Ready for study</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">▶</div>
+      <h3>Visual Learning</h3>
+      <p>Bible Project animated videos that make complex themes accessible</p>
+      <div class="feature-stats">Watch &amp; learn</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">◗</div>
+      <h3>Trusted Resources</h3>
+      <p>Direct access to respected commentaries and biblical scholarship</p>
+      <div class="feature-stats">Deep study</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">⌕</div>
+      <h3>Intelligent Search</h3>
+      <p>Find exactly what you're looking for across books, themes, and categories</p>
+      <div class="feature-stats">Instant results</div>
+    </div>
+  </div>
+</div>
+
+<section class="testament-section old-testament">
+  <div class="testament-header">
+    <div class="testament-badge">39 Books</div>
+    <h2>Old Testament</h2>
+    <p class="section-intro">
+      The foundation of faith—God's covenant with Israel and the promise of redemption
+    </p>
+  </div>
+
+   
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/law-torah/">Law (Torah)</a>
+        <span class="book-count">5 books</span>
+      </h3>
+      <p class="category-description">Genesis through Deuteronomy: creation, covenant, and the formation of Israel.</p>
+    </div>
+
+    <div class="category-books">
+       
+      <a href="/books/genesis/" class="book-card">
+        <div class="book-title">Genesis</div>
+        
+        <div class="book-progress">50 chapters</div>
+        
+      </a>
+        
+      <a href="/books/exodus/" class="book-card">
+        <div class="book-title">Exodus</div>
+        
+        <div class="book-progress">40 chapters</div>
+        
+      </a>
+        
+      <a href="/books/leviticus/" class="book-card">
+        <div class="book-title">Leviticus</div>
+        
+        <div class="book-progress">27 chapters</div>
+        
+      </a>
+        
+      <a href="/books/numbers/" class="book-card">
+        <div class="book-title">Numbers</div>
+        
+        <div class="book-progress">36 chapters</div>
+        
+      </a>
+        
+      <a href="/books/deuteronomy/" class="book-card">
+        <div class="book-title">Deuteronomy</div>
+        
+        <div class="book-progress">34 chapters</div>
+        
+      </a>
+                                                                                                                                 
+    </div>
+  </div>
+    
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/history/">History</a>
+        <span class="book-count">12 books</span>
+      </h3>
+      <p class="category-description">Joshua through Esther: conquest, kingdom, exile, and return.</p>
+    </div>
+
+    <div class="category-books">
+                 
+      <a href="/books/joshua/" class="book-card">
+        <div class="book-title">Joshua</div>
+        
+        <div class="book-progress">24 chapters</div>
+        
+      </a>
+        
+      <a href="/books/judges/" class="book-card">
+        <div class="book-title">Judges</div>
+        
+        <div class="book-progress">21 chapters</div>
+        
+      </a>
+        
+      <a href="/books/ruth/" class="book-card">
+        <div class="book-title">Ruth</div>
+        
+        <div class="book-progress">4 chapters</div>
+        
+      </a>
+        
+      <a href="/books/1-samuel/" class="book-card">
+        <div class="book-title">1 Samuel</div>
+        
+        <div class="book-progress">31 chapters</div>
+        
+      </a>
+        
+      <a href="/books/2-samuel/" class="book-card">
+        <div class="book-title">2 Samuel</div>
+        
+        <div class="book-progress">24 chapters</div>
+        
+      </a>
+        
+      <a href="/books/1-kings/" class="book-card">
+        <div class="book-title">1 Kings</div>
+        
+        <div class="book-progress">22 chapters</div>
+        
+      </a>
+        
+      <a href="/books/2-kings/" class="book-card">
+        <div class="book-title">2 Kings</div>
+        
+        <div class="book-progress">25 chapters</div>
+        
+      </a>
+        
+      <a href="/books/1-chronicles/" class="book-card">
+        <div class="book-title">1 Chronicles</div>
+        
+        <div class="book-progress">29 chapters</div>
+        
+      </a>
+        
+      <a href="/books/2-chronicles/" class="book-card">
+        <div class="book-title">2 Chronicles</div>
+        
+        <div class="book-progress">36 chapters</div>
+        
+      </a>
+        
+      <a href="/books/ezra/" class="book-card">
+        <div class="book-title">Ezra</div>
+        
+        <div class="book-progress">10 chapters</div>
+        
+      </a>
+        
+      <a href="/books/nehemiah/" class="book-card">
+        <div class="book-title">Nehemiah</div>
+        
+        <div class="book-progress">13 chapters</div>
+        
+      </a>
+        
+      <a href="/books/esther/" class="book-card">
+        <div class="book-title">Esther</div>
+        
+        <div class="book-progress">10 chapters</div>
+        
+      </a>
+                                                                                                         
+    </div>
+  </div>
+    
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/poetry-writings/">Poetry &amp; Writings</a>
+        <span class="book-count">5 books</span>
+      </h3>
+      <p class="category-description">Job through Song of Songs: wisdom, worship, and reflections.</p>
+    </div>
+
+    <div class="category-books">
+                                         
+      <a href="/books/job/" class="book-card">
+        <div class="book-title">Job</div>
+        
+        <div class="book-progress">42 chapters</div>
+        
+      </a>
+        
+      <a href="/books/psalms/" class="book-card">
+        <div class="book-title">Psalms</div>
+        
+        <div class="book-progress">150 chapters</div>
+        
+      </a>
+        
+      <a href="/books/proverbs/" class="book-card">
+        <div class="book-title">Proverbs</div>
+        
+        <div class="book-progress">31 chapters</div>
+        
+      </a>
+        
+      <a href="/books/ecclesiastes/" class="book-card">
+        <div class="book-title">Ecclesiastes</div>
+        
+        <div class="book-progress">12 chapters</div>
+        
+      </a>
+        
+      <a href="/books/song-of-songs/" class="book-card">
+        <div class="book-title">Song of Songs</div>
+        
+        <div class="book-progress">8 chapters</div>
+        
+      </a>
+                                                                                               
+    </div>
+  </div>
+    
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/major-prophets/">Major Prophets</a>
+        <span class="book-count">5 books</span>
+      </h3>
+      <p class="category-description">Isaiah through Daniel: large prophetic works addressing judgment and hope.</p>
+    </div>
+
+    <div class="category-books">
+                                                   
+      <a href="/books/isaiah/" class="book-card">
+        <div class="book-title">Isaiah</div>
+        
+        <div class="book-progress">66 chapters</div>
+        
+      </a>
+        
+      <a href="/books/jeremiah/" class="book-card">
+        <div class="book-title">Jeremiah</div>
+        
+        <div class="book-progress">52 chapters</div>
+        
+      </a>
+        
+      <a href="/books/lamentations/" class="book-card">
+        <div class="book-title">Lamentations</div>
+        
+        <div class="book-progress">5 chapters</div>
+        
+      </a>
+        
+      <a href="/books/ezekiel/" class="book-card">
+        <div class="book-title">Ezekiel</div>
+        
+        <div class="book-progress">48 chapters</div>
+        
+      </a>
+        
+      <a href="/books/daniel/" class="book-card">
+        <div class="book-title">Daniel</div>
+        
+        <div class="book-progress">12 chapters</div>
+        
+      </a>
+                                                                                     
+    </div>
+  </div>
+    
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/minor-prophets/">Minor Prophets</a>
+        <span class="book-count">12 books</span>
+      </h3>
+      <p class="category-description">Hosea through Malachi: shorter prophetic books with powerful messages.</p>
+    </div>
+
+    <div class="category-books">
+                                                             
+      <a href="/books/hosea/" class="book-card">
+        <div class="book-title">Hosea</div>
+        
+        <div class="book-progress">14 chapters</div>
+        
+      </a>
+        
+      <a href="/books/joel/" class="book-card">
+        <div class="book-title">Joel</div>
+        
+        <div class="book-progress">3 chapters</div>
+        
+      </a>
+        
+      <a href="/books/amos/" class="book-card">
+        <div class="book-title">Amos</div>
+        
+        <div class="book-progress">9 chapters</div>
+        
+      </a>
+        
+      <a href="/books/obadiah/" class="book-card">
+        <div class="book-title">Obadiah</div>
+        
+        <div class="book-progress">1 chapters</div>
+        
+      </a>
+        
+      <a href="/books/jonah/" class="book-card">
+        <div class="book-title">Jonah</div>
+        
+        <div class="book-progress">4 chapters</div>
+        
+      </a>
+        
+      <a href="/books/micah/" class="book-card">
+        <div class="book-title">Micah</div>
+        
+        <div class="book-progress">7 chapters</div>
+        
+      </a>
+        
+      <a href="/books/nahum/" class="book-card">
+        <div class="book-title">Nahum</div>
+        
+        <div class="book-progress">3 chapters</div>
+        
+      </a>
+        
+      <a href="/books/habakkuk/" class="book-card">
+        <div class="book-title">Habakkuk</div>
+        
+        <div class="book-progress">3 chapters</div>
+        
+      </a>
+        
+      <a href="/books/zephaniah/" class="book-card">
+        <div class="book-title">Zephaniah</div>
+        
+        <div class="book-progress">3 chapters</div>
+        
+      </a>
+        
+      <a href="/books/haggai/" class="book-card">
+        <div class="book-title">Haggai</div>
+        
+        <div class="book-progress">2 chapters</div>
+        
+      </a>
+        
+      <a href="/books/zechariah/" class="book-card">
+        <div class="book-title">Zechariah</div>
+        
+        <div class="book-progress">14 chapters</div>
+        
+      </a>
+        
+      <a href="/books/malachi/" class="book-card">
+        <div class="book-title">Malachi</div>
+        
+        <div class="book-progress">4 chapters</div>
+        
+      </a>
+                                                             
+    </div>
+  </div>
+             
+</section>
+
+<section class="testament-section new-testament">
+  <div class="testament-header">
+    <div class="testament-badge">27 Books</div>
+    <h2>New Testament</h2>
+    <p class="section-intro">
+      The fulfillment of promise—the life of Christ and the birth of the Church
+    </p>
+  </div>
+
+             
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/gospels/">Gospels</a>
+        <span class="book-count">4 books</span>
+      </h3>
+      <p class="category-description">Matthew, Mark, Luke, John: the life, death, and resurrection of Jesus.</p>
+    </div>
+
+    <div class="category-books">
+                                                                                     
+      <a href="/books/matthew/" class="book-card">
+        <div class="book-title">Matthew</div>
+        
+        <div class="book-progress">28 chapters</div>
+        
+      </a>
+        
+      <a href="/books/mark/" class="book-card">
+        <div class="book-title">Mark</div>
+        
+        <div class="book-progress">16 chapters</div>
+        
+      </a>
+        
+      <a href="/books/luke/" class="book-card">
+        <div class="book-title">Luke</div>
+        
+        <div class="book-progress">24 chapters</div>
+        
+      </a>
+        
+      <a href="/books/john/" class="book-card">
+        <div class="book-title">John</div>
+        
+        <div class="book-progress">21 chapters</div>
+        
+      </a>
+                                                     
+    </div>
+  </div>
+    
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/acts/">Acts</a>
+        <span class="book-count">1 books</span>
+      </h3>
+      <p class="category-description">The birth and expansion of the early Church.</p>
+    </div>
+
+    <div class="category-books">
+                                                                                             
+      <a href="/books/acts/" class="book-card">
+        <div class="book-title">Acts</div>
+        
+        <div class="book-progress">28 chapters</div>
+        
+      </a>
+                                                   
+    </div>
+  </div>
+    
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/pauline-epistles/">Pauline Epistles</a>
+        <span class="book-count">13 books</span>
+      </h3>
+      <p class="category-description">Letters attributed to Paul addressing doctrine and church life.</p>
+    </div>
+
+    <div class="category-books">
+                                                                                               
+      <a href="/books/romans/" class="book-card">
+        <div class="book-title">Romans</div>
+        
+        <div class="book-progress">16 chapters</div>
+        
+      </a>
+        
+      <a href="/books/1-corinthians/" class="book-card">
+        <div class="book-title">1 Corinthians</div>
+        
+        <div class="book-progress">16 chapters</div>
+        
+      </a>
+        
+      <a href="/books/2-corinthians/" class="book-card">
+        <div class="book-title">2 Corinthians</div>
+        
+        <div class="book-progress">13 chapters</div>
+        
+      </a>
+        
+      <a href="/books/galatians/" class="book-card">
+        <div class="book-title">Galatians</div>
+        
+        <div class="book-progress">6 chapters</div>
+        
+      </a>
+        
+      <a href="/books/ephesians/" class="book-card">
+        <div class="book-title">Ephesians</div>
+        
+        <div class="book-progress">6 chapters</div>
+        
+      </a>
+        
+      <a href="/books/philippians/" class="book-card">
+        <div class="book-title">Philippians</div>
+        
+        <div class="book-progress">4 chapters</div>
+        
+      </a>
+        
+      <a href="/books/colossians/" class="book-card">
+        <div class="book-title">Colossians</div>
+        
+        <div class="book-progress">4 chapters</div>
+        
+      </a>
+        
+      <a href="/books/1-thessalonians/" class="book-card">
+        <div class="book-title">1 Thessalonians</div>
+        
+        <div class="book-progress">5 chapters</div>
+        
+      </a>
+        
+      <a href="/books/2-thessalonians/" class="book-card">
+        <div class="book-title">2 Thessalonians</div>
+        
+        <div class="book-progress">3 chapters</div>
+        
+      </a>
+        
+      <a href="/books/1-timothy/" class="book-card">
+        <div class="book-title">1 Timothy</div>
+        
+        <div class="book-progress">6 chapters</div>
+        
+      </a>
+        
+      <a href="/books/2-timothy/" class="book-card">
+        <div class="book-title">2 Timothy</div>
+        
+        <div class="book-progress">4 chapters</div>
+        
+      </a>
+        
+      <a href="/books/titus/" class="book-card">
+        <div class="book-title">Titus</div>
+        
+        <div class="book-progress">3 chapters</div>
+        
+      </a>
+        
+      <a href="/books/philemon/" class="book-card">
+        <div class="book-title">Philemon</div>
+        
+        <div class="book-progress">1 chapters</div>
+        
+      </a>
+                         
+    </div>
+  </div>
+    
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/general-epistles/">General Epistles</a>
+        <span class="book-count">8 books</span>
+      </h3>
+      <p class="category-description">Letters by other apostles and leaders to the wider church.</p>
+    </div>
+
+    <div class="category-books">
+                                                                                                                         
+      <a href="/books/hebrews/" class="book-card">
+        <div class="book-title">Hebrews</div>
+        
+        <div class="book-progress">13 chapters</div>
+        
+      </a>
+        
+      <a href="/books/james/" class="book-card">
+        <div class="book-title">James</div>
+        
+        <div class="book-progress">5 chapters</div>
+        
+      </a>
+        
+      <a href="/books/1-peter/" class="book-card">
+        <div class="book-title">1 Peter</div>
+        
+        <div class="book-progress">5 chapters</div>
+        
+      </a>
+        
+      <a href="/books/2-peter/" class="book-card">
+        <div class="book-title">2 Peter</div>
+        
+        <div class="book-progress">3 chapters</div>
+        
+      </a>
+        
+      <a href="/books/1-john/" class="book-card">
+        <div class="book-title">1 John</div>
+        
+        <div class="book-progress">5 chapters</div>
+        
+      </a>
+        
+      <a href="/books/2-john/" class="book-card">
+        <div class="book-title">2 John</div>
+        
+        <div class="book-progress">1 chapters</div>
+        
+      </a>
+        
+      <a href="/books/3-john/" class="book-card">
+        <div class="book-title">3 John</div>
+        
+        <div class="book-progress">1 chapters</div>
+        
+      </a>
+        
+      <a href="/books/jude/" class="book-card">
+        <div class="book-title">Jude</div>
+        
+        <div class="book-progress">1 chapters</div>
+        
+      </a>
+         
+    </div>
+  </div>
+    
+  <div class="category-group">
+    <div class="category-header">
+      <h3>
+        <a href="/categories/apocalypse/">Apocalypse</a>
+        <span class="book-count">1 books</span>
+      </h3>
+      <p class="category-description">Revelation: apocalyptic prophecy and ultimate hope.</p>
+    </div>
+
+    <div class="category-books">
+                                                                                                                                         
+      <a href="/books/revelation/" class="book-card">
+        <div class="book-title">Revelation</div>
+        
+        <div class="book-progress">22 chapters</div>
+        
+      </a>
+       
+    </div>
+  </div>
+   
+</section>
+
+<script>
+  // Hero search functionality
+  function focusSearch() {
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+      searchInput.focus();
+      searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      // Track hero CTA usage
+      if (window.telemetry) {
+        window.telemetry.recordUserAction('hero-search-cta');
+      }
+    }
+  }
+</script>
+
+
+      <footer class="footer">Built with <a href="https://www.11ty.dev/">Eleventy</a> • 2024 • Last updated: Jan 24, 2026, 2:02 PM EST (commit 05b6493)</footer>
+    </div>
+
+    <script>
+      // Initialize search functionality with direct module loading
+      async function initializeSearch() {
+        try {
+          console.log('[Base] Starting search initialization...');
+          
+          // Load search engine script if not already loaded
+          if (!window.SearchEngine) {
+            console.log('[Base] Loading search engine...');
+            await loadScript('/assets/search-engine.js');
+            console.log('[Base] Search engine loaded');
+          }
+          
+          // Load search interface script if not already loaded  
+          if (!window.SearchInterface) {
+            console.log('[Base] Loading search interface...');
+            await loadScript('/assets/search-interface.js');
+            console.log('[Base] Search interface loaded');
+          }
+          
+          // Wait a moment for scripts to initialize
+          await new Promise(resolve => setTimeout(resolve, 500));
+          
+          console.log('[Base] SearchEngine available:', typeof window.SearchEngine);
+          console.log('[Base] SearchInterface available:', typeof window.SearchInterface);
+          console.log('[Base] Search engine instance:', window.searchEngine);
+          console.log('[Base] Search engine initialized:', window.searchEngine?.initialized);
+          
+          // Create search interface instance
+          const searchInterface = new SearchInterface({
+            containerId: 'search-container',
+            inputId: 'searchInput',
+            resultsId: 'search-results'
+          });
+          
+          console.log('[Base] SearchInterface instance created:', searchInterface);
+          
+          // Initialize the search interface
+          await searchInterface.initialize();
+          console.log('[Base] Search functionality initialized successfully');
+          
+          // Test search functionality
+          if (window.searchEngine && window.searchEngine.initialized) {
+            const testResults = window.searchEngine.search('luke');
+            console.log('[Base] Test search results:', testResults);
+          }
+          
+        } catch (error) {
+          console.error('[Base] Failed to initialize search:', error);
+          console.error('[Base] Error details:', error.stack);
+        }
+      }
+
+      // Helper function to load scripts
+      function loadScript(src) {
+        return new Promise((resolve, reject) => {
+          // Check if script is already loaded
+          const existingScript = document.querySelector(`script[src="${src}"]`);
+          if (existingScript) {
+            resolve();
+            return;
+          }
+          
+          const script = document.createElement('script');
+          script.src = src;
+          script.onload = resolve;
+          script.onerror = reject;
+          document.head.appendChild(script);
+        });
+      }
+
+      // Recent items and bookmarks functionality
+      let recentItems = [];
+      let bookmarkedItems = [];
+
+      // Initialize data from localStorage
+      function initializeData() {
+        try {
+          const savedRecent = localStorage.getItem('recentItems');
+          if (savedRecent) {
+            try {
+              const parsed = JSON.parse(savedRecent);
+              if (Array.isArray(parsed)) {
+                recentItems = parsed.slice(0, 10);
+              } else {
+                throw new Error('Invalid recentItems format');
+              }
+            } catch (parseError) {
+              console.warn('Corrupted recentItems data, resetting:', parseError);
+              localStorage.removeItem('recentItems');
+              recentItems = [];
+            }
+          }
+
+          const savedBookmarks = localStorage.getItem('bookmarkedItems');
+          if (savedBookmarks) {
+            try {
+              const parsed = JSON.parse(savedBookmarks);
+              if (Array.isArray(parsed)) {
+                bookmarkedItems = parsed;
+              } else {
+                throw new Error('Invalid bookmarkedItems format');
+              }
+            } catch (parseError) {
+              console.warn('Corrupted bookmarkedItems data, resetting:', parseError);
+              localStorage.removeItem('bookmarkedItems');
+              bookmarkedItems = [];
+            }
+          }
+        } catch (error) {
+          console.warn('Failed to load saved data:', error);
+          recentItems = [];
+          bookmarkedItems = [];
+        }
+
+        updateUI();
+      }
+
+      function addToRecentItems(pageData) {
+        if (!pageData || !pageData.title) return;
+
+        // Remove if already exists
+        recentItems = recentItems.filter(item => item.url !== pageData.url);
+
+        // Add to beginning
+        recentItems.unshift(pageData);
+
+        // Keep only last 10
+        recentItems = recentItems.slice(0, 10);
+
+        // Save to localStorage
+        try {
+          localStorage.setItem('recentItems', JSON.stringify(recentItems));
+        } catch (error) {
+          console.warn('Failed to save recent items:', error);
+        }
+
+        updateUI();
+      }
+
+      function toggleBookmark(pageData) {
+        if (!pageData || !pageData.title) return;
+
+        const isBookmarked = bookmarkedItems.some(item => item.url === pageData.url);
+
+        if (isBookmarked) {
+          bookmarkedItems = bookmarkedItems.filter(item => item.url !== pageData.url);
+        } else {
+          bookmarkedItems.push(pageData);
+        }
+
+        // Save to localStorage
+        try {
+          localStorage.setItem('bookmarkedItems', JSON.stringify(bookmarkedItems));
+        } catch (error) {
+          console.warn('Failed to save bookmarks:', error);
+        }
+
+        updateUI();
+        return !isBookmarked;
+      }
+
+      function isBookmarked(url) {
+        return bookmarkedItems.some(item => item.url === url);
+      }
+
+      function updateBookmarkButton(bookmarked) {
+        const bookmarkButton = document.querySelector('[data-bookmark-button]');
+        if (bookmarkButton) {
+          bookmarkButton.classList.toggle('bookmarked', bookmarked);
+          bookmarkButton.setAttribute('aria-pressed', bookmarked.toString());
+        }
+      }
+
+      function updateUI() {
+        // Update counts
+        document.getElementById('recentCount').textContent = recentItems.length;
+        document.getElementById('bookmarksCount').textContent = bookmarkedItems.length;
+
+        // Update lists
+        updateRecentsList();
+        updateBookmarksList();
+      }
+
+      function updateRecentsList() {
+        const container = document.getElementById('recentsList');
+        if (recentItems.length === 0) {
+          container.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-icon">↻</div>
+            <p>No recent items</p>
+            <small>Pages you visit will appear here</small>
+          </div>
+        `;
+        } else {
+          container.innerHTML = recentItems
+            .map(
+              item => `
+          <div class="quick-access-item">
+            <a href="${item.url}" class="item-link">
+              <span class="item-title">${item.title}</span>
+              <span class="item-subtitle">${item.subtitle || ''}</span>
+            </a>
+          </div>
+        `
+            )
+            .join('');
+        }
+      }
+
+      function updateBookmarksList() {
+        const container = document.getElementById('bookmarksList');
+        if (bookmarkedItems.length === 0) {
+          container.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-icon">★</div>
+            <p>No bookmarks yet</p>
+            <small>Bookmark pages to access them quickly later</small>
+          </div>
+        `;
+        } else {
+          container.innerHTML = bookmarkedItems
+            .map(
+              item => `
+          <div class="quick-access-item">
+            <a href="${item.url}" class="item-link">
+              <span class="item-title">${item.title}</span>
+              <span class="item-subtitle">${item.subtitle || ''}</span>
+            </a>
+            <button class="remove-bookmark" onclick="removeBookmark('${item.url}')" aria-label="Remove bookmark">×</button>
+          </div>
+        `
+            )
+            .join('');
+        }
+      }
+
+      function removeBookmark(url) {
+        bookmarkedItems = bookmarkedItems.filter(item => item.url !== url);
+        try {
+          localStorage.setItem('bookmarkedItems', JSON.stringify(bookmarkedItems));
+        } catch (error) {
+          console.warn('Failed to save bookmarks:', error);
+        }
+        updateUI();
+      }
+
+      function clearAllRecentItems() {
+        recentItems = [];
+        try {
+          localStorage.removeItem('recentItems');
+        } catch (error) {
+          console.warn('Failed to clear recent items:', error);
+        }
+        updateUI();
+      }
+
+      function clearAllBookmarks() {
+        bookmarkedItems = [];
+        try {
+          localStorage.removeItem('bookmarkedItems');
+        } catch (error) {
+          console.warn('Failed to clear bookmarks:', error);
+        }
+        updateUI();
+      }
+
+      function toggleRecentsBookmarks() {
+        const panel = document.getElementById('recentsBookmarksPanel');
+        if (!panel) return;
+        panel.classList.toggle('visible');
+      }
+
+      function switchTab(tabName) {
+        const tabs = document.querySelectorAll('.tab-btn');
+        const contents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => tab.classList.remove('active'));
+        contents.forEach(content => content.classList.remove('active'));
+
+        document.getElementById(tabName + 'Tab').classList.add('active');
+        document.getElementById(tabName + 'Content').classList.add('active');
+      }
+
+      // Font size controls
+      function toggleFontSizeControls() {
+        const panel = document.getElementById('fontSizePanel');
+        panel.classList.toggle('visible');
+      }
+
+      function setFontSize(size) {
+        const sizes = {
+          small: '90%',
+          medium: '100%',
+          large: '110%',
+          'extra-large': '120%',
+        };
+
+        document.documentElement.style.fontSize = sizes[size];
+
+        // Update active button
+        document.querySelectorAll('.font-preset-btn').forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.size === size);
+        });
+
+        // Update slider
+        const slider = document.getElementById('fontSizeSlider');
+        const value = parseInt(sizes[size]);
+        slider.value = value;
+        document.getElementById('sliderValue').textContent = sizes[size];
+
+        // Save preference
+        try {
+          localStorage.setItem('fontSize', size);
+        } catch (error) {
+          console.warn('Failed to save font size preference:', error);
+        }
+      }
+
+      function setCustomFontSize(value) {
+        const percentage = value + '%';
+        document.documentElement.style.fontSize = percentage;
+        document.getElementById('sliderValue').textContent = percentage;
+
+        // Update preset buttons
+        document.querySelectorAll('.font-preset-btn').forEach(btn => {
+          btn.classList.remove('active');
+        });
+
+        // Save preference
+        try {
+          localStorage.setItem('customFontSize', value);
+        } catch (error) {
+          console.warn('Failed to save custom font size:', error);
+        }
+      }
+
+      function toggleDyslexiaFont(enabled) {
+        document.documentElement.classList.toggle('dyslexia-font', enabled);
+        try {
+          localStorage.setItem('dyslexiaFont', enabled);
+        } catch (error) {
+          console.warn('Failed to save dyslexia font preference:', error);
+        }
+      }
+
+      function toggleLineHeight(enabled) {
+        document.documentElement.classList.toggle('increased-line-height', enabled);
+        try {
+          localStorage.setItem('increasedLineHeight', enabled);
+        } catch (error) {
+          console.warn('Failed to save line height preference:', error);
+        }
+      }
+
+      function resetFontSettings() {
+        document.documentElement.style.fontSize = '';
+        document.documentElement.classList.remove('dyslexia-font', 'increased-line-height');
+
+        // Reset UI
+        document.querySelector('.font-preset-btn[data-size="medium"]').classList.add('active');
+        document.getElementById('fontSizeSlider').value = 100;
+        document.getElementById('sliderValue').textContent = '100%';
+        document.getElementById('dyslexiaFont').checked = false;
+        document.getElementById('increaseLineHeight').checked = false;
+
+        // Clear localStorage
+        try {
+          localStorage.removeItem('fontSize');
+          localStorage.removeItem('customFontSize');
+          localStorage.removeItem('dyslexiaFont');
+          localStorage.removeItem('increasedLineHeight');
+        } catch (error) {
+          console.warn('Failed to clear font preferences:', error);
+        }
+      }
+
+      // Theme functionality is handled by theme-manager.js
+
+      function toggleHighContrast() {
+        // This will be handled by the theme manager module when it loads
+        if (window.themeManager && window.themeManager.toggleHighContrast) {
+          window.themeManager.toggleHighContrast();
+        }
+      }
+
+      function toggleThemeDropdown() {
+        if (window.themeManager && window.themeManager.toggleDropdown) {
+          window.themeManager.toggleDropdown();
+        }
+      }
+
+      // Global keyboard shortcuts - cross-platform compatible
+      document.addEventListener('keydown', function(e) {
+        // Check for Cmd+K (Mac) or Ctrl+K (Windows/Linux) to focus search
+        const isMac = /Mac|iPhone|iPad|iPod/.test(navigator.userAgent) || navigator.platform === 'MacIntel';
+        const isShortcutPressed = isMac ? e.metaKey : e.ctrlKey;
+        
+        if (isShortcutPressed && e.key.toLowerCase() === 'k') {
+          e.preventDefault();
+          const searchInput = document.getElementById('searchInput');
+          if (searchInput) {
+            searchInput.focus();
+            searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Clear existing search if any
+            if (searchInput.value.trim()) {
+              searchInput.select();
+            }
+          }
+        }
+        
+        // Escape key to blur search input
+        if (e.key === 'Escape') {
+          const searchInput = document.getElementById('searchInput');
+          if (searchInput && searchInput === document.activeElement) {
+            searchInput.blur();
+          }
+        }
+      });
+
+      // Initialize when page loads
+      document.addEventListener('DOMContentLoaded', function () {
+        initializeData();
+
+        // Initialize search functionality (skip on map)
+        
+        initializeSearch();
+        
+
+        // Auto-add current page to recent items
+        const currentPageData = {
+          title: document.title
+            .replace(' | Explore Scripture', '')
+            .replace('Explore Scripture', 'Home'),
+          subtitle:
+            document
+              .querySelector('meta[name="description"]')
+              ?.getAttribute('content')
+              ?.substring(0, 80) + '...' || '',
+          url: window.location.pathname,
+          timestamp: Date.now(),
+        };
+
+        // Don't add if it's just the site title
+        if (currentPageData.title && currentPageData.title !== 'Explore Scripture') {
+          setTimeout(() => addToRecentItems(currentPageData), 1000);
+        }
+      });
+
+      // Service worker registration and PWA functionality
+      let swRegistration = null;
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register('/sw.js')
+            .then(registration => {
+              swRegistration = registration;
+
+              if (registration.waiting && navigator.serviceWorker.controller) {
+                window.newServiceWorker = registration.waiting;
+                showUpdateNotification();
+              }
+
+              registration.addEventListener('updatefound', () => {
+                const newWorker = registration.installing;
+                if (!newWorker) return;
+                window.newServiceWorker = newWorker;
+                newWorker.addEventListener('statechange', () => {
+                  if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                    showUpdateNotification();
+                  }
+                });
+              });
+            })
+            .catch(error => {
+              console.warn('SW registration failed:', error);
+            });
+        });
+
+        // Listen for updates
+        navigator.serviceWorker.addEventListener('message', event => {
+          if (event.data && event.data.type === 'UPDATE_AVAILABLE') {
+            showUpdateNotification();
+          }
+        });
+
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+          if (!window.__swWaitingForRefresh || window.__swRefreshing) return;
+          window.__swRefreshing = true;
+          window.location.reload();
+        });
+      }
+
+      let updateNotification = null;
+
+      function showUpdateNotification() {
+        if (updateNotification) return;
+        window.__swUpdateAvailable = true;
+
+        updateNotification = document.createElement('div');
+        updateNotification.className = 'update-notification';
+        updateNotification.innerHTML = `
+        <div class="update-content">
+          <span class="update-icon">↻</span>
+          <div class="update-text">
+            <div class="update-title">Update Available</div>
+            <div class="update-subtitle">A new version is ready</div>
+          </div>
+          <button class="update-btn" onclick="updateServiceWorker()" aria-label="Update to latest version">Update</button>
+          <button class="update-dismiss" onclick="dismissUpdateNotification()" aria-label="Dismiss update notification">✕</button>
+        </div>
+      `;
+
+        document.body.appendChild(updateNotification);
+
+        // Auto-remove after 10 seconds
+        setTimeout(() => {
+          dismissUpdateNotification();
+        }, 10000);
+      }
+
+      function dismissUpdateNotification() {
+        if (updateNotification) {
+          updateNotification.remove();
+          updateNotification = null;
+        }
+      }
+
+      function updateServiceWorker() {
+        const pendingWorker =
+          window.newServiceWorker || (swRegistration && swRegistration.waiting);
+        if (pendingWorker) {
+          window.__swWaitingForRefresh = true;
+          pendingWorker.postMessage({ type: 'SKIP_WAITING' });
+          dismissUpdateNotification();
+          return;
+        }
+
+        if (window.__swUpdateAvailable) {
+          window.__swWaitingForRefresh = true;
+          window.location.reload();
+        }
+      }
+
+      // Online/offline status
+      window.addEventListener('online', showOnlineStatus);
+
+      function showOnlineStatus() {
+        const onlineIndicator = document.createElement('div');
+        onlineIndicator.className = 'online-indicator';
+        onlineIndicator.innerHTML = `
+        <div class="online-content">
+          <div class="online-icon">●</div>
+          <span>Back online!</span>
+        </div>
+      `;
+
+        document.body.appendChild(onlineIndicator);
+
+        setTimeout(() => {
+          onlineIndicator.remove();
+        }, 3000);
+      }
+
+      // Add version info to console
+      console.log('🔧 Site Version: v3.0.0 - Premium search experience with hero section');
+    </script>
+    
+    <!-- Version info -->
+    <div style="position: fixed; bottom: 5px; right: 5px; font-size: 10px; color: rgba(255,255,255,0.3); pointer-events: none; z-index: 9999;">
+      v3.0.0
+    </div>
+  
+
+<div id="theme-nav-dropdown" class="theme-nav-dropdown">
+        <div class="theme-category">
+          <div class="theme-category-label">Default</div>
+          
+            <button class="theme-option " data-theme="light">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #ffffff"></div>
+                <div class="theme-preview-card" style="background: #ffffff; color: #111827"></div>
+                <div class="theme-preview-accent" style="background: #2563eb"></div>
+              </div>
+              <span class="theme-name">Light</span>
+            </button>
+          
+        </div>
+      
+        <div class="theme-category">
+          <div class="theme-category-label">Light</div>
+          
+            <button class="theme-option " data-theme="warm">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #fef7ed"></div>
+                <div class="theme-preview-card" style="background: #fffbf5; color: #451a03"></div>
+                <div class="theme-preview-accent" style="background: #ea580c"></div>
+              </div>
+              <span class="theme-name">Warm</span>
+            </button>
+          
+            <button class="theme-option " data-theme="nature">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #f0fdf4"></div>
+                <div class="theme-preview-card" style="background: #f7fee7; color: #14532d"></div>
+                <div class="theme-preview-accent" style="background: #16a34a"></div>
+              </div>
+              <span class="theme-name">Nature</span>
+            </button>
+          
+            <button class="theme-option " data-theme="ocean">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #f0fdfa"></div>
+                <div class="theme-preview-card" style="background: #f7fffe; color: #042f2e"></div>
+                <div class="theme-preview-accent" style="background: #14b8a6"></div>
+              </div>
+              <span class="theme-name">Ocean</span>
+            </button>
+          
+            <button class="theme-option " data-theme="cream">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #fefcf3"></div>
+                <div class="theme-preview-card" style="background: #ffffff; color: #3c2e26"></div>
+                <div class="theme-preview-accent" style="background: #c17817"></div>
+              </div>
+              <span class="theme-name">Cream</span>
+            </button>
+          
+            <button class="theme-option " data-theme="coral">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #fef7f0"></div>
+                <div class="theme-preview-card" style="background: #ffffff; color: #7c2d12"></div>
+                <div class="theme-preview-accent" style="background: #ea580c"></div>
+              </div>
+              <span class="theme-name">Coral</span>
+            </button>
+          
+            <button class="theme-option " data-theme="sage">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #f8faf8"></div>
+                <div class="theme-preview-card" style="background: #ffffff; color: #1f2937"></div>
+                <div class="theme-preview-accent" style="background: #059669"></div>
+              </div>
+              <span class="theme-name">Sage</span>
+            </button>
+          
+            <button class="theme-option " data-theme="lavender">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #faf9ff"></div>
+                <div class="theme-preview-card" style="background: #ffffff; color: #4c1d95"></div>
+                <div class="theme-preview-accent" style="background: #8b5cf6"></div>
+              </div>
+              <span class="theme-name">Lavender</span>
+            </button>
+          
+            <button class="theme-option " data-theme="rose">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #fff1f2"></div>
+                <div class="theme-preview-card" style="background: #ffffff; color: #881337"></div>
+                <div class="theme-preview-accent" style="background: #e11d48"></div>
+              </div>
+              <span class="theme-name">Rose</span>
+            </button>
+          
+            <button class="theme-option " data-theme="sky">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #f0f9ff"></div>
+                <div class="theme-preview-card" style="background: #ffffff; color: #0c4a6e"></div>
+                <div class="theme-preview-accent" style="background: #0ea5e9"></div>
+              </div>
+              <span class="theme-name">Sky</span>
+            </button>
+          
+            <button class="theme-option " data-theme="amber">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #fffbeb"></div>
+                <div class="theme-preview-card" style="background: #ffffff; color: #78350f"></div>
+                <div class="theme-preview-accent" style="background: #f59e0b"></div>
+              </div>
+              <span class="theme-name">Amber</span>
+            </button>
+          
+            <button class="theme-option " data-theme="cyan">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #ecfeff"></div>
+                <div class="theme-preview-card" style="background: #ffffff; color: #083344"></div>
+                <div class="theme-preview-accent" style="background: #06b6d4"></div>
+              </div>
+              <span class="theme-name">Cyan</span>
+            </button>
+          
+            <button class="theme-option " data-theme="mint">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #f0fdfa"></div>
+                <div class="theme-preview-card" style="background: #ffffff; color: #134e4a"></div>
+                <div class="theme-preview-accent" style="background: #14b8a6"></div>
+              </div>
+              <span class="theme-name">Mint</span>
+            </button>
+          
+        </div>
+      
+        <div class="theme-category">
+          <div class="theme-category-label">Dark</div>
+          
+            <button class="theme-option active" data-theme="slate">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #0f172a"></div>
+                <div class="theme-preview-card" style="background: #1e293b; color: #f1f5f9"></div>
+                <div class="theme-preview-accent" style="background: #3b82f6"></div>
+              </div>
+              <span class="theme-name">Slate</span>
+            </button>
+          
+            <button class="theme-option " data-theme="charcoal">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #1c1917"></div>
+                <div class="theme-preview-card" style="background: #292524; color: #fbbf24"></div>
+                <div class="theme-preview-accent" style="background: #d97706"></div>
+              </div>
+              <span class="theme-name">Charcoal</span>
+            </button>
+          
+            <button class="theme-option " data-theme="midnight">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #0c0a09"></div>
+                <div class="theme-preview-card" style="background: #1c1917; color: #fbbf24"></div>
+                <div class="theme-preview-accent" style="background: #f59e0b"></div>
+              </div>
+              <span class="theme-name">Midnight</span>
+            </button>
+          
+            <button class="theme-option " data-theme="purple">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #1e1b4b"></div>
+                <div class="theme-preview-card" style="background: #312e81; color: #fbbf24"></div>
+                <div class="theme-preview-accent" style="background: #7c3aed"></div>
+              </div>
+              <span class="theme-name">Purple</span>
+            </button>
+          
+            <button class="theme-option " data-theme="stone">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #1c1917"></div>
+                <div class="theme-preview-card" style="background: #2d2a27; color: #e7e5e4"></div>
+                <div class="theme-preview-accent" style="background: #78716c"></div>
+              </div>
+              <span class="theme-name">Stone</span>
+            </button>
+          
+            <button class="theme-option " data-theme="ember">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #1f1611"></div>
+                <div class="theme-preview-card" style="background: #2d2216; color: #fed7aa"></div>
+                <div class="theme-preview-accent" style="background: #f97316"></div>
+              </div>
+              <span class="theme-name">Ember</span>
+            </button>
+          
+            <button class="theme-option " data-theme="forest">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #0c1a0c"></div>
+                <div class="theme-preview-card" style="background: #1a2e1a; color: #bbf7d0"></div>
+                <div class="theme-preview-accent" style="background: #22c55e"></div>
+              </div>
+              <span class="theme-name">Forest</span>
+            </button>
+          
+            <button class="theme-option " data-theme="indigo">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #1e1b4b"></div>
+                <div class="theme-preview-card" style="background: #312e81; color: #c7d2fe"></div>
+                <div class="theme-preview-accent" style="background: #6366f1"></div>
+              </div>
+              <span class="theme-name">Indigo</span>
+            </button>
+          
+            <button class="theme-option " data-theme="ruby">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #1f0a0a"></div>
+                <div class="theme-preview-card" style="background: #2d1414; color: #fecaca"></div>
+                <div class="theme-preview-accent" style="background: #ef4444"></div>
+              </div>
+              <span class="theme-name">Ruby</span>
+            </button>
+          
+            <button class="theme-option " data-theme="emerald">
+              <div class="theme-preview">
+                <div class="theme-preview-bg" style="background: #022c22"></div>
+                <div class="theme-preview-card" style="background: #064e3b; color: #a7f3d0"></div>
+                <div class="theme-preview-accent" style="background: #10b981"></div>
+              </div>
+              <span class="theme-name">Emerald</span>
+            </button>
+          
+        </div>
+      </div></body></html>

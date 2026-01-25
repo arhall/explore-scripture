@@ -17,7 +17,7 @@ wrangler pages deploy _site    # Deploy to Cloudflare Pages
 ```bash
 npm run test:setup             # One-time: setup test environment  
 npm run test:env               # Verify test configuration
-npm run test:selenium          # Run all tests
+npm run test:selenium          # Run all tests (reports saved to tests/reports/selenium-<timestamp>/)
 ```
 
 ---
@@ -46,7 +46,7 @@ npm run test:selenium          # Run all tests
 |---------|-------------|
 | `npm run test:setup` | **One-time**: Create test environment |
 | `npm run test:env` | Verify environment configuration |
-| `npm run test:selenium` | All Selenium tests |
+| `npm run test:selenium` | All Selenium tests (reports saved to tests/reports/selenium-<timestamp>/) |
 | `npm run test:smoke` | Quick smoke tests |
 | `npm run test:ios` | iOS Safari tests |
 | `npm run test:mobile` | Mobile-specific tests |

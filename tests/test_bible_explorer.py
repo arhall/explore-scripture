@@ -48,7 +48,7 @@ class TestBibleExplorer:
         driver.get(base_url)
         
         # Check page title
-        assert "Bible Explorer" in driver.title
+        assert "Explore Scripture" in driver.title
         
         # Check container is visible (main content wrapper)
         container = WebDriverWait(driver, 10).until(
@@ -90,11 +90,11 @@ class TestBibleExplorer:
             EC.element_to_be_clickable((By.CLASS_NAME, "nav-brand"))
         )
         assert nav_brand.is_displayed()
-        assert nav_brand.text == "Bible Explorer"
+        assert nav_brand.text == "Explore Scripture"
         
         # Check main navigation links
         nav_links = driver.find_elements(By.CLASS_NAME, "nav-link")
-        assert len(nav_links) >= 3  # Sections, Characters, Links
+        assert len(nav_links) >= 3  # Sections, Map, Links
         
         # Verify all nav links are clickable
         for link in nav_links:
@@ -117,7 +117,7 @@ class TestBibleExplorer:
         
         # Verify main heading
         h1 = hero_content.find_element(By.TAG_NAME, "h1")
-        assert h1.text == "Bible Explorer"
+        assert "Explore Scripture" in h1.text
         
         # Check stats are present
         stats = driver.find_elements(By.CLASS_NAME, "stat")
@@ -129,26 +129,52 @@ class TestBibleExplorer:
         
         # Find theme toggle button
         theme_toggle = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.CLASS_NAME, "theme-toggle"))
+            EC.element_to_be_clickable((By.CLASS_NAME, "theme-toggle-nav"))
         )
         
         # Check initial state
         initial_theme = driver.execute_script("return document.documentElement.getAttribute('data-theme')")
         
-        # Click toggle
+        # Open theme dropdown
         theme_toggle.click()
-        time.sleep(0.5)  # Wait for theme change
+        dropdown = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, "theme-nav-dropdown"))
+        )
+        WebDriverWait(driver, 5).until(
+            lambda d: "open" in dropdown.get_attribute("class")
+        )
+        
+        # Select a different theme
+        options = dropdown.find_elements(By.CSS_SELECTOR, ".theme-option")
+        target_option = None
+        for option in options:
+            if "active" not in option.get_attribute("class"):
+                target_option = option
+                break
+        if not target_option and options:
+            target_option = options[0]
+        
+        if target_option:
+            target_option.click()
+            time.sleep(0.5)
         
         # Verify theme changed
         new_theme = driver.execute_script("return document.documentElement.getAttribute('data-theme')")
         assert new_theme != initial_theme
         
-        # Toggle back
+        # Switch back to initial theme
         theme_toggle.click()
-        time.sleep(0.5)
-        
-        final_theme = driver.execute_script("return document.documentElement.getAttribute('data-theme')")
-        assert final_theme == initial_theme
+        dropdown = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, "theme-nav-dropdown"))
+        )
+        original_option = None
+        for option in dropdown.find_elements(By.CSS_SELECTOR, ".theme-option"):
+            if option.get_attribute("data-theme") == initial_theme:
+                original_option = option
+                break
+        if original_option:
+            original_option.click()
+            time.sleep(0.5)
     
     def test_search_functionality(self, driver, base_url):
         """Test search input and functionality"""
@@ -159,6 +185,16 @@ class TestBibleExplorer:
             EC.presence_of_element_located((By.ID, "searchInput"))
         )
         assert search_input.is_displayed()
+
+        # Ensure search modules are loaded
+        driver.execute_script("""
+          if (window.bundleOptimizer) {
+            window.bundleOptimizer.handleTrigger('search-visible');
+          }
+        """)
+        WebDriverWait(driver, 15).until(
+            lambda d: d.execute_script("return window.searchEngine && window.searchEngine.initialized")
+        )
         
         # Test search input
         search_input.clear()
@@ -166,9 +202,13 @@ class TestBibleExplorer:
         time.sleep(1)  # Wait for search results
         
         # Check if search results appear
-        search_results = driver.find_element(By.ID, "searchResults")
-        # Note: Results may not be visible if no search data loaded, but element should exist
+        search_results = driver.find_element(By.ID, "search-results")
         assert search_results
+
+        # Wait for at least one result to render
+        WebDriverWait(driver, 10).until(
+            lambda d: len(d.find_elements(By.CSS_SELECTOR, "#search-results .search-result")) > 0
+        )
     
     def test_font_controls(self, driver, base_url):
         """Test font size controls"""
@@ -285,10 +325,10 @@ class TestBibleExplorer:
         
         # Click on Characters link
         try:
-            characters_link = WebDriverWait(driver, 10).until(
-                EC.element_to_be_clickable((By.XPATH, "//a[contains(text(), 'Characters')]"))
+            sections_link = WebDriverWait(driver, 10).until(
+                EC.element_to_be_clickable((By.XPATH, "//a[contains(text(), 'Sections')]"))
             )
-            characters_link.click()
+            sections_link.click()
             
             # Wait for page to load
             WebDriverWait(driver, 10).until(
@@ -297,14 +337,14 @@ class TestBibleExplorer:
             
             # Check we're on characters page
             current_url = driver.current_url
-            assert "/characters" in current_url
+            assert "/categories" in current_url
             
             # Check container loads
             container = driver.find_element(By.CLASS_NAME, "container")
             assert container.is_displayed()
             
         except TimeoutException:
-            # Characters page may not exist, that's okay for basic functionality test
+            # Sections page may not exist, that's okay for basic functionality test
             pass
     
     def test_css_loading_and_styling(self, driver, base_url):
@@ -313,11 +353,11 @@ class TestBibleExplorer:
         
         # Check that main elements have expected styling
         nav = driver.find_element(By.CLASS_NAME, "nav")
-        nav_bg = driver.execute_script(
-            "return window.getComputedStyle(arguments[0]).backgroundColor", nav
+        nav_border = driver.execute_script(
+            "return window.getComputedStyle(arguments[0]).borderBottomStyle", nav
         )
-        # Should have some background color (not transparent)
-        assert nav_bg and nav_bg != "rgba(0, 0, 0, 0)"
+        # Nav should have a visible divider
+        assert nav_border and nav_border != "none"
         
         # Check container has proper width constraints
         container = driver.find_element(By.CLASS_NAME, "container")
@@ -333,9 +373,9 @@ class TestBibleExplorer:
         
         # Test that JavaScript variables are defined
         theme_function_exists = driver.execute_script(
-            "return typeof toggleTheme === 'function'"
+            "return typeof toggleThemeDropdown === 'function'"
         )
-        assert theme_function_exists, "toggleTheme function not found"
+        assert theme_function_exists, "toggleThemeDropdown function not found"
         
         # Check that DOM manipulation works
         test_element = driver.execute_script("""

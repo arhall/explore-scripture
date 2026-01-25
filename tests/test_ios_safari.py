@@ -7,66 +7,18 @@ Tests mobile Safari-specific functionality and behaviors
 import pytest
 from config import get_test_urls
 import time
-import json
-from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.safari.options import Options as SafariOptions
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 # TouchActions is deprecated in Selenium 4.x, using ActionChains instead
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
-from appium import webdriver as appium_webdriver
-from appium.options.ios import XCUITestOptions
 
 
+@pytest.mark.mobile
 class TestIOSSafari:
     """Test suite for iOS Safari functionality"""
-    
-    @pytest.fixture(scope="class")
-    def ios_driver(self):
-        """Setup iOS Safari WebDriver for testing"""
-        # For iOS Simulator testing
-        options = XCUITestOptions()
-        options.platform_name = "iOS"
-        options.platform_version = "16.0"  # Adjust as needed
-        options.device_name = "iPhone 14"  # Adjust as needed
-        options.browser_name = "Safari"
-        options.automation_name = "XCUITest"
-        options.new_command_timeout = 60
-        options.command_timeouts = {'implicit': 30}
-        
-        # For local testing, you'll need Appium server running
-        try:
-            driver = appium_webdriver.Remote(
-                command_executor='http://localhost:4723',
-                options=options
-            )
-            driver.implicitly_wait(10)
-            yield driver
-            driver.quit()
-        except Exception as e:
-            # Fallback to desktop Safari for local development
-            print(f"iOS Simulator not available: {e}")
-            print("Falling back to desktop Safari")
-            driver = webdriver.Safari()
-            # Simulate mobile viewport
-            driver.set_window_size(375, 812)  # iPhone X dimensions
-            driver.implicitly_wait(10)
-            yield driver
-            driver.quit()
-    
-    @pytest.fixture(scope="class") 
-    def mobile_safari_driver(self):
-        """Setup mobile Safari simulation for local testing"""
-        driver = webdriver.Safari()
-        # iPhone 14 Pro dimensions
-        driver.set_window_size(393, 852)
-        driver.implicitly_wait(10)
-        yield driver
-        driver.quit()
-    
+
     @pytest.fixture(scope="class")
     def base_url(self):
         """Base URL for testing"""
@@ -78,7 +30,7 @@ class TestIOSSafari:
         driver.get(base_url)
         
         # Check page title
-        assert "Bible Explorer" in driver.title
+        assert "Explore Scripture" in driver.title
         
         # Check mobile viewport meta tag is working
         body = driver.find_element(By.TAG_NAME, "body")
@@ -130,7 +82,7 @@ class TestIOSSafari:
         try:
             theme_toggle = WebDriverWait(driver, 5).until(
                 EC.element_to_be_clickable((By.CSS_SELECTOR, 
-                    ".theme-toggle, [aria-label*='theme'], [title*='theme'], .dark-mode-toggle"
+                    ".theme-toggle-nav, .theme-switcher-button, [aria-label*='theme'], [title*='theme'], .dark-mode-toggle"
                 ))
             )
             
@@ -140,6 +92,18 @@ class TestIOSSafari:
             # Click theme toggle
             theme_toggle.click()
             time.sleep(1)
+
+            # Try selecting a theme option if dropdown is available
+            try:
+                dropdown = driver.find_element(By.CSS_SELECTOR, "#theme-nav-dropdown, .theme-switcher-dropdown")
+                options = dropdown.find_elements(By.CSS_SELECTOR, ".theme-option")
+                for option in options:
+                    if "active" not in option.get_attribute("class"):
+                        option.click()
+                        time.sleep(1)
+                        break
+            except NoSuchElementException:
+                pass
             
             # Verify theme changed
             new_theme = driver.execute_script("return document.documentElement.getAttribute('data-theme')")
@@ -343,7 +307,12 @@ class TestIOSSafari:
         assert load_time < 10, f"Page load time {load_time:.2f}s should be under 10 seconds"
         
         # Check for JavaScript errors
-        logs = driver.get_log('browser')
+        try:
+            logs = driver.get_log('browser')
+        except Exception as e:
+            print(f"Browser logs not available on this driver: {e}")
+            logs = []
+
         severe_errors = [log for log in logs if log['level'] == 'SEVERE']
         
         # Filter out known non-critical errors

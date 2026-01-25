@@ -3,6 +3,8 @@
 [![Built with Eleventy](https://img.shields.io/badge/Built%20with-Eleventy-000000.svg)](https://11ty.dev/)
 [![Deployed on Cloudflare Pages](https://img.shields.io/badge/Deployed%20on-Cloudflare%20Pages-F38020.svg)](https://pages.cloudflare.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![CI](https://github.com/arhall/bible-static-site/actions/workflows/test.yml/badge.svg)](https://github.com/arhall/bible-static-site/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/arhall/bible-static-site/branch/main/graph/badge.svg)](https://codecov.io/gh/arhall/bible-static-site)
 
 A comprehensive Bible study platform featuring **5,500+ biblical entities**,
 interactive chapter reading, and modern UX design optimized for desktop and

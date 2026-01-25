@@ -16,6 +16,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/assets': 'assets' });
   eleventyConfig.addPassthroughCopy({ 'src/styles.css': 'styles.css' });
   eleventyConfig.addPassthroughCopy({ 'src/manifest.json': 'manifest.json' });
+  eleventyConfig.addPassthroughCopy({ 'src/sw.js': 'sw.js' });
 
   // Custom filters
   eleventyConfig.addFilter('unique', function (arr) {

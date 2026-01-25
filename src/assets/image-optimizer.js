@@ -33,7 +33,6 @@ class ImageOptimizer {
     }
 
     return new Promise(resolve => {
-      // eslint-disable-next-line no-undef
       const webP = new Image();
       webP.onload = webP.onerror = () => {
         this.supportsWebP = webP.height === 2;
@@ -46,7 +45,6 @@ class ImageOptimizer {
 
   setupLazyLoading() {
     if (this.supportsIntersectionObserver) {
-      // eslint-disable-next-line no-undef
       this.intersectionObserver = new IntersectionObserver(
         entries => {
           entries.forEach(entry => {
@@ -125,7 +123,6 @@ class ImageOptimizer {
     if (!src || typeof Image === 'undefined') return;
 
     // Create new image to test loading
-    // eslint-disable-next-line no-undef
     const img = new Image();
 
     img.onload = () => {

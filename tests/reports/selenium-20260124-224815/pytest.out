@@ -1,0 +1,529 @@
+Loaded test configuration from: /Users/andrewhall/repo/explore-scripture/.env.test.local
+============================= test session starts ==============================
+platform darwin -- Python 3.14.2, pytest-9.0.2, pluggy-1.6.0 -- /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+cachedir: .pytest_cache
+metadata: {'Python': '3.14.2', 'Platform': 'macOS-26.2-arm64-arm-64bit-Mach-O', 'Packages': {'pytest': '9.0.2', 'pluggy': '1.6.0'}, 'Plugins': {'xdist': '3.8.0', 'metadata': '3.1.1', 'html': '4.2.0'}, 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home'}
+rootdir: /Users/andrewhall/repo/explore-scripture
+configfile: pytest.ini
+plugins: xdist-3.8.0, metadata-3.1.1, html-4.2.0
+created: 8/8 workers
+8 workers [105 items]
+
+scheduling tests via LoadFileScheduling
+
+tests/test_bible_explorer.py::TestBibleExplorer::test_homepage_loads 
+tests/test_env_config.py::test_environment_variables_loaded 
+[gw7] [  0%] PASSED tests/test_env_config.py::test_environment_variables_loaded 
+tests/test_env_config.py::test_base_url_selection 
+[gw7] [  1%] PASSED tests/test_env_config.py::test_base_url_selection 
+tests/test_env_config.py::test_test_urls_generated 
+[gw7] [  2%] PASSED tests/test_env_config.py::test_test_urls_generated 
+tests/test_env_config.py::test_browser_configuration 
+[gw7] [  3%] PASSED tests/test_env_config.py::test_browser_configuration 
+tests/test_regression_fixes.py::TestRegressionFixes::test_theme_toggle_functionality[chrome] 
+tests/test_ios_safari.py::TestIOSSafari::test_mobile_homepage_loads 
+tests/test_entities_system.py::TestEntitiesSystem::test_entities_page_loads 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_genealogy_page_loads 
+tests/test_scripture_widget.py::test_scripture_widget_loads 
+tests/test_commentary_system.py::TestCommentarySystem::test_commentary_buttons_exist 
+tests/test_env_config.py::test_timeout_configuration 
+[gw7] [  4%] PASSED tests/test_env_config.py::test_timeout_configuration 
+tests/test_e2e_ui.py::TestE2EUI::test_global_search_direct_reference 
+[gw3] [  5%] ERROR tests/test_ios_safari.py::TestIOSSafari::test_mobile_homepage_loads 
+tests/test_ios_safari.py::TestIOSSafari::test_mobile_navigation_menu 
+[gw3] [  6%] ERROR tests/test_ios_safari.py::TestIOSSafari::test_mobile_navigation_menu 
+tests/test_ios_safari.py::TestIOSSafari::test_mobile_theme_toggle 
+[gw3] [  7%] ERROR tests/test_ios_safari.py::TestIOSSafari::test_mobile_theme_toggle 
+tests/test_ios_safari.py::TestIOSSafari::test_mobile_character_search 
+[gw3] [  8%] ERROR tests/test_ios_safari.py::TestIOSSafari::test_mobile_character_search 
+tests/test_ios_safari.py::TestIOSSafari::test_mobile_chapter_reader 
+[gw3] [  9%] ERROR tests/test_ios_safari.py::TestIOSSafari::test_mobile_chapter_reader 
+tests/test_ios_safari.py::TestIOSSafari::test_mobile_scripture_widget 
+[gw3] [ 10%] ERROR tests/test_ios_safari.py::TestIOSSafari::test_mobile_scripture_widget 
+tests/test_ios_safari.py::TestIOSSafari::test_mobile_responsive_design 
+[gw3] [ 11%] ERROR tests/test_ios_safari.py::TestIOSSafari::test_mobile_responsive_design 
+tests/test_ios_safari.py::TestIOSSafari::test_mobile_performance_basic 
+[gw3] [ 12%] ERROR tests/test_ios_safari.py::TestIOSSafari::test_mobile_performance_basic 
+tests/test_ios_safari.py::TestIOSSafari::test_mobile_book_navigation 
+[gw3] [ 13%] ERROR tests/test_ios_safari.py::TestIOSSafari::test_mobile_book_navigation 
+tests/test_ios_safari.py::TestIOSSafari::test_mobile_accessibility_basics 
+[gw3] [ 14%] ERROR tests/test_ios_safari.py::TestIOSSafari::test_mobile_accessibility_basics 
+tests/test_ios_safari.py::TestIOSSpecific::test_ios_safari_viewport_behavior 
+[gw3] [ 15%] ERROR tests/test_ios_safari.py::TestIOSSpecific::test_ios_safari_viewport_behavior 
+tests/test_ios_safari.py::TestIOSSpecific::test_ios_touch_events 
+[gw3] [ 16%] ERROR tests/test_ios_safari.py::TestIOSSpecific::test_ios_touch_events 
+[gw1] [ 17%] FAILED tests/test_bible_explorer.py::TestBibleExplorer::test_homepage_loads 
+tests/test_bible_explorer.py::TestBibleExplorer::test_navigation_elements 
+[gw2] [ 18%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_entities_page_loads 
+tests/test_entities_system.py::TestEntitiesSystem::test_entity_search_functionality 
+[gw1] [ 19%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_navigation_elements 
+tests/test_bible_explorer.py::TestBibleExplorer::test_hero_section_content 
+[gw1] [ 20%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_hero_section_content 
+tests/test_bible_explorer.py::TestBibleExplorer::test_theme_toggle 
+[gw4] [ 20%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_genealogy_page_loads 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_cluster_dropdown_exists 
+[gw1] [ 21%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_theme_toggle 
+tests/test_bible_explorer.py::TestBibleExplorer::test_search_functionality 
+[gw1] [ 22%] FAILED tests/test_bible_explorer.py::TestBibleExplorer::test_search_functionality 
+tests/test_bible_explorer.py::TestBibleExplorer::test_font_controls 
+[gw0] [ 23%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_theme_toggle_functionality[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_theme_toggle_functionality[firefox] 
+[gw1] [ 24%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_font_controls 
+tests/test_bible_explorer.py::TestBibleExplorer::test_high_contrast_mode 
+[gw1] [ 25%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_high_contrast_mode 
+tests/test_bible_explorer.py::TestBibleExplorer::test_responsive_layout_mobile 
+[gw5] [ 26%] PASSED tests/test_commentary_system.py::TestCommentarySystem::test_commentary_buttons_exist 
+tests/test_commentary_system.py::TestCommentarySystem::test_commentary_modal_opens 
+[gw7] [ 27%] PASSED tests/test_e2e_ui.py::TestE2EUI::test_global_search_direct_reference 
+tests/test_e2e_ui.py::TestE2EUI::test_sections_browse_cards 
+[gw1] [ 28%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_responsive_layout_mobile 
+tests/test_bible_explorer.py::TestBibleExplorer::test_accessibility_features 
+[gw6] [ 29%] FAILED tests/test_scripture_widget.py::test_scripture_widget_loads 
+tests/test_scripture_widget.py::test_scripture_references_enhanced 
+[gw2] [ 30%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_entity_search_functionality 
+tests/test_entities_system.py::TestEntitiesSystem::test_individual_entity_page 
+[gw4] [ 31%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_cluster_dropdown_exists 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_royal_line_cluster_exists 
+[gw7] [ 32%] PASSED tests/test_e2e_ui.py::TestE2EUI::test_sections_browse_cards 
+tests/test_e2e_ui.py::TestE2EUI::test_quick_access_panel_toggle 
+[gw0] [ 33%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_theme_toggle_functionality[firefox] 
+[gw5] [ 34%] PASSED tests/test_commentary_system.py::TestCommentarySystem::test_commentary_modal_opens 
+[gw1] [ 35%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_accessibility_features 
+tests/test_bible_explorer.py::TestBibleExplorer::test_page_performance 
+tests/test_commentary_system.py::TestCommentarySystem::test_commentary_source_switching 
+[gw1] [ 36%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_page_performance 
+tests/test_bible_explorer.py::TestBibleExplorer::test_character_page_navigation 
+[gw1] [ 37%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_character_page_navigation 
+tests/test_bible_explorer.py::TestBibleExplorer::test_css_loading_and_styling 
+[gw1] [ 38%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_css_loading_and_styling 
+tests/test_bible_explorer.py::TestBibleExplorer::test_javascript_execution 
+[gw1] [ 39%] PASSED tests/test_bible_explorer.py::TestBibleExplorer::test_javascript_execution 
+tests/test_regression_fixes.py::TestRegressionFixes::test_chapter_reader_buttons_present[chrome] 
+[gw7] [ 40%] PASSED tests/test_e2e_ui.py::TestE2EUI::test_quick_access_panel_toggle 
+[gw4] [ 40%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_royal_line_cluster_exists 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_messianic_line_checkbox 
+[gw4] [ 41%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_messianic_line_checkbox 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_tree_nodes_render 
+[gw0] [ 42%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_chapter_reader_buttons_present[chrome] 
+[gw5] [ 43%] PASSED tests/test_commentary_system.py::TestCommentarySystem::test_commentary_source_switching 
+tests/test_regression_fixes.py::TestRegressionFixes::test_chapter_reader_buttons_present[firefox] 
+tests/test_commentary_system.py::TestCommentarySystem::test_iframe_vs_direct_access_handling 
+[gw6] [ 44%] FAILED tests/test_scripture_widget.py::test_scripture_references_enhanced 
+tests/test_scripture_widget.py::test_desktop_hover_behavior 
+[gw4] [ 45%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_tree_nodes_render 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_messianic_line_highlighting 
+[gw2] [ 46%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_individual_entity_page 
+tests/test_entities_system.py::TestEntitiesSystem::test_entity_profile_content_loads 
+[gw2] [ 47%] SKIPPED tests/test_entities_system.py::TestEntitiesSystem::test_entity_profile_content_loads 
+tests/test_entities_system.py::TestEntitiesSystem::test_entity_cross_references 
+[gw2] [ 48%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_entity_cross_references 
+tests/test_entities_system.py::TestEntitiesSystem::test_entity_book_filtering 
+[gw4] [ 49%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_messianic_line_highlighting 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_tooltip_appears_on_hover 
+[gw5] [ 50%] PASSED tests/test_commentary_system.py::TestCommentarySystem::test_iframe_vs_direct_access_handling 
+tests/test_commentary_system.py::TestCommentarySystem::test_book_name_edge_cases 
+[gw0] [ 51%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_chapter_reader_buttons_present[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_no_duplicate_chapter_reader_buttons[chrome] 
+[gw2] [ 52%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_entity_book_filtering 
+tests/test_entities_system.py::TestEntitiesSystem::test_entities_filter_character_study_and_testament 
+[gw4] [ 53%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_tooltip_appears_on_hover 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_royal_line_cluster_loads 
+[gw6] [ 54%] FAILED tests/test_scripture_widget.py::test_desktop_hover_behavior 
+tests/test_scripture_widget.py::test_mobile_tap_behavior 
+[gw4] [ 55%] FAILED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_royal_line_cluster_loads 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_cluster_has_expected_nodes 
+[gw2] [ 56%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_entities_filter_character_study_and_testament 
+tests/test_entities_system.py::TestEntitiesSystem::test_entity_responsive_design 
+[gw0] [ 57%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_no_duplicate_chapter_reader_buttons[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_no_duplicate_chapter_reader_buttons[firefox] 
+[gw4] [ 58%] FAILED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_cluster_has_expected_nodes 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_circle_fill_states 
+[gw2] [ 59%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_entity_responsive_design 
+tests/test_entities_system.py::TestEntitiesSystem::test_entity_navigation_breadcrumbs 
+[gw5] [ 60%] PASSED tests/test_commentary_system.py::TestCommentarySystem::test_book_name_edge_cases 
+tests/test_commentary_system.py::TestCommentarySystem::test_modal_keyboard_navigation 
+[gw4] [ 60%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_circle_fill_states 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_search_functionality_exists 
+[gw6] [ 61%] FAILED tests/test_scripture_widget.py::test_mobile_tap_behavior 
+tests/test_scripture_widget.py::test_scripture_widget_styles 
+[gw4] [ 62%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_search_functionality_exists 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_zoom_controls_exist 
+[gw4] [ 63%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_zoom_controls_exist 
+tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_data_file_accessible 
+[gw0] [ 64%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_no_duplicate_chapter_reader_buttons[firefox] 
+[gw4] [ 65%] PASSED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_data_file_accessible 
+tests/test_regression_fixes.py::TestRegressionFixes::test_youtube_videos_not_blocked[chrome] 
+[gw0] [ 66%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_youtube_videos_not_blocked[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_youtube_videos_not_blocked[firefox] 
+[gw2] [ 67%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_entity_navigation_breadcrumbs 
+tests/test_entities_system.py::TestEntitiesSystem::test_entity_error_handling 
+[gw0] [ 68%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_youtube_videos_not_blocked[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_biblegateway_integration_working[chrome] 
+[gw2] [ 69%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_entity_error_handling 
+tests/test_entities_system.py::TestEntitiesSystem::test_entity_data_integrity 
+[gw5] [ 70%] PASSED tests/test_commentary_system.py::TestCommentarySystem::test_modal_keyboard_navigation 
+tests/test_commentary_system.py::TestCommentarySystem::test_chapter_reader_integration 
+[gw6] [ 71%] FAILED tests/test_scripture_widget.py::test_scripture_widget_styles 
+tests/test_scripture_widget.py::test_translation_selector_functionality 
+[gw2] [ 72%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_entity_data_integrity 
+tests/test_entities_system.py::TestEntitiesSystem::test_parables_page_loads 
+[gw0] [ 73%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_biblegateway_integration_working[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_biblegateway_integration_working[firefox] 
+[gw2] [ 74%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_parables_page_loads 
+tests/test_entities_system.py::TestEntitiesSystem::test_people_groups_page_loads 
+[gw2] [ 75%] PASSED tests/test_entities_system.py::TestEntitiesSystem::test_people_groups_page_loads 
+[gw0] [ 76%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_biblegateway_integration_working[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_javascript_modules_loading_correctly[chrome] 
+[gw0] [ 77%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_javascript_modules_loading_correctly[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_javascript_modules_loading_correctly[firefox] 
+[gw5] [ 78%] PASSED tests/test_commentary_system.py::TestCommentarySystem::test_chapter_reader_integration 
+tests/test_commentary_system.py::TestCommentarySystem::test_mobile_responsiveness 
+[gw6] [ 79%] FAILED tests/test_scripture_widget.py::test_translation_selector_functionality 
+tests/test_scripture_widget.py::test_scripture_widget_error_handling 
+[gw0] [ 80%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_javascript_modules_loading_correctly[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_critical_css_loading[chrome] 
+[gw5] [ 80%] PASSED tests/test_commentary_system.py::TestCommentarySystem::test_mobile_responsiveness 
+tests/test_commentary_system.py::TestCommentarySystem::test_all_books_have_commentary_buttons 
+[gw0] [ 81%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_critical_css_loading[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_critical_css_loading[firefox] 
+[gw0] [ 82%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_critical_css_loading[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_service_worker_registration[chrome] 
+[gw0] [ 83%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_service_worker_registration[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_service_worker_registration[firefox] 
+[gw6] [ 84%] FAILED tests/test_scripture_widget.py::test_scripture_widget_error_handling 
+tests/test_scripture_widget.py::test_scripture_macros_rendering 
+[gw6] [ 85%] PASSED tests/test_scripture_widget.py::test_scripture_macros_rendering 
+tests/test_scripture_widget.py::test_scripture_widget_accessibility 
+[gw5] [ 86%] PASSED tests/test_commentary_system.py::TestCommentarySystem::test_all_books_have_commentary_buttons 
+[gw0] [ 87%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_service_worker_registration[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_offline_functionality[chrome] 
+[gw0] [ 88%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_offline_functionality[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_offline_functionality[firefox] 
+[gw6] [ 89%] FAILED tests/test_scripture_widget.py::test_scripture_widget_accessibility 
+[gw0] [ 90%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_offline_functionality[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_search_functionality_basic[chrome] 
+[gw0] [ 91%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_search_functionality_basic[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_search_functionality_basic[firefox] 
+[gw0] [ 92%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_search_functionality_basic[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_design_basics[chrome] 
+[gw0] [ 93%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_design_basics[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_design_basics[firefox] 
+[gw0] [ 94%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_design_basics[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_table_design[chrome] 
+[gw0] [ 95%] FAILED tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_table_design[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_table_design[firefox] 
+[gw0] [ 96%] FAILED tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_table_design[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_accessibility_aria_labels[chrome] 
+[gw0] [ 97%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_accessibility_aria_labels[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_accessibility_aria_labels[firefox] 
+[gw0] [ 98%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_accessibility_aria_labels[firefox] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_key_figures_position[chrome] 
+[gw0] [ 99%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_key_figures_position[chrome] 
+tests/test_regression_fixes.py::TestRegressionFixes::test_key_figures_position[firefox] 
+[gw0] [100%] PASSED tests/test_regression_fixes.py::TestRegressionFixes::test_key_figures_position[firefox] 
+
+==================================== ERRORS ====================================
+__________ ERROR at setup of TestIOSSafari.test_mobile_homepage_loads __________
+[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'
+_________ ERROR at setup of TestIOSSafari.test_mobile_navigation_menu __________
+[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'
+___________ ERROR at setup of TestIOSSafari.test_mobile_theme_toggle ___________
+[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'
+_________ ERROR at setup of TestIOSSafari.test_mobile_character_search _________
+[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'
+__________ ERROR at setup of TestIOSSafari.test_mobile_chapter_reader __________
+[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'
+_________ ERROR at setup of TestIOSSafari.test_mobile_scripture_widget _________
+[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'
+________ ERROR at setup of TestIOSSafari.test_mobile_responsive_design _________
+[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'
+________ ERROR at setup of TestIOSSafari.test_mobile_performance_basic _________
+[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'
+_________ ERROR at setup of TestIOSSafari.test_mobile_book_navigation __________
+[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'
+_______ ERROR at setup of TestIOSSafari.test_mobile_accessibility_basics _______
+[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'
+_____ ERROR at setup of TestIOSSpecific.test_ios_safari_viewport_behavior ______
+[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'
+___________ ERROR at setup of TestIOSSpecific.test_ios_touch_events ____________
+[gw3] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'
+=================================== FAILURES ===================================
+____________________ TestBibleExplorer.test_homepage_loads _____________________
+[gw1] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/test_bible_explorer.py:82: in test_homepage_loads
+    assert len(critical_errors) == 0, f"Critical JavaScript errors found: {critical_errors}"
+E   AssertionError: Critical JavaScript errors found: [{'level': 'SEVERE', 'message': 'network - A bad HTTP response code (404) was received when fetching the script.', 'source': 'network', 'timestamp': 1769312902881}]
+E   assert 1 == 0
+E    +  where 1 = len([{'level': 'SEVERE', 'message': 'network - A bad HTTP response code (404) was received when fetching the script.', 'source': 'network', 'timestamp': 1769312902881}])
+_________________ TestBibleExplorer.test_search_functionality __________________
+[gw1] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/test_bible_explorer.py:187: in test_search_functionality
+    assert search_input.is_displayed()
+E   assert False
+E    +  where False = is_displayed()
+E    +    where is_displayed = <selenium.webdriver.remote.webelement.WebElement (session="9dcf3d325a3181b0ba05ccf83eb5fad4", element="f.A0AD9E0D6843878BE4E0C355FA2B9045.d.284D6FB04991B717044946594AC39C80.e.124")>.is_displayed
+_________________________ test_scripture_widget_loads __________________________
+[gw6] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/test_scripture_widget.py:42: in test_scripture_widget_loads
+    ensure_scripture_widget_loaded(chrome_driver)
+tests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded
+    WebDriverWait(driver, 10).until(
+test-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message:
+______________________ test_scripture_references_enhanced ______________________
+[gw6] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/test_scripture_widget.py:54: in test_scripture_references_enhanced
+    ensure_scripture_widget_loaded(chrome_driver)
+tests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded
+    WebDriverWait(driver, 10).until(
+test-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message:
+_________________________ test_desktop_hover_behavior __________________________
+[gw6] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/test_scripture_widget.py:78: in test_desktop_hover_behavior
+    ensure_scripture_widget_loaded(chrome_driver)
+tests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded
+    WebDriverWait(driver, 10).until(
+test-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message:
+___________ TestGenealogyVisualization.test_royal_line_cluster_loads ___________
+[gw4] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/test_genealogy_visualization.py:168: in test_royal_line_cluster_loads
+    select.select_by_value('cluster:royal_line')
+test-env/lib/python3.14/site-packages/selenium/webdriver/support/select.py:85: in select_by_value
+    raise NoSuchElementException(f"Cannot locate option with value: {value}")
+E   selenium.common.exceptions.NoSuchElementException: Message: Cannot locate option with value: cluster:royal_line; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+__________ TestGenealogyVisualization.test_cluster_has_expected_nodes __________
+[gw4] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/test_genealogy_visualization.py:187: in test_cluster_has_expected_nodes
+    select.select_by_value('cluster:royal_line')
+test-env/lib/python3.14/site-packages/selenium/webdriver/support/select.py:85: in select_by_value
+    raise NoSuchElementException(f"Cannot locate option with value: {value}")
+E   selenium.common.exceptions.NoSuchElementException: Message: Cannot locate option with value: cluster:royal_line; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+___________________________ test_mobile_tap_behavior ___________________________
+[gw6] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/test_scripture_widget.py:108: in test_mobile_tap_behavior
+    ensure_scripture_widget_loaded(chrome_driver)
+tests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded
+    WebDriverWait(driver, 10).until(
+test-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message:
+_________________________ test_scripture_widget_styles _________________________
+[gw6] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/test_scripture_widget.py:136: in test_scripture_widget_styles
+    ensure_scripture_widget_loaded(chrome_driver)
+tests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded
+    WebDriverWait(driver, 10).until(
+test-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message:
+___________________ test_translation_selector_functionality ____________________
+[gw6] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/test_scripture_widget.py:169: in test_translation_selector_functionality
+    ensure_scripture_widget_loaded(chrome_driver)
+tests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded
+    WebDriverWait(driver, 10).until(
+test-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message:
+_____________________ test_scripture_widget_error_handling _____________________
+[gw6] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/test_scripture_widget.py:198: in test_scripture_widget_error_handling
+    ensure_scripture_widget_loaded(chrome_driver)
+tests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded
+    WebDriverWait(driver, 10).until(
+test-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message:
+_____________________ test_scripture_widget_accessibility ______________________
+[gw6] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/test_scripture_widget.py:238: in test_scripture_widget_accessibility
+    ensure_scripture_widget_loaded(chrome_driver)
+tests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded
+    WebDriverWait(driver, 10).until(
+test-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message:
+___________ TestRegressionFixes.test_responsive_table_design[chrome] ___________
+[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/test_regression_fixes.py:515: in test_responsive_table_design
+    assert wrapper_scroll, "Table should overflow when wrapper is visible"
+E   AssertionError: Table should overflow when wrapper is visible
+E   assert False
+----------------------------- Captured stdout call -----------------------------
+
+ Testing responsive table design...
+Table wrapper found: True
+Table wrapper overflow-x: visible
+__________ TestRegressionFixes.test_responsive_table_design[firefox] ___________
+[gw0] darwin -- Python 3.14.2 /Users/andrewhall/repo/explore-scripture/test-env/bin/python
+tests/test_regression_fixes.py:515: in test_responsive_table_design
+    assert wrapper_scroll, "Table should overflow when wrapper is visible"
+E   AssertionError: Table should overflow when wrapper is visible
+E   assert False
+----------------------------- Captured stdout call -----------------------------
+
+ Testing responsive table design...
+Table wrapper found: True
+Table wrapper overflow-x: visible
+- generated xml file: /Users/andrewhall/repo/explore-scripture/tests/reports/selenium-20260124-224815/junit.xml -
+- Generated html report: file:///Users/andrewhall/repo/explore-scripture/tests/reports/selenium-20260124-224815/report.html -
+=========================== short test summary info ============================
+FAILED tests/test_bible_explorer.py::TestBibleExplorer::test_homepage_loads - AssertionError: Critical JavaScript errors found: [{'level': 'SEVERE', 'message': 'network - A bad HTTP response code (404) was received when fetching the script.', 'source': 'network', 'timestamp': 1769312902881}]
+assert 1 == 0
+ +  where 1 = len([{'level': 'SEVERE', 'message': 'network - A bad HTTP response code (404) was received when fetching the script.', 'source': 'network', 'timestamp': 1769312902881}])
+FAILED tests/test_bible_explorer.py::TestBibleExplorer::test_search_functionality - assert False
+ +  where False = is_displayed()
+ +    where is_displayed = <selenium.webdriver.remote.webelement.WebElement (session="9dcf3d325a3181b0ba05ccf83eb5fad4", element="f.A0AD9E0D6843878BE4E0C355FA2B9045.d.284D6FB04991B717044946594AC39C80.e.124")>.is_displayed
+FAILED tests/test_scripture_widget.py::test_scripture_widget_loads - selenium.common.exceptions.TimeoutException: Message:
+FAILED tests/test_scripture_widget.py::test_scripture_references_enhanced - selenium.common.exceptions.TimeoutException: Message:
+FAILED tests/test_scripture_widget.py::test_desktop_hover_behavior - selenium.common.exceptions.TimeoutException: Message:
+FAILED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_royal_line_cluster_loads - selenium.common.exceptions.NoSuchElementException: Message: Cannot locate option with value: cluster:royal_line; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+FAILED tests/test_genealogy_visualization.py::TestGenealogyVisualization::test_cluster_has_expected_nodes - selenium.common.exceptions.NoSuchElementException: Message: Cannot locate option with value: cluster:royal_line; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+FAILED tests/test_scripture_widget.py::test_mobile_tap_behavior - selenium.common.exceptions.TimeoutException: Message:
+FAILED tests/test_scripture_widget.py::test_scripture_widget_styles - selenium.common.exceptions.TimeoutException: Message:
+FAILED tests/test_scripture_widget.py::test_translation_selector_functionality - selenium.common.exceptions.TimeoutException: Message:
+FAILED tests/test_scripture_widget.py::test_scripture_widget_error_handling - selenium.common.exceptions.TimeoutException: Message:
+FAILED tests/test_scripture_widget.py::test_scripture_widget_accessibility - selenium.common.exceptions.TimeoutException: Message:
+FAILED tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_table_design[chrome] - AssertionError: Table should overflow when wrapper is visible
+assert False
+FAILED tests/test_regression_fixes.py::TestRegressionFixes::test_responsive_table_design[firefox] - AssertionError: Table should overflow when wrapper is visible
+assert False
+ERROR tests/test_ios_safari.py::TestIOSSafari::test_mobile_homepage_loads - AttributeError: 'int' object has no attribute 'total_seconds'
+ERROR tests/test_ios_safari.py::TestIOSSafari::test_mobile_navigation_menu - AttributeError: 'int' object has no attribute 'total_seconds'
+ERROR tests/test_ios_safari.py::TestIOSSafari::test_mobile_theme_toggle - AttributeError: 'int' object has no attribute 'total_seconds'
+ERROR tests/test_ios_safari.py::TestIOSSafari::test_mobile_character_search - AttributeError: 'int' object has no attribute 'total_seconds'
+ERROR tests/test_ios_safari.py::TestIOSSafari::test_mobile_chapter_reader - AttributeError: 'int' object has no attribute 'total_seconds'
+ERROR tests/test_ios_safari.py::TestIOSSafari::test_mobile_scripture_widget - AttributeError: 'int' object has no attribute 'total_seconds'
+ERROR tests/test_ios_safari.py::TestIOSSafari::test_mobile_responsive_design - AttributeError: 'int' object has no attribute 'total_seconds'
+ERROR tests/test_ios_safari.py::TestIOSSafari::test_mobile_performance_basic - AttributeError: 'int' object has no attribute 'total_seconds'
+ERROR tests/test_ios_safari.py::TestIOSSafari::test_mobile_book_navigation - AttributeError: 'int' object has no attribute 'total_seconds'
+ERROR tests/test_ios_safari.py::TestIOSSafari::test_mobile_accessibility_basics - AttributeError: 'int' object has no attribute 'total_seconds'
+ERROR tests/test_ios_safari.py::TestIOSSpecific::test_ios_safari_viewport_behavior - AttributeError: 'int' object has no attribute 'total_seconds'
+ERROR tests/test_ios_safari.py::TestIOSSpecific::test_ios_touch_events - AttributeError: 'int' object has no attribute 'total_seconds'
+======= 14 failed, 78 passed, 1 skipped, 12 errors in 183.06s (0:03:03) ========
+Loaded test configuration from: /Users/andrewhall/repo/explore-scripture/.env.test.local

@@ -17,6 +17,20 @@ import re
 class TestCommentarySystem:
     """Test suite for the Commentary Reader functionality."""
 
+    def wait_for_commentary_ready(self, driver, timeout=15):
+        driver.execute_script("""
+          if (window.bundleOptimizer) {
+            window.bundleOptimizer.handleTrigger('book-page-visit');
+            window.bundleOptimizer.handleTrigger('commentary-btn-visible');
+          }
+        """)
+        WebDriverWait(driver, timeout).until(
+            lambda d: d.execute_script("return typeof window.commentaryReaderInstance !== 'undefined'")
+        )
+        WebDriverWait(driver, timeout).until(
+            lambda d: len(d.find_elements(By.CSS_SELECTOR, ".commentary-reader-button")) > 0
+        )
+
     @pytest.fixture(autouse=True)
     def setup(self):
         """Set up test environment."""
@@ -115,10 +129,8 @@ class TestCommentarySystem:
         for book in self.test_books:
             chrome_driver.get(f"{self.base_url}/books/{book['slug']}/")
             
-            # Wait for page to load
-            WebDriverWait(chrome_driver, 10).until(
-                EC.presence_of_element_located((By.CLASS_NAME, "chapter-actions"))
-            )
+            # Wait for commentary buttons to be injected
+            self.wait_for_commentary_ready(chrome_driver)
             
             # Find all chapter action containers
             chapter_actions = chrome_driver.find_elements(By.CLASS_NAME, "chapter-actions")
@@ -139,13 +151,12 @@ class TestCommentarySystem:
         chrome_driver.get(f"{self.base_url}/books/genesis/")
         
         # Wait for commentary system to load
-        WebDriverWait(chrome_driver, 10).until(
-            EC.element_to_be_clickable((By.CLASS_NAME, "commentary-reader-button"))
-        )
+        self.wait_for_commentary_ready(chrome_driver)
         
         # Click first Read Commentary button
         commentary_btn = chrome_driver.find_element(By.CLASS_NAME, "commentary-reader-button")
-        commentary_btn.click()
+        chrome_driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", commentary_btn)
+        chrome_driver.execute_script("arguments[0].click();", commentary_btn)
         
         # Wait for modal to appear
         modal = WebDriverWait(chrome_driver, 5).until(
@@ -166,12 +177,11 @@ class TestCommentarySystem:
         chrome_driver.get(f"{self.base_url}/books/genesis/")
         
         # Open commentary modal
-        WebDriverWait(chrome_driver, 10).until(
-            EC.element_to_be_clickable((By.CLASS_NAME, "commentary-reader-button"))
-        )
+        self.wait_for_commentary_ready(chrome_driver)
         
         commentary_btn = chrome_driver.find_element(By.CLASS_NAME, "commentary-reader-button")
-        commentary_btn.click()
+        chrome_driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", commentary_btn)
+        chrome_driver.execute_script("arguments[0].click();", commentary_btn)
         
         # Wait for modal and get source selector
         modal = WebDriverWait(chrome_driver, 5).until(
@@ -202,12 +212,11 @@ class TestCommentarySystem:
         chrome_driver.get(f"{self.base_url}/books/genesis/")
         
         # Open commentary modal
-        WebDriverWait(chrome_driver, 10).until(
-            EC.element_to_be_clickable((By.CLASS_NAME, "commentary-reader-button"))
-        )
+        self.wait_for_commentary_ready(chrome_driver)
         
         commentary_btn = chrome_driver.find_element(By.CLASS_NAME, "commentary-reader-button")
-        commentary_btn.click()
+        chrome_driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", commentary_btn)
+        chrome_driver.execute_script("arguments[0].click();", commentary_btn)
         
         modal = WebDriverWait(chrome_driver, 5).until(
             EC.visibility_of_element_located((By.CLASS_NAME, "commentary-reader-modal"))
@@ -278,12 +287,11 @@ class TestCommentarySystem:
             chrome_driver.get(f"{self.base_url}/books/{book['slug']}/")
             
             # Open commentary modal
-            WebDriverWait(chrome_driver, 10).until(
-                EC.element_to_be_clickable((By.CLASS_NAME, "commentary-reader-button"))
-            )
+            self.wait_for_commentary_ready(chrome_driver)
             
             commentary_btn = chrome_driver.find_element(By.CLASS_NAME, "commentary-reader-button")
-            commentary_btn.click()
+            chrome_driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", commentary_btn)
+            chrome_driver.execute_script("arguments[0].click();", commentary_btn)
             
             modal = WebDriverWait(chrome_driver, 5).until(
                 EC.visibility_of_element_located((By.CLASS_NAME, "commentary-reader-modal"))
@@ -308,12 +316,11 @@ class TestCommentarySystem:
         chrome_driver.get(f"{self.base_url}/books/genesis/")
         
         # Open modal
-        WebDriverWait(chrome_driver, 10).until(
-            EC.element_to_be_clickable((By.CLASS_NAME, "commentary-reader-button"))
-        )
+        self.wait_for_commentary_ready(chrome_driver)
         
         commentary_btn = chrome_driver.find_element(By.CLASS_NAME, "commentary-reader-button")
-        commentary_btn.click()
+        chrome_driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", commentary_btn)
+        chrome_driver.execute_script("arguments[0].click();", commentary_btn)
         
         modal = WebDriverWait(chrome_driver, 5).until(
             EC.visibility_of_element_located((By.CLASS_NAME, "commentary-reader-modal"))
@@ -336,15 +343,14 @@ class TestCommentarySystem:
         chrome_driver.get(f"{self.base_url}/books/genesis/")
         
         # Wait for buttons to load
-        WebDriverWait(chrome_driver, 10).until(
-            EC.presence_of_element_located((By.CLASS_NAME, "chapter-actions"))
-        )
+        self.wait_for_commentary_ready(chrome_driver)
         
         chapter_actions = chrome_driver.find_element(By.CLASS_NAME, "chapter-actions")
         
         # Test Read Chapter button
         read_chapter_btn = chapter_actions.find_element(By.CLASS_NAME, "chapter-reader-button")
-        read_chapter_btn.click()
+        chrome_driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", read_chapter_btn)
+        chrome_driver.execute_script("arguments[0].click();", read_chapter_btn)
         
         # Chapter reader modal should open
         chapter_modal = WebDriverWait(chrome_driver, 5).until(
@@ -363,7 +369,8 @@ class TestCommentarySystem:
         
         # Test Read Commentary button
         read_commentary_btn = chapter_actions.find_element(By.CLASS_NAME, "commentary-reader-button")
-        read_commentary_btn.click()
+        chrome_driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", read_commentary_btn)
+        chrome_driver.execute_script("arguments[0].click();", read_commentary_btn)
         
         # Commentary modal should open
         commentary_modal = WebDriverWait(chrome_driver, 5).until(
@@ -379,9 +386,7 @@ class TestCommentarySystem:
         chrome_driver.get(f"{self.base_url}/books/genesis/")
         
         # Wait for mobile layout
-        WebDriverWait(chrome_driver, 10).until(
-            EC.presence_of_element_located((By.CLASS_NAME, "chapter-actions"))
-        )
+        self.wait_for_commentary_ready(chrome_driver)
         
         # Buttons should stack vertically on mobile
         chapter_actions = chrome_driver.find_element(By.CLASS_NAME, "chapter-actions")
@@ -394,7 +399,8 @@ class TestCommentarySystem:
         assert read_commentary_btn.is_displayed(), "Read Commentary button not visible on mobile"
         
         # Test commentary modal on mobile
-        read_commentary_btn.click()
+        chrome_driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", read_commentary_btn)
+        chrome_driver.execute_script("arguments[0].click();", read_commentary_btn)
         
         modal = WebDriverWait(chrome_driver, 5).until(
             EC.visibility_of_element_located((By.CLASS_NAME, "commentary-reader-modal"))
@@ -426,9 +432,7 @@ class TestCommentarySystem:
                 chrome_driver.get(f"{self.base_url}/books/{book_slug}/")
                 
                 # Wait for page to load
-                WebDriverWait(chrome_driver, 10).until(
-                    EC.presence_of_element_located((By.CLASS_NAME, "chapter-actions"))
-                )
+                self.wait_for_commentary_ready(chrome_driver)
                 
                 # Check for both buttons
                 chapter_actions = chrome_driver.find_elements(By.CLASS_NAME, "chapter-actions")

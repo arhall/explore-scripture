@@ -630,7 +630,6 @@ async function processEntities() {
     // Write global entity pages with batch processing
     console.log('  Writing entity pages...');
     const entitiesDir = path.join(OUTPUT_DIR, 'entities');
-    let entityCount = 0;
     const entityWrites = [];
 
     for (const [id, entity] of globalEntities) {
@@ -638,7 +637,6 @@ async function processEntities() {
         id: id,
         data: JSON.stringify(entity, null, 0),
       });
-      // entityCount++; // Unused counter - count is entityWrites.length
     }
 
     // Process entity writes in batches

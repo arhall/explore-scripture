@@ -1,0 +1,2104 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="88" failures="0" skipped="12" tests="105" time="37.149" timestamp="2026-01-25T01:29:35.619159-05:00" hostname="Andrews-MacBook-Pro.local"><testcase classname="tests.test_env_config" name="test_environment_variables_loaded" time="0.003" /><testcase classname="tests.test_env_config" name="test_base_url_selection" time="0.000" /><testcase classname="tests.test_env_config" name="test_test_urls_generated" time="0.000" /><testcase classname="tests.test_env_config" name="test_browser_configuration" time="0.000" /><testcase classname="tests.test_env_config" name="test_timeout_configuration" time="0.000" /><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_commentary_buttons_exist" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_scripture_widget" name="test_scripture_widget_loads" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entities_page_loads" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_homepage_loads" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_bible_explorer.py:36: in driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_genealogy_page_loads" time="0.003"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_genealogy_visualization.py:34: in driver
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_theme_toggle_functionality[chrome]" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:36: in browser
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_navigation_elements" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_bible_explorer.py:36: in driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_scripture_widget" name="test_scripture_references_enhanced" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_commentary_modal_opens" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_search_functionality" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_cluster_dropdown_exists" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_genealogy_visualization.py:34: in driver
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_theme_toggle_functionality[firefox]" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:40: in browser
+    driver = webdriver.Firefox(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/webdriver.py:51: in __init__
+    self.service = service if service else Service()
+                                           ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/service.py:61: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_hero_section_content" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_bible_explorer.py:36: in driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_commentary_source_switching" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_individual_entity_page" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_chapter_reader_buttons_present[chrome]" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:36: in browser
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_royal_line_cluster_exists" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_genealogy_visualization.py:34: in driver
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_scripture_widget" name="test_desktop_hover_behavior" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_theme_toggle" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_bible_explorer.py:36: in driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_messianic_line_checkbox" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_genealogy_visualization.py:34: in driver
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_profile_content_loads" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_iframe_vs_direct_access_handling" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_search_functionality" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_bible_explorer.py:36: in driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_scripture_widget" name="test_mobile_tap_behavior" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_book_name_edge_cases" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_chapter_reader_buttons_present[firefox]" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:40: in browser
+    driver = webdriver.Firefox(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/webdriver.py:51: in __init__
+    self.service = service if service else Service()
+                                           ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/service.py:61: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_tree_nodes_render" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_genealogy_visualization.py:34: in driver
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_cross_references" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_scripture_widget" name="test_scripture_widget_styles" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_font_controls" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_bible_explorer.py:36: in driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_scripture_widget" name="test_translation_selector_functionality" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_modal_keyboard_navigation" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_no_duplicate_chapter_reader_buttons[chrome]" time="0.002"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:36: in browser
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_messianic_line_highlighting" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_genealogy_visualization.py:34: in driver
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_book_filtering" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_high_contrast_mode" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_bible_explorer.py:36: in driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_no_duplicate_chapter_reader_buttons[firefox]" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:40: in browser
+    driver = webdriver.Firefox(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/webdriver.py:51: in __init__
+    self.service = service if service else Service()
+                                           ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/service.py:61: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_tooltip_appears_on_hover" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_genealogy_visualization.py:34: in driver
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_scripture_widget" name="test_scripture_widget_error_handling" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_responsive_layout_mobile" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_bible_explorer.py:36: in driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entities_filter_character_study_and_testament" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_royal_line_cluster_loads" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_genealogy_visualization.py:34: in driver
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_scripture_widget" name="test_scripture_macros_rendering" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_youtube_videos_not_blocked[chrome]" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:36: in browser
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_accessibility_features" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_bible_explorer.py:36: in driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_responsive_design" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_youtube_videos_not_blocked[firefox]" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:40: in browser
+    driver = webdriver.Firefox(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/webdriver.py:51: in __init__
+    self.service = service if service else Service()
+                                           ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/service.py:61: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_chapter_reader_integration" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_cluster_has_expected_nodes" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_genealogy_visualization.py:34: in driver
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_scripture_widget" name="test_scripture_widget_accessibility" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_page_performance" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_bible_explorer.py:36: in driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_navigation_breadcrumbs" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_circle_fill_states" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_genealogy_visualization.py:34: in driver
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_character_page_navigation" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_bible_explorer.py:36: in driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_error_handling" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_biblegateway_integration_working[chrome]" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:36: in browser
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_search_functionality_exists" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_genealogy_visualization.py:34: in driver
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_data_integrity" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_css_loading_and_styling" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_bible_explorer.py:36: in driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_biblegateway_integration_working[firefox]" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:40: in browser
+    driver = webdriver.Firefox(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/webdriver.py:51: in __init__
+    self.service = service if service else Service()
+                                           ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/service.py:61: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_zoom_controls_exist" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_genealogy_visualization.py:34: in driver
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_mobile_responsiveness" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_javascript_execution" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_bible_explorer.py:36: in driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_parables_page_loads" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_data_file_accessible" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_genealogy_visualization.py:34: in driver
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_people_groups_page_loads" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_javascript_modules_loading_correctly[chrome]" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:36: in browser
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_all_books_have_commentary_buttons" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/conftest.py:117: in chrome_driver
+    driver = webdriver.Chrome(options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_javascript_modules_loading_correctly[firefox]" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:40: in browser
+    driver = webdriver.Firefox(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/webdriver.py:51: in __init__
+    self.service = service if service else Service()
+                                           ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/service.py:61: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_critical_css_loading[chrome]" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:36: in browser
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_critical_css_loading[firefox]" time="0.002"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:40: in browser
+    driver = webdriver.Firefox(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/webdriver.py:51: in __init__
+    self.service = service if service else Service()
+                                           ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/service.py:61: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_service_worker_registration[chrome]" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:36: in browser
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_service_worker_registration[firefox]" time="0.002"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:40: in browser
+    driver = webdriver.Firefox(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/webdriver.py:51: in __init__
+    self.service = service if service else Service()
+                                           ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/service.py:61: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_homepage_loads" time="0.636"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError(&quot;HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted&quot;))">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:27: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted"))</skipped></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_offline_functionality[chrome]" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:36: in browser
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_offline_functionality[firefox]" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:40: in browser
+    driver = webdriver.Firefox(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/webdriver.py:51: in __init__
+    self.service = service if service else Service()
+                                           ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/service.py:61: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_search_functionality_basic[chrome]" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:36: in browser
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_search_functionality_basic[firefox]" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:40: in browser
+    driver = webdriver.Firefox(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/webdriver.py:51: in __init__
+    self.service = service if service else Service()
+                                           ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/service.py:61: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_responsive_design_basics[chrome]" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:36: in browser
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_responsive_design_basics[firefox]" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:40: in browser
+    driver = webdriver.Firefox(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/webdriver.py:51: in __init__
+    self.service = service if service else Service()
+                                           ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/service.py:61: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_responsive_table_design[chrome]" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:36: in browser
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_responsive_table_design[firefox]" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:40: in browser
+    driver = webdriver.Firefox(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/webdriver.py:51: in __init__
+    self.service = service if service else Service()
+                                           ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/service.py:61: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_accessibility_aria_labels[chrome]" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:36: in browser
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_navigation_menu" time="0.165"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError(&quot;HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted&quot;))">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:45: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted"))</skipped></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_accessibility_aria_labels[firefox]" time="0.001"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:40: in browser
+    driver = webdriver.Firefox(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/webdriver.py:51: in __init__
+    self.service = service if service else Service()
+                                           ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/service.py:61: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_key_figures_position[chrome]" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:36: in browser
+    driver = webdriver.Chrome(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py:42: in __init__
+    service = service if service else Service()
+                                      ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/chrome/service.py:51: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/chromium/service.py:64: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_key_figures_position[firefox]" time="0.000"><error message="failed on setup with &quot;RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)&quot;">test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:39: in free_port
+    free_socket.bind(("127.0.0.1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:46: in free_port
+    free_socket.bind(("::1", 0))
+E   PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+tests/test_regression_fixes.py:40: in browser
+    driver = webdriver.Firefox(options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/webdriver.py:51: in __init__
+    self.service = service if service else Service()
+                                           ^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/firefox/service.py:61: in __init__
+    super().__init__(
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/service.py:71: in __init__
+    self.port = port or utils.free_port()
+                        ^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/selenium/webdriver/common/utils.py:50: in free_port
+    raise RuntimeError("Can't find free port (Unable to bind to IPv4 or IPv6)")
+E   RuntimeError: Can't find free port (Unable to bind to IPv4 or IPv6)</error></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_theme_toggle" time="0.132"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError(&quot;HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted&quot;))">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:76: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted"))</skipped></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_character_search" time="0.104"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError(&quot;HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted&quot;))">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:116: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted"))</skipped></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_chapter_reader" time="0.105"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError(&quot;HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted&quot;))">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:154: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted"))</skipped></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_scripture_widget" time="0.108"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError(&quot;HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted&quot;))">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:225: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted"))</skipped></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_responsive_design" time="0.105"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError(&quot;HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted&quot;))">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:261: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted"))</skipped></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_performance_basic" time="0.103"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError(&quot;HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted&quot;))">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:291: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted"))</skipped></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_book_navigation" time="0.160"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError(&quot;HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted&quot;))">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:330: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted"))</skipped></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_accessibility_basics" time="0.107"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError(&quot;HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted&quot;))">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:361: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted"))</skipped></testcase><testcase classname="tests.test_ios_safari.TestIOSSpecific" name="test_ios_safari_viewport_behavior" time="0.105"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError(&quot;HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted&quot;))">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:396: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted"))</skipped></testcase><testcase classname="tests.test_ios_safari.TestIOSSpecific" name="test_ios_touch_events" time="0.101"><skipped type="pytest.skip" message="iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError(&quot;HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted&quot;))">/Users/andrewhall/repo/explore-scripture/tests/test_ios_safari.py:418: iOS Simulator not available. Ensure Appium server is running and a simulator/device is booted. Details: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='localhost', port=4723): Failed to establish a new connection: [Errno 1] Operation not permitted"))</skipped></testcase><testcase classname="tests.test_e2e_ui.TestE2EUI" name="test_global_search_direct_reference" time="35.335"><error message="failed on setup with &quot;Failed: Development server failed to start&quot;">tests/conftest.py:90: in server
+    pytest.fail("Development server failed to start")
+E   Failed: Development server failed to start</error></testcase><testcase classname="tests.test_e2e_ui.TestE2EUI" name="test_sections_browse_cards" time="0.000"><error message="failed on setup with &quot;Failed: Development server failed to start&quot;">tests/conftest.py:90: in server
+    pytest.fail("Development server failed to start")
+E   Failed: Development server failed to start</error></testcase><testcase classname="tests.test_e2e_ui.TestE2EUI" name="test_quick_access_panel_toggle" time="0.000"><error message="failed on setup with &quot;Failed: Development server failed to start&quot;">tests/conftest.py:90: in server
+    pytest.fail("Development server failed to start")
+E   Failed: Development server failed to start</error></testcase></testsuite></testsuites>

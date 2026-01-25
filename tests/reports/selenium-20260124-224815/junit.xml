@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="12" failures="14" skipped="1" tests="105" time="183.055" timestamp="2026-01-24T22:48:15.733917-05:00" hostname="Andrews-MacBook-Pro.local"><testcase classname="tests.test_env_config" name="test_environment_variables_loaded" time="0.000" /><testcase classname="tests.test_env_config" name="test_base_url_selection" time="0.000" /><testcase classname="tests.test_env_config" name="test_test_urls_generated" time="0.000" /><testcase classname="tests.test_env_config" name="test_browser_configuration" time="0.000" /><testcase classname="tests.test_env_config" name="test_timeout_configuration" time="0.000" /><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_homepage_loads" time="0.001"><error message="failed on setup with &quot;AttributeError: 'int' object has no attribute 'total_seconds'&quot;">tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'</error></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_navigation_menu" time="0.000"><error message="failed on setup with &quot;AttributeError: 'int' object has no attribute 'total_seconds'&quot;">tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'</error></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_theme_toggle" time="0.001"><error message="failed on setup with &quot;AttributeError: 'int' object has no attribute 'total_seconds'&quot;">tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'</error></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_character_search" time="0.000"><error message="failed on setup with &quot;AttributeError: 'int' object has no attribute 'total_seconds'&quot;">tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'</error></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_chapter_reader" time="0.000"><error message="failed on setup with &quot;AttributeError: 'int' object has no attribute 'total_seconds'&quot;">tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'</error></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_scripture_widget" time="0.000"><error message="failed on setup with &quot;AttributeError: 'int' object has no attribute 'total_seconds'&quot;">tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'</error></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_responsive_design" time="0.000"><error message="failed on setup with &quot;AttributeError: 'int' object has no attribute 'total_seconds'&quot;">tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'</error></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_performance_basic" time="0.000"><error message="failed on setup with &quot;AttributeError: 'int' object has no attribute 'total_seconds'&quot;">tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'</error></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_book_navigation" time="0.000"><error message="failed on setup with &quot;AttributeError: 'int' object has no attribute 'total_seconds'&quot;">tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'</error></testcase><testcase classname="tests.test_ios_safari.TestIOSSafari" name="test_mobile_accessibility_basics" time="0.000"><error message="failed on setup with &quot;AttributeError: 'int' object has no attribute 'total_seconds'&quot;">tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'</error></testcase><testcase classname="tests.test_ios_safari.TestIOSSpecific" name="test_ios_safari_viewport_behavior" time="0.000"><error message="failed on setup with &quot;AttributeError: 'int' object has no attribute 'total_seconds'&quot;">tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'</error></testcase><testcase classname="tests.test_ios_safari.TestIOSSpecific" name="test_ios_touch_events" time="0.000"><error message="failed on setup with &quot;AttributeError: 'int' object has no attribute 'total_seconds'&quot;">tests/conftest.py:151: in ios_simulator_driver
+    options = _build_ios_options()
+              ^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:135: in _build_ios_options
+    options.command_timeouts = {"implicit": int(os.getenv("IOS_IMPLICIT_TIMEOUT", "30"))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+test-env/lib/python3.14/site-packages/appium/options/ios/xcuitest/other/command_timeouts_option.py:53: in command_timeouts
+    self.set_capability(COMMAND_TIMEOUTS, {k: int(v.total_seconds() * 1000) for k, v in value.items()})
+                                                  ^^^^^^^^^^^^^^^
+E   AttributeError: 'int' object has no attribute 'total_seconds'</error></testcase><testcase classname="tests.test_scripture_widget" name="test_scripture_widget_loads" time="16.693"><failure message="selenium.common.exceptions.TimeoutException: Message:">tests/test_scripture_widget.py:42: in test_scripture_widget_loads
+    ensure_scripture_widget_loaded(chrome_driver)
+tests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded
+    WebDriverWait(driver, 10).until(
+test-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message:</failure></testcase><testcase classname="tests.test_e2e_ui.TestE2EUI" name="test_global_search_direct_reference" time="14.429" /><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_commentary_buttons_exist" time="13.242" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_homepage_loads" time="6.292"><failure message="AssertionError: Critical JavaScript errors found: [{'level': 'SEVERE', 'message': 'network - A bad HTTP response code (404) was received when fetching the script.', 'source': 'network', 'timestamp': 1769312902881}]&#10;assert 1 == 0&#10; +  where 1 = len([{'level': 'SEVERE', 'message': 'network - A bad HTTP response code (404) was received when fetching the script.', 'source': 'network', 'timestamp': 1769312902881}])">tests/test_bible_explorer.py:82: in test_homepage_loads
+    assert len(critical_errors) == 0, f"Critical JavaScript errors found: {critical_errors}"
+E   AssertionError: Critical JavaScript errors found: [{'level': 'SEVERE', 'message': 'network - A bad HTTP response code (404) was received when fetching the script.', 'source': 'network', 'timestamp': 1769312902881}]
+E   assert 1 == 0
+E    +  where 1 = len([{'level': 'SEVERE', 'message': 'network - A bad HTTP response code (404) was received when fetching the script.', 'source': 'network', 'timestamp': 1769312902881}])</failure></testcase><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entities_page_loads" time="7.051" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_genealogy_page_loads" time="8.627" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_theme_toggle_functionality[chrome]" time="11.269" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_navigation_elements" time="0.361" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_hero_section_content" time="0.168" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_theme_toggle" time="2.309" /><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_search_functionality" time="13.202" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_search_functionality" time="0.791"><failure message="assert False&#10; +  where False = is_displayed()&#10; +    where is_displayed = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;9dcf3d325a3181b0ba05ccf83eb5fad4&quot;, element=&quot;f.A0AD9E0D6843878BE4E0C355FA2B9045.d.284D6FB04991B717044946594AC39C80.e.124&quot;)&gt;.is_displayed">tests/test_bible_explorer.py:187: in test_search_functionality
+    assert search_input.is_displayed()
+E   assert False
+E    +  where False = is_displayed()
+E    +    where is_displayed = &lt;selenium.webdriver.remote.webelement.WebElement (session="9dcf3d325a3181b0ba05ccf83eb5fad4", element="f.A0AD9E0D6843878BE4E0C355FA2B9045.d.284D6FB04991B717044946594AC39C80.e.124")&gt;.is_displayed</failure></testcase><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_cluster_dropdown_exists" time="12.426" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_font_controls" time="1.378" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_high_contrast_mode" time="0.913" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_responsive_layout_mobile" time="1.654" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_accessibility_features" time="10.197" /><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_commentary_modal_opens" time="11.474" /><testcase classname="tests.test_e2e_ui.TestE2EUI" name="test_sections_browse_cards" time="7.950" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_theme_toggle_functionality[firefox]" time="14.578" /><testcase classname="tests.test_scripture_widget" name="test_scripture_references_enhanced" time="17.609"><failure message="selenium.common.exceptions.TimeoutException: Message:">tests/test_scripture_widget.py:54: in test_scripture_references_enhanced
+    ensure_scripture_widget_loaded(chrome_driver)
+tests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded
+    WebDriverWait(driver, 10).until(
+test-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message:</failure></testcase><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_individual_entity_page" time="17.103" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_royal_line_cluster_exists" time="6.705" /><testcase classname="tests.test_e2e_ui.TestE2EUI" name="test_quick_access_panel_toggle" time="4.869" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_page_performance" time="0.146" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_character_page_navigation" time="0.336" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_css_loading_and_styling" time="0.136" /><testcase classname="tests.test_bible_explorer.TestBibleExplorer" name="test_javascript_execution" time="0.333" /><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_commentary_source_switching" time="9.041" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_chapter_reader_buttons_present[chrome]" time="7.878" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_messianic_line_checkbox" time="3.823" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_tree_nodes_render" time="4.558" /><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_iframe_vs_direct_access_handling" time="10.436" /><testcase classname="tests.test_scripture_widget" name="test_desktop_hover_behavior" time="15.700"><failure message="selenium.common.exceptions.TimeoutException: Message:">tests/test_scripture_widget.py:78: in test_desktop_hover_behavior
+    ensure_scripture_widget_loaded(chrome_driver)
+tests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded
+    WebDriverWait(driver, 10).until(
+test-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message:</failure></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_chapter_reader_buttons_present[firefox]" time="12.826" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_messianic_line_highlighting" time="7.701" /><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_profile_content_loads" time="3.875"><skipped type="pytest.skip" message="Entity not found for profile test">/Users/andrewhall/repo/explore-scripture/tests/test_entities_system.py:143: Entity not found for profile test</skipped></testcase><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_cross_references" time="2.333" /><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_book_filtering" time="5.351" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_tooltip_appears_on_hover" time="6.345" /><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_book_name_edge_cases" time="18.946" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_no_duplicate_chapter_reader_buttons[chrome]" time="11.223" /><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entities_filter_character_study_and_testament" time="6.441" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_royal_line_cluster_loads" time="3.844"><failure message="selenium.common.exceptions.NoSuchElementException: Message: Cannot locate option with value: cluster:royal_line; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception">tests/test_genealogy_visualization.py:168: in test_royal_line_cluster_loads
+    select.select_by_value('cluster:royal_line')
+test-env/lib/python3.14/site-packages/selenium/webdriver/support/select.py:85: in select_by_value
+    raise NoSuchElementException(f"Cannot locate option with value: {value}")
+E   selenium.common.exceptions.NoSuchElementException: Message: Cannot locate option with value: cluster:royal_line; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception</failure></testcase><testcase classname="tests.test_scripture_widget" name="test_mobile_tap_behavior" time="15.713"><failure message="selenium.common.exceptions.TimeoutException: Message:">tests/test_scripture_widget.py:108: in test_mobile_tap_behavior
+    ensure_scripture_widget_loaded(chrome_driver)
+tests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded
+    WebDriverWait(driver, 10).until(
+test-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message:</failure></testcase><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_cluster_has_expected_nodes" time="3.506"><failure message="selenium.common.exceptions.NoSuchElementException: Message: Cannot locate option with value: cluster:royal_line; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception">tests/test_genealogy_visualization.py:187: in test_cluster_has_expected_nodes
+    select.select_by_value('cluster:royal_line')
+test-env/lib/python3.14/site-packages/selenium/webdriver/support/select.py:85: in select_by_value
+    raise NoSuchElementException(f"Cannot locate option with value: {value}")
+E   selenium.common.exceptions.NoSuchElementException: Message: Cannot locate option with value: cluster:royal_line; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception</failure></testcase><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_responsive_design" time="4.130" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_circle_fill_states" time="5.769" /><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_navigation_breadcrumbs" time="14.463" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_no_duplicate_chapter_reader_buttons[firefox]" time="13.885" /><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_modal_keyboard_navigation" time="15.683" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_search_functionality_exists" time="2.984" /><testcase classname="tests.test_scripture_widget" name="test_scripture_widget_styles" time="13.213"><failure message="selenium.common.exceptions.TimeoutException: Message:">tests/test_scripture_widget.py:136: in test_scripture_widget_styles
+    ensure_scripture_widget_loaded(chrome_driver)
+tests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded
+    WebDriverWait(driver, 10).until(
+test-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message:</failure></testcase><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_zoom_controls_exist" time="3.048" /><testcase classname="tests.test_genealogy_visualization.TestGenealogyVisualization" name="test_data_file_accessible" time="1.639" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_youtube_videos_not_blocked[chrome]" time="1.180" /><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_error_handling" time="4.515" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_youtube_videos_not_blocked[firefox]" time="3.402" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_biblegateway_integration_working[chrome]" time="4.912" /><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_entity_data_integrity" time="1.921" /><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_chapter_reader_integration" time="15.201" /><testcase classname="tests.test_scripture_widget" name="test_translation_selector_functionality" time="14.967"><failure message="selenium.common.exceptions.TimeoutException: Message:">tests/test_scripture_widget.py:169: in test_translation_selector_functionality
+    ensure_scripture_widget_loaded(chrome_driver)
+tests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded
+    WebDriverWait(driver, 10).until(
+test-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message:</failure></testcase><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_parables_page_loads" time="2.576" /><testcase classname="tests.test_entities_system.TestEntitiesSystem" name="test_people_groups_page_loads" time="1.778" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_biblegateway_integration_working[firefox]" time="8.001" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_javascript_modules_loading_correctly[chrome]" time="3.225" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_javascript_modules_loading_correctly[firefox]" time="5.443" /><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_mobile_responsiveness" time="3.913" /><testcase classname="tests.test_scripture_widget" name="test_scripture_widget_error_handling" time="14.128"><failure message="selenium.common.exceptions.TimeoutException: Message:">tests/test_scripture_widget.py:198: in test_scripture_widget_error_handling
+    ensure_scripture_widget_loaded(chrome_driver)
+tests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded
+    WebDriverWait(driver, 10).until(
+test-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message:</failure></testcase><testcase classname="tests.test_commentary_system.TestCommentarySystem" name="test_all_books_have_commentary_buttons" time="14.223" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_critical_css_loading[chrome]" time="1.773" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_critical_css_loading[firefox]" time="3.704" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_service_worker_registration[chrome]" time="4.993" /><testcase classname="tests.test_scripture_widget" name="test_scripture_macros_rendering" time="2.143" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_service_worker_registration[firefox]" time="7.440" /><testcase classname="tests.test_scripture_widget" name="test_scripture_widget_accessibility" time="11.905"><failure message="selenium.common.exceptions.TimeoutException: Message:">tests/test_scripture_widget.py:238: in test_scripture_widget_accessibility
+    ensure_scripture_widget_loaded(chrome_driver)
+tests/test_scripture_widget.py:23: in ensure_scripture_widget_loaded
+    WebDriverWait(driver, 10).until(
+test-env/lib/python3.14/site-packages/selenium/webdriver/support/wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message:</failure></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_offline_functionality[chrome]" time="4.144" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_offline_functionality[firefox]" time="5.493" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_search_functionality_basic[chrome]" time="6.208" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_search_functionality_basic[firefox]" time="7.516" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_responsive_design_basics[chrome]" time="3.550" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_responsive_design_basics[firefox]" time="5.118" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_responsive_table_design[chrome]" time="3.277"><failure message="AssertionError: Table should overflow when wrapper is visible&#10;assert False">tests/test_regression_fixes.py:515: in test_responsive_table_design
+    assert wrapper_scroll, "Table should overflow when wrapper is visible"
+E   AssertionError: Table should overflow when wrapper is visible
+E   assert False</failure></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_responsive_table_design[firefox]" time="4.827"><failure message="AssertionError: Table should overflow when wrapper is visible&#10;assert False">tests/test_regression_fixes.py:515: in test_responsive_table_design
+    assert wrapper_scroll, "Table should overflow when wrapper is visible"
+E   AssertionError: Table should overflow when wrapper is visible
+E   assert False</failure></testcase><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_accessibility_aria_labels[chrome]" time="6.696" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_accessibility_aria_labels[firefox]" time="7.603" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_key_figures_position[chrome]" time="4.972" /><testcase classname="tests.test_regression_fixes.TestRegressionFixes" name="test_key_figures_position[firefox]" time="6.605" /></testsuite></testsuites>

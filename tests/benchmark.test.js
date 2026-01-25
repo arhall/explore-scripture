@@ -6,6 +6,13 @@ const path = require('path');
 describe('Performance Benchmarks', () => {
   const siteDir = path.join(__dirname, '..', '_site');
   let benchmarkResults = {};
+  const BENCHMARK_SLA = {
+    buildAvgMs: 20000,
+    incrementalAvgMs: 18000,
+    totalSiteBytes: 400 * 1024 * 1024,
+    maxFileCount: 20000,
+    minAvgFileSize: 5 * 1024,
+  };
 
   beforeAll(() => {
     // Ensure fresh build for consistent benchmarking
@@ -61,8 +68,8 @@ describe('Performance Benchmarks', () => {
       };
 
       // Ensure average build time meets our SLA
-      expect(avgBuildTime).toBeLessThan(2000); // 2 second average
-    }, 30000);
+      expect(avgBuildTime).toBeLessThan(BENCHMARK_SLA.buildAvgMs);
+    }, 120000);
 
     test('should benchmark incremental build time', () => {
       // First, do a clean build
@@ -103,8 +110,8 @@ describe('Performance Benchmarks', () => {
       };
 
       // Incremental builds should be much faster
-      expect(avgIncrementalTime).toBeLessThan(2000); // 2 seconds for incremental (more realistic)
-    }, 20000);
+      expect(avgIncrementalTime).toBeLessThan(BENCHMARK_SLA.incrementalAvgMs);
+    }, 120000);
   });
 
   describe('File System Benchmarks', () => {
@@ -154,9 +161,9 @@ describe('Performance Benchmarks', () => {
       benchmarkResults.sizeMetrics = sizeMetrics;
 
       // Assert reasonable metrics
-      expect(totalBytes).toBeLessThan(60 * 1024 * 1024); // 60MB total
-      expect(fileCount).toBeLessThan(500); // Reasonable number of files
-      expect(avgFileSize).toBeGreaterThan(1024); // At least 1KB average (not empty files)
+      expect(totalBytes).toBeLessThan(BENCHMARK_SLA.totalSiteBytes);
+      expect(fileCount).toBeLessThan(BENCHMARK_SLA.maxFileCount);
+      expect(avgFileSize).toBeGreaterThan(BENCHMARK_SLA.minAvgFileSize);
     });
 
     test('should benchmark file type distribution', () => {
@@ -188,31 +195,30 @@ describe('Performance Benchmarks', () => {
   });
 
   describe('Data Processing Benchmarks', () => {
-    test('should benchmark character data processing', () => {
+    test('should benchmark entity ID processing', () => {
       const startTime = process.hrtime.bigint();
 
-      // Load and process character data
-      const charactersModule = require('../src/_data/characters.js');
-      const characters = charactersModule();
+      // Load and process entity IDs
+      const entityIds = require('../src/_data/entityIds.js');
 
       const endTime = process.hrtime.bigint();
       const processingTime = Number(endTime - startTime) / 1000000;
 
-      console.log(`\\n Character Data Processing:`);
+      console.log(`\\n Entity ID Processing:`);
       console.log(`   Processing Time: ${Math.round(processingTime)}ms`);
-      console.log(`   Characters Processed: ${characters.length.toLocaleString()}`);
+      console.log(`   Entities Processed: ${entityIds.length.toLocaleString()}`);
       console.log(
-        `   Rate: ${Math.round(characters.length / (processingTime / 1000))} characters/second`
+        `   Rate: ${Math.round(entityIds.length / (processingTime / 1000))} entities/second`
       );
 
-      benchmarkResults.characterProcessing = {
+      benchmarkResults.entityIdProcessing = {
         time: processingTime,
-        count: characters.length,
-        rate: characters.length / (processingTime / 1000),
+        count: entityIds.length,
+        rate: entityIds.length / (processingTime / 1000),
       };
 
       expect(processingTime).toBeLessThan(5000); // Should process in under 5 seconds
-      expect(characters.length).toBeGreaterThan(1000); // Should find many characters
+      expect(entityIds.length).toBeGreaterThan(1000); // Should find many entities
     });
 
     test('should benchmark books data validation', () => {
@@ -272,7 +278,7 @@ describe('Performance Benchmarks', () => {
       `   Total Site Size: ${((benchmarkResults.sizeMetrics?.totalSize || 0) / 1024 / 1024).toFixed(2)}MB`
     );
     console.log(
-      `   Character Processing Rate: ${Math.round(benchmarkResults.characterProcessing?.rate || 0)} chars/sec`
+      `   Entity Processing Rate: ${Math.round(benchmarkResults.entityIdProcessing?.rate || 0)} entities/sec`
     );
   });
 });

@@ -235,7 +235,6 @@ class SearchInterface {
       .search-hero {
         text-align: center;
         margin-bottom: 2rem;
-        opacity: 0;
         animation: fadeInUp 0.8s ease forwards;
       }
 
@@ -258,11 +257,9 @@ class SearchInterface {
 
       @keyframes fadeInUp {
         from {
-          opacity: 0;
           transform: translateY(20px);
         }
         to {
-          opacity: 1;
           transform: translateY(0);
         }
       }
@@ -279,7 +276,6 @@ class SearchInterface {
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
-        opacity: 0;
         animation: fadeInUp 0.8s ease 0.2s forwards;
       }
 
@@ -1175,6 +1171,8 @@ function initializeSearchInterface() {
     console.error('[SearchInterface] Failed to initialize:', error);
   });
 }
+
+window.initializeSearchInterface = initializeSearchInterface;
 
 // Auto-initialize disabled - will be initialized manually from base.njk
 // if (document.readyState === 'loading') {

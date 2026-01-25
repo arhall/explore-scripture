@@ -97,7 +97,7 @@ module.exports = ${JSON.stringify(entityIds, null, 2)};
     console.log(' Optimizing static asset copying...');
 
     // Check if assets have changed
-    const assetPaths = ['./src/assets', './src/styles.css', './src/manifest.json'];
+    const assetPaths = ['./src/assets', './src/styles.css', './src/manifest.json', './src/sw.js'];
 
     const hasAssetsChanged = assetPaths.some(assetPath =>
       this.cache.hasFileChanged(assetPath, 'asset')
@@ -150,6 +150,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({"src/assets": "assets"});
     eleventyConfig.addPassthroughCopy({"src/styles.css": "styles.css"});
     eleventyConfig.addPassthroughCopy({"src/manifest.json": "manifest.json"});
+    eleventyConfig.addPassthroughCopy({"src/sw.js": "sw.js"});
   }
 
   // Custom filters (optimized)

@@ -135,7 +135,6 @@ class GospelThreadNavigator {
       return;
     }
 
-    // eslint-disable-next-line no-undef
     const observer = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {

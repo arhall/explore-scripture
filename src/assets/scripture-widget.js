@@ -606,10 +606,18 @@ class ScriptureWidget {
   }
 }
 
-// Initialize when DOM is ready
-document.addEventListener('DOMContentLoaded', () => {
-  window.scriptureWidgetInstance = new ScriptureWidget();
-});
+// Initialize when DOM is ready (or immediately if already loaded)
+function initializeScriptureWidget() {
+  if (!window.scriptureWidgetInstance) {
+    window.scriptureWidgetInstance = new ScriptureWidget();
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initializeScriptureWidget);
+} else {
+  initializeScriptureWidget();
+}
 
 // Export for manual use
 window.ScriptureWidget = ScriptureWidget;
