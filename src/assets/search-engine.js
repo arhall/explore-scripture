@@ -11,6 +11,7 @@ class SearchEngine {
     this.suggestionCache = new Map();
     this.initialized = false;
     this.searchData = null;
+    this.bookReferenceIndex = [];
 
     // Performance optimizations
     this.debounceTimer = null;
@@ -250,7 +251,160 @@ class SearchEngine {
     });
 
     this.indices.set('books', bookItems);
+    this.buildBookReferenceIndex(books);
     console.log(`[SearchEngine] Books index: ${bookItems.length} items`);
+  }
+
+  // Build lookup index for direct book references (e.g., "Romans 8")
+  buildBookReferenceIndex(books) {
+    const entries = [];
+    const ordinalWords = {
+      1: 'first',
+      2: 'second',
+      3: 'third',
+    };
+    const romanNumerals = {
+      1: 'i',
+      2: 'ii',
+      3: 'iii',
+    };
+
+    books.forEach(book => {
+      const normalizedName = this.normalizeQuery(book.name);
+      entries.push({
+        name: book.name,
+        slug: book.slug,
+        normalized: normalizedName,
+      });
+
+      const numericMatch = book.name.match(/^(\d)\s+(.+)/);
+      if (!numericMatch) {
+        return;
+      }
+
+      const number = parseInt(numericMatch[1], 10);
+      const rest = numericMatch[2];
+      const restNormalized = this.normalizeQuery(rest);
+      const roman = romanNumerals[number];
+      const ordinal = ordinalWords[number];
+
+      entries.push(
+        {
+          name: book.name,
+          slug: book.slug,
+          normalized: `${number} ${restNormalized}`,
+        },
+        {
+          name: book.name,
+          slug: book.slug,
+          normalized: `${number}${restNormalized}`,
+        }
+      );
+
+      if (roman) {
+        entries.push(
+          {
+            name: book.name,
+            slug: book.slug,
+            normalized: `${roman} ${restNormalized}`,
+          },
+          {
+            name: book.name,
+            slug: book.slug,
+            normalized: `${roman}${restNormalized}`,
+          }
+        );
+      }
+
+      if (ordinal) {
+        entries.push({
+          name: book.name,
+          slug: book.slug,
+          normalized: `${ordinal} ${restNormalized}`,
+        });
+      }
+    });
+
+    const unique = new Map();
+    entries.forEach(entry => {
+      const key = entry.normalized;
+      if (!unique.has(key)) {
+        unique.set(key, entry);
+      }
+    });
+
+    this.bookReferenceIndex = Array.from(unique.values()).sort(
+      (a, b) => b.normalized.length - a.normalized.length
+    );
+  }
+
+  // Parse a direct scripture reference from query (e.g., "Romans 8" or "1 John 2:3")
+  getDirectReferenceResult(query) {
+    if (!query || !this.bookReferenceIndex.length) {
+      return null;
+    }
+
+    const normalizedQuery = this.normalizeQuery(query);
+    const cleanedQuery = normalizedQuery.replace(/[^\w\s:.-]/g, ' ').replace(/\s+/g, ' ').trim();
+
+    let matchedBook = null;
+    for (const entry of this.bookReferenceIndex) {
+      if (cleanedQuery.startsWith(entry.normalized)) {
+        matchedBook = entry;
+        break;
+      }
+    }
+
+    if (!matchedBook) {
+      return null;
+    }
+
+    let remainder = cleanedQuery.slice(matchedBook.normalized.length).trim();
+    if (!remainder) {
+      return null;
+    }
+
+    remainder = remainder.replace(/^chapter\s+/, '').replace(/^ch\.?\s+/, '');
+    const refMatch = remainder.match(
+      /^(\d{1,3})(?:\s*[:.]\s*(\d{1,3})(?:\s*[-–]\s*(\d{1,3}))?)?(?:\s*[-–]\s*(\d{1,3}))?$/
+    );
+
+    if (!refMatch) {
+      return null;
+    }
+
+    const chapter = parseInt(refMatch[1], 10);
+    if (!chapter || Number.isNaN(chapter)) {
+      return null;
+    }
+
+    const verseStart = refMatch[2] ? parseInt(refMatch[2], 10) : null;
+    const verseEnd = refMatch[3] ? parseInt(refMatch[3], 10) : null;
+
+    let title = `${matchedBook.name} ${chapter}`;
+    if (verseStart) {
+      title += `:${verseStart}`;
+      if (verseEnd) {
+        title += `-${verseEnd}`;
+      }
+    }
+
+    return {
+      id: `reference-${matchedBook.slug}-${chapter}-${verseStart || '0'}-${verseEnd || '0'}`,
+      type: 'passage',
+      title,
+      subtitle: verseStart ? 'Passage' : 'Chapter',
+      description: 'Direct scripture reference',
+      url: `/books/${matchedBook.slug}/#chapter-${chapter}`,
+      searchText: this.buildSearchText([
+        matchedBook.name,
+        `${chapter}`,
+        verseStart ? `${chapter}:${verseStart}` : '',
+        `chapter ${chapter}`,
+      ]),
+      relevanceBoost: 6,
+      score: 10000,
+    };
   }
 
   // Build index for categories
@@ -455,6 +609,11 @@ class SearchEngine {
 
     let allResults = [];
 
+    const directReference = this.getDirectReferenceResult(query);
+    if (directReference) {
+      allResults.push(directReference);
+    }
+
     // Search all indices
     for (const [, items] of this.indices) {
       const indexResults = this.searchIndex(items, normalizedQuery, options);
@@ -463,7 +622,19 @@ class SearchEngine {
 
     // Sort by relevance and limit results
     allResults.sort((a, b) => b.score - a.score);
-    const limitedResults = allResults.slice(0, maxResults);
+    const dedupedResults = [];
+    const seen = new Set();
+
+    allResults.forEach(result => {
+      const key = result.url || result.id;
+      if (seen.has(key)) {
+        return;
+      }
+      seen.add(key);
+      dedupedResults.push(result);
+    });
+
+    const limitedResults = dedupedResults.slice(0, maxResults);
 
     // Cache results
     this.suggestionCache.set(cacheKey, limitedResults);

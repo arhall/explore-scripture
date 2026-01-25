@@ -511,6 +511,11 @@ class SearchInterface {
         background: rgba(34, 197, 94, 0.2);
         color: rgba(134, 239, 172, 1);
       }
+
+      .search-result-type.passage {
+        background: rgba(34, 197, 94, 0.2);
+        color: rgba(134, 239, 172, 1);
+      }
       
       .search-result-type.category {
         background: rgba(245, 158, 11, 0.2);
@@ -999,6 +1004,7 @@ class SearchInterface {
       parables: 'parables',
       parable: 'parable',
       group: 'people group',
+      passage: 'passage',
     };
 
     return labels[type] || type;

@@ -565,7 +565,8 @@
 
       function toggleRecentsBookmarks() {
         const panel = document.getElementById('recentsBookmarksPanel');
-        panel.classList.toggle('active');
+        if (!panel) return;
+        panel.classList.toggle('visible');
       }
 
       function switchTab(tabName) {
@@ -746,13 +747,28 @@
       });
 
       // Service worker registration and PWA functionality
+      let swRegistration = null;
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
           navigator.serviceWorker
             .register('/sw.js')
             .then(registration => {
-              registration.addEventListener('updatefound', () => {
+              swRegistration = registration;
+
+              if (registration.waiting && navigator.serviceWorker.controller) {
+                window.newServiceWorker = registration.waiting;
                 showUpdateNotification();
+              }
+
+              registration.addEventListener('updatefound', () => {
+                const newWorker = registration.installing;
+                if (!newWorker) return;
+                window.newServiceWorker = newWorker;
+                newWorker.addEventListener('statechange', () => {
+                  if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                    showUpdateNotification();
+                  }
+                });
               });
             })
             .catch(error => {
@@ -766,12 +782,19 @@
             showUpdateNotification();
           }
         });
+
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+          if (!window.__swWaitingForRefresh || window.__swRefreshing) return;
+          window.__swRefreshing = true;
+          window.location.reload();
+        });
       }
 
       let updateNotification = null;
 
       function showUpdateNotification() {
         if (updateNotification) return;
+        window.__swUpdateAvailable = true;
 
         updateNotification = document.createElement('div');
         updateNotification.className = 'update-notification';
@@ -803,8 +826,17 @@
       }
 
       function updateServiceWorker() {
-        if (window.newServiceWorker) {
-          window.newServiceWorker.postMessage({ type: 'SKIP_WAITING' });
+        const pendingWorker =
+          window.newServiceWorker || (swRegistration && swRegistration.waiting);
+        if (pendingWorker) {
+          window.__swWaitingForRefresh = true;
+          pendingWorker.postMessage({ type: 'SKIP_WAITING' });
+          dismissUpdateNotification();
+          return;
+        }
+
+        if (window.__swUpdateAvailable) {
+          window.__swWaitingForRefresh = true;
           window.location.reload();
         }
       }
