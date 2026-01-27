@@ -7,6 +7,7 @@ Tests core functionality required for build validation
 import pytest
 import time
 import json
+from pathlib import Path
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
@@ -16,6 +17,13 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from config import get_test_urls
+
+BOOKS_DATA_PATH = Path(__file__).parent.parent / "src" / "_data" / "books.json"
+
+
+def _load_books():
+    with BOOKS_DATA_PATH.open("r", encoding="utf-8") as handle:
+        return json.load(handle)
 
 
 class TestBibleExplorer:
@@ -209,6 +217,49 @@ class TestBibleExplorer:
         WebDriverWait(driver, 10).until(
             lambda d: len(d.find_elements(By.CSS_SELECTOR, "#search-results .search-result")) > 0
         )
+
+    def test_all_book_pages_load(self, driver, base_url):
+        """Ensure every book page loads and renders the correct title."""
+        books = _load_books()
+        failures = []
+
+        for book in books:
+            slug = book.get("slug")
+            name = book.get("name")
+            if not slug or not name:
+                failures.append(f"Missing slug or name for book entry: {book}")
+                continue
+
+            url = f"{base_url}/books/{slug}/"
+            try:
+                driver.get(url)
+                heading = WebDriverWait(driver, 20).until(
+                    EC.presence_of_element_located((By.TAG_NAME, "h1"))
+                )
+                heading_text = heading.text.strip()
+                assert name.lower() in heading_text.lower()
+            except Exception as exc:
+                failures.append(f"{name} ({slug}) -> {exc}")
+
+        assert not failures, "Book page failures:\\n" + "\\n".join(failures)
+
+    def test_map_page_loads(self, driver, base_url):
+        """Ensure map page loads and key UI elements render."""
+        driver.get(f"{base_url}/map/")
+
+        title = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CLASS_NAME, "map-title"))
+        )
+        assert title.is_displayed()
+        assert "Map" in title.text
+
+        map_canvas = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, "map"))
+        )
+        assert map_canvas.is_displayed()
+
+        search_input = driver.find_element(By.ID, "mapSearchInput")
+        assert search_input.is_displayed()
     
     def test_font_controls(self, driver, base_url):
         """Test font size controls"""

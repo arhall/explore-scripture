@@ -28,6 +28,7 @@ describe('Build Tests', () => {
       const requiredPages = [
         'index.html',
         'categories/index.html',
+        'map/index.html',
         'characters/index.html',
         'links/index.html',
         'parables/index.html',
@@ -42,12 +43,8 @@ describe('Build Tests', () => {
 
     test('should generate book pages', () => {
       const books = require('../src/_data/books.json');
-
-      // Test a few sample books
-      const sampleBooks = ['genesis', 'matthew', 'psalms', 'revelation'];
-
-      sampleBooks.forEach(bookSlug => {
-        const bookPath = path.join(siteDir, 'books', bookSlug, 'index.html');
+      books.forEach(book => {
+        const bookPath = path.join(siteDir, 'books', book.slug, 'index.html');
         expect(fs.existsSync(bookPath)).toBe(true);
       });
     });

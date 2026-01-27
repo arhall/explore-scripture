@@ -1,11 +1,19 @@
 const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
+const { updateSummary } = require('./utils/perf-summary');
 
 // Benchmarking utilities
 describe('Performance Benchmarks', () => {
   const siteDir = path.join(__dirname, '..', '_site');
   let benchmarkResults = {};
+  const recordSummary = updater => {
+    updateSummary(summary => {
+      summary.environment = summary.environment || {};
+      summary.benchmark = summary.benchmark || {};
+      updater(summary);
+    });
+  };
   const BENCHMARK_SLA = {
     buildAvgMs: 20000,
     incrementalAvgMs: 18000,
@@ -17,6 +25,12 @@ describe('Performance Benchmarks', () => {
   beforeAll(() => {
     // Ensure fresh build for consistent benchmarking
     console.log('  Preparing fresh build for benchmarking...');
+    recordSummary(summary => {
+      summary.environment.nodeVersion = process.version;
+      summary.environment.platform = process.platform;
+      summary.environment.arch = process.arch;
+      summary.environment.ci = Boolean(process.env.CI);
+    });
     execSync('npm run clean && npm run build', {
       cwd: path.join(__dirname, '..'),
       stdio: 'pipe',
@@ -66,6 +80,10 @@ describe('Performance Benchmarks', () => {
         max: maxBuildTime,
         iterations: iterations,
       };
+      recordSummary(summary => {
+        summary.benchmark.build = benchmarkResults.build;
+        summary.benchmark.buildSlaMs = BENCHMARK_SLA.buildAvgMs;
+      });
 
       // Ensure average build time meets our SLA
       expect(avgBuildTime).toBeLessThan(BENCHMARK_SLA.buildAvgMs);
@@ -108,6 +126,10 @@ describe('Performance Benchmarks', () => {
         average: avgIncrementalTime,
         iterations: iterations,
       };
+      recordSummary(summary => {
+        summary.benchmark.incrementalBuild = benchmarkResults.incrementalBuild;
+        summary.benchmark.incrementalBuildSlaMs = BENCHMARK_SLA.incrementalAvgMs;
+      });
 
       // Incremental builds should be much faster
       expect(avgIncrementalTime).toBeLessThan(BENCHMARK_SLA.incrementalAvgMs);
@@ -159,6 +181,19 @@ describe('Performance Benchmarks', () => {
       );
 
       benchmarkResults.sizeMetrics = sizeMetrics;
+      recordSummary(summary => {
+        summary.benchmark.sizeMetrics = sizeMetrics;
+        summary.benchmark.sizeSla = {
+          totalSiteBytes: BENCHMARK_SLA.totalSiteBytes,
+          maxFileCount: BENCHMARK_SLA.maxFileCount,
+          minAvgFileSize: BENCHMARK_SLA.minAvgFileSize,
+        };
+        summary.benchmark.largestFiles = largeFiles
+          .split('\\n')
+          .filter(Boolean)
+          .slice(0, 5)
+          .map(line => line.trim());
+      });
 
       // Assert reasonable metrics
       expect(totalBytes).toBeLessThan(BENCHMARK_SLA.totalSiteBytes);
@@ -187,6 +222,9 @@ describe('Performance Benchmarks', () => {
       });
 
       benchmarkResults.fileTypes = fileTypes;
+      recordSummary(summary => {
+        summary.benchmark.fileTypes = fileTypes;
+      });
 
       // Should have reasonable distribution
       expect(fileTypes.html).toBeGreaterThan(300); // Many HTML files
@@ -216,6 +254,9 @@ describe('Performance Benchmarks', () => {
         count: entityIds.length,
         rate: entityIds.length / (processingTime / 1000),
       };
+      recordSummary(summary => {
+        summary.benchmark.entityIdProcessing = benchmarkResults.entityIdProcessing;
+      });
 
       expect(processingTime).toBeLessThan(5000); // Should process in under 5 seconds
       expect(entityIds.length).toBeGreaterThan(1000); // Should find many entities
@@ -253,6 +294,9 @@ describe('Performance Benchmarks', () => {
         chapterCount: chapterCount,
         summaryCount: summaryCount,
       };
+      recordSummary(summary => {
+        summary.benchmark.booksProcessing = benchmarkResults.booksProcessing;
+      });
 
       expect(processingTime).toBeLessThan(1000); // Should be very fast
       expect(books.length).toBe(66); // Exactly 66 biblical books

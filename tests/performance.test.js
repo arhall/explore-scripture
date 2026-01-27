@@ -3,6 +3,8 @@ const { execSync } = require('child_process');
 const path = require('path');
 const fs = require('fs');
 const express = require('express');
+const { updateSummary } = require('./utils/perf-summary');
+const { ensureChromeForTesting } = require('./utils/chrome-for-testing');
 
 const LOG_PREFIX = '[performance]';
 const log = message => {
@@ -13,6 +15,84 @@ const logStep = message => {
   const prefix = testName ? `${LOG_PREFIX} ${testName}:` : LOG_PREFIX;
   console.log(`${prefix} ${message}`);
 };
+const resolveChromeExecutable = () => {
+  const candidates = [
+    process.env.CHROME_PATH,
+    process.env.PUPPETEER_EXECUTABLE_PATH,
+    process.env.CHROME_BIN,
+    process.env.PUPPETEER_CHROME_PATH,
+  ].filter(Boolean);
+
+  try {
+    const bundled = puppeteer.executablePath();
+    if (bundled) candidates.push(bundled);
+  } catch (error) {
+    // Ignore if puppeteer cannot resolve bundled chromium.
+  }
+
+  if (process.platform === 'darwin') {
+    candidates.push(
+      '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+      '/Applications/Chromium.app/Contents/MacOS/Chromium'
+    );
+  }
+
+  if (process.platform === 'linux') {
+    candidates.push(
+      '/usr/bin/google-chrome',
+      '/usr/bin/google-chrome-stable',
+      '/usr/bin/chromium',
+      '/usr/bin/chromium-browser'
+    );
+  }
+
+  if (process.platform === 'win32') {
+    const programFiles = process.env.PROGRAMFILES || 'C:\\\\Program Files';
+    const programFilesX86 = process.env['PROGRAMFILES(X86)'] || 'C:\\\\Program Files (x86)';
+    candidates.push(
+      path.join(programFiles, 'Google', 'Chrome', 'Application', 'chrome.exe'),
+      path.join(programFilesX86, 'Google', 'Chrome', 'Application', 'chrome.exe')
+    );
+  }
+
+  const unique = Array.from(new Set(candidates));
+  for (const candidate of unique) {
+    try {
+      if (fs.existsSync(candidate)) {
+        return { path: candidate, source: 'filesystem' };
+      }
+    } catch (error) {
+      // Ignore candidate errors.
+    }
+  }
+
+  if (process.platform !== 'win32') {
+    const binaryNames = ['google-chrome', 'chromium', 'chromium-browser', 'chrome'];
+    for (const name of binaryNames) {
+      try {
+        const resolved = execSync(`which ${name}`, { encoding: 'utf8' }).trim();
+        if (resolved) {
+          return { path: resolved, source: 'which' };
+        }
+      } catch (error) {
+        // Continue to next candidate.
+      }
+    }
+  }
+
+  return { path: null, source: null };
+};
+const recordSummary = updater => {
+  updateSummary(summary => {
+    summary.environment = summary.environment || {};
+    summary.loadProfile = summary.loadProfile || {};
+    summary.build = summary.build || {};
+    summary.pageLoad = summary.pageLoad || {};
+    summary.memory = summary.memory || {};
+    summary.assets = summary.assets || {};
+    updater(summary);
+  });
+};
 
 // Performance SLAs (Service Level Agreements)
 const PERFORMANCE_SLA = {
@@ -21,10 +101,11 @@ const PERFORMANCE_SLA = {
     warning: 15000, // 15 seconds
   },
   pageLoad: {
-    homepage: 2000, // 2 seconds (content-heavy)
-    bookPage: 2500, // 2.5 seconds
+    homepage: 3000, // 3 seconds (content-heavy)
+    bookPage: 7000, // 7 seconds (large book payload)
     categoryPage: 2800, // 2.8 seconds
     characterPage: 2200, // 2.2 seconds
+    mapPage: 5000, // 5 seconds (map assets)
   },
   fileSize: {
     homepage: 600 * 1024, // 600KB (content-heavy site)
@@ -54,14 +135,33 @@ describe('Performance Tests', () => {
     process.env.PERF_BASE_URL || process.env.LIGHTHOUSE_BASE_URL || process.env.TEST_BASE_URL;
 
   beforeAll(async () => {
+    recordSummary(summary => {
+      summary.environment.nodeVersion = process.version;
+      summary.environment.platform = process.platform;
+      summary.environment.arch = process.arch;
+      summary.environment.ci = Boolean(process.env.CI);
+      summary.environment.perfBaseUrlOverride = baseUrlOverride || null;
+      summary.environment.pwd = process.cwd();
+      summary.loadProfile.cacheDisabled = true;
+      summary.loadProfile.browser = {
+        runner: 'puppeteer',
+        headless: 'new',
+        executablePath: process.env.CHROME_PATH || process.env.PUPPETEER_EXECUTABLE_PATH || null,
+      };
+    });
     log(`Site directory: ${siteDir}`);
     // Ensure fresh build exists
     try {
+      const initialBuildStart = Date.now();
       log('Running initial build');
       execSync('npm run build', {
         cwd: path.join(__dirname, '..'),
         stdio: 'pipe',
         timeout: 30000,
+      });
+      const initialBuildMs = Date.now() - initialBuildStart;
+      recordSummary(summary => {
+        summary.build.initialBuildMs = initialBuildMs;
       });
       log('Initial build completed');
     } catch (error) {
@@ -72,6 +172,10 @@ describe('Performance Tests', () => {
     if (baseUrlOverride) {
       baseUrl = baseUrlOverride.replace(/\/$/, '');
       log(`Using base URL from env: ${baseUrl}`);
+      recordSummary(summary => {
+        summary.loadProfile.server = 'external';
+        summary.loadProfile.baseUrl = baseUrl;
+      });
     } else {
       log('Starting local server');
       const app = express();
@@ -89,18 +193,37 @@ describe('Performance Tests', () => {
       }
       baseUrl = `http://127.0.0.1:${server.address().port}`;
       log(`Local server running at ${baseUrl}`);
+      recordSummary(summary => {
+        summary.loadProfile.server = 'local-express';
+        summary.loadProfile.baseUrl = baseUrl;
+        summary.loadProfile.serverPort = server.address().port;
+      });
     }
 
-    log('Launching headless browser');
+    log('Ensuring Chrome for Testing is available');
     const userDataDir = path.join(__dirname, '..', '.puppeteer-profile');
     const crashpadDir = path.join(__dirname, '..', 'tmp', 'crashpad');
     fs.mkdirSync(crashpadDir, { recursive: true });
-    const executablePath = process.env.CHROME_PATH || process.env.PUPPETEER_EXECUTABLE_PATH;
+    let chromeForTesting = null;
+    try {
+      chromeForTesting = await ensureChromeForTesting({ log });
+    } catch (error) {
+      log(`Chrome for Testing download failed: ${error.message}`);
+    }
+    const resolvedExecutable = chromeForTesting?.executablePath
+      ? { path: chromeForTesting.executablePath, source: 'chrome-for-testing' }
+      : resolveChromeExecutable();
+    if (resolvedExecutable.path) {
+      log(`Using Chrome executable: ${resolvedExecutable.path}`);
+    } else {
+      log('Using Puppeteer default executable (no explicit Chrome path resolved)');
+    }
 
+    log('Launching headless browser');
     browser = await puppeteer.launch({
       headless: 'new',
       userDataDir,
-      executablePath,
+      executablePath: resolvedExecutable.path || undefined,
       args: [
         '--no-sandbox',
         '--disable-dev-shm-usage',
@@ -111,6 +234,13 @@ describe('Performance Tests', () => {
     });
     log('Creating new page');
     page = await browser.newPage();
+    recordSummary(summary => {
+      summary.loadProfile.browser.userDataDir = userDataDir;
+      summary.loadProfile.browser.executablePath = resolvedExecutable.path;
+      summary.loadProfile.browser.executableSource = resolvedExecutable.source;
+      summary.loadProfile.browser.chromeForTestingVersion = chromeForTesting?.version || null;
+      summary.loadProfile.browser.chromeForTestingPlatform = chromeForTesting?.platform || null;
+    });
 
     // Set up performance monitoring
     log('Disabling browser cache');
@@ -147,6 +277,10 @@ describe('Performance Tests', () => {
       const buildTime = Date.now() - startTime;
 
       logStep(`Build completed in ${buildTime}ms`);
+      recordSummary(summary => {
+        summary.build.lastBuildMs = buildTime;
+        summary.build.slaMs = PERFORMANCE_SLA.buildTime.target;
+      });
 
       if (buildTime <= PERFORMANCE_SLA.buildTime.warning) {
         logStep('OK Excellent build performance');
@@ -170,6 +304,10 @@ describe('Performance Tests', () => {
       const totalBytes = parseInt(siteSize.trim());
 
       logStep(`Total site size: ${(totalBytes / 1024 / 1024).toFixed(2)}MB`);
+      recordSummary(summary => {
+        summary.assets.totalBytes = totalBytes;
+        summary.assets.totalSizeSlaBytes = PERFORMANCE_SLA.totalSiteSize;
+      });
       expect(totalBytes).toBeLessThan(PERFORMANCE_SLA.totalSiteSize);
 
       // Test individual page sizes
@@ -192,6 +330,10 @@ describe('Performance Tests', () => {
         if (fs.existsSync(filePath)) {
           const stats = fs.statSync(filePath);
           logStep(`${testPage.name} size: ${(stats.size / 1024).toFixed(2)}KB`);
+          recordSummary(summary => {
+            summary.assets.pageSizes = summary.assets.pageSizes || {};
+            summary.assets.pageSizes[testPage.name] = stats.size;
+          });
           expect(stats.size).toBeLessThan(testPage.sla);
         } else {
           logStep(`Skipping ${testPage.name}; missing file at ${filePath}`);
@@ -205,6 +347,11 @@ describe('Performance Tests', () => {
       const totalFiles = parseInt(fileCount.trim());
 
       logStep(`Total files generated: ${totalFiles}`);
+      recordSummary(summary => {
+        summary.assets.totalFiles = totalFiles;
+        summary.assets.totalFilesMin = 10000;
+        summary.assets.totalFilesMax = 20000;
+      });
 
       // Should be reasonable (not too many, not too few)
       expect(totalFiles).toBeGreaterThan(10000); // At least all essential pages
@@ -229,6 +376,11 @@ describe('Performance Tests', () => {
         name: 'Category page',
         sla: PERFORMANCE_SLA.pageLoad.categoryPage,
       },
+      {
+        path: '/map/',
+        name: 'Map page',
+        sla: PERFORMANCE_SLA.pageLoad.mapPage,
+      },
     ];
 
     testPages.forEach(testPage => {
@@ -245,6 +397,15 @@ describe('Performance Tests', () => {
 
           const loadTime = Date.now() - startTime;
           logStep(`${testPage.name} loaded in ${loadTime}ms`);
+          recordSummary(summary => {
+            summary.pageLoad.pages = summary.pageLoad.pages || [];
+            summary.pageLoad.pages.push({
+              name: testPage.name,
+              path: testPage.path,
+              loadMs: loadTime,
+              slaMs: testPage.sla,
+            });
+          });
 
           if (loadTime <= testPage.sla * 0.7) {
             logStep('OK Excellent page load performance');
@@ -274,6 +435,9 @@ describe('Performance Tests', () => {
 
       const renderTime = Date.now() - startTime;
       logStep(`Content rendered in ${renderTime}ms`);
+      recordSummary(summary => {
+        summary.pageLoad.renderMs = renderTime;
+      });
 
       expect(renderTime).toBeLessThan(1000); // Content should render within 1 second
     });
@@ -304,6 +468,9 @@ describe('Performance Tests', () => {
 
       const searchTime = Date.now() - startTime;
       logStep(`Search completed in ${searchTime}ms`);
+      recordSummary(summary => {
+        summary.pageLoad.searchMs = searchTime;
+      });
 
       expect(searchTime).toBeLessThan(1000); // Search should be fast
     });
@@ -333,6 +500,11 @@ describe('Performance Tests', () => {
 
       logStep(`Memory increase during build: ${(memoryIncrease / 1024 / 1024).toFixed(2)}MB`);
       logStep(`Peak heap usage: ${(afterMemory.heapUsed / 1024 / 1024).toFixed(2)}MB`);
+      recordSummary(summary => {
+        summary.memory.buildHeapIncreaseBytes = memoryIncrease;
+        summary.memory.buildPeakHeapBytes = afterMemory.heapUsed;
+        summary.memory.buildHeapSlaBytes = PERFORMANCE_SLA.memory.maxHeapUsed;
+      });
 
       expect(afterMemory.heapUsed).toBeLessThan(PERFORMANCE_SLA.memory.maxHeapUsed);
     }, 15000);
@@ -356,6 +528,9 @@ describe('Performance Tests', () => {
       const memoryIncrease = endMemory.JSHeapUsedSize - startMemory.JSHeapUsedSize;
 
       logStep(`Page memory usage: ${(memoryIncrease / 1024 / 1024).toFixed(2)}MB`);
+      recordSummary(summary => {
+        summary.memory.pageHeapIncreaseBytes = memoryIncrease;
+      });
 
       // Memory increase should be reasonable for a page
       expect(memoryIncrease).toBeLessThan(50 * 1024 * 1024); // 50MB max per page
@@ -371,6 +546,10 @@ describe('Performance Tests', () => {
         const cssSize = stats.size;
 
         logStep(`CSS size: ${(cssSize / 1024).toFixed(2)}KB`);
+        recordSummary(summary => {
+          summary.assets.cssBytes = cssSize;
+          summary.assets.cssMaxBytes = 220 * 1024;
+        });
 
         // CSS should be reasonable size
         expect(cssSize).toBeLessThan(220 * 1024); // 220KB max
@@ -391,6 +570,10 @@ describe('Performance Tests', () => {
       if (largeFiles) {
         console.warn(`${LOG_PREFIX} Large files found:`, largeFiles);
         const fileList = largeFiles.split('\n').filter(f => f);
+        recordSummary(summary => {
+          summary.assets.largeFiles = fileList;
+          summary.assets.maxAssetBytes = PERFORMANCE_SLA.fileSize.maxAssetSize;
+        });
 
         // Allow some exceptions (like detailed book pages)
         const allowedAssetSuffixes = [

@@ -14,6 +14,7 @@ module.exports = {
   testTimeout: 30000, // 30 seconds
   forceExit: true, // Force Jest to exit
   detectOpenHandles: true, // Help debug async issues
+  testSequencer: '<rootDir>/tests/utils/performance-test-sequencer.js',
   projects: [
     {
       displayName: 'default',
@@ -28,10 +29,12 @@ module.exports = {
     {
       displayName: 'performance',
       testEnvironment: 'node',
+      maxWorkers: 1,
       testMatch: [
         '<rootDir>/tests/performance.test.js',
         '<rootDir>/tests/lighthouse.test.js',
         '<rootDir>/tests/benchmark.test.js',
+        '<rootDir>/tests/performance-summary.test.js',
       ],
     },
   ],
