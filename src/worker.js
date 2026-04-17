@@ -4,6 +4,13 @@
  */
 
 import { getAssetFromKV } from '@cloudflare/kv-asset-handler';
+import {
+  fetchEnduringWordCommentary,
+  fetchStudyLightCommentary,
+  getCommentaryErrorStatus,
+  isValidCommentarySlug,
+  isValidStudyLightSource,
+} from '../lib/commentary-proxy.js';
 
 // Simple router implementation (lightweight alternative to itty-router)
 class Router {
@@ -79,6 +86,12 @@ const CACHE_HEADERS = {
   Vary: 'Accept-Encoding',
 };
 
+const API_CORS_HEADERS = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'GET, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+};
+
 const SECURITY_HEADERS = {
   'X-Content-Type-Options': 'nosniff',
   'X-Frame-Options': 'DENY',
@@ -115,6 +128,8 @@ router.get('/api/search', handleSearch);
 router.get('/api/entities/:id', handleEntity);
 router.get('/api/books/:book/chapters/:chapter', handleChapter);
 router.get('/api/scripture/:reference', handleScripture);
+router.get('/api/commentary/enduring-word/:slug', handleEnduringWordCommentary);
+router.get('/api/commentary/studylight/:source/:slug', handleStudyLightCommentary);
 
 /**
  * Main request handler
@@ -612,6 +627,65 @@ async function fetchBibleGatewayChapter(book, chapter, translation) {
   const html = await response.text();
   // Parse HTML to extract chapter text (implement HTML parsing logic)
   return { passages: [html], reference: `${book} ${chapter}` };
+}
+
+async function handleEnduringWordCommentary(request) {
+  const slug = request.params.slug;
+
+  if (!isValidCommentarySlug(slug)) {
+    return new Response(JSON.stringify({ error: 'Invalid commentary slug' }), {
+      status: 400,
+      headers: { 'Content-Type': 'application/json', ...SECURITY_HEADERS },
+    });
+  }
+
+  try {
+    const commentary = await fetchEnduringWordCommentary(slug);
+    return new Response(JSON.stringify(commentary), {
+      headers: {
+        'Content-Type': 'application/json',
+        'Cache-Control': 'public, max-age=3600, s-maxage=14400',
+        ...API_CORS_HEADERS,
+        ...SECURITY_HEADERS,
+      },
+    });
+  } catch (error) {
+    const status = getCommentaryErrorStatus(error, 'No Enduring Word commentary');
+    return new Response(JSON.stringify({ error: error.message }), {
+      status,
+      headers: { 'Content-Type': 'application/json', ...API_CORS_HEADERS, ...SECURITY_HEADERS },
+    });
+  }
+}
+
+async function handleStudyLightCommentary(request) {
+  const source = request.params.source;
+  const slug = request.params.slug;
+
+  if (!isValidStudyLightSource(source) || !isValidCommentarySlug(slug)) {
+    return new Response(JSON.stringify({ error: 'Invalid StudyLight commentary request' }), {
+      status: 400,
+      headers: { 'Content-Type': 'application/json', ...SECURITY_HEADERS },
+    });
+  }
+
+  try {
+    const commentary = await fetchStudyLightCommentary(source, slug);
+    return new Response(JSON.stringify(commentary), {
+      headers: {
+        'Content-Type': 'application/json',
+        'Cache-Control': 'public, max-age=3600, s-maxage=14400',
+        ...API_CORS_HEADERS,
+        ...SECURITY_HEADERS,
+      },
+    });
+  } catch (error) {
+    const status = getCommentaryErrorStatus(error, 'No StudyLight commentary');
+    return new Response(JSON.stringify({ error: error.message }), {
+      status,
+      headers: { 'Content-Type': 'application/json', ...API_CORS_HEADERS, ...SECURITY_HEADERS },
+    });
+  }
 }
 
 function handleCORS() {

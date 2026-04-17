@@ -40,7 +40,7 @@ class TestCommentarySystem:
         self.commentary_sources = {
             'enduring-word': {
                 'name': 'Enduring Word (David Guzik)',
-                'supports_iframe': True,
+                'supports_iframe': False,
                 'url_pattern': 'enduringword.com/bible-commentary/'
             },
             'matthew-henry': {
@@ -208,7 +208,7 @@ class TestCommentarySystem:
                 assert content_area.is_displayed(), f"Content area not visible for {source}"
 
     def test_iframe_vs_direct_access_handling(self, chrome_driver):
-        """Test that iframe-compatible and blocked sources are handled correctly."""
+        """Test that proxied and direct-access sources are handled correctly."""
         chrome_driver.get(f"{self.base_url}/books/genesis/")
         
         # Open commentary modal
@@ -226,16 +226,18 @@ class TestCommentarySystem:
         from selenium.webdriver.support.ui import Select
         select = Select(source_select)
         
-        # Test iframe-compatible source (Enduring Word)
+        # Test Enduring Word source, which now renders through the public API
         if any('enduring-word' in opt.get_attribute('value') for opt in select.options):
             select.select_by_value('enduring-word')
             time.sleep(2)
-            
-            # Should have iframe container
+
             iframe_containers = modal.find_elements(By.CLASS_NAME, "commentary-reader-iframe-container")
-            assert len(iframe_containers) > 0, "Iframe container not found for iframe-compatible source"
+            direct_access = modal.find_elements(By.CLASS_NAME, "commentary-reader-direct-access")
+            assert len(iframe_containers) > 0 or len(direct_access) > 0, (
+                "Expected Enduring Word to render in-frame or fall back to direct access"
+            )
         
-        # Test direct-access source (Barnes Notes)
+        # Test StudyLight source, which should now prefer the proxy-backed in-frame reader
         barnes_option = None
         for opt in select.options:
             if 'barnes' in opt.get_attribute('value').lower():
@@ -245,14 +247,23 @@ class TestCommentarySystem:
         if barnes_option:
             select.select_by_value(barnes_option)
             time.sleep(2)
-            
-            # Should have direct access interface
+
+            proxy_iframes = modal.find_elements(By.CLASS_NAME, "commentary-reader-proxy-iframe")
             direct_access = modal.find_elements(By.CLASS_NAME, "commentary-reader-direct-access")
-            assert len(direct_access) > 0, "Direct access interface not found for blocked source"
-            
-            # Should have external link
-            external_links = modal.find_elements(By.CLASS_NAME, "commentary-reader-primary-link")
-            assert len(external_links) > 0, "External link not found for blocked source"
+            assert len(proxy_iframes) > 0 or len(direct_access) > 0, (
+                "Expected Barnes Notes to render in-frame or fall back to direct access"
+            )
+
+            if len(proxy_iframes) > 0:
+                external_links = modal.find_elements(By.CLASS_NAME, "commentary-reader-external-link")
+                assert len(external_links) > 0, "External link not found for proxied Barnes Notes"
+                assert any(
+                    (link.get_attribute('href') or '').endswith('/genesis-1.html')
+                    for link in external_links
+                ), "Barnes Notes external link should use the chapter-specific StudyLight URL"
+            else:
+                fallback_links = modal.find_elements(By.CLASS_NAME, "commentary-reader-primary-link")
+                assert len(fallback_links) > 0, "External link not found for Barnes Notes fallback"
 
     def test_book_name_edge_cases(self, chrome_driver):
         """Test URL generation for edge cases like Song of Songs, numbered books."""

@@ -18,6 +18,7 @@ Other common commands:
 ```bash
 npm run build
 npm run build:analyze
+npm run dev:pages
 npm run test
 npm run lint
 ```

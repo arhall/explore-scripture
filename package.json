@@ -21,6 +21,7 @@
   "scripts": {
     "// Development": "",
     "dev": "node scripts/build-safeguards.js dev",
+    "dev:pages": "node scripts/pages-proxy-dev.js",
     "dev:unsafe": "eleventy --serve --watch",
     "dev:debug": "DEBUG=Eleventy* npm run dev",
     "dev:port": "eleventy --serve --watch --port=3000",
@@ -89,6 +90,8 @@
     "clean": "rm -rf _site build-logs tmp .cache .build-lock",
     "safeguards:check": "node scripts/build-safeguards.js check",
     "safeguards:cleanup": "node scripts/build-safeguards.js cleanup",
+    "datasets:fetch": "scripts/fetch-datasets.sh",
+    "datasets:publish": "scripts/publish-datasets.sh",
     "clean:all": "npm run clean && rm -rf node_modules test-env .pytest_cache",
     "setup": "npm install && npm run test:setup",
     "validate": "npm run lint && npm run data:validate && npm run build && npm run test:smoke",

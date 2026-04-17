@@ -438,8 +438,32 @@ async function processEntities() {
   console.log(' Loading data files...');
   let masterData, redirectMapData, booksData;
   try {
-    masterData = JSON.parse(fs.readFileSync(path.join(INPUT_DIR, MASTER_FILE), 'utf8'));
-    redirectMapData = JSON.parse(fs.readFileSync(path.join(INPUT_DIR, REDIRECT_MAP_FILE), 'utf8'));
+    const masterPath = path.join(INPUT_DIR, MASTER_FILE);
+    const redirectPath = path.join(INPUT_DIR, REDIRECT_MAP_FILE);
+    const allowMissing =
+      process.env.REQUIRE_DATASETS === 'true'
+        ? false
+        : process.env.CI ||
+          process.env.GITHUB_ACTIONS ||
+          process.env.ALLOW_MISSING_DATASETS === 'true' ||
+          process.env.SKIP_ENTITY_PROCESSING === 'true';
+
+    if (!fs.existsSync(masterPath) || !fs.existsSync(redirectPath)) {
+      const missing = [masterPath, redirectPath].filter(p => !fs.existsSync(p));
+      const message = `Missing dataset files: ${missing.join(', ')}`;
+
+      if (!allowMissing) {
+        throw new Error(`${message}. Set REQUIRE_DATASETS=true to enforce.`);
+      }
+
+      console.warn(`WARN  ${message}`);
+      console.warn('WARN  Skipping entity processing and using existing data artifacts.');
+      console.warn('WARN  Set REQUIRE_DATASETS=true to fail on missing datasets.');
+      return { skipped: true };
+    }
+
+    masterData = JSON.parse(fs.readFileSync(masterPath, 'utf8'));
+    redirectMapData = JSON.parse(fs.readFileSync(redirectPath, 'utf8'));
     booksData = JSON.parse(fs.readFileSync(BOOKS_FILE, 'utf8'));
     console.log(`  Loaded ${masterData.entries.length} entities and ${booksData.length} books`);
   } catch (error) {

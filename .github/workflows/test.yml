@@ -31,9 +31,13 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Install Node.js dependencies
-        run: |
-          npm ci
-          npm run build
+        run: npm ci
+
+      - name: Fetch datasets
+        run: ./scripts/fetch-datasets.sh
+
+      - name: Build site
+        run: npm run build
 
       - name: Setup Chrome for testing
         uses: browser-actions/setup-chrome@latest

@@ -426,6 +426,10 @@ class SecurityConfig {
         'biblegateway.com',
         'api.esv.org', 
         'bible-api.com',
+        'enduringword.com',
+        'studylight.org',
+        'studylight.info',
+        'explore-scripture.pages.dev',
         'fonts.googleapis.com',
         'fonts.gstatic.com'
       ];

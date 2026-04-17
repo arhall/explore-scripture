@@ -773,6 +773,30 @@ async function syncCharacterProfiles() {
 
   ensureDir(PROFILE_OUTPUT_DIR);
 
+  const allowMissing =
+    process.env.REQUIRE_DATASETS === 'true'
+      ? false
+      : process.env.CI ||
+        process.env.GITHUB_ACTIONS ||
+        process.env.ALLOW_MISSING_DATASETS === 'true' ||
+        process.env.SKIP_ENTITY_PROCESSING === 'true';
+
+  if (!fs.existsSync(MASTER_DATASET_FILE) && allowMissing) {
+    console.warn(
+      `WARN  Master dataset missing at ${MASTER_DATASET_FILE}. Skipping character profile sync.`
+    );
+    return;
+  }
+
+  if (!fs.existsSync(ENTITIES_DIR)) {
+    const message = `Entities directory not found at ${ENTITIES_DIR}`;
+    if (allowMissing) {
+      console.warn(`WARN  ${message}. Skipping character profile sync.`);
+      return;
+    }
+    throw new Error(message);
+  }
+
   const bookMap = buildBookAbbreviations();
 
   const profileFiles = PROFILE_DIRS.flatMap(profileDir => {

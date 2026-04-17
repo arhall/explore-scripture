@@ -3,16 +3,30 @@
  * Works alongside Chapter Reader for seamless Bible study
  */
 
+function createProxyCommentary(config) {
+  return {
+    ...config,
+    renderMode: 'proxy',
+    allowsIframe: false,
+    proxyLoadingMessage: config.proxyLoadingMessage || `Loading commentary from ${config.name}...`,
+    proxyEmbedNotice:
+      config.proxyEmbedNotice ||
+      `${config.proxyOriginName || config.name} blocks direct embeds, so this in-app reader uses a same-origin framed copy.`,
+    proxyOpenLabel: config.proxyOpenLabel || `Open on ${config.proxyOriginName || config.name}`,
+  };
+}
+
 class CommentaryReader {
   constructor() {
     this.commentaries = {
-      // Iframe-compatible commentaries (sorted by popularity/usefulness)
-      'enduring-word': {
+      // Commentaries that can render inside the modal (sorted by popularity/usefulness)
+      'enduring-word': createProxyCommentary({
         name: 'Enduring Word (David Guzik)',
         baseUrl: 'https://enduringword.com/bible-commentary',
         description: 'Clear, practical commentary with modern application',
-        allowsIframe: true,
-      },
+        proxyProvider: 'enduring-word',
+        proxyOriginName: 'Enduring Word',
+      }),
       'matthew-henry': {
         name: 'Matthew Henry Commentary',
         baseUrl: 'https://www.biblestudytools.com/commentaries/matthew-henry-complete',
@@ -44,37 +58,46 @@ class CommentaryReader {
         allowsIframe: true,
       },
 
-      // Direct access only (StudyLight blocks iframes)
-      'barnes-notes': {
+      // Proxy-backed StudyLight sources render inside the modal via same-origin srcdoc iframes
+      'barnes-notes': createProxyCommentary({
         name: "Barnes' Notes",
         baseUrl: 'https://www.studylight.org/commentaries/eng/bnb',
         description: 'Verse-by-verse commentary',
-        allowsIframe: false, // StudyLight blocks iframes
-      },
-      calvin: {
+        proxyProvider: 'studylight',
+        proxySource: 'bnb',
+        proxyOriginName: 'StudyLight',
+      }),
+      calvin: createProxyCommentary({
         name: "Calvin's Bible Commentaries",
         baseUrl: 'https://www.studylight.org/commentaries/eng/cal',
         description: 'Reformed theological perspective',
-        allowsIframe: false, // StudyLight blocks iframes
-      },
-      homiletic: {
+        proxyProvider: 'studylight',
+        proxySource: 'cal',
+        proxyOriginName: 'StudyLight',
+      }),
+      homiletic: createProxyCommentary({
         name: "Preacher's Homiletic Commentary",
         baseUrl: 'https://www.studylight.org/commentaries/eng/phc',
         description: 'Preaching and teaching resources',
-        allowsIframe: false, // StudyLight blocks iframes
-      },
-      'biblical-illustrator': {
+        proxyProvider: 'studylight',
+        proxySource: 'phc',
+        proxyOriginName: 'StudyLight',
+      }),
+      'biblical-illustrator': createProxyCommentary({
         name: 'The Biblical Illustrator (Exell)',
         baseUrl: 'https://www.studylight.org/commentaries/eng/tbi',
         description: 'Illustrations and practical applications',
-        allowsIframe: false, // StudyLight blocks iframes
-      },
+        proxyProvider: 'studylight',
+        proxySource: 'tbi',
+        proxyOriginName: 'StudyLight',
+      }),
     };
 
     // URL patterns will be defined in a method to access 'this' properly
 
     this.currentCommentary = localStorage.getItem('preferred-commentary') || 'enduring-word';
     this.currentModal = null;
+    this.loadRequestId = 0;
     this.init();
   }
 
@@ -337,6 +360,101 @@ class CommentaryReader {
         text-decoration: none;
       }
 
+      .commentary-reader-api-container {
+        padding: 1.5rem 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        min-height: 100%;
+      }
+
+      .commentary-reader-api-meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding: 0.875rem 1rem;
+        background: var(--bg-secondary, #f8fafc);
+        border: 1px solid var(--border, #e5e7eb);
+        border-radius: 10px;
+      }
+
+      .commentary-reader-api-note {
+        color: var(--text-secondary, #6b7280);
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin: 0;
+      }
+
+      .commentary-reader-api-body {
+        background: var(--card, #ffffff);
+        border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px;
+        padding: 1.5rem 1.75rem;
+        line-height: 1.75;
+        overflow-wrap: anywhere;
+      }
+
+      .commentary-reader-api-body > *:first-child {
+        margin-top: 0;
+      }
+
+      .commentary-reader-api-body > *:last-child {
+        margin-bottom: 0;
+      }
+
+      .commentary-reader-api-body h1,
+      .commentary-reader-api-body h2,
+      .commentary-reader-api-body h3,
+      .commentary-reader-api-body h4,
+      .commentary-reader-api-body h5,
+      .commentary-reader-api-body h6 {
+        color: var(--text, #111827);
+        line-height: 1.35;
+      }
+
+      .commentary-reader-api-body p,
+      .commentary-reader-api-body li {
+        color: var(--text, #111827);
+      }
+
+      .commentary-reader-api-body a {
+        color: var(--accent, #2563eb);
+      }
+
+      .commentary-reader-api-body ul,
+      .commentary-reader-api-body ol {
+        padding-left: 1.5rem;
+      }
+
+      .commentary-reader-api-body blockquote {
+        margin: 1.5rem 0;
+        padding: 0.75rem 1rem;
+        border-left: 3px solid var(--accent, #2563eb);
+        background: var(--bg-secondary, #f8fafc);
+        color: var(--text-secondary, #6b7280);
+      }
+
+      .commentary-reader-api-body img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .commentary-reader-api-body table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+      }
+
+      .commentary-reader-api-body .ew-bible-text {
+        background: var(--bg-secondary, #f8fafc);
+        border: 1px solid var(--border, #e5e7eb);
+        border-radius: 10px;
+        padding: 1rem 1.25rem;
+      }
+
       /* Source Description */
       .commentary-source-description {
         padding: 0.75rem 2rem;
@@ -400,6 +518,14 @@ class CommentaryReader {
 
         .commentary-reader-iframe-fallback {
           display: none;
+        }
+
+        .commentary-reader-api-container {
+          padding: 1rem;
+        }
+
+        .commentary-reader-api-body {
+          padding: 1.125rem;
         }
 
         .commentary-source-description {
@@ -489,6 +615,13 @@ class CommentaryReader {
         background: var(--bg-secondary-dark, #111827);
         border-color: var(--border-dark, #374151);
         color: var(--text-secondary-dark, #9ca3af);
+      }
+
+      [data-theme="dark"] .commentary-reader-api-meta,
+      [data-theme="dark"] .commentary-reader-api-body .ew-bible-text,
+      [data-theme="dark"] .commentary-reader-api-body blockquote {
+        background: var(--bg-secondary-dark, #111827);
+        border-color: var(--border-dark, #374151);
       }
 
       /* Direct Access Interface Styles */
@@ -1102,6 +1235,8 @@ class CommentaryReader {
       modal.classList.add('visible');
     }, 50);
 
+    this.updateCommentaryContent(modal, chapterInfo);
+
     // Track analytics
     if (window.telemetry) {
       window.telemetry.recordUserAction('commentary-reader-open', chapterInfo.reference);
@@ -1134,7 +1269,7 @@ class CommentaryReader {
           ${currentCommentaryInfo.description}
         </div>
         <div class="commentary-reader-content">
-          ${this.renderCommentaryIframe(chapterInfo)}
+          ${this.renderLoadingState()}
         </div>
       </div>
     `;
@@ -1163,24 +1298,77 @@ class CommentaryReader {
     return overlay;
   }
 
-  updateCommentaryContent(overlay, chapterInfo) {
-    // Update the iframe with new commentary source
+  async updateCommentaryContent(overlay, chapterInfo) {
     const contentDiv = overlay.querySelector('.commentary-reader-content');
-    contentDiv.innerHTML = this.renderCommentaryIframe(chapterInfo);
-
-    // Update the description
     const descriptionDiv = overlay.querySelector('.commentary-source-description');
-    descriptionDiv.textContent = this.commentaries[this.currentCommentary].description;
+    const commentaryInfo = this.commentaries[this.currentCommentary];
+    const url = this.getCommentaryUrl(chapterInfo);
+    const loadId = ++this.loadRequestId;
+
+    descriptionDiv.textContent = commentaryInfo.description;
+
+    if (commentaryInfo.renderMode === 'proxy') {
+      contentDiv.innerHTML = this.renderLoadingState(commentaryInfo.proxyLoadingMessage);
+
+      try {
+        const commentaryPayload = await this.fetchProxyCommentary(
+          chapterInfo,
+          this.currentCommentary,
+          commentaryInfo,
+          url
+        );
+
+        if (this.loadRequestId !== loadId || this.currentModal !== overlay || !overlay.isConnected) {
+          return;
+        }
+
+        contentDiv.innerHTML = this.renderProxyCommentaryShell(chapterInfo, commentaryInfo, url);
+        const iframe = contentDiv.querySelector('.commentary-reader-proxy-iframe');
+
+        if (iframe) {
+          iframe.srcdoc = this.buildCommentaryFrameDocument(
+            commentaryPayload.html,
+            commentaryPayload.sourceUrl,
+            commentaryPayload.title
+          );
+          iframe.style.opacity = '1';
+        }
+      } catch (error) {
+        console.warn(`[CommentaryReader] ${commentaryInfo.name} proxy render failed:`, error);
+
+        if (this.loadRequestId !== loadId || this.currentModal !== overlay || !overlay.isConnected) {
+          return;
+        }
+
+        contentDiv.innerHTML = this.renderDirectAccessInterface(chapterInfo, commentaryInfo, url, {
+          title: commentaryInfo.proxyOpenLabel,
+          message: `${commentaryInfo.name} could not be loaded into the in-app reader right now.`,
+          instructions: [
+            'Click the button below to open the official commentary in a new tab',
+            `Go to ${chapterInfo.reference} if the source redirects you elsewhere`,
+            'Return here when you want to switch sources or continue studying',
+          ],
+        });
+      }
+
+      return;
+    }
+
+    contentDiv.innerHTML = this.renderCommentaryIframe(chapterInfo);
   }
 
   closeCommentaryReader() {
     if (this.currentModal) {
-      this.currentModal.classList.remove('visible');
+      this.loadRequestId += 1;
+      const modalToClose = this.currentModal;
+      modalToClose.classList.remove('visible');
       setTimeout(() => {
-        if (this.currentModal && this.currentModal.parentNode) {
-          this.currentModal.parentNode.removeChild(this.currentModal);
+        if (modalToClose.parentNode) {
+          modalToClose.parentNode.removeChild(modalToClose);
         }
-        this.currentModal = null;
+        if (this.currentModal === modalToClose) {
+          this.currentModal = null;
+        }
       }, 300);
     }
   }
@@ -1195,7 +1383,7 @@ class CommentaryReader {
     // Build URL based on commentary source format
     switch (source) {
       case 'enduring-word':
-        return `${baseUrl}/${bookName}-${chapter}`;
+        return `${baseUrl}/${bookName}-${chapter}/`;
 
       case 'matthew-henry':
         // Matthew Henry has special format for Song of Songs
@@ -1216,12 +1404,11 @@ class CommentaryReader {
       case 'calvin':
       case 'homiletic':
       case 'biblical-illustrator':
-        // StudyLight format: /eng/bnb/genesis.html (no chapter in URL)
-        return `${baseUrl}/${bookName}.html`;
+        return `${baseUrl}/${bookName}-${chapter}.html`;
 
       default:
         // Fallback to enduring word format
-        return `${this.commentaries['enduring-word'].baseUrl}/${this.getSourceSpecificBookName(book, 'enduring-word')}-${chapter}`;
+        return `${this.commentaries['enduring-word'].baseUrl}/${this.getSourceSpecificBookName(book, 'enduring-word')}-${chapter}/`;
     }
   }
 
@@ -1365,60 +1552,453 @@ class CommentaryReader {
         </div>
       `;
     } else {
-      // For sites that block iframes, show a direct access interface
-      return `
-        <div class="commentary-reader-direct-access">
-          <div class="direct-access-header">
-            <div class="blocked-iframe-icon">🚫</div>
-            <h3>Direct Access Required</h3>
-            <p>${commentaryInfo.name} doesn't allow embedding in frames for security reasons.</p>
-          </div>
-          
-          <div class="direct-access-content">
-            <div class="commentary-preview">
-              <h4>About ${commentaryInfo.name}:</h4>
-              <p>${commentaryInfo.description}</p>
-              
-              <div class="access-instructions">
-                <h5>📖 How to access this commentary:</h5>
-                <ol>
-                  <li>Click the button below to open the commentary in a new tab</li>
-                  <li>Navigate to ${chapterInfo.reference} if not automatically loaded</li>
-                  <li>Use your browser's back button to return here when done</li>
-                </ol>
-              </div>
-            </div>
-            
-            <div class="direct-access-actions">
-              <a href="${url}" target="_blank" class="commentary-reader-primary-link">
-                <span class="link-icon">🔗</span>
-                Open ${chapterInfo.reference} Commentary
-                <span class="external-indicator">↗</span>
-              </a>
-              
-              <div class="alternative-actions">
-                <button onclick="navigator.clipboard?.writeText('${url}').then(() => { 
-                  this.textContent = '✓ Copied!'; 
-                  setTimeout(() => this.textContent = 'Copy Link', 2000); 
-                })" class="copy-link-btn">
-                  Copy Link
-                </button>
-                
-                <button onclick="window.commentaryReaderInstance.switchToWorkingCommentary()" class="switch-commentary-btn">
-                  Try Different Commentary
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      `;
+      return this.renderDirectAccessInterface(chapterInfo, commentaryInfo, url);
     }
   }
 
+  renderDirectAccessInterface(chapterInfo, commentaryInfo, url, options = {}) {
+    const title = options.title || 'Direct Access Required';
+    const message =
+      options.message ||
+      `${commentaryInfo.name} doesn't allow embedding in frames for security reasons.`;
+    const instructions = options.instructions || [
+      'Click the button below to open the commentary in a new tab',
+      `Navigate to ${chapterInfo.reference} if not automatically loaded`,
+      "Use your browser's back button to return here when done",
+    ];
+
+    return `
+      <div class="commentary-reader-direct-access">
+        <div class="direct-access-header">
+          <div class="blocked-iframe-icon">🚫</div>
+          <h3>${title}</h3>
+          <p>${message}</p>
+        </div>
+        
+        <div class="direct-access-content">
+          <div class="commentary-preview">
+            <h4>About ${commentaryInfo.name}:</h4>
+            <p>${commentaryInfo.description}</p>
+            
+            <div class="access-instructions">
+              <h5>📖 How to access this commentary:</h5>
+              <ol>
+                ${instructions.map(instruction => `<li>${instruction}</li>`).join('')}
+              </ol>
+            </div>
+          </div>
+          
+          <div class="direct-access-actions">
+            <a href="${url}" target="_blank" rel="noopener noreferrer" class="commentary-reader-primary-link">
+              <span class="link-icon">🔗</span>
+              Open ${chapterInfo.reference} Commentary
+              <span class="external-indicator">↗</span>
+            </a>
+            
+            <div class="alternative-actions">
+              <button onclick="navigator.clipboard?.writeText('${url}').then(() => { 
+                this.textContent = '✓ Copied!'; 
+                setTimeout(() => this.textContent = 'Copy Link', 2000); 
+              })" class="copy-link-btn">
+                Copy Link
+              </button>
+              
+              <button onclick="window.commentaryReaderInstance.switchToWorkingCommentary()" class="switch-commentary-btn">
+                Try Different Commentary
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  renderLoadingState(message = 'Loading commentary...') {
+    return `
+      <div class="commentary-reader-loading">
+        <div class="commentary-reader-spinner"></div>
+        <span>${message}</span>
+      </div>
+    `;
+  }
+
+  renderProxyCommentaryShell(chapterInfo, commentaryInfo, url) {
+    return `
+      <div class="commentary-reader-api-container">
+        <div class="commentary-reader-api-meta">
+          <p class="commentary-reader-api-note">
+            ${commentaryInfo.proxyEmbedNotice}
+          </p>
+          <a href="${url}" target="_blank" rel="noopener noreferrer" class="commentary-reader-external-link">
+            ⧉ ${commentaryInfo.proxyOpenLabel}
+          </a>
+        </div>
+        <div class="commentary-reader-iframe-container">
+          <iframe
+            class="commentary-reader-iframe commentary-reader-proxy-iframe"
+            title="${chapterInfo.reference} - ${commentaryInfo.name}"
+            loading="lazy"
+            sandbox="allow-popups allow-popups-to-escape-sandbox"
+            referrerpolicy="strict-origin-when-cross-origin">
+          </iframe>
+        </div>
+      </div>
+    `;
+  }
+
+  supportsEmbeddedReading(commentaryKey) {
+    const commentaryInfo = this.commentaries[commentaryKey];
+    if (!commentaryInfo) return false;
+    return commentaryInfo.renderMode === 'proxy' || commentaryInfo.allowsIframe;
+  }
+
+  getCommentaryProxyOrigins() {
+    const origins = [window.location.origin];
+    const deployedOrigin = 'https://explore-scripture.pages.dev';
+    const isLocalHost =
+      window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+
+    if (isLocalHost && window.location.origin !== deployedOrigin) {
+      origins.push(deployedOrigin);
+    }
+
+    return origins;
+  }
+
+  normalizeUrl(url) {
+    try {
+      const parsed = new URL(url);
+      parsed.hash = '';
+      parsed.search = '';
+      return parsed.toString().replace(/\/$/, '');
+    } catch {
+      return String(url || '').replace(/\/$/, '');
+    }
+  }
+
+  sanitizeCommentaryHtml(html, baseUrl) {
+    const parser = new window.DOMParser();
+    const parsed = parser.parseFromString(html, 'text/html');
+
+    parsed.querySelectorAll('script, iframe, form, object, embed, noscript').forEach(element => {
+      element.remove();
+    });
+
+    const walker = document.createTreeWalker(parsed.body, window.NodeFilter.SHOW_COMMENT);
+    const comments = [];
+    while (walker.nextNode()) {
+      comments.push(walker.currentNode);
+    }
+    comments.forEach(comment => comment.remove());
+
+    parsed.body.querySelectorAll('*').forEach(element => {
+      [...element.attributes].forEach(attribute => {
+        const name = attribute.name.toLowerCase();
+        const value = attribute.value;
+
+        if (name.startsWith('on')) {
+          element.removeAttribute(attribute.name);
+          return;
+        }
+
+        if ((name === 'href' || name === 'src') && value) {
+          try {
+            const resolvedUrl = new URL(value, baseUrl).toString();
+            if (
+              typeof window.SecurityConfig !== 'undefined' &&
+              window.SecurityConfig?.isUrlSafe &&
+              !window.SecurityConfig.isUrlSafe(resolvedUrl)
+            ) {
+              element.removeAttribute(attribute.name);
+              return;
+            }
+            element.setAttribute(attribute.name, resolvedUrl);
+          } catch {
+            element.removeAttribute(attribute.name);
+          }
+        }
+      });
+
+      if (element.tagName === 'A') {
+        const href = element.getAttribute('href');
+        if (href && !href.startsWith('#')) {
+          element.setAttribute('target', '_blank');
+          element.setAttribute('rel', 'noopener noreferrer');
+        }
+      }
+
+      if (element.tagName === 'IMG') {
+        element.setAttribute('loading', 'lazy');
+        element.setAttribute('decoding', 'async');
+      }
+    });
+
+    if (typeof window.SecurityConfig !== 'undefined' && window.SecurityConfig?.sanitizeHTML) {
+      return window.SecurityConfig.sanitizeHTML(parsed.body.innerHTML);
+    }
+
+    return parsed.body.innerHTML;
+  }
+
+  escapeHtmlAttribute(value) {
+    return String(value)
+      .replace(/&/g, '&amp;')
+      .replace(/"/g, '&quot;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+  }
+
+  buildCommentaryFrameDocument(commentaryHtml, sourceUrl, title) {
+    const safeTitle = this.escapeHtmlAttribute(title || 'Commentary');
+    const safeBaseUrl = this.escapeHtmlAttribute(sourceUrl || 'https://enduringword.com/');
+
+    return `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>${safeTitle}</title>
+    <base href="${safeBaseUrl}" target="_blank" />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #ffffff;
+        --bg-soft: #f8fafc;
+        --border: #e5e7eb;
+        --text: #111827;
+        --text-muted: #6b7280;
+        --link: #2563eb;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f172a;
+          --bg-soft: #111827;
+          --border: #334155;
+          --text: #e5e7eb;
+          --text-muted: #94a3b8;
+          --link: #60a5fa;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 1.25rem 1.5rem 3rem;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.75 Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      a {
+        color: var(--link);
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        color: var(--text);
+        line-height: 1.35;
+      }
+
+      p, li {
+        color: var(--text);
+      }
+
+      ul, ol {
+        padding-left: 1.5rem;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+      }
+
+      blockquote {
+        margin: 1.5rem 0;
+        padding: 0.75rem 1rem;
+        border-left: 3px solid var(--link);
+        background: var(--bg-soft);
+        color: var(--text-muted);
+      }
+
+      .ew-bible-text {
+        background: var(--bg-soft);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 1rem 1.25rem;
+      }
+
+      .studylight-print-commentary {
+        display: grid;
+        gap: 1.25rem;
+      }
+
+      .studylight-print-commentary .commentaries-entry-div + .commentaries-entry-div {
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border);
+      }
+
+      .studylight-print-commentary .biblio,
+      .studylight-print-commentary .copyright {
+        color: var(--text-muted);
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 640px) {
+        body {
+          padding: 1rem 0.875rem 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    ${commentaryHtml}
+  </body>
+</html>`;
+  }
+
+  getProxyCommentaryApiPath(chapterInfo, commentaryKey, commentaryInfo) {
+    const slug = `${this.getSourceSpecificBookName(chapterInfo.book, commentaryKey)}-${chapterInfo.chapter}`;
+
+    switch (commentaryInfo.proxyProvider) {
+      case 'enduring-word':
+        return `/api/commentary/enduring-word/${encodeURIComponent(slug)}`;
+      case 'studylight':
+        return `/api/commentary/studylight/${encodeURIComponent(commentaryInfo.proxySource)}/${encodeURIComponent(slug)}`;
+      default:
+        throw new Error(`Unsupported commentary proxy provider: ${commentaryInfo.proxyProvider}`);
+    }
+  }
+
+  prepareProxyCommentaryPayload(payload, commentaryKey, chapterInfo, fallbackUrl) {
+    const sourceUrl = payload.sourceUrl || fallbackUrl;
+    const extractedPayload = this.extractProxyCommentaryHtml(payload.html, commentaryKey);
+
+    return {
+      html: this.sanitizeCommentaryHtml(extractedPayload.html, sourceUrl),
+      sourceUrl,
+      title:
+        extractedPayload.title ||
+        payload.title ||
+        `${chapterInfo.reference} - ${this.commentaries[commentaryKey]?.name || 'Commentary'}`,
+    };
+  }
+
+  extractProxyCommentaryHtml(html, commentaryKey) {
+    switch (commentaryKey) {
+      case 'barnes-notes':
+      case 'calvin':
+      case 'homiletic':
+      case 'biblical-illustrator':
+        return this.extractStudyLightCommentaryHtml(html);
+      default:
+        return {
+          html,
+          title: null,
+        };
+    }
+  }
+
+  extractStudyLightCommentaryHtml(html) {
+    const parser = new window.DOMParser();
+    const parsed = parser.parseFromString(html, 'text/html');
+    const container = document.createElement('div');
+    container.className = 'studylight-print-commentary';
+
+    const sections = [
+      parsed.querySelector('h1'),
+      parsed.querySelector('h2'),
+      parsed.querySelector('.commentaries-entries'),
+      parsed.querySelector('.biblio'),
+      parsed.querySelector('.clear-both.copyright') || parsed.querySelector('.copyright'),
+    ].filter(Boolean);
+
+    sections.forEach(section => {
+      container.appendChild(section.cloneNode(true));
+    });
+
+    if (!container.childElementCount) {
+      return {
+        html: parsed.body.innerHTML || html,
+        title: null,
+      };
+    }
+
+    const chapterHeading = parsed.querySelector('h1')?.textContent?.trim();
+    const commentaryHeading = parsed.querySelector('h2')?.textContent?.trim();
+
+    return {
+      html: container.innerHTML,
+      title: [commentaryHeading, chapterHeading].filter(Boolean).join(' - ') || null,
+    };
+  }
+
+  async fetchProxyCommentary(chapterInfo, commentaryKey, commentaryInfo, url) {
+    const apiPath = this.getProxyCommentaryApiPath(chapterInfo, commentaryKey, commentaryInfo);
+    let lastError = null;
+
+    for (const origin of this.getCommentaryProxyOrigins()) {
+      const proxyUrl = new URL(apiPath, origin);
+
+      if (
+        typeof window.SecurityConfig !== 'undefined' &&
+        window.SecurityConfig?.isUrlSafe &&
+        !window.SecurityConfig.isUrlSafe(proxyUrl.toString())
+      ) {
+        lastError = new Error(`Blocked unsafe commentary API URL: ${proxyUrl}`);
+        continue;
+      }
+
+      try {
+        const response = await fetch(proxyUrl.toString(), {
+          method: 'GET',
+          headers: {
+            Accept: 'application/json',
+          },
+        });
+
+        const payloadText = await response.text();
+        let payload = null;
+
+        try {
+          payload = JSON.parse(payloadText);
+        } catch {
+          payload = null;
+        }
+
+        if (!response.ok) {
+          throw new Error(
+            payload?.error || `${commentaryInfo.name} request failed with status ${response.status}`
+          );
+        }
+
+        if (!payload?.html) {
+          throw new Error(`No renderable ${commentaryInfo.name} content found for ${chapterInfo.reference}`);
+        }
+
+        return this.prepareProxyCommentaryPayload(payload, commentaryKey, chapterInfo, url);
+      } catch (error) {
+        lastError = error;
+      }
+    }
+
+    throw lastError || new Error(`No renderable ${commentaryInfo.name} content found for ${chapterInfo.reference}`);
+  }
+
   switchToWorkingCommentary() {
-    // Switch to a commentary that allows iframe embedding
+    // Switch to a commentary that can still render inside the modal
     const workingCommentaries = Object.keys(this.commentaries).filter(
-      key => this.commentaries[key].allowsIframe && key !== this.currentCommentary
+      key => this.supportsEmbeddedReading(key) && key !== this.currentCommentary
     );
 
     if (workingCommentaries.length > 0) {

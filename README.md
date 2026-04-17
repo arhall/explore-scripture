@@ -90,6 +90,15 @@ npm run entities:validate # Validate entity schema
 npm run entities:test     # Test key figures loading
 ```
 
+### Datasets
+
+```bash
+npm run datasets:fetch    # Download large datasets from the release assets
+npm run datasets:publish  # Publish local datasets to a GitHub release
+```
+
+Supports `DATASET_RELEASE_TAG`, `DATASET_RELEASE_REPO`, and `DATASET_OVERWRITE=true` for targeting and overwriting releases.
+
 ### Testing & Quality
 
 ```bash
