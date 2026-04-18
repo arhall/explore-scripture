@@ -126,8 +126,5 @@
   },
   "dependencies": {
     "@cloudflare/kv-asset-handler": "^0.4.0"
-  },
-  "overrides": {
-    "undici": "7.18.2"
   }
 }
