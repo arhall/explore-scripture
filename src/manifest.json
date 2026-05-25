@@ -60,22 +60,6 @@
       ]
     }
   ],
-  "screenshots": [
-    {
-      "src": "/assets/screenshots/desktop-home.png",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "form_factor": "wide",
-      "label": "Explore Scripture homepage on desktop"
-    },
-    {
-      "src": "/assets/screenshots/mobile-scripture-widget.png",
-      "sizes": "390x844",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "Scripture widget on mobile showing verse popup"
-    }
-  ],
   "prefer_related_applications": false,
   "edge_side_panel": {
     "preferred_width": 480

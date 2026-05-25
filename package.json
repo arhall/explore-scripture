@@ -103,7 +103,6 @@
     "@eslint/js": "^9.34.0",
     "@jest/test-sequencer": "^30.0.5",
     "@types/jest": "^30.0.0",
-    "baseline-browser-mapping": "^2.9.18",
     "chrome-launcher": "^1.2.0",
     "cssnano": "^7.1.1",
     "eslint": "^9.34.0",

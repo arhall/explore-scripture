@@ -17,8 +17,14 @@ const ALLOWED_DOMAINS = [
   'www.biblegateway.com',
   'api.esv.org',
   'bible-api.com',
+  'api.reftagger.com',
+  'cdn.jsdelivr.net',
+  'cloudflareinsights.com',
   'fonts.googleapis.com',
   'fonts.gstatic.com',
+  'basemaps.cartocdn.com',
+  'demotiles.maplibre.org',
+  'tile.openstreetmap.org',
   'unpkg.com',
 ];
 
@@ -105,6 +111,20 @@ function isUrlAllowed(url) {
   }
 }
 
+function isSameOriginRequest(url) {
+  return url.origin === self.location.origin;
+}
+
+function shouldBypassExternalRequest(url) {
+  return (
+    !isSameOriginRequest(url) &&
+    ALLOWED_DOMAINS.some(
+      domain => url.hostname === domain || url.hostname.endsWith('.' + domain)
+    ) &&
+    url.hostname !== 'bible-api.com'
+  );
+}
+
 // Security: Rate limiting for requests
 function checkRateLimit(clientId, maxRequests = 60, timeWindow = 60000) {
   const now = Date.now();
@@ -140,16 +160,27 @@ function addSecurityHeaders(response) {
 // Fetch event - secure and serve cached content when offline
 self.addEventListener('fetch', event => {
   const { request } = event;
-  const url = request.url;
+  let parsedUrl;
+
+  try {
+    parsedUrl = new URL(request.url);
+  } catch {
+    return;
+  }
 
   // Security: Only handle safe methods
   if (!['GET', 'POST'].includes(request.method)) {
     return;
   }
 
+  // Let the browser fetch approved third-party resources directly.
+  if (shouldBypassExternalRequest(parsedUrl)) {
+    return;
+  }
+
   // Security: Check if URL is allowed
-  if (!isUrlAllowed(url)) {
-    console.warn('[SW Security] Blocked unauthorized request to:', url);
+  if (!isUrlAllowed(parsedUrl.toString())) {
+    console.warn('[SW Security] Blocked unauthorized request to:', parsedUrl.toString());
     event.respondWith(
       new Response('Unauthorized request blocked', {
         status: 403,
@@ -174,8 +205,8 @@ self.addEventListener('fetch', event => {
 
   // Handle Bible API requests specially
   if (
-    event.request.url.includes('bible-api.com') ||
-    event.request.url.includes('scripture.api.bible')
+    parsedUrl.hostname === 'bible-api.com' ||
+    parsedUrl.hostname === 'scripture.api.bible'
   ) {
     event.respondWith(
       caches.match(event.request).then(cachedResponse => {
@@ -210,15 +241,6 @@ self.addEventListener('fetch', event => {
           });
       })
     );
-    return;
-  }
-
-  // Skip other external resources
-  if (
-    event.request.url.includes('youtube.com') ||
-    event.request.url.includes('fonts.googleapis.com') ||
-    event.request.url.includes('unpkg.com')
-  ) {
     return;
   }
 
