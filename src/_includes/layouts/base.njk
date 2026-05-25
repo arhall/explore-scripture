@@ -790,7 +790,41 @@
         });
       }
 
+      const UPDATE_RELOAD_FALLBACK_MS = 1500;
       let updateNotification = null;
+
+      function getPendingUpdateWorker() {
+        const candidates = [
+          swRegistration && swRegistration.waiting,
+          window.newServiceWorker,
+        ].filter(Boolean);
+
+        return candidates.find(
+          worker => worker.state === 'installed' || worker.state === 'waiting'
+        );
+      }
+
+      function reloadForUpdate() {
+        window.__swWaitingForRefresh = true;
+        window.location.reload();
+      }
+
+      function requestServiceWorkerActivation(worker) {
+        if (!worker || typeof worker.postMessage !== 'function') {
+          return false;
+        }
+
+        window.__swWaitingForRefresh = true;
+        worker.postMessage({ type: 'SKIP_WAITING' });
+
+        window.setTimeout(() => {
+          if (!window.__swRefreshing) {
+            window.location.reload();
+          }
+        }, UPDATE_RELOAD_FALLBACK_MS);
+
+        return true;
+      }
 
       function showUpdateNotification() {
         if (updateNotification) return;
@@ -798,24 +832,31 @@
 
         updateNotification = document.createElement('div');
         updateNotification.className = 'update-notification';
+        updateNotification.setAttribute('role', 'region');
+        updateNotification.setAttribute('aria-labelledby', 'update-notification-title');
+        updateNotification.setAttribute('aria-live', 'polite');
         updateNotification.innerHTML = `
         <div class="update-content">
-          <span class="update-icon">↻</span>
-          <div class="update-text">
-            <div class="update-title">Update Available</div>
-            <div class="update-subtitle">A new version is ready</div>
+          <span class="update-icon" aria-hidden="true">↻</span>
+          <div class="update-text" id="update-notification-title">
+            <div class="update-title">Update ready</div>
+            <div class="update-subtitle">Refresh for the latest version</div>
           </div>
-          <button class="update-btn" onclick="updateServiceWorker()" aria-label="Update to latest version">Update</button>
-          <button class="update-dismiss" onclick="dismissUpdateNotification()" aria-label="Dismiss update notification">✕</button>
+          <div class="update-actions">
+            <button type="button" class="update-btn" aria-label="Update to latest version">Update</button>
+            <button type="button" class="update-dismiss" aria-label="Dismiss update notification">×</button>
+          </div>
         </div>
       `;
 
-        document.body.appendChild(updateNotification);
+        updateNotification
+          .querySelector('.update-btn')
+          ?.addEventListener('click', updateServiceWorker);
+        updateNotification
+          .querySelector('.update-dismiss')
+          ?.addEventListener('click', dismissUpdateNotification);
 
-        // Auto-remove after 10 seconds
-        setTimeout(() => {
-          dismissUpdateNotification();
-        }, 10000);
+        document.body.appendChild(updateNotification);
       }
 
       function dismissUpdateNotification() {
@@ -826,18 +867,14 @@
       }
 
       function updateServiceWorker() {
-        const pendingWorker =
-          window.newServiceWorker || (swRegistration && swRegistration.waiting);
-        if (pendingWorker) {
-          window.__swWaitingForRefresh = true;
-          pendingWorker.postMessage({ type: 'SKIP_WAITING' });
+        const pendingWorker = getPendingUpdateWorker();
+        if (requestServiceWorkerActivation(pendingWorker)) {
           dismissUpdateNotification();
           return;
         }
 
         if (window.__swUpdateAvailable) {
-          window.__swWaitingForRefresh = true;
-          window.location.reload();
+          reloadForUpdate();
         }
       }
 

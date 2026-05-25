@@ -54,8 +54,7 @@ self.addEventListener('install', event => {
         return cache.addAll(ESSENTIAL_RESOURCES);
       })
       .then(() => {
-        console.log('[SW] Essential resources cached');
-        return self.skipWaiting();
+        console.log('[SW] Essential resources cached; waiting for update confirmation');
       })
       .catch(error => {
         console.error('[SW] Failed to cache essential resources:', error);
@@ -318,7 +317,7 @@ async function syncPendingData() {
 
 // Handle messages from the main thread
 self.addEventListener('message', event => {
-  const { type, data } = event.data;
+  const { type, data } = event.data || {};
 
   switch (type) {
     case 'SKIP_WAITING':

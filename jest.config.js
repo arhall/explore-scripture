@@ -1,4 +1,10 @@
+const path = require('path');
+
+const rootDir = __dirname;
+const setupFilesAfterEnv = [path.join(rootDir, 'tests/setup.js')];
+
 module.exports = {
+  rootDir,
   testEnvironment: 'jsdom',
   testMatch: ['**/__tests__/**/*.js', '**/?(*.)+(spec|test).js'],
   collectCoverageFrom: [
@@ -10,7 +16,6 @@ module.exports = {
   ],
   coverageDirectory: 'coverage',
   coverageReporters: ['text', 'lcov', 'html'],
-  setupFilesAfterEnv: ['<rootDir>/tests/setup.js'],
   testTimeout: 30000, // 30 seconds
   forceExit: true, // Force Jest to exit
   detectOpenHandles: true, // Help debug async issues
@@ -18,17 +23,22 @@ module.exports = {
   projects: [
     {
       displayName: 'default',
+      rootDir,
       testEnvironment: 'jsdom',
+      setupFilesAfterEnv,
       testMatch: [
         '<rootDir>/tests/data.test.js',
         '<rootDir>/tests/filters.test.js',
         '<rootDir>/tests/characters.test.js',
         '<rootDir>/tests/build.test.js',
+        '<rootDir>/tests/pwa-update.test.js',
       ],
     },
     {
       displayName: 'performance',
+      rootDir,
       testEnvironment: 'node',
+      setupFilesAfterEnv,
       maxWorkers: 1,
       testMatch: [
         '<rootDir>/tests/performance.test.js',
