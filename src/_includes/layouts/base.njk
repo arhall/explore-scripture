@@ -24,7 +24,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Explore Scripture" />
-    <title>{{ title or 'Explore Scripture' }}</title>
+    <title>{% if book %}{{ book.name }} | Explore Scripture{% elif category %}{{ category.name }} | Explore Scripture{% elif title and title != 'Explore Scripture' %}{{ title }} | Explore Scripture{% else %}Explore Scripture{% endif %}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,7 +40,7 @@
     {% endif %}
     <meta
       name="description"
-      content="{{ description or 'Chapter-by-chapter Bible summaries with categories and metadata.' }}"
+      content="{% if book %}Chapter summaries, reading, and commentary for {{ book.name }}.{% elif category %}Explore {{ category.bookCount }} {% if category.bookCount == 1 %}book{% else %}books{% endif %} in {{ category.name }}: {{ category.description }}{% else %}{{ description or 'Chapter-by-chapter Bible summaries with categories and metadata.' }}{% endif %}"
     />
     <!-- Performance Optimizers (loaded first) -->
     <script src="/assets/css-optimizer.js" async></script>
@@ -77,6 +77,8 @@
             class="font-size-toggle"
             onclick="toggleFontSizeControls()"
             aria-label="Toggle font size controls"
+            aria-controls="fontSizePanel"
+            aria-expanded="false"
           >
             <span class="font-size-icon">Aa</span>
           </button>
@@ -84,6 +86,7 @@
             class="high-contrast-toggle"
             onclick="toggleHighContrast()"
             aria-label="Toggle high contrast mode"
+            aria-pressed="false"
           >
             <span class="high-contrast-icon">◻</span>
           </button>
@@ -93,6 +96,7 @@
             aria-label="Change theme"
             aria-expanded="false"
             aria-haspopup="true"
+            aria-controls="theme-nav-dropdown"
           >
             <span class="theme-icon">◈</span>
           </button>
@@ -100,6 +104,8 @@
             class="recents-bookmarks-toggle"
             onclick="toggleRecentsBookmarks()"
             aria-label="Toggle recent items and bookmarks"
+            aria-controls="recentsBookmarksPanel"
+            aria-expanded="false"
           >
             <span class="recents-icon">★</span>
           </button>
@@ -111,10 +117,10 @@
       <div id="search-container"></div>
       {% endif %}
 
-      <div class="recents-bookmarks-panel" id="recentsBookmarksPanel">
+      <div class="recents-bookmarks-panel" id="recentsBookmarksPanel" role="dialog" aria-modal="true" aria-labelledby="quickAccessTitle" inert>
         <div class="recents-bookmarks-content">
           <div class="recents-bookmarks-header">
-            <h3>Quick Access</h3>
+            <h3 id="quickAccessTitle">Quick Access</h3>
             <button
               class="close-panel-btn"
               onclick="toggleRecentsBookmarks()"
@@ -132,7 +138,7 @@
               aria-label="View bookmarks"
             >
               <span class="tab-icon">★</span>
-              Bookmarks (<span id="bookmarksCount">0</span>)
+              <span class="tab-label">Bookmarks (<span id="bookmarksCount">0</span>)</span>
             </button>
             <button
               class="tab-btn"
@@ -141,12 +147,14 @@
               aria-label="View recent items"
             >
               <span class="tab-icon">↻</span>
-              Recent (<span id="recentCount">0</span>)
+              <span class="tab-label">Recent (<span id="recentCount">0</span>)</span>
             </button>
           </div>
 
           <div class="tab-content active" id="bookmarksContent">
             <div class="tab-actions">
+              <button type="button" onclick="exportBookmarks()">Export</button>
+              <label class="bookmark-import-label">Import <input type="file" accept="application/json,.json" onchange="importBookmarks(this.files[0]); this.value = ''" /></label>
               <button
                 class="clear-all-btn"
                 onclick="clearAllBookmarks()"
@@ -155,6 +163,7 @@
                 Clear All
               </button>
             </div>
+            <p id="bookmarkImportStatus" role="status"></p>
             <div class="items-list" id="bookmarksList">
               <div class="empty-state">
                 <div class="empty-icon">★</div>
@@ -185,10 +194,10 @@
         </div>
       </div>
 
-      <div class="font-size-panel" id="fontSizePanel">
+      <div class="font-size-panel" id="fontSizePanel" role="dialog" aria-modal="true" aria-labelledby="fontSizeTitle" inert>
         <div class="font-size-content">
           <div class="font-size-header">
-            <h3>Text Size</h3>
+            <h3 id="fontSizeTitle">Text Size</h3>
             <button
               class="close-font-panel"
               onclick="toggleFontSizeControls()"
@@ -335,6 +344,8 @@
           
           // Initialize the search interface
           await searchInterface.initialize();
+          const searchQuery = new URLSearchParams(window.location.search).get('search');
+          if (searchQuery && searchQuery.length <= 100) searchInterface.setQuery(searchQuery);
           console.log('[Base] Search functionality initialized successfully');
           
           // Test search functionality
@@ -379,7 +390,7 @@
             try {
               const parsed = JSON.parse(savedRecent);
               if (Array.isArray(parsed)) {
-                recentItems = parsed.slice(0, 10);
+                recentItems = parsed.map(validateBookmark).filter(Boolean).slice(0, 10);
               } else {
                 throw new Error('Invalid recentItems format');
               }
@@ -395,7 +406,7 @@
             try {
               const parsed = JSON.parse(savedBookmarks);
               if (Array.isArray(parsed)) {
-                bookmarkedItems = parsed;
+                bookmarkedItems = parsed.map(validateBookmark).filter(Boolean);
               } else {
                 throw new Error('Invalid bookmarkedItems format');
               }
@@ -412,6 +423,7 @@
         }
 
         updateUI();
+        updateBookmarkButton(isBookmarked(window.location.pathname));
       }
 
       function addToRecentItems(pageData) {
@@ -434,6 +446,48 @@
         }
 
         updateUI();
+      }
+
+      function validateBookmark(item) {
+        if (!item || typeof item.title !== 'string' || !item.title.trim() || item.title.length > 160 || typeof item.url !== 'string') return null;
+        if (!item.url.startsWith('/') || item.url.startsWith('//')) return null;
+        const parsed = new URL(item.url, window.location.origin);
+        if (parsed.origin !== window.location.origin) return null;
+        return { url: parsed.pathname + parsed.search + parsed.hash, title: item.title.trim(), subtitle: typeof item.subtitle === 'string' ? item.subtitle.slice(0, 240) : '' };
+      }
+
+      function exportBookmarks() {
+        const blob = new Blob([JSON.stringify({ version: 1, bookmarks: bookmarkedItems }, null, 2)], { type: 'application/json' });
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = 'explore-scripture-bookmarks.json';
+        link.click();
+        setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+      }
+
+      async function importBookmarks(file) {
+        if (!file) return;
+        const status = document.getElementById('bookmarkImportStatus');
+        try {
+          if (file.size > 1024 * 1024) throw new Error('File is too large');
+          const data = JSON.parse(await file.text());
+          if (data.version !== 1 || !Array.isArray(data.bookmarks)) throw new Error('Invalid bookmark file');
+          if (data.bookmarks.some(item => !validateBookmark(item))) throw new Error('Invalid bookmark entry');
+          const previous = bookmarkedItems.length;
+          const byUrl = new Map(bookmarkedItems.map(item => [item.url, item]));
+          data.bookmarks.forEach(item => byUrl.set(item.url, validateBookmark(item)));
+          bookmarkedItems = [...byUrl.values()];
+          localStorage.setItem('bookmarkedItems', JSON.stringify(bookmarkedItems));
+          updateUI();
+          updateBookmarkButton(isBookmarked(location.pathname));
+          status.textContent = `Imported ${bookmarkedItems.length - previous} new bookmarks.`;
+        } catch (error) {
+          status.textContent = `Import failed: ${error.message}`;
+        }
+      }
+
+      function escapeQuickAccess(value) {
+        return String(value || '').replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
       }
 
       function toggleBookmark(pageData) {
@@ -467,6 +521,14 @@
         if (bookmarkButton) {
           bookmarkButton.classList.toggle('bookmarked', bookmarked);
           bookmarkButton.setAttribute('aria-pressed', bookmarked.toString());
+          const action = bookmarked ? 'Remove bookmark for' : 'Add bookmark for';
+          const name = document.querySelector('h1')?.textContent?.trim() || 'this page';
+          bookmarkButton.setAttribute('aria-label', `${action} ${name}`);
+          bookmarkButton.title = `${action} ${name}`;
+          const icon = bookmarkButton.querySelector('.bookmark-icon');
+          const wording = bookmarkButton.querySelector('.bookmark-text');
+          if (icon) icon.textContent = bookmarked ? '★' : '☆';
+          if (wording) wording.textContent = bookmarked ? 'Bookmarked' : 'Bookmark';
         }
       }
 
@@ -495,9 +557,9 @@
             .map(
               item => `
           <div class="quick-access-item">
-            <a href="${item.url}" class="item-link">
-              <span class="item-title">${item.title}</span>
-              <span class="item-subtitle">${item.subtitle || ''}</span>
+            <a href="${escapeQuickAccess(item.url)}" class="item-link">
+              <span class="item-title">${escapeQuickAccess(item.title)}</span>
+              <span class="item-subtitle">${escapeQuickAccess(item.subtitle)}</span>
             </a>
           </div>
         `
@@ -521,15 +583,16 @@
             .map(
               item => `
           <div class="quick-access-item">
-            <a href="${item.url}" class="item-link">
-              <span class="item-title">${item.title}</span>
-              <span class="item-subtitle">${item.subtitle || ''}</span>
+            <a href="${escapeQuickAccess(item.url)}" class="item-link">
+              <span class="item-title">${escapeQuickAccess(item.title)}</span>
+              <span class="item-subtitle">${escapeQuickAccess(item.subtitle)}</span>
             </a>
-            <button class="remove-bookmark" onclick="removeBookmark('${item.url}')" aria-label="Remove bookmark">×</button>
+            <button class="remove-bookmark" data-remove-url="${escapeQuickAccess(item.url)}" aria-label="Remove bookmark for ${escapeQuickAccess(item.title)}">×</button>
           </div>
         `
             )
             .join('');
+          container.querySelectorAll('[data-remove-url]').forEach(button => button.addEventListener('click', () => removeBookmark(button.dataset.removeUrl)));
         }
       }
 
@@ -563,11 +626,50 @@
         updateUI();
       }
 
+      const drawers = [
+        { panel: 'recentsBookmarksPanel', trigger: '.recents-bookmarks-toggle' },
+        { panel: 'fontSizePanel', trigger: '.font-size-toggle' },
+      ];
+
+      function setDrawer(name, open) {
+        const entry = drawers.find(drawer => drawer.panel === name);
+        const panel = document.getElementById(name);
+        const trigger = document.querySelector(entry.trigger);
+        if (!panel || !trigger) return;
+        if (open) {
+          drawers.filter(drawer => drawer.panel !== name).forEach(drawer => setDrawer(drawer.panel, false));
+        }
+        panel.classList.toggle('visible', open);
+        panel.inert = !open;
+        trigger.setAttribute('aria-expanded', String(open));
+        document.documentElement.classList.toggle('drawer-open', drawers.some(drawer => document.getElementById(drawer.panel).classList.contains('visible')));
+        if (open) setTimeout(() => {
+          if (panel.classList.contains('visible')) panel.querySelector('button, input, a')?.focus();
+        }, 350);
+        else if (panel.contains(document.activeElement)) trigger.focus();
+      }
+
       function toggleRecentsBookmarks() {
         const panel = document.getElementById('recentsBookmarksPanel');
-        if (!panel) return;
-        panel.classList.toggle('visible');
+        setDrawer(panel.id, !panel.classList.contains('visible'));
       }
+
+      document.addEventListener('keydown', event => {
+        const entry = drawers.find(drawer => document.getElementById(drawer.panel).classList.contains('visible'));
+        if (!entry) return;
+        const panel = document.getElementById(entry.panel);
+        if (event.key === 'Escape') {
+          event.preventDefault();
+          setDrawer(entry.panel, false);
+        } else if (event.key === 'Tab') {
+          const controls = [...panel.querySelectorAll('button, input, a, select, [tabindex]')].filter(element => !element.disabled && element.getClientRects().length);
+          if (!controls.length) return;
+          const first = controls[0];
+          const last = controls[controls.length - 1];
+          if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+          else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+        }
+      });
 
       function switchTab(tabName) {
         const tabs = document.querySelectorAll('.tab-btn');
@@ -583,7 +685,7 @@
       // Font size controls
       function toggleFontSizeControls() {
         const panel = document.getElementById('fontSizePanel');
-        panel.classList.toggle('visible');
+        setDrawer(panel.id, !panel.classList.contains('visible'));
       }
 
       function setFontSize(size) {
@@ -599,6 +701,7 @@
         // Update active button
         document.querySelectorAll('.font-preset-btn').forEach(btn => {
           btn.classList.toggle('active', btn.dataset.size === size);
+          btn.setAttribute('aria-pressed', String(btn.dataset.size === size));
         });
 
         // Update slider
@@ -610,6 +713,7 @@
         // Save preference
         try {
           localStorage.setItem('fontSize', size);
+          localStorage.removeItem('customFontSize');
         } catch (error) {
           console.warn('Failed to save font size preference:', error);
         }
@@ -623,11 +727,13 @@
         // Update preset buttons
         document.querySelectorAll('.font-preset-btn').forEach(btn => {
           btn.classList.remove('active');
+          btn.setAttribute('aria-pressed', 'false');
         });
 
         // Save preference
         try {
           localStorage.setItem('customFontSize', value);
+          localStorage.removeItem('fontSize');
         } catch (error) {
           console.warn('Failed to save custom font size:', error);
         }
@@ -657,6 +763,7 @@
 
         // Reset UI
         document.querySelector('.font-preset-btn[data-size="medium"]').classList.add('active');
+        document.querySelectorAll('.font-preset-btn').forEach(btn => btn.setAttribute('aria-pressed', String(btn.dataset.size === 'medium')));
         document.getElementById('fontSizeSlider').value = 100;
         document.getElementById('sliderValue').textContent = '100%';
         document.getElementById('dyslexiaFont').checked = false;
@@ -676,9 +783,13 @@
       // Theme functionality is handled by theme-manager.js
 
       function toggleHighContrast() {
-        // This will be handled by the theme manager module when it loads
         if (window.themeManager && window.themeManager.toggleHighContrast) {
           window.themeManager.toggleHighContrast();
+        } else {
+          const enabled = !document.documentElement.classList.contains('high-contrast');
+          document.documentElement.classList.toggle('high-contrast', enabled);
+          localStorage.setItem('highContrast', String(enabled));
+          document.querySelector('.high-contrast-toggle').setAttribute('aria-pressed', String(enabled));
         }
       }
 
@@ -720,6 +831,19 @@
       // Initialize when page loads
       document.addEventListener('DOMContentLoaded', function () {
         initializeData();
+        try {
+          const customSize = localStorage.getItem('customFontSize');
+          const presetSize = localStorage.getItem('fontSize');
+          if (customSize && Number(customSize) >= 80 && Number(customSize) <= 140) setCustomFontSize(customSize);
+          else if (['small', 'medium', 'large', 'extra-large'].includes(presetSize)) setFontSize(presetSize);
+          else document.querySelectorAll('.font-preset-btn').forEach(btn => btn.setAttribute('aria-pressed', String(btn.dataset.size === 'medium')));
+          const dyslexia = localStorage.getItem('dyslexiaFont') === 'true';
+          const spacing = localStorage.getItem('increasedLineHeight') === 'true';
+          document.getElementById('dyslexiaFont').checked = dyslexia;
+          document.getElementById('increaseLineHeight').checked = spacing;
+          document.documentElement.classList.toggle('dyslexia-font', dyslexia);
+          document.documentElement.classList.toggle('increased-line-height', spacing);
+        } catch (error) { console.warn('Failed to restore display preferences:', error); }
 
         // Initialize search functionality (skip on map)
         {% if page.url != '/map/' %}
@@ -728,22 +852,15 @@
 
         // Auto-add current page to recent items
         const currentPageData = {
-          title: document.title
-            .replace(' | Explore Scripture', '')
-            .replace('Explore Scripture', 'Home'),
-          subtitle:
-            document
-              .querySelector('meta[name="description"]')
-              ?.getAttribute('content')
-              ?.substring(0, 80) + '...' || '',
+          title: document.querySelector('h1')?.textContent?.trim() || document.title.replace(' | Explore Scripture', ''),
+          subtitle: document.querySelector('meta[name="description"]')?.getAttribute('content') || '',
           url: window.location.pathname,
           timestamp: Date.now(),
         };
 
-        // Don't add if it's just the site title
-        if (currentPageData.title && currentPageData.title !== 'Explore Scripture') {
-          setTimeout(() => addToRecentItems(currentPageData), 1000);
-        }
+        {% if not book %}
+        if (currentPageData.title) addToRecentItems(currentPageData);
+        {% endif %}
       });
 
       // Service worker registration and PWA functionality
@@ -902,9 +1019,5 @@
       console.log('🔧 Site Version: v3.0.0 - Premium search experience with hero section');
     </script>
     
-    <!-- Version info -->
-    <div style="position: fixed; bottom: 5px; right: 5px; font-size: 10px; color: rgba(255,255,255,0.3); pointer-events: none; z-index: 9999;">
-      v3.0.0
-    </div>
   </body>
 </html>

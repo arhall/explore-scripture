@@ -63,10 +63,14 @@ permalink: /map/
           <button class="map-action" type="button" data-action="next">Next</button>
         </div>
 
+        <label class="map-stop-picker" for="mapStopPicker">Jump to stop
+          <select id="mapStopPicker" aria-label="Jump to journey stop"></select>
+        </label>
+        <p id="mapSelectedStop" class="map-selected-stop" role="status"></p>
+
         <ol
           class="map-stop-list"
           id="mapStopList"
-          role="listbox"
           aria-label="Journey stops"
         ></ol>
 

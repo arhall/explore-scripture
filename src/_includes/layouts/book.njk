@@ -9,6 +9,8 @@ layout: base.njk
   </div>
   <button
     class="bookmark-btn"
+    data-bookmark-button
+    aria-pressed="false"
     onclick="handleBookmarkClick()"
     title="Add bookmark"
     aria-label="Add bookmark for {{ book.name }}"
@@ -85,6 +87,14 @@ chapterCount = (book.chapterSummaries | length) %} {% if chapterCount >= 15 %}
 {% endif %}
 
 <h2>Chapter Summaries</h2>
+{% if chapterCount >= 15 %}
+<label class="chapter-jump" for="chapterJump">Jump to chapter
+  <select id="chapterJump" onchange="location.hash = 'chapter-' + this.value; scrollToChapter(this.value)">
+    <option value="">Choose a chapter</option>
+    {% for ch, sum in book.chapterSummaries | chapterSort %}<option value="{{ ch }}">{{ ch }}</option>{% endfor %}
+  </select>
+</label>
+{% endif %}
 <div class="chapter-navigation-info">
   <p>
     <strong>Tip:</strong> Click on any chapter number to jump to it, or use the navigation buttons
@@ -93,7 +103,7 @@ chapterCount = (book.chapterSummaries | length) %} {% if chapterCount >= 15 %}
   </p>
 </div>
 <div class="table-wrapper">
-  <table class="table">
+  <table class="table chapter-table">
     <thead>
       <tr>
         <th>Chapter</th>
@@ -343,6 +353,7 @@ chapterCount = (book.chapterSummaries | length) %} {% if chapterCount >= 15 %}
     };
 
     const isBookmarked = toggleBookmark(pageData);
+    updateBookmarkButton(isBookmarked);
 
     // Show quick feedback
     const bookmarkBtn = document.querySelector('.bookmark-btn');

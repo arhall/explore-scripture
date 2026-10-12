@@ -96,6 +96,7 @@ class CommentaryReader {
     // URL patterns will be defined in a method to access 'this' properly
 
     this.currentCommentary = localStorage.getItem('preferred-commentary') || 'enduring-word';
+    if (!this.commentaries[this.currentCommentary]) this.currentCommentary = 'enduring-word';
     this.currentModal = null;
     this.loadRequestId = 0;
     this.init();
@@ -105,6 +106,16 @@ class CommentaryReader {
     this.createStyles();
     this.initializeCommentaryButtons();
     this.setupKeyboardNavigation();
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('reader') === 'commentary' && window.location.pathname.startsWith('/books/')) {
+      const chapter = Number(params.get('chapter'));
+      const book = document.querySelector('h1')?.textContent?.trim();
+      const source = params.get('source');
+      if (source && this.commentaries[source]) this.currentCommentary = source;
+      if (book && Number.isInteger(chapter) && chapter > 0 && chapter <= 150) {
+        this.openCommentaryReader({ book, chapter, reference: `${book} ${chapter}` });
+      }
+    }
   }
 
   createStyles() {
@@ -1227,8 +1238,12 @@ class CommentaryReader {
 
     // Create modal
     const modal = this.createModal(chapterInfo);
+    this.returnFocus = document.activeElement;
     document.body.appendChild(modal);
     this.currentModal = modal;
+    modal.showModal();
+    modal.querySelector('.commentary-reader-close').focus();
+    this.setReaderUrl(chapterInfo);
 
     // Show modal with animation
     setTimeout(() => {
@@ -1244,15 +1259,17 @@ class CommentaryReader {
   }
 
   createModal(chapterInfo) {
-    const overlay = document.createElement('div');
+    const overlay = document.createElement('dialog');
     overlay.className = 'commentary-reader-overlay';
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.setAttribute('aria-labelledby', 'commentary-reader-title');
 
     const currentCommentaryInfo = this.commentaries[this.currentCommentary];
 
     overlay.innerHTML = `
       <div class="commentary-reader-modal">
         <div class="commentary-reader-header">
-          <h2 class="commentary-reader-title">${chapterInfo.reference} Commentary</h2>
+          <h2 class="commentary-reader-title" id="commentary-reader-title">${chapterInfo.reference} Commentary</h2>
           <div class="commentary-reader-controls">
             <select class="commentary-reader-source-select" aria-label="Select commentary source">
               ${Object.entries(this.commentaries)
@@ -1262,12 +1279,14 @@ class CommentaryReader {
                 )
                 .join('')}
             </select>
+            <button class="reader-copy-link" type="button">Copy commentary link</button>
             <button class="commentary-reader-close" aria-label="Close commentary reader">&times;</button>
           </div>
         </div>
         <div class="commentary-source-description">
           ${currentCommentaryInfo.description}
         </div>
+        <a class="commentary-source-link" target="_blank" rel="noopener" href="${this.getCommentaryUrl(chapterInfo)}">Open ${currentCommentaryInfo.name} on its website (new tab)</a>
         <div class="commentary-reader-content">
           ${this.renderLoadingState()}
         </div>
@@ -1277,12 +1296,22 @@ class CommentaryReader {
     // Event listeners
     const closeBtn = overlay.querySelector('.commentary-reader-close');
     closeBtn.addEventListener('click', () => this.closeCommentaryReader());
+    overlay.querySelector('.reader-copy-link').addEventListener('click', async e => {
+      try {
+        await navigator.clipboard.writeText(window.location.href);
+        e.currentTarget.textContent = 'Link copied';
+      } catch {
+        e.currentTarget.textContent = 'Copy the URL from your address bar';
+      }
+    });
+    overlay.addEventListener('cancel', e => { e.preventDefault(); this.closeCommentaryReader(); });
 
     // Commentary source selector change
     const sourceSelect = overlay.querySelector('.commentary-reader-source-select');
     sourceSelect.addEventListener('change', e => {
       this.currentCommentary = e.target.value;
       localStorage.setItem('preferred-commentary', this.currentCommentary);
+      this.setReaderUrl(chapterInfo);
 
       // Update the commentary content and description
       this.updateCommentaryContent(overlay, chapterInfo);
@@ -1306,6 +1335,10 @@ class CommentaryReader {
     const loadId = ++this.loadRequestId;
 
     descriptionDiv.textContent = commentaryInfo.description;
+    descriptionDiv.textContent += commentaryInfo.renderMode === 'proxy' ? ' Loaded into this reader from the source website.' : ' Loaded from the source website in a frame; its display settings may differ.';
+    const sourceLink = overlay.querySelector('.commentary-source-link');
+    sourceLink.href = url;
+    sourceLink.textContent = `Open ${commentaryInfo.name} on its website (new tab)`;
 
     if (commentaryInfo.renderMode === 'proxy') {
       contentDiv.innerHTML = this.renderLoadingState(commentaryInfo.proxyLoadingMessage);
@@ -1361,16 +1394,25 @@ class CommentaryReader {
     if (this.currentModal) {
       this.loadRequestId += 1;
       const modalToClose = this.currentModal;
+      this.currentModal = null;
       modalToClose.classList.remove('visible');
-      setTimeout(() => {
-        if (modalToClose.parentNode) {
-          modalToClose.parentNode.removeChild(modalToClose);
-        }
-        if (this.currentModal === modalToClose) {
-          this.currentModal = null;
-        }
-      }, 300);
+      modalToClose.close();
+      modalToClose.remove();
+      const url = new URL(window.location.href);
+      url.searchParams.delete('reader');
+      url.searchParams.delete('chapter');
+      url.searchParams.delete('source');
+      window.history.replaceState(null, '', url);
+      this.returnFocus?.focus();
     }
+  }
+
+  setReaderUrl(chapterInfo) {
+    const url = new URL(window.location.href);
+    url.searchParams.set('reader', 'commentary');
+    url.searchParams.set('chapter', chapterInfo.chapter);
+    url.searchParams.set('source', this.currentCommentary);
+    window.history.replaceState(null, '', url);
   }
 
   getCommentaryUrl(chapterInfo) {

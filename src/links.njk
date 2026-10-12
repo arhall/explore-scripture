@@ -9,9 +9,26 @@ description: Essential Bible study resources, commentaries, and theological tool
   <p class="meta">Essential tools and resources for Bible study and theological learning</p>
 </div>
 
+<div class="resource-filters">
+  <label for="resourceSearch">Find a resource</label>
+  <input id="resourceSearch" type="search" placeholder="Search names, subjects, or perspectives" />
+  <label for="resourceType">Type</label>
+  <select id="resourceType">
+    <option value="">All types</option>
+    <option value="study tools">Study tools</option>
+    <option value="theology">Theology</option>
+    <option value="video and audio">Video and audio</option>
+    <option value="reference">Reference</option>
+    <option value="history">History</option>
+    <option value="commentary">Commentary</option>
+  </select>
+  <p id="resourceCount" role="status"></p>
+</div>
+
 <div class="links-grid">
   <div class="link-category">
     <h2>Primary Study Resources</h2>
+    <p>Text study, chronology, and original-language tools from Blue Letter Bible.</p>
     <div class="links-list">
       <a href="https://www.blueletterbible.org/" target="_blank" rel="noopener" class="study-link">
         <div class="link-title">Blue Letter Bible</div>
@@ -33,14 +50,14 @@ description: Essential Bible study resources, commentaries, and theological tool
       </a>
 
       <a
-        href="https://www.blueletterbible.org/study/pnt/pnt02.cfm"
+        href="https://www.blueletterbible.org/search/Dictionary/"
         target="_blank"
         rel="noopener"
         class="study-link"
       >
-        <div class="link-title">Proper Names & Titles</div>
+        <div class="link-title">Bible Dictionaries</div>
         <div class="link-description">
-          Comprehensive database of biblical names, places, and their meanings
+          Search biblical names, places, and terms in multiple dictionaries
         </div>
       </a>
     </div>
@@ -48,16 +65,17 @@ description: Essential Bible study resources, commentaries, and theological tool
 
   <div class="link-category">
     <h2>Theological Resources</h2>
+    <p>Evangelical teaching; Desiring God and Ligonier present distinct Reformed perspectives.</p>
     <div class="links-list">
       <a
-        href="https://fbcfairburn.com/app/uploads/2015/04/Systematic_Theology_-_Wayne_Grudem.pdf"
+        href="https://zondervanacademic.com/products/systematic-theology-second-edition"
         target="_blank"
         rel="noopener"
         class="study-link"
       >
         <div class="link-title">Systematic Theology by Wayne Grudem</div>
         <div class="link-description">
-          Comprehensive systematic theology textbook covering all major Christian doctrines
+          Publisher information for an evangelical systematic theology textbook
         </div>
       </a>
 
@@ -79,6 +97,7 @@ description: Essential Bible study resources, commentaries, and theological tool
 
   <div class="link-category">
     <h2>Video & Audio Resources</h2>
+    <p>Animated Bible overviews and evangelical sermons, articles, and podcasts.</p>
     <div class="links-list">
       <a href="https://bibleproject.com/" target="_blank" rel="noopener" class="study-link">
         <div class="link-title">The Bible Project</div>
@@ -110,6 +129,7 @@ description: Essential Bible study resources, commentaries, and theological tool
 
   <div class="link-category">
     <h2>Reference & Research</h2>
+    <p>Parallel Bible study, training courses, and translation notes.</p>
     <div class="links-list">
       <a href="https://www.biblehub.com/" target="_blank" rel="noopener" class="study-link">
         <div class="link-title">Bible Hub</div>
@@ -136,6 +156,7 @@ description: Essential Bible study resources, commentaries, and theological tool
 
   <div class="link-category">
     <h2>Historical & Archaeological</h2>
+    <p>Archaeology reporting and a first-century historian's writings.</p>
     <div class="links-list">
       <a
         href="https://www.biblicalarchaeology.org/"
@@ -160,6 +181,7 @@ description: Essential Bible study resources, commentaries, and theological tool
 
   <div class="link-category">
     <h2>Commentaries Online</h2>
+    <p>Verse-by-verse commentary from named authors and collections of classic works.</p>
     <div class="links-list">
       <a href="https://enduringword.com/" target="_blank" rel="noopener" class="study-link">
         <div class="link-title">Enduring Word Commentary</div>
@@ -177,6 +199,42 @@ description: Essential Bible study resources, commentaries, and theological tool
     </div>
   </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const types = ['study tools', 'theology', 'video and audio', 'reference', 'history', 'commentary'];
+    const categories = [...document.querySelectorAll('.link-category')];
+    const search = document.getElementById('resourceSearch');
+    const type = document.getElementById('resourceType');
+    const count = document.getElementById('resourceCount');
+    categories.forEach((category, index) => {
+      category.dataset.resourceType = types[index];
+      category.querySelectorAll('.study-link').forEach(link => {
+        const meta = document.createElement('span');
+        meta.className = 'resource-type-label';
+        meta.textContent = `${types[index]} • opens ${new URL(link.href).hostname} in a new tab`;
+        link.appendChild(meta);
+      });
+    });
+    const filter = () => {
+      const term = search.value.trim().toLowerCase();
+      let visible = 0;
+      categories.forEach(category => {
+        let shownInCategory = 0;
+        category.querySelectorAll('.study-link').forEach(link => {
+          const matches = (!type.value || category.dataset.resourceType === type.value) && link.textContent.toLowerCase().includes(term);
+          link.hidden = !matches;
+          if (matches) { visible += 1; shownInCategory += 1; }
+        });
+        category.hidden = shownInCategory === 0;
+      });
+      count.textContent = `${visible} ${visible === 1 ? 'resource' : 'resources'} shown`;
+    };
+    search.addEventListener('input', filter);
+    type.addEventListener('change', filter);
+    filter();
+  });
+</script>
 
 <div class="suggestion-box">
   <h3>Suggested Study Method</h3>

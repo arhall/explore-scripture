@@ -94,7 +94,7 @@ description: Chapter-by-chapter Bible summaries, videos, and commentary for ever
     <div class="category-header">
       <h3>
         <a href="/categories/{{ category.slug }}/">{{ category.name }}</a>
-        <span class="book-count">{{ category.bookCount }} books</span>
+        <span class="book-count">{{ category.bookCount }} {% if category.bookCount == 1 %}book{% else %}books{% endif %}</span>
       </h3>
       <p class="category-description">{{ category.description }}</p>
     </div>
@@ -104,7 +104,7 @@ description: Chapter-by-chapter Bible summaries, videos, and commentary for ever
       <a href="/books/{{ book.slug }}/" class="book-card">
         <div class="book-title">{{ book.name }}</div>
         {% if book.chapterSummaries and (book.chapterSummaries | length) > 0 %}
-        <div class="book-progress">{{ book.chapterSummaries | length }} chapters</div>
+<div class="book-progress">{{ book.chapterSummaries | length }} {% if (book.chapterSummaries | length) == 1 %}chapter{% else %}chapters{% endif %}</div>
         {% else %}
         <div class="book-progress pending">Coming soon</div>
         {% endif %}
@@ -129,7 +129,7 @@ description: Chapter-by-chapter Bible summaries, videos, and commentary for ever
     <div class="category-header">
       <h3>
         <a href="/categories/{{ category.slug }}/">{{ category.name }}</a>
-        <span class="book-count">{{ category.bookCount }} books</span>
+        <span class="book-count">{{ category.bookCount }} {% if category.bookCount == 1 %}book{% else %}books{% endif %}</span>
       </h3>
       <p class="category-description">{{ category.description }}</p>
     </div>
@@ -139,7 +139,7 @@ description: Chapter-by-chapter Bible summaries, videos, and commentary for ever
       <a href="/books/{{ book.slug }}/" class="book-card">
         <div class="book-title">{{ book.name }}</div>
         {% if book.chapterSummaries and (book.chapterSummaries | length) > 0 %}
-        <div class="book-progress">{{ book.chapterSummaries | length }} chapters</div>
+<div class="book-progress">{{ book.chapterSummaries | length }} {% if (book.chapterSummaries | length) == 1 %}chapter{% else %}chapters{% endif %}</div>
         {% else %}
         <div class="book-progress pending">Coming soon</div>
         {% endif %}

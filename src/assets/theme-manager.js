@@ -460,6 +460,7 @@ class ThemeManager {
       const highContrast = localStorage.getItem('highContrast') === 'true';
       if (highContrast) {
         document.documentElement.classList.add('high-contrast');
+        this.syncContrastColors();
 
         // Update button if it exists
         const contrastBtn = document.querySelector('.high-contrast-toggle .high-contrast-icon');
@@ -467,6 +468,7 @@ class ThemeManager {
           contrastBtn.textContent = '◼';
         }
       }
+      document.querySelector('.high-contrast-toggle')?.setAttribute('aria-pressed', String(highContrast));
     } catch (error) {
       console.warn('Failed to restore high contrast preference:', error);
     }
@@ -505,6 +507,8 @@ class ThemeManager {
 
     this.currentTheme = themeKey;
     localStorage.setItem('site-theme', themeKey);
+    this.syncContrastColors();
+    document.querySelectorAll('.theme-option').forEach(option => option.setAttribute('aria-pressed', String(option.dataset.theme === themeKey)));
 
     // Dispatch custom event for other components to listen to
     window.dispatchEvent(
@@ -519,6 +523,13 @@ class ThemeManager {
     const g = parseInt(hex.slice(3, 5), 16);
     const b = parseInt(hex.slice(5, 7), 16);
     return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+  }
+
+  syncContrastColors() {
+    if (!document.documentElement.classList.contains('high-contrast')) return;
+    const root = document.documentElement;
+    Object.keys(this.themes[this.currentTheme].colors).forEach(property => root.style.removeProperty(property));
+    [3, 5, 10, 20, 25, 30].forEach(value => root.style.removeProperty(`--accent-alpha-${value}`));
   }
 
   createThemeSwitcher() {
@@ -619,6 +630,7 @@ class ThemeManager {
             <button 
               class="theme-option ${key === this.currentTheme ? 'active' : ''}" 
               data-theme="${key}"
+              aria-pressed="${key === this.currentTheme}"
             >
               <div class="theme-preview">
                 <div class="theme-preview-bg" style="background: ${theme.colors['--bg']}"></div>
@@ -656,6 +668,7 @@ class ThemeManager {
         // Apply theme
         this.applyTheme(themeKey);
         dropdown.classList.remove('open');
+        document.querySelector('.theme-toggle-nav')?.setAttribute('aria-expanded', 'false');
       }
     });
 
@@ -684,6 +697,7 @@ class ThemeManager {
         // Apply theme
         this.applyTheme(themeKey);
         dropdown.classList.remove('open');
+        document.querySelector('.theme-toggle-nav')?.setAttribute('aria-expanded', 'false');
       }
     });
 
@@ -691,6 +705,7 @@ class ThemeManager {
     document.addEventListener('click', e => {
       if (!dropdown.contains(e.target) && !e.target.closest('.theme-toggle-nav')) {
         dropdown.classList.remove('open');
+        document.querySelector('.theme-toggle-nav')?.setAttribute('aria-expanded', 'false');
       }
     });
 
@@ -707,6 +722,7 @@ class ThemeManager {
       document.querySelector('.theme-switcher-dropdown');
     if (dropdown) {
       dropdown.classList.toggle('open');
+      document.querySelector('.theme-toggle-nav')?.setAttribute('aria-expanded', String(dropdown.classList.contains('open')));
     }
   }
 
@@ -740,9 +756,9 @@ class ThemeManager {
       /* Navigation Theme Dropdown */
       .theme-nav-dropdown {
         position: fixed;
-        top: 60px;
-        right: 20px;
-        min-width: 280px;
+        top: 3.75rem;
+        right: 1rem;
+        width: min(280px, calc(100vw - 2rem));
         background: var(--card);
         border: 1px solid var(--border);
         border-radius: 12px;
@@ -751,7 +767,7 @@ class ThemeManager {
         visibility: hidden;
         transform: translateY(-8px);
         transition: all 0.2s ease;
-        max-height: 400px;
+        max-height: calc(100dvh - 4.75rem);
         overflow-y: auto;
         z-index: 9999;
       }
@@ -795,7 +811,7 @@ class ThemeManager {
         position: absolute;
         top: 56px;
         right: 0;
-        min-width: 280px;
+        width: min(280px, calc(100vw - 2rem));
         background: var(--card);
         border: 1px solid var(--border);
         border-radius: 12px;
@@ -804,7 +820,7 @@ class ThemeManager {
         visibility: hidden;
         transform: translateY(-8px);
         transition: all 0.2s ease;
-        max-height: 400px;
+        max-height: calc(100dvh - 5rem);
         overflow-y: auto;
         z-index: 9999;
       }
@@ -910,6 +926,8 @@ class ThemeManager {
   toggleHighContrast() {
     const isHighContrast = document.documentElement.classList.contains('high-contrast');
     document.documentElement.classList.toggle('high-contrast', !isHighContrast);
+    if (isHighContrast) this.applyTheme(this.currentTheme);
+    else this.syncContrastColors();
 
     try {
       localStorage.setItem('highContrast', !isHighContrast);
@@ -922,6 +940,7 @@ class ThemeManager {
     if (contrastBtn) {
       contrastBtn.textContent = !isHighContrast ? '◼' : '◻';
     }
+    document.querySelector('.high-contrast-toggle')?.setAttribute('aria-pressed', String(!isHighContrast));
 
     // Dispatch event
     window.dispatchEvent(

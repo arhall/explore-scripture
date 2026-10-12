@@ -963,7 +963,7 @@ a:hover {
   background: var(--card);
   border: 2px solid var(--border);
   border-radius: 20px;
-  max-height: 450px;
+  max-height: min(450px, 60dvh);
   overflow-y: auto;
   z-index: 1000;
   margin-top: 0.5rem;
@@ -1409,11 +1409,13 @@ a:hover {
 .links-grid {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
   margin-top: 2rem;
 }
 
 .link-category {
+  min-width: 0;
+  overflow-wrap: anywhere;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -2144,14 +2146,15 @@ a:hover {
   }
   
   /* Table responsive handling for very small screens */
-  .table-wrapper {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  
-  .table {
-    min-width: 600px; /* Prevent table from becoming too narrow */
-  }
+  .table-wrapper:has(.chapter-table) { overflow: visible; }
+  .chapter-table, .chapter-table tbody, .chapter-table tr, .chapter-table td { display: block; width: 100%; min-width: 0; }
+  .chapter-table { min-width: 0; border: 0; background: transparent; box-shadow: none; }
+  .chapter-table thead { display: none; }
+  .chapter-table tr { margin-bottom: 1rem; border: 1px solid var(--border); border-radius: 0.75rem; background: var(--card); overflow: hidden; }
+  .chapter-table td, .chapter-table td:first-child, .chapter-table td:last-child { width: 100%; min-width: 0; text-align: left; padding: 0.8rem; }
+  .chapter-table td:last-child { border-bottom: 0; }
+  .chapter-table .commentary-links, .chapter-table .chapter-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .chapter-table .commentary-links > *, .chapter-table .chapter-actions > * { flex: 1 1 9rem; margin: 0; text-align: center; }
   
   .table td:first-child {
     width: 100px; /* Reduce chapter column width on mobile */
@@ -2162,6 +2165,35 @@ a:hover {
     width: 120px; /* Reduce commentary column width on mobile */
     min-width: 120px;
   }
+}
+
+.chapter-jump { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin: 1rem 0; font-weight: 600; }
+.chapter-jump select { max-width: 100%; padding: 0.5rem; color: var(--text); background: var(--card); border: 1px solid var(--border); border-radius: 0.4rem; }
+
+dialog.chapter-reader-overlay, dialog.commentary-reader-overlay { width: 100vw; height: 100dvh; margin: 0; padding: 0; border: 0; max-width: none; max-height: none; color: var(--text); }
+dialog.chapter-reader-overlay::backdrop, dialog.commentary-reader-overlay::backdrop { background: rgba(0, 0, 0, 0.7); }
+.chapter-reader-direct-access { padding: 2rem; }
+.commentary-source-link { display: block; padding: 0.5rem 2rem; color: var(--accent); }
+
+.map-stop-select { background: none; border: 0; color: var(--text); font: inherit; font-weight: 700; text-align: left; cursor: pointer; }
+.map-stop-select[aria-current="step"] { color: var(--accent); text-decoration: underline; text-underline-offset: 0.2em; }
+.map-stop-picker { display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin: 0.75rem 0; }
+.map-stop-picker select { min-width: 0; max-width: 100%; padding: 0.5rem; background: var(--card); color: var(--text); border: 1px solid var(--border); }
+.map-selected-stop { margin: 0.5rem 0; color: var(--text-secondary); }
+.poster-shortcuts { margin: 1rem 0; }
+.poster-shortcuts button, #tab-resources [data-tree-shortcut] { margin: 0.25rem; padding: 0.4rem 0.65rem; background: var(--card); color: var(--accent); border: 1px solid var(--border); border-radius: 0.35rem; cursor: pointer; }
+.resource-filters { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin: 1rem 0; }
+.resource-filters input, .resource-filters select { min-width: 0; max-width: 100%; padding: 0.5rem; background: var(--card); color: var(--text); border: 1px solid var(--border); }
+.resource-type-label { display: block; margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-secondary); }
+.link-category[hidden], .study-link[hidden] { display: none; }
+.bookmark-import-label { cursor: pointer; }
+.bookmark-import-label input { max-width: 9rem; }
+@media (max-width: 480px) {
+  .nav-links { flex-wrap: wrap; }
+  .chapter-table .commentary-links > *, .chapter-table .chapter-actions > * { flex-basis: 100%; }
+  .chapter-reader-header, .commentary-reader-header { flex-wrap: wrap; gap: 0.5rem; padding: 0.75rem; }
+  .chapter-reader-controls, .commentary-reader-controls { flex-wrap: wrap; gap: 0.5rem; min-width: 0; }
+  .chapter-reader-translation-select, .commentary-reader-source-select { min-width: 0; max-width: 100%; }
 }
 
 /* Character Pages */
@@ -2959,6 +2991,12 @@ a:hover {
   }
 }
 
+.map-shell .map-panel { overflow-y: auto; }
+.map-shell .map-stop-list { flex: 0 0 auto; max-height: 16rem; }
+.map-page .map-badge, .map-page .map-kicker, .map-page .map-place-chip, .map-page .map-stop-tag { color: var(--text); }
+
+html, body { overflow-x: clip; }
+
 @media (min-width: 641px) and (max-width: 1024px) {
   .featured-characters-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -3217,24 +3255,28 @@ a:hover {
 
 .recents-bookmarks-panel {
   position: fixed;
-  top: 0;
-  right: -400px;
-  width: 400px;
-  height: 100vh;
+  inset: 0 0 0 auto;
+  width: min(25rem, 100vw);
+  height: 100dvh;
   background: var(--card);
   border-left: 1px solid var(--border);
   box-shadow: -4px 0 20px var(--shadow-lg);
-  transition: right 0.3s ease;
-  z-index: 1000;
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform 0.3s ease, visibility 0.3s;
+  z-index: 1200;
   overflow: hidden;
+  font-size: max(1rem, 16px);
 }
 
 .recents-bookmarks-panel.visible {
-  right: 0;
+  transform: translateX(0);
+  visibility: visible;
 }
 
 .recents-bookmarks-content {
   height: 100%;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
@@ -3247,6 +3289,7 @@ a:hover {
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--border-light);
+  flex: none;
 }
 
 .recents-bookmarks-header h3 {
@@ -3273,16 +3316,18 @@ a:hover {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
+  flex: none;
 }
 
 .tab-btn {
   flex: 1;
+  min-width: 0;
   background: var(--bg-secondary);
   border: 1px solid var(--border-light);
   padding: 0.75rem;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: max(0.9rem, 14px);
   color: var(--text-secondary);
   transition: all 0.2s ease;
   display: flex;
@@ -3290,6 +3335,8 @@ a:hover {
   justify-content: center;
   gap: 0.5rem;
 }
+
+.tab-label { min-width: 0; text-align: center; }
 
 .tab-btn:hover {
   background: var(--bg-tertiary);
@@ -3304,9 +3351,9 @@ a:hover {
 
 .tab-content {
   display: none;
-  flex: 1;
+  flex: 1 1 auto;
+  min-height: 0;
   overflow: hidden;
-  display: flex;
   flex-direction: column;
 }
 
@@ -3316,9 +3363,33 @@ a:hover {
 
 .tab-actions {
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 1rem;
 }
+
+.tab-actions > * { min-width: 0; }
+.tab-actions button, .bookmark-import-label {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg-secondary);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+.bookmark-import-label { position: relative; overflow: hidden; }
+.bookmark-import-label input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.bookmark-import-label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 .clear-all-btn {
   background: none;
@@ -3337,7 +3408,8 @@ a:hover {
 }
 
 .items-list {
-  flex: 1;
+  flex: 1 1 auto;
+  min-height: 0;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -3346,6 +3418,8 @@ a:hover {
 
 .quick-access-item {
   display: flex;
+  flex: none;
+  min-width: 0;
   align-items: center;
   background: var(--bg-secondary);
   border: 1px solid var(--border-light);
@@ -3360,10 +3434,12 @@ a:hover {
 }
 
 .item-link {
-  flex: 1;
+  flex: 1 1 auto;
+  min-width: 0;
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
   padding: 0.75rem;
   text-decoration: none;
   color: var(--text);
@@ -3386,13 +3462,40 @@ a:hover {
 }
 
 .item-title {
+  display: block;
+  width: 100%;
   font-weight: 500;
+  font-size: max(1rem, 16px);
+  line-height: 1.4;
   color: var(--text);
-  margin-bottom: 0.25rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
 }
+
+.item-subtitle {
+  display: block;
+  width: 100%;
+  color: var(--text-secondary);
+  font-size: max(0.875rem, 14px);
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.item-subtitle:empty { display: none; }
+
+.remove-bookmark {
+  flex: none;
+  align-self: stretch;
+  min-width: 2.75rem;
+  border: 0;
+  border-left: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-secondary);
+  font: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.remove-bookmark:hover { color: var(--text); background: var(--bg-tertiary); }
 
 .item-meta {
   font-size: 0.75rem;
@@ -3441,7 +3544,7 @@ a:hover {
 }
 
 .empty-state small {
-  font-size: 0.8rem;
+  font-size: max(0.8rem, 14px);
   opacity: 0.7;
 }
 
@@ -3470,7 +3573,6 @@ a:hover {
 @media (max-width: 480px) {
   .recents-bookmarks-panel {
     width: 100vw;
-    right: -100vw;
   }
   
   .recents-bookmarks-content {
@@ -3478,7 +3580,7 @@ a:hover {
   }
   
   .tab-btn {
-    font-size: 0.8rem;
+    font-size: max(0.8rem, 14px);
     padding: 0.6rem;
   }
   
@@ -4214,24 +4316,36 @@ a:hover {
 
 .font-size-panel {
   position: fixed;
-  top: 0;
-  left: -350px;
-  width: 350px;
-  height: 100vh;
+  inset: 0 auto 0 0;
+  width: min(22rem, 100vw);
+  height: 100dvh;
   background: var(--card);
   border-right: 1px solid var(--border);
   box-shadow: 4px 0 20px var(--shadow-lg);
-  transition: left 0.3s ease;
-  z-index: 1000;
+  transform: translateX(-100%);
+  visibility: hidden;
+  transition: transform 0.3s ease, visibility 0.3s;
+  z-index: 1200;
   overflow: hidden;
+  font-size: max(1rem, 16px);
 }
 
 .font-size-panel.visible {
-  left: 0;
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.drawer-open { overflow: hidden; }
+
+.recents-bookmarks-panel :focus-visible,
+.font-size-panel :focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .font-size-content {
   height: 100%;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
@@ -4267,7 +4381,8 @@ a:hover {
 }
 
 .font-size-controls {
-  flex: 1;
+  flex: 1 1 auto;
+  min-height: 0;
   overflow-y: auto;
 }
 
@@ -4303,7 +4418,7 @@ a:hover {
 
 .preset-label {
   display: block;
-  font-size: 0.85rem;
+  font-size: max(0.85rem, 14px);
   font-weight: 500;
   color: var(--text-secondary);
   margin-bottom: 0.5rem;
@@ -4365,6 +4480,7 @@ a:hover {
 
 #fontSizeSlider {
   flex: 1;
+  min-width: 0;
   -webkit-appearance: none;
   appearance: none;
   height: 6px;
@@ -4483,6 +4599,7 @@ a:hover {
 }
 
 /* Apply font sizes */
+/* eslint-disable css/no-invalid-properties -- The variable values use calc() with a runtime scale. */
 body {
   font-size: var(--base-font-size, 16px);
 }
@@ -4498,6 +4615,7 @@ h2 {
 h3 {
   font-size: var(--h3-size, 1.5rem);
 }
+/* eslint-enable css/no-invalid-properties */
 
 /* Dyslexia-friendly font */
 .dyslexia-font {
@@ -4520,7 +4638,6 @@ h3 {
 @media (max-width: 480px) {
   .font-size-panel {
     width: 100vw;
-    left: -100vw;
   }
   
   .font-size-content {
@@ -4611,11 +4728,6 @@ h3 {
   .character-card.featured::after {
     display: none; /* Hide star on small screens */
   }
-}
-
-/* Dark mode adjustments for better contrast */
-@media (prefers-color-scheme: dark) {
-  /* Character styles now use CSS custom properties automatically */
 }
 
 /* High contrast mode improvements */
@@ -9765,6 +9877,9 @@ h3 {
   display: grid;
   gap: 0.6rem;
   min-width: 220px;
+  max-width: min(22rem, calc(100vw - 2rem));
+  max-height: min(30rem, 70dvh);
+  overflow-y: auto;
   box-shadow: 0 18px 40px var(--shadow);
   z-index: 10;
   pointer-events: auto;

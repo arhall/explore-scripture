@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Interactive Scripture study platform with 5,500+ entities, chapter summaries, and embedded Scripture widgets",
   "private": true,
+  "engines": {
+    "node": ">=22.19.0"
+  },
   "author": "Explore Scripture Team",
   "license": "MIT",
   "keywords": [
@@ -28,6 +31,7 @@
     "// Building": "",
     "build": "npm run entities:process && npm run search:generate && eleventy",
     "build:production": "npm run entities:process && npm run search:generate && NODE_ENV=production eleventy && npm run optimize",
+    "deploy:production": "npm run build:production && wrangler pages deploy _site --project-name=explore-scripture --branch=main",
     "build:workers": "npm run build:production && npm run workers:prepare",
     "build:workers-temp": "npm run entities:dev && npm run search:generate && NODE_ENV=production eleventy --config=.eleventy.js && npm run optimize:html && npm run workers:prepare",
     "build:workers-safe": "node scripts/workers-safe-build.js",
@@ -62,7 +66,7 @@
     "// Quality & Linting": "",
     "lint": "npm run lint:js && npm run lint:css && npm run format:check",
     "lint:js": "eslint --no-warn-ignored src/assets/*.js scripts/**/*.js",
-    "lint:css": "stylelint src/styles.css",
+    "lint:css": "eslint --config eslint.css.config.mjs src/styles.css",
     "lint:fix": "npm run lint:js -- --fix && npm run lint:css -- --fix && npm run format",
     "format": "prettier --write .github/workflows/**/*.yml package.json",
     "format:check": "prettier --check .github/workflows/**/*.yml package.json",
@@ -100,6 +104,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-bundle": "^3.0.7",
+    "@eslint/css": "^2.0.0",
     "@eslint/js": "^9.34.0",
     "@jest/test-sequencer": "^30.0.5",
     "@types/jest": "^30.0.0",
@@ -112,18 +117,28 @@
     "jest": "^30.0.5",
     "jest-environment-jsdom": "^30.0.5",
     "jsdom": "^26.1.0",
-    "lighthouse": "^12.8.1",
-    "postcss": "^8.5.6",
-    "postcss-cli": "^11.0.1",
+    "lighthouse": "^13.5.0",
+    "postcss": "^8.5.23",
+    "postcss-cli": "^12.0.0",
     "prettier": "^3.6.2",
-    "puppeteer": "^24.17.0",
-    "stylelint": "^16.23.1",
-    "stylelint-config-standard": "^39.0.0",
-    "svgo": "^3.3.2",
+    "puppeteer": "^25.13.0",
+    "svgo": "^3.3.5",
     "terser": "^5.43.1",
     "wrangler": "^4.60.0"
   },
   "dependencies": {
     "@cloudflare/kv-asset-handler": "^0.4.0"
+  },
+  "overrides": {
+    "@11ty/eleventy": {
+      "chokidar": "4.0.3"
+    },
+    "@11ty/eleventy-dev-server": {
+      "chokidar": "4.0.3"
+    },
+    "nunjucks": {
+      "chokidar": "4.0.3"
+    },
+    "argparse": "2.0.1"
   }
 }

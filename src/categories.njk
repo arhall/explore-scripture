@@ -8,12 +8,23 @@ permalink: '/categories/index.html'
   <h1>Sections</h1>
   <p class="meta">Canonical groupings of the books.</p>
 </div>
+<h2>Old Testament</h2>
 <div class="grid">
-  {% for sec in categories %}
+  {% for sec in categories %}{% if sec.testament == 'Old Testament' %}
   <a class="card" href="/categories/{{ sec.slug }}/">
     <h3>{{ sec.name }}</h3>
     <p>{{ sec.description }}</p>
-    <span class="badge">{{ sec.testament }}</span>
+    <span class="badge">{{ sec.bookCount }} {% if sec.bookCount == 1 %}book{% else %}books{% endif %}</span>
   </a>
-  {% endfor %}
+  {% endif %}{% endfor %}
+</div>
+<h2>New Testament</h2>
+<div class="grid">
+  {% for sec in categories %}{% if sec.testament == 'New Testament' %}
+  <a class="card" href="/categories/{{ sec.slug }}/">
+    <h3>{{ sec.name }}</h3>
+    <p>{{ sec.description }}</p>
+    <span class="badge">{{ sec.bookCount }} {% if sec.bookCount == 1 %}book{% else %}books{% endif %}</span>
+  </a>
+  {% endif %}{% endfor %}
 </div>

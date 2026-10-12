@@ -14,15 +14,17 @@ layout: base.njk
   <div class="meta">
     <strong>Key Themes:</strong>
     {% for theme in category.themes %}
-    <span class="badge" style="margin: 0.2rem">{{ theme }}</span>
+    <a class="badge" style="margin: 0.2rem" href="/?search={{ theme | urlencode }}">{{ theme }}</a>
     {% endfor %}
   </div>
   {% endif %} {% if category.keyFigures %}
-  <div class="meta"><strong>Key Figures:</strong> {{ category.keyFigures | join(", ") }}</div>
+  <div class="meta"><strong>Key Figures:</strong>
+    {% for figure in category.keyFigures %}<a href="/entities/?search={{ figure | urlencode }}">{{ figure }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
+  </div>
   {% endif %} {% if category.timeSpan %}
   <div class="meta">
     <strong>Time Period:</strong> {{ category.timeSpan }} &nbsp;•&nbsp; <strong>Books:</strong> {{
-    category.bookCount }}
+    category.bookCount }} {% if category.bookCount == 1 %}book{% else %}books{% endif %}
   </div>
   {% endif %}
 </div>
@@ -36,7 +38,7 @@ layout: base.njk
     <p><strong>Language:</strong> {{ b.language }}</p>
     {% if b.chapterSummaries and (b.chapterSummaries | length) > 0 %}
     <p style="font-size: 0.85rem; color: var(--muted)">
-      {{ b.chapterSummaries | length }} chapters with summaries
+      {{ b.chapterSummaries | length }} {% if (b.chapterSummaries | length) == 1 %}chapter{% else %}chapters{% endif %} with summaries
     </p>
     {% endif %}
     <span class="badge">{{ b.testament }}</span>

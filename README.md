@@ -46,7 +46,7 @@ Built with **Eleventy (11ty)** for fast, static generation and optimized for
 # Clone and install
 git clone <your-repo-url>
 cd explore-scripture
-npm install
+npm ci --ignore-scripts
 
 # Start development server
 npm run dev
@@ -313,14 +313,15 @@ npm run test:mobile      # Mobile-specific tests
 
 ### Cloudflare Pages Setup
 
-1. **Connect Repository**: Link your Git repository to Cloudflare Pages
-2. **Build Configuration**:
-   - **Framework**: Eleventy
-   - **Build command**: `npm run build:production`
-   - **Output directory**: `_site`
-   - **Node version**: 18 or higher
-3. **Environment Variables**: None required for basic deployment
-4. **Custom Domain**: Optional - configure in Cloudflare Pages dashboard
+The `explore-scripture` Pages project is deployed directly with Wrangler.
+Authenticate Wrangler to the Cloudflare account, then run:
+
+```bash
+npm run deploy:production
+```
+
+This builds and optimizes the Eleventy site, then publishes `_site` to the
+production `main` branch. Use Node 22.19 or higher (24 recommended).
 
 ### Build Optimization for Production
 
@@ -341,14 +342,14 @@ npm run build:production
 ### Development Setup
 
 1. **Fork and Clone**: Fork the repository and clone locally
-2. **Install Dependencies**: `npm install`
+2. **Install Dependencies**: `npm ci --ignore-scripts`
 3. **Setup Tests**: `npm run test:setup`
 4. **Start Development**: `npm run dev`
 
 ### Code Standards
 
 - **ESLint**: JavaScript code quality (`npm run lint:js`)
-- **Stylelint**: CSS standards (`npm run lint:css`)
+- **ESLint CSS plugin**: CSS standards (`npm run lint:css`)
 - **Prettier**: Code formatting (`npm run format`)
 - **Pre-commit**: Validation runs automatically (`npm run precommit`)
 

@@ -278,20 +278,17 @@ const renderStopList = (stops, selectedIndex) => {
 
     const card = document.createElement('div');
     card.className = 'map-stop-card';
-    card.setAttribute('role', 'button');
-    card.setAttribute('tabindex', '0');
-    card.setAttribute('aria-selected', stop.stopIndex === selectedIndex ? 'true' : 'false');
     card.dataset.stopIndex = String(stop.stopIndex);
 
     card.innerHTML = `
       <div class="map-stop-header">
-        <span class="map-stop-name">${stop.place.names?.primary || stop.place.id}</span>
+        <button class="map-stop-select" type="button" data-stop-index="${stop.stopIndex}" ${stop.stopIndex === selectedIndex ? 'aria-current="step"' : ''}>${stop.stopIndex + 1}. ${stop.place.names?.primary || stop.place.id}</button>
         <span class="map-stop-tag">${stop.place.chip?.value || 'Region'}</span>
       </div>
       <p class="map-stop-ref">${formatScriptureRefs(stop.scriptureRefs)}</p>
       <div class="map-stop-actions">
         <button class="map-action small" type="button" data-action="read" data-stop-index="${stop.stopIndex}">
-          Read
+          Read on Bible Gateway (new tab)
         </button>
         <button class="map-action small" type="button" data-action="focus" data-stop-index="${stop.stopIndex}">
           Focus
@@ -302,11 +299,7 @@ const renderStopList = (stops, selectedIndex) => {
       </div>
     `;
 
-    card.addEventListener('keydown', event => {
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        selectStop(stop.stopIndex, { focus: true });
-      }
+    card.querySelector('.map-stop-select').addEventListener('keydown', event => {
       if (event.key === 'ArrowDown') {
         event.preventDefault();
         const next = Math.min(stops.length - 1, stop.stopIndex + 1);
@@ -327,7 +320,7 @@ const renderStopList = (stops, selectedIndex) => {
 };
 
 const focusStopCard = stopIndex => {
-  const card = elements.stopList?.querySelector(`.map-stop-card[data-stop-index="${stopIndex}"]`);
+  const card = elements.stopList?.querySelector(`.map-stop-select[data-stop-index="${stopIndex}"]`);
   if (card) card.focus();
 };
 
@@ -358,7 +351,7 @@ const renderPlaceCard = (stop, options = {}) => {
         ? `
           <div class="map-place-actions">
             <button class="map-action small" type="button" data-action="read" data-stop-index="${stop.stopIndex}">
-              Read
+              Read on Bible Gateway (new tab)
             </button>
             <button class="map-action small" type="button" data-action="focus" data-stop-index="${stop.stopIndex}">
               Focus
@@ -537,7 +530,7 @@ const toggleLayersPopover = open => {
 };
 
 const handleBookmark = (state, stop, labelPrefix) => {
-  const url = createUrlFromState({ ...state, stopIndex: stop.stopIndex });
+  const url = createUrlFromState({ journeyId: state.journeyId, stopIndex: stop.stopIndex });
   const title = stop.place.names?.primary || stop.place.id;
   const subtitle = `${labelPrefix} • ${stop.place.chip?.value || 'Region'}`;
   const payload = {
@@ -621,9 +614,29 @@ const init = async () => {
   let stops = buildStops(currentJourney, placesById);
   state.stopIndex = clampStopIndex(state.stopIndex, stops.length);
 
+  const updateMapBookmarkButtons = () => {
+    document.querySelectorAll('[data-action="bookmark"][data-stop-index]').forEach(button => {
+      const index = Number(button.dataset.stopIndex);
+      const url = createUrlFromState({ journeyId: state.journeyId, stopIndex: index });
+      const saved = typeof window.isBookmarked === 'function' && window.isBookmarked(url);
+      button.setAttribute('aria-pressed', String(saved));
+      button.textContent = saved ? 'Bookmarked' : 'Bookmark';
+    });
+  };
+
   updateJourneyHeader(currentJourney, stops);
   renderStopList(stops, state.stopIndex);
+  const stopPicker = document.getElementById('mapStopPicker');
+  const selectedStopStatus = document.getElementById('mapSelectedStop');
+  const syncStopPicker = () => {
+    if (!stopPicker) return;
+    stopPicker.innerHTML = stops.map(stop => `<option value="${stop.stopIndex}">${stop.stopIndex + 1}. ${stop.place.names?.primary || stop.place.id}</option>`).join('');
+    stopPicker.value = String(state.stopIndex);
+    if (selectedStopStatus && stops[state.stopIndex]) selectedStopStatus.textContent = `Selected stop ${state.stopIndex + 1} of ${stops.length}: ${stops[state.stopIndex].place.names?.primary || stops[state.stopIndex].place.id}`;
+  };
+  syncStopPicker();
   renderPlaceCard(stops[state.stopIndex]);
+  updateMapBookmarkButtons();
   updateConfidenceBadge(currentJourney, state.stopIndex, placesById);
   renderChurchList(churches, placesById);
 
@@ -781,7 +794,9 @@ const init = async () => {
 
     updateJourneyHeader(currentJourney, stops);
     renderStopList(stops, state.stopIndex);
+    syncStopPicker();
     renderPlaceCard(stops[state.stopIndex]);
+    updateMapBookmarkButtons();
     updateConfidenceBadge(currentJourney, state.stopIndex, placesById);
 
     if (map) {
@@ -806,7 +821,9 @@ const init = async () => {
   selectStop = (stopIndex, options = {}) => {
     state.stopIndex = clampStopIndex(stopIndex, stops.length);
     renderStopList(stops, state.stopIndex);
+    syncStopPicker();
     renderPlaceCard(stops[state.stopIndex]);
+    updateMapBookmarkButtons();
     updateConfidenceBadge(currentJourney, state.stopIndex, placesById);
 
     if (map) {
@@ -843,6 +860,7 @@ const init = async () => {
 
     if (action === 'bookmark') {
       handleBookmark(state, stop, 'Map');
+      updateMapBookmarkButtons();
     }
   };
 
@@ -907,13 +925,15 @@ const init = async () => {
       return;
     }
 
-    const card = event.target.closest('.map-stop-card');
-    if (!card) return;
-    const stopIndex = Number(card.dataset.stopIndex);
+    const selectButton = event.target.closest('.map-stop-select');
+    if (!selectButton) return;
+    const stopIndex = Number(selectButton.dataset.stopIndex);
     if (Number.isInteger(stopIndex)) {
       selectStop(stopIndex, { focus: true });
     }
   });
+
+  stopPicker?.addEventListener('change', () => selectStop(Number(stopPicker.value), { focus: true }));
 
   elements.placeCard?.addEventListener('click', event => {
     const actionButton = event.target.closest('[data-action]');

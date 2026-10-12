@@ -1,5 +1,5 @@
-# Use Node.js 20 LTS as base image
-FROM node:20-alpine AS builder
+# Use a supported Node.js build runtime
+FROM node:24-alpine AS builder
 
 # Set working directory
 WORKDIR /app
@@ -8,13 +8,13 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install all dependencies (needed for build tools)
-RUN npm ci
+RUN npm ci --ignore-scripts
 
 # Copy source code
 COPY . .
 
 # Build the static site
-RUN npm run build:production
+RUN NODE_OPTIONS=--max-old-space-size=4096 npm run build:production
 
 # Production stage - use nginx to serve static files
 FROM nginx:alpine

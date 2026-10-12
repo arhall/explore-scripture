@@ -19,12 +19,7 @@ npm run test:smoke              # Quick smoke tests only
 
 ### Production Deployment
 ```bash
-# Deploy to production
-npm run build                   # Build first
-wrangler pages deploy _site     # Deploy to Cloudflare Pages
-
-# Quick deploy (combines both)
-npm run build && wrangler pages deploy _site
+npm run deploy:production       # Build, optimize, and deploy to Cloudflare Pages
 ```
 
 ---
@@ -33,23 +28,17 @@ npm run build && wrangler pages deploy _site
 
 The site is deployed to **https://explore-scripture.pages.dev** using Cloudflare Pages.
 
-### Automatic Deployment
-- ✅ Connected to GitHub repository
-- ✅ Automatic builds on push to `main` branch  
-- ✅ Build command: `npm run build`
-- ✅ Output directory: `_site`
+The `explore-scripture` Pages project uses direct Wrangler deployments. Pushing to
+GitHub does not publish the site.
 
 ### Manual Deployment
 ```bash
-# 1. Build the site with all optimizations
-npm run build:production       # Full build with logging and analysis
-
-# 2. Deploy to Cloudflare Pages (preferred method)
-wrangler pages deploy _site
-
-# Alternative: Deploy with specific project name
-wrangler pages deploy _site --project-name=explore-scripture
+npm run deploy:production
 ```
+
+The command runs the optimized build and deploys `_site` to the
+`explore-scripture` project on its production `main` branch. Wrangler must be
+authenticated to the Cloudflare account before running it.
 
 ### Deployment Verification
 ```bash
@@ -102,7 +91,7 @@ npm run clean:all              # Clean everything including node_modules
 2. **Make changes** to files in `src/`
 3. **Auto-reload** happens automatically
 4. **Test locally** before deploying
-5. **Deploy** when ready: `wrangler pages deploy _site`
+5. **Deploy** when ready: `npm run deploy:production`
 
 ---
 

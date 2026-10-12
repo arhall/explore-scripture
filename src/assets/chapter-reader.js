@@ -8,7 +8,7 @@
 class ChapterReader {
   constructor() {
     this.translations = {
-      esv: { name: 'ESV (Recommended)', api: 'esv' },
+      esv: { name: 'English Standard Version', api: 'esv' },
       niv: { name: 'New International Version', api: 'niv' },
       nlt: { name: 'New Living Translation', api: 'nlt' },
       nkjv: { name: 'New King James Version', api: 'nkjv' },
@@ -41,7 +41,8 @@ class ChapterReader {
     this.currentTranslation =
       localStorage.getItem('preferred-chapter-translation') ||
       localStorage.getItem('preferred-translation') ||
-      'esv';
+      'web';
+    if (!this.translations[this.currentTranslation]) this.currentTranslation = 'web';
     this.currentModal = null;
     this.keydownHandler = null;
     this.init();
@@ -51,6 +52,14 @@ class ChapterReader {
     this.createStyles();
     this.initializeChapterButtons();
     this.setupKeyboardNavigation();
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('reader') === 'chapter' && window.location.pathname.startsWith('/books/')) {
+      const chapter = Number(params.get('chapter'));
+      const book = document.querySelector('h1')?.textContent?.trim();
+      if (book && Number.isInteger(chapter) && chapter > 0 && chapter <= this.getBookChapterCount(book)) {
+        this.openChapterReader({ book, chapter, reference: `${book} ${chapter}` });
+      }
+    }
   }
 
   createStyles() {
@@ -1052,8 +1061,13 @@ class ChapterReader {
 
     // Create modal
     const modal = this.createModal(chapterInfo);
+    this.returnFocus = document.activeElement;
     document.body.appendChild(modal);
     this.currentModal = modal;
+    modal.showModal();
+    modal.querySelector('.chapter-reader-close').focus();
+    this.setReaderUrl(chapterInfo);
+    this.updateChapterContent(modal, chapterInfo);
 
     // Show modal with animation
     setTimeout(() => {
@@ -1067,8 +1081,10 @@ class ChapterReader {
   }
 
   createModal(chapterInfo) {
-    const overlay = document.createElement('div');
+    const overlay = document.createElement('dialog');
     overlay.className = 'chapter-reader-overlay';
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.setAttribute('aria-labelledby', 'chapter-reader-title');
 
     const bibleGatewayUrl = this.getBibleGatewayUrl(chapterInfo);
     const navInfo = this.getNavigationInfo(chapterInfo);
@@ -1082,7 +1098,7 @@ class ChapterReader {
                 ? `<button class="chapter-nav-btn prev" data-chapter="${navInfo.prevChapter.chapter}" title="Previous chapter">← ${navInfo.prevChapter.chapter}</button>`
                 : '<span class="chapter-nav-placeholder"></span>'
             }
-            <h2 class="chapter-reader-title">${chapterInfo.reference} <span class="chapter-count">(${navInfo.currentChapter}/${navInfo.totalChapters})</span></h2>
+            <h2 class="chapter-reader-title" id="chapter-reader-title" tabindex="-1">${chapterInfo.reference} <span class="chapter-count">(${navInfo.currentChapter}/${navInfo.totalChapters})</span></h2>
             ${
               navInfo.nextChapter
                 ? `<button class="chapter-nav-btn next" data-chapter="${navInfo.nextChapter.chapter}" title="Next chapter">${navInfo.nextChapter.chapter} →</button>`
@@ -1094,18 +1110,19 @@ class ChapterReader {
               ${Object.entries(this.translations)
                 .map(
                   ([key, trans]) =>
-                    `<option value="${key}" ${key === this.currentTranslation ? 'selected' : ''}>${trans.name}</option>`
+                    `<option value="${key}" ${key === this.currentTranslation ? 'selected' : ''}>${trans.name} (${key === 'web' ? 'in app' : 'Bible Gateway'})</option>`
                 )
                 .join('')}
             </select>
             <a href="${bibleGatewayUrl}" target="_blank" class="chapter-reader-external-link" title="Open in new tab">
-              ⧉ Open in New Tab
+              Read on Bible Gateway (new tab)
             </a>
+            <button class="reader-copy-link" type="button">Copy chapter link</button>
             <button class="chapter-reader-close" aria-label="Close chapter reader">&times;</button>
           </div>
         </div>
         <div class="chapter-reader-content">
-          ${this.renderBibleGatewayIframe(chapterInfo)}
+          <p class="chapter-reader-loading" role="status">Loading chapter…</p>
         </div>
       </div>
     `;
@@ -1113,6 +1130,15 @@ class ChapterReader {
     // Event listeners
     const closeBtn = overlay.querySelector('.chapter-reader-close');
     closeBtn.addEventListener('click', () => this.closeChapterReader());
+    overlay.querySelector('.reader-copy-link').addEventListener('click', async e => {
+      try {
+        await navigator.clipboard.writeText(window.location.href);
+        e.currentTarget.textContent = 'Link copied';
+      } catch {
+        e.currentTarget.textContent = 'Copy the URL from your address bar';
+      }
+    });
+    overlay.addEventListener('cancel', e => { e.preventDefault(); this.closeChapterReader(); });
 
     // Translation selector change
     const translationSelect = overlay.querySelector('.chapter-reader-translation-select');
@@ -1149,17 +1175,6 @@ class ChapterReader {
       });
     });
 
-    // Mobile view toggle functionality
-    const toggleBtns = overlay.querySelectorAll('.toggle-btn');
-    if (toggleBtns.length > 0) {
-      toggleBtns.forEach(btn => {
-        btn.addEventListener('click', e => {
-          const view = e.target.dataset.view;
-          this.switchMobileView(overlay, view, chapterInfo);
-        });
-      });
-    }
-
     // Close on overlay click
     overlay.addEventListener('click', e => {
       if (e.target === overlay) {
@@ -1171,9 +1186,12 @@ class ChapterReader {
   }
 
   updateChapterContent(overlay, chapterInfo) {
-    // Update the iframe with new translation
     const contentDiv = overlay.querySelector('.chapter-reader-content');
-    contentDiv.innerHTML = this.renderBibleGatewayIframe(chapterInfo);
+    if (this.currentTranslation === 'web') {
+      this.loadChapterContent(overlay, chapterInfo);
+    } else {
+      contentDiv.innerHTML = `<div class="chapter-reader-direct-access"><p>${this.translations[this.currentTranslation].name} is available on Bible Gateway. It opens in a new tab.</p><a href="${this.escapeHtml(this.getBibleGatewayUrl(chapterInfo))}" target="_blank" rel="noopener">Read ${this.escapeHtml(chapterInfo.reference)} on Bible Gateway (new tab)</a></div>`;
+    }
 
     // Update the external link with new translation
     const externalLink = overlay.querySelector('.chapter-reader-external-link');
@@ -1199,7 +1217,7 @@ class ChapterReader {
             ? `<button class="chapter-nav-btn prev" data-chapter="${navInfo.prevChapter.chapter}" title="Previous chapter">← ${navInfo.prevChapter.chapter}</button>`
             : '<span class="chapter-nav-placeholder"></span>'
         }
-        <h2 class="chapter-reader-title">${newChapterInfo.reference} <span class="chapter-count">(${navInfo.currentChapter}/${navInfo.totalChapters})</span></h2>
+        <h2 class="chapter-reader-title" id="chapter-reader-title" tabindex="-1">${newChapterInfo.reference} <span class="chapter-count">(${navInfo.currentChapter}/${navInfo.totalChapters})</span></h2>
         ${
           navInfo.nextChapter
             ? `<button class="chapter-nav-btn next" data-chapter="${navInfo.nextChapter.chapter}" title="Next chapter">${navInfo.nextChapter.chapter} →</button>`
@@ -1234,6 +1252,8 @@ class ChapterReader {
 
     // Update content with new chapter
     this.updateChapterContent(overlay, newChapterInfo);
+    this.setReaderUrl(newChapterInfo);
+    navSection.querySelector('.chapter-reader-title')?.focus();
 
     // Update external link in header controls
     const headerExternalLink = overlay.querySelector(
@@ -1246,7 +1266,12 @@ class ChapterReader {
 
   closeChapterReader() {
     if (this.currentModal) {
-      this.currentModal.classList.remove('visible');
+      const modal = this.currentModal;
+      modal.classList.remove('visible');
+      modal.close();
+      this.currentModal = null;
+      this.clearReaderUrl();
+      this.returnFocus?.focus();
 
       // Clean up keyboard navigation handler
       if (this.keydownHandler) {
@@ -1254,13 +1279,23 @@ class ChapterReader {
         this.keydownHandler = null;
       }
 
-      setTimeout(() => {
-        if (this.currentModal && this.currentModal.parentNode) {
-          this.currentModal.parentNode.removeChild(this.currentModal);
-        }
-        this.currentModal = null;
-      }, 300);
+      modal.remove();
     }
+  }
+
+  setReaderUrl(chapterInfo) {
+    const url = new URL(window.location.href);
+    url.searchParams.set('reader', 'chapter');
+    url.searchParams.set('chapter', chapterInfo.chapter);
+    url.searchParams.delete('source');
+    window.history.replaceState(null, '', url);
+  }
+
+  clearReaderUrl() {
+    const url = new URL(window.location.href);
+    url.searchParams.delete('reader');
+    url.searchParams.delete('chapter');
+    window.history.replaceState(null, '', url);
   }
 
   async loadChapterContent(modal, chapterInfo) {
@@ -1283,9 +1318,10 @@ class ChapterReader {
         this.cache.set(cacheKey, chapterData);
       }
 
-      contentDiv.innerHTML = this.renderChapterContent(chapterData, chapterInfo);
+      if (this.currentModal === modal && this.currentTranslation === 'web') contentDiv.innerHTML = this.renderChapterContent(chapterData, chapterInfo);
     } catch (error) {
       console.error('Error loading chapter:', error);
+      if (this.currentModal !== modal) return;
       contentDiv.innerHTML = `
         <div class="chapter-reader-error">
           <h3>Unable to Load Chapter</h3>
@@ -1298,40 +1334,11 @@ class ChapterReader {
     }
   }
 
-  async fetchChapter(reference, translation = 'esv') {
-    console.log(`Fetching ${reference} in ${translation} translation...`);
-
-    // Always prioritize fallback ESV content for better user experience
-    // Check fallback first for popular chapters
-    if (translation === 'esv') {
-      const fallback = this.getFallbackChapter(reference);
-      if (fallback.translation !== 'Error') {
-        console.log(`Using high-quality ESV fallback for ${reference}`);
-        return fallback;
-      }
-    }
-
-    // Then try APIs as backup
-    const sourcesToTry =
-      translation === 'esv' ? this.apiSources : this.apiSources.filter(s => s.name === 'bible-api');
-
-    for (const source of sourcesToTry) {
-      try {
-        console.log(`Trying ${source.name} for ${reference}...`);
-        const data = await this.fetchFromSource(source, reference, translation);
-        if (data) {
-          console.log(`Successfully fetched ${reference} from ${source.name}`);
-          return data;
-        }
-      } catch (error) {
-        console.warn(`Failed to fetch from ${source.name}:`, error);
-        continue;
-      }
-    }
-
-    console.log(`All APIs failed for ${reference}, using generic fallback`);
-    // Final fallback to local mock data
-    return this.getFallbackChapter(reference);
+  async fetchChapter(reference, translation = 'web') {
+    if (translation !== 'web') throw new Error('This translation opens on Bible Gateway');
+    const data = await this.fetchFromSource(this.apiSources.find(source => source.name === 'bible-api'), reference, 'web');
+    if (!data) throw new Error('World English Bible could not be loaded');
+    return data;
   }
 
   // Security: Rate limiting for API calls
@@ -1573,202 +1580,6 @@ class ChapterReader {
     };
   }
 
-  getFallbackChapter(reference) {
-    // Comprehensive fallback data with ESV content for many chapters
-    const fallbackChapters = {
-      'Genesis 1': {
-        reference: 'Genesis 1',
-        verses: [
-          { number: 1, text: 'In the beginning, God created the heavens and the earth.' },
-          {
-            number: 2,
-            text: 'The earth was without form and void, and darkness was over the face of the deep. And the Spirit of God was hovering over the face of the waters.',
-          },
-          { number: 3, text: 'And God said, "Let there be light," and there was light.' },
-          {
-            number: 27,
-            text: 'So God created man in his own image, in the image of God he created him; male and female he created them.',
-          },
-          {
-            number: 31,
-            text: 'And God saw everything that he had made, and behold, it was very good. And there was evening and there was morning, the sixth day.',
-          },
-        ],
-        translation: 'English Standard Version (ESV)',
-      },
-      'Genesis 3': {
-        reference: 'Genesis 3',
-        verses: [
-          {
-            number: 1,
-            text: 'Now the serpent was more cunning than any beast of the field which the LORD God had made. And he said to the woman, "Has God indeed said, \'You shall not eat of every tree of the garden\'?"',
-          },
-          {
-            number: 6,
-            text: 'So when the woman saw that the tree was good for food, that it was pleasant to the eyes, and a tree desirable to make one wise, she took of its fruit and ate. She also gave to her husband with her, and he ate.',
-          },
-          {
-            number: 15,
-            text: 'And I will put enmity between you and the woman, and between your seed and her Seed; He shall bruise your head, and you shall bruise His heel."',
-          },
-        ],
-        translation: 'English Standard Version (ESV)',
-      },
-      'Genesis 7': {
-        reference: 'Genesis 7',
-        verses: [
-          {
-            number: 1,
-            text: 'Then the LORD said to Noah, "Go into the ark, you and all your household, for I have seen that you are righteous before me in this generation."',
-          },
-          {
-            number: 9,
-            text: 'two and two, male and female, went into the ark with Noah, as God had commanded Noah.',
-          },
-          {
-            number: 17,
-            text: 'The flood continued forty days on the earth. The waters increased and bore up the ark, and it rose high above the earth.',
-          },
-        ],
-        translation: 'English Standard Version (ESV)',
-      },
-      'Genesis 22': {
-        reference: 'Genesis 22',
-        verses: [
-          {
-            number: 1,
-            text: 'After these things God tested Abraham and said to him, "Abraham!" And he said, "Here I am."',
-          },
-          {
-            number: 2,
-            text: 'He said, "Take your son, your only son Isaac, whom you love, and go to the land of Moriah, and offer him there as a burnt offering on one of the mountains of which I shall tell you."',
-          },
-          {
-            number: 14,
-            text: 'So Abraham called the name of that place, "The LORD will provide"; as it is said to this day, "On the mount of the LORD it shall be provided."',
-          },
-        ],
-        translation: 'English Standard Version (ESV)',
-      },
-      'Psalm 23': {
-        reference: 'Psalm 23',
-        verses: [
-          { number: 1, text: 'The LORD is my shepherd; I shall not want.' },
-          {
-            number: 2,
-            text: 'He makes me lie down in green pastures. He leads me beside still waters.',
-          },
-          {
-            number: 3,
-            text: "He restores my soul. He leads me in paths of righteousness for his name's sake.",
-          },
-          {
-            number: 4,
-            text: 'Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me; your rod and your staff, they comfort me.',
-          },
-          {
-            number: 6,
-            text: 'Surely goodness and mercy shall follow me all the days of my life, and I shall dwell in the house of the LORD forever.',
-          },
-        ],
-        translation: 'English Standard Version (ESV)',
-      },
-      'Isaiah 53': {
-        reference: 'Isaiah 53',
-        verses: [
-          {
-            number: 3,
-            text: 'He was despised and rejected by men, a man of sorrows and acquainted with grief; and as one from whom men hide their faces he was despised, and we esteemed him not.',
-          },
-          {
-            number: 5,
-            text: 'But he was pierced for our transgressions; he was crushed for our iniquities; upon him was the chastisement that brought us peace, and with his wounds we are healed.',
-          },
-          {
-            number: 6,
-            text: 'All we like sheep have gone astray; we have turned—every one—to his own way; and the LORD has laid on him the iniquity of us all.',
-          },
-        ],
-        translation: 'English Standard Version (ESV)',
-      },
-      'Matthew 5': {
-        reference: 'Matthew 5',
-        verses: [
-          {
-            number: 3,
-            text: '"Blessed are the poor in spirit, for theirs is the kingdom of heaven."',
-          },
-          { number: 4, text: '"Blessed are those who mourn, for they shall be comforted."' },
-          {
-            number: 16,
-            text: '"In the same way, let your light shine before others, so that they may see your good works and give glory to your Father who is in heaven."',
-          },
-        ],
-        translation: 'English Standard Version (ESV)',
-      },
-      'John 3': {
-        reference: 'John 3',
-        verses: [
-          {
-            number: 16,
-            text: '"For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life."',
-          },
-          {
-            number: 17,
-            text: '"For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him."',
-          },
-        ],
-        translation: 'English Standard Version (ESV)',
-      },
-      'Romans 8': {
-        reference: 'Romans 8',
-        verses: [
-          {
-            number: 28,
-            text: 'And we know that for those who love God all things work together for good, for those who are called according to his purpose.',
-          },
-          {
-            number: 38,
-            text: 'For I am sure that neither death nor life, nor angels nor rulers, nor things present nor things to come, nor powers,',
-          },
-          {
-            number: 39,
-            text: 'nor height nor depth, nor anything else in all creation, will be able to separate us from the love of God in Christ Jesus our Lord.',
-          },
-        ],
-        translation: 'English Standard Version (ESV)',
-      },
-      'Philippians 4': {
-        reference: 'Philippians 4',
-        verses: [
-          { number: 13, text: 'I can do all things through him who strengthens me.' },
-          {
-            number: 19,
-            text: 'And my God will supply every need of yours according to his riches in glory in Christ Jesus.',
-          },
-        ],
-        translation: 'English Standard Version (ESV)',
-      },
-    };
-
-    // Check if we have fallback data for this specific chapter
-    if (fallbackChapters[reference]) {
-      return fallbackChapters[reference];
-    }
-
-    // Generic fallback
-    return {
-      reference: reference,
-      verses: [
-        {
-          number: 1,
-          text: `Chapter content for ${reference} is temporarily unavailable. Please check your connection and try again, or use the commentary link to read this chapter on Enduring Word.`,
-        },
-      ],
-      translation: 'Error',
-    };
-  }
-
   getBibleGatewayUrl(chapterInfo) {
     const translationMap = {
       esv: 'ESV',
@@ -1807,62 +1618,13 @@ class ChapterReader {
     return bibleGatewayMap[bookName] || bookName;
   }
 
-  renderBibleGatewayIframe(chapterInfo) {
-    const url = this.getBibleGatewayUrl(chapterInfo);
-
-    // Validate URL for security
-    if (typeof SecurityConfig !== 'undefined' && SecurityConfig?.isUrlSafe && !SecurityConfig.isUrlSafe(url) && !url.startsWith('https://www.biblegateway.com/')) {
-      console.warn('Security: Blocked unsafe iframe URL:', url);
-      return '<div class="error">Invalid URL blocked for security reasons</div>';
-    }
-    
-    const isMobile = window.innerWidth <= 768;
-
-    // On mobile, add a toggle to switch between iframe and API content
-    const mobileToggle = isMobile
-      ? `
-      <div class="mobile-view-toggle" style="margin-bottom: 0.5rem;">
-        <button class="toggle-btn active" data-view="iframe">BibleGateway</button>
-        <button class="toggle-btn" data-view="api">Text View</button>
-      </div>
-    `
-      : '';
-
-    return `
-      <div class="chapter-reader-iframe-container">
-        ${mobileToggle}
-        <div class="iframe-view-container">
-          <iframe 
-            src="${this.escapeHtml(url)}" 
-            class="chapter-reader-iframe"
-            title="${this.escapeHtml(chapterInfo.reference)} - ${this.escapeHtml(this.translations[this.currentTranslation].name)}"
-            loading="lazy"
-            sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-        <div class="api-view-container" style="display: none;">
-          <div class="loading-api-content">
-            <p>Loading text view...</p>
-          </div>
-        </div>
-        <div class="chapter-reader-iframe-fallback">
-          <p>Having trouble? Try:</p>
-          <a href="${this.escapeHtml(url)}" target="_blank" class="chapter-reader-external-link">
-            ▦ Open ${this.escapeHtml(chapterInfo.reference)} on BibleGateway
-          </a>
-        </div>
-      </div>
-    `;
-  }
-
   renderChapterContent(data, chapterInfo) {
     const versesHtml = data.verses
       .map(
         verse => `
       <div class="chapter-reader-verse">
         <span class="chapter-verse-number">${verse.number}</span>
-        <span class="chapter-verse-text">${verse.text}</span>
+        <span class="chapter-verse-text">${this.escapeHtml(verse.text)}</span>
       </div>
     `
       )
@@ -1874,17 +1636,14 @@ class ChapterReader {
       <div class="chapter-reader-fast-content">
         <div class="chapter-reader-header-links">
           <div class="chapter-reader-translation-info">
-            <span class="translation-badge">${data.translation}</span>
+            <span class="translation-badge">${this.escapeHtml(data.translation)}</span>
           </div>
           <div class="chapter-reader-external-links">
             <a href="${bibleGatewayUrl}" target="_blank" class="biblegateway-link">
               ⧉ View on BibleGateway
             </a>
             <button class="cross-references-btn" onclick="window.chapterReaderInstance.showCrossReferences('${chapterInfo.reference}')">
-              ◈ Cross References
-            </button>
-            <button class="iframe-view-btn" onclick="window.chapterReaderInstance.switchToIframeView('${chapterInfo.reference}', '${chapterInfo.book}', ${chapterInfo.chapter})">
-              ▦ Embedded View
+              Cross references on Bible Gateway (new tab)
             </button>
           </div>
         </div>
@@ -1920,35 +1679,6 @@ class ChapterReader {
     document.addEventListener('keydown', this.keydownHandler);
   }
 
-  switchToIframeView(reference, book, chapter) {
-    // Switch the current modal content to iframe view
-    if (!this.currentModal) return;
-
-    const contentDiv = this.currentModal.querySelector('.chapter-reader-content');
-    if (!contentDiv) return;
-
-    const chapterInfo = { reference, book, chapter };
-
-    // Show loading state
-    contentDiv.innerHTML = `
-      <div class="chapter-reader-loading">
-        <div class="loading-spinner"></div>
-        <p>Loading embedded view...</p>
-      </div>
-    `;
-
-    // Add a small delay to show loading state, then load iframe
-    setTimeout(() => {
-      contentDiv.innerHTML = this.renderBibleGatewayIframe(chapterInfo);
-    }, 300);
-
-    // Update modal header to indicate iframe view
-    const headerDiv = this.currentModal.querySelector('.chapter-reader-header h2');
-    if (headerDiv) {
-      headerDiv.textContent = `${reference} - Embedded View`;
-    }
-  }
-
   showCrossReferences(reference) {
     // Open BibleGateway in a new tab for cross-references
     const translationMap = {
@@ -1962,33 +1692,7 @@ class ChapterReader {
     };
     const version = translationMap[this.currentTranslation] || 'ESV';
     const url = `https://www.biblegateway.com/passage/?search=${encodeURIComponent(reference)}&version=${version}`;
-    window.open(url, '_blank');
-  }
-
-  switchMobileView(overlay, view, chapterInfo) {
-    const toggleBtns = overlay.querySelectorAll('.toggle-btn');
-    const iframeContainer = overlay.querySelector('.iframe-view-container');
-    const apiContainer = overlay.querySelector('.api-view-container');
-
-    // Update toggle buttons
-    toggleBtns.forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.view === view);
-    });
-
-    if (view === 'iframe') {
-      // Show iframe view
-      iframeContainer.style.display = 'flex';
-      apiContainer.style.display = 'none';
-    } else if (view === 'api') {
-      // Show API text view
-      iframeContainer.style.display = 'none';
-      apiContainer.style.display = 'flex';
-
-      // Load API content if not already loaded
-      if (apiContainer.querySelector('.loading-api-content')) {
-        this.loadApiContentForMobile(apiContainer, chapterInfo);
-      }
-    }
+    window.open(url, '_blank', 'noopener');
   }
 
   // Security: HTML sanitization for chapter content
@@ -2000,99 +1704,6 @@ class ChapterReader {
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;')
       .replace(/'/g, '&#039;');
-  }
-
-  // Security: Sanitize chapter data
-  sanitizeChapterData(data) {
-    if (!data || typeof data !== 'object') return null;
-
-    return {
-      reference: this.escapeHtml(data.reference || ''),
-      translation: this.escapeHtml(data.translation || ''),
-      verses: Array.isArray(data.verses)
-        ? data.verses.map(verse => ({
-            number: parseInt(verse.number, 10) || 0,
-            text: this.escapeHtml(verse.text || ''),
-          }))
-        : [],
-    };
-  }
-
-  async loadApiContentForMobile(container, chapterInfo) {
-    try {
-      // Validate chapter info
-      if (!chapterInfo || !chapterInfo.reference) {
-        throw new Error('Invalid chapter information');
-      }
-
-      const cacheKey = `${this.escapeHtml(chapterInfo.reference)}-${this.currentTranslation}`;
-      let chapterData = this.cache.get(cacheKey);
-
-      if (!chapterData) {
-        chapterData = await this.fetchChapter(chapterInfo.reference, this.currentTranslation);
-        // Sanitize before caching
-        chapterData = this.sanitizeChapterData(chapterData);
-        if (chapterData) {
-          this.cache.set(cacheKey, chapterData);
-        }
-      }
-
-      if (!chapterData || !chapterData.verses) {
-        throw new Error('No chapter data available');
-      }
-
-      // Clear container safely
-      container.innerHTML = '';
-
-      // Build content using secure DOM creation
-      const versesContainer = document.createElement('div');
-      versesContainer.className = 'chapter-reader-verses';
-      versesContainer.style.cssText = 'flex: 1; overflow-y: auto;';
-
-      // Add translation badge
-      const badgeContainer = document.createElement('div');
-      badgeContainer.style.cssText = 'margin-bottom: 1rem;';
-
-      const badge = document.createElement('span');
-      badge.className = 'translation-badge';
-      badge.textContent = chapterData.translation;
-      badgeContainer.appendChild(badge);
-      versesContainer.appendChild(badgeContainer);
-
-      // Add verses safely
-      chapterData.verses.forEach(verse => {
-        const verseDiv = document.createElement('div');
-        verseDiv.className = 'chapter-reader-verse';
-
-        const verseNumber = document.createElement('span');
-        verseNumber.className = 'chapter-verse-number';
-        verseNumber.textContent = verse.number;
-
-        const verseText = document.createElement('span');
-        verseText.className = 'chapter-verse-text';
-        verseText.textContent = verse.text;
-
-        verseDiv.appendChild(verseNumber);
-        verseDiv.appendChild(verseText);
-        versesContainer.appendChild(verseDiv);
-      });
-
-      container.appendChild(versesContainer);
-    } catch (error) {
-      console.error('Error loading API content:', error);
-
-      // Safe error display
-      container.innerHTML = '';
-      const errorDiv = document.createElement('div');
-      errorDiv.style.cssText =
-        'text-align: center; padding: 2rem; color: var(--text-secondary, #6b7280);';
-
-      const errorText = document.createElement('p');
-      errorText.textContent =
-        'Unable to load text view. Please try the BibleGateway view or external link.';
-      errorDiv.appendChild(errorText);
-      container.appendChild(errorDiv);
-    }
   }
 
   // Public API for manual usage

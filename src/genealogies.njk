@@ -59,7 +59,10 @@ eleventyNavigation:
                   <input id="tree-search-input" type="search" placeholder="Search name (e.g., David)" autocomplete="off" enterkeyhint="search" />
                   <button type="button" class="tree-action" id="tree-search-button">Search</button>
                   <button type="button" class="tree-action tree-action--secondary" id="tree-search-clear">Clear</button>
+                  <button type="button" class="tree-action tree-action--secondary" id="tree-search-prev" disabled>Previous match</button>
+                  <button type="button" class="tree-action tree-action--secondary" id="tree-search-next" disabled>Next match</button>
                 </div>
+                <p id="tree-search-results" role="status" aria-live="polite"></p>
               </div>
               <div class="tree-legend" aria-hidden="true">
                 <span class="legend-item"><span class="legend-dot legend-dot--messiah"></span> Messiah line</span>
@@ -128,12 +131,22 @@ eleventyNavigation:
         </div>
       </div>
       <p class="poster-footnote">Swipe horizontally or vertically to navigate on mobile. For the clearest view, open the high-resolution PDF.</p>
+      <nav class="poster-shortcuts" aria-label="Major lineage shortcuts">
+        <p>Explore a named lineage in the interactive tree:</p>
+        <button type="button" data-tree-shortcut="primeval">Primeval</button>
+        <button type="button" data-tree-shortcut="patriarchs">Patriarchs</button>
+        <button type="button" data-tree-shortcut="tribal">Tribal</button>
+        <button type="button" data-tree-shortcut="priestly">Priestly</button>
+        <button type="button" data-tree-shortcut="royal">Royal</button>
+        <button type="button" data-tree-shortcut="messianic">Messianic</button>
+      </nav>
     </section>
 
     <section id="tab-resources" class="primary-panel" role="tabpanel" aria-labelledby="tab-button-resources">
       <div class="resources-card">
         <h3>Further Study</h3>
         <p>Explore in-depth discussions on biblical genealogies:</p>
+        <p>Start with the <button type="button" data-tree-shortcut="primeval">Primeval lineage</button> for Adam to Noah, the <button type="button" data-tree-shortcut="patriarchs">Patriarchs</button> for Abraham's family, or the <button type="button" data-tree-shortcut="messianic">Messianic line</button> leading to Jesus.</p>
         <ul>
           <li><a href="https://en.wikipedia.org/wiki/Genealogies_in_the_Bible" target="_blank" rel="noopener">Genealogies in the Bible &mdash; Wikipedia overview ↗</a></li>
           <li><a href="https://www.desiringgod.org/articles/the-bibles-family-trees" target="_blank" rel="noopener">Desiring God: The Bible's Family Trees ↗</a></li>
@@ -174,6 +187,7 @@ eleventyNavigation:
           const isActive = btn === button;
           btn.classList.toggle('active', isActive);
           btn.setAttribute('aria-selected', String(isActive));
+          btn.tabIndex = isActive ? 0 : -1;
         });
 
         panels.forEach((panel) => {
@@ -182,7 +196,23 @@ eleventyNavigation:
           panel.hidden = !matches;
         });
       });
+      button.addEventListener('keydown', (event) => {
+        if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+        event.preventDefault();
+        const index = tabButtons.indexOf(button);
+        const next = event.key === 'Home' ? 0 : event.key === 'End' ? tabButtons.length - 1 : (index + (event.key === 'ArrowRight' ? 1 : -1) + tabButtons.length) % tabButtons.length;
+        tabButtons[next].click();
+        tabButtons[next].focus();
+      });
     });
+
+    document.querySelectorAll('[data-tree-shortcut]').forEach(button => button.addEventListener('click', () => {
+      tabButtons[0].click();
+      const select = document.getElementById('tree-view-select');
+      select.value = `cluster:${button.dataset.treeShortcut}`;
+      select.dispatchEvent(new Event('change'));
+      select.focus();
+    }));
 
     panels.forEach((panel, index) => {
       if (!panel.classList.contains('active')) {
@@ -228,6 +258,11 @@ eleventyNavigation:
       const searchInput = document.getElementById('tree-search-input');
       const searchButton = document.getElementById('tree-search-button');
       const searchClear = document.getElementById('tree-search-clear');
+      const searchPrev = document.getElementById('tree-search-prev');
+      const searchNext = document.getElementById('tree-search-next');
+      const searchResults = document.getElementById('tree-search-results');
+      let matches = [];
+      let matchIndex = 0;
       const confirmOverlay = document.getElementById('tree-confirm');
       const confirmAccept = document.getElementById('tree-confirm-accept');
       const confirmCancel = document.getElementById('tree-confirm-cancel');
@@ -421,10 +456,17 @@ eleventyNavigation:
           searchInput.value = '';
         }
         clearSearchHighlight();
+        matches = [];
+        if (searchResults) searchResults.textContent = '';
+        searchPrev.disabled = true;
+        searchNext.disabled = true;
         update(state.treeRoot || {});
         applyToggleStates();
         setStatus('');
       });
+
+      searchPrev?.addEventListener('click', () => showMatch((matchIndex - 1 + matches.length) % matches.length));
+      searchNext?.addEventListener('click', () => showMatch((matchIndex + 1) % matches.length));
 
       zoomInBtn?.addEventListener('click', () => {
         svg.transition().duration(300).call(zoom.scaleBy, 1.15);
@@ -442,6 +484,7 @@ eleventyNavigation:
       });
 
       document.addEventListener('keydown', (event) => {
+        if (event.target?.getAttribute('role') === 'tab') return;
         const targetTag = event.target?.tagName;
         if (targetTag === 'INPUT' || targetTag === 'TEXTAREA' || event.target?.isContentEditable) {
           return;
@@ -993,19 +1036,29 @@ eleventyNavigation:
           return;
         }
 
-        const exactMatch = state.searchIndex.find((entry) => entry.name === query);
-        const partialMatch = state.searchIndex.find((entry) => entry.name.includes(query));
-        const targetEntry = exactMatch || partialMatch;
+        matches = state.searchIndex.filter((entry) => entry.name === query);
+        if (!matches.length) matches = state.searchIndex.filter((entry) => entry.name.includes(query));
+        matchIndex = 0;
+        searchPrev.disabled = matches.length < 2;
+        searchNext.disabled = matches.length < 2;
+        if (searchResults) searchResults.textContent = `${matches.length} ${matches.length === 1 ? 'match' : 'matches'} for ${rawQuery}`;
 
-        if (!targetEntry) {
+        if (!matches.length) {
           setStatus(`No match for "${rawQuery}" in ${state.currentView?.title || 'this view'}.`, true);
           window.setTimeout(() => setStatus(''), 2500);
           return;
         }
 
+        showMatch(0);
+      }
+
+      function showMatch(index) {
+        if (!matches.length) return;
+        matchIndex = index;
+        const targetEntry = matches[index];
         const targetNode = findNodeById(state.treeRoot, targetEntry.id);
         if (!targetNode) {
-          setStatus(`"${rawQuery}" is currently hidden in this view. Try expanding more nodes or switching to a focused view.`, true);
+          setStatus('This person is hidden in this view. Try a focused view.', true);
           window.setTimeout(() => setStatus(''), 2500);
           return;
         }
@@ -1016,7 +1069,7 @@ eleventyNavigation:
         setFocusNode(targetNode);
         applyToggleStates();
         focusOnNode(targetNode);
-        setStatus('');
+        if (searchResults) searchResults.textContent = `Match ${index + 1} of ${matches.length}: ${targetNode.data.name}`;
       }
 
       function revealNode(node) {
@@ -1985,8 +2038,9 @@ eleventyNavigation:
 .tree-shell-link {
   padding: 0.6rem 1.3rem;
   border-radius: 999px;
-  background: var(--accent);
-  color: #fff;
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
   font-weight: 600;
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;

@@ -81,3 +81,32 @@ npm run lint
 ## When You’re Unsure
 - Start with `CLAUDE.md` for deep details and recent changes.
 - Search the repo with `rg` for feature-specific CSS or JS classes.
+
+## Supply-chain and security gates
+
+These gates are mandatory for every change in this repository, including code, configuration, documentation, generated files, and dependency changes. They supplement the project-specific guidance above; they do not waive it.
+
+Before editing:
+
+- Run `git status --short --branch` from the repository root and preserve unrelated working-tree changes. If this project has no Git metadata, record that fact and identify the containing repository or tracking mechanism.
+- Identify the project manifest, package manager, lockfile, and existing validation/security commands.
+
+After every change:
+
+- Run the relevant tests and lint or type checks for the affected project.
++ Run the supported ecosystem security check: `npm audit`, `pnpm audit`, the repository's configured Python audit command, `govulncheck`, or the project's documented equivalent.
+- Run existing static security checks or security test suites, including secret scanning or `retire`, when the project defines them.
+- Run `git diff --check` and record the exact commands and results. A skipped, unavailable, or network-blocked check is blocked or unverified, not clean.
+
+For dependency or lockfile changes:
+
+- Use the existing package manager and update the supported lockfile in the same change. Do not claim remediation while manifests and lockfiles are inconsistent.
+- Run the installed supply-chain-risk-auditor collector and render reports outside the repository. Recheck direct and transitive advisories, abandoned/deprecated packages, install scripts, and lockfile coverage; treat unavailable measurements as unassessable.
+- Keep production dependency updates visible for review, do not automerge production dependencies, and do not add Dependabot version-update configuration when Renovate is enabled.
+
+For newly cloned, created, or restored repositories:
+
+- Complete the pre-edit status and manifest inventory before the first substantive change.
+- Add or verify a project-local `AGENTS.md`, a supported lockfile where the package manager permits it, and the prepared Renovate policy for GitHub-hosted repositories.
+- Run at least one security check before the first change is complete and repeat it after the change.
+- Record registry, tool, GitHub-authentication, or collector blockers in `SUPPLY_CHAIN_TODOS.md` or the project's existing tracker.
